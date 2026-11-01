@@ -64,13 +64,12 @@ export function grammarGuideHref(id: string): string {
 
 const levelCache = new Map<GrammarLevel, Promise<GrammarPoint[]>>();
 
-const fallbackLoaders: Record<GrammarLevel, () => Promise<{ default: unknown }>> = {
-  N5: () => import("../../public/data/v1/grammar/N5.json"),
-  N4: () => import("../../public/data/v1/grammar/N4.json"),
-  N3: () => import("../../public/data/v1/grammar/N3.json"),
-  N2: () => import("../../public/data/v1/grammar/N2.json"),
-  N1: () => import("../../public/data/v1/grammar/N1.json"),
-};
+function readServerGrammar(level: GrammarLevel): GrammarPoint[] {
+  const fs = eval("require")("node:fs");
+  const path = eval("require")("node:path");
+  const content = fs.readFileSync(path.resolve(process.cwd(), `public/data/v1/grammar/${level}.json`), "utf8");
+  return (JSON.parse(content) as GrammarLevelFile).points;
+}
 
 function canUseBrowserFetch(): boolean {
   if (typeof process !== "undefined" && process.env?.VITEST) return false;
@@ -96,8 +95,7 @@ export function getGrammarByLevel(level: GrammarLevel): Promise<GrammarPoint[]> 
       }
       return ((await response.json()) as GrammarLevelFile).points;
     }
-    const mod = await fallbackLoaders[level]();
-    return (mod.default as GrammarLevelFile).points;
+    return readServerGrammar(level);
   })().catch((error: unknown) => {
     levelCache.delete(level);
     throw error;

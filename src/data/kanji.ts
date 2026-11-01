@@ -25,14 +25,6 @@ export interface KanjiIndexMetadata {
 const levelCache = new Map<KanjiLevel, Promise<KanjiRecord[]>>();
 let indexCache: Promise<KanjiIndexMetadata> | null = null;
 
-const fallbackLevelLoaders: Record<KanjiLevel, () => Promise<{ default: unknown }>> = {
-  N5: () => import("../../public/data/v1/kanji/N5.json"),
-  N4: () => import("../../public/data/v1/kanji/N4.json"),
-  N3: () => import("../../public/data/v1/kanji/N3.json"),
-  N2: () => import("../../public/data/v1/kanji/N2.json"),
-  N1: () => import("../../public/data/v1/kanji/N1.json"),
-};
-
 function isMockedFetch(): boolean {
   return (
     typeof globalThis.fetch === "function" &&
@@ -44,6 +36,13 @@ function canUseBrowserFetch(): boolean {
   if (isMockedFetch()) return true;
   if (typeof process !== "undefined" && process.env?.VITEST) return false;
   return typeof window !== "undefined" && typeof globalThis.fetch === "function";
+}
+
+function readServerJson(relativePath: string): unknown {
+  const fs = eval("require")("node:fs");
+  const path = eval("require")("node:path");
+  const content = fs.readFileSync(path.resolve(process.cwd(), relativePath), "utf8");
+  return JSON.parse(content);
 }
 
 export function toKanjiLevel(jlpt: number): KanjiLevel {
@@ -72,8 +71,7 @@ export function getKanjiByLevel(level: KanjiLevel): Promise<KanjiRecord[]> {
       }
       return (await response.json()) as KanjiRecord[];
     }
-    const mod = await fallbackLevelLoaders[level]();
-    return mod.default as KanjiRecord[];
+    return readServerJson(`public/data/v1/kanji/${level}.json`) as KanjiRecord[];
   })().catch((error: unknown) => {
     levelCache.delete(level);
     throw error;
@@ -96,8 +94,7 @@ export function getKanjiIndex(): Promise<KanjiIndexMetadata> {
       }
       return (await response.json()) as KanjiIndexMetadata;
     }
-    const mod = await import("../../public/data/v1/kanji/all.json");
-    return mod.default as KanjiIndexMetadata;
+    return readServerJson("public/data/v1/kanji/all.json") as KanjiIndexMetadata;
   })().catch((error: unknown) => {
     indexCache = null;
     throw error;

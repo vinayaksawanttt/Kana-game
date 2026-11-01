@@ -32,23 +32,37 @@ export interface VocabularyData {
   kanjiByCharacter: Map<string, VocabularyKanjiRecord>;
 }
 
-type JsonModule = { default: unknown };
+function canUseBrowserFetch(): boolean {
+  if (typeof globalThis.fetch === "function" && ("mock" in globalThis.fetch || "_isMockFunction" in globalThis.fetch)) {
+    return true;
+  }
+  if (typeof process !== "undefined" && process.env?.VITEST) return false;
+  return typeof window !== "undefined" && typeof globalThis.fetch === "function";
+}
 
-const vocabularyLoaders: Record<VocabularyLevel, () => Promise<JsonModule>> = {
-  N5: () => import("./openjlpt/vocab/n5.json"),
-  N4: () => import("./openjlpt/vocab/n4.json"),
-  N3: () => import("./openjlpt/vocab/n3.json"),
-  N2: () => import("./openjlpt/vocab/n2.json"),
-  N1: () => import("./openjlpt/vocab/n1.json"),
-};
+async function fetchOrReadJson(relativeUrl: string, relativePath: string): Promise<unknown> {
+  if (canUseBrowserFetch()) {
+    const res = await globalThis.fetch(relativeUrl, { cache: "force-cache" });
+    if (!res.ok) throw new Error(`Failed to load ${relativeUrl} (${res.status})`);
+    return await res.json();
+  }
+  // Server-side / test environment fallback without bundling JSON into client JS
+  const fs = eval("require")("node:fs");
+  const path = eval("require")("node:path");
+  const fullPath = path.resolve(process.cwd(), relativePath);
+  const content = fs.readFileSync(fullPath, "utf8");
+  return JSON.parse(content);
+}
 
-const kanjiLoaders: Record<VocabularyLevel, () => Promise<JsonModule>> = {
-  N5: () => import("./openjlpt/kanji/n5.json"),
-  N4: () => import("./openjlpt/kanji/n4.json"),
-  N3: () => import("./openjlpt/kanji/n3.json"),
-  N2: () => import("./openjlpt/kanji/n2.json"),
-  N1: () => import("./openjlpt/kanji/n1.json"),
-};
+async function loadVocabLevelRows(level: VocabularyLevel): Promise<unknown[]> {
+  const data = await fetchOrReadJson(`/data/v1/vocabulary/${level}.json`, `public/data/v1/vocabulary/${level}.json`);
+  return jsonArray(data);
+}
+
+async function loadKanjiLevelRows(level: VocabularyLevel): Promise<unknown[]> {
+  const data = await fetchOrReadJson(`/data/v1/vocabulary/kanji/${level}.json`, `public/data/v1/vocabulary/kanji/${level}.json`);
+  return jsonArray(data);
+}
 
 function isObject(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
@@ -158,14 +172,14 @@ export async function loadVocabularyData(levels: VocabularyLevel[]): Promise<Voc
   const [vocabularyDatasets, kanjiDatasets] = await Promise.all([
     Promise.all(
       selectedLevels.map(async (level) => {
-        const dataModule = await vocabularyLoaders[level]();
-        return { level, rows: jsonArray(dataModule.default) };
+        const rows = await loadVocabLevelRows(level);
+        return { level, rows };
       })
     ),
     Promise.all(
       vocabularyLevels.map(async (level) => {
-        const dataModule = await kanjiLoaders[level]();
-        return { level, rows: jsonArray(dataModule.default) };
+        const rows = await loadKanjiLevelRows(level);
+        return { level, rows };
       })
     ),
   ]);

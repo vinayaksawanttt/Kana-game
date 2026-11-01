@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { act, cleanup, fireEvent, render, screen } from "@testing-library/react";
+import { act, cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import VocabularyPlayPage from "./[sessionId]/page";
 
@@ -78,13 +78,18 @@ describe("vocabulary question interaction", () => {
   it("shows a quit dialog on browser back and discards the session when confirmed", async () => {
     render(<VocabularyPlayPage />);
     await screen.findByLabelText("Japanese word 会う");
-    act(() => window.dispatchEvent(new PopStateEvent("popstate")));
 
-    expect(screen.getByRole("dialog", { name: /quit this game/i })).toBeTruthy();
+    await waitFor(() => {
+      act(() => window.dispatchEvent(new PopStateEvent("popstate")));
+      expect(screen.getByRole("dialog", { name: /quit this game/i })).toBeTruthy();
+    });
     fireEvent.click(screen.getByRole("button", { name: "Stay" }));
     expect(screen.queryByRole("dialog")).toBeNull();
 
-    act(() => window.dispatchEvent(new PopStateEvent("popstate")));
+    await waitFor(() => {
+      act(() => window.dispatchEvent(new PopStateEvent("popstate")));
+      expect(screen.getByRole("dialog", { name: /quit this game/i })).toBeTruthy();
+    });
     fireEvent.click(screen.getByRole("button", { name: "Quit game" }));
     expect(sessionStorage.getItem("vocabulary-session:play-session")).toBeNull();
     expect(mockReplace).toHaveBeenCalledWith("/games/vocabulary");

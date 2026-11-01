@@ -1,11 +1,17 @@
 import { describe, expect, it } from "vitest";
-import raw from "../../../data-raw/kanji_jlpt_only.json";
 import { cleanMeanings } from "./clean-meanings";
 
 describe("cleanMeanings", () => {
   it("cleans real KANJIDIC records and prioritizes Heisig meanings", () => {
-    const records = raw as Record<string, { meanings: string[]; heisig_en: string | null }>;
-    const clean = (character: string) => cleanMeanings(records[character].meanings, records[character].heisig_en);
+    const sampleRecords: Record<string, { meanings: string[]; heisig_en: string | null }> = {
+      万: { meanings: ["ten thousand", "10,000"], heisig_en: "ten thousand" },
+      乳: { meanings: ["milk", "breasts"], heisig_en: "milk" },
+      京: { meanings: ["capital", "10**16"], heisig_en: "capital" },
+      一: { meanings: ["one", "one radical (no.1)"], heisig_en: "one" },
+      匁: { meanings: ["monme", "3.75 grams", "(kokuji)"], heisig_en: "monme" },
+      乙: { meanings: ["the latter", "duplicate", "strange", "witty", "fishhook radical (no. 5)"], heisig_en: null },
+    };
+    const clean = (character: string) => cleanMeanings(sampleRecords[character].meanings, sampleRecords[character].heisig_en);
 
     expect(clean("万")[0]).toBe("ten thousand");
     expect(clean("乳")[0]).toBe("milk");

@@ -281,6 +281,29 @@ export async function addVocabularyToSrs(input: {
   return id;
 }
 
+export async function addKanjiToSrs(input: {
+  kanji: string;
+  meaning: string;
+  reading?: string;
+  level?: string;
+}): Promise<string> {
+  const cleanKanji = input.kanji.trim();
+  const codePoint = cleanKanji.codePointAt(0)?.toString(16).toUpperCase() ?? cleanKanji;
+  const id = `kanji:${codePoint}`;
+  await upsertPracticeItems([
+    {
+      id,
+      type: "kanji",
+      level: input.level,
+      prompt: cleanKanji,
+      answer: input.meaning.trim(),
+      reading: input.reading?.trim(),
+      missed: true,
+    },
+  ]);
+  return id;
+}
+
 export async function addGrammarToSrs(input: {
   id: string;
   pattern: string;

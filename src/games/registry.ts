@@ -64,6 +64,15 @@ export const games: GameEntry[] = [
     ctaLabel: "Read stories",
   },
   {
+    id: "dictionary",
+    title: "Dictionary & Analyzer",
+    badge: "辞",
+    description: "Offline Japanese sentence analyzer with furigana breakdown, kanji extraction, and English keyword search.",
+    href: "/dictionary",
+    status: "live",
+    ctaLabel: "Open analyzer",
+  },
+  {
     id: "review",
     title: "FSRS Review Hub",
     description: "Adaptive spaced-repetition reviews tailored to your memory curve.",
