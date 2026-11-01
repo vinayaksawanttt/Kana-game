@@ -1,7 +1,7 @@
 import Dexie, { type Table } from "dexie";
 import type { Card } from "ts-fsrs";
 
-export type SrsItemType = "kana" | "kanji" | "vocab";
+export type SrsItemType = "kana" | "kanji" | "vocab" | "grammar";
 
 export interface SrsItem {
   id: string;           // e.g. "kana:hiragana-あ", "kanji:4F53", "vocab:違う"

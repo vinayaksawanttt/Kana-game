@@ -19,6 +19,7 @@ const filterTabs: Array<{ key: "all" | SrsItemType; label: string }> = [
   { key: "kana", label: "Kana" },
   { key: "kanji", label: "Kanji" },
   { key: "vocab", label: "Vocabulary" },
+  { key: "grammar", label: "Grammar" },
 ];
 
 export default function ReviewHubPage() {

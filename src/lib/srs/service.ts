@@ -30,7 +30,10 @@ function isValidSrsItem(value: unknown): value is SrsItem {
   if (
     typeof item.id !== "string" ||
     !item.id.trim() ||
-    (item.type !== "kana" && item.type !== "kanji" && item.type !== "vocab") ||
+    (item.type !== "kana" &&
+      item.type !== "kanji" &&
+      item.type !== "vocab" &&
+      item.type !== "grammar") ||
     typeof item.prompt !== "string" ||
     !item.prompt.trim() ||
     typeof item.answer !== "string" ||
@@ -276,4 +279,50 @@ export async function addVocabularyToSrs(input: {
     },
   ]);
   return id;
+}
+
+export async function addGrammarToSrs(input: {
+  id: string;
+  pattern: string;
+  romaji?: string;
+  meaning: string;
+  level?: string;
+}): Promise<string> {
+  const srsId = `grammar:${input.id.trim()}`;
+  await upsertPracticeItems([
+    {
+      id: srsId,
+      type: "grammar",
+      level: input.level,
+      prompt: input.pattern.trim(),
+      answer: input.meaning.trim(),
+      reading: input.romaji?.trim(),
+      missed: true,
+    },
+  ]);
+  return srsId;
+}
+
+export async function ingestGrammarSession(
+  questions: Array<{
+    grammarId: string;
+    grammarPattern: string;
+    romaji?: string;
+    shortExplanation: string;
+    level?: string;
+    status: string;
+  }>
+): Promise<void> {
+  const practiced = questions.filter((q) => q.status !== "unanswered");
+  await upsertPracticeItems(
+    practiced.map((q) => ({
+      id: `grammar:${q.grammarId}`,
+      type: "grammar",
+      level: q.level,
+      prompt: q.grammarPattern,
+      answer: q.shortExplanation,
+      reading: q.romaji,
+      missed: q.status !== "correct",
+    }))
+  );
 }

@@ -11,13 +11,17 @@
         "start": "next start",
         "lint": "eslint",
         "build:kanji-data": "tsx scripts/build-kanji-data.ts",
+        "build:grammar-data": "tsx scripts/build-grammar.ts",
         "build:story-placeholders": "tsx scripts/build-story-placeholders.ts",
+        "build:data": "npm run build:kanji-data && npm run build:grammar-data && npm run build:story-placeholders",
         "test": "vitest run"
     },
     "dependencies": {
         "dexie": "^4.4.7",
+        "gray-matter": "^4.0.3",
         "lucide-react": "^1.61.0",
         "next": "16.4.3",
+        "next-mdx-remote": "^6.0.0",
         "react": "19.3.0",
         "react-dom": "19.3.0",
         "ts-fsrs": "^5.4.2"

@@ -1,0 +1,31 @@
+{
+  "version": "v1",
+  "total": 828,
+  "levels": {
+    "N5": {
+      "points": 136,
+      "cloze": 117,
+      "scramble": 136
+    },
+    "N4": {
+      "points": 124,
+      "cloze": 114,
+      "scramble": 124
+    },
+    "N3": {
+      "points": 132,
+      "cloze": 128,
+      "scramble": 132
+    },
+    "N2": {
+      "points": 191,
+      "cloze": 188,
+      "scramble": 191
+    },
+    "N1": {
+      "points": 245,
+      "cloze": 243,
+      "scramble": 245
+    }
+  }
+}

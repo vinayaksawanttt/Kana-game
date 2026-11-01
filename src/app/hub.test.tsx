@@ -10,7 +10,7 @@ describe("GamesHub (/)", () => {
     expect(screen.getByRole("link", { name: /kana practice/i }).getAttribute("href")).toBe("/games/kana");
     expect(screen.getByRole("link", { name: /kanji meaning/i }).getAttribute("href")).toBe("/games/kanji/meaning");
     expect(screen.getByRole("link", { name: /vocabulary meaning/i }).getAttribute("href")).toBe("/games/vocabulary");
-    expect(screen.getByText(/Kanji Reading/i)).toBeTruthy();
+    expect(screen.queryByText(/Kanji Reading/i)).toBeNull();
     expect(screen.getByText(/FSRS Review Hub/i)).toBeTruthy();
     expect(screen.getByRole("link", { name: /github repository/i }).getAttribute("href")).toBe(
       "https://github.com/VinayakSawant859/Kana-game"
