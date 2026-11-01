@@ -180,8 +180,8 @@ export default function VocabularySetupPage() {
   return (
     <GameLayout label="VOCABULARY" glyph="語">
       <section className="mx-auto flex w-full max-w-6xl flex-1 items-center justify-center px-5 py-6 sm:px-8">
-        <div className="grid w-full gap-5 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-end">
-          <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-7">
+        <div className="grid w-full gap-5 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start">
+          <div className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-7">
             <div className="mb-7 flex items-end justify-between gap-4">
               <div>
                 <p className="mb-1 text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
@@ -215,7 +215,7 @@ export default function VocabularySetupPage() {
                       className={`min-h-11 rounded-full border px-4 py-2 text-sm font-bold transition-colors ${
                         levels.includes(level)
                           ? "border-[var(--primary)] bg-[var(--primary)] text-white"
-                          : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)] hover:border-[var(--sakura)]"
+                          : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)]"
                       }`}
                     >
                       {level}
@@ -245,7 +245,7 @@ export default function VocabularySetupPage() {
                       </button>
                     </div>
                   </div>
-                  <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+                  <div className="flex flex-wrap gap-2">
                     {gradeOptions.map((grade) => {
                       const count = gradeCounts.get(grade) ?? 0;
                       const selected = grades.includes(grade);
@@ -256,16 +256,14 @@ export default function VocabularySetupPage() {
                           disabled={!count}
                           aria-pressed={selected}
                           onClick={() => toggleGrade(grade)}
-                          className={`rounded-md border px-3 py-3 text-left text-sm font-bold transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
+                          className={`min-h-11 rounded-full border px-4 py-2 text-sm font-bold transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
                             selected
-                              ? "border-[var(--primary)] bg-[var(--sakura-light)]"
-                              : "border-[var(--line)] bg-[var(--surface)] hover:border-[var(--sakura)]"
+                              ? "border-[var(--primary)] bg-[var(--primary)] text-white"
+                              : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)]"
                           }`}
                         >
-                          <span className="block">{gradeNames[grade] ?? `Grade ${grade}`}</span>
-                          <span className="mt-1 block text-xs font-normal text-[var(--muted)]">
-                            {count} words
-                          </span>
+                          {gradeNames[grade] ?? `Grade ${grade}`}{" "}
+                          <span className="ml-1 text-xs opacity-80">({count})</span>
                         </button>
                       );
                     })}
@@ -289,10 +287,10 @@ export default function VocabularySetupPage() {
                         disabled={disabled}
                         aria-pressed={size === option}
                         onClick={() => setSize(option)}
-                        className={`rounded-md border px-3 py-3 text-sm font-bold transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
+                        className={`min-h-11 rounded-full border px-4 py-2 text-sm font-bold transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
                           size === option
-                            ? "border-[var(--primary)] bg-[var(--sakura-light)]"
-                            : "border-[var(--line)] bg-[var(--surface)] hover:border-[var(--sakura)]"
+                            ? "border-[var(--primary)] bg-[var(--primary)] text-white"
+                            : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)]"
                         }`}
                       >
                         {option === "all" ? "All available" : option}
@@ -304,19 +302,19 @@ export default function VocabularySetupPage() {
             </div>
           </div>
 
-          <aside className="rounded-lg border border-[var(--primary-hover)] bg-[var(--primary)] p-5 text-white sm:p-7 lg:sticky lg:bottom-6">
-            <p className="text-xs font-bold uppercase tracking-[0.16em] text-white/80">
+          <aside className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-7 lg:sticky lg:top-6 lg:self-start">
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
               Your selection
             </p>
-            <div className="my-5 flex items-end justify-between border-b border-white/30 pb-5">
+            <div className="my-5 flex items-end justify-between border-b border-[var(--line)] pb-5">
               <span className="font-japanese text-5xl leading-none">
                 {loading ? "…" : eligible.length}
               </span>
-              <span className="pb-1 text-sm text-white/80">eligible words</span>
+              <span className="pb-1 text-sm text-[var(--muted)]">eligible words</span>
             </div>
-            <p className="mb-5 flex items-center justify-between text-sm text-white/80">
+            <p className="mb-5 flex items-center justify-between text-sm text-[var(--muted)]">
               <span>Questions</span>
-              <strong className="text-white">{loading ? "…" : questionCount}</strong>
+              <strong className="text-[var(--ink)]">{loading ? "…" : questionCount}</strong>
             </p>
             {!levels.length && <p className="mb-3 text-sm">Select at least one JLPT level.</p>}
             {levels.length > 0 && !loading && eligible.length < questionCount && (
@@ -347,9 +345,9 @@ export default function VocabularySetupPage() {
               type="button"
               disabled={!canStart}
               onClick={start}
-              className="flex h-12 w-full items-center justify-center gap-2 rounded-md bg-[var(--surface)] text-sm font-bold text-[var(--primary)] disabled:cursor-not-allowed disabled:opacity-45"
+              className="flex h-14 w-full items-center justify-center gap-2 rounded-xl bg-[var(--primary)] text-lg font-bold text-white transition hover:bg-[var(--primary-hover)] disabled:cursor-not-allowed disabled:opacity-45"
             >
-              {starting ? "Starting…" : "Start"} <ArrowRight size={17} />
+              {starting ? "Starting…" : "Start Practice"} <ArrowRight size={19} />
             </button>
           </aside>
         </div>

@@ -9,6 +9,7 @@ export interface GrammarCloze {
 
 export interface GrammarExample {
   jp: string;
+  ja: string;
   romaji: string;
   en: string;
   /** Scramble pills in correct order; empty when the sentence is unsuitable. */
@@ -17,18 +18,23 @@ export interface GrammarExample {
   cloze: GrammarCloze | null;
 }
 
-export interface GrammarPoint {
+export interface GrammarRecord {
   /** Stable id, e.g. "N5/a-ga-ichiban". */
   id: string;
-  slug: string;
   level: GrammarLevel;
   title: string;
+  meaning: string;
+  formation: string;
+  examples: Array<Pick<GrammarExample, "ja" | "en">>;
+}
+
+export interface GrammarPoint extends GrammarRecord {
+  slug: string;
   /** Japanese part of the title, e.g. "A が いちばん～". */
   pattern: string;
   romaji: string;
   short: string;
   long: string;
-  formation: string;
   examples: GrammarExample[];
 }
 
@@ -110,4 +116,3 @@ export async function loadGrammarData(levels: readonly GrammarLevel[]): Promise<
   const perLevel = await Promise.all(unique.map((level) => getGrammarByLevel(level)));
   return perLevel.flat();
 }
-

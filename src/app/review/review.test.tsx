@@ -13,7 +13,7 @@ describe("FSRS Review Hub (/review)", () => {
     await srsDb.items.clear();
   });
 
-  it("loads due counts from Dexie and completes a flashcard review flow", async () => {
+  it("loads due counts from Dexie and uses the character card UI for kanji and kana", async () => {
     const past = new Date(Date.now() - 60_000);
     await importCards([
       {
@@ -38,6 +38,7 @@ describe("FSRS Review Hub (/review)", () => {
     const startBtn = screen.getByRole("button", { name: /start review/i });
     await user.click(startBtn);
 
+    expect(await screen.findByTestId("review-character-card-layout")).toBeTruthy();
     expect(await screen.findByText("体")).toBeTruthy();
     await user.click(screen.getByRole("button", { name: /show answer/i }));
 
@@ -50,5 +51,61 @@ describe("FSRS Review Hub (/review)", () => {
     expect(updated?.card.reps).toBe(1);
     expect(new Date(updated!.card.due).getTime()).toBeGreaterThan(Date.now());
   });
-});
 
+  it("uses the wide study deck layout for vocabulary and grammar items so long text never overflows", async () => {
+    const earlier = new Date(Date.now() - 120_000);
+    const later = new Date(Date.now() - 60_000);
+    await importCards([
+      {
+        id: "vocab:懐かしい",
+        type: "vocab",
+        level: "N2",
+        prompt: "懐かしい",
+        answer: "dear, desired, missed, nostalgic",
+        reading: "なつかしい",
+        card: createEmptyCard(earlier),
+      },
+      {
+        id: "grammar:N5/keredomo",
+        type: "grammar",
+        level: "N5",
+        prompt: "A。けれども〜B。",
+        answer: "but; however; although",
+        reading: "keredomo",
+        card: createEmptyCard(later),
+      },
+    ]);
+
+    const user = userEvent.setup();
+    render(<ReviewHubPage />);
+
+    await waitFor(() => {
+      expect(screen.getByTestId("due-total-count").textContent).toBe("2");
+    });
+    expect(screen.getByTestId("due-vocab-count").textContent).toBe("1");
+    expect(screen.getByTestId("due-grammar-count").textContent).toBe("1");
+
+    await user.click(screen.getByRole("button", { name: /start review/i }));
+
+    // First item (Vocabulary) renders in wide study layout, NOT the narrow character card
+    expect(await screen.findByTestId("review-wide-study-layout")).toBeTruthy();
+    expect(screen.queryByTestId("review-character-card-layout")).toBeNull();
+    expect(screen.getByText("懐かしい")).toBeTruthy();
+
+    await user.click(screen.getByRole("button", { name: /show answer/i }));
+    expect(await screen.findByText("dear, desired, missed, nostalgic")).toBeTruthy();
+    expect(screen.getByText("なつかしい")).toBeTruthy();
+
+    await user.click(screen.getByRole("button", { name: "Good" }));
+
+    // Second item (Grammar) also renders in wide study layout with a link to the grammar guide
+    expect(await screen.findByTestId("review-wide-study-layout")).toBeTruthy();
+    expect(screen.getByText("A。けれども〜B。")).toBeTruthy();
+
+    await user.click(screen.getByRole("button", { name: /show answer/i }));
+    expect(await screen.findByText("but; however; although")).toBeTruthy();
+    expect(screen.getByRole("link", { name: /open grammar guide/i }).getAttribute("href")).toBe(
+      "/grammar/N5/keredomo"
+    );
+  });
+});

@@ -14,17 +14,17 @@
     },
     "N3": {
       "points": 132,
-      "cloze": 128,
+      "cloze": 129,
       "scramble": 132
     },
     "N2": {
       "points": 191,
-      "cloze": 188,
+      "cloze": 189,
       "scramble": 191
     },
     "N1": {
       "points": 245,
-      "cloze": 243,
+      "cloze": 244,
       "scramble": 245
     }
   }

@@ -1,7 +1,9 @@
 /**
  * Builds the static grammar dataset served from /public/data/v1/grammar/.
  *
- * Input:  src/data/grammar/grammar_ja_N{1..5}_full_alphabetical_0001.json (hanabira)
+ * Inputs:
+ *   - src/data/grammar/grammar_ja_N{1..5}_full_alphabetical_0001.json (grammar rules)
+ *   - src/data/grammar/sentences_output_*.json (local example sentences)
  * Output: public/data/v1/grammar/N5.json … N1.json + index.json
  *
  * Each example sentence is pre-processed for the games:
@@ -10,7 +12,7 @@
  *
  * Run: npm run build:grammar-data
  */
-import { access, mkdir, readFile, writeFile } from "node:fs/promises";
+import { access, mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import type {
   GrammarExample,
@@ -22,7 +24,9 @@ import type {
 import {
   chunkSentence,
   extractFragments,
+  findMatchingGrammarSentences,
   findCloze,
+  type GrammarSentenceCandidate,
   parseTitle,
   shortHash,
   slugify,
@@ -36,8 +40,13 @@ interface RawGrammarEntry {
   examples?: Array<{ jp?: string; romaji?: string; en?: string }>;
 }
 
+interface RawSentenceEntry extends GrammarSentenceCandidate {
+  key?: string;
+}
+
 const LEVELS: GrammarLevel[] = ["N5", "N4", "N3", "N2", "N1"];
 const MIN_CHUNKS = 3;
+const MAX_EXAMPLES = 5;
 
 function buildExample(raw: { jp?: string; romaji?: string; en?: string }, fragments: string[]): GrammarExample | null {
   const jp = raw.jp?.trim() ?? "";
@@ -50,6 +59,7 @@ function buildExample(raw: { jp?: string; romaji?: string; en?: string }, fragme
 
   return {
     jp,
+    ja: jp,
     romaji: raw.romaji?.trim() ?? "",
     en,
     chunks: usableChunks,
@@ -68,6 +78,24 @@ async function main(): Promise<void> {
     total: 0,
     levels: {} as GrammarIndex["levels"],
   };
+
+  const sentenceFiles = (await readdir(sourceDir))
+    .filter((name) => name.startsWith("sentences_output_") && name.endsWith(".json"))
+    .sort();
+  if (!sentenceFiles.length) {
+    throw new Error(`Missing sentence example sources in ${sourceDir}`);
+  }
+  const sentenceEntries: RawSentenceEntry[] = [];
+  for (const filename of sentenceFiles) {
+    const entries = JSON.parse(
+      await readFile(resolve(sourceDir, filename), "utf8")
+    ) as RawSentenceEntry[];
+    if (!Array.isArray(entries)) {
+      throw new Error(`Invalid sentence example source: ${filename}`);
+    }
+    sentenceEntries.push(...entries);
+  }
+  console.log(`Loaded ${sentenceEntries.length} local example sentences from ${sentenceFiles.length} files`);
 
   for (const level of LEVELS) {
     const sourcePath = resolve(sourceDir, `grammar_ja_${level}_full_alphabetical_0001.json`);
@@ -93,15 +121,37 @@ async function main(): Promise<void> {
       usedSlugs.add(slug);
 
       const fragments = extractFragments(pattern);
-      const examples = (entry.examples ?? [])
+      const sourceExamples = (entry.examples ?? [])
         .map((example) => buildExample(example, fragments))
         .filter((example): example is GrammarExample => example !== null);
+      const usedSentences = new Set(sourceExamples.map((example) => example.jp));
+      const localExamples = findMatchingGrammarSentences(
+        pattern,
+        sentenceEntries.filter(
+          (sentence) => !sentence.sentence_original || !usedSentences.has(sentence.sentence_original.trim())
+        ),
+        Math.max(0, MAX_EXAMPLES - sourceExamples.length)
+      )
+        .map((sentence) =>
+          buildExample(
+            {
+              jp: sentence.sentence_original,
+              romaji: sentence.sentence_romaji,
+              en: sentence.sentence_english,
+            },
+            fragments
+          )
+        )
+        .filter((example): example is GrammarExample => example !== null);
+      const examples = [...sourceExamples, ...localExamples].slice(0, MAX_EXAMPLES);
+      const meaning = entry.short_explanation?.trim() || entry.long_explanation?.trim() || "";
 
       points.push({
         id: `${level}/${slug}`,
         slug,
         level,
         title: entry.title.trim(),
+        meaning,
         pattern,
         romaji,
         short: entry.short_explanation?.trim() ?? "",
@@ -129,4 +179,3 @@ main().catch((error: unknown) => {
   console.error(error);
   process.exit(1);
 });
-

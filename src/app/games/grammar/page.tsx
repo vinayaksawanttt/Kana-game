@@ -141,8 +141,8 @@ export default function GrammarSetupPage() {
       }
     >
       <section className="mx-auto flex w-full max-w-6xl flex-1 items-center justify-center px-5 py-6 sm:px-8">
-        <div className="grid w-full gap-5 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-end">
-          <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-7">
+        <div className="grid w-full gap-5 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start">
+          <div className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-7">
             <p className="mb-1 text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
               Cloze & Syntax Scramble
             </p>
@@ -164,7 +164,7 @@ export default function GrammarSetupPage() {
                         className={`min-h-11 rounded-full border px-4 py-2 text-sm font-bold transition-colors ${
                           selected
                             ? "border-[var(--primary)] bg-[var(--primary)] text-white"
-                            : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)] hover:border-[var(--sakura)]"
+                            : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)]"
                         }`}
                       >
                         {lvl}{" "}
@@ -189,14 +189,14 @@ export default function GrammarSetupPage() {
                         type="button"
                         aria-pressed={selected}
                         onClick={() => setClozeRatio(opt.value)}
-                        className={`rounded-md border px-3.5 py-3 text-left text-sm font-bold transition-colors ${
+                        className={`rounded-xl border px-3.5 py-3 text-left text-sm font-bold transition-colors ${
                           selected
-                            ? "border-[var(--primary)] bg-[var(--sakura-light)]"
-                            : "border-[var(--line)] bg-[var(--surface)] hover:border-[var(--sakura)]"
+                            ? "border-[var(--primary)] bg-[var(--primary)] text-white"
+                            : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)]"
                         }`}
                       >
                         <span className="block">{opt.label}</span>
-                        <span className="mt-0.5 block text-xs font-normal text-[var(--muted)]">
+                        <span className={`mt-0.5 block text-xs font-normal ${selected ? "text-white/80" : "text-[var(--muted)]"}`}>
                           {opt.sub}
                         </span>
                       </button>
@@ -216,10 +216,10 @@ export default function GrammarSetupPage() {
                       disabled={poolSize === 0}
                       aria-pressed={size === option}
                       onClick={() => setSize(option)}
-                      className={`rounded-md border px-3 py-3 text-sm font-bold transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
+                      className={`min-h-11 rounded-full border px-5 py-2 text-sm font-bold transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
                         size === option
-                          ? "border-[var(--primary)] bg-[var(--sakura-light)]"
-                          : "border-[var(--line)] bg-[var(--surface)] hover:border-[var(--sakura)]"
+                          ? "border-[var(--primary)] bg-[var(--primary)] text-white"
+                          : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)]"
                       }`}
                     >
                       {option}
@@ -230,21 +230,21 @@ export default function GrammarSetupPage() {
             </div>
           </div>
 
-          <aside className="rounded-lg border border-[var(--primary-hover)] bg-[var(--primary)] p-5 text-white sm:p-7 lg:sticky lg:bottom-6">
-            <p className="text-xs font-bold uppercase tracking-[0.16em] text-white/80">
+          <aside className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-7 lg:sticky lg:top-6 lg:self-start">
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
               Your selection
             </p>
-            <div className="my-5 flex items-end justify-between border-b border-white/30 pb-5">
-              <span className="font-japanese text-5xl leading-none">{poolSize}</span>
-              <span className="pb-1 text-sm text-white/80">grammar points</span>
+            <div className="my-5 flex items-end justify-between border-b border-[var(--line)] pb-5">
+              <span className="font-japanese text-5xl leading-none text-[var(--primary-fg)]">{poolSize}</span>
+              <span className="pb-1 text-sm text-[var(--muted)]">grammar points</span>
             </div>
-            <p className="mb-2 flex items-center justify-between text-sm text-white/80">
+            <p className="mb-2 flex items-center justify-between text-sm text-[var(--muted)]">
               <span>Questions</span>
-              <strong className="text-white">{Math.min(size, poolSize)}</strong>
+              <strong className="text-[var(--ink)]">{Math.min(size, poolSize)}</strong>
             </p>
-            <p className="mb-5 flex items-center justify-between text-sm text-white/80">
+            <p className="mb-5 flex items-center justify-between text-sm text-[var(--muted)]">
               <span>Cloze / Scramble</span>
-              <strong className="text-white">
+              <strong className="text-[var(--ink)]">
                 {Math.round(clozeRatio * 100)}% / {Math.round((1 - clozeRatio) * 100)}%
               </strong>
             </p>
@@ -257,9 +257,9 @@ export default function GrammarSetupPage() {
               type="button"
               disabled={!poolSize || starting}
               onClick={() => void start()}
-              className="flex h-12 w-full items-center justify-center gap-2 rounded-md bg-[var(--surface)] text-sm font-bold text-[var(--primary)] disabled:cursor-not-allowed disabled:opacity-45"
+              className="flex h-14 w-full items-center justify-center gap-2 rounded-xl bg-[var(--primary)] text-lg font-bold text-white transition hover:bg-[var(--primary-hover)] disabled:cursor-not-allowed disabled:opacity-45"
             >
-              {starting ? "Starting…" : "Start"} <ArrowRight size={17} />
+              {starting ? "Starting…" : "Start Practice"} <ArrowRight size={19} />
             </button>
           </aside>
         </div>
@@ -267,4 +267,3 @@ export default function GrammarSetupPage() {
     </GameLayout>
   );
 }
-

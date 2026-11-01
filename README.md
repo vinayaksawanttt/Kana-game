@@ -22,9 +22,14 @@
 * **Interactive Hint System**: Reveal furigana readings or individual kanji character meanings at the cost of score penalties.
 * **Ruby Text Furigana**: Native Japanese sentence examples rendered with `<ruby>` annotations.
 
-### 4. Spaced Repetition & Reading *(Coming Soon)*
-* **Kanji Reading**: Practice on'yomi and kun'yomi readings with kana typing inputs.
-* **FSRS Review Hub**: Adaptive spaced-repetition scheduler optimizing reviews against individual forgetting curves.
+### 4. Grammar Practice & Reference (`/games/grammar`, `/grammar`)
+* **JLPT N5–N1 Coverage**: Practice cloze and sentence-scramble questions or browse grammar guides.
+* **Enriched Examples**: `npm run build:grammar-data` combines local grammar rules and matching examples from `src/data/grammar/sentences_output_*.json` into static data under `public/data/v1/grammar/`.
+
+### 5. Spaced Repetition & Reading
+* **Kanji Reading** *(Coming Soon)*: Practice on'yomi and kun'yomi readings with kana typing inputs.
+* **FSRS Review Hub**: Available now; adaptive spaced-repetition reviews are scheduled against individual forgetting curves.
+* **Dictionary & Sentence Analyzer**: Search English or Japanese text and inspect local word readings, meanings, and kanji.
 
 ---
 
@@ -104,6 +109,7 @@ Visit [http://localhost:3000](http://localhost:3000) to view the Games Hub.
 | `npm run lint` | Runs ESLint checks across TypeScript and React code. |
 | `npm run build` | Builds an optimized production bundle with static prerendering. |
 | `npm run build:kanji-data` | Processes raw KANJIDIC data into public static JSON files (`public/data/v1/kanji/`). |
+| `npm run build:grammar-data` | Combines grammar rules and matching local examples into public static grammar JSON. |
 
 ---
 

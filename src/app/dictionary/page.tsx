@@ -163,7 +163,7 @@ export default function DictionaryAnalyzerPage() {
               <button
                 type="submit"
                 disabled={!query.trim() || isSearching}
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-[var(--primary)] px-6 py-3 text-sm font-semibold text-[var(--primary-ink)] shadow-sm transition hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-50"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-[var(--primary)] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-50"
               >
                 {isSearching ? (
                   <>
@@ -324,7 +324,7 @@ export default function DictionaryAnalyzerPage() {
                             </span>
                             <div>
                               <div className="flex flex-wrap items-center gap-1.5">
-                                <span className="rounded-full bg-[var(--primary)] px-2.5 py-0.5 text-[11px] font-bold text-[var(--primary-ink)]">
+                                <span className="rounded-full bg-[var(--primary)] px-2.5 py-0.5 text-[11px] font-bold text-white">
                                   N{k.jlpt}
                                 </span>
                                 <span className="rounded-full border border-[var(--line)] bg-[var(--surface)] px-2 py-0.5 text-[11px] font-medium text-[var(--muted)]">
@@ -459,7 +459,7 @@ export default function DictionaryAnalyzerPage() {
                                       {item.reading}
                                     </span>
                                   )}
-                                  <span className="rounded-full bg-[var(--primary)] px-2 py-0.5 text-[10px] font-bold text-[var(--primary-ink)]">
+                                  <span className="rounded-full bg-[var(--primary)] px-2 py-0.5 text-[10px] font-bold text-white">
                                     {item.level}
                                   </span>
                                 </div>
@@ -515,7 +515,7 @@ export default function DictionaryAnalyzerPage() {
                                   {k.c}
                                 </span>
                                 <div>
-                                  <span className="rounded-full bg-[var(--primary)] px-2 py-0.5 text-[10px] font-bold text-[var(--primary-ink)]">
+                                  <span className="rounded-full bg-[var(--primary)] px-2 py-0.5 text-[10px] font-bold text-white">
                                     N{k.jlpt}
                                   </span>
                                   <p className="mt-1 text-sm font-semibold text-[var(--ink)]">
@@ -630,7 +630,7 @@ export default function DictionaryAnalyzerPage() {
                     {selectedToken.posLabel}
                   </span>
                   {selectedToken.jlptLevel && (
-                    <span className="rounded-full bg-[var(--primary)] px-2.5 py-0.5 text-xs font-bold text-[var(--primary-ink)]">
+                    <span className="rounded-full bg-[var(--primary)] px-2.5 py-0.5 text-xs font-bold text-white">
                       {selectedToken.jlptLevel}
                     </span>
                   )}
@@ -660,7 +660,7 @@ export default function DictionaryAnalyzerPage() {
                       type="button"
                       onClick={() => void handleSaveTokenToFsrs(selectedToken)}
                       disabled={isTokenSaved}
-                      className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-[var(--primary)] px-4 py-2.5 text-xs font-semibold text-[var(--primary-ink)] shadow-sm transition hover:opacity-95 disabled:opacity-60"
+                      className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-[var(--primary)] px-4 py-2.5 text-xs font-semibold text-white shadow-sm transition hover:opacity-95 disabled:opacity-60"
                     >
                       {isTokenSaved ? (
                         <>
@@ -693,4 +693,3 @@ export default function DictionaryAnalyzerPage() {
     </GameLayout>
   );
 }
-

@@ -2,8 +2,9 @@
 
 import { useCallback, useEffect, useRef, useState, type ChangeEvent } from "react";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Download, RotateCcw, Upload } from "lucide-react";
+import { ArrowRight, BookOpen, CheckCircle2, Download, RotateCcw, Upload } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { grammarGuideHref } from "@/data/grammar";
 import {
   exportBackup,
   getAllSrsItems,
@@ -62,6 +63,7 @@ export default function ReviewHubPage() {
   const kanaDue = dueItems.filter((item) => item.type === "kana");
   const kanjiDue = dueItems.filter((item) => item.type === "kanji");
   const vocabDue = dueItems.filter((item) => item.type === "vocab");
+  const grammarDue = dueItems.filter((item) => item.type === "grammar");
 
   const filteredDue =
     selectedFilter === "all"
@@ -172,6 +174,12 @@ export default function ReviewHubPage() {
   }
 
   const currentItem = queue[currentIndex];
+  const isCharacterCard =
+    currentItem?.type === "kana" || currentItem?.type === "kanji";
+  const grammarRefHref =
+    currentItem?.type === "grammar" && currentItem.id.startsWith("grammar:")
+      ? grammarGuideHref(currentItem.id.slice("grammar:".length))
+      : null;
 
   return (
     <GameLayout label="FSRS REVIEW" glyph="復">
@@ -212,7 +220,7 @@ export default function ReviewHubPage() {
                 })}
               </div>
 
-              <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+              <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
                 <div className="rounded-md border border-[var(--line)] bg-[var(--bg)]/60 p-4">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-bold uppercase tracking-[0.12em] text-[var(--muted)]">
@@ -248,6 +256,19 @@ export default function ReviewHubPage() {
                   </div>
                   <p className="mt-2 font-japanese text-3xl font-bold" data-testid="due-vocab-count">
                     {loading ? "…" : vocabDue.length}
+                  </p>
+                  <p className="mt-1 text-xs text-[var(--muted)]">due today</p>
+                </div>
+
+                <div className="rounded-md border border-[var(--line)] bg-[var(--bg)]/60 p-4">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold uppercase tracking-[0.12em] text-[var(--muted)]">
+                      Grammar
+                    </span>
+                    <span className="font-japanese text-lg text-[var(--primary-fg)]">文</span>
+                  </div>
+                  <p className="mt-2 font-japanese text-3xl font-bold" data-testid="due-grammar-count">
+                    {loading ? "…" : grammarDue.length}
                   </p>
                   <p className="mt-1 text-xs text-[var(--muted)]">due today</p>
                 </div>
@@ -306,7 +327,7 @@ export default function ReviewHubPage() {
                 <span className="pb-1 text-sm text-white/80">cards ready</span>
               </div>
               <p className="mb-5 text-sm text-white/85">
-                Complete practice sessions in Kana, Kanji, or Vocabulary to automatically populate your review deck.
+                Complete practice sessions in Kana, Kanji, Vocabulary, or Grammar to automatically populate your review deck.
               </p>
               <button
                 type="button"
@@ -349,47 +370,176 @@ export default function ReviewHubPage() {
               </button>
             </div>
 
-            <div className="grid w-full items-center gap-8 lg:grid-cols-2">
-              <div className="flex flex-col items-center">
-                <div className="kana-card-shell" key={currentItem.id}>
-                  <div className="kana-card-stack" aria-hidden="true">
-                    {[0, 1]
-                      .slice(0, Math.min(2, Math.max(queue.length - currentIndex - 1, 0)))
-                      .map((layer) => (
-                        <div key={layer} className="paper-layer" />
-                      ))}
-                  </div>
-                  <div className="kana-card">
-                    <div className="absolute left-0 right-0 top-[10%] z-[1] flex justify-center gap-2 px-4">
-                      <span className="rounded-full bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold uppercase">
-                        {currentItem.type}
-                      </span>
-                      {currentItem.level && (
-                        <span className="rounded-full bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold">
-                          {currentItem.level}
-                        </span>
-                      )}
+            {isCharacterCard ? (
+              /* Character Card Layout (Kana & Kanji only) */
+              <div
+                className="grid w-full items-center gap-8 lg:grid-cols-2"
+                data-testid="review-character-card-layout"
+              >
+                <div className="flex flex-col items-center">
+                  <div className="kana-card-shell" key={currentItem.id}>
+                    <div className="kana-card-stack" aria-hidden="true">
+                      {[0, 1]
+                        .slice(0, Math.min(2, Math.max(queue.length - currentIndex - 1, 0)))
+                        .map((layer) => (
+                          <div key={layer} className="paper-layer" />
+                        ))}
                     </div>
-                    <span className="kana-card-glyph break-keep px-4 text-center">
-                      {currentItem.prompt}
-                    </span>
+                    <div className="kana-card">
+                      <div className="absolute left-0 right-0 top-[10%] z-[1] flex justify-center gap-2 px-4">
+                        <span className="rounded-full bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold uppercase">
+                          {currentItem.type}
+                        </span>
+                        {currentItem.level && (
+                          <span className="rounded-full bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold">
+                            {currentItem.level}
+                          </span>
+                        )}
+                      </div>
+                      <span className="kana-card-glyph break-keep px-4 text-center">
+                        {currentItem.prompt}
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="flex flex-col justify-center rounded-lg border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-8">
+                <div className="flex flex-col justify-center rounded-lg border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-8">
+                  {!revealed ? (
+                    <div className="flex flex-col items-center text-center">
+                      <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
+                        Recall the answer
+                      </p>
+                      <p className="mb-6 text-sm text-[var(--muted)]">
+                        Think of the reading and meaning, then flip the card to grade your recall.
+                      </p>
+                      <button
+                        type="button"
+                        onClick={() => setRevealed(true)}
+                        className="primary-button flex h-12 w-full items-center justify-center gap-2 rounded-md text-sm font-bold"
+                      >
+                        Show Answer
+                      </button>
+                      <p className="mt-3 text-xs text-[var(--muted)]">
+                        Press Space or Enter to reveal
+                      </p>
+                    </div>
+                  ) : (
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
+                        Answer
+                      </p>
+                      <p className="mt-2 text-2xl font-bold text-[var(--ink)]">
+                        {currentItem.answer}
+                      </p>
+                      {currentItem.reading && (
+                        <p className="mt-1 font-japanese text-base text-[var(--muted)]">
+                          {currentItem.reading}
+                        </p>
+                      )}
+
+                      <p className="mt-6 mb-3 text-xs font-bold uppercase tracking-[0.14em] text-[var(--muted)]">
+                        Grade your recall
+                      </p>
+                      <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4">
+                        <button
+                          type="button"
+                          onClick={() => void handleGrade(Rating.Again)}
+                          className="min-h-12 rounded-md border border-[var(--wrong)] bg-[var(--wrong)]/10 px-3 py-2 text-sm font-bold text-[var(--wrong)] transition-colors hover:bg-[var(--wrong)] hover:text-white"
+                        >
+                          Again
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => void handleGrade(Rating.Hard)}
+                          className="min-h-12 rounded-md border border-[var(--line)] bg-[var(--surface)] px-3 py-2 text-sm font-bold text-[var(--ink)] transition-colors hover:border-[var(--primary)]"
+                        >
+                          Hard
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => void handleGrade(Rating.Good)}
+                          className="min-h-12 rounded-md border border-[var(--correct)] bg-[var(--correct)]/15 px-3 py-2 text-sm font-bold text-[var(--correct)] transition-colors hover:bg-[var(--correct)] hover:text-white"
+                        >
+                          Good
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => void handleGrade(Rating.Easy)}
+                          className="primary-button min-h-12 rounded-md px-3 py-2 text-sm font-bold"
+                        >
+                          Easy
+                        </button>
+                      </div>
+                      <p className="mt-3 text-center text-xs text-[var(--muted)]">
+                        Keys 1 (Again) · 2 (Hard) · 3 (Good) · 4 (Easy)
+                      </p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            ) : (
+              /* Wide Study Deck Layout (Vocabulary & Grammar) */
+              <div
+                key={currentItem.id}
+                data-testid="review-wide-study-layout"
+                className="w-full max-w-3xl rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-8"
+              >
+                {/* Header Badges */}
+                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--line)] pb-4">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="rounded-full bg-[var(--primary)] px-3 py-1 text-xs font-bold uppercase text-white">
+                      {currentItem.type === "vocab" ? "Vocabulary" : "Grammar Pattern"}
+                    </span>
+                    {currentItem.level && (
+                      <span className="rounded-full bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
+                        {currentItem.level}
+                      </span>
+                    )}
+                  </div>
+                  <span className="text-xs font-semibold text-[var(--muted)]">
+                    {currentItem.type === "vocab" ? "Word & Meaning Recall" : "Grammar Rule Recall"}
+                  </span>
+                </div>
+
+                {/* Expandable Prompt Box */}
+                <div className="my-6 rounded-xl border border-[var(--line)] bg-[var(--bg)]/65 px-5 py-8 text-center sm:px-8 sm:py-10">
+                  <p className="mb-3 text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
+                    {currentItem.type === "vocab" ? "Japanese Vocabulary" : "Target Grammar"}
+                  </p>
+                  <p
+                    lang="ja"
+                    className={`font-japanese mx-auto max-w-2xl break-words font-bold leading-snug text-[var(--ink)] ${
+                      currentItem.prompt.length > 14
+                        ? "text-2xl sm:text-3xl"
+                        : currentItem.prompt.length > 7
+                          ? "text-3xl sm:text-4xl"
+                          : "text-4xl sm:text-5xl"
+                    }`}
+                  >
+                    {currentItem.prompt}
+                  </p>
+                  {revealed && currentItem.reading && (
+                    <p
+                      lang="ja"
+                      className="font-japanese mt-3 text-base font-medium text-[var(--primary-fg)] sm:text-lg"
+                    >
+                      {currentItem.reading}
+                    </p>
+                  )}
+                </div>
+
+                {/* Action / Answer Reveal Section */}
                 {!revealed ? (
                   <div className="flex flex-col items-center text-center">
-                    <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
-                      Recall the answer
-                    </p>
-                    <p className="mb-6 text-sm text-[var(--muted)]">
-                      Think of the reading and meaning, then flip the card to grade your recall.
+                    <p className="mb-4 text-sm text-[var(--muted)]">
+                      {currentItem.type === "vocab"
+                        ? "Recall the reading and English meaning of this word, then reveal the answer."
+                        : "Recall the meaning and usage of this grammar pattern, then reveal the answer."}
                     </p>
                     <button
                       type="button"
                       onClick={() => setRevealed(true)}
-                      className="primary-button flex h-12 w-full items-center justify-center gap-2 rounded-md text-sm font-bold"
+                      className="primary-button flex h-12 w-full max-w-md items-center justify-center gap-2 rounded-md text-sm font-bold"
                     >
                       Show Answer
                     </button>
@@ -398,18 +548,28 @@ export default function ReviewHubPage() {
                     </p>
                   </div>
                 ) : (
-                  <div>
-                    <p className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
-                      Answer
-                    </p>
-                    <p className="mt-2 text-2xl font-bold text-[var(--ink)]">
-                      {currentItem.answer}
-                    </p>
-                    {currentItem.reading && (
-                      <p className="mt-1 font-japanese text-base text-[var(--muted)]">
-                        {currentItem.reading}
-                      </p>
-                    )}
+                  <div className="border-t border-[var(--line)] pt-5">
+                    <div className="flex flex-wrap items-start justify-between gap-3">
+                      <div>
+                        <p className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
+                          {currentItem.type === "vocab" ? "Meaning" : "Explanation"}
+                        </p>
+                        <p className="mt-1.5 text-xl font-bold leading-relaxed text-[var(--ink)] sm:text-2xl">
+                          {currentItem.answer}
+                        </p>
+                      </div>
+                      {grammarRefHref && (
+                        <Link
+                          href={grammarRefHref}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-[var(--primary)]/40 bg-[var(--sakura-light)] px-3.5 py-1.5 text-xs font-bold text-[var(--primary-fg)] transition hover:bg-[var(--primary)] hover:text-white"
+                        >
+                          <BookOpen className="size-3.5" />
+                          <span>Open Grammar Guide</span>
+                        </Link>
+                      )}
+                    </div>
 
                     <p className="mt-6 mb-3 text-xs font-bold uppercase tracking-[0.14em] text-[var(--muted)]">
                       Grade your recall
@@ -450,7 +610,7 @@ export default function ReviewHubPage() {
                   </div>
                 )}
               </div>
-            </div>
+            )}
           </div>
         )}
 

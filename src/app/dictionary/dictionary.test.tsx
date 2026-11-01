@@ -71,6 +71,9 @@ describe("DictionaryAnalyzerPage (/dictionary)", () => {
     });
 
     expect(screen.getAllByText("浅い").length).toBeGreaterThan(0);
+    const levelTags = screen.getAllByText(/^N[1-5]$/);
+    expect(levelTags.length).toBeGreaterThan(0);
+    expect(levelTags.every((tag) => tag.className.includes("text-white"))).toBe(true);
     expect(screen.getByRole("region", { name: /Context Sentences/i })).toBeTruthy();
     expect(screen.getByText(/This river is very shallow/i)).toBeTruthy();
   });

@@ -1,7 +1,128 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
-import { games } from "@/games/registry";
+import { DueReviewCount } from "@/components/due-review-count";
+
+const sections = [
+  {
+    title: "Core Practice",
+    description: "Build fluency with focused daily drills.",
+    cards: [
+      {
+        title: "Kana",
+        description: "Recognize hiragana and katakana, one row at a time.",
+        badge: "あ",
+        href: "/games/kana",
+      },
+      {
+        title: "Kanji Meaning",
+        description: "Learn the meanings of JLPT and school-grade kanji.",
+        badge: "漢",
+        href: "/games/kanji/meaning",
+      },
+      {
+        title: "Kanji Reading",
+        description: "Practice on'yomi and kun'yomi readings.",
+        badge: "読",
+        href: "/games/kanji",
+        soon: true,
+      },
+      {
+        title: "Vocabulary",
+        description: "Recall the meaning of Japanese words by JLPT level.",
+        badge: "語",
+        href: "/games/vocabulary",
+      },
+    ],
+  },
+  {
+    title: "Learn & Reference",
+    description: "Study patterns, examples, and practical grammar guides.",
+    cards: [
+      {
+        title: "Grammar Library",
+        description: "Browse JLPT grammar points, formations, and examples.",
+        badge: "文",
+        href: "/grammar",
+      },
+      {
+        title: "Grammar Practice",
+        description: "Put grammar to work with cloze and sentence-scramble games.",
+        badge: "学",
+        href: "/games/grammar",
+      },
+    ],
+  },
+  {
+    title: "Tools",
+    description: "Look up words and explore how Japanese sentences fit together.",
+    cards: [
+      {
+        title: "Dictionary & Sentence Analyzer",
+        description: "Search words or break a sentence down into readings and meanings.",
+        badge: "辞",
+        href: "/dictionary",
+      },
+    ],
+  },
+];
+
+function ModuleCard({
+  title,
+  description,
+  badge,
+  href,
+  soon,
+}: {
+  title: string;
+  description: string;
+  badge: string;
+  href: string;
+  soon?: boolean;
+}) {
+  const contents = (
+    <>
+      <div className="mb-5 flex items-center justify-between gap-3">
+        <span className="grid size-12 place-items-center rounded-full bg-[var(--sakura-light)] font-japanese text-2xl text-[var(--primary-fg)]">
+          {badge}
+        </span>
+        <span
+          className={`rounded-full px-3 py-1 text-[11px] font-bold ${
+            soon
+              ? "bg-[var(--sakura-light)] text-[var(--muted)]"
+              : "bg-[var(--correct)]/15 text-[var(--correct)]"
+          }`}
+        >
+          {soon ? "Coming soon" : "Ready"}
+        </span>
+      </div>
+      <h3 className="text-lg font-bold">{title}</h3>
+      <p className="mt-2 flex-1 text-sm leading-relaxed text-[var(--muted)]">{description}</p>
+      <span className="mt-5 flex items-center justify-between text-xs font-bold text-[var(--primary-fg)]">
+        {soon ? "In development" : "Explore"}
+        {!soon && (
+          <ArrowRight
+            size={16}
+            className="transition-transform group-hover:translate-x-1"
+            aria-hidden="true"
+          />
+        )}
+      </span>
+    </>
+  );
+  const className =
+    "group flex min-h-52 flex-col rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_12px_34px_rgba(188,0,45,0.045)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sakura)] hover:shadow-[0_20px_40px_rgba(208,16,76,0.12)]";
+
+  return soon ? (
+    <div aria-disabled="true" className={`${className} opacity-75`}>
+      {contents}
+    </div>
+  ) : (
+    <Link href={href} className={className}>
+      {contents}
+    </Link>
+  );
+}
 
 export default function GamesHub() {
   return (
@@ -28,76 +149,76 @@ export default function GamesHub() {
         </a>
       }
     >
-      <section className="mx-auto flex w-full max-w-6xl flex-1 flex-col justify-between px-5 pb-8 sm:px-8">
-        <div className="my-auto py-4">
-          <div className="mb-8">
-            <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
-              Japanese practice
-            </p>
-            <h1 className="text-3xl font-bold sm:text-4xl">Choose your game</h1>
-            <p className="mt-3 max-w-xl text-[var(--muted)]">
-              Short, focused games for mastering Japanese kana, kanji, and vocabulary.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {games.map((game) => {
-              const isLive = game.status === "live";
-              const card = (
-                <>
-                  <div className="mb-5 flex items-center justify-between">
-                    <span className="grid size-12 place-items-center rounded-full bg-[var(--sakura-light)] font-japanese text-2xl text-[var(--primary-fg)]">
-                      {game.badge}
-                    </span>
-                    <span
-                      className={`inline-flex rounded-full px-3 py-1 text-xs font-bold ${
-                        isLive
-                          ? "bg-[var(--correct)]/15 text-[var(--correct)]"
-                          : "bg-[var(--sakura-light)] text-[var(--muted)]"
-                      }`}
-                    >
-                      {isLive ? "Live" : "Soon"}
-                    </span>
-                  </div>
-                  <div className="flex flex-1 flex-col justify-between">
-                    <div>
-                      <h2 className="text-xl font-bold">{game.title}</h2>
-                      <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
-                        {game.description}
-                      </p>
-                    </div>
-                    <div className="mt-6 flex items-center justify-between text-xs font-bold">
-                      <span className={isLive ? "text-[var(--primary-fg)]" : "text-[var(--muted)]"}>
-                        {isLive ? (game.ctaLabel ?? "Start practice") : "Coming soon"}
-                      </span>
-                      {isLive && (
-                        <ArrowRight
-                          size={16}
-                          className="shrink-0 text-[var(--primary-fg)] transition-transform group-hover:translate-x-1"
-                        />
-                      )}
-                    </div>
-                  </div>
-                </>
-              );
-              const cardClass = `group flex flex-col rounded-lg border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[0_18px_50px_rgba(188,0,45,0.055)] ${
-                isLive
-                  ? "transition-transform hover:-translate-y-1 hover:border-[var(--sakura)]"
-                  : "opacity-65"
-              }`;
-              return isLive ? (
-                <Link key={game.id} href={game.href} className={cardClass}>
-                  {card}
-                </Link>
-              ) : (
-                <div key={game.id} aria-disabled="true" className={cardClass}>
-                  {card}
-                </div>
-              );
-            })}
-          </div>
-        </div>
+      <section className="mx-auto w-full max-w-6xl flex-1 px-5 pb-12 sm:px-8">
+        <header className="py-8 sm:py-11">
+          <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-[var(--primary-fg)]">
+            Japanese, one small step at a time
+          </p>
+          <h1 className="text-3xl font-bold sm:text-4xl">Choose your game</h1>
+          <p className="mt-3 max-w-2xl text-[var(--muted)]">
+            Choose a focused practice mode, review what you know, or explore the language.
+          </p>
+        </header>
 
-        <footer className="mt-10 border-t border-[var(--line)] pt-5 text-xs text-[var(--muted)]">
+        <section aria-labelledby="daily-review-heading" className="mb-10">
+          <h2
+            id="daily-review-heading"
+            className="mb-4 text-sm font-extrabold uppercase tracking-[0.14em]"
+          >
+            Daily Review
+          </h2>
+          <Link
+            href="/review"
+            className="group grid gap-5 rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[0_14px_38px_rgba(188,0,45,0.06)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sakura)] hover:shadow-[0_22px_44px_rgba(208,16,76,0.14)] sm:grid-cols-[1fr_auto] sm:items-center sm:p-8"
+          >
+            <div className="flex items-start gap-4">
+              <span className="grid size-14 shrink-0 place-items-center rounded-full bg-[var(--sakura-light)] font-japanese text-3xl text-[var(--primary-fg)]">
+                復
+              </span>
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--muted)]">
+                  Spaced repetition · Local-first
+                </p>
+                <h3 id="daily-review-title" className="mt-1 text-xl font-bold sm:text-2xl">
+                  FSRS Review Hub
+                </h3>
+                <p className="mt-2 max-w-xl text-sm leading-relaxed text-[var(--muted)]">
+                  Keep kana, kanji, vocabulary, and grammar fresh with reviews scheduled for your
+                  memory.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center justify-between gap-5 sm:justify-end">
+              <DueReviewCount />
+              <ArrowRight
+                size={20}
+                className="text-[var(--primary-fg)] transition-transform group-hover:translate-x-1"
+                aria-hidden="true"
+              />
+            </div>
+          </Link>
+        </section>
+
+        {sections.map((section) => (
+          <section key={section.title} aria-labelledby={`${section.title.replaceAll(" ", "-")}-heading`} className="mb-10">
+            <div className="mb-4">
+              <h2
+                id={`${section.title.replaceAll(" ", "-")}-heading`}
+                className="text-sm font-extrabold uppercase tracking-[0.14em]"
+              >
+                {section.title}
+              </h2>
+              <p className="mt-1 text-sm text-[var(--muted)]">{section.description}</p>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {section.cards.map((card) => (
+                <ModuleCard key={card.title} {...card} />
+              ))}
+            </div>
+          </section>
+        ))}
+
+        <footer className="border-t border-[var(--line)] pt-5 text-xs text-[var(--muted)]">
           <p>
             Kanji &amp; dictionary data derived from{" "}
             <a

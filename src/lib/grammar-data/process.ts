@@ -12,11 +12,38 @@ export interface ClozeSplit {
   after: string;
 }
 
+export interface GrammarSentenceCandidate {
+  sentence_original?: string;
+  sentence_romaji?: string;
+  sentence_english?: string;
+}
+
 const JAPANESE_RUN = /[\u3040-\u30ff\u3400-\u9fff々ー]+/g;
 const HIRAGANA_ONLY = /^[\u3040-\u309f]+$/;
 const TRAILING_PUNCT = /[、。！？!?,.」』）)…]+$/;
 const PUNCT_ONLY = /^[\s、。！？!?,.「」『』（）()・…〜～\-:;”“"'’‘]+$/;
 const OPENING_ONLY = /^[「『（(“"‘]+$/;
+const GENERIC_GRAMMAR_FRAGMENTS = new Set([
+  "ある",
+  "いる",
+  "から",
+  "こと",
+  "これ",
+  "それ",
+  "ため",
+  "だろう",
+  "です",
+  "でも",
+  "では",
+  "ない",
+  "なる",
+  "ので",
+  "のに",
+  "まで",
+  "ます",
+  "もの",
+  "よう",
+]);
 
 /** Single-character or short function words that stand alone as their own pill. */
 const PARTICLES = new Set([
@@ -61,6 +88,39 @@ export function extractFragments(pattern: string): string[] {
   return [...new Set(runs.map((run) => run.replace(/^ー+|ー+$/g, "")).filter(Boolean))].sort(
     (a, b) => b.length - a.length
   );
+}
+
+/** Returns the strongest exact-pattern sentence matches, with unique Japanese examples. */
+export function findMatchingGrammarSentences(
+  pattern: string,
+  sentences: readonly GrammarSentenceCandidate[],
+  limit: number
+): GrammarSentenceCandidate[] {
+  const fragments = extractFragments(pattern).filter(
+    (fragment) => [...fragment].length >= 3 && !GENERIC_GRAMMAR_FRAGMENTS.has(fragment)
+  );
+  if (!fragments.length || limit <= 0) return [];
+
+  const scored = sentences.flatMap((sentence, index) => {
+    const jp = sentence.sentence_original?.normalize("NFKC").replace(/\s+/g, "");
+    if (!jp || !sentence.sentence_english?.trim()) return [];
+    const score = fragments.reduce(
+      (best, fragment) => (jp.includes(fragment.normalize("NFKC")) ? Math.max(best, [...fragment].length) : best),
+      0
+    );
+    return score ? [{ sentence, index, score, jp }] : [];
+  });
+  scored.sort((a, b) => b.score - a.score || a.index - b.index);
+
+  const used = new Set<string>();
+  const matches: GrammarSentenceCandidate[] = [];
+  for (const match of scored) {
+    if (used.has(match.jp)) continue;
+    used.add(match.jp);
+    matches.push(match.sentence);
+    if (matches.length === limit) break;
+  }
+  return matches;
 }
 
 /**
@@ -200,4 +260,3 @@ export function chunkSentence(sentence: string, maxChunks = 8): string[] {
 
   return chunks;
 }
-
