@@ -12,6 +12,7 @@ export interface GrammarExample {
   ja: string;
   romaji: string;
   en: string;
+  furigana?: string;
   /** Scramble pills in correct order; empty when the sentence is unsuitable. */
   chunks: string[];
   /** Where the grammar point sits in the sentence; null when it cannot be located. */
@@ -24,8 +25,10 @@ export interface GrammarRecord {
   level: GrammarLevel;
   title: string;
   meaning: string;
-  formation: string;
-  examples: Array<Pick<GrammarExample, "ja" | "en">>;
+  formation: string[];
+  explanation: string;
+  examples: Array<Pick<GrammarExample, "ja" | "en"> & Partial<Pick<GrammarExample, "furigana">>>;
+  relatedPatterns?: string[];
 }
 
 export interface GrammarPoint extends GrammarRecord {
@@ -48,6 +51,17 @@ export interface GrammarIndex {
   version: "v1";
   total: number;
   levels: Record<GrammarLevel, { points: number; cloze: number; scramble: number }>;
+  points: GrammarCatalogEntry[];
+}
+
+export interface GrammarCatalogEntry {
+  id: string;
+  slug: string;
+  level: GrammarLevel;
+  title: string;
+  pattern: string;
+  romaji: string;
+  meaning: string;
 }
 
 export function isGrammarLevel(value: string): value is GrammarLevel {
@@ -69,12 +83,52 @@ export function grammarGuideHref(id: string): string {
 }
 
 const levelCache = new Map<GrammarLevel, Promise<GrammarPoint[]>>();
+let indexCache: Promise<GrammarIndex> | undefined;
 
 function readServerGrammar(level: GrammarLevel): GrammarPoint[] {
   const fs = eval("require")("node:fs");
   const path = eval("require")("node:path");
   const content = fs.readFileSync(path.resolve(process.cwd(), `public/data/v1/grammar/${level}.json`), "utf8");
-  return (JSON.parse(content) as GrammarLevelFile).points;
+  return normalizeGrammarPoints((JSON.parse(content) as GrammarLevelFile).points);
+}
+
+/** Adapts older cached files to the current lesson schema. */
+export function normalizeGrammarPoint(point: GrammarPoint): GrammarPoint {
+  const legacyPoint = point as Omit<GrammarPoint, "formation" | "explanation"> & {
+    formation?: string | string[];
+    explanation?: string;
+  };
+  const formation = Array.isArray(legacyPoint.formation)
+    ? legacyPoint.formation
+    : typeof legacyPoint.formation === "string" && legacyPoint.formation.trim()
+      ? [legacyPoint.formation.trim()]
+      : [];
+
+  return {
+    ...legacyPoint,
+    formation,
+    explanation:
+      typeof legacyPoint.explanation === "string" && legacyPoint.explanation.trim()
+        ? legacyPoint.explanation
+        : legacyPoint.long || legacyPoint.meaning || legacyPoint.short || "",
+    examples: Array.isArray(legacyPoint.examples) ? legacyPoint.examples : [],
+  };
+}
+
+function normalizeGrammarPoints(points: GrammarPoint[]): GrammarPoint[] {
+  return points.map(normalizeGrammarPoint);
+}
+
+function toCatalogEntry(point: GrammarPoint): GrammarCatalogEntry {
+  return {
+    id: point.id,
+    slug: point.slug,
+    level: point.level,
+    title: point.title,
+    pattern: point.pattern,
+    romaji: point.romaji,
+    meaning: point.meaning,
+  };
 }
 
 function canUseBrowserFetch(): boolean {
@@ -84,6 +138,52 @@ function canUseBrowserFetch(): boolean {
 
 export function clearGrammarCache(): void {
   levelCache.clear();
+  indexCache = undefined;
+}
+
+function readServerGrammarIndex(): GrammarIndex {
+  const fs = eval("require")("node:fs");
+  const path = eval("require")("node:path");
+  const content = fs.readFileSync(path.resolve(process.cwd(), "public/data/v1/grammar/index.json"), "utf8");
+  return JSON.parse(content) as GrammarIndex;
+}
+
+/** Loads the compact grammar catalog used for library and lesson navigation. */
+export function getGrammarIndex(): Promise<GrammarIndex> {
+  if (indexCache) return indexCache;
+
+  indexCache = (async (): Promise<GrammarIndex> => {
+    if (canUseBrowserFetch()) {
+      const response = await globalThis.fetch("/data/v1/grammar/index.json", {
+        cache: "no-cache",
+      });
+      if (!response.ok) {
+        throw new Error(`Failed to fetch grammar index (${response.status})`);
+      }
+      const index = (await response.json()) as Partial<GrammarIndex>;
+      if (Array.isArray(index.points)) return index as GrammarIndex;
+
+      const legacyPoints = await loadGrammarData(grammarLevels);
+      return {
+        ...index,
+        total: index.total ?? legacyPoints.length,
+        points: legacyPoints.map(toCatalogEntry),
+      } as GrammarIndex;
+    }
+    const index = readServerGrammarIndex() as Partial<GrammarIndex>;
+    if (Array.isArray(index.points)) return index as GrammarIndex;
+    const legacyPoints = await loadGrammarData(grammarLevels);
+    return {
+      ...index,
+      total: index.total ?? legacyPoints.length,
+      points: legacyPoints.map(toCatalogEntry),
+    } as GrammarIndex;
+  })().catch((error: unknown) => {
+    indexCache = undefined;
+    throw error;
+  });
+
+  return indexCache;
 }
 
 /** Loads one level's static grammar file (`/data/v1/grammar/<level>.json`), cached per level. */
@@ -94,12 +194,12 @@ export function getGrammarByLevel(level: GrammarLevel): Promise<GrammarPoint[]> 
   const request = (async (): Promise<GrammarPoint[]> => {
     if (canUseBrowserFetch()) {
       const response = await globalThis.fetch(`/data/v1/grammar/${level}.json`, {
-        cache: "force-cache",
+        cache: "no-cache",
       });
       if (!response.ok) {
         throw new Error(`Failed to fetch grammar data for ${level} (${response.status})`);
       }
-      return ((await response.json()) as GrammarLevelFile).points;
+      return normalizeGrammarPoints(((await response.json()) as GrammarLevelFile).points);
     }
     return readServerGrammar(level);
   })().catch((error: unknown) => {

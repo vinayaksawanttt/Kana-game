@@ -23,6 +23,7 @@ interface RadicalPayload {
 let radicalsCache: Promise<RadicalRecord[]> | null = null;
 let indexCache: Promise<RadicalIndex> | null = null;
 let examplesCache: Promise<RadicalExamples> | null = null;
+let reverseKanjiRadicalsCache: Promise<Map<string, RadicalRecord[]>> | null = null;
 
 function isMockedFetch(): boolean {
   return (
@@ -59,6 +60,7 @@ export function clearRadicalDataCache(): void {
   radicalsCache = null;
   indexCache = null;
   examplesCache = null;
+  reverseKanjiRadicalsCache = null;
 }
 
 export function loadRadicals(): Promise<RadicalRecord[]> {
@@ -94,4 +96,38 @@ export function loadRadicalExamples(): Promise<RadicalExamples> {
     }
   );
   return examplesCache;
+}
+
+export async function getRadicalsForKanji(kanji: string): Promise<RadicalRecord[]> {
+  if (!kanji) return [];
+
+  reverseKanjiRadicalsCache ??= Promise.all([loadRadicals(), loadRadicalIndex()])
+    .then(([radicals, index]) => {
+      const radicalByChar = new Map<string, RadicalRecord>();
+      for (const rad of radicals) {
+        radicalByChar.set(rad.character, rad);
+      }
+
+      const byKanji = new Map<string, RadicalRecord[]>();
+      for (const [radChar, kanjiList] of Object.entries(index)) {
+        const radRecord = radicalByChar.get(radChar);
+        if (!radRecord) continue;
+        for (const k of kanjiList) {
+          let list = byKanji.get(k);
+          if (!list) {
+            list = [];
+            byKanji.set(k, list);
+          }
+          list.push(radRecord);
+        }
+      }
+      return byKanji;
+    })
+    .catch((error: unknown) => {
+      reverseKanjiRadicalsCache = null;
+      throw error;
+    });
+
+  const map = await reverseKanjiRadicalsCache;
+  return map.get(kanji) ?? [];
 }

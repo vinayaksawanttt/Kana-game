@@ -1,13 +1,14 @@
 import "fake-indexeddb/auto";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
+import GrammarLibraryPage from "@/app/grammar/page";
 import GrammarDetailPage from "@/app/grammar/[level]/[slug]/page";
 import GrammarPlayPage from "./play/[sessionId]/page";
 import { createGrammarSession } from "@/engine/grammarSession";
 import { createSeededRng } from "@/engine/random";
 import { saveGameSession } from "@/lib/game-core/storage";
 import { srsDb } from "@/lib/srs/db";
-import { getAllSrsItems } from "@/lib/srs/service";
+import { addGrammarToSrs, getAllSrsItems } from "@/lib/srs/service";
 
 let mockParams: Record<string, string> = {
   level: "N5",
@@ -39,13 +40,16 @@ describe("Grammar Reference Detail & Play UI", () => {
     cleanup();
   });
 
-  it("renders MDX grammar reference and saves grammar rule via floating Add to FSRS Review button", async () => {
+  it("renders the structured grammar lesson and saves grammar rule to FSRS", async () => {
     mockParams = { level: "N5", slug: "a-ga-ichiban" };
     render(<GrammarDetailPage />);
 
     await waitFor(() => {
       expect(screen.getByRole("heading", { name: /A が いちばん/i })).toBeTruthy();
     });
+    expect(screen.getByRole("heading", { name: "FORMATION" })).toBeTruthy();
+    expect(screen.getByRole("heading", { name: "EXAMPLE SENTENCES" })).toBeTruthy();
+    expect(screen.getByRole("navigation", { name: "Nearby grammar patterns" })).toBeTruthy();
 
     const addBtn = screen.getByRole("button", { name: /Add to FSRS Review/i });
     fireEvent.click(addBtn);
@@ -57,6 +61,21 @@ describe("Grammar Reference Detail & Play UI", () => {
         true
       );
     });
+  });
+
+  it("shows grammar units and marks existing FSRS entries as learned", async () => {
+    await addGrammarToSrs({
+      id: "N5/a-ga-ichiban",
+      pattern: "A が いちばん～",
+      meaning: "the most; the best",
+      level: "N5",
+    });
+
+    render(<GrammarLibraryPage />);
+
+    expect(await screen.findByText("Unit 01")).toBeTruthy();
+    expect(await screen.findByRole("button", { name: "Added to review" })).toBeTruthy();
+    expect(screen.getByRole("progressbar").getAttribute("aria-valuenow")).toBe("1");
   });
 
   it("plays a Scramble question by moving chunks to dropzone and opens the MDX Read Guide drawer", async () => {

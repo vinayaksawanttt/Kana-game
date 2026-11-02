@@ -3,12 +3,14 @@ import { serialize } from "next-mdx-remote/serialize";
 import type { MDXRemoteSerializeResult } from "next-mdx-remote";
 import {
   getGrammarByLevel,
+  getGrammarIndex,
   grammarLevels,
   isGrammarLevel,
   loadGrammarData,
   parseGrammarId,
   type GrammarExample,
   type GrammarLevel,
+  type GrammarCatalogEntry,
   type GrammarPoint,
 } from "@/data/grammar";
 
@@ -19,8 +21,10 @@ export interface GrammarDocFrontmatter {
   title: string;
   pattern: string;
   romaji: string;
+  meaning: string;
+  explanation: string;
   short: string;
-  formation: string;
+  formation: string[];
 }
 
 export interface GrammarDoc {
@@ -44,9 +48,13 @@ export function buildGrammarMarkdown(point: GrammarPoint): string {
 
   const rawBody = [
     `## Meaning`,
-    point.short || point.long,
-    point.formation ? `## Formation\n\n\`${point.formation}\`` : "",
-    point.long && point.long !== point.short ? `## Explanation\n\n${point.long}` : "",
+    point.meaning,
+    point.formation.length
+      ? `## Formation\n\n${point.formation.map((rule) => `- \`${rule}\``).join("\n")}`
+      : "",
+    point.explanation && point.explanation !== point.meaning
+      ? `## Explanation\n\n${point.explanation}`
+      : "",
     examplesMd ? `## Example Sentences\n\n${examplesMd}` : "",
   ]
     .filter(Boolean)
@@ -59,6 +67,8 @@ export function buildGrammarMarkdown(point: GrammarPoint): string {
     title: point.title,
     pattern: point.pattern,
     romaji: point.romaji,
+    meaning: point.meaning,
+    explanation: point.explanation,
     short: point.short,
     formation: point.formation,
   });
@@ -78,6 +88,17 @@ export async function getGrammarListByLevel(
     return [];
   }
   return getGrammarByLevel(normalized);
+}
+
+/** Returns the compact index records for a level or the complete learning path. */
+export async function getGrammarCatalogByLevel(
+  level: GrammarLevel | "All" = "All"
+): Promise<GrammarCatalogEntry[]> {
+  const { points } = await getGrammarIndex();
+  if (level === "All") return points;
+  const normalized = level.toUpperCase();
+  if (!isGrammarLevel(normalized)) return [];
+  return points.filter((point) => point.level === normalized);
 }
 
 /**
@@ -120,4 +141,3 @@ export async function getGrammarDoc(
     mdxSource,
   };
 }
-

@@ -16,6 +16,7 @@ import { access, mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import type {
   GrammarExample,
+  GrammarCatalogEntry,
   GrammarIndex,
   GrammarLevel,
   GrammarLevelFile,
@@ -36,7 +37,7 @@ interface RawGrammarEntry {
   title: string;
   short_explanation?: string;
   long_explanation?: string;
-  formation?: string;
+  formation?: string | string[];
   examples?: Array<{ jp?: string; romaji?: string; en?: string }>;
 }
 
@@ -46,7 +47,12 @@ interface RawSentenceEntry extends GrammarSentenceCandidate {
 
 const LEVELS: GrammarLevel[] = ["N5", "N4", "N3", "N2", "N1"];
 const MIN_CHUNKS = 3;
-const MAX_EXAMPLES = 5;
+const MAX_EXAMPLES = 8;
+
+function parseFormation(value: string | string[] | undefined): string[] {
+  const entries = Array.isArray(value) ? value : value ? value.split(/\r?\n|;\s*/) : [];
+  return entries.map((entry) => entry.trim()).filter(Boolean);
+}
 
 function buildExample(raw: { jp?: string; romaji?: string; en?: string }, fragments: string[]): GrammarExample | null {
   const jp = raw.jp?.trim() ?? "";
@@ -77,6 +83,7 @@ async function main(): Promise<void> {
     version: "v1",
     total: 0,
     levels: {} as GrammarIndex["levels"],
+    points: [],
   };
 
   const sentenceFiles = (await readdir(sourceDir))
@@ -145,6 +152,8 @@ async function main(): Promise<void> {
         .filter((example): example is GrammarExample => example !== null);
       const examples = [...sourceExamples, ...localExamples].slice(0, MAX_EXAMPLES);
       const meaning = entry.short_explanation?.trim() || entry.long_explanation?.trim() || "";
+      const formation = parseFormation(entry.formation);
+      const explanation = entry.long_explanation?.trim() || meaning;
 
       points.push({
         id: `${level}/${slug}`,
@@ -152,11 +161,12 @@ async function main(): Promise<void> {
         level,
         title: entry.title.trim(),
         meaning,
+        explanation,
         pattern,
         romaji,
         short: entry.short_explanation?.trim() ?? "",
         long: entry.long_explanation?.trim() ?? "",
-        formation: entry.formation?.trim() ?? "",
+        formation,
         examples,
       });
     }
@@ -168,6 +178,11 @@ async function main(): Promise<void> {
     const scramble = points.filter((point) => point.examples.some((example) => example.chunks.length)).length;
     index.levels[level] = { points: points.length, cloze, scramble };
     index.total += points.length;
+    index.points.push(
+      ...points.map(({ id, slug, level: pointLevel, title, pattern, romaji, meaning }) =>
+        ({ id, slug, level: pointLevel, title, pattern, romaji, meaning }) satisfies GrammarCatalogEntry
+      )
+    );
     console.log(`${level}: ${points.length} points · ${cloze} cloze-ready · ${scramble} scramble-ready`);
   }
 

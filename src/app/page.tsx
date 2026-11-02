@@ -28,10 +28,9 @@ const sections = [
       },
       {
         title: "Kanji Reading",
-        description: "Practice on'yomi and kun'yomi readings.",
+        description: "Browse kanji by JLPT and grade, inspect readings, and trace strokes in the playground.",
         badge: "読",
-        href: "/games/kanji",
-        soon: true,
+        href: "/games/kanji/reading",
       },
       {
         title: "Vocabulary",
