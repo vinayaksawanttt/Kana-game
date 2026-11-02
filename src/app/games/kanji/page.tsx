@@ -4,6 +4,7 @@ import { GameLayout } from "@/lib/game-core/layout";
 
 const modes = [
   { title: "Meaning", description: "Choose the English meaning for each kanji.", href: "/games/kanji/meaning", live: true },
+  { title: "Radical Builder", description: "Find kanji by radical and explore readings, meanings, and examples.", href: "/games/kanji/radicals", live: true },
   { title: "Reading", description: "Practice on'yomi and kun'yomi readings.", live: false },
   { title: "Kanji from meaning", description: "Find the kanji that matches a meaning.", live: false },
   { title: "Typing", description: "Practice typing kanji from their readings.", live: false },
@@ -20,7 +21,7 @@ export default function KanjiModesPage() {
             const content = (
               <>
                 <span className="mb-5 grid size-11 place-items-center rounded-full bg-[var(--sakura-light)] font-japanese text-xl text-[var(--primary-fg)]">
-                  {mode.live ? "意" : "漢"}
+                  {mode.title === "Meaning" ? "意" : mode.title === "Radical Builder" ? "部" : "漢"}
                 </span>
                 <h2 className="text-lg font-bold">{mode.title}</h2>
                 <p className="mt-2 text-sm text-[var(--muted)]">{mode.description}</p>

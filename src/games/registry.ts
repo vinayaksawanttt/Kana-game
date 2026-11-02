@@ -28,6 +28,15 @@ export const games: GameEntry[] = [
     ctaLabel: "Practice meanings",
   },
   {
+    id: "kanji-radicals",
+    title: "Radical Builder",
+    description: "Explore kanji by their radicals, readings, meanings, and example sentences.",
+    href: "/games/kanji/radicals",
+    badge: "部",
+    status: "live",
+    ctaLabel: "Explore radicals",
+  },
+  {
     id: "vocabulary",
     title: "Vocabulary Meaning",
     description: "Type the English meaning of Japanese words.",

@@ -16,6 +16,7 @@
 * **JLPT & School-Grade Coverage**: 2,208 curated kanji spanning JLPT N5 through N1 and elementary grades 1–6, Secondary (8), and Names (9).
 * **Smart Distractor Disambiguation**: Algorithmic synonym and stem filtering ensures multiple-choice options never present ambiguous or conflicting definitions.
 * **Static Partitioned Data Pipeline**: Kanji records are pre-cleaned and partitioned into cached per-level JSON payloads (`/public/data/v1/kanji/N[1-5].json`), keeping bundle sizes ultralight.
+* **Radical Builder** (`/games/kanji/radicals`): Browse Japanese radicals, filter JLPT kanji by component, inspect readings and meanings, and save kanji to FSRS.
 
 ### 3. Vocabulary Meaning (`/games/vocabulary`)
 * **Rich JLPT Lexicon**: Over 7,800 vocabulary words with English meanings and example sentences.
@@ -109,6 +110,7 @@ Visit [http://localhost:3000](http://localhost:3000) to view the Games Hub.
 | `npm run lint` | Runs ESLint checks across TypeScript and React code. |
 | `npm run build` | Builds an optimized production bundle with static prerendering. |
 | `npm run build:kanji-data` | Processes raw KANJIDIC data into public static JSON files (`public/data/v1/kanji/`). |
+| `npm run build:radicals` | Builds the JLPT-filtered radical chart, inverse index, and compact kanji example sentences; also runs automatically before `npm run build`. |
 | `npm run build:grammar-data` | Combines grammar rules and matching local examples into public static grammar JSON. |
 
 ---

@@ -12,6 +12,7 @@ import {
   X,
 } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { StrokePlayer } from "@/components/kanji/StrokePlayer";
 import { useDictionary } from "@/hooks/useDictionary";
 import { addKanjiToSrs, addVocabularyToSrs } from "@/lib/srs/service";
 import type { AnalyzedToken } from "@/engine/analyzer";
@@ -26,6 +27,38 @@ const SAMPLE_QUERIES = [
   { label: "shallow", tag: "English" },
   { label: "water", tag: "English" },
 ];
+
+function KanjiStrokeToggle({
+  kanji,
+  level,
+  className = "",
+}: {
+  kanji: string;
+  level: number;
+  className?: string;
+}) {
+  const [showStroke, setShowStroke] = useState(false);
+
+  return (
+    <div className={className}>
+      {showStroke ? (
+        <StrokePlayer
+          kanji={kanji}
+          level={level}
+          onClose={() => setShowStroke(false)}
+        />
+      ) : (
+        <button
+          type="button"
+          onClick={() => setShowStroke(true)}
+          className="w-full h-12 rounded-md border border-[var(--sakura)] bg-[var(--surface)] text-sm font-bold text-[var(--primary)] hover:bg-[var(--sakura-light)] transition-colors"
+        >
+          Show stroke order
+        </button>
+      )}
+    </div>
+  );
+}
 
 export default function DictionaryAnalyzerPage() {
   const {
@@ -350,6 +383,8 @@ export default function DictionaryAnalyzerPage() {
                           </p>
                         )}
 
+                        <KanjiStrokeToggle kanji={k.c} level={k.jlpt} className="mt-3" />
+
                         <button
                           type="button"
                           onClick={() => void handleSaveKanjiToFsrs(k)}
@@ -505,38 +540,42 @@ export default function DictionaryAnalyzerPage() {
                           return (
                             <div
                               key={k.c}
-                              className="flex items-center justify-between gap-3 rounded-xl border border-[var(--line)] bg-[var(--paper-tint)] p-3.5"
+                              className="flex flex-col justify-between gap-3 rounded-xl border border-[var(--line)] bg-[var(--paper-tint)] p-3.5"
                             >
-                              <div className="flex items-center gap-3">
-                                <span
-                                  lang="ja"
-                                  className="font-japanese flex size-12 shrink-0 items-center justify-center rounded-xl border border-[var(--line)] bg-[var(--surface)] text-2xl font-semibold text-[var(--ink)]"
-                                >
-                                  {k.c}
-                                </span>
-                                <div>
-                                  <span className="rounded-full bg-[var(--primary)] px-2 py-0.5 text-[10px] font-bold text-white">
-                                    N{k.jlpt}
+                              <div className="flex items-center justify-between gap-3">
+                                <div className="flex items-center gap-3">
+                                  <span
+                                    lang="ja"
+                                    className="font-japanese flex size-12 shrink-0 items-center justify-center rounded-xl border border-[var(--line)] bg-[var(--surface)] text-2xl font-semibold text-[var(--ink)]"
+                                  >
+                                    {k.c}
                                   </span>
-                                  <p className="mt-1 text-sm font-semibold text-[var(--ink)]">
-                                    {k.label}
-                                  </p>
+                                  <div>
+                                    <span className="rounded-full bg-[var(--primary)] px-2 py-0.5 text-[10px] font-bold text-white">
+                                      N{k.jlpt}
+                                    </span>
+                                    <p className="mt-1 text-sm font-semibold text-[var(--ink)]">
+                                      {k.label}
+                                    </p>
+                                  </div>
                                 </div>
+
+                                <button
+                                  type="button"
+                                  onClick={() => void handleSaveKanjiToFsrs(k)}
+                                  disabled={isSaved}
+                                  aria-label={`Add kanji ${k.c} to FSRS`}
+                                  className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg border border-[var(--line)] bg-[var(--surface)] px-2.5 text-xs font-semibold text-[var(--ink)] hover:border-[var(--primary)] disabled:opacity-60"
+                                >
+                                  {isSaved ? (
+                                    <BookmarkCheck className="size-4 text-[var(--success)]" />
+                                  ) : (
+                                    <BookmarkPlus className="size-4 text-[var(--primary)]" />
+                                  )}
+                                </button>
                               </div>
 
-                              <button
-                                type="button"
-                                onClick={() => void handleSaveKanjiToFsrs(k)}
-                                disabled={isSaved}
-                                aria-label={`Add kanji ${k.c} to FSRS`}
-                                className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg border border-[var(--line)] bg-[var(--surface)] px-2.5 text-xs font-semibold text-[var(--ink)] hover:border-[var(--primary)] disabled:opacity-60"
-                              >
-                                {isSaved ? (
-                                  <BookmarkCheck className="size-4 text-[var(--success)]" />
-                                ) : (
-                                  <BookmarkPlus className="size-4 text-[var(--primary)]" />
-                                )}
-                              </button>
+                              <KanjiStrokeToggle kanji={k.c} level={k.jlpt} />
                             </div>
                           );
                         })}

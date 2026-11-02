@@ -21,6 +21,12 @@ const sections = [
         href: "/games/kanji/meaning",
       },
       {
+        title: "Radical Builder",
+        description: "Explore kanji by their radicals, readings, meanings, and examples.",
+        badge: "部",
+        href: "/games/kanji/radicals",
+      },
+      {
         title: "Kanji Reading",
         description: "Practice on'yomi and kun'yomi readings.",
         badge: "読",

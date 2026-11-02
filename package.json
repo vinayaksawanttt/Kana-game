@@ -11,11 +11,14 @@
         "start": "next start",
         "lint": "eslint",
         "build:kanji-data": "tsx scripts/build-kanji-data.ts",
+        "build:radicals": "tsx scripts/build-radicals.ts",
         "build:vocabulary-data": "tsx scripts/build-vocabulary-data.ts",
         "build:grammar-data": "tsx scripts/build-grammar.ts",
         "build:story-placeholders": "tsx scripts/build-story-placeholders.ts",
         "build:dictionary": "tsx scripts/build-dictionary.ts",
-        "build:data": "npm run build:kanji-data && npm run build:vocabulary-data && npm run build:grammar-data && npm run build:story-placeholders && npm run build:dictionary",
+        "build:strokes": "tsx scripts/build-strokes.ts",
+        "build:data": "npm run build:kanji-data && npm run build:radicals && npm run build:vocabulary-data && npm run build:grammar-data && npm run build:story-placeholders && npm run build:dictionary && npm run build:strokes",
+        "prebuild": "npm run build:radicals",
         "test": "vitest run"
     },
     "dependencies": {
