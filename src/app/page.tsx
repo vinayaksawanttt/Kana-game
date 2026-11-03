@@ -2,8 +2,10 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
 import { DueReviewCount } from "@/components/due-review-count";
+import { getAllLearnDocs } from "@/lib/content/learn";
 
-const sections = [
+function getSections(learnGuideCount: number) {
+  return [
   {
     title: "Core Practice",
     description: "Build fluency with focused daily drills.",
@@ -56,6 +58,13 @@ const sections = [
         badge: "学",
         href: "/games/grammar",
       },
+      {
+        title: "Cheat Sheets & Study Guides",
+        description: "Browse Japanese reference sheets grouped by topic and JLPT level.",
+        badge: String(learnGuideCount),
+        href: "/learn",
+        statusLabel: "Live",
+      },
     ],
   },
   {
@@ -70,7 +79,8 @@ const sections = [
       },
     ],
   },
-];
+  ];
+}
 
 function ModuleCard({
   title,
@@ -78,12 +88,14 @@ function ModuleCard({
   badge,
   href,
   soon,
+  statusLabel,
 }: {
   title: string;
   description: string;
   badge: string;
   href: string;
   soon?: boolean;
+  statusLabel?: string;
 }) {
   const contents = (
     <>
@@ -98,7 +110,7 @@ function ModuleCard({
               : "bg-[var(--correct)]/15 text-[var(--correct)]"
           }`}
         >
-          {soon ? "Coming soon" : "Ready"}
+          {soon ? "Coming soon" : statusLabel ?? "Ready"}
         </span>
       </div>
       <h3 className="text-lg font-bold">{title}</h3>
@@ -130,6 +142,7 @@ function ModuleCard({
 }
 
 export default function GamesHub() {
+  const learnGuideCount = getAllLearnDocs().length;
   return (
     <GameLayout
       label="NIHONGO GAMES"
@@ -204,7 +217,7 @@ export default function GamesHub() {
           </Link>
         </section>
 
-        {sections.map((section) => (
+        {getSections(learnGuideCount).map((section) => (
           <section key={section.title} aria-labelledby={`${section.title.replaceAll(" ", "-")}-heading`} className="mb-10">
             <div className="mb-4">
               <h2

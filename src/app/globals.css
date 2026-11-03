@@ -232,3 +232,46 @@ html[data-theme="dark"] .kana-card {
     opacity: 0;
   }
 }
+
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  body::before {
+    display: none !important;
+  }
+
+  .learn-reader {
+    min-height: 0 !important;
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .learn-reader .learn-no-print {
+    display: none !important;
+  }
+
+  .learn-reader article {
+    border: 0 !important;
+    background: #fff !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  .learn-reader .learn-mdx,
+  .learn-reader .learn-mdx * {
+    color: #000 !important;
+  }
+
+  .learn-reader .learn-mdx table,
+  .learn-reader .learn-mdx th,
+  .learn-reader .learn-mdx td {
+    border-color: #999 !important;
+  }
+
+  .learn-reader .learn-mdx a {
+    text-decoration: none !important;
+  }
+}

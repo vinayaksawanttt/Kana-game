@@ -18,6 +18,9 @@ describe("GamesHub (/)", () => {
     expect(linkFor("/games/vocabulary")).toBeTruthy();
     expect(screen.getByRole("heading", { name: "Learn & Reference" })).toBeTruthy();
     expect(linkFor("/grammar")).toBeTruthy();
+    expect(linkFor("/learn")).toBeTruthy();
+    expect(screen.getByText(/cheat sheets & study guides/i)).toBeTruthy();
+    expect(linkFor("/learn")?.textContent).toMatch(/\d+/);
     expect(screen.getByRole("heading", { name: "Tools" })).toBeTruthy();
     expect(linkFor("/dictionary")).toBeTruthy();
     expect(screen.getByText(/FSRS Review Hub/i)).toBeTruthy();

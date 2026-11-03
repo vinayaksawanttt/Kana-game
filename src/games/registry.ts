@@ -64,6 +64,15 @@ export const games: GameEntry[] = [
     ctaLabel: "Open library",
   },
   {
+    id: "learn",
+    title: "Cheat Sheets & Study Guides",
+    description: "Browse Japanese reference sheets grouped by topic and JLPT level.",
+    href: "/learn",
+    badge: "学",
+    status: "live",
+    ctaLabel: "Browse study guides",
+  },
+  {
     id: "stories",
     title: "Reading Practice",
     badge: "読",
