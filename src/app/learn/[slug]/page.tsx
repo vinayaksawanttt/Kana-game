@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { serialize } from "next-mdx-remote/serialize";
-import remarkGfm from "remark-gfm";
 import { MdxComponents } from "@/components/learn/MdxComponents";
 import { PrintButton } from "@/components/learn/PrintButton";
 import { getAllLearnDocs, getLearnDocBySlug } from "@/lib/content/learn";
@@ -34,9 +32,6 @@ export default async function LearnDocumentPage({
   const doc = getLearnDocBySlug(slug);
   if (!doc) notFound();
 
-  const mdxSource = await serialize(doc.content, {
-    mdxOptions: { remarkPlugins: [remarkGfm] },
-  });
   const practiceHref =
     doc.frontmatter.category === "Kanji"
       ? "/games/kanji/meaning"
@@ -84,7 +79,7 @@ export default async function LearnDocumentPage({
                 </p>
               )}
             </header>
-            <MdxComponents source={mdxSource} />
+            <MdxComponents source={doc.content} />
           </article>
 
           <aside className="learn-no-print self-start lg:sticky lg:top-6">
@@ -98,11 +93,11 @@ export default async function LearnDocumentPage({
                     {doc.headings.map((heading) => (
                       <li
                         key={`${heading.id}-${heading.level}`}
-                        className={heading.level === 3 ? "ml-3" : ""}
+                        className={heading.level === 3 ? "pl-3 text-xs" : "text-sm"}
                       >
                         <a
                           href={`#${heading.id}`}
-                          className="text-xs leading-relaxed text-[var(--muted)] transition hover:text-[var(--primary-fg)]"
+                          className="text-[var(--muted)] hover:text-[var(--primary-fg)]"
                         >
                           {heading.text}
                         </a>
@@ -111,15 +106,20 @@ export default async function LearnDocumentPage({
                   </ol>
                 </nav>
               ) : (
-                <p className="mt-3 text-xs text-[var(--muted)]">No section headings.</p>
+                <p className="mt-3 text-xs text-[var(--muted)]">
+                  No section headings found in this document.
+                </p>
               )}
+
               {practiceHref && (
-                <Link
-                  href={practiceHref}
-                  className="primary-button mt-6 flex min-h-11 items-center justify-center rounded-lg px-4 text-center text-xs font-bold"
-                >
-                  Related Practice
-                </Link>
+                <div className="mt-6 border-t border-[var(--line)] pt-5">
+                  <Link
+                    href={practiceHref}
+                    className="flex w-full items-center justify-center rounded-xl bg-[var(--primary)] px-4 py-2.5 text-center text-xs font-bold text-white transition-opacity hover:opacity-90"
+                  >
+                    Practice related quizzes →
+                  </Link>
+                </div>
               )}
             </div>
           </aside>

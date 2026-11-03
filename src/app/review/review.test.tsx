@@ -100,7 +100,7 @@ describe("FSRS Review Hub (/review)", () => {
 
     // Second item (Grammar) also renders in wide study layout with a link to the grammar guide
     expect(await screen.findByTestId("review-wide-study-layout")).toBeTruthy();
-    expect(screen.getByText("A。けれども〜B。")).toBeTruthy();
+    expect(await screen.findByText("A。けれども〜B。")).toBeTruthy();
 
     await user.click(screen.getByRole("button", { name: /show answer/i }));
     expect(await screen.findByText("but; however; although")).toBeTruthy();

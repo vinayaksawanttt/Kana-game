@@ -1,7 +1,6 @@
-"use client";
-
 import type { ComponentPropsWithoutRef, ReactNode } from "react";
-import { MDXRemote, type MDXRemoteSerializeResult } from "next-mdx-remote";
+import { MDXRemote } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
 
 function nodeText(node: ReactNode): string {
   if (typeof node === "string" || typeof node === "number") return String(node);
@@ -21,7 +20,7 @@ function headingId(children: ReactNode): string {
     .replace(/\s+/g, "-");
 }
 
-const mdxComponents = {
+export const mdxComponents = {
   h1: (props: ComponentPropsWithoutRef<"h1">) => <h1 {...props} className="sr-only" />,
   h2: ({ children, ...props }: ComponentPropsWithoutRef<"h2">) => (
     <h2
@@ -108,10 +107,14 @@ const mdxComponents = {
   ),
 };
 
-export function MdxComponents({ source }: { source: MDXRemoteSerializeResult }) {
+export function MdxComponents({ source }: { source: string }) {
   return (
     <div className="learn-mdx">
-      <MDXRemote {...source} components={mdxComponents} />
+      <MDXRemote
+        source={source}
+        options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
+        components={mdxComponents}
+      />
     </div>
   );
 }

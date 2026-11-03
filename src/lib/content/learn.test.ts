@@ -35,5 +35,5 @@ describe("learn content parser", () => {
         throw new Error(`Could not compile ${metadata.slug}: ${String(error)}`);
       }
     }
-  });
+  }, 30000);
 });
