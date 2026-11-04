@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Download, Play } from "lucide-react";
+import { LearnHeader } from "@/components/learn/LearnHeader";
 import { createGrammarSession } from "@/engine/grammarSession";
 import { createKanjiMeaningSession } from "@/engine/kanji-meaning";
 import { createKanaSession } from "@/engine/kana-session";
@@ -302,12 +302,8 @@ export function PersonalSheetClient({ kind }: { kind: SheetKind }) {
 
   return (
     <main className="min-h-dvh bg-[var(--bg)] text-[var(--ink)]">
-      <div className="mx-auto w-full max-w-5xl px-5 pb-12 pt-7 sm:px-8 sm:pt-10">
-        <nav className="mb-6 text-sm">
-          <Link href="/learn" className="font-semibold text-[var(--primary-fg)] hover:underline">
-            ← Back to Learning Hub
-          </Link>
-        </nav>
+      <LearnHeader />
+      <div className="mx-auto w-full max-w-5xl px-5 pb-12 pt-4 sm:px-8 sm:pt-5">
         <header className="mb-7 flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[var(--primary-fg)]">

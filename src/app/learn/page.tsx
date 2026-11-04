@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { LearnHeader } from "@/components/learn/LearnHeader";
 import { LearnHubClient } from "@/components/learn/LearnHubClient";
 import { getAllLearnDocs } from "@/lib/content/learn";
 
@@ -10,7 +11,8 @@ export const metadata: Metadata = {
 export default function LearnPage() {
   return (
     <main className="min-h-dvh bg-[var(--bg)] text-[var(--ink)]">
-      <div className="mx-auto w-full max-w-6xl px-5 pb-14 pt-8 sm:px-8 sm:pt-12">
+      <LearnHeader />
+      <div className="mx-auto w-full max-w-6xl px-5 pb-14 pt-6 sm:px-8 sm:pt-8">
         <header className="mb-8">
           <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-[var(--primary-fg)]">
             Learn at your own pace

@@ -1,3 +1,5 @@
+import fs from "node:fs";
+import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { serialize } from "next-mdx-remote/serialize";
 import remarkGfm from "remark-gfm";
@@ -13,6 +15,10 @@ describe("learn content parser", () => {
     expect(verbs?.jlpt).toBe("N5–N3");
     expect(verbs?.levels).toEqual(["N5", "N4", "N3"]);
     expect(docs.find((doc) => doc.slug === "jlpt-n5-survival-one-page-reference-sheet")).toBeTruthy();
+    for (const doc of docs) {
+      expect(fs.existsSync(path.join(process.cwd(), "public", doc.imageUrl))).toBe(true);
+      expect(fs.existsSync(path.join(process.cwd(), "public", doc.fallbackSvgUrl))).toBe(true);
+    }
   });
 
   it("returns document content and an ordered heading outline", () => {

@@ -23,6 +23,8 @@ export interface LearnFrontmatter {
   category: LearnCategory;
   jlpt: string;
   levels: JlptLevel[];
+  imageUrl: string;
+  fallbackSvgUrl: string;
   summary?: string;
   order?: number;
   keywords?: string[];

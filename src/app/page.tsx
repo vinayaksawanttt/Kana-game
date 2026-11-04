@@ -66,6 +66,12 @@ function getSections(learnGuideCount: number) {
         href: "/games/grammar",
       },
       {
+        title: "Stories & Reading",
+        description: "Read JLPT N5–N4 graded stories and classic fairy tales with furigana and vocabulary notes.",
+        badge: "話",
+        href: "/stories",
+      },
+      {
         title: "Cheat Sheets & Study Guides",
         description: "Browse Japanese reference sheets grouped by topic and JLPT level.",
         badge: String(learnGuideCount),

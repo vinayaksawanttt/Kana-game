@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="Numbers, time and counting study guide illustration">
+  <defs>
+    <pattern id="geometry" width="72" height="72" patternUnits="userSpaceOnUse"><path d="M0 24Q18 4 36 24T72 24M0 48Q18 28 36 48T72 48" fill="none" stroke="#D0104C" stroke-opacity=".22" stroke-width="2"/></pattern>
+  </defs>
+  <rect width="600" height="400" fill="#FFFDFB"/>
+  <rect width="600" height="400" fill="#FDE7EC" fill-opacity=".42"/>
+  <rect width="600" height="400" fill="url(#geometry)"/>
+  <path d="M26 26h548v348H26z" fill="none" stroke="#F596AA" stroke-opacity=".42" stroke-width="2"/>
+  <circle cx="300" cy="180" r="91" fill="#FFFDFB" fill-opacity=".94" stroke="#F596AA" stroke-width="3"/>
+  <circle cx="300" cy="180" r="78" fill="none" stroke="#D0104C" stroke-opacity=".36" stroke-width="1.5" stroke-dasharray="3 6"/>
+  <text x="300" y="207" text-anchor="middle" font-family="serif" font-size="82" font-weight="700" fill="#D0104C">数</text>
+  <rect x="162" y="305" width="276" height="43" rx="21" fill="#FFFDFB" fill-opacity=".94" stroke="#F596AA" stroke-opacity=".55"/>
+  <text x="300" y="333" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="700" fill="#D0104C">Numbers, time and counting</text>
+</svg>

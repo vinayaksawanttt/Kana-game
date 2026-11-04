@@ -26,7 +26,7 @@ export const mdxComponents = {
     <h2
       {...props}
       id={props.id ?? headingId(children)}
-      className="mt-9 scroll-mt-6 border-b border-[var(--line)] pb-2 text-xl font-extrabold text-[var(--ink)] first:mt-0 sm:text-2xl"
+      className="mt-3 scroll-mt-24 border-b border-[var(--line)] pb-2 text-xl font-extrabold text-[var(--ink)] first:mt-0 sm:text-2xl"
     >
       {children}
     </h2>
@@ -35,7 +35,7 @@ export const mdxComponents = {
     <h3
       {...props}
       id={props.id ?? headingId(children)}
-      className="mt-7 scroll-mt-6 border-b border-[var(--line)] pb-1.5 text-lg font-bold text-[var(--primary-fg)]"
+      className="mt-2 scroll-mt-24 rounded-lg border border-[var(--line)] bg-[var(--bg)]/60 px-3 py-2 text-base font-bold text-[var(--primary-fg)]"
     >
       {children}
     </h3>

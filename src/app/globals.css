@@ -43,6 +43,8 @@
 * { box-sizing: border-box; }
 html { color-scheme: light; }
 html[data-theme="dark"] { color-scheme: dark; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 body {
   margin: 0;

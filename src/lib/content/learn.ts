@@ -13,6 +13,13 @@ interface LearnFile {
 
 const categoryOrder = new Map(learnCategories.map((category, index) => [category, index]));
 const levelOrder = new Map(jlptLevels.map((level, index) => [level, index]));
+const learnImageDirectory = path.resolve(process.cwd(), "public/images/learn");
+const learnImagesByName = new Map(
+  fs
+    .readdirSync(learnImageDirectory)
+    .filter((name) => name.toLowerCase().endsWith(".png"))
+    .map((name) => [normalizeAssetName(path.basename(name, path.extname(name))), name])
+);
 const legacyCategories: Record<string, LearnCategory> = {
   "writing & sounds": "Writing and sounds",
   "numbers, time and counting": "Numbers, time and counting",
@@ -25,6 +32,24 @@ const legacyCategories: Record<string, LearnCategory> = {
   "japan basics": "Japan basics",
   "reference cards": "Reference cards",
 };
+
+function normalizeAssetName(value: string): string {
+  return value.toLocaleLowerCase().replace(/[^\p{L}\p{N}]/gu, "");
+}
+
+function categoryAssetSlug(category: LearnCategory): string {
+  return category.toLocaleLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
+function resolveLearnImage(slug: string, title: string, category: LearnCategory): string {
+  const imageName = [slug, title, category]
+    .map(normalizeAssetName)
+    .map((name) => learnImagesByName.get(name))
+    .find((name): name is string => Boolean(name));
+  const categoryImage = learnImagesByName.get(normalizeAssetName(category));
+  const filename = imageName ?? categoryImage ?? `${categoryAssetSlug(category)}.png`;
+  return `/images/learn/${filename}`;
+}
 
 function walkMdxFiles(directory: string): string[] {
   if (!fs.existsSync(directory)) return [];
@@ -135,6 +160,8 @@ function readFrontmatter(file: LearnFile): LearnFrontmatter {
     category: normalizeCategory(data.category, file.path),
     jlpt: normalizeJlpt(jlpt, normalizedLevels),
     levels: normalizedLevels,
+    imageUrl: resolveLearnImage(slug, title, normalizeCategory(data.category, file.path)),
+    fallbackSvgUrl: `/images/learn/fallbacks/${categoryAssetSlug(normalizeCategory(data.category, file.path))}.svg`,
     ...(typeof summaryValue === "string" && summaryValue.trim()
       ? { summary: summaryValue.trim() }
       : {}),
