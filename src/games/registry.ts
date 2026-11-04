@@ -46,6 +46,15 @@ export const games: GameEntry[] = [
     ctaLabel: "Practice words",
   },
   {
+    id: "shiritori",
+    title: "Shiritori Word Chain",
+    description: "Build a Japanese word chain with romaji input, helpful hints, and three ways to play.",
+    href: "/games/shiritori",
+    badge: "鎖",
+    status: "live",
+    ctaLabel: "Play Shiritori",
+  },
+  {
     id: "grammar",
     title: "Grammar Practice",
     description: "Master JLPT N5–N1 grammar patterns with Sentence Cloze and Syntax Scramble.",

@@ -170,6 +170,9 @@ h1, h2, h3, button, input, label, legend, .font-kana { font-family: var(--font-u
 .kana-correct { animation: kana-nod 650ms ease-out; border-color: var(--correct) !important; box-shadow: 0 18px 50px color-mix(in srgb, var(--correct) 20%, transparent); }
 .kana-skipped { border-color: var(--muted) !important; opacity: .72; filter: saturate(.65); }
 .kana-leave { animation: kana-leave 420ms ease-out both; }
+.shiritori-chain-step { animation: shiritori-step 2.8s ease-in-out infinite; }
+@keyframes shiritori-step { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@media (prefers-reduced-motion: reduce) { .shiritori-chain-step { animation: none; } }
 
 html[data-theme="dark"] .kana-card {
   border-color: var(--card-border);

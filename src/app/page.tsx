@@ -40,6 +40,13 @@ function getSections(learnGuideCount: number) {
         badge: "語",
         href: "/games/vocabulary",
       },
+      {
+        title: "Shiritori Word Chain",
+        description: "Chain Japanese words by their final kana in survival, blitz, or friend mode.",
+        badge: "鎖",
+        href: "/games/shiritori",
+        statusLabel: "Live",
+      },
     ],
   },
   {
