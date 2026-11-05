@@ -10,6 +10,7 @@ import type { KanaSessionResult } from "@/lib/game/kana";
 import { createKanaSession, type CardRecord, type StoredKanaSession } from "@/lib/game/session";
 import { localStorageAdapter } from "@/lib/storage/kana";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
+import { AudioButton } from "@/components/ui/AudioButton";
 
 type Filter = "All" | "Passed" | "Needs practice" | "Skipped" | "Not reached";
 
@@ -101,7 +102,44 @@ function KanaResultContent() {
       <div className="mb-4 flex flex-wrap gap-3 text-xs font-bold"><span>■ First try <b>{first}</b></span><span>■ Retries <b>{retry}</b></span><span>■ Skipped <b>{skipped}</b></span><span>■ Unfinished <b>{unfinished}</b></span><span>■ Not reached <b>{notReached}</b></span></div>
       <div className="grid grid-cols-2 gap-2 py-2 sm:grid-cols-3 lg:grid-cols-7">{[["Passed first try",first],["After retries",retry],["Skipped",skipped],["Unfinished",unfinished],["Not reached",notReached],["Mistakes",mistakes],["Time",time]].map(([label,value])=>{const key=String(label);return <div key={key} className="rounded-md border border-[var(--line)] bg-[var(--sakura-light)] px-3 py-3"><span className="block text-xs text-[var(--muted)]">{label}</span><span className="mt-1 block text-lg font-bold">{value}</span></div>})}</div>
       <div className="flex flex-wrap gap-2 border-b border-[var(--line)] pb-3">{(["All","Passed","Needs practice","Skipped","Not reached"] as Filter[]).map((tab)=>{const count=tab=== "All"?total:tab=== "Passed"?first+retry:tab=== "Skipped"?skipped:tab=== "Not reached"?notReached:cards.filter((card)=>["skipped","unfinished","pending"].includes(card.status)||card.mistakes>0).length;return <button key={tab} type="button" onClick={()=>setFilter(tab)} className={`rounded-md px-3 py-2 text-sm font-bold ${filter===tab?"bg-[var(--primary)] text-white":"secondary-button border"}`}>{tab} ({count})</button>})}</div>
-      <div className="result-table mt-3 max-h-[50vh] overflow-auto"><div className="result-grid result-header sticky top-0 z-10 min-w-[620px] bg-[var(--surface)] text-xs uppercase tracking-wide text-[var(--muted)]"><span>Character</span><span>Romaji</span><span>Result</span><span className="text-center">Mistakes</span><span>What you typed</span></div>{filtered.map((card)=><div key={card.id} className="result-grid result-row min-w-[620px] border-b border-[var(--line)]"><span className="font-japanese text-2xl">{card.char}</span><span className="font-bold">{card.romaji.join(" / ")}</span><span className={`result-badge ${card.status=== "skipped"||card.status=== "pending"||card.status=== "not-reached"?"text-[var(--muted)]":card.status.startsWith("correct")?"text-[var(--correct)]":"text-[var(--wrong)]"}`}>{resultLabel(card)}</span><span className="text-center font-bold">{card.mistakes}</span><span className="flex flex-wrap gap-1">{card.wrongAnswers.length?card.wrongAnswers.map((answer,index)=><span key={`${answer}-${index}`} className="rounded-full bg-[var(--sakura-light)] px-2 py-1 text-xs">{answer}</span>):<span>—</span>}</span></div>)}</div>
+        <div className="result-table mt-3 max-h-[50vh] overflow-auto">
+          <div className="result-grid result-header sticky top-0 z-10 min-w-[620px] bg-[var(--surface)] text-xs uppercase tracking-wide text-[var(--muted)]">
+            <span>Character</span>
+            <span>Romaji</span>
+            <span>Result</span>
+            <span className="text-center">Mistakes</span>
+            <span>What you typed</span>
+          </div>
+          {filtered.map((card) => (
+            <div key={card.id} className="result-grid result-row min-w-[620px] border-b border-[var(--line)]">
+              <div className="flex items-center gap-2">
+                <span className="font-japanese text-2xl">{card.char}</span>
+                <AudioButton
+                  text={card.char}
+                  romaji={card.romaji[0]}
+                  size="sm"
+                  label={`Listen to ${card.char}`}
+                />
+              </div>
+              <span className="font-bold">{card.romaji.join(" / ")}</span>
+              <span className={`result-badge ${card.status === "skipped" || card.status === "pending" || card.status === "not-reached" ? "text-[var(--muted)]" : card.status.startsWith("correct") ? "text-[var(--correct)]" : "text-[var(--wrong)]"}`}>
+                {resultLabel(card)}
+              </span>
+              <span className="text-center font-bold">{card.mistakes}</span>
+              <span className="flex flex-wrap gap-1">
+                {card.wrongAnswers.length ? (
+                  card.wrongAnswers.map((answer, index) => (
+                    <span key={`${answer}-${index}`} className="rounded-full bg-[var(--sakura-light)] px-2 py-1 text-xs">
+                      {answer}
+                    </span>
+                  ))
+                ) : (
+                  <span>—</span>
+                )}
+              </span>
+            </div>
+          ))}
+        </div>
       <div className="mt-5 flex flex-col gap-2 sm:flex-row"><button type="button" onClick={()=>practice({weak:true})} disabled={weakIds.length===0} className="secondary-button flex h-12 flex-1 items-center justify-center gap-2 rounded-md border text-sm font-bold disabled:cursor-not-allowed disabled:opacity-40"><RotateCcw size={17}/>Practice weak characters ({weakIds.length})</button><button type="button" onClick={()=>practice({})} className="primary-button flex h-12 flex-1 items-center justify-center gap-2 rounded-md text-sm font-bold">Play again <ArrowRight size={17}/></button><button type="button" onClick={()=>router.push("/games/kana")} className="secondary-button flex h-12 flex-1 items-center justify-center rounded-md border text-sm font-bold">Change settings</button></div>
     </div></section></GameLayout>;
 }

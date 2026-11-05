@@ -17,6 +17,8 @@ import { getGameSession } from "@/lib/game-core/storage";
 import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
 import { ingestKanaSession } from "@/lib/srs/service";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
+import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
+import { AudioButton } from "@/components/ui/AudioButton";
 
 export default function KanaPlayPage() {
   return (
@@ -80,6 +82,7 @@ function KanaGame({
   );
   const [answer, setAnswer] = useState("");
   const { quitDialogOpen, requestQuit, cancelQuit, confirmQuit } = useQuitSessionGuard(true);
+  const { playKana, autoPlayEnabled, setAutoPlayEnabled } = useJapaneseAudio();
 
   const clearTimers = useCallback(() => {
     timers.current.forEach((timer) => window.clearTimeout(timer));
@@ -94,6 +97,20 @@ function KanaGame({
     focusInput();
     return clearTimers;
   }, [clearTimers, focusInput]);
+
+  useEffect(() => {
+    function handleGlobalKeyDown(event: KeyboardEvent) {
+      if (event.altKey && (event.key === "s" || event.key === "S")) {
+        event.preventDefault();
+        const currentCard = state.cards[state.index];
+        if (currentCard && state.phase !== "idle") {
+          playKana(currentCard.char, currentCard.romaji[0]);
+        }
+      }
+    }
+    window.addEventListener("keydown", handleGlobalKeyDown);
+    return () => window.removeEventListener("keydown", handleGlobalKeyDown);
+  }, [playKana, state.cards, state.index, state.phase]);
 
   function finish(endedEarly: boolean, latestState = state) {
     clearTimers();
@@ -133,6 +150,10 @@ function KanaGame({
       return;
     }
 
+    if (autoPlayEnabled) {
+      playKana(card.char, card.romaji[0]);
+    }
+
     const feedbackTimer = window.setTimeout(() => {
       dispatch({ type: "LEAVE", index: currentIndex });
       const exitTimer = window.setTimeout(() => {
@@ -155,8 +176,13 @@ function KanaGame({
   function skip() {
     if (state.phase !== "idle") return;
     const currentIndex = state.index;
+    const card = state.cards[currentIndex];
     dispatch({ type: "SKIP", index: currentIndex });
     inputRef.current?.blur();
+
+    if (card && autoPlayEnabled) {
+      playKana(card.char, card.romaji[0]);
+    }
 
     const revealTimer = window.setTimeout(() => {
       dispatch({ type: "LEAVE", index: currentIndex });
@@ -254,13 +280,29 @@ function KanaGame({
                 />
               </div>
             </div>
-            <button
-              type="button"
-              onClick={() => finish(true)}
-              className="secondary-button min-h-11 rounded-md border px-4 py-2 text-sm font-bold"
-            >
-              End session
-            </button>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onMouseDown={(e) => e.preventDefault()}
+                onClick={() => setAutoPlayEnabled(!autoPlayEnabled)}
+                aria-label={autoPlayEnabled ? "Disable auto-play on reveal" : "Enable auto-play on reveal"}
+                title={autoPlayEnabled ? "Auto-play audio on reveal (Enabled)" : "Auto-play audio on reveal (Disabled)"}
+                className={`inline-flex items-center gap-1.5 rounded-md border px-3 py-2 text-xs font-semibold transition-all cursor-pointer select-none ${
+                  autoPlayEnabled
+                    ? "border-[var(--primary)] text-[var(--primary)] bg-[var(--primary-subtle,#fff1f2)]"
+                    : "border-[var(--line)] text-[var(--muted)] hover:text-[var(--fg)] bg-[var(--surface)]"
+                }`}
+              >
+                <span>{autoPlayEnabled ? "🔊 Auto-play on" : "🔇 Auto-play off"}</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => finish(true)}
+                className="secondary-button min-h-11 rounded-md border px-4 py-2 text-sm font-bold"
+              >
+                End session
+              </button>
+            </div>
           </div>
 
           <div className="relative flex flex-1 flex-col items-center justify-center py-6">
@@ -284,31 +326,61 @@ function KanaGame({
                   <span className="kana-card-glyph font-japanese text-[clamp(4.5rem,9vw,8rem)]">
                     {character.char}
                   </span>
+                  {state.phase !== "idle" && (
+                    <div className="absolute bottom-4 left-4 z-20 flex items-center gap-1.5">
+                      <AudioButton
+                        text={character.char}
+                        romaji={character.romaji[0]}
+                        size="sm"
+                        label={`Replay pronunciation of ${character.char} (Alt+S)`}
+                      />
+                      <span className="text-[10px] font-mono text-[var(--muted)] select-none">Alt+S</span>
+                    </div>
+                  )}
                   <span className="hanko grid">{character.script === "hiragana" ? "平" : "片"}</span>
                 </div>
               </div>
 
               <div className="flex min-h-[48px] w-full items-center justify-center">
                 {state.phase === "wrong" && (
-                  <p
+                  <div
                     className="flex items-center gap-2 text-center text-sm font-bold text-[var(--wrong)]"
                     aria-live="polite"
                   >
-                    <X size={16} />Not quite, try again
-                  </p>
+                    <X size={16} />
+                    <span>Not quite, try again</span>
+                    <AudioButton
+                      text={character.char}
+                      romaji={character.romaji[0]}
+                      size="sm"
+                      label={`Listen to ${character.char} pronunciation`}
+                    />
+                  </div>
                 )}
                 {state.phase === "skipped" && (
-                  <p
-                    className="text-center text-sm font-bold text-[var(--muted)]"
+                  <div
+                    className="flex items-center gap-2 text-center text-sm font-bold text-[var(--muted)]"
                     aria-live="polite"
                   >
-                    Answer: {character.romaji[0]}
-                  </p>
+                    <span>Answer: {character.romaji[0]}</span>
+                    <AudioButton
+                      text={character.char}
+                      romaji={character.romaji[0]}
+                      size="sm"
+                      label={`Listen to ${character.char} pronunciation`}
+                    />
+                  </div>
                 )}
                 {state.phase === "correct" && (
-                  <p className="text-center text-sm font-bold text-[var(--correct)]">
-                    ✓ Correct
-                  </p>
+                  <div className="flex items-center gap-2 text-center text-sm font-bold text-[var(--correct)]">
+                    <span>✓ Correct</span>
+                    <AudioButton
+                      text={character.char}
+                      romaji={character.romaji[0]}
+                      size="sm"
+                      label={`Replay ${character.char} pronunciation`}
+                    />
+                  </div>
                 )}
               </div>
 

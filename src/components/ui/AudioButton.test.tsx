@@ -1,0 +1,58 @@
+import { describe, expect, it, vi, beforeEach, afterEach } from "vitest";
+import { render, screen, fireEvent, cleanup } from "@testing-library/react";
+import AudioButton from "./AudioButton";
+
+describe("AudioButton component", () => {
+  beforeEach(() => {
+    cleanup();
+    vi.clearAllMocks();
+  });
+
+  afterEach(() => {
+    cleanup();
+  });
+
+  it("renders with correct accessibility label", () => {
+    render(<AudioButton text="あ" romaji="a" />);
+    const button = screen.getByRole("button", { name: /Listen to pronunciation of あ/i });
+    expect(button).toBeDefined();
+  });
+
+  it("prevents default on mouseDown to protect input focus", () => {
+    render(<AudioButton text="か" romaji="ka" />);
+    const button = screen.getByRole("button", { name: /Listen to pronunciation of か/i });
+
+    const mouseDownEvent = new MouseEvent("mousedown", { bubbles: true, cancelable: true });
+    const preventDefaultSpy = vi.spyOn(mouseDownEvent, "preventDefault");
+
+    button.dispatchEvent(mouseDownEvent);
+    expect(preventDefaultSpy).toHaveBeenCalled();
+  });
+
+  it("stops event propagation on click so parent row selections are not toggled", () => {
+    const parentClickHandler = vi.fn();
+    render(
+      <div onClick={parentClickHandler}>
+        <AudioButton text="さ" romaji="sa" />
+      </div>
+    );
+
+    const button = screen.getByRole("button", { name: /Listen to pronunciation of さ/i });
+    fireEvent.click(button);
+
+    expect(parentClickHandler).not.toHaveBeenCalled();
+  });
+
+  it("renders with custom label if provided", () => {
+    render(<AudioButton text="しゃ" romaji="sha" label="Replay sha" />);
+    const button = screen.getByRole("button", { name: /Replay sha/i });
+    expect(button).toBeDefined();
+  });
+
+  it("respects disabled prop", () => {
+    render(<AudioButton text="ん" romaji="n" disabled />);
+    const button = screen.getByRole("button");
+    expect(button.hasAttribute("disabled")).toBe(true);
+  });
+});
+

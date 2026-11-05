@@ -45,11 +45,12 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
 
-  // 1. Cache-First for static assets (/data/v1/, /dict/, /images/learn/, /_next/static/)
+  // 1. Cache-First for static assets (/data/v1/, /dict/, /images/learn/, /audio/, /_next/static/)
   const isStaticCacheAsset =
     url.pathname.startsWith("/data/v1/") ||
     url.pathname.startsWith("/dict/") ||
     url.pathname.startsWith("/images/learn/") ||
+    url.pathname.startsWith("/audio/") ||
     url.pathname.startsWith("/_next/static/");
 
   if (isStaticCacheAsset) {

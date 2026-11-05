@@ -7,6 +7,7 @@ import { GameLayout } from "@/lib/game-core/layout";
 import { saveGameSession } from "@/lib/game-core/storage";
 import { createKanaSession } from "@/lib/game/session";
 import { countCharacters, groupRows, type KanaGroup, type ScriptSelection } from "@/data/kana";
+import { AudioButton } from "@/components/ui/AudioButton";
 
 export default function Home() {
   const router = useRouter();
@@ -121,7 +122,37 @@ export default function Home() {
                   return <div key={group} className="rounded-xl border border-[var(--line)] p-3">
                     <div className="mb-2 flex items-center justify-between"><span className="text-xs font-bold uppercase tracking-[0.12em]">{group === "yoon" ? "Yōon" : group[0].toUpperCase() + group.slice(1)}</span><div className="flex gap-1 text-xs font-bold"><button type="button" onClick={() => setSelectedRows((current) => [...new Set([...current, ...rowsForGroup.map((row) => row.key)])])} className="rounded px-2 py-1 text-[var(--primary-fg)]">Select all</button><button type="button" onClick={() => setSelectedRows((current) => current.filter((key) => !rowsForGroup.some((row) => row.key === key)))} className="rounded px-2 py-1 text-[var(--muted)]">Clear</button></div></div>
                     <div className="grid grid-cols-3 gap-2 sm:grid-cols-4">
-                      {rowsForGroup.map((row) => { const active = selectedRows.includes(row.key); const sample = script === "both" ? `${row.sample.hiragana} ${row.sample.katakana}` : row.sample[script]; return <button key={row.key} type="button" onClick={() => toggleRow(row.key)} aria-pressed={active} className={`flex min-h-[58px] items-center justify-between rounded-full border px-3 transition-colors ${active ? "border-[var(--primary)] bg-[var(--primary)] text-white" : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)]"}`}><span className="text-xs font-bold">{row.romajiLabel}</span><span className="font-japanese text-xl">{sample}</span></button>; })}
+                      {rowsForGroup.map((row) => {
+                        const active = selectedRows.includes(row.key);
+                        const sample = script === "both" ? `${row.sample.hiragana} ${row.sample.katakana}` : row.sample[script];
+                        const audioSampleChar = script === "katakana" ? row.sample.katakana : row.sample.hiragana;
+                        return (
+                          <div
+                            key={row.key}
+                            className={`flex min-h-[58px] items-center justify-between rounded-full border px-3 transition-colors ${
+                              active
+                                ? "border-[var(--primary)] bg-[var(--primary)] text-white"
+                                : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)]"
+                            }`}
+                          >
+                            <button
+                              type="button"
+                              onClick={() => toggleRow(row.key)}
+                              aria-pressed={active}
+                              className="flex flex-1 items-center justify-between text-left cursor-pointer pr-2"
+                            >
+                              <span className="text-xs font-bold">{row.romajiLabel}</span>
+                              <span className="font-japanese text-xl">{sample}</span>
+                            </button>
+                            <AudioButton
+                              text={audioSampleChar}
+                              size="sm"
+                              label={`Preview sound for ${row.romajiLabel} (${audioSampleChar})`}
+                              className={active ? "!border-white/30 !bg-white/20 !text-white hover:!bg-white/30" : ""}
+                            />
+                          </div>
+                        );
+                      })}
                     </div>
                     {selectedForGroup.length === 0 && <p className="mt-2 text-xs text-[var(--muted)]">No rows selected</p>}
                   </div>;
