@@ -5,23 +5,1229 @@
   "titleEn": "At the Shinkansen Station",
   "level": "N4",
   "category": "Travel",
-  "tags": ["shinkansen", "train", "station", "travel"],
+  "tags": [
+    "shinkansen",
+    "train",
+    "station",
+    "travel"
+  ],
   "paragraphs": [
     {
       "ja": "先週の金曜日の朝、田中さんは仕事のために東京駅へ行きました。新幹線で大阪へ行く予定でしたから、荷物がたくさんありました。東京駅の中はとても広くて、旅行に行く大勢の人で混んでいました。",
-      "en": "Last Friday morning, Mr. Tanaka went to Tokyo Station for work. Because he planned to go to Osaka by Shinkansen, he had a lot of luggage. Inside Tokyo Station was very wide and crowded with many people going on trips."
+      "en": "Last Friday morning, Mr. Tanaka went to Tokyo Station for work. Because he planned to go to Osaka by Shinkansen, he had a lot of luggage. Inside Tokyo Station was very wide and crowded with many people going on trips.",
+      "sentences": [
+        {
+          "ja": "先週の金曜日の朝、田中さんは仕事のために東京駅へ行きました。",
+          "literalEn": "last week ['s / of] Friday ['s / of] morning Tanaka [Mr/Ms] [topic] job ['s / of] ため [at/to] Tokyo station [toward] going した",
+          "naturalEn": "Last Friday morning, Mr. Tanaka went to Tokyo Station for work.",
+          "tokens": [
+            {
+              "surface": "先週",
+              "reading": "せんしゅう",
+              "meaning": "last week",
+              "baseForm": "先週",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "金曜日",
+              "reading": "きんようび",
+              "meaning": "Friday",
+              "baseForm": "金曜日",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "朝",
+              "reading": "あさ",
+              "meaning": "morning",
+              "baseForm": "朝",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "仕事",
+              "reading": "しごと",
+              "meaning": "job",
+              "baseForm": "仕事",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "東京",
+              "reading": "とうきょう",
+              "meaning": "Tokyo",
+              "baseForm": "東京",
+              "level": "N5"
+            },
+            {
+              "surface": "駅",
+              "reading": "えき",
+              "meaning": "station",
+              "baseForm": "駅",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "新幹線で大阪へ行く予定でしたから、荷物がたくさんありました。",
+          "literalEn": "bullet train [in/by] Osaka [toward] to go arrangement [in/by] した [from] luggage [subj] many ありま した",
+          "naturalEn": "Since he was planning to take the Shinkansen to Osaka, he had a lot of luggage.",
+          "tokens": [
+            {
+              "surface": "新幹線",
+              "reading": "しんかんせん",
+              "meaning": "bullet train (very high speed); shinkansen",
+              "baseForm": "新幹線",
+              "level": "N2"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "大阪",
+              "reading": "おおさか",
+              "meaning": "Osaka",
+              "baseForm": "大阪",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行く",
+              "reading": "いく",
+              "meaning": "to go",
+              "baseForm": "行く",
+              "level": "N5"
+            },
+            {
+              "surface": "予定",
+              "reading": "よてい",
+              "meaning": "arrangement",
+              "baseForm": "予定",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "荷物",
+              "reading": "にもつ",
+              "meaning": "luggage",
+              "baseForm": "荷物",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "東京駅の中はとても広くて、旅行に行く大勢の人で混んでいました。",
+          "literalEn": "Tokyo station ['s / of] middle [topic] very spacious [and] travel [at/to] to go great number of people ['s / of] person [in/by] to be crowded んで いま した",
+          "naturalEn": "Tokyo Station is very spacious and was crowded with many people going on trips.",
+          "tokens": [
+            {
+              "surface": "東京",
+              "reading": "とうきょう",
+              "meaning": "Tokyo",
+              "baseForm": "東京",
+              "level": "N5"
+            },
+            {
+              "surface": "駅",
+              "reading": "えき",
+              "meaning": "station",
+              "baseForm": "駅",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "広",
+              "reading": "ひろ",
+              "meaning": "spacious; wide",
+              "baseForm": "広い",
+              "level": "N5"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "旅行",
+              "reading": "りょこう",
+              "meaning": "travel",
+              "baseForm": "旅行",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "行く",
+              "reading": "いく",
+              "meaning": "to go",
+              "baseForm": "行く",
+              "level": "N5"
+            },
+            {
+              "surface": "大勢",
+              "reading": "おおぜい",
+              "meaning": "great number of people",
+              "baseForm": "大勢",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "混",
+              "reading": "こ",
+              "meaning": "to be crowded",
+              "baseForm": "混む",
+              "level": "N1"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "まず、切符売り場で新幹線の切符を買いました。それから、出発の時間がまだ少しあったので、駅の中にある大きな店へ行きました。そこで、電車の中で食べるためのおいしそうなお弁当と温かいお茶を買いました。",
-      "en": "First, he bought a Shinkansen ticket at the ticket counter. Then, since there was still a little time before departure, he went to a large shop inside the station. There, he bought a delicious-looking bento to eat on the train and warm tea."
+      "en": "First, he bought a Shinkansen ticket at the ticket counter. Then, since there was still a little time before departure, he went to a large shop inside the station. There, he bought a delicious-looking bento to eat on the train and warm tea.",
+      "sentences": [
+        {
+          "ja": "まず、切符売り場で新幹線の切符を買いました。",
+          "literalEn": "first of all ticket place where things are sold [in/by] bullet train ['s / of] ticket [obj] to buy した",
+          "naturalEn": "First, I bought a Shinkansen ticket at the ticket counter.",
+          "tokens": [
+            {
+              "surface": "まず",
+              "meaning": "first of all",
+              "baseForm": "まず",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "切符",
+              "reading": "きっぷ",
+              "meaning": "ticket",
+              "baseForm": "切符",
+              "level": "N5"
+            },
+            {
+              "surface": "売り場",
+              "reading": "うりば",
+              "meaning": "place where things are sold",
+              "baseForm": "売り場",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "新幹線",
+              "reading": "しんかんせん",
+              "meaning": "bullet train (very high speed); shinkansen",
+              "baseForm": "新幹線",
+              "level": "N2"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "切符",
+              "reading": "きっぷ",
+              "meaning": "ticket",
+              "baseForm": "切符",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "買い",
+              "reading": "かい",
+              "meaning": "to buy",
+              "baseForm": "買う",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "それから、出発の時間がまだ少しあったので、駅の中にある大きな店へ行きました。",
+          "literalEn": "after that to depart ['s / of] time [subj] yet few Ah! [past] ので station ['s / of] middle [at/to] to be big shop [toward] going した",
+          "naturalEn": "Then, since there was still a little time before departure, I went to a large store inside the station.",
+          "tokens": [
+            {
+              "surface": "それから",
+              "meaning": "after that",
+              "baseForm": "それから",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "出発",
+              "reading": "しゅっぱつ",
+              "meaning": "to depart",
+              "baseForm": "出発",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "時間",
+              "reading": "じかん",
+              "meaning": "time",
+              "baseForm": "時間",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "まだ",
+              "meaning": "yet; still",
+              "baseForm": "まだ",
+              "level": "N5"
+            },
+            {
+              "surface": "少し",
+              "reading": "すこし",
+              "meaning": "few",
+              "baseForm": "少し",
+              "level": "N5"
+            },
+            {
+              "surface": "あっ",
+              "meaning": "Ah!; Oh!",
+              "baseForm": "あっ",
+              "level": "N3"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "ので"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "駅",
+              "reading": "えき",
+              "meaning": "station",
+              "baseForm": "駅",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "店",
+              "reading": "みせ",
+              "meaning": "shop",
+              "baseForm": "店",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "そこで、電車の中で食べるためのおいしそうなお弁当と温かいお茶を買いました。",
+          "literalEn": "so electric train ['s / of] middle [in/by] to eat ため ['s / of] おい しそう still box lunch [with/and] luke warm tea [obj] to buy した",
+          "naturalEn": "So, I bought a delicious-looking bento box and some hot tea to eat on the train.",
+          "tokens": [
+            {
+              "surface": "そこで",
+              "meaning": "so (conj); accordingly; now",
+              "baseForm": "そこで",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "電車",
+              "reading": "でんしゃ",
+              "meaning": "electric train",
+              "baseForm": "電車",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "食べる",
+              "reading": "たべる",
+              "meaning": "to eat",
+              "baseForm": "食べる",
+              "level": "N5"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "おい"
+            },
+            {
+              "surface": "しそう"
+            },
+            {
+              "surface": "なお",
+              "meaning": "still; yet",
+              "baseForm": "なお",
+              "level": "N3"
+            },
+            {
+              "surface": "弁当",
+              "reading": "べんとう",
+              "meaning": "box lunch",
+              "baseForm": "弁当",
+              "level": "N3"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "温かい",
+              "reading": "ぬるかい",
+              "meaning": "luke warm",
+              "baseForm": "温い",
+              "level": "N5"
+            },
+            {
+              "surface": "お茶",
+              "reading": "おちゃ",
+              "meaning": "tea (green tea)",
+              "baseForm": "お茶",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "買い",
+              "reading": "かい",
+              "meaning": "to buy",
+              "baseForm": "買う",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "その後、切符を改札口の機械に入れて、ホームに上がりました。ホームにはもう長い列ができていました。田中さんも列に並んで、新幹線が来るのを静かに待ちました。周りには外国人もたくさんいました。",
-      "en": "After that, he put his ticket into the machine at the ticket gate and went up to the platform. A long line had already formed on the platform. Mr. Tanaka also lined up and quietly waited for the Shinkansen to arrive. There were also many foreigners around."
+      "en": "After that, he put his ticket into the machine at the ticket gate and went up to the platform. A long line had already formed on the platform. Mr. Tanaka also lined up and quietly waited for the Shinkansen to arrive. There were also many foreigners around.",
+      "sentences": [
+        {
+          "ja": "その後、切符を改札口の機械に入れて、ホームに上がりました。",
+          "literalEn": "after that ticket [obj] examination of tickets mouth ['s / of] machine [at/to] to enter [and] platform [at/to] slope した",
+          "naturalEn": "After that, I inserted my ticket into the ticket gate machine and went up to the platform.",
+          "tokens": [
+            {
+              "surface": "その後",
+              "reading": "そのあと",
+              "meaning": "after that; afterwards",
+              "baseForm": "その後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "切符",
+              "reading": "きっぷ",
+              "meaning": "ticket",
+              "baseForm": "切符",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "改札",
+              "reading": "かいさつ",
+              "meaning": "examination of tickets",
+              "baseForm": "改札",
+              "level": "N2"
+            },
+            {
+              "surface": "口",
+              "reading": "くち",
+              "meaning": "mouth; opening",
+              "baseForm": "口",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "機械",
+              "reading": "きかい",
+              "meaning": "machine; mechanism",
+              "baseForm": "機械",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入れ",
+              "reading": "はいれ",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ホーム",
+              "meaning": "platform; home",
+              "baseForm": "ホーム",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "上がり",
+              "reading": "あがり",
+              "meaning": "slope; advance income; crop yield",
+              "baseForm": "上がり",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ホームにはもう長い列ができていました。",
+          "literalEn": "platform [at/to] [topic] already long queue [subj] でき てい した",
+          "naturalEn": "A long line had already formed on the platform.",
+          "tokens": [
+            {
+              "surface": "ホーム",
+              "meaning": "platform; home",
+              "baseForm": "ホーム",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "もう",
+              "meaning": "already",
+              "baseForm": "もう",
+              "level": "N5"
+            },
+            {
+              "surface": "長い",
+              "reading": "ながい",
+              "meaning": "long",
+              "baseForm": "長い",
+              "level": "N5"
+            },
+            {
+              "surface": "列",
+              "reading": "れつ",
+              "meaning": "queue; line; row",
+              "baseForm": "列",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "田中さんも列に並んで、新幹線が来るのを静かに待ちました。",
+          "literalEn": "Tanaka [Mr/Ms] [also] queue [at/to] to line up んで bullet train [subj] to come ['s / of] [obj] quiet [at/to] to wait した",
+          "naturalEn": "Mr. Tanaka also joined the line and waited quietly for the Shinkansen to arrive.",
+          "tokens": [
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "列",
+              "reading": "れつ",
+              "meaning": "queue; line; row",
+              "baseForm": "列",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "並",
+              "reading": "なら",
+              "meaning": "to line up; to stand in a line",
+              "baseForm": "並ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "新幹線",
+              "reading": "しんかんせん",
+              "meaning": "bullet train (very high speed); shinkansen",
+              "baseForm": "新幹線",
+              "level": "N2"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "来る",
+              "reading": "くる",
+              "meaning": "to come",
+              "baseForm": "来る",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "静か",
+              "reading": "しずか",
+              "meaning": "quiet",
+              "baseForm": "静か",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "待ち",
+              "reading": "まち",
+              "meaning": "to wait",
+              "baseForm": "待つ",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "周りには外国人もたくさんいました。",
+          "literalEn": "surroundings [at/to] [topic] foreign country person [also] many いま した",
+          "naturalEn": "There were also many foreign visitors around.",
+          "tokens": [
+            {
+              "surface": "周り",
+              "reading": "まわり",
+              "meaning": "surroundings",
+              "baseForm": "周り",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "外国",
+              "reading": "がいこく",
+              "meaning": "foreign country",
+              "baseForm": "外国",
+              "level": "N5"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "九時ちょうどに、白い新幹線がホームに入ってきました。ドアが開くと、田中さんは自分の席を探して座りました。窓から外の景色を見ながら、買ったお弁当をゆっくり食べるのがとても楽しみでした。",
-      "en": "At exactly nine o'clock, the white Shinkansen entered the platform. When the doors opened, Mr. Tanaka looked for his seat and sat down. Looking at the scenery outside from the window, he was very much looking forward to slowly eating the bento he bought."
+      "en": "At exactly nine o'clock, the white Shinkansen entered the platform. When the doors opened, Mr. Tanaka looked for his seat and sat down. Looking at the scenery outside from the window, he was very much looking forward to slowly eating the bento he bought.",
+      "sentences": [
+        {
+          "ja": "九時ちょうどに、白い新幹線がホームに入ってきました。",
+          "literalEn": "nine o'clock exactly [at/to] white bullet train [subj] platform [at/to] to enter って した",
+          "naturalEn": "At exactly 9:00, a white Shinkansen pulled into the platform.",
+          "tokens": [
+            {
+              "surface": "九時",
+              "reading": "くじ",
+              "meaning": "nine o'clock",
+              "baseForm": "九時",
+              "level": "N5"
+            },
+            {
+              "surface": "ちょうど",
+              "meaning": "exactly",
+              "baseForm": "ちょうど",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "白い",
+              "reading": "しろい",
+              "meaning": "white",
+              "baseForm": "白い",
+              "level": "N5"
+            },
+            {
+              "surface": "新幹線",
+              "reading": "しんかんせん",
+              "meaning": "bullet train (very high speed); shinkansen",
+              "baseForm": "新幹線",
+              "level": "N2"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "ホーム",
+              "meaning": "platform; home",
+              "baseForm": "ホーム",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入",
+              "reading": "はい",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ドアが開くと、田中さんは自分の席を探して座りました。",
+          "literalEn": "Western style door [subj] to open [with/and] Tanaka [Mr/Ms] [topic] oneself ['s / of] seat [obj] to look for [and] to sit した",
+          "naturalEn": "When the doors opened, Mr. Tanaka found his seat and sat down.",
+          "tokens": [
+            {
+              "surface": "ドア",
+              "meaning": "Western style door",
+              "baseForm": "ドア",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "開く",
+              "reading": "あく",
+              "meaning": "to open; to become open",
+              "baseForm": "開く",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "自分",
+              "reading": "じぶん",
+              "meaning": "oneself",
+              "baseForm": "自分",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "席",
+              "reading": "せき",
+              "meaning": "seat",
+              "baseForm": "席",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "探",
+              "reading": "さが",
+              "meaning": "to look for",
+              "baseForm": "探す",
+              "level": "N4"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "座り",
+              "reading": "すわり",
+              "meaning": "to sit",
+              "baseForm": "座る",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "窓から外の景色を見ながら、買ったお弁当をゆっくり食べるのがとても楽しみでした。",
+          "literalEn": "window [from] outside ['s / of] scene [obj] to see ながら to buy [past] box lunch [obj] slowly to eat ['s / of] [subj] very joy [in/by] した",
+          "naturalEn": "He was really looking forward to slowly eating the bento he had bought while gazing out the window at the scenery.",
+          "tokens": [
+            {
+              "surface": "窓",
+              "reading": "まど",
+              "meaning": "window",
+              "baseForm": "窓",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "外",
+              "reading": "そと",
+              "meaning": "outside",
+              "baseForm": "外",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "景色",
+              "reading": "けしき",
+              "meaning": "scene; landscape",
+              "baseForm": "景色",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "買",
+              "reading": "か",
+              "meaning": "to buy",
+              "baseForm": "買う",
+              "level": "N5"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "弁当",
+              "reading": "べんとう",
+              "meaning": "box lunch",
+              "baseForm": "弁当",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "ゆっくり",
+              "meaning": "slowly; at ease",
+              "baseForm": "ゆっくり",
+              "level": "N3"
+            },
+            {
+              "surface": "食べる",
+              "reading": "たべる",
+              "meaning": "to eat",
+              "baseForm": "食べる",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "楽しみ",
+              "reading": "たのしみ",
+              "meaning": "joy",
+              "baseForm": "楽しみ",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
@@ -33,7 +1239,8 @@
         "京都",
         "北海道"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「大阪」 is correct: 「新幹線で大阪へ行く予定でしたから、荷物がたくさんありました。」 (Since he was planning to take the Shinkansen to Osaka, he had a lot of luggage.)"
     },
     {
       "question": "田中さんは駅の中の店で何を買いましたか。",
@@ -43,7 +1250,8 @@
         "お弁当と温かいお茶",
         "切符と新しいかばん"
       ],
-      "answerIndex": 2
+      "answerIndex": 2,
+      "explanation": "「お弁当と温かいお茶」 is correct: 「そこで、電車の中で食べるためのおいしそうなお弁当と温かいお茶を買いました。」 (So, I bought a delicious-looking bento box and some hot tea to eat on the train.)"
     },
     {
       "question": "ホームで田中さんは何をしましたか。",
@@ -53,7 +1261,9 @@
         "外国人と英語で話しました",
         "ベンチでお弁当を食べました"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「列に並んで新幹線を待ちました」 is the correct answer according to the story."
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/shinkansen.json"
 }

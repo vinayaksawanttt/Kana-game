@@ -1,0 +1,696 @@
+{
+  "id": "n5-supermarket-trip",
+  "title": "スーパーでの買い物",
+  "titleRomaji": "Sūpā de no kaimono",
+  "titleEn": "Shopping at the Supermarket",
+  "level": "N5",
+  "category": "Everyday Life",
+  "tags": [
+    "food",
+    "shopping",
+    "daily"
+  ],
+  "paragraphs": [
+    {
+      "ja": "日曜日、田中さんは午前にスーパーへ行きました。車で十分かかりました。",
+      "en": "On Sunday, Mr. Tanaka went to the supermarket in the morning. It took ten minutes by car.",
+      "sentences": [
+        {
+          "ja": "日曜日、田中さんは午前にスーパーへ行きました。",
+          "literalEn": "Sunday Tanaka [Mr/Ms] [topic] morning [at/to] スーパー [toward] going した",
+          "naturalEn": "On Sunday, Mr. Tanaka went to the supermarket in the morning.",
+          "tokens": [
+            {
+              "surface": "日曜日",
+              "reading": "にちようび",
+              "meaning": "Sunday",
+              "baseForm": "日曜日",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "午前",
+              "reading": "ごぜん",
+              "meaning": "morning",
+              "baseForm": "午前",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "スーパー"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "車で十分かかりました。",
+          "literalEn": "car [in/by] enough かかり した",
+          "naturalEn": "It took ten minutes by car.",
+          "tokens": [
+            {
+              "surface": "車",
+              "reading": "くるま",
+              "meaning": "car; vehicle",
+              "baseForm": "車",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "十分",
+              "reading": "じゅうぶん",
+              "meaning": "enough",
+              "baseForm": "十分",
+              "level": "N4"
+            },
+            {
+              "surface": "かかり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "スーパーの中にはたくさんの食べ物がありました。田中さんは大きいりんごを三つと、白いパンを買いました。",
+      "en": "There was a lot of food inside the supermarket. Mr. Tanaka bought three big apples and white bread.",
+      "sentences": [
+        {
+          "ja": "スーパーの中にはたくさんの食べ物がありました。",
+          "literalEn": "スーパー ['s / of] middle [at/to] [topic] many ['s / of] food [subj] ありま した",
+          "naturalEn": "There was a lot of food inside the supermarket.",
+          "tokens": [
+            {
+              "surface": "スーパー"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "食べ物",
+              "reading": "たべもの",
+              "meaning": "food",
+              "baseForm": "食べ物",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "田中さんは大きいりんごを三つと、白いパンを買いました。",
+          "literalEn": "Tanaka [Mr/Ms] [topic] big りんご [obj] three [with/and] white bread [obj] to buy した",
+          "naturalEn": "Mr. Tanaka bought three large apples and some white bread.",
+          "tokens": [
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "大きい",
+              "reading": "おおきい",
+              "meaning": "big",
+              "baseForm": "大きい",
+              "level": "N5"
+            },
+            {
+              "surface": "りんご"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "三つ",
+              "reading": "みっつ",
+              "meaning": "three",
+              "baseForm": "三つ",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "白い",
+              "reading": "しろい",
+              "meaning": "white",
+              "baseForm": "白い",
+              "level": "N5"
+            },
+            {
+              "surface": "パン",
+              "meaning": "bread",
+              "baseForm": "パン",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "買い",
+              "reading": "かい",
+              "meaning": "to buy",
+              "baseForm": "買う",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "それから、おいしい魚と肉も見ました。肉は少し高かったですが、魚は安かったです。田中さんは魚を二つ買いました。",
+      "en": "Then, he also looked at delicious fish and meat. The meat was a little expensive, but the fish was cheap. Mr. Tanaka bought two fish.",
+      "sentences": [
+        {
+          "ja": "それから、おいしい魚と肉も見ました。",
+          "literalEn": "after that delicious fish [with/and] meat [also] to see した",
+          "naturalEn": "Then, we also saw some delicious fish and meat.",
+          "tokens": [
+            {
+              "surface": "それから",
+              "meaning": "after that",
+              "baseForm": "それから",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "おいしい",
+              "meaning": "delicious",
+              "baseForm": "おいしい",
+              "level": "N5"
+            },
+            {
+              "surface": "魚",
+              "reading": "さかな",
+              "meaning": "fish",
+              "baseForm": "魚",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "肉",
+              "reading": "にく",
+              "meaning": "meat",
+              "baseForm": "肉",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "肉は少し高かったですが、魚は安かったです。",
+          "literalEn": "meat [topic] few quantity [?] [past] ですが fish [topic] cheap [?] [past] [is]",
+          "naturalEn": "The meat was a little expensive, but the fish was cheap.",
+          "tokens": [
+            {
+              "surface": "肉",
+              "reading": "にく",
+              "meaning": "meat",
+              "baseForm": "肉",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "少し",
+              "reading": "すこし",
+              "meaning": "few",
+              "baseForm": "少し",
+              "level": "N5"
+            },
+            {
+              "surface": "高",
+              "reading": "たか",
+              "meaning": "quantity; amount; volume",
+              "baseForm": "高",
+              "level": "N1"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "ですが"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "魚",
+              "reading": "さかな",
+              "meaning": "fish",
+              "baseForm": "魚",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "安",
+              "reading": "やす",
+              "meaning": "cheap",
+              "baseForm": "安い",
+              "level": "N5"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "田中さんは魚を二つ買いました。",
+          "literalEn": "Tanaka [Mr/Ms] [topic] fish [obj] two things to buy した",
+          "naturalEn": "Mr. Tanaka bought two pieces of fish.",
+          "tokens": [
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "魚",
+              "reading": "さかな",
+              "meaning": "fish",
+              "baseForm": "魚",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "二つ",
+              "reading": "ふたつ",
+              "meaning": "two things",
+              "baseForm": "二つ",
+              "level": "N5"
+            },
+            {
+              "surface": "買い",
+              "reading": "かい",
+              "meaning": "to buy",
+              "baseForm": "買う",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "全部で千二百円でした。田中さんはお金を払って、家に帰りました。十二時においしい昼ごはんを食べました。",
+      "en": "In total, it was 1,200 yen. Mr. Tanaka paid the money and returned home. At twelve o'clock, he ate a delicious lunch.",
+      "sentences": [
+        {
+          "ja": "全部で千二百円でした。",
+          "literalEn": "all [in/by] thousand two hundred circle [in/by] した",
+          "naturalEn": "The total was 1,200 yen.",
+          "tokens": [
+            {
+              "surface": "全部",
+              "reading": "ぜんぶ",
+              "meaning": "all",
+              "baseForm": "全部",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "千",
+              "reading": "せん",
+              "meaning": "thousand",
+              "baseForm": "千",
+              "level": "N5"
+            },
+            {
+              "surface": "二百",
+              "reading": "にひゃく",
+              "meaning": "two hundred (200)",
+              "baseForm": "二百",
+              "level": "N5"
+            },
+            {
+              "surface": "円",
+              "reading": "えん",
+              "meaning": "circle; money",
+              "baseForm": "円",
+              "level": "N3"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "田中さんはお金を払って、家に帰りました。",
+          "literalEn": "Tanaka [Mr/Ms] [topic] money [obj] to pay って house [at/to] return した",
+          "naturalEn": "Mr. Tanaka paid the bill and went home.",
+          "tokens": [
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "お金",
+              "reading": "おかね",
+              "meaning": "money",
+              "baseForm": "お金",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "払",
+              "reading": "はら",
+              "meaning": "to pay",
+              "baseForm": "払う",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "帰り",
+              "reading": "かえり",
+              "meaning": "return",
+              "baseForm": "帰り",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "十二時においしい昼ごはんを食べました。",
+          "literalEn": "twelve time delicious noon ごはん [obj]  to eat した",
+          "naturalEn": "I had a delicious lunch at noon.",
+          "tokens": [
+            {
+              "surface": "十二",
+              "reading": "じゅうに",
+              "meaning": "twelve (12)",
+              "baseForm": "十二",
+              "level": "N5"
+            },
+            {
+              "surface": "時に",
+              "reading": "ときに",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "おいしい",
+              "meaning": "delicious",
+              "baseForm": "おいしい",
+              "level": "N5"
+            },
+            {
+              "surface": "昼",
+              "reading": "ひる",
+              "meaning": "noon; daytime",
+              "baseForm": "昼",
+              "level": "N5"
+            },
+            {
+              "surface": "ごはん"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "食",
+              "reading": "く",
+              "meaning": "(male) (vulgar) to eat",
+              "baseForm": "食う",
+              "level": "N3"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "田中さんは何でスーパーへ行きましたか？",
+      "options": [
+        "バス",
+        "電車",
+        "車",
+        "自転車"
+      ],
+      "answerIndex": 2,
+      "explanation": "「車」 is correct: 「車で十分かかりました。」 (It took ten minutes by car.)"
+    },
+    {
+      "question": "田中さんはスーパーで何を買いませんでしたか？",
+      "options": [
+        "りんご",
+        "パン",
+        "魚",
+        "肉"
+      ],
+      "answerIndex": 3,
+      "explanation": "「肉」 is correct: 「それから、おいしい魚と肉も見ました。」 (Then, we also saw some delicious fish and meat.)"
+    },
+    {
+      "question": "買い物は全部でいくらでしたか？",
+      "options": [
+        "千円",
+        "千二百円",
+        "二千円",
+        "二千二百円"
+      ],
+      "answerIndex": 1,
+      "explanation": "「千二百円」 is correct: 「全部で千二百円でした。」 (The total was 1,200 yen.)"
+    }
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/supermarket.json"
+}

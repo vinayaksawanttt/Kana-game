@@ -1,3 +1,5 @@
+import { getDictionaryIndexFromCache } from "@/lib/srs/cacheDb";
+
 export interface DictionaryKanjiRecord {
   c: string;
   jlpt: number;
@@ -91,6 +93,13 @@ export function loadDictionaryDataMaps(): Promise<DictionaryDataMaps> {
 
   cachedDataMaps = (async (): Promise<DictionaryDataMaps> => {
     let rawIndex: DictionaryIndexData;
+    if (typeof window !== "undefined") {
+      const cached = await getDictionaryIndexFromCache<DictionaryIndexData>().catch(() => null);
+      if (cached) {
+        return buildDictionaryDataMaps(cached);
+      }
+    }
+
     if (canUseBrowserFetch()) {
       const response = await globalThis.fetch("/data/v1/dictionary-index.json", {
         cache: "force-cache",

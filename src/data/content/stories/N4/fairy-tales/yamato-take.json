@@ -14,19 +14,1590 @@
   "paragraphs": [
     {
       "ja": "昔々、天皇の息子である「ヤマトタケル」というとても強い若い王子がいました。ある日、天皇は彼に、国で悪いことをしている悪者や反乱軍を倒すように命令しました。ヤマトタケルは喜んで出発し、知恵と強い力を使って、次々と敵を倒していきました。",
-      "en": "Long, long ago, there was a very strong young prince named \"Yamato Takeru\" who was the Emperor's son. One day, the Emperor ordered him to defeat the bad guys and rebel forces doing evil things in the country. Yamato Takeru gladly set out, and using his wisdom and great strength, defeated the enemies one after another."
+      "en": "Long, long ago, there was a very strong young prince named \"Yamato Takeru\" who was the Emperor's son. One day, the Emperor ordered him to defeat the bad guys and rebel forces doing evil things in the country. Yamato Takeru gladly set out, and using his wisdom and great strength, defeated the enemies one after another.",
+      "sentences": [
+        {
+          "ja": "昔々、天皇の息子である「ヤマトタケル」というとても強い若い王子がいました。",
+          "literalEn": "olden days Emperor of Japan ['s / of]  son [in/by] to be ヤマトタケル という very powerful young prince [subj] いま した",
+          "naturalEn": "Once upon a time, there was a very strong young prince named “Yamato Takeru,” who was the son of the Emperor.",
+          "tokens": [
+            {
+              "surface": "昔",
+              "reading": "むかし",
+              "meaning": "olden days; former",
+              "baseForm": "昔",
+              "level": "N4"
+            },
+            {
+              "surface": "々"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "天皇",
+              "reading": "てんのう",
+              "meaning": "Emperor of Japan",
+              "baseForm": "天皇",
+              "level": "N2"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "息子",
+              "reading": "むすこ",
+              "meaning": "(humble) son",
+              "baseForm": "息子",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "ヤマトタケル"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "強い",
+              "reading": "つよい",
+              "meaning": "powerful",
+              "baseForm": "強い",
+              "level": "N5"
+            },
+            {
+              "surface": "若い",
+              "reading": "わかい",
+              "meaning": "young",
+              "baseForm": "若い",
+              "level": "N5"
+            },
+            {
+              "surface": "王子",
+              "reading": "おうじ",
+              "meaning": "prince",
+              "baseForm": "王子",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ある日、天皇は彼に、国で悪いことをしている悪者や反乱軍を倒すように命令しました。",
+          "literalEn": "to be day Emperor of Japan [topic] he [at/to] country [in/by] bad thing [obj] [and] to be bad fellow insurrection army [obj] to throw down よう [at/to] order しま した",
+          "naturalEn": "One day, the Emperor ordered him to defeat the villains and rebel forces who were causing trouble in the land.",
+          "tokens": [
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "天皇",
+              "reading": "てんのう",
+              "meaning": "Emperor of Japan",
+              "baseForm": "天皇",
+              "level": "N2"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "国",
+              "reading": "くに",
+              "meaning": "country",
+              "baseForm": "国",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "悪い",
+              "reading": "わるい",
+              "meaning": "bad",
+              "baseForm": "悪い",
+              "level": "N5"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "悪者",
+              "reading": "わるもの",
+              "meaning": "bad fellow; rascal; ruffian",
+              "baseForm": "悪者",
+              "level": "N1"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "反乱",
+              "reading": "はんらん",
+              "meaning": "insurrection; mutiny; rebellion",
+              "baseForm": "反乱",
+              "level": "N1"
+            },
+            {
+              "surface": "軍",
+              "reading": "ぐん",
+              "meaning": "army; force; troops",
+              "baseForm": "軍",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "倒す",
+              "reading": "たおす",
+              "meaning": "to throw down; to beat; to bring down",
+              "baseForm": "倒す",
+              "level": "N3"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "命令",
+              "reading": "めいれい",
+              "meaning": "order; command; decree",
+              "baseForm": "命令",
+              "level": "N3"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ヤマトタケルは喜んで出発し、知恵と強い力を使って、次々と敵を倒していきました。",
+          "literalEn": "ヤマトタケル [topic] to be delighted んで to depart wisdom [with/and] powerful strength [obj] to use って next enemy [obj] to throw down てい した",
+          "naturalEn": "Yamato Takeru set out happily and, using his wisdom and great strength, defeated his enemies one after another.",
+          "tokens": [
+            {
+              "surface": "ヤマトタケル"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "喜",
+              "reading": "よろこ",
+              "meaning": "to be delighted",
+              "baseForm": "喜ぶ",
+              "level": "N4"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "出発",
+              "reading": "しゅっぱつ",
+              "meaning": "to depart",
+              "baseForm": "出発",
+              "level": "N4"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "知恵",
+              "reading": "ちえ",
+              "meaning": "wisdom; wit; sagacity",
+              "baseForm": "知恵",
+              "level": "N3"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "強い",
+              "reading": "つよい",
+              "meaning": "powerful",
+              "baseForm": "強い",
+              "level": "N5"
+            },
+            {
+              "surface": "力",
+              "reading": "ちから",
+              "meaning": "strength; power",
+              "baseForm": "力",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "使",
+              "reading": "つか",
+              "meaning": "to use",
+              "baseForm": "使う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "次々と",
+              "reading": "つぎ々と",
+              "meaning": "next",
+              "baseForm": "次",
+              "level": "N5"
+            },
+            {
+              "surface": "敵",
+              "reading": "てき",
+              "meaning": "enemy; rival",
+              "baseForm": "敵",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "倒",
+              "reading": "たお",
+              "meaning": "to throw down; to beat; to bring down",
+              "baseForm": "倒す",
+              "level": "N3"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "その後、彼は東の地方の反乱軍を倒すために出発しました。途中で、駿河（するが）の国の悪い知事に騙されて、広い野原の真ん中で罠にかけられました。知事は野原に火をつけて、王子を焼き殺そうとしました。周りは炎に囲まれ、絶体絶命のピンチでした。",
-      "en": "After that, he set out to defeat the rebel forces in the eastern provinces. Along the way, he was deceived by the wicked governor of Suruga and caught in a trap in the middle of a wide plain. The governor set fire to the field, trying to burn the prince to death. Surrounded by flames, it was a desperate crisis."
+      "en": "After that, he set out to defeat the rebel forces in the eastern provinces. Along the way, he was deceived by the wicked governor of Suruga and caught in a trap in the middle of a wide plain. The governor set fire to the field, trying to burn the prince to death. Surrounded by flames, it was a desperate crisis.",
+      "sentences": [
+        {
+          "ja": "その後、彼は東の地方の反乱軍を倒すために出発しました。",
+          "literalEn": "after that he [topic] east ['s / of] area ['s / of] insurrection army [obj] to throw down ため [at/to] to depart しま した",
+          "naturalEn": "After that, he set out to defeat the rebel forces in the eastern provinces.",
+          "tokens": [
+            {
+              "surface": "その後",
+              "reading": "そのあと",
+              "meaning": "after that; afterwards",
+              "baseForm": "その後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "東",
+              "reading": "ひがし",
+              "meaning": "east",
+              "baseForm": "東",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "地方",
+              "reading": "ちほう",
+              "meaning": "area; locality; district",
+              "baseForm": "地方",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "反乱",
+              "reading": "はんらん",
+              "meaning": "insurrection; mutiny; rebellion",
+              "baseForm": "反乱",
+              "level": "N1"
+            },
+            {
+              "surface": "軍",
+              "reading": "ぐん",
+              "meaning": "army; force; troops",
+              "baseForm": "軍",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "倒す",
+              "reading": "たおす",
+              "meaning": "to throw down; to beat; to bring down",
+              "baseForm": "倒す",
+              "level": "N3"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "出発",
+              "reading": "しゅっぱつ",
+              "meaning": "to depart",
+              "baseForm": "出発",
+              "level": "N4"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "途中で、駿河（するが）の国の悪い知事に騙されて、広い野原の真ん中で罠にかけられました。",
+          "literalEn": "on the way [in/by] Suruga Province ['s / of] country ['s / of] bad prefectural governor [at/to] to trick [and] spacious field ['s / of] middle [in/by] trap にかけ した",
+          "naturalEn": "Along the way, he was deceived by the wicked governor of Suruga Province and fell into a trap in the middle of a vast field.",
+          "tokens": [
+            {
+              "surface": "途中",
+              "reading": "とちゅう",
+              "meaning": "on the way",
+              "baseForm": "途中",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "駿河",
+              "reading": "するが",
+              "meaning": "Suruga Province",
+              "baseForm": "駿河",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "国",
+              "reading": "くに",
+              "meaning": "country",
+              "baseForm": "国",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "悪い",
+              "reading": "わるい",
+              "meaning": "bad",
+              "baseForm": "悪い",
+              "level": "N5"
+            },
+            {
+              "surface": "知事",
+              "reading": "ちじ",
+              "meaning": "prefectural governor",
+              "baseForm": "知事",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "騙",
+              "reading": "だま",
+              "meaning": "to trick; to deceive",
+              "baseForm": "騙す",
+              "level": "N3"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "広い",
+              "reading": "ひろい",
+              "meaning": "spacious; wide",
+              "baseForm": "広い",
+              "level": "N5"
+            },
+            {
+              "surface": "野原",
+              "reading": "のはら",
+              "meaning": "field; plain; meadow",
+              "baseForm": "野原",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "真ん中",
+              "reading": "まんなか",
+              "meaning": "middle",
+              "baseForm": "真ん中",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "罠",
+              "reading": "わな",
+              "meaning": "trap; snare",
+              "baseForm": "罠",
+              "level": "N3"
+            },
+            {
+              "surface": "にかけ"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "知事は野原に火をつけて、王子を焼き殺そうとしました。",
+          "literalEn": "prefectural governor [topic] field [at/to] fire [obj] つけ [and] prince [obj] to bake to kill really [with/and] しま した",
+          "naturalEn": "The governor set the field on fire, intending to burn the prince to death.",
+          "tokens": [
+            {
+              "surface": "知事",
+              "reading": "ちじ",
+              "meaning": "prefectural governor",
+              "baseForm": "知事",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "野原",
+              "reading": "のはら",
+              "meaning": "field; plain; meadow",
+              "baseForm": "野原",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "火",
+              "reading": "ひ",
+              "meaning": "fire",
+              "baseForm": "火",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "つけ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "王子",
+              "reading": "おうじ",
+              "meaning": "prince",
+              "baseForm": "王子",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "焼き",
+              "reading": "やき",
+              "meaning": "to bake; to grill",
+              "baseForm": "焼く",
+              "level": "N4"
+            },
+            {
+              "surface": "殺",
+              "reading": "ころ",
+              "meaning": "to kill",
+              "baseForm": "殺す",
+              "level": "N3"
+            },
+            {
+              "surface": "そう",
+              "meaning": "really",
+              "baseForm": "そう",
+              "level": "N4"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "周りは炎に囲まれ、絶体絶命のピンチでした。",
+          "literalEn": "surroundings [topic] flame [at/to] to surround まれ desperate situation ['s / of] ピンチ [in/by] した",
+          "naturalEn": "He was surrounded by flames and found himself in a desperate, life-threatening situation.",
+          "tokens": [
+            {
+              "surface": "周り",
+              "reading": "まわり",
+              "meaning": "surroundings",
+              "baseForm": "周り",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "炎",
+              "reading": "ほのお",
+              "meaning": "flame",
+              "baseForm": "炎",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "囲",
+              "reading": "かこ",
+              "meaning": "to surround; to encircle",
+              "baseForm": "囲む",
+              "level": "N3"
+            },
+            {
+              "surface": "まれ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "絶体絶命",
+              "reading": "ぜったいぜつめい",
+              "meaning": "desperate situation; cornered",
+              "baseForm": "絶体絶命",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ピンチ"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "しかし、ヤマトタケルには叔母からもらった特別な「草薙（くさなぎ）の剣」がありました。彼はその剣で周りの草を急いで切り払い、火を消すための道具を使って自分の周りの火を消しました。不思議なことに風向きも変わり、彼は無事にその罠から脱出することができました。",
-      "en": "However, Yamato Takeru had a special \"Kusanagi Sword\" given to him by his aunt. With that sword, he hurriedly cut down the surrounding grass, and using tools to make fire, put out the fire around him. Mysteriously, the wind direction also changed, and he was able to escape safely from that trap."
+      "en": "However, Yamato Takeru had a special \"Kusanagi Sword\" given to him by his aunt. With that sword, he hurriedly cut down the surrounding grass, and using tools to make fire, put out the fire around him. Mysteriously, the wind direction also changed, and he was able to escape safely from that trap.",
+      "sentences": [
+        {
+          "ja": "しかし、ヤマトタケルには叔母からもらった特別な「草薙（くさなぎ）の剣」がありました。",
+          "literalEn": "however ヤマトタケル [at/to] [topic] aunt [from] [also] [past] special Kusanagi ['s / of] blade [subj] ありま した",
+          "naturalEn": "However, Yamato Takeru possessed a special “Kusanagi Sword” that he had received from his aunt.",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ヤマトタケル"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "叔母",
+              "reading": "おば",
+              "meaning": "aunt",
+              "baseForm": "叔母",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "特別",
+              "reading": "とくべつ",
+              "meaning": "special",
+              "baseForm": "特別",
+              "level": "N4"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "草薙",
+              "reading": "くさなぎ",
+              "meaning": "Kusanagi (Grass-Cutting Sword)",
+              "baseForm": "草薙",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "剣",
+              "reading": "つるぎ",
+              "meaning": "blade, clock hand, sabre",
+              "baseForm": "剣",
+              "level": "N1"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼はその剣で周りの草を急いで切り払い、火を消すための道具を使って自分の周りの火を消しました。",
+          "literalEn": "he [topic] that blade [in/by] surroundings ['s / of] grass [obj] urgent [in/by] limits to pay fire [obj] to erase ため ['s / of] tool [obj] to use って oneself ['s / of] surroundings ['s / of] fire [obj] to erase しま した",
+          "naturalEn": "He quickly cut down the surrounding grass with that sword and used fire-extinguishing tools to put out the flames around him.",
+          "tokens": [
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "剣",
+              "reading": "つるぎ",
+              "meaning": "blade, clock hand, sabre",
+              "baseForm": "剣",
+              "level": "N1"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "周り",
+              "reading": "まわり",
+              "meaning": "surroundings",
+              "baseForm": "周り",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "草",
+              "reading": "くさ",
+              "meaning": "grass",
+              "baseForm": "草",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "急",
+              "reading": "きゅう",
+              "meaning": "urgent; steep",
+              "baseForm": "急",
+              "level": "N4"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "切り",
+              "reading": "きり",
+              "meaning": "limits; end; bounds",
+              "baseForm": "切り",
+              "level": "N1"
+            },
+            {
+              "surface": "払い",
+              "reading": "はらい",
+              "meaning": "to pay",
+              "baseForm": "払う",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "火",
+              "reading": "ひ",
+              "meaning": "fire",
+              "baseForm": "火",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "消す",
+              "reading": "けす",
+              "meaning": "to erase; to turn off power",
+              "baseForm": "消す",
+              "level": "N5"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "道具",
+              "reading": "どうぐ",
+              "meaning": "tool; means",
+              "baseForm": "道具",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "使",
+              "reading": "つか",
+              "meaning": "to use",
+              "baseForm": "使う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "自分",
+              "reading": "じぶん",
+              "meaning": "oneself",
+              "baseForm": "自分",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "周り",
+              "reading": "まわり",
+              "meaning": "surroundings",
+              "baseForm": "周り",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "火",
+              "reading": "ひ",
+              "meaning": "fire",
+              "baseForm": "火",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "消",
+              "reading": "け",
+              "meaning": "to erase; to turn off power",
+              "baseForm": "消す",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "不思議なことに風向きも変わり、彼は無事にその罠から脱出することができました。",
+          "literalEn": "mystery ことに wind direction [also] strange he [topic] safety [at/to] that trap [from] escape to do thing [subj] でき した",
+          "naturalEn": "Strangely enough, the wind shifted, and he was able to escape the trap unharmed.",
+          "tokens": [
+            {
+              "surface": "不思議",
+              "reading": "ふしぎ",
+              "meaning": "mystery; curiosity",
+              "baseForm": "不思議",
+              "level": "N3"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "風向き",
+              "reading": "かざむき",
+              "meaning": "wind direction",
+              "baseForm": "風向き",
+              "level": "N3"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "変わり",
+              "reading": "へんわり",
+              "meaning": "strange",
+              "baseForm": "変",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "無事",
+              "reading": "ぶじ",
+              "meaning": "safety; peace; quietness",
+              "baseForm": "無事",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "罠",
+              "reading": "わな",
+              "meaning": "trap; snare",
+              "baseForm": "罠",
+              "level": "N3"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "脱出",
+              "reading": "だっしゅつ",
+              "meaning": "escape",
+              "baseForm": "脱出",
+              "level": "N1"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "その後も彼は多くの困難を乗り越えて、国中に平和をもたらしました。彼の妻であるオトタチバナヒメは、海の神様の怒りを鎮めるために自分の命を犠牲にして王子を救いました。ヤマトタケルは妻の愛と犠牲を一生忘れませんでした。彼の勇敢な冒険と伝説は、今でも人々に語り継がれています。",
-      "en": "After that, he overcame many difficulties and brought peace to the country. His wife, Princess Ototachibana, sacrificed her own life to calm the anger of the Sea God and saved the prince. Yamato Takeru never forgot his wife's love and sacrifice for the rest of his life. His brave adventures and legends continue to be told to people even today."
+      "en": "After that, he overcame many difficulties and brought peace to the country. His wife, Princess Ototachibana, sacrificed her own life to calm the anger of the Sea God and saved the prince. Yamato Takeru never forgot his wife's love and sacrifice for the rest of his life. His brave adventures and legends continue to be told to people even today.",
+      "sentences": [
+        {
+          "ja": "その後も彼は多くの困難を乗り越えて、国中に平和をもたらしました。",
+          "literalEn": "after that [also] he [topic] many ['s / of] difficulty [obj] to get on to go over えて country middle [at/to] peace [obj] [also] たら しま した",
+          "naturalEn": "He continued to overcome many hardships and brought peace to the entire land.",
+          "tokens": [
+            {
+              "surface": "その後",
+              "reading": "そのあと",
+              "meaning": "after that; afterwards",
+              "baseForm": "その後",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "多く",
+              "reading": "おおく",
+              "meaning": "many",
+              "baseForm": "多い",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "困難",
+              "reading": "こんなん",
+              "meaning": "difficulty; distress",
+              "baseForm": "困難",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "乗り",
+              "reading": "のり",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "越",
+              "reading": "こ",
+              "meaning": "to go over (e.g. with audience)",
+              "baseForm": "越す",
+              "level": "N3"
+            },
+            {
+              "surface": "えて"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "国",
+              "reading": "くに",
+              "meaning": "country",
+              "baseForm": "国",
+              "level": "N5"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "平和",
+              "reading": "へいわ",
+              "meaning": "peace; harmony",
+              "baseForm": "平和",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "たら"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼の妻であるオトタチバナヒメは、海の神様の怒りを鎮めるために自分の命を犠牲にして王子を救いました。",
+          "literalEn": "he ['s / of]  wife [in/by] to be オトタチバナヒメ [topic] sea ['s / of] god ['s / of] anger [obj] tranquilize ため [at/to] oneself ['s / of] command [obj] sacrifice にし [and] prince [obj] to rescue from いま した",
+          "naturalEn": "His wife, Princess Ototachibana, sacrificed her own life to save the prince and appease the wrath of the sea god.",
+          "tokens": [
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "妻",
+              "reading": "つま",
+              "meaning": "(humble) wife",
+              "baseForm": "妻",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "オトタチバナヒメ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "神様",
+              "reading": "かみさま",
+              "meaning": "god",
+              "baseForm": "神様",
+              "level": "N2"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "怒り",
+              "reading": "いかり",
+              "meaning": "anger; hatred",
+              "baseForm": "怒り",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "鎮める",
+              "reading": "おさえめる",
+              "meaning": "tranquilize",
+              "baseForm": "鎮",
+              "level": "N1"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "自分",
+              "reading": "じぶん",
+              "meaning": "oneself",
+              "baseForm": "自分",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "命",
+              "reading": "いのち",
+              "meaning": "command; decree; life",
+              "baseForm": "命",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "犠牲",
+              "reading": "ぎせい",
+              "meaning": "sacrifice",
+              "baseForm": "犠牲",
+              "level": "N1"
+            },
+            {
+              "surface": "にし"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "王子",
+              "reading": "おうじ",
+              "meaning": "prince",
+              "baseForm": "王子",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "救",
+              "reading": "すく",
+              "meaning": "to rescue from; to help out of",
+              "baseForm": "救う",
+              "level": "N3"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ヤマトタケルは妻の愛と犠牲を一生忘れませんでした。",
+          "literalEn": "ヤマトタケル [topic]  wife ['s / of] love [with/and] sacrifice [obj] whole life forget せん [in/by] した",
+          "naturalEn": "Yamato Takeru never forgot his wife’s love and sacrifice for the rest of his life.",
+          "tokens": [
+            {
+              "surface": "ヤマトタケル"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "妻",
+              "reading": "つま",
+              "meaning": "(humble) wife",
+              "baseForm": "妻",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "愛",
+              "reading": "あい",
+              "meaning": "love",
+              "baseForm": "愛",
+              "level": "N3"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "犠牲",
+              "reading": "ぎせい",
+              "meaning": "sacrifice",
+              "baseForm": "犠牲",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "一生",
+              "reading": "いっしょう",
+              "meaning": "whole life; a lifetime; all through life",
+              "baseForm": "一生",
+              "level": "N3"
+            },
+            {
+              "surface": "忘れ",
+              "reading": "わすれ",
+              "meaning": "forget",
+              "baseForm": "忘",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼の勇敢な冒険と伝説は、今でも人々に語り継がれています。",
+          "literalEn": "he ['s / of] bravery risk [with/and] tradition [topic] now but person [at/to] language to succeed がれ てい [polite]",
+          "naturalEn": "His brave adventures and legends are still passed down from generation to generation.",
+          "tokens": [
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "勇敢",
+              "reading": "ゆうかん",
+              "meaning": "bravery; heroism; gallantry",
+              "baseForm": "勇敢",
+              "level": "N1"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "冒険",
+              "reading": "ぼうけん",
+              "meaning": "risk; venture; adventure",
+              "baseForm": "冒険",
+              "level": "N3"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "伝説",
+              "reading": "でんせつ",
+              "meaning": "tradition; legend; folklore",
+              "baseForm": "伝説",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "今",
+              "reading": "いま",
+              "meaning": "now",
+              "baseForm": "今",
+              "level": "N5"
+            },
+            {
+              "surface": "でも",
+              "meaning": "but",
+              "baseForm": "でも",
+              "level": "N5"
+            },
+            {
+              "surface": "人々",
+              "reading": "ひと々",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "語り",
+              "reading": "ごり",
+              "meaning": "language; word",
+              "baseForm": "語",
+              "level": "N3"
+            },
+            {
+              "surface": "継",
+              "reading": "つ",
+              "meaning": "to succeed",
+              "baseForm": "継ぐ",
+              "level": "N1"
+            },
+            {
+              "surface": "がれ"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
@@ -38,7 +1609,8 @@
         "動物たちと一緒に相撲をした",
         "川で釣り針をなくした"
       ],
-      "answerIndex": 0
+      "answerIndex": 0,
+      "explanation": "「悪い知事に騙されて野原で火に囲まれた」 is the correct answer according to the story."
     },
     {
       "question": "ヤマトタケルが危機から脱出できたのは、何のおかげですか？",
@@ -48,7 +1620,8 @@
         "海の王様にもらった二つの宝石",
         "山で出会った賢いイノシシ"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「叔母からもらった特別な剣と道具」 is correct: 「昔々、天皇の息子である「ヤマトタケル」というとても強い若い王子がいました。」 (Once upon a time, there was a very strong young prince named “Yamato Takeru,” who was the son of the Emperor.)"
     },
     {
       "question": "オトタチバナヒメはどうして命を落としましたか？",
@@ -58,7 +1631,9 @@
         "海の神様の怒りを鎮めて王子を救うため",
         "山で大きな蛇と戦ったから"
       ],
-      "answerIndex": 2
+      "answerIndex": 2,
+      "explanation": "「海の神様の怒りを鎮めて王子を救うため」 is correct: 「彼の妻であるオトタチバナヒメは、海の神様の怒りを鎮めるために自分の命を犠牲にして王子を救いました。」 (His wife, Princess Ototachibana, sacrificed her own life to save the prince and appease the wrath of the sea god.)"
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/yamato-take.json"
 }

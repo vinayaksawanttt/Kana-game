@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import Link from "next/link";
 import {
   BookmarkCheck,
   BookmarkPlus,
@@ -15,6 +16,7 @@ import { GameLayout } from "@/lib/game-core/layout";
 import { StrokePlayer } from "@/components/kanji/StrokePlayer";
 import { useDictionary } from "@/hooks/useDictionary";
 import { addKanjiToSrs, addVocabularyToSrs } from "@/lib/srs/service";
+import { getHomophoneGroupForKanji } from "@/engine/homophones";
 import type { AnalyzedToken } from "@/engine/analyzer";
 import type {
   DictionaryKanjiRecord,
@@ -537,6 +539,7 @@ export default function DictionaryAnalyzerPage() {
                       <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
                         {results.kanji.map((k) => {
                           const isSaved = savedIds.has(`kanji:${k.c}`);
+                          const homophone = getHomophoneGroupForKanji(k.c);
                           return (
                             <div
                               key={k.c}
@@ -574,6 +577,49 @@ export default function DictionaryAnalyzerPage() {
                                   )}
                                 </button>
                               </div>
+
+                              {homophone && (
+                                <div className="rounded-lg border border-[var(--primary)]/30 bg-[var(--surface)] p-2.5 text-xs">
+                                  <div className="flex items-center justify-between border-b border-[var(--line)] pb-1.5">
+                                    <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--primary)]">
+                                      Homophone Nuance · {homophone.reading}
+                                    </span>
+                                    <span className="text-[10px] text-[var(--muted)]">
+                                      {homophone.title}
+                                    </span>
+                                  </div>
+                                  <div className="mt-1.5 space-y-1.5">
+                                    {homophone.members.map((member) => {
+                                      const isCurrent = member.kanji === k.c;
+                                      return (
+                                        <div
+                                          key={member.kanji}
+                                          className={`rounded-md p-1.5 transition ${
+                                            isCurrent
+                                              ? "bg-[var(--sakura-light)]/50 font-semibold"
+                                              : "opacity-85 hover:bg-[var(--bg)]"
+                                          }`}
+                                        >
+                                          <div className="flex items-baseline gap-1.5">
+                                            <Link
+                                              href={`/games/kanji/playground/${encodeURIComponent(member.kanji)}`}
+                                              className="font-japanese text-xs font-bold text-[var(--primary)] hover:underline"
+                                            >
+                                              {member.word} ({member.kanji})
+                                            </Link>
+                                            <span className="text-[10px] text-[var(--muted)]">
+                                              {member.nuance}
+                                            </span>
+                                          </div>
+                                          <p className="mt-0.5 font-japanese text-[10px] text-[var(--muted)]">
+                                            {member.example}
+                                          </p>
+                                        </div>
+                                      );
+                                    })}
+                                  </div>
+                                </div>
+                              )}
 
                               <KanjiStrokeToggle kanji={k.c} level={k.jlpt} />
                             </div>

@@ -14,19 +14,1559 @@
   "paragraphs": [
     {
       "ja": "昔々、優しいおじいさんとおばあさんが、シロという犬を大切に飼っていました。 ある日、シロが畑で土を掘ると、たくさんの小判（お金）が出てきました。 それを見た隣の悪いおじいさんは、シロを借りて山へ行きました。 しかし、お金が出なかったので、怒ってシロを殺してしまいました。",
-      "en": "Long, long ago, a kind old man and woman carefully kept a dog named Shiro. One day, when Shiro dug the dirt in the field, a lot of gold coins came out. The bad old man next door saw this, borrowed Shiro, and went to the mountain. However, because no money came out, he got angry and killed Shiro."
+      "en": "Long, long ago, a kind old man and woman carefully kept a dog named Shiro. One day, when Shiro dug the dirt in the field, a lot of gold coins came out. The bad old man next door saw this, borrowed Shiro, and went to the mountain. However, because no money came out, he got angry and killed Shiro.",
+      "sentences": [
+        {
+          "ja": "昔々、優しいおじいさんとおばあさんが、シロという犬を大切に飼っていました。",
+          "literalEn": "olden days kind old man [with/and] old woman [subj] シロ という dog [obj] important [at/to] to keep って いま した",
+          "naturalEn": "Once upon a time, a kind old man and woman cherished a dog named Shiro.",
+          "tokens": [
+            {
+              "surface": "昔",
+              "reading": "むかし",
+              "meaning": "olden days; former",
+              "baseForm": "昔",
+              "level": "N4"
+            },
+            {
+              "surface": "々"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "優しい",
+              "reading": "やさしい",
+              "meaning": "kind",
+              "baseForm": "優しい",
+              "level": "N4"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "シロ"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "犬",
+              "reading": "いぬ",
+              "meaning": "dog",
+              "baseForm": "犬",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "大切",
+              "reading": "たいせつ",
+              "meaning": "important",
+              "baseForm": "大切",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "飼",
+              "reading": "か",
+              "meaning": "to keep; to raise; to feed",
+              "baseForm": "飼う",
+              "level": "N3"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ある日、シロが畑で土を掘ると、たくさんの小判（お金）が出てきました。",
+          "literalEn": "to be day シロ [subj] field [in/by] earth [obj] to dig [with/and] many ['s / of] koban money [subj] to put out [and] した",
+          "naturalEn": "One day, when Shiro was digging in the field, he unearthed a large number of gold coins.",
+          "tokens": [
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "シロ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "畑",
+              "reading": "はたけ",
+              "meaning": "field",
+              "baseForm": "畑",
+              "level": "N3"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "土",
+              "reading": "つち",
+              "meaning": "earth; soil",
+              "baseForm": "土",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "掘る",
+              "reading": "ほる",
+              "meaning": "to dig; to excavate",
+              "baseForm": "掘る",
+              "level": "N2"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "小判",
+              "reading": "こばん",
+              "meaning": "koban (ancient oval gold coin)",
+              "baseForm": "小判",
+              "level": "N3"
+            },
+            {
+              "surface": "（"
+            },
+            {
+              "surface": "お金",
+              "reading": "おかね",
+              "meaning": "money",
+              "baseForm": "お金",
+              "level": "N5"
+            },
+            {
+              "surface": "）"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "それを見た隣の悪いおじいさんは、シロを借りて山へ行きました。",
+          "literalEn": "that [obj] to see [past] next door to ['s / of] bad old man [topic] シロ [obj] borrowing [and] mountain [toward] going した",
+          "naturalEn": "When the mean old man next door saw this, he borrowed Shiro and went to the mountains.",
+          "tokens": [
+            {
+              "surface": "それ",
+              "meaning": "that",
+              "baseForm": "それ",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "隣",
+              "reading": "となり",
+              "meaning": "next door to",
+              "baseForm": "隣",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "悪い",
+              "reading": "わるい",
+              "meaning": "bad",
+              "baseForm": "悪い",
+              "level": "N5"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "シロ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "借り",
+              "reading": "かり",
+              "meaning": "borrowing; debt; loan",
+              "baseForm": "借り",
+              "level": "N1"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "しかし、お金が出なかったので、怒ってシロを殺してしまいました。",
+          "literalEn": "however money [subj] to put out なか [past] ので to get angry って シロ [obj] to kill [and] しま いま した",
+          "naturalEn": "But since no money came out, he got angry and killed Shiro.",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "お金",
+              "reading": "おかね",
+              "meaning": "money",
+              "baseForm": "お金",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "なか"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "ので"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "怒",
+              "reading": "おこ",
+              "meaning": "to get angry; to be angry",
+              "baseForm": "怒る",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "シロ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "殺し",
+              "reading": "ころし",
+              "meaning": "to kill",
+              "baseForm": "殺す",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "優しいおじいさんはとても悲しんで、シロのお墓の木で臼（うす）を作りました。 その臼で餅（もち）をつくと、たくさんのおいしい餅が出てきました。 隣の悪いおじいさんはその臼を借りましたが、汚い物が出たので、怒って臼を燃やしてしまいました。",
-      "en": "The kind old man was very sad and made a mortar from the tree at Shiro's grave. When he pounded rice cakes in that mortar, a lot of delicious rice cakes came out. The bad old man next door borrowed the mortar, but because dirty things came out, he got angry and burned the mortar."
+      "en": "The kind old man was very sad and made a mortar from the tree at Shiro's grave. When he pounded rice cakes in that mortar, a lot of delicious rice cakes came out. The bad old man next door borrowed the mortar, but because dirty things came out, he got angry and burned the mortar.",
+      "sentences": [
+        {
+          "ja": "優しいおじいさんはとても悲しんで、シロのお墓の木で臼（うす）を作りました。",
+          "literalEn": "kind old man [topic] very sad んで シロ ['s / of] grave ['s / of] tree [in/by] mortar [obj] make-up した",
+          "naturalEn": "The kind old man was very sad, so he made a mortar from the tree at Shiro’s grave.",
+          "tokens": [
+            {
+              "surface": "優しい",
+              "reading": "やさしい",
+              "meaning": "kind",
+              "baseForm": "優しい",
+              "level": "N4"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "悲",
+              "reading": "かな",
+              "meaning": "sad, deplore, grieve",
+              "baseForm": "悲",
+              "level": "N3"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "シロ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "墓",
+              "reading": "はか",
+              "meaning": "grave; tomb",
+              "baseForm": "墓",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "木",
+              "reading": "き",
+              "meaning": "tree; wood",
+              "baseForm": "木",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "臼",
+              "reading": "うす",
+              "meaning": "mortar; millstone",
+              "baseForm": "臼",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "作り",
+              "reading": "つくり",
+              "meaning": "make-up; sliced raw fish",
+              "baseForm": "作り",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "その臼で餅（もち）をつくと、たくさんのおいしい餅が出てきました。",
+          "literalEn": "that mortar [in/by] sticky rice cake [obj] つく [with/and] many ['s / of] delicious sticky rice cake [subj] to put out [and] した",
+          "naturalEn": "When he pounded mochi with that mortar, a large quantity of delicious mochi came out.",
+          "tokens": [
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "臼",
+              "reading": "うす",
+              "meaning": "mortar; millstone",
+              "baseForm": "臼",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "餅",
+              "reading": "もち",
+              "meaning": "sticky rice cake",
+              "baseForm": "餅",
+              "level": "N2"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "つく"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "おいしい",
+              "meaning": "delicious",
+              "baseForm": "おいしい",
+              "level": "N5"
+            },
+            {
+              "surface": "餅",
+              "reading": "もち",
+              "meaning": "sticky rice cake",
+              "baseForm": "餅",
+              "level": "N2"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "隣の悪いおじいさんはその臼を借りましたが、汚い物が出たので、怒って臼を燃やしてしまいました。",
+          "literalEn": "next door to ['s / of] bad old man [topic] that mortar [obj] borrowing した [subj] dirty thing [subj] to put out [past] ので to get angry って mortar [obj] burn [and] しま いま した",
+          "naturalEn": "The mean old man next door borrowed the mortar, but when it produced filthy things, he got angry and burned it.",
+          "tokens": [
+            {
+              "surface": "隣",
+              "reading": "となり",
+              "meaning": "next door to",
+              "baseForm": "隣",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "悪い",
+              "reading": "わるい",
+              "meaning": "bad",
+              "baseForm": "悪い",
+              "level": "N5"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "臼",
+              "reading": "うす",
+              "meaning": "mortar; millstone",
+              "baseForm": "臼",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "借り",
+              "reading": "かり",
+              "meaning": "borrowing; debt; loan",
+              "baseForm": "借り",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "汚い",
+              "reading": "きたない",
+              "meaning": "dirty",
+              "baseForm": "汚い",
+              "level": "N5"
+            },
+            {
+              "surface": "物",
+              "reading": "もの",
+              "meaning": "thing",
+              "baseForm": "物",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "ので"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "怒",
+              "reading": "おこ",
+              "meaning": "to get angry; to be angry",
+              "baseForm": "怒る",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "臼",
+              "reading": "うす",
+              "meaning": "mortar; millstone",
+              "baseForm": "臼",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "燃",
+              "reading": "も",
+              "meaning": "burn, blaze, glow",
+              "baseForm": "燃",
+              "level": "N2"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "優しいおじいさんがその灰（はい）をもらって、枯れた（かれた）木にまくと、美しい花が咲きました。 その話を聞いたお殿様（おとのさま）が、「私の枯れた桜の木にも花を咲かせてくれ」と頼みました。 おじいさんが灰をまくと、見事に桜が咲きました。 お殿様はとても喜んで、おじいさんにたくさんのご褒美（ごほうび）をあげました。",
-      "en": "When the kind old man received the ashes and scattered them on a withered tree, beautiful flowers bloomed. The lord who heard that story requested, \"Please make flowers bloom on my withered cherry tree too.\" When the old man scattered the ashes, cherry blossoms bloomed splendidly. The lord was very happy and gave the old man many rewards."
+      "en": "When the kind old man received the ashes and scattered them on a withered tree, beautiful flowers bloomed. The lord who heard that story requested, \"Please make flowers bloom on my withered cherry tree too.\" When the old man scattered the ashes, cherry blossoms bloomed splendidly. The lord was very happy and gave the old man many rewards.",
+      "sentences": [
+        {
+          "ja": "優しいおじいさんがその灰（はい）をもらって、枯れた（かれた）木にまくと、美しい花が咲きました。",
+          "literalEn": "kind old man [subj] that ash [obj] [also] って wither [past] tree [at/to] まく [with/and] beautiful flower [subj] to bloom した",
+          "naturalEn": "The kind old man took the ashes and scattered them on a withered tree, and beautiful flowers bloomed.",
+          "tokens": [
+            {
+              "surface": "優しい",
+              "reading": "やさしい",
+              "meaning": "kind",
+              "baseForm": "優しい",
+              "level": "N4"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "灰",
+              "reading": "はい",
+              "meaning": "ash",
+              "baseForm": "灰",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "枯",
+              "reading": "か",
+              "meaning": "wither, be seasoned, die",
+              "baseForm": "枯",
+              "level": "N2"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "木",
+              "reading": "き",
+              "meaning": "tree; wood",
+              "baseForm": "木",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "まく"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "美しい",
+              "reading": "うつくしい",
+              "meaning": "beautiful",
+              "baseForm": "美しい",
+              "level": "N4"
+            },
+            {
+              "surface": "花",
+              "reading": "はな",
+              "meaning": "flower",
+              "baseForm": "花",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "咲き",
+              "reading": "さき",
+              "meaning": "to bloom",
+              "baseForm": "咲く",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "その話を聞いたお殿様（おとのさま）が、「私の枯れた桜の木にも花を咲かせてくれ」と頼みました。",
+          "literalEn": "that talk [obj] to hear [past] feudal lord [subj]  I ['s / of] wither [past] cherry blossom tree [at/to] [also] flower [obj] to bloom [?] てく [with/and] request した",
+          "naturalEn": "When the lord heard this story, he asked, “Please make my withered cherry tree bloom as well.”",
+          "tokens": [
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "話",
+              "reading": "はなし",
+              "meaning": "talk; story",
+              "baseForm": "話",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "聞",
+              "reading": "き",
+              "meaning": "to hear; to listen to; to ask",
+              "baseForm": "聞く",
+              "level": "N5"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "殿様",
+              "reading": "とのさま",
+              "meaning": "feudal lord",
+              "baseForm": "殿様",
+              "level": "N1"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "枯",
+              "reading": "か",
+              "meaning": "wither, be seasoned, die",
+              "baseForm": "枯",
+              "level": "N2"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "桜の",
+              "reading": "さくらの",
+              "meaning": "cherry blossom; cherry tree",
+              "baseForm": "桜",
+              "level": "N3"
+            },
+            {
+              "surface": "木",
+              "reading": "き",
+              "meaning": "tree; wood",
+              "baseForm": "木",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "花",
+              "reading": "はな",
+              "meaning": "flower",
+              "baseForm": "花",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "咲",
+              "reading": "さ",
+              "meaning": "to bloom",
+              "baseForm": "咲く",
+              "level": "N5"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "頼み",
+              "reading": "たのみ",
+              "meaning": "request; favor; reliance",
+              "baseForm": "頼み",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "おじいさんが灰をまくと、見事に桜が咲きました。",
+          "literalEn": "old man [subj] ash [obj] まく [with/and] splendid [at/to] cherry blossom [subj] to bloom した",
+          "naturalEn": "When the old man scattered the ashes, the cherry tree bloomed magnificently.",
+          "tokens": [
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "灰",
+              "reading": "はい",
+              "meaning": "ash",
+              "baseForm": "灰",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "まく"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "見事",
+              "reading": "みごと",
+              "meaning": "splendid; magnificent; beautiful",
+              "baseForm": "見事",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "桜",
+              "reading": "さくら",
+              "meaning": "cherry blossom; cherry tree",
+              "baseForm": "桜",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "咲き",
+              "reading": "さき",
+              "meaning": "to bloom",
+              "baseForm": "咲く",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "お殿様はとても喜んで、おじいさんにたくさんのご褒美（ごほうび）をあげました。",
+          "literalEn": "feudal lord [topic] very to be delighted んで old man [at/to] many ['s / of] reward [obj] Ah した",
+          "naturalEn": "The lord was overjoyed and gave the old man many rewards.",
+          "tokens": [
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "殿様",
+              "reading": "とのさま",
+              "meaning": "feudal lord",
+              "baseForm": "殿様",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "喜",
+              "reading": "よろこ",
+              "meaning": "to be delighted",
+              "baseForm": "喜ぶ",
+              "level": "N4"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ご"
+            },
+            {
+              "surface": "褒美",
+              "reading": "ほうび",
+              "meaning": "reward; prize",
+              "baseForm": "褒美",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "あ",
+              "meaning": "Ah",
+              "baseForm": "あ",
+              "level": "N4"
+            },
+            {
+              "surface": "げ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "悪いおじいさんも同じように灰を集めて、お殿様の前でまきました。 しかし、花は咲かず、灰がお殿様の目に入ってしまいました。 悪いおじいさんは捕まって、牢屋（ろうや）に入れられました。 優しいおじいさんは、おばあさんと一緒にいつまでも幸せに暮らしました。",
-      "en": "The bad old man also gathered ashes in the same way and scattered them in front of the lord. However, flowers did not bloom, and the ashes entered the lord's eyes. The bad old man was caught and put in prison. The kind old man lived happily forever with the old woman."
+      "en": "The bad old man also gathered ashes in the same way and scattered them in front of the lord. However, flowers did not bloom, and the ashes entered the lord's eyes. The bad old man was caught and put in prison. The kind old man lived happily forever with the old woman.",
+      "sentences": [
+        {
+          "ja": "悪いおじいさんも同じように灰を集めて、お殿様の前でまきました。",
+          "literalEn": "bad old man [also] same よう [at/to] ash [obj] gather [and] feudal lord ['s / of] before [in/by] まき した",
+          "naturalEn": "The wicked old man also gathered ashes and scattered them before the lord.",
+          "tokens": [
+            {
+              "surface": "悪い",
+              "reading": "わるい",
+              "meaning": "bad",
+              "baseForm": "悪い",
+              "level": "N5"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "同じ",
+              "reading": "おなじ",
+              "meaning": "same",
+              "baseForm": "同じ",
+              "level": "N5"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "灰",
+              "reading": "はい",
+              "meaning": "ash",
+              "baseForm": "灰",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "集め",
+              "reading": "あつめ",
+              "meaning": "gather, congregate, flock",
+              "baseForm": "集",
+              "level": "N4"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "殿様",
+              "reading": "とのさま",
+              "meaning": "feudal lord",
+              "baseForm": "殿様",
+              "level": "N1"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "前",
+              "reading": "まえ",
+              "meaning": "before",
+              "baseForm": "前",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "まき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "しかし、花は咲かず、灰がお殿様の目に入ってしまいました。",
+          "literalEn": "however flower [topic] to bloom [?] ash [subj] feudal lord ['s / of] eye [at/to] to enter って しま いま した",
+          "naturalEn": "However, no flowers bloomed, and the ashes got into the prince’s eyes.",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "花",
+              "reading": "はな",
+              "meaning": "flower",
+              "baseForm": "花",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "咲",
+              "reading": "さ",
+              "meaning": "to bloom",
+              "baseForm": "咲く",
+              "level": "N5"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "ず"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "灰",
+              "reading": "はい",
+              "meaning": "ash",
+              "baseForm": "灰",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "殿様",
+              "reading": "とのさま",
+              "meaning": "feudal lord",
+              "baseForm": "殿様",
+              "level": "N1"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "目",
+              "reading": "め",
+              "meaning": "eye",
+              "baseForm": "目",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入",
+              "reading": "はい",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "悪いおじいさんは捕まって、牢屋（ろうや）に入れられました。",
+          "literalEn": "bad old man [topic] to take って prison [at/to] to enter した",
+          "naturalEn": "The wicked old man was arrested and put in jail.",
+          "tokens": [
+            {
+              "surface": "悪い",
+              "reading": "わるい",
+              "meaning": "bad",
+              "baseForm": "悪い",
+              "level": "N5"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "捕",
+              "reading": "と",
+              "meaning": "to take; to catch (fish); to capture",
+              "baseForm": "捕る",
+              "level": "N2"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "牢屋",
+              "reading": "ろうや",
+              "meaning": "prison; jail cell",
+              "baseForm": "牢屋",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入れ",
+              "reading": "はいれ",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "優しいおじいさんは、おばあさんと一緒にいつまでも幸せに暮らしました。",
+          "literalEn": "kind old man [topic] old woman [with/and] together [at/to] when [until] [also] happiness [at/to] living した",
+          "naturalEn": "The kind old man lived happily ever after with the old woman.",
+          "tokens": [
+            {
+              "surface": "優しい",
+              "reading": "やさしい",
+              "meaning": "kind",
+              "baseForm": "優しい",
+              "level": "N4"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "一緒",
+              "reading": "いっしょ",
+              "meaning": "together",
+              "baseForm": "一緒",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "いつ",
+              "meaning": "when",
+              "baseForm": "いつ",
+              "level": "N5"
+            },
+            {
+              "surface": "まで"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "幸せ",
+              "reading": "しあわせ",
+              "meaning": "happiness; good fortune; luck",
+              "baseForm": "幸せ",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "暮らし",
+              "reading": "くらし",
+              "meaning": "living; livelihood; subsistence",
+              "baseForm": "暮らし",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
@@ -38,7 +1578,8 @@
         "シロが逃げたから",
         "餅を食べたから"
       ],
-      "answerIndex": 0
+      "answerIndex": 0,
+      "explanation": "「お金が出なかったから」 is the correct answer according to the story."
     },
     {
       "question": "優しいおじいさんが枯れた木に灰をまくと、どうなりましたか？",
@@ -48,7 +1589,8 @@
         "美しい花が咲きました",
         "木が倒れました"
       ],
-      "answerIndex": 2
+      "answerIndex": 2,
+      "explanation": "「美しい花が咲きました」 is correct: 「優しいおじいさんがその灰（はい）をもらって、枯れた（かれた）木にまくと、美しい花が咲きました。」 (The kind old man took the ashes and scattered them on a withered tree, and beautiful flowers bloomed.)"
     },
     {
       "question": "悪いおじいさんがまいた灰はどうなりましたか？",
@@ -58,7 +1600,9 @@
         "美味しいご飯になりました",
         "お殿様の目に入りました"
       ],
-      "answerIndex": 3
+      "answerIndex": 3,
+      "explanation": "「お殿様の目に入りました」 is the correct answer according to the story."
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/withered-trees.json"
 }

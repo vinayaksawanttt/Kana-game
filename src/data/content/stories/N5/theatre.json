@@ -5,40 +5,546 @@
   "titleEn": "Watching a Movie at the Cinema",
   "level": "N5",
   "category": "Everyday Life",
-  "tags": ["movie", "weekend", "entertainment", "daily"],
+  "tags": [
+    "movie",
+    "weekend",
+    "entertainment",
+    "daily"
+  ],
   "paragraphs": [
     {
       "ja": "日曜日の午後、田中さんは電車に乗って町の映画館へ行きました。",
-      "en": "On Sunday afternoon, Mr. Tanaka took the train to the movie theatre in town."
+      "en": "On Sunday afternoon, Mr. Tanaka took the train to the movie theatre in town.",
+      "sentences": [
+        {
+          "ja": "日曜日の午後、田中さんは電車に乗って町の映画館へ行きました。",
+          "literalEn": "Sunday ['s / of] afternoon Tanaka [Mr/Ms] [topic] electric train [at/to] to get on って town ['s / of] cinema [toward] going した",
+          "naturalEn": "On Sunday afternoon, Mr. Tanaka took the train to the movie theater in town.",
+          "tokens": [
+            {
+              "surface": "日曜日",
+              "reading": "にちようび",
+              "meaning": "Sunday",
+              "baseForm": "日曜日",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "午後",
+              "reading": "ごご",
+              "meaning": "afternoon",
+              "baseForm": "午後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "電車",
+              "reading": "でんしゃ",
+              "meaning": "electric train",
+              "baseForm": "電車",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "乗",
+              "reading": "の",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "町",
+              "reading": "まち",
+              "meaning": "town; city",
+              "baseForm": "町",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "映画館",
+              "reading": "えいがかん",
+              "meaning": "cinema",
+              "baseForm": "映画館",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "映画館の前にはたくさんの人がいました。田中さんは千五百円で切符を買いました。",
-      "en": "There were many people in front of the theatre. Mr. Tanaka bought a ticket for 1,500 yen."
+      "en": "There were many people in front of the theatre. Mr. Tanaka bought a ticket for 1,500 yen.",
+      "sentences": [
+        {
+          "ja": "映画館の前にはたくさんの人がいました。",
+          "literalEn": "cinema ['s / of] before [at/to] [topic] many ['s / of] person [subj] いま した",
+          "naturalEn": "There were a lot of people in front of the movie theater.",
+          "tokens": [
+            {
+              "surface": "映画館",
+              "reading": "えいがかん",
+              "meaning": "cinema",
+              "baseForm": "映画館",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "前",
+              "reading": "まえ",
+              "meaning": "before",
+              "baseForm": "前",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "田中さんは千五百円で切符を買いました。",
+          "literalEn": "Tanaka [Mr/Ms] [topic] thousand five hundred circle [in/by] ticket [obj] to buy した",
+          "naturalEn": "Mr. Tanaka bought a ticket for 1,500 yen.",
+          "tokens": [
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "千",
+              "reading": "せん",
+              "meaning": "thousand",
+              "baseForm": "千",
+              "level": "N5"
+            },
+            {
+              "surface": "五百",
+              "reading": "ごひゃく",
+              "meaning": "five hundred (500)",
+              "baseForm": "五百",
+              "level": "N5"
+            },
+            {
+              "surface": "円",
+              "reading": "えん",
+              "meaning": "circle; money",
+              "baseForm": "円",
+              "level": "N3"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "切符",
+              "reading": "きっぷ",
+              "meaning": "ticket",
+              "baseForm": "切符",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "買い",
+              "reading": "かい",
+              "meaning": "to buy",
+              "baseForm": "買う",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "それから、売店で甘いジュースを買って、二時の映画を見ました。映画はとてもおもしろかったです。",
-      "en": "Then, he bought sweet juice at the shop and watched the two o'clock movie. The movie was very interesting."
+      "en": "Then, he bought sweet juice at the shop and watched the two o'clock movie. The movie was very interesting.",
+      "sentences": [
+        {
+          "ja": "それから、売店で甘いジュースを買って、二時の映画を見ました。",
+          "literalEn": "after that shop [in/by] sweet juice [obj] to buy って two o'clock ['s / of] movie [obj] to see した",
+          "naturalEn": "After that, I bought a sweet juice at the concession stand and watched the 2:00 movie.",
+          "tokens": [
+            {
+              "surface": "それから",
+              "meaning": "after that",
+              "baseForm": "それから",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "売店",
+              "reading": "ばいてん",
+              "meaning": "shop; stand",
+              "baseForm": "売店",
+              "level": "N2"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "甘い",
+              "reading": "あまい",
+              "meaning": "sweet",
+              "baseForm": "甘い",
+              "level": "N5"
+            },
+            {
+              "surface": "ジュース",
+              "meaning": "juice; soft drink; deuce",
+              "baseForm": "ジュース",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "買",
+              "reading": "か",
+              "meaning": "to buy",
+              "baseForm": "買う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "二時",
+              "reading": "にじ",
+              "meaning": "two o'clock",
+              "baseForm": "二時",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "映画",
+              "reading": "えいが",
+              "meaning": "movie",
+              "baseForm": "映画",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "映画はとてもおもしろかったです。",
+          "literalEn": "movie [topic] very おもし ろか [past] [is]",
+          "naturalEn": "The movie was really interesting.",
+          "tokens": [
+            {
+              "surface": "映画",
+              "reading": "えいが",
+              "meaning": "movie",
+              "baseForm": "映画",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "おもし"
+            },
+            {
+              "surface": "ろか"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "四時に映画館を出て、本屋へ寄ってから歩いて家に帰りました。",
-      "en": "He left the theatre at four o'clock, dropped by a bookstore, and then walked home."
+      "en": "He left the theatre at four o'clock, dropped by a bookstore, and then walked home.",
+      "sentences": [
+        {
+          "ja": "四時に映画館を出て、本屋へ寄ってから歩いて家に帰りました。",
+          "literalEn": "four time cinema [obj] to put out [and] bookstore [toward] to visit って [from] pawn [and] house [at/to] return した",
+          "naturalEn": "I left the movie theater at 4:00, stopped by a bookstore, and then walked home.",
+          "tokens": [
+            {
+              "surface": "四",
+              "reading": "し",
+              "meaning": "four",
+              "baseForm": "四",
+              "level": "N5"
+            },
+            {
+              "surface": "時に",
+              "reading": "ときに",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "映画館",
+              "reading": "えいがかん",
+              "meaning": "cinema",
+              "baseForm": "映画館",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "本屋",
+              "reading": "ほんや",
+              "meaning": "bookstore",
+              "baseForm": "本屋",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "寄",
+              "reading": "よ",
+              "meaning": "to visit",
+              "baseForm": "寄る",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "歩",
+              "reading": "ふ",
+              "meaning": "pawn (in chess or shogi)",
+              "baseForm": "歩",
+              "level": "N1"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "帰り",
+              "reading": "かえり",
+              "meaning": "return",
+              "baseForm": "帰り",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
     {
       "question": "田中さんはどうやって映画館へ行きましたか？",
-      "options": ["バスで", "電車で", "車で", "自転車で"],
-      "answerIndex": 1
+      "options": [
+        "バスで",
+        "電車で",
+        "車で",
+        "自転車で"
+      ],
+      "answerIndex": 1,
+      "explanation": "「電車で」 is correct: 「日曜日の午後、田中さんは電車に乗って町の映画館へ行きました。」 (On Sunday afternoon, Mr. Tanaka took the train to the movie theater in town.)"
     },
     {
       "question": "切符はいくらでしたか？",
-      "options": ["千円", "千二百円", "千五百円", "二千円"],
-      "answerIndex": 2
+      "options": [
+        "千円",
+        "千二百円",
+        "千五百円",
+        "二千円"
+      ],
+      "answerIndex": 2,
+      "explanation": "「千五百円」 is correct: 「田中さんは千五百円で切符を買いました。」 (Mr. Tanaka bought a ticket for 1,500 yen.)"
     },
     {
       "question": "映画館を出た後、田中さんはどこへ行きましたか？",
-      "options": ["喫茶店", "公園", "本屋", "駅"],
-      "answerIndex": 2
+      "options": [
+        "喫茶店",
+        "公園",
+        "本屋",
+        "駅"
+      ],
+      "answerIndex": 2,
+      "explanation": "「本屋」 is correct: 「四時に映画館を出て、本屋へ寄ってから歩いて家に帰りました。」 (I left the movie theater at 4:00, stopped by a bookstore, and then walked home.)"
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/theatre.json"
 }

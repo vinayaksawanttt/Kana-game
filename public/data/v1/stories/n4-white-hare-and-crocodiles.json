@@ -1,0 +1,1818 @@
+{
+  "id": "n4-white-hare-and-crocodiles",
+  "title": "因幡の白兎",
+  "titleRomaji": "Inaba no Shirato",
+  "titleEn": "The White Hare and the Crocodiles",
+  "level": "N4",
+  "category": "Fairy Tale",
+  "tags": [
+    "hare",
+    "crocodiles",
+    "trick",
+    "mythology"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、隠岐の島（おきのしま）に一羽の白い兎（うさぎ）が住んでいました。兎は海の向こうにある因幡（いなば）の国へ行きたいと思っていましたが、渡る方法がありませんでした。そこで、海にいるワニたちをだまそうと考えました。兎はワニたちに「数（かず）を比べよう。私が背中を踏んで数えるから、島から因幡まで並んでくれ」と言いました。",
+      "en": "Long, long ago, a white hare lived on Oki Island. The hare wanted to go to the land of Inaba across the sea, but there was no way to cross. So, he thought of tricking the crocodiles in the sea. The hare said to the crocodiles, \"Let's compare our numbers. Since I will step on your backs and count, line up from the island to Inaba.\"",
+      "sentences": [
+        {
+          "ja": "昔々、隠岐の島（おきのしま）に一羽の白い兎（うさぎ）が住んでいました。",
+          "literalEn": "olden days Oki Islands ['s / of] island [at/to] one feather ['s / of] white rabbit [subj] dwelling んで いま した",
+          "naturalEn": "Once upon a time, a white rabbit lived on the island of Oki.",
+          "tokens": [
+            {
+              "surface": "昔",
+              "reading": "むかし",
+              "meaning": "olden days; former",
+              "baseForm": "昔",
+              "level": "N4"
+            },
+            {
+              "surface": "々"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "隠岐",
+              "reading": "おき",
+              "meaning": "Oki Islands",
+              "baseForm": "隠岐",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "島",
+              "reading": "しま",
+              "meaning": "island",
+              "baseForm": "島",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "一",
+              "reading": "いち",
+              "meaning": "one",
+              "baseForm": "一",
+              "level": "N5"
+            },
+            {
+              "surface": "羽",
+              "reading": "はね",
+              "meaning": "feather; plume; down",
+              "baseForm": "羽",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "白い",
+              "reading": "しろい",
+              "meaning": "white",
+              "baseForm": "白い",
+              "level": "N5"
+            },
+            {
+              "surface": "兎",
+              "reading": "うさぎ",
+              "meaning": "rabbit; hare; cony",
+              "baseForm": "兎",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "住",
+              "reading": "じゅう",
+              "meaning": "dwelling; living",
+              "baseForm": "住",
+              "level": "N1"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "兎は海の向こうにある因幡（いなば）の国へ行きたいと思っていましたが、渡る方法がありませんでした。",
+          "literalEn": "rabbit [topic] sea ['s / of] over there [at/to] to be Inaba Province ['s / of] country [toward] going [want to] [with/and] to think って いま した [subj] to go across method [subj] ありま せん [in/by] した",
+          "naturalEn": "The rabbit wanted to go to the land of Inaba across the sea, but had no way to cross.",
+          "tokens": [
+            {
+              "surface": "兎",
+              "reading": "うさぎ",
+              "meaning": "rabbit; hare; cony",
+              "baseForm": "兎",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "向こう",
+              "reading": "むこう",
+              "meaning": "over there",
+              "baseForm": "向こう",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "因幡",
+              "reading": "いなば",
+              "meaning": "Inaba Province",
+              "baseForm": "因幡",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "国",
+              "reading": "くに",
+              "meaning": "country",
+              "baseForm": "国",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "たい"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "思",
+              "reading": "おも",
+              "meaning": "to think; to feel",
+              "baseForm": "思う",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "渡る",
+              "reading": "わたる",
+              "meaning": "to go across",
+              "baseForm": "渡る",
+              "level": "N5"
+            },
+            {
+              "surface": "方法",
+              "reading": "ほうほう",
+              "meaning": "method; manner; way",
+              "baseForm": "方法",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "そこで、海にいるワニたちをだまそうと考えました。",
+          "literalEn": "so sea [at/to] to be ワニ たち [obj] [is] really [with/and] thinking した",
+          "naturalEn": "So, it decided to trick the crocodiles living in the sea.",
+          "tokens": [
+            {
+              "surface": "そこで",
+              "meaning": "so (conj); accordingly; now",
+              "baseForm": "そこで",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "ワニ"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "そう",
+              "meaning": "really",
+              "baseForm": "そう",
+              "level": "N4"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "考え",
+              "reading": "かんがえ",
+              "meaning": "thinking; thought; ideas",
+              "baseForm": "考え",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "兎はワニたちに「数（かず）を比べよう。",
+          "literalEn": "rabbit [topic] ワニ たち [at/to] number [obj] compare よう",
+          "naturalEn": "The rabbit said to the crocodiles, “Let’s compare numbers.",
+          "tokens": [
+            {
+              "surface": "兎",
+              "reading": "うさぎ",
+              "meaning": "rabbit; hare; cony",
+              "baseForm": "兎",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "ワニ"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "数",
+              "reading": "かず",
+              "meaning": "number; figure",
+              "baseForm": "数",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "比べ",
+              "reading": "くらべ",
+              "meaning": "compare, Philippines, race",
+              "baseForm": "比",
+              "level": "N2"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "私が背中を踏んで数えるから、島から因幡まで並んでくれ」と言いました。",
+          "literalEn": "I [subj] back of the body [obj] to step on んで to count [from] island [from] Inaba Province [until] to line up んで [with/and] to say いま した",
+          "naturalEn": "“Line up from the island all the way to Inaba,” it said. “I’ll step on your backs to count them.”",
+          "tokens": [
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "背中",
+              "reading": "せなか",
+              "meaning": "back of the body",
+              "baseForm": "背中",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "踏",
+              "reading": "ふ",
+              "meaning": "to step on",
+              "baseForm": "踏む",
+              "level": "N4"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "数える",
+              "reading": "かぞえる",
+              "meaning": "to count",
+              "baseForm": "数える",
+              "level": "N3"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "島",
+              "reading": "しま",
+              "meaning": "island",
+              "baseForm": "島",
+              "level": "N4"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "因幡",
+              "reading": "いなば",
+              "meaning": "Inaba Province",
+              "baseForm": "因幡",
+              "level": "N4"
+            },
+            {
+              "surface": "まで"
+            },
+            {
+              "surface": "並",
+              "reading": "なら",
+              "meaning": "to line up; to stand in a line",
+              "baseForm": "並ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "ワニたちは何も知らずに並び、兎はその背中をピョンピョンと跳びながら数を数えて渡っていきました。しかし、最後のワニの所へ着いた時、兎は嬉しさのあまり「騙されたな！」と言ってしまいました。怒ったワニたちは兎の毛を全部むしり取り、浜辺に放置しました。兎は全身が痛くて、泣いていました。",
+      "en": "The crocodiles lined up without knowing anything, and the hare crossed over while jumping and counting on their backs. However, when he reached the last crocodile, the hare, out of pure joy, said, \"You've been tricked!\" The angry crocodiles plucked all of the hare's fur off and left him stranded on the beach. The hare was in pain all over his body and was crying.",
+      "sentences": [
+        {
+          "ja": "ワニたちは何も知らずに並び、兎はその背中をピョンピョンと跳びながら数を数えて渡っていきました。",
+          "literalEn": "ワニ たち [topic] what [also] to know [at/to] to line up rabbit [topic] that back of the body [obj] ピョンピョン [with/and] to jump びな [subj] number [obj] number えて to hand over って いき した",
+          "naturalEn": "The alligators lined up, unaware of what was happening, and the rabbit hopped from one back to the next, counting as he made his way across.",
+          "tokens": [
+            {
+              "surface": "ワニ"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "何",
+              "reading": "なん",
+              "meaning": "what",
+              "baseForm": "何",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "知らず",
+              "reading": "しらず",
+              "meaning": "to know",
+              "baseForm": "知る",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "並び",
+              "reading": "ならび",
+              "meaning": "to line up; to stand in a line",
+              "baseForm": "並ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "兎",
+              "reading": "うさぎ",
+              "meaning": "rabbit; hare; cony",
+              "baseForm": "兎",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "背中",
+              "reading": "せなか",
+              "meaning": "back of the body",
+              "baseForm": "背中",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "ピョンピョン"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "跳",
+              "reading": "と",
+              "meaning": "to jump; to fly; to leap",
+              "baseForm": "跳ぶ",
+              "level": "N2"
+            },
+            {
+              "surface": "びな"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "数",
+              "reading": "かず",
+              "meaning": "number; figure",
+              "baseForm": "数",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "数",
+              "reading": "かず",
+              "meaning": "number; figure",
+              "baseForm": "数",
+              "level": "N3"
+            },
+            {
+              "surface": "えて"
+            },
+            {
+              "surface": "渡",
+              "reading": "わた",
+              "meaning": "to hand over",
+              "baseForm": "渡す",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "しかし、最後のワニの所へ着いた時、兎は嬉しさのあまり「騙されたな！",
+          "literalEn": "however last ['s / of] ワニ ['s / of] place [toward] counter for suits of clothing [past] time rabbit [topic] glad ['s / of] not very to trick [past]",
+          "naturalEn": "However, when he reached the last crocodile, the rabbit, overcome with joy, blurted out, “I’ve been tricked!”",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "最後",
+              "reading": "さいご",
+              "meaning": "last; end",
+              "baseForm": "最後",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ワニ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "所",
+              "reading": "ところ",
+              "meaning": "place",
+              "baseForm": "所",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "着い",
+              "reading": "ちゃくい",
+              "meaning": "counter for suits of clothing; arriving at ..",
+              "baseForm": "着",
+              "level": "N1"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "時",
+              "reading": "とき",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "兎",
+              "reading": "うさぎ",
+              "meaning": "rabbit; hare; cony",
+              "baseForm": "兎",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "嬉",
+              "reading": "うれ",
+              "meaning": "glad, pleased, rejoice",
+              "baseForm": "嬉",
+              "level": "N1"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "あまり",
+              "meaning": "not very",
+              "baseForm": "あまり",
+              "level": "N5"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "騙",
+              "reading": "だま",
+              "meaning": "to trick; to deceive",
+              "baseForm": "騙す",
+              "level": "N3"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "！"
+            }
+          ]
+        },
+        {
+          "ja": "」と言ってしまいました。",
+          "literalEn": "[with/and] to say って しま いま した",
+          "naturalEn": "\" he blurted out.",
+          "tokens": [
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "怒ったワニたちは兎の毛を全部むしり取り、浜辺に放置しました。",
+          "literalEn": "to get angry [past] ワニ たち [topic] rabbit [obj] all むし to take something beach [at/to] leave as is しま した",
+          "naturalEn": "The angry crocodiles plucked out all of the rabbit’s fur and left him on the beach.",
+          "tokens": [
+            {
+              "surface": "怒",
+              "reading": "おこ",
+              "meaning": "to get angry; to be angry",
+              "baseForm": "怒る",
+              "level": "N4"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "ワニ"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "兎の毛",
+              "reading": "うさぎの毛",
+              "meaning": "rabbit; hare; cony",
+              "baseForm": "兎",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "全部",
+              "reading": "ぜんぶ",
+              "meaning": "all",
+              "baseForm": "全部",
+              "level": "N5"
+            },
+            {
+              "surface": "むし"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "取り",
+              "reading": "とり",
+              "meaning": "to take something",
+              "baseForm": "取る",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "浜辺",
+              "reading": "はまべ",
+              "meaning": "beach; foreshore",
+              "baseForm": "浜辺",
+              "level": "N1"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "放置",
+              "reading": "ほうち",
+              "meaning": "leave as is; leave to chance; leave alone",
+              "baseForm": "放置",
+              "level": "N1"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "兎は全身が痛くて、泣いていました。",
+          "literalEn": "rabbit [topic] the whole body [subj] painful [and] to weep てい した",
+          "naturalEn": "The rabbit was in pain all over and was crying.",
+          "tokens": [
+            {
+              "surface": "兎",
+              "reading": "うさぎ",
+              "meaning": "rabbit; hare; cony",
+              "baseForm": "兎",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "全身",
+              "reading": "ぜんしん",
+              "meaning": "the whole body; full-length (portrait)",
+              "baseForm": "全身",
+              "level": "N2"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "痛",
+              "reading": "いた",
+              "meaning": "painful",
+              "baseForm": "痛い",
+              "level": "N5"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "泣",
+              "reading": "な",
+              "meaning": "to weep",
+              "baseForm": "泣く",
+              "level": "N4"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "そこへ、大国主命（おおくにぬしのみこと）という心優しい神様が通りかかりました。神様は泣いている兎を見て、「どうしたのか」と優しく尋ねました。兎が事情を話すと、神様は「あの池に行って真水で体を洗い、その辺りに生えているガマの花粉の上に転がりなさい」と教えてくれました。",
+      "en": "A kind-hearted god named Okuninushi-no-Mikoto happened to pass by. The god saw the crying hare and gently asked, \"What's the matter?\" When the hare explained the circumstances, the god instructed, \"Go to that pond, wash your body with fresh water, and roll over on the pollen of the bulrush (gama) flowers growing around there.\"",
+      "sentences": [
+        {
+          "ja": "そこへ、大国主命（おおくにぬしのみこと）という心優しい神様が通りかかりました。",
+          "literalEn": "that place [toward] Okuni deity という core kind god [subj] in accordance with ~ かかり した",
+          "naturalEn": "Just then, a kind-hearted deity named Ōkuninushi-no-Mikoto happened to be passing by.",
+          "tokens": [
+            {
+              "surface": "そこ",
+              "meaning": "that place",
+              "baseForm": "そこ",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "大国",
+              "reading": "おおくに",
+              "meaning": "Okuni / great nation",
+              "baseForm": "大国",
+              "level": "N4"
+            },
+            {
+              "surface": "主命",
+              "reading": "ぬしのみこと",
+              "meaning": "deity / lord",
+              "baseForm": "主命",
+              "level": "N4"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "心",
+              "reading": "こころ",
+              "meaning": "core; heart",
+              "baseForm": "心",
+              "level": "N4"
+            },
+            {
+              "surface": "優しい",
+              "reading": "やさしい",
+              "meaning": "kind",
+              "baseForm": "優しい",
+              "level": "N4"
+            },
+            {
+              "surface": "神様",
+              "reading": "かみさま",
+              "meaning": "god",
+              "baseForm": "神様",
+              "level": "N2"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "通り",
+              "reading": "とおり",
+              "meaning": "in accordance with ~; following ~; ~ Street",
+              "baseForm": "通り",
+              "level": "N3"
+            },
+            {
+              "surface": "かかり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "神様は泣いている兎を見て、「どうしたのか」と優しく尋ねました。",
+          "literalEn": "god [topic] to weep [and] to be rabbit [obj] to see [and] how した ['s / of] [?] [with/and] gentle しく inquire [right?] した",
+          "naturalEn": "Seeing the crying rabbit, the deity gently asked, “What’s the matter?”",
+          "tokens": [
+            {
+              "surface": "神様",
+              "reading": "かみさま",
+              "meaning": "god",
+              "baseForm": "神様",
+              "level": "N2"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "泣",
+              "reading": "な",
+              "meaning": "to weep",
+              "baseForm": "泣く",
+              "level": "N4"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "兎",
+              "reading": "うさぎ",
+              "meaning": "rabbit; hare; cony",
+              "baseForm": "兎",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "どう",
+              "meaning": "how; in what way",
+              "baseForm": "どう",
+              "level": "N5"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "優",
+              "reading": "やさ",
+              "meaning": "gentle; affectionate",
+              "baseForm": "優",
+              "level": "N1"
+            },
+            {
+              "surface": "しく"
+            },
+            {
+              "surface": "尋",
+              "reading": "たず",
+              "meaning": "inquire, fathom, look for",
+              "baseForm": "尋",
+              "level": "N1"
+            },
+            {
+              "surface": "ね",
+              "meaning": "value; price; cost",
+              "baseForm": "ね",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "兎が事情を話すと、神様は「あの池に行って真水で体を洗い、その辺りに生えているガマの花粉の上に転がりなさい」と教えてくれました。",
+          "literalEn": "rabbit [subj] circumstances [obj] to speak [with/and] god [topic] that over there pond [at/to] line って fresh water [in/by] body [obj] to wash that vicinity [at/to] draft えて to be ガマ ['s / of] pollen ['s / of] on top of [at/to] to fall down がり さい [with/and] teachings てく した",
+          "naturalEn": "When the rabbit explained the situation, the deity told him, “Go to that pond, wash your body with fresh water, and roll around in the pollen of the cattails growing nearby.”",
+          "tokens": [
+            {
+              "surface": "兎",
+              "reading": "うさぎ",
+              "meaning": "rabbit; hare; cony",
+              "baseForm": "兎",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "事情",
+              "reading": "じじょう",
+              "meaning": "circumstances; consideration; conditions",
+              "baseForm": "事情",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "話す",
+              "reading": "はなす",
+              "meaning": "to speak",
+              "baseForm": "話す",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "神様",
+              "reading": "かみさま",
+              "meaning": "god",
+              "baseForm": "神様",
+              "level": "N2"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "あの",
+              "meaning": "that over there",
+              "baseForm": "あの",
+              "level": "N5"
+            },
+            {
+              "surface": "池",
+              "reading": "いけ",
+              "meaning": "pond",
+              "baseForm": "池",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "行",
+              "reading": "ぎょう",
+              "meaning": "line; row; verse",
+              "baseForm": "行",
+              "level": "N1"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "真水",
+              "reading": "まみず",
+              "meaning": "fresh water",
+              "baseForm": "真水",
+              "level": "N3"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "体",
+              "reading": "からだ",
+              "meaning": "body",
+              "baseForm": "体",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "洗い",
+              "reading": "あらい",
+              "meaning": "to wash",
+              "baseForm": "洗う",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "辺り",
+              "reading": "あたり",
+              "meaning": "vicinity; nearby",
+              "baseForm": "辺り",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "生",
+              "reading": "なま",
+              "meaning": "draft (beer); raw; unprocessed",
+              "baseForm": "生",
+              "level": "N3"
+            },
+            {
+              "surface": "えて"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "ガマ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "花粉",
+              "reading": "かふん",
+              "meaning": "pollen",
+              "baseForm": "花粉",
+              "level": "N1"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "上",
+              "reading": "うえ",
+              "meaning": "on top of",
+              "baseForm": "上",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "転",
+              "reading": "ころ",
+              "meaning": "to fall down; to fall over",
+              "baseForm": "転ぶ",
+              "level": "N3"
+            },
+            {
+              "surface": "がり"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "教え",
+              "reading": "おしえ",
+              "meaning": "teachings; precept; lesson",
+              "baseForm": "教え",
+              "level": "N1"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "兎が言われた通りにすると、驚いたことに傷が治り、柔らかい白い毛が元通りに生えてきました。元気になった兎は、助けてくれたお礼に「優しいあなたこそが、あの美しいお姫様と結婚するでしょう」と予言しました。その予言の通り、神様は美しいお姫様と結ばれ、幸せに暮らしました。",
+      "en": "When the hare did as he was told, to his surprise, his wounds healed and his soft white fur grew back just as before. Having recovered, the hare prophesied as thanks to the one who saved him, \"You, with your kindness, are the one who will marry that beautiful princess.\" Just as the prophecy foretold, the god married the beautiful princess and lived happily.",
+      "sentences": [
+        {
+          "ja": "兎が言われた通りにすると、驚いたことに傷が治り、柔らかい白い毛が元通りに生えてきました。",
+          "literalEn": "rabbit [subj] to say われ [past] in accordance with ~ [at/to] then to be surprised [past] ことに wound [subj] to be cured soft white hair or fur [subj] as before [at/to] draft えて した",
+          "naturalEn": "When the rabbit did as he was told, to his surprise, the wound healed, and soft white fur grew back just as it had before.",
+          "tokens": [
+            {
+              "surface": "兎",
+              "reading": "うさぎ",
+              "meaning": "rabbit; hare; cony",
+              "baseForm": "兎",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "われ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "通り",
+              "reading": "とおり",
+              "meaning": "in accordance with ~; following ~; ~ Street",
+              "baseForm": "通り",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "すると",
+              "meaning": "then",
+              "baseForm": "すると",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "驚",
+              "reading": "おどろ",
+              "meaning": "to be surprised",
+              "baseForm": "驚く",
+              "level": "N4"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "傷",
+              "reading": "きず",
+              "meaning": "wound; injury; hurt",
+              "baseForm": "傷",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "治",
+              "reading": "なお",
+              "meaning": "to be cured; to heal",
+              "baseForm": "治る",
+              "level": "N4"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "柔らかい",
+              "reading": "やわらかい",
+              "meaning": "soft",
+              "baseForm": "柔らかい",
+              "level": "N4"
+            },
+            {
+              "surface": "白い",
+              "reading": "しろい",
+              "meaning": "white",
+              "baseForm": "白い",
+              "level": "N5"
+            },
+            {
+              "surface": "毛",
+              "reading": "け",
+              "meaning": "hair or fur",
+              "baseForm": "毛",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "元通り",
+              "reading": "もとどおり",
+              "meaning": "as before; back to normal",
+              "baseForm": "元通り",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "生",
+              "reading": "なま",
+              "meaning": "draft (beer); raw; unprocessed",
+              "baseForm": "生",
+              "level": "N3"
+            },
+            {
+              "surface": "えて"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "元気になった兎は、助けてくれたお礼に「優しいあなたこそが、あの美しいお姫様と結婚するでしょう」と予言しました。",
+          "literalEn": "health [at/to] [past] rabbit [topic] assistance てく [past] expression of gratitude [at/to] kind you こそ [subj] that over there beautiful princess [with/and] marriage to do [in/by] しょう [with/and] prediction しま した",
+          "naturalEn": "Once the rabbit had recovered, it prophesied, “You, with your kind heart, will marry that beautiful princess,” as a token of gratitude for being saved.",
+          "tokens": [
+            {
+              "surface": "元気",
+              "reading": "げんき",
+              "meaning": "health; vitality",
+              "baseForm": "元気",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "兎",
+              "reading": "うさぎ",
+              "meaning": "rabbit; hare; cony",
+              "baseForm": "兎",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "助け",
+              "reading": "たすけ",
+              "meaning": "assistance",
+              "baseForm": "助け",
+              "level": "N1"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "お礼",
+              "reading": "おれい",
+              "meaning": "expression of gratitude",
+              "baseForm": "お礼",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "優しい",
+              "reading": "やさしい",
+              "meaning": "kind",
+              "baseForm": "優しい",
+              "level": "N4"
+            },
+            {
+              "surface": "あなた",
+              "meaning": "you",
+              "baseForm": "あなた",
+              "level": "N5"
+            },
+            {
+              "surface": "こそ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "あの",
+              "meaning": "that over there",
+              "baseForm": "あの",
+              "level": "N5"
+            },
+            {
+              "surface": "美しい",
+              "reading": "うつくしい",
+              "meaning": "beautiful",
+              "baseForm": "美しい",
+              "level": "N4"
+            },
+            {
+              "surface": "お姫様",
+              "reading": "おひめさま",
+              "meaning": "princess",
+              "baseForm": "お姫様",
+              "level": "N4"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "結婚",
+              "reading": "けっこん",
+              "meaning": "marriage",
+              "baseForm": "結婚",
+              "level": "N5"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "しょう"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "予言",
+              "reading": "かねごと",
+              "meaning": "prediction; promise; prognostication",
+              "baseForm": "予言",
+              "level": "N1"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "その予言の通り、神様は美しいお姫様と結ばれ、幸せに暮らしました。",
+          "literalEn": "that prediction just as god [topic] beautiful princess [with/and] to tie happiness [at/to] living した",
+          "naturalEn": "Just as the prophecy foretold, the god married the beautiful princess, and they lived happily ever after.",
+          "tokens": [
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "予言",
+              "reading": "かねごと",
+              "meaning": "prediction; promise; prognostication",
+              "baseForm": "予言",
+              "level": "N1"
+            },
+            {
+              "surface": "の通り",
+              "reading": "のとおり",
+              "meaning": "just as; in accordance with",
+              "baseForm": "の通り",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "神様",
+              "reading": "かみさま",
+              "meaning": "god",
+              "baseForm": "神様",
+              "level": "N2"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "美しい",
+              "reading": "うつくしい",
+              "meaning": "beautiful",
+              "baseForm": "美しい",
+              "level": "N4"
+            },
+            {
+              "surface": "お姫様",
+              "reading": "おひめさま",
+              "meaning": "princess",
+              "baseForm": "お姫様",
+              "level": "N4"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "結",
+              "reading": "むす",
+              "meaning": "to tie; to bind; to link",
+              "baseForm": "結ぶ",
+              "level": "N3"
+            },
+            {
+              "surface": "ば"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "幸せ",
+              "reading": "しあわせ",
+              "meaning": "happiness; good fortune; luck",
+              "baseForm": "幸せ",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "暮らし",
+              "reading": "くらし",
+              "meaning": "living; livelihood; subsistence",
+              "baseForm": "暮らし",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "兎はどうやって海の向こうへ渡りましたか？",
+      "options": [
+        "大きな船に乗りました",
+        "ワニの背中を踏んで渡りました",
+        "おじいさんの船に乗りました",
+        "自力で泳ぎました"
+      ],
+      "answerIndex": 1,
+      "explanation": "「ワニの背中を踏んで渡りました」 is correct: 「兎は海の向こうにある因幡（いなば）の国へ行きたいと思っていましたが、渡る方法がありませんでした。」 (The rabbit wanted to go to the land of Inaba across the sea, but had no way to cross.)"
+    },
+    {
+      "question": "ワニに毛をむしり取られた兎に、優しい神様は何をするように教えましたか？",
+      "options": [
+        "海の水で体を洗うこと",
+        "薬を飲んで眠ること",
+        "真水で体を洗い、ガマの花粉の上に転がること",
+        "美味しいおにぎりを食べること"
+      ],
+      "answerIndex": 2,
+      "explanation": "「真水で体を洗い、ガマの花粉の上に転がること」 is the correct answer according to the story."
+    },
+    {
+      "question": "話を助けてもらった兎は、神様に何と言いましたか？",
+      "options": [
+        "美しいお姫様と結婚するだろう",
+        "もう二度と嘘をつかない",
+        "もっと魚を捕まえてほしい",
+        "一緒に因幡の国へ行こう"
+      ],
+      "answerIndex": 0,
+      "explanation": "「美しいお姫様と結婚するだろう」 is the correct answer according to the story."
+    }
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/white-hare-and-croc.json"
+}

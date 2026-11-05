@@ -23,6 +23,7 @@ import { getRadicalsForKanji, type RadicalRecord } from "@/data/radicals";
 import { getKanjiStrokeData, type KanjiStrokeData } from "@/data/strokes";
 import { addKanjiToSrs } from "@/lib/srs/service";
 import { StrokePracticeCanvas } from "@/components/kanji/StrokePracticeCanvas";
+import { getHomophoneGroupForKanji } from "@/engine/homophones";
 
 interface LoadedPlaygroundBundle {
   kanji: string;
@@ -332,6 +333,54 @@ function KanjiPlaygroundContent() {
                       )}
                     </div>
                   </div>
+
+                  {/* Homophone Nuance Card */}
+                  {(() => {
+                    const homophoneGroup = getHomophoneGroupForKanji(currentRecord.c);
+                    if (!homophoneGroup) return null;
+                    return (
+                      <div className="mt-5 rounded-xl border border-[var(--primary)]/30 bg-[var(--paper-tint)]/70 p-4">
+                        <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--primary)]/20 pb-2">
+                          <span className="text-[11px] font-bold tracking-wider text-[var(--primary)] uppercase">
+                            Homophone Nuance · {homophoneGroup.reading}
+                          </span>
+                          <span className="text-xs font-semibold text-[var(--muted)]">
+                            {homophoneGroup.title}
+                          </span>
+                        </div>
+                        <div className="mt-3 space-y-2">
+                          {homophoneGroup.members.map((member) => {
+                            const isCurrent = member.kanji === currentRecord.c;
+                            return (
+                              <div
+                                key={member.kanji}
+                                className={`rounded-lg p-2.5 text-xs transition ${
+                                  isCurrent
+                                    ? "border border-[var(--primary)]/40 bg-[var(--surface)] shadow-sm"
+                                    : "bg-transparent opacity-85 hover:bg-[var(--surface)]/50"
+                                }`}
+                              >
+                                <div className="flex items-baseline gap-2">
+                                  <Link
+                                    href={`/games/kanji/playground/${encodeURIComponent(member.kanji)}`}
+                                    className="font-japanese text-sm font-bold text-[var(--primary)] hover:underline"
+                                  >
+                                    {member.word} ({member.kanji})
+                                  </Link>
+                                  <span className="text-[11px] text-[var(--muted)]">
+                                    {member.nuance}
+                                  </span>
+                                </div>
+                                <p className="mt-1 font-japanese text-[11px] text-[var(--muted)]">
+                                  {member.example}
+                                </p>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    );
+                  })()}
 
                   {/* Composite Vocabulary Words */}
                   <div className="mt-5 border-t border-[var(--line)] pt-4">

@@ -5,23 +5,908 @@
   "titleEn": "Departure at the Airport",
   "level": "N4",
   "category": "Travel",
-  "tags": ["airport", "airplane", "travel", "work"],
+  "tags": [
+    "airport",
+    "airplane",
+    "travel",
+    "work"
+  ],
   "paragraphs": [
     {
       "ja": "先週の土曜日、佐藤さんは初めて一人で空港へ行きました。来週から東京の会社で働く予定ですから、飛行機に乗ることにしたのです。",
-      "en": "Last Saturday, Mr. Sato went to the airport alone for the first time. Because he is scheduled to work at a company in Tokyo starting next week, he decided to take an airplane."
+      "en": "Last Saturday, Mr. Sato went to the airport alone for the first time. Because he is scheduled to work at a company in Tokyo starting next week, he decided to take an airplane.",
+      "sentences": [
+        {
+          "ja": "先週の土曜日、佐藤さんは初めて一人で空港へ行きました。",
+          "literalEn": "last week ['s / of] Saturday Sato [Mr/Ms] [topic] for the first time one person [in/by] airport [toward] going した",
+          "naturalEn": "Last Saturday, Mr. Sato went to the airport by himself for the first time.",
+          "tokens": [
+            {
+              "surface": "先週",
+              "reading": "せんしゅう",
+              "meaning": "last week",
+              "baseForm": "先週",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "土曜日",
+              "reading": "どようび",
+              "meaning": "Saturday",
+              "baseForm": "土曜日",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "佐藤",
+              "reading": "さとう",
+              "meaning": "Sato (surname)",
+              "baseForm": "佐藤",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "初めて",
+              "reading": "はじめて",
+              "meaning": "for the first time",
+              "baseForm": "初めて",
+              "level": "N5"
+            },
+            {
+              "surface": "一人",
+              "reading": "ひとり",
+              "meaning": "one person; alone",
+              "baseForm": "一人",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "空港",
+              "reading": "くうこう",
+              "meaning": "airport",
+              "baseForm": "空港",
+              "level": "N4"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "来週から東京の会社で働く予定ですから、飛行機に乗ることにしたのです。",
+          "literalEn": "next week [from] Tokyo ['s / of] company [in/by] to work arrangement therefore aeroplane [at/to] to get on ことに した ['s / of] [is]",
+          "naturalEn": "Since he’s scheduled to start working at a company in Tokyo next week, he decided to take a flight.",
+          "tokens": [
+            {
+              "surface": "来週",
+              "reading": "らいしゅう",
+              "meaning": "next week",
+              "baseForm": "来週",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "東京",
+              "reading": "とうきょう",
+              "meaning": "Tokyo",
+              "baseForm": "東京",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "会社",
+              "reading": "かいしゃ",
+              "meaning": "company",
+              "baseForm": "会社",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "働く",
+              "reading": "はたらく",
+              "meaning": "to work",
+              "baseForm": "働く",
+              "level": "N5"
+            },
+            {
+              "surface": "予定",
+              "reading": "よてい",
+              "meaning": "arrangement",
+              "baseForm": "予定",
+              "level": "N4"
+            },
+            {
+              "surface": "ですから",
+              "meaning": "therefore",
+              "baseForm": "ですから",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "飛行機",
+              "reading": "ひこうき",
+              "meaning": "aeroplane",
+              "baseForm": "飛行機",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "乗る",
+              "reading": "のる",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "空港に着くと、人が大勢いてとても混んでいました。まず、航空会社のカウンターで重いスーツケースを預けて、搭乗券をもらいました。",
-      "en": "When he arrived at the airport, there were a lot of people and it was very crowded. First, he checked in his heavy suitcase at the airline counter and received his boarding pass."
+      "en": "When he arrived at the airport, there were a lot of people and it was very crowded. First, he checked in his heavy suitcase at the airline counter and received his boarding pass.",
+      "sentences": [
+        {
+          "ja": "空港に着くと、人が大勢いてとても混んでいました。",
+          "literalEn": "airport [at/to] to arrive at [with/and] person [subj] large force [and] very to be crowded んで いま した",
+          "naturalEn": "When I arrived at the airport, there were a lot of people and it was very crowded.",
+          "tokens": [
+            {
+              "surface": "空港",
+              "reading": "くうこう",
+              "meaning": "airport",
+              "baseForm": "空港",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "着く",
+              "reading": "つく",
+              "meaning": "to arrive at",
+              "baseForm": "着く",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "大",
+              "reading": "だい",
+              "meaning": "large; big; great",
+              "baseForm": "大",
+              "level": "N3"
+            },
+            {
+              "surface": "勢い",
+              "reading": "いきおい",
+              "meaning": "force; vigor; energy",
+              "baseForm": "勢い",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "混",
+              "reading": "こ",
+              "meaning": "to be crowded",
+              "baseForm": "混む",
+              "level": "N1"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "まず、航空会社のカウンターで重いスーツケースを預けて、搭乗券をもらいました。",
+          "literalEn": "first of all aviation company ['s / of] カウンター [in/by] heavy suitcase [obj] deposit [and] boarding (a plane ticket [obj] [also] いま した",
+          "naturalEn": "First, I checked my heavy suitcase at the airline counter and received my boarding pass.",
+          "tokens": [
+            {
+              "surface": "まず",
+              "meaning": "first of all",
+              "baseForm": "まず",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "航空",
+              "reading": "こうくう",
+              "meaning": "aviation; flying",
+              "baseForm": "航空",
+              "level": "N3"
+            },
+            {
+              "surface": "会社",
+              "reading": "かいしゃ",
+              "meaning": "company",
+              "baseForm": "会社",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "カウンター"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "重い",
+              "reading": "おもい",
+              "meaning": "heavy",
+              "baseForm": "重い",
+              "level": "N5"
+            },
+            {
+              "surface": "スーツケース",
+              "meaning": "suitcase",
+              "baseForm": "スーツケース",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "預け",
+              "reading": "あずけ",
+              "meaning": "deposit, custody, entrust to",
+              "baseForm": "預",
+              "level": "N2"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "搭乗",
+              "reading": "とうじょう",
+              "meaning": "boarding (a plane/ship)",
+              "baseForm": "搭乗",
+              "level": "N3"
+            },
+            {
+              "surface": "券",
+              "reading": "けん",
+              "meaning": "ticket; coupon; bond",
+              "baseForm": "券",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "それから、保安検査場を通って出発ロビーへ向かいました。売店で家族へのお土産を買った後で、カフェで冷たいコーヒーを飲みながら本を読みました。",
-      "en": "After that, he passed through the security checkpoint and headed to the departure lobby. After buying souvenirs for his family at a shop, he read a book while drinking cold coffee at a cafe."
+      "en": "After that, he passed through the security checkpoint and headed to the departure lobby. After buying souvenirs for his family at a shop, he read a book while drinking cold coffee at a cafe.",
+      "sentences": [
+        {
+          "ja": "それから、保安検査場を通って出発ロビーへ向かいました。",
+          "literalEn": "after that security inspection (e.g. customs place [obj] connoisseur って to depart lobby [toward] facing した",
+          "naturalEn": "Then, I went through security and headed to the departure lounge.",
+          "tokens": [
+            {
+              "surface": "それから",
+              "meaning": "after that",
+              "baseForm": "それから",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "保安",
+              "reading": "ほあん",
+              "meaning": "security; safety preservation",
+              "baseForm": "保安",
+              "level": "N3"
+            },
+            {
+              "surface": "検査",
+              "reading": "けんさ",
+              "meaning": "inspection (e.g. customs, factory); examination",
+              "baseForm": "検査",
+              "level": "N3"
+            },
+            {
+              "surface": "場",
+              "reading": "ば",
+              "meaning": "place; field (physics)",
+              "baseForm": "場",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "通",
+              "reading": "つう",
+              "meaning": "connoisseur; counter for letters",
+              "baseForm": "通",
+              "level": "N1"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "出発",
+              "reading": "しゅっぱつ",
+              "meaning": "to depart",
+              "baseForm": "出発",
+              "level": "N4"
+            },
+            {
+              "surface": "ロビー",
+              "meaning": "lobby",
+              "baseForm": "ロビー",
+              "level": "N2"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "向かい",
+              "reading": "むかい",
+              "meaning": "facing; opposite; across the street",
+              "baseForm": "向かい",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "売店で家族へのお土産を買った後で、カフェで冷たいコーヒーを飲みながら本を読みました。",
+          "literalEn": "shop [in/by] family [toward] ['s / of] present [obj] to buy [past] afterwards カフェ [in/by] cold to the touch coffee [obj] to drink ながら book [obj] reading した",
+          "naturalEn": "After buying souvenirs for my family at the gift shop, I read a book while sipping iced coffee at a café.",
+          "tokens": [
+            {
+              "surface": "売店",
+              "reading": "ばいてん",
+              "meaning": "shop; stand",
+              "baseForm": "売店",
+              "level": "N2"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "家族",
+              "reading": "かぞく",
+              "meaning": "family",
+              "baseForm": "家族",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "土産",
+              "reading": "みやげ",
+              "meaning": "present; souvenir",
+              "baseForm": "土産",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "買",
+              "reading": "か",
+              "meaning": "to buy",
+              "baseForm": "買う",
+              "level": "N5"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "後で",
+              "reading": "あとで",
+              "meaning": "afterwards",
+              "baseForm": "後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "カフェ"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "冷たい",
+              "reading": "つめたい",
+              "meaning": "cold to the touch",
+              "baseForm": "冷たい",
+              "level": "N5"
+            },
+            {
+              "surface": "コーヒー",
+              "meaning": "coffee",
+              "baseForm": "コーヒー",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "飲",
+              "reading": "の",
+              "meaning": "to drink",
+              "baseForm": "飲む",
+              "level": "N5"
+            },
+            {
+              "surface": "み"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "本",
+              "reading": "ほん",
+              "meaning": "book",
+              "baseForm": "本",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "読み",
+              "reading": "よみ",
+              "meaning": "reading",
+              "baseForm": "読み",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "一時半になると、「搭乗が始まります」という案内が聞こえました。佐藤さんは荷物を持って、急いで搭乗口へ歩いて行きました。少し緊張しましたが、無事に出発することができました。",
-      "en": "At 1:30, he heard an announcement saying, \"Boarding will begin.\" Mr. Sato grabbed his luggage and walked hurriedly to the boarding gate. Although he was a bit nervous, he was able to depart safely."
+      "en": "At 1:30, he heard an announcement saying, \"Boarding will begin.\" Mr. Sato grabbed his luggage and walked hurriedly to the boarding gate. Although he was a bit nervous, he was able to depart safely.",
+      "sentences": [
+        {
+          "ja": "一時半になると、「搭乗が始まります」という案内が聞こえました。",
+          "literalEn": "one half past the hour [at/to] to become [with/and] boarding (a plane [subj] origin [polite] という to guide [subj] to hear した",
+          "naturalEn": "At 1:30, an announcement said, “Boarding is about to begin.”",
+          "tokens": [
+            {
+              "surface": "一",
+              "reading": "いち",
+              "meaning": "one",
+              "baseForm": "一",
+              "level": "N5"
+            },
+            {
+              "surface": "時半",
+              "reading": "じはん",
+              "meaning": "half past the hour",
+              "baseForm": "時半",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なる",
+              "meaning": "to become",
+              "baseForm": "なる",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "搭乗",
+              "reading": "とうじょう",
+              "meaning": "boarding (a plane/ship)",
+              "baseForm": "搭乗",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "始まり",
+              "reading": "はじまり",
+              "meaning": "origin; beginning",
+              "baseForm": "始まり",
+              "level": "N3"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "案内",
+              "reading": "あんない",
+              "meaning": "to guide",
+              "baseForm": "案内",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "聞",
+              "reading": "き",
+              "meaning": "to hear; to listen to; to ask",
+              "baseForm": "聞く",
+              "level": "N5"
+            },
+            {
+              "surface": "こ"
+            },
+            {
+              "surface": "え"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "佐藤さんは荷物を持って、急いで搭乗口へ歩いて行きました。",
+          "literalEn": "Sato [Mr/Ms] [topic] luggage [obj] to hold って urgent [in/by] boarding (a plane mouth [toward] pawn [and] going した",
+          "naturalEn": "Mr. Sato grabbed his luggage and hurried to the boarding gate.",
+          "tokens": [
+            {
+              "surface": "佐藤",
+              "reading": "さとう",
+              "meaning": "Sato (surname)",
+              "baseForm": "佐藤",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "荷物",
+              "reading": "にもつ",
+              "meaning": "luggage",
+              "baseForm": "荷物",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "持",
+              "reading": "も",
+              "meaning": "to hold",
+              "baseForm": "持つ",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "急",
+              "reading": "きゅう",
+              "meaning": "urgent; steep",
+              "baseForm": "急",
+              "level": "N4"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "搭乗",
+              "reading": "とうじょう",
+              "meaning": "boarding (a plane/ship)",
+              "baseForm": "搭乗",
+              "level": "N3"
+            },
+            {
+              "surface": "口",
+              "reading": "くち",
+              "meaning": "mouth; opening",
+              "baseForm": "口",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "歩",
+              "reading": "ふ",
+              "meaning": "pawn (in chess or shogi)",
+              "baseForm": "歩",
+              "level": "N1"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "少し緊張しましたが、無事に出発することができました。",
+          "literalEn": "few tension しま した [subj] safety [at/to] to depart to do thing [subj] でき した",
+          "naturalEn": "I was a little nervous, but we were able to depart without a hitch.",
+          "tokens": [
+            {
+              "surface": "少し",
+              "reading": "すこし",
+              "meaning": "few",
+              "baseForm": "少し",
+              "level": "N5"
+            },
+            {
+              "surface": "緊張",
+              "reading": "きんちょう",
+              "meaning": "tension; mental strain; nervousness",
+              "baseForm": "緊張",
+              "level": "N3"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "無事",
+              "reading": "ぶじ",
+              "meaning": "safety; peace; quietness",
+              "baseForm": "無事",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "出発",
+              "reading": "しゅっぱつ",
+              "meaning": "to depart",
+              "baseForm": "出発",
+              "level": "N4"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
@@ -33,7 +918,8 @@
         "東京で働くために飛行機に乗るため",
         "空港のカフェで働くため"
       ],
-      "answerIndex": 2
+      "answerIndex": 2,
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)"
     },
     {
       "question": "佐藤さんはカウンターで何をしましたか？",
@@ -43,7 +929,8 @@
         "お土産を買いました",
         "本を読みました"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)"
     },
     {
       "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
@@ -53,7 +940,9 @@
         "家族に電話をかけました",
         "売店で買い物をしました"
       ],
-      "answerIndex": 0
+      "answerIndex": 0,
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)"
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/airport.json"
 }

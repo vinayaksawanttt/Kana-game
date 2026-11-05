@@ -14,19 +14,2017 @@
   "paragraphs": [
     {
       "ja": "昔々、右の頬（ほほ）にテニスボールのような大きなこぶがある優しいおじいさんがいました。おじいさんはそのこぶをずっと治したいと思っていましたが、どんな薬も効果がありませんでした。ある日、山で木を切っていると急に雨が降ってきたため、おじいさんは大きな木の洞（ほら）に入って雨宿りをしました。",
-      "en": "Long, long ago, there was a kind old man who had a large wen like a tennis ball on his right cheek. The old man had wanted to cure that wen for a long time, but no medicine was effective. One day, while cutting wood in the mountain, it suddenly started to rain, so the old man entered a large hollow tree to shelter from the rain."
+      "en": "Long, long ago, there was a kind old man who had a large wen like a tennis ball on his right cheek. The old man had wanted to cure that wen for a long time, but no medicine was effective. One day, while cutting wood in the mountain, it suddenly started to rain, so the old man entered a large hollow tree to shelter from the rain.",
+      "sentences": [
+        {
+          "ja": "昔々、右の頬（ほほ）にテニスボールのような大きなこぶがある優しいおじいさんがいました。",
+          "literalEn": "olden days right side ['s / of] cheek [at/to] tennis ball ['s / of] よう big [subj] to be kind old man [subj] いま した",
+          "naturalEn": "Once upon a time, there was a kind old man who had a large lump on his right cheek, about the size of a tennis ball.",
+          "tokens": [
+            {
+              "surface": "昔",
+              "reading": "むかし",
+              "meaning": "olden days; former",
+              "baseForm": "昔",
+              "level": "N4"
+            },
+            {
+              "surface": "々"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "右",
+              "reading": "みぎ",
+              "meaning": "right side",
+              "baseForm": "右",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "頬",
+              "reading": "ほほ",
+              "meaning": "cheek (of face)",
+              "baseForm": "頬",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "テニス",
+              "meaning": "tennis",
+              "baseForm": "テニス",
+              "level": "N4"
+            },
+            {
+              "surface": "ボール",
+              "meaning": "ball; bowl",
+              "baseForm": "ボール",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "こ"
+            },
+            {
+              "surface": "ぶ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "優しい",
+              "reading": "やさしい",
+              "meaning": "kind",
+              "baseForm": "優しい",
+              "level": "N4"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "おじいさんはそのこぶをずっと治したいと思っていましたが、どんな薬も効果がありませんでした。",
+          "literalEn": "old man [topic] that [obj] consecutively to be cured した いと to think って いま した [subj] what medicine [also] effect [subj] ありま せん [in/by] した",
+          "naturalEn": "The old man had always wanted to cure that lump, but no medicine had worked.",
+          "tokens": [
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "こ"
+            },
+            {
+              "surface": "ぶ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "ずっと",
+              "meaning": "consecutively; throughout; a lot",
+              "baseForm": "ずっと",
+              "level": "N3"
+            },
+            {
+              "surface": "治",
+              "reading": "なお",
+              "meaning": "to be cured; to heal",
+              "baseForm": "治る",
+              "level": "N4"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "いと"
+            },
+            {
+              "surface": "思",
+              "reading": "おも",
+              "meaning": "to think; to feel",
+              "baseForm": "思う",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "どんな",
+              "meaning": "what; what kind of",
+              "baseForm": "どんな",
+              "level": "N3"
+            },
+            {
+              "surface": "薬",
+              "reading": "くすり",
+              "meaning": "medicine",
+              "baseForm": "薬",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "効果",
+              "reading": "こうか",
+              "meaning": "effect; effectiveness; efficacy",
+              "baseForm": "効果",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ある日、山で木を切っていると急に雨が降ってきたため、おじいさんは大きな木の洞（ほら）に入って雨宿りをしました。",
+          "literalEn": "to be day mountain [in/by] tree [obj] to cut って to be [with/and] urgent [at/to] rain [subj] to fall って きた ため old man [topic] big tree ['s / of] den [at/to] to enter って taking shelter from the rain [obj] しま した",
+          "naturalEn": "One day, while he was cutting wood in the mountains, it suddenly started to rain, so the old man went into a large hollow in a tree to take shelter.",
+          "tokens": [
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "木",
+              "reading": "き",
+              "meaning": "tree; wood",
+              "baseForm": "木",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "切",
+              "reading": "き",
+              "meaning": "to cut",
+              "baseForm": "切る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "急",
+              "reading": "きゅう",
+              "meaning": "urgent; steep",
+              "baseForm": "急",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "雨",
+              "reading": "あめ",
+              "meaning": "rain",
+              "baseForm": "雨",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "降",
+              "reading": "ふ",
+              "meaning": "to fall (e.g. rain or snow)",
+              "baseForm": "降る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "きた"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "木",
+              "reading": "き",
+              "meaning": "tree; wood",
+              "baseForm": "木",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "洞",
+              "reading": "ほら",
+              "meaning": "den, cave, excavation",
+              "baseForm": "洞",
+              "level": "N1"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入",
+              "reading": "はい",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "雨宿り",
+              "reading": "あまやどり",
+              "meaning": "taking shelter from the rain",
+              "baseForm": "雨宿り",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "雨が上がった夕方、突然たくさんの鬼たちが現れ、近くで酒を飲みながら歌って踊り始めました。おじいさんは面白そうだなと思って見ているうちに、いてもたってもられず、つい自分も前に出て上手に踊りました。鬼の親分は大変喜び、「お前は踊りが上手だな。明日もまた来て踊ってくれ」と言いました。そして、「約束の証拠（しょうこ）だ」と言って、おじいさんの頬からその大きなこぶを簡単に取ってしまいました。",
-      "en": "In the evening after the rain stopped, suddenly many ogres appeared and started singing and dancing while drinking sake nearby. As the old man watched, thinking it looked interesting, he couldn't help himself and stepped out to dance skillfully as well. The ogre boss was very pleased and said, \"You dance well. Come again tomorrow and dance.\" Then, saying, \"This is proof of our promise,\" he easily removed that large wen from the old man's cheek."
+      "en": "In the evening after the rain stopped, suddenly many ogres appeared and started singing and dancing while drinking sake nearby. As the old man watched, thinking it looked interesting, he couldn't help himself and stepped out to dance skillfully as well. The ogre boss was very pleased and said, \"You dance well. Come again tomorrow and dance.\" Then, saying, \"This is proof of our promise,\" he easily removed that large wen from the old man's cheek.",
+      "sentences": [
+        {
+          "ja": "雨が上がった夕方、突然たくさんの鬼たちが現れ、近くで酒を飲みながら歌って踊り始めました。",
+          "literalEn": "rain [subj] on top of [subj] [past] evening abruptly many ['s / of] ogre たち [subj] embodiment near [in/by] alcohol [obj] to drink ながら song って a dance beginning した",
+          "naturalEn": "One evening after the rain had stopped, a large group of ogres suddenly appeared and began singing and dancing while drinking sake nearby.",
+          "tokens": [
+            {
+              "surface": "雨",
+              "reading": "あめ",
+              "meaning": "rain",
+              "baseForm": "雨",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "上",
+              "reading": "うえ",
+              "meaning": "on top of",
+              "baseForm": "上",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "夕方",
+              "reading": "ゆうがた",
+              "meaning": "evening",
+              "baseForm": "夕方",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "突然",
+              "reading": "とつぜん",
+              "meaning": "abruptly; suddenly; unexpectedly",
+              "baseForm": "突然",
+              "level": "N3"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "鬼",
+              "reading": "おに",
+              "meaning": "ogre; demon; it (i.e., in a game of tag)",
+              "baseForm": "鬼",
+              "level": "N3"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "現れ",
+              "reading": "あらわれ",
+              "meaning": "embodiment; materialization",
+              "baseForm": "現れ",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "近く",
+              "reading": "ちかく",
+              "meaning": "near",
+              "baseForm": "近く",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "酒",
+              "reading": "さけ",
+              "meaning": "alcohol; sake",
+              "baseForm": "酒",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "飲",
+              "reading": "の",
+              "meaning": "to drink",
+              "baseForm": "飲む",
+              "level": "N5"
+            },
+            {
+              "surface": "み"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "歌",
+              "reading": "うた",
+              "meaning": "song",
+              "baseForm": "歌",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "踊り",
+              "reading": "おどり",
+              "meaning": "a dance",
+              "baseForm": "踊り",
+              "level": "N4"
+            },
+            {
+              "surface": "始め",
+              "reading": "はじめ",
+              "meaning": "beginning; start; origin",
+              "baseForm": "始め",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "おじいさんは面白そうだなと思って見ているうちに、いてもたってもられず、つい自分も前に出て上手に踊りました。",
+          "literalEn": "old man [topic] interesting そうだ [with/and] to think って to see [and] to be within [at/to] [and] [also] [past] って [also] つい oneself [also] before [at/to] to put out [and] skillful [at/to] a dance した",
+          "naturalEn": "The old man thought it looked like fun as he watched, but he couldn’t sit still any longer, so he stepped forward and danced beautifully himself.",
+          "tokens": [
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "面白",
+              "reading": "おもしろ",
+              "meaning": "interesting; fun",
+              "baseForm": "面白",
+              "level": "N5"
+            },
+            {
+              "surface": "そうだ"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "思",
+              "reading": "おも",
+              "meaning": "to think; to feel",
+              "baseForm": "思う",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "うち",
+              "meaning": "within",
+              "baseForm": "うち",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ず"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "つい"
+            },
+            {
+              "surface": "自分",
+              "reading": "じぶん",
+              "meaning": "oneself",
+              "baseForm": "自分",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "前",
+              "reading": "まえ",
+              "meaning": "before",
+              "baseForm": "前",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "上手",
+              "reading": "じょうず",
+              "meaning": "skillful",
+              "baseForm": "上手",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "踊り",
+              "reading": "おどり",
+              "meaning": "a dance",
+              "baseForm": "踊り",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "鬼の親分は大変喜び、「お前は踊りが上手だな。",
+          "literalEn": "ogre ['s / of] boss [topic] very  joy you [topic] a dance [subj] skillful [is]",
+          "naturalEn": "The leader of the ogres was overjoyed and said, “You’re a great dancer.",
+          "tokens": [
+            {
+              "surface": "鬼",
+              "reading": "おに",
+              "meaning": "ogre; demon; it (i.e., in a game of tag)",
+              "baseForm": "鬼",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "親分",
+              "reading": "おやぶん",
+              "meaning": "boss; chief; leader",
+              "baseForm": "親分",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "大変",
+              "reading": "たいへん",
+              "meaning": "very; terrible; difficult",
+              "baseForm": "大変",
+              "level": "N5"
+            },
+            {
+              "surface": "喜び",
+              "reading": "よろこび",
+              "meaning": "(a) joy; (a) delight; rapture",
+              "baseForm": "喜び",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "お前",
+              "reading": "おまえ",
+              "meaning": "you (informal)",
+              "baseForm": "お前",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "踊り",
+              "reading": "おどり",
+              "meaning": "a dance",
+              "baseForm": "踊り",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "上手",
+              "reading": "じょうず",
+              "meaning": "skillful",
+              "baseForm": "上手",
+              "level": "N5"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "明日もまた来て踊ってくれ」と言いました。",
+          "literalEn": "tomorrow [also] again for [and] a dance って [with/and] to say いま した",
+          "naturalEn": "“Please come back tomorrow and dance for us again,” he said.",
+          "tokens": [
+            {
+              "surface": "明日",
+              "reading": "あした",
+              "meaning": "tomorrow",
+              "baseForm": "明日",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "また",
+              "meaning": "again; and",
+              "baseForm": "また",
+              "level": "N5"
+            },
+            {
+              "surface": "来",
+              "reading": "らい",
+              "meaning": "for (10 days); next (year)",
+              "baseForm": "来",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "踊",
+              "reading": "おど",
+              "meaning": "a dance",
+              "baseForm": "踊り",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "そして、「約束の証拠（しょうこ）だ」と言って、おじいさんの頬からその大きなこぶを簡単に取ってしまいました。",
+          "literalEn": "and promise ['s / of] evidence [is] [with/and] to say って old man ['s / of] cheek [from] that big [obj] simple [at/to] to take something って しま いま した",
+          "naturalEn": "Then, saying, “Here’s proof of our promise,” he easily removed the large lump from the old man’s cheek.",
+          "tokens": [
+            {
+              "surface": "そして",
+              "meaning": "and",
+              "baseForm": "そして",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "約束",
+              "reading": "やくそく",
+              "meaning": "promise",
+              "baseForm": "約束",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "証拠",
+              "reading": "しょうこ",
+              "meaning": "evidence; proof",
+              "baseForm": "証拠",
+              "level": "N1"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "頬",
+              "reading": "ほほ",
+              "meaning": "cheek (of face)",
+              "baseForm": "頬",
+              "level": "N3"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "こ"
+            },
+            {
+              "surface": "ぶ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "簡単",
+              "reading": "かんたん",
+              "meaning": "simple",
+              "baseForm": "簡単",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "取",
+              "reading": "と",
+              "meaning": "to take something",
+              "baseForm": "取る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "おじいさんが喜んで家に帰ると、頬にあったはずのこぶが綺麗になくなっていました。隣の家には、同じように頬にこぶがあって性格の悪い意地悪なおじいさんが住んでいました。その隣のおじいさんは話を聞くと、「自分もこぶを取ってもらおう」と急いで山の木の洞へ行きました。",
-      "en": "When the old man happily returned home, the wen that should have been on his cheek was cleanly gone. In the neighboring house lived a mean-spirited bad old man who likewise had a wen on his cheek. Hearing the story, that neighboring old man hurried to the mountain's tree hollow, saying, \"I'll have my wen removed too.\""
+      "en": "When the old man happily returned home, the wen that should have been on his cheek was cleanly gone. In the neighboring house lived a mean-spirited bad old man who likewise had a wen on his cheek. Hearing the story, that neighboring old man hurried to the mountain's tree hollow, saying, \"I'll have my wen removed too.\"",
+      "sentences": [
+        {
+          "ja": "おじいさんが喜んで家に帰ると、頬にあったはずのこぶが綺麗になくなっていました。",
+          "literalEn": "old man [subj] to be delighted んで house [at/to] to go back [with/and] cheek [at/to] Ah! [past] it should be so ['s / of] [subj] pretty [at/to] なく って いま した",
+          "naturalEn": "When the old man returned home, overjoyed, the lump that had been on his cheek was completely gone.",
+          "tokens": [
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "喜",
+              "reading": "よろこ",
+              "meaning": "to be delighted",
+              "baseForm": "喜ぶ",
+              "level": "N4"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "帰る",
+              "reading": "かえる",
+              "meaning": "to go back",
+              "baseForm": "帰る",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "頬",
+              "reading": "ほほ",
+              "meaning": "cheek (of face)",
+              "baseForm": "頬",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "あっ",
+              "meaning": "Ah!; Oh!",
+              "baseForm": "あっ",
+              "level": "N3"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "はず",
+              "meaning": "it should be so",
+              "baseForm": "はず",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "こ"
+            },
+            {
+              "surface": "ぶ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "綺麗",
+              "reading": "きれい",
+              "meaning": "pretty; clean; beautiful",
+              "baseForm": "綺麗",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なく"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "隣の家には、同じように頬にこぶがあって性格の悪い意地悪なおじいさんが住んでいました。",
+          "literalEn": "next door to ['s / of] house [at/to] [topic] same よう [at/to] cheek [at/to] [subj] Ah! [and] character ['s / of] bad malicious old man [subj] dwelling んで いま した",
+          "naturalEn": "In the house next door lived an old man who also had a lump on his cheek and was mean and spiteful.",
+          "tokens": [
+            {
+              "surface": "隣",
+              "reading": "となり",
+              "meaning": "next door to",
+              "baseForm": "隣",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "同じ",
+              "reading": "おなじ",
+              "meaning": "same",
+              "baseForm": "同じ",
+              "level": "N5"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "頬",
+              "reading": "ほほ",
+              "meaning": "cheek (of face)",
+              "baseForm": "頬",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "こ"
+            },
+            {
+              "surface": "ぶ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "あっ",
+              "meaning": "Ah!; Oh!",
+              "baseForm": "あっ",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "性格",
+              "reading": "せいかく",
+              "meaning": "character; personality",
+              "baseForm": "性格",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "悪い",
+              "reading": "わるい",
+              "meaning": "bad",
+              "baseForm": "悪い",
+              "level": "N5"
+            },
+            {
+              "surface": "意地悪",
+              "reading": "いじわる",
+              "meaning": "malicious; ill-tempered; unkind",
+              "baseForm": "意地悪",
+              "level": "N2"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "住",
+              "reading": "じゅう",
+              "meaning": "dwelling; living",
+              "baseForm": "住",
+              "level": "N1"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "その隣のおじいさんは話を聞くと、「自分もこぶを取ってもらおう」と急いで山の木の洞へ行きました。",
+          "literalEn": "that next door to ['s / of] old man [topic] talk [obj] to hear [with/and] oneself [also] [obj] to take something って [also] おう [with/and] urgent [in/by] mountain ['s / of] tree ['s / of] den [toward] going した",
+          "naturalEn": "When the old man next door heard the story, he thought, “I’ll have my lump removed too,” and hurried to the hollow in the tree on the mountain.",
+          "tokens": [
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "隣",
+              "reading": "となり",
+              "meaning": "next door to",
+              "baseForm": "隣",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "話",
+              "reading": "はなし",
+              "meaning": "talk; story",
+              "baseForm": "話",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "聞く",
+              "reading": "きく",
+              "meaning": "to hear; to listen to; to ask",
+              "baseForm": "聞く",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "自分",
+              "reading": "じぶん",
+              "meaning": "oneself",
+              "baseForm": "自分",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "こ"
+            },
+            {
+              "surface": "ぶ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "取",
+              "reading": "と",
+              "meaning": "to take something",
+              "baseForm": "取る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "おう"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "急",
+              "reading": "きゅう",
+              "meaning": "urgent; steep",
+              "baseForm": "急",
+              "level": "N4"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "木",
+              "reading": "き",
+              "meaning": "tree; wood",
+              "baseForm": "木",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "洞",
+              "reading": "ほら",
+              "meaning": "den, cave, excavation",
+              "baseForm": "洞",
+              "level": "N1"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "夕方になると鬼たちが現れ、意地悪なおじいさんに踊るように言いました。しかし、彼はダンスを習ったことがなかったので、ただめちゃくちゃに踊りました。それを見た鬼たちは怒り、「下手な踊りだ！明日の約束の証拠に、昨日あいつにあげたこぶを返してやる！」と言って、もう一つのこぶを彼の左の頬に投げつけました。意地悪なおじいさんは、両方の頬にこぶをつけたまま、泣きながら家に帰りました。",
-      "en": "When evening came, the ogres appeared and told the bad old man to dance. However, because he had never learned to dance, he just danced haphazardly. The ogres, seeing that, got angry and said, \"What a poor dance! As proof of tomorrow's promise, I'll return the wen we gave that fellow yesterday!\" and threw another wen onto his left cheek. The bad old man returned home crying, with wens attached to both of his cheeks."
+      "en": "When evening came, the ogres appeared and told the bad old man to dance. However, because he had never learned to dance, he just danced haphazardly. The ogres, seeing that, got angry and said, \"What a poor dance! As proof of tomorrow's promise, I'll return the wen we gave that fellow yesterday!\" and threw another wen onto his left cheek. The bad old man returned home crying, with wens attached to both of his cheeks.",
+      "sentences": [
+        {
+          "ja": "夕方になると鬼たちが現れ、意地悪なおじいさんに踊るように言いました。",
+          "literalEn": "evening [at/to] to become [with/and] ogre たち [subj] embodiment malicious old man [at/to] to dance よう [at/to] to say いま した",
+          "naturalEn": "When evening came, the ogres appeared and told the mean old man to dance.",
+          "tokens": [
+            {
+              "surface": "夕方",
+              "reading": "ゆうがた",
+              "meaning": "evening",
+              "baseForm": "夕方",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なる",
+              "meaning": "to become",
+              "baseForm": "なる",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "鬼",
+              "reading": "おに",
+              "meaning": "ogre; demon; it (i.e., in a game of tag)",
+              "baseForm": "鬼",
+              "level": "N3"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "現れ",
+              "reading": "あらわれ",
+              "meaning": "embodiment; materialization",
+              "baseForm": "現れ",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "意地悪",
+              "reading": "いじわる",
+              "meaning": "malicious; ill-tempered; unkind",
+              "baseForm": "意地悪",
+              "level": "N2"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "踊る",
+              "reading": "おどる",
+              "meaning": "to dance",
+              "baseForm": "踊る",
+              "level": "N4"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "しかし、彼はダンスを習ったことがなかったので、ただめちゃくちゃに踊りました。",
+          "literalEn": "however he [topic] dance [obj] to learn [past] thing [subj] なか [past] ので free of charge absurd [at/to] a dance した",
+          "naturalEn": "However, since he had never taken dance lessons, he just danced all over the place.",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "ダンス",
+              "meaning": "dance",
+              "baseForm": "ダンス",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "習",
+              "reading": "なら",
+              "meaning": "to learn",
+              "baseForm": "習う",
+              "level": "N5"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "なか"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "ので"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ただ",
+              "meaning": "free of charge; mere; sole",
+              "baseForm": "ただ",
+              "level": "N3"
+            },
+            {
+              "surface": "めちゃくちゃ",
+              "meaning": "absurd; unreasonable; excessive",
+              "baseForm": "めちゃくちゃ",
+              "level": "N2"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "踊り",
+              "reading": "おどり",
+              "meaning": "a dance",
+              "baseForm": "踊り",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "それを見た鬼たちは怒り、「下手な踊りだ！",
+          "literalEn": "that [obj] to see [past] ogre たち [topic] anger unskillful a dance [is]",
+          "naturalEn": "When the ogres saw this, they became angry and said, “What a terrible dance!",
+          "tokens": [
+            {
+              "surface": "それ",
+              "meaning": "that",
+              "baseForm": "それ",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "鬼",
+              "reading": "おに",
+              "meaning": "ogre; demon; it (i.e., in a game of tag)",
+              "baseForm": "鬼",
+              "level": "N3"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "怒り",
+              "reading": "いかり",
+              "meaning": "anger; hatred",
+              "baseForm": "怒り",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "下手",
+              "reading": "へた",
+              "meaning": "unskillful",
+              "baseForm": "下手",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "踊り",
+              "reading": "おどり",
+              "meaning": "a dance",
+              "baseForm": "踊り",
+              "level": "N4"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "！"
+            }
+          ]
+        },
+        {
+          "ja": "明日の約束の証拠に、昨日あいつにあげたこぶを返してやる！",
+          "literalEn": "tomorrow ['s / of] promise ['s / of] evidence [at/to] yesterday あいつ [at/to] Ah げた [obj] to return something してやる",
+          "naturalEn": "“As proof of our promise for tomorrow, we’ll give him back the lump we gave him yesterday!”",
+          "tokens": [
+            {
+              "surface": "明日",
+              "reading": "あした",
+              "meaning": "tomorrow",
+              "baseForm": "明日",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "約束",
+              "reading": "やくそく",
+              "meaning": "promise",
+              "baseForm": "約束",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "証拠",
+              "reading": "しょうこ",
+              "meaning": "evidence; proof",
+              "baseForm": "証拠",
+              "level": "N1"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "昨日",
+              "reading": "きのう",
+              "meaning": "yesterday",
+              "baseForm": "昨日",
+              "level": "N5"
+            },
+            {
+              "surface": "あいつ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "あ",
+              "meaning": "Ah",
+              "baseForm": "あ",
+              "level": "N4"
+            },
+            {
+              "surface": "げた"
+            },
+            {
+              "surface": "こ"
+            },
+            {
+              "surface": "ぶ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "返",
+              "reading": "かえ",
+              "meaning": "to return something",
+              "baseForm": "返す",
+              "level": "N5"
+            },
+            {
+              "surface": "してやる"
+            },
+            {
+              "surface": "！"
+            }
+          ]
+        },
+        {
+          "ja": "」と言って、もう一つのこぶを彼の左の頬に投げつけました。",
+          "literalEn": "[with/and] to say って already one thing ['s / of] [obj] he ['s / of] left hand side ['s / of] cheek [at/to] throw つけ した",
+          "naturalEn": "” they said, and threw another lump at his left cheek.",
+          "tokens": [
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "もう",
+              "meaning": "already",
+              "baseForm": "もう",
+              "level": "N5"
+            },
+            {
+              "surface": "一つ",
+              "reading": "ひとつ",
+              "meaning": "one thing",
+              "baseForm": "一つ",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "こ"
+            },
+            {
+              "surface": "ぶ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "左",
+              "reading": "ひだり",
+              "meaning": "left hand side",
+              "baseForm": "左",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "頬",
+              "reading": "ほほ",
+              "meaning": "cheek (of face)",
+              "baseForm": "頬",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "投",
+              "reading": "トウ",
+              "meaning": "throw, abandon, discard",
+              "baseForm": "投",
+              "level": "N3"
+            },
+            {
+              "surface": "げ"
+            },
+            {
+              "surface": "つけ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "意地悪なおじいさんは、両方の頬にこぶをつけたまま、泣きながら家に帰りました。",
+          "literalEn": "malicious old man [topic] both sides ['s / of] cheek [at/to] [obj] つけ [past] まま to weep ながら house [at/to] return した",
+          "naturalEn": "The mean old man went home crying, with lumps on both cheeks.",
+          "tokens": [
+            {
+              "surface": "意地悪",
+              "reading": "いじわる",
+              "meaning": "malicious; ill-tempered; unkind",
+              "baseForm": "意地悪",
+              "level": "N2"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "両方",
+              "reading": "りょうほう",
+              "meaning": "both sides",
+              "baseForm": "両方",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "頬",
+              "reading": "ほほ",
+              "meaning": "cheek (of face)",
+              "baseForm": "頬",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "こ"
+            },
+            {
+              "surface": "ぶ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "つけ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "まま"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "泣き",
+              "reading": "なき",
+              "meaning": "to weep",
+              "baseForm": "泣く",
+              "level": "N4"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "帰り",
+              "reading": "かえり",
+              "meaning": "return",
+              "baseForm": "帰り",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
@@ -38,7 +2036,8 @@
         "特別な水で顔を洗った",
         "自分で切って取った"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「鬼の前で上手に踊って、鬼に取ってもらった」 is the correct answer according to the story."
     },
     {
       "question": "意地悪なおじいさんが鬼の前で踊った時、どうなりましたか？",
@@ -48,7 +2047,8 @@
         "踊りが下手で怒られ、もう一つのこぶをつけられた",
         "お金をたくさんもらった"
       ],
-      "answerIndex": 2
+      "answerIndex": 2,
+      "explanation": "「踊りが下手で怒られ、もう一つのこぶをつけられた」 is correct: 「隣の家には、同じように頬にこぶがあって性格の悪い意地悪なおじいさんが住んでいました。」 (In the house next door lived an old man who also had a lump on his cheek and was mean and spiteful.)"
     },
     {
       "question": "最終的に、意地悪なおじいさんはどうなりましたか？",
@@ -58,7 +2058,9 @@
         "鬼の親分になった",
         "村から引っ越した"
       ],
-      "answerIndex": 0
+      "answerIndex": 0,
+      "explanation": "「両方の頬にこぶがついた」 is the correct answer according to the story."
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/lost-wen.json"
 }

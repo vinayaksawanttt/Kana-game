@@ -1,0 +1,1174 @@
+{
+  "id": "n4-police-station",
+  "title": "交番での出来事",
+  "titleRomaji": "Kōban de no dekigoto",
+  "titleEn": "An Incident at the Police Box",
+  "level": "N4",
+  "category": "Everyday Life",
+  "tags": [
+    "police",
+    "lost item",
+    "trouble",
+    "daily"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昨日の夕方、山田さんは財布をなくしてしまいました。とても困って、駅の近くの交番へ行きました。",
+      "en": "Yesterday evening, Mr. Yamada lost his wallet. He was very troubled and went to the police box near the station.",
+      "sentences": [
+        {
+          "ja": "昨日の夕方、山田さんは財布をなくしてしまいました。",
+          "literalEn": "yesterday ['s / of] evening Yamada [Mr/Ms] [topic] wallet [obj] なく [and] しま いま した",
+          "naturalEn": "Yesterday evening, Mr. Yamada lost his wallet.",
+          "tokens": [
+            {
+              "surface": "昨日",
+              "reading": "きのう",
+              "meaning": "yesterday",
+              "baseForm": "昨日",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "夕方",
+              "reading": "ゆうがた",
+              "meaning": "evening",
+              "baseForm": "夕方",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "山田",
+              "reading": "やまだ",
+              "meaning": "Yamada (surname)",
+              "baseForm": "山田",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "財布",
+              "reading": "さいふ",
+              "meaning": "wallet",
+              "baseForm": "財布",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "なく"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "とても困って、駅の近くの交番へ行きました。",
+          "literalEn": "very to be worried って station ['s / of] near ['s / of] police box [toward] going した",
+          "naturalEn": "He was very worried, so he went to the police box near the station.",
+          "tokens": [
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "困",
+              "reading": "こま",
+              "meaning": "to be worried",
+              "baseForm": "困る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "駅",
+              "reading": "えき",
+              "meaning": "station",
+              "baseForm": "駅",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "近く",
+              "reading": "ちかく",
+              "meaning": "near",
+              "baseForm": "近く",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "交番",
+              "reading": "こうばん",
+              "meaning": "police box",
+              "baseForm": "交番",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "交番に入ると、親切なお巡りさんが「どんな財布ですか」と聞きました。山田さんは「黒くて、四角い財布です。中に大切なカードと一万円が入っています」と答えました。",
+      "en": "When he entered the police box, a kind police officer asked, \"What kind of wallet is it?\" Mr. Yamada answered, \"It is a black, square wallet. Inside are an important card and 10,000 yen.\"",
+      "sentences": [
+        {
+          "ja": "交番に入ると、親切なお巡りさんが「どんな財布ですか」と聞きました。",
+          "literalEn": "police box [at/to] to enter [with/and] kindness police officer [subj] what wallet [is] [?] [with/and] to hear した",
+          "naturalEn": "When he entered the police box, a kind police officer asked, “What kind of wallet is it?”",
+          "tokens": [
+            {
+              "surface": "交番",
+              "reading": "こうばん",
+              "meaning": "police box",
+              "baseForm": "交番",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入る",
+              "reading": "はいる",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "親切",
+              "reading": "しんせつ",
+              "meaning": "kindness",
+              "baseForm": "親切",
+              "level": "N4"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "お巡りさん",
+              "reading": "おまわりさん",
+              "meaning": "police officer",
+              "baseForm": "お巡りさん",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "どんな",
+              "meaning": "what; what kind of",
+              "baseForm": "どんな",
+              "level": "N3"
+            },
+            {
+              "surface": "財布",
+              "reading": "さいふ",
+              "meaning": "wallet",
+              "baseForm": "財布",
+              "level": "N5"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "聞",
+              "reading": "き",
+              "meaning": "to hear; to listen to; to ask",
+              "baseForm": "聞く",
+              "level": "N5"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "山田さんは「黒くて、四角い財布です。",
+          "literalEn": "Yamada [Mr/Ms] [topic] black [and] square wallet [is]",
+          "naturalEn": "Mr. Yamada said, “It’s a black, rectangular wallet.",
+          "tokens": [
+            {
+              "surface": "山田",
+              "reading": "やまだ",
+              "meaning": "Yamada (surname)",
+              "baseForm": "山田",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "黒",
+              "reading": "くろ",
+              "meaning": "black",
+              "baseForm": "黒",
+              "level": "N5"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "四角い",
+              "reading": "しかくい",
+              "meaning": "square",
+              "baseForm": "四角い",
+              "level": "N2"
+            },
+            {
+              "surface": "財布",
+              "reading": "さいふ",
+              "meaning": "wallet",
+              "baseForm": "財布",
+              "level": "N5"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "中に大切なカードと一万円が入っています」と答えました。",
+          "literalEn": "middle [at/to] important card [with/and] ten thousand (10 circle [subj] to enter って [polite] [with/and] response した",
+          "naturalEn": "\"It has some important cards and 10,000 yen inside,\" he replied.",
+          "tokens": [
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "大切",
+              "reading": "たいせつ",
+              "meaning": "important",
+              "baseForm": "大切",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "カード",
+              "meaning": "card; curd",
+              "baseForm": "カード",
+              "level": "N3"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "一万",
+              "reading": "いちまん",
+              "meaning": "ten thousand (10,000)",
+              "baseForm": "一万",
+              "level": "N5"
+            },
+            {
+              "surface": "円",
+              "reading": "えん",
+              "meaning": "circle; money",
+              "baseForm": "円",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "入",
+              "reading": "はい",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "答え",
+              "reading": "こたええ",
+              "meaning": "response",
+              "baseForm": "答",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "お巡りさんは紙に山田さんの名前と住所を書きました。そして、「どこで落としたと思いますか」と質問しました。山田さんは「たぶん、会社から帰る時の電車の中だと思います」と説明しました。お巡りさんはすぐに駅に電話をかけました。",
+      "en": "The police officer wrote Mr. Yamada's name and address on a piece of paper. Then, he asked, \"Where do you think you dropped it?\" Mr. Yamada explained, \"Probably inside the train when I was returning from work.\" The police officer immediately made a phone call to the station.",
+      "sentences": [
+        {
+          "ja": "お巡りさんは紙に山田さんの名前と住所を書きました。",
+          "literalEn": "police officer [topic] paper [at/to] Yamada [Mr/Ms] ['s / of] name [with/and] an address [obj] to write した",
+          "naturalEn": "The police officer wrote Mr. Yamada’s name and address on a piece of paper.",
+          "tokens": [
+            {
+              "surface": "お巡りさん",
+              "reading": "おまわりさん",
+              "meaning": "police officer",
+              "baseForm": "お巡りさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "紙",
+              "reading": "かみ",
+              "meaning": "paper",
+              "baseForm": "紙",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "山田",
+              "reading": "やまだ",
+              "meaning": "Yamada (surname)",
+              "baseForm": "山田",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "名前",
+              "reading": "なまえ",
+              "meaning": "name",
+              "baseForm": "名前",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "住所",
+              "reading": "じゅうしょ",
+              "meaning": "an address; a residence",
+              "baseForm": "住所",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "書き",
+              "reading": "かき",
+              "meaning": "to write",
+              "baseForm": "書く",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "そして、「どこで落としたと思いますか」と質問しました。",
+          "literalEn": "and where [in/by] to drop [past] [with/and] to think [polite] [?] [with/and] question しま した",
+          "naturalEn": "Then he asked, “Where do you think you lost it?”",
+          "tokens": [
+            {
+              "surface": "そして",
+              "meaning": "and",
+              "baseForm": "そして",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "どこ",
+              "meaning": "where",
+              "baseForm": "どこ",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "落とし",
+              "reading": "おととし",
+              "meaning": "to drop",
+              "baseForm": "落す",
+              "level": "N4"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "思い",
+              "reading": "おもい",
+              "meaning": "to think; to feel",
+              "baseForm": "思う",
+              "level": "N4"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "質問",
+              "reading": "しつもん",
+              "meaning": "question",
+              "baseForm": "質問",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "山田さんは「たぶん、会社から帰る時の電車の中だと思います」と説明しました。",
+          "literalEn": "Yamada [Mr/Ms] [topic] probably company [from] to go back time ['s / of] electric train ['s / of] middle [is] [with/and] to think [polite] [with/and] explanation しま した",
+          "naturalEn": "Mr. Yamada explained, “I think it was probably on the train on my way home from work.”",
+          "tokens": [
+            {
+              "surface": "山田",
+              "reading": "やまだ",
+              "meaning": "Yamada (surname)",
+              "baseForm": "山田",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "たぶん",
+              "meaning": "probably",
+              "baseForm": "たぶん",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "会社",
+              "reading": "かいしゃ",
+              "meaning": "company",
+              "baseForm": "会社",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "帰る",
+              "reading": "かえる",
+              "meaning": "to go back",
+              "baseForm": "帰る",
+              "level": "N5"
+            },
+            {
+              "surface": "時",
+              "reading": "とき",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "電車",
+              "reading": "でんしゃ",
+              "meaning": "electric train",
+              "baseForm": "電車",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "思い",
+              "reading": "おもい",
+              "meaning": "to think; to feel",
+              "baseForm": "思う",
+              "level": "N4"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "説明",
+              "reading": "せつめい",
+              "meaning": "explanation",
+              "baseForm": "説明",
+              "level": "N4"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "お巡りさんはすぐに駅に電話をかけました。",
+          "literalEn": "police officer [topic] immediately [at/to] station [at/to] telephone [obj] かけ した",
+          "naturalEn": "The police officer immediately called the station.",
+          "tokens": [
+            {
+              "surface": "お巡りさん",
+              "reading": "おまわりさん",
+              "meaning": "police officer",
+              "baseForm": "お巡りさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "すぐ",
+              "meaning": "immediately; soon; easily",
+              "baseForm": "すぐ",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "駅",
+              "reading": "えき",
+              "meaning": "station",
+              "baseForm": "駅",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "電話",
+              "reading": "でんわ",
+              "meaning": "telephone",
+              "baseForm": "電話",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "かけ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "しばらく待っていると、お巡りさんが笑顔で「駅で見つかりましたよ。誰かが駅員に渡してくれたそうです」と教えてくれました。山田さんはすっかり安心しました。「本当にありがとうございました」とお礼を言って、急いで駅へ向かいました。",
+      "en": "After waiting for a while, the police officer told him with a smile, \"It was found at the station. It seems someone handed it to the station attendant.\" Mr. Yamada was completely relieved. He said, \"Thank you very much,\" and hurriedly headed to the station.",
+      "sentences": [
+        {
+          "ja": "しばらく待っていると、お巡りさんが笑顔で「駅で見つかりましたよ。",
+          "literalEn": "little while to wait って to be [with/and] police officer [subj] smiling face [in/by] station [in/by] to see [?] した [you know]",
+          "naturalEn": "After waiting for a while, the police officer said with a smile, “It was found at the station.",
+          "tokens": [
+            {
+              "surface": "しばらく",
+              "meaning": "little while",
+              "baseForm": "しばらく",
+              "level": "N4"
+            },
+            {
+              "surface": "待",
+              "reading": "ま",
+              "meaning": "to wait",
+              "baseForm": "待つ",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "お巡りさん",
+              "reading": "おまわりさん",
+              "meaning": "police officer",
+              "baseForm": "お巡りさん",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "笑顔",
+              "reading": "えがお",
+              "meaning": "smiling face",
+              "baseForm": "笑顔",
+              "level": "N3"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "駅",
+              "reading": "えき",
+              "meaning": "station",
+              "baseForm": "駅",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "つ"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "よ"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "誰かが駅員に渡してくれたそうです」と教えてくれました。",
+          "literalEn": "someone [subj] station attendant [at/to] to hand over てく [past] really [is] [with/and] teachings てく した",
+          "naturalEn": "\"I was told that someone had handed it to a station attendant,\" he explained.",
+          "tokens": [
+            {
+              "surface": "誰か",
+              "reading": "だれか",
+              "meaning": "someone; somebody",
+              "baseForm": "誰か",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "駅員",
+              "reading": "えきいん",
+              "meaning": "station attendant",
+              "baseForm": "駅員",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "渡し",
+              "reading": "わたし",
+              "meaning": "to hand over",
+              "baseForm": "渡す",
+              "level": "N5"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "そう",
+              "meaning": "really",
+              "baseForm": "そう",
+              "level": "N4"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "教え",
+              "reading": "おしえ",
+              "meaning": "teachings; precept; lesson",
+              "baseForm": "教え",
+              "level": "N1"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "山田さんはすっかり安心しました。",
+          "literalEn": "Yamada [Mr/Ms] [topic] completely relief しま した",
+          "naturalEn": "Mr. Yamada was completely relieved.",
+          "tokens": [
+            {
+              "surface": "山田",
+              "reading": "やまだ",
+              "meaning": "Yamada (surname)",
+              "baseForm": "山田",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "すっかり",
+              "meaning": "completely",
+              "baseForm": "すっかり",
+              "level": "N4"
+            },
+            {
+              "surface": "安心",
+              "reading": "あんしん",
+              "meaning": "relief",
+              "baseForm": "安心",
+              "level": "N4"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「本当にありがとうございました」とお礼を言って、急いで駅へ向かいました。",
+          "literalEn": "really Thank you いま した [with/and] expression of gratitude [obj] to say って urgent [in/by] station [toward] facing した",
+          "naturalEn": "“Thank you so much,” he said, and hurried back to the station.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "本当に",
+              "reading": "ほんとうに",
+              "meaning": "really; truly",
+              "baseForm": "本当に",
+              "level": "N5"
+            },
+            {
+              "surface": "ありがとう",
+              "meaning": "Thank you",
+              "baseForm": "ありがとう",
+              "level": "N5"
+            },
+            {
+              "surface": "ご"
+            },
+            {
+              "surface": "ざ"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "お礼",
+              "reading": "おれい",
+              "meaning": "expression of gratitude",
+              "baseForm": "お礼",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "急",
+              "reading": "きゅう",
+              "meaning": "urgent; steep",
+              "baseForm": "急",
+              "level": "N4"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "駅",
+              "reading": "えき",
+              "meaning": "station",
+              "baseForm": "駅",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "向かい",
+              "reading": "むかい",
+              "meaning": "facing; opposite; across the street",
+              "baseForm": "向かい",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "山田さんはどうして交番へ行きましたか。",
+      "options": [
+        "道がわからなかったから",
+        "財布をなくしたから",
+        "お金を拾ったから",
+        "お巡りさんと話したかったから"
+      ],
+      "answerIndex": 1,
+      "explanation": "「財布をなくしたから」 is correct: 「昨日の夕方、山田さんは財布をなくしてしまいました。」 (Yesterday evening, Mr. Yamada lost his wallet.)"
+    },
+    {
+      "question": "山田さんの財布の中には何が入っていましたか。",
+      "options": [
+        "切符と五千円",
+        "鍵と一万円",
+        "大切なカードと一万円",
+        "家族の写真"
+      ],
+      "answerIndex": 2,
+      "explanation": "「大切なカードと一万円」 is correct: 「中に大切なカードと一万円が入っています」と答えました。」 (\"It has some important cards and 10,000 yen inside,\" he replied.)"
+    },
+    {
+      "question": "なくした財布はどこで見つかりましたか。",
+      "options": [
+        "交番の中",
+        "会社の中",
+        "道の上",
+        "駅の中"
+      ],
+      "answerIndex": 3,
+      "explanation": "「駅の中」 is the correct answer according to the story."
+    }
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/police-station.json"
+}

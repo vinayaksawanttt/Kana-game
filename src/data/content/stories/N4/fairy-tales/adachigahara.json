@@ -14,19 +14,2208 @@
   "paragraphs": [
     {
       "ja": "昔々、安達ヶ原（あだちがはら）という広い野原に、人を食べる恐ろしい鬼が住んでいると言われていました。 ある秋の夕方、一人の旅の坊さんが道に迷ってしまいました。 坊さんはとても疲れて、お腹が空いていました。 遠くに小さな家の明かりが見えたので、坊さんは急いでその家に向かいました。 家の中には一人のおばあさんがいて、糸を紡いで（つむいで）いました。 坊さんは「道に迷って困っています。今夜、ここに泊めてくれませんか」と頼みました。",
-      "en": "Long, long ago, it was said that a terrifying goblin that ate people lived in a wide plain called Adachigahara. One autumn evening, a traveling priest lost his way. The priest was very tired and hungry. Because he saw the light of a small house in the distance, the priest hurried toward that house. Inside the house was an old woman, spinning thread. The priest asked, \"I am troubled having lost my way. Won't you let me stay here tonight?\""
+      "en": "Long, long ago, it was said that a terrifying goblin that ate people lived in a wide plain called Adachigahara. One autumn evening, a traveling priest lost his way. The priest was very tired and hungry. Because he saw the light of a small house in the distance, the priest hurried toward that house. Inside the house was an old woman, spinning thread. The priest asked, \"I am troubled having lost my way. Won't you let me stay here tonight?\"",
+      "sentences": [
+        {
+          "ja": "昔々、安達ヶ原（あだちがはら）という広い野原に、人を食べる恐ろしい鬼が住んでいると言われていました。",
+          "literalEn": "olden days Adachi field という spacious field [at/to] person [obj] to eat terrible ogre [subj] dwelling んで to be [with/and] to say われ てい した",
+          "naturalEn": "Long, long ago, it was said that a terrifying ogre that ate people lived in a vast plain called Adachigahara.",
+          "tokens": [
+            {
+              "surface": "昔",
+              "reading": "むかし",
+              "meaning": "olden days; former",
+              "baseForm": "昔",
+              "level": "N4"
+            },
+            {
+              "surface": "々"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "安達",
+              "reading": "あだち",
+              "meaning": "Adachi",
+              "baseForm": "安達",
+              "level": "N4"
+            },
+            {
+              "surface": "ヶ"
+            },
+            {
+              "surface": "原",
+              "reading": "はら",
+              "meaning": "field; plain; prairie",
+              "baseForm": "原",
+              "level": "N3"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "広い",
+              "reading": "ひろい",
+              "meaning": "spacious; wide",
+              "baseForm": "広い",
+              "level": "N5"
+            },
+            {
+              "surface": "野原",
+              "reading": "のはら",
+              "meaning": "field; plain; meadow",
+              "baseForm": "野原",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "食べる",
+              "reading": "たべる",
+              "meaning": "to eat",
+              "baseForm": "食べる",
+              "level": "N5"
+            },
+            {
+              "surface": "恐ろしい",
+              "reading": "おそろしい",
+              "meaning": "terrible; dreadful",
+              "baseForm": "恐ろしい",
+              "level": "N3"
+            },
+            {
+              "surface": "鬼",
+              "reading": "おに",
+              "meaning": "ogre; demon; it (i.e., in a game of tag)",
+              "baseForm": "鬼",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "住",
+              "reading": "じゅう",
+              "meaning": "dwelling; living",
+              "baseForm": "住",
+              "level": "N1"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "われ"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ある秋の夕方、一人の旅の坊さんが道に迷ってしまいました。",
+          "literalEn": "to be autumn ['s / of] evening one person ['s / of] travel ['s / of] Buddhist priest [subj] street [at/to] astray って しま いま した",
+          "naturalEn": "One autumn evening, a traveling monk lost his way.",
+          "tokens": [
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "秋",
+              "reading": "あき",
+              "meaning": "autumn",
+              "baseForm": "秋",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "夕方",
+              "reading": "ゆうがた",
+              "meaning": "evening",
+              "baseForm": "夕方",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "一人",
+              "reading": "ひとり",
+              "meaning": "one person; alone",
+              "baseForm": "一人",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "旅",
+              "reading": "たび",
+              "meaning": "travel; trip; journey",
+              "baseForm": "旅",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "坊さん",
+              "reading": "ぼうさん",
+              "meaning": "Buddhist priest; monk",
+              "baseForm": "坊さん",
+              "level": "N2"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "道",
+              "reading": "みち",
+              "meaning": "street",
+              "baseForm": "道",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "迷",
+              "reading": "まよ",
+              "meaning": "astray, be perplexed, err",
+              "baseForm": "迷",
+              "level": "N3"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "坊さんはとても疲れて、お腹が空いていました。",
+          "literalEn": "Buddhist priest [topic] very tiredness [and] stomach [subj] sky てい した",
+          "naturalEn": "The monk was very tired and hungry.",
+          "tokens": [
+            {
+              "surface": "坊さん",
+              "reading": "ぼうさん",
+              "meaning": "Buddhist priest; monk",
+              "baseForm": "坊さん",
+              "level": "N2"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "疲れ",
+              "reading": "つかれ",
+              "meaning": "tiredness; fatigue",
+              "baseForm": "疲れ",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "お腹",
+              "reading": "おなか",
+              "meaning": "stomach; belly",
+              "baseForm": "お腹",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "空",
+              "reading": "そら",
+              "meaning": "sky",
+              "baseForm": "空",
+              "level": "N5"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "遠くに小さな家の明かりが見えたので、坊さんは急いでその家に向かいました。",
+          "literalEn": "distant [at/to] little house ['s / of] lamplight [subj] to see [past] ので Buddhist priest [topic] urgent [in/by] that house [at/to] facing した",
+          "naturalEn": "He saw the light from a small house in the distance, so the monk hurried toward it.",
+          "tokens": [
+            {
+              "surface": "遠く",
+              "reading": "とおく",
+              "meaning": "distant",
+              "baseForm": "遠く",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "小さな",
+              "reading": "ちいさな",
+              "meaning": "little",
+              "baseForm": "小さな",
+              "level": "N5"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "明かり",
+              "reading": "あかり",
+              "meaning": "lamplight; light (in general); brightness",
+              "baseForm": "明かり",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "見え",
+              "reading": "みえ",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "ので"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "坊さん",
+              "reading": "ぼうさん",
+              "meaning": "Buddhist priest; monk",
+              "baseForm": "坊さん",
+              "level": "N2"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "急",
+              "reading": "きゅう",
+              "meaning": "urgent; steep",
+              "baseForm": "急",
+              "level": "N4"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "向かい",
+              "reading": "むかい",
+              "meaning": "facing; opposite; across the street",
+              "baseForm": "向かい",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "家の中には一人のおばあさんがいて、糸を紡いで（つむいで）いました。",
+          "literalEn": "house ['s / of] middle [at/to] [topic] one person ['s / of] old woman がい [and] thread [obj] spinning [in/by] いま した",
+          "naturalEn": "Inside the house was an old woman, spinning thread.",
+          "tokens": [
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "一人",
+              "reading": "ひとり",
+              "meaning": "one person; alone",
+              "baseForm": "一人",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "がい"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "糸",
+              "reading": "いと",
+              "meaning": "thread",
+              "baseForm": "糸",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "紡",
+              "reading": "つむ",
+              "meaning": "spinning",
+              "baseForm": "紡",
+              "level": "N1"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "坊さんは「道に迷って困っています。",
+          "literalEn": "Buddhist priest [topic] street [at/to] astray って to be worried って [polite]",
+          "naturalEn": "The monk said, “I’m lost and in trouble.",
+          "tokens": [
+            {
+              "surface": "坊さん",
+              "reading": "ぼうさん",
+              "meaning": "Buddhist priest; monk",
+              "baseForm": "坊さん",
+              "level": "N2"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "道",
+              "reading": "みち",
+              "meaning": "street",
+              "baseForm": "道",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "迷",
+              "reading": "まよ",
+              "meaning": "astray, be perplexed, err",
+              "baseForm": "迷",
+              "level": "N3"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "困",
+              "reading": "こま",
+              "meaning": "to be worried",
+              "baseForm": "困る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "今夜、ここに泊めてくれませんか」と頼みました。",
+          "literalEn": "tonight here [at/to] counter for nights of a stay てく せん [?] [with/and] request した",
+          "naturalEn": "“Could you please let me stay here tonight?” he asked.",
+          "tokens": [
+            {
+              "surface": "今夜",
+              "reading": "こんや",
+              "meaning": "tonight",
+              "baseForm": "今夜",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ここ",
+              "meaning": "here",
+              "baseForm": "ここ",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "泊",
+              "reading": "はく",
+              "meaning": "counter for nights of a stay",
+              "baseForm": "泊",
+              "level": "N1"
+            },
+            {
+              "surface": "め"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "頼み",
+              "reading": "たのみ",
+              "meaning": "request; favor; reliance",
+              "baseForm": "頼み",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "おばあさんは「こんな汚い家ですが、どうぞ入ってください」と言って、坊さんに温かい食事を運びました。 坊さんは親切なおばあさんに会えて、本当に運がいいと思いました。 しばらくすると、火が消えそうになりました。 おばあさんは「薪（まき）を拾ってきますから、ここで待っていてください。 でも、絶対に奥の部屋を見てはいけませんよ」と約束させて、外へ出かけました。",
-      "en": "The old woman said, \"It is a dirty house, but please come in,\" and brought the priest a warm meal. The priest thought he was truly lucky to have met a kind old woman. After a while, the fire was about to go out. The old woman made him promise, \"I will go gather firewood, so please wait here. But you must absolutely not look into the back room,\" and went outside."
+      "en": "The old woman said, \"It is a dirty house, but please come in,\" and brought the priest a warm meal. The priest thought he was truly lucky to have met a kind old woman. After a while, the fire was about to go out. The old woman made him promise, \"I will go gather firewood, so please wait here. But you must absolutely not look into the back room,\" and went outside.",
+      "sentences": [
+        {
+          "ja": "おばあさんは「こんな汚い家ですが、どうぞ入ってください」と言って、坊さんに温かい食事を運びました。",
+          "literalEn": "old woman [topic] such dirty house ですが please to enter って くだ さい [with/and] to say って Buddhist priest [at/to] luke warm to have a meal [obj] fortune した",
+          "naturalEn": "The old woman said, “This house is a bit dirty, but please come in,” and brought the monk a warm meal.",
+          "tokens": [
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "こんな",
+              "meaning": "such",
+              "baseForm": "こんな",
+              "level": "N5"
+            },
+            {
+              "surface": "汚い",
+              "reading": "きたない",
+              "meaning": "dirty",
+              "baseForm": "汚い",
+              "level": "N5"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "ですが"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "どうぞ",
+              "meaning": "please",
+              "baseForm": "どうぞ",
+              "level": "N5"
+            },
+            {
+              "surface": "入",
+              "reading": "はい",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "くだ"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "坊さん",
+              "reading": "ぼうさん",
+              "meaning": "Buddhist priest; monk",
+              "baseForm": "坊さん",
+              "level": "N2"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "温かい",
+              "reading": "ぬるかい",
+              "meaning": "luke warm",
+              "baseForm": "温い",
+              "level": "N5"
+            },
+            {
+              "surface": "食事",
+              "reading": "しょくじ",
+              "meaning": "to have a meal",
+              "baseForm": "食事",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "運び",
+              "reading": "うんび",
+              "meaning": "fortune; luck",
+              "baseForm": "運",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "坊さんは親切なおばあさんに会えて、本当に運がいいと思いました。",
+          "literalEn": "Buddhist priest [topic] kindness old woman [at/to] meeting えて really fortune [subj] good [with/and] to think した",
+          "naturalEn": "The monk felt truly fortunate to have met such a kind old woman.",
+          "tokens": [
+            {
+              "surface": "坊さん",
+              "reading": "ぼうさん",
+              "meaning": "Buddhist priest; monk",
+              "baseForm": "坊さん",
+              "level": "N2"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "親切",
+              "reading": "しんせつ",
+              "meaning": "kindness",
+              "baseForm": "親切",
+              "level": "N4"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "会",
+              "reading": "かい",
+              "meaning": "meeting; assembly; party",
+              "baseForm": "会",
+              "level": "N3"
+            },
+            {
+              "surface": "えて"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "本当に",
+              "reading": "ほんとうに",
+              "meaning": "really; truly",
+              "baseForm": "本当に",
+              "level": "N5"
+            },
+            {
+              "surface": "運",
+              "reading": "うん",
+              "meaning": "fortune; luck",
+              "baseForm": "運",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いい",
+              "meaning": "good",
+              "baseForm": "いい",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "思い",
+              "reading": "おもい",
+              "meaning": "to think; to feel",
+              "baseForm": "思う",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "しばらくすると、火が消えそうになりました。",
+          "literalEn": "little while then fire [subj] to erase really [at/to] なり した",
+          "naturalEn": "After a while, the fire began to die down.",
+          "tokens": [
+            {
+              "surface": "しばらく",
+              "meaning": "little while",
+              "baseForm": "しばらく",
+              "level": "N4"
+            },
+            {
+              "surface": "すると",
+              "meaning": "then",
+              "baseForm": "すると",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "火",
+              "reading": "ひ",
+              "meaning": "fire",
+              "baseForm": "火",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "消",
+              "reading": "け",
+              "meaning": "to erase; to turn off power",
+              "baseForm": "消す",
+              "level": "N5"
+            },
+            {
+              "surface": "え"
+            },
+            {
+              "surface": "そう",
+              "meaning": "really",
+              "baseForm": "そう",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "おばあさんは「薪（まき）を拾ってきますから、ここで待っていてください。",
+          "literalEn": "old woman [topic] firewood [obj] to pick up って [polite] [from] here [in/by] to wait って [and] くだ さい",
+          "naturalEn": "The old woman said, “I’ll go gather some firewood, so please wait here.",
+          "tokens": [
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "薪",
+              "reading": "たきぎ",
+              "meaning": "firewood, fuel, kindling",
+              "baseForm": "薪",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "拾",
+              "reading": "ひろ",
+              "meaning": "to pick up; to gather",
+              "baseForm": "拾う",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ここ",
+              "meaning": "here",
+              "baseForm": "ここ",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "待",
+              "reading": "ま",
+              "meaning": "to wait",
+              "baseForm": "待つ",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "くだ"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "でも、絶対に奥の部屋を見てはいけませんよ」と約束させて、外へ出かけました。",
+          "literalEn": "but absolute interior ['s / of] room [obj] to see [and] yes せん [you know] [with/and] promise [and] outside [toward] to put out かけ した",
+          "naturalEn": "\"But you must never look into the back room,\" she told him, making him promise, and then she went outside.",
+          "tokens": [
+            {
+              "surface": "でも",
+              "meaning": "but",
+              "baseForm": "でも",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "絶対に",
+              "reading": "ぜったいに",
+              "meaning": "absolute; unconditional; absoluteness",
+              "baseForm": "絶対",
+              "level": "N3"
+            },
+            {
+              "surface": "奥",
+              "reading": "おく",
+              "meaning": "interior; inner part",
+              "baseForm": "奥",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "部屋",
+              "reading": "へや",
+              "meaning": "room",
+              "baseForm": "部屋",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "はい",
+              "meaning": "yes",
+              "baseForm": "はい",
+              "level": "N5"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "よ"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "約束",
+              "reading": "やくそく",
+              "meaning": "promise",
+              "baseForm": "約束",
+              "level": "N4"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "外",
+              "reading": "そと",
+              "meaning": "outside",
+              "baseForm": "外",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "かけ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "坊さんは一人で待っていましたが、奥の部屋に何があるか気になって仕方がありませんでした。 「少しだけなら見てもいいだろう」と思って、坊さんは奥の部屋の戸を静かに開けました。 部屋の中を見ると、たくさんの人の骨が山のように積まれていて、血の匂いがしました。 坊さんは「あのおばあさんが鬼だったんだ！」と気がついて、震えながら急いで家から逃げ出しました。",
-      "en": "The priest waited alone, but he couldn't help being curious about what was in the back room. Thinking \"If it's just a little, it should be fine to look,\" the priest quietly opened the door to the back room. When he looked inside the room, many human bones were piled up like a mountain, and it smelled of blood. The priest realized, \"That old woman was the goblin!\" and while trembling, hurriedly escaped from the house."
+      "en": "The priest waited alone, but he couldn't help being curious about what was in the back room. Thinking \"If it's just a little, it should be fine to look,\" the priest quietly opened the door to the back room. When he looked inside the room, many human bones were piled up like a mountain, and it smelled of blood. The priest realized, \"That old woman was the goblin!\" and while trembling, hurriedly escaped from the house.",
+      "sentences": [
+        {
+          "ja": "坊さんは一人で待っていましたが、奥の部屋に何があるか気になって仕方がありませんでした。",
+          "literalEn": "Buddhist priest [topic] one person [in/by] to wait って いま した [subj] interior ['s / of] room [at/to] what [subj] to be [?] spirit [at/to] って method [subj] ありま せん [in/by] した",
+          "naturalEn": "The young monk waited alone, but he couldn’t help but wonder what was in the back room.",
+          "tokens": [
+            {
+              "surface": "坊さん",
+              "reading": "ぼうさん",
+              "meaning": "Buddhist priest; monk",
+              "baseForm": "坊さん",
+              "level": "N2"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "一人",
+              "reading": "ひとり",
+              "meaning": "one person; alone",
+              "baseForm": "一人",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "待",
+              "reading": "ま",
+              "meaning": "to wait",
+              "baseForm": "待つ",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "奥",
+              "reading": "おく",
+              "meaning": "interior; inner part",
+              "baseForm": "奥",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "部屋",
+              "reading": "へや",
+              "meaning": "room",
+              "baseForm": "部屋",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "何",
+              "reading": "なん",
+              "meaning": "what",
+              "baseForm": "何",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "気",
+              "reading": "き",
+              "meaning": "spirit; mood",
+              "baseForm": "気",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "仕方",
+              "reading": "しかた",
+              "meaning": "method",
+              "baseForm": "仕方",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「少しだけなら見てもいいだろう」と思って、坊さんは奥の部屋の戸を静かに開けました。",
+          "literalEn": "few だけ なら to see [and] [also] good [is] ろう [with/and] to think って Buddhist priest [topic] interior ['s / of] room ['s / of] Japanese style door [obj] quiet [at/to] to open した",
+          "naturalEn": "Thinking, “It’s probably okay to take just a quick peek,” the monk quietly opened the door to the back room.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "少し",
+              "reading": "すこし",
+              "meaning": "few",
+              "baseForm": "少し",
+              "level": "N5"
+            },
+            {
+              "surface": "だけ"
+            },
+            {
+              "surface": "なら"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "いい",
+              "meaning": "good",
+              "baseForm": "いい",
+              "level": "N5"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "ろう"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "思",
+              "reading": "おも",
+              "meaning": "to think; to feel",
+              "baseForm": "思う",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "坊さん",
+              "reading": "ぼうさん",
+              "meaning": "Buddhist priest; monk",
+              "baseForm": "坊さん",
+              "level": "N2"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "奥",
+              "reading": "おく",
+              "meaning": "interior; inner part",
+              "baseForm": "奥",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "部屋",
+              "reading": "へや",
+              "meaning": "room",
+              "baseForm": "部屋",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "戸",
+              "reading": "と",
+              "meaning": "Japanese style door",
+              "baseForm": "戸",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "静か",
+              "reading": "しずか",
+              "meaning": "quiet",
+              "baseForm": "静か",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "開",
+              "reading": "あ",
+              "meaning": "to open; to become open",
+              "baseForm": "開く",
+              "level": "N5"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "部屋の中を見ると、たくさんの人の骨が山のように積まれていて、血の匂いがしました。",
+          "literalEn": "room ['s / of] middle [obj] to see [with/and] many ['s / of] person ['s / of] bone [subj] mountain ['s / of] よう [at/to] to pile up まれ てい [and] blood ['s / of] to be fragrant [subj] しま した",
+          "naturalEn": "When he looked inside the room, he saw a mountain of human bones piled high, and the smell of blood filled the air.",
+          "tokens": [
+            {
+              "surface": "部屋",
+              "reading": "へや",
+              "meaning": "room",
+              "baseForm": "部屋",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見る",
+              "reading": "みる",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "骨",
+              "reading": "ほね",
+              "meaning": "bone",
+              "baseForm": "骨",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "積",
+              "reading": "つ",
+              "meaning": "to pile up; to stack",
+              "baseForm": "積む",
+              "level": "N2"
+            },
+            {
+              "surface": "まれ"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "血",
+              "reading": "ち",
+              "meaning": "blood",
+              "baseForm": "血",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "匂い",
+              "reading": "におい",
+              "meaning": "to be fragrant; to smell; to stink",
+              "baseForm": "匂う",
+              "level": "N2"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "坊さんは「あのおばあさんが鬼だったんだ！",
+          "literalEn": "Buddhist priest [topic] that over there old woman [subj] ogre [is] たん [is]",
+          "naturalEn": "The monk thought, “That old woman was a demon!”",
+          "tokens": [
+            {
+              "surface": "坊さん",
+              "reading": "ぼうさん",
+              "meaning": "Buddhist priest; monk",
+              "baseForm": "坊さん",
+              "level": "N2"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "あの",
+              "meaning": "that over there",
+              "baseForm": "あの",
+              "level": "N5"
+            },
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "鬼",
+              "reading": "おに",
+              "meaning": "ogre; demon; it (i.e., in a game of tag)",
+              "baseForm": "鬼",
+              "level": "N3"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "たん"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "！"
+            }
+          ]
+        },
+        {
+          "ja": "」と気がついて、震えながら急いで家から逃げ出しました。",
+          "literalEn": "[with/and] spirit [subj] つい [and] quake ながら urgent [in/by] house [from] to let loose to put out しま した",
+          "naturalEn": "” he realized, and, trembling, hurriedly fled the house.",
+          "tokens": [
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "気",
+              "reading": "き",
+              "meaning": "spirit; mood",
+              "baseForm": "気",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "つい"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "震え",
+              "reading": "ふるえ",
+              "meaning": "quake, quiver, shake",
+              "baseForm": "震",
+              "level": "N2"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "急",
+              "reading": "きゅう",
+              "meaning": "urgent; steep",
+              "baseForm": "急",
+              "level": "N4"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "逃げ",
+              "reading": "のがげ",
+              "meaning": "to let loose; to set free; to let escape",
+              "baseForm": "逃す",
+              "level": "N1"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "坊さんが一生懸命走っていると、後ろから「待て！どうして部屋を見たんだ！」という恐ろしい声が聞こえました。 鬼になったおばあさんが、ものすごい速さで追いかけてきました。 坊さんは捕まりそうになりましたが、神様に祈りながら走りました。 ついに朝になり、太陽が昇ると、鬼は消えてしまいました。 坊さんは無事に助かりました。",
-      "en": "As the priest was running with all his might, he heard a terrifying voice from behind saying, \"Wait! Why did you look in the room!\" The old woman, who had turned into a demon, chased after him at a tremendous speed. The priest was almost caught, but he ran while praying to God. Finally it became morning, and when the sun rose, the goblin disappeared. The priest was safely saved."
+      "en": "As the priest was running with all his might, he heard a terrifying voice from behind saying, \"Wait! Why did you look in the room!\" The old woman, who had turned into a demon, chased after him at a tremendous speed. The priest was almost caught, but he ran while praying to God. Finally it became morning, and when the sun rose, the goblin disappeared. The priest was safely saved.",
+      "sentences": [
+        {
+          "ja": "坊さんが一生懸命走っていると、後ろから「待て！",
+          "literalEn": "Buddhist priest [subj] with utmost effort to run って to be [with/and] behind [from] to wait [and]",
+          "naturalEn": "As the young monk ran with all his might, a voice called out from behind him, “Wait!",
+          "tokens": [
+            {
+              "surface": "坊さん",
+              "reading": "ぼうさん",
+              "meaning": "Buddhist priest; monk",
+              "baseForm": "坊さん",
+              "level": "N2"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "一生懸命",
+              "reading": "いっしょうけんめい",
+              "meaning": "with utmost effort",
+              "baseForm": "一生懸命",
+              "level": "N4"
+            },
+            {
+              "surface": "走",
+              "reading": "はし",
+              "meaning": "to run",
+              "baseForm": "走る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "後ろ",
+              "reading": "うしろ",
+              "meaning": "behind",
+              "baseForm": "後ろ",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "待",
+              "reading": "ま",
+              "meaning": "to wait",
+              "baseForm": "待つ",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "！"
+            }
+          ]
+        },
+        {
+          "ja": "どうして部屋を見たんだ！",
+          "literalEn": "for what reason room [obj] to see たん [is]",
+          "naturalEn": "“Why did you look into the room?!”",
+          "tokens": [
+            {
+              "surface": "どうして",
+              "meaning": "for what reason",
+              "baseForm": "どうして",
+              "level": "N5"
+            },
+            {
+              "surface": "部屋",
+              "reading": "へや",
+              "meaning": "room",
+              "baseForm": "部屋",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "たん"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "！"
+            }
+          ]
+        },
+        {
+          "ja": "」という恐ろしい声が聞こえました。",
+          "literalEn": "という terrible voice [subj] to hear した",
+          "naturalEn": "\" a terrifying voice rang out.",
+          "tokens": [
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "恐ろしい",
+              "reading": "おそろしい",
+              "meaning": "terrible; dreadful",
+              "baseForm": "恐ろしい",
+              "level": "N3"
+            },
+            {
+              "surface": "声",
+              "reading": "こえ",
+              "meaning": "voice",
+              "baseForm": "声",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "聞",
+              "reading": "き",
+              "meaning": "to hear; to listen to; to ask",
+              "baseForm": "聞く",
+              "level": "N5"
+            },
+            {
+              "surface": "こ"
+            },
+            {
+              "surface": "え"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "鬼になったおばあさんが、ものすごい速さで追いかけてきました。",
+          "literalEn": "ogre [at/to] [past] old woman [subj] ものすごい quick [in/by] to chase かけ [and] した",
+          "naturalEn": "The old woman, who had turned into a demon, came chasing after him at an incredible speed.",
+          "tokens": [
+            {
+              "surface": "鬼",
+              "reading": "おに",
+              "meaning": "ogre; demon; it (i.e., in a game of tag)",
+              "baseForm": "鬼",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ものすごい"
+            },
+            {
+              "surface": "速",
+              "reading": "はや",
+              "meaning": "quick",
+              "baseForm": "速い",
+              "level": "N5"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "追",
+              "reading": "お",
+              "meaning": "to chase; to run after",
+              "baseForm": "追う",
+              "level": "N3"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "かけ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "坊さんは捕まりそうになりましたが、神様に祈りながら走りました。",
+          "literalEn": "Buddhist priest [topic] to take まり really [at/to] なり した [subj] god [at/to] prayer ながら to run した",
+          "naturalEn": "Although the monk was almost caught, he kept running while praying to God.",
+          "tokens": [
+            {
+              "surface": "坊さん",
+              "reading": "ぼうさん",
+              "meaning": "Buddhist priest; monk",
+              "baseForm": "坊さん",
+              "level": "N2"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "捕",
+              "reading": "と",
+              "meaning": "to take; to catch (fish); to capture",
+              "baseForm": "捕る",
+              "level": "N2"
+            },
+            {
+              "surface": "まり"
+            },
+            {
+              "surface": "そう",
+              "meaning": "really",
+              "baseForm": "そう",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "神様",
+              "reading": "かみさま",
+              "meaning": "god",
+              "baseForm": "神様",
+              "level": "N2"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "祈り",
+              "reading": "いのり",
+              "meaning": "prayer; supplication",
+              "baseForm": "祈り",
+              "level": "N1"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "走り",
+              "reading": "はしり",
+              "meaning": "to run",
+              "baseForm": "走る",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ついに朝になり、太陽が昇ると、鬼は消えてしまいました。",
+          "literalEn": "ついに morning [at/to] なり sun [subj] to arise [with/and] ogre [topic] to erase えて しま いま した",
+          "naturalEn": "Finally, morning came, and as the sun rose, the demon vanished.",
+          "tokens": [
+            {
+              "surface": "ついに"
+            },
+            {
+              "surface": "朝",
+              "reading": "あさ",
+              "meaning": "morning",
+              "baseForm": "朝",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "太陽",
+              "reading": "たいよう",
+              "meaning": "sun; solar",
+              "baseForm": "太陽",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "昇る",
+              "reading": "のぼる",
+              "meaning": "to arise; to ascend; to go up",
+              "baseForm": "昇る",
+              "level": "N3"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "鬼",
+              "reading": "おに",
+              "meaning": "ogre; demon; it (i.e., in a game of tag)",
+              "baseForm": "鬼",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "消",
+              "reading": "け",
+              "meaning": "to erase; to turn off power",
+              "baseForm": "消す",
+              "level": "N5"
+            },
+            {
+              "surface": "えて"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "坊さんは無事に助かりました。",
+          "literalEn": "Buddhist priest [topic] safety [at/to] help [?] した",
+          "naturalEn": "The monk was saved.",
+          "tokens": [
+            {
+              "surface": "坊さん",
+              "reading": "ぼうさん",
+              "meaning": "Buddhist priest; monk",
+              "baseForm": "坊さん",
+              "level": "N2"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "無事",
+              "reading": "ぶじ",
+              "meaning": "safety; peace; quietness",
+              "baseForm": "無事",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "助",
+              "reading": "じょ",
+              "meaning": "help; rescue; assistant",
+              "baseForm": "助",
+              "level": "N1"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
@@ -38,7 +2227,8 @@
         "鬼を殺したかったから",
         "薪を拾いたかったから"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「道に迷って泊まりたかったから」 is correct: 「坊さんはとても疲れて、お腹が空いていました。」 (The monk was very tired and hungry.)"
     },
     {
       "question": "おばあさんは出かける前に、坊さんに何と言いましたか？",
@@ -48,7 +2238,8 @@
         "絶対に奥の部屋を見てはいけません",
         "たくさんご飯を食べなさい"
       ],
-      "answerIndex": 2
+      "answerIndex": 2,
+      "explanation": "「絶対に奥の部屋を見てはいけません」 is correct: 「でも、絶対に奥の部屋を見てはいけませんよ」と約束させて、外へ出かけました。」 (\"But you must never look into the back room,\" she told him, making him promise, and then she went outside.)"
     },
     {
       "question": "太陽が昇った後、どうなりましたか？",
@@ -58,7 +2249,9 @@
         "坊さんは鬼になりました",
         "おばあさんが泣きながら帰ってきました"
       ],
-      "answerIndex": 0
+      "answerIndex": 0,
+      "explanation": "「鬼は消えました」 is correct: 「ついに朝になり、太陽が昇ると、鬼は消えてしまいました。」 (Finally, morning came, and as the sun rose, the demon vanished.)"
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/adachigahara.json"
 }

@@ -251,7 +251,12 @@ function VocabularyGame({
   const firstLetter = firstMeaning.charAt(0).toLowerCase();
   const wordCount = firstMeaning.split(/\s+/).filter(Boolean).length;
   const lastMatch = result.attempts.length
-    ? checkVocabularyAnswer(result.attempts[result.attempts.length - 1], question.meanings)
+    ? checkVocabularyAnswer(
+        result.attempts[result.attempts.length - 1],
+        question.meanings,
+        question.synonyms,
+        question.modernMeaning
+      )
     : null;
   const resultMessage =
     result.status === "correct"

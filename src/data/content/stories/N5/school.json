@@ -5,40 +5,588 @@
   "titleEn": "Going to School",
   "level": "N5",
   "category": "Everyday Life",
-  "tags": ["school", "daily", "routine", "study"],
+  "tags": [
+    "school",
+    "daily",
+    "routine",
+    "study"
+  ],
   "paragraphs": [
     {
       "ja": "月曜日の朝、けんたさんは七時に起きました。顔を洗って、朝ごはんを食べました。",
-      "en": "On Monday morning, Kenta woke up at seven o'clock. He washed his face and ate breakfast."
+      "en": "On Monday morning, Kenta woke up at seven o'clock. He washed his face and ate breakfast.",
+      "sentences": [
+        {
+          "ja": "月曜日の朝、けんたさんは七時に起きました。",
+          "literalEn": "Monday ['s / of] morning [past] [Mr/Ms] [topic] seven time to wake した",
+          "naturalEn": "On Monday morning, Kenta woke up at 7:00.",
+          "tokens": [
+            {
+              "surface": "月曜日",
+              "reading": "げつようび",
+              "meaning": "Monday",
+              "baseForm": "月曜日",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "朝",
+              "reading": "あさ",
+              "meaning": "morning",
+              "baseForm": "朝",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "ん"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "七",
+              "reading": "しち",
+              "meaning": "seven",
+              "baseForm": "七",
+              "level": "N5"
+            },
+            {
+              "surface": "時に",
+              "reading": "ときに",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "起",
+              "reading": "おこ",
+              "meaning": "to wake",
+              "baseForm": "起す",
+              "level": "N4"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "顔を洗って、朝ごはんを食べました。",
+          "literalEn": "face [obj] to wash って morning ごはん [obj]  to eat した",
+          "naturalEn": "He washed his face and ate breakfast.",
+          "tokens": [
+            {
+              "surface": "顔",
+              "reading": "かお",
+              "meaning": "face, expression",
+              "baseForm": "顔",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "洗",
+              "reading": "あら",
+              "meaning": "to wash",
+              "baseForm": "洗う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "朝",
+              "reading": "あさ",
+              "meaning": "morning",
+              "baseForm": "朝",
+              "level": "N5"
+            },
+            {
+              "surface": "ごはん"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "食",
+              "reading": "く",
+              "meaning": "(male) (vulgar) to eat",
+              "baseForm": "食う",
+              "level": "N3"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "八時に青いかばんを持って、歩いて学校へ行きました。家から学校まで十五分かかりました。",
-      "en": "At eight o'clock, he took his blue bag and walked to school. It took fifteen minutes from home to school."
+      "en": "At eight o'clock, he took his blue bag and walked to school. It took fifteen minutes from home to school.",
+      "sentences": [
+        {
+          "ja": "八時に青いかばんを持って、歩いて学校へ行きました。",
+          "literalEn": "eight time blue bag [obj] to hold って pawn [and] school [toward] going した",
+          "naturalEn": "At 8:00, I took my blue backpack and walked to school.",
+          "tokens": [
+            {
+              "surface": "八",
+              "reading": "はち",
+              "meaning": "eight",
+              "baseForm": "八",
+              "level": "N5"
+            },
+            {
+              "surface": "時に",
+              "reading": "ときに",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "青い",
+              "reading": "あおい",
+              "meaning": "blue",
+              "baseForm": "青い",
+              "level": "N5"
+            },
+            {
+              "surface": "かばん",
+              "meaning": "bag; basket",
+              "baseForm": "かばん",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "持",
+              "reading": "も",
+              "meaning": "to hold",
+              "baseForm": "持つ",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "歩",
+              "reading": "ふ",
+              "meaning": "pawn (in chess or shogi)",
+              "baseForm": "歩",
+              "level": "N1"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "学校",
+              "reading": "がっこう",
+              "meaning": "school",
+              "baseForm": "学校",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "家から学校まで十五分かかりました。",
+          "literalEn": "house [from] school [until] fifteen dividing かかり した",
+          "naturalEn": "It took me fifteen minutes to walk from home to school.",
+          "tokens": [
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "学校",
+              "reading": "がっこう",
+              "meaning": "school",
+              "baseForm": "学校",
+              "level": "N5"
+            },
+            {
+              "surface": "まで"
+            },
+            {
+              "surface": "十五",
+              "reading": "じゅうご",
+              "meaning": "fifteen (15)",
+              "baseForm": "十五",
+              "level": "N5"
+            },
+            {
+              "surface": "分",
+              "reading": "ぶん",
+              "meaning": "dividing; part",
+              "baseForm": "分",
+              "level": "N3"
+            },
+            {
+              "surface": "かかり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "学校の門の前で友だちの山下さんに会いました。「おはようございます」とあいさつをしました。",
-      "en": "In front of the school gate, he met his friend Yamashita. They greeted each other with \"Good morning.\""
+      "en": "In front of the school gate, he met his friend Yamashita. They greeted each other with \"Good morning.\"",
+      "sentences": [
+        {
+          "ja": "学校の門の前で友だちの山下さんに会いました。",
+          "literalEn": "school ['s / of] gate ['s / of] before [in/by] friend ['s / of] Yamashita [Mr/Ms] [at/to] meeting いま した",
+          "naturalEn": "I ran into my friend Yamashita in front of the school gate.",
+          "tokens": [
+            {
+              "surface": "学校",
+              "reading": "がっこう",
+              "meaning": "school",
+              "baseForm": "学校",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "門",
+              "reading": "もん",
+              "meaning": "gate",
+              "baseForm": "門",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "前",
+              "reading": "まえ",
+              "meaning": "before",
+              "baseForm": "前",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "友だち",
+              "reading": "ともだち",
+              "meaning": "friend",
+              "baseForm": "友だち",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "山下",
+              "reading": "やました",
+              "meaning": "Yamashita (surname)",
+              "baseForm": "山下",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "会",
+              "reading": "かい",
+              "meaning": "meeting; assembly; party",
+              "baseForm": "会",
+              "level": "N3"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「おはようございます」とあいさつをしました。",
+          "literalEn": "Good morning [polite] [with/and] あいさつ [obj] しま した",
+          "naturalEn": "I said, “Good morning.”",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "おはよう",
+              "meaning": "(abbreviation) Good morning",
+              "baseForm": "おはよう",
+              "level": "N5"
+            },
+            {
+              "surface": "ご"
+            },
+            {
+              "surface": "ざ"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "あいさつ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "二人は一緒に教室へ入りました。楽しい一週間が始まりました。",
-      "en": "The two entered the classroom together. A fun week began."
+      "en": "The two entered the classroom together. A fun week began.",
+      "sentences": [
+        {
+          "ja": "二人は一緒に教室へ入りました。",
+          "literalEn": "two people [topic] together [at/to] classroom [toward] to enter した",
+          "naturalEn": "The two of them walked into the classroom together.",
+          "tokens": [
+            {
+              "surface": "二人",
+              "reading": "ふたり",
+              "meaning": "two people; pair",
+              "baseForm": "二人",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "一緒",
+              "reading": "いっしょ",
+              "meaning": "together",
+              "baseForm": "一緒",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "教室",
+              "reading": "きょうしつ",
+              "meaning": "classroom",
+              "baseForm": "教室",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "入り",
+              "reading": "はいり",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "楽しい一週間が始まりました。",
+          "literalEn": "enjoyable one week [subj] origin した",
+          "naturalEn": "A fun week had begun.",
+          "tokens": [
+            {
+              "surface": "楽しい",
+              "reading": "たのしい",
+              "meaning": "enjoyable",
+              "baseForm": "楽しい",
+              "level": "N5"
+            },
+            {
+              "surface": "一",
+              "reading": "いち",
+              "meaning": "one",
+              "baseForm": "一",
+              "level": "N5"
+            },
+            {
+              "surface": "週間",
+              "reading": "しゅうかん",
+              "meaning": "week; weekly",
+              "baseForm": "週間",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "始まり",
+              "reading": "はじまり",
+              "meaning": "origin; beginning",
+              "baseForm": "始まり",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
     {
       "question": "けんたさんは何時に起きましたか？",
-      "options": ["六時", "七時", "八時", "九時"],
-      "answerIndex": 1
+      "options": [
+        "六時",
+        "七時",
+        "八時",
+        "九時"
+      ],
+      "answerIndex": 1,
+      "explanation": "「七時」 is correct: 「月曜日の朝、けんたさんは七時に起きました。」 (On Monday morning, Kenta woke up at 7:00.)"
     },
     {
       "question": "けんたさんはどうやって学校へ行きましたか？",
-      "options": ["バスで", "電車で", "自転車で", "歩いて"],
-      "answerIndex": 3
+      "options": [
+        "バスで",
+        "電車で",
+        "自転車で",
+        "歩いて"
+      ],
+      "answerIndex": 3,
+      "explanation": "「歩いて」 is correct: 「八時に青いかばんを持って、歩いて学校へ行きました。」 (At 8:00, I took my blue backpack and walked to school.)"
     },
     {
       "question": "学校の門の前でだれに会いましたか？",
-      "options": ["先生", "山下さん", "お母さん", "田中さん"],
-      "answerIndex": 1
+      "options": [
+        "先生",
+        "山下さん",
+        "お母さん",
+        "田中さん"
+      ],
+      "answerIndex": 1,
+      "explanation": "「山下さん」 is correct: 「学校の門の前で友だちの山下さんに会いました。」 (I ran into my friend Yamashita in front of the school gate.)"
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/school.json"
 }

@@ -161,6 +161,7 @@ async function upsertPracticeItems(
     level?: string;
     prompt: string;
     answer: string;
+    reversePrompt?: string;
     reading?: string;
     missed: boolean;
   }>
@@ -178,6 +179,7 @@ async function upsertPracticeItems(
           level: entry.level ?? existing.level,
           prompt: entry.prompt,
           answer: entry.answer,
+          reversePrompt: entry.reversePrompt ?? existing.reversePrompt,
           reading: entry.reading ?? existing.reading,
           card: entry.missed ? { ...card, due: now } : card,
         };
@@ -188,6 +190,7 @@ async function upsertPracticeItems(
         ...(entry.level ? { level: entry.level } : {}),
         prompt: entry.prompt,
         answer: entry.answer,
+        ...(entry.reversePrompt ? { reversePrompt: entry.reversePrompt } : {}),
         ...(entry.reading ? { reading: entry.reading } : {}),
         card: createEmptyCard(now),
       };
@@ -263,6 +266,7 @@ export async function addVocabularyToSrs(input: {
   word: string;
   reading?: string;
   meaning: string;
+  reversePrompt?: string;
   level?: string;
 }): Promise<string> {
   const cleanWord = input.word.trim();
@@ -274,6 +278,7 @@ export async function addVocabularyToSrs(input: {
       level: input.level,
       prompt: cleanWord,
       answer: input.meaning.trim(),
+      reversePrompt: input.reversePrompt?.trim(),
       reading: input.reading?.trim(),
       missed: true,
     },

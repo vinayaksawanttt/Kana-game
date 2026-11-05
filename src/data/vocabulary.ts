@@ -17,6 +17,9 @@ export interface VocabularyRecord {
   meanings: string[];
   level: VocabularyLevel;
   pos: string[];
+  modernMeaning?: string;
+  reversePrompt?: string;
+  synonyms?: string[];
   examples: VocabularyExample[];
 }
 

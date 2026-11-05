@@ -14,23 +14,1931 @@
   "paragraphs": [
     {
       "ja": "昔々、浦島太郎という親切な男の人がいました。海で毎日、魚を捕まえていました。ある日、子供たちが海辺で一匹の亀をいじめていました。太郎は亀をかわいそうに思って、お金を払って亀を助けました。そして、亀を海へ帰しました。",
-      "en": "Long, long ago, there was a kind fisherman named Urashima Taro. Every day, he caught fish in the sea. One day, children were teasing a tortoise on the beach. Taro felt sorry for the tortoise, so he paid money to save it. Then, he returned the tortoise to the sea."
+      "en": "Long, long ago, there was a kind fisherman named Urashima Taro. Every day, he caught fish in the sea. One day, children were teasing a tortoise on the beach. Taro felt sorry for the tortoise, so he paid money to save it. Then, he returned the tortoise to the sea.",
+      "sentences": [
+        {
+          "ja": "昔々、浦島太郎という親切な男の人がいました。",
+          "literalEn": "olden days Urashima Taro という kindness man ['s / of] person [subj] いま した",
+          "naturalEn": "Once upon a time, there was a kind man named Urashima Taro.",
+          "tokens": [
+            {
+              "surface": "昔",
+              "reading": "むかし",
+              "meaning": "olden days; former",
+              "baseForm": "昔",
+              "level": "N4"
+            },
+            {
+              "surface": "々"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "浦島",
+              "reading": "うらしま",
+              "meaning": "Urashima (surname)",
+              "baseForm": "浦島",
+              "level": "N5"
+            },
+            {
+              "surface": "太郎",
+              "reading": "たろう",
+              "meaning": "Taro (given name)",
+              "baseForm": "太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "親切",
+              "reading": "しんせつ",
+              "meaning": "kindness",
+              "baseForm": "親切",
+              "level": "N4"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "男",
+              "reading": "おとこ",
+              "meaning": "man",
+              "baseForm": "男",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "海で毎日、魚を捕まえていました。",
+          "literalEn": "sea [in/by] every day fish [obj] to take えて いま した",
+          "naturalEn": "He used to catch fish in the sea every day.",
+          "tokens": [
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "毎日",
+              "reading": "まいにち",
+              "meaning": "every day",
+              "baseForm": "毎日",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "魚",
+              "reading": "さかな",
+              "meaning": "fish",
+              "baseForm": "魚",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "捕",
+              "reading": "と",
+              "meaning": "to take; to catch (fish); to capture",
+              "baseForm": "捕る",
+              "level": "N2"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "えて"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ある日、子供たちが海辺で一匹の亀をいじめていました。",
+          "literalEn": "to be day child たち [subj] beach [in/by] one animal ['s / of] tortoise [obj] いじめ てい した",
+          "naturalEn": "One day, some children were tormenting a turtle on the beach.",
+          "tokens": [
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "子供",
+              "reading": "こども",
+              "meaning": "child; children",
+              "baseForm": "子供",
+              "level": "N5"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "海辺",
+              "reading": "うみべ",
+              "meaning": "beach; seashore",
+              "baseForm": "海辺",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "一匹",
+              "reading": "いっぴき",
+              "meaning": "one animal (small)",
+              "baseForm": "一匹",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "亀",
+              "reading": "かめ",
+              "meaning": "tortoise, turtle",
+              "baseForm": "亀",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "いじめ"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "太郎は亀をかわいそうに思って、お金を払って亀を助けました。",
+          "literalEn": "Taro [topic] tortoise [obj] poor [at/to] to think って money [obj] to pay って tortoise [obj] assistance した",
+          "naturalEn": "Taro felt sorry for the turtle, so he paid some money to rescue it.",
+          "tokens": [
+            {
+              "surface": "太郎",
+              "reading": "たろう",
+              "meaning": "Taro (given name)",
+              "baseForm": "太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "亀",
+              "reading": "かめ",
+              "meaning": "tortoise, turtle",
+              "baseForm": "亀",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "かわいそう",
+              "meaning": "poor; pitiable; pathetic",
+              "baseForm": "かわいそう",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "思",
+              "reading": "おも",
+              "meaning": "to think; to feel",
+              "baseForm": "思う",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "お金",
+              "reading": "おかね",
+              "meaning": "money",
+              "baseForm": "お金",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "払",
+              "reading": "はら",
+              "meaning": "to pay",
+              "baseForm": "払う",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "亀",
+              "reading": "かめ",
+              "meaning": "tortoise, turtle",
+              "baseForm": "亀",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "助け",
+              "reading": "たすけ",
+              "meaning": "assistance",
+              "baseForm": "助け",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "そして、亀を海へ帰しました。",
+          "literalEn": "and tortoise [obj] sea [toward] to go back しま した",
+          "naturalEn": "And he returned the turtle to the sea.",
+          "tokens": [
+            {
+              "surface": "そして",
+              "meaning": "and",
+              "baseForm": "そして",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "亀",
+              "reading": "かめ",
+              "meaning": "tortoise, turtle",
+              "baseForm": "亀",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "帰",
+              "reading": "かえ",
+              "meaning": "to go back",
+              "baseForm": "帰る",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "次の日、太郎が海にいると、昨日の亀が来ました。亀は「助けてくれて、ありがとうございます。海の中にある竜宮城へ行きましょう」と言いました。太郎は亀の背中に乗りました。亀は海の中を泳いで、大きくてきれいな竜宮城へ行きました。",
-      "en": "The next day, when Taro was at the sea, yesterday's tortoise came. The tortoise said, \"Thank you for saving me. Let's go to the Dragon King's Palace under the sea.\" Taro rode on the tortoise's back. The tortoise swam inside the sea and went to the big and beautiful Palace."
+      "en": "The next day, when Taro was at the sea, yesterday's tortoise came. The tortoise said, \"Thank you for saving me. Let's go to the Dragon King's Palace under the sea.\" Taro rode on the tortoise's back. The tortoise swam inside the sea and went to the big and beautiful Palace.",
+      "sentences": [
+        {
+          "ja": "次の日、太郎が海にいると、昨日の亀が来ました。",
+          "literalEn": "next ['s / of] day Taro [subj] sea [at/to] to be [with/and] yesterday ['s / of] tortoise [subj] for した",
+          "naturalEn": "The next day, while Taro was at the beach, the turtle from the day before came to him.",
+          "tokens": [
+            {
+              "surface": "次",
+              "reading": "つぎ",
+              "meaning": "next",
+              "baseForm": "次",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "太郎",
+              "reading": "たろう",
+              "meaning": "Taro (given name)",
+              "baseForm": "太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "昨日",
+              "reading": "きのう",
+              "meaning": "yesterday",
+              "baseForm": "昨日",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "亀",
+              "reading": "かめ",
+              "meaning": "tortoise, turtle",
+              "baseForm": "亀",
+              "level": "N1"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "来",
+              "reading": "らい",
+              "meaning": "for (10 days); next (year)",
+              "baseForm": "来",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "亀は「助けてくれて、ありがとうございます。",
+          "literalEn": "tortoise [topic] assistance てく [and] Thank you [polite]",
+          "naturalEn": "The turtle said, “Thank you for saving me.",
+          "tokens": [
+            {
+              "surface": "亀",
+              "reading": "かめ",
+              "meaning": "tortoise, turtle",
+              "baseForm": "亀",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "助け",
+              "reading": "たすけ",
+              "meaning": "assistance",
+              "baseForm": "助け",
+              "level": "N1"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ありがとう",
+              "meaning": "Thank you",
+              "baseForm": "ありがとう",
+              "level": "N5"
+            },
+            {
+              "surface": "ご"
+            },
+            {
+              "surface": "ざ"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "海の中にある竜宮城へ行きましょう」と言いました。",
+          "literalEn": "sea ['s / of] middle [at/to] to be dragon palace castle [toward] going しょう [with/and] to say いま した",
+          "naturalEn": "\"Let's go to the Dragon Palace in the ocean,\" it said.",
+          "tokens": [
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "竜",
+              "reading": "いせ",
+              "meaning": "dragon, imperial",
+              "baseForm": "竜",
+              "level": "N1"
+            },
+            {
+              "surface": "宮城",
+              "reading": "ぐうじょう",
+              "meaning": "palace castle",
+              "baseForm": "宮城",
+              "level": "N4"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "しょう"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "太郎は亀の背中に乗りました。",
+          "literalEn": "Taro [topic] tortoise ['s / of] back of the body [at/to] to get on した",
+          "naturalEn": "Taro climbed onto the turtle’s back.",
+          "tokens": [
+            {
+              "surface": "太郎",
+              "reading": "たろう",
+              "meaning": "Taro (given name)",
+              "baseForm": "太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "亀",
+              "reading": "かめ",
+              "meaning": "tortoise, turtle",
+              "baseForm": "亀",
+              "level": "N1"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "背中",
+              "reading": "せなか",
+              "meaning": "back of the body",
+              "baseForm": "背中",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "乗り",
+              "reading": "のり",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "亀は海の中を泳いで、大きくてきれいな竜宮城へ行きました。",
+          "literalEn": "tortoise [topic] sea ['s / of] middle [obj] to swim [in/by] large [and] pretty dragon palace castle [toward] going した",
+          "naturalEn": "The turtle swam through the ocean to a large and beautiful Dragon Palace.",
+          "tokens": [
+            {
+              "surface": "亀",
+              "reading": "かめ",
+              "meaning": "tortoise, turtle",
+              "baseForm": "亀",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "泳",
+              "reading": "およ",
+              "meaning": "to swim",
+              "baseForm": "泳ぐ",
+              "level": "N5"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "大きく",
+              "reading": "だいきく",
+              "meaning": "large; big; great",
+              "baseForm": "大",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "きれい",
+              "meaning": "pretty; clean",
+              "baseForm": "きれい",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "竜",
+              "reading": "いせ",
+              "meaning": "dragon, imperial",
+              "baseForm": "竜",
+              "level": "N1"
+            },
+            {
+              "surface": "宮城",
+              "reading": "ぐうじょう",
+              "meaning": "palace castle",
+              "baseForm": "宮城",
+              "level": "N4"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "竜宮城には、とてもきれいなお姫様がいました。お姫様は「太郎さん、亀を助けてくれてありがとうございます」と言いました。美味しい魚の料理がたくさんありました。太郎は毎日お姫様と一緒に楽しく遊びました。太郎は三日ぐらい竜宮城にいました。",
-      "en": "At the Palace, there was a very beautiful princess. The princess said, \"Taro, thank you for saving the tortoise.\" There was a lot of delicious fish food. Taro played happily with the princess every day. Taro stayed at the Palace for about three days."
+      "en": "At the Palace, there was a very beautiful princess. The princess said, \"Taro, thank you for saving the tortoise.\" There was a lot of delicious fish food. Taro played happily with the princess every day. Taro stayed at the Palace for about three days.",
+      "sentences": [
+        {
+          "ja": "竜宮城には、とてもきれいなお姫様がいました。",
+          "literalEn": "dragon palace castle [at/to] [topic] very pretty princess [subj] いま した",
+          "naturalEn": "In the Dragon Palace, there was a very beautiful princess.",
+          "tokens": [
+            {
+              "surface": "竜",
+              "reading": "いせ",
+              "meaning": "dragon, imperial",
+              "baseForm": "竜",
+              "level": "N1"
+            },
+            {
+              "surface": "宮城",
+              "reading": "ぐうじょう",
+              "meaning": "palace castle",
+              "baseForm": "宮城",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "きれい",
+              "meaning": "pretty; clean",
+              "baseForm": "きれい",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "お姫様",
+              "reading": "おひめさま",
+              "meaning": "princess",
+              "baseForm": "お姫様",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "お姫様は「太郎さん、亀を助けてくれてありがとうございます」と言いました。",
+          "literalEn": "princess [topic] Taro [Mr/Ms] tortoise [obj] assistance てく [and] Thank you [polite] [with/and] to say いま した",
+          "naturalEn": "The princess said, “Taro, thank you for saving the turtle.”",
+          "tokens": [
+            {
+              "surface": "お姫様",
+              "reading": "おひめさま",
+              "meaning": "princess",
+              "baseForm": "お姫様",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "太郎",
+              "reading": "たろう",
+              "meaning": "Taro (given name)",
+              "baseForm": "太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "亀",
+              "reading": "かめ",
+              "meaning": "tortoise, turtle",
+              "baseForm": "亀",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "助け",
+              "reading": "たすけ",
+              "meaning": "assistance",
+              "baseForm": "助け",
+              "level": "N1"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "ありがとう",
+              "meaning": "Thank you",
+              "baseForm": "ありがとう",
+              "level": "N5"
+            },
+            {
+              "surface": "ご"
+            },
+            {
+              "surface": "ざ"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "美味しい魚の料理がたくさんありました。",
+          "literalEn": "delicious fish cuisine [subj] many ありま した",
+          "naturalEn": "There were plenty of delicious fish dishes.",
+          "tokens": [
+            {
+              "surface": "美味しい",
+              "reading": "おいしい",
+              "meaning": "delicious; tasty",
+              "baseForm": "美味しい",
+              "level": "N5"
+            },
+            {
+              "surface": "魚の",
+              "reading": "さかなの",
+              "meaning": "fish",
+              "baseForm": "魚",
+              "level": "N5"
+            },
+            {
+              "surface": "料理",
+              "reading": "りょうり",
+              "meaning": "cuisine",
+              "baseForm": "料理",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "太郎は毎日お姫様と一緒に楽しく遊びました。",
+          "literalEn": "Taro [topic] every day princess [with/and] together [at/to] comfort しく play した",
+          "naturalEn": "Taro had fun playing with the princess every day.",
+          "tokens": [
+            {
+              "surface": "太郎",
+              "reading": "たろう",
+              "meaning": "Taro (given name)",
+              "baseForm": "太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "毎日",
+              "reading": "まいにち",
+              "meaning": "every day",
+              "baseForm": "毎日",
+              "level": "N5"
+            },
+            {
+              "surface": "お姫様",
+              "reading": "おひめさま",
+              "meaning": "princess",
+              "baseForm": "お姫様",
+              "level": "N4"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "一緒",
+              "reading": "いっしょ",
+              "meaning": "together",
+              "baseForm": "一緒",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "楽",
+              "reading": "らく",
+              "meaning": "comfort; ease",
+              "baseForm": "楽",
+              "level": "N3"
+            },
+            {
+              "surface": "しく"
+            },
+            {
+              "surface": "遊び",
+              "reading": "あそび",
+              "meaning": "play",
+              "baseForm": "遊び",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "太郎は三日ぐらい竜宮城にいました。",
+          "literalEn": "Taro [topic] three days approximately dragon palace castle [at/to] いま した",
+          "naturalEn": "Taro stayed at the Dragon Palace for about three days.",
+          "tokens": [
+            {
+              "surface": "太郎",
+              "reading": "たろう",
+              "meaning": "Taro (given name)",
+              "baseForm": "太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "三日",
+              "reading": "みっか",
+              "meaning": "three days; third day",
+              "baseForm": "三日",
+              "level": "N5"
+            },
+            {
+              "surface": "ぐらい",
+              "meaning": "approximately",
+              "baseForm": "ぐらい",
+              "level": "N1"
+            },
+            {
+              "surface": "竜",
+              "reading": "いせ",
+              "meaning": "dragon, imperial",
+              "baseForm": "竜",
+              "level": "N1"
+            },
+            {
+              "surface": "宮城",
+              "reading": "ぐうじょう",
+              "meaning": "palace castle",
+              "baseForm": "宮城",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "しかし、太郎はうちのお父さんとお母さんに会いたくなりました。「私はうちに帰ります」と太郎は言いました。お姫様は悲しそうに、一つの箱を渡しました。「これはお土産の箱です。でも、絶対に開けないでください」と言いました。太郎は「はい」と言って、また亀に乗って村へ帰りました。",
-      "en": "However, Taro started to miss his father and mother at home. \"I will return home,\" Taro said. The princess looked sad and handed him a box. \"This is a souvenir box. But please never open it,\" she said. Taro said \"Yes,\" and rode the tortoise back to his village."
+      "en": "However, Taro started to miss his father and mother at home. \"I will return home,\" Taro said. The princess looked sad and handed him a box. \"This is a souvenir box. But please never open it,\" she said. Taro said \"Yes,\" and rode the tortoise back to his village.",
+      "sentences": [
+        {
+          "ja": "しかし、太郎はうちのお父さんとお母さんに会いたくなりました。",
+          "literalEn": "however Taro [topic] within ['s / of] father [with/and] mother [at/to] meeting いたく なり した",
+          "naturalEn": "However, Taro began to miss his father and mother.",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "太郎",
+              "reading": "たろう",
+              "meaning": "Taro (given name)",
+              "baseForm": "太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "うち",
+              "meaning": "within",
+              "baseForm": "うち",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "お父さん",
+              "reading": "おとうさん",
+              "meaning": "father",
+              "baseForm": "お父さん",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "お母さん",
+              "reading": "おかあさん",
+              "meaning": "mother",
+              "baseForm": "お母さん",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "会",
+              "reading": "かい",
+              "meaning": "meeting; assembly; party",
+              "baseForm": "会",
+              "level": "N3"
+            },
+            {
+              "surface": "いたく"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「私はうちに帰ります」と太郎は言いました。",
+          "literalEn": "I [topic] within [at/to] return [polite] [with/and] Taro [topic] to say いま した",
+          "naturalEn": "“I’m going home,” Taro said.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "うち",
+              "meaning": "within",
+              "baseForm": "うち",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "帰り",
+              "reading": "かえり",
+              "meaning": "return",
+              "baseForm": "帰り",
+              "level": "N4"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "太郎",
+              "reading": "たろう",
+              "meaning": "Taro (given name)",
+              "baseForm": "太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "お姫様は悲しそうに、一つの箱を渡しました。",
+          "literalEn": "princess [topic] sad しそう [at/to] one thing ['s / of] box [obj] to hand over した",
+          "naturalEn": "The princess looked sad as she handed him a box.",
+          "tokens": [
+            {
+              "surface": "お姫様",
+              "reading": "おひめさま",
+              "meaning": "princess",
+              "baseForm": "お姫様",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "悲",
+              "reading": "かな",
+              "meaning": "sad, deplore, grieve",
+              "baseForm": "悲",
+              "level": "N3"
+            },
+            {
+              "surface": "しそう"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "一つ",
+              "reading": "ひとつ",
+              "meaning": "one thing",
+              "baseForm": "一つ",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "箱",
+              "reading": "はこ",
+              "meaning": "box",
+              "baseForm": "箱",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "渡し",
+              "reading": "わたし",
+              "meaning": "to hand over",
+              "baseForm": "渡す",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「これはお土産の箱です。",
+          "literalEn": "this [topic] present ['s / of] box [is]",
+          "naturalEn": "“This is a box of souvenirs.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "これ",
+              "meaning": "this",
+              "baseForm": "これ",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "土産",
+              "reading": "みやげ",
+              "meaning": "present; souvenir",
+              "baseForm": "土産",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "箱",
+              "reading": "はこ",
+              "meaning": "box",
+              "baseForm": "箱",
+              "level": "N5"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "でも、絶対に開けないでください」と言いました。",
+          "literalEn": "but absolute to open [not] [in/by] くだ さい [with/and] to say いま した",
+          "naturalEn": "\"But please, don’t open it under any circumstances,\" she said.",
+          "tokens": [
+            {
+              "surface": "でも",
+              "meaning": "but",
+              "baseForm": "でも",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "絶対に",
+              "reading": "ぜったいに",
+              "meaning": "absolute; unconditional; absoluteness",
+              "baseForm": "絶対",
+              "level": "N3"
+            },
+            {
+              "surface": "開",
+              "reading": "あ",
+              "meaning": "to open; to become open",
+              "baseForm": "開く",
+              "level": "N5"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "くだ"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "太郎は「はい」と言って、また亀に乗って村へ帰りました。",
+          "literalEn": "Taro [topic] yes [with/and] to say って again tortoise [at/to] to get on って village [toward] return した",
+          "naturalEn": "Taro said, “Yes,” and rode the turtle back to the village.",
+          "tokens": [
+            {
+              "surface": "太郎",
+              "reading": "たろう",
+              "meaning": "Taro (given name)",
+              "baseForm": "太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "はい",
+              "meaning": "yes",
+              "baseForm": "はい",
+              "level": "N5"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "また",
+              "meaning": "again; and",
+              "baseForm": "また",
+              "level": "N5"
+            },
+            {
+              "surface": "亀",
+              "reading": "かめ",
+              "meaning": "tortoise, turtle",
+              "baseForm": "亀",
+              "level": "N1"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "乗",
+              "reading": "の",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "村",
+              "reading": "むら",
+              "meaning": "village",
+              "baseForm": "村",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "帰り",
+              "reading": "かえり",
+              "meaning": "return",
+              "baseForm": "帰り",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "しかし、村はすっかり変わっていました。太郎の家も、両親もいませんでした。三百年が過ぎていたのです。太郎はとても悲しくて、お姫様の箱を開けました。中から紫の煙が出ました。太郎は突然、おじいさんになりました。",
-      "en": "However, the village had completely changed. Taro's house and his parents were gone. Three hundred years had passed. Taro was very sad and opened the princess's box. Purple smoke came out from inside. Taro suddenly became an old man."
+      "en": "However, the village had completely changed. Taro's house and his parents were gone. Three hundred years had passed. Taro was very sad and opened the princess's box. Purple smoke came out from inside. Taro suddenly became an old man.",
+      "sentences": [
+        {
+          "ja": "しかし、村はすっかり変わっていました。",
+          "literalEn": "however village [topic] completely strange って いま した",
+          "naturalEn": "But the village had changed completely.",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "村",
+              "reading": "むら",
+              "meaning": "village",
+              "baseForm": "村",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "すっかり",
+              "meaning": "completely",
+              "baseForm": "すっかり",
+              "level": "N4"
+            },
+            {
+              "surface": "変",
+              "reading": "へん",
+              "meaning": "strange",
+              "baseForm": "変",
+              "level": "N4"
+            },
+            {
+              "surface": "わ"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "太郎の家も、両親もいませんでした。",
+          "literalEn": "Taro ['s / of] house [also] both parents [also] いま せん [in/by] した",
+          "naturalEn": "Taro’s house was gone, and his parents were gone too.",
+          "tokens": [
+            {
+              "surface": "太郎",
+              "reading": "たろう",
+              "meaning": "Taro (given name)",
+              "baseForm": "太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "両親",
+              "reading": "りょうしん",
+              "meaning": "both parents",
+              "baseForm": "両親",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "三百年が過ぎていたのです。",
+          "literalEn": "three hundred year [subj] past てい [past] ['s / of] [is]",
+          "naturalEn": "Three hundred years had passed.",
+          "tokens": [
+            {
+              "surface": "三百",
+              "reading": "さんびゃく",
+              "meaning": "three hundred (300)",
+              "baseForm": "三百",
+              "level": "N5"
+            },
+            {
+              "surface": "年",
+              "reading": "とし",
+              "meaning": "year",
+              "baseForm": "年",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "過ぎ",
+              "reading": "すぎ",
+              "meaning": "past; after",
+              "baseForm": "過ぎ",
+              "level": "N1"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "太郎はとても悲しくて、お姫様の箱を開けました。",
+          "literalEn": "Taro [topic] very sad しく [and] princess ['s / of] box [obj] to open した",
+          "naturalEn": "Taro was so sad that he opened the princess’s box.",
+          "tokens": [
+            {
+              "surface": "太郎",
+              "reading": "たろう",
+              "meaning": "Taro (given name)",
+              "baseForm": "太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "悲",
+              "reading": "かな",
+              "meaning": "sad, deplore, grieve",
+              "baseForm": "悲",
+              "level": "N3"
+            },
+            {
+              "surface": "しく"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "お姫様",
+              "reading": "おひめさま",
+              "meaning": "princess",
+              "baseForm": "お姫様",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "箱",
+              "reading": "はこ",
+              "meaning": "box",
+              "baseForm": "箱",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "開",
+              "reading": "あ",
+              "meaning": "to open; to become open",
+              "baseForm": "開く",
+              "level": "N5"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "中から紫の煙が出ました。",
+          "literalEn": "middle [from] purple colour ['s / of] smoke [subj] to put out した",
+          "naturalEn": "Purple smoke billowed out from inside.",
+          "tokens": [
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "紫",
+              "reading": "むらさき",
+              "meaning": "purple colour; violet",
+              "baseForm": "紫",
+              "level": "N2"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "煙",
+              "reading": "けむり",
+              "meaning": "smoke; fumes",
+              "baseForm": "煙",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "太郎は突然、おじいさんになりました。",
+          "literalEn": "Taro [topic] abruptly old man [at/to] なり した",
+          "naturalEn": "Taro suddenly turned into an old man.",
+          "tokens": [
+            {
+              "surface": "太郎",
+              "reading": "たろう",
+              "meaning": "Taro (given name)",
+              "baseForm": "太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "突然",
+              "reading": "とつぜん",
+              "meaning": "abruptly; suddenly; unexpectedly",
+              "baseForm": "突然",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
@@ -42,7 +1950,8 @@
         "亀",
         "鳥"
       ],
-      "answerIndex": 2
+      "answerIndex": 2,
+      "explanation": "「亀」 is correct: 「ある日、子供たちが海辺で一匹の亀をいじめていました。」 (One day, some children were tormenting a turtle on the beach.)"
     },
     {
       "question": "太郎は竜宮城にどのくらい（どれぐらい）いましたか？",
@@ -52,7 +1961,8 @@
         "一ヶ月ぐらい",
         "三年ぐらい"
       ],
-      "answerIndex": 0
+      "answerIndex": 0,
+      "explanation": "「三日ぐらい」 is correct: 「太郎は三日ぐらい竜宮城にいました。」 (Taro stayed at the Dragon Palace for about three days.)"
     },
     {
       "question": "箱を開けた後、太郎はどうなりましたか？",
@@ -62,7 +1972,9 @@
         "おじいさんになりました",
         "王様になりました"
       ],
-      "answerIndex": 2
+      "answerIndex": 2,
+      "explanation": "「おじいさんになりました」 is correct: 「太郎は突然、おじいさんになりました。」 (Taro suddenly turned into an old man.)"
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/fairy-tales/urashima-taro.json"
 }

@@ -10,6 +10,12 @@ const mdxComponents = {
       className="mt-6 mb-2.5 border-b border-[var(--line)] pb-1.5 text-sm font-bold tracking-[0.14em] text-[var(--primary)] uppercase first:mt-0"
     />
   ),
+  h3: (props: ComponentPropsWithoutRef<"h3">) => (
+    <h3
+      {...props}
+      className="mt-4 mb-1 text-xs font-bold tracking-wider text-[var(--muted)] uppercase"
+    />
+  ),
   p: (props: ComponentPropsWithoutRef<"p">) => (
     <p {...props} className="my-2.5 text-sm leading-relaxed text-[var(--ink)]" />
   ),

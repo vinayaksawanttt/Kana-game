@@ -1,0 +1,2172 @@
+{
+  "id": "n4-sagacious-monkey-and-boar",
+  "title": "賢い猿とイノシシ",
+  "titleRomaji": "Kashikoi Saru to Inoshishi",
+  "titleEn": "The Sagacious Monkey and the Boar",
+  "level": "N4",
+  "category": "Fairy Tale",
+  "tags": [
+    "monkey",
+    "boar",
+    "trick",
+    "rescue"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、猿を連れて旅をする男がいました。 ある晩、男は家に帰ると、妻に「あの猿はもう年を取って、上手に踊ることができない。明日、肉屋に売ってしまおう」と言いました。 隣の部屋でそれを聞いた猿は、殺されると知ってとても悲しくなりました。 猿は「どうしよう」と考えて、森に住んでいる賢いイノシシに相談することにしました。",
+      "en": "Long, long ago, there was a man traveling with a monkey. One evening, when the man returned home, he said to his wife, \"That monkey is old now and cannot dance well. Tomorrow, let's sell him to the butcher.\" The monkey, hearing this in the next room, became very sad knowing he would be killed. The monkey thought \"What should I do?\" and decided to consult a wise boar living in the forest.",
+      "sentences": [
+        {
+          "ja": "昔々、猿を連れて旅をする男がいました。",
+          "literalEn": "olden days monkey [obj] companion [and] travel [obj] to do man [subj] いま した",
+          "naturalEn": "Once upon a time, there was a man who traveled with a monkey.",
+          "tokens": [
+            {
+              "surface": "昔",
+              "reading": "むかし",
+              "meaning": "olden days; former",
+              "baseForm": "昔",
+              "level": "N4"
+            },
+            {
+              "surface": "々"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "連れ",
+              "reading": "つれ",
+              "meaning": "companion; company",
+              "baseForm": "連れ",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "旅",
+              "reading": "たび",
+              "meaning": "travel; trip; journey",
+              "baseForm": "旅",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "男",
+              "reading": "おとこ",
+              "meaning": "man",
+              "baseForm": "男",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ある晩、男は家に帰ると、妻に「あの猿はもう年を取って、上手に踊ることができない。",
+          "literalEn": "to be evening man [topic] house [at/to] to go back [with/and]  wife [at/to] that over there monkey [topic] already year [obj] to take something って skillful [at/to] to dance thing [subj] でき [not]",
+          "naturalEn": "One evening, when the man returned home, he said to his wife, “That monkey is getting old and can’t dance well anymore.",
+          "tokens": [
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "晩",
+              "reading": "ばん",
+              "meaning": "evening",
+              "baseForm": "晩",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "男",
+              "reading": "おとこ",
+              "meaning": "man",
+              "baseForm": "男",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "帰る",
+              "reading": "かえる",
+              "meaning": "to go back",
+              "baseForm": "帰る",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "妻",
+              "reading": "つま",
+              "meaning": "(humble) wife",
+              "baseForm": "妻",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "あの",
+              "meaning": "that over there",
+              "baseForm": "あの",
+              "level": "N5"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "もう",
+              "meaning": "already",
+              "baseForm": "もう",
+              "level": "N5"
+            },
+            {
+              "surface": "年",
+              "reading": "とし",
+              "meaning": "year",
+              "baseForm": "年",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "取",
+              "reading": "と",
+              "meaning": "to take something",
+              "baseForm": "取る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "上手",
+              "reading": "じょうず",
+              "meaning": "skillful",
+              "baseForm": "上手",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "踊る",
+              "reading": "おどる",
+              "meaning": "to dance",
+              "baseForm": "踊る",
+              "level": "N4"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "明日、肉屋に売ってしまおう」と言いました。",
+          "literalEn": "tomorrow butcher shop [at/to] to sell って しま おう [with/and] to say いま した",
+          "naturalEn": "\"Let’s sell it to the butcher tomorrow,\" he said.",
+          "tokens": [
+            {
+              "surface": "明日",
+              "reading": "あした",
+              "meaning": "tomorrow",
+              "baseForm": "明日",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "肉屋",
+              "reading": "にくや",
+              "meaning": "butcher shop",
+              "baseForm": "肉屋",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "売",
+              "reading": "う",
+              "meaning": "to sell",
+              "baseForm": "売る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "おう"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "隣の部屋でそれを聞いた猿は、殺されると知ってとても悲しくなりました。",
+          "literalEn": "next door to ['s / of] room [in/by] that [obj] to hear [past] monkey [topic] to kill れる [with/and] to know って very sad しく なり した",
+          "naturalEn": "Hearing this from the next room, the monkey became very sad upon realizing he was going to be killed.",
+          "tokens": [
+            {
+              "surface": "隣",
+              "reading": "となり",
+              "meaning": "next door to",
+              "baseForm": "隣",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "部屋",
+              "reading": "へや",
+              "meaning": "room",
+              "baseForm": "部屋",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "それ",
+              "meaning": "that",
+              "baseForm": "それ",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "聞",
+              "reading": "き",
+              "meaning": "to hear; to listen to; to ask",
+              "baseForm": "聞く",
+              "level": "N5"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "殺",
+              "reading": "ころ",
+              "meaning": "to kill",
+              "baseForm": "殺す",
+              "level": "N3"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れる"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "知",
+              "reading": "し",
+              "meaning": "to know",
+              "baseForm": "知る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "悲",
+              "reading": "かな",
+              "meaning": "sad, deplore, grieve",
+              "baseForm": "悲",
+              "level": "N3"
+            },
+            {
+              "surface": "しく"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "猿は「どうしよう」と考えて、森に住んでいる賢いイノシシに相談することにしました。",
+          "literalEn": "monkey [topic] how しよう [with/and] thinking [and] forest [at/to] dwelling んで to be wise イノシシ [at/to] to discuss to do ことに しま した",
+          "naturalEn": "The monkey thought, “What should I do?” and decided to ask a wise wild boar living in the forest for advice.",
+          "tokens": [
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "どう",
+              "meaning": "how; in what way",
+              "baseForm": "どう",
+              "level": "N5"
+            },
+            {
+              "surface": "しよう"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "考え",
+              "reading": "かんがえ",
+              "meaning": "thinking; thought; ideas",
+              "baseForm": "考え",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "森",
+              "reading": "もり",
+              "meaning": "forest",
+              "baseForm": "森",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "住",
+              "reading": "じゅう",
+              "meaning": "dwelling; living",
+              "baseForm": "住",
+              "level": "N1"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "賢い",
+              "reading": "かしこい",
+              "meaning": "wise; clever; smart",
+              "baseForm": "賢い",
+              "level": "N3"
+            },
+            {
+              "surface": "イノシシ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "相談",
+              "reading": "そうだん",
+              "meaning": "to discuss",
+              "baseForm": "相談",
+              "level": "N4"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "猿は急いで森へ行き、イノシシに自分の話をしました。 イノシシはしばらく考えてから、こう言いました。 「あなたの主人の赤ちゃんは、朝、玄関のそばにいますね。 私が明日、その赤ちゃんを連れて逃げます。 あなたはすぐに私を追いかけて、赤ちゃんを助けなさい。 そうすれば、ご主人はあなたを肉屋に売らないでしょう」 猿は何度も「ありがとう」と言って、家に帰りました。",
+      "en": "The monkey hurried to the forest and told his story to the boar. The boar thought for a while and said this: \"Your master's baby is near the porch in the morning, right? Tomorrow, I will run away taking that baby. You must chase me immediately and save the baby. If you do that, your master will probably not sell you to the butcher.\" The monkey said \"Thank you\" many times and returned home.",
+      "sentences": [
+        {
+          "ja": "猿は急いで森へ行き、イノシシに自分の話をしました。",
+          "literalEn": "monkey [topic] urgent [in/by] forest [toward] going イノシシ [at/to] oneself ['s / of] talk [obj] しま した",
+          "naturalEn": "The monkey hurried to the forest and told the wild boar his story.",
+          "tokens": [
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "急",
+              "reading": "きゅう",
+              "meaning": "urgent; steep",
+              "baseForm": "急",
+              "level": "N4"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "森",
+              "reading": "もり",
+              "meaning": "forest",
+              "baseForm": "森",
+              "level": "N4"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "イノシシ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "自分",
+              "reading": "じぶん",
+              "meaning": "oneself",
+              "baseForm": "自分",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "話",
+              "reading": "はなし",
+              "meaning": "talk; story",
+              "baseForm": "話",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "イノシシはしばらく考えてから、こう言いました。",
+          "literalEn": "イノシシ [topic] little while thinking [and] [from] this way to say いま した",
+          "naturalEn": "The wild boar thought for a moment, then said,",
+          "tokens": [
+            {
+              "surface": "イノシシ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "しばらく",
+              "meaning": "little while",
+              "baseForm": "しばらく",
+              "level": "N4"
+            },
+            {
+              "surface": "考え",
+              "reading": "かんがえ",
+              "meaning": "thinking; thought; ideas",
+              "baseForm": "考え",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "こう",
+              "meaning": "this way",
+              "baseForm": "こう",
+              "level": "N4"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「あなたの主人の赤ちゃんは、朝、玄関のそばにいますね。",
+          "literalEn": "you ['s / of] shopkeeper ['s / of] red [topic] morning entry hall ['s / of] near [at/to] いま すね",
+          "naturalEn": "“Your master’s baby is always near the front door in the morning, isn’t it?",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "あなた",
+              "meaning": "you",
+              "baseForm": "あなた",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "主人",
+              "reading": "しゅじん",
+              "meaning": "shopkeeper; master; husband",
+              "baseForm": "主人",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "赤ちゃん",
+              "reading": "あかちゃん",
+              "meaning": "red",
+              "baseForm": "赤",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "朝",
+              "reading": "あさ",
+              "meaning": "morning",
+              "baseForm": "朝",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "玄関",
+              "reading": "げんかん",
+              "meaning": "entry hall",
+              "baseForm": "玄関",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "そば",
+              "meaning": "near; beside",
+              "baseForm": "そば",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "すね"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "私が明日、その赤ちゃんを連れて逃げます。",
+          "literalEn": "I [subj] tomorrow that red [obj] companion [and] to let loose [polite]",
+          "naturalEn": "I’ll take the baby and run away tomorrow.",
+          "tokens": [
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "明日",
+              "reading": "あした",
+              "meaning": "tomorrow",
+              "baseForm": "明日",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "赤ちゃん",
+              "reading": "あかちゃん",
+              "meaning": "red",
+              "baseForm": "赤",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "連れ",
+              "reading": "つれ",
+              "meaning": "companion; company",
+              "baseForm": "連れ",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "逃げ",
+              "reading": "のがげ",
+              "meaning": "to let loose; to set free; to let escape",
+              "baseForm": "逃す",
+              "level": "N1"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "あなたはすぐに私を追いかけて、赤ちゃんを助けなさい。",
+          "literalEn": "you [topic] immediately [at/to]  I [obj] to chase かけ [and] red [obj] assistance さい",
+          "naturalEn": "You must chase after me right away and rescue the baby.",
+          "tokens": [
+            {
+              "surface": "あなた",
+              "meaning": "you",
+              "baseForm": "あなた",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "すぐ",
+              "meaning": "immediately; soon; easily",
+              "baseForm": "すぐ",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "追",
+              "reading": "お",
+              "meaning": "to chase; to run after",
+              "baseForm": "追う",
+              "level": "N3"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "かけ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "赤ちゃん",
+              "reading": "あかちゃん",
+              "meaning": "red",
+              "baseForm": "赤",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "助け",
+              "reading": "たすけ",
+              "meaning": "assistance",
+              "baseForm": "助け",
+              "level": "N1"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "そうすれば、ご主人はあなたを肉屋に売らないでしょう」 猿は何度も「ありがとう」と言って、家に帰りました。",
+          "literalEn": "really shopkeeper [topic] you [obj] butcher shop [at/to] to sell [not] [in/by] しょう monkey [topic] what time (three times [also] Thank you [with/and] to say って house [at/to] return した",
+          "naturalEn": "“That way, your master won’t sell you to the butcher.” The monkey said “thank you” over and over again and went home.",
+          "tokens": [
+            {
+              "surface": "そう",
+              "meaning": "really",
+              "baseForm": "そう",
+              "level": "N4"
+            },
+            {
+              "surface": "す"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ば"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ご"
+            },
+            {
+              "surface": "主人",
+              "reading": "しゅじん",
+              "meaning": "shopkeeper; master; husband",
+              "baseForm": "主人",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "あなた",
+              "meaning": "you",
+              "baseForm": "あなた",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "肉屋",
+              "reading": "にくや",
+              "meaning": "butcher shop",
+              "baseForm": "肉屋",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "売",
+              "reading": "う",
+              "meaning": "to sell",
+              "baseForm": "売る",
+              "level": "N5"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "しょう"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": " "
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "何",
+              "reading": "なん",
+              "meaning": "what",
+              "baseForm": "何",
+              "level": "N5"
+            },
+            {
+              "surface": "度",
+              "reading": "たび",
+              "meaning": "time (three times, each time, etc.); times",
+              "baseForm": "度",
+              "level": "N3"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "ありがとう",
+              "meaning": "Thank you",
+              "baseForm": "ありがとう",
+              "level": "N5"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "帰り",
+              "reading": "かえり",
+              "meaning": "return",
+              "baseForm": "帰り",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "次の日の朝、妻が家の仕事をしている時、赤ちゃんは玄関のそばで遊んでいました。 突然、イノシシがやって来て、赤ちゃんを連れて逃げました。 妻はびっくりして、大きな声で叫びました。 夫も起きてきましたが、どうすることもできません。 その時、猿が一生懸命走ってイノシシを追いかけました。 そして、猿は赤ちゃんを無事に両親のところへ連れて帰りました。",
+      "en": "The next morning, while the wife was doing housework, the baby was playing near the porch. Suddenly, the boar came and ran away taking the baby. The wife was surprised and screamed with a loud voice. The husband also woke up, but could do nothing. At that time, the monkey ran with all his might and chased the boar. Then, the monkey safely brought the baby back to the parents.",
+      "sentences": [
+        {
+          "ja": "次の日の朝、妻が家の仕事をしている時、赤ちゃんは玄関のそばで遊んでいました。",
+          "literalEn": "next ['s / of] day ['s / of] morning  wife [subj] house ['s / of] job [obj] [and] to be time red [topic] entry hall ['s / of] near [in/by] to play んで いま した",
+          "naturalEn": "The next morning, while my wife was doing housework, the baby was playing near the front door.",
+          "tokens": [
+            {
+              "surface": "次",
+              "reading": "つぎ",
+              "meaning": "next",
+              "baseForm": "次",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "朝",
+              "reading": "あさ",
+              "meaning": "morning",
+              "baseForm": "朝",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "妻",
+              "reading": "つま",
+              "meaning": "(humble) wife",
+              "baseForm": "妻",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "仕事",
+              "reading": "しごと",
+              "meaning": "job",
+              "baseForm": "仕事",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "時",
+              "reading": "とき",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "赤ちゃん",
+              "reading": "あかちゃん",
+              "meaning": "red",
+              "baseForm": "赤",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "玄関",
+              "reading": "げんかん",
+              "meaning": "entry hall",
+              "baseForm": "玄関",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "そば",
+              "meaning": "near; beside",
+              "baseForm": "そば",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "遊",
+              "reading": "あそ",
+              "meaning": "to play; to make a visit",
+              "baseForm": "遊ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "突然、イノシシがやって来て、赤ちゃんを連れて逃げました。",
+          "literalEn": "abruptly イノシシ [subj] って for [and] red [obj] companion [and] to let loose した",
+          "naturalEn": "Suddenly, a wild boar appeared and ran off with the baby.",
+          "tokens": [
+            {
+              "surface": "突然",
+              "reading": "とつぜん",
+              "meaning": "abruptly; suddenly; unexpectedly",
+              "baseForm": "突然",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "イノシシ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "来",
+              "reading": "らい",
+              "meaning": "for (10 days); next (year)",
+              "baseForm": "来",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "赤ちゃん",
+              "reading": "あかちゃん",
+              "meaning": "red",
+              "baseForm": "赤",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "連れ",
+              "reading": "つれ",
+              "meaning": "companion; company",
+              "baseForm": "連れ",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "逃げ",
+              "reading": "のがげ",
+              "meaning": "to let loose; to set free; to let escape",
+              "baseForm": "逃す",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "妻はびっくりして、大きな声で叫びました。",
+          "literalEn": "wife [topic] be surprised [and] big voice [in/by] shout した",
+          "naturalEn": "The wife was startled and screamed at the top of her lungs.",
+          "tokens": [
+            {
+              "surface": "妻",
+              "reading": "つま",
+              "meaning": "(humble) wife",
+              "baseForm": "妻",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "びっくり",
+              "meaning": "be surprised; be amazed; be frightened",
+              "baseForm": "びっくり",
+              "level": "N3"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "声",
+              "reading": "こえ",
+              "meaning": "voice",
+              "baseForm": "声",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "叫び",
+              "reading": "さけび",
+              "meaning": "shout; scream; outcry",
+              "baseForm": "叫び",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "夫も起きてきましたが、どうすることもできません。",
+          "literalEn": "husband [also] to wake [and] した [subj] how to do thing [also] でき せん",
+          "naturalEn": "Her husband woke up too, but there was nothing he could do.",
+          "tokens": [
+            {
+              "surface": "夫",
+              "reading": "おっと",
+              "meaning": "husband",
+              "baseForm": "夫",
+              "level": "N4"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "起",
+              "reading": "おこ",
+              "meaning": "to wake",
+              "baseForm": "起す",
+              "level": "N4"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "どう",
+              "meaning": "how; in what way",
+              "baseForm": "どう",
+              "level": "N5"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "その時、猿が一生懸命走ってイノシシを追いかけました。",
+          "literalEn": "at that time monkey [subj] with utmost effort to run って イノシシ [obj] to chase かけ した",
+          "naturalEn": "At that moment, the monkey ran as fast as it could to chase after the wild boar.",
+          "tokens": [
+            {
+              "surface": "その時",
+              "reading": "そのとき",
+              "meaning": "at that time",
+              "baseForm": "その時",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "一生懸命",
+              "reading": "いっしょうけんめい",
+              "meaning": "with utmost effort",
+              "baseForm": "一生懸命",
+              "level": "N4"
+            },
+            {
+              "surface": "走",
+              "reading": "はし",
+              "meaning": "to run",
+              "baseForm": "走る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "イノシシ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "追",
+              "reading": "お",
+              "meaning": "to chase; to run after",
+              "baseForm": "追う",
+              "level": "N3"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "かけ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "そして、猿は赤ちゃんを無事に両親のところへ連れて帰りました。",
+          "literalEn": "and monkey [topic] red [obj] safety [at/to] both parents ['s / of] ところ [toward] companion [and] return した",
+          "naturalEn": "And so, the monkey brought the baby safely back to its parents.",
+          "tokens": [
+            {
+              "surface": "そして",
+              "meaning": "and",
+              "baseForm": "そして",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "赤ちゃん",
+              "reading": "あかちゃん",
+              "meaning": "red",
+              "baseForm": "赤",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "無事",
+              "reading": "ぶじ",
+              "meaning": "safety; peace; quietness",
+              "baseForm": "無事",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "両親",
+              "reading": "りょうしん",
+              "meaning": "both parents",
+              "baseForm": "両親",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ところ"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "連れ",
+              "reading": "つれ",
+              "meaning": "companion; company",
+              "baseForm": "連れ",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "帰り",
+              "reading": "かえり",
+              "meaning": "return",
+              "baseForm": "帰り",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "夫と妻は、赤ちゃんを助けてくれた猿を見て、とても感動しました。 妻は「もし猿がいなかったら、私たちは子供をなくしていましたよ」と言いました。 夫も「そうだね。この猿を殺してはいけない」と言いました。 肉屋が来た時、夫は肉屋を帰しました。 それから、猿は死ぬまでこの家で大切に育てられ、平和に暮らしました。",
+      "en": "The husband and wife were very moved seeing the monkey who had saved the baby. The wife said, \"If the monkey had not been here, we would have lost our child.\" The husband also said, \"That's right. We must not kill this monkey.\" When the butcher came, the husband sent the butcher away. After that, the monkey was carefully raised in this house until he died, and lived in peace.",
+      "sentences": [
+        {
+          "ja": "夫と妻は、赤ちゃんを助けてくれた猿を見て、とても感動しました。",
+          "literalEn": "husband [with/and]  wife [topic] red [obj] assistance てく [past] monkey [obj] to see [and] very being deeply moved しま した",
+          "naturalEn": "The husband and wife were deeply moved by the monkey that had saved their baby.",
+          "tokens": [
+            {
+              "surface": "夫",
+              "reading": "おっと",
+              "meaning": "husband",
+              "baseForm": "夫",
+              "level": "N4"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "妻",
+              "reading": "つま",
+              "meaning": "(humble) wife",
+              "baseForm": "妻",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "赤ちゃん",
+              "reading": "あかちゃん",
+              "meaning": "red",
+              "baseForm": "赤",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "助け",
+              "reading": "たすけ",
+              "meaning": "assistance",
+              "baseForm": "助け",
+              "level": "N1"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "感動",
+              "reading": "かんどう",
+              "meaning": "being deeply moved; excitement; impression",
+              "baseForm": "感動",
+              "level": "N3"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "妻は「もし猿がいなかったら、私たちは子供をなくしていましたよ」と言いました。",
+          "literalEn": "wife [topic] if monkey [subj] いなか たら  I たち [topic] child [obj] なく てい した [you know] [with/and] to say いま した",
+          "naturalEn": "The wife said, “If it weren’t for that monkey, we would have lost our child.”",
+          "tokens": [
+            {
+              "surface": "妻",
+              "reading": "つま",
+              "meaning": "(humble) wife",
+              "baseForm": "妻",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "もし",
+              "meaning": "if",
+              "baseForm": "もし",
+              "level": "N4"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いなか"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "たら"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "子供",
+              "reading": "こども",
+              "meaning": "child; children",
+              "baseForm": "子供",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "なく"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "よ"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "夫も「そうだね。",
+          "literalEn": "husband [also] そうだ [right?]",
+          "naturalEn": "The husband also said, “That’s right.”",
+          "tokens": [
+            {
+              "surface": "夫",
+              "reading": "おっと",
+              "meaning": "husband",
+              "baseForm": "夫",
+              "level": "N4"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "そうだ"
+            },
+            {
+              "surface": "ね",
+              "meaning": "value; price; cost",
+              "baseForm": "ね",
+              "level": "N3"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "この猿を殺してはいけない」と言いました。",
+          "literalEn": "this monkey [obj] to kill [and] yes [not] [with/and] to say いま した",
+          "naturalEn": "\"We must not kill this monkey,\" he said.",
+          "tokens": [
+            {
+              "surface": "この",
+              "meaning": "this",
+              "baseForm": "この",
+              "level": "N5"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "殺し",
+              "reading": "ころし",
+              "meaning": "to kill",
+              "baseForm": "殺す",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "はい",
+              "meaning": "yes",
+              "baseForm": "はい",
+              "level": "N5"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "肉屋が来た時、夫は肉屋を帰しました。",
+          "literalEn": "butcher shop [subj] for [past] time husband [topic] butcher shop [obj] to go back しま した",
+          "naturalEn": "When the butcher came, the husband sent him away.",
+          "tokens": [
+            {
+              "surface": "肉屋",
+              "reading": "にくや",
+              "meaning": "butcher shop",
+              "baseForm": "肉屋",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "来",
+              "reading": "らい",
+              "meaning": "for (10 days); next (year)",
+              "baseForm": "来",
+              "level": "N3"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "時",
+              "reading": "とき",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "夫",
+              "reading": "おっと",
+              "meaning": "husband",
+              "baseForm": "夫",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "肉屋",
+              "reading": "にくや",
+              "meaning": "butcher shop",
+              "baseForm": "肉屋",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "帰",
+              "reading": "かえ",
+              "meaning": "to go back",
+              "baseForm": "帰る",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "それから、猿は死ぬまでこの家で大切に育てられ、平和に暮らしました。",
+          "literalEn": "after that monkey [topic] to die [until] this house [in/by] important [at/to] to raise peace [at/to] living した",
+          "naturalEn": "From then on, the monkey was lovingly cared for in that home until the end of its life, living there in peace.",
+          "tokens": [
+            {
+              "surface": "それから",
+              "meaning": "after that",
+              "baseForm": "それから",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "死ぬ",
+              "reading": "しぬ",
+              "meaning": "to die",
+              "baseForm": "死ぬ",
+              "level": "N5"
+            },
+            {
+              "surface": "まで"
+            },
+            {
+              "surface": "この",
+              "meaning": "this",
+              "baseForm": "この",
+              "level": "N5"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "大切",
+              "reading": "たいせつ",
+              "meaning": "important",
+              "baseForm": "大切",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "育て",
+              "reading": "そだて",
+              "meaning": "to raise (child); to be brought up; to grow (up)",
+              "baseForm": "育つ",
+              "level": "N3"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "平和",
+              "reading": "へいわ",
+              "meaning": "peace; harmony",
+              "baseForm": "平和",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "暮らし",
+              "reading": "くらし",
+              "meaning": "living; livelihood; subsistence",
+              "baseForm": "暮らし",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "男はどうして猿を売ろうとしましたか？",
+      "options": [
+        "猿がご飯を食べすぎたから",
+        "猿が逃げようとしたから",
+        "猿が年を取って上手に踊れなかったから",
+        "猿が赤ちゃんをいじめたから"
+      ],
+      "answerIndex": 2,
+      "explanation": "「猿が年を取って上手に踊れなかったから」 is the correct answer according to the story."
+    },
+    {
+      "question": "イノシシは猿にどんな作戦（計画）を教えましたか？",
+      "options": [
+        "イノシシが男を殺す作戦",
+        "イノシシが赤ちゃんを連れて逃げて、猿が助ける作戦",
+        "一緒に遠くの山へ逃げる作戦",
+        "肉屋を海に落とす作戦"
+      ],
+      "answerIndex": 1,
+      "explanation": "「イノシシが赤ちゃんを連れて逃げて、猿が助ける作戦」 is correct: 「猿は「どうしよう」と考えて、森に住んでいる賢いイノシシに相談することにしました。」 (The monkey thought, “What should I do?” and decided to ask a wise wild boar living in the forest for advice.)"
+    },
+    {
+      "question": "最後に猿はどうなりましたか？",
+      "options": [
+        "肉屋に売られました",
+        "家で大切に育てられました",
+        "イノシシと一緒に森で暮らしました",
+        "新しい赤ちゃんになりました"
+      ],
+      "answerIndex": 1,
+      "explanation": "「家で大切に育てられました」 is the correct answer according to the story."
+    }
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/monkey-boar.json"
+}

@@ -5,23 +5,783 @@
   "titleEn": "Procedures at the Bank",
   "level": "N4",
   "category": "Everyday Life",
-  "tags": ["bank", "money", "procedure", "daily"],
+  "tags": [
+    "bank",
+    "money",
+    "procedure",
+    "daily"
+  ],
   "paragraphs": [
     {
       "ja": "先週の金曜日の午後、山田さんは新しい口座を作るために駅の近くの銀行へ行きました。",
-      "en": "Last Friday afternoon, Mr. Yamada went to the bank near the station to open a new account."
+      "en": "Last Friday afternoon, Mr. Yamada went to the bank near the station to open a new account.",
+      "sentences": [
+        {
+          "ja": "先週の金曜日の午後、山田さんは新しい口座を作るために駅の近くの銀行へ行きました。",
+          "literalEn": "last week ['s / of] Friday ['s / of] afternoon Yamada [Mr/Ms] [topic] new bank account [obj] to make ため [at/to] station ['s / of] near ['s / of] bank [toward] going した",
+          "naturalEn": "Last Friday afternoon, Mr. Yamada went to a bank near the station to open a new account.",
+          "tokens": [
+            {
+              "surface": "先週",
+              "reading": "せんしゅう",
+              "meaning": "last week",
+              "baseForm": "先週",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "金曜日",
+              "reading": "きんようび",
+              "meaning": "Friday",
+              "baseForm": "金曜日",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "午後",
+              "reading": "ごご",
+              "meaning": "afternoon",
+              "baseForm": "午後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "山田",
+              "reading": "やまだ",
+              "meaning": "Yamada (surname)",
+              "baseForm": "山田",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "新しい",
+              "reading": "あたらしい",
+              "meaning": "new",
+              "baseForm": "新しい",
+              "level": "N5"
+            },
+            {
+              "surface": "口座",
+              "reading": "こうざ",
+              "meaning": "bank account",
+              "baseForm": "口座",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "作る",
+              "reading": "つくる",
+              "meaning": "to make",
+              "baseForm": "作る",
+              "level": "N5"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "駅",
+              "reading": "えき",
+              "meaning": "station",
+              "baseForm": "駅",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "近く",
+              "reading": "ちかく",
+              "meaning": "near",
+              "baseForm": "近く",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "銀行",
+              "reading": "ぎんこう",
+              "meaning": "bank",
+              "baseForm": "銀行",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "銀行に入ると、案内係の人が親切に声をかけてくれて、番号札を渡してくれました。ロビーの椅子に座って、書類に名前や住所を書きながら順番を待ちました。",
-      "en": "When he entered the bank, the receptionist kindly spoke to him and handed him a numbered ticket. Sitting on a chair in the lobby, he waited for his turn while writing his name and address on the document."
+      "en": "When he entered the bank, the receptionist kindly spoke to him and handed him a numbered ticket. Sitting on a chair in the lobby, he waited for his turn while writing his name and address on the document.",
+      "sentences": [
+        {
+          "ja": "銀行に入ると、案内係の人が親切に声をかけてくれて、番号札を渡してくれました。",
+          "literalEn": "bank [at/to] to enter [with/and] to guide official ['s / of] person [subj] kindness [at/to] voice [obj] かけ てく [and] number banknote [obj] to hand over てく した",
+          "naturalEn": "When I entered the bank, a receptionist kindly greeted me and handed me a number ticket.",
+          "tokens": [
+            {
+              "surface": "銀行",
+              "reading": "ぎんこう",
+              "meaning": "bank",
+              "baseForm": "銀行",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入る",
+              "reading": "はいる",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "案内",
+              "reading": "あんない",
+              "meaning": "to guide",
+              "baseForm": "案内",
+              "level": "N4"
+            },
+            {
+              "surface": "係",
+              "reading": "かかり",
+              "meaning": "official; duty; person in charge",
+              "baseForm": "係",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "親切",
+              "reading": "しんせつ",
+              "meaning": "kindness",
+              "baseForm": "親切",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "声",
+              "reading": "こえ",
+              "meaning": "voice",
+              "baseForm": "声",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "かけ"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "番号",
+              "reading": "ばんごう",
+              "meaning": "number",
+              "baseForm": "番号",
+              "level": "N5"
+            },
+            {
+              "surface": "札",
+              "reading": "さつ",
+              "meaning": "banknote; bill; note",
+              "baseForm": "札",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "渡し",
+              "reading": "わたし",
+              "meaning": "to hand over",
+              "baseForm": "渡す",
+              "level": "N5"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ロビーの椅子に座って、書類に名前や住所を書きながら順番を待ちました。",
+          "literalEn": "lobby ['s / of] chair [at/to] to sit って documents [at/to] name an address [obj] to write ながら turn [obj] to wait した",
+          "naturalEn": "I sat in a chair in the lobby and waited my turn while filling out the forms with my name and address.",
+          "tokens": [
+            {
+              "surface": "ロビー",
+              "meaning": "lobby",
+              "baseForm": "ロビー",
+              "level": "N2"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "椅子",
+              "reading": "いす",
+              "meaning": "chair; seat",
+              "baseForm": "椅子",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "座",
+              "reading": "すわ",
+              "meaning": "to sit",
+              "baseForm": "座る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "書類",
+              "reading": "しょるい",
+              "meaning": "documents; official papers",
+              "baseForm": "書類",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "名前",
+              "reading": "なまえ",
+              "meaning": "name",
+              "baseForm": "名前",
+              "level": "N5"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "住所",
+              "reading": "じゅうしょ",
+              "meaning": "an address; a residence",
+              "baseForm": "住所",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "書き",
+              "reading": "かき",
+              "meaning": "to write",
+              "baseForm": "書く",
+              "level": "N5"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "順番",
+              "reading": "じゅんばん",
+              "meaning": "turn (in line); order of things",
+              "baseForm": "順番",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "待ち",
+              "reading": "まち",
+              "meaning": "to wait",
+              "baseForm": "待つ",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "自分の番号が呼ばれたので、窓口へ行って書類と保険証を見せました。銀行員は笑顔で丁寧に手続きの方法を説明してくれました。",
-      "en": "Since his number was called, he went to the counter and showed the documents and his health insurance card. The bank clerk smiled and politely explained the procedure."
+      "en": "Since his number was called, he went to the counter and showed the documents and his health insurance card. The bank clerk smiled and politely explained the procedure.",
+      "sentences": [
+        {
+          "ja": "自分の番号が呼ばれたので、窓口へ行って書類と保険証を見せました。",
+          "literalEn": "oneself ['s / of] number [subj] to call out [past] ので ticket window [toward] line って documents [with/and] insurance proof [obj] to see した",
+          "naturalEn": "When my number was called, I went to the counter and showed them my documents and insurance card.",
+          "tokens": [
+            {
+              "surface": "自分",
+              "reading": "じぶん",
+              "meaning": "oneself",
+              "baseForm": "自分",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "番号",
+              "reading": "ばんごう",
+              "meaning": "number",
+              "baseForm": "番号",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "呼",
+              "reading": "よ",
+              "meaning": "to call out; to invite",
+              "baseForm": "呼ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "ば"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "ので"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "窓口",
+              "reading": "まどぐち",
+              "meaning": "ticket window",
+              "baseForm": "窓口",
+              "level": "N2"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行",
+              "reading": "ぎょう",
+              "meaning": "line; row; verse",
+              "baseForm": "行",
+              "level": "N1"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "書類",
+              "reading": "しょるい",
+              "meaning": "documents; official papers",
+              "baseForm": "書類",
+              "level": "N3"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "保険",
+              "reading": "ほけん",
+              "meaning": "insurance; guarantee",
+              "baseForm": "保険",
+              "level": "N1"
+            },
+            {
+              "surface": "証",
+              "reading": "あかし",
+              "meaning": "proof; evidence",
+              "baseForm": "証",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "銀行員は笑顔で丁寧に手続きの方法を説明してくれました。",
+          "literalEn": "bank clerk [topic] smiling face [in/by] polite [at/to] procedure ['s / of] method [obj] explanation てく した",
+          "naturalEn": "The bank teller smiled and politely explained the procedure to me.",
+          "tokens": [
+            {
+              "surface": "銀行員",
+              "reading": "ぎんこういん",
+              "meaning": "bank clerk; bank employee",
+              "baseForm": "銀行員",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "笑顔",
+              "reading": "えがお",
+              "meaning": "smiling face",
+              "baseForm": "笑顔",
+              "level": "N3"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "丁寧",
+              "reading": "ていねい",
+              "meaning": "polite",
+              "baseForm": "丁寧",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "手続き",
+              "reading": "てつづき",
+              "meaning": "procedure; (legal) process; formalities",
+              "baseForm": "手続き",
+              "level": "N2"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "方法",
+              "reading": "ほうほう",
+              "meaning": "method; manner; way",
+              "baseForm": "方法",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "説明",
+              "reading": "せつめい",
+              "meaning": "explanation",
+              "baseForm": "説明",
+              "level": "N4"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "三十分ほどで新しい通帳とカードを受け取ることができました。山田さんはお礼を言って、安心して銀行を出ました。",
-      "en": "In about thirty minutes, he was able to receive his new bankbook and card. Mr. Yamada said thank you and left the bank feeling relieved."
+      "en": "In about thirty minutes, he was able to receive his new bankbook and card. Mr. Yamada said thank you and left the bank feeling relieved.",
+      "sentences": [
+        {
+          "ja": "三十分ほどで新しい通帳とカードを受け取ることができました。",
+          "literalEn": "three enough [as much as] [in/by] new passbook [with/and] card [obj] to receive thing [subj] でき した",
+          "naturalEn": "In about thirty minutes, I was able to receive my new passbook and card.",
+          "tokens": [
+            {
+              "surface": "三",
+              "reading": "さん",
+              "meaning": "three",
+              "baseForm": "三",
+              "level": "N5"
+            },
+            {
+              "surface": "十分",
+              "reading": "じゅうぶん",
+              "meaning": "enough",
+              "baseForm": "十分",
+              "level": "N4"
+            },
+            {
+              "surface": "ほど",
+              "meaning": "extent",
+              "baseForm": "ほど",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "新しい",
+              "reading": "あたらしい",
+              "meaning": "new",
+              "baseForm": "新しい",
+              "level": "N5"
+            },
+            {
+              "surface": "通帳",
+              "reading": "つうちょう",
+              "meaning": "passbook",
+              "baseForm": "通帳",
+              "level": "N2"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "カード",
+              "meaning": "card; curd",
+              "baseForm": "カード",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "受け取る",
+              "reading": "うけとる",
+              "meaning": "to receive; to get; to accept",
+              "baseForm": "受け取る",
+              "level": "N3"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "山田さんはお礼を言って、安心して銀行を出ました。",
+          "literalEn": "Yamada [Mr/Ms] [topic] expression of gratitude [obj] to say って cheap core bank [obj] to put out した",
+          "naturalEn": "Mr. Yamada thanked them and left the bank feeling relieved.",
+          "tokens": [
+            {
+              "surface": "山田",
+              "reading": "やまだ",
+              "meaning": "Yamada (surname)",
+              "baseForm": "山田",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "お礼",
+              "reading": "おれい",
+              "meaning": "expression of gratitude",
+              "baseForm": "お礼",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "安",
+              "reading": "やす",
+              "meaning": "cheap",
+              "baseForm": "安い",
+              "level": "N5"
+            },
+            {
+              "surface": "心して",
+              "reading": "こころして",
+              "meaning": "core; heart",
+              "baseForm": "心",
+              "level": "N4"
+            },
+            {
+              "surface": "銀行",
+              "reading": "ぎんこう",
+              "meaning": "bank",
+              "baseForm": "銀行",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
@@ -33,7 +793,8 @@
         "外国のお金に両替するため",
         "水道代を払うため"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「新しい口座を作るため」 is correct: 「先週の金曜日の午後、山田さんは新しい口座を作るために駅の近くの銀行へ行きました。」 (Last Friday afternoon, Mr. Yamada went to a bank near the station to open a new account.)"
     },
     {
       "question": "山田さんは窓口で何を見せましたか？",
@@ -43,7 +804,8 @@
         "会社の社員証",
         "古い通帳と印鑑"
       ],
-      "answerIndex": 0
+      "answerIndex": 0,
+      "explanation": "「書類と保険証」 is correct: 「自分の番号が呼ばれたので、窓口へ行って書類と保険証を見せました。」 (When my number was called, I went to the counter and showed them my documents and insurance card.)"
     },
     {
       "question": "手続きが終わるまでどのくらいかかりましたか？",
@@ -53,7 +815,9 @@
         "一時間ほど",
         "二時間ほど"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「三十分ほど」 is correct: 「三十分ほどで新しい通帳とカードを受け取ることができました。」 (In about thirty minutes, I was able to receive my new passbook and card.)"
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/bank.json"
 }

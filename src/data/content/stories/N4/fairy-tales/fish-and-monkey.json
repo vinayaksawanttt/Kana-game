@@ -14,19 +14,2101 @@
   "paragraphs": [
     {
       "ja": "昔々、海の底に竜宮（りゅうぐう）という美しいお城があり、竜王が住んでいました。 ある日、王様の美しい奥さんが重い病気になりました。 医者は「生きた猿の肝臓（きも）を食べれば、病気が治るでしょう」と言いました。 そこで、王様はクラゲを呼んで、「陸へ行って、猿を連れてきなさい」と命令しました。 その頃のクラゲには、亀のように足も骨もありました。",
-      "en": "Long, long ago, at the bottom of the sea, there was a beautiful castle called Ryugu, and the Dragon King lived there. One day, the king's beautiful wife became severely ill. The doctor said, \"If she eats the liver of a live monkey, the illness will be cured.\" Therefore, the king called the jellyfish and ordered, \"Go to the land and bring a monkey.\" The jellyfish at that time had legs and bones like a turtle."
+      "en": "Long, long ago, at the bottom of the sea, there was a beautiful castle called Ryugu, and the Dragon King lived there. One day, the king's beautiful wife became severely ill. The doctor said, \"If she eats the liver of a live monkey, the illness will be cured.\" Therefore, the king called the jellyfish and ordered, \"Go to the land and bring a monkey.\" The jellyfish at that time had legs and bones like a turtle.",
+      "sentences": [
+        {
+          "ja": "昔々、海の底に竜宮（りゅうぐう）という美しいお城があり、竜王が住んでいました。",
+          "literalEn": "olden days sea ['s / of] bottom [at/to] Dragon Palace という beautiful castle [subj] あり Dragon King [subj] dwelling んで いま した",
+          "naturalEn": "Once upon a time, there was a beautiful castle called Ryūgu at the bottom of the sea, where the Dragon King lived.",
+          "tokens": [
+            {
+              "surface": "昔",
+              "reading": "むかし",
+              "meaning": "olden days; former",
+              "baseForm": "昔",
+              "level": "N4"
+            },
+            {
+              "surface": "々"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "底",
+              "reading": "そこ",
+              "meaning": "bottom; sole",
+              "baseForm": "底",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "竜宮",
+              "reading": "りゅうぐう",
+              "meaning": "Dragon Palace",
+              "baseForm": "竜宮",
+              "level": "N5"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "美しい",
+              "reading": "うつくしい",
+              "meaning": "beautiful",
+              "baseForm": "美しい",
+              "level": "N4"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "城",
+              "reading": "しろ",
+              "meaning": "castle",
+              "baseForm": "城",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "あり"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "竜王",
+              "reading": "りゅうおう",
+              "meaning": "Dragon King",
+              "baseForm": "竜王",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "住",
+              "reading": "じゅう",
+              "meaning": "dwelling; living",
+              "baseForm": "住",
+              "level": "N1"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ある日、王様の美しい奥さんが重い病気になりました。",
+          "literalEn": "to be day king ['s / of] beautiful  wife [subj] heavy illness [at/to] なり した",
+          "naturalEn": "One day, the king’s beautiful wife fell seriously ill.",
+          "tokens": [
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "王様",
+              "reading": "おうさま",
+              "meaning": "king",
+              "baseForm": "王様",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "美しい",
+              "reading": "うつくしい",
+              "meaning": "beautiful",
+              "baseForm": "美しい",
+              "level": "N4"
+            },
+            {
+              "surface": "奥さん",
+              "reading": "おくさん",
+              "meaning": "(honorable) wife",
+              "baseForm": "奥さん",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "重い",
+              "reading": "おもい",
+              "meaning": "heavy",
+              "baseForm": "重い",
+              "level": "N5"
+            },
+            {
+              "surface": "病気",
+              "reading": "びょうき",
+              "meaning": "illness",
+              "baseForm": "病気",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "医者は「生きた猿の肝臓（きも）を食べれば、病気が治るでしょう」と言いました。",
+          "literalEn": "medical doctor [topic] draft [past] monkey ['s / of] liver [obj]  to eat illness [subj] to be cured [in/by] しょう [with/and] to say いま した",
+          "naturalEn": "The doctor said, “If she eats the liver of a live monkey, her illness will be cured.”",
+          "tokens": [
+            {
+              "surface": "医者",
+              "reading": "いしゃ",
+              "meaning": "medical doctor",
+              "baseForm": "医者",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "生き",
+              "reading": "なまき",
+              "meaning": "draft (beer); raw; unprocessed",
+              "baseForm": "生",
+              "level": "N3"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "肝臓",
+              "reading": "かんぞう",
+              "meaning": "liver",
+              "baseForm": "肝臓",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "食",
+              "reading": "く",
+              "meaning": "(male) (vulgar) to eat",
+              "baseForm": "食う",
+              "level": "N3"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ば"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "病気",
+              "reading": "びょうき",
+              "meaning": "illness",
+              "baseForm": "病気",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "治る",
+              "reading": "なおる",
+              "meaning": "to be cured; to heal",
+              "baseForm": "治る",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "しょう"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "そこで、王様はクラゲを呼んで、「陸へ行って、猿を連れてきなさい」と命令しました。",
+          "literalEn": "so king [topic] クラゲ [obj] to call out んで six [toward] line って monkey [obj] companion [and] さい [with/and] order しま した",
+          "naturalEn": "So the King summoned the jellyfish and ordered, “Go ashore and bring back a monkey.”",
+          "tokens": [
+            {
+              "surface": "そこで",
+              "meaning": "so (conj); accordingly; now",
+              "baseForm": "そこで",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "王様",
+              "reading": "おうさま",
+              "meaning": "king",
+              "baseForm": "王様",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "クラゲ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "呼",
+              "reading": "よ",
+              "meaning": "to call out; to invite",
+              "baseForm": "呼ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "陸",
+              "reading": "りく",
+              "meaning": "six (used in legal documents)",
+              "baseForm": "陸",
+              "level": "N3"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行",
+              "reading": "ぎょう",
+              "meaning": "line; row; verse",
+              "baseForm": "行",
+              "level": "N1"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "連れ",
+              "reading": "つれ",
+              "meaning": "companion; company",
+              "baseForm": "連れ",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "命令",
+              "reading": "めいれい",
+              "meaning": "order; command; decree",
+              "baseForm": "命令",
+              "level": "N3"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "その頃のクラゲには、亀のように足も骨もありました。",
+          "literalEn": "around that time ['s / of] クラゲ [at/to] [topic] tortoise ['s / of] よう [at/to] foot [also] bone [also] ありま した",
+          "naturalEn": "In those days, jellyfish had legs and bones, just like turtles.",
+          "tokens": [
+            {
+              "surface": "その頃",
+              "reading": "そのころ",
+              "meaning": "around that time",
+              "baseForm": "その頃",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "クラゲ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "亀",
+              "reading": "かめ",
+              "meaning": "tortoise, turtle",
+              "baseForm": "亀",
+              "level": "N1"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "足",
+              "reading": "あし",
+              "meaning": "foot; leg",
+              "baseForm": "足",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "骨",
+              "reading": "ほね",
+              "meaning": "bone",
+              "baseForm": "骨",
+              "level": "N3"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "クラゲは猿の島へ行き、松の木の上にいる猿を見つけました。 「猿さん、竜宮はとてもきれいで楽しい所ですよ。私の背中に乗って、一緒に遊びに行きませんか」とクラゲが言うと、猿は喜んでクラゲの背中に乗りました。 しかし海を渡る途中、クラゲは「猿さん、肝臓を持っていますか？奥さんの病気を治すために、あなたの肝臓が必要なのです」と本当のことを言ってしまいました。",
-      "en": "The jellyfish went to the monkey island and found a monkey on a pine tree. When the jellyfish said, \"Mr. Monkey, Ryugu is a very beautiful and fun place. Won't you ride on my back and go play together?\" the monkey happily rode on the jellyfish's back. However, halfway across the sea, the jellyfish accidentally told the truth, saying, \"Mr. Monkey, do you have your liver? To cure the wife's illness, your liver is necessary.\""
+      "en": "The jellyfish went to the monkey island and found a monkey on a pine tree. When the jellyfish said, \"Mr. Monkey, Ryugu is a very beautiful and fun place. Won't you ride on my back and go play together?\" the monkey happily rode on the jellyfish's back. However, halfway across the sea, the jellyfish accidentally told the truth, saying, \"Mr. Monkey, do you have your liver? To cure the wife's illness, your liver is necessary.\"",
+      "sentences": [
+        {
+          "ja": "クラゲは猿の島へ行き、松の木の上にいる猿を見つけました。",
+          "literalEn": "クラゲ [topic] monkey ['s / of] island [toward] going pine tree ['s / of] on top of [at/to] to be monkey [obj] to see つけ した",
+          "naturalEn": "The jellyfish went to Monkey Island and found a monkey sitting in a pine tree.",
+          "tokens": [
+            {
+              "surface": "クラゲ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "島",
+              "reading": "しま",
+              "meaning": "island",
+              "baseForm": "島",
+              "level": "N4"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "松の木",
+              "reading": "まつの木",
+              "meaning": "pine tree; highest (of a three-tier ranking system)",
+              "baseForm": "松",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "上",
+              "reading": "うえ",
+              "meaning": "on top of",
+              "baseForm": "上",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "つけ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「猿さん、竜宮はとてもきれいで楽しい所ですよ。",
+          "literalEn": "monkey [Mr/Ms] Dragon Palace [topic] very pretty [in/by] enjoyable place [is] [you know]",
+          "naturalEn": "“Mr. Monkey, the Dragon Palace is a very beautiful and fun place.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "竜宮",
+              "reading": "りゅうぐう",
+              "meaning": "Dragon Palace",
+              "baseForm": "竜宮",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "きれい",
+              "meaning": "pretty; clean",
+              "baseForm": "きれい",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "楽しい",
+              "reading": "たのしい",
+              "meaning": "enjoyable",
+              "baseForm": "楽しい",
+              "level": "N5"
+            },
+            {
+              "surface": "所",
+              "reading": "ところ",
+              "meaning": "place",
+              "baseForm": "所",
+              "level": "N5"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "よ"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "私の背中に乗って、一緒に遊びに行きませんか」とクラゲが言うと、猿は喜んでクラゲの背中に乗りました。",
+          "literalEn": "I ['s / of] back of the body [at/to] to get on って together [at/to] play [at/to] going せん [?] [with/and] クラゲ [subj] to say [with/and] monkey [topic] to be delighted んで クラゲ ['s / of] back of the body [at/to] to get on した",
+          "naturalEn": "“Why don’t you ride on my back and come play with me?” said the jellyfish, and the monkey happily climbed onto its back.",
+          "tokens": [
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "背中",
+              "reading": "せなか",
+              "meaning": "back of the body",
+              "baseForm": "背中",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "乗",
+              "reading": "の",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "一緒",
+              "reading": "いっしょ",
+              "meaning": "together",
+              "baseForm": "一緒",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "遊び",
+              "reading": "あそび",
+              "meaning": "play",
+              "baseForm": "遊び",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "クラゲ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "言う",
+              "reading": "いう",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "喜",
+              "reading": "よろこ",
+              "meaning": "to be delighted",
+              "baseForm": "喜ぶ",
+              "level": "N4"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "クラゲ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "背中",
+              "reading": "せなか",
+              "meaning": "back of the body",
+              "baseForm": "背中",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "乗り",
+              "reading": "のり",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "しかし海を渡る途中、クラゲは「猿さん、肝臓を持っていますか？",
+          "literalEn": "however sea [obj] to go across on the way クラゲ [topic] monkey [Mr/Ms] liver [obj] to hold って [polite] [?]",
+          "naturalEn": "But while crossing the sea, the jellyfish blurted out, “Mr. Monkey, do you have a liver?",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "渡る",
+              "reading": "わたる",
+              "meaning": "to go across",
+              "baseForm": "渡る",
+              "level": "N5"
+            },
+            {
+              "surface": "途中",
+              "reading": "とちゅう",
+              "meaning": "on the way",
+              "baseForm": "途中",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "クラゲ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "肝臓",
+              "reading": "かんぞう",
+              "meaning": "liver",
+              "baseForm": "肝臓",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "持",
+              "reading": "も",
+              "meaning": "to hold",
+              "baseForm": "持つ",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "？"
+            }
+          ]
+        },
+        {
+          "ja": "奥さんの病気を治すために、あなたの肝臓が必要なのです」と本当のことを言ってしまいました。",
+          "literalEn": "wife ['s / of] illness [obj] to cure ため [at/to] you ['s / of] liver [subj] necessary ['s / of] [is] [with/and] truth ['s / of] thing [obj] to say って しま いま した",
+          "naturalEn": "“I need your liver to cure your wife’s illness,” the jellyfish blurted out the truth.",
+          "tokens": [
+            {
+              "surface": "奥さん",
+              "reading": "おくさん",
+              "meaning": "(honorable) wife",
+              "baseForm": "奥さん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "病気",
+              "reading": "びょうき",
+              "meaning": "illness",
+              "baseForm": "病気",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "治す",
+              "reading": "なおす",
+              "meaning": "to cure; to heal; to fix",
+              "baseForm": "治す",
+              "level": "N2"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "あなた",
+              "meaning": "you",
+              "baseForm": "あなた",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "肝臓",
+              "reading": "かんぞう",
+              "meaning": "liver",
+              "baseForm": "肝臓",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "必要",
+              "reading": "ひつよう",
+              "meaning": "necessary",
+              "baseForm": "必要",
+              "level": "N4"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "本当",
+              "reading": "ほんとう",
+              "meaning": "truth; reality; really",
+              "baseForm": "本当",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "猿はとてもびっくりして怖くなりましたが、急いで嘘をつきました。 「それは困りましたね。私は今日、肝臓を木の枝に忘れてきました。島に戻れば、すぐに取ってきますよ。」 クラゲはその言葉を信じて、猿を島へ連れて帰りました。 島に着くと、猿はすぐに木に登って、「だまされたな、馬鹿なクラゲめ！誰が自分の命をあげるものか」と笑って逃げてしまいました。",
-      "en": "The monkey was very surprised and scared, but quickly told a lie. \"That is a problem. Today, I forgot my liver on a tree branch. If we return to the island, I will get it right away.\" The jellyfish believed those words and took the monkey back to the island. When they arrived at the island, the monkey immediately climbed the tree, laughed, and ran away saying, \"You were tricked, you stupid jellyfish! Who would give up their own life!\""
+      "en": "The monkey was very surprised and scared, but quickly told a lie. \"That is a problem. Today, I forgot my liver on a tree branch. If we return to the island, I will get it right away.\" The jellyfish believed those words and took the monkey back to the island. When they arrived at the island, the monkey immediately climbed the tree, laughed, and ran away saying, \"You were tricked, you stupid jellyfish! Who would give up their own life!\"",
+      "sentences": [
+        {
+          "ja": "猿はとてもびっくりして怖くなりましたが、急いで嘘をつきました。",
+          "literalEn": "monkey [topic] very be surprised [and] frightening なり した [subj] urgent [in/by] lie [obj] moon した",
+          "naturalEn": "The monkey was very startled and frightened, but quickly made up a lie.",
+          "tokens": [
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "びっくり",
+              "meaning": "be surprised; be amazed; be frightened",
+              "baseForm": "びっくり",
+              "level": "N3"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "怖",
+              "reading": "こわ",
+              "meaning": "frightening",
+              "baseForm": "怖い",
+              "level": "N4"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "急",
+              "reading": "きゅう",
+              "meaning": "urgent; steep",
+              "baseForm": "急",
+              "level": "N4"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "嘘",
+              "reading": "うそ",
+              "meaning": "lie; falsehood",
+              "baseForm": "嘘",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "つき",
+              "meaning": "moon",
+              "baseForm": "つき",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「それは困りましたね。",
+          "literalEn": "that [topic] to be worried した [right?]",
+          "naturalEn": "“That’s a real problem.”",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "それ",
+              "meaning": "that",
+              "baseForm": "それ",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "困",
+              "reading": "こま",
+              "meaning": "to be worried",
+              "baseForm": "困る",
+              "level": "N5"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "ね",
+              "meaning": "value; price; cost",
+              "baseForm": "ね",
+              "level": "N3"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "私は今日、肝臓を木の枝に忘れてきました。",
+          "literalEn": "I [topic] today liver [obj] tree ['s / of] branch [at/to] forget [and] した",
+          "naturalEn": "“I left my liver on a tree branch today.”",
+          "tokens": [
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "今日",
+              "reading": "きょう",
+              "meaning": "today",
+              "baseForm": "今日",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "肝臓",
+              "reading": "かんぞう",
+              "meaning": "liver",
+              "baseForm": "肝臓",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "木",
+              "reading": "き",
+              "meaning": "tree; wood",
+              "baseForm": "木",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "枝",
+              "reading": "えだ",
+              "meaning": "branch; twig",
+              "baseForm": "枝",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "忘れ",
+              "reading": "わすれ",
+              "meaning": "forget",
+              "baseForm": "忘",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "島に戻れば、すぐに取ってきますよ。",
+          "literalEn": "island [at/to] to turn back immediately [at/to] to take something って ますよ",
+          "naturalEn": "“I’ll go back to the island and get it right away.”",
+          "tokens": [
+            {
+              "surface": "島",
+              "reading": "しま",
+              "meaning": "island",
+              "baseForm": "島",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "戻",
+              "reading": "もど",
+              "meaning": "to turn back",
+              "baseForm": "戻る",
+              "level": "N4"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ば"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "すぐ",
+              "meaning": "immediately; soon; easily",
+              "baseForm": "すぐ",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "取",
+              "reading": "と",
+              "meaning": "to take something",
+              "baseForm": "取る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ますよ"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "」 クラゲはその言葉を信じて、猿を島へ連れて帰りました。",
+          "literalEn": "クラゲ [topic] that word [obj] faith [and] monkey [obj] island [toward] companion [and] return した",
+          "naturalEn": "” The jellyfish believed those words and took the monkey back to the island.",
+          "tokens": [
+            {
+              "surface": "」"
+            },
+            {
+              "surface": " "
+            },
+            {
+              "surface": "クラゲ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "言葉",
+              "reading": "ことば",
+              "meaning": "word; language",
+              "baseForm": "言葉",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "信",
+              "reading": "シン",
+              "meaning": "faith, fidelity, trust",
+              "baseForm": "信",
+              "level": "N3"
+            },
+            {
+              "surface": "じ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "島",
+              "reading": "しま",
+              "meaning": "island",
+              "baseForm": "島",
+              "level": "N4"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "連れ",
+              "reading": "つれ",
+              "meaning": "companion; company",
+              "baseForm": "連れ",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "帰り",
+              "reading": "かえり",
+              "meaning": "return",
+              "baseForm": "帰り",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "島に着くと、猿はすぐに木に登って、「だまされたな、馬鹿なクラゲめ！",
+          "literalEn": "island [at/to] to arrive at [with/and] monkey [topic] immediately [at/to] tree [at/to] to climb って [is] まさ [past] fool クラゲ",
+          "naturalEn": "When they reached the island, the monkey immediately climbed a tree and laughed, “I tricked you, you stupid jellyfish!",
+          "tokens": [
+            {
+              "surface": "島",
+              "reading": "しま",
+              "meaning": "island",
+              "baseForm": "島",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "着く",
+              "reading": "つく",
+              "meaning": "to arrive at",
+              "baseForm": "着く",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "すぐ",
+              "meaning": "immediately; soon; easily",
+              "baseForm": "すぐ",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "木",
+              "reading": "き",
+              "meaning": "tree; wood",
+              "baseForm": "木",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "登",
+              "reading": "のぼ",
+              "meaning": "to climb",
+              "baseForm": "登る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "まさ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "馬鹿",
+              "reading": "ばか",
+              "meaning": "fool; idiot; trivial matter",
+              "baseForm": "馬鹿",
+              "level": "N3"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "クラゲ"
+            },
+            {
+              "surface": "め"
+            },
+            {
+              "surface": "！"
+            }
+          ]
+        },
+        {
+          "ja": "誰が自分の命をあげるものか」と笑って逃げてしまいました。",
+          "literalEn": "who [subj] oneself ['s / of] command [obj] あげる もの [?] [with/and] to laugh って to let loose [and] しま いま した",
+          "naturalEn": "“Who would ever give up their own life?” he laughed as he ran away.",
+          "tokens": [
+            {
+              "surface": "誰",
+              "reading": "だれ",
+              "meaning": "who",
+              "baseForm": "誰",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "自分",
+              "reading": "じぶん",
+              "meaning": "oneself",
+              "baseForm": "自分",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "命",
+              "reading": "いのち",
+              "meaning": "command; decree; life",
+              "baseForm": "命",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "あげる"
+            },
+            {
+              "surface": "もの"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "笑",
+              "reading": "わら",
+              "meaning": "to laugh; to smile",
+              "baseForm": "笑う",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "逃げ",
+              "reading": "のがげ",
+              "meaning": "to let loose; to set free; to let escape",
+              "baseForm": "逃す",
+              "level": "N1"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "クラゲは仕方なく一人で竜宮に帰って、王様にすべてを話しました。 王様はひどく怒って、「この馬鹿なクラゲめ！罰として骨を全部抜いてしまえ」と家来たちに命令しました。 そして、クラゲは骨を抜かれて、叩かれました。 それから、クラゲは今のように骨がない柔らかい体になって、海を漂うようになりました。",
-      "en": "The jellyfish had no choice but to return to Ryugu alone and told the king everything. The king was terribly angry and ordered his retainers, \"You stupid jellyfish! As a punishment, pull out all his bones!\" Then, the jellyfish had his bones pulled out and was beaten. Since then, the jellyfish came to have a soft body without bones as it does today, and began drifting in the sea."
+      "en": "The jellyfish had no choice but to return to Ryugu alone and told the king everything. The king was terribly angry and ordered his retainers, \"You stupid jellyfish! As a punishment, pull out all his bones!\" Then, the jellyfish had his bones pulled out and was beaten. Since then, the jellyfish came to have a soft body without bones as it does today, and began drifting in the sea.",
+      "sentences": [
+        {
+          "ja": "クラゲは仕方なく一人で竜宮に帰って、王様にすべてを話しました。",
+          "literalEn": "クラゲ [topic] method なく one person [in/by] Dragon Palace [at/to] to go back って king [at/to] すべて [obj] talk しま した",
+          "naturalEn": "The jellyfish had no choice but to return to the Dragon Palace alone and tell the King everything.",
+          "tokens": [
+            {
+              "surface": "クラゲ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "仕方",
+              "reading": "しかた",
+              "meaning": "method",
+              "baseForm": "仕方",
+              "level": "N4"
+            },
+            {
+              "surface": "なく"
+            },
+            {
+              "surface": "一人",
+              "reading": "ひとり",
+              "meaning": "one person; alone",
+              "baseForm": "一人",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "竜宮",
+              "reading": "りゅうぐう",
+              "meaning": "Dragon Palace",
+              "baseForm": "竜宮",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "帰",
+              "reading": "かえ",
+              "meaning": "to go back",
+              "baseForm": "帰る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "王様",
+              "reading": "おうさま",
+              "meaning": "king",
+              "baseForm": "王様",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "すべて"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "話",
+              "reading": "はなし",
+              "meaning": "talk; story",
+              "baseForm": "話",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "王様はひどく怒って、「この馬鹿なクラゲめ！",
+          "literalEn": "king [topic] ひどく to get angry って this fool クラゲ",
+          "naturalEn": "The king was furious and said, “You foolish jellyfish!",
+          "tokens": [
+            {
+              "surface": "王様",
+              "reading": "おうさま",
+              "meaning": "king",
+              "baseForm": "王様",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "ひどく"
+            },
+            {
+              "surface": "怒",
+              "reading": "おこ",
+              "meaning": "to get angry; to be angry",
+              "baseForm": "怒る",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "この",
+              "meaning": "this",
+              "baseForm": "この",
+              "level": "N5"
+            },
+            {
+              "surface": "馬鹿",
+              "reading": "ばか",
+              "meaning": "fool; idiot; trivial matter",
+              "baseForm": "馬鹿",
+              "level": "N3"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "クラゲ"
+            },
+            {
+              "surface": "め"
+            },
+            {
+              "surface": "！"
+            }
+          ]
+        },
+        {
+          "ja": "罰として骨を全部抜いてしまえ」と家来たちに命令しました。",
+          "literalEn": "punishment として bone [obj] all to extract [and] しま [with/and] retainer たち [at/to] order しま した",
+          "naturalEn": "\"As punishment, pull out all its bones,\" he ordered his servants.",
+          "tokens": [
+            {
+              "surface": "罰",
+              "reading": "ばち",
+              "meaning": "(divine) punishment; curse; retribution",
+              "baseForm": "罰",
+              "level": "N1"
+            },
+            {
+              "surface": "として"
+            },
+            {
+              "surface": "骨",
+              "reading": "ほね",
+              "meaning": "bone",
+              "baseForm": "骨",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "全部",
+              "reading": "ぜんぶ",
+              "meaning": "all",
+              "baseForm": "全部",
+              "level": "N5"
+            },
+            {
+              "surface": "抜",
+              "reading": "ぬ",
+              "meaning": "to extract; to omit; to surpass",
+              "baseForm": "抜く",
+              "level": "N3"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "え"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "家来",
+              "reading": "けらい",
+              "meaning": "retainer; follower",
+              "baseForm": "家来",
+              "level": "N3"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "命令",
+              "reading": "めいれい",
+              "meaning": "order; command; decree",
+              "baseForm": "命令",
+              "level": "N3"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "そして、クラゲは骨を抜かれて、叩かれました。",
+          "literalEn": "and クラゲ [topic] bone [obj] to extract [?] [and] to strike [?] した",
+          "naturalEn": "And so, the jellyfish had its bones removed and was beaten.",
+          "tokens": [
+            {
+              "surface": "そして",
+              "meaning": "and",
+              "baseForm": "そして",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "クラゲ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "骨",
+              "reading": "ほね",
+              "meaning": "bone",
+              "baseForm": "骨",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "抜",
+              "reading": "ぬ",
+              "meaning": "to extract; to omit; to surpass",
+              "baseForm": "抜く",
+              "level": "N3"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "叩",
+              "reading": "たた",
+              "meaning": "to strike; to clap; to dust",
+              "baseForm": "叩く",
+              "level": "N3"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "それから、クラゲは今のように骨がない柔らかい体になって、海を漂うようになりました。",
+          "literalEn": "after that クラゲ [topic] now ['s / of] よう [at/to] bone [subj] [not] soft body [at/to] って sea [obj] to drift about よう [at/to] なり した",
+          "naturalEn": "From then on, the jellyfish had a soft, boneless body—just as it does today—and began drifting through the ocean.",
+          "tokens": [
+            {
+              "surface": "それから",
+              "meaning": "after that",
+              "baseForm": "それから",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "クラゲ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "今",
+              "reading": "いま",
+              "meaning": "now",
+              "baseForm": "今",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "骨",
+              "reading": "ほね",
+              "meaning": "bone",
+              "baseForm": "骨",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "柔らかい",
+              "reading": "やわらかい",
+              "meaning": "soft",
+              "baseForm": "柔らかい",
+              "level": "N4"
+            },
+            {
+              "surface": "体",
+              "reading": "からだ",
+              "meaning": "body",
+              "baseForm": "体",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "漂う",
+              "reading": "ただよう",
+              "meaning": "to drift about; to float; to hang in air",
+              "baseForm": "漂う",
+              "level": "N1"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
@@ -38,7 +2120,8 @@
         "猿が嫌いだったから",
         "クラゲを罰するため"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「奥さんの病気を治すため」 is correct: 「奥さんの病気を治すために、あなたの肝臓が必要なのです」と本当のことを言ってしまいました。」 (“I need your liver to cure your wife’s illness,” the jellyfish blurted out the truth.)"
     },
     {
       "question": "海を渡る途中、猿はどうして島に戻りたいと言いましたか？",
@@ -48,7 +2131,8 @@
         "肝臓を木に忘れたと嘘をついたから",
         "お腹が空いたから"
       ],
-      "answerIndex": 2
+      "answerIndex": 2,
+      "explanation": "「肝臓を木に忘れたと嘘をついたから」 is correct: 「しかし海を渡る途中、クラゲは「猿さん、肝臓を持っていますか？」 (But while crossing the sea, the jellyfish blurted out, “Mr. Monkey, do you have a liver?)"
     },
     {
       "question": "王様に怒られた後、クラゲの体はどうなりましたか？",
@@ -58,7 +2142,9 @@
         "亀のように硬い体になりました",
         "魚になりました"
       ],
-      "answerIndex": 0
+      "answerIndex": 0,
+      "explanation": "「骨がない柔らかい体になりました」 is the correct answer according to the story."
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/fish-and-monkey.json"
 }

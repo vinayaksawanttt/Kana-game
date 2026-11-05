@@ -1,0 +1,2591 @@
+{
+  "id": "n5-my-lord-bag-of-rice",
+  "title": "米俵の殿様",
+  "titleRomaji": "Komedawara no Tonosama",
+  "titleEn": "My Lord Bag of Rice",
+  "level": "N5",
+  "category": "Fairy Tale",
+  "tags": [
+    "hero",
+    "magic",
+    "dragon",
+    "animals"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、日本に秀郷というとても強い男の人がいました。 彼は毎日、弓と矢を持って歩きました。 ある日、彼は大きな湖の橋に行きました。 橋の上に、とても大きな龍が寝ていました。 龍の口から火と煙が出ていました。 しかし、秀郷は全然怖がりませんでした。 彼は龍の体を踏んで、前へ歩きました。",
+      "en": "Long, long ago, there was a very strong man named Hidesato in Japan. Every day, he walked carrying his bow and arrows. One day, he went to a bridge over a large lake. On the bridge, a very big dragon was sleeping. Fire and smoke were coming out of the dragon's mouth. However, Hidesato was not afraid at all. He stepped on the dragon's body and walked forward.",
+      "sentences": [
+        {
+          "ja": "昔々、日本に秀郷というとても強い男の人がいました。",
+          "literalEn": "olden days Japan [at/to] excel home town という very powerful man ['s / of] person [subj] いま した",
+          "naturalEn": "Once upon a time, there was a very strong man named Hidesato in Japan.",
+          "tokens": [
+            {
+              "surface": "昔",
+              "reading": "むかし",
+              "meaning": "olden days; former",
+              "baseForm": "昔",
+              "level": "N4"
+            },
+            {
+              "surface": "々"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "日本",
+              "reading": "にっぽん",
+              "meaning": "Japan",
+              "baseForm": "日本",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "秀",
+              "reading": "ひい",
+              "meaning": "excel, beauty, excellence",
+              "baseForm": "秀",
+              "level": "N1"
+            },
+            {
+              "surface": "郷",
+              "reading": "さと",
+              "meaning": "home town, district, native place",
+              "baseForm": "郷",
+              "level": "N1"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "強い",
+              "reading": "つよい",
+              "meaning": "powerful",
+              "baseForm": "強い",
+              "level": "N5"
+            },
+            {
+              "surface": "男",
+              "reading": "おとこ",
+              "meaning": "man",
+              "baseForm": "男",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼は毎日、弓と矢を持って歩きました。",
+          "literalEn": "he [topic] every day bow [with/and] arrow [obj] to hold って pawn した",
+          "naturalEn": "Every day, he walked around carrying his bow and arrows.",
+          "tokens": [
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "毎日",
+              "reading": "まいにち",
+              "meaning": "every day",
+              "baseForm": "毎日",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "弓",
+              "reading": "ゆみ",
+              "meaning": "bow (and arrow)",
+              "baseForm": "弓",
+              "level": "N1"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "矢",
+              "reading": "や",
+              "meaning": "arrow",
+              "baseForm": "矢",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "持",
+              "reading": "も",
+              "meaning": "to hold",
+              "baseForm": "持つ",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "歩き",
+              "reading": "ふき",
+              "meaning": "pawn (in chess or shogi)",
+              "baseForm": "歩",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ある日、彼は大きな湖の橋に行きました。",
+          "literalEn": "to be day he [topic] big lake ['s / of] bridge [at/to] going した",
+          "naturalEn": "One day, he went to the bridge over the large lake.",
+          "tokens": [
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "湖",
+              "reading": "みずうみ",
+              "meaning": "lake",
+              "baseForm": "湖",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "橋",
+              "reading": "はし",
+              "meaning": "bridge",
+              "baseForm": "橋",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "橋の上に、とても大きな龍が寝ていました。",
+          "literalEn": "bridge ['s / of] on top of [at/to] very big dragon [subj] to go to bed てい した",
+          "naturalEn": "A very large dragon was sleeping on the bridge.",
+          "tokens": [
+            {
+              "surface": "橋",
+              "reading": "はし",
+              "meaning": "bridge",
+              "baseForm": "橋",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "上",
+              "reading": "うえ",
+              "meaning": "on top of",
+              "baseForm": "上",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "龍",
+              "reading": "りゅう",
+              "meaning": "dragon",
+              "baseForm": "龍",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "寝",
+              "reading": "ね",
+              "meaning": "to go to bed; to sleep",
+              "baseForm": "寝る",
+              "level": "N5"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "龍の口から火と煙が出ていました。",
+          "literalEn": "dragon ['s / of] mouth [from] fire [with/and] smoke [subj] to put out てい した",
+          "naturalEn": "Fire and smoke were coming out of the dragon’s mouth.",
+          "tokens": [
+            {
+              "surface": "龍",
+              "reading": "りゅう",
+              "meaning": "dragon",
+              "baseForm": "龍",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "口",
+              "reading": "くち",
+              "meaning": "mouth; opening",
+              "baseForm": "口",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "火",
+              "reading": "ひ",
+              "meaning": "fire",
+              "baseForm": "火",
+              "level": "N4"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "煙",
+              "reading": "けむり",
+              "meaning": "smoke; fumes",
+              "baseForm": "煙",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "しかし、秀郷は全然怖がりませんでした。",
+          "literalEn": "however excel home town [topic]  at all frightening がり せん [in/by] した",
+          "naturalEn": "But Hidesato wasn’t afraid at all.",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "秀",
+              "reading": "ひい",
+              "meaning": "excel, beauty, excellence",
+              "baseForm": "秀",
+              "level": "N1"
+            },
+            {
+              "surface": "郷",
+              "reading": "さと",
+              "meaning": "home town, district, native place",
+              "baseForm": "郷",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "全然",
+              "reading": "ぜんぜん",
+              "meaning": "(not) at all; completely",
+              "baseForm": "全然",
+              "level": "N5"
+            },
+            {
+              "surface": "怖",
+              "reading": "こわ",
+              "meaning": "frightening",
+              "baseForm": "怖い",
+              "level": "N4"
+            },
+            {
+              "surface": "がり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼は龍の体を踏んで、前へ歩きました。",
+          "literalEn": "he [topic] dragon ['s / of] body [obj] to step on んで before [toward] pawn した",
+          "naturalEn": "He stepped on the dragon’s body and walked forward.",
+          "tokens": [
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "龍",
+              "reading": "りゅう",
+              "meaning": "dragon",
+              "baseForm": "龍",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "体",
+              "reading": "からだ",
+              "meaning": "body",
+              "baseForm": "体",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "踏",
+              "reading": "ふ",
+              "meaning": "to step on",
+              "baseForm": "踏む",
+              "level": "N4"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "前",
+              "reading": "まえ",
+              "meaning": "before",
+              "baseForm": "前",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "歩き",
+              "reading": "ふき",
+              "meaning": "pawn (in chess or shogi)",
+              "baseForm": "歩",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "すると、龍はきれいな服を着た男の人になりました。 彼は「私はこの湖の王です。 あなたは本当に強い人ですね。どうか私を助けてください」と言いました。 「山の大きなムカデが、毎晩私の家族を食べに来ます。私たちはとても怖いです。お願いです、ムカデを殺してください」と言いました。",
+      "en": "Then, the dragon became a man wearing beautiful clothes. He said, \"I am the king of this lake. You are a truly strong man. Please help me.\" He said, \"A big centipede from the mountain comes every night to eat my family. We are very scared. Please, kill the centipede.\"",
+      "sentences": [
+        {
+          "ja": "すると、龍はきれいな服を着た男の人になりました。",
+          "literalEn": "then dragon [topic] pretty clothes [obj] counter for suits of clothing [past] man ['s / of] person [at/to] なり した",
+          "naturalEn": "Then, the dragon turned into a man dressed in fine clothes.",
+          "tokens": [
+            {
+              "surface": "すると",
+              "meaning": "then",
+              "baseForm": "すると",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "龍",
+              "reading": "りゅう",
+              "meaning": "dragon",
+              "baseForm": "龍",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "きれい",
+              "meaning": "pretty; clean",
+              "baseForm": "きれい",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "服",
+              "reading": "ふく",
+              "meaning": "clothes",
+              "baseForm": "服",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "着",
+              "reading": "ちゃく",
+              "meaning": "counter for suits of clothing; arriving at ..",
+              "baseForm": "着",
+              "level": "N1"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "男",
+              "reading": "おとこ",
+              "meaning": "man",
+              "baseForm": "男",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼は「私はこの湖の王です。",
+          "literalEn": "he [topic]  I [topic] this lake ['s / of] king [is]",
+          "naturalEn": "He said, “I am the king of this lake.",
+          "tokens": [
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "この",
+              "meaning": "this",
+              "baseForm": "この",
+              "level": "N5"
+            },
+            {
+              "surface": "湖",
+              "reading": "みずうみ",
+              "meaning": "lake",
+              "baseForm": "湖",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "王",
+              "reading": "おう",
+              "meaning": "king; ruler; sovereign",
+              "baseForm": "王",
+              "level": "N3"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "あなたは本当に強い人ですね。",
+          "literalEn": "you [topic] really powerful person [is] [right?]",
+          "naturalEn": "You really are a strong person.",
+          "tokens": [
+            {
+              "surface": "あなた",
+              "meaning": "you",
+              "baseForm": "あなた",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "本当に",
+              "reading": "ほんとうに",
+              "meaning": "really; truly",
+              "baseForm": "本当に",
+              "level": "N5"
+            },
+            {
+              "surface": "強い",
+              "reading": "つよい",
+              "meaning": "powerful",
+              "baseForm": "強い",
+              "level": "N5"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "ね",
+              "meaning": "value; price; cost",
+              "baseForm": "ね",
+              "level": "N3"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "どうか私を助けてください」と言いました。",
+          "literalEn": "copper coin  I [obj] assistance [and] くだ さい [with/and] to say いま した",
+          "naturalEn": "\"Please help me,\" he said.",
+          "tokens": [
+            {
+              "surface": "どうか",
+              "meaning": "copper coin",
+              "baseForm": "どうか",
+              "level": "N3"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "助け",
+              "reading": "たすけ",
+              "meaning": "assistance",
+              "baseForm": "助け",
+              "level": "N1"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "くだ"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「山の大きなムカデが、毎晩私の家族を食べに来ます。",
+          "literalEn": "mountain ['s / of] big ムカデ [subj] every night  I ['s / of] family [obj]  to eat [at/to] for [polite]",
+          "naturalEn": "“A giant centipede from the mountains comes every night to eat my family.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "ムカデ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "毎晩",
+              "reading": "まいばん",
+              "meaning": "every night",
+              "baseForm": "毎晩",
+              "level": "N5"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "家族",
+              "reading": "かぞく",
+              "meaning": "family",
+              "baseForm": "家族",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "食",
+              "reading": "く",
+              "meaning": "(male) (vulgar) to eat",
+              "baseForm": "食う",
+              "level": "N3"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "来",
+              "reading": "らい",
+              "meaning": "for (10 days); next (year)",
+              "baseForm": "来",
+              "level": "N3"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "私たちはとても怖いです。",
+          "literalEn": "I たち [topic] very frightening [is]",
+          "naturalEn": "We’re so scared.",
+          "tokens": [
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "怖い",
+              "reading": "こわい",
+              "meaning": "frightening",
+              "baseForm": "怖い",
+              "level": "N4"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "お願いです、ムカデを殺してください」と言いました。",
+          "literalEn": "request [is] ムカデ [obj] to kill [and] くだ さい [with/and] to say いま した",
+          "naturalEn": "\"Please, kill the centipede,\" he said.",
+          "tokens": [
+            {
+              "surface": "お願い",
+              "reading": "おねがい",
+              "meaning": "request; wish; please",
+              "baseForm": "お願い",
+              "level": "N5"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ムカデ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "殺し",
+              "reading": "ころし",
+              "meaning": "to kill",
+              "baseForm": "殺す",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "くだ"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "秀郷は「いいですよ。私がムカデを殺します」と言って、王のきれいな家に行きました。 夜中に、大きなムカデが山から来ました。 ムカデの目は、二つの大きな火のように赤くて明るかったです。",
+      "en": "Hidesato said, \"All right. I will kill the centipede,\" and went to the king's beautiful house. In the middle of the night, the big centipede came from the mountain. The centipede's eyes were red and bright like two large fires.",
+      "sentences": [
+        {
+          "ja": "秀郷は「いいですよ。",
+          "literalEn": "excel home town [topic] good [is] [you know]",
+          "naturalEn": "Hidesato said, “All right.",
+          "tokens": [
+            {
+              "surface": "秀",
+              "reading": "ひい",
+              "meaning": "excel, beauty, excellence",
+              "baseForm": "秀",
+              "level": "N1"
+            },
+            {
+              "surface": "郷",
+              "reading": "さと",
+              "meaning": "home town, district, native place",
+              "baseForm": "郷",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "いい",
+              "meaning": "good",
+              "baseForm": "いい",
+              "level": "N5"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "よ"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "私がムカデを殺します」と言って、王のきれいな家に行きました。",
+          "literalEn": "I [subj] ムカデ [obj] to kill [polite] [with/and] to say って king ['s / of] pretty house [at/to] going した",
+          "naturalEn": "\"I'll kill the centipede,\" he said, and went to the king's beautiful house.",
+          "tokens": [
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "ムカデ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "殺し",
+              "reading": "ころし",
+              "meaning": "to kill",
+              "baseForm": "殺す",
+              "level": "N3"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "王",
+              "reading": "おう",
+              "meaning": "king; ruler; sovereign",
+              "baseForm": "王",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "きれい",
+              "meaning": "pretty; clean",
+              "baseForm": "きれい",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "夜中に、大きなムカデが山から来ました。",
+          "literalEn": "midnight [at/to] big ムカデ [subj] mountain [from] for した",
+          "naturalEn": "In the middle of the night, a huge centipede came down from the mountain.",
+          "tokens": [
+            {
+              "surface": "夜中",
+              "reading": "よなか",
+              "meaning": "midnight; dead of night",
+              "baseForm": "夜中",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "ムカデ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "来",
+              "reading": "らい",
+              "meaning": "for (10 days); next (year)",
+              "baseForm": "来",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ムカデの目は、二つの大きな火のように赤くて明るかったです。",
+          "literalEn": "ムカデ ['s / of] eye [topic] two things ['s / of] big fire ['s / of] よう [at/to] red [and] room [?] [past] [is]",
+          "naturalEn": "The centipede’s eyes were red and bright, like two large fires.",
+          "tokens": [
+            {
+              "surface": "ムカデ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "目",
+              "reading": "め",
+              "meaning": "eye",
+              "baseForm": "目",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "二つ",
+              "reading": "ふたつ",
+              "meaning": "two things",
+              "baseForm": "二つ",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "火",
+              "reading": "ひ",
+              "meaning": "fire",
+              "baseForm": "火",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "赤",
+              "reading": "あか",
+              "meaning": "red",
+              "baseForm": "赤",
+              "level": "N5"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "明",
+              "reading": "あ",
+              "meaning": "room; time to spare; emptiness",
+              "baseForm": "明き",
+              "level": "N2"
+            },
+            {
+              "surface": "る"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "秀郷は弓と矢を持ちました。 最初の矢は、ムカデに当たりましたが、ムカデは死にませんでした。 二つ目の矢も当たりましたが、だめでした。 秀郷は最後の矢に自分の唾をつけて、強く放ちました。",
+      "en": "Hidesato took his bow and arrows. The first arrow hit the centipede, but the centipede did not die. The second arrow also hit, but it was no good. Hidesato put his own saliva on the last arrow and shot it strongly.",
+      "sentences": [
+        {
+          "ja": "秀郷は弓と矢を持ちました。",
+          "literalEn": "excel home town [topic] bow [with/and] arrow [obj] hold した",
+          "naturalEn": "Hidesato took up his bow and arrow.",
+          "tokens": [
+            {
+              "surface": "秀",
+              "reading": "ひい",
+              "meaning": "excel, beauty, excellence",
+              "baseForm": "秀",
+              "level": "N1"
+            },
+            {
+              "surface": "郷",
+              "reading": "さと",
+              "meaning": "home town, district, native place",
+              "baseForm": "郷",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "弓",
+              "reading": "ゆみ",
+              "meaning": "bow (and arrow)",
+              "baseForm": "弓",
+              "level": "N1"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "矢",
+              "reading": "や",
+              "meaning": "arrow",
+              "baseForm": "矢",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "持ち",
+              "reading": "もち",
+              "meaning": "hold; charge; keep possession",
+              "baseForm": "持ち",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "最初の矢は、ムカデに当たりましたが、ムカデは死にませんでした。",
+          "literalEn": "beginning ['s / of] arrow [topic] ムカデ on the occasion of した [subj] ムカデ [topic] death [at/to] せん [in/by] した",
+          "naturalEn": "The first arrow struck the centipede, but it did not die.",
+          "tokens": [
+            {
+              "surface": "最初",
+              "reading": "さいしょ",
+              "meaning": "beginning; first",
+              "baseForm": "最初",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "矢",
+              "reading": "や",
+              "meaning": "arrow",
+              "baseForm": "矢",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ムカデ"
+            },
+            {
+              "surface": "に当たり",
+              "reading": "にあたり",
+              "meaning": "on the occasion of; hitting upon",
+              "baseForm": "に当たり",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ムカデ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "死",
+              "reading": "し",
+              "meaning": "death; decease",
+              "baseForm": "死",
+              "level": "N1"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "二つ目の矢も当たりましたが、だめでした。",
+          "literalEn": "two things eye ['s / of] arrow [also] hit した [subj] no good [in/by] した",
+          "naturalEn": "The second arrow also hit its mark, but it didn’t work.",
+          "tokens": [
+            {
+              "surface": "二つ",
+              "reading": "ふたつ",
+              "meaning": "two things",
+              "baseForm": "二つ",
+              "level": "N5"
+            },
+            {
+              "surface": "目",
+              "reading": "め",
+              "meaning": "eye",
+              "baseForm": "目",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "矢",
+              "reading": "や",
+              "meaning": "arrow",
+              "baseForm": "矢",
+              "level": "N1"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "当たり",
+              "reading": "あたり",
+              "meaning": "hit; success; reaching the mark",
+              "baseForm": "当たり",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "だめ",
+              "meaning": "no good",
+              "baseForm": "だめ",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "秀郷は最後の矢に自分の唾をつけて、強く放ちました。",
+          "literalEn": "excel home town [topic] last ['s / of] arrow [at/to] oneself ['s / of] saliva [obj] つけ [and] powerful to separate した",
+          "naturalEn": "Hidesato moistened his last arrow with his own saliva and shot it with all his might.",
+          "tokens": [
+            {
+              "surface": "秀",
+              "reading": "ひい",
+              "meaning": "excel, beauty, excellence",
+              "baseForm": "秀",
+              "level": "N1"
+            },
+            {
+              "surface": "郷",
+              "reading": "さと",
+              "meaning": "home town, district, native place",
+              "baseForm": "郷",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "最後",
+              "reading": "さいご",
+              "meaning": "last; end",
+              "baseForm": "最後",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "矢",
+              "reading": "や",
+              "meaning": "arrow",
+              "baseForm": "矢",
+              "level": "N1"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "自分",
+              "reading": "じぶん",
+              "meaning": "oneself",
+              "baseForm": "自分",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "唾",
+              "reading": "つば",
+              "meaning": "saliva; sputum",
+              "baseForm": "唾",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "つけ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "強",
+              "reading": "つよ",
+              "meaning": "powerful",
+              "baseForm": "強い",
+              "level": "N5"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "放",
+              "reading": "はな",
+              "meaning": "to separate; to set free",
+              "baseForm": "放す",
+              "level": "N3"
+            },
+            {
+              "surface": "ち"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "その矢はムカデの頭の真ん中に当たりました。 ついに、ムカデは死にました。 湖の王と家族はとても喜びました。 王は秀郷のために、魚などのたくさんのおいしい食べ物と、おいしいお酒を出しました。",
+      "en": "That arrow hit right in the middle of the centipede's head. Finally, the centipede died. The king of the lake and his family were very happy. The king served a lot of delicious food, such as fish, and delicious wine for Hidesato.",
+      "sentences": [
+        {
+          "ja": "その矢はムカデの頭の真ん中に当たりました。",
+          "literalEn": "that arrow [topic] ムカデ ['s / of] head ['s / of] middle on the occasion of した",
+          "naturalEn": "The arrow struck the centipede right in the middle of its head.",
+          "tokens": [
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "矢",
+              "reading": "や",
+              "meaning": "arrow",
+              "baseForm": "矢",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "ムカデ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "頭",
+              "reading": "あたま",
+              "meaning": "head",
+              "baseForm": "頭",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "真ん中",
+              "reading": "まんなか",
+              "meaning": "middle",
+              "baseForm": "真ん中",
+              "level": "N4"
+            },
+            {
+              "surface": "に当たり",
+              "reading": "にあたり",
+              "meaning": "on the occasion of; hitting upon",
+              "baseForm": "に当たり",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ついに、ムカデは死にました。",
+          "literalEn": "ついに ムカデ [topic] death [at/to] した",
+          "naturalEn": "Finally, the centipede died.",
+          "tokens": [
+            {
+              "surface": "ついに"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ムカデ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "死",
+              "reading": "し",
+              "meaning": "death; decease",
+              "baseForm": "死",
+              "level": "N1"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "湖の王と家族はとても喜びました。",
+          "literalEn": "lake ['s / of] king [with/and] family [topic] very  joy した",
+          "naturalEn": "The King of the Lake and his family were overjoyed.",
+          "tokens": [
+            {
+              "surface": "湖",
+              "reading": "みずうみ",
+              "meaning": "lake",
+              "baseForm": "湖",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "王",
+              "reading": "おう",
+              "meaning": "king; ruler; sovereign",
+              "baseForm": "王",
+              "level": "N3"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "家族",
+              "reading": "かぞく",
+              "meaning": "family",
+              "baseForm": "家族",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "喜び",
+              "reading": "よろこび",
+              "meaning": "(a) joy; (a) delight; rapture",
+              "baseForm": "喜び",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "王は秀郷のために、魚などのたくさんのおいしい食べ物と、おいしいお酒を出しました。",
+          "literalEn": "king [topic] excel home town ['s / of] ため [at/to] fish et cetera ['s / of] many ['s / of] delicious food [with/and] delicious alcohol [obj] to put out しま した",
+          "naturalEn": "The king served Hideyoshi a plentiful spread of delicious foods, including fish, and fine sake.",
+          "tokens": [
+            {
+              "surface": "王",
+              "reading": "おう",
+              "meaning": "king; ruler; sovereign",
+              "baseForm": "王",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "秀",
+              "reading": "ひい",
+              "meaning": "excel, beauty, excellence",
+              "baseForm": "秀",
+              "level": "N1"
+            },
+            {
+              "surface": "郷",
+              "reading": "さと",
+              "meaning": "home town, district, native place",
+              "baseForm": "郷",
+              "level": "N1"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "魚",
+              "reading": "さかな",
+              "meaning": "fish",
+              "baseForm": "魚",
+              "level": "N5"
+            },
+            {
+              "surface": "など",
+              "meaning": "et cetera",
+              "baseForm": "など",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "おいしい",
+              "meaning": "delicious",
+              "baseForm": "おいしい",
+              "level": "N5"
+            },
+            {
+              "surface": "食べ物",
+              "reading": "たべもの",
+              "meaning": "food",
+              "baseForm": "食べ物",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "おいしい",
+              "meaning": "delicious",
+              "baseForm": "おいしい",
+              "level": "N5"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "酒",
+              "reading": "さけ",
+              "meaning": "alcohol; sake",
+              "baseForm": "酒",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "次の日、秀郷は家に帰ることにしました。 湖の王は彼に米俵などの五つのプレゼントをあげました。 その米俵は魔法の米俵でした。 毎日、家族みんなで米をたくさん食べても、米は絶対に少なくなりませんでした。",
+      "en": "The next day, Hidesato decided to return home. The king of the lake gave him five presents, including a bag of rice. That bag of rice was a magic bag of rice. Even if the whole family ate a lot of rice every day, the rice never ever decreased.",
+      "sentences": [
+        {
+          "ja": "次の日、秀郷は家に帰ることにしました。",
+          "literalEn": "next ['s / of] day excel home town [topic] house [at/to] to go back ことに しま した",
+          "naturalEn": "The next day, Hidesato decided to return home.",
+          "tokens": [
+            {
+              "surface": "次",
+              "reading": "つぎ",
+              "meaning": "next",
+              "baseForm": "次",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "秀",
+              "reading": "ひい",
+              "meaning": "excel, beauty, excellence",
+              "baseForm": "秀",
+              "level": "N1"
+            },
+            {
+              "surface": "郷",
+              "reading": "さと",
+              "meaning": "home town, district, native place",
+              "baseForm": "郷",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "帰る",
+              "reading": "かえる",
+              "meaning": "to go back",
+              "baseForm": "帰る",
+              "level": "N5"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "湖の王は彼に米俵などの五つのプレゼントをあげました。",
+          "literalEn": "lake ['s / of] king [topic] he [at/to] uncooked rice bag et cetera ['s / of] five ['s / of] present [obj] Ah した",
+          "naturalEn": "The King of the Lake gave him five gifts, including the rice sack.",
+          "tokens": [
+            {
+              "surface": "湖",
+              "reading": "みずうみ",
+              "meaning": "lake",
+              "baseForm": "湖",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "王",
+              "reading": "おう",
+              "meaning": "king; ruler; sovereign",
+              "baseForm": "王",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "米",
+              "reading": "こめ",
+              "meaning": "uncooked rice",
+              "baseForm": "米",
+              "level": "N4"
+            },
+            {
+              "surface": "俵",
+              "reading": "たわら",
+              "meaning": "bag, bale, sack",
+              "baseForm": "俵",
+              "level": "N1"
+            },
+            {
+              "surface": "など",
+              "meaning": "et cetera",
+              "baseForm": "など",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "五つ",
+              "reading": "いつつ",
+              "meaning": "five",
+              "baseForm": "五つ",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "プレゼント",
+              "meaning": "present",
+              "baseForm": "プレゼント",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "あ",
+              "meaning": "Ah",
+              "baseForm": "あ",
+              "level": "N4"
+            },
+            {
+              "surface": "げ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "その米俵は魔法の米俵でした。",
+          "literalEn": "that uncooked rice bag [topic] magic ['s / of] uncooked rice bag [in/by] した",
+          "naturalEn": "Those rice sacks were magical.",
+          "tokens": [
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "米",
+              "reading": "こめ",
+              "meaning": "uncooked rice",
+              "baseForm": "米",
+              "level": "N4"
+            },
+            {
+              "surface": "俵",
+              "reading": "たわら",
+              "meaning": "bag, bale, sack",
+              "baseForm": "俵",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "魔法",
+              "reading": "まほう",
+              "meaning": "magic; sorcery",
+              "baseForm": "魔法",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "米",
+              "reading": "こめ",
+              "meaning": "uncooked rice",
+              "baseForm": "米",
+              "level": "N4"
+            },
+            {
+              "surface": "俵",
+              "reading": "たわら",
+              "meaning": "bag, bale, sack",
+              "baseForm": "俵",
+              "level": "N1"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "毎日、家族みんなで米をたくさん食べても、米は絶対に少なくなりませんでした。",
+          "literalEn": "every day family everyone [in/by] uncooked rice [obj] many  to eat [and] [also] uncooked rice [topic] absolute few なく なり せん [in/by] した",
+          "naturalEn": "No matter how much rice the whole family ate every day, the supply never diminished.",
+          "tokens": [
+            {
+              "surface": "毎日",
+              "reading": "まいにち",
+              "meaning": "every day",
+              "baseForm": "毎日",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "家族",
+              "reading": "かぞく",
+              "meaning": "family",
+              "baseForm": "家族",
+              "level": "N5"
+            },
+            {
+              "surface": "みんな",
+              "meaning": "everyone",
+              "baseForm": "みんな",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "米",
+              "reading": "こめ",
+              "meaning": "uncooked rice",
+              "baseForm": "米",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "食",
+              "reading": "く",
+              "meaning": "(male) (vulgar) to eat",
+              "baseForm": "食う",
+              "level": "N3"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "米",
+              "reading": "こめ",
+              "meaning": "uncooked rice",
+              "baseForm": "米",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "絶対に",
+              "reading": "ぜったいに",
+              "meaning": "absolute; unconditional; absoluteness",
+              "baseForm": "絶対",
+              "level": "N3"
+            },
+            {
+              "surface": "少",
+              "reading": "すこ",
+              "meaning": "few",
+              "baseForm": "少し",
+              "level": "N5"
+            },
+            {
+              "surface": "なく"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "秀郷は、毎日おいしい米を食べました。そして、服や料理の道具ももらいましたから、彼はとてもお金持ちになりました。 みんなは彼を「米俵の殿様」と呼びました。",
+      "en": "Hidesato ate delicious rice every day. And because he also received clothes and cooking tools, he became a very rich man. Everyone called him \"My Lord Bag of Rice\".",
+      "sentences": [
+        {
+          "ja": "秀郷は、毎日おいしい米を食べました。",
+          "literalEn": "excel home town [topic] every day delicious uncooked rice [obj]  to eat した",
+          "naturalEn": "Hidesato ate delicious rice every day.",
+          "tokens": [
+            {
+              "surface": "秀",
+              "reading": "ひい",
+              "meaning": "excel, beauty, excellence",
+              "baseForm": "秀",
+              "level": "N1"
+            },
+            {
+              "surface": "郷",
+              "reading": "さと",
+              "meaning": "home town, district, native place",
+              "baseForm": "郷",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "毎日",
+              "reading": "まいにち",
+              "meaning": "every day",
+              "baseForm": "毎日",
+              "level": "N5"
+            },
+            {
+              "surface": "おいしい",
+              "meaning": "delicious",
+              "baseForm": "おいしい",
+              "level": "N5"
+            },
+            {
+              "surface": "米",
+              "reading": "こめ",
+              "meaning": "uncooked rice",
+              "baseForm": "米",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "食",
+              "reading": "く",
+              "meaning": "(male) (vulgar) to eat",
+              "baseForm": "食う",
+              "level": "N3"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "そして、服や料理の道具ももらいましたから、彼はとてもお金持ちになりました。",
+          "literalEn": "and clothes cuisine ['s / of] tool [also] [also] いま した [from] he [topic] very rich man [at/to] なり した",
+          "naturalEn": "And since he also received clothes and cooking utensils, he became very wealthy.",
+          "tokens": [
+            {
+              "surface": "そして",
+              "meaning": "and",
+              "baseForm": "そして",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "服",
+              "reading": "ふく",
+              "meaning": "clothes",
+              "baseForm": "服",
+              "level": "N5"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "料理",
+              "reading": "りょうり",
+              "meaning": "cuisine",
+              "baseForm": "料理",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "道具",
+              "reading": "どうぐ",
+              "meaning": "tool; means",
+              "baseForm": "道具",
+              "level": "N4"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "金持ち",
+              "reading": "かねもち",
+              "meaning": "rich man",
+              "baseForm": "金持ち",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "みんなは彼を「米俵の殿様」と呼びました。",
+          "literalEn": "everyone [topic] he [obj] uncooked rice bag ['s / of] feudal lord [with/and] to call out した",
+          "naturalEn": "Everyone called him “The Lord of the Rice Bales.”",
+          "tokens": [
+            {
+              "surface": "みんな",
+              "meaning": "everyone",
+              "baseForm": "みんな",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "米",
+              "reading": "こめ",
+              "meaning": "uncooked rice",
+              "baseForm": "米",
+              "level": "N4"
+            },
+            {
+              "surface": "俵",
+              "reading": "たわら",
+              "meaning": "bag, bale, sack",
+              "baseForm": "俵",
+              "level": "N1"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "殿様",
+              "reading": "とのさま",
+              "meaning": "feudal lord",
+              "baseForm": "殿様",
+              "level": "N1"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "呼",
+              "reading": "よ",
+              "meaning": "to call out; to invite",
+              "baseForm": "呼ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "び"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "秀郷は橋の上で何の上を歩きましたか？",
+      "options": [
+        "大きな犬",
+        "大きな龍",
+        "大きなお金",
+        "大きなムカデ"
+      ],
+      "answerIndex": 1,
+      "explanation": "「大きな龍」 is correct: 「橋の上に、とても大きな龍が寝ていました。」 (A very large dragon was sleeping on the bridge.)"
+    },
+    {
+      "question": "湖の王はどうして困っていましたか？",
+      "options": [
+        "食べ物がなかったから",
+        "道がわからなかったから",
+        "大きなムカデが来たから",
+        "橋が壊れたから"
+      ],
+      "answerIndex": 2,
+      "explanation": "「大きなムカデが来たから」 is correct: 「湖の王は彼に米俵などの五つのプレゼントをあげました。」 (The King of the Lake gave him five gifts, including the rice sack.)"
+    },
+    {
+      "question": "湖の王がくれた米俵はどうなりましたか？",
+      "options": [
+        "すぐに米がなくなりました",
+        "毎日食べても、少なくなりませんでした",
+        "魚になりました",
+        "誰かが盗みました"
+      ],
+      "answerIndex": 1,
+      "explanation": "「毎日食べても、少なくなりませんでした」 is the correct answer according to the story."
+    }
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/fairy-tales/n5-my-lord-bag-of-rice.json"
+}

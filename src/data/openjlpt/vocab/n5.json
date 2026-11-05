@@ -26,7 +26,14 @@
         "en": "See you at the party.",
         "tatoeba_id": 215904
       }
-    ]
+    ],
+    "synonyms": [
+      "meet",
+      "encounter",
+      "see",
+      "greet"
+    ],
+    "reversePrompt": "to meet (planned / a friend)"
   },
   {
     "id": "ebec658463",
@@ -54,7 +61,8 @@
         "en": "My summer school dress is blue and white checkered.",
         "tatoeba_id": 187219
       }
-    ]
+    ],
+    "reversePrompt": "blue (noun)"
   },
   {
     "id": "51a671ec17",
@@ -82,7 +90,8 @@
         "en": "Do you know why the sky is blue?",
         "tatoeba_id": 199202
       }
-    ]
+    ],
+    "reversePrompt": "blue (い-adjective)"
   },
   {
     "id": "2dacb910b2",
@@ -111,7 +120,8 @@
         "en": "The house is built of red bricks.",
         "tatoeba_id": 212071
       }
-    ]
+    ],
+    "reversePrompt": "red (noun)"
   },
   {
     "id": "44ba38cf8b",
@@ -139,7 +149,8 @@
         "en": "Some are red and others are white.",
         "tatoeba_id": 142281
       }
-    ]
+    ],
+    "reversePrompt": "red (い-adjective)"
   },
   {
     "id": "91987ae840",
@@ -167,7 +178,8 @@
         "en": "The diamond shone brightly.",
         "tatoeba_id": 203874
       }
-    ]
+    ],
+    "reversePrompt": "bright (い-adjective)"
   },
   {
     "id": "8dc7006bda",
@@ -196,7 +208,8 @@
         "en": "Cool fall is here.",
         "tatoeba_id": 216632
       }
-    ]
+    ],
+    "reversePrompt": "autumn"
   },
   {
     "id": "fc3bc1e6f1",
@@ -226,7 +239,12 @@
         "en": "The door would not open.",
         "tatoeba_id": 201844
       }
-    ]
+    ],
+    "synonyms": [
+      "open",
+      "become open"
+    ],
+    "reversePrompt": "to open (intransitive - flowers, event)"
   },
   {
     "id": "321963ed35",
@@ -255,7 +273,11 @@
         "en": "Somebody, open this door, please.",
         "tatoeba_id": 203221
       }
-    ]
+    ],
+    "synonyms": [
+      "open"
+    ],
+    "reversePrompt": "to open (transitive - door, window)"
   },
   {
     "id": "9661cbac61",
@@ -287,7 +309,14 @@
         "en": "He accelerated.",
         "tatoeba_id": 113352
       }
-    ]
+    ],
+    "synonyms": [
+      "give",
+      "present",
+      "hand over",
+      "provide"
+    ],
+    "reversePrompt": "to give (transitive)"
   },
   {
     "id": "d46ae79a26",
@@ -316,7 +345,8 @@
         "en": "George had a lot of cheese for breakfast.",
         "tatoeba_id": 215640
       }
-    ]
+    ],
+    "reversePrompt": "morning (noun)"
   },
   {
     "id": "98bc6f72ae",
@@ -346,7 +376,8 @@
         "en": "What do you usually have for breakfast?",
         "tatoeba_id": 126246
       }
-    ]
+    ],
+    "reversePrompt": "breakfast"
   },
   {
     "id": "b3b4041c52",
@@ -378,7 +409,8 @@
         "en": "Do you have time the day after tomorrow?",
         "tatoeba_id": 234494
       }
-    ]
+    ],
+    "reversePrompt": "day after tomorrow (noun)"
   },
   {
     "id": "27df3d5802",
@@ -407,7 +439,8 @@
         "en": "I froze at the sight of the snake.",
         "tatoeba_id": 196726
       }
-    ]
+    ],
+    "reversePrompt": "foot (noun; leg)"
   },
   {
     "id": "115ec83476",
@@ -438,7 +471,8 @@
         "en": "I am going on a picnic tomorrow.",
         "tatoeba_id": 80466
       }
-    ]
+    ],
+    "reversePrompt": "tomorrow"
   },
   {
     "id": "bee501faf0",
@@ -469,7 +503,8 @@
         "en": "Look at the sports car over there.",
         "tatoeba_id": 234395
       }
-    ]
+    ],
+    "reversePrompt": "over there"
   },
   {
     "id": "2d55571300",
@@ -499,7 +534,12 @@
         "en": "Never play here.",
         "tatoeba_id": 225249
       }
-    ]
+    ],
+    "synonyms": [
+      "play",
+      "make a visit"
+    ],
+    "reversePrompt": "to play (intransitive; to make a visit)"
   },
   {
     "id": "f665c2128a",
@@ -527,7 +567,8 @@
         "en": "It is getting warmer and warmer day by day.",
         "tatoeba_id": 122194
       }
-    ]
+    ],
+    "reversePrompt": "warm (い-adjective)"
   },
   {
     "id": "b62cb9ce4c",
@@ -555,7 +596,8 @@
         "en": "Jill is smart as well as pretty.",
         "tatoeba_id": 215196
       }
-    ]
+    ],
+    "reversePrompt": "head (noun)"
   },
   {
     "id": "8ae27e3b51",
@@ -583,7 +625,14 @@
         "en": "It is said that a new restaurant was constructed.",
         "tatoeba_id": 145459
       }
-    ]
+    ],
+    "synonyms": [
+      "fresh",
+      "recent",
+      "modern",
+      "novel"
+    ],
+    "reversePrompt": "new (い-adjective)"
   },
   {
     "id": "34e6f7d220",
@@ -614,7 +663,8 @@
         "en": "Please write to me when you get there.",
         "tatoeba_id": 234350
       }
-    ]
+    ],
+    "reversePrompt": "there"
   },
   {
     "id": "9949d87445",
@@ -644,7 +694,8 @@
         "en": "The ice is two inches thick.",
         "tatoeba_id": 85389
       }
-    ]
+    ],
+    "reversePrompt": "thick (physical depth or board)"
   },
   {
     "id": "7b4aecdf7b",
@@ -672,7 +723,14 @@
         "en": "Let's go out before it gets hot.",
         "tatoeba_id": 147452
       }
-    ]
+    ],
+    "synonyms": [
+      "warm",
+      "scorching",
+      "heated",
+      "boiling"
+    ],
+    "reversePrompt": "hot (weather or climate)"
   },
   {
     "id": "a379d413fd",
@@ -700,7 +758,8 @@
         "en": "Get your hot dachshund sausages!",
         "tatoeba_id": 236207
       }
-    ]
+    ],
+    "reversePrompt": "hot (to the touch / liquid temperature)"
   },
   {
     "id": "60dd63379e",
@@ -727,7 +786,8 @@
         "en": "It looks like there's an elevator over there.",
         "tatoeba_id": 4892691
       }
-    ]
+    ],
+    "reversePrompt": "over there"
   },
   {
     "id": "4f134c9b38",
@@ -756,7 +816,8 @@
         "en": "In the alphabet, B comes after A.",
         "tatoeba_id": 229928
       }
-    ]
+    ],
+    "reversePrompt": "afterwards"
   },
   {
     "id": "afdf384f68",
@@ -786,7 +847,8 @@
         "en": "Which book is yours?",
         "tatoeba_id": 200726
       }
-    ]
+    ],
+    "reversePrompt": "you"
   },
   {
     "id": "4aab699864",
@@ -814,7 +876,11 @@
         "en": "My brother is looking for an apartment.",
         "tatoeba_id": 176617
       }
-    ]
+    ],
+    "synonyms": [
+      "older brother"
+    ],
+    "reversePrompt": "(humble) older brother (noun)"
   },
   {
     "id": "8bfeb208b4",
@@ -841,7 +907,11 @@
         "en": "My sister presses my trousers.",
         "tatoeba_id": 168901
       }
-    ]
+    ],
+    "synonyms": [
+      "older sister"
+    ],
+    "reversePrompt": "(humble) older sister (noun)"
   },
   {
     "id": "ac4706068b",
@@ -872,7 +942,8 @@
         "en": "This book is not as easy as that one.",
         "tatoeba_id": 219724
       }
-    ]
+    ],
+    "reversePrompt": "that over there"
   },
   {
     "id": "0cf05b3a0d",
@@ -899,7 +970,8 @@
         "en": "This is a great apartment.",
         "tatoeba_id": 229463
       }
-    ]
+    ],
+    "reversePrompt": "apartment"
   },
   {
     "id": "a5aceb6426",
@@ -932,7 +1004,12 @@
         "en": "May I take a shower?",
         "tatoeba_id": 215743
       }
-    ]
+    ],
+    "synonyms": [
+      "bathe",
+      "shower"
+    ],
+    "reversePrompt": "to bathe (transitive; to shower)"
   },
   {
     "id": "0509cb3b27",
@@ -960,7 +1037,8 @@
         "en": "Look out! There's a truck coming!",
         "tatoeba_id": 183596
       }
-    ]
+    ],
+    "reversePrompt": "dangerous (い-adjective)"
   },
   {
     "id": "4afffe5811",
@@ -988,7 +1066,8 @@
         "en": "This chocolate is very sweet and tasty.",
         "tatoeba_id": 223560
       }
-    ]
+    ],
+    "reversePrompt": "sweet (い-adjective)"
   },
   {
     "id": "eac90e8e98",
@@ -1019,7 +1098,8 @@
         "en": "I don't speak French very much.",
         "tatoeba_id": 196985
       }
-    ]
+    ],
+    "reversePrompt": "not very"
   },
   {
     "id": "5d72771a3c",
@@ -1046,7 +1126,8 @@
         "en": "My son took a candy from the box.",
         "tatoeba_id": 139909
       }
-    ]
+    ],
+    "reversePrompt": "candy (noun)"
   },
   {
     "id": "277a58c9df",
@@ -1074,7 +1155,8 @@
         "en": "It may rain any minute.",
         "tatoeba_id": 172827
       }
-    ]
+    ],
+    "reversePrompt": "rain"
   },
   {
     "id": "f8fa96946f",
@@ -1103,7 +1185,11 @@
         "en": "The man washing the car is Mr Jones.",
         "tatoeba_id": 148947
       }
-    ]
+    ],
+    "synonyms": [
+      "wash"
+    ],
+    "reversePrompt": "to wash (transitive)"
   },
   {
     "id": "93461820fe",
@@ -1134,7 +1220,8 @@
         "en": "It's very kind of you to say so.",
         "tatoeba_id": 213900
       }
-    ]
+    ],
+    "reversePrompt": "Thank you"
   },
   {
     "id": "ac08788418",
@@ -1168,7 +1255,15 @@
         "en": "There were few, if any, trees.",
         "tatoeba_id": 80097
       }
-    ]
+    ],
+    "synonyms": [
+      "ある",
+      "be",
+      "have (used for inanimate objects)",
+      "have"
+    ],
+    "modernMeaning": "ある",
+    "reversePrompt": "ある"
   },
   {
     "id": "55f3080ce4",
@@ -1196,7 +1291,14 @@
         "en": "Do not read while walking.",
         "tatoeba_id": 83212
       }
-    ]
+    ],
+    "synonyms": [
+      "walk",
+      "stroll",
+      "pace",
+      "step"
+    ],
+    "reversePrompt": "to walk (intransitive)"
   },
   {
     "id": "d727a76b22",
@@ -1210,7 +1312,15 @@
     "pos": [
       "pn"
     ],
-    "jmdict_id": 1000580
+    "jmdict_id": 1000580,
+    "examples": [
+      {
+        "ja": "単純な構造であれば、修理が容易だ。",
+        "furigana": "単純な構造であれば、修理が容易だ。",
+        "en": "If it has a simple structure, repairs are easy."
+      }
+    ],
+    "reversePrompt": "that"
   },
   {
     "id": "e37a087c0f",
@@ -1240,7 +1350,15 @@
         "en": "Dancing is good for the figure.",
         "tatoeba_id": 203075
       }
-    ]
+    ],
+    "synonyms": [
+      "nice",
+      "fine",
+      "excellent",
+      "pleasant",
+      "great"
+    ],
+    "reversePrompt": "good"
   },
   {
     "id": "6d4596ae46",
@@ -1254,7 +1372,15 @@
     "pos": [
       "int"
     ],
-    "jmdict_id": 1583250
+    "jmdict_id": 1583250,
+    "examples": [
+      {
+        "ja": "今日の授業で「いいえ」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「いいえ」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, we learned how to use the expression “no.”"
+      }
+    ],
+    "reversePrompt": "no"
   },
   {
     "id": "ae0cc00f94",
@@ -1282,7 +1408,11 @@
         "en": "I give a good scolding.",
         "tatoeba_id": 216629
       }
-    ]
+    ],
+    "synonyms": [
+      "say"
+    ],
+    "reversePrompt": "to say (transitive)"
   },
   {
     "id": "9f074820b1",
@@ -1310,7 +1440,14 @@
         "en": "My mother is not always at home.",
         "tatoeba_id": 83093
       }
-    ]
+    ],
+    "synonyms": [
+      "home",
+      "residence",
+      "dwelling",
+      "abode"
+    ],
+    "reversePrompt": "house (noun)"
   },
   {
     "id": "a3f296ad9a",
@@ -1340,7 +1477,8 @@
         "en": "Would you like bacon or sausage?",
         "tatoeba_id": 196854
       }
-    ]
+    ],
+    "reversePrompt": "how"
   },
   {
     "id": "66e4692df7",
@@ -1367,7 +1505,15 @@
         "en": "My father has gone to America.",
         "tatoeba_id": 84793
       }
-    ]
+    ],
+    "synonyms": [
+      "go",
+      "travel",
+      "proceed",
+      "head to",
+      "depart"
+    ],
+    "reversePrompt": "to go"
   },
   {
     "id": "026ae57b50",
@@ -1398,7 +1544,8 @@
         "en": "What is your waist size?",
         "tatoeba_id": 228303
       }
-    ]
+    ],
+    "reversePrompt": "how many?"
   },
   {
     "id": "4fc98c6938",
@@ -1428,7 +1575,8 @@
         "en": "How much is the fare to the Hilton Hotel?",
         "tatoeba_id": 197388
       }
-    ]
+    ],
+    "reversePrompt": "how much? (noun)"
   },
   {
     "id": "43c874a6c8",
@@ -1455,7 +1603,8 @@
         "en": "The pond dried up last summer.",
         "tatoeba_id": 220757
       }
-    ]
+    ],
+    "reversePrompt": "pond (noun)"
   },
   {
     "id": "ca76162587",
@@ -1483,7 +1632,8 @@
         "en": "Do you know any doctors who speak Japanese?",
         "tatoeba_id": 122341
       }
-    ]
+    ],
+    "reversePrompt": "medical doctor"
   },
   {
     "id": "d305fa14a8",
@@ -1513,7 +1663,8 @@
         "en": "Leave the chairs as they are.",
         "tatoeba_id": 229123
       }
-    ]
+    ],
+    "reversePrompt": "chair"
   },
   {
     "id": "cd1bcc2b1b",
@@ -1542,7 +1693,8 @@
         "en": "I'm very busy these days.",
         "tatoeba_id": 223466
       }
-    ]
+    ],
+    "reversePrompt": "busy (い-adjective; irritated)"
   },
   {
     "id": "4dae367794",
@@ -1570,7 +1722,8 @@
         "en": "Please be gentle.",
         "tatoeba_id": 125689
       }
-    ]
+    ],
+    "reversePrompt": "painful (い-adjective)"
   },
   {
     "id": "eac7a22620",
@@ -1599,7 +1752,8 @@
         "en": "We'd like to have some wine.",
         "tatoeba_id": 192061
       }
-    ]
+    ],
+    "reversePrompt": "expression of gratitude before meals"
   },
   {
     "id": "9d8f862791",
@@ -1627,7 +1781,8 @@
         "en": "Go along this street for a mile.",
         "tatoeba_id": 223472
       }
-    ]
+    ],
+    "reversePrompt": "one"
   },
   {
     "id": "1cfccd0cdd",
@@ -1656,7 +1811,8 @@
         "en": "I think it's going to be a nice day.",
         "tatoeba_id": 190284
       }
-    ]
+    ],
+    "reversePrompt": "one day (noun; first of month)"
   },
   {
     "id": "cb96f363df",
@@ -1687,7 +1843,8 @@
         "en": "He is the dumbest kid in the class.",
         "tatoeba_id": 234637
       }
-    ]
+    ],
+    "reversePrompt": "best (noun; first)"
   },
   {
     "id": "fac6fc0838",
@@ -1717,7 +1874,8 @@
         "en": "When shall we have the party?",
         "tatoeba_id": 198453
       }
-    ]
+    ],
+    "reversePrompt": "when"
   },
   {
     "id": "2a7c4baf86",
@@ -1745,7 +1903,8 @@
         "en": "Give me five days.",
         "tatoeba_id": 235115
       }
-    ]
+    ],
+    "reversePrompt": "five days"
   },
   {
     "id": "2dc7289c82",
@@ -1773,7 +1932,8 @@
         "en": "I wish that we could spend more time together.",
         "tatoeba_id": 2304921
       }
-    ]
+    ],
+    "reversePrompt": "together (noun)"
   },
   {
     "id": "9ac35c3990",
@@ -1801,7 +1961,8 @@
         "en": "Many restaurants and pubs are on Itsutsugi Street.",
         "tatoeba_id": 192345
       }
-    ]
+    ],
+    "reversePrompt": "five"
   },
   {
     "id": "dea2a1df8b",
@@ -1832,7 +1993,8 @@
         "en": "That child is always throwing tantrums.",
         "tatoeba_id": 230973
       }
-    ]
+    ],
+    "reversePrompt": "always"
   },
   {
     "id": "0df89f5010",
@@ -1860,7 +2022,8 @@
         "en": "This dog eats almost anything.",
         "tatoeba_id": 222102
       }
-    ]
+    ],
+    "reversePrompt": "dog"
   },
   {
     "id": "ce75c75644",
@@ -1890,7 +2053,8 @@
         "en": "Both Tom and Bill are playing tennis now.",
         "tatoeba_id": 199786
       }
-    ]
+    ],
+    "reversePrompt": "now (noun)"
   },
   {
     "id": "cb29ccdd2a",
@@ -1920,7 +2084,8 @@
         "en": "What you said does not make sense.",
         "tatoeba_id": 227633
       }
-    ]
+    ],
+    "reversePrompt": "meaning (transitive)"
   },
   {
     "id": "12047d019b",
@@ -1948,7 +2113,11 @@
         "en": "His little sister is very cute, isn't she?",
         "tatoeba_id": 234651
       }
-    ]
+    ],
+    "synonyms": [
+      "younger sister"
+    ],
+    "reversePrompt": "(humble) younger sister"
   },
   {
     "id": "eda751e069",
@@ -1975,7 +2144,8 @@
         "en": "I just do not like any kind of sports.",
         "tatoeba_id": 199479
       }
-    ]
+    ],
+    "reversePrompt": "unpleasant (な-adjective)"
   },
   {
     "id": "1ff0529d03",
@@ -2002,7 +2172,8 @@
         "en": "Some people were hanging around at the entrance.",
         "tatoeba_id": 143523
       }
-    ]
+    ],
+    "reversePrompt": "entrance (noun)"
   },
   {
     "id": "9438889173",
@@ -2035,7 +2206,15 @@
         "en": "There aren't many blokes that nice!",
         "tatoeba_id": 75577
       }
-    ]
+    ],
+    "synonyms": [
+      "いる",
+      "be",
+      "have (used for people and animals)",
+      "have"
+    ],
+    "modernMeaning": "いる",
+    "reversePrompt": "いる"
   },
   {
     "id": "7a84208708",
@@ -2064,7 +2243,11 @@
         "en": "I need some butter. Do you have any?",
         "tatoeba_id": 198027
       }
-    ]
+    ],
+    "synonyms": [
+      "need"
+    ],
+    "reversePrompt": "to need"
   },
   {
     "id": "6d824d5110",
@@ -2093,7 +2276,11 @@
         "en": "Don't put the books in the shelf upside down.",
         "tatoeba_id": 81634
       }
-    ]
+    ],
+    "synonyms": [
+      "put in"
+    ],
+    "reversePrompt": "to put in (transitive)"
   },
   {
     "id": "523266ea6f",
@@ -2121,7 +2308,8 @@
         "en": "Do you like this color?",
         "tatoeba_id": 221060
       }
-    ]
+    ],
+    "reversePrompt": "colour (noun)"
   },
   {
     "id": "f74dd1ee9a",
@@ -2152,7 +2340,8 @@
         "en": "There are various kinds of coffee.",
         "tatoeba_id": 224928
       }
-    ]
+    ],
+    "reversePrompt": "various (な-adjective)"
   },
   {
     "id": "08a3ed212d",
@@ -2180,7 +2369,8 @@
         "en": "There is an orange on the table.",
         "tatoeba_id": 202408
       }
-    ]
+    ],
+    "reversePrompt": "on top of"
   },
   {
     "id": "93bdc81dd9",
@@ -2209,7 +2399,8 @@
         "en": "Please close the door behind you.",
         "tatoeba_id": 233318
       }
-    ]
+    ],
+    "reversePrompt": "behind"
   },
   {
     "id": "d2b2316e45",
@@ -2238,7 +2429,14 @@
         "en": "Cut the meat into thin slices.",
         "tatoeba_id": 122981
       }
-    ]
+    ],
+    "synonyms": [
+      "frail",
+      "feeble",
+      "delicate",
+      "faint"
+    ],
+    "reversePrompt": "thin (い-adjective; weak)"
   },
   {
     "id": "036f4180a2",
@@ -2266,7 +2464,8 @@
         "en": "This song's name is \"Only You\".",
         "tatoeba_id": 222789
       }
-    ]
+    ],
+    "reversePrompt": "song (noun)"
   },
   {
     "id": "3464318c23",
@@ -2296,7 +2495,11 @@
         "en": "Betty managed to sing well.",
         "tatoeba_id": 196771
       }
-    ]
+    ],
+    "synonyms": [
+      "sing"
+    ],
+    "reversePrompt": "to sing (transitive)"
   },
   {
     "id": "63bc7722fa",
@@ -2325,7 +2528,11 @@
         "en": "This is the place where my father was born.",
         "tatoeba_id": 224704
       }
-    ]
+    ],
+    "synonyms": [
+      "be born"
+    ],
+    "reversePrompt": "to be born"
   },
   {
     "id": "06ac21dc7d",
@@ -2352,7 +2559,8 @@
         "en": "It is no more than a mile to the sea.",
         "tatoeba_id": 185086
       }
-    ]
+    ],
+    "reversePrompt": "sea"
   },
   {
     "id": "f7e1da43df",
@@ -2381,7 +2589,14 @@
         "en": "Butter is sold by the pound.",
         "tatoeba_id": 198017
       }
-    ]
+    ],
+    "synonyms": [
+      "sell",
+      "vend",
+      "market",
+      "trade"
+    ],
+    "reversePrompt": "to sell"
   },
   {
     "id": "7ecfe0d248",
@@ -2412,7 +2627,8 @@
         "en": "Quit your bellyaching. You goin' to do it, or not!?",
         "tatoeba_id": 75438
       }
-    ]
+    ],
+    "reversePrompt": "noisy (い-adjective; annoying)"
   },
   {
     "id": "1ef8a05bf3",
@@ -2440,7 +2656,8 @@
         "en": "The coat has worn well.",
         "tatoeba_id": 208973
       }
-    ]
+    ],
+    "reversePrompt": "jacket (noun)"
   },
   {
     "id": "5bb390da0b",
@@ -2468,7 +2685,8 @@
         "en": "Why didn't you look at the picture?",
         "tatoeba_id": 199249
       }
-    ]
+    ],
+    "reversePrompt": "picture (noun)"
   },
   {
     "id": "92b1621231",
@@ -2496,7 +2714,8 @@
         "en": "What do you say to going to the movies?",
         "tatoeba_id": 189293
       }
-    ]
+    ],
+    "reversePrompt": "movie"
   },
   {
     "id": "8a88cfbcb8",
@@ -2524,7 +2743,8 @@
         "en": "Are there any movie theaters near here?",
         "tatoeba_id": 179880
       }
-    ]
+    ],
+    "reversePrompt": "cinema"
   },
   {
     "id": "16adc7bd03",
@@ -2552,7 +2772,8 @@
         "en": "I wish I could speak English the way my teacher does.",
         "tatoeba_id": 141734
       }
-    ]
+    ],
+    "reversePrompt": "English language"
   },
   {
     "id": "8ac60a4060",
@@ -2578,7 +2799,8 @@
         "en": "Yes, this is Anthony.",
         "tatoeba_id": 228019
       }
-    ]
+    ],
+    "reversePrompt": "yes"
   },
   {
     "id": "d5f359c20b",
@@ -2606,7 +2828,8 @@
         "en": "It's two miles from here to the station.",
         "tatoeba_id": 224772
       }
-    ]
+    ],
+    "reversePrompt": "station"
   },
   {
     "id": "eb1695baf6",
@@ -2633,7 +2856,8 @@
         "en": "I went down by elevator.",
         "tatoeba_id": 161307
       }
-    ]
+    ],
+    "reversePrompt": "elevator (noun)"
   },
   {
     "id": "381da4d060",
@@ -2661,7 +2885,8 @@
         "en": "Do you have a pen or a pencil?",
         "tatoeba_id": 196645
       }
-    ]
+    ],
+    "reversePrompt": "pencil"
   },
   {
     "id": "7f02ae8fa1",
@@ -2691,7 +2916,8 @@
         "en": "This soup is exquisite.",
         "tatoeba_id": 198944
       }
-    ]
+    ],
+    "reversePrompt": "delicious (い-adjective)"
   },
   {
     "id": "60813fffd1",
@@ -2719,7 +2945,8 @@
         "en": "Because there was plenty of water...",
         "tatoeba_id": 213686
       }
-    ]
+    ],
+    "reversePrompt": "many (い-adjective)"
   },
   {
     "id": "8fa5a63fc7",
@@ -2747,7 +2974,15 @@
         "en": "What a big house you have!",
         "tatoeba_id": 225891
       }
-    ]
+    ],
+    "synonyms": [
+      "large",
+      "huge",
+      "great",
+      "giant",
+      "vast"
+    ],
+    "reversePrompt": "big (い-adjective)"
   },
   {
     "id": "3a2de0afca",
@@ -2775,7 +3010,15 @@
         "en": "Look at that big hammer.",
         "tatoeba_id": 230634
       }
-    ]
+    ],
+    "synonyms": [
+      "large",
+      "huge",
+      "great",
+      "giant",
+      "vast"
+    ],
+    "reversePrompt": "big"
   },
   {
     "id": "57ed89b240",
@@ -2802,7 +3045,8 @@
         "en": "There was a large crowd there.",
         "tatoeba_id": 213674
       }
-    ]
+    ],
+    "reversePrompt": "great number of people"
   },
   {
     "id": "2007947770",
@@ -2830,7 +3074,11 @@
         "en": "Dan is often scolded by his mother.",
         "tatoeba_id": 203056
       }
-    ]
+    ],
+    "synonyms": [
+      "mother"
+    ],
+    "reversePrompt": "(honorable) mother (noun)"
   },
   {
     "id": "669019c625",
@@ -2859,7 +3107,8 @@
         "en": "May I eat this cake?",
         "tatoeba_id": 223955
       }
-    ]
+    ],
+    "reversePrompt": "sweets"
   },
   {
     "id": "3e015d0a8b",
@@ -2887,7 +3136,14 @@
         "en": "Can you give me some money?",
         "tatoeba_id": 196392
       }
-    ]
+    ],
+    "synonyms": [
+      "currency",
+      "funds",
+      "cash",
+      "coins"
+    ],
+    "reversePrompt": "money (noun)"
   },
   {
     "id": "248a353e09",
@@ -2916,7 +3172,11 @@
         "en": "I got up at about six.",
         "tatoeba_id": 235061
       }
-    ]
+    ],
+    "synonyms": [
+      "get up"
+    ],
+    "reversePrompt": "to get up"
   },
   {
     "id": "96845304fd",
@@ -2945,7 +3205,11 @@
         "en": "Where can I put my bag?",
         "tatoeba_id": 197972
       }
-    ]
+    ],
+    "synonyms": [
+      "put"
+    ],
+    "reversePrompt": "to put"
   },
   {
     "id": "6c4661d672",
@@ -2976,7 +3240,11 @@
         "en": "Your wife is mad at you.",
         "tatoeba_id": 188560
       }
-    ]
+    ],
+    "synonyms": [
+      "wife"
+    ],
+    "reversePrompt": "(honorable) wife (noun)"
   },
   {
     "id": "f843b00173",
@@ -3005,7 +3273,8 @@
         "en": "Can I drink alcohol?",
         "tatoeba_id": 227033
       }
-    ]
+    ],
+    "reversePrompt": "alcohol (noun; rice wine)"
   },
   {
     "id": "101d46a061",
@@ -3034,7 +3303,8 @@
         "en": "I watched TV after I washed the dishes.",
         "tatoeba_id": 161235
       }
-    ]
+    ],
+    "reversePrompt": "plate (noun; dish)"
   },
   {
     "id": "1b89f0f993",
@@ -3067,7 +3337,8 @@
         "en": "I take care of my grandfather.",
         "tatoeba_id": 227744
       }
-    ]
+    ],
+    "reversePrompt": "grandfather (noun; male senior citizen)"
   },
   {
     "id": "f2fa049fdd",
@@ -3097,7 +3368,15 @@
         "en": "They teach Chinese at that school.",
         "tatoeba_id": 231121
       }
-    ]
+    ],
+    "synonyms": [
+      "teach",
+      "instruct",
+      "educate",
+      "guide",
+      "tell"
+    ],
+    "reversePrompt": "to teach (transitive; to tell)"
   },
   {
     "id": "ce8facdf69",
@@ -3127,7 +3406,12 @@
         "en": "Push the button here.",
         "tatoeba_id": 223170
       }
-    ]
+    ],
+    "synonyms": [
+      "push",
+      "stamp something"
+    ],
+    "reversePrompt": "to push"
   },
   {
     "id": "a082687f7a",
@@ -3156,7 +3440,14 @@
         "en": "That's why I was late.",
         "tatoeba_id": 213942
       }
-    ]
+    ],
+    "synonyms": [
+      "sluggish",
+      "unhurried",
+      "leisurely",
+      "delayed"
+    ],
+    "reversePrompt": "late (い-adjective; slow)"
   },
   {
     "id": "edca336b1f",
@@ -3184,7 +3475,8 @@
         "en": "Would you like tea or coffee?",
         "tatoeba_id": 226878
       }
-    ]
+    ],
+    "reversePrompt": "green tea"
   },
   {
     "id": "75a36b034c",
@@ -3214,7 +3506,8 @@
         "en": "Could you show me where the bathroom is?",
         "tatoeba_id": 227064
       }
-    ]
+    ],
+    "reversePrompt": "bathroom (noun)"
   },
   {
     "id": "89807c7c22",
@@ -3242,7 +3535,11 @@
         "en": "I played catch with my father.",
         "tatoeba_id": 161219
       }
-    ]
+    ],
+    "synonyms": [
+      "father"
+    ],
+    "reversePrompt": "(honorable) father (noun)"
   },
   {
     "id": "db32745bbc",
@@ -3270,7 +3567,8 @@
         "en": "Mike played a bad trick on his brother.",
         "tatoeba_id": 195735
       }
-    ]
+    ],
+    "reversePrompt": "younger brother"
   },
   {
     "id": "2fd7d45c8d",
@@ -3299,7 +3597,8 @@
         "en": "I will make a man of you.",
         "tatoeba_id": 227512
       }
-    ]
+    ],
+    "reversePrompt": "man (noun)"
   },
   {
     "id": "6f664d3ded",
@@ -3328,7 +3627,8 @@
         "en": "Boys will be boys.",
         "tatoeba_id": 127249
       }
-    ]
+    ],
+    "reversePrompt": "boy (noun)"
   },
   {
     "id": "f0f3826045",
@@ -3360,7 +3660,8 @@
         "en": "It has been raining on and off since the day before yesterday.",
         "tatoeba_id": 190604
       }
-    ]
+    ],
+    "reversePrompt": "day before yesterday"
   },
   {
     "id": "b75778f0ce",
@@ -3385,7 +3686,8 @@
         "en": "She's far better off than she was the year before last.",
         "tatoeba_id": 93768
       }
-    ]
+    ],
+    "reversePrompt": "year before last"
   },
   {
     "id": "6f5049e2d4",
@@ -3415,7 +3717,8 @@
         "en": "This is a book often read by adults.",
         "tatoeba_id": 219579
       }
-    ]
+    ],
+    "reversePrompt": "adult (な-adjective)"
   },
   {
     "id": "3707072a6b",
@@ -3445,7 +3748,8 @@
         "en": "No, thank you. I'm full.",
         "tatoeba_id": 228315
       }
-    ]
+    ],
+    "reversePrompt": "stomach (noun)"
   },
   {
     "id": "7c134ec812",
@@ -3474,7 +3778,8 @@
         "en": "Mike and Tom are in the same class.",
         "tatoeba_id": 195787
       }
-    ]
+    ],
+    "reversePrompt": "same (な-adjective)"
   },
   {
     "id": "c6f43a8cc3",
@@ -3502,7 +3807,11 @@
         "en": "You remind me of your brother.",
         "tatoeba_id": 231433
       }
-    ]
+    ],
+    "synonyms": [
+      "older brother"
+    ],
+    "reversePrompt": "(honorable) older brother (noun)"
   },
   {
     "id": "af378a4c86",
@@ -3530,7 +3839,11 @@
         "en": "Say hello to your sister for me.",
         "tatoeba_id": 168930
       }
-    ]
+    ],
+    "synonyms": [
+      "older sister"
+    ],
+    "reversePrompt": "(honorable) older sister (noun)"
   },
   {
     "id": "4df6eda2a2",
@@ -3561,7 +3874,8 @@
         "en": "Six-thirty, it's possible.",
         "tatoeba_id": 202278
       }
-    ]
+    ],
+    "reversePrompt": "please"
   },
   {
     "id": "12d9487797",
@@ -3593,7 +3907,8 @@
         "en": "I met an old woman.",
         "tatoeba_id": 158459
       }
-    ]
+    ],
+    "reversePrompt": "grandmother (noun)"
   },
   {
     "id": "03d7b15720",
@@ -3621,7 +3936,8 @@
         "en": "Isn't this the same necklace that Aunt Clara wears?",
         "tatoeba_id": 218824
       }
-    ]
+    ],
+    "reversePrompt": "aunt (noun)"
   },
   {
     "id": "36bff8d879",
@@ -3651,7 +3967,11 @@
         "en": "Hello, Tom. Good morning.",
         "tatoeba_id": 193149
       }
-    ]
+    ],
+    "synonyms": [
+      "good morning"
+    ],
+    "reversePrompt": "(abbreviation) Good morning"
   },
   {
     "id": "f347485004",
@@ -3679,7 +3999,8 @@
         "en": "There was no bathroom.",
         "tatoeba_id": 226696
       }
-    ]
+    ],
+    "reversePrompt": "bath (noun)"
   },
   {
     "id": "7a073616e5",
@@ -3705,7 +4026,8 @@
         "en": "You have eaten lunch, haven't you?",
         "tatoeba_id": 226652
       }
-    ]
+    ],
+    "reversePrompt": "boxed lunch"
   },
   {
     "id": "dad2d16220",
@@ -3734,7 +4056,11 @@
         "en": "Where did you get the idea?",
         "tatoeba_id": 200989
       }
-    ]
+    ],
+    "synonyms": [
+      "remember"
+    ],
+    "reversePrompt": "to remember (transitive)"
   },
   {
     "id": "ae5d1778d1",
@@ -3764,7 +4090,8 @@
         "en": "Ask the policeman the way.",
         "tatoeba_id": 227504
       }
-    ]
+    ],
+    "reversePrompt": "friendly term for policeman"
   },
   {
     "id": "cdfb776826",
@@ -3792,7 +4119,8 @@
         "en": "This book isn't as heavy as that book.",
         "tatoeba_id": 219723
       }
-    ]
+    ],
+    "reversePrompt": "heavy (い-adjective)"
   },
   {
     "id": "2568873ebd",
@@ -3822,7 +4150,8 @@
         "en": "This is a very interesting book.",
         "tatoeba_id": 218571
       }
-    ]
+    ],
+    "reversePrompt": "interesting"
   },
   {
     "id": "3c5bb8f223",
@@ -3851,7 +4180,11 @@
         "en": "Harry managed to swim across the river.",
         "tatoeba_id": 197870
       }
-    ]
+    ],
+    "synonyms": [
+      "swim"
+    ],
+    "reversePrompt": "to swim"
   },
   {
     "id": "ae00442122",
@@ -3881,7 +4214,12 @@
         "en": "You're not supposed to wear your slippers down to the lobby.",
         "tatoeba_id": 214120
       }
-    ]
+    ],
+    "synonyms": [
+      "get off",
+      "descend"
+    ],
+    "reversePrompt": "to get off (intransitive; to descend)"
   },
   {
     "id": "d7960dc78d",
@@ -3911,7 +4249,15 @@
         "en": "Let's call it a day.",
         "tatoeba_id": 171599
       }
-    ]
+    ],
+    "synonyms": [
+      "finish",
+      "end",
+      "complete",
+      "conclude",
+      "wrap up"
+    ],
+    "reversePrompt": "to finish (intransitive)"
   },
   {
     "id": "cdea017272",
@@ -3939,7 +4285,8 @@
         "en": "Will you play some dance records?",
         "tatoeba_id": 203070
       }
-    ]
+    ],
+    "reversePrompt": "music (noun)"
   },
   {
     "id": "980a922ad3",
@@ -3968,7 +4315,8 @@
         "en": "How that woman runs on!",
         "tatoeba_id": 230895
       }
-    ]
+    ],
+    "reversePrompt": "woman (noun)"
   },
   {
     "id": "e6afab391a",
@@ -3997,7 +4345,8 @@
         "en": "Where are the other girls?",
         "tatoeba_id": 196427
       }
-    ]
+    ],
+    "reversePrompt": "girl (noun)"
   },
   {
     "id": "31a803c7f5",
@@ -4026,7 +4375,8 @@
         "en": "You must go to a foreign country for yourself.",
         "tatoeba_id": 197481
       }
-    ]
+    ],
+    "reversePrompt": "foreign country"
   },
   {
     "id": "70f1678111",
@@ -4054,7 +4404,8 @@
         "en": "The foreigner spoke Japanese as if it were her mother tongue.",
         "tatoeba_id": 211696
       }
-    ]
+    ],
+    "reversePrompt": "foreigner"
   },
   {
     "id": "2120ff505c",
@@ -4082,7 +4433,8 @@
         "en": "I hope I can hold on to my job.",
         "tatoeba_id": 185231
       }
-    ]
+    ],
+    "reversePrompt": "company (noun)"
   },
   {
     "id": "7cb27c411e",
@@ -4108,7 +4460,8 @@
         "en": "The teacher ran up the stairs.",
         "tatoeba_id": 141655
       }
-    ]
+    ],
+    "reversePrompt": "stairs (noun)"
   },
   {
     "id": "a771d4f949",
@@ -4137,7 +4490,8 @@
         "en": "Jane is out shopping.",
         "tatoeba_id": 216415
       }
-    ]
+    ],
+    "reversePrompt": "shopping"
   },
   {
     "id": "bdb125e5c6",
@@ -4166,7 +4520,14 @@
         "en": "We have to buy them from abroad.",
         "tatoeba_id": 184826
       }
-    ]
+    ],
+    "synonyms": [
+      "buy",
+      "purchase",
+      "acquire",
+      "shop for"
+    ],
+    "reversePrompt": "to buy (transitive)"
   },
   {
     "id": "8ea4b03d7f",
@@ -4195,7 +4556,11 @@
         "en": "When will this be returned to me?",
         "tatoeba_id": 228971
       }
-    ]
+    ],
+    "synonyms": [
+      "return something"
+    ],
+    "reversePrompt": "to return something"
   },
   {
     "id": "1d22f1d023",
@@ -4224,7 +4589,11 @@
         "en": "My father has just come home.",
         "tatoeba_id": 84696
       }
-    ]
+    ],
+    "synonyms": [
+      "go back"
+    ],
+    "reversePrompt": "to go back (intransitive)"
   },
   {
     "id": "687082e55c",
@@ -4255,7 +4624,11 @@
         "en": "It's almost over.",
         "tatoeba_id": 205401
       }
-    ]
+    ],
+    "synonyms": [
+      "take time or money"
+    ],
+    "reversePrompt": "to take time or money"
   },
   {
     "id": "e2d6576c76",
@@ -4286,7 +4659,8 @@
         "en": "I lost the door key, so I can't enter the house.",
         "tatoeba_id": 201870
       }
-    ]
+    ],
+    "reversePrompt": "key (noun)"
   },
   {
     "id": "f7c7f35d9e",
@@ -4315,7 +4689,14 @@
         "en": "Write these words in your notebook.",
         "tatoeba_id": 217911
       }
-    ]
+    ],
+    "synonyms": [
+      "write",
+      "compose",
+      "inscribe",
+      "pen"
+    ],
+    "reversePrompt": "to write (transitive)"
   },
   {
     "id": "452102ad0a",
@@ -4343,7 +4724,13 @@
         "en": "Lucy is a student from America.",
         "tatoeba_id": 192389
       }
-    ]
+    ],
+    "synonyms": [
+      "pupil",
+      "learner",
+      "scholar"
+    ],
+    "reversePrompt": "student"
   },
   {
     "id": "0ce2b98d3b",
@@ -4375,7 +4762,11 @@
         "en": "The cook hasn't put any on it.",
         "tatoeba_id": 224138
       }
-    ]
+    ],
+    "synonyms": [
+      "call by phone"
+    ],
+    "reversePrompt": "to call by phone"
   },
   {
     "id": "6f54881e59",
@@ -4403,7 +4794,8 @@
         "en": "I've got to take an umbrella with me.",
         "tatoeba_id": 169468
       }
-    ]
+    ],
+    "reversePrompt": "umbrella"
   },
   {
     "id": "1122cac409",
@@ -4432,7 +4824,11 @@
         "en": "Can I borrow your hair drier?",
         "tatoeba_id": 196870
       }
-    ]
+    ],
+    "synonyms": [
+      "lend"
+    ],
+    "reversePrompt": "to lend"
   },
   {
     "id": "c1a28465a2",
@@ -4460,7 +4856,8 @@
         "en": "It's just a trick of the wind.",
         "tatoeba_id": 203636
       }
-    ]
+    ],
+    "reversePrompt": "wind (noun)"
   },
   {
     "id": "c9b5da4d10",
@@ -4488,7 +4885,15 @@
         "en": "It took three weeks for me to get over my cold.",
         "tatoeba_id": 226396
       }
-    ]
+    ],
+    "synonyms": [
+      "cold",
+      "chilly",
+      "cool",
+      "freezing",
+      "frigid"
+    ],
+    "reversePrompt": "a cold (noun)"
   },
   {
     "id": "1c9db63bdc",
@@ -4516,7 +4921,8 @@
         "en": "May I ask about your family?",
         "tatoeba_id": 186951
       }
-    ]
+    ],
+    "reversePrompt": "family (noun)"
   },
   {
     "id": "e34295f3e1",
@@ -4545,7 +4951,14 @@
         "en": "Who do you want to speak to?",
         "tatoeba_id": 226508
       }
-    ]
+    ],
+    "synonyms": [
+      "individual",
+      "human",
+      "someone",
+      "party"
+    ],
+    "reversePrompt": "person (noun; way of doing)"
   },
   {
     "id": "dd8ac16bd2",
@@ -4573,7 +4986,13 @@
         "en": "What are you going to do after you leave school?",
         "tatoeba_id": 184354
       }
-    ]
+    ],
+    "synonyms": [
+      "academy",
+      "institution",
+      "college"
+    ],
+    "reversePrompt": "school (noun)"
   },
   {
     "id": "613c41bd1d",
@@ -4601,7 +5020,8 @@
         "en": "The cup is made of gold.",
         "tatoeba_id": 223900
       }
-    ]
+    ],
+    "reversePrompt": "cup"
   },
   {
     "id": "66eeeb818b",
@@ -4629,7 +5049,8 @@
         "en": "Please write about your home.",
         "tatoeba_id": 233419
       }
-    ]
+    ],
+    "reversePrompt": "household (noun)"
   },
   {
     "id": "4092bfd9bb",
@@ -4657,7 +5078,11 @@
         "en": "There used to be a bookstore on that corner.",
         "tatoeba_id": 231123
       }
-    ]
+    ],
+    "synonyms": [
+      "corner"
+    ],
+    "reversePrompt": "a corner (noun)"
   },
   {
     "id": "6e6a06687d",
@@ -4684,7 +5109,8 @@
         "en": "This bag cost me 6 pounds.",
         "tatoeba_id": 223898
       }
-    ]
+    ],
+    "reversePrompt": "bag (noun; basket)"
   },
   {
     "id": "749f78c9d1",
@@ -4711,7 +5137,11 @@
         "en": "There is a vase on the table.",
         "tatoeba_id": 202394
       }
-    ]
+    ],
+    "synonyms": [
+      "vase"
+    ],
+    "reversePrompt": "a vase (noun)"
   },
   {
     "id": "cd08f9cdc2",
@@ -4739,7 +5169,8 @@
         "en": "The paper was blotted with ink.",
         "tatoeba_id": 151214
       }
-    ]
+    ],
+    "reversePrompt": "paper (noun)"
   },
   {
     "id": "9d648d38ad",
@@ -4765,7 +5196,8 @@
         "en": "This camera was made in Germany.",
         "tatoeba_id": 223885
       }
-    ]
+    ],
+    "reversePrompt": "camera"
   },
   {
     "id": "0dbf9ef8ca",
@@ -4794,7 +5226,8 @@
         "en": "You might as well wait until Tuesday.",
         "tatoeba_id": 186639
       }
-    ]
+    ],
+    "reversePrompt": "Tuesday (noun)"
   },
   {
     "id": "d2546ac97b",
@@ -4822,7 +5255,8 @@
         "en": "Make it as spicy as you can.",
         "tatoeba_id": 202330
       }
-    ]
+    ],
+    "reversePrompt": "spicy (い-adjective)"
   },
   {
     "id": "a556e5edce",
@@ -4853,7 +5287,8 @@
         "en": "This skirt hangs nicely.",
         "tatoeba_id": 223641
       }
-    ]
+    ],
+    "reversePrompt": "body (noun)"
   },
   {
     "id": "8cd440a181",
@@ -4882,7 +5317,11 @@
         "en": "I lost the book you lent me.",
         "tatoeba_id": 148892
       }
-    ]
+    ],
+    "synonyms": [
+      "borrow"
+    ],
+    "reversePrompt": "to borrow"
   },
   {
     "id": "a8b9eb425d",
@@ -4910,7 +5349,8 @@
         "en": "I usually have a light breakfast.",
         "tatoeba_id": 153039
       }
-    ]
+    ],
+    "reversePrompt": "light (い-adjective)"
   },
   {
     "id": "9decc44f4e",
@@ -4936,7 +5376,8 @@
         "en": "The curry was nothing special.",
         "tatoeba_id": 76792
       }
-    ]
+    ],
+    "reversePrompt": "curry"
   },
   {
     "id": "6382448bd3",
@@ -4963,7 +5404,8 @@
         "en": "He turned over a calendar.",
         "tatoeba_id": 114085
       }
-    ]
+    ],
+    "reversePrompt": "calendar (noun)"
   },
   {
     "id": "bcf12e002d",
@@ -4991,7 +5433,8 @@
         "en": "This river is 500 miles in length.",
         "tatoeba_id": 220796
       }
-    ]
+    ],
+    "reversePrompt": "river (noun)"
   },
   {
     "id": "bad3423a93",
@@ -5021,7 +5464,8 @@
         "en": "I hear that Nancy is very pretty.",
         "tatoeba_id": 199013
       }
-    ]
+    ],
+    "reversePrompt": "cute"
   },
   {
     "id": "fdc787af58",
@@ -5049,7 +5493,8 @@
         "en": "Can you read this kanji?",
         "tatoeba_id": 177847
       }
-    ]
+    ],
+    "reversePrompt": "Chinese character"
   },
   {
     "id": "22836046e2",
@@ -5078,7 +5523,8 @@
         "en": "There were few, if any, trees.",
         "tatoeba_id": 80097
       }
-    ]
+    ],
+    "reversePrompt": "tree"
   },
   {
     "id": "5d679a1af2",
@@ -5108,7 +5554,8 @@
         "en": "This flower is yellow, but all the others are blue.",
         "tatoeba_id": 222733
       }
-    ]
+    ],
+    "reversePrompt": "yellow (な-adjective)"
   },
   {
     "id": "0b36c8d6c6",
@@ -5136,7 +5583,8 @@
         "en": "That is not a yellow piece of chalk.",
         "tatoeba_id": 229724
       }
-    ]
+    ],
+    "reversePrompt": "yellow (い-adjective)"
   },
   {
     "id": "6030b50276",
@@ -5165,7 +5613,11 @@
         "en": "The candle went out of itself.",
         "tatoeba_id": 192296
       }
-    ]
+    ],
+    "synonyms": [
+      "disappear"
+    ],
+    "reversePrompt": "to disappear (intransitive)"
   },
   {
     "id": "dc19a213cd",
@@ -5196,7 +5648,16 @@
         "en": "That rings a bell.",
         "tatoeba_id": 201031
       }
-    ]
+    ],
+    "synonyms": [
+      "hear",
+      "listen",
+      "catch sounds",
+      "perceive sound",
+      "listen to",
+      "ask"
+    ],
+    "reversePrompt": "to hear / listen (or ask a question)"
   },
   {
     "id": "fa320a51ea",
@@ -5224,7 +5685,8 @@
         "en": "The ship is bearing due north.",
         "tatoeba_id": 141143
       }
-    ]
+    ],
+    "reversePrompt": "north"
   },
   {
     "id": "4fb1c0d758",
@@ -5250,7 +5712,8 @@
         "en": "Playing the guitar is fun.",
         "tatoeba_id": 226059
       }
-    ]
+    ],
+    "reversePrompt": "guitar"
   },
   {
     "id": "7d1cf1538b",
@@ -5278,7 +5741,8 @@
         "en": "Gosh, what a dirty customer!",
         "tatoeba_id": 195841
       }
-    ]
+    ],
+    "reversePrompt": "dirty (い-adjective)"
   },
   {
     "id": "5620a00afc",
@@ -5306,7 +5770,8 @@
         "en": "We would often have a chat in this coffee shop.",
         "tatoeba_id": 222392
       }
-    ]
+    ],
+    "reversePrompt": "coffee lounge"
   },
   {
     "id": "e101e41f54",
@@ -5334,7 +5799,8 @@
         "en": "I'll give you either of these stamps.",
         "tatoeba_id": 220864
       }
-    ]
+    ],
+    "reversePrompt": "postage stamp"
   },
   {
     "id": "4fee5be397",
@@ -5361,7 +5827,8 @@
         "en": "Is this ticket good for this bus?",
         "tatoeba_id": 223868
       }
-    ]
+    ],
+    "reversePrompt": "ticket (noun)"
   },
   {
     "id": "a94a4be08f",
@@ -5388,7 +5855,8 @@
         "en": "The weather was miserable yesterday.",
         "tatoeba_id": 169994
       }
-    ]
+    ],
+    "reversePrompt": "yesterday (noun)"
   },
   {
     "id": "8f81565ad7",
@@ -5417,7 +5885,8 @@
         "en": "Open your book to page nine.",
         "tatoeba_id": 179548
       }
-    ]
+    ],
+    "reversePrompt": "nine"
   },
   {
     "id": "b4faf372f3",
@@ -5445,7 +5914,8 @@
         "en": "This beef is four dollars per pound.",
         "tatoeba_id": 222379
       }
-    ]
+    ],
+    "reversePrompt": "beef"
   },
   {
     "id": "797ae8d562",
@@ -5473,7 +5943,8 @@
         "en": "We make milk into cheese and butter.",
         "tatoeba_id": 182266
       }
-    ]
+    ],
+    "reversePrompt": "milk (noun)"
   },
   {
     "id": "0400a204bd",
@@ -5501,7 +5972,8 @@
         "en": "Dad's in an impatient mood today.",
         "tatoeba_id": 171508
       }
-    ]
+    ],
+    "reversePrompt": "today"
   },
   {
     "id": "85eb994887",
@@ -5528,7 +6000,8 @@
         "en": "I'd like to try out the aerobics class for a day.",
         "tatoeba_id": 228037
       }
-    ]
+    ],
+    "reversePrompt": "classroom"
   },
   {
     "id": "976c4f7174",
@@ -5555,7 +6028,11 @@
         "en": "He must be Tom's brother.",
         "tatoeba_id": 230736
       }
-    ]
+    ],
+    "synonyms": [
+      "siblings"
+    ],
+    "reversePrompt": "(humble) siblings"
   },
   {
     "id": "ec4e1dfc87",
@@ -5584,7 +6061,8 @@
         "en": "I was a first year student last year.",
         "tatoeba_id": 191813
       }
-    ]
+    ],
+    "reversePrompt": "last year"
   },
   {
     "id": "d106dac023",
@@ -5613,7 +6091,8 @@
         "en": "No. He doesn't like water!",
         "tatoeba_id": 229384
       }
-    ]
+    ],
+    "reversePrompt": "hate (な-adjective)"
   },
   {
     "id": "cf23f5fba1",
@@ -5642,7 +6121,11 @@
         "en": "Do you mind if I turn off the AC?",
         "tatoeba_id": 228042
       }
-    ]
+    ],
+    "synonyms": [
+      "cut"
+    ],
+    "reversePrompt": "to cut (transitive)"
   },
   {
     "id": "45fbcb8670",
@@ -5671,7 +6154,13 @@
         "en": "What are you going to wear to the party?",
         "tatoeba_id": 198497
       }
-    ]
+    ],
+    "synonyms": [
+      "put it on from the shoulders down",
+      "put on from the shoulders down"
+    ],
+    "modernMeaning": "put it on from the shoulders down",
+    "reversePrompt": "to wear (upper body / from shoulders down)"
   },
   {
     "id": "43cd9825f0",
@@ -5702,7 +6191,8 @@
         "en": "The river was not so clean.",
         "tatoeba_id": 208510
       }
-    ]
+    ],
+    "reversePrompt": "pretty"
   },
   {
     "id": "36016e0c51",
@@ -5734,7 +6224,8 @@
         "en": "This car is going 60km an hour.",
         "tatoeba_id": 221393
       }
-    ]
+    ],
+    "reversePrompt": "kilometre"
   },
   {
     "id": "a59efa3057",
@@ -5762,7 +6253,8 @@
         "en": "I have to withdraw some cash from the bank.",
         "tatoeba_id": 179595
       }
-    ]
+    ],
+    "reversePrompt": "bank (noun)"
   },
   {
     "id": "b00c4af0a2",
@@ -5791,7 +6283,8 @@
         "en": "The bank shuts late on Fridays.",
         "tatoeba_id": 179621
       }
-    ]
+    ],
+    "reversePrompt": "Friday (noun)"
   },
   {
     "id": "95ccaa32f5",
@@ -5819,7 +6312,8 @@
         "en": "Come back again when you finish your medicine.",
         "tatoeba_id": 79501
       }
-    ]
+    ],
+    "reversePrompt": "medicine (noun)"
   },
   {
     "id": "a36841ba49",
@@ -5847,7 +6341,8 @@
         "en": "If you want to speak to me, please call me up.",
         "tatoeba_id": 77204
       }
-    ]
+    ],
+    "reversePrompt": "please"
   },
   {
     "id": "6b454b895e",
@@ -5875,7 +6370,8 @@
         "en": "My father does not eat much fruit.",
         "tatoeba_id": 84755
       }
-    ]
+    ],
+    "reversePrompt": "fruit (noun)"
   },
   {
     "id": "a123a147d7",
@@ -5904,7 +6400,8 @@
         "en": "Why is your mouth so big?",
         "tatoeba_id": 199296
       }
-    ]
+    ],
+    "reversePrompt": "mouth"
   },
   {
     "id": "9dd0572f05",
@@ -5932,7 +6429,8 @@
         "en": "What size shoes do you wear?",
         "tatoeba_id": 179255
       }
-    ]
+    ],
+    "reversePrompt": "shoes"
   },
   {
     "id": "20a1278928",
@@ -5960,7 +6458,8 @@
         "en": "Where is the mate to this sock?",
         "tatoeba_id": 222242
       }
-    ]
+    ],
+    "reversePrompt": "socks (noun)"
   },
   {
     "id": "b55dd305d1",
@@ -5988,7 +6487,8 @@
         "en": "How long do you plan to stay in this country?",
         "tatoeba_id": 221927
       }
-    ]
+    ],
+    "reversePrompt": "country (noun)"
   },
   {
     "id": "eec0f93991",
@@ -6018,7 +6518,8 @@
         "en": "Does it look cloudy today?",
         "tatoeba_id": 171526
       }
-    ]
+    ],
+    "reversePrompt": "cloudy weather"
   },
   {
     "id": "c34fdb6092",
@@ -6047,7 +6548,12 @@
         "en": "The steam has fogged my glasses.",
         "tatoeba_id": 146006
       }
-    ]
+    ],
+    "synonyms": [
+      "become cloudy",
+      "become dim"
+    ],
+    "reversePrompt": "to become cloudy"
   },
   {
     "id": "01a0587b49",
@@ -6075,7 +6581,8 @@
         "en": "It is too dark to see clearly.",
         "tatoeba_id": 191267
       }
-    ]
+    ],
+    "reversePrompt": "gloomy (い-adjective)"
   },
   {
     "id": "72c04ce067",
@@ -6102,7 +6609,8 @@
         "en": "How many boys are there in this class?",
         "tatoeba_id": 223857
       }
-    ]
+    ],
+    "reversePrompt": "class (noun)"
   },
   {
     "id": "5538df2bce",
@@ -6128,7 +6636,8 @@
         "en": "Do you use Instagram?",
         "tatoeba_id": 10704636
       }
-    ]
+    ],
+    "reversePrompt": "gram"
   },
   {
     "id": "2e2abd26ca",
@@ -6157,7 +6666,13 @@
         "en": "Thank you for coming.",
         "tatoeba_id": 78725
       }
-    ]
+    ],
+    "synonyms": [
+      "come",
+      "arrive",
+      "approach"
+    ],
+    "reversePrompt": "to come (intransitive)"
   },
   {
     "id": "d6b85573f3",
@@ -6186,7 +6701,13 @@
         "en": "The trailer goes with the car.",
         "tatoeba_id": 199672
       }
-    ]
+    ],
+    "synonyms": [
+      "automobile",
+      "motorcar",
+      "auto"
+    ],
+    "reversePrompt": "car (noun; vehicle)"
   },
   {
     "id": "3c32cfb08a",
@@ -6215,7 +6736,8 @@
         "en": "I need red and black markers or felt-tip pens. Do you have any?",
         "tatoeba_id": 142223
       }
-    ]
+    ],
+    "reversePrompt": "black (noun)"
   },
   {
     "id": "5e5300cf62",
@@ -6243,7 +6765,8 @@
         "en": "Is that black bag yours?",
         "tatoeba_id": 231019
       }
-    ]
+    ],
+    "reversePrompt": "black (い-adjective)"
   },
   {
     "id": "e1634cb3e9",
@@ -6271,7 +6794,8 @@
         "en": "The policeman followed him.",
         "tatoeba_id": 176362
       }
-    ]
+    ],
+    "reversePrompt": "policeman (noun)"
   },
   {
     "id": "9c1d724a61",
@@ -6300,7 +6824,8 @@
         "en": "I have a lot of things to do this morning.",
         "tatoeba_id": 172293
       }
-    ]
+    ],
+    "reversePrompt": "this morning"
   },
   {
     "id": "19f270c68f",
@@ -6330,7 +6855,12 @@
         "en": "Would you put out the candles?",
         "tatoeba_id": 192284
       }
-    ]
+    ],
+    "synonyms": [
+      "erase",
+      "turn off power"
+    ],
+    "reversePrompt": "to erase"
   },
   {
     "id": "dd34250740",
@@ -6359,7 +6889,8 @@
         "en": "Either day is OK.",
         "tatoeba_id": 200732
       }
-    ]
+    ],
+    "reversePrompt": "splendid (な-adjective; enough)"
   },
   {
     "id": "2eb252da72",
@@ -6389,7 +6920,8 @@
         "en": "Once you are married, you are done for.",
         "tatoeba_id": 228877
       }
-    ]
+    ],
+    "reversePrompt": "marriage (intransitive)"
   },
   {
     "id": "04e80a2ba1",
@@ -6418,7 +6950,8 @@
         "en": "Any day will do except Monday.",
         "tatoeba_id": 175588
       }
-    ]
+    ],
+    "reversePrompt": "Monday (noun)"
   },
   {
     "id": "2e1642b248",
@@ -6446,7 +6979,8 @@
         "en": "Hang your coat in the hall, please.",
         "tatoeba_id": 224964
       }
-    ]
+    ],
+    "reversePrompt": "entry hall"
   },
   {
     "id": "442c4aa1ca",
@@ -6476,7 +7010,8 @@
         "en": "The teacher got quite well again.",
         "tatoeba_id": 141667
       }
-    ]
+    ],
+    "reversePrompt": "health (な-adjective; vitality)"
   },
   {
     "id": "47c1fdbe2f",
@@ -6502,7 +7037,8 @@
         "en": "This is five thousand yen in the Japanese Yen.",
         "tatoeba_id": 218159
       }
-    ]
+    ],
+    "reversePrompt": "five"
   },
   {
     "id": "05cf590971",
@@ -6530,7 +7066,8 @@
         "en": "Is there a river between the two parks?",
         "tatoeba_id": 123167
       }
-    ]
+    ],
+    "reversePrompt": "park"
   },
   {
     "id": "8699b8bec2",
@@ -6558,7 +7095,8 @@
         "en": "What's the name of this intersection?",
         "tatoeba_id": 222010
       }
-    ]
+    ],
+    "reversePrompt": "intersection"
   },
   {
     "id": "1288e600be",
@@ -6586,7 +7124,8 @@
         "en": "This is a very good tea.",
         "tatoeba_id": 218548
       }
-    ]
+    ],
+    "reversePrompt": "black tea"
   },
   {
     "id": "402eb0d21f",
@@ -6614,7 +7153,8 @@
         "en": "Do you know where the police station is?",
         "tatoeba_id": 174098
       }
-    ]
+    ],
+    "reversePrompt": "police box"
   },
   {
     "id": "d890e45616",
@@ -6642,7 +7182,8 @@
         "en": "Speak louder, please.",
         "tatoeba_id": 193232
       }
-    ]
+    ],
+    "reversePrompt": "voice"
   },
   {
     "id": "c552e79d34",
@@ -6665,7 +7206,8 @@
         "en": "I like this coat. May I try it on?",
         "tatoeba_id": 1171687
       }
-    ]
+    ],
+    "reversePrompt": "coat"
   },
   {
     "id": "67126059f1",
@@ -6691,7 +7233,8 @@
         "en": "Give me another cup of coffee.",
         "tatoeba_id": 224880
       }
-    ]
+    ],
+    "reversePrompt": "coffee"
   },
   {
     "id": "05123676c2",
@@ -6705,7 +7248,15 @@
     "pos": [
       "pn"
     ],
-    "jmdict_id": 1288810
+    "jmdict_id": 1288810,
+    "examples": [
+      {
+        "ja": "ここは私の故郷にそっくりな風景です。",
+        "furigana": "ここは私の故郷にそっくりな風景です。",
+        "en": "This scenery is just like that of my hometown."
+      }
+    ],
+    "reversePrompt": "here"
   },
   {
     "id": "9a7c962266",
@@ -6734,7 +7285,8 @@
         "en": "I am going to play tennis in the afternoon.",
         "tatoeba_id": 174404
       }
-    ]
+    ],
+    "reversePrompt": "afternoon"
   },
   {
     "id": "f114f6f499",
@@ -6761,7 +7313,8 @@
         "en": "The top eight players survived the ninth day of the tournament.",
         "tatoeba_id": 137653
       }
-    ]
+    ],
+    "reversePrompt": "nine days"
   },
   {
     "id": "cff3c57405",
@@ -6788,7 +7341,8 @@
         "en": "His English composition has nine mistakes in as many lines.",
         "tatoeba_id": 118095
       }
-    ]
+    ],
+    "reversePrompt": "nine"
   },
   {
     "id": "c92dbe626a",
@@ -6817,7 +7371,8 @@
         "en": "I will meet you at the station at 10 a.m.",
         "tatoeba_id": 174378
       }
-    ]
+    ],
+    "reversePrompt": "morning (noun)"
   },
   {
     "id": "d5d8c608aa",
@@ -6846,7 +7401,11 @@
         "en": "I don't know how to reply to that question.",
         "tatoeba_id": 187740
       }
-    ]
+    ],
+    "synonyms": [
+      "answer"
+    ],
+    "reversePrompt": "to answer (intransitive)"
   },
   {
     "id": "a9191729e3",
@@ -6875,7 +7434,8 @@
         "en": "Now, say thank you for the meal.",
         "tatoeba_id": 11264757
       }
-    ]
+    ],
+    "reversePrompt": "feast"
   },
   {
     "id": "e9e492c68a",
@@ -6902,7 +7462,8 @@
         "en": "Could you sign here, please?",
         "tatoeba_id": 3281203
       }
-    ]
+    ],
+    "reversePrompt": "this person or way"
   },
   {
     "id": "be9b8bcb5e",
@@ -6930,7 +7491,8 @@
         "en": "Come here and have a look at it.",
         "tatoeba_id": 224124
       }
-    ]
+    ],
+    "reversePrompt": "this person or way"
   },
   {
     "id": "2da7034c1e",
@@ -6944,7 +7506,18 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1050390
+    "jmdict_id": 1050390,
+    "examples": [
+      {
+        "ja": "彼女はコップを口にくわえて運んでいた。",
+        "furigana": "彼女はコップを口にくわえて運んでいた。",
+        "en": "She was carrying a cup by holding it in her mouth."
+      }
+    ],
+    "synonyms": [
+      "glass"
+    ],
+    "reversePrompt": "a glass (noun)"
   },
   {
     "id": "0020b9ee4e",
@@ -6973,7 +7546,8 @@
         "en": "There were not many rainy days in June this year.",
         "tatoeba_id": 171353
       }
-    ]
+    ],
+    "reversePrompt": "this year"
   },
   {
     "id": "491cfa69be",
@@ -7002,7 +7576,8 @@
         "en": "The word is derived from Latin.",
         "tatoeba_id": 210904
       }
-    ]
+    ],
+    "reversePrompt": "word (noun; language)"
   },
   {
     "id": "1f4bb6e503",
@@ -7028,7 +7603,8 @@
         "en": "Children don't keep still.",
         "tatoeba_id": 168864
       }
-    ]
+    ],
+    "reversePrompt": "child (noun)"
   },
   {
     "id": "bd3a2ad2ad",
@@ -7059,7 +7635,8 @@
         "en": "Hold fast to this tree.",
         "tatoeba_id": 219456
       }
-    ]
+    ],
+    "reversePrompt": "this"
   },
   {
     "id": "a2694d259e",
@@ -7088,7 +7665,8 @@
         "en": "My friends treated me to a meal.",
         "tatoeba_id": 79311
       }
-    ]
+    ],
+    "reversePrompt": "cooked rice"
   },
   {
     "id": "f586d7d023",
@@ -7118,7 +7696,11 @@
         "en": "It is illegal to copy from books without the author's permission.",
         "tatoeba_id": 126291
       }
-    ]
+    ],
+    "synonyms": [
+      "copy"
+    ],
+    "reversePrompt": "to copy (transitive)"
   },
   {
     "id": "61994485cb",
@@ -7147,7 +7729,11 @@
         "en": "I have a problem with my car.",
         "tatoeba_id": 149067
       }
-    ]
+    ],
+    "synonyms": [
+      "be worried"
+    ],
+    "reversePrompt": "to be worried (intransitive)"
   },
   {
     "id": "4a11eb5fb4",
@@ -7179,7 +7765,8 @@
         "en": "I'm sorry, but I can't hear you well.",
         "tatoeba_id": 219061
       }
-    ]
+    ],
+    "reversePrompt": "I beg your pardon"
   },
   {
     "id": "6313cc9cb5",
@@ -7209,7 +7796,8 @@
         "en": "What does all this add up to?",
         "tatoeba_id": 143331
       }
-    ]
+    ],
+    "reversePrompt": "this"
   },
   {
     "id": "3793173687",
@@ -7238,7 +7826,8 @@
         "en": "I will stay here all this month.",
         "tatoeba_id": 172471
       }
-    ]
+    ],
+    "reversePrompt": "this month"
   },
   {
     "id": "7a27eadef1",
@@ -7267,7 +7856,8 @@
         "en": "What have you been doing this week?",
         "tatoeba_id": 172390
       }
-    ]
+    ],
+    "reversePrompt": "this week"
   },
   {
     "id": "e1978f90df",
@@ -7295,7 +7885,8 @@
         "en": "I don't feel like going out on such a day.",
         "tatoeba_id": 217322
       }
-    ]
+    ],
+    "reversePrompt": "such"
   },
   {
     "id": "0a65b39cf7",
@@ -7325,7 +7916,13 @@
         "en": "Hello. Are you Jackie Scott?",
         "tatoeba_id": 217298
       }
-    ]
+    ],
+    "synonyms": [
+      "good day",
+      "good day (daytime greeting",
+      "id)"
+    ],
+    "reversePrompt": "hello"
   },
   {
     "id": "eb1c9a5df9",
@@ -7354,7 +7951,8 @@
         "en": "How about playing chess tonight?",
         "tatoeba_id": 171264
       }
-    ]
+    ],
+    "reversePrompt": "this evening"
   },
   {
     "id": "6c0551dd8a",
@@ -7383,7 +7981,8 @@
         "en": "Good evening.",
         "tatoeba_id": 426900
       }
-    ]
+    ],
+    "reversePrompt": "good evening"
   },
   {
     "id": "7ba7ba2434",
@@ -7410,7 +8009,8 @@
         "en": "Boys! Now listen.",
         "tatoeba_id": 195024
       }
-    ]
+    ],
+    "reversePrompt": "well…"
   },
   {
     "id": "a96e3a2b33",
@@ -7438,7 +8038,8 @@
         "en": "My wallet and passport are missing.",
         "tatoeba_id": 170210
       }
-    ]
+    ],
+    "reversePrompt": "wallet"
   },
   {
     "id": "dbd7cd319c",
@@ -7466,7 +8067,8 @@
         "en": "Fish cannot live out of water.",
         "tatoeba_id": 182097
       }
-    ]
+    ],
+    "reversePrompt": "fish (noun)"
   },
   {
     "id": "20fcc4f54f",
@@ -7495,7 +8097,11 @@
         "en": "It's just a little further.",
         "tatoeba_id": 194388
       }
-    ]
+    ],
+    "synonyms": [
+      "future"
+    ],
+    "reversePrompt": "the future (noun; previous)"
   },
   {
     "id": "4c39babf5f",
@@ -7524,7 +8130,11 @@
         "en": "These flowers bloom in spring.",
         "tatoeba_id": 217953
       }
-    ]
+    ],
+    "synonyms": [
+      "bloom"
+    ],
+    "reversePrompt": "to bloom"
   },
   {
     "id": "c10cb3070d",
@@ -7555,7 +8165,8 @@
         "en": "Write an essay on \"Friendship\".",
         "tatoeba_id": 236141
       }
-    ]
+    ],
+    "reversePrompt": "composition (intransitive; writing)"
   },
   {
     "id": "4e2aefb855",
@@ -7585,7 +8196,12 @@
         "en": "She put up an umbrella against a scorching sun.",
         "tatoeba_id": 92769
       }
-    ]
+    ],
+    "synonyms": [
+      "stretch out hands",
+      "raise an umbrella"
+    ],
+    "reversePrompt": "to stretch out hands"
   },
   {
     "id": "a371cc6a54",
@@ -7613,7 +8229,8 @@
         "en": "It is foolish to read such a magazine.",
         "tatoeba_id": 204129
       }
-    ]
+    ],
+    "reversePrompt": "magazine (noun)"
   },
   {
     "id": "8af5030b7a",
@@ -7641,7 +8258,8 @@
         "en": "We have to do without sugar.",
         "tatoeba_id": 170890
       }
-    ]
+    ],
+    "reversePrompt": "sugar"
   },
   {
     "id": "688bc67044",
@@ -7669,7 +8287,14 @@
         "en": "The weather was not only cold, but also wet.",
         "tatoeba_id": 125110
       }
-    ]
+    ],
+    "synonyms": [
+      "chilly",
+      "cool",
+      "freezing",
+      "frigid"
+    ],
+    "reversePrompt": "cold (い-adjective)"
   },
   {
     "id": "0a1f511640",
@@ -7700,7 +8325,8 @@
         "en": "I'll be seeing you.",
         "tatoeba_id": 216704
       }
-    ]
+    ],
+    "reversePrompt": "good-bye"
   },
   {
     "id": "45c705d5b2",
@@ -7723,7 +8349,8 @@
         "en": "My grandfather is planning to retire the year after next.",
         "tatoeba_id": 140720
       }
-    ]
+    ],
+    "reversePrompt": "year after next"
   },
   {
     "id": "5cb07674a3",
@@ -7749,7 +8376,8 @@
         "en": "This book costs 3,000 yen.",
         "tatoeba_id": 219631
       }
-    ]
+    ],
+    "reversePrompt": "three"
   },
   {
     "id": "e2695084c9",
@@ -7779,7 +8407,11 @@
         "en": "Let's step out for a short walk.",
         "tatoeba_id": 76557
       }
-    ]
+    ],
+    "synonyms": [
+      "stroll"
+    ],
+    "reversePrompt": "to stroll"
   },
   {
     "id": "da4b805e0b",
@@ -7808,7 +8440,8 @@
         "en": "I go to the movies three or four times a month.",
         "tatoeba_id": 175658
       }
-    ]
+    ],
+    "reversePrompt": "four"
   },
   {
     "id": "b366a3d677",
@@ -7836,7 +8469,8 @@
         "en": "Pass me the salt, would you?",
         "tatoeba_id": 188597
       }
-    ]
+    ],
+    "reversePrompt": "salt"
   },
   {
     "id": "2c41aedcba",
@@ -7867,7 +8501,8 @@
         "en": "But human beings are different.",
         "tatoeba_id": 216307
       }
-    ]
+    ],
+    "reversePrompt": "however"
   },
   {
     "id": "d5c916ca85",
@@ -7895,7 +8530,14 @@
         "en": "I took no note of the time.",
         "tatoeba_id": 150629
       }
-    ]
+    ],
+    "synonyms": [
+      "hour",
+      "moment",
+      "period",
+      "occasion"
+    ],
+    "reversePrompt": "time (noun)"
   },
   {
     "id": "573bc15b1d",
@@ -7925,7 +8567,8 @@
         "en": "No work can be done with ease.",
         "tatoeba_id": 200317
       }
-    ]
+    ],
+    "reversePrompt": "job"
   },
   {
     "id": "8ec35978bd",
@@ -7953,7 +8596,8 @@
         "en": "This is the very dictionary that I have wanted so long.",
         "tatoeba_id": 218820
       }
-    ]
+    ],
+    "reversePrompt": "dictionary (noun)"
   },
   {
     "id": "178469ba7a",
@@ -7981,7 +8625,8 @@
         "en": "See to it that you keep quiet.",
         "tatoeba_id": 142511
       }
-    ]
+    ],
+    "reversePrompt": "quiet (な-adjective)"
   },
   {
     "id": "dd36cae3a9",
@@ -8009,7 +8654,8 @@
         "en": "There is a bench under the tree.",
         "tatoeba_id": 80128
       }
-    ]
+    ],
+    "reversePrompt": "below (noun)"
   },
   {
     "id": "988db98632",
@@ -8038,7 +8684,8 @@
         "en": "It is just half past seven.",
         "tatoeba_id": 202909
       }
-    ]
+    ],
+    "reversePrompt": "seven"
   },
   {
     "id": "2c5c99977c",
@@ -8070,7 +8717,8 @@
         "en": "Will you put your questions in written form?",
         "tatoeba_id": 149514
       }
-    ]
+    ],
+    "reversePrompt": "question (transitive)"
   },
   {
     "id": "ebf194a316",
@@ -8098,7 +8746,8 @@
         "en": "Mayuko goes to school by bicycle.",
         "tatoeba_id": 195201
       }
-    ]
+    ],
+    "reversePrompt": "bicycle"
   },
   {
     "id": "78fd1a0e8a",
@@ -8126,7 +8775,8 @@
         "en": "My car burns a lot of gas.",
         "tatoeba_id": 196376
       }
-    ]
+    ],
+    "reversePrompt": "automobile"
   },
   {
     "id": "ec6fd2f845",
@@ -8155,7 +8805,11 @@
         "en": "All living things die some day.",
         "tatoeba_id": 142836
       }
-    ]
+    ],
+    "synonyms": [
+      "die"
+    ],
+    "reversePrompt": "to die (intransitive)"
   },
   {
     "id": "6156bfb418",
@@ -8183,7 +8837,8 @@
         "en": "Our teacher is, as it were, a walking dictionary.",
         "tatoeba_id": 166907
       }
-    ]
+    ],
+    "reversePrompt": "dictionary (noun)"
   },
   {
     "id": "995a632b12",
@@ -8211,7 +8866,8 @@
         "en": "You can take your time.",
         "tatoeba_id": 149918
       }
-    ]
+    ],
+    "reversePrompt": "oneself"
   },
   {
     "id": "01420cdf0f",
@@ -8240,7 +8896,12 @@
         "en": "The door was locked, so I couldn't get in.",
         "tatoeba_id": 201896
       }
-    ]
+    ],
+    "synonyms": [
+      "close",
+      "be closed"
+    ],
+    "reversePrompt": "to close / shut (intransitive)"
   },
   {
     "id": "8e6c15bef9",
@@ -8269,7 +8930,11 @@
         "en": "Please fasten your seat belt.",
         "tatoeba_id": 216597
       }
-    ]
+    ],
+    "synonyms": [
+      "tie"
+    ],
+    "reversePrompt": "to tie (transitive)"
   },
   {
     "id": "95827b08e3",
@@ -8298,7 +8963,11 @@
         "en": "This department store is closed at seven.",
         "tatoeba_id": 223505
       }
-    ]
+    ],
+    "synonyms": [
+      "close something"
+    ],
+    "reversePrompt": "to close / shut (transitive)"
   },
   {
     "id": "091c8c0e07",
@@ -8328,7 +8997,8 @@
         "en": "Then I'll come again later.",
         "tatoeba_id": 215754
       }
-    ]
+    ],
+    "reversePrompt": "well then…"
   },
   {
     "id": "5101640e7e",
@@ -8356,7 +9026,8 @@
         "en": "Here is a picture to show you.",
         "tatoeba_id": 224510
       }
-    ]
+    ],
+    "reversePrompt": "photograph"
   },
   {
     "id": "f71424e3ff",
@@ -8382,7 +9053,8 @@
         "en": "Whose shirt is this?",
         "tatoeba_id": 223699
       }
-    ]
+    ],
+    "reversePrompt": "shirt"
   },
   {
     "id": "d9c88143a2",
@@ -8409,7 +9081,8 @@
         "en": "I'll take a shower.",
         "tatoeba_id": 215746
       }
-    ]
+    ],
+    "reversePrompt": "shower (noun)"
   },
   {
     "id": "db9f5d4422",
@@ -8438,7 +9111,8 @@
         "en": "It is ten years since he came to Japan.",
         "tatoeba_id": 122693
       }
-    ]
+    ],
+    "reversePrompt": "ten"
   },
   {
     "id": "5bae559507",
@@ -8469,7 +9143,8 @@
         "en": "Don't cut your classes so often.",
         "tatoeba_id": 204268
       }
-    ]
+    ],
+    "reversePrompt": "lesson (intransitive; class work)"
   },
   {
     "id": "4daa103d7d",
@@ -8497,7 +9172,8 @@
         "en": "I have a lot of homework to do.",
         "tatoeba_id": 193016
       }
-    ]
+    ],
+    "reversePrompt": "homework"
   },
   {
     "id": "1763fc412a",
@@ -8525,7 +9201,8 @@
         "en": "Mike speaks good Japanese.",
         "tatoeba_id": 195731
       }
-    ]
+    ],
+    "reversePrompt": "skillful (な-adjective)"
   },
   {
     "id": "50525927ee",
@@ -8553,7 +9230,15 @@
         "en": "He is said to have been strong.",
         "tatoeba_id": 103983
       }
-    ]
+    ],
+    "synonyms": [
+      "powerful",
+      "mighty",
+      "sturdy",
+      "robust",
+      "firm"
+    ],
+    "reversePrompt": "strong (な-adjective; durable)"
   },
   {
     "id": "9476d7966d",
@@ -8578,7 +9263,8 @@
         "en": "The company produces soy sauce and other food products.",
         "tatoeba_id": 123656
       }
-    ]
+    ],
+    "reversePrompt": "soy sauce"
   },
   {
     "id": "dcc87a37fb",
@@ -8606,7 +9292,8 @@
         "en": "What time does the dining room open?",
         "tatoeba_id": 145790
       }
-    ]
+    ],
+    "reversePrompt": "dining hall"
   },
   {
     "id": "1fcb2fece8",
@@ -8635,7 +9322,14 @@
         "en": "Don't you know Mr. Brown?",
         "tatoeba_id": 197075
       }
-    ]
+    ],
+    "synonyms": [
+      "know",
+      "understand",
+      "be aware",
+      "recognize"
+    ],
+    "reversePrompt": "to know (transitive)"
   },
   {
     "id": "98eace7008",
@@ -8663,7 +9357,8 @@
         "en": "A red and spotted white towel, please.",
         "tatoeba_id": 142119
       }
-    ]
+    ],
+    "reversePrompt": "white (noun)"
   },
   {
     "id": "8997f64f52",
@@ -8691,7 +9386,8 @@
         "en": "It shows white from here.",
         "tatoeba_id": 205517
       }
-    ]
+    ],
+    "reversePrompt": "white (い-adjective)"
   },
   {
     "id": "b8317395af",
@@ -8719,7 +9415,8 @@
         "en": "Are you through with the paper?",
         "tatoeba_id": 145135
       }
-    ]
+    ],
+    "reversePrompt": "newspaper"
   },
   {
     "id": "44d9d70862",
@@ -8748,7 +9445,8 @@
         "en": "She has been sick since last Wednesday.",
         "tatoeba_id": 88253
       }
-    ]
+    ],
+    "reversePrompt": "Wednesday (noun)"
   },
   {
     "id": "e82727193e",
@@ -8778,7 +9476,12 @@
         "en": "You can smoke a pipe when you grow up.",
         "tatoeba_id": 137481
       }
-    ]
+    ],
+    "synonyms": [
+      "smoke",
+      "suck"
+    ],
+    "reversePrompt": "to smoke (transitive; to suck)"
   },
   {
     "id": "f0f5f6b29b",
@@ -8806,7 +9509,8 @@
         "en": "This skirt is a little too tight.",
         "tatoeba_id": 223642
       }
-    ]
+    ],
+    "reversePrompt": "skirt"
   },
   {
     "id": "20cbecd474",
@@ -8835,7 +9539,8 @@
         "en": "Are you fond of Maltese dogs?",
         "tatoeba_id": 232388
       }
-    ]
+    ],
+    "reversePrompt": "likeable (な-adjective)"
   },
   {
     "id": "ce75057c4c",
@@ -8871,7 +9576,11 @@
         "en": "\"Will it stop raining soon?\" \"I'm afraid not.\"",
         "tatoeba_id": 236397
       }
-    ]
+    ],
+    "synonyms": [
+      "right"
+    ],
+    "reversePrompt": "immediately (noun; soon)"
   },
   {
     "id": "0d38b01113",
@@ -8899,7 +9608,11 @@
         "en": "There are few, if any, such men.",
         "tatoeba_id": 203555
       }
-    ]
+    ],
+    "synonyms": [
+      "few"
+    ],
+    "reversePrompt": "a few (い-adjective)"
   },
   {
     "id": "a8722990f1",
@@ -8927,7 +9640,8 @@
         "en": "I may as well start at once.",
         "tatoeba_id": 214879
       }
-    ]
+    ],
+    "reversePrompt": "instantly"
   },
   {
     "id": "c373555102",
@@ -8955,7 +9669,8 @@
         "en": "This skirt is a little too tight.",
         "tatoeba_id": 223642
       }
-    ]
+    ],
+    "reversePrompt": "few"
   },
   {
     "id": "67f5908e10",
@@ -8983,7 +9698,8 @@
         "en": "It is getting cooler and cooler.",
         "tatoeba_id": 203059
       }
-    ]
+    ],
+    "reversePrompt": "refreshing (い-adjective)"
   },
   {
     "id": "8149d77689",
@@ -9011,7 +9727,8 @@
         "en": "He warmed himself at the stove.",
         "tatoeba_id": 113365
       }
-    ]
+    ],
+    "reversePrompt": "heater"
   },
   {
     "id": "938a169f6c",
@@ -9037,7 +9754,8 @@
         "en": "There is a spoon missing.",
         "tatoeba_id": 214526
       }
-    ]
+    ],
+    "reversePrompt": "spoon (noun)"
   },
   {
     "id": "0a33903ccf",
@@ -9063,7 +9781,8 @@
         "en": "What sports do you go in for?",
         "tatoeba_id": 200376
       }
-    ]
+    ],
+    "reversePrompt": "sport"
   },
   {
     "id": "10fe0704ca",
@@ -9090,7 +9809,8 @@
         "en": "These pants tend to go baggy at the knees.",
         "tatoeba_id": 223621
       }
-    ]
+    ],
+    "reversePrompt": "trousers"
   },
   {
     "id": "feae64eac4",
@@ -9123,7 +9843,8 @@
         "en": "Please answer the phone.",
         "tatoeba_id": 214132
       }
-    ]
+    ],
+    "reversePrompt": "sorry (excuse me)"
   },
   {
     "id": "d671097071",
@@ -9152,7 +9873,11 @@
         "en": "Did you use to live here?",
         "tatoeba_id": 224491
       }
-    ]
+    ],
+    "synonyms": [
+      "live in"
+    ],
+    "reversePrompt": "to live in"
   },
   {
     "id": "508131fe89",
@@ -9179,7 +9904,8 @@
         "en": "You're not supposed to wear your slippers down to the lobby.",
         "tatoeba_id": 214120
       }
-    ]
+    ],
+    "reversePrompt": "slippers"
   },
   {
     "id": "c4cdc162d7",
@@ -9209,7 +9935,14 @@
         "en": "I wish my father had lived longer.",
         "tatoeba_id": 84880
       }
-    ]
+    ],
+    "synonyms": [
+      "do",
+      "perform",
+      "execute",
+      "carry out"
+    ],
+    "reversePrompt": "to do"
   },
   {
     "id": "c9a15e8777",
@@ -9238,7 +9971,14 @@
         "en": "Don't sit on that bench.",
         "tatoeba_id": 231252
       }
-    ]
+    ],
+    "synonyms": [
+      "sit",
+      "sit down",
+      "take a seat",
+      "be seated"
+    ],
+    "reversePrompt": "to sit (intransitive)"
   },
   {
     "id": "898b067287",
@@ -9267,7 +10007,8 @@
         "en": "He is leaning on the back of the chair.",
         "tatoeba_id": 114666
       }
-    ]
+    ],
+    "reversePrompt": "height (noun; stature)"
   },
   {
     "id": "af7459ef1e",
@@ -9295,7 +10036,8 @@
         "en": "You are not a student.",
         "tatoeba_id": 231798
       }
-    ]
+    ],
+    "reversePrompt": "pupil (noun)"
   },
   {
     "id": "4b0b49a42d",
@@ -9324,7 +10066,8 @@
         "en": "I had my mother mend this sweater.",
         "tatoeba_id": 83138
       }
-    ]
+    ],
+    "reversePrompt": "sweater"
   },
   {
     "id": "b48d0c99d4",
@@ -9354,7 +10097,8 @@
         "en": "I washed my hands with soap.",
         "tatoeba_id": 10899704
       }
-    ]
+    ],
+    "reversePrompt": "economy (transitive)"
   },
   {
     "id": "9d432ac114",
@@ -9382,7 +10126,8 @@
         "en": "He was wearing a threadbare suit.",
         "tatoeba_id": 74070
       }
-    ]
+    ],
+    "reversePrompt": "business suit"
   },
   {
     "id": "d12ee2e932",
@@ -9410,7 +10155,8 @@
         "en": "The street is very narrow.",
         "tatoeba_id": 207729
       }
-    ]
+    ],
+    "reversePrompt": "narrow (い-adjective)"
   },
   {
     "id": "434707d737",
@@ -9438,7 +10184,8 @@
         "en": "The concept of zero sprang from the Hindu culture.",
         "tatoeba_id": 213989
       }
-    ]
+    ],
+    "reversePrompt": "zero (noun)"
   },
   {
     "id": "1729d60f09",
@@ -9464,7 +10211,8 @@
         "en": "As many as a thousand people were there.",
         "tatoeba_id": 141432
       }
-    ]
+    ],
+    "reversePrompt": "thousand"
   },
   {
     "id": "0eaa93c144",
@@ -9493,7 +10241,8 @@
         "en": "I had the flu last month.",
         "tatoeba_id": 141890
       }
-    ]
+    ],
+    "reversePrompt": "last month"
   },
   {
     "id": "b8c4cd80db",
@@ -9522,7 +10271,8 @@
         "en": "Were you here last week?",
         "tatoeba_id": 231791
       }
-    ]
+    ],
+    "reversePrompt": "last week"
   },
   {
     "id": "814bdc2cec",
@@ -9552,7 +10302,15 @@
         "en": "That Prof.'s talk is driving me up the wall.",
         "tatoeba_id": 230655
       }
-    ]
+    ],
+    "synonyms": [
+      "instructor",
+      "educator",
+      "tutor",
+      "sensei",
+      "master"
+    ],
+    "reversePrompt": "teacher (noun; doctor)"
   },
   {
     "id": "4d0ca7b320",
@@ -9582,7 +10340,8 @@
         "en": "Do you have a laundry service?",
         "tatoeba_id": 141217
       }
-    ]
+    ],
+    "reversePrompt": "washing"
   },
   {
     "id": "acba6e07ba",
@@ -9612,7 +10371,8 @@
         "en": "It has cost me $100 altogether.",
         "tatoeba_id": 205017
       }
-    ]
+    ],
+    "reversePrompt": "all (noun)"
   },
   {
     "id": "501df34d31",
@@ -9643,7 +10403,12 @@
         "en": "Did you clean your room?",
         "tatoeba_id": 233037
       }
-    ]
+    ],
+    "synonyms": [
+      "clean",
+      "sweep"
+    ],
+    "reversePrompt": "to clean (transitive; to sweep)"
   },
   {
     "id": "e75777d218",
@@ -9674,7 +10439,8 @@
         "en": "It is kind of you to do so.",
         "tatoeba_id": 213882
       }
-    ]
+    ],
+    "reversePrompt": "and"
   },
   {
     "id": "5ef867ff81",
@@ -9705,7 +10471,8 @@
         "en": "It was there when I noticed it.",
         "tatoeba_id": 183289
       }
-    ]
+    ],
+    "reversePrompt": "that place"
   },
   {
     "id": "105df79571",
@@ -9736,7 +10503,8 @@
         "en": "How are things for you up there?",
         "tatoeba_id": 213468
       }
-    ]
+    ],
+    "reversePrompt": "over there"
   },
   {
     "id": "80981fa136",
@@ -9763,7 +10531,8 @@
         "en": "I'll give you a call before I visit you.",
         "tatoeba_id": 10499829
       }
-    ]
+    ],
+    "reversePrompt": "over there"
   },
   {
     "id": "68ad5f4363",
@@ -9791,7 +10560,8 @@
         "en": "Let's eat outside instead of in our tents.",
         "tatoeba_id": 201917
       }
-    ]
+    ],
+    "reversePrompt": "outside (noun)"
   },
   {
     "id": "cb1c02a574",
@@ -9805,7 +10575,15 @@
     "pos": [
       "adj-pn"
     ],
-    "jmdict_id": 1006830
+    "jmdict_id": 1006830,
+    "examples": [
+      {
+        "ja": "そのプールは子供向けのため、水が浅い。",
+        "furigana": "そのプールは子供向けのため、水が浅い。",
+        "en": "The pool is shallow because it is for children."
+      }
+    ],
+    "reversePrompt": "that"
   },
   {
     "id": "38c854e97f",
@@ -9837,7 +10615,8 @@
         "en": "We stood at the door and waited.",
         "tatoeba_id": 191672
       }
-    ]
+    ],
+    "reversePrompt": "near (noun; beside)"
   },
   {
     "id": "6ff51bace3",
@@ -9865,7 +10644,8 @@
         "en": "An eagle is flying in the sky.",
         "tatoeba_id": 191980
       }
-    ]
+    ],
+    "reversePrompt": "sky (noun)"
   },
   {
     "id": "79d922e359",
@@ -9896,7 +10676,8 @@
         "en": "Leave it off the list.",
         "tatoeba_id": 204628
       }
-    ]
+    ],
+    "reversePrompt": "that"
   },
   {
     "id": "799b7cabe0",
@@ -9922,7 +10703,8 @@
         "en": "I'd like to know the rest of the story.",
         "tatoeba_id": 205916
       }
-    ]
+    ],
+    "reversePrompt": "after that"
   },
   {
     "id": "46c1721526",
@@ -9950,7 +10732,8 @@
         "en": "Now let's hurry to school.",
         "tatoeba_id": 205760
       }
-    ]
+    ],
+    "reversePrompt": "in that situation"
   },
   {
     "id": "5b303264b9",
@@ -9978,7 +10761,8 @@
         "en": "I belong to a tennis club in my university.",
         "tatoeba_id": 137648
       }
-    ]
+    ],
+    "reversePrompt": "university"
   },
   {
     "id": "992fc07339",
@@ -10004,7 +10788,8 @@
         "en": "He has access to the American Embassy.",
         "tatoeba_id": 114807
       }
-    ]
+    ],
+    "reversePrompt": "embassy"
   },
   {
     "id": "2f62b9db5e",
@@ -10032,7 +10817,8 @@
         "en": "She is all right at the moment.",
         "tatoeba_id": 90036
       }
-    ]
+    ],
+    "reversePrompt": "all right (な-adjective)"
   },
   {
     "id": "9ee7cd3382",
@@ -10060,7 +10846,11 @@
         "en": "People love to talk, talk, talk.",
         "tatoeba_id": 144314
       }
-    ]
+    ],
+    "synonyms": [
+      "be very likeable"
+    ],
+    "reversePrompt": "to be very likeable"
   },
   {
     "id": "b3a8593e53",
@@ -10088,7 +10878,8 @@
         "en": "Water is important for humans.",
         "tatoeba_id": 143754
       }
-    ]
+    ],
+    "reversePrompt": "important (な-adjective)"
   },
   {
     "id": "1c0b0f77b6",
@@ -10116,7 +10907,8 @@
         "en": "The door gives access to the kitchen.",
         "tatoeba_id": 212931
       }
-    ]
+    ],
+    "reversePrompt": "kitchen"
   },
   {
     "id": "e04372c490",
@@ -10146,7 +10938,8 @@
         "en": "This book is very interesting.",
         "tatoeba_id": 219705
       }
-    ]
+    ],
+    "reversePrompt": "very"
   },
   {
     "id": "c74892f565",
@@ -10175,7 +10968,14 @@
         "en": "What a tall tree this is!",
         "tatoeba_id": 218541
       }
-    ]
+    ],
+    "synonyms": [
+      "costly",
+      "pricey",
+      "dear",
+      "high-priced"
+    ],
+    "reversePrompt": "tall"
   },
   {
     "id": "a7c72d9bb1",
@@ -10207,7 +11007,8 @@
         "en": "You have given me so many.",
         "tatoeba_id": 204301
       }
-    ]
+    ],
+    "reversePrompt": "many (な-adjective)"
   },
   {
     "id": "2d5a93eb11",
@@ -10234,7 +11035,8 @@
         "en": "Can I catch a taxi here?",
         "tatoeba_id": 224661
       }
-    ]
+    ],
+    "reversePrompt": "taxi"
   },
   {
     "id": "6298cfc5d6",
@@ -10263,7 +11065,11 @@
         "en": "I want to remain anonymous in this.",
         "tatoeba_id": 222164
       }
-    ]
+    ],
+    "synonyms": [
+      "put out"
+    ],
+    "reversePrompt": "to put out"
   },
   {
     "id": "932afda20b",
@@ -10292,7 +11098,13 @@
         "en": "Why leave me standing here?",
         "tatoeba_id": 199215
       }
-    ]
+    ],
+    "synonyms": [
+      "stand",
+      "rise",
+      "stand up"
+    ],
+    "reversePrompt": "to stand (intransitive)"
   },
   {
     "id": "e7ca1b2fd5",
@@ -10324,7 +11136,8 @@
         "en": "You cannot make a crab walk straight.",
         "tatoeba_id": 184932
       }
-    ]
+    ],
+    "reversePrompt": "length (noun; height)"
   },
   {
     "id": "372b08211e",
@@ -10352,7 +11165,8 @@
         "en": "Linda came into the building.",
         "tatoeba_id": 192428
       }
-    ]
+    ],
+    "reversePrompt": "building (noun)"
   },
   {
     "id": "9b2d455dfe",
@@ -10380,7 +11194,8 @@
         "en": "Hitomi looked very happy.",
         "tatoeba_id": 197488
       }
-    ]
+    ],
+    "reversePrompt": "enjoyable"
   },
   {
     "id": "7e9d38afeb",
@@ -10409,7 +11224,11 @@
         "en": "I didn't ask for a table here.",
         "tatoeba_id": 223523
       }
-    ]
+    ],
+    "synonyms": [
+      "ask"
+    ],
+    "reversePrompt": "to ask (transitive)"
   },
   {
     "id": "80beed00bf",
@@ -10440,7 +11259,8 @@
         "en": "It's hard to shake the smoking habit.",
         "tatoeba_id": 203430
       }
-    ]
+    ],
+    "reversePrompt": "tobacco"
   },
   {
     "id": "d9eba03b7b",
@@ -10470,7 +11290,8 @@
         "en": "Maybe he has lots of girlfriends.",
         "tatoeba_id": 203356
       }
-    ]
+    ],
+    "reversePrompt": "probably"
   },
   {
     "id": "5c89b3094a",
@@ -10498,7 +11319,15 @@
         "en": "You might as well chew your food well.",
         "tatoeba_id": 145896
       }
-    ]
+    ],
+    "synonyms": [
+      "meal",
+      "fare",
+      "cuisine",
+      "nourishment",
+      "edibles"
+    ],
+    "reversePrompt": "food (noun)"
   },
   {
     "id": "86f67e2dc3",
@@ -10527,7 +11356,14 @@
         "en": "You must not read while eating.",
         "tatoeba_id": 145934
       }
-    ]
+    ],
+    "synonyms": [
+      "eat",
+      "consume",
+      "have a meal",
+      "dine"
+    ],
+    "reversePrompt": "to eat (transitive)"
   },
   {
     "id": "4d66739694",
@@ -10554,7 +11390,8 @@
         "en": "He gets hives when he eats eggs.",
         "tatoeba_id": 78471
       }
-    ]
+    ],
+    "reversePrompt": "egg"
   },
   {
     "id": "3d2ca62c5f",
@@ -10582,7 +11419,8 @@
         "en": "Who is in charge of this building?",
         "tatoeba_id": 137043
       }
-    ]
+    ],
+    "reversePrompt": "who"
   },
   {
     "id": "2e610178ae",
@@ -10610,7 +11448,8 @@
         "en": "Here is a present for your birthday.",
         "tatoeba_id": 217561
       }
-    ]
+    ],
+    "reversePrompt": "birthday"
   },
   {
     "id": "55dbb815ba",
@@ -10642,7 +11481,8 @@
         "en": "It grew larger and larger.",
         "tatoeba_id": 205465
       }
-    ]
+    ],
+    "reversePrompt": "gradually"
   },
   {
     "id": "d4779ac36c",
@@ -10670,7 +11510,13 @@
         "en": "Don't you have anything smaller than this?",
         "tatoeba_id": 218012
       }
-    ]
+    ],
+    "synonyms": [
+      "small",
+      "tiny",
+      "slight"
+    ],
+    "reversePrompt": "little (い-adjective)"
   },
   {
     "id": "38a8411ec3",
@@ -10698,7 +11544,13 @@
         "en": "Ann is a little girl.",
         "tatoeba_id": 229481
       }
-    ]
+    ],
+    "synonyms": [
+      "small",
+      "tiny",
+      "slight"
+    ],
+    "reversePrompt": "little"
   },
   {
     "id": "a21ba677f2",
@@ -10726,7 +11578,8 @@
         "en": "Is there a toilet near here?",
         "tatoeba_id": 201736
       }
-    ]
+    ],
+    "reversePrompt": "near (い-adjective)"
   },
   {
     "id": "35e9881c22",
@@ -10755,7 +11608,11 @@
         "en": "That could be true, but I don't really think so.",
         "tatoeba_id": 213899
       }
-    ]
+    ],
+    "synonyms": [
+      "differ"
+    ],
+    "reversePrompt": "to differ (intransitive)"
   },
   {
     "id": "6d7293f7cf",
@@ -10784,7 +11641,8 @@
         "en": "Mr Smith is within shouting distance.",
         "tatoeba_id": 214296
       }
-    ]
+    ],
+    "reversePrompt": "near (noun)"
   },
   {
     "id": "3134199c25",
@@ -10811,7 +11669,8 @@
         "en": "I struggled to get out of the subway.",
         "tatoeba_id": 127017
       }
-    ]
+    ],
+    "reversePrompt": "underground train"
   },
   {
     "id": "ffa3dda331",
@@ -10839,7 +11698,8 @@
         "en": "Take a look at this map.",
         "tatoeba_id": 202836
       }
-    ]
+    ],
+    "reversePrompt": "map"
   },
   {
     "id": "f9b377e253",
@@ -10868,7 +11728,8 @@
         "en": "I would take this brown tie.",
         "tatoeba_id": 220566
       }
-    ]
+    ],
+    "reversePrompt": "brown"
   },
   {
     "id": "3d12036023",
@@ -10898,7 +11759,8 @@
         "en": "There is a cup on the table.",
         "tatoeba_id": 202391
       }
-    ]
+    ],
+    "reversePrompt": "rice bowl"
   },
   {
     "id": "9b08365493",
@@ -10929,7 +11791,8 @@
         "en": "I'm just about to check in.",
         "tatoeba_id": 202931
       }
-    ]
+    ],
+    "reversePrompt": "exactly"
   },
   {
     "id": "602fdffbf2",
@@ -10959,7 +11822,8 @@
         "en": "You should be a thought more careful.",
         "tatoeba_id": 194363
       }
-    ]
+    ],
+    "reversePrompt": "somewhat"
   },
   {
     "id": "c88e0ba104",
@@ -10988,7 +11852,14 @@
         "en": "Please use your headsets.",
         "tatoeba_id": 201311
       }
-    ]
+    ],
+    "synonyms": [
+      "use",
+      "utilize",
+      "apply",
+      "employ"
+    ],
+    "reversePrompt": "to use (transitive)"
   },
   {
     "id": "156f17113e",
@@ -11017,7 +11888,11 @@
         "en": "You look tired.",
         "tatoeba_id": 231609
       }
-    ]
+    ],
+    "synonyms": [
+      "get tired"
+    ],
+    "reversePrompt": "to get tired (intransitive)"
   },
   {
     "id": "d00ef0a9d5",
@@ -11046,7 +11921,8 @@
         "en": "Next time phone ahead.",
         "tatoeba_id": 150204
       }
-    ]
+    ],
+    "reversePrompt": "next (noun)"
   },
   {
     "id": "9d4a68ce12",
@@ -11075,7 +11951,11 @@
         "en": "When did you get to London?",
         "tatoeba_id": 192138
       }
-    ]
+    ],
+    "synonyms": [
+      "arrive at"
+    ],
+    "reversePrompt": "to arrive at"
   },
   {
     "id": "672321bac9",
@@ -11103,7 +11983,8 @@
         "en": "Dust had accumulated on the desk.",
         "tatoeba_id": 183454
       }
-    ]
+    ],
+    "reversePrompt": "desk"
   },
   {
     "id": "6e922a750e",
@@ -11132,7 +12013,15 @@
         "en": "This table is made of wood.",
         "tatoeba_id": 223530
       }
-    ]
+    ],
+    "synonyms": [
+      "make",
+      "create",
+      "produce",
+      "build",
+      "craft"
+    ],
+    "reversePrompt": "to make / cook (general or small objects)"
   },
   {
     "id": "edc22b8d98",
@@ -11162,7 +12051,11 @@
         "en": "Do you mind if I turn on the radio?",
         "tatoeba_id": 192597
       }
-    ]
+    ],
+    "synonyms": [
+      "turn on"
+    ],
+    "reversePrompt": "to turn on"
   },
   {
     "id": "ba6c46f68c",
@@ -11192,7 +12085,11 @@
         "en": "He no longer works here.",
         "tatoeba_id": 110635
       }
-    ]
+    ],
+    "synonyms": [
+      "work for someone"
+    ],
+    "reversePrompt": "to work for someone"
   },
   {
     "id": "3a94b5e981",
@@ -11222,7 +12119,8 @@
         "en": "That new movie was a bummer.",
         "tatoeba_id": 230825
       }
-    ]
+    ],
+    "reversePrompt": "boring (い-adjective)"
   },
   {
     "id": "a23d308800",
@@ -11250,7 +12148,8 @@
         "en": "I like cold potato salad in the summertime.",
         "tatoeba_id": 187197
       }
-    ]
+    ],
+    "reversePrompt": "cold to the touch"
   },
   {
     "id": "d99745fbb6",
@@ -11278,7 +12177,8 @@
         "en": "That primary school has a strong soccer team.",
         "tatoeba_id": 230859
       }
-    ]
+    ],
+    "reversePrompt": "powerful (い-adjective)"
   },
   {
     "id": "5b9670420a",
@@ -11306,7 +12206,8 @@
         "en": "I hit upon a good idea.",
         "tatoeba_id": 229349
       }
-    ]
+    ],
+    "reversePrompt": "hand (noun)"
   },
   {
     "id": "0cf2b43e9c",
@@ -11333,7 +12234,8 @@
         "en": "Will you play the tape?",
         "tatoeba_id": 212956
       }
-    ]
+    ],
+    "reversePrompt": "tape"
   },
   {
     "id": "ff161262dd",
@@ -11361,7 +12263,8 @@
         "en": "There is an apple on the table.",
         "tatoeba_id": 202398
       }
-    ]
+    ],
+    "reversePrompt": "table (noun)"
   },
   {
     "id": "dc0ae29019",
@@ -11388,7 +12291,8 @@
         "en": "I paid 40,000 yen for this tape recorder.",
         "tatoeba_id": 223521
       }
-    ]
+    ],
+    "reversePrompt": "tape recorder"
   },
   {
     "id": "375cfbefdd",
@@ -11420,7 +12324,11 @@
         "en": "It being rainy, I could not go out.",
         "tatoeba_id": 189654
       }
-    ]
+    ],
+    "synonyms": [
+      "go out"
+    ],
+    "reversePrompt": "to go out"
   },
   {
     "id": "218ea67735",
@@ -11448,7 +12356,8 @@
         "en": "Fred wrote his mother a long letter.",
         "tatoeba_id": 196892
       }
-    ]
+    ],
+    "reversePrompt": "letter (noun)"
   },
   {
     "id": "69d0d632fa",
@@ -11477,7 +12386,11 @@
         "en": "May I use your toilet?",
         "tatoeba_id": 201738
       }
-    ]
+    ],
+    "synonyms": [
+      "be able to"
+    ],
+    "reversePrompt": "to be able to"
   },
   {
     "id": "151fd72164",
@@ -11505,7 +12418,8 @@
         "en": "Where is the way out?",
         "tatoeba_id": 147749
       }
-    ]
+    ],
+    "reversePrompt": "exit"
   },
   {
     "id": "90e9410bff",
@@ -11533,7 +12447,8 @@
         "en": "I just got by on the test.",
         "tatoeba_id": 202236
       }
-    ]
+    ],
+    "reversePrompt": "test (transitive)"
   },
   {
     "id": "d33540fe8e",
@@ -11561,7 +12476,8 @@
         "en": "What language is spoken in America?",
         "tatoeba_id": 187507
       }
-    ]
+    ],
+    "reversePrompt": "with that..."
   },
   {
     "id": "0144505953",
@@ -11589,7 +12505,8 @@
         "en": "There is a bookstore in front of the department store.",
         "tatoeba_id": 212947
       }
-    ]
+    ],
+    "reversePrompt": "department store"
   },
   {
     "id": "3f71089c32",
@@ -11616,7 +12533,8 @@
         "en": "Any bed is better than no bed.",
         "tatoeba_id": 199480
       }
-    ]
+    ],
+    "reversePrompt": "but"
   },
   {
     "id": "5ef4f7dde9",
@@ -11646,7 +12564,12 @@
         "en": "My electric razor is on fire.",
         "tatoeba_id": 124855
       }
-    ]
+    ],
+    "synonyms": [
+      "appear",
+      "leave"
+    ],
+    "reversePrompt": "to appear (intransitive; to leave)"
   },
   {
     "id": "c7e14d8454",
@@ -11674,7 +12597,8 @@
         "en": "TV is not watched here.",
         "tatoeba_id": 201993
       }
-    ]
+    ],
+    "reversePrompt": "television"
   },
   {
     "id": "679e34031e",
@@ -11701,7 +12625,8 @@
         "en": "I think it's going to be a nice day.",
         "tatoeba_id": 190284
       }
-    ]
+    ],
+    "reversePrompt": "weather (noun)"
   },
   {
     "id": "a7c36fdb70",
@@ -11730,7 +12655,8 @@
         "en": "Would you be so kind as to turn the light on?",
         "tatoeba_id": 124844
       }
-    ]
+    ],
+    "reversePrompt": "electricity"
   },
   {
     "id": "62b5c13164",
@@ -11758,7 +12684,8 @@
         "en": "I had my pocket picked in the train.",
         "tatoeba_id": 124816
       }
-    ]
+    ],
+    "reversePrompt": "electric train"
   },
   {
     "id": "3c039918ba",
@@ -11789,7 +12716,8 @@
         "en": "Thank you very much for your time on the phone.",
         "tatoeba_id": 124718
       }
-    ]
+    ],
+    "reversePrompt": "telephone"
   },
   {
     "id": "6f4691297f",
@@ -11817,7 +12745,8 @@
         "en": "He found the door locked.",
         "tatoeba_id": 175163
       }
-    ]
+    ],
+    "reversePrompt": "Japanese style door"
   },
   {
     "id": "677d3c5fac",
@@ -11844,7 +12773,8 @@
         "en": "Will you open the door?",
         "tatoeba_id": 201824
       }
-    ]
+    ],
+    "reversePrompt": "Western style door"
   },
   {
     "id": "e1e7c2d290",
@@ -11871,7 +12801,8 @@
         "en": "Where's the restroom?",
         "tatoeba_id": 201725
       }
-    ]
+    ],
+    "reversePrompt": "toilet (noun)"
   },
   {
     "id": "d0fb41651f",
@@ -11886,7 +12817,15 @@
     "pos": [
       "adv"
     ],
-    "jmdict_id": 1008910
+    "jmdict_id": 1008910,
+    "examples": [
+      {
+        "ja": "彼女がこんなに遅れるなんておかしいよ。どうして連絡が来ないの？",
+        "furigana": "彼女がこんなに遅れるなんておかしいよ。どうして連絡が来ないの？",
+        "en": "It's strange for her to be this late. Why hasn't she contacted us?"
+      }
+    ],
+    "reversePrompt": "how (in what way)"
   },
   {
     "id": "a891b73f8b",
@@ -11917,7 +12856,8 @@
         "en": "What do you learn Spanish for?",
         "tatoeba_id": 201551
       }
-    ]
+    ],
+    "reversePrompt": "for what reason"
   },
   {
     "id": "a71cbc3ce4",
@@ -11945,7 +12885,8 @@
         "en": "Please make yourself at home.",
         "tatoeba_id": 201333
       }
-    ]
+    ],
+    "reversePrompt": "please"
   },
   {
     "id": "93b9cec3d4",
@@ -11975,7 +12916,8 @@
         "en": "Give my best regards to all your family.",
         "tatoeba_id": 217197
       }
-    ]
+    ],
+    "reversePrompt": "pleased to meet you"
   },
   {
     "id": "03d03cf25d",
@@ -12003,7 +12945,8 @@
         "en": "Man is above all things the talking animal.",
         "tatoeba_id": 144525
       }
-    ]
+    ],
+    "reversePrompt": "animal (noun)"
   },
   {
     "id": "d2cb14f88a",
@@ -12031,7 +12974,8 @@
         "en": "Thank you very much, doctor.",
         "tatoeba_id": 141797
       }
-    ]
+    ],
+    "reversePrompt": "thanks"
   },
   {
     "id": "f840779b9e",
@@ -12059,7 +13003,8 @@
         "en": "Sydney is far from here.",
         "tatoeba_id": 224795
       }
-    ]
+    ],
+    "reversePrompt": "far (い-adjective)"
   },
   {
     "id": "e8579084ba",
@@ -12086,7 +13031,11 @@
         "en": "That is to say, on May 10th.",
         "tatoeba_id": 202538
       }
-    ]
+    ],
+    "synonyms": [
+      "tenth day"
+    ],
+    "reversePrompt": "ten days"
   },
   {
     "id": "978a2cefa5",
@@ -12115,7 +13064,8 @@
         "en": "Great! Let's get together sometime.",
         "tatoeba_id": 214732
       }
-    ]
+    ],
+    "reversePrompt": "sometimes"
   },
   {
     "id": "e3ad76810f",
@@ -12144,7 +13094,8 @@
         "en": "This watch costs ten dollars at the most.",
         "tatoeba_id": 221611
       }
-    ]
+    ],
+    "reversePrompt": "watch (noun; clock)"
   },
   {
     "id": "ad884a3b70",
@@ -12175,7 +13126,8 @@
         "en": "Where are you going to go on your vacation?",
         "tatoeba_id": 182700
       }
-    ]
+    ],
+    "reversePrompt": "where"
   },
   {
     "id": "ca332ac7b4",
@@ -12205,7 +13157,8 @@
         "en": "What kind of places would you like to see?",
         "tatoeba_id": 201701
       }
-    ]
+    ],
+    "reversePrompt": "place (noun)"
   },
   {
     "id": "358fc382cb",
@@ -12232,7 +13185,8 @@
         "en": "May the new year bring you happiness!",
         "tatoeba_id": 171289
       }
-    ]
+    ],
+    "reversePrompt": "year (noun)"
   },
   {
     "id": "de5a452667",
@@ -12260,7 +13214,8 @@
         "en": "There are a lot of books in the library.",
         "tatoeba_id": 143878
       }
-    ]
+    ],
+    "reversePrompt": "library"
   },
   {
     "id": "5480c153dc",
@@ -12291,7 +13246,8 @@
         "en": "Which book is yours?",
         "tatoeba_id": 200726
       }
-    ]
+    ],
+    "reversePrompt": "which of two"
   },
   {
     "id": "e8a4843059",
@@ -12318,7 +13274,8 @@
         "en": "Both Tom and Mary are to blame.",
         "tatoeba_id": 10472406
       }
-    ]
+    ],
+    "reversePrompt": "which"
   },
   {
     "id": "a3679ee665",
@@ -12349,7 +13306,8 @@
         "en": "They are very big apples.",
         "tatoeba_id": 204722
       }
-    ]
+    ],
+    "reversePrompt": "very"
   },
   {
     "id": "10fb2e55c0",
@@ -12377,7 +13335,8 @@
         "en": "Who is the man that you were talking with?",
         "tatoeba_id": 233903
       }
-    ]
+    ],
+    "reversePrompt": "who"
   },
   {
     "id": "c597c353cb",
@@ -12405,7 +13364,8 @@
         "en": "Sure. It's next to the Plaza Department Store.",
         "tatoeba_id": 229394
       }
-    ]
+    ],
+    "reversePrompt": "next door to"
   },
   {
     "id": "cd4b8c6381",
@@ -12436,7 +13396,8 @@
         "en": "Which CD do you want to listen to?",
         "tatoeba_id": 232473
       }
-    ]
+    ],
+    "reversePrompt": "which"
   },
   {
     "id": "397b682fa7",
@@ -12466,7 +13427,12 @@
         "en": "He frequently jumps from one topic to another while he is talking.",
         "tatoeba_id": 115795
       }
-    ]
+    ],
+    "synonyms": [
+      "fly",
+      "hop"
+    ],
+    "reversePrompt": "to fly (intransitive; to hop)"
   },
   {
     "id": "9d1aa046d6",
@@ -12495,7 +13461,11 @@
         "en": "How long do we stop here?",
         "tatoeba_id": 224650
       }
-    ]
+    ],
+    "synonyms": [
+      "come to a halt"
+    ],
+    "reversePrompt": "to come to a halt"
   },
   {
     "id": "72c525f37a",
@@ -12523,7 +13493,15 @@
         "en": "I am disappointed that my friend is not here.",
         "tatoeba_id": 79333
       }
-    ]
+    ],
+    "synonyms": [
+      "companion",
+      "buddy",
+      "pal",
+      "mate",
+      "associate"
+    ],
+    "reversePrompt": "friend (noun)"
   },
   {
     "id": "86e7fb81c6",
@@ -12552,7 +13530,8 @@
         "en": "Christmas fell on Saturday that year.",
         "tatoeba_id": 207297
       }
-    ]
+    ],
+    "reversePrompt": "Saturday (noun)"
   },
   {
     "id": "7e4fccba7f",
@@ -12580,7 +13559,8 @@
         "en": "Look at the bird singing in the tree.",
         "tatoeba_id": 80121
       }
-    ]
+    ],
+    "reversePrompt": "bird"
   },
   {
     "id": "3669c65744",
@@ -12608,7 +13588,8 @@
         "en": "This chicken is fried well.",
         "tatoeba_id": 222186
       }
-    ]
+    ],
+    "reversePrompt": "chicken meat"
   },
   {
     "id": "4cc27797ba",
@@ -12637,7 +13618,13 @@
         "en": "I did not take many photos.",
         "tatoeba_id": 156161
       }
-    ]
+    ],
+    "synonyms": [
+      "take a picture or make a video",
+      "take a photo or record a film"
+    ],
+    "modernMeaning": "take a picture or make a video",
+    "reversePrompt": "to photograph / film (camera)"
   },
   {
     "id": "1313ed47fb",
@@ -12666,7 +13653,11 @@
         "en": "You should drink a lot of liquid.",
         "tatoeba_id": 143632
       }
-    ]
+    ],
+    "synonyms": [
+      "take something"
+    ],
+    "reversePrompt": "to take (with hands / hold)"
   },
   {
     "id": "b21477c7db",
@@ -12680,7 +13671,18 @@
     "pos": [
       "pn"
     ],
-    "jmdict_id": 1009290
+    "jmdict_id": 1009290,
+    "examples": [
+      {
+        "ja": "彼が言った言葉は、どれも恐ろしいことばかりだった。",
+        "furigana": "彼が言った言葉は、どれも恐ろしいことばかりだった。",
+        "en": "Everything he said was nothing but frightening."
+      }
+    ],
+    "synonyms": [
+      "which"
+    ],
+    "reversePrompt": "which (of three or more)"
   },
   {
     "id": "3ae88c29c4",
@@ -12707,7 +13709,8 @@
         "en": "I'm sorry, I dropped my knife.",
         "tatoeba_id": 214129
       }
-    ]
+    ],
+    "reversePrompt": "knife (noun)"
   },
   {
     "id": "5d32281da9",
@@ -12735,7 +13738,8 @@
         "en": "There are few apples in the basket.",
         "tatoeba_id": 226423
       }
-    ]
+    ],
+    "reversePrompt": "middle (noun)"
   },
   {
     "id": "fcea29f192",
@@ -12763,7 +13767,8 @@
         "en": "Are you going to stay long?",
         "tatoeba_id": 125914
       }
-    ]
+    ],
+    "reversePrompt": "long (い-adjective)"
   },
   {
     "id": "07a4101167",
@@ -12795,7 +13800,18 @@
         "en": "That pretty bird did nothing but sing day after day.",
         "tatoeba_id": 231343
       }
-    ]
+    ],
+    "synonyms": [
+      "to make an animal sound",
+      "make a sound (of an animal)",
+      "make a sound",
+      "cry",
+      "chirp",
+      "sing (of birds)",
+      "sing"
+    ],
+    "modernMeaning": "to make an animal sound",
+    "reversePrompt": "to make an animal sound"
   },
   {
     "id": "04015c3825",
@@ -12824,7 +13840,11 @@
         "en": "I have lost my pen.",
         "tatoeba_id": 158950
       }
-    ]
+    ],
+    "synonyms": [
+      "lose something"
+    ],
+    "reversePrompt": "to lose something"
   },
   {
     "id": "ef9536b1ee",
@@ -12854,7 +13874,8 @@
         "en": "Why are you so happy?",
         "tatoeba_id": 199245
       }
-    ]
+    ],
+    "reversePrompt": "why"
   },
   {
     "id": "641ddbf693",
@@ -12883,7 +13904,8 @@
         "en": "Summer seems to have come at last.",
         "tatoeba_id": 201234
       }
-    ]
+    ],
+    "reversePrompt": "summer"
   },
   {
     "id": "e09167a3d4",
@@ -12910,7 +13932,8 @@
         "en": "I like summer holidays better than school.",
         "tatoeba_id": 184362
       }
-    ]
+    ],
+    "reversePrompt": "summer holiday"
   },
   {
     "id": "cf58476318",
@@ -12941,7 +13964,8 @@
         "en": "Going out in this rain is out of the question.",
         "tatoeba_id": 222937
       }
-    ]
+    ],
+    "reversePrompt": "et cetera"
   },
   {
     "id": "e65bf7ad23",
@@ -12969,7 +13993,8 @@
         "en": "There are seven continents on the earth.",
         "tatoeba_id": 126933
       }
-    ]
+    ],
+    "reversePrompt": "seven"
   },
   {
     "id": "75ed3c3b2b",
@@ -12997,7 +14022,11 @@
         "en": "Now we have a seven-day Golden Week holiday.",
         "tatoeba_id": 172942
       }
-    ]
+    ],
+    "synonyms": [
+      "seventh day"
+    ],
+    "reversePrompt": "seven days"
   },
   {
     "id": "a812b1ac7f",
@@ -13025,7 +14054,8 @@
         "en": "Write down your name here.",
         "tatoeba_id": 224507
       }
-    ]
+    ],
+    "reversePrompt": "name (noun)"
   },
   {
     "id": "a95b0a87ad",
@@ -13054,7 +14084,14 @@
         "en": "I am learning to play the guitar now.",
         "tatoeba_id": 172864
       }
-    ]
+    ],
+    "synonyms": [
+      "learn",
+      "study",
+      "acquire knowledge",
+      "master"
+    ],
+    "reversePrompt": "to learn (transitive)"
   },
   {
     "id": "1227b20370",
@@ -13084,7 +14121,12 @@
         "en": "The girls were sitting side by side.",
         "tatoeba_id": 147326
       }
-    ]
+    ],
+    "synonyms": [
+      "line up",
+      "stand in a line"
+    ],
+    "reversePrompt": "to line up (intransitive; to stand in a line)"
   },
   {
     "id": "1635de1a94",
@@ -13114,7 +14156,12 @@
         "en": "Supper was laid out on the table.",
         "tatoeba_id": 79117
       }
-    ]
+    ],
+    "synonyms": [
+      "line up",
+      "set up"
+    ],
+    "reversePrompt": "to line up (transitive; to set up)"
   },
   {
     "id": "e05de4981d",
@@ -13145,7 +14192,11 @@
         "en": "The days are getting longer and longer.",
         "tatoeba_id": 122958
       }
-    ]
+    ],
+    "synonyms": [
+      "become"
+    ],
+    "reversePrompt": "to become (intransitive)"
   },
   {
     "id": "558866ef86",
@@ -13175,7 +14226,8 @@
         "en": "What do you call \"yuri\" in English?",
         "tatoeba_id": 236417
       }
-    ]
+    ],
+    "reversePrompt": "what"
   },
   {
     "id": "34108268e1",
@@ -13201,7 +14253,8 @@
         "en": "There are a few disadvantages to it.",
         "tatoeba_id": 123182
       }
-    ]
+    ],
+    "reversePrompt": "two"
   },
   {
     "id": "c17f97fafc",
@@ -13230,7 +14283,8 @@
         "en": "I like busy places.",
         "tatoeba_id": 198795
       }
-    ]
+    ],
+    "reversePrompt": "bustling"
   },
   {
     "id": "efac1fc502",
@@ -13258,7 +14312,8 @@
         "en": "I can't eat meat.",
         "tatoeba_id": 226787
       }
-    ]
+    ],
+    "reversePrompt": "meat"
   },
   {
     "id": "436f1c3c65",
@@ -13286,7 +14341,8 @@
         "en": "The station is to the west of the hotel.",
         "tatoeba_id": 188893
       }
-    ]
+    ],
+    "reversePrompt": "west (noun)"
   },
   {
     "id": "d8c3a3f0d0",
@@ -13315,7 +14371,8 @@
         "en": "I often play tennis on Sunday.",
         "tatoeba_id": 122163
       }
-    ]
+    ],
+    "reversePrompt": "Sunday (noun)"
   },
   {
     "id": "2e6c7d2d9d",
@@ -13343,7 +14400,8 @@
         "en": "Please put your baggage on this scale.",
         "tatoeba_id": 186542
       }
-    ]
+    ],
+    "reversePrompt": "luggage"
   },
   {
     "id": "b824bec2c5",
@@ -13370,7 +14428,8 @@
         "en": "How do you like that TV news program?",
         "tatoeba_id": 231300
       }
-    ]
+    ],
+    "reversePrompt": "news (noun)"
   },
   {
     "id": "9ef6c9d703",
@@ -13398,7 +14457,8 @@
         "en": "A rabbit is running in the garden.",
         "tatoeba_id": 228283
       }
-    ]
+    ],
+    "reversePrompt": "garden (noun)"
   },
   {
     "id": "3af80b5b2a",
@@ -13427,7 +14487,11 @@
         "en": "Why not take your coat off?",
         "tatoeba_id": 224957
       }
-    ]
+    ],
+    "synonyms": [
+      "take off clothes"
+    ],
+    "reversePrompt": "to take off clothes"
   },
   {
     "id": "2f01adebd7",
@@ -13453,7 +14517,8 @@
         "en": "The bath was not hot enough and I was unable to enjoy it.",
         "tatoeba_id": 196881
       }
-    ]
+    ],
+    "reversePrompt": "luke warm"
   },
   {
     "id": "18046e46a1",
@@ -13480,7 +14545,8 @@
         "en": "Your tie has come undone.",
         "tatoeba_id": 178510
       }
-    ]
+    ],
+    "reversePrompt": "tie (noun; necktie)"
   },
   {
     "id": "cbbfc8cad6",
@@ -13508,7 +14574,8 @@
         "en": "The cat is sleeping on the sofa.",
         "tatoeba_id": 122010
       }
-    ]
+    ],
+    "reversePrompt": "cat"
   },
   {
     "id": "0c6e923ef9",
@@ -13538,7 +14605,16 @@
         "en": "What time do you usually turn in?",
         "tatoeba_id": 232828
       }
-    ]
+    ],
+    "synonyms": [
+      "go to bed",
+      "sleep",
+      "rest",
+      "slumber",
+      "nap",
+      "fall asleep"
+    ],
+    "reversePrompt": "to go to bed"
   },
   {
     "id": "278c1e0e04",
@@ -13567,7 +14643,8 @@
         "en": "Please show me your notebook.",
         "tatoeba_id": 233500
       }
-    ]
+    ],
+    "reversePrompt": "notebook (noun; exercise book)"
   },
   {
     "id": "7817fc9d64",
@@ -13596,7 +14673,11 @@
         "en": "Tom tried to climb the tall tree.",
         "tatoeba_id": 200059
       }
-    ]
+    ],
+    "synonyms": [
+      "climb"
+    ],
+    "reversePrompt": "to climb (a mountain or ladder)"
   },
   {
     "id": "5e8fc8669c",
@@ -13623,7 +14704,11 @@
         "en": "Give me something nice to drink.",
         "tatoeba_id": 199117
       }
-    ]
+    ],
+    "synonyms": [
+      "drink"
+    ],
+    "reversePrompt": "a drink (noun)"
   },
   {
     "id": "e0bcec9bd9",
@@ -13652,7 +14737,14 @@
         "en": "I am just dying for a Coke right now.",
         "tatoeba_id": 172829
       }
-    ]
+    ],
+    "synonyms": [
+      "drink",
+      "beverage",
+      "swallow",
+      "sip"
+    ],
+    "reversePrompt": "to drink (transitive)"
   },
   {
     "id": "822c5e11a6",
@@ -13682,7 +14774,12 @@
         "en": "I asked if you wanted a ride.",
         "tatoeba_id": 149076
       }
-    ]
+    ],
+    "synonyms": [
+      "get on",
+      "ride"
+    ],
+    "reversePrompt": "to get on"
   },
   {
     "id": "390ac6443d",
@@ -13710,7 +14807,8 @@
         "en": "Bite together, please.",
         "tatoeba_id": 150960
       }
-    ]
+    ],
+    "reversePrompt": "tooth"
   },
   {
     "id": "28111455cd",
@@ -13736,7 +14834,8 @@
         "en": "When shall we have the party?",
         "tatoeba_id": 198453
       }
-    ]
+    ],
+    "reversePrompt": "party (noun)"
   },
   {
     "id": "542f39c93d",
@@ -13763,7 +14862,8 @@
         "en": "No, I didn't go out.",
         "tatoeba_id": 198381
       }
-    ]
+    ],
+    "reversePrompt": "yes"
   },
   {
     "id": "5cc1dad1e8",
@@ -13791,7 +14891,8 @@
         "en": "The can will do for an ashtray.",
         "tatoeba_id": 211587
       }
-    ]
+    ],
+    "reversePrompt": "ashtray"
   },
   {
     "id": "c428d02d43",
@@ -13821,7 +14922,15 @@
         "en": "The principal came in after the teacher.",
         "tatoeba_id": 173570
       }
-    ]
+    ],
+    "synonyms": [
+      "enter",
+      "go in",
+      "come in",
+      "step into",
+      "contain"
+    ],
+    "reversePrompt": "to enter"
   },
   {
     "id": "645e1e3b4d",
@@ -13849,7 +14958,8 @@
         "en": "Send me a postcard.",
         "tatoeba_id": 78830
       }
-    ]
+    ],
+    "reversePrompt": "postcard"
   },
   {
     "id": "4729cc56f4",
@@ -13881,7 +14991,12 @@
         "en": "Have you lost your marbles, wearing those bell-bottoms?",
         "tatoeba_id": 201604
       }
-    ]
+    ],
+    "synonyms": [
+      "wear",
+      "put on trousers"
+    ],
+    "reversePrompt": "to wear (transitive; to put on trousers)"
   },
   {
     "id": "658b912df8",
@@ -13909,7 +15024,8 @@
         "en": "There was nothing in the box.",
         "tatoeba_id": 207226
       }
-    ]
+    ],
+    "reversePrompt": "box"
   },
   {
     "id": "7ce7f7d305",
@@ -13940,7 +15056,8 @@
         "en": "Lucy cannot use chopsticks.",
         "tatoeba_id": 192400
       }
-    ]
+    ],
+    "reversePrompt": "chopsticks"
   },
   {
     "id": "8f663254b0",
@@ -13968,7 +15085,8 @@
         "en": "The bridge has a span of 100 meters.",
         "tatoeba_id": 211383
       }
-    ]
+    ],
+    "reversePrompt": "bridge (noun)"
   },
   {
     "id": "8fea1e3f3c",
@@ -13997,7 +15115,14 @@
         "en": "Does school start at eight-thirty?",
         "tatoeba_id": 184419
       }
-    ]
+    ],
+    "synonyms": [
+      "begin",
+      "start",
+      "commence",
+      "open"
+    ],
+    "reversePrompt": "to begin (intransitive)"
   },
   {
     "id": "e5b36d7b24",
@@ -14026,7 +15151,8 @@
         "en": "Well begun, well finished.",
         "tatoeba_id": 147521
       }
-    ]
+    ],
+    "reversePrompt": "beginning (noun)"
   },
   {
     "id": "3f18999e09",
@@ -14055,7 +15181,8 @@
         "en": "Everything is so new to me!",
         "tatoeba_id": 147558
       }
-    ]
+    ],
+    "reversePrompt": "for the first time"
   },
   {
     "id": "a2c1e54c17",
@@ -14086,7 +15213,12 @@
         "en": "How do you do, Mrs. Jones?",
         "tatoeba_id": 198254
       }
-    ]
+    ],
+    "modernMeaning": "how are you?",
+    "synonyms": [
+      "how are you?"
+    ],
+    "reversePrompt": "how are you?"
   },
   {
     "id": "244e138920",
@@ -14115,7 +15247,14 @@
         "en": "The school bus could not run.",
         "tatoeba_id": 214986
       }
-    ]
+    ],
+    "synonyms": [
+      "run",
+      "jog",
+      "sprint",
+      "dash"
+    ],
+    "reversePrompt": "to run (intransitive)"
   },
   {
     "id": "bd7df6c7a2",
@@ -14136,7 +15275,8 @@
         "en": "School busing and taking a proactive stance against discrimination were hotly debated topics.",
         "tatoeba_id": 77225
       }
-    ]
+    ],
+    "reversePrompt": "bus"
   },
   {
     "id": "4385616659",
@@ -14163,7 +15303,8 @@
         "en": "May I have this bread and butter?",
         "tatoeba_id": 223336
       }
-    ]
+    ],
+    "reversePrompt": "butter"
   },
   {
     "id": "c65a346458",
@@ -14193,7 +15334,8 @@
         "en": "I have turned 20.",
         "tatoeba_id": 161998
       }
-    ]
+    ],
+    "reversePrompt": "20 years old"
   },
   {
     "id": "9ea671262d",
@@ -14222,7 +15364,11 @@
         "en": "I wonder if the teacher works here.",
         "tatoeba_id": 141700
       }
-    ]
+    ],
+    "synonyms": [
+      "work"
+    ],
+    "reversePrompt": "to work (intransitive)"
   },
   {
     "id": "6eeff514e0",
@@ -14248,7 +15394,8 @@
         "en": "It happened between eight and ten.",
         "tatoeba_id": 204945
       }
-    ]
+    ],
+    "reversePrompt": "eight"
   },
   {
     "id": "153de06669",
@@ -14276,7 +15423,8 @@
         "en": "The graduation ceremony will take place on March 20th.",
         "tatoeba_id": 139663
       }
-    ]
+    ],
+    "reversePrompt": "twenty days"
   },
   {
     "id": "6485c3c2a7",
@@ -14304,7 +15452,8 @@
         "en": "How beautiful this flower is!",
         "tatoeba_id": 222739
       }
-    ]
+    ],
+    "reversePrompt": "flower"
   },
   {
     "id": "8b5843f7fb",
@@ -14332,7 +15481,8 @@
         "en": "I'm afraid I have a polyp in my nose.",
         "tatoeba_id": 85515
       }
-    ]
+    ],
+    "reversePrompt": "nose"
   },
   {
     "id": "1ed0362cc3",
@@ -14361,7 +15511,8 @@
         "en": "If you want to speak to me, please call me up.",
         "tatoeba_id": 77204
       }
-    ]
+    ],
+    "reversePrompt": "talk (noun; story)"
   },
   {
     "id": "9d5bde24ec",
@@ -14390,7 +15541,15 @@
         "en": "John talked with his customer on the phone.",
         "tatoeba_id": 215417
       }
-    ]
+    ],
+    "synonyms": [
+      "speak",
+      "talk",
+      "say",
+      "converse",
+      "tell"
+    ],
+    "reversePrompt": "to speak (transitive)"
   },
   {
     "id": "4db42e0181",
@@ -14418,7 +15577,8 @@
         "en": "Spring has come early this year.",
         "tatoeba_id": 171315
       }
-    ]
+    ],
+    "reversePrompt": "early (in time or schedule)"
   },
   {
     "id": "406d15f6e9",
@@ -14446,7 +15606,15 @@
         "en": "Time goes by very quickly, doesn't it?",
         "tatoeba_id": 150673
       }
-    ]
+    ],
+    "synonyms": [
+      "fast",
+      "rapid",
+      "swift",
+      "speedy",
+      "brisk"
+    ],
+    "reversePrompt": "fast / swift (in speed or motion)"
   },
   {
     "id": "f16244c585",
@@ -14475,7 +15643,8 @@
         "en": "Every spring the river floods here.",
         "tatoeba_id": 147635
       }
-    ]
+    ],
+    "reversePrompt": "spring (noun)"
   },
   {
     "id": "f47c4aee42",
@@ -14503,7 +15672,11 @@
         "en": "Your name is taped on the case.",
         "tatoeba_id": 233000
       }
-    ]
+    ],
+    "synonyms": [
+      "stick"
+    ],
+    "reversePrompt": "to stick (transitive)"
   },
   {
     "id": "9edf8548bb",
@@ -14532,7 +15705,8 @@
         "en": "I don't suppose it's going to be sunny.",
         "tatoeba_id": 143007
       }
-    ]
+    ],
+    "reversePrompt": "clear weather"
   },
   {
     "id": "3be88666ba",
@@ -14561,7 +15735,11 @@
         "en": "It's going to clear up soon.",
         "tatoeba_id": 183770
       }
-    ]
+    ],
+    "synonyms": [
+      "be sunny"
+    ],
+    "reversePrompt": "to be sunny"
   },
   {
     "id": "9cd7c780c3",
@@ -14590,7 +15768,8 @@
         "en": "It is no more than half a mile to the sea.",
         "tatoeba_id": 185085
       }
-    ]
+    ],
+    "reversePrompt": "half (noun)"
   },
   {
     "id": "532c73de5d",
@@ -14619,7 +15798,8 @@
         "en": "There was a moon that night.",
         "tatoeba_id": 207157
       }
-    ]
+    ],
+    "reversePrompt": "evening (noun)"
   },
   {
     "id": "098e9e7e67",
@@ -14633,7 +15813,15 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1103090
+    "jmdict_id": 1103090,
+    "examples": [
+      {
+        "ja": "フライパンでハンバーグを裏返して焼いてください。",
+        "furigana": "フライパンでハンバーグを裏返して焼いてください。",
+        "en": "Please flip the hamburger in the frying pan and cook it."
+      }
+    ],
+    "reversePrompt": "bread"
   },
   {
     "id": "ee3206bb3f",
@@ -14660,7 +15848,8 @@
         "en": "I ironed my handkerchiefs.",
         "tatoeba_id": 161866
       }
-    ]
+    ],
+    "reversePrompt": "handkerchief"
   },
   {
     "id": "67775e3b25",
@@ -14688,7 +15877,8 @@
         "en": "Your name and flight number, please?",
         "tatoeba_id": 226580
       }
-    ]
+    ],
+    "reversePrompt": "number (noun)"
   },
   {
     "id": "246b5ae84d",
@@ -14715,7 +15905,8 @@
         "en": "Thank you for the wonderful dinner.",
         "tatoeba_id": 227833
       }
-    ]
+    ],
+    "reversePrompt": "evening meal"
   },
   {
     "id": "a1cda8cb11",
@@ -14744,7 +15935,8 @@
         "en": "Cut it in half.",
         "tatoeba_id": 204534
       }
-    ]
+    ],
+    "reversePrompt": "half minute"
   },
   {
     "id": "0a38c65004",
@@ -14772,7 +15964,8 @@
         "en": "The eastern sky was getting light.",
         "tatoeba_id": 124292
       }
-    ]
+    ],
+    "reversePrompt": "east"
   },
   {
     "id": "5b84039234",
@@ -14801,7 +15994,11 @@
         "en": "Obviously a normal woman would lose interest if she saw a book like that!",
         "tatoeba_id": 76875
       }
-    ]
+    ],
+    "synonyms": [
+      "pull"
+    ],
+    "reversePrompt": "to pull (transitive)"
   },
   {
     "id": "23911a0718",
@@ -14829,7 +16026,13 @@
         "en": "Ann cannot be playing the piano.",
         "tatoeba_id": 229616
       }
-    ]
+    ],
+    "synonyms": [
+      "play an instrument that has strings",
+      "play an instrument with strings"
+    ],
+    "modernMeaning": "play an instrument that has strings",
+    "reversePrompt": "play an instrument that has strings"
   },
   {
     "id": "e25cf6ed2f",
@@ -14858,7 +16061,8 @@
         "en": "This chair is too low for me.",
         "tatoeba_id": 223992
       }
-    ]
+    ],
+    "reversePrompt": "short (い-adjective; low)"
   },
   {
     "id": "a81612169c",
@@ -14886,7 +16090,8 @@
         "en": "The airplane soon went out of sight.",
         "tatoeba_id": 85661
       }
-    ]
+    ],
+    "reversePrompt": "aeroplane"
   },
   {
     "id": "ec5bd86b72",
@@ -14915,7 +16120,8 @@
         "en": "I spend money as soon as I get it.",
         "tatoeba_id": 122093
       }
-    ]
+    ],
+    "reversePrompt": "left hand side"
   },
   {
     "id": "d91ee7a9ed",
@@ -14943,7 +16149,14 @@
         "en": "You always try to blame somebody else.",
         "tatoeba_id": 226941
       }
-    ]
+    ],
+    "synonyms": [
+      "individual",
+      "human",
+      "someone",
+      "party"
+    ],
+    "reversePrompt": "person (noun)"
   },
   {
     "id": "537f8af3d6",
@@ -14971,7 +16184,8 @@
         "en": "One of my suitcases is missing.",
         "tatoeba_id": 215075
       }
-    ]
+    ],
+    "reversePrompt": "one"
   },
   {
     "id": "3554fb81b8",
@@ -14999,7 +16213,8 @@
         "en": "About how many times a month do you wash your car?",
         "tatoeba_id": 232929
       }
-    ]
+    ],
+    "reversePrompt": "one month"
   },
   {
     "id": "3fb1b70809",
@@ -15027,7 +16242,8 @@
         "en": "I have one brother.",
         "tatoeba_id": 158458
       }
-    ]
+    ],
+    "reversePrompt": "one person"
   },
   {
     "id": "7a9ce8e2df",
@@ -15055,7 +16271,8 @@
         "en": "I'll be free all day tomorrow.",
         "tatoeba_id": 234469
       }
-    ]
+    ],
+    "reversePrompt": "free time"
   },
   {
     "id": "13696bc9b5",
@@ -15081,7 +16298,8 @@
         "en": "Few people live to be 100 years old.",
         "tatoeba_id": 85416
       }
-    ]
+    ],
+    "reversePrompt": "hundred"
   },
   {
     "id": "734d275fd9",
@@ -15109,7 +16327,8 @@
         "en": "It is no less than ten miles to the hospital.",
         "tatoeba_id": 85328
       }
-    ]
+    ],
+    "reversePrompt": "hospital"
   },
   {
     "id": "c551bc3f7c",
@@ -15137,7 +16356,8 @@
         "en": "Mr Brown was sick at the time.",
         "tatoeba_id": 197091
       }
-    ]
+    ],
+    "reversePrompt": "illness (noun)"
   },
   {
     "id": "5d7a8d133b",
@@ -15166,7 +16386,8 @@
         "en": "Ken will be at home until noon.",
         "tatoeba_id": 225117
       }
-    ]
+    ],
+    "reversePrompt": "noon (noun; daytime)"
   },
   {
     "id": "0b492c3209",
@@ -15194,7 +16415,8 @@
         "en": "Don't go out now. We're about to have lunch.",
         "tatoeba_id": 172658
       }
-    ]
+    ],
+    "reversePrompt": "midday meal (noun)"
   },
   {
     "id": "230d5c7343",
@@ -15223,7 +16445,8 @@
         "en": "How big?",
         "tatoeba_id": 200414
       }
-    ]
+    ],
+    "reversePrompt": "spacious (い-adjective; wide)"
   },
   {
     "id": "ef9babb012",
@@ -15250,7 +16473,8 @@
         "en": "My film has run out.",
         "tatoeba_id": 197224
       }
-    ]
+    ],
+    "reversePrompt": "roll of film"
   },
   {
     "id": "d156402900",
@@ -15278,7 +16502,8 @@
         "en": "I need an envelope.",
         "tatoeba_id": 84069
       }
-    ]
+    ],
+    "reversePrompt": "envelope"
   },
   {
     "id": "55c1439239",
@@ -15304,7 +16529,8 @@
         "en": "That pool really looks inviting.",
         "tatoeba_id": 205516
       }
-    ]
+    ],
+    "reversePrompt": "swimming pool"
   },
   {
     "id": "71e2aefb9d",
@@ -15318,7 +16544,15 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1110110
+    "jmdict_id": 1110110,
+    "examples": [
+      {
+        "ja": "フォークが使いにくいと感じたので、形を少し曲げて使いやすくした。",
+        "furigana": "フォークが使いにくいと感じたので、形を少し曲げて使いやすくした。",
+        "en": "I felt the fork was difficult to use, so I bent it slightly to make it easier to use."
+      }
+    ],
+    "reversePrompt": "fork (noun)"
   },
   {
     "id": "15f4136421",
@@ -15347,7 +16581,11 @@
         "en": "Ted likes playing the trumpet.",
         "tatoeba_id": 202226
       }
-    ]
+    ],
+    "synonyms": [
+      "blow"
+    ],
+    "reversePrompt": "to blow (intransitive)"
   },
   {
     "id": "68571540e1",
@@ -15376,7 +16614,8 @@
         "en": "Susan made a dress for Jill.",
         "tatoeba_id": 215109
       }
-    ]
+    ],
+    "reversePrompt": "clothes (noun)"
   },
   {
     "id": "0c1dbd4838",
@@ -15404,7 +16643,8 @@
         "en": "Sally is two years senior to Ken.",
         "tatoeba_id": 216654
       }
-    ]
+    ],
+    "reversePrompt": "two"
   },
   {
     "id": "c518fb9116",
@@ -15432,7 +16672,8 @@
         "en": "This pork is a bit off.",
         "tatoeba_id": 220249
       }
-    ]
+    ],
+    "reversePrompt": "pork"
   },
   {
     "id": "94c2076821",
@@ -15460,7 +16701,8 @@
         "en": "May I talk with you in private about the matter?",
         "tatoeba_id": 123125
       }
-    ]
+    ],
+    "reversePrompt": "two people"
   },
   {
     "id": "750786cc55",
@@ -15488,7 +16730,8 @@
         "en": "The milk will keep for two days.",
         "tatoeba_id": 223124
       }
-    ]
+    ],
+    "reversePrompt": "two days"
   },
   {
     "id": "4162724f9a",
@@ -15515,7 +16758,8 @@
         "en": "My sister is sensitive about her thick legs.",
         "tatoeba_id": 162597
       }
-    ]
+    ],
+    "reversePrompt": "fat (い-adjective)"
   },
   {
     "id": "eb9acca7ba",
@@ -15544,7 +16788,8 @@
         "en": "You can still get asparagus in the winter.",
         "tatoeba_id": 124383
       }
-    ]
+    ],
+    "reversePrompt": "winter"
   },
   {
     "id": "5791e248f1",
@@ -15573,7 +16818,14 @@
         "en": "In June, it rains day after day.",
         "tatoeba_id": 77239
       }
-    ]
+    ],
+    "synonyms": [
+      "to fall, like when it rains or snows",
+      "fall (e.g. rain or snow)",
+      "fall"
+    ],
+    "modernMeaning": "to fall, like when it rains or snows",
+    "reversePrompt": "to fall, like when it rains or snows"
   },
   {
     "id": "aa60dd4a11",
@@ -15601,7 +16853,17 @@
         "en": "What old books these are!",
         "tatoeba_id": 217719
       }
-    ]
+    ],
+    "synonyms": [
+      "this is old and not used for people",
+      "old",
+      "aged",
+      "ancient",
+      "antique",
+      "former"
+    ],
+    "modernMeaning": "this is old and not used for people",
+    "reversePrompt": "this is old and not used for people"
   },
   {
     "id": "34784ed6ca",
@@ -15632,7 +16894,8 @@
         "en": "He ran water into the bathtub.",
         "tatoeba_id": 111040
       }
-    ]
+    ],
+    "reversePrompt": "bath (noun)"
   },
   {
     "id": "79ddbb2b98",
@@ -15660,7 +16923,8 @@
         "en": "Put the following sentences into Japanese.",
         "tatoeba_id": 150227
       }
-    ]
+    ],
+    "reversePrompt": "sentence (noun; text)"
   },
   {
     "id": "f8fc73bd75",
@@ -15688,7 +16952,8 @@
         "en": "You may link to this webpage freely.",
         "tatoeba_id": 76749
       }
-    ]
+    ],
+    "reversePrompt": "page (noun)"
   },
   {
     "id": "619dae70e9",
@@ -15717,7 +16982,8 @@
         "en": "He comes from England, but is very poor at English.",
         "tatoeba_id": 114691
       }
-    ]
+    ],
+    "reversePrompt": "unskillful"
   },
   {
     "id": "91cf4ea2fd",
@@ -15743,7 +17009,8 @@
         "en": "I'd better go to bed now.",
         "tatoeba_id": 194366
       }
-    ]
+    ],
+    "reversePrompt": "bed (noun)"
   },
   {
     "id": "db38ebd955",
@@ -15771,7 +17038,8 @@
         "en": "Tiny pets are in fashion now.",
         "tatoeba_id": 172937
       }
-    ]
+    ],
+    "reversePrompt": "pet"
   },
   {
     "id": "e78074927c",
@@ -15799,7 +17067,13 @@
         "en": "Leave the room as it is.",
         "tatoeba_id": 84128
       }
-    ]
+    ],
+    "synonyms": [
+      "chamber",
+      "space",
+      "quarters"
+    ],
+    "reversePrompt": "room (noun)"
   },
   {
     "id": "71c372d7b2",
@@ -15826,7 +17100,8 @@
         "en": "This neighborhood is very lonely.",
         "tatoeba_id": 223204
       }
-    ]
+    ],
+    "reversePrompt": "area (noun)"
   },
   {
     "id": "dd1183b005",
@@ -15857,7 +17132,8 @@
         "en": "Write with pen and ink.",
         "tatoeba_id": 196625
       }
-    ]
+    ],
+    "reversePrompt": "pen (noun)"
   },
   {
     "id": "65783b95dd",
@@ -15887,7 +17163,14 @@
         "en": "Why do you study every day?",
         "tatoeba_id": 199272
       }
-    ]
+    ],
+    "synonyms": [
+      "study",
+      "learn",
+      "examine",
+      "cram"
+    ],
+    "reversePrompt": "to study (transitive)"
   },
   {
     "id": "84887dde48",
@@ -15915,7 +17198,8 @@
         "en": "That comes in handy.",
         "tatoeba_id": 205969
       }
-    ]
+    ],
+    "reversePrompt": "useful"
   },
   {
     "id": "cfc75623ae",
@@ -15943,7 +17227,8 @@
         "en": "It is too small a hat for you.",
         "tatoeba_id": 206735
       }
-    ]
+    ],
+    "reversePrompt": "hat"
   },
   {
     "id": "785a997045",
@@ -15970,7 +17255,8 @@
         "en": "Will you write with a ballpoint pen?",
         "tatoeba_id": 196458
       }
-    ]
+    ],
+    "reversePrompt": "ball-point pen"
   },
   {
     "id": "f71c69492e",
@@ -16003,7 +17289,11 @@
         "en": "This is taller than any other tree.",
         "tatoeba_id": 218528
       }
-    ]
+    ],
+    "synonyms": [
+      "rest"
+    ],
+    "reversePrompt": "other (noun; the rest)"
   },
   {
     "id": "ab9f2792c4",
@@ -16030,7 +17320,8 @@
         "en": "The coat doesn't have any pockets.",
         "tatoeba_id": 223814
       }
-    ]
+    ],
+    "reversePrompt": "pocket"
   },
   {
     "id": "418493d941",
@@ -16059,7 +17350,8 @@
         "en": "Does anyone want some more pie?",
         "tatoeba_id": 193337
       }
-    ]
+    ],
+    "reversePrompt": "want (い-adjective)"
   },
   {
     "id": "2dbe65ee1d",
@@ -16086,7 +17378,8 @@
         "en": "Is there a mailbox near here?",
         "tatoeba_id": 219866
       }
-    ]
+    ],
+    "reversePrompt": "post (noun)"
   },
   {
     "id": "785adc4f9d",
@@ -16113,7 +17406,8 @@
         "en": "Love me lithe, love me long.",
         "tatoeba_id": 237482
       }
-    ]
+    ],
+    "reversePrompt": "thin (い-adjective)"
   },
   {
     "id": "04ab635f4b",
@@ -16140,7 +17434,8 @@
         "en": "A button has come off the coat.",
         "tatoeba_id": 196251
       }
-    ]
+    ],
+    "reversePrompt": "button"
   },
   {
     "id": "23ec5a0b3d",
@@ -16167,7 +17462,8 @@
         "en": "How much is the fare to the Hilton Hotel?",
         "tatoeba_id": 197388
       }
-    ]
+    ],
+    "reversePrompt": "hotel (noun)"
   },
   {
     "id": "0e8f798dbf",
@@ -16194,7 +17490,14 @@
         "en": "Don't put the books in the shelf upside down.",
         "tatoeba_id": 81634
       }
-    ]
+    ],
+    "synonyms": [
+      "volume",
+      "tome",
+      "publication",
+      "text"
+    ],
+    "reversePrompt": "book (noun)"
   },
   {
     "id": "3839786bac",
@@ -16222,7 +17525,8 @@
         "en": "John built a bookcase.",
         "tatoeba_id": 215222
       }
-    ]
+    ],
+    "reversePrompt": "bookshelves"
   },
   {
     "id": "849baaf2c3",
@@ -16255,7 +17559,8 @@
         "en": "Suppose it were true; what would you do?",
         "tatoeba_id": 193838
       }
-    ]
+    ],
+    "reversePrompt": "truth (な-adjective)"
   },
   {
     "id": "a59ba12bc5",
@@ -16284,7 +17589,8 @@
         "en": "I leave for school at eight every morning.",
         "tatoeba_id": 152747
       }
-    ]
+    ],
+    "reversePrompt": "every morning"
   },
   {
     "id": "771fbe6b4d",
@@ -16314,7 +17620,8 @@
         "en": "I am allowed 1,000 yen a month for books.",
         "tatoeba_id": 152788
       }
-    ]
+    ],
+    "reversePrompt": "every month (noun)"
   },
   {
     "id": "fd1c93832f",
@@ -16343,7 +17650,8 @@
         "en": "My father plays tennis every Sunday.",
         "tatoeba_id": 84360
       }
-    ]
+    ],
+    "reversePrompt": "every week"
   },
   {
     "id": "039a696225",
@@ -16372,7 +17680,8 @@
         "en": "How long do you play tennis every day?",
         "tatoeba_id": 231557
       }
-    ]
+    ],
+    "reversePrompt": "every day (noun)"
   },
   {
     "id": "83700909d4",
@@ -16402,7 +17711,8 @@
         "en": "I go every year.",
         "tatoeba_id": 81243
       }
-    ]
+    ],
+    "reversePrompt": "every year"
   },
   {
     "id": "2584943533",
@@ -16431,7 +17741,8 @@
         "en": "Mike eats out almost every night.",
         "tatoeba_id": 195755
       }
-    ]
+    ],
+    "reversePrompt": "every night"
   },
   {
     "id": "319e218950",
@@ -16452,7 +17763,8 @@
         "en": "Shine your shoes before going out.",
         "tatoeba_id": 184856
       }
-    ]
+    ],
+    "reversePrompt": "before (noun)"
   },
   {
     "id": "ae3e0a705f",
@@ -16483,7 +17795,12 @@
         "en": "Go two blocks along this street and turn left.",
         "tatoeba_id": 220472
       }
-    ]
+    ],
+    "synonyms": [
+      "turn",
+      "bend"
+    ],
+    "reversePrompt": "to turn (intransitive; to bend)"
   },
   {
     "id": "b19034ded1",
@@ -16514,7 +17831,8 @@
         "en": "A good appetite is a good sauce.",
         "tatoeba_id": 197452
       }
-    ]
+    ],
+    "reversePrompt": "unpleasant (い-adjective)"
   },
   {
     "id": "162e00c6ef",
@@ -16546,7 +17864,8 @@
         "en": "He is a doctor and a university professor.",
         "tatoeba_id": 230730
       }
-    ]
+    ],
+    "reversePrompt": "again (and)"
   },
   {
     "id": "6a7163f5f7",
@@ -16577,7 +17896,8 @@
         "en": "You've got plenty of time.",
         "tatoeba_id": 195488
       }
-    ]
+    ],
+    "reversePrompt": "yet (still)"
   },
   {
     "id": "4d76d06d84",
@@ -16606,7 +17926,8 @@
         "en": "Is this the first time that you have come to this town?",
         "tatoeba_id": 220531
       }
-    ]
+    ],
+    "reversePrompt": "town (noun; city)"
   },
   {
     "id": "6a39701228",
@@ -16636,7 +17957,14 @@
         "en": "Do you mind waiting for a minute?",
         "tatoeba_id": 214707
       }
-    ]
+    ],
+    "synonyms": [
+      "wait",
+      "await",
+      "hold on",
+      "stand by"
+    ],
+    "reversePrompt": "to wait"
   },
   {
     "id": "ede9ab2f7f",
@@ -16669,7 +17997,8 @@
         "en": "My side mirror is out of alignment.",
         "tatoeba_id": 216856
       }
-    ]
+    ],
+    "reversePrompt": "straight ahead"
   },
   {
     "id": "27f9d40392",
@@ -16696,7 +18025,8 @@
         "en": "Have you got a match?",
         "tatoeba_id": 195348
       }
-    ]
+    ],
+    "reversePrompt": "match (noun)"
   },
   {
     "id": "7734194821",
@@ -16723,7 +18053,8 @@
         "en": "Clean the window with a damp cloth.",
         "tatoeba_id": 198657
       }
-    ]
+    ],
+    "reversePrompt": "window"
   },
   {
     "id": "ab36109960",
@@ -16752,7 +18083,8 @@
         "en": "We bought a round table.",
         "tatoeba_id": 165954
       }
-    ]
+    ],
+    "reversePrompt": "round (い-adjective; circular)"
   },
   {
     "id": "a0ff0f67c8",
@@ -16778,7 +18110,8 @@
         "en": "Is it about ten million yen?",
         "tatoeba_id": 190376
       }
-    ]
+    ],
+    "reversePrompt": "ten thousand"
   },
   {
     "id": "6318b0423a",
@@ -16806,7 +18139,8 @@
         "en": "It was this fountain pen that I bought in Paris.",
         "tatoeba_id": 167932
       }
-    ]
+    ],
+    "reversePrompt": "fountain pen"
   },
   {
     "id": "7309a238e8",
@@ -16836,7 +18170,12 @@
         "en": "Students should develop their reading skills.",
         "tatoeba_id": 184229
       }
-    ]
+    ],
+    "synonyms": [
+      "brush teeth",
+      "polish"
+    ],
+    "reversePrompt": "to brush teeth"
   },
   {
     "id": "f1046f3190",
@@ -16865,7 +18204,8 @@
         "en": "I spend money as soon as I get it.",
         "tatoeba_id": 122093
       }
-    ]
+    ],
+    "reversePrompt": "right side"
   },
   {
     "id": "8568eded6e",
@@ -16893,7 +18233,8 @@
         "en": "That dog has a short tail.",
         "tatoeba_id": 231055
       }
-    ]
+    ],
+    "reversePrompt": "short (い-adjective)"
   },
   {
     "id": "69a792520f",
@@ -16921,7 +18262,13 @@
         "en": "The bucket is full of water.",
         "tatoeba_id": 198284
       }
-    ]
+    ],
+    "synonyms": [
+      "liquid",
+      "aqua",
+      "h2o"
+    ],
+    "reversePrompt": "water"
   },
   {
     "id": "0c8a588e53",
@@ -16949,7 +18296,8 @@
         "en": "It is the only one there is in the shop.",
         "tatoeba_id": 124997
       }
-    ]
+    ],
+    "reversePrompt": "shop (noun)"
   },
   {
     "id": "db35a99e28",
@@ -16978,7 +18326,11 @@
         "en": "Carl showed me the gold medal.",
         "tatoeba_id": 226458
       }
-    ]
+    ],
+    "synonyms": [
+      "show"
+    ],
+    "reversePrompt": "to show (transitive)"
   },
   {
     "id": "dc29195f18",
@@ -17006,7 +18358,8 @@
         "en": "My father has been doing this job for twenty years.",
         "tatoeba_id": 84728
       }
-    ]
+    ],
+    "reversePrompt": "street (noun)"
   },
   {
     "id": "1713d0bbe8",
@@ -17033,7 +18386,8 @@
         "en": "It took me three days to read this book.",
         "tatoeba_id": 168024
       }
-    ]
+    ],
+    "reversePrompt": "three days"
   },
   {
     "id": "b36b221d33",
@@ -17060,7 +18414,8 @@
         "en": "Waiter, three coffees, please.",
         "tatoeba_id": 196583
       }
-    ]
+    ],
+    "reversePrompt": "three"
   },
   {
     "id": "85e4ba2f28",
@@ -17089,7 +18444,8 @@
         "en": "Please show me the green shirt.",
         "tatoeba_id": 206210
       }
-    ]
+    ],
+    "reversePrompt": "green"
   },
   {
     "id": "d2b9c47656",
@@ -17117,7 +18473,8 @@
         "en": "Everyone, please keep to netiquette.",
         "tatoeba_id": 75145
       }
-    ]
+    ],
+    "reversePrompt": "everyone (noun)"
   },
   {
     "id": "84e465b526",
@@ -17145,7 +18502,8 @@
         "en": "Soon, swallows will come from the south.",
         "tatoeba_id": 195304
       }
-    ]
+    ],
+    "reversePrompt": "south"
   },
   {
     "id": "e8cdf8b85a",
@@ -17173,7 +18531,8 @@
         "en": "My ears are frostbitten.",
         "tatoeba_id": 150168
       }
-    ]
+    ],
+    "reversePrompt": "ear (noun)"
   },
   {
     "id": "85b37b6884",
@@ -17206,7 +18565,15 @@
         "en": "TV is not watched here.",
         "tatoeba_id": 201993
       }
-    ]
+    ],
+    "synonyms": [
+      "see",
+      "look",
+      "watch",
+      "view",
+      "observe"
+    ],
+    "reversePrompt": "to see / look (general visual sight)"
   },
   {
     "id": "2676514561",
@@ -17239,7 +18606,8 @@
         "en": "Everyone turned out for the circus.",
         "tatoeba_id": 216907
       }
-    ]
+    ],
+    "reversePrompt": "everyone (noun)"
   },
   {
     "id": "bf44ddad08",
@@ -17266,7 +18634,8 @@
         "en": "I missed school for six days.",
         "tatoeba_id": 235021
       }
-    ]
+    ],
+    "reversePrompt": "six days"
   },
   {
     "id": "8e862f05f0",
@@ -17294,7 +18663,8 @@
         "en": "Look at the large building over there.",
         "tatoeba_id": 173839
       }
-    ]
+    ],
+    "reversePrompt": "over there (noun)"
   },
   {
     "id": "0a3894175f",
@@ -17322,7 +18692,14 @@
         "en": "To speak French is difficult.",
         "tatoeba_id": 196964
       }
-    ]
+    ],
+    "synonyms": [
+      "hard",
+      "challenging",
+      "tough",
+      "arduous"
+    ],
+    "reversePrompt": "difficult (い-adjective)"
   },
   {
     "id": "7ecc2c4bfc",
@@ -17350,7 +18727,8 @@
         "en": "She divided the cake into six pieces.",
         "tatoeba_id": 92613
       }
-    ]
+    ],
+    "reversePrompt": "six"
   },
   {
     "id": "5028971b39",
@@ -17378,7 +18756,8 @@
         "en": "It's only two miles to the village.",
         "tatoeba_id": 208294
       }
-    ]
+    ],
+    "reversePrompt": "village"
   },
   {
     "id": "ae534d4ca8",
@@ -17406,7 +18785,8 @@
         "en": "We have French third period.",
         "tatoeba_id": 235310
       }
-    ]
+    ],
+    "reversePrompt": "eye"
   },
   {
     "id": "eb5450490b",
@@ -17427,7 +18807,8 @@
         "en": "Form a line, keeping one meter away from the person in front of you.",
         "tatoeba_id": 140982
       }
-    ]
+    ],
+    "reversePrompt": "metre"
   },
   {
     "id": "72eb77e07a",
@@ -17455,7 +18836,8 @@
         "en": "My mother can't read without glasses.",
         "tatoeba_id": 83033
       }
-    ]
+    ],
+    "reversePrompt": "glasses"
   },
   {
     "id": "c5b7ad76fd",
@@ -17482,7 +18864,8 @@
         "en": "It is about time we were leaving.",
         "tatoeba_id": 194403
       }
-    ]
+    ],
+    "reversePrompt": "already"
   },
   {
     "id": "3ae16ad93a",
@@ -17511,7 +18894,8 @@
         "en": "Why don't you give it another try?",
         "tatoeba_id": 194328
       }
-    ]
+    ],
+    "reversePrompt": "again"
   },
   {
     "id": "d10bb92f3e",
@@ -17540,7 +18924,8 @@
         "en": "I would rather you came on Friday than on Thursday.",
         "tatoeba_id": 80049
       }
-    ]
+    ],
+    "reversePrompt": "Thursday (noun)"
   },
   {
     "id": "16fda19d79",
@@ -17569,7 +18954,11 @@
         "en": "This is all the money that I have now.",
         "tatoeba_id": 167740
       }
-    ]
+    ],
+    "synonyms": [
+      "hold"
+    ],
+    "reversePrompt": "to hold (transitive)"
   },
   {
     "id": "a8f5f4c59e",
@@ -17597,7 +18986,8 @@
         "en": "Do you have a larger size?",
         "tatoeba_id": 193236
       }
-    ]
+    ],
+    "reversePrompt": "more"
   },
   {
     "id": "782272bfda",
@@ -17625,7 +19015,8 @@
         "en": "Are all these books yours?",
         "tatoeba_id": 219684
       }
-    ]
+    ],
+    "reversePrompt": "thing (noun)"
   },
   {
     "id": "5b92758003",
@@ -17653,7 +19044,8 @@
         "en": "Knock, and it will be opened to you.",
         "tatoeba_id": 79781
       }
-    ]
+    ],
+    "reversePrompt": "gate"
   },
   {
     "id": "4f0f6b6ae7",
@@ -17681,7 +19073,8 @@
         "en": "I don't want to make an issue of it.",
         "tatoeba_id": 213123
       }
-    ]
+    ],
+    "reversePrompt": "problem (noun)"
   },
   {
     "id": "8d29f60b23",
@@ -17709,7 +19102,8 @@
         "en": "I met him outside the greengrocer's.",
         "tatoeba_id": 154612
       }
-    ]
+    ],
+    "reversePrompt": "greengrocer"
   },
   {
     "id": "936289666e",
@@ -17737,7 +19131,8 @@
         "en": "Eat a lot of vegetables.",
         "tatoeba_id": 79599
       }
-    ]
+    ],
+    "reversePrompt": "vegetable"
   },
   {
     "id": "ead1ae2736",
@@ -17766,7 +19161,13 @@
         "en": "This book is written in easy English.",
         "tatoeba_id": 219533
       }
-    ]
+    ],
+    "synonyms": [
+      "effortless",
+      "straightforward",
+      "uncomplicated"
+    ],
+    "reversePrompt": "easy (い-adjective; simple)"
   },
   {
     "id": "33b86212ca",
@@ -17794,7 +19195,14 @@
         "en": "Do you have less expensive ones?",
         "tatoeba_id": 193312
       }
-    ]
+    ],
+    "synonyms": [
+      "inexpensive",
+      "affordable",
+      "low-cost",
+      "budget"
+    ],
+    "reversePrompt": "cheap (い-adjective)"
   },
   {
     "id": "d4a1d27d3b",
@@ -17823,7 +19231,8 @@
         "en": "I think you should get more rest.",
         "tatoeba_id": 202088
       }
-    ]
+    ],
+    "reversePrompt": "rest (noun; holiday)"
   },
   {
     "id": "3e3efcb45f",
@@ -17852,7 +19261,11 @@
         "en": "He rested for a while.",
         "tatoeba_id": 113559
       }
-    ]
+    ],
+    "synonyms": [
+      "rest"
+    ],
+    "reversePrompt": "to rest (intransitive)"
   },
   {
     "id": "62c4216674",
@@ -17880,7 +19293,8 @@
         "en": "Mother divided the cake into eight pieces.",
         "tatoeba_id": 83078
       }
-    ]
+    ],
+    "reversePrompt": "eight"
   },
   {
     "id": "e8a5cbdf0a",
@@ -17909,7 +19323,8 @@
         "en": "What is the height of this mountain?",
         "tatoeba_id": 221853
       }
-    ]
+    ],
+    "reversePrompt": "mountain"
   },
   {
     "id": "f81d503d6f",
@@ -17939,7 +19354,14 @@
         "en": "I can give you an autograph if you want.",
         "tatoeba_id": 430482
       }
-    ]
+    ],
+    "synonyms": [
+      "do",
+      "perform",
+      "execute",
+      "carry out"
+    ],
+    "reversePrompt": "to do"
   },
   {
     "id": "285b008622",
@@ -17968,7 +19390,8 @@
         "en": "One evening a man came to my house.",
         "tatoeba_id": 229774
       }
-    ]
+    ],
+    "reversePrompt": "evening (noun)"
   },
   {
     "id": "ae2b9f6d7e",
@@ -17994,7 +19417,8 @@
         "en": "The telephone rang while I was having supper.",
         "tatoeba_id": 79058
       }
-    ]
+    ],
+    "reversePrompt": "dinner"
   },
   {
     "id": "8b86921749",
@@ -18022,7 +19446,8 @@
         "en": "Is there a post office around here?",
         "tatoeba_id": 224027
       }
-    ]
+    ],
+    "reversePrompt": "post office"
   },
   {
     "id": "39fff8fc4b",
@@ -18051,7 +19476,8 @@
         "en": "Did you watch TV last night?",
         "tatoeba_id": 169693
       }
-    ]
+    ],
+    "reversePrompt": "last night"
   },
   {
     "id": "50b217ed0b",
@@ -18078,7 +19504,8 @@
         "en": "Mr Thomas is a very able teacher.",
         "tatoeba_id": 201079
       }
-    ]
+    ],
+    "reversePrompt": "famous (な-adjective)"
   },
   {
     "id": "78c044b951",
@@ -18106,7 +19533,8 @@
         "en": "The snow kept us from going out.",
         "tatoeba_id": 142003
       }
-    ]
+    ],
+    "reversePrompt": "snow"
   },
   {
     "id": "d980cb1531",
@@ -18136,7 +19564,8 @@
         "en": "Mary spoke Japanese slowly.",
         "tatoeba_id": 194720
       }
-    ]
+    ],
+    "reversePrompt": "slowly"
   },
   {
     "id": "4f8e83945d",
@@ -18163,7 +19592,8 @@
         "en": "I was born in Tokyo on the eighth of January in 1950.",
         "tatoeba_id": 162088
       }
-    ]
+    ],
+    "reversePrompt": "eight days"
   },
   {
     "id": "1907b6fc38",
@@ -18191,7 +19621,8 @@
         "en": "That's a beautiful dress.",
         "tatoeba_id": 236922
       }
-    ]
+    ],
+    "reversePrompt": "western-style clothes"
   },
   {
     "id": "19db29fbbb",
@@ -18220,7 +19651,8 @@
         "en": "How dare you say that!",
         "tatoeba_id": 192833
       }
-    ]
+    ],
+    "reversePrompt": "often (well)"
   },
   {
     "id": "4cb7c969c4",
@@ -18250,7 +19682,8 @@
         "en": "As the road was wet, the car must have slipped sideways.",
         "tatoeba_id": 123621
       }
-    ]
+    ],
+    "reversePrompt": "beside (noun; side)"
   },
   {
     "id": "222ae96df7",
@@ -18277,7 +19710,8 @@
         "en": "I was born on June 4, 1974.",
         "tatoeba_id": 162081
       }
-    ]
+    ],
+    "reversePrompt": "four days"
   },
   {
     "id": "1000ee441a",
@@ -18305,7 +19739,8 @@
         "en": "There are four oceans in the world.",
         "tatoeba_id": 143446
       }
-    ]
+    ],
+    "reversePrompt": "four"
   },
   {
     "id": "76f05a0739",
@@ -18335,7 +19770,12 @@
         "en": "He will come if you call him.",
         "tatoeba_id": 234086
       }
-    ]
+    ],
+    "synonyms": [
+      "call out",
+      "invite"
+    ],
+    "reversePrompt": "to call out"
   },
   {
     "id": "eb7e675902",
@@ -18364,7 +19804,13 @@
         "en": "I have been reading a book all morning.",
         "tatoeba_id": 157196
       }
-    ]
+    ],
+    "synonyms": [
+      "read",
+      "peruse",
+      "examine"
+    ],
+    "reversePrompt": "to read"
   },
   {
     "id": "6c214111ea",
@@ -18392,7 +19838,12 @@
         "en": "Any bed is better than no bed.",
         "tatoeba_id": 199480
       }
-    ]
+    ],
+    "modernMeaning": "then",
+    "synonyms": [
+      "then"
+    ],
+    "reversePrompt": "then"
   },
   {
     "id": "1a0aec6793",
@@ -18422,7 +19873,8 @@
         "en": "I don't switch on the light in my studio at night.",
         "tatoeba_id": 79751
       }
-    ]
+    ],
+    "reversePrompt": "evening (noun; night)"
   },
   {
     "id": "83da293775",
@@ -18449,7 +19901,14 @@
         "en": "The string is very weak.",
         "tatoeba_id": 212696
       }
-    ]
+    ],
+    "synonyms": [
+      "frail",
+      "feeble",
+      "delicate",
+      "faint"
+    ],
+    "reversePrompt": "weak (い-adjective)"
   },
   {
     "id": "61fd50f12e",
@@ -18478,7 +19937,8 @@
         "en": "My uncle will have been in New York for two years next month.",
         "tatoeba_id": 227704
       }
-    ]
+    ],
+    "reversePrompt": "next month"
   },
   {
     "id": "7a4ef637be",
@@ -18506,7 +19966,8 @@
         "en": "Won't you come and see me next week?",
         "tatoeba_id": 78640
       }
-    ]
+    ],
+    "reversePrompt": "next week"
   },
   {
     "id": "c68f2caa2f",
@@ -18535,7 +19996,8 @@
         "en": "I will be in high school next April.",
         "tatoeba_id": 152393
       }
-    ]
+    ],
+    "reversePrompt": "next year"
   },
   {
     "id": "670f2dd0dc",
@@ -18562,7 +20024,8 @@
         "en": "Do you mind if I turn on the radio?",
         "tatoeba_id": 192597
       }
-    ]
+    ],
+    "reversePrompt": "radio (noun)"
   },
   {
     "id": "924572e50c",
@@ -18586,7 +20049,8 @@
         "en": "The word \"raji-kase\", meaning radio cassette in Japan, is probably more of an antiquated term by now.",
         "tatoeba_id": 1174918
       }
-    ]
+    ],
+    "reversePrompt": "radio cassette player"
   },
   {
     "id": "a45af4ed89",
@@ -18616,7 +20080,8 @@
         "en": "He is doing well in his college work.",
         "tatoeba_id": 102449
       }
-    ]
+    ],
+    "reversePrompt": "splendid (な-adjective)"
   },
   {
     "id": "dc7d39c7af",
@@ -18643,7 +20108,8 @@
         "en": "Three Chinese students were admitted to the college.",
         "tatoeba_id": 235285
       }
-    ]
+    ],
+    "reversePrompt": "overseas student"
   },
   {
     "id": "0139a208fe",
@@ -18671,7 +20137,8 @@
         "en": "Neither of my parents is alive.",
         "tatoeba_id": 78052
       }
-    ]
+    ],
+    "reversePrompt": "both parents"
   },
   {
     "id": "ee85169acd",
@@ -18701,7 +20168,8 @@
         "en": "This dish is terrific.",
         "tatoeba_id": 198943
       }
-    ]
+    ],
+    "reversePrompt": "cuisine"
   },
   {
     "id": "2ba96bef9a",
@@ -18731,7 +20199,8 @@
         "en": "As I don't have the money, it'll just be a short trip.",
         "tatoeba_id": 76816
       }
-    ]
+    ],
+    "reversePrompt": "travel (intransitive)"
   },
   {
     "id": "92b3bb727e",
@@ -18745,7 +20214,15 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1557630
+    "jmdict_id": 1557630,
+    "examples": [
+      {
+        "ja": "今日の授業で「零」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{零|れい}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “zero.”"
+      }
+    ],
+    "reversePrompt": "zero (noun)"
   },
   {
     "id": "f7a15687a1",
@@ -18773,7 +20250,8 @@
         "en": "Is there any butter in the refrigerator?",
         "tatoeba_id": 77648
       }
-    ]
+    ],
+    "reversePrompt": "refrigerator"
   },
   {
     "id": "0455201fe6",
@@ -18800,7 +20278,8 @@
         "en": "Compact discs have entirely taken the place of phonograph records.",
         "tatoeba_id": 234862
       }
-    ]
+    ],
+    "reversePrompt": "record (noun)"
   },
   {
     "id": "31893e4378",
@@ -18826,7 +20305,8 @@
         "en": "The curry at this restaurant is good.",
         "tatoeba_id": 223009
       }
-    ]
+    ],
+    "reversePrompt": "restaurant"
   },
   {
     "id": "d23f06249a",
@@ -18856,7 +20336,11 @@
         "en": "I have tennis practice later.",
         "tatoeba_id": 174352
       }
-    ]
+    ],
+    "synonyms": [
+      "practice"
+    ],
+    "reversePrompt": "to practice (transitive)"
   },
   {
     "id": "5fc0f979e6",
@@ -18883,7 +20367,8 @@
         "en": "Hanako walked through the hallway making a clicking sound.",
         "tatoeba_id": 173664
       }
-    ]
+    ],
+    "reversePrompt": "corridor"
   },
   {
     "id": "f9ccc7bfdf",
@@ -18909,7 +20394,8 @@
         "en": "It's nearly six o'clock.",
         "tatoeba_id": 519112
       }
-    ]
+    ],
+    "reversePrompt": "six"
   },
   {
     "id": "38249a2dd2",
@@ -18936,7 +20422,8 @@
         "en": "I found my mother busy ironing out some shirts.",
         "tatoeba_id": 83028
       }
-    ]
+    ],
+    "reversePrompt": "business shirt"
   },
   {
     "id": "640761cb8b",
@@ -18964,7 +20451,8 @@
         "en": "I often played soccer when I was young.",
         "tatoeba_id": 156108
       }
-    ]
+    ],
+    "reversePrompt": "young (い-adjective)"
   },
   {
     "id": "ecee43eb04",
@@ -18996,7 +20484,11 @@
         "en": "I don't know which is which.",
         "tatoeba_id": 200695
       }
-    ]
+    ],
+    "synonyms": [
+      "be understood"
+    ],
+    "reversePrompt": "to be understood"
   },
   {
     "id": "0ca0de9dea",
@@ -19025,7 +20517,11 @@
         "en": "I've completely forgotten its name.",
         "tatoeba_id": 80772
       }
-    ]
+    ],
+    "synonyms": [
+      "forget"
+    ],
+    "reversePrompt": "to forget"
   },
   {
     "id": "d5c2e69813",
@@ -19053,7 +20549,11 @@
         "en": "She takes care of my children.",
         "tatoeba_id": 89373
       }
-    ]
+    ],
+    "synonyms": [
+      "i"
+    ],
+    "reversePrompt": "(humble) I"
   },
   {
     "id": "b1d440d4e1",
@@ -19082,7 +20582,11 @@
         "en": "A runner must pass the baton in a relay race.",
         "tatoeba_id": 192496
       }
-    ]
+    ],
+    "synonyms": [
+      "hand over"
+    ],
+    "reversePrompt": "to hand over (transitive)"
   },
   {
     "id": "78255b9860",
@@ -19111,7 +20615,11 @@
         "en": "Let's cross here.",
         "tatoeba_id": 224241
       }
-    ]
+    ],
+    "synonyms": [
+      "go across"
+    ],
+    "reversePrompt": "to go across"
   },
   {
     "id": "13b6dbec03",
@@ -19139,6 +20647,13 @@
         "en": "I'm sorry. I did you wrong.",
         "tatoeba_id": 215129
       }
-    ]
+    ],
+    "synonyms": [
+      "poor",
+      "terrible",
+      "awful",
+      "unfavorable"
+    ],
+    "reversePrompt": "bad (い-adjective)"
   }
 ]

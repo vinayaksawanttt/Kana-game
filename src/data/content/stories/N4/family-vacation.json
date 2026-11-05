@@ -5,23 +5,919 @@
   "titleEn": "Family Vacation in Okinawa",
   "level": "N4",
   "category": "Travel",
-  "tags": ["okinawa", "vacation", "family", "travel"],
+  "tags": [
+    "okinawa",
+    "vacation",
+    "family",
+    "travel"
+  ],
   "paragraphs": [
     {
       "ja": "先月の夏休みに、田中さんは家族と一緒に飛行機で沖縄へ旅行に行きました。朝早く家を出発して、昼ごろに那覇空港に着きました。",
-      "en": "During summer vacation last month, Mr. Tanaka went on a trip to Okinawa with his family by airplane. They left home early in the morning and arrived at Naha Airport around noon."
+      "en": "During summer vacation last month, Mr. Tanaka went on a trip to Okinawa with his family by airplane. They left home early in the morning and arrived at Naha Airport around noon.",
+      "sentences": [
+        {
+          "ja": "先月の夏休みに、田中さんは家族と一緒に飛行機で沖縄へ旅行に行きました。",
+          "literalEn": "last month ['s / of] summer holiday [at/to] Tanaka [Mr/Ms] [topic] family [with/and] together [at/to] aeroplane [in/by] Okinawa [toward] travel [at/to] going した",
+          "naturalEn": "During last month’s summer vacation, Mr. Tanaka took a trip to Okinawa by plane with his family.",
+          "tokens": [
+            {
+              "surface": "先月",
+              "reading": "せんげつ",
+              "meaning": "last month",
+              "baseForm": "先月",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "夏休み",
+              "reading": "なつやすみ",
+              "meaning": "summer holiday",
+              "baseForm": "夏休み",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "家族",
+              "reading": "かぞく",
+              "meaning": "family",
+              "baseForm": "家族",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "一緒",
+              "reading": "いっしょ",
+              "meaning": "together",
+              "baseForm": "一緒",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "飛行機",
+              "reading": "ひこうき",
+              "meaning": "aeroplane",
+              "baseForm": "飛行機",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "沖縄",
+              "reading": "おきなわ",
+              "meaning": "Okinawa",
+              "baseForm": "沖縄",
+              "level": "N4"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "旅行",
+              "reading": "りょこう",
+              "meaning": "travel",
+              "baseForm": "旅行",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "朝早く家を出発して、昼ごろに那覇空港に着きました。",
+          "literalEn": "morning early house [obj] to depart [and] noon ごろ [at/to] Naha Airport [at/to] counter for suits of clothing した",
+          "naturalEn": "They left home early in the morning and arrived at Naha Airport around noon.",
+          "tokens": [
+            {
+              "surface": "朝",
+              "reading": "あさ",
+              "meaning": "morning",
+              "baseForm": "朝",
+              "level": "N5"
+            },
+            {
+              "surface": "早く",
+              "reading": "はやく",
+              "meaning": "early",
+              "baseForm": "早い",
+              "level": "N5"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "出発",
+              "reading": "しゅっぱつ",
+              "meaning": "to depart",
+              "baseForm": "出発",
+              "level": "N4"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "昼",
+              "reading": "ひる",
+              "meaning": "noon; daytime",
+              "baseForm": "昼",
+              "level": "N5"
+            },
+            {
+              "surface": "ごろ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "那覇空港",
+              "reading": "なはくうこう",
+              "meaning": "Naha Airport",
+              "baseForm": "那覇空港",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "着",
+              "reading": "ちゃく",
+              "meaning": "counter for suits of clothing; arriving at ..",
+              "baseForm": "着",
+              "level": "N1"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "ホテルは海のすぐ近くにありました。部屋の窓からは、青くてきれいな海がよく見えました。午後、みんなで海岸へ行って、泳いだりきれいな貝を拾ったりして遊びました。",
-      "en": "The hotel was right near the sea. From the window of the room, they could see the beautiful blue sea clearly. In the afternoon, everyone went to the coast and played by swimming and picking up pretty shells."
+      "en": "The hotel was right near the sea. From the window of the room, they could see the beautiful blue sea clearly. In the afternoon, everyone went to the coast and played by swimming and picking up pretty shells.",
+      "sentences": [
+        {
+          "ja": "ホテルは海のすぐ近くにありました。",
+          "literalEn": "hotel [topic] sea ['s / of] immediately near [at/to] ありま した",
+          "naturalEn": "The hotel was right by the ocean.",
+          "tokens": [
+            {
+              "surface": "ホテル",
+              "meaning": "hotel",
+              "baseForm": "ホテル",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "すぐ",
+              "meaning": "immediately; soon; easily",
+              "baseForm": "すぐ",
+              "level": "N5"
+            },
+            {
+              "surface": "近く",
+              "reading": "ちかく",
+              "meaning": "near",
+              "baseForm": "近く",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "部屋の窓からは、青くてきれいな海がよく見えました。",
+          "literalEn": "room ['s / of] window [from] [topic] blue [and] pretty sea [subj] often to see した",
+          "naturalEn": "From the room’s window, we had a great view of the beautiful blue ocean.",
+          "tokens": [
+            {
+              "surface": "部屋",
+              "reading": "へや",
+              "meaning": "room",
+              "baseForm": "部屋",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "窓",
+              "reading": "まど",
+              "meaning": "window",
+              "baseForm": "窓",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "青",
+              "reading": "あお",
+              "meaning": "blue",
+              "baseForm": "青",
+              "level": "N5"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "きれい",
+              "meaning": "pretty; clean",
+              "baseForm": "きれい",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "よく",
+              "meaning": "often; well",
+              "baseForm": "よく",
+              "level": "N5"
+            },
+            {
+              "surface": "見え",
+              "reading": "みえ",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "午後、みんなで海岸へ行って、泳いだりきれいな貝を拾ったりして遊びました。",
+          "literalEn": "afternoon everyone [in/by] coast [toward] line って to swim だり pretty shell [obj] to pick up たり [and] play した",
+          "naturalEn": "In the afternoon, we all went to the beach and had fun swimming and collecting beautiful seashells.",
+          "tokens": [
+            {
+              "surface": "午後",
+              "reading": "ごご",
+              "meaning": "afternoon",
+              "baseForm": "午後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "みんな",
+              "meaning": "everyone",
+              "baseForm": "みんな",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "海岸",
+              "reading": "かいがん",
+              "meaning": "coast",
+              "baseForm": "海岸",
+              "level": "N4"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行",
+              "reading": "ぎょう",
+              "meaning": "line; row; verse",
+              "baseForm": "行",
+              "level": "N1"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "泳",
+              "reading": "およ",
+              "meaning": "to swim",
+              "baseForm": "泳ぐ",
+              "level": "N5"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "だり"
+            },
+            {
+              "surface": "きれい",
+              "meaning": "pretty; clean",
+              "baseForm": "きれい",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "貝",
+              "reading": "かい",
+              "meaning": "shell; shellfish",
+              "baseForm": "貝",
+              "level": "N2"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "拾",
+              "reading": "ひろ",
+              "meaning": "to pick up; to gather",
+              "baseForm": "拾う",
+              "level": "N4"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "たり"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "遊び",
+              "reading": "あそび",
+              "meaning": "play",
+              "baseForm": "遊び",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "夕方、ホテルのレストランで沖縄の有名な料理をたくさん食べました。特に豚肉の料理が柔らかくて、とてもおいしかったです。",
-      "en": "In the evening, they ate a lot of famous Okinawan dishes at the hotel restaurant. The pork dish, in particular, was soft and very delicious."
+      "en": "In the evening, they ate a lot of famous Okinawan dishes at the hotel restaurant. The pork dish, in particular, was soft and very delicious.",
+      "sentences": [
+        {
+          "ja": "夕方、ホテルのレストランで沖縄の有名な料理をたくさん食べました。",
+          "literalEn": "evening hotel ['s / of] restaurant [in/by] Okinawa ['s / of] famous cuisine [obj] many  to eat した",
+          "naturalEn": "In the evening, I ate plenty of famous Okinawan dishes at the hotel restaurant.",
+          "tokens": [
+            {
+              "surface": "夕方",
+              "reading": "ゆうがた",
+              "meaning": "evening",
+              "baseForm": "夕方",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ホテル",
+              "meaning": "hotel",
+              "baseForm": "ホテル",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "レストラン",
+              "meaning": "restaurant",
+              "baseForm": "レストラン",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "沖縄",
+              "reading": "おきなわ",
+              "meaning": "Okinawa",
+              "baseForm": "沖縄",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "有名",
+              "reading": "ゆうめい",
+              "meaning": "famous",
+              "baseForm": "有名",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "料理",
+              "reading": "りょうり",
+              "meaning": "cuisine",
+              "baseForm": "料理",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "食",
+              "reading": "く",
+              "meaning": "(male) (vulgar) to eat",
+              "baseForm": "食う",
+              "level": "N3"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "特に豚肉の料理が柔らかくて、とてもおいしかったです。",
+          "literalEn": "particularly pork ['s / of] cuisine [subj] tender [and] very おい しか [past] [is]",
+          "naturalEn": "The pork dishes, in particular, were tender and very delicious.",
+          "tokens": [
+            {
+              "surface": "特に",
+              "reading": "とくに",
+              "meaning": "particularly; especially",
+              "baseForm": "特に",
+              "level": "N4"
+            },
+            {
+              "surface": "豚肉",
+              "reading": "ぶたにく",
+              "meaning": "pork",
+              "baseForm": "豚肉",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "料理",
+              "reading": "りょうり",
+              "meaning": "cuisine",
+              "baseForm": "料理",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "柔らか",
+              "reading": "やわらか",
+              "meaning": "tender, gentleness, softness",
+              "baseForm": "柔",
+              "level": "N2"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "おい"
+            },
+            {
+              "surface": "しか"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "夜は空の星が明るくて、静かでした。田中さんは「また来年も沖縄へ来たいですね」と妻に言いました。家族みんなで素晴らしい思い出を作ることができました。",
-      "en": "At night, the stars in the sky were bright, and it was quiet. Mr. Tanaka said to his wife, \"I want to come to Okinawa again next year, don't you?\" The whole family was able to make wonderful memories."
+      "en": "At night, the stars in the sky were bright, and it was quiet. Mr. Tanaka said to his wife, \"I want to come to Okinawa again next year, don't you?\" The whole family was able to make wonderful memories.",
+      "sentences": [
+        {
+          "ja": "夜は空の星が明るくて、静かでした。",
+          "literalEn": "evening [topic] sky ['s / of] star [subj] room [and] quiet [in/by] した",
+          "naturalEn": "The night sky was clear and starry, and it was quiet.",
+          "tokens": [
+            {
+              "surface": "夜",
+              "reading": "よる",
+              "meaning": "evening; night",
+              "baseForm": "夜",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "空",
+              "reading": "そら",
+              "meaning": "sky",
+              "baseForm": "空",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "星",
+              "reading": "ほし",
+              "meaning": "star",
+              "baseForm": "星",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "明",
+              "reading": "あ",
+              "meaning": "room; time to spare; emptiness",
+              "baseForm": "明き",
+              "level": "N2"
+            },
+            {
+              "surface": "る"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "静か",
+              "reading": "しずか",
+              "meaning": "quiet",
+              "baseForm": "静か",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "田中さんは「また来年も沖縄へ来たいですね」と妻に言いました。",
+          "literalEn": "Tanaka [Mr/Ms] [topic] again next year [also] Okinawa [toward] for [want to] [is] [right?] [with/and]  wife [at/to] to say いま した",
+          "naturalEn": "Mr. Tanaka said to his wife, “I’d like to come back to Okinawa next year, too.”",
+          "tokens": [
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "また",
+              "meaning": "again; and",
+              "baseForm": "また",
+              "level": "N5"
+            },
+            {
+              "surface": "来年",
+              "reading": "らいねん",
+              "meaning": "next year",
+              "baseForm": "来年",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "沖縄",
+              "reading": "おきなわ",
+              "meaning": "Okinawa",
+              "baseForm": "沖縄",
+              "level": "N4"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "来",
+              "reading": "らい",
+              "meaning": "for (10 days); next (year)",
+              "baseForm": "来",
+              "level": "N3"
+            },
+            {
+              "surface": "たい"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "ね",
+              "meaning": "value; price; cost",
+              "baseForm": "ね",
+              "level": "N3"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "妻",
+              "reading": "つま",
+              "meaning": "(humble) wife",
+              "baseForm": "妻",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "家族みんなで素晴らしい思い出を作ることができました。",
+          "literalEn": "family everyone [in/by] wonderful memories [obj] to make thing [subj] でき した",
+          "naturalEn": "We were able to create wonderful memories as a family.",
+          "tokens": [
+            {
+              "surface": "家族",
+              "reading": "かぞく",
+              "meaning": "family",
+              "baseForm": "家族",
+              "level": "N5"
+            },
+            {
+              "surface": "みんな",
+              "meaning": "everyone",
+              "baseForm": "みんな",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "素晴らしい",
+              "reading": "すばらしい",
+              "meaning": "wonderful; splendid; magnificent",
+              "baseForm": "素晴らしい",
+              "level": "N4"
+            },
+            {
+              "surface": "思い出",
+              "reading": "おもいで",
+              "meaning": "memories; recollections; reminiscence",
+              "baseForm": "思い出",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "作る",
+              "reading": "つくる",
+              "meaning": "to make",
+              "baseForm": "作る",
+              "level": "N5"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
@@ -33,7 +929,8 @@
         "昨日の休みに近くの海へ",
         "来月の休みに沖縄へ"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「先月の夏休みに沖縄へ」 is correct: 「先月の夏休みに、田中さんは家族と一緒に飛行機で沖縄へ旅行に行きました。」 (During last month’s summer vacation, Mr. Tanaka took a trip to Okinawa by plane with his family.)"
     },
     {
       "question": "午後、家族は海岸で何をしましたか？",
@@ -43,7 +940,8 @@
         "船に乗ったり寝たりしました",
         "ホテルのレストランで料理を食べました"
       ],
-      "answerIndex": 0
+      "answerIndex": 0,
+      "explanation": "「泳いだり貝を拾ったりしました」 is the correct answer according to the story."
     },
     {
       "question": "田中さんは夜、妻に何と言いましたか？",
@@ -53,7 +951,9 @@
         "「豚肉の料理がおいしかったですね」",
         "「また来年も沖縄へ来たいですね」"
       ],
-      "answerIndex": 3
+      "answerIndex": 3,
+      "explanation": "「「また来年も沖縄へ来たいですね」」 is correct: 「田中さんは「また来年も沖縄へ来たいですね」と妻に言いました。」 (Mr. Tanaka said to his wife, “I’d like to come back to Okinawa next year, too.”)"
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/family-vacation.json"
 }

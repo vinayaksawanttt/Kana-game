@@ -58,9 +58,17 @@ export interface StoryToken {
   level?: string;
 }
 
+export interface StorySentence {
+  ja: string;
+  literalEn: string;
+  naturalEn: string;
+  tokens?: StoryToken[];
+}
+
 export interface StoryParagraph {
   ja: string;      // Japanese sentence/paragraph
   en: string;      // English translation
+  sentences?: StorySentence[];
   tokens?: {       // Optional pre-parsed tokens for ruby
     surface: string;
     reading?: string;
@@ -74,6 +82,7 @@ export interface StoryQuiz {
   question: string;
   options: string[];
   answerIndex: number;
+  explanation?: string;
 }
 
 export type StoryLevel = "N5" | "N4" | "N3" | "N2" | "N1";

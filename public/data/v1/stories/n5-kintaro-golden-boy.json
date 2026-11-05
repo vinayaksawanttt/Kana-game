@@ -1,0 +1,1533 @@
+{
+  "id": "n5-kintaro-golden-boy",
+  "title": "金太郎",
+  "titleRomaji": "Kintarō",
+  "titleEn": "Kintaro, the Golden Boy",
+  "level": "N5",
+  "category": "Legend",
+  "tags": [
+    "hero",
+    "animals",
+    "samurai",
+    "strength"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、山に金太郎という男の子がいました。 金太郎はとても強い子供でした。 毎日、山で動物たちと楽しく遊びました。 熊や鹿や猿やうさぎは、みんな金太郎のいい友達でした。",
+      "en": "Long, long ago, there was a boy named Kintaro in the mountain. Kintaro was a very strong child. Every day, he played happily with the animals in the mountain. The bear, the deer, the monkey, and the hare were all Kintaro's good friends.",
+      "sentences": [
+        {
+          "ja": "昔々、山に金太郎という男の子がいました。",
+          "literalEn": "olden days mountain [at/to] Kintaro という boy [subj] いま した",
+          "naturalEn": "Once upon a time, there was a boy named Kintarō who lived in the mountains.",
+          "tokens": [
+            {
+              "surface": "昔",
+              "reading": "むかし",
+              "meaning": "olden days; former",
+              "baseForm": "昔",
+              "level": "N4"
+            },
+            {
+              "surface": "々"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "金太郎",
+              "reading": "きんたろう",
+              "meaning": "Kintaro (Golden Boy)",
+              "baseForm": "金太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "男の子",
+              "reading": "おとこのこ",
+              "meaning": "boy",
+              "baseForm": "男の子",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "金太郎はとても強い子供でした。",
+          "literalEn": "Kintaro [topic] very powerful child [in/by] した",
+          "naturalEn": "Kintarō was a very strong boy.",
+          "tokens": [
+            {
+              "surface": "金太郎",
+              "reading": "きんたろう",
+              "meaning": "Kintaro (Golden Boy)",
+              "baseForm": "金太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "強い",
+              "reading": "つよい",
+              "meaning": "powerful",
+              "baseForm": "強い",
+              "level": "N5"
+            },
+            {
+              "surface": "子供",
+              "reading": "こども",
+              "meaning": "child; children",
+              "baseForm": "子供",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "毎日、山で動物たちと楽しく遊びました。",
+          "literalEn": "every day mountain [in/by] animal たち [with/and] comfort しく play した",
+          "naturalEn": "Every day, he had fun playing with the animals in the mountains.",
+          "tokens": [
+            {
+              "surface": "毎日",
+              "reading": "まいにち",
+              "meaning": "every day",
+              "baseForm": "毎日",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "動物",
+              "reading": "どうぶつ",
+              "meaning": "animal",
+              "baseForm": "動物",
+              "level": "N5"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "楽",
+              "reading": "らく",
+              "meaning": "comfort; ease",
+              "baseForm": "楽",
+              "level": "N3"
+            },
+            {
+              "surface": "しく"
+            },
+            {
+              "surface": "遊び",
+              "reading": "あそび",
+              "meaning": "play",
+              "baseForm": "遊び",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "熊や鹿や猿やうさぎは、みんな金太郎のいい友達でした。",
+          "literalEn": "bear deer monkey うさぎ [topic] everyone Kintaro ['s / of] good friend [in/by] した",
+          "naturalEn": "Bears, deer, monkeys, and rabbits were all Kintarō’s good friends.",
+          "tokens": [
+            {
+              "surface": "熊",
+              "reading": "くま",
+              "meaning": "bear",
+              "baseForm": "熊",
+              "level": "N1"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "鹿",
+              "reading": "か",
+              "meaning": "deer",
+              "baseForm": "鹿",
+              "level": "N1"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "うさぎ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "みんな",
+              "meaning": "everyone",
+              "baseForm": "みんな",
+              "level": "N5"
+            },
+            {
+              "surface": "金太郎",
+              "reading": "きんたろう",
+              "meaning": "Kintaro (Golden Boy)",
+              "baseForm": "金太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "いい",
+              "meaning": "good",
+              "baseForm": "いい",
+              "level": "N5"
+            },
+            {
+              "surface": "友達",
+              "reading": "ともだち",
+              "meaning": "friend",
+              "baseForm": "友達",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "ある日、金太郎と動物たちは広い所で相撲をしました。 熊が一番大きい動物でしたが、金太郎は熊よりもずっと強かったです。 金太郎は勝った動物においしい食べ物をあげました。 動物たちはみんな金太郎が大好きでした。",
+      "en": "One day, Kintaro and the animals did sumo wrestling in a wide place. The bear was the biggest animal, but Kintaro was much stronger than the bear. Kintaro gave delicious food to the winning animals. The animals all loved Kintaro very much.",
+      "sentences": [
+        {
+          "ja": "ある日、金太郎と動物たちは広い所で相撲をしました。",
+          "literalEn": "to be day Kintaro [with/and] animal たち [topic] spacious place [in/by] sumo wrestling [obj] しま した",
+          "naturalEn": "One day, Kintarō and the animals had a sumo match in a wide open space.",
+          "tokens": [
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "金太郎",
+              "reading": "きんたろう",
+              "meaning": "Kintaro (Golden Boy)",
+              "baseForm": "金太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "動物",
+              "reading": "どうぶつ",
+              "meaning": "animal",
+              "baseForm": "動物",
+              "level": "N5"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "広い",
+              "reading": "ひろい",
+              "meaning": "spacious; wide",
+              "baseForm": "広い",
+              "level": "N5"
+            },
+            {
+              "surface": "所",
+              "reading": "ところ",
+              "meaning": "place",
+              "baseForm": "所",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "相撲",
+              "reading": "すもう",
+              "meaning": "sumo wrestling",
+              "baseForm": "相撲",
+              "level": "N2"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "熊が一番大きい動物でしたが、金太郎は熊よりもずっと強かったです。",
+          "literalEn": "bear [subj] number one big animal [in/by] した [subj] Kintaro [topic] bear [than] [also] consecutively powerful [past] [is]",
+          "naturalEn": "The bear was the biggest animal, but Kintarō was much stronger than the bear.",
+          "tokens": [
+            {
+              "surface": "熊",
+              "reading": "くま",
+              "meaning": "bear",
+              "baseForm": "熊",
+              "level": "N1"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "一番",
+              "reading": "いちばん",
+              "meaning": "number one; most; best",
+              "baseForm": "一番",
+              "level": "N5"
+            },
+            {
+              "surface": "大きい",
+              "reading": "おおきい",
+              "meaning": "big",
+              "baseForm": "大きい",
+              "level": "N5"
+            },
+            {
+              "surface": "動物",
+              "reading": "どうぶつ",
+              "meaning": "animal",
+              "baseForm": "動物",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "金太郎",
+              "reading": "きんたろう",
+              "meaning": "Kintaro (Golden Boy)",
+              "baseForm": "金太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "熊",
+              "reading": "くま",
+              "meaning": "bear",
+              "baseForm": "熊",
+              "level": "N1"
+            },
+            {
+              "surface": "より",
+              "meaning": "than; (used for comparison)",
+              "baseForm": "より",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "ずっと",
+              "meaning": "consecutively; throughout; a lot",
+              "baseForm": "ずっと",
+              "level": "N3"
+            },
+            {
+              "surface": "強か",
+              "reading": "つよか",
+              "meaning": "powerful",
+              "baseForm": "強い",
+              "level": "N5"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "金太郎は勝った動物においしい食べ物をあげました。",
+          "literalEn": "Kintaro [topic] to win [past] animal [at/to] delicious food [obj] Ah した",
+          "naturalEn": "Kintaro gave the winning animal some delicious food.",
+          "tokens": [
+            {
+              "surface": "金太郎",
+              "reading": "きんたろう",
+              "meaning": "Kintaro (Golden Boy)",
+              "baseForm": "金太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "勝",
+              "reading": "か",
+              "meaning": "to win",
+              "baseForm": "勝つ",
+              "level": "N4"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "動物",
+              "reading": "どうぶつ",
+              "meaning": "animal",
+              "baseForm": "動物",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "おいしい",
+              "meaning": "delicious",
+              "baseForm": "おいしい",
+              "level": "N5"
+            },
+            {
+              "surface": "食べ物",
+              "reading": "たべもの",
+              "meaning": "food",
+              "baseForm": "食べ物",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "あ",
+              "meaning": "Ah",
+              "baseForm": "あ",
+              "level": "N4"
+            },
+            {
+              "surface": "げ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "動物たちはみんな金太郎が大好きでした。",
+          "literalEn": "animal たち [topic] everyone Kintaro [subj] to be very likeable [in/by] した",
+          "naturalEn": "All the animals loved Kintarō very much.",
+          "tokens": [
+            {
+              "surface": "動物",
+              "reading": "どうぶつ",
+              "meaning": "animal",
+              "baseForm": "動物",
+              "level": "N5"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "みんな",
+              "meaning": "everyone",
+              "baseForm": "みんな",
+              "level": "N5"
+            },
+            {
+              "surface": "金太郎",
+              "reading": "きんたろう",
+              "meaning": "Kintaro (Golden Boy)",
+              "baseForm": "金太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "大好き",
+              "reading": "だいすき",
+              "meaning": "to be very likeable",
+              "baseForm": "大好き",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "みんなで川に行きました。 橋がありませんでしたから、動物たちは渡ることができなくて困りました。 金太郎は川のそばの大きな木を押しました。 木は倒れて、橋になりました。 動物たちは「金太郎は本当に強いですね」と言って、橋を渡りました。",
+      "en": "They all went to a river. Because there was no bridge, the animals were troubled as they could not cross. Kintaro pushed a big tree near the river. The tree fell and became a bridge. The animals said, \"Kintaro is truly strong, isn't he,\" and crossed the bridge.",
+      "sentences": [
+        {
+          "ja": "みんなで川に行きました。",
+          "literalEn": "everyone [in/by] river [at/to] going した",
+          "naturalEn": "We all went to the river.",
+          "tokens": [
+            {
+              "surface": "みんな",
+              "meaning": "everyone",
+              "baseForm": "みんな",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "川",
+              "reading": "かわ",
+              "meaning": "river",
+              "baseForm": "川",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "橋がありませんでしたから、動物たちは渡ることができなくて困りました。",
+          "literalEn": "bridge [subj] ありま せん [in/by] した [from] animal たち [topic] to go across thing [subj] でき なく [and] to be worried した",
+          "naturalEn": "Since there was no bridge, the animals couldn’t cross and were in a bind.",
+          "tokens": [
+            {
+              "surface": "橋",
+              "reading": "はし",
+              "meaning": "bridge",
+              "baseForm": "橋",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "動物",
+              "reading": "どうぶつ",
+              "meaning": "animal",
+              "baseForm": "動物",
+              "level": "N5"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "渡る",
+              "reading": "わたる",
+              "meaning": "to go across",
+              "baseForm": "渡る",
+              "level": "N5"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "なく"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "困",
+              "reading": "こま",
+              "meaning": "to be worried",
+              "baseForm": "困る",
+              "level": "N5"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "金太郎は川のそばの大きな木を押しました。",
+          "literalEn": "Kintaro [topic] river ['s / of] near ['s / of] big tree [obj] to push した",
+          "naturalEn": "Kintaro pushed a big tree standing by the river.",
+          "tokens": [
+            {
+              "surface": "金太郎",
+              "reading": "きんたろう",
+              "meaning": "Kintaro (Golden Boy)",
+              "baseForm": "金太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "川",
+              "reading": "かわ",
+              "meaning": "river",
+              "baseForm": "川",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "そば",
+              "meaning": "near; beside",
+              "baseForm": "そば",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "木",
+              "reading": "き",
+              "meaning": "tree; wood",
+              "baseForm": "木",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "押し",
+              "reading": "おし",
+              "meaning": "to push; to stamp something",
+              "baseForm": "押す",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "木は倒れて、橋になりました。",
+          "literalEn": "tree [topic] to throw down [and] bridge [at/to] なり した",
+          "naturalEn": "The tree fell over and became a bridge.",
+          "tokens": [
+            {
+              "surface": "木",
+              "reading": "き",
+              "meaning": "tree; wood",
+              "baseForm": "木",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "倒",
+              "reading": "たお",
+              "meaning": "to throw down; to beat; to bring down",
+              "baseForm": "倒す",
+              "level": "N3"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "橋",
+              "reading": "はし",
+              "meaning": "bridge",
+              "baseForm": "橋",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "動物たちは「金太郎は本当に強いですね」と言って、橋を渡りました。",
+          "literalEn": "animal たち [topic] Kintaro [topic] really powerful [is] [right?] [with/and] to say って bridge [obj] to hand over した",
+          "naturalEn": "The animals said, “Kintarō is really strong,” and crossed the bridge.",
+          "tokens": [
+            {
+              "surface": "動物",
+              "reading": "どうぶつ",
+              "meaning": "animal",
+              "baseForm": "動物",
+              "level": "N5"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "金太郎",
+              "reading": "きんたろう",
+              "meaning": "Kintaro (Golden Boy)",
+              "baseForm": "金太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "本当に",
+              "reading": "ほんとうに",
+              "meaning": "really; truly",
+              "baseForm": "本当に",
+              "level": "N5"
+            },
+            {
+              "surface": "強い",
+              "reading": "つよい",
+              "meaning": "powerful",
+              "baseForm": "強い",
+              "level": "N5"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "ね",
+              "meaning": "value; price; cost",
+              "baseForm": "ね",
+              "level": "N3"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "橋",
+              "reading": "はし",
+              "meaning": "bridge",
+              "baseForm": "橋",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "渡り",
+              "reading": "わたり",
+              "meaning": "to hand over",
+              "baseForm": "渡す",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "その時、一人の男の人が金太郎を見ました。 その人は偉いお侍さんでした。 彼は「あなたはとても強いですね。一緒に町へ来て、侍になりませんか」と言いました。 金太郎は喜んで「はい」と答えました。 金太郎はお母さんと動物たちに「さようなら」と言って、町へ行きました。 そして、一番強くて有名な侍になりました。",
+      "en": "At that time, a man saw Kintaro. That person was a great samurai. He said, \"You are very strong. Won't you come to the town together and become a samurai?\" Kintaro happily answered, \"Yes.\" Kintaro said \"Goodbye\" to his mother and the animals, and went to the town. And he became the strongest and most famous samurai.",
+      "sentences": [
+        {
+          "ja": "その時、一人の男の人が金太郎を見ました。",
+          "literalEn": "at that time one person ['s / of] man ['s / of] person [subj] Kintaro [obj] to see した",
+          "naturalEn": "Just then, a man spotted Kintarō.",
+          "tokens": [
+            {
+              "surface": "その時",
+              "reading": "そのとき",
+              "meaning": "at that time",
+              "baseForm": "その時",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "一人",
+              "reading": "ひとり",
+              "meaning": "one person; alone",
+              "baseForm": "一人",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "男",
+              "reading": "おとこ",
+              "meaning": "man",
+              "baseForm": "男",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "金太郎",
+              "reading": "きんたろう",
+              "meaning": "Kintaro (Golden Boy)",
+              "baseForm": "金太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "その人は偉いお侍さんでした。",
+          "literalEn": "that person [topic] great Samurai [Mr/Ms] [in/by] した",
+          "naturalEn": "That man was a high-ranking samurai.",
+          "tokens": [
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "偉い",
+              "reading": "えらい",
+              "meaning": "great; celebrated; eminent",
+              "baseForm": "偉い",
+              "level": "N2"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "侍",
+              "reading": "さむらい",
+              "meaning": "Samurai; warrior",
+              "baseForm": "侍",
+              "level": "N1"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼は「あなたはとても強いですね。",
+          "literalEn": "he [topic] you [topic] very powerful [is] [right?]",
+          "naturalEn": "He said, “You’re very strong, aren’t you?”",
+          "tokens": [
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "あなた",
+              "meaning": "you",
+              "baseForm": "あなた",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "強い",
+              "reading": "つよい",
+              "meaning": "powerful",
+              "baseForm": "強い",
+              "level": "N5"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "ね",
+              "meaning": "value; price; cost",
+              "baseForm": "ね",
+              "level": "N3"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "一緒に町へ来て、侍になりませんか」と言いました。",
+          "literalEn": "together [at/to] town [toward] for [and] Samurai [at/to] なり せん [?] [with/and] to say いま した",
+          "naturalEn": "\"Why don’t you come with me to town and become a samurai?\" he said.",
+          "tokens": [
+            {
+              "surface": "一緒",
+              "reading": "いっしょ",
+              "meaning": "together",
+              "baseForm": "一緒",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "町",
+              "reading": "まち",
+              "meaning": "town; city",
+              "baseForm": "町",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "来",
+              "reading": "らい",
+              "meaning": "for (10 days); next (year)",
+              "baseForm": "来",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "侍",
+              "reading": "さむらい",
+              "meaning": "Samurai; warrior",
+              "baseForm": "侍",
+              "level": "N1"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "金太郎は喜んで「はい」と答えました。",
+          "literalEn": "Kintaro [topic] to be delighted んで yes [with/and] response した",
+          "naturalEn": "Kintarō happily replied, “Yes.”",
+          "tokens": [
+            {
+              "surface": "金太郎",
+              "reading": "きんたろう",
+              "meaning": "Kintaro (Golden Boy)",
+              "baseForm": "金太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "喜",
+              "reading": "よろこ",
+              "meaning": "to be delighted",
+              "baseForm": "喜ぶ",
+              "level": "N4"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "はい",
+              "meaning": "yes",
+              "baseForm": "はい",
+              "level": "N5"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "答え",
+              "reading": "こたええ",
+              "meaning": "response",
+              "baseForm": "答",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "金太郎はお母さんと動物たちに「さようなら」と言って、町へ行きました。",
+          "literalEn": "Kintaro [topic] mother [with/and] animal たち [at/to] good-bye [with/and] to say って town [toward] going した",
+          "naturalEn": "Kintarō said “Goodbye” to his mother and the animals, and went to town.",
+          "tokens": [
+            {
+              "surface": "金太郎",
+              "reading": "きんたろう",
+              "meaning": "Kintaro (Golden Boy)",
+              "baseForm": "金太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "お母さん",
+              "reading": "おかあさん",
+              "meaning": "mother",
+              "baseForm": "お母さん",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "動物",
+              "reading": "どうぶつ",
+              "meaning": "animal",
+              "baseForm": "動物",
+              "level": "N5"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "さようなら",
+              "meaning": "good-bye",
+              "baseForm": "さようなら",
+              "level": "N5"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "町",
+              "reading": "まち",
+              "meaning": "town; city",
+              "baseForm": "町",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "そして、一番強くて有名な侍になりました。",
+          "literalEn": "and number one powerful [and] famous Samurai [at/to] なり した",
+          "naturalEn": "And he became the strongest and most famous samurai.",
+          "tokens": [
+            {
+              "surface": "そして",
+              "meaning": "and",
+              "baseForm": "そして",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "一番",
+              "reading": "いちばん",
+              "meaning": "number one; most; best",
+              "baseForm": "一番",
+              "level": "N5"
+            },
+            {
+              "surface": "強",
+              "reading": "つよ",
+              "meaning": "powerful",
+              "baseForm": "強い",
+              "level": "N5"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "有名",
+              "reading": "ゆうめい",
+              "meaning": "famous",
+              "baseForm": "有名",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "侍",
+              "reading": "さむらい",
+              "meaning": "Samurai; warrior",
+              "baseForm": "侍",
+              "level": "N1"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "金太郎の友達はだれですか？",
+      "options": [
+        "海の魚",
+        "山の動物",
+        "町の子供",
+        "悪い鬼"
+      ],
+      "answerIndex": 1,
+      "explanation": "「山の動物」 is correct: 「熊や鹿や猿やうさぎは、みんな金太郎のいい友達でした。」 (Bears, deer, monkeys, and rabbits were all Kintarō’s good friends.)"
+    },
+    {
+      "question": "川に何がありませんでしたか？",
+      "options": [
+        "水",
+        "木",
+        "橋",
+        "石"
+      ],
+      "answerIndex": 2,
+      "explanation": "「橋」 is correct: 「橋がありませんでしたから、動物たちは渡ることができなくて困りました。」 (Since there was no bridge, the animals couldn’t cross and were in a bind.)"
+    },
+    {
+      "question": "金太郎は町へ行って何になりましたか？",
+      "options": [
+        "木こり",
+        "王様",
+        "侍",
+        "先生"
+      ],
+      "answerIndex": 2,
+      "explanation": "「侍」 is correct: 「その人は偉いお侍さんでした。」 (That man was a high-ranking samurai.)"
+    }
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/fairy-tales/kintaro.json"
+}

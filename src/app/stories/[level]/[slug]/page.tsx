@@ -23,6 +23,7 @@ import {
   getCompletedStoryIds,
   getStoryBySlug,
   lookupWordMetadata,
+  type StorySentence,
   type StoryToken,
 } from "@/data/stories";
 import { StoryCover } from "@/components/story-cover";
@@ -71,6 +72,7 @@ function StoryReadingRoomContent() {
   const [ isPaused, setIsPaused] = useState(false);
 
   const [selectedToken, setSelectedToken] = useState<SelectedTokenInfo | null>(null);
+  const [activeSentence, setActiveSentence] = useState<StorySentence | null>(null);
   const [savedWords, setSavedWords] = useState<Set<string>>(new Set());
   const [savingSrs, setSavingSrs] = useState(false);
 
@@ -491,6 +493,73 @@ function StoryReadingRoomContent() {
                       {paragraph.en}
                     </p>
                   )}
+
+                  {/* Granular Clause/Sentence Breakdown Pills */}
+                  {paragraph.sentences && paragraph.sentences.length > 0 && writingMode === "horizontal" && (
+                    <div className="mt-3 flex flex-wrap items-center gap-1.5 pt-2 border-t border-[var(--line)]/40">
+                      <span className="text-[10px] font-bold tracking-wider text-[var(--muted)] uppercase mr-1">
+                        Sentences:
+                      </span>
+                      {paragraph.sentences.map((sent, sIdx) => {
+                        const isSentActive = activeSentence?.ja === sent.ja;
+                        return (
+                          <button
+                            key={sIdx}
+                            type="button"
+                            onClick={() => {
+                              setActiveSentence(isSentActive ? null : sent);
+                            }}
+                            className={`group inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs transition ${
+                              isSentActive
+                                ? "border-[var(--primary)] bg-[var(--primary)] text-white shadow-sm"
+                                : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)] hover:border-[var(--primary)]/60 hover:text-[var(--ink)]"
+                            }`}
+                          >
+                            <span className="font-japanese font-semibold text-[11px]">文 {sIdx + 1}</span>
+                            <span className="max-w-[160px] truncate text-[11px] opacity-90 sm:max-w-[240px]">
+                              {sent.naturalEn}
+                            </span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
+
+                  {/* Active Sentence Breakdown Panel */}
+                  {activeSentence &&
+                    paragraph.sentences?.some((s) => s.ja === activeSentence.ja) &&
+                    writingMode === "horizontal" && (
+                      <div className="mt-3 rounded-xl border border-[var(--primary)]/30 bg-[var(--paper-tint)]/80 p-3.5 shadow-sm">
+                        <div className="flex items-start justify-between gap-2">
+                          <p lang="ja" className="font-japanese text-sm font-semibold text-[var(--ink)]">
+                            {activeSentence.ja}
+                          </p>
+                          <button
+                            type="button"
+                            onClick={() => setActiveSentence(null)}
+                            className="rounded-full p-0.5 text-[var(--muted)] hover:text-[var(--ink)]"
+                          >
+                            <X className="size-3.5" />
+                          </button>
+                        </div>
+                        <div className="mt-2.5 space-y-2 text-xs">
+                          <div>
+                            <span className="text-[10px] font-bold tracking-wider text-[var(--primary)] uppercase">
+                              Natural Translation
+                            </span>
+                            <p className="mt-0.5 text-xs text-[var(--ink)]">{activeSentence.naturalEn}</p>
+                          </div>
+                          <div>
+                            <span className="text-[10px] font-bold tracking-wider text-[var(--muted)] uppercase">
+                              Literal Structure
+                            </span>
+                            <p className="mt-0.5 text-[11px] font-mono text-[var(--muted)] leading-relaxed">
+                              {activeSentence.literalEn}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                 </div>
               );
             })}
@@ -592,6 +661,42 @@ function StoryReadingRoomContent() {
                       </Link>
                     </p>
                   )}
+                </div>
+              </div>
+            ) : activeSentence ? (
+              <div>
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <span className="text-[11px] font-semibold tracking-[0.18em] text-[var(--primary)] uppercase">
+                      Sentence Breakdown
+                    </span>
+                    <p lang="ja" className="font-japanese mt-2 text-xl font-bold text-[var(--ink)] leading-snug">
+                      {activeSentence.ja}
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    aria-label="Close sentence breakdown"
+                    onClick={() => setActiveSentence(null)}
+                    className="rounded-full p-1 text-[var(--muted)] hover:bg-[var(--paper-tint)] hover:text-[var(--ink)]"
+                  >
+                    <X className="size-4" />
+                  </button>
+                </div>
+
+                <div className="mt-4 space-y-3 border-t border-[var(--line)] pt-4">
+                  <div>
+                    <p className="text-xs font-semibold text-[var(--muted)] uppercase">Natural English</p>
+                    <p className="mt-1 text-sm leading-relaxed text-[var(--ink)]">
+                      {activeSentence.naturalEn}
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-[var(--muted)] uppercase">Literal Breakdown</p>
+                    <p className="mt-1 text-xs font-mono leading-relaxed text-[var(--muted)]">
+                      {activeSentence.literalEn}
+                    </p>
+                  </div>
                 </div>
               </div>
             ) : (
@@ -696,6 +801,25 @@ function StoryReadingRoomContent() {
                         );
                       })}
                     </div>
+
+                    {isAnswered && q.explanation && (
+                      <div
+                        className={`mt-3.5 rounded-xl border p-3.5 text-xs leading-relaxed transition ${
+                          chosenIndex === q.answerIndex
+                            ? "border-[var(--success)]/40 bg-[var(--success-soft)]"
+                            : "border-[var(--primary)]/40 bg-[var(--paper-tint)]"
+                        }`}
+                      >
+                        <span
+                          className={`block mb-1 text-[10px] font-bold tracking-wider uppercase ${
+                            chosenIndex === q.answerIndex ? "text-[var(--success)]" : "text-[var(--primary)]"
+                          }`}
+                        >
+                          {chosenIndex === q.answerIndex ? "✓ Evidence from Story" : "✗ Answer Explanation"}
+                        </span>
+                        <p className="text-xs text-[var(--ink)] leading-normal">{q.explanation}</p>
+                      </div>
+                    )}
                   </div>
                 );
               })}

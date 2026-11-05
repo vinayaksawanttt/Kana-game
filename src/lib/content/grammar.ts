@@ -25,6 +25,11 @@ export interface GrammarDocFrontmatter {
   explanation: string;
   short: string;
   formation: string[];
+  notes?: {
+    nuance: string;
+    contrast: string;
+    pitfalls: string;
+  };
 }
 
 export interface GrammarDoc {
@@ -46,6 +51,15 @@ export function buildGrammarMarkdown(point: GrammarPoint): string {
     )
     .join("\n\n");
 
+  const notesMd = point.notes
+    ? [
+        `## Nuance & Usage Notes`,
+        `### Nuance\n\n${point.notes.nuance}`,
+        `### Contrast\n\n${point.notes.contrast}`,
+        `### Common Pitfalls\n\n${point.notes.pitfalls}`,
+      ].join("\n\n")
+    : "";
+
   const rawBody = [
     `## Meaning`,
     point.meaning,
@@ -55,6 +69,7 @@ export function buildGrammarMarkdown(point: GrammarPoint): string {
     point.explanation && point.explanation !== point.meaning
       ? `## Explanation\n\n${point.explanation}`
       : "",
+    notesMd,
     examplesMd ? `## Example Sentences\n\n${examplesMd}` : "",
   ]
     .filter(Boolean)
@@ -71,6 +86,7 @@ export function buildGrammarMarkdown(point: GrammarPoint): string {
     explanation: point.explanation,
     short: point.short,
     formation: point.formation,
+    notes: point.notes,
   });
 }
 

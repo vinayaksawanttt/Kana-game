@@ -1,0 +1,1690 @@
+{
+  "id": "n5-farmer-and-badger",
+  "title": "おじいさんとタヌキ",
+  "titleRomaji": "Ojiisan to Tanuki",
+  "titleEn": "The Farmer and the Badger",
+  "level": "N5",
+  "category": "Fairy Tale",
+  "tags": [
+    "animals",
+    "revenge",
+    "rabbit",
+    "badger"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、山にいいおじいさんとおばあさんがいました。 近くに悪いタヌキがいました。 タヌキは毎日、おじいさんの作った野菜を全部食べました。 おじいさんは怒って、タヌキを捕まえました。 そして、家の木に縛りました。おじいさんは仕事に出かけました。",
+      "en": "Long, long ago, there was a good old man and an old woman in the mountain. There was a bad badger nearby. Every day, the badger ate all the vegetables the old man had grown. The old man got angry and caught the badger. Then, he tied it to a tree at the house. The old man went out to work.",
+      "sentences": [
+        {
+          "ja": "昔々、山にいいおじいさんとおばあさんがいました。",
+          "literalEn": "olden days mountain [at/to] good old man [with/and] old woman [subj] いま した",
+          "naturalEn": "Once upon a time, there lived a kind old man and an old woman in the mountains.",
+          "tokens": [
+            {
+              "surface": "昔",
+              "reading": "むかし",
+              "meaning": "olden days; former",
+              "baseForm": "昔",
+              "level": "N4"
+            },
+            {
+              "surface": "々"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "いい",
+              "meaning": "good",
+              "baseForm": "いい",
+              "level": "N5"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "近くに悪いタヌキがいました。",
+          "literalEn": "near [at/to] bad タヌキ [subj] いま した",
+          "naturalEn": "There was a mischievous raccoon dog nearby.",
+          "tokens": [
+            {
+              "surface": "近く",
+              "reading": "ちかく",
+              "meaning": "near",
+              "baseForm": "近く",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "悪い",
+              "reading": "わるい",
+              "meaning": "bad",
+              "baseForm": "悪い",
+              "level": "N5"
+            },
+            {
+              "surface": "タヌキ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "タヌキは毎日、おじいさんの作った野菜を全部食べました。",
+          "literalEn": "タヌキ [topic] every day old man ['s / of] a work [past] vegetable [obj] all  to eat した",
+          "naturalEn": "Every day, the raccoon dog ate all the vegetables the old man had grown.",
+          "tokens": [
+            {
+              "surface": "タヌキ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "毎日",
+              "reading": "まいにち",
+              "meaning": "every day",
+              "baseForm": "毎日",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "作",
+              "reading": "さく",
+              "meaning": "a work; a harvest",
+              "baseForm": "作",
+              "level": "N1"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "野菜",
+              "reading": "やさい",
+              "meaning": "vegetable",
+              "baseForm": "野菜",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "全部",
+              "reading": "ぜんぶ",
+              "meaning": "all",
+              "baseForm": "全部",
+              "level": "N5"
+            },
+            {
+              "surface": "食",
+              "reading": "く",
+              "meaning": "(male) (vulgar) to eat",
+              "baseForm": "食う",
+              "level": "N3"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "おじいさんは怒って、タヌキを捕まえました。",
+          "literalEn": "old man [topic] to get angry って タヌキ [obj] to take した",
+          "naturalEn": "The old man was angry, so he caught the raccoon dog.",
+          "tokens": [
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "怒",
+              "reading": "おこ",
+              "meaning": "to get angry; to be angry",
+              "baseForm": "怒る",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "タヌキ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "捕",
+              "reading": "と",
+              "meaning": "to take; to catch (fish); to capture",
+              "baseForm": "捕る",
+              "level": "N2"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "え"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "そして、家の木に縛りました。",
+          "literalEn": "and house ['s / of] tree [at/to] to tie した",
+          "naturalEn": "And he tied it to a tree at home.",
+          "tokens": [
+            {
+              "surface": "そして",
+              "meaning": "and",
+              "baseForm": "そして",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "木",
+              "reading": "き",
+              "meaning": "tree; wood",
+              "baseForm": "木",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "縛",
+              "reading": "しば",
+              "meaning": "to tie; to bind",
+              "baseForm": "縛る",
+              "level": "N2"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "おじいさんは仕事に出かけました。",
+          "literalEn": "old man [topic] job [at/to] to put out かけ した",
+          "naturalEn": "The old man went off to work.",
+          "tokens": [
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "仕事",
+              "reading": "しごと",
+              "meaning": "job",
+              "baseForm": "仕事",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "かけ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "おばあさんが家で仕事をしていると、タヌキは言いました。 「おばあさん、私は手伝いたいです。ひもを解いてください。」 おばあさんはタヌキをかわいそうに思って、ひもを解きました。 すると、タヌキはおばあさんを殺して、山へ走って行きました。 おじいさんは帰って、とても悲しくて泣きました。",
+      "en": "While the old woman was working at home, the badger said: \"Old woman, I want to help. Please untie the string.\" The old woman felt sorry for the badger and untied the string. Then, the badger killed the old woman and ran away to the mountain. The old man returned and was very sad and cried.",
+      "sentences": [
+        {
+          "ja": "おばあさんが家で仕事をしていると、タヌキは言いました。",
+          "literalEn": "old woman [subj] house [in/by] job [obj] [and] to be [with/and] タヌキ [topic] to say いま した",
+          "naturalEn": "While the old woman was working at home, the raccoon dog said,",
+          "tokens": [
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "仕事",
+              "reading": "しごと",
+              "meaning": "job",
+              "baseForm": "仕事",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "タヌキ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「おばあさん、私は手伝いたいです。",
+          "literalEn": "old woman  I [topic] help [want to] [is]",
+          "naturalEn": "“Grandma, I’d like to help you.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "手伝い",
+              "reading": "てつだい",
+              "meaning": "help; helper; assistant",
+              "baseForm": "手伝い",
+              "level": "N3"
+            },
+            {
+              "surface": "たい"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ひもを解いてください。",
+          "literalEn": "ひも [obj] to unfasten [and] くだ さい",
+          "naturalEn": "Please untie this string.",
+          "tokens": [
+            {
+              "surface": "ひも"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "解",
+              "reading": "と",
+              "meaning": "to unfasten",
+              "baseForm": "解く",
+              "level": "N3"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "くだ"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "」 おばあさんはタヌキをかわいそうに思って、ひもを解きました。",
+          "literalEn": "old woman [topic] タヌキ [obj] poor [at/to] to think って ひも [obj] to unfasten した",
+          "naturalEn": "” The old woman took pity on the raccoon dog and untied the string.",
+          "tokens": [
+            {
+              "surface": "」"
+            },
+            {
+              "surface": " "
+            },
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "タヌキ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "かわいそう",
+              "meaning": "poor; pitiable; pathetic",
+              "baseForm": "かわいそう",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "思",
+              "reading": "おも",
+              "meaning": "to think; to feel",
+              "baseForm": "思う",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ひも"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "解",
+              "reading": "と",
+              "meaning": "to unfasten",
+              "baseForm": "解く",
+              "level": "N3"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "すると、タヌキはおばあさんを殺して、山へ走って行きました。",
+          "literalEn": "then タヌキ [topic] old woman [obj] to kill [and] mountain [toward] to run って going した",
+          "naturalEn": "Then, the raccoon dog killed the old woman and ran off into the mountains.",
+          "tokens": [
+            {
+              "surface": "すると",
+              "meaning": "then",
+              "baseForm": "すると",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "タヌキ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "殺し",
+              "reading": "ころし",
+              "meaning": "to kill",
+              "baseForm": "殺す",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "走",
+              "reading": "はし",
+              "meaning": "to run",
+              "baseForm": "走る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "おじいさんは帰って、とても悲しくて泣きました。",
+          "literalEn": "old man [topic] to go back って very sad しく [and] to weep した",
+          "naturalEn": "The old man came home and was so sad that he cried.",
+          "tokens": [
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "帰",
+              "reading": "かえ",
+              "meaning": "to go back",
+              "baseForm": "帰る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "悲",
+              "reading": "かな",
+              "meaning": "sad, deplore, grieve",
+              "baseForm": "悲",
+              "level": "N3"
+            },
+            {
+              "surface": "しく"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "泣き",
+              "reading": "なき",
+              "meaning": "to weep",
+              "baseForm": "泣く",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "おじいさんの友達のウサギが来て、「泣かないでください。私が悪いタヌキをやっつけます」と言いました。 ウサギはタヌキと山へ行きました。 二人は草をたくさん切って、背中に乗せました。 ウサギは後ろから、タヌキの背中の草に火をつけました。 タヌキは背中がとても熱くて、泣きました。",
+      "en": "The old man's friend, the rabbit, came and said, \"Please don't cry. I will defeat the bad badger.\" The rabbit went to the mountain with the badger. The two cut a lot of grass and put it on their backs. The rabbit, from behind, set fire to the grass on the badger's back. The badger's back was very hot, and he cried.",
+      "sentences": [
+        {
+          "ja": "おじいさんの友達のウサギが来て、「泣かないでください。",
+          "literalEn": "old man ['s / of] friend ['s / of] ウサギ [subj] for [and] to weep [?] [not] [in/by] くだ さい",
+          "naturalEn": "The rabbit, who was the old man’s friend, came over and said, “Please don’t cry.",
+          "tokens": [
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "友達",
+              "reading": "ともだち",
+              "meaning": "friend",
+              "baseForm": "友達",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ウサギ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "来",
+              "reading": "らい",
+              "meaning": "for (10 days); next (year)",
+              "baseForm": "来",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "泣",
+              "reading": "な",
+              "meaning": "to weep",
+              "baseForm": "泣く",
+              "level": "N4"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "くだ"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "私が悪いタヌキをやっつけます」と言いました。",
+          "literalEn": "I [subj] bad タヌキ [obj] つけ [polite] [with/and] to say いま した",
+          "naturalEn": "\"I'll take care of that mean raccoon,\" he said.",
+          "tokens": [
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "悪い",
+              "reading": "わるい",
+              "meaning": "bad",
+              "baseForm": "悪い",
+              "level": "N5"
+            },
+            {
+              "surface": "タヌキ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "つけ"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ウサギはタヌキと山へ行きました。",
+          "literalEn": "ウサギ [topic] タヌキ [with/and] mountain [toward] going した",
+          "naturalEn": "The rabbit went to the mountain with the raccoon dog.",
+          "tokens": [
+            {
+              "surface": "ウサギ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "タヌキ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "二人は草をたくさん切って、背中に乗せました。",
+          "literalEn": "two people [topic] grass [obj] many to cut って back of the body [at/to] to get on した",
+          "naturalEn": "The two of them cut a lot of grass and loaded it onto their backs.",
+          "tokens": [
+            {
+              "surface": "二人",
+              "reading": "ふたり",
+              "meaning": "two people; pair",
+              "baseForm": "二人",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "草",
+              "reading": "くさ",
+              "meaning": "grass",
+              "baseForm": "草",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "切",
+              "reading": "き",
+              "meaning": "to cut",
+              "baseForm": "切る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "背中",
+              "reading": "せなか",
+              "meaning": "back of the body",
+              "baseForm": "背中",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "乗",
+              "reading": "の",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ウサギは後ろから、タヌキの背中の草に火をつけました。",
+          "literalEn": "ウサギ [topic] behind [from] タヌキ ['s / of] back of the body ['s / of] grass [at/to] fire [obj] つけ した",
+          "naturalEn": "The rabbit set the grass on the raccoon’s back on fire from behind.",
+          "tokens": [
+            {
+              "surface": "ウサギ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "後ろ",
+              "reading": "うしろ",
+              "meaning": "behind",
+              "baseForm": "後ろ",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "タヌキ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "背中",
+              "reading": "せなか",
+              "meaning": "back of the body",
+              "baseForm": "背中",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "草",
+              "reading": "くさ",
+              "meaning": "grass",
+              "baseForm": "草",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "火",
+              "reading": "ひ",
+              "meaning": "fire",
+              "baseForm": "火",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "つけ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "タヌキは背中がとても熱くて、泣きました。",
+          "literalEn": "タヌキ [topic] back of the body [subj] very fever [and] to weep した",
+          "naturalEn": "The raccoon’s back was so hot that he cried.",
+          "tokens": [
+            {
+              "surface": "タヌキ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "背中",
+              "reading": "せなか",
+              "meaning": "back of the body",
+              "baseForm": "背中",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "熱",
+              "reading": "ねつ",
+              "meaning": "fever",
+              "baseForm": "熱",
+              "level": "N4"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "泣き",
+              "reading": "なき",
+              "meaning": "to weep",
+              "baseForm": "泣く",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "少し後で、ウサギはタヌキと海へ行きました。 ウサギは木の船に乗りました。タヌキは土の船に乗りました。 二人が船に乗って海へ行くと、タヌキの土の船は水で壊れました。 タヌキは海の中に入って、死にました。 ウサギはおじいさんの家へ帰りました。 おじいさんはウサギに「ありがとう」と言って、一緒に楽しく住みました。",
+      "en": "A little later, the rabbit went to the sea with the badger. The rabbit rode a wooden boat. The badger rode a dirt boat. When the two rode the boats and went to the sea, the badger's dirt boat broke from the water. The badger went into the sea and died. The rabbit returned to the old man's house. The old man said \"Thank you\" to the rabbit, and they lived happily together.",
+      "sentences": [
+        {
+          "ja": "少し後で、ウサギはタヌキと海へ行きました。",
+          "literalEn": "few afterwards ウサギ [topic] タヌキ [with/and] sea [toward] going した",
+          "naturalEn": "A little while later, the rabbit went to the sea with the raccoon dog.",
+          "tokens": [
+            {
+              "surface": "少し",
+              "reading": "すこし",
+              "meaning": "few",
+              "baseForm": "少し",
+              "level": "N5"
+            },
+            {
+              "surface": "後で",
+              "reading": "あとで",
+              "meaning": "afterwards",
+              "baseForm": "後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ウサギ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "タヌキ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ウサギは木の船に乗りました。",
+          "literalEn": "ウサギ [topic] tree ['s / of] ship [at/to] to get on した",
+          "naturalEn": "The rabbit got into the wooden boat.",
+          "tokens": [
+            {
+              "surface": "ウサギ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "木",
+              "reading": "き",
+              "meaning": "tree; wood",
+              "baseForm": "木",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "船",
+              "reading": "ふね",
+              "meaning": "ship; boat; watercraft",
+              "baseForm": "船",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "乗り",
+              "reading": "のり",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "タヌキは土の船に乗りました。",
+          "literalEn": "タヌキ [topic] earth ['s / of] ship [at/to] to get on した",
+          "naturalEn": "The raccoon dog got into the boat made of clay.",
+          "tokens": [
+            {
+              "surface": "タヌキ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "土",
+              "reading": "つち",
+              "meaning": "earth; soil",
+              "baseForm": "土",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "船",
+              "reading": "ふね",
+              "meaning": "ship; boat; watercraft",
+              "baseForm": "船",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "乗り",
+              "reading": "のり",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "二人が船に乗って海へ行くと、タヌキの土の船は水で壊れました。",
+          "literalEn": "two people [subj] ship [at/to] to get on って sea [toward] to go [with/and] タヌキ ['s / of] earth ['s / of] ship [topic] water [in/by] to break した",
+          "naturalEn": "When the two of them set out for the sea in their boats, the raccoon dog’s clay boat broke apart in the water.",
+          "tokens": [
+            {
+              "surface": "二人",
+              "reading": "ふたり",
+              "meaning": "two people; pair",
+              "baseForm": "二人",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "船",
+              "reading": "ふね",
+              "meaning": "ship; boat; watercraft",
+              "baseForm": "船",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "乗",
+              "reading": "の",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行く",
+              "reading": "いく",
+              "meaning": "to go",
+              "baseForm": "行く",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "タヌキ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "土",
+              "reading": "つち",
+              "meaning": "earth; soil",
+              "baseForm": "土",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "船",
+              "reading": "ふね",
+              "meaning": "ship; boat; watercraft",
+              "baseForm": "船",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "水",
+              "reading": "みず",
+              "meaning": "water",
+              "baseForm": "水",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "壊",
+              "reading": "こわ",
+              "meaning": "to break",
+              "baseForm": "壊す",
+              "level": "N4"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "タヌキは海の中に入って、死にました。",
+          "literalEn": "タヌキ [topic] sea ['s / of] middle [at/to] to enter って death [at/to] した",
+          "naturalEn": "The raccoon went into the sea and died.",
+          "tokens": [
+            {
+              "surface": "タヌキ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入",
+              "reading": "はい",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "死",
+              "reading": "し",
+              "meaning": "death; decease",
+              "baseForm": "死",
+              "level": "N1"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ウサギはおじいさんの家へ帰りました。",
+          "literalEn": "ウサギ [topic] old man ['s / of] house [toward] return した",
+          "naturalEn": "The rabbit returned to the old man’s house.",
+          "tokens": [
+            {
+              "surface": "ウサギ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "帰り",
+              "reading": "かえり",
+              "meaning": "return",
+              "baseForm": "帰り",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "おじいさんはウサギに「ありがとう」と言って、一緒に楽しく住みました。",
+          "literalEn": "old man [topic] ウサギ [at/to] Thank you [with/and] to say って together [at/to] comfort しく dwelling した",
+          "naturalEn": "The old man said “Thank you” to the rabbit, and they lived happily together.",
+          "tokens": [
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "ウサギ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "ありがとう",
+              "meaning": "Thank you",
+              "baseForm": "ありがとう",
+              "level": "N5"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "一緒",
+              "reading": "いっしょ",
+              "meaning": "together",
+              "baseForm": "一緒",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "楽",
+              "reading": "らく",
+              "meaning": "comfort; ease",
+              "baseForm": "楽",
+              "level": "N3"
+            },
+            {
+              "surface": "しく"
+            },
+            {
+              "surface": "住",
+              "reading": "じゅう",
+              "meaning": "dwelling; living",
+              "baseForm": "住",
+              "level": "N1"
+            },
+            {
+              "surface": "み"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "タヌキはどうしておばあさんに「ひもを解いてください」と言いましたか？",
+      "options": [
+        "仕事を手伝いたいから",
+        "ご飯を食べたいから",
+        "おじいさんが呼んだから",
+        "海に行きたいから"
+      ],
+      "answerIndex": 0,
+      "explanation": "「仕事を手伝いたいから」 is correct: 「タヌキは毎日、おじいさんの作った野菜を全部食べました。」 (Every day, the raccoon dog ate all the vegetables the old man had grown.)"
+    },
+    {
+      "question": "ウサギはタヌキの背中の草をどうしましたか？",
+      "options": [
+        "全部食べました",
+        "火をつけました",
+        "水に入れました",
+        "土をかけました"
+      ],
+      "answerIndex": 1,
+      "explanation": "「火をつけました」 is correct: 「ウサギは後ろから、タヌキの背中の草に火をつけました。」 (The rabbit set the grass on the raccoon’s back on fire from behind.)"
+    },
+    {
+      "question": "タヌキが海で乗った船は何の船でしたか？",
+      "options": [
+        "木の船",
+        "大きい船",
+        "土の船",
+        "赤い船"
+      ],
+      "answerIndex": 2,
+      "explanation": "「土の船」 is correct: 「タヌキは土の船に乗りました。」 (The raccoon dog got into the boat made of clay.)"
+    }
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/fairy-tales/farmer-and-badger.json"
+}

@@ -5,23 +5,849 @@
   "titleEn": "A Day at the Zoo",
   "level": "N4",
   "category": "Everyday Life",
-  "tags": ["zoo", "animals", "weekend", "family"],
+  "tags": [
+    "zoo",
+    "animals",
+    "weekend",
+    "family"
+  ],
   "paragraphs": [
     {
       "ja": "日曜日の朝、佐藤さんは妹と一緒に市の動物園へ出かけました。天気がよくて暖かかったので、入り口の前にはたくさんの家族が並んでいました。",
-      "en": "On Sunday morning, Sato went out to the city zoo with his younger sister. Because the weather was nice and warm, many families were lined up in front of the entrance."
+      "en": "On Sunday morning, Sato went out to the city zoo with his younger sister. Because the weather was nice and warm, many families were lined up in front of the entrance.",
+      "sentences": [
+        {
+          "ja": "日曜日の朝、佐藤さんは妹と一緒に市の動物園へ出かけました。",
+          "literalEn": "Sunday ['s / of] morning Sato [Mr/Ms] [topic]  younger sister [with/and] together [at/to] city ['s / of] zoo [toward] to put out かけ した",
+          "naturalEn": "On Sunday morning, Mr. Sato went to the city zoo with his younger sister.",
+          "tokens": [
+            {
+              "surface": "日曜日",
+              "reading": "にちようび",
+              "meaning": "Sunday",
+              "baseForm": "日曜日",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "朝",
+              "reading": "あさ",
+              "meaning": "morning",
+              "baseForm": "朝",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "佐藤",
+              "reading": "さとう",
+              "meaning": "Sato (surname)",
+              "baseForm": "佐藤",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "妹",
+              "reading": "いもうと",
+              "meaning": "(humble) younger sister",
+              "baseForm": "妹",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "一緒",
+              "reading": "いっしょ",
+              "meaning": "together",
+              "baseForm": "一緒",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "市",
+              "reading": "し",
+              "meaning": "city",
+              "baseForm": "市",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "動物園",
+              "reading": "どうぶつえん",
+              "meaning": "zoo",
+              "baseForm": "動物園",
+              "level": "N4"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "かけ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "天気がよくて暖かかったので、入り口の前にはたくさんの家族が並んでいました。",
+          "literalEn": "weather [subj] often [and] warmth [?] [past] ので to enter ['s / of] before [at/to] [topic] many ['s / of] family [subj] to line up んで いま した",
+          "naturalEn": "Since the weather was nice and warm, there were many families lined up in front of the entrance.",
+          "tokens": [
+            {
+              "surface": "天気",
+              "reading": "てんき",
+              "meaning": "weather",
+              "baseForm": "天気",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "よく",
+              "meaning": "often; well",
+              "baseForm": "よく",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "暖か",
+              "reading": "あたたか",
+              "meaning": "warmth",
+              "baseForm": "暖",
+              "level": "N1"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "ので"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "入り口",
+              "reading": "はいり口",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "前",
+              "reading": "まえ",
+              "meaning": "before",
+              "baseForm": "前",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "家族",
+              "reading": "かぞく",
+              "meaning": "family",
+              "baseForm": "家族",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "並",
+              "reading": "なら",
+              "meaning": "to line up; to stand in a line",
+              "baseForm": "並ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "中に入ると、まず大きな象と首の長いキリンを見に行きました。象が長い鼻を使って水を飲む姿を見て、妹はとても喜んで写真を撮りました。",
-      "en": "Once inside, they first went to see the large elephants and the long-necked giraffes. Seeing the elephant use its long trunk to drink water, his sister was delighted and took photos."
+      "en": "Once inside, they first went to see the large elephants and the long-necked giraffes. Seeing the elephant use its long trunk to drink water, his sister was delighted and took photos.",
+      "sentences": [
+        {
+          "ja": "中に入ると、まず大きな象と首の長いキリンを見に行きました。",
+          "literalEn": "middle [at/to] to enter [with/and] first of all big elephant [with/and] neck ['s / of] long キリン [obj] to see [at/to] going した",
+          "naturalEn": "Once inside, we went straight to see the big elephant and the long-necked giraffe.",
+          "tokens": [
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入る",
+              "reading": "はいる",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "まず",
+              "meaning": "first of all",
+              "baseForm": "まず",
+              "level": "N4"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "象",
+              "reading": "ぞう",
+              "meaning": "elephant",
+              "baseForm": "象",
+              "level": "N3"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "首",
+              "reading": "くび",
+              "meaning": "neck",
+              "baseForm": "首",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "長い",
+              "reading": "ながい",
+              "meaning": "long",
+              "baseForm": "長い",
+              "level": "N5"
+            },
+            {
+              "surface": "キリン"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "象が長い鼻を使って水を飲む姿を見て、妹はとても喜んで写真を撮りました。",
+          "literalEn": "elephant [subj] long nose [obj] to use って water [obj] to drink figure [obj] to see [and]  younger sister [topic] very to be delighted んで photograph [obj] to take a photo or record a film した",
+          "naturalEn": "Seeing the elephant drink water with its long trunk made my little sister very happy, and she took some photos.",
+          "tokens": [
+            {
+              "surface": "象",
+              "reading": "ぞう",
+              "meaning": "elephant",
+              "baseForm": "象",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "長い",
+              "reading": "ながい",
+              "meaning": "long",
+              "baseForm": "長い",
+              "level": "N5"
+            },
+            {
+              "surface": "鼻",
+              "reading": "はな",
+              "meaning": "nose",
+              "baseForm": "鼻",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "使",
+              "reading": "つか",
+              "meaning": "to use",
+              "baseForm": "使う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "水",
+              "reading": "みず",
+              "meaning": "water",
+              "baseForm": "水",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "飲む",
+              "reading": "のむ",
+              "meaning": "to drink",
+              "baseForm": "飲む",
+              "level": "N5"
+            },
+            {
+              "surface": "姿",
+              "reading": "すがた",
+              "meaning": "figure; shape; appearance",
+              "baseForm": "姿",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "妹",
+              "reading": "いもうと",
+              "meaning": "(humble) younger sister",
+              "baseForm": "妹",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "喜",
+              "reading": "よろこ",
+              "meaning": "to be delighted",
+              "baseForm": "喜ぶ",
+              "level": "N4"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "写真",
+              "reading": "しゃしん",
+              "meaning": "photograph",
+              "baseForm": "写真",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "撮",
+              "reading": "と",
+              "meaning": "to take a photo or record a film",
+              "baseForm": "撮る",
+              "level": "N5"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "お昼には、木の下のベンチでお母さんが作ってくれたお弁当を食べました。午後からはパンダやペンギンのコーナーを回り、かわいい動物の動きを楽しみました。",
-      "en": "At noon, they ate the boxed lunch their mother had made for them on a bench under a tree. In the afternoon, they walked around the panda and penguin areas and enjoyed the cute animals' movements."
+      "en": "At noon, they ate the boxed lunch their mother had made for them on a bench under a tree. In the afternoon, they walked around the panda and penguin areas and enjoyed the cute animals' movements.",
+      "sentences": [
+        {
+          "ja": "お昼には、木の下のベンチでお母さんが作ってくれたお弁当を食べました。",
+          "literalEn": "lunch [at/to] [topic] tree ['s / of] bench [in/by] mother [subj] a work って [past] box lunch [obj]  to eat した",
+          "naturalEn": "At lunchtime, I ate the packed lunch my mom made for me on a bench under a tree.",
+          "tokens": [
+            {
+              "surface": "お昼",
+              "reading": "おひる",
+              "meaning": "lunch; noon",
+              "baseForm": "お昼",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "木の下",
+              "reading": "きの下",
+              "meaning": "tree; wood",
+              "baseForm": "木",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ベンチ",
+              "meaning": "bench",
+              "baseForm": "ベンチ",
+              "level": "N3"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "お母さん",
+              "reading": "おかあさん",
+              "meaning": "mother",
+              "baseForm": "お母さん",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "作",
+              "reading": "さく",
+              "meaning": "a work; a harvest",
+              "baseForm": "作",
+              "level": "N1"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "弁当",
+              "reading": "べんとう",
+              "meaning": "box lunch",
+              "baseForm": "弁当",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "食",
+              "reading": "く",
+              "meaning": "(male) (vulgar) to eat",
+              "baseForm": "食う",
+              "level": "N3"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "午後からはパンダやペンギンのコーナーを回り、かわいい動物の動きを楽しみました。",
+          "literalEn": "afternoon [from] [topic] パンダ ペンギン ['s / of] corner [obj] circumference cute animal ['s / of] movement [obj] joy した",
+          "naturalEn": "In the afternoon, we visited the panda and penguin exhibits and enjoyed watching the cute animals move around.",
+          "tokens": [
+            {
+              "surface": "午後",
+              "reading": "ごご",
+              "meaning": "afternoon",
+              "baseForm": "午後",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "パンダ"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "ペンギン"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "コーナー",
+              "meaning": "corner",
+              "baseForm": "コーナー",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "回り",
+              "reading": "まわり",
+              "meaning": "circumference; surroundings; circulation",
+              "baseForm": "回り",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "かわいい",
+              "meaning": "cute",
+              "baseForm": "かわいい",
+              "level": "N5"
+            },
+            {
+              "surface": "動物",
+              "reading": "どうぶつ",
+              "meaning": "animal",
+              "baseForm": "動物",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "動き",
+              "reading": "うごき",
+              "meaning": "movement; activity; trend",
+              "baseForm": "動き",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "楽しみ",
+              "reading": "たのしみ",
+              "meaning": "joy",
+              "baseForm": "楽しみ",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "帰る前に売店でパンダのぬいぐるみを買いました。少し疲れましたが、二人にとって忘れられない楽しい一日になりました。",
-      "en": "Before going home, they bought a stuffed panda toy at the gift shop. Although they were a little tired, it became an unforgettable and fun day for the two of them."
+      "en": "Before going home, they bought a stuffed panda toy at the gift shop. Although they were a little tired, it became an unforgettable and fun day for the two of them.",
+      "sentences": [
+        {
+          "ja": "帰る前に売店でパンダのぬいぐるみを買いました。",
+          "literalEn": "to go back before [at/to] shop [in/by] パンダ ['s / of] ぬいぐるみ [obj] to buy した",
+          "naturalEn": "Before heading home, we bought a panda stuffed animal at the gift shop.",
+          "tokens": [
+            {
+              "surface": "帰る",
+              "reading": "かえる",
+              "meaning": "to go back",
+              "baseForm": "帰る",
+              "level": "N5"
+            },
+            {
+              "surface": "前",
+              "reading": "まえ",
+              "meaning": "before",
+              "baseForm": "前",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "売店",
+              "reading": "ばいてん",
+              "meaning": "shop; stand",
+              "baseForm": "売店",
+              "level": "N2"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "パンダ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ぬいぐるみ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "買い",
+              "reading": "かい",
+              "meaning": "to buy",
+              "baseForm": "買う",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "少し疲れましたが、二人にとって忘れられない楽しい一日になりました。",
+          "literalEn": "few tiredness した [subj] two people にとって forget [not] enjoyable one day [at/to] なり した",
+          "naturalEn": "We were a little tired, but it turned out to be an unforgettable and fun day for both of us.",
+          "tokens": [
+            {
+              "surface": "少し",
+              "reading": "すこし",
+              "meaning": "few",
+              "baseForm": "少し",
+              "level": "N5"
+            },
+            {
+              "surface": "疲れ",
+              "reading": "つかれ",
+              "meaning": "tiredness; fatigue",
+              "baseForm": "疲れ",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "二人",
+              "reading": "ふたり",
+              "meaning": "two people; pair",
+              "baseForm": "二人",
+              "level": "N5"
+            },
+            {
+              "surface": "にとって"
+            },
+            {
+              "surface": "忘れ",
+              "reading": "わすれ",
+              "meaning": "forget",
+              "baseForm": "忘",
+              "level": "N3"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "楽しい",
+              "reading": "たのしい",
+              "meaning": "enjoyable",
+              "baseForm": "楽しい",
+              "level": "N5"
+            },
+            {
+              "surface": "一日",
+              "reading": "いちにち",
+              "meaning": "one day; all day",
+              "baseForm": "一日",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
@@ -33,7 +859,8 @@
         "妹",
         "弟"
       ],
-      "answerIndex": 2
+      "answerIndex": 2,
+      "explanation": "「妹」 is correct: 「日曜日の朝、佐藤さんは妹と一緒に市の動物園へ出かけました。」 (On Sunday morning, Mr. Sato went to the city zoo with his younger sister.)"
     },
     {
       "question": "二人は最初になんの動物を見に行きましたか？",
@@ -43,7 +870,8 @@
         "ライオンとトラ",
         "猿と鳥"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「象とキリン」 is the correct answer according to the story."
     },
     {
       "question": "帰る前に売店で何を買いましたか？",
@@ -53,7 +881,9 @@
         "絵はがき",
         "パンダのぬいぐるみ"
       ],
-      "answerIndex": 3
+      "answerIndex": 3,
+      "explanation": "「パンダのぬいぐるみ」 is correct: 「帰る前に売店でパンダのぬいぐるみを買いました。」 (Before heading home, we bought a panda stuffed animal at the gift shop.)"
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/zoo.json"
 }

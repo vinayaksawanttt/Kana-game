@@ -14,19 +14,2008 @@
   "paragraphs": [
     {
       "ja": "昔々、山で動物を捕まえるのが上手な「山幸彦（やまさちひこ）」と、海で魚を釣るのが上手な「海幸彦（うみさちひこ）」という兄弟がいました。 ある日、二人は仕事の道具を交換することにしました。 しかし、弟の山幸彦は魚の釣り方がわかりませんでした。 彼は一日中海にいましたが、魚は一匹も釣れず、兄の大切な釣り針を海に落としてしまいました。 兄はとても怒って、山幸彦を許しませんでした。",
-      "en": "Long, long ago, there were brothers: \"Yamasachihiko\" (Happy Hunter), who was good at catching animals in the mountains, and \"Umisachihiko\" (Skillful Fisher), who was good at catching fish in the sea. One day, the two decided to exchange their work tools. However, the younger brother Yamasachihiko did not know how to fish. He was at the sea all day, but he could not catch a single fish, and dropped his older brother's precious fishing hook into the sea. The older brother got very angry and did not forgive Yamasachihiko."
+      "en": "Long, long ago, there were brothers: \"Yamasachihiko\" (Happy Hunter), who was good at catching animals in the mountains, and \"Umisachihiko\" (Skillful Fisher), who was good at catching fish in the sea. One day, the two decided to exchange their work tools. However, the younger brother Yamasachihiko did not know how to fish. He was at the sea all day, but he could not catch a single fish, and dropped his older brother's precious fishing hook into the sea. The older brother got very angry and did not forgive Yamasachihiko.",
+      "sentences": [
+        {
+          "ja": "昔々、山で動物を捕まえるのが上手な「山幸彦（やまさちひこ）」と、海で魚を釣るのが上手な「海幸彦（うみさちひこ）」という兄弟がいました。",
+          "literalEn": "olden days mountain [in/by] animal [obj] to seize ['s / of] [subj] skillful mountain Sachihiko [with/and] sea [in/by] fish [obj] to fish ['s / of] [subj] skillful sea Sachihiko という  siblings [subj] いま した",
+          "naturalEn": "Once upon a time, there were two brothers: “Yama-sachihiko,” who was skilled at catching animals in the mountains, and “Umi-sachihiko,” who was skilled at fishing in the sea.",
+          "tokens": [
+            {
+              "surface": "昔",
+              "reading": "むかし",
+              "meaning": "olden days; former",
+              "baseForm": "昔",
+              "level": "N4"
+            },
+            {
+              "surface": "々"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "動物",
+              "reading": "どうぶつ",
+              "meaning": "animal",
+              "baseForm": "動物",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "捕まえる",
+              "reading": "つかまえる",
+              "meaning": "to seize",
+              "baseForm": "捕まえる",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "上手",
+              "reading": "じょうず",
+              "meaning": "skillful",
+              "baseForm": "上手",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "幸彦",
+              "reading": "さちひこ",
+              "meaning": "Sachihiko",
+              "baseForm": "幸彦",
+              "level": "N4"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "魚",
+              "reading": "さかな",
+              "meaning": "fish",
+              "baseForm": "魚",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "釣る",
+              "reading": "つる",
+              "meaning": "to fish",
+              "baseForm": "釣る",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "上手",
+              "reading": "じょうず",
+              "meaning": "skillful",
+              "baseForm": "上手",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "幸彦",
+              "reading": "さちひこ",
+              "meaning": "Sachihiko",
+              "baseForm": "幸彦",
+              "level": "N4"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "兄弟",
+              "reading": "きょうだい",
+              "meaning": "(humble) siblings",
+              "baseForm": "兄弟",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ある日、二人は仕事の道具を交換することにしました。",
+          "literalEn": "to be day two people [topic] job ['s / of] tool [obj] exchange to do ことに しま した",
+          "naturalEn": "One day, the two decided to exchange their tools of the trade.",
+          "tokens": [
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "二人",
+              "reading": "ふたり",
+              "meaning": "two people; pair",
+              "baseForm": "二人",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "仕事",
+              "reading": "しごと",
+              "meaning": "job",
+              "baseForm": "仕事",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "道具",
+              "reading": "どうぐ",
+              "meaning": "tool; means",
+              "baseForm": "道具",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "交換",
+              "reading": "こうかん",
+              "meaning": "exchange; interchange; reciprocity",
+              "baseForm": "交換",
+              "level": "N3"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "しかし、弟の山幸彦は魚の釣り方がわかりませんでした。",
+          "literalEn": "however younger brother ['s / of] mountain Sachihiko [topic] fish fishing person [subj] わか せん [in/by] した",
+          "naturalEn": "However, the younger brother, Yamakohiko, did not know how to fish.",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "弟",
+              "reading": "おとうと",
+              "meaning": "younger brother",
+              "baseForm": "弟",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "幸彦",
+              "reading": "さちひこ",
+              "meaning": "Sachihiko",
+              "baseForm": "幸彦",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "魚の",
+              "reading": "さかなの",
+              "meaning": "fish",
+              "baseForm": "魚",
+              "level": "N5"
+            },
+            {
+              "surface": "釣り",
+              "reading": "つりり",
+              "meaning": "fishing; angling",
+              "baseForm": "釣",
+              "level": "N3"
+            },
+            {
+              "surface": "方",
+              "reading": "かた",
+              "meaning": "person; way of doing",
+              "baseForm": "方",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "わか"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼は一日中海にいましたが、魚は一匹も釣れず、兄の大切な釣り針を海に落としてしまいました。",
+          "literalEn": "he [topic] all day long sea [at/to] いま した [subj] fish [topic] one animal [also] fishing  older brother ['s / of] important fishing [obj] sea [at/to] to drop [and] しま いま した",
+          "naturalEn": "He spent the whole day at sea, but he didn’t catch a single fish, and he dropped his older brother’s precious fishing hook into the sea.",
+          "tokens": [
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "一日中",
+              "reading": "いちにちじゅう",
+              "meaning": "all day long",
+              "baseForm": "一日中",
+              "level": "N5"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "魚",
+              "reading": "さかな",
+              "meaning": "fish",
+              "baseForm": "魚",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "一匹",
+              "reading": "いっぴき",
+              "meaning": "one animal (small)",
+              "baseForm": "一匹",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "釣",
+              "reading": "つり",
+              "meaning": "fishing; angling",
+              "baseForm": "釣",
+              "level": "N3"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ず"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "兄",
+              "reading": "あに",
+              "meaning": "(humble) older brother",
+              "baseForm": "兄",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "大切",
+              "reading": "たいせつ",
+              "meaning": "important",
+              "baseForm": "大切",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "釣り針",
+              "reading": "つりり針",
+              "meaning": "fishing; angling",
+              "baseForm": "釣",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "落とし",
+              "reading": "おととし",
+              "meaning": "to drop",
+              "baseForm": "落す",
+              "level": "N4"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "兄はとても怒って、山幸彦を許しませんでした。",
+          "literalEn": "older brother [topic] very to get angry って mountain Sachihiko [obj] to permit しま せん [in/by] した",
+          "naturalEn": "The older brother was very angry and would not forgive Yamakihiko.",
+          "tokens": [
+            {
+              "surface": "兄",
+              "reading": "あに",
+              "meaning": "(humble) older brother",
+              "baseForm": "兄",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "怒",
+              "reading": "おこ",
+              "meaning": "to get angry; to be angry",
+              "baseForm": "怒る",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "幸彦",
+              "reading": "さちひこ",
+              "meaning": "Sachihiko",
+              "baseForm": "幸彦",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "許",
+              "reading": "ゆる",
+              "meaning": "to permit; to allow; to approve",
+              "baseForm": "許す",
+              "level": "N3"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "山幸彦が海辺で困っていると、親切なおじいさんが来て、「海の中の竜宮（りゅうぐう）へ行きなさい」と教えました。 山幸彦はおじいさんが作った船に乗って、海の王様の城へ行きました。 城の門のそばで、彼は美しい二人の姫に会いました。 海の王様は山幸彦を歓迎して、城でごちそうを出しました。",
-      "en": "When Yamasachihiko was troubled on the beach, a kind old man came and taught him, \"Go to the Dragon Palace under the sea.\" Yamasachihiko rode the boat made by the old man and went to the Sea King's castle. Near the castle gate, he met two beautiful princesses. The Sea King welcomed Yamasachihiko and served a feast at the castle."
+      "en": "When Yamasachihiko was troubled on the beach, a kind old man came and taught him, \"Go to the Dragon Palace under the sea.\" Yamasachihiko rode the boat made by the old man and went to the Sea King's castle. Near the castle gate, he met two beautiful princesses. The Sea King welcomed Yamasachihiko and served a feast at the castle.",
+      "sentences": [
+        {
+          "ja": "山幸彦が海辺で困っていると、親切なおじいさんが来て、「海の中の竜宮（りゅうぐう）へ行きなさい」と教えました。",
+          "literalEn": "mountain Sachihiko [subj] beach [in/by] to be worried って to be [with/and] kindness old man [subj] for [and] sea ['s / of] middle ['s / of] Dragon Palace [toward] going さい [with/and] teachings した",
+          "naturalEn": "While Yamato-takeru was in distress on the seashore, a kind old man came along and told him, “Go to the Dragon Palace in the sea.”",
+          "tokens": [
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "幸彦",
+              "reading": "さちひこ",
+              "meaning": "Sachihiko",
+              "baseForm": "幸彦",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "海辺",
+              "reading": "うみべ",
+              "meaning": "beach; seashore",
+              "baseForm": "海辺",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "困",
+              "reading": "こま",
+              "meaning": "to be worried",
+              "baseForm": "困る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "親切",
+              "reading": "しんせつ",
+              "meaning": "kindness",
+              "baseForm": "親切",
+              "level": "N4"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "来",
+              "reading": "らい",
+              "meaning": "for (10 days); next (year)",
+              "baseForm": "来",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "竜宮",
+              "reading": "りゅうぐう",
+              "meaning": "Dragon Palace",
+              "baseForm": "竜宮",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "教え",
+              "reading": "おしえ",
+              "meaning": "teachings; precept; lesson",
+              "baseForm": "教え",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "山幸彦はおじいさんが作った船に乗って、海の王様の城へ行きました。",
+          "literalEn": "mountain Sachihiko [topic] old man [subj] a work [past] ship [at/to] to get on って sea ['s / of] king ['s / of] castle [toward] going した",
+          "naturalEn": "Yamato-Takeru boarded the boat the old man had built and went to the Sea King’s castle.",
+          "tokens": [
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "幸彦",
+              "reading": "さちひこ",
+              "meaning": "Sachihiko",
+              "baseForm": "幸彦",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "作",
+              "reading": "さく",
+              "meaning": "a work; a harvest",
+              "baseForm": "作",
+              "level": "N1"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "船",
+              "reading": "ふね",
+              "meaning": "ship; boat; watercraft",
+              "baseForm": "船",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "乗",
+              "reading": "の",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "王様",
+              "reading": "おうさま",
+              "meaning": "king",
+              "baseForm": "王様",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "城",
+              "reading": "しろ",
+              "meaning": "castle",
+              "baseForm": "城",
+              "level": "N3"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "城の門のそばで、彼は美しい二人の姫に会いました。",
+          "literalEn": "castle ['s / of] gate ['s / of] near [in/by] he [topic] beautiful two people ['s / of] princess [at/to] meeting いま した",
+          "naturalEn": "Near the castle gates, he met two beautiful princesses.",
+          "tokens": [
+            {
+              "surface": "城",
+              "reading": "しろ",
+              "meaning": "castle",
+              "baseForm": "城",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "門",
+              "reading": "もん",
+              "meaning": "gate",
+              "baseForm": "門",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "そば",
+              "meaning": "near; beside",
+              "baseForm": "そば",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "美しい",
+              "reading": "うつくしい",
+              "meaning": "beautiful",
+              "baseForm": "美しい",
+              "level": "N4"
+            },
+            {
+              "surface": "二人",
+              "reading": "ふたり",
+              "meaning": "two people; pair",
+              "baseForm": "二人",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "姫",
+              "reading": "ひめ",
+              "meaning": "princess",
+              "baseForm": "姫",
+              "level": "N1"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "会",
+              "reading": "かい",
+              "meaning": "meeting; assembly; party",
+              "baseForm": "会",
+              "level": "N3"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "海の王様は山幸彦を歓迎して、城でごちそうを出しました。",
+          "literalEn": "sea ['s / of] king [topic] mountain Sachihiko [obj] welcome [and] castle [in/by] a feast [obj] to put out しま した",
+          "naturalEn": "The King of the Sea welcomed Yamato-takeru and treated him to a feast in his palace.",
+          "tokens": [
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "王様",
+              "reading": "おうさま",
+              "meaning": "king",
+              "baseForm": "王様",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "幸彦",
+              "reading": "さちひこ",
+              "meaning": "Sachihiko",
+              "baseForm": "幸彦",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "歓迎",
+              "reading": "かんげい",
+              "meaning": "welcome; reception",
+              "baseForm": "歓迎",
+              "level": "N3"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "城",
+              "reading": "しろ",
+              "meaning": "castle",
+              "baseForm": "城",
+              "level": "N3"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "ごちそう",
+              "meaning": "a feast",
+              "baseForm": "ごちそう",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "王様が海の魚たちを集めて聞くと、鯛（たい）の喉（のど）に釣り針が刺さっていることがわかりました。 彼らは無事に釣り針を見つけることができました。 山幸彦は海の城がとても楽しくて、そこに三年も住んでいました。 しかし、彼は自分の国と兄のことを思い出して、家に帰ることにしました。",
-      "en": "When the king gathered the sea fishes and asked them, they found out that the fishing hook was stuck in the throat of a red bream (Tai). They were able to find the fishing hook safely. Yamasachihiko found the sea castle very enjoyable and lived there for as many as three years. However, he remembered his own country and his older brother, and decided to return home."
+      "en": "When the king gathered the sea fishes and asked them, they found out that the fishing hook was stuck in the throat of a red bream (Tai). They were able to find the fishing hook safely. Yamasachihiko found the sea castle very enjoyable and lived there for as many as three years. However, he remembered his own country and his older brother, and decided to return home.",
+      "sentences": [
+        {
+          "ja": "王様が海の魚たちを集めて聞くと、鯛（たい）の喉（のど）に釣り針が刺さっていることがわかりました。",
+          "literalEn": "king [subj] sea ['s / of] fish たち [obj] gather [and] to hear [with/and] sea bream ['s / of] throat [at/to] fishing [subj] thorn って to be thing [subj] わか した",
+          "naturalEn": "When the king gathered the fish of the sea and asked them, he discovered that a fishing hook was lodged in the sea bream’s throat.",
+          "tokens": [
+            {
+              "surface": "王様",
+              "reading": "おうさま",
+              "meaning": "king",
+              "baseForm": "王様",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "魚",
+              "reading": "さかな",
+              "meaning": "fish",
+              "baseForm": "魚",
+              "level": "N5"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "集め",
+              "reading": "あつめ",
+              "meaning": "gather, congregate, flock",
+              "baseForm": "集",
+              "level": "N4"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "聞く",
+              "reading": "きく",
+              "meaning": "to hear; to listen to; to ask",
+              "baseForm": "聞く",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "鯛",
+              "reading": "たい",
+              "meaning": "sea bream, red snapper",
+              "baseForm": "鯛",
+              "level": "N1"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "喉",
+              "reading": "のど",
+              "meaning": "throat",
+              "baseForm": "喉",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "釣り針",
+              "reading": "つりり針",
+              "meaning": "fishing; angling",
+              "baseForm": "釣",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "刺",
+              "reading": "とげ",
+              "meaning": "thorn; splinter; spine",
+              "baseForm": "刺",
+              "level": "N1"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "わか"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼らは無事に釣り針を見つけることができました。",
+          "literalEn": "they [topic] safety [at/to] fishing [obj] to discover thing [subj] でき した",
+          "naturalEn": "They were able to find the fishhook safely.",
+          "tokens": [
+            {
+              "surface": "彼ら",
+              "reading": "かれら",
+              "meaning": "they",
+              "baseForm": "彼ら",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "無事",
+              "reading": "ぶじ",
+              "meaning": "safety; peace; quietness",
+              "baseForm": "無事",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "釣り針",
+              "reading": "つりり針",
+              "meaning": "fishing; angling",
+              "baseForm": "釣",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見つける",
+              "reading": "みつける",
+              "meaning": "to discover",
+              "baseForm": "見つける",
+              "level": "N4"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "山幸彦は海の城がとても楽しくて、そこに三年も住んでいました。",
+          "literalEn": "mountain Sachihiko [topic] sea ['s / of] castle [subj] very comfort しく [and] that place [at/to] three years [also] dwelling んで いま した",
+          "naturalEn": "Yamato-takeru enjoyed the castle in the sea so much that he lived there for three years.",
+          "tokens": [
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "幸彦",
+              "reading": "さちひこ",
+              "meaning": "Sachihiko",
+              "baseForm": "幸彦",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "城",
+              "reading": "しろ",
+              "meaning": "castle",
+              "baseForm": "城",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "楽",
+              "reading": "らく",
+              "meaning": "comfort; ease",
+              "baseForm": "楽",
+              "level": "N3"
+            },
+            {
+              "surface": "しく"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "そこ",
+              "meaning": "that place",
+              "baseForm": "そこ",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "三年",
+              "reading": "さんねん",
+              "meaning": "three years",
+              "baseForm": "三年",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "住",
+              "reading": "じゅう",
+              "meaning": "dwelling; living",
+              "baseForm": "住",
+              "level": "N1"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "しかし、彼は自分の国と兄のことを思い出して、家に帰ることにしました。",
+          "literalEn": "however he [topic] oneself ['s / of] country [with/and]  older brother ['s / of] thing [obj] memories [and] house [at/to] to go back ことに しま した",
+          "naturalEn": "However, he remembered his own country and his older brother, so he decided to return home.",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "自分",
+              "reading": "じぶん",
+              "meaning": "oneself",
+              "baseForm": "自分",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "国",
+              "reading": "くに",
+              "meaning": "country",
+              "baseForm": "国",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "兄",
+              "reading": "あに",
+              "meaning": "(humble) older brother",
+              "baseForm": "兄",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "思い出",
+              "reading": "おもいで",
+              "meaning": "memories; recollections; reminiscence",
+              "baseForm": "思い出",
+              "level": "N3"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "帰る",
+              "reading": "かえる",
+              "meaning": "to go back",
+              "baseForm": "帰る",
+              "level": "N5"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "帰る時、王様は山幸彦に、海の水を集めたり引かせたりできる二つの不思議な宝石をあげました。 山幸彦は大きなワニの背中に乗って、自分の国へ帰りました。 兄はまだ怒っていて、山幸彦を殺そうとしました。 しかし、山幸彦は王様にもらった宝石を使って、兄に勝ちました。 兄は謝って、それから二人は平和に暮らしました。",
-      "en": "When returning, the king gave Yamasachihiko two mysterious jewels that could make the sea water gather and recede. Yamasachihiko rode on the back of a large crocodile and returned to his own country. The older brother was still angry and tried to kill Yamasachihiko. However, Yamasachihiko used the jewels he received from the king and won against his brother. The older brother apologized, and from then on the two lived in peace."
+      "en": "When returning, the king gave Yamasachihiko two mysterious jewels that could make the sea water gather and recede. Yamasachihiko rode on the back of a large crocodile and returned to his own country. The older brother was still angry and tried to kill Yamasachihiko. However, Yamasachihiko used the jewels he received from the king and won against his brother. The older brother apologized, and from then on the two lived in peace.",
+      "sentences": [
+        {
+          "ja": "帰る時、王様は山幸彦に、海の水を集めたり引かせたりできる二つの不思議な宝石をあげました。",
+          "literalEn": "to go back time king [topic] mountain Sachihiko [at/to] sea ['s / of] water [obj] gather たり to pull [?] たり to be able to two things ['s / of] mystery gem [obj] Ah した",
+          "naturalEn": "When it was time to leave, the king gave Yamato-takeru two magical gems that could gather or drain the water of the sea.",
+          "tokens": [
+            {
+              "surface": "帰る",
+              "reading": "かえる",
+              "meaning": "to go back",
+              "baseForm": "帰る",
+              "level": "N5"
+            },
+            {
+              "surface": "時",
+              "reading": "とき",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "王様",
+              "reading": "おうさま",
+              "meaning": "king",
+              "baseForm": "王様",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "幸彦",
+              "reading": "さちひこ",
+              "meaning": "Sachihiko",
+              "baseForm": "幸彦",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "水",
+              "reading": "みず",
+              "meaning": "water",
+              "baseForm": "水",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "集め",
+              "reading": "あつめ",
+              "meaning": "gather, congregate, flock",
+              "baseForm": "集",
+              "level": "N4"
+            },
+            {
+              "surface": "たり"
+            },
+            {
+              "surface": "引",
+              "reading": "ひ",
+              "meaning": "to pull",
+              "baseForm": "引く",
+              "level": "N5"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "たり"
+            },
+            {
+              "surface": "できる",
+              "meaning": "to be able to",
+              "baseForm": "できる",
+              "level": "N5"
+            },
+            {
+              "surface": "二つ",
+              "reading": "ふたつ",
+              "meaning": "two things",
+              "baseForm": "二つ",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "不思議",
+              "reading": "ふしぎ",
+              "meaning": "mystery; curiosity",
+              "baseForm": "不思議",
+              "level": "N3"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "宝石",
+              "reading": "ほうせき",
+              "meaning": "gem; jewel",
+              "baseForm": "宝石",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "あ",
+              "meaning": "Ah",
+              "baseForm": "あ",
+              "level": "N4"
+            },
+            {
+              "surface": "げ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "山幸彦は大きなワニの背中に乗って、自分の国へ帰りました。",
+          "literalEn": "mountain Sachihiko [topic] big ワニ ['s / of] back of the body [at/to] to get on って oneself ['s / of] country [toward] return した",
+          "naturalEn": "Yamato-takeru rode on the back of a large crocodile and returned to his own country.",
+          "tokens": [
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "幸彦",
+              "reading": "さちひこ",
+              "meaning": "Sachihiko",
+              "baseForm": "幸彦",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "ワニ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "背中",
+              "reading": "せなか",
+              "meaning": "back of the body",
+              "baseForm": "背中",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "乗",
+              "reading": "の",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "自分",
+              "reading": "じぶん",
+              "meaning": "oneself",
+              "baseForm": "自分",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "国",
+              "reading": "くに",
+              "meaning": "country",
+              "baseForm": "国",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "帰り",
+              "reading": "かえり",
+              "meaning": "return",
+              "baseForm": "帰り",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "兄はまだ怒っていて、山幸彦を殺そうとしました。",
+          "literalEn": "older brother [topic] yet to get angry って [and] mountain Sachihiko [obj] to kill really [with/and] しま した",
+          "naturalEn": "His older brother was still angry and tried to kill Yamato-takeru.",
+          "tokens": [
+            {
+              "surface": "兄",
+              "reading": "あに",
+              "meaning": "(humble) older brother",
+              "baseForm": "兄",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "まだ",
+              "meaning": "yet; still",
+              "baseForm": "まだ",
+              "level": "N5"
+            },
+            {
+              "surface": "怒",
+              "reading": "おこ",
+              "meaning": "to get angry; to be angry",
+              "baseForm": "怒る",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "幸彦",
+              "reading": "さちひこ",
+              "meaning": "Sachihiko",
+              "baseForm": "幸彦",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "殺",
+              "reading": "ころ",
+              "meaning": "to kill",
+              "baseForm": "殺す",
+              "level": "N3"
+            },
+            {
+              "surface": "そう",
+              "meaning": "really",
+              "baseForm": "そう",
+              "level": "N4"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "しかし、山幸彦は王様にもらった宝石を使って、兄に勝ちました。",
+          "literalEn": "however mountain Sachihiko [topic] king [at/to] [also] [past] gem [obj] to use って  older brother [at/to] win した",
+          "naturalEn": "However, Yamato-takeru used the gems he had received from the king to defeat his older brother.",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "幸彦",
+              "reading": "さちひこ",
+              "meaning": "Sachihiko",
+              "baseForm": "幸彦",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "王様",
+              "reading": "おうさま",
+              "meaning": "king",
+              "baseForm": "王様",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "宝石",
+              "reading": "ほうせき",
+              "meaning": "gem; jewel",
+              "baseForm": "宝石",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "使",
+              "reading": "つか",
+              "meaning": "to use",
+              "baseForm": "使う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "兄",
+              "reading": "あに",
+              "meaning": "(humble) older brother",
+              "baseForm": "兄",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "勝ち",
+              "reading": "かち",
+              "meaning": "win; victory",
+              "baseForm": "勝ち",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "兄は謝って、それから二人は平和に暮らしました。",
+          "literalEn": "older brother [topic] to apologize って after that two people [topic] peace [at/to] living した",
+          "naturalEn": "His older brother apologized, and from then on, the two lived in peace.",
+          "tokens": [
+            {
+              "surface": "兄",
+              "reading": "あに",
+              "meaning": "(humble) older brother",
+              "baseForm": "兄",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "謝",
+              "reading": "あやま",
+              "meaning": "to apologize",
+              "baseForm": "謝る",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "それから",
+              "meaning": "after that",
+              "baseForm": "それから",
+              "level": "N5"
+            },
+            {
+              "surface": "二人",
+              "reading": "ふたり",
+              "meaning": "two people; pair",
+              "baseForm": "二人",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "平和",
+              "reading": "へいわ",
+              "meaning": "peace; harmony",
+              "baseForm": "平和",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "暮らし",
+              "reading": "くらし",
+              "meaning": "living; livelihood; subsistence",
+              "baseForm": "暮らし",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
@@ -38,7 +2027,8 @@
         "船が壊れたから",
         "道に迷ったから"
       ],
-      "answerIndex": 0
+      "answerIndex": 0,
+      "explanation": "「兄の大切な釣り針をなくしたから」 is correct: 「しかし、弟の山幸彦は魚の釣り方がわかりませんでした。」 (However, the younger brother, Yamakohiko, did not know how to fish.)"
     },
     {
       "question": "誰の喉（のど）に釣り針が刺さっていましたか？",
@@ -48,7 +2038,8 @@
         "海の王様",
         "鯛（たい）"
       ],
-      "answerIndex": 3
+      "answerIndex": 3,
+      "explanation": "「鯛（たい）」 is correct: 「王様が海の魚たちを集めて聞くと、鯛（たい）の喉（のど）に釣り針が刺さっていることがわかりました。」 (When the king gathered the fish of the sea and asked them, he discovered that a fishing hook was lodged in the sea bream’s throat.)"
     },
     {
       "question": "山幸彦はどうやって兄に勝ちましたか？",
@@ -58,7 +2049,9 @@
         "おじいさんに助けてもらいました",
         "ワニが兄を食べました"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「海の王様にもらった宝石を使いました」 is correct: 「しかし、弟の山幸彦は魚の釣り方がわかりませんでした。」 (However, the younger brother, Yamakohiko, did not know how to fish.)"
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/skillful-fisher.json"
 }

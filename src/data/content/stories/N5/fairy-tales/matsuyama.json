@@ -14,19 +14,1477 @@
   "paragraphs": [
     {
       "ja": "昔々、ある所に、お父さんとお母さんと女の子がいました。 ある日、お父さんは遠い町へ行って、お母さんに鏡（かがみ）を買いました。 お母さんは初めて鏡を見て、とても喜びました。",
-      "en": "Long, long ago, in a certain place, there was a father, a mother, and a girl. One day, the father went to a distant town and bought a mirror for the mother. The mother saw a mirror for the first time and was very happy."
+      "en": "Long, long ago, in a certain place, there was a father, a mother, and a girl. One day, the father went to a distant town and bought a mirror for the mother. The mother saw a mirror for the first time and was very happy.",
+      "sentences": [
+        {
+          "ja": "昔々、ある所に、お父さんとお母さんと女の子がいました。",
+          "literalEn": "olden days to be place [at/to] father [with/and] mother [with/and] girl [subj] いま した",
+          "naturalEn": "Once upon a time, there was a father, a mother, and a little girl.",
+          "tokens": [
+            {
+              "surface": "昔",
+              "reading": "むかし",
+              "meaning": "olden days; former",
+              "baseForm": "昔",
+              "level": "N4"
+            },
+            {
+              "surface": "々"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "所",
+              "reading": "ところ",
+              "meaning": "place",
+              "baseForm": "所",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "お父さん",
+              "reading": "おとうさん",
+              "meaning": "father",
+              "baseForm": "お父さん",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "お母さん",
+              "reading": "おかあさん",
+              "meaning": "mother",
+              "baseForm": "お母さん",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "女の子",
+              "reading": "おんなのこ",
+              "meaning": "girl",
+              "baseForm": "女の子",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ある日、お父さんは遠い町へ行って、お母さんに鏡（かがみ）を買いました。",
+          "literalEn": "to be day father [topic] far town [toward] line って mother [at/to] mirror [obj] to buy した",
+          "naturalEn": "One day, the father went to a distant town and bought a mirror for the mother.",
+          "tokens": [
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "お父さん",
+              "reading": "おとうさん",
+              "meaning": "father",
+              "baseForm": "お父さん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "遠い",
+              "reading": "とおい",
+              "meaning": "far",
+              "baseForm": "遠い",
+              "level": "N5"
+            },
+            {
+              "surface": "町",
+              "reading": "まち",
+              "meaning": "town; city",
+              "baseForm": "町",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行",
+              "reading": "ぎょう",
+              "meaning": "line; row; verse",
+              "baseForm": "行",
+              "level": "N1"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "お母さん",
+              "reading": "おかあさん",
+              "meaning": "mother",
+              "baseForm": "お母さん",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "鏡",
+              "reading": "かがみ",
+              "meaning": "mirror",
+              "baseForm": "鏡",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "買い",
+              "reading": "かい",
+              "meaning": "to buy",
+              "baseForm": "買う",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "お母さんは初めて鏡を見て、とても喜びました。",
+          "literalEn": "mother [topic] for the first time mirror [obj] to see [and] very  joy した",
+          "naturalEn": "When she saw the mirror for the first time, she was very happy.",
+          "tokens": [
+            {
+              "surface": "お母さん",
+              "reading": "おかあさん",
+              "meaning": "mother",
+              "baseForm": "お母さん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "初めて",
+              "reading": "はじめて",
+              "meaning": "for the first time",
+              "baseForm": "初めて",
+              "level": "N5"
+            },
+            {
+              "surface": "鏡",
+              "reading": "かがみ",
+              "meaning": "mirror",
+              "baseForm": "鏡",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "喜び",
+              "reading": "よろこび",
+              "meaning": "(a) joy; (a) delight; rapture",
+              "baseForm": "喜び",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "少し後で、お母さんは重い病気になりました。 お母さんは女の子に鏡を渡して、「私が死んだ後、寂しい時、この鏡を見てください。私に会うことができますよ」と言いました。 そして、お母さんは死にました。",
-      "en": "A little later, the mother became severely ill. The mother handed the mirror to the girl and said, \"After I die, when you are lonely, please look at this mirror. You will be able to meet me.\" Then, the mother died."
+      "en": "A little later, the mother became severely ill. The mother handed the mirror to the girl and said, \"After I die, when you are lonely, please look at this mirror. You will be able to meet me.\" Then, the mother died.",
+      "sentences": [
+        {
+          "ja": "少し後で、お母さんは重い病気になりました。",
+          "literalEn": "few afterwards mother [topic] heavy illness [at/to] なり した",
+          "naturalEn": "A little while later, her mother became seriously ill.",
+          "tokens": [
+            {
+              "surface": "少し",
+              "reading": "すこし",
+              "meaning": "few",
+              "baseForm": "少し",
+              "level": "N5"
+            },
+            {
+              "surface": "後で",
+              "reading": "あとで",
+              "meaning": "afterwards",
+              "baseForm": "後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "お母さん",
+              "reading": "おかあさん",
+              "meaning": "mother",
+              "baseForm": "お母さん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "重い",
+              "reading": "おもい",
+              "meaning": "heavy",
+              "baseForm": "重い",
+              "level": "N5"
+            },
+            {
+              "surface": "病気",
+              "reading": "びょうき",
+              "meaning": "illness",
+              "baseForm": "病気",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "お母さんは女の子に鏡を渡して、「私が死んだ後、寂しい時、この鏡を見てください。",
+          "literalEn": "mother [topic] girl [at/to] mirror [obj] to hand over [and]  I [subj] death [is] afterwards lonely time this mirror [obj] to see [and] くだ さい",
+          "naturalEn": "Her mother handed the girl a mirror and said, “After I die, whenever you feel lonely, look into this mirror. You’ll be able to see me.”",
+          "tokens": [
+            {
+              "surface": "お母さん",
+              "reading": "おかあさん",
+              "meaning": "mother",
+              "baseForm": "お母さん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "女の子",
+              "reading": "おんなのこ",
+              "meaning": "girl",
+              "baseForm": "女の子",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "鏡",
+              "reading": "かがみ",
+              "meaning": "mirror",
+              "baseForm": "鏡",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "渡し",
+              "reading": "わたし",
+              "meaning": "to hand over",
+              "baseForm": "渡す",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "死",
+              "reading": "し",
+              "meaning": "death; decease",
+              "baseForm": "死",
+              "level": "N1"
+            },
+            {
+              "surface": "ん"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "後",
+              "reading": "あと",
+              "meaning": "afterwards",
+              "baseForm": "後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "寂しい",
+              "reading": "さびしい",
+              "meaning": "lonely",
+              "baseForm": "寂しい",
+              "level": "N4"
+            },
+            {
+              "surface": "時",
+              "reading": "とき",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "この",
+              "meaning": "this",
+              "baseForm": "この",
+              "level": "N5"
+            },
+            {
+              "surface": "鏡",
+              "reading": "かがみ",
+              "meaning": "mirror",
+              "baseForm": "鏡",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "くだ"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "私に会うことができますよ」と言いました。",
+          "literalEn": "I [at/to] to meet thing [subj] でき ますよ [with/and] to say いま した",
+          "naturalEn": "\"You’ll be able to see me,\" she said.",
+          "tokens": [
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "会う",
+              "reading": "あう",
+              "meaning": "to meet",
+              "baseForm": "会う",
+              "level": "N5"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ますよ"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "そして、お母さんは死にました。",
+          "literalEn": "and mother [topic] death [at/to] した",
+          "naturalEn": "And then her mother died.",
+          "tokens": [
+            {
+              "surface": "そして",
+              "meaning": "and",
+              "baseForm": "そして",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "お母さん",
+              "reading": "おかあさん",
+              "meaning": "mother",
+              "baseForm": "お母さん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "死",
+              "reading": "し",
+              "meaning": "death; decease",
+              "baseForm": "死",
+              "level": "N1"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "お父さんは新しい女の人と結婚しました。 新しいお母さんは、女の子が好きではありませんでした。 女の子は毎日部屋で鏡を見ました。 鏡の中にお母さんの顔がありました。 本当は女の子の顔でしたが、女の子は「お母さんだ」と思って、毎日話しました。",
-      "en": "The father married a new woman. The new mother did not like the girl. The girl looked at the mirror in her room every day. There was her mother's face in the mirror. In truth, it was the girl's face, but the girl thought, \"It's mother,\" and talked to it every day."
+      "en": "The father married a new woman. The new mother did not like the girl. The girl looked at the mirror in her room every day. There was her mother's face in the mirror. In truth, it was the girl's face, but the girl thought, \"It's mother,\" and talked to it every day.",
+      "sentences": [
+        {
+          "ja": "お父さんは新しい女の人と結婚しました。",
+          "literalEn": "father [topic] new woman ['s / of] person [with/and] marriage しま した",
+          "naturalEn": "Her father married a new woman.",
+          "tokens": [
+            {
+              "surface": "お父さん",
+              "reading": "おとうさん",
+              "meaning": "father",
+              "baseForm": "お父さん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "新しい",
+              "reading": "あたらしい",
+              "meaning": "new",
+              "baseForm": "新しい",
+              "level": "N5"
+            },
+            {
+              "surface": "女",
+              "reading": "おんな",
+              "meaning": "woman",
+              "baseForm": "女",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "結婚",
+              "reading": "けっこん",
+              "meaning": "marriage",
+              "baseForm": "結婚",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "新しいお母さんは、女の子が好きではありませんでした。",
+          "literalEn": "new mother [topic] girl [subj] likeable with that... ありま せん [in/by] した",
+          "naturalEn": "Her new mother didn’t like the girl.",
+          "tokens": [
+            {
+              "surface": "新しい",
+              "reading": "あたらしい",
+              "meaning": "new",
+              "baseForm": "新しい",
+              "level": "N5"
+            },
+            {
+              "surface": "お母さん",
+              "reading": "おかあさん",
+              "meaning": "mother",
+              "baseForm": "お母さん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "女の子",
+              "reading": "おんなのこ",
+              "meaning": "girl",
+              "baseForm": "女の子",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "好き",
+              "reading": "すき",
+              "meaning": "likeable",
+              "baseForm": "好き",
+              "level": "N5"
+            },
+            {
+              "surface": "では",
+              "meaning": "with that...",
+              "baseForm": "では",
+              "level": "N5"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "女の子は毎日部屋で鏡を見ました。",
+          "literalEn": "girl [topic] every day room [in/by] mirror [obj] to see した",
+          "naturalEn": "The girl looked in the mirror in her room every day.",
+          "tokens": [
+            {
+              "surface": "女の子",
+              "reading": "おんなのこ",
+              "meaning": "girl",
+              "baseForm": "女の子",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "毎日",
+              "reading": "まいにち",
+              "meaning": "every day",
+              "baseForm": "毎日",
+              "level": "N5"
+            },
+            {
+              "surface": "部屋",
+              "reading": "へや",
+              "meaning": "room",
+              "baseForm": "部屋",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "鏡",
+              "reading": "かがみ",
+              "meaning": "mirror",
+              "baseForm": "鏡",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "鏡の中にお母さんの顔がありました。",
+          "literalEn": "mirror ['s / of] middle [at/to] mother ['s / of] face [subj] ありま した",
+          "naturalEn": "Her mother’s face was in the mirror.",
+          "tokens": [
+            {
+              "surface": "鏡",
+              "reading": "かがみ",
+              "meaning": "mirror",
+              "baseForm": "鏡",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "お母さん",
+              "reading": "おかあさん",
+              "meaning": "mother",
+              "baseForm": "お母さん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "顔",
+              "reading": "かお",
+              "meaning": "face, expression",
+              "baseForm": "顔",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "本当は女の子の顔でしたが、女の子は「お母さんだ」と思って、毎日話しました。",
+          "literalEn": "in fact girl ['s / of] face [in/by] した [subj] girl [topic] mother [is] [with/and] to think って every day talk しま した",
+          "naturalEn": "Even though it was actually the girl’s face, she thought it was “Mom” and talked to it every day.",
+          "tokens": [
+            {
+              "surface": "本当は",
+              "reading": "ほんとうは",
+              "meaning": "in fact; actually",
+              "baseForm": "本当は",
+              "level": "N4"
+            },
+            {
+              "surface": "女の子",
+              "reading": "おんなのこ",
+              "meaning": "girl",
+              "baseForm": "女の子",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "顔",
+              "reading": "かお",
+              "meaning": "face, expression",
+              "baseForm": "顔",
+              "level": "N3"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "女の子",
+              "reading": "おんなのこ",
+              "meaning": "girl",
+              "baseForm": "女の子",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "お母さん",
+              "reading": "おかあさん",
+              "meaning": "mother",
+              "baseForm": "お母さん",
+              "level": "N5"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "思",
+              "reading": "おも",
+              "meaning": "to think; to feel",
+              "baseForm": "思う",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "毎日",
+              "reading": "まいにち",
+              "meaning": "every day",
+              "baseForm": "毎日",
+              "level": "N5"
+            },
+            {
+              "surface": "話",
+              "reading": "はなし",
+              "meaning": "talk; story",
+              "baseForm": "話",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "新しいお母さんは「あの子は部屋で私に悪いことをしています」とお父さんに言いました。 お父さんが女の子に聞くと、女の子は「鏡のお母さんと話しています」と答えました。 お父さんは「それはあなたの顔ですよ。あなたは本当にいい子ですね」と言って泣きました。 新しいお母さんはそれを聞いて、女の子に謝りました。 その後、三人は一緒に楽しく住みました。",
-      "en": "The new mother said to the father, \"That child is doing bad things to me in her room.\" When the father asked the girl, she answered, \"I am talking with my mother in the mirror.\" The father said, \"That is your face. You are a truly good child,\" and cried. The new mother heard that and apologized to the girl. After that, the three lived happily together."
+      "en": "The new mother said to the father, \"That child is doing bad things to me in her room.\" When the father asked the girl, she answered, \"I am talking with my mother in the mirror.\" The father said, \"That is your face. You are a truly good child,\" and cried. The new mother heard that and apologized to the girl. After that, the three lived happily together.",
+      "sentences": [
+        {
+          "ja": "新しいお母さんは「あの子は部屋で私に悪いことをしています」とお父さんに言いました。",
+          "literalEn": "new mother [topic] that over there child [topic] room [in/by]  I [at/to] bad thing [obj] てい [polite] [with/and] father [at/to] to say いま した",
+          "naturalEn": "The new mother told the father, “That child is doing bad things to me in her room.”",
+          "tokens": [
+            {
+              "surface": "新しい",
+              "reading": "あたらしい",
+              "meaning": "new",
+              "baseForm": "新しい",
+              "level": "N5"
+            },
+            {
+              "surface": "お母さん",
+              "reading": "おかあさん",
+              "meaning": "mother",
+              "baseForm": "お母さん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "あの",
+              "meaning": "that over there",
+              "baseForm": "あの",
+              "level": "N5"
+            },
+            {
+              "surface": "子",
+              "reading": "こ",
+              "meaning": "child",
+              "baseForm": "子",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "部屋",
+              "reading": "へや",
+              "meaning": "room",
+              "baseForm": "部屋",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "悪い",
+              "reading": "わるい",
+              "meaning": "bad",
+              "baseForm": "悪い",
+              "level": "N5"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "お父さん",
+              "reading": "おとうさん",
+              "meaning": "father",
+              "baseForm": "お父さん",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "お父さんが女の子に聞くと、女の子は「鏡のお母さんと話しています」と答えました。",
+          "literalEn": "father [subj] girl [at/to] to hear [with/and] girl [topic] mirror ['s / of] mother [with/and] talk てい [polite] [with/and] response した",
+          "naturalEn": "When the father asked the girl, she replied, “I’m talking to the mom in the mirror.”",
+          "tokens": [
+            {
+              "surface": "お父さん",
+              "reading": "おとうさん",
+              "meaning": "father",
+              "baseForm": "お父さん",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "女の子",
+              "reading": "おんなのこ",
+              "meaning": "girl",
+              "baseForm": "女の子",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "聞く",
+              "reading": "きく",
+              "meaning": "to hear; to listen to; to ask",
+              "baseForm": "聞く",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "女の子",
+              "reading": "おんなのこ",
+              "meaning": "girl",
+              "baseForm": "女の子",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "鏡",
+              "reading": "かがみ",
+              "meaning": "mirror",
+              "baseForm": "鏡",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "お母さん",
+              "reading": "おかあさん",
+              "meaning": "mother",
+              "baseForm": "お母さん",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "話",
+              "reading": "はなし",
+              "meaning": "talk; story",
+              "baseForm": "話",
+              "level": "N5"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "答え",
+              "reading": "こたええ",
+              "meaning": "response",
+              "baseForm": "答",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "お父さんは「それはあなたの顔ですよ。",
+          "literalEn": "father [topic] that [topic] you ['s / of] face [is] [you know]",
+          "naturalEn": "The father said, “That’s your face.”",
+          "tokens": [
+            {
+              "surface": "お父さん",
+              "reading": "おとうさん",
+              "meaning": "father",
+              "baseForm": "お父さん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "それ",
+              "meaning": "that",
+              "baseForm": "それ",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "あなた",
+              "meaning": "you",
+              "baseForm": "あなた",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "顔",
+              "reading": "かお",
+              "meaning": "face, expression",
+              "baseForm": "顔",
+              "level": "N3"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "よ"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "あなたは本当にいい子ですね」と言って泣きました。",
+          "literalEn": "you [topic] really good child [is] [right?] [with/and] to say って to weep した",
+          "naturalEn": "\"You really are such a good girl,\" he said, and began to cry.",
+          "tokens": [
+            {
+              "surface": "あなた",
+              "meaning": "you",
+              "baseForm": "あなた",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "本当に",
+              "reading": "ほんとうに",
+              "meaning": "really; truly",
+              "baseForm": "本当に",
+              "level": "N5"
+            },
+            {
+              "surface": "いい",
+              "meaning": "good",
+              "baseForm": "いい",
+              "level": "N5"
+            },
+            {
+              "surface": "子",
+              "reading": "こ",
+              "meaning": "child",
+              "baseForm": "子",
+              "level": "N4"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "ね",
+              "meaning": "value; price; cost",
+              "baseForm": "ね",
+              "level": "N3"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "泣き",
+              "reading": "なき",
+              "meaning": "to weep",
+              "baseForm": "泣く",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "新しいお母さんはそれを聞いて、女の子に謝りました。",
+          "literalEn": "new mother [topic] that [obj] to hear [and] girl [at/to] to apologize した",
+          "naturalEn": "When the new mother heard this, she apologized to the girl.",
+          "tokens": [
+            {
+              "surface": "新しい",
+              "reading": "あたらしい",
+              "meaning": "new",
+              "baseForm": "新しい",
+              "level": "N5"
+            },
+            {
+              "surface": "お母さん",
+              "reading": "おかあさん",
+              "meaning": "mother",
+              "baseForm": "お母さん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "それ",
+              "meaning": "that",
+              "baseForm": "それ",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "聞",
+              "reading": "き",
+              "meaning": "to hear; to listen to; to ask",
+              "baseForm": "聞く",
+              "level": "N5"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "女の子",
+              "reading": "おんなのこ",
+              "meaning": "girl",
+              "baseForm": "女の子",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "謝",
+              "reading": "あやま",
+              "meaning": "to apologize",
+              "baseForm": "謝る",
+              "level": "N4"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "その後、三人は一緒に楽しく住みました。",
+          "literalEn": "after that three people [topic] together [at/to] comfort しく dwelling した",
+          "naturalEn": "After that, the three of them lived happily together.",
+          "tokens": [
+            {
+              "surface": "その後",
+              "reading": "そのあと",
+              "meaning": "after that; afterwards",
+              "baseForm": "その後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "三人",
+              "reading": "さんにん",
+              "meaning": "three people",
+              "baseForm": "三人",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "一緒",
+              "reading": "いっしょ",
+              "meaning": "together",
+              "baseForm": "一緒",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "楽",
+              "reading": "らく",
+              "meaning": "comfort; ease",
+              "baseForm": "楽",
+              "level": "N3"
+            },
+            {
+              "surface": "しく"
+            },
+            {
+              "surface": "住",
+              "reading": "じゅう",
+              "meaning": "dwelling; living",
+              "baseForm": "住",
+              "level": "N1"
+            },
+            {
+              "surface": "み"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
@@ -38,7 +1496,8 @@
         "本",
         "花"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「鏡」 is correct: 「ある日、お父さんは遠い町へ行って、お母さんに鏡（かがみ）を買いました。」 (One day, the father went to a distant town and bought a mirror for the mother.)"
     },
     {
       "question": "女の子は毎日部屋で何をしましたか？",
@@ -48,7 +1507,8 @@
         "鏡を見ました",
         "寝ました"
       ],
-      "answerIndex": 2
+      "answerIndex": 2,
+      "explanation": "「鏡を見ました」 is correct: 「女の子は毎日部屋で鏡を見ました。」 (The girl looked in the mirror in her room every day.)"
     },
     {
       "question": "新しいお母さんは女の子の話を聞いて、どうしましたか？",
@@ -58,7 +1518,9 @@
         "お父さんと結婚しました",
         "鏡を捨てました"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「女の子に謝りました」 is correct: 「新しいお母さんはそれを聞いて、女の子に謝りました。」 (When the new mother heard this, she apologized to the girl.)"
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/fairy-tales/matsuyama.json"
 }

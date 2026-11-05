@@ -116,8 +116,13 @@ export function normalizeMeaningAnswer(value: string): string {
   return normalizedAnswer(value);
 }
 
-export function isCorrectVocabularyAnswer(answer: string, meanings: string[]): boolean {
-  return checkVocabularyAnswer(answer, meanings).isMatch;
+export function isCorrectVocabularyAnswer(
+  answer: string,
+  meanings: string[],
+  synonyms?: string[],
+  modernMeaning?: string
+): boolean {
+  return checkVocabularyAnswer(answer, meanings, synonyms, modernMeaning).isMatch;
 }
 
 export function parseExampleFurigana(source: string): FuriganaSegment[] {
@@ -259,7 +264,12 @@ export function vocabularyReducer(
   if (action.type === "SUBMIT") {
     if (current.status !== "unanswered" || !normalizeMeaningAnswer(action.answer)) return state;
     const attempts = [...current.attempts, action.answer.trim()];
-    const correct = isCorrectVocabularyAnswer(action.answer, question.meanings);
+    const correct = isCorrectVocabularyAnswer(
+      action.answer,
+      question.meanings,
+      question.synonyms,
+      question.modernMeaning
+    );
     return updateCurrent({
       ...current,
       status: correct ? "correct" : "unanswered",

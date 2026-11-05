@@ -1,4 +1,5 @@
 import { buildShiritoriDictionary, type ShiritoriDictionary, type ShiritoriLevel, type ShiritoriWord } from "@/engine/shiritori";
+import { getShiritoriWordsFromCache } from "@/lib/srs/cacheDb";
 
 export type { ShiritoriLevel, ShiritoriWord };
 
@@ -11,6 +12,15 @@ function canFetch(): boolean {
 }
 
 async function readShiritoriData(): Promise<{ words: unknown; validReadings: Record<string, string> }> {
+  if (typeof window !== "undefined") {
+    const cachedWords = await getShiritoriWordsFromCache().catch(() => null);
+    if (cachedWords && cachedWords.length > 0) {
+      const validRes = await globalThis.fetch("/data/v1/shiritori/valid-readings.json", { cache: "force-cache" }).catch(() => null);
+      const validReadings = (validRes && validRes.ok ? await validRes.json() : {}) as Record<string, string>;
+      return { words: cachedWords, validReadings };
+    }
+  }
+
   if (canFetch()) {
     const [wordsRes, validRes] = await Promise.all([
       globalThis.fetch("/data/v1/shiritori/words.json", { cache: "force-cache" }),

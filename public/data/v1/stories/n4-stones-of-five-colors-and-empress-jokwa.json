@@ -1,0 +1,1654 @@
+{
+  "id": "n4-stones-of-five-colors-and-empress-jokwa",
+  "title": "五色の石と女媧の物語",
+  "titleRomaji": "Goshiki no Ishi to Jōka no Monogatari",
+  "titleEn": "The Stones of Five Colors and the Empress Jokwa",
+  "level": "N4",
+  "category": "Legend",
+  "tags": [
+    "mythology",
+    "empress",
+    "magic",
+    "rescue"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、中国に世界を創ったとされる優しい女神「女媧（じょか）」という偉い女王がいました。ある日、突然大きな音がして天の柱が折れ、地面が大きく割れました。空に穴が開き、火が燃え広がり、洪水の水が溢れて人々は大変な恐怖に包まれました。",
+      "en": "Long, long ago, in China, there was a great queen and benevolent goddess named \"Jokwa\" who was said to have created the world. One day, suddenly a loud sound was heard, the pillar of heaven broke, and the ground cracked widely. A hole opened in the sky, fire spread, floodwaters overflowed, and people were engulfed in great terror.",
+      "sentences": [
+        {
+          "ja": "昔々、中国に世界を創ったとされる優しい女神「女媧（じょか）」という偉い女王がいました。",
+          "literalEn": "olden days China [at/to] the world [obj] genesis [past] [with/and] れる kind goddess Empress Nüwa という great queen [subj] いま した",
+          "naturalEn": "Once upon a time, there was a great queen in China named “Nüwa,” a kind goddess said to have created the world.",
+          "tokens": [
+            {
+              "surface": "昔",
+              "reading": "むかし",
+              "meaning": "olden days; former",
+              "baseForm": "昔",
+              "level": "N4"
+            },
+            {
+              "surface": "々"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "中国",
+              "reading": "ちゅうごく",
+              "meaning": "China",
+              "baseForm": "中国",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "世界",
+              "reading": "せかい",
+              "meaning": "the world",
+              "baseForm": "世界",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "創",
+              "reading": "きず",
+              "meaning": "genesis, hurt, injury",
+              "baseForm": "創",
+              "level": "N1"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れる"
+            },
+            {
+              "surface": "優しい",
+              "reading": "やさしい",
+              "meaning": "kind",
+              "baseForm": "優しい",
+              "level": "N4"
+            },
+            {
+              "surface": "女神",
+              "reading": "めがみ",
+              "meaning": "goddess",
+              "baseForm": "女神",
+              "level": "N3"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "女媧",
+              "reading": "じょか",
+              "meaning": "Empress Nüwa (Jokwa)",
+              "baseForm": "女媧",
+              "level": "N3"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "偉い",
+              "reading": "えらい",
+              "meaning": "great; celebrated; eminent",
+              "baseForm": "偉い",
+              "level": "N2"
+            },
+            {
+              "surface": "女王",
+              "reading": "じょおう",
+              "meaning": "queen",
+              "baseForm": "女王",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ある日、突然大きな音がして天の柱が折れ、地面が大きく割れました。",
+          "literalEn": "to be day abruptly big sound [subj] [and] heavens ['s / of] pillar [subj] to break or to fold ground [subj] large to divide した",
+          "naturalEn": "One day, there was a sudden loud noise, the pillar of heaven snapped, and the ground split wide open.",
+          "tokens": [
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "突然",
+              "reading": "とつぜん",
+              "meaning": "abruptly; suddenly; unexpectedly",
+              "baseForm": "突然",
+              "level": "N3"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "音",
+              "reading": "おと",
+              "meaning": "sound; note",
+              "baseForm": "音",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "天",
+              "reading": "あま",
+              "meaning": "heavens, imperial, sky",
+              "baseForm": "天",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "柱",
+              "reading": "はしら",
+              "meaning": "pillar; post",
+              "baseForm": "柱",
+              "level": "N1"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "折",
+              "reading": "お",
+              "meaning": "to break or to fold",
+              "baseForm": "折る",
+              "level": "N4"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "地面",
+              "reading": "じめん",
+              "meaning": "ground; earth's surface",
+              "baseForm": "地面",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "大きく",
+              "reading": "だいきく",
+              "meaning": "large; big; great",
+              "baseForm": "大",
+              "level": "N3"
+            },
+            {
+              "surface": "割れ",
+              "reading": "われ",
+              "meaning": "to divide; to cut; to break",
+              "baseForm": "割る",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "空に穴が開き、火が燃え広がり、洪水の水が溢れて人々は大変な恐怖に包まれました。",
+          "literalEn": "sky [at/to] hole [subj] to open fire [subj] burn spacious flood ['s / of] water [subj] to overflow [and] person [topic] very be afraid [at/to] to wrap まれ した",
+          "naturalEn": "A hole opened in the sky, fire raged, and floodwaters poured forth, plunging the people into great terror.",
+          "tokens": [
+            {
+              "surface": "空",
+              "reading": "そら",
+              "meaning": "sky",
+              "baseForm": "空",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "穴",
+              "reading": "あな",
+              "meaning": "hole",
+              "baseForm": "穴",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "開き",
+              "reading": "あき",
+              "meaning": "to open; to become open",
+              "baseForm": "開く",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "火",
+              "reading": "ひ",
+              "meaning": "fire",
+              "baseForm": "火",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "燃",
+              "reading": "も",
+              "meaning": "burn, blaze, glow",
+              "baseForm": "燃",
+              "level": "N2"
+            },
+            {
+              "surface": "え"
+            },
+            {
+              "surface": "広がり",
+              "reading": "ひろがり",
+              "meaning": "spacious; wide",
+              "baseForm": "広い",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "洪水",
+              "reading": "こうずい",
+              "meaning": "flood",
+              "baseForm": "洪水",
+              "level": "N1"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "水",
+              "reading": "みず",
+              "meaning": "water",
+              "baseForm": "水",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "溢",
+              "reading": "あふ",
+              "meaning": "to overflow; to brim over",
+              "baseForm": "溢れる",
+              "level": "N3"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "人々",
+              "reading": "ひと々",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "大変",
+              "reading": "たいへん",
+              "meaning": "very; terrible; difficult",
+              "baseForm": "大変",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "恐怖",
+              "reading": "きょうふ",
+              "meaning": "be afraid; dread; dismay",
+              "baseForm": "恐怖",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "包",
+              "reading": "つつ",
+              "meaning": "to wrap",
+              "baseForm": "包む",
+              "level": "N4"
+            },
+            {
+              "surface": "まれ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "女媧は人々の苦しむ姿を見て深く悲しみ、「私が何とかしてこの世界を救わなければならない」と強く決意しました。彼女は川底から赤、黄、青、白、黒の五色の石をたくさん集めました。そして、それらの特別な石を大きな鍋に入れ、魔法の火で溶かして液体にしました。",
+      "en": "Jokwa felt deeply sorrowful seeing the people suffering, and strongly resolved, \"I must somehow save this world.\" She gathered many stones of five colors—red, yellow, blue, white, and black—from the riverbed. Then, she put those special stones into a large pot and melted them into a liquid with magical fire.",
+      "sentences": [
+        {
+          "ja": "女媧は人々の苦しむ姿を見て深く悲しみ、「私が何とかしてこの世界を救わなければならない」と強く決意しました。",
+          "literalEn": "Empress Nüwa [topic] person ['s / of] to suffer figure [obj] to see [and] deep sad  I [subj] somehow [and] this the world [obj] to rescue from わな なら [not] [with/and] powerful decision しま した",
+          "naturalEn": "Nüwa was deeply saddened by the sight of people suffering and made a firm resolution: “I must find a way to save this world.”",
+          "tokens": [
+            {
+              "surface": "女媧",
+              "reading": "じょか",
+              "meaning": "Empress Nüwa (Jokwa)",
+              "baseForm": "女媧",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "人々",
+              "reading": "ひと々",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "苦しむ",
+              "reading": "くるしむ",
+              "meaning": "to suffer; to groan; to be worried",
+              "baseForm": "苦しむ",
+              "level": "N3"
+            },
+            {
+              "surface": "姿",
+              "reading": "すがた",
+              "meaning": "figure; shape; appearance",
+              "baseForm": "姿",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "深",
+              "reading": "ふか",
+              "meaning": "deep",
+              "baseForm": "深い",
+              "level": "N4"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "悲しみ",
+              "reading": "かなしみ",
+              "meaning": "sad, deplore, grieve",
+              "baseForm": "悲",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "何とか",
+              "reading": "なんとか",
+              "meaning": "somehow; anyhow; one way or another",
+              "baseForm": "何とか",
+              "level": "N3"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "この",
+              "meaning": "this",
+              "baseForm": "この",
+              "level": "N5"
+            },
+            {
+              "surface": "世界",
+              "reading": "せかい",
+              "meaning": "the world",
+              "baseForm": "世界",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "救",
+              "reading": "すく",
+              "meaning": "to rescue from; to help out of",
+              "baseForm": "救う",
+              "level": "N3"
+            },
+            {
+              "surface": "わな"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ば"
+            },
+            {
+              "surface": "なら"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "強",
+              "reading": "つよ",
+              "meaning": "powerful",
+              "baseForm": "強い",
+              "level": "N5"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "決意",
+              "reading": "けつい",
+              "meaning": "decision; determination",
+              "baseForm": "決意",
+              "level": "N1"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼女は川底から赤、黄、青、白、黒の五色の石をたくさん集めました。",
+          "literalEn": "she [topic] riverbed [from] red yellow blue white black ['s / of] five colors ['s / of] stone [obj] many gather した",
+          "naturalEn": "She gathered many stones of five colors—red, yellow, blue, white, and black—from the riverbed.",
+          "tokens": [
+            {
+              "surface": "彼女",
+              "reading": "かのじょ",
+              "meaning": "she; girlfriend",
+              "baseForm": "彼女",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "川底",
+              "reading": "かわぞこ",
+              "meaning": "riverbed; bottom of the river",
+              "baseForm": "川底",
+              "level": "N4"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "赤",
+              "reading": "あか",
+              "meaning": "red",
+              "baseForm": "赤",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "黄",
+              "reading": "き",
+              "meaning": "yellow",
+              "baseForm": "黄",
+              "level": "N2"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "青",
+              "reading": "あお",
+              "meaning": "blue",
+              "baseForm": "青",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "白",
+              "reading": "しろ",
+              "meaning": "white",
+              "baseForm": "白",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "黒",
+              "reading": "くろ",
+              "meaning": "black",
+              "baseForm": "黒",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "五色",
+              "reading": "ごしき",
+              "meaning": "five colors",
+              "baseForm": "五色",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "石",
+              "reading": "いし",
+              "meaning": "stone",
+              "baseForm": "石",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "集め",
+              "reading": "あつめ",
+              "meaning": "gather, congregate, flock",
+              "baseForm": "集",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "そして、それらの特別な石を大きな鍋に入れ、魔法の火で溶かして液体にしました。",
+          "literalEn": "and それらの special stone [obj] big saucepan [at/to] to enter magic ['s / of] fire [in/by] to dissolve かし [and] liquid [at/to] しま した",
+          "naturalEn": "She then placed those special stones in a large cauldron and melted them with magical fire, turning them into a liquid.",
+          "tokens": [
+            {
+              "surface": "そして",
+              "meaning": "and",
+              "baseForm": "そして",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "それらの"
+            },
+            {
+              "surface": "特別",
+              "reading": "とくべつ",
+              "meaning": "special",
+              "baseForm": "特別",
+              "level": "N4"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "石",
+              "reading": "いし",
+              "meaning": "stone",
+              "baseForm": "石",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "鍋",
+              "reading": "なべ",
+              "meaning": "saucepan; pot",
+              "baseForm": "鍋",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入れ",
+              "reading": "はいれ",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "魔法",
+              "reading": "まほう",
+              "meaning": "magic; sorcery",
+              "baseForm": "魔法",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "火",
+              "reading": "ひ",
+              "meaning": "fire",
+              "baseForm": "火",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "溶",
+              "reading": "と",
+              "meaning": "to dissolve (paint)",
+              "baseForm": "溶く",
+              "level": "N2"
+            },
+            {
+              "surface": "かし"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "液体",
+              "reading": "えきたい",
+              "meaning": "liquid; fluid",
+              "baseForm": "液体",
+              "level": "N2"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "溶けた五色の石の液体を使って、女媧は空の大きな穴をきれいに塞ぎました。これで空が落ちてくる心配はなくなりました。さらに、彼女は大きな亀の足を切って天を支える四本の新しい柱にし、荒れた土地の洪水を鎮めて世界に平和を取り戻しました。",
+      "en": "Using the liquid of the melted five-colored stones, Jokwa neatly sealed the large hole in the sky. With this, there was no longer any worry of the sky falling. Furthermore, she cut off the legs of a large turtle to make four new pillars to support the heaven, calmed the floods on the devastated land, and restored peace to the world.",
+      "sentences": [
+        {
+          "ja": "溶けた五色の石の液体を使って、女媧は空の大きな穴をきれいに塞ぎました。",
+          "literalEn": "to dissolve [past] five colors ['s / of] stone ['s / of] liquid [obj] to use って Empress Nüwa [topic] sky ['s / of] big hole [obj] pretty [at/to] to stop up した",
+          "naturalEn": "Using the molten liquid from the five-colored stones, Nuwa neatly sealed the large hole in the sky.",
+          "tokens": [
+            {
+              "surface": "溶け",
+              "reading": "とけ",
+              "meaning": "to dissolve (paint)",
+              "baseForm": "溶く",
+              "level": "N2"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "五色",
+              "reading": "ごしき",
+              "meaning": "five colors",
+              "baseForm": "五色",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "石",
+              "reading": "いし",
+              "meaning": "stone",
+              "baseForm": "石",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "液体",
+              "reading": "えきたい",
+              "meaning": "liquid; fluid",
+              "baseForm": "液体",
+              "level": "N2"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "使",
+              "reading": "つか",
+              "meaning": "to use",
+              "baseForm": "使う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "女媧",
+              "reading": "じょか",
+              "meaning": "Empress Nüwa (Jokwa)",
+              "baseForm": "女媧",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "空",
+              "reading": "そら",
+              "meaning": "sky",
+              "baseForm": "空",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "穴",
+              "reading": "あな",
+              "meaning": "hole",
+              "baseForm": "穴",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "きれい",
+              "meaning": "pretty; clean",
+              "baseForm": "きれい",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "塞ぎ",
+              "reading": "ふさぎ",
+              "meaning": "to stop up; to close up; to block (up)",
+              "baseForm": "塞ぐ",
+              "level": "N2"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "これで空が落ちてくる心配はなくなりました。",
+          "literalEn": "this [in/by] sky [subj] to drop [and] くる to worry [topic] なく なり した",
+          "naturalEn": "With that, there was no longer any fear that the sky would fall.",
+          "tokens": [
+            {
+              "surface": "これ",
+              "meaning": "this",
+              "baseForm": "これ",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "空",
+              "reading": "そら",
+              "meaning": "sky",
+              "baseForm": "空",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "落ち",
+              "reading": "おとち",
+              "meaning": "to drop",
+              "baseForm": "落す",
+              "level": "N4"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "くる"
+            },
+            {
+              "surface": "心配",
+              "reading": "しんぱい",
+              "meaning": "to worry",
+              "baseForm": "心配",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "なく"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "さらに、彼女は大きな亀の足を切って天を支える四本の新しい柱にし、荒れた土地の洪水を鎮めて世界に平和を取り戻しました。",
+          "literalEn": "さらに she [topic] big tortoise ['s / of] foot [obj] to cut って heavens [obj] to be blocked four book ['s / of] new pillar にし rough [past] plot of land ['s / of] flood [obj] tranquilize [and] the world [at/to] peace [obj] to take something to turn back しま した",
+          "naturalEn": "Furthermore, she cut off the legs of a giant turtle to create four new pillars to support the heavens, subdued the floods in the ravaged lands, and restored peace to the world.",
+          "tokens": [
+            {
+              "surface": "さらに"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼女",
+              "reading": "かのじょ",
+              "meaning": "she; girlfriend",
+              "baseForm": "彼女",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "亀",
+              "reading": "かめ",
+              "meaning": "tortoise, turtle",
+              "baseForm": "亀",
+              "level": "N1"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "足",
+              "reading": "あし",
+              "meaning": "foot; leg",
+              "baseForm": "足",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "切",
+              "reading": "き",
+              "meaning": "to cut",
+              "baseForm": "切る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "天",
+              "reading": "あま",
+              "meaning": "heavens, imperial, sky",
+              "baseForm": "天",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "支える",
+              "reading": "ささえる",
+              "meaning": "to be blocked; to choke; to be obstructed",
+              "baseForm": "支える",
+              "level": "N3"
+            },
+            {
+              "surface": "四",
+              "reading": "し",
+              "meaning": "four",
+              "baseForm": "四",
+              "level": "N5"
+            },
+            {
+              "surface": "本",
+              "reading": "ほん",
+              "meaning": "book",
+              "baseForm": "本",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "新しい",
+              "reading": "あたらしい",
+              "meaning": "new",
+              "baseForm": "新しい",
+              "level": "N5"
+            },
+            {
+              "surface": "柱",
+              "reading": "はしら",
+              "meaning": "pillar; post",
+              "baseForm": "柱",
+              "level": "N1"
+            },
+            {
+              "surface": "にし"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "荒",
+              "reading": "あら",
+              "meaning": "rough; rude; wild",
+              "baseForm": "荒い",
+              "level": "N2"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "土地",
+              "reading": "とち",
+              "meaning": "plot of land; lot; soil",
+              "baseForm": "土地",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "洪水",
+              "reading": "こうずい",
+              "meaning": "flood",
+              "baseForm": "洪水",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "鎮",
+              "reading": "おさえ",
+              "meaning": "tranquilize",
+              "baseForm": "鎮",
+              "level": "N1"
+            },
+            {
+              "surface": "め"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "世界",
+              "reading": "せかい",
+              "meaning": "the world",
+              "baseForm": "世界",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "平和",
+              "reading": "へいわ",
+              "meaning": "peace; harmony",
+              "baseForm": "平和",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "取り",
+              "reading": "とり",
+              "meaning": "to take something",
+              "baseForm": "取る",
+              "level": "N5"
+            },
+            {
+              "surface": "戻",
+              "reading": "もど",
+              "meaning": "to turn back",
+              "baseForm": "戻る",
+              "level": "N4"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "世界が再び美しく平和になると、女媧は疲れ果てて深く眠りにつきました。彼女の勇気ある行動と慈悲深い心は、何世代にもわたって人々に語り継がれました。今でも中国の神話の中で、世界を救った偉大な母として深く尊敬されています。",
+      "en": "When the world became beautiful and peaceful once again, Jokwa fell into a deep sleep, exhausted. Her courageous actions and compassionate heart were passed down through generations to be told to the people. Even now, in Chinese mythology, she is deeply respected as the great mother who saved the world.",
+      "sentences": [
+        {
+          "ja": "世界が再び美しく平和になると、女媧は疲れ果てて深く眠りにつきました。",
+          "literalEn": "the world [subj] again beauty しく peace [at/to] to become [with/and] Empress Nüwa [topic] tiredness the end [and] deep sleepy につき した",
+          "naturalEn": "Once the world was beautiful and peaceful once more, Nüwa, exhausted, fell into a deep sleep.",
+          "tokens": [
+            {
+              "surface": "世界",
+              "reading": "せかい",
+              "meaning": "the world",
+              "baseForm": "世界",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "再び",
+              "reading": "ふたたび",
+              "meaning": "again; once more; a second time",
+              "baseForm": "再び",
+              "level": "N3"
+            },
+            {
+              "surface": "美",
+              "reading": "び",
+              "meaning": "beauty",
+              "baseForm": "美",
+              "level": "N1"
+            },
+            {
+              "surface": "しく"
+            },
+            {
+              "surface": "平和",
+              "reading": "へいわ",
+              "meaning": "peace; harmony",
+              "baseForm": "平和",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なる",
+              "meaning": "to become",
+              "baseForm": "なる",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "女媧",
+              "reading": "じょか",
+              "meaning": "Empress Nüwa (Jokwa)",
+              "baseForm": "女媧",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "疲れ",
+              "reading": "つかれ",
+              "meaning": "tiredness; fatigue",
+              "baseForm": "疲れ",
+              "level": "N3"
+            },
+            {
+              "surface": "果て",
+              "reading": "はて",
+              "meaning": "the end; the extremity; the limit(s)",
+              "baseForm": "果て",
+              "level": "N1"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "深",
+              "reading": "ふか",
+              "meaning": "deep",
+              "baseForm": "深い",
+              "level": "N4"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "眠り",
+              "reading": "ねむり",
+              "meaning": "sleepy",
+              "baseForm": "眠い",
+              "level": "N4"
+            },
+            {
+              "surface": "につき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼女の勇気ある行動と慈悲深い心は、何世代にもわたって人々に語り継がれました。",
+          "literalEn": "she ['s / of] courage to be action [with/and] mercy deep core [topic] what generation [at/to] [also] [past] って person [at/to] language to succeed がれ した",
+          "naturalEn": "Her courageous deeds and compassionate heart have been passed down through the generations.",
+          "tokens": [
+            {
+              "surface": "彼女",
+              "reading": "かのじょ",
+              "meaning": "she; girlfriend",
+              "baseForm": "彼女",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "勇気",
+              "reading": "ゆうき",
+              "meaning": "courage; bravery; valour",
+              "baseForm": "勇気",
+              "level": "N3"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "行動",
+              "reading": "こうどう",
+              "meaning": "action; conduct; behaviour",
+              "baseForm": "行動",
+              "level": "N3"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "慈悲",
+              "reading": "じひ",
+              "meaning": "mercy; compassion",
+              "baseForm": "慈悲",
+              "level": "N3"
+            },
+            {
+              "surface": "深い",
+              "reading": "ふかい",
+              "meaning": "deep",
+              "baseForm": "深い",
+              "level": "N4"
+            },
+            {
+              "surface": "心",
+              "reading": "こころ",
+              "meaning": "core; heart",
+              "baseForm": "心",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "何",
+              "reading": "なん",
+              "meaning": "what",
+              "baseForm": "何",
+              "level": "N5"
+            },
+            {
+              "surface": "世代",
+              "reading": "せだい",
+              "meaning": "generation; the world; the age",
+              "baseForm": "世代",
+              "level": "N1"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "わ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "人々",
+              "reading": "ひと々",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "語り",
+              "reading": "ごり",
+              "meaning": "language; word",
+              "baseForm": "語",
+              "level": "N3"
+            },
+            {
+              "surface": "継",
+              "reading": "つ",
+              "meaning": "to succeed",
+              "baseForm": "継ぐ",
+              "level": "N1"
+            },
+            {
+              "surface": "がれ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "今でも中国の神話の中で、世界を救った偉大な母として深く尊敬されています。",
+          "literalEn": "now but China ['s / of] myth ['s / of] middle [in/by] the world [obj] to rescue from [past] greatness mother として deep respect てい [polite]",
+          "naturalEn": "To this day, she is deeply revered in Chinese mythology as the great mother who saved the world.",
+          "tokens": [
+            {
+              "surface": "今",
+              "reading": "いま",
+              "meaning": "now",
+              "baseForm": "今",
+              "level": "N5"
+            },
+            {
+              "surface": "でも",
+              "meaning": "but",
+              "baseForm": "でも",
+              "level": "N5"
+            },
+            {
+              "surface": "中国",
+              "reading": "ちゅうごく",
+              "meaning": "China",
+              "baseForm": "中国",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "神話",
+              "reading": "しんわ",
+              "meaning": "myth; legend",
+              "baseForm": "神話",
+              "level": "N2"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "世界",
+              "reading": "せかい",
+              "meaning": "the world",
+              "baseForm": "世界",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "救",
+              "reading": "すく",
+              "meaning": "to rescue from; to help out of",
+              "baseForm": "救う",
+              "level": "N3"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "偉大",
+              "reading": "いだい",
+              "meaning": "greatness",
+              "baseForm": "偉大",
+              "level": "N3"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "母",
+              "reading": "はは",
+              "meaning": "mother",
+              "baseForm": "母",
+              "level": "N5"
+            },
+            {
+              "surface": "として"
+            },
+            {
+              "surface": "深",
+              "reading": "ふか",
+              "meaning": "deep",
+              "baseForm": "深い",
+              "level": "N4"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "尊敬",
+              "reading": "そんけい",
+              "meaning": "respect; esteem; reverence",
+              "baseForm": "尊敬",
+              "level": "N3"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "天の柱が折れ、空に穴が開いたとき、女媧はどうしましたか？",
+      "options": [
+        "何もしずに遠くへ逃げた",
+        "人々を救うために五色の石を集めて空を塞いだ",
+        "新しい別の世界へ引っ越した",
+        "動物たちに助けを求めた"
+      ],
+      "answerIndex": 1,
+      "explanation": "「人々を救うために五色の石を集めて空を塞いだ」 is correct: 「ある日、突然大きな音がして天の柱が折れ、地面が大きく割れました。」 (One day, there was a sudden loud noise, the pillar of heaven snapped, and the ground split wide open.)"
+    },
+    {
+      "question": "女媧は空の穴を塞ぐために何を使いましたか？",
+      "options": [
+        "川底から集めた五色の石を溶かした液体",
+        "硬い木の枝と葉っぱ",
+        "大きなお寺の瓦とレンガ",
+        "海で拾った特別な貝殻"
+      ],
+      "answerIndex": 0,
+      "explanation": "「川底から集めた五色の石を溶かした液体」 is correct: 「溶けた五色の石の液体を使って、女媧は空の大きな穴をきれいに塞ぎました。」 (Using the molten liquid from the five-colored stones, Nuwa neatly sealed the large hole in the sky.)"
+    },
+    {
+      "question": "天を支える新しい柱を作るために、何が使われましたか？",
+      "options": [
+        "山の高い木",
+        "大きな亀の足",
+        "強い鉄の棒",
+        "太い竹の茎"
+      ],
+      "answerIndex": 1,
+      "explanation": "「大きな亀の足」 is correct: 「さらに、彼女は大きな亀の足を切って天を支える四本の新しい柱にし、荒れた土地の洪水を鎮めて世界に平和を取り戻しました。」 (Furthermore, she cut off the legs of a giant turtle to create four new pillars to support the heavens, subdued the floods in the ravaged lands, and restored peace to the world.)"
+    }
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/empress-jokwa.json"
+}

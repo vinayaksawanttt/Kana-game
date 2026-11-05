@@ -1,0 +1,669 @@
+{
+  "id": "n5-at-restaurant",
+  "title": "レストランでの食事",
+  "titleRomaji": "Resutoran de no shokuji",
+  "titleEn": "Eating at a Restaurant",
+  "level": "N5",
+  "category": "Everyday Life",
+  "tags": [
+    "restaurant",
+    "food",
+    "lunch",
+    "daily"
+  ],
+  "paragraphs": [
+    {
+      "ja": "日曜日、田中さんは一人で町のレストランへ行きました。十二時でしたから、店の中には人がたくさんいました。",
+      "en": "On Sunday, Mr. Tanaka went to a restaurant in town alone. Because it was twelve o'clock, there were many people inside the restaurant.",
+      "sentences": [
+        {
+          "ja": "日曜日、田中さんは一人で町のレストランへ行きました。",
+          "literalEn": "Sunday Tanaka [Mr/Ms] [topic] one person [in/by] town ['s / of] restaurant [toward] going した",
+          "naturalEn": "On Sunday, Mr. Tanaka went to a restaurant in town by himself.",
+          "tokens": [
+            {
+              "surface": "日曜日",
+              "reading": "にちようび",
+              "meaning": "Sunday",
+              "baseForm": "日曜日",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "一人",
+              "reading": "ひとり",
+              "meaning": "one person; alone",
+              "baseForm": "一人",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "町",
+              "reading": "まち",
+              "meaning": "town; city",
+              "baseForm": "町",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "レストラン",
+              "meaning": "restaurant",
+              "baseForm": "レストラン",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "十二時でしたから、店の中には人がたくさんいました。",
+          "literalEn": "twelve time [in/by] した [from] shop ['s / of] middle [at/to] [topic] person [subj] many いま した",
+          "naturalEn": "Since it was noon, the restaurant was full of people.",
+          "tokens": [
+            {
+              "surface": "十二",
+              "reading": "じゅうに",
+              "meaning": "twelve (12)",
+              "baseForm": "十二",
+              "level": "N5"
+            },
+            {
+              "surface": "時",
+              "reading": "とき",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "店",
+              "reading": "みせ",
+              "meaning": "shop",
+              "baseForm": "店",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "田中さんは窓の近くの席に座りました。メニューを見て、カレーと温かいお茶をたのみました。",
+      "en": "Mr. Tanaka sat at a seat near the window. He looked at the menu and ordered curry and warm tea.",
+      "sentences": [
+        {
+          "ja": "田中さんは窓の近くの席に座りました。",
+          "literalEn": "Tanaka [Mr/Ms] [topic] window ['s / of] near ['s / of] seat [at/to] to sit した",
+          "naturalEn": "Mr. Tanaka sat at a table near the window.",
+          "tokens": [
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "窓",
+              "reading": "まど",
+              "meaning": "window",
+              "baseForm": "窓",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "近く",
+              "reading": "ちかく",
+              "meaning": "near",
+              "baseForm": "近く",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "席",
+              "reading": "せき",
+              "meaning": "seat",
+              "baseForm": "席",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "座り",
+              "reading": "すわり",
+              "meaning": "to sit",
+              "baseForm": "座る",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "メニューを見て、カレーと温かいお茶をたのみました。",
+          "literalEn": "menu [obj] to see [and] curry [with/and] luke warm tea [obj] [past] のみ した",
+          "naturalEn": "He looked at the menu and ordered curry and hot tea.",
+          "tokens": [
+            {
+              "surface": "メニュー",
+              "meaning": "menu",
+              "baseForm": "メニュー",
+              "level": "N2"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "カレー",
+              "meaning": "curry",
+              "baseForm": "カレー",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "温かい",
+              "reading": "ぬるかい",
+              "meaning": "luke warm",
+              "baseForm": "温い",
+              "level": "N5"
+            },
+            {
+              "surface": "お茶",
+              "reading": "おちゃ",
+              "meaning": "tea (green tea)",
+              "baseForm": "お茶",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "のみ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "料理はすぐ来ました。とてもおいしかったです。田中さんはゆっくりごはんを食べて、本を読みました。",
+      "en": "The food arrived quickly. It was very delicious. Mr. Tanaka ate his meal leisurely and read a book.",
+      "sentences": [
+        {
+          "ja": "料理はすぐ来ました。",
+          "literalEn": "cuisine [topic] immediately for した",
+          "naturalEn": "The food arrived right away.",
+          "tokens": [
+            {
+              "surface": "料理",
+              "reading": "りょうり",
+              "meaning": "cuisine",
+              "baseForm": "料理",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "すぐ",
+              "meaning": "immediately; soon; easily",
+              "baseForm": "すぐ",
+              "level": "N5"
+            },
+            {
+              "surface": "来",
+              "reading": "らい",
+              "meaning": "for (10 days); next (year)",
+              "baseForm": "来",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "とてもおいしかったです。",
+          "literalEn": "very おい しか [past] [is]",
+          "naturalEn": "It was very delicious.",
+          "tokens": [
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "おい"
+            },
+            {
+              "surface": "しか"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "田中さんはゆっくりごはんを食べて、本を読みました。",
+          "literalEn": "Tanaka [Mr/Ms] [topic] slowly ごはん [obj]  to eat [and] book [obj] reading した",
+          "naturalEn": "Mr. Tanaka ate his meal at a leisurely pace and read a book.",
+          "tokens": [
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "ゆっくり",
+              "meaning": "slowly; at ease",
+              "baseForm": "ゆっくり",
+              "level": "N3"
+            },
+            {
+              "surface": "ごはん"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "食",
+              "reading": "く",
+              "meaning": "(male) (vulgar) to eat",
+              "baseForm": "食う",
+              "level": "N3"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "本",
+              "reading": "ほん",
+              "meaning": "book",
+              "baseForm": "本",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "読み",
+              "reading": "よみ",
+              "meaning": "reading",
+              "baseForm": "読み",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "千円を払って、「ごちそうさまでした」と言って店を出ました。歩いて家に帰りました。",
+      "en": "He paid 1,000 yen, said, \"Thank you for the meal,\" and left the shop. He walked back home.",
+      "sentences": [
+        {
+          "ja": "千円を払って、「ごちそうさまでした」と言って店を出ました。",
+          "literalEn": "1 [obj] to pay って feast [in/by] した [with/and] to say って shop [obj] to put out した",
+          "naturalEn": "I paid 1,000 yen, said, “Thank you for the meal,” and left the restaurant.",
+          "tokens": [
+            {
+              "surface": "千円",
+              "reading": "せんえん",
+              "meaning": "1,000 yen",
+              "baseForm": "千円",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "払",
+              "reading": "はら",
+              "meaning": "to pay",
+              "baseForm": "払う",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "ごちそうさま",
+              "meaning": "feast",
+              "baseForm": "ごちそうさま",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "店",
+              "reading": "みせ",
+              "meaning": "shop",
+              "baseForm": "店",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "歩いて家に帰りました。",
+          "literalEn": "pawn [and] house [at/to] return した",
+          "naturalEn": "I walked home.",
+          "tokens": [
+            {
+              "surface": "歩",
+              "reading": "ふ",
+              "meaning": "pawn (in chess or shogi)",
+              "baseForm": "歩",
+              "level": "N1"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "帰り",
+              "reading": "かえり",
+              "meaning": "return",
+              "baseForm": "帰り",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "田中さんは何を食べましたか？",
+      "options": [
+        "魚",
+        "肉",
+        "パン",
+        "カレー"
+      ],
+      "answerIndex": 3,
+      "explanation": "「カレー」 is correct: 「メニューを見て、カレーと温かいお茶をたのみました。」 (He looked at the menu and ordered curry and hot tea.)"
+    },
+    {
+      "question": "田中さんはいくら払いましたか？",
+      "options": [
+        "八百円",
+        "九百円",
+        "千円",
+        "千二百円"
+      ],
+      "answerIndex": 2,
+      "explanation": "「千円」 is correct: 「千円を払って、「ごちそうさまでした」と言って店を出ました。」 (I paid 1,000 yen, said, “Thank you for the meal,” and left the restaurant.)"
+    },
+    {
+      "question": "田中さんはどうやって家に帰りましたか？",
+      "options": [
+        "車で",
+        "バスで",
+        "電車で",
+        "歩いて"
+      ],
+      "answerIndex": 3,
+      "explanation": "「歩いて」 is correct: 「歩いて家に帰りました。」 (I walked home.)"
+    }
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/restaurant.json"
+}

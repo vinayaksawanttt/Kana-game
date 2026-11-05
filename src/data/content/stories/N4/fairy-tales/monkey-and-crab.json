@@ -14,19 +14,2108 @@
   "paragraphs": [
     {
       "ja": "昔々、ある秋の日に、猿とカニが川のそばで遊んでいました。カニはおいしいおにぎりを見つけ、猿は柿（かき）の種（たね）を見つけました。ずるい猿は「そのおにぎりと、この種を交換しよう。種を土に植えれば、毎年たくさんのおいしい柿が食べられるよ」と言いました。カニはそれを信じて交換し、家に帰って種を植えました。",
-      "en": "Long, long ago, on a bright autumn day, a monkey and a crab were playing by a river. The crab found a delicious rice-dumpling, and the monkey found a persimmon seed. The cunning monkey said, \"Let's exchange that rice-dumpling for this seed. If you plant the seed in the ground, you will be able to eat many delicious persimmons every year.\" The crab believed that, made the exchange, and went home and planted the seed."
+      "en": "Long, long ago, on a bright autumn day, a monkey and a crab were playing by a river. The crab found a delicious rice-dumpling, and the monkey found a persimmon seed. The cunning monkey said, \"Let's exchange that rice-dumpling for this seed. If you plant the seed in the ground, you will be able to eat many delicious persimmons every year.\" The crab believed that, made the exchange, and went home and planted the seed.",
+      "sentences": [
+        {
+          "ja": "昔々、ある秋の日に、猿とカニが川のそばで遊んでいました。",
+          "literalEn": "olden days to be autumn ['s / of] day [at/to] monkey [with/and] カニ [subj] river ['s / of] near [in/by] to play んで いま した",
+          "naturalEn": "Once upon a time, on an autumn day, a monkey and a crab were playing by the river.",
+          "tokens": [
+            {
+              "surface": "昔",
+              "reading": "むかし",
+              "meaning": "olden days; former",
+              "baseForm": "昔",
+              "level": "N4"
+            },
+            {
+              "surface": "々"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "秋",
+              "reading": "あき",
+              "meaning": "autumn",
+              "baseForm": "秋",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "カニ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "川",
+              "reading": "かわ",
+              "meaning": "river",
+              "baseForm": "川",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "そば",
+              "meaning": "near; beside",
+              "baseForm": "そば",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "遊",
+              "reading": "あそ",
+              "meaning": "to play; to make a visit",
+              "baseForm": "遊ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "カニはおいしいおにぎりを見つけ、猿は柿（かき）の種（たね）を見つけました。",
+          "literalEn": "カニ [topic] delicious おにぎり [obj] to see つけ monkey [topic] persimmon ['s / of] seed [obj] to see つけ した",
+          "naturalEn": "The crab found a delicious rice ball, and the monkey found a persimmon seed.",
+          "tokens": [
+            {
+              "surface": "カニ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "おいしい",
+              "meaning": "delicious",
+              "baseForm": "おいしい",
+              "level": "N5"
+            },
+            {
+              "surface": "おにぎり"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "つけ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "柿",
+              "reading": "かき",
+              "meaning": "persimmon",
+              "baseForm": "柿",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "種",
+              "reading": "たね",
+              "meaning": "seed; material; cause",
+              "baseForm": "種",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "つけ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ずるい猿は「そのおにぎりと、この種を交換しよう。",
+          "literalEn": "sly monkey [topic] that おにぎり [with/and] this seed [obj] exchange しよう",
+          "naturalEn": "The sly monkey said, “Let’s trade that rice ball for this seed. If you plant the seed in the ground, you’ll be able to eat lots of delicious persimmons every year.”",
+          "tokens": [
+            {
+              "surface": "ずるい",
+              "meaning": "sly; cunning",
+              "baseForm": "ずるい",
+              "level": "N2"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "おにぎり"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "この",
+              "meaning": "this",
+              "baseForm": "この",
+              "level": "N5"
+            },
+            {
+              "surface": "種",
+              "reading": "たね",
+              "meaning": "seed; material; cause",
+              "baseForm": "種",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "交換",
+              "reading": "こうかん",
+              "meaning": "exchange; interchange; reciprocity",
+              "baseForm": "交換",
+              "level": "N3"
+            },
+            {
+              "surface": "しよう"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "種を土に植えれば、毎年たくさんのおいしい柿が食べられるよ」と言いました。",
+          "literalEn": "seed [obj] earth [at/to] plant every year many ['s / of] delicious persimmon [subj]  to eat られる [you know] [with/and] to say いま した",
+          "naturalEn": "\"If you plant that seed in the ground, you’ll be able to eat lots of delicious persimmons every year,\" he said.",
+          "tokens": [
+            {
+              "surface": "種",
+              "reading": "たね",
+              "meaning": "seed; material; cause",
+              "baseForm": "種",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "土",
+              "reading": "つち",
+              "meaning": "earth; soil",
+              "baseForm": "土",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "植",
+              "reading": "う",
+              "meaning": "plant",
+              "baseForm": "植",
+              "level": "N2"
+            },
+            {
+              "surface": "え"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ば"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "毎年",
+              "reading": "まいねん",
+              "meaning": "every year",
+              "baseForm": "毎年",
+              "level": "N5"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "おいしい",
+              "meaning": "delicious",
+              "baseForm": "おいしい",
+              "level": "N5"
+            },
+            {
+              "surface": "柿",
+              "reading": "かき",
+              "meaning": "persimmon",
+              "baseForm": "柿",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "食",
+              "reading": "く",
+              "meaning": "(male) (vulgar) to eat",
+              "baseForm": "食う",
+              "level": "N3"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "られる"
+            },
+            {
+              "surface": "よ"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "カニはそれを信じて交換し、家に帰って種を植えました。",
+          "literalEn": "カニ [topic] that [obj] faith [and] exchange house [at/to] to go back って seed [obj] plant した",
+          "naturalEn": "The crab believed him, made the exchange, and went home to plant the seed.",
+          "tokens": [
+            {
+              "surface": "カニ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "それ",
+              "meaning": "that",
+              "baseForm": "それ",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "信",
+              "reading": "シン",
+              "meaning": "faith, fidelity, trust",
+              "baseForm": "信",
+              "level": "N3"
+            },
+            {
+              "surface": "じ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "交換",
+              "reading": "こうかん",
+              "meaning": "exchange; interchange; reciprocity",
+              "baseForm": "交換",
+              "level": "N3"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "帰",
+              "reading": "かえ",
+              "meaning": "to go back",
+              "baseForm": "帰る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "種",
+              "reading": "たね",
+              "meaning": "seed; material; cause",
+              "baseForm": "種",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "植",
+              "reading": "う",
+              "meaning": "plant",
+              "baseForm": "植",
+              "level": "N2"
+            },
+            {
+              "surface": "え"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "数年が過ぎて、種は大きな木になり、秋には甘そうな柿がたくさんなりました。しかし、カニは木に登ることができません。そこで、木登りが上手な猿に柿を取ってもらうよう頼みました。猿は喜んで木に登りましたが、自分だけでおいしい柿を全部食べてしまいました。カニが怒って文句を言うと、猿は硬くて青い柿をカニに投げつけ、カニを殺して逃げてしまいました。",
-      "en": "Several years passed, the seed became a big tree, and in autumn it bore many sweet-looking persimmons. However, the crab could not climb the tree. So, he asked the monkey, who was good at climbing trees, to pick the persimmons for him. The monkey happily climbed the tree, but ate all the delicious persimmons by himself. When the crab got angry and complained, the monkey threw hard, unripe persimmons at the crab, killed him, and ran away."
+      "en": "Several years passed, the seed became a big tree, and in autumn it bore many sweet-looking persimmons. However, the crab could not climb the tree. So, he asked the monkey, who was good at climbing trees, to pick the persimmons for him. The monkey happily climbed the tree, but ate all the delicious persimmons by himself. When the crab got angry and complained, the monkey threw hard, unripe persimmons at the crab, killed him, and ran away.",
+      "sentences": [
+        {
+          "ja": "数年が過ぎて、種は大きな木になり、秋には甘そうな柿がたくさんなりました。",
+          "literalEn": "number year [subj] past [and] seed [topic] big tree [at/to] なり autumn [at/to] [topic] sweet really persimmon [subj] many なり した",
+          "naturalEn": "A few years passed, and the seed grew into a large tree, bearing many sweet-looking persimmons in the fall.",
+          "tokens": [
+            {
+              "surface": "数",
+              "reading": "かず",
+              "meaning": "number; figure",
+              "baseForm": "数",
+              "level": "N3"
+            },
+            {
+              "surface": "年",
+              "reading": "とし",
+              "meaning": "year",
+              "baseForm": "年",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "過ぎ",
+              "reading": "すぎ",
+              "meaning": "past; after",
+              "baseForm": "過ぎ",
+              "level": "N1"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "種",
+              "reading": "たね",
+              "meaning": "seed; material; cause",
+              "baseForm": "種",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "木",
+              "reading": "き",
+              "meaning": "tree; wood",
+              "baseForm": "木",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "秋",
+              "reading": "あき",
+              "meaning": "autumn",
+              "baseForm": "秋",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "甘",
+              "reading": "あま",
+              "meaning": "sweet",
+              "baseForm": "甘い",
+              "level": "N5"
+            },
+            {
+              "surface": "そう",
+              "meaning": "really",
+              "baseForm": "そう",
+              "level": "N4"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "柿",
+              "reading": "かき",
+              "meaning": "persimmon",
+              "baseForm": "柿",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "しかし、カニは木に登ることができません。",
+          "literalEn": "however カニ [topic] tree [at/to] to climb thing [subj] でき せん",
+          "naturalEn": "But the crab couldn’t climb the tree.",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "カニ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "木",
+              "reading": "き",
+              "meaning": "tree; wood",
+              "baseForm": "木",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "登る",
+              "reading": "のぼる",
+              "meaning": "to climb",
+              "baseForm": "登る",
+              "level": "N5"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "そこで、木登りが上手な猿に柿を取ってもらうよう頼みました。",
+          "literalEn": "so tree to climb [subj] skillful monkey [at/to] persimmon [obj] to take something って to receive よう request した",
+          "naturalEn": "So, he asked a monkey, who was good at climbing trees, to pick the persimmons for him.",
+          "tokens": [
+            {
+              "surface": "そこで",
+              "meaning": "so (conj); accordingly; now",
+              "baseForm": "そこで",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "木",
+              "reading": "き",
+              "meaning": "tree; wood",
+              "baseForm": "木",
+              "level": "N5"
+            },
+            {
+              "surface": "登り",
+              "reading": "のぼり",
+              "meaning": "to climb",
+              "baseForm": "登る",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "上手",
+              "reading": "じょうず",
+              "meaning": "skillful",
+              "baseForm": "上手",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "柿",
+              "reading": "かき",
+              "meaning": "persimmon",
+              "baseForm": "柿",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "取",
+              "reading": "と",
+              "meaning": "to take something",
+              "baseForm": "取る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "もらう",
+              "meaning": "to receive",
+              "baseForm": "もらう",
+              "level": "N4"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "頼み",
+              "reading": "たのみ",
+              "meaning": "request; favor; reliance",
+              "baseForm": "頼み",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "猿は喜んで木に登りましたが、自分だけでおいしい柿を全部食べてしまいました。",
+          "literalEn": "monkey [topic] to be delighted んで tree [at/to] to climb した [subj] oneself だけ [in/by] delicious persimmon [obj] all  to eat [and] しま いま した",
+          "naturalEn": "The monkey happily climbed the tree, but ate all the delicious persimmons by himself.",
+          "tokens": [
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "喜",
+              "reading": "よろこ",
+              "meaning": "to be delighted",
+              "baseForm": "喜ぶ",
+              "level": "N4"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "木",
+              "reading": "き",
+              "meaning": "tree; wood",
+              "baseForm": "木",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "登り",
+              "reading": "のぼり",
+              "meaning": "to climb",
+              "baseForm": "登る",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "自分",
+              "reading": "じぶん",
+              "meaning": "oneself",
+              "baseForm": "自分",
+              "level": "N5"
+            },
+            {
+              "surface": "だけ"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "おいしい",
+              "meaning": "delicious",
+              "baseForm": "おいしい",
+              "level": "N5"
+            },
+            {
+              "surface": "柿",
+              "reading": "かき",
+              "meaning": "persimmon",
+              "baseForm": "柿",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "全部",
+              "reading": "ぜんぶ",
+              "meaning": "all",
+              "baseForm": "全部",
+              "level": "N5"
+            },
+            {
+              "surface": "食",
+              "reading": "く",
+              "meaning": "(male) (vulgar) to eat",
+              "baseForm": "食う",
+              "level": "N3"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "カニが怒って文句を言うと、猿は硬くて青い柿をカニに投げつけ、カニを殺して逃げてしまいました。",
+          "literalEn": "カニ [subj] to get angry って phrase [obj] to say [with/and] monkey [topic] solid [and] blue persimmon [obj] カニ [at/to] throw つけ カニ [obj] to kill [and] to let loose [and] しま いま した",
+          "naturalEn": "When the crab got angry and complained, the monkey threw a hard, green persimmon at the crab, killing it, and then ran away.",
+          "tokens": [
+            {
+              "surface": "カニ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "怒",
+              "reading": "おこ",
+              "meaning": "to get angry; to be angry",
+              "baseForm": "怒る",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "文句",
+              "reading": "もんく",
+              "meaning": "phrase; complaint",
+              "baseForm": "文句",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "言う",
+              "reading": "いう",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "硬",
+              "reading": "かた",
+              "meaning": "solid; hard (esp. metal, stone); unpolished writing",
+              "baseForm": "硬い",
+              "level": "N3"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "青い",
+              "reading": "あおい",
+              "meaning": "blue",
+              "baseForm": "青い",
+              "level": "N5"
+            },
+            {
+              "surface": "柿",
+              "reading": "かき",
+              "meaning": "persimmon",
+              "baseForm": "柿",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "カニ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "投",
+              "reading": "トウ",
+              "meaning": "throw, abandon, discard",
+              "baseForm": "投",
+              "level": "N3"
+            },
+            {
+              "surface": "げ"
+            },
+            {
+              "surface": "つけ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "カニ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "殺し",
+              "reading": "ころし",
+              "meaning": "to kill",
+              "baseForm": "殺す",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "逃げ",
+              "reading": "のがげ",
+              "meaning": "to let loose; to set free; to let escape",
+              "baseForm": "逃す",
+              "level": "N1"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "死んだお父さんを見つけた子どものカニは、とても悲しんで泣きました。しかし、すぐにお父さんの敵（かたき）を討つ（うつ）ことを決めました。自分の力だけでは強い猿に勝てないので、お父さんの友達だった臼（うす）とハチと栗（くり）に相談しました。三人は子どものカニをかわいそうに思い、喜んで助ける約束をしました。",
-      "en": "The young crab who found his dead father was very sad and cried. However, he soon decided to avenge his father. Because he could not defeat the strong monkey by his own strength alone, he consulted his father's friends: the mortar, the bee, and the chestnut. The three felt sorry for the young crab and gladly promised to help him."
+      "en": "The young crab who found his dead father was very sad and cried. However, he soon decided to avenge his father. Because he could not defeat the strong monkey by his own strength alone, he consulted his father's friends: the mortar, the bee, and the chestnut. The three felt sorry for the young crab and gladly promised to help him.",
+      "sentences": [
+        {
+          "ja": "死んだお父さんを見つけた子どものカニは、とても悲しんで泣きました。",
+          "literalEn": "death [is] father [obj] to see つけ [past] child ['s / of] カニ [topic] very sad んで to weep した",
+          "naturalEn": "When the baby crab found its dead father, it was very sad and cried.",
+          "tokens": [
+            {
+              "surface": "死",
+              "reading": "し",
+              "meaning": "death; decease",
+              "baseForm": "死",
+              "level": "N1"
+            },
+            {
+              "surface": "ん"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "お父さん",
+              "reading": "おとうさん",
+              "meaning": "father",
+              "baseForm": "お父さん",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "つけ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "子ども",
+              "reading": "こども",
+              "meaning": "child; children",
+              "baseForm": "子ども",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "カニ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "悲",
+              "reading": "かな",
+              "meaning": "sad, deplore, grieve",
+              "baseForm": "悲",
+              "level": "N3"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "泣き",
+              "reading": "なき",
+              "meaning": "to weep",
+              "baseForm": "泣く",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "しかし、すぐにお父さんの敵（かたき）を討つ（うつ）ことを決めました。",
+          "literalEn": "however immediately [at/to] father ['s / of] enemy [obj] to attack thing [obj] decide した",
+          "naturalEn": "However, it immediately decided to avenge its father’s enemy.",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "すぐ",
+              "meaning": "immediately; soon; easily",
+              "baseForm": "すぐ",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "お父さん",
+              "reading": "おとうさん",
+              "meaning": "father",
+              "baseForm": "お父さん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "敵",
+              "reading": "てき",
+              "meaning": "enemy; rival",
+              "baseForm": "敵",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "討つ",
+              "reading": "うつ",
+              "meaning": "to attack; to avenge",
+              "baseForm": "討つ",
+              "level": "N2"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "決め",
+              "reading": "ケツめ",
+              "meaning": "decide, agree upon, appoint",
+              "baseForm": "決",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "自分の力だけでは強い猿に勝てないので、お父さんの友達だった臼（うす）とハチと栗（くり）に相談しました。",
+          "literalEn": "oneself ['s / of] strength だけ with that... powerful monkey [at/to] to win [and] [not] ので father ['s / of] friend [is] [past] mortar [with/and] ハチ [with/and] chestnut [at/to] to discuss しま した",
+          "naturalEn": "Since it couldn’t defeat the strong monkey on its own, it consulted its father’s friends—the Mortar, the Bee, and the Chestnut.",
+          "tokens": [
+            {
+              "surface": "自分",
+              "reading": "じぶん",
+              "meaning": "oneself",
+              "baseForm": "自分",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "力",
+              "reading": "ちから",
+              "meaning": "strength; power",
+              "baseForm": "力",
+              "level": "N4"
+            },
+            {
+              "surface": "だけ"
+            },
+            {
+              "surface": "では",
+              "meaning": "with that...",
+              "baseForm": "では",
+              "level": "N5"
+            },
+            {
+              "surface": "強い",
+              "reading": "つよい",
+              "meaning": "powerful",
+              "baseForm": "強い",
+              "level": "N5"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "勝",
+              "reading": "か",
+              "meaning": "to win",
+              "baseForm": "勝つ",
+              "level": "N4"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "ので"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "お父さん",
+              "reading": "おとうさん",
+              "meaning": "father",
+              "baseForm": "お父さん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "友達",
+              "reading": "ともだち",
+              "meaning": "friend",
+              "baseForm": "友達",
+              "level": "N5"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "臼",
+              "reading": "うす",
+              "meaning": "mortar; millstone",
+              "baseForm": "臼",
+              "level": "N4"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "ハチ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "栗",
+              "reading": "おののく",
+              "meaning": "chestnut",
+              "baseForm": "栗",
+              "level": "N1"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "相談",
+              "reading": "そうだん",
+              "meaning": "to discuss",
+              "baseForm": "相談",
+              "level": "N4"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "三人は子どものカニをかわいそうに思い、喜んで助ける約束をしました。",
+          "literalEn": "three people [topic] child ['s / of] カニ [obj] poor [at/to] to think to be delighted んで to help promise [obj] しま した",
+          "naturalEn": "The three of them took pity on the baby crab and gladly promised to help.",
+          "tokens": [
+            {
+              "surface": "三人",
+              "reading": "さんにん",
+              "meaning": "three people",
+              "baseForm": "三人",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "子ども",
+              "reading": "こども",
+              "meaning": "child; children",
+              "baseForm": "子ども",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "カニ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "かわいそう",
+              "meaning": "poor; pitiable; pathetic",
+              "baseForm": "かわいそう",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "思い",
+              "reading": "おもい",
+              "meaning": "to think; to feel",
+              "baseForm": "思う",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "喜",
+              "reading": "よろこ",
+              "meaning": "to be delighted",
+              "baseForm": "喜ぶ",
+              "level": "N4"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "助ける",
+              "reading": "たすける",
+              "meaning": "to help; to save; to rescue",
+              "baseForm": "助ける",
+              "level": "N3"
+            },
+            {
+              "surface": "約束",
+              "reading": "やくそく",
+              "meaning": "promise",
+              "baseForm": "約束",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "子どものカニは、何も知らないふりをして猿を家に招待し、ごちそうを出しました。その後、猿が一人でお茶の部屋の火に近づくと、隠れていた熱い栗が飛び出して猿の首に当たりました。びっくりして逃げようとした猿の顔を、今度はハチが刺しました。猿が泣きながら門の下を走ると、上から重い臼が落ちてきて猿を潰しました。最後に子どものカニがはさみで猿の首を切り、無事にお父さんの敵を討ちました。",
-      "en": "The young crab pretended to know nothing, invited the monkey to his house, and served a feast. After that, when the monkey approached the fire in the tea room alone, the hidden hot chestnut popped out and hit the monkey's neck. Next, the bee stung the face of the monkey as he was surprised and tried to run away. When the monkey ran under the gate crying, the heavy mortar fell from above and crushed the monkey. Finally, the young crab cut off the monkey's head with his claws, and safely avenged his father."
+      "en": "The young crab pretended to know nothing, invited the monkey to his house, and served a feast. After that, when the monkey approached the fire in the tea room alone, the hidden hot chestnut popped out and hit the monkey's neck. Next, the bee stung the face of the monkey as he was surprised and tried to run away. When the monkey ran under the gate crying, the heavy mortar fell from above and crushed the monkey. Finally, the young crab cut off the monkey's head with his claws, and safely avenged his father.",
+      "sentences": [
+        {
+          "ja": "子どものカニは、何も知らないふりをして猿を家に招待し、ごちそうを出しました。",
+          "literalEn": "child ['s / of] カニ [topic] what [also] to know [not] ふり [obj] [and] monkey [obj] house [at/to] to invite a feast [obj] to put out しま した",
+          "naturalEn": "The baby crab pretended not to know anything and invited the monkey into his home, where he served him a feast.",
+          "tokens": [
+            {
+              "surface": "子ども",
+              "reading": "こども",
+              "meaning": "child; children",
+              "baseForm": "子ども",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "カニ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "何",
+              "reading": "なん",
+              "meaning": "what",
+              "baseForm": "何",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "知",
+              "reading": "し",
+              "meaning": "to know",
+              "baseForm": "知る",
+              "level": "N5"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "ふり"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "招待",
+              "reading": "しょうたい",
+              "meaning": "to invite",
+              "baseForm": "招待",
+              "level": "N4"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ごちそう",
+              "meaning": "a feast",
+              "baseForm": "ごちそう",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "その後、猿が一人でお茶の部屋の火に近づくと、隠れていた熱い栗が飛び出して猿の首に当たりました。",
+          "literalEn": "after that monkey [subj] one person [in/by] tea ['s / of] room ['s / of] fire [at/to] near [with/and] to hide てい [past] hot to the touch chestnut [subj] to fly to put out [and] monkey ['s / of] neck on the occasion of した",
+          "naturalEn": "Later, when the monkey approached the fire in the tea room alone, a hot chestnut that had been hidden there flew out and struck the monkey on the neck.",
+          "tokens": [
+            {
+              "surface": "その後",
+              "reading": "そのあと",
+              "meaning": "after that; afterwards",
+              "baseForm": "その後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "一人",
+              "reading": "ひとり",
+              "meaning": "one person; alone",
+              "baseForm": "一人",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "お茶",
+              "reading": "おちゃ",
+              "meaning": "tea (green tea)",
+              "baseForm": "お茶",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "部屋",
+              "reading": "へや",
+              "meaning": "room",
+              "baseForm": "部屋",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "火",
+              "reading": "ひ",
+              "meaning": "fire",
+              "baseForm": "火",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "近づく",
+              "reading": "ちかづく",
+              "meaning": "near",
+              "baseForm": "近い",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "隠れ",
+              "reading": "かくれ",
+              "meaning": "to hide; to conceal",
+              "baseForm": "隠す",
+              "level": "N3"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "熱い",
+              "reading": "あつい",
+              "meaning": "hot to the touch",
+              "baseForm": "熱い",
+              "level": "N5"
+            },
+            {
+              "surface": "栗",
+              "reading": "おののく",
+              "meaning": "chestnut",
+              "baseForm": "栗",
+              "level": "N1"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "飛",
+              "reading": "と",
+              "meaning": "to fly; to hop",
+              "baseForm": "飛ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "び"
+            },
+            {
+              "surface": "出し",
+              "reading": "だし",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "首",
+              "reading": "くび",
+              "meaning": "neck",
+              "baseForm": "首",
+              "level": "N4"
+            },
+            {
+              "surface": "に当たり",
+              "reading": "にあたり",
+              "meaning": "on the occasion of; hitting upon",
+              "baseForm": "に当たり",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "びっくりして逃げようとした猿の顔を、今度はハチが刺しました。",
+          "literalEn": "be surprised [and] to let loose よう [with/and] した monkey ['s / of] face [obj] now [topic] ハチ [subj] thorn しま した",
+          "naturalEn": "Just as the monkey was startled and tried to flee, a bee stung him in the face.",
+          "tokens": [
+            {
+              "surface": "びっくり",
+              "meaning": "be surprised; be amazed; be frightened",
+              "baseForm": "びっくり",
+              "level": "N3"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "逃げ",
+              "reading": "のがげ",
+              "meaning": "to let loose; to set free; to let escape",
+              "baseForm": "逃す",
+              "level": "N1"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "顔",
+              "reading": "かお",
+              "meaning": "face, expression",
+              "baseForm": "顔",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "今度",
+              "reading": "こんど",
+              "meaning": "now; next time",
+              "baseForm": "今度",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "ハチ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "刺",
+              "reading": "とげ",
+              "meaning": "thorn; splinter; spine",
+              "baseForm": "刺",
+              "level": "N1"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "猿が泣きながら門の下を走ると、上から重い臼が落ちてきて猿を潰しました。",
+          "literalEn": "monkey [subj] to weep ながら gate ['s / of] below [obj] to run [with/and] on top of [from] heavy mortar [subj] to drop [and] [and] monkey [obj] to smash した",
+          "naturalEn": "As the monkey ran crying under the gate, a heavy mortar fell from above and crushed him.",
+          "tokens": [
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "泣き",
+              "reading": "なき",
+              "meaning": "to weep",
+              "baseForm": "泣く",
+              "level": "N4"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "門",
+              "reading": "もん",
+              "meaning": "gate",
+              "baseForm": "門",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "下",
+              "reading": "した",
+              "meaning": "below",
+              "baseForm": "下",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "走る",
+              "reading": "はしる",
+              "meaning": "to run",
+              "baseForm": "走る",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "上",
+              "reading": "うえ",
+              "meaning": "on top of",
+              "baseForm": "上",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "重い",
+              "reading": "おもい",
+              "meaning": "heavy",
+              "baseForm": "重い",
+              "level": "N5"
+            },
+            {
+              "surface": "臼",
+              "reading": "うす",
+              "meaning": "mortar; millstone",
+              "baseForm": "臼",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "落ち",
+              "reading": "おとち",
+              "meaning": "to drop",
+              "baseForm": "落す",
+              "level": "N4"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "潰し",
+              "reading": "つぶし",
+              "meaning": "to smash; to waste",
+              "baseForm": "潰す",
+              "level": "N2"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "最後に子どものカニがはさみで猿の首を切り、無事にお父さんの敵を討ちました。",
+          "literalEn": "last [at/to] child ['s / of] カニ [subj] scissors [in/by] monkey ['s / of] neck [obj] limits safety [at/to] father ['s / of] enemy [obj] to attack した",
+          "naturalEn": "Finally, the baby crab severed the monkey’s neck with its claws, successfully avenging its father.",
+          "tokens": [
+            {
+              "surface": "最後",
+              "reading": "さいご",
+              "meaning": "last; end",
+              "baseForm": "最後",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "子ども",
+              "reading": "こども",
+              "meaning": "child; children",
+              "baseForm": "子ども",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "カニ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "はさみ",
+              "meaning": "scissors",
+              "baseForm": "はさみ",
+              "level": "N3"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "猿",
+              "reading": "さる",
+              "meaning": "monkey",
+              "baseForm": "猿",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "首",
+              "reading": "くび",
+              "meaning": "neck",
+              "baseForm": "首",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "切り",
+              "reading": "きり",
+              "meaning": "limits; end; bounds",
+              "baseForm": "切り",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "無事",
+              "reading": "ぶじ",
+              "meaning": "safety; peace; quietness",
+              "baseForm": "無事",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "お父さん",
+              "reading": "おとうさん",
+              "meaning": "father",
+              "baseForm": "お父さん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "敵",
+              "reading": "てき",
+              "meaning": "enemy; rival",
+              "baseForm": "敵",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "討",
+              "reading": "う",
+              "meaning": "to attack; to avenge",
+              "baseForm": "討つ",
+              "level": "N2"
+            },
+            {
+              "surface": "ち"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
@@ -38,7 +2127,8 @@
         "お金と赤い服",
         "お茶と甘いお菓子"
       ],
-      "answerIndex": 0
+      "answerIndex": 0,
+      "explanation": "「おにぎりと柿の種」 is correct: 「昔々、ある秋の日に、猿とカニが川のそばで遊んでいました。」 (Once upon a time, on an autumn day, a monkey and a crab were playing by the river.)"
     },
     {
       "question": "お父さんのカニはどうして死にましたか？",
@@ -48,7 +2138,8 @@
         "川に落ちて溺れたから",
         "重い臼が落ちてきたから"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「猿が硬い柿を投げつけたから」 is correct: 「死んだお父さんを見つけた子どものカニは、とても悲しんで泣きました。」 (When the baby crab found its dead father, it was very sad and cried.)"
     },
     {
       "question": "子どものカニを助けた友達は誰ですか？",
@@ -58,7 +2149,9 @@
         "臼とハチと栗",
         "熊と鹿とうさぎ"
       ],
-      "answerIndex": 2
+      "answerIndex": 2,
+      "explanation": "「臼とハチと栗」 is the correct answer according to the story."
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/monkey-and-crab.json"
 }

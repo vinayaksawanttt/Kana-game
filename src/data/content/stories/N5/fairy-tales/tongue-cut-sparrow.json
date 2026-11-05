@@ -5,23 +5,2046 @@
   "titleEn": "The Tongue-Cut Sparrow",
   "level": "N5",
   "category": "Fairy Tale",
-  "tags": ["sparrow", "greed", "fairy tale", "animals"],
+  "tags": [
+    "sparrow",
+    "greed",
+    "fairy tale",
+    "animals"
+  ],
   "paragraphs": [
     {
       "ja": "昔々、いいおじいさんと、悪いおばあさんがいました。おじいさんは、可愛いすずめがとても好きでした。ある日、すずめは、おばあさんが作った食べ物を食べてしまいました。おばあさんはとても怒りました。彼女はすずめの口を切って、「外へ行きなさい！」と言いました。おじいさんは家に帰って、すずめがいませんから、とても悲しかったです。",
-      "en": "Long, long ago, there was a good old man and a bad old woman. The old man liked a cute sparrow very much. One day, the sparrow ate the food the old woman had made. The old woman got very angry. She cut the sparrow's mouth and said, \"Go outside!\" The old man returned home, and because the sparrow was not there, he was very sad."
+      "en": "Long, long ago, there was a good old man and a bad old woman. The old man liked a cute sparrow very much. One day, the sparrow ate the food the old woman had made. The old woman got very angry. She cut the sparrow's mouth and said, \"Go outside!\" The old man returned home, and because the sparrow was not there, he was very sad.",
+      "sentences": [
+        {
+          "ja": "昔々、いいおじいさんと、悪いおばあさんがいました。",
+          "literalEn": "olden days good old man [with/and] bad old woman [subj] いま した",
+          "naturalEn": "Once upon a time, there was a kind old man and a mean old woman.",
+          "tokens": [
+            {
+              "surface": "昔",
+              "reading": "むかし",
+              "meaning": "olden days; former",
+              "baseForm": "昔",
+              "level": "N4"
+            },
+            {
+              "surface": "々"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "いい",
+              "meaning": "good",
+              "baseForm": "いい",
+              "level": "N5"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "悪い",
+              "reading": "わるい",
+              "meaning": "bad",
+              "baseForm": "悪い",
+              "level": "N5"
+            },
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "おじいさんは、可愛いすずめがとても好きでした。",
+          "literalEn": "old man [topic] cute すずめ [subj] very likeable [in/by] した",
+          "naturalEn": "The old man loved that cute little sparrow very much.",
+          "tokens": [
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "可愛い",
+              "reading": "かわいい",
+              "meaning": "cute; adorable",
+              "baseForm": "可愛い",
+              "level": "N5"
+            },
+            {
+              "surface": "すずめ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "好き",
+              "reading": "すき",
+              "meaning": "likeable",
+              "baseForm": "好き",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ある日、すずめは、おばあさんが作った食べ物を食べてしまいました。",
+          "literalEn": "to be day すずめ [topic] old woman [subj] a work [past] food [obj]  to eat [and] しま いま した",
+          "naturalEn": "One day, the sparrow ate some food that the old woman had made.",
+          "tokens": [
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "すずめ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "作",
+              "reading": "さく",
+              "meaning": "a work; a harvest",
+              "baseForm": "作",
+              "level": "N1"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "食べ物",
+              "reading": "たべもの",
+              "meaning": "food",
+              "baseForm": "食べ物",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "食",
+              "reading": "く",
+              "meaning": "(male) (vulgar) to eat",
+              "baseForm": "食う",
+              "level": "N3"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "おばあさんはとても怒りました。",
+          "literalEn": "old woman [topic] very anger した",
+          "naturalEn": "The old woman was very angry.",
+          "tokens": [
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "怒り",
+              "reading": "いかり",
+              "meaning": "anger; hatred",
+              "baseForm": "怒り",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼女はすずめの口を切って、「外へ行きなさい！",
+          "literalEn": "she [topic] すずめ ['s / of] mouth [obj] to cut って outside [toward] going さい",
+          "naturalEn": "She cut off the sparrow’s beak and said, “Go outside!”",
+          "tokens": [
+            {
+              "surface": "彼女",
+              "reading": "かのじょ",
+              "meaning": "she; girlfriend",
+              "baseForm": "彼女",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "すずめ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "口",
+              "reading": "くち",
+              "meaning": "mouth; opening",
+              "baseForm": "口",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "切",
+              "reading": "き",
+              "meaning": "to cut",
+              "baseForm": "切る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "外",
+              "reading": "そと",
+              "meaning": "outside",
+              "baseForm": "外",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "！"
+            }
+          ]
+        },
+        {
+          "ja": "」と言いました。",
+          "literalEn": "[with/and] to say いま した",
+          "naturalEn": "” he said.",
+          "tokens": [
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "おじいさんは家に帰って、すずめがいませんから、とても悲しかったです。",
+          "literalEn": "old man [topic] house [at/to] to go back って すずめ [subj] いま せん [from] very sad しか [past] [is]",
+          "naturalEn": "When the old man came home and found that the sparrow was gone, he was very sad.",
+          "tokens": [
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "帰",
+              "reading": "かえ",
+              "meaning": "to go back",
+              "baseForm": "帰る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "すずめ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "悲",
+              "reading": "かな",
+              "meaning": "sad, deplore, grieve",
+              "baseForm": "悲",
+              "level": "N3"
+            },
+            {
+              "surface": "しか"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "次の日、おじいさんは山へすずめを見に行きました。竹がたくさんある所で、おじいさんはすずめに会いました。すずめは元気で、おじいさんを大きくてきれいな家へ連れて行きました。すずめはおじいさんにおいしいご飯を出して、一緒に楽しく遊びました。夕方、すずめは二つの箱を出して、「大きい箱と小さい箱、どちらが好きですか」と聞きました。おじいさんは「私は年を取っていますから、小さい箱がいいです」と答えました。",
-      "en": "The next day, the old man went to the mountain to look for the sparrow. At a place where there was a lot of bamboo, the old man met the sparrow. The sparrow was well, and took the old man to a big and beautiful house. The sparrow served the old man delicious food, and they played happily together. In the evening, the sparrow brought out two boxes and asked, \"The big box and the small box, which do you like?\" The old man answered, \"Because I am old, the small box is good.\""
+      "en": "The next day, the old man went to the mountain to look for the sparrow. At a place where there was a lot of bamboo, the old man met the sparrow. The sparrow was well, and took the old man to a big and beautiful house. The sparrow served the old man delicious food, and they played happily together. In the evening, the sparrow brought out two boxes and asked, \"The big box and the small box, which do you like?\" The old man answered, \"Because I am old, the small box is good.\"",
+      "sentences": [
+        {
+          "ja": "次の日、おじいさんは山へすずめを見に行きました。",
+          "literalEn": "next ['s / of] day old man [topic] mountain [toward] すずめ [obj] to see [at/to] going した",
+          "naturalEn": "The next day, the old man went to the mountain to see the sparrow.",
+          "tokens": [
+            {
+              "surface": "次",
+              "reading": "つぎ",
+              "meaning": "next",
+              "baseForm": "次",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "すずめ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "竹がたくさんある所で、おじいさんはすずめに会いました。",
+          "literalEn": "bamboo [subj] many to be place [in/by] old man [topic] すずめ [at/to] meeting いま した",
+          "naturalEn": "In a place with lots of bamboo, the old man met the sparrow.",
+          "tokens": [
+            {
+              "surface": "竹",
+              "reading": "たけ",
+              "meaning": "bamboo; middle (of a three-tier ranking system)",
+              "baseForm": "竹",
+              "level": "N2"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "所",
+              "reading": "ところ",
+              "meaning": "place",
+              "baseForm": "所",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "すずめ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "会",
+              "reading": "かい",
+              "meaning": "meeting; assembly; party",
+              "baseForm": "会",
+              "level": "N3"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "すずめは元気で、おじいさんを大きくてきれいな家へ連れて行きました。",
+          "literalEn": "すずめ [topic] health [in/by] old man [obj] large [and] pretty house [toward] companion [and] going した",
+          "naturalEn": "The sparrow was full of energy and led the old man to a big, beautiful house.",
+          "tokens": [
+            {
+              "surface": "すずめ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "元気",
+              "reading": "げんき",
+              "meaning": "health; vitality",
+              "baseForm": "元気",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "大きく",
+              "reading": "だいきく",
+              "meaning": "large; big; great",
+              "baseForm": "大",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "きれい",
+              "meaning": "pretty; clean",
+              "baseForm": "きれい",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "連れ",
+              "reading": "つれ",
+              "meaning": "companion; company",
+              "baseForm": "連れ",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "すずめはおじいさんにおいしいご飯を出して、一緒に楽しく遊びました。",
+          "literalEn": "すずめ [topic] old man [at/to] delicious cooked rice [obj] to put out [and] together [at/to] comfort しく play した",
+          "naturalEn": "The sparrow served the old man a delicious meal, and they played happily together.",
+          "tokens": [
+            {
+              "surface": "すずめ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "おいしい",
+              "meaning": "delicious",
+              "baseForm": "おいしい",
+              "level": "N5"
+            },
+            {
+              "surface": "ご飯",
+              "reading": "ごはん",
+              "meaning": "cooked rice; meal",
+              "baseForm": "ご飯",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "出し",
+              "reading": "だし",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "一緒",
+              "reading": "いっしょ",
+              "meaning": "together",
+              "baseForm": "一緒",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "楽",
+              "reading": "らく",
+              "meaning": "comfort; ease",
+              "baseForm": "楽",
+              "level": "N3"
+            },
+            {
+              "surface": "しく"
+            },
+            {
+              "surface": "遊び",
+              "reading": "あそび",
+              "meaning": "play",
+              "baseForm": "遊び",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "夕方、すずめは二つの箱を出して、「大きい箱と小さい箱、どちらが好きですか」と聞きました。",
+          "literalEn": "evening すずめ [topic] two things ['s / of] box [obj] to put out [and] big box [with/and] little box which of two [subj] likeable [is] [?] [with/and] to hear した",
+          "naturalEn": "In the evening, the sparrow brought out two boxes and asked, “Which do you like better—the big box or the small one?”",
+          "tokens": [
+            {
+              "surface": "夕方",
+              "reading": "ゆうがた",
+              "meaning": "evening",
+              "baseForm": "夕方",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "すずめ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "二つ",
+              "reading": "ふたつ",
+              "meaning": "two things",
+              "baseForm": "二つ",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "箱",
+              "reading": "はこ",
+              "meaning": "box",
+              "baseForm": "箱",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "出し",
+              "reading": "だし",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "大きい",
+              "reading": "おおきい",
+              "meaning": "big",
+              "baseForm": "大きい",
+              "level": "N5"
+            },
+            {
+              "surface": "箱",
+              "reading": "はこ",
+              "meaning": "box",
+              "baseForm": "箱",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "小さい",
+              "reading": "ちいさい",
+              "meaning": "little",
+              "baseForm": "小さい",
+              "level": "N5"
+            },
+            {
+              "surface": "箱",
+              "reading": "はこ",
+              "meaning": "box",
+              "baseForm": "箱",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "どちら",
+              "meaning": "which of two",
+              "baseForm": "どちら",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "好き",
+              "reading": "すき",
+              "meaning": "likeable",
+              "baseForm": "好き",
+              "level": "N5"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "聞",
+              "reading": "き",
+              "meaning": "to hear; to listen to; to ask",
+              "baseForm": "聞く",
+              "level": "N5"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "おじいさんは「私は年を取っていますから、小さい箱がいいです」と答えました。",
+          "literalEn": "old man [topic]  I [topic] year [obj] to take something って [polite] [from] little box [subj] good [is] [with/and] response した",
+          "naturalEn": "The old man replied, “Since I’m old, I’d prefer the small box.”",
+          "tokens": [
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "年",
+              "reading": "とし",
+              "meaning": "year",
+              "baseForm": "年",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "取",
+              "reading": "と",
+              "meaning": "to take something",
+              "baseForm": "取る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "小さい",
+              "reading": "ちいさい",
+              "meaning": "little",
+              "baseForm": "小さい",
+              "level": "N5"
+            },
+            {
+              "surface": "箱",
+              "reading": "はこ",
+              "meaning": "box",
+              "baseForm": "箱",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いい",
+              "meaning": "good",
+              "baseForm": "いい",
+              "level": "N5"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "答え",
+              "reading": "こたええ",
+              "meaning": "response",
+              "baseForm": "答",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "おじいさんが家に帰って小さい箱を開けると、中からたくさんのお金が出ました。おばあさんはそれを見て、「私も大きい箱が欲しい」と言いました。次の朝、おばあさんは急いで山へ行き、すずめの家を見つけました。彼女は「大きい箱をください」と言って、すずめから重い箱をもらいました。おばあさんは「ありがとう」も言わないで、すぐに帰りました。",
-      "en": "When the old man returned home and opened the small box, a lot of money came out from inside. The old woman saw that and said, \"I want the big box too.\" The next morning, the old woman hurried to the mountain and found the sparrow's house. She said, \"Please give me the big box,\" and received the heavy box from the sparrow. The old woman did not even say \"Thank you\" and returned immediately."
+      "en": "When the old man returned home and opened the small box, a lot of money came out from inside. The old woman saw that and said, \"I want the big box too.\" The next morning, the old woman hurried to the mountain and found the sparrow's house. She said, \"Please give me the big box,\" and received the heavy box from the sparrow. The old woman did not even say \"Thank you\" and returned immediately.",
+      "sentences": [
+        {
+          "ja": "おじいさんが家に帰って小さい箱を開けると、中からたくさんのお金が出ました。",
+          "literalEn": "old man [subj] house [at/to] to go back って little box [obj] to open [with/and] middle [from] many ['s / of] money [subj] to put out した",
+          "naturalEn": "When the old man returned home and opened the small box, a lot of money came out of it.",
+          "tokens": [
+            {
+              "surface": "おじいさん",
+              "meaning": "old man; grandfather",
+              "baseForm": "おじいさん",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "帰",
+              "reading": "かえ",
+              "meaning": "to go back",
+              "baseForm": "帰る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "小さい",
+              "reading": "ちいさい",
+              "meaning": "little",
+              "baseForm": "小さい",
+              "level": "N5"
+            },
+            {
+              "surface": "箱",
+              "reading": "はこ",
+              "meaning": "box",
+              "baseForm": "箱",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "開ける",
+              "reading": "あける",
+              "meaning": "to open",
+              "baseForm": "開ける",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "お金",
+              "reading": "おかね",
+              "meaning": "money",
+              "baseForm": "お金",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "おばあさんはそれを見て、「私も大きい箱が欲しい」と言いました。",
+          "literalEn": "old woman [topic] that [obj] to see [and]  I [also] big box [subj] want [with/and] to say いま した",
+          "naturalEn": "When the old woman saw this, she said, “I want a big box, too.”",
+          "tokens": [
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "それ",
+              "meaning": "that",
+              "baseForm": "それ",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "大きい",
+              "reading": "おおきい",
+              "meaning": "big",
+              "baseForm": "大きい",
+              "level": "N5"
+            },
+            {
+              "surface": "箱",
+              "reading": "はこ",
+              "meaning": "box",
+              "baseForm": "箱",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "欲しい",
+              "reading": "ほしい",
+              "meaning": "want",
+              "baseForm": "欲しい",
+              "level": "N5"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "次の朝、おばあさんは急いで山へ行き、すずめの家を見つけました。",
+          "literalEn": "next ['s / of] morning old woman [topic] urgent [in/by] mountain [toward] going すずめ ['s / of] house [obj] to see つけ した",
+          "naturalEn": "The next morning, Grandma hurried to the mountain and found the sparrow’s house.",
+          "tokens": [
+            {
+              "surface": "次",
+              "reading": "つぎ",
+              "meaning": "next",
+              "baseForm": "次",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "朝",
+              "reading": "あさ",
+              "meaning": "morning",
+              "baseForm": "朝",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "急",
+              "reading": "きゅう",
+              "meaning": "urgent; steep",
+              "baseForm": "急",
+              "level": "N4"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "すずめ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "つけ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼女は「大きい箱をください」と言って、すずめから重い箱をもらいました。",
+          "literalEn": "she [topic] big box [obj] くだ さい [with/and] to say って すずめ [from] heavy box [obj] [also] いま した",
+          "naturalEn": "She said, “Please give me a big box,” and the sparrow gave her a heavy box.",
+          "tokens": [
+            {
+              "surface": "彼女",
+              "reading": "かのじょ",
+              "meaning": "she; girlfriend",
+              "baseForm": "彼女",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "大きい",
+              "reading": "おおきい",
+              "meaning": "big",
+              "baseForm": "大きい",
+              "level": "N5"
+            },
+            {
+              "surface": "箱",
+              "reading": "はこ",
+              "meaning": "box",
+              "baseForm": "箱",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "くだ"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "すずめ"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "重い",
+              "reading": "おもい",
+              "meaning": "heavy",
+              "baseForm": "重い",
+              "level": "N5"
+            },
+            {
+              "surface": "箱",
+              "reading": "はこ",
+              "meaning": "box",
+              "baseForm": "箱",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "おばあさんは「ありがとう」も言わないで、すぐに帰りました。",
+          "literalEn": "old woman [topic] Thank you [also] to say [not] [in/by] immediately [at/to] return した",
+          "naturalEn": "The old woman went home right away without even saying “thank you.”",
+          "tokens": [
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "ありがとう",
+              "meaning": "Thank you",
+              "baseForm": "ありがとう",
+              "level": "N5"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "わ"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "すぐ",
+              "meaning": "immediately; soon; easily",
+              "baseForm": "すぐ",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "帰り",
+              "reading": "かえり",
+              "meaning": "return",
+              "baseForm": "帰り",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "帰り道で、おばあさんは箱の中が見たかったです。「きっと、たくさんのお金が入っていますね」と彼女は思いました。そして、道で箱を開けました。しかし、中にお金はありませんでした。箱の中から、怖くて悪いお化けがたくさん出てきました。おばあさんはとてもびっくりして、「助けて！」と言いながら、走って逃げました。",
-      "en": "On the way back, the old woman wanted to see inside the box. \"Surely, a lot of money is inside,\" she thought. And she opened the box on the road. However, there was no money inside. From inside the box, many scary and bad monsters came out. The old woman was very surprised, and saying \"Help!\" she ran away."
+      "en": "On the way back, the old woman wanted to see inside the box. \"Surely, a lot of money is inside,\" she thought. And she opened the box on the road. However, there was no money inside. From inside the box, many scary and bad monsters came out. The old woman was very surprised, and saying \"Help!\" she ran away.",
+      "sentences": [
+        {
+          "ja": "帰り道で、おばあさんは箱の中が見たかったです。",
+          "literalEn": "to go back [in/by] old woman [topic] box ['s / of] middle [subj] to see たか [past] [is]",
+          "naturalEn": "On her way home, the old woman wanted to see inside the box.",
+          "tokens": [
+            {
+              "surface": "帰り道",
+              "reading": "かえり道",
+              "meaning": "to go back",
+              "baseForm": "帰る",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "箱",
+              "reading": "はこ",
+              "meaning": "box",
+              "baseForm": "箱",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "たか"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「きっと、たくさんのお金が入っていますね」と彼女は思いました。",
+          "literalEn": "surely many ['s / of] money [subj] to enter って いま すね [with/and] she [topic] to think した",
+          "naturalEn": "“I bet there’s a lot of money inside,” she thought.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "きっと",
+              "meaning": "surely",
+              "baseForm": "きっと",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "お金",
+              "reading": "おかね",
+              "meaning": "money",
+              "baseForm": "お金",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "入",
+              "reading": "はい",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "すね"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "彼女",
+              "reading": "かのじょ",
+              "meaning": "she; girlfriend",
+              "baseForm": "彼女",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "思い",
+              "reading": "おもい",
+              "meaning": "to think; to feel",
+              "baseForm": "思う",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "そして、道で箱を開けました。",
+          "literalEn": "and street [in/by] box [obj] to open した",
+          "naturalEn": "And then, she opened the box right there on the street.",
+          "tokens": [
+            {
+              "surface": "そして",
+              "meaning": "and",
+              "baseForm": "そして",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "道",
+              "reading": "みち",
+              "meaning": "street",
+              "baseForm": "道",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "箱",
+              "reading": "はこ",
+              "meaning": "box",
+              "baseForm": "箱",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "開",
+              "reading": "あ",
+              "meaning": "to open; to become open",
+              "baseForm": "開く",
+              "level": "N5"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "しかし、中にお金はありませんでした。",
+          "literalEn": "however middle [at/to] money [topic] ありま せん [in/by] した",
+          "naturalEn": "However, there was no money inside.",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "お金",
+              "reading": "おかね",
+              "meaning": "money",
+              "baseForm": "お金",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "箱の中から、怖くて悪いお化けがたくさん出てきました。",
+          "literalEn": "box ['s / of] middle [from] frightening [and] bad ghost [subj] many to put out [and] した",
+          "naturalEn": "A lot of scary, evil ghosts came out of the box.",
+          "tokens": [
+            {
+              "surface": "箱",
+              "reading": "はこ",
+              "meaning": "box",
+              "baseForm": "箱",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "怖",
+              "reading": "こわ",
+              "meaning": "frightening",
+              "baseForm": "怖い",
+              "level": "N4"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "悪い",
+              "reading": "わるい",
+              "meaning": "bad",
+              "baseForm": "悪い",
+              "level": "N5"
+            },
+            {
+              "surface": "お化け",
+              "reading": "おばけ",
+              "meaning": "ghost; goblin; monster",
+              "baseForm": "お化け",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "おばあさんはとてもびっくりして、「助けて！",
+          "literalEn": "old woman [topic] very be surprised [and] assistance [and]",
+          "naturalEn": "The old woman was so startled that she shouted, “Help!”",
+          "tokens": [
+            {
+              "surface": "おばあさん",
+              "meaning": "old woman; grandmother",
+              "baseForm": "おばあさん",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "びっくり",
+              "meaning": "be surprised; be amazed; be frightened",
+              "baseForm": "びっくり",
+              "level": "N3"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "助け",
+              "reading": "たすけ",
+              "meaning": "assistance",
+              "baseForm": "助け",
+              "level": "N1"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "！"
+            }
+          ]
+        },
+        {
+          "ja": "」と言いながら、走って逃げました。",
+          "literalEn": "[with/and] to say ながら to run って to let loose した",
+          "naturalEn": "\" she cried, and ran away.",
+          "tokens": [
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "走",
+              "reading": "はし",
+              "meaning": "to run",
+              "baseForm": "走る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "逃げ",
+              "reading": "のがげ",
+              "meaning": "to let loose; to set free; to let escape",
+              "baseForm": "逃す",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
@@ -33,7 +2056,8 @@
         "すずめが逃げたから",
         "すずめが寝ていたから"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「すずめが食べ物を食べたから」 is the correct answer according to the story."
     },
     {
       "question": "おじいさんはどの箱をもらいましたか。",
@@ -43,7 +2067,8 @@
         "大きい箱",
         "赤い箱"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「小さい箱」 is correct: 「夕方、すずめは二つの箱を出して、「大きい箱と小さい箱、どちらが好きですか」と聞きました。」 (In the evening, the sparrow brought out two boxes and asked, “Which do you like better—the big box or the small one?”)"
     },
     {
       "question": "おばあさんの箱の中には何がありましたか。",
@@ -53,7 +2078,9 @@
         "怖いお化け",
         "きれいな服"
       ],
-      "answerIndex": 2
+      "answerIndex": 2,
+      "explanation": "「怖いお化け」 is correct: 「昔々、いいおじいさんと、悪いおばあさんがいました。」 (Once upon a time, there was a kind old man and a mean old woman.)"
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/fairy-tales/tongue-cut-sparrow.json"
 }

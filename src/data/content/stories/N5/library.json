@@ -5,40 +5,574 @@
   "titleEn": "Going to the Library",
   "level": "N5",
   "category": "Everyday Life",
-  "tags": ["library", "study", "books", "daily"],
+  "tags": [
+    "library",
+    "study",
+    "books",
+    "daily"
+  ],
   "paragraphs": [
     {
       "ja": "土曜日の午後、山田さんは自転車で図書館へ行きました。家から十分くらいかかりました。",
-      "en": "On Saturday afternoon, Mr. Yamada went to the library by bicycle. It took about ten minutes from his house."
+      "en": "On Saturday afternoon, Mr. Yamada went to the library by bicycle. It took about ten minutes from his house.",
+      "sentences": [
+        {
+          "ja": "土曜日の午後、山田さんは自転車で図書館へ行きました。",
+          "literalEn": "Saturday ['s / of] afternoon Yamada [Mr/Ms] [topic] bicycle [in/by] library [toward] going した",
+          "naturalEn": "On Saturday afternoon, Mr. Yamada rode his bike to the library.",
+          "tokens": [
+            {
+              "surface": "土曜日",
+              "reading": "どようび",
+              "meaning": "Saturday",
+              "baseForm": "土曜日",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "午後",
+              "reading": "ごご",
+              "meaning": "afternoon",
+              "baseForm": "午後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "山田",
+              "reading": "やまだ",
+              "meaning": "Yamada (surname)",
+              "baseForm": "山田",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "自転車",
+              "reading": "じてんしゃ",
+              "meaning": "bicycle",
+              "baseForm": "自転車",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "図書館",
+              "reading": "としょかん",
+              "meaning": "library",
+              "baseForm": "図書館",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "家から十分くらいかかりました。",
+          "literalEn": "house [from] enough くらい かかり した",
+          "naturalEn": "It took about ten minutes from home.",
+          "tokens": [
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "十分",
+              "reading": "じゅうぶん",
+              "meaning": "enough",
+              "baseForm": "十分",
+              "level": "N4"
+            },
+            {
+              "surface": "くらい"
+            },
+            {
+              "surface": "かかり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "図書館の中はとても静かでした。山田さんは日本の歴史の本を二冊探しました。",
-      "en": "Inside the library was very quiet. Mr. Yamada looked for two books on Japanese history."
+      "en": "Inside the library was very quiet. Mr. Yamada looked for two books on Japanese history.",
+      "sentences": [
+        {
+          "ja": "図書館の中はとても静かでした。",
+          "literalEn": "library ['s / of] middle [topic] very quiet [in/by] した",
+          "naturalEn": "It was very quiet inside the library.",
+          "tokens": [
+            {
+              "surface": "図書館",
+              "reading": "としょかん",
+              "meaning": "library",
+              "baseForm": "図書館",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "静か",
+              "reading": "しずか",
+              "meaning": "quiet",
+              "baseForm": "静か",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "山田さんは日本の歴史の本を二冊探しました。",
+          "literalEn": "Yamada [Mr/Ms] [topic] Japan ['s / of] history ['s / of] book [obj] two counter for books to look for しま した",
+          "naturalEn": "Mr. Yamada looked for two books on Japanese history.",
+          "tokens": [
+            {
+              "surface": "山田",
+              "reading": "やまだ",
+              "meaning": "Yamada (surname)",
+              "baseForm": "山田",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "日本",
+              "reading": "にっぽん",
+              "meaning": "Japan",
+              "baseForm": "日本",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "歴史",
+              "reading": "れきし",
+              "meaning": "history",
+              "baseForm": "歴史",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "本",
+              "reading": "ほん",
+              "meaning": "book",
+              "baseForm": "本",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "二",
+              "reading": "に",
+              "meaning": "two",
+              "baseForm": "二",
+              "level": "N5"
+            },
+            {
+              "surface": "冊",
+              "reading": "さつ",
+              "meaning": "counter for books",
+              "baseForm": "冊",
+              "level": "N1"
+            },
+            {
+              "surface": "探",
+              "reading": "さが",
+              "meaning": "to look for",
+              "baseForm": "探す",
+              "level": "N4"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "窓の近くの席に座って、三時までゆっくり読みました。それから、本を借りました。",
-      "en": "He sat at a seat near the window and read leisurely until three o'clock. After that, he borrowed the books."
+      "en": "He sat at a seat near the window and read leisurely until three o'clock. After that, he borrowed the books.",
+      "sentences": [
+        {
+          "ja": "窓の近くの席に座って、三時までゆっくり読みました。",
+          "literalEn": "window ['s / of] near ['s / of] seat [at/to] to sit って three time [until] slowly reading した",
+          "naturalEn": "I sat at a table near the window and read at my leisure until three o’clock.",
+          "tokens": [
+            {
+              "surface": "窓",
+              "reading": "まど",
+              "meaning": "window",
+              "baseForm": "窓",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "近く",
+              "reading": "ちかく",
+              "meaning": "near",
+              "baseForm": "近く",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "席",
+              "reading": "せき",
+              "meaning": "seat",
+              "baseForm": "席",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "座",
+              "reading": "すわ",
+              "meaning": "to sit",
+              "baseForm": "座る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "三",
+              "reading": "さん",
+              "meaning": "three",
+              "baseForm": "三",
+              "level": "N5"
+            },
+            {
+              "surface": "時",
+              "reading": "とき",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "まで"
+            },
+            {
+              "surface": "ゆっくり",
+              "meaning": "slowly; at ease",
+              "baseForm": "ゆっくり",
+              "level": "N3"
+            },
+            {
+              "surface": "読み",
+              "reading": "よみ",
+              "meaning": "reading",
+              "baseForm": "読み",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "それから、本を借りました。",
+          "literalEn": "after that book [obj] borrowing した",
+          "naturalEn": "After that, I checked out a book.",
+          "tokens": [
+            {
+              "surface": "それから",
+              "meaning": "after that",
+              "baseForm": "それから",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "本",
+              "reading": "ほん",
+              "meaning": "book",
+              "baseForm": "本",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "借り",
+              "reading": "かり",
+              "meaning": "borrowing; debt; loan",
+              "baseForm": "借り",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "「ありがとうございました」と言って、元気に家へ帰りました。楽しかったです。",
-      "en": "He said, \"Thank you very much,\" and returned home in high spirits. It was fun."
+      "en": "He said, \"Thank you very much,\" and returned home in high spirits. It was fun.",
+      "sentences": [
+        {
+          "ja": "「ありがとうございました」と言って、元気に家へ帰りました。",
+          "literalEn": "Thank you いま した [with/and] to say って health [at/to] house [toward] return した",
+          "naturalEn": "\"Thank you very much,\" I said, and headed home in high spirits.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "ありがとう",
+              "meaning": "Thank you",
+              "baseForm": "ありがとう",
+              "level": "N5"
+            },
+            {
+              "surface": "ご"
+            },
+            {
+              "surface": "ざ"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "元気",
+              "reading": "げんき",
+              "meaning": "health; vitality",
+              "baseForm": "元気",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "帰り",
+              "reading": "かえり",
+              "meaning": "return",
+              "baseForm": "帰り",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "楽しかったです。",
+          "literalEn": "comfort しか [past] [is]",
+          "naturalEn": "It was fun.",
+          "tokens": [
+            {
+              "surface": "楽",
+              "reading": "らく",
+              "meaning": "comfort; ease",
+              "baseForm": "楽",
+              "level": "N3"
+            },
+            {
+              "surface": "しか"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
     {
       "question": "山田さんはどうやって図書館へ行きましたか？",
-      "options": ["歩いて", "バスで", "自転車で", "電車で"],
-      "answerIndex": 2
+      "options": [
+        "歩いて",
+        "バスで",
+        "自転車で",
+        "電車で"
+      ],
+      "answerIndex": 2,
+      "explanation": "「自転車で」 is correct: 「土曜日の午後、山田さんは自転車で図書館へ行きました。」 (On Saturday afternoon, Mr. Yamada rode his bike to the library.)"
     },
     {
       "question": "山田さんは何の本を探しましたか？",
-      "options": ["料理の本", "日本の歴史の本", "英語の本", "旅行の本"],
-      "answerIndex": 1
+      "options": [
+        "料理の本",
+        "日本の歴史の本",
+        "英語の本",
+        "旅行の本"
+      ],
+      "answerIndex": 1,
+      "explanation": "「日本の歴史の本」 is correct: 「山田さんは日本の歴史の本を二冊探しました。」 (Mr. Yamada looked for two books on Japanese history.)"
     },
     {
       "question": "山田さんは何時まで本を読みましたか？",
-      "options": ["一時まで", "二時まで", "三時まで", "四時まで"],
-      "answerIndex": 2
+      "options": [
+        "一時まで",
+        "二時まで",
+        "三時まで",
+        "四時まで"
+      ],
+      "answerIndex": 2,
+      "explanation": "「三時まで」 is correct: 「窓の近くの席に座って、三時までゆっくり読みました。」 (I sat at a table near the window and read at my leisure until three o’clock.)"
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/library.json"
 }

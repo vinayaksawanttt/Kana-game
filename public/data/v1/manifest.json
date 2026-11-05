@@ -1,0 +1,331 @@
+{
+  "schemaVersion": "1.2.0",
+  "generatedAt": "2026-11-05T13:57:39.609Z",
+  "bundleHash": "c7bd7859b219",
+  "assets": {
+    "dictionary-index.json": {
+      "hash": "3d98ac74562d",
+      "bytes": 3265237
+    },
+    "grammar/N1.json": {
+      "hash": "a0bc68e49264",
+      "bytes": 1195592
+    },
+    "grammar/N2.json": {
+      "hash": "c485a853d9ce",
+      "bytes": 999574
+    },
+    "grammar/N3.json": {
+      "hash": "04125b8666c3",
+      "bytes": 735730
+    },
+    "grammar/N4.json": {
+      "hash": "cef15d66bb63",
+      "bytes": 697141
+    },
+    "grammar/N5.json": {
+      "hash": "5f2870bd56db",
+      "bytes": 707781
+    },
+    "grammar/index.json": {
+      "hash": "05a835a617d4",
+      "bytes": 258834
+    },
+    "kanji-vocab/N1.json": {
+      "hash": "43a93ee8180b",
+      "bytes": 200806
+    },
+    "kanji-vocab/N2.json": {
+      "hash": "adee8f862984",
+      "bytes": 138390
+    },
+    "kanji-vocab/N3.json": {
+      "hash": "b5dfdd732af5",
+      "bytes": 256716
+    },
+    "kanji-vocab/N4.json": {
+      "hash": "6f6642ea901d",
+      "bytes": 130073
+    },
+    "kanji-vocab/N5.json": {
+      "hash": "778a8984ebf8",
+      "bytes": 61733
+    },
+    "kanji/N1.json": {
+      "hash": "d93926fa0fc5",
+      "bytes": 220823
+    },
+    "kanji/N2.json": {
+      "hash": "489d986d4265",
+      "bytes": 66997
+    },
+    "kanji/N3.json": {
+      "hash": "c028d462776d",
+      "bytes": 74584
+    },
+    "kanji/N4.json": {
+      "hash": "db1e111c2048",
+      "bytes": 30294
+    },
+    "kanji/N5.json": {
+      "hash": "e4b8373875b5",
+      "bytes": 13291
+    },
+    "kanji/all.json": {
+      "hash": "9a87d577f922",
+      "bytes": 962
+    },
+    "kanji/homophones.json": {
+      "hash": "5b80860851aa",
+      "bytes": 47182
+    },
+    "radicals/examples.json": {
+      "hash": "387b152a9682",
+      "bytes": 767691
+    },
+    "radicals/index.json": {
+      "hash": "686fec4dfafe",
+      "bytes": 52724
+    },
+    "radicals/list.json": {
+      "hash": "507c259a7537",
+      "bytes": 27246
+    },
+    "shiritori/valid-readings.json": {
+      "hash": "e00a4f7a0497",
+      "bytes": 1297328
+    },
+    "shiritori/words.json": {
+      "hash": "02a61791cba8",
+      "bytes": 2933055
+    },
+    "stories/n4-airport-departure.json": {
+      "hash": "77af1f85f811",
+      "bytes": 29403
+    },
+    "stories/n4-at-bank.json": {
+      "hash": "357793f02854",
+      "bytes": 25147
+    },
+    "stories/n4-at-university.json": {
+      "hash": "ea88f278ebd6",
+      "bytes": 35832
+    },
+    "stories/n4-at-zoo.json": {
+      "hash": "c1be39dd0601",
+      "bytes": 26617
+    },
+    "stories/n4-baseball-stadium.json": {
+      "hash": "a304985924b1",
+      "bytes": 30871
+    },
+    "stories/n4-first-date.json": {
+      "hash": "8499029b1152",
+      "bytes": 27811
+    },
+    "stories/n4-goblin-of-adachigahara.json": {
+      "hash": "28de958206b1",
+      "bytes": 68016
+    },
+    "stories/n4-hanabi-festival.json": {
+      "hash": "5ddc63c61c73",
+      "bytes": 29219
+    },
+    "stories/n4-happy-hunter-skillful-fisher.json": {
+      "hash": "d3b3886ac99e",
+      "bytes": 62628
+    },
+    "stories/n4-how-an-old-man-lost-his-wen.json": {
+      "hash": "f65666e7389b",
+      "bytes": 62487
+    },
+    "stories/n4-jelly-fish-and-monkey.json": {
+      "hash": "8d14fc1ea179",
+      "bytes": 63900
+    },
+    "stories/n4-momotaro.json": {
+      "hash": "d28d1e0483c3",
+      "bytes": 55287
+    },
+    "stories/n4-monkey-and-crab.json": {
+      "hash": "22cad8834026",
+      "bytes": 64948
+    },
+    "stories/n4-ogre-of-rashomon.json": {
+      "hash": "e95596971ef7",
+      "bytes": 62917
+    },
+    "stories/n4-okinawa-vacation.json": {
+      "hash": "7befd1321733",
+      "bytes": 29037
+    },
+    "stories/n4-old-man-withered-trees.json": {
+      "hash": "bada5f0bf62c",
+      "bytes": 48215
+    },
+    "stories/n4-police-station.json": {
+      "hash": "5394a9c3b40b",
+      "bytes": 35522
+    },
+    "stories/n4-sagacious-monkey-and-boar.json": {
+      "hash": "d24e45aaf494",
+      "bytes": 64649
+    },
+    "stories/n4-shinkansen-station.json": {
+      "hash": "b547f093c31f",
+      "bytes": 38628
+    },
+    "stories/n4-stones-of-five-colors-and-empress-jokwa.json": {
+      "hash": "f891cae26f4f",
+      "bytes": 50933
+    },
+    "stories/n4-story-of-prince-yamato-take.json": {
+      "hash": "e89d53652065",
+      "bytes": 50909
+    },
+    "stories/n4-white-hare-and-crocodiles.json": {
+      "hash": "50020af9cf87",
+      "bytes": 55707
+    },
+    "stories/n5-at-movie-theatre.json": {
+      "hash": "5018083cba44",
+      "bytes": 16116
+    },
+    "stories/n5-at-restaurant.json": {
+      "hash": "a235affdacd7",
+      "bytes": 19171
+    },
+    "stories/n5-bamboo-cutter.json": {
+      "hash": "f826d19656b9",
+      "bytes": 32977
+    },
+    "stories/n5-farmer-and-badger.json": {
+      "hash": "7e860d8a7916",
+      "bytes": 49489
+    },
+    "stories/n5-going-to-library.json": {
+      "hash": "70876d913c20",
+      "bytes": 16732
+    },
+    "stories/n5-going-to-school.json": {
+      "hash": "1917f5af9d32",
+      "bytes": 16876
+    },
+    "stories/n5-kintaro-golden-boy.json": {
+      "hash": "eb8f7f8fc0f7",
+      "bytes": 45444
+    },
+    "stories/n5-local-market.json": {
+      "hash": "b97cac6d6476",
+      "bytes": 17079
+    },
+    "stories/n5-meeting-friend.json": {
+      "hash": "62c1103906ff",
+      "bytes": 18135
+    },
+    "stories/n5-mirror-of-matsuyama.json": {
+      "hash": "e4052d1a398d",
+      "bytes": 45917
+    },
+    "stories/n5-my-lord-bag-of-rice.json": {
+      "hash": "217516ba97cc",
+      "bytes": 75693
+    },
+    "stories/n5-playing-with-friends.json": {
+      "hash": "d8b1f9859360",
+      "bytes": 17316
+    },
+    "stories/n5-princess-hase.json": {
+      "hash": "fa79260e2983",
+      "bytes": 61067
+    },
+    "stories/n5-studying-late.json": {
+      "hash": "af007470ca91",
+      "bytes": 16648
+    },
+    "stories/n5-supermarket-trip.json": {
+      "hash": "b87ab58eaaea",
+      "bytes": 19973
+    },
+    "stories/n5-the-man-who-did-not-wish-to-die.json": {
+      "hash": "b6f5b8377d8d",
+      "bytes": 38661
+    },
+    "stories/n5-the-shinansha.json": {
+      "hash": "8ce1375d51ff",
+      "bytes": 40556
+    },
+    "stories/n5-tongue-cut-sparrow.json": {
+      "hash": "013ee75edbd9",
+      "bytes": 61997
+    },
+    "stories/n5-urashima-taro.json": {
+      "hash": "50ca70f7444b",
+      "bytes": 58050
+    },
+    "stories/n5-waking-up-early.json": {
+      "hash": "39efe9c5218b",
+      "bytes": 20293
+    },
+    "strokes/N1.json": {
+      "hash": "c7fe3f7ad2a2",
+      "bytes": 1531910
+    },
+    "strokes/N2.json": {
+      "hash": "204745bc6ff3",
+      "bytes": 403866
+    },
+    "strokes/N3.json": {
+      "hash": "79ea4944b100",
+      "bytes": 392703
+    },
+    "strokes/N4.json": {
+      "hash": "1430722f5534",
+      "bytes": 156525
+    },
+    "strokes/N5.json": {
+      "hash": "882df0f50414",
+      "bytes": 52262
+    },
+    "vocabulary/N1.json": {
+      "hash": "6cf78f88ea30",
+      "bytes": 2517375
+    },
+    "vocabulary/N2.json": {
+      "hash": "622bc044423c",
+      "bytes": 1475592
+    },
+    "vocabulary/N3.json": {
+      "hash": "9824543c2257",
+      "bytes": 1425831
+    },
+    "vocabulary/N4.json": {
+      "hash": "07b7c61d08e8",
+      "bytes": 523611
+    },
+    "vocabulary/N5.json": {
+      "hash": "3058421f854a",
+      "bytes": 529445
+    },
+    "vocabulary/kanji/N1.json": {
+      "hash": "1814dd4fd4b3",
+      "bytes": 525772
+    },
+    "vocabulary/kanji/N2.json": {
+      "hash": "2e3bd6f9a26d",
+      "bytes": 177767
+    },
+    "vocabulary/kanji/N3.json": {
+      "hash": "c81669777f0e",
+      "bytes": 201919
+    },
+    "vocabulary/kanji/N4.json": {
+      "hash": "a034d51bea0e",
+      "bytes": 87744
+    },
+    "vocabulary/kanji/N5.json": {
+      "hash": "c81458831e5e",
+      "bytes": 46218
+    }
+  }
+}

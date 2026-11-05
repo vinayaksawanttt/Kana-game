@@ -1,0 +1,599 @@
+{
+  "id": "n5-local-market",
+  "title": "市場での買い物",
+  "titleRomaji": "Ichiba de no kaimono",
+  "titleEn": "Shopping at the Local Market",
+  "level": "N5",
+  "category": "Everyday Life",
+  "tags": [
+    "market",
+    "shopping",
+    "food",
+    "daily"
+  ],
+  "paragraphs": [
+    {
+      "ja": "土曜日の朝、田中さんは歩いて近くの市場へ行きました。八時でしたから、市場にはたくさんの人がいました。",
+      "en": "On Saturday morning, Mr. Tanaka walked to the nearby market. Because it was eight o'clock, there were many people at the market.",
+      "sentences": [
+        {
+          "ja": "土曜日の朝、田中さんは歩いて近くの市場へ行きました。",
+          "literalEn": "Saturday ['s / of] morning Tanaka [Mr/Ms] [topic] pawn [and] near ['s / of]  market [toward] going した",
+          "naturalEn": "On Saturday morning, Mr. Tanaka walked to the nearby market.",
+          "tokens": [
+            {
+              "surface": "土曜日",
+              "reading": "どようび",
+              "meaning": "Saturday",
+              "baseForm": "土曜日",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "朝",
+              "reading": "あさ",
+              "meaning": "morning",
+              "baseForm": "朝",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "歩",
+              "reading": "ふ",
+              "meaning": "pawn (in chess or shogi)",
+              "baseForm": "歩",
+              "level": "N1"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "近く",
+              "reading": "ちかく",
+              "meaning": "near",
+              "baseForm": "近く",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "市場",
+              "reading": "いちば",
+              "meaning": "(the) market (as a concept)",
+              "baseForm": "市場",
+              "level": "N3"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "八時でしたから、市場にはたくさんの人がいました。",
+          "literalEn": "eight o'clock [in/by] した [from]  market [at/to] [topic] many ['s / of] person [subj] いま した",
+          "naturalEn": "Since it was 8:00, there were a lot of people at the market.",
+          "tokens": [
+            {
+              "surface": "八時",
+              "reading": "はちじ",
+              "meaning": "eight o'clock",
+              "baseForm": "八時",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "市場",
+              "reading": "いちば",
+              "meaning": "(the) market (as a concept)",
+              "baseForm": "市場",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "野菜の店で赤くて大きいトマトを三つ買いました。それから、魚の店へ行きました。",
+      "en": "At the vegetable shop, he bought three big, red tomatoes. After that, he went to the fish shop.",
+      "sentences": [
+        {
+          "ja": "野菜の店で赤くて大きいトマトを三つ買いました。",
+          "literalEn": "vegetable ['s / of] shop [in/by] red [and] big トマト [obj] three to buy した",
+          "naturalEn": "I bought three big red tomatoes at the produce store.",
+          "tokens": [
+            {
+              "surface": "野菜",
+              "reading": "やさい",
+              "meaning": "vegetable",
+              "baseForm": "野菜",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "店",
+              "reading": "みせ",
+              "meaning": "shop",
+              "baseForm": "店",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "赤",
+              "reading": "あか",
+              "meaning": "red",
+              "baseForm": "赤",
+              "level": "N5"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "大きい",
+              "reading": "おおきい",
+              "meaning": "big",
+              "baseForm": "大きい",
+              "level": "N5"
+            },
+            {
+              "surface": "トマト"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "三つ",
+              "reading": "みっつ",
+              "meaning": "three",
+              "baseForm": "三つ",
+              "level": "N5"
+            },
+            {
+              "surface": "買い",
+              "reading": "かい",
+              "meaning": "to buy",
+              "baseForm": "買う",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "それから、魚の店へ行きました。",
+          "literalEn": "after that fish shop [toward] going した",
+          "naturalEn": "Then, I went to the fish market.",
+          "tokens": [
+            {
+              "surface": "それから",
+              "meaning": "after that",
+              "baseForm": "それから",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "魚の",
+              "reading": "さかなの",
+              "meaning": "fish",
+              "baseForm": "魚",
+              "level": "N5"
+            },
+            {
+              "surface": "店",
+              "reading": "みせ",
+              "meaning": "shop",
+              "baseForm": "店",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "新鮮な魚がたくさんありました。魚を二匹買って、千円を払いました。",
+      "en": "There was a lot of fresh fish. He bought two fish and paid 1,000 yen.",
+      "sentences": [
+        {
+          "ja": "新鮮な魚がたくさんありました。",
+          "literalEn": "fresh fish [subj] many ありま した",
+          "naturalEn": "There were plenty of fresh fish.",
+          "tokens": [
+            {
+              "surface": "新鮮",
+              "reading": "しんせん",
+              "meaning": "fresh",
+              "baseForm": "新鮮",
+              "level": "N3"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "魚",
+              "reading": "さかな",
+              "meaning": "fish",
+              "baseForm": "魚",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "魚を二匹買って、千円を払いました。",
+          "literalEn": "fish [obj] two head to buy って 1 [obj] to pay した",
+          "naturalEn": "I bought two fish and paid 1,000 yen.",
+          "tokens": [
+            {
+              "surface": "魚",
+              "reading": "さかな",
+              "meaning": "fish",
+              "baseForm": "魚",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "二",
+              "reading": "に",
+              "meaning": "two",
+              "baseForm": "二",
+              "level": "N5"
+            },
+            {
+              "surface": "匹",
+              "reading": "ひき",
+              "meaning": "head; small animal counter; roll of cloth",
+              "baseForm": "匹",
+              "level": "N1"
+            },
+            {
+              "surface": "買",
+              "reading": "か",
+              "meaning": "to buy",
+              "baseForm": "買う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "千円",
+              "reading": "せんえん",
+              "meaning": "1,000 yen",
+              "baseForm": "千円",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "払い",
+              "reading": "はらい",
+              "meaning": "to pay",
+              "baseForm": "払う",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "店の人に「ありがとうございました」と元気にあいさつをして、歩いて家に帰りました。",
+      "en": "He energetically said, \"Thank you very much\" to the shopkeeper and walked back home.",
+      "sentences": [
+        {
+          "ja": "店の人に「ありがとうございました」と元気にあいさつをして、歩いて家に帰りました。",
+          "literalEn": "shop ['s / of] person [at/to] Thank you いま した [with/and] health [at/to] あいさつ [obj] [and] pawn [and] house [at/to] return した",
+          "naturalEn": "I cheerfully said, “Thank you very much,” to the shop staff and walked home.",
+          "tokens": [
+            {
+              "surface": "店",
+              "reading": "みせ",
+              "meaning": "shop",
+              "baseForm": "店",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "ありがとう",
+              "meaning": "Thank you",
+              "baseForm": "ありがとう",
+              "level": "N5"
+            },
+            {
+              "surface": "ご"
+            },
+            {
+              "surface": "ざ"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "元気",
+              "reading": "げんき",
+              "meaning": "health; vitality",
+              "baseForm": "元気",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "あいさつ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "歩",
+              "reading": "ふ",
+              "meaning": "pawn (in chess or shogi)",
+              "baseForm": "歩",
+              "level": "N1"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "帰り",
+              "reading": "かえり",
+              "meaning": "return",
+              "baseForm": "帰り",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "田中さんはどうやって市場へ行きましたか？",
+      "options": [
+        "車で",
+        "歩いて",
+        "自転車で",
+        "バスで"
+      ],
+      "answerIndex": 1,
+      "explanation": "「歩いて」 is correct: 「土曜日の朝、田中さんは歩いて近くの市場へ行きました。」 (On Saturday morning, Mr. Tanaka walked to the nearby market.)"
+    },
+    {
+      "question": "田中さんはトマトをいくつ買いましたか？",
+      "options": [
+        "一つ",
+        "二つ",
+        "三つ",
+        "四つ"
+      ],
+      "answerIndex": 2,
+      "explanation": "「三つ」 is correct: 「野菜の店で赤くて大きいトマトを三つ買いました。」 (I bought three big red tomatoes at the produce store.)"
+    },
+    {
+      "question": "魚屋でいくら払いましたか？",
+      "options": [
+        "五百円",
+        "八百円",
+        "千円",
+        "千二百円"
+      ],
+      "answerIndex": 2,
+      "explanation": "「千円」 is correct: 「魚を二匹買って、千円を払いました。」 (I bought two fish and paid 1,000 yen.)"
+    }
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/market.json"
+}

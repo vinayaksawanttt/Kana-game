@@ -5,23 +5,952 @@
   "titleEn": "Cheering at the Baseball Stadium",
   "level": "N4",
   "category": "Sports",
-  "tags": ["baseball", "stadium", "sports", "weekend"],
+  "tags": [
+    "baseball",
+    "stadium",
+    "sports",
+    "weekend"
+  ],
   "paragraphs": [
     {
       "ja": "先週の日曜日の午後、山田さんは会社の同僚と一緒に野球場へ試合を見に行きました。駅を出ると、同じ色のユニフォームを着た大勢の人が球場へ向かって歩いていました。",
-      "en": "Last Sunday afternoon, Mr. Yamada went to the baseball stadium with his coworkers to watch a match. When they exited the station, a large crowd of people wearing uniforms of the same color was walking toward the ballpark."
+      "en": "Last Sunday afternoon, Mr. Yamada went to the baseball stadium with his coworkers to watch a match. When they exited the station, a large crowd of people wearing uniforms of the same color was walking toward the ballpark.",
+      "sentences": [
+        {
+          "ja": "先週の日曜日の午後、山田さんは会社の同僚と一緒に野球場へ試合を見に行きました。",
+          "literalEn": "last week ['s / of] Sunday ['s / of] afternoon Yamada [Mr/Ms] [topic] company ['s / of] coworker [with/and] together [at/to] baseball place [toward] match [obj] to see [at/to] going した",
+          "naturalEn": "Last Sunday afternoon, Mr. Yamada went to the baseball stadium with a coworker to watch a game.",
+          "tokens": [
+            {
+              "surface": "先週",
+              "reading": "せんしゅう",
+              "meaning": "last week",
+              "baseForm": "先週",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "日曜日",
+              "reading": "にちようび",
+              "meaning": "Sunday",
+              "baseForm": "日曜日",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "午後",
+              "reading": "ごご",
+              "meaning": "afternoon",
+              "baseForm": "午後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "山田",
+              "reading": "やまだ",
+              "meaning": "Yamada (surname)",
+              "baseForm": "山田",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "会社",
+              "reading": "かいしゃ",
+              "meaning": "company",
+              "baseForm": "会社",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "同僚",
+              "reading": "どうりょう",
+              "meaning": "coworker; colleague; associate",
+              "baseForm": "同僚",
+              "level": "N3"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "一緒",
+              "reading": "いっしょ",
+              "meaning": "together",
+              "baseForm": "一緒",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "野球",
+              "reading": "やきゅう",
+              "meaning": "baseball",
+              "baseForm": "野球",
+              "level": "N4"
+            },
+            {
+              "surface": "場",
+              "reading": "ば",
+              "meaning": "place; field (physics)",
+              "baseForm": "場",
+              "level": "N3"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "試合",
+              "reading": "しあい",
+              "meaning": "match; game",
+              "baseForm": "試合",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "駅を出ると、同じ色のユニフォームを着た大勢の人が球場へ向かって歩いていました。",
+          "literalEn": "station [obj] to appear [with/and] same colour ['s / of] uniform [obj] counter for suits of clothing [past] great number of people ['s / of] person [subj] ballpark [toward] to face かって pawn てい した",
+          "naturalEn": "As he left the station, he saw a large crowd of people wearing uniforms of the same color walking toward the ballpark.",
+          "tokens": [
+            {
+              "surface": "駅",
+              "reading": "えき",
+              "meaning": "station",
+              "baseForm": "駅",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "出る",
+              "reading": "でる",
+              "meaning": "to appear; to leave",
+              "baseForm": "出る",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "同じ",
+              "reading": "おなじ",
+              "meaning": "same",
+              "baseForm": "同じ",
+              "level": "N5"
+            },
+            {
+              "surface": "色",
+              "reading": "いろ",
+              "meaning": "colour",
+              "baseForm": "色",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ユニフォーム",
+              "meaning": "uniform",
+              "baseForm": "ユニフォーム",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "着",
+              "reading": "ちゃく",
+              "meaning": "counter for suits of clothing; arriving at ..",
+              "baseForm": "着",
+              "level": "N1"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "大勢",
+              "reading": "おおぜい",
+              "meaning": "great number of people",
+              "baseForm": "大勢",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "球場",
+              "reading": "きゅうじょう",
+              "meaning": "ballpark; stadium",
+              "baseForm": "球場",
+              "level": "N4"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "向",
+              "reading": "む",
+              "meaning": "to face",
+              "baseForm": "向く",
+              "level": "N3"
+            },
+            {
+              "surface": "かって"
+            },
+            {
+              "surface": "歩",
+              "reading": "ふ",
+              "meaning": "pawn (in chess or shogi)",
+              "baseForm": "歩",
+              "level": "N1"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "山田さんたちも急いで入場券を見せて、球場の中に入りました。スタンドはとても広くて、大勢のファンの声でにぎやかでした。席に着いた後、売店でお弁当と冷たい飲み物を買いました。",
-      "en": "Mr. Yamada and his colleagues hurried to show their tickets and entered the stadium. The stands were very wide, bustling with the voices of many fans. After finding their seats, they bought boxed lunches and cold drinks at the concession stand."
+      "en": "Mr. Yamada and his colleagues hurried to show their tickets and entered the stadium. The stands were very wide, bustling with the voices of many fans. After finding their seats, they bought boxed lunches and cold drinks at the concession stand.",
+      "sentences": [
+        {
+          "ja": "山田さんたちも急いで入場券を見せて、球場の中に入りました。",
+          "literalEn": "Yamada [Mr/Ms] たち [also] urgent [in/by] admission ticket [obj] to see [and] ballpark ['s / of] middle [at/to] to enter した",
+          "naturalEn": "Mr. Yamada and his group hurriedly showed their tickets and entered the stadium.",
+          "tokens": [
+            {
+              "surface": "山田",
+              "reading": "やまだ",
+              "meaning": "Yamada (surname)",
+              "baseForm": "山田",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "急",
+              "reading": "きゅう",
+              "meaning": "urgent; steep",
+              "baseForm": "急",
+              "level": "N4"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "入場券",
+              "reading": "にゅうじょうけん",
+              "meaning": "admission ticket",
+              "baseForm": "入場券",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "球場",
+              "reading": "きゅうじょう",
+              "meaning": "ballpark; stadium",
+              "baseForm": "球場",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入り",
+              "reading": "はいり",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "スタンドはとても広くて、大勢のファンの声でにぎやかでした。",
+          "literalEn": "stand [topic] very spacious [and] great number of people ['s / of] fan ['s / of] voice [in/by] にぎやか [in/by] した",
+          "naturalEn": "The stands were very spacious and bustling with the cheers of many fans.",
+          "tokens": [
+            {
+              "surface": "スタンド",
+              "meaning": "stand",
+              "baseForm": "スタンド",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "広",
+              "reading": "ひろ",
+              "meaning": "spacious; wide",
+              "baseForm": "広い",
+              "level": "N5"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "大勢",
+              "reading": "おおぜい",
+              "meaning": "great number of people",
+              "baseForm": "大勢",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ファン",
+              "meaning": "fan; fun",
+              "baseForm": "ファン",
+              "level": "N1"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "声",
+              "reading": "こえ",
+              "meaning": "voice",
+              "baseForm": "声",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "にぎやか"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "席に着いた後、売店でお弁当と冷たい飲み物を買いました。",
+          "literalEn": "seat [at/to] counter for suits of clothing [past] afterwards shop [in/by] box lunch [with/and] cold to the touch a drink [obj] to buy した",
+          "naturalEn": "After taking their seats, they bought boxed lunches and cold drinks at the concession stand.",
+          "tokens": [
+            {
+              "surface": "席",
+              "reading": "せき",
+              "meaning": "seat",
+              "baseForm": "席",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "着い",
+              "reading": "ちゃくい",
+              "meaning": "counter for suits of clothing; arriving at ..",
+              "baseForm": "着",
+              "level": "N1"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "後",
+              "reading": "あと",
+              "meaning": "afterwards",
+              "baseForm": "後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "売店",
+              "reading": "ばいてん",
+              "meaning": "shop; stand",
+              "baseForm": "売店",
+              "level": "N2"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "弁当",
+              "reading": "べんとう",
+              "meaning": "box lunch",
+              "baseForm": "弁当",
+              "level": "N3"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "冷たい",
+              "reading": "つめたい",
+              "meaning": "cold to the touch",
+              "baseForm": "冷たい",
+              "level": "N5"
+            },
+            {
+              "surface": "飲み物",
+              "reading": "のみもの",
+              "meaning": "a drink",
+              "baseForm": "飲み物",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "買い",
+              "reading": "かい",
+              "meaning": "to buy",
+              "baseForm": "買う",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "試合が始まると、選手たちが一生懸命走ったりボールを遠くまで打ったりして、とても迫力がありました。七回に応援しているチームがホームランを打った時、みんなで立ち上がって大きな声で喜びました。",
-      "en": "When the game began, the players ran hard and hit balls far, which was very thrilling. In the seventh inning, when their supported team hit a home run, everyone stood up and cheered loudly with joy."
+      "en": "When the game began, the players ran hard and hit balls far, which was very thrilling. In the seventh inning, when their supported team hit a home run, everyone stood up and cheered loudly with joy.",
+      "sentences": [
+        {
+          "ja": "試合が始まると、選手たちが一生懸命走ったりボールを遠くまで打ったりして、とても迫力がありました。",
+          "literalEn": "match [subj] to begin [with/and] player たち [subj] with utmost effort to run たり ball [obj] distant [until] to hit たり [and] very impressiveness [subj] ありま した",
+          "naturalEn": "Once the game started, the players ran their hearts out and hit the ball far, making for a truly thrilling spectacle.",
+          "tokens": [
+            {
+              "surface": "試合",
+              "reading": "しあい",
+              "meaning": "match; game",
+              "baseForm": "試合",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "始まる",
+              "reading": "はじまる",
+              "meaning": "to begin",
+              "baseForm": "始まる",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "選手",
+              "reading": "せんしゅ",
+              "meaning": "player (in game); team",
+              "baseForm": "選手",
+              "level": "N3"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "一生懸命",
+              "reading": "いっしょうけんめい",
+              "meaning": "with utmost effort",
+              "baseForm": "一生懸命",
+              "level": "N4"
+            },
+            {
+              "surface": "走",
+              "reading": "はし",
+              "meaning": "to run",
+              "baseForm": "走る",
+              "level": "N5"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "たり"
+            },
+            {
+              "surface": "ボール",
+              "meaning": "ball; bowl",
+              "baseForm": "ボール",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "遠く",
+              "reading": "とおく",
+              "meaning": "distant",
+              "baseForm": "遠く",
+              "level": "N4"
+            },
+            {
+              "surface": "まで"
+            },
+            {
+              "surface": "打",
+              "reading": "う",
+              "meaning": "to hit",
+              "baseForm": "打つ",
+              "level": "N4"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "たり"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "迫力",
+              "reading": "はくりょく",
+              "meaning": "impressiveness; intensity; power",
+              "baseForm": "迫力",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "七回に応援しているチームがホームランを打った時、みんなで立ち上がって大きな声で喜びました。",
+          "literalEn": "seventh inning [at/to] aid [and] to be team [subj] ホームラン [obj] to hit [past] time everyone [in/by] to stand on top of [subj] って big voice [in/by]  joy した",
+          "naturalEn": "In the seventh inning, when the team we were rooting for hit a home run, we all stood up and cheered loudly.",
+          "tokens": [
+            {
+              "surface": "七回",
+              "reading": "ななかい",
+              "meaning": "seventh inning; seven times",
+              "baseForm": "七回",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "応援",
+              "reading": "おうえん",
+              "meaning": "aid; assistance; help",
+              "baseForm": "応援",
+              "level": "N2"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "チーム",
+              "meaning": "team",
+              "baseForm": "チーム",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "ホームラン"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "打",
+              "reading": "う",
+              "meaning": "to hit",
+              "baseForm": "打つ",
+              "level": "N4"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "時",
+              "reading": "とき",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "みんな",
+              "meaning": "everyone",
+              "baseForm": "みんな",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "立ち",
+              "reading": "たち",
+              "meaning": "to stand",
+              "baseForm": "立つ",
+              "level": "N5"
+            },
+            {
+              "surface": "上",
+              "reading": "うえ",
+              "meaning": "on top of",
+              "baseForm": "上",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "声",
+              "reading": "こえ",
+              "meaning": "voice",
+              "baseForm": "声",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "喜び",
+              "reading": "よろこび",
+              "meaning": "(a) joy; (a) delight; rapture",
+              "baseForm": "喜び",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "応援していたチームが無事に勝って、素晴らしい思い出になりました。",
-      "en": "The team they were rooting for won safely, making it a wonderful memory."
+      "en": "The team they were rooting for won safely, making it a wonderful memory.",
+      "sentences": [
+        {
+          "ja": "応援していたチームが無事に勝って、素晴らしい思い出になりました。",
+          "literalEn": "aid てい [past] team [subj] safety [at/to] to win って wonderful memories [at/to] なり した",
+          "naturalEn": "The team I was rooting for won, and it turned out to be a wonderful memory.",
+          "tokens": [
+            {
+              "surface": "応援",
+              "reading": "おうえん",
+              "meaning": "aid; assistance; help",
+              "baseForm": "応援",
+              "level": "N2"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "チーム",
+              "meaning": "team",
+              "baseForm": "チーム",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "無事",
+              "reading": "ぶじ",
+              "meaning": "safety; peace; quietness",
+              "baseForm": "無事",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "勝",
+              "reading": "か",
+              "meaning": "to win",
+              "baseForm": "勝つ",
+              "level": "N4"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "素晴らしい",
+              "reading": "すばらしい",
+              "meaning": "wonderful; splendid; magnificent",
+              "baseForm": "素晴らしい",
+              "level": "N4"
+            },
+            {
+              "surface": "思い出",
+              "reading": "おもいで",
+              "meaning": "memories; recollections; reminiscence",
+              "baseForm": "思い出",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
@@ -33,7 +962,8 @@
         "会社の同僚",
         "一人"
       ],
-      "answerIndex": 2
+      "answerIndex": 2,
+      "explanation": "「会社の同僚」 is correct: 「先週の日曜日の午後、山田さんは会社の同僚と一緒に野球場へ試合を見に行きました。」 (Last Sunday afternoon, Mr. Yamada went to the baseball stadium with a coworker to watch a game.)"
     },
     {
       "question": "山田さんたちは席に着いた後で何をしましたか？",
@@ -43,7 +973,8 @@
         "すぐに写真を撮りました",
         "家に帰る準備をしました"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「お弁当と飲み物を買いました」 is correct: 「先週の日曜日の午後、山田さんは会社の同僚と一緒に野球場へ試合を見に行きました。」 (Last Sunday afternoon, Mr. Yamada went to the baseball stadium with a coworker to watch a game.)"
     },
     {
       "question": "七回に何がありましたか？",
@@ -53,7 +984,9 @@
         "応援しているチームがホームランを打ちました",
         "試合に負けてしまいました"
       ],
-      "answerIndex": 2
+      "answerIndex": 2,
+      "explanation": "「応援しているチームがホームランを打ちました」 is the correct answer according to the story."
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/baseball-stadium.json"
 }

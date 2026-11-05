@@ -9,6 +9,7 @@ export interface SrsItem {
   level?: string;       // "N5", "N4", etc.
   prompt: string;       // glyph / word
   answer: string;       // romaji, primary meaning
+  reversePrompt?: string; // disambiguated English prompt for reverse recall
   reading?: string;     // furigana/kun/on
   card: Card;           // ts-fsrs Card object (state, due, stability, difficulty, reps)
   lastReviewedAt?: number;

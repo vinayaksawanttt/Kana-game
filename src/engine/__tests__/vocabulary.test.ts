@@ -41,4 +41,43 @@ describe("vocabulary answer matching", () => {
     expect(checkVocabularyAnswer("colour", ["color"]).matchType).toBe("exact");
     expect(checkVocabularyAnswer("3", ["three"]).matchType).toBe("exact");
   });
+
+  it("evaluates expanded synonyms array when not in primary meanings", () => {
+    const meanings = ["to meet"];
+    const synonyms = ["meet", "encounter", "see", "greet"];
+    expect(checkVocabularyAnswer("encounter", meanings, synonyms)).toMatchObject({
+      isMatch: true,
+      matchType: "synonym",
+      matchedGloss: "encounter",
+    });
+    expect(checkVocabularyAnswer("greet", meanings, synonyms)).toMatchObject({
+      isMatch: true,
+      matchType: "synonym",
+      matchedGloss: "greet",
+    });
+    expect(checkVocabularyAnswer("encounterr", meanings, synonyms)).toMatchObject({
+      isMatch: true,
+      matchType: "typo",
+      matchedGloss: "encounter",
+    });
+    expect(checkVocabularyAnswer("fly", meanings, synonyms)).toEqual({
+      isMatch: false,
+      matchType: "none",
+    });
+  });
+
+  it("accepts modernMeaning for exact match, typo-tolerant match, and synonym concepts", () => {
+    const rawMeanings = ["an archaic formal assembly of individuals"];
+    const modernMeaning = "gathering";
+    expect(checkVocabularyAnswer("gathering", rawMeanings, undefined, modernMeaning)).toMatchObject({
+      isMatch: true,
+      matchType: "exact",
+      matchedGloss: "gathering",
+    });
+    expect(checkVocabularyAnswer("gatherign", rawMeanings, undefined, modernMeaning)).toMatchObject({
+      isMatch: true,
+      matchType: "typo",
+      matchedGloss: "gathering",
+    });
+  });
 });

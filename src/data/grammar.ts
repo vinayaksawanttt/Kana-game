@@ -19,6 +19,12 @@ export interface GrammarExample {
   cloze: GrammarCloze | null;
 }
 
+export interface GrammarUsageNotes {
+  nuance: string;
+  contrast: string;
+  pitfalls: string;
+}
+
 export interface GrammarRecord {
   /** Stable id, e.g. "N5/a-ga-ichiban". */
   id: string;
@@ -29,6 +35,7 @@ export interface GrammarRecord {
   explanation: string;
   examples: Array<Pick<GrammarExample, "ja" | "en"> & Partial<Pick<GrammarExample, "furigana">>>;
   relatedPatterns?: string[];
+  notes?: GrammarUsageNotes;
 }
 
 export interface GrammarPoint extends GrammarRecord {
@@ -39,6 +46,7 @@ export interface GrammarPoint extends GrammarRecord {
   short: string;
   long: string;
   examples: GrammarExample[];
+  notes?: GrammarUsageNotes;
 }
 
 export interface GrammarLevelFile {

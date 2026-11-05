@@ -28,6 +28,7 @@ export default function ReviewHubPage() {
   const [totalStored, setTotalStored] = useState(0);
   const [selectedFilter, setSelectedFilter] = useState<"all" | SrsItemType>("all");
   const [mode, setMode] = useState<"dashboard" | "review" | "complete">("dashboard");
+  const [direction, setDirection] = useState<"recognition" | "recall">("recognition");
   const [queue, setQueue] = useState<SrsItem[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
@@ -35,6 +36,26 @@ export default function ReviewHubPage() {
   const [loading, setLoading] = useState(true);
   const [toast, setToast] = useState<{ type: "success" | "error"; message: string } | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("nihongo-review-direction");
+      if (saved === "recognition" || saved === "recall") {
+        setDirection(saved);
+      }
+    } catch {
+      // Ignore localStorage errors
+    }
+  }, []);
+
+  function handleDirectionChange(newDirection: "recognition" | "recall") {
+    setDirection(newDirection);
+    try {
+      localStorage.setItem("nihongo-review-direction", newDirection);
+    } catch {
+      // Ignore localStorage errors
+    }
+  }
 
   const refreshQueue = useCallback(async () => {
     try {
@@ -199,6 +220,49 @@ export default function ReviewHubPage() {
                 </span>
               </div>
 
+              <div className="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-[var(--line)] bg-[var(--bg)]/50 p-3 sm:p-4">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--muted)]">
+                    Review Mode:
+                  </span>
+                  <div
+                    className="inline-flex rounded-lg border border-[var(--line)] bg-[var(--surface)] p-0.5"
+                    role="group"
+                    aria-label="Select review direction"
+                  >
+                    <button
+                      type="button"
+                      aria-pressed={direction === "recognition"}
+                      onClick={() => handleDirectionChange("recognition")}
+                      className={`min-h-9 rounded-md px-3 py-1 text-xs font-bold transition-colors ${
+                        direction === "recognition"
+                          ? "bg-[var(--primary)] text-white shadow-xs"
+                          : "text-[var(--muted)] hover:text-[var(--ink)]"
+                      }`}
+                    >
+                      Recognition (JA → EN)
+                    </button>
+                    <button
+                      type="button"
+                      aria-pressed={direction === "recall"}
+                      onClick={() => handleDirectionChange("recall")}
+                      className={`min-h-9 rounded-md px-3 py-1 text-xs font-bold transition-colors ${
+                        direction === "recall"
+                          ? "bg-[var(--primary)] text-white shadow-xs"
+                          : "text-[var(--muted)] hover:text-[var(--ink)]"
+                      }`}
+                    >
+                      Recall (EN → JA)
+                    </button>
+                  </div>
+                </div>
+                <p className="text-xs text-[var(--muted)]">
+                  {direction === "recognition"
+                    ? "Prompt with Japanese · Recall English meaning"
+                    : "Prompt with English nuance · Recall Japanese word"}
+                </p>
+              </div>
+
               <div className="mb-6 flex flex-wrap gap-2" role="group" aria-label="Filter due cards by category">
                 {filterTabs.map((tab) => {
                   const active = selectedFilter === tab.key;
@@ -346,9 +410,14 @@ export default function ReviewHubPage() {
             <div className="mb-6 grid w-full grid-cols-[1fr_auto] items-center gap-4 border-b border-[var(--line)] pb-4">
               <div>
                 <div className="mb-2 flex items-center justify-between text-xs font-bold">
-                  <span>
-                    Card {currentIndex + 1} / {queue.length}
-                  </span>
+                  <div className="flex items-center gap-2">
+                    <span>
+                      Card {currentIndex + 1} / {queue.length}
+                    </span>
+                    <span className="rounded-full bg-[var(--sakura-light)] px-2 py-0.5 text-[11px] font-bold text-[var(--primary-fg)]">
+                      {direction === "recognition" ? "Recognition (JA → EN)" : "Recall (EN → JA)"}
+                    </span>
+                  </div>
                   <span className="text-[var(--muted)]">{reviewedCount} reviewed</span>
                 </div>
                 <div className="h-1.5 overflow-hidden rounded-full bg-[var(--line)]">
@@ -396,8 +465,16 @@ export default function ReviewHubPage() {
                           </span>
                         )}
                       </div>
-                      <span className="kana-card-glyph break-keep px-4 text-center">
-                        {currentItem.prompt}
+                      <span
+                        className={`break-words px-4 text-center ${
+                          direction === "recall"
+                            ? "text-2xl sm:text-3xl font-bold font-sans text-[var(--ink)]"
+                            : "kana-card-glyph break-keep"
+                        }`}
+                      >
+                        {direction === "recall"
+                          ? (currentItem.reversePrompt || currentItem.answer)
+                          : currentItem.prompt}
                       </span>
                     </div>
                   </div>
@@ -407,10 +484,12 @@ export default function ReviewHubPage() {
                   {!revealed ? (
                     <div className="flex flex-col items-center text-center">
                       <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
-                        Recall the answer
+                        {direction === "recall" ? `Recall Japanese ${currentItem.type}` : "Recall the answer"}
                       </p>
                       <p className="mb-6 text-sm text-[var(--muted)]">
-                        Think of the reading and meaning, then flip the card to grade your recall.
+                        {direction === "recall"
+                          ? "Think of the Japanese character and reading, then flip the card to grade your recall."
+                          : "Think of the reading and meaning, then flip the card to grade your recall."}
                       </p>
                       <button
                         type="button"
@@ -426,14 +505,24 @@ export default function ReviewHubPage() {
                   ) : (
                     <div>
                       <p className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
-                        Answer
+                        {direction === "recall" ? "Japanese Character" : "Answer"}
                       </p>
-                      <p className="mt-2 text-2xl font-bold text-[var(--ink)]">
-                        {currentItem.answer}
+                      <p className="mt-2 text-3xl font-bold font-japanese text-[var(--ink)]">
+                        {direction === "recall" ? currentItem.prompt : currentItem.answer}
                       </p>
                       {currentItem.reading && (
                         <p className="mt-1 font-japanese text-base text-[var(--muted)]">
-                          {currentItem.reading}
+                          {direction === "recall" ? "Reading: " : ""}{currentItem.reading}
+                        </p>
+                      )}
+                      {direction === "recall" && (
+                        <p className="mt-1 text-sm text-[var(--muted)]">
+                          Meaning: {currentItem.answer}
+                        </p>
+                      )}
+                      {currentItem.reversePrompt && currentItem.reversePrompt !== currentItem.answer && (
+                        <p className="mt-1 text-xs text-[var(--muted)] font-medium">
+                          Nuance: <span className="text-[var(--ink)] font-normal">{currentItem.reversePrompt}</span>
                         </p>
                       )}
 
@@ -495,30 +584,47 @@ export default function ReviewHubPage() {
                         {currentItem.level}
                       </span>
                     )}
+                    <span className="rounded-full bg-[var(--sakura-light)] px-2.5 py-0.5 text-[10px] font-bold text-[var(--primary-fg)]">
+                      {direction === "recall" ? "Recall · EN → JA" : "Recognition · JA → EN"}
+                    </span>
                   </div>
                   <span className="text-xs font-semibold text-[var(--muted)]">
-                    {currentItem.type === "vocab" ? "Word & Meaning Recall" : "Grammar Rule Recall"}
+                    {currentItem.type === "vocab"
+                      ? (direction === "recall" ? "English to Japanese Recall" : "Word & Meaning Recall")
+                      : (direction === "recall" ? "Concept to Pattern Recall" : "Grammar Rule Recall")}
                   </span>
                 </div>
 
                 {/* Expandable Prompt Box */}
                 <div className="my-6 rounded-xl border border-[var(--line)] bg-[var(--bg)]/65 px-5 py-8 text-center sm:px-8 sm:py-10">
                   <p className="mb-3 text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
-                    {currentItem.type === "vocab" ? "Japanese Vocabulary" : "Target Grammar"}
+                    {direction === "recall"
+                      ? (currentItem.type === "vocab" ? "English Meaning / Prompt" : "Target Concept")
+                      : (currentItem.type === "vocab" ? "Japanese Vocabulary" : "Target Grammar")}
                   </p>
                   <p
-                    lang="ja"
-                    className={`font-japanese mx-auto max-w-2xl break-words font-bold leading-snug text-[var(--ink)] ${
-                      currentItem.prompt.length > 14
-                        ? "text-2xl sm:text-3xl"
-                        : currentItem.prompt.length > 7
-                          ? "text-3xl sm:text-4xl"
-                          : "text-4xl sm:text-5xl"
+                    lang={direction === "recall" ? "en" : "ja"}
+                    className={`mx-auto max-w-2xl break-words font-bold leading-snug text-[var(--ink)] ${
+                      direction === "recall" ? "font-sans" : "font-japanese"
+                    } ${
+                      (direction === "recall"
+                        ? (currentItem.reversePrompt || currentItem.answer)
+                        : currentItem.prompt
+                      ).length > 25
+                        ? "text-xl sm:text-2xl"
+                        : (direction === "recall"
+                            ? (currentItem.reversePrompt || currentItem.answer)
+                            : currentItem.prompt
+                          ).length > 14
+                          ? "text-2xl sm:text-3xl"
+                          : "text-3xl sm:text-4xl"
                     }`}
                   >
-                    {currentItem.prompt}
+                    {direction === "recall"
+                      ? (currentItem.reversePrompt || currentItem.answer)
+                      : currentItem.prompt}
                   </p>
-                  {revealed && currentItem.reading && (
+                  {direction !== "recall" && revealed && currentItem.reading && (
                     <p
                       lang="ja"
                       className="font-japanese mt-3 text-base font-medium text-[var(--primary-fg)] sm:text-lg"
@@ -532,9 +638,13 @@ export default function ReviewHubPage() {
                 {!revealed ? (
                   <div className="flex flex-col items-center text-center">
                     <p className="mb-4 text-sm text-[var(--muted)]">
-                      {currentItem.type === "vocab"
-                        ? "Recall the reading and English meaning of this word, then reveal the answer."
-                        : "Recall the meaning and usage of this grammar pattern, then reveal the answer."}
+                      {direction === "recall"
+                        ? (currentItem.type === "vocab"
+                            ? "Recall the Japanese word and reading for this English meaning, then reveal the answer."
+                            : "Recall the Japanese grammar pattern for this concept, then reveal the answer.")
+                        : (currentItem.type === "vocab"
+                            ? "Recall the reading and English meaning of this word, then reveal the answer."
+                            : "Recall the meaning and usage of this grammar pattern, then reveal the answer.")}
                     </p>
                     <button
                       type="button"
@@ -552,11 +662,36 @@ export default function ReviewHubPage() {
                     <div className="flex flex-wrap items-start justify-between gap-3">
                       <div>
                         <p className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
-                          {currentItem.type === "vocab" ? "Meaning" : "Explanation"}
+                          {direction === "recall"
+                            ? (currentItem.type === "vocab" ? "Japanese Word & Reading" : "Japanese Pattern")
+                            : (currentItem.type === "vocab" ? "Meaning" : "Explanation")}
                         </p>
-                        <p className="mt-1.5 text-xl font-bold leading-relaxed text-[var(--ink)] sm:text-2xl">
-                          {currentItem.answer}
-                        </p>
+                        {direction === "recall" ? (
+                          <div className="mt-1.5 space-y-1">
+                            <p lang="ja" className="font-japanese text-3xl font-bold text-[var(--ink)]">
+                              {currentItem.prompt}
+                            </p>
+                            {currentItem.reading && (
+                              <p lang="ja" className="font-japanese text-base font-medium text-[var(--primary-fg)]">
+                                {currentItem.reading}
+                              </p>
+                            )}
+                            <p className="text-sm text-[var(--muted)]">
+                              Meaning: <span className="text-[var(--ink)] font-medium">{currentItem.answer}</span>
+                            </p>
+                          </div>
+                        ) : (
+                          <>
+                            <p className="mt-1.5 text-xl font-bold leading-relaxed text-[var(--ink)] sm:text-2xl">
+                              {currentItem.answer}
+                            </p>
+                            {currentItem.reversePrompt && currentItem.reversePrompt !== currentItem.answer && (
+                              <p className="mt-1 text-xs text-[var(--muted)] font-medium">
+                                Disambiguation: <span className="text-[var(--ink)] font-normal">{currentItem.reversePrompt}</span>
+                              </p>
+                            )}
+                          </>
+                        )}
                       </div>
                       {grammarRefHref && (
                         <Link

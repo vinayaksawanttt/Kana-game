@@ -1,0 +1,617 @@
+{
+  "id": "n5-meeting-friend",
+  "title": "友だちに会う",
+  "titleRomaji": "Tomodachi ni au",
+  "titleEn": "Meeting a Friend",
+  "level": "N5",
+  "category": "Everyday Life",
+  "tags": [
+    "friend",
+    "cafe",
+    "weekend",
+    "daily"
+  ],
+  "paragraphs": [
+    {
+      "ja": "日曜日、田中さんは駅の前で友だちの木村さんに会いました。時間は午後二時でした。",
+      "en": "On Sunday, Mr. Tanaka met his friend Mr. Kimura in front of the station. The time was 2:00 PM.",
+      "sentences": [
+        {
+          "ja": "日曜日、田中さんは駅の前で友だちの木村さんに会いました。",
+          "literalEn": "Sunday Tanaka [Mr/Ms] [topic] station ['s / of] before [in/by] friend ['s / of] Kimura [Mr/Ms] [at/to] meeting いま した",
+          "naturalEn": "On Sunday, Mr. Tanaka met his friend Mr. Kimura in front of the station.",
+          "tokens": [
+            {
+              "surface": "日曜日",
+              "reading": "にちようび",
+              "meaning": "Sunday",
+              "baseForm": "日曜日",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "駅",
+              "reading": "えき",
+              "meaning": "station",
+              "baseForm": "駅",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "前",
+              "reading": "まえ",
+              "meaning": "before",
+              "baseForm": "前",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "友だち",
+              "reading": "ともだち",
+              "meaning": "friend",
+              "baseForm": "友だち",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "木村",
+              "reading": "きむら",
+              "meaning": "Kimura (surname)",
+              "baseForm": "木村",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "会",
+              "reading": "かい",
+              "meaning": "meeting; assembly; party",
+              "baseForm": "会",
+              "level": "N3"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "時間は午後二時でした。",
+          "literalEn": "time [topic] afternoon two o'clock [in/by] した",
+          "naturalEn": "It was 2:00 p.m.",
+          "tokens": [
+            {
+              "surface": "時間",
+              "reading": "じかん",
+              "meaning": "time",
+              "baseForm": "時間",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "午後",
+              "reading": "ごご",
+              "meaning": "afternoon",
+              "baseForm": "午後",
+              "level": "N5"
+            },
+            {
+              "surface": "二時",
+              "reading": "にじ",
+              "meaning": "two o'clock",
+              "baseForm": "二時",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "二人は歩いて近くの喫茶店へ行きました。田中さんはコーヒーを飲んで、木村さんは温かいお茶を飲みました。",
+      "en": "The two walked to a nearby coffee shop. Mr. Tanaka drank coffee, and Mr. Kimura drank warm tea.",
+      "sentences": [
+        {
+          "ja": "二人は歩いて近くの喫茶店へ行きました。",
+          "literalEn": "two people [topic] pawn [and] near ['s / of] coffee lounge [toward] going した",
+          "naturalEn": "The two of them walked to a nearby coffee shop.",
+          "tokens": [
+            {
+              "surface": "二人",
+              "reading": "ふたり",
+              "meaning": "two people; pair",
+              "baseForm": "二人",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "歩",
+              "reading": "ふ",
+              "meaning": "pawn (in chess or shogi)",
+              "baseForm": "歩",
+              "level": "N1"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "近く",
+              "reading": "ちかく",
+              "meaning": "near",
+              "baseForm": "近く",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "喫茶店",
+              "reading": "きっさてん",
+              "meaning": "coffee lounge",
+              "baseForm": "喫茶店",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "田中さんはコーヒーを飲んで、木村さんは温かいお茶を飲みました。",
+          "literalEn": "Tanaka [Mr/Ms] [topic] coffee [obj] to drink んで Kimura [Mr/Ms] [topic] luke warm tea [obj] to drink した",
+          "naturalEn": "Mr. Tanaka drank coffee, and Mr. Kimura drank hot tea.",
+          "tokens": [
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "コーヒー",
+              "meaning": "coffee",
+              "baseForm": "コーヒー",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "飲",
+              "reading": "の",
+              "meaning": "to drink",
+              "baseForm": "飲む",
+              "level": "N5"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "木村",
+              "reading": "きむら",
+              "meaning": "Kimura (surname)",
+              "baseForm": "木村",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "温かい",
+              "reading": "ぬるかい",
+              "meaning": "luke warm",
+              "baseForm": "温い",
+              "level": "N5"
+            },
+            {
+              "surface": "お茶",
+              "reading": "おちゃ",
+              "meaning": "tea (green tea)",
+              "baseForm": "お茶",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "飲",
+              "reading": "の",
+              "meaning": "to drink",
+              "baseForm": "飲む",
+              "level": "N5"
+            },
+            {
+              "surface": "み"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "それから、先週の旅行の話や大学の勉強についてたくさん話しました。とても楽しかったです。",
+      "en": "After that, they talked a lot about last week's trip and university studies. It was very fun.",
+      "sentences": [
+        {
+          "ja": "それから、先週の旅行の話や大学の勉強についてたくさん話しました。",
+          "literalEn": "after that last week ['s / of] travel ['s / of] talk university ['s / of] to study について many talk しま した",
+          "naturalEn": "We also talked a lot about last week’s trip and our college studies.",
+          "tokens": [
+            {
+              "surface": "それから",
+              "meaning": "after that",
+              "baseForm": "それから",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "先週",
+              "reading": "せんしゅう",
+              "meaning": "last week",
+              "baseForm": "先週",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "旅行",
+              "reading": "りょこう",
+              "meaning": "travel",
+              "baseForm": "旅行",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "話",
+              "reading": "はなし",
+              "meaning": "talk; story",
+              "baseForm": "話",
+              "level": "N5"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "大学",
+              "reading": "だいがく",
+              "meaning": "university",
+              "baseForm": "大学",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "勉強",
+              "reading": "べんきょう",
+              "meaning": "to study",
+              "baseForm": "勉強",
+              "level": "N5"
+            },
+            {
+              "surface": "について"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "話",
+              "reading": "はなし",
+              "meaning": "talk; story",
+              "baseForm": "話",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "とても楽しかったです。",
+          "literalEn": "very comfort しか [past] [is]",
+          "naturalEn": "It was really fun.",
+          "tokens": [
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "楽",
+              "reading": "らく",
+              "meaning": "comfort; ease",
+              "baseForm": "楽",
+              "level": "N3"
+            },
+            {
+              "surface": "しか"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "四時半に「また来週会いましょう」と言って、電車で家に帰りました。",
+      "en": "At 4:30, they said, \"Let's meet again next week,\" and returned home by train.",
+      "sentences": [
+        {
+          "ja": "四時半に「また来週会いましょう」と言って、電車で家に帰りました。",
+          "literalEn": "four half past the hour [at/to] again next week meeting いま しょう [with/and] to say って electric train [in/by] house [at/to] return した",
+          "naturalEn": "At 4:30, I said, “See you next week,” and took the train home.",
+          "tokens": [
+            {
+              "surface": "四",
+              "reading": "し",
+              "meaning": "four",
+              "baseForm": "四",
+              "level": "N5"
+            },
+            {
+              "surface": "時半",
+              "reading": "じはん",
+              "meaning": "half past the hour",
+              "baseForm": "時半",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "また",
+              "meaning": "again; and",
+              "baseForm": "また",
+              "level": "N5"
+            },
+            {
+              "surface": "来週",
+              "reading": "らいしゅう",
+              "meaning": "next week",
+              "baseForm": "来週",
+              "level": "N5"
+            },
+            {
+              "surface": "会",
+              "reading": "かい",
+              "meaning": "meeting; assembly; party",
+              "baseForm": "会",
+              "level": "N3"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "しょう"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "電車",
+              "reading": "でんしゃ",
+              "meaning": "electric train",
+              "baseForm": "電車",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "帰り",
+              "reading": "かえり",
+              "meaning": "return",
+              "baseForm": "帰り",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "二人は何時に駅の前で会いましたか？",
+      "options": [
+        "午前十時",
+        "午前十二時",
+        "午後二時",
+        "午後四時半"
+      ],
+      "answerIndex": 2,
+      "explanation": "「午後二時」 is correct: 「時間は午後二時でした。」 (It was 2:00 p.m.)"
+    },
+    {
+      "question": "木村さんは喫茶店で何を飲みましたか？",
+      "options": [
+        "コーヒー",
+        "冷たい水",
+        "ジュース",
+        "温かいお茶"
+      ],
+      "answerIndex": 3,
+      "explanation": "「温かいお茶」 is correct: 「田中さんはコーヒーを飲んで、木村さんは温かいお茶を飲みました。」 (Mr. Tanaka drank coffee, and Mr. Kimura drank hot tea.)"
+    },
+    {
+      "question": "田中さんはどうやって家に帰りましたか？",
+      "options": [
+        "歩いて",
+        "バスで",
+        "電車で",
+        "自転車で"
+      ],
+      "answerIndex": 2,
+      "explanation": "「電車で」 is correct: 「四時半に「また来週会いましょう」と言って、電車で家に帰りました。」 (At 4:30, I said, “See you next week,” and took the train home.)"
+    }
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/meeting-friend.json"
+}

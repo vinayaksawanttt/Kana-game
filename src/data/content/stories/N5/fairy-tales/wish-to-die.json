@@ -14,19 +14,1297 @@
   "paragraphs": [
     {
       "ja": "昔々、千太郎（せんたろう）という男の人がいました。 彼は「死ぬのは怖いです。ずっと生きたいです」と言って、神様にお願いしました。 神様は彼に紙の鳥をあげました。 千太郎が鳥に乗ると、鳥は空を飛んで「死なない国」へ行きました。",
-      "en": "Long, long ago, there was a man named Sentaro. He said, \"I am afraid to die. I want to live forever,\" and prayed to a god. The god gave him a paper bird. When Sentaro rode on the bird, the bird flew in the sky and went to the 'Country of Perpetual Life.'"
+      "en": "Long, long ago, there was a man named Sentaro. He said, \"I am afraid to die. I want to live forever,\" and prayed to a god. The god gave him a paper bird. When Sentaro rode on the bird, the bird flew in the sky and went to the 'Country of Perpetual Life.'",
+      "sentences": [
+        {
+          "ja": "昔々、千太郎（せんたろう）という男の人がいました。",
+          "literalEn": "olden days thousand Taro という man ['s / of] person [subj] いま した",
+          "naturalEn": "Once upon a time, there was a man named Sentaro.",
+          "tokens": [
+            {
+              "surface": "昔",
+              "reading": "むかし",
+              "meaning": "olden days; former",
+              "baseForm": "昔",
+              "level": "N4"
+            },
+            {
+              "surface": "々"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "千",
+              "reading": "せん",
+              "meaning": "thousand",
+              "baseForm": "千",
+              "level": "N5"
+            },
+            {
+              "surface": "太郎",
+              "reading": "たろう",
+              "meaning": "Taro (given name)",
+              "baseForm": "太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "男",
+              "reading": "おとこ",
+              "meaning": "man",
+              "baseForm": "男",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼は「死ぬのは怖いです。",
+          "literalEn": "he [topic] to die ['s / of] [topic] frightening [is]",
+          "naturalEn": "He said, “I’m afraid of dying.",
+          "tokens": [
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "死ぬ",
+              "reading": "しぬ",
+              "meaning": "to die",
+              "baseForm": "死ぬ",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "怖い",
+              "reading": "こわい",
+              "meaning": "frightening",
+              "baseForm": "怖い",
+              "level": "N4"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ずっと生きたいです」と言って、神様にお願いしました。",
+          "literalEn": "consecutively draft [want to] [is] [with/and] to say って god [at/to] request しま した",
+          "naturalEn": "\"I want to live forever,\" he said, and made a wish to God.",
+          "tokens": [
+            {
+              "surface": "ずっと",
+              "meaning": "consecutively; throughout; a lot",
+              "baseForm": "ずっと",
+              "level": "N3"
+            },
+            {
+              "surface": "生き",
+              "reading": "なまき",
+              "meaning": "draft (beer); raw; unprocessed",
+              "baseForm": "生",
+              "level": "N3"
+            },
+            {
+              "surface": "たい"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "神様",
+              "reading": "かみさま",
+              "meaning": "god",
+              "baseForm": "神様",
+              "level": "N2"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "お願い",
+              "reading": "おねがい",
+              "meaning": "request; wish; please",
+              "baseForm": "お願い",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "神様は彼に紙の鳥をあげました。",
+          "literalEn": "god [topic] he [at/to] paper ['s / of] bird [obj] Ah した",
+          "naturalEn": "God gave him a paper bird.",
+          "tokens": [
+            {
+              "surface": "神様",
+              "reading": "かみさま",
+              "meaning": "god",
+              "baseForm": "神様",
+              "level": "N2"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "紙",
+              "reading": "かみ",
+              "meaning": "paper",
+              "baseForm": "紙",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "鳥",
+              "reading": "とり",
+              "meaning": "bird",
+              "baseForm": "鳥",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "あ",
+              "meaning": "Ah",
+              "baseForm": "あ",
+              "level": "N4"
+            },
+            {
+              "surface": "げ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "千太郎が鳥に乗ると、鳥は空を飛んで「死なない国」へ行きました。",
+          "literalEn": "thousand Taro [subj] bird [at/to] to get on [with/and] bird [topic] sky [obj] to fly んで death [not] country [toward] going した",
+          "naturalEn": "When Sentaro rode the bird, it flew through the sky to the “Land Where No One Dies.”",
+          "tokens": [
+            {
+              "surface": "千",
+              "reading": "せん",
+              "meaning": "thousand",
+              "baseForm": "千",
+              "level": "N5"
+            },
+            {
+              "surface": "太郎",
+              "reading": "たろう",
+              "meaning": "Taro (given name)",
+              "baseForm": "太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "鳥",
+              "reading": "とり",
+              "meaning": "bird",
+              "baseForm": "鳥",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "乗る",
+              "reading": "のる",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "鳥",
+              "reading": "とり",
+              "meaning": "bird",
+              "baseForm": "鳥",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "空",
+              "reading": "そら",
+              "meaning": "sky",
+              "baseForm": "空",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "飛",
+              "reading": "と",
+              "meaning": "to fly; to hop",
+              "baseForm": "飛ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "死",
+              "reading": "し",
+              "meaning": "death; decease",
+              "baseForm": "死",
+              "level": "N1"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "国",
+              "reading": "くに",
+              "meaning": "country",
+              "baseForm": "国",
+              "level": "N5"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "その国の人たちは、病気になりません。 しかし、みんな「死にたいです。毎日つまらないです」と言いました。 三百年の後、千太郎もつまらなくなりました。 「私の国へ帰りたいです」と言って、また紙の鳥に乗りました。",
-      "en": "The people of that country do not get sick. However, everyone said, \"We want to die. Every day is boring.\" After three hundred years, Sentaro also became bored. He said, \"I want to return to my country,\" and rode the paper bird again."
+      "en": "The people of that country do not get sick. However, everyone said, \"We want to die. Every day is boring.\" After three hundred years, Sentaro also became bored. He said, \"I want to return to my country,\" and rode the paper bird again.",
+      "sentences": [
+        {
+          "ja": "その国の人たちは、病気になりません。",
+          "literalEn": "that country ['s / of] person たち [topic] illness [at/to] なり せん",
+          "naturalEn": "The people of that country never get sick.",
+          "tokens": [
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "国",
+              "reading": "くに",
+              "meaning": "country",
+              "baseForm": "国",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "病気",
+              "reading": "びょうき",
+              "meaning": "illness",
+              "baseForm": "病気",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "しかし、みんな「死にたいです。",
+          "literalEn": "however everyone death [at/to] [want to] [is]",
+          "naturalEn": "But everyone said, “I want to die.",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "みんな",
+              "meaning": "everyone",
+              "baseForm": "みんな",
+              "level": "N5"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "死",
+              "reading": "し",
+              "meaning": "death; decease",
+              "baseForm": "死",
+              "level": "N1"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "たい"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "毎日つまらないです」と言いました。",
+          "literalEn": "every day boring [is] [with/and] to say いま した",
+          "naturalEn": "\"Every day is so boring,\" he said.",
+          "tokens": [
+            {
+              "surface": "毎日",
+              "reading": "まいにち",
+              "meaning": "every day",
+              "baseForm": "毎日",
+              "level": "N5"
+            },
+            {
+              "surface": "つまらない",
+              "meaning": "boring",
+              "baseForm": "つまらない",
+              "level": "N5"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "三百年の後、千太郎もつまらなくなりました。",
+          "literalEn": "three hundred year ['s / of] afterwards thousand Taro もつ なく なり した",
+          "naturalEn": "Three hundred years later, Sentaro also grew bored.",
+          "tokens": [
+            {
+              "surface": "三百",
+              "reading": "さんびゃく",
+              "meaning": "three hundred (300)",
+              "baseForm": "三百",
+              "level": "N5"
+            },
+            {
+              "surface": "年",
+              "reading": "とし",
+              "meaning": "year",
+              "baseForm": "年",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "後",
+              "reading": "あと",
+              "meaning": "afterwards",
+              "baseForm": "後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "千",
+              "reading": "せん",
+              "meaning": "thousand",
+              "baseForm": "千",
+              "level": "N5"
+            },
+            {
+              "surface": "太郎",
+              "reading": "たろう",
+              "meaning": "Taro (given name)",
+              "baseForm": "太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "もつ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "なく"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「私の国へ帰りたいです」と言って、また紙の鳥に乗りました。",
+          "literalEn": "I ['s / of] country [toward] return [want to] [is] [with/and] to say って again paper ['s / of] bird [at/to] to get on した",
+          "naturalEn": "“I want to go back to my country,” he said, and boarded the paper bird once more.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "国",
+              "reading": "くに",
+              "meaning": "country",
+              "baseForm": "国",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "帰り",
+              "reading": "かえり",
+              "meaning": "return",
+              "baseForm": "帰り",
+              "level": "N4"
+            },
+            {
+              "surface": "たい"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "また",
+              "meaning": "again; and",
+              "baseForm": "また",
+              "level": "N5"
+            },
+            {
+              "surface": "紙",
+              "reading": "かみ",
+              "meaning": "paper",
+              "baseForm": "紙",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "鳥",
+              "reading": "とり",
+              "meaning": "bird",
+              "baseForm": "鳥",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "乗り",
+              "reading": "のり",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "しかし、海の上で鳥が水に落ちました。 大きな魚が来て、千太郎を食べようとしました。 「助けて！」と大きな声で言った時、千太郎は起きました。 それは長い夢でした。",
-      "en": "However, over the sea, the bird fell into the water. A big fish came and tried to eat Sentaro. When he said \"Help!\" with a loud voice, Sentaro woke up. It was a long dream."
+      "en": "However, over the sea, the bird fell into the water. A big fish came and tried to eat Sentaro. When he said \"Help!\" with a loud voice, Sentaro woke up. It was a long dream.",
+      "sentences": [
+        {
+          "ja": "しかし、海の上で鳥が水に落ちました。",
+          "literalEn": "however sea ['s / of] on top of [in/by] bird [subj] water [at/to] to drop した",
+          "naturalEn": "But out on the ocean, a bird fell into the water.",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "上",
+              "reading": "うえ",
+              "meaning": "on top of",
+              "baseForm": "上",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "鳥",
+              "reading": "とり",
+              "meaning": "bird",
+              "baseForm": "鳥",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "水",
+              "reading": "みず",
+              "meaning": "water",
+              "baseForm": "水",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "落ち",
+              "reading": "おとち",
+              "meaning": "to drop",
+              "baseForm": "落す",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "大きな魚が来て、千太郎を食べようとしました。",
+          "literalEn": "big fish [subj] for [and] thousand Taro [obj]  to eat よう [with/and] しま した",
+          "naturalEn": "A big fish swam over and tried to eat Sentaro.",
+          "tokens": [
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "魚",
+              "reading": "さかな",
+              "meaning": "fish",
+              "baseForm": "魚",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "来",
+              "reading": "らい",
+              "meaning": "for (10 days); next (year)",
+              "baseForm": "来",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "千",
+              "reading": "せん",
+              "meaning": "thousand",
+              "baseForm": "千",
+              "level": "N5"
+            },
+            {
+              "surface": "太郎",
+              "reading": "たろう",
+              "meaning": "Taro (given name)",
+              "baseForm": "太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "食",
+              "reading": "く",
+              "meaning": "(male) (vulgar) to eat",
+              "baseForm": "食う",
+              "level": "N3"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「助けて！",
+          "literalEn": "assistance [and]",
+          "naturalEn": "“Help!”",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "助け",
+              "reading": "たすけ",
+              "meaning": "assistance",
+              "baseForm": "助け",
+              "level": "N1"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "！"
+            }
+          ]
+        },
+        {
+          "ja": "」と大きな声で言った時、千太郎は起きました。",
+          "literalEn": "[with/and] big voice [in/by] to say [past] time thousand Taro [topic] to wake した",
+          "naturalEn": "\"When he shouted, 'Help!' in a loud voice, Sentaro woke up.\"",
+          "tokens": [
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "声",
+              "reading": "こえ",
+              "meaning": "voice",
+              "baseForm": "声",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "時",
+              "reading": "とき",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "千",
+              "reading": "せん",
+              "meaning": "thousand",
+              "baseForm": "千",
+              "level": "N5"
+            },
+            {
+              "surface": "太郎",
+              "reading": "たろう",
+              "meaning": "Taro (given name)",
+              "baseForm": "太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "起",
+              "reading": "おこ",
+              "meaning": "to wake",
+              "baseForm": "起す",
+              "level": "N4"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "それは長い夢でした。",
+          "literalEn": "that [topic] long dream [in/by] した",
+          "naturalEn": "It had been a long dream.",
+          "tokens": [
+            {
+              "surface": "それ",
+              "meaning": "that",
+              "baseForm": "それ",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "長い",
+              "reading": "ながい",
+              "meaning": "long",
+              "baseForm": "長い",
+              "level": "N5"
+            },
+            {
+              "surface": "夢",
+              "reading": "ゆめ",
+              "meaning": "dream",
+              "baseForm": "夢",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "神様が来て、「家へ帰って、毎日よく働いてください」と言いました。 千太郎は「はい」と言って、家に帰りました。 そして、毎日まじめに仕事をしました。",
-      "en": "The god came and said, \"Go home and work hard every day.\" Sentaro said \"Yes\" and returned home. And he did his job seriously every day."
+      "en": "The god came and said, \"Go home and work hard every day.\" Sentaro said \"Yes\" and returned home. And he did his job seriously every day.",
+      "sentences": [
+        {
+          "ja": "神様が来て、「家へ帰って、毎日よく働いてください」と言いました。",
+          "literalEn": "god [subj] for [and] house [toward] to go back って every day often to work [and] くだ さい [with/and] to say いま した",
+          "naturalEn": "God came and said, “Go home and work hard every day.”",
+          "tokens": [
+            {
+              "surface": "神様",
+              "reading": "かみさま",
+              "meaning": "god",
+              "baseForm": "神様",
+              "level": "N2"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "来",
+              "reading": "らい",
+              "meaning": "for (10 days); next (year)",
+              "baseForm": "来",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "帰",
+              "reading": "かえ",
+              "meaning": "to go back",
+              "baseForm": "帰る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "毎日",
+              "reading": "まいにち",
+              "meaning": "every day",
+              "baseForm": "毎日",
+              "level": "N5"
+            },
+            {
+              "surface": "よく",
+              "meaning": "often; well",
+              "baseForm": "よく",
+              "level": "N5"
+            },
+            {
+              "surface": "働",
+              "reading": "はたら",
+              "meaning": "to work",
+              "baseForm": "働く",
+              "level": "N5"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "くだ"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "千太郎は「はい」と言って、家に帰りました。",
+          "literalEn": "thousand Taro [topic] yes [with/and] to say って house [at/to] return した",
+          "naturalEn": "Sentaro said, “Yes,” and went home.",
+          "tokens": [
+            {
+              "surface": "千",
+              "reading": "せん",
+              "meaning": "thousand",
+              "baseForm": "千",
+              "level": "N5"
+            },
+            {
+              "surface": "太郎",
+              "reading": "たろう",
+              "meaning": "Taro (given name)",
+              "baseForm": "太郎",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "はい",
+              "meaning": "yes",
+              "baseForm": "はい",
+              "level": "N5"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "house",
+              "baseForm": "家",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "帰り",
+              "reading": "かえり",
+              "meaning": "return",
+              "baseForm": "帰り",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "そして、毎日まじめに仕事をしました。",
+          "literalEn": "and every day serious [at/to] job [obj] しま した",
+          "naturalEn": "And he worked diligently every day.",
+          "tokens": [
+            {
+              "surface": "そして",
+              "meaning": "and",
+              "baseForm": "そして",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "毎日",
+              "reading": "まいにち",
+              "meaning": "every day",
+              "baseForm": "毎日",
+              "level": "N5"
+            },
+            {
+              "surface": "まじめ",
+              "meaning": "serious",
+              "baseForm": "まじめ",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "仕事",
+              "reading": "しごと",
+              "meaning": "job",
+              "baseForm": "仕事",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
@@ -38,7 +1316,8 @@
         "古い船",
         "大きな魚"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「紙の鳥」 is correct: 「神様は彼に紙の鳥をあげました。」 (God gave him a paper bird.)"
     },
     {
       "question": "「死なない国」の人たちはどう思っていましたか？",
@@ -48,7 +1327,8 @@
         "死にたい",
         "よく働きたい"
       ],
-      "answerIndex": 2
+      "answerIndex": 2,
+      "explanation": "「死にたい」 is correct: 「しかし、みんな「死にたいです。」 (But everyone said, “I want to die.)"
     },
     {
       "question": "大きな魚が来た時、千太郎はどうなりましたか？",
@@ -58,7 +1338,9 @@
         "魚と話しました",
         "海を泳ぎました"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「起きました」 is correct: 「」と大きな声で言った時、千太郎は起きました。」 (\"When he shouted, 'Help!' in a loud voice, Sentaro woke up.\")"
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/fairy-tales/wish-to-die.json"
 }

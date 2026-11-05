@@ -1,0 +1,1310 @@
+{
+  "version": "v1",
+  "totalGroups": 12,
+  "groups": [
+    {
+      "id": "miru",
+      "reading": "みる",
+      "title": "見る vs 観る vs 診る",
+      "members": [
+        {
+          "kanji": "見",
+          "word": "見る",
+          "reading": "みる",
+          "nuance": "General seeing, looking, or observing with the eyes.",
+          "example": "空を見る (look at the sky) · 本を見る (look at a book)"
+        },
+        {
+          "kanji": "観",
+          "word": "観る",
+          "reading": "みる",
+          "nuance": "Appreciating or watching visual entertainment, shows, or scenery.",
+          "example": "映画を観る (watch a movie) · 景色を観る (admire scenery)"
+        },
+        {
+          "kanji": "診",
+          "word": "診る",
+          "reading": "みる",
+          "nuance": "Examining or diagnosing medically as a doctor or clinic.",
+          "example": "患者を診る (examine a patient) · 医者に診てもらう (see a doctor)"
+        }
+      ]
+    },
+    {
+      "id": "kiku",
+      "reading": "きく",
+      "title": "聞く vs 聴く",
+      "members": [
+        {
+          "kanji": "聞",
+          "word": "聞く",
+          "reading": "きく",
+          "nuance": "General passive hearing of sounds, or asking a question.",
+          "example": "音を聞く (hear a sound) · 道を聞く (ask for directions)"
+        },
+        {
+          "kanji": "聴",
+          "word": "聴く",
+          "reading": "きく",
+          "nuance": "Listening attentively, actively, and with focus.",
+          "example": "音楽を聴く (listen to music) · 講演を聴く (listen to a lecture)"
+        }
+      ]
+    },
+    {
+      "id": "naosu",
+      "reading": "なおす",
+      "title": "直す vs 治す",
+      "members": [
+        {
+          "kanji": "直",
+          "word": "直す",
+          "reading": "なおす",
+          "nuance": "Repairing broken physical objects or correcting mistakes and habits.",
+          "example": "時計を直す (fix a clock) · 間違いを直す (correct a mistake)"
+        },
+        {
+          "kanji": "治",
+          "word": "治す",
+          "reading": "なおす",
+          "nuance": "Curing illnesses, medical conditions, wounds, or injuries.",
+          "example": "病気を治す (cure an illness) · 風邪を治す (recover from a cold)"
+        }
+      ]
+    },
+    {
+      "id": "hayai",
+      "reading": "はやい",
+      "title": "早い vs 速い",
+      "members": [
+        {
+          "kanji": "早",
+          "word": "早い",
+          "reading": "はやい",
+          "nuance": "Early in time, schedule, hour, or clock time.",
+          "example": "朝早く起きる (wake up early) · 早い時間 (early hour)"
+        },
+        {
+          "kanji": "速",
+          "word": "速い",
+          "reading": "はやい",
+          "nuance": "Fast in physical speed, motion, tempo, or velocity.",
+          "example": "足が速い (run fast) · 新幹線は速い (the bullet train is fast)"
+        }
+      ]
+    },
+    {
+      "id": "atsui",
+      "reading": "あつい",
+      "title": "暑い vs 熱い vs 厚い",
+      "members": [
+        {
+          "kanji": "暑",
+          "word": "暑い",
+          "reading": "あつい",
+          "nuance": "Hot atmospheric air, weather, or outdoor climate.",
+          "example": "今年の夏は暑い (this summer is hot) · 暑い日 (a hot day)"
+        },
+        {
+          "kanji": "熱",
+          "word": "熱い",
+          "reading": "あつい",
+          "nuance": "High temperature to the touch (liquids, food, physical items) or passion.",
+          "example": "熱いお茶 (hot tea) · 熱いスープ (hot soup) · 熱い思い (passionate feeling)"
+        },
+        {
+          "kanji": "厚",
+          "word": "厚い",
+          "reading": "あつい",
+          "nuance": "Thick in physical depth, layered, or deep/warm hospitality.",
+          "example": "厚い本 (a thick book) · 厚いコート (a thick coat) · 手厚いもてなし (warm hospitality)"
+        }
+      ]
+    },
+    {
+      "id": "au",
+      "reading": "あう",
+      "title": "会う vs 合う vs 遭う",
+      "members": [
+        {
+          "kanji": "会",
+          "word": "会う",
+          "reading": "あう",
+          "nuance": "Meeting people socially or by appointment.",
+          "example": "友だちに会う (meet a friend) · 先生に会う (meet a teacher)"
+        },
+        {
+          "kanji": "合",
+          "word": "合う",
+          "reading": "あう",
+          "nuance": "Matching, fitting, aligning, or agreeing in size or taste.",
+          "example": "服のサイズが合う (the clothes fit) · 気が合う (get along well)"
+        },
+        {
+          "kanji": "遭",
+          "word": "遭う",
+          "reading": "あう",
+          "nuance": "Encountering an accident, disaster, storm, or misfortune.",
+          "example": "事故に遭う (get into an accident) · 酷い目に遭う (have a bad experience)"
+        }
+      ]
+    },
+    {
+      "id": "tsukuru",
+      "reading": "つくる",
+      "title": "作る vs 造る vs 創る",
+      "members": [
+        {
+          "kanji": "作",
+          "word": "作る",
+          "reading": "つくる",
+          "nuance": "General everyday making, cooking, or small-scale crafting.",
+          "example": "料理を作る (cook food) · 書類を作る (prepare documents)"
+        },
+        {
+          "kanji": "造",
+          "word": "造る",
+          "reading": "つくる",
+          "nuance": "Constructing or manufacturing large items, buildings, ships, or sake.",
+          "example": "船を造る (build a ship) · 酒を造る (brew sake) · 庭を造る (landscape a garden)"
+        },
+        {
+          "kanji": "創",
+          "word": "創る",
+          "reading": "つくる",
+          "nuance": "Creating unprecedented, artistic, or pioneering original work.",
+          "example": "新しい文化を創る (create a new culture) · 歴史を創る (make history)"
+        }
+      ]
+    },
+    {
+      "id": "noboru",
+      "reading": "のぼる",
+      "title": "上る vs 登る vs 昇る",
+      "members": [
+        {
+          "kanji": "上",
+          "word": "上る",
+          "reading": "のぼる",
+          "nuance": "Ascending a slope, stairs, or heading towards a capital city.",
+          "example": "階段を上る (go up stairs) · 坂を上る (ascend a slope)"
+        },
+        {
+          "kanji": "登",
+          "word": "登る",
+          "reading": "のぼる",
+          "nuance": "Climbing with deliberate physical effort (mountains, cliffs, ladders).",
+          "example": "山に登る (climb a mountain) · 木に登る (climb a tree)"
+        },
+        {
+          "kanji": "昇",
+          "word": "昇る",
+          "reading": "のぼる",
+          "nuance": "Rising straight up into the air/sky, sunrise, or rising in rank.",
+          "example": "日が昇る (the sun rises) · 煙が昇る (smoke rises) · 地位が昇る (rise in rank)"
+        }
+      ]
+    },
+    {
+      "id": "toru",
+      "reading": "とる",
+      "title": "取る vs 撮る vs 採る vs 捕る",
+      "members": [
+        {
+          "kanji": "取",
+          "word": "取る",
+          "reading": "とる",
+          "nuance": "Taking in hand, holding, picking up, or obtaining generally.",
+          "example": "手に取る (take in hand) · 資格を取る (obtain a qualification)"
+        },
+        {
+          "kanji": "撮",
+          "word": "撮る",
+          "reading": "とる",
+          "nuance": "Photographing, capturing, or filming pictures and movies.",
+          "example": "写真を撮る (take a photo) · ビデオを撮る (record a video)"
+        },
+        {
+          "kanji": "採",
+          "word": "採る",
+          "reading": "とる",
+          "nuance": "Selecting, hiring, adopting a proposal, or picking plants/blood.",
+          "example": "新入社員を採る (hire a new employee) · 血液を採る (draw blood)"
+        },
+        {
+          "kanji": "捕",
+          "word": "捕る",
+          "reading": "とる",
+          "nuance": "Catching or capturing fish, insects, animals, or criminals.",
+          "example": "魚を捕る (catch fish) · 虫を捕る (catch bugs)"
+        }
+      ]
+    },
+    {
+      "id": "hakaru",
+      "reading": "はかる",
+      "title": "計る vs 測る vs 量る vs 図る",
+      "members": [
+        {
+          "kanji": "計",
+          "word": "計る",
+          "reading": "はかる",
+          "nuance": "Measuring or counting time, hours, minutes, or calculations.",
+          "example": "時間を計る (measure time) · タイムを計る (time a race)"
+        },
+        {
+          "kanji": "測",
+          "word": "測る",
+          "reading": "はかる",
+          "nuance": "Measuring spatial dimensions: length, distance, height, or depth.",
+          "example": "長さを測る (measure length) · 距離を測る (measure distance)"
+        },
+        {
+          "kanji": "量",
+          "word": "量る",
+          "reading": "はかる",
+          "nuance": "Measuring weight, mass, capacity, or volume.",
+          "example": "体重を量る (weigh oneself) · 荷物の重さを量る (weigh luggage)"
+        },
+        {
+          "kanji": "図",
+          "word": "図る",
+          "reading": "はかる",
+          "nuance": "Planning, scheming, aiming for an objective, or attempting a solution.",
+          "example": "便宜を図る (accommodate needs) · 解決を図る (attempt resolution)"
+        }
+      ]
+    },
+    {
+      "id": "kawaru",
+      "reading": "かわる",
+      "title": "変わる vs 代わる vs 換わる",
+      "members": [
+        {
+          "kanji": "変",
+          "word": "変わる",
+          "reading": "かわる",
+          "nuance": "Undergoing internal transformation, alteration, or becoming different.",
+          "example": "天気が変わる (weather changes) · 時代が変わる (times change)"
+        },
+        {
+          "kanji": "代",
+          "word": "代わる",
+          "reading": "かわる",
+          "nuance": "Taking someone's place, substituting, or taking turns.",
+          "example": "選手が代わる (substitute player) · 運転を代わる (take over driving)"
+        },
+        {
+          "kanji": "換",
+          "word": "換わる",
+          "reading": "かわる",
+          "nuance": "Being replaced or exchanged for an equivalent item or currency.",
+          "example": "場所が換わる (location is swapped) · 席が換わる (seats are exchanged)"
+        }
+      ]
+    },
+    {
+      "id": "osameru",
+      "reading": "おさめる",
+      "title": "収める vs 納める vs 治める",
+      "members": [
+        {
+          "kanji": "収",
+          "word": "収める",
+          "reading": "おさめる",
+          "nuance": "Putting inside, storing, obtaining results, or achieving success.",
+          "example": "成功を収める (achieve success) · 財布に収める (store in a wallet)"
+        },
+        {
+          "kanji": "納",
+          "word": "納める",
+          "reading": "おさめる",
+          "nuance": "Paying fees/taxes, delivering ordered goods, or dedicating.",
+          "example": "税金を納める (pay taxes) · 会費を納める (pay membership dues)"
+        },
+        {
+          "kanji": "治",
+          "word": "治める",
+          "reading": "おさめる",
+          "nuance": "Governing a nation, managing affairs, or quelling disturbance.",
+          "example": "国を治める (govern a nation) · 混乱を治める (calm a disturbance)"
+        }
+      ]
+    }
+  ],
+  "byKanji": {
+    "見": {
+      "id": "miru",
+      "reading": "みる",
+      "title": "見る vs 観る vs 診る",
+      "members": [
+        {
+          "kanji": "見",
+          "word": "見る",
+          "reading": "みる",
+          "nuance": "General seeing, looking, or observing with the eyes.",
+          "example": "空を見る (look at the sky) · 本を見る (look at a book)"
+        },
+        {
+          "kanji": "観",
+          "word": "観る",
+          "reading": "みる",
+          "nuance": "Appreciating or watching visual entertainment, shows, or scenery.",
+          "example": "映画を観る (watch a movie) · 景色を観る (admire scenery)"
+        },
+        {
+          "kanji": "診",
+          "word": "診る",
+          "reading": "みる",
+          "nuance": "Examining or diagnosing medically as a doctor or clinic.",
+          "example": "患者を診る (examine a patient) · 医者に診てもらう (see a doctor)"
+        }
+      ]
+    },
+    "観": {
+      "id": "miru",
+      "reading": "みる",
+      "title": "見る vs 観る vs 診る",
+      "members": [
+        {
+          "kanji": "見",
+          "word": "見る",
+          "reading": "みる",
+          "nuance": "General seeing, looking, or observing with the eyes.",
+          "example": "空を見る (look at the sky) · 本を見る (look at a book)"
+        },
+        {
+          "kanji": "観",
+          "word": "観る",
+          "reading": "みる",
+          "nuance": "Appreciating or watching visual entertainment, shows, or scenery.",
+          "example": "映画を観る (watch a movie) · 景色を観る (admire scenery)"
+        },
+        {
+          "kanji": "診",
+          "word": "診る",
+          "reading": "みる",
+          "nuance": "Examining or diagnosing medically as a doctor or clinic.",
+          "example": "患者を診る (examine a patient) · 医者に診てもらう (see a doctor)"
+        }
+      ]
+    },
+    "診": {
+      "id": "miru",
+      "reading": "みる",
+      "title": "見る vs 観る vs 診る",
+      "members": [
+        {
+          "kanji": "見",
+          "word": "見る",
+          "reading": "みる",
+          "nuance": "General seeing, looking, or observing with the eyes.",
+          "example": "空を見る (look at the sky) · 本を見る (look at a book)"
+        },
+        {
+          "kanji": "観",
+          "word": "観る",
+          "reading": "みる",
+          "nuance": "Appreciating or watching visual entertainment, shows, or scenery.",
+          "example": "映画を観る (watch a movie) · 景色を観る (admire scenery)"
+        },
+        {
+          "kanji": "診",
+          "word": "診る",
+          "reading": "みる",
+          "nuance": "Examining or diagnosing medically as a doctor or clinic.",
+          "example": "患者を診る (examine a patient) · 医者に診てもらう (see a doctor)"
+        }
+      ]
+    },
+    "聞": {
+      "id": "kiku",
+      "reading": "きく",
+      "title": "聞く vs 聴く",
+      "members": [
+        {
+          "kanji": "聞",
+          "word": "聞く",
+          "reading": "きく",
+          "nuance": "General passive hearing of sounds, or asking a question.",
+          "example": "音を聞く (hear a sound) · 道を聞く (ask for directions)"
+        },
+        {
+          "kanji": "聴",
+          "word": "聴く",
+          "reading": "きく",
+          "nuance": "Listening attentively, actively, and with focus.",
+          "example": "音楽を聴く (listen to music) · 講演を聴く (listen to a lecture)"
+        }
+      ]
+    },
+    "聴": {
+      "id": "kiku",
+      "reading": "きく",
+      "title": "聞く vs 聴く",
+      "members": [
+        {
+          "kanji": "聞",
+          "word": "聞く",
+          "reading": "きく",
+          "nuance": "General passive hearing of sounds, or asking a question.",
+          "example": "音を聞く (hear a sound) · 道を聞く (ask for directions)"
+        },
+        {
+          "kanji": "聴",
+          "word": "聴く",
+          "reading": "きく",
+          "nuance": "Listening attentively, actively, and with focus.",
+          "example": "音楽を聴く (listen to music) · 講演を聴く (listen to a lecture)"
+        }
+      ]
+    },
+    "直": {
+      "id": "naosu",
+      "reading": "なおす",
+      "title": "直す vs 治す",
+      "members": [
+        {
+          "kanji": "直",
+          "word": "直す",
+          "reading": "なおす",
+          "nuance": "Repairing broken physical objects or correcting mistakes and habits.",
+          "example": "時計を直す (fix a clock) · 間違いを直す (correct a mistake)"
+        },
+        {
+          "kanji": "治",
+          "word": "治す",
+          "reading": "なおす",
+          "nuance": "Curing illnesses, medical conditions, wounds, or injuries.",
+          "example": "病気を治す (cure an illness) · 風邪を治す (recover from a cold)"
+        }
+      ]
+    },
+    "治": {
+      "id": "osameru",
+      "reading": "おさめる",
+      "title": "収める vs 納める vs 治める",
+      "members": [
+        {
+          "kanji": "収",
+          "word": "収める",
+          "reading": "おさめる",
+          "nuance": "Putting inside, storing, obtaining results, or achieving success.",
+          "example": "成功を収める (achieve success) · 財布に収める (store in a wallet)"
+        },
+        {
+          "kanji": "納",
+          "word": "納める",
+          "reading": "おさめる",
+          "nuance": "Paying fees/taxes, delivering ordered goods, or dedicating.",
+          "example": "税金を納める (pay taxes) · 会費を納める (pay membership dues)"
+        },
+        {
+          "kanji": "治",
+          "word": "治める",
+          "reading": "おさめる",
+          "nuance": "Governing a nation, managing affairs, or quelling disturbance.",
+          "example": "国を治める (govern a nation) · 混乱を治める (calm a disturbance)"
+        }
+      ]
+    },
+    "早": {
+      "id": "hayai",
+      "reading": "はやい",
+      "title": "早い vs 速い",
+      "members": [
+        {
+          "kanji": "早",
+          "word": "早い",
+          "reading": "はやい",
+          "nuance": "Early in time, schedule, hour, or clock time.",
+          "example": "朝早く起きる (wake up early) · 早い時間 (early hour)"
+        },
+        {
+          "kanji": "速",
+          "word": "速い",
+          "reading": "はやい",
+          "nuance": "Fast in physical speed, motion, tempo, or velocity.",
+          "example": "足が速い (run fast) · 新幹線は速い (the bullet train is fast)"
+        }
+      ]
+    },
+    "速": {
+      "id": "hayai",
+      "reading": "はやい",
+      "title": "早い vs 速い",
+      "members": [
+        {
+          "kanji": "早",
+          "word": "早い",
+          "reading": "はやい",
+          "nuance": "Early in time, schedule, hour, or clock time.",
+          "example": "朝早く起きる (wake up early) · 早い時間 (early hour)"
+        },
+        {
+          "kanji": "速",
+          "word": "速い",
+          "reading": "はやい",
+          "nuance": "Fast in physical speed, motion, tempo, or velocity.",
+          "example": "足が速い (run fast) · 新幹線は速い (the bullet train is fast)"
+        }
+      ]
+    },
+    "暑": {
+      "id": "atsui",
+      "reading": "あつい",
+      "title": "暑い vs 熱い vs 厚い",
+      "members": [
+        {
+          "kanji": "暑",
+          "word": "暑い",
+          "reading": "あつい",
+          "nuance": "Hot atmospheric air, weather, or outdoor climate.",
+          "example": "今年の夏は暑い (this summer is hot) · 暑い日 (a hot day)"
+        },
+        {
+          "kanji": "熱",
+          "word": "熱い",
+          "reading": "あつい",
+          "nuance": "High temperature to the touch (liquids, food, physical items) or passion.",
+          "example": "熱いお茶 (hot tea) · 熱いスープ (hot soup) · 熱い思い (passionate feeling)"
+        },
+        {
+          "kanji": "厚",
+          "word": "厚い",
+          "reading": "あつい",
+          "nuance": "Thick in physical depth, layered, or deep/warm hospitality.",
+          "example": "厚い本 (a thick book) · 厚いコート (a thick coat) · 手厚いもてなし (warm hospitality)"
+        }
+      ]
+    },
+    "熱": {
+      "id": "atsui",
+      "reading": "あつい",
+      "title": "暑い vs 熱い vs 厚い",
+      "members": [
+        {
+          "kanji": "暑",
+          "word": "暑い",
+          "reading": "あつい",
+          "nuance": "Hot atmospheric air, weather, or outdoor climate.",
+          "example": "今年の夏は暑い (this summer is hot) · 暑い日 (a hot day)"
+        },
+        {
+          "kanji": "熱",
+          "word": "熱い",
+          "reading": "あつい",
+          "nuance": "High temperature to the touch (liquids, food, physical items) or passion.",
+          "example": "熱いお茶 (hot tea) · 熱いスープ (hot soup) · 熱い思い (passionate feeling)"
+        },
+        {
+          "kanji": "厚",
+          "word": "厚い",
+          "reading": "あつい",
+          "nuance": "Thick in physical depth, layered, or deep/warm hospitality.",
+          "example": "厚い本 (a thick book) · 厚いコート (a thick coat) · 手厚いもてなし (warm hospitality)"
+        }
+      ]
+    },
+    "厚": {
+      "id": "atsui",
+      "reading": "あつい",
+      "title": "暑い vs 熱い vs 厚い",
+      "members": [
+        {
+          "kanji": "暑",
+          "word": "暑い",
+          "reading": "あつい",
+          "nuance": "Hot atmospheric air, weather, or outdoor climate.",
+          "example": "今年の夏は暑い (this summer is hot) · 暑い日 (a hot day)"
+        },
+        {
+          "kanji": "熱",
+          "word": "熱い",
+          "reading": "あつい",
+          "nuance": "High temperature to the touch (liquids, food, physical items) or passion.",
+          "example": "熱いお茶 (hot tea) · 熱いスープ (hot soup) · 熱い思い (passionate feeling)"
+        },
+        {
+          "kanji": "厚",
+          "word": "厚い",
+          "reading": "あつい",
+          "nuance": "Thick in physical depth, layered, or deep/warm hospitality.",
+          "example": "厚い本 (a thick book) · 厚いコート (a thick coat) · 手厚いもてなし (warm hospitality)"
+        }
+      ]
+    },
+    "会": {
+      "id": "au",
+      "reading": "あう",
+      "title": "会う vs 合う vs 遭う",
+      "members": [
+        {
+          "kanji": "会",
+          "word": "会う",
+          "reading": "あう",
+          "nuance": "Meeting people socially or by appointment.",
+          "example": "友だちに会う (meet a friend) · 先生に会う (meet a teacher)"
+        },
+        {
+          "kanji": "合",
+          "word": "合う",
+          "reading": "あう",
+          "nuance": "Matching, fitting, aligning, or agreeing in size or taste.",
+          "example": "服のサイズが合う (the clothes fit) · 気が合う (get along well)"
+        },
+        {
+          "kanji": "遭",
+          "word": "遭う",
+          "reading": "あう",
+          "nuance": "Encountering an accident, disaster, storm, or misfortune.",
+          "example": "事故に遭う (get into an accident) · 酷い目に遭う (have a bad experience)"
+        }
+      ]
+    },
+    "合": {
+      "id": "au",
+      "reading": "あう",
+      "title": "会う vs 合う vs 遭う",
+      "members": [
+        {
+          "kanji": "会",
+          "word": "会う",
+          "reading": "あう",
+          "nuance": "Meeting people socially or by appointment.",
+          "example": "友だちに会う (meet a friend) · 先生に会う (meet a teacher)"
+        },
+        {
+          "kanji": "合",
+          "word": "合う",
+          "reading": "あう",
+          "nuance": "Matching, fitting, aligning, or agreeing in size or taste.",
+          "example": "服のサイズが合う (the clothes fit) · 気が合う (get along well)"
+        },
+        {
+          "kanji": "遭",
+          "word": "遭う",
+          "reading": "あう",
+          "nuance": "Encountering an accident, disaster, storm, or misfortune.",
+          "example": "事故に遭う (get into an accident) · 酷い目に遭う (have a bad experience)"
+        }
+      ]
+    },
+    "遭": {
+      "id": "au",
+      "reading": "あう",
+      "title": "会う vs 合う vs 遭う",
+      "members": [
+        {
+          "kanji": "会",
+          "word": "会う",
+          "reading": "あう",
+          "nuance": "Meeting people socially or by appointment.",
+          "example": "友だちに会う (meet a friend) · 先生に会う (meet a teacher)"
+        },
+        {
+          "kanji": "合",
+          "word": "合う",
+          "reading": "あう",
+          "nuance": "Matching, fitting, aligning, or agreeing in size or taste.",
+          "example": "服のサイズが合う (the clothes fit) · 気が合う (get along well)"
+        },
+        {
+          "kanji": "遭",
+          "word": "遭う",
+          "reading": "あう",
+          "nuance": "Encountering an accident, disaster, storm, or misfortune.",
+          "example": "事故に遭う (get into an accident) · 酷い目に遭う (have a bad experience)"
+        }
+      ]
+    },
+    "作": {
+      "id": "tsukuru",
+      "reading": "つくる",
+      "title": "作る vs 造る vs 創る",
+      "members": [
+        {
+          "kanji": "作",
+          "word": "作る",
+          "reading": "つくる",
+          "nuance": "General everyday making, cooking, or small-scale crafting.",
+          "example": "料理を作る (cook food) · 書類を作る (prepare documents)"
+        },
+        {
+          "kanji": "造",
+          "word": "造る",
+          "reading": "つくる",
+          "nuance": "Constructing or manufacturing large items, buildings, ships, or sake.",
+          "example": "船を造る (build a ship) · 酒を造る (brew sake) · 庭を造る (landscape a garden)"
+        },
+        {
+          "kanji": "創",
+          "word": "創る",
+          "reading": "つくる",
+          "nuance": "Creating unprecedented, artistic, or pioneering original work.",
+          "example": "新しい文化を創る (create a new culture) · 歴史を創る (make history)"
+        }
+      ]
+    },
+    "造": {
+      "id": "tsukuru",
+      "reading": "つくる",
+      "title": "作る vs 造る vs 創る",
+      "members": [
+        {
+          "kanji": "作",
+          "word": "作る",
+          "reading": "つくる",
+          "nuance": "General everyday making, cooking, or small-scale crafting.",
+          "example": "料理を作る (cook food) · 書類を作る (prepare documents)"
+        },
+        {
+          "kanji": "造",
+          "word": "造る",
+          "reading": "つくる",
+          "nuance": "Constructing or manufacturing large items, buildings, ships, or sake.",
+          "example": "船を造る (build a ship) · 酒を造る (brew sake) · 庭を造る (landscape a garden)"
+        },
+        {
+          "kanji": "創",
+          "word": "創る",
+          "reading": "つくる",
+          "nuance": "Creating unprecedented, artistic, or pioneering original work.",
+          "example": "新しい文化を創る (create a new culture) · 歴史を創る (make history)"
+        }
+      ]
+    },
+    "創": {
+      "id": "tsukuru",
+      "reading": "つくる",
+      "title": "作る vs 造る vs 創る",
+      "members": [
+        {
+          "kanji": "作",
+          "word": "作る",
+          "reading": "つくる",
+          "nuance": "General everyday making, cooking, or small-scale crafting.",
+          "example": "料理を作る (cook food) · 書類を作る (prepare documents)"
+        },
+        {
+          "kanji": "造",
+          "word": "造る",
+          "reading": "つくる",
+          "nuance": "Constructing or manufacturing large items, buildings, ships, or sake.",
+          "example": "船を造る (build a ship) · 酒を造る (brew sake) · 庭を造る (landscape a garden)"
+        },
+        {
+          "kanji": "創",
+          "word": "創る",
+          "reading": "つくる",
+          "nuance": "Creating unprecedented, artistic, or pioneering original work.",
+          "example": "新しい文化を創る (create a new culture) · 歴史を創る (make history)"
+        }
+      ]
+    },
+    "上": {
+      "id": "noboru",
+      "reading": "のぼる",
+      "title": "上る vs 登る vs 昇る",
+      "members": [
+        {
+          "kanji": "上",
+          "word": "上る",
+          "reading": "のぼる",
+          "nuance": "Ascending a slope, stairs, or heading towards a capital city.",
+          "example": "階段を上る (go up stairs) · 坂を上る (ascend a slope)"
+        },
+        {
+          "kanji": "登",
+          "word": "登る",
+          "reading": "のぼる",
+          "nuance": "Climbing with deliberate physical effort (mountains, cliffs, ladders).",
+          "example": "山に登る (climb a mountain) · 木に登る (climb a tree)"
+        },
+        {
+          "kanji": "昇",
+          "word": "昇る",
+          "reading": "のぼる",
+          "nuance": "Rising straight up into the air/sky, sunrise, or rising in rank.",
+          "example": "日が昇る (the sun rises) · 煙が昇る (smoke rises) · 地位が昇る (rise in rank)"
+        }
+      ]
+    },
+    "登": {
+      "id": "noboru",
+      "reading": "のぼる",
+      "title": "上る vs 登る vs 昇る",
+      "members": [
+        {
+          "kanji": "上",
+          "word": "上る",
+          "reading": "のぼる",
+          "nuance": "Ascending a slope, stairs, or heading towards a capital city.",
+          "example": "階段を上る (go up stairs) · 坂を上る (ascend a slope)"
+        },
+        {
+          "kanji": "登",
+          "word": "登る",
+          "reading": "のぼる",
+          "nuance": "Climbing with deliberate physical effort (mountains, cliffs, ladders).",
+          "example": "山に登る (climb a mountain) · 木に登る (climb a tree)"
+        },
+        {
+          "kanji": "昇",
+          "word": "昇る",
+          "reading": "のぼる",
+          "nuance": "Rising straight up into the air/sky, sunrise, or rising in rank.",
+          "example": "日が昇る (the sun rises) · 煙が昇る (smoke rises) · 地位が昇る (rise in rank)"
+        }
+      ]
+    },
+    "昇": {
+      "id": "noboru",
+      "reading": "のぼる",
+      "title": "上る vs 登る vs 昇る",
+      "members": [
+        {
+          "kanji": "上",
+          "word": "上る",
+          "reading": "のぼる",
+          "nuance": "Ascending a slope, stairs, or heading towards a capital city.",
+          "example": "階段を上る (go up stairs) · 坂を上る (ascend a slope)"
+        },
+        {
+          "kanji": "登",
+          "word": "登る",
+          "reading": "のぼる",
+          "nuance": "Climbing with deliberate physical effort (mountains, cliffs, ladders).",
+          "example": "山に登る (climb a mountain) · 木に登る (climb a tree)"
+        },
+        {
+          "kanji": "昇",
+          "word": "昇る",
+          "reading": "のぼる",
+          "nuance": "Rising straight up into the air/sky, sunrise, or rising in rank.",
+          "example": "日が昇る (the sun rises) · 煙が昇る (smoke rises) · 地位が昇る (rise in rank)"
+        }
+      ]
+    },
+    "取": {
+      "id": "toru",
+      "reading": "とる",
+      "title": "取る vs 撮る vs 採る vs 捕る",
+      "members": [
+        {
+          "kanji": "取",
+          "word": "取る",
+          "reading": "とる",
+          "nuance": "Taking in hand, holding, picking up, or obtaining generally.",
+          "example": "手に取る (take in hand) · 資格を取る (obtain a qualification)"
+        },
+        {
+          "kanji": "撮",
+          "word": "撮る",
+          "reading": "とる",
+          "nuance": "Photographing, capturing, or filming pictures and movies.",
+          "example": "写真を撮る (take a photo) · ビデオを撮る (record a video)"
+        },
+        {
+          "kanji": "採",
+          "word": "採る",
+          "reading": "とる",
+          "nuance": "Selecting, hiring, adopting a proposal, or picking plants/blood.",
+          "example": "新入社員を採る (hire a new employee) · 血液を採る (draw blood)"
+        },
+        {
+          "kanji": "捕",
+          "word": "捕る",
+          "reading": "とる",
+          "nuance": "Catching or capturing fish, insects, animals, or criminals.",
+          "example": "魚を捕る (catch fish) · 虫を捕る (catch bugs)"
+        }
+      ]
+    },
+    "撮": {
+      "id": "toru",
+      "reading": "とる",
+      "title": "取る vs 撮る vs 採る vs 捕る",
+      "members": [
+        {
+          "kanji": "取",
+          "word": "取る",
+          "reading": "とる",
+          "nuance": "Taking in hand, holding, picking up, or obtaining generally.",
+          "example": "手に取る (take in hand) · 資格を取る (obtain a qualification)"
+        },
+        {
+          "kanji": "撮",
+          "word": "撮る",
+          "reading": "とる",
+          "nuance": "Photographing, capturing, or filming pictures and movies.",
+          "example": "写真を撮る (take a photo) · ビデオを撮る (record a video)"
+        },
+        {
+          "kanji": "採",
+          "word": "採る",
+          "reading": "とる",
+          "nuance": "Selecting, hiring, adopting a proposal, or picking plants/blood.",
+          "example": "新入社員を採る (hire a new employee) · 血液を採る (draw blood)"
+        },
+        {
+          "kanji": "捕",
+          "word": "捕る",
+          "reading": "とる",
+          "nuance": "Catching or capturing fish, insects, animals, or criminals.",
+          "example": "魚を捕る (catch fish) · 虫を捕る (catch bugs)"
+        }
+      ]
+    },
+    "採": {
+      "id": "toru",
+      "reading": "とる",
+      "title": "取る vs 撮る vs 採る vs 捕る",
+      "members": [
+        {
+          "kanji": "取",
+          "word": "取る",
+          "reading": "とる",
+          "nuance": "Taking in hand, holding, picking up, or obtaining generally.",
+          "example": "手に取る (take in hand) · 資格を取る (obtain a qualification)"
+        },
+        {
+          "kanji": "撮",
+          "word": "撮る",
+          "reading": "とる",
+          "nuance": "Photographing, capturing, or filming pictures and movies.",
+          "example": "写真を撮る (take a photo) · ビデオを撮る (record a video)"
+        },
+        {
+          "kanji": "採",
+          "word": "採る",
+          "reading": "とる",
+          "nuance": "Selecting, hiring, adopting a proposal, or picking plants/blood.",
+          "example": "新入社員を採る (hire a new employee) · 血液を採る (draw blood)"
+        },
+        {
+          "kanji": "捕",
+          "word": "捕る",
+          "reading": "とる",
+          "nuance": "Catching or capturing fish, insects, animals, or criminals.",
+          "example": "魚を捕る (catch fish) · 虫を捕る (catch bugs)"
+        }
+      ]
+    },
+    "捕": {
+      "id": "toru",
+      "reading": "とる",
+      "title": "取る vs 撮る vs 採る vs 捕る",
+      "members": [
+        {
+          "kanji": "取",
+          "word": "取る",
+          "reading": "とる",
+          "nuance": "Taking in hand, holding, picking up, or obtaining generally.",
+          "example": "手に取る (take in hand) · 資格を取る (obtain a qualification)"
+        },
+        {
+          "kanji": "撮",
+          "word": "撮る",
+          "reading": "とる",
+          "nuance": "Photographing, capturing, or filming pictures and movies.",
+          "example": "写真を撮る (take a photo) · ビデオを撮る (record a video)"
+        },
+        {
+          "kanji": "採",
+          "word": "採る",
+          "reading": "とる",
+          "nuance": "Selecting, hiring, adopting a proposal, or picking plants/blood.",
+          "example": "新入社員を採る (hire a new employee) · 血液を採る (draw blood)"
+        },
+        {
+          "kanji": "捕",
+          "word": "捕る",
+          "reading": "とる",
+          "nuance": "Catching or capturing fish, insects, animals, or criminals.",
+          "example": "魚を捕る (catch fish) · 虫を捕る (catch bugs)"
+        }
+      ]
+    },
+    "計": {
+      "id": "hakaru",
+      "reading": "はかる",
+      "title": "計る vs 測る vs 量る vs 図る",
+      "members": [
+        {
+          "kanji": "計",
+          "word": "計る",
+          "reading": "はかる",
+          "nuance": "Measuring or counting time, hours, minutes, or calculations.",
+          "example": "時間を計る (measure time) · タイムを計る (time a race)"
+        },
+        {
+          "kanji": "測",
+          "word": "測る",
+          "reading": "はかる",
+          "nuance": "Measuring spatial dimensions: length, distance, height, or depth.",
+          "example": "長さを測る (measure length) · 距離を測る (measure distance)"
+        },
+        {
+          "kanji": "量",
+          "word": "量る",
+          "reading": "はかる",
+          "nuance": "Measuring weight, mass, capacity, or volume.",
+          "example": "体重を量る (weigh oneself) · 荷物の重さを量る (weigh luggage)"
+        },
+        {
+          "kanji": "図",
+          "word": "図る",
+          "reading": "はかる",
+          "nuance": "Planning, scheming, aiming for an objective, or attempting a solution.",
+          "example": "便宜を図る (accommodate needs) · 解決を図る (attempt resolution)"
+        }
+      ]
+    },
+    "測": {
+      "id": "hakaru",
+      "reading": "はかる",
+      "title": "計る vs 測る vs 量る vs 図る",
+      "members": [
+        {
+          "kanji": "計",
+          "word": "計る",
+          "reading": "はかる",
+          "nuance": "Measuring or counting time, hours, minutes, or calculations.",
+          "example": "時間を計る (measure time) · タイムを計る (time a race)"
+        },
+        {
+          "kanji": "測",
+          "word": "測る",
+          "reading": "はかる",
+          "nuance": "Measuring spatial dimensions: length, distance, height, or depth.",
+          "example": "長さを測る (measure length) · 距離を測る (measure distance)"
+        },
+        {
+          "kanji": "量",
+          "word": "量る",
+          "reading": "はかる",
+          "nuance": "Measuring weight, mass, capacity, or volume.",
+          "example": "体重を量る (weigh oneself) · 荷物の重さを量る (weigh luggage)"
+        },
+        {
+          "kanji": "図",
+          "word": "図る",
+          "reading": "はかる",
+          "nuance": "Planning, scheming, aiming for an objective, or attempting a solution.",
+          "example": "便宜を図る (accommodate needs) · 解決を図る (attempt resolution)"
+        }
+      ]
+    },
+    "量": {
+      "id": "hakaru",
+      "reading": "はかる",
+      "title": "計る vs 測る vs 量る vs 図る",
+      "members": [
+        {
+          "kanji": "計",
+          "word": "計る",
+          "reading": "はかる",
+          "nuance": "Measuring or counting time, hours, minutes, or calculations.",
+          "example": "時間を計る (measure time) · タイムを計る (time a race)"
+        },
+        {
+          "kanji": "測",
+          "word": "測る",
+          "reading": "はかる",
+          "nuance": "Measuring spatial dimensions: length, distance, height, or depth.",
+          "example": "長さを測る (measure length) · 距離を測る (measure distance)"
+        },
+        {
+          "kanji": "量",
+          "word": "量る",
+          "reading": "はかる",
+          "nuance": "Measuring weight, mass, capacity, or volume.",
+          "example": "体重を量る (weigh oneself) · 荷物の重さを量る (weigh luggage)"
+        },
+        {
+          "kanji": "図",
+          "word": "図る",
+          "reading": "はかる",
+          "nuance": "Planning, scheming, aiming for an objective, or attempting a solution.",
+          "example": "便宜を図る (accommodate needs) · 解決を図る (attempt resolution)"
+        }
+      ]
+    },
+    "図": {
+      "id": "hakaru",
+      "reading": "はかる",
+      "title": "計る vs 測る vs 量る vs 図る",
+      "members": [
+        {
+          "kanji": "計",
+          "word": "計る",
+          "reading": "はかる",
+          "nuance": "Measuring or counting time, hours, minutes, or calculations.",
+          "example": "時間を計る (measure time) · タイムを計る (time a race)"
+        },
+        {
+          "kanji": "測",
+          "word": "測る",
+          "reading": "はかる",
+          "nuance": "Measuring spatial dimensions: length, distance, height, or depth.",
+          "example": "長さを測る (measure length) · 距離を測る (measure distance)"
+        },
+        {
+          "kanji": "量",
+          "word": "量る",
+          "reading": "はかる",
+          "nuance": "Measuring weight, mass, capacity, or volume.",
+          "example": "体重を量る (weigh oneself) · 荷物の重さを量る (weigh luggage)"
+        },
+        {
+          "kanji": "図",
+          "word": "図る",
+          "reading": "はかる",
+          "nuance": "Planning, scheming, aiming for an objective, or attempting a solution.",
+          "example": "便宜を図る (accommodate needs) · 解決を図る (attempt resolution)"
+        }
+      ]
+    },
+    "変": {
+      "id": "kawaru",
+      "reading": "かわる",
+      "title": "変わる vs 代わる vs 換わる",
+      "members": [
+        {
+          "kanji": "変",
+          "word": "変わる",
+          "reading": "かわる",
+          "nuance": "Undergoing internal transformation, alteration, or becoming different.",
+          "example": "天気が変わる (weather changes) · 時代が変わる (times change)"
+        },
+        {
+          "kanji": "代",
+          "word": "代わる",
+          "reading": "かわる",
+          "nuance": "Taking someone's place, substituting, or taking turns.",
+          "example": "選手が代わる (substitute player) · 運転を代わる (take over driving)"
+        },
+        {
+          "kanji": "換",
+          "word": "換わる",
+          "reading": "かわる",
+          "nuance": "Being replaced or exchanged for an equivalent item or currency.",
+          "example": "場所が換わる (location is swapped) · 席が換わる (seats are exchanged)"
+        }
+      ]
+    },
+    "代": {
+      "id": "kawaru",
+      "reading": "かわる",
+      "title": "変わる vs 代わる vs 換わる",
+      "members": [
+        {
+          "kanji": "変",
+          "word": "変わる",
+          "reading": "かわる",
+          "nuance": "Undergoing internal transformation, alteration, or becoming different.",
+          "example": "天気が変わる (weather changes) · 時代が変わる (times change)"
+        },
+        {
+          "kanji": "代",
+          "word": "代わる",
+          "reading": "かわる",
+          "nuance": "Taking someone's place, substituting, or taking turns.",
+          "example": "選手が代わる (substitute player) · 運転を代わる (take over driving)"
+        },
+        {
+          "kanji": "換",
+          "word": "換わる",
+          "reading": "かわる",
+          "nuance": "Being replaced or exchanged for an equivalent item or currency.",
+          "example": "場所が換わる (location is swapped) · 席が換わる (seats are exchanged)"
+        }
+      ]
+    },
+    "換": {
+      "id": "kawaru",
+      "reading": "かわる",
+      "title": "変わる vs 代わる vs 換わる",
+      "members": [
+        {
+          "kanji": "変",
+          "word": "変わる",
+          "reading": "かわる",
+          "nuance": "Undergoing internal transformation, alteration, or becoming different.",
+          "example": "天気が変わる (weather changes) · 時代が変わる (times change)"
+        },
+        {
+          "kanji": "代",
+          "word": "代わる",
+          "reading": "かわる",
+          "nuance": "Taking someone's place, substituting, or taking turns.",
+          "example": "選手が代わる (substitute player) · 運転を代わる (take over driving)"
+        },
+        {
+          "kanji": "換",
+          "word": "換わる",
+          "reading": "かわる",
+          "nuance": "Being replaced or exchanged for an equivalent item or currency.",
+          "example": "場所が換わる (location is swapped) · 席が換わる (seats are exchanged)"
+        }
+      ]
+    },
+    "収": {
+      "id": "osameru",
+      "reading": "おさめる",
+      "title": "収める vs 納める vs 治める",
+      "members": [
+        {
+          "kanji": "収",
+          "word": "収める",
+          "reading": "おさめる",
+          "nuance": "Putting inside, storing, obtaining results, or achieving success.",
+          "example": "成功を収める (achieve success) · 財布に収める (store in a wallet)"
+        },
+        {
+          "kanji": "納",
+          "word": "納める",
+          "reading": "おさめる",
+          "nuance": "Paying fees/taxes, delivering ordered goods, or dedicating.",
+          "example": "税金を納める (pay taxes) · 会費を納める (pay membership dues)"
+        },
+        {
+          "kanji": "治",
+          "word": "治める",
+          "reading": "おさめる",
+          "nuance": "Governing a nation, managing affairs, or quelling disturbance.",
+          "example": "国を治める (govern a nation) · 混乱を治める (calm a disturbance)"
+        }
+      ]
+    },
+    "納": {
+      "id": "osameru",
+      "reading": "おさめる",
+      "title": "収める vs 納める vs 治める",
+      "members": [
+        {
+          "kanji": "収",
+          "word": "収める",
+          "reading": "おさめる",
+          "nuance": "Putting inside, storing, obtaining results, or achieving success.",
+          "example": "成功を収める (achieve success) · 財布に収める (store in a wallet)"
+        },
+        {
+          "kanji": "納",
+          "word": "納める",
+          "reading": "おさめる",
+          "nuance": "Paying fees/taxes, delivering ordered goods, or dedicating.",
+          "example": "税金を納める (pay taxes) · 会費を納める (pay membership dues)"
+        },
+        {
+          "kanji": "治",
+          "word": "治める",
+          "reading": "おさめる",
+          "nuance": "Governing a nation, managing affairs, or quelling disturbance.",
+          "example": "国を治める (govern a nation) · 混乱を治める (calm a disturbance)"
+        }
+      ]
+    }
+  }
+}

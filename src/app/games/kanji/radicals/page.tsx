@@ -7,6 +7,7 @@ import { useRadicalExplorer } from "@/hooks/useRadicalExplorer";
 import { addKanjiToSrs } from "@/lib/srs/service";
 import { kanjiLevels } from "@/data/kanji";
 import { StrokePlayer } from "@/components/kanji/StrokePlayer";
+import { getHomophoneGroupForKanji } from "@/engine/homophones";
 
 export default function RadicalPracticePage() {
   const {
@@ -282,6 +283,51 @@ export default function RadicalPracticePage() {
                         </p>
                       </div>
                     </div>
+
+                    {/* Homophone Nuance Card */}
+                    {(() => {
+                      const homophoneGroup = getHomophoneGroupForKanji(kanjiDetails.c);
+                      if (!homophoneGroup) return null;
+                      return (
+                        <div className="mt-5 rounded-xl border border-[var(--primary)]/30 bg-[var(--paper-tint)]/70 p-4">
+                          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--primary)]/20 pb-2">
+                            <span className="text-[11px] font-bold tracking-wider text-[var(--primary)] uppercase">
+                              Homophone Nuance · {homophoneGroup.reading}
+                            </span>
+                            <span className="text-xs font-semibold text-[var(--muted)]">
+                              {homophoneGroup.title}
+                            </span>
+                          </div>
+                          <div className="mt-3 space-y-2">
+                            {homophoneGroup.members.map((member) => {
+                              const isCurrent = member.kanji === kanjiDetails.c;
+                              return (
+                                <div
+                                  key={member.kanji}
+                                  className={`rounded-lg p-2.5 text-xs transition ${
+                                    isCurrent
+                                      ? "border border-[var(--primary)]/40 bg-[var(--surface)] shadow-sm"
+                                      : "bg-transparent opacity-85"
+                                  }`}
+                                >
+                                  <div className="flex items-baseline gap-2">
+                                    <span className="font-japanese text-sm font-bold text-[var(--ink)]">
+                                      {member.word} ({member.kanji})
+                                    </span>
+                                    <span className="text-[11px] text-[var(--muted)]">
+                                      {member.nuance}
+                                    </span>
+                                  </div>
+                                  <p className="mt-1 font-japanese text-[11px] text-[var(--muted)]">
+                                    {member.example}
+                                  </p>
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      );
+                    })()}
 
                     <div className="mt-5 border-t border-[var(--line)] pt-4">
                       <h3 className="text-xs font-bold uppercase tracking-[0.12em] text-[var(--muted)]">

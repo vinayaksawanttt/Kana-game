@@ -5,40 +5,705 @@
   "titleEn": "Waking Up Early",
   "level": "N5",
   "category": "Everyday Life",
-  "tags": ["morning", "routine", "daily"],
+  "tags": [
+    "morning",
+    "routine",
+    "daily"
+  ],
   "paragraphs": [
     {
       "ja": "毎朝、田中さんは六時に起きます。窓を開けて、外を見ます。空は青くて、天気がとてもいいです。",
-      "en": "Every morning, Mr. Tanaka wakes up at six o'clock. He opens the window and looks outside. The sky is blue, and the weather is very nice."
+      "en": "Every morning, Mr. Tanaka wakes up at six o'clock. He opens the window and looks outside. The sky is blue, and the weather is very nice.",
+      "sentences": [
+        {
+          "ja": "毎朝、田中さんは六時に起きます。",
+          "literalEn": "every morning Tanaka [Mr/Ms] [topic] six time to wake [polite]",
+          "naturalEn": "Every morning, Mr. Tanaka wakes up at 6:00.",
+          "tokens": [
+            {
+              "surface": "毎朝",
+              "reading": "まいあさ",
+              "meaning": "every morning",
+              "baseForm": "毎朝",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "六",
+              "reading": "ろく",
+              "meaning": "six",
+              "baseForm": "六",
+              "level": "N5"
+            },
+            {
+              "surface": "時に",
+              "reading": "ときに",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "起",
+              "reading": "おこ",
+              "meaning": "to wake",
+              "baseForm": "起す",
+              "level": "N4"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "窓を開けて、外を見ます。",
+          "literalEn": "window [obj] to open [and] outside [obj] to see [polite]",
+          "naturalEn": "He opens the window and looks outside.",
+          "tokens": [
+            {
+              "surface": "窓",
+              "reading": "まど",
+              "meaning": "window",
+              "baseForm": "窓",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "開",
+              "reading": "あ",
+              "meaning": "to open; to become open",
+              "baseForm": "開く",
+              "level": "N5"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "外",
+              "reading": "そと",
+              "meaning": "outside",
+              "baseForm": "外",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "空は青くて、天気がとてもいいです。",
+          "literalEn": "sky [topic] blue [and] weather [subj] very good [is]",
+          "naturalEn": "The sky is blue, and the weather is very nice.",
+          "tokens": [
+            {
+              "surface": "空",
+              "reading": "そら",
+              "meaning": "sky",
+              "baseForm": "空",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "青",
+              "reading": "あお",
+              "meaning": "blue",
+              "baseForm": "青",
+              "level": "N5"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "天気",
+              "reading": "てんき",
+              "meaning": "weather",
+              "baseForm": "天気",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "いい",
+              "meaning": "good",
+              "baseForm": "いい",
+              "level": "N5"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "田中さんは顔を洗って、白いシャツを着ます。それから、台所でお茶を飲んで、パンを食べます。朝ごはんはいつもおいしいです。",
-      "en": "Mr. Tanaka washes his face and puts on a white shirt. After that, he drinks tea and eats bread in the kitchen. Breakfast is always delicious."
+      "en": "Mr. Tanaka washes his face and puts on a white shirt. After that, he drinks tea and eats bread in the kitchen. Breakfast is always delicious.",
+      "sentences": [
+        {
+          "ja": "田中さんは顔を洗って、白いシャツを着ます。",
+          "literalEn": "Tanaka [Mr/Ms] [topic] face [obj] to wash って white shirt [obj] counter for suits of clothing [polite]",
+          "naturalEn": "Mr. Tanaka washes his face and puts on a white shirt.",
+          "tokens": [
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "顔",
+              "reading": "かお",
+              "meaning": "face, expression",
+              "baseForm": "顔",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "洗",
+              "reading": "あら",
+              "meaning": "to wash",
+              "baseForm": "洗う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "白い",
+              "reading": "しろい",
+              "meaning": "white",
+              "baseForm": "白い",
+              "level": "N5"
+            },
+            {
+              "surface": "シャツ",
+              "meaning": "shirt",
+              "baseForm": "シャツ",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "着",
+              "reading": "ちゃく",
+              "meaning": "counter for suits of clothing; arriving at ..",
+              "baseForm": "着",
+              "level": "N1"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "それから、台所でお茶を飲んで、パンを食べます。",
+          "literalEn": "after that kitchen [in/by] tea [obj] to drink んで bread [obj]  to eat [polite]",
+          "naturalEn": "Then, he drinks tea and eats bread in the kitchen.",
+          "tokens": [
+            {
+              "surface": "それから",
+              "meaning": "after that",
+              "baseForm": "それから",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "台所",
+              "reading": "だいどころ",
+              "meaning": "kitchen",
+              "baseForm": "台所",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "お茶",
+              "reading": "おちゃ",
+              "meaning": "tea (green tea)",
+              "baseForm": "お茶",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "飲",
+              "reading": "の",
+              "meaning": "to drink",
+              "baseForm": "飲む",
+              "level": "N5"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "パン",
+              "meaning": "bread",
+              "baseForm": "パン",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "食",
+              "reading": "く",
+              "meaning": "(male) (vulgar) to eat",
+              "baseForm": "食う",
+              "level": "N3"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "朝ごはんはいつもおいしいです。",
+          "literalEn": "morning ごはん [topic] always delicious [is]",
+          "naturalEn": "Breakfast is always delicious.",
+          "tokens": [
+            {
+              "surface": "朝",
+              "reading": "あさ",
+              "meaning": "morning",
+              "baseForm": "朝",
+              "level": "N5"
+            },
+            {
+              "surface": "ごはん"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "いつも",
+              "meaning": "always",
+              "baseForm": "いつも",
+              "level": "N5"
+            },
+            {
+              "surface": "おいしい",
+              "meaning": "delicious",
+              "baseForm": "おいしい",
+              "level": "N5"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "七時に公園へ散歩に行きます。公園には花がたくさんあります。田中さんは静かな道をゆっくり歩きます。",
-      "en": "At seven o'clock, he goes for a walk to the park. There are many flowers in the park. Mr. Tanaka walks slowly along the quiet path."
+      "en": "At seven o'clock, he goes for a walk to the park. There are many flowers in the park. Mr. Tanaka walks slowly along the quiet path.",
+      "sentences": [
+        {
+          "ja": "七時に公園へ散歩に行きます。",
+          "literalEn": "seven time park [toward] to stroll [at/to] going [polite]",
+          "naturalEn": "I go for a walk in the park at 7:00.",
+          "tokens": [
+            {
+              "surface": "七",
+              "reading": "しち",
+              "meaning": "seven",
+              "baseForm": "七",
+              "level": "N5"
+            },
+            {
+              "surface": "時に",
+              "reading": "ときに",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "公園",
+              "reading": "こうえん",
+              "meaning": "park",
+              "baseForm": "公園",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "散歩",
+              "reading": "さんぽ",
+              "meaning": "to stroll",
+              "baseForm": "散歩",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "公園には花がたくさんあります。",
+          "literalEn": "park [at/to] [topic] flower [subj] many あり [polite]",
+          "naturalEn": "There are lots of flowers in the park.",
+          "tokens": [
+            {
+              "surface": "公園",
+              "reading": "こうえん",
+              "meaning": "park",
+              "baseForm": "公園",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "花",
+              "reading": "はな",
+              "meaning": "flower",
+              "baseForm": "花",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "たくさん",
+              "meaning": "many",
+              "baseForm": "たくさん",
+              "level": "N5"
+            },
+            {
+              "surface": "あり"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "田中さんは静かな道をゆっくり歩きます。",
+          "literalEn": "Tanaka [Mr/Ms] [topic] quiet street [obj] slowly pawn [polite]",
+          "naturalEn": "Mr. Tanaka walks slowly along the quiet path.",
+          "tokens": [
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "静か",
+              "reading": "しずか",
+              "meaning": "quiet",
+              "baseForm": "静か",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "道",
+              "reading": "みち",
+              "meaning": "street",
+              "baseForm": "道",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "ゆっくり",
+              "meaning": "slowly; at ease",
+              "baseForm": "ゆっくり",
+              "level": "N3"
+            },
+            {
+              "surface": "歩き",
+              "reading": "ふき",
+              "meaning": "pawn (in chess or shogi)",
+              "baseForm": "歩",
+              "level": "N1"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "朝の時間は気持ちがいいです。八時に元気に会社へ行きます。",
-      "en": "The morning time feels good. At eight o'clock, he energetically heads to work."
+      "en": "The morning time feels good. At eight o'clock, he energetically heads to work.",
+      "sentences": [
+        {
+          "ja": "朝の時間は気持ちがいいです。",
+          "literalEn": "morning ['s / of] time [topic] feeling [subj] good [is]",
+          "naturalEn": "Mornings are wonderful.",
+          "tokens": [
+            {
+              "surface": "朝",
+              "reading": "あさ",
+              "meaning": "morning",
+              "baseForm": "朝",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "時間",
+              "reading": "じかん",
+              "meaning": "time",
+              "baseForm": "時間",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "気持ち",
+              "reading": "きもち",
+              "meaning": "feeling; mood",
+              "baseForm": "気持ち",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いい",
+              "meaning": "good",
+              "baseForm": "いい",
+              "level": "N5"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "八時に元気に会社へ行きます。",
+          "literalEn": "eight time health [at/to] company [toward] going [polite]",
+          "naturalEn": "I head to work full of energy at 8:00 a.m.",
+          "tokens": [
+            {
+              "surface": "八",
+              "reading": "はち",
+              "meaning": "eight",
+              "baseForm": "八",
+              "level": "N5"
+            },
+            {
+              "surface": "時に",
+              "reading": "ときに",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "元気",
+              "reading": "げんき",
+              "meaning": "health; vitality",
+              "baseForm": "元気",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "会社",
+              "reading": "かいしゃ",
+              "meaning": "company",
+              "baseForm": "会社",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
     {
       "question": "田中さんは何時に起きますか？",
-      "options": ["五時", "六時", "七時", "八時"],
-      "answerIndex": 1
+      "options": [
+        "五時",
+        "六時",
+        "七時",
+        "八時"
+      ],
+      "answerIndex": 1,
+      "explanation": "「六時」 is correct: 「毎朝、田中さんは六時に起きます。」 (Every morning, Mr. Tanaka wakes up at 6:00.)"
     },
     {
       "question": "田中さんは朝ごはんに何を食べましたか？",
-      "options": ["ごはん", "魚", "パン", "りんご"],
-      "answerIndex": 2
+      "options": [
+        "ごはん",
+        "魚",
+        "パン",
+        "りんご"
+      ],
+      "answerIndex": 2,
+      "explanation": "「パン」 is correct: 「それから、台所でお茶を飲んで、パンを食べます。」 (Then, he drinks tea and eats bread in the kitchen.)"
     },
     {
       "question": "田中さんは七時にどこへ行きますか？",
-      "options": ["会社", "駅", "スーパー", "公園"],
-      "answerIndex": 3
+      "options": [
+        "会社",
+        "駅",
+        "スーパー",
+        "公園"
+      ],
+      "answerIndex": 3,
+      "explanation": "「公園」 is correct: 「七時に公園へ散歩に行きます。」 (I go for a walk in the park at 7:00.)"
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/waking-up.json"
 }

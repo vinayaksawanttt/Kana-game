@@ -5,23 +5,1129 @@
   "titleEn": "A Day at the University",
   "level": "N4",
   "category": "Everyday Life",
-  "tags": ["university", "study", "friends", "daily"],
+  "tags": [
+    "university",
+    "study",
+    "friends",
+    "daily"
+  ],
   "paragraphs": [
     {
       "ja": "木曜日の朝、留学生のリーさんは大学へ行きました。天気がよくて、空がとても青かったです。一時間目の授業は日本語でしたから、リーさんは図書館で少し予習をしてから教室へ向かいました。",
-      "en": "On Thursday morning, international student Lee went to the university. The weather was good, and the sky was very blue. Because the first period class was Japanese, Lee did a little preparation at the library before heading to the classroom."
+      "en": "On Thursday morning, international student Lee went to the university. The weather was good, and the sky was very blue. Because the first period class was Japanese, Lee did a little preparation at the library before heading to the classroom.",
+      "sentences": [
+        {
+          "ja": "木曜日の朝、留学生のリーさんは大学へ行きました。",
+          "literalEn": "Thursday ['s / of] morning overseas student ['s / of] リー [Mr/Ms] [topic] university [toward] going した",
+          "naturalEn": "On Thursday morning, Lee, an international student, went to the university.",
+          "tokens": [
+            {
+              "surface": "木曜日",
+              "reading": "もくようび",
+              "meaning": "Thursday",
+              "baseForm": "木曜日",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "朝",
+              "reading": "あさ",
+              "meaning": "morning",
+              "baseForm": "朝",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "留学生",
+              "reading": "りゅうがくせい",
+              "meaning": "overseas student",
+              "baseForm": "留学生",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "リー"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "大学",
+              "reading": "だいがく",
+              "meaning": "university",
+              "baseForm": "大学",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "天気がよくて、空がとても青かったです。",
+          "literalEn": "weather [subj] often [and] sky [subj] very blue [?] [past] [is]",
+          "naturalEn": "The weather was nice, and the sky was very blue.",
+          "tokens": [
+            {
+              "surface": "天気",
+              "reading": "てんき",
+              "meaning": "weather",
+              "baseForm": "天気",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "よく",
+              "meaning": "often; well",
+              "baseForm": "よく",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "空",
+              "reading": "そら",
+              "meaning": "sky",
+              "baseForm": "空",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "青",
+              "reading": "あお",
+              "meaning": "blue",
+              "baseForm": "青",
+              "level": "N5"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "一時間目の授業は日本語でしたから、リーさんは図書館で少し予習をしてから教室へ向かいました。",
+          "literalEn": "one time eye ['s / of] lesson [topic] Japanese language [in/by] した [from] リー [Mr/Ms] [topic] library [in/by] few preparation for a lesson [obj] [and] [from] classroom [toward] facing した",
+          "naturalEn": "Since her first class was Japanese, Li did a little prep work in the library before heading to the classroom.",
+          "tokens": [
+            {
+              "surface": "一",
+              "reading": "いち",
+              "meaning": "one",
+              "baseForm": "一",
+              "level": "N5"
+            },
+            {
+              "surface": "時間",
+              "reading": "じかん",
+              "meaning": "time",
+              "baseForm": "時間",
+              "level": "N5"
+            },
+            {
+              "surface": "目",
+              "reading": "め",
+              "meaning": "eye",
+              "baseForm": "目",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "授業",
+              "reading": "じゅぎょう",
+              "meaning": "lesson; class work",
+              "baseForm": "授業",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "日本語",
+              "reading": "にほんご",
+              "meaning": "Japanese language",
+              "baseForm": "日本語",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "リー"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "図書館",
+              "reading": "としょかん",
+              "meaning": "library",
+              "baseForm": "図書館",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "少し",
+              "reading": "すこし",
+              "meaning": "few",
+              "baseForm": "少し",
+              "level": "N5"
+            },
+            {
+              "surface": "予習",
+              "reading": "よしゅう",
+              "meaning": "preparation for a lesson",
+              "baseForm": "予習",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "教室",
+              "reading": "きょうしつ",
+              "meaning": "classroom",
+              "baseForm": "教室",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "向かい",
+              "reading": "むかい",
+              "meaning": "facing; opposite; across the street",
+              "baseForm": "向かい",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "教室にはもう大勢の学生が座っていました。先生が部屋に入ってくると、みんな静かになりました。今日の授業では、日本の文化についてスピーチの練習をしました。リーさんは少し間違えましたが、先生は優しく教えてくれました。",
-      "en": "Many students were already sitting in the classroom. When the teacher entered the room, everyone became quiet. In today's class, they practiced speeches about Japanese culture. Lee made a few mistakes, but the teacher taught him kindly."
+      "en": "Many students were already sitting in the classroom. When the teacher entered the room, everyone became quiet. In today's class, they practiced speeches about Japanese culture. Lee made a few mistakes, but the teacher taught him kindly.",
+      "sentences": [
+        {
+          "ja": "教室にはもう大勢の学生が座っていました。",
+          "literalEn": "classroom [at/to] [topic] already great number of people ['s / of] student [subj] to sit って いま した",
+          "naturalEn": "There were already many students seated in the classroom.",
+          "tokens": [
+            {
+              "surface": "教室",
+              "reading": "きょうしつ",
+              "meaning": "classroom",
+              "baseForm": "教室",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "もう",
+              "meaning": "already",
+              "baseForm": "もう",
+              "level": "N5"
+            },
+            {
+              "surface": "大勢",
+              "reading": "おおぜい",
+              "meaning": "great number of people",
+              "baseForm": "大勢",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "学生",
+              "reading": "がくせい",
+              "meaning": "student",
+              "baseForm": "学生",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "座",
+              "reading": "すわ",
+              "meaning": "to sit",
+              "baseForm": "座る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "先生が部屋に入ってくると、みんな静かになりました。",
+          "literalEn": "teacher [subj] room [at/to] to enter って くる [with/and] everyone quiet [at/to] なり した",
+          "naturalEn": "When the teacher entered the room, everyone fell silent.",
+          "tokens": [
+            {
+              "surface": "先生",
+              "reading": "せんせい",
+              "meaning": "teacher; doctor",
+              "baseForm": "先生",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "部屋",
+              "reading": "へや",
+              "meaning": "room",
+              "baseForm": "部屋",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入",
+              "reading": "はい",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "くる"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "みんな",
+              "meaning": "everyone",
+              "baseForm": "みんな",
+              "level": "N5"
+            },
+            {
+              "surface": "静か",
+              "reading": "しずか",
+              "meaning": "quiet",
+              "baseForm": "静か",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "今日の授業では、日本の文化についてスピーチの練習をしました。",
+          "literalEn": "today ['s / of] lesson with that... Japan ['s / of] culture について speech ['s / of] to practice [obj] しま した",
+          "naturalEn": "In today’s class, we practiced giving speeches about Japanese culture.",
+          "tokens": [
+            {
+              "surface": "今日",
+              "reading": "きょう",
+              "meaning": "today",
+              "baseForm": "今日",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "授業",
+              "reading": "じゅぎょう",
+              "meaning": "lesson; class work",
+              "baseForm": "授業",
+              "level": "N5"
+            },
+            {
+              "surface": "では",
+              "meaning": "with that...",
+              "baseForm": "では",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "日本",
+              "reading": "にっぽん",
+              "meaning": "Japan",
+              "baseForm": "日本",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "文化",
+              "reading": "ぶんか",
+              "meaning": "culture",
+              "baseForm": "文化",
+              "level": "N4"
+            },
+            {
+              "surface": "について"
+            },
+            {
+              "surface": "スピーチ",
+              "meaning": "speech",
+              "baseForm": "スピーチ",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "練習",
+              "reading": "れんしゅう",
+              "meaning": "to practice",
+              "baseForm": "練習",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "リーさんは少し間違えましたが、先生は優しく教えてくれました。",
+          "literalEn": "リー [Mr/Ms] [topic] few a space to differ した [subj] teacher [topic] gentle しく teachings てく した",
+          "naturalEn": "Lee made a few mistakes, but the teacher kindly corrected her.",
+          "tokens": [
+            {
+              "surface": "リー"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "少し",
+              "reading": "すこし",
+              "meaning": "few",
+              "baseForm": "少し",
+              "level": "N5"
+            },
+            {
+              "surface": "間",
+              "reading": "あいだ",
+              "meaning": "a space",
+              "baseForm": "間",
+              "level": "N4"
+            },
+            {
+              "surface": "違",
+              "reading": "ちが",
+              "meaning": "to differ",
+              "baseForm": "違う",
+              "level": "N5"
+            },
+            {
+              "surface": "え"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "先生",
+              "reading": "せんせい",
+              "meaning": "teacher; doctor",
+              "baseForm": "先生",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "優",
+              "reading": "やさ",
+              "meaning": "gentle; affectionate",
+              "baseForm": "優",
+              "level": "N1"
+            },
+            {
+              "surface": "しく"
+            },
+            {
+              "surface": "教え",
+              "reading": "おしえ",
+              "meaning": "teachings; precept; lesson",
+              "baseForm": "教え",
+              "level": "N1"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "昼休みになると、リーさんは友達の山田さんと学生食堂で昼ごはんを食べました。食堂はとても混んでいて、にぎやかでした。二人はカレーライスを食べながら、週末のアルバイトの予定について話しました。",
-      "en": "When lunch break came, Lee ate lunch with his friend Yamada at the student cafeteria. The cafeteria was very crowded and lively. While eating curry and rice, the two talked about their part-time job plans for the weekend."
+      "en": "When lunch break came, Lee ate lunch with his friend Yamada at the student cafeteria. The cafeteria was very crowded and lively. While eating curry and rice, the two talked about their part-time job plans for the weekend.",
+      "sentences": [
+        {
+          "ja": "昼休みになると、リーさんは友達の山田さんと学生食堂で昼ごはんを食べました。",
+          "literalEn": "noon break [at/to] to become [with/and] リー [Mr/Ms] [topic] friend ['s / of] Yamada [Mr/Ms] [with/and] student dining hall [in/by] noon ごはん [obj]  to eat した",
+          "naturalEn": "When it was lunchtime, Lee had lunch with her friend Yamada at the student cafeteria.",
+          "tokens": [
+            {
+              "surface": "昼休み",
+              "reading": "ひるやすみ",
+              "meaning": "noon break",
+              "baseForm": "昼休み",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なる",
+              "meaning": "to become",
+              "baseForm": "なる",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "リー"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "友達",
+              "reading": "ともだち",
+              "meaning": "friend",
+              "baseForm": "友達",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "山田",
+              "reading": "やまだ",
+              "meaning": "Yamada (surname)",
+              "baseForm": "山田",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "学生",
+              "reading": "がくせい",
+              "meaning": "student",
+              "baseForm": "学生",
+              "level": "N5"
+            },
+            {
+              "surface": "食堂",
+              "reading": "しょくどう",
+              "meaning": "dining hall",
+              "baseForm": "食堂",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "昼",
+              "reading": "ひる",
+              "meaning": "noon; daytime",
+              "baseForm": "昼",
+              "level": "N5"
+            },
+            {
+              "surface": "ごはん"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "食",
+              "reading": "く",
+              "meaning": "(male) (vulgar) to eat",
+              "baseForm": "食う",
+              "level": "N3"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "食堂はとても混んでいて、にぎやかでした。",
+          "literalEn": "dining hall [topic] very to be crowded んで [and] にぎやか [in/by] した",
+          "naturalEn": "The cafeteria was very crowded and lively.",
+          "tokens": [
+            {
+              "surface": "食堂",
+              "reading": "しょくどう",
+              "meaning": "dining hall",
+              "baseForm": "食堂",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "混",
+              "reading": "こ",
+              "meaning": "to be crowded",
+              "baseForm": "混む",
+              "level": "N1"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "にぎやか"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "二人はカレーライスを食べながら、週末のアルバイトの予定について話しました。",
+          "literalEn": "two people [topic] カレーライス [obj]  to eat ながら weekend ['s / of] part-time job ['s / of] arrangement について talk しま した",
+          "naturalEn": "While eating their curry rice, the two talked about their part-time work plans for the weekend.",
+          "tokens": [
+            {
+              "surface": "二人",
+              "reading": "ふたり",
+              "meaning": "two people; pair",
+              "baseForm": "二人",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "カレーライス"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "食",
+              "reading": "く",
+              "meaning": "(male) (vulgar) to eat",
+              "baseForm": "食う",
+              "level": "N3"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "週末",
+              "reading": "しゅうまつ",
+              "meaning": "weekend",
+              "baseForm": "週末",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "アルバイト",
+              "meaning": "part-time job",
+              "baseForm": "アルバイト",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "予定",
+              "reading": "よてい",
+              "meaning": "arrangement",
+              "baseForm": "予定",
+              "level": "N4"
+            },
+            {
+              "surface": "について"
+            },
+            {
+              "surface": "話",
+              "reading": "はなし",
+              "meaning": "talk; story",
+              "baseForm": "話",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     },
     {
       "ja": "午後の授業が終わった後、リーさんはもう一度図書館へ行って、明日の宿題をしました。大学の生活は毎日忙しいですが、色々なことが勉強できるので、とても楽しいです。",
-      "en": "After the afternoon classes ended, Lee went to the library once more and did tomorrow's homework. University life is busy every day, but because he can study various things, it is very fun."
+      "en": "After the afternoon classes ended, Lee went to the library once more and did tomorrow's homework. University life is busy every day, but because he can study various things, it is very fun.",
+      "sentences": [
+        {
+          "ja": "午後の授業が終わった後、リーさんはもう一度図書館へ行って、明日の宿題をしました。",
+          "literalEn": "afternoon ['s / of] lesson [subj] to finish わっ [past] afterwards リー [Mr/Ms] [topic] again library [toward] line って tomorrow ['s / of] homework [obj] しま した",
+          "naturalEn": "After her afternoon classes ended, Lee went back to the library to do her homework for tomorrow.",
+          "tokens": [
+            {
+              "surface": "午後",
+              "reading": "ごご",
+              "meaning": "afternoon",
+              "baseForm": "午後",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "授業",
+              "reading": "じゅぎょう",
+              "meaning": "lesson; class work",
+              "baseForm": "授業",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "終",
+              "reading": "おわ",
+              "meaning": "to finish",
+              "baseForm": "終る",
+              "level": "N5"
+            },
+            {
+              "surface": "わっ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "後",
+              "reading": "あと",
+              "meaning": "afterwards",
+              "baseForm": "後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "リー"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "もう一度",
+              "reading": "もういちど",
+              "meaning": "again",
+              "baseForm": "もう一度",
+              "level": "N5"
+            },
+            {
+              "surface": "図書館",
+              "reading": "としょかん",
+              "meaning": "library",
+              "baseForm": "図書館",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行",
+              "reading": "ぎょう",
+              "meaning": "line; row; verse",
+              "baseForm": "行",
+              "level": "N1"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "明日",
+              "reading": "あした",
+              "meaning": "tomorrow",
+              "baseForm": "明日",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "宿題",
+              "reading": "しゅくだい",
+              "meaning": "homework",
+              "baseForm": "宿題",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "大学の生活は毎日忙しいですが、色々なことが勉強できるので、とても楽しいです。",
+          "literalEn": "university ['s / of] to live [topic] every day busy ですが colour thing [subj] to study to be able to ので very enjoyable [is]",
+          "naturalEn": "College life is busy every day, but it’s a lot of fun because I get to learn so many different things.",
+          "tokens": [
+            {
+              "surface": "大学",
+              "reading": "だいがく",
+              "meaning": "university",
+              "baseForm": "大学",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "生活",
+              "reading": "せいかつ",
+              "meaning": "to live",
+              "baseForm": "生活",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "毎日",
+              "reading": "まいにち",
+              "meaning": "every day",
+              "baseForm": "毎日",
+              "level": "N5"
+            },
+            {
+              "surface": "忙しい",
+              "reading": "いそがしい",
+              "meaning": "busy; irritated",
+              "baseForm": "忙しい",
+              "level": "N5"
+            },
+            {
+              "surface": "ですが"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "色々",
+              "reading": "いろ々",
+              "meaning": "colour",
+              "baseForm": "色",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "勉強",
+              "reading": "べんきょう",
+              "meaning": "to study",
+              "baseForm": "勉強",
+              "level": "N5"
+            },
+            {
+              "surface": "できる",
+              "meaning": "to be able to",
+              "baseForm": "できる",
+              "level": "N5"
+            },
+            {
+              "surface": "ので"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "とても",
+              "meaning": "very",
+              "baseForm": "とても",
+              "level": "N5"
+            },
+            {
+              "surface": "楽しい",
+              "reading": "たのしい",
+              "meaning": "enjoyable",
+              "baseForm": "楽しい",
+              "level": "N5"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "quiz": [
@@ -33,7 +1139,8 @@
         "アルバイト",
         "山田さんの家"
       ],
-      "answerIndex": 1
+      "answerIndex": 1,
+      "explanation": "「図書館」 is correct: 「一時間目の授業は日本語でしたから、リーさんは図書館で少し予習をしてから教室へ向かいました。」 (Since her first class was Japanese, Li did a little prep work in the library before heading to the classroom.)"
     },
     {
       "question": "日本語の授業で何をしましたか。",
@@ -43,7 +1150,8 @@
         "日本の文化についてスピーチの練習をしました",
         "友達とカレーを作りました"
       ],
-      "answerIndex": 2
+      "answerIndex": 2,
+      "explanation": "「日本の文化についてスピーチの練習をしました」 is correct: 「今日の授業では、日本の文化についてスピーチの練習をしました。」 (In today’s class, we practiced giving speeches about Japanese culture.)"
     },
     {
       "question": "午後の授業が終わった後、リーさんは何をしましたか。",
@@ -53,7 +1161,9 @@
         "友達と食堂で話しました",
         "図書館で明日の宿題をしました"
       ],
-      "answerIndex": 3
+      "answerIndex": 3,
+      "explanation": "「図書館で明日の宿題をしました」 is correct: 「午後の授業が終わった後、リーさんはもう一度図書館へ行って、明日の宿題をしました。」 (After her afternoon classes ended, Lee went back to the library to do her homework for tomorrow.)"
     }
-  ]
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/university.json"
 }

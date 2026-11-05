@@ -1,0 +1,918 @@
+{
+  "id": "n4-first-date",
+  "title": "初めてのデート",
+  "titleRomaji": "Hajimete no dēto",
+  "titleEn": "First Date",
+  "level": "N4",
+  "category": "Everyday Life",
+  "tags": [
+    "date",
+    "romance",
+    "cafe",
+    "weekend"
+  ],
+  "paragraphs": [
+    {
+      "ja": "先週の日曜日の午後、木村さんは彼女と初めてデートをしました。一時半に駅の改札口の前で待ち合わせをしました。",
+      "en": "Last Sunday afternoon, Mr. Kimura went on his first date with his girlfriend. They met up in front of the station's ticket gate at 1:30.",
+      "sentences": [
+        {
+          "ja": "先週の日曜日の午後、木村さんは彼女と初めてデートをしました。",
+          "literalEn": "last week ['s / of] Sunday ['s / of] afternoon Kimura [Mr/Ms] [topic] she [with/and] for the first time date [obj] しま した",
+          "naturalEn": "Last Sunday afternoon, Mr. Kimura went on his first date with his girlfriend.",
+          "tokens": [
+            {
+              "surface": "先週",
+              "reading": "せんしゅう",
+              "meaning": "last week",
+              "baseForm": "先週",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "日曜日",
+              "reading": "にちようび",
+              "meaning": "Sunday",
+              "baseForm": "日曜日",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "午後",
+              "reading": "ごご",
+              "meaning": "afternoon",
+              "baseForm": "午後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "木村",
+              "reading": "きむら",
+              "meaning": "Kimura (surname)",
+              "baseForm": "木村",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "彼女",
+              "reading": "かのじょ",
+              "meaning": "she; girlfriend",
+              "baseForm": "彼女",
+              "level": "N4"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "初めて",
+              "reading": "はじめて",
+              "meaning": "for the first time",
+              "baseForm": "初めて",
+              "level": "N5"
+            },
+            {
+              "surface": "デート",
+              "meaning": "date; go on a date",
+              "baseForm": "デート",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "一時半に駅の改札口の前で待ち合わせをしました。",
+          "literalEn": "one half past the hour [at/to] station ['s / of] examination of tickets mouth ['s / of] before [in/by] appointment [obj] しま した",
+          "naturalEn": "They agreed to meet in front of the station ticket gates at 1:30.",
+          "tokens": [
+            {
+              "surface": "一",
+              "reading": "いち",
+              "meaning": "one",
+              "baseForm": "一",
+              "level": "N5"
+            },
+            {
+              "surface": "時半",
+              "reading": "じはん",
+              "meaning": "half past the hour",
+              "baseForm": "時半",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "駅",
+              "reading": "えき",
+              "meaning": "station",
+              "baseForm": "駅",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "改札",
+              "reading": "かいさつ",
+              "meaning": "examination of tickets",
+              "baseForm": "改札",
+              "level": "N2"
+            },
+            {
+              "surface": "口",
+              "reading": "くち",
+              "meaning": "mouth; opening",
+              "baseForm": "口",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "前",
+              "reading": "まえ",
+              "meaning": "before",
+              "baseForm": "前",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "待ち合わせ",
+              "reading": "まちあわせ",
+              "meaning": "appointment",
+              "baseForm": "待ち合わせ",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "彼女がきれいなワンピースを着て現れたので、木村さんは少し緊張してしまいました。二人は歩いて近くの有名なカフェへ行きました。",
+      "en": "Because she appeared wearing a beautiful dress, Mr. Kimura got a little nervous. The two walked to a famous nearby cafe.",
+      "sentences": [
+        {
+          "ja": "彼女がきれいなワンピースを着て現れたので、木村さんは少し緊張してしまいました。",
+          "literalEn": "she [subj] pretty one-piece dress [obj] counter for suits of clothing [and] embodiment [past] ので Kimura [Mr/Ms] [topic] few tension [and] しま いま した",
+          "naturalEn": "She showed up wearing a pretty dress, so Mr. Kimura felt a little nervous.",
+          "tokens": [
+            {
+              "surface": "彼女",
+              "reading": "かのじょ",
+              "meaning": "she; girlfriend",
+              "baseForm": "彼女",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "きれい",
+              "meaning": "pretty; clean",
+              "baseForm": "きれい",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "ワンピース",
+              "meaning": "one-piece dress",
+              "baseForm": "ワンピース",
+              "level": "N2"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "着",
+              "reading": "ちゃく",
+              "meaning": "counter for suits of clothing; arriving at ..",
+              "baseForm": "着",
+              "level": "N1"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "現れ",
+              "reading": "あらわれ",
+              "meaning": "embodiment; materialization",
+              "baseForm": "現れ",
+              "level": "N3"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "ので"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "木村",
+              "reading": "きむら",
+              "meaning": "Kimura (surname)",
+              "baseForm": "木村",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "少し",
+              "reading": "すこし",
+              "meaning": "few",
+              "baseForm": "少し",
+              "level": "N5"
+            },
+            {
+              "surface": "緊張",
+              "reading": "きんちょう",
+              "meaning": "tension; mental strain; nervousness",
+              "baseForm": "緊張",
+              "level": "N3"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "二人は歩いて近くの有名なカフェへ行きました。",
+          "literalEn": "two people [topic] pawn [and] near ['s / of] famous カフェ [toward] going した",
+          "naturalEn": "The two of them walked to a famous café nearby.",
+          "tokens": [
+            {
+              "surface": "二人",
+              "reading": "ふたり",
+              "meaning": "two people; pair",
+              "baseForm": "二人",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "歩",
+              "reading": "ふ",
+              "meaning": "pawn (in chess or shogi)",
+              "baseForm": "歩",
+              "level": "N1"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "近く",
+              "reading": "ちかく",
+              "meaning": "near",
+              "baseForm": "近く",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "有名",
+              "reading": "ゆうめい",
+              "meaning": "famous",
+              "baseForm": "有名",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "カフェ"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "行き",
+              "reading": "いき",
+              "meaning": "going",
+              "baseForm": "行き",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "店の中は静かで、甘いケーキのいい匂いがしていました。木村さんはコーヒーとチーズケーキを頼んで、彼女は紅茶を頼みました。二人は好きな音楽や将来の夢について楽しく話しました。",
+      "en": "Inside the shop, it was quiet and there was a nice smell of sweet cake. Mr. Kimura ordered coffee and cheesecake, and she ordered black tea. The two talked happily about their favorite music and future dreams.",
+      "sentences": [
+        {
+          "ja": "店の中は静かで、甘いケーキのいい匂いがしていました。",
+          "literalEn": "shop ['s / of] middle [topic] quiet [in/by] sweet cake ['s / of] good to be fragrant [subj] てい した",
+          "naturalEn": "The café was quiet, and the sweet aroma of cake filled the air.",
+          "tokens": [
+            {
+              "surface": "店",
+              "reading": "みせ",
+              "meaning": "shop",
+              "baseForm": "店",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "静か",
+              "reading": "しずか",
+              "meaning": "quiet",
+              "baseForm": "静か",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "甘い",
+              "reading": "あまい",
+              "meaning": "sweet",
+              "baseForm": "甘い",
+              "level": "N5"
+            },
+            {
+              "surface": "ケーキ",
+              "meaning": "cake",
+              "baseForm": "ケーキ",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "いい",
+              "meaning": "good",
+              "baseForm": "いい",
+              "level": "N5"
+            },
+            {
+              "surface": "匂い",
+              "reading": "におい",
+              "meaning": "to be fragrant; to smell; to stink",
+              "baseForm": "匂う",
+              "level": "N2"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "木村さんはコーヒーとチーズケーキを頼んで、彼女は紅茶を頼みました。",
+          "literalEn": "Kimura [Mr/Ms] [topic] coffee [with/and] cheese cake [obj] to ask んで she [topic] black tea [obj] request した",
+          "naturalEn": "Mr. Kimura ordered coffee and cheesecake, and she ordered tea.",
+          "tokens": [
+            {
+              "surface": "木村",
+              "reading": "きむら",
+              "meaning": "Kimura (surname)",
+              "baseForm": "木村",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "コーヒー",
+              "meaning": "coffee",
+              "baseForm": "コーヒー",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "チーズ",
+              "meaning": "cheese",
+              "baseForm": "チーズ",
+              "level": "N3"
+            },
+            {
+              "surface": "ケーキ",
+              "meaning": "cake",
+              "baseForm": "ケーキ",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "頼",
+              "reading": "たの",
+              "meaning": "to ask",
+              "baseForm": "頼む",
+              "level": "N5"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼女",
+              "reading": "かのじょ",
+              "meaning": "she; girlfriend",
+              "baseForm": "彼女",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "紅茶",
+              "reading": "こうちゃ",
+              "meaning": "black tea",
+              "baseForm": "紅茶",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "頼み",
+              "reading": "たのみ",
+              "meaning": "request; favor; reliance",
+              "baseForm": "頼み",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "二人は好きな音楽や将来の夢について楽しく話しました。",
+          "literalEn": "two people [topic] likeable music future ['s / of] dream について comfort しく talk しま した",
+          "naturalEn": "The two of them had a pleasant conversation about their favorite music and their dreams for the future.",
+          "tokens": [
+            {
+              "surface": "二人",
+              "reading": "ふたり",
+              "meaning": "two people; pair",
+              "baseForm": "二人",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "好き",
+              "reading": "すき",
+              "meaning": "likeable",
+              "baseForm": "好き",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "音楽",
+              "reading": "おんがく",
+              "meaning": "music",
+              "baseForm": "音楽",
+              "level": "N5"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "将来",
+              "reading": "しょうらい",
+              "meaning": "future; prospects",
+              "baseForm": "将来",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "夢",
+              "reading": "ゆめ",
+              "meaning": "dream",
+              "baseForm": "夢",
+              "level": "N4"
+            },
+            {
+              "surface": "について"
+            },
+            {
+              "surface": "楽",
+              "reading": "らく",
+              "meaning": "comfort; ease",
+              "baseForm": "楽",
+              "level": "N3"
+            },
+            {
+              "surface": "しく"
+            },
+            {
+              "surface": "話",
+              "reading": "はなし",
+              "meaning": "talk; story",
+              "baseForm": "話",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "その後、夕方の公園をゆっくり散歩しました。木村さんは「今日は本当に楽しかったです」と言って、彼女を駅まで送りました。素晴らしい思い出になりました。",
+      "en": "After that, they took a leisurely walk in the park in the evening. Mr. Kimura said, \"Today was truly fun,\" and walked her to the station. It became a wonderful memory.",
+      "sentences": [
+        {
+          "ja": "その後、夕方の公園をゆっくり散歩しました。",
+          "literalEn": "after that evening ['s / of] park [obj] slowly to stroll しま した",
+          "naturalEn": "After that, we took a leisurely evening stroll through the park.",
+          "tokens": [
+            {
+              "surface": "その後",
+              "reading": "そのあと",
+              "meaning": "after that; afterwards",
+              "baseForm": "その後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "夕方",
+              "reading": "ゆうがた",
+              "meaning": "evening",
+              "baseForm": "夕方",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "公園",
+              "reading": "こうえん",
+              "meaning": "park",
+              "baseForm": "公園",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "ゆっくり",
+              "meaning": "slowly; at ease",
+              "baseForm": "ゆっくり",
+              "level": "N3"
+            },
+            {
+              "surface": "散歩",
+              "reading": "さんぽ",
+              "meaning": "to stroll",
+              "baseForm": "散歩",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "木村さんは「今日は本当に楽しかったです」と言って、彼女を駅まで送りました。",
+          "literalEn": "Kimura [Mr/Ms] [topic] today [topic] really comfort しか [past] [is] [with/and] to say って she [obj] station [until] to send した",
+          "naturalEn": "Mr. Kimura said, “I really enjoyed today,” and walked her to the station.",
+          "tokens": [
+            {
+              "surface": "木村",
+              "reading": "きむら",
+              "meaning": "Kimura (surname)",
+              "baseForm": "木村",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "今日",
+              "reading": "きょう",
+              "meaning": "today",
+              "baseForm": "今日",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "本当に",
+              "reading": "ほんとうに",
+              "meaning": "really; truly",
+              "baseForm": "本当に",
+              "level": "N5"
+            },
+            {
+              "surface": "楽",
+              "reading": "らく",
+              "meaning": "comfort; ease",
+              "baseForm": "楽",
+              "level": "N3"
+            },
+            {
+              "surface": "しか"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "言",
+              "reading": "い",
+              "meaning": "to say",
+              "baseForm": "言う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼女",
+              "reading": "かのじょ",
+              "meaning": "she; girlfriend",
+              "baseForm": "彼女",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "駅",
+              "reading": "えき",
+              "meaning": "station",
+              "baseForm": "駅",
+              "level": "N5"
+            },
+            {
+              "surface": "まで"
+            },
+            {
+              "surface": "送り",
+              "reading": "おくり",
+              "meaning": "to send",
+              "baseForm": "送る",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "素晴らしい思い出になりました。",
+          "literalEn": "wonderful memories [at/to] なり した",
+          "naturalEn": "It turned out to be a wonderful memory.",
+          "tokens": [
+            {
+              "surface": "素晴らしい",
+              "reading": "すばらしい",
+              "meaning": "wonderful; splendid; magnificent",
+              "baseForm": "素晴らしい",
+              "level": "N4"
+            },
+            {
+              "surface": "思い出",
+              "reading": "おもいで",
+              "meaning": "memories; recollections; reminiscence",
+              "baseForm": "思い出",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "二人は何時にどこで待ち合わせをしましたか？",
+      "options": [
+        "一時にカフェの前",
+        "一時半に駅の改札口の前",
+        "二時に公園の入口",
+        "二時半に映画館の前"
+      ],
+      "answerIndex": 1,
+      "explanation": "「一時半に駅の改札口の前」 is correct: 「一時半に駅の改札口の前で待ち合わせをしました。」 (They agreed to meet in front of the station ticket gates at 1:30.)"
+    },
+    {
+      "question": "カフェで木村さんは何を頼みましたか？",
+      "options": [
+        "紅茶とクッキー",
+        "ジュースとパン",
+        "コーヒーとチーズケーキ",
+        "お茶とお弁当"
+      ],
+      "answerIndex": 2,
+      "explanation": "「コーヒーとチーズケーキ」 is correct: 「木村さんはコーヒーとチーズケーキを頼んで、彼女は紅茶を頼みました。」 (Mr. Kimura ordered coffee and cheesecake, and she ordered tea.)"
+    },
+    {
+      "question": "カフェを出た後、二人は何をしましたか？",
+      "options": [
+        "映画を見に行きました",
+        "公園を散歩しました",
+        "買い物に行きました",
+        "すぐに電車に乗りました"
+      ],
+      "answerIndex": 1,
+      "explanation": "「公園を散歩しました」 is the correct answer according to the story."
+    }
+  ],
+  "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/going-on-date.json"
+}

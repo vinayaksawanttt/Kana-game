@@ -220,12 +220,19 @@ function typoThreshold(candidate: string): number {
 
 export function checkVocabularyAnswer(
   answer: string,
-  meanings: string[]
+  meanings: string[],
+  synonyms?: string[],
+  modernMeaning?: string
 ): VocabularyMatchResult {
   const normalizedAnswer = normalizeExact(answer);
   if (!normalizedAnswer) return { isMatch: false, matchType: "none" };
 
-  const candidates = getGlossCandidates(meanings)
+  const candidateMeanings =
+    modernMeaning && !meanings.includes(modernMeaning)
+      ? [modernMeaning, ...meanings]
+      : meanings;
+
+  const candidates = getGlossCandidates(candidateMeanings)
     .map((candidate) => ({
       ...candidate,
       normalized: normalizeExact(candidate.phrase),
@@ -249,6 +256,37 @@ export function checkVocabularyAnswer(
   const synonym = candidates.find((candidate) => hasConceptOverlap(answer, candidate.phrase));
   if (synonym) {
     return { isMatch: true, matchType: "synonym", matchedGloss: synonym.display };
+  }
+
+  // If no match in primary meanings, check against expanded synonyms
+  if (synonyms && synonyms.length > 0) {
+    const synCandidates = getGlossCandidates(synonyms)
+      .map((candidate) => ({
+        ...candidate,
+        normalized: normalizeExact(candidate.phrase),
+      }))
+      .filter((candidate) => candidate.normalized);
+
+    const exactSyn = synCandidates.find((c) => c.normalized === normalizedAnswer);
+    if (exactSyn) {
+      return { isMatch: true, matchType: "synonym", matchedGloss: exactSyn.display };
+    }
+
+    const typoSyn = synCandidates.find((c) => {
+      const threshold = typoThreshold(c.normalized);
+      return (
+        threshold > 0 &&
+        damerauLevenshteinDistance(normalizedAnswer, c.normalized) <= threshold
+      );
+    });
+    if (typoSyn) {
+      return { isMatch: true, matchType: "typo", matchedGloss: typoSyn.display };
+    }
+
+    const overlapSyn = synCandidates.find((c) => hasConceptOverlap(answer, c.phrase));
+    if (overlapSyn) {
+      return { isMatch: true, matchType: "synonym", matchedGloss: overlapSyn.display };
+    }
   }
 
   return { isMatch: false, matchType: "none" };
