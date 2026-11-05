@@ -14,6 +14,7 @@ import {
   vocabularyLevels,
 } from "@/data/vocabulary";
 import { createVocabularySession, type VocabularySessionSize } from "@/lib/game/vocabulary";
+import { SakuraLoader } from "@/components/ui/SakuraLoader";
 
 const gradeNames: Record<number, string> = {
   8: "Secondary (8)",
@@ -171,8 +172,8 @@ export default function VocabularySetupPage() {
 
   if (!ready) {
     return (
-      <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">
-        Preparing setup...
+      <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+        <SakuraLoader label="Preparing Setup..." size="md" />
       </main>
     );
   }

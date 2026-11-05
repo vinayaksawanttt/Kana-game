@@ -12,6 +12,7 @@ import {
   type GrammarQuestionStatus,
   type GrammarSessionResult,
 } from "@/engine/grammarSession";
+import { SakuraLoader } from "@/components/ui/SakuraLoader";
 
 type Filter = "All" | "Wrong" | "Correct";
 
@@ -19,8 +20,8 @@ export default function GrammarResultPage() {
   return (
     <Suspense
       fallback={
-        <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">
-          Preparing results...
+        <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+          <SakuraLoader label="Calculating Performance..." size="md" />
         </main>
       }
     >
@@ -61,8 +62,8 @@ function GrammarResultContent() {
 
   if (!result || !stats) {
     return (
-      <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">
-        Preparing results...
+      <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+        <SakuraLoader label="Calculating Performance..." size="md" />
       </main>
     );
   }

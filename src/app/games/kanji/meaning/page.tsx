@@ -7,6 +7,7 @@ import { GameLayout } from "@/lib/game-core/layout";
 import { createKanjiMeaningSession } from "@/lib/game/kanji-meaning";
 import { saveGameSession } from "@/lib/game-core/storage";
 import { countsByLevel, countsByLevelGrade } from "@/data/kanji";
+import { SakuraLoader } from "@/components/ui/SakuraLoader";
 
 const levelOptions = [
   { value: 5, label: "N5" },
@@ -150,8 +151,8 @@ export default function KanjiMeaningSetupPage() {
 
   if (!ready) {
     return (
-      <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">
-        Preparing setup...
+      <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+        <SakuraLoader label="Preparing Setup..." size="md" />
       </main>
     );
   }

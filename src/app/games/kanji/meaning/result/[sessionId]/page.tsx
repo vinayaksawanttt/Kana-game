@@ -8,11 +8,22 @@ import { createKanjiMeaningSession, type KanjiMeaningResult, type KanjiMeaningSt
 import { formatTime } from "@/lib/game-core/time";
 import { getGameResult, getGameSession, saveGameSession } from "@/lib/game-core/storage";
 import type { StoredKanjiMeaningSession } from "@/lib/game/kanji-meaning";
+import { SakuraLoader } from "@/components/ui/SakuraLoader";
 
 type Filter = "All" | "Wrong" | "Correct";
 
 export default function KanjiMeaningResultPage() {
-  return <Suspense fallback={<main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">Preparing results...</main>}><KanjiMeaningResultContent /></Suspense>;
+  return (
+    <Suspense
+      fallback={
+        <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+          <SakuraLoader label="Calculating Performance..." size="md" />
+        </main>
+      }
+    >
+      <KanjiMeaningResultContent />
+    </Suspense>
+  );
 }
 
 function KanjiMeaningResultContent() {
@@ -52,7 +63,13 @@ function KanjiMeaningResultContent() {
   }, [result]);
 
   if (error) return <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">{error}</main>;
-  if (!result || !stats) return <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">Preparing results...</main>;
+  if (!result || !stats) {
+    return (
+      <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+        <SakuraLoader label="Calculating Performance..." size="md" />
+      </main>
+    );
+  }
   const filtered = result.questions.filter((question) => filter === "All" || question.status.toLowerCase() === filter.toLowerCase());
   const missedIds = result.questions.filter((question) => question.status !== "correct").map((question) => question.kanji);
 

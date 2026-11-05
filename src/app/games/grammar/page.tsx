@@ -8,6 +8,7 @@ import { GameLayout } from "@/lib/game-core/layout";
 import { saveGameSession } from "@/lib/game-core/storage";
 import { createGrammarSession } from "@/engine/grammarSession";
 import { grammarLevels, loadGrammarData, type GrammarLevel } from "@/data/grammar";
+import { SakuraLoader } from "@/components/ui/SakuraLoader";
 
 const mixOptions: Array<{ value: number; label: string; sub: string }> = [
   { value: 0.5, label: "50 / 50 Mix", sub: "Balanced Cloze & Scramble" },
@@ -120,8 +121,8 @@ export default function GrammarSetupPage() {
 
   if (!ready) {
     return (
-      <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">
-        Preparing setup...
+      <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+        <SakuraLoader label="Preparing Setup..." size="md" />
       </main>
     );
   }

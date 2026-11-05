@@ -16,13 +16,14 @@ import { GameLayout } from "@/lib/game-core/layout";
 import { getGameSession } from "@/lib/game-core/storage";
 import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
 import { ingestKanaSession } from "@/lib/srs/service";
+import { SakuraLoader } from "@/components/ui/SakuraLoader";
 
 export default function KanaPlayPage() {
   return (
     <Suspense
       fallback={
-        <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">
-          Preparing session...
+        <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+          <SakuraLoader label="Preparing Kana Deck..." size="md" />
         </main>
       }
     >
@@ -198,8 +199,8 @@ function KanaGame({
 
   if (!state.cards.length) {
     return (
-      <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">
-        Preparing session...
+      <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+        <SakuraLoader label="Preparing Kana Deck..." size="md" />
       </main>
     );
   }
@@ -207,8 +208,8 @@ function KanaGame({
   const character = state.cards[state.index];
   if (!character) {
     return (
-      <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">
-        Preparing result...
+      <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+        <SakuraLoader label="Preparing Result..." size="md" />
       </main>
     );
   }

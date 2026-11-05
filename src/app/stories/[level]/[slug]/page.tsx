@@ -33,13 +33,14 @@ import {
 } from "@/data/stories";
 import { StoryCover } from "@/components/story-cover";
 import { addVocabularyToSrs } from "@/lib/srs/service";
+import { SakuraLoader } from "@/components/ui/SakuraLoader";
 
 export default function StoryReadingRoomPage() {
   return (
     <Suspense
       fallback={
-        <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">
-          Loading story...
+        <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+          <SakuraLoader label="Loading Story..." size="md" />
         </main>
       }
     >

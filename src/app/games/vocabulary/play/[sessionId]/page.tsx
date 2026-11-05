@@ -19,13 +19,14 @@ import {
 } from "@/lib/game/vocabulary";
 import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
 import { ingestVocabularySession } from "@/lib/srs/service";
+import { SakuraLoader } from "@/components/ui/SakuraLoader";
 
 export default function VocabularyPlayPage() {
   return (
     <Suspense
       fallback={
-        <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">
-          Preparing session...
+        <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+          <SakuraLoader label="Preparing Vocabulary Deck..." size="md" />
         </main>
       }
     >
@@ -107,8 +108,8 @@ function VocabularyPlayContent() {
   }
   if (!game) {
     return (
-      <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">
-        Preparing session...
+      <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+        <SakuraLoader label="Preparing Vocabulary Deck..." size="md" />
       </main>
     );
   }

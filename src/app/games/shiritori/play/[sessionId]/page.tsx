@@ -21,6 +21,7 @@ import { loadShiritoriData } from "@/data/shiritori";
 import { addVocabularyToSrs } from "@/lib/srs/service";
 import { GameLayout } from "@/lib/game-core/layout";
 import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
+import { SakuraLoader } from "@/components/ui/SakuraLoader";
 
 interface StoredShiritoriSession {
   sessionId: string;
@@ -59,7 +60,13 @@ function difficultyLabel(difficulty: ShiritoriSettings["difficulty"]): string {
 
 export default function ShiritoriPlayPage() {
   return (
-    <Suspense fallback={<main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">Preparing chain...</main>}>
+    <Suspense
+      fallback={
+        <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+          <SakuraLoader label="Preparing Shiritori Chain..." size="md" />
+        </main>
+      }
+    >
       <ShiritoriPlayContent />
     </Suspense>
   );
@@ -234,7 +241,11 @@ function ShiritoriPlayContent() {
     return <main className="grid min-h-dvh place-items-center bg-[var(--bg)] px-5 text-center text-[var(--muted)]"><p>{loadError} <button type="button" className="ml-1 font-bold text-[var(--primary)] underline" onClick={() => router.replace("/games/shiritori")}>Return to setup</button>.</p></main>;
   }
   if (!game || !state) {
-    return <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">Preparing chain...</main>;
+    return (
+      <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+        <SakuraLoader label="Preparing Shiritori Chain..." size="md" />
+      </main>
+    );
   }
 
   const latest = state.chain.at(-1)?.word ?? openingWord;

@@ -8,13 +8,14 @@ import { GameLayout } from "@/lib/game-core/layout";
 import { grammarLevels, isGrammarLevel, type GrammarCatalogEntry, type GrammarPoint } from "@/data/grammar";
 import { getGrammarCatalogByLevel, getGrammarDoc } from "@/lib/content/grammar";
 import { addGrammarToSrs, getAllSrsItems } from "@/lib/srs/service";
+import { SakuraLoader } from "@/components/ui/SakuraLoader";
 
 export default function GrammarDetailPage() {
   return (
     <Suspense
       fallback={
-        <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">
-          Loading grammar guide...
+        <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+          <SakuraLoader label="Loading Grammar Guide..." size="md" />
         </main>
       }
     >
@@ -102,8 +103,8 @@ function GrammarDetailContent() {
 
   if (loading) {
     return (
-      <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">
-        Loading grammar guide...
+      <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+        <SakuraLoader label="Loading Grammar Guide..." size="md" />
       </main>
     );
   }

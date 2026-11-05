@@ -17,13 +17,14 @@ import {
 import { getGrammarDoc, type GrammarDoc } from "@/lib/content/grammar";
 import { GrammarGuideView } from "@/components/grammar-guide-view";
 import { ingestGrammarSession } from "@/lib/srs/service";
+import { SakuraLoader } from "@/components/ui/SakuraLoader";
 
 export default function GrammarPlayPage() {
   return (
     <Suspense
       fallback={
-        <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">
-          Preparing session...
+        <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+          <SakuraLoader label="Preparing Grammar Drill..." size="md" />
         </main>
       }
     >
@@ -68,8 +69,8 @@ function GrammarPlayContent() {
 
   if (!game) {
     return (
-      <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">
-        Preparing session...
+      <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+        <SakuraLoader label="Preparing Grammar Drill..." size="md" />
       </main>
     );
   }

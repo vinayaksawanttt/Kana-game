@@ -9,11 +9,22 @@ import { getGameSession, saveGameSession } from "@/lib/game-core/storage";
 import type { KanaSessionResult } from "@/lib/game/kana";
 import { createKanaSession, type CardRecord, type StoredKanaSession } from "@/lib/game/session";
 import { localStorageAdapter } from "@/lib/storage/kana";
+import { SakuraLoader } from "@/components/ui/SakuraLoader";
 
 type Filter = "All" | "Passed" | "Needs practice" | "Skipped" | "Not reached";
 
 export default function KanaResultPage() {
-  return <Suspense fallback={<main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">Preparing results...</main>}><KanaResultContent /></Suspense>;
+  return (
+    <Suspense
+      fallback={
+        <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+          <SakuraLoader label="Calculating Performance..." size="md" />
+        </main>
+      }
+    >
+      <KanaResultContent />
+    </Suspense>
+  );
 }
 
 function KanaResultContent() {
@@ -36,7 +47,13 @@ function KanaResultContent() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params.sessionId]);
 
-  if (!result) return <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">Preparing results...</main>;
+  if (!result) {
+    return (
+      <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+        <SakuraLoader label="Calculating Performance..." size="md" />
+      </main>
+    );
+  }
   const cards=[...result.cards];
   cards.sort((left,right)=>{
     const leftNeeds=["skipped","unfinished"].includes(left.status)||left.mistakes>0;

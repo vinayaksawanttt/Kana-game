@@ -15,13 +15,14 @@ import {
 import { getGameResult, getGameSession, saveGameResult } from "@/lib/game-core/storage";
 import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
 import { ingestKanjiMeaningSession } from "@/lib/srs/service";
+import { SakuraLoader } from "@/components/ui/SakuraLoader";
 
 export default function KanjiMeaningPlayPage() {
   return (
     <Suspense
       fallback={
-        <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">
-          Preparing session...
+        <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+          <SakuraLoader label="Preparing Kanji Session..." size="md" />
         </main>
       }
     >
@@ -85,8 +86,8 @@ function KanjiMeaningPlayContent() {
   }
   if (!game) {
     return (
-      <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">
-        Preparing session...
+      <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+        <SakuraLoader label="Preparing Kanji Session..." size="md" />
       </main>
     );
   }

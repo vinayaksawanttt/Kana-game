@@ -14,10 +14,17 @@ import {
   type VocabularyReviewQuestion,
   type VocabularyResult,
 } from "@/lib/game/vocabulary";
+import { SakuraLoader } from "@/components/ui/SakuraLoader";
 
 export default function VocabularyResultPage() {
   return (
-    <Suspense fallback={<main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">Preparing results...</main>}>
+    <Suspense
+      fallback={
+        <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+          <SakuraLoader label="Calculating Performance..." size="md" />
+        </main>
+      }
+    >
       <VocabularyResultContent />
     </Suspense>
   );
@@ -127,7 +134,11 @@ function VocabularyResultContent() {
     return <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">{error}</main>;
   }
   if (!result || !report) {
-    return <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">Preparing results...</main>;
+    return (
+      <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+        <SakuraLoader label="Calculating Performance..." size="md" />
+      </main>
+    );
   }
 
   const missedCount = result.questions.filter((question) => question.status !== "correct").length;

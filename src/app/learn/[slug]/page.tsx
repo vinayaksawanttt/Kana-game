@@ -6,6 +6,7 @@ import { MdxComponents } from "@/components/learn/MdxComponents";
 import { PrintButton } from "@/components/learn/PrintButton";
 import { TableOfContents } from "@/components/learn/TableOfContents";
 import { getAllLearnDocs, getLearnDocBySlug } from "@/lib/content/learn";
+import { SakuraLoader } from "@/components/ui/SakuraLoader";
 
 interface LearnSection {
   lead: string;
@@ -75,8 +76,8 @@ export default function LearnDocumentPage({
       <div className="mx-auto w-full max-w-6xl px-5 pb-12 pt-2 sm:px-8 sm:pt-3">
         <Suspense
           fallback={
-            <div className="py-16 text-center text-sm text-[var(--muted)]">
-              Loading study guide...
+            <div className="py-16 text-center">
+              <SakuraLoader label="Loading Study Guide..." size="md" />
             </div>
           }
         >
