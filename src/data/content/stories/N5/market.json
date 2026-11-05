@@ -570,7 +570,14 @@
         "バスで"
       ],
       "answerIndex": 1,
-      "explanation": "「歩いて」 is correct: 「土曜日の朝、田中さんは歩いて近くの市場へ行きました。」 (On Saturday morning, Mr. Tanaka walked to the nearby market.)"
+      "explanation": "「歩いて」 is correct: 「土曜日の朝、田中さんは歩いて近くの市場へ行きました。」 (On Saturday morning, Mr. Tanaka walked to the nearby market.)",
+      "optionsEn": [
+        "by car",
+        "walking",
+        "by bicycle",
+        "by bus"
+      ],
+      "questionEn": "How did Mr. Tanaka get to the market?"
     },
     {
       "question": "田中さんはトマトをいくつ買いましたか？",
@@ -581,7 +588,14 @@
         "四つ"
       ],
       "answerIndex": 2,
-      "explanation": "「三つ」 is correct: 「野菜の店で赤くて大きいトマトを三つ買いました。」 (I bought three big red tomatoes at the produce store.)"
+      "explanation": "「三つ」 is correct: 「野菜の店で赤くて大きいトマトを三つ買いました。」 (I bought three big red tomatoes at the produce store.)",
+      "optionsEn": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ],
+      "questionEn": "How many tomatoes did Mr. Tanaka buy?"
     },
     {
       "question": "魚屋でいくら払いましたか？",
@@ -592,7 +606,14 @@
         "千二百円"
       ],
       "answerIndex": 2,
-      "explanation": "「千円」 is correct: 「魚を二匹買って、千円を払いました。」 (I bought two fish and paid 1,000 yen.)"
+      "explanation": "「千円」 is correct: 「魚を二匹買って、千円を払いました。」 (I bought two fish and paid 1,000 yen.)",
+      "optionsEn": [
+        "500 yen",
+        "800 yen",
+        "1,000 yen",
+        "1,200 yen"
+      ],
+      "questionEn": "How much did you pay at the fish market?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/market.json"

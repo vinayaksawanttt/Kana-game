@@ -2020,37 +2020,58 @@
   ],
   "quiz": [
     {
-      "question": "山幸彦はどうして海辺で困っていましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "兄の大切な釣り針をなくしたから",
-        "魚をたくさん釣ったから",
-        "船が壊れたから",
-        "道に迷ったから"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
       ],
-      "answerIndex": 0,
-      "explanation": "「兄の大切な釣り針をなくしたから」 is correct: 「しかし、弟の山幸彦は魚の釣り方がわかりませんでした。」 (However, the younger brother, Yamakohiko, did not know how to fish.)"
+      "answerIndex": 2,
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
     },
     {
-      "question": "誰の喉（のど）に釣り針が刺さっていましたか？",
+      "question": "佐藤さんはカウンターで何をしましたか？",
       "options": [
-        "タコ",
-        "大きなワニ",
-        "海の王様",
-        "鯛（たい）"
-      ],
-      "answerIndex": 3,
-      "explanation": "「鯛（たい）」 is correct: 「王様が海の魚たちを集めて聞くと、鯛（たい）の喉（のど）に釣り針が刺さっていることがわかりました。」 (When the king gathered the fish of the sea and asked them, he discovered that a fishing hook was lodged in the sea bream’s throat.)"
-    },
-    {
-      "question": "山幸彦はどうやって兄に勝ちましたか？",
-      "options": [
-        "剣で戦いました",
-        "海の王様にもらった宝石を使いました",
-        "おじいさんに助けてもらいました",
-        "ワニが兄を食べました"
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
       ],
       "answerIndex": 1,
-      "explanation": "「海の王様にもらった宝石を使いました」 is correct: 「しかし、弟の山幸彦は魚の釣り方がわかりませんでした。」 (However, the younger brother, Yamakohiko, did not know how to fish.)"
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
+    },
+    {
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
+      "options": [
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
+      ],
+      "answerIndex": 0,
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
+      ],
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/skillful-fisher.json"

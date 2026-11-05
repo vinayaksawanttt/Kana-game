@@ -1092,7 +1092,14 @@
         "服"
       ],
       "answerIndex": 1,
-      "explanation": "「小さい女の子」 is correct: 「おじいさんが竹を切ると、中に小さい女の子がいました。」 (When the old man cut down a bamboo stalk, he found a little girl inside.)"
+      "explanation": "「小さい女の子」 is correct: 「おじいさんが竹を切ると、中に小さい女の子がいました。」 (When the old man cut down a bamboo stalk, he found a little girl inside.)",
+      "optionsEn": [
+        "money",
+        "little girl",
+        "fish",
+        "clothing"
+      ],
+      "questionEn": "What did the old man find inside the bamboo?"
     },
     {
       "question": "姫はどうして泣きましたか？",
@@ -1103,7 +1110,14 @@
         "お腹が空いたから"
       ],
       "answerIndex": 1,
-      "explanation": "「月へ帰るから」 is the correct answer according to the story."
+      "explanation": "「月へ帰るから」 is the correct answer according to the story.",
+      "optionsEn": [
+        "because I was sick",
+        "because I’m going back to the moon",
+        "because I cut the bamboo",
+        "because I’m hungry"
+      ],
+      "questionEn": "Why did the princess cry?"
     },
     {
       "question": "姫はどこへ帰りましたか？",
@@ -1114,7 +1128,14 @@
         "月"
       ],
       "answerIndex": 3,
-      "explanation": "「月」 is correct: 「夏の夜、姫は月を見て泣いていました。」 (One summer night, the princess was crying as she gazed at the moon.)"
+      "explanation": "「月」 is correct: 「夏の夜、姫は月を見て泣いていました。」 (One summer night, the princess was crying as she gazed at the moon.)",
+      "optionsEn": [
+        "sea",
+        "mountain",
+        "King's House",
+        "月"
+      ],
+      "questionEn": "Where did the princess go?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/fairy-tales/moon-child.json"

@@ -680,7 +680,14 @@
         "八時"
       ],
       "answerIndex": 1,
-      "explanation": "「六時」 is correct: 「毎朝、田中さんは六時に起きます。」 (Every morning, Mr. Tanaka wakes up at 6:00.)"
+      "explanation": "「六時」 is correct: 「毎朝、田中さんは六時に起きます。」 (Every morning, Mr. Tanaka wakes up at 6:00.)",
+      "optionsEn": [
+        "5 o'clock",
+        "6:00",
+        "7:00",
+        "8:00"
+      ],
+      "questionEn": "What time does Mr. Tanaka wake up?"
     },
     {
       "question": "田中さんは朝ごはんに何を食べましたか？",
@@ -691,7 +698,14 @@
         "りんご"
       ],
       "answerIndex": 2,
-      "explanation": "「パン」 is correct: 「それから、台所でお茶を飲んで、パンを食べます。」 (Then, he drinks tea and eats bread in the kitchen.)"
+      "explanation": "「パン」 is correct: 「それから、台所でお茶を飲んで、パンを食べます。」 (Then, he drinks tea and eats bread in the kitchen.)",
+      "optionsEn": [
+        "gohan",
+        "fish",
+        "bread",
+        "apple"
+      ],
+      "questionEn": "What did Mr. Tanaka have for breakfast?"
     },
     {
       "question": "田中さんは七時にどこへ行きますか？",
@@ -702,7 +716,14 @@
         "公園"
       ],
       "answerIndex": 3,
-      "explanation": "「公園」 is correct: 「七時に公園へ散歩に行きます。」 (I go for a walk in the park at 7:00.)"
+      "explanation": "「公園」 is correct: 「七時に公園へ散歩に行きます。」 (I go for a walk in the park at 7:00.)",
+      "optionsEn": [
+        "company",
+        "station",
+        "super",
+        "park"
+      ],
+      "questionEn": "Where is Mr. Tanaka going at 7 o’clock?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/waking-up.json"

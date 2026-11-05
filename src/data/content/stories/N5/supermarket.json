@@ -667,7 +667,14 @@
         "自転車"
       ],
       "answerIndex": 2,
-      "explanation": "「車」 is correct: 「車で十分かかりました。」 (It took ten minutes by car.)"
+      "explanation": "「車」 is correct: 「車で十分かかりました。」 (It took ten minutes by car.)",
+      "optionsEn": [
+        "bus",
+        "train",
+        "car",
+        "bicycle"
+      ],
+      "questionEn": "Why did Mr. Tanaka go to the supermarket?"
     },
     {
       "question": "田中さんはスーパーで何を買いませんでしたか？",
@@ -678,7 +685,14 @@
         "肉"
       ],
       "answerIndex": 3,
-      "explanation": "「肉」 is correct: 「それから、おいしい魚と肉も見ました。」 (Then, we also saw some delicious fish and meat.)"
+      "explanation": "「肉」 is correct: 「それから、おいしい魚と肉も見ました。」 (Then, we also saw some delicious fish and meat.)",
+      "optionsEn": [
+        "apple",
+        "bread",
+        "fish",
+        "meat"
+      ],
+      "questionEn": "What didn’t Mr. Tanaka buy at the supermarket?"
     },
     {
       "question": "買い物は全部でいくらでしたか？",
@@ -689,7 +703,14 @@
         "二千二百円"
       ],
       "answerIndex": 1,
-      "explanation": "「千二百円」 is correct: 「全部で千二百円でした。」 (The total was 1,200 yen.)"
+      "explanation": "「千二百円」 is correct: 「全部で千二百円でした。」 (The total was 1,200 yen.)",
+      "optionsEn": [
+        "1,000 yen",
+        "1,200 yen",
+        "2,000 yen",
+        "2,200 yen"
+      ],
+      "questionEn": "How much did the total cost of my shopping come to?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/supermarket.json"

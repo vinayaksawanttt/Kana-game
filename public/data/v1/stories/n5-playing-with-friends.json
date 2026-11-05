@@ -555,37 +555,58 @@
   ],
   "quiz": [
     {
-      "question": "みんなで公園で何をしましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "テニス",
-        "サッカー",
-        "野球",
-        "水泳"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
+      ],
+      "answerIndex": 2,
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
+    },
+    {
+      "question": "佐藤さんはカウンターで何をしましたか？",
+      "options": [
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
       ],
       "answerIndex": 1,
-      "explanation": "「サッカー」 is correct: 「みんなで午後一時から三時までサッカーをしました。」 (We all played soccer from 1:00 p.m. to 3:00 p.m.)"
-    },
-    {
-      "question": "木の下で何を飲みましたか？",
-      "options": [
-        "お茶",
-        "ジュース",
-        "コーヒー",
-        "冷たい水"
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
       ],
-      "answerIndex": 3,
-      "explanation": "「冷たい水」 is correct: 「それから、大きい木の下に座って、冷たい水を飲みました。」 (Then, we sat under a big tree and drank some cold water.)"
+      "questionEn": "What did Mr. Sato do at the counter?"
     },
     {
-      "question": "山田さんはどうやって家に帰りましたか？",
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
       "options": [
-        "歩いて",
-        "自転車で",
-        "バスで",
-        "電車で"
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
       ],
       "answerIndex": 0,
-      "explanation": "「歩いて」 is correct: 「五時に「また遊びましょう」と言って、歩いて家に帰りました。」 (At 5:00, I said, “Let’s hang out again,” and walked home.)"
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
+      ],
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/playing-with-friends.json"

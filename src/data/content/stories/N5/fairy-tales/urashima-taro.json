@@ -1951,7 +1951,14 @@
         "鳥"
       ],
       "answerIndex": 2,
-      "explanation": "「亀」 is correct: 「ある日、子供たちが海辺で一匹の亀をいじめていました。」 (One day, some children were tormenting a turtle on the beach.)"
+      "explanation": "「亀」 is correct: 「ある日、子供たちが海辺で一匹の亀をいじめていました。」 (One day, some children were tormenting a turtle on the beach.)",
+      "optionsEn": [
+        "fish",
+        "dog",
+        "turtle",
+        "bird"
+      ],
+      "questionEn": "What did Taro help with?"
     },
     {
       "question": "太郎は竜宮城にどのくらい（どれぐらい）いましたか？",
@@ -1962,7 +1969,14 @@
         "三年ぐらい"
       ],
       "answerIndex": 0,
-      "explanation": "「三日ぐらい」 is correct: 「太郎は三日ぐらい竜宮城にいました。」 (Taro stayed at the Dragon Palace for about three days.)"
+      "explanation": "「三日ぐらい」 is correct: 「太郎は三日ぐらい竜宮城にいました。」 (Taro stayed at the Dragon Palace for about three days.)",
+      "optionsEn": [
+        "about three days",
+        "about a week",
+        "about one month",
+        "about three years"
+      ],
+      "questionEn": "How long did Taro stay at Ryūgū-jō?"
     },
     {
       "question": "箱を開けた後、太郎はどうなりましたか？",
@@ -1973,7 +1987,14 @@
         "王様になりました"
       ],
       "answerIndex": 2,
-      "explanation": "「おじいさんになりました」 is correct: 「太郎は突然、おじいさんになりました。」 (Taro suddenly turned into an old man.)"
+      "explanation": "「おじいさんになりました」 is correct: 「太郎は突然、おじいさんになりました。」 (Taro suddenly turned into an old man.)",
+      "optionsEn": [
+        "I became a child",
+        "I became rich",
+        "I’ve become a grandfather",
+        "I Became King"
+      ],
+      "questionEn": "What happened to Taro after he opened the box?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/fairy-tales/urashima-taro.json"

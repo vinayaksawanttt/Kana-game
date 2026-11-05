@@ -912,37 +912,58 @@
   ],
   "quiz": [
     {
-      "question": "田中さんはどんな服を着て花火大会へ行きましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "スーツ",
-        "浴衣",
-        "シャツとズボン",
-        "制服"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
+      ],
+      "answerIndex": 2,
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
+    },
+    {
+      "question": "佐藤さんはカウンターで何をしましたか？",
+      "options": [
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
       ],
       "answerIndex": 1,
-      "explanation": "「浴衣」 is correct: 「浴衣を着て出かけたので、いつもと違う特別な気分でした。」 (Since she went out wearing a yukata, she felt special—different from usual.)"
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
     },
     {
-      "question": "二人は屋台で何を買いましたか？",
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
       "options": [
-        "うどんと果物",
-        "カレーとパン",
-        "焼きそばと飲み物",
-        "魚とお弁当"
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
       ],
-      "answerIndex": 2,
-      "explanation": "「焼きそばと飲み物」 is correct: 「二人は屋台で焼きそばと冷たい飲み物を買ってから、草の上に座りました。」 (The two of them bought yakisoba and cold drinks at a food stall, then sat down on the grass.)"
-    },
-    {
-      "question": "花火は何時に始まりましたか？",
-      "options": [
-        "六時半",
-        "七時",
-        "七時半",
-        "八時"
+      "answerIndex": 0,
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
       ],
-      "answerIndex": 2,
-      "explanation": "「七時半」 is correct: 「七時半になると、大きな音と一緒に夜空に色とりどりの花火が上がりました。」 (At 7:30, colorful fireworks shot up into the night sky accompanied by a loud boom.)"
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/hanabi.json"

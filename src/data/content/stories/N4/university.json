@@ -1140,7 +1140,14 @@
         "山田さんの家"
       ],
       "answerIndex": 1,
-      "explanation": "「図書館」 is correct: 「一時間目の授業は日本語でしたから、リーさんは図書館で少し予習をしてから教室へ向かいました。」 (Since her first class was Japanese, Li did a little prep work in the library before heading to the classroom.)"
+      "explanation": "「図書館」 is correct: 「一時間目の授業は日本語でしたから、リーさんは図書館で少し予習をしてから教室へ向かいました。」 (Since her first class was Japanese, Li did a little prep work in the library before heading to the classroom.)",
+      "optionsEn": [
+        "student cafeteria",
+        "library",
+        "Part-time job",
+        "Mr. Yamada’s House"
+      ],
+      "questionEn": "Where did Lee go before the first class?"
     },
     {
       "question": "日本語の授業で何をしましたか。",
@@ -1151,7 +1158,14 @@
         "友達とカレーを作りました"
       ],
       "answerIndex": 2,
-      "explanation": "「日本の文化についてスピーチの練習をしました」 is correct: 「今日の授業では、日本の文化についてスピーチの練習をしました。」 (In today’s class, we practiced giving speeches about Japanese culture.)"
+      "explanation": "「日本の文化についてスピーチの練習をしました」 is correct: 「今日の授業では、日本の文化についてスピーチの練習をしました。」 (In today’s class, we practiced giving speeches about Japanese culture.)",
+      "optionsEn": [
+        "we took a kanji test",
+        "I fixed the teacher's computer",
+        "I practiced giving a speech about Japanese culture",
+        "I made curry with my friends"
+      ],
+      "questionEn": "What did you do in your Japanese class?"
     },
     {
       "question": "午後の授業が終わった後、リーさんは何をしましたか。",
@@ -1162,7 +1176,14 @@
         "図書館で明日の宿題をしました"
       ],
       "answerIndex": 3,
-      "explanation": "「図書館で明日の宿題をしました」 is correct: 「午後の授業が終わった後、リーさんはもう一度図書館へ行って、明日の宿題をしました。」 (After her afternoon classes ended, Lee went back to the library to do her homework for tomorrow.)"
+      "explanation": "「図書館で明日の宿題をしました」 is correct: 「午後の授業が終わった後、リーさんはもう一度図書館へ行って、明日の宿題をしました。」 (After her afternoon classes ended, Lee went back to the library to do her homework for tomorrow.)",
+      "optionsEn": [
+        "I went to my part-time job with Mr. Yamada",
+        "I went home and went to sleep",
+        "I talked with my friends in the cafeteria",
+        "I did tomorrow’s homework at the library"
+      ],
+      "questionEn": "What did Lee do after her afternoon class ended?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/university.json"

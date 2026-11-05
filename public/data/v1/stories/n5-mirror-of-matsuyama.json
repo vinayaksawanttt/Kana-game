@@ -1489,37 +1489,58 @@
   ],
   "quiz": [
     {
-      "question": "お父さんはお母さんに何を買いましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "服",
-        "鏡",
-        "本",
-        "花"
-      ],
-      "answerIndex": 1,
-      "explanation": "「鏡」 is correct: 「ある日、お父さんは遠い町へ行って、お母さんに鏡（かがみ）を買いました。」 (One day, the father went to a distant town and bought a mirror for the mother.)"
-    },
-    {
-      "question": "女の子は毎日部屋で何をしましたか？",
-      "options": [
-        "本を読みました",
-        "歌を歌いました",
-        "鏡を見ました",
-        "寝ました"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
       ],
       "answerIndex": 2,
-      "explanation": "「鏡を見ました」 is correct: 「女の子は毎日部屋で鏡を見ました。」 (The girl looked in the mirror in her room every day.)"
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
     },
     {
-      "question": "新しいお母さんは女の子の話を聞いて、どうしましたか？",
+      "question": "佐藤さんはカウンターで何をしましたか？",
       "options": [
-        "家から逃げました",
-        "女の子に謝りました",
-        "お父さんと結婚しました",
-        "鏡を捨てました"
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
       ],
       "answerIndex": 1,
-      "explanation": "「女の子に謝りました」 is correct: 「新しいお母さんはそれを聞いて、女の子に謝りました。」 (When the new mother heard this, she apologized to the girl.)"
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
+    },
+    {
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
+      "options": [
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
+      ],
+      "answerIndex": 0,
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
+      ],
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/fairy-tales/matsuyama.json"

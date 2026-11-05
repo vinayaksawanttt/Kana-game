@@ -1661,7 +1661,14 @@
         "海に行きたいから"
       ],
       "answerIndex": 0,
-      "explanation": "「仕事を手伝いたいから」 is correct: 「タヌキは毎日、おじいさんの作った野菜を全部食べました。」 (Every day, the raccoon dog ate all the vegetables the old man had grown.)"
+      "explanation": "「仕事を手伝いたいから」 is correct: 「タヌキは毎日、おじいさんの作った野菜を全部食べました。」 (Every day, the raccoon dog ate all the vegetables the old man had grown.)",
+      "optionsEn": [
+        "because I want to help with the work",
+        "because I want to eat rice",
+        "because Grandpa called me",
+        "because I want to go to the beach"
+      ],
+      "questionEn": "Why did the tanuki ask the old woman, “Please untie the string”?"
     },
     {
       "question": "ウサギはタヌキの背中の草をどうしましたか？",
@@ -1672,7 +1679,14 @@
         "土をかけました"
       ],
       "answerIndex": 1,
-      "explanation": "「火をつけました」 is correct: 「ウサギは後ろから、タヌキの背中の草に火をつけました。」 (The rabbit set the grass on the raccoon’s back on fire from behind.)"
+      "explanation": "「火をつけました」 is correct: 「ウサギは後ろから、タヌキの背中の草に火をつけました。」 (The rabbit set the grass on the raccoon’s back on fire from behind.)",
+      "optionsEn": [
+        "I ate it all",
+        "I lit a fire",
+        "I put it in the water",
+        "I covered it with soil"
+      ],
+      "questionEn": "What did the rabbit do with the grass on the raccoon dog’s back?"
     },
     {
       "question": "タヌキが海で乗った船は何の船でしたか？",
@@ -1683,7 +1697,14 @@
         "赤い船"
       ],
       "answerIndex": 2,
-      "explanation": "「土の船」 is correct: 「タヌキは土の船に乗りました。」 (The raccoon dog got into the boat made of clay.)"
+      "explanation": "「土の船」 is correct: 「タヌキは土の船に乗りました。」 (The raccoon dog got into the boat made of clay.)",
+      "optionsEn": [
+        "wooden boat",
+        "large ship",
+        "earthen Boat",
+        "red Ship"
+      ],
+      "questionEn": "What kind of boat was the one the tanuki rode on at sea?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/fairy-tales/farmer-and-badger.json"

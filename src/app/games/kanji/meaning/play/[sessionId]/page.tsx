@@ -264,130 +264,148 @@ function KanjiMeaningGame({
             </button>
           </div>
 
-          <div className="flex flex-1 flex-col items-center justify-center py-6">
-            <div className="flex flex-col items-center">
-              <div className="kana-card-shell kanji-card-shell w-[clamp(280px,28vw,420px)] aspect-[3/4] min-h-[clamp(360px,50dvh,520px)]">
-                <div className="kana-card-stack" aria-hidden="true">
-                  {[0, 1, 2]
-                    .slice(0, Math.min(3, state.questions.length - state.index - 1))
-                    .map((layer) => (
-                      <div key={layer} className="paper-layer" />
-                    ))}
-                </div>
-                <div
-                  key={question.id}
-                  className={`kana-card kanji-card ${result.status === "correct" ? "kana-correct" : result.status === "wrong" ? "kana-wrong" : ""} ${leaving ? "kanji-leave" : ""}`}
-                >
-                  <div className="absolute left-0 right-0 top-[11%] z-[1] flex justify-center gap-2">
-                    <span className="rounded-full bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold">
-                      N{kanji.jlpt}
-                    </span>
-                    <span className="rounded-full bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold">
-                      {kanji.grade === 8
-                        ? "Secondary (8)"
-                        : kanji.grade === 9
-                          ? "Names (9)"
-                          : `Grade ${kanji.grade}`}
+          <div className="flex flex-1 items-center justify-center py-6">
+            <div className="grid w-full items-center gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-10">
+              <section
+                aria-label="Kanji flashcard"
+                className="flex flex-col items-center justify-center"
+              >
+                <div className="kana-card-shell kanji-card-shell w-[clamp(280px,28vw,420px)] aspect-[3/4] min-h-[clamp(360px,50dvh,520px)]">
+                  <div className="kana-card-stack" aria-hidden="true">
+                    {[0, 1, 2]
+                      .slice(0, Math.min(3, state.questions.length - state.index - 1))
+                      .map((layer) => (
+                        <div key={layer} className="paper-layer" />
+                      ))}
+                  </div>
+                  <div
+                    key={question.id}
+                    className={`kana-card kanji-card ${result.status === "correct" ? "kana-correct" : result.status === "wrong" ? "kana-wrong" : ""} ${leaving ? "kanji-leave" : ""}`}
+                  >
+                    <div className="absolute left-0 right-0 top-[11%] z-[1] flex justify-center gap-2">
+                      <span className="rounded-full bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold">
+                        N{kanji.jlpt}
+                      </span>
+                      <span className="rounded-full bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold">
+                        {kanji.grade === 8
+                          ? "Secondary (8)"
+                          : kanji.grade === 9
+                            ? "Names (9)"
+                            : `Grade ${kanji.grade}`}
+                      </span>
+                    </div>
+                    <span
+                      className="kanji-card-glyph font-japanese text-[clamp(4.5rem,9vw,8rem)]"
+                      aria-label={`Kanji ${kanji.c}`}
+                    >
+                      {kanji.c}
                     </span>
                   </div>
-                  <span
-                    className="kanji-card-glyph font-japanese text-[clamp(4.5rem,9vw,8rem)]"
-                    aria-label={`Kanji ${kanji.c}`}
-                  >
-                    {kanji.c}
-                  </span>
                 </div>
-              </div>
-              <p className="mt-4 text-sm font-semibold text-[var(--muted)]">Choose the meaning</p>
-            </div>
+              </section>
 
-            <div className="mx-auto mt-4 grid w-full max-w-3xl grid-cols-1 gap-3 sm:grid-cols-2">
-              {question.optionKanji.map((option, index) => {
-                const optionIsCorrect = option === question.kanji;
-                const chosen = result.chosenKanji === option;
-                const statusClass = !answered
-                  ? "border-[var(--line)] bg-[var(--surface)] hover:border-[var(--sakura)]"
-                  : optionIsCorrect
-                    ? "border-[var(--correct)] bg-[var(--correct)]/15 text-[var(--ink)]"
-                    : chosen
-                      ? "border-[var(--wrong)] bg-[var(--wrong)]/15 text-[var(--ink)]"
-                      : "border-[var(--line)] bg-[var(--surface)] opacity-65";
-                return (
-                  <button
-                    key={`${option}-${index}`}
-                    type="button"
-                    disabled={answered || leaving}
-                    onClick={() => answer(index)}
-                    className={`flex min-h-[68px] items-center gap-4 rounded-md border p-4 text-left text-sm font-bold transition-colors disabled:cursor-default ${statusClass}`}
-                  >
-                    <span className="grid size-8 shrink-0 place-items-center rounded-full border border-current text-xs">
-                      {index + 1}
-                    </span>
-                    <span className="flex-1">{state.labelByKanji[option]}</span>
-                    {answered && optionIsCorrect && (
-                      <Check size={18} aria-label="Correct answer" className="text-[var(--correct)]" />
-                    )}
-                    {answered && chosen && !optionIsCorrect && (
-                      <X
-                        size={18}
-                        aria-label="Your incorrect answer"
-                        className="text-[var(--wrong)]"
-                      />
-                    )}
-                  </button>
-                );
-              })}
-            </div>
-
-            <div className="mx-auto mt-4 w-full max-w-3xl">
-              <div className="flex min-h-[28px] items-center justify-center">
-                <p
-                  className={`text-center text-sm font-bold ${
-                    result.status === "correct"
-                      ? "text-[var(--correct)]"
-                      : result.status === "wrong"
-                        ? "text-[var(--wrong)]"
-                        : "text-[var(--muted)]"
-                  }`}
-                  aria-live="polite"
-                >
-                  {result.status === "correct"
-                    ? `✓ Correct — ${result.correctLabel}`
-                    : result.status === "wrong"
-                      ? `✕ Not quite. The meaning is ${result.correctLabel}.`
-                      : ""}
-                </p>
-              </div>
-              {answered && (
-                <div className="mt-3 rounded-md border border-[var(--line)] bg-[var(--surface)] p-4">
-                  <p className="text-sm font-bold">Learn this kanji</p>
-                  <p className="mt-2 text-xs text-[var(--muted)]">
-                    <strong className="text-[var(--ink)]">On:</strong>{" "}
-                    {kanji.on.length ? kanji.on.join("、") : "—"}{" "}
-                    <span className="mx-1">·</span>{" "}
-                    <strong className="text-[var(--ink)]">Kun:</strong>{" "}
-                    {kanji.kun.length ? kanji.kun.join("、") : "—"}{" "}
-                    <span className="mx-1">·</span>{" "}
-                    <strong className="text-[var(--ink)]">Strokes:</strong> {kanji.strokes}
+              <section aria-label="Meaning choices" className="mx-auto w-full max-w-2xl">
+                <div className="mb-5 border-b border-[var(--line)] pb-4">
+                  <p className="text-xs font-bold tracking-[0.16em] text-[var(--primary)] uppercase">
+                    Question {state.index + 1} of {state.questions.length}
                   </p>
-                  <p className="mt-2 text-xs text-[var(--muted)]">
-                    <strong className="text-[var(--ink)]">Meanings:</strong>{" "}
-                    {kanji.meanings.join(", ")}
+                  <h2 className="mt-1 text-xl font-semibold text-[var(--ink)]">
+                    Choose the meaning
+                  </h2>
+                  <p className="mt-1 text-sm text-[var(--muted)]">
+                    Select the best English definition for this kanji.
                   </p>
                 </div>
-              )}
-              {answered && (
-                <button
-                  ref={nextButton}
-                  type="button"
-                  disabled={leaving}
-                  onClick={next}
-                  className="primary-button mt-4 flex h-12 w-full items-center justify-center gap-2 rounded-md text-sm font-bold disabled:opacity-70"
-                >
-                  {state.index + 1 === state.questions.length ? "Finish" : "Next"}{" "}
-                  <span aria-hidden="true">→</span>
-                </button>
-              )}
+
+                <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-2">
+                  {question.optionKanji.map((option, index) => {
+                    const optionIsCorrect = option === question.kanji;
+                    const chosen = result.chosenKanji === option;
+                    const statusClass = !answered
+                      ? "border-[var(--line)] bg-[var(--surface)] hover:border-[var(--sakura)]"
+                      : optionIsCorrect
+                        ? "border-[var(--correct)] bg-[var(--correct)]/15 text-[var(--ink)]"
+                        : chosen
+                          ? "border-[var(--wrong)] bg-[var(--wrong)]/15 text-[var(--ink)]"
+                          : "border-[var(--line)] bg-[var(--surface)] opacity-65";
+                    return (
+                      <button
+                        key={`${option}-${index}`}
+                        type="button"
+                        disabled={answered || leaving}
+                        onClick={() => answer(index)}
+                        className={`flex min-h-[68px] items-center gap-4 rounded-md border p-4 text-left text-sm font-bold transition-colors disabled:cursor-default ${statusClass}`}
+                      >
+                        <span className="grid size-8 shrink-0 place-items-center rounded-full border border-current text-xs">
+                          {index + 1}
+                        </span>
+                        <span className="flex-1">{state.labelByKanji[option]}</span>
+                        {answered && optionIsCorrect && (
+                          <Check size={18} aria-label="Correct answer" className="text-[var(--correct)]" />
+                        )}
+                        {answered && chosen && !optionIsCorrect && (
+                          <X
+                            size={18}
+                            aria-label="Your incorrect answer"
+                            className="text-[var(--wrong)]"
+                          />
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+
+                <div className="mt-4 w-full">
+                  <div className="flex min-h-[28px] items-center justify-center">
+                    <p
+                      className={`text-center text-sm font-bold ${
+                        result.status === "correct"
+                          ? "text-[var(--correct)]"
+                          : result.status === "wrong"
+                            ? "text-[var(--wrong)]"
+                            : "text-[var(--muted)]"
+                      }`}
+                      aria-live="polite"
+                    >
+                      {result.status === "correct"
+                        ? `✓ Correct — ${result.correctLabel}`
+                        : result.status === "wrong"
+                          ? `✕ Not quite. The meaning is ${result.correctLabel}.`
+                          : ""}
+                    </p>
+                  </div>
+                  {answered && (
+                    <div className="mt-3 rounded-md border border-[var(--line)] bg-[var(--surface)] p-4">
+                      <p className="text-sm font-bold">Learn this kanji</p>
+                      <p className="mt-2 text-xs text-[var(--muted)]">
+                        <strong className="text-[var(--ink)]">On:</strong>{" "}
+                        {kanji.on.length ? kanji.on.join("、") : "—"}{" "}
+                        <span className="mx-1">·</span>{" "}
+                        <strong className="text-[var(--ink)]">Kun:</strong>{" "}
+                        {kanji.kun.length ? kanji.kun.join("、") : "—"}{" "}
+                        <span className="mx-1">·</span>{" "}
+                        <strong className="text-[var(--ink)]">Strokes:</strong> {kanji.strokes}
+                      </p>
+                      <p className="mt-2 text-xs text-[var(--muted)]">
+                        <strong className="text-[var(--ink)]">Meanings:</strong>{" "}
+                        {kanji.meanings.join(", ")}
+                      </p>
+                    </div>
+                  )}
+                  {answered && (
+                    <button
+                      ref={nextButton}
+                      type="button"
+                      disabled={leaving}
+                      onClick={next}
+                      className="primary-button mt-4 flex h-12 w-full items-center justify-center gap-2 rounded-md text-sm font-bold disabled:opacity-70"
+                    >
+                      {state.index + 1 === state.questions.length ? "Finish" : "Next"}{" "}
+                      <span aria-hidden="true">→</span>
+                    </button>
+                  )}
+                </div>
+              </section>
             </div>
           </div>
         </section>

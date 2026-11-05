@@ -1137,37 +1137,58 @@
   ],
   "quiz": [
     {
-      "question": "山田さんはどうして交番へ行きましたか。",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "道がわからなかったから",
-        "財布をなくしたから",
-        "お金を拾ったから",
-        "お巡りさんと話したかったから"
-      ],
-      "answerIndex": 1,
-      "explanation": "「財布をなくしたから」 is correct: 「昨日の夕方、山田さんは財布をなくしてしまいました。」 (Yesterday evening, Mr. Yamada lost his wallet.)"
-    },
-    {
-      "question": "山田さんの財布の中には何が入っていましたか。",
-      "options": [
-        "切符と五千円",
-        "鍵と一万円",
-        "大切なカードと一万円",
-        "家族の写真"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
       ],
       "answerIndex": 2,
-      "explanation": "「大切なカードと一万円」 is correct: 「中に大切なカードと一万円が入っています」と答えました。」 (\"It has some important cards and 10,000 yen inside,\" he replied.)"
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
     },
     {
-      "question": "なくした財布はどこで見つかりましたか。",
+      "question": "佐藤さんはカウンターで何をしましたか？",
       "options": [
-        "交番の中",
-        "会社の中",
-        "道の上",
-        "駅の中"
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
       ],
-      "answerIndex": 3,
-      "explanation": "「駅の中」 is the correct answer according to the story."
+      "answerIndex": 1,
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
+    },
+    {
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
+      "options": [
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
+      ],
+      "answerIndex": 0,
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
+      ],
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/police-station.json"

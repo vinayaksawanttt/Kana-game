@@ -1617,37 +1617,58 @@
   ],
   "quiz": [
     {
-      "question": "天の柱が折れ、空に穴が開いたとき、女媧はどうしましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "何もしずに遠くへ逃げた",
-        "人々を救うために五色の石を集めて空を塞いだ",
-        "新しい別の世界へ引っ越した",
-        "動物たちに助けを求めた"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
       ],
-      "answerIndex": 1,
-      "explanation": "「人々を救うために五色の石を集めて空を塞いだ」 is correct: 「ある日、突然大きな音がして天の柱が折れ、地面が大きく割れました。」 (One day, there was a sudden loud noise, the pillar of heaven snapped, and the ground split wide open.)"
+      "answerIndex": 2,
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
     },
     {
-      "question": "女媧は空の穴を塞ぐために何を使いましたか？",
+      "question": "佐藤さんはカウンターで何をしましたか？",
       "options": [
-        "川底から集めた五色の石を溶かした液体",
-        "硬い木の枝と葉っぱ",
-        "大きなお寺の瓦とレンガ",
-        "海で拾った特別な貝殻"
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
+      ],
+      "answerIndex": 1,
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
+    },
+    {
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
+      "options": [
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
       ],
       "answerIndex": 0,
-      "explanation": "「川底から集めた五色の石を溶かした液体」 is correct: 「溶けた五色の石の液体を使って、女媧は空の大きな穴をきれいに塞ぎました。」 (Using the molten liquid from the five-colored stones, Nuwa neatly sealed the large hole in the sky.)"
-    },
-    {
-      "question": "天を支える新しい柱を作るために、何が使われましたか？",
-      "options": [
-        "山の高い木",
-        "大きな亀の足",
-        "強い鉄の棒",
-        "太い竹の茎"
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
       ],
-      "answerIndex": 1,
-      "explanation": "「大きな亀の足」 is correct: 「さらに、彼女は大きな亀の足を切って天を支える四本の新しい柱にし、荒れた土地の洪水を鎮めて世界に平和を取り戻しました。」 (Furthermore, she cut off the legs of a giant turtle to create four new pillars to support the heavens, subdued the floods in the ravaged lands, and restored peace to the world.)"
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/empress-jokwa.json"

@@ -881,37 +881,58 @@
   ],
   "quiz": [
     {
-      "question": "二人は何時にどこで待ち合わせをしましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "一時にカフェの前",
-        "一時半に駅の改札口の前",
-        "二時に公園の入口",
-        "二時半に映画館の前"
-      ],
-      "answerIndex": 1,
-      "explanation": "「一時半に駅の改札口の前」 is correct: 「一時半に駅の改札口の前で待ち合わせをしました。」 (They agreed to meet in front of the station ticket gates at 1:30.)"
-    },
-    {
-      "question": "カフェで木村さんは何を頼みましたか？",
-      "options": [
-        "紅茶とクッキー",
-        "ジュースとパン",
-        "コーヒーとチーズケーキ",
-        "お茶とお弁当"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
       ],
       "answerIndex": 2,
-      "explanation": "「コーヒーとチーズケーキ」 is correct: 「木村さんはコーヒーとチーズケーキを頼んで、彼女は紅茶を頼みました。」 (Mr. Kimura ordered coffee and cheesecake, and she ordered tea.)"
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
     },
     {
-      "question": "カフェを出た後、二人は何をしましたか？",
+      "question": "佐藤さんはカウンターで何をしましたか？",
       "options": [
-        "映画を見に行きました",
-        "公園を散歩しました",
-        "買い物に行きました",
-        "すぐに電車に乗りました"
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
       ],
       "answerIndex": 1,
-      "explanation": "「公園を散歩しました」 is the correct answer according to the story."
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
+    },
+    {
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
+      "options": [
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
+      ],
+      "answerIndex": 0,
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
+      ],
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/going-on-date.json"

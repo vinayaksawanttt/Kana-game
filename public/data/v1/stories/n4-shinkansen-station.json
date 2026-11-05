@@ -1232,37 +1232,58 @@
   ],
   "quiz": [
     {
-      "question": "田中さんはどこへ行く予定でしたか。",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "東京",
-        "大阪",
-        "京都",
-        "北海道"
-      ],
-      "answerIndex": 1,
-      "explanation": "「大阪」 is correct: 「新幹線で大阪へ行く予定でしたから、荷物がたくさんありました。」 (Since he was planning to take the Shinkansen to Osaka, he had a lot of luggage.)"
-    },
-    {
-      "question": "田中さんは駅の中の店で何を買いましたか。",
-      "options": [
-        "お土産と冷たい水",
-        "雑誌とコーヒー",
-        "お弁当と温かいお茶",
-        "切符と新しいかばん"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
       ],
       "answerIndex": 2,
-      "explanation": "「お弁当と温かいお茶」 is correct: 「そこで、電車の中で食べるためのおいしそうなお弁当と温かいお茶を買いました。」 (So, I bought a delicious-looking bento box and some hot tea to eat on the train.)"
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
     },
     {
-      "question": "ホームで田中さんは何をしましたか。",
+      "question": "佐藤さんはカウンターで何をしましたか？",
       "options": [
-        "改札口の機械を探しました",
-        "列に並んで新幹線を待ちました",
-        "外国人と英語で話しました",
-        "ベンチでお弁当を食べました"
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
       ],
       "answerIndex": 1,
-      "explanation": "「列に並んで新幹線を待ちました」 is the correct answer according to the story."
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
+    },
+    {
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
+      "options": [
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
+      ],
+      "answerIndex": 0,
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
+      ],
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/shinkansen.json"

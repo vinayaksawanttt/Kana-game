@@ -2029,37 +2029,58 @@
   ],
   "quiz": [
     {
-      "question": "優しいおじいさんはどうやってこぶを取りましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "お医者さんに薬をもらった",
-        "鬼の前で上手に踊って、鬼に取ってもらった",
-        "特別な水で顔を洗った",
-        "自分で切って取った"
-      ],
-      "answerIndex": 1,
-      "explanation": "「鬼の前で上手に踊って、鬼に取ってもらった」 is the correct answer according to the story."
-    },
-    {
-      "question": "意地悪なおじいさんが鬼の前で踊った時、どうなりましたか？",
-      "options": [
-        "鬼がとても褒めてくれた",
-        "こぶが両方とも消えた",
-        "踊りが下手で怒られ、もう一つのこぶをつけられた",
-        "お金をたくさんもらった"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
       ],
       "answerIndex": 2,
-      "explanation": "「踊りが下手で怒られ、もう一つのこぶをつけられた」 is correct: 「隣の家には、同じように頬にこぶがあって性格の悪い意地悪なおじいさんが住んでいました。」 (In the house next door lived an old man who also had a lump on his cheek and was mean and spiteful.)"
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
     },
     {
-      "question": "最終的に、意地悪なおじいさんはどうなりましたか？",
+      "question": "佐藤さんはカウンターで何をしましたか？",
       "options": [
-        "両方の頬にこぶがついた",
-        "こぶが全部なくなった",
-        "鬼の親分になった",
-        "村から引っ越した"
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
+      ],
+      "answerIndex": 1,
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
+    },
+    {
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
+      "options": [
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
       ],
       "answerIndex": 0,
-      "explanation": "「両方の頬にこぶがついた」 is the correct answer according to the story."
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
+      ],
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/lost-wen.json"

@@ -786,37 +786,58 @@
   ],
   "quiz": [
     {
-      "question": "山田さんはどうして銀行へ行きましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "お金を借りるため",
-        "新しい口座を作るため",
-        "外国のお金に両替するため",
-        "水道代を払うため"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
       ],
-      "answerIndex": 1,
-      "explanation": "「新しい口座を作るため」 is correct: 「先週の金曜日の午後、山田さんは新しい口座を作るために駅の近くの銀行へ行きました。」 (Last Friday afternoon, Mr. Yamada went to a bank near the station to open a new account.)"
+      "answerIndex": 2,
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
     },
     {
-      "question": "山田さんは窓口で何を見せましたか？",
+      "question": "佐藤さんはカウンターで何をしましたか？",
       "options": [
-        "書類と保険証",
-        "パスポートと写真",
-        "会社の社員証",
-        "古い通帳と印鑑"
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
+      ],
+      "answerIndex": 1,
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
+    },
+    {
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
+      "options": [
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
       ],
       "answerIndex": 0,
-      "explanation": "「書類と保険証」 is correct: 「自分の番号が呼ばれたので、窓口へ行って書類と保険証を見せました。」 (When my number was called, I went to the counter and showed them my documents and insurance card.)"
-    },
-    {
-      "question": "手続きが終わるまでどのくらいかかりましたか？",
-      "options": [
-        "十分ほど",
-        "三十分ほど",
-        "一時間ほど",
-        "二時間ほど"
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
       ],
-      "answerIndex": 1,
-      "explanation": "「三十分ほど」 is correct: 「三十分ほどで新しい通帳とカードを受け取ることができました。」 (In about thirty minutes, I was able to receive my new passbook and card.)"
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/bank.json"

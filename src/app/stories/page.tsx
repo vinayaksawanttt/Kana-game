@@ -98,7 +98,7 @@ export default function StoriesHubPage() {
                     onClick={() => setSelectedLevel(tab.key)}
                     className={`rounded-full border px-4 py-1.5 text-xs font-semibold transition ${
                       active
-                        ? "border-[var(--primary)] bg-[var(--primary)] text-[var(--primary-ink)] shadow-sm"
+                        ? "border-[var(--primary)] bg-[var(--primary)] text-white shadow-sm"
                         : "border-[var(--line)] bg-[var(--paper-tint)] text-[var(--ink)] hover:border-[var(--primary)]/50"
                     }`}
                   >
@@ -123,7 +123,7 @@ export default function StoriesHubPage() {
                     onClick={() => setSelectedCategory(tab.key)}
                     className={`rounded-full border px-4 py-1.5 text-xs font-semibold transition ${
                       active
-                        ? "border-[var(--primary)] bg-[var(--primary)] text-[var(--primary-ink)] shadow-sm"
+                        ? "border-[var(--primary)] bg-[var(--primary)] text-white shadow-sm"
                         : "border-[var(--line)] bg-[var(--paper-tint)] text-[var(--ink)] hover:border-[var(--primary)]/50"
                     }`}
                   >
@@ -163,7 +163,7 @@ export default function StoriesHubPage() {
                   <div className="p-6 pb-0">
                     <div className="flex items-center justify-between gap-2">
                       <div className="flex flex-wrap items-center gap-2">
-                        <span className="inline-flex items-center rounded-full bg-[var(--primary)] px-2.5 py-0.5 text-xs font-bold text-[var(--primary-ink)]">
+                        <span className="inline-flex items-center rounded-full bg-[var(--primary)] px-2.5 py-0.5 text-xs font-bold text-white">
                           {story.level}
                         </span>
                         <span className="inline-flex items-center rounded-full border border-[var(--line)] bg-[var(--paper-tint)] px-2.5 py-0.5 text-xs font-medium text-[var(--muted)]">
@@ -220,4 +220,3 @@ export default function StoriesHubPage() {
     </GameLayout>
   );
 }
-

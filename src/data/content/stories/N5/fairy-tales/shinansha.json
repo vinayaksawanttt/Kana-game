@@ -1366,7 +1366,14 @@
         "船"
       ],
       "answerIndex": 2,
-      "explanation": "「人形」 is correct: 「車の上には男の人形が立っていました。」 (A male figure stood atop the cart.)"
+      "explanation": "「人形」 is correct: 「車の上には男の人形が立っていました。」 (A male figure stood atop the cart.)",
+      "optionsEn": [
+        "animals",
+        "golden Dragon",
+        "doll",
+        "ship"
+      ],
+      "questionEn": "What was on top of the special car the king made?"
     },
     {
       "question": "その車の上にある物は、いつでもどこを指しましたか？",
@@ -1377,7 +1384,14 @@
         "西"
       ],
       "answerIndex": 1,
-      "explanation": "「南」 is correct: 「そこで、王様は「指南車（しなんしゃ）」という特別な車を作りました。」 (So, the king had a special cart built called the “shinansha.”)"
+      "explanation": "「南」 is correct: 「そこで、王様は「指南車（しなんしゃ）」という特別な車を作りました。」 (So, the king had a special cart built called the “shinansha.”)",
+      "optionsEn": [
+        "north",
+        "south",
+        "east",
+        "west"
+      ],
+      "questionEn": "What was on top of that car, and where did it point to?"
     },
     {
       "question": "王様は最後に何に乗って空へ行きましたか？",
@@ -1388,7 +1402,14 @@
         "大きなくも"
       ],
       "answerIndex": 0,
-      "explanation": "「金の龍」 is correct: 「王様が百歳になった時、空から金の龍が来ました。」 (When the king turned one hundred, a golden dragon came down from the sky.)"
+      "explanation": "「金の龍」 is correct: 「王様が百歳になった時、空から金の龍が来ました。」 (When the king turned one hundred, a golden dragon came down from the sky.)",
+      "optionsEn": [
+        "golden Dragon",
+        "compass",
+        "white horse",
+        "large spider"
+      ],
+      "questionEn": "What did the king ride to go up into the sky at the end?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/fairy-tales/shinansha.json"

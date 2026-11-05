@@ -2562,7 +2562,14 @@
         "大きなムカデ"
       ],
       "answerIndex": 1,
-      "explanation": "「大きな龍」 is correct: 「橋の上に、とても大きな龍が寝ていました。」 (A very large dragon was sleeping on the bridge.)"
+      "explanation": "「大きな龍」 is correct: 「橋の上に、とても大きな龍が寝ていました。」 (A very large dragon was sleeping on the bridge.)",
+      "optionsEn": [
+        "large dog",
+        "large dragon",
+        "large sum of money",
+        "large centipede"
+      ],
+      "questionEn": "What was Hidesato walking on as he crossed the bridge?"
     },
     {
       "question": "湖の王はどうして困っていましたか？",
@@ -2573,7 +2580,14 @@
         "橋が壊れたから"
       ],
       "answerIndex": 2,
-      "explanation": "「大きなムカデが来たから」 is correct: 「湖の王は彼に米俵などの五つのプレゼントをあげました。」 (The King of the Lake gave him five gifts, including the rice sack.)"
+      "explanation": "「大きなムカデが来たから」 is correct: 「湖の王は彼に米俵などの五つのプレゼントをあげました。」 (The King of the Lake gave him five gifts, including the rice sack.)",
+      "optionsEn": [
+        "because there was no food",
+        "because I didn’t know the way",
+        "because a big centipede came,",
+        "because the bridge was destroyed,"
+      ],
+      "questionEn": "Why was the King of the Lake troubled?"
     },
     {
       "question": "湖の王がくれた米俵はどうなりましたか？",
@@ -2584,7 +2598,14 @@
         "誰かが盗みました"
       ],
       "answerIndex": 1,
-      "explanation": "「毎日食べても、少なくなりませんでした」 is the correct answer according to the story."
+      "explanation": "「毎日食べても、少なくなりませんでした」 is the correct answer according to the story.",
+      "optionsEn": [
+        "we ran out of rice right away",
+        "even though I ate it every day, it didn’t run out",
+        "I became a fish",
+        "someone stole it"
+      ],
+      "questionEn": "What happened to the rice bales given by the King of the Lake?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/fairy-tales/n5-my-lord-bag-of-rice.json"

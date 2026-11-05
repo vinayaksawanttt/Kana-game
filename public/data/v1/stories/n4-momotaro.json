@@ -1781,37 +1781,58 @@
   ],
   "quiz": [
     {
-      "question": "桃太郎は何から生まれましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "竹",
-        "大きな桃",
-        "リンゴ",
-        "不思議な卵"
-      ],
-      "answerIndex": 1,
-      "explanation": "「大きな桃」 is correct: 「ある日、おばあさんが川で洗濯をしていると、大きな桃が流れてきました。」 (One day, while the old woman was doing laundry by the river, a large peach floated downstream.)"
-    },
-    {
-      "question": "桃太郎が道中で家来にした動物の組み合わせはどれですか？",
-      "options": [
-        "犬、猿、キジ",
-        "猫、狐、狸",
-        "熊、鹿、兎",
-        "鼠、牛、虎"
-      ],
-      "answerIndex": 0,
-      "explanation": "「犬、猿、キジ」 is correct: 「出発した桃太郎の前に、犬、猿、キジが現れました。」 (As Momotaro set out, a dog, a monkey, and a pheasant appeared before him.)"
-    },
-    {
-      "question": "鬼ヶ島で戦いに勝った後、桃太郎はどうしましたか？",
-      "options": [
-        "鬼の親分を家来にした",
-        "島を自分の城にした",
-        "宝物を取り返して家に帰った",
-        "鬼たちと友達になってそこに住んだ"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
       ],
       "answerIndex": 2,
-      "explanation": "「宝物を取り返して家に帰った」 is the correct answer according to the story."
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
+    },
+    {
+      "question": "佐藤さんはカウンターで何をしましたか？",
+      "options": [
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
+      ],
+      "answerIndex": 1,
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
+    },
+    {
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
+      "options": [
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
+      ],
+      "answerIndex": 0,
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
+      ],
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/momotaro.json"

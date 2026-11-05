@@ -1309,37 +1309,58 @@
   ],
   "quiz": [
     {
-      "question": "千太郎は何に乗って空を飛びましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "白い馬",
-        "紙の鳥",
-        "古い船",
-        "大きな魚"
-      ],
-      "answerIndex": 1,
-      "explanation": "「紙の鳥」 is correct: 「神様は彼に紙の鳥をあげました。」 (God gave him a paper bird.)"
-    },
-    {
-      "question": "「死なない国」の人たちはどう思っていましたか？",
-      "options": [
-        "ずっと生きたい",
-        "毎日楽しい",
-        "死にたい",
-        "よく働きたい"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
       ],
       "answerIndex": 2,
-      "explanation": "「死にたい」 is correct: 「しかし、みんな「死にたいです。」 (But everyone said, “I want to die.)"
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
     },
     {
-      "question": "大きな魚が来た時、千太郎はどうなりましたか？",
+      "question": "佐藤さんはカウンターで何をしましたか？",
       "options": [
-        "魚を食べました",
-        "起きました",
-        "魚と話しました",
-        "海を泳ぎました"
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
       ],
       "answerIndex": 1,
-      "explanation": "「起きました」 is correct: 「」と大きな声で言った時、千太郎は起きました。」 (\"When he shouted, 'Help!' in a loud voice, Sentaro woke up.\")"
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
+    },
+    {
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
+      "options": [
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
+      ],
+      "answerIndex": 0,
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
+      ],
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/fairy-tales/wish-to-die.json"

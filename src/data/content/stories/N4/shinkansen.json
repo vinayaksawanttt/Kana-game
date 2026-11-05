@@ -1240,7 +1240,14 @@
         "北海道"
       ],
       "answerIndex": 1,
-      "explanation": "「大阪」 is correct: 「新幹線で大阪へ行く予定でしたから、荷物がたくさんありました。」 (Since he was planning to take the Shinkansen to Osaka, he had a lot of luggage.)"
+      "explanation": "「大阪」 is correct: 「新幹線で大阪へ行く予定でしたから、荷物がたくさんありました。」 (Since he was planning to take the Shinkansen to Osaka, he had a lot of luggage.)",
+      "optionsEn": [
+        "tokyo",
+        "osaka",
+        "kyoto",
+        "hokkaido"
+      ],
+      "questionEn": "Where was Mr. Tanaka planning to go?"
     },
     {
       "question": "田中さんは駅の中の店で何を買いましたか。",
@@ -1251,7 +1258,14 @@
         "切符と新しいかばん"
       ],
       "answerIndex": 2,
-      "explanation": "「お弁当と温かいお茶」 is correct: 「そこで、電車の中で食べるためのおいしそうなお弁当と温かいお茶を買いました。」 (So, I bought a delicious-looking bento box and some hot tea to eat on the train.)"
+      "explanation": "「お弁当と温かいお茶」 is correct: 「そこで、電車の中で食べるためのおいしそうなお弁当と温かいお茶を買いました。」 (So, I bought a delicious-looking bento box and some hot tea to eat on the train.)",
+      "optionsEn": [
+        "souvenirs and Cold Water",
+        "magazines and Coffee",
+        "bento box and hot tea",
+        "ticket and a New Bag"
+      ],
+      "questionEn": "What did Mr. Tanaka buy at the store inside the station?"
     },
     {
       "question": "ホームで田中さんは何をしましたか。",
@@ -1262,7 +1276,14 @@
         "ベンチでお弁当を食べました"
       ],
       "answerIndex": 1,
-      "explanation": "「列に並んで新幹線を待ちました」 is the correct answer according to the story."
+      "explanation": "「列に並んで新幹線を待ちました」 is the correct answer according to the story.",
+      "optionsEn": [
+        "I looked for the ticket gate machine",
+        "we stood in line waiting for the Shinkansen",
+        "I spoke with a foreigner in English",
+        "I ate my bento on a bench"
+      ],
+      "questionEn": "What did Mr. Tanaka do at home?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/shinkansen.json"

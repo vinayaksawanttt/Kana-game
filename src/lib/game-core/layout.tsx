@@ -7,17 +7,19 @@ export function GameHeader({
   glyph,
   rightSlot,
   onNavigateHome,
+  homeHref = "/",
 }: {
   label: string;
   glyph: string;
   rightSlot?: ReactNode;
   onNavigateHome?: () => void;
+  homeHref?: string;
 }) {
   return (
     <nav className="pt-safe mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 sm:px-8 sm:py-6">
       <Link
         className="flex min-h-11 items-center gap-2.5"
-        href="/"
+        href={homeHref}
         aria-label={`${label} home`}
         {...(onNavigateHome
           ? {
@@ -48,6 +50,7 @@ export function GameLayout({
   className = "",
   rightSlot,
   onNavigateHome,
+  homeHref = "/",
   onPointerDown,
 }: {
   label: string;
@@ -56,6 +59,7 @@ export function GameLayout({
   className?: string;
   rightSlot?: ReactNode;
   onNavigateHome?: () => void;
+  homeHref?: string;
   onPointerDown?: PointerEventHandler<HTMLElement>;
 }) {
   return (
@@ -63,7 +67,13 @@ export function GameLayout({
       className={`pb-safe relative flex min-h-dvh flex-col bg-[var(--bg)] text-[var(--ink)] ${className}`}
       onPointerDown={onPointerDown}
     >
-      <GameHeader label={label} glyph={glyph} rightSlot={rightSlot} onNavigateHome={onNavigateHome} />
+      <GameHeader
+        label={label}
+        glyph={glyph}
+        rightSlot={rightSlot}
+        onNavigateHome={onNavigateHome}
+        homeHref={homeHref}
+      />
       {children}
     </main>
   );

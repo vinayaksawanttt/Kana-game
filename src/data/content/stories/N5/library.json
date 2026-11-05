@@ -549,7 +549,14 @@
         "電車で"
       ],
       "answerIndex": 2,
-      "explanation": "「自転車で」 is correct: 「土曜日の午後、山田さんは自転車で図書館へ行きました。」 (On Saturday afternoon, Mr. Yamada rode his bike to the library.)"
+      "explanation": "「自転車で」 is correct: 「土曜日の午後、山田さんは自転車で図書館へ行きました。」 (On Saturday afternoon, Mr. Yamada rode his bike to the library.)",
+      "optionsEn": [
+        "walking",
+        "by bus",
+        "by bicycle",
+        "by train"
+      ],
+      "questionEn": "How did Mr. Yamada get to the library?"
     },
     {
       "question": "山田さんは何の本を探しましたか？",
@@ -560,7 +567,14 @@
         "旅行の本"
       ],
       "answerIndex": 1,
-      "explanation": "「日本の歴史の本」 is correct: 「山田さんは日本の歴史の本を二冊探しました。」 (Mr. Yamada looked for two books on Japanese history.)"
+      "explanation": "「日本の歴史の本」 is correct: 「山田さんは日本の歴史の本を二冊探しました。」 (Mr. Yamada looked for two books on Japanese history.)",
+      "optionsEn": [
+        "cookbooks",
+        "books on Japanese History",
+        "english Books",
+        "travel Books"
+      ],
+      "questionEn": "What book was Mr. Yamada looking for?"
     },
     {
       "question": "山田さんは何時まで本を読みましたか？",
@@ -571,7 +585,14 @@
         "四時まで"
       ],
       "answerIndex": 2,
-      "explanation": "「三時まで」 is correct: 「窓の近くの席に座って、三時までゆっくり読みました。」 (I sat at a table near the window and read at my leisure until three o’clock.)"
+      "explanation": "「三時まで」 is correct: 「窓の近くの席に座って、三時までゆっくり読みました。」 (I sat at a table near the window and read at my leisure until three o’clock.)",
+      "optionsEn": [
+        "until 1:00",
+        "until 2:00",
+        "until 3:00",
+        "until 4:00"
+      ],
+      "questionEn": "Until what time did Mr. Yamada read his book?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/library.json"

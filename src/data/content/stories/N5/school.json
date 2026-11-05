@@ -563,7 +563,14 @@
         "九時"
       ],
       "answerIndex": 1,
-      "explanation": "「七時」 is correct: 「月曜日の朝、けんたさんは七時に起きました。」 (On Monday morning, Kenta woke up at 7:00.)"
+      "explanation": "「七時」 is correct: 「月曜日の朝、けんたさんは七時に起きました。」 (On Monday morning, Kenta woke up at 7:00.)",
+      "optionsEn": [
+        "6:00",
+        "7:00",
+        "8:00",
+        "9:00"
+      ],
+      "questionEn": "What time did Kenta wake up?"
     },
     {
       "question": "けんたさんはどうやって学校へ行きましたか？",
@@ -574,7 +581,14 @@
         "歩いて"
       ],
       "answerIndex": 3,
-      "explanation": "「歩いて」 is correct: 「八時に青いかばんを持って、歩いて学校へ行きました。」 (At 8:00, I took my blue backpack and walked to school.)"
+      "explanation": "「歩いて」 is correct: 「八時に青いかばんを持って、歩いて学校へ行きました。」 (At 8:00, I took my blue backpack and walked to school.)",
+      "optionsEn": [
+        "by bus",
+        "by train",
+        "by bicycle",
+        "walking"
+      ],
+      "questionEn": "How did Kenta get to school?"
     },
     {
       "question": "学校の門の前でだれに会いましたか？",
@@ -585,7 +599,14 @@
         "田中さん"
       ],
       "answerIndex": 1,
-      "explanation": "「山下さん」 is correct: 「学校の門の前で友だちの山下さんに会いました。」 (I ran into my friend Yamashita in front of the school gate.)"
+      "explanation": "「山下さん」 is correct: 「学校の門の前で友だちの山下さんに会いました。」 (I ran into my friend Yamashita in front of the school gate.)",
+      "optionsEn": [
+        "teacher",
+        "Mr. Yamashita",
+        "mom",
+        "Mr. Tanaka"
+      ],
+      "questionEn": "Who did you meet in front of the school gate?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/school.json"

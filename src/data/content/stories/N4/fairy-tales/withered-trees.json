@@ -1579,7 +1579,14 @@
         "餅を食べたから"
       ],
       "answerIndex": 0,
-      "explanation": "「お金が出なかったから」 is the correct answer according to the story."
+      "explanation": "「お金が出なかったから」 is the correct answer according to the story.",
+      "optionsEn": [
+        "because I didn't have any money",
+        "because Shiro bit me",
+        "because Shiro ran away",
+        "because I ate mochi"
+      ],
+      "questionEn": "Why did the evil old man kill Shiro?"
     },
     {
       "question": "優しいおじいさんが枯れた木に灰をまくと、どうなりましたか？",
@@ -1590,7 +1597,14 @@
         "木が倒れました"
       ],
       "answerIndex": 2,
-      "explanation": "「美しい花が咲きました」 is correct: 「優しいおじいさんがその灰（はい）をもらって、枯れた（かれた）木にまくと、美しい花が咲きました。」 (The kind old man took the ashes and scattered them on a withered tree, and beautiful flowers bloomed.)"
+      "explanation": "「美しい花が咲きました」 is correct: 「優しいおじいさんがその灰（はい）をもらって、枯れた（かれた）木にまくと、美しい花が咲きました。」 (The kind old man took the ashes and scattered them on a withered tree, and beautiful flowers bloomed.)",
+      "optionsEn": [
+        "money came in",
+        "delicious mochi was served",
+        "beautiful flower has bloomed",
+        "tree fell"
+      ],
+      "questionEn": "What happened when the kind old man scattered ashes on the withered tree?"
     },
     {
       "question": "悪いおじいさんがまいた灰はどうなりましたか？",
@@ -1601,7 +1615,14 @@
         "お殿様の目に入りました"
       ],
       "answerIndex": 3,
-      "explanation": "「お殿様の目に入りました」 is the correct answer according to the story."
+      "explanation": "「お殿様の目に入りました」 is the correct answer according to the story.",
+      "optionsEn": [
+        "it has become a beautiful flower",
+        "it was blown away by the wind",
+        "it turned out to be a delicious meal",
+        "it caught the lord’s eye"
+      ],
+      "questionEn": "What happened to the ashes that the mean old man scattered?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/withered-trees.json"

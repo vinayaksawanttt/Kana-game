@@ -562,37 +562,58 @@
   ],
   "quiz": [
     {
-      "question": "田中さんはどうやって市場へ行きましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "車で",
-        "歩いて",
-        "自転車で",
-        "バスで"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
+      ],
+      "answerIndex": 2,
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
+    },
+    {
+      "question": "佐藤さんはカウンターで何をしましたか？",
+      "options": [
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
       ],
       "answerIndex": 1,
-      "explanation": "「歩いて」 is correct: 「土曜日の朝、田中さんは歩いて近くの市場へ行きました。」 (On Saturday morning, Mr. Tanaka walked to the nearby market.)"
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
     },
     {
-      "question": "田中さんはトマトをいくつ買いましたか？",
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
       "options": [
-        "一つ",
-        "二つ",
-        "三つ",
-        "四つ"
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
       ],
-      "answerIndex": 2,
-      "explanation": "「三つ」 is correct: 「野菜の店で赤くて大きいトマトを三つ買いました。」 (I bought three big red tomatoes at the produce store.)"
-    },
-    {
-      "question": "魚屋でいくら払いましたか？",
-      "options": [
-        "五百円",
-        "八百円",
-        "千円",
-        "千二百円"
+      "answerIndex": 0,
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
       ],
-      "answerIndex": 2,
-      "explanation": "「千円」 is correct: 「魚を二匹買って、千円を払いました。」 (I bought two fish and paid 1,000 yen.)"
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/market.json"

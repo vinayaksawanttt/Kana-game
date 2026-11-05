@@ -16,8 +16,14 @@
   --sakura-light: #fdebf0;
   --line: #edcbd4;
   --correct: #5e9b6a;
+  --correct-soft: rgba(94, 155, 106, 0.12);
+  --success: #5e9b6a;
+  --success-soft: rgba(94, 155, 106, 0.12);
   --wrong: #e8590c;
+  --wrong-soft: rgba(232, 89, 12, 0.12);
   --paper: #fff9f4;
+  --paper-tint: color-mix(in srgb, var(--surface) 82%, var(--sakura-light));
+  --card-shadow: 0 4px 20px -2px rgba(35, 26, 28, 0.05);
   --card-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.035'/%3E%3C/svg%3E");
   --card-border: color-mix(in srgb, var(--line) 80%, var(--sakura));
 }
@@ -34,8 +40,14 @@
   --sakura-light: #3b242c;
   --line: #51333d;
   --correct: #7dbb88;
+  --correct-soft: rgba(125, 187, 136, 0.16);
+  --success: #7dbb88;
+  --success-soft: rgba(125, 187, 136, 0.16);
   --wrong: #e8590c;
+  --wrong-soft: rgba(232, 89, 12, 0.18);
   --paper: #2a1a20;
+  --paper-tint: color-mix(in srgb, var(--surface) 75%, var(--sakura-light));
+  --card-shadow: 0 4px 24px -2px rgba(0, 0, 0, 0.35);
   --card-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.035'/%3E%3C/svg%3E");
   --card-border: color-mix(in srgb, var(--sakura) 32%, var(--line));
 }

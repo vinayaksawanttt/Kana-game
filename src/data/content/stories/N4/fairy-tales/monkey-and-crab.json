@@ -2128,7 +2128,14 @@
         "お茶と甘いお菓子"
       ],
       "answerIndex": 0,
-      "explanation": "「おにぎりと柿の種」 is correct: 「昔々、ある秋の日に、猿とカニが川のそばで遊んでいました。」 (Once upon a time, on an autumn day, a monkey and a crab were playing by the river.)"
+      "explanation": "「おにぎりと柿の種」 is correct: 「昔々、ある秋の日に、猿とカニが川のそばで遊んでいました。」 (Once upon a time, on an autumn day, a monkey and a crab were playing by the river.)",
+      "optionsEn": [
+        "onigiri and Kaki no Tane",
+        "chestnuts and Bees",
+        "money and Red Clothes",
+        "tea and Sweet Treats"
+      ],
+      "questionEn": "What did the monkey and the crab exchange first?"
     },
     {
       "question": "お父さんのカニはどうして死にましたか？",
@@ -2139,7 +2146,14 @@
         "重い臼が落ちてきたから"
       ],
       "answerIndex": 1,
-      "explanation": "「猿が硬い柿を投げつけたから」 is correct: 「死んだお父さんを見つけた子どものカニは、とても悲しんで泣きました。」 (When the baby crab found its dead father, it was very sad and cried.)"
+      "explanation": "「猿が硬い柿を投げつけたから」 is correct: 「死んだお父さんを見つけた子どものカニは、とても悲しんで泣きました。」 (When the baby crab found its dead father, it was very sad and cried.)",
+      "optionsEn": [
+        "because it fell from a tree",
+        "because a monkey threw a hard persimmon at me",
+        "because I fell into the river and drowned",
+        "because a heavy mortar fell"
+      ],
+      "questionEn": "Why did my dad’s crab die?"
     },
     {
       "question": "子どものカニを助けた友達は誰ですか？",
@@ -2150,7 +2164,14 @@
         "熊と鹿とうさぎ"
       ],
       "answerIndex": 2,
-      "explanation": "「臼とハチと栗」 is the correct answer according to the story."
+      "explanation": "「臼とハチと栗」 is the correct answer according to the story.",
+      "optionsEn": [
+        "Dogs, Monkeys, and Pheasants",
+        "turtles and Fish",
+        "Mortar, Bees, and Chestnuts",
+        "Bears, Deer, and Rabbits"
+      ],
+      "questionEn": "Who is the friend who helped the baby crab?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/monkey-and-crab.json"

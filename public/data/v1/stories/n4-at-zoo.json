@@ -852,37 +852,58 @@
   ],
   "quiz": [
     {
-      "question": "佐藤さんはだれと一緒に動物園へ行きましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "友だち",
-        "お母さん",
-        "妹",
-        "弟"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
       ],
       "answerIndex": 2,
-      "explanation": "「妹」 is correct: 「日曜日の朝、佐藤さんは妹と一緒に市の動物園へ出かけました。」 (On Sunday morning, Mr. Sato went to the city zoo with his younger sister.)"
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
     },
     {
-      "question": "二人は最初になんの動物を見に行きましたか？",
+      "question": "佐藤さんはカウンターで何をしましたか？",
       "options": [
-        "パンダとペンギン",
-        "象とキリン",
-        "ライオンとトラ",
-        "猿と鳥"
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
       ],
       "answerIndex": 1,
-      "explanation": "「象とキリン」 is the correct answer according to the story."
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
     },
     {
-      "question": "帰る前に売店で何を買いましたか？",
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
       "options": [
-        "動物の本",
-        "お菓子",
-        "絵はがき",
-        "パンダのぬいぐるみ"
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
       ],
-      "answerIndex": 3,
-      "explanation": "「パンダのぬいぐるみ」 is correct: 「帰る前に売店でパンダのぬいぐるみを買いました。」 (Before heading home, we bought a panda stuffed animal at the gift shop.)"
+      "answerIndex": 0,
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
+      ],
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/zoo.json"

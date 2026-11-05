@@ -955,37 +955,58 @@
   ],
   "quiz": [
     {
-      "question": "山田さんはだれと一緒に野球場へ行きましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "家族",
-        "高校の先生",
-        "会社の同僚",
-        "一人"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
       ],
       "answerIndex": 2,
-      "explanation": "「会社の同僚」 is correct: 「先週の日曜日の午後、山田さんは会社の同僚と一緒に野球場へ試合を見に行きました。」 (Last Sunday afternoon, Mr. Yamada went to the baseball stadium with a coworker to watch a game.)"
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
     },
     {
-      "question": "山田さんたちは席に着いた後で何をしましたか？",
+      "question": "佐藤さんはカウンターで何をしましたか？",
       "options": [
-        "選手にサインをもらいました",
-        "お弁当と飲み物を買いました",
-        "すぐに写真を撮りました",
-        "家に帰る準備をしました"
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
       ],
       "answerIndex": 1,
-      "explanation": "「お弁当と飲み物を買いました」 is correct: 「先週の日曜日の午後、山田さんは会社の同僚と一緒に野球場へ試合を見に行きました。」 (Last Sunday afternoon, Mr. Yamada went to the baseball stadium with a coworker to watch a game.)"
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
     },
     {
-      "question": "七回に何がありましたか？",
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
       "options": [
-        "雨が降って試合が止まりました",
-        "電車の時間になったので帰りました",
-        "応援しているチームがホームランを打ちました",
-        "試合に負けてしまいました"
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
       ],
-      "answerIndex": 2,
-      "explanation": "「応援しているチームがホームランを打ちました」 is the correct answer according to the story."
+      "answerIndex": 0,
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
+      ],
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/baseball-stadium.json"

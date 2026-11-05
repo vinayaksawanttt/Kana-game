@@ -1571,37 +1571,58 @@
   ],
   "quiz": [
     {
-      "question": "どうして悪いおじいさんはシロを殺しましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "お金が出なかったから",
-        "シロが噛んだから",
-        "シロが逃げたから",
-        "餅を食べたから"
-      ],
-      "answerIndex": 0,
-      "explanation": "「お金が出なかったから」 is the correct answer according to the story."
-    },
-    {
-      "question": "優しいおじいさんが枯れた木に灰をまくと、どうなりましたか？",
-      "options": [
-        "お金が出ました",
-        "美味しい餅が出ました",
-        "美しい花が咲きました",
-        "木が倒れました"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
       ],
       "answerIndex": 2,
-      "explanation": "「美しい花が咲きました」 is correct: 「優しいおじいさんがその灰（はい）をもらって、枯れた（かれた）木にまくと、美しい花が咲きました。」 (The kind old man took the ashes and scattered them on a withered tree, and beautiful flowers bloomed.)"
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
     },
     {
-      "question": "悪いおじいさんがまいた灰はどうなりましたか？",
+      "question": "佐藤さんはカウンターで何をしましたか？",
       "options": [
-        "きれいな花になりました",
-        "風で飛んでいきました",
-        "美味しいご飯になりました",
-        "お殿様の目に入りました"
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
       ],
-      "answerIndex": 3,
-      "explanation": "「お殿様の目に入りました」 is the correct answer according to the story."
+      "answerIndex": 1,
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
+    },
+    {
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
+      "options": [
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
+      ],
+      "answerIndex": 0,
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
+      ],
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/withered-trees.json"

@@ -920,7 +920,14 @@
         "制服"
       ],
       "answerIndex": 1,
-      "explanation": "「浴衣」 is correct: 「浴衣を着て出かけたので、いつもと違う特別な気分でした。」 (Since she went out wearing a yukata, she felt special—different from usual.)"
+      "explanation": "「浴衣」 is correct: 「浴衣を着て出かけたので、いつもと違う特別な気分でした。」 (Since she went out wearing a yukata, she felt special—different from usual.)",
+      "optionsEn": [
+        "suit",
+        "yukata",
+        "shirts and Pants",
+        "uniform"
+      ],
+      "questionEn": "What kind of clothes did Mr. Tanaka wear to the fireworks festival?"
     },
     {
       "question": "二人は屋台で何を買いましたか？",
@@ -931,7 +938,14 @@
         "魚とお弁当"
       ],
       "answerIndex": 2,
-      "explanation": "「焼きそばと飲み物」 is correct: 「二人は屋台で焼きそばと冷たい飲み物を買ってから、草の上に座りました。」 (The two of them bought yakisoba and cold drinks at a food stall, then sat down on the grass.)"
+      "explanation": "「焼きそばと飲み物」 is correct: 「二人は屋台で焼きそばと冷たい飲み物を買ってから、草の上に座りました。」 (The two of them bought yakisoba and cold drinks at a food stall, then sat down on the grass.)",
+      "optionsEn": [
+        "udon and Fruit",
+        "curry and Bread",
+        "yakisoba and Beverages",
+        "fish and Bento"
+      ],
+      "questionEn": "What did the two of them buy at the food stall?"
     },
     {
       "question": "花火は何時に始まりましたか？",
@@ -942,7 +956,14 @@
         "八時"
       ],
       "answerIndex": 2,
-      "explanation": "「七時半」 is correct: 「七時半になると、大きな音と一緒に夜空に色とりどりの花火が上がりました。」 (At 7:30, colorful fireworks shot up into the night sky accompanied by a loud boom.)"
+      "explanation": "「七時半」 is correct: 「七時半になると、大きな音と一緒に夜空に色とりどりの花火が上がりました。」 (At 7:30, colorful fireworks shot up into the night sky accompanied by a loud boom.)",
+      "optionsEn": [
+        "6:30",
+        "7:00",
+        "7:30",
+        "8:00"
+      ],
+      "questionEn": "What time did the fireworks start?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/hanabi.json"

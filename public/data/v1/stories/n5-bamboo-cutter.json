@@ -1084,37 +1084,58 @@
   ],
   "quiz": [
     {
-      "question": "おじいさんは竹の中で何を見つけましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "お金",
-        "小さい女の子",
-        "魚",
-        "服"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
       ],
-      "answerIndex": 1,
-      "explanation": "「小さい女の子」 is correct: 「おじいさんが竹を切ると、中に小さい女の子がいました。」 (When the old man cut down a bamboo stalk, he found a little girl inside.)"
+      "answerIndex": 2,
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
     },
     {
-      "question": "姫はどうして泣きましたか？",
+      "question": "佐藤さんはカウンターで何をしましたか？",
       "options": [
-        "病気だったから",
-        "月へ帰るから",
-        "竹を切ったから",
-        "お腹が空いたから"
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
       ],
       "answerIndex": 1,
-      "explanation": "「月へ帰るから」 is the correct answer according to the story."
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
     },
     {
-      "question": "姫はどこへ帰りましたか？",
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
       "options": [
-        "海",
-        "山",
-        "王様の家",
-        "月"
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
       ],
-      "answerIndex": 3,
-      "explanation": "「月」 is correct: 「夏の夜、姫は月を見て泣いていました。」 (One summer night, the princess was crying as she gazed at the moon.)"
+      "answerIndex": 0,
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
+      ],
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/fairy-tales/moon-child.json"

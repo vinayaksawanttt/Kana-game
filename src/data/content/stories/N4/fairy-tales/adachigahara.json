@@ -2228,7 +2228,14 @@
         "薪を拾いたかったから"
       ],
       "answerIndex": 1,
-      "explanation": "「道に迷って泊まりたかったから」 is correct: 「坊さんはとても疲れて、お腹が空いていました。」 (The monk was very tired and hungry.)"
+      "explanation": "「道に迷って泊まりたかったから」 is correct: 「坊さんはとても疲れて、お腹が空いていました。」 (The monk was very tired and hungry.)",
+      "optionsEn": [
+        "because I wanted to see my grandmother",
+        "because I got lost and wanted a place to stay",
+        "because I wanted to kill a demon",
+        "because I wanted to gather firewood"
+      ],
+      "questionEn": "Why did the monk go to the house?"
     },
     {
       "question": "おばあさんは出かける前に、坊さんに何と言いましたか？",
@@ -2239,7 +2246,14 @@
         "たくさんご飯を食べなさい"
       ],
       "answerIndex": 2,
-      "explanation": "「絶対に奥の部屋を見てはいけません」 is correct: 「でも、絶対に奥の部屋を見てはいけませんよ」と約束させて、外へ出かけました。」 (\"But you must never look into the back room,\" she told him, making him promise, and then she went outside.)"
+      "explanation": "「絶対に奥の部屋を見てはいけません」 is correct: 「でも、絶対に奥の部屋を見てはいけませんよ」と約束させて、外へ出かけました。」 (\"But you must never look into the back room,\" she told him, making him promise, and then she went outside.)",
+      "optionsEn": [
+        "you must not go outside under any circumstances",
+        "go to bed early",
+        "you must not look into the back room under any circumstances",
+        "eat plenty of rice"
+      ],
+      "questionEn": "What did the old woman say to the monk before she left?"
     },
     {
       "question": "太陽が昇った後、どうなりましたか？",
@@ -2250,7 +2264,14 @@
         "おばあさんが泣きながら帰ってきました"
       ],
       "answerIndex": 0,
-      "explanation": "「鬼は消えました」 is correct: 「ついに朝になり、太陽が昇ると、鬼は消えてしまいました。」 (Finally, morning came, and as the sun rose, the demon vanished.)"
+      "explanation": "「鬼は消えました」 is correct: 「ついに朝になり、太陽が昇ると、鬼は消えてしまいました。」 (Finally, morning came, and as the sun rose, the demon vanished.)",
+      "optionsEn": [
+        "demon has disappeared",
+        "demon caught the monk",
+        "monk turned into a demon",
+        "grandmother came home crying"
+      ],
+      "questionEn": "What happened after the sun rose?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/adachigahara.json"

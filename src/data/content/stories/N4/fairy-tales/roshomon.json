@@ -2022,7 +2022,14 @@
         "雨を避けて休むため"
       ],
       "answerIndex": 0,
-      "explanation": "「鬼の噂が本当か確かめるため」 is the correct answer according to the story."
+      "explanation": "「鬼の噂が本当か確かめるため」 is the correct answer according to the story.",
+      "optionsEn": [
+        "to find out if the rumors about the ogre are true",
+        "so I met up with my friends there",
+        "to deliver important documents",
+        "to take a break and avoid the rain"
+      ],
+      "questionEn": "Why did Tsuna Watanabe go to Rashomon?"
     },
     {
       "question": "綱が箱にしまっていた鬼の腕を盗みに来たのは誰（何）でしたか？",
@@ -2033,7 +2040,14 @@
         "鬼の仲間である動物"
       ],
       "answerIndex": 1,
-      "explanation": "「鬼に変身した老いた乳母」 is the correct answer according to the story."
+      "explanation": "「鬼に変身した老いた乳母」 is the correct answer according to the story.",
+      "optionsEn": [
+        "gatekeeper",
+        "elderly wet nurse who transformed into a demon",
+        "Emperor’s Envoy, Who Was Worried",
+        "animals that are allies of demons"
+      ],
+      "questionEn": "Who (or what) came to steal the ogre’s arm that Tsunagi had stored in the box?"
     },
     {
       "question": "最後にお話はどうなりましたか？",
@@ -2044,7 +2058,14 @@
         "腕が元に戻って消えてしまった"
       ],
       "answerIndex": 2,
-      "explanation": "「鬼が腕を取り返して空へ逃げた」 is the correct answer according to the story."
+      "explanation": "「鬼が腕を取り返して空へ逃げた」 is the correct answer according to the story.",
+      "optionsEn": [
+        "ogre lost the tug-of-war and apologized",
+        "tsuna became one of the demons’ allies",
+        "ogre grabbed his arm and fled into the sky",
+        "my arm snapped back into place and disappeared"
+      ],
+      "questionEn": "So, how did things turn out in the end?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/roshomon.json"

@@ -1789,7 +1789,14 @@
         "不思議な卵"
       ],
       "answerIndex": 1,
-      "explanation": "「大きな桃」 is correct: 「ある日、おばあさんが川で洗濯をしていると、大きな桃が流れてきました。」 (One day, while the old woman was doing laundry by the river, a large peach floated downstream.)"
+      "explanation": "「大きな桃」 is correct: 「ある日、おばあさんが川で洗濯をしていると、大きな桃が流れてきました。」 (One day, while the old woman was doing laundry by the river, a large peach floated downstream.)",
+      "optionsEn": [
+        "bamboo",
+        "large peach",
+        "apple",
+        "mysterious Egg"
+      ],
+      "questionEn": "What was Momotaro born from?"
     },
     {
       "question": "桃太郎が道中で家来にした動物の組み合わせはどれですか？",
@@ -1800,7 +1807,14 @@
         "鼠、牛、虎"
       ],
       "answerIndex": 0,
-      "explanation": "「犬、猿、キジ」 is correct: 「出発した桃太郎の前に、犬、猿、キジが現れました。」 (As Momotaro set out, a dog, a monkey, and a pheasant appeared before him.)"
+      "explanation": "「犬、猿、キジ」 is correct: 「出発した桃太郎の前に、犬、猿、キジが現れました。」 (As Momotaro set out, a dog, a monkey, and a pheasant appeared before him.)",
+      "optionsEn": [
+        "Dog, Monkey, Pheasant",
+        "cat, fox, raccoon dog",
+        "Bear, Deer, Rabbit",
+        "Rat, Ox, Tiger"
+      ],
+      "questionEn": "Which combination of animals did Momotaro recruit as his companions along the way?"
     },
     {
       "question": "鬼ヶ島で戦いに勝った後、桃太郎はどうしましたか？",
@@ -1811,7 +1825,14 @@
         "鬼たちと友達になってそこに住んだ"
       ],
       "answerIndex": 2,
-      "explanation": "「宝物を取り返して家に帰った」 is the correct answer according to the story."
+      "explanation": "「宝物を取り返して家に帰った」 is the correct answer according to the story.",
+      "optionsEn": [
+        "made the demon boss his subordinate",
+        "he made the island his own castle",
+        "I retrieved my treasure and returned home",
+        "I became friends with the ogres and lived there"
+      ],
+      "questionEn": "After winning the battle on Oni Island, what did Momotaro do?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/momotaro.json"

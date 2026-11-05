@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-11-05T13:57:39.609Z",
-  "bundleHash": "c7bd7859b219",
+  "generatedAt": "2026-11-05T14:51:16.063Z",
+  "bundleHash": "c2ecad8d8753",
   "assets": {
     "dictionary-index.json": {
       "hash": "3d98ac74562d",
@@ -12,20 +12,20 @@
       "bytes": 1195592
     },
     "grammar/N2.json": {
-      "hash": "c485a853d9ce",
-      "bytes": 999574
+      "hash": "f16bde633b99",
+      "bytes": 1145774
     },
     "grammar/N3.json": {
-      "hash": "04125b8666c3",
-      "bytes": 735730
+      "hash": "527e422d2e36",
+      "bytes": 842474
     },
     "grammar/N4.json": {
-      "hash": "cef15d66bb63",
-      "bytes": 697141
+      "hash": "e9f13297c0fc",
+      "bytes": 797949
     },
     "grammar/N5.json": {
-      "hash": "5f2870bd56db",
-      "bytes": 707781
+      "hash": "2807ca81ecee",
+      "bytes": 806951
     },
     "grammar/index.json": {
       "hash": "05a835a617d4",
@@ -100,172 +100,172 @@
       "bytes": 2933055
     },
     "stories/n4-airport-departure.json": {
-      "hash": "77af1f85f811",
-      "bytes": 29403
+      "hash": "9400559e2ae6",
+      "bytes": 30112
     },
     "stories/n4-at-bank.json": {
-      "hash": "357793f02854",
-      "bytes": 25147
+      "hash": "0bcd43c1c3cc",
+      "bytes": 25991
     },
     "stories/n4-at-university.json": {
-      "hash": "ea88f278ebd6",
-      "bytes": 35832
+      "hash": "68fb90fbf828",
+      "bytes": 36419
     },
     "stories/n4-at-zoo.json": {
-      "hash": "c1be39dd0601",
-      "bytes": 26617
+      "hash": "6f13d7891fa1",
+      "bytes": 27808
     },
     "stories/n4-baseball-stadium.json": {
-      "hash": "a304985924b1",
-      "bytes": 30871
+      "hash": "c680747afb6e",
+      "bytes": 31656
     },
     "stories/n4-first-date.json": {
-      "hash": "8499029b1152",
-      "bytes": 27811
+      "hash": "b956ef27e5fb",
+      "bytes": 28800
     },
     "stories/n4-goblin-of-adachigahara.json": {
-      "hash": "28de958206b1",
-      "bytes": 68016
+      "hash": "6fe93bb28a56",
+      "bytes": 68725
     },
     "stories/n4-hanabi-festival.json": {
-      "hash": "5ddc63c61c73",
-      "bytes": 29219
+      "hash": "906f51629d75",
+      "bytes": 30228
     },
     "stories/n4-happy-hunter-skillful-fisher.json": {
-      "hash": "d3b3886ac99e",
-      "bytes": 62628
+      "hash": "32e28c73f439",
+      "bytes": 63349
     },
     "stories/n4-how-an-old-man-lost-his-wen.json": {
-      "hash": "f65666e7389b",
-      "bytes": 62487
+      "hash": "f1195f9826b3",
+      "bytes": 63288
     },
     "stories/n4-jelly-fish-and-monkey.json": {
-      "hash": "8d14fc1ea179",
-      "bytes": 63900
+      "hash": "db10f9021f57",
+      "bytes": 64631
     },
     "stories/n4-momotaro.json": {
-      "hash": "d28d1e0483c3",
-      "bytes": 55287
+      "hash": "fd9a77fbaf86",
+      "bytes": 56302
     },
     "stories/n4-monkey-and-crab.json": {
-      "hash": "22cad8834026",
-      "bytes": 64948
+      "hash": "67d579eb16ce",
+      "bytes": 65968
     },
     "stories/n4-ogre-of-rashomon.json": {
-      "hash": "e95596971ef7",
-      "bytes": 62917
+      "hash": "3488f59c6366",
+      "bytes": 64036
     },
     "stories/n4-okinawa-vacation.json": {
-      "hash": "7befd1321733",
-      "bytes": 29037
+      "hash": "8aedeffbed5d",
+      "bytes": 29751
     },
     "stories/n4-old-man-withered-trees.json": {
-      "hash": "bada5f0bf62c",
-      "bytes": 48215
+      "hash": "fab5a6af72fa",
+      "bytes": 49173
     },
     "stories/n4-police-station.json": {
-      "hash": "5394a9c3b40b",
-      "bytes": 35522
+      "hash": "1e7327595b28",
+      "bytes": 36631
     },
     "stories/n4-sagacious-monkey-and-boar.json": {
-      "hash": "d24e45aaf494",
-      "bytes": 64649
+      "hash": "afbcdfa4371f",
+      "bytes": 65446
     },
     "stories/n4-shinkansen-station.json": {
-      "hash": "b547f093c31f",
-      "bytes": 38628
+      "hash": "9a415b04d254",
+      "bytes": 39621
     },
     "stories/n4-stones-of-five-colors-and-empress-jokwa.json": {
-      "hash": "f891cae26f4f",
-      "bytes": 50933
+      "hash": "511c1be47a89",
+      "bytes": 51340
     },
     "stories/n4-story-of-prince-yamato-take.json": {
-      "hash": "e89d53652065",
-      "bytes": 50909
+      "hash": "5a4c69a485f0",
+      "bytes": 51427
     },
     "stories/n4-white-hare-and-crocodiles.json": {
-      "hash": "50020af9cf87",
-      "bytes": 55707
+      "hash": "065cf4e96430",
+      "bytes": 56498
     },
     "stories/n5-at-movie-theatre.json": {
-      "hash": "5018083cba44",
-      "bytes": 16116
+      "hash": "3eb0f35f4790",
+      "bytes": 17288
     },
     "stories/n5-at-restaurant.json": {
-      "hash": "a235affdacd7",
-      "bytes": 19171
+      "hash": "33519974d043",
+      "bytes": 20467
     },
     "stories/n5-bamboo-cutter.json": {
-      "hash": "f826d19656b9",
-      "bytes": 32977
+      "hash": "59c514e56872",
+      "bytes": 34266
     },
     "stories/n5-farmer-and-badger.json": {
-      "hash": "7e860d8a7916",
-      "bytes": 49489
+      "hash": "6dab4f9055a9",
+      "bytes": 50474
     },
     "stories/n5-going-to-library.json": {
-      "hash": "70876d913c20",
-      "bytes": 16732
+      "hash": "5b0187839ad5",
+      "bytes": 17862
     },
     "stories/n5-going-to-school.json": {
-      "hash": "1917f5af9d32",
-      "bytes": 16876
+      "hash": "de01f7d38dcc",
+      "bytes": 18117
     },
     "stories/n5-kintaro-golden-boy.json": {
-      "hash": "eb8f7f8fc0f7",
-      "bytes": 45444
+      "hash": "884d251214e4",
+      "bytes": 46704
     },
     "stories/n5-local-market.json": {
-      "hash": "b97cac6d6476",
-      "bytes": 17079
+      "hash": "df68f5d18502",
+      "bytes": 18351
     },
     "stories/n5-meeting-friend.json": {
-      "hash": "62c1103906ff",
-      "bytes": 18135
+      "hash": "9321437ded8b",
+      "bytes": 19328
     },
     "stories/n5-mirror-of-matsuyama.json": {
-      "hash": "e4052d1a398d",
-      "bytes": 45917
+      "hash": "d338aebfc1b6",
+      "bytes": 46970
     },
     "stories/n5-my-lord-bag-of-rice.json": {
-      "hash": "217516ba97cc",
-      "bytes": 75693
+      "hash": "01ec18dc288d",
+      "bytes": 76741
     },
     "stories/n5-playing-with-friends.json": {
-      "hash": "d8b1f9859360",
-      "bytes": 17316
+      "hash": "dabfb6b9e96f",
+      "bytes": 18514
     },
     "stories/n5-princess-hase.json": {
-      "hash": "fa79260e2983",
-      "bytes": 61067
+      "hash": "e2984b7a42ce",
+      "bytes": 62191
     },
     "stories/n5-studying-late.json": {
-      "hash": "af007470ca91",
-      "bytes": 16648
+      "hash": "84999dddf655",
+      "bytes": 17746
     },
     "stories/n5-supermarket-trip.json": {
-      "hash": "b87ab58eaaea",
-      "bytes": 19973
+      "hash": "7dfde02bb8a6",
+      "bytes": 21375
     },
     "stories/n5-the-man-who-did-not-wish-to-die.json": {
-      "hash": "b6f5b8377d8d",
-      "bytes": 38661
+      "hash": "ac77b65aa2cd",
+      "bytes": 39866
     },
     "stories/n5-the-shinansha.json": {
-      "hash": "8ce1375d51ff",
-      "bytes": 40556
+      "hash": "f18470409f8f",
+      "bytes": 41755
     },
     "stories/n5-tongue-cut-sparrow.json": {
-      "hash": "013ee75edbd9",
-      "bytes": 61997
+      "hash": "5e57f2fcdad0",
+      "bytes": 62986
     },
     "stories/n5-urashima-taro.json": {
-      "hash": "50ca70f7444b",
-      "bytes": 58050
+      "hash": "c2bd159e192a",
+      "bytes": 59200
     },
     "stories/n5-waking-up-early.json": {
-      "hash": "39efe9c5218b",
-      "bytes": 20293
+      "hash": "83beb4501266",
+      "bytes": 21652
     },
     "strokes/N1.json": {
       "hash": "c7fe3f7ad2a2",

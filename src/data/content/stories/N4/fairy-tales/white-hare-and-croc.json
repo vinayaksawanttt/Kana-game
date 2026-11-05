@@ -1789,7 +1789,14 @@
         "自力で泳ぎました"
       ],
       "answerIndex": 1,
-      "explanation": "「ワニの背中を踏んで渡りました」 is correct: 「兎は海の向こうにある因幡（いなば）の国へ行きたいと思っていましたが、渡る方法がありませんでした。」 (The rabbit wanted to go to the land of Inaba across the sea, but had no way to cross.)"
+      "explanation": "「ワニの背中を踏んで渡りました」 is correct: 「兎は海の向こうにある因幡（いなば）の国へ行きたいと思っていましたが、渡る方法がありませんでした。」 (The rabbit wanted to go to the land of Inaba across the sea, but had no way to cross.)",
+      "optionsEn": [
+        "I boarded a large ship",
+        "I crossed by stepping on the alligator’s back",
+        "I got on my grandfather’s boat",
+        "I swam on my own"
+      ],
+      "questionEn": "How did the rabbit cross the sea?"
     },
     {
       "question": "ワニに毛をむしり取られた兎に、優しい神様は何をするように教えましたか？",
@@ -1800,7 +1807,14 @@
         "美味しいおにぎりを食べること"
       ],
       "answerIndex": 2,
-      "explanation": "「真水で体を洗い、ガマの花粉の上に転がること」 is the correct answer according to the story."
+      "explanation": "「真水で体を洗い、ガマの花粉の上に転がること」 is the correct answer according to the story.",
+      "optionsEn": [
+        "washing one’s body with seawater",
+        "taking medicine to sleep",
+        "wash your body with fresh water and roll around in cattail pollen",
+        "eating a delicious onigiri"
+      ],
+      "questionEn": "What did the kind god tell the rabbit, whose fur had been torn off by a crocodile, to do?"
     },
     {
       "question": "話を助けてもらった兎は、神様に何と言いましたか？",
@@ -1811,7 +1825,14 @@
         "一緒に因幡の国へ行こう"
       ],
       "answerIndex": 0,
-      "explanation": "「美しいお姫様と結婚するだろう」 is the correct answer according to the story."
+      "explanation": "「美しいお姫様と結婚するだろう」 is the correct answer according to the story.",
+      "optionsEn": [
+        "I’ll probably marry a beautiful princess",
+        "I will never lie again",
+        "I want you to catch more fish",
+        "Let’s go to the Province of Inaba together"
+      ],
+      "questionEn": "What did the rabbit, who had been helped, say to God?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/white-hare-and-croc.json"

@@ -2043,7 +2043,14 @@
         "新しい人と結婚しました"
       ],
       "answerIndex": 1,
-      "explanation": "「病気で死にました」 is correct: 「長谷が五歳の時、お母さんは重い病気で死にました。」 (When Hase was five years old, her mother died of a serious illness.)"
+      "explanation": "「病気で死にました」 is correct: 「長谷が五歳の時、お母さんは重い病気で死にました。」 (When Hase was five years old, her mother died of a serious illness.)",
+      "optionsEn": [
+        "ran away",
+        "he died of an illness",
+        "I went to the mountains",
+        "I got married to someone new"
+      ],
+      "questionEn": "What happened to Hase’s real mother?"
     },
     {
       "question": "召し使いは山で長谷をどうしましたか？",
@@ -2054,7 +2061,14 @@
         "お寺に連れて行きました"
       ],
       "answerIndex": 2,
-      "explanation": "「小さい家に住ませました」 is the correct answer according to the story."
+      "explanation": "「小さい家に住ませました」 is the correct answer according to the story.",
+      "optionsEn": [
+        "I killed him",
+        "we ran away together",
+        "I made him live in a small house",
+        "I took them to a temple"
+      ],
+      "questionEn": "What did the servant do to Hase in the mountains?"
     },
     {
       "question": "お父さんはどこで長谷を見つけましたか？",
@@ -2065,7 +2079,14 @@
         "悪いお母さんの部屋"
       ],
       "answerIndex": 0,
-      "explanation": "「遠い山の中」 is correct: 「お父さんは、新しい女の人と結婚しました。」 (Her father married another woman.)"
+      "explanation": "「遠い山の中」 is correct: 「お父さんは、新しい女の人と結婚しました。」 (Her father married another woman.)",
+      "optionsEn": [
+        "deep in the distant mountains",
+        "beautiful Sea",
+        "large temple",
+        "bad Mom’s Room"
+      ],
+      "questionEn": "Where did your father find Hase?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/fairy-tales/princess-hase.json"

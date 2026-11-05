@@ -588,7 +588,14 @@
         "午後四時半"
       ],
       "answerIndex": 2,
-      "explanation": "「午後二時」 is correct: 「時間は午後二時でした。」 (It was 2:00 p.m.)"
+      "explanation": "「午後二時」 is correct: 「時間は午後二時でした。」 (It was 2:00 p.m.)",
+      "optionsEn": [
+        "10:00 a.m",
+        "12:00 a.m",
+        "2:00 p.m",
+        "4:30 p.m"
+      ],
+      "questionEn": "What time did the two of them meet in front of the station?"
     },
     {
       "question": "木村さんは喫茶店で何を飲みましたか？",
@@ -599,7 +606,14 @@
         "温かいお茶"
       ],
       "answerIndex": 3,
-      "explanation": "「温かいお茶」 is correct: 「田中さんはコーヒーを飲んで、木村さんは温かいお茶を飲みました。」 (Mr. Tanaka drank coffee, and Mr. Kimura drank hot tea.)"
+      "explanation": "「温かいお茶」 is correct: 「田中さんはコーヒーを飲んで、木村さんは温かいお茶を飲みました。」 (Mr. Tanaka drank coffee, and Mr. Kimura drank hot tea.)",
+      "optionsEn": [
+        "coffee",
+        "cold water",
+        "juice",
+        "hot tea"
+      ],
+      "questionEn": "What did Mr. Kimura drink at the coffee shop?"
     },
     {
       "question": "田中さんはどうやって家に帰りましたか？",
@@ -610,7 +624,14 @@
         "自転車で"
       ],
       "answerIndex": 2,
-      "explanation": "「電車で」 is correct: 「四時半に「また来週会いましょう」と言って、電車で家に帰りました。」 (At 4:30, I said, “See you next week,” and took the train home.)"
+      "explanation": "「電車で」 is correct: 「四時半に「また来週会いましょう」と言って、電車で家に帰りました。」 (At 4:30, I said, “See you next week,” and took the train home.)",
+      "optionsEn": [
+        "walking",
+        "by bus",
+        "by train",
+        "by bicycle"
+      ],
+      "questionEn": "How did Mr. Tanaka get home?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/meeting-friend.json"

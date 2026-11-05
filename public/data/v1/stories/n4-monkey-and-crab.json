@@ -2120,37 +2120,58 @@
   ],
   "quiz": [
     {
-      "question": "猿とカニは最初に何を交換しましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "おにぎりと柿の種",
-        "栗とハチ",
-        "お金と赤い服",
-        "お茶と甘いお菓子"
-      ],
-      "answerIndex": 0,
-      "explanation": "「おにぎりと柿の種」 is correct: 「昔々、ある秋の日に、猿とカニが川のそばで遊んでいました。」 (Once upon a time, on an autumn day, a monkey and a crab were playing by the river.)"
-    },
-    {
-      "question": "お父さんのカニはどうして死にましたか？",
-      "options": [
-        "木から落ちたから",
-        "猿が硬い柿を投げつけたから",
-        "川に落ちて溺れたから",
-        "重い臼が落ちてきたから"
-      ],
-      "answerIndex": 1,
-      "explanation": "「猿が硬い柿を投げつけたから」 is correct: 「死んだお父さんを見つけた子どものカニは、とても悲しんで泣きました。」 (When the baby crab found its dead father, it was very sad and cried.)"
-    },
-    {
-      "question": "子どものカニを助けた友達は誰ですか？",
-      "options": [
-        "犬と猿とキジ",
-        "亀と魚",
-        "臼とハチと栗",
-        "熊と鹿とうさぎ"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
       ],
       "answerIndex": 2,
-      "explanation": "「臼とハチと栗」 is the correct answer according to the story."
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
+    },
+    {
+      "question": "佐藤さんはカウンターで何をしましたか？",
+      "options": [
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
+      ],
+      "answerIndex": 1,
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
+    },
+    {
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
+      "options": [
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
+      ],
+      "answerIndex": 0,
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
+      ],
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/monkey-and-crab.json"

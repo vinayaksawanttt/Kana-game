@@ -1943,37 +1943,58 @@
   ],
   "quiz": [
     {
-      "question": "太郎は何を助けましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "魚",
-        "犬",
-        "亀",
-        "鳥"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
       ],
       "answerIndex": 2,
-      "explanation": "「亀」 is correct: 「ある日、子供たちが海辺で一匹の亀をいじめていました。」 (One day, some children were tormenting a turtle on the beach.)"
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
     },
     {
-      "question": "太郎は竜宮城にどのくらい（どれぐらい）いましたか？",
+      "question": "佐藤さんはカウンターで何をしましたか？",
       "options": [
-        "三日ぐらい",
-        "一週間ぐらい",
-        "一ヶ月ぐらい",
-        "三年ぐらい"
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
+      ],
+      "answerIndex": 1,
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
+    },
+    {
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
+      "options": [
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
       ],
       "answerIndex": 0,
-      "explanation": "「三日ぐらい」 is correct: 「太郎は三日ぐらい竜宮城にいました。」 (Taro stayed at the Dragon Palace for about three days.)"
-    },
-    {
-      "question": "箱を開けた後、太郎はどうなりましたか？",
-      "options": [
-        "子供になりました",
-        "お金持ちになりました",
-        "おじいさんになりました",
-        "王様になりました"
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
       ],
-      "answerIndex": 2,
-      "explanation": "「おじいさんになりました」 is correct: 「太郎は突然、おじいさんになりました。」 (Taro suddenly turned into an old man.)"
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/fairy-tales/urashima-taro.json"

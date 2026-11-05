@@ -47,6 +47,8 @@ export interface GrammarScrambleQuestion {
   sentenceJp: string;
   romaji: string;
   en: string;
+  naturalEn?: string;
+  literalEn?: string;
   correctChunks: string[];
   scrambledChunks: string[];
 }
@@ -203,6 +205,9 @@ function buildScrambleQuestion(
   const correctChunks = [...example.chunks];
   const scrambledChunks = scrambleNonIdentical(correctChunks, rng);
 
+  const naturalEn = example.naturalEn;
+  const literalEn = example.literalEn || (example.naturalEn && example.naturalEn !== example.en ? example.en : undefined);
+
   return {
     id: `${point.id}:scramble:${questionIndex}`,
     type: "scramble",
@@ -214,7 +219,9 @@ function buildScrambleQuestion(
     level: point.level,
     sentenceJp: example.jp,
     romaji: example.romaji,
-    en: example.en,
+    en: naturalEn || example.en,
+    naturalEn,
+    literalEn,
     correctChunks,
     scrambledChunks,
   };

@@ -1602,37 +1602,58 @@
   ],
   "quiz": [
     {
-      "question": "駿河の国で、ヤマトタケルはどうなりましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "悪い知事に騙されて野原で火に囲まれた",
-        "海で大きな嵐に巻き込まれた",
-        "動物たちと一緒に相撲をした",
-        "川で釣り針をなくした"
-      ],
-      "answerIndex": 0,
-      "explanation": "「悪い知事に騙されて野原で火に囲まれた」 is the correct answer according to the story."
-    },
-    {
-      "question": "ヤマトタケルが危機から脱出できたのは、何のおかげですか？",
-      "options": [
-        "おじいさんにもらった不思議な船",
-        "叔母からもらった特別な剣と道具",
-        "海の王様にもらった二つの宝石",
-        "山で出会った賢いイノシシ"
-      ],
-      "answerIndex": 1,
-      "explanation": "「叔母からもらった特別な剣と道具」 is correct: 「昔々、天皇の息子である「ヤマトタケル」というとても強い若い王子がいました。」 (Once upon a time, there was a very strong young prince named “Yamato Takeru,” who was the son of the Emperor.)"
-    },
-    {
-      "question": "オトタチバナヒメはどうして命を落としましたか？",
-      "options": [
-        "病気になってしまったから",
-        "悪い母親にいじめられたから",
-        "海の神様の怒りを鎮めて王子を救うため",
-        "山で大きな蛇と戦ったから"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
       ],
       "answerIndex": 2,
-      "explanation": "「海の神様の怒りを鎮めて王子を救うため」 is correct: 「彼の妻であるオトタチバナヒメは、海の神様の怒りを鎮めるために自分の命を犠牲にして王子を救いました。」 (His wife, Princess Ototachibana, sacrificed her own life to save the prince and appease the wrath of the sea god.)"
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
+    },
+    {
+      "question": "佐藤さんはカウンターで何をしましたか？",
+      "options": [
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
+      ],
+      "answerIndex": 1,
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
+    },
+    {
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
+      "options": [
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
+      ],
+      "answerIndex": 0,
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
+      ],
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/yamato-take.json"

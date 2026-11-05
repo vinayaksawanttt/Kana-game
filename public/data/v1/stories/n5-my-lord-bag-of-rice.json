@@ -2554,37 +2554,58 @@
   ],
   "quiz": [
     {
-      "question": "秀郷は橋の上で何の上を歩きましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "大きな犬",
-        "大きな龍",
-        "大きなお金",
-        "大きなムカデ"
-      ],
-      "answerIndex": 1,
-      "explanation": "「大きな龍」 is correct: 「橋の上に、とても大きな龍が寝ていました。」 (A very large dragon was sleeping on the bridge.)"
-    },
-    {
-      "question": "湖の王はどうして困っていましたか？",
-      "options": [
-        "食べ物がなかったから",
-        "道がわからなかったから",
-        "大きなムカデが来たから",
-        "橋が壊れたから"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
       ],
       "answerIndex": 2,
-      "explanation": "「大きなムカデが来たから」 is correct: 「湖の王は彼に米俵などの五つのプレゼントをあげました。」 (The King of the Lake gave him five gifts, including the rice sack.)"
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
     },
     {
-      "question": "湖の王がくれた米俵はどうなりましたか？",
+      "question": "佐藤さんはカウンターで何をしましたか？",
       "options": [
-        "すぐに米がなくなりました",
-        "毎日食べても、少なくなりませんでした",
-        "魚になりました",
-        "誰かが盗みました"
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
       ],
       "answerIndex": 1,
-      "explanation": "「毎日食べても、少なくなりませんでした」 is the correct answer according to the story."
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
+    },
+    {
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
+      "options": [
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
+      ],
+      "answerIndex": 0,
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
+      ],
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/fairy-tales/n5-my-lord-bag-of-rice.json"

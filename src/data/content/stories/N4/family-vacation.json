@@ -930,7 +930,14 @@
         "来月の休みに沖縄へ"
       ],
       "answerIndex": 1,
-      "explanation": "「先月の夏休みに沖縄へ」 is correct: 「先月の夏休みに、田中さんは家族と一緒に飛行機で沖縄へ旅行に行きました。」 (During last month’s summer vacation, Mr. Tanaka took a trip to Okinawa by plane with his family.)"
+      "explanation": "「先月の夏休みに沖縄へ」 is correct: 「先月の夏休みに、田中さんは家族と一緒に飛行機で沖縄へ旅行に行きました。」 (During last month’s summer vacation, Mr. Tanaka took a trip to Okinawa by plane with his family.)",
+      "optionsEn": [
+        "I went to Tokyo during my time off last week",
+        "to Okinawa during last month’s summer vacation",
+        "on my day off yesterday, I went to the nearby beach",
+        "I’m going to Okinawa during my vacation next month"
+      ],
+      "questionEn": "When and where did Mr. Tanaka go on a trip?"
     },
     {
       "question": "午後、家族は海岸で何をしましたか？",
@@ -941,7 +948,14 @@
         "ホテルのレストランで料理を食べました"
       ],
       "answerIndex": 0,
-      "explanation": "「泳いだり貝を拾ったりしました」 is the correct answer according to the story."
+      "explanation": "「泳いだり貝を拾ったりしました」 is the correct answer according to the story.",
+      "optionsEn": [
+        "we went swimming and collected shells",
+        "we went fishing and took photos",
+        "I went on a boat and slept",
+        "I ate a meal at the hotel restaurant"
+      ],
+      "questionEn": "What did the family do at the beach in the afternoon?"
     },
     {
       "question": "田中さんは夜、妻に何と言いましたか？",
@@ -952,7 +966,14 @@
         "「また来年も沖縄へ来たいですね」"
       ],
       "answerIndex": 3,
-      "explanation": "「「また来年も沖縄へ来たいですね」」 is correct: 「田中さんは「また来年も沖縄へ来たいですね」と妻に言いました。」 (Mr. Tanaka said to his wife, “I’d like to come back to Okinawa next year, too.”)"
+      "explanation": "「「また来年も沖縄へ来たいですね」」 is correct: 「田中さんは「また来年も沖縄へ来たいですね」と妻に言いました。」 (Mr. Tanaka said to his wife, “I’d like to come back to Okinawa next year, too.”)",
+      "optionsEn": [
+        "\"Let's go home soon.\"",
+        "\"The ocean is cold and feels great, doesn't it?\"",
+        "\"The pork dish was delicious, wasn't it?\"",
+        "“I’d like to visit Okinawa again next year.”"
+      ],
+      "questionEn": "What did Mr. Tanaka say to his wife that night?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/family-vacation.json"

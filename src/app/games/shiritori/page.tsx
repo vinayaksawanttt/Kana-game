@@ -42,7 +42,7 @@ export default function ShiritoriSetupPage() {
   }
 
   return (
-    <GameLayout label="SHIRITORI" glyph="鎖">
+    <GameLayout label="SHIRITORI" glyph="鎖" homeHref="/games/shiritori">
       <section className="mx-auto w-full max-w-5xl flex-1 px-5 pb-10 sm:px-8">
         <header className="pb-7 pt-4 text-center sm:pb-9 sm:pt-8">
           <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-[var(--primary-fg)]">Japanese word chain</p>

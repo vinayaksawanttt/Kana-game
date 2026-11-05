@@ -80,7 +80,9 @@ export interface StoryParagraph {
 
 export interface StoryQuiz {
   question: string;
+  questionEn?: string;
   options: string[];
+  optionsEn?: string[];
   answerIndex: number;
   explanation?: string;
 }

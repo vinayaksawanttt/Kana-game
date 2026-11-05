@@ -2028,7 +2028,14 @@
         "道に迷ったから"
       ],
       "answerIndex": 0,
-      "explanation": "「兄の大切な釣り針をなくしたから」 is correct: 「しかし、弟の山幸彦は魚の釣り方がわかりませんでした。」 (However, the younger brother, Yamakohiko, did not know how to fish.)"
+      "explanation": "「兄の大切な釣り針をなくしたから」 is correct: 「しかし、弟の山幸彦は魚の釣り方がわかりませんでした。」 (However, the younger brother, Yamakohiko, did not know how to fish.)",
+      "optionsEn": [
+        "because I lost my older brother’s precious fishing hook,",
+        "because I caught a lot of fish",
+        "because the boat broke",
+        "because I got lost"
+      ],
+      "questionEn": "Why was Yamato-takeru in trouble at the seashore?"
     },
     {
       "question": "誰の喉（のど）に釣り針が刺さっていましたか？",
@@ -2039,7 +2046,14 @@
         "鯛（たい）"
       ],
       "answerIndex": 3,
-      "explanation": "「鯛（たい）」 is correct: 「王様が海の魚たちを集めて聞くと、鯛（たい）の喉（のど）に釣り針が刺さっていることがわかりました。」 (When the king gathered the fish of the sea and asked them, he discovered that a fishing hook was lodged in the sea bream’s throat.)"
+      "explanation": "「鯛（たい）」 is correct: 「王様が海の魚たちを集めて聞くと、鯛（たい）の喉（のど）に釣り針が刺さっていることがわかりました。」 (When the king gathered the fish of the sea and asked them, he discovered that a fishing hook was lodged in the sea bream’s throat.)",
+      "optionsEn": [
+        "octopus",
+        "large Crocodile",
+        "king of the Sea",
+        "tai (sea bream)"
+      ],
+      "questionEn": "Whose throat was the fishhook stuck in?"
     },
     {
       "question": "山幸彦はどうやって兄に勝ちましたか？",
@@ -2050,7 +2064,14 @@
         "ワニが兄を食べました"
       ],
       "answerIndex": 1,
-      "explanation": "「海の王様にもらった宝石を使いました」 is correct: 「しかし、弟の山幸彦は魚の釣り方がわかりませんでした。」 (However, the younger brother, Yamakohiko, did not know how to fish.)"
+      "explanation": "「海の王様にもらった宝石を使いました」 is correct: 「しかし、弟の山幸彦は魚の釣り方がわかりませんでした。」 (However, the younger brother, Yamakohiko, did not know how to fish.)",
+      "optionsEn": [
+        "they fought with swords",
+        "I used the gem I received from the King of the Sea",
+        "my grandfather helped me",
+        "crocodile ate my older brother"
+      ],
+      "questionEn": "How did Yamato-takeru defeat his older brother?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/skillful-fisher.json"

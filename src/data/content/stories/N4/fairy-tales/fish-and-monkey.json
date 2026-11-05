@@ -2121,7 +2121,14 @@
         "クラゲを罰するため"
       ],
       "answerIndex": 1,
-      "explanation": "「奥さんの病気を治すため」 is correct: 「奥さんの病気を治すために、あなたの肝臓が必要なのです」と本当のことを言ってしまいました。」 (“I need your liver to cure your wife’s illness,” the jellyfish blurted out the truth.)"
+      "explanation": "「奥さんの病気を治すため」 is correct: 「奥さんの病気を治すために、あなたの肝臓が必要なのです」と本当のことを言ってしまいました。」 (“I need your liver to cure your wife’s illness,” the jellyfish blurted out the truth.)",
+      "optionsEn": [
+        "because I wanted to eat it",
+        "to cure my wife’s illness",
+        "because I hated monkeys",
+        "to punish jellyfish"
+      ],
+      "questionEn": "Why did the king say he wanted a monkey’s liver?"
     },
     {
       "question": "海を渡る途中、猿はどうして島に戻りたいと言いましたか？",
@@ -2132,7 +2139,14 @@
         "お腹が空いたから"
       ],
       "answerIndex": 2,
-      "explanation": "「肝臓を木に忘れたと嘘をついたから」 is correct: 「しかし海を渡る途中、クラゲは「猿さん、肝臓を持っていますか？」 (But while crossing the sea, the jellyfish blurted out, “Mr. Monkey, do you have a liver?)"
+      "explanation": "「肝臓を木に忘れたと嘘をついたから」 is correct: 「しかし海を渡る途中、クラゲは「猿さん、肝臓を持っていますか？」 (But while crossing the sea, the jellyfish blurted out, “Mr. Monkey, do you have a liver?)",
+      "optionsEn": [
+        "because I was afraid of the ocean",
+        "because the jellyfish was slow,",
+        "because I lied and said I’d left my liver in a tree",
+        "because I’m hungry"
+      ],
+      "questionEn": "While crossing the sea, why did the monkey say he wanted to return to the island?"
     },
     {
       "question": "王様に怒られた後、クラゲの体はどうなりましたか？",
@@ -2143,7 +2157,14 @@
         "魚になりました"
       ],
       "answerIndex": 0,
-      "explanation": "「骨がない柔らかい体になりました」 is the correct answer according to the story."
+      "explanation": "「骨がない柔らかい体になりました」 is the correct answer according to the story.",
+      "optionsEn": [
+        "my body has become soft and boneless",
+        "I became the same as a monkey",
+        "my body became as hard as a turtle’s shell",
+        "I became a fish"
+      ],
+      "questionEn": "What happened to the jellyfish’s body after the king got angry at it?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/fish-and-monkey.json"

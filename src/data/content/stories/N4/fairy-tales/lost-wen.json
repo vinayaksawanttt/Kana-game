@@ -2037,7 +2037,14 @@
         "自分で切って取った"
       ],
       "answerIndex": 1,
-      "explanation": "「鬼の前で上手に踊って、鬼に取ってもらった」 is the correct answer according to the story."
+      "explanation": "「鬼の前で上手に踊って、鬼に取ってもらった」 is the correct answer according to the story.",
+      "optionsEn": [
+        "I got medicine from the doctor",
+        "I danced well in front of the ogre, and the ogre took me",
+        "I washed my face with special water",
+        "I cut it out myself"
+      ],
+      "questionEn": "How did the kind old man remove the lump?"
     },
     {
       "question": "意地悪なおじいさんが鬼の前で踊った時、どうなりましたか？",
@@ -2048,7 +2055,14 @@
         "お金をたくさんもらった"
       ],
       "answerIndex": 2,
-      "explanation": "「踊りが下手で怒られ、もう一つのこぶをつけられた」 is correct: 「隣の家には、同じように頬にこぶがあって性格の悪い意地悪なおじいさんが住んでいました。」 (In the house next door lived an old man who also had a lump on his cheek and was mean and spiteful.)"
+      "explanation": "「踊りが下手で怒られ、もう一つのこぶをつけられた」 is correct: 「隣の家には、同じように頬にこぶがあって性格の悪い意地悪なおじいさんが住んでいました。」 (In the house next door lived an old man who also had a lump on his cheek and was mean and spiteful.)",
+      "optionsEn": [
+        "demon praised me highly",
+        "both lumps disappeared",
+        "I was scolded for being a poor dancer, and another bump was added to my head",
+        "I received a lot of money"
+      ],
+      "questionEn": "What happened when the mean old man danced in front of the ogre?"
     },
     {
       "question": "最終的に、意地悪なおじいさんはどうなりましたか？",
@@ -2059,7 +2073,14 @@
         "村から引っ越した"
       ],
       "answerIndex": 0,
-      "explanation": "「両方の頬にこぶがついた」 is the correct answer according to the story."
+      "explanation": "「両方の頬にこぶがついた」 is the correct answer according to the story.",
+      "optionsEn": [
+        "he had lumps on both cheeks",
+        "all the lumps are gone",
+        "became the boss of the ogres",
+        "moved away from the village"
+      ],
+      "questionEn": "In the end, what happened to the mean old man?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/lost-wen.json"

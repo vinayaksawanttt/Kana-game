@@ -2143,7 +2143,14 @@
         "猿が赤ちゃんをいじめたから"
       ],
       "answerIndex": 2,
-      "explanation": "「猿が年を取って上手に踊れなかったから」 is the correct answer according to the story."
+      "explanation": "「猿が年を取って上手に踊れなかったから」 is the correct answer according to the story.",
+      "optionsEn": [
+        "because the monkey ate too much",
+        "because the monkey tried to escape",
+        "because the monkey was getting old and couldn’t dance well anymore,",
+        "because the monkey bullied the baby,"
+      ],
+      "questionEn": "Why did the man try to sell the monkey?"
     },
     {
       "question": "イノシシは猿にどんな作戦（計画）を教えましたか？",
@@ -2154,7 +2161,14 @@
         "肉屋を海に落とす作戦"
       ],
       "answerIndex": 1,
-      "explanation": "「イノシシが赤ちゃんを連れて逃げて、猿が助ける作戦」 is correct: 「猿は「どうしよう」と考えて、森に住んでいる賢いイノシシに相談することにしました。」 (The monkey thought, “What should I do?” and decided to ask a wise wild boar living in the forest for advice.)"
+      "explanation": "「イノシシが赤ちゃんを連れて逃げて、猿が助ける作戦」 is correct: 「猿は「どうしよう」と考えて、森に住んでいる賢いイノシシに相談することにしました。」 (The monkey thought, “What should I do?” and decided to ask a wise wild boar living in the forest for advice.)",
+      "optionsEn": [
+        "plan for a Wild Boar to Kill a Man",
+        "plan in which a wild boar flees with its baby, and a monkey comes to the rescue",
+        "plan to Escape Together to the Distant Mountains",
+        "Operation: Throw the Butcher into the Sea"
+      ],
+      "questionEn": "What strategy (plan) did the wild boar teach the monkey?"
     },
     {
       "question": "最後に猿はどうなりましたか？",
@@ -2165,7 +2179,14 @@
         "新しい赤ちゃんになりました"
       ],
       "answerIndex": 1,
-      "explanation": "「家で大切に育てられました」 is the correct answer according to the story."
+      "explanation": "「家で大切に育てられました」 is the correct answer according to the story.",
+      "optionsEn": [
+        "it was sold at the butcher shop",
+        "I was lovingly raised at home",
+        "I lived in the forest with a wild boar",
+        "I’ve become a new baby"
+      ],
+      "questionEn": "What happened to the monkey in the end?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/monkey-boar.json"

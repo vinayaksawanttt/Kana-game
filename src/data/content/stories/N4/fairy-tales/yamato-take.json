@@ -1610,7 +1610,14 @@
         "川で釣り針をなくした"
       ],
       "answerIndex": 0,
-      "explanation": "「悪い知事に騙されて野原で火に囲まれた」 is the correct answer according to the story."
+      "explanation": "「悪い知事に騙されて野原で火に囲まれた」 is the correct answer according to the story.",
+      "optionsEn": [
+        "deceived by a corrupt governor, I found myself surrounded by fire in a field",
+        "caught in a major storm at sea",
+        "I wrestled sumo with the animals",
+        "I lost my fishing hook in the river"
+      ],
+      "questionEn": "What happened to Yamato Takeru in the Province of Suruga?"
     },
     {
       "question": "ヤマトタケルが危機から脱出できたのは、何のおかげですか？",
@@ -1621,7 +1628,14 @@
         "山で出会った賢いイノシシ"
       ],
       "answerIndex": 1,
-      "explanation": "「叔母からもらった特別な剣と道具」 is correct: 「昔々、天皇の息子である「ヤマトタケル」というとても強い若い王子がいました。」 (Once upon a time, there was a very strong young prince named “Yamato Takeru,” who was the son of the Emperor.)"
+      "explanation": "「叔母からもらった特別な剣と道具」 is correct: 「昔々、天皇の息子である「ヤマトタケル」というとても強い若い王子がいました。」 (Once upon a time, there was a very strong young prince named “Yamato Takeru,” who was the son of the Emperor.)",
+      "optionsEn": [
+        "mysterious Boat I Got from My Grandpa",
+        "special sword and tools I received from my aunt",
+        "two Gems I Received from the King of the Sea",
+        "clever Wild Boar I Met in the Mountains"
+      ],
+      "questionEn": "What enabled Yamato Takeru to escape from danger?"
     },
     {
       "question": "オトタチバナヒメはどうして命を落としましたか？",
@@ -1632,7 +1646,14 @@
         "山で大きな蛇と戦ったから"
       ],
       "answerIndex": 2,
-      "explanation": "「海の神様の怒りを鎮めて王子を救うため」 is correct: 「彼の妻であるオトタチバナヒメは、海の神様の怒りを鎮めるために自分の命を犠牲にして王子を救いました。」 (His wife, Princess Ototachibana, sacrificed her own life to save the prince and appease the wrath of the sea god.)"
+      "explanation": "「海の神様の怒りを鎮めて王子を救うため」 is correct: 「彼の妻であるオトタチバナヒメは、海の神様の怒りを鎮めるために自分の命を犠牲にして王子を救いました。」 (His wife, Princess Ototachibana, sacrificed her own life to save the prince and appease the wrath of the sea god.)",
+      "optionsEn": [
+        "because I got sick",
+        "because I was bullied by a bad mother",
+        "to appease the wrath of the sea god and save the prince",
+        "because I fought a big snake in the mountains"
+      ],
+      "questionEn": "How did Princess Ototachibana die?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/yamato-take.json"

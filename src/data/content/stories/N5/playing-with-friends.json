@@ -563,7 +563,14 @@
         "水泳"
       ],
       "answerIndex": 1,
-      "explanation": "「サッカー」 is correct: 「みんなで午後一時から三時までサッカーをしました。」 (We all played soccer from 1:00 p.m. to 3:00 p.m.)"
+      "explanation": "「サッカー」 is correct: 「みんなで午後一時から三時までサッカーをしました。」 (We all played soccer from 1:00 p.m. to 3:00 p.m.)",
+      "optionsEn": [
+        "tennis",
+        "soccer",
+        "baseball",
+        "swimming"
+      ],
+      "questionEn": "What did you all do at the park?"
     },
     {
       "question": "木の下で何を飲みましたか？",
@@ -574,7 +581,14 @@
         "冷たい水"
       ],
       "answerIndex": 3,
-      "explanation": "「冷たい水」 is correct: 「それから、大きい木の下に座って、冷たい水を飲みました。」 (Then, we sat under a big tree and drank some cold water.)"
+      "explanation": "「冷たい水」 is correct: 「それから、大きい木の下に座って、冷たい水を飲みました。」 (Then, we sat under a big tree and drank some cold water.)",
+      "optionsEn": [
+        "tea",
+        "juice",
+        "coffee",
+        "cold water"
+      ],
+      "questionEn": "What did you drink under the tree?"
     },
     {
       "question": "山田さんはどうやって家に帰りましたか？",
@@ -585,7 +599,14 @@
         "電車で"
       ],
       "answerIndex": 0,
-      "explanation": "「歩いて」 is correct: 「五時に「また遊びましょう」と言って、歩いて家に帰りました。」 (At 5:00, I said, “Let’s hang out again,” and walked home.)"
+      "explanation": "「歩いて」 is correct: 「五時に「また遊びましょう」と言って、歩いて家に帰りました。」 (At 5:00, I said, “Let’s hang out again,” and walked home.)",
+      "optionsEn": [
+        "walking",
+        "by bicycle",
+        "by bus",
+        "by train"
+      ],
+      "questionEn": "How did Mr. Yamada get home?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/playing-with-friends.json"

@@ -1497,7 +1497,14 @@
         "花"
       ],
       "answerIndex": 1,
-      "explanation": "「鏡」 is correct: 「ある日、お父さんは遠い町へ行って、お母さんに鏡（かがみ）を買いました。」 (One day, the father went to a distant town and bought a mirror for the mother.)"
+      "explanation": "「鏡」 is correct: 「ある日、お父さんは遠い町へ行って、お母さんに鏡（かがみ）を買いました。」 (One day, the father went to a distant town and bought a mirror for the mother.)",
+      "optionsEn": [
+        "clothing",
+        "mirror",
+        "book",
+        "flower"
+      ],
+      "questionEn": "What did Dad buy for Mom?"
     },
     {
       "question": "女の子は毎日部屋で何をしましたか？",
@@ -1508,7 +1515,14 @@
         "寝ました"
       ],
       "answerIndex": 2,
-      "explanation": "「鏡を見ました」 is correct: 「女の子は毎日部屋で鏡を見ました。」 (The girl looked in the mirror in her room every day.)"
+      "explanation": "「鏡を見ました」 is correct: 「女の子は毎日部屋で鏡を見ました。」 (The girl looked in the mirror in her room every day.)",
+      "optionsEn": [
+        "I read a book",
+        "I sang a song",
+        "I looked in the mirror",
+        "I went to sleep"
+      ],
+      "questionEn": "What did the girl do in her room every day?"
     },
     {
       "question": "新しいお母さんは女の子の話を聞いて、どうしましたか？",
@@ -1519,7 +1533,14 @@
         "鏡を捨てました"
       ],
       "answerIndex": 1,
-      "explanation": "「女の子に謝りました」 is correct: 「新しいお母さんはそれを聞いて、女の子に謝りました。」 (When the new mother heard this, she apologized to the girl.)"
+      "explanation": "「女の子に謝りました」 is correct: 「新しいお母さんはそれを聞いて、女の子に謝りました。」 (When the new mother heard this, she apologized to the girl.)",
+      "optionsEn": [
+        "I ran away from home",
+        "I apologized to the girl",
+        "I married my father",
+        "I threw away the mirror"
+      ],
+      "questionEn": "What did the new mother do after listening to the girl’s story?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/fairy-tales/matsuyama.json"

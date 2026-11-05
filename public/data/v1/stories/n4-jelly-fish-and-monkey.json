@@ -2113,37 +2113,58 @@
   ],
   "quiz": [
     {
-      "question": "どうして王様は猿の肝臓が欲しいと言いましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "自分が食べたかったから",
-        "奥さんの病気を治すため",
-        "猿が嫌いだったから",
-        "クラゲを罰するため"
-      ],
-      "answerIndex": 1,
-      "explanation": "「奥さんの病気を治すため」 is correct: 「奥さんの病気を治すために、あなたの肝臓が必要なのです」と本当のことを言ってしまいました。」 (“I need your liver to cure your wife’s illness,” the jellyfish blurted out the truth.)"
-    },
-    {
-      "question": "海を渡る途中、猿はどうして島に戻りたいと言いましたか？",
-      "options": [
-        "海が怖かったから",
-        "クラゲが遅かったから",
-        "肝臓を木に忘れたと嘘をついたから",
-        "お腹が空いたから"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
       ],
       "answerIndex": 2,
-      "explanation": "「肝臓を木に忘れたと嘘をついたから」 is correct: 「しかし海を渡る途中、クラゲは「猿さん、肝臓を持っていますか？」 (But while crossing the sea, the jellyfish blurted out, “Mr. Monkey, do you have a liver?)"
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
     },
     {
-      "question": "王様に怒られた後、クラゲの体はどうなりましたか？",
+      "question": "佐藤さんはカウンターで何をしましたか？",
       "options": [
-        "骨がない柔らかい体になりました",
-        "猿と同じ体になりました",
-        "亀のように硬い体になりました",
-        "魚になりました"
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
+      ],
+      "answerIndex": 1,
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
+    },
+    {
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
+      "options": [
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
       ],
       "answerIndex": 0,
-      "explanation": "「骨がない柔らかい体になりました」 is the correct answer according to the story."
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
+      ],
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/fish-and-monkey.json"

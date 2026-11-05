@@ -1317,7 +1317,14 @@
         "大きな魚"
       ],
       "answerIndex": 1,
-      "explanation": "「紙の鳥」 is correct: 「神様は彼に紙の鳥をあげました。」 (God gave him a paper bird.)"
+      "explanation": "「紙の鳥」 is correct: 「神様は彼に紙の鳥をあげました。」 (God gave him a paper bird.)",
+      "optionsEn": [
+        "white horse",
+        "paper Bird",
+        "old ship",
+        "large fish"
+      ],
+      "questionEn": "What did Sentaro ride to fly through the sky?"
     },
     {
       "question": "「死なない国」の人たちはどう思っていましたか？",
@@ -1328,7 +1335,14 @@
         "よく働きたい"
       ],
       "answerIndex": 2,
-      "explanation": "「死にたい」 is correct: 「しかし、みんな「死にたいです。」 (But everyone said, “I want to die.)"
+      "explanation": "「死にたい」 is correct: 「しかし、みんな「死にたいです。」 (But everyone said, “I want to die.)",
+      "optionsEn": [
+        "I want to live forever",
+        "every day is fun",
+        "I want to die",
+        "I want to work hard"
+      ],
+      "questionEn": "What did the people of the “Land of the Undead” think?"
     },
     {
       "question": "大きな魚が来た時、千太郎はどうなりましたか？",
@@ -1339,7 +1353,14 @@
         "海を泳ぎました"
       ],
       "answerIndex": 1,
-      "explanation": "「起きました」 is correct: 「」と大きな声で言った時、千太郎は起きました。」 (\"When he shouted, 'Help!' in a loud voice, Sentaro woke up.\")"
+      "explanation": "「起きました」 is correct: 「」と大きな声で言った時、千太郎は起きました。」 (\"When he shouted, 'Help!' in a loud voice, Sentaro woke up.\")",
+      "optionsEn": [
+        "I ate fish",
+        "I woke up",
+        "I talked to a fish",
+        "I swam in the ocean"
+      ],
+      "questionEn": "What happened to Sentaro when the big fish came?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/fairy-tales/wish-to-die.json"

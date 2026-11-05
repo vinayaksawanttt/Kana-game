@@ -1145,7 +1145,14 @@
         "お巡りさんと話したかったから"
       ],
       "answerIndex": 1,
-      "explanation": "「財布をなくしたから」 is correct: 「昨日の夕方、山田さんは財布をなくしてしまいました。」 (Yesterday evening, Mr. Yamada lost his wallet.)"
+      "explanation": "「財布をなくしたから」 is correct: 「昨日の夕方、山田さんは財布をなくしてしまいました。」 (Yesterday evening, Mr. Yamada lost his wallet.)",
+      "optionsEn": [
+        "because I didn’t know the way",
+        "because I lost my wallet",
+        "because I found some money",
+        "because I wanted to talk to the police officer"
+      ],
+      "questionEn": "Why did Mr. Yamada go to the police box?"
     },
     {
       "question": "山田さんの財布の中には何が入っていましたか。",
@@ -1156,7 +1163,14 @@
         "家族の写真"
       ],
       "answerIndex": 2,
-      "explanation": "「大切なカードと一万円」 is correct: 「中に大切なカードと一万円が入っています」と答えました。」 (\"It has some important cards and 10,000 yen inside,\" he replied.)"
+      "explanation": "「大切なカードと一万円」 is correct: 「中に大切なカードと一万円が入っています」と答えました。」 (\"It has some important cards and 10,000 yen inside,\" he replied.)",
+      "optionsEn": [
+        "ticket and 5,000 yen",
+        "key and 10,000 Yen",
+        "precious card and 10,000 yen",
+        "family photos"
+      ],
+      "questionEn": "What was inside Mr. Yamada’s wallet?"
     },
     {
       "question": "なくした財布はどこで見つかりましたか。",
@@ -1167,7 +1181,14 @@
         "駅の中"
       ],
       "answerIndex": 3,
-      "explanation": "「駅の中」 is the correct answer according to the story."
+      "explanation": "「駅の中」 is the correct answer according to the story.",
+      "optionsEn": [
+        "inside a police box",
+        "inside the Company",
+        "on the Road",
+        "inside the Station"
+      ],
+      "questionEn": "Where was the lost wallet found?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/police-station.json"

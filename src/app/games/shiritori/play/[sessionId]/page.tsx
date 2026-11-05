@@ -20,6 +20,7 @@ import {
 import { loadShiritoriData } from "@/data/shiritori";
 import { addVocabularyToSrs } from "@/lib/srs/service";
 import { GameLayout } from "@/lib/game-core/layout";
+import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
 
 interface StoredShiritoriSession {
   sessionId: string;
@@ -80,6 +81,15 @@ function ShiritoriPlayContent() {
   const [blitzSecondsLeft, setBlitzSecondsLeft] = useState(60);
   const inputRef = useRef<HTMLInputElement>(null);
   const [state, setState] = useState<ShiritoriState | null>(null);
+  const isPlaying = state?.status === "playing";
+  const { quitDialogOpen, requestQuit, cancelQuit, confirmQuit } = useQuitSessionGuard(Boolean(isPlaying));
+
+  function quitSession() {
+    confirmQuit();
+    sessionStorage.removeItem(`shiritori-session:${sessionId}`);
+    router.replace("/games/shiritori");
+  }
+
   const activeMode = state?.settings.mode;
   const activeStatus = state?.status;
   const turnDuration = state?.settings.turnSeconds;
@@ -243,7 +253,13 @@ function ShiritoriPlayContent() {
   }, {});
 
   return (
-    <GameLayout label="SHIRITORI" glyph="鎖" className="min-h-dvh">
+    <GameLayout
+      label="SHIRITORI"
+      glyph="鎖"
+      homeHref="/games/shiritori"
+      onNavigateHome={isEnded ? undefined : requestQuit}
+      className="min-h-dvh"
+    >
       <section className="mx-auto flex w-full max-w-5xl flex-1 flex-col px-4 pb-6 sm:px-8">
         <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] pb-3">
           <div className="flex flex-wrap items-center gap-2">
@@ -380,6 +396,7 @@ function ShiritoriPlayContent() {
           </section>
         </div>
       )}
+      <QuitSessionDialog open={quitDialogOpen} onCancel={cancelQuit} onConfirm={quitSession} />
     </GameLayout>
   );
 }

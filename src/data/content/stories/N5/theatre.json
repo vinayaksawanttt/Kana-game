@@ -521,7 +521,14 @@
         "自転車で"
       ],
       "answerIndex": 1,
-      "explanation": "「電車で」 is correct: 「日曜日の午後、田中さんは電車に乗って町の映画館へ行きました。」 (On Sunday afternoon, Mr. Tanaka took the train to the movie theater in town.)"
+      "explanation": "「電車で」 is correct: 「日曜日の午後、田中さんは電車に乗って町の映画館へ行きました。」 (On Sunday afternoon, Mr. Tanaka took the train to the movie theater in town.)",
+      "optionsEn": [
+        "by bus",
+        "by train",
+        "by car",
+        "by bicycle"
+      ],
+      "questionEn": "How did Mr. Tanaka get to the movie theater?"
     },
     {
       "question": "切符はいくらでしたか？",
@@ -532,7 +539,14 @@
         "二千円"
       ],
       "answerIndex": 2,
-      "explanation": "「千五百円」 is correct: 「田中さんは千五百円で切符を買いました。」 (Mr. Tanaka bought a ticket for 1,500 yen.)"
+      "explanation": "「千五百円」 is correct: 「田中さんは千五百円で切符を買いました。」 (Mr. Tanaka bought a ticket for 1,500 yen.)",
+      "optionsEn": [
+        "1,000 yen",
+        "1,200 yen",
+        "1,500 yen",
+        "2,000 yen"
+      ],
+      "questionEn": "How much was the ticket?"
     },
     {
       "question": "映画館を出た後、田中さんはどこへ行きましたか？",
@@ -543,7 +557,14 @@
         "駅"
       ],
       "answerIndex": 2,
-      "explanation": "「本屋」 is correct: 「四時に映画館を出て、本屋へ寄ってから歩いて家に帰りました。」 (I left the movie theater at 4:00, stopped by a bookstore, and then walked home.)"
+      "explanation": "「本屋」 is correct: 「四時に映画館を出て、本屋へ寄ってから歩いて家に帰りました。」 (I left the movie theater at 4:00, stopped by a bookstore, and then walked home.)",
+      "optionsEn": [
+        "coffee shop",
+        "park",
+        "bookstore",
+        "station"
+      ],
+      "questionEn": "Where did Mr. Tanaka go after leaving the movie theater?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/theatre.json"

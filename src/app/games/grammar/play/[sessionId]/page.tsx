@@ -91,6 +91,7 @@ function GrammarGame({
 
   // Scramble state: array of pool indices currently placed in the dropzone
   const [selectedPoolIndices, setSelectedPoolIndices] = useState<number[]>([]);
+  const [showLiteralHint, setShowLiteralHint] = useState(false);
 
   // Guide drawer state
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -109,6 +110,7 @@ function GrammarGame({
     questionStartedAt.current = Date.now();
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setSelectedPoolIndices([]);
+    setShowLiteralHint(false);
     setDrawerOpen(false);
     setGuideDoc(null);
   }, [state.index]);
@@ -254,10 +256,28 @@ function GrammarGame({
                   <p className="text-xs font-semibold tracking-[0.14em] text-[var(--muted)] uppercase">
                     Build the Japanese sentence for:
                   </p>
-                  <p className="mt-1.5 text-lg font-semibold text-[var(--ink)]">{question.en}</p>
-                  <p className="mt-1 text-xs text-[var(--muted)]">
-                    Hint: Uses <strong>{question.grammarPattern}</strong> ({question.shortExplanation})
+                  <p className="mt-1.5 text-lg font-semibold text-[var(--ink)]">
+                    {question.naturalEn || question.en}
                   </p>
+                  <div className="mt-1 flex flex-wrap items-center gap-2 text-xs text-[var(--muted)]">
+                    <span>
+                      Hint: Uses <strong>{question.grammarPattern}</strong> ({question.shortExplanation})
+                    </span>
+                    {question.literalEn && question.literalEn !== (question.naturalEn || question.en) && (
+                      <button
+                        type="button"
+                        onClick={() => setShowLiteralHint((prev) => !prev)}
+                        className="inline-flex items-center gap-1 rounded-md border border-[var(--line)] bg-[var(--surface)] px-2 py-0.5 text-[11px] font-medium text-[var(--primary)] hover:border-[var(--primary)] transition-colors"
+                      >
+                        {showLiteralHint ? "Hide structural hint" : "💡 Structural hint"}
+                      </button>
+                    )}
+                  </div>
+                  {showLiteralHint && question.literalEn && (
+                    <p className="mt-2 rounded-lg border border-[var(--sakura)] bg-[var(--sakura-light)]/40 p-2 text-xs text-[var(--ink)]">
+                      <strong className="text-[var(--primary)]">Structural breakdown:</strong> {question.literalEn}
+                    </p>
+                  )}
 
                   {/* Dropzone Line */}
                   <div

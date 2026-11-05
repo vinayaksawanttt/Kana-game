@@ -794,7 +794,14 @@
         "水道代を払うため"
       ],
       "answerIndex": 1,
-      "explanation": "「新しい口座を作るため」 is correct: 「先週の金曜日の午後、山田さんは新しい口座を作るために駅の近くの銀行へ行きました。」 (Last Friday afternoon, Mr. Yamada went to a bank near the station to open a new account.)"
+      "explanation": "「新しい口座を作るため」 is correct: 「先週の金曜日の午後、山田さんは新しい口座を作るために駅の近くの銀行へ行きました。」 (Last Friday afternoon, Mr. Yamada went to a bank near the station to open a new account.)",
+      "optionsEn": [
+        "to borrow money",
+        "to open a new account",
+        "to exchange for foreign currency",
+        "to pay the water bill"
+      ],
+      "questionEn": "Why did Mr. Yamada go to the bank?"
     },
     {
       "question": "山田さんは窓口で何を見せましたか？",
@@ -805,7 +812,14 @@
         "古い通帳と印鑑"
       ],
       "answerIndex": 0,
-      "explanation": "「書類と保険証」 is correct: 「自分の番号が呼ばれたので、窓口へ行って書類と保険証を見せました。」 (When my number was called, I went to the counter and showed them my documents and insurance card.)"
+      "explanation": "「書類と保険証」 is correct: 「自分の番号が呼ばれたので、窓口へ行って書類と保険証を見せました。」 (When my number was called, I went to the counter and showed them my documents and insurance card.)",
+      "optionsEn": [
+        "documents and Insurance Cards",
+        "passport and Photo",
+        "company employee ID card",
+        "old bankbook and seal"
+      ],
+      "questionEn": "What did Mr. Yamada show at the counter?"
     },
     {
       "question": "手続きが終わるまでどのくらいかかりましたか？",
@@ -816,7 +830,14 @@
         "二時間ほど"
       ],
       "answerIndex": 1,
-      "explanation": "「三十分ほど」 is correct: 「三十分ほどで新しい通帳とカードを受け取ることができました。」 (In about thirty minutes, I was able to receive my new passbook and card.)"
+      "explanation": "「三十分ほど」 is correct: 「三十分ほどで新しい通帳とカードを受け取ることができました。」 (In about thirty minutes, I was able to receive my new passbook and card.)",
+      "optionsEn": [
+        "about ten minutes",
+        "about thirty minutes",
+        "about an hour",
+        "about two hours"
+      ],
+      "questionEn": "How long did it take to complete the procedure?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/bank.json"

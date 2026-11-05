@@ -12,6 +12,8 @@ export interface GrammarExample {
   ja: string;
   romaji: string;
   en: string;
+  naturalEn?: string;
+  literalEn?: string;
   furigana?: string;
   /** Scramble pills in correct order; empty when the sentence is unsuitable. */
   chunks: string[];

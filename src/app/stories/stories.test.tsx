@@ -36,6 +36,18 @@ describe("Stories Library Hub & Interactive Reading Room", () => {
     expect(screen.getByText("学校へ行く")).toBeTruthy();
     expect(screen.getByText("桃太郎")).toBeTruthy();
 
+    for (const groupName of ["JLPT Level Filter", "Category Filter"]) {
+      const activeFilter = screen
+        .getByRole("group", { name: groupName })
+        .querySelector('button[aria-pressed="true"]');
+      expect(activeFilter?.classList.contains("text-white")).toBe(true);
+    }
+
+    const levelBadge = screen
+      .getAllByText("N5")
+      .find((element) => element.classList.contains("bg-[var(--primary)]"));
+    expect(levelBadge?.classList.contains("text-white")).toBe(true);
+
     // Filter by N5
     fireEvent.click(screen.getByRole("button", { name: "N5" }));
     expect(screen.getByText("20 stories")).toBeTruthy();
@@ -51,6 +63,12 @@ describe("Stories Library Hub & Interactive Reading Room", () => {
 
   it("renders ruby furigana, toggles vertical writing mode, saves tapped word to FSRS, and completes quiz", async () => {
     const { container } = render(<StoryReadingRoomPage />);
+
+    const levelBadges = screen
+      .getAllByText("N5")
+      .filter((element) => element.classList.contains("bg-[var(--primary)]"));
+    expect(levelBadges.length).toBeGreaterThan(0);
+    expect(levelBadges.every((badge) => badge.classList.contains("text-white"))).toBe(true);
 
     // Verify story title and native <ruby>/<rt> rendering
     expect(screen.getByRole("heading", { name: "学校へ行く" })).toBeTruthy();
@@ -94,4 +112,3 @@ describe("Stories Library Hub & Interactive Reading Room", () => {
     expect(storedCompleted).toContain("school");
   });
 });
-

@@ -922,37 +922,58 @@
   ],
   "quiz": [
     {
-      "question": "田中さんはいつ、どこへ旅行に行きましたか？",
+      "question": "佐藤さんはどうして空港へ行きましたか？",
       "options": [
-        "先週の休みに東京へ",
-        "先月の夏休みに沖縄へ",
-        "昨日の休みに近くの海へ",
-        "来月の休みに沖縄へ"
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
+      ],
+      "answerIndex": 2,
+      "explanation": "「東京で働くために飛行機に乗るため」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "to pick up a friend",
+        "to buy souvenirs from a trip",
+        "to board a plane to work in Tokyo",
+        "to work at an airport café"
+      ],
+      "questionEn": "Why did Mr. Sato go to the airport?"
+    },
+    {
+      "question": "佐藤さんはカウンターで何をしましたか？",
+      "options": [
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
       ],
       "answerIndex": 1,
-      "explanation": "「先月の夏休みに沖縄へ」 is correct: 「先月の夏休みに、田中さんは家族と一緒に飛行機で沖縄へ旅行に行きました。」 (During last month’s summer vacation, Mr. Tanaka took a trip to Okinawa by plane with his family.)"
+      "explanation": "「スーツケースを預けました」 is correct: 「先週の土曜日、佐藤さんは初めて一人で空港へ行きました。」 (Last Saturday, Mr. Sato went to the airport by himself for the first time.)",
+      "optionsEn": [
+        "I ordered coffee",
+        "I checked my suitcase",
+        "I bought some souvenirs",
+        "I read a book"
+      ],
+      "questionEn": "What did Mr. Sato do at the counter?"
     },
     {
-      "question": "午後、家族は海岸で何をしましたか？",
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
       "options": [
-        "泳いだり貝を拾ったりしました",
-        "魚を釣ったり写真を撮ったりしました",
-        "船に乗ったり寝たりしました",
-        "ホテルのレストランで料理を食べました"
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
       ],
       "answerIndex": 0,
-      "explanation": "「泳いだり貝を拾ったりしました」 is the correct answer according to the story."
-    },
-    {
-      "question": "田中さんは夜、妻に何と言いましたか？",
-      "options": [
-        "「早く家に帰りましょう」",
-        "「海は冷たくて気持ちがいいですね」",
-        "「豚肉の料理がおいしかったですね」",
-        "「また来年も沖縄へ来たいですね」"
+      "explanation": "「急いで搭乗口へ行きました」 is correct: 「一時半になると、「搭乗が始まります」という案内が聞こえました。」 (At 1:30, an announcement said, “Boarding is about to begin.”)",
+      "optionsEn": [
+        "I hurried to the boarding gate",
+        "I went to a café to drink coffee",
+        "I called my family",
+        "I shopped at the store"
       ],
-      "answerIndex": 3,
-      "explanation": "「「また来年も沖縄へ来たいですね」」 is correct: 「田中さんは「また来年も沖縄へ来たいですね」と妻に言いました。」 (Mr. Tanaka said to his wife, “I’d like to come back to Okinawa next year, too.”)"
+      "questionEn": "What did Mr. Sato do after hearing the announcement?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/family-vacation.json"

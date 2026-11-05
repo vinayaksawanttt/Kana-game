@@ -536,7 +536,14 @@
         "友だちと約束したから"
       ],
       "answerIndex": 0,
-      "explanation": "「明日テストがあるから」 is correct: 「昨日の夜、田中さんは部屋で日本語を勉強しました。」 (Last night, Mr. Tanaka studied Japanese in his room.)"
+      "explanation": "「明日テストがあるから」 is correct: 「昨日の夜、田中さんは部屋で日本語を勉強しました。」 (Last night, Mr. Tanaka studied Japanese in his room.)",
+      "optionsEn": [
+        "since there’s a test tomorrow,",
+        "because I love books",
+        "because I wasn’t sleepy",
+        "because I made plans with my friends"
+      ],
+      "questionEn": "Why did Mr. Tanaka study so late into the night?"
     },
     {
       "question": "田中さんは疲れたとき何を飲みましたか？",
@@ -547,7 +554,14 @@
         "温かいお茶"
       ],
       "answerIndex": 3,
-      "explanation": "「温かいお茶」 is correct: 「少し疲れましたから、温かいお茶を飲みました。」 (I was feeling a little tired, so I had some hot tea.)"
+      "explanation": "「温かいお茶」 is correct: 「少し疲れましたから、温かいお茶を飲みました。」 (I was feeling a little tired, so I had some hot tea.)",
+      "optionsEn": [
+        "cold water",
+        "coffee",
+        "juice",
+        "hot tea"
+      ],
+      "questionEn": "What did Mr. Tanaka drink when he was tired?"
     },
     {
       "question": "田中さんは何時ごろに寝ましたか？",
@@ -558,7 +572,14 @@
         "二時ごろ"
       ],
       "answerIndex": 2,
-      "explanation": "「一時ごろ」 is correct: 「一時ごろにベッドに入って、静かに寝ました。」 (I went to bed around 1:00 a.m. and slept peacefully.)"
+      "explanation": "「一時ごろ」 is correct: 「一時ごろにベッドに入って、静かに寝ました。」 (I went to bed around 1:00 a.m. and slept peacefully.)",
+      "optionsEn": [
+        "around 11:00",
+        "around noon",
+        "around 1:00",
+        "around 2:00"
+      ],
+      "questionEn": "What time did Mr. Tanaka go to bed?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N5/studying-late.json"

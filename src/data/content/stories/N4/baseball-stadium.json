@@ -963,7 +963,14 @@
         "一人"
       ],
       "answerIndex": 2,
-      "explanation": "「会社の同僚」 is correct: 「先週の日曜日の午後、山田さんは会社の同僚と一緒に野球場へ試合を見に行きました。」 (Last Sunday afternoon, Mr. Yamada went to the baseball stadium with a coworker to watch a game.)"
+      "explanation": "「会社の同僚」 is correct: 「先週の日曜日の午後、山田さんは会社の同僚と一緒に野球場へ試合を見に行きました。」 (Last Sunday afternoon, Mr. Yamada went to the baseball stadium with a coworker to watch a game.)",
+      "optionsEn": [
+        "family",
+        "high school teacher",
+        "coworker",
+        "one person"
+      ],
+      "questionEn": "Who did Mr. Yamada go to the baseball stadium with?"
     },
     {
       "question": "山田さんたちは席に着いた後で何をしましたか？",
@@ -974,7 +981,14 @@
         "家に帰る準備をしました"
       ],
       "answerIndex": 1,
-      "explanation": "「お弁当と飲み物を買いました」 is correct: 「先週の日曜日の午後、山田さんは会社の同僚と一緒に野球場へ試合を見に行きました。」 (Last Sunday afternoon, Mr. Yamada went to the baseball stadium with a coworker to watch a game.)"
+      "explanation": "「お弁当と飲み物を買いました」 is correct: 「先週の日曜日の午後、山田さんは会社の同僚と一緒に野球場へ試合を見に行きました。」 (Last Sunday afternoon, Mr. Yamada went to the baseball stadium with a coworker to watch a game.)",
+      "optionsEn": [
+        "I got an autograph from the player",
+        "I bought a bento and a drink",
+        "I took a photo right away",
+        "I got ready to go home"
+      ],
+      "questionEn": "What did Mr. Yamada and his friends do after they sat down?"
     },
     {
       "question": "七回に何がありましたか？",
@@ -985,7 +999,14 @@
         "試合に負けてしまいました"
       ],
       "answerIndex": 2,
-      "explanation": "「応援しているチームがホームランを打ちました」 is the correct answer according to the story."
+      "explanation": "「応援しているチームがホームランを打ちました」 is the correct answer according to the story.",
+      "optionsEn": [
+        "it started raining, so the game was suspended",
+        "it was time for my train, so I went home",
+        "team I'm rooting for hit a home run",
+        "we lost the game"
+      ],
+      "questionEn": "What happened in the seventh episode?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/baseball-stadium.json"

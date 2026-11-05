@@ -1625,7 +1625,14 @@
         "動物たちに助けを求めた"
       ],
       "answerIndex": 1,
-      "explanation": "「人々を救うために五色の石を集めて空を塞いだ」 is correct: 「ある日、突然大きな音がして天の柱が折れ、地面が大きく割れました。」 (One day, there was a sudden loud noise, the pillar of heaven snapped, and the ground split wide open.)"
+      "explanation": "「人々を救うために五色の石を集めて空を塞いだ」 is correct: 「ある日、突然大きな音がして天の柱が折れ、地面が大きく割れました。」 (One day, there was a sudden loud noise, the pillar of heaven snapped, and the ground split wide open.)",
+      "optionsEn": [
+        "fled far away without doing anything",
+        "to save the people, they gathered five-colored stones and blocked the sky",
+        "moved to a new, different world",
+        "I asked the animals for help"
+      ],
+      "questionEn": "When the pillar of heaven broke and a hole opened in the sky, what did Nüwa do?"
     },
     {
       "question": "女媧は空の穴を塞ぐために何を使いましたか？",
@@ -1636,7 +1643,14 @@
         "海で拾った特別な貝殻"
       ],
       "answerIndex": 0,
-      "explanation": "「川底から集めた五色の石を溶かした液体」 is correct: 「溶けた五色の石の液体を使って、女媧は空の大きな穴をきれいに塞ぎました。」 (Using the molten liquid from the five-colored stones, Nuwa neatly sealed the large hole in the sky.)"
+      "explanation": "「川底から集めた五色の石を溶かした液体」 is correct: 「溶けた五色の石の液体を使って、女媧は空の大きな穴をきれいに塞ぎました。」 (Using the molten liquid from the five-colored stones, Nuwa neatly sealed the large hole in the sky.)",
+      "optionsEn": [
+        "liquid made by melting five-colored stones collected from the riverbed",
+        "hard tree branches and leaves",
+        "tiles and bricks at a large temple",
+        "special seashell I found at the beach"
+      ],
+      "questionEn": "What did Nüwa use to plug the hole in the sky?"
     },
     {
       "question": "天を支える新しい柱を作るために、何が使われましたか？",
@@ -1647,7 +1661,14 @@
         "太い竹の茎"
       ],
       "answerIndex": 1,
-      "explanation": "「大きな亀の足」 is correct: 「さらに、彼女は大きな亀の足を切って天を支える四本の新しい柱にし、荒れた土地の洪水を鎮めて世界に平和を取り戻しました。」 (Furthermore, she cut off the legs of a giant turtle to create four new pillars to support the heavens, subdued the floods in the ravaged lands, and restored peace to the world.)"
+      "explanation": "「大きな亀の足」 is correct: 「さらに、彼女は大きな亀の足を切って天を支える四本の新しい柱にし、荒れた土地の洪水を鎮めて世界に平和を取り戻しました。」 (Furthermore, she cut off the legs of a giant turtle to create four new pillars to support the heavens, subdued the floods in the ravaged lands, and restored peace to the world.)",
+      "optionsEn": [
+        "tall trees on a mountain",
+        "large turtle's foot",
+        "strong iron rod",
+        "thick bamboo stalk"
+      ],
+      "questionEn": "What was used to build the new pillar that supports the sky?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/fairy-tales/empress-jokwa.json"

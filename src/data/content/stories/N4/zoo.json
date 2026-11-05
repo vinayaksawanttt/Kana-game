@@ -860,7 +860,14 @@
         "弟"
       ],
       "answerIndex": 2,
-      "explanation": "「妹」 is correct: 「日曜日の朝、佐藤さんは妹と一緒に市の動物園へ出かけました。」 (On Sunday morning, Mr. Sato went to the city zoo with his younger sister.)"
+      "explanation": "「妹」 is correct: 「日曜日の朝、佐藤さんは妹と一緒に市の動物園へ出かけました。」 (On Sunday morning, Mr. Sato went to the city zoo with his younger sister.)",
+      "optionsEn": [
+        "friends",
+        "mom",
+        "younger sister",
+        "younger brother"
+      ],
+      "questionEn": "Who did Mr. Sato go to the zoo with?"
     },
     {
       "question": "二人は最初になんの動物を見に行きましたか？",
@@ -871,7 +878,14 @@
         "猿と鳥"
       ],
       "answerIndex": 1,
-      "explanation": "「象とキリン」 is the correct answer according to the story."
+      "explanation": "「象とキリン」 is the correct answer according to the story.",
+      "optionsEn": [
+        "pandas and Penguins",
+        "elephants and Giraffes",
+        "lions and Tigers",
+        "monkeys and Birds"
+      ],
+      "questionEn": "What animal did the two of them go to see first?"
     },
     {
       "question": "帰る前に売店で何を買いましたか？",
@@ -882,7 +896,14 @@
         "パンダのぬいぐるみ"
       ],
       "answerIndex": 3,
-      "explanation": "「パンダのぬいぐるみ」 is correct: 「帰る前に売店でパンダのぬいぐるみを買いました。」 (Before heading home, we bought a panda stuffed animal at the gift shop.)"
+      "explanation": "「パンダのぬいぐるみ」 is correct: 「帰る前に売店でパンダのぬいぐるみを買いました。」 (Before heading home, we bought a panda stuffed animal at the gift shop.)",
+      "optionsEn": [
+        "book on Animals",
+        "sweets",
+        "picture postcard",
+        "stuffed panda"
+      ],
+      "questionEn": "What did you buy at the store before you went home?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/zoo.json"

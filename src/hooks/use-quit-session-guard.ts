@@ -15,8 +15,17 @@ export function useQuitSessionGuard(enabled: boolean) {
       window.history.pushState({ ...window.history.state, __kanaGameQuitGuard: true }, "", window.location.href);
     }
 
+    function onBeforeUnload(event: BeforeUnloadEvent) {
+      event.preventDefault();
+      event.returnValue = "";
+    }
+
     window.addEventListener("popstate", onPopState);
-    return () => window.removeEventListener("popstate", onPopState);
+    window.addEventListener("beforeunload", onBeforeUnload);
+    return () => {
+      window.removeEventListener("popstate", onPopState);
+      window.removeEventListener("beforeunload", onBeforeUnload);
+    };
   }, [enabled]);
 
   return {

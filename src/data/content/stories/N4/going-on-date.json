@@ -889,7 +889,14 @@
         "二時半に映画館の前"
       ],
       "answerIndex": 1,
-      "explanation": "「一時半に駅の改札口の前」 is correct: 「一時半に駅の改札口の前で待ち合わせをしました。」 (They agreed to meet in front of the station ticket gates at 1:30.)"
+      "explanation": "「一時半に駅の改札口の前」 is correct: 「一時半に駅の改札口の前で待ち合わせをしました。」 (They agreed to meet in front of the station ticket gates at 1:30.)",
+      "optionsEn": [
+        "in front of the café for a while",
+        "in front of the station ticket gate at 1:30",
+        "at 2:00 p.m. at the park entrance",
+        "in front of the movie theater at 2:30"
+      ],
+      "questionEn": "What time and where did the two of them agree to meet?"
     },
     {
       "question": "カフェで木村さんは何を頼みましたか？",
@@ -900,7 +907,14 @@
         "お茶とお弁当"
       ],
       "answerIndex": 2,
-      "explanation": "「コーヒーとチーズケーキ」 is correct: 「木村さんはコーヒーとチーズケーキを頼んで、彼女は紅茶を頼みました。」 (Mr. Kimura ordered coffee and cheesecake, and she ordered tea.)"
+      "explanation": "「コーヒーとチーズケーキ」 is correct: 「木村さんはコーヒーとチーズケーキを頼んで、彼女は紅茶を頼みました。」 (Mr. Kimura ordered coffee and cheesecake, and she ordered tea.)",
+      "optionsEn": [
+        "tea and Cookies",
+        "juice and Bread",
+        "coffee and cheesecake",
+        "tea and a Bento"
+      ],
+      "questionEn": "What did Mr. Kimura order at the café?"
     },
     {
       "question": "カフェを出た後、二人は何をしましたか？",
@@ -911,7 +925,14 @@
         "すぐに電車に乗りました"
       ],
       "answerIndex": 1,
-      "explanation": "「公園を散歩しました」 is the correct answer according to the story."
+      "explanation": "「公園を散歩しました」 is the correct answer according to the story.",
+      "optionsEn": [
+        "I went to see a movie",
+        "I took a walk in the park",
+        "I went shopping",
+        "I got on the train right away"
+      ],
+      "questionEn": "What did the two of them do after leaving the café?"
     }
   ],
   "filePath": "/home/vinayak/Work/Kana-game/src/data/content/stories/N4/going-on-date.json"

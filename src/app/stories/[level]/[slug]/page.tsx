@@ -8,13 +8,18 @@ import {
   ArrowLeft,
   BookmarkCheck,
   BookmarkPlus,
+  BookOpen,
   CheckCircle2,
   Clock,
   Columns3,
+  HelpCircle,
   Pause,
   RotateCcw,
+  Sparkles,
+  Trophy,
   Volume2,
   X,
+  XCircle,
 } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 import {
@@ -265,7 +270,7 @@ function StoryReadingRoomContent() {
             </Link>
             <div className="hidden sm:block">
               <div className="flex items-center gap-2">
-                <span className="rounded-full bg-[var(--primary)] px-2 py-0.5 text-[11px] font-bold text-[var(--primary-ink)]">
+                <span className="rounded-full bg-[var(--primary)] px-2 py-0.5 text-[11px] font-bold text-white">
                   {story.level}
                 </span>
                 <span
@@ -366,7 +371,7 @@ function StoryReadingRoomContent() {
           <div className="flex-1">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <div className="flex flex-wrap items-center gap-2">
-                <span className="rounded-full bg-[var(--primary)] px-3 py-0.5 text-xs font-bold text-[var(--primary-ink)]">
+                <span className="rounded-full bg-[var(--primary)] px-3 py-0.5 text-xs font-bold text-white">
                   {story.level}
                 </span>
                 <span className="rounded-full border border-[var(--line)] bg-[var(--paper-tint)] px-3 py-0.5 text-xs font-semibold text-[var(--muted)]">
@@ -719,28 +724,29 @@ function StoryReadingRoomContent() {
         {/* Comprehension Micro-Quiz */}
         {story.quiz.length > 0 && (
           <section
+            id="story-quiz"
             aria-label="Comprehension Check"
-            className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[var(--card-shadow)] md:p-8"
+            className="scroll-mt-24 rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[var(--card-shadow)] md:p-8"
           >
             <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[var(--line)] pb-5">
               <div>
-                <p className="text-xs font-semibold tracking-[0.2em] text-[var(--primary)] uppercase">
-                  Comprehension Check
-                </p>
-                <h2 className="mt-1 text-xl font-semibold text-[var(--ink)]">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--sakura-light)] px-3 py-1 text-[11px] font-bold tracking-[0.16em] text-[var(--primary)] uppercase">
+                  <BookOpen className="size-3.5" /> Comprehension Check · 理解度チェック
+                </span>
+                <h2 className="mt-2 text-xl font-bold tracking-tight text-[var(--ink)] sm:text-2xl">
                   Story Quiz ({answeredQuizCount}/{totalQuizQuestions})
                 </h2>
               </div>
 
               {answeredQuizCount > 0 && (
                 <div className="flex items-center gap-3">
-                  <span className="rounded-full border border-[var(--line)] bg-[var(--paper-tint)] px-4 py-1.5 text-xs font-semibold text-[var(--ink)]">
+                  <span className="rounded-full border border-[var(--line)] bg-[var(--paper-tint)] px-4 py-1.5 text-xs font-bold text-[var(--ink)] shadow-xs">
                     Score: {correctQuizCount} / {totalQuizQuestions}
                   </span>
                   <button
                     type="button"
                     onClick={handleResetQuiz}
-                    className="inline-flex items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--surface)] px-3.5 py-1.5 text-xs font-semibold text-[var(--muted)] hover:text-[var(--ink)]"
+                    className="inline-flex items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--surface)] px-3.5 py-1.5 text-xs font-semibold text-[var(--muted)] shadow-xs transition hover:border-[var(--primary)] hover:text-[var(--ink)]"
                   >
                     <RotateCcw className="size-3.5" />
                     Retry Quiz
@@ -749,37 +755,149 @@ function StoryReadingRoomContent() {
               )}
             </div>
 
+            {/* Visual Quiz Progress Bar */}
+            <div className="mt-4 h-1.5 w-full overflow-hidden rounded-full bg-[var(--line)]/50">
+              <div
+                className="h-full rounded-full bg-gradient-to-r from-[var(--sakura)] to-[var(--primary)] transition-all duration-500 ease-out"
+                style={{
+                  width: `${(answeredQuizCount / totalQuizQuestions) * 100}%`,
+                }}
+              />
+            </div>
+
+            {/* Quiz Completion & Review Callout */}
+            {answeredQuizCount === totalQuizQuestions && (
+              <div
+                className={`mt-6 flex flex-col items-start justify-between gap-4 rounded-2xl border p-5 transition-all sm:flex-row sm:items-center ${
+                  correctQuizCount === totalQuizQuestions
+                    ? "border-[var(--correct)]/40 bg-[var(--success-soft)] text-[var(--ink)] shadow-xs"
+                    : "border-[var(--line)] bg-[var(--paper-tint)] text-[var(--ink)] shadow-xs"
+                }`}
+              >
+                <div className="flex items-center gap-3.5">
+                  <div
+                    className={`flex size-11 shrink-0 items-center justify-center rounded-xl shadow-xs ${
+                      correctQuizCount === totalQuizQuestions
+                        ? "bg-[var(--correct)] text-white"
+                        : "bg-[var(--primary)] text-white"
+                    }`}
+                  >
+                    {correctQuizCount === totalQuizQuestions ? (
+                      <Trophy className="size-6" />
+                    ) : (
+                      <Sparkles className="size-6" />
+                    )}
+                  </div>
+                  <div>
+                    <h3 className="text-base font-bold text-[var(--ink)]">
+                      {correctQuizCount === totalQuizQuestions
+                        ? "🎉 完璧！ Perfect Comprehension!"
+                        : `Quiz Completed · ${correctQuizCount} of ${totalQuizQuestions} Correct`}
+                    </h3>
+                    <p className="mt-0.5 text-xs text-[var(--muted)] leading-relaxed">
+                      {correctQuizCount === totalQuizQuestions
+                        ? "You answered all story questions correctly. The story has been marked completed in your library!"
+                        : "Review the evidence citations below to solidify your understanding of tricky sentences, or try again to test your recall."}
+                    </p>
+                  </div>
+                </div>
+
+                {correctQuizCount < totalQuizQuestions && (
+                  <button
+                    type="button"
+                    onClick={handleResetQuiz}
+                    className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-[var(--primary)] px-4 py-2 text-xs font-bold text-white shadow-xs transition hover:bg-[var(--primary-hover)]"
+                  >
+                    <RotateCcw className="size-3.5" />
+                    Try Again
+                  </button>
+                )}
+              </div>
+            )}
+
             <div className="mt-6 space-y-6">
               {story.quiz.map((q, qIdx) => {
                 const chosenIndex = quizAnswers[qIdx];
                 const isAnswered = chosenIndex !== undefined;
+                const isCorrectAnswer = isAnswered && chosenIndex === q.answerIndex;
+
                 return (
                   <div
                     key={qIdx}
-                    className="rounded-xl border border-[var(--line)] bg-[var(--paper-tint)]/50 p-5"
+                    className={`rounded-2xl border p-5 transition-all md:p-6 ${
+                      isAnswered
+                        ? isCorrectAnswer
+                          ? "border-[var(--correct)]/35 bg-[var(--surface)] shadow-xs"
+                          : "border-[var(--wrong)]/35 bg-[var(--surface)] shadow-xs"
+                        : "border-[var(--line)] bg-[var(--paper-tint)]/40 hover:border-[var(--sakura)]"
+                    }`}
                   >
-                    <p
-                      lang="ja"
-                      className="font-japanese text-base font-semibold text-[var(--ink)]"
-                    >
-                      {qIdx + 1}. {q.question}
-                    </p>
-                    <div className="mt-3.5 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="flex items-start gap-3">
+                        <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-[var(--sakura-light)] text-xs font-bold text-[var(--primary)]">
+                          Q{qIdx + 1}
+                        </span>
+                        <div>
+                          <p
+                            lang="ja"
+                            className="font-japanese text-base font-bold text-[var(--ink)] sm:text-lg"
+                          >
+                            {q.question}
+                          </p>
+                          {q.questionEn && (
+                            <p className="mt-1 text-xs text-[var(--muted)] leading-relaxed font-sans">
+                              {q.questionEn}
+                            </p>
+                          )}
+                        </div>
+                      </div>
+
+                      {isAnswered && (
+                        <span
+                          className={`inline-flex shrink-0 items-center gap-1 rounded-full px-2.5 py-1 text-xs font-bold ${
+                            isCorrectAnswer
+                              ? "bg-[var(--success-soft)] text-[var(--correct)]"
+                              : "bg-[var(--wrong-soft)] text-[var(--wrong)]"
+                          }`}
+                        >
+                          {isCorrectAnswer ? (
+                            <>
+                              <CheckCircle2 className="size-3.5" /> Correct
+                            </>
+                          ) : (
+                            <>
+                              <XCircle className="size-3.5" /> Review
+                            </>
+                          )}
+                        </span>
+                      )}
+                    </div>
+
+                    <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
                       {q.options.map((option, oIdx) => {
                         const isSelected = chosenIndex === oIdx;
                         const isCorrect = q.answerIndex === oIdx;
-                        let buttonStyle =
-                          "border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--primary)]";
+                        const letter = ["A", "B", "C", "D"][oIdx] ?? `${oIdx + 1}`;
+
+                        let cardStyle =
+                          "border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--primary)] hover:bg-[var(--sakura-light)]/20 active:scale-[0.99] cursor-pointer shadow-xs";
+                        let badgeStyle =
+                          "border-[var(--line)] bg-[var(--paper-tint)] text-[var(--muted)]";
+
                         if (isAnswered) {
                           if (isCorrect) {
-                            buttonStyle =
-                              "border-[var(--success)] bg-[var(--success-soft)] text-[var(--success)] font-semibold";
+                            cardStyle =
+                              "border-[var(--correct)] bg-[var(--success-soft)] text-[var(--ink)] font-semibold shadow-xs ring-1 ring-[var(--correct)]/40 cursor-default";
+                            badgeStyle = "bg-[var(--correct)] text-white border-transparent";
                           } else if (isSelected) {
-                            buttonStyle =
-                              "border-[var(--primary)] bg-[var(--primary)]/10 text-[var(--primary)]";
+                            cardStyle =
+                              "border-[var(--wrong)] bg-[var(--wrong-soft)] text-[var(--ink)] shadow-xs ring-1 ring-[var(--wrong)]/40 cursor-default";
+                            badgeStyle = "bg-[var(--wrong)] text-white border-transparent";
                           } else {
-                            buttonStyle =
-                              "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)] opacity-70";
+                            cardStyle =
+                              "border-[var(--line)]/60 bg-[var(--surface)]/60 text-[var(--muted)] opacity-60 cursor-default";
+                            badgeStyle =
+                              "border-[var(--line)]/40 bg-[var(--paper-tint)]/50 text-[var(--muted)]/60";
                           }
                         }
 
@@ -787,16 +905,43 @@ function StoryReadingRoomContent() {
                           <button
                             key={oIdx}
                             type="button"
+                            aria-label={option}
                             disabled={isAnswered}
                             onClick={() => handleAnswerQuiz(qIdx, oIdx)}
-                            className={`flex items-center justify-between rounded-xl border px-4 py-3 text-left text-sm transition ${buttonStyle}`}
+                            className={`group relative flex items-center justify-between rounded-xl border p-3.5 text-left transition-all sm:p-4 ${cardStyle}`}
                           >
-                            <span lang="ja" className="font-japanese">
-                              {option}
-                            </span>
-                            {isAnswered && isCorrect && (
-                              <CheckCircle2 className="size-4 shrink-0 text-[var(--success)]" />
-                            )}
+                            <div className="flex min-w-0 items-center gap-3 pr-2">
+                              <span
+                                className={`flex size-7 shrink-0 items-center justify-center rounded-lg border text-xs font-bold transition-colors ${badgeStyle}`}
+                              >
+                                {letter}
+                              </span>
+                              <div className="min-w-0">
+                                <span
+                                  lang="ja"
+                                  className="block font-japanese text-sm font-semibold leading-snug sm:text-base"
+                                >
+                                  {option}
+                                </span>
+                                {q.optionsEn?.[oIdx] && (
+                                  <span className="block truncate text-xs font-normal text-[var(--muted)]">
+                                    {q.optionsEn[oIdx]}
+                                  </span>
+                                )}
+                              </div>
+                            </div>
+
+                            <div className="ml-2 shrink-0">
+                              {isAnswered ? (
+                                isCorrect ? (
+                                  <CheckCircle2 className="size-5 text-[var(--correct)]" />
+                                ) : isSelected ? (
+                                  <XCircle className="size-5 text-[var(--wrong)]" />
+                                ) : null
+                              ) : (
+                                <span className="flex size-4 rounded-full border border-[var(--line)] transition-colors group-hover:border-[var(--primary)]" />
+                              )}
+                            </div>
                           </button>
                         );
                       })}
@@ -804,20 +949,32 @@ function StoryReadingRoomContent() {
 
                     {isAnswered && q.explanation && (
                       <div
-                        className={`mt-3.5 rounded-xl border p-3.5 text-xs leading-relaxed transition ${
-                          chosenIndex === q.answerIndex
-                            ? "border-[var(--success)]/40 bg-[var(--success-soft)]"
-                            : "border-[var(--primary)]/40 bg-[var(--paper-tint)]"
+                        className={`mt-4 rounded-xl border p-4 text-xs leading-relaxed transition-all ${
+                          isCorrectAnswer
+                            ? "border-[var(--correct)]/35 bg-[var(--success-soft)]"
+                            : "border-[var(--wrong)]/35 bg-[var(--wrong-soft)]"
                         }`}
                       >
-                        <span
-                          className={`block mb-1 text-[10px] font-bold tracking-wider uppercase ${
-                            chosenIndex === q.answerIndex ? "text-[var(--success)]" : "text-[var(--primary)]"
-                          }`}
-                        >
-                          {chosenIndex === q.answerIndex ? "✓ Evidence from Story" : "✗ Answer Explanation"}
-                        </span>
-                        <p className="text-xs text-[var(--ink)] leading-normal">{q.explanation}</p>
+                        <div className="mb-1.5 flex items-center gap-1.5">
+                          {isCorrectAnswer ? (
+                            <>
+                              <Sparkles className="size-3.5 text-[var(--correct)] shrink-0" />
+                              <span className="text-[11px] font-bold uppercase tracking-wider text-[var(--correct)]">
+                                ✓ Evidence from Story · 正解の根拠
+                              </span>
+                            </>
+                          ) : (
+                            <>
+                              <HelpCircle className="size-3.5 text-[var(--wrong)] shrink-0" />
+                              <span className="text-[11px] font-bold uppercase tracking-wider text-[var(--wrong)]">
+                                ✗ Answer Explanation · 解説と文脈
+                              </span>
+                            </>
+                          )}
+                        </div>
+                        <p className="font-sans text-xs text-[var(--ink)] leading-relaxed sm:text-sm">
+                          {q.explanation}
+                        </p>
                       </div>
                     )}
                   </div>
@@ -830,4 +987,3 @@ function StoryReadingRoomContent() {
     </main>
   );
 }
-
