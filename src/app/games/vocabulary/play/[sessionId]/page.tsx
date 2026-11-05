@@ -4,6 +4,7 @@ import { Suspense, useEffect, useReducer, useRef, useState, type FormEvent } fro
 import { Check, Sparkles, X } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 import { loadVocabularyData, vocabularyLevels, type VocabularyLevel } from "@/data/vocabulary";
+import { checkVocabularyAnswer } from "@/engine/vocabularyMatcher";
 import { GameLayout } from "@/lib/game-core/layout";
 import { getGameResult, getGameSession, saveGameResult } from "@/lib/game-core/storage";
 import {
@@ -153,6 +154,12 @@ function VocabularyGame({
     answerInput.current?.focus();
   }, [state.index, result?.status]);
 
+  useEffect(() => {
+    if (result?.status === "unanswered" && result.attempts.length > 0) {
+      answerInput.current?.select();
+    }
+  }, [state.index, result?.attempts.length, result?.status]);
+
   function finish(finalState: VocabularyState, endedEarly = false) {
     const finishedState = endedEarly
       ? vocabularyReducer(finalState, { type: "END" })
@@ -240,13 +247,23 @@ function VocabularyGame({
   if (!question || !result) return null;
 
   const expectedMeanings = question.meanings.join("; ");
+  const firstMeaning = question.meanings[0]?.replace(/\s*\([^)]*\)/g, " ").trim() ?? "";
+  const firstLetter = firstMeaning.charAt(0).toLowerCase();
+  const wordCount = firstMeaning.split(/\s+/).filter(Boolean).length;
+  const lastMatch = result.attempts.length
+    ? checkVocabularyAnswer(result.attempts[result.attempts.length - 1], question.meanings)
+    : null;
   const resultMessage =
     result.status === "correct"
-      ? `Correct — ${expectedMeanings}`
+      ? lastMatch?.matchType === "typo"
+        ? `Correct! (Exact spelling: ${lastMatch.matchedGloss}) Meanings: ${expectedMeanings}`
+        : `Correct! Meanings: ${expectedMeanings}`
       : result.status === "skipped"
-        ? `Skipped. Expected meaning: ${expectedMeanings}`
+        ? `Answer: ${expectedMeanings}`
         : result.attempts.length
-          ? `Not quite. Expected meaning: ${expectedMeanings}. Try again or skip.`
+          ? result.attempts.length === 1
+            ? "Not quite — try another meaning, use a hint above, or press Skip."
+            : `Still not quite (Mistakes: ${result.attempts.length}). Hint: starts with \"${firstLetter}...\" (${wordCount} ${wordCount === 1 ? "word" : "words"}) — or press Skip to reveal.`
           : "";
   const answerStatusClass =
     result.status === "correct"
@@ -513,18 +530,10 @@ function VocabularyGame({
                   )}
                 </div>
 
-                <div className="mt-3 flex min-h-[24px] flex-col items-center justify-center">
+                <div className="mt-3 flex min-h-[48px] flex-col items-center justify-center">
                   <p className={`text-center text-sm font-bold ${answerStatusClass}`} aria-live="polite">
                     {resultMessage}
                   </p>
-                  {result.attempts.length > 0 && result.status === "unanswered" && (
-                    <p
-                      className="mt-1 text-center text-xs font-semibold text-[var(--wrong)]"
-                      aria-live="polite"
-                    >
-                      Mistakes: {result.attempts.length} · Press Enter to skip, or Check again to retry.
-                    </p>
-                  )}
                 </div>
 
                 {resolved && (

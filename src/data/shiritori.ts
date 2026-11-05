@@ -10,16 +10,31 @@ function canFetch(): boolean {
   return typeof window !== "undefined" && typeof globalThis.fetch === "function";
 }
 
-async function readWordRows(): Promise<unknown> {
+async function readShiritoriData(): Promise<{ words: unknown; validReadings: Record<string, string> }> {
   if (canFetch()) {
-    const response = await globalThis.fetch("/data/v1/shiritori/words.json", { cache: "force-cache" });
-    if (!response.ok) throw new Error(`Failed to load Shiritori words (${response.status})`);
-    return response.json();
+    const [wordsRes, validRes] = await Promise.all([
+      globalThis.fetch("/data/v1/shiritori/words.json", { cache: "force-cache" }),
+      globalThis.fetch("/data/v1/shiritori/valid-readings.json", { cache: "force-cache" }).catch(() => null),
+    ]);
+    if (!wordsRes.ok) throw new Error(`Failed to load Shiritori words (${wordsRes.status})`);
+    const words = await wordsRes.json();
+    const validReadings = (validRes && validRes.ok ? await validRes.json() : {}) as Record<string, string>;
+    return { words, validReadings };
   }
   const fs = eval("require")("node:fs");
   const path = eval("require")("node:path");
-  const file = path.resolve(process.cwd(), "public/data/v1/shiritori/words.json");
-  return JSON.parse(fs.readFileSync(file, "utf8")) as unknown;
+  const wordsFile = path.resolve(process.cwd(), "public/data/v1/shiritori/words.json");
+  const validFile = path.resolve(process.cwd(), "public/data/v1/shiritori/valid-readings.json");
+  const words = JSON.parse(fs.readFileSync(wordsFile, "utf8")) as unknown;
+  let validReadings: Record<string, string> = {};
+  if (fs.existsSync(validFile)) {
+    try {
+      validReadings = JSON.parse(fs.readFileSync(validFile, "utf8")) as Record<string, string>;
+    } catch {
+      validReadings = {};
+    }
+  }
+  return { words, validReadings };
 }
 
 function isShiritoriWord(value: unknown): value is ShiritoriWord {
@@ -33,11 +48,11 @@ function isShiritoriWord(value: unknown): value is ShiritoriWord {
 
 export function loadShiritoriData(): Promise<ShiritoriDictionary> {
   if (!cached) {
-    cached = readWordRows().then((data) => {
+    cached = readShiritoriData().then(({ words: data, validReadings }) => {
       if (!Array.isArray(data)) throw new Error("Shiritori word data is not a JSON array.");
       const words = data.filter(isShiritoriWord);
       if (!words.length) throw new Error("No valid Shiritori words were found.");
-      return buildShiritoriDictionary(words);
+      return buildShiritoriDictionary(words, validReadings);
     }).catch((error: unknown) => {
       cached = null;
       throw error;

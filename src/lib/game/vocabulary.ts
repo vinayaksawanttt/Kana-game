@@ -7,6 +7,7 @@ import {
   type VocabularyRecord,
 } from "@/data/vocabulary";
 import { shuffle } from "@/lib/game-core/random";
+import { checkVocabularyAnswer } from "@/engine/vocabularyMatcher";
 
 export const BASE_QUESTION_SCORE = 100;
 export const FURIGANA_HINT_COST = 20;
@@ -116,8 +117,7 @@ export function normalizeMeaningAnswer(value: string): string {
 }
 
 export function isCorrectVocabularyAnswer(answer: string, meanings: string[]): boolean {
-  const normalized = normalizeMeaningAnswer(answer);
-  return Boolean(normalized) && meanings.some((meaning) => normalizeMeaningAnswer(meaning) === normalized);
+  return checkVocabularyAnswer(answer, meanings).isMatch;
 }
 
 export function parseExampleFurigana(source: string): FuriganaSegment[] {

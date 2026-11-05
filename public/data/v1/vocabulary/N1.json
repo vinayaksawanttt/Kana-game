@@ -267,7 +267,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1149680
+    "jmdict_id": 1149680,
+    "examples": [
+      {
+        "ja": "今日の授業で「亜科」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{亜科|あか}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “subfamily.”"
+      }
+    ]
   },
   {
     "id": "3b72fad905",
@@ -463,7 +470,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1676080
+    "jmdict_id": 1676080,
+    "examples": [
+      {
+        "ja": "今日の授業で「空き間」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{空き間|あきま}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “空き間.”"
+      }
+    ]
   },
   {
     "id": "7e9e492582",
@@ -535,7 +549,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1015290
+    "jmdict_id": 1015290,
+    "examples": [
+      {
+        "ja": "今日の授業で「アクセル」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「アクセル」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “アクセル.”"
+      }
+    ]
   },
   {
     "id": "c91ead7388",
@@ -580,7 +601,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1575770
+    "jmdict_id": 1575770,
+    "examples": [
+      {
+        "ja": "今日の授業で「悪日」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{悪日|あくび}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “bad day.”"
+      }
+    ]
   },
   {
     "id": "1977f3c94f",
@@ -674,7 +702,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1524290
+    "jmdict_id": 1524290,
+    "examples": [
+      {
+        "ja": "残念ながら、麻薬取り締まりのために多くの人が殺されることもある。",
+        "furigana": "残念ながら、{麻|あさ}薬取り締まりのために多くの人が殺されることもある。",
+        "en": "Unfortunately, many people are killed for drug control efforts."
+      }
+    ]
   },
   {
     "id": "13e5e36fd0",
@@ -689,7 +724,14 @@
       "n",
       "suf"
     ],
-    "jmdict_id": 1315120
+    "jmdict_id": 1315120,
+    "examples": [
+      {
+        "ja": "この計算では、全ての数字を足してから合計を求める。",
+        "furigana": "この計算では、全ての数{字|あざ}を足してから合計を求める。",
+        "en": "In this calculation, we add up all the numbers and then find the total."
+      }
+    ]
   },
   {
     "id": "f06b8ec290",
@@ -739,7 +781,14 @@
     "pos": [
       "adj-i"
     ],
-    "jmdict_id": 1390810
+    "jmdict_id": 1390810,
+    "examples": [
+      {
+        "ja": "この状況は予想していたよりもずっと浅ましいようです。",
+        "furigana": "この{状況|じょうきょう}は{予想|よそう}していたよりもずっと{浅ましい|あさましい}ようです。",
+        "en": "This situation seems far more disgraceful than I had anticipated."
+      }
+    ]
   },
   {
     "id": "5f330190c2",
@@ -866,7 +915,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1447430
+    "jmdict_id": 1447430,
+    "examples": [
+      {
+        "ja": "一般的に観光客に人気がある東京のスポットはどこですか？",
+        "furigana": "一般的に観光客に人気がある{東|あずま}京のスポットはどこですか？",
+        "en": "What are the generally popular tourist spots in Tokyo?"
+      }
+    ]
   },
   {
     "id": "4905fc6f13",
@@ -1129,7 +1185,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 2862924
+    "jmdict_id": 2862924,
+    "examples": [
+      {
+        "ja": "彼女は友人が悪口を言われているのを見て、すぐにその友人を弁護した。",
+        "furigana": "彼女は友人が{悪口|あっこう}を言われているのを見て、すぐにその友人を弁護した。",
+        "en": "Upon seeing her friend being bad-mouthed, she immediately defended her friend."
+      }
+    ]
   },
   {
     "id": "bd0b0380dc",
@@ -1357,7 +1420,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1448890
+    "jmdict_id": 1448890,
+    "examples": [
+      {
+        "ja": "今日の授業で「当て字」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{当て字|あてじ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “ateji.”"
+      }
+    ]
   },
   {
     "id": "6a9a11e020",
@@ -1394,7 +1464,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1383690
+    "jmdict_id": 1383690,
+    "examples": [
+      {
+        "ja": "今日の授業で「跡継ぎ」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{跡継ぎ|あとつぎ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “heir.”"
+      }
+    ]
   },
   {
     "id": "20b715b301",
@@ -1638,7 +1715,14 @@
     "pos": [
       "adj-f"
     ],
-    "jmdict_id": 1438200
+    "jmdict_id": 1438200,
+    "examples": [
+      {
+        "ja": "今日の授業で「天津」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{天津|あまつ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “Tianjin.”"
+      }
+    ]
   },
   {
     "id": "925a73e9ad",
@@ -2604,7 +2688,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1021010
+    "jmdict_id": 1021010,
+    "examples": [
+      {
+        "ja": "今日の授業で「イエス」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「イエス」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, we learned how to use the expression “yes.”"
+      }
+    ]
   },
   {
     "id": "4f85c70c6c",
@@ -2679,7 +2770,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 2868304
+    "jmdict_id": 2868304,
+    "examples": [
+      {
+        "ja": "雷が恐ろしく激しく、家の中が揺れるほどだった。",
+        "furigana": "{雷|いかずち}が恐ろしく激しく、家の中が揺れるほどだった。",
+        "en": "The thunder was so terrifyingly intense that the house shook."
+      }
+    ]
   },
   {
     "id": "b2f39149f2",
@@ -2784,7 +2882,14 @@
       "v5r",
       "vi"
     ],
-    "jmdict_id": 2859682
+    "jmdict_id": 2859682,
+    "examples": [
+      {
+        "ja": "彼は簡単に怒るタイプの人です。",
+        "furigana": "彼は簡単に{怒る|いかる}タイプの人です。",
+        "en": "He is the type of person who gets angry easily."
+      }
+    ]
   },
   {
     "id": "d19fa15a3f",
@@ -2854,7 +2959,14 @@
       "n",
       "adj-no"
     ],
-    "jmdict_id": 1160500
+    "jmdict_id": 1160500,
+    "examples": [
+      {
+        "ja": "今日の授業で「域外」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{域外|いきがい}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “outside the region.”"
+      }
+    ]
   },
   {
     "id": "5ffd03b2a2",
@@ -2896,7 +3008,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 2873066
+    "jmdict_id": 2873066,
+    "examples": [
+      {
+        "ja": "今日の授業で「経緯」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{経緯|いきさつ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “circumstances.”"
+      }
+    ]
   },
   {
     "id": "f555ee7e0d",
@@ -3091,7 +3210,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1157640
+    "jmdict_id": 1157640,
+    "examples": [
+      {
+        "ja": "今日の授業で「異見」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{異見|いけん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “dissenting opinion.”"
+      }
+    ]
   },
   {
     "id": "419813adc3",
@@ -3881,7 +4007,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1166400
+    "jmdict_id": 1166400,
+    "examples": [
+      {
+        "ja": "計画をスムーズに一別ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{一別|いちべつ}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "9a43e5dbf7",
@@ -3962,7 +4095,14 @@
       "adj-no",
       "n"
     ],
-    "jmdict_id": 1167130
+    "jmdict_id": 1167130,
+    "examples": [
+      {
+        "ja": "彼の一様な対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}の{一様|いちよう}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his consistent approach, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "e190e9818a",
@@ -3982,7 +4122,14 @@
       "adv",
       "n"
     ],
-    "jmdict_id": 1167250
+    "jmdict_id": 1167250,
+    "examples": [
+      {
+        "ja": "彼の一律な対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}の{一律|いちりつ}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his consistent approach, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "fe6273e5ef",
@@ -4089,7 +4236,14 @@
     "pos": [
       "adv"
     ],
-    "jmdict_id": 1609220
+    "jmdict_id": 1609220,
+    "examples": [
+      {
+        "ja": "一挙に作業を進めたので、時間通りに終わりました。",
+        "furigana": "{一挙に|いっきょに}{作業|さぎょう}を{進|すす}めたので、{時間通|じかんどお}りに{終|お}わりました。",
+        "en": "Since I tackled the work all at once, I finished on time."
+      }
+    ]
   },
   {
     "id": "0bf76a38ae",
@@ -4311,7 +4465,14 @@
       "vt",
       "vi"
     ],
-    "jmdict_id": 1157970
+    "jmdict_id": 1157970,
+    "examples": [
+      {
+        "ja": "計画をスムーズに異動ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{異動|いどう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure a smooth transition."
+      }
+    ]
   },
   {
     "id": "cdd1146fbf",
@@ -4358,7 +4519,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 2858986
+    "jmdict_id": 2858986,
+    "examples": [
+      {
+        "ja": "豪華なホテルでのぜいたくな休暇が楽しみだ。",
+        "furigana": "豪華なホテルでのぜいたくな休{暇|いとま}が楽しみだ。",
+        "en": "I'm looking forward to a luxurious vacation in a fancy hotel."
+      }
+    ]
   },
   {
     "id": "71377eae9e",
@@ -4460,7 +4628,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1265040
+    "jmdict_id": 1265040,
+    "examples": [
+      {
+        "ja": "家にある古着をリサイクルして使わないのはもったいない。",
+        "furigana": "家にある{古|いにしえ}着をリサイクルして使わないのはもったいない。",
+        "en": "It's a waste not to recycle and use the old clothes at home."
+      }
+    ]
   },
   {
     "id": "a85f0694be",
@@ -4803,7 +4978,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1587770
+    "jmdict_id": 1587770,
+    "examples": [
+      {
+        "ja": "今日の授業で「威力」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{威力|いりょく}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “威力.”"
+      }
+    ]
   },
   {
     "id": "0d79c7283f",
@@ -4912,7 +5094,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1168050
+    "jmdict_id": 1168050,
+    "examples": [
+      {
+        "ja": "彼は写真を縮小して印刷した。",
+        "furigana": "彼は写真を縮小して{印|いん}刷した。",
+        "en": "He reduced the size of the photo and printed it."
+      }
+    ]
   },
   {
     "id": "7ac2b47d4c",
@@ -5012,7 +5201,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1170690
+    "jmdict_id": 1170690,
+    "examples": [
+      {
+        "ja": "今日の授業で「隠居」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{隠居|いんきょ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “隠居.”"
+      }
+    ]
   },
   {
     "id": "e68cf2059a",
@@ -5026,7 +5222,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1022840
+    "jmdict_id": 1022840,
+    "examples": [
+      {
+        "ja": "今日の授業で「インターチェンジ」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「インターチェンジ」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “interchange.”"
+      }
+    ]
   },
   {
     "id": "592706bc9c",
@@ -5041,7 +5244,14 @@
       "adj-na",
       "n"
     ],
-    "jmdict_id": 1022850
+    "jmdict_id": 1022850,
+    "examples": [
+      {
+        "ja": "彼のインターナショナルな対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}のインターナショナルな{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his international approach, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "cdc5cc7f6c",
@@ -5055,7 +5265,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1022990
+    "jmdict_id": 1022990,
+    "examples": [
+      {
+        "ja": "今日の授業で「インターフォン」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「インターフォン」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “intercom.”"
+      }
+    ]
   },
   {
     "id": "07bd9dcf33",
@@ -5144,6 +5361,13 @@
     "jmdict_id": 1576460,
     "other_readings": [
       "ぼう"
+    ],
+    "examples": [
+      {
+        "ja": "今日の授業で「卯」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{卯|う}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “卯.”"
+      }
     ]
   },
   {
@@ -5158,7 +5382,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1025690
+    "jmdict_id": 1025690,
+    "examples": [
+      {
+        "ja": "今日の授業で「ウェートレス」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「ウェートレス」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “waitress.”"
+      }
+    ]
   },
   {
     "id": "1f3b016d79",
@@ -5175,7 +5406,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1352700
+    "jmdict_id": 1352700,
+    "examples": [
+      {
+        "ja": "スクロールバーをドラッグして、ページを上下に移動させることができます。",
+        "furigana": "スクロールバーをドラッグして、ページを{上下|うえした}に移動させることができます。",
+        "en": "You can move the page up and down by dragging the scrollbar."
+      }
+    ]
   },
   {
     "id": "3b9ec31cf4",
@@ -5484,7 +5722,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 2866951
+    "jmdict_id": 2866951,
+    "examples": [
+      {
+        "ja": "今日の授業で「潮」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{潮|うしお}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “tide.”"
+      }
+    ]
   },
   {
     "id": "9c8fe060e5",
@@ -5498,7 +5743,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1172310
+    "jmdict_id": 1172310,
+    "examples": [
+      {
+        "ja": "今日の授業で「渦」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{渦|うず}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “whirlpool.”"
+      }
+    ]
   },
   {
     "id": "88984a7ed8",
@@ -6062,7 +6314,14 @@
       "v5m",
       "vt"
     ],
-    "jmdict_id": 1524520
+    "jmdict_id": 1524520,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり埋め込むことが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{埋め込む|うめこむ}ことが{求|もと}められます。",
+        "en": "You’ll need to be able to apply this effectively in important situations."
+      }
+    ]
   },
   {
     "id": "661870fff1",
@@ -6103,7 +6362,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1525230
+    "jmdict_id": 1525230,
+    "examples": [
+      {
+        "ja": "その映画は意外な結末で驚いた。",
+        "furigana": "その映画は意外な結{末|うら}で驚いた。",
+        "en": "I was surprised by the unexpected ending of the movie."
+      }
+    ]
   },
   {
     "id": "00b65e54a4",
@@ -6300,7 +6566,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1580400
+    "jmdict_id": 1580400,
+    "examples": [
+      {
+        "ja": "父は塩辛い料理を作るのが上手だが、私は甘いものが好きだ。",
+        "furigana": "父は塩辛い料理を作るのが{上手|うわて}だが、私は甘いものが好きだ。",
+        "en": "My father is good at making salty dishes, but I prefer sweet ones."
+      }
+    ]
   },
   {
     "id": "3803d886c8",
@@ -6432,7 +6705,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1588620
+    "jmdict_id": 1588620,
+    "examples": [
+      {
+        "ja": "計画をスムーズに運送ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{運送|うんそう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "2eba52219f",
@@ -6478,7 +6758,14 @@
     "pos": [
       "exp"
     ],
-    "jmdict_id": 1588630
+    "jmdict_id": 1588630,
+    "examples": [
+      {
+        "ja": "今日の授業で「云々」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{云々|うんぬん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “云々.”"
+      }
+    ]
   },
   {
     "id": "7e99520775",
@@ -6546,7 +6833,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1173050
+    "jmdict_id": 1173050,
+    "examples": [
+      {
+        "ja": "今日の授業で「運輸」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{運輸|うんゆ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “transportation.”"
+      }
+    ]
   },
   {
     "id": "1103db2949",
@@ -6661,7 +6955,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1001130
+    "jmdict_id": 1001130,
+    "examples": [
+      {
+        "ja": "今日の授業で「えい」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「えい」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “ei.”"
+      }
+    ]
   },
   {
     "id": "cebfa04858",
@@ -6675,7 +6976,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1174530
+    "jmdict_id": 1174530,
+    "examples": [
+      {
+        "ja": "今日の授業で「英字」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{英字|えいじ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “英字.”"
+      }
+    ]
   },
   {
     "id": "189db824d3",
@@ -6830,7 +7138,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1537960
+    "jmdict_id": 1537960,
+    "examples": [
+      {
+        "ja": "細かい観察が役立つことがあります。",
+        "furigana": "細かい観察が{役|えき}立つことがあります。",
+        "en": "Detailed observations can sometimes be helpful."
+      }
+    ]
   },
   {
     "id": "2cd66712b3",
@@ -7018,7 +7333,14 @@
       "adj-na",
       "n"
     ],
-    "jmdict_id": 1615260
+    "jmdict_id": 1615260,
+    "examples": [
+      {
+        "ja": "彼の艶な対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}の{艶|えん}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his tactful handling of the situation, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "f9aaf64bd0",
@@ -7083,7 +7405,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1177630
+    "jmdict_id": 1177630,
+    "examples": [
+      {
+        "ja": "今日の授業で「縁側」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{縁側|えんがわ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “engawa.”"
+      }
+    ]
   },
   {
     "id": "32f7aa5c9b",
@@ -7131,7 +7460,14 @@
       "adj-na",
       "n"
     ],
-    "jmdict_id": 1566060
+    "jmdict_id": 1566060,
+    "examples": [
+      {
+        "ja": "彼の婉曲な対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}の{婉曲|えんきょく}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his tactful handling of the situation, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "e5d4fba484",
@@ -7178,7 +7514,14 @@
       "vt",
       "vi"
     ],
-    "jmdict_id": 1176930
+    "jmdict_id": 1176930,
+    "examples": [
+      {
+        "ja": "計画をスムーズに演習ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{演習|えんしゅう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "62e5ed991c",
@@ -7823,7 +8166,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 2833293
+    "jmdict_id": 2833293,
+    "examples": [
+      {
+        "ja": "大事な試合で気持ちが折れることは許されない。",
+        "furigana": "{大事|おおごと}な試合で気持ちが折れることは許されない。",
+        "en": "It is not acceptable to lose spirit in an important match."
+      }
+    ]
   },
   {
     "id": "d8aaab462e",
@@ -7884,7 +8234,14 @@
       "adj-no",
       "adj-na"
     ],
-    "jmdict_id": 1032100
+    "jmdict_id": 1032100,
+    "examples": [
+      {
+        "ja": "彼のオートマチックな対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}のオートマチックな{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his prompt response, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "ca1fafcdb2",
@@ -8113,7 +8470,14 @@
       "v5s",
       "vt"
     ],
-    "jmdict_id": 1422000
+    "jmdict_id": 1422000,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり遅らすことが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{遅らす|おくらす}ことが{求|もと}められます。",
+        "en": "You are expected to speak clearly and confidently in important situations."
+      }
+    ]
   },
   {
     "id": "37d3906e02",
@@ -8247,7 +8611,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 2647190
+    "jmdict_id": 2647190,
+    "examples": [
+      {
+        "ja": "彼は厳しい締め切りのために長い時間働いていた。",
+        "furigana": "彼は厳しい締め切りのために{長|おさ}い時間働いていた。",
+        "en": "He worked long hours due to the tight deadline."
+      }
+    ]
   },
   {
     "id": "019aed3e0a",
@@ -9187,7 +9558,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 2858064
+    "jmdict_id": 2858064,
+    "examples": [
+      {
+        "ja": "今日の授業で「女子」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{女子|おなご}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “joshi.”"
+      }
+    ]
   },
   {
     "id": "ca6828b5da",
@@ -9465,6 +9843,13 @@
     "jmdict_id": 1584680,
     "other_readings": [
       "おも"
+    ],
+    "examples": [
+      {
+        "ja": "この詩は不規則なリズムを持っていて、面白い響きがある。",
+        "furigana": "この詩は不規則なリズムを持っていて、{面|おもて}白い響きがある。",
+        "en": "This poem has an irregular rhythm, which makes it interesting to listen to."
+      }
     ]
   },
   {
@@ -9485,6 +9870,13 @@
     "jmdict_id": 1589400,
     "other_forms": [
       "重なる"
+    ],
+    "examples": [
+      {
+        "ja": "今日の授業で「主なる」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{主なる|おもなる}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “主なる.”"
+      }
     ]
   },
   {
@@ -9601,7 +9993,14 @@
       "vz",
       "vt"
     ],
-    "jmdict_id": 1335950
+    "jmdict_id": 1335950,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり重んずることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{重んずる|おもんずる}ことが{求|もと}められます。",
+        "en": "It is essential to treat this matter with the utmost respect in important situations."
+      }
+    ]
   },
   {
     "id": "d87794e93f",
@@ -9757,7 +10156,14 @@
       "v5s",
       "vt"
     ],
-    "jmdict_id": 1385900
+    "jmdict_id": 1385900,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり折り返すことが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{折り返す|おりかえす}ことが{求|もと}められます。",
+        "en": "You’ll need to be able to respond effectively in important situations."
+      }
+    ]
   },
   {
     "id": "e7af77b5ad",
@@ -10135,7 +10541,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1200760
+    "jmdict_id": 1200760,
+    "examples": [
+      {
+        "ja": "計画をスムーズに改悪ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{改悪|かいあく}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan could be revised smoothly."
+      }
+    ]
   },
   {
     "id": "230db12bf5",
@@ -10637,7 +11050,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1199610
+    "jmdict_id": 1199610,
+    "examples": [
+      {
+        "ja": "計画をスムーズに回送ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{回送|かいそう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan ran smoothly."
+      }
+    ]
   },
   {
     "id": "06f4ced5f8",
@@ -10745,7 +11165,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1201040
+    "jmdict_id": 1201040,
+    "examples": [
+      {
+        "ja": "計画をスムーズに改定ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{改定|かいてい}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure a smooth revision of the plan."
+      }
+    ]
   },
   {
     "id": "e1ffadc5ac",
@@ -11319,7 +11746,14 @@
       "v1",
       "vt"
     ],
-    "jmdict_id": 2836356
+    "jmdict_id": 2836356,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり省みることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{省みる|かえりみる}ことが{求|もと}められます。",
+        "en": "In important situations, you are expected to reflect carefully."
+      }
+    ]
   },
   {
     "id": "3bd1fc1cbb",
@@ -11397,7 +11831,14 @@
       "n",
       "adj-no"
     ],
-    "jmdict_id": 1195750
+    "jmdict_id": 1195750,
+    "examples": [
+      {
+        "ja": "今日の授業で「課外」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{課外|かがい}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “extracurricular.”"
+      }
+    ]
   },
   {
     "id": "b3c4614300",
@@ -11537,7 +11978,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1189710
+    "jmdict_id": 1189710,
+    "examples": [
+      {
+        "ja": "今日の授業で「佳句」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{佳句|かく}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “good phrase.”"
+      }
+    ]
   },
   {
     "id": "15569a3a2f",
@@ -11682,7 +12130,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1206720
+    "jmdict_id": 1206720,
+    "examples": [
+      {
+        "ja": "今日の授業で「学芸」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{学芸|がくげい}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “gakugei.”"
+      }
+    ]
   },
   {
     "id": "1bd65ccbfc",
@@ -11748,7 +12203,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1206760
+    "jmdict_id": 1206760,
+    "examples": [
+      {
+        "ja": "今日の授業で「学士」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{学士|がくし}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “bachelor’s degree.”"
+      }
+    ]
   },
   {
     "id": "7d0a45022f",
@@ -12424,7 +12886,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1186980
+    "jmdict_id": 1186980,
+    "examples": [
+      {
+        "ja": "計画をスムーズに化合ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{化合|かごう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure the plan went smoothly, we made preparations in advance."
+      }
+    ]
   },
   {
     "id": "0830cb0b68",
@@ -12525,7 +12994,14 @@
       "adj-na",
       "n"
     ],
-    "jmdict_id": 2764440
+    "jmdict_id": 2764440,
+    "examples": [
+      {
+        "ja": "彼の華奢な対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}の{華奢|かしゃ}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his tactful handling of the situation, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "4641b96f3b",
@@ -12571,7 +13047,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 2859761
+    "jmdict_id": 2859761,
+    "examples": [
+      {
+        "ja": "計画をスムーズに火傷ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{火傷|かしょう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure the plan went smoothly, I made preparations in advance."
+      }
+    ]
   },
   {
     "id": "c283e8c6ea",
@@ -12586,7 +13069,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1590280
+    "jmdict_id": 1590280,
+    "examples": [
+      {
+        "ja": "今日の授業で「箇条書き」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{箇条書き|かじょうがき}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “bulleted list.”"
+      }
+    ]
   },
   {
     "id": "807c84bfa5",
@@ -12783,7 +13273,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1187250
+    "jmdict_id": 1187250,
+    "examples": [
+      {
+        "ja": "今日の授業で「化繊」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{化繊|かせん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “synthetic fiber.”"
+      }
+    ]
   },
   {
     "id": "9f60aaa2a3",
@@ -12825,7 +13322,14 @@
       "n",
       "adj-no"
     ],
-    "jmdict_id": 1196220
+    "jmdict_id": 1196220,
+    "examples": [
+      {
+        "ja": "今日の授業で「過疎」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{過疎|かそ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “depopulation.”"
+      }
+    ]
   },
   {
     "id": "af871ac284",
@@ -12841,7 +13345,14 @@
       "n",
       "adj-na"
     ],
-    "jmdict_id": 1196230
+    "jmdict_id": 1196230,
+    "examples": [
+      {
+        "ja": "彼の過多な対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}の{過多|かた}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his thorough handling of the matter, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "712db68fb8",
@@ -12938,7 +13449,14 @@
       "n-suf",
       "n"
     ],
-    "jmdict_id": 1577915
+    "jmdict_id": 1577915,
+    "examples": [
+      {
+        "ja": "あの素敵なドレスが欲しいです。",
+        "furigana": "あの素{敵|かたき}なドレスが欲しいです。",
+        "en": "I want that lovely dress."
+      }
+    ]
   },
   {
     "id": "a2ee87bdca",
@@ -13203,7 +13721,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1197950
+    "jmdict_id": 1197950,
+    "examples": [
+      {
+        "ja": "今日の授業で「雅致」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{雅致|がち}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “雅致.”"
+      }
+    ]
   },
   {
     "id": "b8251bb129",
@@ -13277,7 +13802,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1197170
+    "jmdict_id": 1197170,
+    "examples": [
+      {
+        "ja": "画期的な技術は新たな産業を生む可能性がある。",
+        "furigana": "{画期|かっき}的な技術は新たな産業を生む可能性がある。",
+        "en": "Groundbreaking technologies can give birth to new industries."
+      }
+    ]
   },
   {
     "id": "4a24741cdf",
@@ -13478,7 +14010,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1037630
+    "jmdict_id": 1037630,
+    "examples": [
+      {
+        "ja": "髪をカットすることにした。",
+        "furigana": "髪をカットすることにした。",
+        "en": "I decided to get my hair cut."
+      }
+    ]
   },
   {
     "id": "35ff0c814b",
@@ -13521,7 +14060,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1609580
+    "jmdict_id": 1609580,
+    "examples": [
+      {
+        "ja": "今日の授業で「月日」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{月日|がっぴ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “月日.”"
+      }
+    ]
   },
   {
     "id": "81b1055209",
@@ -13602,7 +14148,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 2868800
+    "jmdict_id": 2868800,
+    "examples": [
+      {
+        "ja": "調査を行うために専門家を雇いました。",
+        "furigana": "調査を行うために専{門|かど}家を雇いました。",
+        "en": "We hired an expert to conduct the survey."
+      }
+    ]
   },
   {
     "id": "f62a99c583",
@@ -13790,7 +14343,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1186150
+    "jmdict_id": 1186150,
+    "examples": [
+      {
+        "ja": "計画をスムーズに下番ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{下番|かばん}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "9914ba6768",
@@ -14000,7 +14560,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1190570
+    "jmdict_id": 1190570,
+    "examples": [
+      {
+        "ja": "計画をスムーズに加味ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{加味|かみ}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "9f4cb35bae",
@@ -14069,7 +14636,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1038320
+    "jmdict_id": 1038320,
+    "examples": [
+      {
+        "ja": "計画をスムーズにカムバックために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズにカムバックために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure a smooth return to our plans."
+      }
+    ]
   },
   {
     "id": "45e3926625",
@@ -14083,7 +14657,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1491110
+    "jmdict_id": 1491110,
+    "examples": [
+      {
+        "ja": "瓶にピクルスを詰めて保存する。",
+        "furigana": "{瓶|かめ}にピクルスを詰めて保存する。",
+        "en": "Store the pickles in a jar by packing them in."
+      }
+    ]
   },
   {
     "id": "bb321580b5",
@@ -14202,7 +14783,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1186520
+    "jmdict_id": 1186520,
+    "examples": [
+      {
+        "ja": "今日の授業で「下吏」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{下吏|かり}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “下吏.”"
+      }
+    ]
   },
   {
     "id": "86c52538cd",
@@ -14697,7 +15285,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1212310
+    "jmdict_id": 1212310,
+    "examples": [
+      {
+        "ja": "今日の授業で「感慨」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{感慨|かんがい}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “kōkai.”"
+      }
+    ]
   },
   {
     "id": "fd76167657",
@@ -14763,7 +15358,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 2862467
+    "jmdict_id": 2862467,
+    "examples": [
+      {
+        "ja": "今日の授業で「眼鏡」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{眼鏡|がんきょう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “glasses.”"
+      }
+    ]
   },
   {
     "id": "32936b686e",
@@ -14976,7 +15578,14 @@
       "vt",
       "adj-no"
     ],
-    "jmdict_id": 1210970
+    "jmdict_id": 1210970,
+    "examples": [
+      {
+        "ja": "計画をスムーズに勧告ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{勧告|かんこく}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan proceeded smoothly."
+      }
+    ]
   },
   {
     "id": "0af3e8ffd5",
@@ -15348,7 +15957,14 @@
       "n",
       "adj-no"
     ],
-    "jmdict_id": 1212140
+    "jmdict_id": 1212140,
+    "examples": [
+      {
+        "ja": "出張の際、新幹線で東京と大阪を往復した。",
+        "furigana": "出張の際、新{幹線|かんせん}で東京と大阪を往復した。",
+        "en": "I went back and forth between Tokyo and Osaka on the Shinkansen during my business trip."
+      }
+    ]
   },
   {
     "id": "eac47f495f",
@@ -15451,7 +16067,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1212550
+    "jmdict_id": 1212550,
+    "examples": [
+      {
+        "ja": "今日の授業で「感度」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{感度|かんど}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “sensitivity.”"
+      }
+    ]
   },
   {
     "id": "337e74cd80",
@@ -15496,7 +16119,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1261020
+    "jmdict_id": 1261020,
+    "examples": [
+      {
+        "ja": "今日の授業で「元年」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{元年|がんねん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “first year.”"
+      }
+    ]
   },
   {
     "id": "0db42a387a",
@@ -15605,7 +16235,14 @@
       "adj-no",
       "adj-na"
     ],
-    "jmdict_id": 1212620
+    "jmdict_id": 1212620,
+    "examples": [
+      {
+        "ja": "彼の感無量な対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}の{感無量|かんむりょう}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his deeply moving response, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "11d82217b9",
@@ -15717,7 +16354,14 @@
       "vt",
       "adj-no"
     ],
-    "jmdict_id": 1212720
+    "jmdict_id": 1212720,
+    "examples": [
+      {
+        "ja": "計画をスムーズに慣用ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{慣用|かんよう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "bad0f9f7f6",
@@ -15758,7 +16402,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1215040
+    "jmdict_id": 1215040,
+    "examples": [
+      {
+        "ja": "計画をスムーズに観覧ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{観覧|かんらん}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure that the tour went smoothly."
+      }
+    ]
   },
   {
     "id": "e5967381ed",
@@ -15801,7 +16452,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1212750
+    "jmdict_id": 1212750,
+    "examples": [
+      {
+        "ja": "今日の授業で「慣例」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{慣例|かんれい}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “custom.”"
+      }
+    ]
   },
   {
     "id": "73311cdf3b",
@@ -15927,7 +16585,14 @@
       "n",
       "pref"
     ],
-    "jmdict_id": 1378440
+    "jmdict_id": 1378440,
+    "examples": [
+      {
+        "ja": "彼は偉い先生だと思います。",
+        "furigana": "彼は偉い先{生|き}だと思います。",
+        "en": "I think he is a great teacher."
+      }
+    ]
   },
   {
     "id": "f5be5f6d73",
@@ -16031,7 +16696,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1222970
+    "jmdict_id": 1222970,
+    "examples": [
+      {
+        "ja": "今日の授業で「規格」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{規格|きかく}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “specifications.”"
+      }
+    ]
   },
   {
     "id": "a9458f13be",
@@ -16163,7 +16835,14 @@
       "n",
       "adj-no"
     ],
-    "jmdict_id": 1222810
+    "jmdict_id": 1222810,
+    "examples": [
+      {
+        "ja": "今日の授業で「季刊」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{季刊|きかん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “季刊.”"
+      }
+    ]
   },
   {
     "id": "4588cf36bc",
@@ -16264,7 +16943,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1221310
+    "jmdict_id": 1221310,
+    "examples": [
+      {
+        "ja": "計画をスムーズに帰京ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{帰京|ききょう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure a smooth return to Tokyo, I made preparations in advance."
+      }
+    ]
   },
   {
     "id": "e9cce3fe13",
@@ -17314,7 +18000,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1223860
+    "jmdict_id": 1223860,
+    "examples": [
+      {
+        "ja": "今日の授業で「起点」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{起点|きてん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “starting point.”"
+      }
+    ]
   },
   {
     "id": "7825b83055",
@@ -17389,7 +18082,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 2397580
+    "jmdict_id": 2397580,
+    "examples": [
+      {
+        "ja": "彼の打球は甲子園で飛び回っていました。",
+        "furigana": "彼の打球は{甲|きのえ}子園で飛び回っていました。",
+        "en": "The ball he hit was flying around Koushien Stadium."
+      }
+    ]
   },
   {
     "id": "27f5dcd741",
@@ -17458,7 +18158,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1222580
+    "jmdict_id": 1222580,
+    "examples": [
+      {
+        "ja": "今日の授業で「気風」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{気風|きふう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “ki-fu.”"
+      }
+    ]
   },
   {
     "id": "e5983c3097",
@@ -17474,7 +18181,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1223930
+    "jmdict_id": 1223930,
+    "examples": [
+      {
+        "ja": "計画をスムーズに起伏ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{起伏|きふく}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "8cae689952",
@@ -17768,7 +18482,14 @@
       "n",
       "adj-no"
     ],
-    "jmdict_id": 1226690
+    "jmdict_id": 1226690,
+    "examples": [
+      {
+        "ja": "客観的な見方を取ることが重要だ。",
+        "furigana": "{客観|きゃっかん}的な見方を取ることが重要だ。",
+        "en": "It is important to take an objective view."
+      }
+    ]
   },
   {
     "id": "28fa5ea61e",
@@ -17812,7 +18533,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1041980
+    "jmdict_id": 1041980,
+    "examples": [
+      {
+        "ja": "彼は怪我のためにスポーツ選手としてのキャリアを引退することを決意した。",
+        "furigana": "彼は怪我のためにスポーツ選手としてのキャリアを引退することを決意した。",
+        "en": "He decided to retire from his sports career due to injury."
+      }
+    ]
   },
   {
     "id": "85e455a3f4",
@@ -17949,7 +18677,14 @@
       "n",
       "adj-no"
     ],
-    "jmdict_id": 1229950
+    "jmdict_id": 1229950,
+    "examples": [
+      {
+        "ja": "今日の授業で「球根」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{球根|きゅうこん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “bulb.”"
+      }
+    ]
   },
   {
     "id": "1474b01387",
@@ -18087,7 +18822,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1231060
+    "jmdict_id": 1231060,
+    "examples": [
+      {
+        "ja": "今日の授業で「旧知」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{旧知|きゅうち}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “old acquaintance.”"
+      }
+    ]
   },
   {
     "id": "c9543e4954",
@@ -18359,7 +19101,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1234350
+    "jmdict_id": 1234350,
+    "examples": [
+      {
+        "ja": "計画をスムーズに共学ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{共学|きょうがく}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "3e9b86c219",
@@ -18534,7 +19283,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1236270
+    "jmdict_id": 1236270,
+    "examples": [
+      {
+        "ja": "計画をスムーズに強行ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{強行|きょうこう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went off without a hitch."
+      }
+    ]
   },
   {
     "id": "2d26656cd1",
@@ -18598,7 +19354,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1234430
+    "jmdict_id": 1234430,
+    "examples": [
+      {
+        "ja": "今日の授業で「共産」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{共産|きょうさん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “communist.”"
+      }
+    ]
   },
   {
     "id": "2284a3924c",
@@ -18676,7 +19439,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1237170
+    "jmdict_id": 1237170,
+    "examples": [
+      {
+        "ja": "計画をスムーズに教習ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{教習|きょうしゅう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the training went smoothly."
+      }
+    ]
   },
   {
     "id": "2c40858d7a",
@@ -18749,7 +19519,14 @@
       "v1",
       "vi"
     ],
-    "jmdict_id": 1238180
+    "jmdict_id": 1238180,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり興じることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{興じる|きょうじる}ことが{求|もと}められます。",
+        "en": "You are expected to perform well in important situations."
+      }
+    ]
   },
   {
     "id": "dad79e7a91",
@@ -18860,6 +19637,13 @@
     "jmdict_id": 1578050,
     "other_readings": [
       "きょうそん"
+    ],
+    "examples": [
+      {
+        "ja": "計画をスムーズに共存ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{共存|きょうぞん}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
     ]
   },
   {
@@ -19083,7 +19867,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1630190
+    "jmdict_id": 1630190,
+    "examples": [
+      {
+        "ja": "今日の授業で「共和」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{共和|きょうわ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “kyōwa.”"
+      }
+    ]
   },
   {
     "id": "cd2faccb83",
@@ -19156,7 +19947,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1239600
+    "jmdict_id": 1239600,
+    "examples": [
+      {
+        "ja": "計画をスムーズに局限ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{局限|きょくげん}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "5f5902801b",
@@ -19361,7 +20159,14 @@
     "pos": [
       "adj-na"
     ],
-    "jmdict_id": 1378180
+    "jmdict_id": 1378180,
+    "examples": [
+      {
+        "ja": "彼の清らかな対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}の{清らか|きよらか}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his courteous response, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "5523e28c32",
@@ -19462,7 +20267,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1240710
+    "jmdict_id": 1240710,
+    "examples": [
+      {
+        "ja": "今日の授業で「桐」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{桐|きり}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “kiri.”"
+      }
+    ]
   },
   {
     "id": "a8ba7d61d2",
@@ -19552,7 +20364,14 @@
       "v1",
       "vt"
     ],
-    "jmdict_id": 1591780
+    "jmdict_id": 1591780,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり切り替えることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{切り替える|きりかえる}ことが{求|もと}められます。",
+        "en": "You’ll need to be able to switch gears effectively in important situations."
+      }
+    ]
   },
   {
     "id": "bc1f0acc20",
@@ -19623,7 +20442,14 @@
       "n",
       "n-suf"
     ],
-    "jmdict_id": 1296290
+    "jmdict_id": 1296290,
+    "examples": [
+      {
+        "ja": "国際的な問題に取り組む必要がある。",
+        "furigana": "国{際|きわ}的な問題に取り組む必要がある。",
+        "en": "It is necessary to tackle international issues."
+      }
+    ]
   },
   {
     "id": "effe5c2acb",
@@ -20247,7 +21073,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1244180
+    "jmdict_id": 1244180,
+    "examples": [
+      {
+        "ja": "今日の授業で「区切り」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{区切り|くぎり}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “kuwari.”"
+      }
+    ]
   },
   {
     "id": "91af54997d",
@@ -20265,7 +21098,14 @@
       "v5r",
       "vi"
     ],
-    "jmdict_id": 1609710
+    "jmdict_id": 1609710,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり潜ることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{潜る|くぐる}ことが{求|もと}められます。",
+        "en": "You’ll need to be able to dive properly in critical situations."
+      }
+    ]
   },
   {
     "id": "cfdb0d4137",
@@ -20306,7 +21146,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1577950
+    "jmdict_id": 1577950,
+    "examples": [
+      {
+        "ja": "今日の授業で「旧事」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{旧事|くじ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “old news.”"
+      }
+    ]
   },
   {
     "id": "90bc8fc506",
@@ -20567,7 +21414,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1246620
+    "jmdict_id": 1246620,
+    "examples": [
+      {
+        "ja": "計画をスムーズに屈折ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{屈折|くっせつ}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "67ac5aceff",
@@ -20772,7 +21626,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1243910
+    "jmdict_id": 1243910,
+    "examples": [
+      {
+        "ja": "今夜はクラブでダンスする予定がある。",
+        "furigana": "今夜はクラブでダンスする予定がある。",
+        "en": "I have plans to dance at the club tonight."
+      }
+    ]
   },
   {
     "id": "a0ad5884f8",
@@ -21110,7 +21971,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1248970
+    "jmdict_id": 1248970,
+    "examples": [
+      {
+        "ja": "今日の授業で「軍服」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{軍服|ぐんぷく}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “military uniform.”"
+      }
+    ]
   },
   {
     "id": "0dff3c38d4",
@@ -21324,7 +22192,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1250740
+    "jmdict_id": 1250740,
+    "examples": [
+      {
+        "ja": "今日の授業で「敬具」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{敬具|けいぐ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “Sincerely.”"
+      }
+    ]
   },
   {
     "id": "c93dff6c1a",
@@ -21932,7 +22807,14 @@
     "pos": [
       "ctr"
     ],
-    "jmdict_id": 2836694
+    "jmdict_id": 2836694,
+    "examples": [
+      {
+        "ja": "今日の授業で「傑」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{傑|けつ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “傑.”"
+      }
+    ]
   },
   {
     "id": "0023032732",
@@ -22270,7 +23152,14 @@
       "vt",
       "vi"
     ],
-    "jmdict_id": 1254930
+    "jmdict_id": 1254930,
+    "examples": [
+      {
+        "ja": "計画をスムーズに結束ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{結束|けっそく}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "d7246d0f6f",
@@ -22513,7 +23402,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1192530
+    "jmdict_id": 1192530,
+    "examples": [
+      {
+        "ja": "今日の授業で「家来」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{家来|けらい}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “servant.”"
+      }
+    ]
   },
   {
     "id": "a6365397b9",
@@ -22640,7 +23536,14 @@
     "pos": [
       "pref"
     ],
-    "jmdict_id": 1261130
+    "jmdict_id": 1261130,
+    "examples": [
+      {
+        "ja": "原料に新鮮な野菜と果物を加えると、味が良くなります。",
+        "furigana": "{原|げん}料に新鮮な野菜と果物を加えると、味が良くなります。",
+        "en": "Adding fresh vegetables and fruits to the ingredients improves the taste."
+      }
+    ]
   },
   {
     "id": "3999ef3eb7",
@@ -22687,7 +23590,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1578300
+    "jmdict_id": 1578300,
+    "examples": [
+      {
+        "ja": "計画をスムーズに兼業ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{兼業|けんぎょう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure that my side job went smoothly, I made preparations in advance."
+      }
+    ]
   },
   {
     "id": "b6b1badd76",
@@ -22898,7 +23808,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1260870
+    "jmdict_id": 1260870,
+    "examples": [
+      {
+        "ja": "今日の授業で「元首」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{元首|げんしゅ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “head of state.”"
+      }
+    ]
   },
   {
     "id": "f7b907fc12",
@@ -23251,7 +24168,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1263290
+    "jmdict_id": 1263290,
+    "examples": [
+      {
+        "ja": "計画をスムーズに減点ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{減点|げんてん}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure the plan went smoothly, I made preparations in advance."
+      }
+    ]
   },
   {
     "id": "92e2dcd393",
@@ -23575,7 +24499,14 @@
     "pos": [
       "pref"
     ],
-    "jmdict_id": 1267110
+    "jmdict_id": 1267110,
+    "examples": [
+      {
+        "ja": "ここは私の故郷にそっくりな風景です。",
+        "furigana": "ここは私の{故|こ}郷にそっくりな風景です。",
+        "en": "This scenery is just like that of my hometown."
+      }
+    ]
   },
   {
     "id": "013f46c118",
@@ -23735,7 +24666,14 @@
     "pos": [
       "num"
     ],
-    "jmdict_id": 1280050
+    "jmdict_id": 1280050,
+    "examples": [
+      {
+        "ja": "その建設プロジェクトのために、彼は深い溝を掘らなければならなかった。",
+        "furigana": "その建設プロジェクトのために、彼は深い{溝|こう}を掘らなければならなかった。",
+        "en": "He had to dig a deep ditch for the construction project."
+      }
+    ]
   },
   {
     "id": "6b56c41e59",
@@ -23750,7 +24688,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1239320
+    "jmdict_id": 1239320,
+    "examples": [
+      {
+        "ja": "彼女は偉い業績を上げた。",
+        "furigana": "彼女は偉い{業|ごう}績を上げた。",
+        "en": "She achieved great accomplishments."
+      }
+    ]
   },
   {
     "id": "ae0d7c35ac",
@@ -23794,7 +24739,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1956270
+    "jmdict_id": 1956270,
+    "examples": [
+      {
+        "ja": "今日の授業で「濠」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{濠|ごう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “moat.”"
+      }
+    ]
   },
   {
     "id": "be5a647260",
@@ -24131,7 +25083,14 @@
       "adj-na",
       "adj-no"
     ],
-    "jmdict_id": 1799670
+    "jmdict_id": 1799670,
+    "examples": [
+      {
+        "ja": "彼の強気な対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}の{強気|ごうぎ}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his assertive approach, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "cbbb3f1bb9",
@@ -24149,7 +25108,14 @@
       "vt",
       "vi"
     ],
-    "jmdict_id": 1284700
+    "jmdict_id": 1284700,
+    "examples": [
+      {
+        "ja": "計画をスムーズに合議ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{合議|ごうぎ}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan was discussed smoothly."
+      }
+    ]
   },
   {
     "id": "aec480ac67",
@@ -24221,7 +25187,14 @@
       "n",
       "vs"
     ],
-    "jmdict_id": 1238240
+    "jmdict_id": 1238240,
+    "examples": [
+      {
+        "ja": "計画をスムーズに興業ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{興業|こうぎょう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the event went smoothly."
+      }
+    ]
   },
   {
     "id": "5630137157",
@@ -24686,7 +25659,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1282890
+    "jmdict_id": 1282890,
+    "examples": [
+      {
+        "ja": "今日の授業で「降水」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{降水|こうすい}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, we learned how to use the expression “precipitation.”"
+      }
+    ]
   },
   {
     "id": "6c44a3132f",
@@ -24737,7 +25717,14 @@
       "vt",
       "adj-no"
     ],
-    "jmdict_id": 1284940
+    "jmdict_id": 1284940,
+    "examples": [
+      {
+        "ja": "計画をスムーズに合成ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{合成|ごうせい}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "aa577197fc",
@@ -25007,7 +25994,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1282350
+    "jmdict_id": 1282350,
+    "examples": [
+      {
+        "ja": "計画をスムーズに講読ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{講読|こうどく}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "c63f69eadd",
@@ -25087,7 +26081,14 @@
       "vt",
       "adj-no"
     ],
-    "jmdict_id": 1274450
+    "jmdict_id": 1274450,
+    "examples": [
+      {
+        "ja": "計画をスムーズに公認ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{公認|こうにん}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "95a0a7e61d",
@@ -25101,7 +26102,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1273110
+    "jmdict_id": 1273110,
+    "examples": [
+      {
+        "ja": "今日の授業で「光熱費」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{光熱費|こうねつひ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “utility bills.”"
+      }
+    ]
   },
   {
     "id": "4198992702",
@@ -25297,7 +26305,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1274680
+    "jmdict_id": 1274680,
+    "examples": [
+      {
+        "ja": "計画をスムーズに公募ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{公募|こうぼ}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan could be announced smoothly."
+      }
+    ]
   },
   {
     "id": "6b0a6c0492",
@@ -25654,7 +26669,14 @@
       "n",
       "adj-no"
     ],
-    "jmdict_id": 1286860
+    "jmdict_id": 1286860,
+    "examples": [
+      {
+        "ja": "今日の授業で「国定」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{国定|こくてい}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “kokutei.”"
+      }
+    ]
   },
   {
     "id": "d2f43648b9",
@@ -25754,7 +26776,14 @@
       "n",
       "adj-no"
     ],
-    "jmdict_id": 1287170
+    "jmdict_id": 1287170,
+    "examples": [
+      {
+        "ja": "今日の授業で「国有」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{国有|こくゆう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “state-owned.”"
+      }
+    ]
   },
   {
     "id": "503535b26b",
@@ -25768,7 +26797,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1240250
+    "jmdict_id": 1240250,
+    "examples": [
+      {
+        "ja": "今日の授業で「極楽」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{極楽|ごくらく}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “Gokuraku.”"
+      }
+    ]
   },
   {
     "id": "5c0448565e",
@@ -25947,7 +26983,14 @@
       "v5s",
       "vt"
     ],
-    "jmdict_id": 1239000
+    "jmdict_id": 1239000,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり凝らすことが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{凝らす|こごらす}ことが{求|もと}められます。",
+        "en": "You’ll need to put a lot of thought into it when the stakes are high."
+      }
+    ]
   },
   {
     "id": "308f45926c",
@@ -25963,7 +27006,14 @@
       "v5r",
       "vi"
     ],
-    "jmdict_id": 1239060
+    "jmdict_id": 1239060,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり凝ることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{凝る|こごる}ことが{求|もと}められます。",
+        "en": "You’re expected to put a lot of effort into it during important moments."
+      }
+    ]
   },
   {
     "id": "9589a1d266",
@@ -26344,7 +27394,14 @@
       "v1",
       "vi"
     ],
-    "jmdict_id": 1567270
+    "jmdict_id": 1567270,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり拗れることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{拗れる|こじれる}ことが{求|もと}められます。",
+        "en": "You’ll need to be able to handle difficult situations effectively in important moments."
+      }
+    ]
   },
   {
     "id": "0114b5768e",
@@ -26387,7 +27444,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1349980
+    "jmdict_id": 1349980,
+    "examples": [
+      {
+        "ja": "今日の授業で「梢」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{梢|こずえ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “梢.”"
+      }
+    ]
   },
   {
     "id": "2afb17f34b",
@@ -26555,7 +27619,14 @@
       "v1",
       "vt"
     ],
-    "jmdict_id": 2827352
+    "jmdict_id": 2827352,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり堪えることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{堪える|こたえる}ことが{求|もと}められます。",
+        "en": "You’ll need to stay strong in important situations."
+      }
+    ]
   },
   {
     "id": "e642ca265e",
@@ -27053,7 +28124,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1270890
+    "jmdict_id": 1270890,
+    "examples": [
+      {
+        "ja": "今日の授業で「碁盤」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{碁盤|ごばん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “go board.”"
+      }
+    ]
   },
   {
     "id": "e822eb5d76",
@@ -27508,7 +28586,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 2177300
+    "jmdict_id": 2177300,
+    "examples": [
+      {
+        "ja": "今日の授業で「魂」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{魂|こん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “soul.”"
+      }
+    ]
   },
   {
     "id": "62859af8b4",
@@ -28220,7 +29305,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1296810
+    "jmdict_id": 1296810,
+    "examples": [
+      {
+        "ja": "今日の授業で「財源」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{財源|ざいげん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “財源.”"
+      }
+    ]
   },
   {
     "id": "ee78c61579",
@@ -28761,7 +29853,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1472630
+    "jmdict_id": 1472630,
+    "examples": [
+      {
+        "ja": "彼は毎日コーヒーを２杯飲むのが習慣です。",
+        "furigana": "彼は毎日コーヒーを２{杯|さかずき}飲むのが習慣です。",
+        "en": "It is his habit to drink two cups of coffee every day."
+      }
+    ]
   },
   {
     "id": "83d4b6e60d",
@@ -29014,7 +30113,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1298420
+    "jmdict_id": 1298420,
+    "examples": [
+      {
+        "ja": "今日の授業で「錯誤」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{錯誤|さくご}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “error.”"
+      }
+    ]
   },
   {
     "id": "ad558472a4",
@@ -29058,7 +30164,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1297940
+    "jmdict_id": 1297940,
+    "examples": [
+      {
+        "ja": "農家は、病害虫により畑の作物がすべて枯れたことに大変苦しんでいる。",
+        "furigana": "農家は、病害虫により畑の{作物|さくぶつ}がすべて枯れたことに大変苦しんでいる。",
+        "en": "Farmers are suffering greatly as all their crops in the field have withered due to pests and diseases."
+      }
+    ]
   },
   {
     "id": "0de2011ee3",
@@ -29167,7 +30280,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1593790
+    "jmdict_id": 1593790,
+    "examples": [
+      {
+        "ja": "今日の授業で「些事」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{些事|さじ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “些事.”"
+      }
+    ]
   },
   {
     "id": "efd3b15360",
@@ -29275,7 +30395,14 @@
       "v1",
       "vi"
     ],
-    "jmdict_id": 1291180
+    "jmdict_id": 1291180,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり差し支えることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{差し支える|さしつかえる}ことが{求|もと}められます。",
+        "en": "You are expected to perform reliably in important situations."
+      }
+    ]
   },
   {
     "id": "d46b54b4ac",
@@ -29436,7 +30563,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1291920
+    "jmdict_id": 1291920,
+    "examples": [
+      {
+        "ja": "今日の授業で「座談会」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{座談会|ざだんかい}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “roundtable discussion.”"
+      }
+    ]
   },
   {
     "id": "5d038b3b98",
@@ -29692,7 +30826,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1299560
+    "jmdict_id": 1299560,
+    "examples": [
+      {
+        "ja": "今日の授業で「雑木」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{雑木|ざつぼく}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “zaki.”"
+      }
+    ]
   },
   {
     "id": "2f8bc57219",
@@ -29768,7 +30909,14 @@
       "n",
       "adj-no"
     ],
-    "jmdict_id": 1638190
+    "jmdict_id": 1638190,
+    "examples": [
+      {
+        "ja": "今日の授業で「座標」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{座標|ざひょう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “coordinates.”"
+      }
+    ]
   },
   {
     "id": "2726e030a9",
@@ -30163,7 +31311,14 @@
     "pos": [
       "int"
     ],
-    "jmdict_id": 1058250
+    "jmdict_id": 1058250,
+    "examples": [
+      {
+        "ja": "今日の授業で「サンキュー」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「サンキュー」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “Thank you.”"
+      }
+    ]
   },
   {
     "id": "8dc7f3c5af",
@@ -30787,7 +31942,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1059450
+    "jmdict_id": 1059450,
+    "examples": [
+      {
+        "ja": "運転する前に、シートベルトを締めるのを忘れないでください。",
+        "furigana": "運転する前に、シートベルトを締めるのを忘れないでください。",
+        "en": "Don't forget to fasten your seatbelt before driving."
+      }
+    ]
   },
   {
     "id": "3d353fdf0a",
@@ -30890,7 +32052,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1313110
+    "jmdict_id": 1313110,
+    "examples": [
+      {
+        "ja": "今日の授業で「歯科」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{歯科|しか}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “dentistry.”"
+      }
+    ]
   },
   {
     "id": "69d6bca427",
@@ -31203,7 +32372,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1316980
+    "jmdict_id": 1316980,
+    "examples": [
+      {
+        "ja": "今日の授業で「磁器」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{磁器|じき}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “porcelain.”"
+      }
+    ]
   },
   {
     "id": "ba9a20ea9f",
@@ -31270,7 +32446,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1319090
+    "jmdict_id": 1319090,
+    "examples": [
+      {
+        "ja": "今日の授業で「式場」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{式場|しきじょう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “shikijo.”"
+      }
+    ]
   },
   {
     "id": "299764879b",
@@ -31655,6 +32838,13 @@
     "jmdict_id": 1579510,
     "other_readings": [
       "しぎょう"
+    ],
+    "examples": [
+      {
+        "ja": "計画をスムーズに施行ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{施行|しこう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
     ]
   },
   {
@@ -31956,7 +33146,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1317860
+    "jmdict_id": 1317860,
+    "examples": [
+      {
+        "ja": "計画をスムーズに自主ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{自主|じしゅ}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure the plan went smoothly on my own, I made preparations in advance."
+      }
+    ]
   },
   {
     "id": "99dd4adc73",
@@ -32310,7 +33507,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1315200
+    "jmdict_id": 1315200,
+    "examples": [
+      {
+        "ja": "今日の授業で「字体」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{字体|じたい}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “typeface.”"
+      }
+    ]
   },
   {
     "id": "11d97cded8",
@@ -32420,7 +33624,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1185920
+    "jmdict_id": 1185920,
+    "examples": [
+      {
+        "ja": "今日の授業で「下地」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{下地|したじ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “shita-ji.”"
+      }
+    ]
   },
   {
     "id": "3236115f86",
@@ -32688,7 +33899,14 @@
       "n",
       "vs"
     ],
-    "jmdict_id": 1320680
+    "jmdict_id": 1320680,
+    "examples": [
+      {
+        "ja": "計画をスムーズに質疑ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{質疑|しつぎ}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the Q&A session went smoothly."
+      }
+    ]
   },
   {
     "id": "3a3ca43df5",
@@ -32731,7 +33949,14 @@
     "pos": [
       "adj-na"
     ],
-    "jmdict_id": 1060610
+    "jmdict_id": 1060610,
+    "examples": [
+      {
+        "ja": "彼のシックな対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}のシックな{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his tactful handling of the situation, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "9ee0d57fa7",
@@ -32978,7 +34203,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1320080
+    "jmdict_id": 1320080,
+    "examples": [
+      {
+        "ja": "今日の授業で「失調」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{失調|しっちょう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “dysfunction.”"
+      }
+    ]
   },
   {
     "id": "4cd81e6ad4",
@@ -33023,7 +34255,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1321410
+    "jmdict_id": 1321410,
+    "examples": [
+      {
+        "ja": "今日の授業で「実費」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{実費|じっぴ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “actual expenses.”"
+      }
+    ]
   },
   {
     "id": "05b951102a",
@@ -33037,7 +34276,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1335070
+    "jmdict_id": 1335070,
+    "examples": [
+      {
+        "ja": "この電気製品はまだ十分使えるのに、新しいものに買い換えるのはもったいない。",
+        "furigana": "この電気製品はまだ{十分|じっぷん}使えるのに、新しいものに買い換えるのはもったいない。",
+        "en": "It's a waste to replace this electrical appliance with a new one when it can still be used sufficiently."
+      }
+    ]
   },
   {
     "id": "3418fde87d",
@@ -33166,7 +34412,14 @@
       "v1",
       "vi"
     ],
-    "jmdict_id": 1158680
+    "jmdict_id": 1158680,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり萎びることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{萎びる|しなびる}ことが{求|もと}められます。",
+        "en": "You are expected to remain composed in important situations."
+      }
+    ]
   },
   {
     "id": "192cd7a066",
@@ -33178,7 +34431,14 @@
       "flexible",
       "elastic"
     ],
-    "level": "N1"
+    "level": "N1",
+    "examples": [
+      {
+        "ja": "今日の授業で「嫋か」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{嫋か|しなやか}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “嫋か.”"
+      }
+    ]
   },
   {
     "id": "bb70fb905e",
@@ -33217,7 +34477,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1566370
+    "jmdict_id": 1566370,
+    "examples": [
+      {
+        "ja": "今日の授業で「屎尿」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{屎尿|しにょう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “feces and urine.”"
+      }
+    ]
   },
   {
     "id": "e318eece72",
@@ -33446,7 +34713,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1306680
+    "jmdict_id": 1306680,
+    "examples": [
+      {
+        "ja": "今日の授業で「司法」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{司法|しほう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “judiciary.”"
+      }
+    ]
   },
   {
     "id": "f5c71c5eae",
@@ -33798,7 +35072,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1323050
+    "jmdict_id": 1323050,
+    "examples": [
+      {
+        "ja": "計画をスムーズに謝絶ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{謝絶|しゃぜつ}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "I made preparations in advance so that I could politely decline the plan without any issues."
+      }
+    ]
   },
   {
     "id": "5884d0807c",
@@ -33920,7 +35201,14 @@
       "adj-na",
       "n"
     ],
-    "jmdict_id": 1568630
+    "jmdict_id": 1568630,
+    "examples": [
+      {
+        "ja": "彼の洒落な対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}の{洒落|しゃらく}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his tactful handling of the situation, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "9cff4e2d79",
@@ -33996,7 +35284,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1065840
+    "jmdict_id": 1065840,
+    "examples": [
+      {
+        "ja": "今日の授業で「ジャンパー」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「ジャンパー」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “jumper.”"
+      }
+    ]
   },
   {
     "id": "c36a974856",
@@ -34146,7 +35441,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1333240
+    "jmdict_id": 1333240,
+    "examples": [
+      {
+        "ja": "今日の授業で「衆」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{衆|しゅう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “衆.”"
+      }
+    ]
   },
   {
     "id": "66ac33159b",
@@ -34163,7 +35465,14 @@
       "vt",
       "adj-no"
     ],
-    "jmdict_id": 1311390
+    "jmdict_id": 1311390,
+    "examples": [
+      {
+        "ja": "計画をスムーズに私有ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{私有|しゆう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure the plan went smoothly, I made preparations in advance."
+      }
+    ]
   },
   {
     "id": "3a37cfc263",
@@ -34236,7 +35545,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1331950
+    "jmdict_id": 1331950,
+    "examples": [
+      {
+        "ja": "計画をスムーズに修学ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{修学|しゅうがく}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure that the plan went smoothly, I made preparations in advance."
+      }
+    ]
   },
   {
     "id": "36e8d19bfd",
@@ -34251,7 +35567,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1331090
+    "jmdict_id": 1331090,
+    "examples": [
+      {
+        "ja": "今日の授業で「周期」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{周期|しゅうき}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “cycle.”"
+      }
+    ]
   },
   {
     "id": "5dab2cd493",
@@ -34933,7 +36256,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1325180
+    "jmdict_id": 1325180,
+    "examples": [
+      {
+        "ja": "今日の授業で「主観」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{主観|しゅかん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “subjective.”"
+      }
+    ]
   },
   {
     "id": "cd7c2b10e4",
@@ -34979,7 +36309,14 @@
       "vt",
       "adj-no"
     ],
-    "jmdict_id": 1337410
+    "jmdict_id": 1337410,
+    "examples": [
+      {
+        "ja": "計画をスムーズに祝賀ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{祝賀|しゅくが}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the celebration went smoothly."
+      }
+    ]
   },
   {
     "id": "f5d1e73974",
@@ -35568,7 +36905,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1325980
+    "jmdict_id": 1325980,
+    "examples": [
+      {
+        "ja": "計画をスムーズに主導ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{主導|しゅどう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan ran smoothly."
+      }
+    ]
   },
   {
     "id": "4f38fa0c68",
@@ -35781,7 +37125,14 @@
       "v1",
       "vi"
     ],
-    "jmdict_id": 1341510
+    "jmdict_id": 1341510,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり準じることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{準じる|じゅんじる}ことが{求|もと}められます。",
+        "en": "You are expected to strictly adhere to the rules in important situations."
+      }
+    ]
   },
   {
     "id": "55bb56c25e",
@@ -35923,7 +37274,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1351820
+    "jmdict_id": 1351820,
+    "examples": [
+      {
+        "ja": "人々は毎年、終戦記念日を祈りと平和の象徴として記念する。",
+        "furigana": "人々は毎年、終戦記念日を祈りと平和の{象|しょう}徴として記念する。",
+        "en": "People commemorate the annual end-of-war anniversary as a symbol of prayer and peace."
+      }
+    ]
   },
   {
     "id": "ed2023474e",
@@ -35997,7 +37355,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1156390
+    "jmdict_id": 1156390,
+    "examples": [
+      {
+        "ja": "今日の授業で「尉」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{尉|じょう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “尉.”"
+      }
+    ]
   },
   {
     "id": "ed26af448e",
@@ -36096,7 +37461,14 @@
     "pos": [
       "ctr"
     ],
-    "jmdict_id": 1356740
+    "jmdict_id": 1356740,
+    "examples": [
+      {
+        "ja": "座布団を畳の上に敷いた。",
+        "furigana": "座布団を{畳|じょう}の上に敷いた。",
+        "en": "I laid the cushion on the tatami mat."
+      }
+    ]
   },
   {
     "id": "23a5d41915",
@@ -36169,7 +37541,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1355720
+    "jmdict_id": 1355720,
+    "examples": [
+      {
+        "ja": "今日の授業で「城下」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{城下|じょうか}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “jōka.”"
+      }
+    ]
   },
   {
     "id": "4c7f08ecc1",
@@ -36795,7 +38174,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1580485
+    "jmdict_id": 1580485,
+    "examples": [
+      {
+        "ja": "一般的な会話では敬語を使わなくても大丈夫です。",
+        "furigana": "一般的な会話では敬語を使わなくても大{丈夫|じょうふ}です。",
+        "en": "In general conversations, it's okay not to use honorific language."
+      }
+    ]
   },
   {
     "id": "7a62e550e4",
@@ -37711,7 +39097,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1343590
+    "jmdict_id": 1343590,
+    "examples": [
+      {
+        "ja": "今日の授業で「庶務」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{庶務|しょむ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “shomu.”"
+      }
+    ]
   },
   {
     "id": "1357fa159f",
@@ -37900,7 +39293,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1411560
+    "jmdict_id": 1411560,
+    "examples": [
+      {
+        "ja": "彼女と再会したとき、懐かしい学生時代の話に花が咲いた。",
+        "furigana": "彼女と再会したとき、懐かしい学生時{代|しろ}の話に花が咲いた。",
+        "en": "When I reunited with her, we had a lively conversation about our nostalgic school days."
+      }
+    ]
   },
   {
     "id": "159906d23f",
@@ -38062,7 +39462,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1442480
+    "jmdict_id": 1442480,
+    "examples": [
+      {
+        "ja": "今日の授業で「殿」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{殿|しんがり}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “-dono.”"
+      }
+    ]
   },
   {
     "id": "ab248f91f9",
@@ -38137,7 +39544,14 @@
     "pos": [
       "adj-no"
     ],
-    "jmdict_id": 1361750
+    "jmdict_id": 1361750,
+    "examples": [
+      {
+        "ja": "今日の授業で「新興」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{新興|しんこう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “emerging.”"
+      }
+    ]
   },
   {
     "id": "5b0f6d5ab1",
@@ -38419,7 +39833,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1360840
+    "jmdict_id": 1360840,
+    "examples": [
+      {
+        "ja": "計画をスムーズに心中ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{心中|しんじゅう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure the plan went smoothly, we made preparations in advance."
+      }
+    ]
   },
   {
     "id": "19a6178bec",
@@ -38690,7 +40111,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1366150
+    "jmdict_id": 1366150,
+    "examples": [
+      {
+        "ja": "計画をスムーズに進呈ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{進呈|しんてい}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan proceeded smoothly."
+      }
+    ]
   },
   {
     "id": "4909f5ce00",
@@ -38763,7 +40191,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1366170
+    "jmdict_id": 1366170,
+    "examples": [
+      {
+        "ja": "今日の授業で「進度」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{進度|しんど}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “progress.”"
+      }
+    ]
   },
   {
     "id": "ca35157394",
@@ -38834,7 +40269,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1359500
+    "jmdict_id": 1359500,
+    "examples": [
+      {
+        "ja": "計画をスムーズに信任ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{信任|しんにん}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "6de88050b9",
@@ -39127,7 +40569,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1370790
+    "jmdict_id": 1370790,
+    "examples": [
+      {
+        "ja": "計画をスムーズに吹奏ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{吹奏|すいそう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "44a1e074f7",
@@ -39223,7 +40672,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1373050
+    "jmdict_id": 1373050,
+    "examples": [
+      {
+        "ja": "今日の授業で「数詞」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{数詞|すうし}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “numeral.”"
+      }
+    ]
   },
   {
     "id": "d88d1e6c34",
@@ -39273,7 +40729,14 @@
       "v1",
       "vt"
     ],
-    "jmdict_id": 1373500
+    "jmdict_id": 1373500,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり据え付けることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{据え付ける|すえつける}ことが{求|もと}められます。",
+        "en": "You are expected to stay firmly grounded in important situations."
+      }
+    ]
   },
   {
     "id": "e1d803b323",
@@ -39395,7 +40858,14 @@
       "v5u",
       "vt"
     ],
-    "jmdict_id": 1226200
+    "jmdict_id": 1226200,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり掬うことが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{掬う|すくう}ことが{求|もと}められます。",
+        "en": "You’ll need to scoop it up properly in important situations."
+      }
+    ]
   },
   {
     "id": "fa16d0fa2f",
@@ -40067,7 +41537,14 @@
     "pos": [
       "adv"
     ],
-    "jmdict_id": 1006430
+    "jmdict_id": 1006430,
+    "examples": [
+      {
+        "ja": "ずらっと作業を進めたので、時間通りに終わりました。",
+        "furigana": "ずらっと{作業|さぎょう}を{進|すす}めたので、{時間通|じかんどお}りに{終|お}わりました。",
+        "en": "Since I worked through the tasks one after another, I finished on time."
+      }
+    ]
   },
   {
     "id": "4523ccb200",
@@ -40081,7 +41558,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1657910
+    "jmdict_id": 1657910,
+    "examples": [
+      {
+        "ja": "今日の授業で「刷り」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{刷り|すり}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “刷り.”"
+      }
+    ]
   },
   {
     "id": "5abd8e3509",
@@ -40120,7 +41604,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1006450
+    "jmdict_id": 1006450,
+    "examples": [
+      {
+        "ja": "今日の授業で「ずれ」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「ずれ」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “zure.”"
+      }
+    ]
   },
   {
     "id": "5c66cff518",
@@ -40134,7 +41625,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1298930
+    "jmdict_id": 1298930,
+    "examples": [
+      {
+        "ja": "今日の授業で「擦れ違い」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{擦れ違い|すれちがい}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “surechigai.”"
+      }
+    ]
   },
   {
     "id": "8a15574f02",
@@ -40152,7 +41650,14 @@
       "v1",
       "vi"
     ],
-    "jmdict_id": 1595930
+    "jmdict_id": 1595930,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり擦れることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{擦れる|すれる}ことが{求|もと}められます。",
+        "en": "You need to be able to rub it firmly in important situations."
+      }
+    ]
   },
   {
     "id": "1bd79302aa",
@@ -40356,7 +41861,14 @@
       "adj-na",
       "n"
     ],
-    "jmdict_id": 1376850
+    "jmdict_id": 1376850,
+    "examples": [
+      {
+        "ja": "彼の正規な対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}の{正規|せいき}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his proper handling of the matter, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "9b4e449cc9",
@@ -40993,7 +42505,14 @@
     "pos": [
       "adj-na"
     ],
-    "jmdict_id": 1381940
+    "jmdict_id": 1381940,
+    "examples": [
+      {
+        "ja": "彼の静的な対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}の{静的|せいてき}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his calm and composed response, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "ba345bb807",
@@ -41543,7 +43062,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1074490
+    "jmdict_id": 1074490,
+    "examples": [
+      {
+        "ja": "今日の授業で「セクション」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「セクション」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “section.”"
+      }
+    ]
   },
   {
     "id": "9d4204d1c1",
@@ -41589,7 +43115,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1374510
+    "jmdict_id": 1374510,
+    "examples": [
+      {
+        "ja": "計画をスムーズに是正ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{是正|ぜせい}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan could be adjusted smoothly."
+      }
+    ]
   },
   {
     "id": "bec9e3995a",
@@ -41695,7 +43228,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1384980
+    "jmdict_id": 1384980,
+    "examples": [
+      {
+        "ja": "計画をスムーズに切開ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{切開|せっかい}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "6155351877",
@@ -41711,7 +43251,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1074570
+    "jmdict_id": 1074570,
+    "examples": [
+      {
+        "ja": "計画をスムーズにセックスために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズにセックスために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure the plan went smoothly, I made preparations in advance."
+      }
+    ]
   },
   {
     "id": "381b8e830c",
@@ -41842,7 +43389,14 @@
       "vt",
       "adj-no"
     ],
-    "jmdict_id": 1385960
+    "jmdict_id": 1385960,
+    "examples": [
+      {
+        "ja": "計画をスムーズに折衷ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{折衷|せっちゅう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "675f38a4a5",
@@ -42137,7 +43691,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1387100
+    "jmdict_id": 1387100,
+    "examples": [
+      {
+        "ja": "今日の授業で「仙」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{仙|せん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “仙.”"
+      }
+    ]
   },
   {
     "id": "21f2e9018e",
@@ -42318,7 +43879,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1389660
+    "jmdict_id": 1389660,
+    "examples": [
+      {
+        "ja": "計画をスムーズに宣教ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{宣教|せんきょう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "e3d5b8418e",
@@ -42415,7 +43983,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1390230
+    "jmdict_id": 1390230,
+    "examples": [
+      {
+        "ja": "今日の授業で「戦災」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{戦災|せんさい}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “war damage.”"
+      }
+    ]
   },
   {
     "id": "2115059dfe",
@@ -42431,7 +44006,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1389790
+    "jmdict_id": 1389790,
+    "examples": [
+      {
+        "ja": "計画をスムーズに専修ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{専修|せんしゅう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure the plan went smoothly, we made preparations in advance."
+      }
+    ]
   },
   {
     "id": "e2849f24af",
@@ -42609,7 +44191,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1388150
+    "jmdict_id": 1388150,
+    "examples": [
+      {
+        "ja": "計画をスムーズに先着ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{先着|せんちゃく}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "b73454fdf2",
@@ -43205,7 +44794,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1398320
+    "jmdict_id": 1398320,
+    "examples": [
+      {
+        "ja": "計画をスムーズに創刊ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{創刊|そうかん}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the magazine’s launch went smoothly."
+      }
+    ]
   },
   {
     "id": "bcb48bd662",
@@ -43466,7 +45062,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1403520
+    "jmdict_id": 1403520,
+    "examples": [
+      {
+        "ja": "今日の授業で「蔵相」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{蔵相|ぞうしょう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “Minister of Finance.”"
+      }
+    ]
   },
   {
     "id": "cfd7167d0f",
@@ -43788,7 +45391,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 2843727
+    "jmdict_id": 2843727,
+    "examples": [
+      {
+        "ja": "チンゲン菜をしょうゆとオイスターソースでいためると美味しい。",
+        "furigana": "チンゲン菜をしょうゆとオイスターソースでいためると美味しい。",
+        "en": "Stir-frying bok choy with soy sauce and oyster sauce is delicious."
+      }
+    ]
   },
   {
     "id": "5eac5a540a",
@@ -44508,7 +46118,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1480110
+    "jmdict_id": 1480110,
+    "examples": [
+      {
+        "ja": "今日の授業で「反り」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{反り|そり}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “sari.”"
+      }
+    ]
   },
   {
     "id": "b2fea90627",
@@ -44519,7 +46136,14 @@
       "or",
       "or else"
     ],
-    "level": "N1"
+    "level": "N1",
+    "examples": [
+      {
+        "ja": "今日の授業で「其れ共」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{其れ共|それとも}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “sore-tomo.”"
+      }
+    ]
   },
   {
     "id": "5d1b7e0ebd",
@@ -45728,7 +47352,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1076010
+    "jmdict_id": 1076010,
+    "examples": [
+      {
+        "ja": "彼は自己ベストのタイムを記録するために練習に励んでいた。",
+        "furigana": "彼は自己ベストのタイムを記録するために練習に励んでいた。",
+        "en": "He worked hard in practice to record his personal best time."
+      }
+    ]
   },
   {
     "id": "f332f3e366",
@@ -45769,7 +47400,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1410270
+    "jmdict_id": 1410270,
+    "examples": [
+      {
+        "ja": "初対面の人に話し掛けるのが苦手な人もいます。",
+        "furigana": "初{対面|たいめん}の人に話し掛けるのが苦手な人もいます。",
+        "en": "There are people who are not good at talking to strangers for the first time."
+      }
+    ]
   },
   {
     "id": "8d0e3e599c",
@@ -46308,7 +47946,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1408530
+    "jmdict_id": 1408530,
+    "examples": [
+      {
+        "ja": "計画をスムーズに妥結ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{妥結|だけつ}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan was finalized smoothly."
+      }
+    ]
   },
   {
     "id": "6ab801e3b9",
@@ -46483,7 +48128,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1551810
+    "jmdict_id": 1551810,
+    "examples": [
+      {
+        "ja": "今日の授業で「立方」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{立方|たちかた}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “cube.”"
+      }
+    ]
   },
   {
     "id": "e39921582a",
@@ -46877,7 +48529,14 @@
       "v5r",
       "vt"
     ],
-    "jmdict_id": 1584070
+    "jmdict_id": 1584070,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり奉ることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{奉る|たてまつる}ことが{求|もと}められます。",
+        "en": "You are expected to perform your duties properly in important situations."
+      }
+    ]
   },
   {
     "id": "18597d193c",
@@ -47245,7 +48904,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 2713240
+    "jmdict_id": 2713240,
+    "examples": [
+      {
+        "ja": "具体的な例を挙げて説明してください。",
+        "furigana": "具体的な{例|ためし}を挙げて説明してください。",
+        "en": "Please explain by giving concrete examples."
+      }
+    ]
   },
   {
     "id": "caded48b64",
@@ -47415,7 +49081,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1421570
+    "jmdict_id": 1421570,
+    "examples": [
+      {
+        "ja": "今日の授業で「弛み」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{弛み|たるみ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “弛み.”"
+      }
+    ]
   },
   {
     "id": "10b51c7b3d",
@@ -47432,7 +49105,14 @@
       "v5m",
       "vi"
     ],
-    "jmdict_id": 1421580
+    "jmdict_id": 1421580,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり弛むことが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{弛む|たるむ}ことが{求|もと}められます。",
+        "en": "In important situations, you need to be able to relax completely."
+      }
+    ]
   },
   {
     "id": "d3809a260e",
@@ -47572,7 +49252,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1480050
+    "jmdict_id": 1480050,
+    "examples": [
+      {
+        "ja": "畳まれた新聞を反対側のテーブルに置いてください。",
+        "furigana": "畳まれた新聞を{反|たん}対側のテーブルに置いてください。",
+        "en": "Please place the folded newspaper on the table across."
+      }
+    ]
   },
   {
     "id": "8d67659ba3",
@@ -47589,7 +49276,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1419320
+    "jmdict_id": 1419320,
+    "examples": [
+      {
+        "ja": "今日の授業で「壇」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{壇|だん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “dan.”"
+      }
+    ]
   },
   {
     "id": "606b4ac32d",
@@ -47636,7 +49330,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1418150
+    "jmdict_id": 1418150,
+    "examples": [
+      {
+        "ja": "今日の授業で「担架」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{担架|たんか}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “stretcher.”"
+      }
+    ]
   },
   {
     "id": "873a4f5e09",
@@ -47884,7 +49585,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1418780
+    "jmdict_id": 1418780,
+    "examples": [
+      {
+        "ja": "今日の授業で「短大」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{短大|たんだい}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “junior college.”"
+      }
+    ]
   },
   {
     "id": "b0f4698e45",
@@ -47990,7 +49698,14 @@
       "n",
       "adj-no"
     ],
-    "jmdict_id": 1418810
+    "jmdict_id": 1418810,
+    "examples": [
+      {
+        "ja": "今日の授業で「短波」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{短波|たんぱ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “shortwave.”"
+      }
+    ]
   },
   {
     "id": "25867f6e37",
@@ -48053,7 +49768,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1419810
+    "jmdict_id": 1419810,
+    "examples": [
+      {
+        "ja": "今日の授業で「断面」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{断面|だんめん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “cross-section.”"
+      }
+    ]
   },
   {
     "id": "4c0d39020a",
@@ -48068,7 +49790,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1419530
+    "jmdict_id": 1419530,
+    "examples": [
+      {
+        "ja": "今日の授業で「弾力」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{弾力|だんりょく}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “elasticity.”"
+      }
+    ]
   },
   {
     "id": "05bfb28645",
@@ -48166,7 +49895,14 @@
       "v1",
       "vt"
     ],
-    "jmdict_id": 1158890
+    "jmdict_id": 1158890,
+    "examples": [
+      {
+        "ja": "計画の内容を間違えると、大変なことになる。",
+        "furigana": "計画の内容を間{違える|ちがえる}と、大変なことになる。",
+        "en": "Getting the details of the plan wrong can cause serious problems."
+      }
+    ]
   },
   {
     "id": "2aa5332b10",
@@ -48214,7 +49950,14 @@
     "pos": [
       "v5r"
     ],
-    "jmdict_id": 1250160
+    "jmdict_id": 1250160,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり契ることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{契る|ちぎる}ことが{求|もと}められます。",
+        "en": "You are expected to perform reliably in important situations."
+      }
+    ]
   },
   {
     "id": "28f2878a0d",
@@ -48228,7 +49971,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1422180
+    "jmdict_id": 1422180,
+    "examples": [
+      {
+        "ja": "今日の授業で「畜産」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{畜産|ちくさん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “livestock farming.”"
+      }
+    ]
   },
   {
     "id": "10df370c17",
@@ -48390,7 +50140,14 @@
       "v5r",
       "vi"
     ],
-    "jmdict_id": 1337540
+    "jmdict_id": 1337540,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり縮まることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{縮まる|ちぢまる}ことが{求|もと}められます。",
+        "en": "You’ll need to be able to pull yourself together in important situations."
+      }
+    ]
   },
   {
     "id": "73d9a1776d",
@@ -48584,7 +50341,14 @@
       "vi",
       "adj-no"
     ],
-    "jmdict_id": 1423090
+    "jmdict_id": 1423090,
+    "examples": [
+      {
+        "ja": "計画をスムーズに着色ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{着色|ちゃくしょく}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure the project went smoothly, we made preparations in advance."
+      }
+    ]
   },
   {
     "id": "691a8e48a0",
@@ -48625,7 +50389,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1423260
+    "jmdict_id": 1423260,
+    "examples": [
+      {
+        "ja": "計画をスムーズに着目ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{着目|ちゃくもく}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "1a5860e867",
@@ -48715,7 +50486,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1422610
+    "jmdict_id": 1422610,
+    "examples": [
+      {
+        "ja": "今日の授業で「茶の湯」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{茶の湯|ちゃのゆ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “chanoyu.”"
+      }
+    ]
   },
   {
     "id": "c94579f9e8",
@@ -48734,7 +50512,14 @@
       "adv",
       "adv-to"
     ],
-    "jmdict_id": 1007620
+    "jmdict_id": 1007620,
+    "examples": [
+      {
+        "ja": "計画をスムーズにちやほやために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズにちやほやために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure the plan went off without a hitch, we made preparations in advance."
+      }
+    ]
   },
   {
     "id": "81f6ea6bb3",
@@ -48952,7 +50737,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1426220
+    "jmdict_id": 1426220,
+    "examples": [
+      {
+        "ja": "会社の抽選会で商品が当たると嬉しい。",
+        "furigana": "会社の{抽選|ちゅうせん}会で商品が当たると嬉しい。",
+        "en": "It's nice to win a prize at the company's raffle."
+      }
+    ]
   },
   {
     "id": "89c0b0d65d",
@@ -49103,7 +50895,14 @@
       "n",
       "n-suf"
     ],
-    "jmdict_id": 1427590
+    "jmdict_id": 1427590,
+    "examples": [
+      {
+        "ja": "今日の授業で「庁」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{庁|ちょう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “庁.”"
+      }
+    ]
   },
   {
     "id": "1a43d6fb73",
@@ -49382,7 +51181,14 @@
       "adj-na",
       "n"
     ],
-    "jmdict_id": 1610340
+    "jmdict_id": 1610340,
+    "examples": [
+      {
+        "ja": "彼の長大な対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}の{長大|ちょうだい}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his extensive efforts, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "69359d3bc0",
@@ -49758,7 +51564,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1369920
+    "jmdict_id": 1369920,
+    "examples": [
+      {
+        "ja": "今日の授業で「塵取り」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{塵取り|ちりとり}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “dustpan.”"
+      }
+    ]
   },
   {
     "id": "68fc255618",
@@ -49833,7 +51646,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1431790
+    "jmdict_id": 1431790,
+    "examples": [
+      {
+        "ja": "計画をスムーズに沈殿ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{沈殿|ちんでん}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "0721111f31",
@@ -50893,7 +52713,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1449590
+    "jmdict_id": 1449590,
+    "examples": [
+      {
+        "ja": "彼は慌てて封筒を開けた。",
+        "furigana": "彼は慌てて封{筒|つつ}を開けた。",
+        "en": "He hurriedly opened the envelope."
+      }
+    ]
   },
   {
     "id": "2564dfcfcb",
@@ -50977,7 +52804,14 @@
       "v5r",
       "vi"
     ],
-    "jmdict_id": 1610410
+    "jmdict_id": 1610410,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり突っ張ることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{突っ張る|つっぱる}ことが{求|もと}められます。",
+        "en": "You’ll need to stand your ground firmly in important situations."
+      }
+    ]
   },
   {
     "id": "00c77c36b3",
@@ -51414,7 +53248,14 @@
       "v5r",
       "vi"
     ],
-    "jmdict_id": 1559240
+    "jmdict_id": 1559240,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり連なることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{連なる|つらなる}ことが{求|もと}められます。",
+        "en": "In important situations, you need to be able to express yourself coherently."
+      }
+    ]
   },
   {
     "id": "4786dd1bfd",
@@ -51460,7 +53301,14 @@
       "v1",
       "vt"
     ],
-    "jmdict_id": 1559250
+    "jmdict_id": 1559250,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり連ねることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{連ねる|つらねる}ことが{求|もと}められます。",
+        "en": "You’ll need to be able to string them together effectively in important situations."
+      }
+    ]
   },
   {
     "id": "34f200e33e",
@@ -51474,7 +53322,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1434090
+    "jmdict_id": 1434090,
+    "examples": [
+      {
+        "ja": "今日の授業で「釣鐘」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{釣鐘|つりがね}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “tsurigane.”"
+      }
+    ]
   },
   {
     "id": "763f0e37f3",
@@ -51923,7 +53778,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1079110
+    "jmdict_id": 1079110,
+    "examples": [
+      {
+        "ja": "今日の授業で「ティッシュペーパー」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「ティッシュペーパー」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “tissue paper.”"
+      }
+    ]
   },
   {
     "id": "0d7b0235f9",
@@ -52227,7 +54089,14 @@
       "adj-na",
       "adj-no"
     ],
-    "jmdict_id": 1437380
+    "jmdict_id": 1437380,
+    "examples": [
+      {
+        "ja": "彼の適宜な対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}の{適宜|てきぎ}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his prompt response, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "e0b835d42a",
@@ -52269,7 +54138,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1580150
+    "jmdict_id": 1580150,
+    "examples": [
+      {
+        "ja": "今日の授業で「出来物」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{出来物|できもの}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “dekimono.”"
+      }
+    ]
   },
   {
     "id": "be922b216d",
@@ -52285,7 +54161,14 @@
       "v5r",
       "vt"
     ],
-    "jmdict_id": 1339500
+    "jmdict_id": 1339500,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり出切ることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{出切る|できる}ことが{求|もと}められます。",
+        "en": "You are expected to perform to the best of your ability in important situations."
+      }
+    ]
   },
   {
     "id": "6a2c9761cf",
@@ -52352,7 +54235,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1082810
+    "jmdict_id": 1082810,
+    "examples": [
+      {
+        "ja": "今日の授業で「デコレーション」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「デコレーション」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “decoration.”"
+      }
+    ]
   },
   {
     "id": "dd601f9a30",
@@ -52366,7 +54256,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1082850
+    "jmdict_id": 1082850,
+    "examples": [
+      {
+        "ja": "酸っぱいリンゴをバランスの良いデザートに変える。",
+        "furigana": "酸っぱいリンゴをバランスの良いデザートに変える。",
+        "en": "Turn sour apples into a well-balanced dessert."
+      }
+    ]
   },
   {
     "id": "221e4e0f2e",
@@ -52796,7 +54693,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1598410
+    "jmdict_id": 1598410,
+    "examples": [
+      {
+        "ja": "計画をスムーズに手引きために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{手引き|てびき}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "1149c0fbcc",
@@ -52839,7 +54743,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1327380
+    "jmdict_id": 1327380,
+    "examples": [
+      {
+        "ja": "今日の授業で「手回し」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{手回し|てまわし}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “te-mawashi.”"
+      }
+    ]
   },
   {
     "id": "4ac77d3574",
@@ -53062,7 +54973,14 @@
       "vt",
       "vi"
     ],
-    "jmdict_id": 1441070
+    "jmdict_id": 1441070,
+    "examples": [
+      {
+        "ja": "計画をスムーズに転回ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{転回|てんかい}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "10919d474c",
@@ -53484,7 +55402,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1441690
+    "jmdict_id": 1441690,
+    "examples": [
+      {
+        "ja": "今日の授業で「点線」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{点線|てんせん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “dotted line.”"
+      }
+    ]
   },
   {
     "id": "26b5d39346",
@@ -53648,7 +55573,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1441320
+    "jmdict_id": 1441320,
+    "examples": [
+      {
+        "ja": "計画をスムーズに転任ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{転任|てんにん}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure a smooth transfer, we made preparations in advance."
+      }
+    ]
   },
   {
     "id": "00f9ac5fce",
@@ -53842,7 +55774,14 @@
     "pos": [
       "suf"
     ],
-    "jmdict_id": 1582305
+    "jmdict_id": 1582305,
+    "examples": [
+      {
+        "ja": "ケーキをみんなに均等に割る。",
+        "furigana": "ケーキをみんなに均{等|とう}に割る。",
+        "en": "Divide the cake equally among everyone."
+      }
+    ]
   },
   {
     "id": "5b7ec81584",
@@ -53978,7 +55917,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1451260
+    "jmdict_id": 1451260,
+    "examples": [
+      {
+        "ja": "計画をスムーズに動員ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{動員|どういん}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "9cfded4a30",
@@ -54116,7 +56062,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1449410
+    "jmdict_id": 1449410,
+    "examples": [
+      {
+        "ja": "今日の授業で「等級」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{等級|とうきゅう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “grade.”"
+      }
+    ]
   },
   {
     "id": "c5eee7f304",
@@ -54131,7 +56084,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1452110
+    "jmdict_id": 1452110,
+    "examples": [
+      {
+        "ja": "今日の授業で「同級」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{同級|どうきゅう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “classmates.”"
+      }
+    ]
   },
   {
     "id": "4c0cf6cbce",
@@ -54413,7 +56373,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1454220
+    "jmdict_id": 1454220,
+    "examples": [
+      {
+        "ja": "今日の授業で「道場」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{道場|どうじょう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “dojo.”"
+      }
+    ]
   },
   {
     "id": "fe1257bd71",
@@ -54677,7 +56644,14 @@
     "pos": [
       "adj-na"
     ],
-    "jmdict_id": 1451440
+    "jmdict_id": 1451440,
+    "examples": [
+      {
+        "ja": "その映画は感動的なメッセージが伝わってくる作品です。",
+        "furigana": "その映画は感{動的|どうてき}なメッセージが伝わってくる作品です。",
+        "en": "The movie is a work that conveys an emotional message."
+      }
+    ]
   },
   {
     "id": "02783d9713",
@@ -54694,7 +56668,14 @@
       "adv-to",
       "adj-t"
     ],
-    "jmdict_id": 2857308
+    "jmdict_id": 2857308,
+    "examples": [
+      {
+        "ja": "丁々作業を進めたので、時間通りに終わりました。",
+        "furigana": "{丁々|とうとう}{作業|さぎょう}を{進|すす}めたので、{時間通|じかんどお}りに{終|お}わりました。",
+        "en": "We worked steadily, so we finished on time."
+      }
+    ]
   },
   {
     "id": "a33f42ca60",
@@ -55486,7 +57467,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1454920
+    "jmdict_id": 1454920,
+    "examples": [
+      {
+        "ja": "計画をスムーズに特産ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{特産|とくさん}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "8d4e07c793",
@@ -55615,7 +57603,14 @@
       "n",
       "vs"
     ],
-    "jmdict_id": 1455920
+    "jmdict_id": 1455920,
+    "examples": [
+      {
+        "ja": "計画をスムーズに独創ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{独創|どくそう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure the plan went smoothly and was original, we made preparations in advance."
+      }
+    ]
   },
   {
     "id": "d7b013684f",
@@ -55665,7 +57660,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1455230
+    "jmdict_id": 1455230,
+    "examples": [
+      {
+        "ja": "計画をスムーズに特派ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{特派|とくは}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "c21c8f79da",
@@ -55798,7 +57800,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1702340
+    "jmdict_id": 1702340,
+    "examples": [
+      {
+        "ja": "お土産にこれをお振る舞い致します。",
+        "furigana": "お{土産|どさん}にこれをお振る舞い致します。",
+        "en": "I will offer this as a souvenir for you."
+      }
+    ]
   },
   {
     "id": "7f7552dfdc",
@@ -55989,7 +57998,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1454780
+    "jmdict_id": 1454780,
+    "examples": [
+      {
+        "ja": "今日の授業で「特許」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{特許|とっきょ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “patent.”"
+      }
+    ]
   },
   {
     "id": "1927098b36",
@@ -56380,7 +58396,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1442650
+    "jmdict_id": 1442650,
+    "examples": [
+      {
+        "ja": "今日の授業で「殿様」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{殿様|とのさま}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “tono-sama.”"
+      }
+    ]
   },
   {
     "id": "850d0b8295",
@@ -56416,7 +58439,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1445550
+    "jmdict_id": 1445550,
+    "examples": [
+      {
+        "ja": "今日の授業で「土俵」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{土俵|どひょう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “dohyo.”"
+      }
+    ]
   },
   {
     "id": "65aef9dac8",
@@ -56487,7 +58517,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1445570
+    "jmdict_id": 1445570,
+    "examples": [
+      {
+        "ja": "今日の授業で「土木」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{土木|どぼく}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “civil engineering.”"
+      }
+    ]
   },
   {
     "id": "60498e7544",
@@ -56660,7 +58697,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 2850328
+    "jmdict_id": 2850328,
+    "examples": [
+      {
+        "ja": "今日の授業で「灯」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{灯|ともしび}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “灯.”"
+      }
+    ]
   },
   {
     "id": "8e13072b37",
@@ -57171,7 +59215,14 @@
       "v5g",
       "vt"
     ],
-    "jmdict_id": 1326760
+    "jmdict_id": 1326760,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり取り次ぐことが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{取り次ぐ|とりつぐ}ことが{求|もと}められます。",
+        "en": "You are expected to handle the situation properly in important situations."
+      }
+    ]
   },
   {
     "id": "6964beadb0",
@@ -57281,7 +59332,14 @@
       "v1",
       "vt"
     ],
-    "jmdict_id": 1326730
+    "jmdict_id": 1326730,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり取り混ぜることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{取り混ぜる|とりまぜる}ことが{求|もと}められます。",
+        "en": "You’ll need to be able to use them effectively in important situations."
+      }
+    ]
   },
   {
     "id": "2bd8a385f3",
@@ -57404,7 +59462,14 @@
     "meanings": [
       "which (emphatic)"
     ],
-    "level": "N1"
+    "level": "N1",
+    "examples": [
+      {
+        "ja": "今日の授業で「何々」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{何々|どれどれ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “such-and-such.”"
+      }
+    ]
   },
   {
     "id": "a6b3309e5a",
@@ -57422,6 +59487,13 @@
     "jmdict_id": 1599170,
     "other_forms": [
       "蕩ける"
+    ],
+    "examples": [
+      {
+        "ja": "大切な場面でしっかりとろけることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかりとろけることが{求|もと}められます。",
+        "en": "You’ll need to be able to express yourself clearly in important situations."
+      }
     ]
   },
   {
@@ -58419,7 +60491,14 @@
       "n",
       "adj-no"
     ],
-    "jmdict_id": 1379160
+    "jmdict_id": 1379160,
+    "examples": [
+      {
+        "ja": "今日の授業で「生身」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{生身|なまみ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “生身.”"
+      }
+    ]
   },
   {
     "id": "6c7a3fe563",
@@ -58706,7 +60785,14 @@
     "pos": [
       "conj"
     ],
-    "jmdict_id": 1508350
+    "jmdict_id": 1508350,
+    "examples": [
+      {
+        "ja": "今日の授業で「並びに」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{並びに|ならびに}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “並びに.”"
+      }
+    ]
   },
   {
     "id": "3837730fa3",
@@ -58755,6 +60841,13 @@
     "jmdict_id": 1375630,
     "other_forms": [
       "成る丈"
+    ],
+    "examples": [
+      {
+        "ja": "なるたけ作業を進めたので、時間通りに終わりました。",
+        "furigana": "なるたけ{作業|さぎょう}を{進|すす}めたので、{時間通|じかんどお}りに{終|お}わりました。",
+        "en": "I made as much progress as possible, so I finished on time."
+      }
     ]
   },
   {
@@ -58825,7 +60918,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 2833068
+    "jmdict_id": 2833068,
+    "examples": [
+      {
+        "ja": "寒い朝、ガチョウが南へと飛んでいくとき、鳴いているのを見た。",
+        "furigana": "寒い朝、ガチョウが{南|なん}へと飛んでいくとき、鳴いているのを見た。",
+        "en": "On a cold morning, I saw geese honking as they flew south."
+      }
+    ]
   },
   {
     "id": "855ce6b835",
@@ -60130,7 +62230,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1092770
+    "jmdict_id": 1092770,
+    "examples": [
+      {
+        "ja": "今日の授業で「ネガ」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「ネガ」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “nega.”"
+      }
+    ]
   },
   {
     "id": "4c90b6d71c",
@@ -60370,7 +62477,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1468010
+    "jmdict_id": 1468010,
+    "examples": [
+      {
+        "ja": "今日の授業で「熱量」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{熱量|ねつりょう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “熱量.”"
+      }
+    ]
   },
   {
     "id": "13c19c8395",
@@ -60735,7 +62849,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1469260
+    "jmdict_id": 1469260,
+    "examples": [
+      {
+        "ja": "今日の授業で「年輪」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{年輪|ねんりん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “tree rings.”"
+      }
+    ]
   },
   {
     "id": "34eeb4ae79",
@@ -60801,7 +62922,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1470680
+    "jmdict_id": 1470680,
+    "examples": [
+      {
+        "ja": "今日の授業で「農耕」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{農耕|のうこう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “farming.”"
+      }
+    ]
   },
   {
     "id": "bdbf18b1d1",
@@ -60873,7 +63001,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1470090
+    "jmdict_id": 1470090,
+    "examples": [
+      {
+        "ja": "計画をスムーズに納入ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{納入|のうにゅう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan was implemented smoothly."
+      }
+    ]
   },
   {
     "id": "eecad7aa7d",
@@ -60947,7 +63082,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1260380
+    "jmdict_id": 1260380,
+    "examples": [
+      {
+        "ja": "今日の授業で「軒並み」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{軒並み|のきなみ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “kenami.”"
+      }
+    ]
   },
   {
     "id": "2278a3e4a3",
@@ -61023,7 +63165,14 @@
       "v5r",
       "vt"
     ],
-    "jmdict_id": 1354700
+    "jmdict_id": 1354700,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり乗っ取ることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{乗っ取る|のっとる}ことが{求|もと}められます。",
+        "en": "You’ll need to take full control of the situation in important moments."
+      }
+    ]
   },
   {
     "id": "7b38fa3613",
@@ -61441,7 +63590,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1472260
+    "jmdict_id": 1472260,
+    "examples": [
+      {
+        "ja": "今日の授業で「拝啓」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{拝啓|はいけい}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “拝啓.”"
+      }
+    ]
   },
   {
     "id": "29b10e360f",
@@ -61833,7 +63989,14 @@
       "n",
       "n-suf"
     ],
-    "jmdict_id": 1473220
+    "jmdict_id": 1473220,
+    "examples": [
+      {
+        "ja": "今日の授業で「配列」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{配列|はいれつ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “array.”"
+      }
+    ]
   },
   {
     "id": "a15b42b14f",
@@ -62178,7 +64341,14 @@
       "n",
       "adj-na"
     ],
-    "jmdict_id": 1475590
+    "jmdict_id": 1475590,
+    "examples": [
+      {
+        "ja": "彼の薄弱な対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}の{薄弱|はくじゃく}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his half-hearted response, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "10bd68b7e8",
@@ -62225,7 +64395,14 @@
       "adj-t",
       "adv-to"
     ],
-    "jmdict_id": 1475790
+    "jmdict_id": 1475790,
+    "examples": [
+      {
+        "ja": "漠然作業を進めたので、時間通りに終わりました。",
+        "furigana": "{漠然|ばくぜん}{作業|さぎょう}を{進|すす}めたので、{時間通|じかんどお}りに{終|お}わりました。",
+        "en": "Since I worked on it without a specific plan, I finished on time."
+      }
+    ]
   },
   {
     "id": "5f88d07bc6",
@@ -62690,7 +64867,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1237440
+    "jmdict_id": 1237440,
+    "examples": [
+      {
+        "ja": "計画をスムーズに橋渡しために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{橋渡し|はしわたし}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure a smooth transition of the plan."
+      }
+    ]
   },
   {
     "id": "27f69b4df3",
@@ -62880,7 +65064,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1478050
+    "jmdict_id": 1478050,
+    "examples": [
+      {
+        "ja": "これは重大な犯罪であり、厳しい処罰が待っている。",
+        "furigana": "これは重大な犯罪であり、厳しい処{罰|ばち}が待っている。",
+        "en": "This is a serious crime and severe punishment awaits."
+      }
+    ]
   },
   {
     "id": "5c73b68e41",
@@ -63041,7 +65232,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1477190
+    "jmdict_id": 1477190,
+    "examples": [
+      {
+        "ja": "計画をスムーズに発芽ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{発芽|はつが}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure the plan got off to a smooth start, we made preparations in advance."
+      }
+    ]
   },
   {
     "id": "ef477d1ab9",
@@ -63169,7 +65367,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1099230
+    "jmdict_id": 1099230,
+    "examples": [
+      {
+        "ja": "あまりにもアクロバットな動きに見ているだけで酔ってしまう。",
+        "furigana": "あまりにもアクロバットな動きに見ているだけで酔ってしまう。",
+        "en": "Just watching the overly acrobatic moves makes me feel dizzy."
+      }
+    ]
   },
   {
     "id": "52a27aec4f",
@@ -63185,7 +65390,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1477870
+    "jmdict_id": 1477870,
+    "examples": [
+      {
+        "ja": "計画をスムーズに発病ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{発病|はつびょう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "45f5de7d2d",
@@ -63361,7 +65573,14 @@
     "pos": [
       "adj-i"
     ],
-    "jmdict_id": 1600960
+    "jmdict_id": 1600960,
+    "examples": [
+      {
+        "ja": "この状況は予想していたよりもずっと華々しいようです。",
+        "furigana": "この{状況|じょうきょう}は{予想|よそう}していたよりもずっと{華々しい|はなばなしい}ようです。",
+        "en": "This situation seems much more spectacular than I had expected."
+      }
+    ]
   },
   {
     "id": "047bfb10cf",
@@ -63659,7 +65878,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1261150
+    "jmdict_id": 1261150,
+    "examples": [
+      {
+        "ja": "今日の授業で「原っぱ」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{原っぱ|はらっぱ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “原っぱ.”"
+      }
+    ]
   },
   {
     "id": "af13ed2a6d",
@@ -63949,7 +66175,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1481510
+    "jmdict_id": 1481510,
+    "examples": [
+      {
+        "ja": "今日の授業で「版画」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{版画|はんが}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “printmaking.”"
+      }
+    ]
   },
   {
     "id": "02e6ac02bf",
@@ -63965,7 +66198,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1096430
+    "jmdict_id": 1096430,
+    "examples": [
+      {
+        "ja": "今日の授業で「ハンガー」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「ハンガー」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “hanger.”"
+      }
+    ]
   },
   {
     "id": "ebea08a82f",
@@ -64044,7 +66284,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1103110
+    "jmdict_id": 1103110,
+    "examples": [
+      {
+        "ja": "計画をスムーズにパンクために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズにパンクために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure the plan went off without a hitch, I made preparations in advance."
+      }
+    ]
   },
   {
     "id": "e4a7d6466e",
@@ -64630,7 +66877,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 2843940
+    "jmdict_id": 2843940,
+    "examples": [
+      {
+        "ja": "今日の授業で「ビールス」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「ビールス」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “beerus.”"
+      }
+    ]
   },
   {
     "id": "d4c885f1dc",
@@ -65111,7 +67365,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1483640
+    "jmdict_id": 1483640,
+    "examples": [
+      {
+        "ja": "今日の授業で「比重」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{比重|ひじゅう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “specific gravity.”"
+      }
+    ]
   },
   {
     "id": "c0d21785c4",
@@ -65394,7 +67655,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1527090
+    "jmdict_id": 1527090,
+    "examples": [
+      {
+        "ja": "それは未来において可能な選択肢の一つだ。",
+        "furigana": "それは{未|ひつじ}来において可能な選択肢の一つだ。",
+        "en": "That is one of the possible options in the future."
+      }
+    ]
   },
   {
     "id": "d4cad7dfef",
@@ -66280,7 +68548,14 @@
       "adj-na",
       "adj-no"
     ],
-    "jmdict_id": 1486200
+    "jmdict_id": 1486200,
+    "examples": [
+      {
+        "ja": "彼の微量な対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}の{微量|びりょう}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his subtle intervention, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "6d94f7f103",
@@ -66648,7 +68923,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1514290
+    "jmdict_id": 1514290,
+    "examples": [
+      {
+        "ja": "足が怪我をしたので、今日は散歩に行けないしかたがない。",
+        "furigana": "足が怪我をしたので、今日は散{歩|ふ}に行けないしかたがない。",
+        "en": "Since my leg is injured, there's no way I can go for a walk today."
+      }
+    ]
   },
   {
     "id": "2ec5748d47",
@@ -66807,7 +69089,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1109330
+    "jmdict_id": 1109330,
+    "examples": [
+      {
+        "ja": "写真をアップする前にフィルターできれいにしてみた。",
+        "furigana": "写真をアップする前にフィルターできれいにしてみた。",
+        "en": "I tried to clean up the photo with a filter before uploading it."
+      }
+    ]
   },
   {
     "id": "337eea6b53",
@@ -67309,7 +69598,14 @@
       "vt",
       "vi"
     ],
-    "jmdict_id": 1501320
+    "jmdict_id": 1501320,
+    "examples": [
+      {
+        "ja": "計画をスムーズに複合ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{複合|ふくごう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "a45caec8b5",
@@ -67892,7 +70188,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1583240
+    "jmdict_id": 1583240,
+    "examples": [
+      {
+        "ja": "今日の授業で「斑」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{斑|ぶち}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “斑.”"
+      }
+    ]
   },
   {
     "id": "969a3774bd",
@@ -67936,7 +70239,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1501740
+    "jmdict_id": 1501740,
+    "examples": [
+      {
+        "ja": "今日の授業で「仏」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{仏|ふつ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “Buddha.”"
+      }
+    ]
   },
   {
     "id": "05e2d4d19d",
@@ -68263,7 +70573,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1498200
+    "jmdict_id": 1498200,
+    "examples": [
+      {
+        "ja": "来週、新しい部署に赴任することになりました。",
+        "furigana": "来週、新しい部署に{赴任|ふにん}することになりました。",
+        "en": "I will be assigned to a new department next week."
+      }
+    ]
   },
   {
     "id": "946014cf8a",
@@ -68337,6 +70654,13 @@
     "jmdict_id": 1602810,
     "other_forms": [
       "不便"
+    ],
+    "examples": [
+      {
+        "ja": "彼の不憫な対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}の{不憫|ふびん}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his considerate response, the problem was successfully resolved."
+      }
     ]
   },
   {
@@ -68389,7 +70713,14 @@
       "adj-no",
       "n"
     ],
-    "jmdict_id": 1602820
+    "jmdict_id": 1602820,
+    "examples": [
+      {
+        "ja": "今日の授業で「普遍」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{普遍|ふへん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “universal.”"
+      }
+    ]
   },
   {
     "id": "772d057f4c",
@@ -68961,7 +71292,14 @@
       "vt",
       "vi"
     ],
-    "jmdict_id": 1503390
+    "jmdict_id": 1503390,
+    "examples": [
+      {
+        "ja": "計画をスムーズに分業ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{分業|ぶんぎょう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure a smooth division of labor for the project."
+      }
+    ]
   },
   {
     "id": "a988a95058",
@@ -68976,7 +71314,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1505370
+    "jmdict_id": 1505370,
+    "examples": [
+      {
+        "ja": "今日の授業で「文語」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{文語|ぶんご}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “literary Japanese.”"
+      }
+    ]
   },
   {
     "id": "0736fad52a",
@@ -69176,7 +71521,14 @@
     "pos": [
       "adj-na"
     ],
-    "jmdict_id": 1011100
+    "jmdict_id": 1011100,
+    "examples": [
+      {
+        "ja": "彼のふんだんな対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}のふんだんな{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his thorough assistance, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "911f332826",
@@ -69283,7 +71635,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1504310
+    "jmdict_id": 1504310,
+    "examples": [
+      {
+        "ja": "今日の授業で「分母」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{分母|ぶんぼ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “denominator.”"
+      }
+    ]
   },
   {
     "id": "253ca04e94",
@@ -69386,7 +71745,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1120690
+    "jmdict_id": 1120690,
+    "examples": [
+      {
+        "ja": "今日の授業で「ペア」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「ペア」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, we learned how to use the expression “pair.”"
+      }
+    ]
   },
   {
     "id": "054813c4c2",
@@ -69559,7 +71925,14 @@
       "adj-no",
       "n"
     ],
-    "jmdict_id": 1507420
+    "jmdict_id": 1507420,
+    "examples": [
+      {
+        "ja": "今日の授業で「平常」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{平常|へいじょう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “heijō.”"
+      }
+    ]
   },
   {
     "id": "680cb55781",
@@ -69604,7 +71977,14 @@
       "n",
       "adj-no"
     ],
-    "jmdict_id": 1508530
+    "jmdict_id": 1508530,
+    "examples": [
+      {
+        "ja": "今日の授業で「並列」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{並列|へいれつ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “parallel.”"
+      }
+    ]
   },
   {
     "id": "ef321ac2d3",
@@ -69619,7 +71999,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1119210
+    "jmdict_id": 1119210,
+    "examples": [
+      {
+        "ja": "卵をよく溶いてから、アイスクリームのベースを作ります。",
+        "furigana": "卵をよく溶いてから、アイスクリームのベースを作ります。",
+        "en": "Beat the eggs well before making the ice cream base."
+      }
+    ]
   },
   {
     "id": "e9b4b3b383",
@@ -69693,7 +72080,14 @@
       "adj-no",
       "n"
     ],
-    "jmdict_id": 1119530
+    "jmdict_id": 1119530,
+    "examples": [
+      {
+        "ja": "彼は自己ベストのタイムを記録するために練習に励んでいた。",
+        "furigana": "彼は自己ベストのタイムを記録するために練習に励んでいた。",
+        "en": "He worked hard in practice to record his personal best time."
+      }
+    ]
   },
   {
     "id": "507250c924",
@@ -69758,7 +72152,14 @@
       "v5r",
       "vi"
     ],
-    "jmdict_id": 1603220
+    "jmdict_id": 1603220,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり謙ることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{謙る|へりくだる}ことが{求|もと}められます。",
+        "en": "You are expected to express humility appropriately in important situations."
+      }
+    ]
   },
   {
     "id": "08d086f265",
@@ -69775,7 +72176,14 @@
       "v1",
       "vi"
     ],
-    "jmdict_id": 1251110
+    "jmdict_id": 1251110,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり経ることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{経る|へる}ことが{求|もと}められます。",
+        "en": "You are expected to perform well in important situations."
+      }
+    ]
   },
   {
     "id": "0b6b5995e3",
@@ -69920,7 +72328,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1512170
+    "jmdict_id": 1512170,
+    "examples": [
+      {
+        "ja": "計画をスムーズに返還ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{返還|へんかん}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "03a1f21cc6",
@@ -70497,7 +72912,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1748510
+    "jmdict_id": 1748510,
+    "examples": [
+      {
+        "ja": "今日の授業で「宝器」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{宝器|ほうき}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “treasured object.”"
+      }
+    ]
   },
   {
     "id": "1799cfb5f8",
@@ -70830,7 +73252,14 @@
       "vz",
       "vt"
     ],
-    "jmdict_id": 1515660
+    "jmdict_id": 1515660,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり報ずることが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{報ずる|ほうずる}ことが{求|もと}められます。",
+        "en": "You are expected to communicate effectively in important situations."
+      }
+    ]
   },
   {
     "id": "3356356fb8",
@@ -70844,7 +73273,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1519930
+    "jmdict_id": 1519930,
+    "examples": [
+      {
+        "ja": "今日の授業で「紡績」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{紡績|ぼうせき}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “textile manufacturing.”"
+      }
+    ]
   },
   {
     "id": "b55c78d275",
@@ -71250,7 +73686,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1518350
+    "jmdict_id": 1518350,
+    "examples": [
+      {
+        "ja": "計画をスムーズに飽和ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{飽和|ほうわ}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "d1ca85869d",
@@ -71264,7 +73707,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1121630
+    "jmdict_id": 1121630,
+    "examples": [
+      {
+        "ja": "今日の授業で「ホース」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「ホース」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “horse.”"
+      }
+    ]
   },
   {
     "id": "d545dfb4f1",
@@ -71278,7 +73728,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 2858735
+    "jmdict_id": 2858735,
+    "examples": [
+      {
+        "ja": "彼女は彼のプロポーズを断るつもりだ。",
+        "furigana": "彼女は彼のプロポーズを断るつもりだ。",
+        "en": "She intends to refuse his proposal."
+      }
+    ]
   },
   {
     "id": "2352843605",
@@ -71293,7 +73750,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1122130
+    "jmdict_id": 1122130,
+    "examples": [
+      {
+        "ja": "今日の授業で「ホール」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「ホール」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “hall.”"
+      }
+    ]
   },
   {
     "id": "d65feae548",
@@ -71688,7 +74152,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1125060
+    "jmdict_id": 1125060,
+    "examples": [
+      {
+        "ja": "今日の授業で「ポジション」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「ポジション」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “position.”"
+      }
+    ]
   },
   {
     "id": "a81b409958",
@@ -71702,7 +74173,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1210150
+    "jmdict_id": 1210150,
+    "examples": [
+      {
+        "ja": "今日の授業で「干し物」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{干し物|ほしもの}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “dried foods.”"
+      }
+    ]
   },
   {
     "id": "1e8904b5b7",
@@ -72017,6 +74495,13 @@
     "jmdict_id": 1583130,
     "other_readings": [
       "はっそく"
+    ],
+    "examples": [
+      {
+        "ja": "計画をスムーズに発足ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{発足|ほっそく}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan got off to a smooth start."
+      }
     ]
   },
   {
@@ -72113,7 +74598,14 @@
       "adv",
       "adv-to"
     ],
-    "jmdict_id": 1011840
+    "jmdict_id": 1011840,
+    "examples": [
+      {
+        "ja": "ぼつぼつ作業を進めたので、時間通りに終わりました。",
+        "furigana": "ぼつぼつ{作業|さぎょう}を{進|すす}めたので、{時間通|じかんどお}りに{終|お}わりました。",
+        "en": "I worked on it little by little, so I finished on time."
+      }
+    ]
   },
   {
     "id": "cf530cd84a",
@@ -72215,7 +74707,14 @@
       "v5k",
       "vi"
     ],
-    "jmdict_id": 1011850
+    "jmdict_id": 1011850,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかりぼやくことが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかりぼやくことが{求|もと}められます。",
+        "en": "You’ll need to be able to express your frustration clearly in important situations."
+      }
+    ]
   },
   {
     "id": "ea5ad26c76",
@@ -72257,7 +74756,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1514000
+    "jmdict_id": 1514000,
+    "examples": [
+      {
+        "ja": "計画をスムーズに保養ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{保養|ほよう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure the trip went smoothly, we made preparations in advance."
+      }
+    ]
   },
   {
     "id": "d31295f643",
@@ -72271,7 +74777,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1690070
+    "jmdict_id": 1690070,
+    "examples": [
+      {
+        "ja": "今日の授業で「捕吏」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{捕吏|ほり}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “捕吏.”"
+      }
+    ]
   },
   {
     "id": "f7b704e228",
@@ -72314,7 +74827,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1124390
+    "jmdict_id": 1124390,
+    "examples": [
+      {
+        "ja": "今日の授業で「ボルト」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「ボルト」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “bolt.”"
+      }
+    ]
   },
   {
     "id": "8abbf74882",
@@ -72394,7 +74914,14 @@
       "n",
       "adj-f"
     ],
-    "jmdict_id": 1522310
+    "jmdict_id": 1522310,
+    "examples": [
+      {
+        "ja": "今日の授業で「本格」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{本格|ほんかく}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “honkaku.”"
+      }
+    ]
   },
   {
     "id": "2dc4fc382a",
@@ -72717,7 +75244,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1126140
+    "jmdict_id": 1126140,
+    "examples": [
+      {
+        "ja": "今日の授業で「マーク」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「マーク」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “mark.”"
+      }
+    ]
   },
   {
     "id": "e7ecb4b0a9",
@@ -73016,7 +75550,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1211140
+    "jmdict_id": 1211140,
+    "examples": [
+      {
+        "ja": "彼は寒さに耐えるために厚いマフラーを首に巻いた。",
+        "furigana": "彼は寒さに耐えるために厚いマフラーを首に{巻|まき}いた。",
+        "en": "He wrapped a thick scarf around his neck to endure the cold."
+      }
+    ]
   },
   {
     "id": "1635a19afd",
@@ -73163,7 +75704,14 @@
       "v5k",
       "vi"
     ],
-    "jmdict_id": 1012100
+    "jmdict_id": 1012100,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかりまごつくことが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかりまごつくことが{求|もと}められます。",
+        "en": "You are expected to stumble noticeably in important situations."
+      }
+    ]
   },
   {
     "id": "ef7ac8431d",
@@ -73974,7 +76522,14 @@
     "pos": [
       "adv"
     ],
-    "jmdict_id": 1604170
+    "jmdict_id": 1604170,
+    "examples": [
+      {
+        "ja": "間々作業を進めたので、時間通りに終わりました。",
+        "furigana": "{間々|まま}{作業|さぎょう}を{進|すす}めたので、{時間通|じかんどお}りに{終|お}わりました。",
+        "en": "Since I worked on it in between other tasks, I finished on time."
+      }
+    ]
   },
   {
     "id": "e0f4bf005a",
@@ -74016,7 +76571,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1226280
+    "jmdict_id": 1226280,
+    "examples": [
+      {
+        "ja": "今日の授業で「鞠」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{鞠|まり}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “鞠.”"
+      }
+    ]
   },
   {
     "id": "3bc1b71a60",
@@ -74229,7 +76791,14 @@
     "pos": [
       "adj-i"
     ],
-    "jmdict_id": 1363330
+    "jmdict_id": 1363330,
+    "examples": [
+      {
+        "ja": "この状況は予想していたよりもずっと真ん丸いようです。",
+        "furigana": "この{状況|じょうきょう}は{予想|よそう}していたよりもずっと{真ん丸い|まんまるい}ようです。",
+        "en": "This situation seems to be much more straightforward than I had expected."
+      }
+    ]
   },
   {
     "id": "68e9c896bf",
@@ -74712,7 +77281,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1130880
+    "jmdict_id": 1130880,
+    "examples": [
+      {
+        "ja": "今日の授業で「ミセス」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「ミセス」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “Mrs.”"
+      }
+    ]
   },
   {
     "id": "0ac82e3b35",
@@ -74756,7 +77332,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1259240
+    "jmdict_id": 1259240,
+    "examples": [
+      {
+        "ja": "今日の授業で「見せ物」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{見せ物|みせもの}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “shimekoto.”"
+      }
+    ]
   },
   {
     "id": "084bab949b",
@@ -75040,7 +77623,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1528320
+    "jmdict_id": 1528320,
+    "examples": [
+      {
+        "ja": "都市部と地方を比べると、人口密度の違いは顕著です。",
+        "furigana": "都市部と地方を比べると、人口{密度|みつど}の違いは顕著です。",
+        "en": "Comparing urban and rural areas, the difference in population density is pronounced."
+      }
+    ]
   },
   {
     "id": "567666993e",
@@ -75421,7 +78011,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1528790
+    "jmdict_id": 1528790,
+    "examples": [
+      {
+        "ja": "今日の授業で「民主」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{民主|みんしゅ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “democracy.”"
+      }
+    ]
   },
   {
     "id": "83127f9e88",
@@ -75460,7 +78057,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1604745
+    "jmdict_id": 1604745,
+    "examples": [
+      {
+        "ja": "今日の授業で「民俗」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{民俗|みんぞく}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “folklore.”"
+      }
+    ]
   },
   {
     "id": "f95af79628",
@@ -75656,7 +78260,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1531160
+    "jmdict_id": 1531160,
+    "examples": [
+      {
+        "ja": "今日の授業で「婿」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{婿|むこ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “muko.”"
+      }
+    ]
   },
   {
     "id": "8c2103a006",
@@ -76118,7 +78729,14 @@
       "adj-na",
       "adj-no"
     ],
-    "jmdict_id": 1530770
+    "jmdict_id": 1530770,
+    "examples": [
+      {
+        "ja": "彼の無念な対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}の{無念|むねん}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his regrettable response, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "28d427532a",
@@ -76281,7 +78899,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1531520
+    "jmdict_id": 1531520,
+    "examples": [
+      {
+        "ja": "今日の授業で「名産」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{名産|めいさん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “local specialty.”"
+      }
+    ]
   },
   {
     "id": "7d367ef36a",
@@ -77189,7 +79814,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1534280
+    "jmdict_id": 1534280,
+    "examples": [
+      {
+        "ja": "今日の授業で「盲点」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{盲点|もうてん}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “blind spot.”"
+      }
+    ]
   },
   {
     "id": "e440e0684c",
@@ -77672,7 +80304,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 2219600
+    "jmdict_id": 2219600,
+    "examples": [
+      {
+        "ja": "基本的な文法ルールを押さえておくことが英語学習において重要です。",
+        "furigana": "{基|もとい}本的な文法ルールを押さえておくことが英語学習において重要です。",
+        "en": "It is important to have a grasp of the basic grammar rules in English learning."
+      }
+    ]
   },
   {
     "id": "123bb613f5",
@@ -78546,7 +81185,14 @@
       "recklessly",
       "blindly"
     ],
-    "level": "N1"
+    "level": "N1",
+    "examples": [
+      {
+        "ja": "今日の授業で「矢鱈に」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{矢鱈に|やたらに}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “yatarani.”"
+      }
+    ]
   },
   {
     "id": "d6c56bc73f",
@@ -78589,7 +81235,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1445630
+    "jmdict_id": 1445630,
+    "examples": [
+      {
+        "ja": "今日の授業で「奴」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{奴|やっこ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “奴.”"
+      }
+    ]
   },
   {
     "id": "7f32303a71",
@@ -79309,7 +81962,14 @@
       "vi",
       "adj-no"
     ],
-    "jmdict_id": 1542310
+    "jmdict_id": 1542310,
+    "examples": [
+      {
+        "ja": "計画をスムーズに遊牧ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{遊牧|ゆうぼく}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure the trip went smoothly, we made preparations in advance."
+      }
+    ]
   },
   {
     "id": "911636ba99",
@@ -79659,7 +82319,14 @@
       "v5g",
       "vi"
     ],
-    "jmdict_id": 1545630
+    "jmdict_id": 1545630,
+    "examples": [
+      {
+        "ja": "大切な場面でしっかり揺らぐことが求められます。",
+        "furigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{揺らぐ|ゆらぐ}ことが{求|もと}められます。",
+        "en": "In important situations, you are expected to remain steadfast."
+      }
+    ]
   },
   {
     "id": "182fdae0a6",
@@ -79815,7 +82482,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1546100
+    "jmdict_id": 1546100,
+    "examples": [
+      {
+        "ja": "今日の授業で「溶液」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{溶液|ようえき}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “solution.”"
+      }
+    ]
   },
   {
     "id": "2058b2a543",
@@ -79860,7 +82534,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1605847
+    "jmdict_id": 1605847,
+    "examples": [
+      {
+        "ja": "計画をスムーズに養護ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{養護|ようご}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "78ecbbf24b",
@@ -80413,7 +83094,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1180740
+    "jmdict_id": 1180740,
+    "examples": [
+      {
+        "ja": "今日の授業で「横綱」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{横綱|よこづな}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “yokozuna.”"
+      }
+    ]
   },
   {
     "id": "0180e8874e",
@@ -80915,7 +83603,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1585050
+    "jmdict_id": 1585050,
+    "examples": [
+      {
+        "ja": "計画をスムーズに来場ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{来場|らいじょう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure the event went smoothly, we made preparations in advance."
+      }
+    ]
   },
   {
     "id": "8778116f3a",
@@ -80951,7 +83646,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1548890
+    "jmdict_id": 1548890,
+    "examples": [
+      {
+        "ja": "今日の授業で「酪農」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{酪農|らくのう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “dairy farming.”"
+      }
+    ]
   },
   {
     "id": "ed1c4e0b8b",
@@ -81055,7 +83757,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1140360
+    "jmdict_id": 1140360,
+    "examples": [
+      {
+        "ja": "今日の授業で「ランプ」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「ランプ」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “lamp.”"
+      }
+    ]
   },
   {
     "id": "a6fba53840",
@@ -81132,7 +83841,14 @@
       "adj-na",
       "n"
     ],
-    "jmdict_id": 1758380
+    "jmdict_id": 1758380,
+    "examples": [
+      {
+        "ja": "彼の利根な対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}の{利根|りこん}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his resourceful handling of the situation, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "9ea667e1d8",
@@ -81254,7 +83970,14 @@
       "n",
       "adj-no"
     ],
-    "jmdict_id": 1551740
+    "jmdict_id": 1551740,
+    "examples": [
+      {
+        "ja": "今日の授業で「立体」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{立体|りったい}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “three-dimensional.”"
+      }
+    ]
   },
   {
     "id": "a46a045f8b",
@@ -81272,7 +83995,14 @@
       "vt",
       "vi"
     ],
-    "jmdict_id": 1551840
+    "jmdict_id": 1551840,
+    "examples": [
+      {
+        "ja": "計画をスムーズに立法ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{立法|りっぽう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan was enacted smoothly."
+      }
+    ]
   },
   {
     "id": "93039ef052",
@@ -81429,7 +84159,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1553290
+    "jmdict_id": 1553290,
+    "examples": [
+      {
+        "ja": "予約が完了したかどうかを確かめるために、メールをチェックしました。",
+        "furigana": "予約が完{了|りょう}したかどうかを確かめるために、メールをチェックしました。",
+        "en": "I checked the email to confirm whether the reservation was completed or not."
+      }
+    ]
   },
   {
     "id": "a434acf5bd",
@@ -81540,7 +84277,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1612270
+    "jmdict_id": 1612270,
+    "examples": [
+      {
+        "ja": "今日の授業で「領海」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{領海|りょうかい}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “territorial waters.”"
+      }
+    ]
   },
   {
     "id": "864c7afe67",
@@ -81556,7 +84300,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1553520
+    "jmdict_id": 1553520,
+    "examples": [
+      {
+        "ja": "今日の授業で「両極」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{両極|りょうきょく}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “both extremes.”"
+      }
+    ]
   },
   {
     "id": "e6b6167d98",
@@ -81713,7 +84464,14 @@
       "n",
       "adj-no"
     ],
-    "jmdict_id": 1554780
+    "jmdict_id": 1554780,
+    "examples": [
+      {
+        "ja": "今日の授業で「領地」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{領地|りょうち}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “territory.”"
+      }
+    ]
   },
   {
     "id": "21cc63f32d",
@@ -81902,7 +84660,14 @@
     "pos": [
       "ctr"
     ],
-    "jmdict_id": 1555700
+    "jmdict_id": 1555700,
+    "examples": [
+      {
+        "ja": "彼はいつも指に指輪を着けている。",
+        "furigana": "彼はいつも指に指{輪|りん}を着けている。",
+        "en": "He always wears a ring on his finger."
+      }
+    ]
   },
   {
     "id": "63601d234c",
@@ -81916,7 +84681,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1555470
+    "jmdict_id": 1555470,
+    "examples": [
+      {
+        "ja": "今日の授業で「林業」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{林業|りんぎょう}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the term “forestry.”"
+      }
+    ]
   },
   {
     "id": "bbecf30aea",
@@ -81962,7 +84734,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1556120
+    "jmdict_id": 1556120,
+    "examples": [
+      {
+        "ja": "計画をスムーズに類推ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{類推|るいすい}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "We made preparations in advance to ensure the plan went smoothly."
+      }
+    ]
   },
   {
     "id": "8cb7651d8e",
@@ -82064,7 +84843,14 @@
       "vs",
       "vt"
     ],
-    "jmdict_id": 1557100
+    "jmdict_id": 1557100,
+    "examples": [
+      {
+        "ja": "冷蔵庫の中にある野菜が腐ってしまった。",
+        "furigana": "{冷蔵|れいぞう}庫の中にある野菜が腐ってしまった。",
+        "en": "The vegetables in the refrigerator went bad."
+      }
+    ]
   },
   {
     "id": "47aa9c6d11",
@@ -82108,7 +84894,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1144380
+    "jmdict_id": 1144380,
+    "examples": [
+      {
+        "ja": "彼は皆の期待を胸に抱いてレースに勝利を目指している。",
+        "furigana": "彼は皆の期待を胸に抱いてレースに勝利を目指している。",
+        "en": "He aims for victory in the race with everyone's expectations in his heart."
+      }
+    ]
   },
   {
     "id": "4f878a51a9",
@@ -82205,7 +84998,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1145590
+    "jmdict_id": 1145590,
+    "examples": [
+      {
+        "ja": "今日の授業で「レディー」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「レディー」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “ready.”"
+      }
+    ]
   },
   {
     "id": "bfef822f66",

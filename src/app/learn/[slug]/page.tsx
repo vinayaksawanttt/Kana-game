@@ -132,7 +132,7 @@ async function LearnDocumentContent({
         </div>
       </div>
 
-      <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_280px]">
+      <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,1fr)_280px]">
         <article id="learn-reading-content" className="min-w-0 space-y-6">
           <header className="relative overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-sm sm:p-8">
             <span className="absolute inset-x-0 top-0 h-1 bg-[var(--sakura)]" aria-hidden="true" />

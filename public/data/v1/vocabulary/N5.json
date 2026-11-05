@@ -1210,7 +1210,14 @@
     "pos": [
       "pn"
     ],
-    "jmdict_id": 1000580
+    "jmdict_id": 1000580,
+    "examples": [
+      {
+        "ja": "単純な構造であれば、修理が容易だ。",
+        "furigana": "単純な構造であれば、修理が容易だ。",
+        "en": "If it has a simple structure, repairs are easy."
+      }
+    ]
   },
   {
     "id": "e37a087c0f",
@@ -1254,7 +1261,14 @@
     "pos": [
       "int"
     ],
-    "jmdict_id": 1583250
+    "jmdict_id": 1583250,
+    "examples": [
+      {
+        "ja": "今日の授業で「いいえ」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「いいえ」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, we learned how to use the expression “no.”"
+      }
+    ]
   },
   {
     "id": "ae0cc00f94",
@@ -6705,7 +6719,14 @@
     "pos": [
       "pn"
     ],
-    "jmdict_id": 1288810
+    "jmdict_id": 1288810,
+    "examples": [
+      {
+        "ja": "ここは私の故郷にそっくりな風景です。",
+        "furigana": "ここは私の故郷にそっくりな風景です。",
+        "en": "This scenery is just like that of my hometown."
+      }
+    ]
   },
   {
     "id": "9a7c962266",
@@ -6944,7 +6965,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1050390
+    "jmdict_id": 1050390,
+    "examples": [
+      {
+        "ja": "彼女はコップを口にくわえて運んでいた。",
+        "furigana": "彼女はコップを口にくわえて運んでいた。",
+        "en": "She was carrying a cup by holding it in her mouth."
+      }
+    ]
   },
   {
     "id": "0020b9ee4e",
@@ -9805,7 +9833,14 @@
     "pos": [
       "adj-pn"
     ],
-    "jmdict_id": 1006830
+    "jmdict_id": 1006830,
+    "examples": [
+      {
+        "ja": "そのプールは子供向けのため、水が浅い。",
+        "furigana": "そのプールは子供向けのため、水が浅い。",
+        "en": "The pool is shallow because it is for children."
+      }
+    ]
   },
   {
     "id": "38c854e97f",
@@ -11886,7 +11921,14 @@
     "pos": [
       "adv"
     ],
-    "jmdict_id": 1008910
+    "jmdict_id": 1008910,
+    "examples": [
+      {
+        "ja": "彼女がこんなに遅れるなんておかしいよ。どうして連絡が来ないの？",
+        "furigana": "彼女がこんなに遅れるなんておかしいよ。どうして連絡が来ないの？",
+        "en": "It's strange for her to be this late. Why hasn't she contacted us?"
+      }
+    ]
   },
   {
     "id": "a891b73f8b",
@@ -12680,7 +12722,14 @@
     "pos": [
       "pn"
     ],
-    "jmdict_id": 1009290
+    "jmdict_id": 1009290,
+    "examples": [
+      {
+        "ja": "彼が言った言葉は、どれも恐ろしいことばかりだった。",
+        "furigana": "彼が言った言葉は、どれも恐ろしいことばかりだった。",
+        "en": "Everything he said was nothing but frightening."
+      }
+    ]
   },
   {
     "id": "3ae88c29c4",
@@ -14633,7 +14682,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1103090
+    "jmdict_id": 1103090,
+    "examples": [
+      {
+        "ja": "フライパンでハンバーグを裏返して焼いてください。",
+        "furigana": "フライパンでハンバーグを裏返して焼いてください。",
+        "en": "Please flip the hamburger in the frying pan and cook it."
+      }
+    ]
   },
   {
     "id": "ee3206bb3f",
@@ -15318,7 +15374,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1110110
+    "jmdict_id": 1110110,
+    "examples": [
+      {
+        "ja": "フォークが使いにくいと感じたので、形を少し曲げて使いやすくした。",
+        "furigana": "フォークが使いにくいと感じたので、形を少し曲げて使いやすくした。",
+        "en": "I felt the fork was difficult to use, so I bent it slightly to make it easier to use."
+      }
+    ]
   },
   {
     "id": "15f4136421",
@@ -18745,7 +18808,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1557630
+    "jmdict_id": 1557630,
+    "examples": [
+      {
+        "ja": "今日の授業で「零」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{零|れい}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “zero.”"
+      }
+    ]
   },
   {
     "id": "f7a15687a1",

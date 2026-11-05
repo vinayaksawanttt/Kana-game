@@ -35,7 +35,7 @@ describe("vocabulary question interaction", () => {
     expect(screen.getByLabelText("Japanese word 会う")).toBeTruthy();
     await user.type(input, "TO MEET!");
     await user.keyboard("{Enter}");
-    expect(await screen.findByText("Correct — to meet")).toBeTruthy();
+    expect(await screen.findByText("Correct! Meanings: to meet")).toBeTruthy();
     expect(screen.getByText("Awarded: 100")).toBeTruthy();
     await user.keyboard("{Enter}");
     expect(await screen.findByLabelText("Japanese word 青")).toBeTruthy();
@@ -43,8 +43,8 @@ describe("vocabulary question interaction", () => {
     await user.clear(input);
     await user.type(input, "unrelated");
     await user.keyboard("{Enter}");
-    expect(await screen.findByText(/Not quite\. Expected meaning: blue/)).toBeTruthy();
-    expect(screen.getByText("Mistakes: 1 · Press Enter to skip, or Check again to retry.")).toBeTruthy();
+    expect(await screen.findByText("Not quite — try another meaning, use a hint above, or press Skip.")).toBeTruthy();
+    expect(screen.queryByText(/blue/)).toBeNull();
     await user.keyboard("{Enter}");
     expect(await screen.findByLabelText("Japanese word 赤")).toBeTruthy();
     expect((screen.getByRole("textbox", { name: "English meaning" }) as HTMLInputElement).value).toBe("");
@@ -56,12 +56,20 @@ describe("vocabulary question interaction", () => {
     const input = await screen.findByRole("textbox", { name: "English meaning" });
     await user.type(input, "wrong");
     await user.keyboard("{Enter}");
-    expect(await screen.findByText(/Not quite\. Expected meaning: to meet/)).toBeTruthy();
+    expect(await screen.findByText("Not quite — try another meaning, use a hint above, or press Skip.")).toBeTruthy();
+    expect(screen.queryByText(/to meet/)).toBeNull();
+    await user.clear(input);
+    await user.type(input, "another wrong answer");
+    await user.click(screen.getByRole("button", { name: "Check again" }));
+    expect(await screen.findByText('Still not quite (Mistakes: 2). Hint: starts with "t..." (2 words) — or press Skip to reveal.')).toBeTruthy();
+    expect(screen.queryByText(/to meet/)).toBeNull();
+    expect((input as HTMLInputElement).selectionStart).toBe(0);
+    expect((input as HTMLInputElement).selectionEnd).toBe("another wrong answer".length);
 
     await user.clear(input);
     await user.type(input, "to meet");
     await user.click(screen.getByRole("button", { name: "Check again" }));
-    expect(await screen.findByText("Correct — to meet")).toBeTruthy();
+    expect(await screen.findByText("Correct! Meanings: to meet")).toBeTruthy();
     await user.keyboard("{Enter}");
     expect(await screen.findByLabelText("Japanese word 青")).toBeTruthy();
     expect(screen.getByText("Score 100 pts")).toBeTruthy();
@@ -70,9 +78,21 @@ describe("vocabulary question interaction", () => {
     expect(saved.questions[0]).toMatchObject({
       id: "ada066edfd",
       status: "correct",
-      attempts: ["wrong", "to meet"],
+      attempts: ["wrong", "another wrong answer", "to meet"],
       pointsEarned: 100,
     });
+  });
+
+  it("reveals skipped meanings only after locking the resolved card", async () => {
+    const user = userEvent.setup();
+    render(<VocabularyPlayPage />);
+    const input = await screen.findByRole("textbox", { name: "English meaning" });
+
+    await user.click(screen.getByRole("button", { name: "Skip" }));
+    expect(await screen.findByText("Answer: to meet")).toBeTruthy();
+    expect((input as HTMLInputElement).readOnly).toBe(true);
+    expect(screen.getByRole("button", { name: "Next" })).toBeTruthy();
+    expect(screen.queryByRole("button", { name: "Check Meaning" })).toBeNull();
   });
 
   it("shows a quit dialog on browser back and discards the session when confirmed", async () => {

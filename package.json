@@ -21,6 +21,9 @@
         "build:strokes": "tsx scripts/build-strokes.ts",
         "build:kanji-vocab": "tsx scripts/build-kanji-vocab.ts",
         "build:shiritori-data": "tsx scripts/build-shiritori-data.ts",
+        "enrich:dry-run": "tsx scripts/enrich-with-deepl.ts --dry-run",
+        "enrich:shiritori": "tsx scripts/enrich-with-deepl.ts --target=shiritori",
+        "enrich:vocab": "tsx scripts/enrich-with-deepl.ts --target=vocab-examples",
         "build:data": "npm run build:kanji-data && npm run build:radicals && npm run build:vocabulary-data && npm run build:grammar-data && npm run build:story-placeholders && npm run build:dictionary && npm run build:strokes && npm run build:kanji-vocab && npm run build:shiritori-data",
         "prebuild": "npm run build:radicals && npm run build:learn-placeholders",
         "test": "vitest run"

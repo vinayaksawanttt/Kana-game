@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { ArrowRight, BookOpen, Volume2 } from "lucide-react";
+import { ArrowRight, BookOpen } from "lucide-react";
 import { useState } from "react";
 import { GameLayout } from "@/lib/game-core/layout";
 import type { ShiritoriDifficulty, ShiritoriMode, ShiritoriSettings } from "@/engine/shiritori";
@@ -27,7 +27,6 @@ export default function ShiritoriSetupPage() {
   const [mode, setMode] = useState<ShiritoriMode>("survival");
   const [difficulty, setDifficulty] = useState<ShiritoriDifficulty>("futsuu");
   const [turnSeconds, setTurnSeconds] = useState<ShiritoriSettings["turnSeconds"]>(0);
-  const [sound, setSound] = useState(true);
 
   function startGame() {
     const sessionId = newSessionId();
@@ -35,7 +34,7 @@ export default function ShiritoriSetupPage() {
       mode,
       difficulty,
       turnSeconds,
-      sound,
+      sound: false,
       allowUnverified: false,
     };
     sessionStorage.setItem(`shiritori-session:${sessionId}`, JSON.stringify({ sessionId, settings }));
@@ -52,19 +51,32 @@ export default function ShiritoriSetupPage() {
             Follow the last sound, find a new word, and keep the chain alive.
           </p>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-3" aria-label="Example word chain">
-            {[
-              { emoji: "🍎", word: "りんご", link: "り" },
-              { emoji: "🦍", word: "ごりら", link: "ご" },
-              { emoji: "🎺", word: "らっぱ", link: "ら" },
-            ].map((item, index) => (
-              <div key={item.word} className="shiritori-chain-step flex items-center gap-2" style={{ animationDelay: `${index * 180}ms` }}>
-                {index > 0 && <span className="font-japanese text-xl text-[var(--muted)]" aria-hidden="true">→</span>}
-                <span className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--surface)] px-3 py-2 text-sm font-bold shadow-sm sm:px-4">
-                  <span aria-hidden="true">{item.emoji}</span>
-                  <span className="font-japanese text-base">{item.word.slice(0, -1)}<span className="rounded bg-[var(--sakura-light)] px-0.5 text-[var(--primary)]">{item.link}</span>{item.word.slice(-1)}</span>
+            <div className="shiritori-chain-step flex items-center gap-2">
+              <span className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--surface)] px-3 py-2 text-sm font-bold shadow-sm sm:px-4">
+                <span aria-hidden="true">🍎</span>
+                <span className="font-japanese text-base">
+                  りん<span className="rounded bg-[var(--sakura-light)] px-1 font-bold text-[var(--primary)]">ご</span>
                 </span>
-              </div>
-            ))}
+              </span>
+            </div>
+            <span className="font-japanese text-xl text-[var(--muted)]" aria-hidden="true">→</span>
+            <div className="shiritori-chain-step flex items-center gap-2" style={{ animationDelay: "180ms" }}>
+              <span className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--surface)] px-3 py-2 text-sm font-bold shadow-sm sm:px-4">
+                <span aria-hidden="true">🦍</span>
+                <span className="font-japanese text-base">
+                  <span className="rounded bg-[var(--sakura-light)] px-1 font-bold text-[var(--primary)]">ご</span>り<span className="rounded bg-[var(--sakura-light)] px-1 font-bold text-[var(--primary)]">ら</span>
+                </span>
+              </span>
+            </div>
+            <span className="font-japanese text-xl text-[var(--muted)]" aria-hidden="true">→</span>
+            <div className="shiritori-chain-step flex items-center gap-2" style={{ animationDelay: "360ms" }}>
+              <span className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--surface)] px-3 py-2 text-sm font-bold shadow-sm sm:px-4">
+                <span aria-hidden="true">🎺</span>
+                <span className="font-japanese text-base">
+                  <span className="rounded bg-[var(--sakura-light)] px-1 font-bold text-[var(--primary)]">ら</span>っぱ
+                </span>
+              </span>
+            </div>
           </div>
         </header>
 
@@ -107,23 +119,13 @@ export default function ShiritoriSetupPage() {
             </fieldset>
           )}
 
-          <div className="mt-7 grid gap-6 border-t border-[var(--line)] pt-6 sm:grid-cols-2">
+          <div className="mt-7 border-t border-[var(--line)] pt-6">
             <fieldset>
               <legend className="mb-3 text-sm font-extrabold">Turn timer</legend>
               <div className="inline-flex rounded-full bg-[var(--sakura-light)] p-1">
                 {([0, 15, 30] as const).map((seconds) => (
                   <button key={seconds} type="button" aria-pressed={turnSeconds === seconds} onClick={() => setTurnSeconds(seconds)} className={`min-h-10 rounded-full px-4 text-sm font-bold transition-colors ${turnSeconds === seconds ? "bg-[var(--primary)] text-white" : "text-[var(--muted)]"}`}>
                     {seconds === 0 ? "Off" : `${seconds}s turns`}
-                  </button>
-                ))}
-              </div>
-            </fieldset>
-            <fieldset>
-              <legend className="mb-3 text-sm font-extrabold">Pronunciation</legend>
-              <div className="inline-flex rounded-full bg-[var(--sakura-light)] p-1">
-                {[true, false].map((enabled) => (
-                  <button key={String(enabled)} type="button" aria-pressed={sound === enabled} onClick={() => setSound(enabled)} className={`flex min-h-10 items-center gap-2 rounded-full px-4 text-sm font-bold transition-colors ${sound === enabled ? "bg-[var(--primary)] text-white" : "text-[var(--muted)]"}`}>
-                    <Volume2 size={15} aria-hidden="true" /> Sound {enabled ? "on" : "off"}
                   </button>
                 ))}
               </div>

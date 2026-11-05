@@ -642,7 +642,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1019420
+    "jmdict_id": 1019420,
+    "examples": [
+      {
+        "ja": "コンサートでチラシを配るアルバイトを始めました。",
+        "furigana": "コンサートでチラシを配るアルバイトを始めました。",
+        "en": "I started a part-time job handing out flyers at concerts."
+      }
+    ]
   },
   {
     "id": "d06643e4e1",
@@ -1300,7 +1307,14 @@
       "v5aru",
       "vi"
     ],
-    "jmdict_id": 1000940
+    "jmdict_id": 1000940,
+    "examples": [
+      {
+        "ja": "お客様がいらっしゃるので、部屋をきれいにする必要があります。",
+        "furigana": "お客様がいらっしゃるので、部屋をきれいにする必要があります。",
+        "en": "Since we have guests coming, it's necessary to clean the room."
+      }
+    ]
   },
   {
     "id": "833af5347e",
@@ -3508,7 +3522,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1040060
+    "jmdict_id": 1040060,
+    "examples": [
+      {
+        "ja": "ガスコンロで燃やすと、食材の味が引き立ちます。",
+        "furigana": "ガスコンロで燃やすと、食材の味が引き立ちます。",
+        "en": "When you burn it with a gas stove, the taste of the ingredients stands out."
+      }
+    ]
   },
   {
     "id": "b3c360789e",
@@ -5825,7 +5846,14 @@
     "pos": [
       "adv"
     ],
-    "jmdict_id": 1004310
+    "jmdict_id": 1004310,
+    "examples": [
+      {
+        "ja": "頑張って勉強して、クラスメートに追い付こうとしている。",
+        "furigana": "頑張って勉強して、クラスメートに追い付こうとしている。",
+        "en": "I'm studying hard to catch up with my classmates."
+      }
+    ]
   },
   {
     "id": "aa95e437a0",
@@ -11605,7 +11633,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1294330
+    "jmdict_id": 1294330,
+    "examples": [
+      {
+        "ja": "今日の授業で「妻」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{妻|つま}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “wife.”"
+      }
+    ]
   },
   {
     "id": "342df55815",
@@ -14706,7 +14741,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1106010
+    "jmdict_id": 1106010,
+    "examples": [
+      {
+        "ja": "このビルを握る鍵が必要です。",
+        "furigana": "このビルを握る鍵が必要です。",
+        "en": "I need the key that gives me access (lit. “grips”) to this building."
+      }
+    ]
   },
   {
     "id": "ee0c991348",

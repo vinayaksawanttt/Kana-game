@@ -733,7 +733,14 @@
     "pos": [
       "int"
     ],
-    "jmdict_id": 2394370
+    "jmdict_id": 2394370,
+    "examples": [
+      {
+        "ja": "貧しい生活があったおかげで、私は何が大切かを理解している。",
+        "furigana": "貧しい生活があったおかげで、私は何が大切かを理解している。",
+        "en": "Thanks to my poor life, I understand what is important."
+      }
+    ]
   },
   {
     "id": "c0dfcb262d",
@@ -1598,7 +1605,14 @@
     "pos": [
       "int"
     ],
-    "jmdict_id": 1583250
+    "jmdict_id": 1583250,
+    "examples": [
+      {
+        "ja": "今日の授業で「いえ」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「いえ」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “ie.”"
+      }
+    ]
   },
   {
     "id": "a812d7a958",
@@ -2123,7 +2137,14 @@
       "v5k",
       "vt"
     ],
-    "jmdict_id": 1584090
+    "jmdict_id": 1584090,
+    "examples": [
+      {
+        "ja": "彼は夢を抱いて外国へ留学した。",
+        "furigana": "彼は夢を抱いて外国へ留学した。",
+        "en": "He went to study abroad with dreams in his heart."
+      }
+    ]
   },
   {
     "id": "5d347b309a",
@@ -3816,7 +3837,14 @@
       "v5t",
       "vt"
     ],
-    "jmdict_id": 1478010
+    "jmdict_id": 1478010,
+    "examples": [
+      {
+        "ja": "彼は遠くの的を撃つのが上手です。",
+        "furigana": "彼は遠くの的を{撃つ|うつ}のが上手です。",
+        "en": "He is good at shooting distant targets."
+      }
+    ]
   },
   {
     "id": "2d11008b0c",
@@ -4104,7 +4132,14 @@
       "n",
       "pref"
     ],
-    "jmdict_id": 1352140
+    "jmdict_id": 1352140,
+    "examples": [
+      {
+        "ja": "彼女は偉い業績を上げた。",
+        "furigana": "彼女は偉い業績を{上|うわ}げた。",
+        "en": "She achieved great accomplishments."
+      }
+    ]
   },
   {
     "id": "19d224b10d",
@@ -4181,7 +4216,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1508290
+    "jmdict_id": 1508290,
+    "examples": [
+      {
+        "ja": "リスクを避けるために、投資を複数の銘柄に分散して増やす必要があります。",
+        "furigana": "リスクを避けるために、投資を複数の銘{柄|え}に分散して増やす必要があります。",
+        "en": "To avoid risk, it is necessary to increase investments by diversifying them among multiple stocks."
+      }
+    ]
   },
   {
     "id": "881624f8c3",
@@ -6293,7 +6335,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1036400
+    "jmdict_id": 1036400,
+    "examples": [
+      {
+        "ja": "彼女はネットショッピングでクレジットカードで支払いを済ませた。",
+        "furigana": "彼女はネットショッピングでクレジットカードで支払いを済ませた。",
+        "en": "She made her payment by credit card in online shopping."
+      }
+    ]
   },
   {
     "id": "53e1ba680a",
@@ -10905,7 +10954,14 @@
       "adj-na",
       "n"
     ],
-    "jmdict_id": 1226960
+    "jmdict_id": 1226960,
+    "examples": [
+      {
+        "ja": "逆境を乗り越えることで、自分自身を解放する力を手に入れた。",
+        "furigana": "{逆|ぎゃく}境を乗り越えることで、自分自身を解放する力を手に入れた。",
+        "en": "By overcoming adversity, I gained the power to liberate myself."
+      }
+    ]
   },
   {
     "id": "036cf72d91",
@@ -12532,7 +12588,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 2868440
+    "jmdict_id": 2868440,
+    "examples": [
+      {
+        "ja": "貧乏を克服するためには、賢い財政管理が必要だ。",
+        "furigana": "貧乏を克服するためには、賢い財政{管|くだ}理が必要だ。",
+        "en": "Smart financial management is needed to overcome poverty."
+      }
+    ]
   },
   {
     "id": "e73cc9df41",
@@ -12548,7 +12611,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1245020
+    "jmdict_id": 1245020,
+    "examples": [
+      {
+        "ja": "どこかおかしいと感じたんだが、具体的な点が見当たらない。",
+        "furigana": "どこかおかしいと感じたんだが、{具体|ぐたい}的な点が見当たらない。",
+        "en": "I felt something was off, but I can't find any specific point."
+      }
+    ]
   },
   {
     "id": "591715a7f5",
@@ -13799,7 +13869,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1047880
+    "jmdict_id": 1047880,
+    "examples": [
+      {
+        "ja": "スーツケースに荷物を詰める。",
+        "furigana": "スーツケースに荷物を詰める。",
+        "en": "Pack the luggage into the suitcase."
+      }
+    ]
   },
   {
     "id": "b3310e5721",
@@ -13963,7 +14040,14 @@
       "n",
       "adj-na"
     ],
-    "jmdict_id": 2234080
+    "jmdict_id": 2234080,
+    "examples": [
+      {
+        "ja": "彼のけちな対応のおかげで、問題は無事に解決しました。",
+        "furigana": "{彼|かれ}のけちな{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+        "en": "Thanks to his stingy response, the problem was successfully resolved."
+      }
+    ]
   },
   {
     "id": "e391d26404",
@@ -15852,7 +15936,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1049010
+    "jmdict_id": 1049010,
+    "examples": [
+      {
+        "ja": "延長コードが切れるため、電気製品が突然止まった。",
+        "furigana": "延長コードが切れるため、電気製品が突然止まった。",
+        "en": "The extension cord was cut, causing the electrical appliances to suddenly stop."
+      }
+    ]
   },
   {
     "id": "cf7176ee78",
@@ -15927,7 +16018,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1054230
+    "jmdict_id": 1054230,
+    "examples": [
+      {
+        "ja": "ゴールの瞬間、ボールがわずかにポストから外れた。",
+        "furigana": "ゴールの瞬間、ボールがわずかにポストから外れた。",
+        "en": "At the moment of the goal, the ball barely missed the post."
+      }
+    ]
   },
   {
     "id": "6795b8e330",
@@ -16238,7 +16336,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1288340
+    "jmdict_id": 1288340,
+    "examples": [
+      {
+        "ja": "彼は腰痛のため、毎日つらい生活を送っている。",
+        "furigana": "彼は{腰|こし}痛のため、毎日つらい生活を送っている。",
+        "en": "He leads a painful life every day due to his lower back pain."
+      }
+    ]
   },
   {
     "id": "908ad483d6",
@@ -17483,7 +17588,14 @@
       "vt",
       "vi"
     ],
-    "jmdict_id": 1056230
+    "jmdict_id": 1056230,
+    "examples": [
+      {
+        "ja": "彼は審判に反対し、抗議の意味でサインを押した。",
+        "furigana": "彼は審判に反対し、抗議の意味でサインを押した。",
+        "en": "He opposed the referee and pushed the sign in protest."
+      }
+    ]
   },
   {
     "id": "e065923d1c",
@@ -18109,6 +18221,13 @@
     "jmdict_id": 1585460,
     "other_forms": [
       "偖"
+    ],
+    "examples": [
+      {
+        "ja": "今日の授業で「さて」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「さて」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, we learned how to use the expression “さて.”"
+      }
     ]
   },
   {
@@ -19113,7 +19232,14 @@
       "vs",
       "vi"
     ],
-    "jmdict_id": 1317770
+    "jmdict_id": 1317770,
+    "examples": [
+      {
+        "ja": "計画をスムーズに自殺ために、事前の準備を行いました。",
+        "furigana": "{計画|けいかく}をスムーズに{自殺|じさつ}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+        "en": "To ensure the plan went smoothly, I made preparations in advance."
+      }
+    ]
   },
   {
     "id": "11ac991f58",
@@ -25017,7 +25143,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1472650
+    "jmdict_id": 1472650,
+    "examples": [
+      {
+        "ja": "単純な問題ではなく、もっと複雑な背景がある。",
+        "furigana": "単純な問題ではなく、もっと複雑な{背|せい}景がある。",
+        "en": "It’s not a simple issue; there’s a more complex background behind it."
+      }
+    ]
   },
   {
     "id": "6f583de9e0",
@@ -34704,7 +34837,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1085760
+    "jmdict_id": 1085760,
+    "examples": [
+      {
+        "ja": "今日の授業で「トラック」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「トラック」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “truck.”"
+      }
+    ]
   },
   {
     "id": "bcadb9720d",
@@ -34925,7 +35065,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1457320
+    "jmdict_id": 1457320,
+    "examples": [
+      {
+        "ja": "今日の授業で「トン」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「トン」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “ton.”"
+      }
+    ]
   },
   {
     "id": "43bc725de0",
@@ -37731,7 +37878,14 @@
       "v5k",
       "vt"
     ],
-    "jmdict_id": 2646460
+    "jmdict_id": 2646460,
+    "examples": [
+      {
+        "ja": "酔っ払って急に吐いてしまった。",
+        "furigana": "酔っ払って急に吐いてしまった。",
+        "en": "I got drunk and suddenly threw up."
+      }
+    ]
   },
   {
     "id": "00612a587a",
@@ -38016,7 +38170,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1101440
+    "jmdict_id": 1101440,
+    "examples": [
+      {
+        "ja": "パスタをゆでるとき、塩を入れると味が良くなります。",
+        "furigana": "パスタをゆでるとき、塩を入れると味が良くなります。",
+        "en": "When boiling pasta, adding salt makes it taste better."
+      }
+    ]
   },
   {
     "id": "54c6e05e14",
@@ -38919,7 +39080,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1100090
+    "jmdict_id": 1100090,
+    "examples": [
+      {
+        "ja": "ソフトバンクは、大手携帯通信会社です。",
+        "furigana": "ソフトバンクは、大手携帯通信会社です。",
+        "en": "Softbank is a major mobile communication company."
+      }
+    ]
   },
   {
     "id": "7018224dfa",
@@ -40368,7 +40536,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1107060
+    "jmdict_id": 1107060,
+    "examples": [
+      {
+        "ja": "彼女はネットショッピングでクレジットカードで支払いを済ませた。",
+        "furigana": "彼女はネットショッピングでクレジットカードで支払いを済ませた。",
+        "en": "She made her payment by credit card in online shopping."
+      }
+    ]
   },
   {
     "id": "41e221bc4d",
@@ -40384,7 +40559,14 @@
     "pos": [
       "pref"
     ],
-    "jmdict_id": 1922780
+    "jmdict_id": 1922780,
+    "examples": [
+      {
+        "ja": "彼女は細長い指を見ていると不思議な気持ちになる。",
+        "furigana": "彼女は細長い指を見ていると{不|ふ}思議な気持ちになる。",
+        "en": "She feels strange when she looks at her long, slender fingers."
+      }
+    ]
   },
   {
     "id": "b806544195",
@@ -42600,7 +42782,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1121740
+    "jmdict_id": 1121740,
+    "examples": [
+      {
+        "ja": "彼は駅のホームで切符検査員に捕まりました。",
+        "furigana": "彼は駅のホームで切符検査員に捕まりました。",
+        "en": "He was caught by a ticket inspector on the station platform."
+      }
+    ]
   },
   {
     "id": "38dd5eb4a0",
@@ -42615,7 +42804,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1123550
+    "jmdict_id": 1123550,
+    "examples": [
+      {
+        "ja": "彼はボールを強く蹴った。",
+        "furigana": "彼はボールを強く蹴った。",
+        "en": "He kicked the ball strongly."
+      }
+    ]
   },
   {
     "id": "02dfedfddc",
@@ -42892,7 +43088,14 @@
     "pos": [
       "adv"
     ],
-    "jmdict_id": 1551940
+    "jmdict_id": 1551940,
+    "examples": [
+      {
+        "ja": "ほぼ作業を進めたので、時間通りに終わりました。",
+        "furigana": "ほぼ{作業|さぎょう}を{進|すす}めたので、{時間通|じかんどお}りに{終|お}わりました。",
+        "en": "Since I had made good progress on the work, I finished on time."
+      }
+    ]
   },
   {
     "id": "702cecd159",
@@ -42935,7 +43138,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1522060
+    "jmdict_id": 1522060,
+    "examples": [
+      {
+        "ja": "今日の授業で「濠」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{濠|ほり}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “moat.”"
+      }
+    ]
   },
   {
     "id": "3f544e7ada",
@@ -44176,7 +44386,14 @@
       "vi",
       "vt"
     ],
-    "jmdict_id": 1130650
+    "jmdict_id": 1130650,
+    "examples": [
+      {
+        "ja": "単純な計算ミスで失敗してしまった。",
+        "furigana": "単純な計算ミスで失敗してしまった。",
+        "en": "I failed due to a simple calculation mistake."
+      }
+    ]
   },
   {
     "id": "38321ff824",
@@ -46708,7 +46925,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 2863051
+    "jmdict_id": 2863051,
+    "examples": [
+      {
+        "ja": "今日の授業で「夕べ」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「{夕べ|ゆうべ}」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “last night.”"
+      }
+    ]
   },
   {
     "id": "271078ced6",
@@ -47937,7 +48161,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1137880
+    "jmdict_id": 1137880,
+    "examples": [
+      {
+        "ja": "今日の授業で「ライター」という表現の使い方を学びました。",
+        "furigana": "{今日|きょう}の{授業|じゅぎょう}で「ライター」という{表現|ひょうげん}の{使|つか}い{方|かた}を{学|まな}びました。",
+        "en": "In today’s class, I learned how to use the expression “writer.”"
+      }
+    ]
   },
   {
     "id": "733b519a1e",
@@ -48676,7 +48907,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1147220
+    "jmdict_id": 1147220,
+    "examples": [
+      {
+        "ja": "ロケットが勢いよく昇るのを見た。",
+        "furigana": "ロケットが勢いよく昇るのを見た。",
+        "en": "I saw a rocket rising powerfully."
+      }
+    ]
   },
   {
     "id": "6fcfd8b60b",
@@ -49122,7 +49360,14 @@
     "pos": [
       "n"
     ],
-    "jmdict_id": 1575730
+    "jmdict_id": 1575730,
+    "examples": [
+      {
+        "ja": "彼女は友人が悪口を言われているのを見て、すぐにその友人を弁護した。",
+        "furigana": "彼女は友人が{悪口|わるくち}を言われているのを見て、すぐにその友人を弁護した。",
+        "en": "Upon seeing her friend being bad-mouthed, she immediately defended her friend."
+      }
+    ]
   },
   {
     "id": "3fc07b1856",
