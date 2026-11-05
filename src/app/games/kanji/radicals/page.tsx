@@ -8,6 +8,8 @@ import { addKanjiToSrs } from "@/lib/srs/service";
 import { kanjiLevels } from "@/data/kanji";
 import { StrokePlayer } from "@/components/kanji/StrokePlayer";
 import { getHomophoneGroupForKanji } from "@/engine/homophones";
+import { KanjiReadingPill } from "@/components/ui/KanjiReadingPill";
+import { AudioButton } from "@/components/ui/AudioButton";
 
 export default function RadicalPracticePage() {
   const {
@@ -267,20 +269,32 @@ export default function RadicalPracticePage() {
                         </p>
                       </div>
                       <div>
-                        <h3 className="text-xs font-bold uppercase tracking-[0.12em] text-[var(--muted)]">
+                        <h3 className="text-xs font-bold uppercase tracking-[0.12em] text-[var(--muted)] mb-1.5">
                           On readings
                         </h3>
-                        <p lang="ja" className="font-japanese mt-1.5 text-sm">
-                          {kanjiDetails.on.join(" · ") || "—"}
-                        </p>
+                        {kanjiDetails.on.length > 0 ? (
+                          <div className="flex flex-wrap gap-1.5">
+                            {kanjiDetails.on.map((r) => (
+                              <KanjiReadingPill key={r} reading={r} type="on" size="sm" />
+                            ))}
+                          </div>
+                        ) : (
+                          <p className="text-sm text-[var(--muted)]">—</p>
+                        )}
                       </div>
                       <div>
-                        <h3 className="text-xs font-bold uppercase tracking-[0.12em] text-[var(--muted)]">
+                        <h3 className="text-xs font-bold uppercase tracking-[0.12em] text-[var(--muted)] mb-1.5">
                           Kun readings
                         </h3>
-                        <p lang="ja" className="font-japanese mt-1.5 text-sm">
-                          {kanjiDetails.kun.join(" · ") || "—"}
-                        </p>
+                        {kanjiDetails.kun.length > 0 ? (
+                          <div className="flex flex-wrap gap-1.5">
+                            {kanjiDetails.kun.map((r) => (
+                              <KanjiReadingPill key={r} reading={r} type="kun" size="sm" />
+                            ))}
+                          </div>
+                        ) : (
+                          <p className="text-sm text-[var(--muted)]">—</p>
+                        )}
                       </div>
                     </div>
 
@@ -291,8 +305,13 @@ export default function RadicalPracticePage() {
                       return (
                         <div className="mt-5 rounded-xl border border-[var(--primary)]/30 bg-[var(--paper-tint)]/70 p-4">
                           <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--primary)]/20 pb-2">
-                            <span className="text-[11px] font-bold tracking-wider text-[var(--primary)] uppercase">
+                            <span className="text-[11px] font-bold tracking-wider text-[var(--primary)] uppercase inline-flex items-center gap-1.5">
                               Homophone Nuance · {homophoneGroup.reading}
+                              <AudioButton
+                                text={homophoneGroup.reading}
+                                size="sm"
+                                label={`Listen to shared reading ${homophoneGroup.reading}`}
+                              />
                             </span>
                             <span className="text-xs font-semibold text-[var(--muted)]">
                               {homophoneGroup.title}
@@ -310,13 +329,20 @@ export default function RadicalPracticePage() {
                                       : "bg-transparent opacity-85"
                                   }`}
                                 >
-                                  <div className="flex items-baseline gap-2">
-                                    <span className="font-japanese text-sm font-bold text-[var(--ink)]">
-                                      {member.word} ({member.kanji})
-                                    </span>
-                                    <span className="text-[11px] text-[var(--muted)]">
-                                      {member.nuance}
-                                    </span>
+                                  <div className="flex items-center justify-between gap-2">
+                                    <div className="flex items-baseline gap-2">
+                                      <span className="font-japanese text-sm font-bold text-[var(--ink)]">
+                                        {member.word} ({member.kanji})
+                                      </span>
+                                      <span className="text-[11px] text-[var(--muted)]">
+                                        {member.nuance}
+                                      </span>
+                                    </div>
+                                    <AudioButton
+                                      text={member.word}
+                                      size="sm"
+                                      label={`Listen to ${member.word}`}
+                                    />
                                   </div>
                                   <p className="mt-1 font-japanese text-[11px] text-[var(--muted)]">
                                     {member.example}

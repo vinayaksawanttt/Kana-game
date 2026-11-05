@@ -2,6 +2,7 @@ import type { ComponentPropsWithoutRef, ReactNode } from "react";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import { AudioButton } from "@/components/ui/AudioButton";
+import { KanjiReadingPill } from "@/components/ui/KanjiReadingPill";
 
 function nodeText(node: ReactNode): string {
   if (typeof node === "string" || typeof node === "number") return String(node);
@@ -107,6 +108,7 @@ export const mdxComponents = {
     </ruby>
   ),
   AudioButton: (props: React.ComponentProps<typeof AudioButton>) => <AudioButton {...props} />,
+  KanjiReadingPill: (props: React.ComponentProps<typeof KanjiReadingPill>) => <KanjiReadingPill {...props} />,
 };
 
 export function MdxComponents({ source }: { source: string }) {

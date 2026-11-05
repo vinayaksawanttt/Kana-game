@@ -17,6 +17,8 @@ import { StrokePlayer } from "@/components/kanji/StrokePlayer";
 import { useDictionary } from "@/hooks/useDictionary";
 import { addKanjiToSrs, addVocabularyToSrs } from "@/lib/srs/service";
 import { getHomophoneGroupForKanji } from "@/engine/homophones";
+import { KanjiReadingPill } from "@/components/ui/KanjiReadingPill";
+import { AudioButton } from "@/components/ui/AudioButton";
 import type { AnalyzedToken } from "@/engine/analyzer";
 import type {
   DictionaryKanjiRecord,
@@ -377,12 +379,14 @@ export default function DictionaryAnalyzerPage() {
                         </div>
 
                         {(k.on.length > 0 || k.kun.length > 0) && (
-                          <p
-                            lang="ja"
-                            className="font-japanese mt-3 border-t border-[var(--line)] pt-2.5 text-xs text-[var(--muted)]"
-                          >
-                            {[...k.on.slice(0, 2), ...k.kun.slice(0, 2)].join(" · ")}
-                          </p>
+                          <div className="mt-3 border-t border-[var(--line)] pt-2.5 flex flex-wrap gap-1.5">
+                            {k.on.slice(0, 2).map((r) => (
+                              <KanjiReadingPill key={r} reading={r} type="on" size="sm" />
+                            ))}
+                            {k.kun.slice(0, 2).map((r) => (
+                              <KanjiReadingPill key={r} reading={r} type="kun" size="sm" />
+                            ))}
+                          </div>
                         )}
 
                         <KanjiStrokeToggle kanji={k.c} level={k.jlpt} className="mt-3" />
@@ -581,8 +585,13 @@ export default function DictionaryAnalyzerPage() {
                               {homophone && (
                                 <div className="rounded-lg border border-[var(--primary)]/30 bg-[var(--surface)] p-2.5 text-xs">
                                   <div className="flex items-center justify-between border-b border-[var(--line)] pb-1.5">
-                                    <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--primary)]">
+                                    <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--primary)] inline-flex items-center gap-1.5">
                                       Homophone Nuance · {homophone.reading}
+                                      <AudioButton
+                                        text={homophone.reading}
+                                        size="sm"
+                                        label={`Listen to shared reading ${homophone.reading}`}
+                                      />
                                     </span>
                                     <span className="text-[10px] text-[var(--muted)]">
                                       {homophone.title}
@@ -600,16 +609,23 @@ export default function DictionaryAnalyzerPage() {
                                               : "opacity-85 hover:bg-[var(--bg)]"
                                           }`}
                                         >
-                                          <div className="flex items-baseline gap-1.5">
-                                            <Link
-                                              href={`/games/kanji/playground/${encodeURIComponent(member.kanji)}`}
-                                              className="font-japanese text-xs font-bold text-[var(--primary)] hover:underline"
-                                            >
-                                              {member.word} ({member.kanji})
-                                            </Link>
-                                            <span className="text-[10px] text-[var(--muted)]">
-                                              {member.nuance}
-                                            </span>
+                                          <div className="flex items-center justify-between gap-1.5">
+                                            <div className="flex items-baseline gap-1.5">
+                                              <Link
+                                                href={`/games/kanji/playground/${encodeURIComponent(member.kanji)}`}
+                                                className="font-japanese text-xs font-bold text-[var(--primary)] hover:underline"
+                                              >
+                                                {member.word} ({member.kanji})
+                                              </Link>
+                                              <span className="text-[10px] text-[var(--muted)]">
+                                                {member.nuance}
+                                              </span>
+                                            </div>
+                                            <AudioButton
+                                              text={member.word}
+                                              size="sm"
+                                              label={`Listen to ${member.word}`}
+                                            />
                                           </div>
                                           <p className="mt-0.5 font-japanese text-[10px] text-[var(--muted)]">
                                             {member.example}

@@ -6,6 +6,9 @@ import {
   toKanaAudioKey,
   toTtsText,
   getUniqueKanaSounds,
+  normalizeKanjiReading,
+  resolveKanjiReadingAudio,
+  buildKanjiReadAllQueue,
 } from "../audio";
 
 describe("audio engine", () => {
@@ -159,6 +162,90 @@ describe("audio engine", () => {
         expect(sound.ttsText.length).toBeGreaterThan(0);
         expect(sound.sampleChar.length).toBeGreaterThan(0);
       }
+    });
+  });
+
+  describe("normalizeKanjiReading", () => {
+    it("strips okurigana dots and affix hyphens while normalizing katakana on'yomi", () => {
+      expect(normalizeKanjiReading("まか.せる")).toBe("まかせる");
+      expect(normalizeKanjiReading("-はじ.める")).toBe("はじめる");
+      expect(normalizeKanjiReading("お-")).toBe("お");
+      expect(normalizeKanjiReading("また.の-")).toBe("またの");
+      expect(normalizeKanjiReading("ギョウ")).toBe("ぎょう");
+      expect(normalizeKanjiReading("レッキ")).toBe("れっき");
+      expect(normalizeKanjiReading("-ず.り")).toBe("ずり");
+    });
+
+    it("handles empty and whitespace strings gracefully", () => {
+      expect(normalizeKanjiReading("")).toBe("");
+      expect(normalizeKanjiReading("   ")).toBe("");
+    });
+  });
+
+  describe("resolveKanjiReadingAudio", () => {
+    it("reuses single-mora kana audio when reading matches a known kana mora", () => {
+      const resolved = resolveKanjiReadingAudio("カ");
+      expect(resolved).toEqual({
+        slug: "ka",
+        src: "/audio/kana/ka.mp3",
+        ttsText: "か",
+        lang: "ja-JP",
+        isKanaReuse: true,
+      });
+
+      const singleHira = resolveKanjiReadingAudio("お-");
+      expect(singleHira.src).toBe("/audio/kana/o.mp3");
+      expect(singleHira.isKanaReuse).toBe(true);
+    });
+
+    it("resolves multi-mora readings to /audio/readings/${encoded}.mp3", () => {
+      const resolved = resolveKanjiReadingAudio("コウ");
+      expect(resolved).toEqual({
+        slug: "こう",
+        src: `/audio/readings/${encodeURIComponent("こう")}.mp3`,
+        ttsText: "こう",
+        lang: "ja-JP",
+        isKanaReuse: false,
+      });
+
+      const kunMulti = resolveKanjiReadingAudio("まか.せる");
+      expect(kunMulti).toEqual({
+        slug: "まかせる",
+        src: `/audio/readings/${encodeURIComponent("まかせる")}.mp3`,
+        ttsText: "まかせる",
+        lang: "ja-JP",
+        isKanaReuse: false,
+      });
+    });
+  });
+
+  describe("buildKanjiReadAllQueue", () => {
+    it("caps queue at 4 readings (up to 2 On + up to 2 Kun) and deduplicates normalized sounds", () => {
+      const kanji = {
+        on: ["イチ", "イツ", "ワン"],
+        kun: ["ひと-", "ひと.つ", "ひとつ"],
+      };
+
+      const queue = buildKanjiReadAllQueue(kanji);
+      expect(queue).toEqual(["イチ", "イツ", "ひと-", "ひと.つ"]);
+      expect(queue.length).toBe(4);
+    });
+
+    it("deduplicates readings that normalize to identical phonetic strings", () => {
+      const kanji = {
+        on: ["コウ"],
+        kun: ["こう", "たか.い"],
+      };
+
+      // "こう" kun duplicates "コウ" on (both normalize to "こう")
+      const queue = buildKanjiReadAllQueue(kanji);
+      expect(queue).toEqual(["コウ", "たか.い"]);
+    });
+
+    it("handles missing or empty arrays cleanly", () => {
+      expect(buildKanjiReadAllQueue({})).toEqual([]);
+      expect(buildKanjiReadAllQueue({ on: ["シン"] })).toEqual(["シン"]);
+      expect(buildKanjiReadAllQueue({ kun: ["あたらしい"] })).toEqual(["あたらしい"]);
     });
   });
 });

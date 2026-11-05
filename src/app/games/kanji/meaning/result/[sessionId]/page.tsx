@@ -9,6 +9,7 @@ import { formatTime } from "@/lib/game-core/time";
 import { getGameResult, getGameSession, saveGameSession } from "@/lib/game-core/storage";
 import type { StoredKanjiMeaningSession } from "@/lib/game/kanji-meaning";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
+import { KanjiReadingPill } from "@/components/ui/KanjiReadingPill";
 
 type Filter = "All" | "Wrong" | "Correct";
 
@@ -137,7 +138,29 @@ function KanjiMeaningResultContent() {
                   <td className="p-3 font-japanese text-2xl">{question.kanji}</td>
                   <td className="p-3 font-semibold">{question.correctLabel}</td>
                   <td className="p-3">{question.status === "wrong" ? question.chosenLabel : "—"}</td>
-                  <td className="p-3 text-xs text-[var(--muted)]"><span className="block">On: {question.on.join("、") || "—"}</span><span className="mt-1 block">Kun: {question.kun.join("、") || "—"}</span></td>
+                  <td className="p-3">
+                    <div className="space-y-1">
+                      {question.on.length > 0 && (
+                        <div className="flex flex-wrap items-center gap-1">
+                          <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--muted)] w-6">On</span>
+                          {question.on.map((r) => (
+                            <KanjiReadingPill key={r} reading={r} type="on" size="sm" />
+                          ))}
+                        </div>
+                      )}
+                      {question.kun.length > 0 && (
+                        <div className="flex flex-wrap items-center gap-1">
+                          <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--muted)] w-6">Kun</span>
+                          {question.kun.map((r) => (
+                            <KanjiReadingPill key={r} reading={r} type="kun" size="sm" />
+                          ))}
+                        </div>
+                      )}
+                      {question.on.length === 0 && question.kun.length === 0 && (
+                        <span className="text-xs text-[var(--muted)]">—</span>
+                      )}
+                    </div>
+                  </td>
                   <td className="p-3"><ResultBadge status={question.status} /></td>
                 </tr>)}
               </tbody>

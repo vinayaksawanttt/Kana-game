@@ -4,6 +4,12 @@ import userEvent from "@testing-library/user-event";
 import Home from "./page";
 
 const mockPush = vi.fn();
+const { mockPlayKana } = vi.hoisted(() => ({ mockPlayKana: vi.fn() }));
+
+vi.mock("@/hooks/useJapaneseAudio", () => ({
+  useJapaneseAudio: () => ({ playKana: mockPlayKana }),
+}));
+
 vi.mock("next/navigation", () => ({
   useRouter: () => ({ push: mockPush, replace: vi.fn() }),
 }));
@@ -91,5 +97,28 @@ describe("Setup page component test", () => {
     const stored = JSON.parse(raw!);
     // In current implementation, stored.script or deckIds would be checked
     expect(stored.settings?.script ?? stored.script).toBe("katakana");
+  });
+
+  it("opens the kana revision sheet with optional romaji and tap-to-play tiles", async () => {
+    const user = userEvent.setup();
+    render(<Home />);
+
+    expect(screen.queryAllByRole("button", { name: /Preview sound/ })).toHaveLength(0);
+    await user.click(screen.getByRole("button", { name: /Revise the Kana/ }));
+
+    expect(screen.getByRole("heading", { name: "Revise the Kana" })).toBeTruthy();
+    expect(screen.queryByText("a")).toBeNull();
+
+    await user.click(screen.getByRole("switch", { name: "Romaji" }));
+    expect(screen.getByText("a")).toBeTruthy();
+
+    await user.click(screen.getByRole("button", { name: "Play pronunciation for あ" }));
+    expect(mockPlayKana).toHaveBeenCalledWith("あ", "a");
+
+    await user.click(screen.getByRole("tab", { name: "katakana" }));
+    expect(screen.getByRole("button", { name: "Play pronunciation for ア" })).toBeTruthy();
+
+    await user.click(screen.getByRole("button", { name: /Back to practice setup/ }));
+    expect(screen.getByRole("heading", { name: "Practice setup" })).toBeTruthy();
   });
 });

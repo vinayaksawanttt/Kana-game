@@ -136,3 +136,90 @@ export function getUniqueKanaSounds(): UniqueAudioSound[] {
   return Array.from(seen.values());
 }
 
+export interface KanjiReadingAudioPayload {
+  slug: string;
+  src: string;
+  ttsText: string;
+  lang: "ja-JP";
+  isKanaReuse: boolean;
+}
+
+/**
+ * Normalizes raw KANJIDIC okurigana reading strings.
+ * Strips okurigana dots (.), affix hyphens (-), and normalizes Katakana On'yomi
+ * into clean Hiragana phonetic strings.
+ *
+ * e.g.
+ * "まか.せる" -> "まかせる"
+ * "-はじ.める" -> "はじめる"
+ * "お-" -> "お"
+ * "また.の-" -> "またの"
+ * "ギョウ" -> "ぎょう"
+ * "レッキ" -> "れっき"
+ */
+export function normalizeKanjiReading(rawReading: string): string {
+  if (!rawReading) return "";
+  const trimmed = rawReading.trim();
+  const stripped = trimmed.replace(/[.\-]/g, "").replace(/^ー+|ー+$/g, "");
+  return katakanaToHiragana(stripped);
+}
+
+/**
+ * Resolves full audio payload for a Kanji reading.
+ * If the reading is a single kana mora already in /audio/kana/${slug}.mp3,
+ * it reuses that asset directly.
+ * Otherwise, it maps to /audio/readings/${encodeURIComponent(hira)}.mp3.
+ */
+export function resolveKanjiReadingAudio(rawReading: string): KanjiReadingAudioPayload {
+  const hira = normalizeKanjiReading(rawReading);
+  const kanaSlug = CHAR_TO_SLUG_MAP.get(hira);
+
+  if (kanaSlug) {
+    return {
+      slug: kanaSlug,
+      src: `/audio/kana/${kanaSlug}.mp3`,
+      ttsText: hira,
+      lang: "ja-JP",
+      isKanaReuse: true,
+    };
+  }
+
+  const safeSlug = encodeURIComponent(hira);
+  return {
+    slug: hira,
+    src: `/audio/readings/${safeSlug}.mp3`,
+    ttsText: hira,
+    lang: "ja-JP",
+    isKanaReuse: false,
+  };
+}
+
+/**
+ * Builds an ordered, deduplicated queue of up to 4 primary readings
+ * (up to 2 primary On'yomi + up to 2 primary Kun'yomi) for sequential read-all.
+ */
+export function buildKanjiReadAllQueue(kanji: { on?: string[]; kun?: string[] }): string[] {
+  const result: string[] = [];
+  const seenNorm = new Set<string>();
+
+  const onList = Array.isArray(kanji.on) ? kanji.on.slice(0, 2) : [];
+  for (const raw of onList) {
+    const norm = normalizeKanjiReading(raw);
+    if (norm && !seenNorm.has(norm)) {
+      seenNorm.add(norm);
+      result.push(raw);
+    }
+  }
+
+  const kunList = Array.isArray(kanji.kun) ? kanji.kun.slice(0, 2) : [];
+  for (const raw of kunList) {
+    const norm = normalizeKanjiReading(raw);
+    if (norm && !seenNorm.has(norm) && result.length < 4) {
+      seenNorm.add(norm);
+      result.push(raw);
+    }
+  }
+
+  return result.slice(0, 4);
+}
+

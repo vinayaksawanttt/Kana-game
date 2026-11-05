@@ -1,7 +1,12 @@
 "use client";
 
 import { useCallback, useEffect, useSyncExternalStore } from "react";
-import { resolveKanaAudio, toKanaAudioKey } from "@/engine/audio";
+import {
+  resolveKanaAudio,
+  toKanaAudioKey,
+  resolveKanjiReadingAudio,
+  normalizeKanjiReading,
+} from "@/engine/audio";
 
 const STORAGE_KEY = "kana-autoplay-audio";
 
@@ -62,15 +67,25 @@ function getServerSnapshot(): AudioState {
 }
 
 let globalAudio: HTMLAudioElement | null = null;
+let sequenceAbortController: { aborted: boolean } | null = null;
 
 function stopCurrentPlayback() {
   if (typeof window === "undefined") return;
 
+  if (sequenceAbortController) {
+    sequenceAbortController.aborted = true;
+    sequenceAbortController = null;
+  }
+
   if (globalAudio) {
-    globalAudio.pause();
-    globalAudio.currentTime = 0;
-    globalAudio.onended = null;
-    globalAudio.onerror = null;
+    try {
+      globalAudio.pause();
+      globalAudio.currentTime = 0;
+      globalAudio.onended = null;
+      globalAudio.onerror = null;
+    } catch {
+      // Ignore
+    }
   }
 
   if (typeof window.speechSynthesis !== "undefined") {
@@ -84,37 +99,100 @@ function stopCurrentPlayback() {
   updateState({ isPlaying: false, activeKey: null });
 }
 
-function fallbackToSpeech(ttsText: string, slug: string) {
-  if (typeof window === "undefined" || !("speechSynthesis" in window)) {
-    updateState({ isPlaying: false, activeKey: null });
-    return;
-  }
-
-  try {
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(ttsText);
-    utterance.lang = "ja-JP";
-    utterance.rate = 0.9;
-
-    const voices = window.speechSynthesis.getVoices();
-    const jaVoice = voices.find((v) => v.lang === "ja-JP" || v.lang.startsWith("ja"));
-    if (jaVoice) {
-      utterance.voice = jaVoice;
+function fallbackToSpeechAsync(ttsText: string, slug: string): Promise<void> {
+  return new Promise((resolve) => {
+    if (typeof window === "undefined" || !("speechSynthesis" in window)) {
+      updateState({ isPlaying: false, activeKey: null });
+      resolve();
+      return;
     }
 
-    utterance.onend = () => {
+    try {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(ttsText);
+      utterance.lang = "ja-JP";
+      utterance.rate = 0.92;
+
+      const voices = window.speechSynthesis.getVoices();
+      const jaVoice = voices.find((v) => v.lang === "ja-JP" || v.lang.startsWith("ja"));
+      if (jaVoice) {
+        utterance.voice = jaVoice;
+      }
+
+      utterance.onend = () => {
+        updateState({ isPlaying: false, activeKey: null });
+        resolve();
+      };
+
+      utterance.onerror = () => {
+        updateState({ isPlaying: false, activeKey: null });
+        resolve();
+      };
+
+      updateState({ isPlaying: true, activeKey: slug });
+      window.speechSynthesis.speak(utterance);
+    } catch {
       updateState({ isPlaying: false, activeKey: null });
+      resolve();
+    }
+  });
+}
+
+function playAudioItemAsync(src: string, ttsText: string, slug: string): Promise<void> {
+  return new Promise((resolve) => {
+    if (typeof window === "undefined") {
+      resolve();
+      return;
+    }
+
+    if (!globalAudio) {
+      try {
+        globalAudio = new Audio();
+      } catch {
+        fallbackToSpeechAsync(ttsText, slug).then(resolve);
+        return;
+      }
+    }
+
+    const audio = globalAudio;
+    audio.src = src;
+
+    let hasEndedOrErrored = false;
+
+    const finish = () => {
+      if (hasEndedOrErrored) return;
+      hasEndedOrErrored = true;
+      audio.onended = null;
+      audio.onerror = null;
+      updateState({ isPlaying: false, activeKey: null });
+      resolve();
     };
 
-    utterance.onerror = () => {
-      updateState({ isPlaying: false, activeKey: null });
+    audio.onended = finish;
+
+    audio.onerror = () => {
+      if (hasEndedOrErrored) return;
+      hasEndedOrErrored = true;
+      fallbackToSpeechAsync(ttsText, slug).then(finish);
     };
 
     updateState({ isPlaying: true, activeKey: slug });
-    window.speechSynthesis.speak(utterance);
-  } catch {
-    updateState({ isPlaying: false, activeKey: null });
-  }
+
+    try {
+      const playPromise = audio.play();
+      if (playPromise && typeof playPromise.catch === "function") {
+        playPromise.catch(() => {
+          if (hasEndedOrErrored) return;
+          hasEndedOrErrored = true;
+          fallbackToSpeechAsync(ttsText, slug).then(finish);
+        });
+      }
+    } catch {
+      if (hasEndedOrErrored) return;
+      hasEndedOrErrored = true;
+      fallbackToSpeechAsync(ttsText, slug).then(finish);
+    }
+  });
 }
 
 export function useJapaneseAudio() {
@@ -136,7 +214,7 @@ export function useJapaneseAudio() {
   }, []);
 
   const playKana = useCallback((char: string, primaryRomaji?: string) => {
-    if (typeof window === "undefined") return;
+    if (typeof window === "undefined" || !char) return;
 
     stopCurrentPlayback();
 
@@ -145,57 +223,51 @@ export function useJapaneseAudio() {
       romaji: primaryRomaji ? [primaryRomaji] : undefined,
     });
 
-    const slug = payload.slug;
+    void playAudioItemAsync(payload.src, payload.ttsText, payload.slug);
+  }, []);
 
-    if (!globalAudio) {
-      try {
-        globalAudio = new Audio();
-      } catch {
-        // Audio constructor might fail in unsupported environments
-        fallbackToSpeech(payload.ttsText, slug);
-        return;
+  const playReading = useCallback((rawReading: string) => {
+    if (typeof window === "undefined" || !rawReading) return;
+
+    stopCurrentPlayback();
+
+    const payload = resolveKanjiReadingAudio(rawReading);
+    void playAudioItemAsync(payload.src, payload.ttsText, payload.slug);
+  }, []);
+
+  const playReadingSequence = useCallback(async (readings: string[]) => {
+    if (typeof window === "undefined" || !Array.isArray(readings) || readings.length === 0) {
+      return;
+    }
+
+    stopCurrentPlayback();
+
+    const controller = { aborted: false };
+    sequenceAbortController = controller;
+
+    for (let i = 0; i < readings.length; i++) {
+      if (controller.aborted) break;
+      const raw = readings[i];
+      if (!raw) continue;
+
+      const payload = resolveKanjiReadingAudio(raw);
+      await playAudioItemAsync(payload.src, payload.ttsText, payload.slug);
+
+      if (controller.aborted) break;
+
+      if (i < readings.length - 1) {
+        await new Promise((r) => setTimeout(r, 350));
       }
     }
 
-    const audio = globalAudio;
-    audio.src = payload.src;
-
-    let hasEndedOrErrored = false;
-
-    audio.onended = () => {
-      if (hasEndedOrErrored) return;
-      hasEndedOrErrored = true;
-      updateState({ isPlaying: false, activeKey: null });
-    };
-
-    audio.onerror = () => {
-      if (hasEndedOrErrored) return;
-      hasEndedOrErrored = true;
-      fallbackToSpeech(payload.ttsText, slug);
-    };
-
-    updateState({ isPlaying: true, activeKey: slug });
-
-    try {
-      const playPromise = audio.play();
-      if (playPromise && typeof playPromise.catch === "function") {
-        playPromise.catch(() => {
-          if (hasEndedOrErrored) return;
-          hasEndedOrErrored = true;
-          fallbackToSpeech(payload.ttsText, slug);
-        });
-      }
-    } catch {
-      if (hasEndedOrErrored) return;
-      hasEndedOrErrored = true;
-      fallbackToSpeech(payload.ttsText, slug);
+    if (sequenceAbortController === controller) {
+      sequenceAbortController = null;
     }
   }, []);
 
-  // Cleanup on unmount if needed
   useEffect(() => {
     return () => {
-      // Keep state intact; listeners unsubscribed automatically
+      // Component unmount does not disrupt audio singleton
     };
   }, []);
 
@@ -205,7 +277,11 @@ export function useJapaneseAudio() {
     autoPlayEnabled: current.autoPlayEnabled,
     setAutoPlayEnabled,
     playKana,
+    playReading,
+    playReadingSequence,
     stopAudio,
     toKanaAudioKey,
+    normalizeKanjiReading,
+    resolveKanjiReadingAudio,
   };
 }

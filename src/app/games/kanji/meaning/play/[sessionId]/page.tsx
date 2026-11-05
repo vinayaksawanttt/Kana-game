@@ -1,7 +1,7 @@
 "use client";
 
 import { Suspense, useCallback, useEffect, useReducer, useRef, useState } from "react";
-import { Check, X } from "lucide-react";
+import { Check, Volume2, X } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 import { loadKanjiData, type KanjiRecord } from "@/data/kanji";
 import { GameLayout } from "@/lib/game-core/layout";
@@ -16,6 +16,9 @@ import { getGameResult, getGameSession, saveGameResult } from "@/lib/game-core/s
 import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
 import { ingestKanjiMeaningSession } from "@/lib/srs/service";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
+import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
+import { buildKanjiReadAllQueue } from "@/engine/audio";
+import { KanjiReadingPill } from "@/components/ui/KanjiReadingPill";
 
 export default function KanjiMeaningPlayPage() {
   return (
@@ -118,6 +121,7 @@ function KanjiMeaningGame({
   const timerRef = useRef<{ id: number; index: number } | null>(null);
   const [leaving, setLeaving] = useState(false);
   const { quitDialogOpen, requestQuit, cancelQuit, confirmQuit } = useQuitSessionGuard(true);
+  const { playReadingSequence, autoPlayEnabled, setAutoPlayEnabled } = useJapaneseAudio();
   const recordByCharacter = new Map(records.map((record) => [record.c, record]));
   const question = state.questions[state.index];
   const result = state.results[state.index];
@@ -171,16 +175,22 @@ function KanjiMeaningGame({
         return;
       }
       event.preventDefault();
+      const optionIndex = Number(event.key) - 1;
       dispatch({
         type: "ANSWER",
-        optionIndex: Number(event.key) - 1,
+        optionIndex,
         index: state.index,
         timeMs: Date.now() - questionStartedAt.current,
       });
+      const currentKanji = recordByCharacter.get(question.kanji);
+      if (currentKanji && autoPlayEnabled) {
+        const queue = buildKanjiReadAllQueue(currentKanji);
+        void playReadingSequence(queue);
+      }
     }
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [answered, leaving, question, state.index]);
+  }, [answered, autoPlayEnabled, leaving, playReadingSequence, question, recordByCharacter, state.index]);
 
   function quitSession() {
     confirmQuit();
@@ -199,6 +209,11 @@ function KanjiMeaningGame({
       // eslint-disable-next-line react-hooks/purity
       timeMs: Date.now() - questionStartedAt.current,
     });
+    const currentKanji = recordByCharacter.get(question.kanji);
+    if (currentKanji && autoPlayEnabled) {
+      const queue = buildKanjiReadAllQueue(currentKanji);
+      void playReadingSequence(queue);
+    }
   }
 
   function next() {
@@ -256,13 +271,29 @@ function KanjiMeaningGame({
                 />
               </div>
             </div>
-            <button
-              type="button"
-              onClick={() => finish(state, true)}
-              className="secondary-button min-h-11 rounded-md border px-4 py-2 text-sm font-bold"
-            >
-              End session
-            </button>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onMouseDown={(e) => e.preventDefault()}
+                onClick={() => setAutoPlayEnabled(!autoPlayEnabled)}
+                aria-label={autoPlayEnabled ? "Disable auto-read readings on reveal" : "Enable auto-read readings on reveal"}
+                title={autoPlayEnabled ? "Auto-read readings on reveal (Enabled)" : "Auto-read readings on reveal (Disabled)"}
+                className={`inline-flex items-center gap-1.5 rounded-md border px-3 py-2 text-xs font-semibold transition-all cursor-pointer select-none ${
+                  autoPlayEnabled
+                    ? "border-[var(--primary)] text-[var(--primary)] bg-[var(--primary-subtle,#fff1f2)]"
+                    : "border-[var(--line)] text-[var(--muted)] hover:text-[var(--fg)] bg-[var(--surface)]"
+                }`}
+              >
+                <span>{autoPlayEnabled ? "🔊 Auto-read on" : "🔇 Auto-read off"}</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => finish(state, true)}
+                className="secondary-button min-h-11 rounded-md border px-4 py-2 text-sm font-bold"
+              >
+                End session
+              </button>
+            </div>
           </div>
 
           <div className="flex flex-1 items-center justify-center py-6">
@@ -376,21 +407,59 @@ function KanjiMeaningGame({
                     </p>
                   </div>
                   {answered && (
-                    <div className="mt-3 rounded-md border border-[var(--line)] bg-[var(--surface)] p-4">
-                      <p className="text-sm font-bold">Learn this kanji</p>
-                      <p className="mt-2 text-xs text-[var(--muted)]">
-                        <strong className="text-[var(--ink)]">On:</strong>{" "}
-                        {kanji.on.length ? kanji.on.join("、") : "—"}{" "}
-                        <span className="mx-1">·</span>{" "}
-                        <strong className="text-[var(--ink)]">Kun:</strong>{" "}
-                        {kanji.kun.length ? kanji.kun.join("、") : "—"}{" "}
-                        <span className="mx-1">·</span>{" "}
-                        <strong className="text-[var(--ink)]">Strokes:</strong> {kanji.strokes}
-                      </p>
-                      <p className="mt-2 text-xs text-[var(--muted)]">
-                        <strong className="text-[var(--ink)]">Meanings:</strong>{" "}
-                        {kanji.meanings.join(", ")}
-                      </p>
+                    <div className="mt-3 rounded-md border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3">
+                      <div className="flex items-center justify-between border-b border-[var(--line)] pb-2.5">
+                        <p className="text-sm font-bold">Learn this kanji</p>
+                        <button
+                          type="button"
+                          onMouseDown={(e) => e.preventDefault()}
+                          onClick={() => {
+                            const queue = buildKanjiReadAllQueue(kanji);
+                            void playReadingSequence(queue);
+                          }}
+                          className="secondary-button inline-flex items-center gap-1.5 rounded-md border px-2.5 py-1 text-xs font-semibold cursor-pointer"
+                          title="Play primary On'yomi and Kun'yomi readings sequentially"
+                        >
+                          <Volume2 size={13} className="text-[var(--primary)]" />
+                          <span>Read readings</span>
+                        </button>
+                      </div>
+
+                      {kanji.on.length > 0 && (
+                        <div>
+                          <span className="text-[11px] font-bold text-[var(--muted)] uppercase tracking-wider block mb-1.5">
+                            On&apos;yomi (音読み)
+                          </span>
+                          <div className="flex flex-wrap gap-1.5">
+                            {kanji.on.map((reading) => (
+                              <KanjiReadingPill key={reading} reading={reading} type="on" size="sm" />
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      {kanji.kun.length > 0 && (
+                        <div>
+                          <span className="text-[11px] font-bold text-[var(--muted)] uppercase tracking-wider block mb-1.5">
+                            Kun&apos;yomi (訓読み)
+                          </span>
+                          <div className="flex flex-wrap gap-1.5">
+                            {kanji.kun.map((reading) => (
+                              <KanjiReadingPill key={reading} reading={reading} type="kun" size="sm" />
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      <div className="flex flex-wrap items-center gap-4 text-xs text-[var(--muted)] pt-1 border-t border-[var(--line)]">
+                        <span>
+                          <strong className="text-[var(--ink)]">Strokes:</strong> {kanji.strokes}
+                        </span>
+                        <span>
+                          <strong className="text-[var(--ink)]">Meanings:</strong>{" "}
+                          {kanji.meanings.join(", ")}
+                        </span>
+                      </div>
                     </div>
                   )}
                   {answered && (

@@ -23,6 +23,7 @@
         "build:shiritori-data": "tsx scripts/build-shiritori-data.ts",
         "build:homophones": "tsx scripts/build-homophones.ts",
         "build:audio:kana": "tsx scripts/build-kana-audio.ts",
+        "build:audio:kanji": "tsx scripts/build-kanji-audio.ts",
         "build:reverse-prompts": "tsx scripts/build-reverse-srs-prompts.ts",
         "build:manifest": "tsx scripts/build-data-manifest.ts",
         "build:sw": "tsx scripts/build-sw.ts",
