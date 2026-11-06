@@ -1,0 +1,478 @@
+"use client";
+
+import { useEffect, useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
+import { ArrowRight, Headphones, RotateCcw } from "lucide-react";
+import { GameLayout } from "@/lib/game-core/layout";
+import { saveGameSession } from "@/lib/game-core/storage";
+import { kanaCharacters, type KanaGroup, type ScriptSelection } from "@/data/kana";
+import { loadListeningPool } from "@/data/listening";
+import {
+  createListeningSession,
+  type JlptLevel,
+  type ListeningAnswerFormat,
+  type ListeningSettings,
+  type ListeningSubMode,
+} from "@/engine/listening";
+import { SakuraLoader } from "@/components/ui/SakuraLoader";
+
+const SUB_MODES: Array<{
+  id: ListeningSubMode;
+  mark: string;
+  title: string;
+  description: string;
+}> = [
+  {
+    id: "kana",
+    mark: "音",
+    title: "Kana Ear Training",
+    description: "Identify Hiragana, Katakana, Dakuten & Yōon sounds by ear.",
+  },
+  {
+    id: "vocabulary",
+    mark: "語",
+    title: "Vocabulary Listening",
+    description: "Hear spoken JLPT words and identify their meaning.",
+  },
+  {
+    id: "sentences",
+    mark: "文",
+    title: "Sentence Comprehension",
+    description: "Listen to natural Japanese sentences in context.",
+  },
+];
+
+const KANA_GROUPS: Array<{ id: KanaGroup; label: string; count: number }> = [
+  { id: "basic", label: "Basic", count: 46 },
+  { id: "dakuten", label: "Dakuten", count: 25 },
+  { id: "yoon", label: "Yōon", count: 33 },
+  { id: "extended", label: "Extended", count: 27 },
+];
+
+const JLPT_LEVELS: Array<{ level: JlptLevel; label: string; vocabCount: number; sentCount: number }> = [
+  { level: 5, label: "N5", vocabCount: 669, sentCount: 890 },
+  { level: 4, label: "N4", vocabCount: 634, sentCount: 880 },
+  { level: 3, label: "N3", vocabCount: 1749, sentCount: 1750 },
+  { level: 2, label: "N2", vocabCount: 1833, sentCount: 1830 },
+  { level: 1, label: "N1", vocabCount: 3262, sentCount: 3260 },
+];
+
+const STORAGE_KEY = "listening-last-setup";
+
+export default function ListeningSetupPage() {
+  const router = useRouter();
+  const [subMode, setSubMode] = useState<ListeningSubMode>("kana");
+  const [answerFormat, setAnswerFormat] = useState<ListeningAnswerFormat>("multiple-choice");
+  const [levels, setLevels] = useState<JlptLevel[]>([5]);
+  const [kanaScript, setKanaScript] = useState<ScriptSelection>("hiragana");
+  const [kanaGroups, setKanaGroups] = useState<KanaGroup[]>(["basic"]);
+  const [size, setSize] = useState<10 | 20 | 30>(10);
+  const [ready, setReady] = useState(false);
+  const [starting, setStarting] = useState(false);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        const saved = JSON.parse(raw) as Partial<ListeningSettings>;
+        /* eslint-disable react-hooks/set-state-in-effect */
+        if (saved.subMode === "kana" || saved.subMode === "vocabulary" || saved.subMode === "sentences") {
+          setSubMode(saved.subMode);
+        }
+        if (saved.answerFormat === "multiple-choice" || saved.answerFormat === "typing") {
+          setAnswerFormat(saved.answerFormat);
+        }
+        if (
+          Array.isArray(saved.levels) &&
+          saved.levels.length > 0 &&
+          saved.levels.every((l): l is JlptLevel => [5, 4, 3, 2, 1].includes(l))
+        ) {
+          setLevels(saved.levels);
+        }
+        if (saved.kanaScript === "hiragana" || saved.kanaScript === "katakana" || saved.kanaScript === "both") {
+          setKanaScript(saved.kanaScript);
+        }
+        if (Array.isArray(saved.kanaGroups) && saved.kanaGroups.length > 0) {
+          setKanaGroups(saved.kanaGroups);
+        }
+        if (saved.size === 10 || saved.size === 20 || saved.size === 30) {
+          setSize(saved.size);
+        }
+        /* eslint-enable react-hooks/set-state-in-effect */
+      }
+    } catch {
+      // Ignore storage read error
+    }
+    setReady(true);
+  }, []);
+
+  const effectiveAnswerFormat: ListeningAnswerFormat =
+    subMode === "sentences" ? "multiple-choice" : answerFormat;
+
+  const availablePoolCount = useMemo(() => {
+    if (subMode === "kana") {
+      const groupSet = new Set(kanaGroups);
+      return kanaCharacters.filter((c) => {
+        const scriptMatch =
+          kanaScript === "both"
+            ? true
+            : c.group === "extended"
+              ? kanaScript === "katakana"
+              : c.script === kanaScript;
+        return scriptMatch && groupSet.has(c.group);
+      }).length;
+    }
+
+    const levelSet = new Set(levels);
+    if (subMode === "vocabulary") {
+      return JLPT_LEVELS.filter((l) => levelSet.has(l.level)).reduce(
+        (sum, l) => sum + l.vocabCount,
+        0
+      );
+    }
+
+    return JLPT_LEVELS.filter((l) => levelSet.has(l.level)).reduce(
+      (sum, l) => sum + l.sentCount,
+      0
+    );
+  }, [subMode, kanaScript, kanaGroups, levels]);
+
+  function toggleKanaGroup(group: KanaGroup) {
+    setKanaGroups((prev) =>
+      prev.includes(group)
+        ? prev.length > 1
+          ? prev.filter((g) => g !== group)
+          : prev
+        : [...prev, group]
+    );
+  }
+
+  function toggleLevel(level: JlptLevel) {
+    setLevels((prev) =>
+      prev.includes(level)
+        ? prev.length > 1
+          ? prev.filter((l) => l !== level)
+          : prev
+        : [...prev, level]
+    );
+  }
+
+  function resetSetup() {
+    setSubMode("kana");
+    setAnswerFormat("multiple-choice");
+    setLevels([5]);
+    setKanaScript("hiragana");
+    setKanaGroups(["basic"]);
+    setSize(10);
+    setError("");
+  }
+
+  async function startSession() {
+    if (availablePoolCount === 0 || starting) return;
+    setStarting(true);
+    setError("");
+
+    try {
+      const settings: ListeningSettings = {
+        subMode,
+        answerFormat: effectiveAnswerFormat,
+        levels,
+        kanaScript,
+        kanaGroups,
+        size,
+      };
+
+      const pool = await loadListeningPool(settings);
+      const session = createListeningSession(pool, settings);
+      saveGameSession("listening", session.sessionId, session);
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
+      router.push(`/games/listening/play/${session.sessionId}`);
+    } catch (err) {
+      console.error("Failed to start listening session:", err);
+      setError("Could not load listening pool. Please try again.");
+      setStarting(false);
+    }
+  }
+
+  if (!ready) {
+    return (
+      <main className="grid min-h-dvh place-items-center bg-[var(--bg)]">
+        <SakuraLoader label="Preparing Listening Studio..." size="md" />
+      </main>
+    );
+  }
+
+  return (
+    <GameLayout label="LISTENING" glyph="聴" homeHref="/">
+      <section className="mx-auto flex w-full max-w-6xl flex-1 items-center justify-center px-5 py-6 sm:px-8 sm:py-8">
+        <div className="grid w-full gap-5 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start">
+          {/* Left Configuration Card */}
+          <div className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-7">
+            <div className="mb-6 flex items-end justify-between gap-4">
+              <div>
+                <p className="mb-1 text-xs font-bold uppercase tracking-[0.16em] text-[var(--primary)]">
+                  Japanese Ear Training
+                </p>
+                <h1 className="text-2xl font-bold sm:text-3xl">Listening quiz setup</h1>
+              </div>
+              <button
+                type="button"
+                onClick={resetSetup}
+                className="flex min-h-10 items-center gap-2 rounded-md px-3 py-1.5 text-sm font-semibold text-[var(--muted)] transition-colors hover:bg-[var(--sakura-light)] hover:text-[var(--primary-fg)] cursor-pointer"
+              >
+                <RotateCcw size={15} /> Reset
+              </button>
+            </div>
+
+            <div className="space-y-6">
+              {/* 1. Listening Mode Selector */}
+              <fieldset>
+                <legend className="mb-2.5 text-sm font-bold">1. Listening mode</legend>
+                <div className="grid gap-2.5 sm:grid-cols-3">
+                  {SUB_MODES.map((item) => {
+                    const selected = subMode === item.id;
+                    return (
+                      <button
+                        key={item.id}
+                        type="button"
+                        aria-pressed={selected}
+                        onClick={() => setSubMode(item.id)}
+                        className={`group flex flex-col justify-between rounded-xl border p-3.5 text-left transition-all cursor-pointer ${
+                          selected
+                            ? "border-[var(--primary)] bg-[var(--sakura-light)]/50 ring-1 ring-[var(--primary)]/30"
+                            : "border-[var(--line)] bg-[var(--surface)] hover:border-[var(--sakura)]"
+                        }`}
+                      >
+                        <div className="mb-2 flex items-center justify-between">
+                          <span
+                            className={`grid size-9 place-items-center rounded-lg font-japanese text-lg font-bold transition-colors ${
+                              selected
+                                ? "bg-[var(--primary)] text-white"
+                                : "bg-[var(--sakura-light)] text-[var(--primary)]"
+                            }`}
+                          >
+                            {item.mark}
+                          </span>
+                        </div>
+                        <div>
+                          <span className="block text-sm font-bold text-[var(--ink)]">
+                            {item.title}
+                          </span>
+                          <span className="mt-1 block text-xs leading-relaxed text-[var(--muted)]">
+                            {item.description}
+                          </span>
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              </fieldset>
+
+              {/* 2. Dynamic Filters */}
+              {subMode === "kana" ? (
+                <div className="space-y-5 border-t border-[var(--line)]/60 pt-5">
+                  <fieldset>
+                    <legend className="mb-2.5 text-sm font-bold">2. Script</legend>
+                    <div className="inline-flex rounded-full bg-[var(--sakura-light)] p-1">
+                      {(
+                        [
+                          ["hiragana", "Hiragana"],
+                          ["katakana", "Katakana"],
+                          ["both", "Both"],
+                        ] as const
+                      ).map(([val, label]) => (
+                        <button
+                          key={val}
+                          type="button"
+                          aria-pressed={kanaScript === val}
+                          onClick={() => setKanaScript(val)}
+                          className={`min-h-10 rounded-full px-4 text-sm font-bold transition-colors cursor-pointer ${
+                            kanaScript === val
+                              ? "bg-[var(--primary)] text-white"
+                              : "text-[var(--muted)] hover:text-[var(--ink)]"
+                          }`}
+                        >
+                          {label}
+                        </button>
+                      ))}
+                    </div>
+                  </fieldset>
+
+                  <fieldset>
+                    <legend className="mb-2.5 text-sm font-bold">Character sets</legend>
+                    <div className="flex flex-wrap gap-2">
+                      {KANA_GROUPS.map((g) => {
+                        const disabled = g.id === "extended" && kanaScript === "hiragana";
+                        const active = !disabled && kanaGroups.includes(g.id);
+                        return (
+                          <button
+                            key={g.id}
+                            type="button"
+                            disabled={disabled}
+                            aria-pressed={active}
+                            onClick={() => toggleKanaGroup(g.id)}
+                            className={`min-h-10 rounded-full border px-4 py-1.5 text-sm font-bold transition-colors cursor-pointer disabled:cursor-not-allowed disabled:opacity-40 ${
+                              active
+                                ? "border-[var(--primary)] bg-[var(--primary)] text-white"
+                                : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)]"
+                            }`}
+                          >
+                            {g.label} <span className="ml-1 text-xs opacity-80">({g.count})</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </fieldset>
+                </div>
+              ) : (
+                <fieldset className="border-t border-[var(--line)]/60 pt-5">
+                  <legend className="mb-2.5 text-sm font-bold">2. JLPT Level (multi-select)</legend>
+                  <div className="flex flex-wrap gap-2">
+                    {JLPT_LEVELS.map((item) => {
+                      const active = levels.includes(item.level);
+                      const count =
+                        subMode === "vocabulary" ? item.vocabCount : item.sentCount;
+                      return (
+                        <button
+                          key={item.level}
+                          type="button"
+                          aria-pressed={active}
+                          onClick={() => toggleLevel(item.level)}
+                          className={`min-h-10 rounded-full border px-4 py-1.5 text-sm font-bold transition-colors cursor-pointer ${
+                            active
+                              ? "border-[var(--primary)] bg-[var(--primary)] text-white"
+                              : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)]"
+                          }`}
+                        >
+                          {item.label} <span className="ml-1 text-xs opacity-80">({count})</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </fieldset>
+              )}
+
+              {/* 3. Answer Style Selector */}
+              <fieldset className="border-t border-[var(--line)]/60 pt-5">
+                <legend className="mb-2.5 text-sm font-bold">3. Answer style</legend>
+                {subMode === "sentences" ? (
+                  <div className="inline-flex rounded-full bg-[var(--sakura-light)] p-1">
+                    <button
+                      type="button"
+                      aria-pressed={true}
+                      className="min-h-10 rounded-full bg-[var(--primary)] px-4 text-sm font-bold text-white"
+                    >
+                      Multiple Choice (4 options)
+                    </button>
+                  </div>
+                ) : (
+                  <div className="inline-flex flex-wrap rounded-full bg-[var(--sakura-light)] p-1">
+                    <button
+                      type="button"
+                      aria-pressed={effectiveAnswerFormat === "multiple-choice"}
+                      onClick={() => setAnswerFormat("multiple-choice")}
+                      className={`min-h-10 rounded-full px-4 text-sm font-bold transition-colors cursor-pointer ${
+                        effectiveAnswerFormat === "multiple-choice"
+                          ? "bg-[var(--primary)] text-white"
+                          : "text-[var(--muted)] hover:text-[var(--ink)]"
+                      }`}
+                    >
+                      Multiple Choice (4 options)
+                    </button>
+                    <button
+                      type="button"
+                      aria-pressed={effectiveAnswerFormat === "typing"}
+                      onClick={() => setAnswerFormat("typing")}
+                      className={`min-h-10 rounded-full px-4 text-sm font-bold transition-colors cursor-pointer ${
+                        effectiveAnswerFormat === "typing"
+                          ? "bg-[var(--primary)] text-white"
+                          : "text-[var(--muted)] hover:text-[var(--ink)]"
+                      }`}
+                    >
+                      Type Answer (Dictation)
+                    </button>
+                  </div>
+                )}
+              </fieldset>
+
+              {/* 4. Session Length */}
+              <fieldset className="border-t border-[var(--line)]/60 pt-5">
+                <legend className="mb-2.5 text-sm font-bold">4. Session length</legend>
+                <div className="inline-flex rounded-full bg-[var(--sakura-light)] p-1">
+                  {([10, 20, 30] as const).map((count) => (
+                    <button
+                      key={count}
+                      type="button"
+                      aria-pressed={size === count}
+                      onClick={() => setSize(count)}
+                      className={`min-h-10 rounded-full px-5 text-sm font-bold transition-colors cursor-pointer ${
+                        size === count
+                          ? "bg-[var(--primary)] text-white"
+                          : "text-[var(--muted)] hover:text-[var(--ink)]"
+                      }`}
+                    >
+                      {count} questions
+                    </button>
+                  ))}
+                </div>
+              </fieldset>
+            </div>
+          </div>
+
+          {/* Right Summary Sidebar Card */}
+          <aside className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-6">
+            <div className="mb-4 flex items-center gap-3">
+              <span className="grid size-11 place-items-center rounded-full bg-[var(--sakura-light)] text-[var(--primary)]">
+                <Headphones size={22} />
+              </span>
+              <div>
+                <p className="text-xs font-bold uppercase tracking-wider text-[var(--muted)]">
+                  Audio Prompt Pool
+                </p>
+                <p className="text-2xl font-extrabold text-[var(--ink)]">
+                  {availablePoolCount.toLocaleString()} items
+                </p>
+              </div>
+            </div>
+
+            <dl className="space-y-2.5 border-y border-[var(--line)]/70 py-4 text-xs">
+              <div className="flex items-center justify-between">
+                <dt className="text-[var(--muted)]">Mode</dt>
+                <dd className="font-bold text-[var(--ink)]">
+                  {SUB_MODES.find((m) => m.id === subMode)?.title}
+                </dd>
+              </div>
+              <div className="flex items-center justify-between">
+                <dt className="text-[var(--muted)]">Answer format</dt>
+                <dd className="font-bold text-[var(--ink)]">
+                  {effectiveAnswerFormat === "typing" ? "Type Answer" : "Multiple Choice (4)"}
+                </dd>
+              </div>
+              <div className="flex items-center justify-between">
+                <dt className="text-[var(--muted)]">Session length</dt>
+                <dd className="font-bold text-[var(--ink)]">{size} questions</dd>
+              </div>
+            </dl>
+
+            {error && (
+              <p role="alert" className="mt-3 text-xs font-semibold text-[var(--wrong)]">
+                {error}
+              </p>
+            )}
+
+            <button
+              type="button"
+              disabled={availablePoolCount === 0 || starting}
+              onClick={startSession}
+              className="mt-5 flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-[var(--primary)] px-4 text-sm font-extrabold text-white shadow-sm transition-all hover:bg-[var(--primary-hover)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer"
+            >
+              <span>{starting ? "Starting..." : "Start Listening"}</span>
+              <ArrowRight size={17} aria-hidden="true" />
+            </button>
+          </aside>
+        </div>
+      </section>
+    </GameLayout>
+  );
+}

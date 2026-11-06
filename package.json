@@ -24,6 +24,7 @@
         "build:homophones": "tsx scripts/build-homophones.ts",
         "build:audio:kana": "tsx scripts/build-kana-audio.ts",
         "build:audio:kanji": "tsx scripts/build-kanji-audio.ts",
+        "build:audio:vocab": "tsx scripts/build-vocab-audio.ts",
         "build:audio:stories": "tsx scripts/build-story-audio.ts",
         "build:reverse-prompts": "tsx scripts/build-reverse-srs-prompts.ts",
         "build:manifest": "tsx scripts/build-data-manifest.ts",

@@ -1,3 +1,5 @@
+import { hasStaticVocabAudio } from "@/engine/audio";
+
 export type ShiritoriMode = "survival" | "blitz" | "friend";
 export type ShiritoriDifficulty = "yasashii" | "futsuu" | "oni";
 export type ShiritoriPlayer = "player" | "bot" | "player1" | "player2";
@@ -483,9 +485,12 @@ export function chooseBotWord(
       score += Math.min(remaining, 10) * 5;
     }
 
-    // 2. English gloss priority
+    // 2. English gloss priority & static neural audio bonus
     if (hasEnglishGloss(word)) {
       score += 100;
+    }
+    if (hasStaticVocabAudio(word.kana)) {
+      score += 10;
     }
 
     // 3. Script priority: Kanji +40, Hiragana +25, Katakana loanwords -60

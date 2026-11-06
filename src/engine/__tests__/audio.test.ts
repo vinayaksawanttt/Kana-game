@@ -13,6 +13,8 @@ import {
   resolveSentenceAudio,
   cleanSentenceForAudio,
   buildStoryAudioQueue,
+  decomposeKanaToMoraSteps,
+  hasStaticVocabAudio,
 } from "../audio";
 
 describe("audio engine", () => {
@@ -278,6 +280,38 @@ describe("audio engine", () => {
       const vocab = resolveVocabAudio({ word: "ありがとう" });
       expect(vocab.ttsText).toBe("ありがとう");
       expect(vocab.src).toBe(`/audio/vocab/${encodeURIComponent("ありがとう")}.mp3`);
+    });
+
+    it("resolves signature vocab and reading clips via Hybrid Engine and decomposes rare words into moraSteps", () => {
+      // Signature Shiritori word -> static clip in /audio/vocab/
+      const shiritori = resolveVocabAudio({ word: "しりとり", reading: "しりとり" });
+      expect(shiritori.hasStaticClip).toBe(true);
+      expect(shiritori.staticSrc).toBe(`/audio/vocab/${encodeURIComponent("しりとり")}.mp3`);
+      expect(hasStaticVocabAudio("しりとり")).toBe(true);
+
+      // Existing kanji reading clip -> static clip in /audio/readings/
+      const mizu = resolveVocabAudio({ word: "水", reading: "みず" });
+      expect(mizu.hasStaticClip).toBe(true);
+      expect(mizu.staticSrc).toBe(`/audio/readings/${encodeURIComponent("みず")}.mp3`);
+
+      // Custom/rare word -> Kana-Mora Stitching fallback (hasStaticClip: false)
+      const rare = resolveVocabAudio({ word: "らっぱぶき", reading: "らっぱぶき" });
+      expect(rare.hasStaticClip).toBe(false);
+      expect(rare.moraSteps.map((s) => s.mora)).toEqual(["ら", "っ", "ぱ", "ぶ", "き"]);
+      expect(rare.moraSteps[0].src).toBe("/audio/kana/ra.mp3");
+      expect(rare.moraSteps[1].type).toBe("sokuon");
+      expect(rare.moraSteps[2].src).toBe("/audio/kana/pa.mp3");
+    });
+
+    it("decomposes yōon digraphs, sokuon, and choonpu accurately in decomposeKanaToMoraSteps", () => {
+      const shashin = decomposeKanaToMoraSteps("しゃしん");
+      expect(shashin.map((s) => s.slug)).toEqual(["sha", "shi", "n"]);
+
+      const ramen = decomposeKanaToMoraSteps("ラーメン");
+      expect(ramen.map((s) => s.type)).toEqual(["mora", "choonpu", "mora", "mora"]);
+      expect(ramen[0].slug).toBe("ra");
+      expect(ramen[2].slug).toBe("me");
+      expect(ramen[3].slug).toBe("n");
     });
   });
 

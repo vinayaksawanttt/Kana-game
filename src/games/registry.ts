@@ -55,6 +55,15 @@ export const games: GameEntry[] = [
     ctaLabel: "Play Shiritori",
   },
   {
+    id: "listening",
+    title: "Listening Practice",
+    description: "Train your Japanese ear with Kana dictation, spoken JLPT vocabulary, and sentence comprehension.",
+    href: "/games/listening",
+    badge: "聴",
+    status: "live",
+    ctaLabel: "Start listening",
+  },
+  {
     id: "grammar",
     title: "Grammar Practice",
     description: "Master JLPT N5–N1 grammar patterns with Sentence Cloze and Syntax Scramble.",

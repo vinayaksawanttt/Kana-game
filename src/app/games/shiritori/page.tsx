@@ -45,103 +45,146 @@ export default function ShiritoriSetupPage() {
 
   return (
     <GameLayout label="SHIRITORI" glyph="鎖" homeHref="/games/shiritori">
-      <section className="mx-auto w-full max-w-5xl flex-1 px-5 pb-10 sm:px-8">
-        <header className="pb-7 pt-4 text-center sm:pb-9 sm:pt-8">
-          <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-[var(--primary-fg)]">Japanese word chain</p>
-          <h1 className="font-japanese text-5xl leading-tight sm:text-6xl">しりとり</h1>
-          <p className="mx-auto mt-2 max-w-xl text-sm leading-relaxed text-[var(--muted)] sm:text-base">
+      <section className="mx-auto flex w-full max-w-2xl flex-1 flex-col justify-center px-4 pb-8 sm:px-6">
+        <header className="pb-4 pt-1 text-center sm:pb-5 sm:pt-2">
+          <div className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)]/30 bg-[var(--sakura-light)]/40 px-3 py-0.5 text-[11px] font-bold uppercase tracking-wider text-[var(--primary)]">
+            Japanese word chain
+          </div>
+          <h1 className="mt-1.5 font-japanese text-3xl font-extrabold tracking-tight text-[var(--ink)] sm:text-4xl">
+            しりとり
+          </h1>
+          <p className="mx-auto mt-1 max-w-md text-xs text-[var(--muted)] sm:text-sm">
             Follow the last sound, find a new word, and keep the chain alive.
           </p>
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-3" aria-label="Example word chain">
-            <div className="shiritori-chain-step flex items-center gap-2">
-              <span className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--surface)] px-3 py-2 text-sm font-bold shadow-sm sm:px-4">
-                <span aria-hidden="true">🍎</span>
-                <span className="font-japanese text-base">
-                  りん<span className="rounded bg-[var(--sakura-light)] px-1 font-bold text-[var(--primary)]">ご</span>
-                </span>
+          <div className="mt-3 flex items-center justify-center gap-1.5 sm:gap-2 text-xs" aria-label="Example word chain">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 text-xs font-semibold shadow-xs">
+              <span aria-hidden="true">🍎</span>
+              <span className="font-japanese">
+                りん<span className="font-bold text-[var(--primary)]">ご</span>
               </span>
-            </div>
-            <span className="font-japanese text-xl text-[var(--muted)]" aria-hidden="true">→</span>
-            <div className="shiritori-chain-step flex items-center gap-2" style={{ animationDelay: "180ms" }}>
-              <span className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--surface)] px-3 py-2 text-sm font-bold shadow-sm sm:px-4">
-                <span aria-hidden="true">🦍</span>
-                <span className="font-japanese text-base">
-                  <span className="rounded bg-[var(--sakura-light)] px-1 font-bold text-[var(--primary)]">ご</span>り<span className="rounded bg-[var(--sakura-light)] px-1 font-bold text-[var(--primary)]">ら</span>
-                </span>
+            </span>
+            <span className="text-[var(--muted)]" aria-hidden="true">→</span>
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 text-xs font-semibold shadow-xs">
+              <span aria-hidden="true">🦍</span>
+              <span className="font-japanese">
+                <span className="font-bold text-[var(--primary)]">ご</span>り<span className="font-bold text-[var(--primary)]">ら</span>
               </span>
-            </div>
-            <span className="font-japanese text-xl text-[var(--muted)]" aria-hidden="true">→</span>
-            <div className="shiritori-chain-step flex items-center gap-2" style={{ animationDelay: "360ms" }}>
-              <span className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--surface)] px-3 py-2 text-sm font-bold shadow-sm sm:px-4">
-                <span aria-hidden="true">🎺</span>
-                <span className="font-japanese text-base">
-                  <span className="rounded bg-[var(--sakura-light)] px-1 font-bold text-[var(--primary)]">ら</span>っぱ
-                </span>
+            </span>
+            <span className="text-[var(--muted)]" aria-hidden="true">→</span>
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 text-xs font-semibold shadow-xs">
+              <span aria-hidden="true">🎺</span>
+              <span className="font-japanese">
+                <span className="font-bold text-[var(--primary)]">ら</span>っぱ
               </span>
-            </div>
+            </span>
           </div>
         </header>
 
-        <section className="rounded-xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-8" aria-label="Game settings">
+        <section className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-4 shadow-sm sm:p-6" aria-label="Game settings">
           <fieldset>
-            <legend className="mb-3 text-sm font-extrabold">Choose a mode</legend>
+            <legend className="mb-2 text-xs font-bold uppercase tracking-wider text-[var(--muted)]">Choose a mode</legend>
             <div className="grid gap-2 sm:grid-cols-3">
-              {modes.map((item) => (
-                <button
-                  key={item.id}
-                  type="button"
-                  aria-pressed={mode === item.id}
-                  onClick={() => setMode(item.id)}
-                  className={`flex min-h-[88px] items-center gap-3 rounded-lg border p-3 text-left transition-colors ${mode === item.id ? "border-[var(--primary)] bg-[var(--sakura-light)]" : "border-[var(--line)] hover:border-[var(--sakura)]"}`}
-                >
-                  <span className="grid size-10 shrink-0 place-items-center rounded-full bg-[var(--surface)] font-japanese text-xl text-[var(--primary)]">{item.mark}</span>
-                  <span><span className="block text-sm font-extrabold">{item.title}</span><span className="mt-1 block text-xs text-[var(--muted)]">{item.detail}</span></span>
-                </button>
-              ))}
+              {modes.map((item) => {
+                const isSelected = mode === item.id;
+                return (
+                  <button
+                    key={item.id}
+                    type="button"
+                    aria-pressed={isSelected}
+                    onClick={() => setMode(item.id)}
+                    className={`group flex items-center gap-2.5 rounded-xl border p-2.5 text-left transition-all cursor-pointer ${
+                      isSelected
+                        ? "border-[var(--primary)] bg-[var(--sakura-light)]/40 ring-1 ring-[var(--primary)]/30"
+                        : "border-[var(--line)] bg-[var(--surface)] hover:border-[var(--sakura)] hover:bg-[var(--line)]/20"
+                    }`}
+                  >
+                    <span
+                      className={`grid size-8 shrink-0 place-items-center rounded-lg font-japanese text-sm font-bold transition-colors ${
+                        isSelected
+                          ? "bg-[var(--primary)] text-white shadow-xs"
+                          : "bg-[var(--line)]/50 text-[var(--ink)] group-hover:bg-[var(--sakura-light)] group-hover:text-[var(--primary)]"
+                      }`}
+                    >
+                      {item.mark}
+                    </span>
+                    <span className="min-w-0 flex-1">
+                      <span className="block text-xs font-bold leading-tight text-[var(--ink)] sm:text-sm">{item.title}</span>
+                      <span className="mt-0.5 block truncate text-[11px] text-[var(--muted)]">{item.detail}</span>
+                    </span>
+                  </button>
+                );
+              })}
             </div>
           </fieldset>
 
           {mode !== "friend" && (
-            <fieldset className="mt-7">
-              <legend className="mb-3 text-sm font-extrabold">Bot difficulty</legend>
+            <fieldset className="mt-4 sm:mt-5">
+              <legend className="mb-2 text-xs font-bold uppercase tracking-wider text-[var(--muted)]">Bot difficulty</legend>
               <div className="grid gap-2 sm:grid-cols-3">
-                {difficulties.map((item) => (
-                  <button
-                    key={item.id}
-                    type="button"
-                    aria-pressed={difficulty === item.id}
-                    onClick={() => setDifficulty(item.id)}
-                    className={`min-h-[76px] rounded-lg border px-3 py-2 text-left transition-colors ${difficulty === item.id ? "border-[var(--primary)] bg-[var(--sakura-light)]" : "border-[var(--line)] hover:border-[var(--sakura)]"}`}
-                  >
-                    <span className="block font-japanese text-base font-bold">{item.title}</span>
-                    <span className="mt-1 block text-xs text-[var(--muted)]">{item.detail}</span>
-                  </button>
-                ))}
+                {difficulties.map((item) => {
+                  const isSelected = difficulty === item.id;
+                  return (
+                    <button
+                      key={item.id}
+                      type="button"
+                      aria-pressed={isSelected}
+                      onClick={() => setDifficulty(item.id)}
+                      className={`group rounded-xl border p-2.5 text-left transition-all cursor-pointer ${
+                        isSelected
+                          ? "border-[var(--primary)] bg-[var(--sakura-light)]/40 ring-1 ring-[var(--primary)]/30"
+                          : "border-[var(--line)] bg-[var(--surface)] hover:border-[var(--sakura)] hover:bg-[var(--line)]/20"
+                      }`}
+                    >
+                      <div className="flex items-center justify-between">
+                        <span className="font-japanese text-sm font-bold text-[var(--ink)]">{item.title}</span>
+                        {isSelected && (
+                          <span className="size-1.5 rounded-full bg-[var(--primary)]" aria-hidden="true" />
+                        )}
+                      </div>
+                      <span className="mt-1 block text-[11px] leading-snug text-[var(--muted)]">{item.detail}</span>
+                    </button>
+                  );
+                })}
               </div>
             </fieldset>
           )}
 
-          <div className="mt-7 grid gap-6 border-t border-[var(--line)] pt-6 sm:grid-cols-2">
+          <div className="mt-4 grid gap-3 border-t border-[var(--line)]/60 pt-4 sm:grid-cols-2">
             <fieldset>
-              <legend className="mb-3 text-sm font-extrabold">Turn timer</legend>
-              <div className="inline-flex rounded-full bg-[var(--sakura-light)] p-1">
-                {([0, 15, 30] as const).map((seconds) => (
-                  <button key={seconds} type="button" aria-pressed={turnSeconds === seconds} onClick={() => setTurnSeconds(seconds)} className={`min-h-10 rounded-full px-4 text-sm font-bold transition-colors cursor-pointer ${turnSeconds === seconds ? "bg-[var(--primary)] text-white" : "text-[var(--muted)]"}`}>
-                    {seconds === 0 ? "Off" : `${seconds}s turns`}
-                  </button>
-                ))}
+              <legend className="mb-1.5 text-xs font-bold uppercase tracking-wider text-[var(--muted)]">Turn timer</legend>
+              <div className="inline-flex w-full rounded-lg bg-[var(--line)]/40 p-0.5">
+                {([0, 15, 30] as const).map((seconds) => {
+                  const isSelected = turnSeconds === seconds;
+                  return (
+                    <button
+                      key={seconds}
+                      type="button"
+                      aria-pressed={isSelected}
+                      onClick={() => setTurnSeconds(seconds)}
+                      className={`flex-1 rounded-md py-1.5 text-xs font-bold transition-all cursor-pointer ${
+                        isSelected
+                          ? "bg-[var(--primary)] text-white shadow-xs"
+                          : "text-[var(--muted)] hover:text-[var(--ink)]"
+                      }`}
+                    >
+                      {seconds === 0 ? "Off" : `${seconds}s turns`}
+                    </button>
+                  );
+                })}
               </div>
             </fieldset>
 
             <fieldset>
-              <legend className="mb-3 text-sm font-extrabold">Pronunciation</legend>
-              <div className="inline-flex rounded-full bg-[var(--sakura-light)] p-1">
+              <legend className="mb-1.5 text-xs font-bold uppercase tracking-wider text-[var(--muted)]">Pronunciation</legend>
+              <div className="inline-flex w-full rounded-lg bg-[var(--line)]/40 p-0.5">
                 <button
                   type="button"
                   aria-pressed={soundEnabled}
                   onClick={() => setSoundEnabled(true)}
-                  className={`min-h-10 rounded-full px-4 text-sm font-bold transition-colors cursor-pointer ${
-                    soundEnabled ? "bg-[var(--primary)] text-white" : "text-[var(--muted)]"
+                  className={`flex-1 rounded-md py-1.5 text-xs font-bold transition-all cursor-pointer ${
+                    soundEnabled
+                      ? "bg-[var(--primary)] text-white shadow-xs"
+                      : "text-[var(--muted)] hover:text-[var(--ink)]"
                   }`}
                 >
                   🔊 Sound on
@@ -150,8 +193,10 @@ export default function ShiritoriSetupPage() {
                   type="button"
                   aria-pressed={!soundEnabled}
                   onClick={() => setSoundEnabled(false)}
-                  className={`min-h-10 rounded-full px-4 text-sm font-bold transition-colors cursor-pointer ${
-                    !soundEnabled ? "bg-[var(--primary)] text-white" : "text-[var(--muted)]"
+                  className={`flex-1 rounded-md py-1.5 text-xs font-bold transition-all cursor-pointer ${
+                    !soundEnabled
+                      ? "bg-[var(--primary)] text-white shadow-xs"
+                      : "text-[var(--muted)] hover:text-[var(--ink)]"
                   }`}
                 >
                   🔇 Sound off
@@ -160,17 +205,25 @@ export default function ShiritoriSetupPage() {
             </fieldset>
           </div>
 
-          <button type="button" onClick={startGame} className="mt-8 flex h-14 w-full items-center justify-center gap-2 rounded-xl bg-[var(--primary)] px-4 text-center text-sm font-extrabold text-white transition-colors hover:bg-[var(--primary-hover)] sm:text-base">
-            {mode === "friend" ? "Start — P1 opens with 「しりとり」" : "Start — the bot opens with 「しりとり」"}
-            <ArrowRight size={18} aria-hidden="true" />
+          <button
+            type="button"
+            onClick={startGame}
+            className="mt-5 flex h-11 w-full items-center justify-center gap-2 rounded-xl bg-[var(--primary)] px-4 text-center text-sm font-bold text-white shadow-sm transition-all hover:bg-[var(--primary-hover)] active:scale-[0.99] cursor-pointer"
+          >
+            <span>{mode === "friend" ? "Start — P1 opens with 「しりとり」" : "Start — the bot opens with 「しりとり」"}</span>
+            <ArrowRight size={16} aria-hidden="true" />
           </button>
         </section>
 
-        <details className="mt-4 rounded-xl border border-[var(--line)] bg-[var(--surface)] px-5 py-4">
-          <summary className="flex cursor-pointer list-none items-center gap-2 text-sm font-extrabold">
-            <BookOpen size={16} className="text-[var(--primary)]" aria-hidden="true" /> Rules We Play By
+        <details className="mt-3 rounded-xl border border-[var(--line)] bg-[var(--surface)]/60 px-4 py-2.5 transition-colors hover:bg-[var(--surface)]">
+          <summary className="flex cursor-pointer list-none items-center justify-between text-xs font-bold text-[var(--muted)] hover:text-[var(--ink)]">
+            <span className="flex items-center gap-2">
+              <BookOpen size={14} className="text-[var(--primary)]" aria-hidden="true" />
+              <span>Rules We Play By</span>
+            </span>
+            <span className="text-[11px] font-normal text-[var(--muted)]">Expand ▾</span>
           </summary>
-          <ul className="mt-4 grid gap-3 border-t border-[var(--line)] pt-4 text-sm leading-relaxed text-[var(--muted)] sm:grid-cols-2">
+          <ul className="mt-2.5 grid gap-2 border-t border-[var(--line)]/60 pt-2.5 text-xs leading-relaxed text-[var(--muted)] sm:grid-cols-2">
             <li><strong className="text-[var(--ink)]">No ん escape:</strong> a word ending in ん loses, except やさしい mode gives you a retry.</li>
             <li><strong className="text-[var(--ink)]">Long vowels:</strong> trailing ー is dropped for chaining (ミキサー ends at さ).</li>
             <li><strong className="text-[var(--ink)]">Small kana:</strong> しゃ can continue with しゃ or the flexible sound や.</li>

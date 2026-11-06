@@ -8,6 +8,8 @@ import {
   normalizeKanjiReading,
   resolveVocabAudio,
   resolveSentenceAudio,
+  decomposeKanaToMoraSteps,
+  type MoraAudioStep,
 } from "@/engine/audio";
 
 const STORAGE_KEY = "kana-autoplay-audio";
@@ -86,12 +88,40 @@ let globalAudio: HTMLAudioElement | null = null;
 let sequenceAbortController: { aborted: boolean } | null = null;
 let currentAudioResolver: (() => void) | null = null;
 
+interface TrimmedKanaBuffer {
+  buffer: AudioBuffer;
+  startSec: number;
+  durationSec: number;
+}
+
+let sharedAudioCtx: AudioContext | null = null;
+const kanaBufferCache = new Map<string, TrimmedKanaBuffer>();
+let activeStitchNodes: AudioBufferSourceNode[] = [];
+let activeStitchTimer: ReturnType<typeof setTimeout> | null = null;
+
 function stopCurrentPlayback() {
   if (typeof window === "undefined") return;
 
   if (sequenceAbortController) {
     sequenceAbortController.aborted = true;
     sequenceAbortController = null;
+  }
+
+  if (activeStitchTimer) {
+    clearTimeout(activeStitchTimer);
+    activeStitchTimer = null;
+  }
+
+  if (activeStitchNodes.length > 0) {
+    for (const node of activeStitchNodes) {
+      try {
+        node.stop();
+        node.disconnect();
+      } catch {
+        // Ignore already stopped nodes
+      }
+    }
+    activeStitchNodes = [];
   }
 
   if (globalAudio) {
@@ -120,6 +150,234 @@ function stopCurrentPlayback() {
   }
 
   updateState({ isPlaying: false, activeKey: null, activeChar: null });
+}
+
+function getSharedAudioContext(): AudioContext | null {
+  if (typeof window === "undefined") return null;
+  if (sharedAudioCtx) return sharedAudioCtx;
+  const Ctor =
+    window.AudioContext ||
+    (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+  if (!Ctor) return null;
+  try {
+    sharedAudioCtx = new Ctor();
+    return sharedAudioCtx;
+  } catch {
+    return null;
+  }
+}
+
+function analyzeKanaBuffer(buffer: AudioBuffer): TrimmedKanaBuffer {
+  const data = buffer.getChannelData(0);
+  const sampleRate = buffer.sampleRate;
+  const threshold = 0.014;
+
+  let firstSample = 0;
+  while (firstSample < data.length && Math.abs(data[firstSample]) < threshold) {
+    firstSample++;
+  }
+
+  let lastSample = data.length - 1;
+  while (lastSample > firstSample && Math.abs(data[lastSample]) < threshold) {
+    lastSample--;
+  }
+
+  if (firstSample >= lastSample) {
+    return {
+      buffer,
+      startSec: 0,
+      durationSec: Math.min(0.24, buffer.duration),
+    };
+  }
+
+  const startSec = Math.max(0, firstSample / sampleRate - 0.008);
+  const endSec = Math.min(buffer.duration, lastSample / sampleRate + 0.018);
+  const rawDuration = endSec - startSec;
+  const durationSec = Math.max(0.11, Math.min(0.32, rawDuration));
+
+  return {
+    buffer,
+    startSec,
+    durationSec,
+  };
+}
+
+async function loadTrimmedKanaBuffer(
+  ctx: AudioContext,
+  src: string
+): Promise<TrimmedKanaBuffer | null> {
+  const cached = kanaBufferCache.get(src);
+  if (cached) return cached;
+
+  try {
+    const response = await fetch(src);
+    if (!response.ok) return null;
+    const arrayBuffer = await response.arrayBuffer();
+    const audioBuffer = await ctx.decodeAudioData(arrayBuffer);
+    const trimmed = analyzeKanaBuffer(audioBuffer);
+    kanaBufferCache.set(src, trimmed);
+    return trimmed;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Stitches a word's morae seamlessly using the Web Audio API (AudioContext)
+ * from existing /audio/kana/*.mp3 files, with automatic silence trimming and
+ * smooth 20ms crossfades. Works 100% offline in Brave on Linux without speechSynthesis.
+ */
+async function playMoraStepsAsync(
+  moraSteps: MoraAudioStep[],
+  slug: string,
+  ttsText: string,
+  rateOverride?: number
+): Promise<void> {
+  if (typeof window === "undefined") return;
+  if (!moraSteps || moraSteps.length === 0) {
+    await fallbackToSpeechAsync(ttsText, slug, rateOverride ?? 0.92);
+    return;
+  }
+
+  const ctx = getSharedAudioContext();
+  if (!ctx || typeof window.fetch !== "function") {
+    // Fallback in non-WebAudio test environments (e.g. JSDOM)
+    const firstMora = moraSteps.find((s) => s.type === "mora" && s.src);
+    if (firstMora) {
+      await playAudioItemAsync(firstMora.src, ttsText, slug, undefined, rateOverride);
+    } else {
+      await fallbackToSpeechAsync(ttsText, slug, rateOverride ?? 0.92);
+    }
+    return;
+  }
+
+  const controller = { aborted: false };
+  sequenceAbortController = controller;
+  updateState({ isPlaying: true, activeKey: slug, activeChar: null });
+
+  try {
+    if (ctx.state === "suspended") {
+      await ctx.resume();
+    }
+
+    // Preload all unique kana buffers needed for this word in parallel
+    const uniqueSrcs = Array.from(
+      new Set(moraSteps.filter((s) => s.type === "mora" && s.src).map((s) => s.src))
+    );
+    const loadedEntries = await Promise.all(
+      uniqueSrcs.map(async (src) => [src, await loadTrimmedKanaBuffer(ctx, src)] as const)
+    );
+
+    if (controller.aborted) return;
+
+    const bufferMap = new Map<string, TrimmedKanaBuffer>();
+    for (const [src, entry] of loadedEntries) {
+      if (entry) bufferMap.set(src, entry);
+    }
+
+    if (bufferMap.size === 0) {
+      // Fallback if fetch couldn't load buffers (e.g. mocked environment)
+      const firstMora = moraSteps.find((s) => s.type === "mora" && s.src);
+      if (firstMora) {
+        await playAudioItemAsync(firstMora.src, ttsText, slug, undefined, rateOverride);
+      } else {
+        await fallbackToSpeechAsync(ttsText, slug, rateOverride ?? 0.92);
+      }
+      return;
+    }
+
+    const rate = rateOverride ?? (state.playbackSpeed || 1);
+    const overlapSec = 0.026 / rate;
+    let cursorTime = ctx.currentTime + 0.012;
+    let lastMoraEntry: TrimmedKanaBuffer | null = null;
+    const nodes: AudioBufferSourceNode[] = [];
+
+    for (let i = 0; i < moraSteps.length; i++) {
+      const step = moraSteps[i];
+      if (step.type === "sokuon") {
+        // Geminate consonant pause (っ)
+        cursorTime += 0.095 / rate;
+        continue;
+      }
+
+      if (step.type === "choonpu") {
+        // Long vowel continuation (ー): replay vowel tail of previous mora smoothly
+        if (lastMoraEntry) {
+          const tailOffset = lastMoraEntry.startSec + lastMoraEntry.durationSec * 0.42;
+          const tailDuration = lastMoraEntry.durationSec * 0.52;
+          const effectiveDur = tailDuration / rate;
+
+          const source = ctx.createBufferSource();
+          const gain = ctx.createGain();
+          source.buffer = lastMoraEntry.buffer;
+          source.playbackRate.value = rate;
+
+          gain.gain.setValueAtTime(0.01, cursorTime);
+          gain.gain.linearRampToValueAtTime(0.85, cursorTime + Math.min(0.02, effectiveDur * 0.3));
+          gain.gain.setValueAtTime(0.85, Math.max(cursorTime, cursorTime + effectiveDur - 0.025));
+          gain.gain.linearRampToValueAtTime(0.001, cursorTime + effectiveDur);
+
+          source.connect(gain);
+          gain.connect(ctx.destination);
+          source.start(cursorTime, tailOffset, tailDuration);
+          nodes.push(source);
+
+          cursorTime += Math.max(0.06 / rate, effectiveDur - overlapSec);
+        }
+        continue;
+      }
+
+      const entry = bufferMap.get(step.src);
+      if (!entry) continue;
+
+      const effectiveDur = entry.durationSec / rate;
+      const source = ctx.createBufferSource();
+      const gain = ctx.createGain();
+      source.buffer = entry.buffer;
+      source.playbackRate.value = rate;
+
+      const fadeIn = Math.min(0.014, effectiveDur * 0.2);
+      const fadeOut = Math.min(0.024, effectiveDur * 0.25);
+
+      gain.gain.setValueAtTime(0.01, cursorTime);
+      gain.gain.linearRampToValueAtTime(1.0, cursorTime + fadeIn);
+      gain.gain.setValueAtTime(1.0, Math.max(cursorTime + fadeIn, cursorTime + effectiveDur - fadeOut));
+      gain.gain.linearRampToValueAtTime(0.001, cursorTime + effectiveDur);
+
+      source.connect(gain);
+      gain.connect(ctx.destination);
+      source.start(cursorTime, entry.startSec, entry.durationSec);
+      nodes.push(source);
+
+      lastMoraEntry = entry;
+      const isLast = i === moraSteps.length - 1;
+      cursorTime += isLast
+        ? effectiveDur
+        : Math.max(0.075 / rate, effectiveDur - overlapSec);
+    }
+
+    activeStitchNodes = nodes;
+    const totalWaitMs = Math.max(50, Math.ceil((cursorTime - ctx.currentTime) * 1000) + 25);
+
+    await new Promise<void>((resolve) => {
+      currentAudioResolver = resolve;
+      activeStitchTimer = setTimeout(() => {
+        activeStitchTimer = null;
+        activeStitchNodes = [];
+        if (currentAudioResolver === resolve) {
+          currentAudioResolver = null;
+        }
+        updateState({ isPlaying: false, activeKey: null, activeChar: null });
+        resolve();
+      }, totalWaitMs);
+    });
+  } catch {
+    updateState({ isPlaying: false, activeKey: null, activeChar: null });
+  } finally {
+    if (sequenceAbortController === controller) {
+      sequenceAbortController = null;
+    }
+  }
 }
 
 function fallbackToSpeechAsync(
@@ -170,7 +428,8 @@ function playAudioItemAsync(
   src: string,
   ttsText: string,
   slug: string,
-  activeChar?: string
+  activeChar?: string,
+  rateOverride?: number
 ): Promise<void> {
   return new Promise((resolve) => {
     if (typeof window === "undefined") {
@@ -178,11 +437,13 @@ function playAudioItemAsync(
       return;
     }
 
+    const effectiveRate = rateOverride ?? state.playbackSpeed;
+
     if (!globalAudio) {
       try {
         globalAudio = new Audio();
       } catch {
-        fallbackToSpeechAsync(ttsText, slug, 0.92, activeChar).then(resolve);
+        fallbackToSpeechAsync(ttsText, slug, 0.92 * effectiveRate, activeChar).then(resolve);
         return;
       }
     }
@@ -191,8 +452,8 @@ function playAudioItemAsync(
     audio.src = src;
 
     try {
-      audio.playbackRate = state.playbackSpeed;
-      audio.defaultPlaybackRate = state.playbackSpeed;
+      audio.playbackRate = effectiveRate;
+      audio.defaultPlaybackRate = effectiveRate;
     } catch {
       // Ignore
     }
@@ -216,7 +477,7 @@ function playAudioItemAsync(
       if (hasEndedOrErrored) return;
       hasEndedOrErrored = true;
       currentAudioResolver = null;
-      fallbackToSpeechAsync(ttsText, slug, 0.92, activeChar).then(finish);
+      fallbackToSpeechAsync(ttsText, slug, 0.92 * effectiveRate, activeChar).then(finish);
     };
 
     updateState({ isPlaying: true, activeKey: slug, activeChar: activeChar ?? null });
@@ -228,14 +489,14 @@ function playAudioItemAsync(
           if (hasEndedOrErrored) return;
           hasEndedOrErrored = true;
           currentAudioResolver = null;
-          fallbackToSpeechAsync(ttsText, slug, 0.92, activeChar).then(finish);
+          fallbackToSpeechAsync(ttsText, slug, 0.92 * effectiveRate, activeChar).then(finish);
         });
       }
     } catch {
       if (hasEndedOrErrored) return;
       hasEndedOrErrored = true;
       currentAudioResolver = null;
-      fallbackToSpeechAsync(ttsText, slug, 0.92, activeChar).then(finish);
+      fallbackToSpeechAsync(ttsText, slug, 0.92 * effectiveRate, activeChar).then(finish);
     }
   });
 }
@@ -258,7 +519,7 @@ export function useJapaneseAudio() {
     stopCurrentPlayback();
   }, []);
 
-  const playKana = useCallback((char: string, primaryRomaji?: string) => {
+  const playKana = useCallback((char: string, primaryRomaji?: string, rateOverride?: number) => {
     if (typeof window === "undefined" || !char) return;
 
     stopCurrentPlayback();
@@ -268,7 +529,7 @@ export function useJapaneseAudio() {
       romaji: primaryRomaji ? [primaryRomaji] : undefined,
     });
 
-    void playAudioItemAsync(payload.src, payload.ttsText, payload.slug, char);
+    void playAudioItemAsync(payload.src, payload.ttsText, payload.slug, char, rateOverride);
   }, []);
 
   const playReading = useCallback((rawReading: string) => {
@@ -379,25 +640,62 @@ export function useJapaneseAudio() {
   }, []);
 
   const playVocab = useCallback(
-    (item: { word: string; reading?: string; kana?: string }) => {
+    (item: { word: string; reading?: string; kana?: string }, rateOverride?: number) => {
       if (typeof window === "undefined" || !item) return;
 
       stopCurrentPlayback();
 
       const payload = resolveVocabAudio(item);
-      void playAudioItemAsync(payload.src, payload.ttsText, payload.key);
+      if (payload.hasStaticClip && payload.staticSrc) {
+        void playAudioItemAsync(payload.staticSrc, payload.ttsText, payload.key, undefined, rateOverride);
+      } else {
+        void playMoraStepsAsync(payload.moraSteps, payload.key, payload.ttsText, rateOverride);
+      }
     },
     []
   );
 
-  const playSentence = useCallback((sentenceJa: string, id?: string) => {
-    if (typeof window === "undefined" || !sentenceJa) return;
+  const playSentence = useCallback(
+    (
+      sentenceJa: string,
+      id?: string,
+      options?: { audioSrc?: string; reading?: string; rate?: number }
+    ) => {
+      if (typeof window === "undefined" || !sentenceJa) return;
 
-    stopCurrentPlayback();
+      stopCurrentPlayback();
 
-    const payload = resolveSentenceAudio(sentenceJa, id);
-    void fallbackToSpeechAsync(payload.ttsText, payload.key, payload.rate);
-  }, []);
+      const payload = resolveSentenceAudio(sentenceJa, id);
+      if (options?.audioSrc) {
+        void playAudioItemAsync(
+          options.audioSrc,
+          payload.ttsText,
+          payload.key,
+          undefined,
+          options.rate
+        );
+        return;
+      }
+
+      // If speechSynthesis has no Japanese voices (e.g. Brave on Linux) and reading/kana exists, stitch morae
+      const hasJaVoice =
+        typeof window.speechSynthesis !== "undefined" &&
+        typeof window.speechSynthesis.getVoices === "function" &&
+        window.speechSynthesis
+          .getVoices()
+          .some((v) => v.lang === "ja-JP" || v.lang.startsWith("ja"));
+
+      const steps = decomposeKanaToMoraSteps(options?.reading || sentenceJa);
+      if (!hasJaVoice && steps.length > 0 && typeof window.AudioContext !== "undefined") {
+        void playMoraStepsAsync(steps, payload.key, payload.ttsText, options?.rate);
+        return;
+      }
+
+      const effectiveRate = options?.rate ? payload.rate * options.rate : payload.rate;
+      void fallbackToSpeechAsync(payload.ttsText, payload.key, effectiveRate);
+    },
+    []
+  );
 
   useEffect(() => {
     return () => {

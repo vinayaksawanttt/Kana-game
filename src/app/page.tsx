@@ -47,6 +47,13 @@ function getSections(learnGuideCount: number) {
         href: "/games/shiritori",
         statusLabel: "Live",
       },
+      {
+        title: "Listening Practice",
+        description: "Train your Japanese ear with Kana dictation, spoken JLPT vocabulary, and sentence comprehension.",
+        badge: "聴",
+        href: "/games/listening",
+        statusLabel: "Live",
+      },
     ],
   },
   {

@@ -56,6 +56,10 @@ const MEANING_OVERRIDES: Record<string, string> = {
   ルーバー: "louver",
   るーばー: "louver",
   散: "scatter, disperse",
+  冠木: "lintel; crossbeam",
+  歌舞伎: "kabuki (Japanese theatre)",
+  区々: "various; diverse",
+  九九: "multiplication table",
 };
 
 const CURATED_WORDS: Array<{

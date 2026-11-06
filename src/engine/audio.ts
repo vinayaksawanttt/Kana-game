@@ -1,4 +1,5 @@
 import { kanaCharacters } from "@/data/kana";
+import { STATIC_READING_AUDIO, STATIC_VOCAB_AUDIO } from "@/data/audio-manifest.generated";
 
 export interface KanaAudioPayload {
   slug: string;
@@ -228,21 +229,130 @@ export function buildKanjiReadAllQueue(kanji: { on?: string[]; kun?: string[] })
   return result.slice(0, 4);
 }
 
+export interface MoraAudioStep {
+  mora: string;
+  type: "mora" | "sokuon" | "choonpu";
+  slug: string;
+  src: string;
+}
+
+const SMALL_KANA_TO_FULL: Record<string, string> = {
+  ぁ: "あ",
+  ぃ: "い",
+  ぅ: "う",
+  ぇ: "え",
+  ぉ: "お",
+  ゃ: "や",
+  ゅ: "ゆ",
+  ょ: "よ",
+  ゎ: "わ",
+};
+
+const MORA_TO_SLUG_MAP = new Map<string, string>();
+for (const [char, slug] of CHAR_TO_SLUG_MAP.entries()) {
+  MORA_TO_SLUG_MAP.set(char, slug);
+  const asHira = katakanaToHiragana(char);
+  if (!MORA_TO_SLUG_MAP.has(asHira)) {
+    MORA_TO_SLUG_MAP.set(asHira, slug);
+  }
+}
+
+/**
+ * Decomposes any Japanese reading into a sequence of Kana-Mora audio steps
+ * referencing existing /audio/kana/{slug}.mp3 files, plus sokuon (っ) and choonpu (ー).
+ */
+export function decomposeKanaToMoraSteps(reading: string): MoraAudioStep[] {
+  const stripped = (reading || "").trim().replace(/[\[\]\(\)（）\s・、。！？]/g, "");
+  const normalized = katakanaToHiragana(stripped);
+  const steps: MoraAudioStep[] = [];
+
+  let i = 0;
+  while (i < normalized.length) {
+    // 1. Greedy 2-character match for yōon & extended digraphs (e.g. しゃ, きょ, ふぁ, てぃ)
+    if (i + 1 < normalized.length) {
+      const two = normalized.slice(i, i + 2);
+      const twoSlug = MORA_TO_SLUG_MAP.get(two);
+      if (twoSlug) {
+        steps.push({
+          mora: two,
+          type: "mora",
+          slug: twoSlug,
+          src: `/audio/kana/${twoSlug}.mp3`,
+        });
+        i += 2;
+        continue;
+      }
+    }
+
+    const ch = normalized[i];
+    if (ch === "っ" || ch === "ッ") {
+      steps.push({
+        mora: "っ",
+        type: "sokuon",
+        slug: "",
+        src: "",
+      });
+      i += 1;
+      continue;
+    }
+
+    if (ch === "ー") {
+      steps.push({
+        mora: "ー",
+        type: "choonpu",
+        slug: "",
+        src: "",
+      });
+      i += 1;
+      continue;
+    }
+
+    const mapped = SMALL_KANA_TO_FULL[ch] ?? ch;
+    const oneSlug = MORA_TO_SLUG_MAP.get(mapped);
+    if (oneSlug) {
+      steps.push({
+        mora: ch,
+        type: "mora",
+        slug: oneSlug,
+        src: `/audio/kana/${oneSlug}.mp3`,
+      });
+    }
+    i += 1;
+  }
+
+  return steps;
+}
+
+/**
+ * Checks whether a word's reading has a pre-generated static neural MP3 clip
+ * in /audio/kana/, /audio/vocab/, or /audio/readings/.
+ */
+export function hasStaticVocabAudio(reading: string): boolean {
+  const clean = katakanaToHiragana((reading || "").trim().replace(/[\[\]\(\)（）\s]/g, ""));
+  if (!clean) return false;
+  return (
+    CHAR_TO_SLUG_MAP.has(clean) ||
+    STATIC_VOCAB_AUDIO.has(clean) ||
+    STATIC_READING_AUDIO.has(clean)
+  );
+}
+
 export interface VocabAudioPayload {
   key: string;
   src: string;
   ttsText: string;
   lang: "ja-JP";
+  hasStaticClip: boolean;
+  staticSrc: string;
+  moraSteps: MoraAudioStep[];
 }
 
 /**
- * Resolves audio payload for a vocabulary word.
- * Always normalizes the phonetic reading to clean Hiragana so that
- * TTS engines pronounce the exact target reading rather than guessing
- * alternative readings for kanji compounds (e.g. 大勢 -> おおぜい rather than たいせい).
- *
- * If the normalized kana is a single mora or known kana slug, reuses the
- * static kana audio clip directly. Otherwise targets /audio/vocab/{slug}.mp3.
+ * Resolves audio payload for a vocabulary word using the Hybrid Engine:
+ * 1. Single-mora / known kana -> /audio/kana/{slug}.mp3 (hasStaticClip: true)
+ * 2. Core signature vocab clip -> /audio/vocab/{slug}.mp3 (hasStaticClip: true)
+ * 3. Pre-generated kanji reading clip -> /audio/readings/{slug}.mp3 (hasStaticClip: true)
+ * 4. Any other word -> Kana-Mora Stitching via moraSteps (hasStaticClip: false)
  */
 export function resolveVocabAudio(item: {
   word: string;
@@ -254,24 +364,61 @@ export function resolveVocabAudio(item: {
   const stripped = raw.replace(/[\[\]\(\)（）\s]/g, "");
   // Convert standard Katakana to Hiragana (preserves 'ー' and extended katakana)
   const normalizedKana = katakanaToHiragana(stripped);
+  const moraSteps = decomposeKanaToMoraSteps(normalizedKana);
 
-  // If this normalized reading matches a single mora kana slug, reuse it
+  // 1. Single-mora kana clip reuse
   const kanaSlug = CHAR_TO_SLUG_MAP.get(normalizedKana);
   if (kanaSlug) {
+    const kanaSrc = `/audio/kana/${kanaSlug}.mp3`;
     return {
       key: normalizedKana,
-      src: `/audio/kana/${kanaSlug}.mp3`,
+      src: kanaSrc,
       ttsText: normalizedKana,
       lang: "ja-JP",
+      hasStaticClip: true,
+      staticSrc: kanaSrc,
+      moraSteps,
     };
   }
 
   const safeSlug = encodeURIComponent(normalizedKana);
+  const vocabSrc = `/audio/vocab/${safeSlug}.mp3`;
+
+  // 2. Signature vocab neural clip
+  if (STATIC_VOCAB_AUDIO.has(normalizedKana)) {
+    return {
+      key: normalizedKana,
+      src: vocabSrc,
+      ttsText: normalizedKana,
+      lang: "ja-JP",
+      hasStaticClip: true,
+      staticSrc: vocabSrc,
+      moraSteps,
+    };
+  }
+
+  // 3. Kanji reading neural clip reuse
+  if (STATIC_READING_AUDIO.has(normalizedKana)) {
+    return {
+      key: normalizedKana,
+      src: vocabSrc,
+      ttsText: normalizedKana,
+      lang: "ja-JP",
+      hasStaticClip: true,
+      staticSrc: `/audio/readings/${safeSlug}.mp3`,
+      moraSteps,
+    };
+  }
+
+  // 4. Fallback to Kana-Mora Stitching
   return {
     key: normalizedKana,
-    src: `/audio/vocab/${safeSlug}.mp3`,
+    src: vocabSrc,
     ttsText: normalizedKana,
     lang: "ja-JP",
+    hasStaticClip: false,
+    staticSrc: "",
+    moraSteps,
   };
 }
 
