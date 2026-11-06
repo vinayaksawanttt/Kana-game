@@ -2,6 +2,16 @@
 
 import type { ComponentPropsWithoutRef } from "react";
 import { MDXRemote, type MDXRemoteSerializeResult } from "next-mdx-remote";
+import { AudioButton } from "@/components/ui/AudioButton";
+
+function nodeText(node: unknown): string {
+  if (typeof node === "string" || typeof node === "number") return String(node);
+  if (Array.isArray(node)) return node.map(nodeText).join("");
+  if (node && typeof node === "object" && "props" in node) {
+    return nodeText((node.props as { children?: unknown }).children);
+  }
+  return "";
+}
 
 const mdxComponents = {
   h2: (props: ComponentPropsWithoutRef<"h2">) => (
@@ -28,9 +38,18 @@ const mdxComponents = {
   li: (props: ComponentPropsWithoutRef<"li">) => (
     <li {...props} className="leading-relaxed" />
   ),
-  strong: (props: ComponentPropsWithoutRef<"strong">) => (
-    <strong {...props} lang="ja" className="font-japanese text-base font-semibold text-[var(--ink)]" />
-  ),
+  strong: ({ children, ...props }: ComponentPropsWithoutRef<"strong">) => {
+    const text = nodeText(children).trim();
+    const hasJapanese = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]/u.test(text);
+    return (
+      <span className="inline-flex items-baseline gap-1">
+        <strong {...props} lang="ja" className="font-japanese text-base font-semibold text-[var(--ink)]">
+          {children}
+        </strong>
+        {hasJapanese && <AudioButton text={text} size="sm" label={`Listen to ${text}`} />}
+      </span>
+    );
+  },
   em: (props: ComponentPropsWithoutRef<"em">) => (
     <em {...props} className="text-xs not-italic text-[var(--muted)]" />
   ),
@@ -49,4 +68,3 @@ export function GrammarGuideView({ mdxSource }: { mdxSource: MDXRemoteSerializeR
     </div>
   );
 }
-

@@ -38,6 +38,10 @@ describe("Stories data pipeline & loader", () => {
         expect(p.en).not.toMatch(/\[cite:/);
         expect(Array.isArray(p.tokens)).toBe(true);
         expect(p.tokens!.length).toBeGreaterThan(0);
+        if (p.sentences) {
+          expect(p.sentences.length).toBeGreaterThan(0);
+          expect(p.sentences.every((sentence) => sentence.tokens?.length)).toBe(true);
+        }
       }
     }
   });
@@ -67,4 +71,3 @@ describe("Stories data pipeline & loader", () => {
     expect(momotaro?.title).toBe("桃太郎");
   });
 });
-

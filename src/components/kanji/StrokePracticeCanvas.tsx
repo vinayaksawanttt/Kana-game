@@ -1,11 +1,11 @@
 "use client";
 
-import { type PointerEvent, useCallback, useEffect, useRef, useState } from "react";
-import { Play, RotateCcw, Undo2 } from "lucide-react";
+import { type PointerEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { Pause, Play, RotateCcw, Undo2 } from "lucide-react";
 import type { KanjiStrokeData } from "@/data/strokes";
 import type { Point2D, StrokePracticeMode } from "@/engine/strokePractice";
 import { useStrokePractice } from "@/hooks/useStrokePractice";
-import { StrokePlayer } from "@/components/kanji/StrokePlayer";
+import { useStrokeAnimation } from "@/hooks/useStrokeAnimation";
 
 export interface StrokePracticeCanvasProps {
   kanji: string;
@@ -27,6 +27,7 @@ export function StrokePracticeCanvas({
   level = null,
   strokeData,
 }: StrokePracticeCanvasProps) {
+  void level;
   const paths = strokeData?.paths ?? [];
   const markers = strokeData?.markers ?? [];
 
@@ -46,14 +47,35 @@ export function StrokePracticeCanvas({
     reset,
   } = useStrokePractice({ paths });
 
-  const [showAnimatedDemo, setShowAnimatedDemo] = useState(false);
+  const [isDemoActive, setIsDemoActive] = useState(false);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const rafIdRef = useRef<number | null>(null);
+  const foregroundPathRefs = useRef<(SVGPathElement | null)[]>([]);
 
-  // Reset practice session when kanji changes
+  const fallbackLengths = useMemo(
+    () => paths.map(() => 120),
+    [paths]
+  );
+
+  const {
+    isPlaying: isDemoPlaying,
+    isComplete: isDemoComplete,
+    playbackSpeed: demoSpeed,
+    currentStrokeIndex: demoStrokeIndex,
+    strokeTimings: demoTimings,
+    play: playDemo,
+    pause: pauseDemo,
+    reset: resetDemo,
+    setSpeed: setDemoSpeed,
+  } = useStrokeAnimation(fallbackLengths, foregroundPathRefs);
+
+  // Reset practice session and demo when kanji changes
   useEffect(() => {
     reset();
-  }, [kanji, reset]);
+    resetDemo();
+    setIsDemoActive(false);
+    foregroundPathRefs.current = foregroundPathRefs.current.slice(0, paths.length);
+  }, [kanji, paths.length, reset, resetDemo]);
 
   const renderCanvas = useCallback(
     (completed: Point2D[][], active: Point2D[]) => {
@@ -83,8 +105,8 @@ export function StrokePracticeCanvas({
         ctx.stroke();
       };
 
-      // Draw completed user strokes in freehand mode (in trace/recall mode, completed strokes snap cleanly to SVG paths)
-      if (mode === "free") {
+      // Draw completed user strokes in freehand mode when not playing demo
+      if (mode === "free" && !isDemoActive) {
         for (const stroke of completed) {
           drawPolyline(stroke, "#d0104c", 10);
         }
@@ -95,7 +117,7 @@ export function StrokePracticeCanvas({
         drawPolyline(active, "#d0104c", 10.5);
       }
     },
-    [mode]
+    [mode, isDemoActive]
   );
 
   useEffect(() => {
@@ -128,6 +150,10 @@ export function StrokePracticeCanvas({
   };
 
   const handlePointerDown = (event: PointerEvent<HTMLCanvasElement>) => {
+    if (isDemoActive) {
+      pauseDemo();
+      setIsDemoActive(false);
+    }
     event.currentTarget.setPointerCapture?.(event.pointerId);
     beginStroke(toKanjiVgPoint(event));
   };
@@ -139,6 +165,40 @@ export function StrokePracticeCanvas({
 
   const handlePointerUp = () => {
     endStroke();
+  };
+
+  const handleToggleDemo = () => {
+    if (!isDemoActive) {
+      setIsDemoActive(true);
+      playDemo();
+    } else if (isDemoPlaying) {
+      pauseDemo();
+    } else {
+      playDemo();
+    }
+  };
+
+  const handleReset = () => {
+    reset();
+    resetDemo();
+    setIsDemoActive(false);
+  };
+
+  const handleUndo = () => {
+    if (isDemoActive) {
+      pauseDemo();
+      setIsDemoActive(false);
+    } else {
+      undo();
+    }
+  };
+
+  const handleModeChange = (nextMode: StrokePracticeMode) => {
+    if (isDemoActive) {
+      pauseDemo();
+      setIsDemoActive(false);
+    }
+    setMode(nextMode);
   };
 
   return (
@@ -163,17 +223,14 @@ export function StrokePracticeCanvas({
           className="inline-flex rounded-xl border border-[var(--line)] bg-[var(--bg)] p-1 shadow-xs"
         >
           {MODES.map((m) => {
-            const active = mode === m.id && !showAnimatedDemo;
+            const active = mode === m.id && !isDemoActive;
             return (
               <button
                 key={m.id}
                 type="button"
                 aria-pressed={active}
-                onClick={() => {
-                  setShowAnimatedDemo(false);
-                  setMode(m.id);
-                }}
-                className={`min-h-9 rounded-lg px-3.5 py-1.5 text-xs font-bold transition-colors ${
+                onClick={() => handleModeChange(m.id)}
+                className={`min-h-9 rounded-lg px-3.5 py-1.5 text-xs font-bold transition-colors cursor-pointer ${
                   active
                     ? "bg-[var(--primary)] text-white shadow-xs"
                     : "bg-transparent text-[var(--ink)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary)]"
@@ -186,58 +243,42 @@ export function StrokePracticeCanvas({
         </div>
       </div>
 
-      {showAnimatedDemo ? (
-        <div className="mt-5">
-          <StrokePlayer
-            kanji={kanji}
-            level={level}
-            strokeData={strokeData}
-            onClose={() => setShowAnimatedDemo(false)}
-          />
-        </div>
-      ) : (
-        <div className="mt-5 grid gap-6 lg:grid-cols-[minmax(0,320px)_1fr] lg:items-center">
-          {/* Layered SVG Guide + HTML5 Pointer Canvas */}
-          <div className="relative mx-auto aspect-square w-full max-w-[300px] overflow-hidden rounded-2xl border-2 border-[var(--line)] bg-[var(--bg)] shadow-inner select-none">
-            <svg
-              viewBox="0 0 109 109"
-              className="pointer-events-none absolute inset-0 h-full w-full"
-              aria-hidden="true"
+      <div className="mt-5 grid gap-6 lg:grid-cols-[minmax(0,320px)_1fr] lg:items-center">
+        {/* Layered SVG Guide + HTML5 Pointer Canvas */}
+        <div className="relative mx-auto aspect-square w-full max-w-[300px] overflow-hidden rounded-2xl border-2 border-[var(--line)] bg-[var(--bg)] shadow-inner select-none">
+          <svg
+            viewBox="0 0 109 109"
+            className="pointer-events-none absolute inset-0 h-full w-full"
+            aria-hidden="true"
+          >
+            {/* 4-Quadrant Dashed Guide Grid */}
+            <g
+              stroke="var(--line)"
+              className="stroke-[var(--line)]"
+              strokeWidth="0.8"
+              strokeDasharray="3.5 3.5"
             >
-              {/* 4-Quadrant Dashed Guide Grid */}
-              <g
-                stroke="var(--line)"
-                className="stroke-[var(--line)]"
-                strokeWidth="0.8"
-                strokeDasharray="3.5 3.5"
-              >
-                <line x1="54.5" y1="0" x2="54.5" y2="109" />
-                <line x1="0" y1="54.5" x2="109" y2="54.5" />
-              </g>
+              <line x1="54.5" y1="0" x2="54.5" y2="109" />
+              <line x1="0" y1="54.5" x2="109" y2="54.5" />
+            </g>
 
-              {/* Background Guide Paths (Shown in Trace Mode) */}
-              {mode === "trace" && (
+            {isDemoActive ? (
+              <>
+                {/* Faint Complete Kanji Guide Paths */}
                 <g
                   fill="none"
                   stroke="var(--line)"
                   className="stroke-[var(--line)]"
-                  strokeWidth="4.2"
+                  strokeWidth="3.8"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
                   {paths.map((d, idx) => (
-                    <path
-                      key={`trace-guide-${idx}`}
-                      d={d}
-                      stroke={idx === currentStrokeIndex ? "var(--sakura)" : "var(--line)"}
-                      strokeWidth={idx === currentStrokeIndex ? "4.6" : "3.8"}
-                    />
+                    <path key={`demo-guide-${idx}`} d={d} />
                   ))}
                 </g>
-              )}
 
-              {/* Already Completed Strokes in Trace & Recall Modes */}
-              {mode !== "free" && (
+                {/* Animated Foreground Sumi Ink Paths */}
                 <g
                   fill="none"
                   stroke="var(--ink)"
@@ -246,138 +287,306 @@ export function StrokePracticeCanvas({
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {paths.slice(0, currentStrokeIndex).map((d, idx) => (
-                    <path
-                      key={`done-stroke-${idx}`}
-                      d={d}
-                      data-testid={`completed-stroke-${idx}`}
-                    />
-                  ))}
-                </g>
-              )}
+                  {paths.map((d, index) => {
+                    const timing = demoTimings[index] ?? {
+                      length: 120,
+                      durationMs: 400,
+                      delayMs: 0,
+                      transitionDuration: "400ms",
+                      transitionDelay: "0ms",
+                    };
 
-              {/* Starting Dots / Markers in Trace & Recall Modes */}
-              {mode !== "free" &&
-                markers.map((marker, idx) => {
-                  const isCurrent = idx === currentStrokeIndex;
-                  const isFuture = idx > currentStrokeIndex;
-                  if (mode === "trace" && !isCurrent) return null;
-                  if (mode === "recall" && !isCurrent && !isFuture) return null;
+                    const isAlreadyDrawn = !isDemoPlaying && index < demoStrokeIndex;
+                    const isDrawn = isDemoComplete || isDemoPlaying || isAlreadyDrawn;
+                    const dashOffset = isDrawn ? 0 : timing.length;
 
-                  return (
-                    <g
-                      key={`practice-dot-${idx}`}
-                      transform={`translate(${marker.x}, ${marker.y})`}
-                      data-testid={`practice-marker-${idx}`}
-                    >
-                      <circle
-                        cx="0"
-                        cy="-2"
-                        r={isCurrent ? "5.2" : "3.4"}
-                        fill={isCurrent ? "var(--primary)" : "var(--sakura)"}
-                        stroke="var(--surface)"
-                        strokeWidth="0.9"
+                    const transitionDuration = isDemoPlaying ? timing.transitionDuration : "0ms";
+                    const transitionDelay = isDemoPlaying ? timing.transitionDelay : "0ms";
+
+                    return (
+                      <path
+                        key={`demo-fg-${index}`}
+                        ref={(el) => {
+                          foregroundPathRefs.current[index] = el;
+                        }}
+                        d={d}
+                        style={{
+                          strokeDasharray: `${timing.length}`,
+                          strokeDashoffset: `${dashOffset}`,
+                          transitionProperty: "stroke-dashoffset",
+                          transitionDuration,
+                          transitionDelay,
+                          transitionTimingFunction: "ease-in-out",
+                        }}
                       />
-                      <text
-                        x="0"
-                        y="-1.8"
-                        textAnchor="middle"
-                        dominantBaseline="central"
-                        fill="#ffffff"
-                        fontSize={isCurrent ? "5.5" : "4"}
-                        fontWeight="700"
+                    );
+                  })}
+                </g>
+
+                {/* Numbered Stroke Start Markers */}
+                <g>
+                  {markers.map((marker, index) => {
+                    const timing = demoTimings[index] ?? {
+                      durationMs: 320,
+                      delayMs: 0,
+                      transitionDelay: "0ms",
+                    };
+
+                    const isVisible =
+                      isDemoComplete ||
+                      isDemoPlaying ||
+                      (!isDemoPlaying && index < demoStrokeIndex);
+
+                    const markerDelay = isDemoPlaying ? timing.transitionDelay : "0ms";
+                    const markerDuration = isDemoPlaying ? "180ms" : "0ms";
+
+                    return (
+                      <g
+                        key={`demo-marker-${index}`}
+                        transform={`translate(${marker.x}, ${marker.y})`}
+                        style={{
+                          opacity: isVisible ? 1 : 0,
+                          transitionProperty: "opacity",
+                          transitionDuration: markerDuration,
+                          transitionDelay: markerDelay,
+                        }}
                       >
-                        {idx + 1}
-                      </text>
-                    </g>
-                  );
-                })}
-            </svg>
+                        <circle
+                          cx="0"
+                          cy="-2"
+                          r="5"
+                          fill="var(--primary)"
+                          stroke="var(--surface)"
+                          strokeWidth="0.8"
+                        />
+                        <text
+                          x="0"
+                          y="-1.8"
+                          textAnchor="middle"
+                          dominantBaseline="central"
+                          fill="#ffffff"
+                          fontSize="5"
+                          fontWeight="700"
+                        >
+                          {index + 1}
+                        </text>
+                      </g>
+                    );
+                  })}
+                </g>
+              </>
+            ) : (
+              <>
+                {/* Background Guide Paths (Shown in Trace Mode) */}
+                {mode === "trace" && (
+                  <g
+                    fill="none"
+                    stroke="var(--line)"
+                    className="stroke-[var(--line)]"
+                    strokeWidth="4.2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    {paths.map((d, idx) => (
+                      <path
+                        key={`trace-guide-${idx}`}
+                        d={d}
+                        stroke={idx === currentStrokeIndex ? "var(--sakura)" : "var(--line)"}
+                        strokeWidth={idx === currentStrokeIndex ? "4.6" : "3.8"}
+                      />
+                    ))}
+                  </g>
+                )}
 
-            <canvas
-              ref={canvasRef}
-              width={CANVAS_SIZE}
-              height={CANVAS_SIZE}
-              aria-label={`Drawing canvas for ${kanji}`}
-              onPointerDown={handlePointerDown}
-              onPointerMove={handlePointerMove}
-              onPointerUp={handlePointerUp}
-              onPointerCancel={handlePointerUp}
-              className="relative z-10 h-full w-full touch-none cursor-crosshair"
-            />
-          </div>
+                {/* Already Completed Strokes in Trace & Recall Modes */}
+                {mode !== "free" && (
+                  <g
+                    fill="none"
+                    stroke="var(--ink)"
+                    className="stroke-[var(--ink)]"
+                    strokeWidth="4.2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    {paths.slice(0, currentStrokeIndex).map((d, idx) => (
+                      <path
+                        key={`done-stroke-${idx}`}
+                        d={d}
+                        data-testid={`completed-stroke-${idx}`}
+                      />
+                    ))}
+                  </g>
+                )}
 
-          {/* Status & Controls Panel */}
-          <div className="flex flex-col justify-between gap-4">
-            <div className="rounded-xl border border-[var(--line)] bg-[var(--bg)] p-4">
-              <div className="flex items-center justify-between gap-2">
-                <span className="text-xs font-bold tracking-[0.14em] text-[var(--muted)] uppercase">
-                  Progress
-                </span>
-                <span className="rounded-full border border-[var(--line)] bg-[var(--surface)] px-2.5 py-0.5 text-xs font-bold text-[var(--ink)] tabular-nums">
-                  {mode === "free"
+                {/* Starting Dots / Markers in Trace & Recall Modes */}
+                {mode !== "free" &&
+                  markers.map((marker, idx) => {
+                    const isCurrent = idx === currentStrokeIndex;
+                    const isFuture = idx > currentStrokeIndex;
+                    if (mode === "trace" && !isCurrent) return null;
+                    if (mode === "recall" && !isCurrent && !isFuture) return null;
+
+                    return (
+                      <g
+                        key={`practice-dot-${idx}`}
+                        transform={`translate(${marker.x}, ${marker.y})`}
+                        data-testid={`practice-marker-${idx}`}
+                      >
+                        <circle
+                          cx="0"
+                          cy="-2"
+                          r={isCurrent ? "5.2" : "3.4"}
+                          fill={isCurrent ? "var(--primary)" : "var(--sakura)"}
+                          stroke="var(--surface)"
+                          strokeWidth="0.9"
+                        />
+                        <text
+                          x="0"
+                          y="-1.8"
+                          textAnchor="middle"
+                          dominantBaseline="central"
+                          fill="#ffffff"
+                          fontSize={isCurrent ? "5.5" : "4"}
+                          fontWeight="700"
+                        >
+                          {idx + 1}
+                        </text>
+                      </g>
+                    );
+                  })}
+              </>
+            )}
+          </svg>
+
+          <canvas
+            ref={canvasRef}
+            width={CANVAS_SIZE}
+            height={CANVAS_SIZE}
+            aria-label={`Drawing canvas for ${kanji}`}
+            onPointerDown={handlePointerDown}
+            onPointerMove={handlePointerMove}
+            onPointerUp={handlePointerUp}
+            onPointerCancel={handlePointerUp}
+            className="relative z-10 h-full w-full touch-none cursor-crosshair"
+          />
+        </div>
+
+        {/* Status & Controls Panel */}
+        <div className="flex flex-col justify-between gap-4">
+          <div className="rounded-xl border border-[var(--line)] bg-[var(--bg)] p-4">
+            <div className="flex items-center justify-between gap-2">
+              <span className="text-xs font-bold tracking-[0.14em] text-[var(--muted)] uppercase">
+                {isDemoActive ? "Demo Playback" : "Progress"}
+              </span>
+              <span className="rounded-full border border-[var(--line)] bg-[var(--surface)] px-2.5 py-0.5 text-xs font-bold text-[var(--ink)] tabular-nums">
+                {isDemoActive
+                  ? isDemoComplete
+                    ? "Complete"
+                    : isDemoPlaying
+                      ? `Stroke ${Math.min(demoStrokeIndex + 1, paths.length)} / ${paths.length}`
+                      : `Paused at ${Math.min(demoStrokeIndex + 1, paths.length)} / ${paths.length}`
+                  : mode === "free"
                     ? `${completedStrokes.length} drawn`
                     : `${Math.min(currentStrokeIndex, paths.length)} / ${paths.length} strokes`}
-                </span>
-              </div>
+              </span>
+            </div>
 
-              <p
-                role="status"
-                className={`mt-2.5 text-sm font-semibold ${
-                  isComplete
+            <p
+              role="status"
+              className={`mt-2.5 text-sm font-semibold ${
+                isDemoActive
+                  ? "text-[var(--primary)]"
+                  : isComplete
                     ? "text-[var(--correct)]"
                     : lastResult === "retry"
                       ? "text-[var(--wrong)]"
                       : "text-[var(--ink)]"
-                }`}
-              >
-                {feedback}
-              </p>
+              }`}
+            >
+              {isDemoActive
+                ? isDemoComplete
+                  ? "Stroke order demonstration finished. Tap Play to replay or draw to practice."
+                  : isDemoPlaying
+                    ? `Demonstrating stroke ${Math.min(demoStrokeIndex + 1, paths.length)} of ${paths.length}...`
+                    : "Demonstration paused. Tap Play to resume."
+                : feedback}
+            </p>
 
-              <p className="mt-1.5 text-xs text-[var(--muted)]">
-                {mode === "trace" &&
-                  "Draw along the highlighted stroke starting from the numbered red circle."}
-                {mode === "recall" &&
-                  "Guides are hidden — use the numbered start dots to write each stroke from memory."}
-                {mode === "free" &&
-                  "Blank canvas — practice writing the full character at your own pace."}
-              </p>
-            </div>
+            <p className="mt-1.5 text-xs text-[var(--muted)]">
+              {isDemoActive
+                ? "Observe the stroke order, direction, and stroke balance before writing."
+                : mode === "trace"
+                  ? "Draw along the highlighted stroke starting from the numbered red circle."
+                  : mode === "recall"
+                    ? "Guides are hidden — use the numbered start dots to write each stroke from memory."
+                    : "Blank canvas — practice writing the full character at your own pace."}
+            </p>
+          </div>
 
-            {/* Action Toolbar */}
-            <div className="flex flex-wrap items-center gap-2.5">
-              <button
-                type="button"
-                onClick={() => setShowAnimatedDemo(true)}
-                className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl border border-[var(--primary)] bg-[var(--primary)] px-4 py-2 text-xs font-bold text-white shadow-sm transition-colors hover:bg-[var(--primary-hover)]"
-              >
-                <Play className="size-3.5" />
-                <span>Play / Pause Demo</span>
-              </button>
+          {/* Action Toolbar */}
+          <div className="flex flex-wrap items-center gap-2.5">
+            <button
+              type="button"
+              onClick={handleToggleDemo}
+              className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl border border-[var(--primary)] bg-[var(--primary)] px-4 py-2 text-xs font-bold text-white shadow-sm transition-colors hover:bg-[var(--primary-hover)] cursor-pointer"
+            >
+              {isDemoPlaying ? (
+                <>
+                  <Pause className="size-3.5 fill-current" />
+                  <span>Pause Demo</span>
+                </>
+              ) : (
+                <>
+                  <Play className="size-3.5 fill-current" />
+                  <span>{isDemoActive && !isDemoComplete ? "Resume Demo" : "Play / Pause Demo"}</span>
+                </>
+              )}
+            </button>
 
-              <button
-                type="button"
-                onClick={undo}
-                disabled={completedStrokes.length === 0}
-                className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--surface)] px-3.5 py-2 text-xs font-bold text-[var(--ink)] shadow-sm transition-colors hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary)] disabled:cursor-not-allowed disabled:opacity-50"
+            {isDemoActive && (
+              <div
+                role="group"
+                aria-label="Demo playback speed"
+                className="inline-flex min-h-11 items-center rounded-xl border border-[var(--line)] bg-[var(--surface)] p-1 shadow-xs"
               >
-                <Undo2 className="size-3.5" />
-                <span>Undo</span>
-              </button>
+                {([1, 2] as const).map((spd) => (
+                  <button
+                    key={spd}
+                    type="button"
+                    onClick={() => setDemoSpeed(spd)}
+                    className={`min-h-9 px-2.5 text-xs font-bold rounded-lg transition-colors cursor-pointer ${
+                      demoSpeed === spd
+                        ? "bg-[var(--primary)] text-white shadow-xs"
+                        : "text-[var(--muted)] hover:bg-[var(--sakura-light)] hover:text-[var(--ink)]"
+                    }`}
+                  >
+                    {spd}x
+                  </button>
+                ))}
+              </div>
+            )}
 
-              <button
-                type="button"
-                onClick={reset}
-                className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--surface)] px-3.5 py-2 text-xs font-bold text-[var(--ink)] shadow-sm transition-colors hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary)]"
-              >
-                <RotateCcw className="size-3.5" />
-                <span>Reset</span>
-              </button>
-            </div>
+            <button
+              type="button"
+              onClick={handleUndo}
+              disabled={isDemoActive || completedStrokes.length === 0}
+              className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--surface)] px-3.5 py-2 text-xs font-bold text-[var(--ink)] shadow-sm transition-colors hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer"
+            >
+              <Undo2 className="size-3.5" />
+              <span>Undo</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={handleReset}
+              className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--surface)] px-3.5 py-2 text-xs font-bold text-[var(--ink)] shadow-sm transition-colors hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary)] cursor-pointer"
+            >
+              <RotateCcw className="size-3.5" />
+              <span>Reset</span>
+            </button>
           </div>
         </div>
-      )}
+      </div>
     </section>
   );
 }
-

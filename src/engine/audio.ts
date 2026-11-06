@@ -1,4 +1,4 @@
-import { kanaCharacters, type KanaCharacter } from "@/data/kana";
+import { kanaCharacters } from "@/data/kana";
 
 export interface KanaAudioPayload {
   slug: string;
@@ -282,6 +282,18 @@ export interface SentenceAudioPayload {
   rate: number;
 }
 
+export type PlaybackSpeed = 0.75 | 1 | 1.25;
+
+export interface StoryAudioSegment {
+  index: number;
+  paragraphIndex: number;
+  sentenceIndex: number;
+  id: string;
+  rawJa: string;
+  ttsText: string;
+  src: string;
+}
+
 /**
  * Cleans Japanese sentences by stripping ruby annotations (<rt>, <rp>, <ruby>),
  * bracketed furigana (e.g. 漢字[かんじ] -> 漢字), markdown formatting (**bold**),
@@ -290,7 +302,7 @@ export interface SentenceAudioPayload {
 export function cleanSentenceForAudio(sentenceJa: string): string {
   if (!sentenceJa) return "";
 
-  let cleaned = sentenceJa
+  const cleaned = sentenceJa
     // Remove ruby pronunciation text first so only base characters remain
     .replace(/<rt[\s\S]*?<\/rt>/gi, "")
     .replace(/<rp[\s\S]*?<\/rp>/gi, "")
@@ -324,4 +336,42 @@ export function resolveSentenceAudio(
   };
 }
 
+function splitJapaneseSentences(text: string): string[] {
+  return (text.match(/[^。！？]+[。！？]?/g) ?? [])
+    .map((sentence) => sentence.trim())
+    .filter(Boolean);
+}
 
+export function buildStoryAudioQueue(story: {
+  slug: string;
+  paragraphs: Array<{
+    sentences?: Array<{ ja: string }>;
+    ja?: string;
+  }>;
+}): StoryAudioSegment[] {
+  const queue: StoryAudioSegment[] = [];
+
+  story.paragraphs.forEach((paragraph, paragraphIndex) => {
+    const sentences = paragraph.sentences?.length
+      ? paragraph.sentences.map((sentence) => sentence.ja)
+      : splitJapaneseSentences(paragraph.ja ?? "");
+
+    sentences.forEach((rawJa, sentenceIndex) => {
+      const { ttsText } = resolveSentenceAudio(rawJa);
+      if (!ttsText) return;
+
+      const index = queue.length;
+      queue.push({
+        index,
+        paragraphIndex,
+        sentenceIndex,
+        id: `${story.slug}:${paragraphIndex}:${sentenceIndex}`,
+        rawJa,
+        ttsText,
+        src: `/audio/stories/${encodeURIComponent(story.slug)}/${index}.mp3`,
+      });
+    });
+  });
+
+  return queue;
+}

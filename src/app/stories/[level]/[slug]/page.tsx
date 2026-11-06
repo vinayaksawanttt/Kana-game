@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import {
@@ -14,8 +14,13 @@ import {
   Columns3,
   HelpCircle,
   Pause,
+  Play,
+  Repeat,
   RotateCcw,
+  SkipBack,
+  SkipForward,
   Sparkles,
+  Square,
   Trophy,
   Volume2,
   X,
@@ -28,9 +33,12 @@ import {
   getCompletedStoryIds,
   getStoryBySlug,
   lookupWordMetadata,
+  tokenizeJapaneseParagraph,
   type StorySentence,
   type StoryToken,
 } from "@/data/stories";
+import { buildStoryAudioQueue, type PlaybackSpeed } from "@/engine/audio";
+import { useStoryNarrator } from "@/hooks/useStoryNarrator";
 import { StoryCover } from "@/components/story-cover";
 import { addVocabularyToSrs } from "@/lib/srs/service";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
@@ -70,15 +78,20 @@ function StoryReadingRoomContent() {
     () => getStoryBySlug(levelParam, slugParam),
     [levelParam, slugParam]
   );
+  const audioQueue = useMemo(
+    () => buildStoryAudioQueue(story ?? { slug: slugParam, paragraphs: [] }),
+    [story, slugParam]
+  );
+  const narrator = useStoryNarrator(audioQueue);
+  const sentenceElements = useRef(new Map<number, HTMLSpanElement>());
 
   const [writingMode, setWritingMode] = useState<"horizontal" | "vertical">("horizontal");
   const [showFurigana, setShowFurigana] = useState(true);
   const [showEnglish, setShowEnglish] = useState(true);
-  const [isSpeaking, setIsSpeaking] = useState(false);
-  const [ isPaused, setIsPaused] = useState(false);
 
   const [selectedToken, setSelectedToken] = useState<SelectedTokenInfo | null>(null);
   const [activeSentence, setActiveSentence] = useState<StorySentence | null>(null);
+  const [selectedSentenceIndex, setSelectedSentenceIndex] = useState<number | null>(null);
   const [savedWords, setSavedWords] = useState<Set<string>>(new Set());
   const [savingSrs, setSavingSrs] = useState(false);
 
@@ -93,12 +106,14 @@ function StoryReadingRoomContent() {
   }, [story]);
 
   useEffect(() => {
-    return () => {
-      if (typeof window !== "undefined" && "speechSynthesis" in window) {
-        window.speechSynthesis.cancel();
-      }
-    };
-  }, []);
+    if (narrator.activeSegmentIndex === null) return;
+    const activeElement = sentenceElements.current.get(narrator.activeSegmentIndex);
+    if (!activeElement) return;
+    const bounds = activeElement.getBoundingClientRect();
+    if (bounds.top < 0 || bounds.bottom > window.innerHeight) {
+      activeElement.scrollIntoView?.({ behavior: "smooth", block: "center" });
+    }
+  }, [narrator.activeSegmentIndex]);
 
   if (!story) {
     return (
@@ -174,59 +189,6 @@ function StoryReadingRoomContent() {
     }
   }
 
-  function handleToggleSpeech() {
-    if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
-    const synth = window.speechSynthesis;
-
-    if (isSpeaking && !isPaused) {
-      synth.pause();
-      setIsPaused(true);
-      return;
-    }
-
-    if (isSpeaking && isPaused) {
-      synth.resume();
-      setIsPaused(false);
-      return;
-    }
-
-    synth.cancel();
-    const fullText = [
-      story?.title ?? "",
-      ...(story?.paragraphs.map((p) => p.ja) ?? []),
-    ].join("。");
-
-    const utterance = new SpeechSynthesisUtterance(fullText);
-    utterance.lang = "ja-JP";
-    utterance.rate = 0.92;
-
-    const voices = synth.getVoices?.() ?? [];
-    const jaVoice = voices.find((v) => v.lang?.toLowerCase().startsWith("ja"));
-    if (jaVoice) {
-      utterance.voice = jaVoice;
-    }
-
-    utterance.onend = () => {
-      setIsSpeaking(false);
-      setIsPaused(false);
-    };
-    utterance.onerror = () => {
-      setIsSpeaking(false);
-      setIsPaused(false);
-    };
-
-    setIsSpeaking(true);
-    setIsPaused(false);
-    synth.speak(utterance);
-  }
-
-  function handleStopSpeech() {
-    if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
-    window.speechSynthesis.cancel();
-    setIsSpeaking(false);
-    setIsPaused(false);
-  }
-
   function handleAnswerQuiz(questionIndex: number, optionIndex: number) {
     if (quizAnswers[questionIndex] !== undefined) return;
     const next = { ...quizAnswers, [questionIndex]: optionIndex };
@@ -286,39 +248,6 @@ function StoryReadingRoomContent() {
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
-            {/* Web Speech Audio Sync */}
-            <button
-              type="button"
-              onClick={handleToggleSpeech}
-              aria-label={isSpeaking && !isPaused ? "Pause audio" : "Listen to story"}
-              className={`inline-flex h-10 items-center gap-1.5 rounded-full border px-3.5 text-xs font-semibold transition ${
-                isSpeaking
-                  ? "border-[var(--primary)] bg-[var(--primary)] text-[var(--primary-ink)]"
-                  : "border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--primary)]"
-              }`}
-            >
-              {isSpeaking && !isPaused ? (
-                <>
-                  <Pause className="size-3.5" />
-                  <span>Pause</span>
-                </>
-              ) : (
-                <>
-                  <Volume2 className="size-3.5 text-[var(--primary)]" />
-                  <span>{isPaused ? "Resume" : "Listen"}</span>
-                </>
-              )}
-            </button>
-            {isSpeaking && (
-              <button
-                type="button"
-                onClick={handleStopSpeech}
-                className="inline-flex h-10 items-center rounded-full border border-[var(--line)] bg-[var(--surface)] px-3 text-xs font-medium text-[var(--muted)] hover:text-[var(--ink)]"
-              >
-                Stop
-              </button>
-            )}
-
             {/* Furigana toggle */}
             <button
               type="button"
@@ -362,6 +291,103 @@ function StoryReadingRoomContent() {
 
             <ThemeToggle />
           </div>
+        </div>
+        <div className="mx-auto w-full max-w-6xl px-4 pb-3 sm:px-6">
+          <section
+            aria-label="Passage audio player"
+            className="rounded-2xl border border-[var(--line)] bg-[var(--surface)]/95 p-3.5 shadow-sm backdrop-blur-md"
+          >
+            <div className="flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-between">
+              <div className="flex flex-wrap items-center gap-1.5">
+                <button
+                  type="button"
+                  onClick={narrator.togglePlayPause}
+                  disabled={audioQueue.length === 0}
+                  aria-label={narrator.isPlaying ? "Pause passage" : "Play passage"}
+                  className="inline-flex min-h-10 items-center gap-2 rounded-xl bg-[var(--primary)] px-4 text-sm font-bold text-white transition hover:bg-[var(--primary-hover)] disabled:opacity-45"
+                >
+                  {narrator.isPlaying ? <Pause className="size-4" /> : <Play className="size-4" />}
+                  {narrator.isPlaying ? "Pause" : "Read Aloud"}
+                </button>
+                <button
+                  type="button"
+                  onClick={narrator.prevSegment}
+                  disabled={audioQueue.length === 0}
+                  aria-label="Previous sentence"
+                  className="grid size-10 place-items-center rounded-xl border border-[var(--line)] text-[var(--ink)] transition hover:border-[var(--primary)] hover:text-[var(--primary)] disabled:opacity-45"
+                >
+                  <SkipBack className="size-4" />
+                </button>
+                <button
+                  type="button"
+                  onClick={narrator.nextSegment}
+                  disabled={audioQueue.length === 0}
+                  aria-label="Next sentence"
+                  className="grid size-10 place-items-center rounded-xl border border-[var(--line)] text-[var(--ink)] transition hover:border-[var(--primary)] hover:text-[var(--primary)] disabled:opacity-45"
+                >
+                  <SkipForward className="size-4" />
+                </button>
+                {(narrator.isPlaying || narrator.activeSegmentIndex !== null) && (
+                  <button
+                    type="button"
+                    onClick={narrator.stop}
+                    aria-label="Stop passage"
+                    className="grid size-10 place-items-center rounded-xl border border-[var(--line)] text-[var(--muted)] transition hover:border-[var(--primary)] hover:text-[var(--primary)]"
+                  >
+                    <Square className="size-3.5" />
+                  </button>
+                )}
+              </div>
+
+              <p className="min-w-0 flex-1 text-xs font-semibold text-[var(--muted)] xl:px-4">
+                {narrator.activeSegmentIndex !== null
+                  ? `${narrator.isPlaying ? "Speaking" : "Paused at"} Sentence ${narrator.activeSegmentIndex + 1} / ${audioQueue.length}`
+                  : `Ready to narrate · ${audioQueue.length} sentences`}
+              </p>
+
+              <div className="flex flex-wrap items-center gap-2">
+                <div
+                  role="group"
+                  aria-label="Playback speed"
+                  className="inline-flex rounded-xl border border-[var(--line)] bg-[var(--bg)] p-1"
+                >
+                  {([
+                    [0.75, "0.75x", "Slow"],
+                    [1, "1.0x", "Normal"],
+                    [1.25, "1.25x", "Fast"],
+                  ] as Array<[PlaybackSpeed, string, string]>).map(([speed, label, title]) => (
+                    <button
+                      key={speed}
+                      type="button"
+                      aria-pressed={narrator.speed === speed}
+                      aria-label={`${label} ${title} playback`}
+                      onClick={() => narrator.setSpeed(speed)}
+                      className={`min-h-8 rounded-lg px-2.5 text-xs font-bold transition-colors ${
+                        narrator.speed === speed
+                          ? "bg-[var(--primary)] text-white"
+                          : "text-[var(--muted)] hover:text-[var(--ink)]"
+                      }`}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
+                <button
+                  type="button"
+                  aria-pressed={narrator.loopCurrentSentence}
+                  onClick={narrator.toggleLoop}
+                  className={`inline-flex min-h-10 items-center gap-1.5 rounded-xl border px-3 text-xs font-bold transition-colors ${
+                    narrator.loopCurrentSentence
+                      ? "border-[var(--primary)] bg-[var(--sakura-light)] text-[var(--primary)]"
+                      : "border-[var(--line)] text-[var(--muted)] hover:text-[var(--ink)]"
+                  }`}
+                >
+                  <Repeat className="size-3.5" />
+                  Shadow Loop
+                </button>
+              </div>
+            </div>
+          </section>
         </div>
       </header>
 
@@ -444,7 +470,9 @@ function StoryReadingRoomContent() {
             }`}
           >
             {story.paragraphs.map((paragraph, pIdx) => {
-              const tokens = paragraph.tokens ?? [{ surface: paragraph.ja }];
+              const paragraphSegments = audioQueue.filter(
+                (segment) => segment.paragraphIndex === pIdx
+              );
               return (
                 <div
                   key={pIdx}
@@ -458,38 +486,60 @@ function StoryReadingRoomContent() {
                     lang="ja"
                     className="font-japanese text-xl tracking-wide text-[var(--ink)] select-text md:text-2xl"
                   >
-                    {tokens.map((token, tIdx) => {
-                      const clickable = !isPunctuationOnly(token.surface);
-                      const isSelected = selectedToken?.surface === token.surface;
-                      const content =
-                        showFurigana && token.reading ? (
-                          <ruby className="ruby-token">
-                            {token.surface}
-                            <rt className="text-[0.55em] font-normal tracking-normal text-[var(--muted)]">
-                              {token.reading}
-                            </rt>
-                          </ruby>
-                        ) : (
-                          token.surface
-                        );
-
-                      if (!clickable) {
-                        return <span key={tIdx}>{content}</span>;
-                      }
+                    {paragraphSegments.map((segment) => {
+                      const sentence = paragraph.sentences?.[segment.sentenceIndex];
+                      const sentenceTokens =
+                        sentence?.tokens ?? tokenizeJapaneseParagraph(segment.rawJa);
+                      const isSpeaking = narrator.activeSegmentIndex === segment.index;
 
                       return (
-                        <button
-                          key={tIdx}
-                          type="button"
-                          onClick={() => handleSelectToken(token)}
-                          className={`inline rounded px-0.5 text-left font-inherit transition ${
-                            isSelected
-                              ? "bg-[var(--primary)]/20 text-[var(--primary)] underline decoration-[var(--primary)] decoration-2 underline-offset-4"
-                              : "hover:bg-[var(--paper-tint)] hover:text-[var(--primary)]"
+                        <span
+                          key={segment.id}
+                          ref={(element) => {
+                            if (element) sentenceElements.current.set(segment.index, element);
+                            else sentenceElements.current.delete(segment.index);
+                          }}
+                          className={`rounded px-1 transition-all duration-200 ${
+                            isSpeaking
+                              ? "bg-[var(--sakura-light)] text-[var(--ink)] ring-2 ring-[var(--primary)]/30"
+                              : ""
                           }`}
                         >
-                          {content}
-                        </button>
+                          {sentenceTokens.map((token, tIdx) => {
+                            const clickable = !isPunctuationOnly(token.surface);
+                            const isSelected = selectedToken?.surface === token.surface;
+                            const content =
+                              showFurigana && token.reading ? (
+                                <ruby className="ruby-token">
+                                  {token.surface}
+                                  <rt className="text-[0.55em] font-normal tracking-normal text-[var(--muted)]">
+                                    {token.reading}
+                                  </rt>
+                                </ruby>
+                              ) : (
+                                token.surface
+                              );
+
+                            if (!clickable) {
+                              return <span key={`${segment.id}-${tIdx}`}>{content}</span>;
+                            }
+
+                            return (
+                              <button
+                                key={`${segment.id}-${tIdx}`}
+                                type="button"
+                                onClick={() => handleSelectToken(token)}
+                                className={`inline rounded px-0.5 text-left font-inherit transition ${
+                                  isSelected
+                                    ? "bg-[var(--primary)]/20 text-[var(--primary)] underline decoration-[var(--primary)] decoration-2 underline-offset-4"
+                                    : "hover:bg-[var(--paper-tint)] hover:text-[var(--primary)]"
+                                }`}
+                              >
+                                {content}
+                              </button>
+                            );
+                          })}
+                        </span>
                       );
                     })}
                   </p>
@@ -507,25 +557,47 @@ function StoryReadingRoomContent() {
                         Sentences:
                       </span>
                       {paragraph.sentences.map((sent, sIdx) => {
-                        const isSentActive = activeSentence?.ja === sent.ja;
+                        const segment = paragraphSegments.find(
+                          (item) => item.sentenceIndex === sIdx
+                        );
+                        const isSentActive =
+                          segment !== undefined &&
+                          (narrator.activeSegmentIndex === segment.index ||
+                            selectedSentenceIndex === segment.index);
                         return (
-                          <button
-                            key={sIdx}
-                            type="button"
-                            onClick={() => {
-                              setActiveSentence(isSentActive ? null : sent);
-                            }}
-                            className={`group inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs transition ${
-                              isSentActive
-                                ? "border-[var(--primary)] bg-[var(--primary)] text-white shadow-sm"
-                                : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)] hover:border-[var(--primary)]/60 hover:text-[var(--ink)]"
-                            }`}
-                          >
-                            <span className="font-japanese font-semibold text-[11px]">文 {sIdx + 1}</span>
-                            <span className="max-w-[160px] truncate text-[11px] opacity-90 sm:max-w-[240px]">
-                              {sent.naturalEn}
-                            </span>
-                          </button>
+                          <div key={sIdx} className="inline-flex items-center gap-1">
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setActiveSentence(isSentActive ? null : sent);
+                                setSelectedSentenceIndex(isSentActive ? null : segment?.index ?? null);
+                              }}
+                              className={`group inline-flex min-h-8 items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs transition ${
+                                isSentActive
+                                  ? "border-[var(--primary)] bg-[var(--primary)] text-white shadow-sm"
+                                  : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)] hover:border-[var(--primary)]/60 hover:text-[var(--ink)]"
+                              }`}
+                            >
+                              <span className="font-japanese font-semibold text-[11px]">文 {sIdx + 1}</span>
+                              <span className="max-w-[160px] truncate text-[11px] opacity-90 sm:max-w-[240px]">
+                                {sent.naturalEn}
+                              </span>
+                            </button>
+                            {segment && (
+                              <button
+                                type="button"
+                                aria-label={`Listen to story sentence ${(segment?.index ?? 0) + 1}`}
+                                onClick={() => {
+                                  setActiveSentence(sent);
+                                  setSelectedSentenceIndex(segment.index);
+                                  narrator.playSegment(segment.index);
+                                }}
+                                className="grid size-8 shrink-0 place-items-center rounded-full border border-[var(--line)] bg-[var(--surface)] text-[var(--primary)] transition hover:border-[var(--primary)] hover:bg-[var(--sakura-light)]"
+                              >
+                                <Volume2 className="size-3.5" />
+                              </button>
+                            )}
+                          </div>
                         );
                       })}
                     </div>
@@ -540,13 +612,29 @@ function StoryReadingRoomContent() {
                           <p lang="ja" className="font-japanese text-sm font-semibold text-[var(--ink)]">
                             {activeSentence.ja}
                           </p>
-                          <button
-                            type="button"
-                            onClick={() => setActiveSentence(null)}
-                            className="rounded-full p-0.5 text-[var(--muted)] hover:text-[var(--ink)]"
-                          >
-                            <X className="size-3.5" />
-                          </button>
+                          <div className="flex shrink-0 items-center gap-1">
+                            {selectedSentenceIndex !== null && (
+                              <button
+                                type="button"
+                                aria-label="Listen to sentence breakdown"
+                                onClick={() => narrator.playSegment(selectedSentenceIndex)}
+                                className="grid size-8 place-items-center rounded-full border border-[var(--line)] text-[var(--primary)] hover:bg-[var(--sakura-light)]"
+                              >
+                                <Volume2 className="size-3.5" />
+                              </button>
+                            )}
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setActiveSentence(null);
+                                setSelectedSentenceIndex(null);
+                              }}
+                              aria-label="Close inline sentence breakdown"
+                              className="rounded-full p-1 text-[var(--muted)] hover:text-[var(--ink)]"
+                            >
+                              <X className="size-3.5" />
+                            </button>
+                          </div>
                         </div>
                         <div className="mt-2.5 space-y-2 text-xs">
                           <div>
@@ -680,14 +768,29 @@ function StoryReadingRoomContent() {
                       {activeSentence.ja}
                     </p>
                   </div>
-                  <button
-                    type="button"
-                    aria-label="Close sentence breakdown"
-                    onClick={() => setActiveSentence(null)}
-                    className="rounded-full p-1 text-[var(--muted)] hover:bg-[var(--paper-tint)] hover:text-[var(--ink)]"
-                  >
-                    <X className="size-4" />
-                  </button>
+                  <div className="flex shrink-0 items-center gap-1">
+                    {selectedSentenceIndex !== null && (
+                      <button
+                        type="button"
+                        aria-label="Listen to sentence"
+                        onClick={() => narrator.playSegment(selectedSentenceIndex)}
+                        className="grid size-9 place-items-center rounded-full border border-[var(--line)] text-[var(--primary)] hover:bg-[var(--sakura-light)]"
+                      >
+                        <Volume2 className="size-4" />
+                      </button>
+                    )}
+                    <button
+                      type="button"
+                      aria-label="Close sentence breakdown"
+                      onClick={() => {
+                        setActiveSentence(null);
+                        setSelectedSentenceIndex(null);
+                      }}
+                      className="rounded-full p-1 text-[var(--muted)] hover:bg-[var(--paper-tint)] hover:text-[var(--ink)]"
+                    >
+                      <X className="size-4" />
+                    </button>
+                  </div>
                 </div>
 
                 <div className="mt-4 space-y-3 border-t border-[var(--line)] pt-4">

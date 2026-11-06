@@ -218,6 +218,12 @@ interface RawStoryJson {
     ja: string;
     en: string;
     tokens?: StoryToken[];
+    sentences?: Array<{
+      ja: string;
+      literalEn?: string;
+      naturalEn?: string;
+      tokens?: StoryToken[];
+    }>;
   }>;
   quiz: StoryQuiz[];
 }
@@ -295,6 +301,22 @@ function buildAllStories(): StoryRecord[] {
         ja: cleanJa,
         en: cleanEn,
         tokens: p.tokens && p.tokens.length > 0 ? p.tokens : tokenizeJapaneseParagraph(cleanJa),
+        ...(p.sentences?.length
+          ? {
+              sentences: p.sentences.map((sentence) => {
+                const sentenceJa = stripCitations(sentence.ja);
+                return {
+                  ja: sentenceJa,
+                  literalEn: stripCitations(sentence.literalEn ?? ""),
+                  naturalEn: stripCitations(sentence.naturalEn ?? ""),
+                  tokens:
+                    sentence.tokens && sentence.tokens.length > 0
+                      ? sentence.tokens
+                      : tokenizeJapaneseParagraph(sentenceJa),
+                };
+              }),
+            }
+          : {}),
       };
     });
 
@@ -365,4 +387,3 @@ export function getCompletedStoryIds(): Set<string> {
   }
   return new Set();
 }
-

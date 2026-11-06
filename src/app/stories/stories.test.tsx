@@ -64,6 +64,12 @@ describe("Stories Library Hub & Interactive Reading Room", () => {
   it("renders ruby furigana, toggles vertical writing mode, saves tapped word to FSRS, and completes quiz", async () => {
     const { container } = render(<StoryReadingRoomPage />);
 
+    expect(screen.getByRole("region", { name: "Passage audio player" })).toBeTruthy();
+    expect(screen.getByRole("button", { name: "Play passage" })).toBeTruthy();
+    expect(screen.getByRole("button", { name: "Listen to story sentence 1" })).toBeTruthy();
+    expect(screen.getByRole("button", { name: "0.75x Slow playback" })).toBeTruthy();
+    expect(screen.getByRole("button", { name: "Shadow Loop" })).toBeTruthy();
+
     const levelBadges = screen
       .getAllByText("N5")
       .filter((element) => element.classList.contains("bg-[var(--primary)]"));

@@ -12,6 +12,7 @@ import {
   resolveVocabAudio,
   resolveSentenceAudio,
   cleanSentenceForAudio,
+  buildStoryAudioQueue,
 } from "../audio";
 
 describe("audio engine", () => {
@@ -303,5 +304,58 @@ describe("audio engine", () => {
       expect(resolved.rate).toBe(0.95);
     });
   });
-});
 
+  describe("buildStoryAudioQueue", () => {
+    it("flattens story sentences with exact coordinates and furigana-free TTS text", () => {
+      const queue = buildStoryAudioQueue({
+        slug: "test story",
+        paragraphs: [
+          {
+            sentences: [
+              { ja: "<ruby>学校<rt>がっこう</rt></ruby>へ行く。" },
+              { ja: "友達[ともだち]と会う。" },
+            ],
+          },
+          { ja: "本を読む。家へ帰る！" },
+        ],
+      });
+
+      expect(queue).toEqual([
+        {
+          index: 0,
+          paragraphIndex: 0,
+          sentenceIndex: 0,
+          id: "test story:0:0",
+          rawJa: "<ruby>学校<rt>がっこう</rt></ruby>へ行く。",
+          ttsText: "学校へ行く。",
+          src: "/audio/stories/test%20story/0.mp3",
+        },
+        {
+          index: 1,
+          paragraphIndex: 0,
+          sentenceIndex: 1,
+          id: "test story:0:1",
+          rawJa: "友達[ともだち]と会う。",
+          ttsText: "友達と会う。",
+          src: "/audio/stories/test%20story/1.mp3",
+        },
+        expect.objectContaining({
+          index: 2,
+          paragraphIndex: 1,
+          sentenceIndex: 0,
+          ttsText: "本を読む。",
+        }),
+        expect.objectContaining({
+          index: 3,
+          paragraphIndex: 1,
+          sentenceIndex: 1,
+          ttsText: "家へ帰る！",
+        }),
+      ]);
+    });
+
+    it("returns no segments for empty paragraphs", () => {
+      expect(buildStoryAudioQueue({ slug: "empty", paragraphs: [{ ja: "。！？" }] })).toEqual([]);
+    });
+  });
+});

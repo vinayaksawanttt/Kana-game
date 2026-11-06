@@ -225,6 +225,7 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
   const [showRomaji, setShowRomaji] = useState(false);
   const [activeSection, setActiveSection] = useState<"basic" | "dakuten" | "yoon" | "extended">("basic");
   const [activeSequence, setActiveSequence] = useState<ActiveSequence | null>(null);
+  const [activeTileId, setActiveTileId] = useState<string | null>(null);
 
   const sequenceRef = useRef<{
     aborted: boolean;
@@ -244,10 +245,17 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
     stopAudio,
     isPlaying,
     activeKey,
+    activeChar,
     toKanaAudioKey,
     playbackSpeed = 1,
     setPlaybackSpeed,
   } = useJapaneseAudio();
+
+  useEffect(() => {
+    if (!isPlaying) {
+      setActiveTileId(null);
+    }
+  }, [isPlaying]);
 
   const characterMap = useMemo(() => {
     const map = new Map<string, KanaCharacter>();
@@ -355,6 +363,7 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
       r();
     }
     stopAudio?.();
+    setActiveTileId(null);
     setActiveSequence(null);
   }, [stopAudio]);
 
@@ -396,6 +405,7 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
         sequenceRef.current.delayPromiseResolve = null;
       }
       stopAudio?.();
+      setActiveTileId(null);
 
       const controller = {
         aborted: false,
@@ -474,6 +484,7 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
       if (activeSequence) {
         stopSequence();
       }
+      setActiveTileId(character.id);
       playKana(character.char, character.romaji[0]);
     },
     [activeSequence, stopSequence, playKana]
@@ -572,13 +583,13 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
               <span>Romaji</span>
               <span
                 aria-hidden="true"
-                className={`relative inline-block h-5 w-9 rounded-full transition-colors ${
+                className={`relative inline-flex h-5 w-9 shrink-0 items-center rounded-full p-0.5 transition-colors duration-200 ease-in-out ${
                   showRomaji ? "bg-[var(--primary)]" : "bg-[var(--line)]"
                 }`}
               >
                 <span
-                  className={`absolute top-0.5 size-4 rounded-full bg-white shadow-sm transition-transform duration-200 ${
-                    showRomaji ? "translate-x-4" : "translate-x-0.5"
+                  className={`pointer-events-none inline-block size-4 transform rounded-full bg-white shadow-sm transition-transform duration-200 ease-in-out ${
+                    showRomaji ? "translate-x-4" : "translate-x-0"
                   }`}
                 />
               </span>
@@ -859,8 +870,13 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
                         activeSequence !== null &&
                         activeSequence.characters[activeSequence.currentIndex]?.id === slot.character.id;
                       const isSingleAudioPlaying =
+                        activeSequence === null &&
                         isPlaying &&
-                        activeKey === toKanaAudioKey(slot.character.char, slot.character.romaji[0]);
+                        (activeTileId
+                          ? activeTileId === slot.character.id
+                          : activeChar
+                          ? slot.character.char === activeChar
+                          : activeKey === toKanaAudioKey(slot.character.char, slot.character.romaji[0]));
                       const isActive = isSequenceCurrent || isSingleAudioPlaying;
                       const isPaused = isSequenceCurrent && activeSequence.status === "paused";
 
@@ -1054,8 +1070,13 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
                         activeSequence !== null &&
                         activeSequence.characters[activeSequence.currentIndex]?.id === slot.character.id;
                       const isSingleAudioPlaying =
+                        activeSequence === null &&
                         isPlaying &&
-                        activeKey === toKanaAudioKey(slot.character.char, slot.character.romaji[0]);
+                        (activeTileId
+                          ? activeTileId === slot.character.id
+                          : activeChar
+                          ? slot.character.char === activeChar
+                          : activeKey === toKanaAudioKey(slot.character.char, slot.character.romaji[0]));
                       const isActive = isSequenceCurrent || isSingleAudioPlaying;
                       const isPaused = isSequenceCurrent && activeSequence.status === "paused";
 
@@ -1244,8 +1265,13 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
                         activeSequence !== null &&
                         activeSequence.characters[activeSequence.currentIndex]?.id === character.id;
                       const isSingleAudioPlaying =
+                        activeSequence === null &&
                         isPlaying &&
-                        activeKey === toKanaAudioKey(character.char, character.romaji[0]);
+                        (activeTileId
+                          ? activeTileId === character.id
+                          : activeChar
+                          ? character.char === activeChar
+                          : activeKey === toKanaAudioKey(character.char, character.romaji[0]));
                       const isActive = isSequenceCurrent || isSingleAudioPlaying;
                       const isPaused = isSequenceCurrent && activeSequence.status === "paused";
 
@@ -1308,8 +1334,13 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
                   <div className="flex flex-wrap gap-2 sm:gap-2.5">
                     {group.characters.map((character) => {
                       const active =
+                        activeSequence === null &&
                         isPlaying &&
-                        activeKey === toKanaAudioKey(character.char, character.romaji[0]);
+                        (activeTileId
+                          ? activeTileId === character.id
+                          : activeChar
+                          ? character.char === activeChar
+                          : activeKey === toKanaAudioKey(character.char, character.romaji[0]));
                       return (
                         <div key={character.id} className="w-[calc(20%-8px)] min-w-[54px] flex-1">
                           <KanaTile

@@ -9,6 +9,7 @@ import { grammarLevels, isGrammarLevel, type GrammarCatalogEntry, type GrammarPo
 import { getGrammarCatalogByLevel, getGrammarDoc } from "@/lib/content/grammar";
 import { addGrammarToSrs, getAllSrsItems } from "@/lib/srs/service";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
+import { AudioButton } from "@/components/ui/AudioButton";
 
 export default function GrammarDetailPage() {
   return (
@@ -211,11 +212,18 @@ function GrammarDetailContent() {
             <ol className="divide-y divide-[var(--line)]">
               {point.examples.map((example, index) => (
                 <li key={`${example.jp}-${index}`} className="py-5">
-                  <p lang="ja" className="font-japanese text-xl leading-relaxed text-[var(--ink)]">
-                    {example.furigana ? (
-                      <ruby>{example.ja}<rt className="text-xs text-[var(--muted)]">{example.furigana}</rt></ruby>
-                    ) : example.ja}
-                  </p>
+                  <div className="flex items-start gap-2">
+                    <p lang="ja" className="font-japanese min-w-0 flex-1 text-xl leading-relaxed text-[var(--ink)]">
+                      {example.furigana ? (
+                        <ruby>{example.ja}<rt className="text-xs text-[var(--muted)]">{example.furigana}</rt></ruby>
+                      ) : example.ja}
+                    </p>
+                    <AudioButton
+                      text={example.ja}
+                      size="md"
+                      label={`Listen to example ${index + 1}`}
+                    />
+                  </div>
                   <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">{example.en}</p>
                   {example.romaji && (
                     <p className="mt-1 text-xs text-[var(--muted)]/80">{example.romaji}</p>

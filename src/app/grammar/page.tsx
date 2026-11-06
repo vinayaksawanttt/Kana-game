@@ -7,6 +7,7 @@ import { GameLayout } from "@/lib/game-core/layout";
 import { grammarLevels, type GrammarCatalogEntry, type GrammarLevel } from "@/data/grammar";
 import { getGrammarCatalogByLevel } from "@/lib/content/grammar";
 import { addGrammarToSrs, getAllSrsItems } from "@/lib/srs/service";
+import { AudioButton } from "@/components/ui/AudioButton";
 
 const levelTabs: Array<{ key: "All" | GrammarLevel; label: string }> = [
   { key: "All", label: "All levels" },
@@ -275,20 +276,27 @@ export default function GrammarLibraryPage() {
                                       <p className="hidden min-w-0 text-sm leading-snug text-[var(--muted)] md:block">
                                         {point.meaning}
                                       </p>
-                                      <button
-                                        type="button"
-                                        disabled={learned || saving}
-                                        onClick={() => void handleSaveToSrs(point)}
-                                        aria-label={learned ? "Added to review" : "Add to review"}
-                                        title={learned ? "Added to review" : "Add to review"}
-                                        className={`grid size-9 shrink-0 place-items-center rounded-full border transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--primary)] ${
-                                          learned
-                                            ? "border-[var(--correct)]/40 bg-[var(--correct)]/10 text-[var(--correct)]"
-                                            : "border-[var(--line)] text-[var(--primary)] hover:bg-[var(--paper-tint)]"
-                                        }`}
-                                      >
-                                        {learned ? <Check className="size-4" /> : <BookmarkPlus className="size-4" />}
-                                      </button>
+                                      <div className="flex shrink-0 items-center gap-1 md:col-start-3">
+                                        <AudioButton
+                                          text={point.pattern}
+                                          size="md"
+                                          label={`Listen to ${point.pattern}`}
+                                        />
+                                        <button
+                                          type="button"
+                                          disabled={learned || saving}
+                                          onClick={() => void handleSaveToSrs(point)}
+                                          aria-label={learned ? "Added to review" : "Add to review"}
+                                          title={learned ? "Added to review" : "Add to review"}
+                                          className={`grid size-9 shrink-0 place-items-center rounded-full border transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--primary)] ${
+                                            learned
+                                              ? "border-[var(--correct)]/40 bg-[var(--correct)]/10 text-[var(--correct)]"
+                                              : "border-[var(--line)] text-[var(--primary)] hover:bg-[var(--paper-tint)]"
+                                          }`}
+                                        >
+                                          {learned ? <Check className="size-4" /> : <BookmarkPlus className="size-4" />}
+                                        </button>
+                                      </div>
                                     </li>
                                   );
                                 })}

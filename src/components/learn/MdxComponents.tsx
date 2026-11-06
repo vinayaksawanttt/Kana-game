@@ -1,4 +1,4 @@
-import type { ComponentPropsWithoutRef, ReactNode } from "react";
+import { isValidElement, type ComponentPropsWithoutRef, type ReactNode } from "react";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import { AudioButton } from "@/components/ui/AudioButton";
@@ -8,9 +8,40 @@ function nodeText(node: ReactNode): string {
   if (typeof node === "string" || typeof node === "number") return String(node);
   if (Array.isArray(node)) return node.map(nodeText).join("");
   if (node && typeof node === "object" && "props" in node) {
-    return nodeText((node.props as { children?: ReactNode }).children);
+    const props = node.props as { children?: ReactNode; ja?: string };
+    return props.ja ?? nodeText(props.children);
   }
   return "";
+}
+
+function japaneseAudioText(children: ReactNode): string {
+  const phrases = nodeText(children).match(
+    /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}ー々〆ヵヶ、。！？「」『』（）〜…]+/gu
+  ) ?? [];
+  return phrases
+    .filter((phrase) => /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]{2,}/u.test(phrase))
+    .join("。");
+}
+
+function containsComponent(node: ReactNode, component: unknown): boolean {
+  if (Array.isArray(node)) return node.some((child) => containsComponent(child, component));
+  if (!isValidElement(node)) return false;
+  if (node.type === component) return true;
+  return containsComponent((node.props as { children?: ReactNode }).children, component);
+}
+
+function JapaneseExampleAudio({ children }: { children: ReactNode }) {
+  const text = japaneseAudioText(children);
+  return text ? <AudioButton text={text} size="sm" label={`Listen to ${text}`} className="ml-1 align-middle" /> : null;
+}
+
+function AudioParagraph({ children, ...props }: ComponentPropsWithoutRef<"p">) {
+  return (
+    <p {...props} className="my-4 leading-7 text-[var(--ink)]">
+      {children}
+      <JapaneseExampleAudio>{children}</JapaneseExampleAudio>
+    </p>
+  );
 }
 
 function headingId(children: ReactNode): string {
@@ -42,16 +73,22 @@ export const mdxComponents = {
       {children}
     </h3>
   ),
-  p: (props: ComponentPropsWithoutRef<"p">) => (
-    <p {...props} className="my-4 leading-7 text-[var(--ink)]" />
-  ),
+  p: AudioParagraph,
   ul: (props: ComponentPropsWithoutRef<"ul">) => (
     <ul {...props} className="my-4 list-disc space-y-2 pl-6 leading-7 text-[var(--ink)]" />
   ),
   ol: (props: ComponentPropsWithoutRef<"ol">) => (
     <ol {...props} className="my-4 list-decimal space-y-2 pl-6 leading-7 text-[var(--ink)]" />
   ),
-  li: (props: ComponentPropsWithoutRef<"li">) => <li {...props} className="pl-1" />,
+  li: ({ children, ...props }: ComponentPropsWithoutRef<"li">) => {
+    const hasParagraphAudio = containsComponent(children, AudioParagraph);
+    return (
+      <li {...props} className="pl-1">
+        {children}
+        {!hasParagraphAudio && <JapaneseExampleAudio>{children}</JapaneseExampleAudio>}
+      </li>
+    );
+  },
   a: (props: ComponentPropsWithoutRef<"a">) => (
     <a {...props} className="font-semibold text-[var(--primary-fg)] underline underline-offset-2" />
   ),
@@ -77,8 +114,13 @@ export const mdxComponents = {
   th: (props: ComponentPropsWithoutRef<"th">) => (
     <th {...props} className="border-b border-[var(--line)] px-3 py-2.5 font-bold" />
   ),
-  td: (props: ComponentPropsWithoutRef<"td">) => (
-    <td {...props} className="border-t border-[var(--line)] px-3 py-2.5 align-top" />
+  td: ({ children, ...props }: ComponentPropsWithoutRef<"td">) => (
+    <td {...props} className="border-t border-[var(--line)] px-3 py-2.5 align-top">
+      {children}
+      {!containsComponent(children, AudioParagraph) && (
+        <JapaneseExampleAudio>{children}</JapaneseExampleAudio>
+      )}
+    </td>
   ),
   tr: (props: ComponentPropsWithoutRef<"tr">) => (
     <tr {...props} className="odd:bg-[var(--surface)] even:bg-[var(--bg)]" />

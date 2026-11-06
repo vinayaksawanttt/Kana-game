@@ -1,6 +1,6 @@
 import "fake-indexeddb/auto";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { act, cleanup, fireEvent, render, screen } from "@testing-library/react";
+import { act, cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import ShiritoriPlayPage from "./play/[sessionId]/page";
 import ShiritoriSetupPage from "./page";
 
@@ -48,20 +48,19 @@ describe("Shiritori Session Navigation & Quit Guard", () => {
     await screen.findByRole("heading", { name: "しりとり" });
 
     // Trigger browser back
-    act(() => {
-      window.dispatchEvent(new PopStateEvent("popstate"));
+    await waitFor(() => {
+      act(() => window.dispatchEvent(new PopStateEvent("popstate")));
+      expect(screen.getByRole("dialog", { name: /quit this game/i })).toBeTruthy();
     });
-
-    const dialog = await screen.findByRole("dialog", { name: /quit this game/i });
-    expect(dialog).toBeTruthy();
 
     // Clicking "Stay" closes dialog
     fireEvent.click(screen.getByRole("button", { name: "Stay" }));
     expect(screen.queryByRole("dialog")).toBeNull();
 
     // Trigger browser back again and confirm
-    act(() => {
-      window.dispatchEvent(new PopStateEvent("popstate"));
+    await waitFor(() => {
+      act(() => window.dispatchEvent(new PopStateEvent("popstate")));
+      expect(screen.getByRole("dialog", { name: /quit this game/i })).toBeTruthy();
     });
     fireEvent.click(screen.getByRole("button", { name: "Quit game" }));
 

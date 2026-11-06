@@ -50,6 +50,7 @@ describe("Grammar Reference Detail & Play UI", () => {
     expect(screen.getByRole("heading", { name: "FORMATION" })).toBeTruthy();
     expect(screen.getByRole("heading", { name: "EXAMPLE SENTENCES" })).toBeTruthy();
     expect(screen.getByRole("navigation", { name: "Nearby grammar patterns" })).toBeTruthy();
+    expect(screen.getByRole("button", { name: "Listen to example 1" })).toBeTruthy();
 
     const addBtn = screen.getByRole("button", { name: /Add to FSRS Review/i });
     fireEvent.click(addBtn);
@@ -75,6 +76,7 @@ describe("Grammar Reference Detail & Play UI", () => {
 
     expect(await screen.findByText("Unit 01")).toBeTruthy();
     expect(await screen.findByRole("button", { name: "Added to review" })).toBeTruthy();
+    expect(await screen.findByRole("button", { name: /Listen to A が いちばん/ })).toBeTruthy();
     expect(screen.getByRole("progressbar").getAttribute("aria-valuenow")).toBe("1");
   });
 
@@ -119,11 +121,13 @@ describe("Grammar Reference Detail & Play UI", () => {
     await waitFor(() => {
       expect(screen.getByText(/✓ Correct!/i)).toBeTruthy();
     });
+    expect(screen.getByRole("button", { name: "Listen to completed sentence" })).toBeTruthy();
 
     // Open Read Guide drawer
     fireEvent.click(screen.getByRole("button", { name: /Read Guide/i }));
     await waitFor(() => {
       expect(screen.getByRole("dialog", { name: /Grammar Guide/i })).toBeTruthy();
     });
+    expect((await screen.findAllByRole("button", { name: /Listen to/ })).length).toBeGreaterThan(0);
   });
 });

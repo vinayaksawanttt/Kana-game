@@ -10,21 +10,35 @@ const mockStopAudio = vi.fn();
 const mockSetPlaybackSpeed = vi.fn();
 let mockIsPlaying = false;
 let mockActiveKey: string | null = null;
+let mockActiveChar: string | null = null;
 let mockPlaybackSpeed = 1;
 
 vi.mock("@/hooks/useJapaneseAudio", () => ({
   useJapaneseAudio: () => ({
-    playKana: mockPlayKana,
+    playKana: (char: string, romaji?: string) => {
+      mockPlayKana(char, romaji);
+      mockIsPlaying = true;
+      mockActiveChar = char;
+      mockActiveKey = char === "じ" || char === "ぢ" ? "ji" : char === "ず" || char === "づ" ? "zu" : (romaji || "a");
+    },
     playKanaAsync: mockPlayKanaAsync,
     playKanaSequence: mockPlayKanaSequence,
-    stopAudio: mockStopAudio,
+    stopAudio: () => {
+      mockStopAudio();
+      mockIsPlaying = false;
+      mockActiveKey = null;
+      mockActiveChar = null;
+    },
     isPlaying: mockIsPlaying,
     activeKey: mockActiveKey,
+    activeChar: mockActiveChar,
     playbackSpeed: mockPlaybackSpeed,
     setPlaybackSpeed: mockSetPlaybackSpeed,
     toKanaAudioKey: (char: string, romaji?: string) => {
       if (char === "あ" || char === "ア") return "a";
       if (char === "か" || char === "カ") return "ka";
+      if (char === "じ" || char === "ぢ" || char === "ジ" || char === "ヂ") return "ji";
+      if (char === "ず" || char === "づ" || char === "ズ" || char === "ヅ") return "zu";
       return romaji || "a";
     },
   }),
@@ -35,6 +49,7 @@ describe("KanaRevisionSheet Component", () => {
     vi.clearAllMocks();
     mockIsPlaying = false;
     mockActiveKey = null;
+    mockActiveChar = null;
     mockPlaybackSpeed = 1;
   });
 
@@ -175,5 +190,55 @@ describe("KanaRevisionSheet Component", () => {
     await user.click(screen.getByRole("button", { name: "Stop playback" }));
     expect(screen.queryByRole("button", { name: "Pause playback" })).toBeNull();
     expect(screen.getAllByRole("button", { name: /Listen All/i })[0]).toBeTruthy();
+  });
+
+  it("does not light up homophone character tiles across Za and Da rows when tapped", async () => {
+    const user = userEvent.setup();
+    render(<KanaRevisionSheet onClose={vi.fn()} />);
+
+    const jiZaTile = screen.getByRole("button", { name: "Play pronunciation for じ" });
+    const jiDaTile = screen.getByRole("button", { name: "Play pronunciation for ぢ" });
+    const zuZaTile = screen.getByRole("button", { name: "Play pronunciation for ず" });
+    const zuDaTile = screen.getByRole("button", { name: "Play pronunciation for づ" });
+
+    // Tap じ in ZA row
+    await user.click(jiZaTile);
+    expect(jiZaTile.className).toContain("ring-[var(--primary)]");
+    expect(jiDaTile.className).not.toContain("ring-[var(--primary)]");
+
+    // Tap ぢ in DA row
+    await user.click(jiDaTile);
+    expect(jiDaTile.className).toContain("ring-[var(--primary)]");
+    expect(jiZaTile.className).not.toContain("ring-[var(--primary)]");
+
+    // Tap ず in ZA row
+    await user.click(zuZaTile);
+    expect(zuZaTile.className).toContain("ring-[var(--primary)]");
+    expect(zuDaTile.className).not.toContain("ring-[var(--primary)]");
+
+    // Tap づ in DA row
+    await user.click(zuDaTile);
+    expect(zuDaTile.className).toContain("ring-[var(--primary)]");
+    expect(zuZaTile.className).not.toContain("ring-[var(--primary)]");
+  });
+
+  it("keeps the Romaji switch slider thumb strictly within track bounds", async () => {
+    const user = userEvent.setup();
+    render(<KanaRevisionSheet onClose={vi.fn()} />);
+
+    const switchBtn = screen.getByRole("switch", { name: "Romaji" });
+    const track = switchBtn.querySelector('[aria-hidden="true"]');
+    expect(track?.className).toContain("p-0.5");
+    expect(track?.className).toContain("inline-flex");
+
+    const thumb = track?.firstElementChild;
+    // Unchecked state: translate-x-0
+    expect(thumb?.className).toContain("translate-x-0");
+    expect(thumb?.className).not.toContain("translate-x-4");
+
+    // Toggle on
+    await user.click(switchBtn);
+    expect(thumb?.className).toContain("translate-x-4");
+    expect(thumb?.className).not.toContain("translate-x-0");
   });
 });

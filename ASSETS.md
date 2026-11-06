@@ -20,6 +20,12 @@
 - © Electronic Dictionary Research and Development Group (EDRDG), CC BY-SA.
 - JLPT levels are unofficial community lists and may vary by source.
 
+## Story audio
+
+- Story sentence audio can be generated with `npm run build:audio:stories` using `ja-JP-NanamiNeural`.
+- Use `--story=<slug>` to target one story, `--limit=<count>` to generate a batch, and `--dry-run` to preview missing clips without contacting the TTS service.
+- Generated clips are stored at `public/audio/stories/<slug>/<sentence-index>.mp3`; existing clips are skipped. Missing clips use the browser's Japanese speech synthesis fallback.
+
 ## Vocabulary and kanji dataset
 
 - Vocabulary Meaning includes the level-specific JSON files from [OpenJLPT](https://github.com/evanclan/OpenJLPT), pinned to commit `0d1d3410bec90bd4098a7c72de820543cb4f707c`.

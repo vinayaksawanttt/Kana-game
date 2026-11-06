@@ -18,6 +18,8 @@ import { getGrammarDoc, type GrammarDoc } from "@/lib/content/grammar";
 import { GrammarGuideView } from "@/components/grammar-guide-view";
 import { ingestGrammarSession } from "@/lib/srs/service";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
+import { AudioButton } from "@/components/ui/AudioButton";
+import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
 
 export default function GrammarPlayPage() {
   return (
@@ -93,6 +95,8 @@ function GrammarGame({
   // Scramble state: array of pool indices currently placed in the dropzone
   const [selectedPoolIndices, setSelectedPoolIndices] = useState<number[]>([]);
   const [showLiteralHint, setShowLiteralHint] = useState(false);
+  const [autoPlayExamples, setAutoPlayExamples] = useState(false);
+  const { playSentence } = useJapaneseAudio();
 
   // Guide drawer state
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -121,6 +125,19 @@ function GrammarGame({
       nextButtonRef.current?.focus();
     }
   }, [answered]);
+
+  useEffect(() => {
+    try {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setAutoPlayExamples(localStorage.getItem("grammar-autoplay-examples") === "true");
+    } catch {
+      // Keep example auto-play disabled when storage is unavailable.
+    }
+  }, []);
+
+  useEffect(() => {
+    if (answered && autoPlayExamples) playSentence(question.sentenceJp);
+  }, [answered, autoPlayExamples, playSentence, question.sentenceJp]);
 
   const finish = useCallback(
     (finalState: GrammarSessionState, endedEarly = false) => {
@@ -211,13 +228,35 @@ function GrammarGame({
                 />
               </div>
             </div>
-            <button
-              type="button"
-              onClick={() => finish(state, true)}
-              className="secondary-button min-h-11 rounded-md border px-4 py-2 text-sm font-bold"
-            >
-              End session
-            </button>
+            <div className="flex flex-wrap items-center justify-end gap-2">
+              <button
+                type="button"
+                aria-pressed={autoPlayExamples}
+                onClick={() => {
+                  const next = !autoPlayExamples;
+                  setAutoPlayExamples(next);
+                  try {
+                    localStorage.setItem("grammar-autoplay-examples", String(next));
+                  } catch {
+                    // Keep the setting for this session only.
+                  }
+                }}
+                className={`min-h-10 rounded-md border px-3 py-2 text-xs font-semibold transition-colors ${
+                  autoPlayExamples
+                    ? "border-[var(--primary)] bg-[var(--sakura-light)] text-[var(--primary)]"
+                    : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)]"
+                }`}
+              >
+                Auto-play examples {autoPlayExamples ? "On" : "Off"}
+              </button>
+              <button
+                type="button"
+                onClick={() => finish(state, true)}
+                className="secondary-button min-h-11 rounded-md border px-4 py-2 text-sm font-bold"
+              >
+                End session
+              </button>
+            </div>
           </div>
 
           {/* Centered Gameplay Area */}
@@ -427,9 +466,16 @@ function GrammarGame({
                   </button>
                 </div>
 
-                <p lang="ja" className="font-japanese mt-2 text-lg font-semibold text-[var(--ink)]">
-                  {question.sentenceJp}
-                </p>
+                <div className="mt-2 flex items-start gap-2">
+                  <p lang="ja" className="font-japanese min-w-0 flex-1 text-lg font-semibold text-[var(--ink)]">
+                    {question.sentenceJp}
+                  </p>
+                  <AudioButton
+                    text={question.sentenceJp}
+                    size="md"
+                    label="Listen to completed sentence"
+                  />
+                </div>
                 {question.romaji && (
                   <p className="mt-0.5 text-xs text-[var(--muted)]">{question.romaji}</p>
                 )}
