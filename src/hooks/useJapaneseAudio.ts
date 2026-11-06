@@ -694,18 +694,30 @@ export function useJapaneseAudio() {
   );
 
   const playGrammarTitle = useCallback(
-    (pattern: string, readingOrRate?: string | number, rateOverride?: number) => {
+    (pattern: string, idOrReading?: string | number, rateOverride?: number) => {
       if (typeof window === "undefined" || !pattern) return;
 
       stopCurrentPlayback();
 
-      const reading = typeof readingOrRate === "string" ? readingOrRate : undefined;
-      const rate = typeof readingOrRate === "number" ? readingOrRate : rateOverride;
+      const idHint = typeof idOrReading === "string" ? idOrReading : undefined;
+      const rate = typeof idOrReading === "number" ? idOrReading : rateOverride;
 
-      const payload = resolveGrammarTitleAudio(pattern);
+      const payload = resolveGrammarTitleAudio(pattern, idHint);
       if (!payload.ttsText) return;
 
-      // 1. Check if a high-fidelity static audio clip exists
+      // 1. Play dedicated static neural clip if available (all 828 clips in /audio/grammar)
+      if (payload.hasStaticClip && payload.staticSrc) {
+        void playAudioItemAsync(
+          payload.staticSrc,
+          payload.ttsText,
+          payload.key,
+          undefined,
+          rate ?? payload.rate
+        );
+        return;
+      }
+
+      // 2. Check if a high-fidelity static vocab clip exists
       const vocabPayload = resolveVocabAudio({ word: payload.ttsText });
       if (vocabPayload.hasStaticClip && vocabPayload.staticSrc) {
         void playAudioItemAsync(
@@ -718,7 +730,7 @@ export function useJapaneseAudio() {
         return;
       }
 
-      // 2. Check if Web Speech API has Japanese voice available
+      // 3. Check if Web Speech API has Japanese voice available
       const hasJaVoice =
         typeof window.speechSynthesis !== "undefined" &&
         typeof window.speechSynthesis.getVoices === "function" &&
@@ -726,15 +738,15 @@ export function useJapaneseAudio() {
           .getVoices()
           .some((v) => v.lang === "ja-JP" || v.lang.startsWith("ja"));
 
-      // 3. Fallback to kana-mora stitching if offline or no ja voice
-      const kanaCandidate = reading ? cleanGrammarTitleForAudio(reading) : payload.ttsText;
+      // 4. Fallback to kana-mora stitching if offline or no ja voice
+      const kanaCandidate = idHint ? cleanGrammarTitleForAudio(idHint) : payload.ttsText;
       const steps = decomposeKanaToMoraSteps(kanaCandidate);
       if (!hasJaVoice && steps.length > 0 && typeof window.AudioContext !== "undefined") {
         void playMoraStepsAsync(steps, payload.key, payload.ttsText, rate ?? payload.rate);
         return;
       }
 
-      // 4. Fallback to speech synthesis
+      // 5. Fallback to speech synthesis
       const effectiveRate = rate ?? payload.rate;
       void fallbackToSpeechAsync(payload.ttsText, payload.key, effectiveRate);
     },

@@ -279,6 +279,7 @@ export default function GrammarLibraryPage() {
                                       <div className="flex shrink-0 items-center gap-1 md:col-start-3">
                                         <AudioButton
                                           text={point.pattern}
+                                          id={point.id}
                                           reading={point.romaji}
                                           mode="grammar"
                                           size="sm"

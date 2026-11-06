@@ -353,13 +353,15 @@ describe("audio engine", () => {
       expect(cleanGrammarTitleForAudio("Noun1 が Noun1 なら、 Noun2 も Noun2 だ")).toBe("ナウンいち が ナウンいち なら ナウンに も ナウンに だ");
     });
 
-    it("resolves grammar title audio payload with rate 0.92 and ja-JP lang", () => {
-      const resolved = resolveGrammarTitleAudio("A がいちばん～");
+    it("resolves grammar title audio payload with rate 0.92, ja-JP lang, and static neural clip path", () => {
+      const resolved = resolveGrammarTitleAudio("A が いちばん～", "N5/a-ga-ichiban");
       expect(resolved).toEqual({
-        key: "grammar:エー がいちばん",
-        ttsText: "エー がいちばん",
+        key: "grammar:エー が いちばん",
+        ttsText: "エー が いちばん",
         lang: "ja-JP",
         rate: 0.92,
+        hasStaticClip: true,
+        staticSrc: "/audio/grammar/N5/a-ga-ichiban.mp3",
       });
     });
   });

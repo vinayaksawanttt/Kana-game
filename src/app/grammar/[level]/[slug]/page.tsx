@@ -164,6 +164,7 @@ function GrammarDetailContent() {
               </h1>
               <AudioButton
                 text={point.pattern}
+                id={point.id}
                 reading={point.romaji}
                 mode="grammar"
                 size="sm"

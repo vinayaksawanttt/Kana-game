@@ -1,5 +1,9 @@
 import { kanaCharacters } from "@/data/kana";
-import { STATIC_READING_AUDIO, STATIC_VOCAB_AUDIO } from "@/data/audio-manifest.generated";
+import {
+  STATIC_READING_AUDIO,
+  STATIC_VOCAB_AUDIO,
+  STATIC_GRAMMAR_AUDIO_MAP,
+} from "@/data/audio-manifest.generated";
 
 export interface KanaAudioPayload {
   slug: string;
@@ -434,6 +438,8 @@ export interface GrammarTitleAudioPayload {
   ttsText: string;
   lang: "ja-JP";
   rate: number;
+  hasStaticClip: boolean;
+  staticSrc: string;
 }
 
 const GRAMMAR_PLACEHOLDER_WORDS: Record<string, string> = {
@@ -515,16 +521,27 @@ export function cleanGrammarTitleForAudio(pattern: string): string {
 
 /**
  * Resolves full audio payload for a grammar pattern title/heading.
- * Strips placeholders (A, B, Noun) and comparison markers (～, ~) for clear Japanese TTS.
- * Returns { key, ttsText, lang: "ja-JP", rate: 0.92 }.
+ * Checks for a pre-generated static neural MP3 in /audio/grammar/,
+ * falling back to clean text-to-speech phonetic text.
  */
-export function resolveGrammarTitleAudio(pattern: string): GrammarTitleAudioPayload {
+export function resolveGrammarTitleAudio(
+  pattern: string,
+  id?: string
+): GrammarTitleAudioPayload {
   const ttsText = cleanGrammarTitleForAudio(pattern);
+  const staticSrc =
+    (id && STATIC_GRAMMAR_AUDIO_MAP[id]) ||
+    STATIC_GRAMMAR_AUDIO_MAP[pattern] ||
+    STATIC_GRAMMAR_AUDIO_MAP[ttsText] ||
+    "";
+
   return {
     key: `grammar:${ttsText}`,
     ttsText,
     lang: "ja-JP",
     rate: 0.92,
+    hasStaticClip: Boolean(staticSrc),
+    staticSrc,
   };
 }
 

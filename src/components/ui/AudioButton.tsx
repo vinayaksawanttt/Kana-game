@@ -14,6 +14,8 @@ import {
 export interface AudioButtonProps {
   /** The kana or Japanese character/mora/word/sentence/grammar to pronounce */
   text: string;
+  /** Optional unique item identifier (e.g. "N5/a-ga-ichiban" for grammar or sentence id) */
+  id?: string;
   /** Optional canonical romaji hint if character is non-standard */
   romaji?: string;
   /** Optional reading (for vocab) */
@@ -51,6 +53,7 @@ const SIZE_STYLES = {
 
 export const AudioButton: React.FC<AudioButtonProps> = ({
   text,
+  id,
   romaji,
   reading,
   mode = "kana",
@@ -76,10 +79,10 @@ export const AudioButton: React.FC<AudioButtonProps> = ({
       return resolveVocabAudio({ word: text, reading }).key;
     }
     if (mode === "sentence") {
-      return resolveSentenceAudio(text).key;
+      return resolveSentenceAudio(text, id).key;
     }
     if (mode === "grammar") {
-      return resolveGrammarTitleAudio(text).key;
+      return resolveGrammarTitleAudio(text, id).key;
     }
     if (mode === "reading") {
       return resolveKanjiReadingAudio(reading || text).slug;
@@ -100,9 +103,9 @@ export const AudioButton: React.FC<AudioButtonProps> = ({
     if (mode === "vocab") {
       playVocab({ word: text, reading });
     } else if (mode === "sentence") {
-      playSentence(text);
+      playSentence(text, id);
     } else if (mode === "grammar") {
-      playGrammarTitle(text, reading);
+      playGrammarTitle(text, id || reading);
     } else if (mode === "reading") {
       playReading(reading || text);
     } else {
