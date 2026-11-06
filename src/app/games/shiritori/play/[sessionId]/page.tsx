@@ -2,7 +2,7 @@
 
 import { Suspense, useEffect, useRef, useState, type FormEvent } from "react";
 import { useParams, useRouter } from "next/navigation";
-import { ArrowLeft, BookmarkPlus, Lightbulb, X } from "lucide-react";
+import { ArrowLeft, BookmarkPlus, Lightbulb, Volume2, VolumeX, X } from "lucide-react";
 import {
   chooseBotWord,
   convertRomajiBufferToHiragana,
@@ -17,11 +17,19 @@ import {
   type ShiritoriState,
   type ShiritoriWord,
 } from "@/engine/shiritori";
-import { loadShiritoriData } from "@/data/shiritori";
+import {
+  addRecentBotWord,
+  addRecentHint,
+  getRecentBotWords,
+  getRecentHints,
+  loadShiritoriData,
+} from "@/data/shiritori";
 import { addVocabularyToSrs } from "@/lib/srs/service";
 import { GameLayout } from "@/lib/game-core/layout";
 import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
+import { AudioButton } from "@/components/ui/AudioButton";
+import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
 
 interface StoredShiritoriSession {
   sessionId: string;
@@ -86,6 +94,9 @@ function ShiritoriPlayContent() {
   const [bookmarkMessage, setBookmarkMessage] = useState("");
   const [turnSecondsLeft, setTurnSecondsLeft] = useState(0);
   const [blitzSecondsLeft, setBlitzSecondsLeft] = useState(60);
+  const [soundEnabled, setSoundEnabled] = useState(true);
+  const { playVocab } = useJapaneseAudio();
+  const lastPlayedTurnIndexRef = useRef<number>(-1);
   const inputRef = useRef<HTMLInputElement>(null);
   const [state, setState] = useState<ShiritoriState | null>(null);
   const isPlaying = state?.status === "playing";
@@ -113,6 +124,11 @@ function ShiritoriPlayContent() {
         return () => { active = false; };
       }
       const settings = parsed.settings;
+      if (typeof settings.sound === "boolean") {
+        setSoundEnabled(settings.sound);
+      } else if (typeof settings.soundEnabled === "boolean") {
+        setSoundEnabled(settings.soundEnabled);
+      }
       void loadShiritoriData().then((dictionary) => {
         if (!active) return;
         const initial = createShiritoriState(settings, openingWord);
@@ -129,6 +145,18 @@ function ShiritoriPlayContent() {
     }
     return () => { active = false; };
   }, [router, sessionId]);
+
+  // Auto-play pronunciation for bot turns (opening word and subsequent bot moves)
+  useEffect(() => {
+    if (!state || !soundEnabled) return;
+    const latestTurn = state.chain.at(-1);
+    if (!latestTurn) return;
+    const currentIndex = state.chain.length - 1;
+    if (latestTurn.player === "bot" && lastPlayedTurnIndexRef.current !== currentIndex) {
+      lastPlayedTurnIndexRef.current = currentIndex;
+      playVocab({ word: latestTurn.word.word, reading: latestTurn.word.kana });
+    }
+  }, [state, soundEnabled, playVocab]);
 
   useEffect(() => {
     if (!game || activeStatus !== "playing" || activeMode === "blitz" || !turnDuration) return;
@@ -181,11 +209,13 @@ function ShiritoriPlayContent() {
     if (result.word.meaning === "Unverified word") setBookmarkMessage("Word accepted as unverified");
 
     if (state.settings.mode === "friend") return;
-    const botWord = chooseBotWord(result.state, game.dictionary);
+    const recentBotIds = new Set(getRecentBotWords());
+    const botWord = chooseBotWord(result.state, game.dictionary, recentBotIds);
     if (!botWord) {
       setState({ ...result.state, status: "won", message: "The dictionary has no unused word for that kana." });
       return;
     }
+    addRecentBotWord(botWord.id);
     const botState: ShiritoriState = {
       ...result.state,
       chain: [...result.state.chain, { word: botWord, player: "bot" }],
@@ -201,11 +231,15 @@ function ShiritoriPlayContent() {
 
   function requestHint() {
     if (!game || !state || state.status !== "playing") return;
-    const result = getHintForTurn(state, game.dictionary);
+    const recentHintIds = new Set([...getRecentHints(), ...hintedWords.map((w) => w.id)]);
+    const result = getHintForTurn(state, game.dictionary, recentHintIds);
     setState(result.state);
     setHintWord(result.word ?? null);
-    if (result.word && !hintedWords.some((word) => word.id === result.word?.id)) {
-      setHintedWords((current) => [...current, result.word!]);
+    if (result.word) {
+      addRecentHint(result.word.id);
+      if (!hintedWords.some((word) => word.id === result.word?.id)) {
+        setHintedWords((current) => [...current, result.word!]);
+      }
     }
   }
 
@@ -280,14 +314,31 @@ function ShiritoriPlayContent() {
             {timerLimit > 0 && <span className="min-w-14 text-right text-sm font-bold tabular-nums">{timerRemaining}s</span>}
           </div>
           <div className="flex items-center gap-2">
-            <button type="button" disabled={isEnded} onClick={() => setState((current) => current ? { ...current, status: "gave-up", message: "You ended the chain." } : current)} className="min-h-10 rounded-md border border-[var(--line)] px-3 text-sm font-bold text-[var(--muted)] hover:border-[var(--primary)] hover:text-[var(--primary)] disabled:opacity-50">Give up</button>
+            <button
+              type="button"
+              aria-label={soundEnabled ? "Mute pronunciation" : "Enable pronunciation"}
+              aria-pressed={soundEnabled}
+              onClick={() => setSoundEnabled((prev) => !prev)}
+              className="grid size-10 place-items-center rounded-md border border-[var(--line)] text-[var(--muted)] hover:border-[var(--primary)] hover:text-[var(--primary)] cursor-pointer"
+              title={soundEnabled ? "Sound on (click to mute)" : "Sound muted (click to unmute)"}
+            >
+              {soundEnabled ? <Volume2 size={18} /> : <VolumeX size={18} />}
+            </button>
+            <button type="button" disabled={isEnded} onClick={() => setState((current) => current ? { ...current, status: "gave-up", message: "You ended the chain." } : current)} className="min-h-10 rounded-md border border-[var(--line)] px-3 text-sm font-bold text-[var(--muted)] hover:border-[var(--primary)] hover:text-[var(--primary)] disabled:opacity-50 cursor-pointer">Give up</button>
           </div>
         </div>
         {timerLimit > 0 && <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-[var(--line)]" role="progressbar" aria-label={state.settings.mode === "blitz" ? "Blitz time remaining" : "Turn time remaining"} aria-valuenow={timerRemaining} aria-valuemin={0} aria-valuemax={timerLimit}><div className={`h-full rounded-full transition-[width] duration-300 ${timerRemaining <= 5 ? "bg-[var(--wrong)]" : "bg-[var(--primary)]"}`} style={{ width: `${timerPercent}%` }} /></div>}
 
         <section className="flex flex-col items-center py-6 text-center sm:py-8" aria-label="Current word">
-          <div className="flex items-center justify-center gap-2">
+          <div className="flex items-center justify-center gap-3">
             <h1 className="font-japanese break-keep text-[clamp(3rem,6vw,4.5rem)] leading-tight">{latest.word}</h1>
+            <AudioButton
+              mode="vocab"
+              text={latest.word}
+              reading={latest.kana}
+              size="md"
+              label={`Pronounce ${latest.word}`}
+            />
           </div>
           <p className="mt-1 font-japanese text-2xl text-[var(--muted)]" aria-label={`Reading ${latest.kana}`}>
             {latest.kana.slice(0, splitAt)}<span className="font-bold text-[var(--primary)] underline decoration-[var(--sakura)] underline-offset-4">{latest.kana.slice(splitAt)}</span>
@@ -309,21 +360,30 @@ function ShiritoriPlayContent() {
         <div className="mx-auto w-full max-w-3xl">
           {hintWord && (
             <div className="mb-2 flex items-center justify-between gap-3 rounded-lg border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-2 text-sm" role="status">
-              <button
-                type="button"
-                onClick={() => {
-                  setAnswer(hintWord.kana);
-                  setAnswerError("");
-                  inputRef.current?.focus();
-                }}
-                className="min-w-0 text-left transition-opacity hover:opacity-85 cursor-pointer"
-                title="Click to fill into answer"
-              >
-                <span className="font-japanese font-bold text-[var(--primary)]">{hintWord.word}</span>
-                <span className="ml-2 font-japanese text-[var(--muted)]">{hintWord.kana}</span>
-                <span className="ml-2 text-[var(--muted)]">{formatShiritoriMeaning(hintWord)}</span>
-              </button>
-              <button type="button" aria-label="Dismiss hint" onClick={() => setHintWord(null)} className="grid size-8 shrink-0 place-items-center rounded-full text-[var(--muted)] hover:bg-[var(--surface)]"><X size={15} /></button>
+              <div className="flex items-center gap-2 min-w-0">
+                <AudioButton
+                  mode="vocab"
+                  text={hintWord.word}
+                  reading={hintWord.kana}
+                  size="sm"
+                  label={`Pronounce ${hintWord.word}`}
+                />
+                <button
+                  type="button"
+                  onClick={() => {
+                    setAnswer(hintWord.kana);
+                    setAnswerError("");
+                    inputRef.current?.focus();
+                  }}
+                  className="min-w-0 text-left transition-opacity hover:opacity-85 cursor-pointer"
+                  title="Click to fill into answer"
+                >
+                  <span className="font-japanese font-bold text-[var(--primary)]">{hintWord.word}</span>
+                  <span className="ml-2 font-japanese text-[var(--muted)]">{hintWord.kana}</span>
+                  <span className="ml-2 text-[var(--muted)]">{formatShiritoriMeaning(hintWord)}</span>
+                </button>
+              </div>
+              <button type="button" aria-label="Dismiss hint" onClick={() => setHintWord(null)} className="grid size-8 shrink-0 place-items-center rounded-full text-[var(--muted)] hover:bg-[var(--surface)] cursor-pointer"><X size={15} /></button>
             </div>
           )}
           <form onSubmit={submitTurn} className={`flex min-h-14 items-center gap-2 rounded-xl border bg-[var(--surface)] p-1.5 shadow-sm ${answerError ? "border-[var(--wrong)] animate-[kana-shake_400ms_ease-in-out]" : "border-[var(--line)] focus-within:border-[var(--primary)]"}`}>
@@ -375,8 +435,17 @@ function ShiritoriPlayContent() {
                     <span className="text-xs text-[var(--muted)]">{formatShiritoriMeaning(turn.word)}</span>
                   </div>
                 </div>
-                <span className="rounded bg-[var(--sakura-light)] px-2 py-1 text-[10px] font-extrabold">N{turn.word.jlpt}</span>
-                <button type="button" aria-label={savedIds.has(turn.word.id) ? `${turn.word.word} added to FSRS` : `Add ${turn.word.word} to FSRS`} title={savedIds.has(turn.word.id) ? "Added to FSRS" : "Add to FSRS"} disabled={savedIds.has(turn.word.id) || savingId === turn.word.id} onClick={() => void addWordToSrs(turn.word)} className="grid size-8 shrink-0 place-items-center rounded-full text-[var(--muted)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary)] disabled:text-[var(--correct)]"><BookmarkPlus size={16} /></button>
+                <div className="flex items-center gap-2">
+                  <span className="rounded bg-[var(--sakura-light)] px-2 py-1 text-[10px] font-extrabold">N{turn.word.jlpt}</span>
+                  <AudioButton
+                    mode="vocab"
+                    text={turn.word.word}
+                    reading={turn.word.kana}
+                    size="sm"
+                    label={`Pronounce ${turn.word.word}`}
+                  />
+                  <button type="button" aria-label={savedIds.has(turn.word.id) ? `${turn.word.word} added to FSRS` : `Add ${turn.word.word} to FSRS`} title={savedIds.has(turn.word.id) ? "Added to FSRS" : "Add to FSRS"} disabled={savedIds.has(turn.word.id) || savingId === turn.word.id} onClick={() => void addWordToSrs(turn.word)} className="grid size-8 shrink-0 place-items-center rounded-full text-[var(--muted)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary)] disabled:text-[var(--correct)] cursor-pointer"><BookmarkPlus size={16} /></button>
+                </div>
               </article>
             ))}
           </div>

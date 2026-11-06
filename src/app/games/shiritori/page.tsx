@@ -27,6 +27,7 @@ export default function ShiritoriSetupPage() {
   const [mode, setMode] = useState<ShiritoriMode>("survival");
   const [difficulty, setDifficulty] = useState<ShiritoriDifficulty>("futsuu");
   const [turnSeconds, setTurnSeconds] = useState<ShiritoriSettings["turnSeconds"]>(0);
+  const [soundEnabled, setSoundEnabled] = useState(true);
 
   function startGame() {
     const sessionId = newSessionId();
@@ -34,7 +35,8 @@ export default function ShiritoriSetupPage() {
       mode,
       difficulty,
       turnSeconds,
-      sound: false,
+      sound: soundEnabled,
+      soundEnabled,
       allowUnverified: false,
     };
     sessionStorage.setItem(`shiritori-session:${sessionId}`, JSON.stringify({ sessionId, settings }));
@@ -119,15 +121,41 @@ export default function ShiritoriSetupPage() {
             </fieldset>
           )}
 
-          <div className="mt-7 border-t border-[var(--line)] pt-6">
+          <div className="mt-7 grid gap-6 border-t border-[var(--line)] pt-6 sm:grid-cols-2">
             <fieldset>
               <legend className="mb-3 text-sm font-extrabold">Turn timer</legend>
               <div className="inline-flex rounded-full bg-[var(--sakura-light)] p-1">
                 {([0, 15, 30] as const).map((seconds) => (
-                  <button key={seconds} type="button" aria-pressed={turnSeconds === seconds} onClick={() => setTurnSeconds(seconds)} className={`min-h-10 rounded-full px-4 text-sm font-bold transition-colors ${turnSeconds === seconds ? "bg-[var(--primary)] text-white" : "text-[var(--muted)]"}`}>
+                  <button key={seconds} type="button" aria-pressed={turnSeconds === seconds} onClick={() => setTurnSeconds(seconds)} className={`min-h-10 rounded-full px-4 text-sm font-bold transition-colors cursor-pointer ${turnSeconds === seconds ? "bg-[var(--primary)] text-white" : "text-[var(--muted)]"}`}>
                     {seconds === 0 ? "Off" : `${seconds}s turns`}
                   </button>
                 ))}
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend className="mb-3 text-sm font-extrabold">Pronunciation</legend>
+              <div className="inline-flex rounded-full bg-[var(--sakura-light)] p-1">
+                <button
+                  type="button"
+                  aria-pressed={soundEnabled}
+                  onClick={() => setSoundEnabled(true)}
+                  className={`min-h-10 rounded-full px-4 text-sm font-bold transition-colors cursor-pointer ${
+                    soundEnabled ? "bg-[var(--primary)] text-white" : "text-[var(--muted)]"
+                  }`}
+                >
+                  🔊 Sound on
+                </button>
+                <button
+                  type="button"
+                  aria-pressed={!soundEnabled}
+                  onClick={() => setSoundEnabled(false)}
+                  className={`min-h-10 rounded-full px-4 text-sm font-bold transition-colors cursor-pointer ${
+                    !soundEnabled ? "bg-[var(--primary)] text-white" : "text-[var(--muted)]"
+                  }`}
+                >
+                  🔇 Sound off
+                </button>
               </div>
             </fieldset>
           </div>

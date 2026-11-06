@@ -20,8 +20,8 @@ export interface ShiritoriDictionary {
   byKana: Map<string, ShiritoriWord>;
   byWord: Map<string, ShiritoriWord>;
   byStartKana: Map<string, ShiritoriWord[]>;
-  validByKana?: Map<string, string>;
-  validByWord?: Map<string, string>;
+  validByKana?: Map<string, string | [string, string]>;
+  validByWord?: Map<string, string | [string, string]>;
 }
 
 export interface ShiritoriSettings {
@@ -29,6 +29,7 @@ export interface ShiritoriSettings {
   difficulty: ShiritoriDifficulty;
   turnSeconds: 0 | 15 | 30;
   sound?: boolean;
+  soundEnabled?: boolean;
   allowUnverified: boolean;
 }
 
@@ -309,6 +310,12 @@ export function hasEnglishGloss(entry: Pick<ShiritoriWord, "word" | "kana" | "me
   );
 }
 
+export function isKatakanaWord(word: string): boolean {
+  if (!word) return false;
+  if (/[一-龯々〆ヵヶ]/.test(word) || /[\u3041-\u3096]/.test(word)) return false;
+  return /^[\u30A0-\u30FFー]+$/.test(word);
+}
+
 export function formatShiritoriMeaning(entry: Pick<ShiritoriWord, "word" | "kana" | "meaning">): string {
   return hasEnglishGloss(entry) ? entry.meaning : "valid noun";
 }
@@ -322,13 +329,27 @@ function findWord(input: string, dictionary: ShiritoriDictionary): ShiritoriWord
   if (dictionary.validByKana && dictionary.validByWord) {
     let matchedKana: string | undefined;
     let matchedWord: string | undefined;
+    let matchedMeaning: string | undefined;
 
     if (dictionary.validByKana.has(normalized)) {
       matchedKana = normalized;
-      matchedWord = dictionary.validByKana.get(normalized);
+      const raw = dictionary.validByKana.get(normalized);
+      if (Array.isArray(raw)) {
+        matchedWord = raw[0];
+        matchedMeaning = raw[1];
+      } else {
+        matchedWord = raw;
+      }
     } else if (dictionary.validByWord.has(trimmed.normalize("NFKC"))) {
-      matchedWord = trimmed.normalize("NFKC");
-      matchedKana = dictionary.validByWord.get(matchedWord);
+      const surfaceKey = trimmed.normalize("NFKC");
+      const raw = dictionary.validByWord.get(surfaceKey);
+      matchedWord = surfaceKey;
+      if (Array.isArray(raw)) {
+        matchedKana = raw[0];
+        matchedMeaning = raw[1];
+      } else {
+        matchedKana = raw;
+      }
     }
 
     if (matchedKana) {
@@ -338,7 +359,7 @@ function findWord(input: string, dictionary: ShiritoriDictionary): ShiritoriWord
         word: displayWord,
         kana: matchedKana,
         romaji: hiraganaToRomaji(matchedKana),
-        meaning: "valid noun",
+        meaning: matchedMeaning && matchedMeaning !== "valid noun" ? matchedMeaning : "valid noun",
         jlpt: 5,
         startKana: extractStartKana(matchedKana),
         endKana: extractEndKana(matchedKana),
@@ -397,7 +418,12 @@ export function validateTurn(
   return { valid: true, state: nextState, word };
 }
 
-export function chooseBotWord(state: ShiritoriState, dictionary: ShiritoriDictionary): ShiritoriWord | undefined {
+export function chooseBotWord(
+  state: ShiritoriState,
+  dictionary: ShiritoriDictionary,
+  recentWordIds?: Set<string>,
+  rng: () => number = Math.random
+): ShiritoriWord | undefined {
   const allowedStarts = getKanaAliases(state.nextKana);
   const candidates = allowedStarts
     .flatMap((kana) => dictionary.byStartKana.get(kana) ?? [])
@@ -411,40 +437,127 @@ export function chooseBotWord(state: ShiritoriState, dictionary: ShiritoriDictio
   const eligible = candidates.filter((word) => word.endKana !== "ん");
   const glossedEligible = eligible.filter(hasEnglishGloss);
   const baseEligible = glossedEligible.length ? glossedEligible : eligible;
-  const pool = state.settings.difficulty === "yasashii"
-    ? baseEligible.filter((word) => word.jlpt >= 4)
-    : state.settings.difficulty === "futsuu"
-      ? baseEligible.filter((word) => word.jlpt >= 3)
-      : baseEligible;
+  const pool =
+    state.settings.difficulty === "yasashii"
+      ? baseEligible.filter((word) => word.jlpt >= 4)
+      : state.settings.difficulty === "futsuu"
+        ? baseEligible.filter((word) => word.jlpt >= 3)
+        : baseEligible;
   const choices = pool.length ? pool : baseEligible;
   if (!choices.length) return candidates.find(hasEnglishGloss) ?? candidates[0];
-  const remainingReplies = (word: ShiritoriWord) => new Set(
-    getKanaAliases(getEffectiveEndKana(word.kana))
-      .flatMap((kana) => dictionary.byStartKana.get(kana) ?? [])
-      .filter((next) => next.id !== word.id && !state.usedIds.has(next.id) && next.endKana !== "ん")
-      .map((next) => next.id)
-  ).size;
-  if (state.settings.difficulty === "yasashii") {
-    return [...choices].sort((a, b) => remainingReplies(b) - remainingReplies(a) || b.jlpt - a.jlpt || a.word.localeCompare(b.word))[0];
+
+  const remainingReplies = (word: ShiritoriWord) =>
+    new Set(
+      getKanaAliases(getEffectiveEndKana(word.kana))
+        .flatMap((kana) => dictionary.byStartKana.get(kana) ?? [])
+        .filter(
+          (next) =>
+            next.id !== word.id &&
+            !state.usedIds.has(next.id) &&
+            next.endKana !== "ん"
+        )
+        .map((next) => next.id)
+    ).size;
+
+  // Check if previous turn by bot was Katakana
+  const lastBotTurn = [...state.chain].reverse().find((t) => t.player === "bot");
+  const lastBotWordWasKatakana = lastBotTurn ? isKatakanaWord(lastBotTurn.word.word) : false;
+
+  const scoreCandidate = (word: ShiritoriWord): number => {
+    let score = 0;
+    const remaining = remainingReplies(word);
+
+    // 1. Difficulty & strategic rating
+    if (state.settings.difficulty === "yasashii") {
+      score += remaining === 0 ? -500 : remaining * 20;
+      score += word.jlpt * 15;
+    } else if (state.settings.difficulty === "oni") {
+      if (remaining === 0) {
+        score += 2000; // Immediate trap / decisive win
+      } else {
+        score += (50 - Math.min(50, remaining)) * 15;
+        score += (6 - word.jlpt) * 10;
+      }
+    } else {
+      score += word.jlpt * 20;
+      score += Math.min(remaining, 10) * 5;
+    }
+
+    // 2. English gloss priority
+    if (hasEnglishGloss(word)) {
+      score += 100;
+    }
+
+    // 3. Script priority: Kanji +40, Hiragana +25, Katakana loanwords -60
+    const isKata = isKatakanaWord(word.word);
+    if (/[一-龯々]/.test(word.word)) {
+      score += 40;
+    } else if (/^[\u3041-\u3096ー]+$/.test(word.word)) {
+      score += 25;
+    } else if (isKata) {
+      score -= 60;
+    }
+
+    // 4. Consecutive Katakana penalty: never play Katakana twice in a row if any alternative exists
+    if (isKata && lastBotWordWasKatakana) {
+      score -= 10000;
+    }
+
+    // 5. Anti-repetition across games
+    if (recentWordIds?.has(word.id)) {
+      score -= 1000;
+    }
+
+    return score;
+  };
+
+  const scored = choices.map((w) => ({
+    word: w,
+    score: scoreCandidate(w),
+  }));
+
+  scored.sort((a, b) => b.score - a.score || a.word.word.localeCompare(b.word.word));
+
+  const maxScore = scored[0].score;
+  const threshold = maxScore > 0 ? maxScore * 0.75 : maxScore - 25;
+  const topCandidates = scored.slice(0, 15).filter((c) => c.score >= threshold);
+
+  if (topCandidates.length === 1) {
+    return topCandidates[0].word;
   }
-  if (state.settings.difficulty === "oni") {
-    return [...choices].sort((a, b) => remainingReplies(a) - remainingReplies(b) || a.word.localeCompare(b.word))[0];
+
+  // Weighted random selection using rng()
+  const minScore = topCandidates[topCandidates.length - 1].score;
+  const weights = topCandidates.map((c) => Math.max(1, c.score - minScore + 1));
+  const totalWeight = weights.reduce((sum, w) => sum + w, 0);
+
+  let r = rng() * totalWeight;
+  for (let i = 0; i < topCandidates.length; i++) {
+    r -= weights[i];
+    if (r <= 0) {
+      return topCandidates[i].word;
+    }
   }
-  return [...choices].sort((a, b) => a.jlpt - b.jlpt || a.word.localeCompare(b.word))[0];
+
+  return topCandidates[0].word;
 }
 
-export function useHint(state: ShiritoriState, dictionary: ShiritoriDictionary): { state: ShiritoriState; word?: ShiritoriWord } {
+export function useHint(
+  state: ShiritoriState,
+  dictionary: ShiritoriDictionary,
+  recentHintIds?: Set<string>,
+  rng: () => number = Math.random
+): { state: ShiritoriState; word?: ShiritoriWord } {
   if (state.hintsRemaining <= 0 || state.status !== "playing") return { state };
   const allowedStarts = getKanaAliases(state.nextKana);
 
   // Exact start kana matches first (e.g. for "にょ", try words starting with "にょ")
-  const exactChoices = (dictionary.byStartKana.get(state.nextKana) ?? [])
-    .filter(
-      (candidate) =>
-        !state.usedIds.has(candidate.id) &&
-        candidate.endKana !== "ん" &&
-        candidate.kana.startsWith(state.nextKana)
-    );
+  const exactChoices = (dictionary.byStartKana.get(state.nextKana) ?? []).filter(
+    (candidate) =>
+      !state.usedIds.has(candidate.id) &&
+      candidate.endKana !== "ん" &&
+      candidate.kana.startsWith(state.nextKana)
+  );
 
   // Fallback to alias starts (e.g. for "にょ", try words starting with "よ")
   const aliasChoices = allowedStarts
@@ -467,16 +580,72 @@ export function useHint(state: ShiritoriState, dictionary: ShiritoriDictionary):
         ? exactChoices
         : aliasChoices;
 
-  const word = [...pool]
-    .filter((candidate, index, list) => list.findIndex((entry) => entry.id === candidate.id) === index)
-    .sort((a, b) => b.jlpt - a.jlpt || a.word.localeCompare(b.word))[0];
+  const dedupedPool = pool.filter(
+    (candidate, index, list) => list.findIndex((entry) => entry.id === candidate.id) === index
+  );
 
-  return { state: { ...state, hintsRemaining: state.hintsRemaining - 1 }, word };
+  if (!dedupedPool.length) {
+    return { state: { ...state, hintsRemaining: state.hintsRemaining - 1 }, word: undefined };
+  }
+
+  const scoreHint = (word: ShiritoriWord): number => {
+    let score = word.jlpt * 20;
+
+    if (hasEnglishGloss(word)) {
+      score += 100;
+    }
+
+    if (/[一-龯々]/.test(word.word)) {
+      score += 40;
+    } else if (/^[\u3041-\u3096ー]+$/.test(word.word)) {
+      score += 25;
+    } else if (isKatakanaWord(word.word)) {
+      score -= 60;
+    }
+
+    if (recentHintIds?.has(word.id)) {
+      score -= 1000;
+    }
+
+    return score;
+  };
+
+  const scored = dedupedPool.map((w) => ({
+    word: w,
+    score: scoreHint(w),
+  }));
+
+  scored.sort((a, b) => b.score - a.score || a.word.word.localeCompare(b.word.word));
+
+  const maxScore = scored[0].score;
+  const threshold = maxScore > 0 ? maxScore * 0.75 : maxScore - 25;
+  const topCandidates = scored.slice(0, 15).filter((c) => c.score >= threshold);
+
+  let chosenWord: ShiritoriWord;
+  if (topCandidates.length === 1) {
+    chosenWord = topCandidates[0].word;
+  } else {
+    const minScore = topCandidates[topCandidates.length - 1].score;
+    const weights = topCandidates.map((c) => Math.max(1, c.score - minScore + 1));
+    const totalWeight = weights.reduce((sum, w) => sum + w, 0);
+
+    let r = rng() * totalWeight;
+    chosenWord = topCandidates[0].word;
+    for (let i = 0; i < topCandidates.length; i++) {
+      r -= weights[i];
+      if (r <= 0) {
+        chosenWord = topCandidates[i].word;
+        break;
+      }
+    }
+  }
+
+  return { state: { ...state, hintsRemaining: state.hintsRemaining - 1 }, word: chosenWord };
 }
 
 export function buildShiritoriDictionary(
   words: ShiritoriWord[],
-  validReadingsMap?: Record<string, string>
+  validReadingsMap?: Record<string, string | [string, string]>
 ): ShiritoriDictionary {
   const byKana = new Map<string, ShiritoriWord>();
   const byWord = new Map<string, ShiritoriWord>();
@@ -500,15 +669,24 @@ export function buildShiritoriDictionary(
     }
   }
 
-  const validByKana = new Map<string, string>();
-  const validByWord = new Map<string, string>();
+  const validByKana = new Map<string, string | [string, string]>();
+  const validByWord = new Map<string, string | [string, string]>();
   if (validReadingsMap) {
-    for (const [kana, word] of Object.entries(validReadingsMap)) {
+    for (const [kana, entry] of Object.entries(validReadingsMap)) {
       const normKana = normalizedReading(kana);
-      const normWord = word.trim().normalize("NFKC");
-      validByKana.set(normKana, normWord);
-      if (!validByWord.has(normWord)) {
-        validByWord.set(normWord, normKana);
+      if (Array.isArray(entry)) {
+        const normWord = entry[0].trim().normalize("NFKC");
+        const meaning = entry[1]?.trim() || "valid noun";
+        validByKana.set(normKana, [normWord, meaning]);
+        if (!validByWord.has(normWord)) {
+          validByWord.set(normWord, [normKana, meaning]);
+        }
+      } else {
+        const normWord = entry.trim().normalize("NFKC");
+        validByKana.set(normKana, normWord);
+        if (!validByWord.has(normWord)) {
+          validByWord.set(normWord, normKana);
+        }
       }
     }
   }

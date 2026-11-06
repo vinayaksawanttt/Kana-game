@@ -8,6 +8,7 @@ import {
   formatShiritoriMeaning,
   getKanaAliases,
   hasEnglishGloss,
+  isKatakanaWord,
   romajiToHiragana,
   useHint,
   validateTurn,
@@ -245,5 +246,148 @@ describe("Shiritori engine", () => {
     expect(hintResult.state.hintsRemaining).toBe(2);
     const zeroState = { ...stateAfterShinnyo, hintsRemaining: 0 };
     expect(useHint(zeroState, dictionary).word).toBeUndefined();
+  });
+
+  it("classifies pure katakana loanwords correctly with isKatakanaWord", () => {
+    expect(isKatakanaWord("クリーム")).toBe(true);
+    expect(isKatakanaWord("オーバー")).toBe(true);
+    expect(isKatakanaWord("パンダ")).toBe(true);
+    expect(isKatakanaWord("車")).toBe(false);
+    expect(isKatakanaWord("果物")).toBe(false);
+    expect(isKatakanaWord("おちゃ")).toBe(false);
+    expect(isKatakanaWord("消しゴム")).toBe(false);
+  });
+
+  it("prioritizes kanji and native hiragana words over katakana loanwords in bot and hint choices", () => {
+    // Opening word ends with "く" so choices starting with "く" are eligible
+    const opening = word("start", "いんく");
+    const katakanaWord1: ShiritoriWord = {
+      id: "loan:クリーム",
+      word: "クリーム",
+      kana: "くりーむ",
+      romaji: "kuri-mu",
+      meaning: "cream",
+      jlpt: 3,
+      startKana: "く",
+      endKana: "む",
+    };
+    const katakanaWord2: ShiritoriWord = {
+      id: "loan:オーバー",
+      word: "オーバー",
+      kana: "おーばー",
+      romaji: "o-ba-",
+      meaning: "overcoat",
+      jlpt: 3,
+      startKana: "お",
+      endKana: "ば",
+    };
+    const kanjiWord: ShiritoriWord = {
+      id: "kanji:車",
+      word: "車",
+      kana: "くるま",
+      romaji: "kuruma",
+      meaning: "car",
+      jlpt: 5,
+      startKana: "く",
+      endKana: "ま",
+    };
+    const hiraganaWord: ShiritoriWord = {
+      id: "hira:くだもの",
+      word: "くだもの",
+      kana: "くだもの",
+      romaji: "kudamono",
+      meaning: "fruit",
+      jlpt: 5,
+      startKana: "く",
+      endKana: "の",
+    };
+
+    const dictionary = buildShiritoriDictionary([opening, katakanaWord1, kanjiWord, hiraganaWord]);
+    const state = createShiritoriState(settings("futsuu"), opening);
+    expect(state.nextKana).toBe("く");
+
+    // Bot choice should pick Kanji or Hiragana word, not Katakana
+    const botChoice = chooseBotWord(state, dictionary);
+    expect(botChoice).toBeDefined();
+    expect(isKatakanaWord(botChoice!.word)).toBe(false);
+    expect(["kanji:車", "hira:くだもの"]).toContain(botChoice!.id);
+
+    // Hint choice should also prefer Kanji or Hiragana
+    const hintChoice = useHint(state, dictionary);
+    expect(hintChoice.word).toBeDefined();
+    expect(isKatakanaWord(hintChoice.word!.word)).toBe(false);
+  });
+
+  it("avoids repetition across games by penalizing recentBotWords and varied rng sampling", async () => {
+    const dictionary = await loadShiritoriData();
+    const opening: ShiritoriWord = {
+      id: "shiritori-opening",
+      word: "しりとり",
+      kana: "しりとり",
+      romaji: "shiritori",
+      meaning: "word-chain game",
+      jlpt: 5,
+      startKana: "し",
+      endKana: "り",
+    };
+    const state = createShiritoriState(settings("futsuu"), opening);
+
+    // 1. Calling chooseBotWord with varying rng seeds picks varied words
+    const pickedIds = new Set<string>();
+    for (let i = 0; i < 10; i++) {
+      const pseudoRng = () => (i * 0.11) % 1;
+      const picked = chooseBotWord(state, dictionary, undefined, pseudoRng);
+      if (picked) pickedIds.add(picked.id);
+    }
+    // Across 10 pseudo-random calls, there should be multiple distinct candidates selected
+    expect(pickedIds.size).toBeGreaterThanOrEqual(3);
+
+    // 2. Supplying a recent word in recentWordIds heavily penalizes it in favor of fresh words
+    const firstWord = chooseBotWord(state, dictionary, undefined, () => 0)!;
+    const recentSet = new Set([firstWord.id]);
+    const nextChoice = chooseBotWord(state, dictionary, recentSet, () => 0);
+    expect(nextChoice).toBeDefined();
+    expect(nextChoice!.id).not.toBe(firstWord.id);
+  });
+
+  it("resolves real English meanings from tuple valid-readings instead of 'valid noun'", () => {
+    const openingEndingInBa = word("start", "そば");
+    const tupleValidReadings: Record<string, [string, string]> = {
+      ばく: ["貘", "tapir"],
+      らい: ["ライ", "rye"],
+      るーばー: ["ルーバー", "louver"],
+    };
+
+    const dictionary = buildShiritoriDictionary([openingEndingInBa], tupleValidReadings);
+    const state = createShiritoriState(settings(), openingEndingInBa);
+    expect(state.nextKana).toBe("ば");
+
+    // 1. Submit by kana "ばく"
+    const bakuTurn = validateTurn("ばく", state, dictionary);
+    expect(bakuTurn.valid).toBe(true);
+    if (bakuTurn.valid) {
+      expect(bakuTurn.word.word).toBe("貘");
+      expect(bakuTurn.word.meaning).toBe("tapir");
+      expect(formatShiritoriMeaning(bakuTurn.word)).toBe("tapir");
+    }
+
+    // 2. Submit by kanji "貘"
+    const bakuKanjiTurn = validateTurn("貘", state, dictionary);
+    expect(bakuKanjiTurn.valid).toBe(true);
+    if (bakuKanjiTurn.valid) {
+      expect(bakuKanjiTurn.word.word).toBe("貘");
+      expect(bakuKanjiTurn.word.meaning).toBe("tapir");
+    }
+
+    // 3. For a word starting with "る" (e.g. ルーバー), state after a word ending in "る"
+    const openingEndingInRu = word("start2", "ざる");
+    const stateRu = createShiritoriState(settings(), openingEndingInRu);
+    expect(stateRu.nextKana).toBe("る");
+    const louverTurn = validateTurn("ルーバー", stateRu, dictionary);
+    expect(louverTurn.valid).toBe(true);
+    if (louverTurn.valid) {
+      expect(louverTurn.word.word).toBe("ルーバー");
+      expect(louverTurn.word.meaning).toBe("louver");
+    }
   });
 });

@@ -252,6 +252,7 @@ describe("Play Page integration test", () => {
     expect(autoPlayBtn.className).toContain("bg-[var(--sakura-light)]");
     expect(autoPlayBtn.className).toContain("border-[var(--primary)]");
     expect(screen.getByText("Auto-play on")).toBeDefined();
+    expect(autoPlayBtn.querySelector("svg")).toBeNull();
 
     // Toggle off
     fireEvent.click(autoPlayBtn);
@@ -259,6 +260,7 @@ describe("Play Page integration test", () => {
     expect(autoPlayBtn.className).toContain("bg-[var(--surface)]");
     expect(autoPlayBtn.className).toContain("border-[var(--line)]");
     expect(screen.getByText("Auto-play off")).toBeDefined();
+    expect(autoPlayBtn.querySelector("svg")).toBeNull();
 
     // Submit wrong guess
     const input = screen.getByLabelText("Type the kana sound");

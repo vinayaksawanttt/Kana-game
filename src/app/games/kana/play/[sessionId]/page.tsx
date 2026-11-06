@@ -1,7 +1,7 @@
 "use client";
 
 import { Suspense, useCallback, useEffect, useReducer, useRef, useState } from "react";
-import { ArrowRight, Volume2, VolumeX, X } from "lucide-react";
+import { ArrowRight, X } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 import { rowMetadata } from "@/data/kana";
 import { checkAnswer, computeResult } from "@/lib/game/kana";
@@ -293,17 +293,7 @@ function KanaGame({
                     : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)] hover:border-[var(--sakura)] hover:text-[var(--ink)]"
                 }`}
               >
-                {autoPlayEnabled ? (
-                  <>
-                    <Volume2 className="size-4 shrink-0 text-[var(--primary)] dark:text-[var(--primary-fg)]" aria-hidden="true" />
-                    <span>Auto-play on</span>
-                  </>
-                ) : (
-                  <>
-                    <VolumeX className="size-4 shrink-0 text-[var(--muted)]" aria-hidden="true" />
-                    <span>Auto-play off</span>
-                  </>
-                )}
+                <span>Auto-play {autoPlayEnabled ? "on" : "off"}</span>
               </button>
               <button
                 type="button"

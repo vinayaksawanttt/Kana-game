@@ -5,11 +5,13 @@ import kuromoji from "kuromoji";
 import {
   extractEndKana,
   extractStartKana,
+  hasEnglishGloss,
   hiraganaToRomaji,
   katakanaToHiragana,
   type ShiritoriLevel,
   type ShiritoriWord,
 } from "../src/engine/shiritori";
+import { DeepLClient, getDeepLConfig } from "./lib/deepl-client";
 
 interface RawVocabularyRow {
   id?: string;
@@ -29,6 +31,32 @@ interface RawKanji {
   on_readings: string[];
   kun_readings: string[];
 }
+
+interface RawDictionaryIndex {
+  vocab?: Array<{
+    word: string;
+    reading: string;
+    meanings?: string[];
+  }>;
+  kanji?: Record<
+    string,
+    {
+      label?: string;
+      meanings?: string[];
+    }
+  >;
+}
+
+const MEANING_OVERRIDES: Record<string, string> = {
+  貘: "tapir",
+  バク: "tapir",
+  ばく: "tapir",
+  ライ: "rye",
+  らい: "rye",
+  ルーバー: "louver",
+  るーばー: "louver",
+  散: "scatter, disperse",
+};
 
 const CURATED_WORDS: Array<{
   word: string;
@@ -102,15 +130,19 @@ function isNounPos(pos?: string[]): boolean {
   );
 }
 
+function isJapaneseText(text: string): boolean {
+  return /[\u3040-\u30ff\u4e00-\u9faf]/.test(text);
+}
+
 async function loadKuromojiNouns(
   dicPath: string
-): Promise<{ validReadings: Record<string, string>; kuromojiNouns: Array<{ word: string; kana: string }> }> {
+): Promise<{ rawReadings: Record<string, string>; kuromojiNouns: Array<{ word: string; kana: string }> }> {
   return new Promise((resolvePromise, rejectPromise) => {
     kuromoji.builder({ dicPath }).build((err, tokenizer) => {
       if (err) return rejectPromise(err);
       const tid = (tokenizer as unknown as { token_info_dictionary: { target_map: Record<string, number[]>; getFeatures: (id: number) => string } }).token_info_dictionary;
       const seenIds = new Set<number>();
-      const validReadings: Record<string, string> = {};
+      const rawReadings: Record<string, string> = {};
       const kuromojiNouns: Array<{ word: string; kana: string }> = [];
 
       for (const k in tid.target_map) {
@@ -132,15 +164,15 @@ async function loadKuromojiNouns(
             if ([...hiragana].length < 2) continue;
             if (!/^[\u3041-\u3096ー]+$/.test(hiragana)) continue;
 
-            if (!validReadings[hiragana]) {
-              validReadings[hiragana] = surface;
+            if (!rawReadings[hiragana]) {
+              rawReadings[hiragana] = surface;
               kuromojiNouns.push({ word: surface, kana: hiragana });
             }
           }
         }
       }
 
-      resolvePromise({ validReadings, kuromojiNouns });
+      resolvePromise({ rawReadings, kuromojiNouns });
     });
   });
 }
@@ -149,6 +181,7 @@ async function main(): Promise<void> {
   const root = process.cwd();
   const deduped = new Map<string, ShiritoriWord>();
 
+  // 1. Load DeepL Cache
   const deeplCacheFile = resolve(root, "data-raw/deepl-cache.json");
   let deeplCache: Record<string, string> = {};
   if (existsSync(deeplCacheFile)) {
@@ -159,10 +192,128 @@ async function main(): Promise<void> {
     }
   }
 
+  // 2. Load Single-Kanji JLPT dataset
   const kanjiFile = resolve(root, "data-raw/kanji_jlpt_only.json");
   const kanjiMap: Record<string, RawKanji> = existsSync(kanjiFile)
     ? (JSON.parse(await readFile(kanjiFile, "utf8")) as Record<string, RawKanji>)
     : {};
+
+  // 3. Load Main Dictionary Index dataset
+  const dictIndexFile = resolve(root, "public/data/v1/dictionary-index.json");
+  let dictData: RawDictionaryIndex = {};
+  if (existsSync(dictIndexFile)) {
+    try {
+      dictData = JSON.parse(await readFile(dictIndexFile, "utf8")) as RawDictionaryIndex;
+    } catch {
+      dictData = {};
+    }
+  }
+
+  const dictVocabMap = new Map<string, string>();
+  if (Array.isArray(dictData.vocab)) {
+    for (const v of dictData.vocab) {
+      const gloss = v.meanings?.find((m) => m && m.trim())?.trim();
+      if (!gloss || isJapaneseText(gloss)) continue;
+      const cleanW = v.word?.trim().normalize("NFKC");
+      const cleanR = katakanaToHiragana(v.reading?.trim() ?? "").normalize("NFKC");
+      if (cleanW && !dictVocabMap.has(cleanW)) dictVocabMap.set(cleanW, gloss);
+      if (cleanR && !dictVocabMap.has(cleanR)) dictVocabMap.set(cleanR, gloss);
+      if (cleanW && cleanR && !dictVocabMap.has(`${cleanW}\u0000${cleanR}`)) {
+        dictVocabMap.set(`${cleanW}\u0000${cleanR}`, gloss);
+      }
+    }
+  }
+
+  const dictKanjiMap = new Map<string, string>();
+  if (dictData.kanji) {
+    for (const [char, k] of Object.entries(dictData.kanji)) {
+      const gloss = k.label?.trim() || k.meanings?.find((m) => m && m.trim())?.trim();
+      if (gloss && !isJapaneseText(gloss)) {
+        dictKanjiMap.set(char, gloss);
+      }
+    }
+  }
+
+  // 4. Load OpenJLPT and Public JLPT vocabularies
+  const jlptVocabMap = new Map<string, string>();
+  const levels: Array<{ source: string; level: ShiritoriLevel }> = [
+    { source: "n5", level: 5 },
+    { source: "n4", level: 4 },
+    { source: "n3", level: 3 },
+    { source: "n2", level: 2 },
+    { source: "n1", level: 1 },
+  ];
+
+  for (const { source } of levels) {
+    const files = [
+      resolve(root, `src/data/openjlpt/vocab/${source}.json`),
+      resolve(root, `public/data/v1/vocabulary/${source.toUpperCase()}.json`),
+    ];
+    for (const file of files) {
+      if (!existsSync(file)) continue;
+      const rows = JSON.parse(await readFile(file, "utf8")) as RawVocabularyRow[];
+      for (const row of rows) {
+        if (!isNounPos(row.pos)) continue;
+        const w = row.word?.trim().normalize("NFKC") ?? "";
+        const r = katakanaToHiragana(row.reading?.trim() ?? "").normalize("NFKC");
+        const meaning = row.meanings?.find((m) => m && m.trim())?.trim() ?? "";
+        if (!meaning || isJapaneseText(meaning)) continue;
+        if (w && !jlptVocabMap.has(w)) jlptVocabMap.set(w, meaning);
+        if (r && !jlptVocabMap.has(r)) jlptVocabMap.set(r, meaning);
+        if (w && r && !jlptVocabMap.has(`${w}\u0000${r}`)) {
+          jlptVocabMap.set(`${w}\u0000${r}`, meaning);
+        }
+      }
+    }
+  }
+
+  // Comprehensive Meaning Resolver
+  function resolveGloss(word: string, reading: string): string | undefined {
+    const cleanW = word.trim().normalize("NFKC");
+    const cleanR = katakanaToHiragana(reading.trim()).normalize("NFKC").replace(/[\s・]/g, "");
+
+    // 0. Curated Overrides
+    if (MEANING_OVERRIDES[cleanW]) return MEANING_OVERRIDES[cleanW];
+    if (MEANING_OVERRIDES[cleanR]) return MEANING_OVERRIDES[cleanR];
+
+    // 1. JLPT Vocab
+    const jlptMatch =
+      jlptVocabMap.get(`${cleanW}\u0000${cleanR}`) ??
+      jlptVocabMap.get(cleanW) ??
+      jlptVocabMap.get(cleanR);
+    if (jlptMatch && !isJapaneseText(jlptMatch)) return jlptMatch;
+
+    // 2. Dictionary Index Vocab
+    const dictMatch =
+      dictVocabMap.get(`${cleanW}\u0000${cleanR}`) ??
+      dictVocabMap.get(cleanW) ??
+      dictVocabMap.get(cleanR);
+    if (dictMatch && !isJapaneseText(dictMatch)) return dictMatch;
+
+    // 3. Single-kanji meanings
+    if ([...cleanW].length === 1 && /[\u4e00-\u9faf]/.test(cleanW)) {
+      const kEntry = kanjiMap[cleanW];
+      const kMeaning = kEntry?.meanings?.find((m) => m && m.trim())?.trim();
+      if (kMeaning) return kMeaning;
+
+      const dKanjiMeaning = dictKanjiMap.get(cleanW);
+      if (dKanjiMeaning) return dKanjiMeaning;
+    }
+
+    // 4. DeepL Cache
+    const cachedGloss =
+      deeplCache[`ja->en:gloss:${cleanW}`] ?? deeplCache[`ja->en:gloss:${cleanR}`];
+    if (
+      cachedGloss &&
+      !isJapaneseText(cachedGloss) &&
+      cachedGloss !== cleanW &&
+      cachedGloss !== cleanR
+    ) {
+      return cachedGloss;
+    }
+
+    return undefined;
+  }
 
   const addWord = (
     word: string,
@@ -186,15 +337,12 @@ async function main(): Promise<void> {
       !resolvedMeaning ||
       resolvedMeaning === cleanWord ||
       resolvedMeaning === cleanReading ||
-      /[\u3040-\u30ff\u4e00-\u9faf]/.test(resolvedMeaning);
+      isJapaneseText(resolvedMeaning);
 
     if (isJapaneseFallback) {
-      const cachedGloss =
-        deeplCache[`ja->en:gloss:${cleanWord}`] ??
-        deeplCache[`ja->en:gloss:${cleanReading}`] ??
-        kanjiMap[cleanWord]?.meanings?.[0]?.trim();
-      if (cachedGloss) {
-        resolvedMeaning = cachedGloss;
+      const found = resolveGloss(cleanWord, cleanReading);
+      if (found) {
+        resolvedMeaning = found;
       }
     }
 
@@ -214,20 +362,12 @@ async function main(): Promise<void> {
     }
   };
 
-  // 1. Add curated everyday words first
+  // 1. Add Curated Words
   for (const item of CURATED_WORDS) {
     addWord(item.word, item.kana, item.meaning, item.jlpt, "curated");
   }
 
-  // 2. Load OpenJLPT vocabulary
-  const levels: Array<{ source: string; level: ShiritoriLevel }> = [
-    { source: "n5", level: 5 },
-    { source: "n4", level: 4 },
-    { source: "n3", level: 3 },
-    { source: "n2", level: 2 },
-    { source: "n1", level: 1 },
-  ];
-
+  // 2. Add OpenJLPT vocabulary
   for (const { source, level } of levels) {
     const file = resolve(root, `src/data/openjlpt/vocab/${source}.json`);
     if (!existsSync(file)) continue;
@@ -243,7 +383,7 @@ async function main(): Promise<void> {
     }
   }
 
-  // 3. Load Public JLPT vocabulary datasets
+  // 3. Add Public JLPT vocabulary datasets
   for (const { source, level } of levels) {
     const file = resolve(root, `public/data/v1/vocabulary/${source.toUpperCase()}.json`);
     if (!existsSync(file)) continue;
@@ -259,7 +399,7 @@ async function main(): Promise<void> {
     }
   }
 
-  // 4. Load single-kanji kun'yomi noun readings from data-raw/kanji_jlpt_only.json
+  // 4. Add single-kanji kun'yomi noun readings from data-raw/kanji_jlpt_only.json
   for (const [char, k] of Object.entries(kanjiMap)) {
     const jlptLevel = ([1, 2, 3, 4, 5].includes(k.jlpt) ? k.jlpt : 5) as ShiritoriLevel;
     const meaning = k.meanings?.[0]?.trim() ?? char;
@@ -274,25 +414,79 @@ async function main(): Promise<void> {
 
   // 5. Load Kuromoji IPADIC Lexicon
   const dicPath = resolve(root, "node_modules/kuromoji/dict");
-  const { validReadings, kuromojiNouns } = await loadKuromojiNouns(dicPath);
+  const { rawReadings, kuromojiNouns } = await loadKuromojiNouns(dicPath);
 
-  // Add rich Kuromoji nouns to ensure words.json has 12,000–20,000+ words
+  // Add rich Kuromoji nouns to ensure words.json has 18,000 words
   for (const { word, kana } of kuromojiNouns) {
     if (deduped.size >= 18000) break;
     if (kana.length >= 2 && kana.length <= 6) {
-      addWord(word, kana, word !== kana ? word : kana, 4, "kuromoji");
+      const gloss = resolveGloss(word, kana) ?? (word !== kana ? word : kana);
+      addWord(word, kana, gloss, 4, "kuromoji");
     }
   }
 
-  // Ensure curated words and deduped words are also present in validReadings
+  // Build raw validReadings map (kana -> surface)
+  const validReadingsRaw: Record<string, string> = { ...rawReadings };
   for (const item of CURATED_WORDS) {
-    if (!validReadings[item.kana]) {
-      validReadings[item.kana] = item.word;
+    if (!validReadingsRaw[item.kana]) {
+      validReadingsRaw[item.kana] = item.word;
     }
   }
   for (const item of deduped.values()) {
-    if (!validReadings[item.kana]) {
-      validReadings[item.kana] = item.word;
+    if (!validReadingsRaw[item.kana]) {
+      validReadingsRaw[item.kana] = item.word;
+    }
+  }
+
+  // Convert to Tuple Map: kana -> [surface, meaning]
+  const validReadingsTuple: Record<string, [string, string]> = {};
+  const missingForDeepL: string[] = [];
+
+  for (const [kana, surface] of Object.entries(validReadingsRaw)) {
+    const gloss = resolveGloss(surface, kana) ?? deduped.get(`${surface}\u0000${kana}`)?.meaning;
+    if (gloss && !isJapaneseText(gloss) && gloss !== surface && gloss !== kana) {
+      validReadingsTuple[kana] = [surface, gloss];
+    } else {
+      validReadingsTuple[kana] = [surface, "valid noun"];
+      if (kana.length >= 2 && kana.length <= 5) {
+        missingForDeepL.push(surface);
+      }
+    }
+  }
+
+  // DeepL Batch Pass for missing common 2-5 mora nouns (capped at <= 25,000 characters)
+  const { apiKey } = getDeepLConfig();
+  if (apiKey && missingForDeepL.length > 0 && !process.argv.includes("--no-deepl")) {
+    try {
+      const client = new DeepLClient(deeplCacheFile);
+      await client.loadCache();
+      const uniqueMissing = [...new Set(missingForDeepL)];
+      console.log(`[DeepL] Checking batch pass for ${uniqueMissing.length} missing common nouns...`);
+      const { results, stats } = await client.translateBatch(uniqueMissing, {
+        mode: "gloss",
+        limitChars: 25000,
+      });
+
+      console.log(
+        `[DeepL] Batch finished: ${stats.translatedTexts} translated (${stats.translatedChars} chars).`
+      );
+
+      // Apply newly translated results to validReadingsTuple and deduped words
+      for (const [kana, [surface, currentMeaning]] of Object.entries(validReadingsTuple)) {
+        if (currentMeaning === "valid noun") {
+          const fresh = results.get(surface) ?? results.get(kana);
+          if (fresh && !isJapaneseText(fresh)) {
+            validReadingsTuple[kana] = [surface, fresh];
+            const dedupedKey = `${surface}\u0000${kana}`;
+            const existingWord = deduped.get(dedupedKey);
+            if (existingWord && !hasEnglishGloss(existingWord)) {
+              existingWord.meaning = fresh;
+            }
+          }
+        }
+      }
+    } catch (deeplErr) {
+      console.warn("[DeepL] Translation pass encountered error, proceeding gracefully:", deeplErr);
     }
   }
 
@@ -304,10 +498,16 @@ async function main(): Promise<void> {
   const validPath = resolve(outDir, "valid-readings.json");
 
   await writeFile(wordsPath, `${JSON.stringify(outputWords)}\n`, "utf8");
-  await writeFile(validPath, `${JSON.stringify(validReadings)}\n`, "utf8");
+  await writeFile(validPath, `${JSON.stringify(validReadingsTuple)}\n`, "utf8");
+
+  const resolvedTupleCount = Object.values(validReadingsTuple).filter(
+    ([, meaning]) => meaning && meaning !== "valid noun"
+  ).length;
 
   console.log(`✓ Built Shiritori rich words: ${outputWords.length} records -> public/data/v1/shiritori/words.json`);
-  console.log(`✓ Built Shiritori valid readings: ${Object.keys(validReadings).length} entries -> public/data/v1/shiritori/valid-readings.json`);
+  console.log(
+    `✓ Built Shiritori valid readings tuple: ${Object.keys(validReadingsTuple).length} entries (${resolvedTupleCount} with full English definitions) -> public/data/v1/shiritori/valid-readings.json`
+  );
 }
 
 void main().catch((error: unknown) => {
