@@ -53,7 +53,7 @@ export const KanjiReadingPill: React.FC<KanjiReadingPillProps> = ({
         ${isSm ? "px-2 py-0.5 text-xs" : "px-2.5 py-1 text-sm"}
         ${
           isThisActive
-            ? "border-[var(--primary)] text-[var(--primary)] bg-[var(--primary-subtle,#fff1f2)] font-bold shadow-sm scale-105 animate-pulse"
+            ? "border-[var(--primary)] text-[var(--primary)] dark:text-[var(--primary-fg)] bg-[var(--sakura-light)] font-bold shadow-sm scale-105 animate-pulse"
             : "border-[var(--line,#e2e8f0)] dark:border-neutral-800 bg-[var(--surface,#ffffff)] text-[var(--ink,#1e293b)] hover:border-[var(--primary)] hover:text-[var(--primary)] hover:bg-[var(--surface-hover,#f8fafc)]"
         }
         active:scale-95

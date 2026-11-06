@@ -40,6 +40,7 @@ describe("Shiritori Session Navigation & Quit Guard", () => {
     render(<ShiritoriPlayPage />);
     const brandLink = await screen.findByRole("link", { name: /shiritori home/i });
     expect(brandLink.getAttribute("href")).toBe("/games/shiritori");
+    await screen.findByRole("heading", { name: "しりとり" });
   });
 
   it("shows quit confirmation dialog on browser back and navigates to /games/shiritori on confirm", async () => {
@@ -51,7 +52,7 @@ describe("Shiritori Session Navigation & Quit Guard", () => {
       window.dispatchEvent(new PopStateEvent("popstate"));
     });
 
-    const dialog = screen.getByRole("dialog", { name: /quit this game/i });
+    const dialog = await screen.findByRole("dialog", { name: /quit this game/i });
     expect(dialog).toBeTruthy();
 
     // Clicking "Stay" closes dialog

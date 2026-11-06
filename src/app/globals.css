@@ -236,6 +236,13 @@ html[data-theme="dark"] .kana-card {
     height: 52px;
   }
 }
+@media (max-width: 640px) {
+  .kana-card-shell {
+    width: min(76vw, 340px);
+    min-height: 0;
+    aspect-ratio: 3 / 4;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   *:not(.stroke-anim-path):not(.stroke-anim-marker),
   *::before,

@@ -54,5 +54,13 @@ describe("AudioButton component", () => {
     const button = screen.getByRole("button");
     expect(button.hasAttribute("disabled")).toBe(true);
   });
+
+  it("supports vocab mode and custom onPlay handler", () => {
+    const customPlay = vi.fn();
+    render(<AudioButton text="大勢" reading="おおぜい" mode="vocab" onPlay={customPlay} />);
+    const button = screen.getByRole("button", { name: /Listen to pronunciation of 大勢/i });
+    fireEvent.click(button);
+    expect(customPlay).toHaveBeenCalledTimes(1);
+  });
 });
 

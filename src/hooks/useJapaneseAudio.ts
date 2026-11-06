@@ -6,28 +6,40 @@ import {
   toKanaAudioKey,
   resolveKanjiReadingAudio,
   normalizeKanjiReading,
+  resolveVocabAudio,
+  resolveSentenceAudio,
 } from "@/engine/audio";
 
 const STORAGE_KEY = "kana-autoplay-audio";
+const SPEED_KEY = "kana-playback-speed";
 
 interface AudioState {
   isPlaying: boolean;
   activeKey: string | null;
   autoPlayEnabled: boolean;
+  playbackSpeed: number;
 }
 
 let state: AudioState = {
   isPlaying: false,
   activeKey: null,
   autoPlayEnabled: true,
+  playbackSpeed: 1,
 };
 
-// Initialize autoPlayEnabled from localStorage if in browser
+// Initialize autoPlayEnabled and playbackSpeed from localStorage if in browser
 if (typeof window !== "undefined") {
   try {
     const saved = window.localStorage.getItem(STORAGE_KEY);
     if (saved !== null) {
       state.autoPlayEnabled = saved === "true";
+    }
+    const savedSpeed = window.localStorage.getItem(SPEED_KEY);
+    if (savedSpeed !== null) {
+      const parsed = parseFloat(savedSpeed);
+      if (parsed === 1 || parsed === 1.5 || parsed === 2) {
+        state.playbackSpeed = parsed;
+      }
     }
   } catch {
     // Ignore storage errors (private browsing, etc.)
@@ -63,11 +75,13 @@ function getServerSnapshot(): AudioState {
     isPlaying: false,
     activeKey: null,
     autoPlayEnabled: true,
+    playbackSpeed: 1,
   };
 }
 
 let globalAudio: HTMLAudioElement | null = null;
 let sequenceAbortController: { aborted: boolean } | null = null;
+let currentAudioResolver: (() => void) | null = null;
 
 function stopCurrentPlayback() {
   if (typeof window === "undefined") return;
@@ -96,10 +110,20 @@ function stopCurrentPlayback() {
     }
   }
 
+  if (currentAudioResolver) {
+    const resolve = currentAudioResolver;
+    currentAudioResolver = null;
+    resolve();
+  }
+
   updateState({ isPlaying: false, activeKey: null });
 }
 
-function fallbackToSpeechAsync(ttsText: string, slug: string): Promise<void> {
+function fallbackToSpeechAsync(
+  ttsText: string,
+  slug: string,
+  baseRate: number = 0.92
+): Promise<void> {
   return new Promise((resolve) => {
     if (typeof window === "undefined" || !("speechSynthesis" in window)) {
       updateState({ isPlaying: false, activeKey: null });
@@ -111,7 +135,7 @@ function fallbackToSpeechAsync(ttsText: string, slug: string): Promise<void> {
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(ttsText);
       utterance.lang = "ja-JP";
-      utterance.rate = 0.92;
+      utterance.rate = baseRate * state.playbackSpeed;
 
       const voices = window.speechSynthesis.getVoices();
       const jaVoice = voices.find((v) => v.lang === "ja-JP" || v.lang.startsWith("ja"));
@@ -157,22 +181,32 @@ function playAudioItemAsync(src: string, ttsText: string, slug: string): Promise
     const audio = globalAudio;
     audio.src = src;
 
+    try {
+      audio.playbackRate = state.playbackSpeed;
+      audio.defaultPlaybackRate = state.playbackSpeed;
+    } catch {
+      // Ignore
+    }
+
     let hasEndedOrErrored = false;
 
     const finish = () => {
       if (hasEndedOrErrored) return;
       hasEndedOrErrored = true;
+      currentAudioResolver = null;
       audio.onended = null;
       audio.onerror = null;
       updateState({ isPlaying: false, activeKey: null });
       resolve();
     };
 
+    currentAudioResolver = finish;
     audio.onended = finish;
 
     audio.onerror = () => {
       if (hasEndedOrErrored) return;
       hasEndedOrErrored = true;
+      currentAudioResolver = null;
       fallbackToSpeechAsync(ttsText, slug).then(finish);
     };
 
@@ -184,12 +218,14 @@ function playAudioItemAsync(src: string, ttsText: string, slug: string): Promise
         playPromise.catch(() => {
           if (hasEndedOrErrored) return;
           hasEndedOrErrored = true;
+          currentAudioResolver = null;
           fallbackToSpeechAsync(ttsText, slug).then(finish);
         });
       }
     } catch {
       if (hasEndedOrErrored) return;
       hasEndedOrErrored = true;
+      currentAudioResolver = null;
       fallbackToSpeechAsync(ttsText, slug).then(finish);
     }
   });
@@ -265,6 +301,95 @@ export function useJapaneseAudio() {
     }
   }, []);
 
+  const playKanaSequence = useCallback(
+    async (items: Array<{ char: string; romaji?: string }>) => {
+      if (typeof window === "undefined" || !Array.isArray(items) || items.length === 0) {
+        return;
+      }
+
+      stopCurrentPlayback();
+
+      const controller = { aborted: false };
+      sequenceAbortController = controller;
+
+      for (let i = 0; i < items.length; i++) {
+        if (controller.aborted) break;
+        const item = items[i];
+        if (!item?.char) continue;
+
+        const payload = resolveKanaAudio({
+          char: item.char,
+          romaji: item.romaji ? [item.romaji] : undefined,
+        });
+        await playAudioItemAsync(payload.src, payload.ttsText, payload.slug);
+
+        if (controller.aborted) break;
+
+        if (i < items.length - 1) {
+          await new Promise((r) => setTimeout(r, 320));
+        }
+      }
+
+      if (sequenceAbortController === controller) {
+        sequenceAbortController = null;
+      }
+    },
+    []
+  );
+
+  const setPlaybackSpeed = useCallback((speed: number) => {
+    updateState({ playbackSpeed: speed });
+    if (globalAudio) {
+      try {
+        globalAudio.playbackRate = speed;
+        globalAudio.defaultPlaybackRate = speed;
+      } catch {
+        // Ignore
+      }
+    }
+    if (typeof window !== "undefined") {
+      try {
+        window.localStorage.setItem(SPEED_KEY, String(speed));
+      } catch {
+        // Ignore
+      }
+    }
+  }, []);
+
+  const playKanaAsync = useCallback(async (char: string, primaryRomaji?: string) => {
+    if (typeof window === "undefined" || !char) return;
+
+    stopCurrentPlayback();
+
+    const payload = resolveKanaAudio({
+      char,
+      romaji: primaryRomaji ? [primaryRomaji] : undefined,
+    });
+
+    await playAudioItemAsync(payload.src, payload.ttsText, payload.slug);
+  }, []);
+
+  const playVocab = useCallback(
+    (item: { word: string; reading?: string; kana?: string }) => {
+      if (typeof window === "undefined" || !item) return;
+
+      stopCurrentPlayback();
+
+      const payload = resolveVocabAudio(item);
+      void playAudioItemAsync(payload.src, payload.ttsText, payload.key);
+    },
+    []
+  );
+
+  const playSentence = useCallback((sentenceJa: string, id?: string) => {
+    if (typeof window === "undefined" || !sentenceJa) return;
+
+    stopCurrentPlayback();
+
+    const payload = resolveSentenceAudio(sentenceJa, id);
+    void fallbackToSpeechAsync(payload.ttsText, payload.key, payload.rate);
+  }, []);
+
   useEffect(() => {
     return () => {
       // Component unmount does not disrupt audio singleton
@@ -275,13 +400,21 @@ export function useJapaneseAudio() {
     isPlaying: current.isPlaying,
     activeKey: current.activeKey,
     autoPlayEnabled: current.autoPlayEnabled,
+    playbackSpeed: current.playbackSpeed,
+    setPlaybackSpeed,
     setAutoPlayEnabled,
     playKana,
+    playKanaAsync,
+    playKanaSequence,
     playReading,
     playReadingSequence,
+    playVocab,
+    playSentence,
     stopAudio,
     toKanaAudioKey,
     normalizeKanjiReading,
     resolveKanjiReadingAudio,
+    resolveVocabAudio,
+    resolveSentenceAudio,
   };
 }

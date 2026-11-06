@@ -140,6 +140,30 @@ function KanaResultContent() {
             </div>
           ))}
         </div>
-      <div className="mt-5 flex flex-col gap-2 sm:flex-row"><button type="button" onClick={()=>practice({weak:true})} disabled={weakIds.length===0} className="secondary-button flex h-12 flex-1 items-center justify-center gap-2 rounded-md border text-sm font-bold disabled:cursor-not-allowed disabled:opacity-40"><RotateCcw size={17}/>Practice weak characters ({weakIds.length})</button><button type="button" onClick={()=>practice({})} className="primary-button flex h-12 flex-1 items-center justify-center gap-2 rounded-md text-sm font-bold">Play again <ArrowRight size={17}/></button><button type="button" onClick={()=>router.push("/games/kana")} className="secondary-button flex h-12 flex-1 items-center justify-center rounded-md border text-sm font-bold">Change settings</button></div>
+      <div className="mt-5 grid grid-cols-1 gap-2 sm:grid-cols-3">
+        <button
+          type="button"
+          onClick={() => practice({ weak: true })}
+          disabled={weakIds.length === 0}
+          className="secondary-button flex min-h-12 w-full items-center justify-center gap-2 rounded-md border px-4 py-3 text-sm leading-snug font-bold disabled:cursor-not-allowed disabled:opacity-40"
+        >
+          <RotateCcw size={17} />
+          Practice weak characters ({weakIds.length})
+        </button>
+        <button
+          type="button"
+          onClick={() => practice({})}
+          className="primary-button flex min-h-12 w-full items-center justify-center gap-2 rounded-md px-4 py-3 text-sm leading-snug font-bold"
+        >
+          Play again <ArrowRight size={17} />
+        </button>
+        <button
+          type="button"
+          onClick={() => router.push("/games/kana")}
+          className="secondary-button flex min-h-12 w-full items-center justify-center rounded-md border px-4 py-3 text-sm leading-snug font-bold"
+        >
+          Change settings
+        </button>
+      </div>
     </div></section></GameLayout>;
 }

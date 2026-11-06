@@ -7,7 +7,17 @@ const mockPush = vi.fn();
 const { mockPlayKana } = vi.hoisted(() => ({ mockPlayKana: vi.fn() }));
 
 vi.mock("@/hooks/useJapaneseAudio", () => ({
-  useJapaneseAudio: () => ({ playKana: mockPlayKana }),
+  useJapaneseAudio: () => ({
+    playKana: mockPlayKana,
+    playKanaAsync: vi.fn().mockResolvedValue(undefined),
+    playKanaSequence: vi.fn(),
+    stopAudio: vi.fn(),
+    isPlaying: false,
+    activeKey: null,
+    playbackSpeed: 1,
+    setPlaybackSpeed: vi.fn(),
+    toKanaAudioKey: () => "",
+  }),
 }));
 
 vi.mock("next/navigation", () => ({

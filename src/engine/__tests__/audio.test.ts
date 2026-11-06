@@ -9,6 +9,9 @@ import {
   normalizeKanjiReading,
   resolveKanjiReadingAudio,
   buildKanjiReadAllQueue,
+  resolveVocabAudio,
+  resolveSentenceAudio,
+  cleanSentenceForAudio,
 } from "../audio";
 
 describe("audio engine", () => {
@@ -246,6 +249,58 @@ describe("audio engine", () => {
       expect(buildKanjiReadAllQueue({})).toEqual([]);
       expect(buildKanjiReadAllQueue({ on: ["シン"] })).toEqual(["シン"]);
       expect(buildKanjiReadAllQueue({ kun: ["あたらしい"] })).toEqual(["あたらしい"]);
+    });
+  });
+
+  describe("resolveVocabAudio", () => {
+    it("guarantees ttsText uses normalized phonetic reading rather than guessing kanji readings", () => {
+      const vocab = resolveVocabAudio({ word: "大勢", reading: "おおぜい" });
+      expect(vocab.ttsText).toBe("おおぜい");
+      expect(vocab.lang).toBe("ja-JP");
+      expect(vocab.src).toBe(`/audio/vocab/${encodeURIComponent("おおぜい")}.mp3`);
+      expect(vocab.key).toBe("おおぜい");
+    });
+
+    it("reuses single-mora kana static audio if available", () => {
+      const vocab = resolveVocabAudio({ word: "絵", reading: "え" });
+      expect(vocab.ttsText).toBe("え");
+      expect(vocab.src).toBe("/audio/kana/e.mp3");
+    });
+
+    it("normalizes Katakana reading to Hiragana", () => {
+      const vocab = resolveVocabAudio({ word: "水", reading: "ミズ" });
+      expect(vocab.ttsText).toBe("みず");
+      expect(vocab.src).toBe(`/audio/vocab/${encodeURIComponent("みず")}.mp3`);
+    });
+
+    it("falls back to word when reading/kana are omitted", () => {
+      const vocab = resolveVocabAudio({ word: "ありがとう" });
+      expect(vocab.ttsText).toBe("ありがとう");
+      expect(vocab.src).toBe(`/audio/vocab/${encodeURIComponent("ありがとう")}.mp3`);
+    });
+  });
+
+  describe("resolveSentenceAudio & cleanSentenceForAudio", () => {
+    it("cleanly strips ruby annotations and bracketed furigana", () => {
+      const rawRuby = "<ruby>漢字<rt>かんじ</rt></ruby>";
+      expect(cleanSentenceForAudio(rawRuby)).toBe("漢字");
+
+      const rawBracket = "漢字[かんじ]";
+      expect(cleanSentenceForAudio(rawBracket)).toBe("漢字");
+    });
+
+    it("strips markdown formatting and preserves surrounding text", () => {
+      const markdown = "**わたし**は毎日*日本語*を勉強します。";
+      expect(cleanSentenceForAudio(markdown)).toBe("わたしは毎日日本語を勉強します。");
+    });
+
+    it("resolves full sentence audio payload with appropriate speech rate", () => {
+      const sentence = "<ruby>学校<rt>がっこう</rt></ruby>へ**行く**[いく]。";
+      const resolved = resolveSentenceAudio(sentence, "sent-1");
+      expect(resolved.key).toBe("sent-1");
+      expect(resolved.ttsText).toBe("学校へ行く。");
+      expect(resolved.lang).toBe("ja-JP");
+      expect(resolved.rate).toBe(0.95);
     });
   });
 });

@@ -1,7 +1,7 @@
 "use client";
 
 import { Suspense, useEffect, useReducer, useRef, useState, type FormEvent } from "react";
-import { Check, Sparkles, X } from "lucide-react";
+import { Check, Sparkles, Volume2, VolumeX, X } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 import { loadVocabularyData, vocabularyLevels, type VocabularyLevel } from "@/data/vocabulary";
 import { checkVocabularyAnswer } from "@/engine/vocabularyMatcher";
@@ -20,6 +20,8 @@ import {
 import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
 import { ingestVocabularySession } from "@/lib/srs/service";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
+import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
+import { AudioButton } from "@/components/ui/AudioButton";
 
 export default function VocabularyPlayPage() {
   return (
@@ -150,6 +152,13 @@ function VocabularyGame({
       ].sort((a, b) => a - b)
     : [];
   const resolved = result ? result.status !== "unanswered" : false;
+  const { playVocab, autoPlayEnabled, setAutoPlayEnabled } = useJapaneseAudio();
+
+  useEffect(() => {
+    if (resolved && autoPlayEnabled && question) {
+      playVocab({ word: question.word, reading: question.reading });
+    }
+  }, [resolved, autoPlayEnabled, question?.id, question?.word, question?.reading, playVocab]);
 
   useEffect(() => {
     answerInput.current?.focus();
@@ -315,13 +324,40 @@ function VocabularyGame({
               </div>
               <p className="mt-1 text-right text-xs text-[var(--muted)]">{completed} completed</p>
             </div>
-            <button
-              type="button"
-              onClick={() => finish(state, true)}
-              className="secondary-button min-h-11 rounded-md border px-4 py-2 text-sm font-bold"
-            >
-              End session
-            </button>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onMouseDown={(e) => e.preventDefault()}
+                onClick={() => setAutoPlayEnabled(!autoPlayEnabled)}
+                aria-pressed={autoPlayEnabled}
+                aria-label={autoPlayEnabled ? "Disable auto-play on reveal" : "Enable auto-play on reveal"}
+                title={autoPlayEnabled ? "Auto-play audio on reveal (Enabled)" : "Auto-play audio on reveal (Disabled)"}
+                className={`inline-flex min-h-11 items-center gap-2 rounded-md border px-3 text-xs font-bold transition-colors cursor-pointer select-none ${
+                  autoPlayEnabled
+                    ? "border-[var(--primary)] bg-[var(--sakura-light)] text-[var(--primary)] dark:text-[var(--primary-fg)] shadow-xs"
+                    : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)] hover:border-[var(--sakura)] hover:text-[var(--ink)]"
+                }`}
+              >
+                {autoPlayEnabled ? (
+                  <>
+                    <Volume2 className="size-4 shrink-0 text-[var(--primary)] dark:text-[var(--primary-fg)]" aria-hidden="true" />
+                    <span>Auto-play on</span>
+                  </>
+                ) : (
+                  <>
+                    <VolumeX className="size-4 shrink-0 text-[var(--muted)]" aria-hidden="true" />
+                    <span>Auto-play off</span>
+                  </>
+                )}
+              </button>
+              <button
+                type="button"
+                onClick={() => finish(state, true)}
+                className="secondary-button min-h-11 rounded-md border px-4 py-2 text-sm font-bold"
+              >
+                End session
+              </button>
+            </div>
           </div>
 
           <div className="flex flex-1 flex-col items-center justify-center py-6">
@@ -380,6 +416,17 @@ function VocabularyGame({
                     >
                       {question.word}
                     </span>
+                    {(result.furiganaHintUsed || resolved) && (
+                      <div className="absolute bottom-4 left-4 z-20 flex items-center gap-1.5">
+                        <AudioButton
+                          mode="vocab"
+                          text={question.word}
+                          reading={question.reading}
+                          size="sm"
+                          label={`Listen to ${question.word}`}
+                        />
+                      </div>
+                    )}
                   </div>
                 </div>
               </section>
@@ -545,31 +592,48 @@ function VocabularyGame({
                 {resolved && (
                   <section className="mt-3 rounded-md border border-[var(--line)] bg-[var(--bg)]/60 p-4">
                     <h2 className="text-sm font-bold">Learn this word</h2>
-                    <p className="mt-2 text-sm">
-                      <strong>Reading:</strong>{" "}
-                      <span className="font-japanese">{question.reading}</span>
-                    </p>
+                    <div className="mt-2 flex items-center gap-2 text-sm">
+                      <p>
+                        <strong>Reading:</strong>{" "}
+                        <span className="font-japanese">{question.reading}</span>
+                      </p>
+                      <AudioButton
+                        mode="vocab"
+                        text={question.word}
+                        reading={question.reading}
+                        size="sm"
+                        label={`Listen to pronunciation of ${question.word}`}
+                      />
+                    </div>
                     <p className="mt-1 text-sm">
                       <strong>English meaning:</strong> {expectedMeanings}
                     </p>
                     {question.examples[0] && (
                       <div className="mt-3 border-t border-[var(--line)] pt-3">
-                        <p className="font-japanese text-lg leading-relaxed">
-                          {parseExampleFurigana(
-                            question.examples[0].furigana ?? question.examples[0].ja
-                          ).map((part, index) =>
-                            part.reading ? (
-                              <ruby key={`${index}-${part.text}`}>
-                                {part.text}
-                                <rp>(</rp>
-                                <rt>{part.reading}</rt>
-                                <rp>)</rp>
-                              </ruby>
-                            ) : (
-                              <span key={`${index}-${part.text}`}>{part.text}</span>
-                            )
-                          )}
-                        </p>
+                        <div className="flex items-start justify-between gap-2">
+                          <p className="font-japanese text-lg leading-relaxed">
+                            {parseExampleFurigana(
+                              question.examples[0].furigana ?? question.examples[0].ja
+                            ).map((part, index) =>
+                              part.reading ? (
+                                <ruby key={`${index}-${part.text}`}>
+                                  {part.text}
+                                  <rp>(</rp>
+                                  <rt>{part.reading}</rt>
+                                  <rp>)</rp>
+                                </ruby>
+                              ) : (
+                                <span key={`${index}-${part.text}`}>{part.text}</span>
+                              )
+                            )}
+                          </p>
+                          <AudioButton
+                            mode="sentence"
+                            text={question.examples[0].ja}
+                            size="sm"
+                            label="Listen to example sentence"
+                          />
+                        </div>
                         <p className="mt-1 text-sm text-[var(--muted)]">
                           {question.examples[0].en}
                         </p>

@@ -15,6 +15,7 @@ import {
   type VocabularyResult,
 } from "@/lib/game/vocabulary";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
+import { AudioButton } from "@/components/ui/AudioButton";
 
 export default function VocabularyResultPage() {
   return (
@@ -212,8 +213,19 @@ function VocabularyResultContent() {
                   return (
                     <tr key={question.id} className="border-t border-[var(--line)] align-top">
                       <td className="p-3">
-                        <span className="block font-japanese text-2xl">{question.word}</span>
-                        <span className="text-xs text-[var(--muted)]">{question.level}</span>
+                        <div className="flex items-center gap-2">
+                          <div>
+                            <span className="block font-japanese text-2xl">{question.word}</span>
+                            <span className="text-xs text-[var(--muted)]">{question.level}</span>
+                          </div>
+                          <AudioButton
+                            mode="vocab"
+                            text={question.word}
+                            reading={question.reading}
+                            size="sm"
+                            label={`Listen to ${question.word}`}
+                          />
+                        </div>
                       </td>
                       <td className="p-3 font-japanese">{question.reading}</td>
                       <td className="p-3 font-semibold">{question.meanings.join("; ")}</td>

@@ -9,12 +9,10 @@ import { createKanaSession } from "@/lib/game/session";
 import {
   countCharacters,
   groupRows,
-  kanaCharacters,
   type KanaGroup,
-  type KanaScript,
   type ScriptSelection,
 } from "@/data/kana";
-import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
+import { KanaRevisionSheet } from "./KanaRevisionSheet";
 
 export default function Home() {
   const router = useRouter();
@@ -137,24 +135,20 @@ export default function Home() {
                         const active = selectedRows.includes(row.key);
                         const sample = script === "both" ? `${row.sample.hiragana} ${row.sample.katakana}` : row.sample[script];
                         return (
-                          <div
+                          <button
                             key={row.key}
-                            className={`flex min-h-[58px] items-center justify-between rounded-full border px-3 transition-colors ${
+                            type="button"
+                            onClick={() => toggleRow(row.key)}
+                            aria-pressed={active}
+                            className={`flex min-h-[58px] items-center justify-between rounded-full border px-4 transition-colors cursor-pointer text-left ${
                               active
                                 ? "border-[var(--primary)] bg-[var(--primary)] text-white"
                                 : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)]"
                             }`}
                           >
-                            <button
-                              type="button"
-                              onClick={() => toggleRow(row.key)}
-                              aria-pressed={active}
-                              className="flex flex-1 items-center justify-between text-left cursor-pointer pr-2"
-                            >
-                              <span className="text-xs font-bold">{row.romajiLabel}</span>
-                              <span className="font-japanese text-xl">{sample}</span>
-                            </button>
-                          </div>
+                            <span className="text-xs font-bold">{row.romajiLabel}</span>
+                            <span className="font-japanese text-xl">{sample}</span>
+                          </button>
                         );
                       })}
                     </div>
@@ -202,140 +196,5 @@ export default function Home() {
       </section>
       )}
     </GameLayout>
-  );
-}
-
-const revisionGroups: Array<{ key: KanaGroup; title: string }> = [
-  { key: "basic", title: "Basic" },
-  { key: "dakuten", title: "Dakuten & Handakuten" },
-  { key: "yoon", title: "Yōon" },
-  { key: "extended", title: "Extended Katakana" },
-];
-
-function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
-  const [script, setScript] = useState<KanaScript>("hiragana");
-  const [showRomaji, setShowRomaji] = useState(false);
-  const { playKana } = useJapaneseAudio();
-
-  return (
-    <main className="mx-auto w-full max-w-6xl flex-1 px-4 pb-12 sm:px-6">
-      <header className="py-6 sm:py-8">
-        <button
-          type="button"
-          onClick={onClose}
-          className="mb-5 inline-flex min-h-10 items-center gap-2 rounded-lg px-3 text-sm font-semibold text-[var(--muted)] transition-colors hover:bg-[var(--sakura-light)] hover:text-[var(--ink)]"
-        >
-          <ArrowLeft size={16} />
-          Back to practice setup
-        </button>
-        <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <p className="text-xs font-bold tracking-[0.18em] text-[var(--primary-fg)] uppercase">
-              Kana reference
-            </p>
-            <h1 className="mt-1 text-2xl font-bold sm:text-3xl">Revise the Kana</h1>
-            <p className="mt-1.5 max-w-2xl text-sm text-[var(--muted)]">
-              Review each character, then tap a tile to hear its pronunciation.
-            </p>
-          </div>
-          <div className="flex flex-wrap items-center gap-3">
-            <div
-              role="tablist"
-              aria-label="Kana script"
-              className="inline-flex rounded-xl border border-[var(--line)] bg-[var(--surface)] p-1 shadow-sm"
-            >
-              {(["hiragana", "katakana"] as KanaScript[]).map((option) => {
-                const active = script === option;
-                return (
-                  <button
-                    key={option}
-                    type="button"
-                    role="tab"
-                    aria-selected={active}
-                    onClick={() => setScript(option)}
-                    className={`min-h-10 rounded-lg px-4 text-sm font-semibold capitalize transition-colors ${
-                      active
-                        ? "bg-[var(--primary)] text-white shadow-sm"
-                        : "text-[var(--muted)] hover:bg-[var(--sakura-light)] hover:text-[var(--ink)]"
-                    }`}
-                  >
-                    {option}
-                  </button>
-                );
-              })}
-            </div>
-            <button
-              type="button"
-              role="switch"
-              aria-checked={showRomaji}
-              onClick={() => setShowRomaji((visible) => !visible)}
-              className="inline-flex min-h-11 items-center gap-3 rounded-xl border border-[var(--line)] bg-[var(--surface)] px-4 text-sm font-semibold transition-colors hover:border-[var(--sakura)]"
-            >
-              Romaji
-              <span
-                aria-hidden="true"
-                className={`relative h-5 w-9 rounded-full transition-colors ${
-                  showRomaji ? "bg-[var(--primary)]" : "bg-[var(--line)]"
-                }`}
-              >
-                <span
-                  className={`absolute top-0.5 size-4 rounded-full bg-white shadow-sm transition-transform ${
-                    showRomaji ? "translate-x-4" : "translate-x-0.5"
-                  }`}
-                />
-              </span>
-            </button>
-          </div>
-        </div>
-      </header>
-
-      <div className="space-y-6">
-        {revisionGroups.map(({ key, title }) => {
-          const characters = kanaCharacters.filter(
-            (character) => character.script === script && character.group === key
-          );
-          if (characters.length === 0) return null;
-
-          return (
-            <section
-              key={key}
-              aria-label={title}
-              className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-4 shadow-sm sm:p-6"
-            >
-              <div className="mb-4 flex items-center justify-between border-b border-[var(--line)] pb-3">
-                <h2 className="text-sm font-extrabold tracking-[0.12em] text-[var(--ink)] uppercase">
-                  {title}
-                </h2>
-                <span className="rounded-full border border-[var(--line)] bg-[var(--bg)] px-2.5 py-0.5 text-xs font-bold text-[var(--muted)] tabular-nums">
-                  {characters.length}
-                </span>
-              </div>
-              <div className="grid grid-cols-4 gap-2.5 sm:grid-cols-6 sm:gap-3 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12">
-                {characters.map((character) => {
-                  return (
-                    <button
-                      key={character.id}
-                      type="button"
-                      onClick={() => playKana(character.char, character.romaji[0])}
-                      aria-label={`Play pronunciation for ${character.char}`}
-                      className="group flex aspect-square min-w-0 flex-col items-center justify-center rounded-xl border border-[var(--line)] bg-[var(--bg)] p-2 text-center transition duration-150 hover:-translate-y-0.5 hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)]/50 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--primary)]"
-                    >
-                      <span className="font-japanese text-3xl leading-none text-[var(--ink)] sm:text-4xl">
-                        {character.char}
-                      </span>
-                      {showRomaji && (
-                        <span className="mt-2 w-full truncate text-xs font-semibold text-[var(--muted)]">
-                          {character.romaji[0]}
-                        </span>
-                      )}
-                    </button>
-                  );
-                })}
-              </div>
-            </section>
-          );
-        })}
-      </div>
-    </main>
   );
 }

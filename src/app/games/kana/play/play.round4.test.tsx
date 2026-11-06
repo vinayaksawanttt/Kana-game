@@ -134,6 +134,7 @@ describe("Play Page integration test", () => {
     render(<KanaPlayPage />);
 
     const input = screen.getByPlaceholderText("type the sound") as HTMLInputElement;
+    input.focus();
 
     // Card 0: answered correct first try
     // Check card 0 glyph displayed
@@ -152,6 +153,8 @@ describe("Play Page integration test", () => {
     // 1. Correct first try on Card 0
     fireEvent.change(input, { target: { value: romajiMap[currentGlyph!] } });
     fireEvent.submit(form);
+    expect(input.readOnly).toBe(false);
+    expect(document.activeElement).toBe(input);
 
     // Fast-forward feedback (650ms) + slide-out (420ms)
     act(() => {
@@ -182,7 +185,11 @@ describe("Play Page integration test", () => {
 
     // Card 2: skip
     const skipBtn = screen.getByLabelText("Skip character");
+    fireEvent.mouseDown(skipBtn);
+    expect(document.activeElement).toBe(input);
     fireEvent.click(skipBtn);
+    expect(input.readOnly).toBe(false);
+    expect(document.activeElement).toBe(input);
 
     // Fast forward skip reveal (1300ms) + slide-out (420ms)
     act(() => {
@@ -227,5 +234,45 @@ describe("Play Page integration test", () => {
     expect(result.cards[4].mistakes).toBe(0);
 
     vi.useRealTimers();
+  });
+
+  it("renders theme-aware auto-play button and excludes speaker icon from wrong feedback", () => {
+    mockSessionId = "session-autoplay-test";
+    const session = createKanaSession(
+      { sessionId: mockSessionId, script: "hiragana", rowKeys: ["basic:vowel"], questionCount: 5 },
+      () => 0.1
+    );
+    sessionStorage.setItem(`kana-session:${mockSessionId}`, JSON.stringify(session));
+
+    render(<KanaPlayPage />);
+
+    // Auto-play button matches theme and is enabled by default
+    const autoPlayBtn = screen.getByRole("button", { name: /auto-play/i });
+    expect(autoPlayBtn.getAttribute("aria-pressed")).toBe("true");
+    expect(autoPlayBtn.className).toContain("bg-[var(--sakura-light)]");
+    expect(autoPlayBtn.className).toContain("border-[var(--primary)]");
+    expect(screen.getByText("Auto-play on")).toBeDefined();
+
+    // Toggle off
+    fireEvent.click(autoPlayBtn);
+    expect(autoPlayBtn.getAttribute("aria-pressed")).toBe("false");
+    expect(autoPlayBtn.className).toContain("bg-[var(--surface)]");
+    expect(autoPlayBtn.className).toContain("border-[var(--line)]");
+    expect(screen.getByText("Auto-play off")).toBeDefined();
+
+    // Submit wrong guess
+    const input = screen.getByLabelText("Type the kana sound");
+    const form = input.closest("form")!;
+    fireEvent.change(input, { target: { value: "invalid_romaji" } });
+    fireEvent.submit(form);
+
+    // Shows "Not quite, try again"
+    const wrongMsg = screen.getByText("Not quite, try again");
+    expect(wrongMsg).toBeDefined();
+
+    // Verify there is no speaker button inside the "Not quite, try again" container
+    const wrongContainer = wrongMsg.closest("div")!;
+    const audioButtonsInsideWrongContainer = wrongContainer.querySelectorAll("button");
+    expect(audioButtonsInsideWrongContainer.length).toBe(0);
   });
 });

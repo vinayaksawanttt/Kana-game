@@ -49,6 +49,10 @@ describe("Result Page integration test", () => {
     expect(screen.getByText(/1 \/ 5/)).toBeDefined();
     // Mistakes: 3 (2 from card 1 + 1 from card 3)
     expect(screen.getAllByText(/Mistakes/).length).toBeGreaterThan(0);
+
+    for (const actionName of [/Practice weak characters/, /Play again/, /Change settings/]) {
+      expect(screen.getByRole("button", { name: actionName }).classList.contains("min-h-12")).toBe(true);
+    }
   });
 
   it("Play again starts new session preserving script", () => {

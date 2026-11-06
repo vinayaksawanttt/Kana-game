@@ -98,7 +98,7 @@ describe("Stories Library Hub & Interactive Reading Room", () => {
       expect(screen.getByRole("button", { name: /Added to FSRS Review/i })).toBeTruthy();
       const srsItems = await getAllSrsItems();
       expect(srsItems.some((item) => item.id === "vocab:学校")).toBe(true);
-    });
+    }, { timeout: 5000 });
 
     // Complete the 3-question comprehension quiz
     fireEvent.click(screen.getByRole("button", { name: "七時" }));

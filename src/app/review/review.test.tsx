@@ -108,4 +108,43 @@ describe("FSRS Review Hub (/review)", () => {
       "/grammar/N5/keredomo"
     );
   });
+
+  it("respects review direction for audio: hides front audio in Recall mode and reveals it on back", async () => {
+    const dueTime = new Date(Date.now() - 3600 * 1000);
+    await srsDb.items.add({
+      id: "vocab:水",
+      type: "vocab",
+      level: "N5",
+      prompt: "水",
+      answer: "water",
+      reading: "みず",
+      reversePrompt: "water (fresh, cold)",
+      card: createEmptyCard(dueTime),
+    });
+
+    // Set direction to recall
+    localStorage.setItem("nihongo-review-direction", "recall");
+
+    const user = userEvent.setup();
+    render(<ReviewHubPage />);
+
+    await waitFor(() => {
+      expect(screen.getByTestId("due-total-count").textContent).toBe("1");
+    });
+
+    await user.click(screen.getByRole("button", { name: /start review/i }));
+
+    // In Recall mode, front prompt is English
+    expect(await screen.findByText("water (fresh, cold)")).toBeTruthy();
+
+    // NEVER show Japanese audio button on front in Recall mode
+    expect(screen.queryByRole("button", { name: /listen to 水/i })).toBeNull();
+
+    // Reveal answer
+    await user.click(screen.getByRole("button", { name: /show answer/i }));
+
+    // Now on revealed back, Japanese word & audio button are accessible
+    expect(await screen.findByText("水")).toBeTruthy();
+    expect(screen.getByRole("button", { name: /listen to 水/i })).toBeTruthy();
+  });
 });

@@ -3,13 +3,24 @@
 import React from "react";
 import { Volume2 } from "lucide-react";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
-import { toKanaAudioKey } from "@/engine/audio";
+import {
+  toKanaAudioKey,
+  resolveKanjiReadingAudio,
+  resolveVocabAudio,
+  resolveSentenceAudio,
+} from "@/engine/audio";
 
 export interface AudioButtonProps {
-  /** The kana or Japanese character/mora to pronounce */
+  /** The kana or Japanese character/mora/word/sentence to pronounce */
   text: string;
   /** Optional canonical romaji hint if character is non-standard */
   romaji?: string;
+  /** Optional reading (for vocab) */
+  reading?: string;
+  /** Playback mode: "kana" (default) | "reading" | "vocab" | "sentence" */
+  mode?: "kana" | "reading" | "vocab" | "sentence";
+  /** Optional custom play handler override */
+  onPlay?: () => void;
   /** Size variant */
   size?: "sm" | "md" | "lg";
   /** Optional custom accessible label or tooltip */
@@ -40,21 +51,56 @@ const SIZE_STYLES = {
 export const AudioButton: React.FC<AudioButtonProps> = ({
   text,
   romaji,
+  reading,
+  mode = "kana",
+  onPlay,
   size = "md",
   label,
   className = "",
   showText = false,
   disabled = false,
 }) => {
-  const { playKana, isPlaying, activeKey } = useJapaneseAudio();
-  const slug = toKanaAudioKey(text, romaji);
-  const isThisPlaying = isPlaying && activeKey === slug;
+  const {
+    playKana,
+    playReading,
+    playVocab,
+    playSentence,
+    isPlaying,
+    activeKey,
+  } = useJapaneseAudio();
+
+  const getActiveSlug = () => {
+    if (mode === "vocab") {
+      return resolveVocabAudio({ word: text, reading }).key;
+    }
+    if (mode === "sentence") {
+      return resolveSentenceAudio(text).key;
+    }
+    if (mode === "reading") {
+      return resolveKanjiReadingAudio(reading || text).slug;
+    }
+    return toKanaAudioKey(text, romaji);
+  };
+
+  const isThisPlaying = isPlaying && activeKey === getActiveSlug();
   const currentSize = SIZE_STYLES[size];
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation();
     if (disabled) return;
-    playKana(text, romaji);
+    if (onPlay) {
+      onPlay();
+      return;
+    }
+    if (mode === "vocab") {
+      playVocab({ word: text, reading });
+    } else if (mode === "sentence") {
+      playSentence(text);
+    } else if (mode === "reading") {
+      playReading(reading || text);
+    } else {
+      playKana(text, romaji);
+    }
   };
 
   const accessibleLabel = label ?? `Listen to pronunciation of ${text}`;
@@ -72,7 +118,7 @@ export const AudioButton: React.FC<AudioButtonProps> = ({
         ${currentSize.btn}
         ${
           isThisPlaying
-            ? "border-[var(--primary)] text-[var(--primary)] bg-[var(--primary-subtle,#fff1f2)] shadow-sm scale-105 animate-pulse"
+            ? "border-[var(--primary)] text-[var(--primary)] dark:text-[var(--primary-fg)] bg-[var(--sakura-light)] shadow-sm scale-105 animate-pulse"
             : "border-[var(--line,#e2e8f0)] dark:border-neutral-800 bg-[var(--surface,#ffffff)] text-[var(--muted,#64748b)] hover:text-[var(--primary)] hover:border-[var(--primary)] hover:bg-[var(--surface-hover,#f8fafc)]"
         }
         ${disabled ? "opacity-40 cursor-not-allowed pointer-events-none" : "active:scale-95"}

@@ -49,7 +49,12 @@ export function toTtsText(char: string): string {
   if (isExtendedKatakana(char)) {
     return char;
   }
-  return katakanaToHiragana(char);
+  const hira = katakanaToHiragana(char);
+  // Single 'い' requires terminal punctuation to prevent neural TTS glottal artifact / abrupt pitch inflection
+  if (hira === "い") {
+    return "い。";
+  }
+  return hira;
 }
 
 // Map each unique kana character to its canonical sound slug
@@ -222,4 +227,101 @@ export function buildKanjiReadAllQueue(kanji: { on?: string[]; kun?: string[] })
 
   return result.slice(0, 4);
 }
+
+export interface VocabAudioPayload {
+  key: string;
+  src: string;
+  ttsText: string;
+  lang: "ja-JP";
+}
+
+/**
+ * Resolves audio payload for a vocabulary word.
+ * Always normalizes the phonetic reading to clean Hiragana so that
+ * TTS engines pronounce the exact target reading rather than guessing
+ * alternative readings for kanji compounds (e.g. 大勢 -> おおぜい rather than たいせい).
+ *
+ * If the normalized kana is a single mora or known kana slug, reuses the
+ * static kana audio clip directly. Otherwise targets /audio/vocab/{slug}.mp3.
+ */
+export function resolveVocabAudio(item: {
+  word: string;
+  reading?: string;
+  kana?: string;
+}): VocabAudioPayload {
+  const raw = (item.reading || item.kana || item.word || "").trim();
+  // Strip brackets, furigana notations, and punctuation
+  const stripped = raw.replace(/[\[\]\(\)（）\s]/g, "");
+  // Convert standard Katakana to Hiragana (preserves 'ー' and extended katakana)
+  const normalizedKana = katakanaToHiragana(stripped);
+
+  // If this normalized reading matches a single mora kana slug, reuse it
+  const kanaSlug = CHAR_TO_SLUG_MAP.get(normalizedKana);
+  if (kanaSlug) {
+    return {
+      key: normalizedKana,
+      src: `/audio/kana/${kanaSlug}.mp3`,
+      ttsText: normalizedKana,
+      lang: "ja-JP",
+    };
+  }
+
+  const safeSlug = encodeURIComponent(normalizedKana);
+  return {
+    key: normalizedKana,
+    src: `/audio/vocab/${safeSlug}.mp3`,
+    ttsText: normalizedKana,
+    lang: "ja-JP",
+  };
+}
+
+export interface SentenceAudioPayload {
+  key: string;
+  ttsText: string;
+  lang: "ja-JP";
+  rate: number;
+}
+
+/**
+ * Cleans Japanese sentences by stripping ruby annotations (<rt>, <rp>, <ruby>),
+ * bracketed furigana (e.g. 漢字[かんじ] -> 漢字), markdown formatting (**bold**),
+ * and excessive whitespace for natural TTS pronunciation.
+ */
+export function cleanSentenceForAudio(sentenceJa: string): string {
+  if (!sentenceJa) return "";
+
+  let cleaned = sentenceJa
+    // Remove ruby pronunciation text first so only base characters remain
+    .replace(/<rt[\s\S]*?<\/rt>/gi, "")
+    .replace(/<rp[\s\S]*?<\/rp>/gi, "")
+    // Remove remaining HTML tags
+    .replace(/<[^>]+>/g, "")
+    // Remove bracketed furigana annotations: 漢字[かんじ] -> 漢字
+    .replace(/\[[^\]]+\]/g, "")
+    // Remove markdown bold / italic formatting
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/\*([^*]+)\*/g, "$1")
+    // Normalize whitespace
+    .replace(/\s+/g, " ")
+    .trim();
+
+  return cleaned;
+}
+
+/**
+ * Resolves full audio payload for a Japanese sentence.
+ */
+export function resolveSentenceAudio(
+  sentenceJa: string,
+  id?: string
+): SentenceAudioPayload {
+  const cleaned = cleanSentenceForAudio(sentenceJa);
+  return {
+    key: id || cleaned,
+    ttsText: cleaned,
+    lang: "ja-JP",
+    rate: 0.95,
+  };
+}
+
 

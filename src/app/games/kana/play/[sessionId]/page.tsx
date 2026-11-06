@@ -1,7 +1,7 @@
 "use client";
 
 import { Suspense, useCallback, useEffect, useReducer, useRef, useState } from "react";
-import { ArrowRight, X } from "lucide-react";
+import { ArrowRight, Volume2, VolumeX, X } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 import { rowMetadata } from "@/data/kana";
 import { checkAnswer, computeResult } from "@/lib/game/kana";
@@ -178,7 +178,6 @@ function KanaGame({
     const currentIndex = state.index;
     const card = state.cards[currentIndex];
     dispatch({ type: "SKIP", index: currentIndex });
-    inputRef.current?.blur();
 
     if (card && autoPlayEnabled) {
       playKana(card.char, card.romaji[0]);
@@ -264,7 +263,7 @@ function KanaGame({
           if (tag !== "BUTTON" && tag !== "A" && tag !== "INPUT") focusInput();
         }}
       >
-        <section className="mx-auto flex w-full max-w-6xl flex-1 flex-col px-5 pb-6 sm:px-8 sm:pb-8">
+        <section className="mx-auto flex w-full max-w-6xl flex-1 flex-col px-3 pb-6 sm:px-8 sm:pb-8">
           <div className="grid grid-cols-[1fr_auto] items-center gap-4 border-b border-[var(--line)] pb-4">
             <div>
               <div className="mb-2 flex items-center justify-between text-xs font-bold">
@@ -285,15 +284,26 @@ function KanaGame({
                 type="button"
                 onMouseDown={(e) => e.preventDefault()}
                 onClick={() => setAutoPlayEnabled(!autoPlayEnabled)}
+                aria-pressed={autoPlayEnabled}
                 aria-label={autoPlayEnabled ? "Disable auto-play on reveal" : "Enable auto-play on reveal"}
                 title={autoPlayEnabled ? "Auto-play audio on reveal (Enabled)" : "Auto-play audio on reveal (Disabled)"}
-                className={`inline-flex items-center gap-1.5 rounded-md border px-3 py-2 text-xs font-semibold transition-all cursor-pointer select-none ${
+                className={`inline-flex min-h-11 items-center gap-2 rounded-md border px-3 text-xs font-bold transition-colors cursor-pointer select-none ${
                   autoPlayEnabled
-                    ? "border-[var(--primary)] text-[var(--primary)] bg-[var(--primary-subtle,#fff1f2)]"
-                    : "border-[var(--line)] text-[var(--muted)] hover:text-[var(--fg)] bg-[var(--surface)]"
+                    ? "border-[var(--primary)] bg-[var(--sakura-light)] text-[var(--primary)] dark:text-[var(--primary-fg)] shadow-xs"
+                    : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)] hover:border-[var(--sakura)] hover:text-[var(--ink)]"
                 }`}
               >
-                <span>{autoPlayEnabled ? "🔊 Auto-play on" : "🔇 Auto-play off"}</span>
+                {autoPlayEnabled ? (
+                  <>
+                    <Volume2 className="size-4 shrink-0 text-[var(--primary)] dark:text-[var(--primary-fg)]" aria-hidden="true" />
+                    <span>Auto-play on</span>
+                  </>
+                ) : (
+                  <>
+                    <VolumeX className="size-4 shrink-0 text-[var(--muted)]" aria-hidden="true" />
+                    <span>Auto-play off</span>
+                  </>
+                )}
               </button>
               <button
                 type="button"
@@ -305,10 +315,10 @@ function KanaGame({
             </div>
           </div>
 
-          <div className="relative flex flex-1 flex-col items-center justify-center py-6">
-            <div className="relative mx-auto flex w-full max-w-[520px] flex-col items-center">
+          <div className="relative flex flex-1 flex-col items-center justify-center py-4 sm:py-6">
+            <div className="relative mx-auto flex w-full max-w-[520px] min-w-0 flex-col items-center">
               <div
-                className="kana-card-shell w-[clamp(280px,28vw,420px)] aspect-[3/4] min-h-[clamp(360px,50dvh,520px)]"
+                className="kana-card-shell"
                 aria-live="polite"
               >
                 <div className="kana-card-stack" aria-hidden="true">
@@ -349,12 +359,6 @@ function KanaGame({
                   >
                     <X size={16} />
                     <span>Not quite, try again</span>
-                    <AudioButton
-                      text={character.char}
-                      romaji={character.romaji[0]}
-                      size="sm"
-                      label={`Listen to ${character.char} pronunciation`}
-                    />
                   </div>
                 )}
                 {state.phase === "skipped" && (
@@ -392,28 +396,32 @@ function KanaGame({
                 }}
                 className={`answer-field answer-${state.phase} relative w-full max-w-[440px]`}
               >
-                <input
+                  <input
                   ref={inputRef}
                   value={answer}
-                  onChange={(event) => setAnswer(event.target.value)}
+                  onChange={(event) => {
+                    if (state.phase === "idle" || state.phase === "wrong") {
+                      setAnswer(event.target.value);
+                    }
+                  }}
                   onKeyDown={handleKeyDown}
-                  readOnly={state.phase !== "idle" && state.phase !== "wrong"}
                   enterKeyHint="go"
                   inputMode="text"
                   autoComplete="off"
                   autoCapitalize="none"
                   autoCorrect="off"
                   spellCheck={false}
+                  aria-label="Type the kana sound"
                   placeholder="type the sound"
                   className="answer-input"
                 />
                 <button
                   type="button"
+                  onMouseDown={(event) => event.preventDefault()}
                   onClick={skip}
                   disabled={state.phase !== "idle"}
                   aria-label="Skip character"
                   className="answer-submit"
-                  style={{ position: "absolute", right: -44 }}
                 >
                   <ArrowRight size={16} />
                 </button>

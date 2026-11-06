@@ -139,4 +139,33 @@ describe("vocabulary question interaction", () => {
     expect(columns?.children[0]).toBe(card);
     expect(columns?.children[1]).toBe(controls);
   });
+
+  it("gates audio playback until furigana hint or answer reveal, and provides auto-play toggle", async () => {
+    const user = userEvent.setup();
+    render(<VocabularyPlayPage />);
+    await screen.findByLabelText("Japanese word 会う");
+
+    // Auto-play toggle exists in top bar
+    const autoPlayBtn = screen.getByRole("button", { name: /auto-play/i });
+    expect(autoPlayBtn).toBeTruthy();
+    expect(autoPlayBtn.getAttribute("aria-pressed")).toBe("true");
+
+    // Gated before answer/hint: audio button NOT on card
+    const card = screen.getByRole("region", { name: "Vocabulary flashcard" });
+    expect(card.querySelector("button")).toBeNull();
+
+    // Reveal Furigana hint
+    await user.click(screen.getByRole("button", { name: /reveal furigana/i }));
+
+    // Now audio button is rendered on card
+    expect(card.querySelector("button")).toBeTruthy();
+
+    // Answer correctly
+    const input = screen.getByRole("textbox", { name: "English meaning" });
+    await user.type(input, "to meet");
+    await user.keyboard("{Enter}");
+
+    // Audio button is rendered in the "Learn this word" section
+    expect(await screen.findByRole("button", { name: /listen to pronunciation of 会う/i })).toBeTruthy();
+  });
 });

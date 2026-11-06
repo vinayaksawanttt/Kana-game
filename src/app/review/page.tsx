@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState, type ChangeEvent } from "react";
 import Link from "next/link";
-import { ArrowRight, BookOpen, CheckCircle2, Download, RotateCcw, Upload } from "lucide-react";
+import { ArrowRight, BookOpen, CheckCircle2, Download, RotateCcw, Upload, Volume2, VolumeX } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
 import { grammarGuideHref } from "@/data/grammar";
 import {
@@ -14,6 +14,8 @@ import {
   recordReview,
 } from "@/lib/srs/service";
 import type { SrsItem, SrsItemType } from "@/lib/srs/db";
+import { AudioButton } from "@/components/ui/AudioButton";
+import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
 
 const filterTabs: Array<{ key: "all" | SrsItemType; label: string }> = [
   { key: "all", label: "All due" },
@@ -36,6 +38,38 @@ export default function ReviewHubPage() {
   const [loading, setLoading] = useState(true);
   const [toast, setToast] = useState<{ type: "success" | "error"; message: string } | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const {
+    playKana,
+    playReading,
+    playVocab,
+    playSentence,
+    autoPlayEnabled,
+    setAutoPlayEnabled,
+  } = useJapaneseAudio();
+
+  useEffect(() => {
+    const item = queue[currentIndex];
+    if (!revealed || !autoPlayEnabled || !item || mode !== "review") return;
+    if (item.type === "kana") {
+      playKana(item.prompt, item.reading || item.answer);
+    } else if (item.type === "kanji") {
+      playReading(item.reading || item.prompt);
+    } else if (item.type === "vocab") {
+      playVocab({ word: item.prompt, reading: item.reading });
+    } else if (item.type === "grammar") {
+      playSentence(item.prompt);
+    }
+  }, [
+    revealed,
+    autoPlayEnabled,
+    queue,
+    currentIndex,
+    mode,
+    playKana,
+    playReading,
+    playVocab,
+    playSentence,
+  ]);
 
   useEffect(() => {
     try {
@@ -427,16 +461,43 @@ export default function ReviewHubPage() {
                   />
                 </div>
               </div>
-              <button
-                type="button"
-                onClick={() => {
-                  void refreshQueue();
-                  setMode("dashboard");
-                }}
-                className="secondary-button min-h-11 rounded-md border px-4 py-2 text-sm font-bold"
-              >
-                End review
-              </button>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onMouseDown={(e) => e.preventDefault()}
+                  onClick={() => setAutoPlayEnabled(!autoPlayEnabled)}
+                  aria-pressed={autoPlayEnabled}
+                  aria-label={autoPlayEnabled ? "Disable auto-play on reveal" : "Enable auto-play on reveal"}
+                  title={autoPlayEnabled ? "Auto-play audio on reveal (Enabled)" : "Auto-play audio on reveal (Disabled)"}
+                  className={`inline-flex min-h-11 items-center gap-2 rounded-md border px-3 text-xs font-bold transition-colors cursor-pointer select-none ${
+                    autoPlayEnabled
+                      ? "border-[var(--primary)] bg-[var(--sakura-light)] text-[var(--primary)] dark:text-[var(--primary-fg)] shadow-xs"
+                      : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)] hover:border-[var(--sakura)] hover:text-[var(--ink)]"
+                  }`}
+                >
+                  {autoPlayEnabled ? (
+                    <>
+                      <Volume2 className="size-4 shrink-0 text-[var(--primary)] dark:text-[var(--primary-fg)]" aria-hidden="true" />
+                      <span>Auto-play on</span>
+                    </>
+                  ) : (
+                    <>
+                      <VolumeX className="size-4 shrink-0 text-[var(--muted)]" aria-hidden="true" />
+                      <span>Auto-play off</span>
+                    </>
+                  )}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    void refreshQueue();
+                    setMode("dashboard");
+                  }}
+                  className="secondary-button min-h-11 rounded-md border px-4 py-2 text-sm font-bold"
+                >
+                  End review
+                </button>
+              </div>
             </div>
 
             {isCharacterCard ? (
@@ -476,6 +537,17 @@ export default function ReviewHubPage() {
                           ? (currentItem.reversePrompt || currentItem.answer)
                           : currentItem.prompt}
                       </span>
+                      {direction === "recognition" && (
+                        <div className="absolute bottom-4 left-4 z-20 flex items-center gap-1.5">
+                          <AudioButton
+                            mode={currentItem.type === "kana" ? "kana" : "reading"}
+                            text={currentItem.prompt}
+                            reading={currentItem.reading}
+                            size="sm"
+                            label={`Listen to ${currentItem.prompt}`}
+                          />
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -507,9 +579,18 @@ export default function ReviewHubPage() {
                       <p className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
                         {direction === "recall" ? "Japanese Character" : "Answer"}
                       </p>
-                      <p className="mt-2 text-3xl font-bold font-japanese text-[var(--ink)]">
-                        {direction === "recall" ? currentItem.prompt : currentItem.answer}
-                      </p>
+                      <div className="mt-2 flex items-center gap-2">
+                        <p className="text-3xl font-bold font-japanese text-[var(--ink)]">
+                          {direction === "recall" ? currentItem.prompt : currentItem.answer}
+                        </p>
+                        <AudioButton
+                          mode={currentItem.type === "kana" ? "kana" : "reading"}
+                          text={currentItem.prompt}
+                          reading={currentItem.reading}
+                          size="sm"
+                          label={`Listen to ${currentItem.prompt}`}
+                        />
+                      </div>
                       {currentItem.reading && (
                         <p className="mt-1 font-japanese text-base text-[var(--muted)]">
                           {direction === "recall" ? "Reading: " : ""}{currentItem.reading}
@@ -602,28 +683,39 @@ export default function ReviewHubPage() {
                       ? (currentItem.type === "vocab" ? "English Meaning / Prompt" : "Target Concept")
                       : (currentItem.type === "vocab" ? "Japanese Vocabulary" : "Target Grammar")}
                   </p>
-                  <p
-                    lang={direction === "recall" ? "en" : "ja"}
-                    className={`mx-auto max-w-2xl break-words font-bold leading-snug text-[var(--ink)] ${
-                      direction === "recall" ? "font-sans" : "font-japanese"
-                    } ${
-                      (direction === "recall"
+                  <div className="flex flex-col items-center justify-center gap-2">
+                    <p
+                      lang={direction === "recall" ? "en" : "ja"}
+                      className={`mx-auto max-w-2xl break-words font-bold leading-snug text-[var(--ink)] ${
+                        direction === "recall" ? "font-sans" : "font-japanese"
+                      } ${
+                        (direction === "recall"
+                          ? (currentItem.reversePrompt || currentItem.answer)
+                          : currentItem.prompt
+                        ).length > 25
+                          ? "text-xl sm:text-2xl"
+                          : (direction === "recall"
+                              ? (currentItem.reversePrompt || currentItem.answer)
+                              : currentItem.prompt
+                            ).length > 14
+                            ? "text-2xl sm:text-3xl"
+                            : "text-3xl sm:text-4xl"
+                      }`}
+                    >
+                      {direction === "recall"
                         ? (currentItem.reversePrompt || currentItem.answer)
-                        : currentItem.prompt
-                      ).length > 25
-                        ? "text-xl sm:text-2xl"
-                        : (direction === "recall"
-                            ? (currentItem.reversePrompt || currentItem.answer)
-                            : currentItem.prompt
-                          ).length > 14
-                          ? "text-2xl sm:text-3xl"
-                          : "text-3xl sm:text-4xl"
-                    }`}
-                  >
-                    {direction === "recall"
-                      ? (currentItem.reversePrompt || currentItem.answer)
-                      : currentItem.prompt}
-                  </p>
+                        : currentItem.prompt}
+                    </p>
+                    {direction === "recognition" && (
+                      <AudioButton
+                        mode={currentItem.type === "vocab" ? "vocab" : "sentence"}
+                        text={currentItem.prompt}
+                        reading={currentItem.reading}
+                        size="sm"
+                        label={`Listen to ${currentItem.prompt}`}
+                      />
+                    )}
+                  </div>
                   {direction !== "recall" && revealed && currentItem.reading && (
                     <p
                       lang="ja"
@@ -668,9 +760,18 @@ export default function ReviewHubPage() {
                         </p>
                         {direction === "recall" ? (
                           <div className="mt-1.5 space-y-1">
-                            <p lang="ja" className="font-japanese text-3xl font-bold text-[var(--ink)]">
-                              {currentItem.prompt}
-                            </p>
+                            <div className="flex items-center gap-2">
+                              <p lang="ja" className="font-japanese text-3xl font-bold text-[var(--ink)]">
+                                {currentItem.prompt}
+                              </p>
+                              <AudioButton
+                                mode={currentItem.type === "vocab" ? "vocab" : "sentence"}
+                                text={currentItem.prompt}
+                                reading={currentItem.reading}
+                                size="sm"
+                                label={`Listen to ${currentItem.prompt}`}
+                              />
+                            </div>
                             {currentItem.reading && (
                               <p lang="ja" className="font-japanese text-base font-medium text-[var(--primary-fg)]">
                                 {currentItem.reading}
@@ -682,9 +783,18 @@ export default function ReviewHubPage() {
                           </div>
                         ) : (
                           <>
-                            <p className="mt-1.5 text-xl font-bold leading-relaxed text-[var(--ink)] sm:text-2xl">
-                              {currentItem.answer}
-                            </p>
+                            <div className="flex items-center gap-2 mt-1.5">
+                              <p className="text-xl font-bold leading-relaxed text-[var(--ink)] sm:text-2xl">
+                                {currentItem.answer}
+                              </p>
+                              <AudioButton
+                                mode={currentItem.type === "vocab" ? "vocab" : "sentence"}
+                                text={currentItem.prompt}
+                                reading={currentItem.reading}
+                                size="sm"
+                                label={`Listen to ${currentItem.prompt}`}
+                              />
+                            </div>
                             {currentItem.reversePrompt && currentItem.reversePrompt !== currentItem.answer && (
                               <p className="mt-1 text-xs text-[var(--muted)] font-medium">
                                 Disambiguation: <span className="text-[var(--ink)] font-normal">{currentItem.reversePrompt}</span>

@@ -433,9 +433,17 @@ export default function DictionaryAnalyzerPage() {
                 <div className="mt-4 divide-y divide-[var(--line)]">
                   {results.sentences.map((sent) => (
                     <div key={sent.id} className="py-4 first:pt-0 last:pb-0">
-                      <p lang="ja" className="font-japanese text-lg font-medium text-[var(--ink)]">
-                        {sent.jp}
-                      </p>
+                      <div className="flex items-start justify-between gap-2">
+                        <p lang="ja" className="font-japanese text-lg font-medium text-[var(--ink)]">
+                          {sent.jp}
+                        </p>
+                        <AudioButton
+                          mode="sentence"
+                          text={sent.jp}
+                          size="sm"
+                          label="Listen to sentence"
+                        />
+                      </div>
                       {sent.romaji && (
                         <p className="mt-1 text-xs text-[var(--muted)]">{sent.romaji}</p>
                       )}
@@ -503,6 +511,13 @@ export default function DictionaryAnalyzerPage() {
                                   <span className="rounded-full bg-[var(--primary)] px-2 py-0.5 text-[10px] font-bold text-white">
                                     {item.level}
                                   </span>
+                                  <AudioButton
+                                    mode="vocab"
+                                    text={item.word}
+                                    reading={item.reading}
+                                    size="sm"
+                                    label={`Listen to ${item.word}`}
+                                  />
                                 </div>
                                 <p className="mt-1 text-sm font-medium text-[var(--ink)]">
                                   {item.meanings.join(", ")}
@@ -735,6 +750,13 @@ export default function DictionaryAnalyzerPage() {
                       {selectedToken.jlptLevel}
                     </span>
                   )}
+                  <AudioButton
+                    mode="vocab"
+                    text={selectedToken.baseForm || selectedToken.surface}
+                    reading={selectedToken.reading}
+                    size="sm"
+                    label={`Listen to ${selectedToken.surface}`}
+                  />
                 </div>
 
                 <p className="mt-1 text-sm font-medium text-[var(--ink)]">
