@@ -275,23 +275,24 @@ async function main(): Promise<void> {
   function resolveGloss(word: string, reading: string): string | undefined {
     const cleanW = word.trim().normalize("NFKC");
     const cleanR = katakanaToHiragana(reading.trim()).normalize("NFKC").replace(/[\s・]/g, "");
+    const hasKanji = /[一-龯々]/.test(cleanW);
 
     // 0. Curated Overrides
     if (MEANING_OVERRIDES[cleanW]) return MEANING_OVERRIDES[cleanW];
-    if (MEANING_OVERRIDES[cleanR]) return MEANING_OVERRIDES[cleanR];
+    if (!hasKanji && MEANING_OVERRIDES[cleanR]) return MEANING_OVERRIDES[cleanR];
 
-    // 1. JLPT Vocab
+    // 1. JLPT Vocab (only match reading-alone if the surface has no kanji to avoid homophone collision)
     const jlptMatch =
       jlptVocabMap.get(`${cleanW}\u0000${cleanR}`) ??
       jlptVocabMap.get(cleanW) ??
-      jlptVocabMap.get(cleanR);
+      (!hasKanji ? jlptVocabMap.get(cleanR) : undefined);
     if (jlptMatch && !isJapaneseText(jlptMatch)) return jlptMatch;
 
     // 2. Dictionary Index Vocab
     const dictMatch =
       dictVocabMap.get(`${cleanW}\u0000${cleanR}`) ??
       dictVocabMap.get(cleanW) ??
-      dictVocabMap.get(cleanR);
+      (!hasKanji ? dictVocabMap.get(cleanR) : undefined);
     if (dictMatch && !isJapaneseText(dictMatch)) return dictMatch;
 
     // 3. Single-kanji meanings
@@ -306,7 +307,8 @@ async function main(): Promise<void> {
 
     // 4. DeepL Cache
     const cachedGloss =
-      deeplCache[`ja->en:gloss:${cleanW}`] ?? deeplCache[`ja->en:gloss:${cleanR}`];
+      deeplCache[`ja->en:gloss:${cleanW}`] ??
+      (!hasKanji ? deeplCache[`ja->en:gloss:${cleanR}`] : undefined);
     if (
       cachedGloss &&
       !isJapaneseText(cachedGloss) &&
@@ -420,8 +422,13 @@ async function main(): Promise<void> {
   const dicPath = resolve(root, "node_modules/kuromoji/dict");
   const { rawReadings, kuromojiNouns } = await loadKuromojiNouns(dicPath);
 
-  // Add rich Kuromoji nouns to ensure words.json has 18,000 words
-  for (const { word, kana } of kuromojiNouns) {
+  // Add rich Kuromoji nouns to ensure words.json has 18,000 words (prioritize words with English glosses)
+  const sortedKuromojiNouns = [...kuromojiNouns].sort((a, b) => {
+    const aHas = resolveGloss(a.word, a.kana) ? 1 : 0;
+    const bHas = resolveGloss(b.word, b.kana) ? 1 : 0;
+    return bHas - aHas;
+  });
+  for (const { word, kana } of sortedKuromojiNouns) {
     if (deduped.size >= 18000) break;
     if (kana.length >= 2 && kana.length <= 6) {
       const gloss = resolveGloss(word, kana) ?? (word !== kana ? word : kana);
@@ -429,17 +436,17 @@ async function main(): Promise<void> {
     }
   }
 
-  // Build raw validReadings map (kana -> surface)
+  // Build raw validReadings map (kana -> surface), preferring glossed Curated/JLPT words over unglossed Kuromoji entries
   const validReadingsRaw: Record<string, string> = { ...rawReadings };
-  for (const item of CURATED_WORDS) {
-    if (!validReadingsRaw[item.kana]) {
+  for (const item of deduped.values()) {
+    const currentSurface = validReadingsRaw[item.kana];
+    const currentHasGloss = currentSurface ? Boolean(resolveGloss(currentSurface, item.kana)) : false;
+    if (!currentSurface || (!currentHasGloss && hasEnglishGloss(item))) {
       validReadingsRaw[item.kana] = item.word;
     }
   }
-  for (const item of deduped.values()) {
-    if (!validReadingsRaw[item.kana]) {
-      validReadingsRaw[item.kana] = item.word;
-    }
+  for (const item of CURATED_WORDS) {
+    validReadingsRaw[item.kana] = item.word;
   }
 
   // Convert to Tuple Map: kana -> [surface, meaning]

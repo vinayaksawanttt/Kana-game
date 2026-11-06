@@ -158,9 +158,18 @@ function GrammarDetailContent() {
             <p className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--primary)]">
               JLPT {point.level} · Grammar Lesson
             </p>
-            <h1 lang="ja" className="font-japanese mt-3 break-words text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl">
-              {point.pattern}
-            </h1>
+            <div className="mt-3 flex flex-wrap items-center gap-3">
+              <h1 lang="ja" className="font-japanese break-words text-3xl font-bold leading-tight text-[var(--ink)] sm:text-4xl">
+                {point.pattern}
+              </h1>
+              <AudioButton
+                text={point.pattern}
+                reading={point.romaji}
+                mode="grammar"
+                size="sm"
+                label={`Listen to ${point.pattern}`}
+              />
+            </div>
             <p className="mt-2 text-sm text-[var(--muted)]">
               {point.romaji ? `${point.romaji} · ` : ""}{point.title}
             </p>
@@ -219,8 +228,9 @@ function GrammarDetailContent() {
                       ) : example.ja}
                     </p>
                     <AudioButton
-                      text={example.ja}
-                      size="md"
+                      text={example.ja || example.jp}
+                      mode="sentence"
+                      size="sm"
                       label={`Listen to example ${index + 1}`}
                     />
                   </div>

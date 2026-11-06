@@ -32,7 +32,7 @@ export default function ListeningResultPage() {
   );
 }
 
-function ListeningResultContent() {
+export function ListeningResultContent() {
   const router = useRouter();
   const { sessionId } = useParams<{ sessionId: string }>();
   const [result, setResult] = useState<ListeningResultSummary | null>(null);
@@ -42,6 +42,7 @@ function ListeningResultContent() {
   const { playKana, playVocab, playSentence } = useJapaneseAudio();
 
   useEffect(() => {
+    if (result) return;
     const stored = getGameResult<ListeningResultSummary>("listening", sessionId);
     if (!stored) {
       router.replace("/games/listening");
@@ -49,7 +50,7 @@ function ListeningResultContent() {
     }
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setResult(stored);
-  }, [router, sessionId]);
+  }, [sessionId, result, router]);
 
   const missedQuestions = useMemo(
     () =>
@@ -93,6 +94,7 @@ function ListeningResultContent() {
       const pool = await loadListeningPool(customSettings);
       const nextSession = createListeningSession(pool, customSettings);
       saveGameSession("listening", nextSession.sessionId, nextSession);
+      setStarting(false);
       router.push(`/games/listening/play/${nextSession.sessionId}`);
     } catch (err) {
       console.error("Could not start new listening session:", err);

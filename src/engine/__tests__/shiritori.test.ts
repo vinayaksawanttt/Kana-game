@@ -390,4 +390,70 @@ describe("Shiritori engine", () => {
       expect(louverTurn.word.meaning).toBe("louver");
     }
   });
+
+  it("never repeats the same kana reading across homophones in a single game chain", async () => {
+    const rokuSix: ShiritoriWord = {
+      id: "curated:六:ろく",
+      word: "六",
+      kana: "ろく",
+      romaji: "roku",
+      meaning: "six",
+      jlpt: 5,
+      startKana: "ろ",
+      endKana: "く",
+    };
+    const rokuRecord: ShiritoriWord = {
+      id: "kuromoji:録:ろく",
+      word: "録",
+      kana: "ろく",
+      romaji: "roku",
+      meaning: "record",
+      jlpt: 4,
+      startKana: "ろ",
+      endKana: "く",
+    };
+    const rouka: ShiritoriWord = {
+      id: "curated:廊下:ろうか",
+      word: "廊下",
+      kana: "ろうか",
+      romaji: "rouka",
+      meaning: "corridor",
+      jlpt: 4,
+      startKana: "ろ",
+      endKana: "か",
+    };
+    const kuro: ShiritoriWord = {
+      id: "curated:黒:くろ",
+      word: "黒",
+      kana: "くろ",
+      romaji: "kuro",
+      meaning: "black",
+      jlpt: 5,
+      startKana: "く",
+      endKana: "ろ",
+    };
+
+    const dictionary = buildShiritoriDictionary([rokuRecord, rokuSix, rouka, kuro]);
+    // Bot opens with 録 (ろく)
+    const state1 = createShiritoriState(settings(), rokuRecord);
+    // Player replies with 黒 (くろ), so nextKana is "ろ" again
+    const turn2 = validateTurn("くろ", state1, dictionary);
+    expect(turn2.valid).toBe(true);
+    if (!turn2.valid) return;
+
+    // Now nextKana is "ろ". Even though 六 (curated:六:ろく) has a different id than 録 (kuromoji:録:ろく),
+    // its reading "ろく" was already used in the chain, so bot and hints must pick 廊下 (ろうか), not 六 (ろく)!
+    const botReply = chooseBotWord(turn2.state, dictionary);
+    expect(botReply?.kana).toBe("ろうか");
+    expect(botReply?.id).toBe("curated:廊下:ろうか");
+
+    const hintReply = useHint(turn2.state, dictionary);
+    expect(hintReply.word?.kana).toBe("ろうか");
+
+    // And if player tries to submit "ろく" or "六", it is rejected as "Already used"
+    expect(validateTurn("ろく", turn2.state, dictionary)).toMatchObject({
+      valid: false,
+      error: "Already used",
+    });
+  });
 });

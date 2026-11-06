@@ -44,7 +44,7 @@ export default function ShiritoriSetupPage() {
   }
 
   return (
-    <GameLayout label="SHIRITORI" glyph="鎖" homeHref="/games/shiritori">
+    <GameLayout label="SHIRITORI" glyph="鎖" homeHref="/">
       <section className="mx-auto flex w-full max-w-2xl flex-1 flex-col justify-center px-4 pb-8 sm:px-6">
         <header className="pb-4 pt-1 text-center sm:pb-5 sm:pt-2">
           <div className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)]/30 bg-[var(--sakura-light)]/40 px-3 py-0.5 text-[11px] font-bold uppercase tracking-wider text-[var(--primary)]">

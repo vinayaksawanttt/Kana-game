@@ -197,7 +197,7 @@ export function extractListeningSentences(
 
   // 1. Story sentences (have pre-built neural MP3s at /audio/stories/<slug>/<index>.mp3)
   for (const story of stories) {
-    const queue = buildStoryAudioQueue(story.slug, story.paragraphs);
+    const queue = buildStoryAudioQueue(story);
     const jlpt = levelStringToNumber(story.level);
 
     for (const seg of queue) {
@@ -502,7 +502,7 @@ export function createListeningSession(
 
   if (settings.subMode === "vocabulary") {
     const levelStrings = new Set(
-      (settings.levels?.length ? settings.levels : [5]).map(levelNumberToString)
+      (settings.levels?.length ? settings.levels : ([5] as JlptLevel[])).map(levelNumberToString)
     );
     const allVocab = poolData.vocabulary ?? [];
     let filtered = allVocab.filter((v) =>
@@ -609,6 +609,7 @@ export function checkListeningTypedAnswer(question: ListeningQuestion, rawInput:
   const match = checkVocabularyAnswer(
     trimmed,
     question.acceptedAnswers,
+    undefined,
     question.correctMeaning
   );
   return match.isMatch;

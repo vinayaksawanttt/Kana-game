@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-11-06T13:32:11.532Z",
-  "bundleHash": "55a849e5c407",
+  "generatedAt": "2026-11-06T16:14:13.297Z",
+  "bundleHash": "8a839f5d88a0",
   "assets": {
     "dictionary-index.json": {
       "hash": "3d98ac74562d",
@@ -92,12 +92,12 @@
       "bytes": 27246
     },
     "shiritori/valid-readings.json": {
-      "hash": "2c80d845abdf",
-      "bytes": 1979407
+      "hash": "6c153125fb00",
+      "bytes": 1979805
     },
     "shiritori/words.json": {
-      "hash": "f05ebd70b8fc",
-      "bytes": 2933449
+      "hash": "038875745086",
+      "bytes": 2934931
     },
     "stories/n4-airport-departure.json": {
       "hash": "9400559e2ae6",

@@ -1,6 +1,5 @@
 import { kanaCharacters } from "@/data/kana";
 import { loadVocabularyData, type VocabularyLevel } from "@/data/vocabulary";
-import { getAllStories } from "@/data/stories";
 import {
   extractListeningSentences,
   levelNumberToString,
@@ -30,6 +29,7 @@ export async function loadListeningPool(
     };
   }
 
+  const { getAllStories } = await import("@/data/stories");
   const stories = getAllStories();
   const sentences = extractListeningSentences(vocabData.records, stories);
   return {

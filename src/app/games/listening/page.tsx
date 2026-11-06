@@ -105,6 +105,19 @@ export default function ListeningSetupPage() {
       // Ignore storage read error
     }
     setReady(true);
+    setStarting(false);
+
+    function resetStartingState() {
+      setStarting(false);
+    }
+    window.addEventListener("pageshow", resetStartingState);
+    window.addEventListener("popstate", resetStartingState);
+    window.addEventListener("focus", resetStartingState);
+    return () => {
+      window.removeEventListener("pageshow", resetStartingState);
+      window.removeEventListener("popstate", resetStartingState);
+      window.removeEventListener("focus", resetStartingState);
+    };
   }, []);
 
   const effectiveAnswerFormat: ListeningAnswerFormat =
@@ -139,6 +152,8 @@ export default function ListeningSetupPage() {
   }, [subMode, kanaScript, kanaGroups, levels]);
 
   function toggleKanaGroup(group: KanaGroup) {
+    setError("");
+    setStarting(false);
     setKanaGroups((prev) =>
       prev.includes(group)
         ? prev.length > 1
@@ -149,6 +164,8 @@ export default function ListeningSetupPage() {
   }
 
   function toggleLevel(level: JlptLevel) {
+    setError("");
+    setStarting(false);
     setLevels((prev) =>
       prev.includes(level)
         ? prev.length > 1
@@ -166,6 +183,7 @@ export default function ListeningSetupPage() {
     setKanaGroups(["basic"]);
     setSize(10);
     setError("");
+    setStarting(false);
   }
 
   async function startSession() {
@@ -187,6 +205,7 @@ export default function ListeningSetupPage() {
       const session = createListeningSession(pool, settings);
       saveGameSession("listening", session.sessionId, session);
       localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
+      setStarting(false);
       router.push(`/games/listening/play/${session.sessionId}`);
     } catch (err) {
       console.error("Failed to start listening session:", err);
@@ -237,7 +256,11 @@ export default function ListeningSetupPage() {
                         key={item.id}
                         type="button"
                         aria-pressed={selected}
-                        onClick={() => setSubMode(item.id)}
+                        onClick={() => {
+                          setSubMode(item.id);
+                          setError("");
+                          setStarting(false);
+                        }}
                         className={`group flex flex-col justify-between rounded-xl border p-3.5 text-left transition-all cursor-pointer ${
                           selected
                             ? "border-[var(--primary)] bg-[var(--sakura-light)]/50 ring-1 ring-[var(--primary)]/30"

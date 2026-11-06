@@ -62,5 +62,21 @@ describe("AudioButton component", () => {
     fireEvent.click(button);
     expect(customPlay).toHaveBeenCalledTimes(1);
   });
+
+  it("supports grammar mode and custom onPlay handler", () => {
+    const customPlay = vi.fn();
+    render(<AudioButton text="A がいちばん～" mode="grammar" size="sm" onPlay={customPlay} />);
+    const button = screen.getByRole("button", { name: /Listen to pronunciation of A がいちばん～/i });
+    fireEvent.click(button);
+    expect(customPlay).toHaveBeenCalledTimes(1);
+  });
+
+  it("supports sentence mode and custom onPlay handler", () => {
+    const customPlay = vi.fn();
+    render(<AudioButton text="学校へ行く。" mode="sentence" size="sm" onPlay={customPlay} />);
+    const button = screen.getByRole("button", { name: /Listen to pronunciation of 学校へ行く。/i });
+    fireEvent.click(button);
+    expect(customPlay).toHaveBeenCalledTimes(1);
+  });
 });
 

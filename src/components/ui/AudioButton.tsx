@@ -8,17 +8,18 @@ import {
   resolveKanjiReadingAudio,
   resolveVocabAudio,
   resolveSentenceAudio,
+  resolveGrammarTitleAudio,
 } from "@/engine/audio";
 
 export interface AudioButtonProps {
-  /** The kana or Japanese character/mora/word/sentence to pronounce */
+  /** The kana or Japanese character/mora/word/sentence/grammar to pronounce */
   text: string;
   /** Optional canonical romaji hint if character is non-standard */
   romaji?: string;
   /** Optional reading (for vocab) */
   reading?: string;
-  /** Playback mode: "kana" (default) | "reading" | "vocab" | "sentence" */
-  mode?: "kana" | "reading" | "vocab" | "sentence";
+  /** Playback mode: "kana" (default) | "reading" | "vocab" | "sentence" | "grammar" */
+  mode?: "kana" | "reading" | "vocab" | "sentence" | "grammar";
   /** Optional custom play handler override */
   onPlay?: () => void;
   /** Size variant */
@@ -65,6 +66,7 @@ export const AudioButton: React.FC<AudioButtonProps> = ({
     playReading,
     playVocab,
     playSentence,
+    playGrammarTitle,
     isPlaying,
     activeKey,
   } = useJapaneseAudio();
@@ -75,6 +77,9 @@ export const AudioButton: React.FC<AudioButtonProps> = ({
     }
     if (mode === "sentence") {
       return resolveSentenceAudio(text).key;
+    }
+    if (mode === "grammar") {
+      return resolveGrammarTitleAudio(text).key;
     }
     if (mode === "reading") {
       return resolveKanjiReadingAudio(reading || text).slug;
@@ -96,6 +101,8 @@ export const AudioButton: React.FC<AudioButtonProps> = ({
       playVocab({ word: text, reading });
     } else if (mode === "sentence") {
       playSentence(text);
+    } else if (mode === "grammar") {
+      playGrammarTitle(text, reading);
     } else if (mode === "reading") {
       playReading(reading || text);
     } else {

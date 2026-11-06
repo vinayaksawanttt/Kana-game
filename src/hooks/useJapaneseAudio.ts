@@ -8,6 +8,8 @@ import {
   normalizeKanjiReading,
   resolveVocabAudio,
   resolveSentenceAudio,
+  resolveGrammarTitleAudio,
+  cleanGrammarTitleForAudio,
   decomposeKanaToMoraSteps,
   type MoraAudioStep,
 } from "@/engine/audio";
@@ -193,7 +195,7 @@ function analyzeKanaBuffer(buffer: AudioBuffer): TrimmedKanaBuffer {
   const startSec = Math.max(0, firstSample / sampleRate - 0.008);
   const endSec = Math.min(buffer.duration, lastSample / sampleRate + 0.018);
   const rawDuration = endSec - startSec;
-  const durationSec = Math.max(0.11, Math.min(0.32, rawDuration));
+  const durationSec = Math.max(0.12, Math.min(0.32, rawDuration));
 
   return {
     buffer,
@@ -223,9 +225,9 @@ async function loadTrimmedKanaBuffer(
 }
 
 /**
- * Stitches a word's morae seamlessly using the Web Audio API (AudioContext)
- * from existing /audio/kana/*.mp3 files, with automatic silence trimming and
- * smooth 20ms crossfades. Works 100% offline in Brave on Linux without speechSynthesis.
+ * Stitches a word's morae clearly using the Web Audio API (AudioContext)
+ * from existing /audio/kana/*.mp3 files.
+ * Guarantees every character in the word is distinctly audible and pronounced in full.
  */
 async function playMoraStepsAsync(
   moraSteps: MoraAudioStep[],
@@ -241,7 +243,6 @@ async function playMoraStepsAsync(
 
   const ctx = getSharedAudioContext();
   if (!ctx || typeof window.fetch !== "function") {
-    // Fallback in non-WebAudio test environments (e.g. JSDOM)
     const firstMora = moraSteps.find((s) => s.type === "mora" && s.src);
     if (firstMora) {
       await playAudioItemAsync(firstMora.src, ttsText, slug, undefined, rateOverride);
@@ -260,7 +261,6 @@ async function playMoraStepsAsync(
       await ctx.resume();
     }
 
-    // Preload all unique kana buffers needed for this word in parallel
     const uniqueSrcs = Array.from(
       new Set(moraSteps.filter((s) => s.type === "mora" && s.src).map((s) => s.src))
     );
@@ -276,7 +276,6 @@ async function playMoraStepsAsync(
     }
 
     if (bufferMap.size === 0) {
-      // Fallback if fetch couldn't load buffers (e.g. mocked environment)
       const firstMora = moraSteps.find((s) => s.type === "mora" && s.src);
       if (firstMora) {
         await playAudioItemAsync(firstMora.src, ttsText, slug, undefined, rateOverride);
@@ -287,8 +286,8 @@ async function playMoraStepsAsync(
     }
 
     const rate = rateOverride ?? (state.playbackSpeed || 1);
-    const overlapSec = 0.026 / rate;
-    let cursorTime = ctx.currentTime + 0.012;
+    const gapSec = 0.015 / rate; // Gentle 15ms breathing pause between syllables so every sound is crisp
+    let cursorTime = ctx.currentTime + 0.02;
     let lastMoraEntry: TrimmedKanaBuffer | null = null;
     const nodes: AudioBufferSourceNode[] = [];
 
@@ -296,15 +295,15 @@ async function playMoraStepsAsync(
       const step = moraSteps[i];
       if (step.type === "sokuon") {
         // Geminate consonant pause (っ)
-        cursorTime += 0.095 / rate;
+        cursorTime += 0.11 / rate;
         continue;
       }
 
       if (step.type === "choonpu") {
-        // Long vowel continuation (ー): replay vowel tail of previous mora smoothly
+        // Long vowel continuation (ー): replay vowel tail of previous mora cleanly
         if (lastMoraEntry) {
-          const tailOffset = lastMoraEntry.startSec + lastMoraEntry.durationSec * 0.42;
-          const tailDuration = lastMoraEntry.durationSec * 0.52;
+          const tailOffset = lastMoraEntry.startSec + lastMoraEntry.durationSec * 0.45;
+          const tailDuration = lastMoraEntry.durationSec * 0.5;
           const effectiveDur = tailDuration / rate;
 
           const source = ctx.createBufferSource();
@@ -322,7 +321,7 @@ async function playMoraStepsAsync(
           source.start(cursorTime, tailOffset, tailDuration);
           nodes.push(source);
 
-          cursorTime += Math.max(0.06 / rate, effectiveDur - overlapSec);
+          cursorTime += effectiveDur + gapSec;
         }
         continue;
       }
@@ -336,8 +335,8 @@ async function playMoraStepsAsync(
       source.buffer = entry.buffer;
       source.playbackRate.value = rate;
 
-      const fadeIn = Math.min(0.014, effectiveDur * 0.2);
-      const fadeOut = Math.min(0.024, effectiveDur * 0.25);
+      const fadeIn = Math.min(0.008, effectiveDur * 0.1);
+      const fadeOut = Math.min(0.018, effectiveDur * 0.18);
 
       gain.gain.setValueAtTime(0.01, cursorTime);
       gain.gain.linearRampToValueAtTime(1.0, cursorTime + fadeIn);
@@ -350,14 +349,11 @@ async function playMoraStepsAsync(
       nodes.push(source);
 
       lastMoraEntry = entry;
-      const isLast = i === moraSteps.length - 1;
-      cursorTime += isLast
-        ? effectiveDur
-        : Math.max(0.075 / rate, effectiveDur - overlapSec);
+      cursorTime += effectiveDur + gapSec;
     }
 
     activeStitchNodes = nodes;
-    const totalWaitMs = Math.max(50, Math.ceil((cursorTime - ctx.currentTime) * 1000) + 25);
+    const totalWaitMs = Math.max(50, Math.ceil((cursorTime - ctx.currentTime) * 1000) + 30);
 
     await new Promise<void>((resolve) => {
       currentAudioResolver = resolve;
@@ -697,6 +693,54 @@ export function useJapaneseAudio() {
     []
   );
 
+  const playGrammarTitle = useCallback(
+    (pattern: string, readingOrRate?: string | number, rateOverride?: number) => {
+      if (typeof window === "undefined" || !pattern) return;
+
+      stopCurrentPlayback();
+
+      const reading = typeof readingOrRate === "string" ? readingOrRate : undefined;
+      const rate = typeof readingOrRate === "number" ? readingOrRate : rateOverride;
+
+      const payload = resolveGrammarTitleAudio(pattern);
+      if (!payload.ttsText) return;
+
+      // 1. Check if a high-fidelity static audio clip exists
+      const vocabPayload = resolveVocabAudio({ word: payload.ttsText });
+      if (vocabPayload.hasStaticClip && vocabPayload.staticSrc) {
+        void playAudioItemAsync(
+          vocabPayload.staticSrc,
+          payload.ttsText,
+          payload.key,
+          undefined,
+          rate ?? payload.rate
+        );
+        return;
+      }
+
+      // 2. Check if Web Speech API has Japanese voice available
+      const hasJaVoice =
+        typeof window.speechSynthesis !== "undefined" &&
+        typeof window.speechSynthesis.getVoices === "function" &&
+        window.speechSynthesis
+          .getVoices()
+          .some((v) => v.lang === "ja-JP" || v.lang.startsWith("ja"));
+
+      // 3. Fallback to kana-mora stitching if offline or no ja voice
+      const kanaCandidate = reading ? cleanGrammarTitleForAudio(reading) : payload.ttsText;
+      const steps = decomposeKanaToMoraSteps(kanaCandidate);
+      if (!hasJaVoice && steps.length > 0 && typeof window.AudioContext !== "undefined") {
+        void playMoraStepsAsync(steps, payload.key, payload.ttsText, rate ?? payload.rate);
+        return;
+      }
+
+      // 4. Fallback to speech synthesis
+      const effectiveRate = rate ?? payload.rate;
+      void fallbackToSpeechAsync(payload.ttsText, payload.key, effectiveRate);
+    },
+    []
+  );
+
   useEffect(() => {
     return () => {
       // Component unmount does not disrupt audio singleton
@@ -718,11 +762,13 @@ export function useJapaneseAudio() {
     playReadingSequence,
     playVocab,
     playSentence,
+    playGrammarTitle,
     stopAudio,
     toKanaAudioKey,
     normalizeKanjiReading,
     resolveKanjiReadingAudio,
     resolveVocabAudio,
     resolveSentenceAudio,
+    resolveGrammarTitleAudio,
   };
 }

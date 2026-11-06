@@ -1,18 +1,35 @@
-import "fake-indexeddb/auto";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { cleanup, fireEvent, render, screen } from "@testing-library/react";
+import { cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import ListeningSetupPage from "./page";
 import ListeningPlayPage from "./play/[sessionId]/page";
-import ListeningResultPage from "./result/[sessionId]/page";
+import ListeningResultPage, { ListeningResultContent } from "./result/[sessionId]/page";
 import { createListeningSession, summarizeListeningSession } from "@/engine/listening";
 import { saveGameResult, saveGameSession } from "@/lib/game-core/storage";
 
+let mockParams: Record<string, string> = { sessionId: "listening-test-session" };
 const mockPush = vi.fn();
 const mockReplace = vi.fn();
+const routerMock = { push: mockPush, replace: mockReplace };
+const mockPlayKana = vi.fn();
+const mockPlayVocab = vi.fn();
+const mockPlaySentence = vi.fn();
+
+vi.mock("@/hooks/useJapaneseAudio", () => ({
+  useJapaneseAudio: () => ({
+    playKana: mockPlayKana,
+    playVocab: mockPlayVocab,
+    playSentence: mockPlaySentence,
+    stopAudio: vi.fn(),
+    isPlaying: false,
+    activeKey: null,
+    playbackSpeed: 1,
+    setPlaybackSpeed: vi.fn(),
+  }),
+}));
 
 vi.mock("next/navigation", () => ({
-  useParams: () => ({ sessionId: "listening-test-session" }),
-  useRouter: () => ({ push: mockPush, replace: mockReplace }),
+  useParams: () => mockParams,
+  useRouter: () => routerMock,
 }));
 
 describe("Listening Quiz UI (Setup, Play & Result)", () => {
@@ -21,6 +38,7 @@ describe("Listening Quiz UI (Setup, Play & Result)", () => {
     vi.clearAllMocks();
     sessionStorage.clear();
     localStorage.clear();
+    mockParams = { sessionId: "listening-test-session" };
   });
 
   afterEach(() => {
@@ -45,7 +63,7 @@ describe("Listening Quiz UI (Setup, Play & Result)", () => {
     expect(typingBtn.getAttribute("aria-pressed")).toBe("true");
   });
 
-  it("hides Japanese text until answered on Play screen and reveals transcript after answering", () => {
+  it("hides Japanese text until answered on Play screen and reveals transcript after answering", async () => {
     const session = createListeningSession(
       {
         vocabulary: [
@@ -110,21 +128,27 @@ describe("Listening Quiz UI (Setup, Play & Result)", () => {
 
     const currentQ = session.questions[0];
 
+    // Wait for the session to mount into view
+    await waitFor(() => {
+      expect(screen.getByRole("button", { name: /replay audio/i })).toBeTruthy();
+    });
+
     // Before answering: hiddenPromptJa is NOT visible, Replay & 0.75x Slow buttons ARE visible
     expect(screen.queryByText(currentQ.hiddenPromptJa)).toBeNull();
-    expect(screen.getByRole("button", { name: /replay audio/i })).toBeTruthy();
     expect(screen.getByRole("button", { name: /0.75x slow/i })).toBeTruthy();
 
     // Select the correct option
     fireEvent.click(screen.getByRole("button", { name: new RegExp(currentQ.correctMeaning, "i") }));
 
     // After answering: Japanese transcript & reading are revealed!
-    expect(screen.getByText(currentQ.hiddenPromptJa)).toBeTruthy();
-    expect(screen.getByText("Correct!")).toBeTruthy();
+    await waitFor(() => {
+      expect(screen.getByText(currentQ.hiddenPromptJa)).toBeTruthy();
+      expect(screen.getByText("Correct!")).toBeTruthy();
+    });
     expect(screen.getByRole("button", { name: /\+ FSRS/i })).toBeTruthy();
   });
 
-  it("renders Result screen with interactive audio review table and Practice Missed Items button", () => {
+  it("renders Result screen with interactive audio review table and Practice Missed Items button", async () => {
     const session = createListeningSession(
       {},
       {
@@ -151,7 +175,10 @@ describe("Listening Quiz UI (Setup, Play & Result)", () => {
 
     render(<ListeningResultPage />);
 
-    expect(screen.getByText(/Passed: 1/i)).toBeTruthy();
+    await waitFor(() => {
+      expect(screen.getByText(/Passed: 1/i)).toBeTruthy();
+    });
+
     expect(screen.getByText(/Missed: 1/i)).toBeTruthy();
     expect(screen.getByRole("button", { name: /practice missed items/i })).toBeTruthy();
     expect(screen.getByRole("button", { name: /play again/i })).toBeTruthy();

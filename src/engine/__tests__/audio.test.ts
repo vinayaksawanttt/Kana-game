@@ -12,6 +12,8 @@ import {
   resolveVocabAudio,
   resolveSentenceAudio,
   cleanSentenceForAudio,
+  resolveGrammarTitleAudio,
+  cleanGrammarTitleForAudio,
   buildStoryAudioQueue,
   decomposeKanaToMoraSteps,
   hasStaticVocabAudio,
@@ -336,6 +338,29 @@ describe("audio engine", () => {
       expect(resolved.ttsText).toBe("学校へ行く。");
       expect(resolved.lang).toBe("ja-JP");
       expect(resolved.rate).toBe(0.95);
+    });
+  });
+
+  describe("resolveGrammarTitleAudio & cleanGrammarTitleForAudio", () => {
+    it("pronounces placeholders (A, B, C, Noun, Verb, Adjective) as natural Japanese phonetics", () => {
+      expect(cleanGrammarTitleForAudio("A がいちばん～")).toBe("エー がいちばん");
+      expect(cleanGrammarTitleForAudio("A が いちばん～ (A ga ichiban～)")).toBe("エー が いちばん");
+      expect(cleanGrammarTitleForAudio("A よりも〜 B")).toBe("エー よりも ビー");
+      expect(cleanGrammarTitleForAudio("A。けれども、～B。(A. Keredomo,~ B.)")).toBe("エー けれども ビー");
+      expect(cleanGrammarTitleForAudio("Noun + あっての + Noun (A atte no B)")).toBe("ナウン あっての ナウン");
+      expect(cleanGrammarTitleForAudio("Verb + ないで")).toBe("バーブ ないで");
+      expect(cleanGrammarTitleForAudio("い-Adjective: Negative Polite Form")).toBe("い アジェクティブ ネガティブ ポライト フォーム");
+      expect(cleanGrammarTitleForAudio("Noun1 が Noun1 なら、 Noun2 も Noun2 だ")).toBe("ナウンいち が ナウンいち なら ナウンに も ナウンに だ");
+    });
+
+    it("resolves grammar title audio payload with rate 0.92 and ja-JP lang", () => {
+      const resolved = resolveGrammarTitleAudio("A がいちばん～");
+      expect(resolved).toEqual({
+        key: "grammar:エー がいちばん",
+        ttsText: "エー がいちばん",
+        lang: "ja-JP",
+        rate: 0.92,
+      });
     });
   });
 

@@ -472,6 +472,7 @@ function GrammarGame({
                   </p>
                   <AudioButton
                     text={question.sentenceJp}
+                    mode="sentence"
                     size="md"
                     label="Listen to completed sentence"
                   />

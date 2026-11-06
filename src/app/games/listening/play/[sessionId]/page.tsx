@@ -53,6 +53,7 @@ function ListeningPlayContent() {
 
   // Restore session from sessionStorage
   useEffect(() => {
+    if (session) return;
     const stored = getGameSession<ListeningSession>("listening", sessionId);
     if (!stored || !Array.isArray(stored.questions) || stored.questions.length === 0) {
       router.replace("/games/listening");
@@ -62,7 +63,7 @@ function ListeningPlayContent() {
     setSession(stored);
     questionStartRef.current = Date.now();
     /* eslint-enable react-hooks/set-state-in-effect */
-  }, [router, sessionId]);
+  }, [router, sessionId, session]);
 
   const playQuestionAudio = useCallback(
     (question: ListeningQuestion, rateOverride?: number) => {

@@ -372,6 +372,18 @@ function findWord(input: string, dictionary: ShiritoriDictionary): ShiritoriWord
   return undefined;
 }
 
+export function isWordAlreadyUsed(word: ShiritoriWord, state: ShiritoriState): boolean {
+  if (state.usedIds.has(word.id)) return true;
+  const normKana = normalizedReading(word.kana);
+  const normWord = word.word.normalize("NFKC");
+  return state.chain.some(
+    (turn) =>
+      turn.word.id === word.id ||
+      normalizedReading(turn.word.kana) === normKana ||
+      turn.word.word.normalize("NFKC") === normWord
+  );
+}
+
 export function validateTurn(
   input: string,
   state: ShiritoriState,
@@ -393,7 +405,7 @@ export function validateTurn(
     };
   }
   if (!word) return { valid: false, state, error: "Not in dictionary" };
-  if (state.usedIds.has(word.id)) return { valid: false, state, error: "Already used" };
+  if (isWordAlreadyUsed(word, state)) return { valid: false, state, error: "Already used" };
   const allowedStarts = getKanaAliases(state.nextKana);
   if (!allowedStarts.some((start) => word.kana.startsWith(start))) {
     const expected = allowedStarts.length > 1
@@ -431,9 +443,9 @@ export function chooseBotWord(
     .flatMap((kana) => dictionary.byStartKana.get(kana) ?? [])
     .filter(
       (word, index, list) =>
-        !state.usedIds.has(word.id) &&
+        !isWordAlreadyUsed(word, state) &&
         allowedStarts.some((start) => word.kana.startsWith(start)) &&
-        list.findIndex((entry) => entry.id === word.id) === index
+        list.findIndex((entry) => entry.id === word.id || entry.kana === word.kana) === index
     );
   if (!candidates.length) return undefined;
   const eligible = candidates.filter((word) => word.endKana !== "ん");
@@ -455,10 +467,11 @@ export function chooseBotWord(
         .filter(
           (next) =>
             next.id !== word.id &&
-            !state.usedIds.has(next.id) &&
+            next.kana !== word.kana &&
+            !isWordAlreadyUsed(next, state) &&
             next.endKana !== "ん"
         )
-        .map((next) => next.id)
+        .map((next) => next.kana)
     ).size;
 
   // Check if previous turn by bot was Katakana
@@ -559,7 +572,7 @@ export function useHint(
   // Exact start kana matches first (e.g. for "にょ", try words starting with "にょ")
   const exactChoices = (dictionary.byStartKana.get(state.nextKana) ?? []).filter(
     (candidate) =>
-      !state.usedIds.has(candidate.id) &&
+      !isWordAlreadyUsed(candidate, state) &&
       candidate.endKana !== "ん" &&
       candidate.kana.startsWith(state.nextKana)
   );
@@ -570,7 +583,7 @@ export function useHint(
     .flatMap((start) => dictionary.byStartKana.get(start) ?? [])
     .filter(
       (candidate) =>
-        !state.usedIds.has(candidate.id) &&
+        !isWordAlreadyUsed(candidate, state) &&
         candidate.endKana !== "ん" &&
         allowedStarts.some((s) => candidate.kana.startsWith(s))
     );
@@ -586,7 +599,8 @@ export function useHint(
         : aliasChoices;
 
   const dedupedPool = pool.filter(
-    (candidate, index, list) => list.findIndex((entry) => entry.id === candidate.id) === index
+    (candidate, index, list) =>
+      list.findIndex((entry) => entry.id === candidate.id || entry.kana === candidate.kana) === index
   );
 
   if (!dedupedPool.length) {

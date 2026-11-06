@@ -81,10 +81,10 @@ describe("Shiritori Session Navigation & Quit Guard", () => {
     expect(mockReplace).toHaveBeenCalledWith("/games/shiritori");
   });
 
-  it("setup page navbar link also points to /games/shiritori", () => {
+  it("setup page navbar link points to root page /", () => {
     render(<ShiritoriSetupPage />);
     const brandLink = screen.getByRole("link", { name: /shiritori home/i });
-    expect(brandLink.getAttribute("href")).toBe("/games/shiritori");
+    expect(brandLink.getAttribute("href")).toBe("/");
   });
 
   it("setup page has pronunciation sound toggle pill group", () => {

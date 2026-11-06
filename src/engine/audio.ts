@@ -429,6 +429,105 @@ export interface SentenceAudioPayload {
   rate: number;
 }
 
+export interface GrammarTitleAudioPayload {
+  key: string;
+  ttsText: string;
+  lang: "ja-JP";
+  rate: number;
+}
+
+const GRAMMAR_PLACEHOLDER_WORDS: Record<string, string> = {
+  Noun1: "ナウンいち",
+  Noun2: "ナウンに",
+  Noun: "ナウン",
+  noun: "ナウン",
+  Verb1: "バーブいち",
+  Verb2: "バーブに",
+  Verb: "バーブ",
+  verb: "バーブ",
+  Adjective: "アジェクティブ",
+  adjective: "アジェクティブ",
+  Statement: "ステートメント",
+  statement: "ステートメント",
+  Negative: "ネガティブ",
+  negative: "ネガティブ",
+  Polite: "ポライト",
+  polite: "ポライト",
+  Form: "フォーム",
+  form: "フォーム",
+};
+
+const GRAMMAR_PLACEHOLDER_LETTERS: Record<string, string> = {
+  A: "エー", B: "ビー", C: "シー", D: "ディー", E: "イー",
+  F: "エフ", G: "ジー", H: "エイチ", I: "アイ", J: "ジェー",
+  K: "ケー", L: "エル", M: "エム", N: "エヌ", O: "オー",
+  P: "ピー", Q: "キュー", R: "アール", S: "エス", T: "ティー",
+  U: "ユー", V: "ブイ", W: "ダブリュー", X: "エックス", Y: "ワイ", Z: "ゼット",
+  a: "エー", b: "ビー", c: "シー", d: "ディー", e: "イー",
+  f: "エフ", g: "ジー", h: "エイチ", i: "アイ", j: "ジェー",
+  k: "ケー", l: "エル", m: "エム", n: "エヌ", o: "オー",
+  p: "ピー", q: "キュー", r: "アール", s: "エス", t: "ティー",
+  u: "ユー", v: "ブイ", w: "ダブリュー", x: "エックス", y: "ワイ", z: "ゼット",
+};
+
+/**
+ * Normalizes grammar pattern strings for high-clarity pronunciation:
+ * - Strips parenthesized romaji or glosses (e.g. `(A ga ichiban～)` or `(〜kara aru)`)
+ * - Converts grammar placeholders (`Noun` -> `ナウン`, `Verb` -> `バーブ`, `Adjective` -> `アジェクティブ`, etc.)
+ * - Converts letter placeholders (`A` -> `エー`, `B` -> `ビー`, `C` -> `シー`, `X` -> `エックス`, etc.)
+ * - Strips wave dashes (`〜`, `～`), tildes (`~`), ellipses (`…`), plus signs (`+`), hyphens, etc.
+ * - Strips punctuation marks (`、`, `。`, `！`, `？`, etc.)
+ * - Normalizes whitespace so `A が いちばん～` becomes `エー が いちばん`,
+ *   and `A よりも〜 B` becomes `エー よりも ビー`.
+ */
+export function cleanGrammarTitleForAudio(pattern: string): string {
+  if (!pattern) return "";
+
+  // 1. Strip parenthesized romaji or glosses (both ASCII and full-width parens, handling nested parens)
+  let text = pattern;
+  while (/[（(][^()（）]*[A-Za-z][^()（）]*[)）]/.test(text)) {
+    text = text.replace(/\s*[（(][^()（）]*[A-Za-z][^()（）]*[)）]/g, " ");
+  }
+
+  // 2. Convert grammar placeholders (Noun, Verb, Adjective, Statement) to spoken phonetic katakana
+  for (const [key, val] of Object.entries(GRAMMAR_PLACEHOLDER_WORDS)) {
+    const reg = new RegExp(`(?<![A-Za-z0-9])${key}(?![A-Za-z0-9])`, "g");
+    text = text.replace(reg, ` ${val} `);
+  }
+
+  // 3. Convert letter placeholders (A, B, C, X, Y) to Japanese phonetic letters (エー, ビー, etc.)
+  for (const [key, val] of Object.entries(GRAMMAR_PLACEHOLDER_LETTERS)) {
+    const reg = new RegExp(`(?<![A-Za-z0-9])${key}(?![A-Za-z0-9])`, "g");
+    text = text.replace(reg, ` ${val} `);
+  }
+
+  // 4. Strip wave dashes, tildes, ellipses, plus, math symbols, hyphens, slashes
+  text = text.replace(/[～~〜+…\.\-＝=\/]/g, " ");
+
+  // 5. Strip punctuation and brackets
+  text = text.replace(/[、。！？!?「」『』（）()・:;]/g, " ");
+
+  // 6. Normalize whitespace
+  text = text.replace(/\s+/g, " ").trim();
+
+  return text || pattern.trim();
+}
+
+/**
+ * Resolves full audio payload for a grammar pattern title/heading.
+ * Strips placeholders (A, B, Noun) and comparison markers (～, ~) for clear Japanese TTS.
+ * Returns { key, ttsText, lang: "ja-JP", rate: 0.92 }.
+ */
+export function resolveGrammarTitleAudio(pattern: string): GrammarTitleAudioPayload {
+  const ttsText = cleanGrammarTitleForAudio(pattern);
+  return {
+    key: `grammar:${ttsText}`,
+    ttsText,
+    lang: "ja-JP",
+    rate: 0.92,
+  };
+}
+
 export type PlaybackSpeed = 0.75 | 1 | 1.25;
 
 export interface StoryAudioSegment {

@@ -41,12 +41,20 @@ const mdxComponents = {
   strong: ({ children, ...props }: ComponentPropsWithoutRef<"strong">) => {
     const text = nodeText(children).trim();
     const hasJapanese = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]/u.test(text);
+    const isSentence = /[。！？!?]/.test(text) || text.length > 8;
     return (
       <span className="inline-flex items-baseline gap-1">
         <strong {...props} lang="ja" className="font-japanese text-base font-semibold text-[var(--ink)]">
           {children}
         </strong>
-        {hasJapanese && <AudioButton text={text} size="sm" label={`Listen to ${text}`} />}
+        {hasJapanese && (
+          <AudioButton
+            text={text}
+            mode={isSentence ? "sentence" : "grammar"}
+            size="sm"
+            label={`Listen to ${text}`}
+          />
+        )}
       </span>
     );
   },
