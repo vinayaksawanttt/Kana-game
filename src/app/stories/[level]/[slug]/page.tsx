@@ -13,6 +13,7 @@ import {
   Clock,
   Columns3,
   HelpCircle,
+  Languages,
   Pause,
   Play,
   Repeat,
@@ -26,6 +27,7 @@ import {
   X,
   XCircle,
 } from "lucide-react";
+import { GameHeader } from "@/lib/game-core/layout";
 import { ThemeToggle } from "@/components/theme-toggle";
 import {
   COMPLETED_STORIES_STORAGE_KEY,
@@ -87,7 +89,7 @@ function StoryReadingRoomContent() {
 
   const [writingMode, setWritingMode] = useState<"horizontal" | "vertical">("horizontal");
   const [showFurigana, setShowFurigana] = useState(true);
-  const [showEnglish, setShowEnglish] = useState(true);
+  const [showEnglish, setShowEnglish] = useState(false);
 
   const [selectedToken, setSelectedToken] = useState<SelectedTokenInfo | null>(null);
   const [activeSentence, setActiveSentence] = useState<StorySentence | null>(null);
@@ -110,10 +112,16 @@ function StoryReadingRoomContent() {
     const activeElement = sentenceElements.current.get(narrator.activeSegmentIndex);
     if (!activeElement) return;
     const bounds = activeElement.getBoundingClientRect();
-    if (bounds.top < 0 || bounds.bottom > window.innerHeight) {
-      activeElement.scrollIntoView?.({ behavior: "smooth", block: "center" });
+    if (writingMode === "vertical") {
+      if (bounds.left < 0 || bounds.right > window.innerWidth) {
+        activeElement.scrollIntoView?.({ behavior: "smooth", inline: "center", block: "nearest" });
+      }
+    } else {
+      if (bounds.top < 0 || bounds.bottom > window.innerHeight) {
+        activeElement.scrollIntoView?.({ behavior: "smooth", block: "center" });
+      }
     }
-  }, [narrator.activeSegmentIndex]);
+  }, [narrator.activeSegmentIndex, writingMode]);
 
   if (!story) {
     return (
@@ -220,179 +228,37 @@ function StoryReadingRoomContent() {
 
   return (
     <main className="flex min-h-dvh flex-col bg-[var(--bg)] text-[var(--ink)]">
-      {/* Top Bar */}
-      <header className="sticky top-0 z-20 border-b border-[var(--line)] bg-[var(--bg)]/90 backdrop-blur-md">
-        <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-3 px-6 py-4">
-          <div className="flex items-center gap-3">
-            <Link
-              href="/stories"
-              className="inline-flex h-10 items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--surface)] px-4 text-xs font-semibold text-[var(--ink)] transition hover:border-[var(--primary)] hover:text-[var(--primary)]"
-            >
-              <ArrowLeft className="size-3.5" />
-              Back to Stories
-            </Link>
-            <div className="hidden sm:block">
-              <div className="flex items-center gap-2">
+      {/* Standard Consistent Website Navbar */}
+      <header className="border-b border-[var(--line)] bg-[var(--surface)]/90 backdrop-blur-md">
+        <GameHeader
+          glyph="読"
+          label="STORIES"
+          homeHref="/stories"
+          rightSlot={
+            <div className="flex items-center gap-2">
+              <span className="hidden sm:inline-flex items-center gap-2 text-xs text-[var(--muted)]">
                 <span className="rounded-full bg-[var(--primary)] px-2 py-0.5 text-[11px] font-bold text-white">
                   {story.level}
                 </span>
-                <span
-                  lang="ja"
-                  className="font-japanese text-sm font-semibold text-[var(--ink)]"
-                >
+                <span lang="ja" className="font-japanese font-semibold text-[var(--ink)]">
                   {story.title}
                 </span>
-                <span className="text-xs text-[var(--muted)]">· {story.titleEn}</span>
-              </div>
+              </span>
+              <Link
+                href="/stories"
+                className="inline-flex h-9 items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--surface)] px-3 text-xs font-semibold text-[var(--ink)] transition hover:border-[var(--primary)] hover:text-[var(--primary)]"
+              >
+                <ArrowLeft className="size-3.5" />
+                <span className="hidden sm:inline">Back to Stories</span>
+                <span className="sm:hidden">Back</span>
+              </Link>
             </div>
-          </div>
-
-          <div className="flex flex-wrap items-center gap-2">
-            {/* Furigana toggle */}
-            <button
-              type="button"
-              aria-pressed={showFurigana}
-              onClick={() => setShowFurigana((v) => !v)}
-              className={`inline-flex h-10 items-center rounded-full border px-3.5 text-xs font-semibold transition ${
-                showFurigana
-                  ? "border-[var(--primary)]/50 bg-[var(--paper-tint)] text-[var(--primary)]"
-                  : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)]"
-              }`}
-            >
-              Furigana {showFurigana ? "On" : "Off"}
-            </button>
-
-            {/* Reading Mode Toggle (Horizontal vs. Vertical) */}
-            <button
-              type="button"
-              aria-label="Toggle reading direction"
-              aria-pressed={writingMode === "vertical"}
-              onClick={() =>
-                setWritingMode((mode) => (mode === "horizontal" ? "vertical" : "horizontal"))
-              }
-              className={`inline-flex h-10 items-center gap-1.5 rounded-full border px-3.5 text-xs font-semibold transition ${
-                writingMode === "vertical"
-                  ? "border-[var(--primary)] bg-[var(--primary)] text-[var(--primary-ink)]"
-                  : "border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--primary)]"
-              }`}
-            >
-              {writingMode === "vertical" ? (
-                <>
-                  <Columns3 className="size-3.5" />
-                  <span>Vertical (縦書き)</span>
-                </>
-              ) : (
-                <>
-                  <AlignJustify className="size-3.5" />
-                  <span>Horizontal (横書き)</span>
-                </>
-              )}
-            </button>
-
-            <ThemeToggle />
-          </div>
-        </div>
-        <div className="mx-auto w-full max-w-6xl px-4 pb-3 sm:px-6">
-          <section
-            aria-label="Passage audio player"
-            className="rounded-2xl border border-[var(--line)] bg-[var(--surface)]/95 p-3.5 shadow-sm backdrop-blur-md"
-          >
-            <div className="flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-between">
-              <div className="flex flex-wrap items-center gap-1.5">
-                <button
-                  type="button"
-                  onClick={narrator.togglePlayPause}
-                  disabled={audioQueue.length === 0}
-                  aria-label={narrator.isPlaying ? "Pause passage" : "Play passage"}
-                  className="inline-flex min-h-10 items-center gap-2 rounded-xl bg-[var(--primary)] px-4 text-sm font-bold text-white transition hover:bg-[var(--primary-hover)] disabled:opacity-45"
-                >
-                  {narrator.isPlaying ? <Pause className="size-4" /> : <Play className="size-4" />}
-                  {narrator.isPlaying ? "Pause" : "Read Aloud"}
-                </button>
-                <button
-                  type="button"
-                  onClick={narrator.prevSegment}
-                  disabled={audioQueue.length === 0}
-                  aria-label="Previous sentence"
-                  className="grid size-10 place-items-center rounded-xl border border-[var(--line)] text-[var(--ink)] transition hover:border-[var(--primary)] hover:text-[var(--primary)] disabled:opacity-45"
-                >
-                  <SkipBack className="size-4" />
-                </button>
-                <button
-                  type="button"
-                  onClick={narrator.nextSegment}
-                  disabled={audioQueue.length === 0}
-                  aria-label="Next sentence"
-                  className="grid size-10 place-items-center rounded-xl border border-[var(--line)] text-[var(--ink)] transition hover:border-[var(--primary)] hover:text-[var(--primary)] disabled:opacity-45"
-                >
-                  <SkipForward className="size-4" />
-                </button>
-                {(narrator.isPlaying || narrator.activeSegmentIndex !== null) && (
-                  <button
-                    type="button"
-                    onClick={narrator.stop}
-                    aria-label="Stop passage"
-                    className="grid size-10 place-items-center rounded-xl border border-[var(--line)] text-[var(--muted)] transition hover:border-[var(--primary)] hover:text-[var(--primary)]"
-                  >
-                    <Square className="size-3.5" />
-                  </button>
-                )}
-              </div>
-
-              <p className="min-w-0 flex-1 text-xs font-semibold text-[var(--muted)] xl:px-4">
-                {narrator.activeSegmentIndex !== null
-                  ? `${narrator.isPlaying ? "Speaking" : "Paused at"} Sentence ${narrator.activeSegmentIndex + 1} / ${audioQueue.length}`
-                  : `Ready to narrate · ${audioQueue.length} sentences`}
-              </p>
-
-              <div className="flex flex-wrap items-center gap-2">
-                <div
-                  role="group"
-                  aria-label="Playback speed"
-                  className="inline-flex rounded-xl border border-[var(--line)] bg-[var(--bg)] p-1"
-                >
-                  {([
-                    [0.75, "0.75x", "Slow"],
-                    [1, "1.0x", "Normal"],
-                    [1.25, "1.25x", "Fast"],
-                  ] as Array<[PlaybackSpeed, string, string]>).map(([speed, label, title]) => (
-                    <button
-                      key={speed}
-                      type="button"
-                      aria-pressed={narrator.speed === speed}
-                      aria-label={`${label} ${title} playback`}
-                      onClick={() => narrator.setSpeed(speed)}
-                      className={`min-h-8 rounded-lg px-2.5 text-xs font-bold transition-colors ${
-                        narrator.speed === speed
-                          ? "bg-[var(--primary)] text-white"
-                          : "text-[var(--muted)] hover:text-[var(--ink)]"
-                      }`}
-                    >
-                      {label}
-                    </button>
-                  ))}
-                </div>
-                <button
-                  type="button"
-                  aria-pressed={narrator.loopCurrentSentence}
-                  onClick={narrator.toggleLoop}
-                  className={`inline-flex min-h-10 items-center gap-1.5 rounded-xl border px-3 text-xs font-bold transition-colors ${
-                    narrator.loopCurrentSentence
-                      ? "border-[var(--primary)] bg-[var(--sakura-light)] text-[var(--primary)]"
-                      : "border-[var(--line)] text-[var(--muted)] hover:text-[var(--ink)]"
-                  }`}
-                >
-                  <Repeat className="size-3.5" />
-                  Shadow Loop
-                </button>
-              </div>
-            </div>
-          </section>
-        </div>
+          }
+        />
       </header>
 
       {/* Main Content */}
-      <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-8 px-6 py-8">
+      <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-6 px-5 py-6 sm:px-8 sm:py-8">
         {/* Story Title Banner */}
         <section className="flex flex-col justify-between gap-6 rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[var(--card-shadow)] md:flex-row md:items-center md:p-8">
           <div className="flex-1">
@@ -410,21 +276,12 @@ function StoryReadingRoomContent() {
                 </span>
               </div>
 
-              <div className="flex items-center gap-2">
-                {isCompleted && (
-                  <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--success)]/35 bg-[var(--success-soft)] px-3 py-1 text-xs font-semibold text-[var(--success)]">
-                    <CheckCircle2 className="size-3.5" />
-                    Completed
-                  </span>
-                )}
-                <button
-                  type="button"
-                  onClick={() => setShowEnglish((v) => !v)}
-                  className="rounded-full border border-[var(--line)] bg-[var(--paper-tint)] px-3.5 py-1 text-xs font-semibold text-[var(--ink)] transition hover:border-[var(--primary)]"
-                >
-                  {showEnglish ? "Hide English" : "Show English"}
-                </button>
-              </div>
+              {isCompleted && (
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--success)]/35 bg-[var(--success-soft)] px-3 py-1 text-xs font-semibold text-[var(--success)]">
+                  <CheckCircle2 className="size-3.5" />
+                  Completed
+                </span>
+              )}
             </div>
 
             <h1
@@ -433,11 +290,13 @@ function StoryReadingRoomContent() {
             >
               {story.title}
             </h1>
-            <p className="mt-1 text-sm font-medium text-[var(--muted)]">{story.titleRomaji}</p>
-            <p className="mt-1 text-base font-medium text-[var(--ink)]">{story.titleEn}</p>
+            <p className="mt-1 text-sm font-semibold text-[var(--muted)]">
+              {story.titleRomaji}
+            </p>
+            <p className="mt-1 text-base text-[var(--muted)]">{story.titleEn}</p>
             <p className="mt-3 text-xs text-[var(--muted)]">
               Tip: Tap any word in the passage to inspect its reading, definition, and save it to your{" "}
-              <Link href="/review" className="font-semibold text-[var(--primary)] underline">
+              <Link href="/review" className="text-[var(--primary)] underline underline-offset-2">
                 FSRS Review Hub
               </Link>
               .
@@ -455,6 +314,194 @@ function StoryReadingRoomContent() {
             />
           </div>
         </section>
+
+        {/* Dedicated Dual Cards: Card 1 (Audio Controls) & Card 2 (Reading Settings) */}
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+          {/* Card 1: Audio Controls */}
+          <section
+            aria-label="Passage audio player"
+            className="flex flex-col justify-between gap-4 rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[var(--card-shadow)]"
+          >
+            <div>
+              <div className="flex items-center justify-between gap-2">
+                <span className="text-[11px] font-bold tracking-wider text-[var(--primary)] uppercase">
+                  Audio Narrator
+                </span>
+                <span className="text-xs font-medium text-[var(--muted)]">
+                  {narrator.activeSegmentIndex !== null
+                    ? `${narrator.isPlaying ? "Speaking" : "Paused at"} Sentence ${narrator.activeSegmentIndex + 1} / ${audioQueue.length}`
+                    : `Ready to narrate · ${audioQueue.length} sentences`}
+                </span>
+              </div>
+              <p className="mt-1 text-xs text-[var(--muted)]">
+                Listen to native sentence audio with real-time reading synchronization.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-2">
+              <button
+                type="button"
+                onClick={narrator.togglePlayPause}
+                disabled={audioQueue.length === 0}
+                aria-label={narrator.isPlaying ? "Pause passage" : "Play passage"}
+                className="inline-flex min-h-11 flex-1 items-center justify-center gap-2 rounded-xl bg-[var(--primary)] px-4 text-xs font-bold text-white shadow-xs transition hover:bg-[var(--primary-hover)] disabled:opacity-45 cursor-pointer"
+              >
+                {narrator.isPlaying ? <Pause className="size-4" /> : <Play className="size-4" />}
+                <span>{narrator.isPlaying ? "Pause" : "Read Aloud"}</span>
+              </button>
+              <button
+                type="button"
+                onClick={narrator.prevSegment}
+                disabled={audioQueue.length === 0}
+                aria-label="Previous sentence"
+                className="grid size-11 place-items-center rounded-xl border border-[var(--line)] bg-[var(--bg)] text-[var(--ink)] transition hover:border-[var(--primary)] hover:text-[var(--primary)] disabled:opacity-45 cursor-pointer"
+              >
+                <SkipBack className="size-4" />
+              </button>
+              <button
+                type="button"
+                onClick={narrator.nextSegment}
+                disabled={audioQueue.length === 0}
+                aria-label="Next sentence"
+                className="grid size-11 place-items-center rounded-xl border border-[var(--line)] bg-[var(--bg)] text-[var(--ink)] transition hover:border-[var(--primary)] hover:text-[var(--primary)] disabled:opacity-45 cursor-pointer"
+              >
+                <SkipForward className="size-4" />
+              </button>
+              {(narrator.isPlaying || narrator.activeSegmentIndex !== null) && (
+                <button
+                  type="button"
+                  onClick={narrator.stop}
+                  aria-label="Stop passage"
+                  className="grid size-11 place-items-center rounded-xl border border-[var(--line)] bg-[var(--bg)] text-[var(--muted)] transition hover:border-[var(--primary)] hover:text-[var(--primary)] cursor-pointer"
+                >
+                  <Square className="size-3.5" />
+                </button>
+              )}
+            </div>
+
+            <div className="flex flex-wrap items-center justify-between gap-2 border-t border-[var(--line)]/50 pt-3">
+              <div
+                role="group"
+                aria-label="Playback speed"
+                className="inline-flex rounded-xl border border-[var(--line)] bg-[var(--bg)] p-0.5"
+              >
+                {([
+                  [0.75, "0.75x", "Slow"],
+                  [1, "1.0x", "Normal"],
+                  [1.25, "1.25x", "Fast"],
+                ] as Array<[PlaybackSpeed, string, string]>).map(([speed, label, title]) => (
+                  <button
+                    key={speed}
+                    type="button"
+                    aria-pressed={narrator.speed === speed}
+                    aria-label={`${label} ${title} playback`}
+                    onClick={() => narrator.setSpeed(speed)}
+                    className={`min-h-7 rounded-lg px-2 text-[11px] font-bold transition-colors cursor-pointer ${
+                      narrator.speed === speed
+                        ? "bg-[var(--primary)] text-white shadow-xs"
+                        : "text-[var(--muted)] hover:text-[var(--ink)]"
+                    }`}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+              <button
+                type="button"
+                aria-pressed={narrator.loopCurrentSentence}
+                onClick={narrator.toggleLoop}
+                className={`inline-flex min-h-8 items-center gap-1.5 rounded-xl border px-2.5 text-[11px] font-bold transition-colors cursor-pointer ${
+                  narrator.loopCurrentSentence
+                    ? "border-[var(--primary)] bg-[var(--sakura-light)] text-[var(--primary)]"
+                    : "border-[var(--line)] bg-[var(--bg)] text-[var(--muted)] hover:text-[var(--ink)]"
+                }`}
+              >
+                <Repeat className="size-3" />
+                <span>Shadow Loop</span>
+              </button>
+            </div>
+          </section>
+
+          {/* Card 2: Reading Settings */}
+          <section
+            aria-label="Reading preferences"
+            className="flex flex-col justify-between gap-4 rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[var(--card-shadow)]"
+          >
+            <div>
+              <div className="flex items-center justify-between gap-2">
+                <span className="text-[11px] font-bold tracking-wider text-[var(--primary)] uppercase">
+                  Reading Settings
+                </span>
+                <span className="text-xs font-medium text-[var(--muted)]">Display & typography</span>
+              </div>
+              <p className="mt-1 text-xs text-[var(--muted)]">
+                Customize ruby furigana, English translation visibility, and writing orientation.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-2.5">
+              {/* Furigana toggle */}
+              <button
+                type="button"
+                aria-pressed={showFurigana}
+                onClick={() => setShowFurigana((v) => !v)}
+                className={`flex min-h-11 items-center justify-center gap-1.5 rounded-xl border px-3 text-xs font-semibold transition cursor-pointer ${
+                  showFurigana
+                    ? "border-[var(--primary)] bg-[var(--sakura-light)] text-[var(--primary)] font-bold"
+                    : "border-[var(--line)] bg-[var(--bg)] text-[var(--muted)] hover:border-[var(--primary)]/60 hover:text-[var(--ink)]"
+                }`}
+              >
+                <span className="font-japanese font-bold text-sm">あ</span>
+                <span>Furigana {showFurigana ? "On" : "Off"}</span>
+              </button>
+
+              {/* English toggle */}
+              <button
+                type="button"
+                aria-label="Toggle English translation"
+                aria-pressed={showEnglish}
+                onClick={() => setShowEnglish((v) => !v)}
+                className={`flex min-h-11 items-center justify-center gap-1.5 rounded-xl border px-3 text-xs font-semibold transition cursor-pointer ${
+                  showEnglish
+                    ? "border-[var(--primary)] bg-[var(--sakura-light)] text-[var(--primary)] font-bold"
+                    : "border-[var(--line)] bg-[var(--bg)] text-[var(--muted)] hover:border-[var(--primary)]/60 hover:text-[var(--ink)]"
+                }`}
+              >
+                <Languages className="size-3.5" />
+                <span>English {showEnglish ? "On" : "Off"}</span>
+              </button>
+            </div>
+
+            <div className="border-t border-[var(--line)]/50 pt-3">
+              {/* Reading Direction Toggle */}
+              <button
+                type="button"
+                aria-label="Toggle reading direction"
+                aria-pressed={writingMode === "vertical"}
+                onClick={() =>
+                  setWritingMode((mode) => (mode === "horizontal" ? "vertical" : "horizontal"))
+                }
+                className={`flex w-full min-h-9 items-center justify-center gap-2 rounded-xl border px-3 text-xs font-semibold transition cursor-pointer ${
+                  writingMode === "vertical"
+                    ? "border-[var(--primary)] bg-[var(--primary)] text-white shadow-xs font-bold"
+                    : "border-[var(--line)] bg-[var(--bg)] text-[var(--ink)] hover:border-[var(--primary)]"
+                }`}
+              >
+                {writingMode === "vertical" ? (
+                  <>
+                    <Columns3 className="size-3.5" />
+                    <span>Vertical (縦書き) · Right-to-Left</span>
+                  </>
+                ) : (
+                  <>
+                    <AlignJustify className="size-3.5" />
+                    <span>Horizontal (横書き) · Standard</span>
+                  </>
+                )}
+              </button>
+            </div>
+          </section>
+        </div>
 
         {/* Reading Room Paper Sheet & Tap-to-SRS Inspector */}
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_320px]">
@@ -572,16 +619,14 @@ function StoryReadingRoomContent() {
                                 setActiveSentence(isSentActive ? null : sent);
                                 setSelectedSentenceIndex(isSentActive ? null : segment?.index ?? null);
                               }}
-                              className={`group inline-flex min-h-8 items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs transition ${
+                              aria-label={`Sentence ${sIdx + 1} breakdown`}
+                              className={`group inline-flex min-h-8 items-center gap-1.5 rounded-full border px-3 py-1 text-xs transition ${
                                 isSentActive
                                   ? "border-[var(--primary)] bg-[var(--primary)] text-white shadow-sm"
                                   : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)] hover:border-[var(--primary)]/60 hover:text-[var(--ink)]"
                               }`}
                             >
-                              <span className="font-japanese font-semibold text-[11px]">文 {sIdx + 1}</span>
-                              <span className="max-w-[160px] truncate text-[11px] opacity-90 sm:max-w-[240px]">
-                                {sent.naturalEn}
-                              </span>
+                              <span className="font-japanese font-bold text-xs">文 {sIdx + 1}</span>
                             </button>
                             {segment && (
                               <button

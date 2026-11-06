@@ -262,23 +262,35 @@ export function StrokePracticeCanvas({
               <line x1="0" y1="54.5" x2="109" y2="54.5" />
             </g>
 
-            {isDemoActive ? (
-              <>
-                {/* Faint Complete Kanji Guide Paths */}
+            {/* PRACTICE LAYERS (Trace, Recall, Free) */}
+            <g
+              data-testid="practice-layers"
+              className={!isDemoActive ? "transition-opacity duration-150 opacity-100" : "opacity-0 pointer-events-none"}
+              aria-hidden={isDemoActive}
+            >
+              {/* Background Guide Paths (Shown in Trace Mode) */}
+              {mode === "trace" && (
                 <g
                   fill="none"
                   stroke="var(--line)"
                   className="stroke-[var(--line)]"
-                  strokeWidth="3.8"
+                  strokeWidth="4.2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
                   {paths.map((d, idx) => (
-                    <path key={`demo-guide-${idx}`} d={d} />
+                    <path
+                      key={`trace-guide-${idx}`}
+                      d={d}
+                      stroke={idx === currentStrokeIndex ? "var(--sakura)" : "var(--line)"}
+                      strokeWidth={idx === currentStrokeIndex ? "4.6" : "3.8"}
+                    />
                   ))}
                 </g>
+              )}
 
-                {/* Animated Foreground Sumi Ink Paths */}
+              {/* Already Completed Strokes in Trace & Recall Modes */}
+              {mode !== "free" && (
                 <g
                   fill="none"
                   stroke="var(--ink)"
@@ -287,175 +299,171 @@ export function StrokePracticeCanvas({
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {paths.map((d, index) => {
-                    const timing = demoTimings[index] ?? {
-                      length: 120,
-                      durationMs: 400,
-                      delayMs: 0,
-                      transitionDuration: "400ms",
-                      transitionDelay: "0ms",
-                    };
-
-                    const isAlreadyDrawn = !isDemoPlaying && index < demoStrokeIndex;
-                    const isDrawn = isDemoComplete || isDemoPlaying || isAlreadyDrawn;
-                    const dashOffset = isDrawn ? 0 : timing.length;
-
-                    const transitionDuration = isDemoPlaying ? timing.transitionDuration : "0ms";
-                    const transitionDelay = isDemoPlaying ? timing.transitionDelay : "0ms";
-
-                    return (
-                      <path
-                        key={`demo-fg-${index}`}
-                        ref={(el) => {
-                          foregroundPathRefs.current[index] = el;
-                        }}
-                        d={d}
-                        style={{
-                          strokeDasharray: `${timing.length}`,
-                          strokeDashoffset: `${dashOffset}`,
-                          transitionProperty: "stroke-dashoffset",
-                          transitionDuration,
-                          transitionDelay,
-                          transitionTimingFunction: "ease-in-out",
-                        }}
-                      />
-                    );
-                  })}
+                  {paths.slice(0, currentStrokeIndex).map((d, idx) => (
+                    <path
+                      key={`done-stroke-${idx}`}
+                      d={d}
+                      data-testid={`completed-stroke-${idx}`}
+                    />
+                  ))}
                 </g>
+              )}
 
-                {/* Numbered Stroke Start Markers */}
-                <g>
-                  {markers.map((marker, index) => {
-                    const timing = demoTimings[index] ?? {
-                      durationMs: 320,
-                      delayMs: 0,
-                      transitionDelay: "0ms",
-                    };
+              {/* Starting Dots / Markers in Trace & Recall Modes */}
+              {mode !== "free" &&
+                markers.map((marker, idx) => {
+                  const isCurrent = idx === currentStrokeIndex;
+                  const isFuture = idx > currentStrokeIndex;
+                  if (mode === "trace" && !isCurrent) return null;
+                  if (mode === "recall" && !isCurrent && !isFuture) return null;
 
-                    const isVisible =
-                      isDemoComplete ||
-                      isDemoPlaying ||
-                      (!isDemoPlaying && index < demoStrokeIndex);
-
-                    const markerDelay = isDemoPlaying ? timing.transitionDelay : "0ms";
-                    const markerDuration = isDemoPlaying ? "180ms" : "0ms";
-
-                    return (
-                      <g
-                        key={`demo-marker-${index}`}
-                        transform={`translate(${marker.x}, ${marker.y})`}
-                        style={{
-                          opacity: isVisible ? 1 : 0,
-                          transitionProperty: "opacity",
-                          transitionDuration: markerDuration,
-                          transitionDelay: markerDelay,
-                        }}
-                      >
-                        <circle
-                          cx="0"
-                          cy="-2"
-                          r="5"
-                          fill="var(--primary)"
-                          stroke="var(--surface)"
-                          strokeWidth="0.8"
-                        />
-                        <text
-                          x="0"
-                          y="-1.8"
-                          textAnchor="middle"
-                          dominantBaseline="central"
-                          fill="#ffffff"
-                          fontSize="5"
-                          fontWeight="700"
-                        >
-                          {index + 1}
-                        </text>
-                      </g>
-                    );
-                  })}
-                </g>
-              </>
-            ) : (
-              <>
-                {/* Background Guide Paths (Shown in Trace Mode) */}
-                {mode === "trace" && (
-                  <g
-                    fill="none"
-                    stroke="var(--line)"
-                    className="stroke-[var(--line)]"
-                    strokeWidth="4.2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    {paths.map((d, idx) => (
-                      <path
-                        key={`trace-guide-${idx}`}
-                        d={d}
-                        stroke={idx === currentStrokeIndex ? "var(--sakura)" : "var(--line)"}
-                        strokeWidth={idx === currentStrokeIndex ? "4.6" : "3.8"}
+                  return (
+                    <g
+                      key={`practice-dot-${idx}`}
+                      transform={`translate(${marker.x}, ${marker.y})`}
+                      data-testid={`practice-marker-${idx}`}
+                    >
+                      <circle
+                        cx="0"
+                        cy="-2"
+                        r={isCurrent ? "5.2" : "3.4"}
+                        fill={isCurrent ? "var(--primary)" : "var(--sakura)"}
+                        stroke="var(--surface)"
+                        strokeWidth="0.9"
                       />
-                    ))}
-                  </g>
-                )}
-
-                {/* Already Completed Strokes in Trace & Recall Modes */}
-                {mode !== "free" && (
-                  <g
-                    fill="none"
-                    stroke="var(--ink)"
-                    className="stroke-[var(--ink)]"
-                    strokeWidth="4.2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    {paths.slice(0, currentStrokeIndex).map((d, idx) => (
-                      <path
-                        key={`done-stroke-${idx}`}
-                        d={d}
-                        data-testid={`completed-stroke-${idx}`}
-                      />
-                    ))}
-                  </g>
-                )}
-
-                {/* Starting Dots / Markers in Trace & Recall Modes */}
-                {mode !== "free" &&
-                  markers.map((marker, idx) => {
-                    const isCurrent = idx === currentStrokeIndex;
-                    const isFuture = idx > currentStrokeIndex;
-                    if (mode === "trace" && !isCurrent) return null;
-                    if (mode === "recall" && !isCurrent && !isFuture) return null;
-
-                    return (
-                      <g
-                        key={`practice-dot-${idx}`}
-                        transform={`translate(${marker.x}, ${marker.y})`}
-                        data-testid={`practice-marker-${idx}`}
+                      <text
+                        x="0"
+                        y="-1.8"
+                        textAnchor="middle"
+                        dominantBaseline="central"
+                        fill="#ffffff"
+                        fontSize={isCurrent ? "5.5" : "4"}
+                        fontWeight="700"
                       >
-                        <circle
-                          cx="0"
-                          cy="-2"
-                          r={isCurrent ? "5.2" : "3.4"}
-                          fill={isCurrent ? "var(--primary)" : "var(--sakura)"}
-                          stroke="var(--surface)"
-                          strokeWidth="0.9"
-                        />
-                        <text
-                          x="0"
-                          y="-1.8"
-                          textAnchor="middle"
-                          dominantBaseline="central"
-                          fill="#ffffff"
-                          fontSize={isCurrent ? "5.5" : "4"}
-                          fontWeight="700"
-                        >
-                          {idx + 1}
-                        </text>
-                      </g>
-                    );
-                  })}
-              </>
-            )}
+                        {idx + 1}
+                      </text>
+                    </g>
+                  );
+                })}
+            </g>
+
+            {/* DEMO ANIMATION LAYERS (Always mounted in DOM so CSS stroke-dashoffset transitions compute immediately on first click) */}
+            <g
+              data-testid="demo-layers"
+              className={isDemoActive ? "transition-opacity duration-150 opacity-100" : "opacity-0 pointer-events-none"}
+              aria-hidden={!isDemoActive}
+            >
+              {/* Faint Complete Kanji Guide Paths */}
+              <g
+                fill="none"
+                stroke="var(--line)"
+                className="stroke-[var(--line)]"
+                strokeWidth="3.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                {paths.map((d, idx) => (
+                  <path key={`demo-guide-${idx}`} d={d} />
+                ))}
+              </g>
+
+              {/* Animated Foreground Sumi Ink Paths */}
+              <g
+                fill="none"
+                stroke="var(--ink)"
+                className="stroke-[var(--ink)]"
+                strokeWidth="4.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                {paths.map((d, index) => {
+                  const timing = demoTimings[index] ?? {
+                    length: 120,
+                    durationMs: 400,
+                    delayMs: 0,
+                    transitionDuration: "400ms",
+                    transitionDelay: "0ms",
+                  };
+
+                  const isAlreadyDrawn = !isDemoPlaying && index < demoStrokeIndex;
+                  const isDrawn = isDemoComplete || isDemoPlaying || isAlreadyDrawn;
+                  const dashOffset = isDrawn ? 0 : timing.length;
+
+                  const transitionDuration = isDemoPlaying ? timing.transitionDuration : "0ms";
+                  const transitionDelay = isDemoPlaying ? timing.transitionDelay : "0ms";
+
+                  return (
+                    <path
+                      key={`demo-fg-${index}`}
+                      ref={(el) => {
+                        foregroundPathRefs.current[index] = el;
+                      }}
+                      d={d}
+                      style={{
+                        strokeDasharray: `${timing.length}`,
+                        strokeDashoffset: `${dashOffset}`,
+                        transitionProperty: "stroke-dashoffset",
+                        transitionDuration,
+                        transitionDelay,
+                        transitionTimingFunction: "ease-in-out",
+                      }}
+                    />
+                  );
+                })}
+              </g>
+
+              {/* Numbered Stroke Start Markers */}
+              <g>
+                {markers.map((marker, index) => {
+                  const timing = demoTimings[index] ?? {
+                    durationMs: 320,
+                    delayMs: 0,
+                    transitionDelay: "0ms",
+                  };
+
+                  const isVisible =
+                    isDemoComplete ||
+                    isDemoPlaying ||
+                    (!isDemoPlaying && index < demoStrokeIndex);
+
+                  const markerDelay = isDemoPlaying ? timing.transitionDelay : "0ms";
+                  const markerDuration = isDemoPlaying ? "180ms" : "0ms";
+
+                  return (
+                    <g
+                      key={`demo-marker-${index}`}
+                      transform={`translate(${marker.x}, ${marker.y})`}
+                      style={{
+                        opacity: isVisible ? 1 : 0,
+                        transitionProperty: "opacity",
+                        transitionDuration: markerDuration,
+                        transitionDelay: markerDelay,
+                      }}
+                    >
+                      <circle
+                        cx="0"
+                        cy="-2"
+                        r="5"
+                        fill="var(--primary)"
+                        stroke="var(--surface)"
+                        strokeWidth="0.8"
+                      />
+                      <text
+                        x="0"
+                        y="-1.8"
+                        textAnchor="middle"
+                        dominantBaseline="central"
+                        fill="#ffffff"
+                        fontSize="5"
+                        fontWeight="700"
+                      >
+                        {index + 1}
+                      </text>
+                    </g>
+                  );
+                })}
+              </g>
+            </g>
           </svg>
 
           <canvas
@@ -566,15 +574,18 @@ export function StrokePracticeCanvas({
               </div>
             )}
 
-            <button
-              type="button"
-              onClick={handleUndo}
-              disabled={isDemoActive || completedStrokes.length === 0}
-              className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--surface)] px-3.5 py-2 text-xs font-bold text-[var(--ink)] shadow-sm transition-colors hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer"
-            >
-              <Undo2 className="size-3.5" />
-              <span>Undo</span>
-            </button>
+            {/* Undo button: removed when in play demo mode, shown only in trace, recall, and free states */}
+            {!isDemoActive && (
+              <button
+                type="button"
+                onClick={handleUndo}
+                disabled={completedStrokes.length === 0}
+                className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--surface)] px-3.5 py-2 text-xs font-bold text-[var(--ink)] shadow-sm transition-colors hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer"
+              >
+                <Undo2 className="size-3.5" />
+                <span>Undo</span>
+              </button>
+            )}
 
             <button
               type="button"

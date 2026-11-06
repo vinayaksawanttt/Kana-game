@@ -14,8 +14,41 @@ function nodeText(node: ReactNode): string {
   return "";
 }
 
+function isJapaneseAudioTarget(rawText: string): boolean {
+  const text = rawText.trim();
+  if (!text) return false;
+
+  const jaMatches = text.match(/[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]/gu) ?? [];
+  const jaCount = jaMatches.length;
+  if (jaCount < 2) return false;
+
+  const enMatches = text.match(/[a-zA-Z]/g) ?? [];
+  const enCount = enMatches.length;
+  const total = jaCount + enCount;
+
+  // 1. Predominantly Japanese (e.g. vocabulary items, sentences, tables of inflections)
+  if (jaCount / total >= 0.45) return true;
+
+  // 2. Starts with Japanese characters (after list markers, quotes, or markdown symbols)
+  // e.g. "1. **私は田中です。** (*Watashi wa Tanaka desu.*)"
+  // or "猫がいます。 (*There is a cat.*)"
+  const stripped = text.replace(/^(\s*[-*+]|\s*[0-9]+[.)]|\s*>\s*|\s*[*_`]+)+/u, "").trim();
+  const startsWithJa = /^[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}「『]/u.test(stripped);
+  const hasJaSentence = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]{2,}[^a-zA-Z\n]*[。！？」』]/u.test(stripped);
+
+  // If it starts with Japanese and forms an example sentence or phrase with translation
+  if (startsWithJa && (hasJaSentence || jaCount >= 3) && enCount < 120) {
+    return true;
+  }
+
+  return false;
+}
+
 function japaneseAudioText(children: ReactNode): string {
-  const phrases = nodeText(children).match(
+  const text = nodeText(children);
+  if (!isJapaneseAudioTarget(text)) return "";
+
+  const phrases = text.match(
     /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}ー々〆ヵヶ、。！？「」『』（）〜…]+/gu
   ) ?? [];
   return phrases
@@ -31,6 +64,9 @@ function containsComponent(node: ReactNode, component: unknown): boolean {
 }
 
 function JapaneseExampleAudio({ children }: { children: ReactNode }) {
+  if (containsComponent(children, AudioButton) || containsComponent(children, KanjiReadingPill)) {
+    return null;
+  }
   const text = japaneseAudioText(children);
   return text ? <AudioButton text={text} size="sm" label={`Listen to ${text}`} className="ml-1 align-middle" /> : null;
 }
@@ -148,6 +184,18 @@ export const mdxComponents = {
       <rt>{rt}</rt>
       <rp>)</rp>
     </ruby>
+  ),
+  JapaneseExample: ({ ja, en, romaji }: { ja: string; en?: string; romaji?: string }) => (
+    <div className="my-3 flex items-start gap-3 rounded-xl border border-[var(--line)] bg-[var(--surface)] p-3 shadow-xs">
+      <div className="min-w-0 flex-1">
+        <p lang="ja" className="font-japanese text-base font-semibold text-[var(--ink)]">
+          {ja}
+        </p>
+        {en && <p className="mt-1 text-xs text-[var(--muted)]">{en}</p>}
+        {romaji && <p className="mt-0.5 text-[11px] text-[var(--muted)]/80 italic">{romaji}</p>}
+      </div>
+      <AudioButton text={ja} size="sm" label={`Listen to ${ja}`} />
+    </div>
   ),
   AudioButton: (props: React.ComponentProps<typeof AudioButton>) => <AudioButton {...props} />,
   KanjiReadingPill: (props: React.ComponentProps<typeof KanjiReadingPill>) => <KanjiReadingPill {...props} />,

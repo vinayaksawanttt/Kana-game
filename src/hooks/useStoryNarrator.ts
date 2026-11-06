@@ -126,13 +126,34 @@ export function useStoryNarrator(queue: StoryAudioSegment[]) {
           return;
         }
 
-        const utterance = new SpeechSynthesisUtterance(segment.ttsText);
-        utterance.lang = "ja-JP";
-        utterance.rate = speedRef.current * 0.95;
-        utterance.onend = onSegmentEnd;
-        utterance.onerror = onSegmentEnd;
-        utteranceRef.current = utterance;
-        window.speechSynthesis.speak(utterance);
+        try {
+          window.speechSynthesis.cancel();
+          const utterance = new SpeechSynthesisUtterance(segment.ttsText);
+          utterance.lang = "ja-JP";
+          utterance.rate = speedRef.current * 0.95;
+
+          const voices = window.speechSynthesis.getVoices();
+          const jaVoice = voices.find((v) => v.lang === "ja-JP" || v.lang.startsWith("ja"));
+          if (jaVoice) {
+            utterance.voice = jaVoice;
+          }
+
+          utterance.onend = onSegmentEnd;
+          utterance.onerror = () => {
+            // Stop rapid flickering cascade if browser TTS has no voice or fails
+            playingRef.current = false;
+            setIsPlaying(false);
+            activeIndexRef.current = null;
+            setActiveSegmentIndex(null);
+          };
+          utteranceRef.current = utterance;
+          window.speechSynthesis.speak(utterance);
+        } catch {
+          playingRef.current = false;
+          setIsPlaying(false);
+          activeIndexRef.current = null;
+          setActiveSegmentIndex(null);
+        }
       };
 
       const audio = new Audio(segment.src);

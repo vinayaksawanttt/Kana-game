@@ -62,14 +62,27 @@ function buildTasks(args: string[]): AudioTask[] {
   return typeof limit === "number" ? tasks.slice(0, limit) : tasks;
 }
 
+let currentTts: MsEdgeTTS | null = null;
+let requestCount = 0;
+
+async function getTTS(forceRefresh = false): Promise<MsEdgeTTS> {
+  if (!currentTts || forceRefresh || requestCount >= 20) {
+    currentTts = new MsEdgeTTS();
+    await currentTts.setMetadata(VOICE, OUTPUT_FORMAT.AUDIO_24KHZ_48KBITRATE_MONO_MP3);
+    requestCount = 0;
+  }
+  requestCount++;
+  return currentTts;
+}
+
 async function synthesizeFile(
-  tts: MsEdgeTTS,
   text: string,
   targetFile: string
 ): Promise<void> {
   fs.mkdirSync(path.dirname(targetFile), { recursive: true });
-  for (let attempt = 1; attempt <= 3; attempt++) {
+  for (let attempt = 1; attempt <= 4; attempt++) {
     try {
+      const tts = await getTTS(attempt > 1);
       await new Promise<void>((resolve, reject) => {
         const { audioStream } = tts.toStream(text, { rate: "-5%" });
         const output = fs.createWriteStream(targetFile);
@@ -79,13 +92,13 @@ async function synthesizeFile(
         audioStream.on("error", reject);
       });
 
-      if (fs.statSync(targetFile).size > 0) return;
+      if (fs.existsSync(targetFile) && fs.statSync(targetFile).size > 0) return;
       throw new Error(`Generated empty audio file: ${targetFile}`);
     } catch (error) {
       fs.rmSync(targetFile, { force: true });
-      if (attempt === 3) throw error;
-      console.warn(`Retrying ${text} (${attempt}/3).`);
-      await new Promise((resolve) => setTimeout(resolve, 500 * attempt));
+      if (attempt === 4) throw error;
+      console.warn(`[Retry ${attempt}/4] ${text}: ${String(error).slice(0, 80)}`);
+      await new Promise((resolve) => setTimeout(resolve, 800 * attempt));
     }
   }
 }
@@ -96,16 +109,19 @@ export async function buildStoryAudio(args = process.argv.slice(2)): Promise<voi
   console.log(`[Story Audio] ${tasks.length} missing sentence clips${dryRun ? " (dry run)" : ""}.`);
   if (dryRun || tasks.length === 0) return;
 
-  const tts = new MsEdgeTTS();
-  await tts.setMetadata(VOICE, OUTPUT_FORMAT.AUDIO_24KHZ_48KBITRATE_MONO_MP3);
-
+  let currentStory = "";
   for (let index = 0; index < tasks.length; index++) {
     const task = tasks[index]!;
-    process.stdout.write(`[${index + 1}/${tasks.length}] ${task.slug} sentence ${task.index + 1}... `);
-    await synthesizeFile(tts, task.text, task.targetFile);
+    if (task.slug !== currentStory) {
+      currentStory = task.slug;
+      console.log(`\n=== Story: ${currentStory} ===`);
+    }
+    process.stdout.write(`[${index + 1}/${tasks.length}] sentence ${task.index + 1}... `);
+    await synthesizeFile(task.text, task.targetFile);
     process.stdout.write(`Done (${fs.statSync(task.targetFile).size} bytes)\n`);
-    await new Promise((resolve) => setTimeout(resolve, 60));
+    await new Promise((resolve) => setTimeout(resolve, 40));
   }
+  console.log(`\n✓ All ${tasks.length} clips synthesized successfully!`);
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(__filename)) {
