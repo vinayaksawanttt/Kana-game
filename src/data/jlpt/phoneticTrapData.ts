@@ -1,0 +1,6710 @@
+// Auto-generated deterministic JLPT Phonetic & Orthography Trap Sniper dataset
+// Contains 400 vocabulary-in-context items across JLPT N5-N1 + Kanji metadata.
+
+export type PhoneticTrapLevel = "N5" | "N4" | "N3" | "N2" | "N1";
+
+export interface PhoneticTrapVocabItem {
+  id: string;
+  level: PhoneticTrapLevel;
+  jlpt: 5 | 4 | 3 | 2 | 1;
+  word: string;
+  reading: string;
+  romaji: string;
+  meanings: string[];
+  prefix: string;
+  targetSurface: string;
+  suffix: string;
+  sentenceJa: string;
+  sentenceEn: string;
+}
+
+export interface CompactKanjiMeta {
+  c: string;
+  jlpt: number;
+  strokes: number;
+  on: string[];
+  kun: string[];
+  label: string;
+  radical: string;
+}
+
+export const PHONETIC_TRAP_LEVELS: readonly PhoneticTrapLevel[] = ["N5", "N4", "N3", "N2", "N1"] as const;
+
+export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
+  {
+    "id": "trap-n5-de5a452667",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "図書館",
+    "reading": "としょかん",
+    "romaji": "toshokan",
+    "meanings": [
+      "library"
+    ],
+    "prefix": "",
+    "targetSurface": "図書館",
+    "suffix": "の中で話をしてはいけない。",
+    "sentenceJa": "図書館の中で話をしてはいけない。",
+    "sentenceEn": "We must not speak in the library."
+  },
+  {
+    "id": "trap-n5-734d275fd9",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "病院",
+    "reading": "びょういん",
+    "romaji": "byouin",
+    "meanings": [
+      "hospital"
+    ],
+    "prefix": "この近くに",
+    "targetSurface": "病院",
+    "suffix": "はありますか。",
+    "sentenceJa": "この近くに病院はありますか。",
+    "sentenceEn": "Is there a hospital near here?"
+  },
+  {
+    "id": "trap-n5-65783b95dd",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "勉強",
+    "reading": "べんきょう",
+    "romaji": "benkyou",
+    "meanings": [
+      "to study"
+    ],
+    "prefix": "あなたは何時間",
+    "targetSurface": "勉強",
+    "suffix": "していますか。",
+    "sentenceJa": "あなたは何時間勉強していますか。",
+    "sentenceEn": "How many hours have you been studying?"
+  },
+  {
+    "id": "trap-n5-d23f06249a",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "練習",
+    "reading": "れんしゅう",
+    "romaji": "renshuu",
+    "meanings": [
+      "to practice"
+    ],
+    "prefix": "あなたはいつピアノの",
+    "targetSurface": "練習",
+    "suffix": "をしますか。",
+    "sentenceJa": "あなたはいつピアノの練習をしますか。",
+    "sentenceEn": "When do you practice the piano?"
+  },
+  {
+    "id": "trap-n5-2120ff505c",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "会社",
+    "reading": "かいしゃ",
+    "romaji": "kaisha",
+    "meanings": [
+      "company"
+    ],
+    "prefix": "ビルは三年前にこの",
+    "targetSurface": "会社",
+    "suffix": "に入った。",
+    "sentenceJa": "ビルは三年前にこの会社に入った。",
+    "sentenceEn": "Bill joined our company three years ago."
+  },
+  {
+    "id": "trap-n5-dd8ac16bd2",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "学校",
+    "reading": "がっこう",
+    "romaji": "gakkou",
+    "meanings": [
+      "school"
+    ],
+    "prefix": "この",
+    "targetSurface": "学校",
+    "suffix": "はたくさんの生徒がいます。",
+    "sentenceJa": "この学校はたくさんの生徒がいます。",
+    "sentenceEn": "This school has many students."
+  },
+  {
+    "id": "trap-n5-a59efa3057",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "銀行",
+    "reading": "ぎんこう",
+    "romaji": "ginkou",
+    "meanings": [
+      "bank"
+    ],
+    "prefix": "",
+    "targetSurface": "銀行",
+    "suffix": "にどれだけお金がありますか。",
+    "sentenceJa": "銀行にどれだけお金がありますか。",
+    "sentenceEn": "How much money do you have in the bank?"
+  },
+  {
+    "id": "trap-n5-5101640e7e",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "写真",
+    "reading": "しゃしん",
+    "romaji": "shashin",
+    "meanings": [
+      "photograph"
+    ],
+    "prefix": "なんてキレイな",
+    "targetSurface": "写真",
+    "suffix": "なんでしょう。",
+    "sentenceJa": "なんてキレイな写真なんでしょう。",
+    "sentenceEn": "What a beautiful picture!"
+  },
+  {
+    "id": "trap-n5-b8317395af",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "新聞",
+    "reading": "しんぶん",
+    "romaji": "shinbun",
+    "meanings": [
+      "newspaper"
+    ],
+    "prefix": "ジョンのことが",
+    "targetSurface": "新聞",
+    "suffix": "に出ていた。",
+    "sentenceJa": "ジョンのことが新聞に出ていた。",
+    "sentenceEn": "John was mentioned in the paper."
+  },
+  {
+    "id": "trap-n5-814bdc2cec",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "先生",
+    "reading": "せんせい",
+    "romaji": "sensei",
+    "meanings": [
+      "teacher",
+      "doctor"
+    ],
+    "prefix": "校長が",
+    "targetSurface": "先生",
+    "suffix": "の後ろから入ってきた。",
+    "sentenceJa": "校長が先生の後ろから入ってきた。",
+    "sentenceEn": "The principal came in after the teacher."
+  },
+  {
+    "id": "trap-n5-ee85169acd",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "料理",
+    "reading": "りょうり",
+    "romaji": "ryouri",
+    "meanings": [
+      "cuisine"
+    ],
+    "prefix": "これらのりんごは",
+    "targetSurface": "料理",
+    "suffix": "用にもってこいだ。",
+    "sentenceJa": "これらのりんごは料理用にもってこいだ。",
+    "sentenceEn": "These apples are good cookers."
+  },
+  {
+    "id": "trap-n5-2ba96bef9a",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "旅行",
+    "reading": "りょこう",
+    "romaji": "ryokou",
+    "meanings": [
+      "travel"
+    ],
+    "prefix": "いつ",
+    "targetSurface": "旅行",
+    "suffix": "においでになりますか。",
+    "sentenceJa": "いつ旅行においでになりますか。",
+    "sentenceEn": "When will you go on a journey?"
+  },
+  {
+    "id": "trap-n5-92b1621231",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "映画",
+    "reading": "えいが",
+    "romaji": "eiga",
+    "meanings": [
+      "movie"
+    ],
+    "prefix": "その",
+    "targetSurface": "映画",
+    "suffix": "をもう一度見たいな。",
+    "sentenceJa": "その映画をもう一度見たいな。",
+    "sentenceEn": "I want to see the movie again."
+  },
+  {
+    "id": "trap-n5-e101e41f54",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "切手",
+    "reading": "きって",
+    "romaji": "kitte",
+    "meanings": [
+      "postage stamp"
+    ],
+    "prefix": "",
+    "targetSurface": "切手",
+    "suffix": "の上からサインをしてください。",
+    "sentenceJa": "切手の上からサインをしてください。",
+    "sentenceEn": "Sign across the stamp."
+  },
+  {
+    "id": "trap-n5-70f1678111",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "外国人",
+    "reading": "がいこくじん",
+    "romaji": "gaikokujin",
+    "meanings": [
+      "foreigner"
+    ],
+    "prefix": "その",
+    "targetSurface": "外国人",
+    "suffix": "はかなりうまく日本語を話す。",
+    "sentenceJa": "その外国人はかなりうまく日本語を話す。",
+    "sentenceEn": "The foreigner speaks Japanese fairly well."
+  },
+  {
+    "id": "trap-n5-797ae8d562",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "牛乳",
+    "reading": "ぎゅうにゅう",
+    "romaji": "gyuunyuu",
+    "meanings": [
+      "milk"
+    ],
+    "prefix": "",
+    "targetSurface": "牛乳",
+    "suffix": "はバターやチーズになります。",
+    "sentenceJa": "牛乳はバターやチーズになります。",
+    "sentenceEn": "Milk is made into butter and cheese."
+  },
+  {
+    "id": "trap-n5-2f62b9db5e",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "大丈夫",
+    "reading": "だいじょうぶ",
+    "romaji": "daijoubu",
+    "meanings": [
+      "all right"
+    ],
+    "prefix": "いや、",
+    "targetSurface": "大丈夫",
+    "suffix": "だ。",
+    "sentenceJa": "いや、大丈夫だ。",
+    "sentenceEn": "No, no, that's okay."
+  },
+  {
+    "id": "trap-n5-2e610178ae",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "誕生日",
+    "reading": "たんじょうび",
+    "romaji": "tanjoubi",
+    "meanings": [
+      "birthday"
+    ],
+    "prefix": "",
+    "targetSurface": "誕生日",
+    "suffix": "とは人が生まれた日のことだ。",
+    "sentenceJa": "誕生日とは人が生まれた日のことだ。",
+    "sentenceEn": "The birthday is the day on which a person was born."
+  },
+  {
+    "id": "trap-n5-6318b0423a",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "万年筆",
+    "reading": "まんねんひつ",
+    "romaji": "mannenhitsu",
+    "meanings": [
+      "fountain pen"
+    ],
+    "prefix": "新しい",
+    "targetSurface": "万年筆",
+    "suffix": "をなくしてしまった。",
+    "sentenceJa": "新しい万年筆をなくしてしまった。",
+    "sentenceEn": "I have lost my new fountain pen."
+  },
+  {
+    "id": "trap-n5-8b86921749",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "郵便局",
+    "reading": "ゆうびんきょく",
+    "romaji": "yuubinkyoku",
+    "meanings": [
+      "post office"
+    ],
+    "prefix": "あの～",
+    "targetSurface": "郵便局",
+    "suffix": "はどちらでしょうか。",
+    "sentenceJa": "あの～郵便局はどちらでしょうか。",
+    "sentenceEn": "Uh..., where's the post office?"
+  },
+  {
+    "id": "trap-n5-dc7d39c7af",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "留学生",
+    "reading": "りゅうがくせい",
+    "romaji": "ryuugakusei",
+    "meanings": [
+      "overseas student"
+    ],
+    "prefix": "",
+    "targetSurface": "留学生",
+    "suffix": "も入れるのかしら。",
+    "sentenceJa": "留学生も入れるのかしら。",
+    "sentenceEn": "Can foreign students be in the club?"
+  },
+  {
+    "id": "trap-n5-8a88cfbcb8",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "映画館",
+    "reading": "えいがかん",
+    "romaji": "eigakan",
+    "meanings": [
+      "cinema"
+    ],
+    "prefix": "その",
+    "targetSurface": "映画館",
+    "suffix": "は人々でいっぱいだった。",
+    "sentenceJa": "その映画館は人々でいっぱいだった。",
+    "sentenceEn": "The cinema was filled with people."
+  },
+  {
+    "id": "trap-n5-75a36b034c",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "お手洗い",
+    "reading": "おてあらい",
+    "romaji": "otearai",
+    "meanings": [
+      "bathroom"
+    ],
+    "prefix": "",
+    "targetSurface": "お手洗い",
+    "suffix": "はどこですか。",
+    "sentenceJa": "お手洗いはどこですか。",
+    "sentenceEn": "Where's the restroom?"
+  },
+  {
+    "id": "trap-n5-6f664d3ded",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "男の子",
+    "reading": "おとこのこ",
+    "romaji": "otokonoko",
+    "meanings": [
+      "boy"
+    ],
+    "prefix": "あのハンサムな",
+    "targetSurface": "男の子",
+    "suffix": "を見て。",
+    "sentenceJa": "あのハンサムな男の子を見て。",
+    "sentenceEn": "Look at that good-looking boy."
+  },
+  {
+    "id": "trap-n5-7a073616e5",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "お弁当",
+    "reading": "おべんとう",
+    "romaji": "obentou",
+    "meanings": [
+      "boxed lunch"
+    ],
+    "prefix": "彼は今日、",
+    "targetSurface": "お弁当",
+    "suffix": "を持って来た。",
+    "sentenceJa": "彼は今日、お弁当を持って来た。",
+    "sentenceEn": "He brought his lunch today."
+  },
+  {
+    "id": "trap-n5-e6afab391a",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "女の子",
+    "reading": "おんなのこ",
+    "romaji": "onnanoko",
+    "meanings": [
+      "girl"
+    ],
+    "prefix": "",
+    "targetSurface": "女の子",
+    "suffix": "はほとんどみんなやさしい。",
+    "sentenceJa": "女の子はほとんどみんなやさしい。",
+    "sentenceEn": "Almost all girls are kind."
+  },
+  {
+    "id": "trap-n5-5620a00afc",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "喫茶店",
+    "reading": "きっさてん",
+    "romaji": "kissaten",
+    "meanings": [
+      "coffee lounge"
+    ],
+    "prefix": "私たちは",
+    "targetSurface": "喫茶店",
+    "suffix": "で昼食をとった。",
+    "sentenceJa": "私たちは喫茶店で昼食をとった。",
+    "sentenceEn": "We ate lunch in a coffee lounge."
+  },
+  {
+    "id": "trap-n5-b4faf372f3",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "牛肉",
+    "reading": "ぎゅうにく",
+    "romaji": "gyuuniku",
+    "meanings": [
+      "beef"
+    ],
+    "prefix": "日本人はイギリス人より",
+    "targetSurface": "牛肉",
+    "suffix": "を食べる。",
+    "sentenceJa": "日本人はイギリス人より牛肉を食べる。",
+    "sentenceEn": "The Japanese eat more beef than the British do."
+  },
+  {
+    "id": "trap-n5-85eb994887",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "教室",
+    "reading": "きょうしつ",
+    "romaji": "kyoushitsu",
+    "meanings": [
+      "classroom"
+    ],
+    "prefix": "ＬＬ",
+    "targetSurface": "教室",
+    "suffix": "を使ってもよいですか。",
+    "sentenceJa": "ＬＬ教室を使ってもよいですか。",
+    "sentenceEn": "May we use the language lab?"
+  },
+  {
+    "id": "trap-n5-976c4f7174",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "兄弟",
+    "reading": "きょうだい",
+    "romaji": "kyoudai",
+    "meanings": [
+      "(humble) siblings"
+    ],
+    "prefix": "あなたは何人",
+    "targetSurface": "兄弟",
+    "suffix": "がいますか。",
+    "sentenceJa": "あなたは何人兄弟がいますか。",
+    "sentenceEn": "How many siblings do you have?"
+  },
+  {
+    "id": "trap-n5-b00c4af0a2",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "金曜日",
+    "reading": "きんようび",
+    "romaji": "kin'youbi",
+    "meanings": [
+      "Friday"
+    ],
+    "prefix": "あなたは",
+    "targetSurface": "金曜日",
+    "suffix": "に何をするつもりですか。",
+    "sentenceJa": "あなたは金曜日に何をするつもりですか。",
+    "sentenceEn": "What will you do on Friday?"
+  },
+  {
+    "id": "trap-n5-04e80a2ba1",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "月曜日",
+    "reading": "げつようび",
+    "romaji": "getsuyoubi",
+    "meanings": [
+      "Monday"
+    ],
+    "prefix": "",
+    "targetSurface": "月曜日",
+    "suffix": "までにここに来ています。",
+    "sentenceJa": "月曜日までにここに来ています。",
+    "sentenceEn": "I'll be here by Monday."
+  },
+  {
+    "id": "trap-n5-8699b8bec2",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "交差点",
+    "reading": "こうさてん",
+    "romaji": "kousaten",
+    "meanings": [
+      "intersection"
+    ],
+    "prefix": "あの",
+    "targetSurface": "交差点",
+    "suffix": "で何が起こったのか。",
+    "sentenceJa": "あの交差点で何が起こったのか。",
+    "sentenceEn": "What happened at that crossing?"
+  },
+  {
+    "id": "trap-n5-7a27eadef1",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "今週",
+    "reading": "こんしゅう",
+    "romaji": "konshuu",
+    "meanings": [
+      "this week"
+    ],
+    "prefix": "",
+    "targetSurface": "今週",
+    "suffix": "はどちらにいらしゃいましたか。",
+    "sentenceJa": "今週はどちらにいらしゃいましたか。",
+    "sentenceEn": "Where have you been this week?"
+  },
+  {
+    "id": "trap-n5-45c705d5b2",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "再来年",
+    "reading": "さらいねん",
+    "romaji": "sarainen",
+    "meanings": [
+      "year after next"
+    ],
+    "prefix": "祖父は、",
+    "targetSurface": "再来年",
+    "suffix": "引退する予定です。",
+    "sentenceJa": "祖父は、再来年引退する予定です。",
+    "sentenceEn": "My grandfather is planning to retire the year after next."
+  },
+  {
+    "id": "trap-n5-ebf194a316",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "自転車",
+    "reading": "じてんしゃ",
+    "romaji": "jitensha",
+    "meanings": [
+      "bicycle"
+    ],
+    "prefix": "ぼくの",
+    "targetSurface": "自転車",
+    "suffix": "はパンクしている。",
+    "sentenceJa": "ぼくの自転車はパンクしている。",
+    "sentenceEn": "My bicycle has a flat tire."
+  },
+  {
+    "id": "trap-n5-78fd1a0e8a",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "自動車",
+    "reading": "じどうしゃ",
+    "romaji": "jidousha",
+    "meanings": [
+      "automobile"
+    ],
+    "prefix": "",
+    "targetSurface": "自動車",
+    "suffix": "にひかれたのではないですか。",
+    "sentenceJa": "自動車にひかれたのではないですか。",
+    "sentenceEn": "Wasn't he killed by a car?"
+  },
+  {
+    "id": "trap-n5-5bae559507",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "授業",
+    "reading": "じゅぎょう",
+    "romaji": "jugyou",
+    "meanings": [
+      "lesson",
+      "class work"
+    ],
+    "prefix": "それは",
+    "targetSurface": "授業",
+    "suffix": "の終わりだった。",
+    "sentenceJa": "それは授業の終わりだった。",
+    "sentenceEn": "That was the end of the class."
+  },
+  {
+    "id": "trap-n5-4daa103d7d",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "宿題",
+    "reading": "しゅくだい",
+    "romaji": "shukudai",
+    "meanings": [
+      "homework"
+    ],
+    "prefix": "",
+    "targetSurface": "宿題",
+    "suffix": "はもうやってしまいましたか。",
+    "sentenceJa": "宿題はもうやってしまいましたか。",
+    "sentenceEn": "Have you done your assignment yet?"
+  },
+  {
+    "id": "trap-n5-dcc87a37fb",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "食堂",
+    "reading": "しょくどう",
+    "romaji": "shokudou",
+    "meanings": [
+      "dining hall"
+    ],
+    "prefix": "",
+    "targetSurface": "食堂",
+    "suffix": "はセルフサービスでした。",
+    "sentenceJa": "食堂はセルフサービスでした。",
+    "sentenceEn": "The cafeteria was self-service."
+  },
+  {
+    "id": "trap-n5-44d9d70862",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "水曜日",
+    "reading": "すいようび",
+    "romaji": "suiyoubi",
+    "meanings": [
+      "Wednesday"
+    ],
+    "prefix": "今度の",
+    "targetSurface": "水曜日",
+    "suffix": "ならいいですよ。",
+    "sentenceJa": "今度の水曜日ならいいですよ。",
+    "sentenceEn": "Next Wednesday will be fine."
+  },
+  {
+    "id": "trap-n5-b8c4cd80db",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "先週",
+    "reading": "せんしゅう",
+    "romaji": "senshuu",
+    "meanings": [
+      "last week"
+    ],
+    "prefix": "あの人は",
+    "targetSurface": "先週",
+    "suffix": "ここにいた人です。",
+    "sentenceJa": "あの人は先週ここにいた人です。",
+    "sentenceEn": "He's the man that was here last week."
+  },
+  {
+    "id": "trap-n5-992fc07339",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "大使館",
+    "reading": "たいしかん",
+    "romaji": "taishikan",
+    "meanings": [
+      "embassy"
+    ],
+    "prefix": "日本",
+    "targetSurface": "大使館",
+    "suffix": "はどこにありますか。",
+    "sentenceJa": "日本大使館はどこにありますか。",
+    "sentenceEn": "Where is the Japanese Embassy?"
+  },
+  {
+    "id": "trap-n5-1c0b0f77b6",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "台所",
+    "reading": "だいどころ",
+    "romaji": "daidokoro",
+    "meanings": [
+      "kitchen"
+    ],
+    "prefix": "ルーシーは今",
+    "targetSurface": "台所",
+    "suffix": "にいるでしょう。",
+    "sentenceJa": "ルーシーは今台所にいるでしょう。",
+    "sentenceEn": "Lucy should be in the kitchen now."
+  },
+  {
+    "id": "trap-n5-e09167a3d4",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "夏休み",
+    "reading": "なつやすみ",
+    "romaji": "natsuyasumi",
+    "meanings": [
+      "summer holiday"
+    ],
+    "prefix": "この",
+    "targetSurface": "夏休み",
+    "suffix": "はどこかへ行くのですか。",
+    "sentenceJa": "この夏休みはどこかへ行くのですか。",
+    "sentenceEn": "Are you going away this summer?"
+  },
+  {
+    "id": "trap-n5-d8c3a3f0d0",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "日曜日",
+    "reading": "にちようび",
+    "romaji": "nichiyoubi",
+    "meanings": [
+      "Sunday"
+    ],
+    "prefix": "ちょうど",
+    "targetSurface": "日曜日",
+    "suffix": "にぶつかりますね。",
+    "sentenceJa": "ちょうど日曜日にぶつかりますね。",
+    "sentenceEn": "It falls on Sunday."
+  },
+  {
+    "id": "trap-n5-246b5ae84d",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "晩御飯",
+    "reading": "ばんごはん",
+    "romaji": "bangohan",
+    "meanings": [
+      "evening meal"
+    ],
+    "prefix": "おいしい",
+    "targetSurface": "晩御飯",
+    "suffix": "をありがとうございました。",
+    "sentenceJa": "おいしい晩御飯をありがとうございました。",
+    "sentenceEn": "Thank you for the wonderful dinner."
+  },
+  {
+    "id": "trap-n5-79ddbb2b98",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "文章",
+    "reading": "ぶんしょう",
+    "romaji": "bunshou",
+    "meanings": [
+      "sentence",
+      "text"
+    ],
+    "prefix": "ヘミングウェイの",
+    "targetSurface": "文章",
+    "suffix": "は悪文だった。",
+    "sentenceJa": "ヘミングウェイの文章は悪文だった。",
+    "sentenceEn": "Hemingway had a poor writing style."
+  },
+  {
+    "id": "trap-n5-fd1c93832f",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "毎週",
+    "reading": "まいしゅう",
+    "romaji": "maishuu",
+    "meanings": [
+      "every week"
+    ],
+    "prefix": "父は",
+    "targetSurface": "毎週",
+    "suffix": "日曜日にゴルフをします。",
+    "sentenceJa": "父は毎週日曜日にゴルフをします。",
+    "sentenceEn": "My father plays golf every Sunday."
+  },
+  {
+    "id": "trap-n5-3ae16ad93a",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "もう一度",
+    "reading": "もういちど",
+    "romaji": "mouichido",
+    "meanings": [
+      "again"
+    ],
+    "prefix": "",
+    "targetSurface": "もう一度",
+    "suffix": "ゆっくりお話しください。",
+    "sentenceJa": "もう一度ゆっくりお話しください。",
+    "sentenceEn": "Could you please repeat it slowly?"
+  },
+  {
+    "id": "trap-n5-d10bb92f3e",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "木曜日",
+    "reading": "もくようび",
+    "romaji": "mokuyoubi",
+    "meanings": [
+      "Thursday"
+    ],
+    "prefix": "やあ、フレッド。",
+    "targetSurface": "木曜日",
+    "suffix": "にバドミントンはどう。",
+    "sentenceJa": "やあ、フレッド。木曜日にバドミントンはどう。",
+    "sentenceEn": "Hi, Fred, how about badminton on Thursday?"
+  },
+  {
+    "id": "trap-n5-7a4ef637be",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "来週",
+    "reading": "らいしゅう",
+    "romaji": "raishuu",
+    "meanings": [
+      "next week"
+    ],
+    "prefix": "",
+    "targetSurface": "来週",
+    "suffix": "ヨーロッパへ行くつもりなんです。",
+    "sentenceJa": "来週ヨーロッパへ行くつもりなんです。",
+    "sentenceEn": "I'm going to Europe next week."
+  },
+  {
+    "id": "trap-n5-0139a208fe",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "両親",
+    "reading": "りょうしん",
+    "romaji": "ryoushin",
+    "meanings": [
+      "both parents"
+    ],
+    "prefix": "",
+    "targetSurface": "両親",
+    "suffix": "は二人ともまだ生きています。",
+    "sentenceJa": "両親は二人ともまだ生きています。",
+    "sentenceEn": "Both the parents are still living."
+  },
+  {
+    "id": "trap-n5-f7a15687a1",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "冷蔵庫",
+    "reading": "れいぞうこ",
+    "romaji": "reizouko",
+    "meanings": [
+      "refrigerator"
+    ],
+    "prefix": "",
+    "targetSurface": "冷蔵庫",
+    "suffix": "の中にバターが２ポンドある。",
+    "sentenceJa": "冷蔵庫の中にバターが２ポンドある。",
+    "sentenceEn": "There are two pounds of butter in the icebox."
+  },
+  {
+    "id": "trap-n5-1cfccd0cdd",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "一日",
+    "reading": "いちにち",
+    "romaji": "ichinichi",
+    "meanings": [
+      "one day",
+      "first of month"
+    ],
+    "prefix": "",
+    "targetSurface": "一日",
+    "suffix": "で５００ドルつかってしまった。",
+    "sentenceJa": "一日で５００ドルつかってしまった。",
+    "sentenceEn": "I've spent $500 a day."
+  },
+  {
+    "id": "trap-n5-2dc7289c82",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "一緒",
+    "reading": "いっしょ",
+    "romaji": "issho",
+    "meanings": [
+      "together"
+    ],
+    "prefix": "「ご",
+    "targetSurface": "一緒",
+    "suffix": "してもいいですか」「もちろんです」",
+    "sentenceJa": "「ご一緒してもいいですか」「もちろんです」",
+    "sentenceEn": "\"May I go with you?\" \"Of course.\""
+  },
+  {
+    "id": "trap-n5-381da4d060",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "鉛筆",
+    "reading": "えんぴつ",
+    "romaji": "enpitsu",
+    "meanings": [
+      "pencil"
+    ],
+    "prefix": "ペンか",
+    "targetSurface": "鉛筆",
+    "suffix": "を持っていますか。",
+    "sentenceJa": "ペンか鉛筆を持っていますか。",
+    "sentenceEn": "Do you have a pen or a pencil?"
+  },
+  {
+    "id": "trap-n5-57ed89b240",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "大勢",
+    "reading": "おおぜい",
+    "romaji": "oozei",
+    "meanings": [
+      "great number of people"
+    ],
+    "prefix": "そこには",
+    "targetSurface": "大勢",
+    "suffix": "の人がいた。",
+    "sentenceJa": "そこには大勢の人がいた。",
+    "sentenceEn": "There was a large crowd there."
+  },
+  {
+    "id": "trap-n5-f0f3826045",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "一昨日",
+    "reading": "おととい",
+    "romaji": "ototoi",
+    "meanings": [
+      "day before yesterday"
+    ],
+    "prefix": "",
+    "targetSurface": "一昨日",
+    "suffix": "、彼は学校を休んだかもしれない。",
+    "sentenceJa": "一昨日、彼は学校を休んだかもしれない。",
+    "sentenceEn": "He may have absented himself from school the day before yesterday."
+  },
+  {
+    "id": "trap-n5-b75778f0ce",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "一昨年",
+    "reading": "おととし",
+    "romaji": "ototoshi",
+    "meanings": [
+      "year before last"
+    ],
+    "prefix": "彼女は、",
+    "targetSurface": "一昨年",
+    "suffix": "よりもはるかに暮らし向きがよい。",
+    "sentenceJa": "彼女は、一昨年よりもはるかに暮らし向きがよい。",
+    "sentenceEn": "She's far better off than she was the year before last."
+  },
+  {
+    "id": "trap-n5-cdea017272",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "音楽",
+    "reading": "おんがく",
+    "romaji": "ongaku",
+    "meanings": [
+      "music"
+    ],
+    "prefix": "この",
+    "targetSurface": "音楽",
+    "suffix": "を聞いてくつろぎなさい。",
+    "sentenceJa": "この音楽を聞いてくつろぎなさい。",
+    "sentenceEn": "Listen to this music and relax."
+  },
+  {
+    "id": "trap-n5-31a803c7f5",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "外国",
+    "reading": "がいこく",
+    "romaji": "gaikoku",
+    "meanings": [
+      "foreign country"
+    ],
+    "prefix": "あなたは",
+    "targetSurface": "外国",
+    "suffix": "の本を持っていますか。",
+    "sentenceJa": "あなたは外国の本を持っていますか。",
+    "sentenceEn": "Do you have any foreign books?"
+  },
+  {
+    "id": "trap-n5-7cb27c411e",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "階段",
+    "reading": "かいだん",
+    "romaji": "kaidan",
+    "meanings": [
+      "stairs"
+    ],
+    "prefix": "その",
+    "targetSurface": "階段",
+    "suffix": "を上ってはいけません。",
+    "sentenceJa": "その階段を上ってはいけません。",
+    "sentenceEn": "You must not go up the stairs."
+  },
+  {
+    "id": "trap-n5-a771d4f949",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "買い物",
+    "reading": "かいもの",
+    "romaji": "kaimono",
+    "meanings": [
+      "shopping"
+    ],
+    "prefix": "１日おきに",
+    "targetSurface": "買い物",
+    "suffix": "に行く。",
+    "sentenceJa": "１日おきに買い物に行く。",
+    "sentenceEn": "I go shopping every other day."
+  },
+  {
+    "id": "trap-n5-452102ad0a",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "学生",
+    "reading": "がくせい",
+    "romaji": "gakusei",
+    "meanings": [
+      "student"
+    ],
+    "prefix": "",
+    "targetSurface": "学生",
+    "suffix": "の半数が休んでいた。",
+    "sentenceJa": "学生の半数が休んでいた。",
+    "sentenceEn": "Half the students were absent."
+  },
+  {
+    "id": "trap-n5-0dbf9ef8ca",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "火曜日",
+    "reading": "かようび",
+    "romaji": "kayoubi",
+    "meanings": [
+      "Tuesday"
+    ],
+    "prefix": "",
+    "targetSurface": "火曜日",
+    "suffix": "に国会が開かれる。",
+    "sentenceJa": "火曜日に国会が開かれる。",
+    "sentenceEn": "The Diet will meet on Tuesday."
+  },
+  {
+    "id": "trap-n5-0b36c8d6c6",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "黄色い",
+    "reading": "きいろい",
+    "romaji": "kiiroi",
+    "meanings": [
+      "yellow"
+    ],
+    "prefix": "その",
+    "targetSurface": "黄色い",
+    "suffix": "のをいただきましょう。",
+    "sentenceJa": "その黄色いのをいただきましょう。",
+    "sentenceEn": "I'll take the yellow one."
+  },
+  {
+    "id": "trap-n5-ec4e1dfc87",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "去年",
+    "reading": "きょねん",
+    "romaji": "kyonen",
+    "meanings": [
+      "last year"
+    ],
+    "prefix": "ビルは",
+    "targetSurface": "去年",
+    "suffix": "の秋に私に会いに来た。",
+    "sentenceJa": "ビルは去年の秋に私に会いに来た。",
+    "sentenceEn": "Bill came to see me last autumn."
+  },
+  {
+    "id": "trap-n5-6b454b895e",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "果物",
+    "reading": "くだもの",
+    "romaji": "kudamono",
+    "meanings": [
+      "fruit"
+    ],
+    "prefix": "父はそんなに",
+    "targetSurface": "果物",
+    "suffix": "を食べないんです。",
+    "sentenceJa": "父はそんなに果物を食べないんです。",
+    "sentenceEn": "My father doesn't eat all that much fruit."
+  },
+  {
+    "id": "trap-n5-20a1278928",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "靴下",
+    "reading": "くつした",
+    "romaji": "kutsushita",
+    "meanings": [
+      "socks"
+    ],
+    "prefix": "この",
+    "targetSurface": "靴下",
+    "suffix": "はちぐはぐだ。",
+    "sentenceJa": "この靴下はちぐはぐだ。",
+    "sentenceEn": "These socks do not match."
+  },
+  {
+    "id": "trap-n5-e1634cb3e9",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "警官",
+    "reading": "けいかん",
+    "romaji": "keikan",
+    "meanings": [
+      "policeman"
+    ],
+    "prefix": "二人の",
+    "targetSurface": "警官",
+    "suffix": "もへとへとになった。",
+    "sentenceJa": "二人の警官もへとへとになった。",
+    "sentenceEn": "The two policemen were exhausted, too."
+  },
+  {
+    "id": "trap-n5-dd34250740",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "結構",
+    "reading": "けっこう",
+    "romaji": "kekkou",
+    "meanings": [
+      "splendid",
+      "enough"
+    ],
+    "prefix": "いや",
+    "targetSurface": "結構",
+    "suffix": "です。たくさんいただきました。",
+    "sentenceJa": "いや結構です。たくさんいただきました。",
+    "sentenceEn": "No more, thank you. I'm full."
+  },
+  {
+    "id": "trap-n5-2eb252da72",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "結婚",
+    "reading": "けっこん",
+    "romaji": "kekkon",
+    "meanings": [
+      "marriage"
+    ],
+    "prefix": "ジョンはジェーンと",
+    "targetSurface": "結婚",
+    "suffix": "していた。",
+    "sentenceJa": "ジョンはジェーンと結婚していた。",
+    "sentenceEn": "John was married to Jane."
+  },
+  {
+    "id": "trap-n5-2e1642b248",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "玄関",
+    "reading": "げんかん",
+    "romaji": "genkan",
+    "meanings": [
+      "entry hall"
+    ],
+    "prefix": "",
+    "targetSurface": "玄関",
+    "suffix": "のカギはどうなっていますか。",
+    "sentenceJa": "玄関のカギはどうなっていますか。",
+    "sentenceEn": "How does the front-door lock work?"
+  },
+  {
+    "id": "trap-n5-05cf590971",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "公園",
+    "reading": "こうえん",
+    "romaji": "kouen",
+    "meanings": [
+      "park"
+    ],
+    "prefix": "この",
+    "targetSurface": "公園",
+    "suffix": "はすべての人に公開されている。",
+    "sentenceJa": "この公園はすべての人に公開されている。",
+    "sentenceEn": "The park is open to everybody."
+  },
+  {
+    "id": "trap-n5-1288e600be",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "紅茶",
+    "reading": "こうちゃ",
+    "romaji": "koucha",
+    "meanings": [
+      "black tea"
+    ],
+    "prefix": "",
+    "targetSurface": "紅茶",
+    "suffix": "かコーヒーはいかがですか。",
+    "sentenceJa": "紅茶かコーヒーはいかがですか。",
+    "sentenceEn": "Care for tea or coffee?"
+  },
+  {
+    "id": "trap-n5-402eb0d21f",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "交番",
+    "reading": "こうばん",
+    "romaji": "kouban",
+    "meanings": [
+      "police box"
+    ],
+    "prefix": "向こうの",
+    "targetSurface": "交番",
+    "suffix": "で聞いてください。",
+    "sentenceJa": "向こうの交番で聞いてください。",
+    "sentenceEn": "Ask at the police station over there."
+  },
+  {
+    "id": "trap-n5-3793173687",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "今月",
+    "reading": "こんげつ",
+    "romaji": "kongetsu",
+    "meanings": [
+      "this month"
+    ],
+    "prefix": "",
+    "targetSurface": "今月",
+    "suffix": "の売り上げはよくない。",
+    "sentenceJa": "今月の売り上げはよくない。",
+    "sentenceEn": "Sales have been off this month."
+  },
+  {
+    "id": "trap-n5-eb1c9a5df9",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "今晩",
+    "reading": "こんばん",
+    "romaji": "konban",
+    "meanings": [
+      "this evening"
+    ],
+    "prefix": "",
+    "targetSurface": "今晩",
+    "suffix": "はパーティーがあるのかなあ。",
+    "sentenceJa": "今晩はパーティーがあるのかなあ。",
+    "sentenceEn": "Is there going to be a party tonight?"
+  },
+  {
+    "id": "trap-n5-c10cb3070d",
+    "level": "N5",
+    "jlpt": 5,
+    "word": "作文",
+    "reading": "さくぶん",
+    "romaji": "sakubun",
+    "meanings": [
+      "composition",
+      "writing"
+    ],
+    "prefix": "",
+    "targetSurface": "作文",
+    "suffix": "は書いてしまいましたか。",
+    "sentenceJa": "作文は書いてしまいましたか。",
+    "sentenceEn": "Have you finished writing your composition?"
+  },
+  {
+    "id": "trap-n4-47593d1123",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "住所",
+    "reading": "じゅうしょ",
+    "romaji": "juusho",
+    "meanings": [
+      "an address",
+      "a residence"
+    ],
+    "prefix": "あなたの名前と",
+    "targetSurface": "住所",
+    "suffix": "を記入しなさい。",
+    "sentenceJa": "あなたの名前と住所を記入しなさい。",
+    "sentenceEn": "Fill in your name and address."
+  },
+  {
+    "id": "trap-n4-c151fe4163",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "紹介",
+    "reading": "しょうかい",
+    "romaji": "shoukai",
+    "meanings": [
+      "introduction"
+    ],
+    "prefix": "あなたを私の両親に",
+    "targetSurface": "紹介",
+    "suffix": "したい。",
+    "sentenceJa": "あなたを私の両親に紹介したい。",
+    "sentenceEn": "I want you to meet my parents."
+  },
+  {
+    "id": "trap-n4-9746b57413",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "経験",
+    "reading": "けいけん",
+    "romaji": "keiken",
+    "meanings": [
+      "to experience"
+    ],
+    "prefix": "この仕事では",
+    "targetSurface": "経験",
+    "suffix": "がものを言う。",
+    "sentenceJa": "この仕事では経験がものを言う。",
+    "sentenceEn": "Experience counts in this job."
+  },
+  {
+    "id": "trap-n4-6ce523bcb6",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "準備",
+    "reading": "じゅんび",
+    "romaji": "junbi",
+    "meanings": [
+      "to prepare"
+    ],
+    "prefix": "",
+    "targetSurface": "準備",
+    "suffix": "ができるまでちょっと待ってくれ。",
+    "sentenceJa": "準備ができるまでちょっと待ってくれ。",
+    "sentenceEn": "Hang on a bit until I'm ready."
+  },
+  {
+    "id": "trap-n4-123ee74d43",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "説明",
+    "reading": "せつめい",
+    "romaji": "setsumei",
+    "meanings": [
+      "explanation"
+    ],
+    "prefix": "あなたはそれをどう",
+    "targetSurface": "説明",
+    "suffix": "しますか。",
+    "sentenceJa": "あなたはそれをどう説明しますか。",
+    "sentenceEn": "How do you account for that?"
+  },
+  {
+    "id": "trap-n4-aa663833e4",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "相談",
+    "reading": "そうだん",
+    "romaji": "soudan",
+    "meanings": [
+      "to discuss"
+    ],
+    "prefix": "あなたに",
+    "targetSurface": "相談",
+    "suffix": "したいことがあるの。",
+    "sentenceJa": "あなたに相談したいことがあるの。",
+    "sentenceEn": "I have something to talk over with you."
+  },
+  {
+    "id": "trap-n4-2ef2e06612",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "約束",
+    "reading": "やくそく",
+    "romaji": "yakusoku",
+    "meanings": [
+      "promise"
+    ],
+    "prefix": "",
+    "targetSurface": "約束",
+    "suffix": "したことを思い出して下さい。",
+    "sentenceJa": "約束したことを思い出して下さい。",
+    "sentenceEn": "I must remind you of your promise."
+  },
+  {
+    "id": "trap-n4-6926bbe9d4",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "連絡",
+    "reading": "れんらく",
+    "romaji": "renraku",
+    "meanings": [
+      "contact"
+    ],
+    "prefix": "ここに来た時は、必ず",
+    "targetSurface": "連絡",
+    "suffix": "してね。",
+    "sentenceJa": "ここに来た時は、必ず連絡してね。",
+    "sentenceEn": "Please get in touch with me when you are here."
+  },
+  {
+    "id": "trap-n4-83af91b7eb",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "会議",
+    "reading": "かいぎ",
+    "romaji": "kaigi",
+    "meanings": [
+      "meeting"
+    ],
+    "prefix": "",
+    "targetSurface": "会議",
+    "suffix": "は終わりに近づきつつあった。",
+    "sentenceJa": "会議は終わりに近づきつつあった。",
+    "sentenceEn": "The conference was drawing to an end."
+  },
+  {
+    "id": "trap-n4-cf69ef2274",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "一生懸命",
+    "reading": "いっしょうけんめい",
+    "romaji": "isshoukenmei",
+    "meanings": [
+      "with utmost effort"
+    ],
+    "prefix": "もっと",
+    "targetSurface": "一生懸命",
+    "suffix": "勉強すべきだったのに。",
+    "sentenceJa": "もっと一生懸命勉強すべきだったのに。",
+    "sentenceEn": "You should have worked harder."
+  },
+  {
+    "id": "trap-n4-9f6e25d5e2",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "運転手",
+    "reading": "うんてんしゅ",
+    "romaji": "untenshu",
+    "meanings": [
+      "driver"
+    ],
+    "prefix": "",
+    "targetSurface": "運転手",
+    "suffix": "は車のスピードを上げた。",
+    "sentenceJa": "運転手は車のスピードを上げた。",
+    "sentenceEn": "The driver accelerated his car."
+  },
+  {
+    "id": "trap-n4-912c269668",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "研究室",
+    "reading": "けんきゅうしつ",
+    "romaji": "kenkyuushitsu",
+    "meanings": [
+      "study room",
+      "laboratory"
+    ],
+    "prefix": "私たちはその",
+    "targetSurface": "研究室",
+    "suffix": "を利用した。",
+    "sentenceJa": "私たちはその研究室を利用した。",
+    "sentenceEn": "We have made use of the laboratory."
+  },
+  {
+    "id": "trap-n4-795156bbfe",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "高校生",
+    "reading": "こうこうせい",
+    "romaji": "koukousei",
+    "meanings": [
+      "high school student"
+    ],
+    "prefix": "私はアメリカの",
+    "targetSurface": "高校生",
+    "suffix": "と文通をしている。",
+    "sentenceJa": "私はアメリカの高校生と文通をしている。",
+    "sentenceEn": "I am corresponding with an American high school student."
+  },
+  {
+    "id": "trap-n4-9593b3e04f",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "高等学校",
+    "reading": "こうとうがっこう",
+    "romaji": "koutougakkou",
+    "meanings": [
+      "high school"
+    ],
+    "prefix": "彼は",
+    "targetSurface": "高等学校",
+    "suffix": "の生徒ではありません。",
+    "sentenceJa": "彼は高等学校の生徒ではありません。",
+    "sentenceEn": "He is not a high school student."
+  },
+  {
+    "id": "trap-n4-a6678a1d99",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "再来週",
+    "reading": "さらいしゅう",
+    "romaji": "saraishuu",
+    "meanings": [
+      "the week after next"
+    ],
+    "prefix": "",
+    "targetSurface": "再来週",
+    "suffix": "の木曜日はどう？",
+    "sentenceJa": "再来週の木曜日はどう？",
+    "sentenceEn": "How about two weeks from Thursday?"
+  },
+  {
+    "id": "trap-n4-b04bf40187",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "小学校",
+    "reading": "しょうがっこう",
+    "romaji": "shougakkou",
+    "meanings": [
+      "elementary school"
+    ],
+    "prefix": "あなたは",
+    "targetSurface": "小学校",
+    "suffix": "に通っているの？",
+    "sentenceJa": "あなたは小学校に通っているの？",
+    "sentenceEn": "Do you go to an elementary school?"
+  },
+  {
+    "id": "trap-n4-2ae7b1cb3b",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "食料品",
+    "reading": "しょくりょうひん",
+    "romaji": "shokuryouhin",
+    "meanings": [
+      "groceries"
+    ],
+    "prefix": "あの店では良質の",
+    "targetSurface": "食料品",
+    "suffix": "を売っている。",
+    "sentenceJa": "あの店では良質の食料品を売っている。",
+    "sentenceEn": "They sell good foods at that shop."
+  },
+  {
+    "id": "trap-n4-f7e69f5427",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "新聞社",
+    "reading": "しんぶんしゃ",
+    "romaji": "shinbunsha",
+    "meanings": [
+      "newspaper company"
+    ],
+    "prefix": "どちらの",
+    "targetSurface": "新聞社",
+    "suffix": "にお勤めですか。",
+    "sentenceJa": "どちらの新聞社にお勤めですか。",
+    "sentenceEn": "Which newspaper do you work for?"
+  },
+  {
+    "id": "trap-n4-138dee4a26",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "大学生",
+    "reading": "だいがくせい",
+    "romaji": "daigakusei",
+    "meanings": [
+      "university student"
+    ],
+    "prefix": "私の兄は",
+    "targetSurface": "大学生",
+    "suffix": "です。",
+    "sentenceJa": "私の兄は大学生です。",
+    "sentenceEn": "My brother is a college student."
+  },
+  {
+    "id": "trap-n4-4b99b4673b",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "中学校",
+    "reading": "ちゅうがっこう",
+    "romaji": "chuugakkou",
+    "meanings": [
+      "junior high school",
+      "middle school"
+    ],
+    "prefix": "この歌を聞くと私の",
+    "targetSurface": "中学校",
+    "suffix": "時代を思い出します。",
+    "sentenceJa": "この歌を聞くと私の中学校時代を思い出します。",
+    "sentenceEn": "This song reminds me of my junior high school days."
+  },
+  {
+    "id": "trap-n4-36f583c207",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "駐車場",
+    "reading": "ちゅうしゃじょう",
+    "romaji": "chuushajou",
+    "meanings": [
+      "parking lot"
+    ],
+    "prefix": "",
+    "targetSurface": "駐車場",
+    "suffix": "には人ひとり見えなかった。",
+    "sentenceJa": "駐車場には人ひとり見えなかった。",
+    "sentenceEn": "Not a soul was to be seen in the parking lot."
+  },
+  {
+    "id": "trap-n4-5fd0c77ef5",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "天気予報",
+    "reading": "てんきよほう",
+    "romaji": "tenkiyohou",
+    "meanings": [
+      "weather forecast"
+    ],
+    "prefix": "",
+    "targetSurface": "天気予報",
+    "suffix": "が当たったよ。",
+    "sentenceJa": "天気予報が当たったよ。",
+    "sentenceEn": "The weather forecast was right."
+  },
+  {
+    "id": "trap-n4-80eba2fabb",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "展覧会",
+    "reading": "てんらんかい",
+    "romaji": "tenrankai",
+    "meanings": [
+      "exhibition"
+    ],
+    "prefix": "私たちは毎年",
+    "targetSurface": "展覧会",
+    "suffix": "を開く。",
+    "sentenceJa": "私たちは毎年展覧会を開く。",
+    "sentenceEn": "We hold an exhibition every year."
+  },
+  {
+    "id": "trap-n4-69678bc04e",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "動物園",
+    "reading": "どうぶつえん",
+    "romaji": "doubutsuen",
+    "meanings": [
+      "zoo"
+    ],
+    "prefix": "コンドルは",
+    "targetSurface": "動物園",
+    "suffix": "では決して育たない。",
+    "sentenceJa": "コンドルは動物園では決して育たない。",
+    "sentenceEn": "Condors have never bred in zoos."
+  },
+  {
+    "id": "trap-n4-546e786cde",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "飛行場",
+    "reading": "ひこうじょう",
+    "romaji": "hikoujou",
+    "meanings": [
+      "airport"
+    ],
+    "prefix": "その島の",
+    "targetSurface": "飛行場",
+    "suffix": "は、今では草がぼうぼうだ。",
+    "sentenceJa": "その島の飛行場は、今では草がぼうぼうだ。",
+    "sentenceEn": "The airfield on the island is now covered with weeds."
+  },
+  {
+    "id": "trap-n4-eced3a159f",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "美術館",
+    "reading": "びじゅつかん",
+    "romaji": "bijutsukan",
+    "meanings": [
+      "art gallery"
+    ],
+    "prefix": "このバスは",
+    "targetSurface": "美術館",
+    "suffix": "まで行きますか。",
+    "sentenceJa": "このバスは美術館まで行きますか。",
+    "sentenceEn": "Does this bus go to the museum?"
+  },
+  {
+    "id": "trap-n4-e877021bf4",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "赤ん坊",
+    "reading": "あかんぼう",
+    "romaji": "akanbou",
+    "meanings": [
+      "baby"
+    ],
+    "prefix": "うちの",
+    "targetSurface": "赤ん坊",
+    "suffix": "は口をきくようになってきました。",
+    "sentenceJa": "うちの赤ん坊は口をきくようになってきました。",
+    "sentenceEn": "Our baby is learning to speak."
+  },
+  {
+    "id": "trap-n4-a58874b751",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "お金持ち",
+    "reading": "おかねもち",
+    "romaji": "okanemochi",
+    "meanings": [
+      "rich man"
+    ],
+    "prefix": "どうしたら",
+    "targetSurface": "お金持ち",
+    "suffix": "になれるのかしら？",
+    "sentenceJa": "どうしたらお金持ちになれるのかしら？",
+    "sentenceEn": "How can I become rich?"
+  },
+  {
+    "id": "trap-n4-1065d7145c",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "屋上",
+    "reading": "おくじょう",
+    "romaji": "okujou",
+    "meanings": [
+      "rooftop"
+    ],
+    "prefix": "デパートの",
+    "targetSurface": "屋上",
+    "suffix": "にアドバルーンが上がっている。",
+    "sentenceJa": "デパートの屋上にアドバルーンが上がっている。",
+    "sentenceEn": "There is an advertising balloon flying above the department store."
+  },
+  {
+    "id": "trap-n4-ba001e2f36",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "贈り物",
+    "reading": "おくりもの",
+    "romaji": "okurimono",
+    "meanings": [
+      "gift"
+    ],
+    "prefix": "ジェニーは",
+    "targetSurface": "贈り物",
+    "suffix": "をありがとうと言った。",
+    "sentenceJa": "ジェニーは贈り物をありがとうと言った。",
+    "sentenceEn": "Jenny thanked me for the gift."
+  },
+  {
+    "id": "trap-n4-d9cf4f541d",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "泳ぎ方",
+    "reading": "およぎかた",
+    "romaji": "oyogikata",
+    "meanings": [
+      "way of swimming"
+    ],
+    "prefix": "君に",
+    "targetSurface": "泳ぎ方",
+    "suffix": "を教えよう。",
+    "sentenceJa": "君に泳ぎ方を教えよう。",
+    "sentenceEn": "I'll tell you how to swim."
+  },
+  {
+    "id": "trap-n4-93ff1a80c2",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "会議室",
+    "reading": "かいぎしつ",
+    "romaji": "kaigishitsu",
+    "meanings": [
+      "meeting room"
+    ],
+    "prefix": "クラブの会員は",
+    "targetSurface": "会議室",
+    "suffix": "に集まった。",
+    "sentenceJa": "クラブの会員は会議室に集まった。",
+    "sentenceEn": "The club members assembled in the meeting room."
+  },
+  {
+    "id": "trap-n4-7508a7d366",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "会場",
+    "reading": "かいじょう",
+    "romaji": "kaijou",
+    "meanings": [
+      "assembly hall or meeting place"
+    ],
+    "prefix": "私たちは",
+    "targetSurface": "会場",
+    "suffix": "の後ろに座った。",
+    "sentenceJa": "私たちは会場の後ろに座った。",
+    "sentenceEn": "We sat at the back of the hall."
+  },
+  {
+    "id": "trap-n4-b6027b4099",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "急行",
+    "reading": "きゅうこう",
+    "romaji": "kyuukou",
+    "meanings": [
+      "speedy",
+      "express"
+    ],
+    "prefix": "",
+    "targetSurface": "急行",
+    "suffix": "の料金は幾らですか。",
+    "sentenceJa": "急行の料金は幾らですか。",
+    "sentenceEn": "How much is the express?"
+  },
+  {
+    "id": "trap-n4-319186af72",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "教育",
+    "reading": "きょういく",
+    "romaji": "kyouiku",
+    "meanings": [
+      "education"
+    ],
+    "prefix": "この世界の",
+    "targetSurface": "教育",
+    "suffix": "にはがっかりしてしまう。",
+    "sentenceJa": "この世界の教育にはがっかりしてしまう。",
+    "sentenceEn": "Education in this world disappoints me."
+  },
+  {
+    "id": "trap-n4-7a7b79370f",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "教会",
+    "reading": "きょうかい",
+    "romaji": "kyoukai",
+    "meanings": [
+      "church"
+    ],
+    "prefix": "その",
+    "targetSurface": "教会",
+    "suffix": "は１１７３年までさかのぼる。",
+    "sentenceJa": "その教会は１１７３年までさかのぼる。",
+    "sentenceEn": "The church dates back to 1173."
+  },
+  {
+    "id": "trap-n4-a9dcbea815",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "競争",
+    "reading": "きょうそう",
+    "romaji": "kyousou",
+    "meanings": [
+      "competition"
+    ],
+    "prefix": "みんなでカブトムシを",
+    "targetSurface": "競争",
+    "suffix": "させた。",
+    "sentenceJa": "みんなでカブトムシを競争させた。",
+    "sentenceEn": "We raced our beetles."
+  },
+  {
+    "id": "trap-n4-607f3c4430",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "研究",
+    "reading": "けんきゅう",
+    "romaji": "kenkyuu",
+    "meanings": [
+      "research"
+    ],
+    "prefix": "あなたのご",
+    "targetSurface": "研究",
+    "suffix": "は、いかがですか。",
+    "sentenceJa": "あなたのご研究は、いかがですか。",
+    "sentenceEn": "How are your studies going?"
+  },
+  {
+    "id": "trap-n4-baaaf1524a",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "工業",
+    "reading": "こうぎょう",
+    "romaji": "kougyou",
+    "meanings": [
+      "the manufacturing industry"
+    ],
+    "prefix": "７月の",
+    "targetSurface": "工業",
+    "suffix": "生産は急増した。",
+    "sentenceJa": "７月の工業生産は急増した。",
+    "sentenceEn": "Industrial production rose sharply in July."
+  },
+  {
+    "id": "trap-n4-8b7434e649",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "工場",
+    "reading": "こうじょう",
+    "romaji": "koujou",
+    "meanings": [
+      "factory"
+    ],
+    "prefix": "その",
+    "targetSurface": "工場",
+    "suffix": "は来月から作業を中止する。",
+    "sentenceJa": "その工場は来月から作業を中止する。",
+    "sentenceEn": "The factory will cease operations next month."
+  },
+  {
+    "id": "trap-n4-0c49fbf17c",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "校長",
+    "reading": "こうちょう",
+    "romaji": "kouchou",
+    "meanings": [
+      "headmaster"
+    ],
+    "prefix": "",
+    "targetSurface": "校長",
+    "suffix": "が先生の後ろから入ってきた。",
+    "sentenceJa": "校長が先生の後ろから入ってきた。",
+    "sentenceEn": "The principal came in after the teacher."
+  },
+  {
+    "id": "trap-n4-a431dff83f",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "公務員",
+    "reading": "こうむいん",
+    "romaji": "koumuin",
+    "meanings": [
+      "government worker"
+    ],
+    "prefix": "私は",
+    "targetSurface": "公務員",
+    "suffix": "です。",
+    "sentenceJa": "私は公務員です。",
+    "sentenceEn": "I'm a government worker."
+  },
+  {
+    "id": "trap-n4-22a8ff8a88",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "再来月",
+    "reading": "さらいげつ",
+    "romaji": "saraigetsu",
+    "meanings": [
+      "the month after next"
+    ],
+    "prefix": "",
+    "targetSurface": "再来月",
+    "suffix": "は１２月だ。",
+    "sentenceJa": "再来月は１２月だ。",
+    "sentenceEn": "The month after next is December."
+  },
+  {
+    "id": "trap-n4-28faf8f7a3",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "産業",
+    "reading": "さんぎょう",
+    "romaji": "sangyou",
+    "meanings": [
+      "industry"
+    ],
+    "prefix": "日本は",
+    "targetSurface": "産業",
+    "suffix": "国である。",
+    "sentenceJa": "日本は産業国である。",
+    "sentenceEn": "Japan is an industrial country."
+  },
+  {
+    "id": "trap-n4-a40ee6e509",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "社長",
+    "reading": "しゃちょう",
+    "romaji": "shachou",
+    "meanings": [
+      "company president"
+    ],
+    "prefix": "この会社の",
+    "targetSurface": "社長",
+    "suffix": "は誰ですか。",
+    "sentenceJa": "この会社の社長は誰ですか。",
+    "sentenceEn": "Who is the boss of this company?"
+  },
+  {
+    "id": "trap-n4-eacd8a5221",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "習慣",
+    "reading": "しゅうかん",
+    "romaji": "shuukan",
+    "meanings": [
+      "custom",
+      "manners"
+    ],
+    "prefix": "その",
+    "targetSurface": "習慣",
+    "suffix": "は中国で始まった。",
+    "sentenceJa": "その習慣は中国で始まった。",
+    "sentenceEn": "The custom originated in China."
+  },
+  {
+    "id": "trap-n4-dcfb33317b",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "柔道",
+    "reading": "じゅうどう",
+    "romaji": "juudou",
+    "meanings": [
+      "judo"
+    ],
+    "prefix": "",
+    "targetSurface": "柔道",
+    "suffix": "では力より技のほうが大切である。",
+    "sentenceJa": "柔道では力より技のほうが大切である。",
+    "sentenceEn": "In judo, technique is more important than strength."
+  },
+  {
+    "id": "trap-n4-ab6fd5bdbb",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "十分",
+    "reading": "じゅうぶん",
+    "romaji": "juubun",
+    "meanings": [
+      "enough"
+    ],
+    "prefix": "私はこの本を買うのに",
+    "targetSurface": "十分",
+    "suffix": "なお金を持っている。",
+    "sentenceJa": "私はこの本を買うのに十分なお金を持っている。",
+    "sentenceEn": "I have enough money to buy this book."
+  },
+  {
+    "id": "trap-n4-93f910e281",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "出席",
+    "reading": "しゅっせき",
+    "romaji": "shusseki",
+    "meanings": [
+      "to attend"
+    ],
+    "prefix": "",
+    "targetSurface": "出席",
+    "suffix": "できないんですか。どうして？",
+    "sentenceJa": "出席できないんですか。どうして？",
+    "sentenceEn": "You can't attend? Why not?"
+  },
+  {
+    "id": "trap-n4-c614552d23",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "出発",
+    "reading": "しゅっぱつ",
+    "romaji": "shuppatsu",
+    "meanings": [
+      "to depart"
+    ],
+    "prefix": "すぐに",
+    "targetSurface": "出発",
+    "suffix": "した方がいいですよ。",
+    "sentenceJa": "すぐに出発した方がいいですよ。",
+    "sentenceEn": "You had better depart at once."
+  },
+  {
+    "id": "trap-n4-689dc7a66e",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "小説",
+    "reading": "しょうせつ",
+    "romaji": "shousetsu",
+    "meanings": [
+      "novel"
+    ],
+    "prefix": "トムは",
+    "targetSurface": "小説",
+    "suffix": "を読んでいる。",
+    "sentenceJa": "トムは小説を読んでいる。",
+    "sentenceEn": "Tom is reading a novel."
+  },
+  {
+    "id": "trap-n4-6111e87e72",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "招待",
+    "reading": "しょうたい",
+    "romaji": "shoutai",
+    "meanings": [
+      "to invite"
+    ],
+    "prefix": "ご",
+    "targetSurface": "招待",
+    "suffix": "をありがとうございます。",
+    "sentenceJa": "ご招待をありがとうございます。",
+    "sentenceEn": "Thank you for your invitation."
+  },
+  {
+    "id": "trap-n4-0e3ecb7665",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "将来",
+    "reading": "しょうらい",
+    "romaji": "shourai",
+    "meanings": [
+      "future",
+      "prospects"
+    ],
+    "prefix": "",
+    "targetSurface": "将来",
+    "suffix": "の事を考えずにはいられない。",
+    "sentenceJa": "将来の事を考えずにはいられない。",
+    "sentenceEn": "I can't help thinking of the future."
+  },
+  {
+    "id": "trap-n4-6a89d1feee",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "卒業",
+    "reading": "そつぎょう",
+    "romaji": "sotsugyou",
+    "meanings": [
+      "graduation"
+    ],
+    "prefix": "私はポップ・ミュージックはそろそろ",
+    "targetSurface": "卒業",
+    "suffix": "しようと思っているの。",
+    "sentenceJa": "私はポップ・ミュージックはそろそろ卒業しようと思っているの。",
+    "sentenceEn": "I feel I'm growing out of pop music."
+  },
+  {
+    "id": "trap-n4-3f26d1cef7",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "注射",
+    "reading": "ちゅうしゃ",
+    "romaji": "chuusha",
+    "meanings": [
+      "injection"
+    ],
+    "prefix": "",
+    "targetSurface": "注射",
+    "suffix": "をしましょう。",
+    "sentenceJa": "注射をしましょう。",
+    "sentenceEn": "I'll give you a shot."
+  },
+  {
+    "id": "trap-n4-3753f20423",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "特急",
+    "reading": "とっきゅう",
+    "romaji": "tokkyuu",
+    "meanings": [
+      "limited express train (faster than an express train)"
+    ],
+    "prefix": "時計がおくれていたので、私は",
+    "targetSurface": "特急",
+    "suffix": "にのりそこねた。",
+    "sentenceJa": "時計がおくれていたので、私は特急にのりそこねた。",
+    "sentenceEn": "As my watch was slow, I missed the special express."
+  },
+  {
+    "id": "trap-n4-178daf8296",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "入院",
+    "reading": "にゅういん",
+    "romaji": "nyuuin",
+    "meanings": [
+      "to hospitalise"
+    ],
+    "prefix": "",
+    "targetSurface": "入院",
+    "suffix": "しなければいけませんか。",
+    "sentenceJa": "入院しなければいけませんか。",
+    "sentenceEn": "Do I have to stay in the hospital?"
+  },
+  {
+    "id": "trap-n4-433da13afb",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "入学",
+    "reading": "にゅうがく",
+    "romaji": "nyuugaku",
+    "meanings": [
+      "to enter school or university"
+    ],
+    "prefix": "私はこの学校に２年前に",
+    "targetSurface": "入学",
+    "suffix": "した。",
+    "sentenceJa": "私はこの学校に２年前に入学した。",
+    "sentenceEn": "I entered this school two years ago."
+  },
+  {
+    "id": "trap-n4-5cda324083",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "人形",
+    "reading": "にんぎょう",
+    "romaji": "ningyou",
+    "meanings": [
+      "doll",
+      "figure"
+    ],
+    "prefix": "メアリーは私にアメリカの",
+    "targetSurface": "人形",
+    "suffix": "をくれた。",
+    "sentenceJa": "メアリーは私にアメリカの人形をくれた。",
+    "sentenceEn": "Mary gave me an American doll."
+  },
+  {
+    "id": "trap-n4-be23bfe1f6",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "非常に",
+    "reading": "ひじょうに",
+    "romaji": "hijouni",
+    "meanings": [
+      "extremely"
+    ],
+    "prefix": "車を運転することは",
+    "targetSurface": "非常に",
+    "suffix": "楽しい。",
+    "sentenceJa": "車を運転することは非常に楽しい。",
+    "sentenceEn": "It is a lot of fun to drive a car."
+  },
+  {
+    "id": "trap-n4-26253e5000",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "昼休み",
+    "reading": "ひるやすみ",
+    "romaji": "hiruyasumi",
+    "meanings": [
+      "noon break"
+    ],
+    "prefix": "お",
+    "targetSurface": "昼休み",
+    "suffix": "は、１時間です。",
+    "sentenceJa": "お昼休みは、１時間です。",
+    "sentenceEn": "Lunch break is an hour long."
+  },
+  {
+    "id": "trap-n4-c00788993b",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "復習",
+    "reading": "ふくしゅう",
+    "romaji": "fukushuu",
+    "meanings": [
+      "revision"
+    ],
+    "prefix": "その課の",
+    "targetSurface": "復習",
+    "suffix": "をしましたか。",
+    "sentenceJa": "その課の復習をしましたか。",
+    "sentenceEn": "Have you gone over the lesson?"
+  },
+  {
+    "id": "trap-n4-8011fa51a8",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "役に立つ",
+    "reading": "やくにたつ",
+    "romaji": "yakunitatsu",
+    "meanings": [
+      "to be helpful"
+    ],
+    "prefix": "どんなに少しでもすべて",
+    "targetSurface": "役に立つ",
+    "suffix": "。",
+    "sentenceJa": "どんなに少しでもすべて役に立つ。",
+    "sentenceEn": "Every little bit helps."
+  },
+  {
+    "id": "trap-n4-520cc83d87",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "両方",
+    "reading": "りょうほう",
+    "romaji": "ryouhou",
+    "meanings": [
+      "both sides"
+    ],
+    "prefix": "この手袋は",
+    "targetSurface": "両方",
+    "suffix": "がそろっていない。",
+    "sentenceJa": "この手袋は両方がそろっていない。",
+    "sentenceEn": "Their gloves are not in pairs."
+  },
+  {
+    "id": "trap-n4-12abb2a2c6",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "忘れ物",
+    "reading": "わすれもの",
+    "romaji": "wasuremono",
+    "meanings": [
+      "lost article"
+    ],
+    "prefix": "今日",
+    "targetSurface": "忘れ物",
+    "suffix": "をした。",
+    "sentenceJa": "今日忘れ物をした。",
+    "sentenceEn": "I left behind something today."
+  },
+  {
+    "id": "trap-n4-d06643e4e1",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "安心",
+    "reading": "あんしん",
+    "romaji": "anshin",
+    "meanings": [
+      "relief"
+    ],
+    "prefix": "あいつに仕事を任せておけば",
+    "targetSurface": "安心",
+    "suffix": "だ。",
+    "sentenceJa": "あいつに仕事を任せておけば安心だ。",
+    "sentenceEn": "You can trust him with any job."
+  },
+  {
+    "id": "trap-n4-160a8399af",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "安全",
+    "reading": "あんぜん",
+    "romaji": "anzen",
+    "meanings": [
+      "safety"
+    ],
+    "prefix": "私たちは思っているほど",
+    "targetSurface": "安全",
+    "suffix": "ではない。",
+    "sentenceJa": "私たちは思っているほど安全ではない。",
+    "sentenceEn": "We are not all that safe."
+  },
+  {
+    "id": "trap-n4-52a79a5d69",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "案内",
+    "reading": "あんない",
+    "romaji": "annai",
+    "meanings": [
+      "to guide"
+    ],
+    "prefix": "私をあちこちに",
+    "targetSurface": "案内",
+    "suffix": "してください。",
+    "sentenceJa": "私をあちこちに案内してください。",
+    "sentenceEn": "Please show me around."
+  },
+  {
+    "id": "trap-n4-13ab63d79a",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "以上",
+    "reading": "いじょう",
+    "romaji": "ijou",
+    "meanings": [
+      "more than",
+      "this is all"
+    ],
+    "prefix": "",
+    "targetSurface": "以上",
+    "suffix": "ですか？",
+    "sentenceJa": "以上ですか？",
+    "sentenceEn": "Is that all?"
+  },
+  {
+    "id": "trap-n4-4bdd43130b",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "受付",
+    "reading": "うけつけ",
+    "romaji": "uketsuke",
+    "meanings": [
+      "receipt"
+    ],
+    "prefix": "",
+    "targetSurface": "受付",
+    "suffix": "で入院の手続きをしてください。",
+    "sentenceJa": "受付で入院の手続きをしてください。",
+    "sentenceEn": "You have to fill out an application for admission to the hospital at the front desk."
+  },
+  {
+    "id": "trap-n4-44f33984fb",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "運転",
+    "reading": "うんてん",
+    "romaji": "unten",
+    "meanings": [
+      "to drive"
+    ],
+    "prefix": "キャロルはレンタカーを",
+    "targetSurface": "運転",
+    "suffix": "しています。",
+    "sentenceJa": "キャロルはレンタカーを運転しています。",
+    "sentenceEn": "Carol is driving a rent-a-car."
+  },
+  {
+    "id": "trap-n4-47487b1e85",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "運動",
+    "reading": "うんどう",
+    "romaji": "undou",
+    "meanings": [
+      "to exercise"
+    ],
+    "prefix": "週に一度でいいから",
+    "targetSurface": "運動",
+    "suffix": "しなさい。",
+    "sentenceJa": "週に一度でいいから運動しなさい。",
+    "sentenceEn": "Try to exercise at least once a week."
+  },
+  {
+    "id": "trap-n4-5ceed9165d",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "遠慮",
+    "reading": "えんりょ",
+    "romaji": "enryo",
+    "meanings": [
+      "to be reserved",
+      "to be restrained"
+    ],
+    "prefix": "ここでのおタバコはご",
+    "targetSurface": "遠慮",
+    "suffix": "願います。",
+    "sentenceJa": "ここでのおタバコはご遠慮願います。",
+    "sentenceEn": "Please refrain from smoking here."
+  },
+  {
+    "id": "trap-n4-3787755f33",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "押し入れ",
+    "reading": "おしいれ",
+    "romaji": "oshiire",
+    "meanings": [
+      "closet"
+    ],
+    "prefix": "強盗はその子供を",
+    "targetSurface": "押し入れ",
+    "suffix": "に閉じ込めた。",
+    "sentenceJa": "強盗はその子供を押し入れに閉じ込めた。",
+    "sentenceEn": "The burglar shut the child in the closet."
+  },
+  {
+    "id": "trap-n4-eb615955c8",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "お見舞い",
+    "reading": "おみまい",
+    "romaji": "omimai",
+    "meanings": [
+      "calling on someone who is ill",
+      "enquiry"
+    ],
+    "prefix": "彼女の",
+    "targetSurface": "お見舞い",
+    "suffix": "に行こうよ。",
+    "sentenceJa": "彼女のお見舞いに行こうよ。",
+    "sentenceEn": "Why don't we go and see her in the hospital?"
+  },
+  {
+    "id": "trap-n4-f586632207",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "お土産",
+    "reading": "おみやげ",
+    "romaji": "omiyage",
+    "meanings": [
+      "souvenir"
+    ],
+    "prefix": "これは北海道からの",
+    "targetSurface": "お土産",
+    "suffix": "です。",
+    "sentenceJa": "これは北海道からのお土産です。",
+    "sentenceEn": "This is a souvenir from Hokkaido."
+  },
+  {
+    "id": "trap-n4-6f4ad2115e",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "海岸",
+    "reading": "かいがん",
+    "romaji": "kaigan",
+    "meanings": [
+      "coast"
+    ],
+    "prefix": "このバスは、",
+    "targetSurface": "海岸",
+    "suffix": "に行きますか。",
+    "sentenceJa": "このバスは、海岸に行きますか。",
+    "sentenceEn": "Does this bus go to the beach?"
+  },
+  {
+    "id": "trap-n4-26a19196b7",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "課長",
+    "reading": "かちょう",
+    "romaji": "kachou",
+    "meanings": [
+      "section manager"
+    ],
+    "prefix": "私は",
+    "targetSurface": "課長",
+    "suffix": "に任命された。",
+    "sentenceJa": "私は課長に任命された。",
+    "sentenceEn": "I was appointed to section chief."
+  },
+  {
+    "id": "trap-n4-be3dacfc93",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "彼女",
+    "reading": "かのじょ",
+    "romaji": "kanojo",
+    "meanings": [
+      "she",
+      "girlfriend"
+    ],
+    "prefix": "問題は",
+    "targetSurface": "彼女",
+    "suffix": "が来るかどうかである。",
+    "sentenceJa": "問題は彼女が来るかどうかである。",
+    "sentenceEn": "The point is whether she will come or not."
+  },
+  {
+    "id": "trap-n4-f960d43119",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "関係",
+    "reading": "かんけい",
+    "romaji": "kankei",
+    "meanings": [
+      "relationship"
+    ],
+    "prefix": "これとあれはどういう",
+    "targetSurface": "関係",
+    "suffix": "があるの。",
+    "sentenceJa": "これとあれはどういう関係があるの。",
+    "sentenceEn": "How is this connected to that?"
+  },
+  {
+    "id": "trap-n3-ef5af5c903",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "影響",
+    "reading": "えいきょう",
+    "romaji": "eikyou",
+    "meanings": [
+      "influence",
+      "effect"
+    ],
+    "prefix": "このデザインには中国の",
+    "targetSurface": "影響",
+    "suffix": "がみられる。",
+    "sentenceJa": "このデザインには中国の影響がみられる。",
+    "sentenceEn": "This design shows Chinese influence."
+  },
+  {
+    "id": "trap-n3-738eff46a4",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "発表",
+    "reading": "はっぴょう",
+    "romaji": "happyou",
+    "meanings": [
+      "announcement",
+      "publication"
+    ],
+    "prefix": "彼は思いきって意見を",
+    "targetSurface": "発表",
+    "suffix": "しない。",
+    "sentenceJa": "彼は思いきって意見を発表しない。",
+    "sentenceEn": "He dare not express his opinion."
+  },
+  {
+    "id": "trap-n3-999fa2ee16",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "確認",
+    "reading": "かくにん",
+    "romaji": "kakunin",
+    "meanings": [
+      "affirmation",
+      "confirmation"
+    ],
+    "prefix": "予約は",
+    "targetSurface": "確認",
+    "suffix": "されています。",
+    "sentenceJa": "予約は確認されています。",
+    "sentenceEn": "I have a confirmed reservation."
+  },
+  {
+    "id": "trap-n3-90ae05137c",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "感動",
+    "reading": "かんどう",
+    "romaji": "kandou",
+    "meanings": [
+      "being deeply moved",
+      "excitement",
+      "impression",
+      "deep emotion"
+    ],
+    "prefix": "その小説を読んで深く",
+    "targetSurface": "感動",
+    "suffix": "した。",
+    "sentenceJa": "その小説を読んで深く感動した。",
+    "sentenceEn": "I was deeply moved by that novel."
+  },
+  {
+    "id": "trap-n3-99906bc37f",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "成功",
+    "reading": "せいこう",
+    "romaji": "seikou",
+    "meanings": [
+      "success",
+      "hit"
+    ],
+    "prefix": "",
+    "targetSurface": "成功",
+    "suffix": "。おめでとうございます。",
+    "sentenceJa": "成功。おめでとうございます。",
+    "sentenceEn": "Let me congratulate you on your success."
+  },
+  {
+    "id": "trap-n3-15f5aaa2cc",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "努力",
+    "reading": "どりょく",
+    "romaji": "doryoku",
+    "meanings": [
+      "great effort",
+      "exertion",
+      "endeavour",
+      "effort"
+    ],
+    "prefix": "彼はその問題を解こうと",
+    "targetSurface": "努力",
+    "suffix": "した。",
+    "sentenceJa": "彼はその問題を解こうと努力した。",
+    "sentenceEn": "He exerted himself to solve the problem."
+  },
+  {
+    "id": "trap-n3-a8a06b3e15",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "男の人",
+    "reading": "おとこのひと",
+    "romaji": "otokonohito",
+    "meanings": [
+      "man"
+    ],
+    "prefix": "若い",
+    "targetSurface": "男の人",
+    "suffix": "がドアの前で歌っています。",
+    "sentenceJa": "若い男の人がドアの前で歌っています。",
+    "sentenceEn": "A young man is singing in front of the door."
+  },
+  {
+    "id": "trap-n3-c7f4f73ace",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "吸収",
+    "reading": "きゅうしゅう",
+    "romaji": "kyuushuu",
+    "meanings": [
+      "absorption",
+      "suction",
+      "attraction"
+    ],
+    "prefix": "この布は水をよく",
+    "targetSurface": "吸収",
+    "suffix": "する。",
+    "sentenceJa": "この布は水をよく吸収する。",
+    "sentenceEn": "This cloth absorbs water well."
+  },
+  {
+    "id": "trap-n3-ec6103d8e8",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "給料",
+    "reading": "きゅうりょう",
+    "romaji": "kyuuryou",
+    "meanings": [
+      "salary",
+      "wages"
+    ],
+    "prefix": "労働者が",
+    "targetSurface": "給料",
+    "suffix": "をもらうのは当然だ。",
+    "sentenceJa": "労働者が給料をもらうのは当然だ。",
+    "sentenceEn": "It stands to reason that workers are paid."
+  },
+  {
+    "id": "trap-n3-939f77d3f0",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "教科書",
+    "reading": "きょうかしょ",
+    "romaji": "kyoukasho",
+    "meanings": [
+      "text book"
+    ],
+    "prefix": "",
+    "targetSurface": "教科書",
+    "suffix": "はどうしたらいいんでしょうか。",
+    "sentenceJa": "教科書はどうしたらいいんでしょうか。",
+    "sentenceEn": "Where do we get the textbooks?"
+  },
+  {
+    "id": "trap-n3-3a3b1e3490",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "供給",
+    "reading": "きょうきゅう",
+    "romaji": "kyoukyuu",
+    "meanings": [
+      "supply",
+      "provision"
+    ],
+    "prefix": "水は外側から",
+    "targetSurface": "供給",
+    "suffix": "された。",
+    "sentenceJa": "水は外側から供給された。",
+    "sentenceEn": "Water was supplied from outside."
+  },
+  {
+    "id": "trap-n3-d3ee1eb490",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "強調",
+    "reading": "きょうちょう",
+    "romaji": "kyouchou",
+    "meanings": [
+      "emphasis",
+      "stress",
+      "stressed point"
+    ],
+    "prefix": "先生は毎日の練習の大切さを",
+    "targetSurface": "強調",
+    "suffix": "した。",
+    "sentenceJa": "先生は毎日の練習の大切さを強調した。",
+    "sentenceEn": "The teacher stressed the importance of daily practice."
+  },
+  {
+    "id": "trap-n3-23ba87bda6",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "協力",
+    "reading": "きょうりょく",
+    "romaji": "kyouryoku",
+    "meanings": [
+      "cooperation",
+      "collaboration"
+    ],
+    "prefix": "彼らは",
+    "targetSurface": "協力",
+    "suffix": "してその絵を仕上げた。",
+    "sentenceJa": "彼らは協力してその絵を仕上げた。",
+    "sentenceEn": "They completed the picture hand in hand."
+  },
+  {
+    "id": "trap-n3-21b3678651",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "強力",
+    "reading": "きょうりょく",
+    "romaji": "kyouryoku",
+    "meanings": [
+      "powerful",
+      "strong"
+    ],
+    "prefix": "日本の軍隊は非常に",
+    "targetSurface": "強力",
+    "suffix": "だった。",
+    "sentenceJa": "日本の軍隊は非常に強力だった。",
+    "sentenceEn": "Japan's army was very powerful."
+  },
+  {
+    "id": "trap-n3-3a24c44422",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "宗教",
+    "reading": "しゅうきょう",
+    "romaji": "shuukyou",
+    "meanings": [
+      "religion"
+    ],
+    "prefix": "その両国は",
+    "targetSurface": "宗教",
+    "suffix": "と文化が違っている。",
+    "sentenceJa": "その両国は宗教と文化が違っている。",
+    "sentenceEn": "The two countries differ in religion and culture."
+  },
+  {
+    "id": "trap-n3-ec1934d7b5",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "就職",
+    "reading": "しゅうしょく",
+    "romaji": "shuushoku",
+    "meanings": [
+      "finding employment",
+      "inauguration"
+    ],
+    "prefix": "なぜ",
+    "targetSurface": "就職",
+    "suffix": "を断られたのか。",
+    "sentenceJa": "なぜ就職を断られたのか。",
+    "sentenceEn": "Why was I turned down for the job?"
+  },
+  {
+    "id": "trap-n3-f427f2ab2d",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "集中",
+    "reading": "しゅうちゅう",
+    "romaji": "shuuchuu",
+    "meanings": [
+      "concentration",
+      "focusing the mind"
+    ],
+    "prefix": "私は読書に",
+    "targetSurface": "集中",
+    "suffix": "していた。",
+    "sentenceJa": "私は読書に集中していた。",
+    "sentenceEn": "I was concentrating on reading."
+  },
+  {
+    "id": "trap-n3-a1ee5baecb",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "収入",
+    "reading": "しゅうにゅう",
+    "romaji": "shuunyuu",
+    "meanings": [
+      "income",
+      "receipts",
+      "revenue"
+    ],
+    "prefix": "",
+    "targetSurface": "収入",
+    "suffix": "以上の生活をするな。",
+    "sentenceJa": "収入以上の生活をするな。",
+    "sentenceEn": "Do not live above your income."
+  },
+  {
+    "id": "trap-n3-0ec7f868c5",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "順調",
+    "reading": "じゅんちょう",
+    "romaji": "junchou",
+    "meanings": [
+      "favourable",
+      "doing well",
+      "O.K.",
+      "all right"
+    ],
+    "prefix": "すべてが",
+    "targetSurface": "順調",
+    "suffix": "にいっている。",
+    "sentenceJa": "すべてが順調にいっている。",
+    "sentenceEn": "Everything is going very well."
+  },
+  {
+    "id": "trap-n3-d0cc9588b9",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "奨学金",
+    "reading": "しょうがくきん",
+    "romaji": "shougakukin",
+    "meanings": [
+      "scholarship"
+    ],
+    "prefix": "",
+    "targetSurface": "奨学金",
+    "suffix": "のおかげで彼女は留学した。",
+    "sentenceJa": "奨学金のおかげで彼女は留学した。",
+    "sentenceEn": "The scholarship enabled her to study abroad."
+  },
+  {
+    "id": "trap-n3-fb2679c1c0",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "乗客",
+    "reading": "じょうきゃく",
+    "romaji": "joukyaku",
+    "meanings": [
+      "passenger"
+    ],
+    "prefix": "",
+    "targetSurface": "乗客",
+    "suffix": "はどちらの側にも４人すわっていた。",
+    "sentenceJa": "乗客はどちらの側にも４人すわっていた。",
+    "sentenceEn": "The passengers sat four aside."
+  },
+  {
+    "id": "trap-n3-042e41d200",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "上京",
+    "reading": "じょうきょう",
+    "romaji": "joukyou",
+    "meanings": [
+      "proceeding to the capital (Tokyo)"
+    ],
+    "prefix": "彼は商用で",
+    "targetSurface": "上京",
+    "suffix": "した。",
+    "sentenceJa": "彼は商用で上京した。",
+    "sentenceEn": "He came up to Tokyo on business."
+  },
+  {
+    "id": "trap-n3-b465e5e854",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "状況",
+    "reading": "じょうきょう",
+    "romaji": "joukyou",
+    "meanings": [
+      "state of affairs",
+      "situation",
+      "circumstances"
+    ],
+    "prefix": "",
+    "targetSurface": "状況",
+    "suffix": "をお知らせください。",
+    "sentenceJa": "状況をお知らせください。",
+    "sentenceEn": "Please let me know the status."
+  },
+  {
+    "id": "trap-n3-0336d92dcd",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "症状",
+    "reading": "しょうじょう",
+    "romaji": "shoujou",
+    "meanings": [
+      "symptoms",
+      "condition"
+    ],
+    "prefix": "よくこういう",
+    "targetSurface": "症状",
+    "suffix": "が起きますか。",
+    "sentenceJa": "よくこういう症状が起きますか。",
+    "sentenceEn": "Do you have this symptom often?"
+  },
+  {
+    "id": "trap-n3-8d570a517c",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "職業",
+    "reading": "しょくぎょう",
+    "romaji": "shokugyou",
+    "meanings": [
+      "occupation",
+      "business"
+    ],
+    "prefix": "婦人に開放されている",
+    "targetSurface": "職業",
+    "suffix": "は多い。",
+    "sentenceJa": "婦人に開放されている職業は多い。",
+    "sentenceEn": "There are many careers open to women."
+  },
+  {
+    "id": "trap-n3-c4b2e7a3a3",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "食料",
+    "reading": "しょくりょう",
+    "romaji": "shokuryou",
+    "meanings": [
+      "food"
+    ],
+    "prefix": "彼らはじゅうぶんな",
+    "targetSurface": "食料",
+    "suffix": "を手に入れられなかった。",
+    "sentenceJa": "彼らはじゅうぶんな食料を手に入れられなかった。",
+    "sentenceEn": "They could not get enough food."
+  },
+  {
+    "id": "trap-n3-49b450eac3",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "食糧",
+    "reading": "しょくりょう",
+    "romaji": "shokuryou",
+    "meanings": [
+      "provisions",
+      "rations"
+    ],
+    "prefix": "",
+    "targetSurface": "食糧",
+    "suffix": "が不足している。",
+    "sentenceJa": "食糧が不足している。",
+    "sentenceEn": "Food has been in short supply."
+  },
+  {
+    "id": "trap-n3-f755485505",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "積極的",
+    "reading": "せっきょくてき",
+    "romaji": "sekkyokuteki",
+    "meanings": [
+      "positive",
+      "active",
+      "proactive"
+    ],
+    "prefix": "彼に父の持っている",
+    "targetSurface": "積極的",
+    "suffix": "が全然ない。",
+    "sentenceJa": "彼に父の持っている積極的が全然ない。",
+    "sentenceEn": "He has none of his father's aggressiveness."
+  },
+  {
+    "id": "trap-n3-4713a549bc",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "大統領",
+    "reading": "だいとうりょう",
+    "romaji": "daitouryou",
+    "meanings": [
+      "president",
+      "chief executive"
+    ],
+    "prefix": "",
+    "targetSurface": "大統領",
+    "suffix": "は強硬路線をとった。",
+    "sentenceJa": "大統領は強硬路線をとった。",
+    "sentenceEn": "The President took a hard line."
+  },
+  {
+    "id": "trap-n3-80c8c02c83",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "昼食",
+    "reading": "ちゅうしょく",
+    "romaji": "chuushoku",
+    "meanings": [
+      "lunch",
+      "midday meal"
+    ],
+    "prefix": "今日は",
+    "targetSurface": "昼食",
+    "suffix": "をとる時間がない。",
+    "sentenceJa": "今日は昼食をとる時間がない。",
+    "sentenceEn": "I don't have enough time to eat lunch today."
+  },
+  {
+    "id": "trap-n3-d19e1e7cb4",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "頂上",
+    "reading": "ちょうじょう",
+    "romaji": "choujou",
+    "meanings": [
+      "top",
+      "summit",
+      "peak"
+    ],
+    "prefix": "私達はついに",
+    "targetSurface": "頂上",
+    "suffix": "へたどり着いた。",
+    "sentenceJa": "私達はついに頂上へたどり着いた。",
+    "sentenceEn": "At last, we reached the summit."
+  },
+  {
+    "id": "trap-n3-bad69dcdd2",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "停留所",
+    "reading": "ていりゅうじょ",
+    "romaji": "teiryuujo",
+    "meanings": [
+      "bus or tram stop"
+    ],
+    "prefix": "バスの",
+    "targetSurface": "停留所",
+    "suffix": "まで競争しよう。",
+    "sentenceJa": "バスの停留所まで競争しよう。",
+    "sentenceEn": "I'll race you to the bus stop."
+  },
+  {
+    "id": "trap-n3-9fafb3a7a8",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "入場",
+    "reading": "にゅうじょう",
+    "romaji": "nyuujou",
+    "meanings": [
+      "entrance",
+      "admission",
+      "entering"
+    ],
+    "prefix": "この切符で２名",
+    "targetSurface": "入場",
+    "suffix": "できます。",
+    "sentenceJa": "この切符で２名入場できます。",
+    "sentenceEn": "This ticket admits two persons."
+  },
+  {
+    "id": "trap-n3-24194e1918",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "博物館",
+    "reading": "はくぶつかん",
+    "romaji": "hakubutsukan",
+    "meanings": [
+      "museum"
+    ],
+    "prefix": "あの",
+    "targetSurface": "博物館",
+    "suffix": "はくるに値する。",
+    "sentenceJa": "あの博物館はくるに値する。",
+    "sentenceEn": "That museum is worth visiting."
+  },
+  {
+    "id": "trap-n3-f675c4ff49",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "一人一人",
+    "reading": "ひとりひとり",
+    "romaji": "hitorihitori",
+    "meanings": [
+      "one by one",
+      "each",
+      "one at a time"
+    ],
+    "prefix": "メイドは客を",
+    "targetSurface": "一人一人",
+    "suffix": "大声でとりついた。",
+    "sentenceJa": "メイドは客を一人一人大声でとりついた。",
+    "sentenceEn": "The maid announced each guest."
+  },
+  {
+    "id": "trap-n3-58e01c0b72",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "表情",
+    "reading": "ひょうじょう",
+    "romaji": "hyoujou",
+    "meanings": [
+      "facial expression"
+    ],
+    "prefix": "彼の頭がさっと怒りの",
+    "targetSurface": "表情",
+    "suffix": "に変わるのを見た。",
+    "sentenceJa": "彼の頭がさっと怒りの表情に変わるのを見た。",
+    "sentenceEn": "I saw his face switch to anger."
+  },
+  {
+    "id": "trap-n3-1938fb6bcb",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "明後日",
+    "reading": "みょうごにち",
+    "romaji": "myougonichi",
+    "meanings": [
+      "day after tomorrow"
+    ],
+    "prefix": "",
+    "targetSurface": "明後日",
+    "suffix": "雨が降れば、私は家にいます。",
+    "sentenceJa": "明後日雨が降れば、私は家にいます。",
+    "sentenceEn": "If it rains the day after tomorrow I'll be inside."
+  },
+  {
+    "id": "trap-n3-0cb7e80d4c",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "愛情",
+    "reading": "あいじょう",
+    "romaji": "aijou",
+    "meanings": [
+      "love",
+      "affection"
+    ],
+    "prefix": "とりわけ子供たちは",
+    "targetSurface": "愛情",
+    "suffix": "を必要とする。",
+    "sentenceJa": "とりわけ子供たちは愛情を必要とする。",
+    "sentenceEn": "Above all, children need love."
+  },
+  {
+    "id": "trap-n3-fc1d99931b",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "一瞬",
+    "reading": "いっしゅん",
+    "romaji": "isshun",
+    "meanings": [
+      "a moment",
+      "an instant"
+    ],
+    "prefix": "それは私にとってはらはらする",
+    "targetSurface": "一瞬",
+    "suffix": "だった。",
+    "sentenceJa": "それは私にとってはらはらする一瞬だった。",
+    "sentenceEn": "It was a nervous moment for me."
+  },
+  {
+    "id": "trap-n3-e21a9f62b7",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "一生",
+    "reading": "いっしょう",
+    "romaji": "isshou",
+    "meanings": [
+      "whole life",
+      "a lifetime",
+      "all through life"
+    ],
+    "prefix": "あなたは、",
+    "targetSurface": "一生",
+    "suffix": "勉強しなければならない。",
+    "sentenceJa": "あなたは、一生勉強しなければならない。",
+    "sentenceEn": "You must study your whole life."
+  },
+  {
+    "id": "trap-n3-ddedf2e7ba",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "印象",
+    "reading": "いんしょう",
+    "romaji": "inshou",
+    "meanings": [
+      "impression"
+    ],
+    "prefix": "彼女は気の利く女の子である",
+    "targetSurface": "印象",
+    "suffix": "を強く受けた。",
+    "sentenceJa": "彼女は気の利く女の子である印象を強く受けた。",
+    "sentenceEn": "She struck me as a tactful girl."
+  },
+  {
+    "id": "trap-n3-c1aeb94b13",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "永久",
+    "reading": "えいきゅう",
+    "romaji": "eikyuu",
+    "meanings": [
+      "eternity",
+      "perpetuity",
+      "immortality"
+    ],
+    "prefix": "彼は",
+    "targetSurface": "永久",
+    "suffix": "に日本を離れた。",
+    "sentenceJa": "彼は永久に日本を離れた。",
+    "sentenceEn": "He left Japan for good."
+  },
+  {
+    "id": "trap-n3-b43c2524a1",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "営業",
+    "reading": "えいぎょう",
+    "romaji": "eigyou",
+    "meanings": [
+      "business",
+      "trade",
+      "management"
+    ],
+    "prefix": "",
+    "targetSurface": "営業",
+    "suffix": "の者と話をしてみました。",
+    "sentenceJa": "営業の者と話をしてみました。",
+    "sentenceEn": "I talked with our sales people."
+  },
+  {
+    "id": "trap-n3-bb3089103b",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "解釈",
+    "reading": "かいしゃく",
+    "romaji": "kaishaku",
+    "meanings": [
+      "explanation",
+      "interpretation"
+    ],
+    "prefix": "それは２通りに",
+    "targetSurface": "解釈",
+    "suffix": "できる。",
+    "sentenceJa": "それは２通りに解釈できる。",
+    "sentenceEn": "That reads two different ways."
+  },
+  {
+    "id": "trap-n3-ea99623528",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "外出",
+    "reading": "がいしゅつ",
+    "romaji": "gaishutsu",
+    "meanings": [
+      "outing",
+      "going out"
+    ],
+    "prefix": "ヒーターをつけたまま",
+    "targetSurface": "外出",
+    "suffix": "した。",
+    "sentenceJa": "ヒーターをつけたまま外出した。",
+    "sentenceEn": "I went out with the heater on."
+  },
+  {
+    "id": "trap-n3-bcb8af927c",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "学習",
+    "reading": "がくしゅう",
+    "romaji": "gakushuu",
+    "meanings": [
+      "study",
+      "learning"
+    ],
+    "prefix": "これは生物の",
+    "targetSurface": "学習",
+    "suffix": "法としてはあまりよくないと思う。",
+    "sentenceJa": "これは生物の学習法としてはあまりよくないと思う。",
+    "sentenceEn": "I don't think this is a good approach to biology."
+  },
+  {
+    "id": "trap-n3-7460e55135",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "観客",
+    "reading": "かんきゃく",
+    "romaji": "kankyaku",
+    "meanings": [
+      "audience",
+      "spectator(s)"
+    ],
+    "prefix": "そのショーで",
+    "targetSurface": "観客",
+    "suffix": "は大喜びだった。",
+    "sentenceJa": "そのショーで観客は大喜びだった。",
+    "sentenceEn": "The audience was very much entertained by the show."
+  },
+  {
+    "id": "trap-n3-c8ca17553a",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "環境",
+    "reading": "かんきょう",
+    "romaji": "kankyou",
+    "meanings": [
+      "environment",
+      "circumstance"
+    ],
+    "prefix": "彼は新しい",
+    "targetSurface": "環境",
+    "suffix": "にすばやく慣れた。",
+    "sentenceJa": "彼は新しい環境にすばやく慣れた。",
+    "sentenceEn": "He quickly accustomed himself to his new surroundings."
+  },
+  {
+    "id": "trap-n3-38914b5058",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "勘定",
+    "reading": "かんじょう",
+    "romaji": "kanjou",
+    "meanings": [
+      "calculation",
+      "counting",
+      "consideration"
+    ],
+    "prefix": "",
+    "targetSurface": "勘定",
+    "suffix": "は合計５００ドルになる。",
+    "sentenceJa": "勘定は合計５００ドルになる。",
+    "sentenceEn": "The bill amounts to 500 dollars."
+  },
+  {
+    "id": "trap-n3-c2dcadfe14",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "感情",
+    "reading": "かんじょう",
+    "romaji": "kanjou",
+    "meanings": [
+      "emotion(s)",
+      "feeling(s)",
+      "sentiment"
+    ],
+    "prefix": "声の調子が",
+    "targetSurface": "感情",
+    "suffix": "を伝える事もある。",
+    "sentenceJa": "声の調子が感情を伝える事もある。",
+    "sentenceEn": "Tone of voice can indicate feelings."
+  },
+  {
+    "id": "trap-n3-d3adca2034",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "完了",
+    "reading": "かんりょう",
+    "romaji": "kanryou",
+    "meanings": [
+      "completion",
+      "conclusion"
+    ],
+    "prefix": "君たちいつ準備は",
+    "targetSurface": "完了",
+    "suffix": "するつもりだい。",
+    "sentenceJa": "君たちいつ準備は完了するつもりだい。",
+    "sentenceEn": "When will you complete the preparations?"
+  },
+  {
+    "id": "trap-n3-97e6b17173",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "休憩",
+    "reading": "きゅうけい",
+    "romaji": "kyuukei",
+    "meanings": [
+      "rest",
+      "break",
+      "recess",
+      "intermission"
+    ],
+    "prefix": "",
+    "targetSurface": "休憩",
+    "suffix": "してコーヒーを飲もう。",
+    "sentenceJa": "休憩してコーヒーを飲もう。",
+    "sentenceEn": "Let's take a break for coffee."
+  },
+  {
+    "id": "trap-n3-d183c55e59",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "急激",
+    "reading": "きゅうげき",
+    "romaji": "kyuugeki",
+    "meanings": [
+      "sudden",
+      "precipitous",
+      "radical"
+    ],
+    "prefix": "その党は",
+    "targetSurface": "急激",
+    "suffix": "にのびた。",
+    "sentenceJa": "その党は急激にのびた。",
+    "sentenceEn": "The party gained ground rapidly."
+  },
+  {
+    "id": "trap-n3-23010891c3",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "救助",
+    "reading": "きゅうじょ",
+    "romaji": "kyuujo",
+    "meanings": [
+      "relief",
+      "aid",
+      "rescue"
+    ],
+    "prefix": "彼はおぼれている少年を",
+    "targetSurface": "救助",
+    "suffix": "した。",
+    "sentenceJa": "彼はおぼれている少年を救助した。",
+    "sentenceEn": "He rescued a boy from drowning."
+  },
+  {
+    "id": "trap-n3-094660be3e",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "急速",
+    "reading": "きゅうそく",
+    "romaji": "kyuusoku",
+    "meanings": [
+      "rapid (e.g. progress)"
+    ],
+    "prefix": "コンピューターは",
+    "targetSurface": "急速",
+    "suffix": "な進化を遂げた。",
+    "sentenceJa": "コンピューターは急速な進化を遂げた。",
+    "sentenceEn": "Computers have made rapid progress."
+  },
+  {
+    "id": "trap-n3-9453cb20ca",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "教授",
+    "reading": "きょうじゅ",
+    "romaji": "kyouju",
+    "meanings": [
+      "teaching",
+      "instruction",
+      "professor"
+    ],
+    "prefix": "一人の",
+    "targetSurface": "教授",
+    "suffix": "がささやいた。",
+    "sentenceJa": "一人の教授がささやいた。",
+    "sentenceEn": "One of his colleagues whispered."
+  },
+  {
+    "id": "trap-n3-d207be5049",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "共通",
+    "reading": "きょうつう",
+    "romaji": "kyoutsuu",
+    "meanings": [
+      "commonness",
+      "community"
+    ],
+    "prefix": "私と彼は",
+    "targetSurface": "共通",
+    "suffix": "することが多い。",
+    "sentenceJa": "私と彼は共通することが多い。",
+    "sentenceEn": "I have much in common with him."
+  },
+  {
+    "id": "trap-n3-6285f625ab",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "共同",
+    "reading": "きょうどう",
+    "romaji": "kyoudou",
+    "meanings": [
+      "cooperation",
+      "association",
+      "collaboration",
+      "joint"
+    ],
+    "prefix": "私は妹と",
+    "targetSurface": "共同",
+    "suffix": "で部屋を使っている。",
+    "sentenceJa": "私は妹と共同で部屋を使っている。",
+    "sentenceEn": "I share the room with my sister."
+  },
+  {
+    "id": "trap-n3-9236d54fda",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "緊張",
+    "reading": "きんちょう",
+    "romaji": "kinchou",
+    "meanings": [
+      "tension",
+      "mental strain",
+      "nervousness"
+    ],
+    "prefix": "冷戦の",
+    "targetSurface": "緊張",
+    "suffix": "が高まった。",
+    "sentenceJa": "冷戦の緊張が高まった。",
+    "sentenceEn": "Cold-war tension has mounted."
+  },
+  {
+    "id": "trap-n3-3191964869",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "芸術",
+    "reading": "げいじゅつ",
+    "romaji": "geijutsu",
+    "meanings": [
+      "(fine) art",
+      "the arts"
+    ],
+    "prefix": "彼は",
+    "targetSurface": "芸術",
+    "suffix": "のために大金を寄付した。",
+    "sentenceJa": "彼は芸術のために大金を寄付した。",
+    "sentenceEn": "He contributed a lot of money for the sake of art."
+  },
+  {
+    "id": "trap-n3-f002b6a695",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "劇場",
+    "reading": "げきじょう",
+    "romaji": "gekijou",
+    "meanings": [
+      "theatre",
+      "playhouse"
+    ],
+    "prefix": "さあ",
+    "targetSurface": "劇場",
+    "suffix": "に着いたぜ。",
+    "sentenceJa": "さあ劇場に着いたぜ。",
+    "sentenceEn": "Here we are at the theater."
+  },
+  {
+    "id": "trap-n3-cb50e02845",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "結局",
+    "reading": "けっきょく",
+    "romaji": "kekkyoku",
+    "meanings": [
+      "after all",
+      "eventually"
+    ],
+    "prefix": "ゆっくりと着実なのが",
+    "targetSurface": "結局",
+    "suffix": "勝つ。",
+    "sentenceJa": "ゆっくりと着実なのが結局勝つ。",
+    "sentenceEn": "Slow and steady wins the race."
+  },
+  {
+    "id": "trap-n3-e4e5715dc0",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "現象",
+    "reading": "げんしょう",
+    "romaji": "genshou",
+    "meanings": [
+      "phenomenon"
+    ],
+    "prefix": "生物学者はその",
+    "targetSurface": "現象",
+    "suffix": "の観察に集中した。",
+    "sentenceJa": "生物学者はその現象の観察に集中した。",
+    "sentenceEn": "The biologist concentrated on observing the phenomenon."
+  },
+  {
+    "id": "trap-n3-c5881c078f",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "現状",
+    "reading": "げんじょう",
+    "romaji": "genjou",
+    "meanings": [
+      "present condition",
+      "existing state",
+      "status quo"
+    ],
+    "prefix": "彼は",
+    "targetSurface": "現状",
+    "suffix": "を大いに嘆いた。",
+    "sentenceJa": "彼は現状を大いに嘆いた。",
+    "sentenceEn": "He deeply deplored the situation."
+  },
+  {
+    "id": "trap-n3-1337b1b9ec",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "国境",
+    "reading": "こっきょう",
+    "romaji": "kokkyou",
+    "meanings": [
+      "national or state border"
+    ],
+    "prefix": "明日中には",
+    "targetSurface": "国境",
+    "suffix": "を越えます。",
+    "sentenceJa": "明日中には国境を越えます。",
+    "sentenceEn": "We'll be across the border by tomorrow."
+  },
+  {
+    "id": "trap-n3-87d50bbaf1",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "最終",
+    "reading": "さいしゅう",
+    "romaji": "saishuu",
+    "meanings": [
+      "last",
+      "final",
+      "closing"
+    ],
+    "prefix": "",
+    "targetSurface": "最終",
+    "suffix": "電車はいつ出ますか。",
+    "sentenceJa": "最終電車はいつ出ますか。",
+    "sentenceEn": "When does the last train leave?"
+  },
+  {
+    "id": "trap-n3-40b4a7cb92",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "最中",
+    "reading": "さいちゅう",
+    "romaji": "saichuu",
+    "meanings": [
+      "in the middle of"
+    ],
+    "prefix": "彼はスピーチの",
+    "targetSurface": "最中",
+    "suffix": "に気を失った。",
+    "sentenceJa": "彼はスピーチの最中に気を失った。",
+    "sentenceEn": "He fainted in the midst of his speech."
+  },
+  {
+    "id": "trap-n3-1994007f1d",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "材料",
+    "reading": "ざいりょう",
+    "romaji": "zairyou",
+    "meanings": [
+      "ingredients",
+      "material"
+    ],
+    "prefix": "すぐれた",
+    "targetSurface": "材料",
+    "suffix": "で作られた家具は、売れ行きがよい。",
+    "sentenceJa": "すぐれた材料で作られた家具は、売れ行きがよい。",
+    "sentenceEn": "Furniture made of good materials sells well."
+  },
+  {
+    "id": "trap-n3-1fda1b853a",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "作曲",
+    "reading": "さっきょく",
+    "romaji": "sakkyoku",
+    "meanings": [
+      "composition",
+      "setting (of music)"
+    ],
+    "prefix": "この音楽はバッハによって",
+    "targetSurface": "作曲",
+    "suffix": "された。",
+    "sentenceJa": "この音楽はバッハによって作曲された。",
+    "sentenceEn": "This music was composed by Bach."
+  },
+  {
+    "id": "trap-n3-758bbc40fb",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "失業",
+    "reading": "しつぎょう",
+    "romaji": "shitsugyou",
+    "meanings": [
+      "unemployment"
+    ],
+    "prefix": "この地域の",
+    "targetSurface": "失業",
+    "suffix": "はほぼないに等しい。",
+    "sentenceJa": "この地域の失業はほぼないに等しい。",
+    "sentenceEn": "Unemployment in this part of the country is virtually nonexistent."
+  },
+  {
+    "id": "trap-n3-0bd00cd76e",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "借金",
+    "reading": "しゃっきん",
+    "romaji": "shakkin",
+    "meanings": [
+      "debt",
+      "loan",
+      "liabilities"
+    ],
+    "prefix": "君は",
+    "targetSurface": "借金",
+    "suffix": "を払うべきだ。",
+    "sentenceJa": "君は借金を払うべきだ。",
+    "sentenceEn": "You should pay your debts."
+  },
+  {
+    "id": "trap-n3-2f1fe65bc6",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "収穫",
+    "reading": "しゅうかく",
+    "romaji": "shuukaku",
+    "meanings": [
+      "harvest",
+      "crop",
+      "ingathering"
+    ],
+    "prefix": "私たちはみな",
+    "targetSurface": "収穫",
+    "suffix": "の手伝いをした。",
+    "sentenceJa": "私たちはみな収穫の手伝いをした。",
+    "sentenceEn": "We all helped with the harvest."
+  },
+  {
+    "id": "trap-n3-86d6931c5b",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "週間",
+    "reading": "しゅうかん",
+    "romaji": "shuukan",
+    "meanings": [
+      "week",
+      "weekly"
+    ],
+    "prefix": "もう２",
+    "targetSurface": "週間",
+    "suffix": "たったら帰ります。",
+    "sentenceJa": "もう２週間たったら帰ります。",
+    "sentenceEn": "I will be back in another two weeks."
+  },
+  {
+    "id": "trap-n3-8fc09cad9c",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "修正",
+    "reading": "しゅうせい",
+    "romaji": "shuusei",
+    "meanings": [
+      "amendment",
+      "correction",
+      "revision",
+      "modification"
+    ],
+    "prefix": "彼は自説を",
+    "targetSurface": "修正",
+    "suffix": "した。",
+    "sentenceJa": "彼は自説を修正した。",
+    "sentenceEn": "He revised his opinion."
+  },
+  {
+    "id": "trap-n3-8e6b354697",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "渋滞",
+    "reading": "じゅうたい",
+    "romaji": "juutai",
+    "meanings": [
+      "congestion (e.g. traffic)",
+      "delay",
+      "stagnation"
+    ],
+    "prefix": "",
+    "targetSurface": "渋滞",
+    "suffix": "で遅れました。",
+    "sentenceJa": "渋滞で遅れました。",
+    "sentenceEn": "I was delayed by a traffic jam."
+  },
+  {
+    "id": "trap-n3-4ac6ac022d",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "重大",
+    "reading": "じゅうだい",
+    "romaji": "juudai",
+    "meanings": [
+      "serious",
+      "important",
+      "grave",
+      "weighty"
+    ],
+    "prefix": "彼は",
+    "targetSurface": "重大",
+    "suffix": "な発見をした。",
+    "sentenceJa": "彼は重大な発見をした。",
+    "sentenceEn": "He made an important discovery."
+  },
+  {
+    "id": "trap-n3-b1905d8e82",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "住宅",
+    "reading": "じゅうたく",
+    "romaji": "juutaku",
+    "meanings": [
+      "resident",
+      "housing"
+    ],
+    "prefix": "どちらかといえば木造",
+    "targetSurface": "住宅",
+    "suffix": "に住みたい。",
+    "sentenceJa": "どちらかといえば木造住宅に住みたい。",
+    "sentenceEn": "I'd rather live in a wooden house."
+  },
+  {
+    "id": "trap-n3-ff42db8965",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "集団",
+    "reading": "しゅうだん",
+    "romaji": "shuudan",
+    "meanings": [
+      "group",
+      "mass"
+    ],
+    "prefix": "君はいまやエリート",
+    "targetSurface": "集団",
+    "suffix": "の一員だ。",
+    "sentenceJa": "君はいまやエリート集団の一員だ。",
+    "sentenceEn": "You are now among the elite."
+  },
+  {
+    "id": "trap-n3-7c391cdd2b",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "住民",
+    "reading": "じゅうみん",
+    "romaji": "juumin",
+    "meanings": [
+      "citizens",
+      "inhabitants",
+      "residents",
+      "population"
+    ],
+    "prefix": "",
+    "targetSurface": "住民",
+    "suffix": "の半数以上はその計画に反対だ。",
+    "sentenceJa": "住民の半数以上はその計画に反対だ。",
+    "sentenceEn": "More than half the residents are opposed to the plan."
+  },
+  {
+    "id": "trap-n3-bc3d5a165c",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "重要",
+    "reading": "じゅうよう",
+    "romaji": "juuyou",
+    "meanings": [
+      "important",
+      "momentous",
+      "essential",
+      "principal"
+    ],
+    "prefix": "彼女はすぐに出発する事が",
+    "targetSurface": "重要",
+    "suffix": "だ。",
+    "sentenceJa": "彼女はすぐに出発する事が重要だ。",
+    "sentenceEn": "It is important that she should leave at once."
+  },
+  {
+    "id": "trap-n2-05292c6357",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "衣食住",
+    "reading": "いしょくじゅう",
+    "romaji": "ishokujuu",
+    "meanings": [
+      "necessities of life (food, clothing, etc.)"
+    ],
+    "prefix": "私達が生きていくためには",
+    "targetSurface": "衣食住",
+    "suffix": "が必要です。",
+    "sentenceJa": "私達が生きていくためには衣食住が必要です。",
+    "sentenceEn": "We need food, clothes and a home in order to live."
+  },
+  {
+    "id": "trap-n2-84ce1b3469",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "一昨年",
+    "reading": "いっさくねん",
+    "romaji": "issakunen",
+    "meanings": [
+      "year before last"
+    ],
+    "prefix": "彼女は、",
+    "targetSurface": "一昨年",
+    "suffix": "よりもはるかに暮らし向きがよい。",
+    "sentenceJa": "彼女は、一昨年よりもはるかに暮らし向きがよい。",
+    "sentenceEn": "She's far better off than she was the year before last."
+  },
+  {
+    "id": "trap-n2-2797d01152",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "お手伝いさん",
+    "reading": "おてつだいさん",
+    "romaji": "otetsudaisan",
+    "meanings": [
+      "maid"
+    ],
+    "prefix": "",
+    "targetSurface": "お手伝いさん",
+    "suffix": "たちは主人の命令を実行しようと努めた。",
+    "sentenceJa": "お手伝いさんたちは主人の命令を実行しようと努めた。",
+    "sentenceEn": "The servants tried to carry out their master's order."
+  },
+  {
+    "id": "trap-n2-834b59c61e",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "女の人",
+    "reading": "おんなのひと",
+    "romaji": "onnanohito",
+    "meanings": [
+      "woman"
+    ],
+    "prefix": "今、",
+    "targetSurface": "女の人",
+    "suffix": "が１人入っていきましたよ。",
+    "sentenceJa": "今、女の人が１人入っていきましたよ。",
+    "sentenceEn": "A woman is going into it now."
+  },
+  {
+    "id": "trap-n2-aacfb8a265",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "海水浴",
+    "reading": "かいすいよく",
+    "romaji": "kaisuiyoku",
+    "meanings": [
+      "sea bathing",
+      "seawater bath"
+    ],
+    "prefix": "ハワイでは１年中",
+    "targetSurface": "海水浴",
+    "suffix": "が楽しめる。",
+    "sentenceJa": "ハワイでは１年中海水浴が楽しめる。",
+    "sentenceEn": "In Hawaii, we can enjoy swimming in the ocean all year round."
+  },
+  {
+    "id": "trap-n2-c7d511e624",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "回数券",
+    "reading": "かいすうけん",
+    "romaji": "kaisuuken",
+    "meanings": [
+      "book of tickets"
+    ],
+    "prefix": "",
+    "targetSurface": "回数券",
+    "suffix": "を下さい。",
+    "sentenceJa": "回数券を下さい。",
+    "sentenceEn": "May I have coupon tickets?"
+  },
+  {
+    "id": "trap-n2-95304f709a",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "休業",
+    "reading": "きゅうぎょう",
+    "romaji": "kyuugyou",
+    "meanings": [
+      "closed (e.g. store)",
+      "business suspended",
+      "shutdown",
+      "holiday"
+    ],
+    "prefix": "移転にともない５月３０日、３１日は",
+    "targetSurface": "休業",
+    "suffix": "いたします。",
+    "sentenceJa": "移転にともない５月３０日、３１日は休業いたします。",
+    "sentenceEn": "Due to our office moving, we will be closed from May 30 to 31."
+  },
+  {
+    "id": "trap-n2-e1a415a754",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "恐縮",
+    "reading": "きょうしゅく",
+    "romaji": "kyoushuku",
+    "meanings": [
+      "shame",
+      "very kind of you",
+      "sorry to trouble"
+    ],
+    "prefix": "",
+    "targetSurface": "恐縮",
+    "suffix": "ですがお手伝い願えませんか。",
+    "sentenceJa": "恐縮ですがお手伝い願えませんか。",
+    "sentenceEn": "May I make so bold as to request your assistance?"
+  },
+  {
+    "id": "trap-n2-f7b99bf02c",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "蛍光灯",
+    "reading": "けいこうとう",
+    "romaji": "keikoutou",
+    "meanings": [
+      "fluorescent lamp",
+      "person who is slow to react"
+    ],
+    "prefix": "ハリーは本当に",
+    "targetSurface": "蛍光灯",
+    "suffix": "だね。",
+    "sentenceJa": "ハリーは本当に蛍光灯だね。",
+    "sentenceEn": "Harry's really slow to catch on."
+  },
+  {
+    "id": "trap-n2-13e82ca9dc",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "形容動詞",
+    "reading": "けいようどうし",
+    "romaji": "keiyoudoushi",
+    "meanings": [
+      "adjectival noun",
+      "quasi-adjective"
+    ],
+    "prefix": "今日の授業で「",
+    "targetSurface": "形容動詞",
+    "suffix": "」という表現の使い方を学びました。",
+    "sentenceJa": "今日の授業で「形容動詞」という表現の使い方を学びました。",
+    "sentenceEn": "In today’s class, I learned how to use the term “adjectival verb.”"
+  },
+  {
+    "id": "trap-n2-3a94a8d62a",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "顕微鏡",
+    "reading": "けんびきょう",
+    "romaji": "kenbikyou",
+    "meanings": [
+      "microscope"
+    ],
+    "prefix": "",
+    "targetSurface": "顕微鏡",
+    "suffix": "の焦点を合わせなさい。",
+    "sentenceJa": "顕微鏡の焦点を合わせなさい。",
+    "sentenceEn": "Adjust the microscope's focus."
+  },
+  {
+    "id": "trap-n2-ea79d21fe4",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "交通機関",
+    "reading": "こうつうきかん",
+    "romaji": "koutsuukikan",
+    "meanings": [
+      "transportation facilities"
+    ],
+    "prefix": "",
+    "targetSurface": "交通機関",
+    "suffix": "は何を使うんですか。",
+    "sentenceJa": "交通機関は何を使うんですか。",
+    "sentenceEn": "What form of transport will we take?"
+  },
+  {
+    "id": "trap-n2-6a1dd228d7",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "心当たり",
+    "reading": "こころあたり",
+    "romaji": "kokoroatari",
+    "meanings": [
+      "having some knowledge of",
+      "happening to know"
+    ],
+    "prefix": "その名前に",
+    "targetSurface": "心当たり",
+    "suffix": "ある？",
+    "sentenceJa": "その名前に心当たりある？",
+    "sentenceEn": "Does that name ring a bell?"
+  },
+  {
+    "id": "trap-n2-36794aa72e",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "五十音",
+    "reading": "ごじゅうおん",
+    "romaji": "gojuuon",
+    "meanings": [
+      "the Japanese syllabary"
+    ],
+    "prefix": "氏名は",
+    "targetSurface": "五十音",
+    "suffix": "順です。",
+    "sentenceJa": "氏名は五十音順です。",
+    "sentenceEn": "The names are in Japanese alphabetical order."
+  },
+  {
+    "id": "trap-n2-941786efa7",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "言葉遣い",
+    "reading": "ことばづかい",
+    "romaji": "kotobazukai",
+    "meanings": [
+      "speech",
+      "expression",
+      "wording"
+    ],
+    "prefix": "",
+    "targetSurface": "言葉遣い",
+    "suffix": "にはいつも気をつけるべきです。",
+    "sentenceJa": "言葉遣いにはいつも気をつけるべきです。",
+    "sentenceEn": "You should always be careful in your speech."
+  },
+  {
+    "id": "trap-n2-855762ebcc",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "四捨五入",
+    "reading": "ししゃごにゅう",
+    "romaji": "shishagonyuu",
+    "meanings": [
+      "rounding up (fractions)"
+    ],
+    "prefix": "５８１４を千の位に",
+    "targetSurface": "四捨五入",
+    "suffix": "すれば何になりますか。",
+    "sentenceJa": "５８１４を千の位に四捨五入すれば何になりますか。",
+    "sentenceEn": "What is 5814 rounded to the nearest thousand?"
+  },
+  {
+    "id": "trap-n2-1e621f5ba1",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "自然科学",
+    "reading": "しぜんかがく",
+    "romaji": "shizenkagaku",
+    "meanings": [
+      "natural science"
+    ],
+    "prefix": "その大学の課程は",
+    "targetSurface": "自然科学",
+    "suffix": "と社会科学から成り立っている。",
+    "sentenceJa": "その大学の課程は自然科学と社会科学から成り立っている。",
+    "sentenceEn": "That university's curriculum covers natural science and social science."
+  },
+  {
+    "id": "trap-n2-f17646bffa",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "社会科学",
+    "reading": "しゃかいかがく",
+    "romaji": "shakaikagaku",
+    "meanings": [
+      "social science"
+    ],
+    "prefix": "その大学の課程は自然科学と",
+    "targetSurface": "社会科学",
+    "suffix": "から成り立っている。",
+    "sentenceJa": "その大学の課程は自然科学と社会科学から成り立っている。",
+    "sentenceEn": "That university's curriculum covers natural science and social science."
+  },
+  {
+    "id": "trap-n2-780f916fa8",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "終了",
+    "reading": "しゅうりょう",
+    "romaji": "shuuryou",
+    "meanings": [
+      "end",
+      "close",
+      "termination"
+    ],
+    "prefix": "会議はもう",
+    "targetSurface": "終了",
+    "suffix": "いたしました。",
+    "sentenceJa": "会議はもう終了いたしました。",
+    "sentenceEn": "The conference is already over, sir."
+  },
+  {
+    "id": "trap-n2-4c7d50b5bb",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "重量",
+    "reading": "じゅうりょう",
+    "romaji": "juuryou",
+    "meanings": [
+      "weight",
+      "heavyweight boxer"
+    ],
+    "prefix": "体積が大きいからといって常に",
+    "targetSurface": "重量",
+    "suffix": "も重いとは限らない。",
+    "sentenceJa": "体積が大きいからといって常に重量も重いとは限らない。",
+    "sentenceEn": "Great bulk does not always mean great weight."
+  },
+  {
+    "id": "trap-n2-149aa63e77",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "重力",
+    "reading": "じゅうりょく",
+    "romaji": "juuryoku",
+    "meanings": [
+      "gravity"
+    ],
+    "prefix": "月の",
+    "targetSurface": "重力",
+    "suffix": "は地球の６分の１である。",
+    "sentenceJa": "月の重力は地球の６分の１である。",
+    "sentenceEn": "The gravity of the moon is one-sixth of that of the earth."
+  },
+  {
+    "id": "trap-n2-dbb718ab22",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "縮小",
+    "reading": "しゅくしょう",
+    "romaji": "shukushou",
+    "meanings": [
+      "reduction",
+      "curtailment"
+    ],
+    "prefix": "",
+    "targetSurface": "縮小",
+    "suffix": "コピーを撮ってくるよ。",
+    "sentenceJa": "縮小コピーを撮ってくるよ。",
+    "sentenceEn": "I'm going to make reduced copies."
+  },
+  {
+    "id": "trap-n2-aac5075190",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "出張",
+    "reading": "しゅっちょう",
+    "romaji": "shutchou",
+    "meanings": [
+      "official tour",
+      "business trip"
+    ],
+    "prefix": "ロス",
+    "targetSurface": "出張",
+    "suffix": "をキャンセルしようかな。",
+    "sentenceJa": "ロス出張をキャンセルしようかな。",
+    "sentenceEn": "I should cancel my L.A. trip."
+  },
+  {
+    "id": "trap-n2-fe1995963c",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "純情",
+    "reading": "じゅんじょう",
+    "romaji": "junjou",
+    "meanings": [
+      "pure heart",
+      "naivete",
+      "self-sacrificing devotion"
+    ],
+    "prefix": "君って、意外に",
+    "targetSurface": "純情",
+    "suffix": "だね。",
+    "sentenceJa": "君って、意外に純情だね。",
+    "sentenceEn": "I'm surprised that you're so naïve."
+  },
+  {
+    "id": "trap-n2-56af2956cf",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "小学生",
+    "reading": "しょうがくせい",
+    "romaji": "shougakusei",
+    "meanings": [
+      "grade school student"
+    ],
+    "prefix": "彼らはそのころ",
+    "targetSurface": "小学生",
+    "suffix": "でした。",
+    "sentenceJa": "彼らはそのころ小学生でした。",
+    "sentenceEn": "They were school children then."
+  },
+  {
+    "id": "trap-n2-3b1ff7f0c5",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "上級",
+    "reading": "じょうきゅう",
+    "romaji": "joukyuu",
+    "meanings": [
+      "advanced level",
+      "high grade",
+      "senior"
+    ],
+    "prefix": "この辞書は初級者に、いやそれどころか",
+    "targetSurface": "上級",
+    "suffix": "者にも役に立つ。",
+    "sentenceJa": "この辞書は初級者に、いやそれどころか上級者にも役に立つ。",
+    "sentenceEn": "This dictionary is useful to beginners, yes, and to advanced learners."
+  },
+  {
+    "id": "trap-n2-6f30a26ebe",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "商業",
+    "reading": "しょうぎょう",
+    "romaji": "shougyou",
+    "meanings": [
+      "commerce",
+      "trade",
+      "business"
+    ],
+    "prefix": "英語は",
+    "targetSurface": "商業",
+    "suffix": "において役に立つ。",
+    "sentenceJa": "英語は商業において役に立つ。",
+    "sentenceEn": "English is useful in commerce."
+  },
+  {
+    "id": "trap-n2-dc1d497810",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "消極的",
+    "reading": "しょうきょくてき",
+    "romaji": "shoukyokuteki",
+    "meanings": [
+      "passive"
+    ],
+    "prefix": "警察が医療事故の立件に",
+    "targetSurface": "消極的",
+    "suffix": "だ。",
+    "sentenceJa": "警察が医療事故の立件に消極的だ。",
+    "sentenceEn": "The police are reluctant to pursue criminal charges in medical cases."
+  },
+  {
+    "id": "trap-n2-d52725aae3",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "上旬",
+    "reading": "じょうじゅん",
+    "romaji": "joujun",
+    "meanings": [
+      "first 10 days of month"
+    ],
+    "prefix": "７月の",
+    "targetSurface": "上旬",
+    "suffix": "は、海に行くのは早いかな？",
+    "sentenceJa": "７月の上旬は、海に行くのは早いかな？",
+    "sentenceEn": "I wonder if the first week or so of July is too early to go to the beach."
+  },
+  {
+    "id": "trap-n2-2b906344b9",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "消防署",
+    "reading": "しょうぼうしょ",
+    "romaji": "shoubousho",
+    "meanings": [
+      "fire station"
+    ],
+    "prefix": "",
+    "targetSurface": "消防署",
+    "suffix": "に連絡してください。",
+    "sentenceJa": "消防署に連絡してください。",
+    "sentenceEn": "Please call the fire department."
+  },
+  {
+    "id": "trap-n2-43a186d0ec",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "省略",
+    "reading": "しょうりゃく",
+    "romaji": "shouryaku",
+    "meanings": [
+      "omission",
+      "abbreviation",
+      "abridgment"
+    ],
+    "prefix": "この句では前置詞を",
+    "targetSurface": "省略",
+    "suffix": "できる。",
+    "sentenceJa": "この句では前置詞を省略できる。",
+    "sentenceEn": "You can omit the preposition in this phrase."
+  },
+  {
+    "id": "trap-n2-93d1d2e9ef",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "助教授",
+    "reading": "じょきょうじゅ",
+    "romaji": "jokyouju",
+    "meanings": [
+      "assistant professor"
+    ],
+    "prefix": "私は教授です、いやもっと正確に言えば、",
+    "targetSurface": "助教授",
+    "suffix": "です。",
+    "sentenceJa": "私は教授です、いやもっと正確に言えば、助教授です。",
+    "sentenceEn": "I'm a professor, or rather an associate professor, to be exact."
+  },
+  {
+    "id": "trap-n2-817a8e8089",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "新幹線",
+    "reading": "しんかんせん",
+    "romaji": "shinkansen",
+    "meanings": [
+      "bullet train (very high speed)",
+      "shinkansen"
+    ],
+    "prefix": "新しい",
+    "targetSurface": "新幹線",
+    "suffix": "の速いこと！",
+    "sentenceJa": "新しい新幹線の速いこと！",
+    "sentenceEn": "How fast the new Shinkansen goes!"
+  },
+  {
+    "id": "trap-n2-ef02a97b60",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "人文科学",
+    "reading": "じんぶんかがく",
+    "romaji": "jinbunkagaku",
+    "meanings": [
+      "social sciences",
+      "humanities"
+    ],
+    "prefix": "歴史学は",
+    "targetSurface": "人文科学",
+    "suffix": "の一部門である。",
+    "sentenceJa": "歴史学は人文科学の一部門である。",
+    "sentenceEn": "History is a branch of the humanities."
+  },
+  {
+    "id": "trap-n2-e5bc9f56c0",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "水蒸気",
+    "reading": "すいじょうき",
+    "romaji": "suijouki",
+    "meanings": [
+      "water vapour",
+      "steam"
+    ],
+    "prefix": "熱は水を",
+    "targetSurface": "水蒸気",
+    "suffix": "に変える。",
+    "sentenceJa": "熱は水を水蒸気に変える。",
+    "sentenceEn": "Heat turns water into steam."
+  },
+  {
+    "id": "trap-n2-9a583397de",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "水平線",
+    "reading": "すいへいせん",
+    "romaji": "suiheisen",
+    "meanings": [
+      "horizon"
+    ],
+    "prefix": "太陽が",
+    "targetSurface": "水平線",
+    "suffix": "の下に沈んだ。",
+    "sentenceJa": "太陽が水平線の下に沈んだ。",
+    "sentenceEn": "The sun sank below the horizon."
+  },
+  {
+    "id": "trap-n2-f3b92fda4b",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "青少年",
+    "reading": "せいしょうねん",
+    "romaji": "seishounen",
+    "meanings": [
+      "youth",
+      "young person"
+    ],
+    "prefix": "私には",
+    "targetSurface": "青少年",
+    "suffix": "の心理がわからない。",
+    "sentenceJa": "私には青少年の心理がわからない。",
+    "sentenceEn": "I can not understand the psychology of adolescents."
+  },
+  {
+    "id": "trap-n2-55527ab494",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "生年月日",
+    "reading": "せいねんがっぴ",
+    "romaji": "seinengappi",
+    "meanings": [
+      "birth date"
+    ],
+    "prefix": "",
+    "targetSurface": "生年月日",
+    "suffix": "は１９６０年２月１４日です。",
+    "sentenceJa": "生年月日は１９６０年２月１４日です。",
+    "sentenceEn": "I was born on February 14, 1960."
+  },
+  {
+    "id": "trap-n2-56ed867118",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "正方形",
+    "reading": "せいほうけい",
+    "romaji": "seihoukei",
+    "meanings": [
+      "square"
+    ],
+    "prefix": "",
+    "targetSurface": "正方形",
+    "suffix": "は４つの同じ長さの辺をもつ。",
+    "sentenceJa": "正方形は４つの同じ長さの辺をもつ。",
+    "sentenceEn": "A square has four equal sides."
+  },
+  {
+    "id": "trap-n2-593c30194c",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "先々月",
+    "reading": "せんせんげつ",
+    "romaji": "sensengetsu",
+    "meanings": [
+      "month before last"
+    ],
+    "prefix": "",
+    "targetSurface": "先々月",
+    "suffix": "作業を進めたので、時間通りに終わりました。",
+    "sentenceJa": "先々月作業を進めたので、時間通りに終わりました。",
+    "sentenceEn": "Since I made progress on the work the month before last, I was able to finish on time."
+  },
+  {
+    "id": "trap-n2-f84b3f5e35",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "先々週",
+    "reading": "せんせんしゅう",
+    "romaji": "sensenshuu",
+    "meanings": [
+      "week before last"
+    ],
+    "prefix": "",
+    "targetSurface": "先々週",
+    "suffix": "作業を進めたので、時間通りに終わりました。",
+    "sentenceJa": "先々週作業を進めたので、時間通りに終わりました。",
+    "sentenceEn": "Since I made progress on the work the week before last, I was able to finish on time."
+  },
+  {
+    "id": "trap-n2-b65f34f69e",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "総理大臣",
+    "reading": "そうりだいじん",
+    "romaji": "souridaijin",
+    "meanings": [
+      "Prime Minister"
+    ],
+    "prefix": "",
+    "targetSurface": "総理大臣",
+    "suffix": "が辞任した。",
+    "sentenceJa": "総理大臣が辞任した。",
+    "sentenceEn": "The Prime Minister has resigned."
+  },
+  {
+    "id": "trap-n2-1d147ab185",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "大学院",
+    "reading": "だいがくいん",
+    "romaji": "daigakuin",
+    "meanings": [
+      "graduate school"
+    ],
+    "prefix": "",
+    "targetSurface": "大学院",
+    "suffix": "に進学するつもりです。",
+    "sentenceJa": "大学院に進学するつもりです。",
+    "sentenceEn": "I'm planning to go to graduate school."
+  },
+  {
+    "id": "trap-n2-5d1e8c2428",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "力強い",
+    "reading": "ちからづよい",
+    "romaji": "chikarazuyoi",
+    "meanings": [
+      "reassuring",
+      "emboldened"
+    ],
+    "prefix": "なるほどこの車は小さいが",
+    "targetSurface": "力強い",
+    "suffix": "。",
+    "sentenceJa": "なるほどこの車は小さいが力強い。",
+    "sentenceEn": "Indeed this car is small, but it is powerful."
+  },
+  {
+    "id": "trap-n2-68ea97a684",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "中旬",
+    "reading": "ちゅうじゅん",
+    "romaji": "chuujun",
+    "meanings": [
+      "second third of a month"
+    ],
+    "prefix": "予定日は１月の",
+    "targetSurface": "中旬",
+    "suffix": "頃です。",
+    "sentenceJa": "予定日は１月の中旬頃です。",
+    "sentenceEn": "I'm expecting my baby in the middle of January."
+  },
+  {
+    "id": "trap-n2-e74bba8aa5",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "抽象",
+    "reading": "ちゅうしょう",
+    "romaji": "chuushou",
+    "meanings": [
+      "abstract"
+    ],
+    "prefix": "計画をスムーズに",
+    "targetSurface": "抽象",
+    "suffix": "ために、事前の準備を行いました。",
+    "sentenceJa": "計画をスムーズに抽象ために、事前の準備を行いました。",
+    "sentenceEn": "We made preparations in advance to ensure the plan went smoothly."
+  },
+  {
+    "id": "trap-n2-955d4daa75",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "長方形",
+    "reading": "ちょうほうけい",
+    "romaji": "chouhoukei",
+    "meanings": [
+      "rectangle",
+      "oblong"
+    ],
+    "prefix": "",
+    "targetSurface": "長方形",
+    "suffix": "の対辺は平行である。",
+    "sentenceJa": "長方形の対辺は平行である。",
+    "sentenceEn": "The opposite sides of a rectangle are parallel."
+  },
+  {
+    "id": "trap-n2-e96e1a98b6",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "調味料",
+    "reading": "ちょうみりょう",
+    "romaji": "choumiryou",
+    "meanings": [
+      "condiment",
+      "seasoning"
+    ],
+    "prefix": "市販の",
+    "targetSurface": "調味料",
+    "suffix": "よりうまいと言いきれる。",
+    "sentenceJa": "市販の調味料よりうまいと言いきれる。",
+    "sentenceEn": "I can definitively say that this seasoning tastes better than anything you could buy in a store."
+  },
+  {
+    "id": "trap-n2-b27701113c",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "直流",
+    "reading": "ちょくりゅう",
+    "romaji": "chokuryuu",
+    "meanings": [
+      "direct current"
+    ],
+    "prefix": "今日の授業で「",
+    "targetSurface": "直流",
+    "suffix": "」という表現の使い方を学びました。",
+    "sentenceJa": "今日の授業で「直流」という表現の使い方を学びました。",
+    "sentenceEn": "In today’s class, I learned how to use the term “direct current.”"
+  },
+  {
+    "id": "trap-n2-976f457eb1",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "定休日",
+    "reading": "ていきゅうび",
+    "romaji": "teikyuubi",
+    "meanings": [
+      "regular holiday"
+    ],
+    "prefix": "本日",
+    "targetSurface": "定休日",
+    "suffix": "。",
+    "sentenceJa": "本日定休日。",
+    "sentenceEn": "Today is our regular closing day."
+  },
+  {
+    "id": "trap-n2-fe5131f1d5",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "日用品",
+    "reading": "にちようひん",
+    "romaji": "nichiyouhin",
+    "meanings": [
+      "daily necessities"
+    ],
+    "prefix": "あのスーパーに行けば、たいていの",
+    "targetSurface": "日用品",
+    "suffix": "は間に合います。",
+    "sentenceJa": "あのスーパーに行けば、たいていの日用品は間に合います。",
+    "sentenceEn": "If you go to that supermarket, you can buy most things you use in your daily life."
+  },
+  {
+    "id": "trap-n2-c11c243ec5",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "農産物",
+    "reading": "のうさんぶつ",
+    "romaji": "nousanbutsu",
+    "meanings": [
+      "agricultural produce"
+    ],
+    "prefix": "わが国の主な",
+    "targetSurface": "農産物",
+    "suffix": "は米である。",
+    "sentenceJa": "わが国の主な農産物は米である。",
+    "sentenceEn": "The chief crop of our country is rice."
+  },
+  {
+    "id": "trap-n2-4c123afdff",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "必需品",
+    "reading": "ひつじゅひん",
+    "romaji": "hitsujuhin",
+    "meanings": [
+      "necessities",
+      "necessary article",
+      "requisite",
+      "essential"
+    ],
+    "prefix": "カメラは私の",
+    "targetSurface": "必需品",
+    "suffix": "でした。",
+    "sentenceJa": "カメラは私の必需品でした。",
+    "sentenceEn": "The camera was essential for me."
+  },
+  {
+    "id": "trap-n2-2c558a8cbb",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "人差し指",
+    "reading": "ひとさしゆび",
+    "romaji": "hitosashiyubi",
+    "meanings": [
+      "index finger"
+    ],
+    "prefix": "火ばさみで",
+    "targetSurface": "人差し指",
+    "suffix": "をやけどした。",
+    "sentenceJa": "火ばさみで人差し指をやけどした。",
+    "sentenceEn": "I burned my forefinger on fire tongs."
+  },
+  {
+    "id": "trap-n2-cc9839ab1b",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "標準",
+    "reading": "ひょうじゅん",
+    "romaji": "hyoujun",
+    "meanings": [
+      "standard",
+      "level"
+    ],
+    "prefix": "私は",
+    "targetSurface": "標準",
+    "suffix": "英語を勉強したい。",
+    "sentenceJa": "私は標準英語を勉強したい。",
+    "sentenceEn": "I want to learn standard English."
+  },
+  {
+    "id": "trap-n2-e119a69b33",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "望遠鏡",
+    "reading": "ぼうえんきょう",
+    "romaji": "bouenkyou",
+    "meanings": [
+      "telescope"
+    ],
+    "prefix": "彼は",
+    "targetSurface": "望遠鏡",
+    "suffix": "に目を当てた。",
+    "sentenceJa": "彼は望遠鏡に目を当てた。",
+    "sentenceEn": "He put his eye to a telescope."
+  },
+  {
+    "id": "trap-n2-f48b6d18cb",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "方程式",
+    "reading": "ほうていしき",
+    "romaji": "houteishiki",
+    "meanings": [
+      "equation"
+    ],
+    "prefix": "以下の",
+    "targetSurface": "方程式",
+    "suffix": "の解を求めよ。",
+    "sentenceJa": "以下の方程式の解を求めよ。",
+    "sentenceEn": "Find the solution to the following equation."
+  },
+  {
+    "id": "trap-n2-a0ae194568",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "待合室",
+    "reading": "まちあいしつ",
+    "romaji": "machiaishitsu",
+    "meanings": [
+      "waiting room"
+    ],
+    "prefix": "彼は",
+    "targetSurface": "待合室",
+    "suffix": "に座っています。",
+    "sentenceJa": "彼は待合室に座っています。",
+    "sentenceEn": "He's sitting in the waiting room."
+  },
+  {
+    "id": "trap-n2-c4d0463a66",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "申し訳ない",
+    "reading": "もうしわけない",
+    "romaji": "moushiwakenai",
+    "meanings": [
+      "inexcusable"
+    ],
+    "prefix": "",
+    "targetSurface": "申し訳ない",
+    "suffix": "けど、できません。",
+    "sentenceJa": "申し訳ないけど、できません。",
+    "sentenceEn": "I'm sorry, but it's impossible."
+  },
+  {
+    "id": "trap-n2-40481ab25c",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "洋品店",
+    "reading": "ようひんてん",
+    "romaji": "youhinten",
+    "meanings": [
+      "shop which handles Western-style apparel and accessories"
+    ],
+    "prefix": "今日の授業で「",
+    "targetSurface": "洋品店",
+    "suffix": "」という表現の使い方を学びました。",
+    "sentenceJa": "今日の授業で「洋品店」という表現の使い方を学びました。",
+    "sentenceEn": "In today’s class, I learned how to use the expression “clothing store.”"
+  },
+  {
+    "id": "trap-n2-55bcf17097",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "領収",
+    "reading": "りょうしゅう",
+    "romaji": "ryoushuu",
+    "meanings": [
+      "receipt",
+      "voucher"
+    ],
+    "prefix": "今月の経費にこれらの",
+    "targetSurface": "領収",
+    "suffix": "書の金額を加える必要がある。",
+    "sentenceJa": "今月の経費にこれらの領収書の金額を加える必要がある。",
+    "sentenceEn": "I need to add the amounts on these receipts to this month's expenses."
+  },
+  {
+    "id": "trap-n2-f24da46d2e",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "青白い",
+    "reading": "あおじろい",
+    "romaji": "aojiroi",
+    "meanings": [
+      "pale",
+      "pallid"
+    ],
+    "prefix": "彼女はいつも",
+    "targetSurface": "青白い",
+    "suffix": "顔をしている。",
+    "sentenceJa": "彼女はいつも青白い顔をしている。",
+    "sentenceEn": "She always looks pale."
+  },
+  {
+    "id": "trap-n2-869960843c",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "圧縮",
+    "reading": "あっしゅく",
+    "romaji": "asshuku",
+    "meanings": [
+      "compression",
+      "condensation",
+      "pressure"
+    ],
+    "prefix": "その気体は",
+    "targetSurface": "圧縮",
+    "suffix": "されてボンベに詰め込まれた。",
+    "sentenceJa": "その気体は圧縮されてボンベに詰め込まれた。",
+    "sentenceEn": "The gas was compressed into a gas cylinder."
+  },
+  {
+    "id": "trap-n2-28ba375980",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "一段と",
+    "reading": "いちだんと",
+    "romaji": "ichidanto",
+    "meanings": [
+      "greater",
+      "more",
+      "further",
+      "still more"
+    ],
+    "prefix": "冬は暗くなるのが",
+    "targetSurface": "一段と",
+    "suffix": "早くなる。",
+    "sentenceJa": "冬は暗くなるのが一段と早くなる。",
+    "sentenceEn": "It becomes dark much earlier in winter."
+  },
+  {
+    "id": "trap-n2-9299dcd9c4",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "一流",
+    "reading": "いちりゅう",
+    "romaji": "ichiryuu",
+    "meanings": [
+      "first class",
+      "top grade",
+      "foremost",
+      "top-notch"
+    ],
+    "prefix": "こんな",
+    "targetSurface": "一流",
+    "suffix": "選手が相手では勝ち目がない。",
+    "sentenceJa": "こんな一流選手が相手では勝ち目がない。",
+    "sentenceEn": "We have no chance against those top players."
+  },
+  {
+    "id": "trap-n2-1cda943bec",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "引力",
+    "reading": "いんりょく",
+    "romaji": "inryoku",
+    "meanings": [
+      "gravity"
+    ],
+    "prefix": "ニュートンは",
+    "targetSurface": "引力",
+    "suffix": "の法則を確立した。",
+    "sentenceJa": "ニュートンは引力の法則を確立した。",
+    "sentenceEn": "Newton established the law of gravity."
+  },
+  {
+    "id": "trap-n2-609f65f056",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "薄暗い",
+    "reading": "うすぐらい",
+    "romaji": "usugurai",
+    "meanings": [
+      "dim",
+      "gloomy"
+    ],
+    "prefix": "",
+    "targetSurface": "薄暗い",
+    "suffix": "光の中で彼の顔を見た。",
+    "sentenceJa": "薄暗い光の中で彼の顔を見た。",
+    "sentenceEn": "I saw his face in the dim light."
+  },
+  {
+    "id": "trap-n2-399dac0917",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "売り切れる",
+    "reading": "うりきれる",
+    "romaji": "urikireru",
+    "meanings": [
+      "to be sold out"
+    ],
+    "prefix": "そのケーキはすぐに",
+    "targetSurface": "売り切れる",
+    "suffix": "でしょう。",
+    "sentenceJa": "そのケーキはすぐに売り切れるでしょう。",
+    "sentenceEn": "The cakes may be sold out soon."
+  },
+  {
+    "id": "trap-n2-d098b11716",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "円周",
+    "reading": "えんしゅう",
+    "romaji": "enshuu",
+    "meanings": [
+      "circumference"
+    ],
+    "prefix": "",
+    "targetSurface": "円周",
+    "suffix": "の長さの求め方ってどうでしたっけ？忘れました。",
+    "sentenceJa": "円周の長さの求め方ってどうでしたっけ？忘れました。",
+    "sentenceEn": "How do you derive the length of the circumference? I've forgotten."
+  },
+  {
+    "id": "trap-n2-dba326f5ee",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "延長",
+    "reading": "えんちょう",
+    "romaji": "enchou",
+    "meanings": [
+      "extension",
+      "elongation",
+      "prolongation",
+      "lengthening"
+    ],
+    "prefix": "宿泊をもう一晩",
+    "targetSurface": "延長",
+    "suffix": "できますか。",
+    "sentenceJa": "宿泊をもう一晩延長できますか。",
+    "sentenceEn": "Can I extend my stay one more night?"
+  },
+  {
+    "id": "trap-n2-395598d52e",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "大通り",
+    "reading": "おおどおり",
+    "romaji": "oodoori",
+    "meanings": [
+      "main street"
+    ],
+    "prefix": "私は",
+    "targetSurface": "大通り",
+    "suffix": "をずっと一人で歩いた。",
+    "sentenceJa": "私は大通りをずっと一人で歩いた。",
+    "sentenceEn": "I walked along the main street."
+  },
+  {
+    "id": "trap-n2-328692d4b2",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "送り仮名",
+    "reading": "おくりがな",
+    "romaji": "okurigana",
+    "meanings": [
+      "part of word written in kana"
+    ],
+    "prefix": "この漢字、",
+    "targetSurface": "送り仮名",
+    "suffix": "が間違ってるよ。",
+    "sentenceJa": "この漢字、送り仮名が間違ってるよ。",
+    "sentenceEn": "The okurigana on this kanji is wrong."
+  },
+  {
+    "id": "trap-n2-5510e3f22f",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "御中",
+    "reading": "おんちゅう",
+    "romaji": "onchuu",
+    "meanings": [
+      "and Company",
+      "Messrs."
+    ],
+    "prefix": "今日の授業で「",
+    "targetSurface": "御中",
+    "suffix": "」という表現の使い方を学びました。",
+    "sentenceJa": "今日の授業で「御中」という表現の使い方を学びました。",
+    "sentenceEn": "In today’s class, I learned how to use the expression “御中.”"
+  },
+  {
+    "id": "trap-n2-3d9d16c9d1",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "拡充",
+    "reading": "かくじゅう",
+    "romaji": "kakujuu",
+    "meanings": [
+      "expansion"
+    ],
+    "prefix": "教育施設を",
+    "targetSurface": "拡充",
+    "suffix": "する金をもっと多くと望んでいる。",
+    "sentenceJa": "教育施設を拡充する金をもっと多くと望んでいる。",
+    "sentenceEn": "People want more money to expand educational institutions."
+  },
+  {
+    "id": "trap-n2-2a0baeba5b",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "学術",
+    "reading": "がくじゅつ",
+    "romaji": "gakujutsu",
+    "meanings": [
+      "science",
+      "learning",
+      "scholarship"
+    ],
+    "prefix": "彼は",
+    "targetSurface": "学術",
+    "suffix": "会議に出席した。",
+    "sentenceJa": "彼は学術会議に出席した。",
+    "sentenceEn": "He attended the scientific conference."
+  },
+  {
+    "id": "trap-n2-7f59e7581c",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "拡張",
+    "reading": "かくちょう",
+    "romaji": "kakuchou",
+    "meanings": [
+      "expansion",
+      "extension",
+      "enlargement",
+      "escape (ESC)"
+    ],
+    "prefix": "学校の体育館が",
+    "targetSurface": "拡張",
+    "suffix": "された。",
+    "sentenceJa": "学校の体育館が拡張された。",
+    "sentenceEn": "The school gymnasium was enlarged."
+  },
+  {
+    "id": "trap-n2-abd96c78e2",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "学力",
+    "reading": "がくりょく",
+    "romaji": "gakuryoku",
+    "meanings": [
+      "scholarship",
+      "knowledge",
+      "literary ability"
+    ],
+    "prefix": "今日の授業で「",
+    "targetSurface": "学力",
+    "suffix": "」という表現の使い方を学びました。",
+    "sentenceJa": "今日の授業で「学力」という表現の使い方を学びました。",
+    "sentenceEn": "In today’s class, I learned how to use the expression “academic ability.”"
+  },
+  {
+    "id": "trap-n2-9ceaaec557",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "学級",
+    "reading": "がっきゅう",
+    "romaji": "gakkyuu",
+    "meanings": [
+      "grade in school"
+    ],
+    "prefix": "私たちは同じ",
+    "targetSurface": "学級",
+    "suffix": "で英語を勉強します。",
+    "sentenceJa": "私たちは同じ学級で英語を勉強します。",
+    "sentenceEn": "We study English in the same class."
+  },
+  {
+    "id": "trap-n2-6a5672e8e2",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "活力",
+    "reading": "かつりょく",
+    "romaji": "katsuryoku",
+    "meanings": [
+      "vitality",
+      "energy"
+    ],
+    "prefix": "この薬は",
+    "targetSurface": "活力",
+    "suffix": "を補給してくれます。",
+    "sentenceJa": "この薬は活力を補給してくれます。",
+    "sentenceEn": "This medicine renews your strength."
+  },
+  {
+    "id": "trap-n2-e1483430fd",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "仮名遣い",
+    "reading": "かなづかい",
+    "romaji": "kanazukai",
+    "meanings": [
+      "kana orthography",
+      "syllabary spelling"
+    ],
+    "prefix": "祖父は古い",
+    "targetSurface": "仮名遣い",
+    "suffix": "で書くことがあるの。",
+    "sentenceJa": "祖父は古い仮名遣いで書くことがあるの。",
+    "sentenceEn": "My grandfather sometimes writes in the old kana orthography."
+  },
+  {
+    "id": "trap-n1-c052d729c7",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "案の定",
+    "reading": "あんのじょう",
+    "romaji": "annojou",
+    "meanings": [
+      "sure enough",
+      "as usual"
+    ],
+    "prefix": "",
+    "targetSurface": "案の定",
+    "suffix": "、彼は疑念を抱いていた。",
+    "sentenceJa": "案の定、彼は疑念を抱いていた。",
+    "sentenceEn": "Sure enough, he entertained doubts."
+  },
+  {
+    "id": "trap-n1-345c476ef0",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "鬱陶しい",
+    "reading": "うっとうしい",
+    "romaji": "uttoushii",
+    "meanings": [
+      "gloomy",
+      "depressing"
+    ],
+    "prefix": "ベタベタするんじゃねえよっ！",
+    "targetSurface": "鬱陶しい",
+    "suffix": "！",
+    "sentenceJa": "ベタベタするんじゃねえよっ！鬱陶しい！",
+    "sentenceEn": "Get off me you little pest!"
+  },
+  {
+    "id": "trap-n1-c283e8c6ea",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "箇条書き",
+    "reading": "かじょうがき",
+    "romaji": "kajougaki",
+    "meanings": [
+      "itemized form",
+      "itemization"
+    ],
+    "prefix": "今日の授業で「",
+    "targetSurface": "箇条書き",
+    "suffix": "」という表現の使い方を学びました。",
+    "sentenceJa": "今日の授業で「箇条書き」という表現の使い方を学びました。",
+    "sentenceEn": "In today’s class, I learned how to use the expression “bulleted list.”"
+  },
+  {
+    "id": "trap-n1-2a2e56c75e",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "代わる代わる",
+    "reading": "かわるがわる",
+    "romaji": "kawarugawaru",
+    "meanings": [
+      "alternately"
+    ],
+    "prefix": "私たちは",
+    "targetSurface": "代わる代わる",
+    "suffix": "馬の世話をした。",
+    "sentenceJa": "私たちは代わる代わる馬の世話をした。",
+    "sentenceEn": "We took care of our horses by turns."
+  },
+  {
+    "id": "trap-n1-42ee85789e",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "感無量",
+    "reading": "かんむりょう",
+    "romaji": "kanmuryou",
+    "meanings": [
+      "deep feeling",
+      "inexpressible feeling",
+      "filled with emotion"
+    ],
+    "prefix": "彼の",
+    "targetSurface": "感無量",
+    "suffix": "な対応のおかげで、問題は無事に解決しました。",
+    "sentenceJa": "彼の感無量な対応のおかげで、問題は無事に解決しました。",
+    "sentenceEn": "Thanks to his deeply moving response, the problem was successfully resolved."
+  },
+  {
+    "id": "trap-n1-d5ab320203",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "几帳面",
+    "reading": "きちょうめん",
+    "romaji": "kichoumen",
+    "meanings": [
+      "methodical",
+      "punctual",
+      "steady"
+    ],
+    "prefix": "お金の事では彼女は",
+    "targetSurface": "几帳面",
+    "suffix": "です。",
+    "sentenceJa": "お金の事では彼女は几帳面です。",
+    "sentenceEn": "She is exact in money matters."
+  },
+  {
+    "id": "trap-n1-47871e07a3",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "決まり悪い",
+    "reading": "きまりわるい",
+    "romaji": "kimariwarui",
+    "meanings": [
+      "feeling awkward",
+      "being ashamed"
+    ],
+    "prefix": "私は誤りを指摘されて",
+    "targetSurface": "決まり悪い",
+    "suffix": "思いをした。",
+    "sentenceJa": "私は誤りを指摘されて決まり悪い思いをした。",
+    "sentenceEn": "I was abashed when my mistakes were pointed out."
+  },
+  {
+    "id": "trap-n1-3a40a73925",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "脚色",
+    "reading": "きゃくしょく",
+    "romaji": "kyakushoku",
+    "meanings": [
+      "dramatization (e.g. film)"
+    ],
+    "prefix": "この劇は小説から",
+    "targetSurface": "脚色",
+    "suffix": "したものです。",
+    "sentenceJa": "この劇は小説から脚色したものです。",
+    "sentenceEn": "This play was adapted from the novel."
+  },
+  {
+    "id": "trap-n1-dc6d837292",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "究極",
+    "reading": "きゅうきょく",
+    "romaji": "kyuukyoku",
+    "meanings": [
+      "ultimate",
+      "final",
+      "eventual"
+    ],
+    "prefix": "人類の",
+    "targetSurface": "究極",
+    "suffix": "的運命はどうなるであろうか。",
+    "sentenceJa": "人類の究極的運命はどうなるであろうか。",
+    "sentenceEn": "What is man's ultimate destiny?"
+  },
+  {
+    "id": "trap-n1-355f61bfeb",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "給食",
+    "reading": "きゅうしょく",
+    "romaji": "kyuushoku",
+    "meanings": [
+      "school lunch",
+      "providing a meal"
+    ],
+    "prefix": "",
+    "targetSurface": "給食",
+    "suffix": "はあるの？",
+    "sentenceJa": "給食はあるの？",
+    "sentenceEn": "Do you have lunch at school?"
+  },
+  {
+    "id": "trap-n1-424e314e84",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "丘陵",
+    "reading": "きゅうりょう",
+    "romaji": "kyuuryou",
+    "meanings": [
+      "hill"
+    ],
+    "prefix": "飛行機から見ると、小さな",
+    "targetSurface": "丘陵",
+    "suffix": "は平地のように見える。",
+    "sentenceJa": "飛行機から見ると、小さな丘陵は平地のように見える。",
+    "sentenceEn": "Small hills look flat from an airplane."
+  },
+  {
+    "id": "trap-n1-307287bc5f",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "教習",
+    "reading": "きょうしゅう",
+    "romaji": "kyoushuu",
+    "meanings": [
+      "training",
+      "instruction"
+    ],
+    "prefix": "計画をスムーズに",
+    "targetSurface": "教習",
+    "suffix": "ために、事前の準備を行いました。",
+    "sentenceJa": "計画をスムーズに教習ために、事前の準備を行いました。",
+    "sentenceEn": "We made preparations in advance to ensure the training went smoothly."
+  },
+  {
+    "id": "trap-n1-2c40858d7a",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "郷愁",
+    "reading": "きょうしゅう",
+    "romaji": "kyoushuu",
+    "meanings": [
+      "nostalgia",
+      "homesickness"
+    ],
+    "prefix": "管弦楽団は",
+    "targetSurface": "郷愁",
+    "suffix": "に満ちた音楽を演奏し始めた。",
+    "sentenceJa": "管弦楽団は郷愁に満ちた音楽を演奏し始めた。",
+    "sentenceEn": "The orchestra struck up nostalgic music."
+  },
+  {
+    "id": "trap-n1-edb3e0745a",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "教職",
+    "reading": "きょうしょく",
+    "romaji": "kyoushoku",
+    "meanings": [
+      "teaching certificate",
+      "the teaching profession"
+    ],
+    "prefix": "彼女は",
+    "targetSurface": "教職",
+    "suffix": "につくことを望んでいる。",
+    "sentenceJa": "彼女は教職につくことを望んでいる。",
+    "sentenceEn": "She wants to engage in teaching."
+  },
+  {
+    "id": "trap-n1-f773197117",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "協調",
+    "reading": "きょうちょう",
+    "romaji": "kyouchou",
+    "meanings": [
+      "co-operation",
+      "conciliation",
+      "harmony",
+      "firm (market) tone"
+    ],
+    "prefix": "企業経営で活躍するために必要となるのが多くの仲間と仕事を遂行するための",
+    "targetSurface": "協調",
+    "suffix": "精神です。",
+    "sentenceJa": "企業経営で活躍するために必要となるのが多くの仲間と仕事を遂行するための協調精神です。",
+    "sentenceEn": "What you need to take part in business management is the team spirit to work with many colleagues."
+  },
+  {
+    "id": "trap-n1-8aa704aca6",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "香辛料",
+    "reading": "こうしんりょう",
+    "romaji": "koushinryou",
+    "meanings": [
+      "spices"
+    ],
+    "prefix": "韓国料理は、",
+    "targetSurface": "香辛料",
+    "suffix": "のきいた味でよく知られている。",
+    "sentenceJa": "韓国料理は、香辛料のきいた味でよく知られている。",
+    "sentenceEn": "Korean food is noted for its spicy flavor."
+  },
+  {
+    "id": "trap-n1-b5288189c7",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "心強い",
+    "reading": "こころづよい",
+    "romaji": "kokorozuyoi",
+    "meanings": [
+      "heartening",
+      "reassuring"
+    ],
+    "prefix": "僕には警察よりも何よりもみんながいてくれることの方が",
+    "targetSurface": "心強い",
+    "suffix": "のですよ。",
+    "sentenceJa": "僕には警察よりも何よりもみんながいてくれることの方が心強いのですよ。",
+    "sentenceEn": "For my part, having you lot with me is more reassuring than the police or anything!"
+  },
+  {
+    "id": "trap-n1-4951764bd4",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "骨董品",
+    "reading": "こっとうひん",
+    "romaji": "kottouhin",
+    "meanings": [
+      "curio"
+    ],
+    "prefix": "このテーブルは貴重な",
+    "targetSurface": "骨董品",
+    "suffix": "だ。",
+    "sentenceJa": "このテーブルは貴重な骨董品だ。",
+    "sentenceEn": "This table is a priceless antique."
+  },
+  {
+    "id": "trap-n1-cdf5e77c1e",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "差し支える",
+    "reading": "さしつかえる",
+    "romaji": "sashitsukaeru",
+    "meanings": [
+      "to interfere",
+      "to hinder",
+      "to become impeded"
+    ],
+    "prefix": "大切な場面でしっかり",
+    "targetSurface": "差し支える",
+    "suffix": "ことが求められます。",
+    "sentenceJa": "大切な場面でしっかり差し支えることが求められます。",
+    "sentenceEn": "You are expected to perform reliably in important situations."
+  },
+  {
+    "id": "trap-n1-adb0af83d2",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "産婦人科",
+    "reading": "さんふじんか",
+    "romaji": "sanfujinka",
+    "meanings": [
+      "maternity and gynecology department"
+    ],
+    "prefix": "最近、",
+    "targetSurface": "産婦人科",
+    "suffix": "の不足が問題になっているね。",
+    "sentenceJa": "最近、産婦人科の不足が問題になっているね。",
+    "sentenceEn": "Recently, shortages of obstetrics and gynecology specialists have become a problem."
+  },
+  {
+    "id": "trap-n1-6fd972e632",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "時刻表",
+    "reading": "じこくひょう",
+    "romaji": "jikokuhyou",
+    "meanings": [
+      "table",
+      "diagram",
+      "chart",
+      "timetable"
+    ],
+    "prefix": "",
+    "targetSurface": "時刻表",
+    "suffix": "が改正された。",
+    "sentenceJa": "時刻表が改正された。",
+    "sentenceEn": "The timetable has been revised."
+  },
+  {
+    "id": "trap-n1-3a3ca43df5",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "実業家",
+    "reading": "じつぎょうか",
+    "romaji": "jitsugyouka",
+    "meanings": [
+      "industrialist",
+      "businessman"
+    ],
+    "prefix": "トムは",
+    "targetSurface": "実業家",
+    "suffix": "になるのに向いている。",
+    "sentenceJa": "トムは実業家になるのに向いている。",
+    "sentenceEn": "Tom is fit to become a businessman."
+  },
+  {
+    "id": "trap-n1-5dab2cd493",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "衆議院",
+    "reading": "しゅうぎいん",
+    "romaji": "shuugiin",
+    "meanings": [
+      "Lower House",
+      "House of Representatives"
+    ],
+    "prefix": "",
+    "targetSurface": "衆議院",
+    "suffix": "の少数派の議席は、急速にむしばまれてきています。",
+    "sentenceJa": "衆議院の少数派の議席は、急速にむしばまれてきています。",
+    "sentenceEn": "The number of minority seats in the Lower House is rapidly eroding."
+  },
+  {
+    "id": "trap-n1-e1fdef8d38",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "就業",
+    "reading": "しゅうぎょう",
+    "romaji": "shuugyou",
+    "meanings": [
+      "employment",
+      "starting work"
+    ],
+    "prefix": "僕も学生の時はよく",
+    "targetSurface": "就業",
+    "suffix": "をサボったよ。",
+    "sentenceJa": "僕も学生の時はよく就業をサボったよ。",
+    "sentenceEn": "When I was a student, I also often cut classes."
+  },
+  {
+    "id": "trap-n1-0f1bb19bcf",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "修業",
+    "reading": "しゅうぎょう",
+    "romaji": "shuugyou",
+    "meanings": [
+      "pursuit of knowledge",
+      "studying",
+      "learning",
+      "training"
+    ],
+    "prefix": "只今、僕は旅立ちの日に向けて",
+    "targetSurface": "修業",
+    "suffix": "中です。",
+    "sentenceJa": "只今、僕は旅立ちの日に向けて修業中です。",
+    "sentenceEn": "Right now I'm training in preparation for the day we set off."
+  },
+  {
+    "id": "trap-n1-5109d1778b",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "従業員",
+    "reading": "じゅうぎょういん",
+    "romaji": "juugyouin",
+    "meanings": [
+      "employee",
+      "worker"
+    ],
+    "prefix": "",
+    "targetSurface": "従業員",
+    "suffix": "たちは超過勤務をするのに異議を唱えた。",
+    "sentenceJa": "従業員たちは超過勤務をするのに異議を唱えた。",
+    "sentenceEn": "The employees demurred at working overtime."
+  },
+  {
+    "id": "trap-n1-9510e4a8e0",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "収集",
+    "reading": "しゅうしゅう",
+    "romaji": "shuushuu",
+    "meanings": [
+      "gathering up",
+      "collection",
+      "accumulation"
+    ],
+    "prefix": "情報を",
+    "targetSurface": "収集",
+    "suffix": "しなければならない。",
+    "sentenceJa": "情報を収集しなければならない。",
+    "sentenceEn": "We have to gather information."
+  },
+  {
+    "id": "trap-n1-887c7b645a",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "修飾",
+    "reading": "しゅうしょく",
+    "romaji": "shuushoku",
+    "meanings": [
+      "ornamentation",
+      "embellishment",
+      "decoration",
+      "adornment"
+    ],
+    "prefix": "名詞を",
+    "targetSurface": "修飾",
+    "suffix": "するものは、形容詞または形容詞相当語句です。",
+    "sentenceJa": "名詞を修飾するものは、形容詞または形容詞相当語句です。",
+    "sentenceEn": "Things that modify nouns are adjectives or equivalent to adjectives."
+  },
+  {
+    "id": "trap-n1-27fa290805",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "執着",
+    "reading": "しゅうちゃく",
+    "romaji": "shuuchaku",
+    "meanings": [
+      "attachment",
+      "adhesion",
+      "tenacity"
+    ],
+    "prefix": "彼は弁護士になれるという希望に",
+    "targetSurface": "執着",
+    "suffix": "していた。",
+    "sentenceJa": "彼は弁護士になれるという希望に執着していた。",
+    "sentenceEn": "He clung to the hope that he could be a lawyer."
+  },
+  {
+    "id": "trap-n1-1a8f36d596",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "修了",
+    "reading": "しゅうりょう",
+    "romaji": "shuuryou",
+    "meanings": [
+      "completion (of a course)"
+    ],
+    "prefix": "私は高校の全課程を",
+    "targetSurface": "修了",
+    "suffix": "した。",
+    "sentenceJa": "私は高校の全課程を修了した。",
+    "sentenceEn": "I completed the whole high school curriculum."
+  },
+  {
+    "id": "trap-n1-818ef1c8d8",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "主人公",
+    "reading": "しゅじんこう",
+    "romaji": "shujinkou",
+    "meanings": [
+      "protagonist",
+      "main character",
+      "hero(ine) (of a story)",
+      "head of household"
+    ],
+    "prefix": "",
+    "targetSurface": "主人公",
+    "suffix": "は、本の最後で死んだ。",
+    "sentenceJa": "主人公は、本の最後で死んだ。",
+    "sentenceEn": "The hero died at the end of the book."
+  },
+  {
+    "id": "trap-n1-08f2c740b5",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "出生",
+    "reading": "しゅっしょう",
+    "romaji": "shusshou",
+    "meanings": [
+      "birth"
+    ],
+    "prefix": "新しい",
+    "targetSurface": "出生",
+    "suffix": "政策は人口増加ゼロをめざしています。",
+    "sentenceJa": "新しい出生政策は人口増加ゼロをめざしています。",
+    "sentenceEn": "The new birth policy is aimed at achieving zero population growth."
+  },
+  {
+    "id": "trap-n1-96cf2aa192",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "準急",
+    "reading": "じゅんきゅう",
+    "romaji": "junkyuu",
+    "meanings": [
+      "local express (train, slower than an express)"
+    ],
+    "prefix": "新宿駅まで",
+    "targetSurface": "準急",
+    "suffix": "で行ったのよ。",
+    "sentenceJa": "新宿駅まで準急で行ったのよ。",
+    "sentenceEn": "I went to Tokyo Station by the local express."
+  },
+  {
+    "id": "trap-n1-1766fb87d2",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "上昇",
+    "reading": "じょうしょう",
+    "romaji": "joushou",
+    "meanings": [
+      "rising",
+      "ascending",
+      "climbing"
+    ],
+    "prefix": "物価がどんどん",
+    "targetSurface": "上昇",
+    "suffix": "してきている。",
+    "sentenceJa": "物価がどんどん上昇してきている。",
+    "sentenceEn": "Prices have been climbing steadily."
+  },
+  {
+    "id": "trap-n1-7a67174d34",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "象徴",
+    "reading": "しょうちょう",
+    "romaji": "shouchou",
+    "meanings": [
+      "symbol"
+    ],
+    "prefix": "オリーブの枝は平和を",
+    "targetSurface": "象徴",
+    "suffix": "している。",
+    "sentenceJa": "オリーブの枝は平和を象徴している。",
+    "sentenceEn": "An olive branch symbolizes peace."
+  },
+  {
+    "id": "trap-n1-4b3ac6f805",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "蒸留",
+    "reading": "じょうりゅう",
+    "romaji": "jouryuu",
+    "meanings": [
+      "distillation"
+    ],
+    "prefix": "コールタールを",
+    "targetSurface": "蒸留",
+    "suffix": "して得られる成分名は下表の通りである。",
+    "sentenceJa": "コールタールを蒸留して得られる成分名は下表の通りである。",
+    "sentenceEn": "The components obtained by distillation of coal tar are as shown below."
+  },
+  {
+    "id": "trap-n1-58a624504d",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "植民地",
+    "reading": "しょくみんち",
+    "romaji": "shokuminchi",
+    "meanings": [
+      "colony"
+    ],
+    "prefix": "その習慣を彼は",
+    "targetSurface": "植民地",
+    "suffix": "時代から始まると推定している。",
+    "sentenceJa": "その習慣を彼は植民地時代から始まると推定している。",
+    "sentenceEn": "He dates the custom from the colonial days."
+  },
+  {
+    "id": "trap-n1-de323abf88",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "新入生",
+    "reading": "しんにゅうせい",
+    "romaji": "shinnyuusei",
+    "meanings": [
+      "freshman",
+      "first-year student"
+    ],
+    "prefix": "",
+    "targetSurface": "新入生",
+    "suffix": "が教室へ入ってきた。",
+    "sentenceJa": "新入生が教室へ入ってきた。",
+    "sentenceEn": "A new student came into the class."
+  },
+  {
+    "id": "trap-n1-f608306e77",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "先天的",
+    "reading": "せんてんてき",
+    "romaji": "sententeki",
+    "meanings": [
+      "a priori",
+      "inborn",
+      "innate",
+      "inherent"
+    ],
+    "prefix": "その習慣は後天的で、",
+    "targetSurface": "先天的",
+    "suffix": "なものではない。",
+    "sentenceJa": "その習慣は後天的で、先天的なものではない。",
+    "sentenceEn": "That habit is acquired, not innate."
+  },
+  {
+    "id": "trap-n1-47d96ccdae",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "備え付ける",
+    "reading": "そなえつける",
+    "romaji": "sonaetsukeru",
+    "meanings": [
+      "to provide",
+      "to furnish",
+      "to equip",
+      "to install"
+    ],
+    "prefix": "職場に、自動販売機を",
+    "targetSurface": "備え付ける",
+    "suffix": "。",
+    "sentenceJa": "職場に、自動販売機を備え付ける。",
+    "sentenceEn": "Install a vending machine in our office."
+  },
+  {
+    "id": "trap-n1-61c73272dd",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "着色",
+    "reading": "ちゃくしょく",
+    "romaji": "chakushoku",
+    "meanings": [
+      "colouring",
+      "coloring"
+    ],
+    "prefix": "計画をスムーズに",
+    "targetSurface": "着色",
+    "suffix": "ために、事前の準備を行いました。",
+    "sentenceJa": "計画をスムーズに着色ために、事前の準備を行いました。",
+    "sentenceEn": "To ensure the project went smoothly, we made preparations in advance."
+  },
+  {
+    "id": "trap-n1-73761da587",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "宙返り",
+    "reading": "ちゅうがえり",
+    "romaji": "chuugaeri",
+    "meanings": [
+      "somersault",
+      "looping-the-loop"
+    ],
+    "prefix": "",
+    "targetSurface": "宙返り",
+    "suffix": "するジェットコースターに乗ったら、気持ち悪くなっちゃった。",
+    "sentenceJa": "宙返りするジェットコースターに乗ったら、気持ち悪くなっちゃった。",
+    "sentenceEn": "I got sick riding the roller coaster with the loop-the-loop."
+  },
+  {
+    "id": "trap-n1-858ac29e35",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "中傷",
+    "reading": "ちゅうしょう",
+    "romaji": "chuushou",
+    "meanings": [
+      "slander",
+      "libel",
+      "defamation"
+    ],
+    "prefix": "その程度の",
+    "targetSurface": "中傷",
+    "suffix": "はほうっておきなさい。",
+    "sentenceJa": "その程度の中傷はほうっておきなさい。",
+    "sentenceEn": "Just pass such an insult."
+  },
+  {
+    "id": "trap-n1-8814988b80",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "中腹",
+    "reading": "ちゅうっぱら",
+    "romaji": "chuuppara",
+    "meanings": [
+      "irritated",
+      "offended"
+    ],
+    "prefix": "彼の家は丘の",
+    "targetSurface": "中腹",
+    "suffix": "にあって、見晴らしがすばらしい。",
+    "sentenceJa": "彼の家は丘の中腹にあって、見晴らしがすばらしい。",
+    "sentenceEn": "His house stands on the hill-side and commands a splendid view."
+  },
+  {
+    "id": "trap-n1-4c00360769",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "徴収",
+    "reading": "ちょうしゅう",
+    "romaji": "choushuu",
+    "meanings": [
+      "collection",
+      "levy"
+    ],
+    "prefix": "国は国民から税を",
+    "targetSurface": "徴収",
+    "suffix": "する。",
+    "sentenceJa": "国は国民から税を徴収する。",
+    "sentenceEn": "A country collects taxes from its people."
+  },
+  {
+    "id": "trap-n1-759fdce75d",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "聴診器",
+    "reading": "ちょうしんき",
+    "romaji": "choushinki",
+    "meanings": [
+      "stethoscope"
+    ],
+    "prefix": "医者は患者の胸に",
+    "targetSurface": "聴診器",
+    "suffix": "を当てた。",
+    "sentenceJa": "医者は患者の胸に聴診器を当てた。",
+    "sentenceEn": "The doctor placed a stethoscope on the patient's chest."
+  },
+  {
+    "id": "trap-n1-5c95d2786a",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "共働き",
+    "reading": "ともばたらき",
+    "romaji": "tomobataraki",
+    "meanings": [
+      "dual income"
+    ],
+    "prefix": "「少しうちに寄っていかない？」「いいの？」「うち",
+    "targetSurface": "共働き",
+    "suffix": "で親は遅いの」",
+    "sentenceJa": "「少しうちに寄っていかない？」「いいの？」「うち共働きで親は遅いの」",
+    "sentenceEn": "\"Want to drop round my place?\" \"Can I?\" \"My parents come home late as they both work.\""
+  },
+  {
+    "id": "trap-n1-c3c0a73472",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "取り扱い",
+    "reading": "とりあつかい",
+    "romaji": "toriatsukai",
+    "meanings": [
+      "treatment",
+      "service",
+      "handling",
+      "management"
+    ],
+    "prefix": "先生は彼女に正当な",
+    "targetSurface": "取り扱い",
+    "suffix": "をしなかった。",
+    "sentenceJa": "先生は彼女に正当な取り扱いをしなかった。",
+    "sentenceEn": "The teacher didn't do her justice."
+  },
+  {
+    "id": "trap-n1-abfc489fce",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "取り扱う",
+    "reading": "とりあつかう",
+    "romaji": "toriatsukau",
+    "meanings": [
+      "to treat",
+      "to handle",
+      "to deal in"
+    ],
+    "prefix": "算数は数を",
+    "targetSurface": "取り扱う",
+    "suffix": "。",
+    "sentenceJa": "算数は数を取り扱う。",
+    "sentenceEn": "Arithmetic deals with numbers."
+  },
+  {
+    "id": "trap-n1-b921800266",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "取り調べる",
+    "reading": "とりしらべる",
+    "romaji": "torishiraberu",
+    "meanings": [
+      "to investigate",
+      "to examine"
+    ],
+    "prefix": "事件の原因を",
+    "targetSurface": "取り調べる",
+    "suffix": "ために実情調査委員会が作られた。",
+    "sentenceJa": "事件の原因を取り調べるために実情調査委員会が作られた。",
+    "sentenceEn": "A fact-finding committee was set up to determine the cause of the incident."
+  },
+  {
+    "id": "trap-n1-340d51444a",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "入賞",
+    "reading": "にゅうしょう",
+    "romaji": "nyuushou",
+    "meanings": [
+      "winning a prize or place (in a contest)"
+    ],
+    "prefix": "その少女はリサイタルでのすばらしい踊りで、",
+    "targetSurface": "入賞",
+    "suffix": "した。",
+    "sentenceJa": "その少女はリサイタルでのすばらしい踊りで、入賞した。",
+    "sentenceEn": "The girl took the cake for her wonderful dancing at the recital."
+  },
+  {
+    "id": "trap-n1-23a4264046",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "配偶者",
+    "reading": "はいぐうしゃ",
+    "romaji": "haiguusha",
+    "meanings": [
+      "spouse",
+      "wife",
+      "husband"
+    ],
+    "prefix": "彼女は彼が貧しいときも彼を支えるすばらしい",
+    "targetSurface": "配偶者",
+    "suffix": "だった。",
+    "sentenceJa": "彼女は彼が貧しいときも彼を支えるすばらしい配偶者だった。",
+    "sentenceEn": "She was an excellent spouse who stood by him through poverty."
+  },
+  {
+    "id": "trap-n1-c015ddb7c6",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "放射能",
+    "reading": "ほうしゃのう",
+    "romaji": "houshanou",
+    "meanings": [
+      "radioactivity"
+    ],
+    "prefix": "",
+    "targetSurface": "放射能",
+    "suffix": "が原子力発電所から漏れた。",
+    "sentenceJa": "放射能が原子力発電所から漏れた。",
+    "sentenceEn": "The radioactivity leaked out of the nuclear power plant."
+  },
+  {
+    "id": "trap-n1-12610e01b7",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "待ち遠しい",
+    "reading": "まちどおしい",
+    "romaji": "machidooshii",
+    "meanings": [
+      "looking forward to"
+    ],
+    "prefix": "金曜日のパーティーが",
+    "targetSurface": "待ち遠しい",
+    "suffix": "よ。",
+    "sentenceJa": "金曜日のパーティーが待ち遠しいよ。",
+    "sentenceEn": "We can hardly wait for the party on Friday."
+  },
+  {
+    "id": "trap-n1-d89704e126",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "結び付ける",
+    "reading": "むすびつける",
+    "romaji": "musubitsukeru",
+    "meanings": [
+      "to combine",
+      "to join",
+      "to tie on",
+      "to attach with a knot"
+    ],
+    "prefix": "理論と実際を",
+    "targetSurface": "結び付ける",
+    "suffix": "べきだ。",
+    "sentenceJa": "理論と実際を結び付けるべきだ。",
+    "sentenceEn": "You should combine theory with practice."
+  },
+  {
+    "id": "trap-n1-1bf02a30c2",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "物足りない",
+    "reading": "ものたりない",
+    "romaji": "monotarinai",
+    "meanings": [
+      "unsatisfied",
+      "unsatisfactory"
+    ],
+    "prefix": "このドラマは単純な勧善懲悪もので、今一つ深みに欠けて",
+    "targetSurface": "物足りない",
+    "suffix": "。",
+    "sentenceJa": "このドラマは単純な勧善懲悪もので、今一つ深みに欠けて物足りない。",
+    "sentenceEn": "This drama is missing something. All it is is a simple cautionary tale with no real depth."
+  },
+  {
+    "id": "trap-n1-864c7afe67",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "両極",
+    "reading": "りょうきょく",
+    "romaji": "ryoukyoku",
+    "meanings": [
+      "both extremities",
+      "north and south poles",
+      "positive and negative poles"
+    ],
+    "prefix": "今日の授業で「",
+    "targetSurface": "両極",
+    "suffix": "」という表現の使い方を学びました。",
+    "sentenceJa": "今日の授業で「両極」という表現の使い方を学びました。",
+    "sentenceEn": "In today’s class, I learned how to use the expression “both extremes.”"
+  },
+  {
+    "id": "trap-n1-720dca0098",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "了承",
+    "reading": "りょうしょう",
+    "romaji": "ryoushou",
+    "meanings": [
+      "acknowledgement",
+      "understanding (e.g. please be understanding of the mess during our renovation)"
+    ],
+    "prefix": "この件についてのあなたのお求めを",
+    "targetSurface": "了承",
+    "suffix": "します。",
+    "sentenceJa": "この件についてのあなたのお求めを了承します。",
+    "sentenceEn": "Your request of this matter has been accepted."
+  },
+  {
+    "id": "trap-n1-3a407bbc0b",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "間柄",
+    "reading": "あいだがら",
+    "romaji": "aidagara",
+    "meanings": [
+      "relation(ship)"
+    ],
+    "prefix": "君と彼とはどういう",
+    "targetSurface": "間柄",
+    "suffix": "なのだ。",
+    "sentenceJa": "君と彼とはどういう間柄なのだ。",
+    "sentenceEn": "What's your relation with him?"
+  },
+  {
+    "id": "trap-n1-f06b8ec290",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "朝寝坊",
+    "reading": "あさねぼう",
+    "romaji": "asanebou",
+    "meanings": [
+      "oversleeping",
+      "late riser"
+    ],
+    "prefix": "",
+    "targetSurface": "朝寝坊",
+    "suffix": "が癖になった。",
+    "sentenceJa": "朝寝坊が癖になった。",
+    "sentenceEn": "I took to sleeping late in the morning."
+  },
+  {
+    "id": "trap-n1-cb8beba501",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "圧力",
+    "reading": "あつりょく",
+    "romaji": "atsuryoku",
+    "meanings": [
+      "stress",
+      "pressure"
+    ],
+    "prefix": "橋が",
+    "targetSurface": "圧力",
+    "suffix": "で落ちた。",
+    "sentenceJa": "橋が圧力で落ちた。",
+    "sentenceEn": "The bridge crashed under the pressure."
+  },
+  {
+    "id": "trap-n1-20b715b301",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "後回し",
+    "reading": "あとまわし",
+    "romaji": "atomawashi",
+    "meanings": [
+      "putting off",
+      "postponing"
+    ],
+    "prefix": "その問題は",
+    "targetSurface": "後回し",
+    "suffix": "にしよう。",
+    "sentenceJa": "その問題は後回しにしよう。",
+    "sentenceEn": "Let's leave that matter for later."
+  },
+  {
+    "id": "trap-n1-73a0f22579",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "いい加減",
+    "reading": "いいかげん",
+    "romaji": "iikagen",
+    "meanings": [
+      "moderate",
+      "right",
+      "random",
+      "not thorough"
+    ],
+    "prefix": "この静かな生活には",
+    "targetSurface": "いい加減",
+    "suffix": "飽きてしまった。",
+    "sentenceJa": "この静かな生活にはいい加減飽きてしまった。",
+    "sentenceEn": "I'm about tired of this quiet life."
+  },
+  {
+    "id": "trap-n1-f555ee7e0d",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "行き違い",
+    "reading": "いきちがい",
+    "romaji": "ikichigai",
+    "meanings": [
+      "misunderstanding",
+      "estrangement",
+      "disagreement",
+      "crossing without meeting"
+    ],
+    "prefix": "私たちの手紙は",
+    "targetSurface": "行き違い",
+    "suffix": "になった。",
+    "sentenceJa": "私たちの手紙は行き違いになった。",
+    "sentenceEn": "Our letters crossed each other."
+  },
+  {
+    "id": "trap-n1-2f38551629",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "一概に",
+    "reading": "いちがいに",
+    "romaji": "ichigaini",
+    "meanings": [
+      "unconditionally",
+      "as a rule"
+    ],
+    "prefix": "そうですね。",
+    "targetSurface": "一概に",
+    "suffix": "は言えませんね。",
+    "sentenceJa": "そうですね。一概には言えませんね。",
+    "sentenceEn": "Yes, well, that depends."
+  },
+  {
+    "id": "trap-n1-1d578a6738",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "一定",
+    "reading": "いちじょう",
+    "romaji": "ichijou",
+    "meanings": [
+      "fixed",
+      "settled",
+      "definite",
+      "uniform"
+    ],
+    "prefix": "彼は自転車を",
+    "targetSurface": "一定",
+    "suffix": "の速度で走らせた。",
+    "sentenceJa": "彼は自転車を一定の速度で走らせた。",
+    "sentenceEn": "He rode his bicycle at a uniform speed."
+  },
+  {
+    "id": "trap-n1-a9862719ca",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "一部分",
+    "reading": "いちぶぶん",
+    "romaji": "ichibubun",
+    "meanings": [
+      "a part"
+    ],
+    "prefix": "その建物の",
+    "targetSurface": "一部分",
+    "suffix": "だけが地震で破壊された。",
+    "sentenceJa": "その建物の一部分だけが地震で破壊された。",
+    "sentenceEn": "Only part of the building has been destroyed by the earthquake."
+  },
+  {
+    "id": "trap-n1-b46bd7a8fa",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "一挙に",
+    "reading": "いっきょに",
+    "romaji": "ikkyoni",
+    "meanings": [
+      "at a stroke",
+      "with a single swoop"
+    ],
+    "prefix": "",
+    "targetSurface": "一挙に",
+    "suffix": "作業を進めたので、時間通りに終わりました。",
+    "sentenceJa": "一挙に作業を進めたので、時間通りに終わりました。",
+    "sentenceEn": "Since I tackled the work all at once, I finished on time."
+  },
+  {
+    "id": "trap-n1-dab09239d8",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "稲光",
+    "reading": "いなびかり",
+    "romaji": "inabikari",
+    "meanings": [
+      "(flash of) lightning"
+    ],
+    "prefix": "そのジェット機は",
+    "targetSurface": "稲光",
+    "suffix": "より速かった。",
+    "sentenceJa": "そのジェット機は稲光より速かった。",
+    "sentenceEn": "Those jets were faster than lightning."
+  },
+  {
+    "id": "trap-n1-00b65e54a4",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "裏返し",
+    "reading": "うらがえし",
+    "romaji": "uragaeshi",
+    "meanings": [
+      "inside out",
+      "upside down"
+    ],
+    "prefix": "ここへ来る途中、風が強すぎて僕の傘は",
+    "targetSurface": "裏返し",
+    "suffix": "になってしまった。",
+    "sentenceJa": "ここへ来る途中、風が強すぎて僕の傘は裏返しになってしまった。",
+    "sentenceEn": "On my way here, the strong wind blew my umbrella inside out."
+  },
+  {
+    "id": "trap-n1-3803d886c8",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "上回る",
+    "reading": "うわまわる",
+    "romaji": "uwamawaru",
+    "meanings": [
+      "to exceed"
+    ],
+    "prefix": "所得税は控除額を",
+    "targetSurface": "上回る",
+    "suffix": "いかなる所得にもかかる。",
+    "sentenceJa": "所得税は控除額を上回るいかなる所得にもかかる。",
+    "sentenceEn": "An income tax is levied on any income that exceeds deductions."
+  },
+  {
+    "id": "trap-n1-93fe84e748",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "婉曲",
+    "reading": "えんきょく",
+    "romaji": "enkyoku",
+    "meanings": [
+      "euphemistic",
+      "circumlocution",
+      "roundabout",
+      "indirect"
+    ],
+    "prefix": "彼の",
+    "targetSurface": "婉曲",
+    "suffix": "な対応のおかげで、問題は無事に解決しました。",
+    "sentenceJa": "彼の婉曲な対応のおかげで、問題は無事に解決しました。",
+    "sentenceEn": "Thanks to his tactful handling of the situation, the problem was successfully resolved."
+  },
+  {
+    "id": "trap-n1-d8d1560f90",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "演習",
+    "reading": "えんしゅう",
+    "romaji": "enshuu",
+    "meanings": [
+      "practice",
+      "exercises",
+      "manoeuvers"
+    ],
+    "prefix": "計画をスムーズに",
+    "targetSurface": "演習",
+    "suffix": "ために、事前の準備を行いました。",
+    "sentenceJa": "計画をスムーズに演習ために、事前の準備を行いました。",
+    "sentenceEn": "We made preparations in advance to ensure the plan went smoothly."
+  },
+  {
+    "id": "trap-n1-62e5ed991c",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "演出",
+    "reading": "えんしゅつ",
+    "romaji": "enshutsu",
+    "meanings": [
+      "production (e.g. play)",
+      "direction"
+    ],
+    "prefix": "その劇は彼によって",
+    "targetSurface": "演出",
+    "suffix": "された。",
+    "sentenceJa": "その劇は彼によって演出された。",
+    "sentenceEn": "The play was produced by him."
+  },
+  {
+    "id": "trap-n1-263aeb9d53",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "応急",
+    "reading": "おうきゅう",
+    "romaji": "oukyuu",
+    "meanings": [
+      "emergency"
+    ],
+    "prefix": "これらの建物は",
+    "targetSurface": "応急",
+    "suffix": "の修理が必要です。",
+    "sentenceJa": "これらの建物は応急の修理が必要です。",
+    "sentenceEn": "These buildings need temporary repairs."
+  },
+  {
+    "id": "trap-n1-e3025feafa",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "臆病",
+    "reading": "おくびょう",
+    "romaji": "okubyou",
+    "meanings": [
+      "cowardice",
+      "timidity"
+    ],
+    "prefix": "彼がああ",
+    "targetSurface": "臆病",
+    "suffix": "だとは思わなかった。",
+    "sentenceJa": "彼がああ臆病だとは思わなかった。",
+    "sentenceEn": "I did not think he was so timid."
+  },
+  {
+    "id": "trap-n1-f0375aa40d",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "同い年",
+    "reading": "おないどし",
+    "romaji": "onaidoshi",
+    "meanings": [
+      "of the same age"
+    ],
+    "prefix": "君と僕とは",
+    "targetSurface": "同い年",
+    "suffix": "だ。",
+    "sentenceJa": "君と僕とは同い年だ。",
+    "sentenceEn": "You and I are the same age."
+  },
+  {
+    "id": "trap-n1-64ad3d3360",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "折り返す",
+    "reading": "おりかえす",
+    "romaji": "orikaesu",
+    "meanings": [
+      "to turn up",
+      "to fold back"
+    ],
+    "prefix": "大切な場面でしっかり",
+    "targetSurface": "折り返す",
+    "suffix": "ことが求められます。",
+    "sentenceJa": "大切な場面でしっかり折り返すことが求められます。",
+    "sentenceEn": "You’ll need to be able to respond effectively in important situations."
+  },
+  {
+    "id": "trap-n1-40f53466d6",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "階級",
+    "reading": "かいきゅう",
+    "romaji": "kaikyuu",
+    "meanings": [
+      "class",
+      "rank",
+      "grade"
+    ],
+    "prefix": "彼は２年前に、大佐の",
+    "targetSurface": "階級",
+    "suffix": "に昇進した。",
+    "sentenceJa": "彼は２年前に、大佐の階級に昇進した。",
+    "sentenceEn": "He was raised to the rank of colonel two years ago."
+  },
+  {
+    "id": "trap-n1-0abb370e7c",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "海峡",
+    "reading": "かいきょう",
+    "romaji": "kaikyou",
+    "meanings": [
+      "channel"
+    ],
+    "prefix": "その",
+    "targetSurface": "海峡",
+    "suffix": "に長い橋を建設中です。",
+    "sentenceJa": "その海峡に長い橋を建設中です。",
+    "sentenceEn": "They are building a long bridge across the channel."
+  }
+] as unknown as readonly PhoneticTrapVocabItem[];
+
+export const DEFAULT_KANJI_META_MAP: Readonly<Record<string, CompactKanjiMeta>> = {"一":{"c":"一","jlpt":5,"strokes":1,"on":["イチ","イツ"],"kun":["ひと-","ひと.つ"],"label":"one","radical":"一"},"右":{"c":"右","jlpt":5,"strokes":5,"on":["ウ","ユウ"],"kun":["みぎ"],"label":"right","radical":"一"},"雨":{"c":"雨","jlpt":5,"strokes":8,"on":["ウ"],"kun":["-さめ","あま-","あめ"],"label":"rain","radical":"雨"},"円":{"c":"円","jlpt":5,"strokes":4,"on":["エン"],"kun":["まど","まど.か","まる","まる.い","まろ.やか"],"label":"circle, round, yen","radical":"一"},"下":{"c":"下","jlpt":5,"strokes":3,"on":["カ","ゲ"],"kun":["-くだ.す","お.りる","お.ろす","くだ.さる","くだ.す","くだ.り","くだ.る","さ.がる","さ.げる","した","しも","もと"],"label":"below, descend, down","radical":"一"},"何":{"c":"何","jlpt":5,"strokes":7,"on":["カ"],"kun":["なに","なに-","なん","なん-"],"label":"what","radical":"一"},"火":{"c":"火","jlpt":5,"strokes":4,"on":["カ"],"kun":["-び","ひ","ほ-"],"label":"fire","radical":"火"},"外":{"c":"外","jlpt":5,"strokes":5,"on":["ガイ","ゲ"],"kun":["そと","と-","はず.す","はず.れる","ほか"],"label":"outside","radical":"卜"},"学":{"c":"学","jlpt":5,"strokes":8,"on":["ガク"],"kun":["まな.ぶ"],"label":"study, learning, science","radical":"冖"},"間":{"c":"間","jlpt":5,"strokes":12,"on":["カン","ケン"],"kun":["あい","あいだ","ま"],"label":"interval, space","radical":"日"},"気":{"c":"気","jlpt":5,"strokes":6,"on":["キ","ケ"],"kun":["き"],"label":"spirit, air, atmosphere","radical":"丶"},"休":{"c":"休","jlpt":5,"strokes":6,"on":["キュウ"],"kun":["やす.まる","やす.む","やす.める"],"label":"rest, day off, retire","radical":"木"},"金":{"c":"金","jlpt":5,"strokes":8,"on":["キン","コン","ゴン"],"kun":["-がね","かな-","かね"],"label":"gold","radical":"ハ"},"九":{"c":"九","jlpt":5,"strokes":2,"on":["キュウ","ク"],"kun":["ここの","ここの.つ"],"label":"nine","radical":"九"},"月":{"c":"月","jlpt":5,"strokes":4,"on":["ガツ","ゲツ"],"kun":["つき"],"label":"month, moon","radical":"月"},"見":{"c":"見","jlpt":5,"strokes":7,"on":["ケン"],"kun":["み.える","み.せる","み.る"],"label":"see, chances, hopes","radical":"儿"},"五":{"c":"五","jlpt":5,"strokes":4,"on":["ゴ"],"kun":["いつ","いつ.つ"],"label":"five","radical":"五"},"午":{"c":"午","jlpt":5,"strokes":4,"on":["ゴ"],"kun":["うま"],"label":"noon, sign of the horse","radical":"ノ"},"後":{"c":"後","jlpt":5,"strokes":9,"on":["コウ","ゴ"],"kun":["あと","うし.ろ","うしろ","おく.れる","のち"],"label":"behind, back, later","radical":"夂"},"語":{"c":"語","jlpt":5,"strokes":14,"on":["ゴ"],"kun":["かた.らう","かた.る"],"label":"word, language, speech","radical":"口"},"校":{"c":"校","jlpt":5,"strokes":10,"on":["キョウ","コウ"],"kun":[],"label":"exam, correction, printing","radical":"木"},"行":{"c":"行","jlpt":5,"strokes":6,"on":["アン","ギョウ","コウ"],"kun":["-い.き","-いき","-ゆ.き","-ゆき","い.く","おこ.なう","おこな.う","ゆ.く"],"label":"going, act, bank","radical":"彳"},"高":{"c":"高","jlpt":5,"strokes":10,"on":["コウ"],"kun":["-だか","たか","たか.い","たか.まる","たか.める"],"label":"tall, expensive, high","radical":"冂"},"国":{"c":"国","jlpt":5,"strokes":8,"on":["コク"],"kun":["くに"],"label":"country","radical":"丶"},"今":{"c":"今","jlpt":5,"strokes":4,"on":["キン","コン"],"kun":["いま"],"label":"now","radical":"一"},"左":{"c":"左","jlpt":5,"strokes":5,"on":["サ","シャ"],"kun":["ひだり"],"label":"left","radical":"一"},"三":{"c":"三","jlpt":5,"strokes":3,"on":["サン","ゾウ"],"kun":["み","み.つ","みっ.つ"],"label":"three","radical":"一"},"山":{"c":"山","jlpt":5,"strokes":3,"on":["サン","セン"],"kun":["やま"],"label":"mountain","radical":"山"},"四":{"c":"四","jlpt":5,"strokes":5,"on":["シ"],"kun":["よ","よ.つ","よっ.つ","よん"],"label":"four","radical":"儿"},"子":{"c":"子","jlpt":5,"strokes":3,"on":["シ","ス","ツ"],"kun":["-こ","こ","ね"],"label":"child, sign of the rat","radical":"子"},"時":{"c":"時","jlpt":5,"strokes":10,"on":["ジ"],"kun":["-どき","とき"],"label":"time, hour","radical":"土"},"七":{"c":"七","jlpt":5,"strokes":2,"on":["シチ"],"kun":["なな","なな.つ","なの"],"label":"seven","radical":"ノ"},"車":{"c":"車","jlpt":5,"strokes":7,"on":["シャ"],"kun":["くるま"],"label":"car","radical":"車"},"十":{"c":"十","jlpt":5,"strokes":2,"on":["ジッ","ジュウ","ジュッ"],"kun":["そ","と","とお"],"label":"ten","radical":"十"},"出":{"c":"出","jlpt":5,"strokes":5,"on":["シュツ","スイ"],"kun":["-だ.す","-で","い.だす","い.でる","だ.す","で.る"],"label":"exit, come out, go out","radical":"｜"},"書":{"c":"書","jlpt":5,"strokes":10,"on":["ショ"],"kun":["-が.き","-がき","か.く"],"label":"write","radical":"日"},"女":{"c":"女","jlpt":5,"strokes":3,"on":["ジョ","ニョ","ニョウ"],"kun":["おんな","め"],"label":"woman, female","radical":"女"},"小":{"c":"小","jlpt":5,"strokes":3,"on":["ショウ"],"kun":["お-","こ-","さ-","ちい.さい"],"label":"little, small","radical":"小"},"上":{"c":"上","jlpt":5,"strokes":3,"on":["シャン","ショウ","ジョウ"],"kun":["-あ.がり","-あ.がる","-あ.げる","-うえ","あ.がり","あ.がる","あ.げる","うえ","うわ-","かみ","たてまつ.る","のぼ.す","のぼ.せる","のぼ.り","のぼ.る"],"label":"above, up","radical":"一"},"食":{"c":"食","jlpt":5,"strokes":9,"on":["ショク","ジキ"],"kun":["く.う","く.らう","た.べる","は.む"],"label":"eat, food","radical":"食"},"人":{"c":"人","jlpt":5,"strokes":2,"on":["ジン","ニン"],"kun":["-と","-り","ひと"],"label":"person","radical":"人"},"水":{"c":"水","jlpt":5,"strokes":4,"on":["スイ"],"kun":["みず","みず-"],"label":"water","radical":"水"},"生":{"c":"生","jlpt":5,"strokes":5,"on":["ショウ","セイ"],"kun":["-う","い.かす","い.きる","い.ける","う.まれ","う.まれる","う.む","うま.れる","うまれ","お.う","き","な.す","な.る","なま","なま-","は.える","は.やす","む.す"],"label":"life, birth, genuine","radical":"生"},"西":{"c":"西","jlpt":5,"strokes":6,"on":["サイ","ス","セイ"],"kun":["にし"],"label":"west, Spain","radical":"西"},"先":{"c":"先","jlpt":5,"strokes":6,"on":["セン"],"kun":["さき","ま.ず"],"label":"before, ahead, future","radical":"ノ"},"千":{"c":"千","jlpt":5,"strokes":3,"on":["セン"],"kun":["ち"],"label":"thousand","radical":"ノ"},"川":{"c":"川","jlpt":5,"strokes":3,"on":["セン"],"kun":["かわ"],"label":"stream, river","radical":"川"},"前":{"c":"前","jlpt":5,"strokes":9,"on":["ゼン"],"kun":["-まえ","まえ"],"label":"in front, before","radical":"一"},"大":{"c":"大","jlpt":5,"strokes":3,"on":["タイ","ダイ"],"kun":["-おお.いに","おお-","おお.きい"],"label":"large, big","radical":"大"},"男":{"c":"男","jlpt":5,"strokes":7,"on":["ダン","ナン"],"kun":["お","おとこ"],"label":"male","radical":"力"},"中":{"c":"中","jlpt":5,"strokes":4,"on":["チュウ"],"kun":["あた.る","うち","なか"],"label":"in, center, inside","radical":"｜"},"長":{"c":"長","jlpt":5,"strokes":8,"on":["チョウ"],"kun":["おさ","なが.い"],"label":"long, leader, senior","radical":"長"},"天":{"c":"天","jlpt":5,"strokes":4,"on":["テン"],"kun":["あま-","あまつ","あめ"],"label":"heavens, imperial, sky","radical":"一"},"電":{"c":"電","jlpt":5,"strokes":13,"on":["デン"],"kun":[],"label":"electricity","radical":"乙"},"土":{"c":"土","jlpt":5,"strokes":3,"on":["ト","ド"],"kun":["つち"],"label":"soil, Turkey, earth","radical":"土"},"東":{"c":"東","jlpt":5,"strokes":8,"on":["トウ"],"kun":["ひがし"],"label":"east","radical":"一"},"読":{"c":"読","jlpt":5,"strokes":14,"on":["トウ","トク","ドク"],"kun":["-よ.み","よ.む"],"label":"read","radical":"儿"},"南":{"c":"南","jlpt":5,"strokes":9,"on":["ナ","ナン"],"kun":["みなみ"],"label":"south","radical":"冂"},"二":{"c":"二","jlpt":5,"strokes":2,"on":["ジ","ニ"],"kun":["ふた","ふた.つ","ふたたび"],"label":"two","radical":"二"},"日":{"c":"日","jlpt":5,"strokes":4,"on":["ジツ","ニチ"],"kun":["-か","-び","ひ"],"label":"day, Japan, sun","radical":"日"},"入":{"c":"入","jlpt":5,"strokes":2,"on":["ジュ","ニュウ"],"kun":["-い.り","-い.る","-い.れ","い.る","い.れる","はい.る"],"label":"enter, insert","radical":"入"},"年":{"c":"年","jlpt":5,"strokes":6,"on":["ネン"],"kun":["とし"],"label":"year","radical":"一"},"白":{"c":"白","jlpt":5,"strokes":5,"on":["ハク","ビャク"],"kun":["しら-","しろ","しろ.い"],"label":"white","radical":"白"},"八":{"c":"八","jlpt":5,"strokes":2,"on":["ハチ","ハツ"],"kun":["や","や.つ","やっ.つ","よう"],"label":"eight","radical":"ハ"},"半":{"c":"半","jlpt":5,"strokes":5,"on":["ハン"],"kun":["なか.ば"],"label":"half, middle, odd number","radical":"｜"},"百":{"c":"百","jlpt":5,"strokes":6,"on":["ヒャク","ビャク"],"kun":["もも"],"label":"hundred","radical":"一"},"父":{"c":"父","jlpt":5,"strokes":4,"on":["フ"],"kun":["ちち"],"label":"father","radical":"父"},"聞":{"c":"聞","jlpt":5,"strokes":14,"on":["ブン","モン"],"kun":["き.く","き.こえる"],"label":"hear, ask, listen","radical":"耳"},"母":{"c":"母","jlpt":5,"strokes":5,"on":["ボ"],"kun":["はは","も"],"label":"mother","radical":"毋"},"北":{"c":"北","jlpt":5,"strokes":5,"on":["ホク"],"kun":["きた"],"label":"north","radical":"匕"},"本":{"c":"本","jlpt":5,"strokes":5,"on":["ホン"],"kun":["もと"],"label":"book, main, origin","radical":"一"},"毎":{"c":"毎","jlpt":5,"strokes":6,"on":["マイ"],"kun":["-ごと.に","ごと"],"label":"every","radical":"毋"},"万":{"c":"万","jlpt":5,"strokes":3,"on":["バン","マン"],"kun":["よろず"],"label":"ten thousand","radical":"一"},"名":{"c":"名","jlpt":5,"strokes":6,"on":["ミョウ","メイ"],"kun":["-な","な"],"label":"name, distinguished, noted","radical":"口"},"木":{"c":"木","jlpt":5,"strokes":4,"on":["ボク","モク"],"kun":["き","こ-"],"label":"tree, wood","radical":"木"},"友":{"c":"友","jlpt":5,"strokes":4,"on":["ユウ"],"kun":["とも"],"label":"friend","radical":"一"},"来":{"c":"来","jlpt":5,"strokes":7,"on":["タイ","ライ"],"kun":["き","き.たす","き.たる","きた.す","きた.る","く.る","こ"],"label":"come, become, cause","radical":"｜"},"六":{"c":"六","jlpt":5,"strokes":4,"on":["リク","ロク"],"kun":["む","む.つ","むい","むっ.つ"],"label":"six","radical":"ハ"},"話":{"c":"話","jlpt":5,"strokes":13,"on":["ワ"],"kun":["はな.す","はなし"],"label":"tale, talk","radical":"口"},"悪":{"c":"悪","jlpt":4,"strokes":11,"on":["アク","オ"],"kun":["-にく.い","あ.し","ああ","いずくに","いずくんぞ","にく.い","にく.む","わる-","わる.い"],"label":"bad, evil, false","radical":"一"},"安":{"c":"安","jlpt":4,"strokes":6,"on":["アン"],"kun":["やす","やす.い","やす.まる","やす.らか"],"label":"relax, cheap, contented","radical":"女"},"以":{"c":"以","jlpt":4,"strokes":5,"on":["イ"],"kun":["もっ.て"],"label":"by means of, because, compared with","radical":"｜"},"意":{"c":"意","jlpt":4,"strokes":13,"on":["イ"],"kun":[],"label":"idea, care, desire","radical":"心"},"医":{"c":"医","jlpt":4,"strokes":7,"on":["イ"],"kun":["い.する","い.やす","くすし"],"label":"doctor, medicine","radical":"匚"},"員":{"c":"員","jlpt":4,"strokes":10,"on":["イン"],"kun":[],"label":"employee, member, number","radical":"ハ"},"飲":{"c":"飲","jlpt":4,"strokes":12,"on":["イン","オン"],"kun":["-の.み","の.む"],"label":"drink, smoke, take","radical":"欠"},"院":{"c":"院","jlpt":4,"strokes":10,"on":["イン"],"kun":[],"label":"institution, mansion, school","radical":"二"},"運":{"c":"運","jlpt":4,"strokes":12,"on":["ウン"],"kun":["はこ.ぶ"],"label":"carry, advance, destiny","radical":"冖"},"映":{"c":"映","jlpt":4,"strokes":9,"on":["エイ"],"kun":["-ば.え","うつ.す","うつ.る","は.える"],"label":"reflect, projection, reflection","radical":"ノ"},"英":{"c":"英","jlpt":4,"strokes":8,"on":["エイ"],"kun":["はなぶさ"],"label":"England, English, calyx","radical":"ノ"},"駅":{"c":"駅","jlpt":4,"strokes":14,"on":["エキ"],"kun":[],"label":"station","radical":"丶"},"屋":{"c":"屋","jlpt":4,"strokes":9,"on":["オク"],"kun":["や"],"label":"roof, dealer, house","radical":"厶"},"音":{"c":"音","jlpt":4,"strokes":9,"on":["-ノン","イン","オン"],"kun":["おと","ね"],"label":"sound, noise","radical":"日"},"夏":{"c":"夏","jlpt":4,"strokes":10,"on":["カ","ガ","ゲ"],"kun":["なつ"],"label":"summer","radical":"一"},"家":{"c":"家","jlpt":4,"strokes":10,"on":["カ","ケ"],"kun":["いえ","うち","や"],"label":"house, expert, family","radical":"豕"},"歌":{"c":"歌","jlpt":4,"strokes":14,"on":["カ"],"kun":["うた","うた.う"],"label":"song, sing","radical":"一"},"花":{"c":"花","jlpt":4,"strokes":7,"on":["カ","ケ"],"kun":["はな"],"label":"flower","radical":"匕"},"画":{"c":"画","jlpt":4,"strokes":8,"on":["エ","カイ","カク","ガ"],"kun":["えが.く","かぎ.る","かく.する","はか.る","はかりごと"],"label":"brush-stroke, picture","radical":"一"},"会":{"c":"会","jlpt":4,"strokes":6,"on":["エ","カイ"],"kun":["あ.う","あ.わせる","あつ.まる"],"label":"meeting, association, interview","radical":"二"},"海":{"c":"海","jlpt":4,"strokes":9,"on":["カイ"],"kun":["うみ"],"label":"sea, ocean","radical":"毋"},"界":{"c":"界","jlpt":4,"strokes":9,"on":["カイ"],"kun":[],"label":"world, boundary","radical":"儿"},"開":{"c":"開","jlpt":4,"strokes":12,"on":["カイ"],"kun":["-びら.き","あ.く","あ.ける","ひら.き","ひら.く","ひら.ける"],"label":"open, unfold, unseal","radical":"一"},"楽":{"c":"楽","jlpt":4,"strokes":13,"on":["ガク","ゴウ","ラク"],"kun":["この.む","たの.しい","たの.しむ"],"label":"music, comfort, ease","radical":"冫"},"漢":{"c":"漢","jlpt":4,"strokes":13,"on":["カン"],"kun":[],"label":"China","radical":"一"},"館":{"c":"館","jlpt":4,"strokes":16,"on":["カン"],"kun":["たて","やかた"],"label":"building, large building, mansion","radical":"｜"},"帰":{"c":"帰","jlpt":4,"strokes":10,"on":["キ"],"kun":["おく.る","かえ.す","かえ.る","とつ.ぐ"],"label":"homecoming, arrive at, lead to","radical":"冖"},"起":{"c":"起","jlpt":4,"strokes":10,"on":["キ"],"kun":["お.きる","お.こす","お.こる","おこ.す","た.つ"],"label":"rouse, get up, wake up","radical":"土"},"急":{"c":"急","jlpt":4,"strokes":9,"on":["キュウ"],"kun":["いそ.ぎ","いそ.ぐ","せ.く"],"label":"hurry, emergency, steep","radical":"勹"},"究":{"c":"究","jlpt":4,"strokes":7,"on":["キュウ","ク"],"kun":["きわ.める"],"label":"research, study","radical":"儿"},"牛":{"c":"牛","jlpt":4,"strokes":4,"on":["ギュウ"],"kun":["うし"],"label":"cow","radical":"牛"},"去":{"c":"去","jlpt":4,"strokes":5,"on":["キョ","コ"],"kun":["-さ.る","さ.る"],"label":"gone, divorce, elapse","radical":"厶"},"魚":{"c":"魚","jlpt":4,"strokes":11,"on":["ギョ"],"kun":["-ざかな","うお","さかな"],"label":"fish","radical":"田"},"京":{"c":"京","jlpt":4,"strokes":8,"on":["キョウ","キン","ケイ"],"kun":["みやこ"],"label":"capital","radical":"口"},"強":{"c":"強","jlpt":4,"strokes":11,"on":["キョウ","ゴウ"],"kun":["こわ.い","し.いる","つよ.い","つよ.まる","つよ.める"],"label":"strong","radical":"厶"},"教":{"c":"教","jlpt":4,"strokes":11,"on":["キョウ"],"kun":["おし.える","おそ.わる"],"label":"teach, doctrine, faith","radical":"子"},"業":{"c":"業","jlpt":4,"strokes":13,"on":["ギョウ","ゴウ"],"kun":["わざ"],"label":"arts, business, performance","radical":"一"},"近":{"c":"近","jlpt":4,"strokes":7,"on":["キン","コン"],"kun":["ちか.い"],"label":"near, akin, early","radical":"斤"},"銀":{"c":"銀","jlpt":4,"strokes":14,"on":["ギン"],"kun":["しろがね"],"label":"silver","radical":"艮"},"空":{"c":"空","jlpt":4,"strokes":8,"on":["クウ"],"kun":["あ.き","あ.く","あ.ける","から","す.かす","す.く","そら","むな.しい"],"label":"empty, sky, vacant","radical":"儿"},"兄":{"c":"兄","jlpt":4,"strokes":5,"on":["キョウ","ケイ"],"kun":["あに"],"label":"elder brother, big brother","radical":"儿"},"計":{"c":"計","jlpt":4,"strokes":9,"on":["ケイ"],"kun":["はか.らう","はか.る"],"label":"plot, measure, plan","radical":"十"},"建":{"c":"建","jlpt":4,"strokes":9,"on":["ケン","コン"],"kun":["-だ.て","た.つ","た.て","た.てる"],"label":"build","radical":"廴"},"犬":{"c":"犬","jlpt":4,"strokes":4,"on":["ケン"],"kun":["いぬ","いぬ-"],"label":"dog","radical":"丶"},"研":{"c":"研","jlpt":4,"strokes":9,"on":["ケン"],"kun":["と.ぐ"],"label":"polish, sharpen, study of","radical":"一"},"験":{"c":"験","jlpt":4,"strokes":18,"on":["ケン","ゲン"],"kun":["あかし","しるし","ため.す","ためし"],"label":"verification, effect, testing","radical":"人"},"元":{"c":"元","jlpt":4,"strokes":4,"on":["ガン","ゲン"],"kun":["もと"],"label":"beginning, former time, origin","radical":"二"},"言":{"c":"言","jlpt":4,"strokes":7,"on":["ゲン","ゴン"],"kun":["い.う","こと"],"label":"say, word","radical":"言"},"古":{"c":"古","jlpt":4,"strokes":5,"on":["コ"],"kun":["-ふる.す","ふる-","ふる.い"],"label":"old","radical":"十"},"公":{"c":"公","jlpt":4,"strokes":4,"on":["ク","コウ"],"kun":["おおやけ"],"label":"public, governmental, official","radical":"ハ"},"口":{"c":"口","jlpt":4,"strokes":3,"on":["ク","コウ"],"kun":["くち"],"label":"mouth","radical":"口"},"工":{"c":"工","jlpt":4,"strokes":3,"on":["ク","グ","コウ"],"kun":[],"label":"craft, construction","radical":"工"},"広":{"c":"広","jlpt":4,"strokes":5,"on":["コウ"],"kun":["ひろ.い","ひろ.がる","ひろ.げる","ひろ.まる","ひろ.める"],"label":"wide, broad, spacious","radical":"厶"},"考":{"c":"考","jlpt":4,"strokes":6,"on":["コウ"],"kun":["かんが.え","かんが.える"],"label":"consider, think over","radical":"勹"},"黒":{"c":"黒","jlpt":4,"strokes":11,"on":["コク"],"kun":["くろ","くろ.い","くろ.ずむ"],"label":"black","radical":"里"},"作":{"c":"作","jlpt":4,"strokes":7,"on":["サ","サク"],"kun":["-づく.り","つく.り","つく.る"],"label":"make, build, prepare","radical":"一"},"仕":{"c":"仕","jlpt":4,"strokes":5,"on":["シ","ジ"],"kun":["つか.える"],"label":"attend, doing, official","radical":"士"},"使":{"c":"使","jlpt":4,"strokes":8,"on":["シ"],"kun":["-つか.い","-づか.い","つか.い","つか.う"],"label":"use, ambassador, cause","radical":"一"},"始":{"c":"始","jlpt":4,"strokes":8,"on":["シ"],"kun":["-はじ.める","はじ.まる","はじ.める"],"label":"commence, begin","radical":"厶"},"姉":{"c":"姉","jlpt":4,"strokes":8,"on":["シ"],"kun":["あね","はは"],"label":"elder sister","radical":"女"},"思":{"c":"思","jlpt":4,"strokes":9,"on":["シ"],"kun":["おぼ.す","おも.う","おもえら.く"],"label":"think","radical":"心"},"止":{"c":"止","jlpt":4,"strokes":4,"on":["シ"],"kun":["-さ.し","-さ.す","-と.める","-ど.まり","-ど.め","-や.む","と.まる","と.める","とど.まる","とど.め","とど.める","や.む","や.める","よ.す"],"label":"stop, halt","radical":"止"},"死":{"c":"死","jlpt":4,"strokes":6,"on":["シ"],"kun":["し.に-","し.ぬ"],"label":"death, die","radical":"一"},"私":{"c":"私","jlpt":4,"strokes":7,"on":["シ"],"kun":["わたくし","わたし"],"label":"private, I, me","radical":"厶"},"紙":{"c":"紙","jlpt":4,"strokes":10,"on":["シ"],"kun":["かみ"],"label":"paper","radical":"小"},"試":{"c":"試","jlpt":4,"strokes":13,"on":["シ"],"kun":["こころ.みる","ため.す"],"label":"test, attempt, experiment","radical":"工"},"事":{"c":"事","jlpt":4,"strokes":8,"on":["ジ","ズ"],"kun":["こと","つか.う","つか.える"],"label":"matter, business, fact","radical":"一"},"字":{"c":"字","jlpt":4,"strokes":6,"on":["ジ"],"kun":["-な","あざ","あざな"],"label":"character, letter, section of village","radical":"子"},"持":{"c":"持","jlpt":4,"strokes":9,"on":["ジ"],"kun":["-も.ち","も.つ","も.てる"],"label":"hold, have","radical":"土"},"自":{"c":"自","jlpt":4,"strokes":6,"on":["シ","ジ"],"kun":["おの.ずから","おの.ずと","みずか.ら"],"label":"oneself","radical":"目"},"室":{"c":"室","jlpt":4,"strokes":9,"on":["シツ"],"kun":["むろ"],"label":"room, apartment, cellar","radical":"厶"},"質":{"c":"質","jlpt":4,"strokes":15,"on":["シチ","シツ","チ"],"kun":["ただ.す","たち","もと","わりふ"],"label":"substance, matter, quality","radical":"ハ"},"写":{"c":"写","jlpt":4,"strokes":5,"on":["シャ","ジャ"],"kun":["うつ-","うつ.し","うつ.す","うつ.る"],"label":"copy, be photographed, describe","radical":"一"},"社":{"c":"社","jlpt":4,"strokes":7,"on":["シャ"],"kun":["やしろ"],"label":"company, association, firm","radical":"土"},"者":{"c":"者","jlpt":4,"strokes":8,"on":["シャ"],"kun":["もの"],"label":"someone, person","radical":"日"},"借":{"c":"借","jlpt":4,"strokes":10,"on":["シャク"],"kun":["か.りる"],"label":"borrow, rent","radical":"二"},"主":{"c":"主","jlpt":4,"strokes":5,"on":["シュ","シュウ","ス"],"kun":["あるじ","おも","ぬし"],"label":"lord, chief, main thing","radical":"丶"},"手":{"c":"手","jlpt":4,"strokes":4,"on":["シュ","ズ"],"kun":["-て","た-","て","て-"],"label":"hand","radical":"手"},"秋":{"c":"秋","jlpt":4,"strokes":9,"on":["シュウ"],"kun":["あき","とき"],"label":"autumn","radical":"火"},"終":{"c":"終","jlpt":4,"strokes":11,"on":["シュウ"],"kun":["-お.わる","お.える","お.わる","おわ.る","つい","つい.に"],"label":"end, finish","radical":"夂"},"習":{"c":"習","jlpt":4,"strokes":11,"on":["シュウ","ジュ"],"kun":["なら.い","なら.う"],"label":"learn","radical":"冫"},"週":{"c":"週","jlpt":4,"strokes":11,"on":["シュウ"],"kun":[],"label":"week","radical":"冂"},"集":{"c":"集","jlpt":4,"strokes":12,"on":["シュウ"],"kun":["あつ.まる","あつ.める","つど.う"],"label":"gather, congregate, flock","radical":"木"},"住":{"c":"住","jlpt":4,"strokes":7,"on":["ジュウ","チュウ","ヂュウ"],"kun":["-ず.まい","す.まう","す.む"],"label":"dwell, inhabit, live","radical":"丶"},"重":{"c":"重","jlpt":4,"strokes":9,"on":["ジュウ","チョウ"],"kun":["え","おも","おも.い","おも.なう","おも.り","かさ.なる","かさ.ねる"],"label":"heavy, esteem, heap up","radical":"一"},"春":{"c":"春","jlpt":4,"strokes":9,"on":["シュン"],"kun":["はる"],"label":"springtime, spring (season)","radical":"一"},"少":{"c":"少","jlpt":4,"strokes":4,"on":["ショウ"],"kun":["すく.ない","すこ.し"],"label":"few, little","radical":"ノ"},"場":{"c":"場","jlpt":4,"strokes":12,"on":["ジョウ","チョウ"],"kun":["ば"],"label":"location, place","radical":"一"},"色":{"c":"色","jlpt":4,"strokes":6,"on":["シキ","ショク"],"kun":["いろ"],"label":"color","radical":"勹"},"心":{"c":"心","jlpt":4,"strokes":4,"on":["シン"],"kun":["-ごころ","こころ"],"label":"heart, mind, spirit","radical":"心"},"新":{"c":"新","jlpt":4,"strokes":13,"on":["シン"],"kun":["あたら.しい","あら-","あら.た","にい-"],"label":"new","radical":"斤"},"真":{"c":"真","jlpt":4,"strokes":10,"on":["シン"],"kun":["ま","ま-","まこと"],"label":"true, Buddhist sect, reality","radical":"一"},"親":{"c":"親","jlpt":4,"strokes":16,"on":["シン"],"kun":["おや","おや-","した.しい","した.しむ"],"label":"parent, dealer (cards), familiarity","radical":"木"},"図":{"c":"図","jlpt":4,"strokes":7,"on":["ズ","ト"],"kun":["え","はか.る"],"label":"map, audacious, drawing","radical":"囗"},"世":{"c":"世","jlpt":4,"strokes":5,"on":["セ","セイ","ソウ"],"kun":["よ"],"label":"generation, public, society","radical":"一"},"正":{"c":"正","jlpt":4,"strokes":5,"on":["ショウ","セイ"],"kun":["ただ.しい","ただ.す","まさ","まさ.に"],"label":"correct, justice, righteous","radical":"一"},"青":{"c":"青","jlpt":4,"strokes":8,"on":["ショウ","セイ"],"kun":["あお","あお-","あお.い"],"label":"blue, green","radical":"二"},"赤":{"c":"赤","jlpt":4,"strokes":7,"on":["シャク","セキ"],"kun":["あか","あか-","あか.い","あか.らむ","あか.らめる"],"label":"red","radical":"土"},"切":{"c":"切","jlpt":4,"strokes":4,"on":["サイ","セツ"],"kun":["-き.り","-き.る","-き.れ","-き.れる","-ぎ.り","-ぎ.れ","き.り","き.る","き.れ","き.れる"],"label":"cut, be sharp, cutoff","radical":"刀"},"早":{"c":"早","jlpt":4,"strokes":6,"on":["サッ","ソウ"],"kun":["さ-","はや","はや-","はや.い","はや.まる","はや.める"],"label":"early, fast","radical":"十"},"走":{"c":"走","jlpt":4,"strokes":7,"on":["ソウ"],"kun":["はし.る"],"label":"run","radical":"土"},"送":{"c":"送","jlpt":4,"strokes":9,"on":["ソウ"],"kun":["おく.る"],"label":"escort, send","radical":"一"},"足":{"c":"足","jlpt":4,"strokes":7,"on":["ソク"],"kun":["あし","た.す","た.りる","た.る"],"label":"leg, be sufficient, foot","radical":"口"},"族":{"c":"族","jlpt":4,"strokes":11,"on":["ゾク"],"kun":[],"label":"tribe, family","radical":"方"},"多":{"c":"多","jlpt":4,"strokes":6,"on":["タ"],"kun":["おお.い","まさ.に","まさ.る"],"label":"many, frequent, much","radical":"夕"},"体":{"c":"体","jlpt":4,"strokes":7,"on":["タイ","テイ"],"kun":["かたち","からだ"],"label":"body, object, reality","radical":"一"},"待":{"c":"待","jlpt":4,"strokes":9,"on":["タイ"],"kun":["-ま.ち","ま.つ"],"label":"wait, depend on","radical":"土"},"貸":{"c":"貸","jlpt":4,"strokes":12,"on":["タイ"],"kun":["か.し-","か.す","かし-"],"label":"lend","radical":"ハ"},"代":{"c":"代","jlpt":4,"strokes":5,"on":["タイ","ダイ"],"kun":["-が.わり","-がわ.り","か.える","か.わり","か.わる","かわ.り","かわ.る","しろ","よ"],"label":"substitute, age, change","radical":"弋"},"台":{"c":"台","jlpt":4,"strokes":5,"on":["タイ","ダイ"],"kun":["うてな","つかさ","われ"],"label":"pedestal, a stand","radical":"厶"},"題":{"c":"題","jlpt":4,"strokes":18,"on":["ダイ"],"kun":[],"label":"topic, subject","radical":"ハ"},"知":{"c":"知","jlpt":4,"strokes":8,"on":["チ"],"kun":["し.らせる","し.る"],"label":"know, wisdom","radical":"口"},"地":{"c":"地","jlpt":4,"strokes":6,"on":["ジ","チ"],"kun":[],"label":"ground, earth","radical":"土"},"茶":{"c":"茶","jlpt":4,"strokes":9,"on":["サ","チャ"],"kun":[],"label":"tea","radical":"木"},"着":{"c":"着","jlpt":4,"strokes":12,"on":["ジャク","チャク"],"kun":["き.せる","き.る","つ.く","つ.ける"],"label":"don, arrive, wear","radical":"ノ"},"昼":{"c":"昼","jlpt":4,"strokes":9,"on":["チュウ"],"kun":["ひる"],"label":"daytime, noon","radical":"一"},"注":{"c":"注","jlpt":4,"strokes":8,"on":["チュウ"],"kun":["さ.す","そそ.ぐ","つ.ぐ"],"label":"pour, annotate, comment","radical":"丶"},"朝":{"c":"朝","jlpt":4,"strokes":12,"on":["チョウ"],"kun":["あさ"],"label":"morning, (North) Korea, dynasty","radical":"十"},"町":{"c":"町","jlpt":4,"strokes":7,"on":["チョウ"],"kun":["まち"],"label":"village, block, street","radical":"一"},"鳥":{"c":"鳥","jlpt":4,"strokes":11,"on":["チョウ"],"kun":["とり"],"label":"bird, chicken","radical":"鳥"},"通":{"c":"通","jlpt":4,"strokes":10,"on":["ツ","ツウ"],"kun":["-とお.り","-どお.し","-どお.り","かよ.う","とお.し","とお.す","とお.り","とお.る"],"label":"traffic, avenue, commute","radical":"用"},"弟":{"c":"弟","jlpt":4,"strokes":7,"on":["ダイ","テイ","デ"],"kun":["おとうと"],"label":"younger brother","radical":"｜"},"店":{"c":"店","jlpt":4,"strokes":8,"on":["テン"],"kun":["たな","みせ"],"label":"store, shop","radical":"卜"},"転":{"c":"転","jlpt":4,"strokes":11,"on":["テン"],"kun":["うたた","うつ.る","くる.めく","ころ.がす","ころ.がる","ころ.げる","ころ.ぶ","まろ.ぶ"],"label":"revolve, change, turn around","radical":"二"},"田":{"c":"田","jlpt":4,"strokes":5,"on":["デン"],"kun":["た"],"label":"rice field, rice paddy","radical":"田"},"度":{"c":"度","jlpt":4,"strokes":9,"on":["タク","ト","ド"],"kun":["-た.い","たび"],"label":"degrees, attitude, consider","radical":"一"},"冬":{"c":"冬","jlpt":4,"strokes":5,"on":["トウ"],"kun":["ふゆ"],"label":"winter","radical":"丶"},"答":{"c":"答","jlpt":4,"strokes":12,"on":["トウ"],"kun":["こた.え","こた.える"],"label":"solution, answer","radical":"一"},"動":{"c":"動","jlpt":4,"strokes":11,"on":["ドウ"],"kun":["うご.かす","うご.く"],"label":"move, change, confusion","radical":"一"},"同":{"c":"同","jlpt":4,"strokes":6,"on":["ドウ"],"kun":["おな.じ"],"label":"same, agree, equal","radical":"一"},"堂":{"c":"堂","jlpt":4,"strokes":11,"on":["ドウ"],"kun":[],"label":"hall, public chamber","radical":"冖"},"道":{"c":"道","jlpt":4,"strokes":12,"on":["トウ","ドウ"],"kun":["いう","みち"],"label":"road-way, course, district","radical":"自"},"特":{"c":"特","jlpt":4,"strokes":10,"on":["トク"],"kun":[],"label":"special","radical":"土"},"肉":{"c":"肉","jlpt":4,"strokes":6,"on":["ニク"],"kun":["しし"],"label":"meat","radical":"人"},"買":{"c":"買","jlpt":4,"strokes":12,"on":["バイ"],"kun":["か.う"],"label":"buy","radical":"ハ"},"売":{"c":"売","jlpt":4,"strokes":7,"on":["バイ"],"kun":["う.る","う.れる"],"label":"sell","radical":"儿"},"発":{"c":"発","jlpt":4,"strokes":9,"on":["ハツ","ホツ"],"kun":["あば.く","おこ.る","た.つ","つか.わす","はな.つ"],"label":"discharge, departure, disclose","radical":"二"},"飯":{"c":"飯","jlpt":4,"strokes":12,"on":["ハン"],"kun":["めし"],"label":"meal, boiled rice","radical":"厂"},"病":{"c":"病","jlpt":4,"strokes":10,"on":["ビョウ","ヘイ"],"kun":["-や.み","や.む","やまい"],"label":"ill, sick","radical":"一"},"品":{"c":"品","jlpt":4,"strokes":9,"on":["ヒン","ホン"],"kun":["しな"],"label":"goods, article, dignity","radical":"口"},"不":{"c":"不","jlpt":4,"strokes":4,"on":["フ","ブ"],"kun":[],"label":"negative, bad, clumsy","radical":"一"},"風":{"c":"風","jlpt":4,"strokes":9,"on":["フ","フウ"],"kun":["かざ-","かぜ"],"label":"wind, air, manner","radical":"ノ"},"服":{"c":"服","jlpt":4,"strokes":8,"on":["フク"],"kun":[],"label":"clothing, admit, discharge","radical":"卩"},"物":{"c":"物","jlpt":4,"strokes":8,"on":["ブツ","モツ"],"kun":["もの","もの-"],"label":"thing, matter, object","radical":"ノ"},"文":{"c":"文","jlpt":4,"strokes":4,"on":["ブン","モン"],"kun":["あや","ふみ"],"label":"sentence, art, decoration","radical":"文"},"別":{"c":"別","jlpt":4,"strokes":7,"on":["ベツ"],"kun":["わ.ける","わか.れる"],"label":"separate, another, branch off","radical":"力"},"勉":{"c":"勉","jlpt":4,"strokes":10,"on":["ベン"],"kun":["つと.める"],"label":"exertion, diligent, encourage","radical":"儿"},"歩":{"c":"歩","jlpt":4,"strokes":8,"on":["フ","ブ","ホ"],"kun":["あゆ.む","ある.く"],"label":"walk","radical":"ノ"},"方":{"c":"方","jlpt":4,"strokes":4,"on":["ホウ"],"kun":["-かた","-がた","かた"],"label":"direction, alternative, person","radical":"方"},"妹":{"c":"妹","jlpt":4,"strokes":8,"on":["マイ"],"kun":["いもうと"],"label":"younger sister","radical":"｜"},"味":{"c":"味","jlpt":4,"strokes":8,"on":["ミ"],"kun":["あじ","あじ.わう"],"label":"flavor, taste","radical":"｜"},"明":{"c":"明","jlpt":4,"strokes":8,"on":["ミョウ","ミン","メイ"],"kun":["-あ.け","あ.かす","あ.かり","あ.く","あ.くる","あ.ける","あか.らむ","あか.るい","あか.るむ","あき.らか"],"label":"bright, light","radical":"日"},"目":{"c":"目","jlpt":4,"strokes":5,"on":["ボク","モク"],"kun":["-め","ま-","め"],"label":"eye, care, class","radical":"目"},"問":{"c":"問","jlpt":4,"strokes":11,"on":["モン"],"kun":["と.い","と.う","とん"],"label":"question, ask, problem","radical":"口"},"夜":{"c":"夜","jlpt":4,"strokes":8,"on":["ヤ"],"kun":["よ","よる"],"label":"night, evening","radical":"夕"},"野":{"c":"野","jlpt":4,"strokes":11,"on":["ショ","ヤ"],"kun":["の","の-"],"label":"plains, civilian life, field","radical":"亅"},"有":{"c":"有","jlpt":4,"strokes":6,"on":["ウ","ユウ"],"kun":["あ.る"],"label":"possess, approx, exist","radical":"一"},"夕":{"c":"夕","jlpt":4,"strokes":3,"on":["セキ"],"kun":["ゆう"],"label":"evening","radical":"夕"},"曜":{"c":"曜","jlpt":4,"strokes":18,"on":["ヨウ"],"kun":[],"label":"weekday","radical":"日"},"洋":{"c":"洋","jlpt":4,"strokes":9,"on":["ヨウ"],"kun":[],"label":"ocean, Western style, foreign","radical":"王"},"用":{"c":"用","jlpt":4,"strokes":5,"on":["ヨウ"],"kun":["もち.いる"],"label":"utilize, business, employ","radical":"用"},"理":{"c":"理","jlpt":4,"strokes":11,"on":["リ"],"kun":["ことわり"],"label":"logic, arrangement, justice","radical":"王"},"立":{"c":"立","jlpt":4,"strokes":5,"on":["リットル","リツ","リュウ"],"kun":["-た.つ","-た.て","-た.てる","-だ.て","-だ.てる","た.ち-","た.つ","た.て-","た.てる","たて-"],"label":"stand up, erect, rise","radical":"立"},"旅":{"c":"旅","jlpt":4,"strokes":10,"on":["リョ"],"kun":["たび"],"label":"trip, travel","radical":"ノ"},"料":{"c":"料","jlpt":4,"strokes":10,"on":["リョウ"],"kun":[],"label":"fee, materials","radical":"斗"},"力":{"c":"力","jlpt":4,"strokes":2,"on":["リイ","リキ","リョク"],"kun":["ちから"],"label":"power, bear up, exert","radical":"力"},"愛":{"c":"愛","jlpt":3,"strokes":13,"on":["アイ"],"kun":["いと.しい","お.しむ","かな.しい","まな","め.でる"],"label":"love, affection, favourite","radical":"冖"},"暗":{"c":"暗","jlpt":3,"strokes":13,"on":["アン"],"kun":["くら.い","くら.む","くれ.る"],"label":"darkness, be blinded, disappear","radical":"日"},"位":{"c":"位","jlpt":3,"strokes":7,"on":["イ"],"kun":["くらい","ぐらい"],"label":"rank, about, crown","radical":"立"},"偉":{"c":"偉","jlpt":3,"strokes":12,"on":["イ"],"kun":["えら.い"],"label":"admirable, conceited, excellent","radical":"口"},"易":{"c":"易","jlpt":3,"strokes":8,"on":["イ","エキ"],"kun":["やさ.しい","やす.い"],"label":"easy, divination, fortune-telling","radical":"ノ"},"違":{"c":"違","jlpt":3,"strokes":13,"on":["イ"],"kun":["-ちが.える","たが.う","たが.える","ちが.い","ちが.う","ちが.える"],"label":"difference, differ","radical":"口"},"育":{"c":"育","jlpt":3,"strokes":8,"on":["イク"],"kun":["そだ.ち","そだ.つ","そだ.てる","はぐく.む"],"label":"bring up, grow up, raise","radical":"厶"},"因":{"c":"因","jlpt":3,"strokes":6,"on":["イン"],"kun":["ちな.む","よ.る"],"label":"cause, be associated with, be limited to","radical":"囗"},"引":{"c":"引","jlpt":3,"strokes":4,"on":["イン"],"kun":["ひ.く","ひ.ける"],"label":"pull, admit, install","radical":"｜"},"泳":{"c":"泳","jlpt":3,"strokes":8,"on":["エイ"],"kun":["およ.ぐ"],"label":"swim","radical":"丶"},"越":{"c":"越","jlpt":3,"strokes":12,"on":["エツ","オツ"],"kun":["-こ.す","-ご.え","-ご.し","こ.える","こ.す"],"label":"surpass, Vietnam, cross over","radical":"土"},"園":{"c":"園","jlpt":3,"strokes":13,"on":["エン"],"kun":["その"],"label":"park, farm, garden","radical":"口"},"演":{"c":"演","jlpt":3,"strokes":14,"on":["エン"],"kun":[],"label":"performance, act, play","radical":"一"},"煙":{"c":"煙","jlpt":3,"strokes":13,"on":["エン"],"kun":["けむ.い","けむ.る","けむり"],"label":"smoke","radical":"土"},"遠":{"c":"遠","jlpt":3,"strokes":13,"on":["エン","オン"],"kun":["とお.い"],"label":"distant, far","radical":"口"},"押":{"c":"押","jlpt":3,"strokes":8,"on":["オウ"],"kun":["お.さえる","お.し-","お.す","お.っ-","おさ.える"],"label":"push, attach, check","radical":"｜"},"横":{"c":"横","jlpt":3,"strokes":15,"on":["オウ"],"kun":["よこ"],"label":"sideways, horizontal, perverse","radical":"｜"},"王":{"c":"王","jlpt":3,"strokes":4,"on":["-ノウ","オウ"],"kun":[],"label":"king, magnate, rule","radical":"王"},"化":{"c":"化","jlpt":3,"strokes":4,"on":["カ","ケ"],"kun":["け.する","ば.かす","ば.ける","ふ.ける"],"label":"change, delude, enchant","radical":"匕"},"加":{"c":"加","jlpt":3,"strokes":5,"on":["カ"],"kun":["くわ.える","くわ.わる"],"label":"add, Canada, addition","radical":"力"},"科":{"c":"科","jlpt":3,"strokes":9,"on":["カ"],"kun":[],"label":"department, course, section","radical":"斗"},"果":{"c":"果","jlpt":3,"strokes":8,"on":["カ"],"kun":["-は.たす","-は.てる","は.たす","は.て","は.てる","はた.す"],"label":"fruit, achieve, carry out","radical":"｜"},"過":{"c":"過","jlpt":3,"strokes":12,"on":["カ"],"kun":["あやま.ち","あやま.つ","す.ぎる","す.ごす","よ.ぎる","よぎ.る"],"label":"overdo, error, exceed","radical":"冂"},"解":{"c":"解","jlpt":3,"strokes":13,"on":["カイ","ゲ"],"kun":["さと.る","と.かす","と.く","と.ける","ほど.く","ほど.ける","わか.る"],"label":"unravel, absolve, answer","radical":"刀"},"回":{"c":"回","jlpt":3,"strokes":6,"on":["エ","カイ"],"kun":["-まわ.し","-まわ.す","-まわ.り","-まわ.る","か.える","まわ.し-","まわ.す","まわ.る","もとお.る"],"label":"game, revolve, round","radical":"口"},"皆":{"c":"皆","jlpt":3,"strokes":9,"on":["カイ"],"kun":["みな","みんな"],"label":"all, everything","radical":"比"},"絵":{"c":"絵","jlpt":3,"strokes":12,"on":["エ","カイ"],"kun":[],"label":"picture, drawing, painting","radical":"二"},"害":{"c":"害","jlpt":3,"strokes":10,"on":["ガイ"],"kun":[],"label":"harm, injury","radical":"二"},"格":{"c":"格","jlpt":3,"strokes":10,"on":["カク","キャク","コウ","ゴウ"],"kun":[],"label":"status, capacity, case (law, grammar)","radical":"口"},"確":{"c":"確","jlpt":3,"strokes":15,"on":["カク","コウ"],"kun":["たし.か","たし.かめる"],"label":"assurance, clear, confirm","radical":"口"},"覚":{"c":"覚","jlpt":3,"strokes":12,"on":["カク"],"kun":["おぼ.える","さ.ます","さ.める","さと.る"],"label":"memorize, awake, learn","radical":"冖"},"掛":{"c":"掛","jlpt":3,"strokes":11,"on":["カイ","ケイ"],"kun":["-か.かる","-か.け","-か.ける","-が.かり","-が.かる","-が.け","-がかり","か.かり","か.かる","か.け","か.ける","かかり"],"label":"hang, arrive at, depend","radical":"卜"},"割":{"c":"割","jlpt":3,"strokes":12,"on":["カツ"],"kun":["さ.く","わ.り","わ.る","わ.れる","わり"],"label":"proportion, comparatively, cut","radical":"二"},"活":{"c":"活","jlpt":3,"strokes":9,"on":["カツ"],"kun":["い.かす","い.きる","い.ける"],"label":"lively, being helped, living","radical":"ノ"},"寒":{"c":"寒","jlpt":3,"strokes":12,"on":["カン"],"kun":["さむ.い"],"label":"cold","radical":"一"},"完":{"c":"完","jlpt":3,"strokes":7,"on":["カン"],"kun":[],"label":"perfect, completion, end","radical":"二"},"官":{"c":"官","jlpt":3,"strokes":8,"on":["カン"],"kun":[],"label":"bureaucrat, organ, the government","radical":"｜"},"感":{"c":"感","jlpt":3,"strokes":13,"on":["カン"],"kun":[],"label":"emotion, feeling, sensation","radical":"ノ"},"慣":{"c":"慣","jlpt":3,"strokes":14,"on":["カン"],"kun":["な.らす","な.れる"],"label":"accustomed, become experienced","radical":"ハ"},"観":{"c":"観","jlpt":3,"strokes":18,"on":["カン"],"kun":["しめ.す","み.る"],"label":"outlook, appearance, condition","radical":"矢"},"関":{"c":"関","jlpt":3,"strokes":14,"on":["カン"],"kun":["-ぜき","かか.わる","からくり","かんぬき","せき"],"label":"connection, barrier, concerning","radical":"一"},"顔":{"c":"顔","jlpt":3,"strokes":18,"on":["ガン"],"kun":["かお"],"label":"face, expression","radical":"ハ"},"願":{"c":"願","jlpt":3,"strokes":19,"on":["ガン"],"kun":["-ねがい","ねが.う"],"label":"petition, hope, request","radical":"ハ"},"危":{"c":"危","jlpt":3,"strokes":6,"on":["キ"],"kun":["あぶ.ない","あや.うい","あや.ぶむ"],"label":"dangerous, fear, uneasy","radical":"勹"},"喜":{"c":"喜","jlpt":3,"strokes":12,"on":["キ"],"kun":["よろこ.ばす","よろこ.ぶ"],"label":"rejoice, take pleasure in","radical":"口"},"寄":{"c":"寄","jlpt":3,"strokes":11,"on":["キ"],"kun":["-よ.り","よ.せる","よ.る"],"label":"draw near, bring near, collect","radical":"一"},"幾":{"c":"幾","jlpt":3,"strokes":12,"on":["キ"],"kun":["いく-","いく.つ","いく.ら"],"label":"how many, how far, how long","radical":"丶"},"期":{"c":"期","jlpt":3,"strokes":12,"on":["キ","ゴ"],"kun":[],"label":"period, date, term","radical":"ハ"},"機":{"c":"機","jlpt":3,"strokes":16,"on":["キ"],"kun":["はた"],"label":"mechanism, airplane, efficacy","radical":"丶"},"規":{"c":"規","jlpt":3,"strokes":11,"on":["キ"],"kun":[],"label":"standard, measure","radical":"二"},"記":{"c":"記","jlpt":3,"strokes":10,"on":["キ"],"kun":["しる.す"],"label":"scribe, account, narrative","radical":"已"},"疑":{"c":"疑","jlpt":3,"strokes":14,"on":["ギ"],"kun":["うたが.う"],"label":"doubt, be suspicious, distrust","radical":"匕"},"議":{"c":"議","jlpt":3,"strokes":20,"on":["ギ"],"kun":[],"label":"deliberation, consideration","radical":"一"},"客":{"c":"客","jlpt":3,"strokes":9,"on":["カク","キャク"],"kun":[],"label":"guest, client, customer","radical":"口"},"吸":{"c":"吸","jlpt":3,"strokes":6,"on":["キュウ"],"kun":["す.う"],"label":"suck, imbibe, inhale","radical":"ノ"},"求":{"c":"求","jlpt":3,"strokes":7,"on":["キュウ","グ"],"kun":["もと.める"],"label":"request, demand, require","radical":"一"},"球":{"c":"球","jlpt":3,"strokes":11,"on":["キュウ"],"kun":["たま"],"label":"ball, sphere","radical":"丶"},"給":{"c":"給","jlpt":3,"strokes":12,"on":["キュウ"],"kun":["-たま.え","たま.う","たも.う"],"label":"salary, allow, bestow on","radical":"一"},"居":{"c":"居","jlpt":3,"strokes":8,"on":["キョ","コ"],"kun":["-い","い.る","お.る"],"label":"reside, exist, live with","radical":"十"},"許":{"c":"許","jlpt":3,"strokes":11,"on":["キョ"],"kun":["もと","ゆる.す"],"label":"permit, approve","radical":"ノ"},"供":{"c":"供","jlpt":3,"strokes":8,"on":["キョウ","ク","クウ","グ"],"kun":["-ども","そな.える","とも"],"label":"submit, accompany, offer","radical":"一"},"共":{"c":"共","jlpt":3,"strokes":6,"on":["キョウ"],"kun":["-ども","とも","とも.に"],"label":"together, alike, all","radical":"一"},"恐":{"c":"恐","jlpt":3,"strokes":10,"on":["キョウ"],"kun":["おそ.る","おそ.れる","おそ.ろしい","こわ.い","こわ.がる"],"label":"fear, awe, dread","radical":"丶"},"局":{"c":"局","jlpt":3,"strokes":7,"on":["キョク"],"kun":["つぼね"],"label":"bureau, affair, board","radical":"口"},"曲":{"c":"曲","jlpt":3,"strokes":6,"on":["キョク"],"kun":["くま","ま.がる","ま.げる"],"label":"bend, composition, crooked","radical":"｜"},"勤":{"c":"勤","jlpt":3,"strokes":12,"on":["キン","ゴン"],"kun":["-づと.め","いそ.しむ","つと.まる","つと.める"],"label":"diligence, become employed, serve","radical":"一"},"苦":{"c":"苦","jlpt":3,"strokes":8,"on":["ク"],"kun":["-ぐる.しい","くる.しい","くる.しむ","くる.しめる","にが.い","にが.る"],"label":"suffering, feel bitter, hardship","radical":"十"},"具":{"c":"具","jlpt":3,"strokes":8,"on":["グ"],"kun":["そな.える","つぶさ.に"],"label":"tool, ingredients, means","radical":"一"},"偶":{"c":"偶","jlpt":3,"strokes":11,"on":["グウ"],"kun":["たま"],"label":"accidentally, couple, even number","radical":"冂"},"靴":{"c":"靴","jlpt":3,"strokes":13,"on":["カ"],"kun":["くつ"],"label":"shoes","radical":"匕"},"君":{"c":"君","jlpt":3,"strokes":7,"on":["クン"],"kun":["-ぎみ","きみ"],"label":"male name suffix, mister, ruler","radical":"一"},"係":{"c":"係","jlpt":3,"strokes":9,"on":["ケイ"],"kun":["-がかり","かか.る","かか.わる","かかり"],"label":"person in charge, concern oneself","radical":"ノ"},"形":{"c":"形","jlpt":3,"strokes":7,"on":["ギョウ","ケイ"],"kun":["-がた","かた","かたち","なり"],"label":"shape, form, style","radical":"一"},"景":{"c":"景","jlpt":3,"strokes":12,"on":["ケイ"],"kun":[],"label":"scenery, view","radical":"口"},"経":{"c":"経","jlpt":3,"strokes":11,"on":["キョウ","キン","ケイ"],"kun":["た.つ","たていと","のり","はか.る","へ.る"],"label":"sutra, expire, longitude","radical":"又"},"警":{"c":"警","jlpt":3,"strokes":19,"on":["ケイ"],"kun":["いまし.める"],"label":"admonish, commandment","radical":"勹"},"迎":{"c":"迎","jlpt":3,"strokes":7,"on":["ゲイ"],"kun":["むか.える"],"label":"welcome, greet, meet","radical":"卩"},"欠":{"c":"欠","jlpt":3,"strokes":4,"on":["ケツ","ケン"],"kun":["か.く","か.ける"],"label":"lack, fail, gap","radical":"人"},"決":{"c":"決","jlpt":3,"strokes":7,"on":["ケツ"],"kun":["-ぎ.め","き.まる","き.める","さ.く"],"label":"decide, agree upon, appoint","radical":"二"},"件":{"c":"件","jlpt":3,"strokes":6,"on":["ケン"],"kun":["くだん"],"label":"affair, case, item","radical":"牛"},"権":{"c":"権","jlpt":3,"strokes":15,"on":["ケン","ゴン"],"kun":["おもり","かり","はか.る"],"label":"authority, power, rights","radical":"木"},"険":{"c":"険","jlpt":3,"strokes":11,"on":["ケン"],"kun":["けわ.しい"],"label":"precipitous, impregnable position","radical":"人"},"原":{"c":"原","jlpt":3,"strokes":10,"on":["ゲン"],"kun":["はら"],"label":"meadow, field, original","radical":"厂"},"現":{"c":"現","jlpt":3,"strokes":11,"on":["ゲン"],"kun":["あらわ.す","あらわ.れる","うつ.つ","うつつ"],"label":"present, actual, existing","radical":"王"},"限":{"c":"限","jlpt":3,"strokes":9,"on":["ゲン"],"kun":["-かぎ.り","かぎ.り","かぎ.る"],"label":"limit, restrict, to best of ability","radical":"艮"},"呼":{"c":"呼","jlpt":3,"strokes":8,"on":["コ"],"kun":["よ.ぶ"],"label":"call, call out to, invite","radical":"ノ"},"互":{"c":"互","jlpt":3,"strokes":4,"on":["ゴ"],"kun":["かたみ.に","たが.い"],"label":"mutually, reciprocally, together","radical":"一"},"御":{"c":"御","jlpt":3,"strokes":12,"on":["ギョ","ゴ"],"kun":["お-","おん-","み-"],"label":"honorable, govern, manipulate","radical":"ノ"},"誤":{"c":"誤","jlpt":3,"strokes":14,"on":["ゴ"],"kun":["-あやま.る","あやま.る"],"label":"mistake, do wrong, err","radical":"ハ"},"交":{"c":"交","jlpt":3,"strokes":6,"on":["コウ"],"kun":["-か.う","か.わす","かわ.す","こもごも","ま.ざる","ま.じる","ま.ぜる","まじ.える","まじ.る","まじ.わる"],"label":"mingle, association, coming & going","radical":"父"},"候":{"c":"候","jlpt":3,"strokes":10,"on":["コウ"],"kun":["そうろう"],"label":"climate, expect, season","radical":"｜"},"光":{"c":"光","jlpt":3,"strokes":6,"on":["コウ"],"kun":["ひか.る","ひかり"],"label":"ray, light","radical":"一"},"向":{"c":"向","jlpt":3,"strokes":6,"on":["コウ"],"kun":["-む.き","-む.け","む.い","む.かい","む.かう","む.く","む.ける","む.こう","む.こう-","むか.い","むこ"],"label":"yonder, approach, beyond","radical":"冂"},"好":{"c":"好","jlpt":3,"strokes":6,"on":["コウ"],"kun":["い.い","この.む","す.く","よ.い"],"label":"fond, like something, pleasing","radical":"女"},"幸":{"c":"幸","jlpt":3,"strokes":8,"on":["コウ"],"kun":["さいわ.い","さち","しあわ.せ"],"label":"happiness, blessing, fortune","radical":"十"},"更":{"c":"更","jlpt":3,"strokes":7,"on":["コウ"],"kun":["さら","さら.に","ふ.かす","ふ.ける"],"label":"grow late, again, further","radical":"一"},"構":{"c":"構","jlpt":3,"strokes":14,"on":["コウ"],"kun":["かま.う","かま.える"],"label":"posture, appearance, build","radical":"一"},"港":{"c":"港","jlpt":3,"strokes":12,"on":["コウ"],"kun":["みなと"],"label":"harbor","radical":"ハ"},"降":{"c":"降","jlpt":3,"strokes":10,"on":["コウ","ゴ"],"kun":["お.りる","お.ろす","くだ.す","くだ.る","ふ.り","ふ.る"],"label":"descend, fall, precipitate","radical":"十"},"号":{"c":"号","jlpt":3,"strokes":5,"on":["ゴウ"],"kun":["さけ.ぶ","よびな"],"label":"nickname, call, item","radical":"一"},"合":{"c":"合","jlpt":3,"strokes":6,"on":["カッ","ガッ","ゴウ"],"kun":["-あ.い","-あ.う","-あ.わせる","-あい","あ.い","あ.う","あ.わす","あ.わせる","あい-"],"label":"fit, join, suit","radical":"一"},"刻":{"c":"刻","jlpt":3,"strokes":8,"on":["コク"],"kun":["きざ.み","きざ.む"],"label":"engrave, carving, chop","radical":"丶"},"告":{"c":"告","jlpt":3,"strokes":7,"on":["コク"],"kun":["つ.げる"],"label":"revelation, announce, inform","radical":"ノ"},"込":{"c":"込","jlpt":3,"strokes":5,"on":[],"kun":["-こ.み","-こ.む","こ.み","こ.む","こ.める"],"label":"crowded, in bulk, included","radical":"入"},"困":{"c":"困","jlpt":3,"strokes":7,"on":["コン"],"kun":["こま.る"],"label":"quandary, annoyed, become distressed","radical":"囗"},"婚":{"c":"婚","jlpt":3,"strokes":11,"on":["コン"],"kun":[],"label":"marriage","radical":"女"},"差":{"c":"差","jlpt":3,"strokes":10,"on":["サ"],"kun":["さ.し","さ.す"],"label":"distinction, balance, difference","radical":"ノ"},"座":{"c":"座","jlpt":3,"strokes":10,"on":["ザ"],"kun":["すわ.る"],"label":"cushion, gathering, seat","radical":"｜"},"最":{"c":"最","jlpt":3,"strokes":12,"on":["サイ","シュ"],"kun":["つま","もっと.も"],"label":"utmost, extreme, most","radical":"一"},"妻":{"c":"妻","jlpt":3,"strokes":8,"on":["サイ"],"kun":["つま"],"label":"wife, spouse","radical":"一"},"才":{"c":"才","jlpt":3,"strokes":3,"on":["サイ"],"kun":[],"label":"genius, cubic shaku, years old","radical":"一"},"歳":{"c":"歳","jlpt":3,"strokes":13,"on":["サイ","セイ"],"kun":["とし","とせ","よわい"],"label":"year-end, age, occasion","radical":"ノ"},"済":{"c":"済","jlpt":3,"strokes":11,"on":["サイ","セイ"],"kun":["-す.ます","-ず.み","-ずみ","す.ます","す.まない","す.む","すく.う","な.す","わた.る","わたし"],"label":"finish, come to an end, excusable","radical":"｜"},"際":{"c":"際","jlpt":3,"strokes":14,"on":["サイ"],"kun":["-ぎわ","きわ"],"label":"occasion, adventurous, dangerous","radical":"ノ"},"在":{"c":"在","jlpt":3,"strokes":6,"on":["ザイ"],"kun":["あ.る"],"label":"exist, located in, outskirts","radical":"一"},"罪":{"c":"罪","jlpt":3,"strokes":13,"on":["ザイ"],"kun":["つみ"],"label":"guilt, blame, crime","radical":"非"},"財":{"c":"財","jlpt":3,"strokes":10,"on":["サイ","ザイ","ゾク"],"kun":["たから"],"label":"property, assets, money","radical":"一"},"昨":{"c":"昨","jlpt":3,"strokes":9,"on":["サク"],"kun":[],"label":"yesterday, previous","radical":"｜"},"察":{"c":"察","jlpt":3,"strokes":14,"on":["サツ"],"kun":[],"label":"guess, judge, presume","radical":"ノ"},"殺":{"c":"殺","jlpt":3,"strokes":10,"on":["サイ","サツ","セツ"],"kun":["-ごろ.し","あや.める","ころ.す","そ.ぐ"],"label":"kill, butcher, diminish","radical":"丶"},"雑":{"c":"雑","jlpt":3,"strokes":14,"on":["ザツ","ゾウ"],"kun":["まじ.える","まじ.る"],"label":"miscellaneous","radical":"木"},"参":{"c":"参","jlpt":3,"strokes":8,"on":["サン","シン"],"kun":["まい-","まい.る","まじわる","みつ"],"label":"be defeated, be madly in love, coming","radical":"一"},"散":{"c":"散","jlpt":3,"strokes":12,"on":["サン"],"kun":["-ち.らす","ち.らかす","ち.らかる","ち.らす","ち.らばる","ち.る","ばら","ばら.ける"],"label":"scatter, disperse, spend","radical":"二"},"産":{"c":"産","jlpt":3,"strokes":11,"on":["サン"],"kun":["う.まれる","う.む","うぶ-","む.す"],"label":"products, bear, childbirth","radical":"ノ"},"賛":{"c":"賛","jlpt":3,"strokes":15,"on":["サン"],"kun":["たす.ける","たた.える"],"label":"approve, agree with, assist","radical":"二"},"残":{"c":"残","jlpt":3,"strokes":10,"on":["サン","ザン"],"kun":["そこな.う","のこ.す","のこ.り","のこ.る"],"label":"remainder, balance, leftover","radical":"二"},"市":{"c":"市","jlpt":3,"strokes":5,"on":["シ"],"kun":["いち"],"label":"market, city, town","radical":"巾"},"師":{"c":"師","jlpt":3,"strokes":10,"on":["シ"],"kun":["いくさ"],"label":"expert, army (incl. counter), exemplar","radical":"一"},"指":{"c":"指","jlpt":3,"strokes":9,"on":["シ"],"kun":["-さ.し","さ.す","ゆび"],"label":"finger, indicate, measure (ruler)","radical":"匕"},"支":{"c":"支","jlpt":3,"strokes":4,"on":["シ"],"kun":["か.う","ささ.える","つか.える"],"label":"branch, support, sustain","radical":"十"},"資":{"c":"資","jlpt":3,"strokes":13,"on":["シ"],"kun":[],"label":"assets, be conducive to, capital","radical":"ハ"},"歯":{"c":"歯","jlpt":3,"strokes":12,"on":["シ"],"kun":["は","よわ.い","よわい","よわい.する"],"label":"tooth, cog","radical":"凵"},"似":{"c":"似","jlpt":3,"strokes":7,"on":["ジ"],"kun":["に.る","ひ.る"],"label":"becoming, counterfeit, imitate","radical":"丶"},"次":{"c":"次","jlpt":3,"strokes":6,"on":["シ","ジ"],"kun":["つ.ぐ","つぎ"],"label":"next, order, sequence","radical":"冫"},"治":{"c":"治","jlpt":3,"strokes":8,"on":["ジ","チ"],"kun":["おさ.まる","おさ.める","なお.す","なお.る"],"label":"reign, be at peace, calm down","radical":"厶"},"示":{"c":"示","jlpt":3,"strokes":5,"on":["シ","ジ"],"kun":["しめ.す"],"label":"show, display, express","radical":"二"},"耳":{"c":"耳","jlpt":3,"strokes":6,"on":["ジ"],"kun":["みみ"],"label":"ear","radical":"耳"},"辞":{"c":"辞","jlpt":3,"strokes":13,"on":["ジ"],"kun":["いな.む","や.める"],"label":"resign, expression, term","radical":"十"},"式":{"c":"式","jlpt":3,"strokes":6,"on":["シキ"],"kun":[],"label":"style, ceremony, expression","radical":"工"},"識":{"c":"識","jlpt":3,"strokes":19,"on":["シキ"],"kun":["し.る","しる.す"],"label":"discriminating, know, write","radical":"戈"},"失":{"c":"失","jlpt":3,"strokes":5,"on":["シツ"],"kun":["う.せる","うしな.う"],"label":"lose, disadvantage, error","radical":"ノ"},"実":{"c":"実","jlpt":3,"strokes":8,"on":["シツ","ジツ"],"kun":["まこと","み","みち.る","みの","みの.る"],"label":"reality, fruit, nut","radical":"士"},"若":{"c":"若","jlpt":3,"strokes":8,"on":["ジャク","ニャ","ニャク"],"kun":["ごと.し","も.し","も.しくは","も.しくわ","わか-","わか.い"],"label":"young, if, immature","radical":"一"},"取":{"c":"取","jlpt":3,"strokes":8,"on":["シュ"],"kun":["-ど.り","と.り","と.り-","と.る","とり"],"label":"take, fetch, take up","radical":"又"},"守":{"c":"守","jlpt":3,"strokes":6,"on":["シュ","ス"],"kun":["-もり","かみ","まも.り","まも.る","もり"],"label":"guard, defend, obey","radical":"寸"},"種":{"c":"種","jlpt":3,"strokes":14,"on":["シュ"],"kun":["-ぐさ","たね"],"label":"species, class, kind","radical":"｜"},"酒":{"c":"酒","jlpt":3,"strokes":10,"on":["シュ"],"kun":["さか-","さけ"],"label":"sake, alcohol","radical":"酉"},"首":{"c":"首","jlpt":3,"strokes":9,"on":["シュ"],"kun":["くび"],"label":"neck","radical":"目"},"受":{"c":"受","jlpt":3,"strokes":8,"on":["ジュ"],"kun":["-う.け","う.かる","う.ける"],"label":"accept, answer (phone), catch","radical":"冖"},"収":{"c":"収","jlpt":3,"strokes":4,"on":["シュウ"],"kun":["おさ.まる","おさ.める"],"label":"income, obtain, pay","radical":"｜"},"宿":{"c":"宿","jlpt":3,"strokes":11,"on":["シュク"],"kun":["やど","やど.す","やど.る"],"label":"inn, be pregnant, dwell","radical":"白"},"術":{"c":"術","jlpt":3,"strokes":11,"on":["ジュツ"],"kun":["すべ"],"label":"art, magic, means","radical":"丶"},"処":{"c":"処","jlpt":3,"strokes":5,"on":["ショ"],"kun":["-こ","お.る","ところ"],"label":"dispose, act, behave","radical":"几"},"初":{"c":"初","jlpt":3,"strokes":7,"on":["ショ"],"kun":["-そ.める","-ぞ.め","うい-","はじ.め","はじ.めて","はつ","はつ-"],"label":"first time, beginning","radical":"刀"},"所":{"c":"所","jlpt":3,"strokes":8,"on":["ショ"],"kun":["-ところ","とこ","ところ","どころ"],"label":"place, extent","radical":"一"},"緒":{"c":"緒","jlpt":3,"strokes":14,"on":["ショ","チョ"],"kun":["いとぐち","お"],"label":"thong, beginning, cord","radical":"小"},"助":{"c":"助","jlpt":3,"strokes":7,"on":["ジョ"],"kun":["す.ける","すけ","たす.かる","たす.ける"],"label":"help, assist, rescue","radical":"力"},"除":{"c":"除","jlpt":3,"strokes":10,"on":["ジ","ジョ"],"kun":["-よ.け","のぞ.く"],"label":"exclude, abolish, cancel","radical":"一"},"勝":{"c":"勝","jlpt":3,"strokes":12,"on":["ショウ"],"kun":["-が.ち","か.つ","かつ","すぐ.れる","まさ.る"],"label":"victory, excel, prevail","radical":"二"},"商":{"c":"商","jlpt":3,"strokes":11,"on":["ショウ"],"kun":["あきな.う"],"label":"make a deal, dealing in, merchant","radical":"儿"},"招":{"c":"招","jlpt":3,"strokes":8,"on":["ショウ"],"kun":["まね.く"],"label":"beckon, engage, invite","radical":"刀"},"消":{"c":"消","jlpt":3,"strokes":10,"on":["ショウ"],"kun":["き.える","け.す"],"label":"extinguish, blow out, cancel","radical":"月"},"笑":{"c":"笑","jlpt":3,"strokes":10,"on":["ショウ"],"kun":["え.む","わら.う"],"label":"laugh","radical":"大"},"乗":{"c":"乗","jlpt":3,"strokes":9,"on":["ショウ","ジョウ"],"kun":["-の.り","の.せる","の.る"],"label":"ride, board, join","radical":"一"},"常":{"c":"常","jlpt":3,"strokes":11,"on":["ジョウ"],"kun":["つね","とこ-"],"label":"usual, always, common","radical":"冖"},"情":{"c":"情","jlpt":3,"strokes":11,"on":["ジョウ","セイ"],"kun":["なさ.け"],"label":"feelings, circumstances, emotion","radical":"二"},"状":{"c":"状","jlpt":3,"strokes":7,"on":["ジョウ"],"kun":[],"label":"status quo, appearance, circumstances","radical":"爿"},"職":{"c":"職","jlpt":3,"strokes":18,"on":["ショク","ソク"],"kun":[],"label":"post, employment, work","radical":"戈"},"信":{"c":"信","jlpt":3,"strokes":9,"on":["シン"],"kun":[],"label":"faith, fidelity, trust","radical":"言"},"寝":{"c":"寝","jlpt":3,"strokes":13,"on":["シン"],"kun":["い.ぬ","ね.かす","ね.る","みたまや","や.める"],"label":"lie down, bed, remain unsold","radical":"冖"},"深":{"c":"深","jlpt":3,"strokes":11,"on":["シン"],"kun":["-ぶか.い","ふか.い","ふか.まる","ふか.める","み-"],"label":"deep, heighten, intensify","radical":"儿"},"申":{"c":"申","jlpt":3,"strokes":5,"on":["シン"],"kun":["さる","もう.し-","もう.す"],"label":"have the honor to, sign of the monkey","radical":"｜"},"神":{"c":"神","jlpt":3,"strokes":9,"on":["シン","ジン"],"kun":["かみ","かん-","こう-"],"label":"gods, mind, soul","radical":"｜"},"進":{"c":"進","jlpt":3,"strokes":11,"on":["シン"],"kun":["すす.む","すす.める"],"label":"advance, proceed, progress","radical":"隹"},"吹":{"c":"吹","jlpt":3,"strokes":7,"on":["スイ"],"kun":["ふ.く"],"label":"blow, breathe, emit","radical":"口"},"数":{"c":"数","jlpt":3,"strokes":13,"on":["サク","シュ","ス","スウ","ソク"],"kun":["かず","かぞ.える","しばしば","せ.める","わずらわ.しい"],"label":"number, fate, figures","radical":"夂"},"制":{"c":"制","jlpt":3,"strokes":8,"on":["セイ"],"kun":[],"label":"system, law, rule","radical":"ノ"},"性":{"c":"性","jlpt":3,"strokes":8,"on":["ショウ","セイ"],"kun":["さが"],"label":"sex, gender, nature","radical":"生"},"成":{"c":"成","jlpt":3,"strokes":6,"on":["ジョウ","セイ"],"kun":["-な.す","な.す","な.る"],"label":"turn into, become, elapse","radical":"ノ"},"政":{"c":"政","jlpt":3,"strokes":9,"on":["ショウ","セイ"],"kun":["まつりごと","まん"],"label":"politics, government","radical":"一"},"晴":{"c":"晴","jlpt":3,"strokes":12,"on":["セイ"],"kun":["-ば.れ","は.らす","は.れ","は.れ-","は.れる"],"label":"clear up","radical":"二"},"精":{"c":"精","jlpt":3,"strokes":14,"on":["ショウ","セイ"],"kun":["くわ.しい","しら.げる"],"label":"refined, energy, excellence","radical":"二"},"声":{"c":"声","jlpt":3,"strokes":7,"on":["ショウ","セイ"],"kun":["こえ","こわ-"],"label":"voice","radical":"士"},"静":{"c":"静","jlpt":3,"strokes":14,"on":["ジョウ","セイ"],"kun":["しず-","しず.か","しず.まる","しず.める"],"label":"quiet","radical":"亅"},"席":{"c":"席","jlpt":3,"strokes":10,"on":["セキ"],"kun":["むしろ"],"label":"seat, mat, occasion","radical":"一"},"昔":{"c":"昔","jlpt":3,"strokes":8,"on":["シャク","セキ"],"kun":["むかし"],"label":"once upon a time, antiquity, old times","radical":"一"},"石":{"c":"石","jlpt":3,"strokes":5,"on":["コク","シャク","セキ"],"kun":["いし"],"label":"stone","radical":"口"},"積":{"c":"積","jlpt":3,"strokes":16,"on":["セキ"],"kun":["-づ.み","つ.む","つ.もり","つ.もる"],"label":"volume, acreage, amass","radical":"二"},"責":{"c":"責","jlpt":3,"strokes":11,"on":["セキ"],"kun":["せ.める"],"label":"blame, censure, condemn","radical":"二"},"折":{"c":"折","jlpt":3,"strokes":7,"on":["シャク","セツ"],"kun":["-お.り","お.り","お.る","お.れる","おり"],"label":"fold, bend, break","radical":"斤"},"説":{"c":"説","jlpt":3,"strokes":14,"on":["セツ","ゼイ"],"kun":["と.く"],"label":"explanation, opinion, rumor","radical":"儿"},"雪":{"c":"雪","jlpt":3,"strokes":11,"on":["セツ"],"kun":["ゆき"],"label":"snow","radical":"雨"},"絶":{"c":"絶","jlpt":3,"strokes":12,"on":["ゼツ"],"kun":["た.える","た.つ","た.やす"],"label":"discontinue, abstain, be beyond","radical":"小"},"戦":{"c":"戦","jlpt":3,"strokes":13,"on":["セン"],"kun":["いくさ","おのの.く","そよ.ぐ","たたか.う","わなな.く"],"label":"war, battle, match","radical":"十"},"洗":{"c":"洗","jlpt":3,"strokes":9,"on":["セン"],"kun":["あら.う"],"label":"wash, inquire into, probe","radical":"ノ"},"船":{"c":"船","jlpt":3,"strokes":11,"on":["セン"],"kun":["ふな-","ふね"],"label":"ship, boat","radical":"ハ"},"選":{"c":"選","jlpt":3,"strokes":15,"on":["セン"],"kun":["え.る","えら.ぶ","よ.る"],"label":"elect, choose, prefer","radical":"｜"},"然":{"c":"然","jlpt":3,"strokes":12,"on":["ゼン","ネン"],"kun":["さ","しか","しか.し","しか.り"],"label":"sort of thing, if so, in that case","radical":"夕"},"全":{"c":"全","jlpt":3,"strokes":6,"on":["ゼン"],"kun":["すべ.て","まった.く"],"label":"whole, all, complete","radical":"ハ"},"祖":{"c":"祖","jlpt":3,"strokes":9,"on":["ソ"],"kun":[],"label":"ancestor, founder, pioneer","radical":"一"},"組":{"c":"組","jlpt":3,"strokes":11,"on":["ソ"],"kun":["-ぐみ","く.む","くみ"],"label":"association, assemble, braid","radical":"一"},"想":{"c":"想","jlpt":3,"strokes":13,"on":["ソ","ソウ"],"kun":["おも.う"],"label":"concept, idea, think","radical":"心"},"争":{"c":"争","jlpt":3,"strokes":6,"on":["ソウ"],"kun":["あらそ.う","いか.でか"],"label":"contend, argue, dispute","radical":"一"},"相":{"c":"相","jlpt":3,"strokes":9,"on":["ショウ","ソウ"],"kun":["あい-"],"label":"aspect, councillor, each other","radical":"木"},"窓":{"c":"窓","jlpt":3,"strokes":11,"on":["ス","ソウ"],"kun":["けむだし","てんまど","まど"],"label":"window, pane","radical":"儿"},"草":{"c":"草","jlpt":3,"strokes":9,"on":["ソウ"],"kun":["-ぐさ","くさ","くさ-"],"label":"grass, draft, herbs","radical":"十"},"増":{"c":"増","jlpt":3,"strokes":14,"on":["ゾウ"],"kun":["ふ.える","ふ.やす","ま.し","ま.す"],"label":"increase, add, augment","radical":"土"},"側":{"c":"側","jlpt":3,"strokes":11,"on":["ソク"],"kun":["かわ","がわ","そば"],"label":"side, lean, oppose","radical":"ハ"},"息":{"c":"息","jlpt":3,"strokes":10,"on":["ソク"],"kun":["いき"],"label":"breath, coming to an end","radical":"心"},"束":{"c":"束","jlpt":3,"strokes":7,"on":["ソク"],"kun":["たば","たば.ねる","つか","つか.ねる"],"label":"bundle, control, govern","radical":"一"},"速":{"c":"速","jlpt":3,"strokes":10,"on":["ソク"],"kun":["すみ.やか","はや-","はや.い","はや.める"],"label":"quick, fast","radical":"一"},"続":{"c":"続","jlpt":3,"strokes":13,"on":["キョウ","コウ","ショク","ゾク"],"kun":["つぐ.ない","つづ.く","つづ.ける"],"label":"continue, sequel, series","radical":"儿"},"存":{"c":"存","jlpt":3,"strokes":6,"on":["ソン","ゾン"],"kun":["あ.る","たも.つ","と.う","ながら.える"],"label":"suppose, be aware of, believe","radical":"一"},"他":{"c":"他","jlpt":3,"strokes":5,"on":["タ"],"kun":["ほか"],"label":"other, another, the others","radical":"也"},"太":{"c":"太","jlpt":3,"strokes":4,"on":["タ","タイ"],"kun":["ふと.い","ふと.る"],"label":"plump, big around, thick","radical":"丶"},"打":{"c":"打","jlpt":3,"strokes":5,"on":["ダ","ダース"],"kun":["う.ち-","う.つ","ぶ.つ"],"label":"strike, dozen, hit","radical":"亅"},"対":{"c":"対","jlpt":3,"strokes":7,"on":["タイ","ツイ"],"kun":["あいて","こた.える","そろ.い","つれあ.い","なら.ぶ","むか.う"],"label":"vis-a-vis, compare, equal","radical":"寸"},"退":{"c":"退","jlpt":3,"strokes":9,"on":["タイ"],"kun":["しりぞ.く","しりぞ.ける","ど.く","の.く","の.ける","ひ.く"],"label":"retreat, expel, reject","radical":"艮"},"宅":{"c":"宅","jlpt":3,"strokes":6,"on":["タク"],"kun":[],"label":"home, house, my husband","radical":"一"},"達":{"c":"達","jlpt":3,"strokes":12,"on":["タツ","ダ"],"kun":["-たち"],"label":"accomplished, arrive, attain","radical":"土"},"単":{"c":"単","jlpt":3,"strokes":9,"on":["タン"],"kun":["ひとえ"],"label":"simple, merely, one","radical":"十"},"探":{"c":"探","jlpt":3,"strokes":11,"on":["タン"],"kun":["さが.す","さぐ.る"],"label":"grope, look for, search","radical":"儿"},"断":{"c":"断","jlpt":3,"strokes":11,"on":["ダン"],"kun":["ことわ.る","さだ.める","た.つ"],"label":"severance, apologize, cutting","radical":"一"},"段":{"c":"段","jlpt":3,"strokes":9,"on":["タン","ダン"],"kun":[],"label":"grade, stairs, steps","radical":"一"},"談":{"c":"談","jlpt":3,"strokes":15,"on":["ダン"],"kun":[],"label":"discuss, talk","radical":"火"},"値":{"c":"値","jlpt":3,"strokes":10,"on":["チ"],"kun":["あたい","ね"],"label":"price, cost, value","radical":"一"},"恥":{"c":"恥","jlpt":3,"strokes":10,"on":["チ"],"kun":["は.じらう","は.じる","は.ずかしい","はじ"],"label":"shame, dishonor","radical":"心"},"置":{"c":"置","jlpt":3,"strokes":13,"on":["チ"],"kun":["-お.き","お.く"],"label":"placement, deposit, employ","radical":"一"},"遅":{"c":"遅","jlpt":3,"strokes":12,"on":["チ"],"kun":["おく.らす","おく.れる","おそ.い"],"label":"slow, back, late","radical":"尸"},"調":{"c":"調","jlpt":3,"strokes":15,"on":["チョウ"],"kun":["しら.べ","しら.べる","ととの.う","ととの.える"],"label":"tune, exorcise, harmonize","radical":"冂"},"頂":{"c":"頂","jlpt":3,"strokes":11,"on":["チョウ"],"kun":["いただ.く","いただき"],"label":"place on the head, peak, receive","radical":"一"},"直":{"c":"直","jlpt":3,"strokes":8,"on":["ジカ","ジキ","チョク"],"kun":["-なお.す","す.ぐ","ただ.ちに","なお.き","なお.す","なお.る"],"label":"straightaway, fix, frankness","radical":"一"},"追":{"c":"追","jlpt":3,"strokes":9,"on":["ツイ"],"kun":["お.う"],"label":"chase, drive away, follow","radical":"｜"},"痛":{"c":"痛","jlpt":3,"strokes":12,"on":["ツウ"],"kun":["いた.い","いた.ましい","いた.む","いた.める"],"label":"pain, bruise, damage","radical":"用"},"定":{"c":"定","jlpt":3,"strokes":8,"on":["ジョウ","テイ"],"kun":["さだ.か","さだ.まる","さだ.める"],"label":"determine, decide, establish","radical":"疋"},"庭":{"c":"庭","jlpt":3,"strokes":10,"on":["テイ"],"kun":["にわ"],"label":"courtyard, garden, yard","radical":"广"},"程":{"c":"程","jlpt":3,"strokes":12,"on":["テイ"],"kun":["-ほど","ほど"],"label":"extent, amount, degree","radical":"口"},"適":{"c":"適","jlpt":3,"strokes":14,"on":["テキ"],"kun":["かな.う"],"label":"suitable, capable, occasional","radical":"冂"},"点":{"c":"点","jlpt":3,"strokes":9,"on":["テン"],"kun":["さ.す","た.てる","つ.く","つ.ける","とぼ.す","とも.す","ぼち"],"label":"spot, decimal point, mark","radical":"卜"},"伝":{"c":"伝","jlpt":3,"strokes":6,"on":["テン","デン"],"kun":["-づた.い","つた.う","つた.える","つた.わる","つだ.う","つて"],"label":"transmit, communicate, follow","radical":"二"},"徒":{"c":"徒","jlpt":3,"strokes":10,"on":["ト"],"kun":["あだ","いたずら"],"label":"junior, emptiness, ephemeral thing","radical":"土"},"渡":{"c":"渡","jlpt":3,"strokes":12,"on":["ト"],"kun":["-わた.る","わた.す","わた.る"],"label":"transit, cross, deliver","radical":"又"},"登":{"c":"登","jlpt":3,"strokes":12,"on":["ショウ","チョウ","ト","トウ","ドウ"],"kun":["あ.がる","のぼ.る"],"label":"ascend, climb up","radical":"口"},"途":{"c":"途","jlpt":3,"strokes":10,"on":["ト"],"kun":["みち"],"label":"route, road, way","radical":"一"},"都":{"c":"都","jlpt":3,"strokes":11,"on":["ツ","ト"],"kun":["みやこ"],"label":"metropolis, all, capital","radical":"日"},"努":{"c":"努","jlpt":3,"strokes":7,"on":["ド"],"kun":["つと.める"],"label":"toil, as much as possible, diligent","radical":"力"},"怒":{"c":"怒","jlpt":3,"strokes":9,"on":["ド","ヌ"],"kun":["いか.る","おこ.る"],"label":"angry, be offended","radical":"又"},"倒":{"c":"倒","jlpt":3,"strokes":10,"on":["トウ"],"kun":["-だお.れ","さかさ","さかさま","さかしま","たお.す","たお.れる"],"label":"overthrow, break down, collapse","radical":"厶"},"投":{"c":"投","jlpt":3,"strokes":7,"on":["トウ"],"kun":["-な.げ","な.げる"],"label":"throw, abandon, discard","radical":"几"},"盗":{"c":"盗","jlpt":3,"strokes":11,"on":["トウ"],"kun":["ぬす.み","ぬす.む"],"label":"steal, pilfer, rob","radical":"冫"},"当":{"c":"当","jlpt":3,"strokes":6,"on":["トウ"],"kun":["あ.たり","あ.たる","あ.て","あ.てる","まさ.に","まさ.にべし"],"label":"hit, appropriate, himself","radical":"ヨ"},"等":{"c":"等","jlpt":3,"strokes":12,"on":["トウ"],"kun":["-ら","など","ひと.しい"],"label":"and so forth, class (first), equal","radical":"土"},"到":{"c":"到","jlpt":3,"strokes":8,"on":["トウ"],"kun":["いた.る"],"label":"arrival, attain, proceed","radical":"厶"},"逃":{"c":"逃","jlpt":3,"strokes":9,"on":["トウ"],"kun":["に.がす","に.げる","のが.す","のが.れる"],"label":"escape, evade, flee","radical":"儿"},"頭":{"c":"頭","jlpt":3,"strokes":16,"on":["ズ","ト","トウ"],"kun":["-がしら","あたま","かしら","かぶり"],"label":"head","radical":"ハ"},"働":{"c":"働","jlpt":3,"strokes":13,"on":["ドウ"],"kun":["はたら.く"],"label":"work","radical":"一"},"得":{"c":"得","jlpt":3,"strokes":11,"on":["トク"],"kun":["う.る","え.る"],"label":"gain, able to, acquire","radical":"一"},"突":{"c":"突","jlpt":3,"strokes":8,"on":["カ","トツ"],"kun":["つ.く"],"label":"stab, collision, pierce","radical":"儿"},"内":{"c":"内","jlpt":3,"strokes":4,"on":["ダイ","ナイ"],"kun":["うち"],"label":"inside, among, between","radical":"人"},"難":{"c":"難","jlpt":3,"strokes":18,"on":["ナン"],"kun":["-がた.い","-にく.い","かた.い","むずか.しい","むつか.しい","むづか.しい"],"label":"difficult, accident, defect","radical":"二"},"任":{"c":"任","jlpt":3,"strokes":6,"on":["ニン"],"kun":["まか.す","まか.せる"],"label":"responsibility, appoint, duty","radical":"ノ"},"認":{"c":"認","jlpt":3,"strokes":14,"on":["ニン"],"kun":["したた.める","みと.める"],"label":"acknowledge, appreciate, believe","radical":"丶"},"猫":{"c":"猫","jlpt":3,"strokes":11,"on":["ビョウ"],"kun":["ねこ"],"label":"cat","radical":"田"},"熱":{"c":"熱","jlpt":3,"strokes":15,"on":["ネツ"],"kun":["あつ.い"],"label":"heat, fever, mania","radical":"丶"},"念":{"c":"念","jlpt":3,"strokes":8,"on":["ネン"],"kun":[],"label":"wish, attention, desire","radical":"一"},"能":{"c":"能","jlpt":3,"strokes":10,"on":["ノウ"],"kun":["あた.う","よ.く"],"label":"ability, capacity, skill","radical":"匕"},"破":{"c":"破","jlpt":3,"strokes":10,"on":["ハ"],"kun":["やぶ.る","やぶ.れる","わ.れる"],"label":"rend, break, defeat","radical":"又"},"馬":{"c":"馬","jlpt":3,"strokes":10,"on":["バ"],"kun":["うま","うま-","ま"],"label":"horse","radical":"馬"},"敗":{"c":"敗","jlpt":3,"strokes":11,"on":["ハイ"],"kun":["やぶ.れる"],"label":"failure, defeat, reversal","radical":"ハ"},"杯":{"c":"杯","jlpt":3,"strokes":8,"on":["ハイ"],"kun":["さかずき"],"label":"glass, toast, wine glass","radical":"一"},"背":{"c":"背","jlpt":3,"strokes":9,"on":["ハイ"],"kun":["せ","せい","そむ.く","そむ.ける"],"label":"stature, back, behind","radical":"匕"},"配":{"c":"配","jlpt":3,"strokes":10,"on":["ハイ"],"kun":["くば.る"],"label":"distribute, exile, rationing","radical":"已"},"箱":{"c":"箱","jlpt":3,"strokes":15,"on":["ソウ"],"kun":["はこ"],"label":"box, bin, case","radical":"木"},"髪":{"c":"髪","jlpt":3,"strokes":14,"on":["ハツ"],"kun":["かみ"],"label":"hair of the head","radical":"一"},"抜":{"c":"抜","jlpt":3,"strokes":7,"on":["ハイ","ハツ","バツ"],"kun":["-ぬ.く","ぬ.かす","ぬ.かる","ぬ.き","ぬ.く","ぬ.ける"],"label":"slip out, extract, omit","radical":"又"},"判":{"c":"判","jlpt":3,"strokes":7,"on":["ハン","バン"],"kun":["わか.る"],"label":"judgment, judgement, seal","radical":"｜"},"犯":{"c":"犯","jlpt":3,"strokes":5,"on":["ハン","ボン"],"kun":["おか.す"],"label":"crime, offense, sin","radical":"乙"},"晩":{"c":"晩","jlpt":3,"strokes":12,"on":["バン"],"kun":[],"label":"nightfall, night","radical":"儿"},"番":{"c":"番","jlpt":3,"strokes":12,"on":["バン"],"kun":["つが.い"],"label":"turn, number in a series","radical":"田"},"否":{"c":"否","jlpt":3,"strokes":7,"on":["ヒ"],"kun":["いな","いや"],"label":"negate, decline, deny","radical":"一"},"彼":{"c":"彼","jlpt":3,"strokes":8,"on":["ヒ"],"kun":["か.の","かの","かれ"],"label":"he, that, the","radical":"又"},"悲":{"c":"悲","jlpt":3,"strokes":12,"on":["ヒ"],"kun":["かな.しい","かな.しむ"],"label":"sad, deplore, grieve","radical":"心"},"疲":{"c":"疲","jlpt":3,"strokes":10,"on":["ヒ"],"kun":["-づか.れ","つか.らす","つか.れる"],"label":"exhausted, tire, weary","radical":"又"},"費":{"c":"費","jlpt":3,"strokes":12,"on":["ヒ"],"kun":["つい.える","つい.やす"],"label":"expense, consume, cost","radical":"｜"},"非":{"c":"非","jlpt":3,"strokes":8,"on":["ヒ"],"kun":["あら.ず"],"label":"injustice, mistake, negative","radical":"非"},"飛":{"c":"飛","jlpt":3,"strokes":9,"on":["ヒ"],"kun":["-と.ばす","と.ばす","と.ぶ"],"label":"fly, scatter, skip (pages)","radical":"飛"},"備":{"c":"備","jlpt":3,"strokes":12,"on":["ビ"],"kun":["そな.える","そな.わる","つぶさ.に"],"label":"equip, preparation, provision","radical":"厂"},"美":{"c":"美","jlpt":3,"strokes":9,"on":["ビ","ミ"],"kun":["うつく.しい"],"label":"beauty, beautiful","radical":"大"},"必":{"c":"必","jlpt":3,"strokes":5,"on":["ヒツ"],"kun":["かなら.ず"],"label":"invariably, certain, inevitable","radical":"ノ"},"表":{"c":"表","jlpt":3,"strokes":8,"on":["ヒョウ"],"kun":["-おもて","あら.わす","あらわ.す","あらわ.れる","おもて"],"label":"surface, chart, diagram","radical":"二"},"貧":{"c":"貧","jlpt":3,"strokes":11,"on":["ヒン","ビン"],"kun":["まず.しい"],"label":"poverty, poor","radical":"ハ"},"付":{"c":"付","jlpt":3,"strokes":5,"on":["フ"],"kun":["-つ.き","-つ.け","-つ.ける","-つき","-づ.き","-づ.く","-づ.け","-づ.ける","-づき","-づけ","つ.き","つ.く","つ.け","つ.け-","つ.ける"],"label":"adhere, append, attach","radical":"寸"},"夫":{"c":"夫","jlpt":3,"strokes":4,"on":["フ","フウ","ブ"],"kun":["おっと","それ"],"label":"husband, man","radical":"二"},"婦":{"c":"婦","jlpt":3,"strokes":11,"on":["フ"],"kun":["よめ"],"label":"lady, bride, wife","radical":"冖"},"富":{"c":"富","jlpt":3,"strokes":12,"on":["フ","フウ"],"kun":["と.む","とみ"],"label":"wealth, abundant, enrich","radical":"一"},"怖":{"c":"怖","jlpt":3,"strokes":8,"on":["フ","ホ"],"kun":["お.じる","おそ.れる","こわ.い","こわ.がる"],"label":"dreadful, be frightened, fearful","radical":"一"},"浮":{"c":"浮","jlpt":3,"strokes":10,"on":["フ"],"kun":["う.かぶ","う.かべる","う.かれる","う.く"],"label":"floating, float, rise to surface","radical":"子"},"負":{"c":"負","jlpt":3,"strokes":9,"on":["フ"],"kun":["お.う","ま.かす","ま.ける"],"label":"defeat, assume a responsibility, bear","radical":"ハ"},"舞":{"c":"舞","jlpt":3,"strokes":15,"on":["ブ"],"kun":["-ま.う","ま.う","まい"],"label":"dance, circle, flit","radical":"一"},"部":{"c":"部","jlpt":3,"strokes":11,"on":["ブ"],"kun":["-べ"],"label":"section, bureau, class","radical":"口"},"福":{"c":"福","jlpt":3,"strokes":13,"on":["フク"],"kun":[],"label":"blessing, fortune, luck","radical":"一"},"腹":{"c":"腹","jlpt":3,"strokes":13,"on":["フク"],"kun":["はら"],"label":"abdomen, belly, stomach","radical":"一"},"払":{"c":"払","jlpt":3,"strokes":5,"on":["ヒツ","フツ","ホツ"],"kun":["-はら.い","-ばら.い","はら.う"],"label":"pay, banish, clear out","radical":"厶"},"平":{"c":"平","jlpt":3,"strokes":5,"on":["ヒョウ","ビョウ","ヘイ"],"kun":["たい.ら","たい.らげる","ひら"],"label":"even, flat, peace","radical":"干"},"閉":{"c":"閉","jlpt":3,"strokes":11,"on":["ヘイ"],"kun":["し.まる","し.める","た.てる","と.ざす","と.じる"],"label":"closed, shut","radical":"一"},"米":{"c":"米","jlpt":3,"strokes":6,"on":["ベイ","マイ","メエトル"],"kun":["こめ","よね"],"label":"rice, USA, metre","radical":"米"},"変":{"c":"変","jlpt":3,"strokes":9,"on":["ヘン"],"kun":["か.える","か.わり","か.わる"],"label":"unusual, change, strange","radical":"夂"},"返":{"c":"返","jlpt":3,"strokes":7,"on":["ヘン"],"kun":["-かえ.す","-かえ.る","かえ.す","かえ.る"],"label":"return, answer, fade","radical":"厂"},"便":{"c":"便","jlpt":3,"strokes":9,"on":["ビン","ベン"],"kun":["たよ.り"],"label":"convenience, chance, excrement","radical":"一"},"捕":{"c":"捕","jlpt":3,"strokes":10,"on":["ホ"],"kun":["つか.まえる","つか.まる","と.らえる","と.らわれる","と.る","とら.える","とら.われる"],"label":"catch, capture","radical":"丶"},"暮":{"c":"暮","jlpt":3,"strokes":14,"on":["ボ"],"kun":["く.らす","く.れる"],"label":"livelihood, evening, make a living","radical":"大"},"報":{"c":"報","jlpt":3,"strokes":12,"on":["ホウ"],"kun":["むく.いる"],"label":"report, news, retribution","radical":"十"},"抱":{"c":"抱","jlpt":3,"strokes":8,"on":["ホウ"],"kun":["いだ.く","かか.える","だ.く"],"label":"embrace, hold in arms, hug","radical":"勹"},"放":{"c":"放","jlpt":3,"strokes":8,"on":["ホウ"],"kun":["-っぱな.し","こ.く","はな.す","はな.つ","はな.れる","ほう.る"],"label":"set free, banish, emit","radical":"方"},"法":{"c":"法","jlpt":3,"strokes":8,"on":["ハッ","フラン","ホウ","ホッ"],"kun":["のり"],"label":"method, law, model","radical":"厶"},"訪":{"c":"訪","jlpt":3,"strokes":11,"on":["ホウ"],"kun":["おとず.れる","たず.ねる","と.う"],"label":"call on, look up, offer sympathy","radical":"方"},"亡":{"c":"亡","jlpt":3,"strokes":3,"on":["ボウ","モウ"],"kun":["な.い","な.き-","ほろ.びる","ほろ.ぶ","ほろ.ぼす"],"label":"deceased, dying, perish","radical":"亡"},"忘":{"c":"忘","jlpt":3,"strokes":7,"on":["ボウ"],"kun":["わす.れる"],"label":"forget","radical":"亡"},"忙":{"c":"忙","jlpt":3,"strokes":6,"on":["ボウ","モウ"],"kun":["いそが.しい","うれえるさま","おそ.れる","せわ.しい"],"label":"busy, occupied, restless","radical":"亡"},"望":{"c":"望","jlpt":3,"strokes":11,"on":["ボウ","モウ"],"kun":["のぞ.む","もち"],"label":"ambition, aspire to, desire","radical":"亡"},"末":{"c":"末","jlpt":3,"strokes":5,"on":["バツ","マツ"],"kun":["うら","うれ","すえ"],"label":"close, end, posterity","radical":"一"},"満":{"c":"満","jlpt":3,"strokes":12,"on":["バン","マン"],"kun":["み.たす","み.ちる","み.つ"],"label":"full, enough, fullness","radical":"一"},"未":{"c":"未","jlpt":3,"strokes":5,"on":["ビ","ミ"],"kun":["いま.だ","ひつじ","ま.だ"],"label":"not yet, even now, hitherto","radical":"｜"},"民":{"c":"民","jlpt":3,"strokes":5,"on":["ミン"],"kun":["たみ"],"label":"people, nation, subjects","radical":"口"},"眠":{"c":"眠","jlpt":3,"strokes":10,"on":["ミン"],"kun":["ねむ.い","ねむ.る"],"label":"sleep, die, sleepy","radical":"口"},"務":{"c":"務","jlpt":3,"strokes":11,"on":["ム"],"kun":["つと.める"],"label":"task, duties","radical":"力"},"夢":{"c":"夢","jlpt":3,"strokes":13,"on":["ボウ","ム"],"kun":["くら.い","ゆめ","ゆめ.みる"],"label":"dream, illusion, vision","radical":"冖"},"娘":{"c":"娘","jlpt":3,"strokes":10,"on":["ジョウ"],"kun":["こ","むすめ"],"label":"daughter, girl","radical":"女"},"命":{"c":"命","jlpt":3,"strokes":8,"on":["ミョウ","メイ"],"kun":["いのち"],"label":"fate, appoint, command","radical":"一"},"迷":{"c":"迷","jlpt":3,"strokes":9,"on":["メイ"],"kun":["まよ.う"],"label":"astray, be perplexed, err","radical":"米"},"鳴":{"c":"鳴","jlpt":3,"strokes":14,"on":["メイ"],"kun":["な.く","な.らす","な.る"],"label":"chirp, bark, cry","radical":"口"},"面":{"c":"面","jlpt":3,"strokes":9,"on":["ベン","メン"],"kun":["おも","おもて","つら"],"label":"mask, face, features","radical":"面"},"戻":{"c":"戻","jlpt":3,"strokes":7,"on":["レイ"],"kun":["もど.す","もど.る"],"label":"go backwards, restore, resume","radical":"一"},"役":{"c":"役","jlpt":3,"strokes":7,"on":["エキ","ヤク"],"kun":[],"label":"duty, campaign, drafted labor","radical":"几"},"約":{"c":"約","jlpt":3,"strokes":9,"on":["ヤク"],"kun":["つづ.まる","つづ.める","つづま.やか"],"label":"promise, approximately, shrink","radical":"丶"},"薬":{"c":"薬","jlpt":3,"strokes":16,"on":["ヤク"],"kun":["くすり"],"label":"medicine, benefit, chemical","radical":"冫"},"優":{"c":"優","jlpt":3,"strokes":17,"on":["ウ","ユウ"],"kun":["すぐ.れる","まさ.る","やさ.しい"],"label":"tenderness, actor, excel","radical":"一"},"由":{"c":"由","jlpt":3,"strokes":5,"on":["ユ","ユイ","ユウ"],"kun":["よ.る","よし"],"label":"wherefore, a reason","radical":"｜"},"遊":{"c":"遊","jlpt":3,"strokes":12,"on":["ユ","ユウ"],"kun":["あそ.ばす","あそ.ぶ"],"label":"play","radical":"子"},"予":{"c":"予","jlpt":3,"strokes":4,"on":["シャ","ヨ"],"kun":["あらかじ.め"],"label":"beforehand, I, myself","radical":"一"},"余":{"c":"余","jlpt":3,"strokes":7,"on":["ヨ"],"kun":["あま.す","あま.り","あま.る","あんま.り"],"label":"too much, myself, other","radical":"一"},"与":{"c":"与","jlpt":3,"strokes":3,"on":["ヨ"],"kun":["あずか.る","あた.える","くみ.する","ともに"],"label":"bestow, award, cause","radical":"一"},"容":{"c":"容","jlpt":3,"strokes":10,"on":["ヨウ"],"kun":["い.れる"],"label":"contain, form, looks","radical":"ハ"},"様":{"c":"様","jlpt":3,"strokes":14,"on":["ショウ","ヨウ"],"kun":["さま","さん"],"label":"manner, polite suffix, situation","radical":"木"},"葉":{"c":"葉","jlpt":3,"strokes":12,"on":["ヨウ"],"kun":["は"],"label":"leaf, blade, fragment","radical":"木"},"要":{"c":"要","jlpt":3,"strokes":9,"on":["ヨウ"],"kun":["い.る","かなめ"],"label":"need, essence, key to","radical":"女"},"陽":{"c":"陽","jlpt":3,"strokes":12,"on":["ヨウ"],"kun":["ひ"],"label":"sunshine, daytime, heaven","radical":"一"},"欲":{"c":"欲","jlpt":3,"strokes":11,"on":["ヨク"],"kun":["ほ.しい","ほっ.する"],"label":"longing, covetousness, craving","radical":"ハ"},"頼":{"c":"頼","jlpt":3,"strokes":16,"on":["ライ"],"kun":["たの.む","たの.もしい","たよ.る"],"label":"trust, request","radical":"｜"},"落":{"c":"落","jlpt":3,"strokes":12,"on":["ラク"],"kun":["お.ち","お.ちる","お.とす"],"label":"fall, come down, drop","radical":"口"},"利":{"c":"利","jlpt":3,"strokes":7,"on":["リ"],"kun":["き.く"],"label":"profit, advantage, benefit","radical":"禾"},"流":{"c":"流","jlpt":3,"strokes":10,"on":["リュウ","ル"],"kun":["-なが.す","なが.す","なが.れ","なが.れる"],"label":"current, a sink, flow","radical":"厶"},"留":{"c":"留","jlpt":3,"strokes":10,"on":["リュウ","ル"],"kun":["と.まる","と.める","とど.まる","とど.める","るうぶる"],"label":"detain, fasten, halt","radical":"刀"},"両":{"c":"両","jlpt":3,"strokes":6,"on":["リョウ"],"kun":["てる","ふたつ"],"label":"both, old Japanese coin, two","radical":"一"},"良":{"c":"良","jlpt":3,"strokes":7,"on":["リョウ"],"kun":["-い.い","-よ.い","い.い","よ.い"],"label":"good, pleasing, skilled","radical":"艮"},"類":{"c":"類","jlpt":3,"strokes":18,"on":["ルイ"],"kun":["たぐ.い"],"label":"sort, class, genus","radical":"ハ"},"例":{"c":"例","jlpt":3,"strokes":8,"on":["レイ"],"kun":["たと.える"],"label":"example, custom, precedent","radical":"歹"},"冷":{"c":"冷","jlpt":3,"strokes":7,"on":["レイ"],"kun":["さ.ます","さ.める","つめ.たい","ひ.える","ひ.や","ひ.やかす","ひ.やす","ひ.ややか"],"label":"cool, chill, cold (beer, person)","radical":"一"},"礼":{"c":"礼","jlpt":3,"strokes":5,"on":["ライ","レイ"],"kun":[],"label":"bow, ceremony, remuneration","radical":"乙"},"列":{"c":"列","jlpt":3,"strokes":6,"on":["レ","レツ"],"kun":[],"label":"file, column, rank","radical":"歹"},"連":{"c":"連","jlpt":3,"strokes":10,"on":["レン"],"kun":["-づ.れ","つ.れる","つら.なる","つら.ねる"],"label":"take along, clique, connect","radical":"車"},"路":{"c":"路","jlpt":3,"strokes":13,"on":["ル","ロ"],"kun":["-じ","みち"],"label":"path, distance, road","radical":"口"},"労":{"c":"労","jlpt":3,"strokes":7,"on":["ロウ"],"kun":["いた.ずき","いたわ.る","つか.れる","ねぎら","ねぎら.う","ろう.する"],"label":"labor, reward for, thank for","radical":"冖"},"老":{"c":"老","jlpt":3,"strokes":6,"on":["ロウ"],"kun":["お.いる","ふ.ける"],"label":"old man, grow old, old age","radical":"匕"},"論":{"c":"論","jlpt":3,"strokes":15,"on":["ロン"],"kun":["あげつら.う"],"label":"argument, discourse","radical":"一"},"和":{"c":"和","jlpt":3,"strokes":8,"on":["オ","カ","ワ"],"kun":["あ.える","なご.む","なご.やか","やわ.らぐ","やわ.らげる"],"label":"harmony, Japan, Japanese style","radical":"口"},"圧":{"c":"圧","jlpt":2,"strokes":5,"on":["アツ","エン","オウ"],"kun":["お.さえる","お.す","おさ.える","へ.す"],"label":"pressure, dominate, oppress","radical":"厂"},"依":{"c":"依","jlpt":2,"strokes":8,"on":["イ","エ"],"kun":["よ.る"],"label":"reliant, consequently, depend on","radical":"衣"},"囲":{"c":"囲","jlpt":2,"strokes":7,"on":["イ"],"kun":["かこ.い","かこ.う","かこ.む"],"label":"surround, besiege, encircle","radical":"囗"},"委":{"c":"委","jlpt":2,"strokes":8,"on":["イ"],"kun":["ゆだ.ねる"],"label":"committee, devote, discard","radical":"女"},"移":{"c":"移","jlpt":2,"strokes":11,"on":["イ"],"kun":["うつ.す","うつ.る"],"label":"shift, catch (cold, fire), change","radical":"夕"},"胃":{"c":"胃","jlpt":2,"strokes":9,"on":["イ"],"kun":[],"label":"stomach, craw, crop","radical":"月"},"衣":{"c":"衣","jlpt":2,"strokes":6,"on":["イ","エ"],"kun":["-ぎ","きぬ","ころも"],"label":"garment, clothes, dressing","radical":"衣"},"域":{"c":"域","jlpt":2,"strokes":11,"on":["イキ"],"kun":[],"label":"range, level, limits","radical":"口"},"印":{"c":"印","jlpt":2,"strokes":6,"on":["イン"],"kun":["-じるし","しる.す","しるし"],"label":"stamp, India, emblem","radical":"｜"},"宇":{"c":"宇","jlpt":2,"strokes":6,"on":["ウ"],"kun":[],"label":"eaves, heaven, house","radical":"亅"},"羽":{"c":"羽","jlpt":2,"strokes":6,"on":["ウ"],"kun":["は","はね","わ"],"label":"feathers","radical":"冫"},"雲":{"c":"雲","jlpt":2,"strokes":12,"on":["ウン"],"kun":["-ぐも","くも"],"label":"cloud","radical":"一"},"営":{"c":"営","jlpt":2,"strokes":12,"on":["エイ"],"kun":["いとな.み","いとな.む"],"label":"build, camp, conduct (business)","radical":"ノ"},"栄":{"c":"栄","jlpt":2,"strokes":9,"on":["エイ","ヨウ"],"kun":["-ば.え","え","さか.える","は.え","は.える"],"label":"flourish, glory, honor","radical":"冖"},"永":{"c":"永","jlpt":2,"strokes":5,"on":["エイ"],"kun":["なが.い"],"label":"eternity, lengthy, long","radical":"丶"},"鋭":{"c":"鋭","jlpt":2,"strokes":15,"on":["エイ"],"kun":["するど.い"],"label":"pointed, edge, sharp","radical":"儿"},"液":{"c":"液","jlpt":2,"strokes":11,"on":["エキ"],"kun":[],"label":"fluid, juice, liquid","radical":"夕"},"延":{"c":"延","jlpt":2,"strokes":8,"on":["エン"],"kun":["の.ばす","の.びる","の.べ","の.べる"],"label":"prolong, stretching","radical":"一"},"塩":{"c":"塩","jlpt":2,"strokes":13,"on":["エン"],"kun":["しお"],"label":"salt","radical":"一"},"汚":{"c":"汚","jlpt":2,"strokes":6,"on":["オ"],"kun":["きたな.い","けが.す","けが.らわしい","けが.れる","よご.す","よご.れる"],"label":"dirty, defile, disgrace","radical":"一"},"央":{"c":"央","jlpt":2,"strokes":5,"on":["オウ"],"kun":[],"label":"center, middle","radical":"一"},"奥":{"c":"奥","jlpt":2,"strokes":12,"on":["オウ"],"kun":["おく","おく.まる","くま"],"label":"heart, interior","radical":"冂"},"欧":{"c":"欧","jlpt":2,"strokes":8,"on":["オウ"],"kun":["うた.う","は.く"],"label":"Europe","radical":"丶"},"黄":{"c":"黄","jlpt":2,"strokes":11,"on":["オウ","コウ"],"kun":["き","こ-"],"label":"yellow","radical":"ハ"},"億":{"c":"億","jlpt":2,"strokes":15,"on":["オク"],"kun":[],"label":"hundred million","radical":"心"},"温":{"c":"温","jlpt":2,"strokes":12,"on":["オン"],"kun":["あたた.か","あたた.かい","あたた.まる","あたた.める","ぬく"],"label":"warm","radical":"日"},"河":{"c":"河","jlpt":2,"strokes":8,"on":["カ"],"kun":["かわ"],"label":"river","radical":"一"},"荷":{"c":"荷","jlpt":2,"strokes":10,"on":["カ"],"kun":["に"],"label":"baggage, bear (a burden), cargo","radical":"一"},"菓":{"c":"菓","jlpt":2,"strokes":11,"on":["カ"],"kun":[],"label":"cakes, candy, fruit","radical":"木"},"課":{"c":"課","jlpt":2,"strokes":15,"on":["カ"],"kun":[],"label":"chapter, department, division","radical":"木"},"貨":{"c":"貨","jlpt":2,"strokes":11,"on":["カ"],"kun":["たから"],"label":"freight, goods, property","radical":"ハ"},"介":{"c":"介","jlpt":2,"strokes":4,"on":["カイ"],"kun":[],"label":"jammed in, concern oneself with, mediate","radical":"ハ"},"快":{"c":"快","jlpt":2,"strokes":7,"on":["カイ"],"kun":["こころよ.い"],"label":"cheerful, agreeable, comfortable","radical":"二"},"改":{"c":"改","jlpt":2,"strokes":7,"on":["カイ"],"kun":["あらた.まる","あらた.める"],"label":"reformation, change, examine","radical":"已"},"械":{"c":"械","jlpt":2,"strokes":11,"on":["カイ"],"kun":["かせ"],"label":"contraption, fetter, instrument","radical":"廾"},"灰":{"c":"灰","jlpt":2,"strokes":6,"on":["カイ"],"kun":["はい"],"label":"ashes, cremate, puckery juice","radical":"厂"},"階":{"c":"階","jlpt":2,"strokes":12,"on":["カイ"],"kun":["きざはし"],"label":"storey, stair","radical":"比"},"貝":{"c":"貝","jlpt":2,"strokes":7,"on":["バイ"],"kun":["かい"],"label":"shellfish","radical":"ハ"},"各":{"c":"各","jlpt":2,"strokes":6,"on":["カク"],"kun":["おのおの"],"label":"each, either, every","radical":"口"},"角":{"c":"角","jlpt":2,"strokes":7,"on":["カク"],"kun":["かど","つの"],"label":"angle, antlers, corner","radical":"｜"},"革":{"c":"革","jlpt":2,"strokes":9,"on":["カク"],"kun":["かわ"],"label":"leather, become serious, reform","radical":"十"},"額":{"c":"額","jlpt":2,"strokes":18,"on":["ガク"],"kun":["ひたい"],"label":"forehead, amount, framed picture","radical":"ハ"},"乾":{"c":"乾","jlpt":2,"strokes":11,"on":["カン","ケン"],"kun":["いぬい","かわ.かす","かわ.く","ひ.る","ほ.す"],"label":"drought, dessicate, drink up","radical":"一"},"刊":{"c":"刊","jlpt":2,"strokes":5,"on":["カン"],"kun":[],"label":"publish, carve, engrave","radical":"干"},"巻":{"c":"巻","jlpt":2,"strokes":9,"on":["カン","ケン"],"kun":["ま.き","ま.く","まき"],"label":"scroll, book, coil","radical":"二"},"干":{"c":"干","jlpt":2,"strokes":3,"on":["カン"],"kun":["-ぼ.し","ひ.る","ほ.し-","ほ.す"],"label":"dry, ebb, intercede","radical":"一"},"患":{"c":"患","jlpt":2,"strokes":11,"on":["カン"],"kun":["わずら.う"],"label":"afflicted, be ill, disease","radical":"｜"},"換":{"c":"換","jlpt":2,"strokes":12,"on":["カン"],"kun":["-か.える","か.える","か.わる"],"label":"interchange, change, convert","radical":"儿"},"汗":{"c":"汗","jlpt":2,"strokes":6,"on":["カン"],"kun":["あせ"],"label":"sweat, perspire","radical":"干"},"甘":{"c":"甘","jlpt":2,"strokes":5,"on":["カン"],"kun":["あま.い","あま.える","あま.やかす","うま.い"],"label":"sweet, be content, coax","radical":"甘"},"管":{"c":"管","jlpt":2,"strokes":14,"on":["カン"],"kun":["くだ"],"label":"pipe, control, drunken talk","radical":"｜"},"簡":{"c":"簡","jlpt":2,"strokes":18,"on":["カン","ケン"],"kun":["えら.ぶ","ふだ"],"label":"simplicity, brevity","radical":"日"},"缶":{"c":"缶","jlpt":2,"strokes":6,"on":["カン"],"kun":["かま"],"label":"tin can, container","radical":"凵"},"丸":{"c":"丸","jlpt":2,"strokes":3,"on":["ガン"],"kun":["まる","まる.い","まる.める"],"label":"round, curl up, explain away","radical":"丶"},"含":{"c":"含","jlpt":2,"strokes":7,"on":["ガン"],"kun":["ふく.む","ふく.める"],"label":"include, bear in mind, cherish","radical":"一"},"岸":{"c":"岸","jlpt":2,"strokes":8,"on":["ガン"],"kun":["きし"],"label":"beach","radical":"厂"},"岩":{"c":"岩","jlpt":2,"strokes":8,"on":["ガン"],"kun":["いわ"],"label":"boulder, cliff, rock","radical":"口"},"希":{"c":"希","jlpt":2,"strokes":7,"on":["キ","ケ"],"kun":["こいねが.う","まれ"],"label":"hope, Greece, beg","radical":"一"},"机":{"c":"机","jlpt":2,"strokes":6,"on":["キ"],"kun":["つくえ"],"label":"desk, table","radical":"几"},"祈":{"c":"祈","jlpt":2,"strokes":8,"on":["キ"],"kun":["いの.る"],"label":"pray, wish","radical":"斤"},"季":{"c":"季","jlpt":2,"strokes":8,"on":["キ"],"kun":[],"label":"seasons","radical":"子"},"技":{"c":"技","jlpt":2,"strokes":7,"on":["ギ"],"kun":["わざ"],"label":"skill, ability, art","radical":"十"},"喫":{"c":"喫","jlpt":2,"strokes":12,"on":["キツ"],"kun":["の.む"],"label":"consume, drink, eat","radical":"二"},"詰":{"c":"詰","jlpt":2,"strokes":13,"on":["キチ","キツ"],"kun":["-づ.め","つ.まる","つ.む","つ.め","つ.める"],"label":"packed, blame, close","radical":"口"},"逆":{"c":"逆","jlpt":2,"strokes":9,"on":["ギャク","ゲキ"],"kun":["さか","さか.さ","さか.らう"],"label":"inverted, opposite, reverse","radical":"屮"},"久":{"c":"久","jlpt":2,"strokes":3,"on":["キュウ","ク"],"kun":["ひさ.しい"],"label":"long time, old story","radical":"ノ"},"旧":{"c":"旧","jlpt":2,"strokes":5,"on":["キュウ"],"kun":["ふる.い","もと"],"label":"former, old friend, old things","radical":"｜"},"巨":{"c":"巨","jlpt":2,"strokes":5,"on":["キョ"],"kun":[],"label":"gigantic, big, great","radical":"匚"},"漁":{"c":"漁","jlpt":2,"strokes":14,"on":["ギョ","リョウ"],"kun":["あさ.る"],"label":"fishing, fishery","radical":"田"},"競":{"c":"競","jlpt":2,"strokes":20,"on":["キョウ","ケイ"],"kun":["きそ.う","くら.べる","せ.る"],"label":"bid, bout, compete with","radical":"儿"},"協":{"c":"協","jlpt":2,"strokes":8,"on":["キョウ"],"kun":[],"label":"cooperation","radical":"力"},"叫":{"c":"叫","jlpt":2,"strokes":6,"on":["キョウ"],"kun":["さけ.ぶ"],"label":"shout, exclaim, yell","radical":"｜"},"境":{"c":"境","jlpt":2,"strokes":14,"on":["キョウ","ケイ"],"kun":["さかい"],"label":"boundary, border, region","radical":"儿"},"挟":{"c":"挟","jlpt":2,"strokes":9,"on":["キョウ","ショウ"],"kun":["さしはさ.む","はさ.まる","はさ.む","わきばさ.む"],"label":"between, pinch","radical":"丶"},"橋":{"c":"橋","jlpt":2,"strokes":16,"on":["キョウ"],"kun":["はし"],"label":"bridge","radical":"ノ"},"況":{"c":"況","jlpt":2,"strokes":8,"on":["キョウ"],"kun":["いわ.んや","おもむき","まし.て"],"label":"condition, situation","radical":"儿"},"胸":{"c":"胸","jlpt":2,"strokes":10,"on":["キョウ"],"kun":["むな-","むね"],"label":"bosom, breast, chest","radical":"丶"},"極":{"c":"極","jlpt":2,"strokes":12,"on":["キョク","ゴク"],"kun":["-ぎ.め","き.まる","き.める","きわ.まり","きわ.まる","きわ.み","きわ.める"],"label":"poles, conclusion, electric poles","radical":"一"},"玉":{"c":"玉","jlpt":2,"strokes":5,"on":["ギョク"],"kun":["-だま","たま","たま-"],"label":"jewel, ball","radical":"丶"},"均":{"c":"均","jlpt":2,"strokes":7,"on":["キン"],"kun":["なら.す"],"label":"level, average","radical":"二"},"禁":{"c":"禁","jlpt":2,"strokes":13,"on":["キン"],"kun":[],"label":"prohibition, ban, forbid","radical":"二"},"区":{"c":"区","jlpt":2,"strokes":4,"on":["オウ","ク","コウ"],"kun":[],"label":"ward, district","radical":"丶"},"隅":{"c":"隅","jlpt":2,"strokes":12,"on":["グウ"],"kun":["すみ"],"label":"corner, nook","radical":"冂"},"掘":{"c":"掘","jlpt":2,"strokes":11,"on":["クツ"],"kun":["ほ.る"],"label":"dig, delve, excavate","radical":"｜"},"訓":{"c":"訓","jlpt":2,"strokes":10,"on":["キン","クン"],"kun":["おし.える","くん.ずる","よ.む"],"label":"instruction, Japanese character reading","radical":"川"},"群":{"c":"群","jlpt":2,"strokes":13,"on":["グン"],"kun":["む.れ","む.れる","むら","むら.がる"],"label":"flock, cluster, crowd","radical":"一"},"軍":{"c":"軍","jlpt":2,"strokes":9,"on":["グン"],"kun":["いくさ"],"label":"army, battle, force","radical":"冖"},"傾":{"c":"傾","jlpt":2,"strokes":13,"on":["ケイ"],"kun":["かし.げる","かた.げる","かたぶ.く","かたむ.く","かたむ.ける"],"label":"lean, bias, incline","radical":"ハ"},"型":{"c":"型","jlpt":2,"strokes":9,"on":["ケイ"],"kun":["-がた","かた"],"label":"mould, model, type","radical":"一"},"敬":{"c":"敬","jlpt":2,"strokes":12,"on":["キョウ","ケイ"],"kun":["うやま.う"],"label":"awe, honor, respect","radical":"勹"},"軽":{"c":"軽","jlpt":2,"strokes":12,"on":["キョウ","キン","ケイ"],"kun":["かる.い","かろ.やか","かろ.んじる"],"label":"lightly, trifling, unimportant","radical":"又"},"芸":{"c":"芸","jlpt":2,"strokes":7,"on":["ウン","ゲイ"],"kun":["う.える","のり","わざ"],"label":"technique, acting, art","radical":"二"},"劇":{"c":"劇","jlpt":2,"strokes":15,"on":["ゲキ"],"kun":[],"label":"drama, play","radical":"匕"},"血":{"c":"血","jlpt":2,"strokes":6,"on":["ケツ"],"kun":["ち"],"label":"blood","radical":"皿"},"券":{"c":"券","jlpt":2,"strokes":8,"on":["ケン"],"kun":[],"label":"ticket","radical":"一"},"県":{"c":"県","jlpt":2,"strokes":9,"on":["ケン"],"kun":["か.ける"],"label":"prefecture","radical":"小"},"肩":{"c":"肩","jlpt":2,"strokes":8,"on":["ケン"],"kun":["かた"],"label":"shoulder","radical":"一"},"賢":{"c":"賢","jlpt":2,"strokes":16,"on":["ケン"],"kun":["かしこ.い"],"label":"intelligent, cleverness, wisdom","radical":"ハ"},"軒":{"c":"軒","jlpt":2,"strokes":10,"on":["ケン"],"kun":["のき"],"label":"flats, eaves","radical":"干"},"減":{"c":"減","jlpt":2,"strokes":12,"on":["ゲン"],"kun":["へ.らす","へ.る"],"label":"dwindle, curtail, decline","radical":"亅"},"個":{"c":"個","jlpt":2,"strokes":10,"on":["カ","コ"],"kun":[],"label":"individual","radical":"十"},"固":{"c":"固","jlpt":2,"strokes":8,"on":["コ"],"kun":["かた.い","かた.まり","かた.まる","かた.める"],"label":"harden, clot, curdle","radical":"十"},"庫":{"c":"庫","jlpt":2,"strokes":10,"on":["ク","コ"],"kun":["くら"],"label":"warehouse, storehouse","radical":"广"},"戸":{"c":"戸","jlpt":2,"strokes":4,"on":["コ"],"kun":["と"],"label":"door","radical":"一"},"枯":{"c":"枯","jlpt":2,"strokes":9,"on":["コ"],"kun":["か.らす","か.れる"],"label":"wither, be seasoned, die","radical":"十"},"湖":{"c":"湖","jlpt":2,"strokes":12,"on":["コ"],"kun":["みずうみ"],"label":"lake","radical":"十"},"雇":{"c":"雇","jlpt":2,"strokes":12,"on":["コ"],"kun":["やと.う"],"label":"employ, hire","radical":"一"},"効":{"c":"効","jlpt":2,"strokes":8,"on":["コウ"],"kun":["き.く","ききめ","なら.う"],"label":"merit, benefit, efficacy","radical":"力"},"厚":{"c":"厚","jlpt":2,"strokes":9,"on":["コウ"],"kun":["あか","あつ.い"],"label":"thick, brazen, cordial","radical":"厂"},"硬":{"c":"硬","jlpt":2,"strokes":12,"on":["コウ"],"kun":["かた.い"],"label":"stiff, hard","radical":"一"},"紅":{"c":"紅","jlpt":2,"strokes":9,"on":["ク","コウ"],"kun":["あか.い","くれない","べに"],"label":"crimson, deep red","radical":"小"},"耕":{"c":"耕","jlpt":2,"strokes":10,"on":["コウ"],"kun":["たがや.す"],"label":"till, cultivate, plow","radical":"｜"},"肯":{"c":"肯","jlpt":2,"strokes":8,"on":["コウ"],"kun":["がえんじ.る"],"label":"agreement, comply with, consent","radical":"月"},"航":{"c":"航","jlpt":2,"strokes":10,"on":["コウ"],"kun":[],"label":"navigate, cruise, fly","radical":"几"},"荒":{"c":"荒","jlpt":2,"strokes":9,"on":["コウ"],"kun":["あ.らし","あ.らす","あ.れる","あら.い","すさ.ぶ","すさ.む"],"label":"laid waste, rough, rude","radical":"亡"},"講":{"c":"講","jlpt":2,"strokes":17,"on":["コウ"],"kun":[],"label":"lecture, association, club","radical":"一"},"郊":{"c":"郊","jlpt":2,"strokes":9,"on":["コウ"],"kun":[],"label":"outskirts, rural area, suburbs","radical":"父"},"鉱":{"c":"鉱","jlpt":2,"strokes":13,"on":["コウ"],"kun":["あらがね"],"label":"mineral, ore","radical":"厶"},"香":{"c":"香","jlpt":2,"strokes":9,"on":["キョウ","コウ"],"kun":["か","かお.り","かお.る"],"label":"incense, perfume, smell","radical":"日"},"腰":{"c":"腰","jlpt":2,"strokes":13,"on":["ヨウ"],"kun":["こし"],"label":"loins, hips, low wainscoting","radical":"女"},"骨":{"c":"骨","jlpt":2,"strokes":10,"on":["コツ"],"kun":["ほね"],"label":"skeleton, bone, frame","radical":"冂"},"根":{"c":"根","jlpt":2,"strokes":10,"on":["コン"],"kun":["-ね","ね"],"label":"root, head (pimple)","radical":"木"},"混":{"c":"混","jlpt":2,"strokes":11,"on":["コン"],"kun":["-ま.じり","こ.む","ま.ざる","ま.じる","ま.ぜる"],"label":"mix, blend, confuse","radical":"日"},"査":{"c":"査","jlpt":2,"strokes":9,"on":["サ"],"kun":[],"label":"investigate","radical":"一"},"砂":{"c":"砂","jlpt":2,"strokes":9,"on":["サ","シャ"],"kun":["すな"],"label":"sand","radical":"ノ"},"再":{"c":"再","jlpt":2,"strokes":6,"on":["サ","サイ"],"kun":["ふたた.び"],"label":"again, second time, twice","radical":"一"},"採":{"c":"採","jlpt":2,"strokes":11,"on":["サイ"],"kun":["と.る"],"label":"pick, fetch, take","radical":"木"},"祭":{"c":"祭","jlpt":2,"strokes":11,"on":["サイ"],"kun":["まつ.り","まつ.る","まつり"],"label":"ritual, celebrate, deify","radical":"二"},"細":{"c":"細","jlpt":2,"strokes":11,"on":["サイ"],"kun":["こま.か","こま.かい","ほそ.い","ほそ.る"],"label":"dainty, detailed, get thin","radical":"小"},"菜":{"c":"菜","jlpt":2,"strokes":11,"on":["サイ"],"kun":["な"],"label":"vegetable, greens, side dish","radical":"木"},"材":{"c":"材","jlpt":2,"strokes":7,"on":["ザイ"],"kun":[],"label":"lumber, ingredients, log","radical":"一"},"坂":{"c":"坂","jlpt":2,"strokes":7,"on":["ハン"],"kun":["さか"],"label":"slope, hill, incline","radical":"厂"},"咲":{"c":"咲","jlpt":2,"strokes":9,"on":["ショウ"],"kun":["-ざき","さ.く"],"label":"blossom, bloom","radical":"一"},"冊":{"c":"冊","jlpt":2,"strokes":5,"on":["サク","サツ"],"kun":["ふみ"],"label":"tome, volume","radical":"一"},"刷":{"c":"刷","jlpt":2,"strokes":8,"on":["サツ"],"kun":["-ず.り","-ずり","す.る","は.く"],"label":"printing, brush, print","radical":"尸"},"札":{"c":"札","jlpt":2,"strokes":5,"on":["サツ"],"kun":["ふだ"],"label":"tag, bid, paper money","radical":"乙"},"皿":{"c":"皿","jlpt":2,"strokes":5,"on":["ベイ"],"kun":["さら"],"label":"dish, a helping, plate","radical":"皿"},"算":{"c":"算","jlpt":2,"strokes":14,"on":["サン"],"kun":["そろ"],"label":"calculate, abacus, divining","radical":"廾"},"伺":{"c":"伺","jlpt":2,"strokes":7,"on":["シ"],"kun":["うかが.う"],"label":"pay respects, ask, implore","radical":"一"},"刺":{"c":"刺","jlpt":2,"strokes":8,"on":["シ"],"kun":["さ.さる","さ.し","さ.す","さし","とげ"],"label":"thorn, calling card, pierce","radical":"亅"},"史":{"c":"史","jlpt":2,"strokes":5,"on":["シ"],"kun":[],"label":"history, chronicle","radical":"ノ"},"枝":{"c":"枝","jlpt":2,"strokes":8,"on":["シ"],"kun":["えだ"],"label":"bough, branch, limb","radical":"十"},"糸":{"c":"糸","jlpt":2,"strokes":6,"on":["シ"],"kun":["いと"],"label":"thread","radical":"小"},"脂":{"c":"脂","jlpt":2,"strokes":10,"on":["シ"],"kun":["あぶら"],"label":"fat, grease, gum","radical":"匕"},"詞":{"c":"詞","jlpt":2,"strokes":12,"on":["シ"],"kun":["ことば"],"label":"part of speech, poetry, words","radical":"一"},"誌":{"c":"誌","jlpt":2,"strokes":14,"on":["シ"],"kun":[],"label":"document, records","radical":"士"},"児":{"c":"児","jlpt":2,"strokes":7,"on":["ゲイ","ジ","ニ"],"kun":["-こ","-っこ","こ"],"label":"newborn babe, child, young of animals","radical":"｜"},"寺":{"c":"寺","jlpt":2,"strokes":6,"on":["ジ"],"kun":["てら"],"label":"Buddhist temple","radical":"土"},"湿":{"c":"湿","jlpt":2,"strokes":12,"on":["シツ","シュウ"],"kun":["うるお.う","うるお.す","しめ.す","しめ.る"],"label":"damp, moist, wet","radical":"｜"},"捨":{"c":"捨","jlpt":2,"strokes":11,"on":["シャ"],"kun":["す.てる"],"label":"discard, abandon, reject","radical":"口"},"弱":{"c":"弱","jlpt":2,"strokes":10,"on":["ジャク"],"kun":["よわ.い","よわ.まる","よわ.める","よわ.る"],"label":"weak, frail","radical":"冫"},"周":{"c":"周","jlpt":2,"strokes":8,"on":["シュウ"],"kun":["まわ.り"],"label":"circumference, circuit, lap","radical":"冂"},"州":{"c":"州","jlpt":2,"strokes":6,"on":["シュウ","ス"],"kun":["す"],"label":"state, province","radical":"｜"},"拾":{"c":"拾","jlpt":2,"strokes":9,"on":["シュウ","ジュウ"],"kun":["ひろ.う"],"label":"pick up, find, gather","radical":"一"},"舟":{"c":"舟","jlpt":2,"strokes":6,"on":["シュウ"],"kun":["-ぶね","ふな-","ふね"],"label":"boat, ship","radical":"舟"},"柔":{"c":"柔","jlpt":2,"strokes":9,"on":["ジュウ","ニュウ"],"kun":["やわ","やわ.ら","やわ.らか","やわ.らかい"],"label":"tender, gentleness, softness","radical":"木"},"祝":{"c":"祝","jlpt":2,"strokes":9,"on":["シュウ","シュク"],"kun":["いわ.う"],"label":"celebrate, congratulate","radical":"儿"},"述":{"c":"述","jlpt":2,"strokes":8,"on":["ジュツ"],"kun":["の.べる"],"label":"mention, relate, speak","radical":"丶"},"準":{"c":"準","jlpt":2,"strokes":13,"on":["ジュン"],"kun":["じゅん.じる","じゅん.ずる","なぞら.える","のり","ひと.しい","みずもり"],"label":"conform, correspond to, imitate","radical":"十"},"純":{"c":"純","jlpt":2,"strokes":10,"on":["ジュン"],"kun":[],"label":"genuine, innocence, net (profit)","radical":"小"},"順":{"c":"順","jlpt":2,"strokes":12,"on":["ジュン"],"kun":[],"label":"obey, docility, occasion","radical":"ハ"},"署":{"c":"署","jlpt":2,"strokes":13,"on":["ショ"],"kun":[],"label":"signature, govt office, police station","radical":"日"},"諸":{"c":"諸","jlpt":2,"strokes":15,"on":["ショ"],"kun":["もろ"],"label":"various, many, several","radical":"日"},"召":{"c":"召","jlpt":2,"strokes":5,"on":["ショウ"],"kun":["め.す"],"label":"seduce, buy, call","radical":"刀"},"将":{"c":"将","jlpt":2,"strokes":10,"on":["ショウ","ソウ"],"kun":["はた","ひきい.る","まさ","まさ.に","もって"],"label":"leader, admiral, and again","radical":"寸"},"床":{"c":"床","jlpt":2,"strokes":7,"on":["ショウ"],"kun":["とこ","ゆか"],"label":"bed, floor, padding","radical":"广"},"承":{"c":"承","jlpt":2,"strokes":8,"on":["ショウ","ジョウ"],"kun":["う.ける","うけたまわ.る"],"label":"acquiesce, be informed, hear","radical":"ノ"},"昇":{"c":"昇","jlpt":2,"strokes":8,"on":["ショウ"],"kun":["のぼ.る"],"label":"rise up","radical":"ノ"},"焼":{"c":"焼","jlpt":2,"strokes":12,"on":["ショウ"],"kun":["-や.き","や.き","や.き-","や.く","や.ける"],"label":"bake, burning","radical":"儿"},"照":{"c":"照","jlpt":2,"strokes":13,"on":["ショウ"],"kun":["て.らす","て.る","て.れる"],"label":"illuminate, bashful, compare","radical":"刀"},"省":{"c":"省","jlpt":2,"strokes":9,"on":["ショウ","セイ"],"kun":["かえり.みる","はぶ.く"],"label":"conserve, government ministry, omit","radical":"ノ"},"章":{"c":"章","jlpt":2,"strokes":11,"on":["ショウ"],"kun":[],"label":"badge, chapter, composition","radical":"十"},"紹":{"c":"紹","jlpt":2,"strokes":11,"on":["ショウ"],"kun":[],"label":"introduce, help, inherit","radical":"刀"},"象":{"c":"象","jlpt":2,"strokes":12,"on":["ショウ","ゾウ"],"kun":["かたど.る"],"label":"elephant, image, imitate","radical":"一"},"賞":{"c":"賞","jlpt":2,"strokes":15,"on":["ショウ"],"kun":["ほ.める"],"label":"prize, praise, reward","radical":"ハ"},"城":{"c":"城","jlpt":2,"strokes":9,"on":["ジョウ","セイ"],"kun":["しろ"],"label":"castle","radical":"ノ"},"畳":{"c":"畳","jlpt":2,"strokes":12,"on":["ジョウ","チョウ"],"kun":["かさ.なる","たた.む","たたみ"],"label":"tatami mat, do away with, fold","radical":"一"},"蒸":{"c":"蒸","jlpt":2,"strokes":13,"on":["ジョウ","セイ"],"kun":["む.す","む.らす","む.れる"],"label":"steam, foment, get musty","radical":"一"},"植":{"c":"植","jlpt":2,"strokes":12,"on":["ショク"],"kun":["う.える","う.わる"],"label":"plant","radical":"十"},"触":{"c":"触","jlpt":2,"strokes":13,"on":["ショク"],"kun":["さわ","さわ.る","ふ.れる"],"label":"contact, announce, conflict","radical":"虫"},"伸":{"c":"伸","jlpt":2,"strokes":7,"on":["シン"],"kun":["の.す","の.ばす","の.びる","の.べる"],"label":"expand, extend, increase","radical":"｜"},"森":{"c":"森","jlpt":2,"strokes":12,"on":["シン"],"kun":["もり"],"label":"forest, woods","radical":"木"},"臣":{"c":"臣","jlpt":2,"strokes":7,"on":["シン","ジン"],"kun":[],"label":"retainer, subject","radical":"匚"},"辛":{"c":"辛","jlpt":2,"strokes":7,"on":["シン"],"kun":["-づら.い","かのと","から.い","つら.い"],"label":"spicy, acrid, bitter","radical":"十"},"針":{"c":"針","jlpt":2,"strokes":10,"on":["シン"],"kun":["はり"],"label":"needle, pin, staple","radical":"十"},"震":{"c":"震","jlpt":2,"strokes":15,"on":["シン"],"kun":["ふる.う","ふる.える","ふる.わす","ふる.わせる"],"label":"quake, quiver, shake","radical":"厂"},"勢":{"c":"勢","jlpt":2,"strokes":13,"on":["セイ","ゼイ"],"kun":["いきお.い","はずみ"],"label":"forces, energy, military strength","radical":"丶"},"姓":{"c":"姓","jlpt":2,"strokes":8,"on":["ショウ","セイ"],"kun":[],"label":"surname","radical":"女"},"星":{"c":"星","jlpt":2,"strokes":9,"on":["ショウ","セイ"],"kun":["-ぼし","ほし"],"label":"star, dot, mark","radical":"日"},"清":{"c":"清","jlpt":2,"strokes":11,"on":["ショウ","シン","セイ"],"kun":["きよ.い","きよ.まる","きよ.める"],"label":"pure, Manchu dynasty, cleanse","radical":"二"},"税":{"c":"税","jlpt":2,"strokes":12,"on":["ゼイ"],"kun":[],"label":"tax, duty","radical":"儿"},"隻":{"c":"隻","jlpt":2,"strokes":10,"on":["セキ"],"kun":[],"label":"vessels, arrows, birds","radical":"又"},"籍":{"c":"籍","jlpt":2,"strokes":20,"on":["セキ"],"kun":[],"label":"enroll, domiciliary register, membership","radical":"一"},"績":{"c":"績","jlpt":2,"strokes":17,"on":["セキ"],"kun":[],"label":"exploits, achievements","radical":"二"},"跡":{"c":"跡","jlpt":2,"strokes":13,"on":["セキ"],"kun":["あと"],"label":"tracks, impression, mark","radical":"口"},"接":{"c":"接","jlpt":2,"strokes":11,"on":["ショウ","セツ"],"kun":["つ.ぐ"],"label":"touch, adjoin, contact","radical":"女"},"設":{"c":"設","jlpt":2,"strokes":11,"on":["セツ"],"kun":["もう.ける"],"label":"establishment, prepare, provision","radical":"几"},"占":{"c":"占","jlpt":2,"strokes":5,"on":["セン"],"kun":["うらな.う","し.める"],"label":"fortune-telling, divining, forecasting","radical":"卜"},"専":{"c":"専","jlpt":2,"strokes":9,"on":["セン"],"kun":["もっぱ.ら"],"label":"specialty, exclusive, mainly","radical":"十"},"泉":{"c":"泉","jlpt":2,"strokes":9,"on":["セン"],"kun":["いずみ"],"label":"spring, fountain","radical":"水"},"浅":{"c":"浅","jlpt":2,"strokes":9,"on":["セン"],"kun":["あさ.い"],"label":"shallow, frivolous, shameful","radical":"二"},"線":{"c":"線","jlpt":2,"strokes":15,"on":["セン"],"kun":["すじ"],"label":"line, track","radical":"小"},"双":{"c":"双","jlpt":2,"strokes":4,"on":["ソウ"],"kun":["たぐい","ならぶ","ふた","ふたつ"],"label":"pair, comparison, set","radical":"丶"},"層":{"c":"層","jlpt":2,"strokes":14,"on":["ソウ"],"kun":[],"label":"stratum, floor, layer","radical":"尸"},"捜":{"c":"捜","jlpt":2,"strokes":10,"on":["シュ","シュウ","ソウ"],"kun":["さが.す"],"label":"search, locate, look for","radical":"｜"},"掃":{"c":"掃","jlpt":2,"strokes":11,"on":["シュ","ソウ"],"kun":["は.く"],"label":"sweep, brush","radical":"冖"},"燥":{"c":"燥","jlpt":2,"strokes":17,"on":["ソウ"],"kun":["はしゃ.ぐ"],"label":"parch, dry up","radical":"口"},"総":{"c":"総","jlpt":2,"strokes":14,"on":["ソウ"],"kun":["す.べて","すべ.て","ふさ"],"label":"general, all, full","radical":"ハ"},"装":{"c":"装","jlpt":2,"strokes":12,"on":["ショウ","ソウ"],"kun":["よそお.い","よそお.う"],"label":"attire, disguise, dress","radical":"士"},"像":{"c":"像","jlpt":2,"strokes":14,"on":["ゾウ"],"kun":[],"label":"statue, figure, image","radical":"一"},"憎":{"c":"憎","jlpt":2,"strokes":14,"on":["ゾウ"],"kun":["にく.い","にく.しみ","にく.む","にく.らしい"],"label":"hate, detest","radical":"日"},"臓":{"c":"臓","jlpt":2,"strokes":19,"on":["ゾウ"],"kun":["はらわた"],"label":"entrails, bowels, viscera","radical":"ノ"},"蔵":{"c":"蔵","jlpt":2,"strokes":15,"on":["ソウ","ゾウ"],"kun":["おさ.める","かく.れる","くら"],"label":"storehouse, have, hide","radical":"ノ"},"贈":{"c":"贈","jlpt":2,"strokes":18,"on":["ソウ","ゾウ"],"kun":["おく.る"],"label":"presents, award to, confer on","radical":"ハ"},"造":{"c":"造","jlpt":2,"strokes":10,"on":["ゾウ"],"kun":["-づく.り","つく.り","つく.る"],"label":"create, make, physique","radical":"ノ"},"則":{"c":"則","jlpt":2,"strokes":9,"on":["ソク"],"kun":["すなわち","のっと.る","のり"],"label":"rule, based on, follow","radical":"ハ"},"測":{"c":"測","jlpt":2,"strokes":12,"on":["ソク"],"kun":["はか.る"],"label":"fathom, measure, plan","radical":"ハ"},"卒":{"c":"卒","jlpt":2,"strokes":8,"on":["シュツ","ソツ"],"kun":["お.える","お.わる","そっ.する","ついに","にわか"],"label":"graduate, die, private","radical":"人"},"孫":{"c":"孫","jlpt":2,"strokes":10,"on":["ソン"],"kun":["まご"],"label":"grandchild, descendants","radical":"ノ"},"尊":{"c":"尊","jlpt":2,"strokes":12,"on":["ソン"],"kun":["たっと.い","たっと.ぶ","とうと.い","とうと.ぶ"],"label":"revered, exalted, noble","radical":"寸"},"損":{"c":"損","jlpt":2,"strokes":13,"on":["ソン"],"kun":["-そこ.なう","-そこ.ねる","そこ.なう","そこ.ねる","そこな.う"],"label":"damage, disadvantage, hurt","radical":"ハ"},"村":{"c":"村","jlpt":2,"strokes":7,"on":["ソン"],"kun":["むら"],"label":"town, village","radical":"寸"},"帯":{"c":"帯","jlpt":2,"strokes":10,"on":["タイ"],"kun":["お.びる","おび"],"label":"sash, belt, obi","radical":"一"},"替":{"c":"替","jlpt":2,"strokes":12,"on":["タイ"],"kun":["か.え-","か.える","か.わる"],"label":"exchange, spare, substitute","radical":"二"},"袋":{"c":"袋","jlpt":2,"strokes":11,"on":["タイ","ダイ"],"kun":["ふくろ"],"label":"sack, bag, pouch","radical":"弋"},"濯":{"c":"濯","jlpt":2,"strokes":17,"on":["タク"],"kun":["すす.ぐ","ゆす.ぐ"],"label":"laundry, pour on, rinse","radical":"隹"},"谷":{"c":"谷","jlpt":2,"strokes":7,"on":["コク"],"kun":["きわ.まる","たに"],"label":"valley","radical":"ハ"},"担":{"c":"担","jlpt":2,"strokes":8,"on":["タン"],"kun":["かつ.ぐ","にな.う"],"label":"shouldering, bear, carry","radical":"一"},"炭":{"c":"炭","jlpt":2,"strokes":9,"on":["タン"],"kun":["すみ"],"label":"charcoal, coal","radical":"厂"},"短":{"c":"短","jlpt":2,"strokes":12,"on":["タン"],"kun":["みじか.い"],"label":"short, brevity, defect","radical":"口"},"団":{"c":"団","jlpt":2,"strokes":6,"on":["ダン","トン"],"kun":["かたまり","まる.い"],"label":"group, association","radical":"囗"},"池":{"c":"池","jlpt":2,"strokes":6,"on":["チ"],"kun":["いけ"],"label":"pond, cistern, pool","radical":"也"},"築":{"c":"築","jlpt":2,"strokes":16,"on":["チク"],"kun":["きず.く"],"label":"fabricate, build, construct","radical":"丶"},"畜":{"c":"畜","jlpt":2,"strokes":10,"on":["チク"],"kun":[],"label":"livestock, domestic fowl and animals","radical":"幺"},"竹":{"c":"竹","jlpt":2,"strokes":6,"on":["チク"],"kun":["たけ"],"label":"bamboo","radical":"竹"},"仲":{"c":"仲","jlpt":2,"strokes":6,"on":["チュウ"],"kun":["なか"],"label":"go-between, relationship","radical":"｜"},"柱":{"c":"柱","jlpt":2,"strokes":9,"on":["チュウ"],"kun":["はしら"],"label":"pillar, cylinder, post","radical":"丶"},"虫":{"c":"虫","jlpt":2,"strokes":6,"on":["キ","チュウ"],"kun":["むし"],"label":"insect, bug, temper","radical":"虫"},"駐":{"c":"駐","jlpt":2,"strokes":15,"on":["チュウ"],"kun":[],"label":"reside in, resident, stop-over","radical":"丶"},"著":{"c":"著","jlpt":2,"strokes":11,"on":["チャク","チョ"],"kun":["あらわ.す","いちじる.しい"],"label":"renowned, arrival, don","radical":"日"},"貯":{"c":"貯","jlpt":2,"strokes":12,"on":["チョ"],"kun":["た.める","たくわ.える"],"label":"savings, keep, lay in","radical":"一"},"兆":{"c":"兆","jlpt":2,"strokes":6,"on":["チョウ"],"kun":["きざ.し","きざ.す"],"label":"portent, omen, sign","radical":"儿"},"庁":{"c":"庁","jlpt":2,"strokes":5,"on":["チョウ","テイ"],"kun":["やくしょ"],"label":"government office","radical":"一"},"超":{"c":"超","jlpt":2,"strokes":12,"on":["チョウ"],"kun":["こ.える","こ.す"],"label":"transcend","radical":"刀"},"沈":{"c":"沈","jlpt":2,"strokes":7,"on":["ジン","チン"],"kun":["しず.む","しず.める"],"label":"sink, aloes, be depressed","radical":"冖"},"珍":{"c":"珍","jlpt":2,"strokes":9,"on":["チン"],"kun":["たから","めずら.しい"],"label":"rare, curious, strange","radical":"彡"},"低":{"c":"低","jlpt":2,"strokes":7,"on":["テイ"],"kun":["ひく.い","ひく.まる","ひく.める"],"label":"lower, humble, short","radical":"一"},"停":{"c":"停","jlpt":2,"strokes":11,"on":["テイ"],"kun":["と.まる","と.める"],"label":"halt, stopping","radical":"一"},"底":{"c":"底","jlpt":2,"strokes":8,"on":["テイ"],"kun":["そこ"],"label":"bottom, base, bottom price","radical":"广"},"泥":{"c":"泥","jlpt":2,"strokes":8,"on":["デ","デイ","ナイ","ニ"],"kun":["どろ","なず.む"],"label":"mud, adhere to, be attached to","radical":"匕"},"滴":{"c":"滴","jlpt":2,"strokes":14,"on":["テキ"],"kun":["しずく","したた.る"],"label":"drip, drop","radical":"冂"},"鉄":{"c":"鉄","jlpt":2,"strokes":13,"on":["テツ"],"kun":["くろがね"],"label":"iron","radical":"ノ"},"殿":{"c":"殿","jlpt":2,"strokes":13,"on":["テン","デン"],"kun":["-どの","との"],"label":"hall, lord, mansion","radical":"一"},"塗":{"c":"塗","jlpt":2,"strokes":13,"on":["ト"],"kun":["ぬ.り","ぬ.る","まみ.れる"],"label":"paint, coating, daub","radical":"一"},"党":{"c":"党","jlpt":2,"strokes":10,"on":["トウ"],"kun":["なかま","むら"],"label":"party, clique, faction","radical":"儿"},"凍":{"c":"凍","jlpt":2,"strokes":10,"on":["トウ"],"kun":["い.てる","こお.る","こご.える","こご.る","し.みる"],"label":"frozen, congeal, refrigerate","radical":"一"},"塔":{"c":"塔","jlpt":2,"strokes":12,"on":["トウ"],"kun":[],"label":"pagoda, steeple, tower","radical":"一"},"島":{"c":"島","jlpt":2,"strokes":10,"on":["トウ"],"kun":["しま"],"label":"island","radical":"山"},"湯":{"c":"湯","jlpt":2,"strokes":12,"on":["トウ"],"kun":["ゆ"],"label":"hot water, bath, hot spring","radical":"一"},"灯":{"c":"灯","jlpt":2,"strokes":6,"on":["トウ"],"kun":["あかり","とも.す","ともしび","ひ","ほ-"],"label":"lamp, a light, light","radical":"一"},"筒":{"c":"筒","jlpt":2,"strokes":12,"on":["トウ"],"kun":["つつ"],"label":"cylinder, gun barrel, pipe","radical":"一"},"導":{"c":"導","jlpt":2,"strokes":15,"on":["ドウ"],"kun":["みちび.く"],"label":"guidance, conduct, leading","radical":"寸"},"童":{"c":"童","jlpt":2,"strokes":12,"on":["ドウ"],"kun":["わらべ"],"label":"juvenile, child","radical":"立"},"銅":{"c":"銅","jlpt":2,"strokes":14,"on":["ドウ"],"kun":["あかがね"],"label":"copper","radical":"一"},"毒":{"c":"毒","jlpt":2,"strokes":8,"on":["ドク"],"kun":[],"label":"poison, germ, harm","radical":"二"},"届":{"c":"届","jlpt":2,"strokes":8,"on":["カイ"],"kun":["-とど.け","とど.く","とど.ける"],"label":"deliver, arrive, forward","radical":"｜"},"曇":{"c":"曇","jlpt":2,"strokes":16,"on":["ドン"],"kun":["くも.る"],"label":"cloudy weather, cloud up","radical":"二"},"鈍":{"c":"鈍","jlpt":2,"strokes":12,"on":["ドン"],"kun":["なま.る","なまく.ら","にぶ-","にぶ.い","にぶ.る"],"label":"dull, blunt, foolish","radical":"金"},"軟":{"c":"軟","jlpt":2,"strokes":11,"on":["ナン"],"kun":["やわ.らか","やわ.らかい"],"label":"soft","radical":"欠"},"乳":{"c":"乳","jlpt":2,"strokes":8,"on":["ニュウ"],"kun":["ち","ちち"],"label":"milk, breasts","radical":"乙"},"燃":{"c":"燃","jlpt":2,"strokes":16,"on":["ネン"],"kun":["も.える","も.す","も.やす"],"label":"burn, blaze, glow","radical":"夕"},"悩":{"c":"悩","jlpt":2,"strokes":10,"on":["ノウ"],"kun":["なや.ましい","なや.ます","なや.む","なやみ"],"label":"trouble, distress, illness","radical":"凵"},"濃":{"c":"濃","jlpt":2,"strokes":16,"on":["ノウ"],"kun":["こ.い"],"label":"concentrated, dark, thick","radical":"一"},"脳":{"c":"脳","jlpt":2,"strokes":11,"on":["ドウ","ノウ"],"kun":["のうずる"],"label":"brain, memory","radical":"凵"},"農":{"c":"農","jlpt":2,"strokes":13,"on":["ノウ"],"kun":[],"label":"agriculture, farmers","radical":"一"},"波":{"c":"波","jlpt":2,"strokes":8,"on":["ハ"],"kun":["なみ"],"label":"waves, Poland, billows","radical":"又"},"拝":{"c":"拝","jlpt":2,"strokes":8,"on":["ハイ"],"kun":["おが.む","おろが.む"],"label":"worship, adore, pray to","radical":"一"},"倍":{"c":"倍","jlpt":2,"strokes":10,"on":["バイ"],"kun":[],"label":"double, fold, times","radical":"口"},"泊":{"c":"泊","jlpt":2,"strokes":8,"on":["ハク"],"kun":["と.まる","と.める"],"label":"overnight stay, put up at","radical":"白"},"薄":{"c":"薄","jlpt":2,"strokes":16,"on":["ハク"],"kun":["-うす","うす-","うす.い","うす.まる","うす.める","うす.ら-","うす.らぐ","うす.れる","すすき"],"label":"dilute, pampas grass, thin","radical":"丶"},"爆":{"c":"爆","jlpt":2,"strokes":19,"on":["バク"],"kun":["は.ぜる"],"label":"bomb, burst open, pop","radical":"一"},"麦":{"c":"麦","jlpt":2,"strokes":7,"on":["バク"],"kun":["むぎ"],"label":"barley, wheat","radical":"二"},"肌":{"c":"肌","jlpt":2,"strokes":6,"on":["キ"],"kun":["はだ"],"label":"texture, body, grain","radical":"几"},"板":{"c":"板","jlpt":2,"strokes":8,"on":["ハン","バン"],"kun":["いた"],"label":"plank, board, plate","radical":"厂"},"版":{"c":"版","jlpt":2,"strokes":8,"on":["ハン"],"kun":[],"label":"printing block, edition, impression","radical":"厂"},"般":{"c":"般","jlpt":2,"strokes":10,"on":["ハン"],"kun":[],"label":"carrier, all, carry","radical":"几"},"販":{"c":"販","jlpt":2,"strokes":11,"on":["ハン"],"kun":[],"label":"marketing, sell, trade","radical":"ハ"},"比":{"c":"比","jlpt":2,"strokes":4,"on":["ヒ"],"kun":["くら.べる"],"label":"compare, Philippines, race","radical":"比"},"皮":{"c":"皮","jlpt":2,"strokes":5,"on":["ヒ"],"kun":["かわ"],"label":"pelt, hide, leather","radical":"又"},"被":{"c":"被","jlpt":2,"strokes":10,"on":["ヒ"],"kun":["おお.う","かぶ.せる","かぶ.る","こうむ.る"],"label":"incur, be exposed (film), brood over","radical":"又"},"鼻":{"c":"鼻","jlpt":2,"strokes":14,"on":["ビ"],"kun":["はな"],"label":"nose, snout","radical":"廾"},"匹":{"c":"匹","jlpt":2,"strokes":4,"on":["ヒツ"],"kun":["ひき"],"label":"equal, head, roll of cloth","radical":"儿"},"筆":{"c":"筆","jlpt":2,"strokes":12,"on":["ヒツ"],"kun":["ふで"],"label":"writing brush, handwriting","radical":"竹"},"氷":{"c":"氷","jlpt":2,"strokes":5,"on":["ヒョウ"],"kun":["こお.る","こおり","ひ"],"label":"icicle, congeal, freeze","radical":"丶"},"秒":{"c":"秒","jlpt":2,"strokes":9,"on":["ビョウ"],"kun":[],"label":"second (1/60 minute)","radical":"ノ"},"瓶":{"c":"瓶","jlpt":2,"strokes":11,"on":["ビン"],"kun":["かめ","へい"],"label":"bottle, jar, jug","radical":"一"},"布":{"c":"布","jlpt":2,"strokes":5,"on":["フ","ホ"],"kun":["きれ","し.く","ぬの"],"label":"linen, cloth, distribute","radical":"一"},"府":{"c":"府","jlpt":2,"strokes":8,"on":["フ"],"kun":[],"label":"borough, govt office","radical":"寸"},"普":{"c":"普","jlpt":2,"strokes":12,"on":["フ"],"kun":["あまね.く","あまねし"],"label":"universal, Prussia, generally","radical":"一"},"符":{"c":"符","jlpt":2,"strokes":11,"on":["フ"],"kun":[],"label":"token, charm, mark","radical":"寸"},"膚":{"c":"膚","jlpt":2,"strokes":15,"on":["フ"],"kun":["はだ"],"label":"skin, body, disposition","radical":"匕"},"武":{"c":"武","jlpt":2,"strokes":8,"on":["ブ","ム"],"kun":["たけ","たけ.し"],"label":"warrior, arms, chivalry","radical":"弋"},"封":{"c":"封","jlpt":2,"strokes":9,"on":["フウ","ホウ"],"kun":[],"label":"seal, closing","radical":"土"},"副":{"c":"副","jlpt":2,"strokes":11,"on":["フク"],"kun":[],"label":"aide, assistant, copy","radical":"一"},"復":{"c":"復","jlpt":2,"strokes":12,"on":["フク"],"kun":["また"],"label":"restore, resume, return to","radical":"一"},"幅":{"c":"幅","jlpt":2,"strokes":12,"on":["フク"],"kun":["はば"],"label":"hanging scroll, width","radical":"一"},"複":{"c":"複","jlpt":2,"strokes":14,"on":["フク"],"kun":[],"label":"duplicate, compound, double","radical":"夂"},"沸":{"c":"沸","jlpt":2,"strokes":8,"on":["フツ"],"kun":["わ.かす","わ.く"],"label":"seethe, boil, breed","radical":"｜"},"仏":{"c":"仏","jlpt":2,"strokes":4,"on":["フツ","ブツ"],"kun":["ほとけ"],"label":"Buddha, France, the dead","radical":"厶"},"粉":{"c":"粉","jlpt":2,"strokes":10,"on":["フン"],"kun":["こ","こな","デシメートル"],"label":"flour, dust, powder","radical":"ハ"},"兵":{"c":"兵","jlpt":2,"strokes":7,"on":["ヒョウ","ヘイ"],"kun":["つわもの"],"label":"soldier, army, private","radical":"一"},"並":{"c":"並","jlpt":2,"strokes":8,"on":["ヘイ","ホウ"],"kun":["な.み","なみ","なら.びに","なら.ぶ","なら.べる"],"label":"row, and, as well as","radical":"一"},"片":{"c":"片","jlpt":2,"strokes":4,"on":["ヘン"],"kun":["かた","かた-"],"label":"one-sided, leaf, sheet","radical":"片"},"編":{"c":"編","jlpt":2,"strokes":15,"on":["ヘン"],"kun":["-あ.み","あ.む"],"label":"compilation, braid, completed poem","radical":"一"},"辺":{"c":"辺","jlpt":2,"strokes":5,"on":["ヘン"],"kun":["-べ","あた.り","ほと.り"],"label":"environs, border, boundary","radical":"刀"},"補":{"c":"補","jlpt":2,"strokes":12,"on":["ホ"],"kun":["おぎな.う"],"label":"supplement, assistant, compensate","radical":"丶"},"募":{"c":"募","jlpt":2,"strokes":12,"on":["ボ"],"kun":["つの.る"],"label":"recruit, campaign, enlist","radical":"力"},"包":{"c":"包","jlpt":2,"strokes":5,"on":["ホウ"],"kun":["くる.む","つつ.む"],"label":"wrap, conceal, cover","radical":"勹"},"宝":{"c":"宝","jlpt":2,"strokes":8,"on":["ホウ"],"kun":["たから"],"label":"treasure, valuables, wealth","radical":"丶"},"豊":{"c":"豊","jlpt":2,"strokes":13,"on":["ブ","ホウ"],"kun":["とよ","ゆた.か"],"label":"bountiful, excellent, rich","radical":"一"},"帽":{"c":"帽","jlpt":2,"strokes":12,"on":["ボウ","モウ"],"kun":["おお.う","ずきん"],"label":"cap, headgear","radical":"巾"},"暴":{"c":"暴","jlpt":2,"strokes":15,"on":["バク","ボウ"],"kun":["あば.く","あば.れる"],"label":"outburst, cruelty, force","radical":"一"},"棒":{"c":"棒","jlpt":2,"strokes":12,"on":["ボウ"],"kun":[],"label":"rod, cane, club","radical":"一"},"貿":{"c":"貿","jlpt":2,"strokes":12,"on":["ボウ"],"kun":[],"label":"trade, exchange","radical":"ハ"},"防":{"c":"防","jlpt":2,"strokes":7,"on":["ボウ"],"kun":["ふせ.ぐ"],"label":"ward off, defend, protect","radical":"方"},"磨":{"c":"磨","jlpt":2,"strokes":16,"on":["マ"],"kun":["す.る","みが.く"],"label":"grind, brush (teeth), improve","radical":"口"},"埋":{"c":"埋","jlpt":2,"strokes":10,"on":["マイ"],"kun":["い.ける","う.まる","う.める","う.もれる","うず.まる","うず.める"],"label":"bury, be filled up, embedded","radical":"土"},"綿":{"c":"綿","jlpt":2,"strokes":14,"on":["メン"],"kun":["わた"],"label":"cotton","radical":"小"},"毛":{"c":"毛","jlpt":2,"strokes":4,"on":["モウ"],"kun":["け"],"label":"fur, down, feather","radical":"毛"},"門":{"c":"門","jlpt":2,"strokes":8,"on":["モン"],"kun":["かど","と"],"label":"gate","radical":"門"},"油":{"c":"油","jlpt":2,"strokes":8,"on":["ユ","ユウ"],"kun":["あぶら"],"label":"oil, fat","radical":"｜"},"輸":{"c":"輸","jlpt":2,"strokes":16,"on":["シュ","ユ"],"kun":[],"label":"transport, be inferior, send","radical":"一"},"勇":{"c":"勇","jlpt":2,"strokes":9,"on":["ユウ"],"kun":["いさ.む"],"label":"courage, be in high spirits, bravery","radical":"力"},"郵":{"c":"郵","jlpt":2,"strokes":11,"on":["ユウ"],"kun":[],"label":"mail, stagecoach stop","radical":"一"},"預":{"c":"預","jlpt":2,"strokes":13,"on":["ヨ"],"kun":["あず.かる","あず.ける"],"label":"deposit, custody, entrust to","radical":"一"},"幼":{"c":"幼","jlpt":2,"strokes":5,"on":["ヨウ"],"kun":["おさな.い"],"label":"infancy, childhood","radical":"力"},"溶":{"c":"溶","jlpt":2,"strokes":13,"on":["ヨウ"],"kun":["と.かす","と.く","と.ける"],"label":"melt, dissolve, thaw","radical":"ハ"},"踊":{"c":"踊","jlpt":2,"strokes":14,"on":["ヨウ"],"kun":["おど.る"],"label":"jump, dance, leap","radical":"口"},"浴":{"c":"浴","jlpt":2,"strokes":10,"on":["ヨク"],"kun":["あ.びせる","あ.びる"],"label":"bathe, bask in, be favored with","radical":"ハ"},"翌":{"c":"翌","jlpt":2,"strokes":11,"on":["ヨク"],"kun":[],"label":"the following, next","radical":"冫"},"絡":{"c":"絡","jlpt":2,"strokes":12,"on":["ラク"],"kun":["から.まる","から.む"],"label":"entwine, coil around, get caught in","radical":"口"},"乱":{"c":"乱","jlpt":2,"strokes":7,"on":["ラン","ロン"],"kun":["おさ.める","みだ","みだ.す","みだ.る","みだ.れる","わた.る"],"label":"riot, disorder, disturb","radical":"乙"},"卵":{"c":"卵","jlpt":2,"strokes":7,"on":["ラン"],"kun":["たまご"],"label":"egg, ovum, roe","radical":"丶"},"裏":{"c":"裏","jlpt":2,"strokes":13,"on":["リ"],"kun":["うら"],"label":"back, amidst, in","radical":"衣"},"陸":{"c":"陸","jlpt":2,"strokes":11,"on":["リク","ロク"],"kun":["おか"],"label":"land, six","radical":"儿"},"律":{"c":"律","jlpt":2,"strokes":9,"on":["リチ","リツ","レツ"],"kun":[],"label":"rhythm, control, gauge","radical":"彳"},"略":{"c":"略","jlpt":2,"strokes":11,"on":["リャク"],"kun":["おか.す","おさ.める","はか.る","はかりごと","はぶ.く","ほぼ"],"label":"abbreviation, capture, omission","radical":"口"},"粒":{"c":"粒","jlpt":2,"strokes":11,"on":["リュウ"],"kun":["つぶ"],"label":"grains, drop","radical":"立"},"了":{"c":"了","jlpt":2,"strokes":2,"on":["リョウ"],"kun":[],"label":"complete, finish","radical":"一"},"涼":{"c":"涼","jlpt":2,"strokes":11,"on":["リョウ"],"kun":["うす.い","すず.しい","すず.む","すず.やか","ひや.す","まことに"],"label":"refreshing, nice and cool","radical":"口"},"療":{"c":"療","jlpt":2,"strokes":17,"on":["リョウ"],"kun":[],"label":"heal, cure","radical":"大"},"量":{"c":"量","jlpt":2,"strokes":12,"on":["リョウ"],"kun":["はか.る"],"label":"quantity, amount, consider","radical":"一"},"領":{"c":"領","jlpt":2,"strokes":14,"on":["リョウ"],"kun":["えり"],"label":"jurisdiction, dominion, fief","radical":"一"},"緑":{"c":"緑","jlpt":2,"strokes":14,"on":["リョク","ロク"],"kun":["みどり"],"label":"green","radical":"小"},"林":{"c":"林","jlpt":2,"strokes":8,"on":["リン"],"kun":["はやし"],"label":"grove, forest","radical":"木"},"輪":{"c":"輪","jlpt":2,"strokes":15,"on":["リン"],"kun":["わ"],"label":"wheel, circle, link","radical":"一"},"涙":{"c":"涙","jlpt":2,"strokes":10,"on":["ルイ","レイ"],"kun":["なみだ"],"label":"tears, sympathy","radical":"一"},"令":{"c":"令","jlpt":2,"strokes":5,"on":["レイ"],"kun":[],"label":"orders, command, decree","radical":"一"},"零":{"c":"零","jlpt":2,"strokes":13,"on":["レイ"],"kun":["こぼ.す","こぼ.れる","ぜろ"],"label":"zero, cipher, nothing","radical":"一"},"齢":{"c":"齢","jlpt":2,"strokes":17,"on":["レイ"],"kun":["とし","よわい"],"label":"age","radical":"一"},"歴":{"c":"歴","jlpt":2,"strokes":14,"on":["レキ","レッキ"],"kun":[],"label":"curriculum, continuation","radical":"厂"},"恋":{"c":"恋","jlpt":2,"strokes":10,"on":["レン"],"kun":["こ.う","こい","こい.しい"],"label":"romance, darling, in love","radical":"ハ"},"練":{"c":"練","jlpt":2,"strokes":14,"on":["レン"],"kun":["ね.り","ね.る"],"label":"practice, drill, gloss","radical":"｜"},"録":{"c":"録","jlpt":2,"strokes":16,"on":["ロク"],"kun":["しる.す","と.る"],"label":"record","radical":"水"},"湾":{"c":"湾","jlpt":2,"strokes":12,"on":["ワン"],"kun":["いりえ"],"label":"gulf, bay, inlet","radical":"弓"},"腕":{"c":"腕","jlpt":2,"strokes":12,"on":["ワン"],"kun":["うで"],"label":"arm, ability, talent","radical":"卩"},"亜":{"c":"亜","jlpt":1,"strokes":7,"on":["ア"],"kun":["つ.ぐ"],"label":"Asia, come after, rank next","radical":"一"},"阿":{"c":"阿","jlpt":1,"strokes":8,"on":["ア","オ"],"kun":["おもね.る","くま"],"label":"Africa, corner, fawn upon","radical":"一"},"哀":{"c":"哀","jlpt":1,"strokes":9,"on":["アイ"],"kun":["あわ.れ","あわ.れむ","かな.しい"],"label":"pathetic, grief, pathos","radical":"口"},"葵":{"c":"葵","jlpt":1,"strokes":12,"on":["キ"],"kun":["あおい"],"label":"hollyhock","radical":"ノ"},"茜":{"c":"茜","jlpt":1,"strokes":9,"on":["セン"],"kun":["あかね"],"label":"Turkey red, madder, red dye","radical":"西"},"握":{"c":"握","jlpt":1,"strokes":12,"on":["アク"],"kun":["にぎ.る"],"label":"grip, bribe, hold","radical":"厶"},"渥":{"c":"渥","jlpt":1,"strokes":12,"on":["アク"],"kun":["あつ.い","うるお.う"],"label":"moisten, kindness","radical":"厶"},"旭":{"c":"旭","jlpt":1,"strokes":6,"on":["キョク"],"kun":["あさひ"],"label":"rising sun, morning sun","radical":"日"},"梓":{"c":"梓","jlpt":1,"strokes":11,"on":["シ"],"kun":["あずさ"],"label":"catalpa tree, woodblock printing","radical":"十"},"扱":{"c":"扱","jlpt":1,"strokes":6,"on":["キュウ","ソウ"],"kun":["あつか.い","あつか.う","あつか.る","こ.く"],"label":"handle, entertain, strip","radical":"及"},"絢":{"c":"絢","jlpt":1,"strokes":12,"on":["ケン"],"kun":[],"label":"brilliant fabric design","radical":"勹"},"綾":{"c":"綾","jlpt":1,"strokes":14,"on":["リン"],"kun":["あや"],"label":"design, figured cloth, twill","radical":"儿"},"鮎":{"c":"鮎","jlpt":1,"strokes":16,"on":["デン","ネン"],"kun":["あゆ","なまず"],"label":"freshwater trout, smelt","radical":"卜"},"案":{"c":"案","jlpt":1,"strokes":10,"on":["アン"],"kun":["つくえ"],"label":"plan, bench, draft","radical":"女"},"杏":{"c":"杏","jlpt":1,"strokes":7,"on":["アン","キョウ","コウ"],"kun":["あんず"],"label":"apricot","radical":"口"},"伊":{"c":"伊","jlpt":1,"strokes":6,"on":["イ"],"kun":["かれ"],"label":"Italy, that one","radical":"｜"},"威":{"c":"威","jlpt":1,"strokes":9,"on":["イ"],"kun":["おど.かす","おど.し","おど.す"],"label":"intimidate, dignity, majesty","radical":"ノ"},"尉":{"c":"尉","jlpt":1,"strokes":11,"on":["イ","ジョウ"],"kun":[],"label":"military officer, jailer, old man","radical":"二"},"惟":{"c":"惟","jlpt":1,"strokes":11,"on":["イ","ユイ"],"kun":["おも.うに","おも.んみる","これ"],"label":"consider, reflect, think","radical":"隹"},"慰":{"c":"慰","jlpt":1,"strokes":15,"on":["イ"],"kun":["なぐさ.む","なぐさ.める"],"label":"consolation, amusement, cheer","radical":"二"},"為":{"c":"為","jlpt":1,"strokes":9,"on":["イ"],"kun":["す.る","ため","たり","つく.る","な.す","な.る","なり"],"label":"do, advantage, as a result of","radical":"丶"},"異":{"c":"異","jlpt":1,"strokes":11,"on":["イ"],"kun":["け","こと","こと.なる"],"label":"uncommon, curious, different","radical":"一"},"維":{"c":"維","jlpt":1,"strokes":14,"on":["イ"],"kun":[],"label":"fiber, rope, tie","radical":"小"},"緯":{"c":"緯","jlpt":1,"strokes":16,"on":["イ"],"kun":["ぬき","よこいと"],"label":"horizontal, (parallels of) latitude","radical":"口"},"遺":{"c":"遺","jlpt":1,"strokes":15,"on":["イ","ユイ"],"kun":["のこ.す"],"label":"bequeath, leave behind, reserve","radical":"一"},"井":{"c":"井","jlpt":1,"strokes":4,"on":["ショウ","セイ"],"kun":["い"],"label":"well, community, town","radical":"一"},"亥":{"c":"亥","jlpt":1,"strokes":6,"on":["カイ","ガイ"],"kun":["い"],"label":"sign of the hog","radical":"丶"},"郁":{"c":"郁","jlpt":1,"strokes":9,"on":["イク"],"kun":[],"label":"cultural progress, perfume","radical":"一"},"磯":{"c":"磯","jlpt":1,"strokes":17,"on":["キ"],"kun":["いそ"],"label":"beach, seashore","radical":"丶"},"壱":{"c":"壱","jlpt":1,"strokes":7,"on":["イチ","イツ"],"kun":["ひとつ"],"label":"one (in documents)","radical":"冖"},"逸":{"c":"逸","jlpt":1,"strokes":11,"on":["イツ"],"kun":["そ.らす","そ.れる","はぐ.れる"],"label":"deviate, diverge, elude","radical":"ノ"},"稲":{"c":"稲","jlpt":1,"strokes":14,"on":["テ","トウ"],"kun":["いな-","いね"],"label":"rice plant","radical":"｜"},"芋":{"c":"芋","jlpt":1,"strokes":6,"on":["ウ"],"kun":["いも"],"label":"potato","radical":"一"},"允":{"c":"允","jlpt":1,"strokes":4,"on":["イン"],"kun":["じょう","まこと.に","ゆるす"],"label":"license, permit, sincerity","radical":"儿"},"姻":{"c":"姻","jlpt":1,"strokes":9,"on":["イン"],"kun":[],"label":"matrimony, marry","radical":"囗"},"胤":{"c":"胤","jlpt":1,"strokes":9,"on":["イン"],"kun":["たね"],"label":"descendent, issue, offspring","radical":"儿"},"陰":{"c":"陰","jlpt":1,"strokes":11,"on":["イン"],"kun":["かげ","かげ.る"],"label":"shade, negative, secret","radical":"一"},"隠":{"c":"隠","jlpt":1,"strokes":14,"on":["イン","オン"],"kun":["かく.し","かく.す","かく.れる","よ.る"],"label":"conceal, cover, hide","radical":"ノ"},"韻":{"c":"韻","jlpt":1,"strokes":19,"on":["イン"],"kun":[],"label":"rhyme, elegance, tone","radical":"ハ"},"卯":{"c":"卯","jlpt":1,"strokes":5,"on":["ボウ","モウ"],"kun":["う"],"label":"east, sign of the hare or rabbit","radical":"卩"},"丑":{"c":"丑","jlpt":1,"strokes":4,"on":["チュウ"],"kun":["うし"],"label":"sign of the ox or cow","radical":"一"},"渦":{"c":"渦","jlpt":1,"strokes":12,"on":["カ"],"kun":["うず"],"label":"whirlpool, eddy, vortex","radical":"｜"},"唄":{"c":"唄","jlpt":1,"strokes":10,"on":["バイ"],"kun":["うた","うた.う"],"label":"ballad, song","radical":"ハ"},"浦":{"c":"浦","jlpt":1,"strokes":10,"on":["ホ"],"kun":["うら"],"label":"bay, beach, creek","radical":"丶"},"叡":{"c":"叡","jlpt":1,"strokes":16,"on":["エイ"],"kun":["あき.らか"],"label":"imperial, intelligence","radical":"ハ"},"影":{"c":"影","jlpt":1,"strokes":15,"on":["エイ"],"kun":["かげ"],"label":"shadow, phantom, silhouette","radical":"口"},"瑛":{"c":"瑛","jlpt":1,"strokes":12,"on":["エイ"],"kun":[],"label":"crystal, sparkle of jewelry","radical":"ノ"},"衛":{"c":"衛","jlpt":1,"strokes":16,"on":["エ","エイ"],"kun":[],"label":"defense, protection","radical":"口"},"詠":{"c":"詠","jlpt":1,"strokes":12,"on":["エイ"],"kun":["うた.う","よ.む"],"label":"recitation, composing, poem","radical":"丶"},"疫":{"c":"疫","jlpt":1,"strokes":9,"on":["エキ","ヤク"],"kun":[],"label":"epidemic","radical":"几"},"益":{"c":"益","jlpt":1,"strokes":10,"on":["エキ","ヤク"],"kun":["ま.す"],"label":"benefit, advantage, gain","radical":"一"},"悦":{"c":"悦","jlpt":1,"strokes":10,"on":["エツ"],"kun":["よろこ.ばす","よろこ.ぶ"],"label":"ecstasy, joy, rapture","radical":"儿"},"謁":{"c":"謁","jlpt":1,"strokes":15,"on":["エツ"],"kun":[],"label":"audience, audience (with king)","radical":"勹"},"閲":{"c":"閲","jlpt":1,"strokes":15,"on":["エツ"],"kun":["けみ.する"],"label":"review, inspection, revision","radical":"儿"},"宴":{"c":"宴","jlpt":1,"strokes":10,"on":["エン"],"kun":["うたげ"],"label":"banquet, feast, party","radical":"女"},"援":{"c":"援","jlpt":1,"strokes":12,"on":["エン"],"kun":[],"label":"abet, help, save","radical":"一"},"沿":{"c":"沿","jlpt":1,"strokes":8,"on":["エン"],"kun":["-ぞ.い","そ.う"],"label":"run alongside, follow along, lie along","radical":"ハ"},"炎":{"c":"炎","jlpt":1,"strokes":8,"on":["エン"],"kun":["ほのお"],"label":"inflammation, blaze, flame","radical":"火"},"猿":{"c":"猿","jlpt":1,"strokes":13,"on":["エン"],"kun":["さる"],"label":"monkey","radical":"口"},"縁":{"c":"縁","jlpt":1,"strokes":15,"on":["-ネン","エン"],"kun":["えにし","ふち","ふち.どる","へり","ゆかり","よすが"],"label":"affinity, border, brink","radical":"小"},"艶":{"c":"艶","jlpt":1,"strokes":19,"on":["エン"],"kun":["あで.やか","つや","つや.めく","なま.めかしい","なま.めく"],"label":"glossy, captivating, charm","radical":"｜"},"苑":{"c":"苑","jlpt":1,"strokes":8,"on":["エン","オン"],"kun":["う.つ","その"],"label":"garden, farm, park","radical":"卩"},"鉛":{"c":"鉛","jlpt":1,"strokes":13,"on":["エン"],"kun":["なまり"],"label":"lead","radical":"ハ"},"於":{"c":"於","jlpt":1,"strokes":8,"on":["オ","ヨ"],"kun":["ああ","お.ける","おい.て","より"],"label":"as for, at, in","radical":"方"},"凹":{"c":"凹","jlpt":1,"strokes":5,"on":["オウ"],"kun":["くぼ.む","へこ.む","ぼこ"],"label":"concave, hollow, sunken","radical":"凵"},"往":{"c":"往","jlpt":1,"strokes":8,"on":["オウ"],"kun":["い.く","いにしえ","さき.に","ゆ.く"],"label":"journey, before, chase away","radical":"丶"},"応":{"c":"応","jlpt":1,"strokes":7,"on":["-ノウ","オウ","ヨウ"],"kun":["あた.る","こた.える","まさに"],"label":"apply, OK, accept","radical":"广"},"旺":{"c":"旺","jlpt":1,"strokes":8,"on":["オウ","キョウ","ゴウ"],"kun":["うつくし.い","かがや.き","さかん"],"label":"beautiful, flourishing, successful","radical":"日"},"殴":{"c":"殴","jlpt":1,"strokes":8,"on":["オウ"],"kun":["なぐ.る"],"label":"assault, beat, hit","radical":"丶"},"翁":{"c":"翁","jlpt":1,"strokes":10,"on":["オウ"],"kun":["おきな"],"label":"venerable old man","radical":"ハ"},"沖":{"c":"沖","jlpt":1,"strokes":7,"on":["チュウ"],"kun":["おき","おきつ","ちゅう.する","わく"],"label":"open sea, offing, rise high into sky","radical":"｜"},"憶":{"c":"憶","jlpt":1,"strokes":16,"on":["オク"],"kun":[],"label":"recollection, remember, think","radical":"心"},"乙":{"c":"乙","jlpt":1,"strokes":1,"on":["イツ","オツ"],"kun":["おと-","きのと"],"label":"duplicate, strange, the latter","radical":"乙"},"卸":{"c":"卸","jlpt":1,"strokes":9,"on":["シャ"],"kun":["おろ.し","おろ.す","おろし"],"label":"wholesale","radical":"ノ"},"恩":{"c":"恩","jlpt":1,"strokes":10,"on":["オン"],"kun":[],"label":"grace, benefit, blessing","radical":"囗"},"穏":{"c":"穏","jlpt":1,"strokes":16,"on":["オン"],"kun":["おだ.やか"],"label":"calm, moderation, quiet","radical":"心"},"仮":{"c":"仮","jlpt":1,"strokes":6,"on":["カ","ケ"],"kun":["かり","かり-"],"label":"assumed (name), informal, interim","radical":"厂"},"伽":{"c":"伽","jlpt":1,"strokes":7,"on":["カ","ガ","キャ","ギャ"],"kun":["とぎ"],"label":"attending, entertainer, nursing","radical":"力"},"価":{"c":"価","jlpt":1,"strokes":8,"on":["カ","ケ"],"kun":["あたい"],"label":"value, price","radical":"西"},"佳":{"c":"佳","jlpt":1,"strokes":8,"on":["カ"],"kun":[],"label":"excellent, beautiful, good","radical":"土"},"嘉":{"c":"嘉","jlpt":1,"strokes":14,"on":["カ"],"kun":["よい","よみ.する"],"label":"applaud, auspicious, esteem","radical":"力"},"嫁":{"c":"嫁","jlpt":1,"strokes":13,"on":["カ"],"kun":["い.く","とつ.ぐ","ゆ.く","よめ"],"label":"marry into, bride","radical":"女"},"寡":{"c":"寡","jlpt":1,"strokes":14,"on":["カ"],"kun":[],"label":"widow, few, minority","radical":"一"},"暇":{"c":"暇","jlpt":1,"strokes":13,"on":["カ"],"kun":["いとま","ひま"],"label":"spare time, leave of absence, leisure","radical":"又"},"架":{"c":"架","jlpt":1,"strokes":9,"on":["カ"],"kun":["か.かる","か.ける"],"label":"erect, construct, frame","radical":"力"},"禍":{"c":"禍","jlpt":1,"strokes":13,"on":["カ"],"kun":["わざわい"],"label":"calamity, curse, evil","radical":"冂"},"稼":{"c":"稼","jlpt":1,"strokes":15,"on":["カ"],"kun":["かせ.ぐ"],"label":"earnings, earn money, work","radical":"禾"},"茄":{"c":"茄","jlpt":1,"strokes":8,"on":["カ"],"kun":[],"label":"eggplant","radical":"力"},"華":{"c":"華","jlpt":1,"strokes":10,"on":["カ","ケ"],"kun":["はな"],"label":"splendor, flower, gay","radical":"一"},"霞":{"c":"霞","jlpt":1,"strokes":17,"on":["カ","ゲ"],"kun":["かす.む","かすみ"],"label":"be hazy, blurred, grow dim","radical":"又"},"蚊":{"c":"蚊","jlpt":1,"strokes":10,"on":["ブン"],"kun":["か"],"label":"mosquito","radical":"文"},"我":{"c":"我","jlpt":1,"strokes":7,"on":["ガ"],"kun":["わ","わ.が-","わが-","われ"],"label":"ego, I, oneself","radical":"亅"},"芽":{"c":"芽","jlpt":1,"strokes":8,"on":["ガ"],"kun":["め"],"label":"bud, germ, spear","radical":"牙"},"賀":{"c":"賀","jlpt":1,"strokes":12,"on":["ガ"],"kun":[],"label":"congratulations, joy","radical":"ハ"},"雅":{"c":"雅","jlpt":1,"strokes":13,"on":["ガ"],"kun":["みや.び"],"label":"gracious, elegant, graceful","radical":"牙"},"餓":{"c":"餓","jlpt":1,"strokes":15,"on":["ガ"],"kun":["う.える"],"label":"starve, hungry, thirst","radical":"亅"},"塊":{"c":"塊","jlpt":1,"strokes":13,"on":["カイ","ケ"],"kun":["かたまり","つちくれ"],"label":"clod, chunk, clot","radical":"儿"},"壊":{"c":"壊","jlpt":1,"strokes":16,"on":["エ","カイ"],"kun":["こわ.す","こわ.れる","やぶ.る"],"label":"demolition, break, destroy","radical":"十"},"怪":{"c":"怪","jlpt":1,"strokes":8,"on":["カイ","ケ"],"kun":["あや.しい","あや.しむ"],"label":"suspicious, apparition, mystery","radical":"又"},"悔":{"c":"悔","jlpt":1,"strokes":9,"on":["カイ"],"kun":["く.いる","く.やむ","くや.しい"],"label":"repent, regret","radical":"一"},"懐":{"c":"懐","jlpt":1,"strokes":16,"on":["エ","カイ"],"kun":["いだ.く","おも.う","なず.ける","なつ.かしい","なつ.かしむ","なつ.く","なつ.ける","ふところ"],"label":"pocket, become attached to, bosom","radical":"十"},"戒":{"c":"戒","jlpt":1,"strokes":7,"on":["カイ"],"kun":["いまし.める"],"label":"commandment","radical":"廾"},"拐":{"c":"拐","jlpt":1,"strokes":8,"on":["カイ"],"kun":[],"label":"kidnap, falsify","radical":"刀"},"魁":{"c":"魁","jlpt":1,"strokes":14,"on":["カイ"],"kun":["かしら","さきがけ"],"label":"charging ahead of others","radical":"儿"},"凱":{"c":"凱","jlpt":1,"strokes":12,"on":["カイ","ガイ"],"kun":["かちどき","やわらぐ"],"label":"victory song","radical":"几"},"劾":{"c":"劾","jlpt":1,"strokes":8,"on":["ガイ"],"kun":[],"label":"censure, criminal investigation","radical":"丶"},"慨":{"c":"慨","jlpt":1,"strokes":13,"on":["ガイ"],"kun":["なげ.く"],"label":"rue, be sad, lament","radical":"牙"},"概":{"c":"概","jlpt":1,"strokes":14,"on":["ガイ"],"kun":["おおむ.ね"],"label":"outline, approximation, condition","radical":"木"},"涯":{"c":"涯","jlpt":1,"strokes":11,"on":["ガイ"],"kun":["はて"],"label":"horizon, bound, limit","radical":"厂"},"街":{"c":"街","jlpt":1,"strokes":12,"on":["カイ","ガイ"],"kun":["まち"],"label":"boulevard, street, town","radical":"土"},"該":{"c":"該","jlpt":1,"strokes":13,"on":["ガイ"],"kun":[],"label":"above-stated, that specific, the said","radical":"丶"},"馨":{"c":"馨","jlpt":1,"strokes":20,"on":["キョウ","ケイ"],"kun":["かお.る","かおり"],"label":"balmy, favourable, fragrant","radical":"几"},"垣":{"c":"垣","jlpt":1,"strokes":9,"on":["エン"],"kun":["かき"],"label":"hedge, fence, wall","radical":"一"},"嚇":{"c":"嚇","jlpt":1,"strokes":17,"on":["カク"],"kun":["おど.す"],"label":"dignity, majesty, menacing","radical":"口"},"拡":{"c":"拡","jlpt":1,"strokes":8,"on":["カク","コウ"],"kun":["ひろ.がる","ひろ.げる","ひろ.める"],"label":"broaden, enlarge, expand","radical":"厶"},"核":{"c":"核","jlpt":1,"strokes":10,"on":["カク"],"kun":[],"label":"nucleus, core, kernel","radical":"丶"},"殻":{"c":"殻","jlpt":1,"strokes":11,"on":["カク","コク","バイ"],"kun":["から","がら"],"label":"husk, nut shell","radical":"冖"},"獲":{"c":"獲","jlpt":1,"strokes":16,"on":["カク"],"kun":["え.る"],"label":"seize, able to, acquire","radical":"又"},"穫":{"c":"穫","jlpt":1,"strokes":18,"on":["カク"],"kun":[],"label":"harvest, reap","radical":"又"},"較":{"c":"較","jlpt":1,"strokes":13,"on":["カク","コウ"],"kun":["くら.べる"],"label":"contrast, compare","radical":"父"},"郭":{"c":"郭","jlpt":1,"strokes":11,"on":["カク"],"kun":["くるわ"],"label":"enclosure, fortification, quarters","radical":"亅"},"閣":{"c":"閣","jlpt":1,"strokes":14,"on":["カク"],"kun":[],"label":"tower, palace, tall building","radical":"口"},"隔":{"c":"隔","jlpt":1,"strokes":13,"on":["カク"],"kun":["へだ.たる","へだ.てる"],"label":"isolate, alternate, distance","radical":"一"},"岳":{"c":"岳","jlpt":1,"strokes":8,"on":["ガク"],"kun":["たけ"],"label":"point, mountain, peak","radical":"一"},"潟":{"c":"潟","jlpt":1,"strokes":15,"on":["セキ"],"kun":["-がた","かた"],"label":"lagoon","radical":"勹"},"喝":{"c":"喝","jlpt":1,"strokes":11,"on":["カツ"],"kun":[],"label":"hoarse, scold","radical":"勹"},"括":{"c":"括","jlpt":1,"strokes":9,"on":["カツ"],"kun":["くく.る"],"label":"fasten, arrest, constrict","radical":"ノ"},"渇":{"c":"渇","jlpt":1,"strokes":11,"on":["カツ"],"kun":["かわ.く"],"label":"thirst, dry up, parch","radical":"勹"},"滑":{"c":"滑","jlpt":1,"strokes":13,"on":["カツ","コツ"],"kun":["すべ.る","なめ.らか"],"label":"slippery, fail exam, slide","radical":"冂"},"褐":{"c":"褐","jlpt":1,"strokes":13,"on":["カツ"],"kun":[],"label":"brown, woollen kimono","radical":"勹"},"轄":{"c":"轄","jlpt":1,"strokes":17,"on":["カツ"],"kun":["くさび"],"label":"control, wedge","radical":"二"},"且":{"c":"且","jlpt":1,"strokes":5,"on":["ショ","ショウ","ソ"],"kun":["か.つ"],"label":"moreover, also, furthermore","radical":"一"},"叶":{"c":"叶","jlpt":1,"strokes":5,"on":["キョウ"],"kun":["かな.う","かな.える"],"label":"answer, grant","radical":"十"},"樺":{"c":"樺","jlpt":1,"strokes":14,"on":["カ"],"kun":["かば","かんば"],"label":"birch, dark red","radical":"一"},"株":{"c":"株","jlpt":1,"strokes":10,"on":["シュ"],"kun":["かぶ"],"label":"stocks, shares, stock","radical":"木"},"鎌":{"c":"鎌","jlpt":1,"strokes":18,"on":["ケン","レン"],"kun":["かま"],"label":"sickle, scythe, trick","radical":"丶"},"茅":{"c":"茅","jlpt":1,"strokes":8,"on":["ボウ","ミョウ"],"kun":["かや","ちがや"],"label":"miscanthus reed","radical":"矛"},"刈":{"c":"刈","jlpt":1,"strokes":4,"on":["カイ","ガイ"],"kun":["か.る"],"label":"reap, clip, cut","radical":"刈"},"侃":{"c":"侃","jlpt":1,"strokes":8,"on":["カン"],"kun":["つよ.い"],"label":"just, peace-loving, righteous","radical":"口"},"冠":{"c":"冠","jlpt":1,"strokes":9,"on":["カン"],"kun":["かんむり"],"label":"crown, best, peerless","radical":"儿"},"勘":{"c":"勘","jlpt":1,"strokes":11,"on":["カン"],"kun":[],"label":"intuition, check, compare","radical":"儿"},"勧":{"c":"勧","jlpt":1,"strokes":13,"on":["カン","ケン"],"kun":["すす.める"],"label":"persuade, advise, encourage","radical":"ノ"},"喚":{"c":"喚","jlpt":1,"strokes":12,"on":["カン"],"kun":["わめ.く"],"label":"yell, call, cry","radical":"儿"},"堪":{"c":"堪","jlpt":1,"strokes":12,"on":["カン","タン"],"kun":["こた.える","こら.える","た.える","たま.る"],"label":"withstand, endure, resist","radical":"儿"},"寛":{"c":"寛","jlpt":1,"strokes":13,"on":["カン"],"kun":["くつろ.ぐ","ひろ.い","ゆる.やか"],"label":"tolerant, be at ease, broadminded","radical":"見"},"幹":{"c":"幹","jlpt":1,"strokes":13,"on":["カン"],"kun":["みき"],"label":"capability, main part, talent","radical":"十"},"憾":{"c":"憾","jlpt":1,"strokes":16,"on":["カン"],"kun":["うら.む"],"label":"remorse, be sorry, regret","radical":"ノ"},"敢":{"c":"敢","jlpt":1,"strokes":12,"on":["カン"],"kun":["あ.えず","あ.えて","あ.えない"],"label":"daring, bold, brave","radical":"耳"},"棺":{"c":"棺","jlpt":1,"strokes":12,"on":["カン"],"kun":[],"label":"coffin, casket","radical":"｜"},"款":{"c":"款","jlpt":1,"strokes":12,"on":["カン"],"kun":[],"label":"goodwill, article, collusion","radical":"二"},"歓":{"c":"歓","jlpt":1,"strokes":15,"on":["カン"],"kun":["よろこ.ぶ"],"label":"delight, joy","radical":"欠"},"環":{"c":"環","jlpt":1,"strokes":17,"on":["カン"],"kun":["わ"],"label":"ring, circle, loop","radical":"一"},"監":{"c":"監","jlpt":1,"strokes":15,"on":["カン"],"kun":[],"label":"oversee, administer, govt office","radical":"二"},"看":{"c":"看","jlpt":1,"strokes":9,"on":["カン"],"kun":["み.る"],"label":"watch over, see","radical":"一"},"緩":{"c":"緩","jlpt":1,"strokes":15,"on":["カン"],"kun":["ゆる.い","ゆる.む","ゆる.める","ゆる.やか"],"label":"slacken, be moderate, ease","radical":"一"},"肝":{"c":"肝","jlpt":1,"strokes":7,"on":["カン"],"kun":["きも"],"label":"liver, chutzpah, nerve","radical":"干"},"艦":{"c":"艦","jlpt":1,"strokes":21,"on":["カン"],"kun":[],"label":"warship","radical":"二"},"莞":{"c":"莞","jlpt":1,"strokes":10,"on":["カン"],"kun":["い"],"label":"reed used to cover tatami, smiling","radical":"二"},"貫":{"c":"貫","jlpt":1,"strokes":11,"on":["カン"],"kun":["つらぬ.く","ぬ.く","ぬき"],"label":"pierce, brace, penetrate","radical":"ハ"},"還":{"c":"還","jlpt":1,"strokes":16,"on":["カン"],"kun":["かえ.る"],"label":"send back, return","radical":"一"},"鑑":{"c":"鑑","jlpt":1,"strokes":23,"on":["カン"],"kun":["かがみ","かんが.みる"],"label":"specimen, learn from, take warning from","radical":"二"},"閑":{"c":"閑","jlpt":1,"strokes":12,"on":["カン"],"kun":[],"label":"leisure","radical":"木"},"陥":{"c":"陥","jlpt":1,"strokes":10,"on":["カン"],"kun":["おちい.る","おとしい.れる"],"label":"collapse, cave in, fall (castle)","radical":"｜"},"巌":{"c":"巌","jlpt":1,"strokes":20,"on":["ガン"],"kun":["いわ","いわお","けわ.しい"],"label":"boulder, crag, rock","radical":"厂"},"眼":{"c":"眼","jlpt":1,"strokes":11,"on":["ガン","ゲン"],"kun":["まなこ","め"],"label":"eyeball","radical":"目"},"頑":{"c":"頑","jlpt":1,"strokes":13,"on":["ガン"],"kun":["かたく.な"],"label":"stubborn, firmly, foolish","radical":"二"},"企":{"c":"企","jlpt":1,"strokes":6,"on":["キ"],"kun":["くわだ.てる","たくら.む"],"label":"undertake, attempt, design","radical":"止"},"伎":{"c":"伎","jlpt":1,"strokes":6,"on":["キ","ギ"],"kun":["わざ","わざおぎ"],"label":"deed, skill","radical":"十"},"器":{"c":"器","jlpt":1,"strokes":15,"on":["キ"],"kun":["うつわ"],"label":"utensil, ability, container","radical":"口"},"基":{"c":"基","jlpt":1,"strokes":11,"on":["キ"],"kun":["もと","もとい"],"label":"fundamentals, foundation","radical":"一"},"奇":{"c":"奇","jlpt":1,"strokes":8,"on":["キ"],"kun":["あや.しい","く.しき","くし","めずら.しい"],"label":"strange, curiosity, strangeness","radical":"一"},"嬉":{"c":"嬉","jlpt":1,"strokes":15,"on":["キ"],"kun":["うれ.しい","たの.しむ"],"label":"glad, pleased, rejoice","radical":"口"},"岐":{"c":"岐","jlpt":1,"strokes":7,"on":["キ","ギ"],"kun":[],"label":"branch off, arena, fork in road","radical":"十"},"忌":{"c":"忌","jlpt":1,"strokes":7,"on":["キ"],"kun":["い.まわしい","い.み","い.む"],"label":"mourning, abhor, death anniversary","radical":"已"},"揮":{"c":"揮","jlpt":1,"strokes":12,"on":["キ"],"kun":["ふる.う"],"label":"brandish, shake, swing","radical":"冖"},"旗":{"c":"旗","jlpt":1,"strokes":14,"on":["キ"],"kun":["はた"],"label":"national flag, banner, standard","radical":"ハ"},"既":{"c":"既","jlpt":1,"strokes":10,"on":["キ"],"kun":["すで.に"],"label":"previously, already, long ago","radical":"牙"},"棋":{"c":"棋","jlpt":1,"strokes":12,"on":["キ"],"kun":["ご"],"label":"chess piece, Japanese chess, shogi","radical":"ハ"},"棄":{"c":"棄","jlpt":1,"strokes":13,"on":["キ"],"kun":["す.てる"],"label":"abandon, discard, reject","radical":"一"},"毅":{"c":"毅","jlpt":1,"strokes":15,"on":["キ","ギ"],"kun":["つよ.い"],"label":"strong","radical":"几"},"汽":{"c":"汽","jlpt":1,"strokes":7,"on":["キ"],"kun":[],"label":"vapor, steam","radical":"气"},"稀":{"c":"稀","jlpt":1,"strokes":12,"on":["キ","ケ"],"kun":["まばら","まれ"],"label":"dilute (acid), phenomenal, rare","radical":"一"},"紀":{"c":"紀","jlpt":1,"strokes":9,"on":["キ"],"kun":[],"label":"chronicle, account, annals","radical":"小"},"貴":{"c":"貴","jlpt":1,"strokes":12,"on":["キ"],"kun":["たっと.い","たっと.ぶ","とうと.い","とうと.ぶ"],"label":"precious, esteem, honor","radical":"一"},"軌":{"c":"軌","jlpt":1,"strokes":9,"on":["キ"],"kun":[],"label":"rut, model, track","radical":"車"},"輝":{"c":"輝","jlpt":1,"strokes":15,"on":["キ"],"kun":["かがや.く"],"label":"radiance, gleam, shine","radical":"一"},"飢":{"c":"飢","jlpt":1,"strokes":10,"on":["キ"],"kun":["う.える"],"label":"hungry, starve","radical":"几"},"騎":{"c":"騎","jlpt":1,"strokes":18,"on":["キ"],"kun":[],"label":"equestrian, riding on horses","radical":"一"},"鬼":{"c":"鬼","jlpt":1,"strokes":10,"on":["キ"],"kun":["おに","おに-"],"label":"ghost, devil","radical":"儿"},"亀":{"c":"亀","jlpt":1,"strokes":11,"on":["キ","キュウ","キン"],"kun":["かめ"],"label":"tortoise, turtle","radical":"乙"},"偽":{"c":"偽","jlpt":1,"strokes":11,"on":["カ","ギ"],"kun":["いつわ.り","いつわ.る","にせ"],"label":"falsehood, counterfeit, deceive","radical":"丶"},"儀":{"c":"儀","jlpt":1,"strokes":15,"on":["ギ"],"kun":[],"label":"ceremony, a matter, affair","radical":"一"},"宜":{"c":"宜","jlpt":1,"strokes":8,"on":["ギ"],"kun":["よろ.しい","よろ.しく"],"label":"best regards, good","radical":"一"},"戯":{"c":"戯","jlpt":1,"strokes":15,"on":["ギ","ゲ"],"kun":["ざ.れる","じゃ.れる","たわむ.れる"],"label":"frolic, play, sport","radical":"匕"},"擬":{"c":"擬","jlpt":1,"strokes":17,"on":["ギ"],"kun":["まが.い","もど.き"],"label":"mimic, aim (a gun) at, imitate","radical":"匕"},"欺":{"c":"欺","jlpt":1,"strokes":12,"on":["ギ"],"kun":["あざむ.く"],"label":"deceit, cheat, delude","radical":"ハ"},"犠":{"c":"犠","jlpt":1,"strokes":17,"on":["キ","ギ"],"kun":["いけにえ"],"label":"sacrifice","radical":"一"},"義":{"c":"義","jlpt":1,"strokes":13,"on":["ギ"],"kun":[],"label":"righteousness, honor, justice","radical":"一"},"誼":{"c":"誼","jlpt":1,"strokes":15,"on":["ギ"],"kun":["よい","よしみ"],"label":"friendship, intimacy","radical":"一"},"菊":{"c":"菊","jlpt":1,"strokes":11,"on":["キク"],"kun":[],"label":"chrysanthemum","radical":"勹"},"鞠":{"c":"鞠","jlpt":1,"strokes":17,"on":["キク","キュウ"],"kun":["まり"],"label":"ball","radical":"勹"},"吉":{"c":"吉","jlpt":1,"strokes":6,"on":["キチ","キツ"],"kun":["よし"],"label":"good luck, congratulations, joy","radical":"口"},"橘":{"c":"橘","jlpt":1,"strokes":16,"on":["キツ"],"kun":["たちばな"],"label":"mandarin orange","radical":"儿"},"却":{"c":"却","jlpt":1,"strokes":7,"on":["キャク"],"kun":["かえ.って","しりぞ.く","しりぞ.ける"],"label":"instead, on the contrary, rather","radical":"卩"},"脚":{"c":"脚","jlpt":1,"strokes":11,"on":["カク","キャ","キャク"],"kun":["あし"],"label":"base, leg, lower part","radical":"卩"},"虐":{"c":"虐","jlpt":1,"strokes":9,"on":["ギャク"],"kun":["しいた.げる"],"label":"tyrannize, oppress","radical":"匕"},"丘":{"c":"丘","jlpt":1,"strokes":5,"on":["キュウ"],"kun":["おか"],"label":"hill, knoll","radical":"一"},"及":{"c":"及","jlpt":1,"strokes":3,"on":["キュウ"],"kun":["およ.び","およ.ぶ","およ.ぼす","および"],"label":"reach out, cause, exercise","radical":"丶"},"宮":{"c":"宮","jlpt":1,"strokes":10,"on":["キュウ","ク","クウ","グウ"],"kun":["みや"],"label":"Shinto shrine, constellations, palace","radical":"ノ"},"弓":{"c":"弓","jlpt":1,"strokes":3,"on":["キュウ"],"kun":["ゆみ"],"label":"bow, bow (archery, violin)","radical":"弓"},"救":{"c":"救","jlpt":1,"strokes":11,"on":["キュウ"],"kun":["すく.う"],"label":"salvation, help, reclaim","radical":"丶"},"朽":{"c":"朽","jlpt":1,"strokes":6,"on":["キュウ"],"kun":["く.ちる"],"label":"decay, remain in seclusion, rot","radical":"一"},"泣":{"c":"泣","jlpt":1,"strokes":8,"on":["キュウ"],"kun":["な.く"],"label":"cry, moan, weep","radical":"立"},"窮":{"c":"窮","jlpt":1,"strokes":15,"on":["キュウ","キョウ"],"kun":["きわ.まり","きわ.まる","きわ.み","きわ.める"],"label":"hard up, cornered, destitute","radical":"儿"},"級":{"c":"級","jlpt":1,"strokes":9,"on":["キュウ"],"kun":[],"label":"class, grade, rank","radical":"ノ"},"糾":{"c":"糾","jlpt":1,"strokes":9,"on":["キュウ"],"kun":["ただ.す"],"label":"twist, ask, investigate","radical":"｜"},"拒":{"c":"拒","jlpt":1,"strokes":8,"on":["キョ","ゴ"],"kun":["こば.む"],"label":"repel, decline, refuse","radical":"匚"},"拠":{"c":"拠","jlpt":1,"strokes":8,"on":["キョ","コ"],"kun":["よ.る"],"label":"foothold, based on, follow","radical":"几"},"挙":{"c":"挙","jlpt":1,"strokes":10,"on":["キョ"],"kun":["あ.がる","あ.げる","こぞ.る"],"label":"raise, actions, behavior","radical":"ハ"},"虚":{"c":"虚","jlpt":1,"strokes":11,"on":["キョ","コ"],"kun":["うつ.ろ","むな.しい"],"label":"void, crack, emptiness","radical":"一"},"距":{"c":"距","jlpt":1,"strokes":12,"on":["キョ"],"kun":["けづめ","へだ.たる"],"label":"long-distance, fetlock, spur","radical":"匚"},"亨":{"c":"亨","jlpt":1,"strokes":7,"on":["キョウ","コウ","ホウ"],"kun":["とお.る"],"label":"go smoothly, pass through","radical":"一"},"享":{"c":"享","jlpt":1,"strokes":8,"on":["キョウ","コウ"],"kun":["う.ける"],"label":"receive, answer (phone), catch","radical":"口"},"凶":{"c":"凶","jlpt":1,"strokes":4,"on":["キョウ"],"kun":[],"label":"villain, bad luck, disaster","radical":"丶"},"匡":{"c":"匡","jlpt":1,"strokes":6,"on":["オウ","キョウ"],"kun":["すく.う","ただ.す"],"label":"assist, correct, save","radical":"匚"},"喬":{"c":"喬","jlpt":1,"strokes":12,"on":["キョウ"],"kun":["たか.い"],"label":"boasting, high","radical":"ノ"},"峡":{"c":"峡","jlpt":1,"strokes":9,"on":["キョウ","コウ"],"kun":["はざま"],"label":"gorge, ravine","radical":"二"},"恭":{"c":"恭","jlpt":1,"strokes":10,"on":["キョウ"],"kun":["うやうや.しい"],"label":"respect, reverent","radical":"ハ"},"狂":{"c":"狂","jlpt":1,"strokes":7,"on":["キョウ"],"kun":["くる.う","くる.おしい","くるお.しい"],"label":"lunatic, confuse, crazy","radical":"王"},"狭":{"c":"狭","jlpt":1,"strokes":9,"on":["キョウ","コウ"],"kun":["さ","せば.まる","せば.める","せま.い"],"label":"cramped, contract, narrow","radical":"丶"},"矯":{"c":"矯","jlpt":1,"strokes":17,"on":["キョウ"],"kun":["た.める"],"label":"rectify, control, correct","radical":"ノ"},"脅":{"c":"脅","jlpt":1,"strokes":10,"on":["キョウ"],"kun":["おど.かす","おど.す","おびや.かす"],"label":"threaten, coerce","radical":"力"},"興":{"c":"興","jlpt":1,"strokes":16,"on":["キョウ","コウ"],"kun":["おこ.す","おこ.る"],"label":"entertain, interest, pleasure","radical":"一"},"郷":{"c":"郷","jlpt":1,"strokes":11,"on":["キョウ","ゴウ"],"kun":["さと"],"label":"home town, district, native place","radical":"幺"},"鏡":{"c":"鏡","jlpt":1,"strokes":19,"on":["キョウ","ケイ"],"kun":["かがみ"],"label":"mirror, barrel-head","radical":"儿"},"響":{"c":"響","jlpt":1,"strokes":20,"on":["キョウ"],"kun":["ひび.く"],"label":"echo, resound, ring","radical":"幺"},"驚":{"c":"驚","jlpt":1,"strokes":22,"on":["キョウ"],"kun":["おどろ.かす","おどろ.く"],"label":"wonder, amazed, be surprised","radical":"勹"},"仰":{"c":"仰","jlpt":1,"strokes":6,"on":["ギョウ","コウ"],"kun":["あお.ぐ","お.っしゃる","おお.せ","おっしゃ.る"],"label":"face-up, depend, drink","radical":"卩"},"凝":{"c":"凝","jlpt":1,"strokes":16,"on":["ギョウ"],"kun":["こ.らす","こ.る","こご.らす","こご.らせる","こご.る"],"label":"congeal, be absorbed in, freeze","radical":"冫"},"尭":{"c":"尭","jlpt":1,"strokes":8,"on":["ギョウ"],"kun":["たか.い"],"label":"far, high","radical":"一"},"暁":{"c":"暁","jlpt":1,"strokes":12,"on":["キョウ","ギョウ"],"kun":["あかつき","さと.る"],"label":"daybreak, dawn, in the event","radical":"儿"},"桐":{"c":"桐","jlpt":1,"strokes":10,"on":["トウ","ドウ"],"kun":["きり"],"label":"paulownia","radical":"一"},"錦":{"c":"錦","jlpt":1,"strokes":16,"on":["キン"],"kun":["にしき"],"label":"brocade, fine dress, honors","radical":"巾"},"斤":{"c":"斤","jlpt":1,"strokes":4,"on":["キン"],"kun":[],"label":"axe, catty","radical":"斤"},"欣":{"c":"欣","jlpt":1,"strokes":8,"on":["キン","コン","ゴン"],"kun":["よろこ.び","よろこ.ぶ"],"label":"rejoice, take pleasure in","radical":"斤"},"欽":{"c":"欽","jlpt":1,"strokes":12,"on":["キン","コン"],"kun":["つつし.む"],"label":"long for, respect, revere","radical":"欠"},"琴":{"c":"琴","jlpt":1,"strokes":12,"on":["キン","ゴン"],"kun":["こと"],"label":"harp, koto","radical":"一"},"筋":{"c":"筋","jlpt":1,"strokes":12,"on":["キン"],"kun":["すじ"],"label":"muscle, descent, fiber","radical":"力"},"緊":{"c":"緊","jlpt":1,"strokes":15,"on":["キン"],"kun":["し.まる","し.める"],"label":"tense, hard, reliable","radical":"又"},"芹":{"c":"芹","jlpt":1,"strokes":7,"on":["キン"],"kun":["せり"],"label":"parsley","radical":"斤"},"菌":{"c":"菌","jlpt":1,"strokes":11,"on":["キン"],"kun":[],"label":"germ, bacteria, fungus","radical":"囗"},"衿":{"c":"衿","jlpt":1,"strokes":9,"on":["キン","コン"],"kun":["えり"],"label":"lapel, collar, neck","radical":"一"},"襟":{"c":"襟","jlpt":1,"strokes":18,"on":["キン"],"kun":["えり"],"label":"collar, lapel, neck","radical":"二"},"謹":{"c":"謹","jlpt":1,"strokes":17,"on":["キン"],"kun":["つつし.む"],"label":"discreet, humbly, reverently","radical":"二"},"吟":{"c":"吟","jlpt":1,"strokes":7,"on":["ギン"],"kun":[],"label":"versify, recital, singing","radical":"一"},"句":{"c":"句","jlpt":1,"strokes":5,"on":["ク"],"kun":[],"label":"phrase, clause, paragraph","radical":"勹"},"玖":{"c":"玖","jlpt":1,"strokes":7,"on":["キュウ","ク"],"kun":[],"label":"beautiful black jewel, nine","radical":"王"},"駆":{"c":"駆","jlpt":1,"strokes":14,"on":["ク"],"kun":["か.ける","か.る"],"label":"drive, advance, gallop","radical":"丶"},"駒":{"c":"駒","jlpt":1,"strokes":15,"on":["ク"],"kun":["こま"],"label":"pony, colt, horse","radical":"勹"},"愚":{"c":"愚","jlpt":1,"strokes":13,"on":["グ"],"kun":["おろ.か"],"label":"foolish, absurdity, folly","radical":"冂"},"虞":{"c":"虞","jlpt":1,"strokes":13,"on":["グ"],"kun":["あざむ.く","あやま.る","うれ.える","おそれ","おもんぱか.る","たの.しむ","のぞ.む","はか.る"],"label":"uneasiness, anxiety, concern","radical":"ハ"},"遇":{"c":"遇","jlpt":1,"strokes":12,"on":["グウ"],"kun":["あ.う"],"label":"interview, deal with, encounter","radical":"冂"},"屈":{"c":"屈","jlpt":1,"strokes":8,"on":["クツ"],"kun":["かが.む","かが.める"],"label":"yield, bend, flinch","radical":"｜"},"熊":{"c":"熊","jlpt":1,"strokes":14,"on":["ユウ"],"kun":["くま"],"label":"bear","radical":"匕"},"栗":{"c":"栗","jlpt":1,"strokes":10,"on":["リ","リツ"],"kun":["おののく","くり"],"label":"chestnut","radical":"木"},"繰":{"c":"繰","jlpt":1,"strokes":19,"on":["ソウ"],"kun":["く.る"],"label":"winding, look up, reel","radical":"口"},"桑":{"c":"桑","jlpt":1,"strokes":10,"on":["ソウ"],"kun":["くわ"],"label":"mulberry","radical":"又"},"勲":{"c":"勲","jlpt":1,"strokes":15,"on":["クン"],"kun":["いさお"],"label":"meritorious deed, merit","radical":"一"},"薫":{"c":"薫","jlpt":1,"strokes":16,"on":["クン"],"kun":["かお.る"],"label":"fragrant, be scented","radical":"一"},"郡":{"c":"郡","jlpt":1,"strokes":10,"on":["グン"],"kun":["こおり"],"label":"county, district","radical":"一"},"袈":{"c":"袈","jlpt":1,"strokes":11,"on":["カ","ケ"],"kun":[],"label":"a coarse camlet","radical":"力"},"刑":{"c":"刑","jlpt":1,"strokes":6,"on":["ケイ"],"kun":[],"label":"punish, penalty, punishment","radical":"一"},"啓":{"c":"啓","jlpt":1,"strokes":11,"on":["ケイ"],"kun":["さと.す","ひら.く"],"label":"disclose, open, say","radical":"一"},"圭":{"c":"圭","jlpt":1,"strokes":6,"on":["ケ","ケイ"],"kun":[],"label":"square jewel, angle, corner","radical":"土"},"契":{"c":"契","jlpt":1,"strokes":9,"on":["ケイ"],"kun":["ちぎ.る"],"label":"pledge, promise, vow","radical":"二"},"径":{"c":"径","jlpt":1,"strokes":8,"on":["ケイ"],"kun":["こみち","さしわたし","ただちに","みち"],"label":"diameter, method, path","radical":"又"},"恵":{"c":"恵","jlpt":1,"strokes":10,"on":["エ","ケイ"],"kun":["めぐ.み","めぐ.む"],"label":"favor, blessing, grace","radical":"一"},"慶":{"c":"慶","jlpt":1,"strokes":15,"on":["ケイ"],"kun":["よろこ.び"],"label":"jubilation, be happy, congratulate","radical":"冖"},"慧":{"c":"慧","jlpt":1,"strokes":15,"on":["エ","ケイ"],"kun":["さとい"],"label":"wise","radical":"一"},"憩":{"c":"憩","jlpt":1,"strokes":16,"on":["ケイ"],"kun":["いこ.い","いこ.う"],"label":"recess, relax, repose","radical":"口"},"掲":{"c":"掲","jlpt":1,"strokes":11,"on":["ケイ"],"kun":["かか.げる"],"label":"put up (a notice), describe, display","radical":"勹"},"携":{"c":"携","jlpt":1,"strokes":13,"on":["ケイ"],"kun":["たずさ.える","たずさ.わる"],"label":"portable, armed with, bring along","radical":"ノ"},"桂":{"c":"桂","jlpt":1,"strokes":10,"on":["ケイ"],"kun":["かつら"],"label":"Japanese Judas-tree, cinnamon tree","radical":"土"},"渓":{"c":"渓","jlpt":1,"strokes":11,"on":["ケイ"],"kun":["たに","たにがわ"],"label":"mountain stream, valley","radical":"二"},"系":{"c":"系","jlpt":1,"strokes":7,"on":["ケイ"],"kun":[],"label":"lineage, system","radical":"ノ"},"継":{"c":"継","jlpt":1,"strokes":13,"on":["ケイ"],"kun":["つ.ぐ","まま-"],"label":"inherit, continue, graft (tree)","radical":"｜"},"茎":{"c":"茎","jlpt":1,"strokes":8,"on":["キョウ","ケイ"],"kun":["くき"],"label":"stalk, stem","radical":"又"},"蛍":{"c":"蛍","jlpt":1,"strokes":11,"on":["ケイ"],"kun":["ほたる"],"label":"lightning-bug, firefly","radical":"冖"},"鶏":{"c":"鶏","jlpt":1,"strokes":19,"on":["ケイ"],"kun":["とり","にわとり"],"label":"chicken","radical":"二"},"鯨":{"c":"鯨","jlpt":1,"strokes":19,"on":["ゲイ"],"kun":["くじら"],"label":"whale","radical":"口"},"撃":{"c":"撃","jlpt":1,"strokes":15,"on":["ゲキ"],"kun":["う.つ"],"label":"beat, attack, conquer","radical":"几"},"激":{"c":"激","jlpt":1,"strokes":16,"on":["ゲキ"],"kun":["はげ.しい"],"label":"violent, chafe, enraged","radical":"方"},"傑":{"c":"傑","jlpt":1,"strokes":13,"on":["ケツ"],"kun":["すぐ.れる"],"label":"greatness, excellence","radical":"夕"},"潔":{"c":"潔","jlpt":1,"strokes":15,"on":["ケツ"],"kun":["いさぎよ.い"],"label":"undefiled, clean, gallant","radical":"二"},"穴":{"c":"穴","jlpt":1,"strokes":5,"on":["ケツ"],"kun":["あな"],"label":"hole, aperture, cave","radical":"儿"},"結":{"c":"結","jlpt":1,"strokes":12,"on":["ケチ","ケツ"],"kun":["むす.ぶ","ゆ.う","ゆ.わえる"],"label":"tie, bind, contract","radical":"口"},"倹":{"c":"倹","jlpt":1,"strokes":10,"on":["ケン"],"kun":["つづまやか","つま.しい"],"label":"frugal, economy, thrifty","radical":"一"},"健":{"c":"健","jlpt":1,"strokes":11,"on":["ケン"],"kun":["すこ.やか"],"label":"healthy, health, persistence","radical":"廴"},"兼":{"c":"兼","jlpt":1,"strokes":10,"on":["ケン"],"kun":["-か.ねる","か.ねる"],"label":"concurrently, and, beforehand","radical":"一"},"剣":{"c":"剣","jlpt":1,"strokes":10,"on":["ケン"],"kun":["つるぎ"],"label":"blade, clock hand, sabre","radical":"人"},"圏":{"c":"圏","jlpt":1,"strokes":12,"on":["ケン"],"kun":["かこ.い"],"label":"sphere, circle, radius","radical":"一"},"堅":{"c":"堅","jlpt":1,"strokes":12,"on":["ケン"],"kun":["-がた.い","かた.い"],"label":"strict, hard, reliable","radical":"又"},"嫌":{"c":"嫌","jlpt":1,"strokes":13,"on":["ケン","ゲン"],"kun":["いや","きら.い","きら.う"],"label":"dislike, detest, hate","radical":"｜"},"憲":{"c":"憲","jlpt":1,"strokes":16,"on":["ケン"],"kun":[],"label":"constitution, law","radical":"二"},"懸":{"c":"懸","jlpt":1,"strokes":20,"on":["ケ","ケン"],"kun":["か.かる","か.ける"],"label":"consult, depend, distant","radical":"ノ"},"拳":{"c":"拳","jlpt":1,"strokes":10,"on":["ケン","ゲン"],"kun":["こぶし"],"label":"fist","radical":"一"},"検":{"c":"検","jlpt":1,"strokes":12,"on":["ケン"],"kun":["しら.べる"],"label":"examination, investigate","radical":"人"},"献":{"c":"献","jlpt":1,"strokes":13,"on":["ケン","コン"],"kun":["たてまつ.る"],"label":"offering, offer, present","radical":"冂"},"絹":{"c":"絹","jlpt":1,"strokes":13,"on":["ケン"],"kun":["きぬ"],"label":"silk","radical":"口"},"謙":{"c":"謙","jlpt":1,"strokes":17,"on":["ケン"],"kun":["へりくだ.る"],"label":"self-effacing, be modest, condescend","radical":"｜"},"遣":{"c":"遣","jlpt":1,"strokes":13,"on":["ケン"],"kun":["-つか.い","-づか.い","つか.う","つか.わす","や.る"],"label":"dispatch, despatch, do","radical":"一"},"顕":{"c":"顕","jlpt":1,"strokes":18,"on":["ケン"],"kun":["あきらか","あらわ.れる"],"label":"appear, existing","radical":"ハ"},"厳":{"c":"厳","jlpt":1,"strokes":17,"on":["ゲン","ゴン"],"kun":["いか.めしい","いつくし","おごそ.か","きび.しい"],"label":"stern, rigidity, severity","radical":"厂"},"幻":{"c":"幻","jlpt":1,"strokes":4,"on":["ゲン"],"kun":["まぼろし"],"label":"phantasm, apparition, dream","radical":"幺"},"弦":{"c":"弦","jlpt":1,"strokes":8,"on":["ゲン"],"kun":["つる"],"label":"bowstring, chord, hypotenuse","radical":"幺"},"源":{"c":"源","jlpt":1,"strokes":13,"on":["ゲン"],"kun":["みなもと"],"label":"source, origin","radical":"厂"},"玄":{"c":"玄","jlpt":1,"strokes":5,"on":["ゲン"],"kun":["くろ","くろ.い"],"label":"mysterious, black, deep","radical":"幺"},"絃":{"c":"絃","jlpt":1,"strokes":11,"on":["ゲン"],"kun":["いと"],"label":"cord, samisen music, string","radical":"小"},"孤":{"c":"孤","jlpt":1,"strokes":9,"on":["コ"],"kun":[],"label":"orphan, alone","radical":"子"},"己":{"c":"己","jlpt":1,"strokes":3,"on":["キ","コ"],"kun":["おのれ","つちのと","な"],"label":"self","radical":"已"},"弧":{"c":"弧","jlpt":1,"strokes":9,"on":["コ"],"kun":[],"label":"arc, arch, bow","radical":"弓"},"故":{"c":"故","jlpt":1,"strokes":9,"on":["コ"],"kun":["ふる.い","もと","ゆえ"],"label":"happenstance, cause, circumstances","radical":"十"},"胡":{"c":"胡","jlpt":1,"strokes":9,"on":["ウ","コ","ゴ"],"kun":["なんぞ"],"label":"barbarian, foreign","radical":"十"},"虎":{"c":"虎","jlpt":1,"strokes":8,"on":["コ"],"kun":["とら"],"label":"tiger, drunkard","radical":"儿"},"誇":{"c":"誇","jlpt":1,"strokes":13,"on":["コ"],"kun":["ほこ.る"],"label":"boast, be proud, pride","radical":"二"},"顧":{"c":"顧","jlpt":1,"strokes":21,"on":["コ"],"kun":["かえり.みる"],"label":"look back, examine oneself, review","radical":"一"},"鼓":{"c":"鼓","jlpt":1,"strokes":13,"on":["コ"],"kun":["つづみ"],"label":"drum, beat, muster","radical":"十"},"伍":{"c":"伍","jlpt":1,"strokes":6,"on":["ゴ"],"kun":["いつつ"],"label":"file, five, five-man squad","radical":"五"},"呉":{"c":"呉","jlpt":1,"strokes":7,"on":["ゴ"],"kun":["く.れる","くれ"],"label":"give, do something for, kingdom of Wu","radical":"ハ"},"娯":{"c":"娯","jlpt":1,"strokes":10,"on":["ゴ"],"kun":[],"label":"recreation, pleasure","radical":"ハ"},"悟":{"c":"悟","jlpt":1,"strokes":10,"on":["ゴ"],"kun":["さと.る"],"label":"enlightenment, discern, perceive","radical":"口"},"梧":{"c":"梧","jlpt":1,"strokes":11,"on":["ゴ"],"kun":["あおぎり"],"label":"Chinese parasol tree, phoenix tree","radical":"口"},"瑚":{"c":"瑚","jlpt":1,"strokes":13,"on":["コ","ゴ"],"kun":[],"label":"ancestral offering receptacle, coral","radical":"十"},"碁":{"c":"碁","jlpt":1,"strokes":13,"on":["ゴ"],"kun":[],"label":"Go","radical":"一"},"護":{"c":"護","jlpt":1,"strokes":20,"on":["ゴ"],"kun":["まも.る"],"label":"safeguard, protect","radical":"又"},"鯉":{"c":"鯉","jlpt":1,"strokes":18,"on":["リ"],"kun":["こい"],"label":"carp","radical":"田"},"侯":{"c":"侯","jlpt":1,"strokes":9,"on":["コウ"],"kun":[],"label":"marquis, daimyo, lord","radical":"矢"},"倖":{"c":"倖","jlpt":1,"strokes":10,"on":["コウ"],"kun":["さいわ.い","しあわ.せ"],"label":"happiness, luck","radical":"十"},"功":{"c":"功","jlpt":1,"strokes":5,"on":["ク","コウ"],"kun":["いさお"],"label":"achievement, credit, honor","radical":"力"},"后":{"c":"后","jlpt":1,"strokes":6,"on":["コウ","ゴ"],"kun":["きさき"],"label":"empress, after, back","radical":"一"},"坑":{"c":"坑","jlpt":1,"strokes":7,"on":["コウ"],"kun":[],"label":"pit, hole","radical":"几"},"孔":{"c":"孔","jlpt":1,"strokes":4,"on":["ク","コウ"],"kun":["あな"],"label":"cavity, exceedingly, great","radical":"乙"},"宏":{"c":"宏","jlpt":1,"strokes":7,"on":["コウ"],"kun":["ひろ.い"],"label":"large, wide","radical":"一"},"巧":{"c":"巧","jlpt":1,"strokes":5,"on":["コウ"],"kun":["うま.い","たく.み","たく.む"],"label":"adroit, ingenuity, skilled","radical":"一"},"康":{"c":"康","jlpt":1,"strokes":11,"on":["コウ"],"kun":[],"label":"ease, peace","radical":"广"},"弘":{"c":"弘","jlpt":1,"strokes":5,"on":["グ","コウ"],"kun":["ひろ.い"],"label":"vast, broad, wide","radical":"厶"},"恒":{"c":"恒","jlpt":1,"strokes":9,"on":["コウ"],"kun":["つね","つねに"],"label":"constancy, always","radical":"一"},"抗":{"c":"抗","jlpt":1,"strokes":7,"on":["コウ"],"kun":["あらが.う"],"label":"confront, defy, oppose","radical":"几"},"拘":{"c":"拘","jlpt":1,"strokes":8,"on":["コウ"],"kun":["かか.わる"],"label":"arrest, adhere to, concerned","radical":"勹"},"控":{"c":"控","jlpt":1,"strokes":11,"on":["コウ"],"kun":["ひか.え","ひか.える"],"label":"withdraw, be moderate, draw in","radical":"儿"},"攻":{"c":"攻","jlpt":1,"strokes":7,"on":["コウ"],"kun":["せ.める"],"label":"aggression, attack, criticize","radical":"工"},"昂":{"c":"昂","jlpt":1,"strokes":8,"on":["コウ","ゴウ"],"kun":["あ.がる","たか.い","たか.ぶる"],"label":"rise","radical":"卩"},"晃":{"c":"晃","jlpt":1,"strokes":10,"on":["コウ"],"kun":["あきらか"],"label":"clear","radical":"一"},"江":{"c":"江","jlpt":1,"strokes":6,"on":["コウ"],"kun":["え"],"label":"creek, bay, inlet","radical":"工"},"洪":{"c":"洪","jlpt":1,"strokes":9,"on":["コウ"],"kun":[],"label":"deluge, flood, vast","radical":"一"},"浩":{"c":"浩","jlpt":1,"strokes":10,"on":["コウ"],"kun":["おおき.い","ひろ.い"],"label":"abundance, vigorous, wide expanse","radical":"ノ"},"溝":{"c":"溝","jlpt":1,"strokes":13,"on":["コウ"],"kun":["みぞ"],"label":"gutter, ditch, drain","radical":"一"},"甲":{"c":"甲","jlpt":1,"strokes":5,"on":["カン","コウ"],"kun":["きのえ"],"label":"armor, A grade, carapace","radical":"｜"},"皇":{"c":"皇","jlpt":1,"strokes":9,"on":["オウ","コウ"],"kun":[],"label":"emperor","radical":"王"},"稿":{"c":"稿","jlpt":1,"strokes":15,"on":["コウ"],"kun":["したがき","わら"],"label":"draft, copy, manuscript","radical":"冂"},"紘":{"c":"紘","jlpt":1,"strokes":10,"on":["コウ"],"kun":["おおづな","つな","つなぐ"],"label":"large","radical":"一"},"絞":{"c":"絞","jlpt":1,"strokes":12,"on":["コウ"],"kun":["し.まる","し.める","しぼ.る"],"label":"strangle, constrict, wring","radical":"小"},"綱":{"c":"綱","jlpt":1,"strokes":14,"on":["コウ"],"kun":["つな"],"label":"hawser, cable, class (genus)","radical":"一"},"衡":{"c":"衡","jlpt":1,"strokes":16,"on":["コウ"],"kun":[],"label":"equilibrium, measuring rod, scale","radical":"勹"},"貢":{"c":"貢","jlpt":1,"strokes":10,"on":["ク","コウ"],"kun":["みつ.ぐ"],"label":"tribute, finance, support","radical":"ハ"},"購":{"c":"購","jlpt":1,"strokes":17,"on":["コウ"],"kun":[],"label":"subscription, buy","radical":"一"},"酵":{"c":"酵","jlpt":1,"strokes":14,"on":["コウ"],"kun":[],"label":"fermentation","radical":"子"},"鋼":{"c":"鋼","jlpt":1,"strokes":16,"on":["コウ"],"kun":["はがね"],"label":"steel","radical":"冂"},"項":{"c":"項","jlpt":1,"strokes":12,"on":["コウ"],"kun":["うなじ"],"label":"paragraph, clause, item","radical":"ハ"},"鴻":{"c":"鴻","jlpt":1,"strokes":17,"on":["コウ","ゴウ"],"kun":["おおがり","おおとり","ひしくい"],"label":"great, large, large bird","radical":"工"},"剛":{"c":"剛","jlpt":1,"strokes":10,"on":["ゴウ"],"kun":[],"label":"sturdy, strength","radical":"冂"},"拷":{"c":"拷","jlpt":1,"strokes":9,"on":["ゴウ"],"kun":[],"label":"torture, beat","radical":"老"},"豪":{"c":"豪","jlpt":1,"strokes":14,"on":["ゴウ"],"kun":["えら.い"],"label":"overpowering, Australia, excelling","radical":"冖"},"克":{"c":"克","jlpt":1,"strokes":7,"on":["コク"],"kun":["か.つ"],"label":"overcome, kindly, skillfully","radical":"儿"},"穀":{"c":"穀","jlpt":1,"strokes":14,"on":["コク"],"kun":[],"label":"cereals, grain","radical":"冖"},"酷":{"c":"酷","jlpt":1,"strokes":14,"on":["コク"],"kun":["ひど.い"],"label":"cruel, atrocious, severe","radical":"ノ"},"獄":{"c":"獄","jlpt":1,"strokes":14,"on":["ゴク"],"kun":[],"label":"prison, jail","radical":"犬"},"墾":{"c":"墾","jlpt":1,"strokes":16,"on":["コン"],"kun":["は.る","ひら.く"],"label":"ground-breaking, open up farmland","radical":"土"},"恨":{"c":"恨","jlpt":1,"strokes":9,"on":["コン"],"kun":["うら.む","うら.めしい"],"label":"bear a grudge, hatred, malice","radical":"艮"},"懇":{"c":"懇","jlpt":1,"strokes":17,"on":["コン"],"kun":["ねんご.ろ"],"label":"sociable, cordial, courteous","radical":"心"},"昆":{"c":"昆","jlpt":1,"strokes":8,"on":["コン"],"kun":[],"label":"descendants, elder brother, insect","radical":"日"},"紺":{"c":"紺","jlpt":1,"strokes":11,"on":["コン"],"kun":[],"label":"dark blue, navy","radical":"小"},"魂":{"c":"魂","jlpt":1,"strokes":14,"on":["コン"],"kun":["たま","たましい"],"label":"soul, spirit","radical":"二"},"佐":{"c":"佐","jlpt":1,"strokes":7,"on":["サ"],"kun":[],"label":"assistant, help","radical":"一"},"唆":{"c":"唆","jlpt":1,"strokes":10,"on":["サ"],"kun":["そそ.る","そそのか.す"],"label":"tempt, instigate, promote","radical":"儿"},"嵯":{"c":"嵯","jlpt":1,"strokes":13,"on":["サ","シ"],"kun":[],"label":"craggy, rugged, steep","radical":"ノ"},"沙":{"c":"沙","jlpt":1,"strokes":7,"on":["サ","シャ"],"kun":["すな","よなげる"],"label":"sand","radical":"ノ"},"瑳":{"c":"瑳","jlpt":1,"strokes":14,"on":["サ"],"kun":["みが.く"],"label":"artful smile","radical":"ノ"},"詐":{"c":"詐","jlpt":1,"strokes":12,"on":["サ"],"kun":["いつわ.る"],"label":"lie, deceive, falsehood","radical":"｜"},"鎖":{"c":"鎖","jlpt":1,"strokes":18,"on":["サ"],"kun":["くさり","とざ.す"],"label":"chain, connection, irons","radical":"ハ"},"裟":{"c":"裟","jlpt":1,"strokes":13,"on":["サ","シャ"],"kun":[],"label":"Buddhist surplice","radical":"ノ"},"債":{"c":"債","jlpt":1,"strokes":13,"on":["サイ"],"kun":[],"label":"bond, debt, loan","radical":"二"},"催":{"c":"催","jlpt":1,"strokes":13,"on":["サイ"],"kun":["もよう.す","もよお.す"],"label":"sponsor, give (a dinner)","radical":"山"},"哉":{"c":"哉","jlpt":1,"strokes":9,"on":["サイ"],"kun":["かな","や"],"label":"alas, exclamation mark, how","radical":"口"},"宰":{"c":"宰","jlpt":1,"strokes":10,"on":["サイ"],"kun":[],"label":"superintend, manager, rule","radical":"十"},"彩":{"c":"彩","jlpt":1,"strokes":11,"on":["サイ"],"kun":["いろど.る"],"label":"coloring, makeup, paint","radical":"彡"},"栽":{"c":"栽","jlpt":1,"strokes":10,"on":["サイ"],"kun":[],"label":"plantation, planting","radical":"土"},"災":{"c":"災","jlpt":1,"strokes":7,"on":["サイ"],"kun":["わざわ.い"],"label":"disaster, calamity, curse","radical":"巛"},"采":{"c":"采","jlpt":1,"strokes":8,"on":["サイ"],"kun":["いろどり","と.る"],"label":"appearance, coloring, dice","radical":"木"},"砕":{"c":"砕","jlpt":1,"strokes":9,"on":["サイ"],"kun":["くだ.く","くだ.ける"],"label":"smash, break, crush","radical":"ノ"},"斎":{"c":"斎","jlpt":1,"strokes":11,"on":["サイ"],"kun":["い.む","いつ.く","いわ.う","つつし.む","とき","ものいみ"],"label":"purification, Buddhist food, alike","radical":"｜"},"裁":{"c":"裁","jlpt":1,"strokes":12,"on":["サイ"],"kun":["さば.く","た.つ"],"label":"tailor, cut out (pattern), decision","radical":"厶"},"載":{"c":"載","jlpt":1,"strokes":13,"on":["サイ"],"kun":["の.せる","の.る"],"label":"board, get on, place","radical":"土"},"剤":{"c":"剤","jlpt":1,"strokes":10,"on":["ザイ","スイ","セイ"],"kun":["かる","けず.る"],"label":"dose, drug, medicine","radical":"｜"},"冴":{"c":"冴","jlpt":1,"strokes":7,"on":["コ","ゴ"],"kun":["こお.る","さ.える","ひ.える"],"label":"be clear, cold, serene","radical":"冫"},"崎":{"c":"崎","jlpt":1,"strokes":11,"on":["キ"],"kun":["さい","さき","みさき"],"label":"promontory, cape, spit","radical":"一"},"削":{"c":"削","jlpt":1,"strokes":9,"on":["サク"],"kun":["けず.る","そ.ぐ","はつ.る"],"label":"plane, pare, sharpen","radical":"月"},"搾":{"c":"搾","jlpt":1,"strokes":13,"on":["サク"],"kun":["しぼ.る"],"label":"squeeze","radical":"｜"},"朔":{"c":"朔","jlpt":1,"strokes":10,"on":["サク"],"kun":["ついたち"],"label":"conjunction (astronomy)","radical":"屮"},"策":{"c":"策","jlpt":1,"strokes":12,"on":["サク"],"kun":[],"label":"scheme, means, plan","radical":"｜"},"索":{"c":"索","jlpt":1,"strokes":10,"on":["サク"],"kun":[],"label":"cord, inquiring, rope","radical":"冖"},"錯":{"c":"錯","jlpt":1,"strokes":16,"on":["サク","シャク"],"kun":[],"label":"confused, be in disorder, mix","radical":"二"},"桜":{"c":"桜","jlpt":1,"strokes":10,"on":["オウ","ヨウ"],"kun":["さくら"],"label":"cherry","radical":"女"},"笹":{"c":"笹","jlpt":1,"strokes":11,"on":[],"kun":["ささ"],"label":"bamboo grass","radical":"竹"},"撮":{"c":"撮","jlpt":1,"strokes":15,"on":["サツ"],"kun":["-ど.り","つま.む","と.る"],"label":"snapshot, take pictures","radical":"又"},"擦":{"c":"擦","jlpt":1,"strokes":17,"on":["サツ"],"kun":["-ず.れ","こす.る","こす.れる","す.る","す.れる"],"label":"grate, chafe, rub","radical":"ノ"},"皐":{"c":"皐","jlpt":1,"strokes":11,"on":["コウ"],"kun":["さつき"],"label":"shore, swamp","radical":"二"},"傘":{"c":"傘","jlpt":1,"strokes":12,"on":["サン"],"kun":["かさ"],"label":"umbrella","radical":"人"},"惨":{"c":"惨","jlpt":1,"strokes":11,"on":["サン","ザン"],"kun":["いた.む","みじ.め","むご.い"],"label":"wretched, cruelty, disaster","radical":"一"},"桟":{"c":"桟","jlpt":1,"strokes":10,"on":["サン","セン"],"kun":["かけはし"],"label":"scaffold, bolt (door), cleat","radical":"二"},"燦":{"c":"燦","jlpt":1,"strokes":17,"on":["サン"],"kun":["あき.らか","きら.めく","きらめ.く","さん.たる"],"label":"brilliant","radical":"又"},"蚕":{"c":"蚕","jlpt":1,"strokes":10,"on":["サン","テン"],"kun":["かいこ","こ"],"label":"silkworm","radical":"一"},"酸":{"c":"酸","jlpt":1,"strokes":14,"on":["サン"],"kun":["す.い"],"label":"acid, bitterness, sour","radical":"儿"},"暫":{"c":"暫","jlpt":1,"strokes":15,"on":["ザン"],"kun":["しばら.く"],"label":"temporarily, a while, long time","radical":"斤"},"司":{"c":"司","jlpt":1,"strokes":5,"on":["シ"],"kun":["つかさど.る"],"label":"director, administer, govt office","radical":"一"},"嗣":{"c":"嗣","jlpt":1,"strokes":13,"on":["シ"],"kun":[],"label":"heir, succeed","radical":"一"},"士":{"c":"士","jlpt":1,"strokes":3,"on":["シ"],"kun":["さむらい"],"label":"gentleman, samurai, scholar","radical":"士"},"姿":{"c":"姿","jlpt":1,"strokes":9,"on":["シ"],"kun":["すがた"],"label":"figure, form, shape","radical":"冫"},"志":{"c":"志","jlpt":1,"strokes":7,"on":["シ"],"kun":["こころざ.す","こころざし","シリング"],"label":"intention, aspire, hopes","radical":"士"},"施":{"c":"施","jlpt":1,"strokes":9,"on":["シ","セ"],"kun":["ほどこ.す"],"label":"alms, bestow, give","radical":"一"},"旨":{"c":"旨","jlpt":1,"strokes":6,"on":["シ"],"kun":["うま.い","むね"],"label":"delicious, clever, expert","radical":"匕"},"氏":{"c":"氏","jlpt":1,"strokes":4,"on":["シ"],"kun":["-うじ","うじ"],"label":"family name, clan, surname","radical":"氏"},"祉":{"c":"祉","jlpt":1,"strokes":8,"on":["シ"],"kun":[],"label":"welfare, happiness","radical":"止"},"紫":{"c":"紫","jlpt":1,"strokes":12,"on":["シ"],"kun":["むらさき"],"label":"purple, violet","radical":"匕"},"肢":{"c":"肢","jlpt":1,"strokes":8,"on":["シ"],"kun":[],"label":"limb, arms & legs","radical":"十"},"至":{"c":"至","jlpt":1,"strokes":6,"on":["シ"],"kun":["いた.る"],"label":"climax, arrive, attain","radical":"一"},"視":{"c":"視","jlpt":1,"strokes":11,"on":["シ"],"kun":["み.る"],"label":"inspection, look at, regard as","radical":"見"},"詩":{"c":"詩","jlpt":1,"strokes":13,"on":["シ"],"kun":["うた"],"label":"poem, poetry","radical":"土"},"諮":{"c":"諮","jlpt":1,"strokes":16,"on":["シ"],"kun":["はか.る"],"label":"consult with","radical":"冫"},"賜":{"c":"賜","jlpt":1,"strokes":15,"on":["シ"],"kun":["たま.う","たまわ.る","たも.う"],"label":"grant, boon, gift","radical":"ハ"},"雌":{"c":"雌","jlpt":1,"strokes":14,"on":["シ"],"kun":["め-","めす","めん"],"label":"female, feminine","radical":"匕"},"飼":{"c":"飼","jlpt":1,"strokes":13,"on":["シ"],"kun":["か.う"],"label":"domesticate, feed, keep","radical":"亅"},"侍":{"c":"侍","jlpt":1,"strokes":8,"on":["シ","ジ"],"kun":["さむらい","はべ.る"],"label":"waiter, samurai, serve","radical":"土"},"慈":{"c":"慈","jlpt":1,"strokes":13,"on":["ジ"],"kun":["いつく.しむ"],"label":"mercy","radical":"一"},"滋":{"c":"滋","jlpt":1,"strokes":12,"on":["シ","ジ"],"kun":[],"label":"nourishing, be luxuriant, more & more","radical":"一"},"爾":{"c":"爾","jlpt":1,"strokes":14,"on":["ジ","ニ"],"kun":["おれ","しか","しかり","その","なんじ","のみ"],"label":"second person, thou, you","radical":"一"},"磁":{"c":"磁","jlpt":1,"strokes":14,"on":["ジ"],"kun":[],"label":"magnet, porcelain","radical":"一"},"蒔":{"c":"蒔","jlpt":1,"strokes":13,"on":["シ","ジ"],"kun":["う.える","ま.く"],"label":"sow (seeds)","radical":"土"},"汐":{"c":"汐","jlpt":1,"strokes":6,"on":["セキ"],"kun":["うしお","しお","せい"],"label":"eventide, opportunity, salt water","radical":"夕"},"鹿":{"c":"鹿","jlpt":1,"strokes":11,"on":["ロク"],"kun":["か","しか"],"label":"deer","radical":"广"},"軸":{"c":"軸","jlpt":1,"strokes":12,"on":["ジク"],"kun":[],"label":"axis, pivot, stalk","radical":"｜"},"執":{"c":"執","jlpt":1,"strokes":11,"on":["シツ","シュウ"],"kun":["と.る"],"label":"tenacious, grasp, take hold","radical":"丶"},"漆":{"c":"漆","jlpt":1,"strokes":14,"on":["シツ"],"kun":["うるし"],"label":"lacquer, seven, varnish","radical":"木"},"疾":{"c":"疾","jlpt":1,"strokes":10,"on":["シツ"],"kun":["はや.い"],"label":"rapidly","radical":"矢"},"偲":{"c":"偲","jlpt":1,"strokes":11,"on":["サイ","シ"],"kun":["しの.ぶ"],"label":"recollect, remember","radical":"心"},"芝":{"c":"芝","jlpt":1,"strokes":6,"on":["シ"],"kun":["しば"],"label":"turf, lawn","radical":"亠"},"舎":{"c":"舎","jlpt":1,"strokes":8,"on":["シャ","セキ"],"kun":["やど.る"],"label":"cottage, house, hut","radical":"口"},"射":{"c":"射","jlpt":1,"strokes":10,"on":["シャ"],"kun":["い.る","う.つ","さ.す"],"label":"shoot, archery, onto","radical":"寸"},"赦":{"c":"赦","jlpt":1,"strokes":11,"on":["シャ"],"kun":[],"label":"pardon, forgiveness","radical":"土"},"斜":{"c":"斜","jlpt":1,"strokes":11,"on":["シャ"],"kun":["なな.め","はす"],"label":"diagonal, oblique, slanting","radical":"一"},"煮":{"c":"煮","jlpt":1,"strokes":12,"on":["シャ"],"kun":["-に","に.える","に.やす","に.る"],"label":"boil, cook","radical":"日"},"紗":{"c":"紗","jlpt":1,"strokes":10,"on":["サ","シャ"],"kun":["うすぎぬ"],"label":"gossamer, gauze","radical":"ノ"},"謝":{"c":"謝","jlpt":1,"strokes":17,"on":["シャ"],"kun":["あやま.る"],"label":"apologize, refuse, thank","radical":"寸"},"遮":{"c":"遮","jlpt":1,"strokes":14,"on":["シャ"],"kun":["さえぎ.る"],"label":"intercept, interrupt, obstruct","radical":"一"},"蛇":{"c":"蛇","jlpt":1,"strokes":11,"on":["イ","ジャ","ダ","ヤ"],"kun":["へび"],"label":"snake, hard drinker, serpent","radical":"匕"},"邪":{"c":"邪","jlpt":1,"strokes":8,"on":["ジャ"],"kun":["よこし.ま"],"label":"wicked, injustice, wrong","radical":"牙"},"勺":{"c":"勺","jlpt":1,"strokes":3,"on":["シャク"],"kun":[],"label":"ladle, dip, one tenth of a go","radical":"丶"},"尺":{"c":"尺","jlpt":1,"strokes":4,"on":["シャク","セキ"],"kun":["さし"],"label":"shaku, Japanese foot, measure","radical":"丶"},"爵":{"c":"爵","jlpt":1,"strokes":17,"on":["シャク"],"kun":[],"label":"baron, court rank, peerage","radical":"寸"},"酌":{"c":"酌","jlpt":1,"strokes":10,"on":["シャク"],"kun":["く.む"],"label":"bar-tending, draw (water), ladle","radical":"丶"},"釈":{"c":"釈","jlpt":1,"strokes":11,"on":["シャク","セキ"],"kun":["す.てる","とく","ゆる.す"],"label":"explanation","radical":"丶"},"寂":{"c":"寂","jlpt":1,"strokes":11,"on":["ジャク","セキ"],"kun":["さび","さび.しい","さび.れる","さみ.しい"],"label":"loneliness, death of a priest, mature","radical":"卜"},"朱":{"c":"朱","jlpt":1,"strokes":6,"on":["シュ"],"kun":["あけ"],"label":"vermilion, bloody, cinnabar","radical":"｜"},"殊":{"c":"殊","jlpt":1,"strokes":10,"on":["シュ"],"kun":["こと"],"label":"particularly, especially, exceptionally","radical":"｜"},"狩":{"c":"狩","jlpt":1,"strokes":9,"on":["シュ"],"kun":["-が.り","か.り","か.る"],"label":"hunt, gather, raid","radical":"寸"},"珠":{"c":"珠","jlpt":1,"strokes":10,"on":["シュ"],"kun":["たま"],"label":"pearl, gem, jewel","radical":"｜"},"趣":{"c":"趣","jlpt":1,"strokes":15,"on":["シュ"],"kun":["おもむ.く","おもむき"],"label":"gist, become, elegance","radical":"又"},"儒":{"c":"儒","jlpt":1,"strokes":16,"on":["ジュ"],"kun":[],"label":"Confucian","radical":"而"},"授":{"c":"授","jlpt":1,"strokes":11,"on":["ジュ"],"kun":["さず.かる","さず.ける"],"label":"impart, confer, grant","radical":"冖"},"樹":{"c":"樹","jlpt":1,"strokes":16,"on":["ジュ"],"kun":["き"],"label":"establish, set up, timber","radical":"口"},"需":{"c":"需","jlpt":1,"strokes":14,"on":["ジュ"],"kun":[],"label":"demand, need, request","radical":"而"},"囚":{"c":"囚","jlpt":1,"strokes":5,"on":["シュウ"],"kun":["とら.われる"],"label":"captured, arrest, catch","radical":"人"},"宗":{"c":"宗","jlpt":1,"strokes":8,"on":["シュウ","ソウ"],"kun":["むね"],"label":"religion, denomination, essence","radical":"二"},"就":{"c":"就","jlpt":1,"strokes":12,"on":["シュウ","ジュ"],"kun":["つ.く","つ.ける"],"label":"concerning, depart, per","radical":"丶"},"修":{"c":"修","jlpt":1,"strokes":10,"on":["シュ","シュウ"],"kun":["おさ.まる","おさ.める"],"label":"discipline, conduct oneself well, master","radical":"｜"},"愁":{"c":"愁","jlpt":1,"strokes":13,"on":["シュウ"],"kun":["うれ.い","うれ.える"],"label":"distress, be anxious, grieve","radical":"心"},"洲":{"c":"洲","jlpt":1,"strokes":9,"on":["シュウ","ス"],"kun":["しま"],"label":"continent, country, island","radical":"｜"},"秀":{"c":"秀","jlpt":1,"strokes":7,"on":["シュウ"],"kun":["ひい.でる"],"label":"excel, beauty, excellence","radical":"ノ"},"臭":{"c":"臭","jlpt":1,"strokes":9,"on":["シュウ"],"kun":["-くさ.い","くさ.い","にお.い","にお.う"],"label":"stinking, be bright, be fragrant","radical":"大"},"衆":{"c":"衆","jlpt":1,"strokes":12,"on":["シュ","シュウ"],"kun":["おお.い"],"label":"masses, great numbers, multitude","radical":"皿"},"襲":{"c":"襲","jlpt":1,"strokes":22,"on":["シュウ"],"kun":["おそ.う","かさ.ね"],"label":"attack, advance on, heap","radical":"月"},"酬":{"c":"酬","jlpt":1,"strokes":13,"on":["シュ","シュウ","トウ"],"kun":["むく.いる"],"label":"repay, retribution, reward","radical":"｜"},"醜":{"c":"醜","jlpt":1,"strokes":17,"on":["シュウ"],"kun":["しこ","みにく.い"],"label":"ugly, bad looking, shame","radical":"儿"},"充":{"c":"充","jlpt":1,"strokes":6,"on":["ジュウ"],"kun":["あ.てる","み.たす"],"label":"allot, fill","radical":"儿"},"従":{"c":"従","jlpt":1,"strokes":10,"on":["ショウ","ジュ","ジュウ"],"kun":["したが.う","したが.える","より"],"label":"accompany, comply, follow","radical":"彳"},"汁":{"c":"汁","jlpt":1,"strokes":5,"on":["ジュウ"],"kun":["-しる","しる","つゆ"],"label":"soup, broth, gravy","radical":"十"},"渋":{"c":"渋","jlpt":1,"strokes":11,"on":["シュウ","ジュウ"],"kun":["しぶ","しぶ.い","しぶ.る"],"label":"astringent, have diarrhea, hesitate","radical":"冫"},"獣":{"c":"獣","jlpt":1,"strokes":16,"on":["ジュウ"],"kun":["けだもの","けもの"],"label":"animal, beast","radical":"口"},"縦":{"c":"縦","jlpt":1,"strokes":16,"on":["ジュウ"],"kun":["たて"],"label":"vertical, height, length","radical":"小"},"銃":{"c":"銃","jlpt":1,"strokes":14,"on":["ジュウ"],"kun":["つつ"],"label":"gun, arms","radical":"儿"},"叔":{"c":"叔","jlpt":1,"strokes":8,"on":["シュク"],"kun":[],"label":"uncle, youth","radical":"卜"},"淑":{"c":"淑","jlpt":1,"strokes":11,"on":["シュク"],"kun":["しと.やか"],"label":"graceful, gentle, pure","radical":"卜"},"縮":{"c":"縮","jlpt":1,"strokes":17,"on":["シュク"],"kun":["ちぢ.まる","ちぢ.む","ちぢ.める","ちぢ.らす","ちぢ.れる"],"label":"shrink, contract, reduce","radical":"小"},"粛":{"c":"粛","jlpt":1,"strokes":11,"on":["シュク","スク"],"kun":["つつし.む"],"label":"solemn, quietly, softly","radical":"｜"},"塾":{"c":"塾","jlpt":1,"strokes":14,"on":["ジュク"],"kun":[],"label":"cram school, private school","radical":"丶"},"熟":{"c":"熟","jlpt":1,"strokes":15,"on":["ジュク"],"kun":["う.れる"],"label":"mellow, acquire skill, mature","radical":"丶"},"俊":{"c":"俊","jlpt":1,"strokes":9,"on":["シュン"],"kun":[],"label":"sagacious, excellence, genius","radical":"儿"},"峻":{"c":"峻","jlpt":1,"strokes":10,"on":["シュン"],"kun":["けわ.しい","たか.い"],"label":"steep, high","radical":"儿"},"瞬":{"c":"瞬","jlpt":1,"strokes":18,"on":["シュン"],"kun":["まじろ.ぐ","またた.く"],"label":"wink, blink, twinkle","radical":"冖"},"竣":{"c":"竣","jlpt":1,"strokes":12,"on":["シュン","ドウ"],"kun":["おわ.る","わらべ","わらわ"],"label":"end, finish","radical":"儿"},"舜":{"c":"舜","jlpt":1,"strokes":13,"on":["シュン"],"kun":[],"label":"rose of Sharon, althea","radical":"冖"},"駿":{"c":"駿","jlpt":1,"strokes":17,"on":["シュン","スン"],"kun":["すぐ.れる"],"label":"a fast person, a good horse, speed","radical":"儿"},"准":{"c":"准","jlpt":1,"strokes":10,"on":["ジュン"],"kun":[],"label":"associate","radical":"冫"},"循":{"c":"循","jlpt":1,"strokes":12,"on":["ジュン"],"kun":[],"label":"sequential, follow","radical":"十"},"旬":{"c":"旬","jlpt":1,"strokes":6,"on":["シュン","ジュン"],"kun":[],"label":"decameron","radical":"勹"},"殉":{"c":"殉","jlpt":1,"strokes":10,"on":["ジュン"],"kun":[],"label":"martyrdom, follow by resigning","radical":"勹"},"淳":{"c":"淳","jlpt":1,"strokes":11,"on":["シュン","ジュン"],"kun":["あつ.い"],"label":"pure","radical":"口"},"潤":{"c":"潤","jlpt":1,"strokes":15,"on":["ジュン"],"kun":["うる.む","うるお.う","うるお.す"],"label":"wet, be watered, charm","radical":"王"},"盾":{"c":"盾","jlpt":1,"strokes":9,"on":["ジュン"],"kun":["たて"],"label":"shield, escutcheon, pretext","radical":"十"},"巡":{"c":"巡","jlpt":1,"strokes":6,"on":["ジュン"],"kun":["めぐ.り","めぐ.る"],"label":"patrol, circumference, go around","radical":"巛"},"遵":{"c":"遵","jlpt":1,"strokes":15,"on":["ジュン"],"kun":[],"label":"abide by, follow, learn","radical":"寸"},"暑":{"c":"暑","jlpt":1,"strokes":12,"on":["ショ"],"kun":["あつ.い"],"label":"sultry, hot, summer heat","radical":"日"},"曙":{"c":"曙","jlpt":1,"strokes":17,"on":["ショ"],"kun":["あけぼの"],"label":"dawn, daybreak","radical":"日"},"渚":{"c":"渚","jlpt":1,"strokes":11,"on":["ショ"],"kun":["なぎさ"],"label":"strand, beach, shore","radical":"日"},"庶":{"c":"庶","jlpt":1,"strokes":11,"on":["ショ"],"kun":[],"label":"commoner, all, bastard","radical":"广"},"叙":{"c":"叙","jlpt":1,"strokes":9,"on":["ジョ"],"kun":["つい.ず","ついで"],"label":"confer, describe, narrate","radical":"一"},"序":{"c":"序","jlpt":1,"strokes":7,"on":["ジョ"],"kun":["つい.で","ついで"],"label":"preface, beginning, chance","radical":"一"},"徐":{"c":"徐","jlpt":1,"strokes":10,"on":["ジョ"],"kun":["おもむ.ろに"],"label":"gradually, deliberately, gently","radical":"一"},"恕":{"c":"恕","jlpt":1,"strokes":10,"on":["ショ","ジョ"],"kun":["ゆる.す"],"label":"excuse, forgive, tolerate","radical":"口"},"傷":{"c":"傷","jlpt":1,"strokes":13,"on":["ショウ"],"kun":["いた.む","いた.める","きず"],"label":"wound, cut, gash","radical":"一"},"償":{"c":"償","jlpt":1,"strokes":17,"on":["ショウ"],"kun":["つぐな.う"],"label":"reparation, make up for, recompense","radical":"ハ"},"匠":{"c":"匠","jlpt":1,"strokes":6,"on":["ショウ"],"kun":["たくみ"],"label":"artisan, carpenter, workman","radical":"匚"},"升":{"c":"升","jlpt":1,"strokes":4,"on":["ショウ"],"kun":["ます"],"label":"measuring box","radical":"ノ"},"唱":{"c":"唱","jlpt":1,"strokes":11,"on":["ショウ"],"kun":["とな.える"],"label":"chant, call upon, recite","radical":"口"},"奨":{"c":"奨","jlpt":1,"strokes":13,"on":["ショウ","ソウ"],"kun":["すす.める"],"label":"exhort, encourage, urge","radical":"大"},"宵":{"c":"宵","jlpt":1,"strokes":10,"on":["ショウ"],"kun":["よい"],"label":"wee hours, early night, evening","radical":"月"},"尚":{"c":"尚","jlpt":1,"strokes":8,"on":["ショウ"],"kun":["なお"],"label":"esteem, furthermore, still","radical":"冂"},"庄":{"c":"庄","jlpt":1,"strokes":6,"on":["ショウ","ソ","ソウ","ホウ"],"kun":[],"label":"hamlet, in the country, level","radical":"土"},"彰":{"c":"彰","jlpt":1,"strokes":14,"on":["ショウ"],"kun":[],"label":"patent, clear","radical":"十"},"抄":{"c":"抄","jlpt":1,"strokes":7,"on":["ショウ"],"kun":[],"label":"extract, copy, selection","radical":"ノ"},"掌":{"c":"掌","jlpt":1,"strokes":12,"on":["ショウ"],"kun":["たなごころ","てのひら"],"label":"manipulate, administer, conduct","radical":"冖"},"捷":{"c":"捷","jlpt":1,"strokes":11,"on":["ショウ","ソウ"],"kun":["はや.い"],"label":"fast, victory","radical":"疋"},"昌":{"c":"昌","jlpt":1,"strokes":8,"on":["ショウ"],"kun":["さかん"],"label":"prosperous, bright, clear","radical":"日"},"昭":{"c":"昭","jlpt":1,"strokes":9,"on":["ショウ"],"kun":[],"label":"shining, bright","radical":"刀"},"晶":{"c":"晶","jlpt":1,"strokes":12,"on":["ショウ"],"kun":[],"label":"sparkle, clear, crystal","radical":"日"},"松":{"c":"松","jlpt":1,"strokes":8,"on":["ショウ"],"kun":["まつ"],"label":"pine tree","radical":"ハ"},"梢":{"c":"梢","jlpt":1,"strokes":11,"on":["ショウ"],"kun":["くすのき","こずえ"],"label":"treetops, twig","radical":"月"},"沼":{"c":"沼","jlpt":1,"strokes":8,"on":["ショウ"],"kun":["ぬま"],"label":"marsh, bog, lake","radical":"刀"},"渉":{"c":"渉","jlpt":1,"strokes":11,"on":["ショウ"],"kun":["わた.る"],"label":"ford, ferry, go cross","radical":"ノ"},"焦":{"c":"焦","jlpt":1,"strokes":12,"on":["ショウ"],"kun":["あせ.る","こ.がす","こ.がれる","こ.げる","じ.らす","じ.れる"],"label":"char, burn, hurry","radical":"隹"},"症":{"c":"症","jlpt":1,"strokes":10,"on":["ショウ"],"kun":[],"label":"symptoms, illness","radical":"一"},"硝":{"c":"硝","jlpt":1,"strokes":12,"on":["ショウ"],"kun":[],"label":"nitrate, saltpeter","radical":"口"},"礁":{"c":"礁","jlpt":1,"strokes":17,"on":["ショウ"],"kun":[],"label":"reef, sunken rock","radical":"口"},"祥":{"c":"祥","jlpt":1,"strokes":10,"on":["ショウ"],"kun":["きざ.し","さいわ.い","つまび.らか","よ.い"],"label":"auspicious, blessedness, good fortune","radical":"王"},"称":{"c":"称","jlpt":1,"strokes":10,"on":["ショウ"],"kun":["あ.げる","かな.う","たた.える","とな.える","はか.り","はか.る","ほめ.る"],"label":"appellation, admire, fame","radical":"一"},"肖":{"c":"肖","jlpt":1,"strokes":7,"on":["ショウ"],"kun":["あやか.る"],"label":"resemblance","radical":"月"},"菖":{"c":"菖","jlpt":1,"strokes":11,"on":["ショウ"],"kun":[],"label":"iris","radical":"日"},"蕉":{"c":"蕉","jlpt":1,"strokes":15,"on":["ショウ"],"kun":[],"label":"banana, plantain","radical":"隹"},"衝":{"c":"衝","jlpt":1,"strokes":15,"on":["ショウ"],"kun":["つ.く"],"label":"collide, brunt, highway","radical":"｜"},"訟":{"c":"訟","jlpt":1,"strokes":11,"on":["ショウ"],"kun":[],"label":"sue, accuse","radical":"ハ"},"証":{"c":"証","jlpt":1,"strokes":12,"on":["ショウ"],"kun":["あかし"],"label":"evidence, certificate, proof","radical":"一"},"詔":{"c":"詔","jlpt":1,"strokes":12,"on":["ショウ"],"kun":["みことのり"],"label":"imperial edict","radical":"刀"},"詳":{"c":"詳","jlpt":1,"strokes":13,"on":["ショウ"],"kun":["くわ.しい","つまび.らか"],"label":"detailed, accurate, full","radical":"王"},"鐘":{"c":"鐘","jlpt":1,"strokes":20,"on":["ショウ"],"kun":["かね"],"label":"bell, chimes, gong","radical":"立"},"障":{"c":"障","jlpt":1,"strokes":14,"on":["ショウ"],"kun":["さわ.る"],"label":"hinder, harm, hurt","radical":"十"},"丞":{"c":"丞","jlpt":1,"strokes":6,"on":["ショウ","ジョウ"],"kun":["すく.う","たす.ける"],"label":"help","radical":"一"},"冗":{"c":"冗","jlpt":1,"strokes":4,"on":["ジョウ"],"kun":[],"label":"superfluous, uselessness","radical":"冖"},"剰":{"c":"剰","jlpt":1,"strokes":11,"on":["ジョウ"],"kun":["あま.り","あま.る","あまつさえ"],"label":"surplus, besides","radical":"一"},"壌":{"c":"壌","jlpt":1,"strokes":16,"on":["ジョウ"],"kun":["つち"],"label":"lot, earth, soil","radical":"ハ"},"嬢":{"c":"嬢","jlpt":1,"strokes":16,"on":["ジョウ"],"kun":["むすめ"],"label":"lass, Miss, daughter","radical":"ハ"},"条":{"c":"条","jlpt":1,"strokes":7,"on":["ジョウ","チョウ","デキ"],"kun":["えだ","すじ"],"label":"twig, article, clause","radical":"夂"},"浄":{"c":"浄","jlpt":1,"strokes":9,"on":["ジョウ","セイ"],"kun":["きよ.い","きよ.める"],"label":"clean, Manchu Dynasty, cleanse","radical":"亅"},"穣":{"c":"穣","jlpt":1,"strokes":18,"on":["ジョウ"],"kun":["ゆたか","わら"],"label":"good crops, prosperity","radical":"ハ"},"譲":{"c":"譲","jlpt":1,"strokes":20,"on":["ジョウ"],"kun":["ゆず.る"],"label":"defer, convey, transfer","radical":"ハ"},"醸":{"c":"醸","jlpt":1,"strokes":20,"on":["ジョウ"],"kun":["かも.す"],"label":"brew, cause","radical":"ハ"},"錠":{"c":"錠","jlpt":1,"strokes":16,"on":["ジョウ"],"kun":[],"label":"lock, fetters, shackles","radical":"疋"},"嘱":{"c":"嘱","jlpt":1,"strokes":15,"on":["ショク"],"kun":["しょく.する","たの.む"],"label":"entrust, request, send a message","radical":"口"},"飾":{"c":"飾","jlpt":1,"strokes":13,"on":["ショク"],"kun":["かざ.り","かざ.る"],"label":"decorate, adorn, embellish","radical":"一"},"殖":{"c":"殖","jlpt":1,"strokes":12,"on":["ショク"],"kun":["ふ.える","ふ.やす"],"label":"augment, increase, multiply","radical":"十"},"織":{"c":"織","jlpt":1,"strokes":18,"on":["シキ","ショク"],"kun":["-お.り","-おり","お.り","お.る","おり"],"label":"weave, fabric","radical":"小"},"辱":{"c":"辱","jlpt":1,"strokes":10,"on":["ジョク"],"kun":["はずかし.める"],"label":"embarrass, humiliate, shame","radical":"厂"},"侵":{"c":"侵","jlpt":1,"strokes":9,"on":["シン"],"kun":["おか.す"],"label":"encroach, invade, raid","radical":"冖"},"唇":{"c":"唇","jlpt":1,"strokes":10,"on":["シン"],"kun":["くちびる"],"label":"lips","radical":"厂"},"娠":{"c":"娠","jlpt":1,"strokes":10,"on":["シン"],"kun":[],"label":"with child, pregnancy","radical":"厂"},"審":{"c":"審","jlpt":1,"strokes":15,"on":["シン"],"kun":["つぶさ.に","つまび.らか"],"label":"hearing, judge, trial","radical":"田"},"慎":{"c":"慎","jlpt":1,"strokes":13,"on":["シン"],"kun":["つつ.ましい","つつし","つつし.み","つつし.む"],"label":"humility, be careful, discreet","radical":"一"},"振":{"c":"振","jlpt":1,"strokes":10,"on":["シン"],"kun":["ふ.る","ふ.るう","ふ.れる"],"label":"shake, swing, wag","radical":"厂"},"晋":{"c":"晋","jlpt":1,"strokes":10,"on":["シン"],"kun":["すす.む"],"label":"advance","radical":"一"},"榛":{"c":"榛","jlpt":1,"strokes":14,"on":["シン","ハン"],"kun":["はしばみ","はり"],"label":"filbert, hazelnut","radical":"一"},"浸":{"c":"浸","jlpt":1,"strokes":10,"on":["シン"],"kun":["つ.かる","ひた.す","ひた.る"],"label":"immersed, dip, dunk","radical":"冖"},"秦":{"c":"秦","jlpt":1,"strokes":10,"on":["シン"],"kun":["はた"],"label":"Manchu dynasty","radical":"一"},"紳":{"c":"紳","jlpt":1,"strokes":11,"on":["シン"],"kun":[],"label":"sire, gentleman, good belt","radical":"｜"},"薪":{"c":"薪","jlpt":1,"strokes":16,"on":["シン"],"kun":["たきぎ","まき"],"label":"firewood, fuel, kindling","radical":"斤"},"診":{"c":"診","jlpt":1,"strokes":12,"on":["シン"],"kun":["み.る"],"label":"checkup, diagnose, examine","radical":"彡"},"仁":{"c":"仁","jlpt":1,"strokes":4,"on":["ジン","ニ","ニン"],"kun":[],"label":"humanity, benevolence, charity","radical":"二"},"刃":{"c":"刃","jlpt":1,"strokes":3,"on":["ジン","ニン"],"kun":["き.る","は","やいば"],"label":"blade, edge, sword","radical":"丶"},"尋":{"c":"尋","jlpt":1,"strokes":12,"on":["ジン"],"kun":["たず.ねる","ひろ"],"label":"inquire, fathom, look for","radical":"口"},"甚":{"c":"甚","jlpt":1,"strokes":9,"on":["ジン"],"kun":["はなは.だ","はなは.だしい"],"label":"tremendously, exceedingly, great","radical":"一"},"尽":{"c":"尽","jlpt":1,"strokes":6,"on":["サン","ジン"],"kun":["-ず.く","-づ.く","ことごと.く","つ.かす","つ.きる","つ.くす"],"label":"exhaust, befriend, deplete","radical":"丶"},"迅":{"c":"迅","jlpt":1,"strokes":6,"on":["ジン"],"kun":[],"label":"swift, fast","radical":"乙"},"陣":{"c":"陣","jlpt":1,"strokes":10,"on":["ジン"],"kun":[],"label":"camp, battle array, brief time","radical":"車"},"須":{"c":"須","jlpt":1,"strokes":12,"on":["シュ","ス"],"kun":["すべから.く","すべし","ひげ","まつ","もち.いる","もと.める"],"label":"ought, by all means, necessarily","radical":"ハ"},"酢":{"c":"酢","jlpt":1,"strokes":12,"on":["サク"],"kun":["す"],"label":"vinegar, acid, sour","radical":"｜"},"垂":{"c":"垂","jlpt":1,"strokes":8,"on":["スイ"],"kun":["-た.れ","た.らす","た.れ","た.れる","なんなんと.す"],"label":"droop, hang, slouch","radical":"一"},"帥":{"c":"帥","jlpt":1,"strokes":9,"on":["スイ"],"kun":[],"label":"commander, governor, leading troops","radical":"｜"},"推":{"c":"推","jlpt":1,"strokes":11,"on":["スイ"],"kun":["お.す"],"label":"conjecture, guess, infer","radical":"隹"},"炊":{"c":"炊","jlpt":1,"strokes":8,"on":["スイ"],"kun":["-だ.き","た.く"],"label":"cook, boil","radical":"欠"},"睡":{"c":"睡","jlpt":1,"strokes":13,"on":["スイ"],"kun":["ねむ.い","ねむ.る"],"label":"drowsy, die, sleep","radical":"一"},"粋":{"c":"粋","jlpt":1,"strokes":10,"on":["スイ"],"kun":["いき"],"label":"chic, choice, cream","radical":"十"},"翠":{"c":"翠","jlpt":1,"strokes":14,"on":["スイ"],"kun":["かわせみ","みどり"],"label":"green, kingfisher","radical":"人"},"衰":{"c":"衰","jlpt":1,"strokes":10,"on":["スイ"],"kun":["おとろ.える"],"label":"decline, wane, weaken","radical":"一"},"遂":{"c":"遂","jlpt":1,"strokes":12,"on":["スイ"],"kun":["つい.に","と.げる"],"label":"consummate, accomplish, attain","radical":"豕"},"酔":{"c":"酔","jlpt":1,"strokes":11,"on":["スイ"],"kun":["よ","よ.い","よ.う"],"label":"drunk, elated, feel sick","radical":"十"},"錘":{"c":"錘","jlpt":1,"strokes":16,"on":["スイ"],"kun":["おもり","つむ"],"label":"spindle, plumb bob, sinker","radical":"一"},"随":{"c":"随","jlpt":1,"strokes":12,"on":["ズイ"],"kun":["したが.う","まにま.に"],"label":"follow, all, at the mercy of (the waves)","radical":"一"},"瑞":{"c":"瑞","jlpt":1,"strokes":13,"on":["スイ","ズイ"],"kun":["しるし","みず-"],"label":"congratulations","radical":"山"},"髄":{"c":"髄","jlpt":1,"strokes":19,"on":["ズイ"],"kun":[],"label":"marrow, essence, pith","radical":"一"},"崇":{"c":"崇","jlpt":1,"strokes":11,"on":["スウ"],"kun":["あが.める"],"label":"adore, respect, revere","radical":"二"},"嵩":{"c":"嵩","jlpt":1,"strokes":13,"on":["シュウ","スウ"],"kun":["かさ","かさ.む","たか.い"],"label":"be aggravated, grow bulky, grow worse","radical":"冂"},"枢":{"c":"枢","jlpt":1,"strokes":8,"on":["シュ","スウ"],"kun":["からくり","とぼそ"],"label":"hinge, center of things, door","radical":"匚"},"雛":{"c":"雛","jlpt":1,"strokes":18,"on":["ジュ","ス","スウ"],"kun":["ひな","ひよこ"],"label":"chick, doll, duckling","radical":"勹"},"据":{"c":"据","jlpt":1,"strokes":11,"on":["キョ"],"kun":["す.える","す.わる"],"label":"set, equip, install","radical":"十"},"杉":{"c":"杉","jlpt":1,"strokes":7,"on":["サン"],"kun":["すぎ"],"label":"cedar, cryptomeria","radical":"彡"},"澄":{"c":"澄","jlpt":1,"strokes":15,"on":["チョウ"],"kun":["-す.ます","す.ます","す.む"],"label":"lucidity, be clear, clarify","radical":"口"},"寸":{"c":"寸","jlpt":1,"strokes":3,"on":["スン"],"kun":[],"label":"measurement, a little, small","radical":"寸"},"瀬":{"c":"瀬","jlpt":1,"strokes":19,"on":["ライ"],"kun":["せ"],"label":"rapids, current, shallows","radical":"｜"},"畝":{"c":"畝","jlpt":1,"strokes":10,"on":["ホ","ボウ","ム","モ"],"kun":["うね","せ"],"label":"furrow, rib, ridge","radical":"田"},"是":{"c":"是","jlpt":1,"strokes":9,"on":["シ","ゼ"],"kun":["ここ","この","これ"],"label":"just so, justice, right","radical":"日"},"征":{"c":"征","jlpt":1,"strokes":8,"on":["セイ"],"kun":[],"label":"subjugate, attack the rebellious","radical":"一"},"整":{"c":"整","jlpt":1,"strokes":16,"on":["セイ"],"kun":["ととの.う","ととの.える"],"label":"organize, arranging, key (music)","radical":"一"},"牲":{"c":"牲","jlpt":1,"strokes":9,"on":["セイ"],"kun":[],"label":"animal sacrifice, offering","radical":"牛"},"盛":{"c":"盛","jlpt":1,"strokes":11,"on":["ジョウ","セイ"],"kun":["さか.る","さか.ん","も.る"],"label":"boom, copulate, prosper","radical":"ノ"},"聖":{"c":"聖","jlpt":1,"strokes":13,"on":["ショウ","セイ"],"kun":["ひじり"],"label":"holy, master, priest","radical":"口"},"製":{"c":"製","jlpt":1,"strokes":14,"on":["セイ"],"kun":[],"label":"manufacture","radical":"巾"},"誠":{"c":"誠","jlpt":1,"strokes":13,"on":["セイ"],"kun":["まこと"],"label":"sincerity, admonish, fidelity","radical":"ノ"},"誓":{"c":"誓","jlpt":1,"strokes":14,"on":["セイ"],"kun":["ちか.う"],"label":"vow, pledge, swear","radical":"斤"},"請":{"c":"請","jlpt":1,"strokes":15,"on":["ショウ","シン","セイ"],"kun":["う.ける","こ.う"],"label":"solicit, ask, invite","radical":"二"},"逝":{"c":"逝","jlpt":1,"strokes":10,"on":["セイ"],"kun":["い.く","ゆ.く"],"label":"departed, die","radical":"斤"},"斉":{"c":"斉","jlpt":1,"strokes":8,"on":["サイ","セイ"],"kun":["あたる","そろ.う","はやい","ひと.しい","ひと.しく"],"label":"adjusted, alike, equal","radical":"｜"},"惜":{"c":"惜","jlpt":1,"strokes":11,"on":["セキ"],"kun":["お.しい","お.しむ"],"label":"pity, be sparing of, frugal","radical":"一"},"斥":{"c":"斥","jlpt":1,"strokes":5,"on":["セキ"],"kun":["しりぞ.ける"],"label":"reject, recede, repel","radical":"丶"},"析":{"c":"析","jlpt":1,"strokes":8,"on":["セキ"],"kun":[],"label":"chop, analyze, divide","radical":"斤"},"碩":{"c":"碩","jlpt":1,"strokes":14,"on":["セキ"],"kun":["おお.きい"],"label":"eminent, great, large","radical":"ハ"},"拙":{"c":"拙","jlpt":1,"strokes":8,"on":["セツ"],"kun":["つたな.い"],"label":"bungling, clumsy, unskillful","radical":"｜"},"摂":{"c":"摂","jlpt":1,"strokes":13,"on":["ショウ","セツ"],"kun":["おさ.める","かね.る","と.る"],"label":"vicarious, absorb, act in addition to","radical":"冫"},"窃":{"c":"窃","jlpt":1,"strokes":9,"on":["セツ"],"kun":["ぬす.む","ひそ.か"],"label":"stealth, hushed, private","radical":"儿"},"節":{"c":"節","jlpt":1,"strokes":13,"on":["セチ","セツ"],"kun":["-ぶし","のっと","ふし"],"label":"node, clause, honor","radical":"卩"},"舌":{"c":"舌","jlpt":1,"strokes":6,"on":["ゼツ"],"kun":["した"],"label":"tongue, clapper, reed","radical":"口"},"仙":{"c":"仙","jlpt":1,"strokes":5,"on":["セン","セント"],"kun":[],"label":"hermit, cent, wizard","radical":"山"},"宣":{"c":"宣","jlpt":1,"strokes":9,"on":["セン"],"kun":["のたま.う"],"label":"proclaim, announce, say","radical":"一"},"扇":{"c":"扇","jlpt":1,"strokes":10,"on":["セン"],"kun":["おうぎ"],"label":"fan, folding fan","radical":"一"},"栓":{"c":"栓","jlpt":1,"strokes":10,"on":["セン"],"kun":[],"label":"plug, bolt, bung","radical":"木"},"染":{"c":"染","jlpt":1,"strokes":9,"on":["セン"],"kun":["し.み","し.みる","そ.まる","そ.める"],"label":"dye, color, paint","radical":"木"},"潜":{"c":"潜","jlpt":1,"strokes":15,"on":["セン"],"kun":["かく.れる","くぐ.る","ひそ.む","ひそ.める","もぐ.る"],"label":"submerge, conceal, hide","radical":"二"},"旋":{"c":"旋","jlpt":1,"strokes":11,"on":["セン"],"kun":["いばり","め.ぐる"],"label":"rotation, go around","radical":"方"},"繊":{"c":"繊","jlpt":1,"strokes":17,"on":["セン"],"kun":[],"label":"slender, fine, thin kimono","radical":"土"},"薦":{"c":"薦","jlpt":1,"strokes":16,"on":["セン"],"kun":["すす.める"],"label":"recommend, advise, encourage","radical":"广"},"践":{"c":"践","jlpt":1,"strokes":13,"on":["セン"],"kun":["ふ.む"],"label":"tread, carry through, practice","radical":"二"},"遷":{"c":"遷","jlpt":1,"strokes":15,"on":["セン"],"kun":["うつ.す","うつ.る","みやこがえ"],"label":"transition, change, move","radical":"大"},"銭":{"c":"銭","jlpt":1,"strokes":14,"on":["セン","ゼン"],"kun":["すき","ぜに"],"label":"coin, .01 yen, money","radical":"二"},"銑":{"c":"銑","jlpt":1,"strokes":14,"on":["セン"],"kun":[],"label":"pig iron","radical":"ノ"},"鮮":{"c":"鮮","jlpt":1,"strokes":17,"on":["セン"],"kun":["あざ.やか"],"label":"fresh, Korea, brilliant","radical":"王"},"善":{"c":"善","jlpt":1,"strokes":12,"on":["ゼン"],"kun":["い.い","よ.い","よ.く","よし.とする"],"label":"virtuous, good, goodness","radical":"口"},"漸":{"c":"漸","jlpt":1,"strokes":14,"on":["ゼン"],"kun":["すす.む","やや","ようや.く","ようよ.う"],"label":"steadily, barely, finally","radical":"斤"},"禅":{"c":"禅","jlpt":1,"strokes":13,"on":["セン","ゼン"],"kun":["しずか","ゆず.る"],"label":"Zen, silent meditation","radical":"十"},"繕":{"c":"繕","jlpt":1,"strokes":18,"on":["ゼン"],"kun":["つくろ.う"],"label":"darning, adjust, mend","radical":"口"},"塑":{"c":"塑","jlpt":1,"strokes":13,"on":["ソ"],"kun":["でく"],"label":"model, molding","radical":"土"},"措":{"c":"措","jlpt":1,"strokes":11,"on":["ソ"],"kun":["お.く"],"label":"set aside, discontinue, except","radical":"一"},"疎":{"c":"疎","jlpt":1,"strokes":12,"on":["ショ","ソ"],"kun":["うと.い","うと.む","まば.ら"],"label":"alienate, neglect, penetrate","radical":"一"},"礎":{"c":"礎","jlpt":1,"strokes":18,"on":["ソ"],"kun":["いしずえ"],"label":"cornerstone, foundation stone","radical":"口"},"租":{"c":"租","jlpt":1,"strokes":10,"on":["ソ"],"kun":[],"label":"tariff, borrowing, crop tax","radical":"一"},"粗":{"c":"粗","jlpt":1,"strokes":11,"on":["ソ"],"kun":["あら-","あら.い"],"label":"coarse, rough, rugged","radical":"一"},"素":{"c":"素","jlpt":1,"strokes":10,"on":["ス","ソ"],"kun":["もと"],"label":"elementary, naked, principle","radical":"二"},"訴":{"c":"訴","jlpt":1,"strokes":12,"on":["ソ"],"kun":["うった.える"],"label":"accusation, appeal to, complain of pain","radical":"丶"},"阻":{"c":"阻","jlpt":1,"strokes":8,"on":["ソ"],"kun":["はば.む"],"label":"thwart, deter, impede","radical":"一"},"僧":{"c":"僧","jlpt":1,"strokes":13,"on":["ソウ"],"kun":[],"label":"Buddhist priest, monk","radical":"日"},"創":{"c":"創","jlpt":1,"strokes":12,"on":["ショウ","ソウ"],"kun":["きず","けず.しける","つく.る","はじ.める"],"label":"genesis, hurt, injury","radical":"一"},"倉":{"c":"倉","jlpt":1,"strokes":10,"on":["ソウ"],"kun":["くら"],"label":"godown, cellar, storehouse","radical":"一"},"喪":{"c":"喪","jlpt":1,"strokes":12,"on":["ソウ"],"kun":["も"],"label":"miss, mourning","radical":"一"},"壮":{"c":"壮","jlpt":1,"strokes":6,"on":["ソウ"],"kun":["さかん"],"label":"robust, manhood, prosperity","radical":"士"},"奏":{"c":"奏","jlpt":1,"strokes":9,"on":["ソウ"],"kun":["かな.でる"],"label":"play music, complete, speak to a ruler","radical":"一"},"爽":{"c":"爽","jlpt":1,"strokes":11,"on":["ソウ"],"kun":["あき.らか","さわ.やか","たがう"],"label":"bracing, clear, refreshing","radical":"一"},"惣":{"c":"惣","jlpt":1,"strokes":12,"on":["ソウ"],"kun":["すべ.て"],"label":"all","radical":"心"},"挿":{"c":"挿","jlpt":1,"strokes":10,"on":["ソウ"],"kun":["さ.す","はさ.む"],"label":"insert, graft, put in","radical":"｜"},"操":{"c":"操","jlpt":1,"strokes":16,"on":["サン","ソウ"],"kun":["あやつ.る","みさお"],"label":"maneuver, chastity, fidelity","radical":"口"},"曹":{"c":"曹","jlpt":1,"strokes":11,"on":["ソウ","ゾウ"],"kun":[],"label":"comrade, fellow, office","radical":"一"},"巣":{"c":"巣","jlpt":1,"strokes":11,"on":["ソウ"],"kun":["す","す.くう"],"label":"nest, cobweb, den","radical":"木"},"槽":{"c":"槽","jlpt":1,"strokes":15,"on":["ソウ"],"kun":["ふね"],"label":"vat, tank, tub","radical":"一"},"綜":{"c":"綜","jlpt":1,"strokes":14,"on":["ソウ"],"kun":["おさ.める","す.べる"],"label":"rule, synthesize","radical":"二"},"聡":{"c":"聡","jlpt":1,"strokes":14,"on":["ソウ"],"kun":["さと.い","みみざと.い"],"label":"fast learner, wise","radical":"ハ"},"荘":{"c":"荘","jlpt":1,"strokes":9,"on":["ショウ","ソウ","チャン"],"kun":["おごそ.か","ほうき"],"label":"villa, cottage, dignified","radical":"士"},"葬":{"c":"葬","jlpt":1,"strokes":12,"on":["ソウ"],"kun":["ほうむ.る"],"label":"interment, bury, shelve","radical":"一"},"蒼":{"c":"蒼","jlpt":1,"strokes":13,"on":["ソウ"],"kun":["あお.い"],"label":"blue, pale","radical":"一"},"藻":{"c":"藻","jlpt":1,"strokes":19,"on":["ソウ"],"kun":["も"],"label":"seaweed, duckweed","radical":"口"},"遭":{"c":"遭","jlpt":1,"strokes":14,"on":["ソウ"],"kun":["あ.う","あ.わせる"],"label":"encounter, association, interview","radical":"一"},"霜":{"c":"霜","jlpt":1,"strokes":17,"on":["ソウ"],"kun":["しも"],"label":"frost","radical":"木"},"騒":{"c":"騒","jlpt":1,"strokes":18,"on":["ソウ"],"kun":["うれい","さわ.がしい","さわ.ぐ"],"label":"boisterous, clamor, disturb","radical":"又"},"促":{"c":"促","jlpt":1,"strokes":9,"on":["ソク"],"kun":["うなが.す"],"label":"stimulate, demand, incite","radical":"口"},"即":{"c":"即","jlpt":1,"strokes":7,"on":["ソク"],"kun":["すなわ.ち","つ.く","つ.ける"],"label":"instant, adapt, agree","radical":"卩"},"俗":{"c":"俗","jlpt":1,"strokes":9,"on":["ゾク"],"kun":[],"label":"vulgar, customs, manners","radical":"ハ"},"属":{"c":"属","jlpt":1,"strokes":12,"on":["ショク","ゾク"],"kun":["さかん","つく","やから"],"label":"belong, affiliated, genus","radical":"ノ"},"賊":{"c":"賊","jlpt":1,"strokes":13,"on":["ゾク"],"kun":[],"label":"burglar, rebel, robber","radical":"ハ"},"汰":{"c":"汰","jlpt":1,"strokes":7,"on":["タ","タイ"],"kun":["おご.る","にご.る","よな.げる"],"label":"filtering, luxury, sieving","radical":"丶"},"堕":{"c":"堕","jlpt":1,"strokes":12,"on":["ダ"],"kun":["お.ちる","くず.す","くず.れる"],"label":"degenerate, descend to, lapse into","radical":"一"},"妥":{"c":"妥","jlpt":1,"strokes":7,"on":["ダ"],"kun":[],"label":"gentle, depravity, peace","radical":"女"},"惰":{"c":"惰","jlpt":1,"strokes":12,"on":["ダ"],"kun":[],"label":"lazy, laziness","radical":"一"},"駄":{"c":"駄","jlpt":1,"strokes":14,"on":["タ","ダ"],"kun":[],"label":"burdensome, horse load, pack horse","radical":"丶"},"耐":{"c":"耐","jlpt":1,"strokes":9,"on":["タイ"],"kun":["た.える"],"label":"enduring","radical":"寸"},"怠":{"c":"怠","jlpt":1,"strokes":9,"on":["タイ"],"kun":["おこた.る","なま.ける"],"label":"neglect, laziness","radical":"厶"},"態":{"c":"態","jlpt":1,"strokes":14,"on":["タイ"],"kun":["わざ.と"],"label":"attitude, appearance, condition","radical":"匕"},"泰":{"c":"泰","jlpt":1,"strokes":10,"on":["タイ"],"kun":[],"label":"peaceful, Thailand, calm","radical":"一"},"滞":{"c":"滞","jlpt":1,"strokes":13,"on":["タイ","テイ"],"kun":["とどこお.る"],"label":"stagnate, arrears, be delayed","radical":"冖"},"胎":{"c":"胎","jlpt":1,"strokes":9,"on":["タイ"],"kun":[],"label":"womb, uterus","radical":"厶"},"逮":{"c":"逮","jlpt":1,"strokes":11,"on":["タイ"],"kun":[],"label":"apprehend, chase","radical":"水"},"隊":{"c":"隊","jlpt":1,"strokes":12,"on":["タイ"],"kun":[],"label":"regiment, company, party","radical":"豕"},"黛":{"c":"黛","jlpt":1,"strokes":16,"on":["タイ"],"kun":["まゆずみ"],"label":"blackened eyebrows","radical":"弋"},"鯛":{"c":"鯛","jlpt":1,"strokes":19,"on":["チョウ"],"kun":["たい"],"label":"sea bream, red snapper","radical":"冂"},"第":{"c":"第","jlpt":1,"strokes":11,"on":["ダイ","テイ"],"kun":[],"label":"residence","radical":"弓"},"鷹":{"c":"鷹","jlpt":1,"strokes":24,"on":["オウ","ヨウ"],"kun":["たか"],"label":"hawk","radical":"广"},"滝":{"c":"滝","jlpt":1,"strokes":13,"on":["ソウ","ロウ"],"kun":["たき"],"label":"waterfall, cascade, rapids","radical":"田"},"卓":{"c":"卓","jlpt":1,"strokes":8,"on":["タク"],"kun":[],"label":"eminent, desk, high","radical":"十"},"啄":{"c":"啄","jlpt":1,"strokes":10,"on":["タク","ツク","トク"],"kun":["ついば.む","つつ.く"],"label":"peck, pick up","radical":"口"},"択":{"c":"択","jlpt":1,"strokes":7,"on":["タク"],"kun":["えら.ぶ"],"label":"choose, elect, prefer","radical":"丶"},"拓":{"c":"拓","jlpt":1,"strokes":8,"on":["タク"],"kun":["ひら.く"],"label":"clear (the land), break up (land), open","radical":"口"},"沢":{"c":"沢","jlpt":1,"strokes":7,"on":["タク"],"kun":["うるお.い","うるお.す","さわ","つや"],"label":"swamp, brilliance, grace","radical":"丶"},"琢":{"c":"琢","jlpt":1,"strokes":11,"on":["タク"],"kun":["みが.く"],"label":"polish","radical":"王"},"託":{"c":"託","jlpt":1,"strokes":10,"on":["タク"],"kun":["かこ.つ","かこ.つける","かこつ.ける"],"label":"consign, entrusting with, hint","radical":"一"},"濁":{"c":"濁","jlpt":1,"strokes":16,"on":["ジョク","ダク"],"kun":["にご.す","にご.る"],"label":"voiced, impurity, nigori","radical":"勹"},"諾":{"c":"諾","jlpt":1,"strokes":15,"on":["ダク"],"kun":[],"label":"consent, agreement, assent","radical":"一"},"只":{"c":"只","jlpt":1,"strokes":5,"on":["シ"],"kun":["ただ"],"label":"only, free, in addition","radical":"ハ"},"但":{"c":"但","jlpt":1,"strokes":7,"on":["タン"],"kun":["ただ.し"],"label":"however, but","radical":"一"},"辰":{"c":"辰","jlpt":1,"strokes":7,"on":["シン","ジン"],"kun":["たつ"],"label":"sign of the dragon","radical":"厂"},"奪":{"c":"奪","jlpt":1,"strokes":14,"on":["ダツ"],"kun":["うば.う"],"label":"rob, dispossess, plunder","radical":"大"},"脱":{"c":"脱","jlpt":1,"strokes":11,"on":["ダツ"],"kun":["ぬ.ぐ","ぬ.げる"],"label":"undress, be left out, escape from","radical":"儿"},"巽":{"c":"巽","jlpt":1,"strokes":12,"on":["ソン"],"kun":["たつみ"],"label":"southeast","radical":"一"},"棚":{"c":"棚","jlpt":1,"strokes":12,"on":["ホウ"],"kun":["-だな","たな"],"label":"shelf, ledge, mantle","radical":"月"},"丹":{"c":"丹","jlpt":1,"strokes":4,"on":["タン"],"kun":["に"],"label":"pills, red, red lead","radical":"一"},"嘆":{"c":"嘆","jlpt":1,"strokes":13,"on":["タン"],"kun":["なげ.かわしい","なげ.く"],"label":"sigh, grieve, lament","radical":"一"},"旦":{"c":"旦","jlpt":1,"strokes":5,"on":["タン","ダン"],"kun":["あき.らか","あきら","あさ","あした","ただし"],"label":"dawn, daybreak, morning","radical":"一"},"淡":{"c":"淡","jlpt":1,"strokes":11,"on":["タン"],"kun":["あわ.い"],"label":"thin, faint, fleeting","radical":"火"},"端":{"c":"端","jlpt":1,"strokes":14,"on":["タン"],"kun":["-ばた","は","はし","はた","はな"],"label":"edge, border, cape","radical":"山"},"胆":{"c":"胆","jlpt":1,"strokes":9,"on":["タン"],"kun":["きも"],"label":"gall bladder, courage, nerve","radical":"一"},"誕":{"c":"誕","jlpt":1,"strokes":15,"on":["タン"],"kun":[],"label":"nativity, be arbitrary, be born","radical":"ノ"},"鍛":{"c":"鍛","jlpt":1,"strokes":17,"on":["タン"],"kun":["きた.える"],"label":"forge, discipline, train","radical":"几"},"壇":{"c":"壇","jlpt":1,"strokes":16,"on":["タン","ダン"],"kun":[],"label":"podium, rostrum, stage","radical":"一"},"弾":{"c":"弾","jlpt":1,"strokes":12,"on":["タン","ダン"],"kun":["-ひ.き","ただ.す","たま","はじ.きゆみ","はじ.く","はじ.ける","はず.む","ひ.く"],"label":"bullet, flip, snap","radical":"十"},"暖":{"c":"暖","jlpt":1,"strokes":13,"on":["ダン","ノン"],"kun":["あたた.か","あたた.かい","あたた.まる","あたた.める"],"label":"warmth","radical":"一"},"檀":{"c":"檀","jlpt":1,"strokes":17,"on":["タン","ダン"],"kun":["まゆみ"],"label":"sandalwood, cedar, spindle tree","radical":"一"},"智":{"c":"智","jlpt":1,"strokes":12,"on":["チ"],"kun":[],"label":"wisdom, intellect, reason","radical":"口"},"痴":{"c":"痴","jlpt":1,"strokes":13,"on":["チ"],"kun":["おろか","し.れる"],"label":"stupid, foolish","radical":"口"},"稚":{"c":"稚","jlpt":1,"strokes":13,"on":["ジ","チ"],"kun":["いとけない","おくて","おさない","おでる"],"label":"immature, young","radical":"禾"},"致":{"c":"致","jlpt":1,"strokes":10,"on":["チ"],"kun":["いた.す"],"label":"doth, cause, do","radical":"厶"},"蓄":{"c":"蓄","jlpt":1,"strokes":13,"on":["チク"],"kun":["たくわ.える"],"label":"amass, hoard, raise","radical":"幺"},"逐":{"c":"逐","jlpt":1,"strokes":10,"on":["チク"],"kun":[],"label":"pursue, accomplish, attain","radical":"豕"},"秩":{"c":"秩","jlpt":1,"strokes":10,"on":["チツ"],"kun":[],"label":"regularity, order, salary","radical":"ノ"},"窒":{"c":"窒","jlpt":1,"strokes":11,"on":["チツ"],"kun":[],"label":"plug up, obstruct","radical":"一"},"嫡":{"c":"嫡","jlpt":1,"strokes":14,"on":["チャク","テキ"],"kun":[],"label":"legitimate wife","radical":"冂"},"宙":{"c":"宙","jlpt":1,"strokes":8,"on":["チュウ"],"kun":[],"label":"mid-air, air, interval of time","radical":"｜"},"忠":{"c":"忠","jlpt":1,"strokes":8,"on":["チュウ"],"kun":[],"label":"loyalty, faithfulness, fidelity","radical":"｜"},"抽":{"c":"抽","jlpt":1,"strokes":8,"on":["チュウ"],"kun":["ひき-"],"label":"pluck, excel, extract","radical":"｜"},"衷":{"c":"衷","jlpt":1,"strokes":9,"on":["チュウ"],"kun":[],"label":"inmost, heart, inside","radical":"十"},"鋳":{"c":"鋳","jlpt":1,"strokes":15,"on":["イ","シュ","シュウ","チュウ"],"kun":["い.る"],"label":"casting, mint","radical":"ノ"},"猪":{"c":"猪","jlpt":1,"strokes":11,"on":["チョ"],"kun":["い","いのしし"],"label":"boar","radical":"日"},"丁":{"c":"丁","jlpt":1,"strokes":2,"on":["チ","チョウ","チン","テイ","トウ"],"kun":["ひのと"],"label":"street, even number, town","radical":"一"},"帳":{"c":"帳","jlpt":1,"strokes":11,"on":["チョウ"],"kun":["とばり"],"label":"notebook, account book, album","radical":"巾"},"弔":{"c":"弔","jlpt":1,"strokes":4,"on":["チョウ"],"kun":["とぶら.う","とむら.う"],"label":"condolences, funeral, mourning","radical":"｜"},"張":{"c":"張","jlpt":1,"strokes":11,"on":["チョウ"],"kun":["-は.り","-ば.り","は.る"],"label":"put up (tent), spread, stretch","radical":"弓"},"彫":{"c":"彫","jlpt":1,"strokes":11,"on":["チョウ"],"kun":["-ぼ.り","ほ.る"],"label":"carve, chisel, engrave","radical":"冂"},"徴":{"c":"徴","jlpt":1,"strokes":14,"on":["チ","チョウ"],"kun":["しるし"],"label":"indications, collect, omen","radical":"山"},"懲":{"c":"懲","jlpt":1,"strokes":18,"on":["チョウ"],"kun":["こ.らしめる","こ.らす","こ.りる"],"label":"penal, chastise, discipline","radical":"山"},"挑":{"c":"挑","jlpt":1,"strokes":9,"on":["チョウ"],"kun":["いど.む"],"label":"challenge, contend for, make love to","radical":"儿"},"暢":{"c":"暢","jlpt":1,"strokes":14,"on":["チョウ"],"kun":["のび.る"],"label":"stretch","radical":"一"},"潮":{"c":"潮","jlpt":1,"strokes":15,"on":["チョウ"],"kun":["うしお","しお"],"label":"tide, opportunity, salt water","radical":"十"},"眺":{"c":"眺","jlpt":1,"strokes":11,"on":["チョウ"],"kun":["なが.める"],"label":"stare, look at, scrutinize","radical":"儿"},"聴":{"c":"聴","jlpt":1,"strokes":17,"on":["チョウ","テイ"],"kun":["き.く","ゆる.す"],"label":"listen, careful inquiry, headstrong","radical":"十"},"脹":{"c":"脹","jlpt":1,"strokes":12,"on":["チョウ"],"kun":["は.れる","ふく.らむ","ふく.れる"],"label":"dilate, bulge, distend","radical":"月"},"腸":{"c":"腸","jlpt":1,"strokes":13,"on":["チョウ"],"kun":["はらわた","わた"],"label":"intestines, bowels, guts","radical":"一"},"蝶":{"c":"蝶","jlpt":1,"strokes":15,"on":["チョウ"],"kun":[],"label":"butterfly","radical":"木"},"跳":{"c":"跳","jlpt":1,"strokes":13,"on":["チョウ"],"kun":["-と.び","と.ぶ","は.ねる"],"label":"hop, buck, jerk","radical":"儿"},"勅":{"c":"勅","jlpt":1,"strokes":9,"on":["チョク"],"kun":["いまし.める","みことのり"],"label":"imperial order","radical":"一"},"朕":{"c":"朕","jlpt":1,"strokes":10,"on":["チン"],"kun":[],"label":"majestic plural, imperial we","radical":"一"},"賃":{"c":"賃","jlpt":1,"strokes":13,"on":["チン"],"kun":[],"label":"fare, charge, fee","radical":"ハ"},"鎮":{"c":"鎮","jlpt":1,"strokes":18,"on":["チン"],"kun":["おさえ","しず.まる","しず.める"],"label":"tranquilize","radical":"一"},"陳":{"c":"陳","jlpt":1,"strokes":11,"on":["チン"],"kun":["ひ.ねる"],"label":"exhibit, explain, relate","radical":"一"},"津":{"c":"津","jlpt":1,"strokes":9,"on":["シン"],"kun":["つ"],"label":"haven, ferry, harbor","radical":"聿"},"墜":{"c":"墜","jlpt":1,"strokes":15,"on":["ツイ"],"kun":["お.ちる","お.つ"],"label":"crash, fall (down)","radical":"土"},"椎":{"c":"椎","jlpt":1,"strokes":12,"on":["スイ","ツイ"],"kun":["う.つ","つち"],"label":"chinquapin, mallet, spine","radical":"木"},"塚":{"c":"塚","jlpt":1,"strokes":12,"on":["チョウ"],"kun":["-づか","つか"],"label":"hillock, mound","radical":"冖"},"槻":{"c":"槻","jlpt":1,"strokes":15,"on":["キ"],"kun":["つき"],"label":"Zelkova tree","radical":"一"},"漬":{"c":"漬","jlpt":1,"strokes":14,"on":["シ"],"kun":["-づ.け","-づけ","つ.かる","つ.ける"],"label":"pickling, moisten, soak","radical":"二"},"蔦":{"c":"蔦","jlpt":1,"strokes":14,"on":["チョウ"],"kun":["つた"],"label":"vine, ivy","radical":"鳥"},"椿":{"c":"椿","jlpt":1,"strokes":13,"on":["チュン","チン"],"kun":["つばき"],"label":"camellia","radical":"一"},"坪":{"c":"坪","jlpt":1,"strokes":8,"on":["ヘイ"],"kun":["つぼ"],"label":"two-mat area, approx. thirty-six sq ft","radical":"土"},"紬":{"c":"紬","jlpt":1,"strokes":11,"on":["チュウ"],"kun":["つむ.ぐ","つむぎ"],"label":"pongee (a knotted silk cloth)","radical":"｜"},"釣":{"c":"釣","jlpt":1,"strokes":11,"on":["チョウ"],"kun":["つ.り","つ.り-","つ.る"],"label":"angling, allure, catch","radical":"丶"},"鶴":{"c":"鶴","jlpt":1,"strokes":21,"on":["カク"],"kun":["つる"],"label":"crane, stork","radical":"冖"},"亭":{"c":"亭","jlpt":1,"strokes":9,"on":["チン","テイ"],"kun":[],"label":"pavilion, arbor, cottage","radical":"亅"},"偵":{"c":"偵","jlpt":1,"strokes":11,"on":["テイ"],"kun":[],"label":"spy","radical":"ハ"},"貞":{"c":"貞","jlpt":1,"strokes":9,"on":["ジョウ","テイ"],"kun":["さだ","ただし.い"],"label":"upright, chastity, constancy","radical":"ハ"},"呈":{"c":"呈","jlpt":1,"strokes":7,"on":["テイ"],"kun":[],"label":"display, exhibit, offer","radical":"口"},"堤":{"c":"堤","jlpt":1,"strokes":12,"on":["テイ"],"kun":["つつみ"],"label":"dike, bank, embankment","radical":"土"},"帝":{"c":"帝","jlpt":1,"strokes":9,"on":["テイ"],"kun":["みかど"],"label":"sovereign, creator, god","radical":"冖"},"廷":{"c":"廷","jlpt":1,"strokes":7,"on":["テイ"],"kun":[],"label":"courts, government office","radical":"士"},"悌":{"c":"悌","jlpt":1,"strokes":10,"on":["ダイ","テイ"],"kun":[],"label":"serving our elders","radical":"｜"},"抵":{"c":"抵","jlpt":1,"strokes":8,"on":["テイ"],"kun":[],"label":"resist, reach, touch","radical":"氏"},"提":{"c":"提","jlpt":1,"strokes":12,"on":["ダイ","チョウ","テイ"],"kun":["さ.げる"],"label":"propose, carry in hand, take along","radical":"日"},"禎":{"c":"禎","jlpt":1,"strokes":13,"on":["テイ"],"kun":["さいわ.い"],"label":"auspicious, blessed, good fortune","radical":"ハ"},"締":{"c":"締","jlpt":1,"strokes":15,"on":["テイ"],"kun":["-し.め","-じ.め","し.まり","し.まる","し.める"],"label":"tighten, fasten, lock","radical":"冖"},"艇":{"c":"艇","jlpt":1,"strokes":13,"on":["テイ"],"kun":[],"label":"rowboat, small boat","radical":"廴"},"訂":{"c":"訂","jlpt":1,"strokes":9,"on":["テイ"],"kun":["ただ.す"],"label":"revise, correct, decide","radical":"一"},"逓":{"c":"逓","jlpt":1,"strokes":10,"on":["テイ"],"kun":["かわ.る","たがいに"],"label":"in turn, relay, sending","radical":"｜"},"邸":{"c":"邸","jlpt":1,"strokes":8,"on":["テイ"],"kun":["やしき"],"label":"residence, mansion","radical":"氏"},"摘":{"c":"摘","jlpt":1,"strokes":14,"on":["テキ"],"kun":["つ.む"],"label":"pinch, clip, pick","radical":"冂"},"敵":{"c":"敵","jlpt":1,"strokes":15,"on":["テキ"],"kun":["あだ","かたき","かな.う"],"label":"enemy, foe, opponent","radical":"冂"},"笛":{"c":"笛","jlpt":1,"strokes":11,"on":["テキ"],"kun":["ふえ"],"label":"flute, bagpipe, clarinet","radical":"｜"},"哲":{"c":"哲","jlpt":1,"strokes":10,"on":["テツ"],"kun":["あきらか","さとい"],"label":"philosophy, clear","radical":"口"},"徹":{"c":"徹","jlpt":1,"strokes":15,"on":["テツ"],"kun":[],"label":"penetrate, clear, pierce","radical":"厶"},"撤":{"c":"撤","jlpt":1,"strokes":15,"on":["テツ"],"kun":[],"label":"remove, disarm, dismantle","radical":"厶"},"迭":{"c":"迭","jlpt":1,"strokes":8,"on":["テツ"],"kun":[],"label":"alternation, transfer","radical":"一"},"典":{"c":"典","jlpt":1,"strokes":8,"on":["テン","デン"],"kun":["のり","ふみ"],"label":"code, ceremony, law","radical":"一"},"展":{"c":"展","jlpt":1,"strokes":10,"on":["テン"],"kun":[],"label":"unfold, expand","radical":"一"},"添":{"c":"添","jlpt":1,"strokes":11,"on":["テン"],"kun":["そ.う","そ.える"],"label":"annexed, accompany, append","radical":"一"},"吐":{"c":"吐","jlpt":1,"strokes":6,"on":["ト"],"kun":["つ.く","は.く"],"label":"spit, belch, confess","radical":"口"},"斗":{"c":"斗","jlpt":1,"strokes":4,"on":["ト","トウ"],"kun":[],"label":"Big Dipper, sake dipper, ten sho (vol)","radical":"斗"},"杜":{"c":"杜","jlpt":1,"strokes":7,"on":["ズ","ト","トウ"],"kun":["ふさ.ぐ","もり","やまなし"],"label":"grove, woods","radical":"土"},"奴":{"c":"奴","jlpt":1,"strokes":5,"on":["ド"],"kun":["やっこ","やつ"],"label":"guy, fellow, manservant","radical":"又"},"刀":{"c":"刀","jlpt":1,"strokes":2,"on":["トウ"],"kun":["かたな","そり"],"label":"sword, knife, saber","radical":"刀"},"悼":{"c":"悼","jlpt":1,"strokes":11,"on":["トウ"],"kun":["いた.む"],"label":"lament, grieve over","radical":"十"},"搭":{"c":"搭","jlpt":1,"strokes":12,"on":["トウ"],"kun":[],"label":"board, load (a vehicle), ride","radical":"一"},"桃":{"c":"桃","jlpt":1,"strokes":10,"on":["トウ"],"kun":["もも"],"label":"peach","radical":"儿"},"棟":{"c":"棟","jlpt":1,"strokes":12,"on":["トウ"],"kun":["むな-","むね"],"label":"ridgepole, ridge","radical":"一"},"痘":{"c":"痘","jlpt":1,"strokes":12,"on":["トウ"],"kun":[],"label":"pox, smallpox","radical":"口"},"糖":{"c":"糖","jlpt":1,"strokes":16,"on":["トウ"],"kun":[],"label":"sugar","radical":"口"},"統":{"c":"統","jlpt":1,"strokes":12,"on":["トウ"],"kun":["す.べる","ほび.る"],"label":"overall, governing, relationship","radical":"儿"},"藤":{"c":"藤","jlpt":1,"strokes":18,"on":["トウ","ドウ"],"kun":["ふじ"],"label":"wisteria","radical":"一"},"討":{"c":"討","jlpt":1,"strokes":10,"on":["トウ"],"kun":["う.つ"],"label":"chastise, attack, conquer","radical":"寸"},"謄":{"c":"謄","jlpt":1,"strokes":17,"on":["トウ"],"kun":[],"label":"copy, mimeograph","radical":"一"},"豆":{"c":"豆","jlpt":1,"strokes":7,"on":["ズ","トウ"],"kun":["まめ","まめ-"],"label":"beans, midget, pea","radical":"口"},"踏":{"c":"踏","jlpt":1,"strokes":15,"on":["トウ"],"kun":["ふ.まえる","ふ.む"],"label":"step, appraise, carry through","radical":"口"},"透":{"c":"透","jlpt":1,"strokes":10,"on":["トウ"],"kun":["す.かす","す.く","す.ける","とう.す","とう.る"],"label":"transparent, filter, penetrate","radical":"ノ"},"陶":{"c":"陶","jlpt":1,"strokes":11,"on":["トウ"],"kun":["すえ"],"label":"pottery, porcelain","radical":"勹"},"騰":{"c":"騰","jlpt":1,"strokes":20,"on":["トウ"],"kun":["あが.る","のぼ.る"],"label":"advancing, going, jumping up","radical":"一"},"闘":{"c":"闘","jlpt":1,"strokes":18,"on":["トウ"],"kun":["あらそ.う","たたか.う"],"label":"fight, war","radical":"口"},"憧":{"c":"憧","jlpt":1,"strokes":15,"on":["ショウ","トウ","ドウ"],"kun":["あこが.れる"],"label":"admire, adore, aspire to","radical":"立"},"洞":{"c":"洞","jlpt":1,"strokes":9,"on":["ドウ"],"kun":["ほら"],"label":"den, cave, excavation","radical":"一"},"瞳":{"c":"瞳","jlpt":1,"strokes":17,"on":["トウ","ドウ"],"kun":["ひとみ"],"label":"pupil (of eye)","radical":"目"},"胴":{"c":"胴","jlpt":1,"strokes":10,"on":["ドウ"],"kun":[],"label":"trunk, hub of wheel, hull (ship)","radical":"一"},"峠":{"c":"峠","jlpt":1,"strokes":9,"on":[],"kun":["とうげ"],"label":"climax, crest, mountain pass","radical":"一"},"匿":{"c":"匿","jlpt":1,"strokes":10,"on":["トク"],"kun":["かくま.う"],"label":"hide, shelter, shield","radical":"ノ"},"徳":{"c":"徳","jlpt":1,"strokes":14,"on":["トク"],"kun":[],"label":"benevolence, commanding respect","radical":"十"},"督":{"c":"督","jlpt":1,"strokes":13,"on":["トク"],"kun":[],"label":"coach, command, lead","radical":"卜"},"篤":{"c":"篤","jlpt":1,"strokes":16,"on":["トク"],"kun":["あつ.い"],"label":"fervent, cordial, deliberate","radical":"竹"},"独":{"c":"独","jlpt":1,"strokes":9,"on":["トク","ドク"],"kun":["ひと.り"],"label":"single, Germany, alone","radical":"虫"},"凸":{"c":"凸","jlpt":1,"strokes":5,"on":["トツ"],"kun":["でこ"],"label":"convex, beetle brow, uneven","radical":"一"},"寅":{"c":"寅","jlpt":1,"strokes":11,"on":["イン"],"kun":["とら"],"label":"sign of the tiger","radical":"一"},"酉":{"c":"酉","jlpt":1,"strokes":7,"on":["ユウ"],"kun":["とり"],"label":"sign of the bird, bird, west","radical":"酉"},"屯":{"c":"屯","jlpt":1,"strokes":4,"on":["トン"],"kun":["たむろ"],"label":"barracks, camp, police station","radical":"ノ"},"惇":{"c":"惇","jlpt":1,"strokes":11,"on":["シュン","ジュン","トン"],"kun":["あつ.い"],"label":"considerate, kind, sincere","radical":"口"},"敦":{"c":"敦","jlpt":1,"strokes":12,"on":["タイ","ダン","チョウ","トン"],"kun":["あつ.い"],"label":"industry, kindliness","radical":"口"},"豚":{"c":"豚","jlpt":1,"strokes":11,"on":["トン"],"kun":["ぶた"],"label":"pork, pig","radical":"月"},"奈":{"c":"奈","jlpt":1,"strokes":8,"on":["ダイ","ナ","ナイ"],"kun":["いかん","からなし"],"label":"Nara, what?","radical":"二"},"那":{"c":"那","jlpt":1,"strokes":7,"on":["ダ","ナ"],"kun":["いかん","なに","なんぞ"],"label":"what?","radical":"二"},"凪":{"c":"凪","jlpt":1,"strokes":6,"on":[],"kun":["な.ぐ","なぎ"],"label":"lull, calm","radical":"几"},"捺":{"c":"捺","jlpt":1,"strokes":11,"on":["ダツ","ナツ"],"kun":["お.す","さ.す"],"label":"affix a seal, press, print","radical":"二"},"縄":{"c":"縄","jlpt":1,"strokes":15,"on":["ジョウ"],"kun":["ただ.す","なわ"],"label":"straw rope, cord","radical":"乙"},"楠":{"c":"楠","jlpt":1,"strokes":13,"on":["ゼン","ダン","ナン","ネン"],"kun":["くす","くすのき"],"label":"camphor tree","radical":"冂"},"尼":{"c":"尼","jlpt":1,"strokes":5,"on":["ニ"],"kun":["あま"],"label":"nun","radical":"匕"},"弐":{"c":"弐","jlpt":1,"strokes":6,"on":["ジ","ニ"],"kun":["そえ","ふた.つ"],"label":"II, second, two","radical":"一"},"虹":{"c":"虹","jlpt":1,"strokes":9,"on":["コウ"],"kun":["にじ"],"label":"rainbow","radical":"工"},"如":{"c":"如","jlpt":1,"strokes":6,"on":["ジョ","ニョ"],"kun":["ごと.し"],"label":"likeness, as if, best","radical":"口"},"尿":{"c":"尿","jlpt":1,"strokes":7,"on":["ニョウ"],"kun":["いばり","しと","ゆばり"],"label":"urine","radical":"尸"},"妊":{"c":"妊","jlpt":1,"strokes":7,"on":["ジン","ニン"],"kun":["はら.む","みごも.る"],"label":"pregnancy","radical":"ノ"},"忍":{"c":"忍","jlpt":1,"strokes":7,"on":["ニン"],"kun":["しの.ばせる","しの.ぶ"],"label":"endure, bear, conceal","radical":"丶"},"寧":{"c":"寧","jlpt":1,"strokes":14,"on":["ネイ"],"kun":["むし.ろ"],"label":"rather, peaceful, preferably","radical":"一"},"粘":{"c":"粘","jlpt":1,"strokes":11,"on":["ネン"],"kun":["ねば.る"],"label":"sticky, glutinous, greasy","radical":"卜"},"乃":{"c":"乃","jlpt":1,"strokes":2,"on":["アイ","ダイ","ナイ","ノ"],"kun":["すなわ.ち","なんじ","の"],"label":"from, accordingly, possessive particle","radical":"一"},"之":{"c":"之","jlpt":1,"strokes":3,"on":["シ"],"kun":["この","これ","の","ゆく"],"label":"of, this","radical":"丶"},"納":{"c":"納","jlpt":1,"strokes":10,"on":["トウ","ナ","ナッ","ナン","ノウ"],"kun":["-おさ.める","おさ.まる","おさ.める"],"label":"settlement, obtain, pay","radical":"人"},"巴":{"c":"巴","jlpt":1,"strokes":4,"on":["ハ"],"kun":["うずまき","ともえ"],"label":"comma-design","radical":"乙"},"把":{"c":"把","jlpt":1,"strokes":7,"on":["ハ","ワ"],"kun":[],"label":"grasp, bunch, faggot","radical":"扎"},"覇":{"c":"覇","jlpt":1,"strokes":19,"on":["ハ","ハク"],"kun":["はたがしら"],"label":"hegemony, champion, leadership","radical":"月"},"派":{"c":"派","jlpt":1,"strokes":9,"on":["ハ"],"kun":[],"label":"faction, clique, group","radical":"厂"},"婆":{"c":"婆","jlpt":1,"strokes":11,"on":["バ"],"kun":["ばあ","ばば"],"label":"old woman, grandma, wet nurse","radical":"又"},"俳":{"c":"俳","jlpt":1,"strokes":10,"on":["ハイ"],"kun":[],"label":"haiku, actor","radical":"非"},"廃":{"c":"廃","jlpt":1,"strokes":12,"on":["ハイ"],"kun":["すた.る","すた.れる"],"label":"abolish, abandon, cessation","radical":"二"},"排":{"c":"排","jlpt":1,"strokes":11,"on":["ハイ"],"kun":[],"label":"repudiate, arrange, exclude","radical":"非"},"肺":{"c":"肺","jlpt":1,"strokes":9,"on":["ハイ"],"kun":[],"label":"lungs","radical":"巾"},"輩":{"c":"輩","jlpt":1,"strokes":15,"on":["ハイ"],"kun":["-ばら","ともがら","やかい","やから"],"label":"comrade, companions, fellow","radical":"車"},"培":{"c":"培","jlpt":1,"strokes":11,"on":["バイ"],"kun":["つちか.う"],"label":"cultivate, foster","radical":"口"},"媒":{"c":"媒","jlpt":1,"strokes":12,"on":["バイ"],"kun":["なこうど"],"label":"mediator, go-between","radical":"女"},"梅":{"c":"梅","jlpt":1,"strokes":10,"on":["バイ"],"kun":["うめ"],"label":"plum","radical":"木"},"賠":{"c":"賠","jlpt":1,"strokes":15,"on":["バイ"],"kun":[],"label":"compensation, indemnify","radical":"ハ"},"陪":{"c":"陪","jlpt":1,"strokes":11,"on":["バイ"],"kun":[],"label":"accompany, attend on, follow","radical":"口"},"萩":{"c":"萩","jlpt":1,"strokes":12,"on":["シュウ"],"kun":["はぎ"],"label":"bush clover","radical":"火"},"伯":{"c":"伯","jlpt":1,"strokes":7,"on":["ハク"],"kun":[],"label":"chief, Brazil, count","radical":"白"},"博":{"c":"博","jlpt":1,"strokes":12,"on":["ハク","バク"],"kun":[],"label":"command, esteem, exposition","radical":"丶"},"拍":{"c":"拍","jlpt":1,"strokes":8,"on":["ハク","ヒョウ"],"kun":[],"label":"clap, beat (music)","radical":"白"},"舶":{"c":"舶","jlpt":1,"strokes":11,"on":["ハク"],"kun":[],"label":"liner, ship","radical":"白"},"迫":{"c":"迫","jlpt":1,"strokes":8,"on":["ハク"],"kun":["せま.る"],"label":"urge, force, imminent","radical":"白"},"漠":{"c":"漠","jlpt":1,"strokes":13,"on":["バク"],"kun":[],"label":"vague, desert, obscure","radical":"大"},"縛":{"c":"縛","jlpt":1,"strokes":16,"on":["バク"],"kun":["しば.る"],"label":"truss, arrest, bind","radical":"丶"},"肇":{"c":"肇","jlpt":1,"strokes":14,"on":["ジョウ","チョウ","トウ"],"kun":["はじ.める","はじめ"],"label":"beginning","radical":"一"},"鉢":{"c":"鉢","jlpt":1,"strokes":13,"on":["ハチ","ハツ"],"kun":[],"label":"bowl, crown, pot","radical":"一"},"伐":{"c":"伐","jlpt":1,"strokes":6,"on":["カ","ハツ","バツ","ボチ"],"kun":["う.つ","き.る","そむ.く"],"label":"fell, attack, punish","radical":"戈"},"罰":{"c":"罰","jlpt":1,"strokes":14,"on":["ハツ","バチ","バツ"],"kun":["ばっ.する"],"label":"penalty, punishment","radical":"言"},"閥":{"c":"閥","jlpt":1,"strokes":14,"on":["バツ"],"kun":[],"label":"clique, clan, faction","radical":"戈"},"鳩":{"c":"鳩","jlpt":1,"strokes":13,"on":["キュウ","ク"],"kun":["あつ.める","はと"],"label":"pigeon, dove","radical":"鳥"},"隼":{"c":"隼","jlpt":1,"strokes":10,"on":["シュン","ジュン"],"kun":["はやぶさ"],"label":"falcon","radical":"十"},"伴":{"c":"伴","jlpt":1,"strokes":7,"on":["ハン","バン"],"kun":["ともな.う"],"label":"consort, accompany, bring with","radical":"｜"},"帆":{"c":"帆","jlpt":1,"strokes":6,"on":["ハン"],"kun":["ほ"],"label":"sail","radical":"丶"},"搬":{"c":"搬","jlpt":1,"strokes":13,"on":["ハン"],"kun":[],"label":"conveyor, carry, transport","radical":"几"},"班":{"c":"班","jlpt":1,"strokes":10,"on":["ハン"],"kun":[],"label":"squad, corps, group","radical":"王"},"畔":{"c":"畔","jlpt":1,"strokes":10,"on":["ハン"],"kun":["あぜ","くろ","ほとり"],"label":"levee, paddy ridge","radical":"｜"},"繁":{"c":"繁","jlpt":1,"strokes":16,"on":["ハン"],"kun":["しげ.く","しげ.る"],"label":"luxuriant, complexity, frequency","radical":"小"},"藩":{"c":"藩","jlpt":1,"strokes":18,"on":["ハン"],"kun":[],"label":"clan, enclosure","radical":"田"},"範":{"c":"範","jlpt":1,"strokes":15,"on":["ハン"],"kun":[],"label":"pattern, example, model","radical":"乙"},"煩":{"c":"煩","jlpt":1,"strokes":13,"on":["ハン","ボン"],"kun":["うるさ.い","うるさ.がる","わずら.う","わずら.わす"],"label":"anxiety, annoy, ill","radical":"ハ"},"頒":{"c":"頒","jlpt":1,"strokes":13,"on":["ハン"],"kun":["わ.かつ","わ.ける"],"label":"partition, disseminate, distribute","radical":"ハ"},"盤":{"c":"盤","jlpt":1,"strokes":15,"on":["バン"],"kun":[],"label":"tray, board, phonograph record","radical":"几"},"蛮":{"c":"蛮","jlpt":1,"strokes":12,"on":["バン"],"kun":["えびす"],"label":"barbarian","radical":"虫"},"卑":{"c":"卑","jlpt":1,"strokes":9,"on":["ヒ"],"kun":["いや.しい","いや.しむ","いや.しめる"],"label":"lowly, base, despise","radical":"十"},"妃":{"c":"妃","jlpt":1,"strokes":6,"on":["ヒ"],"kun":["きさき"],"label":"queen, princess","radical":"女"},"扉":{"c":"扉","jlpt":1,"strokes":12,"on":["ヒ"],"kun":["とびら"],"label":"front door, front page, title page","radical":"一"},"批":{"c":"批","jlpt":1,"strokes":7,"on":["ヒ"],"kun":[],"label":"criticism, strike","radical":"比"},"披":{"c":"披","jlpt":1,"strokes":8,"on":["ヒ"],"kun":[],"label":"expose, open","radical":"又"},"斐":{"c":"斐","jlpt":1,"strokes":12,"on":["イ","ヒ"],"kun":[],"label":"beautiful, patterned","radical":"文"},"泌":{"c":"泌","jlpt":1,"strokes":8,"on":["ヒ","ヒツ"],"kun":[],"label":"ooze, flow, penetrate","radical":"丶"},"碑":{"c":"碑","jlpt":1,"strokes":14,"on":["ヒ"],"kun":["いしぶみ"],"label":"tombstone, monument","radical":"十"},"秘":{"c":"秘","jlpt":1,"strokes":10,"on":["ヒ"],"kun":["かく.す","ひ.める","ひそ.か"],"label":"secret, conceal","radical":"丶"},"緋":{"c":"緋","jlpt":1,"strokes":14,"on":["ヒ"],"kun":["あか","あけ"],"label":"scarlet, cardinal","radical":"小"},"罷":{"c":"罷","jlpt":1,"strokes":15,"on":["ヒ"],"kun":["まか.り-","や.める"],"label":"quit, go, leave","radical":"匕"},"肥":{"c":"肥","jlpt":1,"strokes":8,"on":["ヒ"],"kun":["こ.える","こ.やし","こ.やす","こえ","ふと.る"],"label":"fertilizer, fertile, get fat","radical":"月"},"避":{"c":"避","jlpt":1,"strokes":16,"on":["ヒ"],"kun":["さ.ける","よ.ける"],"label":"evade, avert, avoid","radical":"十"},"尾":{"c":"尾","jlpt":1,"strokes":7,"on":["ビ"],"kun":["お"],"label":"tail, end, lower slope of mountain","radical":"尸"},"微":{"c":"微","jlpt":1,"strokes":13,"on":["ビ"],"kun":["かす.か"],"label":"delicate, insignificance, minuteness","radical":"山"},"眉":{"c":"眉","jlpt":1,"strokes":9,"on":["ビ","ミ"],"kun":["まゆ"],"label":"eyebrow","radical":"｜"},"柊":{"c":"柊","jlpt":1,"strokes":9,"on":["シュ","シュウ"],"kun":["ひいらぎ"],"label":"holly","radical":"丶"},"彦":{"c":"彦","jlpt":1,"strokes":9,"on":["ゲン"],"kun":["ひこ"],"label":"lad, boy (ancient)","radical":"厂"},"姫":{"c":"姫","jlpt":1,"strokes":10,"on":["キ"],"kun":["ひめ","ひめ-"],"label":"princess","radical":"女"},"媛":{"c":"媛","jlpt":1,"strokes":12,"on":["エン"],"kun":["ひめ"],"label":"beautiful woman, princess","radical":"ノ"},"俵":{"c":"俵","jlpt":1,"strokes":10,"on":["ヒョウ"],"kun":["たわら"],"label":"bag, bale, sack","radical":"二"},"彪":{"c":"彪","jlpt":1,"strokes":11,"on":["ヒュウ","ヒョウ"],"kun":["あや"],"label":"mottled, patterned, small tiger","radical":"儿"},"標":{"c":"標","jlpt":1,"strokes":15,"on":["ヒョウ"],"kun":["しるし","しるべ"],"label":"signpost, emblem, evidence","radical":"二"},"漂":{"c":"漂","jlpt":1,"strokes":14,"on":["ヒョウ"],"kun":["ただよ.う"],"label":"drift, float (on liquid)","radical":"二"},"票":{"c":"票","jlpt":1,"strokes":11,"on":["ヒョウ"],"kun":[],"label":"ballot, label, sign","radical":"二"},"評":{"c":"評","jlpt":1,"strokes":12,"on":["ヒョウ"],"kun":[],"label":"evaluate, comment, criticism","radical":"一"},"描":{"c":"描","jlpt":1,"strokes":11,"on":["ビョウ"],"kun":["えが.く","か.く"],"label":"sketch, compose, draw","radical":"田"},"苗":{"c":"苗","jlpt":1,"strokes":8,"on":["ビョウ","ミョウ"],"kun":["なえ","なわ-"],"label":"seedling, sapling, shoot","radical":"田"},"彬":{"c":"彬","jlpt":1,"strokes":11,"on":["ヒン","フン"],"kun":["あき.らか","うるわ.しい"],"label":"gentle, refined","radical":"彡"},"浜":{"c":"浜","jlpt":1,"strokes":10,"on":["ヒン"],"kun":["はま"],"label":"seacoast, beach, seashore","radical":"一"},"賓":{"c":"賓","jlpt":1,"strokes":15,"on":["ヒン"],"kun":[],"label":"guest","radical":"一"},"頻":{"c":"頻","jlpt":1,"strokes":17,"on":["ヒン"],"kun":["しき.りに"],"label":"repeatedly, recur","radical":"ノ"},"敏":{"c":"敏","jlpt":1,"strokes":10,"on":["ビン"],"kun":["さとい"],"label":"cleverness, agile, alert","radical":"毋"},"扶":{"c":"扶","jlpt":1,"strokes":7,"on":["フ"],"kun":["たす.ける"],"label":"aid, assist, help","radical":"二"},"敷":{"c":"敷","jlpt":1,"strokes":15,"on":["フ"],"kun":["-し.き","し.く"],"label":"spread, pave, promulgate","radical":"丶"},"腐":{"c":"腐","jlpt":1,"strokes":14,"on":["フ"],"kun":["-くさ.る","くさ.す","くさ.らす","くさ.る","くさ.れ","くさ.れる"],"label":"rot, decay, sour","radical":"寸"},"芙":{"c":"芙","jlpt":1,"strokes":7,"on":["フ"],"kun":[],"label":"Mt Fuji, lotus","radical":"二"},"譜":{"c":"譜","jlpt":1,"strokes":19,"on":["フ"],"kun":[],"label":"musical score, genealogy, music","radical":"一"},"賦":{"c":"賦","jlpt":1,"strokes":15,"on":["フ","ブ"],"kun":[],"label":"levy, installment, ode","radical":"ハ"},"赴":{"c":"赴","jlpt":1,"strokes":9,"on":["フ"],"kun":["おもむ.く"],"label":"proceed, become, get","radical":"卜"},"附":{"c":"附","jlpt":1,"strokes":8,"on":["フ"],"kun":["つ.く","つ.ける"],"label":"affixed, append, attach","radical":"寸"},"侮":{"c":"侮","jlpt":1,"strokes":8,"on":["ブ"],"kun":["あなず.る","あなど.る"],"label":"scorn, contempt, despise","radical":"毋"},"楓":{"c":"楓","jlpt":1,"strokes":13,"on":["フウ"],"kun":["かえで"],"label":"maple","radical":"ノ"},"蕗":{"c":"蕗","jlpt":1,"strokes":16,"on":["ル","ロ"],"kun":["ふき"],"label":"butterbur, bog rhubarb","radical":"口"},"伏":{"c":"伏","jlpt":1,"strokes":6,"on":["フク"],"kun":["ふ.す","ふ.せる"],"label":"prostrated, bend down, bow","radical":"犬"},"覆":{"c":"覆","jlpt":1,"strokes":18,"on":["フク"],"kun":["おお.う","くつがえ.す","くつがえ.る"],"label":"capsize, be ruined, cover","radical":"夂"},"噴":{"c":"噴","jlpt":1,"strokes":15,"on":["フン"],"kun":["ふ.く"],"label":"erupt, emit, flush out","radical":"ハ"},"墳":{"c":"墳","jlpt":1,"strokes":15,"on":["フン"],"kun":[],"label":"tomb, mound","radical":"ハ"},"憤":{"c":"憤","jlpt":1,"strokes":15,"on":["フン"],"kun":["いきどお.る"],"label":"aroused, anger, be indignant","radical":"ハ"},"奮":{"c":"奮","jlpt":1,"strokes":16,"on":["フン"],"kun":["ふる.う"],"label":"stirred up, be invigorated, flourish","radical":"大"},"紛":{"c":"紛","jlpt":1,"strokes":10,"on":["フン"],"kun":["-まぎ.れ","まぎ.らす","まぎ.らわしい","まぎ.らわす","まぎ.れる"],"label":"distract, be mistaken for, divert","radical":"ハ"},"雰":{"c":"雰","jlpt":1,"strokes":12,"on":["フン"],"kun":[],"label":"atmosphere, fog","radical":"ハ"},"丙":{"c":"丙","jlpt":1,"strokes":5,"on":["ヘイ"],"kun":["ひのえ"],"label":"third class","radical":"一"},"併":{"c":"併","jlpt":1,"strokes":8,"on":["ヘイ"],"kun":["あわ.せる"],"label":"join, collective, get together","radical":"一"},"塀":{"c":"塀","jlpt":1,"strokes":12,"on":["ヘイ","ベイ"],"kun":[],"label":"fence, wall","radical":"一"},"幣":{"c":"幣","jlpt":1,"strokes":15,"on":["ヘイ"],"kun":["ぬさ"],"label":"cash, Shinto offerings of cloth","radical":"冂"},"弊":{"c":"弊","jlpt":1,"strokes":15,"on":["ヘイ"],"kun":[],"label":"abuse, breakage, evil","radical":"｜"},"柄":{"c":"柄","jlpt":1,"strokes":9,"on":["ヘイ"],"kun":["え","がら","つか"],"label":"design, build, character","radical":"一"},"陛":{"c":"陛","jlpt":1,"strokes":10,"on":["ヘイ"],"kun":[],"label":"highness, steps (of throne)","radical":"土"},"壁":{"c":"壁","jlpt":1,"strokes":16,"on":["ヘキ"],"kun":["かべ"],"label":"wall, fence, lining (stomach)","radical":"十"},"癖":{"c":"癖","jlpt":1,"strokes":18,"on":["ヘキ"],"kun":["くせ","くせ.に"],"label":"mannerism, fault, habit","radical":"十"},"碧":{"c":"碧","jlpt":1,"strokes":14,"on":["ヒャク","ヘキ"],"kun":[],"label":"blue, green","radical":"口"},"偏":{"c":"偏","jlpt":1,"strokes":11,"on":["ヘン"],"kun":["かたよ.る"],"label":"partial, biased, inclining","radical":"一"},"遍":{"c":"遍","jlpt":1,"strokes":12,"on":["ヘン"],"kun":["あまね.く"],"label":"everywhere, generally, times","radical":"一"},"弁":{"c":"弁","jlpt":1,"strokes":5,"on":["ヘン","ベン"],"kun":["あらそ.う","かんむり","はなびら","わ.ける","わきま.える"],"label":"valve, braid, conical cap","radical":"厶"},"保":{"c":"保","jlpt":1,"strokes":9,"on":["ホ","ホウ"],"kun":["たも.つ"],"label":"protect, guarantee, keep","radical":"口"},"舗":{"c":"舗","jlpt":1,"strokes":15,"on":["ホ"],"kun":[],"label":"shop, pave, store","radical":"丶"},"甫":{"c":"甫","jlpt":1,"strokes":7,"on":["フ","ホ"],"kun":["はじ.めて"],"label":"for the first time, not until","radical":"丶"},"輔":{"c":"輔","jlpt":1,"strokes":14,"on":["フ","ホ"],"kun":["たす.ける"],"label":"help","radical":"丶"},"穂":{"c":"穂","jlpt":1,"strokes":15,"on":["スイ"],"kun":["ほ"],"label":"crest (wave), ear, ear (grain)","radical":"十"},"墓":{"c":"墓","jlpt":1,"strokes":13,"on":["ボ"],"kun":["はか"],"label":"grave, tomb","radical":"土"},"慕":{"c":"慕","jlpt":1,"strokes":14,"on":["ボ"],"kun":["した.う"],"label":"pining, adore, love dearly","radical":"大"},"簿":{"c":"簿","jlpt":1,"strokes":19,"on":["ボ"],"kun":[],"label":"register, record book","radical":"丶"},"倣":{"c":"倣","jlpt":1,"strokes":10,"on":["ホウ"],"kun":["なら.う"],"label":"emulate, imitate","radical":"方"},"俸":{"c":"俸","jlpt":1,"strokes":10,"on":["ホウ"],"kun":[],"label":"stipend, salary","radical":"一"},"奉":{"c":"奉","jlpt":1,"strokes":8,"on":["ブ","ホウ"],"kun":["たてまつ.る","ほう.ずる","まつ.る"],"label":"dedicate, observance, offer","radical":"一"},"峰":{"c":"峰","jlpt":1,"strokes":10,"on":["ホウ"],"kun":["ね","みね"],"label":"summit, peak","radical":"一"},"崩":{"c":"崩","jlpt":1,"strokes":11,"on":["ホウ"],"kun":["-くず.れ","くず.す","くず.れる"],"label":"crumble, demolish, die","radical":"山"},"朋":{"c":"朋","jlpt":1,"strokes":8,"on":["ホウ"],"kun":["とも"],"label":"companion, friend","radical":"月"},"泡":{"c":"泡","jlpt":1,"strokes":8,"on":["ホウ"],"kun":["あわ"],"label":"bubbles, foam, froth","radical":"勹"},"砲":{"c":"砲","jlpt":1,"strokes":10,"on":["ホウ"],"kun":[],"label":"cannon, gun","radical":"勹"},"縫":{"c":"縫","jlpt":1,"strokes":16,"on":["ホウ"],"kun":["ぬ.う"],"label":"sew, embroider, stitch","radical":"一"},"胞":{"c":"胞","jlpt":1,"strokes":9,"on":["ホウ"],"kun":[],"label":"placenta, sac, sheath","radical":"勹"},"芳":{"c":"芳","jlpt":1,"strokes":7,"on":["ホウ"],"kun":["かんば.しい"],"label":"perfume, balmy, favorable","radical":"方"},"萌":{"c":"萌","jlpt":1,"strokes":11,"on":["ホウ"],"kun":["きざ.し","きざ.す","めばえ","も.える"],"label":"bud, malt, show symptoms of","radical":"日"},"褒":{"c":"褒","jlpt":1,"strokes":15,"on":["ホウ"],"kun":["ほ.める"],"label":"praise, extol","radical":"口"},"邦":{"c":"邦","jlpt":1,"strokes":7,"on":["ホウ"],"kun":["くに"],"label":"home country, Japan, country","radical":"ノ"},"飽":{"c":"飽","jlpt":1,"strokes":13,"on":["ホウ"],"kun":["あ.かす","あ.きる","あ.く"],"label":"sated, bored, satiate","radical":"勹"},"鳳":{"c":"鳳","jlpt":1,"strokes":14,"on":["フウ","ホウ"],"kun":[],"label":"male mythical bird","radical":"几"},"鵬":{"c":"鵬","jlpt":1,"strokes":19,"on":["ホウ"],"kun":["おおとり"],"label":"phoenix","radical":"月"},"乏":{"c":"乏","jlpt":1,"strokes":4,"on":["ボウ"],"kun":["とぼ.しい","とも.しい"],"label":"destitution, limited, scarce","radical":"丶"},"傍":{"c":"傍","jlpt":1,"strokes":12,"on":["ボウ"],"kun":["おか-","かたわ.ら","そば","はた","わき"],"label":"bystander, besides, nearby","radical":"冖"},"剖":{"c":"剖","jlpt":1,"strokes":10,"on":["ボウ"],"kun":[],"label":"divide","radical":"口"},"妨":{"c":"妨","jlpt":1,"strokes":7,"on":["ボウ"],"kun":["さまた.げる"],"label":"disturb, hamper, obstruct","radical":"女"},"房":{"c":"房","jlpt":1,"strokes":8,"on":["ボウ"],"kun":["ふさ"],"label":"tassel, bunch, fringe","radical":"一"},"某":{"c":"某","jlpt":1,"strokes":9,"on":["ボウ"],"kun":["それがし","なにがし"],"label":"so-and-so, a certain, one","radical":"木"},"冒":{"c":"冒","jlpt":1,"strokes":9,"on":["ボウ"],"kun":["おか.す"],"label":"risk, assume (a name), damage","radical":"日"},"紡":{"c":"紡","jlpt":1,"strokes":10,"on":["ボウ"],"kun":["つむ.ぐ"],"label":"spinning","radical":"小"},"肪":{"c":"肪","jlpt":1,"strokes":8,"on":["ボウ"],"kun":[],"label":"obese, fat","radical":"方"},"膨":{"c":"膨","jlpt":1,"strokes":16,"on":["ボウ"],"kun":["ふく.らむ","ふく.れる"],"label":"swell, get fat, thick","radical":"十"},"謀":{"c":"謀","jlpt":1,"strokes":16,"on":["ボウ","ム"],"kun":["たばか.る","はか.る","はかりごと"],"label":"conspire, cheat, deceive","radical":"木"},"僕":{"c":"僕","jlpt":1,"strokes":14,"on":["ボク"],"kun":["しもべ"],"label":"me, I (male), manservant","radical":"二"},"墨":{"c":"墨","jlpt":1,"strokes":14,"on":["ボク"],"kun":["すみ"],"label":"black ink, India ink, Mexico","radical":"土"},"撲":{"c":"撲","jlpt":1,"strokes":15,"on":["ボク"],"kun":[],"label":"slap, beat, hit","radical":"二"},"朴":{"c":"朴","jlpt":1,"strokes":6,"on":["ボク"],"kun":["えのき","ほう","ほお"],"label":"crude, docile, plain","radical":"卜"},"牧":{"c":"牧","jlpt":1,"strokes":8,"on":["ボク"],"kun":["まき"],"label":"breed, care for, feed","radical":"牛"},"睦":{"c":"睦","jlpt":1,"strokes":13,"on":["ボク","モク"],"kun":["むつ.ぶ","むつ.まじい","むつ.む"],"label":"intimate, friendly, harmonious","radical":"儿"},"没":{"c":"没","jlpt":1,"strokes":7,"on":["ボツ","モツ"],"kun":["おぼ.れる","しず.む","ない"],"label":"drown, die, disappear","radical":"几"},"堀":{"c":"堀","jlpt":1,"strokes":11,"on":["クツ"],"kun":["ほり"],"label":"ditch, canal, moat","radical":"｜"},"奔":{"c":"奔","jlpt":1,"strokes":8,"on":["ホン"],"kun":["はし.る"],"label":"bustle, run","radical":"一"},"翻":{"c":"翻","jlpt":1,"strokes":18,"on":["ハン","ホン"],"kun":["ひるがえ.す","ひるがえ.る"],"label":"flip, change (mind), flutter","radical":"冫"},"凡":{"c":"凡","jlpt":1,"strokes":3,"on":["ハン","ボン"],"kun":["おうよ.そ","およ.そ","すべ.て"],"label":"mediocre, commonplace, ordinary","radical":"丶"},"盆":{"c":"盆","jlpt":1,"strokes":9,"on":["ボン"],"kun":[],"label":"basin, lantern festival, tray","radical":"ハ"},"摩":{"c":"摩","jlpt":1,"strokes":15,"on":["マ"],"kun":["さす.る","す.る","ま.する"],"label":"chafe, grind, polish","radical":"广"},"魔":{"c":"魔","jlpt":1,"strokes":21,"on":["マ"],"kun":[],"label":"witch, demon, evil spirit","radical":"儿"},"麻":{"c":"麻","jlpt":1,"strokes":11,"on":["マ","マア"],"kun":["あさ"],"label":"hemp, flax, numb","radical":"广"},"槙":{"c":"槙","jlpt":1,"strokes":14,"on":["シン","テン"],"kun":["こずえ","まき"],"label":"ornamental evergreen, twig","radical":"ハ"},"幕":{"c":"幕","jlpt":1,"strokes":13,"on":["バク","マク"],"kun":["とばり"],"label":"curtain, act of play, bunting","radical":"大"},"膜":{"c":"膜","jlpt":1,"strokes":14,"on":["マク"],"kun":[],"label":"membrane","radical":"大"},"柾":{"c":"柾","jlpt":1,"strokes":9,"on":[],"kun":["まさ","まさき","まさめ"],"label":"spindle tree, straight grain","radical":"一"},"亦":{"c":"亦","jlpt":1,"strokes":6,"on":["エキ","ヤク"],"kun":["また"],"label":"again, also","radical":"ノ"},"又":{"c":"又","jlpt":1,"strokes":2,"on":["ユウ"],"kun":["また","また-","また.の-"],"label":"or again, furthermore, on the other hand","radical":"又"},"抹":{"c":"抹","jlpt":1,"strokes":8,"on":["マツ"],"kun":[],"label":"rub, erase, paint","radical":"一"},"繭":{"c":"繭","jlpt":1,"strokes":18,"on":["ケン"],"kun":["きぬ","まゆ"],"label":"cocoon","radical":"冂"},"麿":{"c":"麿","jlpt":1,"strokes":18,"on":[],"kun":["まろ"],"label":"I, you","radical":"ノ"},"慢":{"c":"慢","jlpt":1,"strokes":14,"on":["マン"],"kun":[],"label":"ridicule, laziness","radical":"又"},"漫":{"c":"漫","jlpt":1,"strokes":14,"on":["マン"],"kun":["そぞ.ろ","みだり.に"],"label":"cartoon, corrupt, in spite of oneself","radical":"又"},"魅":{"c":"魅","jlpt":1,"strokes":15,"on":["ミ"],"kun":[],"label":"fascination, bewitch, charm","radical":"｜"},"巳":{"c":"巳","jlpt":1,"strokes":3,"on":["シ"],"kun":["み"],"label":"sign of the snake or serpent","radical":"已"},"岬":{"c":"岬","jlpt":1,"strokes":8,"on":["コウ"],"kun":["みさき"],"label":"headland, cape, promontory","radical":"｜"},"密":{"c":"密","jlpt":1,"strokes":11,"on":["ミツ"],"kun":["ひそ.か"],"label":"secrecy, carefulness, density (pop)","radical":"丶"},"稔":{"c":"稔","jlpt":1,"strokes":13,"on":["ジン","ニン","ネン"],"kun":["みの.る","みのり"],"label":"harvest, ripen","radical":"一"},"脈":{"c":"脈","jlpt":1,"strokes":10,"on":["ミャク"],"kun":["すじ"],"label":"vein, hope, pulse","radical":"厂"},"妙":{"c":"妙","jlpt":1,"strokes":7,"on":["ビョウ","ミョウ"],"kun":["たえ"],"label":"exquisite, charming, delicate","radical":"ノ"},"矛":{"c":"矛","jlpt":1,"strokes":5,"on":["ボウ","ム"],"kun":["ほこ"],"label":"halberd, arms, festival float","radical":"矛"},"霧":{"c":"霧","jlpt":1,"strokes":19,"on":["ブ","ボウ","ム"],"kun":["きり"],"label":"fog, mist","radical":"力"},"椋":{"c":"椋","jlpt":1,"strokes":12,"on":["リョウ"],"kun":["むく"],"label":"grey starling, type of deciduous tree","radical":"口"},"婿":{"c":"婿","jlpt":1,"strokes":12,"on":["セイ"],"kun":["むこ"],"label":"bridegroom, son-in-law","radical":"女"},"盟":{"c":"盟","jlpt":1,"strokes":13,"on":["メイ"],"kun":[],"label":"alliance, oath","radical":"日"},"銘":{"c":"銘","jlpt":1,"strokes":14,"on":["メイ"],"kun":[],"label":"inscription, signature (of artisan)","radical":"口"},"滅":{"c":"滅","jlpt":1,"strokes":13,"on":["メツ"],"kun":["ほろ.びる","ほろ.ぶ","ほろ.ぼす"],"label":"destroy, overthrow, perish","radical":"ノ"},"免":{"c":"免","jlpt":1,"strokes":8,"on":["メン"],"kun":["まぬか.れる","まぬが.れる"],"label":"excuse, dismissal","radical":"一"},"模":{"c":"模","jlpt":1,"strokes":14,"on":["ボ","モ"],"kun":[],"label":"imitation, copy, mock","radical":"大"},"茂":{"c":"茂","jlpt":1,"strokes":8,"on":["モ"],"kun":["しげ.る"],"label":"overgrown, be luxuriant, grow thick","radical":"ノ"},"妄":{"c":"妄","jlpt":1,"strokes":6,"on":["ボウ","モウ"],"kun":["みだ.りに"],"label":"delusion, reckless, unnecessarily","radical":"亡"},"孟":{"c":"孟","jlpt":1,"strokes":8,"on":["ボウ","ミョウ","モウ"],"kun":["かしら"],"label":"beginning, chief","radical":"子"},"猛":{"c":"猛","jlpt":1,"strokes":11,"on":["モウ"],"kun":[],"label":"fierce, become furious, rave","radical":"子"},"盲":{"c":"盲","jlpt":1,"strokes":8,"on":["モウ"],"kun":["めくら"],"label":"blind, blind man, ignoramus","radical":"亡"},"網":{"c":"網","jlpt":1,"strokes":14,"on":["モウ"],"kun":["あみ"],"label":"netting, network","radical":"冂"},"耗":{"c":"耗","jlpt":1,"strokes":10,"on":["コウ","モウ"],"kun":[],"label":"decrease","radical":"｜"},"黙":{"c":"黙","jlpt":1,"strokes":15,"on":["ボク","モク"],"kun":["だま.る","もだ.す"],"label":"silence, become silent, leave as is","radical":"犬"},"紋":{"c":"紋","jlpt":1,"strokes":10,"on":["モン"],"kun":[],"label":"family crest, figures","radical":"小"},"匁":{"c":"匁","jlpt":1,"strokes":4,"on":[],"kun":["め","もんめ"],"label":"monme","radical":"丶"},"也":{"c":"也","jlpt":1,"strokes":3,"on":["エ","ヤ"],"kun":["か","なり","また"],"label":"to be (classical)","radical":"｜"},"冶":{"c":"冶","jlpt":1,"strokes":7,"on":["ヤ"],"kun":["い.る"],"label":"melting, smelting","radical":"冫"},"耶":{"c":"耶","jlpt":1,"strokes":9,"on":["ジャ","ヤ"],"kun":["か"],"label":"question mark","radical":"耳"},"弥":{"c":"弥","jlpt":1,"strokes":8,"on":["ビ","ミ"],"kun":["いや","いよ.いよ","や","わた.る"],"label":"all the more, increasingly","radical":"ノ"},"矢":{"c":"矢","jlpt":1,"strokes":5,"on":["シ"],"kun":["や"],"label":"dart, arrow","radical":"一"},"厄":{"c":"厄","jlpt":1,"strokes":4,"on":["ヤク"],"kun":[],"label":"unlucky, bad luck, disaster","radical":"卩"},"訳":{"c":"訳","jlpt":1,"strokes":11,"on":["ヤク"],"kun":["わけ"],"label":"translate, case, circumstance","radical":"丶"},"躍":{"c":"躍","jlpt":1,"strokes":21,"on":["ヤク"],"kun":["おど.る"],"label":"leap, dance, skip","radical":"口"},"靖":{"c":"靖","jlpt":1,"strokes":13,"on":["ジョウ","セイ"],"kun":["やす.んじる"],"label":"peaceful","radical":"二"},"柳":{"c":"柳","jlpt":1,"strokes":9,"on":["リュウ"],"kun":["やなぎ"],"label":"willow","radical":"卩"},"愉":{"c":"愉","jlpt":1,"strokes":12,"on":["ユ"],"kun":["たの.しい","たの.しむ"],"label":"pleasure, happy, rejoice","radical":"一"},"癒":{"c":"癒","jlpt":1,"strokes":18,"on":["ユ"],"kun":["い.える","い.やす","いや.す"],"label":"healing, cure, quench (thirst)","radical":"心"},"諭":{"c":"諭","jlpt":1,"strokes":16,"on":["ユ"],"kun":["さと.す"],"label":"rebuke, admonish, charge","radical":"一"},"唯":{"c":"唯","jlpt":1,"strokes":11,"on":["イ","ユイ"],"kun":["ただ"],"label":"solely, merely, only","radical":"口"},"佑":{"c":"佑","jlpt":1,"strokes":7,"on":["ウ","ユウ"],"kun":["たす.ける"],"label":"assist, help","radical":"一"},"宥":{"c":"宥","jlpt":1,"strokes":9,"on":["ユウ"],"kun":["なだ.める","ゆる.す"],"label":"soothe, calm, pacify","radical":"一"},"幽":{"c":"幽","jlpt":1,"strokes":9,"on":["ユウ"],"kun":["かす.か","くら.い","しろ.い","ふか.い"],"label":"calm, confine to a room, dark","radical":"｜"},"悠":{"c":"悠","jlpt":1,"strokes":11,"on":["ユウ"],"kun":[],"label":"distant, leisure, long time","radical":"｜"},"憂":{"c":"憂","jlpt":1,"strokes":15,"on":["ユウ"],"kun":["う.い","う.き","うれ.い","うれ.える"],"label":"melancholy, be anxious, grieve","radical":"一"},"柚":{"c":"柚","jlpt":1,"strokes":9,"on":["ジク","ユ","ユウ"],"kun":["ゆず"],"label":"citron","radical":"｜"},"湧":{"c":"湧","jlpt":1,"strokes":12,"on":["ユ","ユウ","ヨウ"],"kun":["わ.く"],"label":"boil, breed, ferment","radical":"力"},"猶":{"c":"猶","jlpt":1,"strokes":12,"on":["ユ","ユウ"],"kun":["なお"],"label":"furthermore, still, yet","radical":"酉"},"祐":{"c":"祐","jlpt":1,"strokes":9,"on":["ウ","ユウ"],"kun":["たす.ける"],"label":"help","radical":"一"},"裕":{"c":"裕","jlpt":1,"strokes":12,"on":["ユウ"],"kun":[],"label":"abundant, fertile, rich","radical":"ハ"},"誘":{"c":"誘","jlpt":1,"strokes":14,"on":["ユウ"],"kun":["いざな.う","さそ.う"],"label":"entice, allure, ask","radical":"ノ"},"邑":{"c":"邑","jlpt":1,"strokes":7,"on":["ユウ"],"kun":["むら"],"label":"rural community, village","radical":"口"},"雄":{"c":"雄","jlpt":1,"strokes":12,"on":["ユウ"],"kun":["お-","おす","おん"],"label":"excellence, hero, leader","radical":"一"},"融":{"c":"融","jlpt":1,"strokes":16,"on":["ユウ"],"kun":["と.かす","と.ける"],"label":"dissolve, melt","radical":"儿"},"誉":{"c":"誉","jlpt":1,"strokes":13,"on":["ヨ"],"kun":["ほ.める","ほま.れ"],"label":"reputation, glory, honor","radical":"一"},"庸":{"c":"庸","jlpt":1,"strokes":11,"on":["ヨウ"],"kun":[],"label":"commonplace, employment, ordinary","radical":"广"},"揚":{"c":"揚","jlpt":1,"strokes":12,"on":["ヨウ"],"kun":["-あ.げ","あ.がる","あ.げる"],"label":"hoist, elevate, extol","radical":"一"},"揺":{"c":"揺","jlpt":1,"strokes":12,"on":["ヨウ"],"kun":["うご.く","ゆ.さぶる","ゆ.すぶる","ゆ.する","ゆ.らぐ","ゆ.る","ゆ.るぐ","ゆ.れる"],"label":"swing, rock, shake","radical":"凵"},"擁":{"c":"擁","jlpt":1,"strokes":16,"on":["ヨウ"],"kun":[],"label":"hug, embrace, lead","radical":"幺"},"楊":{"c":"楊","jlpt":1,"strokes":13,"on":["ヨウ"],"kun":["やなぎ"],"label":"willow","radical":"一"},"窯":{"c":"窯","jlpt":1,"strokes":15,"on":["ヨウ"],"kun":["かま"],"label":"kiln, furnace, oven","radical":"儿"},"羊":{"c":"羊","jlpt":1,"strokes":6,"on":["ヨウ"],"kun":["ひつじ"],"label":"sheep","radical":"王"},"耀":{"c":"耀","jlpt":1,"strokes":20,"on":["ヨウ"],"kun":["かがや.く","ひかり"],"label":"gleam, shine, sparkle","radical":"儿"},"蓉":{"c":"蓉","jlpt":1,"strokes":13,"on":["ヨウ"],"kun":[],"label":"lotus","radical":"ハ"},"謡":{"c":"謡","jlpt":1,"strokes":16,"on":["ヨウ"],"kun":["うた.い","うた.う"],"label":"noh chanting, ballad, sing","radical":"凵"},"遥":{"c":"遥","jlpt":1,"strokes":12,"on":["ヨウ"],"kun":["はる.か"],"label":"far off, distant, long ago","radical":"凵"},"養":{"c":"養","jlpt":1,"strokes":15,"on":["ヨウ","リョウ"],"kun":["やしな.う"],"label":"foster, bring up, develop","radical":"王"},"抑":{"c":"抑","jlpt":1,"strokes":7,"on":["ヨク"],"kun":["おさ.える"],"label":"repress, do in spite of","radical":"卩"},"翼":{"c":"翼","jlpt":1,"strokes":17,"on":["ヨク"],"kun":["つばさ"],"label":"wing, flank, plane","radical":"一"},"羅":{"c":"羅","jlpt":1,"strokes":19,"on":["ラ"],"kun":["うすもの"],"label":"gauze, Rome, arrange","radical":"小"},"裸":{"c":"裸","jlpt":1,"strokes":13,"on":["ラ"],"kun":["はだか"],"label":"naked, nude, partially clothed","radical":"木"},"雷":{"c":"雷","jlpt":1,"strokes":13,"on":["ライ"],"kun":["いかずち","いかづち","かみなり"],"label":"thunder, lightning bolt","radical":"田"},"酪":{"c":"酪","jlpt":1,"strokes":13,"on":["ラク"],"kun":[],"label":"dairy products, broth, fruit juice","radical":"口"},"嵐":{"c":"嵐","jlpt":1,"strokes":12,"on":["ラン"],"kun":["あらし"],"label":"storm, tempest","radical":"山"},"欄":{"c":"欄","jlpt":1,"strokes":20,"on":["ラン"],"kun":["てすり"],"label":"column, blank, handrail","radical":"一"},"濫":{"c":"濫","jlpt":1,"strokes":18,"on":["ラン"],"kun":["みだ.りがましい","みだ.りに"],"label":"overflow, excessive, spread out","radical":"ノ"},"藍":{"c":"藍","jlpt":1,"strokes":18,"on":["ラン"],"kun":["あい"],"label":"indigo","radical":"ノ"},"蘭":{"c":"蘭","jlpt":1,"strokes":19,"on":["ラ","ラン"],"kun":[],"label":"orchid, Holland","radical":"一"},"覧":{"c":"覧","jlpt":1,"strokes":17,"on":["ラン"],"kun":["み.る"],"label":"perusal, see","radical":"ノ"},"吏":{"c":"吏","jlpt":1,"strokes":6,"on":["リ"],"kun":[],"label":"officer, an official","radical":"一"},"履":{"c":"履","jlpt":1,"strokes":15,"on":["リ"],"kun":["は.く"],"label":"footgear, boots, complete","radical":"夂"},"李":{"c":"李","jlpt":1,"strokes":7,"on":["リ"],"kun":["すもも"],"label":"plum","radical":"子"},"梨":{"c":"梨","jlpt":1,"strokes":11,"on":["リ"],"kun":["なし"],"label":"pear tree","radical":"木"},"璃":{"c":"璃","jlpt":1,"strokes":15,"on":["リ"],"kun":[],"label":"glassy, lapis lazuli","radical":"凵"},"痢":{"c":"痢","jlpt":1,"strokes":12,"on":["リ"],"kun":[],"label":"diarrhea","radical":"禾"},"離":{"c":"離","jlpt":1,"strokes":19,"on":["リ"],"kun":["はな.す","はな.れる"],"label":"detach, digress, disjoin","radical":"凵"},"率":{"c":"率","jlpt":1,"strokes":11,"on":["シュツ","ソツ","リツ"],"kun":["ひき.いる"],"label":"ratio, %, command","radical":"冫"},"琉":{"c":"琉","jlpt":1,"strokes":11,"on":["リュウ","ル"],"kun":[],"label":"lapis lazuli, gem, precious stone","radical":"厶"},"硫":{"c":"硫","jlpt":1,"strokes":12,"on":["リュウ"],"kun":[],"label":"sulphur","radical":"厶"},"隆":{"c":"隆","jlpt":1,"strokes":11,"on":["リュウ"],"kun":[],"label":"hump, high, noble","radical":"夂"},"竜":{"c":"竜","jlpt":1,"strokes":10,"on":["リュウ","リョウ","ロウ"],"kun":["いせ","たつ"],"label":"dragon, imperial","radical":"乙"},"慮":{"c":"慮","jlpt":1,"strokes":15,"on":["リョ"],"kun":["おもんぱか.る","おもんぱく.る"],"label":"prudence, concern, consider","radical":"匕"},"虜":{"c":"虜","jlpt":1,"strokes":13,"on":["リョ","ロ"],"kun":["とりく","とりこ"],"label":"captive, barbarian","radical":"力"},"亮":{"c":"亮","jlpt":1,"strokes":9,"on":["リョウ"],"kun":["あきらか"],"label":"clear, help","radical":"儿"},"僚":{"c":"僚","jlpt":1,"strokes":14,"on":["リョウ"],"kun":[],"label":"colleague, companion, official","radical":"大"},"凌":{"c":"凌","jlpt":1,"strokes":10,"on":["リョウ"],"kun":["しの.ぐ"],"label":"defy, endure, keep (rain)out","radical":"儿"},"寮":{"c":"寮","jlpt":1,"strokes":15,"on":["リョウ"],"kun":[],"label":"dormitory, hostel, tea pavillion","radical":"大"},"猟":{"c":"猟","jlpt":1,"strokes":11,"on":["リョウ"],"kun":["か.る","かり"],"label":"game-hunting, bag, game","radical":"几"},"瞭":{"c":"瞭","jlpt":1,"strokes":17,"on":["リョウ"],"kun":["あきらか"],"label":"clear","radical":"大"},"稜":{"c":"稜","jlpt":1,"strokes":13,"on":["リョウ","ロウ"],"kun":["いつ","かど"],"label":"angle, corner, edge","radical":"儿"},"糧":{"c":"糧","jlpt":1,"strokes":18,"on":["リョウ","ロウ"],"kun":["かて"],"label":"provisions, bread, food","radical":"一"},"諒":{"c":"諒","jlpt":1,"strokes":15,"on":["リョウ"],"kun":["あきら.か","まことに"],"label":"appreciate, fact, reality","radical":"口"},"遼":{"c":"遼","jlpt":1,"strokes":15,"on":["リョウ"],"kun":[],"label":"distant","radical":"大"},"陵":{"c":"陵","jlpt":1,"strokes":11,"on":["リョウ"],"kun":["みささぎ"],"label":"mausoleum, hill, imperial tomb","radical":"儿"},"倫":{"c":"倫","jlpt":1,"strokes":10,"on":["リン"],"kun":[],"label":"ethics, companion","radical":"一"},"厘":{"c":"厘","jlpt":1,"strokes":9,"on":["リン"],"kun":[],"label":"rin","radical":"厂"},"琳":{"c":"琳","jlpt":1,"strokes":12,"on":["リン"],"kun":[],"label":"jewel, tinkling of jewelry","radical":"木"},"臨":{"c":"臨","jlpt":1,"strokes":18,"on":["リン"],"kun":["のぞ.む"],"label":"look to, attend, call on","radical":"一"},"隣":{"c":"隣","jlpt":1,"strokes":16,"on":["リン"],"kun":["とな.る","となり"],"label":"neighboring","radical":"夕"},"麟":{"c":"麟","jlpt":1,"strokes":24,"on":["リン"],"kun":[],"label":"Chinese unicorn, bright, genius","radical":"夕"},"瑠":{"c":"瑠","jlpt":1,"strokes":14,"on":["リュウ","ル"],"kun":[],"label":"lapis lazuli","radical":"刀"},"塁":{"c":"塁","jlpt":1,"strokes":12,"on":["スイ","ライ","ルイ"],"kun":["とりで"],"label":"bases, base(ball), fort","radical":"冫"},"累":{"c":"累","jlpt":1,"strokes":11,"on":["ルイ"],"kun":[],"label":"accumulate, continually, involvement","radical":"小"},"伶":{"c":"伶","jlpt":1,"strokes":7,"on":["リョウ","レイ"],"kun":["わざおぎ"],"label":"actor","radical":"一"},"励":{"c":"励","jlpt":1,"strokes":7,"on":["レイ"],"kun":["はげ.ます","はげ.む"],"label":"encourage, be diligent, inspire","radical":"力"},"嶺":{"c":"嶺","jlpt":1,"strokes":17,"on":["リョウ","レイ"],"kun":["みね"],"label":"peak, summit","radical":"一"},"怜":{"c":"怜","jlpt":1,"strokes":8,"on":["リョウ","レイ","レン"],"kun":["あわ.れむ","さと.い"],"label":"wise","radical":"一"},"玲":{"c":"玲","jlpt":1,"strokes":9,"on":["レイ"],"kun":[],"label":"sound of jewels","radical":"一"},"鈴":{"c":"鈴","jlpt":1,"strokes":13,"on":["リン","レイ"],"kun":["すず"],"label":"small bell, buzzer","radical":"一"},"隷":{"c":"隷","jlpt":1,"strokes":16,"on":["レイ"],"kun":["したが.う","しもべ"],"label":"slave, criminal, follower","radical":"二"},"霊":{"c":"霊","jlpt":1,"strokes":15,"on":["リョウ","レイ"],"kun":["たま"],"label":"spirits, soul","radical":"一"},"麗":{"c":"麗","jlpt":1,"strokes":19,"on":["レイ"],"kun":["うら.らか","うるわ.しい"],"label":"lovely, beautiful, graceful","radical":"一"},"暦":{"c":"暦","jlpt":1,"strokes":14,"on":["リャク","レキ"],"kun":["こよみ"],"label":"calendar, almanac","radical":"厂"},"劣":{"c":"劣","jlpt":1,"strokes":6,"on":["レツ"],"kun":["おと.る"],"label":"inferiority, be inferior to, be worse","radical":"ノ"},"烈":{"c":"烈","jlpt":1,"strokes":10,"on":["レツ"],"kun":["はげ.しい"],"label":"ardent, extreme, furious","radical":"歹"},"裂":{"c":"裂","jlpt":1,"strokes":12,"on":["レツ"],"kun":["-ぎ.れ","さ.く","さ.ける"],"label":"split, rend, tear","radical":"歹"},"廉":{"c":"廉","jlpt":1,"strokes":13,"on":["レン"],"kun":[],"label":"bargain, account, charge","radical":"｜"},"蓮":{"c":"蓮","jlpt":1,"strokes":13,"on":["レン"],"kun":["はす","はちす"],"label":"lotus","radical":"車"},"錬":{"c":"錬","jlpt":1,"strokes":16,"on":["レン"],"kun":["ね.る"],"label":"tempering, drill, polish","radical":"一"},"呂":{"c":"呂","jlpt":1,"strokes":7,"on":["リョ","ロ"],"kun":["せぼね"],"label":"spine, backbone","radical":"ノ"},"炉":{"c":"炉","jlpt":1,"strokes":8,"on":["ロ"],"kun":["いろり"],"label":"hearth, furnace, kiln","radical":"一"},"露":{"c":"露","jlpt":1,"strokes":21,"on":["ロ","ロウ"],"kun":["つゆ"],"label":"dew, Russia, expose","radical":"口"},"廊":{"c":"廊","jlpt":1,"strokes":12,"on":["ロウ"],"kun":[],"label":"corridor, hall, tower","radical":"广"},"朗":{"c":"朗","jlpt":1,"strokes":10,"on":["ロウ"],"kun":["あき.らか","ほが.らか"],"label":"melodious, bright, cheerful","radical":"月"},"楼":{"c":"楼","jlpt":1,"strokes":13,"on":["ロウ"],"kun":["たかどの"],"label":"watchtower, high building, lookout","radical":"女"},"浪":{"c":"浪","jlpt":1,"strokes":10,"on":["ロウ"],"kun":[],"label":"wandering, billows, reckless","radical":"艮"},"漏":{"c":"漏","jlpt":1,"strokes":14,"on":["ロウ"],"kun":["も.らす","も.る","も.れる"],"label":"leak, escape, time","radical":"尸"},"郎":{"c":"郎","jlpt":1,"strokes":9,"on":["リョウ","ロウ"],"kun":["おとこ"],"label":"son","radical":"艮"},"禄":{"c":"禄","jlpt":1,"strokes":12,"on":["ロク"],"kun":["さいわ.い","ふち"],"label":"allowance, fief, grant","radical":"水"},"倭":{"c":"倭","jlpt":1,"strokes":10,"on":["イ","ワ"],"kun":["したが.う","やまと"],"label":"Yamato, ancient Japan","radical":"女"},"賄":{"c":"賄","jlpt":1,"strokes":13,"on":["ワイ"],"kun":["まかな.う"],"label":"bribe, board, finance","radical":"一"},"惑":{"c":"惑","jlpt":1,"strokes":12,"on":["ワク"],"kun":["まど.う"],"label":"beguile, delusion, perplexity","radical":"口"},"枠":{"c":"枠","jlpt":1,"strokes":8,"on":[],"kun":["わく"],"label":"frame, bounding-box, framework","radical":"十"},"亘":{"c":"亘","jlpt":1,"strokes":6,"on":["カン","コウ","セン"],"kun":["もと.める","わた.る"],"label":"span, extend over, range","radical":"一"},"侑":{"c":"侑","jlpt":1,"strokes":8,"on":["ウ","ユウ"],"kun":["すす.める","たす.ける"],"label":"urge to eat","radical":"一"},"勁":{"c":"勁","jlpt":1,"strokes":9,"on":["ケイ"],"kun":["つよ.い"],"label":"strong","radical":"力"},"奎":{"c":"奎","jlpt":1,"strokes":9,"on":["キ","ケイ"],"kun":[],"label":"god of literature, star","radical":"土"},"崚":{"c":"崚","jlpt":1,"strokes":11,"on":["リョウ"],"kun":[],"label":"mountains towering in a row","radical":"儿"},"彗":{"c":"彗","jlpt":1,"strokes":11,"on":["エ","ケイ","スイ","セイ"],"kun":["ほうき"],"label":"comet","radical":"二"},"昴":{"c":"昴","jlpt":1,"strokes":9,"on":["コウ","ボウ"],"kun":["すばる"],"label":"the Pleiades","radical":"卩"},"晏":{"c":"晏","jlpt":1,"strokes":10,"on":["アン"],"kun":["おそ.い"],"label":"late, quiet, sets (sun)","radical":"女"},"晨":{"c":"晨","jlpt":1,"strokes":11,"on":["シン"],"kun":["あさ","あした","とき"],"label":"early, morning","radical":"日"},"晟":{"c":"晟","jlpt":1,"strokes":10,"on":["ジョウ","セイ"],"kun":["あきらか"],"label":"clear","radical":"ノ"},"暉":{"c":"暉","jlpt":1,"strokes":13,"on":["キ"],"kun":["かが.やく"],"label":"light, shine","radical":"冖"},"栞":{"c":"栞","jlpt":1,"strokes":10,"on":["カン"],"kun":["しおり"],"label":"bookmark, guidebook","radical":"干"},"椰":{"c":"椰","jlpt":1,"strokes":13,"on":["ヤ"],"kun":["やし"],"label":"coconut tree","radical":"木"},"毬":{"c":"毬","jlpt":1,"strokes":11,"on":["キュウ"],"kun":["いが","まり"],"label":"ball, burr","radical":"丶"},"洸":{"c":"洸","jlpt":1,"strokes":9,"on":["コウ"],"kun":[],"label":"sparkling water","radical":"儿"},"洵":{"c":"洵","jlpt":1,"strokes":9,"on":["シュン","ジュン"],"kun":["の.ぶ","まこと.に"],"label":"alike, truth","radical":"勹"},"滉":{"c":"滉","jlpt":1,"strokes":13,"on":["コウ"],"kun":["ひろ.い"],"label":"deep and broad (water)","radical":"儿"},"漱":{"c":"漱","jlpt":1,"strokes":14,"on":["シュウ","ス","ソウ"],"kun":["うがい","くちすす.ぐ","くちそそ.ぐ","すす.ぐ"],"label":"gargle, rinse mouth","radical":"口"},"澪":{"c":"澪","jlpt":1,"strokes":16,"on":["レイ"],"kun":["みお"],"label":"shipping channel, water route","radical":"一"},"燎":{"c":"燎","jlpt":1,"strokes":16,"on":["リョウ"],"kun":["かがりび"],"label":"bonfire, burn","radical":"大"},"燿":{"c":"燿","jlpt":1,"strokes":18,"on":["ヨウ"],"kun":["かがや.く","ひかり"],"label":"shine","radical":"火"},"瑶":{"c":"瑶","jlpt":1,"strokes":13,"on":["ヨウ"],"kun":["たま"],"label":"beautiful as a jewel","radical":"凵"},"皓":{"c":"皓","jlpt":1,"strokes":12,"on":["コウ"],"kun":["しろ.い","ひか.る"],"label":"clear, white","radical":"ノ"},"眸":{"c":"眸","jlpt":1,"strokes":11,"on":["ボウ","ム"],"kun":["ひとみ"],"label":"pupil of the eye","radical":"厶"},"笙":{"c":"笙","jlpt":1,"strokes":11,"on":["ショウ","ソウ"],"kun":["ふえ"],"label":"a reed instrument","radical":"生"},"綺":{"c":"綺","jlpt":1,"strokes":14,"on":["キ"],"kun":["あや"],"label":"beautiful, figured cloth","radical":"一"},"綸":{"c":"綸","jlpt":1,"strokes":14,"on":["カン","リン"],"kun":["いと"],"label":"silk cloth, thread","radical":"一"},"翔":{"c":"翔","jlpt":1,"strokes":12,"on":["ショウ"],"kun":["かけ.る","と.ぶ"],"label":"soar, fly","radical":"冫"},"脩":{"c":"脩","jlpt":1,"strokes":11,"on":["シュウ"],"kun":["おさ.める","なが.い","ほじし"],"label":"dried meat","radical":"｜"},"茉":{"c":"茉","jlpt":1,"strokes":8,"on":["バツ","マ","マツ"],"kun":[],"label":"jasmine","radical":"一"},"莉":{"c":"莉","jlpt":1,"strokes":10,"on":["ライ","リ","レイ"],"kun":[],"label":"jasmine","radical":"禾"},"菫":{"c":"菫","jlpt":1,"strokes":11,"on":["キン"],"kun":["すみれ"],"label":"the violet","radical":"一"},"詢":{"c":"詢","jlpt":1,"strokes":13,"on":["シュン","ジュン"],"kun":["はか.る","まこと"],"label":"consult with","radical":"勹"},"諄":{"c":"諄","jlpt":1,"strokes":15,"on":["シュン"],"kun":["くど.い","くどくど","ねんご.ろ","ひちくど.い"],"label":"tedious","radical":"口"},"赳":{"c":"赳","jlpt":1,"strokes":10,"on":["キュウ"],"kun":[],"label":"strong and brave","radical":"｜"},"迪":{"c":"迪","jlpt":1,"strokes":8,"on":["テキ"],"kun":["いた.る","すす.む","みち","みちび.く"],"label":"way, edify, path","radical":"｜"},"頌":{"c":"頌","jlpt":1,"strokes":13,"on":["ショウ","ジュ","ヨウ"],"kun":["かたち","たた.える","ほめ.る"],"label":"eulogy","radical":"ハ"},"颯":{"c":"颯","jlpt":1,"strokes":14,"on":["サツ","ソウ"],"kun":["さっ.と"],"label":"quick, sound of the wind, sudden","radical":"几"},"黎":{"c":"黎","jlpt":1,"strokes":15,"on":["リ","レイ"],"kun":["くろ.い"],"label":"black, dark, many","radical":"水"},"凜":{"c":"凜","jlpt":1,"strokes":15,"on":["リン"],"kun":["きびし.い"],"label":"cold, severe, strict","radical":"冫"},"熙":{"c":"熙","jlpt":1,"strokes":15,"on":["キ"],"kun":["あきらか","かわ.く","たのし.む","ひか.る","ひろ.い","ひろ.まる","ひろ.める","よろこ.ぶ"],"label":"bright, merry, prosperous","radical":"匚"}} as unknown as Readonly<Record<string, CompactKanjiMeta>>;

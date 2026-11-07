@@ -1,0 +1,6525 @@
+// Auto-generated deterministic JLPT Star Sentence Scramble (星問題) dataset
+// Contains 325 curated & segmented 4-slot items across JLPT N5-N1.
+
+export type StarScrambleLevel = "N5" | "N4" | "N3" | "N2" | "N1";
+
+export interface StarScrambleItem {
+  id: string;
+  level: StarScrambleLevel;
+  jlpt: 5 | 4 | 3 | 2 | 1;
+  prefix: string;
+  segments: [string, string, string, string];
+  suffix: string;
+  fullSentence: string;
+  furigana: string;
+  romaji: string;
+  english: string;
+  grammarId: string;
+  grammarPoint: string;
+  explanation: string;
+}
+
+export const STAR_SCRAMBLE_LEVELS: readonly StarScrambleLevel[] = ["N5", "N4", "N3", "N2", "N1"] as const;
+
+export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
+  {
+    "id": "star-n5-1",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "この",
+      "中で、",
+      "寿司が",
+      "一番"
+    ],
+    "suffix": "好きです。",
+    "fullSentence": "この中で、寿司が一番好きです。",
+    "furigana": "この中で、寿司が一番好きです。",
+    "romaji": "Kono naka de, sushi ga ichiban suki desu.",
+    "english": "Of these, I like sushi the most.",
+    "grammarId": "N5/a-ga-ichiban",
+    "grammarPoint": "A が いちばん～",
+    "explanation": "Express the superlative degree; 'the most', 'the best', 'the least'."
+  },
+  {
+    "id": "star-n5-2",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "苦しいけれど",
+    "segments": [
+      "もう少しで",
+      "仕事が",
+      "済むので",
+      "頑"
+    ],
+    "suffix": "張ろう。",
+    "fullSentence": "苦しいけれどもう少しで仕事が済むので頑張ろう。",
+    "furigana": "苦しいけれどもう少しで仕事が済むので頑張ろう。",
+    "romaji": "Kurushii keredo mou sukoshi de shigoto ga sumu node ganbarou.",
+    "english": "It’s tough, but I’m almost done with my work, so I’ll keep pushing through.",
+    "grammarId": "N5/a-keredomo-b",
+    "grammarPoint": "A。けれども、～B。",
+    "explanation": "Used to express a contrast between two statements. It can be translated as 'but' or 'however'."
+  },
+  {
+    "id": "star-n5-3",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "今日は忙しい。",
+    "segments": [
+      "しかし、",
+      "時間が",
+      "あるなら、",
+      "コーヒーを"
+    ],
+    "suffix": "飲もう。",
+    "fullSentence": "今日は忙しい。しかし、時間があるなら、コーヒーを飲もう。",
+    "furigana": "今日は忙しい。しかし、時間があるなら、コーヒーを飲もう。",
+    "romaji": "Kyou wa isogashii. Shikashi, jikan ga aru nara, koohii o nomou.",
+    "english": "I’m busy today. But if I have time, let’s have some coffee.",
+    "grammarId": "N5/a-shikashi-b",
+    "grammarPoint": "A。しかし、～B。",
+    "explanation": "Expresses contrast or contradiction between two clauses; 'A, but B', 'A, however B'."
+  },
+  {
+    "id": "star-n5-4",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "彼は忙しい。",
+    "segments": [
+      "でも、",
+      "友達と",
+      "遊ぶ",
+      "時間が"
+    ],
+    "suffix": "ある。",
+    "fullSentence": "彼は忙しい。でも、友達と遊ぶ時間がある。",
+    "furigana": "彼は忙しい。でも、友達と遊ぶ時間がある。",
+    "romaji": "Kare wa isogashii. Demo, tomodachi to asobu jikan ga aru.",
+    "english": "He is busy. But he has time to hang out with his friends.",
+    "grammarId": "N5/a-demo-b",
+    "grammarPoint": "A。でも、～B。",
+    "explanation": "Used to express contrast between two statements; 'A, but B', 'A, however B'."
+  },
+  {
+    "id": "star-n5-5",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "赤いワンピースと",
+    "segments": [
+      "青い",
+      "ワンピースと",
+      "どちらが",
+      "似合うと"
+    ],
+    "suffix": "思いますか。",
+    "fullSentence": "赤いワンピースと青いワンピースとどちらが似合うと思いますか。",
+    "furigana": "赤いワンピースと青いワンピースとどちらが似合うと思いますか。",
+    "romaji": "Akai wanpiisu to aoi wanpiisu to dochira ga niau to omoimasu ka?",
+    "english": "Which do you think looks better on me—the red dress or the blue dress?",
+    "grammarId": "N5/a-to-b-to-dochira",
+    "grammarPoint": "Aと Bと どちら～",
+    "explanation": "Used to ask which of two alternatives is preferred or to compare two things"
+  },
+  {
+    "id": "star-n5-6",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "日本語と",
+      "韓国",
+      "語と",
+      "どっちを"
+    ],
+    "suffix": "勉強したい？",
+    "fullSentence": "日本語と韓国語とどっちを勉強したい？",
+    "furigana": "日本語と韓国語とどっちを勉強したい？",
+    "romaji": "Nihongo to kankokugo to docchi o benkyou shitai?",
+    "english": "Which would you rather study, Japanese or Korean?",
+    "grammarId": "N5/a-to-b-to-docchi",
+    "grammarPoint": "AとBと どっち〜",
+    "explanation": "Asking which one; 'which', 'A or B'."
+  },
+  {
+    "id": "star-n5-7",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "この",
+      "ジュースは",
+      "あの",
+      "ジュースより"
+    ],
+    "suffix": "甘いです。",
+    "fullSentence": "このジュースはあのジュースより甘いです。",
+    "furigana": "このジュースはあのジュースより甘いです。",
+    "romaji": "Kono juusu wa ano juusu yori amai desu.",
+    "english": "This juice is sweeter than that juice.",
+    "grammarId": "N5/a-wa-b-yori",
+    "grammarPoint": "A は B より～",
+    "explanation": "Express a comparison between A and B; 'A is more/less than B'."
+  },
+  {
+    "id": "star-n5-8",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "仕事が",
+      "簡単に",
+      "なるように、",
+      "やり方を"
+    ],
+    "suffix": "早くします。",
+    "fullSentence": "仕事が簡単になるように、やり方を早くします。",
+    "furigana": "仕事が簡単になるように、やり方を早くします。",
+    "romaji": "Shigoto ga kantan ni naru you ni, yarikata o hayaku shimasu.",
+    "english": "I’ll speed up the process to make the work easier.",
+    "grammarId": "N5/i-adjective-ku-shimasu",
+    "grammarPoint": "い-Adjective く します",
+    "explanation": "Use an い-adjective to express 'to make' or 'to become'."
+  },
+  {
+    "id": "star-n5-9",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "映画は",
+      "面白くて",
+      "感動",
+      "的で"
+    ],
+    "suffix": "した。",
+    "fullSentence": "映画は面白くて感動的でした。",
+    "furigana": "映画は面白くて感動的でした。",
+    "romaji": "Eiga wa omoshirokute kandouteki deshita.",
+    "english": "The movie was interesting and moving.",
+    "grammarId": "N5/i-adjective-te",
+    "grammarPoint": "い-Adjective て",
+    "explanation": "Used to connect two or more い-adjectives to describe something."
+  },
+  {
+    "id": "star-n5-10",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "彼は",
+      "綺麗で",
+      "優しい",
+      "女性が"
+    ],
+    "suffix": "好きです。",
+    "fullSentence": "彼は綺麗で優しい女性が好きです。",
+    "furigana": "彼は綺麗で優しい女性が好きです。",
+    "romaji": "Kare wa kirei de yasashii josei ga suki desu.",
+    "english": "He likes beautiful, kind women.",
+    "grammarId": "N5/na-adjective-de",
+    "grammarPoint": "な-Adjective で～",
+    "explanation": "Usage of で to connect or add information with a な-adjective."
+  },
+  {
+    "id": "star-n5-11",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "戦争の",
+      "終わりが",
+      "平和を",
+      "もたらすことを"
+    ],
+    "suffix": "期待します。",
+    "fullSentence": "戦争の終わりが平和をもたらすことを期待します。",
+    "furigana": "戦争の終わりが平和をもたらすことを期待します。",
+    "romaji": "Sensou no owari ga heiwa o motarasu koto o kitai shimasu.",
+    "english": "I hope that the end of the war will bring peace.",
+    "grammarId": "N5/na-adjective-ni-shimasu",
+    "grammarPoint": "な-Adjective に します",
+    "explanation": "Expressing a decision or preference with a な-adjective."
+  },
+  {
+    "id": "star-n5-12",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "この",
+    "segments": [
+      "料理には、",
+      "スパイスを",
+      "加えると",
+      "もっと"
+    ],
+    "suffix": "美味しくなります。",
+    "fullSentence": "この料理には、スパイスを加えるともっと美味しくなります。",
+    "furigana": "この料理には、スパイスを加えるともっと美味しくなります。",
+    "romaji": "Kono ryouri ni wa, supaisu o kuwaeru to motto oishiku narimasu",
+    "english": "This dish tastes even better when you add spices.",
+    "grammarId": "N5/na-adjective-ni-narimasu",
+    "grammarPoint": "な-Adjective に なります",
+    "explanation": "Express a change or transformation into a state described by the な-adjective."
+  },
+  {
+    "id": "star-n5-13",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "今日、",
+      "映画を",
+      "見るか、",
+      "散歩するか"
+    ],
+    "suffix": "どちらにしますか？",
+    "fullSentence": "今日、映画を見るか、散歩するかどちらにしますか？",
+    "furigana": "今日、映画を見るか、散歩するかどちらにしますか？",
+    "romaji": "Kyou, eiga wo miru ka, sanpo suru ka dochira ni shimasu ka?",
+    "english": "Shall we watch a movie or go for a walk today?",
+    "grammarId": "N5/noun-ka-noun-ka",
+    "grammarPoint": "Noun か Noun か～",
+    "explanation": "Expresses choice or alternatives; 'either', 'or'."
+  },
+  {
+    "id": "star-n5-14",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "近所の",
+    "segments": [
+      "銀行は",
+      "私たちの",
+      "貴重品を",
+      "預かることが"
+    ],
+    "suffix": "できます。",
+    "fullSentence": "近所の銀行は私たちの貴重品を預かることができます。",
+    "furigana": "近所の銀行は私たちの貴重品を預かることができます。",
+    "romaji": "Kinjo no ginkou wa watashitachi no kichouhin o azukaru koto ga dekimasu",
+    "english": "The local bank can hold our valuables for us.",
+    "grammarId": "N5/noun-ga-dekimasu",
+    "grammarPoint": "Noun が できます",
+    "explanation": "Express the ability to do something."
+  },
+  {
+    "id": "star-n5-15",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "朝9",
+    "segments": [
+      "時から",
+      "午後",
+      "5",
+      "時まで"
+    ],
+    "suffix": "働きます。",
+    "fullSentence": "朝9時から午後5時まで働きます。",
+    "furigana": "朝9時から午後5時まで働きます。",
+    "romaji": "Asa ku-ji kara gogo go-ji made hatarakimasu.",
+    "english": "I work from 9:00 a.m. to 5:00 p.m.",
+    "grammarId": "N5/noun-kara-noun-made",
+    "grammarPoint": "Noun から Noun まで",
+    "explanation": "Expresses a range; 'from...to', 'between...and'."
+  },
+  {
+    "id": "star-n5-16",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "この",
+      "本は",
+      "三百",
+      "ページくらい"
+    ],
+    "suffix": "あります。",
+    "fullSentence": "この本は三百ページくらいあります。",
+    "furigana": "この本は三百ページくらいあります。",
+    "romaji": "Kono hon wa sanbyaku peeji kurai arimasu.",
+    "english": "This book is about 300 pages long.",
+    "grammarId": "N5/noun-kurai",
+    "grammarPoint": "Noun くらい～",
+    "explanation": "Express the extent or degree of something; 'about', 'approximately', 'at least'."
+  },
+  {
+    "id": "star-n5-17",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "一日中",
+      "勉強したので、",
+      "１０",
+      "時間ぐらい"
+    ],
+    "suffix": "勉強しました。",
+    "fullSentence": "一日中勉強したので、１０時間ぐらい勉強しました。",
+    "furigana": "一日中勉強したので、１０時間ぐらい勉強しました。",
+    "romaji": "Ichinichijuu benkyou shita node, juu-jikan gurai benkyou shimashita.",
+    "english": "I studied all day, so I studied for about 10 hours.",
+    "grammarId": "N5/noun-gurai",
+    "grammarPoint": "Noun ぐらい～",
+    "explanation": "Express an approximate amount or degree; 'about', 'approximately'."
+  },
+  {
+    "id": "star-n5-18",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "彼は",
+      "10",
+      "歳ごろに",
+      "日本に"
+    ],
+    "suffix": "来ました。",
+    "fullSentence": "彼は10歳ごろに日本に来ました。",
+    "furigana": "彼は10歳ごろに日本に来ました。",
+    "romaji": "Kare wa juu-sai goro ni Nihon ni kimashita.",
+    "english": "He came to Japan when he was about 10 years old.",
+    "grammarId": "N5/noun-goro",
+    "grammarPoint": "Noun ごろ～",
+    "explanation": "Expresses 'around' or 'about' a certain time or age."
+  },
+  {
+    "id": "star-n5-19",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "この",
+      "本は",
+      "二十",
+      "ページだけ"
+    ],
+    "suffix": "読んだ。",
+    "fullSentence": "この本は二十ページだけ読んだ。",
+    "furigana": "この本は二十ページだけ読んだ。",
+    "romaji": "Kono hon wa nijuu peeji dake yonda.",
+    "english": "I’ve only read twenty pages of this book.",
+    "grammarId": "N5/dake",
+    "grammarPoint": "Noun だけ〜",
+    "explanation": "Indicates 'only', 'just', or 'merely'."
+  },
+  {
+    "id": "star-n5-20",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "友達と",
+      "旅行に",
+      "行ったあと、",
+      "東京に"
+    ],
+    "suffix": "帰ります。",
+    "fullSentence": "友達と旅行に行ったあと、東京に帰ります。",
+    "furigana": "友達と旅行に行ったあと、東京に帰ります。",
+    "romaji": "Tomodachi to ryokou ni itta ato, Toukyou ni kaerimasu.",
+    "english": "After going on a trip with my friends, I’ll return to Tokyo.",
+    "grammarId": "N5/noun-ni-kaerimasu",
+    "grammarPoint": "Noun に 帰ります",
+    "explanation": "Express going back or returning to a place: 'to return to', 'to go back to'."
+  },
+  {
+    "id": "star-n5-21",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "この靴を買うか",
+    "segments": [
+      "迷って",
+      "いますが、",
+      "赤い",
+      "色の"
+    ],
+    "suffix": "方にします。",
+    "fullSentence": "この靴を買うか迷っていますが、赤い色の方にします。",
+    "furigana": "この靴を買うか迷っていますが、赤い色の方にします。",
+    "romaji": "Kono kutsu wo kau ka mayotteimasu ga, akai iro no hou ni shimasu.",
+    "english": "I’m not sure whether to buy these shoes, but I’ll go with the red ones.",
+    "grammarId": "N5/noun-ni-shimasu",
+    "grammarPoint": "Noun に します",
+    "explanation": "Express a choice or decision; 'choose', 'decide on'."
+  },
+  {
+    "id": "star-n5-22",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "この",
+      "茶色の",
+      "葉が",
+      "赤に"
+    ],
+    "suffix": "なります。",
+    "fullSentence": "この茶色の葉が赤になります。",
+    "furigana": "この茶色の葉が赤になります。",
+    "romaji": "Kono chairo no ha ga aka ni narimasu.",
+    "english": "This brown leaf will turn red.",
+    "grammarId": "N5/noun-ni-narimasu",
+    "grammarPoint": "Noun に なります",
+    "explanation": "Expresses change or becoming something; 'to become', 'to turn into', 'to be'."
+  },
+  {
+    "id": "star-n5-23",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "今晩、",
+      "父が",
+      "駅に",
+      "迎えに"
+    ],
+    "suffix": "来ます。",
+    "fullSentence": "今晩、父が駅に迎えに来ます。",
+    "furigana": "今晩、父が駅に迎えに来ます。",
+    "romaji": "Konban, chichi ga eki ni mukae ni kimasu.",
+    "english": "My father is coming to pick me up at the station tonight.",
+    "grammarId": "N5/noun-ni-kimasu",
+    "grammarPoint": "Noun に 来ます",
+    "explanation": "Used to express coming to a place."
+  },
+  {
+    "id": "star-n5-24",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "夏になると、",
+    "segments": [
+      "浴衣を",
+      "着て",
+      "祭りを",
+      "見物しに"
+    ],
+    "suffix": "行きます。",
+    "fullSentence": "夏になると、浴衣を着て祭りを見物しに行きます。",
+    "furigana": "夏になると、浴衣を着て祭りを見物しに行きます。",
+    "romaji": "Natsu ni naru to, yukata o kite matsuri o kenbutsu shi ni ikimasu",
+    "english": "When summer comes, I wear a yukata and go to see the festival.",
+    "grammarId": "N5/noun-ni-ikimasu",
+    "grammarPoint": "Noun に 行きます",
+    "explanation": "Used to express going to a location."
+  },
+  {
+    "id": "star-n5-25",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "朝",
+      "ご飯の",
+      "あとで、",
+      "歯を"
+    ],
+    "suffix": "磨きます。",
+    "fullSentence": "朝ご飯のあとで、歯を磨きます。",
+    "furigana": "朝ご飯のあとで、歯を磨きます。",
+    "romaji": "Asagohan no atode, ha wo migakimasu.",
+    "english": "I brush my teeth after breakfast.",
+    "grammarId": "N5/noun-no-atode",
+    "grammarPoint": "Noun の あとで",
+    "explanation": "Expresses the order of events; 'after', 'later than'."
+  },
+  {
+    "id": "star-n5-26",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "私の",
+      "前に",
+      "彼が",
+      "立って"
+    ],
+    "suffix": "いました。",
+    "fullSentence": "私の前に彼が立っていました。",
+    "furigana": "私の前に彼が立っていました。",
+    "romaji": "Watashi no mae ni kare ga tatte imashita.",
+    "english": "He was standing in front of me.",
+    "grammarId": "N5/noun-no-mae-ni",
+    "grammarPoint": "Noun の 前に",
+    "explanation": "Used to describe a location or position 'in front of' a noun."
+  },
+  {
+    "id": "star-n5-27",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "東京も",
+      "大阪も",
+      "観光",
+      "スポットが"
+    ],
+    "suffix": "たくさんあります。",
+    "fullSentence": "東京も大阪も観光スポットがたくさんあります。",
+    "furigana": "東京も大阪も観光スポットがたくさんあります。",
+    "romaji": "Toukyou mo Oosaka mo kankou supotto ga takusan arimasu.",
+    "english": "Both Tokyo and Osaka have many tourist attractions.",
+    "grammarId": "N5/noun-mo",
+    "grammarPoint": "Noun も〜",
+    "explanation": "Indicates that the action or state is the same for multiple items or people; 'also', 'as well'."
+  },
+  {
+    "id": "star-n5-28",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "彼は",
+      "野菜や",
+      "果物などを",
+      "食べるのが"
+    ],
+    "suffix": "好きです。",
+    "fullSentence": "彼は野菜や果物などを食べるのが好きです。",
+    "furigana": "彼は野菜や果物などを食べるのが好きです。",
+    "romaji": "Kare wa yasai ya kudamono nado o taberu no ga suki desu.",
+    "english": "He likes to eat vegetables, fruits, and other foods.",
+    "grammarId": "N5/noun-ya-noun-nado",
+    "grammarPoint": "Noun や Noun など～",
+    "explanation": "Lists items or examples but not exhaustively; 'such as', 'like', 'and so on'."
+  },
+  {
+    "id": "star-n5-29",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "仕事が",
+      "終わったあとで、",
+      "ジムに",
+      "行く"
+    ],
+    "suffix": "予定です。",
+    "fullSentence": "仕事が終わったあとで、ジムに行く予定です。",
+    "furigana": "仕事が終わったあとで、ジムに行く予定です。",
+    "romaji": "Shigoto ga owatta ato de, jimu ni iku yotei desu.",
+    "english": "I plan to go to the gym after work.",
+    "grammarId": "N5/ta-ato-de",
+    "grammarPoint": "Verb た あとで",
+    "explanation": "Indicates an action that takes place after another action."
+  },
+  {
+    "id": "star-n5-30",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "幸せ",
+      "な",
+      "結婚",
+      "生活を"
+    ],
+    "suffix": "送りたいです。",
+    "fullSentence": "幸せな結婚生活を送りたいです。",
+    "furigana": "幸せな結婚生活を送りたいです。",
+    "romaji": "Shiawase na kekkon seikatsu o okuritai desu.",
+    "english": "I want to have a happy married life.",
+    "grammarId": "N5/taidesu",
+    "grammarPoint": "Verb たいです",
+    "explanation": "Express desire or want to do something; 'I want to', 'I would like to'."
+  },
+  {
+    "id": "star-n5-31",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "友達を",
+    "segments": [
+      "待って、",
+      "一緒に",
+      "映画を",
+      "見に"
+    ],
+    "suffix": "行きます。",
+    "fullSentence": "友達を待って、一緒に映画を見に行きます。",
+    "furigana": "友達を待って、一緒に映画を見に行きます。",
+    "romaji": "Tomodachi o matte, issho ni eiga o mini ikimasu.",
+    "english": "I’m waiting for my friend so we can go see a movie together.",
+    "grammarId": "N5/verb-te",
+    "grammarPoint": "Verb て～",
+    "explanation": "A verb conjugation that connects actions or states."
+  },
+  {
+    "id": "star-n5-32",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "お",
+    "segments": [
+      "酒は",
+      "濃いほど、",
+      "味が",
+      "いいと"
+    ],
+    "suffix": "思います。",
+    "fullSentence": "お酒は濃いほど、味がいいと思います。",
+    "furigana": "お酒は濃いほど、味がいいと思います。",
+    "romaji": "Osake wa koi hodo, aji ga ii to omoimasu.",
+    "english": "I think the stronger the sake, the better it tastes.",
+    "grammarId": "N5/verb-te-imasu",
+    "grammarPoint": "Verb て います",
+    "explanation": "Express ongoing action or state; 'is doing', 'is doing (continuous)', 'has been doing'."
+  },
+  {
+    "id": "star-n5-33",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "仕事が",
+      "終わってから、",
+      "友達と",
+      "飲みに"
+    ],
+    "suffix": "行きます。",
+    "fullSentence": "仕事が終わってから、友達と飲みに行きます。",
+    "furigana": "仕事が終わってから、友達と飲みに行きます。",
+    "romaji": "Shigoto ga owatte kara, tomodachi to nomi ni ikimasu.",
+    "english": "After work, I’m going out for drinks with my friends.",
+    "grammarId": "N5/te-kara",
+    "grammarPoint": "Verb てから～",
+    "explanation": "Express a sequence of actions or events; 'after', 'since', 'once'."
+  },
+  {
+    "id": "star-n5-34",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "この",
+      "四角い",
+      "箱に",
+      "プレゼントを"
+    ],
+    "suffix": "入れてください。",
+    "fullSentence": "この四角い箱にプレゼントを入れてください。",
+    "furigana": "この四角い箱にプレゼントを入れてください。",
+    "romaji": "Kono shikakui hako ni purezento o irete kudasai.",
+    "english": "Please put the gift in this square box.",
+    "grammarId": "N5/verb-te-kudasai",
+    "grammarPoint": "Verb て ください",
+    "explanation": "A request or command; 'please do'."
+  },
+  {
+    "id": "star-n5-35",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "この",
+      "四角い",
+      "箱に",
+      "プレゼントを"
+    ],
+    "suffix": "入れてください。",
+    "fullSentence": "この四角い箱にプレゼントを入れてください。",
+    "furigana": "この四角い箱にプレゼントを入れてください。",
+    "romaji": "Kono shikakui hako ni purezento o irete kudasai.",
+    "english": "Please put the gift in this square box.",
+    "grammarId": "N5/naide-kudasai",
+    "grammarPoint": "Verb ないで ください",
+    "explanation": "Used to make a polite request for someone not to do something; 'please don't'."
+  },
+  {
+    "id": "star-n5-36",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "冷蔵庫に",
+    "segments": [
+      "入れると、",
+      "溶けた",
+      "アイスクリームは",
+      "固体に"
+    ],
+    "suffix": "戻ります。",
+    "fullSentence": "冷蔵庫に入れると、溶けたアイスクリームは固体に戻ります。",
+    "furigana": "冷蔵庫に入れると、溶けたアイスクリームは固体に戻ります。",
+    "romaji": "Reizouko ni ireru to, toketa aisukuriimu wa kotai ni modorimasu.",
+    "english": "When placed in the refrigerator, melted ice cream turns back into a solid.",
+    "grammarId": "N5/noun-ni-modorimasu",
+    "grammarPoint": "Noun に 戻ります",
+    "explanation": "Expresses the action of returning to a previous state, place, or condition."
+  },
+  {
+    "id": "star-n5-37",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "夏になると、",
+    "segments": [
+      "浴衣を",
+      "着て",
+      "祭りを",
+      "見物しに"
+    ],
+    "suffix": "行きます。",
+    "fullSentence": "夏になると、浴衣を着て祭りを見物しに行きます。",
+    "furigana": "夏になると、浴衣を着て祭りを見物しに行きます。",
+    "romaji": "Natsu ni naru to, yukata o kite matsuri o kenbutsu shi ni ikimasu",
+    "english": "When summer comes, I wear a yukata and go to see the festival.",
+    "grammarId": "N5/verb-ni-ikimasu",
+    "grammarPoint": "Verb に 行きます",
+    "explanation": "To go (somewhere) in order to do an action."
+  },
+  {
+    "id": "star-n5-38",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "確実に",
+      "目標を",
+      "達成するために",
+      "計画を"
+    ],
+    "suffix": "立てましょう。",
+    "fullSentence": "確実に目標を達成するために計画を立てましょう。",
+    "furigana": "確実に目標を達成するために計画を立てましょう。",
+    "romaji": "Kakujitsu ni mokuhyou o tassei suru tame ni keikaku o tatemashou.",
+    "english": "Let’s make a plan to ensure we achieve our goals.",
+    "grammarId": "N5/mashou",
+    "grammarPoint": "Verb ましょう",
+    "explanation": "Making a suggestion or invitation; 'let's' or 'shall we'."
+  },
+  {
+    "id": "star-n5-39",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "夕食が",
+      "済んだ",
+      "後で、",
+      "散歩に"
+    ],
+    "suffix": "行きませんか？",
+    "fullSentence": "夕食が済んだ後で、散歩に行きませんか？",
+    "furigana": "夕食が済んだ後で、散歩に行きませんか？",
+    "romaji": "Yuushoku ga sunda ato de, sanpo ni ikimasen ka?",
+    "english": "Why don’t we go for a walk after dinner?",
+    "grammarId": "N5/verb-masenka",
+    "grammarPoint": "Verb ませんか。",
+    "explanation": "An invitation or suggestion; 'won't you', 'why don't you', 'shall we'."
+  },
+  {
+    "id": "star-n5-40",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "彼の態度がおかしいと",
+    "segments": [
+      "思って",
+      "いたら、",
+      "隠し事を",
+      "していることが"
+    ],
+    "suffix": "わかった。",
+    "fullSentence": "彼の態度がおかしいと思っていたら、隠し事をしていることがわかった。",
+    "furigana": "彼の態度がおかしいと思っていたら、隠し事をしていることがわかった。",
+    "romaji": "Kare no taido ga okashii to omotte itara, kakushigoto o shite iru koto ga wakatta.",
+    "english": "I had been thinking his behavior was strange, but then I realized he was hiding something.",
+    "grammarId": "N5/ru-koto",
+    "grammarPoint": "Verb ること～",
+    "explanation": "Express an action or event as a noun; 'the act of', 'doing'."
+  },
+  {
+    "id": "star-n5-41",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "私は",
+      "高い",
+      "所に",
+      "登ることが"
+    ],
+    "suffix": "できません。",
+    "fullSentence": "私は高い所に登ることができません。",
+    "furigana": "私は高い所に登ることができません。",
+    "romaji": "Watashi wa takai tokoro ni noboru koto ga dekimasen.",
+    "english": "I can’t climb to high places.",
+    "grammarId": "N5/ru-koto-ga-dekimasu",
+    "grammarPoint": "Verb る こと が できます",
+    "explanation": "Express the potential form, or the ability to do something."
+  },
+  {
+    "id": "star-n5-42",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "日本に",
+      "行くことが",
+      "できて、",
+      "とても"
+    ],
+    "suffix": "嬉しいです。",
+    "fullSentence": "日本に行くことができて、とても嬉しいです。",
+    "furigana": "日本に行くことができて、とても嬉しいです。",
+    "romaji": "Nihon ni iku koto ga dekite, totemo ureshii desu.",
+    "english": "I’m very happy to be able to go to Japan.",
+    "grammarId": "N5/ru-koto-ga-dekiru",
+    "grammarPoint": "Verb る こと ができる",
+    "explanation": "Expresses the potential form; 'can', 'be able to', 'is possible'."
+  },
+  {
+    "id": "star-n5-43",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "買い物を",
+      "するために、",
+      "銀行で",
+      "お金を"
+    ],
+    "suffix": "おろすの。",
+    "fullSentence": "買い物をするために、銀行でお金をおろすの。",
+    "furigana": "買い物をするために、銀行でお金をおろすの。",
+    "romaji": "Kaimono o suru tame ni, ginkou de okane o orosu no.",
+    "english": "I’m going to the bank to withdraw money so I can go shopping.",
+    "grammarId": "N5/verb-ru-no",
+    "grammarPoint": "Verb る の～",
+    "explanation": "Used to express the purpose or reason in casual speech, or nominalize the verb with の."
+  },
+  {
+    "id": "star-n5-44",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "雨が",
+    "segments": [
+      "降る",
+      "前に、",
+      "洗濯",
+      "物を"
+    ],
+    "suffix": "取り込むこと。",
+    "fullSentence": "雨が降る前に、洗濯物を取り込むこと。",
+    "furigana": "雨が降る前に、洗濯物を取り込むこと。",
+    "romaji": "Ame ga furu mae ni, sentakumono o torikomu koto.",
+    "english": "Be sure to bring the laundry inside before it starts raining.",
+    "grammarId": "N5/ru-mae-ni",
+    "grammarPoint": "Verb る 前に",
+    "explanation": "Used to express 'before' in a sense of an action must be done before another action or event."
+  },
+  {
+    "id": "star-n5-45",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "お金が",
+    "segments": [
+      "あるから",
+      "といって、",
+      "必ずしも",
+      "幸せでは"
+    ],
+    "suffix": "ありません。",
+    "fullSentence": "お金があるからといって、必ずしも幸せではありません。",
+    "furigana": "お金があるからといって、必ずしも幸せではありません。",
+    "romaji": "Okane ga aru kara to itte, kanarazu shimo shiawase de wa arimasen.",
+    "english": "Just because you have money doesn’t necessarily mean you’re happy.",
+    "grammarId": "N5/amari-arimasen",
+    "grammarPoint": "あまり～ありません",
+    "explanation": "Express 'not very', 'not much', or 'not really' when describing a negative state or situation."
+  },
+  {
+    "id": "star-n5-46",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "塩辛い",
+    "segments": [
+      "スープは、",
+      "水分",
+      "補給には",
+      "あまり"
+    ],
+    "suffix": "適していない。",
+    "fullSentence": "塩辛いスープは、水分補給にはあまり適していない。",
+    "furigana": "塩辛いスープは、水分補給にはあまり適していない。",
+    "romaji": "Shiokarai suupu wa, suibun hokyuu ni wa amari tekishite inai.",
+    "english": "Salty soup isn’t very suitable for staying hydrated.",
+    "grammarId": "N5/amari-nai-desu",
+    "grammarPoint": "あまり～ないです",
+    "explanation": "Express 'not really' or 'not very'; used to soften a negative statement."
+  },
+  {
+    "id": "star-n5-47",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "この",
+      "公園に",
+      "たくさんの",
+      "花が"
+    ],
+    "suffix": "あります。",
+    "fullSentence": "この公園にたくさんの花があります。",
+    "furigana": "この公園にたくさんの花があります。",
+    "romaji": "Kono kouen ni takusan no hana ga arimasu.",
+    "english": "There are many flowers in this park.",
+    "grammarId": "N5/arimasu",
+    "grammarPoint": "～あります",
+    "explanation": "Indicate possession or existence of inanimate objects; 'there is', 'there are'."
+  },
+  {
+    "id": "star-n5-48",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "価格を",
+      "比べるために、",
+      "いくつかの",
+      "ショップを"
+    ],
+    "suffix": "チェックしました。",
+    "fullSentence": "価格を比べるために、いくつかのショップをチェックしました。",
+    "furigana": "価格を比べるために、いくつかのショップをチェックしました。",
+    "romaji": "Kakaku o kuraberu tame ni, ikutsu ka no shoppu o chekku shimashita.",
+    "english": "I checked out a few stores to compare prices.",
+    "grammarId": "N5/ikutsu",
+    "grammarPoint": "いくつ～",
+    "explanation": "Used to express 'how many' or ask for the number of something."
+  },
+  {
+    "id": "star-n5-49",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "彼は",
+    "segments": [
+      "いつか",
+      "有名な",
+      "作家に",
+      "なるで"
+    ],
+    "suffix": "しょう。",
+    "fullSentence": "彼はいつか有名な作家になるでしょう。",
+    "furigana": "彼はいつか有名な作家になるでしょう。",
+    "romaji": "Kare wa itsuka yuumei na sakka ni naru deshou.",
+    "english": "He will become a famous writer someday.",
+    "grammarId": "N5/itsuka",
+    "grammarPoint": "いつか～",
+    "explanation": "Indicates an unspecified point in time; 'someday', 'one day', 'at some point'."
+  },
+  {
+    "id": "star-n5-50",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "この",
+      "店は",
+      "いつ",
+      "でも"
+    ],
+    "suffix": "混んでいます。",
+    "fullSentence": "この店はいつでも混んでいます。",
+    "furigana": "この店はいつでも混んでいます。",
+    "romaji": "Kono mise wa itsudemo konde imasu.",
+    "english": "This restaurant is always crowded.",
+    "grammarId": "N5/itsudemo",
+    "grammarPoint": "いつでも～",
+    "explanation": "Expresses 'anytime', 'always', or 'whenever'."
+  },
+  {
+    "id": "star-n5-51",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "私は",
+      "いつも",
+      "優しい",
+      "犬が"
+    ],
+    "suffix": "好きです。",
+    "fullSentence": "私はいつも優しい犬が好きです。",
+    "furigana": "私はいつも優しい犬が好きです。",
+    "romaji": "Watashi wa itsumo yasashii inu ga suki desu.",
+    "english": "I’ve always liked gentle dogs.",
+    "grammarId": "N5/itsumo",
+    "grammarPoint": "いつも～",
+    "explanation": "Expressing 'always' or 'usually' in a sentence."
+  },
+  {
+    "id": "star-n5-52",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "お",
+    "segments": [
+      "酒は",
+      "濃いほど、",
+      "味が",
+      "いいと"
+    ],
+    "suffix": "思います。",
+    "fullSentence": "お酒は濃いほど、味がいいと思います。",
+    "furigana": "お酒は濃いほど、味がいいと思います。",
+    "romaji": "Osake wa koi hodo, aji ga ii to omoimasu.",
+    "english": "I think the stronger the sake, the better it tastes.",
+    "grammarId": "N5/te-imasu",
+    "grammarPoint": "～て います",
+    "explanation": "Expresses the present continuous or ongoing action; 'to be doing', 'currently doing'."
+  },
+  {
+    "id": "star-n5-53",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "彼は",
+      "頭が",
+      "いいが、",
+      "性格が"
+    ],
+    "suffix": "悪い。",
+    "fullSentence": "彼は頭がいいが、性格が悪い。",
+    "furigana": "彼は頭がいいが、性格が悪い。",
+    "romaji": "Kare wa atama ga ii ga, seikaku ga warui.",
+    "english": "He is smart, but he has a bad personality.",
+    "grammarId": "N5/ga",
+    "grammarPoint": "～が",
+    "explanation": "Particle indicating the subject of a sentence or expressing 'but'."
+  },
+  {
+    "id": "star-n5-54",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "彼は",
+      "頭が",
+      "いいが、",
+      "少し"
+    ],
+    "suffix": "怠け者だ。",
+    "fullSentence": "彼は頭がいいが、少し怠け者だ。",
+    "furigana": "彼は頭がいいが、少し怠け者だ。",
+    "romaji": "Kare wa atama ga ii ga, sukoshi namakemono da.",
+    "english": "He is smart, but a bit lazy.",
+    "grammarId": "N5/ga-2",
+    "grammarPoint": "～が、～",
+    "explanation": "Express a contrast between two sentences; 'but', 'however'."
+  },
+  {
+    "id": "star-n5-55",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "明日は",
+      "試験が",
+      "あるから、",
+      "今晩"
+    ],
+    "suffix": "勉強しなければなりません。",
+    "fullSentence": "明日は試験があるから、今晩勉強しなければなりません。",
+    "furigana": "明日は試験があるから、今晩勉強しなければなりません。",
+    "romaji": "Ashita wa shiken ga aru kara, konban benkyou shinakereba narimasen.",
+    "english": "I have an exam tomorrow, so I have to study tonight.",
+    "grammarId": "N5/kara",
+    "grammarPoint": "～から、～",
+    "explanation": "Expresses reason or cause; 'because', 'since', 'so'."
+  },
+  {
+    "id": "star-n5-56",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "友達が",
+    "segments": [
+      "宿題を",
+      "手",
+      "伝って",
+      "私に"
+    ],
+    "suffix": "くれました。",
+    "fullSentence": "友達が宿題を手伝って私にくれました。",
+    "furigana": "友達が宿題を手伝って私にくれました。",
+    "romaji": "Tomodachi ga shukudai wo tetsudatte watashi ni kuremashita.",
+    "english": "My friend helped me with my homework and gave it to me.",
+    "grammarId": "N5/ga-watashi-ni-kuremasu",
+    "grammarPoint": "～が 私に くれます",
+    "explanation": "Used to express that someone gives a gift or favor to 'me'; 'someone gives me'."
+  },
+  {
+    "id": "star-n5-57",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "授業に",
+    "segments": [
+      "出た",
+      "けど、",
+      "まだ",
+      "宿題を"
+    ],
+    "suffix": "しないといけない。",
+    "fullSentence": "授業に出たけど、まだ宿題をしないといけない。",
+    "furigana": "授業に出たけど、まだ宿題をしないといけない。",
+    "romaji": "Jugyou ni deta kedo, mada shukudai wo shinai to ikenai.",
+    "english": "I went to class, but I still have to do my homework.",
+    "grammarId": "N5/kedo",
+    "grammarPoint": "～けど、～",
+    "explanation": "Used to connect two clauses; 'but', 'however', 'although'"
+  },
+  {
+    "id": "star-n5-58",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "今日は",
+      "寒い",
+      "けれど、",
+      "散歩に"
+    ],
+    "suffix": "行きます。",
+    "fullSentence": "今日は寒いけれど、散歩に行きます。",
+    "furigana": "今日は寒いけれど、散歩に行きます。",
+    "romaji": "Kyou wa samui keredo, sanpo ni ikimasu.",
+    "english": "It’s cold today, but I’m going for a walk.",
+    "grammarId": "N5/keredo",
+    "grammarPoint": "～けれど、～",
+    "explanation": "Expresses a contrast or contradiction; 'but', 'however', 'even though'."
+  },
+  {
+    "id": "star-n5-59",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "こちらの",
+      "お",
+      "料理は",
+      "いかがな"
+    ],
+    "suffix": "さいますか。",
+    "fullSentence": "こちらのお料理はいかがなさいますか。",
+    "furigana": "こちらのお料理はいかがなさいますか。",
+    "romaji": "Kochira no o-ryouri wa ikaga nasaimasuka.",
+    "english": "How about this dish?",
+    "grammarId": "N5/kochira",
+    "grammarPoint": "こちら～",
+    "explanation": "Refers to a person, place or thing; 'this', 'this one', 'this way', 'here'."
+  },
+  {
+    "id": "star-n5-60",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "友達が",
+      "来たら、",
+      "すぐに",
+      "電話を"
+    ],
+    "suffix": "かけてください。",
+    "fullSentence": "友達が来たら、すぐに電話をかけてください。",
+    "furigana": "友達が来たら、すぐに電話をかけてください。",
+    "romaji": "Tomodachi ga kitara, sugu ni denwa wo kakete kudasai.",
+    "english": "If a friend comes over, please call me right away.",
+    "grammarId": "N5/sugu-ni",
+    "grammarPoint": "すぐに～",
+    "explanation": "Immediately or right away; used to express promptness or quickness."
+  },
+  {
+    "id": "star-n5-61",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "コーヒーを",
+      "飲んで、",
+      "そして",
+      "新聞を"
+    ],
+    "suffix": "読みました。",
+    "fullSentence": "コーヒーを飲んで、そして新聞を読みました。",
+    "furigana": "コーヒーを飲んで、そして新聞を読みました。",
+    "romaji": "Koohii wo nonde, soshite shinbun wo yomimashita.",
+    "english": "I drank some coffee and then read the newspaper.",
+    "grammarId": "N5/soshite",
+    "grammarPoint": "そして、～",
+    "explanation": "Used to connect two sentences; 'and then', 'and'."
+  },
+  {
+    "id": "star-n5-62",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "そちらの",
+    "segments": [
+      "方、",
+      "お",
+      "名前を",
+      "教えていただけ"
+    ],
+    "suffix": "ますか？",
+    "fullSentence": "そちらの方、お名前を教えていただけますか？",
+    "furigana": "そちらの方、お名前を教えていただけますか？",
+    "romaji": "Sochira no kata, onamae o oshiete itadakemasu ka?",
+    "english": "Could you tell me your name, please?",
+    "grammarId": "N5/sochira",
+    "grammarPoint": "そちら～",
+    "explanation": "Indicates a direction or person in moderate distance; 'that way', 'that person'."
+  },
+  {
+    "id": "star-n5-63",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "コーヒーを",
+      "飲んで、",
+      "それから",
+      "家を"
+    ],
+    "suffix": "出ました。",
+    "fullSentence": "コーヒーを飲んで、それから家を出ました。",
+    "furigana": "コーヒーを飲んで、それから家を出ました。",
+    "romaji": "Koohii o nonde, sorekara ie o demashita.",
+    "english": "I drank some coffee, and then I left the house.",
+    "grammarId": "N5/sorekara",
+    "grammarPoint": "それから、～",
+    "explanation": "Meaning 'after that', 'and then' or 'then', indicating sequence of events."
+  },
+  {
+    "id": "star-n5-64",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "だいたい",
+      "１００",
+      "人が",
+      "パーティーに"
+    ],
+    "suffix": "参加しました。",
+    "fullSentence": "だいたい１００人がパーティーに参加しました。",
+    "furigana": "だいたい１００人がパーティーに参加しました。",
+    "romaji": "Daitai hyaku-nin ga paatii ni sanka shimashita.",
+    "english": "About 100 people attended the party.",
+    "grammarId": "N5/daitai",
+    "grammarPoint": "だいたい〜",
+    "explanation": "Expresses 'roughly', 'approximately', or 'almost'."
+  },
+  {
+    "id": "star-n5-65",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "たいてい",
+      "朝",
+      "８",
+      "時に"
+    ],
+    "suffix": "起きます。",
+    "fullSentence": "たいてい朝８時に起きます。",
+    "furigana": "たいてい朝８時に起きます。",
+    "romaji": "Taitei asa hachi-ji ni okimasu.",
+    "english": "I usually wake up at 8:00 a.m.",
+    "grammarId": "N5/taitei",
+    "grammarPoint": "たいてい～",
+    "explanation": "Used for expressing 'usually', 'mostly', or 'generally'."
+  },
+  {
+    "id": "star-n4-1",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "週末は",
+      "映画とか",
+      "買い物とか",
+      "楽しいことを"
+    ],
+    "suffix": "したいです。",
+    "fullSentence": "週末は映画とか買い物とか楽しいことをしたいです。",
+    "furigana": "週末は映画とか買い物とか楽しいことをしたいです。",
+    "romaji": "Shuumatsu wa eiga toka kaimono toka tanoshii koto o shitai desu.",
+    "english": "On the weekend, I want to do fun things like watching movies or going shopping.",
+    "grammarId": "N4/a-b",
+    "grammarPoint": "A とか B とか",
+    "explanation": "Used to express multiple examples or possibilities; 'such as', 'like', 'for example'."
+  },
+  {
+    "id": "star-n4-2",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "彼は",
+      "私ほど",
+      "上手に",
+      "英語を"
+    ],
+    "suffix": "話せません。",
+    "fullSentence": "彼は私ほど上手に英語を話せません。",
+    "furigana": "彼は私ほど上手に英語を話せません。",
+    "romaji": "Kare wa watashi hodo jouzu ni eigo o hanasemasen.",
+    "english": "He isn't as good at speaking English as I am.",
+    "grammarId": "N4/a-wa-b-hodo-arimasen",
+    "grammarPoint": "A は B ほど～ありません",
+    "explanation": "Express that A is not as much as B; 'not as... as', 'not... to the extent of'."
+  },
+  {
+    "id": "star-n4-3",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "この",
+      "リンゴは",
+      "あの",
+      "リンゴほど"
+    ],
+    "suffix": "甘くない。",
+    "fullSentence": "このリンゴはあのリンゴほど甘くない。",
+    "furigana": "このリンゴはあのリンゴほど甘くない。",
+    "romaji": "Kono ringo wa ano ringo hodo amakunai.",
+    "english": "This apple isn't as sweet as that one.",
+    "grammarId": "N4/a-wa-b-hodo-nai",
+    "grammarPoint": "A は B ほど～ない",
+    "explanation": "Expressing that A is not as ~ as B; 'not as...as'"
+  },
+  {
+    "id": "star-n4-4",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "田中さんより",
+      "鈴木さんの",
+      "ほうが",
+      "背が"
+    ],
+    "suffix": "高いです。",
+    "fullSentence": "田中さんより鈴木さんのほうが背が高いです。",
+    "furigana": "田中さんより鈴木さんのほうが背が高いです。",
+    "romaji": "Tanaka-san yori Suzuki-san no hou ga se ga takai desu.",
+    "english": "Suzuki is taller than Tanaka.",
+    "grammarId": "N4/a-yori-b-no-hou-ga",
+    "grammarPoint": "A より B のほうが〜",
+    "explanation": "Comparing two things; 'B is more ~ than A'."
+  },
+  {
+    "id": "star-n4-5",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "雨が",
+      "降ると、",
+      "道が",
+      "滑りや"
+    ],
+    "suffix": "すくなります。",
+    "fullSentence": "雨が降ると、道が滑りやすくなります。",
+    "furigana": "雨が降ると、道が滑りやすくなります。",
+    "romaji": "Ame ga furu to, michi ga suberiyasuku narimasu.",
+    "english": "When it rains, the roads become slippery.",
+    "grammarId": "N4/i-adjective-kusuru-naru",
+    "grammarPoint": "い-Adjective く する/なる",
+    "explanation": "Express a change happening or making something change."
+  },
+  {
+    "id": "star-n4-6",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "彼は",
+      "一冊の",
+      "本しか",
+      "持って"
+    ],
+    "suffix": "いない。",
+    "fullSentence": "彼は一冊の本しか持っていない。",
+    "furigana": "彼は一冊の本しか持っていない。",
+    "romaji": "Kare wa isatsu no hon shika motte inai.",
+    "english": "He has only one book.",
+    "grammarId": "N4/noun-shika-nai",
+    "grammarPoint": "Noun しか～ない",
+    "explanation": "Expresses 'only', 'nothing but', or 'no other'."
+  },
+  {
+    "id": "star-n4-7",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "誕生",
+      "日",
+      "プレゼントに",
+      "時計に"
+    ],
+    "suffix": "するつもりです。",
+    "fullSentence": "誕生日プレゼントに時計にするつもりです。",
+    "furigana": "誕生日プレゼントに時計にするつもりです。",
+    "romaji": "Tanjoubi purezento ni tokei ni suru tsumori desu.",
+    "english": "I plan to give a watch as a birthday present.",
+    "grammarId": "N4/noun-ni-suru",
+    "grammarPoint": "Noun に する",
+    "explanation": "Used to indicate a choice or decision, 'to decide on' or 'to choose'."
+  },
+  {
+    "id": "star-n4-8",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "子供の",
+      "頃、",
+      "私は",
+      "先生に"
+    ],
+    "suffix": "なりたかったです。",
+    "fullSentence": "子供の頃、私は先生になりたかったです。",
+    "furigana": "子供の頃、私は先生になりたかったです。",
+    "romaji": "Kodomo no koro, watashi wa sensei ni naritakatta desu.",
+    "english": "When I was a child, I wanted to become a teacher.",
+    "grammarId": "N4/noun-ni-naru",
+    "grammarPoint": "Noun に なる",
+    "explanation": "To become; to change into; to turn into."
+  },
+  {
+    "id": "star-n4-9",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "勉強の",
+    "segments": [
+      "ために、",
+      "図書館で",
+      "静かな",
+      "場所を"
+    ],
+    "suffix": "探しています。",
+    "fullSentence": "勉強のために、図書館で静かな場所を探しています。",
+    "furigana": "勉強のために、図書館で静かな場所を探しています。",
+    "romaji": "Benkyou no tame ni, toshokan de shizukana basho o sagashiteimasu.",
+    "english": "I’m looking for a quiet spot in the library to study.",
+    "grammarId": "N4/no-tame-ni",
+    "grammarPoint": "のために",
+    "explanation": "Used to express purpose or reason; 'for', 'for the sake of', 'in order to'."
+  },
+  {
+    "id": "star-n4-10",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "夏休みの",
+    "segments": [
+      "間に",
+      "海外",
+      "旅行に",
+      "行く"
+    ],
+    "suffix": "予定です。",
+    "fullSentence": "夏休みの間に海外旅行に行く予定です。",
+    "furigana": "夏休みの間に海外旅行に行く予定です。",
+    "romaji": "Natsuyasumi no aida ni kaigai ryokou ni iku yotei desu.",
+    "english": "I plan to travel abroad during summer vacation.",
+    "grammarId": "N4/no-aida-ni",
+    "grammarPoint": "Noun の 間に",
+    "explanation": "Expresses 'while' or 'during' a specific period or time."
+  },
+  {
+    "id": "star-n4-11",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "彼が",
+    "segments": [
+      "言った",
+      "言葉は、",
+      "どれも",
+      "恐ろしいことばかり"
+    ],
+    "suffix": "だった。",
+    "fullSentence": "彼が言った言葉は、どれも恐ろしいことばかりだった。",
+    "furigana": "彼が言った言葉は、どれも恐ろしいことばかりだった。",
+    "romaji": "Kare ga itta kotoba wa, doremo osoroshii koto bakari datta.",
+    "english": "Everything he said was terrifying.",
+    "grammarId": "N4/bakari",
+    "grammarPoint": "Noun ばかり",
+    "explanation": "Expresses 'only', 'nothing but', 'always', or 'just'."
+  },
+  {
+    "id": "star-n4-12",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "子供たちに",
+    "segments": [
+      "寝る",
+      "前の",
+      "物語を",
+      "読んであげるのが"
+    ],
+    "suffix": "楽しい。",
+    "fullSentence": "子供たちに寝る前の物語を読んであげるのが楽しい。",
+    "furigana": "子供たちに寝る前の物語を読んであげるのが楽しい。",
+    "romaji": "Kodomo-tachi ni neru mae no monogatari o yonde ageru no ga tanoshii",
+    "english": "I enjoy reading bedtime stories to the children.",
+    "grammarId": "N4/noun-wo-ageru",
+    "grammarPoint": "Noun を あげる",
+    "explanation": "To give something to someone; 'give', 'offer', 'present'."
+  },
+  {
+    "id": "star-n4-13",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "会社の",
+      "上司に",
+      "昇進の",
+      "お知らせを"
+    ],
+    "suffix": "いただきました。",
+    "fullSentence": "会社の上司に昇進のお知らせをいただきました。",
+    "furigana": "会社の上司に昇進のお知らせをいただきました。",
+    "romaji": "Kaisha no joushi ni shoushin no oshirase wo itadakimashita.",
+    "english": "My supervisor at work informed me of my promotion.",
+    "grammarId": "N4/noun-wo-itadaku",
+    "grammarPoint": "Nounをいただく",
+    "explanation": "To receive or accept something politely; 'to receive', 'to get', 'to accept'."
+  },
+  {
+    "id": "star-n4-14",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "彼女は",
+      "私の",
+      "面倒を",
+      "見てくれると"
+    ],
+    "suffix": "言った。",
+    "fullSentence": "彼女は私の面倒を見てくれると言った。",
+    "furigana": "彼女は私の面倒を見てくれると言った。",
+    "romaji": "Kanojo wa watashi no mendou o mite kureru to itta",
+    "english": "She said she would take care of me.",
+    "grammarId": "N4/noun-wo-kureru",
+    "grammarPoint": "Noun を くれる",
+    "explanation": "Expresses that someone gives a thing to the speaker or someone close to the speaker."
+  },
+  {
+    "id": "star-n4-15",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "定期的に",
+    "segments": [
+      "歯医者に",
+      "診てもらうことで、",
+      "歯の",
+      "健康を"
+    ],
+    "suffix": "維持できる。",
+    "fullSentence": "定期的に歯医者に診てもらうことで、歯の健康を維持できる。",
+    "furigana": "定期的に歯医者に診てもらうことで、歯の健康を維持できる。",
+    "romaji": "Teikiteki ni haisha ni mite morau koto de, ha no kenkou o iji dekiru.",
+    "english": "By seeing a dentist regularly, you can maintain your dental health.",
+    "grammarId": "N4/noun-wo-morau",
+    "grammarPoint": "Noun もらう",
+    "explanation": "To receive or get something from someone; 'to receive', 'to get'."
+  },
+  {
+    "id": "star-n4-16",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "試験",
+    "segments": [
+      "中、",
+      "携帯",
+      "電話を",
+      "使って"
+    ],
+    "suffix": "はいけません。",
+    "fullSentence": "試験中、携帯電話を使ってはいけません。",
+    "furigana": "試験中、携帯電話を使ってはいけません。",
+    "romaji": "Shiken chuu, keitai denwa wo tsukatte wa ikemasen.",
+    "english": "You must not use your cell phone during the exam.",
+    "grammarId": "N4/noun-2",
+    "grammarPoint": "Noun + 中",
+    "explanation": "Express 'in the middle of', 'during', or 'in the process of'."
+  },
+  {
+    "id": "star-n4-17",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "彼は",
+      "会社に",
+      "もっと",
+      "働か"
+    ],
+    "suffix": "せられた。",
+    "fullSentence": "彼は会社にもっと働かせられた。",
+    "furigana": "彼は会社にもっと働かせられた。",
+    "romaji": "Kare wa kaisha ni motto hatarakaserareta.",
+    "english": "He was made to work harder at the company.",
+    "grammarId": "N4/verb-saserareru",
+    "grammarPoint": "Verb させられる",
+    "explanation": "Express the passive causative form; 'to be made to', 'to be forced to'."
+  },
+  {
+    "id": "star-n4-18",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "上司は",
+      "彼に",
+      "その",
+      "プログラムを"
+    ],
+    "suffix": "作らせました。",
+    "fullSentence": "上司は彼にそのプログラムを作らせました。",
+    "furigana": "上司は彼にそのプログラムを作らせました。",
+    "romaji": "Joushi wa kare ni sono puroguramu o tsukurasemashita.",
+    "english": "His boss had him create that program.",
+    "grammarId": "N4/verb-saseru",
+    "grammarPoint": "Verb させる",
+    "explanation": "Expresses 'to make someone do something', 'to let someone do something', or 'to cause someone to do something'."
+  },
+  {
+    "id": "star-n4-19",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "私は",
+      "スカイ",
+      "ダイビングを",
+      "したことが"
+    ],
+    "suffix": "ありません。",
+    "fullSentence": "私はスカイダイビングをしたことがありません。",
+    "furigana": "私はスカイダイビングをしたことがありません。",
+    "romaji": "Watashi wa sukaidaibingu wo shita koto ga arimasen.",
+    "english": "I have never gone skydiving.",
+    "grammarId": "N4/verb-ta-koto-ga-aru",
+    "grammarPoint": "Verb た ことがある",
+    "explanation": "Expresses the experience of having done something in the past."
+  },
+  {
+    "id": "star-n4-20",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "日本へ",
+      "行ったときに、",
+      "たくさんの",
+      "写真を"
+    ],
+    "suffix": "撮りました。",
+    "fullSentence": "日本へ行ったときに、たくさんの写真を撮りました。",
+    "furigana": "日本へ行ったときに、たくさんの写真を撮りました。",
+    "romaji": "Nihon e itta toki ni, takusan no shashin wo torimashita.",
+    "english": "When I went to Japan, I took a lot of photos.",
+    "grammarId": "N4/verb",
+    "grammarPoint": "Verb た ときに",
+    "explanation": "Express an action or event that occurred at a specific time in the past; 'when', 'at the time'."
+  },
+  {
+    "id": "star-n4-21",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "ドアを",
+      "開けたところ、",
+      "猫が",
+      "飛び"
+    ],
+    "suffix": "出してきた。",
+    "fullSentence": "ドアを開けたところ、猫が飛び出してきた。",
+    "furigana": "ドアを開けたところ、猫が飛び出してきた。",
+    "romaji": "Doa wo aketa tokoro, neko ga tobidashite kita.",
+    "english": "As soon as I opened the door, a cat darted out.",
+    "grammarId": "N4/verb-ta-tokoro",
+    "grammarPoint": "Verb た ところ",
+    "explanation": "Expresses the situation right after an action has taken place."
+  },
+  {
+    "id": "star-n4-22",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "頑固に",
+    "segments": [
+      "ならずに、",
+      "もっと",
+      "柔軟な",
+      "考え方を"
+    ],
+    "suffix": "身につけたほうがいい。",
+    "fullSentence": "頑固にならずに、もっと柔軟な考え方を身につけたほうがいい。",
+    "furigana": "頑固にならずに、もっと柔軟な考え方を身につけたほうがいい。",
+    "romaji": "Ganko ni narazu ni, motto juunan na kangaekata o mi ni tsuketa hou ga ii",
+    "english": "You should try to adopt a more flexible way of thinking rather than being stubborn.",
+    "grammarId": "N4/ta-hou-ga-ii",
+    "grammarPoint": "Verb たほうがいい",
+    "explanation": "Used to give advice or make a suggestion to someone - 'it's better if...'."
+  },
+  {
+    "id": "star-n4-23",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "仕事が",
+    "segments": [
+      "忙しいために、",
+      "友達と",
+      "会う",
+      "時間が"
+    ],
+    "suffix": "ありません。",
+    "fullSentence": "仕事が忙しいために、友達と会う時間がありません。",
+    "furigana": "仕事が忙しいために、友達と会う時間がありません。",
+    "romaji": "Shigoto ga isogashii tame ni, tomodachi to au jikan ga arimasen.",
+    "english": "Because I’m so busy with work, I don’t have time to meet up with my friends.",
+    "grammarId": "N4/tame-ni",
+    "grammarPoint": "Verb ために",
+    "explanation": "Used to describe the purpose or reason for an action; 'for the sake of', 'in order to', 'because of'."
+  },
+  {
+    "id": "star-n4-24",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "家に",
+      "帰ったら、",
+      "彼に",
+      "手紙を"
+    ],
+    "suffix": "かくつもりだ。",
+    "fullSentence": "家に帰ったら、彼に手紙をかくつもりだ。",
+    "furigana": "家に帰ったら、彼に手紙をかくつもりだ。",
+    "romaji": "Ie ni kaettara, kare ni tegami o kaku tsumori da",
+    "english": "When I get home, I plan to write him a letter.",
+    "grammarId": "N4/tsumori",
+    "grammarPoint": "Verb つもり",
+    "explanation": "Express the intention, plan, or determination to do something; 'I intend to', 'I plan to', 'I'm determined to'."
+  },
+  {
+    "id": "star-n4-25",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "友達が",
+      "疲れていたから、",
+      "荷物を",
+      "持って"
+    ],
+    "suffix": "あげた。",
+    "fullSentence": "友達が疲れていたから、荷物を持ってあげた。",
+    "furigana": "友達が疲れていたから、荷物を持ってあげた。",
+    "romaji": "Tomodachi ga tsukareteita kara, nimotsu o motte ageta.",
+    "english": "My friend was tired, so I carried their luggage for them.",
+    "grammarId": "N4/verb-te-ageru",
+    "grammarPoint": "Verb てあげる",
+    "explanation": "Used to express doing something for someone; 'do something for someone'."
+  },
+  {
+    "id": "star-n4-26",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "このまま",
+      "練習を",
+      "続けていくと、",
+      "上達するで"
+    ],
+    "suffix": "しょう。",
+    "fullSentence": "このまま練習を続けていくと、上達するでしょう。",
+    "furigana": "このまま練習を続けていくと、上達するでしょう。",
+    "romaji": "Kono mama renshuu o tsuzukete iku to, joutatsu suru deshou.",
+    "english": "If you keep practicing like this, you’ll improve.",
+    "grammarId": "N4/verb-te-iku",
+    "grammarPoint": "Verb て いく",
+    "explanation": "Expresses an action that continues on into the future or a change that progresses over time."
+  },
+  {
+    "id": "star-n4-27",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "この",
+    "segments": [
+      "仕事を",
+      "手",
+      "伝って",
+      "いただきたいの"
+    ],
+    "suffix": "ですが。",
+    "fullSentence": "この仕事を手伝っていただきたいのですが。",
+    "furigana": "この仕事を手伝っていただきたいのですが。",
+    "romaji": "Kono shigoto wo tetsudatte itadakitai no desu ga.",
+    "english": "I was wondering if you could help me with this task.",
+    "grammarId": "N4/te-itadakitai",
+    "grammarPoint": "Verb ていただきたい",
+    "explanation": "Express a polite request or desire that someone does something for you."
+  },
+  {
+    "id": "star-n4-28",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "この",
+      "荷物を",
+      "持って",
+      "いただけ"
+    ],
+    "suffix": "ませんか。",
+    "fullSentence": "この荷物を持っていただけませんか。",
+    "furigana": "この荷物を持っていただけませんか。",
+    "romaji": "Kono nimotsu wo motte itadakemasen ka.",
+    "english": "Could you please carry this bag for me?",
+    "grammarId": "N4/verb-te-itadakemasen-ka",
+    "grammarPoint": "Verb て いただけませんか",
+    "explanation": "A polite request; 'Could you please...', 'Would you mind...'"
+  },
+  {
+    "id": "star-n4-29",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "彼女は",
+    "segments": [
+      "ケーキを",
+      "作って",
+      "いるところで、",
+      "すぐ"
+    ],
+    "suffix": "来ます。",
+    "fullSentence": "彼女はケーキを作っているところで、すぐ来ます。",
+    "furigana": "彼女はケーキを作っているところで、すぐ来ます。",
+    "romaji": "Kanojo wa keeki wo tsukutte iru tokoro de, sugu kimasu.",
+    "english": "She’s in the middle of baking a cake, so she’ll be here soon.",
+    "grammarId": "N4/verb-te-iru-tokoro",
+    "grammarPoint": "Verb て いる ところ",
+    "explanation": "Describes an action that is currently happening; 'in the middle of', 'in the process of'."
+  },
+  {
+    "id": "star-n4-30",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "映画を",
+      "見ている",
+      "間に、",
+      "彼は"
+    ],
+    "suffix": "寝てしまった。",
+    "fullSentence": "映画を見ている間に、彼は寝てしまった。",
+    "furigana": "映画を見ている間に、彼は寝てしまった。",
+    "romaji": "Eiga o mite iru aida ni, kare wa nete shimatta.",
+    "english": "He fell asleep while watching a movie.",
+    "grammarId": "N4/te-iru-aida-ni",
+    "grammarPoint": "Verb ている間に",
+    "explanation": "Expresses 'while' or 'during the time' something is happening."
+  },
+  {
+    "id": "star-n4-31",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "試験",
+      "前に",
+      "勉強しておか",
+      "ないと、"
+    ],
+    "suffix": "失敗するかもしれない。",
+    "fullSentence": "試験前に勉強しておかないと、失敗するかもしれない。",
+    "furigana": "試験前に勉強しておかないと、失敗するかもしれない。",
+    "romaji": "Shiken mae ni benkyou shite okanai to, shippai suru kamo shirenai.",
+    "english": "If you don’t study before the exam, you might fail.",
+    "grammarId": "N4/te-oku",
+    "grammarPoint": "Verb ておく",
+    "explanation": "Perform an action in preparation for a future situation; 'to do something in advance'."
+  },
+  {
+    "id": "star-n4-32",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "お母さんが",
+      "美味しい",
+      "料理を",
+      "作って"
+    ],
+    "suffix": "くださる。",
+    "fullSentence": "お母さんが美味しい料理を作ってくださる。",
+    "furigana": "お母さんが美味しい料理を作ってくださる。",
+    "romaji": "Okaasan ga oishii ryouri wo tsukutte kudasaru.",
+    "english": "My mother cooks delicious meals for me.",
+    "grammarId": "N4/verb-te-kudasaru",
+    "grammarPoint": "Verb て くださる",
+    "explanation": "Expresses gratitude for receiving someone's favor; 'to kindly do'."
+  },
+  {
+    "id": "star-n4-33",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "友達が",
+      "宿題を",
+      "手",
+      "伝って"
+    ],
+    "suffix": "くれました。",
+    "fullSentence": "友達が宿題を手伝ってくれました。",
+    "furigana": "友達が宿題を手伝ってくれました。",
+    "romaji": "Tomodachi ga shukudai wo tetsudatte kuremashita.",
+    "english": "My friend helped me with my homework.",
+    "grammarId": "N4/verb-te-kureru",
+    "grammarPoint": "Verb て くれる",
+    "explanation": "Expresses that someone does something for the speaker (or another person in speaker's group); 'to do something for me/us'."
+  },
+  {
+    "id": "star-n4-34",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "値札を",
+    "segments": [
+      "見ずに",
+      "高い",
+      "服を",
+      "買って"
+    ],
+    "suffix": "しまった。",
+    "fullSentence": "値札を見ずに高い服を買ってしまった。",
+    "furigana": "値札を見ずに高い服を買ってしまった。",
+    "romaji": "Nefuda wo mizu ni takai fuku wo katte shimatta.",
+    "english": "I ended up buying an expensive piece of clothing without checking the price tag.",
+    "grammarId": "N4/te-shimau",
+    "grammarPoint": "Verb てしまう",
+    "explanation": "Expresses unintentional actions or actions with regrettable outcomes; 'to end up doing', 'to accidentally do'."
+  },
+  {
+    "id": "star-n4-35",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "仕事の",
+    "segments": [
+      "合間に",
+      "少し",
+      "休める",
+      "時間が"
+    ],
+    "suffix": "ほしい。",
+    "fullSentence": "仕事の合間に少し休める時間がほしい。",
+    "furigana": "仕事の合間に少し休める時間がほしい。",
+    "romaji": "Shigoto no aima ni sukoshi yasumeru jikan ga hoshii.",
+    "english": "I’d like to have a little time to rest between work tasks.",
+    "grammarId": "N4/verb-te-hoshii",
+    "grammarPoint": "Verb て ほしい",
+    "explanation": "Express a desire for someone else to do something; 'I want (someone) to'."
+  },
+  {
+    "id": "star-n4-36",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "もし飼いたい動物がいたら、",
+    "segments": [
+      "ペット",
+      "ショップに",
+      "行って",
+      "みると"
+    ],
+    "suffix": "いいですね。",
+    "fullSentence": "もし飼いたい動物がいたら、ペットショップに行ってみるといいですね。",
+    "furigana": "もし飼いたい動物がいたら、ペットショップに行ってみるといいですね。",
+    "romaji": "Moshi kaitai doubutsu ga itara, petto shoppu ni itte miru to ii desu ne.",
+    "english": "If there’s an animal you’d like to have, you should try visiting a pet store.",
+    "grammarId": "N4/te-miru",
+    "grammarPoint": "Verb てみる",
+    "explanation": "Used to express 'try to' or 'attempt to do'."
+  },
+  {
+    "id": "star-n4-37",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "彼に",
+      "その",
+      "ニュースを",
+      "教えても"
+    ],
+    "suffix": "らいたい。",
+    "fullSentence": "彼にそのニュースを教えてもらいたい。",
+    "furigana": "彼にそのニュースを教えてもらいたい。",
+    "romaji": "Kare ni sono nyuusu o oshiete moraitai.",
+    "english": "I want him to tell me that news.",
+    "grammarId": "N4/te-moraitai",
+    "grammarPoint": "Verb てもらいたい",
+    "explanation": "Express a desire to receive a favor or service from someone else."
+  },
+  {
+    "id": "star-n4-38",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "友達に",
+      "宿題を",
+      "手",
+      "伝っても"
+    ],
+    "suffix": "らった。",
+    "fullSentence": "友達に宿題を手伝ってもらった。",
+    "furigana": "友達に宿題を手伝ってもらった。",
+    "romaji": "Tomodachi ni shukudai o tetsudatte moratta.",
+    "english": "A friend helped me with my homework.",
+    "grammarId": "N4/verb-te-morau",
+    "grammarPoint": "Verb て もらう",
+    "explanation": "Express receiving a favor or action from someone."
+  },
+  {
+    "id": "star-n4-39",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "この",
+      "電車は",
+      "定刻に",
+      "来ないことが"
+    ],
+    "suffix": "ある。",
+    "fullSentence": "この電車は定刻に来ないことがある。",
+    "furigana": "この電車は定刻に来ないことがある。",
+    "romaji": "Kono densha wa teikoku ni konai koto ga aru.",
+    "english": "This train sometimes doesn’t arrive on time.",
+    "grammarId": "N4/verb-nai-koto-ga-aru",
+    "grammarPoint": "Verb ない ことがある",
+    "explanation": "Expresses that something doesn't always happen or there are occasions when it doesn't happen."
+  },
+  {
+    "id": "star-n4-40",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "今日",
+    "segments": [
+      "彼が",
+      "来ないことになると、",
+      "私たちの",
+      "予定は"
+    ],
+    "suffix": "キャンセルされます。",
+    "fullSentence": "今日彼が来ないことになると、私たちの予定はキャンセルされます。",
+    "furigana": "今日彼が来ないことになると、私たちの予定はキャンセルされます。",
+    "romaji": "Kyou kare ga konai koto ni naru to, watashitachi no yotei wa kyanseru saremasu.",
+    "english": "If he doesn’t come today, our plans will be canceled.",
+    "grammarId": "N4/verb-nai-koto-ni-naru",
+    "grammarPoint": "Verb ない ことになる",
+    "explanation": "Expresses a result; 'end up not', 'it will become that', 'it would mean that'."
+  },
+  {
+    "id": "star-n4-41",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "彼に",
+    "segments": [
+      "秘密を",
+      "知られたく",
+      "な",
+      "ければ、"
+    ],
+    "suffix": "話さないほうがいい。",
+    "fullSentence": "彼に秘密を知られたくなければ、話さないほうがいい。",
+    "furigana": "彼に秘密を知られたくなければ、話さないほうがいい。",
+    "romaji": "Kare ni himitsu o shiraretakunakereba, hanasanai hou ga ii.",
+    "english": "If you don’t want him to find out your secret, it’s better not to tell him.",
+    "grammarId": "N4/verb-nai-hou-ga-ii",
+    "grammarPoint": "Verb ないほうがいい",
+    "explanation": "Expresses the idea that it is better not to do something."
+  },
+  {
+    "id": "star-n4-42",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "歩きながら",
+      "スマ",
+      "ホを",
+      "見るのは"
+    ],
+    "suffix": "危険です。",
+    "fullSentence": "歩きながらスマホを見るのは危険です。",
+    "furigana": "歩きながらスマホを見るのは危険です。",
+    "romaji": "Arukinagara sumaho wo miru no wa kiken desu.",
+    "english": "It is dangerous to look at your smartphone while walking.",
+    "grammarId": "N4/nagara",
+    "grammarPoint": "Verb ながら",
+    "explanation": "Expresses 'while' or 'as' in the sense of doing two things simultaneously."
+  },
+  {
+    "id": "star-n4-43",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "愛する",
+      "人を",
+      "大切にし",
+      "な"
+    ],
+    "suffix": "さい。",
+    "fullSentence": "愛する人を大切にしなさい。",
+    "furigana": "愛する人を大切にしなさい。",
+    "romaji": "Aisuru hito o taisetsu ni shinasai",
+    "english": "Cherish the ones you love.",
+    "grammarId": "N4/nasai",
+    "grammarPoint": "Verb なさい",
+    "explanation": "A command form used to give orders or instructions; 'Please do', 'Do this'."
+  },
+  {
+    "id": "star-n4-44",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "兄は",
+      "しゃべる",
+      "速度が",
+      "速すぎて、"
+    ],
+    "suffix": "理解しにくい。",
+    "fullSentence": "兄はしゃべる速度が速すぎて、理解しにくい。",
+    "furigana": "兄はしゃべる速度が速すぎて、理解しにくい。",
+    "romaji": "Ani wa shaberu sokudo ga hayasugite, rikai shinikui",
+    "english": "My older brother speaks too fast, so it’s hard to understand him.",
+    "grammarId": "N4/nikui",
+    "grammarPoint": "Verb にくい",
+    "explanation": "Express difficulty or complexity; 'hard to', 'difficult to', 'not easily'."
+  },
+  {
+    "id": "star-n4-45",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "コーヒーは冷めやすいので、",
+    "segments": [
+      "飲む",
+      "前に",
+      "温め",
+      "直すことが"
+    ],
+    "suffix": "よくある。",
+    "fullSentence": "コーヒーは冷めやすいので、飲む前に温め直すことがよくある。",
+    "furigana": "コーヒーは冷めやすいので、飲む前に温め直すことがよくある。",
+    "romaji": "Koohii wa sameyasui node, nomu mae ni atatame naosu koto ga yoku aru",
+    "english": "Since coffee cools down quickly, I often reheat it before drinking it.",
+    "grammarId": "N4/yasui",
+    "grammarPoint": "Verb やすい",
+    "explanation": "Indicates that something is easy to do; 'easy to', 'easy for'."
+  },
+  {
+    "id": "star-n4-46",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "週末に",
+      "友達と",
+      "遊ぼうと",
+      "思って"
+    ],
+    "suffix": "います。",
+    "fullSentence": "週末に友達と遊ぼうと思っています。",
+    "furigana": "週末に友達と遊ぼうと思っています。",
+    "romaji": "Shuumatsu ni tomodachi to asobou to omotteimasu.",
+    "english": "I’m planning to hang out with my friends this weekend.",
+    "grammarId": "N4/verb-you-to-omou",
+    "grammarPoint": "Verb ようと思う",
+    "explanation": "Express intention or plan to do something; 'I think I will', 'I plan to', 'I intend to'."
+  },
+  {
+    "id": "star-n4-47",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "彼女は",
+      "鳥の",
+      "ように",
+      "軽やかに"
+    ],
+    "suffix": "踊る。",
+    "fullSentence": "彼女は鳥のように軽やかに踊る。",
+    "furigana": "彼女は鳥のように軽やかに踊る。",
+    "romaji": "Kanojo wa tori no you ni karoyaka ni odoru.",
+    "english": "She dances as gracefully as a bird.",
+    "grammarId": "N4/you-ni",
+    "grammarPoint": "Verb ように",
+    "explanation": "Used to express 'like', 'as if', 'in order to', or 'so that'."
+  },
+  {
+    "id": "star-n4-48",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "この仕事を",
+    "segments": [
+      "始めてから、",
+      "毎日",
+      "忙しいと",
+      "感じるように"
+    ],
+    "suffix": "なりました。",
+    "fullSentence": "この仕事を始めてから、毎日忙しいと感じるようになりました。",
+    "furigana": "この仕事を始めてから、毎日忙しいと感じるようになりました。",
+    "romaji": "Kono shigoto o hajimete kara, mainichi isogashii to kanjiru you ni narimashita.",
+    "english": "Since I started this job, I’ve come to feel busy every day.",
+    "grammarId": "N4/you-ni-naru",
+    "grammarPoint": "Verb ようになる",
+    "explanation": "Express a change in ability, situation or state; 'become able to', 'come to', 'begin to'."
+  },
+  {
+    "id": "star-n4-49",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "先生は",
+      "私たちに",
+      "宿題を",
+      "やるように"
+    ],
+    "suffix": "言いました。",
+    "fullSentence": "先生は私たちに宿題をやるように言いました。",
+    "furigana": "先生は私たちに宿題をやるように言いました。",
+    "romaji": "Sensei wa watashitachi ni shukudai o yaru you ni iimashita.",
+    "english": "The teacher told us to do our homework.",
+    "grammarId": "N4/verb-you-ni-iu",
+    "grammarPoint": "Verb ように言う",
+    "explanation": "Tell someone to do something; 'tell to do', 'instruct to do'."
+  },
+  {
+    "id": "star-n4-50",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "おとなしい",
+    "segments": [
+      "生徒は",
+      "先生に",
+      "気に",
+      "入られることが"
+    ],
+    "suffix": "多い。",
+    "fullSentence": "おとなしい生徒は先生に気に入られることが多い。",
+    "furigana": "おとなしい生徒は先生に気に入られることが多い。",
+    "romaji": "Otonashii seito wa sensei ni kiniirareru koto ga ooi.",
+    "english": "Well-behaved students are often favored by their teachers.",
+    "grammarId": "N4/rareru",
+    "grammarPoint": "Verb られる",
+    "explanation": "Expresses passive voice or potential form for verbs."
+  },
+  {
+    "id": "star-n4-51",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "子供の",
+    "segments": [
+      "頃、",
+      "よく",
+      "山に",
+      "登ることが"
+    ],
+    "suffix": "ありました。",
+    "fullSentence": "子供の頃、よく山に登ることがありました。",
+    "furigana": "子供の頃、よく山に登ることがありました。",
+    "romaji": "Kodomo no koro, yoku yama ni noboru koto ga arimashita.",
+    "english": "When I was a child, I often went hiking in the mountains.",
+    "grammarId": "N4/ru-koto-ga-aru",
+    "grammarPoint": "Verb る ことがある",
+    "explanation": "Used to express that something happens sometimes or has happened before."
+  },
+  {
+    "id": "star-n4-52",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "この切符は1",
+    "segments": [
+      "回だけ",
+      "電車を",
+      "乗り",
+      "換わることが"
+    ],
+    "suffix": "できる。",
+    "fullSentence": "この切符は1回だけ電車を乗り換わることができる。",
+    "furigana": "この切符は1回だけ電車を乗り換わることができる。",
+    "romaji": "Kono kippu wa ikkai dake densha o norikawaru koto ga dekiru.",
+    "english": "This ticket allows you to transfer trains only once.",
+    "grammarId": "N4/ru-koto-ga-dekiru",
+    "grammarPoint": "Verb ることができる",
+    "explanation": "Express ability or possibility of doing an action; 'can', 'be able to', 'is possible'."
+  },
+  {
+    "id": "star-n4-53",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "彼女が",
+      "今度の",
+      "プロジェクトの",
+      "リーダーに"
+    ],
+    "suffix": "なることになりました。",
+    "fullSentence": "彼女が今度のプロジェクトのリーダーになることになりました。",
+    "furigana": "彼女が今度のプロジェクトのリーダーになることになりました。",
+    "romaji": "Kanojo ga kondo no purojekuto no riida ni naru koto ni narimashita.",
+    "english": "She has been appointed as the leader of the upcoming project.",
+    "grammarId": "N4/ru-koto-ni-naru",
+    "grammarPoint": "Verb る ことになる",
+    "explanation": "Indicates that something has been decided or arranged; 'it has been decided that', 'it turns out that'."
+  },
+  {
+    "id": "star-n4-54",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "旅行するときに、",
+      "カメラを",
+      "持って",
+      "いくことが"
+    ],
+    "suffix": "好きです。",
+    "fullSentence": "旅行するときに、カメラを持っていくことが好きです。",
+    "furigana": "旅行するときに、カメラを持っていくことが好きです。",
+    "romaji": "Ryokou suru toki ni, kamera wo motteiku koto ga suki desu.",
+    "english": "I like to bring my camera with me when I travel.",
+    "grammarId": "N4/ru-toki-ni",
+    "grammarPoint": "Verb るときに",
+    "explanation": "Describes the time when a certain action takes place; 'when', 'at the time'."
+  },
+  {
+    "id": "star-n4-55",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "車が突然",
+    "segments": [
+      "横",
+      "切って",
+      "きて、",
+      "自転車に"
+    ],
+    "suffix": "ぶつかるところだった。",
+    "fullSentence": "車が突然横切ってきて、自転車にぶつかるところだった。",
+    "furigana": "車が突然横切ってきて、自転車にぶつかるところだった。",
+    "romaji": "Kuruma ga totsuzen yokogitte kite, jitensha ni butsukaru tokoro datta",
+    "english": "A car suddenly swerved across the road and nearly hit my bicycle.",
+    "grammarId": "N4/verb-ru-tokoro",
+    "grammarPoint": "Verb る ところ",
+    "explanation": "Expresses the state or moment when an action is about to happen or is happening."
+  },
+  {
+    "id": "star-n4-56",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "授業が",
+      "始まる",
+      "前に",
+      "宿題を"
+    ],
+    "suffix": "出してください。",
+    "fullSentence": "授業が始まる前に宿題を出してください。",
+    "furigana": "授業が始まる前に宿題を出してください。",
+    "romaji": "Jugyou ga hajimaru mae ni shukudai wo dashite kudasai.",
+    "english": "Please assign homework before class begins.",
+    "grammarId": "N4/dasu",
+    "grammarPoint": "Verb 出す",
+    "explanation": "Express the action of taking something out, starting an action, or emphasizing a verb."
+  },
+  {
+    "id": "star-n4-57",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "誰かが",
+      "ケーキの",
+      "作り方を",
+      "知って"
+    ],
+    "suffix": "いますか？",
+    "fullSentence": "誰かがケーキの作り方を知っていますか？",
+    "furigana": "誰かがケーキの作り方を知っていますか？",
+    "romaji": "Dareka ga keeki no tsukurikata o shitteimasu ka?",
+    "english": "Does anyone know how to make a cake?",
+    "grammarId": "N4/hou",
+    "grammarPoint": "Verb 方",
+    "explanation": "Indicates the way or method of doing something; often read as '～かた' ('how to', 'the way of')."
+  },
+  {
+    "id": "star-n4-58",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "試験が",
+    "segments": [
+      "終わったら、",
+      "友達と",
+      "遊びに",
+      "行く"
+    ],
+    "suffix": "予定です。",
+    "fullSentence": "試験が終わったら、友達と遊びに行く予定です。",
+    "furigana": "試験が終わったら、友達と遊びに行く予定です。",
+    "romaji": "Shiken ga owattara, tomodachi to asobi ni iku yotei desu.",
+    "english": "Once the exam is over, I plan to go out with my friends.",
+    "grammarId": "N4/owaru",
+    "grammarPoint": "Verb 終わる",
+    "explanation": "Verbal action is completed; 'to finish', 'to end'."
+  },
+  {
+    "id": "star-n4-59",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "彼は",
+      "毎日",
+      "ジムで",
+      "運動を"
+    ],
+    "suffix": "続けています。",
+    "fullSentence": "彼は毎日ジムで運動を続けています。",
+    "furigana": "彼は毎日ジムで運動を続けています。",
+    "romaji": "Kare wa mainichi jimu de undou o tsuzuketeimasu.",
+    "english": "He continues to work out at the gym every day.",
+    "grammarId": "N4/tsuzukeru",
+    "grammarPoint": "Verb + 続ける",
+    "explanation": "To continue doing or to keep doing an action."
+  },
+  {
+    "id": "star-n4-60",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "彼女は",
+    "segments": [
+      "面白いことが",
+      "大好きで、",
+      "いつも",
+      "何かしらしゃべって"
+    ],
+    "suffix": "いる。",
+    "fullSentence": "彼女は面白いことが大好きで、いつも何かしらしゃべっている。",
+    "furigana": "彼女は面白いことが大好きで、いつも何かしらしゃべっている。",
+    "romaji": "Kanojo wa omoshiroi koto ga daisuki de, itsumo nanikashira shabetteiru",
+    "english": "She loves funny things and is always chatting about something.",
+    "grammarId": "N4/kashira",
+    "grammarPoint": "～かしら",
+    "explanation": "Indicates uncertainty or doubt; 'I wonder', 'I'm not sure'."
+  },
+  {
+    "id": "star-n4-61",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "この",
+      "本が",
+      "面白いか",
+      "どうか"
+    ],
+    "suffix": "教えてください。",
+    "fullSentence": "この本が面白いかどうか教えてください。",
+    "furigana": "この本が面白いかどうか教えてください。",
+    "romaji": "Kono hon ga omoshiroi ka dou ka oshiete kudasai.",
+    "english": "Please let me know if this book is interesting.",
+    "grammarId": "N4/ka-dou-ka",
+    "grammarPoint": "～かどうか",
+    "explanation": "Used to express 'whether' or 'if' in indirect questions or statements."
+  },
+  {
+    "id": "star-n4-62",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "",
+    "segments": [
+      "一旦",
+      "消えた",
+      "伝説の",
+      "ヒーローが"
+    ],
+    "suffix": "復活するかもしれない。",
+    "fullSentence": "一旦消えた伝説のヒーローが復活するかもしれない。",
+    "furigana": "一旦消えた伝説のヒーローが復活するかもしれない。",
+    "romaji": "Ittan kieta densetsu no hiiroo ga fukkatsu suru kamoshirenai",
+    "english": "The legendary hero who once disappeared may make a comeback.",
+    "grammarId": "N4/kamoshirenai",
+    "grammarPoint": "～かもしれない",
+    "explanation": "Express uncertainty; 'maybe', 'might', 'possibly'."
+  },
+  {
+    "id": "star-n4-63",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "雨が",
+    "segments": [
+      "降るから、",
+      "傘を",
+      "持って",
+      "行って"
+    ],
+    "suffix": "ください。",
+    "fullSentence": "雨が降るから、傘を持って行ってください。",
+    "furigana": "雨が降るから、傘を持って行ってください。",
+    "romaji": "Ame ga furu kara, kasa wo motte itte kudasai.",
+    "english": "It's going to rain, so please bring an umbrella.",
+    "grammarId": "N4/kara",
+    "grammarPoint": "～から",
+    "explanation": "Express a reason or cause; 'because', 'since', 'due to'."
+  },
+  {
+    "id": "star-n4-64",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "今日は",
+    "segments": [
+      "忙しいけれど、",
+      "明日は",
+      "もっと",
+      "時間が"
+    ],
+    "suffix": "ある。",
+    "fullSentence": "今日は忙しいけれど、明日はもっと時間がある。",
+    "furigana": "今日は忙しいけれど、明日はもっと時間がある。",
+    "romaji": "Kyou wa isogashii keredo, ashita wa motto jikan ga aru.",
+    "english": "I’m busy today, but I’ll have more time tomorrow.",
+    "grammarId": "N4/keredo",
+    "grammarPoint": "～けれど",
+    "explanation": "Indicate a soft contrast or contradiction; 'but', 'however'."
+  },
+  {
+    "id": "star-n4-65",
+    "level": "N4",
+    "jlpt": 4,
+    "prefix": "彼は若いし、元気だし、",
+    "segments": [
+      "フレンド",
+      "リーだし、",
+      "みんなと",
+      "仲良くなれると"
+    ],
+    "suffix": "思います。",
+    "fullSentence": "彼は若いし、元気だし、フレンドリーだし、みんなと仲良くなれると思います。",
+    "furigana": "彼は若いし、元気だし、フレンドリーだし、みんなと仲良くなれると思います。",
+    "romaji": "Kare wa wakai shi, genki da shi, furendorī da shi, minna to nakayoku nareru to omoimasu.",
+    "english": "He’s young, energetic, and friendly, so I think he’ll get along well with everyone.",
+    "grammarId": "N4/shi-shi",
+    "grammarPoint": "～し、～し、～",
+    "explanation": "Express multiple reasons or characteristics; 'and', 'because', 'since'."
+  },
+  {
+    "id": "star-n3-1",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "リンクを",
+    "segments": [
+      "開くには、",
+      "その",
+      "上で",
+      "ダブル"
+    ],
+    "suffix": "クリックしてください。",
+    "fullSentence": "リンクを開くには、その上でダブルクリックしてください。",
+    "furigana": "リンクを開くには、その上でダブルクリックしてください。",
+    "romaji": "Rinku o hiraku ni wa, sono ue de daburu kurikku shite kudasai",
+    "english": "To open a link, double-click on it.",
+    "grammarId": "N3/a-sono-ue-b",
+    "grammarPoint": "A その上 B",
+    "explanation": "Used to express 'in addition to', 'besides', or 'furthermore' when adding information or making a suggestion."
+  },
+  {
+    "id": "star-n3-2",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "若いうちに、",
+      "いろいろな",
+      "経験を",
+      "しておくことが"
+    ],
+    "suffix": "大切です。",
+    "fullSentence": "若いうちに、いろいろな経験をしておくことが大切です。",
+    "furigana": "若いうちに、いろいろな経験をしておくことが大切です。",
+    "romaji": "Wakai uchi ni, iroiro na keiken wo shite oku koto ga taisetsu desu.",
+    "english": "It’s important to gain a variety of experiences while you’re young.",
+    "grammarId": "N3/uchi-ni",
+    "grammarPoint": "～うちに",
+    "explanation": "Express 'while', 'before', or 'during' a certain condition or situation."
+  },
+  {
+    "id": "star-n3-3",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "電話に",
+    "segments": [
+      "出ようと",
+      "したが、",
+      "相手は",
+      "切って"
+    ],
+    "suffix": "しまった。",
+    "fullSentence": "電話に出ようとしたが、相手は切ってしまった。",
+    "furigana": "電話に出ようとしたが、相手は切ってしまった。",
+    "romaji": "Denwa ni deyou to shita ga, aite wa kitte shimatta.",
+    "english": "I was about to answer the phone, but the caller hung up.",
+    "grammarId": "N3/uto-shita",
+    "grammarPoint": "～うとした",
+    "explanation": "Express an action someone tried to do but couldn't; 'tried to', 'attempted to'."
+  },
+  {
+    "id": "star-n3-4",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "お母さんの",
+      "おかげで、",
+      "私は",
+      "元気に"
+    ],
+    "suffix": "なりました。",
+    "fullSentence": "お母さんのおかげで、私は元気になりました。",
+    "furigana": "お母さんのおかげで、私は元気になりました。",
+    "romaji": "Okaasan no okagede, watashi wa genki ni narimashita.",
+    "english": "Thanks to my mom, I’m feeling better now.",
+    "grammarId": "N3/okagede",
+    "grammarPoint": "～おかげで",
+    "explanation": "Expresses gratitude or shows a positive result due to a certain factor; 'thanks to', 'because of'."
+  },
+  {
+    "id": "star-n3-5",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "この",
+    "segments": [
+      "本は",
+      "読みかけで、",
+      "まだ",
+      "終わって"
+    ],
+    "suffix": "いません。",
+    "fullSentence": "この本は読みかけで、まだ終わっていません。",
+    "furigana": "この本は読みかけで、まだ終わっていません。",
+    "romaji": "Kono hon wa yomikake de, mada owatteimasen.",
+    "english": "I’m still reading this book; I haven’t finished it yet.",
+    "grammarId": "N3/kake",
+    "grammarPoint": "～かけ",
+    "explanation": "Expresses the meaning of being in the middle of doing something or of something being partway done."
+  },
+  {
+    "id": "star-n3-6",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "雨が",
+      "降るのを",
+      "待たないで、",
+      "家を"
+    ],
+    "suffix": "出ました。",
+    "fullSentence": "雨が降るのを待たないで、家を出ました。",
+    "furigana": "雨が降るのを待たないで、家を出ました。",
+    "romaji": "Ame ga furu no wo matanai de, ie wo demashita.",
+    "english": "I left the house without waiting for it to rain.",
+    "grammarId": "N3/naide",
+    "grammarPoint": "～ないで",
+    "explanation": "Express 'without doing ~' or 'without ~ing'."
+  },
+  {
+    "id": "star-n3-7",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "午前８",
+    "segments": [
+      "時から",
+      "午後",
+      "５",
+      "時にかけて"
+    ],
+    "suffix": "働いています。",
+    "fullSentence": "午前８時から午後５時にかけて働いています。",
+    "furigana": "午前８時から午後５時にかけて働いています。",
+    "romaji": "Gozen hachiji kara gogo goji ni kakete hataraiteru.",
+    "english": "I work from 8:00 a.m. to 5:00 p.m.",
+    "grammarId": "N3/kara-ni-kakete",
+    "grammarPoint": "～から～にかけて",
+    "explanation": "Expresses a range of something, such as time or space; 'from...to', 'between'."
+  },
+  {
+    "id": "star-n3-8",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "お",
+      "酒を",
+      "飲むかわりに、",
+      "水を"
+    ],
+    "suffix": "飲んでください。",
+    "fullSentence": "お酒を飲むかわりに、水を飲んでください。",
+    "furigana": "お酒を飲むかわりに、水を飲んでください。",
+    "romaji": "Osake wo nomu kawari ni, mizu wo nonde kudasai.",
+    "english": "Instead of drinking alcohol, please drink water.",
+    "grammarId": "N3/kawari-ni",
+    "grammarPoint": "～かわりに",
+    "explanation": "In place of; instead of; as a substitute for."
+  },
+  {
+    "id": "star-n3-9",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "昨日",
+      "コーヒーを",
+      "飲んだきり、",
+      "何も"
+    ],
+    "suffix": "飲まなかった。",
+    "fullSentence": "昨日コーヒーを飲んだきり、何も飲まなかった。",
+    "furigana": "昨日コーヒーを飲んだきり、何も飲まなかった。",
+    "romaji": "Kinou koohii wo nonda kiri, nani mo nomanakatta.",
+    "english": "I haven’t had anything to drink since I had coffee yesterday.",
+    "grammarId": "N3/kiri",
+    "grammarPoint": "～きり",
+    "explanation": "Expresses the idea of 'only', 'since', or 'after'."
+  },
+  {
+    "id": "star-n3-10",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "彼は",
+      "お",
+      "金持ちの",
+      "くせに、"
+    ],
+    "suffix": "ケチです。",
+    "fullSentence": "彼はお金持ちのくせに、ケチです。",
+    "furigana": "彼はお金持ちのくせに、ケチです。",
+    "romaji": "Kare wa okanemochi no kuse ni, kechi desu.",
+    "english": "Even though he’s rich, he’s stingy.",
+    "grammarId": "N3/kuse-ni",
+    "grammarPoint": "～くせに",
+    "explanation": "Used to express criticism or disapproval; 'even though', 'despite', 'in spite of'."
+  },
+  {
+    "id": "star-n3-11",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "彼女は",
+    "segments": [
+      "その",
+      "映画を",
+      "５",
+      "回くらい"
+    ],
+    "suffix": "見ました。",
+    "fullSentence": "彼女はその映画を５回くらい見ました。",
+    "furigana": "彼女はその映画を５回くらい見ました。",
+    "romaji": "Kanojo wa sono eiga wo go-kai kurai mimashita.",
+    "english": "She watched that movie about five times.",
+    "grammarId": "N3/kurai",
+    "grammarPoint": "～くらい",
+    "explanation": "Expresses an approximate quantity or degree; 'about', 'approximately', or 'to the extent of'."
+  },
+  {
+    "id": "star-n3-12",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "週に",
+      "一度くらいは",
+      "ジムに",
+      "行か"
+    ],
+    "suffix": "ないと。",
+    "fullSentence": "週に一度くらいはジムに行かないと。",
+    "furigana": "週に一度くらいはジムに行かないと。",
+    "romaji": "Shuu ni ichido kurai wa jimu ni ikanai to.",
+    "english": "I really need to go to the gym at least once a week.",
+    "grammarId": "N3/kurai-wa-nai",
+    "grammarPoint": "～くらい～は～ない",
+    "explanation": "Express the least one can do; 'at least', 'the least', 'no less than'."
+  },
+  {
+    "id": "star-n3-13",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "お金が",
+      "ないことこそ",
+      "幸せの",
+      "秘訣では"
+    ],
+    "suffix": "ないか。",
+    "fullSentence": "お金がないことこそ幸せの秘訣ではないか。",
+    "furigana": "お金がないことこそ幸せの秘訣ではないか。",
+    "romaji": "O-kane ga nai koto koso shiawase no hiketsu de wa nai ka.",
+    "english": "Isn’t the secret to happiness actually not having money?",
+    "grammarId": "N3/koso",
+    "grammarPoint": "～こそ",
+    "explanation": "Emphasizes the importance or uniqueness of something or someone; 'precisely', 'exactly', 'it is...', 'of all...'."
+  },
+  {
+    "id": "star-n3-14",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "健康の",
+      "ために、",
+      "野菜を",
+      "たくさん"
+    ],
+    "suffix": "食べることだ。",
+    "fullSentence": "健康のために、野菜をたくさん食べることだ。",
+    "furigana": "健康のために、野菜をたくさん食べることだ。",
+    "romaji": "Kenkou no tame ni, yasai wo takusan taberu koto da.",
+    "english": "To stay healthy, you should eat plenty of vegetables.",
+    "grammarId": "N3/koto-da",
+    "grammarPoint": "～ことだ",
+    "explanation": "Expresses advice or recommendation; 'should', 'it is important', 'it is necessary'."
+  },
+  {
+    "id": "star-n3-15",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "会議には",
+    "segments": [
+      "必ず",
+      "10",
+      "分",
+      "前に"
+    ],
+    "suffix": "着くことにしている。",
+    "fullSentence": "会議には必ず10分前に着くことにしている。",
+    "furigana": "会議には必ず10分前に着くことにしている。",
+    "romaji": "Kaigi ni wa kanarazu juppun mae ni tsuku koto ni shite iru.",
+    "english": "I always make it a point to arrive 10 minutes early for meetings.",
+    "grammarId": "N3/koto-ni-shite-iru",
+    "grammarPoint": "～ことにしている",
+    "explanation": "Express a personal rule or habit; 'I make it a rule to', 'I always make sure to'."
+  },
+  {
+    "id": "star-n3-16",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "この会社では、",
+    "segments": [
+      "20",
+      "時には",
+      "仕事を",
+      "終えることになって"
+    ],
+    "suffix": "いる。",
+    "fullSentence": "この会社では、20時には仕事を終えることになっている。",
+    "furigana": "この会社では、20時には仕事を終えることになっている。",
+    "romaji": "Kono kaisha de wa, 20-ji ni shigoto o oeru koto ni natte iru.",
+    "english": "At this company, employees are expected to finish work by 8:00 p.m.",
+    "grammarId": "N3/koto-ni-natte-iru",
+    "grammarPoint": "～ことになっている",
+    "explanation": "Describes something that is decided, arranged, or expected."
+  },
+  {
+    "id": "star-n3-17",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "この",
+    "segments": [
+      "映画は",
+      "面白いことは",
+      "面白いが、",
+      "ちょっと"
+    ],
+    "suffix": "長すぎる。",
+    "fullSentence": "この映画は面白いことは面白いが、ちょっと長すぎる。",
+    "furigana": "この映画は面白いことは面白いが、ちょっと長すぎる。",
+    "romaji": "Kono eiga wa omoshiroi koto wa omoshiroi ga, chotto naga-sugiru.",
+    "english": "This movie is interesting, but it’s a little too long.",
+    "grammarId": "N3/koto-wa-ga",
+    "grammarPoint": "～ことは…が",
+    "explanation": "Indicates that while something may be true or valid, there is another contrasting point."
+  },
+  {
+    "id": "star-n3-18",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "お金が",
+      "あるから、",
+      "無理に",
+      "貯金することは"
+    ],
+    "suffix": "ない。",
+    "fullSentence": "お金があるから、無理に貯金することはない。",
+    "furigana": "お金があるから、無理に貯金することはない。",
+    "romaji": "Okane ga aru kara, muri ni chokin suru koto wa nai.",
+    "english": "Since I have money, there’s no need to force myself to save.",
+    "grammarId": "N3/koto-wa-nai",
+    "grammarPoint": "～ことはない",
+    "explanation": "Expresses that something doesn't need to be done or there's no occasion to do it; 'don't have to', 'not necessary'."
+  },
+  {
+    "id": "star-n3-19",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "山田さんの",
+    "segments": [
+      "親切さで、",
+      "困って",
+      "いる",
+      "人を"
+    ],
+    "suffix": "助けてくれる。",
+    "fullSentence": "山田さんの親切さで、困っている人を助けてくれる。",
+    "furigana": "山田さんの親切さで、困っている人を助けてくれる。",
+    "romaji": "Yamada-san no shinsetsusa de, komatte iru hito wo tasukete kureru.",
+    "english": "Thanks to Mr. Yamada’s kindness, he helps people in need.",
+    "grammarId": "N3/sa",
+    "grammarPoint": "～さ",
+    "explanation": "Express the degree or extent of a quality; '-ness', 'degree of'."
+  },
+  {
+    "id": "star-n3-20",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "彼は",
+    "segments": [
+      "英語さえ",
+      "話せれば、",
+      "その",
+      "仕事が"
+    ],
+    "suffix": "できるだろう。",
+    "fullSentence": "彼は英語さえ話せれば、その仕事ができるだろう。",
+    "furigana": "彼は英語さえ話せれば、その仕事ができるだろう。",
+    "romaji": "Kare wa eigo sae hanasereba, sono shigoto ga dekiru darou.",
+    "english": "If he could just speak English, he would probably be able to do that job.",
+    "grammarId": "N3/sae",
+    "grammarPoint": "～さえ",
+    "explanation": "Emphasizes a specific item or action; 'even', 'if only', 'as long as'."
+  },
+  {
+    "id": "star-n3-21",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "この",
+    "segments": [
+      "問題を",
+      "解決する",
+      "方法は",
+      "一つしか"
+    ],
+    "suffix": "ない。",
+    "fullSentence": "この問題を解決する方法は一つしかない。",
+    "furigana": "この問題を解決する方法は一つしかない。",
+    "romaji": "Kono mondai wo kaiketsu suru houhou wa hitotsu shika nai.",
+    "english": "There is only one way to solve this problem.",
+    "grammarId": "N3/shika-nai",
+    "grammarPoint": "～しかない",
+    "explanation": "Express the idea of 'only', 'no other option but', 'nothing else but'."
+  },
+  {
+    "id": "star-n3-22",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "まったく",
+      "知らない",
+      "人と",
+      "話すのは"
+    ],
+    "suffix": "怖い。",
+    "fullSentence": "まったく知らない人と話すのは怖い。",
+    "furigana": "まったく知らない人と話すのは怖い。",
+    "romaji": "Mattaku shiranai hito to hanasu no wa kowai.",
+    "english": "It’s scary to talk to someone I don’t know at all.",
+    "grammarId": "N3/sukoshimo-nai",
+    "grammarPoint": "すこしも〜ない",
+    "explanation": "Express a negative state or action; 'not at all', 'none whatsoever'."
+  },
+  {
+    "id": "star-n3-23",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "雨の",
+      "せいで",
+      "試合が",
+      "中止に"
+    ],
+    "suffix": "なりました。",
+    "fullSentence": "雨のせいで試合が中止になりました。",
+    "furigana": "雨のせいで試合が中止になりました。",
+    "romaji": "Ame no sei de shiai ga chuushi ni narimashita.",
+    "english": "The game was canceled because of the rain.",
+    "grammarId": "N3/sei-de",
+    "grammarPoint": "～せいで",
+    "explanation": "Indicates that something or someone caused an unfortunate result."
+  },
+  {
+    "id": "star-n3-24",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "資料を",
+    "segments": [
+      "全員に",
+      "配る",
+      "前に、",
+      "部数を"
+    ],
+    "suffix": "合わせてください。",
+    "fullSentence": "資料を全員に配る前に、部数を合わせてください。",
+    "furigana": "資料を全員に配る前に、部数を合わせてください。",
+    "romaji": "Shiryou o zen'in ni kubaru mae ni, busuu o awasete kudasai",
+    "english": "Please make sure you have the correct number of copies before distributing the materials to everyone.",
+    "grammarId": "N3/sete-kudasai",
+    "grammarPoint": "～せてください",
+    "explanation": "Requesting someone to allow or let you do something (causative request)."
+  },
+  {
+    "id": "star-n3-25",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "新しい仕事を見つけたい。",
+    "segments": [
+      "そのために、",
+      "履歴",
+      "書を",
+      "書いて"
+    ],
+    "suffix": "応募しています。",
+    "fullSentence": "新しい仕事を見つけたい。そのために、履歴書を書いて応募しています。",
+    "furigana": "新しい仕事を見つけたい。そのために、履歴書を書いて応募しています。",
+    "romaji": "Atarashii shigoto wo mitsuketai. Sono tame ni, rirekisho wo kaite oubo shiteimasu.",
+    "english": "I want to find a new job. To that end, I’m writing my resume and applying for positions.",
+    "grammarId": "N3/sono-tame-ni",
+    "grammarPoint": "～そのために",
+    "explanation": "For the purpose of; because of; in order to."
+  },
+  {
+    "id": "star-n3-26",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "会社が倒産した。",
+    "segments": [
+      "その",
+      "結果、",
+      "彼は",
+      "仕事を"
+    ],
+    "suffix": "失った。",
+    "fullSentence": "会社が倒産した。その結果、彼は仕事を失った。",
+    "furigana": "会社が倒産した。その結果、彼は仕事を失った。",
+    "romaji": "Kaisha ga tousan shita. Sono kekka, kare wa shigoto wo ushinatta.",
+    "english": "The company went bankrupt. As a result, he lost his job.",
+    "grammarId": "N3/sono-kekka",
+    "grammarPoint": "～その結果",
+    "explanation": "Shows the result or consequence of a previous action or situation; 'as a result', 'in consequence'."
+  },
+  {
+    "id": "star-n3-27",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "コーヒーを",
+      "飲む？",
+      "それとも",
+      "紅茶を"
+    ],
+    "suffix": "飲む？",
+    "fullSentence": "コーヒーを飲む？それとも紅茶を飲む？",
+    "furigana": "コーヒーを飲む？それとも紅茶を飲む？",
+    "romaji": "Koohii o nomu? Sore tomo koucha o nomu?",
+    "english": "Would you like some coffee? Or would you prefer some tea?",
+    "grammarId": "N3/sore-tomo",
+    "grammarPoint": "～？それとも～？",
+    "explanation": "Presents two alternatives or choices; 'or', 'either...or'."
+  },
+  {
+    "id": "star-n3-28",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "あの",
+      "レストランでは",
+      "野菜だけしか",
+      "売って"
+    ],
+    "suffix": "いない。",
+    "fullSentence": "あのレストランでは野菜だけしか売っていない。",
+    "furigana": "あのレストランでは野菜だけしか売っていない。",
+    "romaji": "Ano resutoran de wa yasai dake shika utte inai.",
+    "english": "That restaurant sells only vegetables.",
+    "grammarId": "N3/dake-shika",
+    "grammarPoint": "～だけしか",
+    "explanation": "Emphasizes the scarcity or insufficiency of something; 'only', 'nothing but'."
+  },
+  {
+    "id": "star-n3-29",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "試験に",
+      "合格した",
+      "けど、",
+      "まだ"
+    ],
+    "suffix": "勉強しなければならない。",
+    "fullSentence": "試験に合格したけど、まだ勉強しなければならない。",
+    "furigana": "試験に合格したけど、まだ勉強しなければならない。",
+    "romaji": "Shiken ni goukaku shita kedo, mada benkyou shinakereba naranai.",
+    "english": "I passed the exam, but I still have to study.",
+    "grammarId": "N3/dakedo",
+    "grammarPoint": "だけど",
+    "explanation": "Expresses a contrast or contradiction; 'but', 'however', 'even though'."
+  },
+  {
+    "id": "star-n3-30",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "この",
+      "パンは",
+      "焼きたてで、",
+      "まだ"
+    ],
+    "suffix": "温かいです。",
+    "fullSentence": "このパンは焼きたてで、まだ温かいです。",
+    "furigana": "このパンは焼きたてで、まだ温かいです。",
+    "romaji": "Kono pan wa yakitate de, mada atatakai desu.",
+    "english": "This bread is fresh out of the oven and still warm.",
+    "grammarId": "N3/tate",
+    "grammarPoint": "～たて",
+    "explanation": "Indicates an action that has just been completed; 'freshly', 'just'."
+  },
+  {
+    "id": "star-n3-31",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "たとえ",
+    "segments": [
+      "彼が",
+      "怒っても、",
+      "本当の",
+      "ことを"
+    ],
+    "suffix": "言いましょう。",
+    "fullSentence": "たとえ彼が怒っても、本当のことを言いましょう。",
+    "furigana": "たとえ彼が怒っても、本当のことを言いましょう。",
+    "romaji": "Tatoe kare ga okotte mo, hontou no koto wo iimashou.",
+    "english": "Even if he gets angry, let’s tell him the truth.",
+    "grammarId": "N3/tatoe-temo",
+    "grammarPoint": "～たとえ～ても",
+    "explanation": "Express a condition with 'even if'; 'no matter how'."
+  },
+  {
+    "id": "star-n3-32",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "宿題をしたところ、",
+    "segments": [
+      "先生から",
+      "もう",
+      "一つ",
+      "課題が"
+    ],
+    "suffix": "出された。",
+    "fullSentence": "宿題をしたところ、先生からもう一つ課題が出された。",
+    "furigana": "宿題をしたところ、先生からもう一つ課題が出された。",
+    "romaji": "Shukudai wo shita tokoro, sensei kara mou hitotsu kadai ga dasareta.",
+    "english": "After I finished my homework, the teacher gave me another assignment.",
+    "grammarId": "N3/ta-tokoro",
+    "grammarPoint": "～たところ",
+    "explanation": "Expresses the result or outcome of an action; 'after', 'just when', 'upon'."
+  },
+  {
+    "id": "star-n3-33",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "ドアを",
+    "segments": [
+      "開けたと",
+      "たん、",
+      "猫が",
+      "逃げ"
+    ],
+    "suffix": "出した。",
+    "fullSentence": "ドアを開けたとたん、猫が逃げ出した。",
+    "furigana": "ドアを開けたとたん、猫が逃げ出した。",
+    "romaji": "Doa wo aketa totan, neko ga nigedashita.",
+    "english": "The moment I opened the door, the cat ran away.",
+    "grammarId": "N3/ta-totan",
+    "grammarPoint": "～たとたん",
+    "explanation": "Express the moment something happens; 'as soon as', 'the moment', 'the instant'."
+  },
+  {
+    "id": "star-n3-34",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "雨が",
+      "降るたびに、",
+      "懐かしい",
+      "思い出が"
+    ],
+    "suffix": "よみがえる。",
+    "fullSentence": "雨が降るたびに、懐かしい思い出がよみがえる。",
+    "furigana": "雨が降るたびに、懐かしい思い出がよみがえる。",
+    "romaji": "Ame ga furu tabi ni, natsukashii omoide ga yomigaeru.",
+    "english": "Every time it rains, fond memories come flooding back.",
+    "grammarId": "N3/tabi-ni",
+    "grammarPoint": "～たびに",
+    "explanation": "Express 'every time' or 'whenever'."
+  },
+  {
+    "id": "star-n3-35",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "彼は",
+      "親切なんだものだから、",
+      "誰も",
+      "彼が"
+    ],
+    "suffix": "好きだ。",
+    "fullSentence": "彼は親切なんだものだから、誰も彼が好きだ。",
+    "furigana": "彼は親切なんだものだから、誰も彼が好きだ。",
+    "romaji": "Kare wa shinsetsu na n da mono da kara, dare mo kare ga suki da.",
+    "english": "Since he’s such a kind person, everyone likes him.",
+    "grammarId": "N3/da-mono-da",
+    "grammarPoint": "～だものだ",
+    "explanation": "Express the reason or cause, often used to justify something."
+  },
+  {
+    "id": "star-n3-36",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "寝ぼけ",
+      "眼で",
+      "髭を",
+      "剃ろうとして"
+    ],
+    "suffix": "怪我しちゃった。",
+    "fullSentence": "寝ぼけ眼で髭を剃ろうとして怪我しちゃった。",
+    "furigana": "寝ぼけ眼で髭を剃ろうとして怪我しちゃった。",
+    "romaji": "Nebokemana de hige o sorou to shite kega shichatta.",
+    "english": "I was still half-asleep when I tried to shave and ended up cutting myself.",
+    "grammarId": "N3/chatta",
+    "grammarPoint": "～ちゃった",
+    "explanation": "Express an unintentional action or a regretful action; 'ended up doing', 'did accidentally'."
+  },
+  {
+    "id": "star-n3-37",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "買い物に",
+      "行くついでに、",
+      "郵便局で",
+      "手紙を"
+    ],
+    "suffix": "出しましょう。",
+    "fullSentence": "買い物に行くついでに、郵便局で手紙を出しましょう。",
+    "furigana": "買い物に行くついでに、郵便局で手紙を出しましょう。",
+    "romaji": "Kaimono ni iku tsuide ni, yuubinkyoku de tegami wo dashimashou.",
+    "english": "While you’re out shopping, why not drop off a letter at the post office?",
+    "grammarId": "N3/tsuide-ni",
+    "grammarPoint": "～ついでに",
+    "explanation": "Do something while or after completing another action; 'while', 'by the way'."
+  },
+  {
+    "id": "star-n3-38",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "酸っぱい",
+    "segments": [
+      "リンゴを",
+      "バランスの",
+      "良い",
+      "デザートに"
+    ],
+    "suffix": "変える。",
+    "fullSentence": "酸っぱいリンゴをバランスの良いデザートに変える。",
+    "furigana": "酸っぱいリンゴをバランスの良いデザートに変える。",
+    "romaji": "Suppai ringo o baransu no yoi dezāto ni kaeru.",
+    "english": "Turn a sour apple into a well-balanced dessert.",
+    "grammarId": "N3/ppai",
+    "grammarPoint": "～っぱい",
+    "explanation": "Expresses fullness or completeness; 'full', 'full of', 'filled with'."
+  },
+  {
+    "id": "star-n3-39",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "窓を",
+    "segments": [
+      "開けっぱなしに",
+      "すると、",
+      "虫が",
+      "入って"
+    ],
+    "suffix": "くる。",
+    "fullSentence": "窓を開けっぱなしにすると、虫が入ってくる。",
+    "furigana": "窓を開けっぱなしにすると、虫が入ってくる。",
+    "romaji": "Mado o akeppanashi ni suru to, mushi ga haitte kuru.",
+    "english": "If you leave the window open, bugs will come in.",
+    "grammarId": "N3/ppanashi",
+    "grammarPoint": "～っぱなし",
+    "explanation": "Indicate a state where an action is left as is (unchanged or unfinished)."
+  },
+  {
+    "id": "star-n3-40",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "昨日は",
+    "segments": [
+      "友達に",
+      "会うつもりで",
+      "したが、",
+      "風邪を"
+    ],
+    "suffix": "引いてしまいました。",
+    "fullSentence": "昨日は友達に会うつもりでしたが、風邪を引いてしまいました。",
+    "furigana": "昨日は友達に会うつもりでしたが、風邪を引いてしまいました。",
+    "romaji": "Kinou wa tomodachi ni au tsumori deshita ga, kaze o hiite shimaimashita.",
+    "english": "I was planning to meet a friend yesterday, but I caught a cold.",
+    "grammarId": "N3/tsumori-deshita",
+    "grammarPoint": "～つもりでした",
+    "explanation": "Expressing a past intention or plan; 'was planning to', 'meant to'."
+  },
+  {
+    "id": "star-n3-41",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "この",
+      "映画は",
+      "面白いですから、",
+      "ぜひ"
+    ],
+    "suffix": "見てください。",
+    "fullSentence": "この映画は面白いですから、ぜひ見てください。",
+    "furigana": "この映画は面白いですから、ぜひ見てください。",
+    "romaji": "Kono eiga wa omoshiroi desu kara, zehi mite kudasai.",
+    "english": "This movie is interesting, so please be sure to watch it.",
+    "grammarId": "N3/desu-kara",
+    "grammarPoint": "ですから～",
+    "explanation": "Expresses reason or cause; 'because', 'since', 'so'."
+  },
+  {
+    "id": "star-n3-42",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "海外に行って",
+    "segments": [
+      "はじめて、",
+      "日本の",
+      "良さが",
+      "分か"
+    ],
+    "suffix": "りました。",
+    "fullSentence": "海外に行ってはじめて、日本の良さが分かりました。",
+    "furigana": "海外に行ってはじめて、日本の良さが分かりました。",
+    "romaji": "Kaigai ni itte hajimete, Nihon no yosa ga wakarimashita.",
+    "english": "It wasn’t until I went abroad that I realized how great Japan is.",
+    "grammarId": "N3/te-hajimete",
+    "grammarPoint": "～てはじめて",
+    "explanation": "Realization or action done for the first time; 'only after', 'not until'."
+  },
+  {
+    "id": "star-n3-43",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "弟は",
+    "segments": [
+      "宿題を",
+      "手",
+      "伝って",
+      "ほしいと"
+    ],
+    "suffix": "頼んだ。",
+    "fullSentence": "弟は宿題を手伝ってほしいと頼んだ。",
+    "furigana": "弟は宿題を手伝ってほしいと頼んだ。",
+    "romaji": "Otouto wa shukudai o tetsudatte hoshii to tanonda.",
+    "english": "My younger brother asked me to help him with his homework.",
+    "grammarId": "N3/te-hoshii",
+    "grammarPoint": "～てほしい",
+    "explanation": "Express a desire for someone else to do something; 'I want you to do...'."
+  },
+  {
+    "id": "star-n3-44",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "忙しくても、",
+      "毎日",
+      "勉強する",
+      "時間を"
+    ],
+    "suffix": "作る。",
+    "fullSentence": "忙しくても、毎日勉強する時間を作る。",
+    "furigana": "忙しくても、毎日勉強する時間を作る。",
+    "romaji": "Isogashikute mo, mainichi benkyou suru jikan o tsukuru.",
+    "english": "Even when I’m busy, I make time to study every day.",
+    "grammarId": "N3/temo",
+    "grammarPoint": "～ても",
+    "explanation": "'Even if', 'even though', or 'although'."
+  },
+  {
+    "id": "star-n3-45",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "彼が",
+      "新しい",
+      "仕事が",
+      "見つかると"
+    ],
+    "suffix": "いいなあ。",
+    "fullSentence": "彼が新しい仕事が見つかるといいなあ。",
+    "furigana": "彼が新しい仕事が見つかるといいなあ。",
+    "romaji": "Kare ga atarashii shigoto ga mitsukaru to ii naa.",
+    "english": "I hope he finds a new job.",
+    "grammarId": "N3/to-ii-naa",
+    "grammarPoint": "～といいなあ",
+    "explanation": "Express a wish or hope; 'it would be nice if', 'I hope that'."
+  },
+  {
+    "id": "star-n3-46",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "本屋で",
+    "segments": [
+      "「ハリー・",
+      "ポッター」",
+      "という",
+      "本を"
+    ],
+    "suffix": "買いました。",
+    "fullSentence": "本屋で「ハリー・ポッター」という本を買いました。",
+    "furigana": "本屋で「ハリー・ポッター」という本を買いました。",
+    "romaji": "Hon'ya de 'Harry Potter' to iu hon o kaimashita.",
+    "english": "I bought a book called “Harry Potter” at a bookstore.",
+    "grammarId": "N3/to-iu",
+    "grammarPoint": "～という",
+    "explanation": "Used for quoting, defining, or giving an example; 'called', 'that is to say', 'like'."
+  },
+  {
+    "id": "star-n3-47",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "日本",
+      "料理というと、",
+      "寿司が",
+      "思い"
+    ],
+    "suffix": "浮かぶ。",
+    "fullSentence": "日本料理というと、寿司が思い浮かぶ。",
+    "furigana": "日本料理というと、寿司が思い浮かぶ。",
+    "romaji": "Nihon ryouri to iu to, sushi ga omoiukabu.",
+    "english": "When people think of Japanese cuisine, sushi comes to mind.",
+    "grammarId": "N3/to-iu-to",
+    "grammarPoint": "～というと",
+    "explanation": "Used to provide an example or characteristic related to the topic; 'when it comes to', 'speaking of'."
+  },
+  {
+    "id": "star-n3-48",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "この",
+    "segments": [
+      "部屋が",
+      "汚いのは、",
+      "掃除を",
+      "しなかったというの"
+    ],
+    "suffix": "だ。",
+    "fullSentence": "この部屋が汚いのは、掃除をしなかったというのだ。",
+    "furigana": "この部屋が汚いのは、掃除をしなかったというのだ。",
+    "romaji": "Kono heya ga kitanai no wa, souji o shinakatta to iu no da.",
+    "english": "They say the room is dirty because it wasn’t cleaned.",
+    "grammarId": "N3/to-iu-no",
+    "grammarPoint": "～というの～",
+    "explanation": "Explain or emphasize the reason for a situation or action."
+  },
+  {
+    "id": "star-n3-49",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "この",
+    "segments": [
+      "問題は",
+      "難しいというのは、",
+      "解決に",
+      "時間が"
+    ],
+    "suffix": "かかるということです。",
+    "fullSentence": "この問題は難しいというのは、解決に時間がかかるということです。",
+    "furigana": "この問題は難しいというのは、解決に時間がかかるということです。",
+    "romaji": "Kono mondai wa muzukashii to iu no wa, kaiketsu ni jikan ga kakaru to iu koto desu.",
+    "english": "When we say this problem is difficult, it means it takes time to solve.",
+    "grammarId": "N3/to-iu-no-wa",
+    "grammarPoint": "～というのは",
+    "explanation": "Used to provide an explanation or definition; 'that is to say...', 'by that, I mean...'."
+  },
+  {
+    "id": "star-n3-50",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "この",
+      "部屋は",
+      "狭いというより、",
+      "居心地が"
+    ],
+    "suffix": "いい。",
+    "fullSentence": "この部屋は狭いというより、居心地がいい。",
+    "furigana": "この部屋は狭いというより、居心地がいい。",
+    "romaji": "Kono heya wa semai to iu yori, igokochi ga ii.",
+    "english": "Rather than being small, this room is cozy.",
+    "grammarId": "N3/to-iu-yori",
+    "grammarPoint": "～というより",
+    "explanation": "Express a comparison with preference; 'rather than', 'more like', 'instead of'."
+  },
+  {
+    "id": "star-n3-51",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "彼は",
+      "有名だといっても、",
+      "みんなに",
+      "知られているわけでは"
+    ],
+    "suffix": "ありません。",
+    "fullSentence": "彼は有名だといっても、みんなに知られているわけではありません。",
+    "furigana": "彼は有名だといっても、みんなに知られているわけではありません。",
+    "romaji": "Kare wa yuumei da to ittemo, minna ni shirarete iru wake de wa arimasen.",
+    "english": "Even though he is famous, that doesn’t mean everyone knows him.",
+    "grammarId": "N3/to-ittemo",
+    "grammarPoint": "～といっても",
+    "explanation": "Express the meaning 'even though', 'although', 'but'."
+  },
+  {
+    "id": "star-n3-52",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "地図に",
+      "書いてあるとおりに",
+      "行けば、",
+      "駅に"
+    ],
+    "suffix": "着きます。",
+    "fullSentence": "地図に書いてあるとおりに行けば、駅に着きます。",
+    "furigana": "地図に書いてあるとおりに行けば、駅に着きます。",
+    "romaji": "Chizu ni kaite aru toori ni ikeba, eki ni tsukimasu.",
+    "english": "If you follow the directions on the map, you’ll arrive at the station.",
+    "grammarId": "N3/toori",
+    "grammarPoint": "～とおり",
+    "explanation": "Expresses that something is done 'as is', 'as stated', or 'as instructed'."
+  },
+  {
+    "id": "star-n3-53",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "夜",
+      "遅くなるから、",
+      "今晩の",
+      "ご飯を"
+    ],
+    "suffix": "作っとく。",
+    "fullSentence": "夜遅くなるから、今晩のご飯を作っとく。",
+    "furigana": "夜遅くなるから、今晩のご飯を作っとく。",
+    "romaji": "Yoru osoku naru kara, konban no gohan wo tsukutoku.",
+    "english": "It’s going to be late tonight, so I’ll make dinner now.",
+    "grammarId": "N3/toku",
+    "grammarPoint": "～とく",
+    "explanation": "Express doing something in advance or for future convenience (casual form of ～ておく)."
+  },
+  {
+    "id": "star-n3-54",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "彼は",
+    "segments": [
+      "いつも",
+      "遅刻するところが、",
+      "今日は",
+      "早く"
+    ],
+    "suffix": "来ました。",
+    "fullSentence": "彼はいつも遅刻するところが、今日は早く来ました。",
+    "furigana": "彼はいつも遅刻するところが、今日は早く来ました。",
+    "romaji": "Kare wa itsumo chikoku suru tokoro ga, kyou wa hayaku kimashita.",
+    "english": "He’s usually late, but today he arrived early.",
+    "grammarId": "N3/tokoro-ga",
+    "grammarPoint": "～ところが",
+    "explanation": "Expresses a contrast or unexpected outcome; 'however', 'but', 'even though'."
+  },
+  {
+    "id": "star-n3-55",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "電車に",
+      "乗るところだったが、",
+      "ドアが",
+      "閉まって"
+    ],
+    "suffix": "しまった。",
+    "fullSentence": "電車に乗るところだったが、ドアが閉まってしまった。",
+    "furigana": "電車に乗るところだったが、ドアが閉まってしまった。",
+    "romaji": "Densha ni noru tokoro datta ga, doa ga shimatte shimatta.",
+    "english": "I was about to get on the train, but the doors closed.",
+    "grammarId": "N3/tokoro-datta",
+    "grammarPoint": "～ところだった",
+    "explanation": "Expresses a near miss or a situation that almost happened; 'was just about to', 'almost', 'nearly'."
+  },
+  {
+    "id": "star-n3-56",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "ところで、",
+      "昨日の",
+      "宿題は",
+      "もう"
+    ],
+    "suffix": "終わりましたか？",
+    "fullSentence": "ところで、昨日の宿題はもう終わりましたか？",
+    "furigana": "ところで、昨日の宿題はもう終わりましたか？",
+    "romaji": "Tokorode, kinou no shukudai wa mou owari mashita ka?",
+    "english": "By the way, have you finished yesterday’s homework yet?",
+    "grammarId": "N3/tokorode",
+    "grammarPoint": "ところで",
+    "explanation": "Used for changing the topic or bringing up a new topic; 'by the way', 'speaking of'."
+  },
+  {
+    "id": "star-n3-57",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "明日雨が",
+    "segments": [
+      "降ると",
+      "したら、",
+      "傘を",
+      "持って"
+    ],
+    "suffix": "行きましょう。",
+    "fullSentence": "明日雨が降るとしたら、傘を持って行きましょう。",
+    "furigana": "明日雨が降るとしたら、傘を持って行きましょう。",
+    "romaji": "Ashita ame ga furu to shitara, kasa wo motte ikimashou.",
+    "english": "If it’s going to rain tomorrow, let’s bring an umbrella.",
+    "grammarId": "N3/to-shitara",
+    "grammarPoint": "～としたら",
+    "explanation": "Express a hypothetical situation; 'if', 'suppose', 'assuming'."
+  },
+  {
+    "id": "star-n3-58",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "この",
+      "本は",
+      "参考",
+      "書として"
+    ],
+    "suffix": "使われます。",
+    "fullSentence": "この本は参考書として使われます。",
+    "furigana": "この本は参考書として使われます。",
+    "romaji": "Kono hon wa sankousho to shite tsukawaremasu.",
+    "english": "This book is used as a reference book.",
+    "grammarId": "N3/to-shite",
+    "grammarPoint": "～として",
+    "explanation": "Indicates a role, capacity, or identity; 'as', 'in the capacity of'."
+  },
+  {
+    "id": "star-n3-59",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "どんなに辛いことか、",
+    "segments": [
+      "彼女は",
+      "毎日",
+      "頑",
+      "張って"
+    ],
+    "suffix": "働いています。",
+    "fullSentence": "どんなに辛いことか、彼女は毎日頑張って働いています。",
+    "furigana": "どんなに辛いことか、彼女は毎日頑張って働いています。",
+    "romaji": "Donna ni tsurai koto ka, kanojo wa mainichi ganbatte hataraiteimasu.",
+    "english": "No matter how difficult it is, she works hard every day.",
+    "grammarId": "N3/donna-ni-koto-ka",
+    "grammarPoint": "～どんなに～ことか",
+    "explanation": "Expresses the extent of something or emphasizes the degree of a condition or situation."
+  },
+  {
+    "id": "star-n3-60",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "どんなに",
+      "勉強しても、",
+      "まだわから",
+      "ないことが"
+    ],
+    "suffix": "ある。",
+    "fullSentence": "どんなに勉強しても、まだわからないことがある。",
+    "furigana": "どんなに勉強しても、まだわからないことがある。",
+    "romaji": "Donna ni benkyou shite mo, mada wakaranai koto ga aru.",
+    "english": "No matter how much I study, there are still things I don’t understand.",
+    "grammarId": "N3/donna-ni-temo",
+    "grammarPoint": "どんなに～ても",
+    "explanation": "Expresses 'no matter how much' or 'even if'; emphasizes the degree of a situation."
+  },
+  {
+    "id": "star-n3-61",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "この",
+    "segments": [
+      "問題を",
+      "解けないことは",
+      "ないが、",
+      "時間が"
+    ],
+    "suffix": "かかりそうだ。",
+    "fullSentence": "この問題を解けないことはないが、時間がかかりそうだ。",
+    "furigana": "この問題を解けないことはないが、時間がかかりそうだ。",
+    "romaji": "Kono mondai wo tokenai koto wa nai ga, jikan ga kakari sou da.",
+    "english": "It’s not that I can’t solve this problem, but it looks like it’s going to take some time.",
+    "grammarId": "N3/nai-koto-wa-nai",
+    "grammarPoint": "～ないことはない",
+    "explanation": "Express the idea that 'it's not that it's impossible' or 'it's not that it cannot be done'."
+  },
+  {
+    "id": "star-n3-62",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "この",
+      "事故を",
+      "報告しないと、",
+      "問題が"
+    ],
+    "suffix": "大きくなる。",
+    "fullSentence": "この事故を報告しないと、問題が大きくなる。",
+    "furigana": "この事故を報告しないと、問題が大きくなる。",
+    "romaji": "Kono jiko wo houkoku shinai to, mondai ga ookiku naru.",
+    "english": "If we don’t report this accident, the problem will get worse.",
+    "grammarId": "N3/nai-to",
+    "grammarPoint": "～ないと",
+    "explanation": "Express a condition; 'if... not', 'unless', 'must'."
+  },
+  {
+    "id": "star-n3-63",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "",
+    "segments": [
+      "彼は",
+      "日本語、",
+      "英語、",
+      "中国語などを"
+    ],
+    "suffix": "話せます。",
+    "fullSentence": "彼は日本語、英語、中国語などを話せます。",
+    "furigana": "彼は日本語、英語、中国語などを話せます。",
+    "romaji": "Kare wa nihongo, eigo, chuugokugo nado wo hanasemasu.",
+    "english": "He speaks Japanese, English, Chinese, and other languages.",
+    "grammarId": "N3/nado",
+    "grammarPoint": "～など",
+    "explanation": "Indicates a non-exhaustive list of examples; 'such as', 'things like', 'among others'."
+  },
+  {
+    "id": "star-n3-64",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "日本において、",
+    "segments": [
+      "お盆は",
+      "家族が",
+      "集まる",
+      "大切な"
+    ],
+    "suffix": "行事です。",
+    "fullSentence": "日本において、お盆は家族が集まる大切な行事です。",
+    "furigana": "日本において、お盆は家族が集まる大切な行事です。",
+    "romaji": "Nihon ni oite, obon wa kazoku ga atsumaru taisetsu na gyouji desu.",
+    "english": "In Japan, Obon is an important occasion when families gather.",
+    "grammarId": "N3/ni-oite",
+    "grammarPoint": "～において",
+    "explanation": "Indicates the place, time, or context where an action or situation takes place."
+  },
+  {
+    "id": "star-n3-65",
+    "level": "N3",
+    "jlpt": 3,
+    "prefix": "母は忙しいので、",
+    "segments": [
+      "私が",
+      "母にか",
+      "わって",
+      "料理を"
+    ],
+    "suffix": "作ります。",
+    "fullSentence": "母は忙しいので、私が母にかわって料理を作ります。",
+    "furigana": "母は忙しいので、私が母にかわって料理を作ります。",
+    "romaji": "Haha wa isogashii no de, watashi ga haha ni kawatte ryouri wo tsukurimasu.",
+    "english": "My mother is busy, so I’ll cook in her place.",
+    "grammarId": "N3/ni-kawatte",
+    "grammarPoint": "～にかわって",
+    "explanation": "Expresses 'in place of', 'on behalf of', or 'instead of'."
+  },
+  {
+    "id": "star-n2-1",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "今日は",
+    "segments": [
+      "映画を",
+      "見るあるいは",
+      "ショッピングを",
+      "する"
+    ],
+    "suffix": "予定です。",
+    "fullSentence": "今日は映画を見るあるいはショッピングをする予定です。",
+    "furigana": "今日は映画を見るあるいはショッピングをする予定です。",
+    "romaji": "Kyou wa eiga wo miru aruiwa shoppingu wo suru yotei desu.",
+    "english": "Today, I plan to watch a movie or go shopping.",
+    "grammarId": "N2/a-aruiwa-b",
+    "grammarPoint": "A あるいは B",
+    "explanation": "Indicates alternatives; 'A or B', 'either A or B'."
+  },
+  {
+    "id": "star-n2-2",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "話がちょっと長くなったね。",
+    "segments": [
+      "さて、",
+      "もっと",
+      "喜美子さんの",
+      "ことを"
+    ],
+    "suffix": "教えてください。",
+    "fullSentence": "話がちょっと長くなったね。さて、もっと喜美子さんのことを教えてください。",
+    "furigana": "話がちょっと長くなったね。さて、もっと喜美子さんのことを教えてください。",
+    "romaji": "Hanashi ga chotto nagaku natta ne. Sate, motto Kimiko-san no koto wo oshiete kudasai.",
+    "english": "This has gone on a bit, hasn’t it? Now, please tell me more about Kimiko.",
+    "grammarId": "N2/a-sate-b",
+    "grammarPoint": "A。さて B。",
+    "explanation": "Indicates a sudden change or shift in the topic or situation; 'now then', 'well', 'so'."
+  },
+  {
+    "id": "star-n2-3",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "私は立派な",
+    "segments": [
+      "成果を",
+      "出したい、",
+      "すなわち、",
+      "成功したいの"
+    ],
+    "suffix": "です。",
+    "fullSentence": "私は立派な成果を出したい、すなわち、成功したいのです。",
+    "furigana": "私は立派な成果を出したい、すなわち、成功したいのです。",
+    "romaji": "Watashi wa rippana seika wo dashitai, sunawachi, seikou shitai no desu.",
+    "english": "I want to achieve great results—in other words, I want to succeed.",
+    "grammarId": "N2/a-sunawachi-b",
+    "grammarPoint": "A すなわち B。",
+    "explanation": "Express that A is equivalent to B; 'in other words', 'namely', 'that is to say'."
+  },
+  {
+    "id": "star-n2-4",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "この",
+      "ボタンを",
+      "押すと、",
+      "ドアが"
+    ],
+    "suffix": "開きます。",
+    "fullSentence": "このボタンを押すと、ドアが開きます。",
+    "furigana": "このボタンを押すと、ドアが開きます。",
+    "romaji": "Kono botan wo osu to, doa ga hirakimasu.",
+    "english": "Press this button to open the door.",
+    "grammarId": "N2/suruto",
+    "grammarPoint": "A。すると B。",
+    "explanation": "Indicates that when action A is done, action or event B follows; 'then', 'when', 'if'."
+  },
+  {
+    "id": "star-n2-5",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "山田さん。",
+    "segments": [
+      "そういえば、",
+      "彼女は",
+      "今",
+      "週末"
+    ],
+    "suffix": "旅行しています。",
+    "fullSentence": "山田さん。そういえば、彼女は今週末旅行しています。",
+    "furigana": "山田さん。そういえば、彼女は今週末旅行しています。",
+    "romaji": "Yamada-san. Souieba, kanojo wa konshuumatsu ryokou shite imasu.",
+    "english": "Ms. Yamada. Come to think of it, she’s traveling this weekend.",
+    "grammarId": "N2/souieba",
+    "grammarPoint": "A。そういえば B。",
+    "explanation": "Recalling something related to A; 'speaking of which', 'by the way', 'now that you mention it'."
+  },
+  {
+    "id": "star-n2-6",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "このレストランは混んでいます。",
+    "segments": [
+      "そこで",
+      "別の",
+      "場所で",
+      "ランチを"
+    ],
+    "suffix": "食べましょう。",
+    "fullSentence": "このレストランは混んでいます。そこで別の場所でランチを食べましょう。",
+    "furigana": "このレストランは混んでいます。そこで別の場所でランチを食べましょう。",
+    "romaji": "Kono resutoran wa kondeimasu. Soko de betsu no basho de ranchi wo tabemashou.",
+    "english": "This restaurant is crowded. Let’s have lunch somewhere else instead.",
+    "grammarId": "N2/sokode",
+    "grammarPoint": "A。そこで B。",
+    "explanation": "Expresses 'therefore' or 'because of that'."
+  },
+  {
+    "id": "star-n2-7",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "このネックレスをみんなに",
+    "segments": [
+      "見せると、",
+      "彼らはすぐに",
+      "それが本物だと",
+      "気づくで"
+    ],
+    "suffix": "しょう。",
+    "fullSentence": "このネックレスをみんなに見せると、彼らはすぐにそれが本物だと気づくでしょう。",
+    "furigana": "このネックレスをみんなに見せると、彼らはすぐにそれが本物だと気づくでしょう。",
+    "romaji": "Kono nekkuresu o minna ni miseru to, karera wa sugu ni sore ga honmono da to kizuku deshou.",
+    "english": "When I show this necklace to everyone, they’ll immediately realize it’s real.",
+    "grammarId": "N2/sorega",
+    "grammarPoint": "A。それがB。",
+    "explanation": "Expressing 'that's exactly what A is; in other words, B'."
+  },
+  {
+    "id": "star-n2-8",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "試験に落ちた。",
+    "segments": [
+      "それで",
+      "再",
+      "試験を",
+      "受けな"
+    ],
+    "suffix": "ければならない。",
+    "fullSentence": "試験に落ちた。それで再試験を受けなければならない。",
+    "furigana": "試験に落ちた。それで再試験を受けなければならない。",
+    "romaji": "Shiken ni ochita. Sore de sai shiken wo ukenakereba naranai.",
+    "english": "I failed the exam. So I have to take the retest.",
+    "grammarId": "N2/sore-de",
+    "grammarPoint": "A。それで B。",
+    "explanation": "Express a sequence of events or cause-and-effect; 'and then', 'so', 'because of that'."
+  },
+  {
+    "id": "star-n2-9",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "矛盾した意見を持つ人も",
+    "segments": [
+      "いるだろうが、",
+      "それでも",
+      "話し合いは",
+      "続けな"
+    ],
+    "suffix": "ければならない。",
+    "fullSentence": "矛盾した意見を持つ人もいるだろうが、それでも話し合いは続けなければならない。",
+    "furigana": "矛盾した意見を持つ人もいるだろうが、それでも話し合いは続けなければならない。",
+    "romaji": "Mujun shita iken o motsu hito mo iru darou ga, sore demo hanashiai wa tsudzuke nakereba naranai",
+    "english": "Some people may hold conflicting opinions, but we must continue the discussion nonetheless.",
+    "grammarId": "N2/sore-demo",
+    "grammarPoint": "A。それでも B。",
+    "explanation": "Expresses 'even so', 'nevertheless', 'still', or 'but'; used to contrast two statements."
+  },
+  {
+    "id": "star-n2-10",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "昨日は晴れていた。",
+    "segments": [
+      "それなのに、",
+      "彼は",
+      "傘を",
+      "持って"
+    ],
+    "suffix": "いた。",
+    "fullSentence": "昨日は晴れていた。それなのに、彼は傘を持っていた。",
+    "furigana": "昨日は晴れていた。それなのに、彼は傘を持っていた。",
+    "romaji": "Kinou wa harete ita. Sore nanoni, kare wa kasa wo motte ita.",
+    "english": "It was sunny yesterday. Yet, he was carrying an umbrella.",
+    "grammarId": "N2/sorenanoni",
+    "grammarPoint": "A。それなのに B。",
+    "explanation": "Express contrast or a contradiction between two situations or facts; 'even though', 'despite', 'but still'."
+  },
+  {
+    "id": "star-n2-11",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "それは",
+      "そうと、",
+      "今日の",
+      "天気は"
+    ],
+    "suffix": "いいですね。",
+    "fullSentence": "それはそうと、今日の天気はいいですね。",
+    "furigana": "それはそうと、今日の天気はいいですね。",
+    "romaji": "Sore wa sou to, kyou no tenki wa ii desu ne.",
+    "english": "By the way, the weather is nice today.",
+    "grammarId": "N2/a-sore-wa-sou-to-b",
+    "grammarPoint": "A それはそうと B。",
+    "explanation": "Changing the topic; 'by the way', 'speaking of which'."
+  },
+  {
+    "id": "star-n2-12",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "明日から出張で不在になります。",
+    "segments": [
+      "ただし、",
+      "緊急の",
+      "場合は",
+      "携帯に"
+    ],
+    "suffix": "連絡してください。",
+    "fullSentence": "明日から出張で不在になります。ただし、緊急の場合は携帯に連絡してください。",
+    "furigana": "明日から出張で不在になります。ただし、緊急の場合は携帯に連絡してください。",
+    "romaji": "Ashita kara shucchou de fuzai ni narimasu. Tadashi, kinkyuu no baai wa keitai ni renraku shite kudasai.",
+    "english": "I will be away on a business trip starting tomorrow. However, please contact me on my cell phone in case of an emergency.",
+    "grammarId": "N2/a-tadashi-b",
+    "grammarPoint": "A。ただしB。",
+    "explanation": "Adding a condition or exception to a statement; 'however', 'provided that', 'but only if'."
+  },
+  {
+    "id": "star-n2-13",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "彼女が料理上手だって、",
+    "segments": [
+      "みんな",
+      "彼女の",
+      "作った",
+      "料理を"
+    ],
+    "suffix": "楽しみにしています。",
+    "fullSentence": "彼女が料理上手だって、みんな彼女の作った料理を楽しみにしています。",
+    "furigana": "彼女が料理上手だって、みんな彼女の作った料理を楽しみにしています。",
+    "romaji": "Kanojo ga ryouri jouzu datte, minna kanojo no tsukutta ryouri wo tanoshimi ni shiteimasu.",
+    "english": "Since she’s a great cook, everyone looks forward to the meals she makes.",
+    "grammarId": "N2/datte",
+    "grammarPoint": "A。だって B。",
+    "explanation": "Used to give a reason, express cause or bring up a topic; 'because', 'since', 'it's just that'."
+  },
+  {
+    "id": "star-n2-14",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "彼女が泣いている。",
+    "segments": [
+      "ということは",
+      "何か",
+      "悲しいことが",
+      "あったに"
+    ],
+    "suffix": "違いない。",
+    "fullSentence": "彼女が泣いている。ということは何か悲しいことがあったに違いない。",
+    "furigana": "彼女が泣いている。ということは何か悲しいことがあったに違いない。",
+    "romaji": "Kanojo ga naite iru. To iu koto wa nanika kanashii koto ga atta ni chigainai.",
+    "english": "She is crying. That must mean something sad has happened.",
+    "grammarId": "N2/a-to-iu-koto-wa-b",
+    "grammarPoint": "A。ということは B。",
+    "explanation": "Expresses the meaning 'if A, that means B' or 'A implies B'."
+  },
+  {
+    "id": "star-n2-15",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "彼は非常に疲れています。というのは、",
+    "segments": [
+      "昨夜、",
+      "車で",
+      "遠くまで",
+      "行って"
+    ],
+    "suffix": "きたためです。",
+    "fullSentence": "彼は非常に疲れています。というのは、昨夜、車で遠くまで行ってきたためです。",
+    "furigana": "彼は非常に疲れています。というのは、昨夜、車で遠くまで行ってきたためです。",
+    "romaji": "Kare wa hijou ni tsukareteimasu. To iu no wa, sakuya, kuruma de tooku made itte kita tame desu.",
+    "english": "He is very tired. That’s because he drove a long way last night.",
+    "grammarId": "N2/toiu-no-wa",
+    "grammarPoint": "A。というのは B。",
+    "explanation": "Used to give an explanation or provide additional information for A; 'that is to say', 'in other words'."
+  },
+  {
+    "id": "star-n2-16",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "このプロジェクトは成功しました。",
+    "segments": [
+      "要するに、",
+      "私たちのチームは",
+      "素晴らしい",
+      "仕事を"
+    ],
+    "suffix": "しました。",
+    "fullSentence": "このプロジェクトは成功しました。要するに、私たちのチームは素晴らしい仕事をしました。",
+    "furigana": "このプロジェクトは成功しました。要するに、私たちのチームは素晴らしい仕事をしました。",
+    "romaji": "Kono purojekuto wa seikou shimashita. Yousuru ni, watashitachi no chiimu wa subarashii shigoto o shimashita.",
+    "english": "This project was a success. In short, our team did a great job.",
+    "grammarId": "N2/a-yousuru-ni-b",
+    "grammarPoint": "A。要するに B。",
+    "explanation": "Expressing 'in short', 'in a nutshell', or 'to sum up' when restating or summarizing A as B."
+  },
+  {
+    "id": "star-n2-17",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "この",
+      "エリアは",
+      "工事",
+      "中につき、"
+    ],
+    "suffix": "通行止めです。",
+    "fullSentence": "このエリアは工事中につき、通行止めです。",
+    "furigana": "このエリアは工事中につき、通行止めです。",
+    "romaji": "Kono eria wa koujichuu ni tsuki, tsuukoudome desu.",
+    "english": "This area is closed to traffic due to construction.",
+    "grammarId": "N2/ni-tsuki",
+    "grammarPoint": "Noun につき",
+    "explanation": "Indicates the reason, cause, or condition for something; 'due to', 'regarding', 'per'."
+  },
+  {
+    "id": "star-n2-18",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "駅前",
+      "広場に",
+      "て",
+      "イベントが"
+    ],
+    "suffix": "開催されます。",
+    "fullSentence": "駅前広場にてイベントが開催されます。",
+    "furigana": "駅前広場にてイベントが開催されます。",
+    "romaji": "Ekimae hiroba nite ibento ga kaisai saremasu.",
+    "english": "An event will be held at the station square.",
+    "grammarId": "N2/noun-nite",
+    "grammarPoint": "Noun にて",
+    "explanation": "Expresses location or means; 'at', 'in', 'by', 'with'."
+  },
+  {
+    "id": "star-n2-19",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "料理が得意な彼のことだから、",
+    "segments": [
+      "美味しい",
+      "料理を",
+      "作って",
+      "くれるで"
+    ],
+    "suffix": "しょう。",
+    "fullSentence": "料理が得意な彼のことだから、美味しい料理を作ってくれるでしょう。",
+    "furigana": "料理が得意な彼のことだから、美味しい料理を作ってくれるでしょう。",
+    "romaji": "Ryouri ga tokui na kare no koto dakara, oishii ryouri wo tsukutte kureru deshou.",
+    "english": "Since he’s good at cooking, he’ll probably make something delicious.",
+    "grammarId": "N2/noun-no-koto-dakara",
+    "grammarPoint": "Noun の ことだから",
+    "explanation": "Used to provide a reason or explanation based on one's knowledge about the noun; 'since', 'because', 'knowing'."
+  },
+  {
+    "id": "star-n2-20",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "日本料理をはじめ、",
+    "segments": [
+      "さまざまな",
+      "料理が",
+      "この",
+      "レストランで"
+    ],
+    "suffix": "楽しめます。",
+    "fullSentence": "日本料理をはじめ、さまざまな料理がこのレストランで楽しめます。",
+    "furigana": "日本料理をはじめ、さまざまな料理がこのレストランで楽しめます。",
+    "romaji": "Nihon ryouri wo hajime, samazama na ryouri ga kono resutoran de tanoshimemasu.",
+    "english": "At this restaurant, you can enjoy a variety of cuisines, including Japanese cuisine.",
+    "grammarId": "N2/noun-wo-hajime",
+    "grammarPoint": "Noun を はじめ",
+    "explanation": "Meaning 'starting with', 'including', 'not only... but also'."
+  },
+  {
+    "id": "star-n2-21",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "東京をはじめとして、",
+    "segments": [
+      "日本には",
+      "たくさんの",
+      "観光",
+      "スポットが"
+    ],
+    "suffix": "あります。",
+    "fullSentence": "東京をはじめとして、日本にはたくさんの観光スポットがあります。",
+    "furigana": "東京をはじめとして、日本にはたくさんの観光スポットがあります。",
+    "romaji": "Tōkyō o hajime to shite, Nihon ni wa takusan no kankō supotto ga arimasu.",
+    "english": "Starting with Tokyo, there are many tourist attractions in Japan.",
+    "grammarId": "N2/noun-wo-hajime-to-shite",
+    "grammarPoint": "Noun を はじめとして",
+    "explanation": "Expresses 'starting with', 'beginning with', or 'including'."
+  },
+  {
+    "id": "star-n2-22",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "彼はフランス語を",
+    "segments": [
+      "はじめと",
+      "する",
+      "外国",
+      "語が"
+    ],
+    "suffix": "話せる。",
+    "fullSentence": "彼はフランス語をはじめとする外国語が話せる。",
+    "furigana": "彼はフランス語をはじめとする外国語が話せる。",
+    "romaji": "Kare wa furansugo o hajime to suru gaikokugo ga hanaseru.",
+    "english": "He can speak foreign languages, including French.",
+    "grammarId": "N2/noun-o-hajime-to-suru-noun",
+    "grammarPoint": "Noun を はじめとする Noun",
+    "explanation": "Indicates a representative example of a group; 'starting with', 'including', 'such as'."
+  },
+  {
+    "id": "star-n2-23",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "環境",
+      "問題をめぐって、",
+      "多くの",
+      "議論が"
+    ],
+    "suffix": "行われています。",
+    "fullSentence": "環境問題をめぐって、多くの議論が行われています。",
+    "furigana": "環境問題をめぐって、多くの議論が行われています。",
+    "romaji": "Kankyō mondai o megutte, ōku no giron ga okonawarete imasu.",
+    "english": "There is a great deal of debate surrounding environmental issues.",
+    "grammarId": "N2/noun-wo-megutte",
+    "grammarPoint": "Noun を めぐって",
+    "explanation": "Concerning; with regard to; about"
+  },
+  {
+    "id": "star-n2-24",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "環境",
+    "segments": [
+      "問題をめぐる",
+      "国際",
+      "会議が",
+      "開か"
+    ],
+    "suffix": "れます。",
+    "fullSentence": "環境問題をめぐる国際会議が開かれます。",
+    "furigana": "環境問題をめぐる国際会議が開かれます。",
+    "romaji": "Kankyō mondai o meguru kokusai kaigi ga hirakaremasu.",
+    "english": "An international conference on environmental issues will be held.",
+    "grammarId": "N2/noun-o-meguru-noun",
+    "grammarPoint": "Noun を めぐる Noun",
+    "explanation": "Indicate a situation or event revolving around a particular noun; 'concerning', 'regarding', 'pertaining to'."
+  },
+  {
+    "id": "star-n2-25",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "そのデータをもとに、私たちは",
+    "segments": [
+      "最善の",
+      "行動を",
+      "判断する",
+      "必要が"
+    ],
+    "suffix": "あります。",
+    "fullSentence": "そのデータをもとに、私たちは最善の行動を判断する必要があります。",
+    "furigana": "そのデータをもとに、私たちは最善の行動を判断する必要があります。",
+    "romaji": "Sono dēta o moto ni, watashitachi wa saizen no koudou o handan suru hitsuyou ga arimasu.",
+    "english": "Based on that data, we need to determine the best course of action.",
+    "grammarId": "N2/noun-o-moto-ni",
+    "grammarPoint": "Noun を もとに",
+    "explanation": "Based on; drawing from; using as a reference."
+  },
+  {
+    "id": "star-n2-26",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "彼の",
+      "意見をもと",
+      "にして、",
+      "計画を"
+    ],
+    "suffix": "変更しました。",
+    "fullSentence": "彼の意見をもとにして、計画を変更しました。",
+    "furigana": "彼の意見をもとにして、計画を変更しました。",
+    "romaji": "Kare no iken o moto ni shite, keikaku o henkō shimashita.",
+    "english": "Based on his opinion, we changed the plan.",
+    "grammarId": "N2/noun-wo-moto-ni-shite",
+    "grammarPoint": "Noun を もとにして",
+    "explanation": "Based on; using; utilizing."
+  },
+  {
+    "id": "star-n2-27",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "山田さんは",
+      "誰にも",
+      "話すことなく",
+      "会社を"
+    ],
+    "suffix": "辞めました。",
+    "fullSentence": "山田さんは誰にも話すことなく会社を辞めました。",
+    "furigana": "山田さんは誰にも話すことなく会社を辞めました。",
+    "romaji": "Yamada-san wa dare ni mo hanasu koto naku kaisha o yamemashita.",
+    "english": "Mr. Yamada quit his job without telling anyone.",
+    "grammarId": "N2/kotonaku",
+    "grammarPoint": "Verb ことなく",
+    "explanation": "Means 'without doing', 'not doing', or 'without happening'."
+  },
+  {
+    "id": "star-n2-28",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "この",
+      "問題に",
+      "よく",
+      "考えないことには、"
+    ],
+    "suffix": "解決できない。",
+    "fullSentence": "この問題によく考えないことには、解決できない。",
+    "furigana": "この問題によく考えないことには、解決できない。",
+    "romaji": "Kono mondai ni yoku kangaenai koto ni wa, kaiketsu dekinai.",
+    "english": "You can’t solve this problem without giving it some thought.",
+    "grammarId": "N2/nai-koto-ni-wa-nai",
+    "grammarPoint": "Verb ないことには Verb ない",
+    "explanation": "Express that something cannot be done without meeting a certain condition."
+  },
+  {
+    "id": "star-n2-29",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "長い",
+      "時間",
+      "待ったあげく、",
+      "電車が"
+    ],
+    "suffix": "来なかった。",
+    "fullSentence": "長い時間待ったあげく、電車が来なかった。",
+    "furigana": "長い時間待ったあげく、電車が来なかった。",
+    "romaji": "Nagai jikan matta ageku, densha ga konakatta.",
+    "english": "After waiting for a long time, the train never came.",
+    "grammarId": "N2/ageku",
+    "grammarPoint": "～あげく",
+    "explanation": "Expresses the outcome of a series of actions or events; 'in the end', 'finally', 'after'."
+  },
+  {
+    "id": "star-n2-30",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "昨日は",
+      "疲れすぎたあまり、",
+      "朝まで",
+      "眠り"
+    ],
+    "suffix": "続けました。",
+    "fullSentence": "昨日は疲れすぎたあまり、朝まで眠り続けました。",
+    "furigana": "昨日は疲れすぎたあまり、朝まで眠り続けました。",
+    "romaji": "Kinō wa tsukare-sugita amari, asa made nemuri tsuzukemashita.",
+    "english": "I was so exhausted yesterday that I slept straight through until morning.",
+    "grammarId": "N2/amari",
+    "grammarPoint": "～あまり",
+    "explanation": "Expresses the result of doing something excessively or beyond a certain point."
+  },
+  {
+    "id": "star-n2-31",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "元気",
+      "な",
+      "うちに、",
+      "旅行を"
+    ],
+    "suffix": "楽しんでください。",
+    "fullSentence": "元気なうちに、旅行を楽しんでください。",
+    "furigana": "元気なうちに、旅行を楽しんでください。",
+    "romaji": "Genki na uchi ni, ryokō o tanoshinde kudasai.",
+    "english": "Enjoy traveling while you’re still healthy.",
+    "grammarId": "N2/uchi-ni",
+    "grammarPoint": "～うちに",
+    "explanation": "Expresses doing something while a certain condition still holds; 'while', 'before', 'as long as'."
+  },
+  {
+    "id": "star-n2-32",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "長い",
+      "時間を",
+      "かけがいの",
+      "ある"
+    ],
+    "suffix": "仕事だ。",
+    "fullSentence": "長い時間をかけがいのある仕事だ。",
+    "furigana": "長い時間をかけがいのある仕事だ。",
+    "romaji": "Nagai jikan o kake-gai no aru shigoto da.",
+    "english": "It is work that makes the time spent worthwhile.",
+    "grammarId": "N2/gai",
+    "grammarPoint": "～がい",
+    "explanation": "Expresses 'worth doing' for verbs."
+  },
+  {
+    "id": "star-n2-33",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "毎日",
+      "勉強したかいが",
+      "あって、",
+      "テストに"
+    ],
+    "suffix": "合格しました。",
+    "fullSentence": "毎日勉強したかいがあって、テストに合格しました。",
+    "furigana": "毎日勉強したかいがあって、テストに合格しました。",
+    "romaji": "Mainichi benkyō shita kai ga atte, tesuto ni gōkaku shimashita.",
+    "english": "My daily studying paid off, and I passed the test.",
+    "grammarId": "N2/kaiga-atte",
+    "grammarPoint": "～かいがあって",
+    "explanation": "Used to express that an effort is worth it or has value; 'to be worth the effort' or 'to pay off'."
+  },
+  {
+    "id": "star-n2-34",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "長い",
+      "間",
+      "苦労したかいも",
+      "なく、"
+    ],
+    "suffix": "失敗してしまった。",
+    "fullSentence": "長い間苦労したかいもなく、失敗してしまった。",
+    "furigana": "長い間苦労したかいもなく、失敗してしまった。",
+    "romaji": "Nagai aida kurō shita kai mo naku, shippai shite shimatta.",
+    "english": "All my hard work over a long period of time was for nothing; I ended up failing.",
+    "grammarId": "N2/kai-mo-naku",
+    "grammarPoint": "～かいもなく",
+    "explanation": "Expresses the meaning of 'without worth', 'in vain', 'fruitless'."
+  },
+  {
+    "id": "star-n2-35",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "彼女は",
+      "食べかけの",
+      "リンゴを",
+      "置いて"
+    ],
+    "suffix": "出かけた。",
+    "fullSentence": "彼女は食べかけのリンゴを置いて出かけた。",
+    "furigana": "彼女は食べかけのリンゴを置いて出かけた。",
+    "romaji": "Kanojo wa tabe-kake no ringo o oite dekaketa.",
+    "english": "She put down the apple she had been eating and went out.",
+    "grammarId": "N2/kakeru",
+    "grammarPoint": "～かける",
+    "explanation": "Indicates a process or action is 'in progress' or 'halfway'."
+  },
+  {
+    "id": "star-n2-36",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "私は",
+      "遅刻しがちなので、",
+      "もっと",
+      "早く"
+    ],
+    "suffix": "起きないといけません。",
+    "fullSentence": "私は遅刻しがちなので、もっと早く起きないといけません。",
+    "furigana": "私は遅刻しがちなので、もっと早く起きないといけません。",
+    "romaji": "Watashi wa chikoku shi-gachi na no de, motto hayaku okinai to ikemasen.",
+    "english": "I tend to be late, so I need to wake up earlier.",
+    "grammarId": "N2/gachi",
+    "grammarPoint": "～がち",
+    "explanation": "Expresses that something tends to occur frequently or habitually."
+  },
+  {
+    "id": "star-n2-37",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "駅に着くか着か",
+    "segments": [
+      "ないかの",
+      "うちに、",
+      "雨が",
+      "降り"
+    ],
+    "suffix": "出した。",
+    "fullSentence": "駅に着くか着かないかのうちに、雨が降り出した。",
+    "furigana": "駅に着くか着かないかのうちに、雨が降り出した。",
+    "romaji": "Eki ni tsuku ka tsukanai ka no uchi ni, ame ga furidashita.",
+    "english": "It started raining just as I was about to arrive at the station.",
+    "grammarId": "N2/ka-naika-no-uchi-ni",
+    "grammarPoint": "～か～ないかのうちに",
+    "explanation": "Expresses an action that occurs immediately after another action; 'as soon as', 'no sooner than', 'the moment'."
+  },
+  {
+    "id": "star-n2-38",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "彼は",
+      "あまりにも",
+      "無責任で、",
+      "約束を"
+    ],
+    "suffix": "破りかねない。",
+    "fullSentence": "彼はあまりにも無責任で、約束を破りかねない。",
+    "furigana": "彼はあまりにも無責任で、約束を破りかねない。",
+    "romaji": "Kare wa amarini mo musekinin de, yakusoku o yaburi-kane nai.",
+    "english": "He is so irresponsible that he might break his promise.",
+    "grammarId": "N2/kane-nai",
+    "grammarPoint": "～かねない",
+    "explanation": "Express the likelihood of a negative outcome or consequence."
+  },
+  {
+    "id": "star-n2-39",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "その",
+      "問題は",
+      "難しいので、",
+      "私には"
+    ],
+    "suffix": "解決しかねます。",
+    "fullSentence": "その問題は難しいので、私には解決しかねます。",
+    "furigana": "その問題は難しいので、私には解決しかねます。",
+    "romaji": "Sono mondai wa muzukashii no de, watashi ni wa kaiketsu shi-kanemasu.",
+    "english": "That problem is difficult, so I’m afraid I can’t solve it.",
+    "grammarId": "N2/kaneru",
+    "grammarPoint": "～かねる",
+    "explanation": "Express inability or impossibility of doing an action (often as a polite refusal)."
+  },
+  {
+    "id": "star-n2-40",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "この",
+    "segments": [
+      "プロジェクトを",
+      "引き受けようか",
+      "引き受けまいか、",
+      "まだ"
+    ],
+    "suffix": "決めていない。",
+    "fullSentence": "このプロジェクトを引き受けようか引き受けまいか、まだ決めていない。",
+    "furigana": "このプロジェクトを引き受けようか引き受けまいか、まだ決めていない。",
+    "romaji": "Kono purojekuto o hikiukeyou ka hikiukemai ka, mada kimete inai.",
+    "english": "I haven’t decided yet whether or not to take on this project.",
+    "grammarId": "N2/ka-maika",
+    "grammarPoint": "～か～まいか",
+    "explanation": "Used to express a dilemma or indecision between two options or actions."
+  },
+  {
+    "id": "star-n2-41",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "失敗したから",
+      "こそ、",
+      "成功の",
+      "意味が"
+    ],
+    "suffix": "わかる。",
+    "fullSentence": "失敗したからこそ、成功の意味がわかる。",
+    "furigana": "失敗したからこそ、成功の意味がわかる。",
+    "romaji": "Shippai shita kara koso, seikou no imi ga wakaru.",
+    "english": "It is precisely because I failed that I understand the meaning of success.",
+    "grammarId": "N2/kara-koso",
+    "grammarPoint": "～からこそ",
+    "explanation": "Express the emphasis on the reason; 'precisely because', 'it is precisely because'."
+  },
+  {
+    "id": "star-n2-42",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "彼の顔つきから",
+    "segments": [
+      "して、",
+      "何か",
+      "悪いことが",
+      "あったの"
+    ],
+    "suffix": "だろう。",
+    "fullSentence": "彼の顔つきからして、何か悪いことがあったのだろう。",
+    "furigana": "彼の顔つきからして、何か悪いことがあったのだろう。",
+    "romaji": "Kare no kaotsuki kara shite, nanika warui koto ga atta no darou.",
+    "english": "Judging by the look on his face, something bad must have happened.",
+    "grammarId": "N2/kara-shite",
+    "grammarPoint": "〜からして",
+    "explanation": "Expresses that something is exceptional, unusual, or negative based on a particular aspect or point."
+  },
+  {
+    "id": "star-n2-43",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "経験から",
+    "segments": [
+      "すると、",
+      "この",
+      "仕事は",
+      "難しいで"
+    ],
+    "suffix": "しょう。",
+    "fullSentence": "経験からすると、この仕事は難しいでしょう。",
+    "furigana": "経験からすると、この仕事は難しいでしょう。",
+    "romaji": "Keiken kara suru to, kono shigoto wa muzukashii deshou.",
+    "english": "Based on my experience, this job will probably be difficult.",
+    "grammarId": "N2/kara-suru-to",
+    "grammarPoint": "～からすると",
+    "explanation": "Expresses a judgment or evaluation based on a certain standard; 'from this perspective', 'considering', 'judging from'."
+  },
+  {
+    "id": "star-n2-44",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "雨が降ったから",
+    "segments": [
+      "といって、",
+      "試合が",
+      "中止に",
+      "なるわけでは"
+    ],
+    "suffix": "ありません。",
+    "fullSentence": "雨が降ったからといって、試合が中止になるわけではありません。",
+    "furigana": "雨が降ったからといって、試合が中止になるわけではありません。",
+    "romaji": "Ame ga futta kara to itte, shiai ga chuushi ni naru wake de wa arimasen.",
+    "english": "Just because it rained doesn’t mean the game will be canceled.",
+    "grammarId": "N2/kara-to-itte",
+    "grammarPoint": "～からといって",
+    "explanation": "Expresses 'just because...doesn't mean' or 'even though...not necessarily'."
+  },
+  {
+    "id": "star-n2-45",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "午前９時から",
+    "segments": [
+      "午後",
+      "５",
+      "時にかけて、",
+      "仕事を"
+    ],
+    "suffix": "しています。",
+    "fullSentence": "午前９時から午後５時にかけて、仕事をしています。",
+    "furigana": "午前９時から午後５時にかけて、仕事をしています。",
+    "romaji": "Gozen ku-ji kara gogo go-ji ni kakete, shigoto wo shite imasu.",
+    "english": "I work from 9:00 a.m. to 5:00 p.m.",
+    "grammarId": "N2/kara-ni-kakete",
+    "grammarPoint": "～から～にかけて",
+    "explanation": "Expresses a range of time, space, or quantities; 'from...to', 'between...and', 'over'."
+  },
+  {
+    "id": "star-n2-46",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "この",
+      "映画が",
+      "面白いからには、",
+      "友達にも"
+    ],
+    "suffix": "見せたい。",
+    "fullSentence": "この映画が面白いからには、友達にも見せたい。",
+    "furigana": "この映画が面白いからには、友達にも見せたい。",
+    "romaji": "Kono eiga ga omoshiroi kara niwa, tomodachi ni mo misetai.",
+    "english": "Since this movie is so interesting, I want to show it to my friends.",
+    "grammarId": "N2/kara-niwa",
+    "grammarPoint": "～からには",
+    "explanation": "Express a sense of responsibility or determination; 'since', 'now that', 'if'."
+  },
+  {
+    "id": "star-n2-47",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "費用から",
+    "segments": [
+      "見ると、",
+      "この",
+      "プランは",
+      "お"
+    ],
+    "suffix": "得です。",
+    "fullSentence": "費用から見ると、このプランはお得です。",
+    "furigana": "費用から見ると、このプランはお得です。",
+    "romaji": "Hiyou kara miru to, kono puran wa otoku desu.",
+    "english": "From a cost perspective, this plan is a good deal.",
+    "grammarId": "N2/kara-miru-to",
+    "grammarPoint": "～から見ると",
+    "explanation": "Express a perspective or point of view; 'from the standpoint of', 'in terms of', 'from the perspective of'."
+  },
+  {
+    "id": "star-n2-48",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "値段から",
+    "segments": [
+      "言うと、",
+      "この",
+      "商品が",
+      "最もお"
+    ],
+    "suffix": "得です。",
+    "fullSentence": "値段から言うと、この商品が最もお得です。",
+    "furigana": "値段から言うと、この商品が最もお得です。",
+    "romaji": "Nedan kara iuto, kono shouhin ga mottomo otoku desu.",
+    "english": "In terms of price, this product offers the best value.",
+    "grammarId": "N2/kara-iuto",
+    "grammarPoint": "～から言うと",
+    "explanation": "Express a judgment or opinion based on a specific criterion; 'speaking from', 'in terms of', 'from the viewpoint of'."
+  },
+  {
+    "id": "star-n2-49",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "彼は",
+    "segments": [
+      "いつも",
+      "遅刻してくるくせに、",
+      "自分が",
+      "待たされるのが"
+    ],
+    "suffix": "嫌いだ。",
+    "fullSentence": "彼はいつも遅刻してくるくせに、自分が待たされるのが嫌いだ。",
+    "furigana": "彼はいつも遅刻してくるくせに、自分が待たされるのが嫌いだ。",
+    "romaji": "Kare wa itsumo chikoku shite kuru kuse ni, jibun ga matasareru no ga kirai da.",
+    "english": "Even though he’s always late, he hates being kept waiting.",
+    "grammarId": "N2/kuse-ni",
+    "grammarPoint": "～くせに",
+    "explanation": "Used to criticize someone for doing something contrary to what one would expect from their nature or situation."
+  },
+  {
+    "id": "star-n2-50",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "彼は",
+      "毎日",
+      "運動することから、",
+      "体が"
+    ],
+    "suffix": "丈夫です。",
+    "fullSentence": "彼は毎日運動することから、体が丈夫です。",
+    "furigana": "彼は毎日運動することから、体が丈夫です。",
+    "romaji": "Kare wa mainichi undou suru koto kara, karada ga joubu desu.",
+    "english": "Because he exercises every day, he is in good physical shape.",
+    "grammarId": "N2/koto-kara",
+    "grammarPoint": "～ことから",
+    "explanation": "Indicates the reason or basis for something; 'because', 'since', 'due to'."
+  },
+  {
+    "id": "star-n2-51",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "彼が",
+      "いつも",
+      "遅刻することに",
+      "腹が"
+    ],
+    "suffix": "立つ。",
+    "fullSentence": "彼がいつも遅刻することに腹が立つ。",
+    "furigana": "彼がいつも遅刻することに腹が立つ。",
+    "romaji": "Kare ga itsumo chikoku suru koto ni hara ga tatsu.",
+    "english": "It annoys me that he’s always late.",
+    "grammarId": "N2/koto-ni",
+    "grammarPoint": "～ことに",
+    "explanation": "Used to express feelings or emotions about a situation, action, or outcome."
+  },
+  {
+    "id": "star-n2-52",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "会社の",
+      "規則では、",
+      "制服を",
+      "着ることになって"
+    ],
+    "suffix": "いる。",
+    "fullSentence": "会社の規則では、制服を着ることになっている。",
+    "furigana": "会社の規則では、制服を着ることになっている。",
+    "romaji": "Kaisha no kisoku de wa, seifuku o kiru koto ni natte iru.",
+    "english": "Company policy requires employees to wear uniforms.",
+    "grammarId": "N2/koto-ni-natte-iru",
+    "grammarPoint": "～ことになっている",
+    "explanation": "Expresses that something is supposed to be or has been decided (rule, plan, custom)."
+  },
+  {
+    "id": "star-n2-53",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "交通",
+    "segments": [
+      "費さえ",
+      "支払っても",
+      "らえれば、",
+      "どこへでも"
+    ],
+    "suffix": "行きます。",
+    "fullSentence": "交通費さえ支払ってもらえれば、どこへでも行きます。",
+    "furigana": "交通費さえ支払ってもらえれば、どこへでも行きます。",
+    "romaji": "Koutsuuhi sae shiharatte moraereba, doko e demo ikimasu.",
+    "english": "As long as my travel expenses are covered, I’ll go anywhere.",
+    "grammarId": "N2/sae-ba",
+    "grammarPoint": "～さえ～ば",
+    "explanation": "Expresses that, as long as a certain condition is met, something else will follow; 'if only', 'provided that'."
+  },
+  {
+    "id": "star-n2-54",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "この",
+    "segments": [
+      "仕事は",
+      "締め切りが",
+      "近いので、",
+      "残業せざるを"
+    ],
+    "suffix": "得ない。",
+    "fullSentence": "この仕事は締め切りが近いので、残業せざるを得ない。",
+    "furigana": "この仕事は締め切りが近いので、残業せざるを得ない。",
+    "romaji": "Kono shigoto wa shimekiri ga chikai no de, zangyou sezaru wo enai.",
+    "english": "The deadline for this project is approaching, so I have no choice but to work overtime.",
+    "grammarId": "N2/zaru-wo-enai",
+    "grammarPoint": "～ざるを得ない",
+    "explanation": "Have no choice but to; cannot help but."
+  },
+  {
+    "id": "star-n2-55",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "この",
+      "曲を",
+      "聞くと、",
+      "歌わずに"
+    ],
+    "suffix": "はいられない。",
+    "fullSentence": "この曲を聞くと、歌わずにはいられない。",
+    "furigana": "この曲を聞くと、歌わずにはいられない。",
+    "romaji": "Kono kyoku o kiku to, utawazu ni wa irarenai.",
+    "english": "When I hear this song, I can’t help but sing along.",
+    "grammarId": "N2/zu-ni-wa-irarenai",
+    "grammarPoint": "～ずにはいられない",
+    "explanation": "Cannot help but; cannot resist doing; an irresistible urge."
+  },
+  {
+    "id": "star-n2-56",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "電話を",
+    "segments": [
+      "かけたかと",
+      "思ったら、",
+      "すぐに",
+      "彼女が"
+    ],
+    "suffix": "出た。",
+    "fullSentence": "電話をかけたかと思ったら、すぐに彼女が出た。",
+    "furigana": "電話をかけたかと思ったら、すぐに彼女が出た。",
+    "romaji": "Denwa o kaketa ka to omottara, sugu ni kanojo ga deta.",
+    "english": "No sooner had I made the call than she answered right away.",
+    "grammarId": "N2/ta-ka-to-omottara",
+    "grammarPoint": "～たかと思ったら",
+    "explanation": "Express a sequence of events happening in quick succession; 'as soon as', 'no sooner than'."
+  },
+  {
+    "id": "star-n2-57",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "彼は",
+      "会社を",
+      "辞めたきり、",
+      "連絡が"
+    ],
+    "suffix": "ない。",
+    "fullSentence": "彼は会社を辞めたきり、連絡がない。",
+    "furigana": "彼は会社を辞めたきり、連絡がない。",
+    "romaji": "Kare wa kaisha o yameta kiri, renraku ga nai.",
+    "english": "He hasn’t been in touch since he quit his job.",
+    "grammarId": "N2/takiri",
+    "grammarPoint": "～たきり",
+    "explanation": "Express 'since then' or 'after'; used to indicate that an action occurred once and has not been repeated or that a state has continued since a certain event or time."
+  },
+  {
+    "id": "star-n2-58",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "彼は日本語が上手だけ",
+    "segments": [
+      "あって、",
+      "日本人の",
+      "ように",
+      "話すことが"
+    ],
+    "suffix": "できる。",
+    "fullSentence": "彼は日本語が上手だけあって、日本人のように話すことができる。",
+    "furigana": "彼は日本語が上手だけあって、日本人のように話すことができる。",
+    "romaji": "Kare wa nihongo ga jōzu dake atte, nihonjin no yō ni hanasu koto ga dekiru.",
+    "english": "As you’d expect from someone who’s so good at Japanese, he can speak just like a native Japanese speaker.",
+    "grammarId": "N2/dake-atte",
+    "grammarPoint": "～だけあって",
+    "explanation": "Expresses that something is as expected or deserves its reputation."
+  },
+  {
+    "id": "star-n2-59",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "掃除したところ、",
+      "部屋が",
+      "ずっと",
+      "キレイに"
+    ],
+    "suffix": "なりました。",
+    "fullSentence": "掃除したところ、部屋がずっとキレイになりました。",
+    "furigana": "掃除したところ、部屋がずっとキレイになりました。",
+    "romaji": "Sōji shita tokoro, heya ga zutto kirei ni narimashita.",
+    "english": "After I cleaned, the room became much cleaner.",
+    "grammarId": "N2/ta-tokoro",
+    "grammarPoint": "～たところ",
+    "explanation": "Used to describe an action that has just been completed, often followed by a result or observation."
+  },
+  {
+    "id": "star-n2-60",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "ドアを",
+    "segments": [
+      "開けたと",
+      "たん、",
+      "雨が",
+      "降り"
+    ],
+    "suffix": "始めた。",
+    "fullSentence": "ドアを開けたとたん、雨が降り始めた。",
+    "furigana": "ドアを開けたとたん、雨が降り始めた。",
+    "romaji": "Doa o aketa totan, ame ga furi-hajimeta.",
+    "english": "The moment I opened the door, it started to rain.",
+    "grammarId": "N2/ta-totan",
+    "grammarPoint": "～たとたん",
+    "explanation": "Express the moment something happens; 'as soon as', 'just when'."
+  },
+  {
+    "id": "star-n2-61",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "泥だらけの",
+      "靴を",
+      "家の",
+      "外で"
+    ],
+    "suffix": "乾かします。",
+    "fullSentence": "泥だらけの靴を家の外で乾かします。",
+    "furigana": "泥だらけの靴を家の外で乾かします。",
+    "romaji": "Dorodarake no kutsu o ie no soto de kawakasu",
+    "english": "I’ll let my muddy shoes dry outside the house.",
+    "grammarId": "N2/darake",
+    "grammarPoint": "～だらけ",
+    "explanation": "Indicates that something is full of or covered with a certain (usually negative) characteristic."
+  },
+  {
+    "id": "star-n2-62",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "こんなに雪が",
+    "segments": [
+      "降って",
+      "いるんだから、",
+      "学校に",
+      "間に"
+    ],
+    "suffix": "合いっこない。",
+    "fullSentence": "こんなに雪が降っているんだから、学校に間に合いっこない。",
+    "furigana": "こんなに雪が降っているんだから、学校に間に合いっこない。",
+    "romaji": "Konna ni yuki ga futteirun dakara, gakkō ni maniai kkonai.",
+    "english": "It’s snowing this much, so there’s no way I’ll make it to school on time.",
+    "grammarId": "N2/kkonai",
+    "grammarPoint": "～っこない",
+    "explanation": "Expresses the impossibility or very low probability of something happening; 'no way', 'impossible'."
+  },
+  {
+    "id": "star-n2-63",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "彼は",
+      "テレビを",
+      "見つつ、",
+      "宿題を"
+    ],
+    "suffix": "していました。",
+    "fullSentence": "彼はテレビを見つつ、宿題をしていました。",
+    "furigana": "彼はテレビを見つつ、宿題をしていました。",
+    "romaji": "Kare wa terebi o mitsutsu, shukudai o shite imashita.",
+    "english": "He was doing his homework while watching TV.",
+    "grammarId": "N2/tsutsu",
+    "grammarPoint": "～つつ",
+    "explanation": "Shows two actions happening simultaneously or a contrast; 'while', 'although'."
+  },
+  {
+    "id": "star-n2-64",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "窓を",
+      "開けっぱなしにして、",
+      "部屋が",
+      "寒くなって"
+    ],
+    "suffix": "しまった。",
+    "fullSentence": "窓を開けっぱなしにして、部屋が寒くなってしまった。",
+    "furigana": "窓を開けっぱなしにして、部屋が寒くなってしまった。",
+    "romaji": "Mado o akeppanashi ni shite, heya ga samuku natte shimatta.",
+    "english": "I left the window open, and the room got cold.",
+    "grammarId": "N2/ppanashi",
+    "grammarPoint": "～っぱなし",
+    "explanation": "Express a continuous action or state; 'left as is', 'non-stop'."
+  },
+  {
+    "id": "star-n2-65",
+    "level": "N2",
+    "jlpt": 2,
+    "prefix": "",
+    "segments": [
+      "この",
+      "部屋は",
+      "寒っぽい",
+      "感じが"
+    ],
+    "suffix": "する。",
+    "fullSentence": "この部屋は寒っぽい感じがする。",
+    "furigana": "この部屋は寒っぽい感じがする。",
+    "romaji": "Kono heya wa samuppoi kanji ga suru.",
+    "english": "This room feels a bit chilly.",
+    "grammarId": "N2/ppoi",
+    "grammarPoint": "～っぽい",
+    "explanation": "Indicates that something has the appearance, characteristics, or behavior of something else."
+  },
+  {
+    "id": "star-n1-1",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "朝早かろうが",
+    "segments": [
+      "夜",
+      "遅かろうが、",
+      "いつも",
+      "バスが"
+    ],
+    "suffix": "遅れる。",
+    "fullSentence": "朝早かろうが夜遅かろうが、いつもバスが遅れる。",
+    "furigana": "朝早かろうが夜遅かろうが、いつもバスが遅れる。",
+    "romaji": "Asa hayakarou ga yoru osokarou ga, itsumo basu ga okureru.",
+    "english": "No matter whether it's early morning or late at night, the bus is always late.",
+    "grammarId": "N1/a-uga-b-uga",
+    "grammarPoint": "A うが B うが",
+    "explanation": "Expresses the idea of 'no matter how... or', 'even if... or'."
+  },
+  {
+    "id": "star-n1-2",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "雨が降ろうと",
+    "segments": [
+      "晴れようと、",
+      "私は",
+      "毎日",
+      "ジョギングを"
+    ],
+    "suffix": "します。",
+    "fullSentence": "雨が降ろうと晴れようと、私は毎日ジョギングをします。",
+    "furigana": "雨が降ろうと晴れようと、私は毎日ジョギングをします。",
+    "romaji": "Ame ga furou to hareyou to, watashi wa mainichi jogingu o shimasu.",
+    "english": "Whether it's raining or sunny, I jog every day.",
+    "grammarId": "N1/a-uto-b-uto",
+    "grammarPoint": "A うと B うと",
+    "explanation": "Shows that the speaker is indifferent to both conditions; 'whether A or B'."
+  },
+  {
+    "id": "star-n1-3",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "彼は",
+    "segments": [
+      "仕事を",
+      "するかたわら、",
+      "大学に",
+      "通って"
+    ],
+    "suffix": "いる。",
+    "fullSentence": "彼は仕事をするかたわら、大学に通っている。",
+    "furigana": "彼は仕事をするかたわら、大学に通っている。",
+    "romaji": "Kare wa shigoto o suru katawara, daigaku ni kayotte iru.",
+    "english": "While working, he also attends university.",
+    "grammarId": "N1/a-katawara-b",
+    "grammarPoint": "A かたわら B",
+    "explanation": "Expresses 'while also', 'at the same time as'."
+  },
+  {
+    "id": "star-n1-4",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "冬か",
+    "segments": [
+      "れ",
+      "夏か",
+      "れ、",
+      "毎日"
+    ],
+    "suffix": "ジョギングする。",
+    "fullSentence": "冬かれ夏かれ、毎日ジョギングする。",
+    "furigana": "冬かれ夏かれ、毎日ジョギングする。",
+    "romaji": "Fuyu kare natsu kare, mainichi jogingu suru.",
+    "english": "Whether it's winter or summer, I jog every day.",
+    "grammarId": "N1/a-kare-b-kare",
+    "grammarPoint": "A かれ B かれ",
+    "explanation": "Expresses 'whether A or B'; both situations are included."
+  },
+  {
+    "id": "star-n1-5",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "彼は",
+    "segments": [
+      "いつも",
+      "遅刻だの、",
+      "仕事を",
+      "忘れるだので"
+    ],
+    "suffix": "困る。",
+    "fullSentence": "彼はいつも遅刻だの、仕事を忘れるだので困る。",
+    "furigana": "彼はいつも遅刻だの、仕事を忘れるだので困る。",
+    "romaji": "Kare wa itsumo chikoku dano, shigoto o wasureru dano de komaru.",
+    "english": "I'm troubled because he's always late, forgets work, and so on.",
+    "grammarId": "N1/a-dano-b-dano",
+    "grammarPoint": "A だの B だの",
+    "explanation": "Used to list examples (often with a critical or complaining tone); 'things like A, B, etc.'."
+  },
+  {
+    "id": "star-n1-6",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "雨であれ",
+    "segments": [
+      "雪で",
+      "あれ、",
+      "試合は",
+      "中止に"
+    ],
+    "suffix": "ならない。",
+    "fullSentence": "雨であれ雪であれ、試合は中止にならない。",
+    "furigana": "雨であれ雪であれ、試合は中止にならない。",
+    "romaji": "Ame deare yuki deare, shiai wa chuushi ni naranai.",
+    "english": "Whether it's rain or snow, the match will not be canceled.",
+    "grammarId": "N1/a-deare-b-deare",
+    "grammarPoint": "A であれ B であれ",
+    "explanation": "Indicates the same statement applies to both A and B; 'whether A or B'."
+  },
+  {
+    "id": "star-n1-7",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "",
+    "segments": [
+      "彼は",
+      "無礼というか、",
+      "直接",
+      "的というか、"
+    ],
+    "suffix": "とにかくはっきりしている。",
+    "fullSentence": "彼は無礼というか、直接的というか、とにかくはっきりしている。",
+    "furigana": "彼は無礼というか、直接的というか、とにかくはっきりしている。",
+    "romaji": "Kare wa burei to iu ka, chokusetsuteki to iu ka, tonikaku hakkiri shite iru.",
+    "english": "He's rather rude, or maybe just direct; in any case, he is very blunt.",
+    "grammarId": "N1/a-to-iu-ka-b-to-iu-ka",
+    "grammarPoint": "A というか B というか",
+    "explanation": "Means 'rather than say A, it's more like B', or 'whether to call it A or B'."
+  },
+  {
+    "id": "star-n1-8",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "決断とも",
+    "segments": [
+      "誤りとも、",
+      "結果は",
+      "時間が",
+      "教えてくれるで"
+    ],
+    "suffix": "しょう。",
+    "fullSentence": "決断とも誤りとも、結果は時間が教えてくれるでしょう。",
+    "furigana": "決断とも誤りとも、結果は時間が教えてくれるでしょう。",
+    "romaji": "Ketsudan tomo ayamari tomo, kekka wa jikan ga oshiete kureru deshou.",
+    "english": "Whether it's a wise decision or a mistake, time will show the result.",
+    "grammarId": "N1/a-tomo-b-tomo",
+    "grammarPoint": "A とも B とも",
+    "explanation": "Expresses two possibilities; 'either A or B', 'whether A or B'."
+  },
+  {
+    "id": "star-n1-9",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "",
+    "segments": [
+      "合格するにしろ",
+      "不合格に",
+      "なるにしろ、",
+      "最善を"
+    ],
+    "suffix": "尽くしました。",
+    "fullSentence": "合格するにしろ不合格になるにしろ、最善を尽くしました。",
+    "furigana": "合格するにしろ不合格になるにしろ、最善を尽くしました。",
+    "romaji": "Goukaku suru ni shiro fukougaku ni naru ni shiro, saizen o tsukushimashita.",
+    "english": "Whether I pass or fail, I did my best.",
+    "grammarId": "N1/a-nishiro-b-nishiro",
+    "grammarPoint": "A にしろ B にしろ",
+    "explanation": "Means 'whether it is A or B'; 'regardless of A or B'."
+  },
+  {
+    "id": "star-n1-10",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "雨に",
+    "segments": [
+      "せよ",
+      "雪に",
+      "せよ、",
+      "試合は"
+    ],
+    "suffix": "中止しない。",
+    "fullSentence": "雨にせよ雪にせよ、試合は中止しない。",
+    "furigana": "雨にせよ雪にせよ、試合は中止しない。",
+    "romaji": "Ame ni seyo yuki ni seyo, shiai wa chuushi shinai.",
+    "english": "Whether it's rain or snow, the match won't be cancelled.",
+    "grammarId": "N1/a-ni-seyo-b-ni-seyo",
+    "grammarPoint": "A にせよ B にせよ",
+    "explanation": "Either A or B; Regardless of whether it's A or B."
+  },
+  {
+    "id": "star-n1-11",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "彼には",
+    "segments": [
+      "笑うにつけ",
+      "泣くにつけ、",
+      "とても",
+      "魅力"
+    ],
+    "suffix": "的だ。",
+    "fullSentence": "彼には笑うにつけ泣くにつけ、とても魅力的だ。",
+    "furigana": "彼には笑うにつけ泣くにつけ、とても魅力的だ。",
+    "romaji": "Kare ni wa warau ni tsuke naku ni tsuke, totemo miryokuteki da.",
+    "english": "He is very charming whether he’s laughing or crying.",
+    "grammarId": "N1/a-ni-tsuke-b-ni-tsuke",
+    "grammarPoint": "A につけ B につけ",
+    "explanation": "Expresses 'whether... or...', 'both... and...', 'in either case'."
+  },
+  {
+    "id": "star-n1-12",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "彼が怒っているのやら、",
+    "segments": [
+      "悲しいの",
+      "やら、",
+      "私には",
+      "分から"
+    ],
+    "suffix": "ない。",
+    "fullSentence": "彼が怒っているのやら、悲しいのやら、私には分からない。",
+    "furigana": "彼が怒っているのやら、悲しいのやら、私には分からない。",
+    "romaji": "Kare ga okotte iru no yara, kanashii no yara, watashi ni wa wakaranai.",
+    "english": "I don't know whether he's angry or sad.",
+    "grammarId": "N1/a-no-yara-b-no-yara",
+    "grammarPoint": "A のやら B のやら",
+    "explanation": "Used when the speaker is unsure or confused between multiple possibilities."
+  },
+  {
+    "id": "star-n1-13",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "東京へ",
+    "segments": [
+      "出張の",
+      "かたがた、",
+      "友人に",
+      "会いに"
+    ],
+    "suffix": "行った。",
+    "fullSentence": "東京へ出張のかたがた、友人に会いに行った。",
+    "furigana": "東京へ出張のかたがた、友人に会いに行った。",
+    "romaji": "Toukyou e shucchou no kata gata, yuujin ni ai ni itta.",
+    "english": "While on a business trip to Tokyo, I also went to see a friend.",
+    "grammarId": "N1/noun-kata-gata",
+    "grammarPoint": "Noun かたがた",
+    "explanation": "Do one thing while also doing another; 'while', 'and at the same time'."
+  },
+  {
+    "id": "star-n1-14",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "散歩が",
+    "segments": [
+      "てらに、",
+      "近くの",
+      "公園で",
+      "花を"
+    ],
+    "suffix": "摘みました。",
+    "fullSentence": "散歩がてらに、近くの公園で花を摘みました。",
+    "furigana": "散歩がてらに、近くの公園で花を摘みました。",
+    "romaji": "Sanpo gatera ni, chikaku no kouen de hana o tsumimashita.",
+    "english": "While taking a walk, I picked some flowers in the nearby park.",
+    "grammarId": "N1/noun-gatera",
+    "grammarPoint": "Noun がてら",
+    "explanation": "Means 'while...at the same time', 'on the occasion of', or 'along with'."
+  },
+  {
+    "id": "star-n1-15",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "",
+    "segments": [
+      "彼の",
+      "コレクションは",
+      "500",
+      "個から"
+    ],
+    "suffix": "ある。",
+    "fullSentence": "彼のコレクションは500個からある。",
+    "furigana": "彼のコレクションは500個からある。",
+    "romaji": "Kare no korekushon wa gohyaku ko kara aru.",
+    "english": "He has at least 500 items in his collection.",
+    "grammarId": "N1/kara-aru",
+    "grammarPoint": "Noun からある",
+    "explanation": "Used with large numbers or measurements to emphasize 'at least that many' or 'no less than.'"
+  },
+  {
+    "id": "star-n1-16",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "彼の態度から",
+    "segments": [
+      "すると、",
+      "彼は",
+      "その",
+      "計画に"
+    ],
+    "suffix": "反対しているようだ。",
+    "fullSentence": "彼の態度からすると、彼はその計画に反対しているようだ。",
+    "furigana": "彼の態度からすると、彼はその計画に反対しているようだ。",
+    "romaji": "Kare no taido kara suru to, kare wa sono keikaku ni hantai shiteiru you da.",
+    "english": "Judging from his attitude, he seems to be against the plan.",
+    "grammarId": "N1/noun-kara-suru",
+    "grammarPoint": "Noun からする",
+    "explanation": "Used to indicate that something is judged, estimated, or considered from a certain point or aspect."
+  },
+  {
+    "id": "star-n1-17",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "遠くの",
+    "segments": [
+      "景色が",
+      "見える",
+      "窓からの",
+      "眺めが"
+    ],
+    "suffix": "素晴らしい。",
+    "fullSentence": "遠くの景色が見える窓からの眺めが素晴らしい。",
+    "furigana": "遠くの景色が見える窓からの眺めが素晴らしい。",
+    "romaji": "Tōku no keshiki ga mieru mado kara no nagame ga subarashii",
+    "english": "The view from the window, which looks out onto distant scenery, is wonderful.",
+    "grammarId": "N1/kara-no",
+    "grammarPoint": "Noun からの",
+    "explanation": "Defines the starting point or the origin; 'from'."
+  },
+  {
+    "id": "star-n1-18",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "子供たちから",
+    "segments": [
+      "言わせれば、",
+      "もっと",
+      "遊ぶ",
+      "時間が"
+    ],
+    "suffix": "ほしい。",
+    "fullSentence": "子供たちから言わせれば、もっと遊ぶ時間がほしい。",
+    "furigana": "子供たちから言わせれば、もっと遊ぶ時間がほしい。",
+    "romaji": "Kodomo-tachi kara iwasereba, motto asobu jikan ga hoshii.",
+    "english": "From the children's perspective, they want more time to play.",
+    "grammarId": "N1/kara-iwasereba",
+    "grammarPoint": "Noun から言わせれば",
+    "explanation": "Express the perspective of the noun; 'from ~'s point of view.'"
+  },
+  {
+    "id": "star-n1-19",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "この",
+    "segments": [
+      "国は",
+      "国民ぐるみで",
+      "その",
+      "法案を"
+    ],
+    "suffix": "支持しています。",
+    "fullSentence": "この国は国民ぐるみでその法案を支持しています。",
+    "furigana": "この国は国民ぐるみでその法案を支持しています。",
+    "romaji": "Kono kuni wa kokumin gurumi de sono houan wo shiji shiteimasu.",
+    "english": "The entire population of the country supports that bill.",
+    "grammarId": "N1/gurumi",
+    "grammarPoint": "Noun + ぐるみ",
+    "explanation": "Describes 'entirely', 'all together', or 'as a whole group'."
+  },
+  {
+    "id": "star-n1-20",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "",
+    "segments": [
+      "多少の",
+      "リスクこそあれ、",
+      "挑戦する",
+      "価値は"
+    ],
+    "suffix": "ある。",
+    "fullSentence": "多少のリスクこそあれ、挑戦する価値はある。",
+    "furigana": "多少のリスクこそあれ、挑戦する価値はある。",
+    "romaji": "Tashou no risuku koso are, chousen suru kachi wa aru.",
+    "english": "Though there is some risk, it's worth taking on the challenge.",
+    "grammarId": "N1/koso-are",
+    "grammarPoint": "Noun こそあれ",
+    "explanation": "Expresses 'though there is ... (some negative or burdensome aspect), still ...'."
+  },
+  {
+    "id": "star-n1-21",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "お金こそ",
+    "segments": [
+      "必要だが、",
+      "それだけが",
+      "人生の",
+      "すべてでは"
+    ],
+    "suffix": "ない。",
+    "fullSentence": "お金こそ必要だが、それだけが人生のすべてではない。",
+    "furigana": "お金こそ必要だが、それだけが人生のすべてではない。",
+    "romaji": "Okane koso hitsuyou da ga, sore dake ga jinsei no subete de wa nai.",
+    "english": "Money is indeed necessary, but it isn't everything in life.",
+    "grammarId": "N1/koso-ga",
+    "grammarPoint": "Noun こそ～が",
+    "explanation": "Emphasizes that 'it is precisely Noun that ...', then adds a contrasting or additional point."
+  },
+  {
+    "id": "star-n1-22",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "",
+    "segments": [
+      "悪魔の",
+      "ごとき",
+      "行為を",
+      "する"
+    ],
+    "suffix": "な。",
+    "fullSentence": "悪魔のごとき行為をするな。",
+    "furigana": "悪魔のごとき行為をするな。",
+    "romaji": "Akuma no gotoki koui o suru na.",
+    "english": "Don't engage in acts like those of a devil.",
+    "grammarId": "N1/gotoki-gotoku",
+    "grammarPoint": "Noun ごとき / Noun ごとく",
+    "explanation": "Means 'like a...', 'as if...', expressing a simile or metaphor."
+  },
+  {
+    "id": "star-n1-23",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "彼は",
+    "segments": [
+      "子供じゃあるまいし、",
+      "その",
+      "問題を",
+      "しっかりと"
+    ],
+    "suffix": "解決するべきだ。",
+    "fullSentence": "彼は子供じゃあるまいし、その問題をしっかりと解決するべきだ。",
+    "furigana": "彼は子供じゃあるまいし、その問題をしっかりと解決するべきだ。",
+    "romaji": "Kare wa kodomo ja aru mai shi, sono mondai o shikkari to kaiketsu suru beki da.",
+    "english": "He’s not a child, so he should solve that problem properly.",
+    "grammarId": "N1/ja-aru-mai-shi",
+    "grammarPoint": "Noun じゃあるまいし",
+    "explanation": "Expressing that something 'is not'; 'it's not like...'. Colloquial/masculine form of ではあるまいし."
+  },
+  {
+    "id": "star-n1-24",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "彼女が",
+    "segments": [
+      "怒って",
+      "いるから、",
+      "お菓子を",
+      "あげただけでは"
+    ],
+    "suffix": "すまないよ。",
+    "fullSentence": "彼女が怒っているから、お菓子をあげただけではすまないよ。",
+    "furigana": "彼女が怒っているから、お菓子をあげただけではすまないよ。",
+    "romaji": "Kanojo ga okotte iru kara, okashi o ageta dake dewa sumanai yo.",
+    "english": "She’s angry, so just giving her sweets won't fix it.",
+    "grammarId": "N1/noun-dake-dewa-sumanai",
+    "grammarPoint": "Noun だけではすまない",
+    "explanation": "Expresses 'it can't be settled with just...', 'cannot be resolved merely by...'."
+  },
+  {
+    "id": "star-n1-25",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "",
+    "segments": [
+      "彼女は",
+      "一度たりともその",
+      "映画を",
+      "見たことが"
+    ],
+    "suffix": "ない。",
+    "fullSentence": "彼女は一度たりともその映画を見たことがない。",
+    "furigana": "彼女は一度たりともその映画を見たことがない。",
+    "romaji": "Kanojo wa ichido tari tomo sono eiga o mita koto ga nai.",
+    "english": "She has never seen that movie, not even once.",
+    "grammarId": "N1/tari-tomo-nai",
+    "grammarPoint": "Noun たりとも～ない",
+    "explanation": "Used to show a strong negative: 'not even ~', 'not a single ~'."
+  },
+  {
+    "id": "star-n1-26",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "リーダーたる",
+    "segments": [
+      "者は、",
+      "常に",
+      "先を",
+      "見て"
+    ],
+    "suffix": "行動すべきだ。",
+    "fullSentence": "リーダーたる者は、常に先を見て行動すべきだ。",
+    "furigana": "リーダーたる者は、常に先を見て行動すべきだ。",
+    "romaji": "Riidaa taru mono wa, tsune ni saki o mite koudou subeki da.",
+    "english": "A person who is a leader should always look ahead and act accordingly.",
+    "grammarId": "N1/taru",
+    "grammarPoint": "Noun たる Noun",
+    "explanation": "Indicates 'being in the position/state of', used for roles or statuses."
+  },
+  {
+    "id": "star-n1-27",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "明日",
+    "segments": [
+      "試験が",
+      "あるのに、",
+      "彼は",
+      "テキストですら"
+    ],
+    "suffix": "読まない。",
+    "fullSentence": "明日試験があるのに、彼はテキストですら読まない。",
+    "furigana": "明日試験があるのに、彼はテキストですら読まない。",
+    "romaji": "Ashita shiken ga aru noni, kare wa tekisuto desura yomanai.",
+    "english": "He doesn’t even read the textbook, despite having a test tomorrow.",
+    "grammarId": "N1/desura",
+    "grammarPoint": "Noun ですら",
+    "explanation": "Means 'even', 'as much as', used for emphasis in formal contexts."
+  },
+  {
+    "id": "star-n1-28",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "彼女はプロの",
+    "segments": [
+      "歌手では",
+      "あるまいし、",
+      "完璧を",
+      "求めるのは"
+    ],
+    "suffix": "酷だ。",
+    "fullSentence": "彼女はプロの歌手ではあるまいし、完璧を求めるのは酷だ。",
+    "furigana": "彼女はプロの歌手ではあるまいし、完璧を求めるのは酷だ。",
+    "romaji": "Kanojo wa puro no kashu de wa aru mai shi, kanpeki o motomeru no wa koku da.",
+    "english": "She’s not a professional singer, so it’s rather harsh to demand perfection.",
+    "grammarId": "N1/dewa-aru-maishi",
+    "grammarPoint": "Noun ではあるまいし",
+    "explanation": "Means 'it’s not as if...', 'it’s not that...', more formal than じゃあるまいし."
+  },
+  {
+    "id": "star-n1-29",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "お父さんは",
+    "segments": [
+      "社長と",
+      "経理",
+      "部長を",
+      "兼ね"
+    ],
+    "suffix": "ています。",
+    "fullSentence": "お父さんは社長と経理部長を兼ねています。",
+    "furigana": "お父さんは社長と経理部長を兼ねています。",
+    "romaji": "Otousan wa shachou to keiri buchou o kanete imasu.",
+    "english": "My father serves as both the company president and the head of accounting.",
+    "grammarId": "N1/noun-to-noun-o-kanete",
+    "grammarPoint": "Noun と Noun を兼ねて",
+    "explanation": "Used to indicate doing two things at once or fulfilling two roles/purposes."
+  },
+  {
+    "id": "star-n1-30",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "日本の食べ物といい",
+    "segments": [
+      "観光",
+      "地と",
+      "いい、",
+      "すべてが"
+    ],
+    "suffix": "素晴らしいです。",
+    "fullSentence": "日本の食べ物といい観光地といい、すべてが素晴らしいです。",
+    "furigana": "日本の食べ物といい観光地といい、すべてが素晴らしいです。",
+    "romaji": "Nihon no tabemono to ii kankouchi to ii, subete ga subarashii desu.",
+    "english": "Both Japanese food and tourist spots are all wonderful.",
+    "grammarId": "N1/to-ii-to-ii",
+    "grammarPoint": "Noun といい Noun といい",
+    "explanation": "Used to express 'both A and B'; 'whether it's A or B'; 'not to mention A and also B'."
+  },
+  {
+    "id": "star-n1-31",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "宮崎駿という",
+    "segments": [
+      "人は",
+      "有名",
+      "な",
+      "アニメーション"
+    ],
+    "suffix": "監督です。",
+    "fullSentence": "宮崎駿という人は有名なアニメーション監督です。",
+    "furigana": "宮崎駿という人は有名なアニメーション監督です。",
+    "romaji": "Miyazaki Hayao to iu hito wa yuumei na animation kantoku desu.",
+    "english": "The person called Hayao Miyazaki is a famous animation director.",
+    "grammarId": "N1/to-iu",
+    "grammarPoint": "Noun という Noun",
+    "explanation": "Used to specify or define one noun with another; 'the noun called', 'the noun that is', or 'a certain'."
+  },
+  {
+    "id": "star-n1-32",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "この",
+    "segments": [
+      "プランに",
+      "賛成の",
+      "人は",
+      "7"
+    ],
+    "suffix": "割というところだ。",
+    "fullSentence": "このプランに賛成の人は7割というところだ。",
+    "furigana": "このプランに賛成の人は7割というところだ。",
+    "romaji": "Kono puran ni sansei no hito wa nanawari to iu tokoro da.",
+    "english": "About 70% of people agree with this plan.",
+    "grammarId": "N1/noun-to-iu-tokoro-da",
+    "grammarPoint": "Noun というところだ",
+    "explanation": "Means 'it's approximately...' or 'it's about...'. Used to show approximation or a general assessment."
+  },
+  {
+    "id": "star-n1-33",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "日本文化というものは伝統",
+    "segments": [
+      "的な",
+      "ものと",
+      "新しいものが",
+      "混ざって"
+    ],
+    "suffix": "います。",
+    "fullSentence": "日本文化というものは伝統的なものと新しいものが混ざっています。",
+    "furigana": "日本文化というものは伝統的なものと新しいものが混ざっています。",
+    "romaji": "Nihon bunka to iu mono wa dentouteki na mono to atarashii mono ga mazatte imasu.",
+    "english": "Japanese culture is a mixture of traditional and new.",
+    "grammarId": "N1/to-iu-mono",
+    "grammarPoint": "Noun + というもの",
+    "explanation": "Used to express a generic concept: 'all ~', 'any ~ of that kind'."
+  },
+  {
+    "id": "star-n1-34",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "",
+    "segments": [
+      "私の",
+      "日本語の",
+      "語彙は",
+      "1000"
+    ],
+    "suffix": "語といったところだ。",
+    "fullSentence": "私の日本語の語彙は1000語といったところだ。",
+    "furigana": "私の日本語の語彙は1000語といったところだ。",
+    "romaji": "Watashi no nihongo no goi wa sen go to itta tokoro da.",
+    "english": "My Japanese vocabulary is limited to about 1000 words.",
+    "grammarId": "N1/noun-to-itta-tokoro-da",
+    "grammarPoint": "Noun といったところだ",
+    "explanation": "Expresses 'at most', 'as much as', or 'limited to'."
+  },
+  {
+    "id": "star-n1-35",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "冬といわず",
+    "segments": [
+      "夏といわず、",
+      "彼は",
+      "いつも",
+      "アイスクリームを"
+    ],
+    "suffix": "食べます。",
+    "fullSentence": "冬といわず夏といわず、彼はいつもアイスクリームを食べます。",
+    "furigana": "冬といわず夏といわず、彼はいつもアイスクリームを食べます。",
+    "romaji": "Fuyu to iwazu natsu to iwazu, kare wa itsumo aisukuriimu o tabemasu.",
+    "english": "Be it winter or summer, he always eats ice cream.",
+    "grammarId": "N1/a-to-iwazu-b-to-iwazu",
+    "grammarPoint": "Noun といわず Noun といわず",
+    "explanation": "Expresses 'both A and B' or 'be it A or B'; applies to both without distinction."
+  },
+  {
+    "id": "star-n1-36",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "数学の",
+    "segments": [
+      "問題ときたら、",
+      "彼女は",
+      "いつも",
+      "困って"
+    ],
+    "suffix": "いる。",
+    "fullSentence": "数学の問題ときたら、彼女はいつも困っている。",
+    "furigana": "数学の問題ときたら、彼女はいつも困っている。",
+    "romaji": "Suugaku no mondai tokitara, kanojo wa itsumo komatte iru.",
+    "english": "When it comes to math problems, she's always struggling.",
+    "grammarId": "N1/tokitara",
+    "grammarPoint": "Noun + ときたら",
+    "explanation": "Expresses strong feelings about a topic; 'speaking of', 'when it comes to'."
+  },
+  {
+    "id": "star-n1-37",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "新しい車の",
+    "segments": [
+      "速さは",
+      "古い",
+      "車とは",
+      "比べものに"
+    ],
+    "suffix": "ならない。",
+    "fullSentence": "新しい車の速さは古い車とは比べものにならない。",
+    "furigana": "新しい車の速さは古い車とは比べものにならない。",
+    "romaji": "Atarashii kuruma no hayasa wa furui kuruma to wa kurabemono ni naranai.",
+    "english": "The speed of the new car is not comparable to the old one.",
+    "grammarId": "N1/to-wa-kurabemono-ni-naranai",
+    "grammarPoint": "Noun とは比べものにならない",
+    "explanation": "Indicates something is not comparable; 'beyond comparison'."
+  },
+  {
+    "id": "star-n1-38",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "",
+    "segments": [
+      "先生ともあろう",
+      "者が、",
+      "そんな",
+      "間違いを"
+    ],
+    "suffix": "するなんて。",
+    "fullSentence": "先生ともあろう者が、そんな間違いをするなんて。",
+    "furigana": "先生ともあろう者が、そんな間違いをするなんて。",
+    "romaji": "Sensei tomoarou mono ga, sonna machigai o suru nante.",
+    "english": "For a teacher, it's shocking to make such a mistake.",
+    "grammarId": "N1/tomoarou",
+    "grammarPoint": "Noun + ともあろう + Noun",
+    "explanation": "Used to criticize or question unbecoming behavior by someone of a certain status."
+  },
+  {
+    "id": "star-n1-39",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "クリスマスともなると、",
+    "segments": [
+      "街",
+      "中が",
+      "きらきらと",
+      "輝いて"
+    ],
+    "suffix": "見えます。",
+    "fullSentence": "クリスマスともなると、街中がきらきらと輝いて見えます。",
+    "furigana": "クリスマスともなると、街中がきらきらと輝いて見えます。",
+    "romaji": "Kurisumasu to mo naru to, machijuu ga kirakira to kagayaite miemasu.",
+    "english": "When it comes to Christmas time, the whole city sparkles.",
+    "grammarId": "N1/to-mo-naru-to",
+    "grammarPoint": "Noun ともなると",
+    "explanation": "'When it comes to...', emphasizes a change of situation or status."
+  },
+  {
+    "id": "star-n1-40",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "試験とも",
+    "segments": [
+      "な",
+      "れば、",
+      "大抵の",
+      "人が"
+    ],
+    "suffix": "緊張するものです。",
+    "fullSentence": "試験ともなれば、大抵の人が緊張するものです。",
+    "furigana": "試験ともなれば、大抵の人が緊張するものです。",
+    "romaji": "Shiken to mo nareba, taitei no hito ga kinchou suru mono desu.",
+    "english": "When it comes to exams, most people get nervous.",
+    "grammarId": "N1/to-mo-nareba",
+    "grammarPoint": "Noun ともなれば",
+    "explanation": "Expresses 'if it comes to', 'when', or 'once'."
+  },
+  {
+    "id": "star-n1-41",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "天気の良さと",
+    "segments": [
+      "相まって、",
+      "ピクニックは",
+      "大",
+      "成功で"
+    ],
+    "suffix": "した。",
+    "fullSentence": "天気の良さと相まって、ピクニックは大成功でした。",
+    "furigana": "天気の良さと相まって、ピクニックは大成功でした。",
+    "romaji": "Tenki no yosa to aimatte, pikunikku wa daiseikou deshita.",
+    "english": "In combination with the good weather, the picnic was a great success.",
+    "grammarId": "N1/to-aimatte",
+    "grammarPoint": "Noun と相まって",
+    "explanation": "Used to express 'in combination with', 'together with', 'along with'."
+  },
+  {
+    "id": "star-n1-42",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "",
+    "segments": [
+      "時間なくして",
+      "完璧",
+      "な",
+      "作品は"
+    ],
+    "suffix": "作れない。",
+    "fullSentence": "時間なくして完璧な作品は作れない。",
+    "furigana": "時間なくして完璧な作品は作れない。",
+    "romaji": "Jikan nakushite kanpeki na sakuhin wa tsukurenai.",
+    "english": "You cannot create a perfect work without time.",
+    "grammarId": "N1/noun-nakushite-wa-nai",
+    "grammarPoint": "Noun なくして～はない",
+    "explanation": "Expresses 'without ~, there can't be ~'; 'can't do ~ without first doing ~'."
+  },
+  {
+    "id": "star-n1-43",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "彼の",
+    "segments": [
+      "助けなしでは、",
+      "この",
+      "問題を",
+      "解決することは"
+    ],
+    "suffix": "できない。",
+    "fullSentence": "彼の助けなしでは、この問題を解決することはできない。",
+    "furigana": "彼の助けなしでは、この問題を解決することはできない。",
+    "romaji": "Kare no tasuke nashi de wa, kono mondai o kaiketsu suru koto wa dekinai.",
+    "english": "Without his help, I cannot solve this problem.",
+    "grammarId": "N1/noun-nashi-de-wa-nai",
+    "grammarPoint": "Noun なしでは～ない",
+    "explanation": "Expresses the necessity of something; 'cannot do without', 'not possible without'."
+  },
+  {
+    "id": "star-n1-44",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "",
+    "segments": [
+      "数学ならいざ",
+      "知らず、",
+      "物理なんて",
+      "全然わから"
+    ],
+    "suffix": "ない。",
+    "fullSentence": "数学ならいざ知らず、物理なんて全然わからない。",
+    "furigana": "数学ならいざ知らず、物理なんて全然わからない。",
+    "romaji": "Suugaku nara iza shirazu, butsuri nante zenzen wakaranai.",
+    "english": "Math might be manageable, but as for physics, I'm completely clueless.",
+    "grammarId": "N1/nara-izashirazu",
+    "grammarPoint": "Noun ならいざ知らず",
+    "explanation": "Expresses 'maybe X is possible, but Y is definitely not'. Often 'let alone...'."
+  },
+  {
+    "id": "star-n1-45",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "新鮮な",
+    "segments": [
+      "魚は",
+      "この",
+      "町ならではの",
+      "特産"
+    ],
+    "suffix": "品です。",
+    "fullSentence": "新鮮な魚はこの町ならではの特産品です。",
+    "furigana": "新鮮な魚はこの町ならではの特産品です。",
+    "romaji": "Shinsen na sakana wa kono machi nara dewa no tokusanhin desu.",
+    "english": "Fresh fish is a specialty unique to this town.",
+    "grammarId": "N1/nara-de-wa",
+    "grammarPoint": "Noun + ならでは",
+    "explanation": "Expresses something unique or characteristic only of that noun; 'only found in', 'only possible with'."
+  },
+  {
+    "id": "star-n1-46",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "",
+    "segments": [
+      "映画なり、",
+      "音楽なり、",
+      "何か",
+      "趣味は"
+    ],
+    "suffix": "ありますか。",
+    "fullSentence": "映画なり、音楽なり、何か趣味はありますか。",
+    "furigana": "映画なり、音楽なり、何か趣味はありますか。",
+    "romaji": "Eiga nari, ongaku nari, nanika shumi wa arimasu ka?",
+    "english": "Do you have any hobbies, such as movies or music?",
+    "grammarId": "N1/a-nari-b-nari",
+    "grammarPoint": "Noun なり Noun なり",
+    "explanation": "Lists alternatives of the same kind; 'either A or B', 'A or B, for example'."
+  },
+  {
+    "id": "star-n1-47",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "",
+    "segments": [
+      "時間が",
+      "限られているので、",
+      "一",
+      "時間なりとも"
+    ],
+    "suffix": "練習すべきだ。",
+    "fullSentence": "時間が限られているので、一時間なりとも練習すべきだ。",
+    "furigana": "時間が限られているので、一時間なりとも練習すべきだ。",
+    "romaji": "Jikan ga kagirarete iru node, ichi-jikan nari tomo renshuu subeki da.",
+    "english": "Since time is limited, you should practice for at least an hour.",
+    "grammarId": "N1/nari-tomo",
+    "grammarPoint": "Noun なりとも",
+    "explanation": "Indicates even a small amount or degree; 'at least', 'even a little'."
+  },
+  {
+    "id": "star-n1-48",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "彼女は失敗に",
+    "segments": [
+      "失敗を",
+      "重ねて、",
+      "とうとう",
+      "会社を"
+    ],
+    "suffix": "辞めた。",
+    "fullSentence": "彼女は失敗に失敗を重ねて、とうとう会社を辞めた。",
+    "furigana": "彼女は失敗に失敗を重ねて、とうとう会社を辞めた。",
+    "romaji": "Kanojo wa shippai ni shippai wo kasanete, toutou kaisha wo yameta.",
+    "english": "She piled up failures upon failures and finally quit the company.",
+    "grammarId": "N1/a-ni-b-wo-kasanete",
+    "grammarPoint": "Noun に Noun を重ねて",
+    "explanation": "This expression is used to describe repeated actions or states, 'one after another' or 'pile up'."
+  },
+  {
+    "id": "star-n1-49",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "戦争",
+    "segments": [
+      "時にあっては、",
+      "すべての",
+      "人々が",
+      "困難に"
+    ],
+    "suffix": "直面していました。",
+    "fullSentence": "戦争時にあっては、すべての人々が困難に直面していました。",
+    "furigana": "戦争時にあっては、すべての人々が困難に直面していました。",
+    "romaji": "Sensouji ni atte wa, subete no hito ga konnan ni chokumen shiteimashita.",
+    "english": "In wartime, all people were facing difficulties.",
+    "grammarId": "N1/noun-ni-atte-ha",
+    "grammarPoint": "Noun にあっては",
+    "explanation": "Indicates a specific situation or environment in which something happens or is the case."
+  },
+  {
+    "id": "star-n1-50",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "",
+    "segments": [
+      "彼は",
+      "教師に",
+      "あるまじき",
+      "言動を"
+    ],
+    "suffix": "とった。",
+    "fullSentence": "彼は教師にあるまじき言動をとった。",
+    "furigana": "彼は教師にあるまじき言動をとった。",
+    "romaji": "Kare wa kyoushi ni aru majiki gendou wo totta.",
+    "english": "He took actions that are unbecoming of a teacher.",
+    "grammarId": "N1/noun-ni-aru-majiki-noun",
+    "grammarPoint": "Noun にあるまじき Noun",
+    "explanation": "Expresses the idea of 'unfitting', 'unbecoming' or 'inappropriate'."
+  },
+  {
+    "id": "star-n1-51",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "彼は医者にしてその",
+    "segments": [
+      "基本",
+      "的な",
+      "知識が",
+      "ないのが"
+    ],
+    "suffix": "信じられない。",
+    "fullSentence": "彼は医者にしてその基本的な知識がないのが信じられない。",
+    "furigana": "彼は医者にしてその基本的な知識がないのが信じられない。",
+    "romaji": "Kare wa isha ni shite sono kihonteki na chishiki ga nai no ga shinjirarenai.",
+    "english": "I can't believe that even as a doctor, he doesn't have that basic knowledge.",
+    "grammarId": "N1/noun-ni-shite",
+    "grammarPoint": "Noun にして",
+    "explanation": "Expresses the idea 'even for', 'even though', or 'in spite of'."
+  },
+  {
+    "id": "star-n1-52",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "",
+    "segments": [
+      "大人にして",
+      "初めて、",
+      "親の",
+      "苦労が"
+    ],
+    "suffix": "分かった。",
+    "fullSentence": "大人にして初めて、親の苦労が分かった。",
+    "furigana": "大人にして初めて、親の苦労が分かった。",
+    "romaji": "Otona ni shite hajimete, oya no kurou ga wakatta.",
+    "english": "Only when I became an adult did I understand my parents' struggles for the first time.",
+    "grammarId": "N1/noun-nishite-hajimete",
+    "grammarPoint": "Noun にして初めて",
+    "explanation": "Expresses 'only when/after... for the first time'."
+  },
+  {
+    "id": "star-n1-53",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "この",
+    "segments": [
+      "犬は",
+      "自分の",
+      "名前に",
+      "すら"
+    ],
+    "suffix": "反応しない。",
+    "fullSentence": "この犬は自分の名前にすら反応しない。",
+    "furigana": "この犬は自分の名前にすら反応しない。",
+    "romaji": "Kono inu wa jibun no namae ni sura hannou shinai.",
+    "english": "This dog doesn't even respond to its own name.",
+    "grammarId": "N1/ni-sura",
+    "grammarPoint": "Noun にすら",
+    "explanation": "Expresses the concept of 'even'; 'even in', 'even as', 'even to'."
+  },
+  {
+    "id": "star-n1-54",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "このアプリは、",
+    "segments": [
+      "日本語に",
+      "とどまらず、",
+      "他の",
+      "言語も"
+    ],
+    "suffix": "サポートしています。",
+    "fullSentence": "このアプリは、日本語にとどまらず、他の言語もサポートしています。",
+    "furigana": "このアプリは、日本語にとどまらず、他の言語もサポートしています。",
+    "romaji": "Kono apuri wa, nihongo ni todomarazu, hoka no gengo mo sapooto shite imasu.",
+    "english": "This app not only supports Japanese, but also other languages.",
+    "grammarId": "N1/ni-todomarazu-mo",
+    "grammarPoint": "Noun にとどまらず～も",
+    "explanation": "This expresses the idea of 'not only...but also', 'not stopping at...'."
+  },
+  {
+    "id": "star-n1-55",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "彼の親切さに",
+    "segments": [
+      "ひきか",
+      "え、",
+      "彼女は",
+      "無"
+    ],
+    "suffix": "感情だ。",
+    "fullSentence": "彼の親切さにひきかえ、彼女は無感情だ。",
+    "furigana": "彼の親切さにひきかえ、彼女は無感情だ。",
+    "romaji": "Kare no shinsetsusa ni hikikae, kanojo wa mukanjou da.",
+    "english": "In contrast to his kindness, she is emotionless.",
+    "grammarId": "N1/ni-hikikae-wa",
+    "grammarPoint": "Noun にひきかえ Noun は",
+    "explanation": "Represents 'in contrast to', 'as opposed to'."
+  },
+  {
+    "id": "star-n1-56",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "",
+    "segments": [
+      "私は",
+      "彼にも",
+      "まして、",
+      "音楽を"
+    ],
+    "suffix": "愛しています。",
+    "fullSentence": "私は彼にもまして、音楽を愛しています。",
+    "furigana": "私は彼にもまして、音楽を愛しています。",
+    "romaji": "Watashi wa kare ni mo mashite, ongaku o aishiteimasu.",
+    "english": "I love music even more than he does.",
+    "grammarId": "N1/ni-mo-mashite",
+    "grammarPoint": "Noun にもまして",
+    "explanation": "This expresses 'Even more than; exceeding'."
+  },
+  {
+    "id": "star-n1-57",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "結果は",
+    "segments": [
+      "勉強",
+      "時間によ",
+      "らず",
+      "変わらないで"
+    ],
+    "suffix": "しょう。",
+    "fullSentence": "結果は勉強時間によらず変わらないでしょう。",
+    "furigana": "結果は勉強時間によらず変わらないでしょう。",
+    "romaji": "Kekka wa benkyou jikan ni yorazu kawaranai deshou.",
+    "english": "The result will not change regardless of the study time.",
+    "grammarId": "N1/ni-yorazu",
+    "grammarPoint": "Noun によらず",
+    "explanation": "Regardless of, irrespective of."
+  },
+  {
+    "id": "star-n1-58",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "この",
+    "segments": [
+      "映画は",
+      "日本に",
+      "先駆けて、",
+      "アメリカで"
+    ],
+    "suffix": "公開されました。",
+    "fullSentence": "この映画は日本に先駆けて、アメリカで公開されました。",
+    "furigana": "この映画は日本に先駆けて、アメリカで公開されました。",
+    "romaji": "Kono eiga wa Nippon ni sakigakete, Amerika de koukai saremashita.",
+    "english": "This film was released in America ahead of Japan.",
+    "grammarId": "N1/ni-saki-gakete",
+    "grammarPoint": "Noun に先駆けて",
+    "explanation": "Meaning 'ahead of', 'before', or 'preceding in time'."
+  },
+  {
+    "id": "star-n1-59",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "社会の",
+    "segments": [
+      "ニーズに",
+      "即した",
+      "教育",
+      "改革が"
+    ],
+    "suffix": "必要だ。",
+    "fullSentence": "社会のニーズに即した教育改革が必要だ。",
+    "furigana": "社会のニーズに即した教育改革が必要だ。",
+    "romaji": "Shakai no niizu ni sokushita kyouiku kaikaku ga hitsuyou da.",
+    "english": "We need an educational reform that is in accordance with the needs of society.",
+    "grammarId": "N1/a-ni-sokushita-b",
+    "grammarPoint": "Noun に即した Noun",
+    "explanation": "Expresses the idea of 'in accordance with', 'based on'."
+  },
+  {
+    "id": "star-n1-60",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "",
+    "segments": [
+      "法律に",
+      "即して",
+      "判断を",
+      "下すことが"
+    ],
+    "suffix": "重要です。",
+    "fullSentence": "法律に即して判断を下すことが重要です。",
+    "furigana": "法律に即して判断を下すことが重要です。",
+    "romaji": "Houritsu ni soku shite hantei o kudasu koto ga juuyou desu.",
+    "english": "It's important to make judgments in accordance with the law.",
+    "grammarId": "N1/ni-soku-shite",
+    "grammarPoint": "Noun に即して Verb",
+    "explanation": "The grammar point Noun に即して Verb is used to mean 'to act in accordance with', 'in line with' or 'based on'."
+  },
+  {
+    "id": "star-n1-61",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "先生に",
+    "segments": [
+      "言わせれば、",
+      "毎日",
+      "勉強することが",
+      "重要だと"
+    ],
+    "suffix": "言う。",
+    "fullSentence": "先生に言わせれば、毎日勉強することが重要だと言う。",
+    "furigana": "先生に言わせれば、毎日勉強することが重要だと言う。",
+    "romaji": "Sensei ni iwasereba, mainichi benkyou suru koto ga juuyou da to iu.",
+    "english": "According to the teacher, it's important to study every day.",
+    "grammarId": "N1/noun-ni-iwasereba",
+    "grammarPoint": "Noun に言わせれば",
+    "explanation": "Expresses 'according to', 'if you ask', 'in the opinion of'."
+  },
+  {
+    "id": "star-n1-62",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "",
+    "segments": [
+      "この",
+      "問題は",
+      "日本に",
+      "限ったことでは"
+    ],
+    "suffix": "ない。",
+    "fullSentence": "この問題は日本に限ったことではない。",
+    "furigana": "この問題は日本に限ったことではない。",
+    "romaji": "Kono mondai wa Nihon ni kagitta koto dewa nai.",
+    "english": "This issue is not only limited to Japan.",
+    "grammarId": "N1/ni-kagitta-koto-dewa-nai",
+    "grammarPoint": "Noun に限ったことではない",
+    "explanation": "Indicates that something is not only limited to; 'not only', 'not just'."
+  },
+  {
+    "id": "star-n1-63",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "この",
+    "segments": [
+      "試験が",
+      "難しいのは、",
+      "数学に",
+      "限ったことでも"
+    ],
+    "suffix": "ない。",
+    "fullSentence": "この試験が難しいのは、数学に限ったことでもない。",
+    "furigana": "この試験が難しいのは、数学に限ったことでもない。",
+    "romaji": "Kono shiken ga muzukashii no wa, suugaku ni kagitta koto demo nai.",
+    "english": "The exam being difficult is not limited to just math.",
+    "grammarId": "N1/ni-kagitta-koto-demo-nai",
+    "grammarPoint": "Noun に限ったことでもない",
+    "explanation": "'Not limited to'; 'not just', 'not exclusively'."
+  },
+  {
+    "id": "star-n1-64",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "",
+    "segments": [
+      "こういう",
+      "時には",
+      "家族に",
+      "話すに"
+    ],
+    "suffix": "限る。",
+    "fullSentence": "こういう時には家族に話すに限る。",
+    "furigana": "こういう時には家族に話すに限る。",
+    "romaji": "Kou iu toki ni wa kazoku ni hanasu ni kagiru.",
+    "english": "At times like this, there's nothing better than talking to your family.",
+    "grammarId": "N1/ni-kagiru",
+    "grammarPoint": "Noun に限る",
+    "explanation": "Expresses the idea that 'nothing but', 'nothing is better than'."
+  },
+  {
+    "id": "star-n1-65",
+    "level": "N1",
+    "jlpt": 1,
+    "prefix": "",
+    "segments": [
+      "この",
+      "サラダは",
+      "にんじんを",
+      "ぬいた"
+    ],
+    "suffix": "サラダです。",
+    "fullSentence": "このサラダはにんじんをぬいたサラダです。",
+    "furigana": "このサラダはにんじんをぬいたサラダです。",
+    "romaji": "Kono sarada wa ninjin o nuita sarada desu.",
+    "english": "This is a salad with the carrots removed.",
+    "grammarId": "N1/a-nuita-b",
+    "grammarPoint": "Noun ぬいた Noun",
+    "explanation": "Expresses the idea of 'taking something out from something else'."
+  }
+] as unknown as readonly StarScrambleItem[];

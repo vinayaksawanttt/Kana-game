@@ -317,4 +317,149 @@ describe("Listening Quiz Engine", () => {
     });
     expect(afterVocabTyped.questions[0].status).toBe("correct");
   });
+
+  it("attaches static neural audioSrc to curated vocabulary sentences and filters out unvoiced sentences when neural clips exist", () => {
+    const mixedVocab: VocabularyRecord[] = [
+      {
+        id: "ada066edfd",
+        word: "会う",
+        reading: "あう",
+        romaji: "au",
+        meanings: ["to meet"],
+        level: "N5",
+        pos: ["v5u"],
+        examples: [
+          {
+            ja: "もうスミスさんに会われましたね。",
+            furigana: "もうスミスさんに{会|あ}われましたね。",
+            en: "You have already met Mr. Smith, haven't you?",
+          },
+        ],
+      },
+      ...mockVocab,
+    ];
+
+    const extracted = extractListeningSentences(mixedVocab);
+    expect(extracted).toHaveLength(1);
+    expect(extracted[0].id).toBe("vocab-sent:ada066edfd:0");
+    expect(extracted[0].audioSrc).toBe("/audio/listening/N5/ada066edfd_0.mp3");
+    expect(extracted[0].reading).toBe("もうスミスさんにあわれましたね。");
+  });
+
+  it("prioritizes distractors that share character names and story context", () => {
+    const storySentences = [
+      {
+        id: "story:princess-hase:13",
+        ja: "長谷は毎日、一人で静かに本を読んでいました。",
+        reading: "はせはまいにち、ひとりでしずかにほんをよんでいました。",
+        en: "Hase spent every day reading books quietly by himself.",
+        jlpt: 5 as const,
+      },
+      {
+        id: "story:princess-hase:3",
+        ja: "名前は長谷です。",
+        reading: "なまえははせです。",
+        en: "Her name was Hase.",
+        jlpt: 5 as const,
+      },
+      {
+        id: "story:princess-hase:4",
+        ja: "長谷が五歳の時、お母さんは重い病気で死にました。",
+        reading: "はせがごさいのとき、おかあさんはおもいびょうきでしにました。",
+        en: "When Hase was five years old, her mother died of a serious illness.",
+        jlpt: 5 as const,
+      },
+      {
+        id: "story:princess-hase:6",
+        ja: "新しいお母さんは、長谷が全然好きではありませんでした。",
+        reading: "あたらしいおかあさんは、はせがぜんぜんすきではありませんでした。",
+        en: "Her new mother did not like Hase at all.",
+        jlpt: 5 as const,
+      },
+      {
+        id: "story:urashima-taro:1",
+        ja: "太郎の家も両親もいませんでした。",
+        reading: "たろうのいえもりょうしんもいませんでした。",
+        en: "Taro's house was gone, and his parents were gone too.",
+        jlpt: 5 as const,
+      },
+      {
+        id: "vocab-sent:test:1",
+        ja: "田中さんは顔を洗って、白いシャツを着ます。",
+        reading: "たなかさんはかおをあらって、しろいしゃつをきます。",
+        en: "Mr. Tanaka washes his face and puts on a white shirt.",
+        jlpt: 5 as const,
+      },
+    ];
+
+    const session = createListeningSession(
+      { sentences: storySentences },
+      {
+        subMode: "sentences",
+        answerFormat: "multiple-choice",
+        sentenceLanguage: "en",
+        levels: [5],
+        size: 10,
+        questionIds: ["story:princess-hase:13"],
+      },
+      () => 0.1
+    );
+
+    const q = session.questions[0];
+    expect(q.options).toHaveLength(4);
+    // All 4 options should mention Hase because there are 3 same-character candidates from the story
+    const haseCount = q.options.filter((o) => o.label.includes("Hase")).length;
+    expect(haseCount).toBe(4);
+  });
+
+  it("supports Japanese options when sentenceLanguage is set to 'ja'", () => {
+    const storySentences = [
+      {
+        id: "story:princess-hase:13",
+        ja: "長谷は毎日、一人で静かに本を読んでいました。",
+        reading: "はせはまいにち、ひとりでしずかにほんをよんでいました。",
+        en: "Hase spent every day reading books quietly by himself.",
+        jlpt: 5 as const,
+      },
+      {
+        id: "story:princess-hase:3",
+        ja: "名前は長谷です。",
+        reading: "なまえははせです。",
+        en: "Her name was Hase.",
+        jlpt: 5 as const,
+      },
+      {
+        id: "story:princess-hase:4",
+        ja: "長谷が五歳の時、お母さんは重い病気で死にました。",
+        reading: "はせがごさいのとき、おかあさんはおもいびょうきでしにました。",
+        en: "When Hase was five years old, her mother died of a serious illness.",
+        jlpt: 5 as const,
+      },
+      {
+        id: "story:princess-hase:6",
+        ja: "新しいお母さんは、長谷が全然好きではありませんでした。",
+        reading: "あたらしいおかあさんは、はせがぜんぜんすきではありませんでした。",
+        en: "Her new mother did not like Hase at all.",
+        jlpt: 5 as const,
+      },
+    ];
+
+    const session = createListeningSession(
+      { sentences: storySentences },
+      {
+        subMode: "sentences",
+        answerFormat: "multiple-choice",
+        sentenceLanguage: "ja",
+        levels: [5],
+        size: 10,
+        questionIds: ["story:princess-hase:13"],
+      },
+      () => 0.1
+    );
+
+    const q = session.questions[0];
+    const targetOpt = q.options.find((o) => o.id === "story:princess-hase:13")!;
+    expect(targetOpt.label).toBe("長谷は毎日、一人で静かに本を読んでいました。");
+    expect(targetOpt.subLabel).toBe("Hase spent every day reading books quietly by himself.");
+  });
 });

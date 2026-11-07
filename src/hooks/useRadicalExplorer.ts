@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import {
   getKanjiDetails,
   getKanjiForRadical,
+  getKanjiForRadicals,
   getRadicals,
 } from "@/engine/radicalSearch";
 import {
@@ -28,7 +29,7 @@ export function useRadicalExplorer() {
   const [radicalIndex, setRadicalIndex] = useState<RadicalIndex>({});
   const [examplesByKanji, setExamplesByKanji] = useState<RadicalExamples>({});
   const [kanjiRecords, setKanjiRecords] = useState<KanjiRecord[]>([]);
-  const [selectedRadical, setSelectedRadical] = useState<string | null>(null);
+  const [selectedRadicals, setSelectedRadicals] = useState<string[]>([]);
   const [selectedKanji, setSelectedKanji] = useState<string | null>(null);
   const [activeJlptFilters, setActiveJlptFilters] = useState<KanjiLevel[]>(ALL_LEVELS);
   const [loading, setLoading] = useState(true);
@@ -49,10 +50,12 @@ export function useRadicalExplorer() {
         setRadicalIndex(index);
         setExamplesByKanji(examples);
         setKanjiRecords(records);
-        setSelectedRadical(
-          sortedRadicals.find((radical) => (index[radical.character]?.length ?? 0) > 0)
-            ?.character ?? null
-        );
+        const defaultRad = sortedRadicals.find(
+          (radical) => (index[radical.character]?.length ?? 0) > 0
+        )?.character;
+        if (defaultRad) {
+          setSelectedRadicals([defaultRad]);
+        }
       })
       .catch((loadError: unknown) => {
         if (!active) return;
@@ -71,18 +74,26 @@ export function useRadicalExplorer() {
   const radicals = useMemo(() => getRadicals(radicalRecords), [radicalRecords]);
   const kanjiForRadical = useMemo(
     () =>
-      selectedRadical
-        ? getKanjiForRadical(
-            selectedRadical,
+      selectedRadicals.length > 0
+        ? getKanjiForRadicals(
+            selectedRadicals,
             radicalIndex,
             kanjiRecords,
             activeJlptFilters
           )
         : [],
-    [activeJlptFilters, kanjiRecords, radicalIndex, selectedRadical]
+    [activeJlptFilters, kanjiRecords, radicalIndex, selectedRadicals]
   );
-  const selectedRadicalRecord =
-    radicals.find((radical) => radical.character === selectedRadical) ?? null;
+  const selectedRadicalRecords = useMemo(
+    () =>
+      selectedRadicals
+        .map((char) => radicals.find((r) => r.character === char))
+        .filter((r): r is RadicalRecord => r !== undefined),
+    [radicals, selectedRadicals]
+  );
+  const selectedRadical = selectedRadicals[0] ?? null;
+  const selectedRadicalRecord = selectedRadicalRecords[0] ?? null;
+
   const kanjiDetails = selectedKanji
     ? getKanjiDetails(selectedKanji, kanjiRecords, examplesByKanji)
     : null;
@@ -97,20 +108,38 @@ export function useRadicalExplorer() {
   }
 
   function chooseRadical(character: string) {
-    setSelectedRadical(character);
+    setSelectedRadicals([character]);
+    setSelectedKanji(null);
+  }
+
+  function toggleRadical(character: string) {
+    setSelectedRadicals((prev) =>
+      prev.includes(character)
+        ? prev.filter((c) => c !== character)
+        : [...prev, character]
+    );
+    setSelectedKanji(null);
+  }
+
+  function clearSelectedRadicals() {
+    setSelectedRadicals([]);
     setSelectedKanji(null);
   }
 
   return {
     radicals,
+    selectedRadicals,
     selectedRadical,
     selectedRadicalRecord,
+    selectedRadicalRecords,
     selectedKanji,
     kanjiDetails,
     kanjiForRadical,
     activeJlptFilters,
     toggleJlptFilter,
     chooseRadical,
+    toggleRadical,
+    clearSelectedRadicals,
     setSelectedKanji,
     loading,
     error,

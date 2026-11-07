@@ -1,18 +1,21 @@
 import { kanaCharacters, type KanaCharacter, type KanaGroup, type KanaRow } from "@/data/kana";
 import type { VocabularyLevel, VocabularyRecord } from "@/data/vocabulary";
 import type { StoryRecord } from "@/data/stories";
+import { STATIC_LISTENING_SENTENCE_AUDIO_MAP } from "@/data/audio-manifest.generated";
 import { buildStoryAudioQueue, cleanSentenceForAudio, toKanaAudioKey } from "@/engine/audio";
 import { checkVocabularyAnswer } from "@/engine/vocabularyMatcher";
 import { shuffle } from "@/engine/random";
 
 export type ListeningSubMode = "kana" | "vocabulary" | "sentences";
 export type ListeningAnswerFormat = "multiple-choice" | "typing";
+export type SentenceOptionLanguage = "en" | "ja";
 export type JlptLevel = 5 | 4 | 3 | 2 | 1;
 
 export interface ListeningSettings {
   subMode: ListeningSubMode;
   answerFormat: ListeningAnswerFormat; // "multiple-choice" (4 options) or "typing" (for kana/vocab)
   levels: JlptLevel[];                 // Used for vocabulary & sentences (default [5])
+  sentenceLanguage?: SentenceOptionLanguage; // "en" (default: English meaning) or "ja" (Japanese script)
   kanaScript?: "hiragana" | "katakana" | "both";
   kanaGroups?: ("basic" | "dakuten" | "yoon" | "extended")[];
   size: 10 | 20 | 30;
@@ -227,7 +230,7 @@ export function extractListeningSentences(
     }
   }
 
-  // 2. Vocabulary example sentences
+  // 2. Vocabulary example sentences (linked to pre-generated neural MP3s in /audio/listening/)
   for (const record of vocabulary) {
     const jlpt = levelStringToNumber(record.level);
     if (!Array.isArray(record.examples)) continue;
@@ -240,23 +243,34 @@ export function extractListeningSentences(
       if (seenJa.has(cleanJa)) continue;
       seenJa.add(cleanJa);
 
+      const sentId = `vocab-sent:${record.id}:${idx}`;
+      const audioSrc =
+        STATIC_LISTENING_SENTENCE_AUDIO_MAP[sentId] ||
+        STATIC_LISTENING_SENTENCE_AUDIO_MAP[cleanJa];
+
       const reading = ex.furigana
         ? cleanSentenceForAudio(
-            ex.furigana.replace(/([^\[\s]+)\[([^\]]+)\]/g, "$2")
+            ex.furigana
+              .replace(/\{([^|{}]+)\|([^{}]+)\}/g, "$2")
+              .replace(/([^\[\s]+)\[([^\]]+)\]/g, "$2")
           )
         : record.reading;
 
       items.push({
-        id: `vocab-sent:${record.id}:${idx}`,
+        id: sentId,
         ja: cleanJa,
         reading,
         en,
         jlpt,
+        ...(audioSrc ? { audioSrc } : {}),
       });
     }
   }
 
-  return items;
+  // Strictly filter to sentences with pre-generated neural audio when available
+  // (keeps synthetic unit test mocks working when no neural clips exist in the mock pool)
+  const neuralItems = items.filter((item) => Boolean(item.audioSrc));
+  return neuralItems.length > 0 ? neuralItems : items;
 }
 
 function buildKanaDistractors(
@@ -385,52 +399,165 @@ function buildVocabDistractors(
   return shuffle(options, rng);
 }
 
-function buildSentenceDistractors(
+function extractSentenceKeywords(item: ListeningSentenceItem): {
+  storySlug: string | null;
+  enNames: string[];
+  jaNames: string[];
+} {
+  const storySlug = item.id.startsWith("story:") ? item.id.split(":")[1] : null;
+  const enNames: string[] = [];
+  const jaNames: string[] = [];
+
+  const commonWords = new Set([
+    "The", "A", "An", "When", "After", "Before", "She", "He", "They", "We", "You", "I", "It",
+    "In", "On", "At", "If", "Because", "Since", "There", "Here", "What", "How", "Why", "Where",
+    "Who", "One", "Every", "Then", "But", "However", "Although", "This", "That", "These", "Those",
+    "My", "Your", "His", "Her", "Their", "Our", "All", "Some", "Many", "Please", "Do", "Did",
+    "Does", "Is", "Are", "Was", "Were", "Have", "Has", "Had", "Will", "Would", "Can", "Could",
+    "Now", "Today", "Tomorrow", "Yesterday", "Suddenly", "Finally", "Next", "Meanwhile", "Once",
+    "Just", "So", "Even", "As", "Both", "No", "Not"
+  ]);
+
+  const words = item.en.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'“”]/g, "").split(/\s+/);
+  for (const w of words) {
+    if (w && /^[A-Z][a-z]{2,}$/.test(w) && !commonWords.has(w)) {
+      enNames.push(w);
+    }
+  }
+
+  // Japanese honorifics (田中さん, スミスさん, 太郎くん, etc.)
+  const jaHonorifics = item.ja.match(/([一-龯ぁ-んァ-ヶ]{1,5})(?:さん|様|さま|君|くん|ちゃん)/g);
+  if (jaHonorifics) {
+    for (const m of jaHonorifics) {
+      const name = m.replace(/(?:さん|様|さま|君|くん|ちゃん)$/, "");
+      if (name) jaNames.push(name);
+    }
+  }
+
+  // Japanese topic subject before は / が
+  const jaTopicMatches = item.ja.match(/^([一-龯ァ-ヶ]{2,5}|[ぁ-ん]{2,5})[はが]/);
+  if (jaTopicMatches && jaTopicMatches[1]) {
+    const c = jaTopicMatches[1];
+    const commonJa = new Set([
+      "わたし", "あなた", "かれ", "かのじょ", "これ", "それ", "あれ",
+      "きょう", "あした", "きのう", "いま", "私", "彼", "彼女", "今日", "明日", "昨日", "今"
+    ]);
+    if (!commonJa.has(c)) {
+      jaNames.push(c);
+    }
+  }
+
+  return {
+    storySlug,
+    enNames: Array.from(new Set(enNames)),
+    jaNames: Array.from(new Set(jaNames)),
+  };
+}
+
+export function buildSentenceDistractors(
   target: ListeningSentenceItem,
   allSentences: ListeningSentenceItem[],
-  rng: () => number
+  rng: () => number,
+  sentenceLanguage: SentenceOptionLanguage = "en"
 ): ListeningOption[] {
   const targetLen = target.en.length;
+  const targetNormEn = normalizeGlossToken(target.en);
+  const targetNormJa = cleanSentenceForAudio(target.ja);
+
   const eligible = allSentences.filter(
     (s) =>
       s.id !== target.id &&
-      s.ja !== target.ja &&
-      normalizeGlossToken(s.en) !== normalizeGlossToken(target.en)
+      cleanSentenceForAudio(s.ja) !== targetNormJa &&
+      normalizeGlossToken(s.en) !== targetNormEn
   );
 
-  const sameLevel = eligible
-    .filter((s) => s.jlpt === target.jlpt)
-    .sort((a, b) => Math.abs(a.en.length - targetLen) - Math.abs(b.en.length - targetLen));
-  const otherLevel = eligible
-    .filter((s) => s.jlpt !== target.jlpt)
-    .sort((a, b) => Math.abs(a.en.length - targetLen) - Math.abs(b.en.length - targetLen));
+  const { storySlug, enNames, jaNames } = extractSentenceKeywords(target);
 
-  // Take a window of similar-length sentences and shuffle them for variety
-  const nearWindow = shuffle(sameLevel.slice(0, 18), rng);
-  const restSame = shuffle(sameLevel.slice(18), rng);
-  const restOther = shuffle(otherLevel, rng);
-
-  const chosen: ListeningSentenceItem[] = [];
-  const usedEn = new Set<string>([normalizeGlossToken(target.en)]);
-
-  for (const cand of [...nearWindow, ...restSame, ...restOther]) {
-    if (chosen.length >= 3) break;
-    const norm = normalizeGlossToken(cand.en);
-    if (!norm || usedEn.has(norm)) continue;
-    usedEn.add(norm);
-    chosen.push(cand);
+  function matchesCharacterOrStory(cand: ListeningSentenceItem): boolean {
+    if (enNames.some((name) => new RegExp(`\\b${name}\\b`, "i").test(cand.en))) return true;
+    if (jaNames.some((name) => cand.ja.includes(name))) return true;
+    return false;
   }
 
+  // Tier 1: Same character in the same story (e.g. other sentences from story:princess-hase with "Hase")
+  const tier1 = storySlug
+    ? eligible.filter(
+        (s) => s.id.startsWith(`story:${storySlug}:`) && matchesCharacterOrStory(s)
+      )
+    : [];
+
+  // Tier 2: Same character across any sentences in the pool
+  const tier2 = eligible.filter(
+    (s) => (!storySlug || !s.id.startsWith(`story:${storySlug}:`)) && matchesCharacterOrStory(s)
+  );
+
+  // Tier 3: Same story (shares context/theme even if character name isn't in every sentence)
+  const tier3 = storySlug
+    ? eligible.filter(
+        (s) => s.id.startsWith(`story:${storySlug}:`) && !matchesCharacterOrStory(s)
+      )
+    : [];
+
+  // Tier 4: Same JLPT level & length
+  const tier4 = eligible
+    .filter(
+      (s) =>
+        s.jlpt === target.jlpt &&
+        (!storySlug || !s.id.startsWith(`story:${storySlug}:`)) &&
+        !matchesCharacterOrStory(s)
+    )
+    .sort((a, b) => Math.abs(a.en.length - targetLen) - Math.abs(b.en.length - targetLen));
+
+  // Tier 5: Remaining sentences
+  const tier5 = eligible
+    .filter(
+      (s) =>
+        s.jlpt !== target.jlpt &&
+        (!storySlug || !s.id.startsWith(`story:${storySlug}:`)) &&
+        !matchesCharacterOrStory(s)
+    )
+    .sort((a, b) => Math.abs(a.en.length - targetLen) - Math.abs(b.en.length - targetLen));
+
+  const chosen: ListeningSentenceItem[] = [];
+  const usedNorm = new Set<string>([
+    sentenceLanguage === "ja" ? targetNormJa : targetNormEn,
+  ]);
+
+  // Combine prioritized pools with randomized variety
+  const pools = [
+    shuffle(tier1, rng),
+    shuffle(tier2, rng),
+    shuffle(tier3, rng),
+    shuffle(tier4.slice(0, 18), rng),
+    shuffle(tier4.slice(18), rng),
+    shuffle(tier5, rng),
+  ];
+
+  for (const pool of pools) {
+    for (const cand of pool) {
+      if (chosen.length >= 3) break;
+      const key =
+        sentenceLanguage === "ja"
+          ? cleanSentenceForAudio(cand.ja)
+          : normalizeGlossToken(cand.en);
+      if (!key || usedNorm.has(key)) continue;
+      usedNorm.add(key);
+      chosen.push(cand);
+    }
+    if (chosen.length >= 3) break;
+  }
+
+  const isJa = sentenceLanguage === "ja";
   const options: ListeningOption[] = [
     {
       id: target.id,
-      label: target.en,
-      subLabel: target.ja,
+      label: isJa ? target.ja : target.en,
+      subLabel: isJa ? target.en : target.ja,
     },
     ...chosen.map((c) => ({
       id: c.id,
-      label: c.en,
-      subLabel: c.ja,
+      label: isJa ? c.ja : c.en,
+      subLabel: isJa ? c.en : c.ja,
     })),
   ];
 
@@ -560,7 +687,17 @@ export function createListeningSession(
     filtered = allSentences;
   }
 
-  const picked = shuffle(filtered, rng).slice(0, settings.size);
+  // Prioritize sentences with pre-generated neural audio clips for clear native listening comprehension
+  const withAudio = filtered.filter((s) => Boolean(s.audioSrc));
+  const candidatePool =
+    withAudio.length >= settings.size
+      ? withAudio
+      : withAudio.length > 0
+        ? withAudio
+        : filtered;
+
+  const sentenceLanguage: SentenceOptionLanguage = settings.sentenceLanguage || "en";
+  const picked = shuffle(candidatePool, rng).slice(0, settings.size);
   const questions: ListeningQuestion[] = picked.map((item) => ({
     id: item.id,
     subMode: "sentences",
@@ -574,8 +711,13 @@ export function createListeningSession(
     hiddenPromptJa: item.ja,
     hiddenReading: item.reading,
     correctMeaning: item.en,
-    acceptedAnswers: [item.en],
-    options: buildSentenceDistractors(item, allSentences.length >= 4 ? allSentences : filtered, rng),
+    acceptedAnswers: sentenceLanguage === "ja" ? [item.ja, item.reading] : [item.en],
+    options: buildSentenceDistractors(
+      item,
+      allSentences.length >= 4 ? allSentences : filtered,
+      rng,
+      sentenceLanguage
+    ),
     jlpt: item.jlpt,
     status: "pending",
     mistakes: 0,

@@ -12,10 +12,11 @@ describe("GamesHub (/)", () => {
     expect(screen.getByRole("heading", { name: "Core Practice" })).toBeTruthy();
     expect(linkFor("/games/kana")).toBeTruthy();
     expect(linkFor("/games/kanji/meaning")).toBeTruthy();
-    expect(linkFor("/games/kanji/radicals")).toBeTruthy();
-    expect(screen.getByText(/radical builder/i)).toBeTruthy();
-    expect(screen.getByText(/kanji reading/i)).toBeTruthy();
+    expect(linkFor("/games/kanji/reading")).toBeTruthy();
+    expect(screen.getByText(/kanji reading & radicals/i)).toBeTruthy();
     expect(linkFor("/games/vocabulary")).toBeTruthy();
+    expect(linkFor("/games/jlpt")).toBeTruthy();
+    expect(screen.getByText(/JLPT Exam Pattern Practice/i)).toBeTruthy();
     expect(screen.getByRole("heading", { name: "Learn & Reference" })).toBeTruthy();
     expect(linkFor("/grammar")).toBeTruthy();
     expect(linkFor("/learn")).toBeTruthy();

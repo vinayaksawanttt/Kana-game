@@ -4,6 +4,7 @@ import type { RadicalExampleRecord, RadicalIndex, RadicalRecord } from "@/data/r
 import {
   getKanjiDetails,
   getKanjiForRadical,
+  getKanjiForRadicals,
   getRadicals,
   parseRadicalWikiEntry,
 } from "./radicalSearch";
@@ -66,5 +67,52 @@ describe("radical search", () => {
       meaning: "one",
       reading: "いち",
     });
+  });
+
+  it("intersects multiple radicals to find kanji combinations (e.g. 囗 + 大 = 因)", () => {
+    const customRecords: KanjiRecord[] = [
+      {
+        c: "因",
+        jlpt: 3,
+        grade: 5,
+        meanings: ["cause", "depend on"],
+        label: "cause",
+        on: ["イン"],
+        kun: ["よる"],
+        strokes: 6,
+        freq: 500,
+      },
+      {
+        c: "大",
+        jlpt: 5,
+        grade: 1,
+        meanings: ["big"],
+        label: "big",
+        on: ["ダイ"],
+        kun: ["おおきい"],
+        strokes: 3,
+        freq: 10,
+      },
+      {
+        c: "四",
+        jlpt: 5,
+        grade: 1,
+        meanings: ["four"],
+        label: "four",
+        on: ["シ"],
+        kun: ["よん"],
+        strokes: 5,
+        freq: 20,
+      },
+    ];
+    const index: RadicalIndex = {
+      囗: ["因", "四"],
+      大: ["因", "大"],
+    };
+    expect(
+      getKanjiForRadicals(["囗", "大"], index, customRecords, ["N3", "N5"]).map(
+        (k) => k.c
+      )
+    ).toEqual(["因"]);
   });
 });

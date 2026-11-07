@@ -481,15 +481,24 @@ function playAudioItemAsync(
     try {
       const playPromise = audio.play();
       if (playPromise && typeof playPromise.catch === "function") {
-        playPromise.catch(() => {
+        playPromise.catch((err: unknown) => {
           if (hasEndedOrErrored) return;
+          // AbortError is normal when switching between audio clips or stopping
+          if (err instanceof Error && err.name === "AbortError") {
+            finish();
+            return;
+          }
           hasEndedOrErrored = true;
           currentAudioResolver = null;
           fallbackToSpeechAsync(ttsText, slug, 0.92 * effectiveRate, activeChar).then(finish);
         });
       }
-    } catch {
+    } catch (err: unknown) {
       if (hasEndedOrErrored) return;
+      if (err instanceof Error && err.name === "AbortError") {
+        finish();
+        return;
+      }
       hasEndedOrErrored = true;
       currentAudioResolver = null;
       fallbackToSpeechAsync(ttsText, slug, 0.92 * effectiveRate, activeChar).then(finish);
@@ -662,13 +671,14 @@ export function useJapaneseAudio() {
       stopCurrentPlayback();
 
       const payload = resolveSentenceAudio(sentenceJa, id);
-      if (options?.audioSrc) {
+      const staticSrc = options?.audioSrc || payload.staticSrc;
+      if (staticSrc) {
         void playAudioItemAsync(
-          options.audioSrc,
+          staticSrc,
           payload.ttsText,
           payload.key,
           undefined,
-          options.rate
+          options?.rate
         );
         return;
       }

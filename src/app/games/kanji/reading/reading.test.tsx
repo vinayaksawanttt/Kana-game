@@ -1,10 +1,13 @@
-import { fireEvent, render, screen } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { cleanup, fireEvent, render, screen } from "@testing-library/react";
+import { afterEach, describe, expect, it } from "vitest";
 import { clearKanjiVocabCache, getKanjiComposites } from "@/data/kanjiVocab";
 import { getStrokeGeometry, validateDrawnStroke } from "@/engine/strokePractice";
 import KanjiReadingHubPage from "./page";
 
 describe("Kanji Reading Hub, Composite Data & Stroke Practice Engine", () => {
+  afterEach(() => {
+    cleanup();
+  });
   it("loads composite vocabulary words for a kanji from static kanji-vocab chunks", async () => {
     clearKanjiVocabCache();
     const composites = await getKanjiComposites("学", "N5");
@@ -66,6 +69,30 @@ describe("Kanji Reading Hub, Composite Data & Stroke Practice Engine", () => {
       `/games/kanji/playground/${encodeURIComponent("一")}`
     );
     expect(screen.getByRole("button", { name: /Full Details/i })).toBeTruthy();
+  });
+
+  it("toggles between Kanji Sheet and Radical Builder modes with multi-radical combination", async () => {
+    render(<KanjiReadingHubPage />);
+
+    // Toggle from Kanji Sheet to Radical Builder
+    const radicalTab = screen.getByRole("tab", { name: /radical builder/i });
+    expect(radicalTab).toBeTruthy();
+    fireEvent.click(radicalTab);
+
+    // Verify Radical Builder view rendered
+    expect(await screen.findByRole("heading", { name: /radical combination formula/i })).toBeTruthy();
+    expect(await screen.findByRole("region", { name: /radical components chart/i })).toBeTruthy();
+
+    // Verify picturistic names are present in radical buttons
+    const mouthRadical = await screen.findByRole("button", { name: /mouth, opening/i });
+    expect(mouthRadical).toBeTruthy();
+
+    // Click radical 口 to add to combination
+    fireEvent.click(mouthRadical);
+
+    // Verify matching kanji section displays results
+    const matchingSection = await screen.findByRole("region", { name: /matching kanji compounds/i });
+    expect(matchingSection).toBeTruthy();
   });
 });
 

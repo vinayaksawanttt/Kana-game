@@ -3,6 +3,7 @@ import {
   STATIC_READING_AUDIO,
   STATIC_VOCAB_AUDIO,
   STATIC_GRAMMAR_AUDIO_MAP,
+  STATIC_LISTENING_SENTENCE_AUDIO_MAP,
 } from "@/data/audio-manifest.generated";
 
 export interface KanaAudioPayload {
@@ -431,6 +432,8 @@ export interface SentenceAudioPayload {
   ttsText: string;
   lang: "ja-JP";
   rate: number;
+  hasStaticClip?: boolean;
+  staticSrc?: string;
 }
 
 export interface GrammarTitleAudioPayload {
@@ -591,11 +594,18 @@ export function resolveSentenceAudio(
   id?: string
 ): SentenceAudioPayload {
   const cleaned = cleanSentenceForAudio(sentenceJa);
+  const staticSrc =
+    (id && STATIC_LISTENING_SENTENCE_AUDIO_MAP[id]) ||
+    STATIC_LISTENING_SENTENCE_AUDIO_MAP[cleaned] ||
+    "";
+
   return {
     key: id || cleaned,
     ttsText: cleaned,
     lang: "ja-JP",
     rate: 0.95,
+    hasStaticClip: Boolean(staticSrc),
+    staticSrc,
   };
 }
 

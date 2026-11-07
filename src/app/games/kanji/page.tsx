@@ -4,7 +4,7 @@ import { GameLayout } from "@/lib/game-core/layout";
 
 const modes = [
   { title: "Meaning", description: "Choose the English meaning for each kanji.", href: "/games/kanji/meaning", live: true },
-  { title: "Radical Builder", description: "Find kanji by radical and explore readings, meanings, and examples.", href: "/games/kanji/radicals", live: true },
+  { title: "Radical Builder", description: "Find kanji by radical and explore readings, meanings, and examples.", href: "/games/kanji/reading?view=radicals", live: true },
   { title: "Reading", description: "Browse kanji by JLPT & grade, inspect readings, and practice writing in the playground.", href: "/games/kanji/reading", live: true },
   { title: "Kanji from meaning", description: "Find the kanji that matches a meaning.", live: false },
   { title: "Typing", description: "Practice typing kanji from their readings.", live: false },

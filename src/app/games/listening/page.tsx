@@ -13,6 +13,7 @@ import {
   type ListeningAnswerFormat,
   type ListeningSettings,
   type ListeningSubMode,
+  type SentenceOptionLanguage,
 } from "@/engine/listening";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
 
@@ -50,11 +51,11 @@ const KANA_GROUPS: Array<{ id: KanaGroup; label: string; count: number }> = [
 ];
 
 const JLPT_LEVELS: Array<{ level: JlptLevel; label: string; vocabCount: number; sentCount: number }> = [
-  { level: 5, label: "N5", vocabCount: 669, sentCount: 890 },
-  { level: 4, label: "N4", vocabCount: 634, sentCount: 880 },
-  { level: 3, label: "N3", vocabCount: 1749, sentCount: 1750 },
-  { level: 2, label: "N2", vocabCount: 1833, sentCount: 1830 },
-  { level: 1, label: "N1", vocabCount: 3262, sentCount: 3260 },
+  { level: 5, label: "N5", vocabCount: 669, sentCount: 363 },
+  { level: 4, label: "N4", vocabCount: 634, sentCount: 373 },
+  { level: 3, label: "N3", vocabCount: 1749, sentCount: 80 },
+  { level: 2, label: "N2", vocabCount: 1833, sentCount: 80 },
+  { level: 1, label: "N1", vocabCount: 3262, sentCount: 80 },
 ];
 
 const STORAGE_KEY = "listening-last-setup";
@@ -63,6 +64,7 @@ export default function ListeningSetupPage() {
   const router = useRouter();
   const [subMode, setSubMode] = useState<ListeningSubMode>("kana");
   const [answerFormat, setAnswerFormat] = useState<ListeningAnswerFormat>("multiple-choice");
+  const [sentenceLanguage, setSentenceLanguage] = useState<SentenceOptionLanguage>("en");
   const [levels, setLevels] = useState<JlptLevel[]>([5]);
   const [kanaScript, setKanaScript] = useState<ScriptSelection>("hiragana");
   const [kanaGroups, setKanaGroups] = useState<KanaGroup[]>(["basic"]);
@@ -82,6 +84,9 @@ export default function ListeningSetupPage() {
         }
         if (saved.answerFormat === "multiple-choice" || saved.answerFormat === "typing") {
           setAnswerFormat(saved.answerFormat);
+        }
+        if (saved.sentenceLanguage === "en" || saved.sentenceLanguage === "ja") {
+          setSentenceLanguage(saved.sentenceLanguage);
         }
         if (
           Array.isArray(saved.levels) &&
@@ -178,6 +183,7 @@ export default function ListeningSetupPage() {
   function resetSetup() {
     setSubMode("kana");
     setAnswerFormat("multiple-choice");
+    setSentenceLanguage("en");
     setLevels([5]);
     setKanaScript("hiragana");
     setKanaGroups(["basic"]);
@@ -196,6 +202,7 @@ export default function ListeningSetupPage() {
         subMode,
         answerFormat: effectiveAnswerFormat,
         levels,
+        sentenceLanguage,
         kanaScript,
         kanaGroups,
         size,
@@ -376,17 +383,36 @@ export default function ListeningSetupPage() {
                 </fieldset>
               )}
 
-              {/* 3. Answer Style Selector */}
+              {/* 3. Answer Style / Option Language Selector */}
               <fieldset className="border-t border-[var(--line)]/60 pt-5">
-                <legend className="mb-2.5 text-sm font-bold">3. Answer style</legend>
+                <legend className="mb-2.5 text-sm font-bold">
+                  {subMode === "sentences" ? "3. Option language" : "3. Answer style"}
+                </legend>
                 {subMode === "sentences" ? (
-                  <div className="inline-flex rounded-full bg-[var(--sakura-light)] p-1">
+                  <div className="inline-flex flex-wrap rounded-full bg-[var(--sakura-light)] p-1">
                     <button
                       type="button"
-                      aria-pressed={true}
-                      className="min-h-10 rounded-full bg-[var(--primary)] px-4 text-sm font-bold text-white"
+                      aria-pressed={sentenceLanguage === "en"}
+                      onClick={() => setSentenceLanguage("en")}
+                      className={`min-h-10 rounded-full px-4 text-sm font-bold transition-colors cursor-pointer ${
+                        sentenceLanguage === "en"
+                          ? "bg-[var(--primary)] text-white"
+                          : "text-[var(--muted)] hover:text-[var(--ink)]"
+                      }`}
                     >
-                      Multiple Choice (4 options)
+                      English Options
+                    </button>
+                    <button
+                      type="button"
+                      aria-pressed={sentenceLanguage === "ja"}
+                      onClick={() => setSentenceLanguage("ja")}
+                      className={`min-h-10 rounded-full px-4 text-sm font-bold transition-colors cursor-pointer ${
+                        sentenceLanguage === "ja"
+                          ? "bg-[var(--primary)] text-white"
+                          : "text-[var(--muted)] hover:text-[var(--ink)]"
+                      }`}
+                    >
+                      Japanese Options (日本語)
                     </button>
                   </div>
                 ) : (
@@ -467,9 +493,17 @@ export default function ListeningSetupPage() {
                 </dd>
               </div>
               <div className="flex items-center justify-between">
-                <dt className="text-[var(--muted)]">Answer format</dt>
+                <dt className="text-[var(--muted)]">
+                  {subMode === "sentences" ? "Option language" : "Answer format"}
+                </dt>
                 <dd className="font-bold text-[var(--ink)]">
-                  {effectiveAnswerFormat === "typing" ? "Type Answer" : "Multiple Choice (4)"}
+                  {subMode === "sentences"
+                    ? sentenceLanguage === "ja"
+                      ? "Japanese (日本語)"
+                      : "English"
+                    : effectiveAnswerFormat === "typing"
+                      ? "Type Answer"
+                      : "Multiple Choice (4)"}
                 </dd>
               </div>
               <div className="flex items-center justify-between">

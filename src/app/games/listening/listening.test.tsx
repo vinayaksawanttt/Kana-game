@@ -61,6 +61,18 @@ describe("Listening Quiz UI (Setup, Play & Result)", () => {
     const typingBtn = screen.getByRole("button", { name: /type answer/i });
     fireEvent.click(typingBtn);
     expect(typingBtn.getAttribute("aria-pressed")).toBe("true");
+
+    // Switch to Sentence Comprehension -> shows English vs Japanese option language toggle
+    fireEvent.click(screen.getByRole("button", { name: /sentence comprehension/i }));
+    const enOptBtn = screen.getByRole("button", { name: /english options/i });
+    const jaOptBtn = screen.getByRole("button", { name: /japanese options/i });
+    expect(enOptBtn).toBeTruthy();
+    expect(jaOptBtn).toBeTruthy();
+    expect(enOptBtn.getAttribute("aria-pressed")).toBe("true");
+
+    fireEvent.click(jaOptBtn);
+    expect(jaOptBtn.getAttribute("aria-pressed")).toBe("true");
+    expect(enOptBtn.getAttribute("aria-pressed")).toBe("false");
   });
 
   it("hides Japanese text until answered on Play screen and reveals transcript after answering", async () => {
@@ -182,5 +194,103 @@ describe("Listening Quiz UI (Setup, Play & Result)", () => {
     expect(screen.getByText(/Missed: 1/i)).toBeTruthy();
     expect(screen.getByRole("button", { name: /practice missed items/i })).toBeTruthy();
     expect(screen.getByRole("button", { name: /play again/i })).toBeTruthy();
+  });
+
+  it("does not skip question when Enter is pressed while focused on Skip button or pending, and advances cleanly when answered", async () => {
+    const session = createListeningSession(
+      {
+        vocabulary: [
+          {
+            id: "v-1",
+            word: "学校",
+            reading: "がっこう",
+            romaji: "gakkou",
+            meanings: ["school"],
+            modernMeaning: "school",
+            level: "N5",
+            pos: ["noun"],
+            examples: [],
+          },
+          {
+            id: "v-2",
+            word: "先生",
+            reading: "せんせい",
+            romaji: "sensei",
+            meanings: ["teacher"],
+            modernMeaning: "teacher",
+            level: "N5",
+            pos: ["noun"],
+            examples: [],
+          },
+          {
+            id: "v-3",
+            word: "水",
+            reading: "みず",
+            romaji: "mizu",
+            meanings: ["water"],
+            modernMeaning: "water",
+            level: "N5",
+            pos: ["noun"],
+            examples: [],
+          },
+          {
+            id: "v-4",
+            word: "電車",
+            reading: "でんしゃ",
+            romaji: "densha",
+            meanings: ["train"],
+            modernMeaning: "train",
+            level: "N5",
+            pos: ["noun"],
+            examples: [],
+          },
+        ],
+      },
+      {
+        subMode: "vocabulary",
+        answerFormat: "multiple-choice",
+        levels: [5],
+        size: 10,
+      },
+      () => 0.1,
+      "skip-test-session"
+    );
+
+    mockParams = { sessionId: "skip-test-session" };
+    saveGameSession("listening", "skip-test-session", session);
+    render(<ListeningPlayPage />);
+
+    await waitFor(() => {
+      expect(screen.getByRole("button", { name: /skip/i })).toBeTruthy();
+    });
+
+    const skipBtn = screen.getByRole("button", { name: /skip/i });
+    skipBtn.focus();
+
+    // Pressing Enter while tabbed/focused on Skip button must NOT trigger skip!
+    fireEvent.keyDown(skipBtn, { key: "Enter" });
+    fireEvent.keyDown(window, { key: "Enter" });
+
+    // Status should still be pending and Japanese prompt remains hidden
+    expect(screen.queryByText("Skipped")).toBeNull();
+    expect(screen.queryByText(session.questions[0].hiddenPromptJa)).toBeNull();
+
+    // Now answer correctly
+    const correctBtn = screen.getByRole("button", {
+      name: new RegExp(session.questions[0].correctMeaning, "i"),
+    });
+    fireEvent.click(correctBtn);
+
+    await waitFor(() => {
+      expect(screen.getByText("Correct!")).toBeTruthy();
+    });
+
+    // Press Enter to advance to Next question
+    fireEvent.keyDown(window, { key: "Enter" });
+
+    await waitFor(() => {
+      // Advanced to Question 2 (index 1), prompt is hidden for question 2
+      expect(screen.getByText("2 / 4")).toBeTruthy();
+    });
   });
 });

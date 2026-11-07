@@ -11,15 +11,22 @@ export function PwaRegister() {
     if (typeof window === "undefined") return;
     if (!("serviceWorker" in navigator)) return;
 
+    // In development mode, unregister any lingering service worker so stale cached chunks don't hijack requests
+    if (process.env.NODE_ENV === "development") {
+      void navigator.serviceWorker.getRegistrations().then((registrations) => {
+        for (const reg of registrations) {
+          void reg.unregister();
+        }
+      });
+      return;
+    }
+
     // Register service worker in production / browser environments
     const register = async () => {
       try {
         await navigator.serviceWorker.register("/sw.js", { scope: "/" });
       } catch (err) {
-        // Suppress registration errors in environments where SW registration is blocked or dev mode
-        if (process.env.NODE_ENV === "development") {
-          console.debug("[PwaRegister] Service Worker registration skipped or failed:", err);
-        }
+        // Suppress registration errors in environments where SW registration is blocked
       }
     };
 

@@ -13,22 +13,44 @@ export function getRadicals(radicals: readonly RadicalRecord[]): RadicalRecord[]
   );
 }
 
-export function getKanjiForRadical(
-  radicalChar: string,
+export function getKanjiForRadicals(
+  radicalChars: readonly string[],
   radicalIndex: RadicalIndex,
   kanjiRecords: readonly KanjiRecord[],
   jlptFilter: readonly KanjiLevel[]
 ): KanjiRecord[] {
+  if (radicalChars.length === 0) return [];
   const kanjiByCharacter = new Map(kanjiRecords.map((record) => [record.c, record]));
   const allowedLevels = new Set(jlptFilter.map((level) => Number(level.slice(1))));
 
-  return (radicalIndex[radicalChar] ?? [])
+  let commonChars: string[] | null = null;
+  for (const rad of radicalChars) {
+    const list = radicalIndex[rad] ?? [];
+    if (commonChars === null) {
+      commonChars = [...list];
+    } else {
+      const set = new Set(list);
+      commonChars = commonChars.filter((c) => set.has(c));
+    }
+    if (commonChars.length === 0) break;
+  }
+
+  return (commonChars ?? [])
     .map((character) => kanjiByCharacter.get(character))
     .filter(
       (record): record is KanjiRecord =>
         record !== undefined && allowedLevels.has(record.jlpt)
     )
     .sort((left, right) => left.c.localeCompare(right.c, "ja"));
+}
+
+export function getKanjiForRadical(
+  radicalChar: string,
+  radicalIndex: RadicalIndex,
+  kanjiRecords: readonly KanjiRecord[],
+  jlptFilter: readonly KanjiLevel[]
+): KanjiRecord[] {
+  return getKanjiForRadicals([radicalChar], radicalIndex, kanjiRecords, jlptFilter);
 }
 
 export function getKanjiDetails(

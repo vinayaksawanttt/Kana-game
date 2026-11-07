@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
 import { DueReviewCount } from "@/components/due-review-count";
 import { getAllLearnDocs } from "@/lib/content/learn";
+import { JlptPaperIllustration } from "@/components/icons/JlptPaperIllustration";
 
 function getSections(learnGuideCount: number) {
   return [
@@ -23,14 +24,8 @@ function getSections(learnGuideCount: number) {
         href: "/games/kanji/meaning",
       },
       {
-        title: "Radical Builder",
-        description: "Explore kanji by their radicals, readings, meanings, and examples.",
-        badge: "部",
-        href: "/games/kanji/radicals",
-      },
-      {
-        title: "Kanji Reading",
-        description: "Browse kanji by JLPT and grade, inspect readings, and trace strokes in the playground.",
+        title: "Kanji Reading & Radicals",
+        description: "Browse kanji by grade or combine constituent radicals, inspect readings, and trace strokes in the playground.",
         badge: "読",
         href: "/games/kanji/reading",
       },
@@ -252,6 +247,63 @@ export default function GamesHub() {
               {section.cards.map((card) => (
                 <ModuleCard key={card.title} {...card} />
               ))}
+              {section.title === "Core Practice" && (
+                <Link
+                  href="/games/jlpt"
+                  className="group col-span-1 grid gap-6 rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[0_14px_38px_rgba(188,0,45,0.06)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sakura)] hover:shadow-[0_22px_44px_rgba(208,16,76,0.14)] sm:col-span-2 lg:col-span-3 lg:grid-cols-[1fr_auto] lg:items-center lg:p-8"
+                >
+                  <div className="flex flex-col">
+                    <div className="mb-4 flex flex-wrap items-center gap-3">
+                      <span className="grid size-12 shrink-0 place-items-center rounded-full bg-[var(--primary)] font-japanese text-2xl font-bold text-white shadow-sm">
+                        試
+                      </span>
+                      <span className="text-xs font-extrabold uppercase tracking-[0.16em] text-[var(--primary-fg)]">
+                        JLPT &amp; NAT-TEST ARENA
+                      </span>
+                      <span className="rounded-full bg-[var(--correct)]/15 px-3 py-1 text-[11px] font-bold text-[var(--correct)]">
+                        Live · N5–N1
+                      </span>
+                    </div>
+
+                    <h3 className="text-xl font-bold sm:text-2xl">
+                      JLPT Exam Pattern Practice (
+                      <span className="font-japanese">日本語能力試験・問題演習</span>)
+                    </h3>
+
+                    <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--muted)]">
+                      Train with interactive drills modeled directly on official JLPT and NAT-TEST question archetypes (Mondai) across N5 to N1 — building speed, syntactic accuracy, and trap recognition without static PDF mock papers.
+                    </p>
+
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
+                        ★ Star Sentence Scramble (<span className="font-japanese">星問題</span> · Live)
+                      </span>
+                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--bg)] px-3 py-1 text-xs font-semibold text-[var(--muted)]">
+                        <span className="font-japanese">漢字</span> Phonetic Trap Sniper (<span className="font-japanese">漢字読み</span> · Coming Next)
+                      </span>
+                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--bg)] px-3 py-1 text-xs font-semibold text-[var(--muted)]">
+                        <span className="font-japanese">類義</span> Synonym Paraphrase (<span className="font-japanese">言い換え</span> · Coming Next)
+                      </span>
+                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--bg)] px-3 py-1 text-xs font-semibold text-[var(--muted)]">
+                        <span className="font-japanese">聴解</span> Quick Response Blitz (<span className="font-japanese">即時応答</span> · Coming Next)
+                      </span>
+                    </div>
+
+                    <div className="mt-6 flex items-center gap-2 text-sm font-bold text-[var(--primary-fg)]">
+                      <span>Enter Exam Arena →</span>
+                      <ArrowRight
+                        size={16}
+                        className="transition-transform group-hover:translate-x-1"
+                        aria-hidden="true"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-center lg:pl-4">
+                    <JlptPaperIllustration className="h-52 w-40 shrink-0 transition-transform duration-300 group-hover:rotate-1 group-hover:scale-[1.03] sm:h-56 sm:w-44" />
+                  </div>
+                </Link>
+              )}
             </div>
           </section>
         ))}

@@ -42,7 +42,15 @@ function ListeningPlayContent() {
   const inputRef = useRef<HTMLInputElement>(null);
   const nextButtonRef = useRef<HTMLButtonElement>(null);
 
-  const { isPlaying, playKana, playVocab, playSentence, stopAudio } = useJapaneseAudio();
+  const {
+    isPlaying,
+    playbackSpeed,
+    setPlaybackSpeed,
+    playKana,
+    playVocab,
+    playSentence,
+    stopAudio,
+  } = useJapaneseAudio();
 
   const currentQuestion: ListeningQuestion | undefined = session?.questions[session.index];
   const isAnswered = currentQuestion ? currentQuestion.status !== "pending" : false;
@@ -68,22 +76,23 @@ function ListeningPlayContent() {
   const playQuestionAudio = useCallback(
     (question: ListeningQuestion, rateOverride?: number) => {
       const { audioPayload } = question;
+      const effectiveRate = rateOverride ?? playbackSpeed;
       if (audioPayload.type === "kana") {
-        playKana(audioPayload.charOrWord, audioPayload.reading, rateOverride);
+        playKana(audioPayload.charOrWord, audioPayload.reading, effectiveRate);
       } else if (audioPayload.type === "vocab") {
         playVocab(
           { word: audioPayload.charOrWord, reading: audioPayload.reading },
-          rateOverride
+          effectiveRate
         );
       } else {
         playSentence(audioPayload.sentenceJa || audioPayload.charOrWord, question.id, {
           audioSrc: audioPayload.audioSrc,
           reading: audioPayload.reading,
-          rate: rateOverride,
+          rate: effectiveRate,
         });
       }
     },
-    [playKana, playVocab, playSentence]
+    [playKana, playVocab, playSentence, playbackSpeed]
   );
 
   // Auto-play audio when a new question card mounts
@@ -102,11 +111,16 @@ function ListeningPlayContent() {
     if (currentQuestion.status === "pending") {
       if (session.settings.answerFormat === "typing") {
         inputRef.current?.focus();
+      } else {
+        // Multiple choice: blur active element so Skip button is NOT tab-focused by default
+        if (typeof document !== "undefined" && document.activeElement instanceof HTMLElement) {
+          document.activeElement.blur();
+        }
       }
     } else {
       nextButtonRef.current?.focus();
     }
-  }, [session, currentQuestion]);
+  }, [session?.index, currentQuestion?.status, session?.settings?.answerFormat]);
 
   const updateSession = useCallback(
     (updater: (prev: ListeningSession) => ListeningSession) => {
@@ -145,6 +159,10 @@ function ListeningPlayContent() {
     (optionId: string) => {
       if (!session || !currentQuestion || currentQuestion.status !== "pending") return;
       const elapsed = Math.max(100, Date.now() - questionStartRef.current);
+      // Explicitly blur any active element (e.g. Skip button) so focus immediately transitions to Next
+      if (typeof document !== "undefined" && document.activeElement instanceof HTMLElement) {
+        document.activeElement.blur();
+      }
       updateSession((prev) =>
         listeningReducer(prev, { type: "SUBMIT_CHOICE", optionId, timeMs: elapsed })
       );
@@ -179,6 +197,10 @@ function ListeningPlayContent() {
     }
     setTypedAnswer("");
     const currentIdx = session.index;
+    // Explicitly blur any currently focused element so the newly rendered Skip button doesn't inherit focus!
+    if (typeof document !== "undefined" && document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
     updateSession((prev) =>
       listeningReducer(prev, { type: "NEXT", forIndex: currentIdx })
     );
@@ -210,6 +232,15 @@ function ListeningPlayContent() {
               e.preventDefault();
               handleSelectOption(opt.id);
             }
+            return;
+          }
+          // Prevent accidental Enter from skipping pending questions
+          if (e.key === "Enter") {
+            e.preventDefault();
+            if (e.shiftKey) {
+              handleSkip();
+            }
+            return;
           }
         } else {
           // Typing mode: Space on empty input replays audio; Shift+Enter skips
@@ -417,23 +448,56 @@ function ListeningPlayContent() {
           )}
 
           {/* Direct Playback Controls on Card */}
-          <div className="mt-4 flex flex-wrap items-center justify-center gap-2.5">
+          <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
             <button
               type="button"
               onMouseDown={(e) => e.preventDefault()}
               onClick={() => handleReplay()}
-              className="inline-flex min-h-10 items-center gap-2 rounded-full bg-[var(--primary)] px-4 py-2 text-xs font-extrabold text-white shadow-xs transition-colors hover:bg-[var(--primary-hover)] cursor-pointer"
+              className="inline-flex min-h-10 items-center gap-2 rounded-full bg-[var(--primary)] px-4 py-2 text-xs font-extrabold text-white shadow-xs transition-all hover:bg-[var(--primary-hover)] active:scale-95 cursor-pointer"
             >
-              🔊 Replay Audio
+              <Volume2 size={15} />
+              <span>Replay Audio</span>
             </button>
-            <button
-              type="button"
-              onMouseDown={(e) => e.preventDefault()}
-              onClick={() => handleReplay(0.75)}
-              className="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--surface)] px-4 py-2 text-xs font-bold text-[var(--ink)] transition-colors hover:border-[var(--primary)] cursor-pointer"
+
+            {/* Playback Speed Segmented Toggle Group */}
+            <div
+              role="group"
+              aria-label="Playback speed"
+              className="inline-flex min-h-10 items-center rounded-full border border-[var(--line)] bg-[var(--surface)] p-1 shadow-xs"
             >
-              🐢 0.75x Slow
-            </button>
+              <button
+                type="button"
+                onMouseDown={(e) => e.preventDefault()}
+                onClick={() => {
+                  setPlaybackSpeed(1);
+                  handleReplay(1);
+                }}
+                aria-pressed={playbackSpeed === 1}
+                className={`min-h-8 rounded-full px-3 text-xs font-bold transition-all cursor-pointer ${
+                  playbackSpeed === 1
+                    ? "bg-[var(--primary)] text-white shadow-xs"
+                    : "text-[var(--muted)] hover:text-[var(--ink)]"
+                }`}
+              >
+                1.0x
+              </button>
+              <button
+                type="button"
+                onMouseDown={(e) => e.preventDefault()}
+                onClick={() => {
+                  setPlaybackSpeed(0.75);
+                  handleReplay(0.75);
+                }}
+                aria-pressed={playbackSpeed === 0.75}
+                className={`min-h-8 rounded-full px-3 text-xs font-bold transition-all cursor-pointer ${
+                  playbackSpeed === 0.75
+                    ? "bg-[var(--primary)] text-white shadow-xs"
+                    : "text-[var(--muted)] hover:text-[var(--ink)]"
+                }`}
+              >
+                0.75x Slow
+              </button>
+            </div>
           </div>
         </div>
 
@@ -475,15 +539,23 @@ function ListeningPlayContent() {
                       <div className="min-w-0 flex-1">
                         <span
                           className={`block font-bold ${
-                            currentQuestion.subMode === "kana"
-                              ? "font-japanese text-xl"
+                            currentQuestion.subMode === "kana" ||
+                            (currentQuestion.subMode === "sentences" &&
+                              session.settings.sentenceLanguage === "ja")
+                              ? "font-japanese text-base sm:text-lg"
                               : "text-sm sm:text-base"
                           }`}
                         >
                           {opt.label}
                         </span>
                         {isAnswered && opt.subLabel && (
-                          <span className="mt-0.5 block text-xs text-[var(--muted)]">
+                          <span
+                            className={`mt-0.5 block text-xs ${
+                              session.settings.sentenceLanguage === "ja"
+                                ? "text-[var(--muted)]"
+                                : "font-japanese text-[var(--muted)]"
+                            }`}
+                          >
                             {opt.subLabel}
                           </span>
                         )}
@@ -493,26 +565,44 @@ function ListeningPlayContent() {
                 })}
               </div>
 
-              <div className="mt-4 flex items-center justify-end">
+              <div className="mt-4 flex items-center justify-between">
                 {!isAnswered ? (
-                  <button
-                    type="button"
-                    onClick={handleSkip}
-                    className="inline-flex min-h-10 items-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--surface)] px-4 text-xs font-bold text-[var(--muted)] transition-colors hover:border-[var(--primary)] hover:text-[var(--ink)] cursor-pointer"
-                  >
-                    <SkipForward size={14} /> Skip
-                  </button>
+                  <>
+                    <p className="text-xs text-[var(--muted)]">
+                      Tip: Press <kbd className="rounded border border-[var(--line)] bg-[var(--surface)] px-1.5 py-0.5 font-mono text-[10px]">1</kbd>–<kbd className="rounded border border-[var(--line)] bg-[var(--surface)] px-1.5 py-0.5 font-mono text-[10px]">4</kbd> or click to choose
+                    </p>
+                    <button
+                      key="skip-btn"
+                      type="button"
+                      onKeyDown={(e) => {
+                        // Prevent accidental plain Enter from triggering Skip when tabbed
+                        if (e.key === "Enter" && !e.shiftKey) {
+                          e.preventDefault();
+                        }
+                      }}
+                      onClick={handleSkip}
+                      className="inline-flex min-h-10 items-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--surface)] px-4 text-xs font-bold text-[var(--muted)] transition-colors hover:border-[var(--primary)] hover:text-[var(--ink)] cursor-pointer focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:outline-none"
+                    >
+                      <SkipForward size={14} /> Skip (Shift+Enter)
+                    </button>
+                  </>
                 ) : (
-                  <button
-                    ref={nextButtonRef}
-                    type="button"
-                    onClick={handleNext}
-                    className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-[var(--primary)] px-6 text-sm font-extrabold text-white shadow-sm transition-colors hover:bg-[var(--primary-hover)] cursor-pointer"
-                  >
-                    <span>
-                      {currentNumber < totalQuestions ? "Next →" : "See Results →"}
-                    </span>
-                  </button>
+                  <div className="flex w-full items-center justify-between">
+                    <p className="text-xs text-[var(--muted)]">
+                      Press <kbd className="rounded border border-[var(--line)] bg-[var(--surface)] px-1.5 py-0.5 font-mono text-[10px]">Enter</kbd> to continue
+                    </p>
+                    <button
+                      key="next-btn"
+                      ref={nextButtonRef}
+                      type="button"
+                      onClick={handleNext}
+                      className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-[var(--primary)] px-6 text-sm font-extrabold text-white shadow-sm transition-all hover:bg-[var(--primary-hover)] active:scale-95 cursor-pointer focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:outline-none"
+                    >
+                      <span>
+                        {currentNumber < totalQuestions ? "Next →" : "See Results →"}
+                      </span>
+                    </button>
+                  </div>
                 )}
               </div>
             </div>
@@ -556,6 +646,11 @@ function ListeningPlayContent() {
                   </button>
                   <button
                     type="button"
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" && !e.shiftKey) {
+                        e.preventDefault();
+                      }
+                    }}
                     onClick={handleSkip}
                     className="h-12 rounded-xl border border-[var(--line)] bg-[var(--surface)] px-4 text-xs font-bold text-[var(--muted)] transition-colors hover:border-[var(--primary)] hover:text-[var(--ink)] cursor-pointer"
                   >
