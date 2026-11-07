@@ -44,14 +44,18 @@ const EXAM_MODES = [
   {
     id: "phonetic-trap",
     badge: "読",
-    mondaiTag: "文字・問題1 (Moji Mondai 1)",
-    title: "Phonetic Trap Sniper (漢字読み・同音異義語)",
+    mondaiTag: "文字・問題1 & 2 (Moji Mondai 1–2)",
+    title: "Phonetic Trap Sniper (漢字読み・表記)",
     description:
-      "Defeat official JLPT reading traps: voiced rendaku vs. unvoiced readings, long vs. short vowels (おう/お), and small っ gemination distractors.",
-    href: "/games/jlpt",
-    status: "soon" as const,
-    ctaLabel: "Coming Next",
-    highlights: ["Rendaku & Chōon Traps", "N5–N1 Kanji In Context"],
+      "Defeat official JLPT reading & orthography traps: long vs. short vowels (おう/お), voiced rendaku vs. unvoiced readings, small っ gemination, and look-alike radical kanji compounds.",
+    href: "/games/jlpt/phonetic-traps",
+    status: "live" as const,
+    ctaLabel: "Play Phonetic Trap Sniper",
+    highlights: [
+      "Mondai 1 (Kanji → Hiragana)",
+      "Mondai 2 (Hiragana → Kanji)",
+      "400+ N5–N1 Context Sentences",
+    ],
   },
   {
     id: "paraphrase-match",
