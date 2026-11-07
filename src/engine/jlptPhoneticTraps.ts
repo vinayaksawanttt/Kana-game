@@ -44,6 +44,7 @@ export interface PhoneticTrapOption {
   index: 0 | 1 | 2 | 3;
   optionNumber: 1 | 2 | 3 | 4;
   text: string;
+  furiganaText: string;
   isCorrect: boolean;
   trapRule?: TrapRuleLabel;
   trapExplanation?: string;
@@ -60,10 +61,14 @@ export interface PhoneticTrapQuestion {
   romaji: string;
   meanings: string[];
   prefix: string;
+  prefixFurigana: string;
   /** Surface highlighted inside 【...】 in the sentence stage (Kanji in Mondai 1, Hiragana in Mondai 2). */
   promptTarget: string;
+  promptTargetFurigana: string;
   suffix: string;
+  suffixFurigana: string;
   sentenceJa: string;
+  sentenceFurigana: string;
   sentenceEn: string;
   correctOptionIndex: 0 | 1 | 2 | 3;
   correctText: string;
@@ -80,6 +85,7 @@ export interface PhoneticTrapSettings {
   levels: JlptLevelInput[];
   size: PhoneticTrapSessionSize;
   showEnglishHint: boolean;
+  showFurigana?: boolean;
   questionIds?: string[];
 }
 
@@ -103,6 +109,7 @@ export interface PhoneticTrapSession {
     levels: PhoneticTrapLevel[];
     size: PhoneticTrapSessionSize;
     showEnglishHint: boolean;
+    showFurigana?: boolean;
     questionIds?: string[];
   };
   questions: PhoneticTrapQuestion[];
@@ -805,23 +812,65 @@ export function getPhoneticTrapCountsByLevel(
   return counts;
 }
 
+function katakanaToHiragana(input: string): string {
+  return input.replace(/[\u30A1-\u30F6]/g, (ch) =>
+    String.fromCharCode(ch.charCodeAt(0) - 0x60),
+  );
+}
+
+/**
+ * Builds `{漢字|ふりがな}` markup for a synthetic Kanji compound distractor using `DEFAULT_KANJI_META_MAP`.
+ */
+export function buildKanjiCompoundFurigana(
+  compound: string,
+  kanjiPool: Readonly<Record<string, CompactKanjiMeta>> = DEFAULT_KANJI_META_MAP,
+): string {
+  const chars = [...compound];
+  const hasOkurigana = chars.some((ch) => !KANJI_CHAR_RE.test(ch));
+
+  return chars
+    .map((ch) => {
+      if (!KANJI_CHAR_RE.test(ch)) return ch;
+      const meta = kanjiPool[ch];
+      if (!meta) return ch;
+      const rawReading =
+        hasOkurigana && meta.kun.length > 0
+          ? meta.kun[0].split(".")[0].replace(/-/g, "")
+          : meta.on[0]
+            ? katakanaToHiragana(meta.on[0].split(".")[0].replace(/-/g, ""))
+            : meta.kun[0]
+              ? meta.kun[0].split(".")[0].replace(/-/g, "")
+              : "";
+      return rawReading ? `{${ch}|${rawReading}}` : ch;
+    })
+    .join("");
+}
+
 export function buildPhoneticTrapQuestion(
   item: PhoneticTrapVocabItem,
   mode: PhoneticTrapQuestionMode,
   questionId: string,
   rng: () => number = Math.random,
 ): PhoneticTrapQuestion {
+  const prefixFurigana = item.prefixFurigana ?? item.prefix;
+  const targetFurigana = item.targetFurigana ?? `{${item.word}|${item.reading}}`;
+  const suffixFurigana = item.suffixFurigana ?? item.suffix;
+  const sentenceFurigana =
+    item.sentenceFurigana ?? prefixFurigana + targetFurigana + suffixFurigana;
+
   if (mode === "reading") {
     const traps = generatePhoneticReadingTraps(item.reading, rng);
     const rawOptions: Array<{
       text: string;
+      furiganaText: string;
       isCorrect: boolean;
       trapRule?: TrapRuleLabel;
       trapExplanation?: string;
     }> = [
-      { text: item.reading, isCorrect: true },
+      { text: item.reading, furiganaText: item.reading, isCorrect: true },
       ...traps.map((t) => ({
         text: t.trap,
+        furiganaText: t.trap,
         isCorrect: false,
         trapRule: t.rule,
         trapExplanation: `${t.rule}: ${t.detail}`,
@@ -834,6 +883,7 @@ export function buildPhoneticTrapQuestion(
       index: idx as 0 | 1 | 2 | 3,
       optionNumber: (idx + 1) as 1 | 2 | 3 | 4,
       text: o.text,
+      furiganaText: o.furiganaText,
       isCorrect: o.isCorrect,
       ...(o.trapRule ? { trapRule: o.trapRule } : {}),
       ...(o.trapExplanation ? { trapExplanation: o.trapExplanation } : {}),
@@ -855,9 +905,13 @@ export function buildPhoneticTrapQuestion(
       romaji: item.romaji,
       meanings: item.meanings,
       prefix: item.prefix,
+      prefixFurigana,
       promptTarget: item.word,
+      promptTargetFurigana: targetFurigana,
       suffix: item.suffix,
+      suffixFurigana,
       sentenceJa: item.sentenceJa,
+      sentenceFurigana,
       sentenceEn: item.sentenceEn,
       correctOptionIndex,
       correctText: item.reading,
@@ -874,13 +928,19 @@ export function buildPhoneticTrapQuestion(
   );
   const rawOptions: Array<{
     text: string;
+    furiganaText: string;
     isCorrect: boolean;
     trapRule?: TrapRuleLabel;
     trapExplanation?: string;
   }> = [
-    { text: item.word, isCorrect: true },
+    {
+      text: item.word,
+      furiganaText: targetFurigana,
+      isCorrect: true,
+    },
     ...orthoTraps.map((t) => ({
       text: t.trap,
+      furiganaText: buildKanjiCompoundFurigana(t.trap),
       isCorrect: false,
       trapRule: t.rule,
       trapExplanation: t.reason,
@@ -893,6 +953,7 @@ export function buildPhoneticTrapQuestion(
     index: idx as 0 | 1 | 2 | 3,
     optionNumber: (idx + 1) as 1 | 2 | 3 | 4,
     text: o.text,
+    furiganaText: o.furiganaText,
     isCorrect: o.isCorrect,
     ...(o.trapRule ? { trapRule: o.trapRule } : {}),
     ...(o.trapExplanation ? { trapExplanation: o.trapExplanation } : {}),
@@ -914,9 +975,13 @@ export function buildPhoneticTrapQuestion(
     romaji: item.romaji,
     meanings: item.meanings,
     prefix: item.prefix,
+    prefixFurigana,
     promptTarget: item.reading,
+    promptTargetFurigana: item.reading,
     suffix: item.suffix,
+    suffixFurigana,
     sentenceJa: item.sentenceJa,
+    sentenceFurigana,
     sentenceEn: item.sentenceEn,
     correctOptionIndex,
     correctText: item.word,
@@ -988,6 +1053,7 @@ export function createPhoneticTrapSession(
       levels: normalizedLevels,
       size: settings.size,
       showEnglishHint: settings.showEnglishHint,
+      showFurigana: settings.showFurigana ?? false,
       ...(settings.questionIds ? { questionIds: settings.questionIds } : {}),
     },
     questions,

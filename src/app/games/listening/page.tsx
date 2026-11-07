@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ArrowRight, Headphones, RotateCcw } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
@@ -297,6 +298,29 @@ export default function ListeningSetupPage() {
                     );
                   })}
                 </div>
+
+                <Link
+                  href="/games/jlpt/instant-reply"
+                  className="mt-3 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-[var(--sakura)] bg-[var(--sakura-light)]/50 p-3.5 transition hover:border-[var(--primary)] hover:bg-[var(--sakura-light)]"
+                >
+                  <div className="flex items-center gap-3">
+                    <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-[var(--primary)] font-japanese text-lg font-bold text-white">
+                      応
+                    </span>
+                    <div>
+                      <span className="block text-sm font-bold text-[var(--ink)]">
+                        JLPT Instant Reply Blitz (<span className="font-japanese">聴解・即時応答</span>)
+                      </span>
+                      <span className="mt-0.5 block text-xs text-[var(--muted)]">
+                        Official JLPT Mondai 4/5 blind audio reflex drill — hear a spoken line and pick the best reply out of 3 in 8 seconds.
+                      </span>
+                    </div>
+                  </div>
+                  <span className="inline-flex items-center gap-1 rounded-full bg-[var(--primary)] px-3.5 py-1.5 text-xs font-bold text-white">
+                    <span>Launch Blitz</span>
+                    <ArrowRight size={13} aria-hidden="true" />
+                  </span>
+                </Link>
               </fieldset>
 
               {/* 2. Dynamic Filters */}

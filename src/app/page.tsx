@@ -281,11 +281,11 @@ export default function GamesHub() {
                       <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
                         <span className="font-japanese">漢字</span> Phonetic Trap Sniper (<span className="font-japanese">漢字読み・表記</span> · Live)
                       </span>
-                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--bg)] px-3 py-1 text-xs font-semibold text-[var(--muted)]">
-                        <span className="font-japanese">類義</span> Synonym Paraphrase (<span className="font-japanese">言い換え</span> · Coming Next)
+                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
+                        <span className="font-japanese">類義</span> Synonym Paraphrase (<span className="font-japanese">言い換え類義</span> · Live)
                       </span>
-                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--bg)] px-3 py-1 text-xs font-semibold text-[var(--muted)]">
-                        <span className="font-japanese">聴解</span> Quick Response Blitz (<span className="font-japanese">即時応答</span> · Coming Next)
+                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
+                        <span className="font-japanese">聴解</span> Quick Response Blitz (<span className="font-japanese">即時応答</span> · Live)
                       </span>
                     </div>
 

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-11-07T05:45:10.348Z",
-  "bundleHash": "8a839f5d88a0",
+  "generatedAt": "2026-11-07T15:09:21.440Z",
+  "bundleHash": "ca93172cdddf",
   "assets": {
     "dictionary-index.json": {
       "hash": "3d98ac74562d",
@@ -30,6 +30,22 @@
     "grammar/index.json": {
       "hash": "05a835a617d4",
       "bytes": 258834
+    },
+    "jlpt/instant-reply.json": {
+      "hash": "f977252cea76",
+      "bytes": 298626
+    },
+    "jlpt/phonetic-traps.json": {
+      "hash": "6625a0a0247a",
+      "bytes": 320268
+    },
+    "jlpt/star-scramble.json": {
+      "hash": "ac2a1dd0bdbd",
+      "bytes": 346998
+    },
+    "jlpt/synonym-match.json": {
+      "hash": "d5304c9dc1f5",
+      "bytes": 308431
     },
     "kanji-vocab/N1.json": {
       "hash": "43a93ee8180b",

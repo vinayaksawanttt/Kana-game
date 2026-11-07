@@ -1,5 +1,5 @@
 // Auto-generated deterministic JLPT Phonetic & Orthography Trap Sniper dataset
-// Contains 400 vocabulary-in-context items across JLPT N5-N1 + Kanji metadata.
+// Contains 400 vocabulary-in-context items across JLPT N5-N1 + Furigana + Kanji metadata.
 
 export type PhoneticTrapLevel = "N5" | "N4" | "N3" | "N2" | "N1";
 
@@ -12,9 +12,13 @@ export interface PhoneticTrapVocabItem {
   romaji: string;
   meanings: string[];
   prefix: string;
+  prefixFurigana: string;
   targetSurface: string;
+  targetFurigana: string;
   suffix: string;
+  suffixFurigana: string;
   sentenceJa: string;
+  sentenceFurigana: string;
   sentenceEn: string;
 }
 
@@ -45,7 +49,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "図書館",
     "suffix": "の中で話をしてはいけない。",
     "sentenceJa": "図書館の中で話をしてはいけない。",
-    "sentenceEn": "We must not speak in the library."
+    "sentenceEn": "We must not speak in the library.",
+    "prefixFurigana": "",
+    "targetFurigana": "{図書館|としょかん}",
+    "suffixFurigana": "の{中|なか}で{話|はなし}をしてはいけない。",
+    "sentenceFurigana": "{図書館|としょかん}の{中|なか}で{話|はなし}をしてはいけない。"
   },
   {
     "id": "trap-n5-734d275fd9",
@@ -61,7 +69,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "病院",
     "suffix": "はありますか。",
     "sentenceJa": "この近くに病院はありますか。",
-    "sentenceEn": "Is there a hospital near here?"
+    "sentenceEn": "Is there a hospital near here?",
+    "prefixFurigana": "この{近|ちか}くに",
+    "targetFurigana": "{病院|びょういん}",
+    "suffixFurigana": "はありますか。",
+    "sentenceFurigana": "この{近|ちか}くに{病院|びょういん}はありますか。"
   },
   {
     "id": "trap-n5-65783b95dd",
@@ -77,7 +89,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "勉強",
     "suffix": "していますか。",
     "sentenceJa": "あなたは何時間勉強していますか。",
-    "sentenceEn": "How many hours have you been studying?"
+    "sentenceEn": "How many hours have you been studying?",
+    "prefixFurigana": "あなたは{何|なん}{時間|じかん}",
+    "targetFurigana": "{勉強|べんきょう}",
+    "suffixFurigana": "していますか。",
+    "sentenceFurigana": "あなたは{何|なん}{時間|じかん}{勉強|べんきょう}していますか。"
   },
   {
     "id": "trap-n5-d23f06249a",
@@ -93,7 +109,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "練習",
     "suffix": "をしますか。",
     "sentenceJa": "あなたはいつピアノの練習をしますか。",
-    "sentenceEn": "When do you practice the piano?"
+    "sentenceEn": "When do you practice the piano?",
+    "prefixFurigana": "あなたはいつピアノの",
+    "targetFurigana": "{練習|れんしゅう}",
+    "suffixFurigana": "をしますか。",
+    "sentenceFurigana": "あなたはいつピアノの{練習|れんしゅう}をしますか。"
   },
   {
     "id": "trap-n5-2120ff505c",
@@ -109,7 +129,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "会社",
     "suffix": "に入った。",
     "sentenceJa": "ビルは三年前にこの会社に入った。",
-    "sentenceEn": "Bill joined our company three years ago."
+    "sentenceEn": "Bill joined our company three years ago.",
+    "prefixFurigana": "ビルは{三|さん}{年|ねん}{前|まえ}にこの",
+    "targetFurigana": "{会社|かいしゃ}",
+    "suffixFurigana": "に{入|はい}った。",
+    "sentenceFurigana": "ビルは{三|さん}{年|ねん}{前|まえ}にこの{会社|かいしゃ}に{入|はい}った。"
   },
   {
     "id": "trap-n5-dd8ac16bd2",
@@ -125,7 +149,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "学校",
     "suffix": "はたくさんの生徒がいます。",
     "sentenceJa": "この学校はたくさんの生徒がいます。",
-    "sentenceEn": "This school has many students."
+    "sentenceEn": "This school has many students.",
+    "prefixFurigana": "この",
+    "targetFurigana": "{学校|がっこう}",
+    "suffixFurigana": "はたくさんの{生徒|せいと}がいます。",
+    "sentenceFurigana": "この{学校|がっこう}はたくさんの{生徒|せいと}がいます。"
   },
   {
     "id": "trap-n5-a59efa3057",
@@ -141,7 +169,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "銀行",
     "suffix": "にどれだけお金がありますか。",
     "sentenceJa": "銀行にどれだけお金がありますか。",
-    "sentenceEn": "How much money do you have in the bank?"
+    "sentenceEn": "How much money do you have in the bank?",
+    "prefixFurigana": "",
+    "targetFurigana": "{銀行|ぎんこう}",
+    "suffixFurigana": "にどれだけお{金|かね}がありますか。",
+    "sentenceFurigana": "{銀行|ぎんこう}にどれだけお{金|かね}がありますか。"
   },
   {
     "id": "trap-n5-5101640e7e",
@@ -157,7 +189,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "写真",
     "suffix": "なんでしょう。",
     "sentenceJa": "なんてキレイな写真なんでしょう。",
-    "sentenceEn": "What a beautiful picture!"
+    "sentenceEn": "What a beautiful picture!",
+    "prefixFurigana": "なんてキレイな",
+    "targetFurigana": "{写真|しゃしん}",
+    "suffixFurigana": "なんでしょう。",
+    "sentenceFurigana": "なんてキレイな{写真|しゃしん}なんでしょう。"
   },
   {
     "id": "trap-n5-b8317395af",
@@ -173,7 +209,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "新聞",
     "suffix": "に出ていた。",
     "sentenceJa": "ジョンのことが新聞に出ていた。",
-    "sentenceEn": "John was mentioned in the paper."
+    "sentenceEn": "John was mentioned in the paper.",
+    "prefixFurigana": "ジョンのことが",
+    "targetFurigana": "{新聞|しんぶん}",
+    "suffixFurigana": "に{出|で}ていた。",
+    "sentenceFurigana": "ジョンのことが{新聞|しんぶん}に{出|で}ていた。"
   },
   {
     "id": "trap-n5-814bdc2cec",
@@ -190,7 +230,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "先生",
     "suffix": "の後ろから入ってきた。",
     "sentenceJa": "校長が先生の後ろから入ってきた。",
-    "sentenceEn": "The principal came in after the teacher."
+    "sentenceEn": "The principal came in after the teacher.",
+    "prefixFurigana": "{校長|こうちょう}が",
+    "targetFurigana": "{先生|せんせい}",
+    "suffixFurigana": "の{後|うし}ろから{入|はい}ってきた。",
+    "sentenceFurigana": "{校長|こうちょう}が{先生|せんせい}の{後|うし}ろから{入|はい}ってきた。"
   },
   {
     "id": "trap-n5-ee85169acd",
@@ -206,7 +250,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "料理",
     "suffix": "用にもってこいだ。",
     "sentenceJa": "これらのりんごは料理用にもってこいだ。",
-    "sentenceEn": "These apples are good cookers."
+    "sentenceEn": "These apples are good cookers.",
+    "prefixFurigana": "これらのりんごは",
+    "targetFurigana": "{料理|りょうり}",
+    "suffixFurigana": "{用|よう}にもってこいだ。",
+    "sentenceFurigana": "これらのりんごは{料理|りょうり}{用|よう}にもってこいだ。"
   },
   {
     "id": "trap-n5-2ba96bef9a",
@@ -222,7 +270,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "旅行",
     "suffix": "においでになりますか。",
     "sentenceJa": "いつ旅行においでになりますか。",
-    "sentenceEn": "When will you go on a journey?"
+    "sentenceEn": "When will you go on a journey?",
+    "prefixFurigana": "いつ",
+    "targetFurigana": "{旅行|りょこう}",
+    "suffixFurigana": "においでになりますか。",
+    "sentenceFurigana": "いつ{旅行|りょこう}においでになりますか。"
   },
   {
     "id": "trap-n5-92b1621231",
@@ -238,7 +290,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "映画",
     "suffix": "をもう一度見たいな。",
     "sentenceJa": "その映画をもう一度見たいな。",
-    "sentenceEn": "I want to see the movie again."
+    "sentenceEn": "I want to see the movie again.",
+    "prefixFurigana": "その",
+    "targetFurigana": "{映画|えいが}",
+    "suffixFurigana": "をもう{一度|いちど}{見|み}たいな。",
+    "sentenceFurigana": "その{映画|えいが}をもう{一度|いちど}{見|み}たいな。"
   },
   {
     "id": "trap-n5-e101e41f54",
@@ -254,7 +310,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "切手",
     "suffix": "の上からサインをしてください。",
     "sentenceJa": "切手の上からサインをしてください。",
-    "sentenceEn": "Sign across the stamp."
+    "sentenceEn": "Sign across the stamp.",
+    "prefixFurigana": "",
+    "targetFurigana": "{切手|きって}",
+    "suffixFurigana": "の{上|うえ}からサインをしてください。",
+    "sentenceFurigana": "{切手|きって}の{上|うえ}からサインをしてください。"
   },
   {
     "id": "trap-n5-70f1678111",
@@ -270,7 +330,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "外国人",
     "suffix": "はかなりうまく日本語を話す。",
     "sentenceJa": "その外国人はかなりうまく日本語を話す。",
-    "sentenceEn": "The foreigner speaks Japanese fairly well."
+    "sentenceEn": "The foreigner speaks Japanese fairly well.",
+    "prefixFurigana": "その",
+    "targetFurigana": "{外国人|がいこくじん}",
+    "suffixFurigana": "はかなりうまく{日本語|にほんご}を{話|はな}す。",
+    "sentenceFurigana": "その{外国人|がいこくじん}はかなりうまく{日本語|にほんご}を{話|はな}す。"
   },
   {
     "id": "trap-n5-797ae8d562",
@@ -286,7 +350,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "牛乳",
     "suffix": "はバターやチーズになります。",
     "sentenceJa": "牛乳はバターやチーズになります。",
-    "sentenceEn": "Milk is made into butter and cheese."
+    "sentenceEn": "Milk is made into butter and cheese.",
+    "prefixFurigana": "",
+    "targetFurigana": "{牛乳|ぎゅうにゅう}",
+    "suffixFurigana": "はバターやチーズになります。",
+    "sentenceFurigana": "{牛乳|ぎゅうにゅう}はバターやチーズになります。"
   },
   {
     "id": "trap-n5-2f62b9db5e",
@@ -302,7 +370,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "大丈夫",
     "suffix": "だ。",
     "sentenceJa": "いや、大丈夫だ。",
-    "sentenceEn": "No, no, that's okay."
+    "sentenceEn": "No, no, that's okay.",
+    "prefixFurigana": "いや、",
+    "targetFurigana": "{大丈夫|だいじょうぶ}",
+    "suffixFurigana": "だ。",
+    "sentenceFurigana": "いや、{大丈夫|だいじょうぶ}だ。"
   },
   {
     "id": "trap-n5-2e610178ae",
@@ -318,7 +390,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "誕生日",
     "suffix": "とは人が生まれた日のことだ。",
     "sentenceJa": "誕生日とは人が生まれた日のことだ。",
-    "sentenceEn": "The birthday is the day on which a person was born."
+    "sentenceEn": "The birthday is the day on which a person was born.",
+    "prefixFurigana": "",
+    "targetFurigana": "{誕生日|たんじょうび}",
+    "suffixFurigana": "とは{人|ひと}が{生|う}まれた{日|ひ}のことだ。",
+    "sentenceFurigana": "{誕生日|たんじょうび}とは{人|ひと}が{生|う}まれた{日|ひ}のことだ。"
   },
   {
     "id": "trap-n5-6318b0423a",
@@ -334,7 +410,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "万年筆",
     "suffix": "をなくしてしまった。",
     "sentenceJa": "新しい万年筆をなくしてしまった。",
-    "sentenceEn": "I have lost my new fountain pen."
+    "sentenceEn": "I have lost my new fountain pen.",
+    "prefixFurigana": "{新|あたら}しい",
+    "targetFurigana": "{万年筆|まんねんひつ}",
+    "suffixFurigana": "をなくしてしまった。",
+    "sentenceFurigana": "{新|あたら}しい{万年筆|まんねんひつ}をなくしてしまった。"
   },
   {
     "id": "trap-n5-8b86921749",
@@ -350,7 +430,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "郵便局",
     "suffix": "はどちらでしょうか。",
     "sentenceJa": "あの～郵便局はどちらでしょうか。",
-    "sentenceEn": "Uh..., where's the post office?"
+    "sentenceEn": "Uh..., where's the post office?",
+    "prefixFurigana": "あの～",
+    "targetFurigana": "{郵便局|ゆうびんきょく}",
+    "suffixFurigana": "はどちらでしょうか。",
+    "sentenceFurigana": "あの～{郵便局|ゆうびんきょく}はどちらでしょうか。"
   },
   {
     "id": "trap-n5-dc7d39c7af",
@@ -366,7 +450,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "留学生",
     "suffix": "も入れるのかしら。",
     "sentenceJa": "留学生も入れるのかしら。",
-    "sentenceEn": "Can foreign students be in the club?"
+    "sentenceEn": "Can foreign students be in the club?",
+    "prefixFurigana": "",
+    "targetFurigana": "{留学生|りゅうがくせい}",
+    "suffixFurigana": "も{入|い}れるのかしら。",
+    "sentenceFurigana": "{留学生|りゅうがくせい}も{入|い}れるのかしら。"
   },
   {
     "id": "trap-n5-8a88cfbcb8",
@@ -382,7 +470,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "映画館",
     "suffix": "は人々でいっぱいだった。",
     "sentenceJa": "その映画館は人々でいっぱいだった。",
-    "sentenceEn": "The cinema was filled with people."
+    "sentenceEn": "The cinema was filled with people.",
+    "prefixFurigana": "その",
+    "targetFurigana": "{映画館|えいがかん}",
+    "suffixFurigana": "は{人々|ひとびと}でいっぱいだった。",
+    "sentenceFurigana": "その{映画館|えいがかん}は{人々|ひとびと}でいっぱいだった。"
   },
   {
     "id": "trap-n5-75a36b034c",
@@ -398,7 +490,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "お手洗い",
     "suffix": "はどこですか。",
     "sentenceJa": "お手洗いはどこですか。",
-    "sentenceEn": "Where's the restroom?"
+    "sentenceEn": "Where's the restroom?",
+    "prefixFurigana": "",
+    "targetFurigana": "お{手洗|てあら}い",
+    "suffixFurigana": "はどこですか。",
+    "sentenceFurigana": "お{手洗|てあら}いはどこですか。"
   },
   {
     "id": "trap-n5-6f664d3ded",
@@ -414,7 +510,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "男の子",
     "suffix": "を見て。",
     "sentenceJa": "あのハンサムな男の子を見て。",
-    "sentenceEn": "Look at that good-looking boy."
+    "sentenceEn": "Look at that good-looking boy.",
+    "prefixFurigana": "あのハンサムな",
+    "targetFurigana": "{男の子|おとこのこ}",
+    "suffixFurigana": "を{見|み}て。",
+    "sentenceFurigana": "あのハンサムな{男の子|おとこのこ}を{見|み}て。"
   },
   {
     "id": "trap-n5-7a073616e5",
@@ -430,7 +530,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "お弁当",
     "suffix": "を持って来た。",
     "sentenceJa": "彼は今日、お弁当を持って来た。",
-    "sentenceEn": "He brought his lunch today."
+    "sentenceEn": "He brought his lunch today.",
+    "prefixFurigana": "{彼|かれ}は{今日|きょう}、",
+    "targetFurigana": "お{弁当|べんとう}",
+    "suffixFurigana": "を{持|も}って{来|き}た。",
+    "sentenceFurigana": "{彼|かれ}は{今日|きょう}、お{弁当|べんとう}を{持|も}って{来|き}た。"
   },
   {
     "id": "trap-n5-e6afab391a",
@@ -446,7 +550,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "女の子",
     "suffix": "はほとんどみんなやさしい。",
     "sentenceJa": "女の子はほとんどみんなやさしい。",
-    "sentenceEn": "Almost all girls are kind."
+    "sentenceEn": "Almost all girls are kind.",
+    "prefixFurigana": "",
+    "targetFurigana": "{女の子|おんなのこ}",
+    "suffixFurigana": "はほとんどみんなやさしい。",
+    "sentenceFurigana": "{女の子|おんなのこ}はほとんどみんなやさしい。"
   },
   {
     "id": "trap-n5-5620a00afc",
@@ -462,7 +570,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "喫茶店",
     "suffix": "で昼食をとった。",
     "sentenceJa": "私たちは喫茶店で昼食をとった。",
-    "sentenceEn": "We ate lunch in a coffee lounge."
+    "sentenceEn": "We ate lunch in a coffee lounge.",
+    "prefixFurigana": "{私|わたし}たちは",
+    "targetFurigana": "{喫茶店|きっさてん}",
+    "suffixFurigana": "で{昼食|ちゅうしょく}をとった。",
+    "sentenceFurigana": "{私|わたし}たちは{喫茶店|きっさてん}で{昼食|ちゅうしょく}をとった。"
   },
   {
     "id": "trap-n5-b4faf372f3",
@@ -478,7 +590,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "牛肉",
     "suffix": "を食べる。",
     "sentenceJa": "日本人はイギリス人より牛肉を食べる。",
-    "sentenceEn": "The Japanese eat more beef than the British do."
+    "sentenceEn": "The Japanese eat more beef than the British do.",
+    "prefixFurigana": "{日本人|にっぽんじん}はイギリス{人|じん}より",
+    "targetFurigana": "{牛肉|ぎゅうにく}",
+    "suffixFurigana": "を{食|た}べる。",
+    "sentenceFurigana": "{日本人|にっぽんじん}はイギリス{人|じん}より{牛肉|ぎゅうにく}を{食|た}べる。"
   },
   {
     "id": "trap-n5-85eb994887",
@@ -494,7 +610,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "教室",
     "suffix": "を使ってもよいですか。",
     "sentenceJa": "ＬＬ教室を使ってもよいですか。",
-    "sentenceEn": "May we use the language lab?"
+    "sentenceEn": "May we use the language lab?",
+    "prefixFurigana": "ＬＬ",
+    "targetFurigana": "{教室|きょうしつ}",
+    "suffixFurigana": "を{使|つか}ってもよいですか。",
+    "sentenceFurigana": "ＬＬ{教室|きょうしつ}を{使|つか}ってもよいですか。"
   },
   {
     "id": "trap-n5-976c4f7174",
@@ -510,7 +630,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "兄弟",
     "suffix": "がいますか。",
     "sentenceJa": "あなたは何人兄弟がいますか。",
-    "sentenceEn": "How many siblings do you have?"
+    "sentenceEn": "How many siblings do you have?",
+    "prefixFurigana": "あなたは{何|なん}{人|にん}",
+    "targetFurigana": "{兄弟|きょうだい}",
+    "suffixFurigana": "がいますか。",
+    "sentenceFurigana": "あなたは{何|なん}{人|にん}{兄弟|きょうだい}がいますか。"
   },
   {
     "id": "trap-n5-b00c4af0a2",
@@ -526,7 +650,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "金曜日",
     "suffix": "に何をするつもりですか。",
     "sentenceJa": "あなたは金曜日に何をするつもりですか。",
-    "sentenceEn": "What will you do on Friday?"
+    "sentenceEn": "What will you do on Friday?",
+    "prefixFurigana": "あなたは",
+    "targetFurigana": "{金曜日|きんようび}",
+    "suffixFurigana": "に{何|なに}をするつもりですか。",
+    "sentenceFurigana": "あなたは{金曜日|きんようび}に{何|なに}をするつもりですか。"
   },
   {
     "id": "trap-n5-04e80a2ba1",
@@ -542,7 +670,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "月曜日",
     "suffix": "までにここに来ています。",
     "sentenceJa": "月曜日までにここに来ています。",
-    "sentenceEn": "I'll be here by Monday."
+    "sentenceEn": "I'll be here by Monday.",
+    "prefixFurigana": "",
+    "targetFurigana": "{月曜日|げつようび}",
+    "suffixFurigana": "までにここに{来|き}ています。",
+    "sentenceFurigana": "{月曜日|げつようび}までにここに{来|き}ています。"
   },
   {
     "id": "trap-n5-8699b8bec2",
@@ -558,7 +690,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "交差点",
     "suffix": "で何が起こったのか。",
     "sentenceJa": "あの交差点で何が起こったのか。",
-    "sentenceEn": "What happened at that crossing?"
+    "sentenceEn": "What happened at that crossing?",
+    "prefixFurigana": "あの",
+    "targetFurigana": "{交差点|こうさてん}",
+    "suffixFurigana": "で{何|なに}が{起|お}こったのか。",
+    "sentenceFurigana": "あの{交差点|こうさてん}で{何|なに}が{起|お}こったのか。"
   },
   {
     "id": "trap-n5-7a27eadef1",
@@ -574,7 +710,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "今週",
     "suffix": "はどちらにいらしゃいましたか。",
     "sentenceJa": "今週はどちらにいらしゃいましたか。",
-    "sentenceEn": "Where have you been this week?"
+    "sentenceEn": "Where have you been this week?",
+    "prefixFurigana": "",
+    "targetFurigana": "{今週|こんしゅう}",
+    "suffixFurigana": "はどちらにいらしゃいましたか。",
+    "sentenceFurigana": "{今週|こんしゅう}はどちらにいらしゃいましたか。"
   },
   {
     "id": "trap-n5-45c705d5b2",
@@ -590,7 +730,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "再来年",
     "suffix": "引退する予定です。",
     "sentenceJa": "祖父は、再来年引退する予定です。",
-    "sentenceEn": "My grandfather is planning to retire the year after next."
+    "sentenceEn": "My grandfather is planning to retire the year after next.",
+    "prefixFurigana": "{祖父|そふ}は、",
+    "targetFurigana": "{再来年|さらいねん}",
+    "suffixFurigana": "{引退|いんたい}する{予定|よてい}です。",
+    "sentenceFurigana": "{祖父|そふ}は、{再来年|さらいねん}{引退|いんたい}する{予定|よてい}です。"
   },
   {
     "id": "trap-n5-ebf194a316",
@@ -606,7 +750,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "自転車",
     "suffix": "はパンクしている。",
     "sentenceJa": "ぼくの自転車はパンクしている。",
-    "sentenceEn": "My bicycle has a flat tire."
+    "sentenceEn": "My bicycle has a flat tire.",
+    "prefixFurigana": "ぼくの",
+    "targetFurigana": "{自転車|じてんしゃ}",
+    "suffixFurigana": "はパンクしている。",
+    "sentenceFurigana": "ぼくの{自転車|じてんしゃ}はパンクしている。"
   },
   {
     "id": "trap-n5-78fd1a0e8a",
@@ -622,7 +770,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "自動車",
     "suffix": "にひかれたのではないですか。",
     "sentenceJa": "自動車にひかれたのではないですか。",
-    "sentenceEn": "Wasn't he killed by a car?"
+    "sentenceEn": "Wasn't he killed by a car?",
+    "prefixFurigana": "",
+    "targetFurigana": "{自動車|じどうしゃ}",
+    "suffixFurigana": "にひかれたのではないですか。",
+    "sentenceFurigana": "{自動車|じどうしゃ}にひかれたのではないですか。"
   },
   {
     "id": "trap-n5-5bae559507",
@@ -639,7 +791,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "授業",
     "suffix": "の終わりだった。",
     "sentenceJa": "それは授業の終わりだった。",
-    "sentenceEn": "That was the end of the class."
+    "sentenceEn": "That was the end of the class.",
+    "prefixFurigana": "それは",
+    "targetFurigana": "{授業|じゅぎょう}",
+    "suffixFurigana": "の{終|お}わりだった。",
+    "sentenceFurigana": "それは{授業|じゅぎょう}の{終|お}わりだった。"
   },
   {
     "id": "trap-n5-4daa103d7d",
@@ -655,7 +811,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "宿題",
     "suffix": "はもうやってしまいましたか。",
     "sentenceJa": "宿題はもうやってしまいましたか。",
-    "sentenceEn": "Have you done your assignment yet?"
+    "sentenceEn": "Have you done your assignment yet?",
+    "prefixFurigana": "",
+    "targetFurigana": "{宿題|しゅくだい}",
+    "suffixFurigana": "はもうやってしまいましたか。",
+    "sentenceFurigana": "{宿題|しゅくだい}はもうやってしまいましたか。"
   },
   {
     "id": "trap-n5-dcc87a37fb",
@@ -671,7 +831,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "食堂",
     "suffix": "はセルフサービスでした。",
     "sentenceJa": "食堂はセルフサービスでした。",
-    "sentenceEn": "The cafeteria was self-service."
+    "sentenceEn": "The cafeteria was self-service.",
+    "prefixFurigana": "",
+    "targetFurigana": "{食堂|しょくどう}",
+    "suffixFurigana": "はセルフサービスでした。",
+    "sentenceFurigana": "{食堂|しょくどう}はセルフサービスでした。"
   },
   {
     "id": "trap-n5-44d9d70862",
@@ -687,7 +851,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "水曜日",
     "suffix": "ならいいですよ。",
     "sentenceJa": "今度の水曜日ならいいですよ。",
-    "sentenceEn": "Next Wednesday will be fine."
+    "sentenceEn": "Next Wednesday will be fine.",
+    "prefixFurigana": "{今度|こんど}の",
+    "targetFurigana": "{水曜日|すいようび}",
+    "suffixFurigana": "ならいいですよ。",
+    "sentenceFurigana": "{今度|こんど}の{水曜日|すいようび}ならいいですよ。"
   },
   {
     "id": "trap-n5-b8c4cd80db",
@@ -703,7 +871,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "先週",
     "suffix": "ここにいた人です。",
     "sentenceJa": "あの人は先週ここにいた人です。",
-    "sentenceEn": "He's the man that was here last week."
+    "sentenceEn": "He's the man that was here last week.",
+    "prefixFurigana": "あの{人|ひと}は",
+    "targetFurigana": "{先週|せんしゅう}",
+    "suffixFurigana": "ここにいた{人|ひと}です。",
+    "sentenceFurigana": "あの{人|ひと}は{先週|せんしゅう}ここにいた{人|ひと}です。"
   },
   {
     "id": "trap-n5-992fc07339",
@@ -719,7 +891,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "大使館",
     "suffix": "はどこにありますか。",
     "sentenceJa": "日本大使館はどこにありますか。",
-    "sentenceEn": "Where is the Japanese Embassy?"
+    "sentenceEn": "Where is the Japanese Embassy?",
+    "prefixFurigana": "{日本|にっぽん}",
+    "targetFurigana": "{大使館|たいしかん}",
+    "suffixFurigana": "はどこにありますか。",
+    "sentenceFurigana": "{日本|にっぽん}{大使館|たいしかん}はどこにありますか。"
   },
   {
     "id": "trap-n5-1c0b0f77b6",
@@ -735,7 +911,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "台所",
     "suffix": "にいるでしょう。",
     "sentenceJa": "ルーシーは今台所にいるでしょう。",
-    "sentenceEn": "Lucy should be in the kitchen now."
+    "sentenceEn": "Lucy should be in the kitchen now.",
+    "prefixFurigana": "ルーシーは{今|いま}",
+    "targetFurigana": "{台所|だいどころ}",
+    "suffixFurigana": "にいるでしょう。",
+    "sentenceFurigana": "ルーシーは{今|いま}{台所|だいどころ}にいるでしょう。"
   },
   {
     "id": "trap-n5-e09167a3d4",
@@ -751,7 +931,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "夏休み",
     "suffix": "はどこかへ行くのですか。",
     "sentenceJa": "この夏休みはどこかへ行くのですか。",
-    "sentenceEn": "Are you going away this summer?"
+    "sentenceEn": "Are you going away this summer?",
+    "prefixFurigana": "この",
+    "targetFurigana": "{夏休|なつやす}み",
+    "suffixFurigana": "はどこかへ{行|い}くのですか。",
+    "sentenceFurigana": "この{夏休|なつやす}みはどこかへ{行|い}くのですか。"
   },
   {
     "id": "trap-n5-d8c3a3f0d0",
@@ -767,7 +951,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "日曜日",
     "suffix": "にぶつかりますね。",
     "sentenceJa": "ちょうど日曜日にぶつかりますね。",
-    "sentenceEn": "It falls on Sunday."
+    "sentenceEn": "It falls on Sunday.",
+    "prefixFurigana": "ちょうど",
+    "targetFurigana": "{日曜日|にちようび}",
+    "suffixFurigana": "にぶつかりますね。",
+    "sentenceFurigana": "ちょうど{日曜日|にちようび}にぶつかりますね。"
   },
   {
     "id": "trap-n5-246b5ae84d",
@@ -783,7 +971,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "晩御飯",
     "suffix": "をありがとうございました。",
     "sentenceJa": "おいしい晩御飯をありがとうございました。",
-    "sentenceEn": "Thank you for the wonderful dinner."
+    "sentenceEn": "Thank you for the wonderful dinner.",
+    "prefixFurigana": "おいしい",
+    "targetFurigana": "{晩御飯|ばんごはん}",
+    "suffixFurigana": "をありがとうございました。",
+    "sentenceFurigana": "おいしい{晩御飯|ばんごはん}をありがとうございました。"
   },
   {
     "id": "trap-n5-79ddbb2b98",
@@ -800,7 +992,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "文章",
     "suffix": "は悪文だった。",
     "sentenceJa": "ヘミングウェイの文章は悪文だった。",
-    "sentenceEn": "Hemingway had a poor writing style."
+    "sentenceEn": "Hemingway had a poor writing style.",
+    "prefixFurigana": "ヘミングウェイの",
+    "targetFurigana": "{文章|ぶんしょう}",
+    "suffixFurigana": "は{悪文|あくぶん}だった。",
+    "sentenceFurigana": "ヘミングウェイの{文章|ぶんしょう}は{悪文|あくぶん}だった。"
   },
   {
     "id": "trap-n5-fd1c93832f",
@@ -816,7 +1012,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "毎週",
     "suffix": "日曜日にゴルフをします。",
     "sentenceJa": "父は毎週日曜日にゴルフをします。",
-    "sentenceEn": "My father plays golf every Sunday."
+    "sentenceEn": "My father plays golf every Sunday.",
+    "prefixFurigana": "{父|ちち}は",
+    "targetFurigana": "{毎週|まいしゅう}",
+    "suffixFurigana": "{日曜日|にちようび}にゴルフをします。",
+    "sentenceFurigana": "{父|ちち}は{毎週|まいしゅう}{日曜日|にちようび}にゴルフをします。"
   },
   {
     "id": "trap-n5-3ae16ad93a",
@@ -832,7 +1032,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "もう一度",
     "suffix": "ゆっくりお話しください。",
     "sentenceJa": "もう一度ゆっくりお話しください。",
-    "sentenceEn": "Could you please repeat it slowly?"
+    "sentenceEn": "Could you please repeat it slowly?",
+    "prefixFurigana": "",
+    "targetFurigana": "もう{一度|いちど}",
+    "suffixFurigana": "ゆっくりお{話|はなし}しください。",
+    "sentenceFurigana": "もう{一度|いちど}ゆっくりお{話|はなし}しください。"
   },
   {
     "id": "trap-n5-d10bb92f3e",
@@ -848,7 +1052,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "木曜日",
     "suffix": "にバドミントンはどう。",
     "sentenceJa": "やあ、フレッド。木曜日にバドミントンはどう。",
-    "sentenceEn": "Hi, Fred, how about badminton on Thursday?"
+    "sentenceEn": "Hi, Fred, how about badminton on Thursday?",
+    "prefixFurigana": "やあ、フレッド。",
+    "targetFurigana": "{木曜日|もくようび}",
+    "suffixFurigana": "にバドミントンはどう。",
+    "sentenceFurigana": "やあ、フレッド。{木曜日|もくようび}にバドミントンはどう。"
   },
   {
     "id": "trap-n5-7a4ef637be",
@@ -864,7 +1072,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "来週",
     "suffix": "ヨーロッパへ行くつもりなんです。",
     "sentenceJa": "来週ヨーロッパへ行くつもりなんです。",
-    "sentenceEn": "I'm going to Europe next week."
+    "sentenceEn": "I'm going to Europe next week.",
+    "prefixFurigana": "",
+    "targetFurigana": "{来週|らいしゅう}",
+    "suffixFurigana": "ヨーロッパへ{行|い}くつもりなんです。",
+    "sentenceFurigana": "{来週|らいしゅう}ヨーロッパへ{行|い}くつもりなんです。"
   },
   {
     "id": "trap-n5-0139a208fe",
@@ -880,7 +1092,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "両親",
     "suffix": "は二人ともまだ生きています。",
     "sentenceJa": "両親は二人ともまだ生きています。",
-    "sentenceEn": "Both the parents are still living."
+    "sentenceEn": "Both the parents are still living.",
+    "prefixFurigana": "",
+    "targetFurigana": "{両親|りょうしん}",
+    "suffixFurigana": "は{二|に}{人|にん}ともまだ{生|い}きています。",
+    "sentenceFurigana": "{両親|りょうしん}は{二|に}{人|にん}ともまだ{生|い}きています。"
   },
   {
     "id": "trap-n5-f7a15687a1",
@@ -896,7 +1112,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "冷蔵庫",
     "suffix": "の中にバターが２ポンドある。",
     "sentenceJa": "冷蔵庫の中にバターが２ポンドある。",
-    "sentenceEn": "There are two pounds of butter in the icebox."
+    "sentenceEn": "There are two pounds of butter in the icebox.",
+    "prefixFurigana": "",
+    "targetFurigana": "{冷蔵庫|れいぞうこ}",
+    "suffixFurigana": "の{中|なか}にバターが２ポンドある。",
+    "sentenceFurigana": "{冷蔵庫|れいぞうこ}の{中|なか}にバターが２ポンドある。"
   },
   {
     "id": "trap-n5-1cfccd0cdd",
@@ -913,7 +1133,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "一日",
     "suffix": "で５００ドルつかってしまった。",
     "sentenceJa": "一日で５００ドルつかってしまった。",
-    "sentenceEn": "I've spent $500 a day."
+    "sentenceEn": "I've spent $500 a day.",
+    "prefixFurigana": "",
+    "targetFurigana": "{一日|いちにち}",
+    "suffixFurigana": "で５００ドルつかってしまった。",
+    "sentenceFurigana": "{一日|いちにち}で５００ドルつかってしまった。"
   },
   {
     "id": "trap-n5-2dc7289c82",
@@ -929,7 +1153,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "一緒",
     "suffix": "してもいいですか」「もちろんです」",
     "sentenceJa": "「ご一緒してもいいですか」「もちろんです」",
-    "sentenceEn": "\"May I go with you?\" \"Of course.\""
+    "sentenceEn": "\"May I go with you?\" \"Of course.\"",
+    "prefixFurigana": "「ご",
+    "targetFurigana": "{一緒|いっしょ}",
+    "suffixFurigana": "してもいいですか」「もちろんです」",
+    "sentenceFurigana": "「ご{一緒|いっしょ}してもいいですか」「もちろんです」"
   },
   {
     "id": "trap-n5-381da4d060",
@@ -945,7 +1173,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "鉛筆",
     "suffix": "を持っていますか。",
     "sentenceJa": "ペンか鉛筆を持っていますか。",
-    "sentenceEn": "Do you have a pen or a pencil?"
+    "sentenceEn": "Do you have a pen or a pencil?",
+    "prefixFurigana": "ペンか",
+    "targetFurigana": "{鉛筆|えんぴつ}",
+    "suffixFurigana": "を{持|も}っていますか。",
+    "sentenceFurigana": "ペンか{鉛筆|えんぴつ}を{持|も}っていますか。"
   },
   {
     "id": "trap-n5-57ed89b240",
@@ -961,7 +1193,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "大勢",
     "suffix": "の人がいた。",
     "sentenceJa": "そこには大勢の人がいた。",
-    "sentenceEn": "There was a large crowd there."
+    "sentenceEn": "There was a large crowd there.",
+    "prefixFurigana": "そこには",
+    "targetFurigana": "{大勢|おおぜい}",
+    "suffixFurigana": "の{人|ひと}がいた。",
+    "sentenceFurigana": "そこには{大勢|おおぜい}の{人|ひと}がいた。"
   },
   {
     "id": "trap-n5-f0f3826045",
@@ -977,7 +1213,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "一昨日",
     "suffix": "、彼は学校を休んだかもしれない。",
     "sentenceJa": "一昨日、彼は学校を休んだかもしれない。",
-    "sentenceEn": "He may have absented himself from school the day before yesterday."
+    "sentenceEn": "He may have absented himself from school the day before yesterday.",
+    "prefixFurigana": "",
+    "targetFurigana": "{一昨日|おととい}",
+    "suffixFurigana": "、{彼|かれ}は{学校|がっこう}を{休|やす}んだかもしれない。",
+    "sentenceFurigana": "{一昨日|おととい}、{彼|かれ}は{学校|がっこう}を{休|やす}んだかもしれない。"
   },
   {
     "id": "trap-n5-b75778f0ce",
@@ -993,7 +1233,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "一昨年",
     "suffix": "よりもはるかに暮らし向きがよい。",
     "sentenceJa": "彼女は、一昨年よりもはるかに暮らし向きがよい。",
-    "sentenceEn": "She's far better off than she was the year before last."
+    "sentenceEn": "She's far better off than she was the year before last.",
+    "prefixFurigana": "{彼女|かのじょ}は、",
+    "targetFurigana": "{一昨年|おととし}",
+    "suffixFurigana": "よりもはるかに{暮|く}らし{向|む}きがよい。",
+    "sentenceFurigana": "{彼女|かのじょ}は、{一昨年|おととし}よりもはるかに{暮|く}らし{向|む}きがよい。"
   },
   {
     "id": "trap-n5-cdea017272",
@@ -1009,7 +1253,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "音楽",
     "suffix": "を聞いてくつろぎなさい。",
     "sentenceJa": "この音楽を聞いてくつろぎなさい。",
-    "sentenceEn": "Listen to this music and relax."
+    "sentenceEn": "Listen to this music and relax.",
+    "prefixFurigana": "この",
+    "targetFurigana": "{音楽|おんがく}",
+    "suffixFurigana": "を{聞|き}いてくつろぎなさい。",
+    "sentenceFurigana": "この{音楽|おんがく}を{聞|き}いてくつろぎなさい。"
   },
   {
     "id": "trap-n5-31a803c7f5",
@@ -1025,7 +1273,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "外国",
     "suffix": "の本を持っていますか。",
     "sentenceJa": "あなたは外国の本を持っていますか。",
-    "sentenceEn": "Do you have any foreign books?"
+    "sentenceEn": "Do you have any foreign books?",
+    "prefixFurigana": "あなたは",
+    "targetFurigana": "{外国|がいこく}",
+    "suffixFurigana": "の{本|ほん}を{持|も}っていますか。",
+    "sentenceFurigana": "あなたは{外国|がいこく}の{本|ほん}を{持|も}っていますか。"
   },
   {
     "id": "trap-n5-7cb27c411e",
@@ -1041,7 +1293,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "階段",
     "suffix": "を上ってはいけません。",
     "sentenceJa": "その階段を上ってはいけません。",
-    "sentenceEn": "You must not go up the stairs."
+    "sentenceEn": "You must not go up the stairs.",
+    "prefixFurigana": "その",
+    "targetFurigana": "{階段|かいだん}",
+    "suffixFurigana": "を{上|のぼ}ってはいけません。",
+    "sentenceFurigana": "その{階段|かいだん}を{上|のぼ}ってはいけません。"
   },
   {
     "id": "trap-n5-a771d4f949",
@@ -1057,7 +1313,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "買い物",
     "suffix": "に行く。",
     "sentenceJa": "１日おきに買い物に行く。",
-    "sentenceEn": "I go shopping every other day."
+    "sentenceEn": "I go shopping every other day.",
+    "prefixFurigana": "１{日|にち}おきに",
+    "targetFurigana": "{買い物|かいもの}",
+    "suffixFurigana": "に{行|い}く。",
+    "sentenceFurigana": "１{日|にち}おきに{買い物|かいもの}に{行|い}く。"
   },
   {
     "id": "trap-n5-452102ad0a",
@@ -1073,7 +1333,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "学生",
     "suffix": "の半数が休んでいた。",
     "sentenceJa": "学生の半数が休んでいた。",
-    "sentenceEn": "Half the students were absent."
+    "sentenceEn": "Half the students were absent.",
+    "prefixFurigana": "",
+    "targetFurigana": "{学生|がくせい}",
+    "suffixFurigana": "の{半数|はんすう}が{休|やす}んでいた。",
+    "sentenceFurigana": "{学生|がくせい}の{半数|はんすう}が{休|やす}んでいた。"
   },
   {
     "id": "trap-n5-0dbf9ef8ca",
@@ -1089,7 +1353,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "火曜日",
     "suffix": "に国会が開かれる。",
     "sentenceJa": "火曜日に国会が開かれる。",
-    "sentenceEn": "The Diet will meet on Tuesday."
+    "sentenceEn": "The Diet will meet on Tuesday.",
+    "prefixFurigana": "",
+    "targetFurigana": "{火曜日|かようび}",
+    "suffixFurigana": "に{国会|こっかい}が{開|ひら}かれる。",
+    "sentenceFurigana": "{火曜日|かようび}に{国会|こっかい}が{開|ひら}かれる。"
   },
   {
     "id": "trap-n5-0b36c8d6c6",
@@ -1105,7 +1373,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "黄色い",
     "suffix": "のをいただきましょう。",
     "sentenceJa": "その黄色いのをいただきましょう。",
-    "sentenceEn": "I'll take the yellow one."
+    "sentenceEn": "I'll take the yellow one.",
+    "prefixFurigana": "その",
+    "targetFurigana": "{黄色|きいろ}い",
+    "suffixFurigana": "のをいただきましょう。",
+    "sentenceFurigana": "その{黄色|きいろ}いのをいただきましょう。"
   },
   {
     "id": "trap-n5-ec4e1dfc87",
@@ -1121,7 +1393,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "去年",
     "suffix": "の秋に私に会いに来た。",
     "sentenceJa": "ビルは去年の秋に私に会いに来た。",
-    "sentenceEn": "Bill came to see me last autumn."
+    "sentenceEn": "Bill came to see me last autumn.",
+    "prefixFurigana": "ビルは",
+    "targetFurigana": "{去年|きょねん}",
+    "suffixFurigana": "の{秋|あき}に{私|わたし}に{会|あ}いに{来|き}た。",
+    "sentenceFurigana": "ビルは{去年|きょねん}の{秋|あき}に{私|わたし}に{会|あ}いに{来|き}た。"
   },
   {
     "id": "trap-n5-6b454b895e",
@@ -1137,7 +1413,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "果物",
     "suffix": "を食べないんです。",
     "sentenceJa": "父はそんなに果物を食べないんです。",
-    "sentenceEn": "My father doesn't eat all that much fruit."
+    "sentenceEn": "My father doesn't eat all that much fruit.",
+    "prefixFurigana": "{父|ちち}はそんなに",
+    "targetFurigana": "{果物|くだもの}",
+    "suffixFurigana": "を{食|た}べないんです。",
+    "sentenceFurigana": "{父|ちち}はそんなに{果物|くだもの}を{食|た}べないんです。"
   },
   {
     "id": "trap-n5-20a1278928",
@@ -1153,7 +1433,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "靴下",
     "suffix": "はちぐはぐだ。",
     "sentenceJa": "この靴下はちぐはぐだ。",
-    "sentenceEn": "These socks do not match."
+    "sentenceEn": "These socks do not match.",
+    "prefixFurigana": "この",
+    "targetFurigana": "{靴下|くつした}",
+    "suffixFurigana": "はちぐはぐだ。",
+    "sentenceFurigana": "この{靴下|くつした}はちぐはぐだ。"
   },
   {
     "id": "trap-n5-e1634cb3e9",
@@ -1169,7 +1453,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "警官",
     "suffix": "もへとへとになった。",
     "sentenceJa": "二人の警官もへとへとになった。",
-    "sentenceEn": "The two policemen were exhausted, too."
+    "sentenceEn": "The two policemen were exhausted, too.",
+    "prefixFurigana": "{二|に}{人|にん}の",
+    "targetFurigana": "{警官|けいかん}",
+    "suffixFurigana": "もへとへとになった。",
+    "sentenceFurigana": "{二|に}{人|にん}の{警官|けいかん}もへとへとになった。"
   },
   {
     "id": "trap-n5-dd34250740",
@@ -1186,7 +1474,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "結構",
     "suffix": "です。たくさんいただきました。",
     "sentenceJa": "いや結構です。たくさんいただきました。",
-    "sentenceEn": "No more, thank you. I'm full."
+    "sentenceEn": "No more, thank you. I'm full.",
+    "prefixFurigana": "いや",
+    "targetFurigana": "{結構|けっこう}",
+    "suffixFurigana": "です。たくさんいただきました。",
+    "sentenceFurigana": "いや{結構|けっこう}です。たくさんいただきました。"
   },
   {
     "id": "trap-n5-2eb252da72",
@@ -1202,7 +1494,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "結婚",
     "suffix": "していた。",
     "sentenceJa": "ジョンはジェーンと結婚していた。",
-    "sentenceEn": "John was married to Jane."
+    "sentenceEn": "John was married to Jane.",
+    "prefixFurigana": "ジョンはジェーンと",
+    "targetFurigana": "{結婚|けっこん}",
+    "suffixFurigana": "していた。",
+    "sentenceFurigana": "ジョンはジェーンと{結婚|けっこん}していた。"
   },
   {
     "id": "trap-n5-2e1642b248",
@@ -1218,7 +1514,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "玄関",
     "suffix": "のカギはどうなっていますか。",
     "sentenceJa": "玄関のカギはどうなっていますか。",
-    "sentenceEn": "How does the front-door lock work?"
+    "sentenceEn": "How does the front-door lock work?",
+    "prefixFurigana": "",
+    "targetFurigana": "{玄関|げんかん}",
+    "suffixFurigana": "のカギはどうなっていますか。",
+    "sentenceFurigana": "{玄関|げんかん}のカギはどうなっていますか。"
   },
   {
     "id": "trap-n5-05cf590971",
@@ -1234,7 +1534,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "公園",
     "suffix": "はすべての人に公開されている。",
     "sentenceJa": "この公園はすべての人に公開されている。",
-    "sentenceEn": "The park is open to everybody."
+    "sentenceEn": "The park is open to everybody.",
+    "prefixFurigana": "この",
+    "targetFurigana": "{公園|こうえん}",
+    "suffixFurigana": "はすべての{人|ひと}に{公開|こうかい}されている。",
+    "sentenceFurigana": "この{公園|こうえん}はすべての{人|ひと}に{公開|こうかい}されている。"
   },
   {
     "id": "trap-n5-1288e600be",
@@ -1250,7 +1554,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "紅茶",
     "suffix": "かコーヒーはいかがですか。",
     "sentenceJa": "紅茶かコーヒーはいかがですか。",
-    "sentenceEn": "Care for tea or coffee?"
+    "sentenceEn": "Care for tea or coffee?",
+    "prefixFurigana": "",
+    "targetFurigana": "{紅茶|こうちゃ}",
+    "suffixFurigana": "かコーヒーはいかがですか。",
+    "sentenceFurigana": "{紅茶|こうちゃ}かコーヒーはいかがですか。"
   },
   {
     "id": "trap-n5-402eb0d21f",
@@ -1266,7 +1574,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "交番",
     "suffix": "で聞いてください。",
     "sentenceJa": "向こうの交番で聞いてください。",
-    "sentenceEn": "Ask at the police station over there."
+    "sentenceEn": "Ask at the police station over there.",
+    "prefixFurigana": "{向|む}こうの",
+    "targetFurigana": "{交番|こうばん}",
+    "suffixFurigana": "で{聞|き}いてください。",
+    "sentenceFurigana": "{向|む}こうの{交番|こうばん}で{聞|き}いてください。"
   },
   {
     "id": "trap-n5-3793173687",
@@ -1282,7 +1594,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "今月",
     "suffix": "の売り上げはよくない。",
     "sentenceJa": "今月の売り上げはよくない。",
-    "sentenceEn": "Sales have been off this month."
+    "sentenceEn": "Sales have been off this month.",
+    "prefixFurigana": "",
+    "targetFurigana": "{今月|こんげつ}",
+    "suffixFurigana": "の{売り上|うりあ}げはよくない。",
+    "sentenceFurigana": "{今月|こんげつ}の{売り上|うりあ}げはよくない。"
   },
   {
     "id": "trap-n5-eb1c9a5df9",
@@ -1298,7 +1614,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "今晩",
     "suffix": "はパーティーがあるのかなあ。",
     "sentenceJa": "今晩はパーティーがあるのかなあ。",
-    "sentenceEn": "Is there going to be a party tonight?"
+    "sentenceEn": "Is there going to be a party tonight?",
+    "prefixFurigana": "",
+    "targetFurigana": "{今晩|こんばん}",
+    "suffixFurigana": "はパーティーがあるのかなあ。",
+    "sentenceFurigana": "{今晩|こんばん}はパーティーがあるのかなあ。"
   },
   {
     "id": "trap-n5-c10cb3070d",
@@ -1315,7 +1635,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "作文",
     "suffix": "は書いてしまいましたか。",
     "sentenceJa": "作文は書いてしまいましたか。",
-    "sentenceEn": "Have you finished writing your composition?"
+    "sentenceEn": "Have you finished writing your composition?",
+    "prefixFurigana": "",
+    "targetFurigana": "{作文|さくぶん}",
+    "suffixFurigana": "は{書|か}いてしまいましたか。",
+    "sentenceFurigana": "{作文|さくぶん}は{書|か}いてしまいましたか。"
   },
   {
     "id": "trap-n4-47593d1123",
@@ -1332,7 +1656,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "住所",
     "suffix": "を記入しなさい。",
     "sentenceJa": "あなたの名前と住所を記入しなさい。",
-    "sentenceEn": "Fill in your name and address."
+    "sentenceEn": "Fill in your name and address.",
+    "prefixFurigana": "あなたの{名前|なまえ}と",
+    "targetFurigana": "{住所|じゅうしょ}",
+    "suffixFurigana": "を{記入|きにゅう}しなさい。",
+    "sentenceFurigana": "あなたの{名前|なまえ}と{住所|じゅうしょ}を{記入|きにゅう}しなさい。"
   },
   {
     "id": "trap-n4-c151fe4163",
@@ -1348,7 +1676,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "紹介",
     "suffix": "したい。",
     "sentenceJa": "あなたを私の両親に紹介したい。",
-    "sentenceEn": "I want you to meet my parents."
+    "sentenceEn": "I want you to meet my parents.",
+    "prefixFurigana": "あなたを{私|わたし}の{両親|りょうしん}に",
+    "targetFurigana": "{紹介|しょうかい}",
+    "suffixFurigana": "したい。",
+    "sentenceFurigana": "あなたを{私|わたし}の{両親|りょうしん}に{紹介|しょうかい}したい。"
   },
   {
     "id": "trap-n4-9746b57413",
@@ -1364,7 +1696,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "経験",
     "suffix": "がものを言う。",
     "sentenceJa": "この仕事では経験がものを言う。",
-    "sentenceEn": "Experience counts in this job."
+    "sentenceEn": "Experience counts in this job.",
+    "prefixFurigana": "この{仕事|しごと}では",
+    "targetFurigana": "{経験|けいけん}",
+    "suffixFurigana": "がものを{言|い}う。",
+    "sentenceFurigana": "この{仕事|しごと}では{経験|けいけん}がものを{言|い}う。"
   },
   {
     "id": "trap-n4-6ce523bcb6",
@@ -1380,7 +1716,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "準備",
     "suffix": "ができるまでちょっと待ってくれ。",
     "sentenceJa": "準備ができるまでちょっと待ってくれ。",
-    "sentenceEn": "Hang on a bit until I'm ready."
+    "sentenceEn": "Hang on a bit until I'm ready.",
+    "prefixFurigana": "",
+    "targetFurigana": "{準備|じゅんび}",
+    "suffixFurigana": "ができるまでちょっと{待|ま}ってくれ。",
+    "sentenceFurigana": "{準備|じゅんび}ができるまでちょっと{待|ま}ってくれ。"
   },
   {
     "id": "trap-n4-123ee74d43",
@@ -1396,7 +1736,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "説明",
     "suffix": "しますか。",
     "sentenceJa": "あなたはそれをどう説明しますか。",
-    "sentenceEn": "How do you account for that?"
+    "sentenceEn": "How do you account for that?",
+    "prefixFurigana": "あなたはそれをどう",
+    "targetFurigana": "{説明|せつめい}",
+    "suffixFurigana": "しますか。",
+    "sentenceFurigana": "あなたはそれをどう{説明|せつめい}しますか。"
   },
   {
     "id": "trap-n4-aa663833e4",
@@ -1412,7 +1756,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "相談",
     "suffix": "したいことがあるの。",
     "sentenceJa": "あなたに相談したいことがあるの。",
-    "sentenceEn": "I have something to talk over with you."
+    "sentenceEn": "I have something to talk over with you.",
+    "prefixFurigana": "あなたに",
+    "targetFurigana": "{相談|そうだん}",
+    "suffixFurigana": "したいことがあるの。",
+    "sentenceFurigana": "あなたに{相談|そうだん}したいことがあるの。"
   },
   {
     "id": "trap-n4-2ef2e06612",
@@ -1428,7 +1776,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "約束",
     "suffix": "したことを思い出して下さい。",
     "sentenceJa": "約束したことを思い出して下さい。",
-    "sentenceEn": "I must remind you of your promise."
+    "sentenceEn": "I must remind you of your promise.",
+    "prefixFurigana": "",
+    "targetFurigana": "{約束|やくそく}",
+    "suffixFurigana": "したことを{思い出|おもいだ}して{下|くだ}さい。",
+    "sentenceFurigana": "{約束|やくそく}したことを{思い出|おもいだ}して{下|くだ}さい。"
   },
   {
     "id": "trap-n4-6926bbe9d4",
@@ -1444,7 +1796,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "連絡",
     "suffix": "してね。",
     "sentenceJa": "ここに来た時は、必ず連絡してね。",
-    "sentenceEn": "Please get in touch with me when you are here."
+    "sentenceEn": "Please get in touch with me when you are here.",
+    "prefixFurigana": "ここに{来|き}た{時|とき}は、{必|かなら}ず",
+    "targetFurigana": "{連絡|れんらく}",
+    "suffixFurigana": "してね。",
+    "sentenceFurigana": "ここに{来|き}た{時|とき}は、{必|かなら}ず{連絡|れんらく}してね。"
   },
   {
     "id": "trap-n4-83af91b7eb",
@@ -1460,7 +1816,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "会議",
     "suffix": "は終わりに近づきつつあった。",
     "sentenceJa": "会議は終わりに近づきつつあった。",
-    "sentenceEn": "The conference was drawing to an end."
+    "sentenceEn": "The conference was drawing to an end.",
+    "prefixFurigana": "",
+    "targetFurigana": "{会議|かいぎ}",
+    "suffixFurigana": "は{終|お}わりに{近|ちか}づきつつあった。",
+    "sentenceFurigana": "{会議|かいぎ}は{終|お}わりに{近|ちか}づきつつあった。"
   },
   {
     "id": "trap-n4-cf69ef2274",
@@ -1476,7 +1836,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "一生懸命",
     "suffix": "勉強すべきだったのに。",
     "sentenceJa": "もっと一生懸命勉強すべきだったのに。",
-    "sentenceEn": "You should have worked harder."
+    "sentenceEn": "You should have worked harder.",
+    "prefixFurigana": "もっと",
+    "targetFurigana": "{一生懸命|いっしょうけんめい}",
+    "suffixFurigana": "{勉強|べんきょう}すべきだったのに。",
+    "sentenceFurigana": "もっと{一生懸命|いっしょうけんめい}{勉強|べんきょう}すべきだったのに。"
   },
   {
     "id": "trap-n4-9f6e25d5e2",
@@ -1492,7 +1856,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "運転手",
     "suffix": "は車のスピードを上げた。",
     "sentenceJa": "運転手は車のスピードを上げた。",
-    "sentenceEn": "The driver accelerated his car."
+    "sentenceEn": "The driver accelerated his car.",
+    "prefixFurigana": "",
+    "targetFurigana": "{運転手|うんてんしゅ}",
+    "suffixFurigana": "は{車|くるま}のスピードを{上|あ}げた。",
+    "sentenceFurigana": "{運転手|うんてんしゅ}は{車|くるま}のスピードを{上|あ}げた。"
   },
   {
     "id": "trap-n4-912c269668",
@@ -1509,7 +1877,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "研究室",
     "suffix": "を利用した。",
     "sentenceJa": "私たちはその研究室を利用した。",
-    "sentenceEn": "We have made use of the laboratory."
+    "sentenceEn": "We have made use of the laboratory.",
+    "prefixFurigana": "{私|わたし}たちはその",
+    "targetFurigana": "{研究室|けんきゅうしつ}",
+    "suffixFurigana": "を{利用|りよう}した。",
+    "sentenceFurigana": "{私|わたし}たちはその{研究室|けんきゅうしつ}を{利用|りよう}した。"
   },
   {
     "id": "trap-n4-795156bbfe",
@@ -1525,7 +1897,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "高校生",
     "suffix": "と文通をしている。",
     "sentenceJa": "私はアメリカの高校生と文通をしている。",
-    "sentenceEn": "I am corresponding with an American high school student."
+    "sentenceEn": "I am corresponding with an American high school student.",
+    "prefixFurigana": "{私|わたし}はアメリカの",
+    "targetFurigana": "{高校生|こうこうせい}",
+    "suffixFurigana": "と{文通|ぶんつう}をしている。",
+    "sentenceFurigana": "{私|わたし}はアメリカの{高校生|こうこうせい}と{文通|ぶんつう}をしている。"
   },
   {
     "id": "trap-n4-9593b3e04f",
@@ -1541,7 +1917,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "高等学校",
     "suffix": "の生徒ではありません。",
     "sentenceJa": "彼は高等学校の生徒ではありません。",
-    "sentenceEn": "He is not a high school student."
+    "sentenceEn": "He is not a high school student.",
+    "prefixFurigana": "{彼|かれ}は",
+    "targetFurigana": "{高等学校|こうとうがっこう}",
+    "suffixFurigana": "の{生徒|せいと}ではありません。",
+    "sentenceFurigana": "{彼|かれ}は{高等学校|こうとうがっこう}の{生徒|せいと}ではありません。"
   },
   {
     "id": "trap-n4-a6678a1d99",
@@ -1557,7 +1937,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "再来週",
     "suffix": "の木曜日はどう？",
     "sentenceJa": "再来週の木曜日はどう？",
-    "sentenceEn": "How about two weeks from Thursday?"
+    "sentenceEn": "How about two weeks from Thursday?",
+    "prefixFurigana": "",
+    "targetFurigana": "{再来週|さらいしゅう}",
+    "suffixFurigana": "の{木曜日|もくようび}はどう？",
+    "sentenceFurigana": "{再来週|さらいしゅう}の{木曜日|もくようび}はどう？"
   },
   {
     "id": "trap-n4-b04bf40187",
@@ -1573,7 +1957,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "小学校",
     "suffix": "に通っているの？",
     "sentenceJa": "あなたは小学校に通っているの？",
-    "sentenceEn": "Do you go to an elementary school?"
+    "sentenceEn": "Do you go to an elementary school?",
+    "prefixFurigana": "あなたは",
+    "targetFurigana": "{小学校|しょうがっこう}",
+    "suffixFurigana": "に{通|かよ}っているの？",
+    "sentenceFurigana": "あなたは{小学校|しょうがっこう}に{通|かよ}っているの？"
   },
   {
     "id": "trap-n4-2ae7b1cb3b",
@@ -1589,7 +1977,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "食料品",
     "suffix": "を売っている。",
     "sentenceJa": "あの店では良質の食料品を売っている。",
-    "sentenceEn": "They sell good foods at that shop."
+    "sentenceEn": "They sell good foods at that shop.",
+    "prefixFurigana": "あの{店|みせ}では{良質|りょうしつ}の",
+    "targetFurigana": "{食料品|しょくりょうひん}",
+    "suffixFurigana": "を{売|う}っている。",
+    "sentenceFurigana": "あの{店|みせ}では{良質|りょうしつ}の{食料品|しょくりょうひん}を{売|う}っている。"
   },
   {
     "id": "trap-n4-f7e69f5427",
@@ -1605,7 +1997,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "新聞社",
     "suffix": "にお勤めですか。",
     "sentenceJa": "どちらの新聞社にお勤めですか。",
-    "sentenceEn": "Which newspaper do you work for?"
+    "sentenceEn": "Which newspaper do you work for?",
+    "prefixFurigana": "どちらの",
+    "targetFurigana": "{新聞社|しんぶんしゃ}",
+    "suffixFurigana": "にお{勤|つと}めですか。",
+    "sentenceFurigana": "どちらの{新聞社|しんぶんしゃ}にお{勤|つと}めですか。"
   },
   {
     "id": "trap-n4-138dee4a26",
@@ -1621,7 +2017,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "大学生",
     "suffix": "です。",
     "sentenceJa": "私の兄は大学生です。",
-    "sentenceEn": "My brother is a college student."
+    "sentenceEn": "My brother is a college student.",
+    "prefixFurigana": "{私|わたし}の{兄|あに}は",
+    "targetFurigana": "{大学生|だいがくせい}",
+    "suffixFurigana": "です。",
+    "sentenceFurigana": "{私|わたし}の{兄|あに}は{大学生|だいがくせい}です。"
   },
   {
     "id": "trap-n4-4b99b4673b",
@@ -1638,7 +2038,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "中学校",
     "suffix": "時代を思い出します。",
     "sentenceJa": "この歌を聞くと私の中学校時代を思い出します。",
-    "sentenceEn": "This song reminds me of my junior high school days."
+    "sentenceEn": "This song reminds me of my junior high school days.",
+    "prefixFurigana": "この{歌|うた}を{聞|き}くと{私|わたし}の",
+    "targetFurigana": "{中学校|ちゅうがっこう}",
+    "suffixFurigana": "{時代|じだい}を{思い出|おもいだ}します。",
+    "sentenceFurigana": "この{歌|うた}を{聞|き}くと{私|わたし}の{中学校|ちゅうがっこう}{時代|じだい}を{思い出|おもいだ}します。"
   },
   {
     "id": "trap-n4-36f583c207",
@@ -1654,7 +2058,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "駐車場",
     "suffix": "には人ひとり見えなかった。",
     "sentenceJa": "駐車場には人ひとり見えなかった。",
-    "sentenceEn": "Not a soul was to be seen in the parking lot."
+    "sentenceEn": "Not a soul was to be seen in the parking lot.",
+    "prefixFurigana": "",
+    "targetFurigana": "{駐車場|ちゅうしゃじょう}",
+    "suffixFurigana": "には{人|ひと}ひとり{見|み}えなかった。",
+    "sentenceFurigana": "{駐車場|ちゅうしゃじょう}には{人|ひと}ひとり{見|み}えなかった。"
   },
   {
     "id": "trap-n4-5fd0c77ef5",
@@ -1670,7 +2078,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "天気予報",
     "suffix": "が当たったよ。",
     "sentenceJa": "天気予報が当たったよ。",
-    "sentenceEn": "The weather forecast was right."
+    "sentenceEn": "The weather forecast was right.",
+    "prefixFurigana": "",
+    "targetFurigana": "{天気予報|てんきよほう}",
+    "suffixFurigana": "が{当|あ}たったよ。",
+    "sentenceFurigana": "{天気予報|てんきよほう}が{当|あ}たったよ。"
   },
   {
     "id": "trap-n4-80eba2fabb",
@@ -1686,7 +2098,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "展覧会",
     "suffix": "を開く。",
     "sentenceJa": "私たちは毎年展覧会を開く。",
-    "sentenceEn": "We hold an exhibition every year."
+    "sentenceEn": "We hold an exhibition every year.",
+    "prefixFurigana": "{私|わたし}たちは{毎年|まいとし}",
+    "targetFurigana": "{展覧会|てんらんかい}",
+    "suffixFurigana": "を{開|ひら}く。",
+    "sentenceFurigana": "{私|わたし}たちは{毎年|まいとし}{展覧会|てんらんかい}を{開|ひら}く。"
   },
   {
     "id": "trap-n4-69678bc04e",
@@ -1702,7 +2118,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "動物園",
     "suffix": "では決して育たない。",
     "sentenceJa": "コンドルは動物園では決して育たない。",
-    "sentenceEn": "Condors have never bred in zoos."
+    "sentenceEn": "Condors have never bred in zoos.",
+    "prefixFurigana": "コンドルは",
+    "targetFurigana": "{動物園|どうぶつえん}",
+    "suffixFurigana": "では{決|けっ}して{育|そだ}たない。",
+    "sentenceFurigana": "コンドルは{動物園|どうぶつえん}では{決|けっ}して{育|そだ}たない。"
   },
   {
     "id": "trap-n4-546e786cde",
@@ -1718,7 +2138,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "飛行場",
     "suffix": "は、今では草がぼうぼうだ。",
     "sentenceJa": "その島の飛行場は、今では草がぼうぼうだ。",
-    "sentenceEn": "The airfield on the island is now covered with weeds."
+    "sentenceEn": "The airfield on the island is now covered with weeds.",
+    "prefixFurigana": "その{島|しま}の",
+    "targetFurigana": "{飛行場|ひこうじょう}",
+    "suffixFurigana": "は、{今|いま}では{草|くさ}がぼうぼうだ。",
+    "sentenceFurigana": "その{島|しま}の{飛行場|ひこうじょう}は、{今|いま}では{草|くさ}がぼうぼうだ。"
   },
   {
     "id": "trap-n4-eced3a159f",
@@ -1734,7 +2158,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "美術館",
     "suffix": "まで行きますか。",
     "sentenceJa": "このバスは美術館まで行きますか。",
-    "sentenceEn": "Does this bus go to the museum?"
+    "sentenceEn": "Does this bus go to the museum?",
+    "prefixFurigana": "このバスは",
+    "targetFurigana": "{美術館|びじゅつかん}",
+    "suffixFurigana": "まで{行|い}きますか。",
+    "sentenceFurigana": "このバスは{美術館|びじゅつかん}まで{行|い}きますか。"
   },
   {
     "id": "trap-n4-e877021bf4",
@@ -1750,7 +2178,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "赤ん坊",
     "suffix": "は口をきくようになってきました。",
     "sentenceJa": "うちの赤ん坊は口をきくようになってきました。",
-    "sentenceEn": "Our baby is learning to speak."
+    "sentenceEn": "Our baby is learning to speak.",
+    "prefixFurigana": "うちの",
+    "targetFurigana": "{赤ん坊|あかんぼう}",
+    "suffixFurigana": "は{口|くち}をきくようになってきました。",
+    "sentenceFurigana": "うちの{赤ん坊|あかんぼう}は{口|くち}をきくようになってきました。"
   },
   {
     "id": "trap-n4-a58874b751",
@@ -1766,7 +2198,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "お金持ち",
     "suffix": "になれるのかしら？",
     "sentenceJa": "どうしたらお金持ちになれるのかしら？",
-    "sentenceEn": "How can I become rich?"
+    "sentenceEn": "How can I become rich?",
+    "prefixFurigana": "どうしたら",
+    "targetFurigana": "お{金持|かねも}ち",
+    "suffixFurigana": "になれるのかしら？",
+    "sentenceFurigana": "どうしたらお{金持|かねも}ちになれるのかしら？"
   },
   {
     "id": "trap-n4-1065d7145c",
@@ -1782,7 +2218,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "屋上",
     "suffix": "にアドバルーンが上がっている。",
     "sentenceJa": "デパートの屋上にアドバルーンが上がっている。",
-    "sentenceEn": "There is an advertising balloon flying above the department store."
+    "sentenceEn": "There is an advertising balloon flying above the department store.",
+    "prefixFurigana": "デパートの",
+    "targetFurigana": "{屋上|おくじょう}",
+    "suffixFurigana": "にアドバルーンが{上|あ}がっている。",
+    "sentenceFurigana": "デパートの{屋上|おくじょう}にアドバルーンが{上|あ}がっている。"
   },
   {
     "id": "trap-n4-ba001e2f36",
@@ -1798,7 +2238,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "贈り物",
     "suffix": "をありがとうと言った。",
     "sentenceJa": "ジェニーは贈り物をありがとうと言った。",
-    "sentenceEn": "Jenny thanked me for the gift."
+    "sentenceEn": "Jenny thanked me for the gift.",
+    "prefixFurigana": "ジェニーは",
+    "targetFurigana": "{贈り物|おくりもの}",
+    "suffixFurigana": "をありがとうと{言|い}った。",
+    "sentenceFurigana": "ジェニーは{贈り物|おくりもの}をありがとうと{言|い}った。"
   },
   {
     "id": "trap-n4-d9cf4f541d",
@@ -1814,7 +2258,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "泳ぎ方",
     "suffix": "を教えよう。",
     "sentenceJa": "君に泳ぎ方を教えよう。",
-    "sentenceEn": "I'll tell you how to swim."
+    "sentenceEn": "I'll tell you how to swim.",
+    "prefixFurigana": "{君|きみ}に",
+    "targetFurigana": "{泳ぎ方|およぎかた}",
+    "suffixFurigana": "を{教|おし}えよう。",
+    "sentenceFurigana": "{君|きみ}に{泳ぎ方|およぎかた}を{教|おし}えよう。"
   },
   {
     "id": "trap-n4-93ff1a80c2",
@@ -1830,7 +2278,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "会議室",
     "suffix": "に集まった。",
     "sentenceJa": "クラブの会員は会議室に集まった。",
-    "sentenceEn": "The club members assembled in the meeting room."
+    "sentenceEn": "The club members assembled in the meeting room.",
+    "prefixFurigana": "クラブの{会員|かいいん}は",
+    "targetFurigana": "{会議室|かいぎしつ}",
+    "suffixFurigana": "に{集|あつ}まった。",
+    "sentenceFurigana": "クラブの{会員|かいいん}は{会議室|かいぎしつ}に{集|あつ}まった。"
   },
   {
     "id": "trap-n4-7508a7d366",
@@ -1846,7 +2298,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "会場",
     "suffix": "の後ろに座った。",
     "sentenceJa": "私たちは会場の後ろに座った。",
-    "sentenceEn": "We sat at the back of the hall."
+    "sentenceEn": "We sat at the back of the hall.",
+    "prefixFurigana": "{私|わたし}たちは",
+    "targetFurigana": "{会場|かいじょう}",
+    "suffixFurigana": "の{後|うし}ろに{座|すわ}った。",
+    "sentenceFurigana": "{私|わたし}たちは{会場|かいじょう}の{後|うし}ろに{座|すわ}った。"
   },
   {
     "id": "trap-n4-b6027b4099",
@@ -1863,7 +2319,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "急行",
     "suffix": "の料金は幾らですか。",
     "sentenceJa": "急行の料金は幾らですか。",
-    "sentenceEn": "How much is the express?"
+    "sentenceEn": "How much is the express?",
+    "prefixFurigana": "",
+    "targetFurigana": "{急行|きゅうこう}",
+    "suffixFurigana": "の{料金|りょうきん}は{幾|いく}らですか。",
+    "sentenceFurigana": "{急行|きゅうこう}の{料金|りょうきん}は{幾|いく}らですか。"
   },
   {
     "id": "trap-n4-319186af72",
@@ -1879,7 +2339,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "教育",
     "suffix": "にはがっかりしてしまう。",
     "sentenceJa": "この世界の教育にはがっかりしてしまう。",
-    "sentenceEn": "Education in this world disappoints me."
+    "sentenceEn": "Education in this world disappoints me.",
+    "prefixFurigana": "この{世界|せかい}の",
+    "targetFurigana": "{教育|きょういく}",
+    "suffixFurigana": "にはがっかりしてしまう。",
+    "sentenceFurigana": "この{世界|せかい}の{教育|きょういく}にはがっかりしてしまう。"
   },
   {
     "id": "trap-n4-7a7b79370f",
@@ -1895,7 +2359,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "教会",
     "suffix": "は１１７３年までさかのぼる。",
     "sentenceJa": "その教会は１１７３年までさかのぼる。",
-    "sentenceEn": "The church dates back to 1173."
+    "sentenceEn": "The church dates back to 1173.",
+    "prefixFurigana": "その",
+    "targetFurigana": "{教会|きょうかい}",
+    "suffixFurigana": "は１１７３{年|ねん}までさかのぼる。",
+    "sentenceFurigana": "その{教会|きょうかい}は１１７３{年|ねん}までさかのぼる。"
   },
   {
     "id": "trap-n4-a9dcbea815",
@@ -1911,7 +2379,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "競争",
     "suffix": "させた。",
     "sentenceJa": "みんなでカブトムシを競争させた。",
-    "sentenceEn": "We raced our beetles."
+    "sentenceEn": "We raced our beetles.",
+    "prefixFurigana": "みんなでカブトムシを",
+    "targetFurigana": "{競争|きょうそう}",
+    "suffixFurigana": "させた。",
+    "sentenceFurigana": "みんなでカブトムシを{競争|きょうそう}させた。"
   },
   {
     "id": "trap-n4-607f3c4430",
@@ -1927,7 +2399,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "研究",
     "suffix": "は、いかがですか。",
     "sentenceJa": "あなたのご研究は、いかがですか。",
-    "sentenceEn": "How are your studies going?"
+    "sentenceEn": "How are your studies going?",
+    "prefixFurigana": "あなたのご",
+    "targetFurigana": "{研究|けんきゅう}",
+    "suffixFurigana": "は、いかがですか。",
+    "sentenceFurigana": "あなたのご{研究|けんきゅう}は、いかがですか。"
   },
   {
     "id": "trap-n4-baaaf1524a",
@@ -1943,7 +2419,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "工業",
     "suffix": "生産は急増した。",
     "sentenceJa": "７月の工業生産は急増した。",
-    "sentenceEn": "Industrial production rose sharply in July."
+    "sentenceEn": "Industrial production rose sharply in July.",
+    "prefixFurigana": "{７月|しちがつ}の",
+    "targetFurigana": "{工業|こうぎょう}",
+    "suffixFurigana": "{生産|せいさん}は{急増|きゅうぞう}した。",
+    "sentenceFurigana": "{７月|しちがつ}の{工業|こうぎょう}{生産|せいさん}は{急増|きゅうぞう}した。"
   },
   {
     "id": "trap-n4-8b7434e649",
@@ -1959,7 +2439,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "工場",
     "suffix": "は来月から作業を中止する。",
     "sentenceJa": "その工場は来月から作業を中止する。",
-    "sentenceEn": "The factory will cease operations next month."
+    "sentenceEn": "The factory will cease operations next month.",
+    "prefixFurigana": "その",
+    "targetFurigana": "{工場|こうじょう}",
+    "suffixFurigana": "は{来月|らいげつ}から{作業|さぎょう}を{中止|ちゅうし}する。",
+    "sentenceFurigana": "その{工場|こうじょう}は{来月|らいげつ}から{作業|さぎょう}を{中止|ちゅうし}する。"
   },
   {
     "id": "trap-n4-0c49fbf17c",
@@ -1975,7 +2459,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "校長",
     "suffix": "が先生の後ろから入ってきた。",
     "sentenceJa": "校長が先生の後ろから入ってきた。",
-    "sentenceEn": "The principal came in after the teacher."
+    "sentenceEn": "The principal came in after the teacher.",
+    "prefixFurigana": "",
+    "targetFurigana": "{校長|こうちょう}",
+    "suffixFurigana": "が{先生|せんせい}の{後|うし}ろから{入|はい}ってきた。",
+    "sentenceFurigana": "{校長|こうちょう}が{先生|せんせい}の{後|うし}ろから{入|はい}ってきた。"
   },
   {
     "id": "trap-n4-a431dff83f",
@@ -1991,7 +2479,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "公務員",
     "suffix": "です。",
     "sentenceJa": "私は公務員です。",
-    "sentenceEn": "I'm a government worker."
+    "sentenceEn": "I'm a government worker.",
+    "prefixFurigana": "{私|わたし}は",
+    "targetFurigana": "{公務員|こうむいん}",
+    "suffixFurigana": "です。",
+    "sentenceFurigana": "{私|わたし}は{公務員|こうむいん}です。"
   },
   {
     "id": "trap-n4-22a8ff8a88",
@@ -2007,7 +2499,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "再来月",
     "suffix": "は１２月だ。",
     "sentenceJa": "再来月は１２月だ。",
-    "sentenceEn": "The month after next is December."
+    "sentenceEn": "The month after next is December.",
+    "prefixFurigana": "",
+    "targetFurigana": "{再来月|さらいげつ}",
+    "suffixFurigana": "は{１２月|じゅうにがつ}だ。",
+    "sentenceFurigana": "{再来月|さらいげつ}は{１２月|じゅうにがつ}だ。"
   },
   {
     "id": "trap-n4-28faf8f7a3",
@@ -2023,7 +2519,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "産業",
     "suffix": "国である。",
     "sentenceJa": "日本は産業国である。",
-    "sentenceEn": "Japan is an industrial country."
+    "sentenceEn": "Japan is an industrial country.",
+    "prefixFurigana": "{日本|にっぽん}は",
+    "targetFurigana": "{産業|さんぎょう}",
+    "suffixFurigana": "{国|くに}である。",
+    "sentenceFurigana": "{日本|にっぽん}は{産業|さんぎょう}{国|くに}である。"
   },
   {
     "id": "trap-n4-a40ee6e509",
@@ -2039,7 +2539,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "社長",
     "suffix": "は誰ですか。",
     "sentenceJa": "この会社の社長は誰ですか。",
-    "sentenceEn": "Who is the boss of this company?"
+    "sentenceEn": "Who is the boss of this company?",
+    "prefixFurigana": "この{会社|かいしゃ}の",
+    "targetFurigana": "{社長|しゃちょう}",
+    "suffixFurigana": "は{誰|だれ}ですか。",
+    "sentenceFurigana": "この{会社|かいしゃ}の{社長|しゃちょう}は{誰|だれ}ですか。"
   },
   {
     "id": "trap-n4-eacd8a5221",
@@ -2056,7 +2560,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "習慣",
     "suffix": "は中国で始まった。",
     "sentenceJa": "その習慣は中国で始まった。",
-    "sentenceEn": "The custom originated in China."
+    "sentenceEn": "The custom originated in China.",
+    "prefixFurigana": "その",
+    "targetFurigana": "{習慣|しゅうかん}",
+    "suffixFurigana": "は{中国|ちゅうごく}で{始|はじ}まった。",
+    "sentenceFurigana": "その{習慣|しゅうかん}は{中国|ちゅうごく}で{始|はじ}まった。"
   },
   {
     "id": "trap-n4-dcfb33317b",
@@ -2072,7 +2580,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "柔道",
     "suffix": "では力より技のほうが大切である。",
     "sentenceJa": "柔道では力より技のほうが大切である。",
-    "sentenceEn": "In judo, technique is more important than strength."
+    "sentenceEn": "In judo, technique is more important than strength.",
+    "prefixFurigana": "",
+    "targetFurigana": "{柔道|じゅうどう}",
+    "suffixFurigana": "では{力|ちから}より{技|わざ}のほうが{大切|たいせつ}である。",
+    "sentenceFurigana": "{柔道|じゅうどう}では{力|ちから}より{技|わざ}のほうが{大切|たいせつ}である。"
   },
   {
     "id": "trap-n4-ab6fd5bdbb",
@@ -2088,7 +2600,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "十分",
     "suffix": "なお金を持っている。",
     "sentenceJa": "私はこの本を買うのに十分なお金を持っている。",
-    "sentenceEn": "I have enough money to buy this book."
+    "sentenceEn": "I have enough money to buy this book.",
+    "prefixFurigana": "{私|わたし}はこの{本|ほん}を{買|か}うのに",
+    "targetFurigana": "{十分|じゅうぶん}",
+    "suffixFurigana": "なお{金|きん}を{持|も}っている。",
+    "sentenceFurigana": "{私|わたし}はこの{本|ほん}を{買|か}うのに{十分|じゅうぶん}なお{金|きん}を{持|も}っている。"
   },
   {
     "id": "trap-n4-93f910e281",
@@ -2104,7 +2620,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "出席",
     "suffix": "できないんですか。どうして？",
     "sentenceJa": "出席できないんですか。どうして？",
-    "sentenceEn": "You can't attend? Why not?"
+    "sentenceEn": "You can't attend? Why not?",
+    "prefixFurigana": "",
+    "targetFurigana": "{出席|しゅっせき}",
+    "suffixFurigana": "できないんですか。どうして？",
+    "sentenceFurigana": "{出席|しゅっせき}できないんですか。どうして？"
   },
   {
     "id": "trap-n4-c614552d23",
@@ -2120,7 +2640,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "出発",
     "suffix": "した方がいいですよ。",
     "sentenceJa": "すぐに出発した方がいいですよ。",
-    "sentenceEn": "You had better depart at once."
+    "sentenceEn": "You had better depart at once.",
+    "prefixFurigana": "すぐに",
+    "targetFurigana": "{出発|しゅっぱつ}",
+    "suffixFurigana": "した{方|ほう}がいいですよ。",
+    "sentenceFurigana": "すぐに{出発|しゅっぱつ}した{方|ほう}がいいですよ。"
   },
   {
     "id": "trap-n4-689dc7a66e",
@@ -2136,7 +2660,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "小説",
     "suffix": "を読んでいる。",
     "sentenceJa": "トムは小説を読んでいる。",
-    "sentenceEn": "Tom is reading a novel."
+    "sentenceEn": "Tom is reading a novel.",
+    "prefixFurigana": "トムは",
+    "targetFurigana": "{小説|しょうせつ}",
+    "suffixFurigana": "を{読|よ}んでいる。",
+    "sentenceFurigana": "トムは{小説|しょうせつ}を{読|よ}んでいる。"
   },
   {
     "id": "trap-n4-6111e87e72",
@@ -2152,7 +2680,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "招待",
     "suffix": "をありがとうございます。",
     "sentenceJa": "ご招待をありがとうございます。",
-    "sentenceEn": "Thank you for your invitation."
+    "sentenceEn": "Thank you for your invitation.",
+    "prefixFurigana": "ご",
+    "targetFurigana": "{招待|しょうたい}",
+    "suffixFurigana": "をありがとうございます。",
+    "sentenceFurigana": "ご{招待|しょうたい}をありがとうございます。"
   },
   {
     "id": "trap-n4-0e3ecb7665",
@@ -2169,7 +2701,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "将来",
     "suffix": "の事を考えずにはいられない。",
     "sentenceJa": "将来の事を考えずにはいられない。",
-    "sentenceEn": "I can't help thinking of the future."
+    "sentenceEn": "I can't help thinking of the future.",
+    "prefixFurigana": "",
+    "targetFurigana": "{将来|しょうらい}",
+    "suffixFurigana": "の{事|こと}を{考|かんが}えずにはいられない。",
+    "sentenceFurigana": "{将来|しょうらい}の{事|こと}を{考|かんが}えずにはいられない。"
   },
   {
     "id": "trap-n4-6a89d1feee",
@@ -2185,7 +2721,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "卒業",
     "suffix": "しようと思っているの。",
     "sentenceJa": "私はポップ・ミュージックはそろそろ卒業しようと思っているの。",
-    "sentenceEn": "I feel I'm growing out of pop music."
+    "sentenceEn": "I feel I'm growing out of pop music.",
+    "prefixFurigana": "{私|わたし}はポップ・ミュージックはそろそろ",
+    "targetFurigana": "{卒業|そつぎょう}",
+    "suffixFurigana": "しようと{思|おも}っているの。",
+    "sentenceFurigana": "{私|わたし}はポップ・ミュージックはそろそろ{卒業|そつぎょう}しようと{思|おも}っているの。"
   },
   {
     "id": "trap-n4-3f26d1cef7",
@@ -2201,7 +2741,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "注射",
     "suffix": "をしましょう。",
     "sentenceJa": "注射をしましょう。",
-    "sentenceEn": "I'll give you a shot."
+    "sentenceEn": "I'll give you a shot.",
+    "prefixFurigana": "",
+    "targetFurigana": "{注射|ちゅうしゃ}",
+    "suffixFurigana": "をしましょう。",
+    "sentenceFurigana": "{注射|ちゅうしゃ}をしましょう。"
   },
   {
     "id": "trap-n4-3753f20423",
@@ -2217,7 +2761,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "特急",
     "suffix": "にのりそこねた。",
     "sentenceJa": "時計がおくれていたので、私は特急にのりそこねた。",
-    "sentenceEn": "As my watch was slow, I missed the special express."
+    "sentenceEn": "As my watch was slow, I missed the special express.",
+    "prefixFurigana": "{時計|とけい}がおくれていたので、{私|わたし}は",
+    "targetFurigana": "{特急|とっきゅう}",
+    "suffixFurigana": "にのりそこねた。",
+    "sentenceFurigana": "{時計|とけい}がおくれていたので、{私|わたし}は{特急|とっきゅう}にのりそこねた。"
   },
   {
     "id": "trap-n4-178daf8296",
@@ -2233,7 +2781,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "入院",
     "suffix": "しなければいけませんか。",
     "sentenceJa": "入院しなければいけませんか。",
-    "sentenceEn": "Do I have to stay in the hospital?"
+    "sentenceEn": "Do I have to stay in the hospital?",
+    "prefixFurigana": "",
+    "targetFurigana": "{入院|にゅういん}",
+    "suffixFurigana": "しなければいけませんか。",
+    "sentenceFurigana": "{入院|にゅういん}しなければいけませんか。"
   },
   {
     "id": "trap-n4-433da13afb",
@@ -2249,7 +2801,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "入学",
     "suffix": "した。",
     "sentenceJa": "私はこの学校に２年前に入学した。",
-    "sentenceEn": "I entered this school two years ago."
+    "sentenceEn": "I entered this school two years ago.",
+    "prefixFurigana": "{私|わたし}はこの{学校|がっこう}に２{年|ねん}{前|まえ}に",
+    "targetFurigana": "{入学|にゅうがく}",
+    "suffixFurigana": "した。",
+    "sentenceFurigana": "{私|わたし}はこの{学校|がっこう}に２{年|ねん}{前|まえ}に{入学|にゅうがく}した。"
   },
   {
     "id": "trap-n4-5cda324083",
@@ -2266,7 +2822,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "人形",
     "suffix": "をくれた。",
     "sentenceJa": "メアリーは私にアメリカの人形をくれた。",
-    "sentenceEn": "Mary gave me an American doll."
+    "sentenceEn": "Mary gave me an American doll.",
+    "prefixFurigana": "メアリーは{私|わたし}にアメリカの",
+    "targetFurigana": "{人形|にんぎょう}",
+    "suffixFurigana": "をくれた。",
+    "sentenceFurigana": "メアリーは{私|わたし}にアメリカの{人形|にんぎょう}をくれた。"
   },
   {
     "id": "trap-n4-be23bfe1f6",
@@ -2282,7 +2842,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "非常に",
     "suffix": "楽しい。",
     "sentenceJa": "車を運転することは非常に楽しい。",
-    "sentenceEn": "It is a lot of fun to drive a car."
+    "sentenceEn": "It is a lot of fun to drive a car.",
+    "prefixFurigana": "{車|くるま}を{運転|うんてん}することは",
+    "targetFurigana": "{非常|ひじょう}に",
+    "suffixFurigana": "{楽|たの}しい。",
+    "sentenceFurigana": "{車|くるま}を{運転|うんてん}することは{非常|ひじょう}に{楽|たの}しい。"
   },
   {
     "id": "trap-n4-26253e5000",
@@ -2298,7 +2862,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "昼休み",
     "suffix": "は、１時間です。",
     "sentenceJa": "お昼休みは、１時間です。",
-    "sentenceEn": "Lunch break is an hour long."
+    "sentenceEn": "Lunch break is an hour long.",
+    "prefixFurigana": "お",
+    "targetFurigana": "{昼休|ひるやす}み",
+    "suffixFurigana": "は、１{時間|じかん}です。",
+    "sentenceFurigana": "お{昼休|ひるやす}みは、１{時間|じかん}です。"
   },
   {
     "id": "trap-n4-c00788993b",
@@ -2314,7 +2882,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "復習",
     "suffix": "をしましたか。",
     "sentenceJa": "その課の復習をしましたか。",
-    "sentenceEn": "Have you gone over the lesson?"
+    "sentenceEn": "Have you gone over the lesson?",
+    "prefixFurigana": "その{課|か}の",
+    "targetFurigana": "{復習|ふくしゅう}",
+    "suffixFurigana": "をしましたか。",
+    "sentenceFurigana": "その{課|か}の{復習|ふくしゅう}をしましたか。"
   },
   {
     "id": "trap-n4-8011fa51a8",
@@ -2330,7 +2902,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "役に立つ",
     "suffix": "。",
     "sentenceJa": "どんなに少しでもすべて役に立つ。",
-    "sentenceEn": "Every little bit helps."
+    "sentenceEn": "Every little bit helps.",
+    "prefixFurigana": "どんなに{少|すこ}しでもすべて",
+    "targetFurigana": "{役に立|やくにた}つ",
+    "suffixFurigana": "。",
+    "sentenceFurigana": "どんなに{少|すこ}しでもすべて{役に立|やくにた}つ。"
   },
   {
     "id": "trap-n4-520cc83d87",
@@ -2346,7 +2922,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "両方",
     "suffix": "がそろっていない。",
     "sentenceJa": "この手袋は両方がそろっていない。",
-    "sentenceEn": "Their gloves are not in pairs."
+    "sentenceEn": "Their gloves are not in pairs.",
+    "prefixFurigana": "この{手袋|てぶくろ}は",
+    "targetFurigana": "{両方|りょうほう}",
+    "suffixFurigana": "がそろっていない。",
+    "sentenceFurigana": "この{手袋|てぶくろ}は{両方|りょうほう}がそろっていない。"
   },
   {
     "id": "trap-n4-12abb2a2c6",
@@ -2362,7 +2942,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "忘れ物",
     "suffix": "をした。",
     "sentenceJa": "今日忘れ物をした。",
-    "sentenceEn": "I left behind something today."
+    "sentenceEn": "I left behind something today.",
+    "prefixFurigana": "{今日|きょう}",
+    "targetFurigana": "{忘れ物|わすれもの}",
+    "suffixFurigana": "をした。",
+    "sentenceFurigana": "{今日|きょう}{忘れ物|わすれもの}をした。"
   },
   {
     "id": "trap-n4-d06643e4e1",
@@ -2378,7 +2962,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "安心",
     "suffix": "だ。",
     "sentenceJa": "あいつに仕事を任せておけば安心だ。",
-    "sentenceEn": "You can trust him with any job."
+    "sentenceEn": "You can trust him with any job.",
+    "prefixFurigana": "あいつに{仕事|しごと}を{任|まか}せておけば",
+    "targetFurigana": "{安心|あんしん}",
+    "suffixFurigana": "だ。",
+    "sentenceFurigana": "あいつに{仕事|しごと}を{任|まか}せておけば{安心|あんしん}だ。"
   },
   {
     "id": "trap-n4-160a8399af",
@@ -2394,7 +2982,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "安全",
     "suffix": "ではない。",
     "sentenceJa": "私たちは思っているほど安全ではない。",
-    "sentenceEn": "We are not all that safe."
+    "sentenceEn": "We are not all that safe.",
+    "prefixFurigana": "{私|わたし}たちは{思|おも}っているほど",
+    "targetFurigana": "{安全|あんぜん}",
+    "suffixFurigana": "ではない。",
+    "sentenceFurigana": "{私|わたし}たちは{思|おも}っているほど{安全|あんぜん}ではない。"
   },
   {
     "id": "trap-n4-52a79a5d69",
@@ -2410,7 +3002,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "案内",
     "suffix": "してください。",
     "sentenceJa": "私をあちこちに案内してください。",
-    "sentenceEn": "Please show me around."
+    "sentenceEn": "Please show me around.",
+    "prefixFurigana": "{私|わたし}をあちこちに",
+    "targetFurigana": "{案内|あんない}",
+    "suffixFurigana": "してください。",
+    "sentenceFurigana": "{私|わたし}をあちこちに{案内|あんない}してください。"
   },
   {
     "id": "trap-n4-13ab63d79a",
@@ -2427,7 +3023,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "以上",
     "suffix": "ですか？",
     "sentenceJa": "以上ですか？",
-    "sentenceEn": "Is that all?"
+    "sentenceEn": "Is that all?",
+    "prefixFurigana": "",
+    "targetFurigana": "{以上|いじょう}",
+    "suffixFurigana": "ですか？",
+    "sentenceFurigana": "{以上|いじょう}ですか？"
   },
   {
     "id": "trap-n4-4bdd43130b",
@@ -2443,7 +3043,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "受付",
     "suffix": "で入院の手続きをしてください。",
     "sentenceJa": "受付で入院の手続きをしてください。",
-    "sentenceEn": "You have to fill out an application for admission to the hospital at the front desk."
+    "sentenceEn": "You have to fill out an application for admission to the hospital at the front desk.",
+    "prefixFurigana": "",
+    "targetFurigana": "{受付|うけつけ}",
+    "suffixFurigana": "で{入院|にゅういん}の{手続|てつづ}きをしてください。",
+    "sentenceFurigana": "{受付|うけつけ}で{入院|にゅういん}の{手続|てつづ}きをしてください。"
   },
   {
     "id": "trap-n4-44f33984fb",
@@ -2459,7 +3063,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "運転",
     "suffix": "しています。",
     "sentenceJa": "キャロルはレンタカーを運転しています。",
-    "sentenceEn": "Carol is driving a rent-a-car."
+    "sentenceEn": "Carol is driving a rent-a-car.",
+    "prefixFurigana": "キャロルはレンタカーを",
+    "targetFurigana": "{運転|うんてん}",
+    "suffixFurigana": "しています。",
+    "sentenceFurigana": "キャロルはレンタカーを{運転|うんてん}しています。"
   },
   {
     "id": "trap-n4-47487b1e85",
@@ -2475,7 +3083,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "運動",
     "suffix": "しなさい。",
     "sentenceJa": "週に一度でいいから運動しなさい。",
-    "sentenceEn": "Try to exercise at least once a week."
+    "sentenceEn": "Try to exercise at least once a week.",
+    "prefixFurigana": "{週|しゅう}に{一|いち}{度|ど}でいいから",
+    "targetFurigana": "{運動|うんどう}",
+    "suffixFurigana": "しなさい。",
+    "sentenceFurigana": "{週|しゅう}に{一|いち}{度|ど}でいいから{運動|うんどう}しなさい。"
   },
   {
     "id": "trap-n4-5ceed9165d",
@@ -2492,7 +3104,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "遠慮",
     "suffix": "願います。",
     "sentenceJa": "ここでのおタバコはご遠慮願います。",
-    "sentenceEn": "Please refrain from smoking here."
+    "sentenceEn": "Please refrain from smoking here.",
+    "prefixFurigana": "ここでのおタバコはご",
+    "targetFurigana": "{遠慮|えんりょ}",
+    "suffixFurigana": "{願|ねが}います。",
+    "sentenceFurigana": "ここでのおタバコはご{遠慮|えんりょ}{願|ねが}います。"
   },
   {
     "id": "trap-n4-3787755f33",
@@ -2508,7 +3124,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "押し入れ",
     "suffix": "に閉じ込めた。",
     "sentenceJa": "強盗はその子供を押し入れに閉じ込めた。",
-    "sentenceEn": "The burglar shut the child in the closet."
+    "sentenceEn": "The burglar shut the child in the closet.",
+    "prefixFurigana": "{強盗|ごうとう}はその{子供|こども}を",
+    "targetFurigana": "{押し入|おしい}れ",
+    "suffixFurigana": "に{閉じ込|とじこ}めた。",
+    "sentenceFurigana": "{強盗|ごうとう}はその{子供|こども}を{押し入|おしい}れに{閉じ込|とじこ}めた。"
   },
   {
     "id": "trap-n4-eb615955c8",
@@ -2525,7 +3145,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "お見舞い",
     "suffix": "に行こうよ。",
     "sentenceJa": "彼女のお見舞いに行こうよ。",
-    "sentenceEn": "Why don't we go and see her in the hospital?"
+    "sentenceEn": "Why don't we go and see her in the hospital?",
+    "prefixFurigana": "{彼女|かのじょ}の",
+    "targetFurigana": "お{見舞|みま}い",
+    "suffixFurigana": "に{行|い}こうよ。",
+    "sentenceFurigana": "{彼女|かのじょ}のお{見舞|みま}いに{行|い}こうよ。"
   },
   {
     "id": "trap-n4-f586632207",
@@ -2541,7 +3165,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "お土産",
     "suffix": "です。",
     "sentenceJa": "これは北海道からのお土産です。",
-    "sentenceEn": "This is a souvenir from Hokkaido."
+    "sentenceEn": "This is a souvenir from Hokkaido.",
+    "prefixFurigana": "これは{北海道|ほっかいどう}からの",
+    "targetFurigana": "お{土産|みやげ}",
+    "suffixFurigana": "です。",
+    "sentenceFurigana": "これは{北海道|ほっかいどう}からのお{土産|みやげ}です。"
   },
   {
     "id": "trap-n4-6f4ad2115e",
@@ -2557,7 +3185,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "海岸",
     "suffix": "に行きますか。",
     "sentenceJa": "このバスは、海岸に行きますか。",
-    "sentenceEn": "Does this bus go to the beach?"
+    "sentenceEn": "Does this bus go to the beach?",
+    "prefixFurigana": "このバスは、",
+    "targetFurigana": "{海岸|かいがん}",
+    "suffixFurigana": "に{行|い}きますか。",
+    "sentenceFurigana": "このバスは、{海岸|かいがん}に{行|い}きますか。"
   },
   {
     "id": "trap-n4-26a19196b7",
@@ -2573,7 +3205,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "課長",
     "suffix": "に任命された。",
     "sentenceJa": "私は課長に任命された。",
-    "sentenceEn": "I was appointed to section chief."
+    "sentenceEn": "I was appointed to section chief.",
+    "prefixFurigana": "{私|わたし}は",
+    "targetFurigana": "{課長|かちょう}",
+    "suffixFurigana": "に{任命|にんめい}された。",
+    "sentenceFurigana": "{私|わたし}は{課長|かちょう}に{任命|にんめい}された。"
   },
   {
     "id": "trap-n4-be3dacfc93",
@@ -2590,7 +3226,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "彼女",
     "suffix": "が来るかどうかである。",
     "sentenceJa": "問題は彼女が来るかどうかである。",
-    "sentenceEn": "The point is whether she will come or not."
+    "sentenceEn": "The point is whether she will come or not.",
+    "prefixFurigana": "{問題|もんだい}は",
+    "targetFurigana": "{彼女|かのじょ}",
+    "suffixFurigana": "が{来|く}るかどうかである。",
+    "sentenceFurigana": "{問題|もんだい}は{彼女|かのじょ}が{来|く}るかどうかである。"
   },
   {
     "id": "trap-n4-f960d43119",
@@ -2606,7 +3246,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "関係",
     "suffix": "があるの。",
     "sentenceJa": "これとあれはどういう関係があるの。",
-    "sentenceEn": "How is this connected to that?"
+    "sentenceEn": "How is this connected to that?",
+    "prefixFurigana": "これとあれはどういう",
+    "targetFurigana": "{関係|かんけい}",
+    "suffixFurigana": "があるの。",
+    "sentenceFurigana": "これとあれはどういう{関係|かんけい}があるの。"
   },
   {
     "id": "trap-n3-ef5af5c903",
@@ -2623,7 +3267,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "影響",
     "suffix": "がみられる。",
     "sentenceJa": "このデザインには中国の影響がみられる。",
-    "sentenceEn": "This design shows Chinese influence."
+    "sentenceEn": "This design shows Chinese influence.",
+    "prefixFurigana": "このデザインには{中国|ちゅうごく}の",
+    "targetFurigana": "{影響|えいきょう}",
+    "suffixFurigana": "がみられる。",
+    "sentenceFurigana": "このデザインには{中国|ちゅうごく}の{影響|えいきょう}がみられる。"
   },
   {
     "id": "trap-n3-738eff46a4",
@@ -2640,7 +3288,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "発表",
     "suffix": "しない。",
     "sentenceJa": "彼は思いきって意見を発表しない。",
-    "sentenceEn": "He dare not express his opinion."
+    "sentenceEn": "He dare not express his opinion.",
+    "prefixFurigana": "{彼|かれ}は{思|おも}いきって{意見|いけん}を",
+    "targetFurigana": "{発表|はっぴょう}",
+    "suffixFurigana": "しない。",
+    "sentenceFurigana": "{彼|かれ}は{思|おも}いきって{意見|いけん}を{発表|はっぴょう}しない。"
   },
   {
     "id": "trap-n3-999fa2ee16",
@@ -2657,7 +3309,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "確認",
     "suffix": "されています。",
     "sentenceJa": "予約は確認されています。",
-    "sentenceEn": "I have a confirmed reservation."
+    "sentenceEn": "I have a confirmed reservation.",
+    "prefixFurigana": "{予約|よやく}は",
+    "targetFurigana": "{確認|かくにん}",
+    "suffixFurigana": "されています。",
+    "sentenceFurigana": "{予約|よやく}は{確認|かくにん}されています。"
   },
   {
     "id": "trap-n3-90ae05137c",
@@ -2676,7 +3332,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "感動",
     "suffix": "した。",
     "sentenceJa": "その小説を読んで深く感動した。",
-    "sentenceEn": "I was deeply moved by that novel."
+    "sentenceEn": "I was deeply moved by that novel.",
+    "prefixFurigana": "その{小説|しょうせつ}を{読|よ}んで{深|ふか}く",
+    "targetFurigana": "{感動|かんどう}",
+    "suffixFurigana": "した。",
+    "sentenceFurigana": "その{小説|しょうせつ}を{読|よ}んで{深|ふか}く{感動|かんどう}した。"
   },
   {
     "id": "trap-n3-99906bc37f",
@@ -2693,7 +3353,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "成功",
     "suffix": "。おめでとうございます。",
     "sentenceJa": "成功。おめでとうございます。",
-    "sentenceEn": "Let me congratulate you on your success."
+    "sentenceEn": "Let me congratulate you on your success.",
+    "prefixFurigana": "",
+    "targetFurigana": "{成功|せいこう}",
+    "suffixFurigana": "。おめでとうございます。",
+    "sentenceFurigana": "{成功|せいこう}。おめでとうございます。"
   },
   {
     "id": "trap-n3-15f5aaa2cc",
@@ -2712,7 +3376,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "努力",
     "suffix": "した。",
     "sentenceJa": "彼はその問題を解こうと努力した。",
-    "sentenceEn": "He exerted himself to solve the problem."
+    "sentenceEn": "He exerted himself to solve the problem.",
+    "prefixFurigana": "{彼|かれ}はその{問題|もんだい}を{解|ほど}こうと",
+    "targetFurigana": "{努力|どりょく}",
+    "suffixFurigana": "した。",
+    "sentenceFurigana": "{彼|かれ}はその{問題|もんだい}を{解|ほど}こうと{努力|どりょく}した。"
   },
   {
     "id": "trap-n3-a8a06b3e15",
@@ -2728,7 +3396,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "男の人",
     "suffix": "がドアの前で歌っています。",
     "sentenceJa": "若い男の人がドアの前で歌っています。",
-    "sentenceEn": "A young man is singing in front of the door."
+    "sentenceEn": "A young man is singing in front of the door.",
+    "prefixFurigana": "{若|わか}い",
+    "targetFurigana": "{男の人|おとこのひと}",
+    "suffixFurigana": "がドアの{前|まえ}で{歌|うた}っています。",
+    "sentenceFurigana": "{若|わか}い{男の人|おとこのひと}がドアの{前|まえ}で{歌|うた}っています。"
   },
   {
     "id": "trap-n3-c7f4f73ace",
@@ -2746,7 +3418,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "吸収",
     "suffix": "する。",
     "sentenceJa": "この布は水をよく吸収する。",
-    "sentenceEn": "This cloth absorbs water well."
+    "sentenceEn": "This cloth absorbs water well.",
+    "prefixFurigana": "この{布|ぬの}は{水|みず}をよく",
+    "targetFurigana": "{吸収|きゅうしゅう}",
+    "suffixFurigana": "する。",
+    "sentenceFurigana": "この{布|ぬの}は{水|みず}をよく{吸収|きゅうしゅう}する。"
   },
   {
     "id": "trap-n3-ec6103d8e8",
@@ -2763,7 +3439,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "給料",
     "suffix": "をもらうのは当然だ。",
     "sentenceJa": "労働者が給料をもらうのは当然だ。",
-    "sentenceEn": "It stands to reason that workers are paid."
+    "sentenceEn": "It stands to reason that workers are paid.",
+    "prefixFurigana": "{労働|ろうどう}{者|しゃ}が",
+    "targetFurigana": "{給料|きゅうりょう}",
+    "suffixFurigana": "をもらうのは{当然|とうぜん}だ。",
+    "sentenceFurigana": "{労働|ろうどう}{者|しゃ}が{給料|きゅうりょう}をもらうのは{当然|とうぜん}だ。"
   },
   {
     "id": "trap-n3-939f77d3f0",
@@ -2779,7 +3459,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "教科書",
     "suffix": "はどうしたらいいんでしょうか。",
     "sentenceJa": "教科書はどうしたらいいんでしょうか。",
-    "sentenceEn": "Where do we get the textbooks?"
+    "sentenceEn": "Where do we get the textbooks?",
+    "prefixFurigana": "",
+    "targetFurigana": "{教科書|きょうかしょ}",
+    "suffixFurigana": "はどうしたらいいんでしょうか。",
+    "sentenceFurigana": "{教科書|きょうかしょ}はどうしたらいいんでしょうか。"
   },
   {
     "id": "trap-n3-3a3b1e3490",
@@ -2796,7 +3480,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "供給",
     "suffix": "された。",
     "sentenceJa": "水は外側から供給された。",
-    "sentenceEn": "Water was supplied from outside."
+    "sentenceEn": "Water was supplied from outside.",
+    "prefixFurigana": "{水|みず}は{外側|そとがわ}から",
+    "targetFurigana": "{供給|きょうきゅう}",
+    "suffixFurigana": "された。",
+    "sentenceFurigana": "{水|みず}は{外側|そとがわ}から{供給|きょうきゅう}された。"
   },
   {
     "id": "trap-n3-d3ee1eb490",
@@ -2814,7 +3502,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "強調",
     "suffix": "した。",
     "sentenceJa": "先生は毎日の練習の大切さを強調した。",
-    "sentenceEn": "The teacher stressed the importance of daily practice."
+    "sentenceEn": "The teacher stressed the importance of daily practice.",
+    "prefixFurigana": "{先生|せんせい}は{毎日|まいにち}の{練習|れんしゅう}の{大切|たいせつ}さを",
+    "targetFurigana": "{強調|きょうちょう}",
+    "suffixFurigana": "した。",
+    "sentenceFurigana": "{先生|せんせい}は{毎日|まいにち}の{練習|れんしゅう}の{大切|たいせつ}さを{強調|きょうちょう}した。"
   },
   {
     "id": "trap-n3-23ba87bda6",
@@ -2831,7 +3523,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "協力",
     "suffix": "してその絵を仕上げた。",
     "sentenceJa": "彼らは協力してその絵を仕上げた。",
-    "sentenceEn": "They completed the picture hand in hand."
+    "sentenceEn": "They completed the picture hand in hand.",
+    "prefixFurigana": "{彼|かれ}らは",
+    "targetFurigana": "{協力|きょうりょく}",
+    "suffixFurigana": "してその{絵|え}を{仕上|しあ}げた。",
+    "sentenceFurigana": "{彼|かれ}らは{協力|きょうりょく}してその{絵|え}を{仕上|しあ}げた。"
   },
   {
     "id": "trap-n3-21b3678651",
@@ -2848,7 +3544,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "強力",
     "suffix": "だった。",
     "sentenceJa": "日本の軍隊は非常に強力だった。",
-    "sentenceEn": "Japan's army was very powerful."
+    "sentenceEn": "Japan's army was very powerful.",
+    "prefixFurigana": "{日本|にっぽん}の{軍隊|ぐんたい}は{非常|ひじょう}に",
+    "targetFurigana": "{強力|きょうりょく}",
+    "suffixFurigana": "だった。",
+    "sentenceFurigana": "{日本|にっぽん}の{軍隊|ぐんたい}は{非常|ひじょう}に{強力|きょうりょく}だった。"
   },
   {
     "id": "trap-n3-3a24c44422",
@@ -2864,7 +3564,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "宗教",
     "suffix": "と文化が違っている。",
     "sentenceJa": "その両国は宗教と文化が違っている。",
-    "sentenceEn": "The two countries differ in religion and culture."
+    "sentenceEn": "The two countries differ in religion and culture.",
+    "prefixFurigana": "その{両国|りょうこく}は",
+    "targetFurigana": "{宗教|しゅうきょう}",
+    "suffixFurigana": "と{文化|ぶんか}が{違|ちが}っている。",
+    "sentenceFurigana": "その{両国|りょうこく}は{宗教|しゅうきょう}と{文化|ぶんか}が{違|ちが}っている。"
   },
   {
     "id": "trap-n3-ec1934d7b5",
@@ -2881,7 +3585,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "就職",
     "suffix": "を断られたのか。",
     "sentenceJa": "なぜ就職を断られたのか。",
-    "sentenceEn": "Why was I turned down for the job?"
+    "sentenceEn": "Why was I turned down for the job?",
+    "prefixFurigana": "なぜ",
+    "targetFurigana": "{就職|しゅうしょく}",
+    "suffixFurigana": "を{断|ことわ}られたのか。",
+    "sentenceFurigana": "なぜ{就職|しゅうしょく}を{断|ことわ}られたのか。"
   },
   {
     "id": "trap-n3-f427f2ab2d",
@@ -2898,7 +3606,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "集中",
     "suffix": "していた。",
     "sentenceJa": "私は読書に集中していた。",
-    "sentenceEn": "I was concentrating on reading."
+    "sentenceEn": "I was concentrating on reading.",
+    "prefixFurigana": "{私|わたし}は{読書|どくしょ}に",
+    "targetFurigana": "{集中|しゅうちゅう}",
+    "suffixFurigana": "していた。",
+    "sentenceFurigana": "{私|わたし}は{読書|どくしょ}に{集中|しゅうちゅう}していた。"
   },
   {
     "id": "trap-n3-a1ee5baecb",
@@ -2916,7 +3628,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "収入",
     "suffix": "以上の生活をするな。",
     "sentenceJa": "収入以上の生活をするな。",
-    "sentenceEn": "Do not live above your income."
+    "sentenceEn": "Do not live above your income.",
+    "prefixFurigana": "",
+    "targetFurigana": "{収入|しゅうにゅう}",
+    "suffixFurigana": "{以上|いじょう}の{生活|せいかつ}をするな。",
+    "sentenceFurigana": "{収入|しゅうにゅう}{以上|いじょう}の{生活|せいかつ}をするな。"
   },
   {
     "id": "trap-n3-0ec7f868c5",
@@ -2935,7 +3651,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "順調",
     "suffix": "にいっている。",
     "sentenceJa": "すべてが順調にいっている。",
-    "sentenceEn": "Everything is going very well."
+    "sentenceEn": "Everything is going very well.",
+    "prefixFurigana": "すべてが",
+    "targetFurigana": "{順調|じゅんちょう}",
+    "suffixFurigana": "にいっている。",
+    "sentenceFurigana": "すべてが{順調|じゅんちょう}にいっている。"
   },
   {
     "id": "trap-n3-d0cc9588b9",
@@ -2951,7 +3671,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "奨学金",
     "suffix": "のおかげで彼女は留学した。",
     "sentenceJa": "奨学金のおかげで彼女は留学した。",
-    "sentenceEn": "The scholarship enabled her to study abroad."
+    "sentenceEn": "The scholarship enabled her to study abroad.",
+    "prefixFurigana": "",
+    "targetFurigana": "{奨学金|しょうがくきん}",
+    "suffixFurigana": "のおかげで{彼女|かのじょ}は{留学|りゅうがく}した。",
+    "sentenceFurigana": "{奨学金|しょうがくきん}のおかげで{彼女|かのじょ}は{留学|りゅうがく}した。"
   },
   {
     "id": "trap-n3-fb2679c1c0",
@@ -2967,7 +3691,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "乗客",
     "suffix": "はどちらの側にも４人すわっていた。",
     "sentenceJa": "乗客はどちらの側にも４人すわっていた。",
-    "sentenceEn": "The passengers sat four aside."
+    "sentenceEn": "The passengers sat four aside.",
+    "prefixFurigana": "",
+    "targetFurigana": "{乗客|じょうきゃく}",
+    "suffixFurigana": "はどちらの{側|がわ}にも４{人|にん}すわっていた。",
+    "sentenceFurigana": "{乗客|じょうきゃく}はどちらの{側|がわ}にも４{人|にん}すわっていた。"
   },
   {
     "id": "trap-n3-042e41d200",
@@ -2983,7 +3711,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "上京",
     "suffix": "した。",
     "sentenceJa": "彼は商用で上京した。",
-    "sentenceEn": "He came up to Tokyo on business."
+    "sentenceEn": "He came up to Tokyo on business.",
+    "prefixFurigana": "{彼|かれ}は{商用|しょうよう}で",
+    "targetFurigana": "{上京|じょうきょう}",
+    "suffixFurigana": "した。",
+    "sentenceFurigana": "{彼|かれ}は{商用|しょうよう}で{上京|じょうきょう}した。"
   },
   {
     "id": "trap-n3-b465e5e854",
@@ -3001,7 +3733,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "状況",
     "suffix": "をお知らせください。",
     "sentenceJa": "状況をお知らせください。",
-    "sentenceEn": "Please let me know the status."
+    "sentenceEn": "Please let me know the status.",
+    "prefixFurigana": "",
+    "targetFurigana": "{状況|じょうきょう}",
+    "suffixFurigana": "をお{知|し}らせください。",
+    "sentenceFurigana": "{状況|じょうきょう}をお{知|し}らせください。"
   },
   {
     "id": "trap-n3-0336d92dcd",
@@ -3018,7 +3754,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "症状",
     "suffix": "が起きますか。",
     "sentenceJa": "よくこういう症状が起きますか。",
-    "sentenceEn": "Do you have this symptom often?"
+    "sentenceEn": "Do you have this symptom often?",
+    "prefixFurigana": "よくこういう",
+    "targetFurigana": "{症状|しょうじょう}",
+    "suffixFurigana": "が{起|お}きますか。",
+    "sentenceFurigana": "よくこういう{症状|しょうじょう}が{起|お}きますか。"
   },
   {
     "id": "trap-n3-8d570a517c",
@@ -3035,7 +3775,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "職業",
     "suffix": "は多い。",
     "sentenceJa": "婦人に開放されている職業は多い。",
-    "sentenceEn": "There are many careers open to women."
+    "sentenceEn": "There are many careers open to women.",
+    "prefixFurigana": "{婦人|ふじん}に{開放|かいほう}されている",
+    "targetFurigana": "{職業|しょくぎょう}",
+    "suffixFurigana": "は{多|おお}い。",
+    "sentenceFurigana": "{婦人|ふじん}に{開放|かいほう}されている{職業|しょくぎょう}は{多|おお}い。"
   },
   {
     "id": "trap-n3-c4b2e7a3a3",
@@ -3051,7 +3795,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "食料",
     "suffix": "を手に入れられなかった。",
     "sentenceJa": "彼らはじゅうぶんな食料を手に入れられなかった。",
-    "sentenceEn": "They could not get enough food."
+    "sentenceEn": "They could not get enough food.",
+    "prefixFurigana": "{彼|かれ}らはじゅうぶんな",
+    "targetFurigana": "{食料|しょくりょう}",
+    "suffixFurigana": "を{手|て}に{入|い}れられなかった。",
+    "sentenceFurigana": "{彼|かれ}らはじゅうぶんな{食料|しょくりょう}を{手|て}に{入|い}れられなかった。"
   },
   {
     "id": "trap-n3-49b450eac3",
@@ -3068,7 +3816,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "食糧",
     "suffix": "が不足している。",
     "sentenceJa": "食糧が不足している。",
-    "sentenceEn": "Food has been in short supply."
+    "sentenceEn": "Food has been in short supply.",
+    "prefixFurigana": "",
+    "targetFurigana": "{食糧|しょくりょう}",
+    "suffixFurigana": "が{不足|ふそく}している。",
+    "sentenceFurigana": "{食糧|しょくりょう}が{不足|ふそく}している。"
   },
   {
     "id": "trap-n3-f755485505",
@@ -3086,7 +3838,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "積極的",
     "suffix": "が全然ない。",
     "sentenceJa": "彼に父の持っている積極的が全然ない。",
-    "sentenceEn": "He has none of his father's aggressiveness."
+    "sentenceEn": "He has none of his father's aggressiveness.",
+    "prefixFurigana": "{彼|かれ}に{父|ちち}の{持|も}っている",
+    "targetFurigana": "{積極的|せっきょくてき}",
+    "suffixFurigana": "が{全然|ぜんぜん}ない。",
+    "sentenceFurigana": "{彼|かれ}に{父|ちち}の{持|も}っている{積極的|せっきょくてき}が{全然|ぜんぜん}ない。"
   },
   {
     "id": "trap-n3-4713a549bc",
@@ -3103,7 +3859,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "大統領",
     "suffix": "は強硬路線をとった。",
     "sentenceJa": "大統領は強硬路線をとった。",
-    "sentenceEn": "The President took a hard line."
+    "sentenceEn": "The President took a hard line.",
+    "prefixFurigana": "",
+    "targetFurigana": "{大統領|だいとうりょう}",
+    "suffixFurigana": "は{強硬|きょうこう}{路線|ろせん}をとった。",
+    "sentenceFurigana": "{大統領|だいとうりょう}は{強硬|きょうこう}{路線|ろせん}をとった。"
   },
   {
     "id": "trap-n3-80c8c02c83",
@@ -3120,7 +3880,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "昼食",
     "suffix": "をとる時間がない。",
     "sentenceJa": "今日は昼食をとる時間がない。",
-    "sentenceEn": "I don't have enough time to eat lunch today."
+    "sentenceEn": "I don't have enough time to eat lunch today.",
+    "prefixFurigana": "{今日|きょう}は",
+    "targetFurigana": "{昼食|ちゅうしょく}",
+    "suffixFurigana": "をとる{時間|じかん}がない。",
+    "sentenceFurigana": "{今日|きょう}は{昼食|ちゅうしょく}をとる{時間|じかん}がない。"
   },
   {
     "id": "trap-n3-d19e1e7cb4",
@@ -3138,7 +3902,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "頂上",
     "suffix": "へたどり着いた。",
     "sentenceJa": "私達はついに頂上へたどり着いた。",
-    "sentenceEn": "At last, we reached the summit."
+    "sentenceEn": "At last, we reached the summit.",
+    "prefixFurigana": "{私|わたし}{達|たち}はついに",
+    "targetFurigana": "{頂上|ちょうじょう}",
+    "suffixFurigana": "へたどり{着|つ}いた。",
+    "sentenceFurigana": "{私|わたし}{達|たち}はついに{頂上|ちょうじょう}へたどり{着|つ}いた。"
   },
   {
     "id": "trap-n3-bad69dcdd2",
@@ -3154,7 +3922,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "停留所",
     "suffix": "まで競争しよう。",
     "sentenceJa": "バスの停留所まで競争しよう。",
-    "sentenceEn": "I'll race you to the bus stop."
+    "sentenceEn": "I'll race you to the bus stop.",
+    "prefixFurigana": "バスの",
+    "targetFurigana": "{停留所|ていりゅうじょ}",
+    "suffixFurigana": "まで{競争|きょうそう}しよう。",
+    "sentenceFurigana": "バスの{停留所|ていりゅうじょ}まで{競争|きょうそう}しよう。"
   },
   {
     "id": "trap-n3-9fafb3a7a8",
@@ -3172,7 +3944,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "入場",
     "suffix": "できます。",
     "sentenceJa": "この切符で２名入場できます。",
-    "sentenceEn": "This ticket admits two persons."
+    "sentenceEn": "This ticket admits two persons.",
+    "prefixFurigana": "この{切符|きっぷ}で２{名|めい}",
+    "targetFurigana": "{入場|にゅうじょう}",
+    "suffixFurigana": "できます。",
+    "sentenceFurigana": "この{切符|きっぷ}で２{名|めい}{入場|にゅうじょう}できます。"
   },
   {
     "id": "trap-n3-24194e1918",
@@ -3188,7 +3964,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "博物館",
     "suffix": "はくるに値する。",
     "sentenceJa": "あの博物館はくるに値する。",
-    "sentenceEn": "That museum is worth visiting."
+    "sentenceEn": "That museum is worth visiting.",
+    "prefixFurigana": "あの",
+    "targetFurigana": "{博物館|はくぶつかん}",
+    "suffixFurigana": "はくるに{値|あたい}する。",
+    "sentenceFurigana": "あの{博物館|はくぶつかん}はくるに{値|あたい}する。"
   },
   {
     "id": "trap-n3-f675c4ff49",
@@ -3206,7 +3986,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "一人一人",
     "suffix": "大声でとりついた。",
     "sentenceJa": "メイドは客を一人一人大声でとりついた。",
-    "sentenceEn": "The maid announced each guest."
+    "sentenceEn": "The maid announced each guest.",
+    "prefixFurigana": "メイドは{客|きゃく}を",
+    "targetFurigana": "{一人一人|ひとりひとり}",
+    "suffixFurigana": "{大声|おおごえ}でとりついた。",
+    "sentenceFurigana": "メイドは{客|きゃく}を{一人一人|ひとりひとり}{大声|おおごえ}でとりついた。"
   },
   {
     "id": "trap-n3-58e01c0b72",
@@ -3222,7 +4006,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "表情",
     "suffix": "に変わるのを見た。",
     "sentenceJa": "彼の頭がさっと怒りの表情に変わるのを見た。",
-    "sentenceEn": "I saw his face switch to anger."
+    "sentenceEn": "I saw his face switch to anger.",
+    "prefixFurigana": "{彼|かれ}の{頭|あたま}がさっと{怒|いか}りの",
+    "targetFurigana": "{表情|ひょうじょう}",
+    "suffixFurigana": "に{変|か}わるのを{見|み}た。",
+    "sentenceFurigana": "{彼|かれ}の{頭|あたま}がさっと{怒|いか}りの{表情|ひょうじょう}に{変|か}わるのを{見|み}た。"
   },
   {
     "id": "trap-n3-1938fb6bcb",
@@ -3238,7 +4026,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "明後日",
     "suffix": "雨が降れば、私は家にいます。",
     "sentenceJa": "明後日雨が降れば、私は家にいます。",
-    "sentenceEn": "If it rains the day after tomorrow I'll be inside."
+    "sentenceEn": "If it rains the day after tomorrow I'll be inside.",
+    "prefixFurigana": "",
+    "targetFurigana": "{明後日|みょうごにち}",
+    "suffixFurigana": "{雨|あめ}が{降|ふ}れば、{私|わたし}は{家|いえ}にいます。",
+    "sentenceFurigana": "{明後日|みょうごにち}{雨|あめ}が{降|ふ}れば、{私|わたし}は{家|いえ}にいます。"
   },
   {
     "id": "trap-n3-0cb7e80d4c",
@@ -3255,7 +4047,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "愛情",
     "suffix": "を必要とする。",
     "sentenceJa": "とりわけ子供たちは愛情を必要とする。",
-    "sentenceEn": "Above all, children need love."
+    "sentenceEn": "Above all, children need love.",
+    "prefixFurigana": "とりわけ{子供|こども}たちは",
+    "targetFurigana": "{愛情|あいじょう}",
+    "suffixFurigana": "を{必要|ひつよう}とする。",
+    "sentenceFurigana": "とりわけ{子供|こども}たちは{愛情|あいじょう}を{必要|ひつよう}とする。"
   },
   {
     "id": "trap-n3-fc1d99931b",
@@ -3272,7 +4068,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "一瞬",
     "suffix": "だった。",
     "sentenceJa": "それは私にとってはらはらする一瞬だった。",
-    "sentenceEn": "It was a nervous moment for me."
+    "sentenceEn": "It was a nervous moment for me.",
+    "prefixFurigana": "それは{私|わたし}にとってはらはらする",
+    "targetFurigana": "{一瞬|いっしゅん}",
+    "suffixFurigana": "だった。",
+    "sentenceFurigana": "それは{私|わたし}にとってはらはらする{一瞬|いっしゅん}だった。"
   },
   {
     "id": "trap-n3-e21a9f62b7",
@@ -3290,7 +4090,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "一生",
     "suffix": "勉強しなければならない。",
     "sentenceJa": "あなたは、一生勉強しなければならない。",
-    "sentenceEn": "You must study your whole life."
+    "sentenceEn": "You must study your whole life.",
+    "prefixFurigana": "あなたは、",
+    "targetFurigana": "{一生|いっしょう}",
+    "suffixFurigana": "{勉強|べんきょう}しなければならない。",
+    "sentenceFurigana": "あなたは、{一生|いっしょう}{勉強|べんきょう}しなければならない。"
   },
   {
     "id": "trap-n3-ddedf2e7ba",
@@ -3306,7 +4110,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "印象",
     "suffix": "を強く受けた。",
     "sentenceJa": "彼女は気の利く女の子である印象を強く受けた。",
-    "sentenceEn": "She struck me as a tactful girl."
+    "sentenceEn": "She struck me as a tactful girl.",
+    "prefixFurigana": "{彼女|かのじょ}は{気|き}の{利|き}く{女の子|おんなのこ}である",
+    "targetFurigana": "{印象|いんしょう}",
+    "suffixFurigana": "を{強|つよ}く{受|う}けた。",
+    "sentenceFurigana": "{彼女|かのじょ}は{気|き}の{利|き}く{女の子|おんなのこ}である{印象|いんしょう}を{強|つよ}く{受|う}けた。"
   },
   {
     "id": "trap-n3-c1aeb94b13",
@@ -3324,7 +4132,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "永久",
     "suffix": "に日本を離れた。",
     "sentenceJa": "彼は永久に日本を離れた。",
-    "sentenceEn": "He left Japan for good."
+    "sentenceEn": "He left Japan for good.",
+    "prefixFurigana": "{彼|かれ}は",
+    "targetFurigana": "{永久|えいきゅう}",
+    "suffixFurigana": "に{日本|にっぽん}を{離|はな}れた。",
+    "sentenceFurigana": "{彼|かれ}は{永久|えいきゅう}に{日本|にっぽん}を{離|はな}れた。"
   },
   {
     "id": "trap-n3-b43c2524a1",
@@ -3342,7 +4154,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "営業",
     "suffix": "の者と話をしてみました。",
     "sentenceJa": "営業の者と話をしてみました。",
-    "sentenceEn": "I talked with our sales people."
+    "sentenceEn": "I talked with our sales people.",
+    "prefixFurigana": "",
+    "targetFurigana": "{営業|えいぎょう}",
+    "suffixFurigana": "の{者|もの}と{話|はなし}をしてみました。",
+    "sentenceFurigana": "{営業|えいぎょう}の{者|もの}と{話|はなし}をしてみました。"
   },
   {
     "id": "trap-n3-bb3089103b",
@@ -3359,7 +4175,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "解釈",
     "suffix": "できる。",
     "sentenceJa": "それは２通りに解釈できる。",
-    "sentenceEn": "That reads two different ways."
+    "sentenceEn": "That reads two different ways.",
+    "prefixFurigana": "それは２{通|とお}りに",
+    "targetFurigana": "{解釈|かいしゃく}",
+    "suffixFurigana": "できる。",
+    "sentenceFurigana": "それは２{通|とお}りに{解釈|かいしゃく}できる。"
   },
   {
     "id": "trap-n3-ea99623528",
@@ -3376,7 +4196,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "外出",
     "suffix": "した。",
     "sentenceJa": "ヒーターをつけたまま外出した。",
-    "sentenceEn": "I went out with the heater on."
+    "sentenceEn": "I went out with the heater on.",
+    "prefixFurigana": "ヒーターをつけたまま",
+    "targetFurigana": "{外出|がいしゅつ}",
+    "suffixFurigana": "した。",
+    "sentenceFurigana": "ヒーターをつけたまま{外出|がいしゅつ}した。"
   },
   {
     "id": "trap-n3-bcb8af927c",
@@ -3393,7 +4217,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "学習",
     "suffix": "法としてはあまりよくないと思う。",
     "sentenceJa": "これは生物の学習法としてはあまりよくないと思う。",
-    "sentenceEn": "I don't think this is a good approach to biology."
+    "sentenceEn": "I don't think this is a good approach to biology.",
+    "prefixFurigana": "これは{生物|せいぶつ}の",
+    "targetFurigana": "{学習|がくしゅう}",
+    "suffixFurigana": "{法|ほう}としてはあまりよくないと{思|おも}う。",
+    "sentenceFurigana": "これは{生物|せいぶつ}の{学習|がくしゅう}{法|ほう}としてはあまりよくないと{思|おも}う。"
   },
   {
     "id": "trap-n3-7460e55135",
@@ -3410,7 +4238,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "観客",
     "suffix": "は大喜びだった。",
     "sentenceJa": "そのショーで観客は大喜びだった。",
-    "sentenceEn": "The audience was very much entertained by the show."
+    "sentenceEn": "The audience was very much entertained by the show.",
+    "prefixFurigana": "そのショーで",
+    "targetFurigana": "{観客|かんきゃく}",
+    "suffixFurigana": "は{大|だい}{喜|よろこ}びだった。",
+    "sentenceFurigana": "そのショーで{観客|かんきゃく}は{大|だい}{喜|よろこ}びだった。"
   },
   {
     "id": "trap-n3-c8ca17553a",
@@ -3427,7 +4259,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "環境",
     "suffix": "にすばやく慣れた。",
     "sentenceJa": "彼は新しい環境にすばやく慣れた。",
-    "sentenceEn": "He quickly accustomed himself to his new surroundings."
+    "sentenceEn": "He quickly accustomed himself to his new surroundings.",
+    "prefixFurigana": "{彼|かれ}は{新|あたら}しい",
+    "targetFurigana": "{環境|かんきょう}",
+    "suffixFurigana": "にすばやく{慣|な}れた。",
+    "sentenceFurigana": "{彼|かれ}は{新|あたら}しい{環境|かんきょう}にすばやく{慣|な}れた。"
   },
   {
     "id": "trap-n3-38914b5058",
@@ -3445,7 +4281,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "勘定",
     "suffix": "は合計５００ドルになる。",
     "sentenceJa": "勘定は合計５００ドルになる。",
-    "sentenceEn": "The bill amounts to 500 dollars."
+    "sentenceEn": "The bill amounts to 500 dollars.",
+    "prefixFurigana": "",
+    "targetFurigana": "{勘定|かんじょう}",
+    "suffixFurigana": "は{合計|ごうけい}５００ドルになる。",
+    "sentenceFurigana": "{勘定|かんじょう}は{合計|ごうけい}５００ドルになる。"
   },
   {
     "id": "trap-n3-c2dcadfe14",
@@ -3463,7 +4303,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "感情",
     "suffix": "を伝える事もある。",
     "sentenceJa": "声の調子が感情を伝える事もある。",
-    "sentenceEn": "Tone of voice can indicate feelings."
+    "sentenceEn": "Tone of voice can indicate feelings.",
+    "prefixFurigana": "{声|こえ}の{調子|ちょうし}が",
+    "targetFurigana": "{感情|かんじょう}",
+    "suffixFurigana": "を{伝|つた}える{事|こと}もある。",
+    "sentenceFurigana": "{声|こえ}の{調子|ちょうし}が{感情|かんじょう}を{伝|つた}える{事|こと}もある。"
   },
   {
     "id": "trap-n3-d3adca2034",
@@ -3480,7 +4324,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "完了",
     "suffix": "するつもりだい。",
     "sentenceJa": "君たちいつ準備は完了するつもりだい。",
-    "sentenceEn": "When will you complete the preparations?"
+    "sentenceEn": "When will you complete the preparations?",
+    "prefixFurigana": "{君|きみ}たちいつ{準備|じゅんび}は",
+    "targetFurigana": "{完了|かんりょう}",
+    "suffixFurigana": "するつもりだい。",
+    "sentenceFurigana": "{君|きみ}たちいつ{準備|じゅんび}は{完了|かんりょう}するつもりだい。"
   },
   {
     "id": "trap-n3-97e6b17173",
@@ -3499,7 +4347,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "休憩",
     "suffix": "してコーヒーを飲もう。",
     "sentenceJa": "休憩してコーヒーを飲もう。",
-    "sentenceEn": "Let's take a break for coffee."
+    "sentenceEn": "Let's take a break for coffee.",
+    "prefixFurigana": "",
+    "targetFurigana": "{休憩|きゅうけい}",
+    "suffixFurigana": "してコーヒーを{飲|の}もう。",
+    "sentenceFurigana": "{休憩|きゅうけい}してコーヒーを{飲|の}もう。"
   },
   {
     "id": "trap-n3-d183c55e59",
@@ -3517,7 +4369,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "急激",
     "suffix": "にのびた。",
     "sentenceJa": "その党は急激にのびた。",
-    "sentenceEn": "The party gained ground rapidly."
+    "sentenceEn": "The party gained ground rapidly.",
+    "prefixFurigana": "その{党|とう}は",
+    "targetFurigana": "{急激|きゅうげき}",
+    "suffixFurigana": "にのびた。",
+    "sentenceFurigana": "その{党|とう}は{急激|きゅうげき}にのびた。"
   },
   {
     "id": "trap-n3-23010891c3",
@@ -3535,7 +4391,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "救助",
     "suffix": "した。",
     "sentenceJa": "彼はおぼれている少年を救助した。",
-    "sentenceEn": "He rescued a boy from drowning."
+    "sentenceEn": "He rescued a boy from drowning.",
+    "prefixFurigana": "{彼|かれ}はおぼれている{少年|しょうねん}を",
+    "targetFurigana": "{救助|きゅうじょ}",
+    "suffixFurigana": "した。",
+    "sentenceFurigana": "{彼|かれ}はおぼれている{少年|しょうねん}を{救助|きゅうじょ}した。"
   },
   {
     "id": "trap-n3-094660be3e",
@@ -3551,7 +4411,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "急速",
     "suffix": "な進化を遂げた。",
     "sentenceJa": "コンピューターは急速な進化を遂げた。",
-    "sentenceEn": "Computers have made rapid progress."
+    "sentenceEn": "Computers have made rapid progress.",
+    "prefixFurigana": "コンピューターは",
+    "targetFurigana": "{急速|きゅうそく}",
+    "suffixFurigana": "な{進化|しんか}を{遂|と}げた。",
+    "sentenceFurigana": "コンピューターは{急速|きゅうそく}な{進化|しんか}を{遂|と}げた。"
   },
   {
     "id": "trap-n3-9453cb20ca",
@@ -3569,7 +4433,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "教授",
     "suffix": "がささやいた。",
     "sentenceJa": "一人の教授がささやいた。",
-    "sentenceEn": "One of his colleagues whispered."
+    "sentenceEn": "One of his colleagues whispered.",
+    "prefixFurigana": "{一|いち}{人|にん}の",
+    "targetFurigana": "{教授|きょうじゅ}",
+    "suffixFurigana": "がささやいた。",
+    "sentenceFurigana": "{一|いち}{人|にん}の{教授|きょうじゅ}がささやいた。"
   },
   {
     "id": "trap-n3-d207be5049",
@@ -3586,7 +4454,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "共通",
     "suffix": "することが多い。",
     "sentenceJa": "私と彼は共通することが多い。",
-    "sentenceEn": "I have much in common with him."
+    "sentenceEn": "I have much in common with him.",
+    "prefixFurigana": "{私|わたし}と{彼|かれ}は",
+    "targetFurigana": "{共通|きょうつう}",
+    "suffixFurigana": "することが{多|おお}い。",
+    "sentenceFurigana": "{私|わたし}と{彼|かれ}は{共通|きょうつう}することが{多|おお}い。"
   },
   {
     "id": "trap-n3-6285f625ab",
@@ -3605,7 +4477,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "共同",
     "suffix": "で部屋を使っている。",
     "sentenceJa": "私は妹と共同で部屋を使っている。",
-    "sentenceEn": "I share the room with my sister."
+    "sentenceEn": "I share the room with my sister.",
+    "prefixFurigana": "{私|わたし}は{妹|いもうと}と",
+    "targetFurigana": "{共同|きょうどう}",
+    "suffixFurigana": "で{部屋|へや}を{使|つか}っている。",
+    "sentenceFurigana": "{私|わたし}は{妹|いもうと}と{共同|きょうどう}で{部屋|へや}を{使|つか}っている。"
   },
   {
     "id": "trap-n3-9236d54fda",
@@ -3623,7 +4499,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "緊張",
     "suffix": "が高まった。",
     "sentenceJa": "冷戦の緊張が高まった。",
-    "sentenceEn": "Cold-war tension has mounted."
+    "sentenceEn": "Cold-war tension has mounted.",
+    "prefixFurigana": "{冷戦|れいせん}の",
+    "targetFurigana": "{緊張|きんちょう}",
+    "suffixFurigana": "が{高|たか}まった。",
+    "sentenceFurigana": "{冷戦|れいせん}の{緊張|きんちょう}が{高|たか}まった。"
   },
   {
     "id": "trap-n3-3191964869",
@@ -3640,7 +4520,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "芸術",
     "suffix": "のために大金を寄付した。",
     "sentenceJa": "彼は芸術のために大金を寄付した。",
-    "sentenceEn": "He contributed a lot of money for the sake of art."
+    "sentenceEn": "He contributed a lot of money for the sake of art.",
+    "prefixFurigana": "{彼|かれ}は",
+    "targetFurigana": "{芸術|げいじゅつ}",
+    "suffixFurigana": "のために{大金|たいきん}を{寄付|きふ}した。",
+    "sentenceFurigana": "{彼|かれ}は{芸術|げいじゅつ}のために{大金|たいきん}を{寄付|きふ}した。"
   },
   {
     "id": "trap-n3-f002b6a695",
@@ -3657,7 +4541,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "劇場",
     "suffix": "に着いたぜ。",
     "sentenceJa": "さあ劇場に着いたぜ。",
-    "sentenceEn": "Here we are at the theater."
+    "sentenceEn": "Here we are at the theater.",
+    "prefixFurigana": "さあ",
+    "targetFurigana": "{劇場|げきじょう}",
+    "suffixFurigana": "に{着|つ}いたぜ。",
+    "sentenceFurigana": "さあ{劇場|げきじょう}に{着|つ}いたぜ。"
   },
   {
     "id": "trap-n3-cb50e02845",
@@ -3674,7 +4562,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "結局",
     "suffix": "勝つ。",
     "sentenceJa": "ゆっくりと着実なのが結局勝つ。",
-    "sentenceEn": "Slow and steady wins the race."
+    "sentenceEn": "Slow and steady wins the race.",
+    "prefixFurigana": "ゆっくりと{着実|ちゃくじつ}なのが",
+    "targetFurigana": "{結局|けっきょく}",
+    "suffixFurigana": "{勝|か}つ。",
+    "sentenceFurigana": "ゆっくりと{着実|ちゃくじつ}なのが{結局|けっきょく}{勝|か}つ。"
   },
   {
     "id": "trap-n3-e4e5715dc0",
@@ -3690,7 +4582,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "現象",
     "suffix": "の観察に集中した。",
     "sentenceJa": "生物学者はその現象の観察に集中した。",
-    "sentenceEn": "The biologist concentrated on observing the phenomenon."
+    "sentenceEn": "The biologist concentrated on observing the phenomenon.",
+    "prefixFurigana": "{生物|せいぶつ}{学者|がくしゃ}はその",
+    "targetFurigana": "{現象|げんしょう}",
+    "suffixFurigana": "の{観察|かんさつ}に{集中|しゅうちゅう}した。",
+    "sentenceFurigana": "{生物|せいぶつ}{学者|がくしゃ}はその{現象|げんしょう}の{観察|かんさつ}に{集中|しゅうちゅう}した。"
   },
   {
     "id": "trap-n3-c5881c078f",
@@ -3708,7 +4604,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "現状",
     "suffix": "を大いに嘆いた。",
     "sentenceJa": "彼は現状を大いに嘆いた。",
-    "sentenceEn": "He deeply deplored the situation."
+    "sentenceEn": "He deeply deplored the situation.",
+    "prefixFurigana": "{彼|かれ}は",
+    "targetFurigana": "{現状|げんじょう}",
+    "suffixFurigana": "を{大|おお}いに{嘆|なげ}いた。",
+    "sentenceFurigana": "{彼|かれ}は{現状|げんじょう}を{大|おお}いに{嘆|なげ}いた。"
   },
   {
     "id": "trap-n3-1337b1b9ec",
@@ -3724,7 +4624,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "国境",
     "suffix": "を越えます。",
     "sentenceJa": "明日中には国境を越えます。",
-    "sentenceEn": "We'll be across the border by tomorrow."
+    "sentenceEn": "We'll be across the border by tomorrow.",
+    "prefixFurigana": "{明日|あした}{中|ちゅう}には",
+    "targetFurigana": "{国境|こっきょう}",
+    "suffixFurigana": "を{越|こ}えます。",
+    "sentenceFurigana": "{明日|あした}{中|ちゅう}には{国境|こっきょう}を{越|こ}えます。"
   },
   {
     "id": "trap-n3-87d50bbaf1",
@@ -3742,7 +4646,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "最終",
     "suffix": "電車はいつ出ますか。",
     "sentenceJa": "最終電車はいつ出ますか。",
-    "sentenceEn": "When does the last train leave?"
+    "sentenceEn": "When does the last train leave?",
+    "prefixFurigana": "",
+    "targetFurigana": "{最終|さいしゅう}",
+    "suffixFurigana": "{電車|でんしゃ}はいつ{出|で}ますか。",
+    "sentenceFurigana": "{最終|さいしゅう}{電車|でんしゃ}はいつ{出|で}ますか。"
   },
   {
     "id": "trap-n3-40b4a7cb92",
@@ -3758,7 +4666,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "最中",
     "suffix": "に気を失った。",
     "sentenceJa": "彼はスピーチの最中に気を失った。",
-    "sentenceEn": "He fainted in the midst of his speech."
+    "sentenceEn": "He fainted in the midst of his speech.",
+    "prefixFurigana": "{彼|かれ}はスピーチの",
+    "targetFurigana": "{最中|さいちゅう}",
+    "suffixFurigana": "に{気|き}を{失|うしな}った。",
+    "sentenceFurigana": "{彼|かれ}はスピーチの{最中|さいちゅう}に{気|き}を{失|うしな}った。"
   },
   {
     "id": "trap-n3-1994007f1d",
@@ -3775,7 +4687,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "材料",
     "suffix": "で作られた家具は、売れ行きがよい。",
     "sentenceJa": "すぐれた材料で作られた家具は、売れ行きがよい。",
-    "sentenceEn": "Furniture made of good materials sells well."
+    "sentenceEn": "Furniture made of good materials sells well.",
+    "prefixFurigana": "すぐれた",
+    "targetFurigana": "{材料|ざいりょう}",
+    "suffixFurigana": "で{作|つく}られた{家具|かぐ}は、{売れ行|うれゆ}きがよい。",
+    "sentenceFurigana": "すぐれた{材料|ざいりょう}で{作|つく}られた{家具|かぐ}は、{売れ行|うれゆ}きがよい。"
   },
   {
     "id": "trap-n3-1fda1b853a",
@@ -3792,7 +4708,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "作曲",
     "suffix": "された。",
     "sentenceJa": "この音楽はバッハによって作曲された。",
-    "sentenceEn": "This music was composed by Bach."
+    "sentenceEn": "This music was composed by Bach.",
+    "prefixFurigana": "この{音楽|おんがく}はバッハによって",
+    "targetFurigana": "{作曲|さっきょく}",
+    "suffixFurigana": "された。",
+    "sentenceFurigana": "この{音楽|おんがく}はバッハによって{作曲|さっきょく}された。"
   },
   {
     "id": "trap-n3-758bbc40fb",
@@ -3808,7 +4728,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "失業",
     "suffix": "はほぼないに等しい。",
     "sentenceJa": "この地域の失業はほぼないに等しい。",
-    "sentenceEn": "Unemployment in this part of the country is virtually nonexistent."
+    "sentenceEn": "Unemployment in this part of the country is virtually nonexistent.",
+    "prefixFurigana": "この{地域|ちいき}の",
+    "targetFurigana": "{失業|しつぎょう}",
+    "suffixFurigana": "はほぼないに{等|ひと}しい。",
+    "sentenceFurigana": "この{地域|ちいき}の{失業|しつぎょう}はほぼないに{等|ひと}しい。"
   },
   {
     "id": "trap-n3-0bd00cd76e",
@@ -3826,7 +4750,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "借金",
     "suffix": "を払うべきだ。",
     "sentenceJa": "君は借金を払うべきだ。",
-    "sentenceEn": "You should pay your debts."
+    "sentenceEn": "You should pay your debts.",
+    "prefixFurigana": "{君|きみ}は",
+    "targetFurigana": "{借金|しゃっきん}",
+    "suffixFurigana": "を{払|はら}うべきだ。",
+    "sentenceFurigana": "{君|きみ}は{借金|しゃっきん}を{払|はら}うべきだ。"
   },
   {
     "id": "trap-n3-2f1fe65bc6",
@@ -3844,7 +4772,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "収穫",
     "suffix": "の手伝いをした。",
     "sentenceJa": "私たちはみな収穫の手伝いをした。",
-    "sentenceEn": "We all helped with the harvest."
+    "sentenceEn": "We all helped with the harvest.",
+    "prefixFurigana": "{私|わたし}たちはみな",
+    "targetFurigana": "{収穫|しゅうかく}",
+    "suffixFurigana": "の{手伝|てつだ}いをした。",
+    "sentenceFurigana": "{私|わたし}たちはみな{収穫|しゅうかく}の{手伝|てつだ}いをした。"
   },
   {
     "id": "trap-n3-86d6931c5b",
@@ -3861,7 +4793,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "週間",
     "suffix": "たったら帰ります。",
     "sentenceJa": "もう２週間たったら帰ります。",
-    "sentenceEn": "I will be back in another two weeks."
+    "sentenceEn": "I will be back in another two weeks.",
+    "prefixFurigana": "もう２",
+    "targetFurigana": "{週間|しゅうかん}",
+    "suffixFurigana": "たったら{帰|かえ}ります。",
+    "sentenceFurigana": "もう２{週間|しゅうかん}たったら{帰|かえ}ります。"
   },
   {
     "id": "trap-n3-8fc09cad9c",
@@ -3880,7 +4816,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "修正",
     "suffix": "した。",
     "sentenceJa": "彼は自説を修正した。",
-    "sentenceEn": "He revised his opinion."
+    "sentenceEn": "He revised his opinion.",
+    "prefixFurigana": "{彼|かれ}は{自説|じせつ}を",
+    "targetFurigana": "{修正|しゅうせい}",
+    "suffixFurigana": "した。",
+    "sentenceFurigana": "{彼|かれ}は{自説|じせつ}を{修正|しゅうせい}した。"
   },
   {
     "id": "trap-n3-8e6b354697",
@@ -3898,7 +4838,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "渋滞",
     "suffix": "で遅れました。",
     "sentenceJa": "渋滞で遅れました。",
-    "sentenceEn": "I was delayed by a traffic jam."
+    "sentenceEn": "I was delayed by a traffic jam.",
+    "prefixFurigana": "",
+    "targetFurigana": "{渋滞|じゅうたい}",
+    "suffixFurigana": "で{遅|おく}れました。",
+    "sentenceFurigana": "{渋滞|じゅうたい}で{遅|おく}れました。"
   },
   {
     "id": "trap-n3-4ac6ac022d",
@@ -3917,7 +4861,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "重大",
     "suffix": "な発見をした。",
     "sentenceJa": "彼は重大な発見をした。",
-    "sentenceEn": "He made an important discovery."
+    "sentenceEn": "He made an important discovery.",
+    "prefixFurigana": "{彼|かれ}は",
+    "targetFurigana": "{重大|じゅうだい}",
+    "suffixFurigana": "な{発見|はっけん}をした。",
+    "sentenceFurigana": "{彼|かれ}は{重大|じゅうだい}な{発見|はっけん}をした。"
   },
   {
     "id": "trap-n3-b1905d8e82",
@@ -3934,7 +4882,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "住宅",
     "suffix": "に住みたい。",
     "sentenceJa": "どちらかといえば木造住宅に住みたい。",
-    "sentenceEn": "I'd rather live in a wooden house."
+    "sentenceEn": "I'd rather live in a wooden house.",
+    "prefixFurigana": "どちらかといえば{木造|もくぞう}",
+    "targetFurigana": "{住宅|じゅうたく}",
+    "suffixFurigana": "に{住|す}みたい。",
+    "sentenceFurigana": "どちらかといえば{木造|もくぞう}{住宅|じゅうたく}に{住|す}みたい。"
   },
   {
     "id": "trap-n3-ff42db8965",
@@ -3951,7 +4903,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "集団",
     "suffix": "の一員だ。",
     "sentenceJa": "君はいまやエリート集団の一員だ。",
-    "sentenceEn": "You are now among the elite."
+    "sentenceEn": "You are now among the elite.",
+    "prefixFurigana": "{君|きみ}はいまやエリート",
+    "targetFurigana": "{集団|しゅうだん}",
+    "suffixFurigana": "の{一員|いちいん}だ。",
+    "sentenceFurigana": "{君|きみ}はいまやエリート{集団|しゅうだん}の{一員|いちいん}だ。"
   },
   {
     "id": "trap-n3-7c391cdd2b",
@@ -3970,7 +4926,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "住民",
     "suffix": "の半数以上はその計画に反対だ。",
     "sentenceJa": "住民の半数以上はその計画に反対だ。",
-    "sentenceEn": "More than half the residents are opposed to the plan."
+    "sentenceEn": "More than half the residents are opposed to the plan.",
+    "prefixFurigana": "",
+    "targetFurigana": "{住民|じゅうみん}",
+    "suffixFurigana": "の{半数|はんすう}{以上|いじょう}はその{計画|けいかく}に{反対|はんたい}だ。",
+    "sentenceFurigana": "{住民|じゅうみん}の{半数|はんすう}{以上|いじょう}はその{計画|けいかく}に{反対|はんたい}だ。"
   },
   {
     "id": "trap-n3-bc3d5a165c",
@@ -3989,7 +4949,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "重要",
     "suffix": "だ。",
     "sentenceJa": "彼女はすぐに出発する事が重要だ。",
-    "sentenceEn": "It is important that she should leave at once."
+    "sentenceEn": "It is important that she should leave at once.",
+    "prefixFurigana": "{彼女|かのじょ}はすぐに{出発|しゅっぱつ}する{事|こと}が",
+    "targetFurigana": "{重要|じゅうよう}",
+    "suffixFurigana": "だ。",
+    "sentenceFurigana": "{彼女|かのじょ}はすぐに{出発|しゅっぱつ}する{事|こと}が{重要|じゅうよう}だ。"
   },
   {
     "id": "trap-n2-05292c6357",
@@ -4005,7 +4969,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "衣食住",
     "suffix": "が必要です。",
     "sentenceJa": "私達が生きていくためには衣食住が必要です。",
-    "sentenceEn": "We need food, clothes and a home in order to live."
+    "sentenceEn": "We need food, clothes and a home in order to live.",
+    "prefixFurigana": "{私|わたし}{達|たち}が{生|い}きていくためには",
+    "targetFurigana": "{衣食住|いしょくじゅう}",
+    "suffixFurigana": "が{必要|ひつよう}です。",
+    "sentenceFurigana": "{私|わたし}{達|たち}が{生|い}きていくためには{衣食住|いしょくじゅう}が{必要|ひつよう}です。"
   },
   {
     "id": "trap-n2-84ce1b3469",
@@ -4021,7 +4989,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "一昨年",
     "suffix": "よりもはるかに暮らし向きがよい。",
     "sentenceJa": "彼女は、一昨年よりもはるかに暮らし向きがよい。",
-    "sentenceEn": "She's far better off than she was the year before last."
+    "sentenceEn": "She's far better off than she was the year before last.",
+    "prefixFurigana": "{彼女|かのじょ}は、",
+    "targetFurigana": "{一昨年|いっさくねん}",
+    "suffixFurigana": "よりもはるかに{暮|く}らし{向|む}きがよい。",
+    "sentenceFurigana": "{彼女|かのじょ}は、{一昨年|いっさくねん}よりもはるかに{暮|く}らし{向|む}きがよい。"
   },
   {
     "id": "trap-n2-2797d01152",
@@ -4037,7 +5009,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "お手伝いさん",
     "suffix": "たちは主人の命令を実行しようと努めた。",
     "sentenceJa": "お手伝いさんたちは主人の命令を実行しようと努めた。",
-    "sentenceEn": "The servants tried to carry out their master's order."
+    "sentenceEn": "The servants tried to carry out their master's order.",
+    "prefixFurigana": "",
+    "targetFurigana": "お{手伝|てつだ}いさん",
+    "suffixFurigana": "たちは{主人|しゅじん}の{命令|めいれい}を{実行|じっこう}しようと{努|つと}めた。",
+    "sentenceFurigana": "お{手伝|てつだ}いさんたちは{主人|しゅじん}の{命令|めいれい}を{実行|じっこう}しようと{努|つと}めた。"
   },
   {
     "id": "trap-n2-834b59c61e",
@@ -4053,7 +5029,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "女の人",
     "suffix": "が１人入っていきましたよ。",
     "sentenceJa": "今、女の人が１人入っていきましたよ。",
-    "sentenceEn": "A woman is going into it now."
+    "sentenceEn": "A woman is going into it now.",
+    "prefixFurigana": "{今|いま}、",
+    "targetFurigana": "{女の人|おんなのひと}",
+    "suffixFurigana": "が１{人|にん}{入|はい}っていきましたよ。",
+    "sentenceFurigana": "{今|いま}、{女の人|おんなのひと}が１{人|にん}{入|はい}っていきましたよ。"
   },
   {
     "id": "trap-n2-aacfb8a265",
@@ -4070,7 +5050,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "海水浴",
     "suffix": "が楽しめる。",
     "sentenceJa": "ハワイでは１年中海水浴が楽しめる。",
-    "sentenceEn": "In Hawaii, we can enjoy swimming in the ocean all year round."
+    "sentenceEn": "In Hawaii, we can enjoy swimming in the ocean all year round.",
+    "prefixFurigana": "ハワイでは１{年|ねん}{中|ちゅう}",
+    "targetFurigana": "{海水浴|かいすいよく}",
+    "suffixFurigana": "が{楽|たの}しめる。",
+    "sentenceFurigana": "ハワイでは１{年|ねん}{中|ちゅう}{海水浴|かいすいよく}が{楽|たの}しめる。"
   },
   {
     "id": "trap-n2-c7d511e624",
@@ -4086,7 +5070,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "回数券",
     "suffix": "を下さい。",
     "sentenceJa": "回数券を下さい。",
-    "sentenceEn": "May I have coupon tickets?"
+    "sentenceEn": "May I have coupon tickets?",
+    "prefixFurigana": "",
+    "targetFurigana": "{回数券|かいすうけん}",
+    "suffixFurigana": "を{下|くだ}さい。",
+    "sentenceFurigana": "{回数券|かいすうけん}を{下|くだ}さい。"
   },
   {
     "id": "trap-n2-95304f709a",
@@ -4105,7 +5093,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "休業",
     "suffix": "いたします。",
     "sentenceJa": "移転にともない５月３０日、３１日は休業いたします。",
-    "sentenceEn": "Due to our office moving, we will be closed from May 30 to 31."
+    "sentenceEn": "Due to our office moving, we will be closed from May 30 to 31.",
+    "prefixFurigana": "{移転|いてん}にともない{５月|ごがつ}３０{日|にち}、３１{日|にち}は",
+    "targetFurigana": "{休業|きゅうぎょう}",
+    "suffixFurigana": "いたします。",
+    "sentenceFurigana": "{移転|いてん}にともない{５月|ごがつ}３０{日|にち}、３１{日|にち}は{休業|きゅうぎょう}いたします。"
   },
   {
     "id": "trap-n2-e1a415a754",
@@ -4123,7 +5115,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "恐縮",
     "suffix": "ですがお手伝い願えませんか。",
     "sentenceJa": "恐縮ですがお手伝い願えませんか。",
-    "sentenceEn": "May I make so bold as to request your assistance?"
+    "sentenceEn": "May I make so bold as to request your assistance?",
+    "prefixFurigana": "",
+    "targetFurigana": "{恐縮|きょうしゅく}",
+    "suffixFurigana": "ですがお{手伝|てつだ}い{願|ねが}えませんか。",
+    "sentenceFurigana": "{恐縮|きょうしゅく}ですがお{手伝|てつだ}い{願|ねが}えませんか。"
   },
   {
     "id": "trap-n2-f7b99bf02c",
@@ -4140,7 +5136,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "蛍光灯",
     "suffix": "だね。",
     "sentenceJa": "ハリーは本当に蛍光灯だね。",
-    "sentenceEn": "Harry's really slow to catch on."
+    "sentenceEn": "Harry's really slow to catch on.",
+    "prefixFurigana": "ハリーは{本当|ほんとう}に",
+    "targetFurigana": "{蛍光灯|けいこうとう}",
+    "suffixFurigana": "だね。",
+    "sentenceFurigana": "ハリーは{本当|ほんとう}に{蛍光灯|けいこうとう}だね。"
   },
   {
     "id": "trap-n2-13e82ca9dc",
@@ -4157,7 +5157,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "形容動詞",
     "suffix": "」という表現の使い方を学びました。",
     "sentenceJa": "今日の授業で「形容動詞」という表現の使い方を学びました。",
-    "sentenceEn": "In today’s class, I learned how to use the term “adjectival verb.”"
+    "sentenceEn": "In today’s class, I learned how to use the term “adjectival verb.”",
+    "prefixFurigana": "{今日|きょう}の{授業|じゅぎょう}で「",
+    "targetFurigana": "{形容動詞|けいようどうし}",
+    "suffixFurigana": "」という{表現|ひょうげん}の{使い方|つかいかた}を{学|まな}びました。",
+    "sentenceFurigana": "{今日|きょう}の{授業|じゅぎょう}で「{形容動詞|けいようどうし}」という{表現|ひょうげん}の{使い方|つかいかた}を{学|まな}びました。"
   },
   {
     "id": "trap-n2-3a94a8d62a",
@@ -4173,7 +5177,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "顕微鏡",
     "suffix": "の焦点を合わせなさい。",
     "sentenceJa": "顕微鏡の焦点を合わせなさい。",
-    "sentenceEn": "Adjust the microscope's focus."
+    "sentenceEn": "Adjust the microscope's focus.",
+    "prefixFurigana": "",
+    "targetFurigana": "{顕微鏡|けんびきょう}",
+    "suffixFurigana": "の{焦点|しょうてん}を{合|あ}わせなさい。",
+    "sentenceFurigana": "{顕微鏡|けんびきょう}の{焦点|しょうてん}を{合|あ}わせなさい。"
   },
   {
     "id": "trap-n2-ea79d21fe4",
@@ -4189,7 +5197,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "交通機関",
     "suffix": "は何を使うんですか。",
     "sentenceJa": "交通機関は何を使うんですか。",
-    "sentenceEn": "What form of transport will we take?"
+    "sentenceEn": "What form of transport will we take?",
+    "prefixFurigana": "",
+    "targetFurigana": "{交通機関|こうつうきかん}",
+    "suffixFurigana": "は{何|なに}を{使|つか}うんですか。",
+    "sentenceFurigana": "{交通機関|こうつうきかん}は{何|なに}を{使|つか}うんですか。"
   },
   {
     "id": "trap-n2-6a1dd228d7",
@@ -4206,7 +5218,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "心当たり",
     "suffix": "ある？",
     "sentenceJa": "その名前に心当たりある？",
-    "sentenceEn": "Does that name ring a bell?"
+    "sentenceEn": "Does that name ring a bell?",
+    "prefixFurigana": "その{名前|なまえ}に",
+    "targetFurigana": "{心当|こころあ}たり",
+    "suffixFurigana": "ある？",
+    "sentenceFurigana": "その{名前|なまえ}に{心当|こころあ}たりある？"
   },
   {
     "id": "trap-n2-36794aa72e",
@@ -4222,7 +5238,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "五十音",
     "suffix": "順です。",
     "sentenceJa": "氏名は五十音順です。",
-    "sentenceEn": "The names are in Japanese alphabetical order."
+    "sentenceEn": "The names are in Japanese alphabetical order.",
+    "prefixFurigana": "{氏名|しめい}は",
+    "targetFurigana": "{五十音|ごじゅうおん}",
+    "suffixFurigana": "{順|じゅん}です。",
+    "sentenceFurigana": "{氏名|しめい}は{五十音|ごじゅうおん}{順|じゅん}です。"
   },
   {
     "id": "trap-n2-941786efa7",
@@ -4240,7 +5260,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "言葉遣い",
     "suffix": "にはいつも気をつけるべきです。",
     "sentenceJa": "言葉遣いにはいつも気をつけるべきです。",
-    "sentenceEn": "You should always be careful in your speech."
+    "sentenceEn": "You should always be careful in your speech.",
+    "prefixFurigana": "",
+    "targetFurigana": "{言葉遣|ことばづか}い",
+    "suffixFurigana": "にはいつも{気|き}をつけるべきです。",
+    "sentenceFurigana": "{言葉遣|ことばづか}いにはいつも{気|き}をつけるべきです。"
   },
   {
     "id": "trap-n2-855762ebcc",
@@ -4256,7 +5280,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "四捨五入",
     "suffix": "すれば何になりますか。",
     "sentenceJa": "５８１４を千の位に四捨五入すれば何になりますか。",
-    "sentenceEn": "What is 5814 rounded to the nearest thousand?"
+    "sentenceEn": "What is 5814 rounded to the nearest thousand?",
+    "prefixFurigana": "５８１４を{千|せん}の{位|くらい}に",
+    "targetFurigana": "{四捨五入|ししゃごにゅう}",
+    "suffixFurigana": "すれば{何|なに}になりますか。",
+    "sentenceFurigana": "５８１４を{千|せん}の{位|くらい}に{四捨五入|ししゃごにゅう}すれば{何|なに}になりますか。"
   },
   {
     "id": "trap-n2-1e621f5ba1",
@@ -4272,7 +5300,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "自然科学",
     "suffix": "と社会科学から成り立っている。",
     "sentenceJa": "その大学の課程は自然科学と社会科学から成り立っている。",
-    "sentenceEn": "That university's curriculum covers natural science and social science."
+    "sentenceEn": "That university's curriculum covers natural science and social science.",
+    "prefixFurigana": "その{大学|だいがく}の{課程|かてい}は",
+    "targetFurigana": "{自然科学|しぜんかがく}",
+    "suffixFurigana": "と{社会|しゃかい}{科学|かがく}から{成り立|なりた}っている。",
+    "sentenceFurigana": "その{大学|だいがく}の{課程|かてい}は{自然科学|しぜんかがく}と{社会|しゃかい}{科学|かがく}から{成り立|なりた}っている。"
   },
   {
     "id": "trap-n2-f17646bffa",
@@ -4288,7 +5320,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "社会科学",
     "suffix": "から成り立っている。",
     "sentenceJa": "その大学の課程は自然科学と社会科学から成り立っている。",
-    "sentenceEn": "That university's curriculum covers natural science and social science."
+    "sentenceEn": "That university's curriculum covers natural science and social science.",
+    "prefixFurigana": "その{大学|だいがく}の{課程|かてい}は{自然|しぜん}{科学|かがく}と",
+    "targetFurigana": "{社会科学|しゃかいかがく}",
+    "suffixFurigana": "から{成り立|なりた}っている。",
+    "sentenceFurigana": "その{大学|だいがく}の{課程|かてい}は{自然|しぜん}{科学|かがく}と{社会科学|しゃかいかがく}から{成り立|なりた}っている。"
   },
   {
     "id": "trap-n2-780f916fa8",
@@ -4306,7 +5342,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "終了",
     "suffix": "いたしました。",
     "sentenceJa": "会議はもう終了いたしました。",
-    "sentenceEn": "The conference is already over, sir."
+    "sentenceEn": "The conference is already over, sir.",
+    "prefixFurigana": "{会議|かいぎ}はもう",
+    "targetFurigana": "{終了|しゅうりょう}",
+    "suffixFurigana": "いたしました。",
+    "sentenceFurigana": "{会議|かいぎ}はもう{終了|しゅうりょう}いたしました。"
   },
   {
     "id": "trap-n2-4c7d50b5bb",
@@ -4323,7 +5363,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "重量",
     "suffix": "も重いとは限らない。",
     "sentenceJa": "体積が大きいからといって常に重量も重いとは限らない。",
-    "sentenceEn": "Great bulk does not always mean great weight."
+    "sentenceEn": "Great bulk does not always mean great weight.",
+    "prefixFurigana": "{体積|たいせき}が{大|おお}きいからといって{常|つね}に",
+    "targetFurigana": "{重量|じゅうりょう}",
+    "suffixFurigana": "も{重|おも}いとは{限|かぎ}らない。",
+    "sentenceFurigana": "{体積|たいせき}が{大|おお}きいからといって{常|つね}に{重量|じゅうりょう}も{重|おも}いとは{限|かぎ}らない。"
   },
   {
     "id": "trap-n2-149aa63e77",
@@ -4339,7 +5383,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "重力",
     "suffix": "は地球の６分の１である。",
     "sentenceJa": "月の重力は地球の６分の１である。",
-    "sentenceEn": "The gravity of the moon is one-sixth of that of the earth."
+    "sentenceEn": "The gravity of the moon is one-sixth of that of the earth.",
+    "prefixFurigana": "{月|つき}の",
+    "targetFurigana": "{重力|じゅうりょく}",
+    "suffixFurigana": "は{地球|ちきゅう}の６{分|ぶん}の１である。",
+    "sentenceFurigana": "{月|つき}の{重力|じゅうりょく}は{地球|ちきゅう}の６{分|ぶん}の１である。"
   },
   {
     "id": "trap-n2-dbb718ab22",
@@ -4356,7 +5404,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "縮小",
     "suffix": "コピーを撮ってくるよ。",
     "sentenceJa": "縮小コピーを撮ってくるよ。",
-    "sentenceEn": "I'm going to make reduced copies."
+    "sentenceEn": "I'm going to make reduced copies.",
+    "prefixFurigana": "",
+    "targetFurigana": "{縮小|しゅくしょう}",
+    "suffixFurigana": "コピーを{撮|と}ってくるよ。",
+    "sentenceFurigana": "{縮小|しゅくしょう}コピーを{撮|と}ってくるよ。"
   },
   {
     "id": "trap-n2-aac5075190",
@@ -4373,7 +5425,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "出張",
     "suffix": "をキャンセルしようかな。",
     "sentenceJa": "ロス出張をキャンセルしようかな。",
-    "sentenceEn": "I should cancel my L.A. trip."
+    "sentenceEn": "I should cancel my L.A. trip.",
+    "prefixFurigana": "ロス",
+    "targetFurigana": "{出張|しゅっちょう}",
+    "suffixFurigana": "をキャンセルしようかな。",
+    "sentenceFurigana": "ロス{出張|しゅっちょう}をキャンセルしようかな。"
   },
   {
     "id": "trap-n2-fe1995963c",
@@ -4391,7 +5447,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "純情",
     "suffix": "だね。",
     "sentenceJa": "君って、意外に純情だね。",
-    "sentenceEn": "I'm surprised that you're so naïve."
+    "sentenceEn": "I'm surprised that you're so naïve.",
+    "prefixFurigana": "{君|きみ}って、{意外|いがい}に",
+    "targetFurigana": "{純情|じゅんじょう}",
+    "suffixFurigana": "だね。",
+    "sentenceFurigana": "{君|きみ}って、{意外|いがい}に{純情|じゅんじょう}だね。"
   },
   {
     "id": "trap-n2-56af2956cf",
@@ -4407,7 +5467,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "小学生",
     "suffix": "でした。",
     "sentenceJa": "彼らはそのころ小学生でした。",
-    "sentenceEn": "They were school children then."
+    "sentenceEn": "They were school children then.",
+    "prefixFurigana": "{彼|かれ}らはそのころ",
+    "targetFurigana": "{小学生|しょうがくせい}",
+    "suffixFurigana": "でした。",
+    "sentenceFurigana": "{彼|かれ}らはそのころ{小学生|しょうがくせい}でした。"
   },
   {
     "id": "trap-n2-3b1ff7f0c5",
@@ -4425,7 +5489,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "上級",
     "suffix": "者にも役に立つ。",
     "sentenceJa": "この辞書は初級者に、いやそれどころか上級者にも役に立つ。",
-    "sentenceEn": "This dictionary is useful to beginners, yes, and to advanced learners."
+    "sentenceEn": "This dictionary is useful to beginners, yes, and to advanced learners.",
+    "prefixFurigana": "この{辞書|じしょ}は{初級|しょきゅう}{者|しゃ}に、いやそれどころか",
+    "targetFurigana": "{上級|じょうきゅう}",
+    "suffixFurigana": "{者|もの}にも{役に立|やくにた}つ。",
+    "sentenceFurigana": "この{辞書|じしょ}は{初級|しょきゅう}{者|しゃ}に、いやそれどころか{上級|じょうきゅう}{者|もの}にも{役に立|やくにた}つ。"
   },
   {
     "id": "trap-n2-6f30a26ebe",
@@ -4443,7 +5511,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "商業",
     "suffix": "において役に立つ。",
     "sentenceJa": "英語は商業において役に立つ。",
-    "sentenceEn": "English is useful in commerce."
+    "sentenceEn": "English is useful in commerce.",
+    "prefixFurigana": "{英語|えいご}は",
+    "targetFurigana": "{商業|しょうぎょう}",
+    "suffixFurigana": "において{役に立|やくにた}つ。",
+    "sentenceFurigana": "{英語|えいご}は{商業|しょうぎょう}において{役に立|やくにた}つ。"
   },
   {
     "id": "trap-n2-dc1d497810",
@@ -4459,7 +5531,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "消極的",
     "suffix": "だ。",
     "sentenceJa": "警察が医療事故の立件に消極的だ。",
-    "sentenceEn": "The police are reluctant to pursue criminal charges in medical cases."
+    "sentenceEn": "The police are reluctant to pursue criminal charges in medical cases.",
+    "prefixFurigana": "{警察|けいさつ}が{医療|いりょう}{事故|じこ}の{立件|りっけん}に",
+    "targetFurigana": "{消極的|しょうきょくてき}",
+    "suffixFurigana": "だ。",
+    "sentenceFurigana": "{警察|けいさつ}が{医療|いりょう}{事故|じこ}の{立件|りっけん}に{消極的|しょうきょくてき}だ。"
   },
   {
     "id": "trap-n2-d52725aae3",
@@ -4475,7 +5551,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "上旬",
     "suffix": "は、海に行くのは早いかな？",
     "sentenceJa": "７月の上旬は、海に行くのは早いかな？",
-    "sentenceEn": "I wonder if the first week or so of July is too early to go to the beach."
+    "sentenceEn": "I wonder if the first week or so of July is too early to go to the beach.",
+    "prefixFurigana": "{７月|しちがつ}の",
+    "targetFurigana": "{上旬|じょうじゅん}",
+    "suffixFurigana": "は、{海|うみ}に{行|い}くのは{早|はや}いかな？",
+    "sentenceFurigana": "{７月|しちがつ}の{上旬|じょうじゅん}は、{海|うみ}に{行|い}くのは{早|はや}いかな？"
   },
   {
     "id": "trap-n2-2b906344b9",
@@ -4491,7 +5571,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "消防署",
     "suffix": "に連絡してください。",
     "sentenceJa": "消防署に連絡してください。",
-    "sentenceEn": "Please call the fire department."
+    "sentenceEn": "Please call the fire department.",
+    "prefixFurigana": "",
+    "targetFurigana": "{消防署|しょうぼうしょ}",
+    "suffixFurigana": "に{連絡|れんらく}してください。",
+    "sentenceFurigana": "{消防署|しょうぼうしょ}に{連絡|れんらく}してください。"
   },
   {
     "id": "trap-n2-43a186d0ec",
@@ -4509,7 +5593,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "省略",
     "suffix": "できる。",
     "sentenceJa": "この句では前置詞を省略できる。",
-    "sentenceEn": "You can omit the preposition in this phrase."
+    "sentenceEn": "You can omit the preposition in this phrase.",
+    "prefixFurigana": "この{句|く}では{前置詞|ぜんちし}を",
+    "targetFurigana": "{省略|しょうりゃく}",
+    "suffixFurigana": "できる。",
+    "sentenceFurigana": "この{句|く}では{前置詞|ぜんちし}を{省略|しょうりゃく}できる。"
   },
   {
     "id": "trap-n2-93d1d2e9ef",
@@ -4525,7 +5613,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "助教授",
     "suffix": "です。",
     "sentenceJa": "私は教授です、いやもっと正確に言えば、助教授です。",
-    "sentenceEn": "I'm a professor, or rather an associate professor, to be exact."
+    "sentenceEn": "I'm a professor, or rather an associate professor, to be exact.",
+    "prefixFurigana": "{私|わたし}は{教授|きょうじゅ}です、いやもっと{正確|せいかく}に{言|い}えば、",
+    "targetFurigana": "{助教授|じょきょうじゅ}",
+    "suffixFurigana": "です。",
+    "sentenceFurigana": "{私|わたし}は{教授|きょうじゅ}です、いやもっと{正確|せいかく}に{言|い}えば、{助教授|じょきょうじゅ}です。"
   },
   {
     "id": "trap-n2-817a8e8089",
@@ -4542,7 +5634,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "新幹線",
     "suffix": "の速いこと！",
     "sentenceJa": "新しい新幹線の速いこと！",
-    "sentenceEn": "How fast the new Shinkansen goes!"
+    "sentenceEn": "How fast the new Shinkansen goes!",
+    "prefixFurigana": "{新|あたら}しい",
+    "targetFurigana": "{新幹線|しんかんせん}",
+    "suffixFurigana": "の{速|はや}いこと！",
+    "sentenceFurigana": "{新|あたら}しい{新幹線|しんかんせん}の{速|はや}いこと！"
   },
   {
     "id": "trap-n2-ef02a97b60",
@@ -4559,7 +5655,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "人文科学",
     "suffix": "の一部門である。",
     "sentenceJa": "歴史学は人文科学の一部門である。",
-    "sentenceEn": "History is a branch of the humanities."
+    "sentenceEn": "History is a branch of the humanities.",
+    "prefixFurigana": "{歴史|れきし}{学|がく}は",
+    "targetFurigana": "{人文科学|じんぶんかがく}",
+    "suffixFurigana": "の{一|いち}{部門|ぶもん}である。",
+    "sentenceFurigana": "{歴史|れきし}{学|がく}は{人文科学|じんぶんかがく}の{一|いち}{部門|ぶもん}である。"
   },
   {
     "id": "trap-n2-e5bc9f56c0",
@@ -4576,7 +5676,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "水蒸気",
     "suffix": "に変える。",
     "sentenceJa": "熱は水を水蒸気に変える。",
-    "sentenceEn": "Heat turns water into steam."
+    "sentenceEn": "Heat turns water into steam.",
+    "prefixFurigana": "{熱|ねつ}は{水|みず}を",
+    "targetFurigana": "{水蒸気|すいじょうき}",
+    "suffixFurigana": "に{変|か}える。",
+    "sentenceFurigana": "{熱|ねつ}は{水|みず}を{水蒸気|すいじょうき}に{変|か}える。"
   },
   {
     "id": "trap-n2-9a583397de",
@@ -4592,7 +5696,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "水平線",
     "suffix": "の下に沈んだ。",
     "sentenceJa": "太陽が水平線の下に沈んだ。",
-    "sentenceEn": "The sun sank below the horizon."
+    "sentenceEn": "The sun sank below the horizon.",
+    "prefixFurigana": "{太陽|たいよう}が",
+    "targetFurigana": "{水平線|すいへいせん}",
+    "suffixFurigana": "の{下|した}に{沈|しず}んだ。",
+    "sentenceFurigana": "{太陽|たいよう}が{水平線|すいへいせん}の{下|した}に{沈|しず}んだ。"
   },
   {
     "id": "trap-n2-f3b92fda4b",
@@ -4609,7 +5717,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "青少年",
     "suffix": "の心理がわからない。",
     "sentenceJa": "私には青少年の心理がわからない。",
-    "sentenceEn": "I can not understand the psychology of adolescents."
+    "sentenceEn": "I can not understand the psychology of adolescents.",
+    "prefixFurigana": "{私|わたし}には",
+    "targetFurigana": "{青少年|せいしょうねん}",
+    "suffixFurigana": "の{心理|しんり}がわからない。",
+    "sentenceFurigana": "{私|わたし}には{青少年|せいしょうねん}の{心理|しんり}がわからない。"
   },
   {
     "id": "trap-n2-55527ab494",
@@ -4625,7 +5737,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "生年月日",
     "suffix": "は１９６０年２月１４日です。",
     "sentenceJa": "生年月日は１９６０年２月１４日です。",
-    "sentenceEn": "I was born on February 14, 1960."
+    "sentenceEn": "I was born on February 14, 1960.",
+    "prefixFurigana": "",
+    "targetFurigana": "{生年月日|せいねんがっぴ}",
+    "suffixFurigana": "は１９６０{年|ねん}{２月|にがつ}１４{日|にち}です。",
+    "sentenceFurigana": "{生年月日|せいねんがっぴ}は１９６０{年|ねん}{２月|にがつ}１４{日|にち}です。"
   },
   {
     "id": "trap-n2-56ed867118",
@@ -4641,7 +5757,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "正方形",
     "suffix": "は４つの同じ長さの辺をもつ。",
     "sentenceJa": "正方形は４つの同じ長さの辺をもつ。",
-    "sentenceEn": "A square has four equal sides."
+    "sentenceEn": "A square has four equal sides.",
+    "prefixFurigana": "",
+    "targetFurigana": "{正方形|せいほうけい}",
+    "suffixFurigana": "は４つの{同|おな}じ{長|なが}さの{辺|あたり}をもつ。",
+    "sentenceFurigana": "{正方形|せいほうけい}は４つの{同|おな}じ{長|なが}さの{辺|あたり}をもつ。"
   },
   {
     "id": "trap-n2-593c30194c",
@@ -4657,7 +5777,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "先々月",
     "suffix": "作業を進めたので、時間通りに終わりました。",
     "sentenceJa": "先々月作業を進めたので、時間通りに終わりました。",
-    "sentenceEn": "Since I made progress on the work the month before last, I was able to finish on time."
+    "sentenceEn": "Since I made progress on the work the month before last, I was able to finish on time.",
+    "prefixFurigana": "",
+    "targetFurigana": "{先々月|せんせんげつ}",
+    "suffixFurigana": "{作業|さぎょう}を{進|すす}めたので、{時間|じかん}{通|どお}りに{終|お}わりました。",
+    "sentenceFurigana": "{先々月|せんせんげつ}{作業|さぎょう}を{進|すす}めたので、{時間|じかん}{通|どお}りに{終|お}わりました。"
   },
   {
     "id": "trap-n2-f84b3f5e35",
@@ -4673,7 +5797,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "先々週",
     "suffix": "作業を進めたので、時間通りに終わりました。",
     "sentenceJa": "先々週作業を進めたので、時間通りに終わりました。",
-    "sentenceEn": "Since I made progress on the work the week before last, I was able to finish on time."
+    "sentenceEn": "Since I made progress on the work the week before last, I was able to finish on time.",
+    "prefixFurigana": "",
+    "targetFurigana": "{先々週|せんせんしゅう}",
+    "suffixFurigana": "{作業|さぎょう}を{進|すす}めたので、{時間|じかん}{通|どお}りに{終|お}わりました。",
+    "sentenceFurigana": "{先々週|せんせんしゅう}{作業|さぎょう}を{進|すす}めたので、{時間|じかん}{通|どお}りに{終|お}わりました。"
   },
   {
     "id": "trap-n2-b65f34f69e",
@@ -4689,7 +5817,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "総理大臣",
     "suffix": "が辞任した。",
     "sentenceJa": "総理大臣が辞任した。",
-    "sentenceEn": "The Prime Minister has resigned."
+    "sentenceEn": "The Prime Minister has resigned.",
+    "prefixFurigana": "",
+    "targetFurigana": "{総理大臣|そうりだいじん}",
+    "suffixFurigana": "が{辞任|じにん}した。",
+    "sentenceFurigana": "{総理大臣|そうりだいじん}が{辞任|じにん}した。"
   },
   {
     "id": "trap-n2-1d147ab185",
@@ -4705,7 +5837,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "大学院",
     "suffix": "に進学するつもりです。",
     "sentenceJa": "大学院に進学するつもりです。",
-    "sentenceEn": "I'm planning to go to graduate school."
+    "sentenceEn": "I'm planning to go to graduate school.",
+    "prefixFurigana": "",
+    "targetFurigana": "{大学院|だいがくいん}",
+    "suffixFurigana": "に{進学|しんがく}するつもりです。",
+    "sentenceFurigana": "{大学院|だいがくいん}に{進学|しんがく}するつもりです。"
   },
   {
     "id": "trap-n2-5d1e8c2428",
@@ -4722,7 +5858,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "力強い",
     "suffix": "。",
     "sentenceJa": "なるほどこの車は小さいが力強い。",
-    "sentenceEn": "Indeed this car is small, but it is powerful."
+    "sentenceEn": "Indeed this car is small, but it is powerful.",
+    "prefixFurigana": "なるほどこの{車|くるま}は{小|ちい}さいが",
+    "targetFurigana": "{力強|ちからづよ}い",
+    "suffixFurigana": "。",
+    "sentenceFurigana": "なるほどこの{車|くるま}は{小|ちい}さいが{力強|ちからづよ}い。"
   },
   {
     "id": "trap-n2-68ea97a684",
@@ -4738,7 +5878,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "中旬",
     "suffix": "頃です。",
     "sentenceJa": "予定日は１月の中旬頃です。",
-    "sentenceEn": "I'm expecting my baby in the middle of January."
+    "sentenceEn": "I'm expecting my baby in the middle of January.",
+    "prefixFurigana": "{予定|よてい}{日|び}は{１月|いちがつ}の",
+    "targetFurigana": "{中旬|ちゅうじゅん}",
+    "suffixFurigana": "{頃|ごろ}です。",
+    "sentenceFurigana": "{予定|よてい}{日|び}は{１月|いちがつ}の{中旬|ちゅうじゅん}{頃|ごろ}です。"
   },
   {
     "id": "trap-n2-e74bba8aa5",
@@ -4754,7 +5898,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "抽象",
     "suffix": "ために、事前の準備を行いました。",
     "sentenceJa": "計画をスムーズに抽象ために、事前の準備を行いました。",
-    "sentenceEn": "We made preparations in advance to ensure the plan went smoothly."
+    "sentenceEn": "We made preparations in advance to ensure the plan went smoothly.",
+    "prefixFurigana": "{計画|けいかく}をスムーズに",
+    "targetFurigana": "{抽象|ちゅうしょう}",
+    "suffixFurigana": "ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+    "sentenceFurigana": "{計画|けいかく}をスムーズに{抽象|ちゅうしょう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。"
   },
   {
     "id": "trap-n2-955d4daa75",
@@ -4771,7 +5919,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "長方形",
     "suffix": "の対辺は平行である。",
     "sentenceJa": "長方形の対辺は平行である。",
-    "sentenceEn": "The opposite sides of a rectangle are parallel."
+    "sentenceEn": "The opposite sides of a rectangle are parallel.",
+    "prefixFurigana": "",
+    "targetFurigana": "{長方形|ちょうほうけい}",
+    "suffixFurigana": "の{対辺|たいへん}は{平行|へいこう}である。",
+    "sentenceFurigana": "{長方形|ちょうほうけい}の{対辺|たいへん}は{平行|へいこう}である。"
   },
   {
     "id": "trap-n2-e96e1a98b6",
@@ -4788,7 +5940,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "調味料",
     "suffix": "よりうまいと言いきれる。",
     "sentenceJa": "市販の調味料よりうまいと言いきれる。",
-    "sentenceEn": "I can definitively say that this seasoning tastes better than anything you could buy in a store."
+    "sentenceEn": "I can definitively say that this seasoning tastes better than anything you could buy in a store.",
+    "prefixFurigana": "{市販|しはん}の",
+    "targetFurigana": "{調味料|ちょうみりょう}",
+    "suffixFurigana": "よりうまいと{言|い}いきれる。",
+    "sentenceFurigana": "{市販|しはん}の{調味料|ちょうみりょう}よりうまいと{言|い}いきれる。"
   },
   {
     "id": "trap-n2-b27701113c",
@@ -4804,7 +5960,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "直流",
     "suffix": "」という表現の使い方を学びました。",
     "sentenceJa": "今日の授業で「直流」という表現の使い方を学びました。",
-    "sentenceEn": "In today’s class, I learned how to use the term “direct current.”"
+    "sentenceEn": "In today’s class, I learned how to use the term “direct current.”",
+    "prefixFurigana": "{今日|きょう}の{授業|じゅぎょう}で「",
+    "targetFurigana": "{直流|ちょくりゅう}",
+    "suffixFurigana": "」という{表現|ひょうげん}の{使い方|つかいかた}を{学|まな}びました。",
+    "sentenceFurigana": "{今日|きょう}の{授業|じゅぎょう}で「{直流|ちょくりゅう}」という{表現|ひょうげん}の{使い方|つかいかた}を{学|まな}びました。"
   },
   {
     "id": "trap-n2-976f457eb1",
@@ -4820,7 +5980,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "定休日",
     "suffix": "。",
     "sentenceJa": "本日定休日。",
-    "sentenceEn": "Today is our regular closing day."
+    "sentenceEn": "Today is our regular closing day.",
+    "prefixFurigana": "{本日|ほんじつ}",
+    "targetFurigana": "{定休日|ていきゅうび}",
+    "suffixFurigana": "。",
+    "sentenceFurigana": "{本日|ほんじつ}{定休日|ていきゅうび}。"
   },
   {
     "id": "trap-n2-fe5131f1d5",
@@ -4836,7 +6000,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "日用品",
     "suffix": "は間に合います。",
     "sentenceJa": "あのスーパーに行けば、たいていの日用品は間に合います。",
-    "sentenceEn": "If you go to that supermarket, you can buy most things you use in your daily life."
+    "sentenceEn": "If you go to that supermarket, you can buy most things you use in your daily life.",
+    "prefixFurigana": "あのスーパーに{行|い}けば、たいていの",
+    "targetFurigana": "{日用品|にちようひん}",
+    "suffixFurigana": "は{間に合|まにあ}います。",
+    "sentenceFurigana": "あのスーパーに{行|い}けば、たいていの{日用品|にちようひん}は{間に合|まにあ}います。"
   },
   {
     "id": "trap-n2-c11c243ec5",
@@ -4852,7 +6020,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "農産物",
     "suffix": "は米である。",
     "sentenceJa": "わが国の主な農産物は米である。",
-    "sentenceEn": "The chief crop of our country is rice."
+    "sentenceEn": "The chief crop of our country is rice.",
+    "prefixFurigana": "わが{国|くに}の{主|おも}な",
+    "targetFurigana": "{農産物|のうさんぶつ}",
+    "suffixFurigana": "は{米|こめ}である。",
+    "sentenceFurigana": "わが{国|くに}の{主|おも}な{農産物|のうさんぶつ}は{米|こめ}である。"
   },
   {
     "id": "trap-n2-4c123afdff",
@@ -4871,7 +6043,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "必需品",
     "suffix": "でした。",
     "sentenceJa": "カメラは私の必需品でした。",
-    "sentenceEn": "The camera was essential for me."
+    "sentenceEn": "The camera was essential for me.",
+    "prefixFurigana": "カメラは{私|わたし}の",
+    "targetFurigana": "{必需品|ひつじゅひん}",
+    "suffixFurigana": "でした。",
+    "sentenceFurigana": "カメラは{私|わたし}の{必需品|ひつじゅひん}でした。"
   },
   {
     "id": "trap-n2-2c558a8cbb",
@@ -4887,7 +6063,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "人差し指",
     "suffix": "をやけどした。",
     "sentenceJa": "火ばさみで人差し指をやけどした。",
-    "sentenceEn": "I burned my forefinger on fire tongs."
+    "sentenceEn": "I burned my forefinger on fire tongs.",
+    "prefixFurigana": "{火|ひ}ばさみで",
+    "targetFurigana": "{人差し指|ひとさしゆび}",
+    "suffixFurigana": "をやけどした。",
+    "sentenceFurigana": "{火|ひ}ばさみで{人差し指|ひとさしゆび}をやけどした。"
   },
   {
     "id": "trap-n2-cc9839ab1b",
@@ -4904,7 +6084,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "標準",
     "suffix": "英語を勉強したい。",
     "sentenceJa": "私は標準英語を勉強したい。",
-    "sentenceEn": "I want to learn standard English."
+    "sentenceEn": "I want to learn standard English.",
+    "prefixFurigana": "{私|わたし}は",
+    "targetFurigana": "{標準|ひょうじゅん}",
+    "suffixFurigana": "{英語|えいご}を{勉強|べんきょう}したい。",
+    "sentenceFurigana": "{私|わたし}は{標準|ひょうじゅん}{英語|えいご}を{勉強|べんきょう}したい。"
   },
   {
     "id": "trap-n2-e119a69b33",
@@ -4920,7 +6104,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "望遠鏡",
     "suffix": "に目を当てた。",
     "sentenceJa": "彼は望遠鏡に目を当てた。",
-    "sentenceEn": "He put his eye to a telescope."
+    "sentenceEn": "He put his eye to a telescope.",
+    "prefixFurigana": "{彼|かれ}は",
+    "targetFurigana": "{望遠鏡|ぼうえんきょう}",
+    "suffixFurigana": "に{目|め}を{当|あ}てた。",
+    "sentenceFurigana": "{彼|かれ}は{望遠鏡|ぼうえんきょう}に{目|め}を{当|あ}てた。"
   },
   {
     "id": "trap-n2-f48b6d18cb",
@@ -4936,7 +6124,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "方程式",
     "suffix": "の解を求めよ。",
     "sentenceJa": "以下の方程式の解を求めよ。",
-    "sentenceEn": "Find the solution to the following equation."
+    "sentenceEn": "Find the solution to the following equation.",
+    "prefixFurigana": "{以下|いか}の",
+    "targetFurigana": "{方程式|ほうていしき}",
+    "suffixFurigana": "の{解|かい}を{求|もと}めよ。",
+    "sentenceFurigana": "{以下|いか}の{方程式|ほうていしき}の{解|かい}を{求|もと}めよ。"
   },
   {
     "id": "trap-n2-a0ae194568",
@@ -4952,7 +6144,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "待合室",
     "suffix": "に座っています。",
     "sentenceJa": "彼は待合室に座っています。",
-    "sentenceEn": "He's sitting in the waiting room."
+    "sentenceEn": "He's sitting in the waiting room.",
+    "prefixFurigana": "{彼|かれ}は",
+    "targetFurigana": "{待合室|まちあいしつ}",
+    "suffixFurigana": "に{座|すわ}っています。",
+    "sentenceFurigana": "{彼|かれ}は{待合室|まちあいしつ}に{座|すわ}っています。"
   },
   {
     "id": "trap-n2-c4d0463a66",
@@ -4968,7 +6164,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "申し訳ない",
     "suffix": "けど、できません。",
     "sentenceJa": "申し訳ないけど、できません。",
-    "sentenceEn": "I'm sorry, but it's impossible."
+    "sentenceEn": "I'm sorry, but it's impossible.",
+    "prefixFurigana": "",
+    "targetFurigana": "{申し訳|もうしわけ}ない",
+    "suffixFurigana": "けど、できません。",
+    "sentenceFurigana": "{申し訳|もうしわけ}ないけど、できません。"
   },
   {
     "id": "trap-n2-40481ab25c",
@@ -4984,7 +6184,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "洋品店",
     "suffix": "」という表現の使い方を学びました。",
     "sentenceJa": "今日の授業で「洋品店」という表現の使い方を学びました。",
-    "sentenceEn": "In today’s class, I learned how to use the expression “clothing store.”"
+    "sentenceEn": "In today’s class, I learned how to use the expression “clothing store.”",
+    "prefixFurigana": "{今日|きょう}の{授業|じゅぎょう}で「",
+    "targetFurigana": "{洋品店|ようひんてん}",
+    "suffixFurigana": "」という{表現|ひょうげん}の{使い方|つかいかた}を{学|まな}びました。",
+    "sentenceFurigana": "{今日|きょう}の{授業|じゅぎょう}で「{洋品店|ようひんてん}」という{表現|ひょうげん}の{使い方|つかいかた}を{学|まな}びました。"
   },
   {
     "id": "trap-n2-55bcf17097",
@@ -5001,7 +6205,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "領収",
     "suffix": "書の金額を加える必要がある。",
     "sentenceJa": "今月の経費にこれらの領収書の金額を加える必要がある。",
-    "sentenceEn": "I need to add the amounts on these receipts to this month's expenses."
+    "sentenceEn": "I need to add the amounts on these receipts to this month's expenses.",
+    "prefixFurigana": "{今月|こんげつ}の{経費|けいひ}にこれらの",
+    "targetFurigana": "{領収|りょうしゅう}",
+    "suffixFurigana": "{書|しょ}の{金額|きんがく}を{加|くわ}える{必要|ひつよう}がある。",
+    "sentenceFurigana": "{今月|こんげつ}の{経費|けいひ}にこれらの{領収|りょうしゅう}{書|しょ}の{金額|きんがく}を{加|くわ}える{必要|ひつよう}がある。"
   },
   {
     "id": "trap-n2-f24da46d2e",
@@ -5018,7 +6226,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "青白い",
     "suffix": "顔をしている。",
     "sentenceJa": "彼女はいつも青白い顔をしている。",
-    "sentenceEn": "She always looks pale."
+    "sentenceEn": "She always looks pale.",
+    "prefixFurigana": "{彼女|かのじょ}はいつも",
+    "targetFurigana": "{青白|あおじろ}い",
+    "suffixFurigana": "{顔|かお}をしている。",
+    "sentenceFurigana": "{彼女|かのじょ}はいつも{青白|あおじろ}い{顔|かお}をしている。"
   },
   {
     "id": "trap-n2-869960843c",
@@ -5036,7 +6248,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "圧縮",
     "suffix": "されてボンベに詰め込まれた。",
     "sentenceJa": "その気体は圧縮されてボンベに詰め込まれた。",
-    "sentenceEn": "The gas was compressed into a gas cylinder."
+    "sentenceEn": "The gas was compressed into a gas cylinder.",
+    "prefixFurigana": "その{気体|きたい}は",
+    "targetFurigana": "{圧縮|あっしゅく}",
+    "suffixFurigana": "されてボンベに{詰め込|つめこ}まれた。",
+    "sentenceFurigana": "その{気体|きたい}は{圧縮|あっしゅく}されてボンベに{詰め込|つめこ}まれた。"
   },
   {
     "id": "trap-n2-28ba375980",
@@ -5055,7 +6271,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "一段と",
     "suffix": "早くなる。",
     "sentenceJa": "冬は暗くなるのが一段と早くなる。",
-    "sentenceEn": "It becomes dark much earlier in winter."
+    "sentenceEn": "It becomes dark much earlier in winter.",
+    "prefixFurigana": "{冬|ふゆ}は{暗|くら}くなるのが",
+    "targetFurigana": "{一段|いちだん}と",
+    "suffixFurigana": "{早|はや}くなる。",
+    "sentenceFurigana": "{冬|ふゆ}は{暗|くら}くなるのが{一段|いちだん}と{早|はや}くなる。"
   },
   {
     "id": "trap-n2-9299dcd9c4",
@@ -5074,7 +6294,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "一流",
     "suffix": "選手が相手では勝ち目がない。",
     "sentenceJa": "こんな一流選手が相手では勝ち目がない。",
-    "sentenceEn": "We have no chance against those top players."
+    "sentenceEn": "We have no chance against those top players.",
+    "prefixFurigana": "こんな",
+    "targetFurigana": "{一流|いちりゅう}",
+    "suffixFurigana": "{選手|せんしゅ}が{相手|あいて}では{勝|か}ち{目|め}がない。",
+    "sentenceFurigana": "こんな{一流|いちりゅう}{選手|せんしゅ}が{相手|あいて}では{勝|か}ち{目|め}がない。"
   },
   {
     "id": "trap-n2-1cda943bec",
@@ -5090,7 +6314,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "引力",
     "suffix": "の法則を確立した。",
     "sentenceJa": "ニュートンは引力の法則を確立した。",
-    "sentenceEn": "Newton established the law of gravity."
+    "sentenceEn": "Newton established the law of gravity.",
+    "prefixFurigana": "ニュートンは",
+    "targetFurigana": "{引力|いんりょく}",
+    "suffixFurigana": "の{法則|ほうそく}を{確立|かくりつ}した。",
+    "sentenceFurigana": "ニュートンは{引力|いんりょく}の{法則|ほうそく}を{確立|かくりつ}した。"
   },
   {
     "id": "trap-n2-609f65f056",
@@ -5107,7 +6335,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "薄暗い",
     "suffix": "光の中で彼の顔を見た。",
     "sentenceJa": "薄暗い光の中で彼の顔を見た。",
-    "sentenceEn": "I saw his face in the dim light."
+    "sentenceEn": "I saw his face in the dim light.",
+    "prefixFurigana": "",
+    "targetFurigana": "{薄暗|うすぐら}い",
+    "suffixFurigana": "{光|ひかり}の{中|なか}で{彼|かれ}の{顔|かお}を{見|み}た。",
+    "sentenceFurigana": "{薄暗|うすぐら}い{光|ひかり}の{中|なか}で{彼|かれ}の{顔|かお}を{見|み}た。"
   },
   {
     "id": "trap-n2-399dac0917",
@@ -5123,7 +6355,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "売り切れる",
     "suffix": "でしょう。",
     "sentenceJa": "そのケーキはすぐに売り切れるでしょう。",
-    "sentenceEn": "The cakes may be sold out soon."
+    "sentenceEn": "The cakes may be sold out soon.",
+    "prefixFurigana": "そのケーキはすぐに",
+    "targetFurigana": "{売り切|うりき}れる",
+    "suffixFurigana": "でしょう。",
+    "sentenceFurigana": "そのケーキはすぐに{売り切|うりき}れるでしょう。"
   },
   {
     "id": "trap-n2-d098b11716",
@@ -5139,7 +6375,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "円周",
     "suffix": "の長さの求め方ってどうでしたっけ？忘れました。",
     "sentenceJa": "円周の長さの求め方ってどうでしたっけ？忘れました。",
-    "sentenceEn": "How do you derive the length of the circumference? I've forgotten."
+    "sentenceEn": "How do you derive the length of the circumference? I've forgotten.",
+    "prefixFurigana": "",
+    "targetFurigana": "{円周|えんしゅう}",
+    "suffixFurigana": "の{長|なが}さの{求|もと}め{方|かた}ってどうでしたっけ？{忘|わす}れました。",
+    "sentenceFurigana": "{円周|えんしゅう}の{長|なが}さの{求|もと}め{方|かた}ってどうでしたっけ？{忘|わす}れました。"
   },
   {
     "id": "trap-n2-dba326f5ee",
@@ -5158,7 +6398,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "延長",
     "suffix": "できますか。",
     "sentenceJa": "宿泊をもう一晩延長できますか。",
-    "sentenceEn": "Can I extend my stay one more night?"
+    "sentenceEn": "Can I extend my stay one more night?",
+    "prefixFurigana": "{宿泊|しゅくはく}をもう{一|いち}{晩|ばん}",
+    "targetFurigana": "{延長|えんちょう}",
+    "suffixFurigana": "できますか。",
+    "sentenceFurigana": "{宿泊|しゅくはく}をもう{一|いち}{晩|ばん}{延長|えんちょう}できますか。"
   },
   {
     "id": "trap-n2-395598d52e",
@@ -5174,7 +6418,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "大通り",
     "suffix": "をずっと一人で歩いた。",
     "sentenceJa": "私は大通りをずっと一人で歩いた。",
-    "sentenceEn": "I walked along the main street."
+    "sentenceEn": "I walked along the main street.",
+    "prefixFurigana": "{私|わたし}は",
+    "targetFurigana": "{大通|おおどお}り",
+    "suffixFurigana": "をずっと{一|いち}{人|にん}で{歩|ある}いた。",
+    "sentenceFurigana": "{私|わたし}は{大通|おおどお}りをずっと{一|いち}{人|にん}で{歩|ある}いた。"
   },
   {
     "id": "trap-n2-328692d4b2",
@@ -5190,7 +6438,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "送り仮名",
     "suffix": "が間違ってるよ。",
     "sentenceJa": "この漢字、送り仮名が間違ってるよ。",
-    "sentenceEn": "The okurigana on this kanji is wrong."
+    "sentenceEn": "The okurigana on this kanji is wrong.",
+    "prefixFurigana": "この{漢字|かんじ}、",
+    "targetFurigana": "{送り仮名|おくりがな}",
+    "suffixFurigana": "が{間違|まちが}ってるよ。",
+    "sentenceFurigana": "この{漢字|かんじ}、{送り仮名|おくりがな}が{間違|まちが}ってるよ。"
   },
   {
     "id": "trap-n2-5510e3f22f",
@@ -5207,7 +6459,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "御中",
     "suffix": "」という表現の使い方を学びました。",
     "sentenceJa": "今日の授業で「御中」という表現の使い方を学びました。",
-    "sentenceEn": "In today’s class, I learned how to use the expression “御中.”"
+    "sentenceEn": "In today’s class, I learned how to use the expression “御中.”",
+    "prefixFurigana": "{今日|きょう}の{授業|じゅぎょう}で「",
+    "targetFurigana": "{御中|おんちゅう}",
+    "suffixFurigana": "」という{表現|ひょうげん}の{使い方|つかいかた}を{学|まな}びました。",
+    "sentenceFurigana": "{今日|きょう}の{授業|じゅぎょう}で「{御中|おんちゅう}」という{表現|ひょうげん}の{使い方|つかいかた}を{学|まな}びました。"
   },
   {
     "id": "trap-n2-3d9d16c9d1",
@@ -5223,7 +6479,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "拡充",
     "suffix": "する金をもっと多くと望んでいる。",
     "sentenceJa": "教育施設を拡充する金をもっと多くと望んでいる。",
-    "sentenceEn": "People want more money to expand educational institutions."
+    "sentenceEn": "People want more money to expand educational institutions.",
+    "prefixFurigana": "{教育|きょういく}{施設|しせつ}を",
+    "targetFurigana": "{拡充|かくじゅう}",
+    "suffixFurigana": "する{金|きん}をもっと{多|おお}くと{望|のぞ}んでいる。",
+    "sentenceFurigana": "{教育|きょういく}{施設|しせつ}を{拡充|かくじゅう}する{金|きん}をもっと{多|おお}くと{望|のぞ}んでいる。"
   },
   {
     "id": "trap-n2-2a0baeba5b",
@@ -5241,7 +6501,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "学術",
     "suffix": "会議に出席した。",
     "sentenceJa": "彼は学術会議に出席した。",
-    "sentenceEn": "He attended the scientific conference."
+    "sentenceEn": "He attended the scientific conference.",
+    "prefixFurigana": "{彼|かれ}は",
+    "targetFurigana": "{学術|がくじゅつ}",
+    "suffixFurigana": "{会議|かいぎ}に{出席|しゅっせき}した。",
+    "sentenceFurigana": "{彼|かれ}は{学術|がくじゅつ}{会議|かいぎ}に{出席|しゅっせき}した。"
   },
   {
     "id": "trap-n2-7f59e7581c",
@@ -5260,7 +6524,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "拡張",
     "suffix": "された。",
     "sentenceJa": "学校の体育館が拡張された。",
-    "sentenceEn": "The school gymnasium was enlarged."
+    "sentenceEn": "The school gymnasium was enlarged.",
+    "prefixFurigana": "{学校|がっこう}の{体育館|たいいくかん}が",
+    "targetFurigana": "{拡張|かくちょう}",
+    "suffixFurigana": "された。",
+    "sentenceFurigana": "{学校|がっこう}の{体育館|たいいくかん}が{拡張|かくちょう}された。"
   },
   {
     "id": "trap-n2-abd96c78e2",
@@ -5278,7 +6546,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "学力",
     "suffix": "」という表現の使い方を学びました。",
     "sentenceJa": "今日の授業で「学力」という表現の使い方を学びました。",
-    "sentenceEn": "In today’s class, I learned how to use the expression “academic ability.”"
+    "sentenceEn": "In today’s class, I learned how to use the expression “academic ability.”",
+    "prefixFurigana": "{今日|きょう}の{授業|じゅぎょう}で「",
+    "targetFurigana": "{学力|がくりょく}",
+    "suffixFurigana": "」という{表現|ひょうげん}の{使い方|つかいかた}を{学|まな}びました。",
+    "sentenceFurigana": "{今日|きょう}の{授業|じゅぎょう}で「{学力|がくりょく}」という{表現|ひょうげん}の{使い方|つかいかた}を{学|まな}びました。"
   },
   {
     "id": "trap-n2-9ceaaec557",
@@ -5294,7 +6566,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "学級",
     "suffix": "で英語を勉強します。",
     "sentenceJa": "私たちは同じ学級で英語を勉強します。",
-    "sentenceEn": "We study English in the same class."
+    "sentenceEn": "We study English in the same class.",
+    "prefixFurigana": "{私|わたし}たちは{同|おな}じ",
+    "targetFurigana": "{学級|がっきゅう}",
+    "suffixFurigana": "で{英語|えいご}を{勉強|べんきょう}します。",
+    "sentenceFurigana": "{私|わたし}たちは{同|おな}じ{学級|がっきゅう}で{英語|えいご}を{勉強|べんきょう}します。"
   },
   {
     "id": "trap-n2-6a5672e8e2",
@@ -5311,7 +6587,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "活力",
     "suffix": "を補給してくれます。",
     "sentenceJa": "この薬は活力を補給してくれます。",
-    "sentenceEn": "This medicine renews your strength."
+    "sentenceEn": "This medicine renews your strength.",
+    "prefixFurigana": "この{薬|くすり}は",
+    "targetFurigana": "{活力|かつりょく}",
+    "suffixFurigana": "を{補給|ほきゅう}してくれます。",
+    "sentenceFurigana": "この{薬|くすり}は{活力|かつりょく}を{補給|ほきゅう}してくれます。"
   },
   {
     "id": "trap-n2-e1483430fd",
@@ -5328,7 +6608,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "仮名遣い",
     "suffix": "で書くことがあるの。",
     "sentenceJa": "祖父は古い仮名遣いで書くことがあるの。",
-    "sentenceEn": "My grandfather sometimes writes in the old kana orthography."
+    "sentenceEn": "My grandfather sometimes writes in the old kana orthography.",
+    "prefixFurigana": "{祖父|そふ}は{古|ふる}い",
+    "targetFurigana": "{仮名遣|かなづか}い",
+    "suffixFurigana": "で{書|か}くことがあるの。",
+    "sentenceFurigana": "{祖父|そふ}は{古|ふる}い{仮名遣|かなづか}いで{書|か}くことがあるの。"
   },
   {
     "id": "trap-n1-c052d729c7",
@@ -5345,7 +6629,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "案の定",
     "suffix": "、彼は疑念を抱いていた。",
     "sentenceJa": "案の定、彼は疑念を抱いていた。",
-    "sentenceEn": "Sure enough, he entertained doubts."
+    "sentenceEn": "Sure enough, he entertained doubts.",
+    "prefixFurigana": "",
+    "targetFurigana": "{案の定|あんのじょう}",
+    "suffixFurigana": "、{彼|かれ}は{疑念|ぎねん}を{抱|だ}いていた。",
+    "sentenceFurigana": "{案の定|あんのじょう}、{彼|かれ}は{疑念|ぎねん}を{抱|だ}いていた。"
   },
   {
     "id": "trap-n1-345c476ef0",
@@ -5362,7 +6650,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "鬱陶しい",
     "suffix": "！",
     "sentenceJa": "ベタベタするんじゃねえよっ！鬱陶しい！",
-    "sentenceEn": "Get off me you little pest!"
+    "sentenceEn": "Get off me you little pest!",
+    "prefixFurigana": "ベタベタするんじゃねえよっ！",
+    "targetFurigana": "{鬱陶|うっとう}しい",
+    "suffixFurigana": "！",
+    "sentenceFurigana": "ベタベタするんじゃねえよっ！{鬱陶|うっとう}しい！"
   },
   {
     "id": "trap-n1-c283e8c6ea",
@@ -5379,7 +6671,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "箇条書き",
     "suffix": "」という表現の使い方を学びました。",
     "sentenceJa": "今日の授業で「箇条書き」という表現の使い方を学びました。",
-    "sentenceEn": "In today’s class, I learned how to use the expression “bulleted list.”"
+    "sentenceEn": "In today’s class, I learned how to use the expression “bulleted list.”",
+    "prefixFurigana": "{今日|きょう}の{授業|じゅぎょう}で「",
+    "targetFurigana": "{箇条書|かじょうが}き",
+    "suffixFurigana": "」という{表現|ひょうげん}の{使い方|つかいかた}を{学|まな}びました。",
+    "sentenceFurigana": "{今日|きょう}の{授業|じゅぎょう}で「{箇条書|かじょうが}き」という{表現|ひょうげん}の{使い方|つかいかた}を{学|まな}びました。"
   },
   {
     "id": "trap-n1-2a2e56c75e",
@@ -5395,7 +6691,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "代わる代わる",
     "suffix": "馬の世話をした。",
     "sentenceJa": "私たちは代わる代わる馬の世話をした。",
-    "sentenceEn": "We took care of our horses by turns."
+    "sentenceEn": "We took care of our horses by turns.",
+    "prefixFurigana": "{私|わたし}たちは",
+    "targetFurigana": "{代わる代|かわるが}わる",
+    "suffixFurigana": "{馬|うま}の{世話|せわ}をした。",
+    "sentenceFurigana": "{私|わたし}たちは{代わる代|かわるが}わる{馬|うま}の{世話|せわ}をした。"
   },
   {
     "id": "trap-n1-42ee85789e",
@@ -5413,7 +6713,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "感無量",
     "suffix": "な対応のおかげで、問題は無事に解決しました。",
     "sentenceJa": "彼の感無量な対応のおかげで、問題は無事に解決しました。",
-    "sentenceEn": "Thanks to his deeply moving response, the problem was successfully resolved."
+    "sentenceEn": "Thanks to his deeply moving response, the problem was successfully resolved.",
+    "prefixFurigana": "{彼|かれ}の",
+    "targetFurigana": "{感無量|かんむりょう}",
+    "suffixFurigana": "な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+    "sentenceFurigana": "{彼|かれ}の{感無量|かんむりょう}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。"
   },
   {
     "id": "trap-n1-d5ab320203",
@@ -5431,7 +6735,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "几帳面",
     "suffix": "です。",
     "sentenceJa": "お金の事では彼女は几帳面です。",
-    "sentenceEn": "She is exact in money matters."
+    "sentenceEn": "She is exact in money matters.",
+    "prefixFurigana": "お{金|かね}の{事|こと}では{彼女|かのじょ}は",
+    "targetFurigana": "{几帳面|きちょうめん}",
+    "suffixFurigana": "です。",
+    "sentenceFurigana": "お{金|かね}の{事|こと}では{彼女|かのじょ}は{几帳面|きちょうめん}です。"
   },
   {
     "id": "trap-n1-47871e07a3",
@@ -5448,7 +6756,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "決まり悪い",
     "suffix": "思いをした。",
     "sentenceJa": "私は誤りを指摘されて決まり悪い思いをした。",
-    "sentenceEn": "I was abashed when my mistakes were pointed out."
+    "sentenceEn": "I was abashed when my mistakes were pointed out.",
+    "prefixFurigana": "{私|わたし}は{誤|あやま}りを{指摘|してき}されて",
+    "targetFurigana": "{決まり悪|きまりわる}い",
+    "suffixFurigana": "{思|おも}いをした。",
+    "sentenceFurigana": "{私|わたし}は{誤|あやま}りを{指摘|してき}されて{決まり悪|きまりわる}い{思|おも}いをした。"
   },
   {
     "id": "trap-n1-3a40a73925",
@@ -5464,7 +6776,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "脚色",
     "suffix": "したものです。",
     "sentenceJa": "この劇は小説から脚色したものです。",
-    "sentenceEn": "This play was adapted from the novel."
+    "sentenceEn": "This play was adapted from the novel.",
+    "prefixFurigana": "この{劇|げき}は{小説|しょうせつ}から",
+    "targetFurigana": "{脚色|きゃくしょく}",
+    "suffixFurigana": "したものです。",
+    "sentenceFurigana": "この{劇|げき}は{小説|しょうせつ}から{脚色|きゃくしょく}したものです。"
   },
   {
     "id": "trap-n1-dc6d837292",
@@ -5482,7 +6798,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "究極",
     "suffix": "的運命はどうなるであろうか。",
     "sentenceJa": "人類の究極的運命はどうなるであろうか。",
-    "sentenceEn": "What is man's ultimate destiny?"
+    "sentenceEn": "What is man's ultimate destiny?",
+    "prefixFurigana": "{人類|じんるい}の",
+    "targetFurigana": "{究極|きゅうきょく}",
+    "suffixFurigana": "{的|てき}{運命|うんめい}はどうなるであろうか。",
+    "sentenceFurigana": "{人類|じんるい}の{究極|きゅうきょく}{的|てき}{運命|うんめい}はどうなるであろうか。"
   },
   {
     "id": "trap-n1-355f61bfeb",
@@ -5499,7 +6819,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "給食",
     "suffix": "はあるの？",
     "sentenceJa": "給食はあるの？",
-    "sentenceEn": "Do you have lunch at school?"
+    "sentenceEn": "Do you have lunch at school?",
+    "prefixFurigana": "",
+    "targetFurigana": "{給食|きゅうしょく}",
+    "suffixFurigana": "はあるの？",
+    "sentenceFurigana": "{給食|きゅうしょく}はあるの？"
   },
   {
     "id": "trap-n1-424e314e84",
@@ -5515,7 +6839,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "丘陵",
     "suffix": "は平地のように見える。",
     "sentenceJa": "飛行機から見ると、小さな丘陵は平地のように見える。",
-    "sentenceEn": "Small hills look flat from an airplane."
+    "sentenceEn": "Small hills look flat from an airplane.",
+    "prefixFurigana": "{飛行機|ひこうき}から{見|み}ると、{小|ちい}さな",
+    "targetFurigana": "{丘陵|きゅうりょう}",
+    "suffixFurigana": "は{平地|ひらち}のように{見|み}える。",
+    "sentenceFurigana": "{飛行機|ひこうき}から{見|み}ると、{小|ちい}さな{丘陵|きゅうりょう}は{平地|ひらち}のように{見|み}える。"
   },
   {
     "id": "trap-n1-307287bc5f",
@@ -5532,7 +6860,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "教習",
     "suffix": "ために、事前の準備を行いました。",
     "sentenceJa": "計画をスムーズに教習ために、事前の準備を行いました。",
-    "sentenceEn": "We made preparations in advance to ensure the training went smoothly."
+    "sentenceEn": "We made preparations in advance to ensure the training went smoothly.",
+    "prefixFurigana": "{計画|けいかく}をスムーズに",
+    "targetFurigana": "{教習|きょうしゅう}",
+    "suffixFurigana": "ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+    "sentenceFurigana": "{計画|けいかく}をスムーズに{教習|きょうしゅう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。"
   },
   {
     "id": "trap-n1-2c40858d7a",
@@ -5549,7 +6881,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "郷愁",
     "suffix": "に満ちた音楽を演奏し始めた。",
     "sentenceJa": "管弦楽団は郷愁に満ちた音楽を演奏し始めた。",
-    "sentenceEn": "The orchestra struck up nostalgic music."
+    "sentenceEn": "The orchestra struck up nostalgic music.",
+    "prefixFurigana": "{管弦楽|かんげんがく}{団|だん}は",
+    "targetFurigana": "{郷愁|きょうしゅう}",
+    "suffixFurigana": "に{満|み}ちた{音楽|おんがく}を{演奏|えんそう}し{始|はじ}めた。",
+    "sentenceFurigana": "{管弦楽|かんげんがく}{団|だん}は{郷愁|きょうしゅう}に{満|み}ちた{音楽|おんがく}を{演奏|えんそう}し{始|はじ}めた。"
   },
   {
     "id": "trap-n1-edb3e0745a",
@@ -5566,7 +6902,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "教職",
     "suffix": "につくことを望んでいる。",
     "sentenceJa": "彼女は教職につくことを望んでいる。",
-    "sentenceEn": "She wants to engage in teaching."
+    "sentenceEn": "She wants to engage in teaching.",
+    "prefixFurigana": "{彼女|かのじょ}は",
+    "targetFurigana": "{教職|きょうしょく}",
+    "suffixFurigana": "につくことを{望|のぞ}んでいる。",
+    "sentenceFurigana": "{彼女|かのじょ}は{教職|きょうしょく}につくことを{望|のぞ}んでいる。"
   },
   {
     "id": "trap-n1-f773197117",
@@ -5585,7 +6925,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "協調",
     "suffix": "精神です。",
     "sentenceJa": "企業経営で活躍するために必要となるのが多くの仲間と仕事を遂行するための協調精神です。",
-    "sentenceEn": "What you need to take part in business management is the team spirit to work with many colleagues."
+    "sentenceEn": "What you need to take part in business management is the team spirit to work with many colleagues.",
+    "prefixFurigana": "{企業|きぎょう}{経営|けいえい}で{活躍|かつやく}するために{必要|ひつよう}となるのが{多|おお}くの{仲間|なかま}と{仕事|しごと}を{遂行|すいこう}するための",
+    "targetFurigana": "{協調|きょうちょう}",
+    "suffixFurigana": "{精神|せいしん}です。",
+    "sentenceFurigana": "{企業|きぎょう}{経営|けいえい}で{活躍|かつやく}するために{必要|ひつよう}となるのが{多|おお}くの{仲間|なかま}と{仕事|しごと}を{遂行|すいこう}するための{協調|きょうちょう}{精神|せいしん}です。"
   },
   {
     "id": "trap-n1-8aa704aca6",
@@ -5601,7 +6945,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "香辛料",
     "suffix": "のきいた味でよく知られている。",
     "sentenceJa": "韓国料理は、香辛料のきいた味でよく知られている。",
-    "sentenceEn": "Korean food is noted for its spicy flavor."
+    "sentenceEn": "Korean food is noted for its spicy flavor.",
+    "prefixFurigana": "{韓国|かんこく}{料理|りょうり}は、",
+    "targetFurigana": "{香辛料|こうしんりょう}",
+    "suffixFurigana": "のきいた{味|あじ}でよく{知|し}られている。",
+    "sentenceFurigana": "{韓国|かんこく}{料理|りょうり}は、{香辛料|こうしんりょう}のきいた{味|あじ}でよく{知|し}られている。"
   },
   {
     "id": "trap-n1-b5288189c7",
@@ -5618,7 +6966,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "心強い",
     "suffix": "のですよ。",
     "sentenceJa": "僕には警察よりも何よりもみんながいてくれることの方が心強いのですよ。",
-    "sentenceEn": "For my part, having you lot with me is more reassuring than the police or anything!"
+    "sentenceEn": "For my part, having you lot with me is more reassuring than the police or anything!",
+    "prefixFurigana": "{僕|ぼく}には{警察|けいさつ}よりも{何|なに}よりもみんながいてくれることの{方|ほう}が",
+    "targetFurigana": "{心強|こころづよ}い",
+    "suffixFurigana": "のですよ。",
+    "sentenceFurigana": "{僕|ぼく}には{警察|けいさつ}よりも{何|なに}よりもみんながいてくれることの{方|ほう}が{心強|こころづよ}いのですよ。"
   },
   {
     "id": "trap-n1-4951764bd4",
@@ -5634,7 +6986,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "骨董品",
     "suffix": "だ。",
     "sentenceJa": "このテーブルは貴重な骨董品だ。",
-    "sentenceEn": "This table is a priceless antique."
+    "sentenceEn": "This table is a priceless antique.",
+    "prefixFurigana": "このテーブルは{貴重|きちょう}な",
+    "targetFurigana": "{骨董品|こっとうひん}",
+    "suffixFurigana": "だ。",
+    "sentenceFurigana": "このテーブルは{貴重|きちょう}な{骨董品|こっとうひん}だ。"
   },
   {
     "id": "trap-n1-cdf5e77c1e",
@@ -5652,7 +7008,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "差し支える",
     "suffix": "ことが求められます。",
     "sentenceJa": "大切な場面でしっかり差し支えることが求められます。",
-    "sentenceEn": "You are expected to perform reliably in important situations."
+    "sentenceEn": "You are expected to perform reliably in important situations.",
+    "prefixFurigana": "{大切|たいせつ}な{場面|ばめん}でしっかり",
+    "targetFurigana": "{差し支|さしつか}える",
+    "suffixFurigana": "ことが{求|もと}められます。",
+    "sentenceFurigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{差し支|さしつか}えることが{求|もと}められます。"
   },
   {
     "id": "trap-n1-adb0af83d2",
@@ -5668,7 +7028,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "産婦人科",
     "suffix": "の不足が問題になっているね。",
     "sentenceJa": "最近、産婦人科の不足が問題になっているね。",
-    "sentenceEn": "Recently, shortages of obstetrics and gynecology specialists have become a problem."
+    "sentenceEn": "Recently, shortages of obstetrics and gynecology specialists have become a problem.",
+    "prefixFurigana": "{最近|さいきん}、",
+    "targetFurigana": "{産婦人科|さんふじんか}",
+    "suffixFurigana": "の{不足|ふそく}が{問題|もんだい}になっているね。",
+    "sentenceFurigana": "{最近|さいきん}、{産婦人科|さんふじんか}の{不足|ふそく}が{問題|もんだい}になっているね。"
   },
   {
     "id": "trap-n1-6fd972e632",
@@ -5687,7 +7051,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "時刻表",
     "suffix": "が改正された。",
     "sentenceJa": "時刻表が改正された。",
-    "sentenceEn": "The timetable has been revised."
+    "sentenceEn": "The timetable has been revised.",
+    "prefixFurigana": "",
+    "targetFurigana": "{時刻表|じこくひょう}",
+    "suffixFurigana": "が{改正|かいせい}された。",
+    "sentenceFurigana": "{時刻表|じこくひょう}が{改正|かいせい}された。"
   },
   {
     "id": "trap-n1-3a3ca43df5",
@@ -5704,7 +7072,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "実業家",
     "suffix": "になるのに向いている。",
     "sentenceJa": "トムは実業家になるのに向いている。",
-    "sentenceEn": "Tom is fit to become a businessman."
+    "sentenceEn": "Tom is fit to become a businessman.",
+    "prefixFurigana": "トムは",
+    "targetFurigana": "{実業家|じつぎょうか}",
+    "suffixFurigana": "になるのに{向|む}いている。",
+    "sentenceFurigana": "トムは{実業家|じつぎょうか}になるのに{向|む}いている。"
   },
   {
     "id": "trap-n1-5dab2cd493",
@@ -5721,7 +7093,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "衆議院",
     "suffix": "の少数派の議席は、急速にむしばまれてきています。",
     "sentenceJa": "衆議院の少数派の議席は、急速にむしばまれてきています。",
-    "sentenceEn": "The number of minority seats in the Lower House is rapidly eroding."
+    "sentenceEn": "The number of minority seats in the Lower House is rapidly eroding.",
+    "prefixFurigana": "",
+    "targetFurigana": "{衆議院|しゅうぎいん}",
+    "suffixFurigana": "の{少数|しょうすう}{派|は}の{議席|ぎせき}は、{急速|きゅうそく}にむしばまれてきています。",
+    "sentenceFurigana": "{衆議院|しゅうぎいん}の{少数|しょうすう}{派|は}の{議席|ぎせき}は、{急速|きゅうそく}にむしばまれてきています。"
   },
   {
     "id": "trap-n1-e1fdef8d38",
@@ -5738,7 +7114,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "就業",
     "suffix": "をサボったよ。",
     "sentenceJa": "僕も学生の時はよく就業をサボったよ。",
-    "sentenceEn": "When I was a student, I also often cut classes."
+    "sentenceEn": "When I was a student, I also often cut classes.",
+    "prefixFurigana": "{僕|ぼく}も{学生|がくせい}の{時|とき}はよく",
+    "targetFurigana": "{就業|しゅうぎょう}",
+    "suffixFurigana": "をサボったよ。",
+    "sentenceFurigana": "{僕|ぼく}も{学生|がくせい}の{時|とき}はよく{就業|しゅうぎょう}をサボったよ。"
   },
   {
     "id": "trap-n1-0f1bb19bcf",
@@ -5757,7 +7137,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "修業",
     "suffix": "中です。",
     "sentenceJa": "只今、僕は旅立ちの日に向けて修業中です。",
-    "sentenceEn": "Right now I'm training in preparation for the day we set off."
+    "sentenceEn": "Right now I'm training in preparation for the day we set off.",
+    "prefixFurigana": "{只今|ただいま}、{僕|ぼく}は{旅立|たびだ}ちの{日|ひ}に{向|む}けて",
+    "targetFurigana": "{修業|しゅうぎょう}",
+    "suffixFurigana": "{中|なか}です。",
+    "sentenceFurigana": "{只今|ただいま}、{僕|ぼく}は{旅立|たびだ}ちの{日|ひ}に{向|む}けて{修業|しゅうぎょう}{中|なか}です。"
   },
   {
     "id": "trap-n1-5109d1778b",
@@ -5774,7 +7158,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "従業員",
     "suffix": "たちは超過勤務をするのに異議を唱えた。",
     "sentenceJa": "従業員たちは超過勤務をするのに異議を唱えた。",
-    "sentenceEn": "The employees demurred at working overtime."
+    "sentenceEn": "The employees demurred at working overtime.",
+    "prefixFurigana": "",
+    "targetFurigana": "{従業員|じゅうぎょういん}",
+    "suffixFurigana": "たちは{超過|ちょうか}{勤務|きんむ}をするのに{異議|いぎ}を{唱|とな}えた。",
+    "sentenceFurigana": "{従業員|じゅうぎょういん}たちは{超過|ちょうか}{勤務|きんむ}をするのに{異議|いぎ}を{唱|とな}えた。"
   },
   {
     "id": "trap-n1-9510e4a8e0",
@@ -5792,7 +7180,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "収集",
     "suffix": "しなければならない。",
     "sentenceJa": "情報を収集しなければならない。",
-    "sentenceEn": "We have to gather information."
+    "sentenceEn": "We have to gather information.",
+    "prefixFurigana": "{情報|じょうほう}を",
+    "targetFurigana": "{収集|しゅうしゅう}",
+    "suffixFurigana": "しなければならない。",
+    "sentenceFurigana": "{情報|じょうほう}を{収集|しゅうしゅう}しなければならない。"
   },
   {
     "id": "trap-n1-887c7b645a",
@@ -5811,7 +7203,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "修飾",
     "suffix": "するものは、形容詞または形容詞相当語句です。",
     "sentenceJa": "名詞を修飾するものは、形容詞または形容詞相当語句です。",
-    "sentenceEn": "Things that modify nouns are adjectives or equivalent to adjectives."
+    "sentenceEn": "Things that modify nouns are adjectives or equivalent to adjectives.",
+    "prefixFurigana": "{名詞|めいし}を",
+    "targetFurigana": "{修飾|しゅうしょく}",
+    "suffixFurigana": "するものは、{形容詞|けいようし}または{形容詞|けいようし}{相当|そうとう}{語句|ごく}です。",
+    "sentenceFurigana": "{名詞|めいし}を{修飾|しゅうしょく}するものは、{形容詞|けいようし}または{形容詞|けいようし}{相当|そうとう}{語句|ごく}です。"
   },
   {
     "id": "trap-n1-27fa290805",
@@ -5829,7 +7225,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "執着",
     "suffix": "していた。",
     "sentenceJa": "彼は弁護士になれるという希望に執着していた。",
-    "sentenceEn": "He clung to the hope that he could be a lawyer."
+    "sentenceEn": "He clung to the hope that he could be a lawyer.",
+    "prefixFurigana": "{彼|かれ}は{弁護士|べんごし}になれるという{希望|きぼう}に",
+    "targetFurigana": "{執着|しゅうちゃく}",
+    "suffixFurigana": "していた。",
+    "sentenceFurigana": "{彼|かれ}は{弁護士|べんごし}になれるという{希望|きぼう}に{執着|しゅうちゃく}していた。"
   },
   {
     "id": "trap-n1-1a8f36d596",
@@ -5845,7 +7245,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "修了",
     "suffix": "した。",
     "sentenceJa": "私は高校の全課程を修了した。",
-    "sentenceEn": "I completed the whole high school curriculum."
+    "sentenceEn": "I completed the whole high school curriculum.",
+    "prefixFurigana": "{私|わたし}は{高校|こうこう}の{全|ぜん}{課程|かてい}を",
+    "targetFurigana": "{修了|しゅうりょう}",
+    "suffixFurigana": "した。",
+    "sentenceFurigana": "{私|わたし}は{高校|こうこう}の{全|ぜん}{課程|かてい}を{修了|しゅうりょう}した。"
   },
   {
     "id": "trap-n1-818ef1c8d8",
@@ -5864,7 +7268,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "主人公",
     "suffix": "は、本の最後で死んだ。",
     "sentenceJa": "主人公は、本の最後で死んだ。",
-    "sentenceEn": "The hero died at the end of the book."
+    "sentenceEn": "The hero died at the end of the book.",
+    "prefixFurigana": "",
+    "targetFurigana": "{主人公|しゅじんこう}",
+    "suffixFurigana": "は、{本|ほん}の{最後|さいご}で{死|し}んだ。",
+    "sentenceFurigana": "{主人公|しゅじんこう}は、{本|ほん}の{最後|さいご}で{死|し}んだ。"
   },
   {
     "id": "trap-n1-08f2c740b5",
@@ -5880,7 +7288,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "出生",
     "suffix": "政策は人口増加ゼロをめざしています。",
     "sentenceJa": "新しい出生政策は人口増加ゼロをめざしています。",
-    "sentenceEn": "The new birth policy is aimed at achieving zero population growth."
+    "sentenceEn": "The new birth policy is aimed at achieving zero population growth.",
+    "prefixFurigana": "{新|あたら}しい",
+    "targetFurigana": "{出生|しゅっしょう}",
+    "suffixFurigana": "{政策|せいさく}は{人口|じんこう}{増加|ぞうか}ゼロをめざしています。",
+    "sentenceFurigana": "{新|あたら}しい{出生|しゅっしょう}{政策|せいさく}は{人口|じんこう}{増加|ぞうか}ゼロをめざしています。"
   },
   {
     "id": "trap-n1-96cf2aa192",
@@ -5896,7 +7308,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "準急",
     "suffix": "で行ったのよ。",
     "sentenceJa": "新宿駅まで準急で行ったのよ。",
-    "sentenceEn": "I went to Tokyo Station by the local express."
+    "sentenceEn": "I went to Tokyo Station by the local express.",
+    "prefixFurigana": "{新宿|しんじゅく}{駅|えき}まで",
+    "targetFurigana": "{準急|じゅんきゅう}",
+    "suffixFurigana": "で{行|おこな}ったのよ。",
+    "sentenceFurigana": "{新宿|しんじゅく}{駅|えき}まで{準急|じゅんきゅう}で{行|おこな}ったのよ。"
   },
   {
     "id": "trap-n1-1766fb87d2",
@@ -5914,7 +7330,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "上昇",
     "suffix": "してきている。",
     "sentenceJa": "物価がどんどん上昇してきている。",
-    "sentenceEn": "Prices have been climbing steadily."
+    "sentenceEn": "Prices have been climbing steadily.",
+    "prefixFurigana": "{物価|ぶっか}がどんどん",
+    "targetFurigana": "{上昇|じょうしょう}",
+    "suffixFurigana": "してきている。",
+    "sentenceFurigana": "{物価|ぶっか}がどんどん{上昇|じょうしょう}してきている。"
   },
   {
     "id": "trap-n1-7a67174d34",
@@ -5930,7 +7350,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "象徴",
     "suffix": "している。",
     "sentenceJa": "オリーブの枝は平和を象徴している。",
-    "sentenceEn": "An olive branch symbolizes peace."
+    "sentenceEn": "An olive branch symbolizes peace.",
+    "prefixFurigana": "オリーブの{枝|えだ}は{平和|へいわ}を",
+    "targetFurigana": "{象徴|しょうちょう}",
+    "suffixFurigana": "している。",
+    "sentenceFurigana": "オリーブの{枝|えだ}は{平和|へいわ}を{象徴|しょうちょう}している。"
   },
   {
     "id": "trap-n1-4b3ac6f805",
@@ -5946,7 +7370,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "蒸留",
     "suffix": "して得られる成分名は下表の通りである。",
     "sentenceJa": "コールタールを蒸留して得られる成分名は下表の通りである。",
-    "sentenceEn": "The components obtained by distillation of coal tar are as shown below."
+    "sentenceEn": "The components obtained by distillation of coal tar are as shown below.",
+    "prefixFurigana": "コールタールを",
+    "targetFurigana": "{蒸留|じょうりゅう}",
+    "suffixFurigana": "して{得|え}られる{成分|せいぶん}{名|めい}は{下表|かひょう}の{通|とお}りである。",
+    "sentenceFurigana": "コールタールを{蒸留|じょうりゅう}して{得|え}られる{成分|せいぶん}{名|めい}は{下表|かひょう}の{通|とお}りである。"
   },
   {
     "id": "trap-n1-58a624504d",
@@ -5962,7 +7390,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "植民地",
     "suffix": "時代から始まると推定している。",
     "sentenceJa": "その習慣を彼は植民地時代から始まると推定している。",
-    "sentenceEn": "He dates the custom from the colonial days."
+    "sentenceEn": "He dates the custom from the colonial days.",
+    "prefixFurigana": "その{習慣|しゅうかん}を{彼|かれ}は",
+    "targetFurigana": "{植民地|しょくみんち}",
+    "suffixFurigana": "{時代|じだい}から{始|はじ}まると{推定|すいてい}している。",
+    "sentenceFurigana": "その{習慣|しゅうかん}を{彼|かれ}は{植民地|しょくみんち}{時代|じだい}から{始|はじ}まると{推定|すいてい}している。"
   },
   {
     "id": "trap-n1-de323abf88",
@@ -5979,7 +7411,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "新入生",
     "suffix": "が教室へ入ってきた。",
     "sentenceJa": "新入生が教室へ入ってきた。",
-    "sentenceEn": "A new student came into the class."
+    "sentenceEn": "A new student came into the class.",
+    "prefixFurigana": "",
+    "targetFurigana": "{新入生|しんにゅうせい}",
+    "suffixFurigana": "が{教室|きょうしつ}へ{入|はい}ってきた。",
+    "sentenceFurigana": "{新入生|しんにゅうせい}が{教室|きょうしつ}へ{入|はい}ってきた。"
   },
   {
     "id": "trap-n1-f608306e77",
@@ -5998,7 +7434,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "先天的",
     "suffix": "なものではない。",
     "sentenceJa": "その習慣は後天的で、先天的なものではない。",
-    "sentenceEn": "That habit is acquired, not innate."
+    "sentenceEn": "That habit is acquired, not innate.",
+    "prefixFurigana": "その{習慣|しゅうかん}は{後天的|こうてんてき}で、",
+    "targetFurigana": "{先天的|せんてんてき}",
+    "suffixFurigana": "なものではない。",
+    "sentenceFurigana": "その{習慣|しゅうかん}は{後天的|こうてんてき}で、{先天的|せんてんてき}なものではない。"
   },
   {
     "id": "trap-n1-47d96ccdae",
@@ -6017,7 +7457,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "備え付ける",
     "suffix": "。",
     "sentenceJa": "職場に、自動販売機を備え付ける。",
-    "sentenceEn": "Install a vending machine in our office."
+    "sentenceEn": "Install a vending machine in our office.",
+    "prefixFurigana": "{職場|しょくば}に、{自動|じどう}{販売|はんばい}{機|き}を",
+    "targetFurigana": "{備え付|そなえつ}ける",
+    "suffixFurigana": "。",
+    "sentenceFurigana": "{職場|しょくば}に、{自動|じどう}{販売|はんばい}{機|き}を{備え付|そなえつ}ける。"
   },
   {
     "id": "trap-n1-61c73272dd",
@@ -6034,7 +7478,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "着色",
     "suffix": "ために、事前の準備を行いました。",
     "sentenceJa": "計画をスムーズに着色ために、事前の準備を行いました。",
-    "sentenceEn": "To ensure the project went smoothly, we made preparations in advance."
+    "sentenceEn": "To ensure the project went smoothly, we made preparations in advance.",
+    "prefixFurigana": "{計画|けいかく}をスムーズに",
+    "targetFurigana": "{着色|ちゃくしょく}",
+    "suffixFurigana": "ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+    "sentenceFurigana": "{計画|けいかく}をスムーズに{着色|ちゃくしょく}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。"
   },
   {
     "id": "trap-n1-73761da587",
@@ -6051,7 +7499,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "宙返り",
     "suffix": "するジェットコースターに乗ったら、気持ち悪くなっちゃった。",
     "sentenceJa": "宙返りするジェットコースターに乗ったら、気持ち悪くなっちゃった。",
-    "sentenceEn": "I got sick riding the roller coaster with the loop-the-loop."
+    "sentenceEn": "I got sick riding the roller coaster with the loop-the-loop.",
+    "prefixFurigana": "",
+    "targetFurigana": "{宙返|ちゅうがえ}り",
+    "suffixFurigana": "するジェットコースターに{乗|の}ったら、{気持|きも}ち{悪|わる}くなっちゃった。",
+    "sentenceFurigana": "{宙返|ちゅうがえ}りするジェットコースターに{乗|の}ったら、{気持|きも}ち{悪|わる}くなっちゃった。"
   },
   {
     "id": "trap-n1-858ac29e35",
@@ -6069,7 +7521,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "中傷",
     "suffix": "はほうっておきなさい。",
     "sentenceJa": "その程度の中傷はほうっておきなさい。",
-    "sentenceEn": "Just pass such an insult."
+    "sentenceEn": "Just pass such an insult.",
+    "prefixFurigana": "その{程度|ていど}の",
+    "targetFurigana": "{中傷|ちゅうしょう}",
+    "suffixFurigana": "はほうっておきなさい。",
+    "sentenceFurigana": "その{程度|ていど}の{中傷|ちゅうしょう}はほうっておきなさい。"
   },
   {
     "id": "trap-n1-8814988b80",
@@ -6086,7 +7542,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "中腹",
     "suffix": "にあって、見晴らしがすばらしい。",
     "sentenceJa": "彼の家は丘の中腹にあって、見晴らしがすばらしい。",
-    "sentenceEn": "His house stands on the hill-side and commands a splendid view."
+    "sentenceEn": "His house stands on the hill-side and commands a splendid view.",
+    "prefixFurigana": "{彼|かれ}の{家|いえ}は{丘|おか}の",
+    "targetFurigana": "{中腹|ちゅうっぱら}",
+    "suffixFurigana": "にあって、{見晴|みは}らしがすばらしい。",
+    "sentenceFurigana": "{彼|かれ}の{家|いえ}は{丘|おか}の{中腹|ちゅうっぱら}にあって、{見晴|みは}らしがすばらしい。"
   },
   {
     "id": "trap-n1-4c00360769",
@@ -6103,7 +7563,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "徴収",
     "suffix": "する。",
     "sentenceJa": "国は国民から税を徴収する。",
-    "sentenceEn": "A country collects taxes from its people."
+    "sentenceEn": "A country collects taxes from its people.",
+    "prefixFurigana": "{国|くに}は{国民|こくみん}から{税|ぜい}を",
+    "targetFurigana": "{徴収|ちょうしゅう}",
+    "suffixFurigana": "する。",
+    "sentenceFurigana": "{国|くに}は{国民|こくみん}から{税|ぜい}を{徴収|ちょうしゅう}する。"
   },
   {
     "id": "trap-n1-759fdce75d",
@@ -6119,7 +7583,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "聴診器",
     "suffix": "を当てた。",
     "sentenceJa": "医者は患者の胸に聴診器を当てた。",
-    "sentenceEn": "The doctor placed a stethoscope on the patient's chest."
+    "sentenceEn": "The doctor placed a stethoscope on the patient's chest.",
+    "prefixFurigana": "{医者|いしゃ}は{患者|かんじゃ}の{胸|むね}に",
+    "targetFurigana": "{聴診器|ちょうしんき}",
+    "suffixFurigana": "を{当|あ}てた。",
+    "sentenceFurigana": "{医者|いしゃ}は{患者|かんじゃ}の{胸|むね}に{聴診器|ちょうしんき}を{当|あ}てた。"
   },
   {
     "id": "trap-n1-5c95d2786a",
@@ -6135,7 +7603,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "共働き",
     "suffix": "で親は遅いの」",
     "sentenceJa": "「少しうちに寄っていかない？」「いいの？」「うち共働きで親は遅いの」",
-    "sentenceEn": "\"Want to drop round my place?\" \"Can I?\" \"My parents come home late as they both work.\""
+    "sentenceEn": "\"Want to drop round my place?\" \"Can I?\" \"My parents come home late as they both work.\"",
+    "prefixFurigana": "「{少|すこ}しうちに{寄|よ}っていかない？」「いいの？」「うち",
+    "targetFurigana": "{共働|ともばたら}き",
+    "suffixFurigana": "で{親|おや}は{遅|おそ}いの」",
+    "sentenceFurigana": "「{少|すこ}しうちに{寄|よ}っていかない？」「いいの？」「うち{共働|ともばたら}きで{親|おや}は{遅|おそ}いの」"
   },
   {
     "id": "trap-n1-c3c0a73472",
@@ -6154,7 +7626,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "取り扱い",
     "suffix": "をしなかった。",
     "sentenceJa": "先生は彼女に正当な取り扱いをしなかった。",
-    "sentenceEn": "The teacher didn't do her justice."
+    "sentenceEn": "The teacher didn't do her justice.",
+    "prefixFurigana": "{先生|せんせい}は{彼女|かのじょ}に{正当|せいとう}な",
+    "targetFurigana": "{取り扱|とりあつか}い",
+    "suffixFurigana": "をしなかった。",
+    "sentenceFurigana": "{先生|せんせい}は{彼女|かのじょ}に{正当|せいとう}な{取り扱|とりあつか}いをしなかった。"
   },
   {
     "id": "trap-n1-abfc489fce",
@@ -6172,7 +7648,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "取り扱う",
     "suffix": "。",
     "sentenceJa": "算数は数を取り扱う。",
-    "sentenceEn": "Arithmetic deals with numbers."
+    "sentenceEn": "Arithmetic deals with numbers.",
+    "prefixFurigana": "{算数|さんすう}は{数|かず}を",
+    "targetFurigana": "{取り扱|とりあつか}う",
+    "suffixFurigana": "。",
+    "sentenceFurigana": "{算数|さんすう}は{数|かず}を{取り扱|とりあつか}う。"
   },
   {
     "id": "trap-n1-b921800266",
@@ -6189,7 +7669,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "取り調べる",
     "suffix": "ために実情調査委員会が作られた。",
     "sentenceJa": "事件の原因を取り調べるために実情調査委員会が作られた。",
-    "sentenceEn": "A fact-finding committee was set up to determine the cause of the incident."
+    "sentenceEn": "A fact-finding committee was set up to determine the cause of the incident.",
+    "prefixFurigana": "{事件|じけん}の{原因|げんいん}を",
+    "targetFurigana": "{取り調|とりしら}べる",
+    "suffixFurigana": "ために{実情|じつじょう}{調査|ちょうさ}{委員|いいん}{会|かい}が{作|つく}られた。",
+    "sentenceFurigana": "{事件|じけん}の{原因|げんいん}を{取り調|とりしら}べるために{実情|じつじょう}{調査|ちょうさ}{委員|いいん}{会|かい}が{作|つく}られた。"
   },
   {
     "id": "trap-n1-340d51444a",
@@ -6205,7 +7689,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "入賞",
     "suffix": "した。",
     "sentenceJa": "その少女はリサイタルでのすばらしい踊りで、入賞した。",
-    "sentenceEn": "The girl took the cake for her wonderful dancing at the recital."
+    "sentenceEn": "The girl took the cake for her wonderful dancing at the recital.",
+    "prefixFurigana": "その{少女|しょうじょ}はリサイタルでのすばらしい{踊|おど}りで、",
+    "targetFurigana": "{入賞|にゅうしょう}",
+    "suffixFurigana": "した。",
+    "sentenceFurigana": "その{少女|しょうじょ}はリサイタルでのすばらしい{踊|おど}りで、{入賞|にゅうしょう}した。"
   },
   {
     "id": "trap-n1-23a4264046",
@@ -6223,7 +7711,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "配偶者",
     "suffix": "だった。",
     "sentenceJa": "彼女は彼が貧しいときも彼を支えるすばらしい配偶者だった。",
-    "sentenceEn": "She was an excellent spouse who stood by him through poverty."
+    "sentenceEn": "She was an excellent spouse who stood by him through poverty.",
+    "prefixFurigana": "{彼女|かのじょ}は{彼|かれ}が{貧|まず}しいときも{彼|かれ}を{支|ささ}えるすばらしい",
+    "targetFurigana": "{配偶者|はいぐうしゃ}",
+    "suffixFurigana": "だった。",
+    "sentenceFurigana": "{彼女|かのじょ}は{彼|かれ}が{貧|まず}しいときも{彼|かれ}を{支|ささ}えるすばらしい{配偶者|はいぐうしゃ}だった。"
   },
   {
     "id": "trap-n1-c015ddb7c6",
@@ -6239,7 +7731,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "放射能",
     "suffix": "が原子力発電所から漏れた。",
     "sentenceJa": "放射能が原子力発電所から漏れた。",
-    "sentenceEn": "The radioactivity leaked out of the nuclear power plant."
+    "sentenceEn": "The radioactivity leaked out of the nuclear power plant.",
+    "prefixFurigana": "",
+    "targetFurigana": "{放射能|ほうしゃのう}",
+    "suffixFurigana": "が{原子力|げんしりょく}{発電|はつでん}{所|しょ}から{漏|も}れた。",
+    "sentenceFurigana": "{放射能|ほうしゃのう}が{原子力|げんしりょく}{発電|はつでん}{所|しょ}から{漏|も}れた。"
   },
   {
     "id": "trap-n1-12610e01b7",
@@ -6255,7 +7751,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "待ち遠しい",
     "suffix": "よ。",
     "sentenceJa": "金曜日のパーティーが待ち遠しいよ。",
-    "sentenceEn": "We can hardly wait for the party on Friday."
+    "sentenceEn": "We can hardly wait for the party on Friday.",
+    "prefixFurigana": "{金曜日|きんようび}のパーティーが",
+    "targetFurigana": "{待ち遠|まちどお}しい",
+    "suffixFurigana": "よ。",
+    "sentenceFurigana": "{金曜日|きんようび}のパーティーが{待ち遠|まちどお}しいよ。"
   },
   {
     "id": "trap-n1-d89704e126",
@@ -6274,7 +7774,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "結び付ける",
     "suffix": "べきだ。",
     "sentenceJa": "理論と実際を結び付けるべきだ。",
-    "sentenceEn": "You should combine theory with practice."
+    "sentenceEn": "You should combine theory with practice.",
+    "prefixFurigana": "{理論|りろん}と{実際|じっさい}を",
+    "targetFurigana": "{結び付|むすびつ}ける",
+    "suffixFurigana": "べきだ。",
+    "sentenceFurigana": "{理論|りろん}と{実際|じっさい}を{結び付|むすびつ}けるべきだ。"
   },
   {
     "id": "trap-n1-1bf02a30c2",
@@ -6291,7 +7795,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "物足りない",
     "suffix": "。",
     "sentenceJa": "このドラマは単純な勧善懲悪もので、今一つ深みに欠けて物足りない。",
-    "sentenceEn": "This drama is missing something. All it is is a simple cautionary tale with no real depth."
+    "sentenceEn": "This drama is missing something. All it is is a simple cautionary tale with no real depth.",
+    "prefixFurigana": "このドラマは{単純|たんじゅん}な{勧善懲悪|かんぜんちょうあく}もので、{今一|いまひと}つ{深|ふか}みに{欠|か}けて",
+    "targetFurigana": "{物足|ものた}りない",
+    "suffixFurigana": "。",
+    "sentenceFurigana": "このドラマは{単純|たんじゅん}な{勧善懲悪|かんぜんちょうあく}もので、{今一|いまひと}つ{深|ふか}みに{欠|か}けて{物足|ものた}りない。"
   },
   {
     "id": "trap-n1-864c7afe67",
@@ -6309,7 +7817,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "両極",
     "suffix": "」という表現の使い方を学びました。",
     "sentenceJa": "今日の授業で「両極」という表現の使い方を学びました。",
-    "sentenceEn": "In today’s class, I learned how to use the expression “both extremes.”"
+    "sentenceEn": "In today’s class, I learned how to use the expression “both extremes.”",
+    "prefixFurigana": "{今日|きょう}の{授業|じゅぎょう}で「",
+    "targetFurigana": "{両極|りょうきょく}",
+    "suffixFurigana": "」という{表現|ひょうげん}の{使い方|つかいかた}を{学|まな}びました。",
+    "sentenceFurigana": "{今日|きょう}の{授業|じゅぎょう}で「{両極|りょうきょく}」という{表現|ひょうげん}の{使い方|つかいかた}を{学|まな}びました。"
   },
   {
     "id": "trap-n1-720dca0098",
@@ -6326,7 +7838,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "了承",
     "suffix": "します。",
     "sentenceJa": "この件についてのあなたのお求めを了承します。",
-    "sentenceEn": "Your request of this matter has been accepted."
+    "sentenceEn": "Your request of this matter has been accepted.",
+    "prefixFurigana": "この{件|けん}についてのあなたのお{求|もと}めを",
+    "targetFurigana": "{了承|りょうしょう}",
+    "suffixFurigana": "します。",
+    "sentenceFurigana": "この{件|けん}についてのあなたのお{求|もと}めを{了承|りょうしょう}します。"
   },
   {
     "id": "trap-n1-3a407bbc0b",
@@ -6342,7 +7858,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "間柄",
     "suffix": "なのだ。",
     "sentenceJa": "君と彼とはどういう間柄なのだ。",
-    "sentenceEn": "What's your relation with him?"
+    "sentenceEn": "What's your relation with him?",
+    "prefixFurigana": "{君|きみ}と{彼|かれ}とはどういう",
+    "targetFurigana": "{間柄|あいだがら}",
+    "suffixFurigana": "なのだ。",
+    "sentenceFurigana": "{君|きみ}と{彼|かれ}とはどういう{間柄|あいだがら}なのだ。"
   },
   {
     "id": "trap-n1-f06b8ec290",
@@ -6359,7 +7879,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "朝寝坊",
     "suffix": "が癖になった。",
     "sentenceJa": "朝寝坊が癖になった。",
-    "sentenceEn": "I took to sleeping late in the morning."
+    "sentenceEn": "I took to sleeping late in the morning.",
+    "prefixFurigana": "",
+    "targetFurigana": "{朝寝坊|あさねぼう}",
+    "suffixFurigana": "が{癖|くせ}になった。",
+    "sentenceFurigana": "{朝寝坊|あさねぼう}が{癖|くせ}になった。"
   },
   {
     "id": "trap-n1-cb8beba501",
@@ -6376,7 +7900,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "圧力",
     "suffix": "で落ちた。",
     "sentenceJa": "橋が圧力で落ちた。",
-    "sentenceEn": "The bridge crashed under the pressure."
+    "sentenceEn": "The bridge crashed under the pressure.",
+    "prefixFurigana": "{橋|はし}が",
+    "targetFurigana": "{圧力|あつりょく}",
+    "suffixFurigana": "で{落|お}ちた。",
+    "sentenceFurigana": "{橋|はし}が{圧力|あつりょく}で{落|お}ちた。"
   },
   {
     "id": "trap-n1-20b715b301",
@@ -6393,7 +7921,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "後回し",
     "suffix": "にしよう。",
     "sentenceJa": "その問題は後回しにしよう。",
-    "sentenceEn": "Let's leave that matter for later."
+    "sentenceEn": "Let's leave that matter for later.",
+    "prefixFurigana": "その{問題|もんだい}は",
+    "targetFurigana": "{後回|あとまわ}し",
+    "suffixFurigana": "にしよう。",
+    "sentenceFurigana": "その{問題|もんだい}は{後回|あとまわ}しにしよう。"
   },
   {
     "id": "trap-n1-73a0f22579",
@@ -6412,7 +7944,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "いい加減",
     "suffix": "飽きてしまった。",
     "sentenceJa": "この静かな生活にはいい加減飽きてしまった。",
-    "sentenceEn": "I'm about tired of this quiet life."
+    "sentenceEn": "I'm about tired of this quiet life.",
+    "prefixFurigana": "この{静|しず}かな{生活|せいかつ}には",
+    "targetFurigana": "いい{加減|かげん}",
+    "suffixFurigana": "{飽|あ}きてしまった。",
+    "sentenceFurigana": "この{静|しず}かな{生活|せいかつ}にはいい{加減|かげん}{飽|あ}きてしまった。"
   },
   {
     "id": "trap-n1-f555ee7e0d",
@@ -6431,7 +7967,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "行き違い",
     "suffix": "になった。",
     "sentenceJa": "私たちの手紙は行き違いになった。",
-    "sentenceEn": "Our letters crossed each other."
+    "sentenceEn": "Our letters crossed each other.",
+    "prefixFurigana": "{私|わたし}たちの{手紙|てがみ}は",
+    "targetFurigana": "{行き違|いきちが}い",
+    "suffixFurigana": "になった。",
+    "sentenceFurigana": "{私|わたし}たちの{手紙|てがみ}は{行き違|いきちが}いになった。"
   },
   {
     "id": "trap-n1-2f38551629",
@@ -6448,7 +7988,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "一概に",
     "suffix": "は言えませんね。",
     "sentenceJa": "そうですね。一概には言えませんね。",
-    "sentenceEn": "Yes, well, that depends."
+    "sentenceEn": "Yes, well, that depends.",
+    "prefixFurigana": "そうですね。",
+    "targetFurigana": "{一概|いちがい}に",
+    "suffixFurigana": "は{言|い}えませんね。",
+    "sentenceFurigana": "そうですね。{一概|いちがい}には{言|い}えませんね。"
   },
   {
     "id": "trap-n1-1d578a6738",
@@ -6467,7 +8011,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "一定",
     "suffix": "の速度で走らせた。",
     "sentenceJa": "彼は自転車を一定の速度で走らせた。",
-    "sentenceEn": "He rode his bicycle at a uniform speed."
+    "sentenceEn": "He rode his bicycle at a uniform speed.",
+    "prefixFurigana": "{彼|かれ}は{自転車|じてんしゃ}を",
+    "targetFurigana": "{一定|いちじょう}",
+    "suffixFurigana": "の{速度|そくど}で{走|はし}らせた。",
+    "sentenceFurigana": "{彼|かれ}は{自転車|じてんしゃ}を{一定|いちじょう}の{速度|そくど}で{走|はし}らせた。"
   },
   {
     "id": "trap-n1-a9862719ca",
@@ -6483,7 +8031,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "一部分",
     "suffix": "だけが地震で破壊された。",
     "sentenceJa": "その建物の一部分だけが地震で破壊された。",
-    "sentenceEn": "Only part of the building has been destroyed by the earthquake."
+    "sentenceEn": "Only part of the building has been destroyed by the earthquake.",
+    "prefixFurigana": "その{建物|たてもの}の",
+    "targetFurigana": "{一部分|いちぶぶん}",
+    "suffixFurigana": "だけが{地震|じしん}で{破壊|はかい}された。",
+    "sentenceFurigana": "その{建物|たてもの}の{一部分|いちぶぶん}だけが{地震|じしん}で{破壊|はかい}された。"
   },
   {
     "id": "trap-n1-b46bd7a8fa",
@@ -6500,7 +8052,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "一挙に",
     "suffix": "作業を進めたので、時間通りに終わりました。",
     "sentenceJa": "一挙に作業を進めたので、時間通りに終わりました。",
-    "sentenceEn": "Since I tackled the work all at once, I finished on time."
+    "sentenceEn": "Since I tackled the work all at once, I finished on time.",
+    "prefixFurigana": "",
+    "targetFurigana": "{一挙|いっきょ}に",
+    "suffixFurigana": "{作業|さぎょう}を{進|すす}めたので、{時間|じかん}{通|どお}りに{終|お}わりました。",
+    "sentenceFurigana": "{一挙|いっきょ}に{作業|さぎょう}を{進|すす}めたので、{時間|じかん}{通|どお}りに{終|お}わりました。"
   },
   {
     "id": "trap-n1-dab09239d8",
@@ -6516,7 +8072,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "稲光",
     "suffix": "より速かった。",
     "sentenceJa": "そのジェット機は稲光より速かった。",
-    "sentenceEn": "Those jets were faster than lightning."
+    "sentenceEn": "Those jets were faster than lightning.",
+    "prefixFurigana": "その{ジェット機|じぇっとき}は",
+    "targetFurigana": "{稲光|いなびかり}",
+    "suffixFurigana": "より{速|はや}かった。",
+    "sentenceFurigana": "その{ジェット機|じぇっとき}は{稲光|いなびかり}より{速|はや}かった。"
   },
   {
     "id": "trap-n1-00b65e54a4",
@@ -6533,7 +8093,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "裏返し",
     "suffix": "になってしまった。",
     "sentenceJa": "ここへ来る途中、風が強すぎて僕の傘は裏返しになってしまった。",
-    "sentenceEn": "On my way here, the strong wind blew my umbrella inside out."
+    "sentenceEn": "On my way here, the strong wind blew my umbrella inside out.",
+    "prefixFurigana": "ここへ{来|く}る{途中|とちゅう}、{風|かぜ}が{強|つよ}すぎて{僕|ぼく}の{傘|かさ}は",
+    "targetFurigana": "{裏返|うらがえ}し",
+    "suffixFurigana": "になってしまった。",
+    "sentenceFurigana": "ここへ{来|く}る{途中|とちゅう}、{風|かぜ}が{強|つよ}すぎて{僕|ぼく}の{傘|かさ}は{裏返|うらがえ}しになってしまった。"
   },
   {
     "id": "trap-n1-3803d886c8",
@@ -6549,7 +8113,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "上回る",
     "suffix": "いかなる所得にもかかる。",
     "sentenceJa": "所得税は控除額を上回るいかなる所得にもかかる。",
-    "sentenceEn": "An income tax is levied on any income that exceeds deductions."
+    "sentenceEn": "An income tax is levied on any income that exceeds deductions.",
+    "prefixFurigana": "{所得|しょとく}{税|ぜい}は{控除|こうじょ}{額|がく}を",
+    "targetFurigana": "{上回|うわまわ}る",
+    "suffixFurigana": "いかなる{所得|しょとく}にもかかる。",
+    "sentenceFurigana": "{所得|しょとく}{税|ぜい}は{控除|こうじょ}{額|がく}を{上回|うわまわ}るいかなる{所得|しょとく}にもかかる。"
   },
   {
     "id": "trap-n1-93fe84e748",
@@ -6568,7 +8136,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "婉曲",
     "suffix": "な対応のおかげで、問題は無事に解決しました。",
     "sentenceJa": "彼の婉曲な対応のおかげで、問題は無事に解決しました。",
-    "sentenceEn": "Thanks to his tactful handling of the situation, the problem was successfully resolved."
+    "sentenceEn": "Thanks to his tactful handling of the situation, the problem was successfully resolved.",
+    "prefixFurigana": "{彼|かれ}の",
+    "targetFurigana": "{婉曲|えんきょく}",
+    "suffixFurigana": "な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。",
+    "sentenceFurigana": "{彼|かれ}の{婉曲|えんきょく}な{対応|たいおう}のおかげで、{問題|もんだい}は{無事|ぶじ}に{解決|かいけつ}しました。"
   },
   {
     "id": "trap-n1-d8d1560f90",
@@ -6586,7 +8158,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "演習",
     "suffix": "ために、事前の準備を行いました。",
     "sentenceJa": "計画をスムーズに演習ために、事前の準備を行いました。",
-    "sentenceEn": "We made preparations in advance to ensure the plan went smoothly."
+    "sentenceEn": "We made preparations in advance to ensure the plan went smoothly.",
+    "prefixFurigana": "{計画|けいかく}をスムーズに",
+    "targetFurigana": "{演習|えんしゅう}",
+    "suffixFurigana": "ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。",
+    "sentenceFurigana": "{計画|けいかく}をスムーズに{演習|えんしゅう}ために、{事前|じぜん}の{準備|じゅんび}を{行|おこな}いました。"
   },
   {
     "id": "trap-n1-62e5ed991c",
@@ -6603,7 +8179,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "演出",
     "suffix": "された。",
     "sentenceJa": "その劇は彼によって演出された。",
-    "sentenceEn": "The play was produced by him."
+    "sentenceEn": "The play was produced by him.",
+    "prefixFurigana": "その{劇|げき}は{彼|かれ}によって",
+    "targetFurigana": "{演出|えんしゅつ}",
+    "suffixFurigana": "された。",
+    "sentenceFurigana": "その{劇|げき}は{彼|かれ}によって{演出|えんしゅつ}された。"
   },
   {
     "id": "trap-n1-263aeb9d53",
@@ -6619,7 +8199,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "応急",
     "suffix": "の修理が必要です。",
     "sentenceJa": "これらの建物は応急の修理が必要です。",
-    "sentenceEn": "These buildings need temporary repairs."
+    "sentenceEn": "These buildings need temporary repairs.",
+    "prefixFurigana": "これらの{建物|たてもの}は",
+    "targetFurigana": "{応急|おうきゅう}",
+    "suffixFurigana": "の{修理|しゅうり}が{必要|ひつよう}です。",
+    "sentenceFurigana": "これらの{建物|たてもの}は{応急|おうきゅう}の{修理|しゅうり}が{必要|ひつよう}です。"
   },
   {
     "id": "trap-n1-e3025feafa",
@@ -6636,7 +8220,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "臆病",
     "suffix": "だとは思わなかった。",
     "sentenceJa": "彼がああ臆病だとは思わなかった。",
-    "sentenceEn": "I did not think he was so timid."
+    "sentenceEn": "I did not think he was so timid.",
+    "prefixFurigana": "{彼|かれ}がああ",
+    "targetFurigana": "{臆病|おくびょう}",
+    "suffixFurigana": "だとは{思|おも}わなかった。",
+    "sentenceFurigana": "{彼|かれ}がああ{臆病|おくびょう}だとは{思|おも}わなかった。"
   },
   {
     "id": "trap-n1-f0375aa40d",
@@ -6652,7 +8240,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "同い年",
     "suffix": "だ。",
     "sentenceJa": "君と僕とは同い年だ。",
-    "sentenceEn": "You and I are the same age."
+    "sentenceEn": "You and I are the same age.",
+    "prefixFurigana": "{君|きみ}と{僕|ぼく}とは",
+    "targetFurigana": "{同い年|おないどし}",
+    "suffixFurigana": "だ。",
+    "sentenceFurigana": "{君|きみ}と{僕|ぼく}とは{同い年|おないどし}だ。"
   },
   {
     "id": "trap-n1-64ad3d3360",
@@ -6669,7 +8261,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "折り返す",
     "suffix": "ことが求められます。",
     "sentenceJa": "大切な場面でしっかり折り返すことが求められます。",
-    "sentenceEn": "You’ll need to be able to respond effectively in important situations."
+    "sentenceEn": "You’ll need to be able to respond effectively in important situations.",
+    "prefixFurigana": "{大切|たいせつ}な{場面|ばめん}でしっかり",
+    "targetFurigana": "{折り返|おりかえ}す",
+    "suffixFurigana": "ことが{求|もと}められます。",
+    "sentenceFurigana": "{大切|たいせつ}な{場面|ばめん}でしっかり{折り返|おりかえ}すことが{求|もと}められます。"
   },
   {
     "id": "trap-n1-40f53466d6",
@@ -6687,7 +8283,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "階級",
     "suffix": "に昇進した。",
     "sentenceJa": "彼は２年前に、大佐の階級に昇進した。",
-    "sentenceEn": "He was raised to the rank of colonel two years ago."
+    "sentenceEn": "He was raised to the rank of colonel two years ago.",
+    "prefixFurigana": "{彼|かれ}は２{年|ねん}{前|まえ}に、{大佐|たいさ}の",
+    "targetFurigana": "{階級|かいきゅう}",
+    "suffixFurigana": "に{昇進|しょうしん}した。",
+    "sentenceFurigana": "{彼|かれ}は２{年|ねん}{前|まえ}に、{大佐|たいさ}の{階級|かいきゅう}に{昇進|しょうしん}した。"
   },
   {
     "id": "trap-n1-0abb370e7c",
@@ -6703,7 +8303,11 @@ export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
     "targetSurface": "海峡",
     "suffix": "に長い橋を建設中です。",
     "sentenceJa": "その海峡に長い橋を建設中です。",
-    "sentenceEn": "They are building a long bridge across the channel."
+    "sentenceEn": "They are building a long bridge across the channel.",
+    "prefixFurigana": "その",
+    "targetFurigana": "{海峡|かいきょう}",
+    "suffixFurigana": "に{長|なが}い{橋|はし}を{建設|けんせつ}{中|ちゅう}です。",
+    "sentenceFurigana": "その{海峡|かいきょう}に{長|なが}い{橋|はし}を{建設|けんせつ}{中|ちゅう}です。"
   }
 ] as unknown as readonly PhoneticTrapVocabItem[];
 

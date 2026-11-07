@@ -33,6 +33,8 @@ import {
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
 import { addGrammarToSrs } from "@/lib/srs/service";
 import { grammarGuideHref } from "@/data/grammar";
+import { FuriganaText } from "@/components/ui/FuriganaText";
+import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
 
 function loadInitialSession(sessionId: string): StarScrambleSession {
   const existing = getGameSession<StarScrambleSession>("jlpt-star", sessionId);
@@ -53,7 +55,7 @@ export default function StarScramblePlayPage() {
   const params = useParams<{ sessionId: string }>();
   const sessionId = params?.sessionId ?? "default";
   const router = useRouter();
-  const { playSentence } = useJapaneseAudio();
+  const { playSentence, stopAudio } = useJapaneseAudio();
 
   const [session, dispatch] = useReducer(
     starScrambleReducer,
@@ -62,17 +64,34 @@ export default function StarScramblePlayPage() {
   );
 
   const [savedGrammarIds, setSavedGrammarIds] = useState<Record<string, boolean>>({});
+  const [showFurigana, setShowFurigana] = useState<boolean>(
+    Boolean(session.settings.showFurigana),
+  );
   const questionStartRef = useRef<number>(Date.now());
 
   const currentQuestion = session.questions[session.currentIndex];
   const allSlotsFilled = session.placedTileIds.every((id) => id !== null);
   const anySlotFilled = session.placedTileIds.some((id) => id !== null);
 
+  const isSessionActive = session.status === "playing";
+  const isQuittingRef = useRef(false);
+  const { quitDialogOpen, requestQuit, cancelQuit, confirmQuit } =
+    useQuitSessionGuard(isSessionActive);
+
+  const quitSession = useCallback(() => {
+    isQuittingRef.current = true;
+    confirmQuit();
+    stopAudio();
+    sessionStorage.removeItem(`jlpt-star-session:${session.sessionId}`);
+    router.replace("/games/jlpt/star-scramble");
+  }, [confirmQuit, router, session.sessionId, stopAudio]);
+
   useEffect(() => {
     questionStartRef.current = Date.now();
   }, [session.currentIndex]);
 
   useEffect(() => {
+    if (isQuittingRef.current) return;
     saveGameSession("jlpt-star", session.sessionId, session);
     if (session.status === "finished") {
       const existingResult = getGameResult<StarScrambleResultSummary>(
@@ -116,6 +135,7 @@ export default function StarScramblePlayPage() {
 
   useEffect(() => {
     function onKeyDown(e: KeyboardEvent) {
+      if (quitDialogOpen) return;
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       if (!currentQuestion) return;
 
@@ -151,7 +171,7 @@ export default function StarScramblePlayPage() {
 
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [allSlotsFilled, currentQuestion, handleNext, handleSubmit, session.revealed]);
+  }, [allSlotsFilled, currentQuestion, handleNext, handleSubmit, quitDialogOpen, session.revealed]);
 
   async function handleSaveGrammarToSrs() {
     if (!currentQuestion) return;
@@ -184,6 +204,7 @@ export default function StarScramblePlayPage() {
       label="★ STAR SENTENCE SCRAMBLE"
       glyph="★"
       homeHref="/games/jlpt/star-scramble"
+      onNavigateHome={isSessionActive ? requestQuit : undefined}
       rightSlot={
         <div className="flex flex-wrap items-center gap-2">
           <span className="rounded-full bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
@@ -195,6 +216,18 @@ export default function StarScramblePlayPage() {
           <span className="hidden rounded-full border border-[var(--line)] bg-[var(--surface)] px-3 py-1 text-xs font-bold text-[var(--muted)] sm:inline-block">
             4/4 Order: {fullOrderCorrectCount}
           </span>
+          <button
+            type="button"
+            aria-pressed={showFurigana}
+            onClick={() => setShowFurigana((prev) => !prev)}
+            className={`rounded-full border px-3.5 py-1.5 text-xs font-bold transition ${
+              showFurigana
+                ? "border-[var(--primary)] bg-[var(--sakura-light)] text-[var(--primary-fg)]"
+                : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)] hover:border-[var(--sakura)] hover:text-[var(--primary-fg)]"
+            }`}
+          >
+            あ Furigana: {showFurigana ? "ON" : "OFF"}
+          </button>
           <button
             type="button"
             onClick={handleEndSession}
@@ -254,7 +287,13 @@ export default function StarScramblePlayPage() {
             className="flex flex-wrap items-end gap-2.5 rounded-2xl border border-[var(--line)] bg-[var(--bg)]/60 p-5 font-japanese text-xl leading-relaxed sm:p-6 sm:text-2xl"
           >
             {currentQuestion.prefix && (
-              <span className="py-1.5 font-bold">{currentQuestion.prefix}</span>
+              <span className="py-1.5 font-bold">
+                <FuriganaText
+                  text={currentQuestion.prefix}
+                  furiganaText={currentQuestion.prefixFurigana}
+                  showFurigana={showFurigana}
+                />
+              </span>
             )}
 
             {([0, 1, 2, 3] as const).map((slotIdx) => {
@@ -310,7 +349,11 @@ export default function StarScramblePlayPage() {
                         <span className="rounded bg-black/10 px-1.5 py-0.5 font-sans text-xs font-extrabold dark:bg-white/10">
                           {placedTile.optionNumber}
                         </span>
-                        <span>{placedTile.text}</span>
+                        <FuriganaText
+                          text={placedTile.text}
+                          furiganaText={placedTile.furiganaText}
+                          showFurigana={showFurigana}
+                        />
                       </span>
                     ) : isStarSlot ? (
                       <span className="text-base font-extrabold text-[var(--primary-fg)]">
@@ -325,7 +368,13 @@ export default function StarScramblePlayPage() {
             })}
 
             {currentQuestion.suffix && (
-              <span className="py-1.5 font-bold">{currentQuestion.suffix}</span>
+              <span className="py-1.5 font-bold">
+                <FuriganaText
+                  text={currentQuestion.suffix}
+                  furiganaText={currentQuestion.suffixFurigana}
+                  showFurigana={showFurigana}
+                />
+              </span>
             )}
           </div>
 
@@ -391,7 +440,11 @@ export default function StarScramblePlayPage() {
                         {tile.optionNumber}
                       </span>
                       <span className="font-japanese text-lg font-bold sm:text-xl">
-                        {tile.text}
+                        <FuriganaText
+                          text={tile.text}
+                          furiganaText={tile.furiganaText}
+                          showFurigana={showFurigana}
+                        />
                       </span>
                     </div>
 
@@ -493,7 +546,13 @@ export default function StarScramblePlayPage() {
                     Correct Sentence Order (★ highlighted in red)
                   </div>
                   <p className="mt-2 font-japanese text-xl font-bold leading-relaxed sm:text-2xl">
-                    {currentQuestion.prefix && <span>{currentQuestion.prefix}</span>}
+                    {currentQuestion.prefix && (
+                      <FuriganaText
+                        text={currentQuestion.prefix}
+                        furiganaText={currentQuestion.prefixFurigana}
+                        showFurigana={showFurigana}
+                      />
+                    )}
                     {currentQuestion.segments.map((seg, idx) => (
                       <span
                         key={idx}
@@ -503,10 +562,21 @@ export default function StarScramblePlayPage() {
                             : "mx-0.5 underline decoration-[var(--line)] underline-offset-4"
                         }
                       >
-                        {idx === currentQuestion.starSlotIndex ? `★${seg}` : seg}
+                        {idx === currentQuestion.starSlotIndex && "★"}
+                        <FuriganaText
+                          text={seg}
+                          furiganaText={currentQuestion.segmentsFurigana?.[idx]}
+                          showFurigana={showFurigana}
+                        />
                       </span>
                     ))}
-                    {currentQuestion.suffix && <span>{currentQuestion.suffix}</span>}
+                    {currentQuestion.suffix && (
+                      <FuriganaText
+                        text={currentQuestion.suffix}
+                        furiganaText={currentQuestion.suffixFurigana}
+                        showFurigana={showFurigana}
+                      />
+                    )}
                   </p>
                   {currentQuestion.romaji && (
                     <p className="mt-1.5 text-xs text-[var(--muted)]">
@@ -582,6 +652,12 @@ export default function StarScramblePlayPage() {
           </div>
         )}
       </section>
+
+      <QuitSessionDialog
+        open={quitDialogOpen}
+        onCancel={cancelQuit}
+        onConfirm={quitSession}
+      />
     </GameLayout>
   );
 }

@@ -22,6 +22,8 @@
         "build:kanji-vocab": "tsx scripts/build-kanji-vocab.ts",
         "build:shiritori-data": "tsx scripts/build-shiritori-data.ts",
         "build:homophones": "tsx scripts/build-homophones.ts",
+        "build:jlpt-synonyms": "tsx scripts/build-synonym-match-data.ts",
+        "build:instant-reply": "tsx scripts/build-instant-reply-data.ts",
         "build:audio:kana": "tsx scripts/build-kana-audio.ts",
         "build:audio:kanji": "tsx scripts/build-kanji-audio.ts",
         "build:audio:vocab": "tsx scripts/build-vocab-audio.ts",

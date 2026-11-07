@@ -17,6 +17,7 @@ export type StarSlotTuple<T> = [T, T, T, T];
 export interface StarScrambleTile {
   id: string;
   text: string;
+  furiganaText: string;
   correctSlotIndex: 0 | 1 | 2 | 3;
   optionNumber: 1 | 2 | 3 | 4;
 }
@@ -27,8 +28,11 @@ export interface StarScrambleQuestion {
   level: StarScrambleLevel;
   jlpt: 5 | 4 | 3 | 2 | 1;
   prefix: string;
+  prefixFurigana: string;
   segments: StarSlotTuple<string>;
+  segmentsFurigana: StarSlotTuple<string>;
   suffix: string;
+  suffixFurigana: string;
   fullSentence: string;
   furigana: string;
   romaji: string;
@@ -49,6 +53,7 @@ export interface StarScrambleSettings {
   levels: StarScrambleLevel[];
   size: StarScrambleSessionSize;
   showEnglishHint: boolean;
+  showFurigana?: boolean;
   /** Optional subset of specific item IDs when practicing missed puzzles. */
   onlyItemIds?: string[];
 }
@@ -109,6 +114,7 @@ export const DEFAULT_STAR_SCRAMBLE_SETTINGS: StarScrambleSettings = {
   levels: ["N5"],
   size: 10,
   showEnglishHint: true,
+  showFurigana: false,
 };
 
 function shuffleWithRng<T>(items: readonly T[], rng: () => number): T[] {
@@ -129,15 +135,22 @@ export function buildShuffledTiles(
   itemId: string,
   segments: StarSlotTuple<string>,
   rng: () => number = Math.random,
+  segmentsFurigana?: StarSlotTuple<string>,
 ): {
   correctOrderIds: StarSlotTuple<string>;
   options: StarSlotTuple<StarScrambleTile>;
 } {
-  const baseTiles: Array<{ id: string; text: string; correctSlotIndex: 0 | 1 | 2 | 3 }> = [
-    { id: `${itemId}-seg-0`, text: segments[0], correctSlotIndex: 0 },
-    { id: `${itemId}-seg-1`, text: segments[1], correctSlotIndex: 1 },
-    { id: `${itemId}-seg-2`, text: segments[2], correctSlotIndex: 2 },
-    { id: `${itemId}-seg-3`, text: segments[3], correctSlotIndex: 3 },
+  const furiTuple = segmentsFurigana ?? segments;
+  const baseTiles: Array<{
+    id: string;
+    text: string;
+    furiganaText: string;
+    correctSlotIndex: 0 | 1 | 2 | 3;
+  }> = [
+    { id: `${itemId}-seg-0`, text: segments[0], furiganaText: furiTuple[0], correctSlotIndex: 0 },
+    { id: `${itemId}-seg-1`, text: segments[1], furiganaText: furiTuple[1], correctSlotIndex: 1 },
+    { id: `${itemId}-seg-2`, text: segments[2], furiganaText: furiTuple[2], correctSlotIndex: 2 },
+    { id: `${itemId}-seg-3`, text: segments[3], furiganaText: furiTuple[3], correctSlotIndex: 3 },
   ];
 
   const correctOrderIds: StarSlotTuple<string> = [
@@ -213,7 +226,13 @@ export function createStarScrambleSession(
 
   const questions: StarScrambleQuestion[] = selectedItems.map((item, idx) => {
     const starSlotIndex: 1 | 2 = rng() < 0.35 ? 1 : 2;
-    const { correctOrderIds, options } = buildShuffledTiles(item.id, item.segments, rng);
+    const segmentsFurigana = item.segmentsFurigana ?? item.segments;
+    const { correctOrderIds, options } = buildShuffledTiles(
+      item.id,
+      item.segments,
+      rng,
+      segmentsFurigana,
+    );
 
     return {
       id: `${resolvedSessionId}-q-${idx + 1}`,
@@ -221,8 +240,11 @@ export function createStarScrambleSession(
       level: item.level,
       jlpt: item.jlpt,
       prefix: item.prefix,
+      prefixFurigana: item.prefixFurigana ?? item.prefix,
       segments: item.segments,
+      segmentsFurigana,
       suffix: item.suffix,
+      suffixFurigana: item.suffixFurigana ?? item.suffix,
       fullSentence: item.fullSentence,
       furigana: item.furigana,
       romaji: item.romaji,

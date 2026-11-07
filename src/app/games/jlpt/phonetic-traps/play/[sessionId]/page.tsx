@@ -29,6 +29,8 @@ import {
 } from "@/engine/jlptPhoneticTraps";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
 import { addVocabularyToSrs } from "@/lib/srs/service";
+import { FuriganaText } from "@/components/ui/FuriganaText";
+import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
 
 function loadInitialSession(sessionId: string): PhoneticTrapSession {
   const existing = getGameSession<PhoneticTrapSession>("jlpt-traps", sessionId);
@@ -54,7 +56,7 @@ export default function PhoneticTrapPlayPage() {
   const params = useParams<{ sessionId: string }>();
   const sessionId = params?.sessionId ?? "default";
   const router = useRouter();
-  const { playVocab, playSentence } = useJapaneseAudio();
+  const { playVocab, playSentence, stopAudio } = useJapaneseAudio();
 
   const [session, dispatch] = useReducer(
     phoneticTrapReducer,
@@ -63,15 +65,32 @@ export default function PhoneticTrapPlayPage() {
   );
 
   const [savedWords, setSavedWords] = useState<Record<string, boolean>>({});
+  const [showFurigana, setShowFurigana] = useState<boolean>(
+    Boolean(session.settings.showFurigana),
+  );
   const questionStartRef = useRef<number>(Date.now());
 
   const currentQuestion = session.questions[session.currentIndex];
+
+  const isSessionActive = session.status === "playing";
+  const isQuittingRef = useRef(false);
+  const { quitDialogOpen, requestQuit, cancelQuit, confirmQuit } =
+    useQuitSessionGuard(isSessionActive);
+
+  const quitSession = useCallback(() => {
+    isQuittingRef.current = true;
+    confirmQuit();
+    stopAudio();
+    sessionStorage.removeItem(`jlpt-traps-session:${session.sessionId}`);
+    router.replace("/games/jlpt/phonetic-traps");
+  }, [confirmQuit, router, session.sessionId, stopAudio]);
 
   useEffect(() => {
     questionStartRef.current = Date.now();
   }, [session.currentIndex]);
 
   useEffect(() => {
+    if (isQuittingRef.current) return;
     saveGameSession("jlpt-traps", session.sessionId, session);
     if (session.status === "finished") {
       const existingResult = getGameResult<PhoneticTrapResultSummary>(
@@ -121,6 +140,7 @@ export default function PhoneticTrapPlayPage() {
 
   useEffect(() => {
     function onKeyDown(e: KeyboardEvent) {
+      if (quitDialogOpen) return;
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       if (!currentQuestion) return;
 
@@ -142,7 +162,7 @@ export default function PhoneticTrapPlayPage() {
 
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [currentQuestion, handleNext, handleSelectOption, handleSkip, session.revealed]);
+  }, [currentQuestion, handleNext, handleSelectOption, handleSkip, quitDialogOpen, session.revealed]);
 
   async function handleSaveToSrs() {
     if (!currentQuestion) return;
@@ -174,6 +194,7 @@ export default function PhoneticTrapPlayPage() {
       label="PHONETIC TRAP SNIPER"
       glyph="読"
       homeHref="/games/jlpt/phonetic-traps"
+      onNavigateHome={isSessionActive ? requestQuit : undefined}
       rightSlot={
         <div className="flex flex-wrap items-center gap-2">
           <span className="rounded-full bg-[var(--sakura-light)] px-3 py-1 font-japanese text-xs font-bold text-[var(--primary-fg)]">
@@ -185,6 +206,18 @@ export default function PhoneticTrapPlayPage() {
           <span className="rounded-full border border-[var(--line)] bg-[var(--surface)] px-3 py-1 text-xs font-bold text-[var(--correct)]">
             Score: {correctSoFar}
           </span>
+          <button
+            type="button"
+            aria-pressed={showFurigana}
+            onClick={() => setShowFurigana((prev) => !prev)}
+            className={`rounded-full border px-3.5 py-1.5 text-xs font-bold transition ${
+              showFurigana
+                ? "border-[var(--primary)] bg-[var(--sakura-light)] text-[var(--primary-fg)]"
+                : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)] hover:border-[var(--sakura)] hover:text-[var(--primary-fg)]"
+            }`}
+          >
+            あ Furigana: {showFurigana ? "ON" : "OFF"}
+          </button>
           <button
             type="button"
             onClick={handleEndSession}
@@ -230,11 +263,25 @@ export default function PhoneticTrapPlayPage() {
             aria-label="Context sentence prompt"
             className="rounded-2xl border border-[var(--line)] bg-[var(--bg)]/60 p-6 text-center font-japanese text-2xl leading-relaxed sm:p-8 sm:text-3xl"
           >
-            <span>{currentQuestion.prefix}</span>
+            <FuriganaText
+              text={currentQuestion.prefix}
+              furiganaText={currentQuestion.prefixFurigana}
+              showFurigana={showFurigana}
+            />
             <span className="mx-1 inline-block rounded-lg border-2 border-[var(--primary)] bg-[var(--sakura-light)] px-2.5 py-0.5 font-bold text-[var(--primary-fg)]">
-              【{currentQuestion.promptTarget}】
+              【
+              <FuriganaText
+                text={currentQuestion.promptTarget}
+                furiganaText={currentQuestion.promptTargetFurigana}
+                showFurigana={showFurigana}
+              />
+              】
             </span>
-            <span>{currentQuestion.suffix}</span>
+            <FuriganaText
+              text={currentQuestion.suffix}
+              furiganaText={currentQuestion.suffixFurigana}
+              showFurigana={showFurigana}
+            />
           </div>
 
           {/* Optional English Context Hint before answering */}
@@ -282,7 +329,11 @@ export default function PhoneticTrapPlayPage() {
                         {opt.optionNumber}
                       </span>
                       <span className="font-japanese text-xl font-bold sm:text-2xl">
-                        {opt.text}
+                        <FuriganaText
+                          text={opt.text}
+                          furiganaText={opt.furiganaText}
+                          showFurigana={showFurigana}
+                        />
                       </span>
                     </div>
 
@@ -442,6 +493,12 @@ export default function PhoneticTrapPlayPage() {
           </div>
         )}
       </section>
+
+      <QuitSessionDialog
+        open={quitDialogOpen}
+        onCancel={cancelQuit}
+        onConfirm={quitSession}
+      />
     </GameLayout>
   );
 }

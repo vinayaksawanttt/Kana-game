@@ -1,5 +1,5 @@
 // Auto-generated deterministic JLPT Star Sentence Scramble (星問題) dataset
-// Contains 325 curated & segmented 4-slot items across JLPT N5-N1.
+// Contains 325 curated & segmented 4-slot items across JLPT N5-N1 with Furigana.
 
 export type StarScrambleLevel = "N5" | "N4" | "N3" | "N2" | "N1";
 
@@ -8,8 +8,11 @@ export interface StarScrambleItem {
   level: StarScrambleLevel;
   jlpt: 5 | 4 | 3 | 2 | 1;
   prefix: string;
+  prefixFurigana: string;
   segments: [string, string, string, string];
+  segmentsFurigana: [string, string, string, string];
   suffix: string;
+  suffixFurigana: string;
   fullSentence: string;
   furigana: string;
   romaji: string;
@@ -35,12 +38,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "好きです。",
     "fullSentence": "この中で、寿司が一番好きです。",
-    "furigana": "この中で、寿司が一番好きです。",
+    "furigana": "この{中|なか}で、{寿司|すし}が{一番|いちばん}{好|す}きです。",
     "romaji": "Kono naka de, sushi ga ichiban suki desu.",
     "english": "Of these, I like sushi the most.",
     "grammarId": "N5/a-ga-ichiban",
     "grammarPoint": "A が いちばん～",
-    "explanation": "Express the superlative degree; 'the most', 'the best', 'the least'."
+    "explanation": "Express the superlative degree; 'the most', 'the best', 'the least'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "{中|なか}で、",
+      "{寿司|すし}が",
+      "{一番|いちばん}"
+    ],
+    "suffixFurigana": "{好|す}きです。"
   },
   {
     "id": "star-n5-2",
@@ -55,12 +66,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "張ろう。",
     "fullSentence": "苦しいけれどもう少しで仕事が済むので頑張ろう。",
-    "furigana": "苦しいけれどもう少しで仕事が済むので頑張ろう。",
+    "furigana": "{苦|くる}しいけれどもう{少|すこ}しで{仕事|しごと}が{済|す}むので頑{張|は}ろう。",
     "romaji": "Kurushii keredo mou sukoshi de shigoto ga sumu node ganbarou.",
     "english": "It’s tough, but I’m almost done with my work, so I’ll keep pushing through.",
     "grammarId": "N5/a-keredomo-b",
     "grammarPoint": "A。けれども、～B。",
-    "explanation": "Used to express a contrast between two statements. It can be translated as 'but' or 'however'."
+    "explanation": "Used to express a contrast between two statements. It can be translated as 'but' or 'however'.",
+    "prefixFurigana": "{苦|くる}しいけれど",
+    "segmentsFurigana": [
+      "もう{少|すこ}しで",
+      "{仕事|しごと}が",
+      "{済|す}むので",
+      "頑"
+    ],
+    "suffixFurigana": "{張|は}ろう。"
   },
   {
     "id": "star-n5-3",
@@ -75,12 +94,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "飲もう。",
     "fullSentence": "今日は忙しい。しかし、時間があるなら、コーヒーを飲もう。",
-    "furigana": "今日は忙しい。しかし、時間があるなら、コーヒーを飲もう。",
+    "furigana": "{今日|きょう}は{忙|いそが}しい。しかし、{時間|じかん}があるなら、コーヒーを{飲|の}もう。",
     "romaji": "Kyou wa isogashii. Shikashi, jikan ga aru nara, koohii o nomou.",
     "english": "I’m busy today. But if I have time, let’s have some coffee.",
     "grammarId": "N5/a-shikashi-b",
     "grammarPoint": "A。しかし、～B。",
-    "explanation": "Expresses contrast or contradiction between two clauses; 'A, but B', 'A, however B'."
+    "explanation": "Expresses contrast or contradiction between two clauses; 'A, but B', 'A, however B'.",
+    "prefixFurigana": "{今日|きょう}は{忙|いそが}しい。",
+    "segmentsFurigana": [
+      "しかし、",
+      "{時間|じかん}が",
+      "あるなら、",
+      "コーヒーを"
+    ],
+    "suffixFurigana": "{飲|の}もう。"
   },
   {
     "id": "star-n5-4",
@@ -95,12 +122,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ある。",
     "fullSentence": "彼は忙しい。でも、友達と遊ぶ時間がある。",
-    "furigana": "彼は忙しい。でも、友達と遊ぶ時間がある。",
+    "furigana": "{彼|かれ}は{忙|いそが}しい。でも、{友達|ともだち}と{遊|あそ}ぶ{時間|じかん}がある。",
     "romaji": "Kare wa isogashii. Demo, tomodachi to asobu jikan ga aru.",
     "english": "He is busy. But he has time to hang out with his friends.",
     "grammarId": "N5/a-demo-b",
     "grammarPoint": "A。でも、～B。",
-    "explanation": "Used to express contrast between two statements; 'A, but B', 'A, however B'."
+    "explanation": "Used to express contrast between two statements; 'A, but B', 'A, however B'.",
+    "prefixFurigana": "{彼|かれ}は{忙|いそが}しい。",
+    "segmentsFurigana": [
+      "でも、",
+      "{友達|ともだち}と",
+      "{遊|あそ}ぶ",
+      "{時間|じかん}が"
+    ],
+    "suffixFurigana": "ある。"
   },
   {
     "id": "star-n5-5",
@@ -115,12 +150,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "思いますか。",
     "fullSentence": "赤いワンピースと青いワンピースとどちらが似合うと思いますか。",
-    "furigana": "赤いワンピースと青いワンピースとどちらが似合うと思いますか。",
+    "furigana": "{赤|あか}いワンピースと{青|あお}いワンピースとどちらが{似合|にあ}うと{思|おも}いますか。",
     "romaji": "Akai wanpiisu to aoi wanpiisu to dochira ga niau to omoimasu ka?",
     "english": "Which do you think looks better on me—the red dress or the blue dress?",
     "grammarId": "N5/a-to-b-to-dochira",
     "grammarPoint": "Aと Bと どちら～",
-    "explanation": "Used to ask which of two alternatives is preferred or to compare two things"
+    "explanation": "Used to ask which of two alternatives is preferred or to compare two things",
+    "prefixFurigana": "{赤|あか}いワンピースと",
+    "segmentsFurigana": [
+      "{青|あお}い",
+      "ワンピースと",
+      "どちらが",
+      "{似合|にあ}うと"
+    ],
+    "suffixFurigana": "{思|おも}いますか。"
   },
   {
     "id": "star-n5-6",
@@ -135,12 +178,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "勉強したい？",
     "fullSentence": "日本語と韓国語とどっちを勉強したい？",
-    "furigana": "日本語と韓国語とどっちを勉強したい？",
+    "furigana": "{日本語|にほんご}と{韓国|かんこく}{語|かたり}とどっちを{勉強|べんきょう}したい？",
     "romaji": "Nihongo to kankokugo to docchi o benkyou shitai?",
     "english": "Which would you rather study, Japanese or Korean?",
     "grammarId": "N5/a-to-b-to-docchi",
     "grammarPoint": "AとBと どっち〜",
-    "explanation": "Asking which one; 'which', 'A or B'."
+    "explanation": "Asking which one; 'which', 'A or B'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{日本語|にほんご}と",
+      "{韓国|かんこく}",
+      "{語|かたり}と",
+      "どっちを"
+    ],
+    "suffixFurigana": "{勉強|べんきょう}したい？"
   },
   {
     "id": "star-n5-7",
@@ -155,12 +206,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "甘いです。",
     "fullSentence": "このジュースはあのジュースより甘いです。",
-    "furigana": "このジュースはあのジュースより甘いです。",
+    "furigana": "このジュースはあのジュースより{甘|あま}いです。",
     "romaji": "Kono juusu wa ano juusu yori amai desu.",
     "english": "This juice is sweeter than that juice.",
     "grammarId": "N5/a-wa-b-yori",
     "grammarPoint": "A は B より～",
-    "explanation": "Express a comparison between A and B; 'A is more/less than B'."
+    "explanation": "Express a comparison between A and B; 'A is more/less than B'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "ジュースは",
+      "あの",
+      "ジュースより"
+    ],
+    "suffixFurigana": "{甘|あま}いです。"
   },
   {
     "id": "star-n5-8",
@@ -175,12 +234,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "早くします。",
     "fullSentence": "仕事が簡単になるように、やり方を早くします。",
-    "furigana": "仕事が簡単になるように、やり方を早くします。",
+    "furigana": "{仕事|しごと}が{簡単|かんたん}になるように、やり{方|かた}を{早|はや}くします。",
     "romaji": "Shigoto ga kantan ni naru you ni, yarikata o hayaku shimasu.",
     "english": "I’ll speed up the process to make the work easier.",
     "grammarId": "N5/i-adjective-ku-shimasu",
     "grammarPoint": "い-Adjective く します",
-    "explanation": "Use an い-adjective to express 'to make' or 'to become'."
+    "explanation": "Use an い-adjective to express 'to make' or 'to become'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{仕事|しごと}が",
+      "{簡単|かんたん}に",
+      "なるように、",
+      "やり{方|かた}を"
+    ],
+    "suffixFurigana": "{早|はや}くします。"
   },
   {
     "id": "star-n5-9",
@@ -195,12 +262,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "した。",
     "fullSentence": "映画は面白くて感動的でした。",
-    "furigana": "映画は面白くて感動的でした。",
+    "furigana": "{映画|えいが}は{面白|おもしろ}くて{感動|かんどう}{的|てき}でした。",
     "romaji": "Eiga wa omoshirokute kandouteki deshita.",
     "english": "The movie was interesting and moving.",
     "grammarId": "N5/i-adjective-te",
     "grammarPoint": "い-Adjective て",
-    "explanation": "Used to connect two or more い-adjectives to describe something."
+    "explanation": "Used to connect two or more い-adjectives to describe something.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{映画|えいが}は",
+      "{面白|おもしろ}くて",
+      "{感動|かんどう}",
+      "{的|てき}で"
+    ],
+    "suffixFurigana": "した。"
   },
   {
     "id": "star-n5-10",
@@ -215,12 +290,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "好きです。",
     "fullSentence": "彼は綺麗で優しい女性が好きです。",
-    "furigana": "彼は綺麗で優しい女性が好きです。",
+    "furigana": "{彼|かれ}は{綺麗|きれい}で{優|やさ}しい{女性|じょせい}が{好|す}きです。",
     "romaji": "Kare wa kirei de yasashii josei ga suki desu.",
     "english": "He likes beautiful, kind women.",
     "grammarId": "N5/na-adjective-de",
     "grammarPoint": "な-Adjective で～",
-    "explanation": "Usage of で to connect or add information with a な-adjective."
+    "explanation": "Usage of で to connect or add information with a な-adjective.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}は",
+      "{綺麗|きれい}で",
+      "{優|やさ}しい",
+      "{女性|じょせい}が"
+    ],
+    "suffixFurigana": "{好|す}きです。"
   },
   {
     "id": "star-n5-11",
@@ -235,12 +318,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "期待します。",
     "fullSentence": "戦争の終わりが平和をもたらすことを期待します。",
-    "furigana": "戦争の終わりが平和をもたらすことを期待します。",
+    "furigana": "{戦争|せんそう}の{終|お}わりが{平和|へいわ}をもたらすことを{期待|きたい}します。",
     "romaji": "Sensou no owari ga heiwa o motarasu koto o kitai shimasu.",
     "english": "I hope that the end of the war will bring peace.",
     "grammarId": "N5/na-adjective-ni-shimasu",
     "grammarPoint": "な-Adjective に します",
-    "explanation": "Expressing a decision or preference with a な-adjective."
+    "explanation": "Expressing a decision or preference with a な-adjective.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{戦争|せんそう}の",
+      "{終|お}わりが",
+      "{平和|へいわ}を",
+      "もたらすことを"
+    ],
+    "suffixFurigana": "{期待|きたい}します。"
   },
   {
     "id": "star-n5-12",
@@ -255,12 +346,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "美味しくなります。",
     "fullSentence": "この料理には、スパイスを加えるともっと美味しくなります。",
-    "furigana": "この料理には、スパイスを加えるともっと美味しくなります。",
+    "furigana": "この{料理|りょうり}には、スパイスを{加|くわ}えるともっと{美味|おい}しくなります。",
     "romaji": "Kono ryouri ni wa, supaisu o kuwaeru to motto oishiku narimasu",
     "english": "This dish tastes even better when you add spices.",
     "grammarId": "N5/na-adjective-ni-narimasu",
     "grammarPoint": "な-Adjective に なります",
-    "explanation": "Express a change or transformation into a state described by the な-adjective."
+    "explanation": "Express a change or transformation into a state described by the な-adjective.",
+    "prefixFurigana": "この",
+    "segmentsFurigana": [
+      "{料理|りょうり}には、",
+      "スパイスを",
+      "{加|くわ}えると",
+      "もっと"
+    ],
+    "suffixFurigana": "{美味|おい}しくなります。"
   },
   {
     "id": "star-n5-13",
@@ -275,12 +374,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "どちらにしますか？",
     "fullSentence": "今日、映画を見るか、散歩するかどちらにしますか？",
-    "furigana": "今日、映画を見るか、散歩するかどちらにしますか？",
+    "furigana": "{今日|きょう}、{映画|えいが}を{見|み}るか、{散歩|さんぽ}するかどちらにしますか？",
     "romaji": "Kyou, eiga wo miru ka, sanpo suru ka dochira ni shimasu ka?",
     "english": "Shall we watch a movie or go for a walk today?",
     "grammarId": "N5/noun-ka-noun-ka",
     "grammarPoint": "Noun か Noun か～",
-    "explanation": "Expresses choice or alternatives; 'either', 'or'."
+    "explanation": "Expresses choice or alternatives; 'either', 'or'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{今日|きょう}、",
+      "{映画|えいが}を",
+      "{見|み}るか、",
+      "{散歩|さんぽ}するか"
+    ],
+    "suffixFurigana": "どちらにしますか？"
   },
   {
     "id": "star-n5-14",
@@ -295,12 +402,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "できます。",
     "fullSentence": "近所の銀行は私たちの貴重品を預かることができます。",
-    "furigana": "近所の銀行は私たちの貴重品を預かることができます。",
+    "furigana": "{近所|きんじょ}の{銀行|ぎんこう}は{私|わたし}たちの{貴重|きちょう}{品|ひん}を{預|あず}かることができます。",
     "romaji": "Kinjo no ginkou wa watashitachi no kichouhin o azukaru koto ga dekimasu",
     "english": "The local bank can hold our valuables for us.",
     "grammarId": "N5/noun-ga-dekimasu",
     "grammarPoint": "Noun が できます",
-    "explanation": "Express the ability to do something."
+    "explanation": "Express the ability to do something.",
+    "prefixFurigana": "{近所|きんじょ}の",
+    "segmentsFurigana": [
+      "{銀行|ぎんこう}は",
+      "{私|わたし}たちの",
+      "{貴重|きちょう}{品|ひん}を",
+      "{預|あず}かることが"
+    ],
+    "suffixFurigana": "できます。"
   },
   {
     "id": "star-n5-15",
@@ -315,12 +430,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "働きます。",
     "fullSentence": "朝9時から午後5時まで働きます。",
-    "furigana": "朝9時から午後5時まで働きます。",
+    "furigana": "{朝|あさ}9{時|とき}から{午後|ごご}5{時|とき}まで{働|はたら}きます。",
     "romaji": "Asa ku-ji kara gogo go-ji made hatarakimasu.",
     "english": "I work from 9:00 a.m. to 5:00 p.m.",
     "grammarId": "N5/noun-kara-noun-made",
     "grammarPoint": "Noun から Noun まで",
-    "explanation": "Expresses a range; 'from...to', 'between...and'."
+    "explanation": "Expresses a range; 'from...to', 'between...and'.",
+    "prefixFurigana": "{朝|あさ}9",
+    "segmentsFurigana": [
+      "{時|とき}から",
+      "{午後|ごご}",
+      "5",
+      "{時|とき}まで"
+    ],
+    "suffixFurigana": "{働|はたら}きます。"
   },
   {
     "id": "star-n5-16",
@@ -335,12 +458,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "あります。",
     "fullSentence": "この本は三百ページくらいあります。",
-    "furigana": "この本は三百ページくらいあります。",
+    "furigana": "この{本|ほん}は{三|さん}{百|ひゃく}ページくらいあります。",
     "romaji": "Kono hon wa sanbyaku peeji kurai arimasu.",
     "english": "This book is about 300 pages long.",
     "grammarId": "N5/noun-kurai",
     "grammarPoint": "Noun くらい～",
-    "explanation": "Express the extent or degree of something; 'about', 'approximately', 'at least'."
+    "explanation": "Express the extent or degree of something; 'about', 'approximately', 'at least'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "{本|ほん}は",
+      "{三|さん}{百|ひゃく}",
+      "ページくらい"
+    ],
+    "suffixFurigana": "あります。"
   },
   {
     "id": "star-n5-17",
@@ -355,12 +486,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "勉強しました。",
     "fullSentence": "一日中勉強したので、１０時間ぐらい勉強しました。",
-    "furigana": "一日中勉強したので、１０時間ぐらい勉強しました。",
+    "furigana": "{一|いち}{日|にち}{中|ちゅう}{勉強|べんきょう}したので、１０{時間|じかん}ぐらい{勉強|べんきょう}しました。",
     "romaji": "Ichinichijuu benkyou shita node, juu-jikan gurai benkyou shimashita.",
     "english": "I studied all day, so I studied for about 10 hours.",
     "grammarId": "N5/noun-gurai",
     "grammarPoint": "Noun ぐらい～",
-    "explanation": "Express an approximate amount or degree; 'about', 'approximately'."
+    "explanation": "Express an approximate amount or degree; 'about', 'approximately'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{一|いち}{日|にち}{中|ちゅう}",
+      "{勉強|べんきょう}したので、",
+      "１０",
+      "{時間|じかん}ぐらい"
+    ],
+    "suffixFurigana": "{勉強|べんきょう}しました。"
   },
   {
     "id": "star-n5-18",
@@ -375,12 +514,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "来ました。",
     "fullSentence": "彼は10歳ごろに日本に来ました。",
-    "furigana": "彼は10歳ごろに日本に来ました。",
+    "furigana": "{彼|かれ}は10{歳|とし}ごろに{日本|にっぽん}に{来|き}ました。",
     "romaji": "Kare wa juu-sai goro ni Nihon ni kimashita.",
     "english": "He came to Japan when he was about 10 years old.",
     "grammarId": "N5/noun-goro",
     "grammarPoint": "Noun ごろ～",
-    "explanation": "Expresses 'around' or 'about' a certain time or age."
+    "explanation": "Expresses 'around' or 'about' a certain time or age.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}は",
+      "10",
+      "{歳|とし}ごろに",
+      "{日本|にっぽん}に"
+    ],
+    "suffixFurigana": "{来|き}ました。"
   },
   {
     "id": "star-n5-19",
@@ -395,12 +542,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "読んだ。",
     "fullSentence": "この本は二十ページだけ読んだ。",
-    "furigana": "この本は二十ページだけ読んだ。",
+    "furigana": "この{本|ほん}は{二|に}{十|じゅう}ページだけ{読|よ}んだ。",
     "romaji": "Kono hon wa nijuu peeji dake yonda.",
     "english": "I’ve only read twenty pages of this book.",
     "grammarId": "N5/dake",
     "grammarPoint": "Noun だけ〜",
-    "explanation": "Indicates 'only', 'just', or 'merely'."
+    "explanation": "Indicates 'only', 'just', or 'merely'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "{本|ほん}は",
+      "{二|に}{十|じゅう}",
+      "ページだけ"
+    ],
+    "suffixFurigana": "{読|よ}んだ。"
   },
   {
     "id": "star-n5-20",
@@ -415,12 +570,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "帰ります。",
     "fullSentence": "友達と旅行に行ったあと、東京に帰ります。",
-    "furigana": "友達と旅行に行ったあと、東京に帰ります。",
+    "furigana": "{友達|ともだち}と{旅行|りょこう}に{行|い}ったあと、{東京|とうきょう}に{帰|かえ}ります。",
     "romaji": "Tomodachi to ryokou ni itta ato, Toukyou ni kaerimasu.",
     "english": "After going on a trip with my friends, I’ll return to Tokyo.",
     "grammarId": "N5/noun-ni-kaerimasu",
     "grammarPoint": "Noun に 帰ります",
-    "explanation": "Express going back or returning to a place: 'to return to', 'to go back to'."
+    "explanation": "Express going back or returning to a place: 'to return to', 'to go back to'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{友達|ともだち}と",
+      "{旅行|りょこう}に",
+      "{行|い}ったあと、",
+      "{東京|とうきょう}に"
+    ],
+    "suffixFurigana": "{帰|かえ}ります。"
   },
   {
     "id": "star-n5-21",
@@ -435,12 +598,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "方にします。",
     "fullSentence": "この靴を買うか迷っていますが、赤い色の方にします。",
-    "furigana": "この靴を買うか迷っていますが、赤い色の方にします。",
+    "furigana": "この{靴|くつ}を{買|か}うか{迷|まよ}っていますが、{赤|あか}い{色|いろ}の{方|かた}にします。",
     "romaji": "Kono kutsu wo kau ka mayotteimasu ga, akai iro no hou ni shimasu.",
     "english": "I’m not sure whether to buy these shoes, but I’ll go with the red ones.",
     "grammarId": "N5/noun-ni-shimasu",
     "grammarPoint": "Noun に します",
-    "explanation": "Express a choice or decision; 'choose', 'decide on'."
+    "explanation": "Express a choice or decision; 'choose', 'decide on'.",
+    "prefixFurigana": "この{靴|くつ}を{買|か}うか",
+    "segmentsFurigana": [
+      "{迷|まよ}って",
+      "いますが、",
+      "{赤|あか}い",
+      "{色|いろ}の"
+    ],
+    "suffixFurigana": "{方|かた}にします。"
   },
   {
     "id": "star-n5-22",
@@ -455,12 +626,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "なります。",
     "fullSentence": "この茶色の葉が赤になります。",
-    "furigana": "この茶色の葉が赤になります。",
+    "furigana": "この{茶色|ちゃいろ}の{葉|は}が{赤|あか}になります。",
     "romaji": "Kono chairo no ha ga aka ni narimasu.",
     "english": "This brown leaf will turn red.",
     "grammarId": "N5/noun-ni-narimasu",
     "grammarPoint": "Noun に なります",
-    "explanation": "Expresses change or becoming something; 'to become', 'to turn into', 'to be'."
+    "explanation": "Expresses change or becoming something; 'to become', 'to turn into', 'to be'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "{茶色|ちゃいろ}の",
+      "{葉|は}が",
+      "{赤|あか}に"
+    ],
+    "suffixFurigana": "なります。"
   },
   {
     "id": "star-n5-23",
@@ -475,12 +654,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "来ます。",
     "fullSentence": "今晩、父が駅に迎えに来ます。",
-    "furigana": "今晩、父が駅に迎えに来ます。",
+    "furigana": "{今晩|こんばん}、{父|ちち}が{駅|えき}に{迎|むか}えに{来|き}ます。",
     "romaji": "Konban, chichi ga eki ni mukae ni kimasu.",
     "english": "My father is coming to pick me up at the station tonight.",
     "grammarId": "N5/noun-ni-kimasu",
     "grammarPoint": "Noun に 来ます",
-    "explanation": "Used to express coming to a place."
+    "explanation": "Used to express coming to a place.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{今晩|こんばん}、",
+      "{父|ちち}が",
+      "{駅|えき}に",
+      "{迎|むか}えに"
+    ],
+    "suffixFurigana": "{来|き}ます。"
   },
   {
     "id": "star-n5-24",
@@ -495,12 +682,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "行きます。",
     "fullSentence": "夏になると、浴衣を着て祭りを見物しに行きます。",
-    "furigana": "夏になると、浴衣を着て祭りを見物しに行きます。",
+    "furigana": "{夏|なつ}になると、{浴衣|ゆかた}を{着|き}て{祭|まつ}りを{見物|けんぶつ}しに{行|い}きます。",
     "romaji": "Natsu ni naru to, yukata o kite matsuri o kenbutsu shi ni ikimasu",
     "english": "When summer comes, I wear a yukata and go to see the festival.",
     "grammarId": "N5/noun-ni-ikimasu",
     "grammarPoint": "Noun に 行きます",
-    "explanation": "Used to express going to a location."
+    "explanation": "Used to express going to a location.",
+    "prefixFurigana": "{夏|なつ}になると、",
+    "segmentsFurigana": [
+      "{浴衣|ゆかた}を",
+      "{着|き}て",
+      "{祭|まつ}りを",
+      "{見物|けんぶつ}しに"
+    ],
+    "suffixFurigana": "{行|い}きます。"
   },
   {
     "id": "star-n5-25",
@@ -515,12 +710,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "磨きます。",
     "fullSentence": "朝ご飯のあとで、歯を磨きます。",
-    "furigana": "朝ご飯のあとで、歯を磨きます。",
+    "furigana": "{朝|あさ}ご{飯|はん}のあとで、{歯|は}を{磨|みが}きます。",
     "romaji": "Asagohan no atode, ha wo migakimasu.",
     "english": "I brush my teeth after breakfast.",
     "grammarId": "N5/noun-no-atode",
     "grammarPoint": "Noun の あとで",
-    "explanation": "Expresses the order of events; 'after', 'later than'."
+    "explanation": "Expresses the order of events; 'after', 'later than'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{朝|あさ}",
+      "ご{飯|はん}の",
+      "あとで、",
+      "{歯|は}を"
+    ],
+    "suffixFurigana": "{磨|みが}きます。"
   },
   {
     "id": "star-n5-26",
@@ -535,12 +738,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "いました。",
     "fullSentence": "私の前に彼が立っていました。",
-    "furigana": "私の前に彼が立っていました。",
+    "furigana": "{私|わたし}の{前|まえ}に{彼|かれ}が{立|た}っていました。",
     "romaji": "Watashi no mae ni kare ga tatte imashita.",
     "english": "He was standing in front of me.",
     "grammarId": "N5/noun-no-mae-ni",
     "grammarPoint": "Noun の 前に",
-    "explanation": "Used to describe a location or position 'in front of' a noun."
+    "explanation": "Used to describe a location or position 'in front of' a noun.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{私|わたし}の",
+      "{前|まえ}に",
+      "{彼|かれ}が",
+      "{立|た}って"
+    ],
+    "suffixFurigana": "いました。"
   },
   {
     "id": "star-n5-27",
@@ -555,12 +766,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "たくさんあります。",
     "fullSentence": "東京も大阪も観光スポットがたくさんあります。",
-    "furigana": "東京も大阪も観光スポットがたくさんあります。",
+    "furigana": "{東京|とうきょう}も{大阪|おおさか}も{観光|かんこう}スポットがたくさんあります。",
     "romaji": "Toukyou mo Oosaka mo kankou supotto ga takusan arimasu.",
     "english": "Both Tokyo and Osaka have many tourist attractions.",
     "grammarId": "N5/noun-mo",
     "grammarPoint": "Noun も〜",
-    "explanation": "Indicates that the action or state is the same for multiple items or people; 'also', 'as well'."
+    "explanation": "Indicates that the action or state is the same for multiple items or people; 'also', 'as well'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{東京|とうきょう}も",
+      "{大阪|おおさか}も",
+      "{観光|かんこう}",
+      "スポットが"
+    ],
+    "suffixFurigana": "たくさんあります。"
   },
   {
     "id": "star-n5-28",
@@ -575,12 +794,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "好きです。",
     "fullSentence": "彼は野菜や果物などを食べるのが好きです。",
-    "furigana": "彼は野菜や果物などを食べるのが好きです。",
+    "furigana": "{彼|かれ}は{野菜|やさい}や{果物|くだもの}などを{食|た}べるのが{好|す}きです。",
     "romaji": "Kare wa yasai ya kudamono nado o taberu no ga suki desu.",
     "english": "He likes to eat vegetables, fruits, and other foods.",
     "grammarId": "N5/noun-ya-noun-nado",
     "grammarPoint": "Noun や Noun など～",
-    "explanation": "Lists items or examples but not exhaustively; 'such as', 'like', 'and so on'."
+    "explanation": "Lists items or examples but not exhaustively; 'such as', 'like', 'and so on'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}は",
+      "{野菜|やさい}や",
+      "{果物|くだもの}などを",
+      "{食|た}べるのが"
+    ],
+    "suffixFurigana": "{好|す}きです。"
   },
   {
     "id": "star-n5-29",
@@ -595,12 +822,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "予定です。",
     "fullSentence": "仕事が終わったあとで、ジムに行く予定です。",
-    "furigana": "仕事が終わったあとで、ジムに行く予定です。",
+    "furigana": "{仕事|しごと}が{終|お}わったあとで、ジムに{行|い}く{予定|よてい}です。",
     "romaji": "Shigoto ga owatta ato de, jimu ni iku yotei desu.",
     "english": "I plan to go to the gym after work.",
     "grammarId": "N5/ta-ato-de",
     "grammarPoint": "Verb た あとで",
-    "explanation": "Indicates an action that takes place after another action."
+    "explanation": "Indicates an action that takes place after another action.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{仕事|しごと}が",
+      "{終|お}わったあとで、",
+      "ジムに",
+      "{行|い}く"
+    ],
+    "suffixFurigana": "{予定|よてい}です。"
   },
   {
     "id": "star-n5-30",
@@ -615,12 +850,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "送りたいです。",
     "fullSentence": "幸せな結婚生活を送りたいです。",
-    "furigana": "幸せな結婚生活を送りたいです。",
+    "furigana": "{幸|しあわ}せな{結婚|けっこん}{生活|せいかつ}を{送|おく}りたいです。",
     "romaji": "Shiawase na kekkon seikatsu o okuritai desu.",
     "english": "I want to have a happy married life.",
     "grammarId": "N5/taidesu",
     "grammarPoint": "Verb たいです",
-    "explanation": "Express desire or want to do something; 'I want to', 'I would like to'."
+    "explanation": "Express desire or want to do something; 'I want to', 'I would like to'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{幸|しあわ}せ",
+      "な",
+      "{結婚|けっこん}",
+      "{生活|せいかつ}を"
+    ],
+    "suffixFurigana": "{送|おく}りたいです。"
   },
   {
     "id": "star-n5-31",
@@ -635,12 +878,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "行きます。",
     "fullSentence": "友達を待って、一緒に映画を見に行きます。",
-    "furigana": "友達を待って、一緒に映画を見に行きます。",
+    "furigana": "{友達|ともだち}を{待|ま}って、{一緒|いっしょ}に{映画|えいが}を{見|み}に{行|い}きます。",
     "romaji": "Tomodachi o matte, issho ni eiga o mini ikimasu.",
     "english": "I’m waiting for my friend so we can go see a movie together.",
     "grammarId": "N5/verb-te",
     "grammarPoint": "Verb て～",
-    "explanation": "A verb conjugation that connects actions or states."
+    "explanation": "A verb conjugation that connects actions or states.",
+    "prefixFurigana": "{友達|ともだち}を",
+    "segmentsFurigana": [
+      "{待|ま}って、",
+      "{一緒|いっしょ}に",
+      "{映画|えいが}を",
+      "{見|み}に"
+    ],
+    "suffixFurigana": "{行|い}きます。"
   },
   {
     "id": "star-n5-32",
@@ -655,12 +906,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "思います。",
     "fullSentence": "お酒は濃いほど、味がいいと思います。",
-    "furigana": "お酒は濃いほど、味がいいと思います。",
+    "furigana": "お{酒|さけ}は{濃|こ}いほど、{味|あじ}がいいと{思|おも}います。",
     "romaji": "Osake wa koi hodo, aji ga ii to omoimasu.",
     "english": "I think the stronger the sake, the better it tastes.",
     "grammarId": "N5/verb-te-imasu",
     "grammarPoint": "Verb て います",
-    "explanation": "Express ongoing action or state; 'is doing', 'is doing (continuous)', 'has been doing'."
+    "explanation": "Express ongoing action or state; 'is doing', 'is doing (continuous)', 'has been doing'.",
+    "prefixFurigana": "お",
+    "segmentsFurigana": [
+      "{酒|さけ}は",
+      "{濃|こ}いほど、",
+      "{味|あじ}が",
+      "いいと"
+    ],
+    "suffixFurigana": "{思|おも}います。"
   },
   {
     "id": "star-n5-33",
@@ -675,12 +934,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "行きます。",
     "fullSentence": "仕事が終わってから、友達と飲みに行きます。",
-    "furigana": "仕事が終わってから、友達と飲みに行きます。",
+    "furigana": "{仕事|しごと}が{終|お}わってから、{友達|ともだち}と{飲|の}みに{行|い}きます。",
     "romaji": "Shigoto ga owatte kara, tomodachi to nomi ni ikimasu.",
     "english": "After work, I’m going out for drinks with my friends.",
     "grammarId": "N5/te-kara",
     "grammarPoint": "Verb てから～",
-    "explanation": "Express a sequence of actions or events; 'after', 'since', 'once'."
+    "explanation": "Express a sequence of actions or events; 'after', 'since', 'once'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{仕事|しごと}が",
+      "{終|お}わってから、",
+      "{友達|ともだち}と",
+      "{飲|の}みに"
+    ],
+    "suffixFurigana": "{行|い}きます。"
   },
   {
     "id": "star-n5-34",
@@ -695,12 +962,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "入れてください。",
     "fullSentence": "この四角い箱にプレゼントを入れてください。",
-    "furigana": "この四角い箱にプレゼントを入れてください。",
+    "furigana": "この{四角|しかく}い{箱|はこ}にプレゼントを{入|い}れてください。",
     "romaji": "Kono shikakui hako ni purezento o irete kudasai.",
     "english": "Please put the gift in this square box.",
     "grammarId": "N5/verb-te-kudasai",
     "grammarPoint": "Verb て ください",
-    "explanation": "A request or command; 'please do'."
+    "explanation": "A request or command; 'please do'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "{四角|しかく}い",
+      "{箱|はこ}に",
+      "プレゼントを"
+    ],
+    "suffixFurigana": "{入|い}れてください。"
   },
   {
     "id": "star-n5-35",
@@ -715,12 +990,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "入れてください。",
     "fullSentence": "この四角い箱にプレゼントを入れてください。",
-    "furigana": "この四角い箱にプレゼントを入れてください。",
+    "furigana": "この{四角|しかく}い{箱|はこ}にプレゼントを{入|い}れてください。",
     "romaji": "Kono shikakui hako ni purezento o irete kudasai.",
     "english": "Please put the gift in this square box.",
     "grammarId": "N5/naide-kudasai",
     "grammarPoint": "Verb ないで ください",
-    "explanation": "Used to make a polite request for someone not to do something; 'please don't'."
+    "explanation": "Used to make a polite request for someone not to do something; 'please don't'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "{四角|しかく}い",
+      "{箱|はこ}に",
+      "プレゼントを"
+    ],
+    "suffixFurigana": "{入|い}れてください。"
   },
   {
     "id": "star-n5-36",
@@ -735,12 +1018,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "戻ります。",
     "fullSentence": "冷蔵庫に入れると、溶けたアイスクリームは固体に戻ります。",
-    "furigana": "冷蔵庫に入れると、溶けたアイスクリームは固体に戻ります。",
+    "furigana": "{冷蔵庫|れいぞうこ}に{入|い}れると、{溶|と}けたアイスクリームは{固体|こたい}に{戻|もど}ります。",
     "romaji": "Reizouko ni ireru to, toketa aisukuriimu wa kotai ni modorimasu.",
     "english": "When placed in the refrigerator, melted ice cream turns back into a solid.",
     "grammarId": "N5/noun-ni-modorimasu",
     "grammarPoint": "Noun に 戻ります",
-    "explanation": "Expresses the action of returning to a previous state, place, or condition."
+    "explanation": "Expresses the action of returning to a previous state, place, or condition.",
+    "prefixFurigana": "{冷蔵庫|れいぞうこ}に",
+    "segmentsFurigana": [
+      "{入|い}れると、",
+      "{溶|と}けた",
+      "アイスクリームは",
+      "{固体|こたい}に"
+    ],
+    "suffixFurigana": "{戻|もど}ります。"
   },
   {
     "id": "star-n5-37",
@@ -755,12 +1046,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "行きます。",
     "fullSentence": "夏になると、浴衣を着て祭りを見物しに行きます。",
-    "furigana": "夏になると、浴衣を着て祭りを見物しに行きます。",
+    "furigana": "{夏|なつ}になると、{浴衣|ゆかた}を{着|き}て{祭|まつ}りを{見物|けんぶつ}しに{行|い}きます。",
     "romaji": "Natsu ni naru to, yukata o kite matsuri o kenbutsu shi ni ikimasu",
     "english": "When summer comes, I wear a yukata and go to see the festival.",
     "grammarId": "N5/verb-ni-ikimasu",
     "grammarPoint": "Verb に 行きます",
-    "explanation": "To go (somewhere) in order to do an action."
+    "explanation": "To go (somewhere) in order to do an action.",
+    "prefixFurigana": "{夏|なつ}になると、",
+    "segmentsFurigana": [
+      "{浴衣|ゆかた}を",
+      "{着|き}て",
+      "{祭|まつ}りを",
+      "{見物|けんぶつ}しに"
+    ],
+    "suffixFurigana": "{行|い}きます。"
   },
   {
     "id": "star-n5-38",
@@ -775,12 +1074,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "立てましょう。",
     "fullSentence": "確実に目標を達成するために計画を立てましょう。",
-    "furigana": "確実に目標を達成するために計画を立てましょう。",
+    "furigana": "{確実|かくじつ}に{目標|もくひょう}を{達成|たっせい}するために{計画|けいかく}を{立|た}てましょう。",
     "romaji": "Kakujitsu ni mokuhyou o tassei suru tame ni keikaku o tatemashou.",
     "english": "Let’s make a plan to ensure we achieve our goals.",
     "grammarId": "N5/mashou",
     "grammarPoint": "Verb ましょう",
-    "explanation": "Making a suggestion or invitation; 'let's' or 'shall we'."
+    "explanation": "Making a suggestion or invitation; 'let's' or 'shall we'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{確実|かくじつ}に",
+      "{目標|もくひょう}を",
+      "{達成|たっせい}するために",
+      "{計画|けいかく}を"
+    ],
+    "suffixFurigana": "{立|た}てましょう。"
   },
   {
     "id": "star-n5-39",
@@ -795,12 +1102,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "行きませんか？",
     "fullSentence": "夕食が済んだ後で、散歩に行きませんか？",
-    "furigana": "夕食が済んだ後で、散歩に行きませんか？",
+    "furigana": "{夕食|ゆうしょく}が{済|す}んだ{後|あと}で、{散歩|さんぽ}に{行|い}きませんか？",
     "romaji": "Yuushoku ga sunda ato de, sanpo ni ikimasen ka?",
     "english": "Why don’t we go for a walk after dinner?",
     "grammarId": "N5/verb-masenka",
     "grammarPoint": "Verb ませんか。",
-    "explanation": "An invitation or suggestion; 'won't you', 'why don't you', 'shall we'."
+    "explanation": "An invitation or suggestion; 'won't you', 'why don't you', 'shall we'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{夕食|ゆうしょく}が",
+      "{済|す}んだ",
+      "{後|あと}で、",
+      "{散歩|さんぽ}に"
+    ],
+    "suffixFurigana": "{行|い}きませんか？"
   },
   {
     "id": "star-n5-40",
@@ -815,12 +1130,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "わかった。",
     "fullSentence": "彼の態度がおかしいと思っていたら、隠し事をしていることがわかった。",
-    "furigana": "彼の態度がおかしいと思っていたら、隠し事をしていることがわかった。",
+    "furigana": "{彼|かれ}の{態度|たいど}がおかしいと{思|おも}っていたら、{隠し事|かくしごと}をしていることがわかった。",
     "romaji": "Kare no taido ga okashii to omotte itara, kakushigoto o shite iru koto ga wakatta.",
     "english": "I had been thinking his behavior was strange, but then I realized he was hiding something.",
     "grammarId": "N5/ru-koto",
     "grammarPoint": "Verb ること～",
-    "explanation": "Express an action or event as a noun; 'the act of', 'doing'."
+    "explanation": "Express an action or event as a noun; 'the act of', 'doing'.",
+    "prefixFurigana": "{彼|かれ}の{態度|たいど}がおかしいと",
+    "segmentsFurigana": [
+      "{思|おも}って",
+      "いたら、",
+      "{隠し事|かくしごと}を",
+      "していることが"
+    ],
+    "suffixFurigana": "わかった。"
   },
   {
     "id": "star-n5-41",
@@ -835,12 +1158,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "できません。",
     "fullSentence": "私は高い所に登ることができません。",
-    "furigana": "私は高い所に登ることができません。",
+    "furigana": "{私|わたし}は{高|たか}い{所|ところ}に{登|のぼ}ることができません。",
     "romaji": "Watashi wa takai tokoro ni noboru koto ga dekimasen.",
     "english": "I can’t climb to high places.",
     "grammarId": "N5/ru-koto-ga-dekimasu",
     "grammarPoint": "Verb る こと が できます",
-    "explanation": "Express the potential form, or the ability to do something."
+    "explanation": "Express the potential form, or the ability to do something.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{私|わたし}は",
+      "{高|たか}い",
+      "{所|ところ}に",
+      "{登|のぼ}ることが"
+    ],
+    "suffixFurigana": "できません。"
   },
   {
     "id": "star-n5-42",
@@ -855,12 +1186,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "嬉しいです。",
     "fullSentence": "日本に行くことができて、とても嬉しいです。",
-    "furigana": "日本に行くことができて、とても嬉しいです。",
+    "furigana": "{日本|にっぽん}に{行|い}くことができて、とても{嬉|うれ}しいです。",
     "romaji": "Nihon ni iku koto ga dekite, totemo ureshii desu.",
     "english": "I’m very happy to be able to go to Japan.",
     "grammarId": "N5/ru-koto-ga-dekiru",
     "grammarPoint": "Verb る こと ができる",
-    "explanation": "Expresses the potential form; 'can', 'be able to', 'is possible'."
+    "explanation": "Expresses the potential form; 'can', 'be able to', 'is possible'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{日本|にっぽん}に",
+      "{行|い}くことが",
+      "できて、",
+      "とても"
+    ],
+    "suffixFurigana": "{嬉|うれ}しいです。"
   },
   {
     "id": "star-n5-43",
@@ -875,12 +1214,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "おろすの。",
     "fullSentence": "買い物をするために、銀行でお金をおろすの。",
-    "furigana": "買い物をするために、銀行でお金をおろすの。",
+    "furigana": "{買い物|かいもの}をするために、{銀行|ぎんこう}でお{金|かね}をおろすの。",
     "romaji": "Kaimono o suru tame ni, ginkou de okane o orosu no.",
     "english": "I’m going to the bank to withdraw money so I can go shopping.",
     "grammarId": "N5/verb-ru-no",
     "grammarPoint": "Verb る の～",
-    "explanation": "Used to express the purpose or reason in casual speech, or nominalize the verb with の."
+    "explanation": "Used to express the purpose or reason in casual speech, or nominalize the verb with の.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{買い物|かいもの}を",
+      "するために、",
+      "{銀行|ぎんこう}で",
+      "お{金|かね}を"
+    ],
+    "suffixFurigana": "おろすの。"
   },
   {
     "id": "star-n5-44",
@@ -895,12 +1242,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "取り込むこと。",
     "fullSentence": "雨が降る前に、洗濯物を取り込むこと。",
-    "furigana": "雨が降る前に、洗濯物を取り込むこと。",
+    "furigana": "{雨|あめ}が{降|ふ}る{前|まえ}に、{洗濯|せんたく}{物|もの}を{取り込|とりこ}むこと。",
     "romaji": "Ame ga furu mae ni, sentakumono o torikomu koto.",
     "english": "Be sure to bring the laundry inside before it starts raining.",
     "grammarId": "N5/ru-mae-ni",
     "grammarPoint": "Verb る 前に",
-    "explanation": "Used to express 'before' in a sense of an action must be done before another action or event."
+    "explanation": "Used to express 'before' in a sense of an action must be done before another action or event.",
+    "prefixFurigana": "{雨|あめ}が",
+    "segmentsFurigana": [
+      "{降|ふ}る",
+      "{前|まえ}に、",
+      "{洗濯|せんたく}",
+      "{物|もの}を"
+    ],
+    "suffixFurigana": "{取り込|とりこ}むこと。"
   },
   {
     "id": "star-n5-45",
@@ -915,12 +1270,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ありません。",
     "fullSentence": "お金があるからといって、必ずしも幸せではありません。",
-    "furigana": "お金があるからといって、必ずしも幸せではありません。",
+    "furigana": "お{金|かね}があるからといって、{必|かなら}ずしも{幸|しあわ}せではありません。",
     "romaji": "Okane ga aru kara to itte, kanarazu shimo shiawase de wa arimasen.",
     "english": "Just because you have money doesn’t necessarily mean you’re happy.",
     "grammarId": "N5/amari-arimasen",
     "grammarPoint": "あまり～ありません",
-    "explanation": "Express 'not very', 'not much', or 'not really' when describing a negative state or situation."
+    "explanation": "Express 'not very', 'not much', or 'not really' when describing a negative state or situation.",
+    "prefixFurigana": "お{金|かね}が",
+    "segmentsFurigana": [
+      "あるから",
+      "といって、",
+      "{必|かなら}ずしも",
+      "{幸|しあわ}せでは"
+    ],
+    "suffixFurigana": "ありません。"
   },
   {
     "id": "star-n5-46",
@@ -935,12 +1298,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "適していない。",
     "fullSentence": "塩辛いスープは、水分補給にはあまり適していない。",
-    "furigana": "塩辛いスープは、水分補給にはあまり適していない。",
+    "furigana": "{塩辛|しおから}いスープは、{水分|すいぶん}{補給|ほきゅう}にはあまり{適|てき}していない。",
     "romaji": "Shiokarai suupu wa, suibun hokyuu ni wa amari tekishite inai.",
     "english": "Salty soup isn’t very suitable for staying hydrated.",
     "grammarId": "N5/amari-nai-desu",
     "grammarPoint": "あまり～ないです",
-    "explanation": "Express 'not really' or 'not very'; used to soften a negative statement."
+    "explanation": "Express 'not really' or 'not very'; used to soften a negative statement.",
+    "prefixFurigana": "{塩辛|しおから}い",
+    "segmentsFurigana": [
+      "スープは、",
+      "{水分|すいぶん}",
+      "{補給|ほきゅう}には",
+      "あまり"
+    ],
+    "suffixFurigana": "{適|てき}していない。"
   },
   {
     "id": "star-n5-47",
@@ -955,12 +1326,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "あります。",
     "fullSentence": "この公園にたくさんの花があります。",
-    "furigana": "この公園にたくさんの花があります。",
+    "furigana": "この{公園|こうえん}にたくさんの{花|はな}があります。",
     "romaji": "Kono kouen ni takusan no hana ga arimasu.",
     "english": "There are many flowers in this park.",
     "grammarId": "N5/arimasu",
     "grammarPoint": "～あります",
-    "explanation": "Indicate possession or existence of inanimate objects; 'there is', 'there are'."
+    "explanation": "Indicate possession or existence of inanimate objects; 'there is', 'there are'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "{公園|こうえん}に",
+      "たくさんの",
+      "{花|はな}が"
+    ],
+    "suffixFurigana": "あります。"
   },
   {
     "id": "star-n5-48",
@@ -975,12 +1354,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "チェックしました。",
     "fullSentence": "価格を比べるために、いくつかのショップをチェックしました。",
-    "furigana": "価格を比べるために、いくつかのショップをチェックしました。",
+    "furigana": "{価格|かかく}を{比|くら}べるために、いくつかのショップをチェックしました。",
     "romaji": "Kakaku o kuraberu tame ni, ikutsu ka no shoppu o chekku shimashita.",
     "english": "I checked out a few stores to compare prices.",
     "grammarId": "N5/ikutsu",
     "grammarPoint": "いくつ～",
-    "explanation": "Used to express 'how many' or ask for the number of something."
+    "explanation": "Used to express 'how many' or ask for the number of something.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{価格|かかく}を",
+      "{比|くら}べるために、",
+      "いくつかの",
+      "ショップを"
+    ],
+    "suffixFurigana": "チェックしました。"
   },
   {
     "id": "star-n5-49",
@@ -995,12 +1382,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "しょう。",
     "fullSentence": "彼はいつか有名な作家になるでしょう。",
-    "furigana": "彼はいつか有名な作家になるでしょう。",
+    "furigana": "{彼|かれ}はいつか{有名|ゆうめい}な{作家|さっか}になるでしょう。",
     "romaji": "Kare wa itsuka yuumei na sakka ni naru deshou.",
     "english": "He will become a famous writer someday.",
     "grammarId": "N5/itsuka",
     "grammarPoint": "いつか～",
-    "explanation": "Indicates an unspecified point in time; 'someday', 'one day', 'at some point'."
+    "explanation": "Indicates an unspecified point in time; 'someday', 'one day', 'at some point'.",
+    "prefixFurigana": "{彼|かれ}は",
+    "segmentsFurigana": [
+      "いつか",
+      "{有名|ゆうめい}な",
+      "{作家|さっか}に",
+      "なるで"
+    ],
+    "suffixFurigana": "しょう。"
   },
   {
     "id": "star-n5-50",
@@ -1015,12 +1410,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "混んでいます。",
     "fullSentence": "この店はいつでも混んでいます。",
-    "furigana": "この店はいつでも混んでいます。",
+    "furigana": "この{店|みせ}はいつでも{混|こ}んでいます。",
     "romaji": "Kono mise wa itsudemo konde imasu.",
     "english": "This restaurant is always crowded.",
     "grammarId": "N5/itsudemo",
     "grammarPoint": "いつでも～",
-    "explanation": "Expresses 'anytime', 'always', or 'whenever'."
+    "explanation": "Expresses 'anytime', 'always', or 'whenever'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "{店|みせ}は",
+      "いつ",
+      "でも"
+    ],
+    "suffixFurigana": "{混|こ}んでいます。"
   },
   {
     "id": "star-n5-51",
@@ -1035,12 +1438,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "好きです。",
     "fullSentence": "私はいつも優しい犬が好きです。",
-    "furigana": "私はいつも優しい犬が好きです。",
+    "furigana": "{私|わたし}はいつも{優|やさ}しい{犬|いぬ}が{好|す}きです。",
     "romaji": "Watashi wa itsumo yasashii inu ga suki desu.",
     "english": "I’ve always liked gentle dogs.",
     "grammarId": "N5/itsumo",
     "grammarPoint": "いつも～",
-    "explanation": "Expressing 'always' or 'usually' in a sentence."
+    "explanation": "Expressing 'always' or 'usually' in a sentence.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{私|わたし}は",
+      "いつも",
+      "{優|やさ}しい",
+      "{犬|いぬ}が"
+    ],
+    "suffixFurigana": "{好|す}きです。"
   },
   {
     "id": "star-n5-52",
@@ -1055,12 +1466,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "思います。",
     "fullSentence": "お酒は濃いほど、味がいいと思います。",
-    "furigana": "お酒は濃いほど、味がいいと思います。",
+    "furigana": "お{酒|さけ}は{濃|こ}いほど、{味|あじ}がいいと{思|おも}います。",
     "romaji": "Osake wa koi hodo, aji ga ii to omoimasu.",
     "english": "I think the stronger the sake, the better it tastes.",
     "grammarId": "N5/te-imasu",
     "grammarPoint": "～て います",
-    "explanation": "Expresses the present continuous or ongoing action; 'to be doing', 'currently doing'."
+    "explanation": "Expresses the present continuous or ongoing action; 'to be doing', 'currently doing'.",
+    "prefixFurigana": "お",
+    "segmentsFurigana": [
+      "{酒|さけ}は",
+      "{濃|こ}いほど、",
+      "{味|あじ}が",
+      "いいと"
+    ],
+    "suffixFurigana": "{思|おも}います。"
   },
   {
     "id": "star-n5-53",
@@ -1075,12 +1494,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "悪い。",
     "fullSentence": "彼は頭がいいが、性格が悪い。",
-    "furigana": "彼は頭がいいが、性格が悪い。",
+    "furigana": "{彼|かれ}は{頭|あたま}がいいが、{性格|せいかく}が{悪|わる}い。",
     "romaji": "Kare wa atama ga ii ga, seikaku ga warui.",
     "english": "He is smart, but he has a bad personality.",
     "grammarId": "N5/ga",
     "grammarPoint": "～が",
-    "explanation": "Particle indicating the subject of a sentence or expressing 'but'."
+    "explanation": "Particle indicating the subject of a sentence or expressing 'but'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}は",
+      "{頭|あたま}が",
+      "いいが、",
+      "{性格|せいかく}が"
+    ],
+    "suffixFurigana": "{悪|わる}い。"
   },
   {
     "id": "star-n5-54",
@@ -1095,12 +1522,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "怠け者だ。",
     "fullSentence": "彼は頭がいいが、少し怠け者だ。",
-    "furigana": "彼は頭がいいが、少し怠け者だ。",
+    "furigana": "{彼|かれ}は{頭|あたま}がいいが、{少|すこ}し{怠け者|なまけもの}だ。",
     "romaji": "Kare wa atama ga ii ga, sukoshi namakemono da.",
     "english": "He is smart, but a bit lazy.",
     "grammarId": "N5/ga-2",
     "grammarPoint": "～が、～",
-    "explanation": "Express a contrast between two sentences; 'but', 'however'."
+    "explanation": "Express a contrast between two sentences; 'but', 'however'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}は",
+      "{頭|あたま}が",
+      "いいが、",
+      "{少|すこ}し"
+    ],
+    "suffixFurigana": "{怠け者|なまけもの}だ。"
   },
   {
     "id": "star-n5-55",
@@ -1115,12 +1550,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "勉強しなければなりません。",
     "fullSentence": "明日は試験があるから、今晩勉強しなければなりません。",
-    "furigana": "明日は試験があるから、今晩勉強しなければなりません。",
+    "furigana": "{明日|あした}は{試験|しけん}があるから、{今晩|こんばん}{勉強|べんきょう}しなければなりません。",
     "romaji": "Ashita wa shiken ga aru kara, konban benkyou shinakereba narimasen.",
     "english": "I have an exam tomorrow, so I have to study tonight.",
     "grammarId": "N5/kara",
     "grammarPoint": "～から、～",
-    "explanation": "Expresses reason or cause; 'because', 'since', 'so'."
+    "explanation": "Expresses reason or cause; 'because', 'since', 'so'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{明日|あした}は",
+      "{試験|しけん}が",
+      "あるから、",
+      "{今晩|こんばん}"
+    ],
+    "suffixFurigana": "{勉強|べんきょう}しなければなりません。"
   },
   {
     "id": "star-n5-56",
@@ -1135,12 +1578,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "くれました。",
     "fullSentence": "友達が宿題を手伝って私にくれました。",
-    "furigana": "友達が宿題を手伝って私にくれました。",
+    "furigana": "{友達|ともだち}が{宿題|しゅくだい}を{手|て}{伝|つた}って{私|わたし}にくれました。",
     "romaji": "Tomodachi ga shukudai wo tetsudatte watashi ni kuremashita.",
     "english": "My friend helped me with my homework and gave it to me.",
     "grammarId": "N5/ga-watashi-ni-kuremasu",
     "grammarPoint": "～が 私に くれます",
-    "explanation": "Used to express that someone gives a gift or favor to 'me'; 'someone gives me'."
+    "explanation": "Used to express that someone gives a gift or favor to 'me'; 'someone gives me'.",
+    "prefixFurigana": "{友達|ともだち}が",
+    "segmentsFurigana": [
+      "{宿題|しゅくだい}を",
+      "{手|て}",
+      "{伝|つた}って",
+      "{私|わたし}に"
+    ],
+    "suffixFurigana": "くれました。"
   },
   {
     "id": "star-n5-57",
@@ -1155,12 +1606,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "しないといけない。",
     "fullSentence": "授業に出たけど、まだ宿題をしないといけない。",
-    "furigana": "授業に出たけど、まだ宿題をしないといけない。",
+    "furigana": "{授業|じゅぎょう}に{出|で}たけど、まだ{宿題|しゅくだい}をしないといけない。",
     "romaji": "Jugyou ni deta kedo, mada shukudai wo shinai to ikenai.",
     "english": "I went to class, but I still have to do my homework.",
     "grammarId": "N5/kedo",
     "grammarPoint": "～けど、～",
-    "explanation": "Used to connect two clauses; 'but', 'however', 'although'"
+    "explanation": "Used to connect two clauses; 'but', 'however', 'although'",
+    "prefixFurigana": "{授業|じゅぎょう}に",
+    "segmentsFurigana": [
+      "{出|で}た",
+      "けど、",
+      "まだ",
+      "{宿題|しゅくだい}を"
+    ],
+    "suffixFurigana": "しないといけない。"
   },
   {
     "id": "star-n5-58",
@@ -1175,12 +1634,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "行きます。",
     "fullSentence": "今日は寒いけれど、散歩に行きます。",
-    "furigana": "今日は寒いけれど、散歩に行きます。",
+    "furigana": "{今日|きょう}は{寒|さむ}いけれど、{散歩|さんぽ}に{行|い}きます。",
     "romaji": "Kyou wa samui keredo, sanpo ni ikimasu.",
     "english": "It’s cold today, but I’m going for a walk.",
     "grammarId": "N5/keredo",
     "grammarPoint": "～けれど、～",
-    "explanation": "Expresses a contrast or contradiction; 'but', 'however', 'even though'."
+    "explanation": "Expresses a contrast or contradiction; 'but', 'however', 'even though'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{今日|きょう}は",
+      "{寒|さむ}い",
+      "けれど、",
+      "{散歩|さんぽ}に"
+    ],
+    "suffixFurigana": "{行|い}きます。"
   },
   {
     "id": "star-n5-59",
@@ -1195,12 +1662,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "さいますか。",
     "fullSentence": "こちらのお料理はいかがなさいますか。",
-    "furigana": "こちらのお料理はいかがなさいますか。",
+    "furigana": "こちらのお{料理|りょうり}はいかがなさいますか。",
     "romaji": "Kochira no o-ryouri wa ikaga nasaimasuka.",
     "english": "How about this dish?",
     "grammarId": "N5/kochira",
     "grammarPoint": "こちら～",
-    "explanation": "Refers to a person, place or thing; 'this', 'this one', 'this way', 'here'."
+    "explanation": "Refers to a person, place or thing; 'this', 'this one', 'this way', 'here'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "こちらの",
+      "お",
+      "{料理|りょうり}は",
+      "いかがな"
+    ],
+    "suffixFurigana": "さいますか。"
   },
   {
     "id": "star-n5-60",
@@ -1215,12 +1690,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "かけてください。",
     "fullSentence": "友達が来たら、すぐに電話をかけてください。",
-    "furigana": "友達が来たら、すぐに電話をかけてください。",
+    "furigana": "{友達|ともだち}が{来|き}たら、すぐに{電話|でんわ}をかけてください。",
     "romaji": "Tomodachi ga kitara, sugu ni denwa wo kakete kudasai.",
     "english": "If a friend comes over, please call me right away.",
     "grammarId": "N5/sugu-ni",
     "grammarPoint": "すぐに～",
-    "explanation": "Immediately or right away; used to express promptness or quickness."
+    "explanation": "Immediately or right away; used to express promptness or quickness.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{友達|ともだち}が",
+      "{来|き}たら、",
+      "すぐに",
+      "{電話|でんわ}を"
+    ],
+    "suffixFurigana": "かけてください。"
   },
   {
     "id": "star-n5-61",
@@ -1235,12 +1718,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "読みました。",
     "fullSentence": "コーヒーを飲んで、そして新聞を読みました。",
-    "furigana": "コーヒーを飲んで、そして新聞を読みました。",
+    "furigana": "コーヒーを{飲|の}んで、そして{新聞|しんぶん}を{読|よ}みました。",
     "romaji": "Koohii wo nonde, soshite shinbun wo yomimashita.",
     "english": "I drank some coffee and then read the newspaper.",
     "grammarId": "N5/soshite",
     "grammarPoint": "そして、～",
-    "explanation": "Used to connect two sentences; 'and then', 'and'."
+    "explanation": "Used to connect two sentences; 'and then', 'and'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "コーヒーを",
+      "{飲|の}んで、",
+      "そして",
+      "{新聞|しんぶん}を"
+    ],
+    "suffixFurigana": "{読|よ}みました。"
   },
   {
     "id": "star-n5-62",
@@ -1255,12 +1746,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ますか？",
     "fullSentence": "そちらの方、お名前を教えていただけますか？",
-    "furigana": "そちらの方、お名前を教えていただけますか？",
+    "furigana": "そちらの{方|かた}、お{名前|なまえ}を{教|おし}えていただけますか？",
     "romaji": "Sochira no kata, onamae o oshiete itadakemasu ka?",
     "english": "Could you tell me your name, please?",
     "grammarId": "N5/sochira",
     "grammarPoint": "そちら～",
-    "explanation": "Indicates a direction or person in moderate distance; 'that way', 'that person'."
+    "explanation": "Indicates a direction or person in moderate distance; 'that way', 'that person'.",
+    "prefixFurigana": "そちらの",
+    "segmentsFurigana": [
+      "{方|かた}、",
+      "お",
+      "{名前|なまえ}を",
+      "{教|おし}えていただけ"
+    ],
+    "suffixFurigana": "ますか？"
   },
   {
     "id": "star-n5-63",
@@ -1275,12 +1774,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "出ました。",
     "fullSentence": "コーヒーを飲んで、それから家を出ました。",
-    "furigana": "コーヒーを飲んで、それから家を出ました。",
+    "furigana": "コーヒーを{飲|の}んで、それから{家|いえ}を{出|で}ました。",
     "romaji": "Koohii o nonde, sorekara ie o demashita.",
     "english": "I drank some coffee, and then I left the house.",
     "grammarId": "N5/sorekara",
     "grammarPoint": "それから、～",
-    "explanation": "Meaning 'after that', 'and then' or 'then', indicating sequence of events."
+    "explanation": "Meaning 'after that', 'and then' or 'then', indicating sequence of events.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "コーヒーを",
+      "{飲|の}んで、",
+      "それから",
+      "{家|いえ}を"
+    ],
+    "suffixFurigana": "{出|で}ました。"
   },
   {
     "id": "star-n5-64",
@@ -1295,12 +1802,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "参加しました。",
     "fullSentence": "だいたい１００人がパーティーに参加しました。",
-    "furigana": "だいたい１００人がパーティーに参加しました。",
+    "furigana": "だいたい１００{人|ひと}がパーティーに{参加|さんか}しました。",
     "romaji": "Daitai hyaku-nin ga paatii ni sanka shimashita.",
     "english": "About 100 people attended the party.",
     "grammarId": "N5/daitai",
     "grammarPoint": "だいたい〜",
-    "explanation": "Expresses 'roughly', 'approximately', or 'almost'."
+    "explanation": "Expresses 'roughly', 'approximately', or 'almost'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "だいたい",
+      "１００",
+      "{人|ひと}が",
+      "パーティーに"
+    ],
+    "suffixFurigana": "{参加|さんか}しました。"
   },
   {
     "id": "star-n5-65",
@@ -1315,12 +1830,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "起きます。",
     "fullSentence": "たいてい朝８時に起きます。",
-    "furigana": "たいてい朝８時に起きます。",
+    "furigana": "たいてい{朝|あさ}８{時|とき}に{起|お}きます。",
     "romaji": "Taitei asa hachi-ji ni okimasu.",
     "english": "I usually wake up at 8:00 a.m.",
     "grammarId": "N5/taitei",
     "grammarPoint": "たいてい～",
-    "explanation": "Used for expressing 'usually', 'mostly', or 'generally'."
+    "explanation": "Used for expressing 'usually', 'mostly', or 'generally'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "たいてい",
+      "{朝|あさ}",
+      "８",
+      "{時|とき}に"
+    ],
+    "suffixFurigana": "{起|お}きます。"
   },
   {
     "id": "star-n4-1",
@@ -1335,12 +1858,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "したいです。",
     "fullSentence": "週末は映画とか買い物とか楽しいことをしたいです。",
-    "furigana": "週末は映画とか買い物とか楽しいことをしたいです。",
+    "furigana": "{週末|しゅうまつ}は{映画|えいが}とか{買い物|かいもの}とか{楽|たの}しいことをしたいです。",
     "romaji": "Shuumatsu wa eiga toka kaimono toka tanoshii koto o shitai desu.",
     "english": "On the weekend, I want to do fun things like watching movies or going shopping.",
     "grammarId": "N4/a-b",
     "grammarPoint": "A とか B とか",
-    "explanation": "Used to express multiple examples or possibilities; 'such as', 'like', 'for example'."
+    "explanation": "Used to express multiple examples or possibilities; 'such as', 'like', 'for example'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{週末|しゅうまつ}は",
+      "{映画|えいが}とか",
+      "{買い物|かいもの}とか",
+      "{楽|たの}しいことを"
+    ],
+    "suffixFurigana": "したいです。"
   },
   {
     "id": "star-n4-2",
@@ -1355,12 +1886,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "話せません。",
     "fullSentence": "彼は私ほど上手に英語を話せません。",
-    "furigana": "彼は私ほど上手に英語を話せません。",
+    "furigana": "{彼|かれ}は{私|わたし}ほど{上手|じょうず}に{英語|えいご}を{話|はな}せません。",
     "romaji": "Kare wa watashi hodo jouzu ni eigo o hanasemasen.",
     "english": "He isn't as good at speaking English as I am.",
     "grammarId": "N4/a-wa-b-hodo-arimasen",
     "grammarPoint": "A は B ほど～ありません",
-    "explanation": "Express that A is not as much as B; 'not as... as', 'not... to the extent of'."
+    "explanation": "Express that A is not as much as B; 'not as... as', 'not... to the extent of'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}は",
+      "{私|わたし}ほど",
+      "{上手|じょうず}に",
+      "{英語|えいご}を"
+    ],
+    "suffixFurigana": "{話|はな}せません。"
   },
   {
     "id": "star-n4-3",
@@ -1375,12 +1914,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "甘くない。",
     "fullSentence": "このリンゴはあのリンゴほど甘くない。",
-    "furigana": "このリンゴはあのリンゴほど甘くない。",
+    "furigana": "このリンゴはあのリンゴほど{甘|あま}くない。",
     "romaji": "Kono ringo wa ano ringo hodo amakunai.",
     "english": "This apple isn't as sweet as that one.",
     "grammarId": "N4/a-wa-b-hodo-nai",
     "grammarPoint": "A は B ほど～ない",
-    "explanation": "Expressing that A is not as ~ as B; 'not as...as'"
+    "explanation": "Expressing that A is not as ~ as B; 'not as...as'",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "リンゴは",
+      "あの",
+      "リンゴほど"
+    ],
+    "suffixFurigana": "{甘|あま}くない。"
   },
   {
     "id": "star-n4-4",
@@ -1395,12 +1942,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "高いです。",
     "fullSentence": "田中さんより鈴木さんのほうが背が高いです。",
-    "furigana": "田中さんより鈴木さんのほうが背が高いです。",
+    "furigana": "{田中|たなか}さんより{鈴木|すずき}さんのほうが{背|せ}が{高|たか}いです。",
     "romaji": "Tanaka-san yori Suzuki-san no hou ga se ga takai desu.",
     "english": "Suzuki is taller than Tanaka.",
     "grammarId": "N4/a-yori-b-no-hou-ga",
     "grammarPoint": "A より B のほうが〜",
-    "explanation": "Comparing two things; 'B is more ~ than A'."
+    "explanation": "Comparing two things; 'B is more ~ than A'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{田中|たなか}さんより",
+      "{鈴木|すずき}さんの",
+      "ほうが",
+      "{背|せ}が"
+    ],
+    "suffixFurigana": "{高|たか}いです。"
   },
   {
     "id": "star-n4-5",
@@ -1415,12 +1970,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "すくなります。",
     "fullSentence": "雨が降ると、道が滑りやすくなります。",
-    "furigana": "雨が降ると、道が滑りやすくなります。",
+    "furigana": "{雨|あめ}が{降|ふ}ると、{道|みち}が{滑|すべ}りやすくなります。",
     "romaji": "Ame ga furu to, michi ga suberiyasuku narimasu.",
     "english": "When it rains, the roads become slippery.",
     "grammarId": "N4/i-adjective-kusuru-naru",
     "grammarPoint": "い-Adjective く する/なる",
-    "explanation": "Express a change happening or making something change."
+    "explanation": "Express a change happening or making something change.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{雨|あめ}が",
+      "{降|ふ}ると、",
+      "{道|みち}が",
+      "{滑|すべ}りや"
+    ],
+    "suffixFurigana": "すくなります。"
   },
   {
     "id": "star-n4-6",
@@ -1435,12 +1998,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "いない。",
     "fullSentence": "彼は一冊の本しか持っていない。",
-    "furigana": "彼は一冊の本しか持っていない。",
+    "furigana": "{彼|かれ}は{一|いち}{冊|さつ}の{本|ほん}しか{持|も}っていない。",
     "romaji": "Kare wa isatsu no hon shika motte inai.",
     "english": "He has only one book.",
     "grammarId": "N4/noun-shika-nai",
     "grammarPoint": "Noun しか～ない",
-    "explanation": "Expresses 'only', 'nothing but', or 'no other'."
+    "explanation": "Expresses 'only', 'nothing but', or 'no other'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}は",
+      "{一|いち}{冊|さつ}の",
+      "{本|ほん}しか",
+      "{持|も}って"
+    ],
+    "suffixFurigana": "いない。"
   },
   {
     "id": "star-n4-7",
@@ -1455,12 +2026,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "するつもりです。",
     "fullSentence": "誕生日プレゼントに時計にするつもりです。",
-    "furigana": "誕生日プレゼントに時計にするつもりです。",
+    "furigana": "{誕生|たんじょう}{日|ひ}プレゼントに{時計|とけい}にするつもりです。",
     "romaji": "Tanjoubi purezento ni tokei ni suru tsumori desu.",
     "english": "I plan to give a watch as a birthday present.",
     "grammarId": "N4/noun-ni-suru",
     "grammarPoint": "Noun に する",
-    "explanation": "Used to indicate a choice or decision, 'to decide on' or 'to choose'."
+    "explanation": "Used to indicate a choice or decision, 'to decide on' or 'to choose'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{誕生|たんじょう}",
+      "{日|ひ}",
+      "プレゼントに",
+      "{時計|とけい}に"
+    ],
+    "suffixFurigana": "するつもりです。"
   },
   {
     "id": "star-n4-8",
@@ -1475,12 +2054,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "なりたかったです。",
     "fullSentence": "子供の頃、私は先生になりたかったです。",
-    "furigana": "子供の頃、私は先生になりたかったです。",
+    "furigana": "{子供|こども}の{頃|ころ}、{私|わたし}は{先生|せんせい}になりたかったです。",
     "romaji": "Kodomo no koro, watashi wa sensei ni naritakatta desu.",
     "english": "When I was a child, I wanted to become a teacher.",
     "grammarId": "N4/noun-ni-naru",
     "grammarPoint": "Noun に なる",
-    "explanation": "To become; to change into; to turn into."
+    "explanation": "To become; to change into; to turn into.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{子供|こども}の",
+      "{頃|ころ}、",
+      "{私|わたし}は",
+      "{先生|せんせい}に"
+    ],
+    "suffixFurigana": "なりたかったです。"
   },
   {
     "id": "star-n4-9",
@@ -1495,12 +2082,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "探しています。",
     "fullSentence": "勉強のために、図書館で静かな場所を探しています。",
-    "furigana": "勉強のために、図書館で静かな場所を探しています。",
+    "furigana": "{勉強|べんきょう}のために、{図書館|としょかん}で{静|しず}かな{場所|ばしょ}を{探|さが}しています。",
     "romaji": "Benkyou no tame ni, toshokan de shizukana basho o sagashiteimasu.",
     "english": "I’m looking for a quiet spot in the library to study.",
     "grammarId": "N4/no-tame-ni",
     "grammarPoint": "のために",
-    "explanation": "Used to express purpose or reason; 'for', 'for the sake of', 'in order to'."
+    "explanation": "Used to express purpose or reason; 'for', 'for the sake of', 'in order to'.",
+    "prefixFurigana": "{勉強|べんきょう}の",
+    "segmentsFurigana": [
+      "ために、",
+      "{図書館|としょかん}で",
+      "{静|しず}かな",
+      "{場所|ばしょ}を"
+    ],
+    "suffixFurigana": "{探|さが}しています。"
   },
   {
     "id": "star-n4-10",
@@ -1515,12 +2110,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "予定です。",
     "fullSentence": "夏休みの間に海外旅行に行く予定です。",
-    "furigana": "夏休みの間に海外旅行に行く予定です。",
+    "furigana": "{夏休|なつやす}みの{間|ま}に{海外|かいがい}{旅行|りょこう}に{行|い}く{予定|よてい}です。",
     "romaji": "Natsuyasumi no aida ni kaigai ryokou ni iku yotei desu.",
     "english": "I plan to travel abroad during summer vacation.",
     "grammarId": "N4/no-aida-ni",
     "grammarPoint": "Noun の 間に",
-    "explanation": "Expresses 'while' or 'during' a specific period or time."
+    "explanation": "Expresses 'while' or 'during' a specific period or time.",
+    "prefixFurigana": "{夏休|なつやす}みの",
+    "segmentsFurigana": [
+      "{間|ま}に",
+      "{海外|かいがい}",
+      "{旅行|りょこう}に",
+      "{行|い}く"
+    ],
+    "suffixFurigana": "{予定|よてい}です。"
   },
   {
     "id": "star-n4-11",
@@ -1535,12 +2138,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "だった。",
     "fullSentence": "彼が言った言葉は、どれも恐ろしいことばかりだった。",
-    "furigana": "彼が言った言葉は、どれも恐ろしいことばかりだった。",
+    "furigana": "{彼|かれ}が{言|い}った{言葉|ことば}は、どれも{恐|おそ}ろしいことばかりだった。",
     "romaji": "Kare ga itta kotoba wa, doremo osoroshii koto bakari datta.",
     "english": "Everything he said was terrifying.",
     "grammarId": "N4/bakari",
     "grammarPoint": "Noun ばかり",
-    "explanation": "Expresses 'only', 'nothing but', 'always', or 'just'."
+    "explanation": "Expresses 'only', 'nothing but', 'always', or 'just'.",
+    "prefixFurigana": "{彼|かれ}が",
+    "segmentsFurigana": [
+      "{言|い}った",
+      "{言葉|ことば}は、",
+      "どれも",
+      "{恐|おそ}ろしいことばかり"
+    ],
+    "suffixFurigana": "だった。"
   },
   {
     "id": "star-n4-12",
@@ -1555,12 +2166,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "楽しい。",
     "fullSentence": "子供たちに寝る前の物語を読んであげるのが楽しい。",
-    "furigana": "子供たちに寝る前の物語を読んであげるのが楽しい。",
+    "furigana": "{子供|こども}たちに{寝|ね}る{前|まえ}の{物語|ものがたり}を{読|よ}んであげるのが{楽|たの}しい。",
     "romaji": "Kodomo-tachi ni neru mae no monogatari o yonde ageru no ga tanoshii",
     "english": "I enjoy reading bedtime stories to the children.",
     "grammarId": "N4/noun-wo-ageru",
     "grammarPoint": "Noun を あげる",
-    "explanation": "To give something to someone; 'give', 'offer', 'present'."
+    "explanation": "To give something to someone; 'give', 'offer', 'present'.",
+    "prefixFurigana": "{子供|こども}たちに",
+    "segmentsFurigana": [
+      "{寝|ね}る",
+      "{前|まえ}の",
+      "{物語|ものがたり}を",
+      "{読|よ}んであげるのが"
+    ],
+    "suffixFurigana": "{楽|たの}しい。"
   },
   {
     "id": "star-n4-13",
@@ -1575,12 +2194,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "いただきました。",
     "fullSentence": "会社の上司に昇進のお知らせをいただきました。",
-    "furigana": "会社の上司に昇進のお知らせをいただきました。",
+    "furigana": "{会社|かいしゃ}の{上司|じょうし}に{昇進|しょうしん}のお{知|し}らせをいただきました。",
     "romaji": "Kaisha no joushi ni shoushin no oshirase wo itadakimashita.",
     "english": "My supervisor at work informed me of my promotion.",
     "grammarId": "N4/noun-wo-itadaku",
     "grammarPoint": "Nounをいただく",
-    "explanation": "To receive or accept something politely; 'to receive', 'to get', 'to accept'."
+    "explanation": "To receive or accept something politely; 'to receive', 'to get', 'to accept'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{会社|かいしゃ}の",
+      "{上司|じょうし}に",
+      "{昇進|しょうしん}の",
+      "お{知|し}らせを"
+    ],
+    "suffixFurigana": "いただきました。"
   },
   {
     "id": "star-n4-14",
@@ -1595,12 +2222,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "言った。",
     "fullSentence": "彼女は私の面倒を見てくれると言った。",
-    "furigana": "彼女は私の面倒を見てくれると言った。",
+    "furigana": "{彼女|かのじょ}は{私|わたし}の{面倒|めんどう}を{見|み}てくれると{言|い}った。",
     "romaji": "Kanojo wa watashi no mendou o mite kureru to itta",
     "english": "She said she would take care of me.",
     "grammarId": "N4/noun-wo-kureru",
     "grammarPoint": "Noun を くれる",
-    "explanation": "Expresses that someone gives a thing to the speaker or someone close to the speaker."
+    "explanation": "Expresses that someone gives a thing to the speaker or someone close to the speaker.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼女|かのじょ}は",
+      "{私|わたし}の",
+      "{面倒|めんどう}を",
+      "{見|み}てくれると"
+    ],
+    "suffixFurigana": "{言|い}った。"
   },
   {
     "id": "star-n4-15",
@@ -1615,12 +2250,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "維持できる。",
     "fullSentence": "定期的に歯医者に診てもらうことで、歯の健康を維持できる。",
-    "furigana": "定期的に歯医者に診てもらうことで、歯の健康を維持できる。",
+    "furigana": "{定期|ていき}{的|てき}に{歯医者|はいしゃ}に{診|み}てもらうことで、{歯|は}の{健康|けんこう}を{維持|いじ}できる。",
     "romaji": "Teikiteki ni haisha ni mite morau koto de, ha no kenkou o iji dekiru.",
     "english": "By seeing a dentist regularly, you can maintain your dental health.",
     "grammarId": "N4/noun-wo-morau",
     "grammarPoint": "Noun もらう",
-    "explanation": "To receive or get something from someone; 'to receive', 'to get'."
+    "explanation": "To receive or get something from someone; 'to receive', 'to get'.",
+    "prefixFurigana": "{定期|ていき}{的|てき}に",
+    "segmentsFurigana": [
+      "{歯医者|はいしゃ}に",
+      "{診|み}てもらうことで、",
+      "{歯|は}の",
+      "{健康|けんこう}を"
+    ],
+    "suffixFurigana": "{維持|いじ}できる。"
   },
   {
     "id": "star-n4-16",
@@ -1635,12 +2278,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "はいけません。",
     "fullSentence": "試験中、携帯電話を使ってはいけません。",
-    "furigana": "試験中、携帯電話を使ってはいけません。",
+    "furigana": "{試験|しけん}{中|なか}、{携帯|けいたい}{電話|でんわ}を{使|つか}ってはいけません。",
     "romaji": "Shiken chuu, keitai denwa wo tsukatte wa ikemasen.",
     "english": "You must not use your cell phone during the exam.",
     "grammarId": "N4/noun-2",
     "grammarPoint": "Noun + 中",
-    "explanation": "Express 'in the middle of', 'during', or 'in the process of'."
+    "explanation": "Express 'in the middle of', 'during', or 'in the process of'.",
+    "prefixFurigana": "{試験|しけん}",
+    "segmentsFurigana": [
+      "{中|なか}、",
+      "{携帯|けいたい}",
+      "{電話|でんわ}を",
+      "{使|つか}って"
+    ],
+    "suffixFurigana": "はいけません。"
   },
   {
     "id": "star-n4-17",
@@ -1655,12 +2306,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "せられた。",
     "fullSentence": "彼は会社にもっと働かせられた。",
-    "furigana": "彼は会社にもっと働かせられた。",
+    "furigana": "{彼|かれ}は{会社|かいしゃ}にもっと{働|はたら}かせられた。",
     "romaji": "Kare wa kaisha ni motto hatarakaserareta.",
     "english": "He was made to work harder at the company.",
     "grammarId": "N4/verb-saserareru",
     "grammarPoint": "Verb させられる",
-    "explanation": "Express the passive causative form; 'to be made to', 'to be forced to'."
+    "explanation": "Express the passive causative form; 'to be made to', 'to be forced to'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}は",
+      "{会社|かいしゃ}に",
+      "もっと",
+      "{働|はたら}か"
+    ],
+    "suffixFurigana": "せられた。"
   },
   {
     "id": "star-n4-18",
@@ -1675,12 +2334,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "作らせました。",
     "fullSentence": "上司は彼にそのプログラムを作らせました。",
-    "furigana": "上司は彼にそのプログラムを作らせました。",
+    "furigana": "{上司|じょうし}は{彼|かれ}にそのプログラムを{作|つく}らせました。",
     "romaji": "Joushi wa kare ni sono puroguramu o tsukurasemashita.",
     "english": "His boss had him create that program.",
     "grammarId": "N4/verb-saseru",
     "grammarPoint": "Verb させる",
-    "explanation": "Expresses 'to make someone do something', 'to let someone do something', or 'to cause someone to do something'."
+    "explanation": "Expresses 'to make someone do something', 'to let someone do something', or 'to cause someone to do something'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{上司|じょうし}は",
+      "{彼|かれ}に",
+      "その",
+      "プログラムを"
+    ],
+    "suffixFurigana": "{作|つく}らせました。"
   },
   {
     "id": "star-n4-19",
@@ -1695,12 +2362,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ありません。",
     "fullSentence": "私はスカイダイビングをしたことがありません。",
-    "furigana": "私はスカイダイビングをしたことがありません。",
+    "furigana": "{私|わたし}はスカイダイビングをしたことがありません。",
     "romaji": "Watashi wa sukaidaibingu wo shita koto ga arimasen.",
     "english": "I have never gone skydiving.",
     "grammarId": "N4/verb-ta-koto-ga-aru",
     "grammarPoint": "Verb た ことがある",
-    "explanation": "Expresses the experience of having done something in the past."
+    "explanation": "Expresses the experience of having done something in the past.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{私|わたし}は",
+      "スカイ",
+      "ダイビングを",
+      "したことが"
+    ],
+    "suffixFurigana": "ありません。"
   },
   {
     "id": "star-n4-20",
@@ -1715,12 +2390,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "撮りました。",
     "fullSentence": "日本へ行ったときに、たくさんの写真を撮りました。",
-    "furigana": "日本へ行ったときに、たくさんの写真を撮りました。",
+    "furigana": "{日本|にっぽん}へ{行|い}ったときに、たくさんの{写真|しゃしん}を{撮|と}りました。",
     "romaji": "Nihon e itta toki ni, takusan no shashin wo torimashita.",
     "english": "When I went to Japan, I took a lot of photos.",
     "grammarId": "N4/verb",
     "grammarPoint": "Verb た ときに",
-    "explanation": "Express an action or event that occurred at a specific time in the past; 'when', 'at the time'."
+    "explanation": "Express an action or event that occurred at a specific time in the past; 'when', 'at the time'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{日本|にっぽん}へ",
+      "{行|い}ったときに、",
+      "たくさんの",
+      "{写真|しゃしん}を"
+    ],
+    "suffixFurigana": "{撮|と}りました。"
   },
   {
     "id": "star-n4-21",
@@ -1735,12 +2418,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "出してきた。",
     "fullSentence": "ドアを開けたところ、猫が飛び出してきた。",
-    "furigana": "ドアを開けたところ、猫が飛び出してきた。",
+    "furigana": "ドアを{開|あ}けたところ、{猫|ねこ}が{飛|と}び{出|だ}してきた。",
     "romaji": "Doa wo aketa tokoro, neko ga tobidashite kita.",
     "english": "As soon as I opened the door, a cat darted out.",
     "grammarId": "N4/verb-ta-tokoro",
     "grammarPoint": "Verb た ところ",
-    "explanation": "Expresses the situation right after an action has taken place."
+    "explanation": "Expresses the situation right after an action has taken place.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "ドアを",
+      "{開|あ}けたところ、",
+      "{猫|ねこ}が",
+      "{飛|と}び"
+    ],
+    "suffixFurigana": "{出|だ}してきた。"
   },
   {
     "id": "star-n4-22",
@@ -1755,12 +2446,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "身につけたほうがいい。",
     "fullSentence": "頑固にならずに、もっと柔軟な考え方を身につけたほうがいい。",
-    "furigana": "頑固にならずに、もっと柔軟な考え方を身につけたほうがいい。",
+    "furigana": "{頑固|がんこ}にならずに、もっと{柔軟|じゅうなん}な{考え方|かんがえかた}を{身|み}につけたほうがいい。",
     "romaji": "Ganko ni narazu ni, motto juunan na kangaekata o mi ni tsuketa hou ga ii",
     "english": "You should try to adopt a more flexible way of thinking rather than being stubborn.",
     "grammarId": "N4/ta-hou-ga-ii",
     "grammarPoint": "Verb たほうがいい",
-    "explanation": "Used to give advice or make a suggestion to someone - 'it's better if...'."
+    "explanation": "Used to give advice or make a suggestion to someone - 'it's better if...'.",
+    "prefixFurigana": "{頑固|がんこ}に",
+    "segmentsFurigana": [
+      "ならずに、",
+      "もっと",
+      "{柔軟|じゅうなん}な",
+      "{考え方|かんがえかた}を"
+    ],
+    "suffixFurigana": "{身|み}につけたほうがいい。"
   },
   {
     "id": "star-n4-23",
@@ -1775,12 +2474,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ありません。",
     "fullSentence": "仕事が忙しいために、友達と会う時間がありません。",
-    "furigana": "仕事が忙しいために、友達と会う時間がありません。",
+    "furigana": "{仕事|しごと}が{忙|いそが}しいために、{友達|ともだち}と{会|あ}う{時間|じかん}がありません。",
     "romaji": "Shigoto ga isogashii tame ni, tomodachi to au jikan ga arimasen.",
     "english": "Because I’m so busy with work, I don’t have time to meet up with my friends.",
     "grammarId": "N4/tame-ni",
     "grammarPoint": "Verb ために",
-    "explanation": "Used to describe the purpose or reason for an action; 'for the sake of', 'in order to', 'because of'."
+    "explanation": "Used to describe the purpose or reason for an action; 'for the sake of', 'in order to', 'because of'.",
+    "prefixFurigana": "{仕事|しごと}が",
+    "segmentsFurigana": [
+      "{忙|いそが}しいために、",
+      "{友達|ともだち}と",
+      "{会|あ}う",
+      "{時間|じかん}が"
+    ],
+    "suffixFurigana": "ありません。"
   },
   {
     "id": "star-n4-24",
@@ -1795,12 +2502,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "かくつもりだ。",
     "fullSentence": "家に帰ったら、彼に手紙をかくつもりだ。",
-    "furigana": "家に帰ったら、彼に手紙をかくつもりだ。",
+    "furigana": "{家|いえ}に{帰|かえ}ったら、{彼|かれ}に{手紙|てがみ}をかくつもりだ。",
     "romaji": "Ie ni kaettara, kare ni tegami o kaku tsumori da",
     "english": "When I get home, I plan to write him a letter.",
     "grammarId": "N4/tsumori",
     "grammarPoint": "Verb つもり",
-    "explanation": "Express the intention, plan, or determination to do something; 'I intend to', 'I plan to', 'I'm determined to'."
+    "explanation": "Express the intention, plan, or determination to do something; 'I intend to', 'I plan to', 'I'm determined to'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{家|いえ}に",
+      "{帰|かえ}ったら、",
+      "{彼|かれ}に",
+      "{手紙|てがみ}を"
+    ],
+    "suffixFurigana": "かくつもりだ。"
   },
   {
     "id": "star-n4-25",
@@ -1815,12 +2530,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "あげた。",
     "fullSentence": "友達が疲れていたから、荷物を持ってあげた。",
-    "furigana": "友達が疲れていたから、荷物を持ってあげた。",
+    "furigana": "{友達|ともだち}が{疲|つか}れていたから、{荷物|にもつ}を{持|も}ってあげた。",
     "romaji": "Tomodachi ga tsukareteita kara, nimotsu o motte ageta.",
     "english": "My friend was tired, so I carried their luggage for them.",
     "grammarId": "N4/verb-te-ageru",
     "grammarPoint": "Verb てあげる",
-    "explanation": "Used to express doing something for someone; 'do something for someone'."
+    "explanation": "Used to express doing something for someone; 'do something for someone'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{友達|ともだち}が",
+      "{疲|つか}れていたから、",
+      "{荷物|にもつ}を",
+      "{持|も}って"
+    ],
+    "suffixFurigana": "あげた。"
   },
   {
     "id": "star-n4-26",
@@ -1835,12 +2558,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "しょう。",
     "fullSentence": "このまま練習を続けていくと、上達するでしょう。",
-    "furigana": "このまま練習を続けていくと、上達するでしょう。",
+    "furigana": "このまま{練習|れんしゅう}を{続|つづ}けていくと、{上達|じょうたつ}するでしょう。",
     "romaji": "Kono mama renshuu o tsuzukete iku to, joutatsu suru deshou.",
     "english": "If you keep practicing like this, you’ll improve.",
     "grammarId": "N4/verb-te-iku",
     "grammarPoint": "Verb て いく",
-    "explanation": "Expresses an action that continues on into the future or a change that progresses over time."
+    "explanation": "Expresses an action that continues on into the future or a change that progresses over time.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "このまま",
+      "{練習|れんしゅう}を",
+      "{続|つづ}けていくと、",
+      "{上達|じょうたつ}するで"
+    ],
+    "suffixFurigana": "しょう。"
   },
   {
     "id": "star-n4-27",
@@ -1855,12 +2586,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ですが。",
     "fullSentence": "この仕事を手伝っていただきたいのですが。",
-    "furigana": "この仕事を手伝っていただきたいのですが。",
+    "furigana": "この{仕事|しごと}を{手|て}{伝|つた}っていただきたいのですが。",
     "romaji": "Kono shigoto wo tetsudatte itadakitai no desu ga.",
     "english": "I was wondering if you could help me with this task.",
     "grammarId": "N4/te-itadakitai",
     "grammarPoint": "Verb ていただきたい",
-    "explanation": "Express a polite request or desire that someone does something for you."
+    "explanation": "Express a polite request or desire that someone does something for you.",
+    "prefixFurigana": "この",
+    "segmentsFurigana": [
+      "{仕事|しごと}を",
+      "{手|て}",
+      "{伝|つた}って",
+      "いただきたいの"
+    ],
+    "suffixFurigana": "ですが。"
   },
   {
     "id": "star-n4-28",
@@ -1875,12 +2614,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ませんか。",
     "fullSentence": "この荷物を持っていただけませんか。",
-    "furigana": "この荷物を持っていただけませんか。",
+    "furigana": "この{荷物|にもつ}を{持|も}っていただけませんか。",
     "romaji": "Kono nimotsu wo motte itadakemasen ka.",
     "english": "Could you please carry this bag for me?",
     "grammarId": "N4/verb-te-itadakemasen-ka",
     "grammarPoint": "Verb て いただけませんか",
-    "explanation": "A polite request; 'Could you please...', 'Would you mind...'"
+    "explanation": "A polite request; 'Could you please...', 'Would you mind...'",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "{荷物|にもつ}を",
+      "{持|も}って",
+      "いただけ"
+    ],
+    "suffixFurigana": "ませんか。"
   },
   {
     "id": "star-n4-29",
@@ -1895,12 +2642,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "来ます。",
     "fullSentence": "彼女はケーキを作っているところで、すぐ来ます。",
-    "furigana": "彼女はケーキを作っているところで、すぐ来ます。",
+    "furigana": "{彼女|かのじょ}はケーキを{作|つく}っているところで、すぐ{来|き}ます。",
     "romaji": "Kanojo wa keeki wo tsukutte iru tokoro de, sugu kimasu.",
     "english": "She’s in the middle of baking a cake, so she’ll be here soon.",
     "grammarId": "N4/verb-te-iru-tokoro",
     "grammarPoint": "Verb て いる ところ",
-    "explanation": "Describes an action that is currently happening; 'in the middle of', 'in the process of'."
+    "explanation": "Describes an action that is currently happening; 'in the middle of', 'in the process of'.",
+    "prefixFurigana": "{彼女|かのじょ}は",
+    "segmentsFurigana": [
+      "ケーキを",
+      "{作|つく}って",
+      "いるところで、",
+      "すぐ"
+    ],
+    "suffixFurigana": "{来|き}ます。"
   },
   {
     "id": "star-n4-30",
@@ -1915,12 +2670,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "寝てしまった。",
     "fullSentence": "映画を見ている間に、彼は寝てしまった。",
-    "furigana": "映画を見ている間に、彼は寝てしまった。",
+    "furigana": "{映画|えいが}を{見|み}ている{間|ま}に、{彼|かれ}は{寝|ね}てしまった。",
     "romaji": "Eiga o mite iru aida ni, kare wa nete shimatta.",
     "english": "He fell asleep while watching a movie.",
     "grammarId": "N4/te-iru-aida-ni",
     "grammarPoint": "Verb ている間に",
-    "explanation": "Expresses 'while' or 'during the time' something is happening."
+    "explanation": "Expresses 'while' or 'during the time' something is happening.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{映画|えいが}を",
+      "{見|み}ている",
+      "{間|ま}に、",
+      "{彼|かれ}は"
+    ],
+    "suffixFurigana": "{寝|ね}てしまった。"
   },
   {
     "id": "star-n4-31",
@@ -1935,12 +2698,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "失敗するかもしれない。",
     "fullSentence": "試験前に勉強しておかないと、失敗するかもしれない。",
-    "furigana": "試験前に勉強しておかないと、失敗するかもしれない。",
+    "furigana": "{試験|しけん}{前|まえ}に{勉強|べんきょう}しておかないと、{失敗|しっぱい}するかもしれない。",
     "romaji": "Shiken mae ni benkyou shite okanai to, shippai suru kamo shirenai.",
     "english": "If you don’t study before the exam, you might fail.",
     "grammarId": "N4/te-oku",
     "grammarPoint": "Verb ておく",
-    "explanation": "Perform an action in preparation for a future situation; 'to do something in advance'."
+    "explanation": "Perform an action in preparation for a future situation; 'to do something in advance'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{試験|しけん}",
+      "{前|まえ}に",
+      "{勉強|べんきょう}しておか",
+      "ないと、"
+    ],
+    "suffixFurigana": "{失敗|しっぱい}するかもしれない。"
   },
   {
     "id": "star-n4-32",
@@ -1955,12 +2726,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "くださる。",
     "fullSentence": "お母さんが美味しい料理を作ってくださる。",
-    "furigana": "お母さんが美味しい料理を作ってくださる。",
+    "furigana": "お{母|かあ}さんが{美味|おい}しい{料理|りょうり}を{作|つく}ってくださる。",
     "romaji": "Okaasan ga oishii ryouri wo tsukutte kudasaru.",
     "english": "My mother cooks delicious meals for me.",
     "grammarId": "N4/verb-te-kudasaru",
     "grammarPoint": "Verb て くださる",
-    "explanation": "Expresses gratitude for receiving someone's favor; 'to kindly do'."
+    "explanation": "Expresses gratitude for receiving someone's favor; 'to kindly do'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "お{母|かあ}さんが",
+      "{美味|おい}しい",
+      "{料理|りょうり}を",
+      "{作|つく}って"
+    ],
+    "suffixFurigana": "くださる。"
   },
   {
     "id": "star-n4-33",
@@ -1975,12 +2754,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "くれました。",
     "fullSentence": "友達が宿題を手伝ってくれました。",
-    "furigana": "友達が宿題を手伝ってくれました。",
+    "furigana": "{友達|ともだち}が{宿題|しゅくだい}を{手|て}{伝|つた}ってくれました。",
     "romaji": "Tomodachi ga shukudai wo tetsudatte kuremashita.",
     "english": "My friend helped me with my homework.",
     "grammarId": "N4/verb-te-kureru",
     "grammarPoint": "Verb て くれる",
-    "explanation": "Expresses that someone does something for the speaker (or another person in speaker's group); 'to do something for me/us'."
+    "explanation": "Expresses that someone does something for the speaker (or another person in speaker's group); 'to do something for me/us'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{友達|ともだち}が",
+      "{宿題|しゅくだい}を",
+      "{手|て}",
+      "{伝|つた}って"
+    ],
+    "suffixFurigana": "くれました。"
   },
   {
     "id": "star-n4-34",
@@ -1995,12 +2782,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "しまった。",
     "fullSentence": "値札を見ずに高い服を買ってしまった。",
-    "furigana": "値札を見ずに高い服を買ってしまった。",
+    "furigana": "{値札|ねふだ}を{見|み}ずに{高|たか}い{服|ふく}を{買|か}ってしまった。",
     "romaji": "Nefuda wo mizu ni takai fuku wo katte shimatta.",
     "english": "I ended up buying an expensive piece of clothing without checking the price tag.",
     "grammarId": "N4/te-shimau",
     "grammarPoint": "Verb てしまう",
-    "explanation": "Expresses unintentional actions or actions with regrettable outcomes; 'to end up doing', 'to accidentally do'."
+    "explanation": "Expresses unintentional actions or actions with regrettable outcomes; 'to end up doing', 'to accidentally do'.",
+    "prefixFurigana": "{値札|ねふだ}を",
+    "segmentsFurigana": [
+      "{見|み}ずに",
+      "{高|たか}い",
+      "{服|ふく}を",
+      "{買|か}って"
+    ],
+    "suffixFurigana": "しまった。"
   },
   {
     "id": "star-n4-35",
@@ -2015,12 +2810,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ほしい。",
     "fullSentence": "仕事の合間に少し休める時間がほしい。",
-    "furigana": "仕事の合間に少し休める時間がほしい。",
+    "furigana": "{仕事|しごと}の{合間|あいま}に{少|すこ}し{休|やす}める{時間|じかん}がほしい。",
     "romaji": "Shigoto no aima ni sukoshi yasumeru jikan ga hoshii.",
     "english": "I’d like to have a little time to rest between work tasks.",
     "grammarId": "N4/verb-te-hoshii",
     "grammarPoint": "Verb て ほしい",
-    "explanation": "Express a desire for someone else to do something; 'I want (someone) to'."
+    "explanation": "Express a desire for someone else to do something; 'I want (someone) to'.",
+    "prefixFurigana": "{仕事|しごと}の",
+    "segmentsFurigana": [
+      "{合間|あいま}に",
+      "{少|すこ}し",
+      "{休|やす}める",
+      "{時間|じかん}が"
+    ],
+    "suffixFurigana": "ほしい。"
   },
   {
     "id": "star-n4-36",
@@ -2035,12 +2838,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "いいですね。",
     "fullSentence": "もし飼いたい動物がいたら、ペットショップに行ってみるといいですね。",
-    "furigana": "もし飼いたい動物がいたら、ペットショップに行ってみるといいですね。",
+    "furigana": "もし{飼|か}いたい{動物|どうぶつ}がいたら、ペットショップに{行|い}ってみるといいですね。",
     "romaji": "Moshi kaitai doubutsu ga itara, petto shoppu ni itte miru to ii desu ne.",
     "english": "If there’s an animal you’d like to have, you should try visiting a pet store.",
     "grammarId": "N4/te-miru",
     "grammarPoint": "Verb てみる",
-    "explanation": "Used to express 'try to' or 'attempt to do'."
+    "explanation": "Used to express 'try to' or 'attempt to do'.",
+    "prefixFurigana": "もし{飼|か}いたい{動物|どうぶつ}がいたら、",
+    "segmentsFurigana": [
+      "ペット",
+      "ショップに",
+      "{行|い}って",
+      "みると"
+    ],
+    "suffixFurigana": "いいですね。"
   },
   {
     "id": "star-n4-37",
@@ -2055,12 +2866,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "らいたい。",
     "fullSentence": "彼にそのニュースを教えてもらいたい。",
-    "furigana": "彼にそのニュースを教えてもらいたい。",
+    "furigana": "{彼|かれ}にそのニュースを{教|おし}えてもらいたい。",
     "romaji": "Kare ni sono nyuusu o oshiete moraitai.",
     "english": "I want him to tell me that news.",
     "grammarId": "N4/te-moraitai",
     "grammarPoint": "Verb てもらいたい",
-    "explanation": "Express a desire to receive a favor or service from someone else."
+    "explanation": "Express a desire to receive a favor or service from someone else.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}に",
+      "その",
+      "ニュースを",
+      "{教|おし}えても"
+    ],
+    "suffixFurigana": "らいたい。"
   },
   {
     "id": "star-n4-38",
@@ -2075,12 +2894,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "らった。",
     "fullSentence": "友達に宿題を手伝ってもらった。",
-    "furigana": "友達に宿題を手伝ってもらった。",
+    "furigana": "{友達|ともだち}に{宿題|しゅくだい}を{手|て}{伝|つた}ってもらった。",
     "romaji": "Tomodachi ni shukudai o tetsudatte moratta.",
     "english": "A friend helped me with my homework.",
     "grammarId": "N4/verb-te-morau",
     "grammarPoint": "Verb て もらう",
-    "explanation": "Express receiving a favor or action from someone."
+    "explanation": "Express receiving a favor or action from someone.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{友達|ともだち}に",
+      "{宿題|しゅくだい}を",
+      "{手|て}",
+      "{伝|つた}っても"
+    ],
+    "suffixFurigana": "らった。"
   },
   {
     "id": "star-n4-39",
@@ -2095,12 +2922,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ある。",
     "fullSentence": "この電車は定刻に来ないことがある。",
-    "furigana": "この電車は定刻に来ないことがある。",
+    "furigana": "この{電車|でんしゃ}は{定刻|ていこく}に{来|こ}ないことがある。",
     "romaji": "Kono densha wa teikoku ni konai koto ga aru.",
     "english": "This train sometimes doesn’t arrive on time.",
     "grammarId": "N4/verb-nai-koto-ga-aru",
     "grammarPoint": "Verb ない ことがある",
-    "explanation": "Expresses that something doesn't always happen or there are occasions when it doesn't happen."
+    "explanation": "Expresses that something doesn't always happen or there are occasions when it doesn't happen.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "{電車|でんしゃ}は",
+      "{定刻|ていこく}に",
+      "{来|こ}ないことが"
+    ],
+    "suffixFurigana": "ある。"
   },
   {
     "id": "star-n4-40",
@@ -2115,12 +2950,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "キャンセルされます。",
     "fullSentence": "今日彼が来ないことになると、私たちの予定はキャンセルされます。",
-    "furigana": "今日彼が来ないことになると、私たちの予定はキャンセルされます。",
+    "furigana": "{今日|きょう}{彼|かれ}が{来|こ}ないことになると、{私|わたし}たちの{予定|よてい}はキャンセルされます。",
     "romaji": "Kyou kare ga konai koto ni naru to, watashitachi no yotei wa kyanseru saremasu.",
     "english": "If he doesn’t come today, our plans will be canceled.",
     "grammarId": "N4/verb-nai-koto-ni-naru",
     "grammarPoint": "Verb ない ことになる",
-    "explanation": "Expresses a result; 'end up not', 'it will become that', 'it would mean that'."
+    "explanation": "Expresses a result; 'end up not', 'it will become that', 'it would mean that'.",
+    "prefixFurigana": "{今日|きょう}",
+    "segmentsFurigana": [
+      "{彼|かれ}が",
+      "{来|こ}ないことになると、",
+      "{私|わたし}たちの",
+      "{予定|よてい}は"
+    ],
+    "suffixFurigana": "キャンセルされます。"
   },
   {
     "id": "star-n4-41",
@@ -2135,12 +2978,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "話さないほうがいい。",
     "fullSentence": "彼に秘密を知られたくなければ、話さないほうがいい。",
-    "furigana": "彼に秘密を知られたくなければ、話さないほうがいい。",
+    "furigana": "{彼|かれ}に{秘密|ひみつ}を{知|し}られたくなければ、{話|はな}さないほうがいい。",
     "romaji": "Kare ni himitsu o shiraretakunakereba, hanasanai hou ga ii.",
     "english": "If you don’t want him to find out your secret, it’s better not to tell him.",
     "grammarId": "N4/verb-nai-hou-ga-ii",
     "grammarPoint": "Verb ないほうがいい",
-    "explanation": "Expresses the idea that it is better not to do something."
+    "explanation": "Expresses the idea that it is better not to do something.",
+    "prefixFurigana": "{彼|かれ}に",
+    "segmentsFurigana": [
+      "{秘密|ひみつ}を",
+      "{知|し}られたく",
+      "な",
+      "ければ、"
+    ],
+    "suffixFurigana": "{話|はな}さないほうがいい。"
   },
   {
     "id": "star-n4-42",
@@ -2155,12 +3006,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "危険です。",
     "fullSentence": "歩きながらスマホを見るのは危険です。",
-    "furigana": "歩きながらスマホを見るのは危険です。",
+    "furigana": "{歩|ある}きながらスマホを{見|み}るのは{危険|きけん}です。",
     "romaji": "Arukinagara sumaho wo miru no wa kiken desu.",
     "english": "It is dangerous to look at your smartphone while walking.",
     "grammarId": "N4/nagara",
     "grammarPoint": "Verb ながら",
-    "explanation": "Expresses 'while' or 'as' in the sense of doing two things simultaneously."
+    "explanation": "Expresses 'while' or 'as' in the sense of doing two things simultaneously.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{歩|ある}きながら",
+      "スマ",
+      "ホを",
+      "{見|み}るのは"
+    ],
+    "suffixFurigana": "{危険|きけん}です。"
   },
   {
     "id": "star-n4-43",
@@ -2175,12 +3034,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "さい。",
     "fullSentence": "愛する人を大切にしなさい。",
-    "furigana": "愛する人を大切にしなさい。",
+    "furigana": "{愛|あい}する{人|ひと}を{大切|たいせつ}にしなさい。",
     "romaji": "Aisuru hito o taisetsu ni shinasai",
     "english": "Cherish the ones you love.",
     "grammarId": "N4/nasai",
     "grammarPoint": "Verb なさい",
-    "explanation": "A command form used to give orders or instructions; 'Please do', 'Do this'."
+    "explanation": "A command form used to give orders or instructions; 'Please do', 'Do this'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{愛|あい}する",
+      "{人|ひと}を",
+      "{大切|たいせつ}にし",
+      "な"
+    ],
+    "suffixFurigana": "さい。"
   },
   {
     "id": "star-n4-44",
@@ -2195,12 +3062,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "理解しにくい。",
     "fullSentence": "兄はしゃべる速度が速すぎて、理解しにくい。",
-    "furigana": "兄はしゃべる速度が速すぎて、理解しにくい。",
+    "furigana": "{兄|あに}はしゃべる{速度|そくど}が{速|はや}すぎて、{理解|りかい}しにくい。",
     "romaji": "Ani wa shaberu sokudo ga hayasugite, rikai shinikui",
     "english": "My older brother speaks too fast, so it’s hard to understand him.",
     "grammarId": "N4/nikui",
     "grammarPoint": "Verb にくい",
-    "explanation": "Express difficulty or complexity; 'hard to', 'difficult to', 'not easily'."
+    "explanation": "Express difficulty or complexity; 'hard to', 'difficult to', 'not easily'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{兄|あに}は",
+      "しゃべる",
+      "{速度|そくど}が",
+      "{速|はや}すぎて、"
+    ],
+    "suffixFurigana": "{理解|りかい}しにくい。"
   },
   {
     "id": "star-n4-45",
@@ -2215,12 +3090,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "よくある。",
     "fullSentence": "コーヒーは冷めやすいので、飲む前に温め直すことがよくある。",
-    "furigana": "コーヒーは冷めやすいので、飲む前に温め直すことがよくある。",
+    "furigana": "コーヒーは{冷|さ}めやすいので、{飲|の}む{前|まえ}に{温|あたた}め{直|なお}すことがよくある。",
     "romaji": "Koohii wa sameyasui node, nomu mae ni atatame naosu koto ga yoku aru",
     "english": "Since coffee cools down quickly, I often reheat it before drinking it.",
     "grammarId": "N4/yasui",
     "grammarPoint": "Verb やすい",
-    "explanation": "Indicates that something is easy to do; 'easy to', 'easy for'."
+    "explanation": "Indicates that something is easy to do; 'easy to', 'easy for'.",
+    "prefixFurigana": "コーヒーは{冷|さ}めやすいので、",
+    "segmentsFurigana": [
+      "{飲|の}む",
+      "{前|まえ}に",
+      "{温|あたた}め",
+      "{直|なお}すことが"
+    ],
+    "suffixFurigana": "よくある。"
   },
   {
     "id": "star-n4-46",
@@ -2235,12 +3118,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "います。",
     "fullSentence": "週末に友達と遊ぼうと思っています。",
-    "furigana": "週末に友達と遊ぼうと思っています。",
+    "furigana": "{週末|しゅうまつ}に{友達|ともだち}と{遊|あそ}ぼうと{思|おも}っています。",
     "romaji": "Shuumatsu ni tomodachi to asobou to omotteimasu.",
     "english": "I’m planning to hang out with my friends this weekend.",
     "grammarId": "N4/verb-you-to-omou",
     "grammarPoint": "Verb ようと思う",
-    "explanation": "Express intention or plan to do something; 'I think I will', 'I plan to', 'I intend to'."
+    "explanation": "Express intention or plan to do something; 'I think I will', 'I plan to', 'I intend to'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{週末|しゅうまつ}に",
+      "{友達|ともだち}と",
+      "{遊|あそ}ぼうと",
+      "{思|おも}って"
+    ],
+    "suffixFurigana": "います。"
   },
   {
     "id": "star-n4-47",
@@ -2255,12 +3146,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "踊る。",
     "fullSentence": "彼女は鳥のように軽やかに踊る。",
-    "furigana": "彼女は鳥のように軽やかに踊る。",
+    "furigana": "{彼女|かのじょ}は{鳥|とり}のように{軽|かろ}やかに{踊|おど}る。",
     "romaji": "Kanojo wa tori no you ni karoyaka ni odoru.",
     "english": "She dances as gracefully as a bird.",
     "grammarId": "N4/you-ni",
     "grammarPoint": "Verb ように",
-    "explanation": "Used to express 'like', 'as if', 'in order to', or 'so that'."
+    "explanation": "Used to express 'like', 'as if', 'in order to', or 'so that'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼女|かのじょ}は",
+      "{鳥|とり}の",
+      "ように",
+      "{軽|かろ}やかに"
+    ],
+    "suffixFurigana": "{踊|おど}る。"
   },
   {
     "id": "star-n4-48",
@@ -2275,12 +3174,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "なりました。",
     "fullSentence": "この仕事を始めてから、毎日忙しいと感じるようになりました。",
-    "furigana": "この仕事を始めてから、毎日忙しいと感じるようになりました。",
+    "furigana": "この{仕事|しごと}を{始|はじ}めてから、{毎日|まいにち}{忙|いそが}しいと{感|かん}じるようになりました。",
     "romaji": "Kono shigoto o hajimete kara, mainichi isogashii to kanjiru you ni narimashita.",
     "english": "Since I started this job, I’ve come to feel busy every day.",
     "grammarId": "N4/you-ni-naru",
     "grammarPoint": "Verb ようになる",
-    "explanation": "Express a change in ability, situation or state; 'become able to', 'come to', 'begin to'."
+    "explanation": "Express a change in ability, situation or state; 'become able to', 'come to', 'begin to'.",
+    "prefixFurigana": "この{仕事|しごと}を",
+    "segmentsFurigana": [
+      "{始|はじ}めてから、",
+      "{毎日|まいにち}",
+      "{忙|いそが}しいと",
+      "{感|かん}じるように"
+    ],
+    "suffixFurigana": "なりました。"
   },
   {
     "id": "star-n4-49",
@@ -2295,12 +3202,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "言いました。",
     "fullSentence": "先生は私たちに宿題をやるように言いました。",
-    "furigana": "先生は私たちに宿題をやるように言いました。",
+    "furigana": "{先生|せんせい}は{私|わたし}たちに{宿題|しゅくだい}をやるように{言|い}いました。",
     "romaji": "Sensei wa watashitachi ni shukudai o yaru you ni iimashita.",
     "english": "The teacher told us to do our homework.",
     "grammarId": "N4/verb-you-ni-iu",
     "grammarPoint": "Verb ように言う",
-    "explanation": "Tell someone to do something; 'tell to do', 'instruct to do'."
+    "explanation": "Tell someone to do something; 'tell to do', 'instruct to do'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{先生|せんせい}は",
+      "{私|わたし}たちに",
+      "{宿題|しゅくだい}を",
+      "やるように"
+    ],
+    "suffixFurigana": "{言|い}いました。"
   },
   {
     "id": "star-n4-50",
@@ -2315,12 +3230,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "多い。",
     "fullSentence": "おとなしい生徒は先生に気に入られることが多い。",
-    "furigana": "おとなしい生徒は先生に気に入られることが多い。",
+    "furigana": "おとなしい{生徒|せいと}は{先生|せんせい}に{気|き}に{入|はい}られることが{多|おお}い。",
     "romaji": "Otonashii seito wa sensei ni kiniirareru koto ga ooi.",
     "english": "Well-behaved students are often favored by their teachers.",
     "grammarId": "N4/rareru",
     "grammarPoint": "Verb られる",
-    "explanation": "Expresses passive voice or potential form for verbs."
+    "explanation": "Expresses passive voice or potential form for verbs.",
+    "prefixFurigana": "おとなしい",
+    "segmentsFurigana": [
+      "{生徒|せいと}は",
+      "{先生|せんせい}に",
+      "{気|き}に",
+      "{入|はい}られることが"
+    ],
+    "suffixFurigana": "{多|おお}い。"
   },
   {
     "id": "star-n4-51",
@@ -2335,12 +3258,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ありました。",
     "fullSentence": "子供の頃、よく山に登ることがありました。",
-    "furigana": "子供の頃、よく山に登ることがありました。",
+    "furigana": "{子供|こども}の{頃|ころ}、よく{山|やま}に{登|のぼ}ることがありました。",
     "romaji": "Kodomo no koro, yoku yama ni noboru koto ga arimashita.",
     "english": "When I was a child, I often went hiking in the mountains.",
     "grammarId": "N4/ru-koto-ga-aru",
     "grammarPoint": "Verb る ことがある",
-    "explanation": "Used to express that something happens sometimes or has happened before."
+    "explanation": "Used to express that something happens sometimes or has happened before.",
+    "prefixFurigana": "{子供|こども}の",
+    "segmentsFurigana": [
+      "{頃|ころ}、",
+      "よく",
+      "{山|やま}に",
+      "{登|のぼ}ることが"
+    ],
+    "suffixFurigana": "ありました。"
   },
   {
     "id": "star-n4-52",
@@ -2355,12 +3286,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "できる。",
     "fullSentence": "この切符は1回だけ電車を乗り換わることができる。",
-    "furigana": "この切符は1回だけ電車を乗り換わることができる。",
+    "furigana": "この{切符|きっぷ}は1{回|かい}だけ{電車|でんしゃ}を{乗|の}り{換|か}わることができる。",
     "romaji": "Kono kippu wa ikkai dake densha o norikawaru koto ga dekiru.",
     "english": "This ticket allows you to transfer trains only once.",
     "grammarId": "N4/ru-koto-ga-dekiru",
     "grammarPoint": "Verb ることができる",
-    "explanation": "Express ability or possibility of doing an action; 'can', 'be able to', 'is possible'."
+    "explanation": "Express ability or possibility of doing an action; 'can', 'be able to', 'is possible'.",
+    "prefixFurigana": "この{切符|きっぷ}は1",
+    "segmentsFurigana": [
+      "{回|かい}だけ",
+      "{電車|でんしゃ}を",
+      "{乗|の}り",
+      "{換|か}わることが"
+    ],
+    "suffixFurigana": "できる。"
   },
   {
     "id": "star-n4-53",
@@ -2375,12 +3314,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "なることになりました。",
     "fullSentence": "彼女が今度のプロジェクトのリーダーになることになりました。",
-    "furigana": "彼女が今度のプロジェクトのリーダーになることになりました。",
+    "furigana": "{彼女|かのじょ}が{今度|こんど}のプロジェクトのリーダーになることになりました。",
     "romaji": "Kanojo ga kondo no purojekuto no riida ni naru koto ni narimashita.",
     "english": "She has been appointed as the leader of the upcoming project.",
     "grammarId": "N4/ru-koto-ni-naru",
     "grammarPoint": "Verb る ことになる",
-    "explanation": "Indicates that something has been decided or arranged; 'it has been decided that', 'it turns out that'."
+    "explanation": "Indicates that something has been decided or arranged; 'it has been decided that', 'it turns out that'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼女|かのじょ}が",
+      "{今度|こんど}の",
+      "プロジェクトの",
+      "リーダーに"
+    ],
+    "suffixFurigana": "なることになりました。"
   },
   {
     "id": "star-n4-54",
@@ -2395,12 +3342,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "好きです。",
     "fullSentence": "旅行するときに、カメラを持っていくことが好きです。",
-    "furigana": "旅行するときに、カメラを持っていくことが好きです。",
+    "furigana": "{旅行|りょこう}するときに、カメラを{持|も}っていくことが{好|す}きです。",
     "romaji": "Ryokou suru toki ni, kamera wo motteiku koto ga suki desu.",
     "english": "I like to bring my camera with me when I travel.",
     "grammarId": "N4/ru-toki-ni",
     "grammarPoint": "Verb るときに",
-    "explanation": "Describes the time when a certain action takes place; 'when', 'at the time'."
+    "explanation": "Describes the time when a certain action takes place; 'when', 'at the time'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{旅行|りょこう}するときに、",
+      "カメラを",
+      "{持|も}って",
+      "いくことが"
+    ],
+    "suffixFurigana": "{好|す}きです。"
   },
   {
     "id": "star-n4-55",
@@ -2415,12 +3370,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ぶつかるところだった。",
     "fullSentence": "車が突然横切ってきて、自転車にぶつかるところだった。",
-    "furigana": "車が突然横切ってきて、自転車にぶつかるところだった。",
+    "furigana": "{車|くるま}が{突然|とつぜん}{横|よこ}{切|き}ってきて、{自転車|じてんしゃ}にぶつかるところだった。",
     "romaji": "Kuruma ga totsuzen yokogitte kite, jitensha ni butsukaru tokoro datta",
     "english": "A car suddenly swerved across the road and nearly hit my bicycle.",
     "grammarId": "N4/verb-ru-tokoro",
     "grammarPoint": "Verb る ところ",
-    "explanation": "Expresses the state or moment when an action is about to happen or is happening."
+    "explanation": "Expresses the state or moment when an action is about to happen or is happening.",
+    "prefixFurigana": "{車|くるま}が{突然|とつぜん}",
+    "segmentsFurigana": [
+      "{横|よこ}",
+      "{切|き}って",
+      "きて、",
+      "{自転車|じてんしゃ}に"
+    ],
+    "suffixFurigana": "ぶつかるところだった。"
   },
   {
     "id": "star-n4-56",
@@ -2435,12 +3398,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "出してください。",
     "fullSentence": "授業が始まる前に宿題を出してください。",
-    "furigana": "授業が始まる前に宿題を出してください。",
+    "furigana": "{授業|じゅぎょう}が{始|はじ}まる{前|まえ}に{宿題|しゅくだい}を{出|だ}してください。",
     "romaji": "Jugyou ga hajimaru mae ni shukudai wo dashite kudasai.",
     "english": "Please assign homework before class begins.",
     "grammarId": "N4/dasu",
     "grammarPoint": "Verb 出す",
-    "explanation": "Express the action of taking something out, starting an action, or emphasizing a verb."
+    "explanation": "Express the action of taking something out, starting an action, or emphasizing a verb.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{授業|じゅぎょう}が",
+      "{始|はじ}まる",
+      "{前|まえ}に",
+      "{宿題|しゅくだい}を"
+    ],
+    "suffixFurigana": "{出|だ}してください。"
   },
   {
     "id": "star-n4-57",
@@ -2455,12 +3426,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "いますか？",
     "fullSentence": "誰かがケーキの作り方を知っていますか？",
-    "furigana": "誰かがケーキの作り方を知っていますか？",
+    "furigana": "{誰|だれ}かがケーキの{作り方|つくりかた}を{知|し}っていますか？",
     "romaji": "Dareka ga keeki no tsukurikata o shitteimasu ka?",
     "english": "Does anyone know how to make a cake?",
     "grammarId": "N4/hou",
     "grammarPoint": "Verb 方",
-    "explanation": "Indicates the way or method of doing something; often read as '～かた' ('how to', 'the way of')."
+    "explanation": "Indicates the way or method of doing something; often read as '～かた' ('how to', 'the way of').",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{誰|だれ}かが",
+      "ケーキの",
+      "{作り方|つくりかた}を",
+      "{知|し}って"
+    ],
+    "suffixFurigana": "いますか？"
   },
   {
     "id": "star-n4-58",
@@ -2475,12 +3454,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "予定です。",
     "fullSentence": "試験が終わったら、友達と遊びに行く予定です。",
-    "furigana": "試験が終わったら、友達と遊びに行く予定です。",
+    "furigana": "{試験|しけん}が{終|お}わったら、{友達|ともだち}と{遊|あそ}びに{行|い}く{予定|よてい}です。",
     "romaji": "Shiken ga owattara, tomodachi to asobi ni iku yotei desu.",
     "english": "Once the exam is over, I plan to go out with my friends.",
     "grammarId": "N4/owaru",
     "grammarPoint": "Verb 終わる",
-    "explanation": "Verbal action is completed; 'to finish', 'to end'."
+    "explanation": "Verbal action is completed; 'to finish', 'to end'.",
+    "prefixFurigana": "{試験|しけん}が",
+    "segmentsFurigana": [
+      "{終|お}わったら、",
+      "{友達|ともだち}と",
+      "{遊|あそ}びに",
+      "{行|い}く"
+    ],
+    "suffixFurigana": "{予定|よてい}です。"
   },
   {
     "id": "star-n4-59",
@@ -2495,12 +3482,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "続けています。",
     "fullSentence": "彼は毎日ジムで運動を続けています。",
-    "furigana": "彼は毎日ジムで運動を続けています。",
+    "furigana": "{彼|かれ}は{毎日|まいにち}ジムで{運動|うんどう}を{続|つづ}けています。",
     "romaji": "Kare wa mainichi jimu de undou o tsuzuketeimasu.",
     "english": "He continues to work out at the gym every day.",
     "grammarId": "N4/tsuzukeru",
     "grammarPoint": "Verb + 続ける",
-    "explanation": "To continue doing or to keep doing an action."
+    "explanation": "To continue doing or to keep doing an action.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}は",
+      "{毎日|まいにち}",
+      "ジムで",
+      "{運動|うんどう}を"
+    ],
+    "suffixFurigana": "{続|つづ}けています。"
   },
   {
     "id": "star-n4-60",
@@ -2515,12 +3510,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "いる。",
     "fullSentence": "彼女は面白いことが大好きで、いつも何かしらしゃべっている。",
-    "furigana": "彼女は面白いことが大好きで、いつも何かしらしゃべっている。",
+    "furigana": "{彼女|かのじょ}は{面白|おもしろ}いことが{大好|だいす}きで、いつも{何|なに}かしらしゃべっている。",
     "romaji": "Kanojo wa omoshiroi koto ga daisuki de, itsumo nanikashira shabetteiru",
     "english": "She loves funny things and is always chatting about something.",
     "grammarId": "N4/kashira",
     "grammarPoint": "～かしら",
-    "explanation": "Indicates uncertainty or doubt; 'I wonder', 'I'm not sure'."
+    "explanation": "Indicates uncertainty or doubt; 'I wonder', 'I'm not sure'.",
+    "prefixFurigana": "{彼女|かのじょ}は",
+    "segmentsFurigana": [
+      "{面白|おもしろ}いことが",
+      "{大好|だいす}きで、",
+      "いつも",
+      "{何|なに}かしらしゃべって"
+    ],
+    "suffixFurigana": "いる。"
   },
   {
     "id": "star-n4-61",
@@ -2535,12 +3538,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "教えてください。",
     "fullSentence": "この本が面白いかどうか教えてください。",
-    "furigana": "この本が面白いかどうか教えてください。",
+    "furigana": "この{本|ほん}が{面白|おもしろ}いかどうか{教|おし}えてください。",
     "romaji": "Kono hon ga omoshiroi ka dou ka oshiete kudasai.",
     "english": "Please let me know if this book is interesting.",
     "grammarId": "N4/ka-dou-ka",
     "grammarPoint": "～かどうか",
-    "explanation": "Used to express 'whether' or 'if' in indirect questions or statements."
+    "explanation": "Used to express 'whether' or 'if' in indirect questions or statements.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "{本|ほん}が",
+      "{面白|おもしろ}いか",
+      "どうか"
+    ],
+    "suffixFurigana": "{教|おし}えてください。"
   },
   {
     "id": "star-n4-62",
@@ -2555,12 +3566,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "復活するかもしれない。",
     "fullSentence": "一旦消えた伝説のヒーローが復活するかもしれない。",
-    "furigana": "一旦消えた伝説のヒーローが復活するかもしれない。",
+    "furigana": "{一旦|いったん}{消|き}えた{伝説|でんせつ}のヒーローが{復活|ふっかつ}するかもしれない。",
     "romaji": "Ittan kieta densetsu no hiiroo ga fukkatsu suru kamoshirenai",
     "english": "The legendary hero who once disappeared may make a comeback.",
     "grammarId": "N4/kamoshirenai",
     "grammarPoint": "～かもしれない",
-    "explanation": "Express uncertainty; 'maybe', 'might', 'possibly'."
+    "explanation": "Express uncertainty; 'maybe', 'might', 'possibly'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{一旦|いったん}",
+      "{消|き}えた",
+      "{伝説|でんせつ}の",
+      "ヒーローが"
+    ],
+    "suffixFurigana": "{復活|ふっかつ}するかもしれない。"
   },
   {
     "id": "star-n4-63",
@@ -2575,12 +3594,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ください。",
     "fullSentence": "雨が降るから、傘を持って行ってください。",
-    "furigana": "雨が降るから、傘を持って行ってください。",
+    "furigana": "{雨|あめ}が{降|ふ}るから、{傘|かさ}を{持|も}って{行|い}ってください。",
     "romaji": "Ame ga furu kara, kasa wo motte itte kudasai.",
     "english": "It's going to rain, so please bring an umbrella.",
     "grammarId": "N4/kara",
     "grammarPoint": "～から",
-    "explanation": "Express a reason or cause; 'because', 'since', 'due to'."
+    "explanation": "Express a reason or cause; 'because', 'since', 'due to'.",
+    "prefixFurigana": "{雨|あめ}が",
+    "segmentsFurigana": [
+      "{降|ふ}るから、",
+      "{傘|かさ}を",
+      "{持|も}って",
+      "{行|い}って"
+    ],
+    "suffixFurigana": "ください。"
   },
   {
     "id": "star-n4-64",
@@ -2595,12 +3622,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ある。",
     "fullSentence": "今日は忙しいけれど、明日はもっと時間がある。",
-    "furigana": "今日は忙しいけれど、明日はもっと時間がある。",
+    "furigana": "{今日|きょう}は{忙|いそが}しいけれど、{明日|あした}はもっと{時間|じかん}がある。",
     "romaji": "Kyou wa isogashii keredo, ashita wa motto jikan ga aru.",
     "english": "I’m busy today, but I’ll have more time tomorrow.",
     "grammarId": "N4/keredo",
     "grammarPoint": "～けれど",
-    "explanation": "Indicate a soft contrast or contradiction; 'but', 'however'."
+    "explanation": "Indicate a soft contrast or contradiction; 'but', 'however'.",
+    "prefixFurigana": "{今日|きょう}は",
+    "segmentsFurigana": [
+      "{忙|いそが}しいけれど、",
+      "{明日|あした}は",
+      "もっと",
+      "{時間|じかん}が"
+    ],
+    "suffixFurigana": "ある。"
   },
   {
     "id": "star-n4-65",
@@ -2615,12 +3650,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "思います。",
     "fullSentence": "彼は若いし、元気だし、フレンドリーだし、みんなと仲良くなれると思います。",
-    "furigana": "彼は若いし、元気だし、フレンドリーだし、みんなと仲良くなれると思います。",
+    "furigana": "{彼|かれ}は{若|わか}いし、{元気|げんき}だし、フレンドリーだし、みんなと{仲良|なかよ}くなれると{思|おも}います。",
     "romaji": "Kare wa wakai shi, genki da shi, furendorī da shi, minna to nakayoku nareru to omoimasu.",
     "english": "He’s young, energetic, and friendly, so I think he’ll get along well with everyone.",
     "grammarId": "N4/shi-shi",
     "grammarPoint": "～し、～し、～",
-    "explanation": "Express multiple reasons or characteristics; 'and', 'because', 'since'."
+    "explanation": "Express multiple reasons or characteristics; 'and', 'because', 'since'.",
+    "prefixFurigana": "{彼|かれ}は{若|わか}いし、{元気|げんき}だし、",
+    "segmentsFurigana": [
+      "フレンド",
+      "リーだし、",
+      "みんなと",
+      "{仲良|なかよ}くなれると"
+    ],
+    "suffixFurigana": "{思|おも}います。"
   },
   {
     "id": "star-n3-1",
@@ -2635,12 +3678,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "クリックしてください。",
     "fullSentence": "リンクを開くには、その上でダブルクリックしてください。",
-    "furigana": "リンクを開くには、その上でダブルクリックしてください。",
+    "furigana": "リンクを{開|ひら}くには、その{上|うえ}でダブルクリックしてください。",
     "romaji": "Rinku o hiraku ni wa, sono ue de daburu kurikku shite kudasai",
     "english": "To open a link, double-click on it.",
     "grammarId": "N3/a-sono-ue-b",
     "grammarPoint": "A その上 B",
-    "explanation": "Used to express 'in addition to', 'besides', or 'furthermore' when adding information or making a suggestion."
+    "explanation": "Used to express 'in addition to', 'besides', or 'furthermore' when adding information or making a suggestion.",
+    "prefixFurigana": "リンクを",
+    "segmentsFurigana": [
+      "{開|ひら}くには、",
+      "その",
+      "{上|うえ}で",
+      "ダブル"
+    ],
+    "suffixFurigana": "クリックしてください。"
   },
   {
     "id": "star-n3-2",
@@ -2655,12 +3706,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "大切です。",
     "fullSentence": "若いうちに、いろいろな経験をしておくことが大切です。",
-    "furigana": "若いうちに、いろいろな経験をしておくことが大切です。",
+    "furigana": "{若|わか}いうちに、いろいろな{経験|けいけん}をしておくことが{大切|たいせつ}です。",
     "romaji": "Wakai uchi ni, iroiro na keiken wo shite oku koto ga taisetsu desu.",
     "english": "It’s important to gain a variety of experiences while you’re young.",
     "grammarId": "N3/uchi-ni",
     "grammarPoint": "～うちに",
-    "explanation": "Express 'while', 'before', or 'during' a certain condition or situation."
+    "explanation": "Express 'while', 'before', or 'during' a certain condition or situation.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{若|わか}いうちに、",
+      "いろいろな",
+      "{経験|けいけん}を",
+      "しておくことが"
+    ],
+    "suffixFurigana": "{大切|たいせつ}です。"
   },
   {
     "id": "star-n3-3",
@@ -2675,12 +3734,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "しまった。",
     "fullSentence": "電話に出ようとしたが、相手は切ってしまった。",
-    "furigana": "電話に出ようとしたが、相手は切ってしまった。",
+    "furigana": "{電話|でんわ}に{出|で}ようとしたが、{相手|あいて}は{切|き}ってしまった。",
     "romaji": "Denwa ni deyou to shita ga, aite wa kitte shimatta.",
     "english": "I was about to answer the phone, but the caller hung up.",
     "grammarId": "N3/uto-shita",
     "grammarPoint": "～うとした",
-    "explanation": "Express an action someone tried to do but couldn't; 'tried to', 'attempted to'."
+    "explanation": "Express an action someone tried to do but couldn't; 'tried to', 'attempted to'.",
+    "prefixFurigana": "{電話|でんわ}に",
+    "segmentsFurigana": [
+      "{出|で}ようと",
+      "したが、",
+      "{相手|あいて}は",
+      "{切|き}って"
+    ],
+    "suffixFurigana": "しまった。"
   },
   {
     "id": "star-n3-4",
@@ -2695,12 +3762,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "なりました。",
     "fullSentence": "お母さんのおかげで、私は元気になりました。",
-    "furigana": "お母さんのおかげで、私は元気になりました。",
+    "furigana": "お{母|かあ}さんのおかげで、{私|わたし}は{元気|げんき}になりました。",
     "romaji": "Okaasan no okagede, watashi wa genki ni narimashita.",
     "english": "Thanks to my mom, I’m feeling better now.",
     "grammarId": "N3/okagede",
     "grammarPoint": "～おかげで",
-    "explanation": "Expresses gratitude or shows a positive result due to a certain factor; 'thanks to', 'because of'."
+    "explanation": "Expresses gratitude or shows a positive result due to a certain factor; 'thanks to', 'because of'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "お{母|かあ}さんの",
+      "おかげで、",
+      "{私|わたし}は",
+      "{元気|げんき}に"
+    ],
+    "suffixFurigana": "なりました。"
   },
   {
     "id": "star-n3-5",
@@ -2715,12 +3790,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "いません。",
     "fullSentence": "この本は読みかけで、まだ終わっていません。",
-    "furigana": "この本は読みかけで、まだ終わっていません。",
+    "furigana": "この{本|ほん}は{読|よ}みかけで、まだ{終|お}わっていません。",
     "romaji": "Kono hon wa yomikake de, mada owatteimasen.",
     "english": "I’m still reading this book; I haven’t finished it yet.",
     "grammarId": "N3/kake",
     "grammarPoint": "～かけ",
-    "explanation": "Expresses the meaning of being in the middle of doing something or of something being partway done."
+    "explanation": "Expresses the meaning of being in the middle of doing something or of something being partway done.",
+    "prefixFurigana": "この",
+    "segmentsFurigana": [
+      "{本|ほん}は",
+      "{読|よ}みかけで、",
+      "まだ",
+      "{終|お}わって"
+    ],
+    "suffixFurigana": "いません。"
   },
   {
     "id": "star-n3-6",
@@ -2735,12 +3818,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "出ました。",
     "fullSentence": "雨が降るのを待たないで、家を出ました。",
-    "furigana": "雨が降るのを待たないで、家を出ました。",
+    "furigana": "{雨|あめ}が{降|ふ}るのを{待|ま}たないで、{家|いえ}を{出|で}ました。",
     "romaji": "Ame ga furu no wo matanai de, ie wo demashita.",
     "english": "I left the house without waiting for it to rain.",
     "grammarId": "N3/naide",
     "grammarPoint": "～ないで",
-    "explanation": "Express 'without doing ~' or 'without ~ing'."
+    "explanation": "Express 'without doing ~' or 'without ~ing'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{雨|あめ}が",
+      "{降|ふ}るのを",
+      "{待|ま}たないで、",
+      "{家|いえ}を"
+    ],
+    "suffixFurigana": "{出|で}ました。"
   },
   {
     "id": "star-n3-7",
@@ -2755,12 +3846,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "働いています。",
     "fullSentence": "午前８時から午後５時にかけて働いています。",
-    "furigana": "午前８時から午後５時にかけて働いています。",
+    "furigana": "{午前|ごぜん}８{時|とき}から{午後|ごご}５{時|とき}にかけて{働|はたら}いています。",
     "romaji": "Gozen hachiji kara gogo goji ni kakete hataraiteru.",
     "english": "I work from 8:00 a.m. to 5:00 p.m.",
     "grammarId": "N3/kara-ni-kakete",
     "grammarPoint": "～から～にかけて",
-    "explanation": "Expresses a range of something, such as time or space; 'from...to', 'between'."
+    "explanation": "Expresses a range of something, such as time or space; 'from...to', 'between'.",
+    "prefixFurigana": "{午前|ごぜん}８",
+    "segmentsFurigana": [
+      "{時|とき}から",
+      "{午後|ごご}",
+      "５",
+      "{時|とき}にかけて"
+    ],
+    "suffixFurigana": "{働|はたら}いています。"
   },
   {
     "id": "star-n3-8",
@@ -2775,12 +3874,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "飲んでください。",
     "fullSentence": "お酒を飲むかわりに、水を飲んでください。",
-    "furigana": "お酒を飲むかわりに、水を飲んでください。",
+    "furigana": "お{酒|さけ}を{飲|の}むかわりに、{水|みず}を{飲|の}んでください。",
     "romaji": "Osake wo nomu kawari ni, mizu wo nonde kudasai.",
     "english": "Instead of drinking alcohol, please drink water.",
     "grammarId": "N3/kawari-ni",
     "grammarPoint": "～かわりに",
-    "explanation": "In place of; instead of; as a substitute for."
+    "explanation": "In place of; instead of; as a substitute for.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "お",
+      "{酒|さけ}を",
+      "{飲|の}むかわりに、",
+      "{水|みず}を"
+    ],
+    "suffixFurigana": "{飲|の}んでください。"
   },
   {
     "id": "star-n3-9",
@@ -2795,12 +3902,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "飲まなかった。",
     "fullSentence": "昨日コーヒーを飲んだきり、何も飲まなかった。",
-    "furigana": "昨日コーヒーを飲んだきり、何も飲まなかった。",
+    "furigana": "{昨日|きのう}コーヒーを{飲|の}んだきり、{何|なに}も{飲|の}まなかった。",
     "romaji": "Kinou koohii wo nonda kiri, nani mo nomanakatta.",
     "english": "I haven’t had anything to drink since I had coffee yesterday.",
     "grammarId": "N3/kiri",
     "grammarPoint": "～きり",
-    "explanation": "Expresses the idea of 'only', 'since', or 'after'."
+    "explanation": "Expresses the idea of 'only', 'since', or 'after'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{昨日|きのう}",
+      "コーヒーを",
+      "{飲|の}んだきり、",
+      "{何|なに}も"
+    ],
+    "suffixFurigana": "{飲|の}まなかった。"
   },
   {
     "id": "star-n3-10",
@@ -2815,12 +3930,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ケチです。",
     "fullSentence": "彼はお金持ちのくせに、ケチです。",
-    "furigana": "彼はお金持ちのくせに、ケチです。",
+    "furigana": "{彼|かれ}はお{金持|かねも}ちのくせに、ケチです。",
     "romaji": "Kare wa okanemochi no kuse ni, kechi desu.",
     "english": "Even though he’s rich, he’s stingy.",
     "grammarId": "N3/kuse-ni",
     "grammarPoint": "～くせに",
-    "explanation": "Used to express criticism or disapproval; 'even though', 'despite', 'in spite of'."
+    "explanation": "Used to express criticism or disapproval; 'even though', 'despite', 'in spite of'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}は",
+      "お",
+      "{金持|かねも}ちの",
+      "くせに、"
+    ],
+    "suffixFurigana": "ケチです。"
   },
   {
     "id": "star-n3-11",
@@ -2835,12 +3958,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "見ました。",
     "fullSentence": "彼女はその映画を５回くらい見ました。",
-    "furigana": "彼女はその映画を５回くらい見ました。",
+    "furigana": "{彼女|かのじょ}はその{映画|えいが}を５{回|かい}くらい{見|み}ました。",
     "romaji": "Kanojo wa sono eiga wo go-kai kurai mimashita.",
     "english": "She watched that movie about five times.",
     "grammarId": "N3/kurai",
     "grammarPoint": "～くらい",
-    "explanation": "Expresses an approximate quantity or degree; 'about', 'approximately', or 'to the extent of'."
+    "explanation": "Expresses an approximate quantity or degree; 'about', 'approximately', or 'to the extent of'.",
+    "prefixFurigana": "{彼女|かのじょ}は",
+    "segmentsFurigana": [
+      "その",
+      "{映画|えいが}を",
+      "５",
+      "{回|かい}くらい"
+    ],
+    "suffixFurigana": "{見|み}ました。"
   },
   {
     "id": "star-n3-12",
@@ -2855,12 +3986,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ないと。",
     "fullSentence": "週に一度くらいはジムに行かないと。",
-    "furigana": "週に一度くらいはジムに行かないと。",
+    "furigana": "{週|しゅう}に{一|いち}{度|ど}くらいはジムに{行|い}かないと。",
     "romaji": "Shuu ni ichido kurai wa jimu ni ikanai to.",
     "english": "I really need to go to the gym at least once a week.",
     "grammarId": "N3/kurai-wa-nai",
     "grammarPoint": "～くらい～は～ない",
-    "explanation": "Express the least one can do; 'at least', 'the least', 'no less than'."
+    "explanation": "Express the least one can do; 'at least', 'the least', 'no less than'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{週|しゅう}に",
+      "{一|いち}{度|ど}くらいは",
+      "ジムに",
+      "{行|い}か"
+    ],
+    "suffixFurigana": "ないと。"
   },
   {
     "id": "star-n3-13",
@@ -2875,12 +4014,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ないか。",
     "fullSentence": "お金がないことこそ幸せの秘訣ではないか。",
-    "furigana": "お金がないことこそ幸せの秘訣ではないか。",
+    "furigana": "お{金|かね}がないことこそ{幸|しあわ}せの{秘訣|ひけつ}ではないか。",
     "romaji": "O-kane ga nai koto koso shiawase no hiketsu de wa nai ka.",
     "english": "Isn’t the secret to happiness actually not having money?",
     "grammarId": "N3/koso",
     "grammarPoint": "～こそ",
-    "explanation": "Emphasizes the importance or uniqueness of something or someone; 'precisely', 'exactly', 'it is...', 'of all...'."
+    "explanation": "Emphasizes the importance or uniqueness of something or someone; 'precisely', 'exactly', 'it is...', 'of all...'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "お{金|かね}が",
+      "ないことこそ",
+      "{幸|しあわ}せの",
+      "{秘訣|ひけつ}では"
+    ],
+    "suffixFurigana": "ないか。"
   },
   {
     "id": "star-n3-14",
@@ -2895,12 +4042,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "食べることだ。",
     "fullSentence": "健康のために、野菜をたくさん食べることだ。",
-    "furigana": "健康のために、野菜をたくさん食べることだ。",
+    "furigana": "{健康|けんこう}のために、{野菜|やさい}をたくさん{食|た}べることだ。",
     "romaji": "Kenkou no tame ni, yasai wo takusan taberu koto da.",
     "english": "To stay healthy, you should eat plenty of vegetables.",
     "grammarId": "N3/koto-da",
     "grammarPoint": "～ことだ",
-    "explanation": "Expresses advice or recommendation; 'should', 'it is important', 'it is necessary'."
+    "explanation": "Expresses advice or recommendation; 'should', 'it is important', 'it is necessary'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{健康|けんこう}の",
+      "ために、",
+      "{野菜|やさい}を",
+      "たくさん"
+    ],
+    "suffixFurigana": "{食|た}べることだ。"
   },
   {
     "id": "star-n3-15",
@@ -2915,12 +4070,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "着くことにしている。",
     "fullSentence": "会議には必ず10分前に着くことにしている。",
-    "furigana": "会議には必ず10分前に着くことにしている。",
+    "furigana": "{会議|かいぎ}には{必|かなら}ず10{分|ぶん}{前|まえ}に{着|つ}くことにしている。",
     "romaji": "Kaigi ni wa kanarazu juppun mae ni tsuku koto ni shite iru.",
     "english": "I always make it a point to arrive 10 minutes early for meetings.",
     "grammarId": "N3/koto-ni-shite-iru",
     "grammarPoint": "～ことにしている",
-    "explanation": "Express a personal rule or habit; 'I make it a rule to', 'I always make sure to'."
+    "explanation": "Express a personal rule or habit; 'I make it a rule to', 'I always make sure to'.",
+    "prefixFurigana": "{会議|かいぎ}には",
+    "segmentsFurigana": [
+      "{必|かなら}ず",
+      "10",
+      "{分|ぶん}",
+      "{前|まえ}に"
+    ],
+    "suffixFurigana": "{着|つ}くことにしている。"
   },
   {
     "id": "star-n3-16",
@@ -2935,12 +4098,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "いる。",
     "fullSentence": "この会社では、20時には仕事を終えることになっている。",
-    "furigana": "この会社では、20時には仕事を終えることになっている。",
+    "furigana": "この{会社|かいしゃ}では、20{時|とき}には{仕事|しごと}を{終|お}えることになっている。",
     "romaji": "Kono kaisha de wa, 20-ji ni shigoto o oeru koto ni natte iru.",
     "english": "At this company, employees are expected to finish work by 8:00 p.m.",
     "grammarId": "N3/koto-ni-natte-iru",
     "grammarPoint": "～ことになっている",
-    "explanation": "Describes something that is decided, arranged, or expected."
+    "explanation": "Describes something that is decided, arranged, or expected.",
+    "prefixFurigana": "この{会社|かいしゃ}では、",
+    "segmentsFurigana": [
+      "20",
+      "{時|とき}には",
+      "{仕事|しごと}を",
+      "{終|お}えることになって"
+    ],
+    "suffixFurigana": "いる。"
   },
   {
     "id": "star-n3-17",
@@ -2955,12 +4126,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "長すぎる。",
     "fullSentence": "この映画は面白いことは面白いが、ちょっと長すぎる。",
-    "furigana": "この映画は面白いことは面白いが、ちょっと長すぎる。",
+    "furigana": "この{映画|えいが}は{面白|おもしろ}いことは{面白|おもしろ}いが、ちょっと{長|なが}すぎる。",
     "romaji": "Kono eiga wa omoshiroi koto wa omoshiroi ga, chotto naga-sugiru.",
     "english": "This movie is interesting, but it’s a little too long.",
     "grammarId": "N3/koto-wa-ga",
     "grammarPoint": "～ことは…が",
-    "explanation": "Indicates that while something may be true or valid, there is another contrasting point."
+    "explanation": "Indicates that while something may be true or valid, there is another contrasting point.",
+    "prefixFurigana": "この",
+    "segmentsFurigana": [
+      "{映画|えいが}は",
+      "{面白|おもしろ}いことは",
+      "{面白|おもしろ}いが、",
+      "ちょっと"
+    ],
+    "suffixFurigana": "{長|なが}すぎる。"
   },
   {
     "id": "star-n3-18",
@@ -2975,12 +4154,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ない。",
     "fullSentence": "お金があるから、無理に貯金することはない。",
-    "furigana": "お金があるから、無理に貯金することはない。",
+    "furigana": "お{金|かね}があるから、{無理|むり}に{貯金|ちょきん}することはない。",
     "romaji": "Okane ga aru kara, muri ni chokin suru koto wa nai.",
     "english": "Since I have money, there’s no need to force myself to save.",
     "grammarId": "N3/koto-wa-nai",
     "grammarPoint": "～ことはない",
-    "explanation": "Expresses that something doesn't need to be done or there's no occasion to do it; 'don't have to', 'not necessary'."
+    "explanation": "Expresses that something doesn't need to be done or there's no occasion to do it; 'don't have to', 'not necessary'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "お{金|かね}が",
+      "あるから、",
+      "{無理|むり}に",
+      "{貯金|ちょきん}することは"
+    ],
+    "suffixFurigana": "ない。"
   },
   {
     "id": "star-n3-19",
@@ -2995,12 +4182,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "助けてくれる。",
     "fullSentence": "山田さんの親切さで、困っている人を助けてくれる。",
-    "furigana": "山田さんの親切さで、困っている人を助けてくれる。",
+    "furigana": "{山田|やまだ}さんの{親切|しんせつ}さで、{困|こま}っている{人|ひと}を{助|たす}けてくれる。",
     "romaji": "Yamada-san no shinsetsusa de, komatte iru hito wo tasukete kureru.",
     "english": "Thanks to Mr. Yamada’s kindness, he helps people in need.",
     "grammarId": "N3/sa",
     "grammarPoint": "～さ",
-    "explanation": "Express the degree or extent of a quality; '-ness', 'degree of'."
+    "explanation": "Express the degree or extent of a quality; '-ness', 'degree of'.",
+    "prefixFurigana": "{山田|やまだ}さんの",
+    "segmentsFurigana": [
+      "{親切|しんせつ}さで、",
+      "{困|こま}って",
+      "いる",
+      "{人|ひと}を"
+    ],
+    "suffixFurigana": "{助|たす}けてくれる。"
   },
   {
     "id": "star-n3-20",
@@ -3015,12 +4210,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "できるだろう。",
     "fullSentence": "彼は英語さえ話せれば、その仕事ができるだろう。",
-    "furigana": "彼は英語さえ話せれば、その仕事ができるだろう。",
+    "furigana": "{彼|かれ}は{英語|えいご}さえ{話|はな}せれば、その{仕事|しごと}ができるだろう。",
     "romaji": "Kare wa eigo sae hanasereba, sono shigoto ga dekiru darou.",
     "english": "If he could just speak English, he would probably be able to do that job.",
     "grammarId": "N3/sae",
     "grammarPoint": "～さえ",
-    "explanation": "Emphasizes a specific item or action; 'even', 'if only', 'as long as'."
+    "explanation": "Emphasizes a specific item or action; 'even', 'if only', 'as long as'.",
+    "prefixFurigana": "{彼|かれ}は",
+    "segmentsFurigana": [
+      "{英語|えいご}さえ",
+      "{話|はな}せれば、",
+      "その",
+      "{仕事|しごと}が"
+    ],
+    "suffixFurigana": "できるだろう。"
   },
   {
     "id": "star-n3-21",
@@ -3035,12 +4238,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ない。",
     "fullSentence": "この問題を解決する方法は一つしかない。",
-    "furigana": "この問題を解決する方法は一つしかない。",
+    "furigana": "この{問題|もんだい}を{解決|かいけつ}する{方法|ほうほう}は{一|ひと}つしかない。",
     "romaji": "Kono mondai wo kaiketsu suru houhou wa hitotsu shika nai.",
     "english": "There is only one way to solve this problem.",
     "grammarId": "N3/shika-nai",
     "grammarPoint": "～しかない",
-    "explanation": "Express the idea of 'only', 'no other option but', 'nothing else but'."
+    "explanation": "Express the idea of 'only', 'no other option but', 'nothing else but'.",
+    "prefixFurigana": "この",
+    "segmentsFurigana": [
+      "{問題|もんだい}を",
+      "{解決|かいけつ}する",
+      "{方法|ほうほう}は",
+      "{一|ひと}つしか"
+    ],
+    "suffixFurigana": "ない。"
   },
   {
     "id": "star-n3-22",
@@ -3055,12 +4266,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "怖い。",
     "fullSentence": "まったく知らない人と話すのは怖い。",
-    "furigana": "まったく知らない人と話すのは怖い。",
+    "furigana": "まったく{知|し}らない{人|ひと}と{話|はな}すのは{怖|こわ}い。",
     "romaji": "Mattaku shiranai hito to hanasu no wa kowai.",
     "english": "It’s scary to talk to someone I don’t know at all.",
     "grammarId": "N3/sukoshimo-nai",
     "grammarPoint": "すこしも〜ない",
-    "explanation": "Express a negative state or action; 'not at all', 'none whatsoever'."
+    "explanation": "Express a negative state or action; 'not at all', 'none whatsoever'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "まったく",
+      "{知|し}らない",
+      "{人|ひと}と",
+      "{話|はな}すのは"
+    ],
+    "suffixFurigana": "{怖|こわ}い。"
   },
   {
     "id": "star-n3-23",
@@ -3075,12 +4294,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "なりました。",
     "fullSentence": "雨のせいで試合が中止になりました。",
-    "furigana": "雨のせいで試合が中止になりました。",
+    "furigana": "{雨|あめ}のせいで{試合|しあい}が{中止|ちゅうし}になりました。",
     "romaji": "Ame no sei de shiai ga chuushi ni narimashita.",
     "english": "The game was canceled because of the rain.",
     "grammarId": "N3/sei-de",
     "grammarPoint": "～せいで",
-    "explanation": "Indicates that something or someone caused an unfortunate result."
+    "explanation": "Indicates that something or someone caused an unfortunate result.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{雨|あめ}の",
+      "せいで",
+      "{試合|しあい}が",
+      "{中止|ちゅうし}に"
+    ],
+    "suffixFurigana": "なりました。"
   },
   {
     "id": "star-n3-24",
@@ -3095,12 +4322,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "合わせてください。",
     "fullSentence": "資料を全員に配る前に、部数を合わせてください。",
-    "furigana": "資料を全員に配る前に、部数を合わせてください。",
+    "furigana": "{資料|しりょう}を{全員|ぜんいん}に{配|くば}る{前|まえ}に、{部数|ぶすう}を{合|あ}わせてください。",
     "romaji": "Shiryou o zen'in ni kubaru mae ni, busuu o awasete kudasai",
     "english": "Please make sure you have the correct number of copies before distributing the materials to everyone.",
     "grammarId": "N3/sete-kudasai",
     "grammarPoint": "～せてください",
-    "explanation": "Requesting someone to allow or let you do something (causative request)."
+    "explanation": "Requesting someone to allow or let you do something (causative request).",
+    "prefixFurigana": "{資料|しりょう}を",
+    "segmentsFurigana": [
+      "{全員|ぜんいん}に",
+      "{配|くば}る",
+      "{前|まえ}に、",
+      "{部数|ぶすう}を"
+    ],
+    "suffixFurigana": "{合|あ}わせてください。"
   },
   {
     "id": "star-n3-25",
@@ -3115,12 +4350,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "応募しています。",
     "fullSentence": "新しい仕事を見つけたい。そのために、履歴書を書いて応募しています。",
-    "furigana": "新しい仕事を見つけたい。そのために、履歴書を書いて応募しています。",
+    "furigana": "{新|あたら}しい{仕事|しごと}を{見|み}つけたい。そのために、{履歴|りれき}{書|しょ}を{書|か}いて{応募|おうぼ}しています。",
     "romaji": "Atarashii shigoto wo mitsuketai. Sono tame ni, rirekisho wo kaite oubo shiteimasu.",
     "english": "I want to find a new job. To that end, I’m writing my resume and applying for positions.",
     "grammarId": "N3/sono-tame-ni",
     "grammarPoint": "～そのために",
-    "explanation": "For the purpose of; because of; in order to."
+    "explanation": "For the purpose of; because of; in order to.",
+    "prefixFurigana": "{新|あたら}しい{仕事|しごと}を{見|み}つけたい。",
+    "segmentsFurigana": [
+      "そのために、",
+      "{履歴|りれき}",
+      "{書|しょ}を",
+      "{書|か}いて"
+    ],
+    "suffixFurigana": "{応募|おうぼ}しています。"
   },
   {
     "id": "star-n3-26",
@@ -3135,12 +4378,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "失った。",
     "fullSentence": "会社が倒産した。その結果、彼は仕事を失った。",
-    "furigana": "会社が倒産した。その結果、彼は仕事を失った。",
+    "furigana": "{会社|かいしゃ}が{倒産|とうさん}した。その{結果|けっか}、{彼|かれ}は{仕事|しごと}を{失|うしな}った。",
     "romaji": "Kaisha ga tousan shita. Sono kekka, kare wa shigoto wo ushinatta.",
     "english": "The company went bankrupt. As a result, he lost his job.",
     "grammarId": "N3/sono-kekka",
     "grammarPoint": "～その結果",
-    "explanation": "Shows the result or consequence of a previous action or situation; 'as a result', 'in consequence'."
+    "explanation": "Shows the result or consequence of a previous action or situation; 'as a result', 'in consequence'.",
+    "prefixFurigana": "{会社|かいしゃ}が{倒産|とうさん}した。",
+    "segmentsFurigana": [
+      "その",
+      "{結果|けっか}、",
+      "{彼|かれ}は",
+      "{仕事|しごと}を"
+    ],
+    "suffixFurigana": "{失|うしな}った。"
   },
   {
     "id": "star-n3-27",
@@ -3155,12 +4406,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "飲む？",
     "fullSentence": "コーヒーを飲む？それとも紅茶を飲む？",
-    "furigana": "コーヒーを飲む？それとも紅茶を飲む？",
+    "furigana": "コーヒーを{飲|の}む？それとも{紅茶|こうちゃ}を{飲|の}む？",
     "romaji": "Koohii o nomu? Sore tomo koucha o nomu?",
     "english": "Would you like some coffee? Or would you prefer some tea?",
     "grammarId": "N3/sore-tomo",
     "grammarPoint": "～？それとも～？",
-    "explanation": "Presents two alternatives or choices; 'or', 'either...or'."
+    "explanation": "Presents two alternatives or choices; 'or', 'either...or'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "コーヒーを",
+      "{飲|の}む？",
+      "それとも",
+      "{紅茶|こうちゃ}を"
+    ],
+    "suffixFurigana": "{飲|の}む？"
   },
   {
     "id": "star-n3-28",
@@ -3175,12 +4434,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "いない。",
     "fullSentence": "あのレストランでは野菜だけしか売っていない。",
-    "furigana": "あのレストランでは野菜だけしか売っていない。",
+    "furigana": "あのレストランでは{野菜|やさい}だけしか{売|う}っていない。",
     "romaji": "Ano resutoran de wa yasai dake shika utte inai.",
     "english": "That restaurant sells only vegetables.",
     "grammarId": "N3/dake-shika",
     "grammarPoint": "～だけしか",
-    "explanation": "Emphasizes the scarcity or insufficiency of something; 'only', 'nothing but'."
+    "explanation": "Emphasizes the scarcity or insufficiency of something; 'only', 'nothing but'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "あの",
+      "レストランでは",
+      "{野菜|やさい}だけしか",
+      "{売|う}って"
+    ],
+    "suffixFurigana": "いない。"
   },
   {
     "id": "star-n3-29",
@@ -3195,12 +4462,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "勉強しなければならない。",
     "fullSentence": "試験に合格したけど、まだ勉強しなければならない。",
-    "furigana": "試験に合格したけど、まだ勉強しなければならない。",
+    "furigana": "{試験|しけん}に{合格|ごうかく}したけど、まだ{勉強|べんきょう}しなければならない。",
     "romaji": "Shiken ni goukaku shita kedo, mada benkyou shinakereba naranai.",
     "english": "I passed the exam, but I still have to study.",
     "grammarId": "N3/dakedo",
     "grammarPoint": "だけど",
-    "explanation": "Expresses a contrast or contradiction; 'but', 'however', 'even though'."
+    "explanation": "Expresses a contrast or contradiction; 'but', 'however', 'even though'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{試験|しけん}に",
+      "{合格|ごうかく}した",
+      "けど、",
+      "まだ"
+    ],
+    "suffixFurigana": "{勉強|べんきょう}しなければならない。"
   },
   {
     "id": "star-n3-30",
@@ -3215,12 +4490,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "温かいです。",
     "fullSentence": "このパンは焼きたてで、まだ温かいです。",
-    "furigana": "このパンは焼きたてで、まだ温かいです。",
+    "furigana": "このパンは{焼|や}きたてで、まだ{温|あたた}かいです。",
     "romaji": "Kono pan wa yakitate de, mada atatakai desu.",
     "english": "This bread is fresh out of the oven and still warm.",
     "grammarId": "N3/tate",
     "grammarPoint": "～たて",
-    "explanation": "Indicates an action that has just been completed; 'freshly', 'just'."
+    "explanation": "Indicates an action that has just been completed; 'freshly', 'just'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "パンは",
+      "{焼|や}きたてで、",
+      "まだ"
+    ],
+    "suffixFurigana": "{温|あたた}かいです。"
   },
   {
     "id": "star-n3-31",
@@ -3235,12 +4518,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "言いましょう。",
     "fullSentence": "たとえ彼が怒っても、本当のことを言いましょう。",
-    "furigana": "たとえ彼が怒っても、本当のことを言いましょう。",
+    "furigana": "たとえ{彼|かれ}が{怒|おこ}っても、{本当|ほんとう}のことを{言|い}いましょう。",
     "romaji": "Tatoe kare ga okotte mo, hontou no koto wo iimashou.",
     "english": "Even if he gets angry, let’s tell him the truth.",
     "grammarId": "N3/tatoe-temo",
     "grammarPoint": "～たとえ～ても",
-    "explanation": "Express a condition with 'even if'; 'no matter how'."
+    "explanation": "Express a condition with 'even if'; 'no matter how'.",
+    "prefixFurigana": "たとえ",
+    "segmentsFurigana": [
+      "{彼|かれ}が",
+      "{怒|おこ}っても、",
+      "{本当|ほんとう}の",
+      "ことを"
+    ],
+    "suffixFurigana": "{言|い}いましょう。"
   },
   {
     "id": "star-n3-32",
@@ -3255,12 +4546,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "出された。",
     "fullSentence": "宿題をしたところ、先生からもう一つ課題が出された。",
-    "furigana": "宿題をしたところ、先生からもう一つ課題が出された。",
+    "furigana": "{宿題|しゅくだい}をしたところ、{先生|せんせい}からもう{一|ひと}つ{課題|かだい}が{出|だ}された。",
     "romaji": "Shukudai wo shita tokoro, sensei kara mou hitotsu kadai ga dasareta.",
     "english": "After I finished my homework, the teacher gave me another assignment.",
     "grammarId": "N3/ta-tokoro",
     "grammarPoint": "～たところ",
-    "explanation": "Expresses the result or outcome of an action; 'after', 'just when', 'upon'."
+    "explanation": "Expresses the result or outcome of an action; 'after', 'just when', 'upon'.",
+    "prefixFurigana": "{宿題|しゅくだい}をしたところ、",
+    "segmentsFurigana": [
+      "{先生|せんせい}から",
+      "もう",
+      "{一|ひと}つ",
+      "{課題|かだい}が"
+    ],
+    "suffixFurigana": "{出|だ}された。"
   },
   {
     "id": "star-n3-33",
@@ -3275,12 +4574,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "出した。",
     "fullSentence": "ドアを開けたとたん、猫が逃げ出した。",
-    "furigana": "ドアを開けたとたん、猫が逃げ出した。",
+    "furigana": "ドアを{開|あ}けたとたん、{猫|ねこ}が{逃|に}げ{出|だ}した。",
     "romaji": "Doa wo aketa totan, neko ga nigedashita.",
     "english": "The moment I opened the door, the cat ran away.",
     "grammarId": "N3/ta-totan",
     "grammarPoint": "～たとたん",
-    "explanation": "Express the moment something happens; 'as soon as', 'the moment', 'the instant'."
+    "explanation": "Express the moment something happens; 'as soon as', 'the moment', 'the instant'.",
+    "prefixFurigana": "ドアを",
+    "segmentsFurigana": [
+      "{開|あ}けたと",
+      "たん、",
+      "{猫|ねこ}が",
+      "{逃|に}げ"
+    ],
+    "suffixFurigana": "{出|だ}した。"
   },
   {
     "id": "star-n3-34",
@@ -3295,12 +4602,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "よみがえる。",
     "fullSentence": "雨が降るたびに、懐かしい思い出がよみがえる。",
-    "furigana": "雨が降るたびに、懐かしい思い出がよみがえる。",
+    "furigana": "{雨|あめ}が{降|ふ}るたびに、{懐|なつ}かしい{思い出|おもいで}がよみがえる。",
     "romaji": "Ame ga furu tabi ni, natsukashii omoide ga yomigaeru.",
     "english": "Every time it rains, fond memories come flooding back.",
     "grammarId": "N3/tabi-ni",
     "grammarPoint": "～たびに",
-    "explanation": "Express 'every time' or 'whenever'."
+    "explanation": "Express 'every time' or 'whenever'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{雨|あめ}が",
+      "{降|ふ}るたびに、",
+      "{懐|なつ}かしい",
+      "{思い出|おもいで}が"
+    ],
+    "suffixFurigana": "よみがえる。"
   },
   {
     "id": "star-n3-35",
@@ -3315,12 +4630,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "好きだ。",
     "fullSentence": "彼は親切なんだものだから、誰も彼が好きだ。",
-    "furigana": "彼は親切なんだものだから、誰も彼が好きだ。",
+    "furigana": "{彼|かれ}は{親切|しんせつ}なんだものだから、{誰|だれ}も{彼|かれ}が{好|す}きだ。",
     "romaji": "Kare wa shinsetsu na n da mono da kara, dare mo kare ga suki da.",
     "english": "Since he’s such a kind person, everyone likes him.",
     "grammarId": "N3/da-mono-da",
     "grammarPoint": "～だものだ",
-    "explanation": "Express the reason or cause, often used to justify something."
+    "explanation": "Express the reason or cause, often used to justify something.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}は",
+      "{親切|しんせつ}なんだものだから、",
+      "{誰|だれ}も",
+      "{彼|かれ}が"
+    ],
+    "suffixFurigana": "{好|す}きだ。"
   },
   {
     "id": "star-n3-36",
@@ -3335,12 +4658,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "怪我しちゃった。",
     "fullSentence": "寝ぼけ眼で髭を剃ろうとして怪我しちゃった。",
-    "furigana": "寝ぼけ眼で髭を剃ろうとして怪我しちゃった。",
+    "furigana": "{寝|ね}ぼけ{眼|め}で{髭|ひげ}を{剃|す}ろうとして{怪我|けが}しちゃった。",
     "romaji": "Nebokemana de hige o sorou to shite kega shichatta.",
     "english": "I was still half-asleep when I tried to shave and ended up cutting myself.",
     "grammarId": "N3/chatta",
     "grammarPoint": "～ちゃった",
-    "explanation": "Express an unintentional action or a regretful action; 'ended up doing', 'did accidentally'."
+    "explanation": "Express an unintentional action or a regretful action; 'ended up doing', 'did accidentally'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{寝|ね}ぼけ",
+      "{眼|め}で",
+      "{髭|ひげ}を",
+      "{剃|す}ろうとして"
+    ],
+    "suffixFurigana": "{怪我|けが}しちゃった。"
   },
   {
     "id": "star-n3-37",
@@ -3355,12 +4686,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "出しましょう。",
     "fullSentence": "買い物に行くついでに、郵便局で手紙を出しましょう。",
-    "furigana": "買い物に行くついでに、郵便局で手紙を出しましょう。",
+    "furigana": "{買い物|かいもの}に{行|い}くついでに、{郵便|ゆうびん}{局|きょく}で{手紙|てがみ}を{出|だ}しましょう。",
     "romaji": "Kaimono ni iku tsuide ni, yuubinkyoku de tegami wo dashimashou.",
     "english": "While you’re out shopping, why not drop off a letter at the post office?",
     "grammarId": "N3/tsuide-ni",
     "grammarPoint": "～ついでに",
-    "explanation": "Do something while or after completing another action; 'while', 'by the way'."
+    "explanation": "Do something while or after completing another action; 'while', 'by the way'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{買い物|かいもの}に",
+      "{行|い}くついでに、",
+      "{郵便|ゆうびん}{局|きょく}で",
+      "{手紙|てがみ}を"
+    ],
+    "suffixFurigana": "{出|だ}しましょう。"
   },
   {
     "id": "star-n3-38",
@@ -3375,12 +4714,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "変える。",
     "fullSentence": "酸っぱいリンゴをバランスの良いデザートに変える。",
-    "furigana": "酸っぱいリンゴをバランスの良いデザートに変える。",
+    "furigana": "{酸|す}っぱいリンゴをバランスの{良|よ}いデザートに{変|か}える。",
     "romaji": "Suppai ringo o baransu no yoi dezāto ni kaeru.",
     "english": "Turn a sour apple into a well-balanced dessert.",
     "grammarId": "N3/ppai",
     "grammarPoint": "～っぱい",
-    "explanation": "Expresses fullness or completeness; 'full', 'full of', 'filled with'."
+    "explanation": "Expresses fullness or completeness; 'full', 'full of', 'filled with'.",
+    "prefixFurigana": "{酸|す}っぱい",
+    "segmentsFurigana": [
+      "リンゴを",
+      "バランスの",
+      "{良|よ}い",
+      "デザートに"
+    ],
+    "suffixFurigana": "{変|か}える。"
   },
   {
     "id": "star-n3-39",
@@ -3395,12 +4742,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "くる。",
     "fullSentence": "窓を開けっぱなしにすると、虫が入ってくる。",
-    "furigana": "窓を開けっぱなしにすると、虫が入ってくる。",
+    "furigana": "{窓|まど}を{開|あ}けっぱなしにすると、{虫|むし}が{入|はい}ってくる。",
     "romaji": "Mado o akeppanashi ni suru to, mushi ga haitte kuru.",
     "english": "If you leave the window open, bugs will come in.",
     "grammarId": "N3/ppanashi",
     "grammarPoint": "～っぱなし",
-    "explanation": "Indicate a state where an action is left as is (unchanged or unfinished)."
+    "explanation": "Indicate a state where an action is left as is (unchanged or unfinished).",
+    "prefixFurigana": "{窓|まど}を",
+    "segmentsFurigana": [
+      "{開|あ}けっぱなしに",
+      "すると、",
+      "{虫|むし}が",
+      "{入|はい}って"
+    ],
+    "suffixFurigana": "くる。"
   },
   {
     "id": "star-n3-40",
@@ -3415,12 +4770,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "引いてしまいました。",
     "fullSentence": "昨日は友達に会うつもりでしたが、風邪を引いてしまいました。",
-    "furigana": "昨日は友達に会うつもりでしたが、風邪を引いてしまいました。",
+    "furigana": "{昨日|きのう}は{友達|ともだち}に{会|あ}うつもりでしたが、{風邪|かぜ}を{引|ひ}いてしまいました。",
     "romaji": "Kinou wa tomodachi ni au tsumori deshita ga, kaze o hiite shimaimashita.",
     "english": "I was planning to meet a friend yesterday, but I caught a cold.",
     "grammarId": "N3/tsumori-deshita",
     "grammarPoint": "～つもりでした",
-    "explanation": "Expressing a past intention or plan; 'was planning to', 'meant to'."
+    "explanation": "Expressing a past intention or plan; 'was planning to', 'meant to'.",
+    "prefixFurigana": "{昨日|きのう}は",
+    "segmentsFurigana": [
+      "{友達|ともだち}に",
+      "{会|あ}うつもりで",
+      "したが、",
+      "{風邪|かぜ}を"
+    ],
+    "suffixFurigana": "{引|ひ}いてしまいました。"
   },
   {
     "id": "star-n3-41",
@@ -3435,12 +4798,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "見てください。",
     "fullSentence": "この映画は面白いですから、ぜひ見てください。",
-    "furigana": "この映画は面白いですから、ぜひ見てください。",
+    "furigana": "この{映画|えいが}は{面白|おもしろ}いですから、ぜひ{見|み}てください。",
     "romaji": "Kono eiga wa omoshiroi desu kara, zehi mite kudasai.",
     "english": "This movie is interesting, so please be sure to watch it.",
     "grammarId": "N3/desu-kara",
     "grammarPoint": "ですから～",
-    "explanation": "Expresses reason or cause; 'because', 'since', 'so'."
+    "explanation": "Expresses reason or cause; 'because', 'since', 'so'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "{映画|えいが}は",
+      "{面白|おもしろ}いですから、",
+      "ぜひ"
+    ],
+    "suffixFurigana": "{見|み}てください。"
   },
   {
     "id": "star-n3-42",
@@ -3455,12 +4826,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "りました。",
     "fullSentence": "海外に行ってはじめて、日本の良さが分かりました。",
-    "furigana": "海外に行ってはじめて、日本の良さが分かりました。",
+    "furigana": "{海外|かいがい}に{行|い}ってはじめて、{日本|にっぽん}の{良|よ}さが{分|わ}かりました。",
     "romaji": "Kaigai ni itte hajimete, Nihon no yosa ga wakarimashita.",
     "english": "It wasn’t until I went abroad that I realized how great Japan is.",
     "grammarId": "N3/te-hajimete",
     "grammarPoint": "～てはじめて",
-    "explanation": "Realization or action done for the first time; 'only after', 'not until'."
+    "explanation": "Realization or action done for the first time; 'only after', 'not until'.",
+    "prefixFurigana": "{海外|かいがい}に{行|い}って",
+    "segmentsFurigana": [
+      "はじめて、",
+      "{日本|にっぽん}の",
+      "{良|よ}さが",
+      "{分|わ}か"
+    ],
+    "suffixFurigana": "りました。"
   },
   {
     "id": "star-n3-43",
@@ -3475,12 +4854,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "頼んだ。",
     "fullSentence": "弟は宿題を手伝ってほしいと頼んだ。",
-    "furigana": "弟は宿題を手伝ってほしいと頼んだ。",
+    "furigana": "{弟|おとうと}は{宿題|しゅくだい}を{手|て}{伝|つた}ってほしいと{頼|たの}んだ。",
     "romaji": "Otouto wa shukudai o tetsudatte hoshii to tanonda.",
     "english": "My younger brother asked me to help him with his homework.",
     "grammarId": "N3/te-hoshii",
     "grammarPoint": "～てほしい",
-    "explanation": "Express a desire for someone else to do something; 'I want you to do...'."
+    "explanation": "Express a desire for someone else to do something; 'I want you to do...'.",
+    "prefixFurigana": "{弟|おとうと}は",
+    "segmentsFurigana": [
+      "{宿題|しゅくだい}を",
+      "{手|て}",
+      "{伝|つた}って",
+      "ほしいと"
+    ],
+    "suffixFurigana": "{頼|たの}んだ。"
   },
   {
     "id": "star-n3-44",
@@ -3495,12 +4882,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "作る。",
     "fullSentence": "忙しくても、毎日勉強する時間を作る。",
-    "furigana": "忙しくても、毎日勉強する時間を作る。",
+    "furigana": "{忙|いそが}しくても、{毎日|まいにち}{勉強|べんきょう}する{時間|じかん}を{作|つく}る。",
     "romaji": "Isogashikute mo, mainichi benkyou suru jikan o tsukuru.",
     "english": "Even when I’m busy, I make time to study every day.",
     "grammarId": "N3/temo",
     "grammarPoint": "～ても",
-    "explanation": "'Even if', 'even though', or 'although'."
+    "explanation": "'Even if', 'even though', or 'although'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{忙|いそが}しくても、",
+      "{毎日|まいにち}",
+      "{勉強|べんきょう}する",
+      "{時間|じかん}を"
+    ],
+    "suffixFurigana": "{作|つく}る。"
   },
   {
     "id": "star-n3-45",
@@ -3515,12 +4910,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "いいなあ。",
     "fullSentence": "彼が新しい仕事が見つかるといいなあ。",
-    "furigana": "彼が新しい仕事が見つかるといいなあ。",
+    "furigana": "{彼|かれ}が{新|あたら}しい{仕事|しごと}が{見|み}つかるといいなあ。",
     "romaji": "Kare ga atarashii shigoto ga mitsukaru to ii naa.",
     "english": "I hope he finds a new job.",
     "grammarId": "N3/to-ii-naa",
     "grammarPoint": "～といいなあ",
-    "explanation": "Express a wish or hope; 'it would be nice if', 'I hope that'."
+    "explanation": "Express a wish or hope; 'it would be nice if', 'I hope that'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}が",
+      "{新|あたら}しい",
+      "{仕事|しごと}が",
+      "{見|み}つかると"
+    ],
+    "suffixFurigana": "いいなあ。"
   },
   {
     "id": "star-n3-46",
@@ -3535,12 +4938,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "買いました。",
     "fullSentence": "本屋で「ハリー・ポッター」という本を買いました。",
-    "furigana": "本屋で「ハリー・ポッター」という本を買いました。",
+    "furigana": "{本屋|ほんや}で「ハリー・ポッター」という{本|ほん}を{買|か}いました。",
     "romaji": "Hon'ya de 'Harry Potter' to iu hon o kaimashita.",
     "english": "I bought a book called “Harry Potter” at a bookstore.",
     "grammarId": "N3/to-iu",
     "grammarPoint": "～という",
-    "explanation": "Used for quoting, defining, or giving an example; 'called', 'that is to say', 'like'."
+    "explanation": "Used for quoting, defining, or giving an example; 'called', 'that is to say', 'like'.",
+    "prefixFurigana": "{本屋|ほんや}で",
+    "segmentsFurigana": [
+      "「ハリー・",
+      "ポッター」",
+      "という",
+      "{本|ほん}を"
+    ],
+    "suffixFurigana": "{買|か}いました。"
   },
   {
     "id": "star-n3-47",
@@ -3555,12 +4966,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "浮かぶ。",
     "fullSentence": "日本料理というと、寿司が思い浮かぶ。",
-    "furigana": "日本料理というと、寿司が思い浮かぶ。",
+    "furigana": "{日本|にっぽん}{料理|りょうり}というと、{寿司|すし}が{思|おも}い{浮|う}かぶ。",
     "romaji": "Nihon ryouri to iu to, sushi ga omoiukabu.",
     "english": "When people think of Japanese cuisine, sushi comes to mind.",
     "grammarId": "N3/to-iu-to",
     "grammarPoint": "～というと",
-    "explanation": "Used to provide an example or characteristic related to the topic; 'when it comes to', 'speaking of'."
+    "explanation": "Used to provide an example or characteristic related to the topic; 'when it comes to', 'speaking of'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{日本|にっぽん}",
+      "{料理|りょうり}というと、",
+      "{寿司|すし}が",
+      "{思|おも}い"
+    ],
+    "suffixFurigana": "{浮|う}かぶ。"
   },
   {
     "id": "star-n3-48",
@@ -3575,12 +4994,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "だ。",
     "fullSentence": "この部屋が汚いのは、掃除をしなかったというのだ。",
-    "furigana": "この部屋が汚いのは、掃除をしなかったというのだ。",
+    "furigana": "この{部屋|へや}が{汚|きたな}いのは、{掃除|そうじ}をしなかったというのだ。",
     "romaji": "Kono heya ga kitanai no wa, souji o shinakatta to iu no da.",
     "english": "They say the room is dirty because it wasn’t cleaned.",
     "grammarId": "N3/to-iu-no",
     "grammarPoint": "～というの～",
-    "explanation": "Explain or emphasize the reason for a situation or action."
+    "explanation": "Explain or emphasize the reason for a situation or action.",
+    "prefixFurigana": "この",
+    "segmentsFurigana": [
+      "{部屋|へや}が",
+      "{汚|きたな}いのは、",
+      "{掃除|そうじ}を",
+      "しなかったというの"
+    ],
+    "suffixFurigana": "だ。"
   },
   {
     "id": "star-n3-49",
@@ -3595,12 +5022,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "かかるということです。",
     "fullSentence": "この問題は難しいというのは、解決に時間がかかるということです。",
-    "furigana": "この問題は難しいというのは、解決に時間がかかるということです。",
+    "furigana": "この{問題|もんだい}は{難|むずか}しいというのは、{解決|かいけつ}に{時間|じかん}がかかるということです。",
     "romaji": "Kono mondai wa muzukashii to iu no wa, kaiketsu ni jikan ga kakaru to iu koto desu.",
     "english": "When we say this problem is difficult, it means it takes time to solve.",
     "grammarId": "N3/to-iu-no-wa",
     "grammarPoint": "～というのは",
-    "explanation": "Used to provide an explanation or definition; 'that is to say...', 'by that, I mean...'."
+    "explanation": "Used to provide an explanation or definition; 'that is to say...', 'by that, I mean...'.",
+    "prefixFurigana": "この",
+    "segmentsFurigana": [
+      "{問題|もんだい}は",
+      "{難|むずか}しいというのは、",
+      "{解決|かいけつ}に",
+      "{時間|じかん}が"
+    ],
+    "suffixFurigana": "かかるということです。"
   },
   {
     "id": "star-n3-50",
@@ -3615,12 +5050,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "いい。",
     "fullSentence": "この部屋は狭いというより、居心地がいい。",
-    "furigana": "この部屋は狭いというより、居心地がいい。",
+    "furigana": "この{部屋|へや}は{狭|せま}いというより、{居心地|いごこち}がいい。",
     "romaji": "Kono heya wa semai to iu yori, igokochi ga ii.",
     "english": "Rather than being small, this room is cozy.",
     "grammarId": "N3/to-iu-yori",
     "grammarPoint": "～というより",
-    "explanation": "Express a comparison with preference; 'rather than', 'more like', 'instead of'."
+    "explanation": "Express a comparison with preference; 'rather than', 'more like', 'instead of'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "{部屋|へや}は",
+      "{狭|せま}いというより、",
+      "{居心地|いごこち}が"
+    ],
+    "suffixFurigana": "いい。"
   },
   {
     "id": "star-n3-51",
@@ -3635,12 +5078,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ありません。",
     "fullSentence": "彼は有名だといっても、みんなに知られているわけではありません。",
-    "furigana": "彼は有名だといっても、みんなに知られているわけではありません。",
+    "furigana": "{彼|かれ}は{有名|ゆうめい}だといっても、みんなに{知|し}られているわけではありません。",
     "romaji": "Kare wa yuumei da to ittemo, minna ni shirarete iru wake de wa arimasen.",
     "english": "Even though he is famous, that doesn’t mean everyone knows him.",
     "grammarId": "N3/to-ittemo",
     "grammarPoint": "～といっても",
-    "explanation": "Express the meaning 'even though', 'although', 'but'."
+    "explanation": "Express the meaning 'even though', 'although', 'but'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}は",
+      "{有名|ゆうめい}だといっても、",
+      "みんなに",
+      "{知|し}られているわけでは"
+    ],
+    "suffixFurigana": "ありません。"
   },
   {
     "id": "star-n3-52",
@@ -3655,12 +5106,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "着きます。",
     "fullSentence": "地図に書いてあるとおりに行けば、駅に着きます。",
-    "furigana": "地図に書いてあるとおりに行けば、駅に着きます。",
+    "furigana": "{地図|ちず}に{書|か}いてあるとおりに{行|い}けば、{駅|えき}に{着|つ}きます。",
     "romaji": "Chizu ni kaite aru toori ni ikeba, eki ni tsukimasu.",
     "english": "If you follow the directions on the map, you’ll arrive at the station.",
     "grammarId": "N3/toori",
     "grammarPoint": "～とおり",
-    "explanation": "Expresses that something is done 'as is', 'as stated', or 'as instructed'."
+    "explanation": "Expresses that something is done 'as is', 'as stated', or 'as instructed'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{地図|ちず}に",
+      "{書|か}いてあるとおりに",
+      "{行|い}けば、",
+      "{駅|えき}に"
+    ],
+    "suffixFurigana": "{着|つ}きます。"
   },
   {
     "id": "star-n3-53",
@@ -3675,12 +5134,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "作っとく。",
     "fullSentence": "夜遅くなるから、今晩のご飯を作っとく。",
-    "furigana": "夜遅くなるから、今晩のご飯を作っとく。",
+    "furigana": "{夜|よる}{遅|おそ}くなるから、{今晩|こんばん}のご{飯|はん}を{作|つく}っとく。",
     "romaji": "Yoru osoku naru kara, konban no gohan wo tsukutoku.",
     "english": "It’s going to be late tonight, so I’ll make dinner now.",
     "grammarId": "N3/toku",
     "grammarPoint": "～とく",
-    "explanation": "Express doing something in advance or for future convenience (casual form of ～ておく)."
+    "explanation": "Express doing something in advance or for future convenience (casual form of ～ておく).",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{夜|よる}",
+      "{遅|おそ}くなるから、",
+      "{今晩|こんばん}の",
+      "ご{飯|はん}を"
+    ],
+    "suffixFurigana": "{作|つく}っとく。"
   },
   {
     "id": "star-n3-54",
@@ -3695,12 +5162,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "来ました。",
     "fullSentence": "彼はいつも遅刻するところが、今日は早く来ました。",
-    "furigana": "彼はいつも遅刻するところが、今日は早く来ました。",
+    "furigana": "{彼|かれ}はいつも{遅刻|ちこく}するところが、{今日|きょう}は{早|はや}く{来|き}ました。",
     "romaji": "Kare wa itsumo chikoku suru tokoro ga, kyou wa hayaku kimashita.",
     "english": "He’s usually late, but today he arrived early.",
     "grammarId": "N3/tokoro-ga",
     "grammarPoint": "～ところが",
-    "explanation": "Expresses a contrast or unexpected outcome; 'however', 'but', 'even though'."
+    "explanation": "Expresses a contrast or unexpected outcome; 'however', 'but', 'even though'.",
+    "prefixFurigana": "{彼|かれ}は",
+    "segmentsFurigana": [
+      "いつも",
+      "{遅刻|ちこく}するところが、",
+      "{今日|きょう}は",
+      "{早|はや}く"
+    ],
+    "suffixFurigana": "{来|き}ました。"
   },
   {
     "id": "star-n3-55",
@@ -3715,12 +5190,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "しまった。",
     "fullSentence": "電車に乗るところだったが、ドアが閉まってしまった。",
-    "furigana": "電車に乗るところだったが、ドアが閉まってしまった。",
+    "furigana": "{電車|でんしゃ}に{乗|の}るところだったが、ドアが{閉|し}まってしまった。",
     "romaji": "Densha ni noru tokoro datta ga, doa ga shimatte shimatta.",
     "english": "I was about to get on the train, but the doors closed.",
     "grammarId": "N3/tokoro-datta",
     "grammarPoint": "～ところだった",
-    "explanation": "Expresses a near miss or a situation that almost happened; 'was just about to', 'almost', 'nearly'."
+    "explanation": "Expresses a near miss or a situation that almost happened; 'was just about to', 'almost', 'nearly'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{電車|でんしゃ}に",
+      "{乗|の}るところだったが、",
+      "ドアが",
+      "{閉|し}まって"
+    ],
+    "suffixFurigana": "しまった。"
   },
   {
     "id": "star-n3-56",
@@ -3735,12 +5218,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "終わりましたか？",
     "fullSentence": "ところで、昨日の宿題はもう終わりましたか？",
-    "furigana": "ところで、昨日の宿題はもう終わりましたか？",
+    "furigana": "ところで、{昨日|きのう}の{宿題|しゅくだい}はもう{終|お}わりましたか？",
     "romaji": "Tokorode, kinou no shukudai wa mou owari mashita ka?",
     "english": "By the way, have you finished yesterday’s homework yet?",
     "grammarId": "N3/tokorode",
     "grammarPoint": "ところで",
-    "explanation": "Used for changing the topic or bringing up a new topic; 'by the way', 'speaking of'."
+    "explanation": "Used for changing the topic or bringing up a new topic; 'by the way', 'speaking of'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "ところで、",
+      "{昨日|きのう}の",
+      "{宿題|しゅくだい}は",
+      "もう"
+    ],
+    "suffixFurigana": "{終|お}わりましたか？"
   },
   {
     "id": "star-n3-57",
@@ -3755,12 +5246,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "行きましょう。",
     "fullSentence": "明日雨が降るとしたら、傘を持って行きましょう。",
-    "furigana": "明日雨が降るとしたら、傘を持って行きましょう。",
+    "furigana": "{明日|あした}{雨|あめ}が{降|ふ}るとしたら、{傘|かさ}を{持|も}って{行|い}きましょう。",
     "romaji": "Ashita ame ga furu to shitara, kasa wo motte ikimashou.",
     "english": "If it’s going to rain tomorrow, let’s bring an umbrella.",
     "grammarId": "N3/to-shitara",
     "grammarPoint": "～としたら",
-    "explanation": "Express a hypothetical situation; 'if', 'suppose', 'assuming'."
+    "explanation": "Express a hypothetical situation; 'if', 'suppose', 'assuming'.",
+    "prefixFurigana": "{明日|あした}{雨|あめ}が",
+    "segmentsFurigana": [
+      "{降|ふ}ると",
+      "したら、",
+      "{傘|かさ}を",
+      "{持|も}って"
+    ],
+    "suffixFurigana": "{行|い}きましょう。"
   },
   {
     "id": "star-n3-58",
@@ -3775,12 +5274,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "使われます。",
     "fullSentence": "この本は参考書として使われます。",
-    "furigana": "この本は参考書として使われます。",
+    "furigana": "この{本|ほん}は{参考|さんこう}{書|しょ}として{使|つか}われます。",
     "romaji": "Kono hon wa sankousho to shite tsukawaremasu.",
     "english": "This book is used as a reference book.",
     "grammarId": "N3/to-shite",
     "grammarPoint": "～として",
-    "explanation": "Indicates a role, capacity, or identity; 'as', 'in the capacity of'."
+    "explanation": "Indicates a role, capacity, or identity; 'as', 'in the capacity of'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "{本|ほん}は",
+      "{参考|さんこう}",
+      "{書|しょ}として"
+    ],
+    "suffixFurigana": "{使|つか}われます。"
   },
   {
     "id": "star-n3-59",
@@ -3795,12 +5302,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "働いています。",
     "fullSentence": "どんなに辛いことか、彼女は毎日頑張って働いています。",
-    "furigana": "どんなに辛いことか、彼女は毎日頑張って働いています。",
+    "furigana": "どんなに{辛|つら}いことか、{彼女|かのじょ}は{毎日|まいにち}頑{張|は}って{働|はたら}いています。",
     "romaji": "Donna ni tsurai koto ka, kanojo wa mainichi ganbatte hataraiteimasu.",
     "english": "No matter how difficult it is, she works hard every day.",
     "grammarId": "N3/donna-ni-koto-ka",
     "grammarPoint": "～どんなに～ことか",
-    "explanation": "Expresses the extent of something or emphasizes the degree of a condition or situation."
+    "explanation": "Expresses the extent of something or emphasizes the degree of a condition or situation.",
+    "prefixFurigana": "どんなに{辛|つら}いことか、",
+    "segmentsFurigana": [
+      "{彼女|かのじょ}は",
+      "{毎日|まいにち}",
+      "頑",
+      "{張|は}って"
+    ],
+    "suffixFurigana": "{働|はたら}いています。"
   },
   {
     "id": "star-n3-60",
@@ -3815,12 +5330,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ある。",
     "fullSentence": "どんなに勉強しても、まだわからないことがある。",
-    "furigana": "どんなに勉強しても、まだわからないことがある。",
+    "furigana": "どんなに{勉強|べんきょう}しても、まだわからないことがある。",
     "romaji": "Donna ni benkyou shite mo, mada wakaranai koto ga aru.",
     "english": "No matter how much I study, there are still things I don’t understand.",
     "grammarId": "N3/donna-ni-temo",
     "grammarPoint": "どんなに～ても",
-    "explanation": "Expresses 'no matter how much' or 'even if'; emphasizes the degree of a situation."
+    "explanation": "Expresses 'no matter how much' or 'even if'; emphasizes the degree of a situation.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "どんなに",
+      "{勉強|べんきょう}しても、",
+      "まだわから",
+      "ないことが"
+    ],
+    "suffixFurigana": "ある。"
   },
   {
     "id": "star-n3-61",
@@ -3835,12 +5358,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "かかりそうだ。",
     "fullSentence": "この問題を解けないことはないが、時間がかかりそうだ。",
-    "furigana": "この問題を解けないことはないが、時間がかかりそうだ。",
+    "furigana": "この{問題|もんだい}を{解|と}けないことはないが、{時間|じかん}がかかりそうだ。",
     "romaji": "Kono mondai wo tokenai koto wa nai ga, jikan ga kakari sou da.",
     "english": "It’s not that I can’t solve this problem, but it looks like it’s going to take some time.",
     "grammarId": "N3/nai-koto-wa-nai",
     "grammarPoint": "～ないことはない",
-    "explanation": "Express the idea that 'it's not that it's impossible' or 'it's not that it cannot be done'."
+    "explanation": "Express the idea that 'it's not that it's impossible' or 'it's not that it cannot be done'.",
+    "prefixFurigana": "この",
+    "segmentsFurigana": [
+      "{問題|もんだい}を",
+      "{解|と}けないことは",
+      "ないが、",
+      "{時間|じかん}が"
+    ],
+    "suffixFurigana": "かかりそうだ。"
   },
   {
     "id": "star-n3-62",
@@ -3855,12 +5386,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "大きくなる。",
     "fullSentence": "この事故を報告しないと、問題が大きくなる。",
-    "furigana": "この事故を報告しないと、問題が大きくなる。",
+    "furigana": "この{事故|じこ}を{報告|ほうこく}しないと、{問題|もんだい}が{大|おお}きくなる。",
     "romaji": "Kono jiko wo houkoku shinai to, mondai ga ookiku naru.",
     "english": "If we don’t report this accident, the problem will get worse.",
     "grammarId": "N3/nai-to",
     "grammarPoint": "～ないと",
-    "explanation": "Express a condition; 'if... not', 'unless', 'must'."
+    "explanation": "Express a condition; 'if... not', 'unless', 'must'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "{事故|じこ}を",
+      "{報告|ほうこく}しないと、",
+      "{問題|もんだい}が"
+    ],
+    "suffixFurigana": "{大|おお}きくなる。"
   },
   {
     "id": "star-n3-63",
@@ -3875,12 +5414,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "話せます。",
     "fullSentence": "彼は日本語、英語、中国語などを話せます。",
-    "furigana": "彼は日本語、英語、中国語などを話せます。",
+    "furigana": "{彼|かれ}は{日本語|にほんご}、{英語|えいご}、{中国|ちゅうごく}{語|ご}などを{話|はな}せます。",
     "romaji": "Kare wa nihongo, eigo, chuugokugo nado wo hanasemasu.",
     "english": "He speaks Japanese, English, Chinese, and other languages.",
     "grammarId": "N3/nado",
     "grammarPoint": "～など",
-    "explanation": "Indicates a non-exhaustive list of examples; 'such as', 'things like', 'among others'."
+    "explanation": "Indicates a non-exhaustive list of examples; 'such as', 'things like', 'among others'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}は",
+      "{日本語|にほんご}、",
+      "{英語|えいご}、",
+      "{中国|ちゅうごく}{語|ご}などを"
+    ],
+    "suffixFurigana": "{話|はな}せます。"
   },
   {
     "id": "star-n3-64",
@@ -3895,12 +5442,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "行事です。",
     "fullSentence": "日本において、お盆は家族が集まる大切な行事です。",
-    "furigana": "日本において、お盆は家族が集まる大切な行事です。",
+    "furigana": "{日本|にっぽん}において、お{盆|ぼん}は{家族|かぞく}が{集|あつ}まる{大切|たいせつ}な{行事|ぎょうじ}です。",
     "romaji": "Nihon ni oite, obon wa kazoku ga atsumaru taisetsu na gyouji desu.",
     "english": "In Japan, Obon is an important occasion when families gather.",
     "grammarId": "N3/ni-oite",
     "grammarPoint": "～において",
-    "explanation": "Indicates the place, time, or context where an action or situation takes place."
+    "explanation": "Indicates the place, time, or context where an action or situation takes place.",
+    "prefixFurigana": "{日本|にっぽん}において、",
+    "segmentsFurigana": [
+      "お{盆|ぼん}は",
+      "{家族|かぞく}が",
+      "{集|あつ}まる",
+      "{大切|たいせつ}な"
+    ],
+    "suffixFurigana": "{行事|ぎょうじ}です。"
   },
   {
     "id": "star-n3-65",
@@ -3915,12 +5470,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "作ります。",
     "fullSentence": "母は忙しいので、私が母にかわって料理を作ります。",
-    "furigana": "母は忙しいので、私が母にかわって料理を作ります。",
+    "furigana": "{母|はは}は{忙|いそが}しいので、{私|わたし}が{母|はは}にかわって{料理|りょうり}を{作|つく}ります。",
     "romaji": "Haha wa isogashii no de, watashi ga haha ni kawatte ryouri wo tsukurimasu.",
     "english": "My mother is busy, so I’ll cook in her place.",
     "grammarId": "N3/ni-kawatte",
     "grammarPoint": "～にかわって",
-    "explanation": "Expresses 'in place of', 'on behalf of', or 'instead of'."
+    "explanation": "Expresses 'in place of', 'on behalf of', or 'instead of'.",
+    "prefixFurigana": "{母|はは}は{忙|いそが}しいので、",
+    "segmentsFurigana": [
+      "{私|わたし}が",
+      "{母|はは}にか",
+      "わって",
+      "{料理|りょうり}を"
+    ],
+    "suffixFurigana": "{作|つく}ります。"
   },
   {
     "id": "star-n2-1",
@@ -3935,12 +5498,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "予定です。",
     "fullSentence": "今日は映画を見るあるいはショッピングをする予定です。",
-    "furigana": "今日は映画を見るあるいはショッピングをする予定です。",
+    "furigana": "{今日|きょう}は{映画|えいが}を{見|み}るあるいはショッピングをする{予定|よてい}です。",
     "romaji": "Kyou wa eiga wo miru aruiwa shoppingu wo suru yotei desu.",
     "english": "Today, I plan to watch a movie or go shopping.",
     "grammarId": "N2/a-aruiwa-b",
     "grammarPoint": "A あるいは B",
-    "explanation": "Indicates alternatives; 'A or B', 'either A or B'."
+    "explanation": "Indicates alternatives; 'A or B', 'either A or B'.",
+    "prefixFurigana": "{今日|きょう}は",
+    "segmentsFurigana": [
+      "{映画|えいが}を",
+      "{見|み}るあるいは",
+      "ショッピングを",
+      "する"
+    ],
+    "suffixFurigana": "{予定|よてい}です。"
   },
   {
     "id": "star-n2-2",
@@ -3955,12 +5526,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "教えてください。",
     "fullSentence": "話がちょっと長くなったね。さて、もっと喜美子さんのことを教えてください。",
-    "furigana": "話がちょっと長くなったね。さて、もっと喜美子さんのことを教えてください。",
+    "furigana": "{話|はなし}がちょっと{長|なが}くなったね。さて、もっと{喜美子|きみこ}さんのことを{教|おし}えてください。",
     "romaji": "Hanashi ga chotto nagaku natta ne. Sate, motto Kimiko-san no koto wo oshiete kudasai.",
     "english": "This has gone on a bit, hasn’t it? Now, please tell me more about Kimiko.",
     "grammarId": "N2/a-sate-b",
     "grammarPoint": "A。さて B。",
-    "explanation": "Indicates a sudden change or shift in the topic or situation; 'now then', 'well', 'so'."
+    "explanation": "Indicates a sudden change or shift in the topic or situation; 'now then', 'well', 'so'.",
+    "prefixFurigana": "{話|はなし}がちょっと{長|なが}くなったね。",
+    "segmentsFurigana": [
+      "さて、",
+      "もっと",
+      "{喜美子|きみこ}さんの",
+      "ことを"
+    ],
+    "suffixFurigana": "{教|おし}えてください。"
   },
   {
     "id": "star-n2-3",
@@ -3975,12 +5554,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "です。",
     "fullSentence": "私は立派な成果を出したい、すなわち、成功したいのです。",
-    "furigana": "私は立派な成果を出したい、すなわち、成功したいのです。",
+    "furigana": "{私|わたし}は{立派|りっぱ}な{成果|せいか}を{出|だ}したい、すなわち、{成功|せいこう}したいのです。",
     "romaji": "Watashi wa rippana seika wo dashitai, sunawachi, seikou shitai no desu.",
     "english": "I want to achieve great results—in other words, I want to succeed.",
     "grammarId": "N2/a-sunawachi-b",
     "grammarPoint": "A すなわち B。",
-    "explanation": "Express that A is equivalent to B; 'in other words', 'namely', 'that is to say'."
+    "explanation": "Express that A is equivalent to B; 'in other words', 'namely', 'that is to say'.",
+    "prefixFurigana": "{私|わたし}は{立派|りっぱ}な",
+    "segmentsFurigana": [
+      "{成果|せいか}を",
+      "{出|だ}したい、",
+      "すなわち、",
+      "{成功|せいこう}したいの"
+    ],
+    "suffixFurigana": "です。"
   },
   {
     "id": "star-n2-4",
@@ -3995,12 +5582,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "開きます。",
     "fullSentence": "このボタンを押すと、ドアが開きます。",
-    "furigana": "このボタンを押すと、ドアが開きます。",
+    "furigana": "このボタンを{押|お}すと、ドアが{開|ひら}きます。",
     "romaji": "Kono botan wo osu to, doa ga hirakimasu.",
     "english": "Press this button to open the door.",
     "grammarId": "N2/suruto",
     "grammarPoint": "A。すると B。",
-    "explanation": "Indicates that when action A is done, action or event B follows; 'then', 'when', 'if'."
+    "explanation": "Indicates that when action A is done, action or event B follows; 'then', 'when', 'if'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "ボタンを",
+      "{押|お}すと、",
+      "ドアが"
+    ],
+    "suffixFurigana": "{開|ひら}きます。"
   },
   {
     "id": "star-n2-5",
@@ -4015,12 +5610,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "旅行しています。",
     "fullSentence": "山田さん。そういえば、彼女は今週末旅行しています。",
-    "furigana": "山田さん。そういえば、彼女は今週末旅行しています。",
+    "furigana": "{山田|やまだ}さん。そういえば、{彼女|かのじょ}は{今|いま}{週末|しゅうまつ}{旅行|りょこう}しています。",
     "romaji": "Yamada-san. Souieba, kanojo wa konshuumatsu ryokou shite imasu.",
     "english": "Ms. Yamada. Come to think of it, she’s traveling this weekend.",
     "grammarId": "N2/souieba",
     "grammarPoint": "A。そういえば B。",
-    "explanation": "Recalling something related to A; 'speaking of which', 'by the way', 'now that you mention it'."
+    "explanation": "Recalling something related to A; 'speaking of which', 'by the way', 'now that you mention it'.",
+    "prefixFurigana": "{山田|やまだ}さん。",
+    "segmentsFurigana": [
+      "そういえば、",
+      "{彼女|かのじょ}は",
+      "{今|いま}",
+      "{週末|しゅうまつ}"
+    ],
+    "suffixFurigana": "{旅行|りょこう}しています。"
   },
   {
     "id": "star-n2-6",
@@ -4035,12 +5638,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "食べましょう。",
     "fullSentence": "このレストランは混んでいます。そこで別の場所でランチを食べましょう。",
-    "furigana": "このレストランは混んでいます。そこで別の場所でランチを食べましょう。",
+    "furigana": "このレストランは{混|こ}んでいます。そこで{別|べつ}の{場所|ばしょ}でランチを{食|た}べましょう。",
     "romaji": "Kono resutoran wa kondeimasu. Soko de betsu no basho de ranchi wo tabemashou.",
     "english": "This restaurant is crowded. Let’s have lunch somewhere else instead.",
     "grammarId": "N2/sokode",
     "grammarPoint": "A。そこで B。",
-    "explanation": "Expresses 'therefore' or 'because of that'."
+    "explanation": "Expresses 'therefore' or 'because of that'.",
+    "prefixFurigana": "このレストランは{混|こ}んでいます。",
+    "segmentsFurigana": [
+      "そこで",
+      "{別|べつ}の",
+      "{場所|ばしょ}で",
+      "ランチを"
+    ],
+    "suffixFurigana": "{食|た}べましょう。"
   },
   {
     "id": "star-n2-7",
@@ -4055,12 +5666,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "しょう。",
     "fullSentence": "このネックレスをみんなに見せると、彼らはすぐにそれが本物だと気づくでしょう。",
-    "furigana": "このネックレスをみんなに見せると、彼らはすぐにそれが本物だと気づくでしょう。",
+    "furigana": "このネックレスをみんなに{見|み}せると、{彼|かれ}らはすぐにそれが{本物|ほんもの}だと{気|き}づくでしょう。",
     "romaji": "Kono nekkuresu o minna ni miseru to, karera wa sugu ni sore ga honmono da to kizuku deshou.",
     "english": "When I show this necklace to everyone, they’ll immediately realize it’s real.",
     "grammarId": "N2/sorega",
     "grammarPoint": "A。それがB。",
-    "explanation": "Expressing 'that's exactly what A is; in other words, B'."
+    "explanation": "Expressing 'that's exactly what A is; in other words, B'.",
+    "prefixFurigana": "このネックレスをみんなに",
+    "segmentsFurigana": [
+      "{見|み}せると、",
+      "{彼|かれ}らはすぐに",
+      "それが{本物|ほんもの}だと",
+      "{気|き}づくで"
+    ],
+    "suffixFurigana": "しょう。"
   },
   {
     "id": "star-n2-8",
@@ -4075,12 +5694,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ければならない。",
     "fullSentence": "試験に落ちた。それで再試験を受けなければならない。",
-    "furigana": "試験に落ちた。それで再試験を受けなければならない。",
+    "furigana": "{試験|しけん}に{落|お}ちた。それで{再|さい}{試験|しけん}を{受|う}けなければならない。",
     "romaji": "Shiken ni ochita. Sore de sai shiken wo ukenakereba naranai.",
     "english": "I failed the exam. So I have to take the retest.",
     "grammarId": "N2/sore-de",
     "grammarPoint": "A。それで B。",
-    "explanation": "Express a sequence of events or cause-and-effect; 'and then', 'so', 'because of that'."
+    "explanation": "Express a sequence of events or cause-and-effect; 'and then', 'so', 'because of that'.",
+    "prefixFurigana": "{試験|しけん}に{落|お}ちた。",
+    "segmentsFurigana": [
+      "それで",
+      "{再|さい}",
+      "{試験|しけん}を",
+      "{受|う}けな"
+    ],
+    "suffixFurigana": "ければならない。"
   },
   {
     "id": "star-n2-9",
@@ -4095,12 +5722,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ければならない。",
     "fullSentence": "矛盾した意見を持つ人もいるだろうが、それでも話し合いは続けなければならない。",
-    "furigana": "矛盾した意見を持つ人もいるだろうが、それでも話し合いは続けなければならない。",
+    "furigana": "{矛盾|むじゅん}した{意見|いけん}を{持|も}つ{人|ひと}もいるだろうが、それでも{話し合|はなしあ}いは{続|つづ}けなければならない。",
     "romaji": "Mujun shita iken o motsu hito mo iru darou ga, sore demo hanashiai wa tsudzuke nakereba naranai",
     "english": "Some people may hold conflicting opinions, but we must continue the discussion nonetheless.",
     "grammarId": "N2/sore-demo",
     "grammarPoint": "A。それでも B。",
-    "explanation": "Expresses 'even so', 'nevertheless', 'still', or 'but'; used to contrast two statements."
+    "explanation": "Expresses 'even so', 'nevertheless', 'still', or 'but'; used to contrast two statements.",
+    "prefixFurigana": "{矛盾|むじゅん}した{意見|いけん}を{持|も}つ{人|ひと}も",
+    "segmentsFurigana": [
+      "いるだろうが、",
+      "それでも",
+      "{話し合|はなしあ}いは",
+      "{続|つづ}けな"
+    ],
+    "suffixFurigana": "ければならない。"
   },
   {
     "id": "star-n2-10",
@@ -4115,12 +5750,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "いた。",
     "fullSentence": "昨日は晴れていた。それなのに、彼は傘を持っていた。",
-    "furigana": "昨日は晴れていた。それなのに、彼は傘を持っていた。",
+    "furigana": "{昨日|きのう}は{晴|は}れていた。それなのに、{彼|かれ}は{傘|かさ}を{持|も}っていた。",
     "romaji": "Kinou wa harete ita. Sore nanoni, kare wa kasa wo motte ita.",
     "english": "It was sunny yesterday. Yet, he was carrying an umbrella.",
     "grammarId": "N2/sorenanoni",
     "grammarPoint": "A。それなのに B。",
-    "explanation": "Express contrast or a contradiction between two situations or facts; 'even though', 'despite', 'but still'."
+    "explanation": "Express contrast or a contradiction between two situations or facts; 'even though', 'despite', 'but still'.",
+    "prefixFurigana": "{昨日|きのう}は{晴|は}れていた。",
+    "segmentsFurigana": [
+      "それなのに、",
+      "{彼|かれ}は",
+      "{傘|かさ}を",
+      "{持|も}って"
+    ],
+    "suffixFurigana": "いた。"
   },
   {
     "id": "star-n2-11",
@@ -4135,12 +5778,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "いいですね。",
     "fullSentence": "それはそうと、今日の天気はいいですね。",
-    "furigana": "それはそうと、今日の天気はいいですね。",
+    "furigana": "それはそうと、{今日|きょう}の{天気|てんき}はいいですね。",
     "romaji": "Sore wa sou to, kyou no tenki wa ii desu ne.",
     "english": "By the way, the weather is nice today.",
     "grammarId": "N2/a-sore-wa-sou-to-b",
     "grammarPoint": "A それはそうと B。",
-    "explanation": "Changing the topic; 'by the way', 'speaking of which'."
+    "explanation": "Changing the topic; 'by the way', 'speaking of which'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "それは",
+      "そうと、",
+      "{今日|きょう}の",
+      "{天気|てんき}は"
+    ],
+    "suffixFurigana": "いいですね。"
   },
   {
     "id": "star-n2-12",
@@ -4155,12 +5806,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "連絡してください。",
     "fullSentence": "明日から出張で不在になります。ただし、緊急の場合は携帯に連絡してください。",
-    "furigana": "明日から出張で不在になります。ただし、緊急の場合は携帯に連絡してください。",
+    "furigana": "{明日|あした}から{出張|しゅっちょう}で{不在|ふざい}になります。ただし、{緊急|きんきゅう}の{場合|ばあい}は{携帯|けいたい}に{連絡|れんらく}してください。",
     "romaji": "Ashita kara shucchou de fuzai ni narimasu. Tadashi, kinkyuu no baai wa keitai ni renraku shite kudasai.",
     "english": "I will be away on a business trip starting tomorrow. However, please contact me on my cell phone in case of an emergency.",
     "grammarId": "N2/a-tadashi-b",
     "grammarPoint": "A。ただしB。",
-    "explanation": "Adding a condition or exception to a statement; 'however', 'provided that', 'but only if'."
+    "explanation": "Adding a condition or exception to a statement; 'however', 'provided that', 'but only if'.",
+    "prefixFurigana": "{明日|あした}から{出張|しゅっちょう}で{不在|ふざい}になります。",
+    "segmentsFurigana": [
+      "ただし、",
+      "{緊急|きんきゅう}の",
+      "{場合|ばあい}は",
+      "{携帯|けいたい}に"
+    ],
+    "suffixFurigana": "{連絡|れんらく}してください。"
   },
   {
     "id": "star-n2-13",
@@ -4175,12 +5834,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "楽しみにしています。",
     "fullSentence": "彼女が料理上手だって、みんな彼女の作った料理を楽しみにしています。",
-    "furigana": "彼女が料理上手だって、みんな彼女の作った料理を楽しみにしています。",
+    "furigana": "{彼女|かのじょ}が{料理|りょうり}{上手|じょうず}だって、みんな{彼女|かのじょ}の{作|つく}った{料理|りょうり}を{楽|たの}しみにしています。",
     "romaji": "Kanojo ga ryouri jouzu datte, minna kanojo no tsukutta ryouri wo tanoshimi ni shiteimasu.",
     "english": "Since she’s a great cook, everyone looks forward to the meals she makes.",
     "grammarId": "N2/datte",
     "grammarPoint": "A。だって B。",
-    "explanation": "Used to give a reason, express cause or bring up a topic; 'because', 'since', 'it's just that'."
+    "explanation": "Used to give a reason, express cause or bring up a topic; 'because', 'since', 'it's just that'.",
+    "prefixFurigana": "{彼女|かのじょ}が{料理|りょうり}{上手|じょうず}だって、",
+    "segmentsFurigana": [
+      "みんな",
+      "{彼女|かのじょ}の",
+      "{作|つく}った",
+      "{料理|りょうり}を"
+    ],
+    "suffixFurigana": "{楽|たの}しみにしています。"
   },
   {
     "id": "star-n2-14",
@@ -4195,12 +5862,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "違いない。",
     "fullSentence": "彼女が泣いている。ということは何か悲しいことがあったに違いない。",
-    "furigana": "彼女が泣いている。ということは何か悲しいことがあったに違いない。",
+    "furigana": "{彼女|かのじょ}が{泣|な}いている。ということは{何|なに}か{悲|かな}しいことがあったに{違|ちが}いない。",
     "romaji": "Kanojo ga naite iru. To iu koto wa nanika kanashii koto ga atta ni chigainai.",
     "english": "She is crying. That must mean something sad has happened.",
     "grammarId": "N2/a-to-iu-koto-wa-b",
     "grammarPoint": "A。ということは B。",
-    "explanation": "Expresses the meaning 'if A, that means B' or 'A implies B'."
+    "explanation": "Expresses the meaning 'if A, that means B' or 'A implies B'.",
+    "prefixFurigana": "{彼女|かのじょ}が{泣|な}いている。",
+    "segmentsFurigana": [
+      "ということは",
+      "{何|なに}か",
+      "{悲|かな}しいことが",
+      "あったに"
+    ],
+    "suffixFurigana": "{違|ちが}いない。"
   },
   {
     "id": "star-n2-15",
@@ -4215,12 +5890,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "きたためです。",
     "fullSentence": "彼は非常に疲れています。というのは、昨夜、車で遠くまで行ってきたためです。",
-    "furigana": "彼は非常に疲れています。というのは、昨夜、車で遠くまで行ってきたためです。",
+    "furigana": "{彼|かれ}は{非常|ひじょう}に{疲|つか}れています。というのは、{昨夜|さくや}、{車|くるま}で{遠|とお}くまで{行|い}ってきたためです。",
     "romaji": "Kare wa hijou ni tsukareteimasu. To iu no wa, sakuya, kuruma de tooku made itte kita tame desu.",
     "english": "He is very tired. That’s because he drove a long way last night.",
     "grammarId": "N2/toiu-no-wa",
     "grammarPoint": "A。というのは B。",
-    "explanation": "Used to give an explanation or provide additional information for A; 'that is to say', 'in other words'."
+    "explanation": "Used to give an explanation or provide additional information for A; 'that is to say', 'in other words'.",
+    "prefixFurigana": "{彼|かれ}は{非常|ひじょう}に{疲|つか}れています。というのは、",
+    "segmentsFurigana": [
+      "{昨夜|さくや}、",
+      "{車|くるま}で",
+      "{遠|とお}くまで",
+      "{行|い}って"
+    ],
+    "suffixFurigana": "きたためです。"
   },
   {
     "id": "star-n2-16",
@@ -4235,12 +5918,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "しました。",
     "fullSentence": "このプロジェクトは成功しました。要するに、私たちのチームは素晴らしい仕事をしました。",
-    "furigana": "このプロジェクトは成功しました。要するに、私たちのチームは素晴らしい仕事をしました。",
+    "furigana": "このプロジェクトは{成功|せいこう}しました。{要|よう}するに、{私|わたし}たちのチームは{素晴|すば}らしい{仕事|しごと}をしました。",
     "romaji": "Kono purojekuto wa seikou shimashita. Yousuru ni, watashitachi no chiimu wa subarashii shigoto o shimashita.",
     "english": "This project was a success. In short, our team did a great job.",
     "grammarId": "N2/a-yousuru-ni-b",
     "grammarPoint": "A。要するに B。",
-    "explanation": "Expressing 'in short', 'in a nutshell', or 'to sum up' when restating or summarizing A as B."
+    "explanation": "Expressing 'in short', 'in a nutshell', or 'to sum up' when restating or summarizing A as B.",
+    "prefixFurigana": "このプロジェクトは{成功|せいこう}しました。",
+    "segmentsFurigana": [
+      "{要|よう}するに、",
+      "{私|わたし}たちのチームは",
+      "{素晴|すば}らしい",
+      "{仕事|しごと}を"
+    ],
+    "suffixFurigana": "しました。"
   },
   {
     "id": "star-n2-17",
@@ -4255,12 +5946,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "通行止めです。",
     "fullSentence": "このエリアは工事中につき、通行止めです。",
-    "furigana": "このエリアは工事中につき、通行止めです。",
+    "furigana": "このエリアは{工事|こうじ}{中|なか}につき、{通行止|つうこうど}めです。",
     "romaji": "Kono eria wa koujichuu ni tsuki, tsuukoudome desu.",
     "english": "This area is closed to traffic due to construction.",
     "grammarId": "N2/ni-tsuki",
     "grammarPoint": "Noun につき",
-    "explanation": "Indicates the reason, cause, or condition for something; 'due to', 'regarding', 'per'."
+    "explanation": "Indicates the reason, cause, or condition for something; 'due to', 'regarding', 'per'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "エリアは",
+      "{工事|こうじ}",
+      "{中|なか}につき、"
+    ],
+    "suffixFurigana": "{通行止|つうこうど}めです。"
   },
   {
     "id": "star-n2-18",
@@ -4275,12 +5974,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "開催されます。",
     "fullSentence": "駅前広場にてイベントが開催されます。",
-    "furigana": "駅前広場にてイベントが開催されます。",
+    "furigana": "{駅前|えきまえ}{広場|ひろば}にてイベントが{開催|かいさい}されます。",
     "romaji": "Ekimae hiroba nite ibento ga kaisai saremasu.",
     "english": "An event will be held at the station square.",
     "grammarId": "N2/noun-nite",
     "grammarPoint": "Noun にて",
-    "explanation": "Expresses location or means; 'at', 'in', 'by', 'with'."
+    "explanation": "Expresses location or means; 'at', 'in', 'by', 'with'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{駅前|えきまえ}",
+      "{広場|ひろば}に",
+      "て",
+      "イベントが"
+    ],
+    "suffixFurigana": "{開催|かいさい}されます。"
   },
   {
     "id": "star-n2-19",
@@ -4295,12 +6002,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "しょう。",
     "fullSentence": "料理が得意な彼のことだから、美味しい料理を作ってくれるでしょう。",
-    "furigana": "料理が得意な彼のことだから、美味しい料理を作ってくれるでしょう。",
+    "furigana": "{料理|りょうり}が{得意|とくい}な{彼|かれ}のことだから、{美味|おい}しい{料理|りょうり}を{作|つく}ってくれるでしょう。",
     "romaji": "Ryouri ga tokui na kare no koto dakara, oishii ryouri wo tsukutte kureru deshou.",
     "english": "Since he’s good at cooking, he’ll probably make something delicious.",
     "grammarId": "N2/noun-no-koto-dakara",
     "grammarPoint": "Noun の ことだから",
-    "explanation": "Used to provide a reason or explanation based on one's knowledge about the noun; 'since', 'because', 'knowing'."
+    "explanation": "Used to provide a reason or explanation based on one's knowledge about the noun; 'since', 'because', 'knowing'.",
+    "prefixFurigana": "{料理|りょうり}が{得意|とくい}な{彼|かれ}のことだから、",
+    "segmentsFurigana": [
+      "{美味|おい}しい",
+      "{料理|りょうり}を",
+      "{作|つく}って",
+      "くれるで"
+    ],
+    "suffixFurigana": "しょう。"
   },
   {
     "id": "star-n2-20",
@@ -4315,12 +6030,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "楽しめます。",
     "fullSentence": "日本料理をはじめ、さまざまな料理がこのレストランで楽しめます。",
-    "furigana": "日本料理をはじめ、さまざまな料理がこのレストランで楽しめます。",
+    "furigana": "{日本|にっぽん}{料理|りょうり}をはじめ、さまざまな{料理|りょうり}がこのレストランで{楽|たの}しめます。",
     "romaji": "Nihon ryouri wo hajime, samazama na ryouri ga kono resutoran de tanoshimemasu.",
     "english": "At this restaurant, you can enjoy a variety of cuisines, including Japanese cuisine.",
     "grammarId": "N2/noun-wo-hajime",
     "grammarPoint": "Noun を はじめ",
-    "explanation": "Meaning 'starting with', 'including', 'not only... but also'."
+    "explanation": "Meaning 'starting with', 'including', 'not only... but also'.",
+    "prefixFurigana": "{日本|にっぽん}{料理|りょうり}をはじめ、",
+    "segmentsFurigana": [
+      "さまざまな",
+      "{料理|りょうり}が",
+      "この",
+      "レストランで"
+    ],
+    "suffixFurigana": "{楽|たの}しめます。"
   },
   {
     "id": "star-n2-21",
@@ -4335,12 +6058,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "あります。",
     "fullSentence": "東京をはじめとして、日本にはたくさんの観光スポットがあります。",
-    "furigana": "東京をはじめとして、日本にはたくさんの観光スポットがあります。",
+    "furigana": "{東京|とうきょう}をはじめとして、{日本|にっぽん}にはたくさんの{観光|かんこう}スポットがあります。",
     "romaji": "Tōkyō o hajime to shite, Nihon ni wa takusan no kankō supotto ga arimasu.",
     "english": "Starting with Tokyo, there are many tourist attractions in Japan.",
     "grammarId": "N2/noun-wo-hajime-to-shite",
     "grammarPoint": "Noun を はじめとして",
-    "explanation": "Expresses 'starting with', 'beginning with', or 'including'."
+    "explanation": "Expresses 'starting with', 'beginning with', or 'including'.",
+    "prefixFurigana": "{東京|とうきょう}をはじめとして、",
+    "segmentsFurigana": [
+      "{日本|にっぽん}には",
+      "たくさんの",
+      "{観光|かんこう}",
+      "スポットが"
+    ],
+    "suffixFurigana": "あります。"
   },
   {
     "id": "star-n2-22",
@@ -4355,12 +6086,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "話せる。",
     "fullSentence": "彼はフランス語をはじめとする外国語が話せる。",
-    "furigana": "彼はフランス語をはじめとする外国語が話せる。",
+    "furigana": "{彼|かれ}は{フランス語|ふらんすご}をはじめとする{外国|がいこく}{語|かたり}が{話|はな}せる。",
     "romaji": "Kare wa furansugo o hajime to suru gaikokugo ga hanaseru.",
     "english": "He can speak foreign languages, including French.",
     "grammarId": "N2/noun-o-hajime-to-suru-noun",
     "grammarPoint": "Noun を はじめとする Noun",
-    "explanation": "Indicates a representative example of a group; 'starting with', 'including', 'such as'."
+    "explanation": "Indicates a representative example of a group; 'starting with', 'including', 'such as'.",
+    "prefixFurigana": "{彼|かれ}は{フランス語|ふらんすご}を",
+    "segmentsFurigana": [
+      "はじめと",
+      "する",
+      "{外国|がいこく}",
+      "{語|かたり}が"
+    ],
+    "suffixFurigana": "{話|はな}せる。"
   },
   {
     "id": "star-n2-23",
@@ -4375,12 +6114,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "行われています。",
     "fullSentence": "環境問題をめぐって、多くの議論が行われています。",
-    "furigana": "環境問題をめぐって、多くの議論が行われています。",
+    "furigana": "{環境|かんきょう}{問題|もんだい}をめぐって、{多|おお}くの{議論|ぎろん}が{行|おこな}われています。",
     "romaji": "Kankyō mondai o megutte, ōku no giron ga okonawarete imasu.",
     "english": "There is a great deal of debate surrounding environmental issues.",
     "grammarId": "N2/noun-wo-megutte",
     "grammarPoint": "Noun を めぐって",
-    "explanation": "Concerning; with regard to; about"
+    "explanation": "Concerning; with regard to; about",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{環境|かんきょう}",
+      "{問題|もんだい}をめぐって、",
+      "{多|おお}くの",
+      "{議論|ぎろん}が"
+    ],
+    "suffixFurigana": "{行|おこな}われています。"
   },
   {
     "id": "star-n2-24",
@@ -4395,12 +6142,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "れます。",
     "fullSentence": "環境問題をめぐる国際会議が開かれます。",
-    "furigana": "環境問題をめぐる国際会議が開かれます。",
+    "furigana": "{環境|かんきょう}{問題|もんだい}をめぐる{国際|こくさい}{会議|かいぎ}が{開|ひら}かれます。",
     "romaji": "Kankyō mondai o meguru kokusai kaigi ga hirakaremasu.",
     "english": "An international conference on environmental issues will be held.",
     "grammarId": "N2/noun-o-meguru-noun",
     "grammarPoint": "Noun を めぐる Noun",
-    "explanation": "Indicate a situation or event revolving around a particular noun; 'concerning', 'regarding', 'pertaining to'."
+    "explanation": "Indicate a situation or event revolving around a particular noun; 'concerning', 'regarding', 'pertaining to'.",
+    "prefixFurigana": "{環境|かんきょう}",
+    "segmentsFurigana": [
+      "{問題|もんだい}をめぐる",
+      "{国際|こくさい}",
+      "{会議|かいぎ}が",
+      "{開|ひら}か"
+    ],
+    "suffixFurigana": "れます。"
   },
   {
     "id": "star-n2-25",
@@ -4415,12 +6170,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "あります。",
     "fullSentence": "そのデータをもとに、私たちは最善の行動を判断する必要があります。",
-    "furigana": "そのデータをもとに、私たちは最善の行動を判断する必要があります。",
+    "furigana": "そのデータをもとに、{私|わたし}たちは{最善|さいぜん}の{行動|こうどう}を{判断|はんだん}する{必要|ひつよう}があります。",
     "romaji": "Sono dēta o moto ni, watashitachi wa saizen no koudou o handan suru hitsuyou ga arimasu.",
     "english": "Based on that data, we need to determine the best course of action.",
     "grammarId": "N2/noun-o-moto-ni",
     "grammarPoint": "Noun を もとに",
-    "explanation": "Based on; drawing from; using as a reference."
+    "explanation": "Based on; drawing from; using as a reference.",
+    "prefixFurigana": "そのデータをもとに、{私|わたし}たちは",
+    "segmentsFurigana": [
+      "{最善|さいぜん}の",
+      "{行動|こうどう}を",
+      "{判断|はんだん}する",
+      "{必要|ひつよう}が"
+    ],
+    "suffixFurigana": "あります。"
   },
   {
     "id": "star-n2-26",
@@ -4435,12 +6198,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "変更しました。",
     "fullSentence": "彼の意見をもとにして、計画を変更しました。",
-    "furigana": "彼の意見をもとにして、計画を変更しました。",
+    "furigana": "{彼|かれ}の{意見|いけん}をもとにして、{計画|けいかく}を{変更|へんこう}しました。",
     "romaji": "Kare no iken o moto ni shite, keikaku o henkō shimashita.",
     "english": "Based on his opinion, we changed the plan.",
     "grammarId": "N2/noun-wo-moto-ni-shite",
     "grammarPoint": "Noun を もとにして",
-    "explanation": "Based on; using; utilizing."
+    "explanation": "Based on; using; utilizing.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}の",
+      "{意見|いけん}をもと",
+      "にして、",
+      "{計画|けいかく}を"
+    ],
+    "suffixFurigana": "{変更|へんこう}しました。"
   },
   {
     "id": "star-n2-27",
@@ -4455,12 +6226,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "辞めました。",
     "fullSentence": "山田さんは誰にも話すことなく会社を辞めました。",
-    "furigana": "山田さんは誰にも話すことなく会社を辞めました。",
+    "furigana": "{山田|やまだ}さんは{誰|だれ}にも{話|はな}すことなく{会社|かいしゃ}を{辞|や}めました。",
     "romaji": "Yamada-san wa dare ni mo hanasu koto naku kaisha o yamemashita.",
     "english": "Mr. Yamada quit his job without telling anyone.",
     "grammarId": "N2/kotonaku",
     "grammarPoint": "Verb ことなく",
-    "explanation": "Means 'without doing', 'not doing', or 'without happening'."
+    "explanation": "Means 'without doing', 'not doing', or 'without happening'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{山田|やまだ}さんは",
+      "{誰|だれ}にも",
+      "{話|はな}すことなく",
+      "{会社|かいしゃ}を"
+    ],
+    "suffixFurigana": "{辞|や}めました。"
   },
   {
     "id": "star-n2-28",
@@ -4475,12 +6254,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "解決できない。",
     "fullSentence": "この問題によく考えないことには、解決できない。",
-    "furigana": "この問題によく考えないことには、解決できない。",
+    "furigana": "この{問題|もんだい}によく{考|かんが}えないことには、{解決|かいけつ}できない。",
     "romaji": "Kono mondai ni yoku kangaenai koto ni wa, kaiketsu dekinai.",
     "english": "You can’t solve this problem without giving it some thought.",
     "grammarId": "N2/nai-koto-ni-wa-nai",
     "grammarPoint": "Verb ないことには Verb ない",
-    "explanation": "Express that something cannot be done without meeting a certain condition."
+    "explanation": "Express that something cannot be done without meeting a certain condition.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "{問題|もんだい}に",
+      "よく",
+      "{考|かんが}えないことには、"
+    ],
+    "suffixFurigana": "{解決|かいけつ}できない。"
   },
   {
     "id": "star-n2-29",
@@ -4495,12 +6282,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "来なかった。",
     "fullSentence": "長い時間待ったあげく、電車が来なかった。",
-    "furigana": "長い時間待ったあげく、電車が来なかった。",
+    "furigana": "{長|なが}い{時間|じかん}{待|ま}ったあげく、{電車|でんしゃ}が{来|こ}なかった。",
     "romaji": "Nagai jikan matta ageku, densha ga konakatta.",
     "english": "After waiting for a long time, the train never came.",
     "grammarId": "N2/ageku",
     "grammarPoint": "～あげく",
-    "explanation": "Expresses the outcome of a series of actions or events; 'in the end', 'finally', 'after'."
+    "explanation": "Expresses the outcome of a series of actions or events; 'in the end', 'finally', 'after'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{長|なが}い",
+      "{時間|じかん}",
+      "{待|ま}ったあげく、",
+      "{電車|でんしゃ}が"
+    ],
+    "suffixFurigana": "{来|こ}なかった。"
   },
   {
     "id": "star-n2-30",
@@ -4515,12 +6310,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "続けました。",
     "fullSentence": "昨日は疲れすぎたあまり、朝まで眠り続けました。",
-    "furigana": "昨日は疲れすぎたあまり、朝まで眠り続けました。",
+    "furigana": "{昨日|きのう}は{疲|つか}れすぎたあまり、{朝|あさ}まで{眠|ねむ}り{続|つづ}けました。",
     "romaji": "Kinō wa tsukare-sugita amari, asa made nemuri tsuzukemashita.",
     "english": "I was so exhausted yesterday that I slept straight through until morning.",
     "grammarId": "N2/amari",
     "grammarPoint": "～あまり",
-    "explanation": "Expresses the result of doing something excessively or beyond a certain point."
+    "explanation": "Expresses the result of doing something excessively or beyond a certain point.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{昨日|きのう}は",
+      "{疲|つか}れすぎたあまり、",
+      "{朝|あさ}まで",
+      "{眠|ねむ}り"
+    ],
+    "suffixFurigana": "{続|つづ}けました。"
   },
   {
     "id": "star-n2-31",
@@ -4535,12 +6338,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "楽しんでください。",
     "fullSentence": "元気なうちに、旅行を楽しんでください。",
-    "furigana": "元気なうちに、旅行を楽しんでください。",
+    "furigana": "{元気|げんき}なうちに、{旅行|りょこう}を{楽|たの}しんでください。",
     "romaji": "Genki na uchi ni, ryokō o tanoshinde kudasai.",
     "english": "Enjoy traveling while you’re still healthy.",
     "grammarId": "N2/uchi-ni",
     "grammarPoint": "～うちに",
-    "explanation": "Expresses doing something while a certain condition still holds; 'while', 'before', 'as long as'."
+    "explanation": "Expresses doing something while a certain condition still holds; 'while', 'before', 'as long as'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{元気|げんき}",
+      "な",
+      "うちに、",
+      "{旅行|りょこう}を"
+    ],
+    "suffixFurigana": "{楽|たの}しんでください。"
   },
   {
     "id": "star-n2-32",
@@ -4555,12 +6366,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "仕事だ。",
     "fullSentence": "長い時間をかけがいのある仕事だ。",
-    "furigana": "長い時間をかけがいのある仕事だ。",
+    "furigana": "{長|なが}い{時間|じかん}をかけがいのある{仕事|しごと}だ。",
     "romaji": "Nagai jikan o kake-gai no aru shigoto da.",
     "english": "It is work that makes the time spent worthwhile.",
     "grammarId": "N2/gai",
     "grammarPoint": "～がい",
-    "explanation": "Expresses 'worth doing' for verbs."
+    "explanation": "Expresses 'worth doing' for verbs.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{長|なが}い",
+      "{時間|じかん}を",
+      "かけがいの",
+      "ある"
+    ],
+    "suffixFurigana": "{仕事|しごと}だ。"
   },
   {
     "id": "star-n2-33",
@@ -4575,12 +6394,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "合格しました。",
     "fullSentence": "毎日勉強したかいがあって、テストに合格しました。",
-    "furigana": "毎日勉強したかいがあって、テストに合格しました。",
+    "furigana": "{毎日|まいにち}{勉強|べんきょう}したかいがあって、テストに{合格|ごうかく}しました。",
     "romaji": "Mainichi benkyō shita kai ga atte, tesuto ni gōkaku shimashita.",
     "english": "My daily studying paid off, and I passed the test.",
     "grammarId": "N2/kaiga-atte",
     "grammarPoint": "～かいがあって",
-    "explanation": "Used to express that an effort is worth it or has value; 'to be worth the effort' or 'to pay off'."
+    "explanation": "Used to express that an effort is worth it or has value; 'to be worth the effort' or 'to pay off'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{毎日|まいにち}",
+      "{勉強|べんきょう}したかいが",
+      "あって、",
+      "テストに"
+    ],
+    "suffixFurigana": "{合格|ごうかく}しました。"
   },
   {
     "id": "star-n2-34",
@@ -4595,12 +6422,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "失敗してしまった。",
     "fullSentence": "長い間苦労したかいもなく、失敗してしまった。",
-    "furigana": "長い間苦労したかいもなく、失敗してしまった。",
+    "furigana": "{長|なが}い{間|ま}{苦労|くろう}したかいもなく、{失敗|しっぱい}してしまった。",
     "romaji": "Nagai aida kurō shita kai mo naku, shippai shite shimatta.",
     "english": "All my hard work over a long period of time was for nothing; I ended up failing.",
     "grammarId": "N2/kai-mo-naku",
     "grammarPoint": "～かいもなく",
-    "explanation": "Expresses the meaning of 'without worth', 'in vain', 'fruitless'."
+    "explanation": "Expresses the meaning of 'without worth', 'in vain', 'fruitless'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{長|なが}い",
+      "{間|ま}",
+      "{苦労|くろう}したかいも",
+      "なく、"
+    ],
+    "suffixFurigana": "{失敗|しっぱい}してしまった。"
   },
   {
     "id": "star-n2-35",
@@ -4615,12 +6450,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "出かけた。",
     "fullSentence": "彼女は食べかけのリンゴを置いて出かけた。",
-    "furigana": "彼女は食べかけのリンゴを置いて出かけた。",
+    "furigana": "{彼女|かのじょ}は{食|た}べかけのリンゴを{置|お}いて{出|で}かけた。",
     "romaji": "Kanojo wa tabe-kake no ringo o oite dekaketa.",
     "english": "She put down the apple she had been eating and went out.",
     "grammarId": "N2/kakeru",
     "grammarPoint": "～かける",
-    "explanation": "Indicates a process or action is 'in progress' or 'halfway'."
+    "explanation": "Indicates a process or action is 'in progress' or 'halfway'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼女|かのじょ}は",
+      "{食|た}べかけの",
+      "リンゴを",
+      "{置|お}いて"
+    ],
+    "suffixFurigana": "{出|で}かけた。"
   },
   {
     "id": "star-n2-36",
@@ -4635,12 +6478,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "起きないといけません。",
     "fullSentence": "私は遅刻しがちなので、もっと早く起きないといけません。",
-    "furigana": "私は遅刻しがちなので、もっと早く起きないといけません。",
+    "furigana": "{私|わたし}は{遅刻|ちこく}しがちなので、もっと{早|はや}く{起|お}きないといけません。",
     "romaji": "Watashi wa chikoku shi-gachi na no de, motto hayaku okinai to ikemasen.",
     "english": "I tend to be late, so I need to wake up earlier.",
     "grammarId": "N2/gachi",
     "grammarPoint": "～がち",
-    "explanation": "Expresses that something tends to occur frequently or habitually."
+    "explanation": "Expresses that something tends to occur frequently or habitually.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{私|わたし}は",
+      "{遅刻|ちこく}しがちなので、",
+      "もっと",
+      "{早|はや}く"
+    ],
+    "suffixFurigana": "{起|お}きないといけません。"
   },
   {
     "id": "star-n2-37",
@@ -4655,12 +6506,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "出した。",
     "fullSentence": "駅に着くか着かないかのうちに、雨が降り出した。",
-    "furigana": "駅に着くか着かないかのうちに、雨が降り出した。",
+    "furigana": "{駅|えき}に{着|つ}くか{着|ちゃく}かないかのうちに、{雨|あめ}が{降|ふ}り{出|だ}した。",
     "romaji": "Eki ni tsuku ka tsukanai ka no uchi ni, ame ga furidashita.",
     "english": "It started raining just as I was about to arrive at the station.",
     "grammarId": "N2/ka-naika-no-uchi-ni",
     "grammarPoint": "～か～ないかのうちに",
-    "explanation": "Expresses an action that occurs immediately after another action; 'as soon as', 'no sooner than', 'the moment'."
+    "explanation": "Expresses an action that occurs immediately after another action; 'as soon as', 'no sooner than', 'the moment'.",
+    "prefixFurigana": "{駅|えき}に{着|つ}くか{着|ちゃく}か",
+    "segmentsFurigana": [
+      "ないかの",
+      "うちに、",
+      "{雨|あめ}が",
+      "{降|ふ}り"
+    ],
+    "suffixFurigana": "{出|だ}した。"
   },
   {
     "id": "star-n2-38",
@@ -4675,12 +6534,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "破りかねない。",
     "fullSentence": "彼はあまりにも無責任で、約束を破りかねない。",
-    "furigana": "彼はあまりにも無責任で、約束を破りかねない。",
+    "furigana": "{彼|かれ}はあまりにも{無責任|むせきにん}で、{約束|やくそく}を{破|やぶ}りかねない。",
     "romaji": "Kare wa amarini mo musekinin de, yakusoku o yaburi-kane nai.",
     "english": "He is so irresponsible that he might break his promise.",
     "grammarId": "N2/kane-nai",
     "grammarPoint": "～かねない",
-    "explanation": "Express the likelihood of a negative outcome or consequence."
+    "explanation": "Express the likelihood of a negative outcome or consequence.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}は",
+      "あまりにも",
+      "{無責任|むせきにん}で、",
+      "{約束|やくそく}を"
+    ],
+    "suffixFurigana": "{破|やぶ}りかねない。"
   },
   {
     "id": "star-n2-39",
@@ -4695,12 +6562,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "解決しかねます。",
     "fullSentence": "その問題は難しいので、私には解決しかねます。",
-    "furigana": "その問題は難しいので、私には解決しかねます。",
+    "furigana": "その{問題|もんだい}は{難|むずか}しいので、{私|わたし}には{解決|かいけつ}しかねます。",
     "romaji": "Sono mondai wa muzukashii no de, watashi ni wa kaiketsu shi-kanemasu.",
     "english": "That problem is difficult, so I’m afraid I can’t solve it.",
     "grammarId": "N2/kaneru",
     "grammarPoint": "～かねる",
-    "explanation": "Express inability or impossibility of doing an action (often as a polite refusal)."
+    "explanation": "Express inability or impossibility of doing an action (often as a polite refusal).",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "その",
+      "{問題|もんだい}は",
+      "{難|むずか}しいので、",
+      "{私|わたし}には"
+    ],
+    "suffixFurigana": "{解決|かいけつ}しかねます。"
   },
   {
     "id": "star-n2-40",
@@ -4715,12 +6590,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "決めていない。",
     "fullSentence": "このプロジェクトを引き受けようか引き受けまいか、まだ決めていない。",
-    "furigana": "このプロジェクトを引き受けようか引き受けまいか、まだ決めていない。",
+    "furigana": "このプロジェクトを{引き受|ひきう}けようか{引き受|ひきう}けまいか、まだ{決|き}めていない。",
     "romaji": "Kono purojekuto o hikiukeyou ka hikiukemai ka, mada kimete inai.",
     "english": "I haven’t decided yet whether or not to take on this project.",
     "grammarId": "N2/ka-maika",
     "grammarPoint": "～か～まいか",
-    "explanation": "Used to express a dilemma or indecision between two options or actions."
+    "explanation": "Used to express a dilemma or indecision between two options or actions.",
+    "prefixFurigana": "この",
+    "segmentsFurigana": [
+      "プロジェクトを",
+      "{引き受|ひきう}けようか",
+      "{引き受|ひきう}けまいか、",
+      "まだ"
+    ],
+    "suffixFurigana": "{決|き}めていない。"
   },
   {
     "id": "star-n2-41",
@@ -4735,12 +6618,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "わかる。",
     "fullSentence": "失敗したからこそ、成功の意味がわかる。",
-    "furigana": "失敗したからこそ、成功の意味がわかる。",
+    "furigana": "{失敗|しっぱい}したからこそ、{成功|せいこう}の{意味|いみ}がわかる。",
     "romaji": "Shippai shita kara koso, seikou no imi ga wakaru.",
     "english": "It is precisely because I failed that I understand the meaning of success.",
     "grammarId": "N2/kara-koso",
     "grammarPoint": "～からこそ",
-    "explanation": "Express the emphasis on the reason; 'precisely because', 'it is precisely because'."
+    "explanation": "Express the emphasis on the reason; 'precisely because', 'it is precisely because'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{失敗|しっぱい}したから",
+      "こそ、",
+      "{成功|せいこう}の",
+      "{意味|いみ}が"
+    ],
+    "suffixFurigana": "わかる。"
   },
   {
     "id": "star-n2-42",
@@ -4755,12 +6646,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "だろう。",
     "fullSentence": "彼の顔つきからして、何か悪いことがあったのだろう。",
-    "furigana": "彼の顔つきからして、何か悪いことがあったのだろう。",
+    "furigana": "{彼|かれ}の{顔|かお}つきからして、{何|なに}か{悪|わる}いことがあったのだろう。",
     "romaji": "Kare no kaotsuki kara shite, nanika warui koto ga atta no darou.",
     "english": "Judging by the look on his face, something bad must have happened.",
     "grammarId": "N2/kara-shite",
     "grammarPoint": "〜からして",
-    "explanation": "Expresses that something is exceptional, unusual, or negative based on a particular aspect or point."
+    "explanation": "Expresses that something is exceptional, unusual, or negative based on a particular aspect or point.",
+    "prefixFurigana": "{彼|かれ}の{顔|かお}つきから",
+    "segmentsFurigana": [
+      "して、",
+      "{何|なに}か",
+      "{悪|わる}いことが",
+      "あったの"
+    ],
+    "suffixFurigana": "だろう。"
   },
   {
     "id": "star-n2-43",
@@ -4775,12 +6674,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "しょう。",
     "fullSentence": "経験からすると、この仕事は難しいでしょう。",
-    "furigana": "経験からすると、この仕事は難しいでしょう。",
+    "furigana": "{経験|けいけん}からすると、この{仕事|しごと}は{難|むずか}しいでしょう。",
     "romaji": "Keiken kara suru to, kono shigoto wa muzukashii deshou.",
     "english": "Based on my experience, this job will probably be difficult.",
     "grammarId": "N2/kara-suru-to",
     "grammarPoint": "～からすると",
-    "explanation": "Expresses a judgment or evaluation based on a certain standard; 'from this perspective', 'considering', 'judging from'."
+    "explanation": "Expresses a judgment or evaluation based on a certain standard; 'from this perspective', 'considering', 'judging from'.",
+    "prefixFurigana": "{経験|けいけん}から",
+    "segmentsFurigana": [
+      "すると、",
+      "この",
+      "{仕事|しごと}は",
+      "{難|むずか}しいで"
+    ],
+    "suffixFurigana": "しょう。"
   },
   {
     "id": "star-n2-44",
@@ -4795,12 +6702,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ありません。",
     "fullSentence": "雨が降ったからといって、試合が中止になるわけではありません。",
-    "furigana": "雨が降ったからといって、試合が中止になるわけではありません。",
+    "furigana": "{雨|あめ}が{降|ふ}ったからといって、{試合|しあい}が{中止|ちゅうし}になるわけではありません。",
     "romaji": "Ame ga futta kara to itte, shiai ga chuushi ni naru wake de wa arimasen.",
     "english": "Just because it rained doesn’t mean the game will be canceled.",
     "grammarId": "N2/kara-to-itte",
     "grammarPoint": "～からといって",
-    "explanation": "Expresses 'just because...doesn't mean' or 'even though...not necessarily'."
+    "explanation": "Expresses 'just because...doesn't mean' or 'even though...not necessarily'.",
+    "prefixFurigana": "{雨|あめ}が{降|ふ}ったから",
+    "segmentsFurigana": [
+      "といって、",
+      "{試合|しあい}が",
+      "{中止|ちゅうし}に",
+      "なるわけでは"
+    ],
+    "suffixFurigana": "ありません。"
   },
   {
     "id": "star-n2-45",
@@ -4815,12 +6730,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "しています。",
     "fullSentence": "午前９時から午後５時にかけて、仕事をしています。",
-    "furigana": "午前９時から午後５時にかけて、仕事をしています。",
+    "furigana": "{午前|ごぜん}９{時|じ}から{午後|ごご}５{時|とき}にかけて、{仕事|しごと}をしています。",
     "romaji": "Gozen ku-ji kara gogo go-ji ni kakete, shigoto wo shite imasu.",
     "english": "I work from 9:00 a.m. to 5:00 p.m.",
     "grammarId": "N2/kara-ni-kakete",
     "grammarPoint": "～から～にかけて",
-    "explanation": "Expresses a range of time, space, or quantities; 'from...to', 'between...and', 'over'."
+    "explanation": "Expresses a range of time, space, or quantities; 'from...to', 'between...and', 'over'.",
+    "prefixFurigana": "{午前|ごぜん}９{時|じ}から",
+    "segmentsFurigana": [
+      "{午後|ごご}",
+      "５",
+      "{時|とき}にかけて、",
+      "{仕事|しごと}を"
+    ],
+    "suffixFurigana": "しています。"
   },
   {
     "id": "star-n2-46",
@@ -4835,12 +6758,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "見せたい。",
     "fullSentence": "この映画が面白いからには、友達にも見せたい。",
-    "furigana": "この映画が面白いからには、友達にも見せたい。",
+    "furigana": "この{映画|えいが}が{面白|おもしろ}いからには、{友達|ともだち}にも{見|み}せたい。",
     "romaji": "Kono eiga ga omoshiroi kara niwa, tomodachi ni mo misetai.",
     "english": "Since this movie is so interesting, I want to show it to my friends.",
     "grammarId": "N2/kara-niwa",
     "grammarPoint": "～からには",
-    "explanation": "Express a sense of responsibility or determination; 'since', 'now that', 'if'."
+    "explanation": "Express a sense of responsibility or determination; 'since', 'now that', 'if'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "{映画|えいが}が",
+      "{面白|おもしろ}いからには、",
+      "{友達|ともだち}にも"
+    ],
+    "suffixFurigana": "{見|み}せたい。"
   },
   {
     "id": "star-n2-47",
@@ -4855,12 +6786,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "得です。",
     "fullSentence": "費用から見ると、このプランはお得です。",
-    "furigana": "費用から見ると、このプランはお得です。",
+    "furigana": "{費用|ひよう}から{見|み}ると、このプランはお{得|とく}です。",
     "romaji": "Hiyou kara miru to, kono puran wa otoku desu.",
     "english": "From a cost perspective, this plan is a good deal.",
     "grammarId": "N2/kara-miru-to",
     "grammarPoint": "～から見ると",
-    "explanation": "Express a perspective or point of view; 'from the standpoint of', 'in terms of', 'from the perspective of'."
+    "explanation": "Express a perspective or point of view; 'from the standpoint of', 'in terms of', 'from the perspective of'.",
+    "prefixFurigana": "{費用|ひよう}から",
+    "segmentsFurigana": [
+      "{見|み}ると、",
+      "この",
+      "プランは",
+      "お"
+    ],
+    "suffixFurigana": "{得|とく}です。"
   },
   {
     "id": "star-n2-48",
@@ -4875,12 +6814,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "得です。",
     "fullSentence": "値段から言うと、この商品が最もお得です。",
-    "furigana": "値段から言うと、この商品が最もお得です。",
+    "furigana": "{値段|ねだん}から{言|い}うと、この{商品|しょうひん}が{最|もっと}もお{得|とく}です。",
     "romaji": "Nedan kara iuto, kono shouhin ga mottomo otoku desu.",
     "english": "In terms of price, this product offers the best value.",
     "grammarId": "N2/kara-iuto",
     "grammarPoint": "～から言うと",
-    "explanation": "Express a judgment or opinion based on a specific criterion; 'speaking from', 'in terms of', 'from the viewpoint of'."
+    "explanation": "Express a judgment or opinion based on a specific criterion; 'speaking from', 'in terms of', 'from the viewpoint of'.",
+    "prefixFurigana": "{値段|ねだん}から",
+    "segmentsFurigana": [
+      "{言|い}うと、",
+      "この",
+      "{商品|しょうひん}が",
+      "{最|もっと}もお"
+    ],
+    "suffixFurigana": "{得|とく}です。"
   },
   {
     "id": "star-n2-49",
@@ -4895,12 +6842,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "嫌いだ。",
     "fullSentence": "彼はいつも遅刻してくるくせに、自分が待たされるのが嫌いだ。",
-    "furigana": "彼はいつも遅刻してくるくせに、自分が待たされるのが嫌いだ。",
+    "furigana": "{彼|かれ}はいつも{遅刻|ちこく}してくるくせに、{自分|じぶん}が{待|ま}たされるのが{嫌|きら}いだ。",
     "romaji": "Kare wa itsumo chikoku shite kuru kuse ni, jibun ga matasareru no ga kirai da.",
     "english": "Even though he’s always late, he hates being kept waiting.",
     "grammarId": "N2/kuse-ni",
     "grammarPoint": "～くせに",
-    "explanation": "Used to criticize someone for doing something contrary to what one would expect from their nature or situation."
+    "explanation": "Used to criticize someone for doing something contrary to what one would expect from their nature or situation.",
+    "prefixFurigana": "{彼|かれ}は",
+    "segmentsFurigana": [
+      "いつも",
+      "{遅刻|ちこく}してくるくせに、",
+      "{自分|じぶん}が",
+      "{待|ま}たされるのが"
+    ],
+    "suffixFurigana": "{嫌|きら}いだ。"
   },
   {
     "id": "star-n2-50",
@@ -4915,12 +6870,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "丈夫です。",
     "fullSentence": "彼は毎日運動することから、体が丈夫です。",
-    "furigana": "彼は毎日運動することから、体が丈夫です。",
+    "furigana": "{彼|かれ}は{毎日|まいにち}{運動|うんどう}することから、{体|からだ}が{丈夫|じょうぶ}です。",
     "romaji": "Kare wa mainichi undou suru koto kara, karada ga joubu desu.",
     "english": "Because he exercises every day, he is in good physical shape.",
     "grammarId": "N2/koto-kara",
     "grammarPoint": "～ことから",
-    "explanation": "Indicates the reason or basis for something; 'because', 'since', 'due to'."
+    "explanation": "Indicates the reason or basis for something; 'because', 'since', 'due to'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}は",
+      "{毎日|まいにち}",
+      "{運動|うんどう}することから、",
+      "{体|からだ}が"
+    ],
+    "suffixFurigana": "{丈夫|じょうぶ}です。"
   },
   {
     "id": "star-n2-51",
@@ -4935,12 +6898,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "立つ。",
     "fullSentence": "彼がいつも遅刻することに腹が立つ。",
-    "furigana": "彼がいつも遅刻することに腹が立つ。",
+    "furigana": "{彼|かれ}がいつも{遅刻|ちこく}することに{腹|はら}が{立|た}つ。",
     "romaji": "Kare ga itsumo chikoku suru koto ni hara ga tatsu.",
     "english": "It annoys me that he’s always late.",
     "grammarId": "N2/koto-ni",
     "grammarPoint": "～ことに",
-    "explanation": "Used to express feelings or emotions about a situation, action, or outcome."
+    "explanation": "Used to express feelings or emotions about a situation, action, or outcome.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}が",
+      "いつも",
+      "{遅刻|ちこく}することに",
+      "{腹|はら}が"
+    ],
+    "suffixFurigana": "{立|た}つ。"
   },
   {
     "id": "star-n2-52",
@@ -4955,12 +6926,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "いる。",
     "fullSentence": "会社の規則では、制服を着ることになっている。",
-    "furigana": "会社の規則では、制服を着ることになっている。",
+    "furigana": "{会社|かいしゃ}の{規則|きそく}では、{制服|せいふく}を{着|き}ることになっている。",
     "romaji": "Kaisha no kisoku de wa, seifuku o kiru koto ni natte iru.",
     "english": "Company policy requires employees to wear uniforms.",
     "grammarId": "N2/koto-ni-natte-iru",
     "grammarPoint": "～ことになっている",
-    "explanation": "Expresses that something is supposed to be or has been decided (rule, plan, custom)."
+    "explanation": "Expresses that something is supposed to be or has been decided (rule, plan, custom).",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{会社|かいしゃ}の",
+      "{規則|きそく}では、",
+      "{制服|せいふく}を",
+      "{着|き}ることになって"
+    ],
+    "suffixFurigana": "いる。"
   },
   {
     "id": "star-n2-53",
@@ -4975,12 +6954,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "行きます。",
     "fullSentence": "交通費さえ支払ってもらえれば、どこへでも行きます。",
-    "furigana": "交通費さえ支払ってもらえれば、どこへでも行きます。",
+    "furigana": "{交通|こうつう}{費|ついや}さえ{支払|しはら}ってもらえれば、どこへでも{行|い}きます。",
     "romaji": "Koutsuuhi sae shiharatte moraereba, doko e demo ikimasu.",
     "english": "As long as my travel expenses are covered, I’ll go anywhere.",
     "grammarId": "N2/sae-ba",
     "grammarPoint": "～さえ～ば",
-    "explanation": "Expresses that, as long as a certain condition is met, something else will follow; 'if only', 'provided that'."
+    "explanation": "Expresses that, as long as a certain condition is met, something else will follow; 'if only', 'provided that'.",
+    "prefixFurigana": "{交通|こうつう}",
+    "segmentsFurigana": [
+      "{費|ついや}さえ",
+      "{支払|しはら}っても",
+      "らえれば、",
+      "どこへでも"
+    ],
+    "suffixFurigana": "{行|い}きます。"
   },
   {
     "id": "star-n2-54",
@@ -4995,12 +6982,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "得ない。",
     "fullSentence": "この仕事は締め切りが近いので、残業せざるを得ない。",
-    "furigana": "この仕事は締め切りが近いので、残業せざるを得ない。",
+    "furigana": "この{仕事|しごと}は{締め切|しめき}りが{近|ちか}いので、{残業|ざんぎょう}せざるを{得|え}ない。",
     "romaji": "Kono shigoto wa shimekiri ga chikai no de, zangyou sezaru wo enai.",
     "english": "The deadline for this project is approaching, so I have no choice but to work overtime.",
     "grammarId": "N2/zaru-wo-enai",
     "grammarPoint": "～ざるを得ない",
-    "explanation": "Have no choice but to; cannot help but."
+    "explanation": "Have no choice but to; cannot help but.",
+    "prefixFurigana": "この",
+    "segmentsFurigana": [
+      "{仕事|しごと}は",
+      "{締め切|しめき}りが",
+      "{近|ちか}いので、",
+      "{残業|ざんぎょう}せざるを"
+    ],
+    "suffixFurigana": "{得|え}ない。"
   },
   {
     "id": "star-n2-55",
@@ -5015,12 +7010,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "はいられない。",
     "fullSentence": "この曲を聞くと、歌わずにはいられない。",
-    "furigana": "この曲を聞くと、歌わずにはいられない。",
+    "furigana": "この{曲|きょく}を{聞|き}くと、{歌|うた}わずにはいられない。",
     "romaji": "Kono kyoku o kiku to, utawazu ni wa irarenai.",
     "english": "When I hear this song, I can’t help but sing along.",
     "grammarId": "N2/zu-ni-wa-irarenai",
     "grammarPoint": "～ずにはいられない",
-    "explanation": "Cannot help but; cannot resist doing; an irresistible urge."
+    "explanation": "Cannot help but; cannot resist doing; an irresistible urge.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "{曲|きょく}を",
+      "{聞|き}くと、",
+      "{歌|うた}わずに"
+    ],
+    "suffixFurigana": "はいられない。"
   },
   {
     "id": "star-n2-56",
@@ -5035,12 +7038,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "出た。",
     "fullSentence": "電話をかけたかと思ったら、すぐに彼女が出た。",
-    "furigana": "電話をかけたかと思ったら、すぐに彼女が出た。",
+    "furigana": "{電話|でんわ}をかけたかと{思|おも}ったら、すぐに{彼女|かのじょ}が{出|で}た。",
     "romaji": "Denwa o kaketa ka to omottara, sugu ni kanojo ga deta.",
     "english": "No sooner had I made the call than she answered right away.",
     "grammarId": "N2/ta-ka-to-omottara",
     "grammarPoint": "～たかと思ったら",
-    "explanation": "Express a sequence of events happening in quick succession; 'as soon as', 'no sooner than'."
+    "explanation": "Express a sequence of events happening in quick succession; 'as soon as', 'no sooner than'.",
+    "prefixFurigana": "{電話|でんわ}を",
+    "segmentsFurigana": [
+      "かけたかと",
+      "{思|おも}ったら、",
+      "すぐに",
+      "{彼女|かのじょ}が"
+    ],
+    "suffixFurigana": "{出|で}た。"
   },
   {
     "id": "star-n2-57",
@@ -5055,12 +7066,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ない。",
     "fullSentence": "彼は会社を辞めたきり、連絡がない。",
-    "furigana": "彼は会社を辞めたきり、連絡がない。",
+    "furigana": "{彼|かれ}は{会社|かいしゃ}を{辞|や}めたきり、{連絡|れんらく}がない。",
     "romaji": "Kare wa kaisha o yameta kiri, renraku ga nai.",
     "english": "He hasn’t been in touch since he quit his job.",
     "grammarId": "N2/takiri",
     "grammarPoint": "～たきり",
-    "explanation": "Express 'since then' or 'after'; used to indicate that an action occurred once and has not been repeated or that a state has continued since a certain event or time."
+    "explanation": "Express 'since then' or 'after'; used to indicate that an action occurred once and has not been repeated or that a state has continued since a certain event or time.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}は",
+      "{会社|かいしゃ}を",
+      "{辞|や}めたきり、",
+      "{連絡|れんらく}が"
+    ],
+    "suffixFurigana": "ない。"
   },
   {
     "id": "star-n2-58",
@@ -5075,12 +7094,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "できる。",
     "fullSentence": "彼は日本語が上手だけあって、日本人のように話すことができる。",
-    "furigana": "彼は日本語が上手だけあって、日本人のように話すことができる。",
+    "furigana": "{彼|かれ}は{日本語|にほんご}が{上手|じょうず}だけあって、{日本人|にっぽんじん}のように{話|はな}すことができる。",
     "romaji": "Kare wa nihongo ga jōzu dake atte, nihonjin no yō ni hanasu koto ga dekiru.",
     "english": "As you’d expect from someone who’s so good at Japanese, he can speak just like a native Japanese speaker.",
     "grammarId": "N2/dake-atte",
     "grammarPoint": "～だけあって",
-    "explanation": "Expresses that something is as expected or deserves its reputation."
+    "explanation": "Expresses that something is as expected or deserves its reputation.",
+    "prefixFurigana": "{彼|かれ}は{日本語|にほんご}が{上手|じょうず}だけ",
+    "segmentsFurigana": [
+      "あって、",
+      "{日本人|にっぽんじん}の",
+      "ように",
+      "{話|はな}すことが"
+    ],
+    "suffixFurigana": "できる。"
   },
   {
     "id": "star-n2-59",
@@ -5095,12 +7122,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "なりました。",
     "fullSentence": "掃除したところ、部屋がずっとキレイになりました。",
-    "furigana": "掃除したところ、部屋がずっとキレイになりました。",
+    "furigana": "{掃除|そうじ}したところ、{部屋|へや}がずっとキレイになりました。",
     "romaji": "Sōji shita tokoro, heya ga zutto kirei ni narimashita.",
     "english": "After I cleaned, the room became much cleaner.",
     "grammarId": "N2/ta-tokoro",
     "grammarPoint": "～たところ",
-    "explanation": "Used to describe an action that has just been completed, often followed by a result or observation."
+    "explanation": "Used to describe an action that has just been completed, often followed by a result or observation.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{掃除|そうじ}したところ、",
+      "{部屋|へや}が",
+      "ずっと",
+      "キレイに"
+    ],
+    "suffixFurigana": "なりました。"
   },
   {
     "id": "star-n2-60",
@@ -5115,12 +7150,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "始めた。",
     "fullSentence": "ドアを開けたとたん、雨が降り始めた。",
-    "furigana": "ドアを開けたとたん、雨が降り始めた。",
+    "furigana": "ドアを{開|あ}けたとたん、{雨|あめ}が{降|ふ}り{始|はじ}めた。",
     "romaji": "Doa o aketa totan, ame ga furi-hajimeta.",
     "english": "The moment I opened the door, it started to rain.",
     "grammarId": "N2/ta-totan",
     "grammarPoint": "～たとたん",
-    "explanation": "Express the moment something happens; 'as soon as', 'just when'."
+    "explanation": "Express the moment something happens; 'as soon as', 'just when'.",
+    "prefixFurigana": "ドアを",
+    "segmentsFurigana": [
+      "{開|あ}けたと",
+      "たん、",
+      "{雨|あめ}が",
+      "{降|ふ}り"
+    ],
+    "suffixFurigana": "{始|はじ}めた。"
   },
   {
     "id": "star-n2-61",
@@ -5135,12 +7178,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "乾かします。",
     "fullSentence": "泥だらけの靴を家の外で乾かします。",
-    "furigana": "泥だらけの靴を家の外で乾かします。",
+    "furigana": "{泥|どろ}だらけの{靴|くつ}を{家|いえ}の{外|そと}で{乾|かわ}かします。",
     "romaji": "Dorodarake no kutsu o ie no soto de kawakasu",
     "english": "I’ll let my muddy shoes dry outside the house.",
     "grammarId": "N2/darake",
     "grammarPoint": "～だらけ",
-    "explanation": "Indicates that something is full of or covered with a certain (usually negative) characteristic."
+    "explanation": "Indicates that something is full of or covered with a certain (usually negative) characteristic.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{泥|どろ}だらけの",
+      "{靴|くつ}を",
+      "{家|いえ}の",
+      "{外|そと}で"
+    ],
+    "suffixFurigana": "{乾|かわ}かします。"
   },
   {
     "id": "star-n2-62",
@@ -5155,12 +7206,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "合いっこない。",
     "fullSentence": "こんなに雪が降っているんだから、学校に間に合いっこない。",
-    "furigana": "こんなに雪が降っているんだから、学校に間に合いっこない。",
+    "furigana": "こんなに{雪|ゆき}が{降|ふ}っているんだから、{学校|がっこう}に{間|ま}に{合|ごう}いっこない。",
     "romaji": "Konna ni yuki ga futteirun dakara, gakkō ni maniai kkonai.",
     "english": "It’s snowing this much, so there’s no way I’ll make it to school on time.",
     "grammarId": "N2/kkonai",
     "grammarPoint": "～っこない",
-    "explanation": "Expresses the impossibility or very low probability of something happening; 'no way', 'impossible'."
+    "explanation": "Expresses the impossibility or very low probability of something happening; 'no way', 'impossible'.",
+    "prefixFurigana": "こんなに{雪|ゆき}が",
+    "segmentsFurigana": [
+      "{降|ふ}って",
+      "いるんだから、",
+      "{学校|がっこう}に",
+      "{間|ま}に"
+    ],
+    "suffixFurigana": "{合|ごう}いっこない。"
   },
   {
     "id": "star-n2-63",
@@ -5175,12 +7234,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "していました。",
     "fullSentence": "彼はテレビを見つつ、宿題をしていました。",
-    "furigana": "彼はテレビを見つつ、宿題をしていました。",
+    "furigana": "{彼|かれ}はテレビを{見|み}つつ、{宿題|しゅくだい}をしていました。",
     "romaji": "Kare wa terebi o mitsutsu, shukudai o shite imashita.",
     "english": "He was doing his homework while watching TV.",
     "grammarId": "N2/tsutsu",
     "grammarPoint": "～つつ",
-    "explanation": "Shows two actions happening simultaneously or a contrast; 'while', 'although'."
+    "explanation": "Shows two actions happening simultaneously or a contrast; 'while', 'although'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}は",
+      "テレビを",
+      "{見|み}つつ、",
+      "{宿題|しゅくだい}を"
+    ],
+    "suffixFurigana": "していました。"
   },
   {
     "id": "star-n2-64",
@@ -5195,12 +7262,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "しまった。",
     "fullSentence": "窓を開けっぱなしにして、部屋が寒くなってしまった。",
-    "furigana": "窓を開けっぱなしにして、部屋が寒くなってしまった。",
+    "furigana": "{窓|まど}を{開|あ}けっぱなしにして、{部屋|へや}が{寒|さむ}くなってしまった。",
     "romaji": "Mado o akeppanashi ni shite, heya ga samuku natte shimatta.",
     "english": "I left the window open, and the room got cold.",
     "grammarId": "N2/ppanashi",
     "grammarPoint": "～っぱなし",
-    "explanation": "Express a continuous action or state; 'left as is', 'non-stop'."
+    "explanation": "Express a continuous action or state; 'left as is', 'non-stop'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{窓|まど}を",
+      "{開|あ}けっぱなしにして、",
+      "{部屋|へや}が",
+      "{寒|さむ}くなって"
+    ],
+    "suffixFurigana": "しまった。"
   },
   {
     "id": "star-n2-65",
@@ -5215,12 +7290,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "する。",
     "fullSentence": "この部屋は寒っぽい感じがする。",
-    "furigana": "この部屋は寒っぽい感じがする。",
+    "furigana": "この{部屋|へや}は{寒|かん}っぽい{感|かん}じがする。",
     "romaji": "Kono heya wa samuppoi kanji ga suru.",
     "english": "This room feels a bit chilly.",
     "grammarId": "N2/ppoi",
     "grammarPoint": "～っぽい",
-    "explanation": "Indicates that something has the appearance, characteristics, or behavior of something else."
+    "explanation": "Indicates that something has the appearance, characteristics, or behavior of something else.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "{部屋|へや}は",
+      "{寒|かん}っぽい",
+      "{感|かん}じが"
+    ],
+    "suffixFurigana": "する。"
   },
   {
     "id": "star-n1-1",
@@ -5235,12 +7318,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "遅れる。",
     "fullSentence": "朝早かろうが夜遅かろうが、いつもバスが遅れる。",
-    "furigana": "朝早かろうが夜遅かろうが、いつもバスが遅れる。",
+    "furigana": "{朝|あさ}{早|はや}かろうが{夜|よる}{遅|おそ}かろうが、いつもバスが{遅|おく}れる。",
     "romaji": "Asa hayakarou ga yoru osokarou ga, itsumo basu ga okureru.",
     "english": "No matter whether it's early morning or late at night, the bus is always late.",
     "grammarId": "N1/a-uga-b-uga",
     "grammarPoint": "A うが B うが",
-    "explanation": "Expresses the idea of 'no matter how... or', 'even if... or'."
+    "explanation": "Expresses the idea of 'no matter how... or', 'even if... or'.",
+    "prefixFurigana": "{朝|あさ}{早|はや}かろうが",
+    "segmentsFurigana": [
+      "{夜|よる}",
+      "{遅|おそ}かろうが、",
+      "いつも",
+      "バスが"
+    ],
+    "suffixFurigana": "{遅|おく}れる。"
   },
   {
     "id": "star-n1-2",
@@ -5255,12 +7346,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "します。",
     "fullSentence": "雨が降ろうと晴れようと、私は毎日ジョギングをします。",
-    "furigana": "雨が降ろうと晴れようと、私は毎日ジョギングをします。",
+    "furigana": "{雨|あめ}が{降|くだ}ろうと{晴|は}れようと、{私|わたし}は{毎日|まいにち}ジョギングをします。",
     "romaji": "Ame ga furou to hareyou to, watashi wa mainichi jogingu o shimasu.",
     "english": "Whether it's raining or sunny, I jog every day.",
     "grammarId": "N1/a-uto-b-uto",
     "grammarPoint": "A うと B うと",
-    "explanation": "Shows that the speaker is indifferent to both conditions; 'whether A or B'."
+    "explanation": "Shows that the speaker is indifferent to both conditions; 'whether A or B'.",
+    "prefixFurigana": "{雨|あめ}が{降|くだ}ろうと",
+    "segmentsFurigana": [
+      "{晴|は}れようと、",
+      "{私|わたし}は",
+      "{毎日|まいにち}",
+      "ジョギングを"
+    ],
+    "suffixFurigana": "します。"
   },
   {
     "id": "star-n1-3",
@@ -5275,12 +7374,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "いる。",
     "fullSentence": "彼は仕事をするかたわら、大学に通っている。",
-    "furigana": "彼は仕事をするかたわら、大学に通っている。",
+    "furigana": "{彼|かれ}は{仕事|しごと}をするかたわら、{大学|だいがく}に{通|とお}っている。",
     "romaji": "Kare wa shigoto o suru katawara, daigaku ni kayotte iru.",
     "english": "While working, he also attends university.",
     "grammarId": "N1/a-katawara-b",
     "grammarPoint": "A かたわら B",
-    "explanation": "Expresses 'while also', 'at the same time as'."
+    "explanation": "Expresses 'while also', 'at the same time as'.",
+    "prefixFurigana": "{彼|かれ}は",
+    "segmentsFurigana": [
+      "{仕事|しごと}を",
+      "するかたわら、",
+      "{大学|だいがく}に",
+      "{通|とお}って"
+    ],
+    "suffixFurigana": "いる。"
   },
   {
     "id": "star-n1-4",
@@ -5295,12 +7402,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ジョギングする。",
     "fullSentence": "冬かれ夏かれ、毎日ジョギングする。",
-    "furigana": "冬かれ夏かれ、毎日ジョギングする。",
+    "furigana": "{冬|ふゆ}かれ{夏|なつ}かれ、{毎日|まいにち}ジョギングする。",
     "romaji": "Fuyu kare natsu kare, mainichi jogingu suru.",
     "english": "Whether it's winter or summer, I jog every day.",
     "grammarId": "N1/a-kare-b-kare",
     "grammarPoint": "A かれ B かれ",
-    "explanation": "Expresses 'whether A or B'; both situations are included."
+    "explanation": "Expresses 'whether A or B'; both situations are included.",
+    "prefixFurigana": "{冬|ふゆ}か",
+    "segmentsFurigana": [
+      "れ",
+      "{夏|なつ}か",
+      "れ、",
+      "{毎日|まいにち}"
+    ],
+    "suffixFurigana": "ジョギングする。"
   },
   {
     "id": "star-n1-5",
@@ -5315,12 +7430,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "困る。",
     "fullSentence": "彼はいつも遅刻だの、仕事を忘れるだので困る。",
-    "furigana": "彼はいつも遅刻だの、仕事を忘れるだので困る。",
+    "furigana": "{彼|かれ}はいつも{遅刻|ちこく}だの、{仕事|しごと}を{忘|わす}れるだので{困|こま}る。",
     "romaji": "Kare wa itsumo chikoku dano, shigoto o wasureru dano de komaru.",
     "english": "I'm troubled because he's always late, forgets work, and so on.",
     "grammarId": "N1/a-dano-b-dano",
     "grammarPoint": "A だの B だの",
-    "explanation": "Used to list examples (often with a critical or complaining tone); 'things like A, B, etc.'."
+    "explanation": "Used to list examples (often with a critical or complaining tone); 'things like A, B, etc.'.",
+    "prefixFurigana": "{彼|かれ}は",
+    "segmentsFurigana": [
+      "いつも",
+      "{遅刻|ちこく}だの、",
+      "{仕事|しごと}を",
+      "{忘|わす}れるだので"
+    ],
+    "suffixFurigana": "{困|こま}る。"
   },
   {
     "id": "star-n1-6",
@@ -5335,12 +7458,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ならない。",
     "fullSentence": "雨であれ雪であれ、試合は中止にならない。",
-    "furigana": "雨であれ雪であれ、試合は中止にならない。",
+    "furigana": "{雨|あめ}であれ{雪|ゆき}であれ、{試合|しあい}は{中止|ちゅうし}にならない。",
     "romaji": "Ame deare yuki deare, shiai wa chuushi ni naranai.",
     "english": "Whether it's rain or snow, the match will not be canceled.",
     "grammarId": "N1/a-deare-b-deare",
     "grammarPoint": "A であれ B であれ",
-    "explanation": "Indicates the same statement applies to both A and B; 'whether A or B'."
+    "explanation": "Indicates the same statement applies to both A and B; 'whether A or B'.",
+    "prefixFurigana": "{雨|あめ}であれ",
+    "segmentsFurigana": [
+      "{雪|ゆき}で",
+      "あれ、",
+      "{試合|しあい}は",
+      "{中止|ちゅうし}に"
+    ],
+    "suffixFurigana": "ならない。"
   },
   {
     "id": "star-n1-7",
@@ -5355,12 +7486,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "とにかくはっきりしている。",
     "fullSentence": "彼は無礼というか、直接的というか、とにかくはっきりしている。",
-    "furigana": "彼は無礼というか、直接的というか、とにかくはっきりしている。",
+    "furigana": "{彼|かれ}は{無礼|ぶれい}というか、{直接|ちょくせつ}{的|てき}というか、とにかくはっきりしている。",
     "romaji": "Kare wa burei to iu ka, chokusetsuteki to iu ka, tonikaku hakkiri shite iru.",
     "english": "He's rather rude, or maybe just direct; in any case, he is very blunt.",
     "grammarId": "N1/a-to-iu-ka-b-to-iu-ka",
     "grammarPoint": "A というか B というか",
-    "explanation": "Means 'rather than say A, it's more like B', or 'whether to call it A or B'."
+    "explanation": "Means 'rather than say A, it's more like B', or 'whether to call it A or B'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}は",
+      "{無礼|ぶれい}というか、",
+      "{直接|ちょくせつ}",
+      "{的|てき}というか、"
+    ],
+    "suffixFurigana": "とにかくはっきりしている。"
   },
   {
     "id": "star-n1-8",
@@ -5375,12 +7514,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "しょう。",
     "fullSentence": "決断とも誤りとも、結果は時間が教えてくれるでしょう。",
-    "furigana": "決断とも誤りとも、結果は時間が教えてくれるでしょう。",
+    "furigana": "{決断|けつだん}とも{誤|あやま}りとも、{結果|けっか}は{時間|じかん}が{教|おし}えてくれるでしょう。",
     "romaji": "Ketsudan tomo ayamari tomo, kekka wa jikan ga oshiete kureru deshou.",
     "english": "Whether it's a wise decision or a mistake, time will show the result.",
     "grammarId": "N1/a-tomo-b-tomo",
     "grammarPoint": "A とも B とも",
-    "explanation": "Expresses two possibilities; 'either A or B', 'whether A or B'."
+    "explanation": "Expresses two possibilities; 'either A or B', 'whether A or B'.",
+    "prefixFurigana": "{決断|けつだん}とも",
+    "segmentsFurigana": [
+      "{誤|あやま}りとも、",
+      "{結果|けっか}は",
+      "{時間|じかん}が",
+      "{教|おし}えてくれるで"
+    ],
+    "suffixFurigana": "しょう。"
   },
   {
     "id": "star-n1-9",
@@ -5395,12 +7542,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "尽くしました。",
     "fullSentence": "合格するにしろ不合格になるにしろ、最善を尽くしました。",
-    "furigana": "合格するにしろ不合格になるにしろ、最善を尽くしました。",
+    "furigana": "{合格|ごうかく}するにしろ{不|ふ}{合格|ごうかく}になるにしろ、{最善|さいぜん}を{尽|つ}くしました。",
     "romaji": "Goukaku suru ni shiro fukougaku ni naru ni shiro, saizen o tsukushimashita.",
     "english": "Whether I pass or fail, I did my best.",
     "grammarId": "N1/a-nishiro-b-nishiro",
     "grammarPoint": "A にしろ B にしろ",
-    "explanation": "Means 'whether it is A or B'; 'regardless of A or B'."
+    "explanation": "Means 'whether it is A or B'; 'regardless of A or B'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{合格|ごうかく}するにしろ",
+      "{不|ふ}{合格|ごうかく}に",
+      "なるにしろ、",
+      "{最善|さいぜん}を"
+    ],
+    "suffixFurigana": "{尽|つ}くしました。"
   },
   {
     "id": "star-n1-10",
@@ -5415,12 +7570,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "中止しない。",
     "fullSentence": "雨にせよ雪にせよ、試合は中止しない。",
-    "furigana": "雨にせよ雪にせよ、試合は中止しない。",
+    "furigana": "{雨|あめ}にせよ{雪|ゆき}にせよ、{試合|しあい}は{中止|ちゅうし}しない。",
     "romaji": "Ame ni seyo yuki ni seyo, shiai wa chuushi shinai.",
     "english": "Whether it's rain or snow, the match won't be cancelled.",
     "grammarId": "N1/a-ni-seyo-b-ni-seyo",
     "grammarPoint": "A にせよ B にせよ",
-    "explanation": "Either A or B; Regardless of whether it's A or B."
+    "explanation": "Either A or B; Regardless of whether it's A or B.",
+    "prefixFurigana": "{雨|あめ}に",
+    "segmentsFurigana": [
+      "せよ",
+      "{雪|ゆき}に",
+      "せよ、",
+      "{試合|しあい}は"
+    ],
+    "suffixFurigana": "{中止|ちゅうし}しない。"
   },
   {
     "id": "star-n1-11",
@@ -5435,12 +7598,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "的だ。",
     "fullSentence": "彼には笑うにつけ泣くにつけ、とても魅力的だ。",
-    "furigana": "彼には笑うにつけ泣くにつけ、とても魅力的だ。",
+    "furigana": "{彼|かれ}には{笑|わら}うにつけ{泣|な}くにつけ、とても{魅力|みりょく}{的|てき}だ。",
     "romaji": "Kare ni wa warau ni tsuke naku ni tsuke, totemo miryokuteki da.",
     "english": "He is very charming whether he’s laughing or crying.",
     "grammarId": "N1/a-ni-tsuke-b-ni-tsuke",
     "grammarPoint": "A につけ B につけ",
-    "explanation": "Expresses 'whether... or...', 'both... and...', 'in either case'."
+    "explanation": "Expresses 'whether... or...', 'both... and...', 'in either case'.",
+    "prefixFurigana": "{彼|かれ}には",
+    "segmentsFurigana": [
+      "{笑|わら}うにつけ",
+      "{泣|な}くにつけ、",
+      "とても",
+      "{魅力|みりょく}"
+    ],
+    "suffixFurigana": "{的|てき}だ。"
   },
   {
     "id": "star-n1-12",
@@ -5455,12 +7626,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ない。",
     "fullSentence": "彼が怒っているのやら、悲しいのやら、私には分からない。",
-    "furigana": "彼が怒っているのやら、悲しいのやら、私には分からない。",
+    "furigana": "{彼|かれ}が{怒|おこ}っているのやら、{悲|かな}しいのやら、{私|わたし}には{分|わ}からない。",
     "romaji": "Kare ga okotte iru no yara, kanashii no yara, watashi ni wa wakaranai.",
     "english": "I don't know whether he's angry or sad.",
     "grammarId": "N1/a-no-yara-b-no-yara",
     "grammarPoint": "A のやら B のやら",
-    "explanation": "Used when the speaker is unsure or confused between multiple possibilities."
+    "explanation": "Used when the speaker is unsure or confused between multiple possibilities.",
+    "prefixFurigana": "{彼|かれ}が{怒|おこ}っているのやら、",
+    "segmentsFurigana": [
+      "{悲|かな}しいの",
+      "やら、",
+      "{私|わたし}には",
+      "{分|わ}から"
+    ],
+    "suffixFurigana": "ない。"
   },
   {
     "id": "star-n1-13",
@@ -5475,12 +7654,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "行った。",
     "fullSentence": "東京へ出張のかたがた、友人に会いに行った。",
-    "furigana": "東京へ出張のかたがた、友人に会いに行った。",
+    "furigana": "{東京|とうきょう}へ{出張|しゅっちょう}のかたがた、{友人|ゆうじん}に{会|あ}いに{行|い}った。",
     "romaji": "Toukyou e shucchou no kata gata, yuujin ni ai ni itta.",
     "english": "While on a business trip to Tokyo, I also went to see a friend.",
     "grammarId": "N1/noun-kata-gata",
     "grammarPoint": "Noun かたがた",
-    "explanation": "Do one thing while also doing another; 'while', 'and at the same time'."
+    "explanation": "Do one thing while also doing another; 'while', 'and at the same time'.",
+    "prefixFurigana": "{東京|とうきょう}へ",
+    "segmentsFurigana": [
+      "{出張|しゅっちょう}の",
+      "かたがた、",
+      "{友人|ゆうじん}に",
+      "{会|あ}いに"
+    ],
+    "suffixFurigana": "{行|い}った。"
   },
   {
     "id": "star-n1-14",
@@ -5495,12 +7682,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "摘みました。",
     "fullSentence": "散歩がてらに、近くの公園で花を摘みました。",
-    "furigana": "散歩がてらに、近くの公園で花を摘みました。",
+    "furigana": "{散歩|さんぽ}がてらに、{近|ちか}くの{公園|こうえん}で{花|はな}を{摘|つ}みました。",
     "romaji": "Sanpo gatera ni, chikaku no kouen de hana o tsumimashita.",
     "english": "While taking a walk, I picked some flowers in the nearby park.",
     "grammarId": "N1/noun-gatera",
     "grammarPoint": "Noun がてら",
-    "explanation": "Means 'while...at the same time', 'on the occasion of', or 'along with'."
+    "explanation": "Means 'while...at the same time', 'on the occasion of', or 'along with'.",
+    "prefixFurigana": "{散歩|さんぽ}が",
+    "segmentsFurigana": [
+      "てらに、",
+      "{近|ちか}くの",
+      "{公園|こうえん}で",
+      "{花|はな}を"
+    ],
+    "suffixFurigana": "{摘|つ}みました。"
   },
   {
     "id": "star-n1-15",
@@ -5515,12 +7710,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ある。",
     "fullSentence": "彼のコレクションは500個からある。",
-    "furigana": "彼のコレクションは500個からある。",
+    "furigana": "{彼|かれ}のコレクションは500{個|こ}からある。",
     "romaji": "Kare no korekushon wa gohyaku ko kara aru.",
     "english": "He has at least 500 items in his collection.",
     "grammarId": "N1/kara-aru",
     "grammarPoint": "Noun からある",
-    "explanation": "Used with large numbers or measurements to emphasize 'at least that many' or 'no less than.'"
+    "explanation": "Used with large numbers or measurements to emphasize 'at least that many' or 'no less than.'",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}の",
+      "コレクションは",
+      "500",
+      "{個|こ}から"
+    ],
+    "suffixFurigana": "ある。"
   },
   {
     "id": "star-n1-16",
@@ -5535,12 +7738,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "反対しているようだ。",
     "fullSentence": "彼の態度からすると、彼はその計画に反対しているようだ。",
-    "furigana": "彼の態度からすると、彼はその計画に反対しているようだ。",
+    "furigana": "{彼|かれ}の{態度|たいど}からすると、{彼|かれ}はその{計画|けいかく}に{反対|はんたい}しているようだ。",
     "romaji": "Kare no taido kara suru to, kare wa sono keikaku ni hantai shiteiru you da.",
     "english": "Judging from his attitude, he seems to be against the plan.",
     "grammarId": "N1/noun-kara-suru",
     "grammarPoint": "Noun からする",
-    "explanation": "Used to indicate that something is judged, estimated, or considered from a certain point or aspect."
+    "explanation": "Used to indicate that something is judged, estimated, or considered from a certain point or aspect.",
+    "prefixFurigana": "{彼|かれ}の{態度|たいど}から",
+    "segmentsFurigana": [
+      "すると、",
+      "{彼|かれ}は",
+      "その",
+      "{計画|けいかく}に"
+    ],
+    "suffixFurigana": "{反対|はんたい}しているようだ。"
   },
   {
     "id": "star-n1-17",
@@ -5555,12 +7766,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "素晴らしい。",
     "fullSentence": "遠くの景色が見える窓からの眺めが素晴らしい。",
-    "furigana": "遠くの景色が見える窓からの眺めが素晴らしい。",
+    "furigana": "{遠|とお}くの{景色|けしき}が{見|み}える{窓|まど}からの{眺|なが}めが{素晴|すば}らしい。",
     "romaji": "Tōku no keshiki ga mieru mado kara no nagame ga subarashii",
     "english": "The view from the window, which looks out onto distant scenery, is wonderful.",
     "grammarId": "N1/kara-no",
     "grammarPoint": "Noun からの",
-    "explanation": "Defines the starting point or the origin; 'from'."
+    "explanation": "Defines the starting point or the origin; 'from'.",
+    "prefixFurigana": "{遠|とお}くの",
+    "segmentsFurigana": [
+      "{景色|けしき}が",
+      "{見|み}える",
+      "{窓|まど}からの",
+      "{眺|なが}めが"
+    ],
+    "suffixFurigana": "{素晴|すば}らしい。"
   },
   {
     "id": "star-n1-18",
@@ -5575,12 +7794,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ほしい。",
     "fullSentence": "子供たちから言わせれば、もっと遊ぶ時間がほしい。",
-    "furigana": "子供たちから言わせれば、もっと遊ぶ時間がほしい。",
+    "furigana": "{子供|こども}たちから{言|い}わせれば、もっと{遊|あそ}ぶ{時間|じかん}がほしい。",
     "romaji": "Kodomo-tachi kara iwasereba, motto asobu jikan ga hoshii.",
     "english": "From the children's perspective, they want more time to play.",
     "grammarId": "N1/kara-iwasereba",
     "grammarPoint": "Noun から言わせれば",
-    "explanation": "Express the perspective of the noun; 'from ~'s point of view.'"
+    "explanation": "Express the perspective of the noun; 'from ~'s point of view.'",
+    "prefixFurigana": "{子供|こども}たちから",
+    "segmentsFurigana": [
+      "{言|い}わせれば、",
+      "もっと",
+      "{遊|あそ}ぶ",
+      "{時間|じかん}が"
+    ],
+    "suffixFurigana": "ほしい。"
   },
   {
     "id": "star-n1-19",
@@ -5595,12 +7822,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "支持しています。",
     "fullSentence": "この国は国民ぐるみでその法案を支持しています。",
-    "furigana": "この国は国民ぐるみでその法案を支持しています。",
+    "furigana": "この{国|くに}は{国民|こくみん}ぐるみでその{法案|ほうあん}を{支持|しじ}しています。",
     "romaji": "Kono kuni wa kokumin gurumi de sono houan wo shiji shiteimasu.",
     "english": "The entire population of the country supports that bill.",
     "grammarId": "N1/gurumi",
     "grammarPoint": "Noun + ぐるみ",
-    "explanation": "Describes 'entirely', 'all together', or 'as a whole group'."
+    "explanation": "Describes 'entirely', 'all together', or 'as a whole group'.",
+    "prefixFurigana": "この",
+    "segmentsFurigana": [
+      "{国|くに}は",
+      "{国民|こくみん}ぐるみで",
+      "その",
+      "{法案|ほうあん}を"
+    ],
+    "suffixFurigana": "{支持|しじ}しています。"
   },
   {
     "id": "star-n1-20",
@@ -5615,12 +7850,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ある。",
     "fullSentence": "多少のリスクこそあれ、挑戦する価値はある。",
-    "furigana": "多少のリスクこそあれ、挑戦する価値はある。",
+    "furigana": "{多少|たしょう}のリスクこそあれ、{挑戦|ちょうせん}する{価値|かち}はある。",
     "romaji": "Tashou no risuku koso are, chousen suru kachi wa aru.",
     "english": "Though there is some risk, it's worth taking on the challenge.",
     "grammarId": "N1/koso-are",
     "grammarPoint": "Noun こそあれ",
-    "explanation": "Expresses 'though there is ... (some negative or burdensome aspect), still ...'."
+    "explanation": "Expresses 'though there is ... (some negative or burdensome aspect), still ...'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{多少|たしょう}の",
+      "リスクこそあれ、",
+      "{挑戦|ちょうせん}する",
+      "{価値|かち}は"
+    ],
+    "suffixFurigana": "ある。"
   },
   {
     "id": "star-n1-21",
@@ -5635,12 +7878,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ない。",
     "fullSentence": "お金こそ必要だが、それだけが人生のすべてではない。",
-    "furigana": "お金こそ必要だが、それだけが人生のすべてではない。",
+    "furigana": "お{金|かね}こそ{必要|ひつよう}だが、それだけが{人生|じんせい}のすべてではない。",
     "romaji": "Okane koso hitsuyou da ga, sore dake ga jinsei no subete de wa nai.",
     "english": "Money is indeed necessary, but it isn't everything in life.",
     "grammarId": "N1/koso-ga",
     "grammarPoint": "Noun こそ～が",
-    "explanation": "Emphasizes that 'it is precisely Noun that ...', then adds a contrasting or additional point."
+    "explanation": "Emphasizes that 'it is precisely Noun that ...', then adds a contrasting or additional point.",
+    "prefixFurigana": "お{金|かね}こそ",
+    "segmentsFurigana": [
+      "{必要|ひつよう}だが、",
+      "それだけが",
+      "{人生|じんせい}の",
+      "すべてでは"
+    ],
+    "suffixFurigana": "ない。"
   },
   {
     "id": "star-n1-22",
@@ -5655,12 +7906,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "な。",
     "fullSentence": "悪魔のごとき行為をするな。",
-    "furigana": "悪魔のごとき行為をするな。",
+    "furigana": "{悪魔|あくま}のごとき{行為|こうい}をするな。",
     "romaji": "Akuma no gotoki koui o suru na.",
     "english": "Don't engage in acts like those of a devil.",
     "grammarId": "N1/gotoki-gotoku",
     "grammarPoint": "Noun ごとき / Noun ごとく",
-    "explanation": "Means 'like a...', 'as if...', expressing a simile or metaphor."
+    "explanation": "Means 'like a...', 'as if...', expressing a simile or metaphor.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{悪魔|あくま}の",
+      "ごとき",
+      "{行為|こうい}を",
+      "する"
+    ],
+    "suffixFurigana": "な。"
   },
   {
     "id": "star-n1-23",
@@ -5675,12 +7934,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "解決するべきだ。",
     "fullSentence": "彼は子供じゃあるまいし、その問題をしっかりと解決するべきだ。",
-    "furigana": "彼は子供じゃあるまいし、その問題をしっかりと解決するべきだ。",
+    "furigana": "{彼|かれ}は{子供|こども}じゃあるまいし、その{問題|もんだい}をしっかりと{解決|かいけつ}するべきだ。",
     "romaji": "Kare wa kodomo ja aru mai shi, sono mondai o shikkari to kaiketsu suru beki da.",
     "english": "He’s not a child, so he should solve that problem properly.",
     "grammarId": "N1/ja-aru-mai-shi",
     "grammarPoint": "Noun じゃあるまいし",
-    "explanation": "Expressing that something 'is not'; 'it's not like...'. Colloquial/masculine form of ではあるまいし."
+    "explanation": "Expressing that something 'is not'; 'it's not like...'. Colloquial/masculine form of ではあるまいし.",
+    "prefixFurigana": "{彼|かれ}は",
+    "segmentsFurigana": [
+      "{子供|こども}じゃあるまいし、",
+      "その",
+      "{問題|もんだい}を",
+      "しっかりと"
+    ],
+    "suffixFurigana": "{解決|かいけつ}するべきだ。"
   },
   {
     "id": "star-n1-24",
@@ -5695,12 +7962,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "すまないよ。",
     "fullSentence": "彼女が怒っているから、お菓子をあげただけではすまないよ。",
-    "furigana": "彼女が怒っているから、お菓子をあげただけではすまないよ。",
+    "furigana": "{彼女|かのじょ}が{怒|おこ}っているから、お{菓子|かし}をあげただけではすまないよ。",
     "romaji": "Kanojo ga okotte iru kara, okashi o ageta dake dewa sumanai yo.",
     "english": "She’s angry, so just giving her sweets won't fix it.",
     "grammarId": "N1/noun-dake-dewa-sumanai",
     "grammarPoint": "Noun だけではすまない",
-    "explanation": "Expresses 'it can't be settled with just...', 'cannot be resolved merely by...'."
+    "explanation": "Expresses 'it can't be settled with just...', 'cannot be resolved merely by...'.",
+    "prefixFurigana": "{彼女|かのじょ}が",
+    "segmentsFurigana": [
+      "{怒|おこ}って",
+      "いるから、",
+      "お{菓子|かし}を",
+      "あげただけでは"
+    ],
+    "suffixFurigana": "すまないよ。"
   },
   {
     "id": "star-n1-25",
@@ -5715,12 +7990,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ない。",
     "fullSentence": "彼女は一度たりともその映画を見たことがない。",
-    "furigana": "彼女は一度たりともその映画を見たことがない。",
+    "furigana": "{彼女|かのじょ}は{一|いち}{度|ど}たりともその{映画|えいが}を{見|み}たことがない。",
     "romaji": "Kanojo wa ichido tari tomo sono eiga o mita koto ga nai.",
     "english": "She has never seen that movie, not even once.",
     "grammarId": "N1/tari-tomo-nai",
     "grammarPoint": "Noun たりとも～ない",
-    "explanation": "Used to show a strong negative: 'not even ~', 'not a single ~'."
+    "explanation": "Used to show a strong negative: 'not even ~', 'not a single ~'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼女|かのじょ}は",
+      "{一|いち}{度|ど}たりともその",
+      "{映画|えいが}を",
+      "{見|み}たことが"
+    ],
+    "suffixFurigana": "ない。"
   },
   {
     "id": "star-n1-26",
@@ -5735,12 +8018,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "行動すべきだ。",
     "fullSentence": "リーダーたる者は、常に先を見て行動すべきだ。",
-    "furigana": "リーダーたる者は、常に先を見て行動すべきだ。",
+    "furigana": "リーダーたる{者|もの}は、{常|つね}に{先|さき}を{見|み}て{行動|こうどう}すべきだ。",
     "romaji": "Riidaa taru mono wa, tsune ni saki o mite koudou subeki da.",
     "english": "A person who is a leader should always look ahead and act accordingly.",
     "grammarId": "N1/taru",
     "grammarPoint": "Noun たる Noun",
-    "explanation": "Indicates 'being in the position/state of', used for roles or statuses."
+    "explanation": "Indicates 'being in the position/state of', used for roles or statuses.",
+    "prefixFurigana": "リーダーたる",
+    "segmentsFurigana": [
+      "{者|もの}は、",
+      "{常|つね}に",
+      "{先|さき}を",
+      "{見|み}て"
+    ],
+    "suffixFurigana": "{行動|こうどう}すべきだ。"
   },
   {
     "id": "star-n1-27",
@@ -5755,12 +8046,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "読まない。",
     "fullSentence": "明日試験があるのに、彼はテキストですら読まない。",
-    "furigana": "明日試験があるのに、彼はテキストですら読まない。",
+    "furigana": "{明日|あした}{試験|しけん}があるのに、{彼|かれ}はテキストですら{読|よ}まない。",
     "romaji": "Ashita shiken ga aru noni, kare wa tekisuto desura yomanai.",
     "english": "He doesn’t even read the textbook, despite having a test tomorrow.",
     "grammarId": "N1/desura",
     "grammarPoint": "Noun ですら",
-    "explanation": "Means 'even', 'as much as', used for emphasis in formal contexts."
+    "explanation": "Means 'even', 'as much as', used for emphasis in formal contexts.",
+    "prefixFurigana": "{明日|あした}",
+    "segmentsFurigana": [
+      "{試験|しけん}が",
+      "あるのに、",
+      "{彼|かれ}は",
+      "テキストですら"
+    ],
+    "suffixFurigana": "{読|よ}まない。"
   },
   {
     "id": "star-n1-28",
@@ -5775,12 +8074,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "酷だ。",
     "fullSentence": "彼女はプロの歌手ではあるまいし、完璧を求めるのは酷だ。",
-    "furigana": "彼女はプロの歌手ではあるまいし、完璧を求めるのは酷だ。",
+    "furigana": "{彼女|かのじょ}はプロの{歌手|かしゅ}ではあるまいし、{完璧|かんぺき}を{求|もと}めるのは{酷|こく}だ。",
     "romaji": "Kanojo wa puro no kashu de wa aru mai shi, kanpeki o motomeru no wa koku da.",
     "english": "She’s not a professional singer, so it’s rather harsh to demand perfection.",
     "grammarId": "N1/dewa-aru-maishi",
     "grammarPoint": "Noun ではあるまいし",
-    "explanation": "Means 'it’s not as if...', 'it’s not that...', more formal than じゃあるまいし."
+    "explanation": "Means 'it’s not as if...', 'it’s not that...', more formal than じゃあるまいし.",
+    "prefixFurigana": "{彼女|かのじょ}はプロの",
+    "segmentsFurigana": [
+      "{歌手|かしゅ}では",
+      "あるまいし、",
+      "{完璧|かんぺき}を",
+      "{求|もと}めるのは"
+    ],
+    "suffixFurigana": "{酷|こく}だ。"
   },
   {
     "id": "star-n1-29",
@@ -5795,12 +8102,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ています。",
     "fullSentence": "お父さんは社長と経理部長を兼ねています。",
-    "furigana": "お父さんは社長と経理部長を兼ねています。",
+    "furigana": "お{父|とう}さんは{社長|しゃちょう}と{経理|けいり}{部長|ぶちょう}を{兼|か}ねています。",
     "romaji": "Otousan wa shachou to keiri buchou o kanete imasu.",
     "english": "My father serves as both the company president and the head of accounting.",
     "grammarId": "N1/noun-to-noun-o-kanete",
     "grammarPoint": "Noun と Noun を兼ねて",
-    "explanation": "Used to indicate doing two things at once or fulfilling two roles/purposes."
+    "explanation": "Used to indicate doing two things at once or fulfilling two roles/purposes.",
+    "prefixFurigana": "お{父|とう}さんは",
+    "segmentsFurigana": [
+      "{社長|しゃちょう}と",
+      "{経理|けいり}",
+      "{部長|ぶちょう}を",
+      "{兼|か}ね"
+    ],
+    "suffixFurigana": "ています。"
   },
   {
     "id": "star-n1-30",
@@ -5815,12 +8130,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "素晴らしいです。",
     "fullSentence": "日本の食べ物といい観光地といい、すべてが素晴らしいです。",
-    "furigana": "日本の食べ物といい観光地といい、すべてが素晴らしいです。",
+    "furigana": "{日本|にっぽん}の{食べ物|たべもの}といい{観光|かんこう}{地|ち}といい、すべてが{素晴|すば}らしいです。",
     "romaji": "Nihon no tabemono to ii kankouchi to ii, subete ga subarashii desu.",
     "english": "Both Japanese food and tourist spots are all wonderful.",
     "grammarId": "N1/to-ii-to-ii",
     "grammarPoint": "Noun といい Noun といい",
-    "explanation": "Used to express 'both A and B'; 'whether it's A or B'; 'not to mention A and also B'."
+    "explanation": "Used to express 'both A and B'; 'whether it's A or B'; 'not to mention A and also B'.",
+    "prefixFurigana": "{日本|にっぽん}の{食べ物|たべもの}といい",
+    "segmentsFurigana": [
+      "{観光|かんこう}",
+      "{地|ち}と",
+      "いい、",
+      "すべてが"
+    ],
+    "suffixFurigana": "{素晴|すば}らしいです。"
   },
   {
     "id": "star-n1-31",
@@ -5835,12 +8158,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "監督です。",
     "fullSentence": "宮崎駿という人は有名なアニメーション監督です。",
-    "furigana": "宮崎駿という人は有名なアニメーション監督です。",
+    "furigana": "{宮崎|みやざき}{駿|しゅん}という{人|ひと}は{有名|ゆうめい}なアニメーション{監督|かんとく}です。",
     "romaji": "Miyazaki Hayao to iu hito wa yuumei na animation kantoku desu.",
     "english": "The person called Hayao Miyazaki is a famous animation director.",
     "grammarId": "N1/to-iu",
     "grammarPoint": "Noun という Noun",
-    "explanation": "Used to specify or define one noun with another; 'the noun called', 'the noun that is', or 'a certain'."
+    "explanation": "Used to specify or define one noun with another; 'the noun called', 'the noun that is', or 'a certain'.",
+    "prefixFurigana": "{宮崎|みやざき}{駿|しゅん}という",
+    "segmentsFurigana": [
+      "{人|ひと}は",
+      "{有名|ゆうめい}",
+      "な",
+      "アニメーション"
+    ],
+    "suffixFurigana": "{監督|かんとく}です。"
   },
   {
     "id": "star-n1-32",
@@ -5855,12 +8186,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "割というところだ。",
     "fullSentence": "このプランに賛成の人は7割というところだ。",
-    "furigana": "このプランに賛成の人は7割というところだ。",
+    "furigana": "このプランに{賛成|さんせい}の{人|ひと}は7{割|わり}というところだ。",
     "romaji": "Kono puran ni sansei no hito wa nanawari to iu tokoro da.",
     "english": "About 70% of people agree with this plan.",
     "grammarId": "N1/noun-to-iu-tokoro-da",
     "grammarPoint": "Noun というところだ",
-    "explanation": "Means 'it's approximately...' or 'it's about...'. Used to show approximation or a general assessment."
+    "explanation": "Means 'it's approximately...' or 'it's about...'. Used to show approximation or a general assessment.",
+    "prefixFurigana": "この",
+    "segmentsFurigana": [
+      "プランに",
+      "{賛成|さんせい}の",
+      "{人|ひと}は",
+      "7"
+    ],
+    "suffixFurigana": "{割|わり}というところだ。"
   },
   {
     "id": "star-n1-33",
@@ -5875,12 +8214,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "います。",
     "fullSentence": "日本文化というものは伝統的なものと新しいものが混ざっています。",
-    "furigana": "日本文化というものは伝統的なものと新しいものが混ざっています。",
+    "furigana": "{日本|にっぽん}{文化|ぶんか}というものは{伝統|でんとう}{的|てき}なものと{新|あたら}しいものが{混|ま}ざっています。",
     "romaji": "Nihon bunka to iu mono wa dentouteki na mono to atarashii mono ga mazatte imasu.",
     "english": "Japanese culture is a mixture of traditional and new.",
     "grammarId": "N1/to-iu-mono",
     "grammarPoint": "Noun + というもの",
-    "explanation": "Used to express a generic concept: 'all ~', 'any ~ of that kind'."
+    "explanation": "Used to express a generic concept: 'all ~', 'any ~ of that kind'.",
+    "prefixFurigana": "{日本|にっぽん}{文化|ぶんか}というものは{伝統|でんとう}",
+    "segmentsFurigana": [
+      "{的|てき}な",
+      "ものと",
+      "{新|あたら}しいものが",
+      "{混|ま}ざって"
+    ],
+    "suffixFurigana": "います。"
   },
   {
     "id": "star-n1-34",
@@ -5895,12 +8242,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "語といったところだ。",
     "fullSentence": "私の日本語の語彙は1000語といったところだ。",
-    "furigana": "私の日本語の語彙は1000語といったところだ。",
+    "furigana": "{私|わたし}の{日本語|にほんご}の{語彙|ごい}は1000{語|かたり}といったところだ。",
     "romaji": "Watashi no nihongo no goi wa sen go to itta tokoro da.",
     "english": "My Japanese vocabulary is limited to about 1000 words.",
     "grammarId": "N1/noun-to-itta-tokoro-da",
     "grammarPoint": "Noun といったところだ",
-    "explanation": "Expresses 'at most', 'as much as', or 'limited to'."
+    "explanation": "Expresses 'at most', 'as much as', or 'limited to'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{私|わたし}の",
+      "{日本語|にほんご}の",
+      "{語彙|ごい}は",
+      "1000"
+    ],
+    "suffixFurigana": "{語|かたり}といったところだ。"
   },
   {
     "id": "star-n1-35",
@@ -5915,12 +8270,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "食べます。",
     "fullSentence": "冬といわず夏といわず、彼はいつもアイスクリームを食べます。",
-    "furigana": "冬といわず夏といわず、彼はいつもアイスクリームを食べます。",
+    "furigana": "{冬|ふゆ}といわず{夏|なつ}といわず、{彼|かれ}はいつもアイスクリームを{食|た}べます。",
     "romaji": "Fuyu to iwazu natsu to iwazu, kare wa itsumo aisukuriimu o tabemasu.",
     "english": "Be it winter or summer, he always eats ice cream.",
     "grammarId": "N1/a-to-iwazu-b-to-iwazu",
     "grammarPoint": "Noun といわず Noun といわず",
-    "explanation": "Expresses 'both A and B' or 'be it A or B'; applies to both without distinction."
+    "explanation": "Expresses 'both A and B' or 'be it A or B'; applies to both without distinction.",
+    "prefixFurigana": "{冬|ふゆ}といわず",
+    "segmentsFurigana": [
+      "{夏|なつ}といわず、",
+      "{彼|かれ}は",
+      "いつも",
+      "アイスクリームを"
+    ],
+    "suffixFurigana": "{食|た}べます。"
   },
   {
     "id": "star-n1-36",
@@ -5935,12 +8298,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "いる。",
     "fullSentence": "数学の問題ときたら、彼女はいつも困っている。",
-    "furigana": "数学の問題ときたら、彼女はいつも困っている。",
+    "furigana": "{数学|すうがく}の{問題|もんだい}ときたら、{彼女|かのじょ}はいつも{困|こま}っている。",
     "romaji": "Suugaku no mondai tokitara, kanojo wa itsumo komatte iru.",
     "english": "When it comes to math problems, she's always struggling.",
     "grammarId": "N1/tokitara",
     "grammarPoint": "Noun + ときたら",
-    "explanation": "Expresses strong feelings about a topic; 'speaking of', 'when it comes to'."
+    "explanation": "Expresses strong feelings about a topic; 'speaking of', 'when it comes to'.",
+    "prefixFurigana": "{数学|すうがく}の",
+    "segmentsFurigana": [
+      "{問題|もんだい}ときたら、",
+      "{彼女|かのじょ}は",
+      "いつも",
+      "{困|こま}って"
+    ],
+    "suffixFurigana": "いる。"
   },
   {
     "id": "star-n1-37",
@@ -5955,12 +8326,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ならない。",
     "fullSentence": "新しい車の速さは古い車とは比べものにならない。",
-    "furigana": "新しい車の速さは古い車とは比べものにならない。",
+    "furigana": "{新|あたら}しい{車|くるま}の{速|はや}さは{古|ふる}い{車|くるま}とは{比|くら}べものにならない。",
     "romaji": "Atarashii kuruma no hayasa wa furui kuruma to wa kurabemono ni naranai.",
     "english": "The speed of the new car is not comparable to the old one.",
     "grammarId": "N1/to-wa-kurabemono-ni-naranai",
     "grammarPoint": "Noun とは比べものにならない",
-    "explanation": "Indicates something is not comparable; 'beyond comparison'."
+    "explanation": "Indicates something is not comparable; 'beyond comparison'.",
+    "prefixFurigana": "{新|あたら}しい{車|くるま}の",
+    "segmentsFurigana": [
+      "{速|はや}さは",
+      "{古|ふる}い",
+      "{車|くるま}とは",
+      "{比|くら}べものに"
+    ],
+    "suffixFurigana": "ならない。"
   },
   {
     "id": "star-n1-38",
@@ -5975,12 +8354,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "するなんて。",
     "fullSentence": "先生ともあろう者が、そんな間違いをするなんて。",
-    "furigana": "先生ともあろう者が、そんな間違いをするなんて。",
+    "furigana": "{先生|せんせい}ともあろう{者|もの}が、そんな{間違|まちが}いをするなんて。",
     "romaji": "Sensei tomoarou mono ga, sonna machigai o suru nante.",
     "english": "For a teacher, it's shocking to make such a mistake.",
     "grammarId": "N1/tomoarou",
     "grammarPoint": "Noun + ともあろう + Noun",
-    "explanation": "Used to criticize or question unbecoming behavior by someone of a certain status."
+    "explanation": "Used to criticize or question unbecoming behavior by someone of a certain status.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{先生|せんせい}ともあろう",
+      "{者|もの}が、",
+      "そんな",
+      "{間違|まちが}いを"
+    ],
+    "suffixFurigana": "するなんて。"
   },
   {
     "id": "star-n1-39",
@@ -5995,12 +8382,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "見えます。",
     "fullSentence": "クリスマスともなると、街中がきらきらと輝いて見えます。",
-    "furigana": "クリスマスともなると、街中がきらきらと輝いて見えます。",
+    "furigana": "クリスマスともなると、{街|まち}{中|なか}がきらきらと{輝|かがや}いて{見|み}えます。",
     "romaji": "Kurisumasu to mo naru to, machijuu ga kirakira to kagayaite miemasu.",
     "english": "When it comes to Christmas time, the whole city sparkles.",
     "grammarId": "N1/to-mo-naru-to",
     "grammarPoint": "Noun ともなると",
-    "explanation": "'When it comes to...', emphasizes a change of situation or status."
+    "explanation": "'When it comes to...', emphasizes a change of situation or status.",
+    "prefixFurigana": "クリスマスともなると、",
+    "segmentsFurigana": [
+      "{街|まち}",
+      "{中|なか}が",
+      "きらきらと",
+      "{輝|かがや}いて"
+    ],
+    "suffixFurigana": "{見|み}えます。"
   },
   {
     "id": "star-n1-40",
@@ -6015,12 +8410,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "緊張するものです。",
     "fullSentence": "試験ともなれば、大抵の人が緊張するものです。",
-    "furigana": "試験ともなれば、大抵の人が緊張するものです。",
+    "furigana": "{試験|しけん}ともなれば、{大抵|たいてい}の{人|ひと}が{緊張|きんちょう}するものです。",
     "romaji": "Shiken to mo nareba, taitei no hito ga kinchou suru mono desu.",
     "english": "When it comes to exams, most people get nervous.",
     "grammarId": "N1/to-mo-nareba",
     "grammarPoint": "Noun ともなれば",
-    "explanation": "Expresses 'if it comes to', 'when', or 'once'."
+    "explanation": "Expresses 'if it comes to', 'when', or 'once'.",
+    "prefixFurigana": "{試験|しけん}とも",
+    "segmentsFurigana": [
+      "な",
+      "れば、",
+      "{大抵|たいてい}の",
+      "{人|ひと}が"
+    ],
+    "suffixFurigana": "{緊張|きんちょう}するものです。"
   },
   {
     "id": "star-n1-41",
@@ -6035,12 +8438,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "した。",
     "fullSentence": "天気の良さと相まって、ピクニックは大成功でした。",
-    "furigana": "天気の良さと相まって、ピクニックは大成功でした。",
+    "furigana": "{天気|てんき}の{良|よ}さと{相|あい}まって、ピクニックは{大|だい}{成功|せいこう}でした。",
     "romaji": "Tenki no yosa to aimatte, pikunikku wa daiseikou deshita.",
     "english": "In combination with the good weather, the picnic was a great success.",
     "grammarId": "N1/to-aimatte",
     "grammarPoint": "Noun と相まって",
-    "explanation": "Used to express 'in combination with', 'together with', 'along with'."
+    "explanation": "Used to express 'in combination with', 'together with', 'along with'.",
+    "prefixFurigana": "{天気|てんき}の{良|よ}さと",
+    "segmentsFurigana": [
+      "{相|あい}まって、",
+      "ピクニックは",
+      "{大|だい}",
+      "{成功|せいこう}で"
+    ],
+    "suffixFurigana": "した。"
   },
   {
     "id": "star-n1-42",
@@ -6055,12 +8466,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "作れない。",
     "fullSentence": "時間なくして完璧な作品は作れない。",
-    "furigana": "時間なくして完璧な作品は作れない。",
+    "furigana": "{時間|じかん}なくして{完璧|かんぺき}な{作品|さくひん}は{作|つく}れない。",
     "romaji": "Jikan nakushite kanpeki na sakuhin wa tsukurenai.",
     "english": "You cannot create a perfect work without time.",
     "grammarId": "N1/noun-nakushite-wa-nai",
     "grammarPoint": "Noun なくして～はない",
-    "explanation": "Expresses 'without ~, there can't be ~'; 'can't do ~ without first doing ~'."
+    "explanation": "Expresses 'without ~, there can't be ~'; 'can't do ~ without first doing ~'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{時間|じかん}なくして",
+      "{完璧|かんぺき}",
+      "な",
+      "{作品|さくひん}は"
+    ],
+    "suffixFurigana": "{作|つく}れない。"
   },
   {
     "id": "star-n1-43",
@@ -6075,12 +8494,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "できない。",
     "fullSentence": "彼の助けなしでは、この問題を解決することはできない。",
-    "furigana": "彼の助けなしでは、この問題を解決することはできない。",
+    "furigana": "{彼|かれ}の{助|たす}けなしでは、この{問題|もんだい}を{解決|かいけつ}することはできない。",
     "romaji": "Kare no tasuke nashi de wa, kono mondai o kaiketsu suru koto wa dekinai.",
     "english": "Without his help, I cannot solve this problem.",
     "grammarId": "N1/noun-nashi-de-wa-nai",
     "grammarPoint": "Noun なしでは～ない",
-    "explanation": "Expresses the necessity of something; 'cannot do without', 'not possible without'."
+    "explanation": "Expresses the necessity of something; 'cannot do without', 'not possible without'.",
+    "prefixFurigana": "{彼|かれ}の",
+    "segmentsFurigana": [
+      "{助|たす}けなしでは、",
+      "この",
+      "{問題|もんだい}を",
+      "{解決|かいけつ}することは"
+    ],
+    "suffixFurigana": "できない。"
   },
   {
     "id": "star-n1-44",
@@ -6095,12 +8522,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ない。",
     "fullSentence": "数学ならいざ知らず、物理なんて全然わからない。",
-    "furigana": "数学ならいざ知らず、物理なんて全然わからない。",
+    "furigana": "{数学|すうがく}ならいざ{知|し}らず、{物理|ぶつり}なんて{全然|ぜんぜん}わからない。",
     "romaji": "Suugaku nara iza shirazu, butsuri nante zenzen wakaranai.",
     "english": "Math might be manageable, but as for physics, I'm completely clueless.",
     "grammarId": "N1/nara-izashirazu",
     "grammarPoint": "Noun ならいざ知らず",
-    "explanation": "Expresses 'maybe X is possible, but Y is definitely not'. Often 'let alone...'."
+    "explanation": "Expresses 'maybe X is possible, but Y is definitely not'. Often 'let alone...'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{数学|すうがく}ならいざ",
+      "{知|し}らず、",
+      "{物理|ぶつり}なんて",
+      "{全然|ぜんぜん}わから"
+    ],
+    "suffixFurigana": "ない。"
   },
   {
     "id": "star-n1-45",
@@ -6115,12 +8550,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "品です。",
     "fullSentence": "新鮮な魚はこの町ならではの特産品です。",
-    "furigana": "新鮮な魚はこの町ならではの特産品です。",
+    "furigana": "{新鮮|しんせん}な{魚|さかな}はこの{町|まち}ならではの{特産|とくさん}{品|しな}です。",
     "romaji": "Shinsen na sakana wa kono machi nara dewa no tokusanhin desu.",
     "english": "Fresh fish is a specialty unique to this town.",
     "grammarId": "N1/nara-de-wa",
     "grammarPoint": "Noun + ならでは",
-    "explanation": "Expresses something unique or characteristic only of that noun; 'only found in', 'only possible with'."
+    "explanation": "Expresses something unique or characteristic only of that noun; 'only found in', 'only possible with'.",
+    "prefixFurigana": "{新鮮|しんせん}な",
+    "segmentsFurigana": [
+      "{魚|さかな}は",
+      "この",
+      "{町|まち}ならではの",
+      "{特産|とくさん}"
+    ],
+    "suffixFurigana": "{品|しな}です。"
   },
   {
     "id": "star-n1-46",
@@ -6135,12 +8578,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ありますか。",
     "fullSentence": "映画なり、音楽なり、何か趣味はありますか。",
-    "furigana": "映画なり、音楽なり、何か趣味はありますか。",
+    "furigana": "{映画|えいが}なり、{音楽|おんがく}なり、{何|なに}か{趣味|しゅみ}はありますか。",
     "romaji": "Eiga nari, ongaku nari, nanika shumi wa arimasu ka?",
     "english": "Do you have any hobbies, such as movies or music?",
     "grammarId": "N1/a-nari-b-nari",
     "grammarPoint": "Noun なり Noun なり",
-    "explanation": "Lists alternatives of the same kind; 'either A or B', 'A or B, for example'."
+    "explanation": "Lists alternatives of the same kind; 'either A or B', 'A or B, for example'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{映画|えいが}なり、",
+      "{音楽|おんがく}なり、",
+      "{何|なに}か",
+      "{趣味|しゅみ}は"
+    ],
+    "suffixFurigana": "ありますか。"
   },
   {
     "id": "star-n1-47",
@@ -6155,12 +8606,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "練習すべきだ。",
     "fullSentence": "時間が限られているので、一時間なりとも練習すべきだ。",
-    "furigana": "時間が限られているので、一時間なりとも練習すべきだ。",
+    "furigana": "{時間|じかん}が{限|かぎ}られているので、{一|いち}{時間|じかん}なりとも{練習|れんしゅう}すべきだ。",
     "romaji": "Jikan ga kagirarete iru node, ichi-jikan nari tomo renshuu subeki da.",
     "english": "Since time is limited, you should practice for at least an hour.",
     "grammarId": "N1/nari-tomo",
     "grammarPoint": "Noun なりとも",
-    "explanation": "Indicates even a small amount or degree; 'at least', 'even a little'."
+    "explanation": "Indicates even a small amount or degree; 'at least', 'even a little'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{時間|じかん}が",
+      "{限|かぎ}られているので、",
+      "{一|いち}",
+      "{時間|じかん}なりとも"
+    ],
+    "suffixFurigana": "{練習|れんしゅう}すべきだ。"
   },
   {
     "id": "star-n1-48",
@@ -6175,12 +8634,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "辞めた。",
     "fullSentence": "彼女は失敗に失敗を重ねて、とうとう会社を辞めた。",
-    "furigana": "彼女は失敗に失敗を重ねて、とうとう会社を辞めた。",
+    "furigana": "{彼女|かのじょ}は{失敗|しっぱい}に{失敗|しっぱい}を{重|かさ}ねて、とうとう{会社|かいしゃ}を{辞|や}めた。",
     "romaji": "Kanojo wa shippai ni shippai wo kasanete, toutou kaisha wo yameta.",
     "english": "She piled up failures upon failures and finally quit the company.",
     "grammarId": "N1/a-ni-b-wo-kasanete",
     "grammarPoint": "Noun に Noun を重ねて",
-    "explanation": "This expression is used to describe repeated actions or states, 'one after another' or 'pile up'."
+    "explanation": "This expression is used to describe repeated actions or states, 'one after another' or 'pile up'.",
+    "prefixFurigana": "{彼女|かのじょ}は{失敗|しっぱい}に",
+    "segmentsFurigana": [
+      "{失敗|しっぱい}を",
+      "{重|かさ}ねて、",
+      "とうとう",
+      "{会社|かいしゃ}を"
+    ],
+    "suffixFurigana": "{辞|や}めた。"
   },
   {
     "id": "star-n1-49",
@@ -6195,12 +8662,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "直面していました。",
     "fullSentence": "戦争時にあっては、すべての人々が困難に直面していました。",
-    "furigana": "戦争時にあっては、すべての人々が困難に直面していました。",
+    "furigana": "{戦争|せんそう}{時|とき}にあっては、すべての{人々|ひとびと}が{困難|こんなん}に{直面|ちょくめん}していました。",
     "romaji": "Sensouji ni atte wa, subete no hito ga konnan ni chokumen shiteimashita.",
     "english": "In wartime, all people were facing difficulties.",
     "grammarId": "N1/noun-ni-atte-ha",
     "grammarPoint": "Noun にあっては",
-    "explanation": "Indicates a specific situation or environment in which something happens or is the case."
+    "explanation": "Indicates a specific situation or environment in which something happens or is the case.",
+    "prefixFurigana": "{戦争|せんそう}",
+    "segmentsFurigana": [
+      "{時|とき}にあっては、",
+      "すべての",
+      "{人々|ひとびと}が",
+      "{困難|こんなん}に"
+    ],
+    "suffixFurigana": "{直面|ちょくめん}していました。"
   },
   {
     "id": "star-n1-50",
@@ -6215,12 +8690,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "とった。",
     "fullSentence": "彼は教師にあるまじき言動をとった。",
-    "furigana": "彼は教師にあるまじき言動をとった。",
+    "furigana": "{彼|かれ}は{教師|きょうし}にあるまじき{言動|げんどう}をとった。",
     "romaji": "Kare wa kyoushi ni aru majiki gendou wo totta.",
     "english": "He took actions that are unbecoming of a teacher.",
     "grammarId": "N1/noun-ni-aru-majiki-noun",
     "grammarPoint": "Noun にあるまじき Noun",
-    "explanation": "Expresses the idea of 'unfitting', 'unbecoming' or 'inappropriate'."
+    "explanation": "Expresses the idea of 'unfitting', 'unbecoming' or 'inappropriate'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{彼|かれ}は",
+      "{教師|きょうし}に",
+      "あるまじき",
+      "{言動|げんどう}を"
+    ],
+    "suffixFurigana": "とった。"
   },
   {
     "id": "star-n1-51",
@@ -6235,12 +8718,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "信じられない。",
     "fullSentence": "彼は医者にしてその基本的な知識がないのが信じられない。",
-    "furigana": "彼は医者にしてその基本的な知識がないのが信じられない。",
+    "furigana": "{彼|かれ}は{医者|いしゃ}にしてその{基本|きほん}{的|てき}な{知識|ちしき}がないのが{信|しん}じられない。",
     "romaji": "Kare wa isha ni shite sono kihonteki na chishiki ga nai no ga shinjirarenai.",
     "english": "I can't believe that even as a doctor, he doesn't have that basic knowledge.",
     "grammarId": "N1/noun-ni-shite",
     "grammarPoint": "Noun にして",
-    "explanation": "Expresses the idea 'even for', 'even though', or 'in spite of'."
+    "explanation": "Expresses the idea 'even for', 'even though', or 'in spite of'.",
+    "prefixFurigana": "{彼|かれ}は{医者|いしゃ}にしてその",
+    "segmentsFurigana": [
+      "{基本|きほん}",
+      "{的|てき}な",
+      "{知識|ちしき}が",
+      "ないのが"
+    ],
+    "suffixFurigana": "{信|しん}じられない。"
   },
   {
     "id": "star-n1-52",
@@ -6255,12 +8746,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "分かった。",
     "fullSentence": "大人にして初めて、親の苦労が分かった。",
-    "furigana": "大人にして初めて、親の苦労が分かった。",
+    "furigana": "{大人|おとな}にして{初|はじ}めて、{親|おや}の{苦労|くろう}が{分|わ}かった。",
     "romaji": "Otona ni shite hajimete, oya no kurou ga wakatta.",
     "english": "Only when I became an adult did I understand my parents' struggles for the first time.",
     "grammarId": "N1/noun-nishite-hajimete",
     "grammarPoint": "Noun にして初めて",
-    "explanation": "Expresses 'only when/after... for the first time'."
+    "explanation": "Expresses 'only when/after... for the first time'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{大人|おとな}にして",
+      "{初|はじ}めて、",
+      "{親|おや}の",
+      "{苦労|くろう}が"
+    ],
+    "suffixFurigana": "{分|わ}かった。"
   },
   {
     "id": "star-n1-53",
@@ -6275,12 +8774,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "反応しない。",
     "fullSentence": "この犬は自分の名前にすら反応しない。",
-    "furigana": "この犬は自分の名前にすら反応しない。",
+    "furigana": "この{犬|いぬ}は{自分|じぶん}の{名前|なまえ}にすら{反応|はんのう}しない。",
     "romaji": "Kono inu wa jibun no namae ni sura hannou shinai.",
     "english": "This dog doesn't even respond to its own name.",
     "grammarId": "N1/ni-sura",
     "grammarPoint": "Noun にすら",
-    "explanation": "Expresses the concept of 'even'; 'even in', 'even as', 'even to'."
+    "explanation": "Expresses the concept of 'even'; 'even in', 'even as', 'even to'.",
+    "prefixFurigana": "この",
+    "segmentsFurigana": [
+      "{犬|いぬ}は",
+      "{自分|じぶん}の",
+      "{名前|なまえ}に",
+      "すら"
+    ],
+    "suffixFurigana": "{反応|はんのう}しない。"
   },
   {
     "id": "star-n1-54",
@@ -6295,12 +8802,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "サポートしています。",
     "fullSentence": "このアプリは、日本語にとどまらず、他の言語もサポートしています。",
-    "furigana": "このアプリは、日本語にとどまらず、他の言語もサポートしています。",
+    "furigana": "このアプリは、{日本語|にほんご}にとどまらず、{他|た}の{言語|げんご}もサポートしています。",
     "romaji": "Kono apuri wa, nihongo ni todomarazu, hoka no gengo mo sapooto shite imasu.",
     "english": "This app not only supports Japanese, but also other languages.",
     "grammarId": "N1/ni-todomarazu-mo",
     "grammarPoint": "Noun にとどまらず～も",
-    "explanation": "This expresses the idea of 'not only...but also', 'not stopping at...'."
+    "explanation": "This expresses the idea of 'not only...but also', 'not stopping at...'.",
+    "prefixFurigana": "このアプリは、",
+    "segmentsFurigana": [
+      "{日本語|にほんご}に",
+      "とどまらず、",
+      "{他|た}の",
+      "{言語|げんご}も"
+    ],
+    "suffixFurigana": "サポートしています。"
   },
   {
     "id": "star-n1-55",
@@ -6315,12 +8830,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "感情だ。",
     "fullSentence": "彼の親切さにひきかえ、彼女は無感情だ。",
-    "furigana": "彼の親切さにひきかえ、彼女は無感情だ。",
+    "furigana": "{彼|かれ}の{親切|しんせつ}さにひきかえ、{彼女|かのじょ}は{無|む}{感情|かんじょう}だ。",
     "romaji": "Kare no shinsetsusa ni hikikae, kanojo wa mukanjou da.",
     "english": "In contrast to his kindness, she is emotionless.",
     "grammarId": "N1/ni-hikikae-wa",
     "grammarPoint": "Noun にひきかえ Noun は",
-    "explanation": "Represents 'in contrast to', 'as opposed to'."
+    "explanation": "Represents 'in contrast to', 'as opposed to'.",
+    "prefixFurigana": "{彼|かれ}の{親切|しんせつ}さに",
+    "segmentsFurigana": [
+      "ひきか",
+      "え、",
+      "{彼女|かのじょ}は",
+      "{無|む}"
+    ],
+    "suffixFurigana": "{感情|かんじょう}だ。"
   },
   {
     "id": "star-n1-56",
@@ -6335,12 +8858,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "愛しています。",
     "fullSentence": "私は彼にもまして、音楽を愛しています。",
-    "furigana": "私は彼にもまして、音楽を愛しています。",
+    "furigana": "{私|わたし}は{彼|かれ}にもまして、{音楽|おんがく}を{愛|あい}しています。",
     "romaji": "Watashi wa kare ni mo mashite, ongaku o aishiteimasu.",
     "english": "I love music even more than he does.",
     "grammarId": "N1/ni-mo-mashite",
     "grammarPoint": "Noun にもまして",
-    "explanation": "This expresses 'Even more than; exceeding'."
+    "explanation": "This expresses 'Even more than; exceeding'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{私|わたし}は",
+      "{彼|かれ}にも",
+      "まして、",
+      "{音楽|おんがく}を"
+    ],
+    "suffixFurigana": "{愛|あい}しています。"
   },
   {
     "id": "star-n1-57",
@@ -6355,12 +8886,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "しょう。",
     "fullSentence": "結果は勉強時間によらず変わらないでしょう。",
-    "furigana": "結果は勉強時間によらず変わらないでしょう。",
+    "furigana": "{結果|けっか}は{勉強|べんきょう}{時間|じかん}によらず{変|か}わらないでしょう。",
     "romaji": "Kekka wa benkyou jikan ni yorazu kawaranai deshou.",
     "english": "The result will not change regardless of the study time.",
     "grammarId": "N1/ni-yorazu",
     "grammarPoint": "Noun によらず",
-    "explanation": "Regardless of, irrespective of."
+    "explanation": "Regardless of, irrespective of.",
+    "prefixFurigana": "{結果|けっか}は",
+    "segmentsFurigana": [
+      "{勉強|べんきょう}",
+      "{時間|じかん}によ",
+      "らず",
+      "{変|か}わらないで"
+    ],
+    "suffixFurigana": "しょう。"
   },
   {
     "id": "star-n1-58",
@@ -6375,12 +8914,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "公開されました。",
     "fullSentence": "この映画は日本に先駆けて、アメリカで公開されました。",
-    "furigana": "この映画は日本に先駆けて、アメリカで公開されました。",
+    "furigana": "この{映画|えいが}は{日本|にっぽん}に{先駆|さきが}けて、アメリカで{公開|こうかい}されました。",
     "romaji": "Kono eiga wa Nippon ni sakigakete, Amerika de koukai saremashita.",
     "english": "This film was released in America ahead of Japan.",
     "grammarId": "N1/ni-saki-gakete",
     "grammarPoint": "Noun に先駆けて",
-    "explanation": "Meaning 'ahead of', 'before', or 'preceding in time'."
+    "explanation": "Meaning 'ahead of', 'before', or 'preceding in time'.",
+    "prefixFurigana": "この",
+    "segmentsFurigana": [
+      "{映画|えいが}は",
+      "{日本|にっぽん}に",
+      "{先駆|さきが}けて、",
+      "アメリカで"
+    ],
+    "suffixFurigana": "{公開|こうかい}されました。"
   },
   {
     "id": "star-n1-59",
@@ -6395,12 +8942,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "必要だ。",
     "fullSentence": "社会のニーズに即した教育改革が必要だ。",
-    "furigana": "社会のニーズに即した教育改革が必要だ。",
+    "furigana": "{社会|しゃかい}のニーズに{即|そく}した{教育|きょういく}{改革|かいかく}が{必要|ひつよう}だ。",
     "romaji": "Shakai no niizu ni sokushita kyouiku kaikaku ga hitsuyou da.",
     "english": "We need an educational reform that is in accordance with the needs of society.",
     "grammarId": "N1/a-ni-sokushita-b",
     "grammarPoint": "Noun に即した Noun",
-    "explanation": "Expresses the idea of 'in accordance with', 'based on'."
+    "explanation": "Expresses the idea of 'in accordance with', 'based on'.",
+    "prefixFurigana": "{社会|しゃかい}の",
+    "segmentsFurigana": [
+      "ニーズに",
+      "{即|そく}した",
+      "{教育|きょういく}",
+      "{改革|かいかく}が"
+    ],
+    "suffixFurigana": "{必要|ひつよう}だ。"
   },
   {
     "id": "star-n1-60",
@@ -6415,12 +8970,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "重要です。",
     "fullSentence": "法律に即して判断を下すことが重要です。",
-    "furigana": "法律に即して判断を下すことが重要です。",
+    "furigana": "{法律|ほうりつ}に{即|そく}して{判断|はんだん}を{下|くだ}すことが{重要|じゅうよう}です。",
     "romaji": "Houritsu ni soku shite hantei o kudasu koto ga juuyou desu.",
     "english": "It's important to make judgments in accordance with the law.",
     "grammarId": "N1/ni-soku-shite",
     "grammarPoint": "Noun に即して Verb",
-    "explanation": "The grammar point Noun に即して Verb is used to mean 'to act in accordance with', 'in line with' or 'based on'."
+    "explanation": "The grammar point Noun に即して Verb is used to mean 'to act in accordance with', 'in line with' or 'based on'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{法律|ほうりつ}に",
+      "{即|そく}して",
+      "{判断|はんだん}を",
+      "{下|くだ}すことが"
+    ],
+    "suffixFurigana": "{重要|じゅうよう}です。"
   },
   {
     "id": "star-n1-61",
@@ -6435,12 +8998,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "言う。",
     "fullSentence": "先生に言わせれば、毎日勉強することが重要だと言う。",
-    "furigana": "先生に言わせれば、毎日勉強することが重要だと言う。",
+    "furigana": "{先生|せんせい}に{言|い}わせれば、{毎日|まいにち}{勉強|べんきょう}することが{重要|じゅうよう}だと{言|い}う。",
     "romaji": "Sensei ni iwasereba, mainichi benkyou suru koto ga juuyou da to iu.",
     "english": "According to the teacher, it's important to study every day.",
     "grammarId": "N1/noun-ni-iwasereba",
     "grammarPoint": "Noun に言わせれば",
-    "explanation": "Expresses 'according to', 'if you ask', 'in the opinion of'."
+    "explanation": "Expresses 'according to', 'if you ask', 'in the opinion of'.",
+    "prefixFurigana": "{先生|せんせい}に",
+    "segmentsFurigana": [
+      "{言|い}わせれば、",
+      "{毎日|まいにち}",
+      "{勉強|べんきょう}することが",
+      "{重要|じゅうよう}だと"
+    ],
+    "suffixFurigana": "{言|い}う。"
   },
   {
     "id": "star-n1-62",
@@ -6455,12 +9026,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ない。",
     "fullSentence": "この問題は日本に限ったことではない。",
-    "furigana": "この問題は日本に限ったことではない。",
+    "furigana": "この{問題|もんだい}は{日本|にっぽん}に{限|かぎ}ったことではない。",
     "romaji": "Kono mondai wa Nihon ni kagitta koto dewa nai.",
     "english": "This issue is not only limited to Japan.",
     "grammarId": "N1/ni-kagitta-koto-dewa-nai",
     "grammarPoint": "Noun に限ったことではない",
-    "explanation": "Indicates that something is not only limited to; 'not only', 'not just'."
+    "explanation": "Indicates that something is not only limited to; 'not only', 'not just'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "{問題|もんだい}は",
+      "{日本|にっぽん}に",
+      "{限|かぎ}ったことでは"
+    ],
+    "suffixFurigana": "ない。"
   },
   {
     "id": "star-n1-63",
@@ -6475,12 +9054,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "ない。",
     "fullSentence": "この試験が難しいのは、数学に限ったことでもない。",
-    "furigana": "この試験が難しいのは、数学に限ったことでもない。",
+    "furigana": "この{試験|しけん}が{難|むずか}しいのは、{数学|すうがく}に{限|かぎ}ったことでもない。",
     "romaji": "Kono shiken ga muzukashii no wa, suugaku ni kagitta koto demo nai.",
     "english": "The exam being difficult is not limited to just math.",
     "grammarId": "N1/ni-kagitta-koto-demo-nai",
     "grammarPoint": "Noun に限ったことでもない",
-    "explanation": "'Not limited to'; 'not just', 'not exclusively'."
+    "explanation": "'Not limited to'; 'not just', 'not exclusively'.",
+    "prefixFurigana": "この",
+    "segmentsFurigana": [
+      "{試験|しけん}が",
+      "{難|むずか}しいのは、",
+      "{数学|すうがく}に",
+      "{限|かぎ}ったことでも"
+    ],
+    "suffixFurigana": "ない。"
   },
   {
     "id": "star-n1-64",
@@ -6495,12 +9082,20 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     ],
     "suffix": "限る。",
     "fullSentence": "こういう時には家族に話すに限る。",
-    "furigana": "こういう時には家族に話すに限る。",
+    "furigana": "こういう{時|とき}には{家族|かぞく}に{話|はな}すに{限|かぎ}る。",
     "romaji": "Kou iu toki ni wa kazoku ni hanasu ni kagiru.",
     "english": "At times like this, there's nothing better than talking to your family.",
     "grammarId": "N1/ni-kagiru",
     "grammarPoint": "Noun に限る",
-    "explanation": "Expresses the idea that 'nothing but', 'nothing is better than'."
+    "explanation": "Expresses the idea that 'nothing but', 'nothing is better than'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "こういう",
+      "{時|とき}には",
+      "{家族|かぞく}に",
+      "{話|はな}すに"
+    ],
+    "suffixFurigana": "{限|かぎ}る。"
   },
   {
     "id": "star-n1-65",
@@ -6520,6 +9115,14 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     "english": "This is a salad with the carrots removed.",
     "grammarId": "N1/a-nuita-b",
     "grammarPoint": "Noun ぬいた Noun",
-    "explanation": "Expresses the idea of 'taking something out from something else'."
+    "explanation": "Expresses the idea of 'taking something out from something else'.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "この",
+      "サラダは",
+      "にんじんを",
+      "ぬいた"
+    ],
+    "suffixFurigana": "サラダです。"
   }
 ] as unknown as readonly StarScrambleItem[];

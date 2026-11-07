@@ -29,6 +29,7 @@ export default function StarScrambleSetupPage() {
   const [selectedLevels, setSelectedLevels] = useState<StarScrambleLevel[]>(["N5"]);
   const [size, setSize] = useState<StarScrambleSessionSize>(10);
   const [showEnglishHint, setShowEnglishHint] = useState<boolean>(true);
+  const [showFurigana, setShowFurigana] = useState<boolean>(false);
 
   const countsByLevel = useMemo(
     () => getStarScrambleCountsByLevel(STAR_SCRAMBLE_ITEMS),
@@ -59,6 +60,7 @@ export default function StarScrambleSetupPage() {
       levels: selectedLevels,
       size,
       showEnglishHint,
+      showFurigana,
     });
     saveGameSession("jlpt-star", session.sessionId, session);
     router.push(`/games/jlpt/star-scramble/play/${session.sessionId}`);
@@ -234,6 +236,38 @@ export default function StarScrambleSetupPage() {
                   </div>
                   <EyeOff size={18} className="shrink-0" />
                 </button>
+              </div>
+
+              <div className="mt-4 border-t border-[var(--line)] pt-4">
+                <div className="mb-2 text-xs font-bold uppercase tracking-wider text-[var(--muted)]">
+                  Kanji Furigana (Questions &amp; Options)
+                </div>
+                <div className="grid grid-cols-2 gap-2.5">
+                  <button
+                    type="button"
+                    aria-pressed={showFurigana}
+                    onClick={() => setShowFurigana(true)}
+                    className={`rounded-xl border px-3.5 py-2.5 text-left text-xs font-bold transition ${
+                      showFurigana
+                        ? "border-[var(--primary)] bg-[var(--sakura-light)] text-[var(--primary-fg)]"
+                        : "border-[var(--line)] bg-[var(--bg)] text-[var(--muted)] hover:border-[var(--sakura)]"
+                    }`}
+                  >
+                    あ Furigana ON
+                  </button>
+                  <button
+                    type="button"
+                    aria-pressed={!showFurigana}
+                    onClick={() => setShowFurigana(false)}
+                    className={`rounded-xl border px-3.5 py-2.5 text-left text-xs font-bold transition ${
+                      !showFurigana
+                        ? "border-[var(--primary)] bg-[var(--sakura-light)] text-[var(--primary-fg)]"
+                        : "border-[var(--line)] bg-[var(--bg)] text-[var(--muted)] hover:border-[var(--sakura)]"
+                    }`}
+                  >
+                    漢 Furigana OFF (Exam)
+                  </button>
+                </div>
               </div>
             </div>
 
