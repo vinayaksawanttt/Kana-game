@@ -94,6 +94,9 @@ describe("Stories Library Hub & Interactive Reading Room", () => {
 
     // Verify story title and native <ruby>/<rt> rendering
     expect(screen.getByRole("heading", { name: "学校へ行く" })).toBeTruthy();
+    expect(
+      screen.getByRole("button", { name: /Practice Grammar Cloze for This Story/i })
+    ).toBeTruthy();
     const rubyElements = container.querySelectorAll("ruby");
     expect(rubyElements.length).toBeGreaterThan(0);
     const rtElements = container.querySelectorAll("rt");

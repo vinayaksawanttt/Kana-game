@@ -287,6 +287,12 @@ export default function GamesHub() {
                       <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
                         <span className="font-japanese">聴解</span> Quick Response Blitz (<span className="font-japanese">即時応答</span> · Live)
                       </span>
+                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
+                        <span className="font-japanese">文章</span> Paragraph Cloze (<span className="font-japanese">文章の文法</span> · Live)
+                      </span>
+                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
+                        <span className="font-japanese">情報</span> Info Scanner (<span className="font-japanese">情報検索</span> · Live)
+                      </span>
                     </div>
 
                     <div className="mt-6 flex items-center gap-2 text-sm font-bold text-[var(--primary-fg)]">

@@ -5,6 +5,8 @@ import StarScramblePlayPage from "./star-scramble/play/[sessionId]/page";
 import PhoneticTrapPlayPage from "./phonetic-traps/play/[sessionId]/page";
 import SynonymMatchPlayPage from "./synonym-match/play/[sessionId]/page";
 import InstantReplyPlayPage from "./instant-reply/play/[sessionId]/page";
+import ParagraphClozePlayPage from "./paragraph-cloze/play/[sessionId]/page";
+import InfoScannerPlayPage from "./info-scanner/play/[sessionId]/page";
 import {
   STAR_SCRAMBLE_ITEMS,
   createStarScrambleSession,
@@ -21,6 +23,14 @@ import {
   INSTANT_REPLY_ITEMS,
   createInstantReplySession,
 } from "@/engine/jlptInstantReply";
+import {
+  PARAGRAPH_CLOZE_PASSAGES,
+  createParagraphClozeSession,
+} from "@/engine/jlptParagraphCloze";
+import {
+  INFO_SCANNER_DOCUMENTS,
+  createInfoScannerSession,
+} from "@/engine/jlptInfoScanner";
 
 const mockPush = vi.fn();
 const mockReplace = vi.fn();
@@ -215,6 +225,78 @@ describe("JLPT Games Quit Warning Guard", () => {
       fireEvent.click(screen.getByRole("button", { name: "Quit game" }));
       expect(sessionStorage.getItem(`jlpt-reply-session:${sessionId}`)).toBeNull();
       expect(mockReplace).toHaveBeenCalledWith("/games/jlpt/instant-reply");
+    });
+  });
+
+  describe("Paragraph Flow Cloze (/games/jlpt/paragraph-cloze/play/[sessionId])", () => {
+    beforeEach(() => {
+      const session = createParagraphClozeSession(
+        PARAGRAPH_CLOZE_PASSAGES,
+        {
+          levels: [5],
+          sourceFilter: "all",
+          passageCount: 2,
+          showEnglishSentenceHints: false,
+        },
+        () => 0.2
+      );
+      session.sessionId = sessionId;
+      sessionStorage.setItem(`jlpt-cloze-session:${sessionId}`, JSON.stringify(session));
+    });
+
+    it("prompts quit dialog on clicking home link, closes on Stay, and cleans up on Quit game", async () => {
+      render(<ParagraphClozePlayPage />);
+
+      const homeLink = screen.getByRole("link", { name: /paragraph flow cloze · 文章の文法 home/i });
+      fireEvent.click(homeLink);
+
+      expect(screen.getByRole("dialog", { name: /quit this game/i })).toBeTruthy();
+
+      fireEvent.click(screen.getByRole("button", { name: "Stay" }));
+      expect(screen.queryByRole("dialog")).toBeNull();
+
+      fireEvent.click(homeLink);
+      expect(screen.getByRole("dialog", { name: /quit this game/i })).toBeTruthy();
+
+      fireEvent.click(screen.getByRole("button", { name: "Quit game" }));
+      expect(sessionStorage.getItem(`jlpt-cloze-session:${sessionId}`)).toBeNull();
+      expect(mockReplace).toHaveBeenCalledWith("/games/jlpt/paragraph-cloze");
+    });
+  });
+
+  describe("Real-World Info Scanner (/games/jlpt/info-scanner/play/[sessionId])", () => {
+    beforeEach(() => {
+      const session = createInfoScannerSession(
+        INFO_SCANNER_DOCUMENTS,
+        {
+          levels: ["N5"],
+          categoryFilter: "all",
+          documentCount: 3,
+          showScenarioEnglish: true,
+        },
+        () => 0.2
+      );
+      session.sessionId = sessionId;
+      sessionStorage.setItem(`jlpt-scanner-session:${sessionId}`, JSON.stringify(session));
+    });
+
+    it("prompts quit dialog on clicking home link, closes on Stay, and cleans up on Quit game", async () => {
+      render(<InfoScannerPlayPage />);
+
+      const homeLink = screen.getByRole("link", { name: /real-world info scanner home/i });
+      fireEvent.click(homeLink);
+
+      expect(screen.getByRole("dialog", { name: /quit this game/i })).toBeTruthy();
+
+      fireEvent.click(screen.getByRole("button", { name: "Stay" }));
+      expect(screen.queryByRole("dialog")).toBeNull();
+
+      fireEvent.click(homeLink);
+      expect(screen.getByRole("dialog", { name: /quit this game/i })).toBeTruthy();
+
+      fireEvent.click(screen.getByRole("button", { name: "Quit game" }));
+      expect(sessionStorage.getItem(`jlpt-scanner-session:${sessionId}`)).toBeNull();
+      expect(mockReplace).toHaveBeenCalledWith("/games/jlpt/info-scanner");
     });
   });
 });

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-11-08T13:25:33.123Z",
-  "bundleHash": "6fc153e5c8d0",
+  "generatedAt": "2026-11-08T17:38:08.061Z",
+  "bundleHash": "fff548530e12",
   "assets": {
     "dictionary-index.json": {
       "hash": "3d98ac74562d",
@@ -31,9 +31,17 @@
       "hash": "05a835a617d4",
       "bytes": 258834
     },
+    "jlpt/info-scanner.json": {
+      "hash": "aa4d0fcb1853",
+      "bytes": 186290
+    },
     "jlpt/instant-reply.json": {
       "hash": "340f88c94471",
       "bytes": 345993
+    },
+    "jlpt/paragraph-cloze.json": {
+      "hash": "f1763e734bbb",
+      "bytes": 223810
     },
     "jlpt/phonetic-traps.json": {
       "hash": "6625a0a0247a",

@@ -2,7 +2,7 @@
 
 import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import {
   AlignJustify,
   ArrowLeft,
@@ -44,6 +44,11 @@ import { useStoryNarrator } from "@/hooks/useStoryNarrator";
 import { StoryCover } from "@/components/story-cover";
 import { addVocabularyToSrs } from "@/lib/srs/service";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
+import { saveGameSession } from "@/lib/game-core/storage";
+import {
+  PARAGRAPH_CLOZE_PASSAGES,
+  createParagraphClozeSession,
+} from "@/engine/jlptParagraphCloze";
 
 export default function StoryReadingRoomPage() {
   return (
@@ -72,6 +77,7 @@ function isPunctuationOnly(surface: string): boolean {
 }
 
 function StoryReadingRoomContent() {
+  const router = useRouter();
   const params = useParams<{ level: string; slug: string }>();
   const levelParam = params?.level ?? "N5";
   const slugParam = params?.slug ?? "";
@@ -86,6 +92,31 @@ function StoryReadingRoomContent() {
   );
   const narrator = useStoryNarrator(audioQueue);
   const sentenceElements = useRef(new Map<number, HTMLSpanElement>());
+
+  const matchingClozePassage = useMemo(() => {
+    if (!story) return null;
+    return (
+      PARAGRAPH_CLOZE_PASSAGES.find(
+        (p) =>
+          p.linkedStory?.slug === story.slug ||
+          p.linkedStory?.slug === slugParam ||
+          p.linkedStory?.slug === story.id
+      ) ?? null
+    );
+  }, [story, slugParam]);
+
+  function handlePracticeCloze() {
+    if (!matchingClozePassage) return;
+    const session = createParagraphClozeSession([matchingClozePassage], {
+      levels: [matchingClozePassage.jlpt],
+      sourceFilter: "story-scenes",
+      passageCount: 1,
+      showEnglishSentenceHints: true,
+      passageIds: [matchingClozePassage.id],
+    });
+    saveGameSession("jlpt-cloze", session.sessionId, session);
+    router.push(`/games/jlpt/paragraph-cloze/play/${session.sessionId}`);
+  }
 
   const [writingMode, setWritingMode] = useState<"horizontal" | "vertical">("horizontal");
   const [showFurigana, setShowFurigana] = useState(true);
@@ -276,12 +307,24 @@ function StoryReadingRoomContent() {
                 </span>
               </div>
 
-              {isCompleted && (
-                <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--success)]/35 bg-[var(--success-soft)] px-3 py-1 text-xs font-semibold text-[var(--success)]">
-                  <CheckCircle2 className="size-3.5" />
-                  Completed
-                </span>
-              )}
+              <div className="flex flex-wrap items-center gap-2">
+                {matchingClozePassage && (
+                  <button
+                    type="button"
+                    onClick={handlePracticeCloze}
+                    className="inline-flex items-center gap-1.5 rounded-full border border-[var(--primary)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)] transition hover:bg-[var(--primary)] hover:text-white cursor-pointer shadow-xs"
+                    title="Practice Paragraph Flow Cloze on this story passage"
+                  >
+                    <span>🧩 Practice Grammar Cloze for This Story</span>
+                  </button>
+                )}
+                {isCompleted && (
+                  <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--success)]/35 bg-[var(--success-soft)] px-3 py-1 text-xs font-semibold text-[var(--success)]">
+                    <CheckCircle2 className="size-3.5" />
+                    Completed
+                  </span>
+                )}
+              </div>
             </div>
 
             <h1
