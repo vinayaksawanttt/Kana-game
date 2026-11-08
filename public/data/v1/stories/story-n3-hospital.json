@@ -1,0 +1,4629 @@
+{
+  "id": "story-n3-hospital",
+  "title": "病院での診察：初めての総合病院",
+  "titleRomaji": "Byouin de no Shinsatsu: Hajimete no Sougou Byouin",
+  "titleEn": "Hospital Visit: First Time at a General Hospital",
+  "level": "N3",
+  "category": "Everyday Life",
+  "tags": [
+    "Everyday Life",
+    "N3",
+    "Healthcare",
+    "Hospital",
+    "Dialogue"
+  ],
+  "paragraphs": [
+    {
+      "ja": "朝起きた時から喉の奥が激しく痛み、体温計で熱を測ってみると三十八度五分もありました。風邪をこじらせてはいけないと思い、近所にある大きな総合病院の内科を受診することにしました。正面玄関の受付窓口に行くと、親切な職員が「初めての方はこちらの問診票にご記入ください」と案内してくれました。健康保険証を提示した上で、待合室のソファに座り、現在の自覚症状やアレルギーの有無を丁寧に書き込みました。",
+      "en": "From the moment I awoke in the morning, the back of my throat ached severely, and when I took my temperature with a thermometer, it was 38.5 degrees. Thinking that I shouldn't let the cold worsen, I decided to consult the internal medicine department of a large nearby general hospital. When I went to the reception counter at the main entrance, a courteous staff member guided me: 'First-time patients, please fill out this medical questionnaire.' After presenting my health insurance card, I sat on a sofa in the waiting lounge and meticulously wrote down my current subjective symptoms and any allergies.",
+      "tokens": [
+        {
+          "surface": "朝起き"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "時",
+          "reading": "とき",
+          "meaning": "time; hour; occasion",
+          "baseForm": "時",
+          "level": "N3"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "喉",
+          "reading": "のど",
+          "meaning": "throat",
+          "baseForm": "喉",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "奥",
+          "reading": "おく",
+          "meaning": "interior; inner part",
+          "baseForm": "奥",
+          "level": "N3"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "激",
+          "reading": "はげ",
+          "meaning": "violent, chafe, enraged",
+          "baseForm": "激",
+          "level": "N1"
+        },
+        {
+          "surface": "しく"
+        },
+        {
+          "surface": "痛み"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "体温計"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "熱",
+          "reading": "ねつ",
+          "meaning": "fever",
+          "baseForm": "熱",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "測"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "みる"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "三十"
+        },
+        {
+          "surface": "八度"
+        },
+        {
+          "surface": "五分"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "ありま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "風邪"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "こ"
+        },
+        {
+          "surface": "じ"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "せ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "はい",
+          "meaning": "yes",
+          "baseForm": "はい",
+          "level": "N5"
+        },
+        {
+          "surface": "け"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "思い",
+          "reading": "おもい",
+          "meaning": "to think; to feel",
+          "baseForm": "思う",
+          "level": "N4"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "近所"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "大きな",
+          "reading": "おおきな",
+          "meaning": "big",
+          "baseForm": "大きな",
+          "level": "N5"
+        },
+        {
+          "surface": "総合"
+        },
+        {
+          "surface": "病院"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "内科"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "受診"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "ことに"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "正面"
+        },
+        {
+          "surface": "玄関",
+          "reading": "げんかん",
+          "meaning": "entry hall",
+          "baseForm": "玄関",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "受付"
+        },
+        {
+          "surface": "窓口",
+          "reading": "まどぐち",
+          "meaning": "ticket window",
+          "baseForm": "窓口",
+          "level": "N2"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "行く",
+          "reading": "いく",
+          "meaning": "to go",
+          "baseForm": "行く",
+          "level": "N5"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "親切",
+          "reading": "しんせつ",
+          "meaning": "kindness",
+          "baseForm": "親切",
+          "level": "N4"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "職員"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "初めて",
+          "reading": "はじめて",
+          "meaning": "for the first time",
+          "baseForm": "初めて",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "方",
+          "reading": "かた",
+          "meaning": "person; way of doing",
+          "baseForm": "方",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "こちら"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "問診"
+        },
+        {
+          "surface": "票"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "ご"
+        },
+        {
+          "surface": "記入"
+        },
+        {
+          "surface": "くだ"
+        },
+        {
+          "surface": "さい"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "案内",
+          "reading": "あんない",
+          "meaning": "to guide",
+          "baseForm": "案内",
+          "level": "N4"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "てく"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "健康"
+        },
+        {
+          "surface": "保険",
+          "reading": "ほけん",
+          "meaning": "insurance; guarantee",
+          "baseForm": "保険",
+          "level": "N1"
+        },
+        {
+          "surface": "証",
+          "reading": "あかし",
+          "meaning": "proof; evidence",
+          "baseForm": "証",
+          "level": "N1"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "提示"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "上",
+          "reading": "うえ",
+          "meaning": "on top of",
+          "baseForm": "上",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "待合室"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ソファ"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "座り",
+          "reading": "すわり",
+          "meaning": "to sit",
+          "baseForm": "座る",
+          "level": "N5"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "現在"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "自覚"
+        },
+        {
+          "surface": "症状"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "アレルギー"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "有無"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "丁寧",
+          "reading": "ていねい",
+          "meaning": "polite",
+          "baseForm": "丁寧",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "書き込み"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "朝起きた時から喉の奥が激しく痛み、体温計で熱を測ってみると三十八度五分もありました。",
+          "literalEn": "朝起き [past] time [from] throat ['s / of] interior [subj] violent しく 痛み 体温計 [in/by] fever [obj] って みる [with/and] 三十 八度 五分 [also] ありま した",
+          "naturalEn": "From the moment I awoke in the morning, the back of my throat ached severely, and when I took my temperature with a thermometer, it was 38.5 degrees.",
+          "tokens": [
+            {
+              "surface": "朝起き"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "時",
+              "reading": "とき",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "喉",
+              "reading": "のど",
+              "meaning": "throat",
+              "baseForm": "喉",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "奥",
+              "reading": "おく",
+              "meaning": "interior; inner part",
+              "baseForm": "奥",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "激",
+              "reading": "はげ",
+              "meaning": "violent, chafe, enraged",
+              "baseForm": "激",
+              "level": "N1"
+            },
+            {
+              "surface": "しく"
+            },
+            {
+              "surface": "痛み"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "体温計"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "熱",
+              "reading": "ねつ",
+              "meaning": "fever",
+              "baseForm": "熱",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "測"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "みる"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "三十"
+            },
+            {
+              "surface": "八度"
+            },
+            {
+              "surface": "五分"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "風邪をこじらせてはいけないと思い、近所にある大きな総合病院の内科を受診することにしました。",
+          "literalEn": "風邪 [obj] [and] yes [not] [with/and] to think 近所 [at/to] to be big 総合 病院 ['s / of] 内科 [obj] 受診 to do ことに しま した",
+          "naturalEn": "Thinking that I shouldn't let the cold worsen, I decided to consult the internal medicine department of a large nearby general hospital.",
+          "tokens": [
+            {
+              "surface": "風邪"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "こ"
+            },
+            {
+              "surface": "じ"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "はい",
+              "meaning": "yes",
+              "baseForm": "はい",
+              "level": "N5"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "思い",
+              "reading": "おもい",
+              "meaning": "to think; to feel",
+              "baseForm": "思う",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "近所"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "総合"
+            },
+            {
+              "surface": "病院"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "内科"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "受診"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "正面玄関の受付窓口に行くと、親切な職員が「初めての方はこちらの問診票にご記入ください」と案内してくれました。",
+          "literalEn": "正面 entry hall ['s / of] 受付 ticket window [at/to] to go [with/and] kindness 職員 [subj] for the first time ['s / of] person [topic] こちら ['s / of] 問診 [at/to] 記入 くだ さい [with/and] to guide てく した",
+          "naturalEn": "When I went to the reception counter at the main entrance, a courteous staff member guided me: 'First-time patients, please fill out this medical questionnaire.'",
+          "tokens": [
+            {
+              "surface": "正面"
+            },
+            {
+              "surface": "玄関",
+              "reading": "げんかん",
+              "meaning": "entry hall",
+              "baseForm": "玄関",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "受付"
+            },
+            {
+              "surface": "窓口",
+              "reading": "まどぐち",
+              "meaning": "ticket window",
+              "baseForm": "窓口",
+              "level": "N2"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "行く",
+              "reading": "いく",
+              "meaning": "to go",
+              "baseForm": "行く",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "親切",
+              "reading": "しんせつ",
+              "meaning": "kindness",
+              "baseForm": "親切",
+              "level": "N4"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "職員"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "初めて",
+              "reading": "はじめて",
+              "meaning": "for the first time",
+              "baseForm": "初めて",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "方",
+              "reading": "かた",
+              "meaning": "person; way of doing",
+              "baseForm": "方",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "こちら"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "問診"
+            },
+            {
+              "surface": "票"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "ご"
+            },
+            {
+              "surface": "記入"
+            },
+            {
+              "surface": "くだ"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "案内",
+              "reading": "あんない",
+              "meaning": "to guide",
+              "baseForm": "案内",
+              "level": "N4"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "健康保険証を提示した上で、待合室のソファに座り、現在の自覚症状やアレルギーの有無を丁寧に書き込みました。",
+          "literalEn": "健康 insurance proof [obj] 提示 した on top of [in/by] 待合室 ['s / of] ソファ [at/to] to sit 現在 ['s / of] 自覚 症状 アレルギー ['s / of] 有無 [obj] polite [at/to] 書き込み した",
+          "naturalEn": "After presenting my health insurance card, I sat on a sofa in the waiting lounge and meticulously wrote down my current subjective symptoms and any allergies.",
+          "tokens": [
+            {
+              "surface": "健康"
+            },
+            {
+              "surface": "保険",
+              "reading": "ほけん",
+              "meaning": "insurance; guarantee",
+              "baseForm": "保険",
+              "level": "N1"
+            },
+            {
+              "surface": "証",
+              "reading": "あかし",
+              "meaning": "proof; evidence",
+              "baseForm": "証",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "提示"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "上",
+              "reading": "うえ",
+              "meaning": "on top of",
+              "baseForm": "上",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "待合室"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ソファ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "座り",
+              "reading": "すわり",
+              "meaning": "to sit",
+              "baseForm": "座る",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "現在"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "自覚"
+            },
+            {
+              "surface": "症状"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "アレルギー"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "有無"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "丁寧",
+              "reading": "ていねい",
+              "meaning": "polite",
+              "baseForm": "丁寧",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "書き込み"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "三十分ほど待っているうちに、「三十五番の番号札をお持ちの田中さん、第一診察室へお入りください」とアナウンスが流れました。診察室のドアを軽く二回ノックして「失礼します」と挨拶しながら部屋に入ると、温和そうな医師が迎えてくれました。「いつ頃から喉の痛みや発熱が始まりましたか」と尋ねられ、昨日からの症状の経過を順を追って説明しました。医師はペンライトで喉の腫れを入念に確認した上で、聴診器を胸と背中に当てて呼吸の音を注意深く聴いてくれました。",
+      "en": "While waiting for about thirty minutes, an announcement called: 'Mr. Tanaka holding number ticket 35, please enter Examination Room 1.' After lightly knocking twice on the consultation room door and saying 'Excuse me,' I stepped inside and was greeted by a gentle-looking physician. Asked 'Around when did the throat pain and fever commence?', I explained the chronological progression of symptoms starting from yesterday. After carefully checking the inflammation in my throat with a penlight, the doctor placed a stethoscope against my chest and back to listen intently to my breathing.",
+      "tokens": [
+        {
+          "surface": "三",
+          "reading": "さん",
+          "meaning": "three",
+          "baseForm": "三",
+          "level": "N5"
+        },
+        {
+          "surface": "十分",
+          "reading": "じゅうぶん",
+          "meaning": "enough",
+          "baseForm": "十分",
+          "level": "N4"
+        },
+        {
+          "surface": "ほど",
+          "meaning": "extent",
+          "baseForm": "ほど",
+          "level": "N4"
+        },
+        {
+          "surface": "待",
+          "reading": "ま",
+          "meaning": "to wait",
+          "baseForm": "待つ",
+          "level": "N5"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "いる",
+          "meaning": "to be; to have (used for people and animals)",
+          "baseForm": "いる",
+          "level": "N5"
+        },
+        {
+          "surface": "うち",
+          "meaning": "within",
+          "baseForm": "うち",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "三十五"
+        },
+        {
+          "surface": "番"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "番号",
+          "reading": "ばんごう",
+          "meaning": "number",
+          "baseForm": "番号",
+          "level": "N5"
+        },
+        {
+          "surface": "札",
+          "reading": "さつ",
+          "meaning": "banknote; bill; note",
+          "baseForm": "札",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "お"
+        },
+        {
+          "surface": "持ち",
+          "reading": "もち",
+          "meaning": "hold; charge; keep possession",
+          "baseForm": "持ち",
+          "level": "N1"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "meaning": "Tanaka (surname)",
+          "baseForm": "田中",
+          "level": "N5"
+        },
+        {
+          "surface": "さん",
+          "meaning": "Mr or Mrs",
+          "baseForm": "さん",
+          "level": "N1"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "第一"
+        },
+        {
+          "surface": "診察"
+        },
+        {
+          "surface": "室"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "お"
+        },
+        {
+          "surface": "入り",
+          "reading": "はいり",
+          "meaning": "to enter; to contain",
+          "baseForm": "入る",
+          "level": "N5"
+        },
+        {
+          "surface": "くだ"
+        },
+        {
+          "surface": "さい"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "アナウンス"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "流れ",
+          "reading": "ながれ",
+          "meaning": "stream; current",
+          "baseForm": "流れ",
+          "level": "N3"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "診察"
+        },
+        {
+          "surface": "室"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ドア",
+          "meaning": "Western style door",
+          "baseForm": "ドア",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "軽"
+        },
+        {
+          "surface": "く"
+        },
+        {
+          "surface": "二回"
+        },
+        {
+          "surface": "ノック"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "失礼"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "挨拶"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "meaning": "room",
+          "baseForm": "部屋",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "入る",
+          "reading": "はいる",
+          "meaning": "to enter; to contain",
+          "baseForm": "入る",
+          "level": "N5"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "温和"
+        },
+        {
+          "surface": "そう",
+          "meaning": "really",
+          "baseForm": "そう",
+          "level": "N4"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "医師"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "迎え"
+        },
+        {
+          "surface": "てく"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "いつ",
+          "meaning": "when",
+          "baseForm": "いつ",
+          "level": "N5"
+        },
+        {
+          "surface": "頃"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "喉",
+          "reading": "のど",
+          "meaning": "throat",
+          "baseForm": "喉",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "痛み"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "発熱"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "始まり",
+          "reading": "はじまり",
+          "meaning": "origin; beginning",
+          "baseForm": "始まり",
+          "level": "N3"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "尋",
+          "reading": "たず",
+          "meaning": "inquire, fathom, look for",
+          "baseForm": "尋",
+          "level": "N1"
+        },
+        {
+          "surface": "ね",
+          "meaning": "value; price; cost",
+          "baseForm": "ね",
+          "level": "N3"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "昨日",
+          "reading": "きのう",
+          "meaning": "yesterday",
+          "baseForm": "昨日",
+          "level": "N5"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "症状"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "経過"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "順"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "追って"
+        },
+        {
+          "surface": "説明",
+          "reading": "せつめい",
+          "meaning": "explanation",
+          "baseForm": "説明",
+          "level": "N4"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "医師"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "ペンライト"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "喉",
+          "reading": "のど",
+          "meaning": "throat",
+          "baseForm": "喉",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "腫れ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "入念"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "確認"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "上",
+          "reading": "うえ",
+          "meaning": "on top of",
+          "baseForm": "上",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "聴診"
+        },
+        {
+          "surface": "器"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "胸"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "背中",
+          "reading": "せなか",
+          "meaning": "back of the body",
+          "baseForm": "背中",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "当て"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "呼吸"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "音",
+          "reading": "おと",
+          "meaning": "sound; note",
+          "baseForm": "音",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "注意"
+        },
+        {
+          "surface": "深",
+          "reading": "ふか",
+          "meaning": "deep",
+          "baseForm": "深い",
+          "level": "N4"
+        },
+        {
+          "surface": "く"
+        },
+        {
+          "surface": "聴"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "てく"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "三十分ほど待っているうちに、「三十五番の番号札をお持ちの田中さん、第一診察室へお入りください」とアナウンスが流れました。",
+          "literalEn": "three enough [as much as] to wait って to be within [at/to] 三十五 ['s / of] number banknote [obj] hold ['s / of] Tanaka [Mr/Ms] 第一 診察 [toward] to enter くだ さい [with/and] アナウンス [subj] stream した",
+          "naturalEn": "While waiting for about thirty minutes, an announcement called: 'Mr. Tanaka holding number ticket 35, please enter Examination Room 1.'",
+          "tokens": [
+            {
+              "surface": "三",
+              "reading": "さん",
+              "meaning": "three",
+              "baseForm": "三",
+              "level": "N5"
+            },
+            {
+              "surface": "十分",
+              "reading": "じゅうぶん",
+              "meaning": "enough",
+              "baseForm": "十分",
+              "level": "N4"
+            },
+            {
+              "surface": "ほど",
+              "meaning": "extent",
+              "baseForm": "ほど",
+              "level": "N4"
+            },
+            {
+              "surface": "待",
+              "reading": "ま",
+              "meaning": "to wait",
+              "baseForm": "待つ",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "うち",
+              "meaning": "within",
+              "baseForm": "うち",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "三十五"
+            },
+            {
+              "surface": "番"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "番号",
+              "reading": "ばんごう",
+              "meaning": "number",
+              "baseForm": "番号",
+              "level": "N5"
+            },
+            {
+              "surface": "札",
+              "reading": "さつ",
+              "meaning": "banknote; bill; note",
+              "baseForm": "札",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "持ち",
+              "reading": "もち",
+              "meaning": "hold; charge; keep possession",
+              "baseForm": "持ち",
+              "level": "N1"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "田中",
+              "reading": "たなか",
+              "meaning": "Tanaka (surname)",
+              "baseForm": "田中",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "第一"
+            },
+            {
+              "surface": "診察"
+            },
+            {
+              "surface": "室"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "入り",
+              "reading": "はいり",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "くだ"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "アナウンス"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "流れ",
+              "reading": "ながれ",
+              "meaning": "stream; current",
+              "baseForm": "流れ",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "診察室のドアを軽く二回ノックして「失礼します」と挨拶しながら部屋に入ると、温和そうな医師が迎えてくれました。",
+          "literalEn": "診察 ['s / of] Western style door [obj] 二回 ノック [and] 失礼 [polite] [with/and] 挨拶 ながら room [at/to] to enter [with/and] 温和 really 医師 [subj] 迎え てく した",
+          "naturalEn": "After lightly knocking twice on the consultation room door and saying 'Excuse me,' I stepped inside and was greeted by a gentle-looking physician.",
+          "tokens": [
+            {
+              "surface": "診察"
+            },
+            {
+              "surface": "室"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ドア",
+              "meaning": "Western style door",
+              "baseForm": "ドア",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "軽"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "二回"
+            },
+            {
+              "surface": "ノック"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "失礼"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "挨拶"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "部屋",
+              "reading": "へや",
+              "meaning": "room",
+              "baseForm": "部屋",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入る",
+              "reading": "はいる",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "温和"
+            },
+            {
+              "surface": "そう",
+              "meaning": "really",
+              "baseForm": "そう",
+              "level": "N4"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "医師"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "迎え"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「いつ頃から喉の痛みや発熱が始まりましたか」と尋ねられ、昨日からの症状の経過を順を追って説明しました。",
+          "literalEn": "when [from] throat ['s / of] 痛み 発熱 [subj] origin した [?] [with/and] inquire [right?] yesterday [from] ['s / of] 症状 ['s / of] 経過 [obj] [obj] 追って explanation しま した",
+          "naturalEn": "Asked 'Around when did the throat pain and fever commence?', I explained the chronological progression of symptoms starting from yesterday.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "いつ",
+              "meaning": "when",
+              "baseForm": "いつ",
+              "level": "N5"
+            },
+            {
+              "surface": "頃"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "喉",
+              "reading": "のど",
+              "meaning": "throat",
+              "baseForm": "喉",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "痛み"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "発熱"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "始まり",
+              "reading": "はじまり",
+              "meaning": "origin; beginning",
+              "baseForm": "始まり",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "尋",
+              "reading": "たず",
+              "meaning": "inquire, fathom, look for",
+              "baseForm": "尋",
+              "level": "N1"
+            },
+            {
+              "surface": "ね",
+              "meaning": "value; price; cost",
+              "baseForm": "ね",
+              "level": "N3"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "昨日",
+              "reading": "きのう",
+              "meaning": "yesterday",
+              "baseForm": "昨日",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "症状"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "経過"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "順"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "追って"
+            },
+            {
+              "surface": "説明",
+              "reading": "せつめい",
+              "meaning": "explanation",
+              "baseForm": "説明",
+              "level": "N4"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "医師はペンライトで喉の腫れを入念に確認した上で、聴診器を胸と背中に当てて呼吸の音を注意深く聴いてくれました。",
+          "literalEn": "医師 [topic] ペンライト [in/by] throat ['s / of] 腫れ [obj] 入念 [at/to] 確認 した on top of [in/by] 聴診 [obj] [with/and] back of the body [at/to] 当て [and] 呼吸 ['s / of] sound [obj] 注意 deep てく した",
+          "naturalEn": "After carefully checking the inflammation in my throat with a penlight, the doctor placed a stethoscope against my chest and back to listen intently to my breathing.",
+          "tokens": [
+            {
+              "surface": "医師"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "ペンライト"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "喉",
+              "reading": "のど",
+              "meaning": "throat",
+              "baseForm": "喉",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "腫れ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "入念"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "確認"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "上",
+              "reading": "うえ",
+              "meaning": "on top of",
+              "baseForm": "上",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "聴診"
+            },
+            {
+              "surface": "器"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "胸"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "背中",
+              "reading": "せなか",
+              "meaning": "back of the body",
+              "baseForm": "背中",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "当て"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "呼吸"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "音",
+              "reading": "おと",
+              "meaning": "sound; note",
+              "baseForm": "音",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "注意"
+            },
+            {
+              "surface": "深",
+              "reading": "ふか",
+              "meaning": "deep",
+              "baseForm": "深い",
+              "level": "N4"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "聴"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "「典型的な急性咽頭炎ですね。喉の炎症を抑える抗生剤と解熱剤を出しておきましょう」と診断が下されました。「熱が下がるまでは無理をせず、水分をこまめに補給して安静にするようにしてください」と助言を受けました。丁寧な診察のおかげで漠然とした不安が和らぎ、医師にお礼を述べて診察室を後にしました。自動精算機で診療費の支払いを済ませると、領収書と一緒に処方箋が機械から発行されました。",
+      "en": "'It appears to be a textbook case of acute pharyngitis. Let us prescribe an antibiotic to reduce throat inflammation and an antipyretic for the fever,' he diagnosed. I received advice: 'Please refrain from overworking until your fever abates, stay hydrated frequently, and remain at rest.' Thanks to the thorough examination, my vague anxieties eased, and I thanked the physician before departing the examination room. Once I finished paying the medical fees at the automated payment machine, a prescription slip was dispensed alongside the receipt.",
+      "tokens": [
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "典型"
+        },
+        {
+          "surface": "的"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "急性"
+        },
+        {
+          "surface": "咽頭炎"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "ね",
+          "meaning": "value; price; cost",
+          "baseForm": "ね",
+          "level": "N3"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "喉",
+          "reading": "のど",
+          "meaning": "throat",
+          "baseForm": "喉",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "炎症"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "抑える"
+        },
+        {
+          "surface": "抗生"
+        },
+        {
+          "surface": "剤"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "解熱剤"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "出し",
+          "reading": "だし",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "おき"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "しょう"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "診断"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "下",
+          "reading": "した",
+          "meaning": "below",
+          "baseForm": "下",
+          "level": "N5"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "熱",
+          "reading": "ねつ",
+          "meaning": "fever",
+          "baseForm": "熱",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "下がる"
+        },
+        {
+          "surface": "まで"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "無理"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "せ"
+        },
+        {
+          "surface": "ず"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "水分"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "こまめ"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "補給"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "安静"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "よう"
+        },
+        {
+          "surface": "にし"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "くだ"
+        },
+        {
+          "surface": "さい"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "助言"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "受け"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "丁寧",
+          "reading": "ていねい",
+          "meaning": "polite",
+          "baseForm": "丁寧",
+          "level": "N4"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "診察"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "おかげ"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "漠然と"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "不安"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "和"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "ぎ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "医師"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "お礼",
+          "reading": "おれい",
+          "meaning": "expression of gratitude",
+          "baseForm": "お礼",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "述"
+        },
+        {
+          "surface": "べ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "診察"
+        },
+        {
+          "surface": "室"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "後に"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "自動"
+        },
+        {
+          "surface": "精算"
+        },
+        {
+          "surface": "機"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "診療"
+        },
+        {
+          "surface": "費"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "支払い"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "済ませる"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "領収"
+        },
+        {
+          "surface": "書"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "一緒",
+          "reading": "いっしょ",
+          "meaning": "together",
+          "baseForm": "一緒",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "処方箋"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "機械",
+          "reading": "きかい",
+          "meaning": "machine; mechanism",
+          "baseForm": "機械",
+          "level": "N3"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "発行"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "「典型的な急性咽頭炎ですね。喉の炎症を抑える抗生剤と解熱剤を出しておきましょう」と診断が下されました。",
+          "literalEn": "典型 急性 咽頭炎 [is] [right?] throat ['s / of] 炎症 [obj] 抑える 抗生 [with/and] 解熱剤 [obj] to put out [and] おき しょう [with/and] 診断 [subj] below した",
+          "naturalEn": "'It appears to be a textbook case of acute pharyngitis. Let us prescribe an antibiotic to reduce throat inflammation and an antipyretic for the fever,' he diagnosed.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "典型"
+            },
+            {
+              "surface": "的"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "急性"
+            },
+            {
+              "surface": "咽頭炎"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "ね",
+              "meaning": "value; price; cost",
+              "baseForm": "ね",
+              "level": "N3"
+            },
+            {
+              "surface": "。"
+            },
+            {
+              "surface": "喉",
+              "reading": "のど",
+              "meaning": "throat",
+              "baseForm": "喉",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "炎症"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "抑える"
+            },
+            {
+              "surface": "抗生"
+            },
+            {
+              "surface": "剤"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "解熱剤"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "出し",
+              "reading": "だし",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "おき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "しょう"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "診断"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "下",
+              "reading": "した",
+              "meaning": "below",
+              "baseForm": "下",
+              "level": "N5"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「熱が下がるまでは無理をせず、水分をこまめに補給して安静にするようにしてください」と助言を受けました。",
+          "literalEn": "fever [subj] 下がる [until] [topic] 無理 [obj] 水分 [obj] こまめ [at/to] 補給 [and] 安静 [at/to] to do よう にし [and] くだ さい [with/and] 助言 [obj] 受け した",
+          "naturalEn": "I received advice: 'Please refrain from overworking until your fever abates, stay hydrated frequently, and remain at rest.'",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "熱",
+              "reading": "ねつ",
+              "meaning": "fever",
+              "baseForm": "熱",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "下がる"
+            },
+            {
+              "surface": "まで"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "無理"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "ず"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "水分"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "こまめ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "補給"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "安静"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "にし"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "くだ"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "助言"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "受け"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "丁寧な診察のおかげで漠然とした不安が和らぎ、医師にお礼を述べて診察室を後にしました。",
+          "literalEn": "polite 診察 ['s / of] おかげ [in/by] 漠然と した 不安 [subj] 医師 [at/to] expression of gratitude [obj] [and] 診察 [obj] 後に しま した",
+          "naturalEn": "Thanks to the thorough examination, my vague anxieties eased, and I thanked the physician before departing the examination room.",
+          "tokens": [
+            {
+              "surface": "丁寧",
+              "reading": "ていねい",
+              "meaning": "polite",
+              "baseForm": "丁寧",
+              "level": "N4"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "診察"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "おかげ"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "漠然と"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "不安"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "和"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "ぎ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "医師"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "お礼",
+              "reading": "おれい",
+              "meaning": "expression of gratitude",
+              "baseForm": "お礼",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "述"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "診察"
+            },
+            {
+              "surface": "室"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "後に"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "自動精算機で診療費の支払いを済ませると、領収書と一緒に処方箋が機械から発行されました。",
+          "literalEn": "自動 精算 [in/by] 診療 ['s / of] 支払い [obj] 済ませる [with/and] 領収 [with/and] together [at/to] 処方箋 [subj] machine [from] 発行 した",
+          "naturalEn": "Once I finished paying the medical fees at the automated payment machine, a prescription slip was dispensed alongside the receipt.",
+          "tokens": [
+            {
+              "surface": "自動"
+            },
+            {
+              "surface": "精算"
+            },
+            {
+              "surface": "機"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "診療"
+            },
+            {
+              "surface": "費"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "支払い"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "済ませる"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "領収"
+            },
+            {
+              "surface": "書"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "一緒",
+              "reading": "いっしょ",
+              "meaning": "together",
+              "baseForm": "一緒",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "処方箋"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "機械",
+              "reading": "きかい",
+              "meaning": "machine; mechanism",
+              "baseForm": "機械",
+              "level": "N3"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "発行"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "病院のすぐ隣にある調剤薬局へ処方箋を持参すると、薬剤師がお薬手帳の確認をしてくれました。「このお薬は胃に負担がかかることがありますので、必ず食後に多めの水でお飲みください」と服薬指導を受けました。薬局を出た私は、指示通りに栄養のある温かいおかゆを食べて、処方された薬を飲んですぐに布団に入りました。二日ほど十分な休養を取ったおかげで熱も無事に下がり、健康のありがたさを改めて実感することになりました。",
+      "en": "When I brought the prescription slip to the dispensing pharmacy adjacent to the hospital, the pharmacist checked my medicine record handbook. I received dosage counseling: 'Since this medicine may burden the stomach, please always take it after meals with plenty of water.' Leaving the pharmacy, I ate nutritious warm rice porridge as instructed, took the prescribed medication, and immediately climbed into bed. Thanks to taking ample rest for about two days, my fever safely broke, and I came to appreciate once again the blessing of good health.",
+      "tokens": [
+        {
+          "surface": "病院"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "すぐ",
+          "meaning": "immediately; soon; easily",
+          "baseForm": "すぐ",
+          "level": "N5"
+        },
+        {
+          "surface": "隣",
+          "reading": "となり",
+          "meaning": "next door to",
+          "baseForm": "隣",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "調剤"
+        },
+        {
+          "surface": "薬局"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "処方箋"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "持参"
+        },
+        {
+          "surface": "すると",
+          "meaning": "then",
+          "baseForm": "すると",
+          "level": "N4"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "薬剤師"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "お"
+        },
+        {
+          "surface": "薬",
+          "reading": "くすり",
+          "meaning": "medicine",
+          "baseForm": "薬",
+          "level": "N5"
+        },
+        {
+          "surface": "手帳"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "確認"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "てく"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "この",
+          "meaning": "this",
+          "baseForm": "この",
+          "level": "N5"
+        },
+        {
+          "surface": "お"
+        },
+        {
+          "surface": "薬",
+          "reading": "くすり",
+          "meaning": "medicine",
+          "baseForm": "薬",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "胃"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "負担"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "かかる"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "あり"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "ので"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "必ず"
+        },
+        {
+          "surface": "食後"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "多め"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "水",
+          "reading": "みず",
+          "meaning": "water",
+          "baseForm": "水",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "お"
+        },
+        {
+          "surface": "飲",
+          "reading": "の",
+          "meaning": "to drink",
+          "baseForm": "飲む",
+          "level": "N5"
+        },
+        {
+          "surface": "み"
+        },
+        {
+          "surface": "くだ"
+        },
+        {
+          "surface": "さい"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "服薬"
+        },
+        {
+          "surface": "指導"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "受け"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "薬局"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "出",
+          "reading": "だ",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "私",
+          "reading": "わたくし",
+          "meaning": "(humble) I; myself",
+          "baseForm": "私",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "指示"
+        },
+        {
+          "surface": "通り",
+          "reading": "とおり",
+          "meaning": "in accordance with ~; following ~; ~ Street",
+          "baseForm": "通り",
+          "level": "N3"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "栄養"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "温かい",
+          "reading": "ぬるかい",
+          "meaning": "luke warm",
+          "baseForm": "温い",
+          "level": "N5"
+        },
+        {
+          "surface": "おかゆ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "食",
+          "reading": "く",
+          "meaning": "(male) (vulgar) to eat",
+          "baseForm": "食う",
+          "level": "N3"
+        },
+        {
+          "surface": "べ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "処方"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "薬",
+          "reading": "くすり",
+          "meaning": "medicine",
+          "baseForm": "薬",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "飲",
+          "reading": "の",
+          "meaning": "to drink",
+          "baseForm": "飲む",
+          "level": "N5"
+        },
+        {
+          "surface": "んで"
+        },
+        {
+          "surface": "すぐ",
+          "meaning": "immediately; soon; easily",
+          "baseForm": "すぐ",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "布団"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "入り",
+          "reading": "はいり",
+          "meaning": "to enter; to contain",
+          "baseForm": "入る",
+          "level": "N5"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "二日"
+        },
+        {
+          "surface": "ほど",
+          "meaning": "extent",
+          "baseForm": "ほど",
+          "level": "N4"
+        },
+        {
+          "surface": "十分",
+          "reading": "じゅうぶん",
+          "meaning": "enough",
+          "baseForm": "十分",
+          "level": "N4"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "休養"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "取",
+          "reading": "と",
+          "meaning": "to take something",
+          "baseForm": "取る",
+          "level": "N5"
+        },
+        {
+          "surface": "っ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "おかげ"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "熱",
+          "reading": "ねつ",
+          "meaning": "fever",
+          "baseForm": "熱",
+          "level": "N4"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "無事",
+          "reading": "ぶじ",
+          "meaning": "safety; peace; quietness",
+          "baseForm": "無事",
+          "level": "N3"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "下がり"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "健康"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ありがたさ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "改めて"
+        },
+        {
+          "surface": "実感"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "ことに"
+        },
+        {
+          "surface": "なり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "病院のすぐ隣にある調剤薬局へ処方箋を持参すると、薬剤師がお薬手帳の確認をしてくれました。",
+          "literalEn": "病院 ['s / of] immediately next door to [at/to] to be 調剤 薬局 [toward] 処方箋 [obj] 持参 then 薬剤師 [subj] medicine 手帳 ['s / of] 確認 [obj] てく した",
+          "naturalEn": "When I brought the prescription slip to the dispensing pharmacy adjacent to the hospital, the pharmacist checked my medicine record handbook.",
+          "tokens": [
+            {
+              "surface": "病院"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "すぐ",
+              "meaning": "immediately; soon; easily",
+              "baseForm": "すぐ",
+              "level": "N5"
+            },
+            {
+              "surface": "隣",
+              "reading": "となり",
+              "meaning": "next door to",
+              "baseForm": "隣",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "調剤"
+            },
+            {
+              "surface": "薬局"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "処方箋"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "持参"
+            },
+            {
+              "surface": "すると",
+              "meaning": "then",
+              "baseForm": "すると",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "薬剤師"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "薬",
+              "reading": "くすり",
+              "meaning": "medicine",
+              "baseForm": "薬",
+              "level": "N5"
+            },
+            {
+              "surface": "手帳"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "確認"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「このお薬は胃に負担がかかることがありますので、必ず食後に多めの水でお飲みください」と服薬指導を受けました。",
+          "literalEn": "this medicine [topic] [at/to] 負担 [subj] かかる thing [subj] あり [polite] ので 必ず 食後 [at/to] 多め ['s / of] water [in/by] to drink くだ さい [with/and] 服薬 指導 [obj] 受け した",
+          "naturalEn": "I received dosage counseling: 'Since this medicine may burden the stomach, please always take it after meals with plenty of water.'",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "この",
+              "meaning": "this",
+              "baseForm": "この",
+              "level": "N5"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "薬",
+              "reading": "くすり",
+              "meaning": "medicine",
+              "baseForm": "薬",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "胃"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "負担"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "かかる"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "あり"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "ので"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "必ず"
+            },
+            {
+              "surface": "食後"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "多め"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "水",
+              "reading": "みず",
+              "meaning": "water",
+              "baseForm": "水",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "飲",
+              "reading": "の",
+              "meaning": "to drink",
+              "baseForm": "飲む",
+              "level": "N5"
+            },
+            {
+              "surface": "み"
+            },
+            {
+              "surface": "くだ"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "服薬"
+            },
+            {
+              "surface": "指導"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "受け"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "薬局を出た私は、指示通りに栄養のある温かいおかゆを食べて、処方された薬を飲んですぐに布団に入りました。",
+          "literalEn": "薬局 [obj] to put out [past]  I [topic] 指示 in accordance with ~ [at/to] 栄養 ['s / of] to be luke warm おかゆ [obj]  to eat [and] 処方 [past] medicine [obj] to drink んで immediately [at/to] 布団 [at/to] to enter した",
+          "naturalEn": "Leaving the pharmacy, I ate nutritious warm rice porridge as instructed, took the prescribed medication, and immediately climbed into bed.",
+          "tokens": [
+            {
+              "surface": "薬局"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "指示"
+            },
+            {
+              "surface": "通り",
+              "reading": "とおり",
+              "meaning": "in accordance with ~; following ~; ~ Street",
+              "baseForm": "通り",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "栄養"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "温かい",
+              "reading": "ぬるかい",
+              "meaning": "luke warm",
+              "baseForm": "温い",
+              "level": "N5"
+            },
+            {
+              "surface": "おかゆ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "食",
+              "reading": "く",
+              "meaning": "(male) (vulgar) to eat",
+              "baseForm": "食う",
+              "level": "N3"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "処方"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "薬",
+              "reading": "くすり",
+              "meaning": "medicine",
+              "baseForm": "薬",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "飲",
+              "reading": "の",
+              "meaning": "to drink",
+              "baseForm": "飲む",
+              "level": "N5"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "すぐ",
+              "meaning": "immediately; soon; easily",
+              "baseForm": "すぐ",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "布団"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入り",
+              "reading": "はいり",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "二日ほど十分な休養を取ったおかげで熱も無事に下がり、健康のありがたさを改めて実感することになりました。",
+          "literalEn": "二日 [as much as] enough 休養 [obj] to take something [past] おかげ [in/by] fever [also] safety [at/to] 下がり 健康 ['s / of] ありがたさ [obj] 改めて 実感 to do ことに なり した",
+          "naturalEn": "Thanks to taking ample rest for about two days, my fever safely broke, and I came to appreciate once again the blessing of good health.",
+          "tokens": [
+            {
+              "surface": "二日"
+            },
+            {
+              "surface": "ほど",
+              "meaning": "extent",
+              "baseForm": "ほど",
+              "level": "N4"
+            },
+            {
+              "surface": "十分",
+              "reading": "じゅうぶん",
+              "meaning": "enough",
+              "baseForm": "十分",
+              "level": "N4"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "休養"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "取",
+              "reading": "と",
+              "meaning": "to take something",
+              "baseForm": "取る",
+              "level": "N5"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "おかげ"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "熱",
+              "reading": "ねつ",
+              "meaning": "fever",
+              "baseForm": "熱",
+              "level": "N4"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "無事",
+              "reading": "ぶじ",
+              "meaning": "safety; peace; quietness",
+              "baseForm": "無事",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "下がり"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "健康"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ありがたさ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "改めて"
+            },
+            {
+              "surface": "実感"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "身体に異変を感じた際には、我慢せずに早めに専門の医療機関に相談することが何よりも大切だと心に留めました。自分の体を正しく管理し、無理をしない生活習慣を心がけることこそが社会人の基本であると学びました。",
+      "en": "I etched into my heart that whenever noticing bodily abnormalities, consulting a specialized medical facility early without enduring in silence is most paramount. I learned that managing one's body properly and keeping in mind lifestyle habits without overworking is the cornerstone of being a working professional.",
+      "tokens": [
+        {
+          "surface": "身体"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "異変"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "感じ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "際"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "我慢"
+        },
+        {
+          "surface": "せ"
+        },
+        {
+          "surface": "ず"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "早め"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "専門"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "医療"
+        },
+        {
+          "surface": "機関"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "相談",
+          "reading": "そうだん",
+          "meaning": "to discuss",
+          "baseForm": "相談",
+          "level": "N4"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "何より"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "大切",
+          "reading": "たいせつ",
+          "meaning": "important",
+          "baseForm": "大切",
+          "level": "N5"
+        },
+        {
+          "surface": "だ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "心",
+          "reading": "こころ",
+          "meaning": "core; heart",
+          "baseForm": "心",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "留め"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "自分",
+          "reading": "じぶん",
+          "meaning": "oneself",
+          "baseForm": "自分",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "体",
+          "reading": "からだ",
+          "meaning": "body",
+          "baseForm": "体",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "正しく"
+        },
+        {
+          "surface": "管理"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "無理"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "しない"
+        },
+        {
+          "surface": "生活習慣"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "心がける"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "こそ"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "社会"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "meaning": "person",
+          "baseForm": "人",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "基本"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "学び"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "身体に異変を感じた際には、我慢せずに早めに専門の医療機関に相談することが何よりも大切だと心に留めました。",
+          "literalEn": "身体 [at/to] 異変 [obj] 感じ [past] [at/to] [topic] 我慢 [at/to] 早め [at/to] 専門 ['s / of] 医療 機関 [at/to] to discuss to do thing [subj] 何より [also] important [is] [with/and] core [at/to] 留め した",
+          "naturalEn": "I etched into my heart that whenever noticing bodily abnormalities, consulting a specialized medical facility early without enduring in silence is most paramount.",
+          "tokens": [
+            {
+              "surface": "身体"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "異変"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "感じ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "際"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "我慢"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "ず"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "早め"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "専門"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "医療"
+            },
+            {
+              "surface": "機関"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "相談",
+              "reading": "そうだん",
+              "meaning": "to discuss",
+              "baseForm": "相談",
+              "level": "N4"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "何より"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "大切",
+              "reading": "たいせつ",
+              "meaning": "important",
+              "baseForm": "大切",
+              "level": "N5"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "心",
+              "reading": "こころ",
+              "meaning": "core; heart",
+              "baseForm": "心",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "留め"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "自分の体を正しく管理し、無理をしない生活習慣を心がけることこそが社会人の基本であると学びました。",
+          "literalEn": "oneself ['s / of] body [obj] 正しく 管理 無理 [obj] しない 生活習慣 [obj] 心がける thing こそ [subj] 社会 person ['s / of] 基本 [in/by] to be [with/and] 学び した",
+          "naturalEn": "I learned that managing one's body properly and keeping in mind lifestyle habits without overworking is the cornerstone of being a working professional.",
+          "tokens": [
+            {
+              "surface": "自分",
+              "reading": "じぶん",
+              "meaning": "oneself",
+              "baseForm": "自分",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "体",
+              "reading": "からだ",
+              "meaning": "body",
+              "baseForm": "体",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "正しく"
+            },
+            {
+              "surface": "管理"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "無理"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "しない"
+            },
+            {
+              "surface": "生活習慣"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "心がける"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "こそ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "社会"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "基本"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "学び"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "診察を受ける前に受付で記入するように案内された書類は何ですか。",
+      "questionEn": "What document was the patient guided to fill out at the reception before receiving the examination?",
+      "options": [
+        "現在の症状やアレルギーを記入する問診票",
+        "病院の会員登録申込書",
+        "薬の注文書",
+        "海外旅行保険の請求書"
+      ],
+      "optionsEn": [
+        "A medical questionnaire detailing current symptoms and allergies",
+        "A hospital membership registration form",
+        "A medication order form",
+        "An overseas travel insurance claim form"
+      ],
+      "answerIndex": 0,
+      "explanation": "初診受付では、健康保険証の提示とともに症状や体質を申告する「問診票」の記入が求められます。"
+    },
+    {
+      "question": "調剤薬局の薬剤師から受けた服薬指導の内容として正しいものはどれですか。",
+      "questionEn": "Which of the following is correct regarding the dosage instructions given by the pharmacist?",
+      "options": [
+        "胃に負担がかかるため、食後に多めの水で飲むこと",
+        "朝起きてすぐに水なしで噛み砕いて飲むこと",
+        "お茶やジュースと一緒に一気に飲むこと",
+        "熱が出た時だけ夜中に飲むこと"
+      ],
+      "optionsEn": [
+        "Take after meals with plenty of water because it may burden the stomach",
+        "Chew and swallow without water immediately upon waking in the morning",
+        "Drink in one gulp along with tea or juice",
+        "Take in the middle of the night only when a fever strikes"
+      ],
+      "answerIndex": 0,
+      "explanation": "薬剤師からは「胃への負担を防ぐため、必ず食後に多めの水で服用するように」と注意がありました。"
+    },
+    {
+      "question": "この体験を通じて語り手が実感した教訓は何ですか。",
+      "questionEn": "What lesson did the narrator appreciate through this experience?",
+      "options": [
+        "身体の異変を感じたら我慢せず、早めに医療機関を受診することの大切さ",
+        "風邪を引いた時は冷たい水をがぶ飲みして運動すること",
+        "薬は病院に行かずに通販だけで済ませた方が安上がりだということ",
+        "熱があっても休まずに会社へ出勤すべきだということ"
+      ],
+      "optionsEn": [
+        "The importance of seeking medical care promptly without enduring pain when feeling unwell",
+        "Gulping down cold water and exercising whenever catching a cold",
+        "That purchasing medicine online without visiting a doctor is cheaper",
+        "That one should report to work without taking leave even with a fever"
+      ],
+      "answerIndex": 0,
+      "explanation": "体調不良を我慢して悪化させるのではなく、迅速に受診して休養を取る重要性を深く実感しました。"
+    }
+  ]
+}

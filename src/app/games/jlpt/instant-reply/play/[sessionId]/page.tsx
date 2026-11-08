@@ -343,7 +343,7 @@ export default function InstantReplyPlayPage() {
             <div className="flex flex-wrap items-center justify-between gap-2">
               <div className="flex flex-wrap items-center gap-2">
                 <span className="rounded-full bg-[var(--sakura-light)] px-3 py-1 text-xs font-extrabold uppercase tracking-[0.12em] text-[var(--primary-fg)]">
-                  JLPT {currentQuestion.levelLabel} · 即時応答
+                  JLPT {currentQuestion.levelLabel} · {currentQuestion.category === "situational-utterance" ? "発話表現 (Mondai 3)" : "即時応答 (Mondai 4/5)"}
                 </span>
                 {(session.settings.showSituationHint || session.revealed) && (
                   <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--bg)] px-3 py-1 text-xs font-semibold text-[var(--muted)]">
@@ -374,6 +374,26 @@ export default function InstantReplyPlayPage() {
                 </div>
               )}
             </div>
+
+            {/* Situational Utterance Scene Card (Mondai 3) */}
+            {currentQuestion.category === "situational-utterance" && (
+              <div className="mt-4 rounded-2xl border-2 border-[var(--primary)] bg-[var(--sakura-light)]/40 p-4 text-left sm:p-5">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--primary)] px-3 py-1 text-xs font-black text-white shadow-sm">
+                    <span>⬇ You (あなた)</span>
+                  </span>
+                  <span className="text-xs font-bold uppercase tracking-wider text-[var(--primary-fg)]">
+                    もんだい 3 · 発話表現 (Situational Utterance)
+                  </span>
+                </div>
+                <p className="mt-2.5 font-japanese text-base font-bold text-[var(--ink)] sm:text-lg">
+                  {currentQuestion.situationContext}
+                </p>
+                <p className="mt-1 text-xs text-[var(--muted)]">
+                  Listen to the audio prompt and choose what the person indicated by the arrow (⬇ You) says!
+                </p>
+              </div>
+            )}
 
             {/* Speaker A Audio Medallion OR Revealed Transcript */}
             {!session.revealed ? (

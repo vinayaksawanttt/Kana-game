@@ -1,7 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { useRouter } from "next/navigation";
+import { Suspense, useMemo, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowRight, BookOpen, Eye, EyeOff, Languages, Sparkles } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
 import { saveGameSession } from "@/lib/game-core/storage";
@@ -18,9 +18,22 @@ import {
 const LEVEL_OPTIONS: readonly JlptNumericLevel[] = [5, 4, 3, 2, 1];
 const SESSION_SIZES: readonly SynonymMatchSessionSize[] = [10, 15, 20];
 
-export default function SynonymMatchSetupPage() {
+function SynonymMatchSetupContent() {
   const router = useRouter();
-  const [selectedLevels, setSelectedLevels] = useState<JlptNumericLevel[]>([5]);
+  const searchParams = useSearchParams();
+  const levelParam = searchParams.get("level")?.toUpperCase();
+
+  const initialLevels = useMemo<JlptNumericLevel[]>(() => {
+    if (!levelParam) return [5];
+    if (levelParam === "ALL") return [5, 4, 3, 2, 1];
+    const num = parseInt(levelParam.replace("N", ""), 10);
+    if (LEVEL_OPTIONS.includes(num as JlptNumericLevel)) {
+      return [num as JlptNumericLevel];
+    }
+    return [5];
+  }, [levelParam]);
+
+  const [selectedLevels, setSelectedLevels] = useState<JlptNumericLevel[]>(initialLevels);
   const [scriptMode, setScriptMode] = useState<DisplayScriptMode>("exam-authentic");
   const [showSentenceTranslationHint, setShowSentenceTranslationHint] = useState<boolean>(false);
   const [size, setSize] = useState<SynonymMatchSessionSize>(10);
@@ -315,5 +328,13 @@ export default function SynonymMatchSetupPage() {
         </div>
       </section>
     </GameLayout>
+  );
+}
+
+export default function SynonymMatchSetupPage() {
+  return (
+    <Suspense fallback={null}>
+      <SynonymMatchSetupContent />
+    </Suspense>
   );
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-11-07T15:09:21.440Z",
-  "bundleHash": "ca93172cdddf",
+  "generatedAt": "2026-11-08T13:25:33.123Z",
+  "bundleHash": "6fc153e5c8d0",
   "assets": {
     "dictionary-index.json": {
       "hash": "3d98ac74562d",
@@ -32,8 +32,8 @@
       "bytes": 258834
     },
     "jlpt/instant-reply.json": {
-      "hash": "f977252cea76",
-      "bytes": 298626
+      "hash": "340f88c94471",
+      "bytes": 345993
     },
     "jlpt/phonetic-traps.json": {
       "hash": "6625a0a0247a",
@@ -44,8 +44,8 @@
       "bytes": 346998
     },
     "jlpt/synonym-match.json": {
-      "hash": "d5304c9dc1f5",
-      "bytes": 308431
+      "hash": "9a5319763d96",
+      "bytes": 342364
     },
     "kanji-vocab/N1.json": {
       "hash": "43a93ee8180b",
@@ -282,6 +282,86 @@
     "stories/n5-waking-up-early.json": {
       "hash": "83beb4501266",
       "bytes": 21652
+    },
+    "stories/story-n3-apartment-hunting.json": {
+      "hash": "8d6d70577902",
+      "bytes": 109483
+    },
+    "stories/story-n3-attack-on-titan.json": {
+      "hash": "391d84db489a",
+      "bytes": 106089
+    },
+    "stories/story-n3-birthday-party.json": {
+      "hash": "f55b495027d4",
+      "bytes": 111407
+    },
+    "stories/story-n3-bleach.json": {
+      "hash": "3dddbb816ea5",
+      "bytes": 117370
+    },
+    "stories/story-n3-convenience-store-part-time.json": {
+      "hash": "72cc21634982",
+      "bytes": 105999
+    },
+    "stories/story-n3-death-note.json": {
+      "hash": "1acdae19b755",
+      "bytes": 111121
+    },
+    "stories/story-n3-demon-slayer.json": {
+      "hash": "bf6bfc90e6af",
+      "bytes": 123768
+    },
+    "stories/story-n3-dragon-ball.json": {
+      "hash": "c7e2c55d3fe5",
+      "bytes": 113712
+    },
+    "stories/story-n3-fullmetal-alchemist.json": {
+      "hash": "3386a810c998",
+      "bytes": 108891
+    },
+    "stories/story-n3-hospital.json": {
+      "hash": "cab999f59f25",
+      "bytes": 116999
+    },
+    "stories/story-n3-hotel-check-in.json": {
+      "hash": "7bade503e568",
+      "bytes": 114513
+    },
+    "stories/story-n3-job-interview.json": {
+      "hash": "929fbfff3410",
+      "bytes": 116819
+    },
+    "stories/story-n3-jujutsu-kaisen.json": {
+      "hash": "054a17a49f42",
+      "bytes": 118978
+    },
+    "stories/story-n3-lost-property.json": {
+      "hash": "191d2d96aaea",
+      "bytes": 115717
+    },
+    "stories/story-n3-my-hero-academia.json": {
+      "hash": "71226e565d04",
+      "bytes": 114878
+    },
+    "stories/story-n3-naruto.json": {
+      "hash": "585b8c217539",
+      "bytes": 110038
+    },
+    "stories/story-n3-office-meeting.json": {
+      "hash": "f25fce4f7846",
+      "bytes": 107562
+    },
+    "stories/story-n3-one-piece.json": {
+      "hash": "f7a90d0e5027",
+      "bytes": 113126
+    },
+    "stories/story-n3-post-office.json": {
+      "hash": "ae47ed23eefc",
+      "bytes": 109785
+    },
+    "stories/story-n3-train-delay.json": {
+      "hash": "07b293b111be",
+      "bytes": 111481
     },
     "strokes/N1.json": {
       "hash": "c7fe3f7ad2a2",

@@ -2795,6 +2795,1081 @@
     "sentenceFurigana": "{自分|じぶん}が{犯し|おかし}た{過ち|あやまち}は{自分|じぶん}でつぐなわなければならない。"
   },
   {
+    "id": "syn-n5-omoshirokunakatta",
+    "jlpt": 5,
+    "sentenceJa": "その映画はおもしろくなかったです。",
+    "prefix": "その映画は",
+    "targetSurface": "おもしろくなかったです",
+    "suffix": "。",
+    "sentenceEn": "That movie was not interesting.",
+    "targetWord": "おもしろくない",
+    "targetReading": "おもしろくない",
+    "targetMeaningEn": "not interesting, not fun",
+    "correctSynonym": {
+      "word": "つまらなかったです",
+      "reading": "つまらなかったです",
+      "meaningEn": "was boring",
+      "furigana": "つまらなかったです"
+    },
+    "distractors": [
+      {
+        "word": "短かったです",
+        "reading": "みじかかったです",
+        "meaningEn": "was short",
+        "furigana": "{短かったです|みじかかったです}"
+      },
+      {
+        "word": "長かったです",
+        "reading": "ながかったです",
+        "meaningEn": "was long",
+        "furigana": "{長かったです|ながかったです}"
+      },
+      {
+        "word": "楽しかったです",
+        "reading": "たのしかったです",
+        "meaningEn": "was fun",
+        "furigana": "{楽しかったです|たのしかったです}"
+      }
+    ],
+    "sharedNuanceNote": "Negative of「おもしろい」is equivalent to「つまらない」(boring / uninteresting).",
+    "prefixFurigana": "その{映画|えいが}は",
+    "targetFurigana": "おもしろくなかったです",
+    "suffixFurigana": "。",
+    "sentenceFurigana": "その{映画|えいが}はおもしろくなかったです。"
+  },
+  {
+    "id": "syn-n5-kurai",
+    "jlpt": 5,
+    "sentenceJa": "この部屋は暗いです。",
+    "prefix": "この部屋は",
+    "targetSurface": "暗いです",
+    "suffix": "。",
+    "sentenceEn": "This room is dark.",
+    "targetWord": "暗い",
+    "targetReading": "くらい",
+    "targetMeaningEn": "dark",
+    "correctSynonym": {
+      "word": "明るくありません",
+      "reading": "あかるくありません",
+      "meaningEn": "is not bright",
+      "furigana": "{明るくありません|あかるくありません}"
+    },
+    "distractors": [
+      {
+        "word": "広くありません",
+        "reading": "ひろくありません",
+        "meaningEn": "is not spacious",
+        "furigana": "{広くありません|ひろくありません}"
+      },
+      {
+        "word": "静かではありません",
+        "reading": "しずかではありません",
+        "meaningEn": "is not quiet",
+        "furigana": "{静かではありません|しずかではありません}"
+      },
+      {
+        "word": "狭くありません",
+        "reading": "せまくありません",
+        "meaningEn": "is not narrow",
+        "furigana": "{狭くありません|せまくありません}"
+      }
+    ],
+    "sharedNuanceNote": "Antonym negative flip:「暗い」(dark) =「明るくありません」(not bright).",
+    "prefixFurigana": "この{部屋|へや}は",
+    "targetFurigana": "{暗い|くらい}です",
+    "suffixFurigana": "。",
+    "sentenceFurigana": "この{部屋|へや}は{暗い|くらい}です。"
+  },
+  {
+    "id": "syn-n5-maiban",
+    "jlpt": 5,
+    "sentenceJa": "まいばん国のかぞくに電話します。",
+    "prefix": "",
+    "targetSurface": "まいばん",
+    "suffix": "国のかぞくに電話します。",
+    "sentenceEn": "Every night I call my family in my home country.",
+    "targetWord": "毎晩",
+    "targetReading": "まいばん",
+    "targetMeaningEn": "every night",
+    "correctSynonym": {
+      "word": "夜はいつも",
+      "reading": "よるはいつも",
+      "meaningEn": "always at night",
+      "furigana": "{夜はいつも|よるはいつも}"
+    },
+    "distractors": [
+      {
+        "word": "朝はいつも",
+        "reading": "あさはいつも",
+        "meaningEn": "always in the morning",
+        "furigana": "{朝はいつも|あさはいつも}"
+      },
+      {
+        "word": "昼はいつも",
+        "reading": "ひるはいつも",
+        "meaningEn": "always in the afternoon",
+        "furigana": "{昼はいつも|ひるはいつも}"
+      },
+      {
+        "word": "時々夜に",
+        "reading": "ときどきよるに",
+        "meaningEn": "sometimes at night",
+        "furigana": "{時々夜に|ときどきよるに}"
+      }
+    ],
+    "sharedNuanceNote": "Time expression equivalence:「まいばん」(every night) =「夜はいつも」(always at night).",
+    "prefixFurigana": "",
+    "targetFurigana": "まいばん",
+    "suffixFurigana": "{国|くに}のかぞくに{電話|でんわ}します。",
+    "sentenceFurigana": "まいばん{国|くに}のかぞくに{電話|でんわ}します。"
+  },
+  {
+    "id": "syn-n5-ninen-mae",
+    "jlpt": 5,
+    "sentenceJa": "二年前に京都へ行きました。",
+    "prefix": "",
+    "targetSurface": "二年前に",
+    "suffix": "京都へ行きました。",
+    "sentenceEn": "Two years ago, I went to Kyoto.",
+    "targetWord": "二年前に",
+    "targetReading": "にねんまえに",
+    "targetMeaningEn": "two years ago",
+    "correctSynonym": {
+      "word": "おととし",
+      "reading": "おととし",
+      "meaningEn": "the year before last",
+      "furigana": "おととし"
+    },
+    "distractors": [
+      {
+        "word": "きょねん",
+        "reading": "きょねん",
+        "meaningEn": "last year",
+        "furigana": "きょねん"
+      },
+      {
+        "word": "さらいねん",
+        "reading": "さらいねん",
+        "meaningEn": "the year after next",
+        "furigana": "さらいねん"
+      },
+      {
+        "word": "らいねん",
+        "reading": "らいねん",
+        "meaningEn": "next year",
+        "furigana": "らいねん"
+      }
+    ],
+    "sharedNuanceNote": "Calendar conversion:「二年前」(two years ago) =「おととし」(the year before last).",
+    "prefixFurigana": "",
+    "targetFurigana": "{二|に}{年|ねん}{前|まえ}に",
+    "suffixFurigana": "{京都|きょうと}へ{行き|いき}ました。",
+    "sentenceFurigana": "{二|に}{年|ねん}{前|まえ}に{京都|きょうと}へ{行き|いき}ました。"
+  },
+  {
+    "id": "syn-n5-tanjoubi",
+    "jlpt": 5,
+    "sentenceJa": "たんじょうびは6月15日です。",
+    "prefix": "",
+    "targetSurface": "たんじょうびは6月15日です",
+    "suffix": "。",
+    "sentenceEn": "My birthday is June 15th.",
+    "targetWord": "誕生日",
+    "targetReading": "たんじょうび",
+    "targetMeaningEn": "birthday",
+    "correctSynonym": {
+      "word": "6月15日にうまれました",
+      "reading": "ろくがつじゅうごにちにうまれました",
+      "meaningEn": "was born on June 15th",
+      "furigana": "{6月15日にうまれました|ろくがつじゅうごにちにうまれました}"
+    },
+    "distractors": [
+      {
+        "word": "6月15日にけっこんしました",
+        "reading": "ろくがつじゅうごにちにけっこんしました",
+        "meaningEn": "got married on June 15th",
+        "furigana": "{6月15日にけっこんしました|ろくがつじゅうごにちにけっこんしました}"
+      },
+      {
+        "word": "6月15日に日本へ来ました",
+        "reading": "ろくがつじゅうごにちににほんへきました",
+        "meaningEn": "came to Japan on June 15th",
+        "furigana": "{6月15日に日本へ来ました|ろくがつじゅうごにちににほんへきました}"
+      },
+      {
+        "word": "6月15日に学校をおわりました",
+        "reading": "ろくがつじゅうごにちにとがっこうをおわりました",
+        "meaningEn": "graduated school on June 15th",
+        "furigana": "{6月15日に学校をおわりました|ろくがつじゅうごにちにとがっこうをおわりました}"
+      }
+    ],
+    "sharedNuanceNote": "Life event equivalence:「たんじょうびはX日です」=「X日にうまれました」(was born on X date).",
+    "prefixFurigana": "",
+    "targetFurigana": "たんじょうびは6{月|つき}15{日|にち}です",
+    "suffixFurigana": "。",
+    "sentenceFurigana": "たんじょうびは6{月|つき}15{日|にち}です。"
+  },
+  {
+    "id": "syn-n5-yasui",
+    "jlpt": 5,
+    "sentenceJa": "この靴は安いです。",
+    "prefix": "この靴は",
+    "targetSurface": "安いです",
+    "suffix": "。",
+    "sentenceEn": "These shoes are cheap.",
+    "targetWord": "安い",
+    "targetReading": "やすい",
+    "targetMeaningEn": "cheap, inexpensive",
+    "correctSynonym": {
+      "word": "高くありません",
+      "reading": "たかくありません",
+      "meaningEn": "are not expensive",
+      "furigana": "{高くありません|たかくありません}"
+    },
+    "distractors": [
+      {
+        "word": "古くありません",
+        "reading": "ふるくありません",
+        "meaningEn": "are not old",
+        "furigana": "{古くありません|ふるくありません}"
+      },
+      {
+        "word": "重くありません",
+        "reading": "おもくありません",
+        "meaningEn": "are not heavy",
+        "furigana": "{重くありません|おもくありません}"
+      },
+      {
+        "word": "新しくありません",
+        "reading": "あたらしくありません",
+        "meaningEn": "are not new",
+        "furigana": "{新しくありません|あたらしくありません}"
+      }
+    ],
+    "sharedNuanceNote": "Antonym negative flip:「安い」(cheap) =「高くありません」(not expensive).",
+    "prefixFurigana": "この{靴|くつ}は",
+    "targetFurigana": "{安い|やすい}です",
+    "suffixFurigana": "。",
+    "sentenceFurigana": "この{靴|くつ}は{安い|やすい}です。"
+  },
+  {
+    "id": "syn-n5-hima",
+    "jlpt": 5,
+    "sentenceJa": "昨日はひまでした。",
+    "prefix": "昨日は",
+    "targetSurface": "ひまでした",
+    "suffix": "。",
+    "sentenceEn": "Yesterday I was free.",
+    "targetWord": "暇",
+    "targetReading": "ひま",
+    "targetMeaningEn": "free, unoccupied",
+    "correctSynonym": {
+      "word": "いそがしくありませんでした",
+      "reading": "いそがしくありませんでした",
+      "meaningEn": "was not busy",
+      "furigana": "いそがしくありませんでした"
+    },
+    "distractors": [
+      {
+        "word": "元気がありませんでした",
+        "reading": "げんきがありませんでした",
+        "meaningEn": "had no energy",
+        "furigana": "{元気がありませんでした|げんきがありませんでした}"
+      },
+      {
+        "word": "楽しくありませんでした",
+        "reading": "たのしくありませんでした",
+        "meaningEn": "was not enjoyable",
+        "furigana": "{楽しくありませんでした|たのしくありませんでした}"
+      },
+      {
+        "word": "静かではありませんでした",
+        "reading": "しずかではありませんでした",
+        "meaningEn": "was not quiet",
+        "furigana": "{静かではありませんでした|しずかではありませんでした}"
+      }
+    ],
+    "sharedNuanceNote": "State negative flip:「ひまでした」(was free) =「いそがしくありませんでした」(was not busy).",
+    "prefixFurigana": "{昨日|きのう}は",
+    "targetFurigana": "ひまでした",
+    "suffixFurigana": "。",
+    "sentenceFurigana": "{昨日|きのう}はひまでした。"
+  },
+  {
+    "id": "syn-n5-ototoi",
+    "jlpt": 5,
+    "sentenceJa": "一昨日は雨が降っていました。",
+    "prefix": "",
+    "targetSurface": "一昨日は",
+    "suffix": "雨が降っていました。",
+    "sentenceEn": "The day before yesterday it was raining.",
+    "targetWord": "一昨日",
+    "targetReading": "おととい",
+    "targetMeaningEn": "day before yesterday",
+    "correctSynonym": {
+      "word": "二日前に",
+      "reading": "ふつかまえに",
+      "meaningEn": "two days ago",
+      "furigana": "{二日前に|ふつかまえに}"
+    },
+    "distractors": [
+      {
+        "word": "昨日",
+        "reading": "きのう",
+        "meaningEn": "yesterday",
+        "furigana": "{昨日|きのう}"
+      },
+      {
+        "word": "先週",
+        "reading": "せんしゅう",
+        "meaningEn": "last week",
+        "furigana": "{先週|せんしゅう}"
+      },
+      {
+        "word": "あさって",
+        "reading": "あさって",
+        "meaningEn": "day after tomorrow",
+        "furigana": "あさって"
+      }
+    ],
+    "sharedNuanceNote": "Time expression equivalence:「一昨日 (おととい)」=「二日前」(two days ago).",
+    "prefixFurigana": "",
+    "targetFurigana": "{一昨日|おととい}は",
+    "suffixFurigana": "{雨|あめ}が{降っ|ふっ}ていました。",
+    "sentenceFurigana": "{一昨日|おととい}は{雨|あめ}が{降っ|ふっ}ていました。"
+  },
+  {
+    "id": "syn-n5-asatte",
+    "jlpt": 5,
+    "sentenceJa": "あさって日本語のテストがあります。",
+    "prefix": "",
+    "targetSurface": "あさって",
+    "suffix": "日本語のテストがあります。",
+    "sentenceEn": "The day after tomorrow there is a Japanese test.",
+    "targetWord": "明後日",
+    "targetReading": "あさって",
+    "targetMeaningEn": "day after tomorrow",
+    "correctSynonym": {
+      "word": "二日後に",
+      "reading": "ふつかごに",
+      "meaningEn": "two days later",
+      "furigana": "{二日後に|ふつかごに}"
+    },
+    "distractors": [
+      {
+        "word": "明日",
+        "reading": "あした",
+        "meaningEn": "tomorrow",
+        "furigana": "{明日|あした}"
+      },
+      {
+        "word": "来週",
+        "reading": "らいしゅう",
+        "meaningEn": "next week",
+        "furigana": "{来週|らいしゅう}"
+      },
+      {
+        "word": "昨日",
+        "reading": "きのう",
+        "meaningEn": "yesterday",
+        "furigana": "{昨日|きのう}"
+      }
+    ],
+    "sharedNuanceNote": "Time expression equivalence:「あさって」(day after tomorrow) =「二日後」(two days later).",
+    "prefixFurigana": "",
+    "targetFurigana": "あさって",
+    "suffixFurigana": "{日本語|にほんご}のテストがあります。",
+    "sentenceFurigana": "あさって{日本語|にほんご}のテストがあります。"
+  },
+  {
+    "id": "syn-n5-sakki",
+    "jlpt": 5,
+    "sentenceJa": "さっき山田さんが来ましたよ。",
+    "prefix": "",
+    "targetSurface": "さっき",
+    "suffix": "山田さんが来ましたよ。",
+    "sentenceEn": "Mr. Yamada came a short while ago.",
+    "targetWord": "さっき",
+    "targetReading": "さっき",
+    "targetMeaningEn": "a short while ago, just now",
+    "correctSynonym": {
+      "word": "少し前に",
+      "reading": "すこしまえに",
+      "meaningEn": "a little while ago",
+      "furigana": "{少し前に|すこしまえに}"
+    },
+    "distractors": [
+      {
+        "word": "今から",
+        "reading": "いまから",
+        "meaningEn": "from now on",
+        "furigana": "{今から|いまから}"
+      },
+      {
+        "word": "ずっと前に",
+        "reading": "ずっとまえに",
+        "meaningEn": "a long time ago",
+        "furigana": "{ずっと前に|ずっとまえに}"
+      },
+      {
+        "word": "あとで",
+        "reading": "あとで",
+        "meaningEn": "later",
+        "furigana": "あとで"
+      }
+    ],
+    "sharedNuanceNote": "Temporal equivalence:「さっき」=「少し前に」(a short while ago).",
+    "prefixFurigana": "",
+    "targetFurigana": "さっき",
+    "suffixFurigana": "{山田|やまだ}さんが{来|き}ましたよ。",
+    "sentenceFurigana": "さっき{山田|やまだ}さんが{来|き}ましたよ。"
+  },
+  {
+    "id": "syn-n5-kyou-wa-yasumi",
+    "jlpt": 5,
+    "sentenceJa": "今日は会社が休みです。",
+    "prefix": "今日は会社が",
+    "targetSurface": "休みです",
+    "suffix": "。",
+    "sentenceEn": "Today work is off.",
+    "targetWord": "休み",
+    "targetReading": "やすみ",
+    "targetMeaningEn": "day off, absence",
+    "correctSynonym": {
+      "word": "仕事がありません",
+      "reading": "しごとがありません",
+      "meaningEn": "have no work",
+      "furigana": "{仕事がありません|しごとがありません}"
+    },
+    "distractors": [
+      {
+        "word": "仕事がたくさんあります",
+        "reading": "しごとがたくさんあります",
+        "meaningEn": "have a lot of work",
+        "furigana": "{仕事がたくさんあります|しごとがたくさんあります}"
+      },
+      {
+        "word": "仕事が遅くなります",
+        "reading": "しごとがおそくなります",
+        "meaningEn": "work will be late",
+        "furigana": "{仕事が遅くなります|しごとがおそくなります}"
+      },
+      {
+        "word": "仕事が好きです",
+        "reading": "しごとがすきです",
+        "meaningEn": "like work",
+        "furigana": "{仕事が好きです|しごとがすきです}"
+      }
+    ],
+    "sharedNuanceNote": "Condition equivalence:「会社が休みです」=「仕事がありません」(have no work today).",
+    "prefixFurigana": "{今日|きょう}は{会社|かいしゃ}が",
+    "targetFurigana": "{休み|やすみ}です",
+    "suffixFurigana": "。",
+    "sentenceFurigana": "{今日|きょう}は{会社|かいしゃ}が{休み|やすみ}です。"
+  },
+  {
+    "id": "syn-n5-fukai",
+    "jlpt": 5,
+    "sentenceJa": "この川は深いですから、気をつけてください。",
+    "prefix": "この川は",
+    "targetSurface": "深いです",
+    "suffix": "から、気をつけてください。",
+    "sentenceEn": "This river is deep, so please be careful.",
+    "targetWord": "深い",
+    "targetReading": "ふかい",
+    "targetMeaningEn": "deep",
+    "correctSynonym": {
+      "word": "浅くありません",
+      "reading": "あさくありません",
+      "meaningEn": "is not shallow",
+      "furigana": "{浅くありません|あさくありません}"
+    },
+    "distractors": [
+      {
+        "word": "広くありません",
+        "reading": "ひろくありません",
+        "meaningEn": "is not wide",
+        "furigana": "{広くありません|ひろくありません}"
+      },
+      {
+        "word": "狭くありません",
+        "reading": "せまくありません",
+        "meaningEn": "is not narrow",
+        "furigana": "{狭くありません|せまくありません}"
+      },
+      {
+        "word": "冷たくありません",
+        "reading": "つめたくありません",
+        "meaningEn": "is not cold",
+        "furigana": "{冷たくありません|つめたくありません}"
+      }
+    ],
+    "sharedNuanceNote": "Antonym negative flip:「深い」(deep) =「浅くありません」(not shallow).",
+    "prefixFurigana": "この{川|かわ}は",
+    "targetFurigana": "{深い|ふかい}です",
+    "suffixFurigana": "から、{気|き}をつけてください。",
+    "sentenceFurigana": "この{川|かわ}は{深い|ふかい}ですから、{気|き}をつけてください。"
+  },
+  {
+    "id": "syn-n5-shinsetsu",
+    "jlpt": 5,
+    "sentenceJa": "あの先生はとても親切です。",
+    "prefix": "あの先生はとても",
+    "targetSurface": "親切です",
+    "suffix": "。",
+    "sentenceEn": "That teacher is very kind.",
+    "targetWord": "親切",
+    "targetReading": "しんせつ",
+    "targetMeaningEn": "kind, helpful",
+    "correctSynonym": {
+      "word": "やさしいです",
+      "reading": "やさしいです",
+      "meaningEn": "is gentle and kind",
+      "furigana": "やさしいです"
+    },
+    "distractors": [
+      {
+        "word": "厳しいです",
+        "reading": "きびしいです",
+        "meaningEn": "is strict",
+        "furigana": "{厳しいです|きびしいです}"
+      },
+      {
+        "word": "忙しいです",
+        "reading": "いそがしいです",
+        "meaningEn": "is busy",
+        "furigana": "{忙しいです|いそがしいです}"
+      },
+      {
+        "word": "若いです",
+        "reading": "わかいです",
+        "meaningEn": "is young",
+        "furigana": "{若いです|わかいです}"
+      }
+    ],
+    "sharedNuanceNote": "Attribute equivalence:「親切です」(kind) =「やさしいです」(gentle/kind).",
+    "prefixFurigana": "あの{先生|せんせい}はとても",
+    "targetFurigana": "{親切|しんせつ}です",
+    "suffixFurigana": "。",
+    "sentenceFurigana": "あの{先生|せんせい}はとても{親切|しんせつ}です。"
+  },
+  {
+    "id": "syn-n5-isogu-hashiru",
+    "jlpt": 5,
+    "sentenceJa": "遅刻しそうだったので、急いで学校へ行きました。",
+    "prefix": "遅刻しそうだったので、",
+    "targetSurface": "急いで",
+    "suffix": "学校へ行きました。",
+    "sentenceEn": "I was about to be late, so I hurried to school.",
+    "targetWord": "急ぐ",
+    "targetReading": "いそぐ",
+    "targetMeaningEn": "to hurry",
+    "correctSynonym": {
+      "word": "走って",
+      "reading": "はしって",
+      "meaningEn": "running",
+      "furigana": "{走って|はしって}"
+    },
+    "distractors": [
+      {
+        "word": "歩いて",
+        "reading": "あるいて",
+        "meaningEn": "walking",
+        "furigana": "{歩いて|あるいて}"
+      },
+      {
+        "word": "休んで",
+        "reading": "やすんで",
+        "meaningEn": "resting",
+        "furigana": "{休んで|やすんで}"
+      },
+      {
+        "word": "止まって",
+        "reading": "とまって",
+        "meaningEn": "stopping",
+        "furigana": "{止まって|とまって}"
+      }
+    ],
+    "sharedNuanceNote": "Manner paraphrase:「急いで学校へ行く」in context equates to「走って行く」(go running).",
+    "prefixFurigana": "{遅刻|ちこく}しそうだったので、",
+    "targetFurigana": "{急い|いそい}で",
+    "suffixFurigana": "{学校|がっこう}へ{行き|いき}ました。",
+    "sentenceFurigana": "{遅刻|ちこく}しそうだったので、{急い|いそい}で{学校|がっこう}へ{行き|いき}ました。"
+  },
+  {
+    "id": "syn-n5-katazukeru",
+    "jlpt": 5,
+    "sentenceJa": "日曜日、部屋をきれいに片づけました。",
+    "prefix": "日曜日、部屋をきれいに",
+    "targetSurface": "片づけました",
+    "suffix": "。",
+    "sentenceEn": "On Sunday, I tidied up my room nicely.",
+    "targetWord": "片づける",
+    "targetReading": "かたづける",
+    "targetMeaningEn": "to tidy up, to clean up",
+    "correctSynonym": {
+      "word": "掃除しました",
+      "reading": "そうじしました",
+      "meaningEn": "cleaned",
+      "furigana": "{掃除しました|そうじしました}"
+    },
+    "distractors": [
+      {
+        "word": "汚しました",
+        "reading": "よごしました",
+        "meaningEn": "dirtied",
+        "furigana": "{汚しました|よごしました}"
+      },
+      {
+        "word": "壊しました",
+        "reading": "こわしました",
+        "meaningEn": "broke",
+        "furigana": "{壊しました|こわしました}"
+      },
+      {
+        "word": "借りました",
+        "reading": "かりました",
+        "meaningEn": "borrowed",
+        "furigana": "{借りました|かりました}"
+      }
+    ],
+    "sharedNuanceNote": "Action equivalence:「部屋を片づける」(tidy up room) =「掃除する」(clean).",
+    "prefixFurigana": "{日曜日|にちようび}、{部屋|へや}をきれいに",
+    "targetFurigana": "{片づけ|かたづけ}ました",
+    "suffixFurigana": "。",
+    "sentenceFurigana": "{日曜日|にちようび}、{部屋|へや}をきれいに{片づけ|かたづけ}ました。"
+  },
+  {
+    "id": "syn-n4-oishii-umai",
+    "jlpt": 4,
+    "sentenceJa": "母が作ったカレーはとてもうまいです。",
+    "prefix": "母が作ったカレーはとても",
+    "targetSurface": "うまいです",
+    "suffix": "。",
+    "sentenceEn": "The curry my mother made is very tasty.",
+    "targetWord": "うまい",
+    "targetReading": "うまい",
+    "targetMeaningEn": "delicious, tasty",
+    "correctSynonym": {
+      "word": "おいしいです",
+      "reading": "おいしいです",
+      "meaningEn": "is delicious",
+      "furigana": "おいしいです"
+    },
+    "distractors": [
+      {
+        "word": "まずいです",
+        "reading": "まずいです",
+        "meaningEn": "tastes bad",
+        "furigana": "まずいです"
+      },
+      {
+        "word": "辛いです",
+        "reading": "からいです",
+        "meaningEn": "is spicy",
+        "furigana": "{辛いです|からいです}"
+      },
+      {
+        "word": "苦いです",
+        "reading": "にがいです",
+        "meaningEn": "is bitter",
+        "furigana": "{苦いです|にがいです}"
+      }
+    ],
+    "sharedNuanceNote": "Food praise equivalence:「うまい」=「おいしい」(delicious).",
+    "prefixFurigana": "{母|はは}が{作っ|つくっ}たカレーはとても",
+    "targetFurigana": "うまいです",
+    "suffixFurigana": "。",
+    "sentenceFurigana": "{母|はは}が{作っ|つくっ}たカレーはとてもうまいです。"
+  },
+  {
+    "id": "syn-n4-otona-kodomo-ja-nai",
+    "jlpt": 4,
+    "sentenceJa": "弟はもう大人です。",
+    "prefix": "弟はもう",
+    "targetSurface": "大人です",
+    "suffix": "。",
+    "sentenceEn": "My younger brother is already an adult.",
+    "targetWord": "大人",
+    "targetReading": "おとな",
+    "targetMeaningEn": "adult",
+    "correctSynonym": {
+      "word": "子どもではありません",
+      "reading": "こどもではありません",
+      "meaningEn": "is not a child",
+      "furigana": "{子どもではありません|こどもではありません}"
+    },
+    "distractors": [
+      {
+        "word": "学生ではありません",
+        "reading": "がくせいではありません",
+        "meaningEn": "is not a student",
+        "furigana": "{学生ではありません|がくせいではありません}"
+      },
+      {
+        "word": "元気ではありません",
+        "reading": "げんきではありません",
+        "meaningEn": "is not energetic",
+        "furigana": "{元気ではありません|げんきではありません}"
+      },
+      {
+        "word": "先生ではありません",
+        "reading": "せんせいではありません",
+        "meaningEn": "is not a teacher",
+        "furigana": "{先生ではありません|せんせいではありません}"
+      }
+    ],
+    "sharedNuanceNote": "Age negative flip:「大人です」(is an adult) =「子どもではありません」(is not a child).",
+    "prefixFurigana": "{弟|おとうと}はもう",
+    "targetFurigana": "{大人|おとな}です",
+    "suffixFurigana": "。",
+    "sentenceFurigana": "{弟|おとうと}はもう{大人|おとな}です。"
+  },
+  {
+    "id": "syn-n4-kega-shita",
+    "jlpt": 4,
+    "sentenceJa": "サッカーをしていて、足にけがをしました。",
+    "prefix": "サッカーをしていて、足に",
+    "targetSurface": "けがをしました",
+    "suffix": "。",
+    "sentenceEn": "While playing soccer, I injured my leg.",
+    "targetWord": "けが",
+    "targetReading": "けが",
+    "targetMeaningEn": "injury, hurt",
+    "correctSynonym": {
+      "word": "痛めました",
+      "reading": "いためました",
+      "meaningEn": "hurt / injured",
+      "furigana": "{痛めました|いためました}"
+    },
+    "distractors": [
+      {
+        "word": "洗いました",
+        "reading": "あらいました",
+        "meaningEn": "washed",
+        "furigana": "{洗いました|あらいました}"
+      },
+      {
+        "word": "冷やしました",
+        "reading": "ひやしました",
+        "meaningEn": "chilled",
+        "furigana": "{冷やしました|ひやしました}"
+      },
+      {
+        "word": "温めました",
+        "reading": "あたためました",
+        "meaningEn": "warmed",
+        "furigana": "{温めました|あたためました}"
+      }
+    ],
+    "sharedNuanceNote": "Injury expression:「けがをする」(get injured) =「痛める」(hurt/injure).",
+    "prefixFurigana": "サッカーをしていて、{足|あし}に",
+    "targetFurigana": "けがをしました",
+    "suffixFurigana": "。",
+    "sentenceFurigana": "サッカーをしていて、{足|あし}にけがをしました。"
+  },
+  {
+    "id": "syn-n4-shoujiki",
+    "jlpt": 4,
+    "sentenceJa": "彼はうそをつかない人です。",
+    "prefix": "彼は",
+    "targetSurface": "うそをつかない人です",
+    "suffix": "。",
+    "sentenceEn": "He is a person who does not tell lies.",
+    "targetWord": "正直",
+    "targetReading": "しょうじき",
+    "targetMeaningEn": "honest",
+    "correctSynonym": {
+      "word": "正直な人です",
+      "reading": "しょうじきなひとです",
+      "meaningEn": "is an honest person",
+      "furigana": "{正直な人です|しょうじきなひとです}"
+    },
+    "distractors": [
+      {
+        "word": "親切な人です",
+        "reading": "しんせつなひとです",
+        "meaningEn": "is a kind person",
+        "furigana": "{親切な人です|しんせつなひとです}"
+      },
+      {
+        "word": "静かな人です",
+        "reading": "しずかなひとです",
+        "meaningEn": "is a quiet person",
+        "furigana": "{静かな人です|しずかなひとです}"
+      },
+      {
+        "word": "厳しい人です",
+        "reading": "きびしいひとです",
+        "meaningEn": "is a strict person",
+        "furigana": "{厳しい人です|きびしいひとです}"
+      }
+    ],
+    "sharedNuanceNote": "Character description:「うそをつかない」(does not lie) =「正直な人」(honest person).",
+    "prefixFurigana": "{彼|かれ}は",
+    "targetFurigana": "うそをつかない{人|ひと}です",
+    "suffixFurigana": "。",
+    "sentenceFurigana": "{彼|かれ}はうそをつかない{人|ひと}です。"
+  },
+  {
+    "id": "syn-n4-shitsurei",
+    "jlpt": 4,
+    "sentenceJa": "先輩に対して失礼なことを言ってしまいました。",
+    "prefix": "先輩に対して",
+    "targetSurface": "失礼な",
+    "suffix": "ことを言ってしまいました。",
+    "sentenceEn": "I accidentally said something rude to my senior.",
+    "targetWord": "失礼",
+    "targetReading": "しつれい",
+    "targetMeaningEn": "rude, impolite",
+    "correctSynonym": {
+      "word": "礼儀のない",
+      "reading": "れいぎのない",
+      "meaningEn": "without manners, impolite",
+      "furigana": "{礼儀のない|れいぎのない}"
+    },
+    "distractors": [
+      {
+        "word": "親切な",
+        "reading": "しんせつな",
+        "meaningEn": "kind",
+        "furigana": "{親切な|しんせつな}"
+      },
+      {
+        "word": "丁寧な",
+        "reading": "ていねいな",
+        "meaningEn": "polite",
+        "furigana": "{丁寧な|ていねいな}"
+      },
+      {
+        "word": "面白い",
+        "reading": "おもしろい",
+        "meaningEn": "interesting",
+        "furigana": "{面白い|おもしろい}"
+      }
+    ],
+    "sharedNuanceNote": "Negative etiquette:「失礼な」(rude) =「礼儀のない」(mannerless).",
+    "prefixFurigana": "{先輩|せんぱい}{に対して|にたいして}",
+    "targetFurigana": "{失礼|しつれい}な",
+    "suffixFurigana": "ことを{言っ|いっ}てしまいました。",
+    "sentenceFurigana": "{先輩|せんぱい}{に対して|にたいして}{失礼|しつれい}なことを{言っ|いっ}てしまいました。"
+  },
+  {
+    "id": "syn-n4-totsuzen",
+    "jlpt": 4,
+    "sentenceJa": "雨がとつぜん降り出しました。",
+    "prefix": "雨が",
+    "targetSurface": "とつぜん",
+    "suffix": "降り出しました。",
+    "sentenceEn": "Rain suddenly started falling.",
+    "targetWord": "突然",
+    "targetReading": "とつぜん",
+    "targetMeaningEn": "suddenly",
+    "correctSynonym": {
+      "word": "急に",
+      "reading": "きゅうに",
+      "meaningEn": "suddenly",
+      "furigana": "{急に|きゅうに}"
+    },
+    "distractors": [
+      {
+        "word": "ゆっくり",
+        "reading": "ゆっくり",
+        "meaningEn": "slowly",
+        "furigana": "ゆっくり"
+      },
+      {
+        "word": "だんだん",
+        "reading": "だんだん",
+        "meaningEn": "gradually",
+        "furigana": "だんだん"
+      },
+      {
+        "word": "静かに",
+        "reading": "しずかに",
+        "meaningEn": "quietly",
+        "furigana": "{静かに|しずかに}"
+      }
+    ],
+    "sharedNuanceNote": "Adverbial equivalence:「とつぜん」(suddenly) =「急に」(abruptly/suddenly).",
+    "prefixFurigana": "{雨|あめ}が",
+    "targetFurigana": "とつぜん",
+    "suffixFurigana": "{降り出し|ふりだし}ました。",
+    "sentenceFurigana": "{雨|あめ}がとつぜん{降り出し|ふりだし}ました。"
+  },
+  {
+    "id": "syn-n4-shousai",
+    "jlpt": 4,
+    "sentenceJa": "旅行の予定をくわしく教えてください。",
+    "prefix": "旅行の予定を",
+    "targetSurface": "くわしく",
+    "suffix": "教えてください。",
+    "sentenceEn": "Please tell me the travel plans in detail.",
+    "targetWord": "詳しい",
+    "targetReading": "くわしい",
+    "targetMeaningEn": "detailed",
+    "correctSynonym": {
+      "word": "細かく",
+      "reading": "こまかく",
+      "meaningEn": "finely / in detail",
+      "furigana": "{細かく|こまかく}"
+    },
+    "distractors": [
+      {
+        "word": "簡単に",
+        "reading": "かんたんに",
+        "meaningEn": "simply",
+        "furigana": "{簡単に|かんたんに}"
+      },
+      {
+        "word": "短く",
+        "reading": "みじかく",
+        "meaningEn": "shortly",
+        "furigana": "{短く|みじかく}"
+      },
+      {
+        "word": "大まかに",
+        "reading": "おおまかに",
+        "meaningEn": "roughly",
+        "furigana": "{大まかに|おおまかに}"
+      }
+    ],
+    "sharedNuanceNote": "Degree of detail:「くわしく」(in detail) =「細かく」(specifically / in detail).",
+    "prefixFurigana": "{旅行|りょこう}の{予定|よてい}を",
+    "targetFurigana": "くわしく",
+    "suffixFurigana": "{教え|おしえ}てください。",
+    "sentenceFurigana": "{旅行|りょこう}の{予定|よてい}をくわしく{教え|おしえ}てください。"
+  },
+  {
+    "id": "syn-n4-tabun",
+    "jlpt": 4,
+    "sentenceJa": "明日はたぶん雨が降るでしょう。",
+    "prefix": "明日は",
+    "targetSurface": "たぶん",
+    "suffix": "雨が降るでしょう。",
+    "sentenceEn": "Tomorrow it will probably rain.",
+    "targetWord": "多分",
+    "targetReading": "たぶん",
+    "targetMeaningEn": "probably, perhaps",
+    "correctSynonym": {
+      "word": "おそらく",
+      "reading": "おそらく",
+      "meaningEn": "perhaps, probably",
+      "furigana": "おそらく"
+    },
+    "distractors": [
+      {
+        "word": "きっと",
+        "reading": "きっと",
+        "meaningEn": "surely",
+        "furigana": "きっと"
+      },
+      {
+        "word": "かならず",
+        "reading": "かならず",
+        "meaningEn": "without fail",
+        "furigana": "かならず"
+      },
+      {
+        "word": "ぜったいに",
+        "reading": "ぜったいに",
+        "meaningEn": "definitely",
+        "furigana": "ぜったいに"
+      }
+    ],
+    "sharedNuanceNote": "Probability conjecture:「たぶん」=「おそらく」(probably / likely).",
+    "prefixFurigana": "{明日|あした}は",
+    "targetFurigana": "たぶん",
+    "suffixFurigana": "{雨|あめ}が{降る|ふる}でしょう。",
+    "sentenceFurigana": "{明日|あした}はたぶん{雨|あめ}が{降る|ふる}でしょう。"
+  },
+  {
+    "id": "syn-n4-shibaraku",
+    "jlpt": 4,
+    "sentenceJa": "ここでしばらくお待ちください。",
+    "prefix": "ここで",
+    "targetSurface": "しばらく",
+    "suffix": "お待ちください。",
+    "sentenceEn": "Please wait here for a little while.",
+    "targetWord": "暫く",
+    "targetReading": "しばらく",
+    "targetMeaningEn": "for a while, a moment",
+    "correctSynonym": {
+      "word": "少しの間",
+      "reading": "すこしのあいだ",
+      "meaningEn": "for a short period",
+      "furigana": "{少しの間|すこしのあいだ}"
+    },
+    "distractors": [
+      {
+        "word": "一日中",
+        "reading": "いちにちじゅう",
+        "meaningEn": "all day long",
+        "furigana": "{一日中|いちにちじゅう}"
+      },
+      {
+        "word": "長い時間",
+        "reading": "ながいじかん",
+        "meaningEn": "for a long time",
+        "furigana": "{長い時間|ながいじかん}"
+      },
+      {
+        "word": "今すぐ",
+        "reading": "いますぐ",
+        "meaningEn": "right now",
+        "furigana": "{今すぐ|いますぐ}"
+      }
+    ],
+    "sharedNuanceNote": "Duration expression:「しばらく」=「少しの間」(for a short while).",
+    "prefixFurigana": "ここで",
+    "targetFurigana": "しばらく",
+    "suffixFurigana": "{お待ち|おまち}ください。",
+    "sentenceFurigana": "ここでしばらく{お待ち|おまち}ください。"
+  },
+  {
+    "id": "syn-n4-konna-ni",
+    "jlpt": 4,
+    "sentenceJa": "こんなにたくさんの人がいるとは思いませんでした。",
+    "prefix": "",
+    "targetSurface": "こんなに",
+    "suffix": "たくさんの人がいるとは思いませんでした。",
+    "sentenceEn": "I did not think there would be this many people.",
+    "targetWord": "こんなに",
+    "targetReading": "こんなに",
+    "targetMeaningEn": "this much, so",
+    "correctSynonym": {
+      "word": "これほど",
+      "reading": "これほど",
+      "meaningEn": "to this extent",
+      "furigana": "これほど"
+    },
+    "distractors": [
+      {
+        "word": "あんなに",
+        "reading": "あんなに",
+        "meaningEn": "that much",
+        "furigana": "あんなに"
+      },
+      {
+        "word": "少しだけ",
+        "reading": "すこしだけ",
+        "meaningEn": "only a little",
+        "furigana": "{少しだけ|すこしだけ}"
+      },
+      {
+        "word": "たまに",
+        "reading": "たまに",
+        "meaningEn": "occasionally",
+        "furigana": "たまに"
+      }
+    ],
+    "sharedNuanceNote": "Degree expression:「こんなに」(this much) =「これほど」(to this degree).",
+    "prefixFurigana": "",
+    "targetFurigana": "こんなに",
+    "suffixFurigana": "たくさんの{人|ひと}がいるとは{思い|おもい}ませんでした。",
+    "sentenceFurigana": "こんなにたくさんの{人|ひと}がいるとは{思い|おもい}ませんでした。"
+  },
+  {
     "id": "syn-n5-a3f296ad9a",
     "jlpt": 5,
     "sentenceJa": "コンタクトを入れるというのはいかがでしょう？",
@@ -3481,92 +4556,6 @@
     "targetFurigana": "また",
     "suffixFurigana": "パーティーに{来|き}ます。",
     "sentenceFurigana": "ジムもまたパーティーに{来|き}ます。"
-  },
-  {
-    "id": "syn-n5-8568eded6e",
-    "jlpt": 5,
-    "sentenceJa": "あの犬はしっぽが短い。",
-    "prefix": "あの犬はしっぽが",
-    "targetSurface": "短い",
-    "suffix": "。",
-    "sentenceEn": "That dog has a short tail.",
-    "targetWord": "短い",
-    "targetReading": "みじかい",
-    "targetMeaningEn": "short",
-    "correctSynonym": {
-      "word": "低い",
-      "reading": "ひくい",
-      "meaningEn": "short, low",
-      "furigana": "{低い|ひくい}"
-    },
-    "distractors": [
-      {
-        "word": "青い",
-        "reading": "あおい",
-        "meaningEn": "blue",
-        "furigana": "{青い|あおい}"
-      },
-      {
-        "word": "赤い",
-        "reading": "あかい",
-        "meaningEn": "red",
-        "furigana": "{赤い|あかい}"
-      },
-      {
-        "word": "明るい",
-        "reading": "あかるい",
-        "meaningEn": "bright",
-        "furigana": "{明るい|あかるい}"
-      }
-    ],
-    "sharedNuanceNote": "Both「短い (みじかい)」and「低い (ひくい)」mean 'short'.",
-    "prefixFurigana": "あの{犬|いぬ}はしっぽが",
-    "targetFurigana": "{短い|みじかい}",
-    "suffixFurigana": "。",
-    "sentenceFurigana": "あの{犬|いぬ}はしっぽが{短い|みじかい}。"
-  },
-  {
-    "id": "syn-n5-83da293775",
-    "jlpt": 5,
-    "sentenceJa": "それを言われると弱いなあ。",
-    "prefix": "それを言われると",
-    "targetSurface": "弱い",
-    "suffix": "なあ。",
-    "sentenceEn": "That sure puts me on the spot.",
-    "targetWord": "弱い",
-    "targetReading": "よわい",
-    "targetMeaningEn": "weak",
-    "correctSynonym": {
-      "word": "薄い",
-      "reading": "うすい",
-      "meaningEn": "thin, weak",
-      "furigana": "{薄い|うすい}"
-    },
-    "distractors": [
-      {
-        "word": "青い",
-        "reading": "あおい",
-        "meaningEn": "blue",
-        "furigana": "{青い|あおい}"
-      },
-      {
-        "word": "赤い",
-        "reading": "あかい",
-        "meaningEn": "red",
-        "furigana": "{赤い|あかい}"
-      },
-      {
-        "word": "明るい",
-        "reading": "あかるい",
-        "meaningEn": "bright",
-        "furigana": "{明るい|あかるい}"
-      }
-    ],
-    "sharedNuanceNote": "Both「弱い (よわい)」and「薄い (うすい)」mean 'weak'.",
-    "prefixFurigana": "それを{言わ|いわ}れると",
-    "targetFurigana": "{弱い|よわい}",
-    "suffixFurigana": "なあ。",
-    "sentenceFurigana": "それを{言わ|いわ}れると{弱い|よわい}なあ。"
   },
   {
     "id": "syn-n4-6a4011f27f",
@@ -4513,92 +5502,6 @@
     "targetFurigana": "{深い|ふかい}",
     "suffixFurigana": "。",
     "sentenceFurigana": "{水|みず}はここがいちばん{深い|ふかい}。"
-  },
-  {
-    "id": "syn-n4-6e13cee4dc",
-    "jlpt": 4,
-    "sentenceJa": "ケンは三人のなかでもっとも速く走ります。",
-    "prefix": "ケンは三人のなかで",
-    "targetSurface": "もっとも",
-    "suffix": "速く走ります。",
-    "sentenceEn": "Ken runs fastest of the three.",
-    "targetWord": "もっとも",
-    "targetReading": "もっとも",
-    "targetMeaningEn": "extremely",
-    "correctSynonym": {
-      "word": "ずいぶん",
-      "reading": "ずいぶん",
-      "meaningEn": "extremely",
-      "furigana": "ずいぶん"
-    },
-    "distractors": [
-      {
-        "word": "ああ",
-        "reading": "ああ",
-        "meaningEn": "like that",
-        "furigana": "ああ"
-      },
-      {
-        "word": "うち",
-        "reading": "うち",
-        "meaningEn": "within",
-        "furigana": "うち"
-      },
-      {
-        "word": "きっと",
-        "reading": "きっと",
-        "meaningEn": "surely",
-        "furigana": "きっと"
-      }
-    ],
-    "sharedNuanceNote": "Both「もっとも (もっとも)」and「ずいぶん (ずいぶん)」mean 'extremely'.",
-    "prefixFurigana": "ケンは{三|さん}{人|にん}のなかで",
-    "targetFurigana": "もっとも",
-    "suffixFurigana": "{速く|はやく}{走り|はしり}ます。",
-    "sentenceFurigana": "ケンは{三|さん}{人|にん}のなかでもっとも{速く|はやく}{走り|はしり}ます。"
-  },
-  {
-    "id": "syn-n4-427a618271",
-    "jlpt": 4,
-    "sentenceJa": "母は優しい目で私を見た。",
-    "prefix": "母は",
-    "targetSurface": "優しい",
-    "suffix": "目で私を見た。",
-    "sentenceEn": "My mother gazed at me fondly.",
-    "targetWord": "優しい",
-    "targetReading": "やさしい",
-    "targetMeaningEn": "kind",
-    "correctSynonym": {
-      "word": "厚い",
-      "reading": "あつい",
-      "meaningEn": "kind, deep",
-      "furigana": "{厚い|あつい}"
-    },
-    "distractors": [
-      {
-        "word": "浅い",
-        "reading": "あさい",
-        "meaningEn": "shallow, superficial",
-        "furigana": "{浅い|あさい}"
-      },
-      {
-        "word": "美しい",
-        "reading": "うつくしい",
-        "meaningEn": "beautiful",
-        "furigana": "{美しい|うつくしい}"
-      },
-      {
-        "word": "堅い",
-        "reading": "かたい",
-        "meaningEn": "hard",
-        "furigana": "{堅い|かたい}"
-      }
-    ],
-    "sharedNuanceNote": "Both「優しい (やさしい)」and「厚い (あつい)」mean 'kind'.",
-    "prefixFurigana": "{母|はは}は",
-    "targetFurigana": "{優しい|やさしい}",
-    "suffixFurigana": "{目|め}で{私|わたし}を{見|み}た。",
-    "sentenceFurigana": "{母|はは}は{優しい|やさしい}{目|め}で{私|わたし}を{見|み}た。"
   },
   {
     "id": "syn-n3-7d26b9a262",

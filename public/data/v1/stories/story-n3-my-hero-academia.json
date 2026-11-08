@@ -1,0 +1,4630 @@
+{
+  "id": "story-n3-my-hero-academia",
+  "title": "僕のヒーローアカデミア：笑顔で救う力",
+  "titleRomaji": "Boku no Hiiroo Akademia: Egao de Sukuu Chikara",
+  "titleEn": "My Hero Academia: Power to Save with a Smile",
+  "level": "N3",
+  "category": "Anime & Pop Culture",
+  "tags": [
+    "Anime",
+    "N3",
+    "Superhero",
+    "School",
+    "Courage"
+  ],
+  "paragraphs": [
+    {
+      "ja": "世界人口の約八割が何らかの超常能力である「個性」を持って生まれる社会が到来しました。人々を脅かす悪質な犯罪者である敵を取り締まるため、「ヒーロー」という憧れの職業が確立されていたのです。少年・緑谷出久は、幼い頃から平和の象徴である最強のヒーロー・オールマイトに熱烈な憧れを抱いていました。しかし何の能力も持たない「無個性」として生まれたせいで、周囲からヒーローになる夢を嘲笑され続けていました。",
+      "en": "A society arrived where approximately eighty percent of the global population was born possessing some form of superhuman ability called a 'Quirk.' In order to apprehend malicious criminals known as Villains who endangered the public, the revered profession of 'Hero' had been established. A boy named Izuku Midoriya had harbored ardent admiration since early childhood for All Might, the supreme hero and Symbol of Peace. However, having been born 'Quirkless' with no powers whatsoever, his dream of becoming a hero was constantly mocked by those around him.",
+      "tokens": [
+        {
+          "surface": "世界",
+          "reading": "せかい",
+          "meaning": "the world",
+          "baseForm": "世界",
+          "level": "N4"
+        },
+        {
+          "surface": "人口"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "約"
+        },
+        {
+          "surface": "八割"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "何らかの"
+        },
+        {
+          "surface": "超"
+        },
+        {
+          "surface": "常"
+        },
+        {
+          "surface": "能力"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "個性"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "持",
+          "reading": "も",
+          "meaning": "to hold",
+          "baseForm": "持つ",
+          "level": "N5"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "生まれる"
+        },
+        {
+          "surface": "社会"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "到来"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "人々",
+          "reading": "ひと々",
+          "meaning": "person",
+          "baseForm": "人",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "脅かす"
+        },
+        {
+          "surface": "悪質"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "犯罪"
+        },
+        {
+          "surface": "者"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "敵",
+          "reading": "てき",
+          "meaning": "enemy; rival",
+          "baseForm": "敵",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "取り締まる"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "ヒーロー"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "憧"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "職業"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "確立"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "少年",
+          "reading": "しょうねん",
+          "meaning": "boys; juveniles",
+          "baseForm": "少年",
+          "level": "N3"
+        },
+        {
+          "surface": "・"
+        },
+        {
+          "surface": "緑"
+        },
+        {
+          "surface": "谷"
+        },
+        {
+          "surface": "出",
+          "reading": "だ",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "久"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "幼い"
+        },
+        {
+          "surface": "頃"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "平和",
+          "reading": "へいわ",
+          "meaning": "peace; harmony",
+          "baseForm": "平和",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "象徴"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "最強"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ヒーロー"
+        },
+        {
+          "surface": "・"
+        },
+        {
+          "surface": "オール"
+        },
+        {
+          "surface": "マイト"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "熱烈"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "憧"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "抱"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "しかし",
+          "meaning": "however",
+          "baseForm": "しかし",
+          "level": "N5"
+        },
+        {
+          "surface": "何",
+          "reading": "なん",
+          "meaning": "what",
+          "baseForm": "何",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "能力"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "持",
+          "reading": "も",
+          "meaning": "to hold",
+          "baseForm": "持つ",
+          "level": "N5"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "無"
+        },
+        {
+          "surface": "個性"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "として"
+        },
+        {
+          "surface": "生まれ",
+          "reading": "うまれ",
+          "meaning": "birth; birth-place",
+          "baseForm": "生まれ",
+          "level": "N3"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "せい"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "周囲"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "ヒーロー"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "なる",
+          "meaning": "to become",
+          "baseForm": "なる",
+          "level": "N5"
+        },
+        {
+          "surface": "夢",
+          "reading": "ゆめ",
+          "meaning": "dream",
+          "baseForm": "夢",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "嘲笑"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "続"
+        },
+        {
+          "surface": "け"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "世界人口の約八割が何らかの超常能力である「個性」を持って生まれる社会が到来しました。",
+          "literalEn": "the world 人口 ['s / of] 八割 [subj] 何らかの 能力 [in/by] to be 個性 [obj] to hold って 生まれる 社会 [subj] 到来 しま した",
+          "naturalEn": "A society arrived where approximately eighty percent of the global population was born possessing some form of superhuman ability called a 'Quirk.'",
+          "tokens": [
+            {
+              "surface": "世界",
+              "reading": "せかい",
+              "meaning": "the world",
+              "baseForm": "世界",
+              "level": "N4"
+            },
+            {
+              "surface": "人口"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "約"
+            },
+            {
+              "surface": "八割"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "何らかの"
+            },
+            {
+              "surface": "超"
+            },
+            {
+              "surface": "常"
+            },
+            {
+              "surface": "能力"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "個性"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "持",
+              "reading": "も",
+              "meaning": "to hold",
+              "baseForm": "持つ",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "生まれる"
+            },
+            {
+              "surface": "社会"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "到来"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "人々を脅かす悪質な犯罪者である敵を取り締まるため、「ヒーロー」という憧れの職業が確立されていたのです。",
+          "literalEn": "person [obj] 脅かす 悪質 犯罪 [in/by] to be enemy [obj] 取り締まる ため ヒーロー という ['s / of] 職業 [subj] 確立 てい [past] ['s / of] [is]",
+          "naturalEn": "In order to apprehend malicious criminals known as Villains who endangered the public, the revered profession of 'Hero' had been established.",
+          "tokens": [
+            {
+              "surface": "人々",
+              "reading": "ひと々",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "脅かす"
+            },
+            {
+              "surface": "悪質"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "犯罪"
+            },
+            {
+              "surface": "者"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "敵",
+              "reading": "てき",
+              "meaning": "enemy; rival",
+              "baseForm": "敵",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "取り締まる"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "ヒーロー"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "憧"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "職業"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "確立"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "少年・緑谷出久は、幼い頃から平和の象徴である最強のヒーロー・オールマイトに熱烈な憧れを抱いていました。",
+          "literalEn": "boys to put out [topic] 幼い [from] peace ['s / of] 象徴 [in/by] to be 最強 ['s / of] ヒーロー オール マイト [at/to] 熱烈 [obj] てい した",
+          "naturalEn": "A boy named Izuku Midoriya had harbored ardent admiration since early childhood for All Might, the supreme hero and Symbol of Peace.",
+          "tokens": [
+            {
+              "surface": "少年",
+              "reading": "しょうねん",
+              "meaning": "boys; juveniles",
+              "baseForm": "少年",
+              "level": "N3"
+            },
+            {
+              "surface": "・"
+            },
+            {
+              "surface": "緑"
+            },
+            {
+              "surface": "谷"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "久"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "幼い"
+            },
+            {
+              "surface": "頃"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "平和",
+              "reading": "へいわ",
+              "meaning": "peace; harmony",
+              "baseForm": "平和",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "象徴"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "最強"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ヒーロー"
+            },
+            {
+              "surface": "・"
+            },
+            {
+              "surface": "オール"
+            },
+            {
+              "surface": "マイト"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "熱烈"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "憧"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "抱"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "しかし何の能力も持たない「無個性」として生まれたせいで、周囲からヒーローになる夢を嘲笑され続けていました。",
+          "literalEn": "however what ['s / of] 能力 [also] to hold [past] [not] 個性 として birth [past] せい [in/by] 周囲 [from] ヒーロー [at/to] to become dream [obj] 嘲笑 てい した",
+          "naturalEn": "However, having been born 'Quirkless' with no powers whatsoever, his dream of becoming a hero was constantly mocked by those around him.",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "何",
+              "reading": "なん",
+              "meaning": "what",
+              "baseForm": "何",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "能力"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "持",
+              "reading": "も",
+              "meaning": "to hold",
+              "baseForm": "持つ",
+              "level": "N5"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "無"
+            },
+            {
+              "surface": "個性"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "として"
+            },
+            {
+              "surface": "生まれ",
+              "reading": "うまれ",
+              "meaning": "birth; birth-place",
+              "baseForm": "生まれ",
+              "level": "N3"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "せい"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "周囲"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "ヒーロー"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なる",
+              "meaning": "to become",
+              "baseForm": "なる",
+              "level": "N5"
+            },
+            {
+              "surface": "夢",
+              "reading": "ゆめ",
+              "meaning": "dream",
+              "baseForm": "夢",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "嘲笑"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "続"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "ある日、友人の爆豪勝己が恐ろしいヘドロの敵に襲われ、プロのヒーローたちさえ手を出せない事態に陥りました。無個性であるにもかかわらず、出久は考えるよりも先に足が動き、友を救うために現場へと駆け出していました。その無謀とも言える勇気を目撃したオールマイトは、出久の中に本物のヒーローの資質を見出しました。「君はヒーローになれる」という温かい言葉をかけられ、出久は長年堪えてきた涙を一気に溢れさせました。",
+      "en": "One day, when his childhood friend Katsuki Bakugo was attacked by a terrifying Sludge Villain, even professional heroes hesitated to intervene. Despite being completely Quirkless, Izuku's legs moved before his brain could think, dashing straight into danger to save his friend. Witnessing that courage which might have seemed reckless to others, All Might discerned the unmistakable qualities of a true hero within Izuku. Hearing the heartwarming declaration 'You can become a hero,' Izuku let tears he had suppressed for years flow uncontrollably.",
+      "tokens": [
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "日",
+          "reading": "ひ",
+          "meaning": "day; sun",
+          "baseForm": "日",
+          "level": "N4"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "友人"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "爆"
+        },
+        {
+          "surface": "豪"
+        },
+        {
+          "surface": "勝己"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "恐ろしい",
+          "reading": "おそろしい",
+          "meaning": "terrible; dreadful",
+          "baseForm": "恐ろしい",
+          "level": "N3"
+        },
+        {
+          "surface": "ヘドロ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "敵",
+          "reading": "てき",
+          "meaning": "enemy; rival",
+          "baseForm": "敵",
+          "level": "N3"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "襲"
+        },
+        {
+          "surface": "われ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "プロ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ヒーロー"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "さえ"
+        },
+        {
+          "surface": "手",
+          "reading": "て",
+          "meaning": "hand",
+          "baseForm": "手",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "出",
+          "reading": "だ",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "せ"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "事態"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "陥"
+        },
+        {
+          "surface": "り"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "無"
+        },
+        {
+          "surface": "個性"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "にもかかわらず"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "出",
+          "reading": "だ",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "久"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "考える"
+        },
+        {
+          "surface": "より",
+          "meaning": "than; (used for comparison)",
+          "baseForm": "より",
+          "level": "N5"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "先に"
+        },
+        {
+          "surface": "足",
+          "reading": "あし",
+          "meaning": "foot; leg",
+          "baseForm": "足",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "動き",
+          "reading": "うごき",
+          "meaning": "movement; activity; trend",
+          "baseForm": "動き",
+          "level": "N1"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "友"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "救う"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "現場"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "駆け出し"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "その",
+          "meaning": "that",
+          "baseForm": "その",
+          "level": "N5"
+        },
+        {
+          "surface": "無謀"
+        },
+        {
+          "surface": "とも"
+        },
+        {
+          "surface": "言える"
+        },
+        {
+          "surface": "勇気",
+          "reading": "ゆうき",
+          "meaning": "courage; bravery; valour",
+          "baseForm": "勇気",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "目撃"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "オール"
+        },
+        {
+          "surface": "マイト"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "出",
+          "reading": "だ",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "久"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "中",
+          "reading": "なか",
+          "meaning": "middle",
+          "baseForm": "中",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "本物"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ヒーロー"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "資質"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "見出し"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "君"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "ヒーロー"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "なれる"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "温かい",
+          "reading": "ぬるかい",
+          "meaning": "luke warm",
+          "baseForm": "温い",
+          "level": "N5"
+        },
+        {
+          "surface": "言葉",
+          "reading": "ことば",
+          "meaning": "word; language",
+          "baseForm": "言葉",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "かけ"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "出",
+          "reading": "だ",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "久"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "長年"
+        },
+        {
+          "surface": "堪"
+        },
+        {
+          "surface": "えて"
+        },
+        {
+          "surface": "きた"
+        },
+        {
+          "surface": "涙"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "一気に"
+        },
+        {
+          "surface": "溢",
+          "reading": "あふ",
+          "meaning": "to overflow; to brim over",
+          "baseForm": "溢れる",
+          "level": "N3"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "せ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "ある日、友人の爆豪勝己が恐ろしいヘドロの敵に襲われ、プロのヒーローたちさえ手を出せない事態に陥りました。",
+          "literalEn": "to be day 友人 ['s / of] 勝己 [subj] terrible ヘドロ ['s / of] enemy [at/to] われ プロ ['s / of] ヒーロー たち さえ hand [obj] to put out [not] 事態 [at/to] した",
+          "naturalEn": "One day, when his childhood friend Katsuki Bakugo was attacked by a terrifying Sludge Villain, even professional heroes hesitated to intervene.",
+          "tokens": [
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "友人"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "爆"
+            },
+            {
+              "surface": "豪"
+            },
+            {
+              "surface": "勝己"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "恐ろしい",
+              "reading": "おそろしい",
+              "meaning": "terrible; dreadful",
+              "baseForm": "恐ろしい",
+              "level": "N3"
+            },
+            {
+              "surface": "ヘドロ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "敵",
+              "reading": "てき",
+              "meaning": "enemy; rival",
+              "baseForm": "敵",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "襲"
+            },
+            {
+              "surface": "われ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "プロ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ヒーロー"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "さえ"
+            },
+            {
+              "surface": "手",
+              "reading": "て",
+              "meaning": "hand",
+              "baseForm": "手",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "事態"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "陥"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "無個性であるにもかかわらず、出久は考えるよりも先に足が動き、友を救うために現場へと駆け出していました。",
+          "literalEn": "個性 [in/by] to be にもかかわらず to put out [topic] 考える [than] [also] 先に foot [subj] movement [obj] 救う ため [at/to] 現場 [toward] [with/and] 駆け出し てい した",
+          "naturalEn": "Despite being completely Quirkless, Izuku's legs moved before his brain could think, dashing straight into danger to save his friend.",
+          "tokens": [
+            {
+              "surface": "無"
+            },
+            {
+              "surface": "個性"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "にもかかわらず"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "久"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "考える"
+            },
+            {
+              "surface": "より",
+              "meaning": "than; (used for comparison)",
+              "baseForm": "より",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "先に"
+            },
+            {
+              "surface": "足",
+              "reading": "あし",
+              "meaning": "foot; leg",
+              "baseForm": "足",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "動き",
+              "reading": "うごき",
+              "meaning": "movement; activity; trend",
+              "baseForm": "動き",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "友"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "救う"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "現場"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "駆け出し"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "その無謀とも言える勇気を目撃したオールマイトは、出久の中に本物のヒーローの資質を見出しました。",
+          "literalEn": "that 無謀 とも 言える courage [obj] 目撃 した オール マイト [topic] to put out ['s / of] middle [at/to] 本物 ['s / of] ヒーロー ['s / of] 資質 [obj] 見出し した",
+          "naturalEn": "Witnessing that courage which might have seemed reckless to others, All Might discerned the unmistakable qualities of a true hero within Izuku.",
+          "tokens": [
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "無謀"
+            },
+            {
+              "surface": "とも"
+            },
+            {
+              "surface": "言える"
+            },
+            {
+              "surface": "勇気",
+              "reading": "ゆうき",
+              "meaning": "courage; bravery; valour",
+              "baseForm": "勇気",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "目撃"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "オール"
+            },
+            {
+              "surface": "マイト"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "久"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "本物"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ヒーロー"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "資質"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見出し"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「君はヒーローになれる」という温かい言葉をかけられ、出久は長年堪えてきた涙を一気に溢れさせました。",
+          "literalEn": "[topic] ヒーロー [at/to] なれる という luke warm word [obj] かけ to put out [topic] 長年 えて きた [obj] 一気に to overflow した",
+          "naturalEn": "Hearing the heartwarming declaration 'You can become a hero,' Izuku let tears he had suppressed for years flow uncontrollably.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "君"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "ヒーロー"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なれる"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "温かい",
+              "reading": "ぬるかい",
+              "meaning": "luke warm",
+              "baseForm": "温い",
+              "level": "N5"
+            },
+            {
+              "surface": "言葉",
+              "reading": "ことば",
+              "meaning": "word; language",
+              "baseForm": "言葉",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "かけ"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "久"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "長年"
+            },
+            {
+              "surface": "堪"
+            },
+            {
+              "surface": "えて"
+            },
+            {
+              "surface": "きた"
+            },
+            {
+              "surface": "涙"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "一気に"
+            },
+            {
+              "surface": "溢",
+              "reading": "あふ",
+              "meaning": "to overflow; to brim over",
+              "baseForm": "溢れる",
+              "level": "N3"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "世代を超えて受け継がれてきた伝説の個性「ワン・フォー・オール」の後継者として、出久は指名を受けました。強大すぎる力に耐えられる身体を作るため、ゴミだらけの海岸を十ヶ月かけて清掃するという過酷な肉体鍛錬を成し遂げました。名門・雄英高校ヒーロー科の難関入試に見事合格し、志を同じくする多彩なクラスメイトたちと出会うことになりました。力を制御できずに骨折を繰り返しながらも、彼は持ち前の鋭い分析力を駆使して一歩ずつ成長していきました。",
+      "en": "Izuku was chosen as the designated successor to 'One For All,' a legendary Quirk handed down across generations. To forge a physique capable of withstanding that overwhelming power, he accomplished the grueling physical ordeal of cleaning a trash-filled beach over ten months. Splendidly passing the daunting entrance exam for the elite U.A. High School Hero Course, he met colorful classmates sharing identical aspirations. Though repeatedly breaking his own bones from failing to control the power, he grew step by step by weaponizing his innate analytical acuity.",
+      "tokens": [
+        {
+          "surface": "世代",
+          "reading": "せだい",
+          "meaning": "generation; the world; the age",
+          "baseForm": "世代",
+          "level": "N1"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "超"
+        },
+        {
+          "surface": "えて"
+        },
+        {
+          "surface": "受け"
+        },
+        {
+          "surface": "継",
+          "reading": "つ",
+          "meaning": "to succeed",
+          "baseForm": "継ぐ",
+          "level": "N1"
+        },
+        {
+          "surface": "がれ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "きた"
+        },
+        {
+          "surface": "伝説",
+          "reading": "でんせつ",
+          "meaning": "tradition; legend; folklore",
+          "baseForm": "伝説",
+          "level": "N1"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "個性"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "ワン"
+        },
+        {
+          "surface": "・"
+        },
+        {
+          "surface": "フォー"
+        },
+        {
+          "surface": "・"
+        },
+        {
+          "surface": "オール"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "後継"
+        },
+        {
+          "surface": "者"
+        },
+        {
+          "surface": "として"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "出",
+          "reading": "だ",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "久"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "指名"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "受け"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "強大"
+        },
+        {
+          "surface": "すぎる"
+        },
+        {
+          "surface": "力",
+          "reading": "ちから",
+          "meaning": "strength; power",
+          "baseForm": "力",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "耐え"
+        },
+        {
+          "surface": "られる"
+        },
+        {
+          "surface": "身体"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "作る",
+          "reading": "つくる",
+          "meaning": "to make",
+          "baseForm": "作る",
+          "level": "N5"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "ゴミ"
+        },
+        {
+          "surface": "だらけ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "海岸",
+          "reading": "かいがん",
+          "meaning": "coast",
+          "baseForm": "海岸",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "十"
+        },
+        {
+          "surface": "ヶ月"
+        },
+        {
+          "surface": "かけ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "清掃"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "過酷"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "肉体"
+        },
+        {
+          "surface": "鍛錬"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "成"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "遂"
+        },
+        {
+          "surface": "げ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "名門"
+        },
+        {
+          "surface": "・"
+        },
+        {
+          "surface": "雄"
+        },
+        {
+          "surface": "英"
+        },
+        {
+          "surface": "高校"
+        },
+        {
+          "surface": "ヒーロー"
+        },
+        {
+          "surface": "科"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "難関"
+        },
+        {
+          "surface": "入試"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "見事",
+          "reading": "みごと",
+          "meaning": "splendid; magnificent; beautiful",
+          "baseForm": "見事",
+          "level": "N3"
+        },
+        {
+          "surface": "合格"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "志"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "同じく"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "多彩"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "クラスメイト"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "出会う"
+        },
+        {
+          "surface": "ことに"
+        },
+        {
+          "surface": "なり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "力",
+          "reading": "ちから",
+          "meaning": "strength; power",
+          "baseForm": "力",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "制御"
+        },
+        {
+          "surface": "でき"
+        },
+        {
+          "surface": "ず"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "骨折"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "繰り返し"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "持ち前"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "鋭い"
+        },
+        {
+          "surface": "分析"
+        },
+        {
+          "surface": "力",
+          "reading": "ちから",
+          "meaning": "strength; power",
+          "baseForm": "力",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "駆使"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "一歩"
+        },
+        {
+          "surface": "ずつ"
+        },
+        {
+          "surface": "成長"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "き"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "世代を超えて受け継がれてきた伝説の個性「ワン・フォー・オール」の後継者として、出久は指名を受けました。",
+          "literalEn": "generation [obj] えて 受け to succeed がれ [and] きた tradition ['s / of] 個性 ワン フォー オール ['s / of] 後継 として to put out [topic] 指名 [obj] 受け した",
+          "naturalEn": "Izuku was chosen as the designated successor to 'One For All,' a legendary Quirk handed down across generations.",
+          "tokens": [
+            {
+              "surface": "世代",
+              "reading": "せだい",
+              "meaning": "generation; the world; the age",
+              "baseForm": "世代",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "超"
+            },
+            {
+              "surface": "えて"
+            },
+            {
+              "surface": "受け"
+            },
+            {
+              "surface": "継",
+              "reading": "つ",
+              "meaning": "to succeed",
+              "baseForm": "継ぐ",
+              "level": "N1"
+            },
+            {
+              "surface": "がれ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "きた"
+            },
+            {
+              "surface": "伝説",
+              "reading": "でんせつ",
+              "meaning": "tradition; legend; folklore",
+              "baseForm": "伝説",
+              "level": "N1"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "個性"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "ワン"
+            },
+            {
+              "surface": "・"
+            },
+            {
+              "surface": "フォー"
+            },
+            {
+              "surface": "・"
+            },
+            {
+              "surface": "オール"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "後継"
+            },
+            {
+              "surface": "者"
+            },
+            {
+              "surface": "として"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "久"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "指名"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "受け"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "強大すぎる力に耐えられる身体を作るため、ゴミだらけの海岸を十ヶ月かけて清掃するという過酷な肉体鍛錬を成し遂げました。",
+          "literalEn": "強大 すぎる strength [at/to] 耐え られる 身体 [obj] to make ため ゴミ だらけ ['s / of] coast [obj] ヶ月 かけ [and] 清掃 to do という 過酷 肉体 鍛錬 [obj] した",
+          "naturalEn": "To forge a physique capable of withstanding that overwhelming power, he accomplished the grueling physical ordeal of cleaning a trash-filled beach over ten months.",
+          "tokens": [
+            {
+              "surface": "強大"
+            },
+            {
+              "surface": "すぎる"
+            },
+            {
+              "surface": "力",
+              "reading": "ちから",
+              "meaning": "strength; power",
+              "baseForm": "力",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "耐え"
+            },
+            {
+              "surface": "られる"
+            },
+            {
+              "surface": "身体"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "作る",
+              "reading": "つくる",
+              "meaning": "to make",
+              "baseForm": "作る",
+              "level": "N5"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ゴミ"
+            },
+            {
+              "surface": "だらけ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "海岸",
+              "reading": "かいがん",
+              "meaning": "coast",
+              "baseForm": "海岸",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "十"
+            },
+            {
+              "surface": "ヶ月"
+            },
+            {
+              "surface": "かけ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "清掃"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "過酷"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "肉体"
+            },
+            {
+              "surface": "鍛錬"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "成"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "遂"
+            },
+            {
+              "surface": "げ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "名門・雄英高校ヒーロー科の難関入試に見事合格し、志を同じくする多彩なクラスメイトたちと出会うことになりました。",
+          "literalEn": "名門 高校 ヒーロー ['s / of] 難関 入試 [at/to] splendid 合格 [obj] 同じく to do 多彩 クラスメイト たち [with/and] 出会う ことに なり した",
+          "naturalEn": "Splendidly passing the daunting entrance exam for the elite U.A. High School Hero Course, he met colorful classmates sharing identical aspirations.",
+          "tokens": [
+            {
+              "surface": "名門"
+            },
+            {
+              "surface": "・"
+            },
+            {
+              "surface": "雄"
+            },
+            {
+              "surface": "英"
+            },
+            {
+              "surface": "高校"
+            },
+            {
+              "surface": "ヒーロー"
+            },
+            {
+              "surface": "科"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "難関"
+            },
+            {
+              "surface": "入試"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "見事",
+              "reading": "みごと",
+              "meaning": "splendid; magnificent; beautiful",
+              "baseForm": "見事",
+              "level": "N3"
+            },
+            {
+              "surface": "合格"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "志"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "同じく"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "多彩"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "クラスメイト"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "出会う"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "力を制御できずに骨折を繰り返しながらも、彼は持ち前の鋭い分析力を駆使して一歩ずつ成長していきました。",
+          "literalEn": "strength [obj] 制御 でき [at/to] 骨折 [obj] 繰り返し ながら [also] he [topic] 持ち前 ['s / of] 鋭い 分析 strength [obj] 駆使 [and] 一歩 ずつ 成長 てい した",
+          "naturalEn": "Though repeatedly breaking his own bones from failing to control the power, he grew step by step by weaponizing his innate analytical acuity.",
+          "tokens": [
+            {
+              "surface": "力",
+              "reading": "ちから",
+              "meaning": "strength; power",
+              "baseForm": "力",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "制御"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ず"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "骨折"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "繰り返し"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "持ち前"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "鋭い"
+            },
+            {
+              "surface": "分析"
+            },
+            {
+              "surface": "力",
+              "reading": "ちから",
+              "meaning": "strength; power",
+              "baseForm": "力",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "駆使"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "一歩"
+            },
+            {
+              "surface": "ずつ"
+            },
+            {
+              "surface": "成長"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "学校への敵連合の奇襲や過酷な林間合宿を通じて、生徒たちは否応なく本物の命がけの戦いに巻き込まれていきました。オールマイトが宿敵との決闘で最後の力を使い果たした時、次代の象徴としての重責が出久の小さな肩に託されました。誰かを助ける時に恐れを見せず、安心させるような笑顔を浮かべることの難しさと崇高さを彼は痛感しました。仲間たちとお互いの弱さを補い合いながら、彼らは困難を乗り越えて「最高のヒーロー」への階段を登り始めました。",
+      "en": "Through surprise raids by the League of Villains on campus and a grueling training camp, the students were inevitably swept into real life-or-death warfare. When All Might exhausted his final embers of power in a fateful duel against his archenemy, the heavy mantle of the next symbol fell upon Izuku's shoulders. He acutely felt both the immense difficulty and the sublime majesty of flashing a reassuring smile without revealing fear when saving someone. Compensating for one another's shortcomings alongside his peers, they began climbing the steps toward becoming the greatest heroes.",
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "meaning": "school",
+          "baseForm": "学校",
+          "level": "N5"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "敵",
+          "reading": "てき",
+          "meaning": "enemy; rival",
+          "baseForm": "敵",
+          "level": "N3"
+        },
+        {
+          "surface": "連合"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "奇襲"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "過酷"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "林間"
+        },
+        {
+          "surface": "合宿"
+        },
+        {
+          "surface": "を通じて"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "生徒"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "否応"
+        },
+        {
+          "surface": "なく"
+        },
+        {
+          "surface": "本物"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "命がけ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "戦い",
+          "reading": "たたかい",
+          "meaning": "battle; fight; struggle",
+          "baseForm": "戦い",
+          "level": "N3"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "巻き"
+        },
+        {
+          "surface": "込"
+        },
+        {
+          "surface": "まれ"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "き"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "オール"
+        },
+        {
+          "surface": "マイト"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "宿敵"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "決闘"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "最後",
+          "reading": "さいご",
+          "meaning": "last; end",
+          "baseForm": "最後",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "力",
+          "reading": "ちから",
+          "meaning": "strength; power",
+          "baseForm": "力",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "使い",
+          "reading": "つかい",
+          "meaning": "to use",
+          "baseForm": "使う",
+          "level": "N5"
+        },
+        {
+          "surface": "果"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "時",
+          "reading": "とき",
+          "meaning": "time; hour; occasion",
+          "baseForm": "時",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "次代"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "象徴"
+        },
+        {
+          "surface": "として"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "重責"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "出",
+          "reading": "だ",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "久"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "小さな",
+          "reading": "ちいさな",
+          "meaning": "little",
+          "baseForm": "小さな",
+          "level": "N5"
+        },
+        {
+          "surface": "肩"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "託"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "誰か",
+          "reading": "だれか",
+          "meaning": "someone; somebody",
+          "baseForm": "誰か",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "助ける",
+          "reading": "たすける",
+          "meaning": "to help; to save; to rescue",
+          "baseForm": "助ける",
+          "level": "N3"
+        },
+        {
+          "surface": "時に",
+          "reading": "ときに",
+          "meaning": "time; hour; occasion",
+          "baseForm": "時",
+          "level": "N3"
+        },
+        {
+          "surface": "恐れ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "見",
+          "reading": "み",
+          "meaning": "to see; to watch",
+          "baseForm": "見る",
+          "level": "N5"
+        },
+        {
+          "surface": "せ"
+        },
+        {
+          "surface": "ず"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "安心",
+          "reading": "あんしん",
+          "meaning": "relief",
+          "baseForm": "安心",
+          "level": "N4"
+        },
+        {
+          "surface": "させる"
+        },
+        {
+          "surface": "よう"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "笑顔",
+          "reading": "えがお",
+          "meaning": "smiling face",
+          "baseForm": "笑顔",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "浮かべる"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "難"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "崇高"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "痛感"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "仲間"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "お互い"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "弱"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "補い"
+        },
+        {
+          "surface": "合"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "彼ら",
+          "reading": "かれら",
+          "meaning": "they",
+          "baseForm": "彼ら",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "困難",
+          "reading": "こんなん",
+          "meaning": "difficulty; distress",
+          "baseForm": "困難",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "乗り",
+          "reading": "のり",
+          "meaning": "to get on; to ride",
+          "baseForm": "乗る",
+          "level": "N5"
+        },
+        {
+          "surface": "越",
+          "reading": "こ",
+          "meaning": "to go over (e.g. with audience)",
+          "baseForm": "越す",
+          "level": "N3"
+        },
+        {
+          "surface": "えて"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "最高"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ヒーロー"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "階段"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "登り",
+          "reading": "のぼり",
+          "meaning": "to climb",
+          "baseForm": "登る",
+          "level": "N5"
+        },
+        {
+          "surface": "始め",
+          "reading": "はじめ",
+          "meaning": "beginning; start; origin",
+          "baseForm": "始め",
+          "level": "N1"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "学校への敵連合の奇襲や過酷な林間合宿を通じて、生徒たちは否応なく本物の命がけの戦いに巻き込まれていきました。",
+          "literalEn": "school [toward] ['s / of] enemy 連合 ['s / of] 奇襲 過酷 林間 合宿 を通じて 生徒 たち [topic] 否応 なく 本物 ['s / of] 命がけ ['s / of] battle [at/to] 巻き まれ てい した",
+          "naturalEn": "Through surprise raids by the League of Villains on campus and a grueling training camp, the students were inevitably swept into real life-or-death warfare.",
+          "tokens": [
+            {
+              "surface": "学校",
+              "reading": "がっこう",
+              "meaning": "school",
+              "baseForm": "学校",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "敵",
+              "reading": "てき",
+              "meaning": "enemy; rival",
+              "baseForm": "敵",
+              "level": "N3"
+            },
+            {
+              "surface": "連合"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "奇襲"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "過酷"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "林間"
+            },
+            {
+              "surface": "合宿"
+            },
+            {
+              "surface": "を通じて"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "生徒"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "否応"
+            },
+            {
+              "surface": "なく"
+            },
+            {
+              "surface": "本物"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "命がけ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "戦い",
+              "reading": "たたかい",
+              "meaning": "battle; fight; struggle",
+              "baseForm": "戦い",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "巻き"
+            },
+            {
+              "surface": "込"
+            },
+            {
+              "surface": "まれ"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "オールマイトが宿敵との決闘で最後の力を使い果たした時、次代の象徴としての重責が出久の小さな肩に託されました。",
+          "literalEn": "オール マイト [subj] 宿敵 [with/and] ['s / of] 決闘 [in/by] last ['s / of] strength [obj] to use [past] した time 次代 ['s / of] 象徴 として ['s / of] 重責 [subj] to put out ['s / of] little [at/to] した",
+          "naturalEn": "When All Might exhausted his final embers of power in a fateful duel against his archenemy, the heavy mantle of the next symbol fell upon Izuku's shoulders.",
+          "tokens": [
+            {
+              "surface": "オール"
+            },
+            {
+              "surface": "マイト"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "宿敵"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "決闘"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "最後",
+              "reading": "さいご",
+              "meaning": "last; end",
+              "baseForm": "最後",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "力",
+              "reading": "ちから",
+              "meaning": "strength; power",
+              "baseForm": "力",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "使い",
+              "reading": "つかい",
+              "meaning": "to use",
+              "baseForm": "使う",
+              "level": "N5"
+            },
+            {
+              "surface": "果"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "時",
+              "reading": "とき",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "次代"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "象徴"
+            },
+            {
+              "surface": "として"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "重責"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "久"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "小さな",
+              "reading": "ちいさな",
+              "meaning": "little",
+              "baseForm": "小さな",
+              "level": "N5"
+            },
+            {
+              "surface": "肩"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "託"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "誰かを助ける時に恐れを見せず、安心させるような笑顔を浮かべることの難しさと崇高さを彼は痛感しました。",
+          "literalEn": "someone [obj] to help time 恐れ [obj] to see relief させる よう smiling face [obj] 浮かべる thing ['s / of] [with/and] 崇高 [obj] he [topic] 痛感 しま した",
+          "naturalEn": "He acutely felt both the immense difficulty and the sublime majesty of flashing a reassuring smile without revealing fear when saving someone.",
+          "tokens": [
+            {
+              "surface": "誰か",
+              "reading": "だれか",
+              "meaning": "someone; somebody",
+              "baseForm": "誰か",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "助ける",
+              "reading": "たすける",
+              "meaning": "to help; to save; to rescue",
+              "baseForm": "助ける",
+              "level": "N3"
+            },
+            {
+              "surface": "時に",
+              "reading": "ときに",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "恐れ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "ず"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "安心",
+              "reading": "あんしん",
+              "meaning": "relief",
+              "baseForm": "安心",
+              "level": "N4"
+            },
+            {
+              "surface": "させる"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "笑顔",
+              "reading": "えがお",
+              "meaning": "smiling face",
+              "baseForm": "笑顔",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "浮かべる"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "難"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "崇高"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "痛感"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "仲間たちとお互いの弱さを補い合いながら、彼らは困難を乗り越えて「最高のヒーロー」への階段を登り始めました。",
+          "literalEn": "仲間 たち [with/and] お互い ['s / of] [obj] 補い ながら they [topic] difficulty [obj] to get on to go over えて 最高 ['s / of] ヒーロー [toward] ['s / of] 階段 [obj] to climb beginning した",
+          "naturalEn": "Compensating for one another's shortcomings alongside his peers, they began climbing the steps toward becoming the greatest heroes.",
+          "tokens": [
+            {
+              "surface": "仲間"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "お互い"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "弱"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "補い"
+            },
+            {
+              "surface": "合"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼ら",
+              "reading": "かれら",
+              "meaning": "they",
+              "baseForm": "彼ら",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "困難",
+              "reading": "こんなん",
+              "meaning": "difficulty; distress",
+              "baseForm": "困難",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "乗り",
+              "reading": "のり",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "越",
+              "reading": "こ",
+              "meaning": "to go over (e.g. with audience)",
+              "baseForm": "越す",
+              "level": "N3"
+            },
+            {
+              "surface": "えて"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "最高"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ヒーロー"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "階段"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "登り",
+              "reading": "のぼり",
+              "meaning": "to climb",
+              "baseForm": "登る",
+              "level": "N5"
+            },
+            {
+              "surface": "始め",
+              "reading": "はじめ",
+              "meaning": "beginning; start; origin",
+              "baseForm": "始め",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "「更に向こうへ、プルス・ウルトラ！」という校訓を叫びながら、少年少女たちは今日も未来を切り拓くために走り続けています。かつて無力だった少年が流した悔し涙は、今や人々を絶望から救い上げる確かな強さへと変わりました。最高のヒーローになるための彼の物語は、温かい希望の光を放ちながらどこまでも広がっていくのです。",
+      "en": "Shouting their school motto 'Further beyond, Plus Ultra!', the young heroes continue sprinting forward today to carve out tomorrow. The bitter tears once shed by a helpless boy have now transformed into undeniable strength that lifts people out of despair. His story of becoming the greatest hero expands limitlessly while casting a warm, radiant light of hope.",
+      "tokens": [
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "更に"
+        },
+        {
+          "surface": "向こう",
+          "reading": "むこう",
+          "meaning": "over there",
+          "baseForm": "向こう",
+          "level": "N5"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "プルス"
+        },
+        {
+          "surface": "・"
+        },
+        {
+          "surface": "ウルトラ"
+        },
+        {
+          "surface": "！"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "校訓"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "叫び",
+          "reading": "さけび",
+          "meaning": "shout; scream; outcry",
+          "baseForm": "叫び",
+          "level": "N1"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "少年",
+          "reading": "しょうねん",
+          "meaning": "boys; juveniles",
+          "baseForm": "少年",
+          "level": "N3"
+        },
+        {
+          "surface": "少女"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "meaning": "today",
+          "baseForm": "今日",
+          "level": "N5"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "未来"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "切り",
+          "reading": "きり",
+          "meaning": "limits; end; bounds",
+          "baseForm": "切り",
+          "level": "N1"
+        },
+        {
+          "surface": "拓く"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "走り",
+          "reading": "はしり",
+          "meaning": "to run",
+          "baseForm": "走る",
+          "level": "N5"
+        },
+        {
+          "surface": "続"
+        },
+        {
+          "surface": "け"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "かつて"
+        },
+        {
+          "surface": "無力"
+        },
+        {
+          "surface": "だ"
+        },
+        {
+          "surface": "っ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "少年",
+          "reading": "しょうねん",
+          "meaning": "boys; juveniles",
+          "baseForm": "少年",
+          "level": "N3"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "流"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "悔し涙"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "今や"
+        },
+        {
+          "surface": "人々",
+          "reading": "ひと々",
+          "meaning": "person",
+          "baseForm": "人",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "絶望"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "救い"
+        },
+        {
+          "surface": "上げる"
+        },
+        {
+          "surface": "確か"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "強",
+          "reading": "つよ",
+          "meaning": "powerful",
+          "baseForm": "強い",
+          "level": "N5"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "変わり",
+          "reading": "へんわり",
+          "meaning": "strange",
+          "baseForm": "変",
+          "level": "N4"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "最高"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ヒーロー"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "なる",
+          "meaning": "to become",
+          "baseForm": "なる",
+          "level": "N5"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "物語"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "温かい",
+          "reading": "ぬるかい",
+          "meaning": "luke warm",
+          "baseForm": "温い",
+          "level": "N5"
+        },
+        {
+          "surface": "希望"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "光",
+          "reading": "ひかり",
+          "meaning": "light",
+          "baseForm": "光",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "放",
+          "reading": "はな",
+          "meaning": "to separate; to set free",
+          "baseForm": "放す",
+          "level": "N3"
+        },
+        {
+          "surface": "ち"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "どこ",
+          "meaning": "where",
+          "baseForm": "どこ",
+          "level": "N5"
+        },
+        {
+          "surface": "まで"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "広",
+          "reading": "ひろ",
+          "meaning": "spacious; wide",
+          "baseForm": "広い",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "いく"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "「更に向こうへ、プルス・ウルトラ！」という校訓を叫びながら、少年少女たちは今日も未来を切り拓くために走り続けています。",
+          "literalEn": "更に over there [toward] プルス ウルトラ という 校訓 [obj] shout ながら boys 少女 たち [topic] today [also] 未来 [obj] limits 拓く ため [at/to] to run てい [polite]",
+          "naturalEn": "Shouting their school motto 'Further beyond, Plus Ultra!', the young heroes continue sprinting forward today to carve out tomorrow.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "更に"
+            },
+            {
+              "surface": "向こう",
+              "reading": "むこう",
+              "meaning": "over there",
+              "baseForm": "向こう",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "プルス"
+            },
+            {
+              "surface": "・"
+            },
+            {
+              "surface": "ウルトラ"
+            },
+            {
+              "surface": "！"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "校訓"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "叫び",
+              "reading": "さけび",
+              "meaning": "shout; scream; outcry",
+              "baseForm": "叫び",
+              "level": "N1"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "少年",
+              "reading": "しょうねん",
+              "meaning": "boys; juveniles",
+              "baseForm": "少年",
+              "level": "N3"
+            },
+            {
+              "surface": "少女"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "今日",
+              "reading": "きょう",
+              "meaning": "today",
+              "baseForm": "今日",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "未来"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "切り",
+              "reading": "きり",
+              "meaning": "limits; end; bounds",
+              "baseForm": "切り",
+              "level": "N1"
+            },
+            {
+              "surface": "拓く"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "走り",
+              "reading": "はしり",
+              "meaning": "to run",
+              "baseForm": "走る",
+              "level": "N5"
+            },
+            {
+              "surface": "続"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "かつて無力だった少年が流した悔し涙は、今や人々を絶望から救い上げる確かな強さへと変わりました。",
+          "literalEn": "かつて 無力 [is] [past] boys [subj] した 悔し涙 [topic] 今や person [obj] 絶望 [from] 救い 上げる 確か powerful [toward] [with/and] strange した",
+          "naturalEn": "The bitter tears once shed by a helpless boy have now transformed into undeniable strength that lifts people out of despair.",
+          "tokens": [
+            {
+              "surface": "かつて"
+            },
+            {
+              "surface": "無力"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "少年",
+              "reading": "しょうねん",
+              "meaning": "boys; juveniles",
+              "baseForm": "少年",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "流"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "悔し涙"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "今や"
+            },
+            {
+              "surface": "人々",
+              "reading": "ひと々",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "絶望"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "救い"
+            },
+            {
+              "surface": "上げる"
+            },
+            {
+              "surface": "確か"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "強",
+              "reading": "つよ",
+              "meaning": "powerful",
+              "baseForm": "強い",
+              "level": "N5"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "変わり",
+              "reading": "へんわり",
+              "meaning": "strange",
+              "baseForm": "変",
+              "level": "N4"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "最高のヒーローになるための彼の物語は、温かい希望の光を放ちながらどこまでも広がっていくのです。",
+          "literalEn": "最高 ['s / of] ヒーロー [at/to] to become ため ['s / of] he ['s / of] 物語 [topic] luke warm 希望 ['s / of] light [obj] to separate ながら where [until] [also] spacious [subj] って いく ['s / of] [is]",
+          "naturalEn": "His story of becoming the greatest hero expands limitlessly while casting a warm, radiant light of hope.",
+          "tokens": [
+            {
+              "surface": "最高"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ヒーロー"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なる",
+              "meaning": "to become",
+              "baseForm": "なる",
+              "level": "N5"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "物語"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "温かい",
+              "reading": "ぬるかい",
+              "meaning": "luke warm",
+              "baseForm": "温い",
+              "level": "N5"
+            },
+            {
+              "surface": "希望"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "光",
+              "reading": "ひかり",
+              "meaning": "light",
+              "baseForm": "光",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "放",
+              "reading": "はな",
+              "meaning": "to separate; to set free",
+              "baseForm": "放す",
+              "level": "N3"
+            },
+            {
+              "surface": "ち"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "どこ",
+              "meaning": "where",
+              "baseForm": "どこ",
+              "level": "N5"
+            },
+            {
+              "surface": "まで"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "広",
+              "reading": "ひろ",
+              "meaning": "spacious; wide",
+              "baseForm": "広い",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いく"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "無個性だった緑谷出久がオールマイトに後継者として認められた一番の理由は何ですか。",
+      "questionEn": "What was the primary reason the Quirkless Izuku Midoriya was recognized as a successor by All Might?",
+      "options": [
+        "危険を顧みず、考えるよりも先に身体が動いて友人を助けに走ったから",
+        "学校のテストで学年一番の成績を取ったから",
+        "オールマイトのグッズを世界で一番たくさん集めていたから",
+        "体格がプロレスラーのように頑丈だったから"
+      ],
+      "optionsEn": [
+        "Without regard for danger, his body moved before he could think to save his friend",
+        "He secured the top academic score in the school grade examinations",
+        "He collected the greatest amount of All Might merchandise in the world",
+        "His physique was extraordinarily rugged like a professional wrestler"
+      ],
+      "answerIndex": 0,
+      "explanation": "「考えるより先に体が動いていた」という自己犠牲と救助の精神こそが、真のヒーローの本質であると認められました。"
+    },
+    {
+      "question": "出久が受け継いだ伝説の能力の名前は何ですか。",
+      "questionEn": "What is the name of the legendary Quirk inherited by Izuku?",
+      "options": [
+        "ワン・フォー・オール",
+        "オール・フォー・ワン",
+        "爆破",
+        "半冷半燃"
+      ],
+      "optionsEn": [
+        "One For All",
+        "All For One",
+        "Explosion",
+        "Half-Cold Half-Hot"
+      ],
+      "answerIndex": 0,
+      "explanation": "世代を超えて力を培い受け継がれてきた聖なる個性が「ワン・フォー・オール」です。"
+    },
+    {
+      "question": "オールマイトが大切にしていた、ヒーローとしての真の理想は何ですか。",
+      "questionEn": "What was the true ideal of a hero cherished by All Might?",
+      "options": [
+        "人々を安心させるため、どんな危機でも笑顔を絶やさずに救い出すこと",
+        "敵を完膚なきまでに叩きのめして恐怖を与えること",
+        "テレビにたくさん出演して大スターになること",
+        "誰にも弱点を見せないように冷徹でいること"
+      ],
+      "optionsEn": [
+        "Saving people with an unwavering smile in any crisis to instill reassurance",
+        "Beating villains to a pulp to inspire sheer terror",
+        "Appearing frequently on television broadcasts to become a major celebrity",
+        "Remaining cold and detached so as never to reveal any vulnerability"
+      ],
+      "answerIndex": 0,
+      "explanation": "救けを求める人々を不安にさせないため、どんな逆境でも笑顔で救い出すことこそが平和の象徴の証です。"
+    }
+  ]
+}

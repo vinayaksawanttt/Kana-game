@@ -20,22 +20,28 @@ function createSeededRng(seed = 101): () => number {
 
 describe("JLPT Game 3: Instant Reply Blitz (即時応答) Engine & Dataset", () => {
   describe("Dataset Integrity (instant-reply.json & INSTANT_REPLY_ITEMS)", () => {
-    it("contains 150 triads across N5 (35), N4 (35), N3 (35), N2 (25), and N1 (20)", () => {
+    it("contains 170 triads across N5 (43), N4 (41), N3 (41), N2 (25), and N1 (20)", () => {
       const jsonPath = path.resolve(process.cwd(), "public/data/v1/jlpt/instant-reply.json");
       expect(fs.existsSync(jsonPath)).toBe(true);
 
       const jsonItems = JSON.parse(fs.readFileSync(jsonPath, "utf8")) as InstantReplyItem[];
-      expect(jsonItems).toHaveLength(150);
-      expect(INSTANT_REPLY_ITEMS).toHaveLength(150);
+      expect(jsonItems).toHaveLength(170);
+      expect(INSTANT_REPLY_ITEMS).toHaveLength(170);
 
       const counts = getInstantReplyCountsByLevel(INSTANT_REPLY_ITEMS);
       expect(counts).toEqual({
-        N5: 35,
-        N4: 35,
-        N3: 35,
+        N5: 43,
+        N4: 41,
+        N3: 41,
         N2: 25,
         N1: 20,
       });
+
+      const situationalItems = INSTANT_REPLY_ITEMS.filter(
+        (i) => i.category === "situational-utterance",
+      );
+      expect(situationalItems.length).toBe(20);
+      expect(situationalItems.some((i) => i.id === "utterance-n5-01")).toBe(true);
     });
 
     it("ensures every item has jlpt in 1..5, non-empty prompt/translations, and 3 options with 1 correct", () => {
@@ -93,6 +99,43 @@ describe("JLPT Game 3: Instant Reply Blitz (即時応答) Engine & Dataset", () 
         expect([5, 4]).toContain(q.jlpt);
         expect(q.options).toHaveLength(3);
         expect(q.options[q.correctOptionIndex]?.isCorrect).toBe(true);
+      }
+    });
+
+    it("filters questions by category (situational-utterance vs quick-response)", () => {
+      const sitSession = createInstantReplySession(
+        INSTANT_REPLY_ITEMS,
+        {
+          levels: [5, 4, 3],
+          size: 10,
+          timerSeconds: 8,
+          autoSequenceAudio: true,
+          showSituationHint: true,
+          category: "situational-utterance",
+        },
+        createSeededRng(123),
+      );
+      expect(sitSession.questions.length).toBeGreaterThan(0);
+      for (const q of sitSession.questions) {
+        expect(q.category).toBe("situational-utterance");
+        expect(q.speakerRole).toContain("You");
+      }
+
+      const qrSession = createInstantReplySession(
+        INSTANT_REPLY_ITEMS,
+        {
+          levels: [5, 4, 3],
+          size: 10,
+          timerSeconds: 8,
+          autoSequenceAudio: true,
+          showSituationHint: true,
+          category: "quick-response",
+        },
+        createSeededRng(123),
+      );
+      expect(qrSession.questions.length).toBeGreaterThan(0);
+      for (const q of qrSession.questions) {
+        expect(q.category).toBe("quick-response");
       }
     });
   });

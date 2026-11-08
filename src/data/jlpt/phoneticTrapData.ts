@@ -35,6 +35,427 @@ export interface CompactKanjiMeta {
 export const PHONETIC_TRAP_LEVELS: readonly PhoneticTrapLevel[] = ["N5", "N4", "N3", "N2", "N1"] as const;
 
 export const PHONETIC_TRAP_ITEMS: readonly PhoneticTrapVocabItem[] = [
+{
+  "id": "trap-n5-shawa",
+  "level": "N5",
+  "jlpt": 5,
+  "word": "シャワー",
+  "reading": "しゃわー",
+  "romaji": "shawa-",
+  "meanings": [
+    "shower"
+  ],
+  "prefix": "朝起きて、すぐ",
+  "targetSurface": "シャワー",
+  "suffix": "をあびました。",
+  "sentenceJa": "朝起きて、すぐシャワーをあびました。",
+  "sentenceEn": "I woke up in the morning and took a shower right away.",
+  "prefixFurigana": "{朝|あさ}{起|お}きて、すぐ",
+  "targetFurigana": "シャワー",
+  "suffixFurigana": "をあびました。",
+  "sentenceFurigana": "{朝|あさ}{起|お}きて、すぐシャワーをあびました。"
+},
+{
+  "id": "trap-n5-erebeta",
+  "level": "N5",
+  "jlpt": 5,
+  "word": "エレベーター",
+  "reading": "えれべーたー",
+  "romaji": "erebe-ta-",
+  "meanings": [
+    "elevator"
+  ],
+  "prefix": "荷物が多いので、",
+  "targetSurface": "エレベーター",
+  "suffix": "で五階へ行きましょう。",
+  "sentenceJa": "荷物が多いので、エレベーターで五階へ行きましょう。",
+  "sentenceEn": "We have a lot of luggage, so let's take the elevator to the 5th floor.",
+  "prefixFurigana": "{荷物|にもつ}が{多|おお}いので、",
+  "targetFurigana": "エレベーター",
+  "suffixFurigana": "で{五階|ごかい}へ{行|い}きましょう。",
+  "sentenceFurigana": "{荷物|にもつ}が{多|おお}いので、エレベーターで{五階|ごかい}へ{行|い}きましょう。"
+},
+{
+  "id": "trap-n5-karenda",
+  "level": "N5",
+  "jlpt": 5,
+  "word": "カレンダー",
+  "reading": "かれんだー",
+  "romaji": "karenda-",
+  "meanings": [
+    "calendar"
+  ],
+  "prefix": "部屋の壁に新しい",
+  "targetSurface": "カレンダー",
+  "suffix": "をかけました。",
+  "sentenceJa": "部屋の壁に新しいカレンダーをかけました。",
+  "sentenceEn": "I hung a new calendar on the wall of my room.",
+  "prefixFurigana": "{部屋|へや}の{壁|かべ}に{新|あたら}しい",
+  "targetFurigana": "カレンダー",
+  "suffixFurigana": "をかけました。",
+  "sentenceFurigana": "{部屋|へや}の{壁|かべ}に{新|あたら}しいカレンダーをかけました。"
+},
+{
+  "id": "trap-n5-teburu",
+  "level": "N5",
+  "jlpt": 5,
+  "word": "テーブル",
+  "reading": "てーぶる",
+  "romaji": "te-buru",
+  "meanings": [
+    "table"
+  ],
+  "prefix": "",
+  "targetSurface": "テーブル",
+  "suffix": "の上に辞書とりんごがあります。",
+  "sentenceJa": "テーブルの上に辞書とりんごがあります。",
+  "sentenceEn": "There is a dictionary and an apple on the table.",
+  "prefixFurigana": "",
+  "targetFurigana": "テーブル",
+  "suffixFurigana": "の{上|うえ}に{辞書|じしょ}とりんごがあります。",
+  "sentenceFurigana": "テーブルの{上|うえ}に{辞書|じしょ}とりんごがあります。"
+},
+{
+  "id": "trap-n5-supun",
+  "level": "N5",
+  "jlpt": 5,
+  "word": "スプーン",
+  "reading": "すぷーん",
+  "romaji": "supu-n",
+  "meanings": [
+    "spoon"
+  ],
+  "prefix": "このスープは",
+  "targetSurface": "スプーン",
+  "suffix": "で飲んでください。",
+  "sentenceJa": "このスープはスプーンで飲んでください。",
+  "sentenceEn": "Please drink this soup with a spoon.",
+  "prefixFurigana": "このスープは",
+  "targetFurigana": "スプーン",
+  "suffixFurigana": "で{飲|の}んでください。",
+  "sentenceFurigana": "このスープはスプーンで{飲|の}んでください。"
+},
+{
+  "id": "trap-n5-takushi",
+  "level": "N5",
+  "jlpt": 5,
+  "word": "タクシー",
+  "reading": "たくしー",
+  "romaji": "takushi-",
+  "meanings": [
+    "taxi"
+  ],
+  "prefix": "雨がひどいので、駅まで",
+  "targetSurface": "タクシー",
+  "suffix": "で行きました。",
+  "sentenceJa": "雨がひどいので、駅までタクシーで行きました。",
+  "sentenceEn": "The rain was heavy, so I went to the station by taxi.",
+  "prefixFurigana": "{雨|あめ}がひどいので、{駅|えき}まで",
+  "targetFurigana": "タクシー",
+  "suffixFurigana": "で{行|い}きました。",
+  "sentenceFurigana": "{雨|あめ}がひどいので、{駅|えき}までタクシーで{行|い}きました。"
+},
+{
+  "id": "trap-n5-shatsu",
+  "level": "N5",
+  "jlpt": 5,
+  "word": "シャツ",
+  "reading": "しゃつ",
+  "romaji": "shatsu",
+  "meanings": [
+    "shirt"
+  ],
+  "prefix": "面接のために、白い",
+  "targetSurface": "シャツ",
+  "suffix": "を買いました。",
+  "sentenceJa": "面接のために、白いシャツを買いました。",
+  "sentenceEn": "I bought a white shirt for the interview.",
+  "prefixFurigana": "{面接|めんせつ}のために、{白|しろ}い",
+  "targetFurigana": "シャツ",
+  "suffixFurigana": "を{買|か}いました。",
+  "sentenceFurigana": "{面接|めんせつ}のために、{白|しろ}いシャツを{買|か}いました。"
+},
+{
+  "id": "trap-n5-apato",
+  "level": "N5",
+  "jlpt": 5,
+  "word": "アパート",
+  "reading": "あぱーと",
+  "romaji": "apa-to",
+  "meanings": [
+    "apartment"
+  ],
+  "prefix": "大学の近くにある静かな",
+  "targetSurface": "アパート",
+  "suffix": "に住んでいます。",
+  "sentenceJa": "大学の近くにある静かなアパートに住んでいます。",
+  "sentenceEn": "I live in a quiet apartment near the university.",
+  "prefixFurigana": "{大学|だいがく}の{近|ちか}くにある{静|しず}かな",
+  "targetFurigana": "アパート",
+  "suffixFurigana": "に{住|す}んでいます。",
+  "sentenceFurigana": "{大学|だいがく}の{近|ちか}くにある{静|しず}かなアパートに{住|す}んでいます。"
+},
+{
+  "id": "trap-n5-depato",
+  "level": "N5",
+  "jlpt": 5,
+  "word": "デパート",
+  "reading": "でぱーと",
+  "romaji": "depa-to",
+  "meanings": [
+    "department store"
+  ],
+  "prefix": "休日に母と",
+  "targetSurface": "デパート",
+  "suffix": "へ買い物に行きました。",
+  "sentenceJa": "休日に母とデパートへ買い物に行きました。",
+  "sentenceEn": "I went shopping at a department store with my mother on my day off.",
+  "prefixFurigana": "{休日|きゅうじつ}に{母|はは}と",
+  "targetFurigana": "デパート",
+  "suffixFurigana": "へ{買|か}い{物|もの}に{行|い}きました。",
+  "sentenceFurigana": "{休日|きゅうじつ}に{母|はは}とデパートへ{買|か}い{物|もの}に{行|い}きました。"
+},
+{
+  "id": "trap-n4-manshon",
+  "level": "N4",
+  "jlpt": 4,
+  "word": "マンション",
+  "reading": "まんしょん",
+  "romaji": "manshon",
+  "meanings": [
+    "apartment complex",
+    "condominium"
+  ],
+  "prefix": "駅の前に新しい高い",
+  "targetSurface": "マンション",
+  "suffix": "が建ちました。",
+  "sentenceJa": "駅の前に新しい高いマンションが建ちました。",
+  "sentenceEn": "A new tall apartment building was built in front of the station.",
+  "prefixFurigana": "{駅|えき}の{前|まえ}に{新|あたら}しい{高|たか}い",
+  "targetFurigana": "マンション",
+  "suffixFurigana": "が{建|た}ちました。",
+  "sentenceFurigana": "{駅|えき}の{前|まえ}に{新|あたら}しい{高|たか}いマンションが{建|た}ちました。"
+},
+{
+  "id": "trap-n5-roppon",
+  "level": "N5",
+  "jlpt": 5,
+  "word": "六本",
+  "reading": "ろっぽん",
+  "romaji": "roppon",
+  "meanings": [
+    "six cylindrical objects"
+  ],
+  "prefix": "ノートを三冊と、ペンを",
+  "targetSurface": "六本",
+  "suffix": "買いました。",
+  "sentenceJa": "ノートを三冊と、ペンを六本買いました。",
+  "sentenceEn": "I bought three notebooks and six pens.",
+  "prefixFurigana": "ノートを{三冊|さんさつ}と、ペンを",
+  "targetFurigana": "{六本|ろっぽん}",
+  "suffixFurigana": "{買|か}いました。",
+  "sentenceFurigana": "ノートを{三冊|さんさつ}と、ペンを{六本|ろっぽん}{買|か}いました。"
+},
+{
+  "id": "trap-n5-sambon",
+  "level": "N5",
+  "jlpt": 5,
+  "word": "三本",
+  "reading": "さんぼん",
+  "romaji": "sambon",
+  "meanings": [
+    "three cylindrical objects"
+  ],
+  "prefix": "冷蔵庫にジュースが",
+  "targetSurface": "三本",
+  "suffix": "入っています。",
+  "sentenceJa": "冷蔵庫にジュースが三本入っています。",
+  "sentenceEn": "There are three bottles of juice in the refrigerator.",
+  "prefixFurigana": "{冷蔵庫|れいぞうこ}にジュースが",
+  "targetFurigana": "{三本|さんぼん}",
+  "suffixFurigana": "{入|はい}っています。",
+  "sentenceFurigana": "{冷蔵庫|れいぞうこ}にジュースが{三本|さんぼん}{入|はい}っています。"
+},
+{
+  "id": "trap-n5-ippon",
+  "level": "N5",
+  "jlpt": 5,
+  "word": "一本",
+  "reading": "いっぽん",
+  "romaji": "ippon",
+  "meanings": [
+    "one cylindrical object"
+  ],
+  "prefix": "雨が降ってきたので、傘を",
+  "targetSurface": "一本",
+  "suffix": "貸してください。",
+  "sentenceJa": "雨が降ってきたので、傘を一本貸してください。",
+  "sentenceEn": "It started raining, so please lend me one umbrella.",
+  "prefixFurigana": "{雨|あめ}が{降|ふ}ってきたので、{傘|かさ}を",
+  "targetFurigana": "{一本|いっぽん}",
+  "suffixFurigana": "{貸|か}してください。",
+  "sentenceFurigana": "{雨|あめ}が{降|ふ}ってきたので、{傘|かさ}を{一本|いっぽん}{貸|か}してください。"
+},
+{
+  "id": "trap-n5-sambiki",
+  "level": "N5",
+  "jlpt": 5,
+  "word": "三匹",
+  "reading": "さんびき",
+  "romaji": "sambiki",
+  "meanings": [
+    "three small animals"
+  ],
+  "prefix": "庭にかわいい子猫が",
+  "targetSurface": "三匹",
+  "suffix": "遊んでいます。",
+  "sentenceJa": "庭にかわいい子猫が三匹遊んでいます。",
+  "sentenceEn": "Three cute kittens are playing in the garden.",
+  "prefixFurigana": "{庭|にわ}にかわいい{子猫|こねこ}が",
+  "targetFurigana": "{三匹|さんびき}",
+  "suffixFurigana": "{遊|あそ}んでいます。",
+  "sentenceFurigana": "{庭|にわ}にかわいい{子猫|こねこ}が{三匹|さんびき}{遊|あそ}んでいます。"
+},
+{
+  "id": "trap-n5-ippiki",
+  "level": "N5",
+  "jlpt": 5,
+  "word": "一匹",
+  "reading": "いっぴき",
+  "romaji": "ippiki",
+  "meanings": [
+    "one small animal"
+  ],
+  "prefix": "公園で白い犬が",
+  "targetSurface": "一匹",
+  "suffix": "元気に走っています。",
+  "sentenceJa": "公園で白い犬が一匹元気に走っています。",
+  "sentenceEn": "One white dog is running energetically in the park.",
+  "prefixFurigana": "{公園|こうえん}で{白|しろ}い{犬|いぬ}が",
+  "targetFurigana": "{一匹|いっぴき}",
+  "suffixFurigana": "{元気|げんき}に{走|はし}っています。",
+  "sentenceFurigana": "{公園|こうえん}で{白|しろ}い{犬|いぬ}が{一匹|いっぴき}{元気|げんき}に{走|はし}っています。"
+},
+{
+  "id": "trap-n5-roppiki",
+  "level": "N5",
+  "jlpt": 5,
+  "word": "六匹",
+  "reading": "ろっぴき",
+  "romaji": "roppiki",
+  "meanings": [
+    "six small animals"
+  ],
+  "prefix": "池の中に赤い魚が",
+  "targetSurface": "六匹",
+  "suffix": "泳いでいます。",
+  "sentenceJa": "池の中に赤い魚が六匹泳いでいます。",
+  "sentenceEn": "Six red fish are swimming in the pond.",
+  "prefixFurigana": "{池|いけ}の{中|なか}に{赤|あか}い{魚|さかな}が",
+  "targetFurigana": "{六匹|ろっぴき}",
+  "suffixFurigana": "{泳|およ}いでいます。",
+  "sentenceFurigana": "{池|いけ}の{中|なか}に{赤|あか}い{魚|さかな}が{六匹|ろっぴき}{泳|およ}いでいます。"
+},
+{
+  "id": "trap-n5-ippai",
+  "level": "N5",
+  "jlpt": 5,
+  "word": "一杯",
+  "reading": "いっぱい",
+  "romaji": "ippai",
+  "meanings": [
+    "one cup / glass"
+  ],
+  "prefix": "食事の前に、温かいお茶を",
+  "targetSurface": "一杯",
+  "suffix": "飲みました。",
+  "sentenceJa": "食事の前に、温かいお茶を一杯飲みました。",
+  "sentenceEn": "Before the meal, I drank one cup of warm tea.",
+  "prefixFurigana": "{食事|しょくじ}の{前|まえ}に、{温|あたた}かいお{茶|ちゃ}を",
+  "targetFurigana": "{一杯|いっぱい}",
+  "suffixFurigana": "{飲|の}みました。",
+  "sentenceFurigana": "{食事|しょくじ}の{前|まえ}に、{温|あたた}かいお{茶|ちゃ}を{一杯|いっぱい}{飲|の}みました。"
+},
+{
+  "id": "trap-n5-sambai",
+  "level": "N5",
+  "jlpt": 5,
+  "word": "三杯",
+  "reading": "さんばい",
+  "romaji": "sambai",
+  "meanings": [
+    "three cups / glasses"
+  ],
+  "prefix": "今朝は眠かったので、コーヒーを",
+  "targetSurface": "三杯",
+  "suffix": "飲みました。",
+  "sentenceJa": "今朝は眠かったので、コーヒーを三杯飲みました。",
+  "sentenceEn": "I was sleepy this morning, so I drank three cups of coffee.",
+  "prefixFurigana": "{今朝|けさ}は{眠|ねむ}かったので、コーヒーを",
+  "targetFurigana": "{三杯|さんばい}",
+  "suffixFurigana": "{飲|の}みました。",
+  "sentenceFurigana": "{今朝|けさ}は{眠|ねむ}かったので、コーヒーを{三杯|さんばい}{飲|の}みました。"
+},
+{
+  "id": "trap-n5-sangai",
+  "level": "N5",
+  "jlpt": 5,
+  "word": "三階",
+  "reading": "さんがい",
+  "romaji": "sangai",
+  "meanings": [
+    "third floor"
+  ],
+  "prefix": "日本語の教室は建物の",
+  "targetSurface": "三階",
+  "suffix": "にあります。",
+  "sentenceJa": "日本語の教室は建物の三階にあります。",
+  "sentenceEn": "The Japanese classroom is on the third floor of the building.",
+  "prefixFurigana": "{日本語|にほんご}の{教室|きょうしつ}は{建物|たてもの}の",
+  "targetFurigana": "{三階|さんがい}",
+  "suffixFurigana": "にあります。",
+  "sentenceFurigana": "{日本語|にほんご}の{教室|きょうしつ}は{建物|たてもの}の{三階|さんがい}にあります。"
+},
+{
+  "id": "trap-n5-roppun",
+  "level": "N5",
+  "jlpt": 5,
+  "word": "六分",
+  "reading": "ろっぷん",
+  "romaji": "roppun",
+  "meanings": [
+    "six minutes"
+  ],
+  "prefix": "ここから駅まで、歩いて",
+  "targetSurface": "六分",
+  "suffix": "で行けます。",
+  "sentenceJa": "ここから駅まで、歩いて六分で行けます。",
+  "sentenceEn": "You can walk from here to the station in six minutes.",
+  "prefixFurigana": "ここから{駅|えき}まで、{歩|ある}いて",
+  "targetFurigana": "{六分|ろっぷん}",
+  "suffixFurigana": "で{行|い}けます。",
+  "sentenceFurigana": "ここから{駅|えき}まで、{歩|ある}いて{六分|ろっぷん}で{行|い}けます。"
+},
+{
+  "id": "trap-n5-sampun",
+  "level": "N5",
+  "jlpt": 5,
+  "word": "三分",
+  "reading": "さんぷん",
+  "romaji": "sampun",
+  "meanings": [
+    "three minutes"
+  ],
+  "prefix": "あと",
+  "targetSurface": "三分",
+  "suffix": "で電車が到着します。",
+  "sentenceJa": "あと三分で電車が到着します。",
+  "sentenceEn": "The train will arrive in three minutes.",
+  "prefixFurigana": "あと",
+  "targetFurigana": "{三分|さんぷん}",
+  "suffixFurigana": "で{電車|でんしゃ}が{到着|とうちゃく}します。",
+  "sentenceFurigana": "あと{三分|さんぷん}で{電車|でんしゃ}が{到着|とうちゃく}します。"
+},
   {
     "id": "trap-n5-de5a452667",
     "level": "N5",

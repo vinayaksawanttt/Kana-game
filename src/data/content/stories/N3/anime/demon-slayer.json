@@ -1,0 +1,4950 @@
+{
+  "id": "story-n3-demon-slayer",
+  "title": "鬼滅の刃：雪山の誓いと水の呼吸",
+  "titleRomaji": "Kimetsu no Yaiba: Yukiyama no Chikai to Mizu no Kokyuu",
+  "titleEn": "Demon Slayer: Mountain Oath and Water Breathing",
+  "level": "N3",
+  "category": "Anime & Pop Culture",
+  "tags": [
+    "Anime",
+    "N3",
+    "Historical",
+    "Demons",
+    "Family Bond"
+  ],
+  "paragraphs": [
+    {
+      "ja": "大正時代の雪深い山奥で、炭焼きの少年炭治郎は家族と仲睦まじく暮らしていました。彼は父親を亡くした家庭を長男として支えるため、町へ炭を売りに出かける心優しい働き者でした。ある吹雪の翌朝、町から帰宅した炭治郎の目に飛び込んできたのは、血に染まった惨たらしい我が家の姿でした。家族全員が鬼に襲われて命を奪われる中、唯一微かに息のあった妹の禰豆子だけを背負って雪山を駆け下りました。",
+      "en": "In the snow-blanketed mountains of the Taisho era, a charcoal-selling youth named Tanjiro lived harmoniously with his family. As the eldest son supporting the household after losing his father, he was a kind and diligent worker who traveled to town to sell charcoal. The morning after a blizzard, what greeted Tanjiro's eyes upon returning home was the horrific sight of his house soaked in blood. With his entire family slain by a demon, he carried his only surviving sister Nezuko, who barely drew breath, dashing down the snowy peak.",
+      "tokens": [
+        {
+          "surface": "大正"
+        },
+        {
+          "surface": "時代"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "雪"
+        },
+        {
+          "surface": "深い",
+          "reading": "ふかい",
+          "meaning": "deep",
+          "baseForm": "深い",
+          "level": "N4"
+        },
+        {
+          "surface": "山奥"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "炭焼き"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "少年",
+          "reading": "しょうねん",
+          "meaning": "boys; juveniles",
+          "baseForm": "少年",
+          "level": "N3"
+        },
+        {
+          "surface": "炭"
+        },
+        {
+          "surface": "治郎"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "meaning": "family",
+          "baseForm": "家族",
+          "level": "N5"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "仲"
+        },
+        {
+          "surface": "睦"
+        },
+        {
+          "surface": "まじ"
+        },
+        {
+          "surface": "く"
+        },
+        {
+          "surface": "暮らし",
+          "reading": "くらし",
+          "meaning": "living; livelihood; subsistence",
+          "baseForm": "暮らし",
+          "level": "N3"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "父親"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "亡"
+        },
+        {
+          "surface": "く"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "家庭"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "長男"
+        },
+        {
+          "surface": "として"
+        },
+        {
+          "surface": "支える",
+          "reading": "ささえる",
+          "meaning": "to be blocked; to choke; to be obstructed",
+          "baseForm": "支える",
+          "level": "N3"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "町",
+          "reading": "まち",
+          "meaning": "town; city",
+          "baseForm": "町",
+          "level": "N5"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "炭"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "売り"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "出かける"
+        },
+        {
+          "surface": "心",
+          "reading": "こころ",
+          "meaning": "core; heart",
+          "baseForm": "心",
+          "level": "N4"
+        },
+        {
+          "surface": "優しい",
+          "reading": "やさしい",
+          "meaning": "kind",
+          "baseForm": "優しい",
+          "level": "N4"
+        },
+        {
+          "surface": "働き者"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "吹雪"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "翌朝"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "町",
+          "reading": "まち",
+          "meaning": "town; city",
+          "baseForm": "町",
+          "level": "N5"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "帰宅"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "炭"
+        },
+        {
+          "surface": "治郎"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "目",
+          "reading": "め",
+          "meaning": "eye",
+          "baseForm": "目",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "飛",
+          "reading": "と",
+          "meaning": "to fly; to hop",
+          "baseForm": "飛ぶ",
+          "level": "N5"
+        },
+        {
+          "surface": "び"
+        },
+        {
+          "surface": "込"
+        },
+        {
+          "surface": "んで"
+        },
+        {
+          "surface": "きた"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "血",
+          "reading": "ち",
+          "meaning": "blood",
+          "baseForm": "血",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "染"
+        },
+        {
+          "surface": "まっ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "惨たらしい"
+        },
+        {
+          "surface": "我が家"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "姿",
+          "reading": "すがた",
+          "meaning": "figure; shape; appearance",
+          "baseForm": "姿",
+          "level": "N3"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "meaning": "family",
+          "baseForm": "家族",
+          "level": "N5"
+        },
+        {
+          "surface": "全員"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "鬼",
+          "reading": "おに",
+          "meaning": "ogre; demon; it (i.e., in a game of tag)",
+          "baseForm": "鬼",
+          "level": "N3"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "襲"
+        },
+        {
+          "surface": "われ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "命",
+          "reading": "いのち",
+          "meaning": "command; decree; life",
+          "baseForm": "命",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "奪",
+          "reading": "うば",
+          "meaning": "to snatch away",
+          "baseForm": "奪う",
+          "level": "N3"
+        },
+        {
+          "surface": "われる"
+        },
+        {
+          "surface": "中",
+          "reading": "なか",
+          "meaning": "middle",
+          "baseForm": "中",
+          "level": "N5"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "唯一"
+        },
+        {
+          "surface": "微か"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "息"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "あっ",
+          "meaning": "Ah!; Oh!",
+          "baseForm": "あっ",
+          "level": "N3"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "妹",
+          "reading": "いもうと",
+          "meaning": "(humble) younger sister",
+          "baseForm": "妹",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "禰"
+        },
+        {
+          "surface": "豆子"
+        },
+        {
+          "surface": "だけ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "背負"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "雪山"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "駆"
+        },
+        {
+          "surface": "け"
+        },
+        {
+          "surface": "下り"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "大正時代の雪深い山奥で、炭焼きの少年炭治郎は家族と仲睦まじく暮らしていました。",
+          "literalEn": "大正 時代 ['s / of] deep 山奥 [in/by] 炭焼き ['s / of] boys 治郎 [topic] family [with/and] まじ living てい した",
+          "naturalEn": "In the snow-blanketed mountains of the Taisho era, a charcoal-selling youth named Tanjiro lived harmoniously with his family.",
+          "tokens": [
+            {
+              "surface": "大正"
+            },
+            {
+              "surface": "時代"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "雪"
+            },
+            {
+              "surface": "深い",
+              "reading": "ふかい",
+              "meaning": "deep",
+              "baseForm": "深い",
+              "level": "N4"
+            },
+            {
+              "surface": "山奥"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "炭焼き"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "少年",
+              "reading": "しょうねん",
+              "meaning": "boys; juveniles",
+              "baseForm": "少年",
+              "level": "N3"
+            },
+            {
+              "surface": "炭"
+            },
+            {
+              "surface": "治郎"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "家族",
+              "reading": "かぞく",
+              "meaning": "family",
+              "baseForm": "家族",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "仲"
+            },
+            {
+              "surface": "睦"
+            },
+            {
+              "surface": "まじ"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "暮らし",
+              "reading": "くらし",
+              "meaning": "living; livelihood; subsistence",
+              "baseForm": "暮らし",
+              "level": "N3"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼は父親を亡くした家庭を長男として支えるため、町へ炭を売りに出かける心優しい働き者でした。",
+          "literalEn": "he [topic] 父親 [obj] した 家庭 [obj] 長男 として to be blocked ため town [toward] [obj] 売り [at/to] 出かける core kind 働き者 [in/by] した",
+          "naturalEn": "As the eldest son supporting the household after losing his father, he was a kind and diligent worker who traveled to town to sell charcoal.",
+          "tokens": [
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "父親"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "亡"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "家庭"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "長男"
+            },
+            {
+              "surface": "として"
+            },
+            {
+              "surface": "支える",
+              "reading": "ささえる",
+              "meaning": "to be blocked; to choke; to be obstructed",
+              "baseForm": "支える",
+              "level": "N3"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "町",
+              "reading": "まち",
+              "meaning": "town; city",
+              "baseForm": "町",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "炭"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "売り"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "出かける"
+            },
+            {
+              "surface": "心",
+              "reading": "こころ",
+              "meaning": "core; heart",
+              "baseForm": "心",
+              "level": "N4"
+            },
+            {
+              "surface": "優しい",
+              "reading": "やさしい",
+              "meaning": "kind",
+              "baseForm": "優しい",
+              "level": "N4"
+            },
+            {
+              "surface": "働き者"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ある吹雪の翌朝、町から帰宅した炭治郎の目に飛び込んできたのは、血に染まった惨たらしい我が家の姿でした。",
+          "literalEn": "to be 吹雪 ['s / of] 翌朝 town [from] 帰宅 した 治郎 ['s / of] eye [at/to] to fly んで きた ['s / of] [topic] blood [at/to] まっ [past] 惨たらしい 我が家 ['s / of] figure [in/by] した",
+          "naturalEn": "The morning after a blizzard, what greeted Tanjiro's eyes upon returning home was the horrific sight of his house soaked in blood.",
+          "tokens": [
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "吹雪"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "翌朝"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "町",
+              "reading": "まち",
+              "meaning": "town; city",
+              "baseForm": "町",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "帰宅"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "炭"
+            },
+            {
+              "surface": "治郎"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "目",
+              "reading": "め",
+              "meaning": "eye",
+              "baseForm": "目",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "飛",
+              "reading": "と",
+              "meaning": "to fly; to hop",
+              "baseForm": "飛ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "び"
+            },
+            {
+              "surface": "込"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "きた"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "血",
+              "reading": "ち",
+              "meaning": "blood",
+              "baseForm": "血",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "染"
+            },
+            {
+              "surface": "まっ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "惨たらしい"
+            },
+            {
+              "surface": "我が家"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "姿",
+              "reading": "すがた",
+              "meaning": "figure; shape; appearance",
+              "baseForm": "姿",
+              "level": "N3"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "家族全員が鬼に襲われて命を奪われる中、唯一微かに息のあった妹の禰豆子だけを背負って雪山を駆け下りました。",
+          "literalEn": "family 全員 [subj] ogre [at/to] われ [and] command [obj] to snatch away われる middle 唯一 微か [at/to] ['s / of] Ah! [past]  younger sister ['s / of] 豆子 だけ [obj] 背負 って 雪山 [obj] 下り した",
+          "naturalEn": "With his entire family slain by a demon, he carried his only surviving sister Nezuko, who barely drew breath, dashing down the snowy peak.",
+          "tokens": [
+            {
+              "surface": "家族",
+              "reading": "かぞく",
+              "meaning": "family",
+              "baseForm": "家族",
+              "level": "N5"
+            },
+            {
+              "surface": "全員"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "鬼",
+              "reading": "おに",
+              "meaning": "ogre; demon; it (i.e., in a game of tag)",
+              "baseForm": "鬼",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "襲"
+            },
+            {
+              "surface": "われ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "命",
+              "reading": "いのち",
+              "meaning": "command; decree; life",
+              "baseForm": "命",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "奪",
+              "reading": "うば",
+              "meaning": "to snatch away",
+              "baseForm": "奪う",
+              "level": "N3"
+            },
+            {
+              "surface": "われる"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "唯一"
+            },
+            {
+              "surface": "微か"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "息"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "あっ",
+              "meaning": "Ah!; Oh!",
+              "baseForm": "あっ",
+              "level": "N3"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "妹",
+              "reading": "いもうと",
+              "meaning": "(humble) younger sister",
+              "baseForm": "妹",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "禰"
+            },
+            {
+              "surface": "豆子"
+            },
+            {
+              "surface": "だけ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "背負"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "雪山"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "駆"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "下り"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "ところが傷口から鬼の血が入り込んだせいで、禰豆子は凶暴な鬼へと変貌を遂げてしまっていたのです。襲いかかってくる妹に対して、炭治郎は必死に呼びかけ、彼女の中に眠る家族への愛を呼び覚ましました。そこへ鬼殺隊の剣士である冨岡義勇が現れ、人を喰らう危険のある禰豆子を刀で斬り捨てようとしました。炭治郎は土下座して命乞いをするものの、「生殺与奪の権を他人に握らせるな」と厳しく叱責されました。",
+      "en": "However, because demon blood had seeped into her wounds, Nezuko had transformed into a feral demon. As his sister lunged at him, Tanjiro called out desperately, awakening the love for family slumbering inside her soul. At that moment, Giyu Tomioka, a swordsman of the Demon Slayer Corps, appeared and moved to slay Nezuko with his blade. Tanjiro prostrated himself in tears, but was sternly reprimanded: 'Never surrender the power over life and death to another!'",
+      "tokens": [
+        {
+          "surface": "ところが"
+        },
+        {
+          "surface": "傷口"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "鬼",
+          "reading": "おに",
+          "meaning": "ogre; demon; it (i.e., in a game of tag)",
+          "baseForm": "鬼",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "血",
+          "reading": "ち",
+          "meaning": "blood",
+          "baseForm": "血",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "入り",
+          "reading": "はいり",
+          "meaning": "to enter; to contain",
+          "baseForm": "入る",
+          "level": "N5"
+        },
+        {
+          "surface": "込"
+        },
+        {
+          "surface": "ん"
+        },
+        {
+          "surface": "だ"
+        },
+        {
+          "surface": "せい"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "禰"
+        },
+        {
+          "surface": "豆子"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "凶暴"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "鬼",
+          "reading": "おに",
+          "meaning": "ogre; demon; it (i.e., in a game of tag)",
+          "baseForm": "鬼",
+          "level": "N3"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "変貌"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "遂"
+        },
+        {
+          "surface": "げ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "襲"
+        },
+        {
+          "surface": "いか"
+        },
+        {
+          "surface": "かって"
+        },
+        {
+          "surface": "くる"
+        },
+        {
+          "surface": "妹",
+          "reading": "いもうと",
+          "meaning": "(humble) younger sister",
+          "baseForm": "妹",
+          "level": "N5"
+        },
+        {
+          "surface": "に対して"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "炭"
+        },
+        {
+          "surface": "治郎"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "必死"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "呼",
+          "reading": "よ",
+          "meaning": "to call out; to invite",
+          "baseForm": "呼ぶ",
+          "level": "N5"
+        },
+        {
+          "surface": "び"
+        },
+        {
+          "surface": "かけ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "彼女",
+          "reading": "かのじょ",
+          "meaning": "she; girlfriend",
+          "baseForm": "彼女",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "中",
+          "reading": "なか",
+          "meaning": "middle",
+          "baseForm": "中",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "眠る"
+        },
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "meaning": "family",
+          "baseForm": "家族",
+          "level": "N5"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "愛",
+          "reading": "あい",
+          "meaning": "love",
+          "baseForm": "愛",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "呼",
+          "reading": "よ",
+          "meaning": "to call out; to invite",
+          "baseForm": "呼ぶ",
+          "level": "N5"
+        },
+        {
+          "surface": "び"
+        },
+        {
+          "surface": "覚"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "そこ",
+          "meaning": "that place",
+          "baseForm": "そこ",
+          "level": "N5"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "鬼",
+          "reading": "おに",
+          "meaning": "ogre; demon; it (i.e., in a game of tag)",
+          "baseForm": "鬼",
+          "level": "N3"
+        },
+        {
+          "surface": "殺",
+          "reading": "ころ",
+          "meaning": "to kill",
+          "baseForm": "殺す",
+          "level": "N3"
+        },
+        {
+          "surface": "隊"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "剣士"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "冨岡"
+        },
+        {
+          "surface": "義勇"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "現れ",
+          "reading": "あらわれ",
+          "meaning": "embodiment; materialization",
+          "baseForm": "現れ",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "meaning": "person",
+          "baseForm": "人",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "喰らう"
+        },
+        {
+          "surface": "危険"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "禰"
+        },
+        {
+          "surface": "豆子"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "刀",
+          "reading": "かたな",
+          "meaning": "sword; saber; knife",
+          "baseForm": "刀",
+          "level": "N3"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "斬",
+          "reading": "き",
+          "meaning": "to behead; to murder",
+          "baseForm": "斬る",
+          "level": "N2"
+        },
+        {
+          "surface": "り"
+        },
+        {
+          "surface": "捨"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "よう"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "炭"
+        },
+        {
+          "surface": "治郎"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "土下座"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "命乞い"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "ものの"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "生殺与奪"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "権"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "他人"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "握"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "せる"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "厳"
+        },
+        {
+          "surface": "しく"
+        },
+        {
+          "surface": "叱責"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "ところが傷口から鬼の血が入り込んだせいで、禰豆子は凶暴な鬼へと変貌を遂げてしまっていたのです。",
+          "literalEn": "ところが 傷口 [from] ogre ['s / of] blood [subj] to enter [is] せい [in/by] 豆子 [topic] 凶暴 ogre [toward] [with/and] 変貌 [obj] [and] しま って [past] ['s / of] [is]",
+          "naturalEn": "However, because demon blood had seeped into her wounds, Nezuko had transformed into a feral demon.",
+          "tokens": [
+            {
+              "surface": "ところが"
+            },
+            {
+              "surface": "傷口"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "鬼",
+              "reading": "おに",
+              "meaning": "ogre; demon; it (i.e., in a game of tag)",
+              "baseForm": "鬼",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "血",
+              "reading": "ち",
+              "meaning": "blood",
+              "baseForm": "血",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "入り",
+              "reading": "はいり",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "込"
+            },
+            {
+              "surface": "ん"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "せい"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "禰"
+            },
+            {
+              "surface": "豆子"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "凶暴"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "鬼",
+              "reading": "おに",
+              "meaning": "ogre; demon; it (i.e., in a game of tag)",
+              "baseForm": "鬼",
+              "level": "N3"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "変貌"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "遂"
+            },
+            {
+              "surface": "げ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "襲いかかってくる妹に対して、炭治郎は必死に呼びかけ、彼女の中に眠る家族への愛を呼び覚ましました。",
+          "literalEn": "いか かって くる  younger sister に対して 治郎 [topic] 必死 [at/to] to call out かけ she ['s / of] middle [at/to] 眠る family [toward] ['s / of] love [obj] to call out しま した",
+          "naturalEn": "As his sister lunged at him, Tanjiro called out desperately, awakening the love for family slumbering inside her soul.",
+          "tokens": [
+            {
+              "surface": "襲"
+            },
+            {
+              "surface": "いか"
+            },
+            {
+              "surface": "かって"
+            },
+            {
+              "surface": "くる"
+            },
+            {
+              "surface": "妹",
+              "reading": "いもうと",
+              "meaning": "(humble) younger sister",
+              "baseForm": "妹",
+              "level": "N5"
+            },
+            {
+              "surface": "に対して"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "炭"
+            },
+            {
+              "surface": "治郎"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "必死"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "呼",
+              "reading": "よ",
+              "meaning": "to call out; to invite",
+              "baseForm": "呼ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "び"
+            },
+            {
+              "surface": "かけ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼女",
+              "reading": "かのじょ",
+              "meaning": "she; girlfriend",
+              "baseForm": "彼女",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "眠る"
+            },
+            {
+              "surface": "家族",
+              "reading": "かぞく",
+              "meaning": "family",
+              "baseForm": "家族",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "愛",
+              "reading": "あい",
+              "meaning": "love",
+              "baseForm": "愛",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "呼",
+              "reading": "よ",
+              "meaning": "to call out; to invite",
+              "baseForm": "呼ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "び"
+            },
+            {
+              "surface": "覚"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "そこへ鬼殺隊の剣士である冨岡義勇が現れ、人を喰らう危険のある禰豆子を刀で斬り捨てようとしました。",
+          "literalEn": "that place [toward] ogre to kill ['s / of] 剣士 [in/by] to be 冨岡 義勇 [subj] embodiment person [obj] 喰らう 危険 ['s / of] to be 豆子 [obj] sword [in/by] to behead [and] よう [with/and] しま した",
+          "naturalEn": "At that moment, Giyu Tomioka, a swordsman of the Demon Slayer Corps, appeared and moved to slay Nezuko with his blade.",
+          "tokens": [
+            {
+              "surface": "そこ",
+              "meaning": "that place",
+              "baseForm": "そこ",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "鬼",
+              "reading": "おに",
+              "meaning": "ogre; demon; it (i.e., in a game of tag)",
+              "baseForm": "鬼",
+              "level": "N3"
+            },
+            {
+              "surface": "殺",
+              "reading": "ころ",
+              "meaning": "to kill",
+              "baseForm": "殺す",
+              "level": "N3"
+            },
+            {
+              "surface": "隊"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "剣士"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "冨岡"
+            },
+            {
+              "surface": "義勇"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "現れ",
+              "reading": "あらわれ",
+              "meaning": "embodiment; materialization",
+              "baseForm": "現れ",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "喰らう"
+            },
+            {
+              "surface": "危険"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "禰"
+            },
+            {
+              "surface": "豆子"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "刀",
+              "reading": "かたな",
+              "meaning": "sword; saber; knife",
+              "baseForm": "刀",
+              "level": "N3"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "斬",
+              "reading": "き",
+              "meaning": "to behead; to murder",
+              "baseForm": "斬る",
+              "level": "N2"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "捨"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "炭治郎は土下座して命乞いをするものの、「生殺与奪の権を他人に握らせるな」と厳しく叱責されました。",
+          "literalEn": "治郎 [topic] 土下座 [and] 命乞い [obj] to do ものの 生殺与奪 ['s / of] [obj] 他人 [at/to] せる [with/and] しく 叱責 した",
+          "naturalEn": "Tanjiro prostrated himself in tears, but was sternly reprimanded: 'Never surrender the power over life and death to another!'",
+          "tokens": [
+            {
+              "surface": "炭"
+            },
+            {
+              "surface": "治郎"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "土下座"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "命乞い"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "ものの"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "生殺与奪"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "権"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "他人"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "握"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "せる"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "厳"
+            },
+            {
+              "surface": "しく"
+            },
+            {
+              "surface": "叱責"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "妹を人間に戻す道を探すため、炭治郎は義勇の言葉に従って狭霧山の鱗滝左近次のもとで修行を始めました。山中の罠をかいくぐりながら、彼は剣術の基本である「全集中の呼吸」と「水の呼吸」を体得していきました。巨大な岩を一刀両断するという過酷な試練を乗り越え、彼は鬼殺隊の最終選別へと挑むことになりました。七日間に及ぶ命がけの選別を生き延びた炭治郎は、黒い日輪刀を授かり、正式な隊士として認められました。",
+      "en": "To seek a means of turning his sister back into human, Tanjiro followed Giyu's guidance to apprentice under Sakonji Urokodaki on Mount Sagiri. Evading lethal traps across the rugged mountain, he mastered the fundamentals of Total Concentration Breathing and Water Breathing. Overcoming the daunting trial of cleaving a massive boulder in two with a single strike, he advanced to challenge the Final Selection. Surviving seven grueling days of life-and-death trials, Tanjiro was bestowed a pitch-black Nichirin sword and recognized as an official corps member.",
+      "tokens": [
+        {
+          "surface": "妹",
+          "reading": "いもうと",
+          "meaning": "(humble) younger sister",
+          "baseForm": "妹",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "人間"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "戻す"
+        },
+        {
+          "surface": "道",
+          "reading": "みち",
+          "meaning": "street",
+          "baseForm": "道",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "探す"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "炭"
+        },
+        {
+          "surface": "治郎"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "義勇"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "言葉",
+          "reading": "ことば",
+          "meaning": "word; language",
+          "baseForm": "言葉",
+          "level": "N5"
+        },
+        {
+          "surface": "に従って"
+        },
+        {
+          "surface": "狭霧"
+        },
+        {
+          "surface": "山",
+          "reading": "やま",
+          "meaning": "mountain",
+          "baseForm": "山",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "鱗"
+        },
+        {
+          "surface": "滝"
+        },
+        {
+          "surface": "左近"
+        },
+        {
+          "surface": "次",
+          "reading": "つぎ",
+          "meaning": "next",
+          "baseForm": "次",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "修行"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "始め",
+          "reading": "はじめ",
+          "meaning": "beginning; start; origin",
+          "baseForm": "始め",
+          "level": "N1"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "山中"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "罠",
+          "reading": "わな",
+          "meaning": "trap; snare",
+          "baseForm": "罠",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "いく"
+        },
+        {
+          "surface": "ぐ"
+        },
+        {
+          "surface": "り"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "剣術"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "基本"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "全集"
+        },
+        {
+          "surface": "中",
+          "reading": "なか",
+          "meaning": "middle",
+          "baseForm": "中",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "呼吸"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "水",
+          "reading": "みず",
+          "meaning": "water",
+          "baseForm": "水",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "呼吸"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "体得"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "き"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "巨大",
+          "reading": "きょだい",
+          "meaning": "huge; gigantic; enormous",
+          "baseForm": "巨大",
+          "level": "N3"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "岩"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "一刀両断"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "過酷"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "試練"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "乗り",
+          "reading": "のり",
+          "meaning": "to get on; to ride",
+          "baseForm": "乗る",
+          "level": "N5"
+        },
+        {
+          "surface": "越",
+          "reading": "こ",
+          "meaning": "to go over (e.g. with audience)",
+          "baseForm": "越す",
+          "level": "N3"
+        },
+        {
+          "surface": "え"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "鬼",
+          "reading": "おに",
+          "meaning": "ogre; demon; it (i.e., in a game of tag)",
+          "baseForm": "鬼",
+          "level": "N3"
+        },
+        {
+          "surface": "殺",
+          "reading": "ころ",
+          "meaning": "to kill",
+          "baseForm": "殺す",
+          "level": "N3"
+        },
+        {
+          "surface": "隊"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "最終"
+        },
+        {
+          "surface": "選別"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "挑む"
+        },
+        {
+          "surface": "ことに"
+        },
+        {
+          "surface": "なり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "七",
+          "reading": "しち",
+          "meaning": "seven",
+          "baseForm": "七",
+          "level": "N5"
+        },
+        {
+          "surface": "日間"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "及ぶ"
+        },
+        {
+          "surface": "命がけ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "選別"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "生き",
+          "reading": "なまき",
+          "meaning": "draft (beer); raw; unprocessed",
+          "baseForm": "生",
+          "level": "N3"
+        },
+        {
+          "surface": "延び"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "炭"
+        },
+        {
+          "surface": "治郎"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "黒い"
+        },
+        {
+          "surface": "日輪"
+        },
+        {
+          "surface": "刀",
+          "reading": "かたな",
+          "meaning": "sword; saber; knife",
+          "baseForm": "刀",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "授"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "り"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "正式"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "隊"
+        },
+        {
+          "surface": "士"
+        },
+        {
+          "surface": "として"
+        },
+        {
+          "surface": "認め"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "妹を人間に戻す道を探すため、炭治郎は義勇の言葉に従って狭霧山の鱗滝左近次のもとで修行を始めました。",
+          "literalEn": "younger sister [obj] 人間 [at/to] 戻す street [obj] 探す ため 治郎 [topic] 義勇 ['s / of] word に従って 狭霧 mountain ['s / of] 左近 next ['s / of] [also] [with/and] [in/by] 修行 [obj] beginning した",
+          "naturalEn": "To seek a means of turning his sister back into human, Tanjiro followed Giyu's guidance to apprentice under Sakonji Urokodaki on Mount Sagiri.",
+          "tokens": [
+            {
+              "surface": "妹",
+              "reading": "いもうと",
+              "meaning": "(humble) younger sister",
+              "baseForm": "妹",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "人間"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "戻す"
+            },
+            {
+              "surface": "道",
+              "reading": "みち",
+              "meaning": "street",
+              "baseForm": "道",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "探す"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "炭"
+            },
+            {
+              "surface": "治郎"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "義勇"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "言葉",
+              "reading": "ことば",
+              "meaning": "word; language",
+              "baseForm": "言葉",
+              "level": "N5"
+            },
+            {
+              "surface": "に従って"
+            },
+            {
+              "surface": "狭霧"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "鱗"
+            },
+            {
+              "surface": "滝"
+            },
+            {
+              "surface": "左近"
+            },
+            {
+              "surface": "次",
+              "reading": "つぎ",
+              "meaning": "next",
+              "baseForm": "次",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "修行"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "始め",
+              "reading": "はじめ",
+              "meaning": "beginning; start; origin",
+              "baseForm": "始め",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "山中の罠をかいくぐりながら、彼は剣術の基本である「全集中の呼吸」と「水の呼吸」を体得していきました。",
+          "literalEn": "山中 ['s / of] trap [obj] [?] いく ながら he [topic] 剣術 ['s / of] 基本 [in/by] to be 全集 middle ['s / of] 呼吸 [with/and] water ['s / of] 呼吸 [obj] 体得 てい した",
+          "naturalEn": "Evading lethal traps across the rugged mountain, he mastered the fundamentals of Total Concentration Breathing and Water Breathing.",
+          "tokens": [
+            {
+              "surface": "山中"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "罠",
+              "reading": "わな",
+              "meaning": "trap; snare",
+              "baseForm": "罠",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "いく"
+            },
+            {
+              "surface": "ぐ"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "剣術"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "基本"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "全集"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "呼吸"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "水",
+              "reading": "みず",
+              "meaning": "water",
+              "baseForm": "水",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "呼吸"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "体得"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "巨大な岩を一刀両断するという過酷な試練を乗り越え、彼は鬼殺隊の最終選別へと挑むことになりました。",
+          "literalEn": "huge [obj] 一刀両断 to do という 過酷 試練 [obj] to get on to go over he [topic] ogre to kill ['s / of] 最終 選別 [toward] [with/and] 挑む ことに なり した",
+          "naturalEn": "Overcoming the daunting trial of cleaving a massive boulder in two with a single strike, he advanced to challenge the Final Selection.",
+          "tokens": [
+            {
+              "surface": "巨大",
+              "reading": "きょだい",
+              "meaning": "huge; gigantic; enormous",
+              "baseForm": "巨大",
+              "level": "N3"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "岩"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "一刀両断"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "過酷"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "試練"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "乗り",
+              "reading": "のり",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "越",
+              "reading": "こ",
+              "meaning": "to go over (e.g. with audience)",
+              "baseForm": "越す",
+              "level": "N3"
+            },
+            {
+              "surface": "え"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "鬼",
+              "reading": "おに",
+              "meaning": "ogre; demon; it (i.e., in a game of tag)",
+              "baseForm": "鬼",
+              "level": "N3"
+            },
+            {
+              "surface": "殺",
+              "reading": "ころ",
+              "meaning": "to kill",
+              "baseForm": "殺す",
+              "level": "N3"
+            },
+            {
+              "surface": "隊"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "最終"
+            },
+            {
+              "surface": "選別"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "挑む"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "七日間に及ぶ命がけの選別を生き延びた炭治郎は、黒い日輪刀を授かり、正式な隊士として認められました。",
+          "literalEn": "seven 日間 [at/to] 及ぶ 命がけ ['s / of] 選別 [obj] draft 延び [past] 治郎 [topic] 黒い 日輪 sword [obj] [?] 正式 として 認め した",
+          "naturalEn": "Surviving seven grueling days of life-and-death trials, Tanjiro was bestowed a pitch-black Nichirin sword and recognized as an official corps member.",
+          "tokens": [
+            {
+              "surface": "七",
+              "reading": "しち",
+              "meaning": "seven",
+              "baseForm": "七",
+              "level": "N5"
+            },
+            {
+              "surface": "日間"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "及ぶ"
+            },
+            {
+              "surface": "命がけ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "選別"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "生き",
+              "reading": "なまき",
+              "meaning": "draft (beer); raw; unprocessed",
+              "baseForm": "生",
+              "level": "N3"
+            },
+            {
+              "surface": "延び"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "炭"
+            },
+            {
+              "surface": "治郎"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "黒い"
+            },
+            {
+              "surface": "日輪"
+            },
+            {
+              "surface": "刀",
+              "reading": "かたな",
+              "meaning": "sword; saber; knife",
+              "baseForm": "刀",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "授"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "正式"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "隊"
+            },
+            {
+              "surface": "士"
+            },
+            {
+              "surface": "として"
+            },
+            {
+              "surface": "認め"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "太陽の光を浴びると消滅してしまう禰豆子のために特製の木箱を作り、彼は妹を背負って任務地へと赴きました。道中で出会った臆病だが雷の呼吸を極めた善逸や、猪の皮を被った野性的な伊之助と共に数々の死闘を繰り広げました。倒した鬼に対しても、元は悲しい人間であったことを理解する炭治郎の手のひらは、いつも慈悲の温もりに満ちていました。その優しい心こそが、過酷な戦いの中で仲間たちの冷えた心を溶かす光となっていったのです。",
+      "en": "Crafting a special wooden box for Nezuko, who would perish if touched by sunlight, he set off for mission sites carrying her on his back. Along his travels, he braved numerous life-and-death clashes alongside Zenitsu, cowardly yet a Thunder master, and the feral, boar-masked Inosuke. Even toward the demons he vanquished, Tanjiro's gentle palm held warm compassion, understanding that they were once sorrowful humans. That pure kindness became a radiant light that melted the frozen hearts of comrades amid the unforgiving war.",
+      "tokens": [
+        {
+          "surface": "太陽",
+          "reading": "たいよう",
+          "meaning": "sun; solar",
+          "baseForm": "太陽",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "光",
+          "reading": "ひかり",
+          "meaning": "light",
+          "baseForm": "光",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "浴びる"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "消滅"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "しまう"
+        },
+        {
+          "surface": "禰"
+        },
+        {
+          "surface": "豆子"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "特製"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "木箱"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "作り",
+          "reading": "つくり",
+          "meaning": "make-up; sliced raw fish",
+          "baseForm": "作り",
+          "level": "N1"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "妹",
+          "reading": "いもうと",
+          "meaning": "(humble) younger sister",
+          "baseForm": "妹",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "背負"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "任務"
+        },
+        {
+          "surface": "地"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "赴"
+        },
+        {
+          "surface": "き"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "道中"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "出会"
+        },
+        {
+          "surface": "っ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "臆病"
+        },
+        {
+          "surface": "だが"
+        },
+        {
+          "surface": "雷"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "呼吸"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "極め"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "善"
+        },
+        {
+          "surface": "逸"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "猪"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "皮"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "被"
+        },
+        {
+          "surface": "っ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "野性"
+        },
+        {
+          "surface": "的"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "伊之助"
+        },
+        {
+          "surface": "と共に",
+          "reading": "とともに",
+          "meaning": "together with; along with",
+          "baseForm": "と共に",
+          "level": "N3"
+        },
+        {
+          "surface": "数々"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "死闘"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "繰"
+        },
+        {
+          "surface": "り"
+        },
+        {
+          "surface": "広",
+          "reading": "ひろ",
+          "meaning": "spacious; wide",
+          "baseForm": "広い",
+          "level": "N5"
+        },
+        {
+          "surface": "げ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "倒",
+          "reading": "たお",
+          "meaning": "to throw down; to beat; to bring down",
+          "baseForm": "倒す",
+          "level": "N3"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "鬼",
+          "reading": "おに",
+          "meaning": "ogre; demon; it (i.e., in a game of tag)",
+          "baseForm": "鬼",
+          "level": "N3"
+        },
+        {
+          "surface": "に対して"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "元"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "悲しい"
+        },
+        {
+          "surface": "人間"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "あっ",
+          "meaning": "Ah!; Oh!",
+          "baseForm": "あっ",
+          "level": "N3"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "理解"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "炭"
+        },
+        {
+          "surface": "治郎"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "手のひら"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "いつも",
+          "meaning": "always",
+          "baseForm": "いつも",
+          "level": "N5"
+        },
+        {
+          "surface": "慈悲",
+          "reading": "じひ",
+          "meaning": "mercy; compassion",
+          "baseForm": "慈悲",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "温もり"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "満"
+        },
+        {
+          "surface": "ち"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "その",
+          "meaning": "that",
+          "baseForm": "その",
+          "level": "N5"
+        },
+        {
+          "surface": "優しい",
+          "reading": "やさしい",
+          "meaning": "kind",
+          "baseForm": "優しい",
+          "level": "N4"
+        },
+        {
+          "surface": "心",
+          "reading": "こころ",
+          "meaning": "core; heart",
+          "baseForm": "心",
+          "level": "N4"
+        },
+        {
+          "surface": "こそ"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "過酷"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "戦い",
+          "reading": "たたかい",
+          "meaning": "battle; fight; struggle",
+          "baseForm": "戦い",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "中",
+          "reading": "なか",
+          "meaning": "middle",
+          "baseForm": "中",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "仲間"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "冷え"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "心",
+          "reading": "こころ",
+          "meaning": "core; heart",
+          "baseForm": "心",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "溶かす"
+        },
+        {
+          "surface": "光",
+          "reading": "ひかり",
+          "meaning": "light",
+          "baseForm": "光",
+          "level": "N4"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "っ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "太陽の光を浴びると消滅してしまう禰豆子のために特製の木箱を作り、彼は妹を背負って任務地へと赴きました。",
+          "literalEn": "sun ['s / of] light [obj] 浴びる [with/and] 消滅 [and] しまう 豆子 ['s / of] ため [at/to] 特製 ['s / of] 木箱 [obj] make-up he [topic]  younger sister [obj] 背負 って 任務 [toward] [with/and] した",
+          "naturalEn": "Crafting a special wooden box for Nezuko, who would perish if touched by sunlight, he set off for mission sites carrying her on his back.",
+          "tokens": [
+            {
+              "surface": "太陽",
+              "reading": "たいよう",
+              "meaning": "sun; solar",
+              "baseForm": "太陽",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "光",
+              "reading": "ひかり",
+              "meaning": "light",
+              "baseForm": "光",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "浴びる"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "消滅"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "しまう"
+            },
+            {
+              "surface": "禰"
+            },
+            {
+              "surface": "豆子"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "特製"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "木箱"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "作り",
+              "reading": "つくり",
+              "meaning": "make-up; sliced raw fish",
+              "baseForm": "作り",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "妹",
+              "reading": "いもうと",
+              "meaning": "(humble) younger sister",
+              "baseForm": "妹",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "背負"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "任務"
+            },
+            {
+              "surface": "地"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "赴"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "道中で出会った臆病だが雷の呼吸を極めた善逸や、猪の皮を被った野性的な伊之助と共に数々の死闘を繰り広げました。",
+          "literalEn": "道中 [in/by] 出会 [past] 臆病 だが ['s / of] 呼吸 [obj] 極め [past] ['s / of] [obj] [past] 野性 伊之助 together with 数々 ['s / of] 死闘 [obj] spacious した",
+          "naturalEn": "Along his travels, he braved numerous life-and-death clashes alongside Zenitsu, cowardly yet a Thunder master, and the feral, boar-masked Inosuke.",
+          "tokens": [
+            {
+              "surface": "道中"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "出会"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "臆病"
+            },
+            {
+              "surface": "だが"
+            },
+            {
+              "surface": "雷"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "呼吸"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "極め"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "善"
+            },
+            {
+              "surface": "逸"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "猪"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "皮"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "被"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "野性"
+            },
+            {
+              "surface": "的"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "伊之助"
+            },
+            {
+              "surface": "と共に",
+              "reading": "とともに",
+              "meaning": "together with; along with",
+              "baseForm": "と共に",
+              "level": "N3"
+            },
+            {
+              "surface": "数々"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "死闘"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "繰"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "広",
+              "reading": "ひろ",
+              "meaning": "spacious; wide",
+              "baseForm": "広い",
+              "level": "N5"
+            },
+            {
+              "surface": "げ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "倒した鬼に対しても、元は悲しい人間であったことを理解する炭治郎の手のひらは、いつも慈悲の温もりに満ちていました。",
+          "literalEn": "to throw down した ogre に対して [also] [topic] 悲しい 人間 [in/by] Ah! [past] thing [obj] 理解 to do 治郎 ['s / of] 手のひら [topic] always mercy ['s / of] 温もり [at/to] てい した",
+          "naturalEn": "Even toward the demons he vanquished, Tanjiro's gentle palm held warm compassion, understanding that they were once sorrowful humans.",
+          "tokens": [
+            {
+              "surface": "倒",
+              "reading": "たお",
+              "meaning": "to throw down; to beat; to bring down",
+              "baseForm": "倒す",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "鬼",
+              "reading": "おに",
+              "meaning": "ogre; demon; it (i.e., in a game of tag)",
+              "baseForm": "鬼",
+              "level": "N3"
+            },
+            {
+              "surface": "に対して"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "元"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "悲しい"
+            },
+            {
+              "surface": "人間"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "あっ",
+              "meaning": "Ah!; Oh!",
+              "baseForm": "あっ",
+              "level": "N3"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "理解"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "炭"
+            },
+            {
+              "surface": "治郎"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "手のひら"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "いつも",
+              "meaning": "always",
+              "baseForm": "いつも",
+              "level": "N5"
+            },
+            {
+              "surface": "慈悲",
+              "reading": "じひ",
+              "meaning": "mercy; compassion",
+              "baseForm": "慈悲",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "温もり"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "満"
+            },
+            {
+              "surface": "ち"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "その優しい心こそが、過酷な戦いの中で仲間たちの冷えた心を溶かす光となっていったのです。",
+          "literalEn": "that kind core こそ [subj] 過酷 battle ['s / of] middle [in/by] 仲間 たち ['s / of] 冷え [past] core [obj] 溶かす light [with/and] って [past] ['s / of] [is]",
+          "naturalEn": "That pure kindness became a radiant light that melted the frozen hearts of comrades amid the unforgiving war.",
+          "tokens": [
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "優しい",
+              "reading": "やさしい",
+              "meaning": "kind",
+              "baseForm": "優しい",
+              "level": "N4"
+            },
+            {
+              "surface": "心",
+              "reading": "こころ",
+              "meaning": "core; heart",
+              "baseForm": "心",
+              "level": "N4"
+            },
+            {
+              "surface": "こそ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "過酷"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "戦い",
+              "reading": "たたかい",
+              "meaning": "battle; fight; struggle",
+              "baseForm": "戦い",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "仲間"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "冷え"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "心",
+              "reading": "こころ",
+              "meaning": "core; heart",
+              "baseForm": "心",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "溶かす"
+            },
+            {
+              "surface": "光",
+              "reading": "ひかり",
+              "meaning": "light",
+              "baseForm": "光",
+              "level": "N4"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "すべての元凶である鬼舞辻無惨の打倒と、妹の人間への治癒を目指す戦いは、柱と呼ばれる最強の剣士たちをも巻き込んでいきました。どれほど絶望的な状況に追い込まれようとも、炭治郎は決して諦めることなく前を向き続けました。家族の絆と兄妹の固い誓いを胸に、彼の振るう刃は夜の闇を切り裂いて新しい夜明けを引き寄せるのでした。",
+      "en": "The campaign to overthrow the progenitor Muzan Kibutsuji and restore Nezuko's humanity eventually drew in the elite Hashira swordsmen. No matter how hopeless the circumstances grew, Tanjiro kept looking forward without ever giving in to despair. Bearing his family's bond and his sibling oath in his heart, the blade he swung slashed through the dark night to usher in a new dawn.",
+      "tokens": [
+        {
+          "surface": "すべて"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "元凶"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "鬼舞"
+        },
+        {
+          "surface": "辻"
+        },
+        {
+          "surface": "無惨"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "打倒"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "妹",
+          "reading": "いもうと",
+          "meaning": "(humble) younger sister",
+          "baseForm": "妹",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "人間"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "治癒"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "目指す"
+        },
+        {
+          "surface": "戦い",
+          "reading": "たたかい",
+          "meaning": "battle; fight; struggle",
+          "baseForm": "戦い",
+          "level": "N3"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "柱",
+          "reading": "はしら",
+          "meaning": "pillar; post",
+          "baseForm": "柱",
+          "level": "N1"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "呼ばれる"
+        },
+        {
+          "surface": "最強"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "剣士"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "巻き"
+        },
+        {
+          "surface": "込"
+        },
+        {
+          "surface": "んで"
+        },
+        {
+          "surface": "いき"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "どれほど"
+        },
+        {
+          "surface": "絶望"
+        },
+        {
+          "surface": "的"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "状況"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "追",
+          "reading": "お",
+          "meaning": "to chase; to run after",
+          "baseForm": "追う",
+          "level": "N3"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "込"
+        },
+        {
+          "surface": "まれ"
+        },
+        {
+          "surface": "よう"
+        },
+        {
+          "surface": "とも"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "炭"
+        },
+        {
+          "surface": "治郎"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "決して"
+        },
+        {
+          "surface": "諦める"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "なく"
+        },
+        {
+          "surface": "前",
+          "reading": "まえ",
+          "meaning": "before",
+          "baseForm": "前",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "向き"
+        },
+        {
+          "surface": "続"
+        },
+        {
+          "surface": "け"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "meaning": "family",
+          "baseForm": "家族",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "絆"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "兄妹"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "固い",
+          "reading": "かたい",
+          "meaning": "stubborn; firm (not viscous or easily moved)",
+          "baseForm": "固い",
+          "level": "N2"
+        },
+        {
+          "surface": "誓"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "胸"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "振るう"
+        },
+        {
+          "surface": "刃"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "夜",
+          "reading": "よる",
+          "meaning": "evening; night",
+          "baseForm": "夜",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "闇",
+          "reading": "やみ",
+          "meaning": "darkness; the dark; black-marketeering",
+          "baseForm": "闇",
+          "level": "N1"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "切り",
+          "reading": "きり",
+          "meaning": "limits; end; bounds",
+          "baseForm": "切り",
+          "level": "N1"
+        },
+        {
+          "surface": "裂"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "新しい",
+          "reading": "あたらしい",
+          "meaning": "new",
+          "baseForm": "新しい",
+          "level": "N5"
+        },
+        {
+          "surface": "夜明け"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "引き寄せる"
+        },
+        {
+          "surface": "ので"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "すべての元凶である鬼舞辻無惨の打倒と、妹の人間への治癒を目指す戦いは、柱と呼ばれる最強の剣士たちをも巻き込んでいきました。",
+          "literalEn": "すべて ['s / of] 元凶 [in/by] to be 鬼舞 無惨 ['s / of] 打倒 [with/and]  younger sister ['s / of] 人間 [toward] ['s / of] 治癒 [obj] 目指す battle [topic] pillar [with/and] 呼ばれる 最強 ['s / of] 剣士 たち [obj] [also] 巻き んで いき した",
+          "naturalEn": "The campaign to overthrow the progenitor Muzan Kibutsuji and restore Nezuko's humanity eventually drew in the elite Hashira swordsmen.",
+          "tokens": [
+            {
+              "surface": "すべて"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "元凶"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "鬼舞"
+            },
+            {
+              "surface": "辻"
+            },
+            {
+              "surface": "無惨"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "打倒"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "妹",
+              "reading": "いもうと",
+              "meaning": "(humble) younger sister",
+              "baseForm": "妹",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "人間"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "治癒"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "目指す"
+            },
+            {
+              "surface": "戦い",
+              "reading": "たたかい",
+              "meaning": "battle; fight; struggle",
+              "baseForm": "戦い",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "柱",
+              "reading": "はしら",
+              "meaning": "pillar; post",
+              "baseForm": "柱",
+              "level": "N1"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "呼ばれる"
+            },
+            {
+              "surface": "最強"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "剣士"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "巻き"
+            },
+            {
+              "surface": "込"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "いき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "どれほど絶望的な状況に追い込まれようとも、炭治郎は決して諦めることなく前を向き続けました。",
+          "literalEn": "どれほど 絶望 状況 [at/to] to chase まれ よう とも 治郎 [topic] 決して 諦める thing なく before [obj] 向き した",
+          "naturalEn": "No matter how hopeless the circumstances grew, Tanjiro kept looking forward without ever giving in to despair.",
+          "tokens": [
+            {
+              "surface": "どれほど"
+            },
+            {
+              "surface": "絶望"
+            },
+            {
+              "surface": "的"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "状況"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "追",
+              "reading": "お",
+              "meaning": "to chase; to run after",
+              "baseForm": "追う",
+              "level": "N3"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "込"
+            },
+            {
+              "surface": "まれ"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "とも"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "炭"
+            },
+            {
+              "surface": "治郎"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "決して"
+            },
+            {
+              "surface": "諦める"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "なく"
+            },
+            {
+              "surface": "前",
+              "reading": "まえ",
+              "meaning": "before",
+              "baseForm": "前",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "向き"
+            },
+            {
+              "surface": "続"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "家族の絆と兄妹の固い誓いを胸に、彼の振るう刃は夜の闇を切り裂いて新しい夜明けを引き寄せるのでした。",
+          "literalEn": "family ['s / of] [with/and] 兄妹 ['s / of] stubborn [obj] [at/to] he ['s / of] 振るう [topic] evening ['s / of] darkness [obj] limits [and] new 夜明け [obj] 引き寄せる ので した",
+          "naturalEn": "Bearing his family's bond and his sibling oath in his heart, the blade he swung slashed through the dark night to usher in a new dawn.",
+          "tokens": [
+            {
+              "surface": "家族",
+              "reading": "かぞく",
+              "meaning": "family",
+              "baseForm": "家族",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "絆"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "兄妹"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "固い",
+              "reading": "かたい",
+              "meaning": "stubborn; firm (not viscous or easily moved)",
+              "baseForm": "固い",
+              "level": "N2"
+            },
+            {
+              "surface": "誓"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "胸"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "振るう"
+            },
+            {
+              "surface": "刃"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "夜",
+              "reading": "よる",
+              "meaning": "evening; night",
+              "baseForm": "夜",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "闇",
+              "reading": "やみ",
+              "meaning": "darkness; the dark; black-marketeering",
+              "baseForm": "闇",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "切り",
+              "reading": "きり",
+              "meaning": "limits; end; bounds",
+              "baseForm": "切り",
+              "level": "N1"
+            },
+            {
+              "surface": "裂"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "新しい",
+              "reading": "あたらしい",
+              "meaning": "new",
+              "baseForm": "新しい",
+              "level": "N5"
+            },
+            {
+              "surface": "夜明け"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "引き寄せる"
+            },
+            {
+              "surface": "ので"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "鬼殺隊の剣士・冨岡義勇が命乞いをする炭治郎に浴びせた言葉は何ですか。",
+      "questionEn": "What words did the Demon Slayer Giyu Tomioka sternly direct at the pleading Tanjiro?",
+      "options": [
+        "生殺与奪の権を他人に握らせるな",
+        "金を出せば妹の命を見逃してやろう",
+        "鬼になった者は全員問答無用で斬り捨てる",
+        "今すぐ雪山から逃げて二度と姿を見せるな"
+      ],
+      "optionsEn": [
+        "Never surrender the power over life and death to another!",
+        "If you pay me money, I will spare your sister's life",
+        "All who become demons are cut down without question",
+        "Run away from this mountain now and never show your face again"
+      ],
+      "answerIndex": 0,
+      "explanation": "「泣くな、絶望するな。生殺与奪の権を他人に握らせるな」と、弱腰の炭治郎を厳しく叱咤しました。"
+    },
+    {
+      "question": "炭治郎が日中の移動時に妹の禰豆子を木箱に入れて背負っている理由は何ですか。",
+      "questionEn": "Why does Tanjiro carry his sister Nezuko in a wooden box during daytime travels?",
+      "options": [
+        "鬼は日光を浴びると体が消滅してしまうから",
+        "禰豆子が歩くのが嫌いで甘えているから",
+        "木箱の中に隠しておかないと警察に捕まるから",
+        "重い荷物を背負うことで足腰を鍛える修行のため"
+      ],
+      "optionsEn": [
+        "Demons disintegrate and perish when exposed to sunlight",
+        "Nezuko dislikes walking and wants to be pampered",
+        "She would be arrested by the police if not hidden in a box",
+        "It is a training method to strengthen his legs by carrying heavy cargo"
+      ],
+      "answerIndex": 0,
+      "explanation": "鬼は太陽の光を浴びると体が燃えて塵になってしまうため、遮光された特製木箱で守る必要があります。"
+    },
+    {
+      "question": "炭治郎が倒した鬼に対して見せる独特の姿勢はどのようなものですか。",
+      "questionEn": "What unique attitude does Tanjiro exhibit toward the demons he defeats?",
+      "options": [
+        "元は哀しい人間であったことを理解し、慈悲と温もりをもって接する",
+        "悪鬼滅殺を誇り、踏みつけにして嘲笑する",
+        "鬼の持っている宝物を奪い取る",
+        "二度と蘇らないように塩を撒き散らす"
+      ],
+      "optionsEn": [
+        "Understanding they were once sorrowful humans, treating them with compassion and warmth",
+        "Pridefully trampling and mocking them as eliminated evil",
+        "Plundering whatever valuables the demon possessed",
+        "Scattering salt so they can never revive again"
+      ],
+      "answerIndex": 0,
+      "explanation": "炭治郎は鬼を醜い化け物として見下すのではなく、かつて人間であった哀しみに寄り添う深い優しさを持っています。"
+    }
+  ]
+}

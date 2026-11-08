@@ -15,6 +15,7 @@ export interface RawInstantReplyOption {
 export interface RawInstantReplyItem {
   id: string;
   jlpt: 5 | 4 | 3 | 2 | 1;
+  category?: "quick-response" | "situational-utterance";
   situationContext: string;
   speakerRole: string;
   promptJa: string;
@@ -1833,4 +1834,545 @@ export const RAW_INSTANT_REPLY_ITEMS: RawInstantReplyItem[] = [
       { ja: "逆境でしたよ。", isCorrect: false, trapType: "register-mismatch", explanation: "Inappropriate." }
     ]
   }
+,
+{
+  "id": "utterance-n5-01",
+  "jlpt": 5,
+  "category": "situational-utterance",
+  "situationContext": "電車の中で、お年寄りに席をゆずります。何と言いますか。",
+  "speakerRole": "⬇ You (あなた)",
+  "promptJa": "電車の中で、お年寄りに席をゆずります。何と言いますか。",
+  "options": [
+    {
+      "ja": "どうぞ、ここに座ってください。",
+      "isCorrect": true,
+      "explanation": "Natural polite offer inviting someone to take your seat."
+    },
+    {
+      "ja": "どうもすみませんでした。",
+      "isCorrect": false,
+      "trapType": "wrong-intent",
+      "explanation": "Apologizing instead of offering your seat."
+    },
+    {
+      "ja": "失礼しました。",
+      "isCorrect": false,
+      "trapType": "register-mismatch",
+      "explanation": "Standard apology phrase, not an invitation to sit."
+    }
+  ]
+},
+{
+  "id": "utterance-n5-02",
+  "jlpt": 5,
+  "category": "situational-utterance",
+  "situationContext": "同僚より先に会社を出て帰ります。何と言いますか。",
+  "speakerRole": "⬇ You (あなた)",
+  "promptJa": "同僚より先に会社を出て帰ります。何と言いますか。",
+  "options": [
+    {
+      "ja": "お先に失礼します。",
+      "isCorrect": true,
+      "explanation": "Standard phrase spoken when leaving the workplace before colleagues."
+    },
+    {
+      "ja": "お疲れ様でした、また明日。",
+      "isCorrect": false,
+      "trapType": "wrong-intent",
+      "explanation": "Said to others who are leaving or general goodbye."
+    },
+    {
+      "ja": "いってまいります。",
+      "isCorrect": false,
+      "trapType": "register-mismatch",
+      "explanation": "Said when stepping out on business with intention to return."
+    }
+  ]
+},
+{
+  "id": "utterance-n5-03",
+  "jlpt": 5,
+  "category": "situational-utterance",
+  "situationContext": "友達に傘を借りたいです。何と言いますか。",
+  "speakerRole": "⬇ You (あなた)",
+  "promptJa": "友達に傘を借りたいです。何と言いますか。",
+  "options": [
+    {
+      "ja": "この傘、ちょっと貸してくれる？",
+      "isCorrect": true,
+      "explanation": "Natural casual request asking a friend to lend an umbrella."
+    },
+    {
+      "ja": "この傘、ちょっと借りてくれる？",
+      "isCorrect": false,
+      "trapType": "grammar-tense-trap",
+      "explanation": "Confuses 貸す (lend) and 借りる (borrow)."
+    },
+    {
+      "ja": "この傘、使ってもいいよ。",
+      "isCorrect": false,
+      "trapType": "wrong-intent",
+      "explanation": "Offers your umbrella instead of asking to borrow theirs."
+    }
+  ]
+},
+{
+  "id": "utterance-n5-04",
+  "jlpt": 5,
+  "category": "situational-utterance",
+  "situationContext": "先生の研究室に入ります。何と言いますか。",
+  "speakerRole": "⬇ You (あなた)",
+  "promptJa": "先生の研究室に入ります。何と言いますか。",
+  "options": [
+    {
+      "ja": "失礼します。",
+      "isCorrect": true,
+      "explanation": "Set formal greeting when entering a professor or superior's room."
+    },
+    {
+      "ja": "ごめんください。",
+      "isCorrect": false,
+      "trapType": "register-mismatch",
+      "explanation": "Said when visiting someone's home entrance, not an office."
+    },
+    {
+      "ja": "おじゃましません。",
+      "isCorrect": false,
+      "trapType": "grammar-tense-trap",
+      "explanation": "Negative greeting makes no sense upon entering."
+    }
+  ]
+},
+{
+  "id": "utterance-n5-05",
+  "jlpt": 5,
+  "category": "situational-utterance",
+  "situationContext": "ご飯をごちそうになりました。食べた後で何と言いますか。",
+  "speakerRole": "⬇ You (あなた)",
+  "promptJa": "ご飯をごちそうになりました。食べた後で何と言いますか。",
+  "options": [
+    {
+      "ja": "ごちそうさまでした。とてもおいしかったです。",
+      "isCorrect": true,
+      "explanation": "Standard gratitude expressed after finishing a meal."
+    },
+    {
+      "ja": "いただきます。",
+      "isCorrect": false,
+      "trapType": "wrong-intent",
+      "explanation": "Spoken before starting to eat, not after."
+    },
+    {
+      "ja": "お待たせしました。",
+      "isCorrect": false,
+      "trapType": "register-mismatch",
+      "explanation": "Said when keeping someone waiting."
+    }
+  ]
+},
+{
+  "id": "utterance-n5-06",
+  "jlpt": 5,
+  "category": "situational-utterance",
+  "situationContext": "相手の言ったことがよく聞こえませんでした。何と言いますか。",
+  "speakerRole": "⬇ You (あなた)",
+  "promptJa": "相手の言ったことがよく聞こえませんでした。何と言いますか。",
+  "options": [
+    {
+      "ja": "すみません、もう一度言ってください。",
+      "isCorrect": true,
+      "explanation": "Polite request to repeat what was just said."
+    },
+    {
+      "ja": "はい、わかりました。",
+      "isCorrect": false,
+      "trapType": "wrong-intent",
+      "explanation": "Claims understanding when you actually could not hear."
+    },
+    {
+      "ja": "大きな声で話さないでください。",
+      "isCorrect": false,
+      "trapType": "register-mismatch",
+      "explanation": "Rude request telling the other person not to speak loudly."
+    }
+  ]
+},
+{
+  "id": "utterance-n5-07",
+  "jlpt": 5,
+  "category": "situational-utterance",
+  "situationContext": "店で靴を履いてみたいです。店員に何と言いますか。",
+  "speakerRole": "⬇ You (あなた)",
+  "promptJa": "店で靴を履いてみたいです。店員に何と言いますか。",
+  "options": [
+    {
+      "ja": "これを履いてみてもいいですか。",
+      "isCorrect": true,
+      "explanation": "Polite permission request using 〜てみてもいいですか."
+    },
+    {
+      "ja": "これを履いてあげましょうか。",
+      "isCorrect": false,
+      "trapType": "grammar-tense-trap",
+      "explanation": "Offers to put shoes on the clerk (〜てあげる)."
+    },
+    {
+      "ja": "これを履かなければなりませんか。",
+      "isCorrect": false,
+      "trapType": "wrong-intent",
+      "explanation": "Asks if trying them on is a mandatory obligation."
+    }
+  ]
+},
+{
+  "id": "utterance-n5-08",
+  "jlpt": 5,
+  "category": "situational-utterance",
+  "situationContext": "道で時間を尋ねます。何と言いますか。",
+  "speakerRole": "⬇ You (あなた)",
+  "promptJa": "道で時間を尋ねます。何と言いますか。",
+  "options": [
+    {
+      "ja": "すみません、今何時ですか。",
+      "isCorrect": true,
+      "explanation": "Standard polite inquiry asking for the current time."
+    },
+    {
+      "ja": "あのう、時間はありますか。",
+      "isCorrect": false,
+      "trapType": "wrong-intent",
+      "explanation": "Asks if the passerby has spare time, not the clock time."
+    },
+    {
+      "ja": "時間を教えてあげますよ。",
+      "isCorrect": false,
+      "trapType": "grammar-tense-trap",
+      "explanation": "Says you will tell them the time instead of asking."
+    }
+  ]
+},
+{
+  "id": "utterance-n4-01",
+  "jlpt": 4,
+  "category": "situational-utterance",
+  "situationContext": "約束の時間に遅れそうです。電話で何と言いますか。",
+  "speakerRole": "⬇ You (あなた)",
+  "promptJa": "約束の時間に遅れそうです。電話で何と言いますか。",
+  "options": [
+    {
+      "ja": "申し訳ありません、十分ほど遅れそうです。",
+      "isCorrect": true,
+      "explanation": "Courteous apology with estimated delay notice using 〜そうです."
+    },
+    {
+      "ja": "十分待ってくださいませんか。",
+      "isCorrect": false,
+      "trapType": "wrong-intent",
+      "explanation": "Orders the counterpart to wait without offering an apology."
+    },
+    {
+      "ja": "早く来てください。",
+      "isCorrect": false,
+      "trapType": "register-mismatch",
+      "explanation": "Commands the other person to arrive early."
+    }
+  ]
+},
+{
+  "id": "utterance-n4-02",
+  "jlpt": 4,
+  "category": "situational-utterance",
+  "situationContext": "重い荷物を持っている人を手伝いたいです。何と言いますか。",
+  "speakerRole": "⬇ You (あなた)",
+  "promptJa": "重い荷物を持っている人を手伝いたいです。何と言いますか。",
+  "options": [
+    {
+      "ja": "お持ちしましょうか。",
+      "isCorrect": true,
+      "explanation": "Polite humble offer of assistance using お〜しましょうか."
+    },
+    {
+      "ja": "持ってください。",
+      "isCorrect": false,
+      "trapType": "grammar-tense-trap",
+      "explanation": "Asks them to carry instead of offering help."
+    },
+    {
+      "ja": "持ってあげてください。",
+      "isCorrect": false,
+      "trapType": "wrong-intent",
+      "explanation": "Tells someone else to carry the luggage."
+    }
+  ]
+},
+{
+  "id": "utterance-n4-03",
+  "jlpt": 4,
+  "category": "situational-utterance",
+  "situationContext": "シャッターを押してもらいたいです。何と言いますか。",
+  "speakerRole": "⬇ You (あなた)",
+  "promptJa": "シャッターを押してもらいたいです。何と言いますか。",
+  "options": [
+    {
+      "ja": "すみません、シャッターを押していただけませんか。",
+      "isCorrect": true,
+      "explanation": "Courteous request using 〜ていただけませんか."
+    },
+    {
+      "ja": "シャッターを押してあげましょうか。",
+      "isCorrect": false,
+      "trapType": "grammar-tense-trap",
+      "explanation": "Offers to take their photo instead of asking."
+    },
+    {
+      "ja": "写真を撮っても構いませんか。",
+      "isCorrect": false,
+      "trapType": "wrong-intent",
+      "explanation": "Asks permission for you to take a photo of the area."
+    }
+  ]
+},
+{
+  "id": "utterance-n4-04",
+  "jlpt": 4,
+  "category": "situational-utterance",
+  "situationContext": "ペンを借りたいです。隣の人に何と言いますか。",
+  "speakerRole": "⬇ You (あなた)",
+  "promptJa": "ペンを借りたいです。隣の人に何と言いますか。",
+  "options": [
+    {
+      "ja": "すみません、ペンを少しお借りしてもよろしいですか。",
+      "isCorrect": true,
+      "explanation": "Respectful borrowing permission using お借りしてもよろしいですか."
+    },
+    {
+      "ja": "ペンを少しお貸ししてもよろしいですか。",
+      "isCorrect": false,
+      "trapType": "grammar-tense-trap",
+      "explanation": "Confuses お借りする (I borrow) and お貸しする (I lend)."
+    },
+    {
+      "ja": "ペンを使ってあげてください。",
+      "isCorrect": false,
+      "trapType": "wrong-intent",
+      "explanation": "Tells them to use your pen."
+    }
+  ]
+},
+{
+  "id": "utterance-n4-05",
+  "jlpt": 4,
+  "category": "situational-utterance",
+  "situationContext": "課長に書類を見てほしいです。何と言いますか。",
+  "speakerRole": "⬇ You (あなた)",
+  "promptJa": "課長に書類を見てほしいです。何と言いますか。",
+  "options": [
+    {
+      "ja": "課長、この書類を見ていただけないでしょうか。",
+      "isCorrect": true,
+      "explanation": "Respectful business request to a superior using 〜ていただけないでしょうか."
+    },
+    {
+      "ja": "課長、この書類をご覧になりましょうか。",
+      "isCorrect": false,
+      "trapType": "keigo-mismatch",
+      "explanation": "Corrupt keigo mixing honorific and self-offer."
+    },
+    {
+      "ja": "課長、この書類を見せてあげます。",
+      "isCorrect": false,
+      "trapType": "register-mismatch",
+      "explanation": "Patronizing tone saying you will show it to them."
+    }
+  ]
+},
+{
+  "id": "utterance-n4-06",
+  "jlpt": 4,
+  "category": "situational-utterance",
+  "situationContext": "名前を呼ばれて診察室に入ります。何と言いますか。",
+  "speakerRole": "⬇ You (あなた)",
+  "promptJa": "名前を呼ばれて診察室に入ります。何と言いますか。",
+  "options": [
+    {
+      "ja": "失礼いたします。",
+      "isCorrect": true,
+      "explanation": "Standard polite entrance greeting when entering doctor's exam room."
+    },
+    {
+      "ja": "お待たせいたしました。",
+      "isCorrect": false,
+      "trapType": "wrong-intent",
+      "explanation": "The doctor or host says this, not the entering patient."
+    },
+    {
+      "ja": "ご苦労様でした。",
+      "isCorrect": false,
+      "trapType": "keigo-mismatch",
+      "explanation": "Patronizing phrase spoken only by superiors to subordinates."
+    }
+  ]
+},
+{
+  "id": "utterance-n3-01",
+  "jlpt": 3,
+  "category": "situational-utterance",
+  "situationContext": "会議で意見を言いたいです。何と言いますか。",
+  "speakerRole": "⬇ You (あなた)",
+  "promptJa": "会議で意見を言いたいです。何と言いますか。",
+  "options": [
+    {
+      "ja": "恐れ入りますが、一言よろしいでしょうか。",
+      "isCorrect": true,
+      "explanation": "Proper business cushion phrase requesting permission to speak."
+    },
+    {
+      "ja": "私の話を聞いてください。",
+      "isCorrect": false,
+      "trapType": "register-mismatch",
+      "explanation": "Far too blunt and assertive for a formal meeting."
+    },
+    {
+      "ja": "お話し申し上げます。",
+      "isCorrect": false,
+      "trapType": "keigo-mismatch",
+      "explanation": "Unnatural phrasing before starting an opinion."
+    }
+  ]
+},
+{
+  "id": "utterance-n3-02",
+  "jlpt": 3,
+  "category": "situational-utterance",
+  "situationContext": "取引先の田中様からお電話です。部長に何と言いますか。",
+  "speakerRole": "⬇ You (あなた)",
+  "promptJa": "取引先の田中様からお電話です。部長に何と言いますか。",
+  "options": [
+    {
+      "ja": "ABC商事の田中様から一番にお電話が入っております。",
+      "isCorrect": true,
+      "explanation": "Standard business protocol for announcing an incoming client call."
+    },
+    {
+      "ja": "田中さんが電話したいと言っています。",
+      "isCorrect": false,
+      "trapType": "register-mismatch",
+      "explanation": "Lacks professional business honorific register."
+    },
+    {
+      "ja": "田中様をお電話にお呼びしました。",
+      "isCorrect": false,
+      "trapType": "grammar-tense-trap",
+      "explanation": "Reverses the direction of who placed the call."
+    }
+  ]
+},
+{
+  "id": "utterance-n3-03",
+  "jlpt": 3,
+  "category": "situational-utterance",
+  "situationContext": "気分が悪いので早く帰りたいです。上司に何と言いますか。",
+  "speakerRole": "⬇ You (あなた)",
+  "promptJa": "気分が悪いので早く帰りたいです。上司に何と言いますか。",
+  "options": [
+    {
+      "ja": "申し訳ありません、熱があるので本日はお先に失礼してもよろしいでしょうか。",
+      "isCorrect": true,
+      "explanation": "Polite request for early departure citing condition and asking permission."
+    },
+    {
+      "ja": "気分が悪いので帰らせてくださいませんか。",
+      "isCorrect": false,
+      "trapType": "register-mismatch",
+      "explanation": "Overly demanding causal imperative towards a superior."
+    },
+    {
+      "ja": "本日はお暇をいただかれますか。",
+      "isCorrect": false,
+      "trapType": "keigo-mismatch",
+      "explanation": "Ungrammatical misuse of honorific forms."
+    }
+  ]
+},
+{
+  "id": "utterance-n3-04",
+  "jlpt": 3,
+  "category": "situational-utterance",
+  "situationContext": "来客にお茶を差し出します。何と言いますか。",
+  "speakerRole": "⬇ You (あなた)",
+  "promptJa": "来客にお茶を差し出します。何と言いますか。",
+  "options": [
+    {
+      "ja": "どうぞ、お熱いうちに召し上がってください。",
+      "isCorrect": true,
+      "explanation": "Respectful encouragement to enjoy tea using sonkeigo 召し上がる."
+    },
+    {
+      "ja": "どうぞ、お熱いうちにいただいてください。",
+      "isCorrect": false,
+      "trapType": "keigo-mismatch",
+      "explanation": "いただく is humble (kenjōgo) and cannot be applied to a client."
+    },
+    {
+      "ja": "冷めないように早く飲んでください。",
+      "isCorrect": false,
+      "trapType": "register-mismatch",
+      "explanation": "Rude imperative directing a guest."
+    }
+  ]
+},
+{
+  "id": "utterance-n3-05",
+  "jlpt": 3,
+  "category": "situational-utterance",
+  "situationContext": "上司からの依頼を丁重に断りたいです。何と言いますか。",
+  "speakerRole": "⬇ You (あなた)",
+  "promptJa": "上司からの依頼を丁重に断りたいです。何と言いますか。",
+  "options": [
+    {
+      "ja": "大変恐縮ですが、ただいま別の急ぎの案件を抱えておりまして、お引き受けいたしかねます。",
+      "isCorrect": true,
+      "explanation": "Quintessential business refusal using cushion and 〜いたしかねます."
+    },
+    {
+      "ja": "忙しいので今はできません。",
+      "isCorrect": false,
+      "trapType": "register-mismatch",
+      "explanation": "Blunt informal refusal unsuitable for a superior."
+    },
+    {
+      "ja": "その仕事はお断り申し上げられます。",
+      "isCorrect": false,
+      "trapType": "keigo-mismatch",
+      "explanation": "Grammatically corrupt double-honorific passive blend."
+    }
+  ]
+},
+{
+  "id": "utterance-n3-06",
+  "jlpt": 3,
+  "category": "situational-utterance",
+  "situationContext": "結婚式で新郎新婦のご両親に挨拶します。何と言いますか。",
+  "speakerRole": "⬇ You (あなた)",
+  "promptJa": "結婚式で新郎新婦のご両親に挨拶します。何と言いますか。",
+  "options": [
+    {
+      "ja": "本日は誠におめでとうございます。心よりお慶び申し上げます。",
+      "isCorrect": true,
+      "explanation": "Highest formal ceremonial congratulatory greeting."
+    },
+    {
+      "ja": "ご苦労様でした。本当によかったですね。",
+      "isCorrect": false,
+      "trapType": "keigo-mismatch",
+      "explanation": "ご苦労様 is patronizing and forbidden to hosts."
+    },
+    {
+      "ja": "お世話様でした。お幸せになってください。",
+      "isCorrect": false,
+      "trapType": "register-mismatch",
+      "explanation": "Inappropriate conversational blend for a wedding."
+    }
+  ]
+}
 ];

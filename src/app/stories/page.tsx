@@ -16,21 +16,23 @@ import { StoryCover } from "@/components/story-cover";
 
 void COMPLETED_STORIES_STORAGE_KEY;
 
-const levelTabs: Array<{ key: "All" | "N5" | "N4"; label: string }> = [
+const levelTabs: Array<{ key: "All" | "N5" | "N4" | "N3"; label: string }> = [
   { key: "All", label: "All" },
   { key: "N5", label: "N5" },
   { key: "N4", label: "N4" },
+  { key: "N3", label: "N3" },
 ];
 
 const categoryTabs: Array<{ key: "All" | StoryCategory; label: string }> = [
   { key: "All", label: "All" },
   { key: "Everyday Life", label: "Everyday Life" },
   { key: "Fairy Tales", label: "Fairy Tales" },
+  { key: "Anime & Pop Culture", label: "Anime & Pop Culture" },
 ];
 
 export default function StoriesHubPage() {
   const allStories = useMemo(() => getAllStories(), []);
-  const [selectedLevel, setSelectedLevel] = useState<"All" | "N5" | "N4">("All");
+  const [selectedLevel, setSelectedLevel] = useState<"All" | "N5" | "N4" | "N3">("All");
   const [selectedCategory, setSelectedCategory] = useState<"All" | StoryCategory>("All");
   const [completedIds, setCompletedIds] = useState<Set<string>>(new Set());
 

@@ -1,0 +1,4245 @@
+{
+  "id": "story-n3-convenience-store-part-time",
+  "title": "コンビニのアルバイト：初めてのレジ研修と接客",
+  "titleRomaji": "Konbini no Arubaito: Hajimete no Reji Kenshuu to Sekkyaku",
+  "titleEn": "Convenience Store Part-Time: First Register Training and Customer Service",
+  "level": "N3",
+  "category": "Everyday Life",
+  "tags": [
+    "Everyday Life",
+    "N3",
+    "Workplace",
+    "Part-Time",
+    "Keigo"
+  ],
+  "paragraphs": [
+    {
+      "ja": "日本での生活費を補いながら生きた日本語を学ぶため、駅前の二十四時間営業のコンビニでアルバイトを始めました。初日のシフトでは、青と白のストライプ柄の制服ユニフォームに身を包み、店長から挨拶の徹底を叩き込まれました。自動ドアが開くたびに、「いらっしゃいませ！」と明るく元気な声でお客様を迎えることから業務が始まります。コンビニの仕事は単に商品を販売するだけでなく、実に多岐にわたる複雑な作業をこなさなければなりません。",
+      "en": "To supplement living expenses in Japan while learning living Japanese, I started a part-time job at a 24-hour convenience store in front of the train station. On my first shift, donning the blue-and-white striped uniform, the store manager drilled the fundamentals of proper greetings into me. Whenever the automatic sliding doors parted, our duties commenced by welcoming patrons with a bright, cheerful greeting of 'Irasshaimase!' Working in a Japanese convenience store does not merely involve scanning products, but executing an extraordinarily diverse array of complex tasks.",
+      "tokens": [
+        {
+          "surface": "日本",
+          "reading": "にっぽん",
+          "meaning": "Japan",
+          "baseForm": "日本",
+          "level": "N3"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "生活",
+          "reading": "せいかつ",
+          "meaning": "to live",
+          "baseForm": "生活",
+          "level": "N4"
+        },
+        {
+          "surface": "費"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "補い"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "生き",
+          "reading": "なまき",
+          "meaning": "draft (beer); raw; unprocessed",
+          "baseForm": "生",
+          "level": "N3"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "日本語",
+          "reading": "にほんご",
+          "meaning": "Japanese language",
+          "baseForm": "日本語",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "学ぶ"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "駅前"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "二十四"
+        },
+        {
+          "surface": "時間",
+          "reading": "じかん",
+          "meaning": "time",
+          "baseForm": "時間",
+          "level": "N5"
+        },
+        {
+          "surface": "営業"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "コンビニ"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "アルバイト",
+          "meaning": "part-time job",
+          "baseForm": "アルバイト",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "始め",
+          "reading": "はじめ",
+          "meaning": "beginning; start; origin",
+          "baseForm": "始め",
+          "level": "N1"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "初日"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "シフト"
+        },
+        {
+          "surface": "では",
+          "meaning": "with that...",
+          "baseForm": "では",
+          "level": "N5"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "青",
+          "reading": "あお",
+          "meaning": "blue",
+          "baseForm": "青",
+          "level": "N5"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "白",
+          "reading": "しろ",
+          "meaning": "white",
+          "baseForm": "白",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ストライプ"
+        },
+        {
+          "surface": "柄"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "制服"
+        },
+        {
+          "surface": "ユニフォーム",
+          "meaning": "uniform",
+          "baseForm": "ユニフォーム",
+          "level": "N1"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "身"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "包み"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "店長"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "挨拶"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "徹底"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "叩き"
+        },
+        {
+          "surface": "込"
+        },
+        {
+          "surface": "まれ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "自動"
+        },
+        {
+          "surface": "ドア",
+          "meaning": "Western style door",
+          "baseForm": "ドア",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "開く",
+          "reading": "あく",
+          "meaning": "to open; to become open",
+          "baseForm": "開く",
+          "level": "N5"
+        },
+        {
+          "surface": "たび"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "いらっしゃい"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "せ"
+        },
+        {
+          "surface": "！"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "明",
+          "reading": "あ",
+          "meaning": "room; time to spare; emptiness",
+          "baseForm": "明き",
+          "level": "N2"
+        },
+        {
+          "surface": "る"
+        },
+        {
+          "surface": "く"
+        },
+        {
+          "surface": "元気",
+          "reading": "げんき",
+          "meaning": "health; vitality",
+          "baseForm": "元気",
+          "level": "N5"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "声",
+          "reading": "こえ",
+          "meaning": "voice",
+          "baseForm": "声",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "お客様"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "迎える"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "業務"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "始まり",
+          "reading": "はじまり",
+          "meaning": "origin; beginning",
+          "baseForm": "始まり",
+          "level": "N3"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "コンビニ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "仕事",
+          "reading": "しごと",
+          "meaning": "job",
+          "baseForm": "仕事",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "単に"
+        },
+        {
+          "surface": "商品"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "販売"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "だけ"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "なく"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "実に"
+        },
+        {
+          "surface": "多岐"
+        },
+        {
+          "surface": "にわたる"
+        },
+        {
+          "surface": "複雑"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "作業"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "こ"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "け"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ば"
+        },
+        {
+          "surface": "なり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "せん"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "日本での生活費を補いながら生きた日本語を学ぶため、駅前の二十四時間営業のコンビニでアルバイトを始めました。",
+          "literalEn": "Japan [in/by] ['s / of] to live [obj] 補い ながら draft [past] Japanese language [obj] 学ぶ ため 駅前 ['s / of] 二十四 time 営業 ['s / of] コンビニ [in/by] part-time job [obj] beginning した",
+          "naturalEn": "To supplement living expenses in Japan while learning living Japanese, I started a part-time job at a 24-hour convenience store in front of the train station.",
+          "tokens": [
+            {
+              "surface": "日本",
+              "reading": "にっぽん",
+              "meaning": "Japan",
+              "baseForm": "日本",
+              "level": "N3"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "生活",
+              "reading": "せいかつ",
+              "meaning": "to live",
+              "baseForm": "生活",
+              "level": "N4"
+            },
+            {
+              "surface": "費"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "補い"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "生き",
+              "reading": "なまき",
+              "meaning": "draft (beer); raw; unprocessed",
+              "baseForm": "生",
+              "level": "N3"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "日本語",
+              "reading": "にほんご",
+              "meaning": "Japanese language",
+              "baseForm": "日本語",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "学ぶ"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "駅前"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "二十四"
+            },
+            {
+              "surface": "時間",
+              "reading": "じかん",
+              "meaning": "time",
+              "baseForm": "時間",
+              "level": "N5"
+            },
+            {
+              "surface": "営業"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "コンビニ"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "アルバイト",
+              "meaning": "part-time job",
+              "baseForm": "アルバイト",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "始め",
+              "reading": "はじめ",
+              "meaning": "beginning; start; origin",
+              "baseForm": "始め",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "初日のシフトでは、青と白のストライプ柄の制服ユニフォームに身を包み、店長から挨拶の徹底を叩き込まれました。",
+          "literalEn": "初日 ['s / of] シフト with that... blue [with/and] white ['s / of] ストライプ ['s / of] 制服 uniform [at/to] [obj] 包み 店長 [from] 挨拶 ['s / of] 徹底 [obj] 叩き まれ した",
+          "naturalEn": "On my first shift, donning the blue-and-white striped uniform, the store manager drilled the fundamentals of proper greetings into me.",
+          "tokens": [
+            {
+              "surface": "初日"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "シフト"
+            },
+            {
+              "surface": "では",
+              "meaning": "with that...",
+              "baseForm": "では",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "青",
+              "reading": "あお",
+              "meaning": "blue",
+              "baseForm": "青",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "白",
+              "reading": "しろ",
+              "meaning": "white",
+              "baseForm": "白",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ストライプ"
+            },
+            {
+              "surface": "柄"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "制服"
+            },
+            {
+              "surface": "ユニフォーム",
+              "meaning": "uniform",
+              "baseForm": "ユニフォーム",
+              "level": "N1"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "身"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "包み"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "店長"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "挨拶"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "徹底"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "叩き"
+            },
+            {
+              "surface": "込"
+            },
+            {
+              "surface": "まれ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "自動ドアが開くたびに、「いらっしゃいませ！」と明るく元気な声でお客様を迎えることから業務が始まります。",
+          "literalEn": "自動 Western style door [subj] to open たび [at/to] いらっしゃい [with/and] room health voice [in/by] お客様 [obj] 迎える thing [from] 業務 [subj] origin [polite]",
+          "naturalEn": "Whenever the automatic sliding doors parted, our duties commenced by welcoming patrons with a bright, cheerful greeting of 'Irasshaimase!'",
+          "tokens": [
+            {
+              "surface": "自動"
+            },
+            {
+              "surface": "ドア",
+              "meaning": "Western style door",
+              "baseForm": "ドア",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "開く",
+              "reading": "あく",
+              "meaning": "to open; to become open",
+              "baseForm": "開く",
+              "level": "N5"
+            },
+            {
+              "surface": "たび"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "いらっしゃい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "！"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "明",
+              "reading": "あ",
+              "meaning": "room; time to spare; emptiness",
+              "baseForm": "明き",
+              "level": "N2"
+            },
+            {
+              "surface": "る"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "元気",
+              "reading": "げんき",
+              "meaning": "health; vitality",
+              "baseForm": "元気",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "声",
+              "reading": "こえ",
+              "meaning": "voice",
+              "baseForm": "声",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "お客様"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "迎える"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "業務"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "始まり",
+              "reading": "はじまり",
+              "meaning": "origin; beginning",
+              "baseForm": "始まり",
+              "level": "N3"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "コンビニの仕事は単に商品を販売するだけでなく、実に多岐にわたる複雑な作業をこなさなければなりません。",
+          "literalEn": "コンビニ ['s / of] job [topic] 単に 商品 [obj] 販売 to do だけ [in/by] なく 実に 多岐 にわたる 複雑 作業 [obj] なり せん",
+          "naturalEn": "Working in a Japanese convenience store does not merely involve scanning products, but executing an extraordinarily diverse array of complex tasks.",
+          "tokens": [
+            {
+              "surface": "コンビニ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "仕事",
+              "reading": "しごと",
+              "meaning": "job",
+              "baseForm": "仕事",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "単に"
+            },
+            {
+              "surface": "商品"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "販売"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "だけ"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "なく"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "実に"
+            },
+            {
+              "surface": "多岐"
+            },
+            {
+              "surface": "にわたる"
+            },
+            {
+              "surface": "複雑"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "作業"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "こ"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ば"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "初めの研修では、先輩アルバイトの佐藤さんについてレジ端末の基本操作を一から習いました。商品のバーコードをスキャナーで読み取る際、「ポイントカードはお持ちでしょうか」と尋ねることが決められています。さらにお弁当や惣菜を購入されたお客様に対しては、「お弁当は温めますか」と必ず一声かけるルールになっていました。温めを希望された場合は業務用電子レンジに入れ、秒数ボタンを素早く押して手際よく加熱します。",
+      "en": "In the initial training, I shadowed senior part-timer Sato to learn the basic operations of the POS register terminal from scratch. When scanning product barcodes with the hand scanner, it is standard protocol to ask: 'Do you possess a store point card?' Furthermore, for customers purchasing bento lunchboxes or prepared delicacies, it was an established rule to always ask: 'Would you like your bento warmed up?' When heating was requested, we placed it into the commercial microwave, swiftly pressing the duration buttons to heat it deftly.",
+      "tokens": [
+        {
+          "surface": "初め"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "研修"
+        },
+        {
+          "surface": "では",
+          "meaning": "with that...",
+          "baseForm": "では",
+          "level": "N5"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "先輩"
+        },
+        {
+          "surface": "アルバイト",
+          "meaning": "part-time job",
+          "baseForm": "アルバイト",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "佐藤",
+          "reading": "さとう",
+          "meaning": "Sato (surname)",
+          "baseForm": "佐藤",
+          "level": "N5"
+        },
+        {
+          "surface": "さん",
+          "meaning": "Mr or Mrs",
+          "baseForm": "さん",
+          "level": "N1"
+        },
+        {
+          "surface": "について"
+        },
+        {
+          "surface": "レジ"
+        },
+        {
+          "surface": "端末"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "基本"
+        },
+        {
+          "surface": "操作"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "一",
+          "reading": "いち",
+          "meaning": "one",
+          "baseForm": "一",
+          "level": "N5"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "習",
+          "reading": "なら",
+          "meaning": "to learn",
+          "baseForm": "習う",
+          "level": "N5"
+        },
+        {
+          "surface": "いま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "商品"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "バーコード"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "スキャナー"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "読み取る"
+        },
+        {
+          "surface": "際"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "ポイント"
+        },
+        {
+          "surface": "カード",
+          "meaning": "card; curd",
+          "baseForm": "カード",
+          "level": "N3"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "お"
+        },
+        {
+          "surface": "持ち",
+          "reading": "もち",
+          "meaning": "hold; charge; keep possession",
+          "baseForm": "持ち",
+          "level": "N1"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "しょう"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "尋ねる"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "決め",
+          "reading": "ケツめ",
+          "meaning": "decide, agree upon, appoint",
+          "baseForm": "決",
+          "level": "N3"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "さらに"
+        },
+        {
+          "surface": "お"
+        },
+        {
+          "surface": "弁当",
+          "reading": "べんとう",
+          "meaning": "box lunch",
+          "baseForm": "弁当",
+          "level": "N3"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "惣菜"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "購入"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "お客様"
+        },
+        {
+          "surface": "に対して"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "お"
+        },
+        {
+          "surface": "弁当",
+          "reading": "べんとう",
+          "meaning": "box lunch",
+          "baseForm": "弁当",
+          "level": "N3"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "温"
+        },
+        {
+          "surface": "め"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "必ず"
+        },
+        {
+          "surface": "一声"
+        },
+        {
+          "surface": "かける"
+        },
+        {
+          "surface": "ルール"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "いま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "温"
+        },
+        {
+          "surface": "め"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "希望"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "場合"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "業務"
+        },
+        {
+          "surface": "用"
+        },
+        {
+          "surface": "電子"
+        },
+        {
+          "surface": "レンジ"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "入れ",
+          "reading": "はいれ",
+          "meaning": "to enter; to contain",
+          "baseForm": "入る",
+          "level": "N5"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "秒"
+        },
+        {
+          "surface": "数",
+          "reading": "かず",
+          "meaning": "number; figure",
+          "baseForm": "数",
+          "level": "N3"
+        },
+        {
+          "surface": "ボタン"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "素"
+        },
+        {
+          "surface": "早く",
+          "reading": "はやく",
+          "meaning": "early",
+          "baseForm": "早い",
+          "level": "N5"
+        },
+        {
+          "surface": "押して"
+        },
+        {
+          "surface": "手際"
+        },
+        {
+          "surface": "よく",
+          "meaning": "often; well",
+          "baseForm": "よく",
+          "level": "N5"
+        },
+        {
+          "surface": "加熱"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "初めの研修では、先輩アルバイトの佐藤さんについてレジ端末の基本操作を一から習いました。",
+          "literalEn": "初め ['s / of] 研修 with that... 先輩 part-time job ['s / of] Sato [Mr/Ms] について レジ 端末 ['s / of] 基本 操作 [obj] one [from] to learn いま した",
+          "naturalEn": "In the initial training, I shadowed senior part-timer Sato to learn the basic operations of the POS register terminal from scratch.",
+          "tokens": [
+            {
+              "surface": "初め"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "研修"
+            },
+            {
+              "surface": "では",
+              "meaning": "with that...",
+              "baseForm": "では",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "先輩"
+            },
+            {
+              "surface": "アルバイト",
+              "meaning": "part-time job",
+              "baseForm": "アルバイト",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "佐藤",
+              "reading": "さとう",
+              "meaning": "Sato (surname)",
+              "baseForm": "佐藤",
+              "level": "N5"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "について"
+            },
+            {
+              "surface": "レジ"
+            },
+            {
+              "surface": "端末"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "基本"
+            },
+            {
+              "surface": "操作"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "一",
+              "reading": "いち",
+              "meaning": "one",
+              "baseForm": "一",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "習",
+              "reading": "なら",
+              "meaning": "to learn",
+              "baseForm": "習う",
+              "level": "N5"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "商品のバーコードをスキャナーで読み取る際、「ポイントカードはお持ちでしょうか」と尋ねることが決められています。",
+          "literalEn": "商品 ['s / of] バーコード [obj] スキャナー [in/by] 読み取る ポイント card [topic] hold [in/by] しょう [?] [with/and] 尋ねる thing [subj] decide てい [polite]",
+          "naturalEn": "When scanning product barcodes with the hand scanner, it is standard protocol to ask: 'Do you possess a store point card?'",
+          "tokens": [
+            {
+              "surface": "商品"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "バーコード"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "スキャナー"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "読み取る"
+            },
+            {
+              "surface": "際"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "ポイント"
+            },
+            {
+              "surface": "カード",
+              "meaning": "card; curd",
+              "baseForm": "カード",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "持ち",
+              "reading": "もち",
+              "meaning": "hold; charge; keep possession",
+              "baseForm": "持ち",
+              "level": "N1"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "しょう"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "尋ねる"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "決め",
+              "reading": "ケツめ",
+              "meaning": "decide, agree upon, appoint",
+              "baseForm": "決",
+              "level": "N3"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "さらにお弁当や惣菜を購入されたお客様に対しては、「お弁当は温めますか」と必ず一声かけるルールになっていました。",
+          "literalEn": "さらに box lunch 惣菜 [obj] 購入 [past] お客様 に対して [topic] box lunch [topic] [polite] [?] [with/and] 必ず 一声 かける ルール [at/to] って いま した",
+          "naturalEn": "Furthermore, for customers purchasing bento lunchboxes or prepared delicacies, it was an established rule to always ask: 'Would you like your bento warmed up?'",
+          "tokens": [
+            {
+              "surface": "さらに"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "弁当",
+              "reading": "べんとう",
+              "meaning": "box lunch",
+              "baseForm": "弁当",
+              "level": "N3"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "惣菜"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "購入"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "お客様"
+            },
+            {
+              "surface": "に対して"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "弁当",
+              "reading": "べんとう",
+              "meaning": "box lunch",
+              "baseForm": "弁当",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "温"
+            },
+            {
+              "surface": "め"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "必ず"
+            },
+            {
+              "surface": "一声"
+            },
+            {
+              "surface": "かける"
+            },
+            {
+              "surface": "ルール"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "温めを希望された場合は業務用電子レンジに入れ、秒数ボタンを素早く押して手際よく加熱します。",
+          "literalEn": "[obj] 希望 [past] 場合 [topic] 業務 電子 レンジ [at/to] to enter number ボタン [obj] early 押して 手際 often 加熱 [polite]",
+          "naturalEn": "When heating was requested, we placed it into the commercial microwave, swiftly pressing the duration buttons to heat it deftly.",
+          "tokens": [
+            {
+              "surface": "温"
+            },
+            {
+              "surface": "め"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "希望"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "場合"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "業務"
+            },
+            {
+              "surface": "用"
+            },
+            {
+              "surface": "電子"
+            },
+            {
+              "surface": "レンジ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入れ",
+              "reading": "はいれ",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "秒"
+            },
+            {
+              "surface": "数",
+              "reading": "かず",
+              "meaning": "number; figure",
+              "baseForm": "数",
+              "level": "N3"
+            },
+            {
+              "surface": "ボタン"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "素"
+            },
+            {
+              "surface": "早く",
+              "reading": "はやく",
+              "meaning": "early",
+              "baseForm": "早い",
+              "level": "N5"
+            },
+            {
+              "surface": "押して"
+            },
+            {
+              "surface": "手際"
+            },
+            {
+              "surface": "よく",
+              "meaning": "often; well",
+              "baseForm": "よく",
+              "level": "N5"
+            },
+            {
+              "surface": "加熱"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "「お箸やスプーンはお付けしますか」や「袋はご利用になりますか」といった確認も欠かせません。レジ袋が有料化されたため、サイズや枚数をお客様の意向に合わせて選択する気配りが求められます。夕方の帰宅ラッシュの時間帯になると、レジの前に長い行列ができ、息をつく暇もないほどの忙しさになりました。焦って小銭のお釣りを間違えそうになりましたが、佐藤先輩が「落ち着いて一枚ずつ数えれば大丈夫だよ」と優しくフォローしてくれました。",
+      "en": "Confirmations like 'Would you like chopsticks or a spoon included?' and 'Will you be needing a shopping bag?' were likewise essential. Because plastic shopping bags became fee-based, attentiveness was required to select the size and count matching the customer's wishes. When the evening commute rush hour arrived, long lines formed before the cash registers, becoming busy to the point of scarcely having time to catch one's breath. Frazzled, I came close to miscounting coin change, but senior Sato gently backed me up: 'Stay calm; as long as you count one coin at a time, you'll be fine.'",
+      "tokens": [
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "お"
+        },
+        {
+          "surface": "箸"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "スプーン"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "お"
+        },
+        {
+          "surface": "付け"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "袋"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "ご利用"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "なり"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "といった"
+        },
+        {
+          "surface": "確認"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "欠"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "せ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "せん"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "レジ"
+        },
+        {
+          "surface": "袋"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "有料"
+        },
+        {
+          "surface": "化"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "サイズ"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "枚数"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "お客様"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "意向"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "合わせ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "選択"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "気配り"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "求め"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "夕方",
+          "reading": "ゆうがた",
+          "meaning": "evening",
+          "baseForm": "夕方",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "帰宅"
+        },
+        {
+          "surface": "ラッシュ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "時間",
+          "reading": "じかん",
+          "meaning": "time",
+          "baseForm": "時間",
+          "level": "N5"
+        },
+        {
+          "surface": "帯"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "なる",
+          "meaning": "to become",
+          "baseForm": "なる",
+          "level": "N5"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "レジ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "前",
+          "reading": "まえ",
+          "meaning": "before",
+          "baseForm": "前",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "長い",
+          "reading": "ながい",
+          "meaning": "long",
+          "baseForm": "長い",
+          "level": "N5"
+        },
+        {
+          "surface": "行列"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "でき"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "息"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "つく"
+        },
+        {
+          "surface": "暇"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "ほど",
+          "meaning": "extent",
+          "baseForm": "ほど",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "忙"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "なり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "焦"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "小銭"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "お釣り"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "間",
+          "reading": "あいだ",
+          "meaning": "a space",
+          "baseForm": "間",
+          "level": "N4"
+        },
+        {
+          "surface": "違",
+          "reading": "ちが",
+          "meaning": "to differ",
+          "baseForm": "違う",
+          "level": "N5"
+        },
+        {
+          "surface": "え"
+        },
+        {
+          "surface": "そう",
+          "meaning": "really",
+          "baseForm": "そう",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "なり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "佐藤",
+          "reading": "さとう",
+          "meaning": "Sato (surname)",
+          "baseForm": "佐藤",
+          "level": "N5"
+        },
+        {
+          "surface": "先輩"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "落ち",
+          "reading": "おとち",
+          "meaning": "to drop",
+          "baseForm": "落す",
+          "level": "N4"
+        },
+        {
+          "surface": "着い",
+          "reading": "ちゃくい",
+          "meaning": "counter for suits of clothing; arriving at ..",
+          "baseForm": "着",
+          "level": "N1"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "一枚"
+        },
+        {
+          "surface": "ずつ"
+        },
+        {
+          "surface": "数",
+          "reading": "かず",
+          "meaning": "number; figure",
+          "baseForm": "数",
+          "level": "N3"
+        },
+        {
+          "surface": "え"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ば"
+        },
+        {
+          "surface": "大丈夫"
+        },
+        {
+          "surface": "だ"
+        },
+        {
+          "surface": "よ"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "優",
+          "reading": "やさ",
+          "meaning": "gentle; affectionate",
+          "baseForm": "優",
+          "level": "N1"
+        },
+        {
+          "surface": "しく"
+        },
+        {
+          "surface": "フォロー"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "てく"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "「お箸やスプーンはお付けしますか」や「袋はご利用になりますか」といった確認も欠かせません。",
+          "literalEn": "スプーン [topic] 付け [polite] [?] [topic] ご利用 [at/to] なり [polite] [?] といった 確認 [also] [?] せん",
+          "naturalEn": "Confirmations like 'Would you like chopsticks or a spoon included?' and 'Will you be needing a shopping bag?' were likewise essential.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "箸"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "スプーン"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "付け"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "袋"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "ご利用"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "といった"
+            },
+            {
+              "surface": "確認"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "欠"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "レジ袋が有料化されたため、サイズや枚数をお客様の意向に合わせて選択する気配りが求められます。",
+          "literalEn": "レジ [subj] 有料 [past] ため サイズ 枚数 [obj] お客様 ['s / of] 意向 [at/to] 合わせ [and] 選択 to do 気配り [subj] 求め [polite]",
+          "naturalEn": "Because plastic shopping bags became fee-based, attentiveness was required to select the size and count matching the customer's wishes.",
+          "tokens": [
+            {
+              "surface": "レジ"
+            },
+            {
+              "surface": "袋"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "有料"
+            },
+            {
+              "surface": "化"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "サイズ"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "枚数"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "お客様"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "意向"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "合わせ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "選択"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "気配り"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "求め"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "夕方の帰宅ラッシュの時間帯になると、レジの前に長い行列ができ、息をつく暇もないほどの忙しさになりました。",
+          "literalEn": "evening ['s / of] 帰宅 ラッシュ ['s / of] time [at/to] to become [with/and] レジ ['s / of] before [at/to] long 行列 [subj] でき [obj] つく [also] [not] [as much as] ['s / of] [at/to] なり した",
+          "naturalEn": "When the evening commute rush hour arrived, long lines formed before the cash registers, becoming busy to the point of scarcely having time to catch one's breath.",
+          "tokens": [
+            {
+              "surface": "夕方",
+              "reading": "ゆうがた",
+              "meaning": "evening",
+              "baseForm": "夕方",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "帰宅"
+            },
+            {
+              "surface": "ラッシュ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "時間",
+              "reading": "じかん",
+              "meaning": "time",
+              "baseForm": "時間",
+              "level": "N5"
+            },
+            {
+              "surface": "帯"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なる",
+              "meaning": "to become",
+              "baseForm": "なる",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "レジ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "前",
+              "reading": "まえ",
+              "meaning": "before",
+              "baseForm": "前",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "長い",
+              "reading": "ながい",
+              "meaning": "long",
+              "baseForm": "長い",
+              "level": "N5"
+            },
+            {
+              "surface": "行列"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "息"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "つく"
+            },
+            {
+              "surface": "暇"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "ほど",
+              "meaning": "extent",
+              "baseForm": "ほど",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "忙"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "焦って小銭のお釣りを間違えそうになりましたが、佐藤先輩が「落ち着いて一枚ずつ数えれば大丈夫だよ」と優しくフォローしてくれました。",
+          "literalEn": "って 小銭 ['s / of] お釣り [obj] a space to differ really [at/to] なり した [subj] Sato 先輩 [subj] to drop counter for suits of clothing [and] 一枚 ずつ number 大丈夫 [is] [you know] [with/and] gentle しく フォロー てく した",
+          "naturalEn": "Frazzled, I came close to miscounting coin change, but senior Sato gently backed me up: 'Stay calm; as long as you count one coin at a time, you'll be fine.'",
+          "tokens": [
+            {
+              "surface": "焦"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "小銭"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "お釣り"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "間",
+              "reading": "あいだ",
+              "meaning": "a space",
+              "baseForm": "間",
+              "level": "N4"
+            },
+            {
+              "surface": "違",
+              "reading": "ちが",
+              "meaning": "to differ",
+              "baseForm": "違う",
+              "level": "N5"
+            },
+            {
+              "surface": "え"
+            },
+            {
+              "surface": "そう",
+              "meaning": "really",
+              "baseForm": "そう",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "佐藤",
+              "reading": "さとう",
+              "meaning": "Sato (surname)",
+              "baseForm": "佐藤",
+              "level": "N5"
+            },
+            {
+              "surface": "先輩"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "落ち",
+              "reading": "おとち",
+              "meaning": "to drop",
+              "baseForm": "落す",
+              "level": "N4"
+            },
+            {
+              "surface": "着い",
+              "reading": "ちゃくい",
+              "meaning": "counter for suits of clothing; arriving at ..",
+              "baseForm": "着",
+              "level": "N1"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "一枚"
+            },
+            {
+              "surface": "ずつ"
+            },
+            {
+              "surface": "数",
+              "reading": "かず",
+              "meaning": "number; figure",
+              "baseForm": "数",
+              "level": "N3"
+            },
+            {
+              "surface": "え"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ば"
+            },
+            {
+              "surface": "大丈夫"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "よ"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "優",
+              "reading": "やさ",
+              "meaning": "gentle; affectionate",
+              "baseForm": "優",
+              "level": "N1"
+            },
+            {
+              "surface": "しく"
+            },
+            {
+              "surface": "フォロー"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "接客の合間を縫って、トラックから搬入されたドリンクやおにぎりを棚に並べる「品出し」の作業も行いました。賞味期限が近い商品を一番手前に陳列する「先入れ先出し」のルールを守りながら、手早く補充を済ませました。退勤時間となり制服を脱いだ瞬間、足の裏には心地よい疲労感が広がり、達成感で満たされていました。常連のお客様から「ありがとう、また来るね」と笑顔で声をかけてもらえたことが、何よりも嬉しい励みとなりました。",
+      "en": "Stealing moments between customer service, we also performed 'restocking,' arranging bottled beverages and rice balls unloaded from trucks onto shelves. Adhering to the 'first-in, first-out' rule of placing products closest to expiration at the very front, we swiftly completed replenishment. When clock-out time arrived and I took off the uniform, pleasant fatigue spread across the soles of my feet, filled with immense accomplishment. Having a regular patron smile and say 'Thank you, I'll see you again!' became the greatest and most delightful encouragement of all.",
+      "tokens": [
+        {
+          "surface": "接客"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "合間"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "縫"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "トラック"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "搬入"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "ドリンク"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "おにぎり"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "棚"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "並べる"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "品"
+        },
+        {
+          "surface": "出し",
+          "reading": "だし",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "作業"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "行",
+          "reading": "ぎょう",
+          "meaning": "line; row; verse",
+          "baseForm": "行",
+          "level": "N1"
+        },
+        {
+          "surface": "いま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "賞味"
+        },
+        {
+          "surface": "期限"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "近い"
+        },
+        {
+          "surface": "商品"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "一番",
+          "reading": "いちばん",
+          "meaning": "number one; most; best",
+          "baseForm": "一番",
+          "level": "N5"
+        },
+        {
+          "surface": "手前"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "陳列"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "先入れ先出し"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ルール"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "守り"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "手",
+          "reading": "て",
+          "meaning": "hand",
+          "baseForm": "手",
+          "level": "N5"
+        },
+        {
+          "surface": "早く",
+          "reading": "はやく",
+          "meaning": "early",
+          "baseForm": "早い",
+          "level": "N5"
+        },
+        {
+          "surface": "補充"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "済"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "せ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "退勤"
+        },
+        {
+          "surface": "時間",
+          "reading": "じかん",
+          "meaning": "time",
+          "baseForm": "時間",
+          "level": "N5"
+        },
+        {
+          "surface": "となり"
+        },
+        {
+          "surface": "制服"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "脱"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "だ"
+        },
+        {
+          "surface": "瞬間",
+          "reading": "しゅんかん",
+          "meaning": "moment; second; instant",
+          "baseForm": "瞬間",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "足",
+          "reading": "あし",
+          "meaning": "foot; leg",
+          "baseForm": "足",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "裏"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "心地よい"
+        },
+        {
+          "surface": "疲労"
+        },
+        {
+          "surface": "感"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "広がり",
+          "reading": "ひろがり",
+          "meaning": "spacious; wide",
+          "baseForm": "広い",
+          "level": "N5"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "達成"
+        },
+        {
+          "surface": "感"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "満"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "常連"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "お客様"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "ありがとう",
+          "meaning": "Thank you",
+          "baseForm": "ありがとう",
+          "level": "N5"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "また",
+          "meaning": "again; and",
+          "baseForm": "また",
+          "level": "N5"
+        },
+        {
+          "surface": "来る",
+          "reading": "くる",
+          "meaning": "to come",
+          "baseForm": "来る",
+          "level": "N5"
+        },
+        {
+          "surface": "ね",
+          "meaning": "value; price; cost",
+          "baseForm": "ね",
+          "level": "N3"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "笑顔",
+          "reading": "えがお",
+          "meaning": "smiling face",
+          "baseForm": "笑顔",
+          "level": "N3"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "声",
+          "reading": "こえ",
+          "meaning": "voice",
+          "baseForm": "声",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "かけ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "え"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "何より"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "嬉しい"
+        },
+        {
+          "surface": "励み"
+        },
+        {
+          "surface": "となり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "接客の合間を縫って、トラックから搬入されたドリンクやおにぎりを棚に並べる「品出し」の作業も行いました。",
+          "literalEn": "接客 ['s / of] 合間 [obj] って トラック [from] 搬入 [past] ドリンク おにぎり [obj] [at/to] 並べる to put out ['s / of] 作業 [also] line いま した",
+          "naturalEn": "Stealing moments between customer service, we also performed 'restocking,' arranging bottled beverages and rice balls unloaded from trucks onto shelves.",
+          "tokens": [
+            {
+              "surface": "接客"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "合間"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "縫"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "トラック"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "搬入"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "ドリンク"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "おにぎり"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "棚"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "並べる"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "品"
+            },
+            {
+              "surface": "出し",
+              "reading": "だし",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "作業"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "行",
+              "reading": "ぎょう",
+              "meaning": "line; row; verse",
+              "baseForm": "行",
+              "level": "N1"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "賞味期限が近い商品を一番手前に陳列する「先入れ先出し」のルールを守りながら、手早く補充を済ませました。",
+          "literalEn": "賞味 期限 [subj] 近い 商品 [obj] number one 手前 [at/to] 陳列 to do 先入れ先出し ['s / of] ルール [obj] 守り ながら hand early 補充 [obj] した",
+          "naturalEn": "Adhering to the 'first-in, first-out' rule of placing products closest to expiration at the very front, we swiftly completed replenishment.",
+          "tokens": [
+            {
+              "surface": "賞味"
+            },
+            {
+              "surface": "期限"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "近い"
+            },
+            {
+              "surface": "商品"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "一番",
+              "reading": "いちばん",
+              "meaning": "number one; most; best",
+              "baseForm": "一番",
+              "level": "N5"
+            },
+            {
+              "surface": "手前"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "陳列"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "先入れ先出し"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ルール"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "守り"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "手",
+              "reading": "て",
+              "meaning": "hand",
+              "baseForm": "手",
+              "level": "N5"
+            },
+            {
+              "surface": "早く",
+              "reading": "はやく",
+              "meaning": "early",
+              "baseForm": "早い",
+              "level": "N5"
+            },
+            {
+              "surface": "補充"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "済"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "退勤時間となり制服を脱いだ瞬間、足の裏には心地よい疲労感が広がり、達成感で満たされていました。",
+          "literalEn": "退勤 time となり 制服 [obj] [is] moment foot ['s / of] [at/to] [topic] 心地よい 疲労 [subj] spacious 達成 [in/by] [past] てい した",
+          "naturalEn": "When clock-out time arrived and I took off the uniform, pleasant fatigue spread across the soles of my feet, filled with immense accomplishment.",
+          "tokens": [
+            {
+              "surface": "退勤"
+            },
+            {
+              "surface": "時間",
+              "reading": "じかん",
+              "meaning": "time",
+              "baseForm": "時間",
+              "level": "N5"
+            },
+            {
+              "surface": "となり"
+            },
+            {
+              "surface": "制服"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "脱"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "瞬間",
+              "reading": "しゅんかん",
+              "meaning": "moment; second; instant",
+              "baseForm": "瞬間",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "足",
+              "reading": "あし",
+              "meaning": "foot; leg",
+              "baseForm": "足",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "裏"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "心地よい"
+            },
+            {
+              "surface": "疲労"
+            },
+            {
+              "surface": "感"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "広がり",
+              "reading": "ひろがり",
+              "meaning": "spacious; wide",
+              "baseForm": "広い",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "達成"
+            },
+            {
+              "surface": "感"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "満"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "常連のお客様から「ありがとう、また来るね」と笑顔で声をかけてもらえたことが、何よりも嬉しい励みとなりました。",
+          "literalEn": "常連 ['s / of] お客様 [from] Thank you again to come [right?] [with/and] smiling face [in/by] voice [obj] かけ [and] [also] [past] thing [subj] 何より [also] 嬉しい 励み となり した",
+          "naturalEn": "Having a regular patron smile and say 'Thank you, I'll see you again!' became the greatest and most delightful encouragement of all.",
+          "tokens": [
+            {
+              "surface": "常連"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "お客様"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "ありがとう",
+              "meaning": "Thank you",
+              "baseForm": "ありがとう",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "また",
+              "meaning": "again; and",
+              "baseForm": "また",
+              "level": "N5"
+            },
+            {
+              "surface": "来る",
+              "reading": "くる",
+              "meaning": "to come",
+              "baseForm": "来る",
+              "level": "N5"
+            },
+            {
+              "surface": "ね",
+              "meaning": "value; price; cost",
+              "baseForm": "ね",
+              "level": "N3"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "笑顔",
+              "reading": "えがお",
+              "meaning": "smiling face",
+              "baseForm": "笑顔",
+              "level": "N3"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "声",
+              "reading": "こえ",
+              "meaning": "voice",
+              "baseForm": "声",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "かけ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "え"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "何より"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "嬉しい"
+            },
+            {
+              "surface": "励み"
+            },
+            {
+              "surface": "となり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "日々の細やかな気配りを通じて、日本の接客文化とおもてなしの精神を体で学べる素晴らしい経験となっています。これからも笑顔を絶やさず、地域のお客様に愛される店員になれるよう努力を続けていきたいです。",
+      "en": "Through daily thoughtful attentiveness, it has become a wonderful experience to absorb Japanese customer service culture and hospitality firsthand. I wish to continue striving without losing my smile so as to become a clerk beloved by the neighborhood patrons.",
+      "tokens": [
+        {
+          "surface": "日々"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "細やか"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "気配り"
+        },
+        {
+          "surface": "を通じて"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "日本",
+          "reading": "にっぽん",
+          "meaning": "Japan",
+          "baseForm": "日本",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "接客"
+        },
+        {
+          "surface": "文化",
+          "reading": "ぶんか",
+          "meaning": "culture",
+          "baseForm": "文化",
+          "level": "N4"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "おもてなし"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "精神"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "体",
+          "reading": "からだ",
+          "meaning": "body",
+          "baseForm": "体",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "学べる"
+        },
+        {
+          "surface": "素晴らしい",
+          "reading": "すばらしい",
+          "meaning": "wonderful; splendid; magnificent",
+          "baseForm": "素晴らしい",
+          "level": "N4"
+        },
+        {
+          "surface": "経験"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "これから"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "笑顔",
+          "reading": "えがお",
+          "meaning": "smiling face",
+          "baseForm": "笑顔",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "絶"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "ず"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "地域"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "お客様"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "愛",
+          "reading": "あい",
+          "meaning": "love",
+          "baseForm": "愛",
+          "level": "N3"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れる"
+        },
+        {
+          "surface": "店員"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "なれる"
+        },
+        {
+          "surface": "よう"
+        },
+        {
+          "surface": "努力"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "続"
+        },
+        {
+          "surface": "け"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "きた"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "日々の細やかな気配りを通じて、日本の接客文化とおもてなしの精神を体で学べる素晴らしい経験となっています。",
+          "literalEn": "日々 ['s / of] 細やか 気配り を通じて Japan ['s / of] 接客 culture [with/and] おもてなし ['s / of] 精神 [obj] body [in/by] 学べる wonderful 経験 [with/and] って [polite]",
+          "naturalEn": "Through daily thoughtful attentiveness, it has become a wonderful experience to absorb Japanese customer service culture and hospitality firsthand.",
+          "tokens": [
+            {
+              "surface": "日々"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "細やか"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "気配り"
+            },
+            {
+              "surface": "を通じて"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "日本",
+              "reading": "にっぽん",
+              "meaning": "Japan",
+              "baseForm": "日本",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "接客"
+            },
+            {
+              "surface": "文化",
+              "reading": "ぶんか",
+              "meaning": "culture",
+              "baseForm": "文化",
+              "level": "N4"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "おもてなし"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "精神"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "体",
+              "reading": "からだ",
+              "meaning": "body",
+              "baseForm": "体",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "学べる"
+            },
+            {
+              "surface": "素晴らしい",
+              "reading": "すばらしい",
+              "meaning": "wonderful; splendid; magnificent",
+              "baseForm": "素晴らしい",
+              "level": "N4"
+            },
+            {
+              "surface": "経験"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "これからも笑顔を絶やさず、地域のお客様に愛される店員になれるよう努力を続けていきたいです。",
+          "literalEn": "これから [also] smiling face [obj] 地域 ['s / of] お客様 [at/to] love れる 店員 [at/to] なれる よう 努力 [obj] てい きた [is]",
+          "naturalEn": "I wish to continue striving without losing my smile so as to become a clerk beloved by the neighborhood patrons.",
+          "tokens": [
+            {
+              "surface": "これから"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "笑顔",
+              "reading": "えがお",
+              "meaning": "smiling face",
+              "baseForm": "笑顔",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "絶"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "ず"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "地域"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "お客様"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "愛",
+              "reading": "あい",
+              "meaning": "love",
+              "baseForm": "愛",
+              "level": "N3"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れる"
+            },
+            {
+              "surface": "店員"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なれる"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "努力"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "続"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "きた"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "お弁当を購入したお客様に対して、レジで必ず確認することになっている質問は何ですか。",
+      "questionEn": "What question is protocol to always confirm at the register for customers buying a bento lunchbox?",
+      "options": [
+        "「お弁当は温めますか」",
+        "「お弁当の具材は何が入っていますか」",
+        "「今すぐここで召し上がりますか」",
+        "「賞味期限を気にされますか」"
+      ],
+      "optionsEn": [
+        "'Would you like your bento warmed up?'",
+        "'What ingredients are inside this bento?'",
+        "'Will you be eating this right here right now?'",
+        "'Do you care about the expiration date?'"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本のコンビニでは、お弁当やお惣菜を購入した客に対して「温めますか」と尋ねるのが標準的な接客ルールです。"
+    },
+    {
+      "question": "商品を棚に並べる品出し作業において守らなければならない「先入れ先出し」とはどのようなルールですか。",
+      "questionEn": "What does the 'first-in, first-out' rule dictate when restocking goods onto convenience store shelves?",
+      "options": [
+        "賞味期限が近い古い商品を棚の手前に並べること",
+        "新しく届いた商品を一番手前に置くこと",
+        "重い商品を一番上の棚に置くこと",
+        "値段が高い商品を奥の見えない場所に隠すこと"
+      ],
+      "optionsEn": [
+        "Arranging older items with closer expiration dates at the very front of the shelf",
+        "Placing newly arrived goods at the very front",
+        "Placing the heaviest goods on the topmost shelf",
+        "Hiding high-priced goods in the hidden back of the shelf"
+      ],
+      "answerIndex": 0,
+      "explanation": "食品廃棄を防ぐため、先に入荷した（賞味期限の近い）商品を棚の手前に並べて先にお客様に取ってもらう仕組みです。"
+    },
+    {
+      "question": "初めてのシフトを終えた語り手にとって、最も大きな励みとなった出来事は何ですか。",
+      "questionEn": "What event served as the greatest encouragement for the narrator after concluding their first shift?",
+      "options": [
+        "常連のお客様から「ありがとう、また来るね」と笑顔で声をかけてもらったこと",
+        "店長から臨時ボーナスをもらったこと",
+        "売れ残ったケーキを全部持ち帰れたこと",
+        "レジのお金が一円も狂わなかったこと"
+      ],
+      "optionsEn": [
+        "A regular customer warmly saying with a smile: 'Thank you, I will come again!'",
+        "Receiving an impromptu cash bonus from the store manager",
+        "Taking home all the unsold cakes for free",
+        "The register tally matching down to the exact single yen"
+      ],
+      "answerIndex": 0,
+      "explanation": "お客様からの感謝の言葉と笑顔に直接触れられたことが、アルバイトとしての最高のやりがいと励みになりました。"
+    }
+  ]
+}

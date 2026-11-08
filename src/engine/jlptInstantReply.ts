@@ -14,6 +14,7 @@ export {
 
 export type JlptNumericLevel = 5 | 4 | 3 | 2 | 1;
 export type JlptLabelLevel = "N5" | "N4" | "N3" | "N2" | "N1";
+export type InstantReplyCategory = "quick-response" | "situational-utterance";
 export type TimerPreset = 8 | 12 | 0; // 8s Exam Blitz, 12s Relaxed, 0 = Untimed
 export type InstantReplySessionSize = 10 | 15 | 20;
 export type InstantReplyRoundStatus =
@@ -29,6 +30,7 @@ export interface InstantReplySettings {
   timerSeconds: TimerPreset;
   autoSequenceAudio: boolean;
   showSituationHint: boolean;
+  category?: "all" | InstantReplyCategory;
   questionIds?: string[];
 }
 
@@ -48,6 +50,7 @@ export interface InstantReplyOption {
 export interface InstantReplyQuestion {
   id: string;
   itemId: string;
+  category: InstantReplyCategory;
   jlpt: 5 | 4 | 3 | 2 | 1;
   levelLabel: JlptLabelLevel;
   situationContext: string;
@@ -179,6 +182,7 @@ export function buildInstantReplyQuestion(
   return {
     id: item.id,
     itemId: item.id,
+    category: item.category ?? "quick-response",
     jlpt: item.jlpt,
     levelLabel: formatJlptLevel(item.jlpt),
     situationContext: item.situationContext,
@@ -213,9 +217,14 @@ export function createInstantReplySession(
       ? new Set(settings.questionIds)
       : null;
 
-  let filtered = sourcePool.filter((item) =>
-    targetIdSet ? targetIdSet.has(item.id) : allowedLevels.has(item.jlpt),
-  );
+  let filtered = sourcePool.filter((item) => {
+    if (targetIdSet) return targetIdSet.has(item.id);
+    if (!allowedLevels.has(item.jlpt)) return false;
+    if (settings.category && settings.category !== "all") {
+      return (item.category ?? "quick-response") === settings.category;
+    }
+    return true;
+  });
   if (filtered.length === 0) {
     filtered = [...sourcePool];
   }

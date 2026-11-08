@@ -1,0 +1,4492 @@
+{
+  "id": "story-n3-one-piece",
+  "title": "ワンピース：大航海と仲間の絆",
+  "titleRomaji": "Wan Piisu: Dai Koukai to Nakama no Kizuna",
+  "titleEn": "One Piece: Great Voyage and Bonds of Comrades",
+  "level": "N3",
+  "category": "Anime & Pop Culture",
+  "tags": [
+    "Anime",
+    "N3",
+    "Adventure",
+    "Pirates",
+    "Friendship"
+  ],
+  "paragraphs": [
+    {
+      "ja": "かつて海賊王と呼ばれた男が残した伝説の財宝を巡って、大海賊時代が幕を開けました。麦わら帽子を被った少年ルフィは、世界一自由な海賊王になるという夢を胸に小舟で海へと飛び出しました。彼は子供の頃にゴムゴムの実という悪魔の実を食べたおかげで、身体を自在に伸縮させることができました。海で泳げなくなるという致命的な弱点を背負ったにもかかわらず、彼の冒険への情熱が冷めることはありませんでした。",
+      "en": "The Great Pirate Era was set into motion surrounding the legendary treasure left behind by the man once hailed as Pirate King. A straw-hat-wearing boy named Luffy set out onto the open ocean in a tiny boat, carrying the dream of becoming the freest Pirate King in the world. Having eaten a Devil Fruit known as the Gum-Gum Fruit in childhood, he gained the power to stretch his limbs at will. Despite shouldering the fatal weakness of being unable to swim in water, his fiery passion for grand adventure never cooled.",
+      "tokens": [
+        {
+          "surface": "かつて"
+        },
+        {
+          "surface": "海賊"
+        },
+        {
+          "surface": "王",
+          "reading": "おう",
+          "meaning": "king; ruler; sovereign",
+          "baseForm": "王",
+          "level": "N3"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "呼",
+          "reading": "よ",
+          "meaning": "to call out; to invite",
+          "baseForm": "呼ぶ",
+          "level": "N5"
+        },
+        {
+          "surface": "ば"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "男",
+          "reading": "おとこ",
+          "meaning": "man",
+          "baseForm": "男",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "残"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "伝説",
+          "reading": "でんせつ",
+          "meaning": "tradition; legend; folklore",
+          "baseForm": "伝説",
+          "level": "N1"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "財宝"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "巡"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "大",
+          "reading": "だい",
+          "meaning": "large; big; great",
+          "baseForm": "大",
+          "level": "N3"
+        },
+        {
+          "surface": "海賊"
+        },
+        {
+          "surface": "時代"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "幕"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "開",
+          "reading": "あ",
+          "meaning": "to open; to become open",
+          "baseForm": "開く",
+          "level": "N5"
+        },
+        {
+          "surface": "け"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "麦わら帽子"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "被"
+        },
+        {
+          "surface": "っ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "少年",
+          "reading": "しょうねん",
+          "meaning": "boys; juveniles",
+          "baseForm": "少年",
+          "level": "N3"
+        },
+        {
+          "surface": "ルフィ"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "世界一"
+        },
+        {
+          "surface": "自由"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "海賊"
+        },
+        {
+          "surface": "王",
+          "reading": "おう",
+          "meaning": "king; ruler; sovereign",
+          "baseForm": "王",
+          "level": "N3"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "なる",
+          "meaning": "to become",
+          "baseForm": "なる",
+          "level": "N5"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "夢",
+          "reading": "ゆめ",
+          "meaning": "dream",
+          "baseForm": "夢",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "胸"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "小舟"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "海",
+          "reading": "うみ",
+          "meaning": "sea",
+          "baseForm": "海",
+          "level": "N5"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "飛",
+          "reading": "と",
+          "meaning": "to fly; to hop",
+          "baseForm": "飛ぶ",
+          "level": "N5"
+        },
+        {
+          "surface": "び"
+        },
+        {
+          "surface": "出",
+          "reading": "だ",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "子供",
+          "reading": "こども",
+          "meaning": "child; children",
+          "baseForm": "子供",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "頃"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "ゴム"
+        },
+        {
+          "surface": "ゴム"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "実"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "悪魔"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "実"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "食",
+          "reading": "く",
+          "meaning": "(male) (vulgar) to eat",
+          "baseForm": "食う",
+          "level": "N3"
+        },
+        {
+          "surface": "べた"
+        },
+        {
+          "surface": "おかげ"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "身体"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "自在"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "伸縮"
+        },
+        {
+          "surface": "させる"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "でき"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "海",
+          "reading": "うみ",
+          "meaning": "sea",
+          "baseForm": "海",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "泳",
+          "reading": "およ",
+          "meaning": "to swim",
+          "baseForm": "泳ぐ",
+          "level": "N5"
+        },
+        {
+          "surface": "げ"
+        },
+        {
+          "surface": "なくなる"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "致命"
+        },
+        {
+          "surface": "的"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "弱点"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "背負"
+        },
+        {
+          "surface": "っ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "にもかかわらず"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "冒険",
+          "reading": "ぼうけん",
+          "meaning": "risk; venture; adventure",
+          "baseForm": "冒険",
+          "level": "N3"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "情熱"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "冷める"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "ありま"
+        },
+        {
+          "surface": "せん"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "かつて海賊王と呼ばれた男が残した伝説の財宝を巡って、大海賊時代が幕を開けました。",
+          "literalEn": "かつて 海賊 king [with/and] to call out [past] man [subj] した tradition ['s / of] 財宝 [obj] って large 海賊 時代 [subj] [obj] to open した",
+          "naturalEn": "The Great Pirate Era was set into motion surrounding the legendary treasure left behind by the man once hailed as Pirate King.",
+          "tokens": [
+            {
+              "surface": "かつて"
+            },
+            {
+              "surface": "海賊"
+            },
+            {
+              "surface": "王",
+              "reading": "おう",
+              "meaning": "king; ruler; sovereign",
+              "baseForm": "王",
+              "level": "N3"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "呼",
+              "reading": "よ",
+              "meaning": "to call out; to invite",
+              "baseForm": "呼ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "ば"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "男",
+              "reading": "おとこ",
+              "meaning": "man",
+              "baseForm": "男",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "残"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "伝説",
+              "reading": "でんせつ",
+              "meaning": "tradition; legend; folklore",
+              "baseForm": "伝説",
+              "level": "N1"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "財宝"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "巡"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "大",
+              "reading": "だい",
+              "meaning": "large; big; great",
+              "baseForm": "大",
+              "level": "N3"
+            },
+            {
+              "surface": "海賊"
+            },
+            {
+              "surface": "時代"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "幕"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "開",
+              "reading": "あ",
+              "meaning": "to open; to become open",
+              "baseForm": "開く",
+              "level": "N5"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "麦わら帽子を被った少年ルフィは、世界一自由な海賊王になるという夢を胸に小舟で海へと飛び出しました。",
+          "literalEn": "麦わら帽子 [obj] [past] boys ルフィ [topic] 世界一 自由 海賊 king [at/to] to become という dream [obj] [at/to] 小舟 [in/by] sea [toward] [with/and] to fly to put out しま した",
+          "naturalEn": "A straw-hat-wearing boy named Luffy set out onto the open ocean in a tiny boat, carrying the dream of becoming the freest Pirate King in the world.",
+          "tokens": [
+            {
+              "surface": "麦わら帽子"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "被"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "少年",
+              "reading": "しょうねん",
+              "meaning": "boys; juveniles",
+              "baseForm": "少年",
+              "level": "N3"
+            },
+            {
+              "surface": "ルフィ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "世界一"
+            },
+            {
+              "surface": "自由"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "海賊"
+            },
+            {
+              "surface": "王",
+              "reading": "おう",
+              "meaning": "king; ruler; sovereign",
+              "baseForm": "王",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なる",
+              "meaning": "to become",
+              "baseForm": "なる",
+              "level": "N5"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "夢",
+              "reading": "ゆめ",
+              "meaning": "dream",
+              "baseForm": "夢",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "胸"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "小舟"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "飛",
+              "reading": "と",
+              "meaning": "to fly; to hop",
+              "baseForm": "飛ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "び"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼は子供の頃にゴムゴムの実という悪魔の実を食べたおかげで、身体を自在に伸縮させることができました。",
+          "literalEn": "he [topic] child ['s / of] [at/to] ゴム ゴム ['s / of] という 悪魔 ['s / of] [obj]  to eat べた おかげ [in/by] 身体 [obj] 自在 [at/to] 伸縮 させる thing [subj] でき した",
+          "naturalEn": "Having eaten a Devil Fruit known as the Gum-Gum Fruit in childhood, he gained the power to stretch his limbs at will.",
+          "tokens": [
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "子供",
+              "reading": "こども",
+              "meaning": "child; children",
+              "baseForm": "子供",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "頃"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "ゴム"
+            },
+            {
+              "surface": "ゴム"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "実"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "悪魔"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "実"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "食",
+              "reading": "く",
+              "meaning": "(male) (vulgar) to eat",
+              "baseForm": "食う",
+              "level": "N3"
+            },
+            {
+              "surface": "べた"
+            },
+            {
+              "surface": "おかげ"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "身体"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "自在"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "伸縮"
+            },
+            {
+              "surface": "させる"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "海で泳げなくなるという致命的な弱点を背負ったにもかかわらず、彼の冒険への情熱が冷めることはありませんでした。",
+          "literalEn": "sea [in/by] to swim なくなる という 致命 弱点 [obj] 背負 [past] にもかかわらず he ['s / of] risk [toward] ['s / of] 情熱 [subj] 冷める thing [topic] ありま せん [in/by] した",
+          "naturalEn": "Despite shouldering the fatal weakness of being unable to swim in water, his fiery passion for grand adventure never cooled.",
+          "tokens": [
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "泳",
+              "reading": "およ",
+              "meaning": "to swim",
+              "baseForm": "泳ぐ",
+              "level": "N5"
+            },
+            {
+              "surface": "げ"
+            },
+            {
+              "surface": "なくなる"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "致命"
+            },
+            {
+              "surface": "的"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "弱点"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "背負"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "にもかかわらず"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "冒険",
+              "reading": "ぼうけん",
+              "meaning": "risk; venture; adventure",
+              "baseForm": "冒険",
+              "level": "N3"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "情熱"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "冷める"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "偉大なる航路を目指す旅の途中で、ルフィはかけがえのない仲間たちと次々に出会っていきました。世界一の大剣豪を目指すゾロや、正確な海図を描くことを夢見る航海士のナミが仲間に加わりました。彼らはそれぞれ重い過去や深い傷を抱えていましたが、ルフィの曇りのない笑顔に救われていったのです。「お前の力が必要なんだ」というルフィの真っ直ぐな言葉に対して、仲間たちは命を預ける覚悟を決めました。",
+      "en": "Along the path toward the treacherous Grand Line, Luffy encountered indispensable companions one after another. Zoro, who aspired to become the world's greatest swordsman, and Nami, a navigator dreaming of charting accurate sea maps, joined the crew. Though each carried a heavy past and deep emotional scars, they found salvation in Luffy's unclouded, resolute smile. In response to Luffy's heartfelt plea of 'I need your strength,' his comrades resolved to entrust him with their very lives.",
+      "tokens": [
+        {
+          "surface": "偉大",
+          "reading": "いだい",
+          "meaning": "greatness",
+          "baseForm": "偉大",
+          "level": "N3"
+        },
+        {
+          "surface": "なる",
+          "meaning": "to become",
+          "baseForm": "なる",
+          "level": "N5"
+        },
+        {
+          "surface": "航路"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "目指す"
+        },
+        {
+          "surface": "旅",
+          "reading": "たび",
+          "meaning": "travel; trip; journey",
+          "baseForm": "旅",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "途中",
+          "reading": "とちゅう",
+          "meaning": "on the way",
+          "baseForm": "途中",
+          "level": "N4"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "ルフィ"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "かけがえ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "仲間"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "次々に"
+        },
+        {
+          "surface": "出会"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "いき"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "世界一"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "大",
+          "reading": "だい",
+          "meaning": "large; big; great",
+          "baseForm": "大",
+          "level": "N3"
+        },
+        {
+          "surface": "剣豪"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "目指す"
+        },
+        {
+          "surface": "ゾロ"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "正確"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "海図"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "描く"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "夢見る"
+        },
+        {
+          "surface": "航海"
+        },
+        {
+          "surface": "士"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ナミ"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "仲間"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "加"
+        },
+        {
+          "surface": "わり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "彼ら",
+          "reading": "かれら",
+          "meaning": "they",
+          "baseForm": "彼ら",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "それぞれ"
+        },
+        {
+          "surface": "重い",
+          "reading": "おもい",
+          "meaning": "heavy",
+          "baseForm": "重い",
+          "level": "N5"
+        },
+        {
+          "surface": "過去"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "深い",
+          "reading": "ふかい",
+          "meaning": "deep",
+          "baseForm": "深い",
+          "level": "N4"
+        },
+        {
+          "surface": "傷",
+          "reading": "きず",
+          "meaning": "wound; injury; hurt",
+          "baseForm": "傷",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "抱え"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "ルフィ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "曇"
+        },
+        {
+          "surface": "り"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "笑顔",
+          "reading": "えがお",
+          "meaning": "smiling face",
+          "baseForm": "笑顔",
+          "level": "N3"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "救",
+          "reading": "すく",
+          "meaning": "to rescue from; to help out of",
+          "baseForm": "救う",
+          "level": "N3"
+        },
+        {
+          "surface": "われ"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "っ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "お前",
+          "reading": "おまえ",
+          "meaning": "you (informal)",
+          "baseForm": "お前",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "力",
+          "reading": "ちから",
+          "meaning": "strength; power",
+          "baseForm": "力",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "必要",
+          "reading": "ひつよう",
+          "meaning": "necessary",
+          "baseForm": "必要",
+          "level": "N4"
+        },
+        {
+          "surface": "なん"
+        },
+        {
+          "surface": "だ"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "ルフィ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "真っ直ぐ"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "言葉",
+          "reading": "ことば",
+          "meaning": "word; language",
+          "baseForm": "言葉",
+          "level": "N5"
+        },
+        {
+          "surface": "に対して"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "仲間"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "命",
+          "reading": "いのち",
+          "meaning": "command; decree; life",
+          "baseForm": "命",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "預ける"
+        },
+        {
+          "surface": "覚悟"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "決め",
+          "reading": "ケツめ",
+          "meaning": "decide, agree upon, appoint",
+          "baseForm": "決",
+          "level": "N3"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "偉大なる航路を目指す旅の途中で、ルフィはかけがえのない仲間たちと次々に出会っていきました。",
+          "literalEn": "greatness to become 航路 [obj] 目指す travel ['s / of] on the way [in/by] ルフィ [topic] かけがえ ['s / of] [not] 仲間 たち [with/and] 次々に 出会 って いき した",
+          "naturalEn": "Along the path toward the treacherous Grand Line, Luffy encountered indispensable companions one after another.",
+          "tokens": [
+            {
+              "surface": "偉大",
+              "reading": "いだい",
+              "meaning": "greatness",
+              "baseForm": "偉大",
+              "level": "N3"
+            },
+            {
+              "surface": "なる",
+              "meaning": "to become",
+              "baseForm": "なる",
+              "level": "N5"
+            },
+            {
+              "surface": "航路"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "目指す"
+            },
+            {
+              "surface": "旅",
+              "reading": "たび",
+              "meaning": "travel; trip; journey",
+              "baseForm": "旅",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "途中",
+              "reading": "とちゅう",
+              "meaning": "on the way",
+              "baseForm": "途中",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ルフィ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "かけがえ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "仲間"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "次々に"
+            },
+            {
+              "surface": "出会"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "世界一の大剣豪を目指すゾロや、正確な海図を描くことを夢見る航海士のナミが仲間に加わりました。",
+          "literalEn": "世界一 ['s / of] large 剣豪 [obj] 目指す ゾロ 正確 海図 [obj] 描く thing [obj] 夢見る 航海 ['s / of] ナミ [subj] 仲間 [at/to] わり した",
+          "naturalEn": "Zoro, who aspired to become the world's greatest swordsman, and Nami, a navigator dreaming of charting accurate sea maps, joined the crew.",
+          "tokens": [
+            {
+              "surface": "世界一"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "大",
+              "reading": "だい",
+              "meaning": "large; big; great",
+              "baseForm": "大",
+              "level": "N3"
+            },
+            {
+              "surface": "剣豪"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "目指す"
+            },
+            {
+              "surface": "ゾロ"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "正確"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "海図"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "描く"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "夢見る"
+            },
+            {
+              "surface": "航海"
+            },
+            {
+              "surface": "士"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ナミ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "仲間"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "加"
+            },
+            {
+              "surface": "わり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼らはそれぞれ重い過去や深い傷を抱えていましたが、ルフィの曇りのない笑顔に救われていったのです。",
+          "literalEn": "they [topic] それぞれ heavy 過去 deep wound [obj] 抱え てい した [subj] ルフィ ['s / of] ['s / of] [not] smiling face [at/to] to rescue from われ てい [past] ['s / of] [is]",
+          "naturalEn": "Though each carried a heavy past and deep emotional scars, they found salvation in Luffy's unclouded, resolute smile.",
+          "tokens": [
+            {
+              "surface": "彼ら",
+              "reading": "かれら",
+              "meaning": "they",
+              "baseForm": "彼ら",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "それぞれ"
+            },
+            {
+              "surface": "重い",
+              "reading": "おもい",
+              "meaning": "heavy",
+              "baseForm": "重い",
+              "level": "N5"
+            },
+            {
+              "surface": "過去"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "深い",
+              "reading": "ふかい",
+              "meaning": "deep",
+              "baseForm": "深い",
+              "level": "N4"
+            },
+            {
+              "surface": "傷",
+              "reading": "きず",
+              "meaning": "wound; injury; hurt",
+              "baseForm": "傷",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "抱え"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ルフィ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "曇"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "笑顔",
+              "reading": "えがお",
+              "meaning": "smiling face",
+              "baseForm": "笑顔",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "救",
+              "reading": "すく",
+              "meaning": "to rescue from; to help out of",
+              "baseForm": "救う",
+              "level": "N3"
+            },
+            {
+              "surface": "われ"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「お前の力が必要なんだ」というルフィの真っ直ぐな言葉に対して、仲間たちは命を預ける覚悟を決めました。",
+          "literalEn": "you ['s / of] strength [subj] necessary なん [is] という ルフィ ['s / of] 真っ直ぐ word に対して 仲間 たち [topic] command [obj] 預ける 覚悟 [obj] decide した",
+          "naturalEn": "In response to Luffy's heartfelt plea of 'I need your strength,' his comrades resolved to entrust him with their very lives.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "お前",
+              "reading": "おまえ",
+              "meaning": "you (informal)",
+              "baseForm": "お前",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "力",
+              "reading": "ちから",
+              "meaning": "strength; power",
+              "baseForm": "力",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "必要",
+              "reading": "ひつよう",
+              "meaning": "necessary",
+              "baseForm": "必要",
+              "level": "N4"
+            },
+            {
+              "surface": "なん"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "ルフィ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "真っ直ぐ"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "言葉",
+              "reading": "ことば",
+              "meaning": "word; language",
+              "baseForm": "言葉",
+              "level": "N5"
+            },
+            {
+              "surface": "に対して"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "仲間"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "命",
+              "reading": "いのち",
+              "meaning": "command; decree; life",
+              "baseForm": "命",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "預ける"
+            },
+            {
+              "surface": "覚悟"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "決め",
+              "reading": "ケツめ",
+              "meaning": "decide, agree upon, appoint",
+              "baseForm": "決",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "荒れ狂う嵐や巨大な海獣を乗り越えながら、麦わらの一味の船は未知の島々へと進路をとりました。航海を続けるうちに、凶悪な海賊や政府の冷酷な海軍が彼らの前に立ちはだかりました。どんな強敵に打ちのめされそうになっても、ルフィは仲間を守るためなら何度でも立ち上がりました。彼にとって海賊王とは偉い権力を持つ者ではなく、海で誰よりも一番自由な存在のことだったのです。",
+      "en": "Conquering ferocious squalls and gigantic sea beasts, the Straw Hat crew set their sails toward mysterious, uncharted islands. As their voyage unfolded, ruthless pirates and the World Government's cold navy stood menacingly in their path. No matter how battered by mighty foes, Luffy would rise up again and again if it was to protect his friends. To him, being the Pirate King did not signify possessing political authority, but simply being the freest soul on all the seven seas.",
+      "tokens": [
+        {
+          "surface": "荒れ狂う"
+        },
+        {
+          "surface": "嵐"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "巨大",
+          "reading": "きょだい",
+          "meaning": "huge; gigantic; enormous",
+          "baseForm": "巨大",
+          "level": "N3"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "海獣"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "乗り",
+          "reading": "のり",
+          "meaning": "to get on; to ride",
+          "baseForm": "乗る",
+          "level": "N5"
+        },
+        {
+          "surface": "越",
+          "reading": "こ",
+          "meaning": "to go over (e.g. with audience)",
+          "baseForm": "越す",
+          "level": "N3"
+        },
+        {
+          "surface": "え"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "麦わら"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "一味"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "船",
+          "reading": "ふね",
+          "meaning": "ship; boat; watercraft",
+          "baseForm": "船",
+          "level": "N3"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "未知"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "島々"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "進路"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "とり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "航海"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "続ける"
+        },
+        {
+          "surface": "うち",
+          "meaning": "within",
+          "baseForm": "うち",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "凶悪"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "海賊"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "政府"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "冷酷"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "海軍"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "彼ら",
+          "reading": "かれら",
+          "meaning": "they",
+          "baseForm": "彼ら",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "前",
+          "reading": "まえ",
+          "meaning": "before",
+          "baseForm": "前",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "立ち",
+          "reading": "たち",
+          "meaning": "to stand",
+          "baseForm": "立つ",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "だ"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "り"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "どんな",
+          "meaning": "what; what kind of",
+          "baseForm": "どんな",
+          "level": "N3"
+        },
+        {
+          "surface": "強敵"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "打ち"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "め"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "そう",
+          "meaning": "really",
+          "baseForm": "そう",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "ルフィ"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "仲間"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "守る"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "なら"
+        },
+        {
+          "surface": "何",
+          "reading": "なん",
+          "meaning": "what",
+          "baseForm": "何",
+          "level": "N5"
+        },
+        {
+          "surface": "度",
+          "reading": "たび",
+          "meaning": "time (three times, each time, etc.); times",
+          "baseForm": "度",
+          "level": "N3"
+        },
+        {
+          "surface": "でも",
+          "meaning": "but",
+          "baseForm": "でも",
+          "level": "N5"
+        },
+        {
+          "surface": "立ち上がり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "にとって"
+        },
+        {
+          "surface": "海賊"
+        },
+        {
+          "surface": "王",
+          "reading": "おう",
+          "meaning": "king; ruler; sovereign",
+          "baseForm": "王",
+          "level": "N3"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "偉い",
+          "reading": "えらい",
+          "meaning": "great; celebrated; eminent",
+          "baseForm": "偉い",
+          "level": "N2"
+        },
+        {
+          "surface": "権力"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "持つ"
+        },
+        {
+          "surface": "者"
+        },
+        {
+          "surface": "では",
+          "meaning": "with that...",
+          "baseForm": "では",
+          "level": "N5"
+        },
+        {
+          "surface": "なく"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "海",
+          "reading": "うみ",
+          "meaning": "sea",
+          "baseForm": "海",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "誰",
+          "reading": "だれ",
+          "meaning": "who",
+          "baseForm": "誰",
+          "level": "N5"
+        },
+        {
+          "surface": "より",
+          "meaning": "than; (used for comparison)",
+          "baseForm": "より",
+          "level": "N5"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "一番",
+          "reading": "いちばん",
+          "meaning": "number one; most; best",
+          "baseForm": "一番",
+          "level": "N5"
+        },
+        {
+          "surface": "自由"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "存在"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "だ"
+        },
+        {
+          "surface": "っ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "荒れ狂う嵐や巨大な海獣を乗り越えながら、麦わらの一味の船は未知の島々へと進路をとりました。",
+          "literalEn": "荒れ狂う huge 海獣 [obj] to get on to go over ながら 麦わら ['s / of] 一味 ['s / of] ship [topic] 未知 ['s / of] 島々 [toward] [with/and] 進路 [obj] とり した",
+          "naturalEn": "Conquering ferocious squalls and gigantic sea beasts, the Straw Hat crew set their sails toward mysterious, uncharted islands.",
+          "tokens": [
+            {
+              "surface": "荒れ狂う"
+            },
+            {
+              "surface": "嵐"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "巨大",
+              "reading": "きょだい",
+              "meaning": "huge; gigantic; enormous",
+              "baseForm": "巨大",
+              "level": "N3"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "海獣"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "乗り",
+              "reading": "のり",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "越",
+              "reading": "こ",
+              "meaning": "to go over (e.g. with audience)",
+              "baseForm": "越す",
+              "level": "N3"
+            },
+            {
+              "surface": "え"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "麦わら"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "一味"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "船",
+              "reading": "ふね",
+              "meaning": "ship; boat; watercraft",
+              "baseForm": "船",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "未知"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "島々"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "進路"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "とり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "航海を続けるうちに、凶悪な海賊や政府の冷酷な海軍が彼らの前に立ちはだかりました。",
+          "literalEn": "航海 [obj] 続ける within [at/to] 凶悪 海賊 政府 ['s / of] 冷酷 海軍 [subj] they ['s / of] before [at/to] to stand [topic] [is] [?] した",
+          "naturalEn": "As their voyage unfolded, ruthless pirates and the World Government's cold navy stood menacingly in their path.",
+          "tokens": [
+            {
+              "surface": "航海"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "続ける"
+            },
+            {
+              "surface": "うち",
+              "meaning": "within",
+              "baseForm": "うち",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "凶悪"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "海賊"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "政府"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "冷酷"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "海軍"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "彼ら",
+              "reading": "かれら",
+              "meaning": "they",
+              "baseForm": "彼ら",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "前",
+              "reading": "まえ",
+              "meaning": "before",
+              "baseForm": "前",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "立ち",
+              "reading": "たち",
+              "meaning": "to stand",
+              "baseForm": "立つ",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "どんな強敵に打ちのめされそうになっても、ルフィは仲間を守るためなら何度でも立ち上がりました。",
+          "literalEn": "what 強敵 [at/to] 打ち ['s / of] really [at/to] って [also] ルフィ [topic] 仲間 [obj] 守る ため なら what time (three times but 立ち上がり した",
+          "naturalEn": "No matter how battered by mighty foes, Luffy would rise up again and again if it was to protect his friends.",
+          "tokens": [
+            {
+              "surface": "どんな",
+              "meaning": "what; what kind of",
+              "baseForm": "どんな",
+              "level": "N3"
+            },
+            {
+              "surface": "強敵"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "打ち"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "め"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "そう",
+              "meaning": "really",
+              "baseForm": "そう",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ルフィ"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "仲間"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "守る"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "なら"
+            },
+            {
+              "surface": "何",
+              "reading": "なん",
+              "meaning": "what",
+              "baseForm": "何",
+              "level": "N5"
+            },
+            {
+              "surface": "度",
+              "reading": "たび",
+              "meaning": "time (three times, each time, etc.); times",
+              "baseForm": "度",
+              "level": "N3"
+            },
+            {
+              "surface": "でも",
+              "meaning": "but",
+              "baseForm": "でも",
+              "level": "N5"
+            },
+            {
+              "surface": "立ち上がり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼にとって海賊王とは偉い権力を持つ者ではなく、海で誰よりも一番自由な存在のことだったのです。",
+          "literalEn": "he にとって 海賊 king [with/and] [topic] great 権力 [obj] 持つ with that... なく sea [in/by] who [than] [also] number one 自由 存在 ['s / of] thing [is] [past] ['s / of] [is]",
+          "naturalEn": "To him, being the Pirate King did not signify possessing political authority, but simply being the freest soul on all the seven seas.",
+          "tokens": [
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "にとって"
+            },
+            {
+              "surface": "海賊"
+            },
+            {
+              "surface": "王",
+              "reading": "おう",
+              "meaning": "king; ruler; sovereign",
+              "baseForm": "王",
+              "level": "N3"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "偉い",
+              "reading": "えらい",
+              "meaning": "great; celebrated; eminent",
+              "baseForm": "偉い",
+              "level": "N2"
+            },
+            {
+              "surface": "権力"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "持つ"
+            },
+            {
+              "surface": "者"
+            },
+            {
+              "surface": "では",
+              "meaning": "with that...",
+              "baseForm": "では",
+              "level": "N5"
+            },
+            {
+              "surface": "なく"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "誰",
+              "reading": "だれ",
+              "meaning": "who",
+              "baseForm": "誰",
+              "level": "N5"
+            },
+            {
+              "surface": "より",
+              "meaning": "than; (used for comparison)",
+              "baseForm": "より",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "一番",
+              "reading": "いちばん",
+              "meaning": "number one; most; best",
+              "baseForm": "一番",
+              "level": "N5"
+            },
+            {
+              "surface": "自由"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "存在"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "仲間が理不尽な権力によって囚われた時、一味は世界政府の旗を打ち抜いて宣戦布告を行いました。常識にとらわれて生きる人々に対して、彼らは信念を貫くことの尊さを全身で示してみせたのです。激しい戦いの中で船が寿命を迎えた際には、涙を流しながら感謝を込めて火を放ち、海へと見送りました。新しい船を手に入れた彼らは、仲間の夢を乗せてさらに険しい海域へと舵を切っていきました。",
+      "en": "When a crewmate was captured by tyrannical authorities, the crew shot straight through the World Government flag, declaring war. To people living bound by mundane conventions, they demonstrated with all their might the noble virtue of remaining true to one's convictions. When their beloved ship reached the end of its life amid fierce battles, they shed tears, expressing boundless gratitude as they set it to rest in flames on the sea. Securing a new vessel, they steered their helm toward even harsher waters, carrying the dreams of every comrade aboard.",
+      "tokens": [
+        {
+          "surface": "仲間"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "理不尽"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "権力"
+        },
+        {
+          "surface": "によって"
+        },
+        {
+          "surface": "囚われ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "時",
+          "reading": "とき",
+          "meaning": "time; hour; occasion",
+          "baseForm": "時",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "一味"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "世界",
+          "reading": "せかい",
+          "meaning": "the world",
+          "baseForm": "世界",
+          "level": "N4"
+        },
+        {
+          "surface": "政府"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "旗"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "打ち"
+        },
+        {
+          "surface": "抜",
+          "reading": "ぬ",
+          "meaning": "to extract; to omit; to surpass",
+          "baseForm": "抜く",
+          "level": "N3"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "宣戦"
+        },
+        {
+          "surface": "布告"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "行",
+          "reading": "ぎょう",
+          "meaning": "line; row; verse",
+          "baseForm": "行",
+          "level": "N1"
+        },
+        {
+          "surface": "いま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "常識"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "とら"
+        },
+        {
+          "surface": "われ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "生きる"
+        },
+        {
+          "surface": "人々",
+          "reading": "ひと々",
+          "meaning": "person",
+          "baseForm": "人",
+          "level": "N5"
+        },
+        {
+          "surface": "に対して"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "彼ら",
+          "reading": "かれら",
+          "meaning": "they",
+          "baseForm": "彼ら",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "信念"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "貫く"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "尊"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "全身",
+          "reading": "ぜんしん",
+          "meaning": "the whole body; full-length (portrait)",
+          "baseForm": "全身",
+          "level": "N2"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "示し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "み"
+        },
+        {
+          "surface": "せ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "激しい",
+          "reading": "はげしい",
+          "meaning": "violent; vehement; intense",
+          "baseForm": "激しい",
+          "level": "N3"
+        },
+        {
+          "surface": "戦い",
+          "reading": "たたかい",
+          "meaning": "battle; fight; struggle",
+          "baseForm": "戦い",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "中",
+          "reading": "なか",
+          "meaning": "middle",
+          "baseForm": "中",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "船",
+          "reading": "ふね",
+          "meaning": "ship; boat; watercraft",
+          "baseForm": "船",
+          "level": "N3"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "寿命"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "迎え"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "際"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "涙"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "流し"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "感謝"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "込"
+        },
+        {
+          "surface": "め"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "火",
+          "reading": "ひ",
+          "meaning": "fire",
+          "baseForm": "火",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "放",
+          "reading": "はな",
+          "meaning": "to separate; to set free",
+          "baseForm": "放す",
+          "level": "N3"
+        },
+        {
+          "surface": "ち"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "海",
+          "reading": "うみ",
+          "meaning": "sea",
+          "baseForm": "海",
+          "level": "N5"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "見送り"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "新しい",
+          "reading": "あたらしい",
+          "meaning": "new",
+          "baseForm": "新しい",
+          "level": "N5"
+        },
+        {
+          "surface": "船",
+          "reading": "ふね",
+          "meaning": "ship; boat; watercraft",
+          "baseForm": "船",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "手",
+          "reading": "て",
+          "meaning": "hand",
+          "baseForm": "手",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "入れ",
+          "reading": "はいれ",
+          "meaning": "to enter; to contain",
+          "baseForm": "入る",
+          "level": "N5"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "彼ら",
+          "reading": "かれら",
+          "meaning": "they",
+          "baseForm": "彼ら",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "仲間"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "夢",
+          "reading": "ゆめ",
+          "meaning": "dream",
+          "baseForm": "夢",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "乗",
+          "reading": "の",
+          "meaning": "to get on; to ride",
+          "baseForm": "乗る",
+          "level": "N5"
+        },
+        {
+          "surface": "せ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "さらに"
+        },
+        {
+          "surface": "険しい"
+        },
+        {
+          "surface": "海域"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "舵"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "切",
+          "reading": "き",
+          "meaning": "to cut",
+          "baseForm": "切る",
+          "level": "N5"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "いき"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "仲間が理不尽な権力によって囚われた時、一味は世界政府の旗を打ち抜いて宣戦布告を行いました。",
+          "literalEn": "仲間 [subj] 理不尽 権力 によって 囚われ [past] time 一味 [topic] the world 政府 ['s / of] [obj] 打ち to extract [and] 宣戦 布告 [obj] line いま した",
+          "naturalEn": "When a crewmate was captured by tyrannical authorities, the crew shot straight through the World Government flag, declaring war.",
+          "tokens": [
+            {
+              "surface": "仲間"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "理不尽"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "権力"
+            },
+            {
+              "surface": "によって"
+            },
+            {
+              "surface": "囚われ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "時",
+              "reading": "とき",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "一味"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "世界",
+              "reading": "せかい",
+              "meaning": "the world",
+              "baseForm": "世界",
+              "level": "N4"
+            },
+            {
+              "surface": "政府"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "旗"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "打ち"
+            },
+            {
+              "surface": "抜",
+              "reading": "ぬ",
+              "meaning": "to extract; to omit; to surpass",
+              "baseForm": "抜く",
+              "level": "N3"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "宣戦"
+            },
+            {
+              "surface": "布告"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "行",
+              "reading": "ぎょう",
+              "meaning": "line; row; verse",
+              "baseForm": "行",
+              "level": "N1"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "常識にとらわれて生きる人々に対して、彼らは信念を貫くことの尊さを全身で示してみせたのです。",
+          "literalEn": "常識 [at/to] とら われ [and] 生きる person に対して they [topic] 信念 [obj] 貫く thing ['s / of] [obj] the whole body [in/by] 示し [and] [past] ['s / of] [is]",
+          "naturalEn": "To people living bound by mundane conventions, they demonstrated with all their might the noble virtue of remaining true to one's convictions.",
+          "tokens": [
+            {
+              "surface": "常識"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "とら"
+            },
+            {
+              "surface": "われ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "生きる"
+            },
+            {
+              "surface": "人々",
+              "reading": "ひと々",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "に対して"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼ら",
+              "reading": "かれら",
+              "meaning": "they",
+              "baseForm": "彼ら",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "信念"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "貫く"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "尊"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "全身",
+              "reading": "ぜんしん",
+              "meaning": "the whole body; full-length (portrait)",
+              "baseForm": "全身",
+              "level": "N2"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "示し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "み"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "激しい戦いの中で船が寿命を迎えた際には、涙を流しながら感謝を込めて火を放ち、海へと見送りました。",
+          "literalEn": "violent battle ['s / of] middle [in/by] ship [subj] 寿命 [obj] 迎え [past] [at/to] [topic] [obj] 流し ながら 感謝 [obj] [and] fire [obj] to separate sea [toward] [with/and] 見送り した",
+          "naturalEn": "When their beloved ship reached the end of its life amid fierce battles, they shed tears, expressing boundless gratitude as they set it to rest in flames on the sea.",
+          "tokens": [
+            {
+              "surface": "激しい",
+              "reading": "はげしい",
+              "meaning": "violent; vehement; intense",
+              "baseForm": "激しい",
+              "level": "N3"
+            },
+            {
+              "surface": "戦い",
+              "reading": "たたかい",
+              "meaning": "battle; fight; struggle",
+              "baseForm": "戦い",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "船",
+              "reading": "ふね",
+              "meaning": "ship; boat; watercraft",
+              "baseForm": "船",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "寿命"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "迎え"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "際"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "涙"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "流し"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "感謝"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "込"
+            },
+            {
+              "surface": "め"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "火",
+              "reading": "ひ",
+              "meaning": "fire",
+              "baseForm": "火",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "放",
+              "reading": "はな",
+              "meaning": "to separate; to set free",
+              "baseForm": "放す",
+              "level": "N3"
+            },
+            {
+              "surface": "ち"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "海",
+              "reading": "うみ",
+              "meaning": "sea",
+              "baseForm": "海",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "見送り"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "新しい船を手に入れた彼らは、仲間の夢を乗せてさらに険しい海域へと舵を切っていきました。",
+          "literalEn": "new ship [obj] hand [at/to] to enter [past] they [topic] 仲間 ['s / of] dream [obj] to get on [and] さらに 険しい 海域 [toward] [with/and] [obj] to cut って いき した",
+          "naturalEn": "Securing a new vessel, they steered their helm toward even harsher waters, carrying the dreams of every comrade aboard.",
+          "tokens": [
+            {
+              "surface": "新しい",
+              "reading": "あたらしい",
+              "meaning": "new",
+              "baseForm": "新しい",
+              "level": "N5"
+            },
+            {
+              "surface": "船",
+              "reading": "ふね",
+              "meaning": "ship; boat; watercraft",
+              "baseForm": "船",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "手",
+              "reading": "て",
+              "meaning": "hand",
+              "baseForm": "手",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入れ",
+              "reading": "はいれ",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "彼ら",
+              "reading": "かれら",
+              "meaning": "they",
+              "baseForm": "彼ら",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "仲間"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "夢",
+              "reading": "ゆめ",
+              "meaning": "dream",
+              "baseForm": "夢",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "乗",
+              "reading": "の",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "さらに"
+            },
+            {
+              "surface": "険しい"
+            },
+            {
+              "surface": "海域"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "舵"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "切",
+              "reading": "き",
+              "meaning": "to cut",
+              "baseForm": "切る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "水平線の彼方には、まだ誰も目にしたことのない奇跡のような景色が今も待っています。どんな逆風が吹こうとも、信頼できる仲間と共に笑い合えるなら、彼らの航海が止まることはありません。果てしない冒険の風を受けながら、麦わらの海賊旗は今日も青空の下で力強くはためいています。",
+      "en": "Beyond the distant horizon, miraculous vistas that no mortal eye has yet witnessed await them even now. No matter how fierce the headwind blows, as long as they can laugh alongside trusted comrades, their voyage will never cease. Catching the winds of endless adventure, the Straw Hat jolly roger flutters proudly beneath the open blue sky today.",
+      "tokens": [
+        {
+          "surface": "水平線"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "彼方"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "まだ",
+          "meaning": "yet; still",
+          "baseForm": "まだ",
+          "level": "N5"
+        },
+        {
+          "surface": "誰",
+          "reading": "だれ",
+          "meaning": "who",
+          "baseForm": "誰",
+          "level": "N5"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "目",
+          "reading": "め",
+          "meaning": "eye",
+          "baseForm": "目",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "奇跡"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "よう"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "景色",
+          "reading": "けしき",
+          "meaning": "scene; landscape",
+          "baseForm": "景色",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "今",
+          "reading": "いま",
+          "meaning": "now",
+          "baseForm": "今",
+          "level": "N5"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "待",
+          "reading": "ま",
+          "meaning": "to wait",
+          "baseForm": "待つ",
+          "level": "N5"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "どんな",
+          "meaning": "what; what kind of",
+          "baseForm": "どんな",
+          "level": "N3"
+        },
+        {
+          "surface": "逆風"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "吹",
+          "reading": "ふ",
+          "meaning": "to blow",
+          "baseForm": "吹く",
+          "level": "N5"
+        },
+        {
+          "surface": "こう",
+          "meaning": "this way",
+          "baseForm": "こう",
+          "level": "N4"
+        },
+        {
+          "surface": "とも"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "信頼"
+        },
+        {
+          "surface": "できる",
+          "meaning": "to be able to",
+          "baseForm": "できる",
+          "level": "N5"
+        },
+        {
+          "surface": "仲間"
+        },
+        {
+          "surface": "と共に",
+          "reading": "とともに",
+          "meaning": "together with; along with",
+          "baseForm": "と共に",
+          "level": "N3"
+        },
+        {
+          "surface": "笑い"
+        },
+        {
+          "surface": "合える"
+        },
+        {
+          "surface": "なら"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "彼ら",
+          "reading": "かれら",
+          "meaning": "they",
+          "baseForm": "彼ら",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "航海"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "止まる"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "ありま"
+        },
+        {
+          "surface": "せん"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "果てしない"
+        },
+        {
+          "surface": "冒険",
+          "reading": "ぼうけん",
+          "meaning": "risk; venture; adventure",
+          "baseForm": "冒険",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "風",
+          "reading": "かぜ",
+          "meaning": "wind",
+          "baseForm": "風",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "受け"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "麦わら"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "海賊"
+        },
+        {
+          "surface": "旗"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "meaning": "today",
+          "baseForm": "今日",
+          "level": "N5"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "青空"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "下",
+          "reading": "した",
+          "meaning": "below",
+          "baseForm": "下",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "力",
+          "reading": "ちから",
+          "meaning": "strength; power",
+          "baseForm": "力",
+          "level": "N4"
+        },
+        {
+          "surface": "強",
+          "reading": "つよ",
+          "meaning": "powerful",
+          "baseForm": "強い",
+          "level": "N5"
+        },
+        {
+          "surface": "く"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "めいてい"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "水平線の彼方には、まだ誰も目にしたことのない奇跡のような景色が今も待っています。",
+          "literalEn": "水平線 ['s / of] 彼方 [at/to] [topic] yet who [also] eye [at/to] した thing ['s / of] [not] 奇跡 ['s / of] よう scene [subj] now [also] to wait って [polite]",
+          "naturalEn": "Beyond the distant horizon, miraculous vistas that no mortal eye has yet witnessed await them even now.",
+          "tokens": [
+            {
+              "surface": "水平線"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "彼方"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "まだ",
+              "meaning": "yet; still",
+              "baseForm": "まだ",
+              "level": "N5"
+            },
+            {
+              "surface": "誰",
+              "reading": "だれ",
+              "meaning": "who",
+              "baseForm": "誰",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "目",
+              "reading": "め",
+              "meaning": "eye",
+              "baseForm": "目",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "奇跡"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "景色",
+              "reading": "けしき",
+              "meaning": "scene; landscape",
+              "baseForm": "景色",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "今",
+              "reading": "いま",
+              "meaning": "now",
+              "baseForm": "今",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "待",
+              "reading": "ま",
+              "meaning": "to wait",
+              "baseForm": "待つ",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "どんな逆風が吹こうとも、信頼できる仲間と共に笑い合えるなら、彼らの航海が止まることはありません。",
+          "literalEn": "what 逆風 [subj] to blow this way とも 信頼 to be able to 仲間 together with 笑い 合える なら they ['s / of] 航海 [subj] 止まる thing [topic] ありま せん",
+          "naturalEn": "No matter how fierce the headwind blows, as long as they can laugh alongside trusted comrades, their voyage will never cease.",
+          "tokens": [
+            {
+              "surface": "どんな",
+              "meaning": "what; what kind of",
+              "baseForm": "どんな",
+              "level": "N3"
+            },
+            {
+              "surface": "逆風"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "吹",
+              "reading": "ふ",
+              "meaning": "to blow",
+              "baseForm": "吹く",
+              "level": "N5"
+            },
+            {
+              "surface": "こう",
+              "meaning": "this way",
+              "baseForm": "こう",
+              "level": "N4"
+            },
+            {
+              "surface": "とも"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "信頼"
+            },
+            {
+              "surface": "できる",
+              "meaning": "to be able to",
+              "baseForm": "できる",
+              "level": "N5"
+            },
+            {
+              "surface": "仲間"
+            },
+            {
+              "surface": "と共に",
+              "reading": "とともに",
+              "meaning": "together with; along with",
+              "baseForm": "と共に",
+              "level": "N3"
+            },
+            {
+              "surface": "笑い"
+            },
+            {
+              "surface": "合える"
+            },
+            {
+              "surface": "なら"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼ら",
+              "reading": "かれら",
+              "meaning": "they",
+              "baseForm": "彼ら",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "航海"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "止まる"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "果てしない冒険の風を受けながら、麦わらの海賊旗は今日も青空の下で力強くはためいています。",
+          "literalEn": "果てしない risk ['s / of] wind [obj] 受け ながら 麦わら ['s / of] 海賊 [topic] today [also] 青空 ['s / of] below [in/by] strength powerful [topic] [past] めいてい [polite]",
+          "naturalEn": "Catching the winds of endless adventure, the Straw Hat jolly roger flutters proudly beneath the open blue sky today.",
+          "tokens": [
+            {
+              "surface": "果てしない"
+            },
+            {
+              "surface": "冒険",
+              "reading": "ぼうけん",
+              "meaning": "risk; venture; adventure",
+              "baseForm": "冒険",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "風",
+              "reading": "かぜ",
+              "meaning": "wind",
+              "baseForm": "風",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "受け"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "麦わら"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "海賊"
+            },
+            {
+              "surface": "旗"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "今日",
+              "reading": "きょう",
+              "meaning": "today",
+              "baseForm": "今日",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "青空"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "下",
+              "reading": "した",
+              "meaning": "below",
+              "baseForm": "下",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "力",
+              "reading": "ちから",
+              "meaning": "strength; power",
+              "baseForm": "力",
+              "level": "N4"
+            },
+            {
+              "surface": "強",
+              "reading": "つよ",
+              "meaning": "powerful",
+              "baseForm": "強い",
+              "level": "N5"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "めいてい"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "ルフィが目指している「海賊王」とは、彼にとってどのような存在ですか。",
+      "questionEn": "What does being the 'Pirate King' mean to Luffy?",
+      "options": [
+        "海で誰よりも一番自由な存在であること",
+        "世界中のすべての国を支配する偉い権力者になること",
+        "世界で一番豪華な城を建てて贅沢に暮らすこと",
+        "誰も逆らえない恐ろしい軍隊を作ること"
+      ],
+      "optionsEn": [
+        "Being the single freest person across all the seas",
+        "Becoming a grand dictator who rules over every nation on earth",
+        "Building the most lavish castle in the world to live in luxury",
+        "Assembling a terrifying military force that nobody can oppose"
+      ],
+      "answerIndex": 0,
+      "explanation": "ルフィにとって海賊王とは、権力や支配ではなく「海で一番自由な者」を意味しています。"
+    },
+    {
+      "question": "悪魔の実を食べたことによるルフィの致命的な弱点は何ですか。",
+      "questionEn": "What is the fatal weakness Luffy incurred from consuming a Devil Fruit?",
+      "options": [
+        "海で泳ぐことができなくなること",
+        "肉を食べると身体が縮んでしまうこと",
+        "夜になると眠れなくなること",
+        "嘘をつくと鼻が長く伸びること"
+      ],
+      "optionsEn": [
+        "Becoming entirely unable to swim in water",
+        "Shrinking whenever he consumes meat",
+        "Being unable to sleep at night",
+        "His nose growing longer whenever he tells a lie"
+      ],
+      "answerIndex": 0,
+      "explanation": "悪魔の実を食べた者は海に嫌われ、泳ぐ能力を永久に失ってしまうという代償を背負います。"
+    },
+    {
+      "question": "仲間が連れ去られた時、麦わらの一味は世界政府に対してどのような行動をとりましたか。",
+      "questionEn": "How did the Straw Hat crew respond to the World Government when their comrade was taken?",
+      "options": [
+        "世界政府の旗を撃ち抜いて堂々と宣戦布告した",
+        "身代金を支払って穏便に解決しようとした",
+        "仲間を諦めて別の新しい航海士を探した",
+        "海軍に降伏して牢屋に入った"
+      ],
+      "optionsEn": [
+        "They shot through the World Government flag, openly declaring war",
+        "They paid a ransom to resolve the issue peacefully",
+        "They abandoned their comrade and searched for a replacement navigator",
+        "They surrendered to the Marines and entered prison"
+      ],
+      "answerIndex": 0,
+      "explanation": "仲間を取り戻すため、世界政府の旗を射抜いて恐れることなく正面から宣戦布告を行いました。"
+    }
+  ]
+}

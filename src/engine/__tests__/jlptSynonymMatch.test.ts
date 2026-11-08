@@ -44,6 +44,28 @@ describe("JLPT Game 4: Synonym Paraphrase Match Engine & Dataset", () => {
       }
     });
 
+    it("includes N5/N4 full-sentence paraphrase items (antonym flips and time conversions)", () => {
+      const omoshiroItem = SYNONYM_MATCH_ITEMS.find((i) => i.id === "syn-n5-omoshirokunakatta");
+      expect(omoshiroItem).toBeDefined();
+      expect(omoshiroItem?.correctSynonym.word).toBe("つまらなかったです");
+
+      const kuraiItem = SYNONYM_MATCH_ITEMS.find((i) => i.id === "syn-n5-kurai");
+      expect(kuraiItem).toBeDefined();
+      expect(kuraiItem?.correctSynonym.word).toBe("明るくありません");
+
+      const maibanItem = SYNONYM_MATCH_ITEMS.find((i) => i.id === "syn-n5-maiban");
+      expect(maibanItem).toBeDefined();
+      expect(maibanItem?.correctSynonym.word).toBe("夜はいつも");
+
+      const ninenMaeItem = SYNONYM_MATCH_ITEMS.find((i) => i.id === "syn-n5-ninen-mae");
+      expect(ninenMaeItem).toBeDefined();
+      expect(ninenMaeItem?.correctSynonym.word).toBe("おととし");
+
+      const tanjoubiItem = SYNONYM_MATCH_ITEMS.find((i) => i.id === "syn-n5-tanjoubi");
+      expect(tanjoubiItem).toBeDefined();
+      expect(tanjoubiItem?.correctSynonym.word).toBe("6月15日にうまれました");
+    });
+
     it("ensures targetWord and correctSynonym.word are never identical strings", () => {
       for (const item of SYNONYM_MATCH_ITEMS) {
         expect(item.targetWord).not.toBe(item.correctSynonym.word);

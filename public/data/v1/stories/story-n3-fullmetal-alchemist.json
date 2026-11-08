@@ -1,0 +1,4305 @@
+{
+  "id": "story-n3-fullmetal-alchemist",
+  "title": "鋼の錬金術師：等価交換の旅路",
+  "titleRomaji": "Hagane no Renkinjutsushi: Touka Koukan no Tabiji",
+  "titleEn": "Fullmetal Alchemist: Journey of Equivalent Exchange",
+  "level": "N3",
+  "category": "Anime & Pop Culture",
+  "tags": [
+    "Anime",
+    "N3",
+    "Science Fantasy",
+    "Brotherhood",
+    "Philosophy"
+  ],
+  "paragraphs": [
+    {
+      "ja": "錬金術が高度に発達した世界において、その基本原則は「等価交換」という絶対の真理に基づいています。何かを得ようとするならば、必ずそれと同等の代価を支払わなければならないという厳しい法則です。幼いエルリック兄弟、エドワードとアルフォンスは、病気で急逝した最愛の母親を取り戻したい一心でした。錬金術における最大の禁忌とされていた「人体錬成」に手を染めるという過ちを犯してしまったのです。",
+      "en": "In a world where alchemy developed to great heights, its fundamental principle rested on the absolute truth of 'Equivalent Exchange.' It is a stern law dictating that if one seeks to obtain something, an equal compensation must invariably be rendered. The young Elric brothers, Edward and Alphonse, were consumed by the solitary desire to bring back their beloved mother who passed from illness. They committed the fateful mistake of dabbling in 'Human Transmutation,' which was branded the greatest taboo in alchemy.",
+      "tokens": [
+        {
+          "surface": "錬金術"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "高度"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "発達"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "世界",
+          "reading": "せかい",
+          "meaning": "the world",
+          "baseForm": "世界",
+          "level": "N4"
+        },
+        {
+          "surface": "において"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "その",
+          "meaning": "that",
+          "baseForm": "その",
+          "level": "N5"
+        },
+        {
+          "surface": "基本"
+        },
+        {
+          "surface": "原則"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "等価"
+        },
+        {
+          "surface": "交換",
+          "reading": "こうかん",
+          "meaning": "exchange; interchange; reciprocity",
+          "baseForm": "交換",
+          "level": "N3"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "絶対"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "真理"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "基"
+        },
+        {
+          "surface": "づ"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "何",
+          "reading": "なん",
+          "meaning": "what",
+          "baseForm": "何",
+          "level": "N5"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "得"
+        },
+        {
+          "surface": "よう"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "ならば"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "必ず"
+        },
+        {
+          "surface": "それと"
+        },
+        {
+          "surface": "同等"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "代価"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "支払"
+        },
+        {
+          "surface": "わな"
+        },
+        {
+          "surface": "け"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ば"
+        },
+        {
+          "surface": "なら"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "厳しい"
+        },
+        {
+          "surface": "法則"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "幼い"
+        },
+        {
+          "surface": "エル"
+        },
+        {
+          "surface": "リック"
+        },
+        {
+          "surface": "兄弟",
+          "reading": "きょうだい",
+          "meaning": "(humble) siblings",
+          "baseForm": "兄弟",
+          "level": "N5"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "エドワード"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "アルフォンス"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "病気",
+          "reading": "びょうき",
+          "meaning": "illness",
+          "baseForm": "病気",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "急逝"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "最愛"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "母親"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "取り",
+          "reading": "とり",
+          "meaning": "to take something",
+          "baseForm": "取る",
+          "level": "N5"
+        },
+        {
+          "surface": "戻",
+          "reading": "もど",
+          "meaning": "to turn back",
+          "baseForm": "戻る",
+          "level": "N4"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "一心"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "錬金術"
+        },
+        {
+          "surface": "における"
+        },
+        {
+          "surface": "最大"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "禁忌"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "人体"
+        },
+        {
+          "surface": "錬成"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "手",
+          "reading": "て",
+          "meaning": "hand",
+          "baseForm": "手",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "染める"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "過ち"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "犯"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "まっ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "錬金術が高度に発達した世界において、その基本原則は「等価交換」という絶対の真理に基づいています。",
+          "literalEn": "錬金術 [subj] 高度 [at/to] 発達 した the world において that 基本 原則 [topic] 等価 exchange という 絶対 ['s / of] 真理 [at/to] てい [polite]",
+          "naturalEn": "In a world where alchemy developed to great heights, its fundamental principle rested on the absolute truth of 'Equivalent Exchange.'",
+          "tokens": [
+            {
+              "surface": "錬金術"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "高度"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "発達"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "世界",
+              "reading": "せかい",
+              "meaning": "the world",
+              "baseForm": "世界",
+              "level": "N4"
+            },
+            {
+              "surface": "において"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "その",
+              "meaning": "that",
+              "baseForm": "その",
+              "level": "N5"
+            },
+            {
+              "surface": "基本"
+            },
+            {
+              "surface": "原則"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "等価"
+            },
+            {
+              "surface": "交換",
+              "reading": "こうかん",
+              "meaning": "exchange; interchange; reciprocity",
+              "baseForm": "交換",
+              "level": "N3"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "絶対"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "真理"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "基"
+            },
+            {
+              "surface": "づ"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "何かを得ようとするならば、必ずそれと同等の代価を支払わなければならないという厳しい法則です。",
+          "literalEn": "what [?] [obj] よう [with/and] to do ならば 必ず それと 同等 ['s / of] 代価 [obj] 支払 わな なら [not] という 厳しい 法則 [is]",
+          "naturalEn": "It is a stern law dictating that if one seeks to obtain something, an equal compensation must invariably be rendered.",
+          "tokens": [
+            {
+              "surface": "何",
+              "reading": "なん",
+              "meaning": "what",
+              "baseForm": "何",
+              "level": "N5"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "得"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "ならば"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "必ず"
+            },
+            {
+              "surface": "それと"
+            },
+            {
+              "surface": "同等"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "代価"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "支払"
+            },
+            {
+              "surface": "わな"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ば"
+            },
+            {
+              "surface": "なら"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "厳しい"
+            },
+            {
+              "surface": "法則"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "幼いエルリック兄弟、エドワードとアルフォンスは、病気で急逝した最愛の母親を取り戻したい一心でした。",
+          "literalEn": "幼い エル リック  siblings エドワード [with/and] アルフォンス [topic] illness [in/by] 急逝 した 最愛 ['s / of] 母親 [obj] to take something to turn back した 一心 [in/by] した",
+          "naturalEn": "The young Elric brothers, Edward and Alphonse, were consumed by the solitary desire to bring back their beloved mother who passed from illness.",
+          "tokens": [
+            {
+              "surface": "幼い"
+            },
+            {
+              "surface": "エル"
+            },
+            {
+              "surface": "リック"
+            },
+            {
+              "surface": "兄弟",
+              "reading": "きょうだい",
+              "meaning": "(humble) siblings",
+              "baseForm": "兄弟",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "エドワード"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "アルフォンス"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "病気",
+              "reading": "びょうき",
+              "meaning": "illness",
+              "baseForm": "病気",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "急逝"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "最愛"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "母親"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "取り",
+              "reading": "とり",
+              "meaning": "to take something",
+              "baseForm": "取る",
+              "level": "N5"
+            },
+            {
+              "surface": "戻",
+              "reading": "もど",
+              "meaning": "to turn back",
+              "baseForm": "戻る",
+              "level": "N4"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "一心"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "錬金術における最大の禁忌とされていた「人体錬成」に手を染めるという過ちを犯してしまったのです。",
+          "literalEn": "錬金術 における 最大 ['s / of] 禁忌 [with/and] てい [past] 人体 錬成 [at/to] hand [obj] 染める という 過ち [obj] [and] まっ [past] ['s / of] [is]",
+          "naturalEn": "They committed the fateful mistake of dabbling in 'Human Transmutation,' which was branded the greatest taboo in alchemy.",
+          "tokens": [
+            {
+              "surface": "錬金術"
+            },
+            {
+              "surface": "における"
+            },
+            {
+              "surface": "最大"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "禁忌"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "人体"
+            },
+            {
+              "surface": "錬成"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "手",
+              "reading": "て",
+              "meaning": "hand",
+              "baseForm": "手",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "染める"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "過ち"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "犯"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "まっ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "錬成は無残にも失敗し、反動によって弟のアルは全身を奪われ、兄のエドは左足を失ってしまいました。消えゆく弟の魂をつなぎ止めるため、エドは自らの右腕を犠牲にして巨大な鎧にアルの魂を定着させました。「立って歩け、前へ進め。あんたには立派な足がついているじゃないか」と自らを鼓舞し、二人は立ち上がりました。失った身体を取り戻す手がかりを求めて、エドは最年少で国家錬金術師の資格を取得する道を選んだのです。",
+      "en": "The transmutation failed disastrously; in the rebound, younger brother Al lost his entire body, and elder brother Ed lost his left leg. To tether his vanishing brother's soul, Ed sacrificed his own right arm, binding Alphonse's soul to a colossal suit of armor. Inspiring themselves with 'Stand up and walk, move forward; don't you have fine legs of your own?', the two rose again. Seeking clues to recover their lost physical bodies, Ed chose the arduous path of becoming the youngest State Alchemist in history.",
+      "tokens": [
+        {
+          "surface": "錬成"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "無残"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "失敗"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "反動"
+        },
+        {
+          "surface": "によって"
+        },
+        {
+          "surface": "弟",
+          "reading": "おとうと",
+          "meaning": "younger brother",
+          "baseForm": "弟",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "アル"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "全身",
+          "reading": "ぜんしん",
+          "meaning": "the whole body; full-length (portrait)",
+          "baseForm": "全身",
+          "level": "N2"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "奪",
+          "reading": "うば",
+          "meaning": "to snatch away",
+          "baseForm": "奪う",
+          "level": "N3"
+        },
+        {
+          "surface": "われ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "兄",
+          "reading": "あに",
+          "meaning": "(humble) older brother",
+          "baseForm": "兄",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "エド"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "左足"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "失"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "いま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "消",
+          "reading": "け",
+          "meaning": "to erase; to turn off power",
+          "baseForm": "消す",
+          "level": "N5"
+        },
+        {
+          "surface": "え"
+        },
+        {
+          "surface": "ゆく"
+        },
+        {
+          "surface": "弟",
+          "reading": "おとうと",
+          "meaning": "younger brother",
+          "baseForm": "弟",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "魂"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "つなぎ止める"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "エド"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "自ら"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "右腕"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "犠牲",
+          "reading": "ぎせい",
+          "meaning": "sacrifice",
+          "baseForm": "犠牲",
+          "level": "N1"
+        },
+        {
+          "surface": "にし"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "巨大",
+          "reading": "きょだい",
+          "meaning": "huge; gigantic; enormous",
+          "baseForm": "巨大",
+          "level": "N3"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "鎧"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "アル"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "魂"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "定着"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "せ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "立",
+          "reading": "た",
+          "meaning": "to stand",
+          "baseForm": "立つ",
+          "level": "N5"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "歩",
+          "reading": "ふ",
+          "meaning": "pawn (in chess or shogi)",
+          "baseForm": "歩",
+          "level": "N1"
+        },
+        {
+          "surface": "け"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "前",
+          "reading": "まえ",
+          "meaning": "before",
+          "baseForm": "前",
+          "level": "N5"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "進",
+          "reading": "すす",
+          "meaning": "to make progress",
+          "baseForm": "進む",
+          "level": "N4"
+        },
+        {
+          "surface": "め"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "あんた"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "立派"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "足",
+          "reading": "あし",
+          "meaning": "foot; leg",
+          "baseForm": "足",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "つい"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "いる",
+          "meaning": "to be; to have (used for people and animals)",
+          "baseForm": "いる",
+          "level": "N5"
+        },
+        {
+          "surface": "じゃ"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "自ら"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "鼓舞"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "二人",
+          "reading": "ふたり",
+          "meaning": "two people; pair",
+          "baseForm": "二人",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "立ち上がり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "失"
+        },
+        {
+          "surface": "っ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "身体"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "取り戻す"
+        },
+        {
+          "surface": "手がかり"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "求め"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "エド"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "最年少"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "国家"
+        },
+        {
+          "surface": "錬金術"
+        },
+        {
+          "surface": "師"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "資格"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "取得"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "道",
+          "reading": "みち",
+          "meaning": "street",
+          "baseForm": "道",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "選"
+        },
+        {
+          "surface": "ん"
+        },
+        {
+          "surface": "だ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "錬成は無残にも失敗し、反動によって弟のアルは全身を奪われ、兄のエドは左足を失ってしまいました。",
+          "literalEn": "錬成 [topic] 無残 [at/to] [also] 失敗 反動 によって younger brother ['s / of] アル [topic] the whole body [obj] to snatch away われ  older brother ['s / of] エド [topic] 左足 [obj] って しま いま した",
+          "naturalEn": "The transmutation failed disastrously; in the rebound, younger brother Al lost his entire body, and elder brother Ed lost his left leg.",
+          "tokens": [
+            {
+              "surface": "錬成"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "無残"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "失敗"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "反動"
+            },
+            {
+              "surface": "によって"
+            },
+            {
+              "surface": "弟",
+              "reading": "おとうと",
+              "meaning": "younger brother",
+              "baseForm": "弟",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "アル"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "全身",
+              "reading": "ぜんしん",
+              "meaning": "the whole body; full-length (portrait)",
+              "baseForm": "全身",
+              "level": "N2"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "奪",
+              "reading": "うば",
+              "meaning": "to snatch away",
+              "baseForm": "奪う",
+              "level": "N3"
+            },
+            {
+              "surface": "われ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "兄",
+              "reading": "あに",
+              "meaning": "(humble) older brother",
+              "baseForm": "兄",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "エド"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "左足"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "失"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "消えゆく弟の魂をつなぎ止めるため、エドは自らの右腕を犠牲にして巨大な鎧にアルの魂を定着させました。",
+          "literalEn": "to erase ゆく younger brother ['s / of] [obj] つなぎ止める ため エド [topic] 自ら ['s / of] 右腕 [obj] sacrifice にし [and] huge [at/to] アル ['s / of] [obj] 定着 した",
+          "naturalEn": "To tether his vanishing brother's soul, Ed sacrificed his own right arm, binding Alphonse's soul to a colossal suit of armor.",
+          "tokens": [
+            {
+              "surface": "消",
+              "reading": "け",
+              "meaning": "to erase; to turn off power",
+              "baseForm": "消す",
+              "level": "N5"
+            },
+            {
+              "surface": "え"
+            },
+            {
+              "surface": "ゆく"
+            },
+            {
+              "surface": "弟",
+              "reading": "おとうと",
+              "meaning": "younger brother",
+              "baseForm": "弟",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "魂"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "つなぎ止める"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "エド"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "自ら"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "右腕"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "犠牲",
+              "reading": "ぎせい",
+              "meaning": "sacrifice",
+              "baseForm": "犠牲",
+              "level": "N1"
+            },
+            {
+              "surface": "にし"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "巨大",
+              "reading": "きょだい",
+              "meaning": "huge; gigantic; enormous",
+              "baseForm": "巨大",
+              "level": "N3"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "鎧"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "アル"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "魂"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "定着"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「立って歩け、前へ進め。あんたには立派な足がついているじゃないか」と自らを鼓舞し、二人は立ち上がりました。",
+          "literalEn": "to stand って pawn before [toward] to make progress あんた [at/to] [topic] 立派 foot [subj] つい [and] to be じゃ [not] [?] [with/and] 自ら [obj] 鼓舞 two people [topic] 立ち上がり した",
+          "naturalEn": "Inspiring themselves with 'Stand up and walk, move forward; don't you have fine legs of your own?', the two rose again.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "立",
+              "reading": "た",
+              "meaning": "to stand",
+              "baseForm": "立つ",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "歩",
+              "reading": "ふ",
+              "meaning": "pawn (in chess or shogi)",
+              "baseForm": "歩",
+              "level": "N1"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "前",
+              "reading": "まえ",
+              "meaning": "before",
+              "baseForm": "前",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "進",
+              "reading": "すす",
+              "meaning": "to make progress",
+              "baseForm": "進む",
+              "level": "N4"
+            },
+            {
+              "surface": "め"
+            },
+            {
+              "surface": "。"
+            },
+            {
+              "surface": "あんた"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "立派"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "足",
+              "reading": "あし",
+              "meaning": "foot; leg",
+              "baseForm": "足",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "つい"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "じゃ"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "自ら"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "鼓舞"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "二人",
+              "reading": "ふたり",
+              "meaning": "two people; pair",
+              "baseForm": "二人",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "立ち上がり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "失った身体を取り戻す手がかりを求めて、エドは最年少で国家錬金術師の資格を取得する道を選んだのです。",
+          "literalEn": "[past] 身体 [obj] 取り戻す 手がかり [obj] 求め [and] エド [topic] 最年少 [in/by] 国家 錬金術 ['s / of] 資格 [obj] 取得 to do street [obj] [is] ['s / of] [is]",
+          "naturalEn": "Seeking clues to recover their lost physical bodies, Ed chose the arduous path of becoming the youngest State Alchemist in history.",
+          "tokens": [
+            {
+              "surface": "失"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "身体"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "取り戻す"
+            },
+            {
+              "surface": "手がかり"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "求め"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "エド"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "最年少"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "国家"
+            },
+            {
+              "surface": "錬金術"
+            },
+            {
+              "surface": "師"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "資格"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "取得"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "道",
+              "reading": "みち",
+              "meaning": "street",
+              "baseForm": "道",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "選"
+            },
+            {
+              "surface": "ん"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "機械鎧と呼ばれる義手と義足を装着したエドは、「鋼の錬金術師」の二つ名で広く知られるようになりました。伝説の増幅器である「賢者の石」を探す旅の途中で、兄弟は各地で様々な人々の温もりと悲哀に触れました。しかし調査を進めるうちに、賢者の石の原材料が生きた人間そのものであるという恐ろしい真相に突き当たりました。他人の命を犠牲にしてまで自分たちの身体を取り戻すことなどできないと、二人は激しく葛藤しました。",
+      "en": "Fitted with prosthetic limbs known as automail, Ed came to be widely known by the moniker 'the Fullmetal Alchemist.' During their voyage searching for the legendary amplifier, the 'Philosopher's Stone,' the brothers touched upon the warmth and sorrow of diverse people. However, as their investigation deepened, they struck upon the horrific revelation that the raw material for the stone was living humans themselves. The brothers wrestled with profound inner turmoil, declaring that they could never reclaim their bodies at the cost of other people's lives.",
+      "tokens": [
+        {
+          "surface": "機械",
+          "reading": "きかい",
+          "meaning": "machine; mechanism",
+          "baseForm": "機械",
+          "level": "N3"
+        },
+        {
+          "surface": "鎧"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "呼ばれる"
+        },
+        {
+          "surface": "義手"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "義足"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "装着"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "エド"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "鋼"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "錬金術"
+        },
+        {
+          "surface": "師"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "二つ",
+          "reading": "ふたつ",
+          "meaning": "two things",
+          "baseForm": "二つ",
+          "level": "N5"
+        },
+        {
+          "surface": "名"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "広",
+          "reading": "ひろ",
+          "meaning": "spacious; wide",
+          "baseForm": "広い",
+          "level": "N5"
+        },
+        {
+          "surface": "く"
+        },
+        {
+          "surface": "知",
+          "reading": "し",
+          "meaning": "to know",
+          "baseForm": "知る",
+          "level": "N5"
+        },
+        {
+          "surface": "られる"
+        },
+        {
+          "surface": "よう"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "なり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "伝説",
+          "reading": "でんせつ",
+          "meaning": "tradition; legend; folklore",
+          "baseForm": "伝説",
+          "level": "N1"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "増幅器"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "賢者"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "石",
+          "reading": "いし",
+          "meaning": "stone",
+          "baseForm": "石",
+          "level": "N4"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "探す"
+        },
+        {
+          "surface": "旅",
+          "reading": "たび",
+          "meaning": "travel; trip; journey",
+          "baseForm": "旅",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "途中",
+          "reading": "とちゅう",
+          "meaning": "on the way",
+          "baseForm": "途中",
+          "level": "N4"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "兄弟",
+          "reading": "きょうだい",
+          "meaning": "(humble) siblings",
+          "baseForm": "兄弟",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "各地"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "様々"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "人々",
+          "reading": "ひと々",
+          "meaning": "person",
+          "baseForm": "人",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "温もり"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "悲哀"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "触れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "しかし",
+          "meaning": "however",
+          "baseForm": "しかし",
+          "level": "N5"
+        },
+        {
+          "surface": "調査"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "進める"
+        },
+        {
+          "surface": "うち",
+          "meaning": "within",
+          "baseForm": "うち",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "賢者"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "石",
+          "reading": "いし",
+          "meaning": "stone",
+          "baseForm": "石",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "原材料"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "生き",
+          "reading": "なまき",
+          "meaning": "draft (beer); raw; unprocessed",
+          "baseForm": "生",
+          "level": "N3"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "人間"
+        },
+        {
+          "surface": "そのもの"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "恐ろしい",
+          "reading": "おそろしい",
+          "meaning": "terrible; dreadful",
+          "baseForm": "恐ろしい",
+          "level": "N3"
+        },
+        {
+          "surface": "真相"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "突き"
+        },
+        {
+          "surface": "当たり",
+          "reading": "あたり",
+          "meaning": "hit; success; reaching the mark",
+          "baseForm": "当たり",
+          "level": "N1"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "他人"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "命",
+          "reading": "いのち",
+          "meaning": "command; decree; life",
+          "baseForm": "命",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "犠牲",
+          "reading": "ぎせい",
+          "meaning": "sacrifice",
+          "baseForm": "犠牲",
+          "level": "N1"
+        },
+        {
+          "surface": "にし"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "まで"
+        },
+        {
+          "surface": "自分",
+          "reading": "じぶん",
+          "meaning": "oneself",
+          "baseForm": "自分",
+          "level": "N5"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "身体"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "取り戻す"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "など",
+          "meaning": "et cetera",
+          "baseForm": "など",
+          "level": "N5"
+        },
+        {
+          "surface": "でき"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "二人",
+          "reading": "ふたり",
+          "meaning": "two people; pair",
+          "baseForm": "二人",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "激",
+          "reading": "はげ",
+          "meaning": "violent, chafe, enraged",
+          "baseForm": "激",
+          "level": "N1"
+        },
+        {
+          "surface": "しく"
+        },
+        {
+          "surface": "葛藤"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "機械鎧と呼ばれる義手と義足を装着したエドは、「鋼の錬金術師」の二つ名で広く知られるようになりました。",
+          "literalEn": "machine [with/and] 呼ばれる 義手 [with/and] 義足 [obj] 装着 した エド [topic] ['s / of] 錬金術 ['s / of] two things [in/by] spacious to know られる よう [at/to] なり した",
+          "naturalEn": "Fitted with prosthetic limbs known as automail, Ed came to be widely known by the moniker 'the Fullmetal Alchemist.'",
+          "tokens": [
+            {
+              "surface": "機械",
+              "reading": "きかい",
+              "meaning": "machine; mechanism",
+              "baseForm": "機械",
+              "level": "N3"
+            },
+            {
+              "surface": "鎧"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "呼ばれる"
+            },
+            {
+              "surface": "義手"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "義足"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "装着"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "エド"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "鋼"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "錬金術"
+            },
+            {
+              "surface": "師"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "二つ",
+              "reading": "ふたつ",
+              "meaning": "two things",
+              "baseForm": "二つ",
+              "level": "N5"
+            },
+            {
+              "surface": "名"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "広",
+              "reading": "ひろ",
+              "meaning": "spacious; wide",
+              "baseForm": "広い",
+              "level": "N5"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "知",
+              "reading": "し",
+              "meaning": "to know",
+              "baseForm": "知る",
+              "level": "N5"
+            },
+            {
+              "surface": "られる"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "伝説の増幅器である「賢者の石」を探す旅の途中で、兄弟は各地で様々な人々の温もりと悲哀に触れました。",
+          "literalEn": "tradition ['s / of] 増幅器 [in/by] to be 賢者 ['s / of] stone [obj] 探す travel ['s / of] on the way [in/by]  siblings [topic] 各地 [in/by] 様々 person ['s / of] 温もり [with/and] 悲哀 [at/to] 触れ した",
+          "naturalEn": "During their voyage searching for the legendary amplifier, the 'Philosopher's Stone,' the brothers touched upon the warmth and sorrow of diverse people.",
+          "tokens": [
+            {
+              "surface": "伝説",
+              "reading": "でんせつ",
+              "meaning": "tradition; legend; folklore",
+              "baseForm": "伝説",
+              "level": "N1"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "増幅器"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "賢者"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "石",
+              "reading": "いし",
+              "meaning": "stone",
+              "baseForm": "石",
+              "level": "N4"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "探す"
+            },
+            {
+              "surface": "旅",
+              "reading": "たび",
+              "meaning": "travel; trip; journey",
+              "baseForm": "旅",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "途中",
+              "reading": "とちゅう",
+              "meaning": "on the way",
+              "baseForm": "途中",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "兄弟",
+              "reading": "きょうだい",
+              "meaning": "(humble) siblings",
+              "baseForm": "兄弟",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "各地"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "様々"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "人々",
+              "reading": "ひと々",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "温もり"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "悲哀"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "触れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "しかし調査を進めるうちに、賢者の石の原材料が生きた人間そのものであるという恐ろしい真相に突き当たりました。",
+          "literalEn": "however 調査 [obj] 進める within [at/to] 賢者 ['s / of] stone ['s / of] 原材料 [subj] draft [past] 人間 そのもの [in/by] to be という terrible 真相 [at/to] 突き hit した",
+          "naturalEn": "However, as their investigation deepened, they struck upon the horrific revelation that the raw material for the stone was living humans themselves.",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "調査"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "進める"
+            },
+            {
+              "surface": "うち",
+              "meaning": "within",
+              "baseForm": "うち",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "賢者"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "石",
+              "reading": "いし",
+              "meaning": "stone",
+              "baseForm": "石",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "原材料"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "生き",
+              "reading": "なまき",
+              "meaning": "draft (beer); raw; unprocessed",
+              "baseForm": "生",
+              "level": "N3"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "人間"
+            },
+            {
+              "surface": "そのもの"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "恐ろしい",
+              "reading": "おそろしい",
+              "meaning": "terrible; dreadful",
+              "baseForm": "恐ろしい",
+              "level": "N3"
+            },
+            {
+              "surface": "真相"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "突き"
+            },
+            {
+              "surface": "当たり",
+              "reading": "あたり",
+              "meaning": "hit; success; reaching the mark",
+              "baseForm": "当たり",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "他人の命を犠牲にしてまで自分たちの身体を取り戻すことなどできないと、二人は激しく葛藤しました。",
+          "literalEn": "他人 ['s / of] command [obj] sacrifice にし [and] [until] oneself たち ['s / of] 身体 [obj] 取り戻す thing et cetera でき [not] [with/and] two people [topic] violent しく 葛藤 しま した",
+          "naturalEn": "The brothers wrestled with profound inner turmoil, declaring that they could never reclaim their bodies at the cost of other people's lives.",
+          "tokens": [
+            {
+              "surface": "他人"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "命",
+              "reading": "いのち",
+              "meaning": "command; decree; life",
+              "baseForm": "命",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "犠牲",
+              "reading": "ぎせい",
+              "meaning": "sacrifice",
+              "baseForm": "犠牲",
+              "level": "N1"
+            },
+            {
+              "surface": "にし"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "まで"
+            },
+            {
+              "surface": "自分",
+              "reading": "じぶん",
+              "meaning": "oneself",
+              "baseForm": "自分",
+              "level": "N5"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "身体"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "取り戻す"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "など",
+              "meaning": "et cetera",
+              "baseForm": "など",
+              "level": "N5"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "二人",
+              "reading": "ふたり",
+              "meaning": "two people; pair",
+              "baseForm": "二人",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "激",
+              "reading": "はげ",
+              "meaning": "violent, chafe, enraged",
+              "baseForm": "激",
+              "level": "N1"
+            },
+            {
+              "surface": "しく"
+            },
+            {
+              "surface": "葛藤"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "国全体を巨大な錬成陣に見立てて支配を目論む謎の黒幕「お父様」の陰謀が次第に明らかになっていきました。マスタング大佐をはじめとする信頼できる仲間たちと共に、兄弟は国家規模の危機を阻止すべく立ち向かいました。神の力を手に入れようと傲慢に振る舞う敵に対して、人間が持つ不完全さと助け合いの尊さを叫び続けました。最終決戦においてエドは、弟を取り戻すための最後の代価として、自らの「錬金術を使う能力そのもの」を差し出しました。",
+      "en": "The conspiracy of a shadowy mastermind known as 'Father,' who intended to treat the entire nation as a gigantic transmutation circle for dominion, unfolded. Alongside trusted comrades including Colonel Mustang, the brothers stood firm to thwart a catastrophe of nationwide magnitude. Against the foe behaving with reckless arrogance to seize the power of god, they proclaimed the virtue of human imperfection and mutual support. In the final showdown, Ed offered his very 'ability to perform alchemy' as the ultimate collateral to reclaim his brother.",
+      "tokens": [
+        {
+          "surface": "国",
+          "reading": "くに",
+          "meaning": "country",
+          "baseForm": "国",
+          "level": "N5"
+        },
+        {
+          "surface": "全体"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "巨大",
+          "reading": "きょだい",
+          "meaning": "huge; gigantic; enormous",
+          "baseForm": "巨大",
+          "level": "N3"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "錬成"
+        },
+        {
+          "surface": "陣"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "見立て"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "支配"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "目論む"
+        },
+        {
+          "surface": "謎"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "黒幕"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "お"
+        },
+        {
+          "surface": "父様"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "陰謀"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "次第に"
+        },
+        {
+          "surface": "明らか"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "いき"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "マスタング"
+        },
+        {
+          "surface": "大佐"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "はじめ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "信頼"
+        },
+        {
+          "surface": "できる",
+          "meaning": "to be able to",
+          "baseForm": "できる",
+          "level": "N5"
+        },
+        {
+          "surface": "仲間"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "と共に",
+          "reading": "とともに",
+          "meaning": "together with; along with",
+          "baseForm": "と共に",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "兄弟",
+          "reading": "きょうだい",
+          "meaning": "(humble) siblings",
+          "baseForm": "兄弟",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "国家"
+        },
+        {
+          "surface": "規模"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "危機"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "阻止"
+        },
+        {
+          "surface": "すべ"
+        },
+        {
+          "surface": "く"
+        },
+        {
+          "surface": "立ち",
+          "reading": "たち",
+          "meaning": "to stand",
+          "baseForm": "立つ",
+          "level": "N5"
+        },
+        {
+          "surface": "向かい",
+          "reading": "むかい",
+          "meaning": "facing; opposite; across the street",
+          "baseForm": "向かい",
+          "level": "N3"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "神"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "力",
+          "reading": "ちから",
+          "meaning": "strength; power",
+          "baseForm": "力",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "手",
+          "reading": "て",
+          "meaning": "hand",
+          "baseForm": "手",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "入れ",
+          "reading": "はいれ",
+          "meaning": "to enter; to contain",
+          "baseForm": "入る",
+          "level": "N5"
+        },
+        {
+          "surface": "よう"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "傲慢"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "振る舞う"
+        },
+        {
+          "surface": "敵",
+          "reading": "てき",
+          "meaning": "enemy; rival",
+          "baseForm": "敵",
+          "level": "N3"
+        },
+        {
+          "surface": "に対して"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "人間"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "持つ"
+        },
+        {
+          "surface": "不完全"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "助け",
+          "reading": "たすけ",
+          "meaning": "assistance",
+          "baseForm": "助け",
+          "level": "N1"
+        },
+        {
+          "surface": "合"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "尊"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "叫び",
+          "reading": "さけび",
+          "meaning": "shout; scream; outcry",
+          "baseForm": "叫び",
+          "level": "N1"
+        },
+        {
+          "surface": "続"
+        },
+        {
+          "surface": "け"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "最終"
+        },
+        {
+          "surface": "決戦"
+        },
+        {
+          "surface": "において"
+        },
+        {
+          "surface": "エド"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "弟",
+          "reading": "おとうと",
+          "meaning": "younger brother",
+          "baseForm": "弟",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "取り戻す"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "最後",
+          "reading": "さいご",
+          "meaning": "last; end",
+          "baseForm": "最後",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "代価"
+        },
+        {
+          "surface": "として"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "自ら"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "錬金術"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "使う"
+        },
+        {
+          "surface": "能力"
+        },
+        {
+          "surface": "そのもの"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "差し"
+        },
+        {
+          "surface": "出",
+          "reading": "だ",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "国全体を巨大な錬成陣に見立てて支配を目論む謎の黒幕「お父様」の陰謀が次第に明らかになっていきました。",
+          "literalEn": "country 全体 [obj] huge 錬成 [at/to] 見立て [and] 支配 [obj] 目論む ['s / of] 黒幕 父様 ['s / of] 陰謀 [subj] 次第に 明らか [at/to] って いき した",
+          "naturalEn": "The conspiracy of a shadowy mastermind known as 'Father,' who intended to treat the entire nation as a gigantic transmutation circle for dominion, unfolded.",
+          "tokens": [
+            {
+              "surface": "国",
+              "reading": "くに",
+              "meaning": "country",
+              "baseForm": "国",
+              "level": "N5"
+            },
+            {
+              "surface": "全体"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "巨大",
+              "reading": "きょだい",
+              "meaning": "huge; gigantic; enormous",
+              "baseForm": "巨大",
+              "level": "N3"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "錬成"
+            },
+            {
+              "surface": "陣"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "見立て"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "支配"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "目論む"
+            },
+            {
+              "surface": "謎"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "黒幕"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "父様"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "陰謀"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "次第に"
+            },
+            {
+              "surface": "明らか"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "マスタング大佐をはじめとする信頼できる仲間たちと共に、兄弟は国家規模の危機を阻止すべく立ち向かいました。",
+          "literalEn": "マスタング 大佐 [obj] はじめ [with/and] to do 信頼 to be able to 仲間 たち together with  siblings [topic] 国家 規模 ['s / of] 危機 [obj] 阻止 すべ to stand facing した",
+          "naturalEn": "Alongside trusted comrades including Colonel Mustang, the brothers stood firm to thwart a catastrophe of nationwide magnitude.",
+          "tokens": [
+            {
+              "surface": "マスタング"
+            },
+            {
+              "surface": "大佐"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "はじめ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "信頼"
+            },
+            {
+              "surface": "できる",
+              "meaning": "to be able to",
+              "baseForm": "できる",
+              "level": "N5"
+            },
+            {
+              "surface": "仲間"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "と共に",
+              "reading": "とともに",
+              "meaning": "together with; along with",
+              "baseForm": "と共に",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "兄弟",
+              "reading": "きょうだい",
+              "meaning": "(humble) siblings",
+              "baseForm": "兄弟",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "国家"
+            },
+            {
+              "surface": "規模"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "危機"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "阻止"
+            },
+            {
+              "surface": "すべ"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "立ち",
+              "reading": "たち",
+              "meaning": "to stand",
+              "baseForm": "立つ",
+              "level": "N5"
+            },
+            {
+              "surface": "向かい",
+              "reading": "むかい",
+              "meaning": "facing; opposite; across the street",
+              "baseForm": "向かい",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "神の力を手に入れようと傲慢に振る舞う敵に対して、人間が持つ不完全さと助け合いの尊さを叫び続けました。",
+          "literalEn": "['s / of] strength [obj] hand [at/to] to enter よう [with/and] 傲慢 [at/to] 振る舞う enemy に対して 人間 [subj] 持つ 不完全 [with/and] assistance ['s / of] [obj] shout した",
+          "naturalEn": "Against the foe behaving with reckless arrogance to seize the power of god, they proclaimed the virtue of human imperfection and mutual support.",
+          "tokens": [
+            {
+              "surface": "神"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "力",
+              "reading": "ちから",
+              "meaning": "strength; power",
+              "baseForm": "力",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "手",
+              "reading": "て",
+              "meaning": "hand",
+              "baseForm": "手",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入れ",
+              "reading": "はいれ",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "傲慢"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "振る舞う"
+            },
+            {
+              "surface": "敵",
+              "reading": "てき",
+              "meaning": "enemy; rival",
+              "baseForm": "敵",
+              "level": "N3"
+            },
+            {
+              "surface": "に対して"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "人間"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "持つ"
+            },
+            {
+              "surface": "不完全"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "助け",
+              "reading": "たすけ",
+              "meaning": "assistance",
+              "baseForm": "助け",
+              "level": "N1"
+            },
+            {
+              "surface": "合"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "尊"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "叫び",
+              "reading": "さけび",
+              "meaning": "shout; scream; outcry",
+              "baseForm": "叫び",
+              "level": "N1"
+            },
+            {
+              "surface": "続"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "最終決戦においてエドは、弟を取り戻すための最後の代価として、自らの「錬金術を使う能力そのもの」を差し出しました。",
+          "literalEn": "最終 決戦 において エド [topic] younger brother [obj] 取り戻す ため ['s / of] last ['s / of] 代価 として 自ら ['s / of] 錬金術 [obj] 使う 能力 そのもの [obj] 差し to put out しま した",
+          "naturalEn": "In the final showdown, Ed offered his very 'ability to perform alchemy' as the ultimate collateral to reclaim his brother.",
+          "tokens": [
+            {
+              "surface": "最終"
+            },
+            {
+              "surface": "決戦"
+            },
+            {
+              "surface": "において"
+            },
+            {
+              "surface": "エド"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "弟",
+              "reading": "おとうと",
+              "meaning": "younger brother",
+              "baseForm": "弟",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "取り戻す"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "最後",
+              "reading": "さいご",
+              "meaning": "last; end",
+              "baseForm": "最後",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "代価"
+            },
+            {
+              "surface": "として"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "自ら"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "錬金術"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "使う"
+            },
+            {
+              "surface": "能力"
+            },
+            {
+              "surface": "そのもの"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "差し"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "錬金術が使えなくなっても大切な仲間や家族がいるという真理に辿り着いた時、真理の扉は彼を笑顔で称えました。痛みを知る者だからこそ他人に優しくなれるという教訓を胸に、兄弟の新しい旅が爽やかに始まったのでした。",
+      "en": "When he arrived at the realization that he still had precious comrades and family even without alchemy, the Truth praised him with a smile. With the profound lesson that only those who know pain can show true kindness to others, the brothers' new journey began with a refreshing stride.",
+      "tokens": [
+        {
+          "surface": "錬金術"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "使",
+          "reading": "つか",
+          "meaning": "to use",
+          "baseForm": "使う",
+          "level": "N5"
+        },
+        {
+          "surface": "え"
+        },
+        {
+          "surface": "なく"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "大切",
+          "reading": "たいせつ",
+          "meaning": "important",
+          "baseForm": "大切",
+          "level": "N5"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "仲間"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "meaning": "family",
+          "baseForm": "家族",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "いる",
+          "meaning": "to be; to have (used for people and animals)",
+          "baseForm": "いる",
+          "level": "N5"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "真理"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "辿"
+        },
+        {
+          "surface": "り"
+        },
+        {
+          "surface": "着い",
+          "reading": "ちゃくい",
+          "meaning": "counter for suits of clothing; arriving at ..",
+          "baseForm": "着",
+          "level": "N1"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "時",
+          "reading": "とき",
+          "meaning": "time; hour; occasion",
+          "baseForm": "時",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "真理"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "扉"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "笑顔",
+          "reading": "えがお",
+          "meaning": "smiling face",
+          "baseForm": "笑顔",
+          "level": "N3"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "称え"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "痛み"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "知る"
+        },
+        {
+          "surface": "者"
+        },
+        {
+          "surface": "だからこそ"
+        },
+        {
+          "surface": "他人"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "優",
+          "reading": "やさ",
+          "meaning": "gentle; affectionate",
+          "baseForm": "優",
+          "level": "N1"
+        },
+        {
+          "surface": "しく"
+        },
+        {
+          "surface": "なれる"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "教訓"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "胸"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "兄弟",
+          "reading": "きょうだい",
+          "meaning": "(humble) siblings",
+          "baseForm": "兄弟",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "新しい",
+          "reading": "あたらしい",
+          "meaning": "new",
+          "baseForm": "新しい",
+          "level": "N5"
+        },
+        {
+          "surface": "旅",
+          "reading": "たび",
+          "meaning": "travel; trip; journey",
+          "baseForm": "旅",
+          "level": "N3"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "爽やか"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "始"
+        },
+        {
+          "surface": "まっ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "ので"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "錬金術が使えなくなっても大切な仲間や家族がいるという真理に辿り着いた時、真理の扉は彼を笑顔で称えました。",
+          "literalEn": "錬金術 [subj] to use なく って [also] important 仲間 family [subj] to be という 真理 [at/to] counter for suits of clothing [past] time 真理 ['s / of] [topic] he [obj] smiling face [in/by] 称え した",
+          "naturalEn": "When he arrived at the realization that he still had precious comrades and family even without alchemy, the Truth praised him with a smile.",
+          "tokens": [
+            {
+              "surface": "錬金術"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "使",
+              "reading": "つか",
+              "meaning": "to use",
+              "baseForm": "使う",
+              "level": "N5"
+            },
+            {
+              "surface": "え"
+            },
+            {
+              "surface": "なく"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "大切",
+              "reading": "たいせつ",
+              "meaning": "important",
+              "baseForm": "大切",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "仲間"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "家族",
+              "reading": "かぞく",
+              "meaning": "family",
+              "baseForm": "家族",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "真理"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "辿"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "着い",
+              "reading": "ちゃくい",
+              "meaning": "counter for suits of clothing; arriving at ..",
+              "baseForm": "着",
+              "level": "N1"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "時",
+              "reading": "とき",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "真理"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "扉"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "笑顔",
+              "reading": "えがお",
+              "meaning": "smiling face",
+              "baseForm": "笑顔",
+              "level": "N3"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "称え"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "痛みを知る者だからこそ他人に優しくなれるという教訓を胸に、兄弟の新しい旅が爽やかに始まったのでした。",
+          "literalEn": "痛み [obj] 知る だからこそ 他人 [at/to] gentle しく なれる という 教訓 [obj] [at/to]  siblings ['s / of] new travel [subj] 爽やか [at/to] まっ [past] ので した",
+          "naturalEn": "With the profound lesson that only those who know pain can show true kindness to others, the brothers' new journey began with a refreshing stride.",
+          "tokens": [
+            {
+              "surface": "痛み"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "知る"
+            },
+            {
+              "surface": "者"
+            },
+            {
+              "surface": "だからこそ"
+            },
+            {
+              "surface": "他人"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "優",
+              "reading": "やさ",
+              "meaning": "gentle; affectionate",
+              "baseForm": "優",
+              "level": "N1"
+            },
+            {
+              "surface": "しく"
+            },
+            {
+              "surface": "なれる"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "教訓"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "胸"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "兄弟",
+              "reading": "きょうだい",
+              "meaning": "(humble) siblings",
+              "baseForm": "兄弟",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "新しい",
+              "reading": "あたらしい",
+              "meaning": "new",
+              "baseForm": "新しい",
+              "level": "N5"
+            },
+            {
+              "surface": "旅",
+              "reading": "たび",
+              "meaning": "travel; trip; journey",
+              "baseForm": "旅",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "爽やか"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "始"
+            },
+            {
+              "surface": "まっ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "ので"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "エルリック兄弟が身体を失うことになった禁忌の錬金術は何ですか。",
+      "questionEn": "What taboo alchemical act caused the Elric brothers to lose their bodies?",
+      "options": [
+        "亡くなった母親を蘇らせようとした人体錬成",
+        "国家機密の錬成陣を勝手に書き換えたこと",
+        "軍の研究所から賢者の石を盗み出したこと",
+        "金を大量に錬成して市場を混乱させたこと"
+      ],
+      "optionsEn": [
+        "Human Transmutation attempted to revive their deceased mother",
+        "Arbitrarily rewriting classified military transmutation circles",
+        "Stealing a Philosopher's Stone from a state research facility",
+        "Transmuting vast heaps of gold to disrupt the financial market"
+      ],
+      "answerIndex": 0,
+      "explanation": "死んだ人間を蘇らせようとする「人体錬成」は錬金術最大のタブーであり、重い代償を支払うことになりました。"
+    },
+    {
+      "question": "兄弟が探していた「賢者の石」に隠されていた恐ろしい真実とは何ですか。",
+      "questionEn": "What was the horrifying truth concealed within the 'Philosopher's Stone' they sought?",
+      "options": [
+        "生きた多数の人間の命を原材料にして作られていること",
+        "使うと持ち主の記憶がすべて消えてしまうこと",
+        "触れたものをすべて猛毒に変えてしまうこと",
+        "実はただの赤く染められたガラス玉であること"
+      ],
+      "optionsEn": [
+        "It is manufactured using countless living human lives as raw material",
+        "Using it wipes away all memories of the wielder",
+        "Whatever it touches turns into lethal poison",
+        "It is actually merely an ordinary piece of red-dyed glass"
+      ],
+      "answerIndex": 0,
+      "explanation": "等価交換の代価として、生きた大勢の人間を犠牲にして凝縮された結晶こそが賢者の石の正体でした。"
+    },
+    {
+      "question": "エドが弟の身体を取り戻すために最後に真理へ差し出したものは何ですか。",
+      "questionEn": "What did Ed surrender to the Truth as the final exchange to restore his brother's body?",
+      "options": [
+        "自らの錬金術を使う能力そのもの（真理の扉）",
+        "国家錬金術師の銀時計とすべての財産",
+        "自分の残されたもう一方の手足",
+        "アメストリス国の軍事最高権力"
+      ],
+      "optionsEn": [
+        "His very ability to perform alchemy (the Gate of Truth itself)",
+        "His State Alchemist silver pocket watch and all financial assets",
+        "His remaining physical limbs",
+        "The supreme military authority of the nation of Amestris"
+      ],
+      "answerIndex": 0,
+      "explanation": "「錬金術がなくてもみんながいる」と悟ったエドは、錬金術の力を手放すことで弟の肉体を取り戻しました。"
+    }
+  ]
+}

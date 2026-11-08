@@ -1,7 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { useRouter } from "next/navigation";
+import { Suspense, useMemo, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowRight, Eye, EyeOff, Sparkles } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
 import { saveGameSession } from "@/lib/game-core/storage";
@@ -58,10 +58,22 @@ const SUB_MODE_CARDS: ReadonlyArray<{
 
 const SESSION_SIZES: readonly PhoneticTrapSessionSize[] = [10, 20, 30];
 
-export default function PhoneticTrapSetupPage() {
+function PhoneticTrapSetupContent() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const levelParam = searchParams.get("level")?.toUpperCase();
+
+  const initialLevels = useMemo<PhoneticTrapLevel[]>(() => {
+    if (!levelParam) return ["N5"];
+    if (levelParam === "ALL") return [...PHONETIC_TRAP_LEVELS];
+    if (PHONETIC_TRAP_LEVELS.includes(levelParam as PhoneticTrapLevel)) {
+      return [levelParam as PhoneticTrapLevel];
+    }
+    return ["N5"];
+  }, [levelParam]);
+
   const [subMode, setSubMode] = useState<PhoneticTrapSubMode>("reading");
-  const [selectedLevels, setSelectedLevels] = useState<PhoneticTrapLevel[]>(["N5"]);
+  const [selectedLevels, setSelectedLevels] = useState<PhoneticTrapLevel[]>(initialLevels);
   const [size, setSize] = useState<PhoneticTrapSessionSize>(10);
   const [showEnglishHint, setShowEnglishHint] = useState<boolean>(true);
   const [showFurigana, setShowFurigana] = useState<boolean>(false);
@@ -394,5 +406,13 @@ export default function PhoneticTrapSetupPage() {
         </div>
       </section>
     </GameLayout>
+  );
+}
+
+export default function PhoneticTrapSetupPage() {
+  return (
+    <Suspense fallback={null}>
+      <PhoneticTrapSetupContent />
+    </Suspense>
   );
 }

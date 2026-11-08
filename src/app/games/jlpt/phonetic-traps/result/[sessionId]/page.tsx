@@ -144,8 +144,10 @@ export default function PhoneticTrapResultPage() {
       count: summary.vulnerabilityCounts["Long Vowel Trap"] ?? 0,
     },
     {
-      label: "Dakuten / Rendaku Traps (連濁)",
-      count: summary.vulnerabilityCounts["Dakuten / Rendaku Trap"] ?? 0,
+      label: "Dakuten & Counter Traps (連濁・助数詞)",
+      count:
+        (summary.vulnerabilityCounts["Dakuten / Rendaku Trap"] ?? 0) +
+        (summary.vulnerabilityCounts["Counter Rendaku Trap"] ?? 0),
     },
     {
       label: "Small っ / Yōon Traps (促音・拗音)",
@@ -154,8 +156,10 @@ export default function PhoneticTrapResultPage() {
         (summary.vulnerabilityCounts["Nasal ん / Mora Trap"] ?? 0),
     },
     {
-      label: "Look-Alike Kanji (同音・類似字)",
-      count: summary.vulnerabilityCounts["Look-Alike Kanji Trap"] ?? 0,
+      label: "Look-Alike & Katakana (類似字・外来語)",
+      count:
+        (summary.vulnerabilityCounts["Look-Alike Kanji Trap"] ?? 0) +
+        (summary.vulnerabilityCounts["Katakana Loanword Trap"] ?? 0),
     },
   ];
 

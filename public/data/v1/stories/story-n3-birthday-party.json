@@ -1,0 +1,4373 @@
+{
+  "id": "story-n3-birthday-party",
+  "title": "サプライズ誕生日会：秘密の計画と友情",
+  "titleRomaji": "Sapuraizu Tanjoubikai: Himitsu no Keikaku to Yuujou",
+  "titleEn": "Surprise Birthday Party: Secret Plans and Friendship",
+  "level": "N3",
+  "category": "Everyday Life",
+  "tags": [
+    "Everyday Life",
+    "N3",
+    "Friendship",
+    "Celebration",
+    "Planning"
+  ],
+  "paragraphs": [
+    {
+      "ja": "来週の日曜日は、サークルの仲間である健太くんの二十四回目の誕生日を迎えることになっていました。日頃からみんなを笑わせてくれるムードメーカーの彼のために、友人五人で極秘のサプライズパーティーを企画しました。本人に計画が漏れないよう、健太くんを除いた専用のグループチャットを作成して綿密な打ち合わせを重ねました。「誕生日の当日は二人だけで軽くカフェに行く約束にして、油断させて会場へ連れ出そう」という作戦に決まりました。",
+      "en": "Next Sunday was set to mark the twenty-fourth birthday of our clubmate Kenta. For him, who always acted as the mood maker making everyone laugh, five friends organized a top-secret surprise party. To prevent the plans from leaking to him, we created a private chat group excluding Kenta and held meticulous discussions. We settled on a strategy: 'Let us make a casual promise to visit a café with just one person on the day, catching him off guard before leading him to the venue.'",
+      "tokens": [
+        {
+          "surface": "来週",
+          "reading": "らいしゅう",
+          "meaning": "next week",
+          "baseForm": "来週",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "日曜日",
+          "reading": "にちようび",
+          "meaning": "Sunday",
+          "baseForm": "日曜日",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "サークル"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "仲間"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "健太"
+        },
+        {
+          "surface": "くん"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "二十四"
+        },
+        {
+          "surface": "回"
+        },
+        {
+          "surface": "目",
+          "reading": "め",
+          "meaning": "eye",
+          "baseForm": "目",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "誕生"
+        },
+        {
+          "surface": "日",
+          "reading": "ひ",
+          "meaning": "day; sun",
+          "baseForm": "日",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "迎える"
+        },
+        {
+          "surface": "ことに"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "いま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "日頃"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "みんな",
+          "meaning": "everyone",
+          "baseForm": "みんな",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "笑",
+          "reading": "わら",
+          "meaning": "to laugh; to smile",
+          "baseForm": "笑う",
+          "level": "N4"
+        },
+        {
+          "surface": "わせ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "くれる"
+        },
+        {
+          "surface": "ムード"
+        },
+        {
+          "surface": "メーカー"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "友人"
+        },
+        {
+          "surface": "五人"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "極秘"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "サプライ"
+        },
+        {
+          "surface": "ズ"
+        },
+        {
+          "surface": "パーティー"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "企画"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "本人"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "計画"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "漏れ"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "よう"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "健太"
+        },
+        {
+          "surface": "くん"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "除"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "専用"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "グループ"
+        },
+        {
+          "surface": "チャット"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "作成"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "綿密"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "打ち合わせ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "重ね"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "誕生"
+        },
+        {
+          "surface": "日",
+          "reading": "ひ",
+          "meaning": "day; sun",
+          "baseForm": "日",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "当日"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "二人",
+          "reading": "ふたり",
+          "meaning": "two people; pair",
+          "baseForm": "二人",
+          "level": "N5"
+        },
+        {
+          "surface": "だけ"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "軽"
+        },
+        {
+          "surface": "く"
+        },
+        {
+          "surface": "カフェ"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "行く",
+          "reading": "いく",
+          "meaning": "to go",
+          "baseForm": "行く",
+          "level": "N5"
+        },
+        {
+          "surface": "約束",
+          "reading": "やくそく",
+          "meaning": "promise",
+          "baseForm": "約束",
+          "level": "N4"
+        },
+        {
+          "surface": "にし"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "油断"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "せ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "会場",
+          "reading": "かいじょう",
+          "meaning": "assembly hall or meeting place",
+          "baseForm": "会場",
+          "level": "N4"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "連れ",
+          "reading": "つれ",
+          "meaning": "companion; company",
+          "baseForm": "連れ",
+          "level": "N3"
+        },
+        {
+          "surface": "出",
+          "reading": "だ",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "そう",
+          "meaning": "really",
+          "baseForm": "そう",
+          "level": "N4"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "作戦"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "決まり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "来週の日曜日は、サークルの仲間である健太くんの二十四回目の誕生日を迎えることになっていました。",
+          "literalEn": "next week ['s / of] Sunday [topic] サークル ['s / of] 仲間 [in/by] to be 健太 [honorific] ['s / of] 二十四 eye ['s / of] 誕生 day [obj] 迎える ことに って いま した",
+          "naturalEn": "Next Sunday was set to mark the twenty-fourth birthday of our clubmate Kenta.",
+          "tokens": [
+            {
+              "surface": "来週",
+              "reading": "らいしゅう",
+              "meaning": "next week",
+              "baseForm": "来週",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "日曜日",
+              "reading": "にちようび",
+              "meaning": "Sunday",
+              "baseForm": "日曜日",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "サークル"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "仲間"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "健太"
+            },
+            {
+              "surface": "くん"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "二十四"
+            },
+            {
+              "surface": "回"
+            },
+            {
+              "surface": "目",
+              "reading": "め",
+              "meaning": "eye",
+              "baseForm": "目",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "誕生"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "迎える"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "日頃からみんなを笑わせてくれるムードメーカーの彼のために、友人五人で極秘のサプライズパーティーを企画しました。",
+          "literalEn": "日頃 [from] everyone [obj] to laugh わせ [and] くれる ムード メーカー ['s / of] he ['s / of] ため [at/to] 友人 五人 [in/by] 極秘 ['s / of] サプライ パーティー [obj] 企画 しま した",
+          "naturalEn": "For him, who always acted as the mood maker making everyone laugh, five friends organized a top-secret surprise party.",
+          "tokens": [
+            {
+              "surface": "日頃"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "みんな",
+              "meaning": "everyone",
+              "baseForm": "みんな",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "笑",
+              "reading": "わら",
+              "meaning": "to laugh; to smile",
+              "baseForm": "笑う",
+              "level": "N4"
+            },
+            {
+              "surface": "わせ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "くれる"
+            },
+            {
+              "surface": "ムード"
+            },
+            {
+              "surface": "メーカー"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "友人"
+            },
+            {
+              "surface": "五人"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "極秘"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "サプライ"
+            },
+            {
+              "surface": "ズ"
+            },
+            {
+              "surface": "パーティー"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "企画"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "本人に計画が漏れないよう、健太くんを除いた専用のグループチャットを作成して綿密な打ち合わせを重ねました。",
+          "literalEn": "本人 [at/to] 計画 [subj] 漏れ [not] よう 健太 [honorific] [obj] [past] 専用 ['s / of] グループ チャット [obj] 作成 [and] 綿密 打ち合わせ [obj] 重ね した",
+          "naturalEn": "To prevent the plans from leaking to him, we created a private chat group excluding Kenta and held meticulous discussions.",
+          "tokens": [
+            {
+              "surface": "本人"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "計画"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "漏れ"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "健太"
+            },
+            {
+              "surface": "くん"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "除"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "専用"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "グループ"
+            },
+            {
+              "surface": "チャット"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "作成"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "綿密"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "打ち合わせ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "重ね"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「誕生日の当日は二人だけで軽くカフェに行く約束にして、油断させて会場へ連れ出そう」という作戦に決まりました。",
+          "literalEn": "誕生 day ['s / of] 当日 [topic] two people だけ [in/by] カフェ [at/to] to go promise にし [and] 油断 [and] assembly hall or meeting place [toward] companion to put out really という 作戦 [at/to] 決まり した",
+          "naturalEn": "We settled on a strategy: 'Let us make a casual promise to visit a café with just one person on the day, catching him off guard before leading him to the venue.'",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "誕生"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "当日"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "二人",
+              "reading": "ふたり",
+              "meaning": "two people; pair",
+              "baseForm": "二人",
+              "level": "N5"
+            },
+            {
+              "surface": "だけ"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "軽"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "カフェ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "行く",
+              "reading": "いく",
+              "meaning": "to go",
+              "baseForm": "行く",
+              "level": "N5"
+            },
+            {
+              "surface": "約束",
+              "reading": "やくそく",
+              "meaning": "promise",
+              "baseForm": "約束",
+              "level": "N4"
+            },
+            {
+              "surface": "にし"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "油断"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "会場",
+              "reading": "かいじょう",
+              "meaning": "assembly hall or meeting place",
+              "baseForm": "会場",
+              "level": "N4"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "連れ",
+              "reading": "つれ",
+              "meaning": "companion; company",
+              "baseForm": "連れ",
+              "level": "N3"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "そう",
+              "meaning": "really",
+              "baseForm": "そう",
+              "level": "N4"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "作戦"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "決まり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "パーティー会場として、隠れ家風のイタリアンレストランの個室を二週間前から予約しておきました。店長と相談し、照明を落とすタイミングや、チョコペンで名前を書いた特製デザートプレートの演出を入念に確認しました。プレゼントとして、彼が以前から欲しがっていた革製の名刺入れと、仲間全員の寄せ書き色紙を用意しました。誕生日当日、作戦担当の美咲さんが「ちょっと相談したいことがあるから付き合って」と健太くんを誘い出しました。",
+      "en": "As our party venue, we reserved a private dining room at a secluded Italian bistro two weeks in advance. Consulting with the manager, we carefully checked the timing to dim the lights and the presentation of a special dessert plate inscribed with chocolate lettering. As gifts, we prepared a genuine leather business card holder he had long desired, alongside a message board signed by all our friends. On the day of his birthday, Misaki, designated for the operation, lured Kenta out: 'I have something to consult you on, so please come along.'",
+      "tokens": [
+        {
+          "surface": "パーティー"
+        },
+        {
+          "surface": "会場",
+          "reading": "かいじょう",
+          "meaning": "assembly hall or meeting place",
+          "baseForm": "会場",
+          "level": "N4"
+        },
+        {
+          "surface": "として"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "隠れ家"
+        },
+        {
+          "surface": "風",
+          "reading": "かぜ",
+          "meaning": "wind",
+          "baseForm": "風",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "イタリアン"
+        },
+        {
+          "surface": "レストラン",
+          "meaning": "restaurant",
+          "baseForm": "レストラン",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "個室"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "二",
+          "reading": "に",
+          "meaning": "two",
+          "baseForm": "二",
+          "level": "N5"
+        },
+        {
+          "surface": "週間",
+          "reading": "しゅうかん",
+          "meaning": "week; weekly",
+          "baseForm": "週間",
+          "level": "N3"
+        },
+        {
+          "surface": "前",
+          "reading": "まえ",
+          "meaning": "before",
+          "baseForm": "前",
+          "level": "N5"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "予約"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "おき"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "店長"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "相談",
+          "reading": "そうだん",
+          "meaning": "to discuss",
+          "baseForm": "相談",
+          "level": "N4"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "照明"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "落とす"
+        },
+        {
+          "surface": "タイミング"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "チョコ"
+        },
+        {
+          "surface": "ペン"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "名前",
+          "reading": "なまえ",
+          "meaning": "name",
+          "baseForm": "名前",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "書"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "特製"
+        },
+        {
+          "surface": "デザート"
+        },
+        {
+          "surface": "プレート"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "演出"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "入念"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "確認"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "プレゼント",
+          "meaning": "present",
+          "baseForm": "プレゼント",
+          "level": "N4"
+        },
+        {
+          "surface": "として"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "以前"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "欲"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "革"
+        },
+        {
+          "surface": "製"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "名刺"
+        },
+        {
+          "surface": "入れ",
+          "reading": "はいれ",
+          "meaning": "to enter; to contain",
+          "baseForm": "入る",
+          "level": "N5"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "仲間"
+        },
+        {
+          "surface": "全員"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "寄せ書き"
+        },
+        {
+          "surface": "色紙"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "用意"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "誕生"
+        },
+        {
+          "surface": "日",
+          "reading": "ひ",
+          "meaning": "day; sun",
+          "baseForm": "日",
+          "level": "N4"
+        },
+        {
+          "surface": "当日"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "作戦"
+        },
+        {
+          "surface": "担当"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "美咲"
+        },
+        {
+          "surface": "さん",
+          "meaning": "Mr or Mrs",
+          "baseForm": "さん",
+          "level": "N1"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "ちょっと"
+        },
+        {
+          "surface": "相談",
+          "reading": "そうだん",
+          "meaning": "to discuss",
+          "baseForm": "相談",
+          "level": "N4"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "付き"
+        },
+        {
+          "surface": "合"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "健太"
+        },
+        {
+          "surface": "くん"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "誘い"
+        },
+        {
+          "surface": "出",
+          "reading": "だ",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "パーティー会場として、隠れ家風のイタリアンレストランの個室を二週間前から予約しておきました。",
+          "literalEn": "パーティー assembly hall or meeting place として 隠れ家 wind ['s / of] イタリアン restaurant ['s / of] 個室 [obj] two week before [from] 予約 [and] おき した",
+          "naturalEn": "As our party venue, we reserved a private dining room at a secluded Italian bistro two weeks in advance.",
+          "tokens": [
+            {
+              "surface": "パーティー"
+            },
+            {
+              "surface": "会場",
+              "reading": "かいじょう",
+              "meaning": "assembly hall or meeting place",
+              "baseForm": "会場",
+              "level": "N4"
+            },
+            {
+              "surface": "として"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "隠れ家"
+            },
+            {
+              "surface": "風",
+              "reading": "かぜ",
+              "meaning": "wind",
+              "baseForm": "風",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "イタリアン"
+            },
+            {
+              "surface": "レストラン",
+              "meaning": "restaurant",
+              "baseForm": "レストラン",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "個室"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "二",
+              "reading": "に",
+              "meaning": "two",
+              "baseForm": "二",
+              "level": "N5"
+            },
+            {
+              "surface": "週間",
+              "reading": "しゅうかん",
+              "meaning": "week; weekly",
+              "baseForm": "週間",
+              "level": "N3"
+            },
+            {
+              "surface": "前",
+              "reading": "まえ",
+              "meaning": "before",
+              "baseForm": "前",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "予約"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "おき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "店長と相談し、照明を落とすタイミングや、チョコペンで名前を書いた特製デザートプレートの演出を入念に確認しました。",
+          "literalEn": "店長 [with/and] to discuss 照明 [obj] 落とす タイミング チョコ ペン [in/by] name [obj] [past] 特製 デザート プレート ['s / of] 演出 [obj] 入念 [at/to] 確認 しま した",
+          "naturalEn": "Consulting with the manager, we carefully checked the timing to dim the lights and the presentation of a special dessert plate inscribed with chocolate lettering.",
+          "tokens": [
+            {
+              "surface": "店長"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "相談",
+              "reading": "そうだん",
+              "meaning": "to discuss",
+              "baseForm": "相談",
+              "level": "N4"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "照明"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "落とす"
+            },
+            {
+              "surface": "タイミング"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "チョコ"
+            },
+            {
+              "surface": "ペン"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "名前",
+              "reading": "なまえ",
+              "meaning": "name",
+              "baseForm": "名前",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "書"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "特製"
+            },
+            {
+              "surface": "デザート"
+            },
+            {
+              "surface": "プレート"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "演出"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "入念"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "確認"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "プレゼントとして、彼が以前から欲しがっていた革製の名刺入れと、仲間全員の寄せ書き色紙を用意しました。",
+          "literalEn": "present として he [subj] 以前 [from] [subj] って [past] ['s / of] 名刺 to enter [with/and] 仲間 全員 ['s / of] 寄せ書き 色紙 [obj] 用意 しま した",
+          "naturalEn": "As gifts, we prepared a genuine leather business card holder he had long desired, alongside a message board signed by all our friends.",
+          "tokens": [
+            {
+              "surface": "プレゼント",
+              "meaning": "present",
+              "baseForm": "プレゼント",
+              "level": "N4"
+            },
+            {
+              "surface": "として"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "以前"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "欲"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "革"
+            },
+            {
+              "surface": "製"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "名刺"
+            },
+            {
+              "surface": "入れ",
+              "reading": "はいれ",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "仲間"
+            },
+            {
+              "surface": "全員"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "寄せ書き"
+            },
+            {
+              "surface": "色紙"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "用意"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "誕生日当日、作戦担当の美咲さんが「ちょっと相談したいことがあるから付き合って」と健太くんを誘い出しました。",
+          "literalEn": "誕生 day 当日 作戦 担当 ['s / of] 美咲 [Mr/Ms] [subj] ちょっと to discuss した thing [subj] to be [from] 付き って [with/and] 健太 [honorific] [obj] 誘い to put out しま した",
+          "naturalEn": "On the day of his birthday, Misaki, designated for the operation, lured Kenta out: 'I have something to consult you on, so please come along.'",
+          "tokens": [
+            {
+              "surface": "誕生"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "当日"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "作戦"
+            },
+            {
+              "surface": "担当"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "美咲"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "ちょっと"
+            },
+            {
+              "surface": "相談",
+              "reading": "そうだん",
+              "meaning": "to discuss",
+              "baseForm": "相談",
+              "level": "N4"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "付き"
+            },
+            {
+              "surface": "合"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "健太"
+            },
+            {
+              "surface": "くん"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "誘い"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "他のメンバーは集合時刻の三十分前にレストランの個室に集まり、色とりどりの風船を飾り付けました。クラッカーを一人一つずつ手に持ち、息を潜めて主役の到着を今か今かと待ち構えました。部屋のドアが静かに開き、美咲さんに連れられた健太くんが一歩足を踏み入れた瞬間、合図を出しました。「パン！パン！」とクラッカーの快音が響き渡り、「健太、誕生日おめでとう！」と全員で大歓声を上げました。",
+      "en": "The remaining members gathered in the private dining room thirty minutes prior to the meeting time, decorating the space with colorful balloons. Each clutching a party popper in hand, we held our breath, eagerly awaiting the arrival of the guest of honor. The instant the door opened quietly and Kenta stepped inside led by Misaki, the signal was called. 'Pop! Pop!' echoed the merry sound of poppers, and everyone erupted into a massive cheer: 'Happy Birthday, Kenta!'",
+      "tokens": [
+        {
+          "surface": "他の"
+        },
+        {
+          "surface": "メンバー"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "集合"
+        },
+        {
+          "surface": "時刻"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "三",
+          "reading": "さん",
+          "meaning": "three",
+          "baseForm": "三",
+          "level": "N5"
+        },
+        {
+          "surface": "十分",
+          "reading": "じゅうぶん",
+          "meaning": "enough",
+          "baseForm": "十分",
+          "level": "N4"
+        },
+        {
+          "surface": "前",
+          "reading": "まえ",
+          "meaning": "before",
+          "baseForm": "前",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "レストラン",
+          "meaning": "restaurant",
+          "baseForm": "レストラン",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "個室"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "集まり"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "色とりどり",
+          "reading": "いろとりどり",
+          "meaning": "colour",
+          "baseForm": "色",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "風船"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "飾り"
+        },
+        {
+          "surface": "付け"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "クラッカー"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "一人",
+          "reading": "ひとり",
+          "meaning": "one person; alone",
+          "baseForm": "一人",
+          "level": "N5"
+        },
+        {
+          "surface": "一つ",
+          "reading": "ひとつ",
+          "meaning": "one thing",
+          "baseForm": "一つ",
+          "level": "N5"
+        },
+        {
+          "surface": "ずつ"
+        },
+        {
+          "surface": "手",
+          "reading": "て",
+          "meaning": "hand",
+          "baseForm": "手",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "持ち",
+          "reading": "もち",
+          "meaning": "hold; charge; keep possession",
+          "baseForm": "持ち",
+          "level": "N1"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "息"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "潜"
+        },
+        {
+          "surface": "め"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "主役"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "到着",
+          "reading": "とうちゃく",
+          "meaning": "arrival",
+          "baseForm": "到着",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "今",
+          "reading": "いま",
+          "meaning": "now",
+          "baseForm": "今",
+          "level": "N5"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "今",
+          "reading": "いま",
+          "meaning": "now",
+          "baseForm": "今",
+          "level": "N5"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "待ち",
+          "reading": "まち",
+          "meaning": "to wait",
+          "baseForm": "待つ",
+          "level": "N5"
+        },
+        {
+          "surface": "構え",
+          "reading": "かまえ",
+          "meaning": "posture; pose; style",
+          "baseForm": "構え",
+          "level": "N1"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "meaning": "room",
+          "baseForm": "部屋",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ドア",
+          "meaning": "Western style door",
+          "baseForm": "ドア",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "meaning": "quiet",
+          "baseForm": "静か",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "開き",
+          "reading": "あき",
+          "meaning": "to open; to become open",
+          "baseForm": "開く",
+          "level": "N5"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "美咲"
+        },
+        {
+          "surface": "さん",
+          "meaning": "Mr or Mrs",
+          "baseForm": "さん",
+          "level": "N1"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "連れ",
+          "reading": "つれ",
+          "meaning": "companion; company",
+          "baseForm": "連れ",
+          "level": "N3"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "健太"
+        },
+        {
+          "surface": "くん"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "一歩"
+        },
+        {
+          "surface": "足",
+          "reading": "あし",
+          "meaning": "foot; leg",
+          "baseForm": "足",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "踏",
+          "reading": "ふ",
+          "meaning": "to step on",
+          "baseForm": "踏む",
+          "level": "N4"
+        },
+        {
+          "surface": "み"
+        },
+        {
+          "surface": "入れ",
+          "reading": "はいれ",
+          "meaning": "to enter; to contain",
+          "baseForm": "入る",
+          "level": "N5"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "瞬間",
+          "reading": "しゅんかん",
+          "meaning": "moment; second; instant",
+          "baseForm": "瞬間",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "合図"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "出",
+          "reading": "だ",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "パン",
+          "meaning": "bread",
+          "baseForm": "パン",
+          "level": "N5"
+        },
+        {
+          "surface": "！"
+        },
+        {
+          "surface": "パン",
+          "meaning": "bread",
+          "baseForm": "パン",
+          "level": "N5"
+        },
+        {
+          "surface": "！"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "クラッカー"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "快音"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "響き"
+        },
+        {
+          "surface": "渡り",
+          "reading": "わたり",
+          "meaning": "to hand over",
+          "baseForm": "渡す",
+          "level": "N5"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "健太"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "誕生"
+        },
+        {
+          "surface": "日",
+          "reading": "ひ",
+          "meaning": "day; sun",
+          "baseForm": "日",
+          "level": "N4"
+        },
+        {
+          "surface": "おめでとう"
+        },
+        {
+          "surface": "！"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "全員"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "大",
+          "reading": "だい",
+          "meaning": "large; big; great",
+          "baseForm": "大",
+          "level": "N3"
+        },
+        {
+          "surface": "歓声"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "上げ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "他のメンバーは集合時刻の三十分前にレストランの個室に集まり、色とりどりの風船を飾り付けました。",
+          "literalEn": "他の メンバー [topic] 集合 時刻 ['s / of] three enough before [at/to] restaurant ['s / of] 個室 [at/to] 集まり colour ['s / of] 風船 [obj] 飾り 付け した",
+          "naturalEn": "The remaining members gathered in the private dining room thirty minutes prior to the meeting time, decorating the space with colorful balloons.",
+          "tokens": [
+            {
+              "surface": "他の"
+            },
+            {
+              "surface": "メンバー"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "集合"
+            },
+            {
+              "surface": "時刻"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "三",
+              "reading": "さん",
+              "meaning": "three",
+              "baseForm": "三",
+              "level": "N5"
+            },
+            {
+              "surface": "十分",
+              "reading": "じゅうぶん",
+              "meaning": "enough",
+              "baseForm": "十分",
+              "level": "N4"
+            },
+            {
+              "surface": "前",
+              "reading": "まえ",
+              "meaning": "before",
+              "baseForm": "前",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "レストラン",
+              "meaning": "restaurant",
+              "baseForm": "レストラン",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "個室"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "集まり"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "色とりどり",
+              "reading": "いろとりどり",
+              "meaning": "colour",
+              "baseForm": "色",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "風船"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "飾り"
+            },
+            {
+              "surface": "付け"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "クラッカーを一人一つずつ手に持ち、息を潜めて主役の到着を今か今かと待ち構えました。",
+          "literalEn": "クラッカー [obj] one person one thing ずつ hand [at/to] hold [obj] [and] 主役 ['s / of] arrival [obj] now [?] now [?] [with/and] to wait posture した",
+          "naturalEn": "Each clutching a party popper in hand, we held our breath, eagerly awaiting the arrival of the guest of honor.",
+          "tokens": [
+            {
+              "surface": "クラッカー"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "一人",
+              "reading": "ひとり",
+              "meaning": "one person; alone",
+              "baseForm": "一人",
+              "level": "N5"
+            },
+            {
+              "surface": "一つ",
+              "reading": "ひとつ",
+              "meaning": "one thing",
+              "baseForm": "一つ",
+              "level": "N5"
+            },
+            {
+              "surface": "ずつ"
+            },
+            {
+              "surface": "手",
+              "reading": "て",
+              "meaning": "hand",
+              "baseForm": "手",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "持ち",
+              "reading": "もち",
+              "meaning": "hold; charge; keep possession",
+              "baseForm": "持ち",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "息"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "潜"
+            },
+            {
+              "surface": "め"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "主役"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "到着",
+              "reading": "とうちゃく",
+              "meaning": "arrival",
+              "baseForm": "到着",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "今",
+              "reading": "いま",
+              "meaning": "now",
+              "baseForm": "今",
+              "level": "N5"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "今",
+              "reading": "いま",
+              "meaning": "now",
+              "baseForm": "今",
+              "level": "N5"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "待ち",
+              "reading": "まち",
+              "meaning": "to wait",
+              "baseForm": "待つ",
+              "level": "N5"
+            },
+            {
+              "surface": "構え",
+              "reading": "かまえ",
+              "meaning": "posture; pose; style",
+              "baseForm": "構え",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "部屋のドアが静かに開き、美咲さんに連れられた健太くんが一歩足を踏み入れた瞬間、合図を出しました。",
+          "literalEn": "room ['s / of] Western style door [subj] quiet [at/to] to open 美咲 [Mr/Ms] [at/to] companion [past] 健太 [honorific] [subj] 一歩 foot [obj] to step on to enter [past] moment 合図 [obj] to put out しま した",
+          "naturalEn": "The instant the door opened quietly and Kenta stepped inside led by Misaki, the signal was called.",
+          "tokens": [
+            {
+              "surface": "部屋",
+              "reading": "へや",
+              "meaning": "room",
+              "baseForm": "部屋",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ドア",
+              "meaning": "Western style door",
+              "baseForm": "ドア",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "静か",
+              "reading": "しずか",
+              "meaning": "quiet",
+              "baseForm": "静か",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "開き",
+              "reading": "あき",
+              "meaning": "to open; to become open",
+              "baseForm": "開く",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "美咲"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "連れ",
+              "reading": "つれ",
+              "meaning": "companion; company",
+              "baseForm": "連れ",
+              "level": "N3"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "健太"
+            },
+            {
+              "surface": "くん"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "一歩"
+            },
+            {
+              "surface": "足",
+              "reading": "あし",
+              "meaning": "foot; leg",
+              "baseForm": "足",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "踏",
+              "reading": "ふ",
+              "meaning": "to step on",
+              "baseForm": "踏む",
+              "level": "N4"
+            },
+            {
+              "surface": "み"
+            },
+            {
+              "surface": "入れ",
+              "reading": "はいれ",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "瞬間",
+              "reading": "しゅんかん",
+              "meaning": "moment; second; instant",
+              "baseForm": "瞬間",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "合図"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「パン！パン！」とクラッカーの快音が響き渡り、「健太、誕生日おめでとう！」と全員で大歓声を上げました。",
+          "literalEn": "bread bread [with/and] クラッカー ['s / of] 快音 [subj] 響き to hand over 健太 誕生 day おめでとう [with/and] 全員 [in/by] large 歓声 [obj] 上げ した",
+          "naturalEn": "'Pop! Pop!' echoed the merry sound of poppers, and everyone erupted into a massive cheer: 'Happy Birthday, Kenta!'",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "パン",
+              "meaning": "bread",
+              "baseForm": "パン",
+              "level": "N5"
+            },
+            {
+              "surface": "！"
+            },
+            {
+              "surface": "パン",
+              "meaning": "bread",
+              "baseForm": "パン",
+              "level": "N5"
+            },
+            {
+              "surface": "！"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "クラッカー"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "快音"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "響き"
+            },
+            {
+              "surface": "渡り",
+              "reading": "わたり",
+              "meaning": "to hand over",
+              "baseForm": "渡す",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "健太"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "誕生"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "おめでとう"
+            },
+            {
+              "surface": "！"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "全員"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "大",
+              "reading": "だい",
+              "meaning": "large; big; great",
+              "baseForm": "大",
+              "level": "N3"
+            },
+            {
+              "surface": "歓声"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "上げ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "何が起きたのか理解できず目を丸くしていた健太くんでしたが、状況を把握すると顔を両手で覆って涙ぐみました。「まさかこんな大がかりな準備をしてくれていたなんて、夢にも思わなかったよ」と彼は声を震わせました。部屋の照明がフッと消え、花火がパチパチと火花を散らす豪華なバースデーケーキが運ばれてきました。健太くんが願い事を込めてロウソクの火を一気に吹き消すと、再び割れんばかりの拍手が巻き起こりました。",
+      "en": "Not understanding what had unfolded, Kenta's eyes went wide, but once he grasped the situation, he covered his face with both hands, tearing up. 'I never dreamed in a million years that you guys would prepare such an elaborate surprise for me,' he uttered in a trembling voice. The lights flicked off, and a lavish birthday cake crackling with sparkling fountain candles was carried into the room. As Kenta blew out the candle flames in a single breath while making a wish, thunderous applause erupted once more.",
+      "tokens": [
+        {
+          "surface": "何",
+          "reading": "なん",
+          "meaning": "what",
+          "baseForm": "何",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "起",
+          "reading": "おこ",
+          "meaning": "to wake",
+          "baseForm": "起す",
+          "level": "N4"
+        },
+        {
+          "surface": "きた"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "理解"
+        },
+        {
+          "surface": "でき"
+        },
+        {
+          "surface": "ず"
+        },
+        {
+          "surface": "目",
+          "reading": "め",
+          "meaning": "eye",
+          "baseForm": "目",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "丸"
+        },
+        {
+          "surface": "くし"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "健太"
+        },
+        {
+          "surface": "くん"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "状況"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "把握"
+        },
+        {
+          "surface": "すると",
+          "meaning": "then",
+          "baseForm": "すると",
+          "level": "N4"
+        },
+        {
+          "surface": "顔",
+          "reading": "かお",
+          "meaning": "face, expression",
+          "baseForm": "顔",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "両手"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "覆"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "涙"
+        },
+        {
+          "surface": "ぐみ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "まさか"
+        },
+        {
+          "surface": "こんな",
+          "meaning": "such",
+          "baseForm": "こんな",
+          "level": "N5"
+        },
+        {
+          "surface": "大がかり"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "準備"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "てく"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "なんて"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "夢にも"
+        },
+        {
+          "surface": "思",
+          "reading": "おも",
+          "meaning": "to think; to feel",
+          "baseForm": "思う",
+          "level": "N4"
+        },
+        {
+          "surface": "わ"
+        },
+        {
+          "surface": "なか"
+        },
+        {
+          "surface": "っ"
+        },
+        {
+          "surface": "たよ"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "声",
+          "reading": "こえ",
+          "meaning": "voice",
+          "baseForm": "声",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "震"
+        },
+        {
+          "surface": "わせ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "meaning": "room",
+          "baseForm": "部屋",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "照明"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "フッ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "消",
+          "reading": "け",
+          "meaning": "to erase; to turn off power",
+          "baseForm": "消す",
+          "level": "N5"
+        },
+        {
+          "surface": "え"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "花火",
+          "reading": "はなび",
+          "meaning": "fireworks",
+          "baseForm": "花火",
+          "level": "N2"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "パチパチ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "火花"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "散らす"
+        },
+        {
+          "surface": "豪華"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "バースデー"
+        },
+        {
+          "surface": "ケーキ",
+          "meaning": "cake",
+          "baseForm": "ケーキ",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "運",
+          "reading": "うん",
+          "meaning": "fortune; luck",
+          "baseForm": "運",
+          "level": "N3"
+        },
+        {
+          "surface": "ば"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "き"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "健太"
+        },
+        {
+          "surface": "くん"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "願い事"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "込"
+        },
+        {
+          "surface": "め"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "ロウソク"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "火",
+          "reading": "ひ",
+          "meaning": "fire",
+          "baseForm": "火",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "一気に"
+        },
+        {
+          "surface": "吹",
+          "reading": "ふ",
+          "meaning": "to blow",
+          "baseForm": "吹く",
+          "level": "N5"
+        },
+        {
+          "surface": "き"
+        },
+        {
+          "surface": "消す",
+          "reading": "けす",
+          "meaning": "to erase; to turn off power",
+          "baseForm": "消す",
+          "level": "N5"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "再び",
+          "reading": "ふたたび",
+          "meaning": "again; once more; a second time",
+          "baseForm": "再び",
+          "level": "N3"
+        },
+        {
+          "surface": "割れ",
+          "reading": "われ",
+          "meaning": "to divide; to cut; to break",
+          "baseForm": "割る",
+          "level": "N3"
+        },
+        {
+          "surface": "ん"
+        },
+        {
+          "surface": "ばかり"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "拍手",
+          "reading": "はくしゅ",
+          "meaning": "clapping hands; applause",
+          "baseForm": "拍手",
+          "level": "N3"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "巻き"
+        },
+        {
+          "surface": "起",
+          "reading": "おこ",
+          "meaning": "to wake",
+          "baseForm": "起す",
+          "level": "N4"
+        },
+        {
+          "surface": "こ"
+        },
+        {
+          "surface": "り"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "何が起きたのか理解できず目を丸くしていた健太くんでしたが、状況を把握すると顔を両手で覆って涙ぐみました。",
+          "literalEn": "what [subj] to wake きた ['s / of] [?] 理解 でき eye [obj] くし てい [past] 健太 [honorific] [in/by] した [subj] 状況 [obj] 把握 then face [obj] 両手 [in/by] って ぐみ した",
+          "naturalEn": "Not understanding what had unfolded, Kenta's eyes went wide, but once he grasped the situation, he covered his face with both hands, tearing up.",
+          "tokens": [
+            {
+              "surface": "何",
+              "reading": "なん",
+              "meaning": "what",
+              "baseForm": "何",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "起",
+              "reading": "おこ",
+              "meaning": "to wake",
+              "baseForm": "起す",
+              "level": "N4"
+            },
+            {
+              "surface": "きた"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "理解"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ず"
+            },
+            {
+              "surface": "目",
+              "reading": "め",
+              "meaning": "eye",
+              "baseForm": "目",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "丸"
+            },
+            {
+              "surface": "くし"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "健太"
+            },
+            {
+              "surface": "くん"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "状況"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "把握"
+            },
+            {
+              "surface": "すると",
+              "meaning": "then",
+              "baseForm": "すると",
+              "level": "N4"
+            },
+            {
+              "surface": "顔",
+              "reading": "かお",
+              "meaning": "face, expression",
+              "baseForm": "顔",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "両手"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "覆"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "涙"
+            },
+            {
+              "surface": "ぐみ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「まさかこんな大がかりな準備をしてくれていたなんて、夢にも思わなかったよ」と彼は声を震わせました。",
+          "literalEn": "まさか such 大がかり 準備 [obj] てく てい [past] なんて 夢にも to think なか たよ [with/and] he [topic] voice [obj] わせ した",
+          "naturalEn": "'I never dreamed in a million years that you guys would prepare such an elaborate surprise for me,' he uttered in a trembling voice.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "まさか"
+            },
+            {
+              "surface": "こんな",
+              "meaning": "such",
+              "baseForm": "こんな",
+              "level": "N5"
+            },
+            {
+              "surface": "大がかり"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "準備"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "なんて"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "夢にも"
+            },
+            {
+              "surface": "思",
+              "reading": "おも",
+              "meaning": "to think; to feel",
+              "baseForm": "思う",
+              "level": "N4"
+            },
+            {
+              "surface": "わ"
+            },
+            {
+              "surface": "なか"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "たよ"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "声",
+              "reading": "こえ",
+              "meaning": "voice",
+              "baseForm": "声",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "震"
+            },
+            {
+              "surface": "わせ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "部屋の照明がフッと消え、花火がパチパチと火花を散らす豪華なバースデーケーキが運ばれてきました。",
+          "literalEn": "room ['s / of] 照明 [subj] フッ [with/and] to erase fireworks [subj] パチパチ [with/and] 火花 [obj] 散らす 豪華 バースデー cake [subj] fortune [and] した",
+          "naturalEn": "The lights flicked off, and a lavish birthday cake crackling with sparkling fountain candles was carried into the room.",
+          "tokens": [
+            {
+              "surface": "部屋",
+              "reading": "へや",
+              "meaning": "room",
+              "baseForm": "部屋",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "照明"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "フッ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "消",
+              "reading": "け",
+              "meaning": "to erase; to turn off power",
+              "baseForm": "消す",
+              "level": "N5"
+            },
+            {
+              "surface": "え"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "花火",
+              "reading": "はなび",
+              "meaning": "fireworks",
+              "baseForm": "花火",
+              "level": "N2"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "パチパチ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "火花"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "散らす"
+            },
+            {
+              "surface": "豪華"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "バースデー"
+            },
+            {
+              "surface": "ケーキ",
+              "meaning": "cake",
+              "baseForm": "ケーキ",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "運",
+              "reading": "うん",
+              "meaning": "fortune; luck",
+              "baseForm": "運",
+              "level": "N3"
+            },
+            {
+              "surface": "ば"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "健太くんが願い事を込めてロウソクの火を一気に吹き消すと、再び割れんばかりの拍手が巻き起こりました。",
+          "literalEn": "健太 [honorific] [subj] 願い事 [obj] [and] ロウソク ['s / of] fire [obj] 一気に to blow to erase [with/and] again to divide ばかり ['s / of] clapping hands [subj] 巻き to wake した",
+          "naturalEn": "As Kenta blew out the candle flames in a single breath while making a wish, thunderous applause erupted once more.",
+          "tokens": [
+            {
+              "surface": "健太"
+            },
+            {
+              "surface": "くん"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "願い事"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "込"
+            },
+            {
+              "surface": "め"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "ロウソク"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "火",
+              "reading": "ひ",
+              "meaning": "fire",
+              "baseForm": "火",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "一気に"
+            },
+            {
+              "surface": "吹",
+              "reading": "ふ",
+              "meaning": "to blow",
+              "baseForm": "吹く",
+              "level": "N5"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "消す",
+              "reading": "けす",
+              "meaning": "to erase; to turn off power",
+              "baseForm": "消す",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "再び",
+              "reading": "ふたたび",
+              "meaning": "again; once more; a second time",
+              "baseForm": "再び",
+              "level": "N3"
+            },
+            {
+              "surface": "割れ",
+              "reading": "われ",
+              "meaning": "to divide; to cut; to break",
+              "baseForm": "割る",
+              "level": "N3"
+            },
+            {
+              "surface": "ん"
+            },
+            {
+              "surface": "ばかり"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "拍手",
+              "reading": "はくしゅ",
+              "meaning": "clapping hands; applause",
+              "baseForm": "拍手",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "巻き"
+            },
+            {
+              "surface": "起",
+              "reading": "おこ",
+              "meaning": "to wake",
+              "baseForm": "起す",
+              "level": "N4"
+            },
+            {
+              "surface": "こ"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "美味しい料理に舌鼓を打ちながら昔の思い出話に花を咲かせ、絆の温かさを心から噛み締める素晴らしい夜となりました。誰かの笑顔のために心を込めて準備することの尊さを、仲間たち全員で分かち合うことができました。",
+      "en": "Relishing delicious cuisine while animatedly reminiscing over old memories, it proved a magnificent night to cherish the heartwarming warmth of true friendship. We were able to share amongst all companions the noble beauty of preparing wholeheartedly for the sake of someone else's joyful smile.",
+      "tokens": [
+        {
+          "surface": "美味しい",
+          "reading": "おいしい",
+          "meaning": "delicious; tasty",
+          "baseForm": "美味しい",
+          "level": "N5"
+        },
+        {
+          "surface": "料理",
+          "reading": "りょうり",
+          "meaning": "cuisine",
+          "baseForm": "料理",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "舌鼓"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "打ち"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "昔",
+          "reading": "むかし",
+          "meaning": "olden days; former",
+          "baseForm": "昔",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "思い出",
+          "reading": "おもいで",
+          "meaning": "memories; recollections; reminiscence",
+          "baseForm": "思い出",
+          "level": "N3"
+        },
+        {
+          "surface": "話",
+          "reading": "はなし",
+          "meaning": "talk; story",
+          "baseForm": "話",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "花",
+          "reading": "はな",
+          "meaning": "flower",
+          "baseForm": "花",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "咲",
+          "reading": "さ",
+          "meaning": "to bloom",
+          "baseForm": "咲く",
+          "level": "N5"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "せ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "絆"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "温かさ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "心から"
+        },
+        {
+          "surface": "噛み締める"
+        },
+        {
+          "surface": "素晴らしい",
+          "reading": "すばらしい",
+          "meaning": "wonderful; splendid; magnificent",
+          "baseForm": "素晴らしい",
+          "level": "N4"
+        },
+        {
+          "surface": "夜",
+          "reading": "よる",
+          "meaning": "evening; night",
+          "baseForm": "夜",
+          "level": "N5"
+        },
+        {
+          "surface": "となり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "誰か",
+          "reading": "だれか",
+          "meaning": "someone; somebody",
+          "baseForm": "誰か",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "笑顔",
+          "reading": "えがお",
+          "meaning": "smiling face",
+          "baseForm": "笑顔",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "心",
+          "reading": "こころ",
+          "meaning": "core; heart",
+          "baseForm": "心",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "込"
+        },
+        {
+          "surface": "め"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "準備"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "尊"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "仲間"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "全員"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "分",
+          "reading": "ぶん",
+          "meaning": "dividing; part",
+          "baseForm": "分",
+          "level": "N3"
+        },
+        {
+          "surface": "かち合う"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "でき"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "美味しい料理に舌鼓を打ちながら昔の思い出話に花を咲かせ、絆の温かさを心から噛み締める素晴らしい夜となりました。",
+          "literalEn": "delicious cuisine [at/to] 舌鼓 [obj] 打ち ながら olden days ['s / of] memories talk [at/to] flower [obj] to bloom [?] ['s / of] 温かさ [obj] 心から 噛み締める wonderful evening となり した",
+          "naturalEn": "Relishing delicious cuisine while animatedly reminiscing over old memories, it proved a magnificent night to cherish the heartwarming warmth of true friendship.",
+          "tokens": [
+            {
+              "surface": "美味しい",
+              "reading": "おいしい",
+              "meaning": "delicious; tasty",
+              "baseForm": "美味しい",
+              "level": "N5"
+            },
+            {
+              "surface": "料理",
+              "reading": "りょうり",
+              "meaning": "cuisine",
+              "baseForm": "料理",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "舌鼓"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "打ち"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "昔",
+              "reading": "むかし",
+              "meaning": "olden days; former",
+              "baseForm": "昔",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "思い出",
+              "reading": "おもいで",
+              "meaning": "memories; recollections; reminiscence",
+              "baseForm": "思い出",
+              "level": "N3"
+            },
+            {
+              "surface": "話",
+              "reading": "はなし",
+              "meaning": "talk; story",
+              "baseForm": "話",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "花",
+              "reading": "はな",
+              "meaning": "flower",
+              "baseForm": "花",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "咲",
+              "reading": "さ",
+              "meaning": "to bloom",
+              "baseForm": "咲く",
+              "level": "N5"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "絆"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "温かさ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "心から"
+            },
+            {
+              "surface": "噛み締める"
+            },
+            {
+              "surface": "素晴らしい",
+              "reading": "すばらしい",
+              "meaning": "wonderful; splendid; magnificent",
+              "baseForm": "素晴らしい",
+              "level": "N4"
+            },
+            {
+              "surface": "夜",
+              "reading": "よる",
+              "meaning": "evening; night",
+              "baseForm": "夜",
+              "level": "N5"
+            },
+            {
+              "surface": "となり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "誰かの笑顔のために心を込めて準備することの尊さを、仲間たち全員で分かち合うことができました。",
+          "literalEn": "someone ['s / of] smiling face ['s / of] ため [at/to] core [obj] [and] 準備 to do thing ['s / of] [obj] 仲間 たち 全員 [in/by] dividing かち合う thing [subj] でき した",
+          "naturalEn": "We were able to share amongst all companions the noble beauty of preparing wholeheartedly for the sake of someone else's joyful smile.",
+          "tokens": [
+            {
+              "surface": "誰か",
+              "reading": "だれか",
+              "meaning": "someone; somebody",
+              "baseForm": "誰か",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "笑顔",
+              "reading": "えがお",
+              "meaning": "smiling face",
+              "baseForm": "笑顔",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "心",
+              "reading": "こころ",
+              "meaning": "core; heart",
+              "baseForm": "心",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "込"
+            },
+            {
+              "surface": "め"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "準備"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "尊"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "仲間"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "全員"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "分",
+              "reading": "ぶん",
+              "meaning": "dividing; part",
+              "baseForm": "分",
+              "level": "N3"
+            },
+            {
+              "surface": "かち合う"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "サプライズパーティーの計画を本人に秘密にしておくため、友人たちが行った工夫は何ですか。",
+      "questionEn": "What measure did the friends take to keep the surprise party plans a secret from the celebrant?",
+      "options": [
+        "健太くんを除いた専用のグループチャットを作成して打ち合わせをした",
+        "電話やメッセージを使わず、手紙の暗号だけでやり取りした",
+        "健太くんのスマートフォンを取り上げて使えないようにした",
+        "外国語だけで会話して聞き取れないようにした"
+      ],
+      "optionsEn": [
+        "Creating a private group chat excluding Kenta to coordinate their meetings",
+        "Communicating solely through ciphered letters without using phones or messaging",
+        "Confiscating Kenta's smartphone so he could not use it",
+        "Speaking only in foreign languages so he could not comprehend"
+      ],
+      "answerIndex": 0,
+      "explanation": "本人に通知がいかないよう、主役を外した別の秘密グループチャットを作成して準備を進めました。"
+    },
+    {
+      "question": "健太くんを会場のレストランまで自然に連れ出すために使った口実（作戦）は何ですか。",
+      "questionEn": "What pretext was used to naturally lure Kenta to the restaurant venue?",
+      "options": [
+        "「相談したいことがあるから付き合って」とカフェに行くふりをして誘い出した",
+        "「レストランで美味しいステーキをご馳走する」と正直に伝えた",
+        "「警察署へ一緒に行ってほしい」と嘘をついた",
+        "目隠しをして車に乗せて強制的に連れて行った"
+      ],
+      "optionsEn": [
+        "Luring him out under the guise of visiting a café with 'I have something to consult you on'",
+        "Telling him honestly: 'I will treat you to a delicious steak at a restaurant'",
+        "Lying with: 'Please accompany me to the police station'",
+        "Blindfolding him and forcibly hauling him into a car"
+      ],
+      "answerIndex": 0,
+      "explanation": "「相談があるからカフェに行こう」と油断させ、サプライズ会場の個室へ連れ出す作戦を取りました。"
+    },
+    {
+      "question": "サプライズを受けた瞬間の健太くんの反応はどのようなものでしたか。",
+      "questionEn": "What was Kenta's reaction the moment the surprise unfolded?",
+      "options": [
+        "驚いて目を丸くし、事態を把握すると両手で顔を覆って感激の涙を流した",
+        "怒り出して部屋から走って逃げてしまった",
+        "事前に知っていたと言って冷めた顔をしていた",
+        "クラッカーの音に驚いて警察を呼んだ"
+      ],
+      "optionsEn": [
+        "His eyes went wide in surprise, and realizing the situation, covered his face with tears of joy",
+        "He grew furious and dashed out of the room",
+        "He acted completely aloof, claiming he had known all along",
+        "He was startled by the poppers and dialed the police"
+      ],
+      "answerIndex": 0,
+      "explanation": "思いがけない仲間たちの温かい祝福に心底驚き、感激のあまり涙を流して喜んでくれました。"
+    }
+  ]
+}

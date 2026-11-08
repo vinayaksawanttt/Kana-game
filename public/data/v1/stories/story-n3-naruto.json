@@ -1,0 +1,4438 @@
+{
+  "id": "story-n3-naruto",
+  "title": "ナルト：諦めない心と忍の道",
+  "titleRomaji": "Naruto: Akiramenai Kokoro to Shinobi no Michi",
+  "titleEn": "Naruto: The Unyielding Spirit and the Ninja Way",
+  "level": "N3",
+  "category": "Anime & Pop Culture",
+  "tags": [
+    "Anime",
+    "N3",
+    "Ninja",
+    "Perseverance",
+    "Growth"
+  ],
+  "paragraphs": [
+    {
+      "ja": "木ノ葉隠れの里に住む少年ナルトは、親のいない孤独な日々を過ごしていました。かつて里を壊滅寸前に追い込んだ九尾の妖狐が体内に封印されているせいで、大人たちから冷たく避けられていたのです。誰からも認められない悔しさを紛らわせるため、彼は里の岩山に落書きをするなど悪戯ばかりを繰り返していました。しかし心の奥底では、いつか里の最高指導者である火影になって全員に自分の存在を認めさせたいと強く願っていました。",
+      "en": "A young boy named Naruto living in the Hidden Leaf Village spent his early days in painful solitude without parents. Because the Nine-Tailed Fox that once drove the village to the brink of ruin was sealed inside him, adults shunned him coldly. To distract himself from the agony of being unacknowledged by anyone, he constantly pulled pranks like spray-painting the village cliff faces. Yet deep in his heart, he harbored a fiery ambition to become Hokage, the village's supreme leader, and make everyone recognize him.",
+      "tokens": [
+        {
+          "surface": "木",
+          "reading": "き",
+          "meaning": "tree; wood",
+          "baseForm": "木",
+          "level": "N5"
+        },
+        {
+          "surface": "ノ"
+        },
+        {
+          "surface": "葉隠れ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "里"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "住む"
+        },
+        {
+          "surface": "少年",
+          "reading": "しょうねん",
+          "meaning": "boys; juveniles",
+          "baseForm": "少年",
+          "level": "N3"
+        },
+        {
+          "surface": "ナルト"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "親"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "孤独"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "日々"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "過"
+        },
+        {
+          "surface": "ご"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "かつて"
+        },
+        {
+          "surface": "里"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "壊滅"
+        },
+        {
+          "surface": "寸前"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "追",
+          "reading": "お",
+          "meaning": "to chase; to run after",
+          "baseForm": "追う",
+          "level": "N3"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "込"
+        },
+        {
+          "surface": "ん"
+        },
+        {
+          "surface": "だ"
+        },
+        {
+          "surface": "九尾"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "妖"
+        },
+        {
+          "surface": "狐"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "体内"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "封印"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "いる",
+          "meaning": "to be; to have (used for people and animals)",
+          "baseForm": "いる",
+          "level": "N5"
+        },
+        {
+          "surface": "せい"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "大人"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "冷"
+        },
+        {
+          "surface": "たく"
+        },
+        {
+          "surface": "避"
+        },
+        {
+          "surface": "けら"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "誰",
+          "reading": "だれ",
+          "meaning": "who",
+          "baseForm": "誰",
+          "level": "N5"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "認め"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "悔しさ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "紛らわせる"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "里"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "岩山"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "落書き"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "など",
+          "meaning": "et cetera",
+          "baseForm": "など",
+          "level": "N5"
+        },
+        {
+          "surface": "悪戯"
+        },
+        {
+          "surface": "ばかり"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "繰り返し"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "しかし",
+          "meaning": "however",
+          "baseForm": "しかし",
+          "level": "N5"
+        },
+        {
+          "surface": "心",
+          "reading": "こころ",
+          "meaning": "core; heart",
+          "baseForm": "心",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "奥底"
+        },
+        {
+          "surface": "では",
+          "meaning": "with that...",
+          "baseForm": "では",
+          "level": "N5"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "いつか"
+        },
+        {
+          "surface": "里"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "最高"
+        },
+        {
+          "surface": "指導"
+        },
+        {
+          "surface": "者"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "火影"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "全員"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "自分",
+          "reading": "じぶん",
+          "meaning": "oneself",
+          "baseForm": "自分",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "存在"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "認め"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "せ"
+        },
+        {
+          "surface": "たい"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "強",
+          "reading": "つよ",
+          "meaning": "powerful",
+          "baseForm": "強い",
+          "level": "N5"
+        },
+        {
+          "surface": "く"
+        },
+        {
+          "surface": "願"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "いま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "木ノ葉隠れの里に住む少年ナルトは、親のいない孤独な日々を過ごしていました。",
+          "literalEn": "tree 葉隠れ ['s / of] [at/to] 住む boys ナルト [topic] ['s / of] [not] 孤独 日々 [obj] てい した",
+          "naturalEn": "A young boy named Naruto living in the Hidden Leaf Village spent his early days in painful solitude without parents.",
+          "tokens": [
+            {
+              "surface": "木",
+              "reading": "き",
+              "meaning": "tree; wood",
+              "baseForm": "木",
+              "level": "N5"
+            },
+            {
+              "surface": "ノ"
+            },
+            {
+              "surface": "葉隠れ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "里"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "住む"
+            },
+            {
+              "surface": "少年",
+              "reading": "しょうねん",
+              "meaning": "boys; juveniles",
+              "baseForm": "少年",
+              "level": "N3"
+            },
+            {
+              "surface": "ナルト"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "親"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "孤独"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "日々"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "過"
+            },
+            {
+              "surface": "ご"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "かつて里を壊滅寸前に追い込んだ九尾の妖狐が体内に封印されているせいで、大人たちから冷たく避けられていたのです。",
+          "literalEn": "かつて [obj] 壊滅 寸前 [at/to] to chase [is] 九尾 ['s / of] [subj] 体内 [at/to] 封印 [and] to be せい [in/by] 大人 たち [from] たく けら てい [past] ['s / of] [is]",
+          "naturalEn": "Because the Nine-Tailed Fox that once drove the village to the brink of ruin was sealed inside him, adults shunned him coldly.",
+          "tokens": [
+            {
+              "surface": "かつて"
+            },
+            {
+              "surface": "里"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "壊滅"
+            },
+            {
+              "surface": "寸前"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "追",
+              "reading": "お",
+              "meaning": "to chase; to run after",
+              "baseForm": "追う",
+              "level": "N3"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "込"
+            },
+            {
+              "surface": "ん"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "九尾"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "妖"
+            },
+            {
+              "surface": "狐"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "体内"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "封印"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "せい"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "大人"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "冷"
+            },
+            {
+              "surface": "たく"
+            },
+            {
+              "surface": "避"
+            },
+            {
+              "surface": "けら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "誰からも認められない悔しさを紛らわせるため、彼は里の岩山に落書きをするなど悪戯ばかりを繰り返していました。",
+          "literalEn": "who [from] [also] 認め [not] 悔しさ [obj] 紛らわせる ため he [topic] ['s / of] 岩山 [at/to] 落書き [obj] to do et cetera 悪戯 ばかり [obj] 繰り返し てい した",
+          "naturalEn": "To distract himself from the agony of being unacknowledged by anyone, he constantly pulled pranks like spray-painting the village cliff faces.",
+          "tokens": [
+            {
+              "surface": "誰",
+              "reading": "だれ",
+              "meaning": "who",
+              "baseForm": "誰",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "認め"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "悔しさ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "紛らわせる"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "里"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "岩山"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "落書き"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "など",
+              "meaning": "et cetera",
+              "baseForm": "など",
+              "level": "N5"
+            },
+            {
+              "surface": "悪戯"
+            },
+            {
+              "surface": "ばかり"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "繰り返し"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "しかし心の奥底では、いつか里の最高指導者である火影になって全員に自分の存在を認めさせたいと強く願っていました。",
+          "literalEn": "however core ['s / of] 奥底 with that... いつか ['s / of] 最高 指導 [in/by] to be 火影 [at/to] って 全員 [at/to] oneself ['s / of] 存在 [obj] 認め [want to] [with/and] powerful って いま した",
+          "naturalEn": "Yet deep in his heart, he harbored a fiery ambition to become Hokage, the village's supreme leader, and make everyone recognize him.",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "心",
+              "reading": "こころ",
+              "meaning": "core; heart",
+              "baseForm": "心",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "奥底"
+            },
+            {
+              "surface": "では",
+              "meaning": "with that...",
+              "baseForm": "では",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "いつか"
+            },
+            {
+              "surface": "里"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "最高"
+            },
+            {
+              "surface": "指導"
+            },
+            {
+              "surface": "者"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "火影"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "全員"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "自分",
+              "reading": "じぶん",
+              "meaning": "oneself",
+              "baseForm": "自分",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "存在"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "認め"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "たい"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "強",
+              "reading": "つよ",
+              "meaning": "powerful",
+              "baseForm": "強い",
+              "level": "N5"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "願"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "落ちこぼれと呼ばれて忍者学校の卒業試験に何度も落ちたにもかかわらず、彼は決して修行を投げ出しませんでした。そんな彼の本気を受け止め、一人の人間として温かく信じてくれたのが担任のイルカ先生でした。認められた喜びを知ったナルトは、額当てを締め直し、立派な忍者になるための一歩を踏み出しました。「まっすぐ自分の言葉は曲げねぇ、それが俺の忍道だ」という信念が、彼の魂の柱となったのです。",
+      "en": "Despite being branded a failure and failing the Ninja Academy graduation exam repeatedly, he never abandoned his training. The person who embraced his true earnestness and warmly believed in him as a human being was his academy tutor, Master Iruka. Experiencing the immense joy of being validated, Naruto tied his forehead protector tightly, embarking on the path to becoming a proud shinobi. The conviction of 'I never go back on my word; that's my ninja way!' became the indestructible bedrock of his soul.",
+      "tokens": [
+        {
+          "surface": "落ちこぼれ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "呼",
+          "reading": "よ",
+          "meaning": "to call out; to invite",
+          "baseForm": "呼ぶ",
+          "level": "N5"
+        },
+        {
+          "surface": "ば"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "忍者"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "meaning": "school",
+          "baseForm": "学校",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "卒業"
+        },
+        {
+          "surface": "試験"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "何",
+          "reading": "なん",
+          "meaning": "what",
+          "baseForm": "何",
+          "level": "N5"
+        },
+        {
+          "surface": "度",
+          "reading": "たび",
+          "meaning": "time (three times, each time, etc.); times",
+          "baseForm": "度",
+          "level": "N3"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "落ち",
+          "reading": "おとち",
+          "meaning": "to drop",
+          "baseForm": "落す",
+          "level": "N4"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "にもかかわらず"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "決して"
+        },
+        {
+          "surface": "修行"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "投",
+          "reading": "トウ",
+          "meaning": "throw, abandon, discard",
+          "baseForm": "投",
+          "level": "N3"
+        },
+        {
+          "surface": "げ"
+        },
+        {
+          "surface": "出",
+          "reading": "だ",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "せん"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "そんな"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "本気"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "受け"
+        },
+        {
+          "surface": "止め"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "一人",
+          "reading": "ひとり",
+          "meaning": "one person; alone",
+          "baseForm": "一人",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "人間"
+        },
+        {
+          "surface": "として"
+        },
+        {
+          "surface": "温か"
+        },
+        {
+          "surface": "く"
+        },
+        {
+          "surface": "信",
+          "reading": "シン",
+          "meaning": "faith, fidelity, trust",
+          "baseForm": "信",
+          "level": "N3"
+        },
+        {
+          "surface": "じ"
+        },
+        {
+          "surface": "てく"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "担任"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "イルカ"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "meaning": "teacher; doctor",
+          "baseForm": "先生",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "認め"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "喜び",
+          "reading": "よろこび",
+          "meaning": "(a) joy; (a) delight; rapture",
+          "baseForm": "喜び",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "知",
+          "reading": "し",
+          "meaning": "to know",
+          "baseForm": "知る",
+          "level": "N5"
+        },
+        {
+          "surface": "っ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "ナルト"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "額"
+        },
+        {
+          "surface": "当て"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "締め"
+        },
+        {
+          "surface": "直し"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "立派"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "忍者"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "なる",
+          "meaning": "to become",
+          "baseForm": "なる",
+          "level": "N5"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "一歩"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "踏",
+          "reading": "ふ",
+          "meaning": "to step on",
+          "baseForm": "踏む",
+          "level": "N4"
+        },
+        {
+          "surface": "み"
+        },
+        {
+          "surface": "出",
+          "reading": "だ",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "まっすぐ"
+        },
+        {
+          "surface": "自分",
+          "reading": "じぶん",
+          "meaning": "oneself",
+          "baseForm": "自分",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "言葉",
+          "reading": "ことば",
+          "meaning": "word; language",
+          "baseForm": "言葉",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "曲"
+        },
+        {
+          "surface": "げ"
+        },
+        {
+          "surface": "ねぇ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "それ",
+          "meaning": "that",
+          "baseForm": "それ",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "俺"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "忍"
+        },
+        {
+          "surface": "道",
+          "reading": "みち",
+          "meaning": "street",
+          "baseForm": "道",
+          "level": "N5"
+        },
+        {
+          "surface": "だ"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "信念"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "魂"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "柱",
+          "reading": "はしら",
+          "meaning": "pillar; post",
+          "baseForm": "柱",
+          "level": "N1"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "っ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "落ちこぼれと呼ばれて忍者学校の卒業試験に何度も落ちたにもかかわらず、彼は決して修行を投げ出しませんでした。",
+          "literalEn": "落ちこぼれ [with/and] to call out [and] 忍者 school ['s / of] 卒業 試験 [at/to] what time (three times [also] to drop [past] にもかかわらず he [topic] 決して 修行 [obj] throw to put out しま せん [in/by] した",
+          "naturalEn": "Despite being branded a failure and failing the Ninja Academy graduation exam repeatedly, he never abandoned his training.",
+          "tokens": [
+            {
+              "surface": "落ちこぼれ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "呼",
+              "reading": "よ",
+              "meaning": "to call out; to invite",
+              "baseForm": "呼ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "ば"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "忍者"
+            },
+            {
+              "surface": "学校",
+              "reading": "がっこう",
+              "meaning": "school",
+              "baseForm": "学校",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "卒業"
+            },
+            {
+              "surface": "試験"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "何",
+              "reading": "なん",
+              "meaning": "what",
+              "baseForm": "何",
+              "level": "N5"
+            },
+            {
+              "surface": "度",
+              "reading": "たび",
+              "meaning": "time (three times, each time, etc.); times",
+              "baseForm": "度",
+              "level": "N3"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "落ち",
+              "reading": "おとち",
+              "meaning": "to drop",
+              "baseForm": "落す",
+              "level": "N4"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "にもかかわらず"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "決して"
+            },
+            {
+              "surface": "修行"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "投",
+              "reading": "トウ",
+              "meaning": "throw, abandon, discard",
+              "baseForm": "投",
+              "level": "N3"
+            },
+            {
+              "surface": "げ"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "そんな彼の本気を受け止め、一人の人間として温かく信じてくれたのが担任のイルカ先生でした。",
+          "literalEn": "そんな he ['s / of] 本気 [obj] 受け 止め one person ['s / of] 人間 として 温か faith てく [past] ['s / of] [subj] 担任 ['s / of] イルカ teacher [in/by] した",
+          "naturalEn": "The person who embraced his true earnestness and warmly believed in him as a human being was his academy tutor, Master Iruka.",
+          "tokens": [
+            {
+              "surface": "そんな"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "本気"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "受け"
+            },
+            {
+              "surface": "止め"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "一人",
+              "reading": "ひとり",
+              "meaning": "one person; alone",
+              "baseForm": "一人",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "人間"
+            },
+            {
+              "surface": "として"
+            },
+            {
+              "surface": "温か"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "信",
+              "reading": "シン",
+              "meaning": "faith, fidelity, trust",
+              "baseForm": "信",
+              "level": "N3"
+            },
+            {
+              "surface": "じ"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "担任"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "イルカ"
+            },
+            {
+              "surface": "先生",
+              "reading": "せんせい",
+              "meaning": "teacher; doctor",
+              "baseForm": "先生",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "認められた喜びを知ったナルトは、額当てを締め直し、立派な忍者になるための一歩を踏み出しました。",
+          "literalEn": "認め [past]  joy [obj] to know [past] ナルト [topic] 当て [obj] 締め 直し 立派 忍者 [at/to] to become ため ['s / of] 一歩 [obj] to step on to put out しま した",
+          "naturalEn": "Experiencing the immense joy of being validated, Naruto tied his forehead protector tightly, embarking on the path to becoming a proud shinobi.",
+          "tokens": [
+            {
+              "surface": "認め"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "喜び",
+              "reading": "よろこび",
+              "meaning": "(a) joy; (a) delight; rapture",
+              "baseForm": "喜び",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "知",
+              "reading": "し",
+              "meaning": "to know",
+              "baseForm": "知る",
+              "level": "N5"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "ナルト"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "額"
+            },
+            {
+              "surface": "当て"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "締め"
+            },
+            {
+              "surface": "直し"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "立派"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "忍者"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なる",
+              "meaning": "to become",
+              "baseForm": "なる",
+              "level": "N5"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "一歩"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "踏",
+              "reading": "ふ",
+              "meaning": "to step on",
+              "baseForm": "踏む",
+              "level": "N4"
+            },
+            {
+              "surface": "み"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「まっすぐ自分の言葉は曲げねぇ、それが俺の忍道だ」という信念が、彼の魂の柱となったのです。",
+          "literalEn": "まっすぐ oneself ['s / of] word [topic] ねぇ that [subj] ['s / of] street [is] という 信念 [subj] he ['s / of] ['s / of] pillar [with/and] [past] ['s / of] [is]",
+          "naturalEn": "The conviction of 'I never go back on my word; that's my ninja way!' became the indestructible bedrock of his soul.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "まっすぐ"
+            },
+            {
+              "surface": "自分",
+              "reading": "じぶん",
+              "meaning": "oneself",
+              "baseForm": "自分",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "言葉",
+              "reading": "ことば",
+              "meaning": "word; language",
+              "baseForm": "言葉",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "曲"
+            },
+            {
+              "surface": "げ"
+            },
+            {
+              "surface": "ねぇ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "それ",
+              "meaning": "that",
+              "baseForm": "それ",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "俺"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "忍"
+            },
+            {
+              "surface": "道",
+              "reading": "みち",
+              "meaning": "street",
+              "baseForm": "道",
+              "level": "N5"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "信念"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "魂"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "柱",
+              "reading": "はしら",
+              "meaning": "pillar; post",
+              "baseForm": "柱",
+              "level": "N1"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "サスケやサクラと共にカカシ先生の第七班に配属され、数々の過酷な任務をこなすことになりました。天才肌のサスケに対して激しいライバル心を燃やしながらも、ナルトは実戦の中で急速な成長を遂げました。伝説の三忍の一人である自来也に弟子入りした彼は、難度の高い忍術である螺旋丸を血のにじむ努力で習得しました。修業を続けるうちに、彼は体内に眠る九尾の強大なチャクラとも向き合わざるを得なくなっていきました。",
+      "en": "Assigned alongside Sasuke and Sakura to Team 7 under Master Kakashi, he was tasked with executing myriad perilous missions. While fueling a fierce rivalry against the prodigy Sasuke, Naruto experienced meteoric growth in the crucible of real combat. Apprenticing under Jiraiya, one of the legendary Sannin, he mastered the exceptionally difficult ninjutsu known as Rasengan through blood, sweat, and tears. As his rigorous discipline continued, he had no choice but to confront the colossal Nine-Tails chakra dormant in his core.",
+      "tokens": [
+        {
+          "surface": "サスケ"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "サクラ"
+        },
+        {
+          "surface": "と共に",
+          "reading": "とともに",
+          "meaning": "together with; along with",
+          "baseForm": "と共に",
+          "level": "N3"
+        },
+        {
+          "surface": "カカシ"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "meaning": "teacher; doctor",
+          "baseForm": "先生",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "第七"
+        },
+        {
+          "surface": "班"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "配属"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "数々"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "過酷"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "任務"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "こなす"
+        },
+        {
+          "surface": "ことに"
+        },
+        {
+          "surface": "なり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "天才"
+        },
+        {
+          "surface": "肌"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "サスケ"
+        },
+        {
+          "surface": "に対して"
+        },
+        {
+          "surface": "激しい",
+          "reading": "はげしい",
+          "meaning": "violent; vehement; intense",
+          "baseForm": "激しい",
+          "level": "N3"
+        },
+        {
+          "surface": "ライバル"
+        },
+        {
+          "surface": "心",
+          "reading": "こころ",
+          "meaning": "core; heart",
+          "baseForm": "心",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "燃",
+          "reading": "も",
+          "meaning": "burn, blaze, glow",
+          "baseForm": "燃",
+          "level": "N2"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "ナルト"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "実戦"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "中",
+          "reading": "なか",
+          "meaning": "middle",
+          "baseForm": "中",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "急速"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "成長"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "遂"
+        },
+        {
+          "surface": "げ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "伝説",
+          "reading": "でんせつ",
+          "meaning": "tradition; legend; folklore",
+          "baseForm": "伝説",
+          "level": "N1"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "三",
+          "reading": "さん",
+          "meaning": "three",
+          "baseForm": "三",
+          "level": "N5"
+        },
+        {
+          "surface": "忍"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "一人",
+          "reading": "ひとり",
+          "meaning": "one person; alone",
+          "baseForm": "一人",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "自"
+        },
+        {
+          "surface": "来",
+          "reading": "らい",
+          "meaning": "for (10 days); next (year)",
+          "baseForm": "来",
+          "level": "N3"
+        },
+        {
+          "surface": "也"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "弟子入り"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "難度"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "高い"
+        },
+        {
+          "surface": "忍術"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "螺旋"
+        },
+        {
+          "surface": "丸"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "血",
+          "reading": "ち",
+          "meaning": "blood",
+          "baseForm": "血",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "にじむ"
+        },
+        {
+          "surface": "努力"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "習得"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "修業"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "続ける"
+        },
+        {
+          "surface": "うち",
+          "meaning": "within",
+          "baseForm": "うち",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "体内"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "眠る"
+        },
+        {
+          "surface": "九尾"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "強大"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "チャクラ"
+        },
+        {
+          "surface": "とも"
+        },
+        {
+          "surface": "向き"
+        },
+        {
+          "surface": "合"
+        },
+        {
+          "surface": "わ"
+        },
+        {
+          "surface": "ざる"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "得"
+        },
+        {
+          "surface": "なく"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "いき"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "サスケやサクラと共にカカシ先生の第七班に配属され、数々の過酷な任務をこなすことになりました。",
+          "literalEn": "サスケ サクラ together with カカシ teacher ['s / of] 第七 [at/to] 配属 数々 ['s / of] 過酷 任務 [obj] こなす ことに なり した",
+          "naturalEn": "Assigned alongside Sasuke and Sakura to Team 7 under Master Kakashi, he was tasked with executing myriad perilous missions.",
+          "tokens": [
+            {
+              "surface": "サスケ"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "サクラ"
+            },
+            {
+              "surface": "と共に",
+              "reading": "とともに",
+              "meaning": "together with; along with",
+              "baseForm": "と共に",
+              "level": "N3"
+            },
+            {
+              "surface": "カカシ"
+            },
+            {
+              "surface": "先生",
+              "reading": "せんせい",
+              "meaning": "teacher; doctor",
+              "baseForm": "先生",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "第七"
+            },
+            {
+              "surface": "班"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "配属"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "数々"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "過酷"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "任務"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "こなす"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "天才肌のサスケに対して激しいライバル心を燃やしながらも、ナルトは実戦の中で急速な成長を遂げました。",
+          "literalEn": "天才 ['s / of] サスケ に対して violent ライバル core [obj] burn ながら [also] ナルト [topic] 実戦 ['s / of] middle [in/by] 急速 成長 [obj] した",
+          "naturalEn": "While fueling a fierce rivalry against the prodigy Sasuke, Naruto experienced meteoric growth in the crucible of real combat.",
+          "tokens": [
+            {
+              "surface": "天才"
+            },
+            {
+              "surface": "肌"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "サスケ"
+            },
+            {
+              "surface": "に対して"
+            },
+            {
+              "surface": "激しい",
+              "reading": "はげしい",
+              "meaning": "violent; vehement; intense",
+              "baseForm": "激しい",
+              "level": "N3"
+            },
+            {
+              "surface": "ライバル"
+            },
+            {
+              "surface": "心",
+              "reading": "こころ",
+              "meaning": "core; heart",
+              "baseForm": "心",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "燃",
+              "reading": "も",
+              "meaning": "burn, blaze, glow",
+              "baseForm": "燃",
+              "level": "N2"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ナルト"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "実戦"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "急速"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "成長"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "遂"
+            },
+            {
+              "surface": "げ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "伝説の三忍の一人である自来也に弟子入りした彼は、難度の高い忍術である螺旋丸を血のにじむ努力で習得しました。",
+          "literalEn": "tradition ['s / of] three ['s / of] one person [in/by] to be for [at/to] 弟子入り した he [topic] 難度 ['s / of] 高い 忍術 [in/by] to be 螺旋 [obj] blood ['s / of] にじむ 努力 [in/by] 習得 しま した",
+          "naturalEn": "Apprenticing under Jiraiya, one of the legendary Sannin, he mastered the exceptionally difficult ninjutsu known as Rasengan through blood, sweat, and tears.",
+          "tokens": [
+            {
+              "surface": "伝説",
+              "reading": "でんせつ",
+              "meaning": "tradition; legend; folklore",
+              "baseForm": "伝説",
+              "level": "N1"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "三",
+              "reading": "さん",
+              "meaning": "three",
+              "baseForm": "三",
+              "level": "N5"
+            },
+            {
+              "surface": "忍"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "一人",
+              "reading": "ひとり",
+              "meaning": "one person; alone",
+              "baseForm": "一人",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "自"
+            },
+            {
+              "surface": "来",
+              "reading": "らい",
+              "meaning": "for (10 days); next (year)",
+              "baseForm": "来",
+              "level": "N3"
+            },
+            {
+              "surface": "也"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "弟子入り"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "難度"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "高い"
+            },
+            {
+              "surface": "忍術"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "螺旋"
+            },
+            {
+              "surface": "丸"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "血",
+              "reading": "ち",
+              "meaning": "blood",
+              "baseForm": "血",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "にじむ"
+            },
+            {
+              "surface": "努力"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "習得"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "修業を続けるうちに、彼は体内に眠る九尾の強大なチャクラとも向き合わざるを得なくなっていきました。",
+          "literalEn": "修業 [obj] 続ける within [at/to] he [topic] 体内 [at/to] 眠る 九尾 ['s / of] 強大 チャクラ とも 向き ざる [obj] なく って いき した",
+          "naturalEn": "As his rigorous discipline continued, he had no choice but to confront the colossal Nine-Tails chakra dormant in his core.",
+          "tokens": [
+            {
+              "surface": "修業"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "続ける"
+            },
+            {
+              "surface": "うち",
+              "meaning": "within",
+              "baseForm": "うち",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "体内"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "眠る"
+            },
+            {
+              "surface": "九尾"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "強大"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "チャクラ"
+            },
+            {
+              "surface": "とも"
+            },
+            {
+              "surface": "向き"
+            },
+            {
+              "surface": "合"
+            },
+            {
+              "surface": "わ"
+            },
+            {
+              "surface": "ざる"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "得"
+            },
+            {
+              "surface": "なく"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "ところが復讐に囚われたサスケが里を抜け出したことで、二人の絆は大きな試練を迎えることになりました。友を闇から連れ戻すために、ナルトはどんなに傷ついても追い続けることを心に誓いました。里を滅ぼそうとする強大な敵ペインが襲来した際には、仙術を極めて里の危機を一人で救い出しました。かつて彼を化け物として恐れていた村人たちは、英雄として帰還したナルトを歓声と涙で迎え入れたのです。",
+      "en": "However, as Sasuke fell prey to the thirst for vengeance and deserted the village, the bond between the two faced an agonizing ordeal. To drag his dearest friend back from the abyss, Naruto vowed in his heart to keep chasing him, no matter how wounded he became. When the formidable adversary Pain attacked to annihilate the village, Naruto mastered Sage Jutsu and saved the village from destruction single-handedly. The villagers who once feared him as an omen greeted Naruto's return as a hero with thunderous applause and tears of gratitude.",
+      "tokens": [
+        {
+          "surface": "ところが"
+        },
+        {
+          "surface": "復讐"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "囚われ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "サスケ"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "里"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "抜",
+          "reading": "ぬ",
+          "meaning": "to extract; to omit; to surpass",
+          "baseForm": "抜く",
+          "level": "N3"
+        },
+        {
+          "surface": "け"
+        },
+        {
+          "surface": "出",
+          "reading": "だ",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "二人",
+          "reading": "ふたり",
+          "meaning": "two people; pair",
+          "baseForm": "二人",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "絆"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "大きな",
+          "reading": "おおきな",
+          "meaning": "big",
+          "baseForm": "大きな",
+          "level": "N5"
+        },
+        {
+          "surface": "試練"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "迎える"
+        },
+        {
+          "surface": "ことに"
+        },
+        {
+          "surface": "なり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "友"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "闇",
+          "reading": "やみ",
+          "meaning": "darkness; the dark; black-marketeering",
+          "baseForm": "闇",
+          "level": "N1"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "連れ戻す"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "ナルト"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "どんなに"
+        },
+        {
+          "surface": "傷",
+          "reading": "きず",
+          "meaning": "wound; injury; hurt",
+          "baseForm": "傷",
+          "level": "N3"
+        },
+        {
+          "surface": "つい"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "追",
+          "reading": "お",
+          "meaning": "to chase; to run after",
+          "baseForm": "追う",
+          "level": "N3"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "続ける"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "心",
+          "reading": "こころ",
+          "meaning": "core; heart",
+          "baseForm": "心",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "誓"
+        },
+        {
+          "surface": "いま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "里"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "滅"
+        },
+        {
+          "surface": "ぼ"
+        },
+        {
+          "surface": "そう",
+          "meaning": "really",
+          "baseForm": "そう",
+          "level": "N4"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "強大"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "敵",
+          "reading": "てき",
+          "meaning": "enemy; rival",
+          "baseForm": "敵",
+          "level": "N3"
+        },
+        {
+          "surface": "ペイン"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "襲来"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "際"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "仙術"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "極めて"
+        },
+        {
+          "surface": "里"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "危機"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "一人",
+          "reading": "ひとり",
+          "meaning": "one person; alone",
+          "baseForm": "一人",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "救い"
+        },
+        {
+          "surface": "出",
+          "reading": "だ",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "かつて"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "化け物"
+        },
+        {
+          "surface": "として"
+        },
+        {
+          "surface": "恐れ"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "村人",
+          "reading": "むらびと",
+          "meaning": "villager",
+          "baseForm": "村人",
+          "level": "N4"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "英雄"
+        },
+        {
+          "surface": "として"
+        },
+        {
+          "surface": "帰還"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "ナルト"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "歓声"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "涙"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "迎え入れ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "ところが復讐に囚われたサスケが里を抜け出したことで、二人の絆は大きな試練を迎えることになりました。",
+          "literalEn": "ところが 復讐 [at/to] 囚われ [past] サスケ [subj] [obj] to extract to put out した thing [in/by] two people ['s / of] [topic] big 試練 [obj] 迎える ことに なり した",
+          "naturalEn": "However, as Sasuke fell prey to the thirst for vengeance and deserted the village, the bond between the two faced an agonizing ordeal.",
+          "tokens": [
+            {
+              "surface": "ところが"
+            },
+            {
+              "surface": "復讐"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "囚われ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "サスケ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "里"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "抜",
+              "reading": "ぬ",
+              "meaning": "to extract; to omit; to surpass",
+              "baseForm": "抜く",
+              "level": "N3"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "二人",
+              "reading": "ふたり",
+              "meaning": "two people; pair",
+              "baseForm": "二人",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "絆"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "試練"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "迎える"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "友を闇から連れ戻すために、ナルトはどんなに傷ついても追い続けることを心に誓いました。",
+          "literalEn": "[obj] darkness [from] 連れ戻す ため [at/to] ナルト [topic] どんなに wound つい [and] [also] to chase 続ける thing [obj] core [at/to] いま した",
+          "naturalEn": "To drag his dearest friend back from the abyss, Naruto vowed in his heart to keep chasing him, no matter how wounded he became.",
+          "tokens": [
+            {
+              "surface": "友"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "闇",
+              "reading": "やみ",
+              "meaning": "darkness; the dark; black-marketeering",
+              "baseForm": "闇",
+              "level": "N1"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "連れ戻す"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ナルト"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "どんなに"
+            },
+            {
+              "surface": "傷",
+              "reading": "きず",
+              "meaning": "wound; injury; hurt",
+              "baseForm": "傷",
+              "level": "N3"
+            },
+            {
+              "surface": "つい"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "追",
+              "reading": "お",
+              "meaning": "to chase; to run after",
+              "baseForm": "追う",
+              "level": "N3"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "続ける"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "心",
+              "reading": "こころ",
+              "meaning": "core; heart",
+              "baseForm": "心",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "誓"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "里を滅ぼそうとする強大な敵ペインが襲来した際には、仙術を極めて里の危機を一人で救い出しました。",
+          "literalEn": "[obj] really [with/and] to do 強大 enemy ペイン [subj] 襲来 した [at/to] [topic] 仙術 [obj] 極めて ['s / of] 危機 [obj] one person [in/by] 救い to put out しま した",
+          "naturalEn": "When the formidable adversary Pain attacked to annihilate the village, Naruto mastered Sage Jutsu and saved the village from destruction single-handedly.",
+          "tokens": [
+            {
+              "surface": "里"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "滅"
+            },
+            {
+              "surface": "ぼ"
+            },
+            {
+              "surface": "そう",
+              "meaning": "really",
+              "baseForm": "そう",
+              "level": "N4"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "強大"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "敵",
+              "reading": "てき",
+              "meaning": "enemy; rival",
+              "baseForm": "敵",
+              "level": "N3"
+            },
+            {
+              "surface": "ペイン"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "襲来"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "際"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "仙術"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "極めて"
+            },
+            {
+              "surface": "里"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "危機"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "一人",
+              "reading": "ひとり",
+              "meaning": "one person; alone",
+              "baseForm": "一人",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "救い"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "かつて彼を化け物として恐れていた村人たちは、英雄として帰還したナルトを歓声と涙で迎え入れたのです。",
+          "literalEn": "かつて he [obj] 化け物 として 恐れ てい [past] villager たち [topic] 英雄 として 帰還 した ナルト [obj] 歓声 [with/and] [in/by] 迎え入れ [past] ['s / of] [is]",
+          "naturalEn": "The villagers who once feared him as an omen greeted Naruto's return as a hero with thunderous applause and tears of gratitude.",
+          "tokens": [
+            {
+              "surface": "かつて"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "化け物"
+            },
+            {
+              "surface": "として"
+            },
+            {
+              "surface": "恐れ"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "村人",
+              "reading": "むらびと",
+              "meaning": "villager",
+              "baseForm": "村人",
+              "level": "N4"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "英雄"
+            },
+            {
+              "surface": "として"
+            },
+            {
+              "surface": "帰還"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "ナルト"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "歓声"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "涙"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "迎え入れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "第四次忍界大戦という世界の命運を分ける戦いにおいても、ナルトの諦めない心が全忍の希望となりました。憎しみの連鎖を断ち切るために敵の悲しみにも耳を傾け、ついに九尾の狐とも真の友情を築き上げました。夢を疑うことなく歩み続けた少年は、やがて万人に敬愛される立派な火影へと成長を遂げたのでした。",
+      "en": "Even in the Fourth Great Ninja War that weighed the fate of the entire world, Naruto's refusal to surrender became the beacon of hope for all ninja. To sever the vicious cycle of hatred, he listened to his enemies' sorrow and ultimately forged a genuine friendship with the Nine-Tails itself. The boy who walked forward without ever doubting his aspirations grew into a noble Hokage revered and beloved by all.",
+      "tokens": [
+        {
+          "surface": "第四次"
+        },
+        {
+          "surface": "忍"
+        },
+        {
+          "surface": "界"
+        },
+        {
+          "surface": "大戦"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "世界",
+          "reading": "せかい",
+          "meaning": "the world",
+          "baseForm": "世界",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "命運"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "分ける"
+        },
+        {
+          "surface": "戦い",
+          "reading": "たたかい",
+          "meaning": "battle; fight; struggle",
+          "baseForm": "戦い",
+          "level": "N3"
+        },
+        {
+          "surface": "において"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "ナルト"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "諦"
+        },
+        {
+          "surface": "め"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "心",
+          "reading": "こころ",
+          "meaning": "core; heart",
+          "baseForm": "心",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "全"
+        },
+        {
+          "surface": "忍"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "希望"
+        },
+        {
+          "surface": "となり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "憎しみ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "連鎖"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "断ち切る"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "敵",
+          "reading": "てき",
+          "meaning": "enemy; rival",
+          "baseForm": "敵",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "悲しみ",
+          "reading": "かなしみ",
+          "meaning": "sad, deplore, grieve",
+          "baseForm": "悲",
+          "level": "N3"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "耳"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "傾"
+        },
+        {
+          "surface": "け"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "ついに"
+        },
+        {
+          "surface": "九尾"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "狐"
+        },
+        {
+          "surface": "とも"
+        },
+        {
+          "surface": "真"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "友情"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "築"
+        },
+        {
+          "surface": "き"
+        },
+        {
+          "surface": "上げ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "夢",
+          "reading": "ゆめ",
+          "meaning": "dream",
+          "baseForm": "夢",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "疑う"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "なく"
+        },
+        {
+          "surface": "歩み"
+        },
+        {
+          "surface": "続"
+        },
+        {
+          "surface": "けた"
+        },
+        {
+          "surface": "少年",
+          "reading": "しょうねん",
+          "meaning": "boys; juveniles",
+          "baseForm": "少年",
+          "level": "N3"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "やがて"
+        },
+        {
+          "surface": "万人"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "敬愛"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れる"
+        },
+        {
+          "surface": "立派"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "火影"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "成長"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "遂"
+        },
+        {
+          "surface": "げた"
+        },
+        {
+          "surface": "ので"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "第四次忍界大戦という世界の命運を分ける戦いにおいても、ナルトの諦めない心が全忍の希望となりました。",
+          "literalEn": "第四次 大戦 という the world ['s / of] 命運 [obj] 分ける battle において [also] ナルト ['s / of] [not] core [subj] ['s / of] 希望 となり した",
+          "naturalEn": "Even in the Fourth Great Ninja War that weighed the fate of the entire world, Naruto's refusal to surrender became the beacon of hope for all ninja.",
+          "tokens": [
+            {
+              "surface": "第四次"
+            },
+            {
+              "surface": "忍"
+            },
+            {
+              "surface": "界"
+            },
+            {
+              "surface": "大戦"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "世界",
+              "reading": "せかい",
+              "meaning": "the world",
+              "baseForm": "世界",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "命運"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "分ける"
+            },
+            {
+              "surface": "戦い",
+              "reading": "たたかい",
+              "meaning": "battle; fight; struggle",
+              "baseForm": "戦い",
+              "level": "N3"
+            },
+            {
+              "surface": "において"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ナルト"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "諦"
+            },
+            {
+              "surface": "め"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "心",
+              "reading": "こころ",
+              "meaning": "core; heart",
+              "baseForm": "心",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "全"
+            },
+            {
+              "surface": "忍"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "希望"
+            },
+            {
+              "surface": "となり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "憎しみの連鎖を断ち切るために敵の悲しみにも耳を傾け、ついに九尾の狐とも真の友情を築き上げました。",
+          "literalEn": "憎しみ ['s / of] 連鎖 [obj] 断ち切る ため [at/to] enemy ['s / of] sad [at/to] [also] [obj] ついに 九尾 ['s / of] とも ['s / of] 友情 [obj] 上げ した",
+          "naturalEn": "To sever the vicious cycle of hatred, he listened to his enemies' sorrow and ultimately forged a genuine friendship with the Nine-Tails itself.",
+          "tokens": [
+            {
+              "surface": "憎しみ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "連鎖"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "断ち切る"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "敵",
+              "reading": "てき",
+              "meaning": "enemy; rival",
+              "baseForm": "敵",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "悲しみ",
+              "reading": "かなしみ",
+              "meaning": "sad, deplore, grieve",
+              "baseForm": "悲",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "耳"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "傾"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ついに"
+            },
+            {
+              "surface": "九尾"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "狐"
+            },
+            {
+              "surface": "とも"
+            },
+            {
+              "surface": "真"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "友情"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "築"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "上げ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "夢を疑うことなく歩み続けた少年は、やがて万人に敬愛される立派な火影へと成長を遂げたのでした。",
+          "literalEn": "dream [obj] 疑う thing なく 歩み けた boys [topic] やがて 万人 [at/to] 敬愛 れる 立派 火影 [toward] [with/and] 成長 [obj] げた ので した",
+          "naturalEn": "The boy who walked forward without ever doubting his aspirations grew into a noble Hokage revered and beloved by all.",
+          "tokens": [
+            {
+              "surface": "夢",
+              "reading": "ゆめ",
+              "meaning": "dream",
+              "baseForm": "夢",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "疑う"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "なく"
+            },
+            {
+              "surface": "歩み"
+            },
+            {
+              "surface": "続"
+            },
+            {
+              "surface": "けた"
+            },
+            {
+              "surface": "少年",
+              "reading": "しょうねん",
+              "meaning": "boys; juveniles",
+              "baseForm": "少年",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "やがて"
+            },
+            {
+              "surface": "万人"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "敬愛"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れる"
+            },
+            {
+              "surface": "立派"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "火影"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "成長"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "遂"
+            },
+            {
+              "surface": "げた"
+            },
+            {
+              "surface": "ので"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "幼少期のナルトが里の大人たちから避けられていた本当の理由は何ですか。",
+      "questionEn": "What was the true reason Naruto was avoided by the village adults during his childhood?",
+      "options": [
+        "かつて里を襲った九尾の妖狐が体内に封印されていたから",
+        "忍者の試験でいつも不正を働いていたから",
+        "他国のスパイとして疑われていたから",
+        "里の掟を破って外の世界へ逃げ出したから"
+      ],
+      "optionsEn": [
+        "The Nine-Tailed Fox that once attacked the village was sealed inside his body",
+        "He was constantly cheating on his ninja examinations",
+        "He was suspected of espionage on behalf of a rival country",
+        "He broke the village decrees and escaped into the outside world"
+      ],
+      "answerIndex": 0,
+      "explanation": "里を壊滅寸前に追い込んだ恐ろしい九尾の妖狐をその身に宿していたため、大人たちから忌み嫌われていました。"
+    },
+    {
+      "question": "ナルトの生き方の根底にある「忍道」とはどのような信念ですか。",
+      "questionEn": "What belief embodies the core of Naruto's 'ninja way'?",
+      "options": [
+        "一度口にした自分の言葉は決して曲げず、諦めないこと",
+        "任務を達成するためならどんな嘘をついても良いということ",
+        "強い者には決して逆らわずに従うこと",
+        "お金と権力を手に入れて里を支配すること"
+      ],
+      "optionsEn": [
+        "Never going back on one's word and never giving up",
+        "Telling any lie necessary as long as the mission succeeds",
+        "Always submitting to the strong without resistance",
+        "Acquiring wealth and authority to rule the village"
+      ],
+      "answerIndex": 0,
+      "explanation": "「まっすぐ自分の言葉は曲げねぇ」という不屈の信念こそが、ナルトの人生を導く忍道です。"
+    },
+    {
+      "question": "ペインの襲撃から里を救った後、村人たちはナルトをどのように迎えましたか。",
+      "questionEn": "How did the villagers welcome Naruto after he saved the village from Pain's assault?",
+      "options": [
+        "かつての偏見を改め、英雄として歓声と涙で迎え入れた",
+        "さらに恐ろしい化け物として里から追い出した",
+        "ナルトの功績を認めず、サスケを褒め称えた",
+        "冷たい態度を一切変えずに無視し続けた"
+      ],
+      "optionsEn": [
+        "Setting aside past prejudices, they welcomed him as a hero with cheers and tears",
+        "Banishing him from the village as an even more terrifying beast",
+        "Refusing to acknowledge his deed while praising Sasuke instead",
+        "Ignoring him completely without changing their cold demeanor"
+      ],
+      "answerIndex": 0,
+      "explanation": "命を賭して里を守り抜いたナルトの姿を見て、村人たちは彼を真の英雄として心から讃えました。"
+    }
+  ]
+}

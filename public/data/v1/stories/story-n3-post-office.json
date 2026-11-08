@@ -1,0 +1,4333 @@
+{
+  "id": "story-n3-post-office",
+  "title": "郵便局での手続き：海外への小包発送",
+  "titleRomaji": "Yuubinkyoku de no Tetsuduki: Kaigai e no Kozutsumi Hassou",
+  "titleEn": "Post Office Procedures: Sending an International Parcel",
+  "level": "N3",
+  "category": "Everyday Life",
+  "tags": [
+    "Everyday Life",
+    "N3",
+    "Postal",
+    "Logistics",
+    "Dialogue"
+  ],
+  "paragraphs": [
+    {
+      "ja": "留学中の親友の誕生日に合わせて、日本の伝統的なお菓子や文房具を詰め合わせた小包を送ることにしました。海外への発送手続きは初めてだったため、段ボール箱を抱えて最寄りの郵便局の窓口を訪ねました。局内に入ると番号札発券機があり、「郵便・国際郵便」のボタンを押して順番を待つことにしました。番号が呼ばれて指定のカウンターへ向かうと、ベテランの局員が「本日はどのようなご用件でしょうか」と尋ねてくれました。",
+      "en": "To coincide with the birthday of a dear friend studying abroad, I decided to send a care package packed with traditional Japanese snacks and stationery. Since it was my first time shipping overseas, I held the cardboard carton in both arms and visited the counter of the nearest post office. Upon entering the branch, there was a ticket dispenser, and I pressed the button for 'Mail & International Mail' to await my turn. When my number was summoned and I approached the designated counter, a veteran postal officer asked: 'How may I assist you today?'",
+      "tokens": [
+        {
+          "surface": "留学"
+        },
+        {
+          "surface": "中",
+          "reading": "なか",
+          "meaning": "middle",
+          "baseForm": "中",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "親友"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "誕生"
+        },
+        {
+          "surface": "日",
+          "reading": "ひ",
+          "meaning": "day; sun",
+          "baseForm": "日",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "合わせ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "日本",
+          "reading": "にっぽん",
+          "meaning": "Japan",
+          "baseForm": "日本",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "伝統"
+        },
+        {
+          "surface": "的"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "お菓子"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "文房具"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "詰め合わせ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "小包"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "送る"
+        },
+        {
+          "surface": "ことに"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "海外"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "発送"
+        },
+        {
+          "surface": "手続き",
+          "reading": "てつづき",
+          "meaning": "procedure; (legal) process; formalities",
+          "baseForm": "手続き",
+          "level": "N2"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "初めて",
+          "reading": "はじめて",
+          "meaning": "for the first time",
+          "baseForm": "初めて",
+          "level": "N5"
+        },
+        {
+          "surface": "だ"
+        },
+        {
+          "surface": "っ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "段ボール"
+        },
+        {
+          "surface": "箱",
+          "reading": "はこ",
+          "meaning": "box",
+          "baseForm": "箱",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "抱え"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "最寄り"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "郵便局"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "窓口",
+          "reading": "まどぐち",
+          "meaning": "ticket window",
+          "baseForm": "窓口",
+          "level": "N2"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "訪",
+          "reading": "おとず",
+          "meaning": "call on, look up, offer sympathy",
+          "baseForm": "訪",
+          "level": "N3"
+        },
+        {
+          "surface": "ね",
+          "meaning": "value; price; cost",
+          "baseForm": "ね",
+          "level": "N3"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "局内"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "入る",
+          "reading": "はいる",
+          "meaning": "to enter; to contain",
+          "baseForm": "入る",
+          "level": "N5"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "番号",
+          "reading": "ばんごう",
+          "meaning": "number",
+          "baseForm": "番号",
+          "level": "N5"
+        },
+        {
+          "surface": "札",
+          "reading": "さつ",
+          "meaning": "banknote; bill; note",
+          "baseForm": "札",
+          "level": "N3"
+        },
+        {
+          "surface": "発券"
+        },
+        {
+          "surface": "機"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "あり"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "郵便"
+        },
+        {
+          "surface": "・"
+        },
+        {
+          "surface": "国際"
+        },
+        {
+          "surface": "郵便"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ボタン"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "押して"
+        },
+        {
+          "surface": "順番",
+          "reading": "じゅんばん",
+          "meaning": "turn (in line); order of things",
+          "baseForm": "順番",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "待つ"
+        },
+        {
+          "surface": "ことに"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "番号",
+          "reading": "ばんごう",
+          "meaning": "number",
+          "baseForm": "番号",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "呼",
+          "reading": "よ",
+          "meaning": "to call out; to invite",
+          "baseForm": "呼ぶ",
+          "level": "N5"
+        },
+        {
+          "surface": "ば"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "指定"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "カウンター"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "向かう"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "ベテラン"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "局員"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "本日"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "どの"
+        },
+        {
+          "surface": "よう"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "ご"
+        },
+        {
+          "surface": "用件"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "しょう"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "尋",
+          "reading": "たず",
+          "meaning": "inquire, fathom, look for",
+          "baseForm": "尋",
+          "level": "N1"
+        },
+        {
+          "surface": "ね",
+          "meaning": "value; price; cost",
+          "baseForm": "ね",
+          "level": "N3"
+        },
+        {
+          "surface": "てく"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "留学中の親友の誕生日に合わせて、日本の伝統的なお菓子や文房具を詰め合わせた小包を送ることにしました。",
+          "literalEn": "留学 middle ['s / of] 親友 ['s / of] 誕生 day [at/to] 合わせ [and] Japan ['s / of] 伝統 お菓子 文房具 [obj] 詰め合わせ [past] 小包 [obj] 送る ことに しま した",
+          "naturalEn": "To coincide with the birthday of a dear friend studying abroad, I decided to send a care package packed with traditional Japanese snacks and stationery.",
+          "tokens": [
+            {
+              "surface": "留学"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "親友"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "誕生"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "合わせ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "日本",
+              "reading": "にっぽん",
+              "meaning": "Japan",
+              "baseForm": "日本",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "伝統"
+            },
+            {
+              "surface": "的"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "お菓子"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "文房具"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "詰め合わせ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "小包"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "送る"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "海外への発送手続きは初めてだったため、段ボール箱を抱えて最寄りの郵便局の窓口を訪ねました。",
+          "literalEn": "海外 [toward] ['s / of] 発送 procedure [topic] for the first time [is] [past] ため 段ボール box [obj] 抱え [and] 最寄り ['s / of] 郵便局 ['s / of] ticket window [obj] call on [right?] した",
+          "naturalEn": "Since it was my first time shipping overseas, I held the cardboard carton in both arms and visited the counter of the nearest post office.",
+          "tokens": [
+            {
+              "surface": "海外"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "発送"
+            },
+            {
+              "surface": "手続き",
+              "reading": "てつづき",
+              "meaning": "procedure; (legal) process; formalities",
+              "baseForm": "手続き",
+              "level": "N2"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "初めて",
+              "reading": "はじめて",
+              "meaning": "for the first time",
+              "baseForm": "初めて",
+              "level": "N5"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "段ボール"
+            },
+            {
+              "surface": "箱",
+              "reading": "はこ",
+              "meaning": "box",
+              "baseForm": "箱",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "抱え"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "最寄り"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "郵便局"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "窓口",
+              "reading": "まどぐち",
+              "meaning": "ticket window",
+              "baseForm": "窓口",
+              "level": "N2"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "訪",
+              "reading": "おとず",
+              "meaning": "call on, look up, offer sympathy",
+              "baseForm": "訪",
+              "level": "N3"
+            },
+            {
+              "surface": "ね",
+              "meaning": "value; price; cost",
+              "baseForm": "ね",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "局内に入ると番号札発券機があり、「郵便・国際郵便」のボタンを押して順番を待つことにしました。",
+          "literalEn": "局内 [at/to] to enter [with/and] number banknote 発券 [subj] あり 郵便 国際 郵便 ['s / of] ボタン [obj] 押して turn [obj] 待つ ことに しま した",
+          "naturalEn": "Upon entering the branch, there was a ticket dispenser, and I pressed the button for 'Mail & International Mail' to await my turn.",
+          "tokens": [
+            {
+              "surface": "局内"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入る",
+              "reading": "はいる",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "番号",
+              "reading": "ばんごう",
+              "meaning": "number",
+              "baseForm": "番号",
+              "level": "N5"
+            },
+            {
+              "surface": "札",
+              "reading": "さつ",
+              "meaning": "banknote; bill; note",
+              "baseForm": "札",
+              "level": "N3"
+            },
+            {
+              "surface": "発券"
+            },
+            {
+              "surface": "機"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "あり"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "郵便"
+            },
+            {
+              "surface": "・"
+            },
+            {
+              "surface": "国際"
+            },
+            {
+              "surface": "郵便"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ボタン"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "押して"
+            },
+            {
+              "surface": "順番",
+              "reading": "じゅんばん",
+              "meaning": "turn (in line); order of things",
+              "baseForm": "順番",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "待つ"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "番号が呼ばれて指定のカウンターへ向かうと、ベテランの局員が「本日はどのようなご用件でしょうか」と尋ねてくれました。",
+          "literalEn": "number [subj] to call out [and] 指定 ['s / of] カウンター [toward] 向かう [with/and] ベテラン ['s / of] 局員 [subj] 本日 [topic] どの よう 用件 [in/by] しょう [?] [with/and] inquire [right?] てく した",
+          "naturalEn": "When my number was summoned and I approached the designated counter, a veteran postal officer asked: 'How may I assist you today?'",
+          "tokens": [
+            {
+              "surface": "番号",
+              "reading": "ばんごう",
+              "meaning": "number",
+              "baseForm": "番号",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "呼",
+              "reading": "よ",
+              "meaning": "to call out; to invite",
+              "baseForm": "呼ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "ば"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "指定"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "カウンター"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "向かう"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ベテラン"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "局員"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "本日"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "どの"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "ご"
+            },
+            {
+              "surface": "用件"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "しょう"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "尋",
+              "reading": "たず",
+              "meaning": "inquire, fathom, look for",
+              "baseForm": "尋",
+              "level": "N1"
+            },
+            {
+              "surface": "ね",
+              "meaning": "value; price; cost",
+              "baseForm": "ね",
+              "level": "N3"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "「オーストラリアに住んでいる友人にプレゼントの荷物を送りたいのですが」と相談を持ちかけました。局員は秤の上に小包を載せて計量しながら、「航空便や船便などいくつか方法がございます」と丁寧に説明してくれました。「EMS（国際スピード郵便）をご利用いただければ、三日から四日ほどで追跡番号付きでお届けできます」とのことでした。友人の誕生日までに確実に届けたかったため、少し料金は高いもののEMSを利用することに決めました。",
+      "en": "I inquired: 'I would like to dispatch a gift parcel to a friend residing in Australia.' Placing the parcel onto the scale for weighing, the officer courteously explained: 'We have several methods, such as airmail and surface sea mail.' 'If you utilize EMS (Express Mail Service), it will be delivered in roughly three to four days with an online tracking number,' he informed me. Wanting it to arrive reliably by my friend's birthday, I opted for EMS despite the somewhat higher postal fee.",
+      "tokens": [
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "オーストラリア"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "住",
+          "reading": "じゅう",
+          "meaning": "dwelling; living",
+          "baseForm": "住",
+          "level": "N1"
+        },
+        {
+          "surface": "んで"
+        },
+        {
+          "surface": "いる",
+          "meaning": "to be; to have (used for people and animals)",
+          "baseForm": "いる",
+          "level": "N5"
+        },
+        {
+          "surface": "友人"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "プレゼント",
+          "meaning": "present",
+          "baseForm": "プレゼント",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "荷物",
+          "reading": "にもつ",
+          "meaning": "luggage",
+          "baseForm": "荷物",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "送り",
+          "reading": "おくり",
+          "meaning": "to send",
+          "baseForm": "送る",
+          "level": "N4"
+        },
+        {
+          "surface": "たい"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ですが"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "相談",
+          "reading": "そうだん",
+          "meaning": "to discuss",
+          "baseForm": "相談",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "持ち",
+          "reading": "もち",
+          "meaning": "hold; charge; keep possession",
+          "baseForm": "持ち",
+          "level": "N1"
+        },
+        {
+          "surface": "かけ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "局員"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "秤"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "上",
+          "reading": "うえ",
+          "meaning": "on top of",
+          "baseForm": "上",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "小包"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "載"
+        },
+        {
+          "surface": "せ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "計量"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "航空",
+          "reading": "こうくう",
+          "meaning": "aviation; flying",
+          "baseForm": "航空",
+          "level": "N3"
+        },
+        {
+          "surface": "便"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "船便"
+        },
+        {
+          "surface": "など",
+          "meaning": "et cetera",
+          "baseForm": "など",
+          "level": "N5"
+        },
+        {
+          "surface": "いくつか"
+        },
+        {
+          "surface": "方法",
+          "reading": "ほうほう",
+          "meaning": "method; manner; way",
+          "baseForm": "方法",
+          "level": "N3"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "ご"
+        },
+        {
+          "surface": "ざ"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "丁寧",
+          "reading": "ていねい",
+          "meaning": "polite",
+          "baseForm": "丁寧",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "説明",
+          "reading": "せつめい",
+          "meaning": "explanation",
+          "baseForm": "説明",
+          "level": "N4"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "てく"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "EMS"
+        },
+        {
+          "surface": "（"
+        },
+        {
+          "surface": "国際"
+        },
+        {
+          "surface": "スピード"
+        },
+        {
+          "surface": "郵便"
+        },
+        {
+          "surface": "）"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "ご利用"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "だけ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ば"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "三日",
+          "reading": "みっか",
+          "meaning": "three days; third day",
+          "baseForm": "三日",
+          "level": "N5"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "四日"
+        },
+        {
+          "surface": "ほど",
+          "meaning": "extent",
+          "baseForm": "ほど",
+          "level": "N4"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "追跡"
+        },
+        {
+          "surface": "番号",
+          "reading": "ばんごう",
+          "meaning": "number",
+          "baseForm": "番号",
+          "level": "N5"
+        },
+        {
+          "surface": "付き"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "お"
+        },
+        {
+          "surface": "届け"
+        },
+        {
+          "surface": "でき"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "友人"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "誕生"
+        },
+        {
+          "surface": "日",
+          "reading": "ひ",
+          "meaning": "day; sun",
+          "baseForm": "日",
+          "level": "N4"
+        },
+        {
+          "surface": "まで"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "確実"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "届け"
+        },
+        {
+          "surface": "たか"
+        },
+        {
+          "surface": "っ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "少し",
+          "reading": "すこし",
+          "meaning": "few",
+          "baseForm": "少し",
+          "level": "N5"
+        },
+        {
+          "surface": "料金"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "高い"
+        },
+        {
+          "surface": "ものの"
+        },
+        {
+          "surface": "EMS"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "利用"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "ことに"
+        },
+        {
+          "surface": "決め",
+          "reading": "ケツめ",
+          "meaning": "decide, agree upon, appoint",
+          "baseForm": "決",
+          "level": "N3"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "「オーストラリアに住んでいる友人にプレゼントの荷物を送りたいのですが」と相談を持ちかけました。",
+          "literalEn": "オーストラリア [at/to] dwelling んで to be 友人 [at/to] present ['s / of] luggage [obj] to send [want to] ['s / of] ですが [with/and] to discuss [obj] hold かけ した",
+          "naturalEn": "I inquired: 'I would like to dispatch a gift parcel to a friend residing in Australia.'",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "オーストラリア"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "住",
+              "reading": "じゅう",
+              "meaning": "dwelling; living",
+              "baseForm": "住",
+              "level": "N1"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "友人"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "プレゼント",
+              "meaning": "present",
+              "baseForm": "プレゼント",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "荷物",
+              "reading": "にもつ",
+              "meaning": "luggage",
+              "baseForm": "荷物",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "送り",
+              "reading": "おくり",
+              "meaning": "to send",
+              "baseForm": "送る",
+              "level": "N4"
+            },
+            {
+              "surface": "たい"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ですが"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "相談",
+              "reading": "そうだん",
+              "meaning": "to discuss",
+              "baseForm": "相談",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "持ち",
+              "reading": "もち",
+              "meaning": "hold; charge; keep possession",
+              "baseForm": "持ち",
+              "level": "N1"
+            },
+            {
+              "surface": "かけ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "局員は秤の上に小包を載せて計量しながら、「航空便や船便などいくつか方法がございます」と丁寧に説明してくれました。",
+          "literalEn": "局員 [topic] ['s / of] on top of [at/to] 小包 [obj] [and] 計量 ながら aviation 船便 et cetera いくつか method [subj] [polite] [with/and] polite [at/to] explanation てく した",
+          "naturalEn": "Placing the parcel onto the scale for weighing, the officer courteously explained: 'We have several methods, such as airmail and surface sea mail.'",
+          "tokens": [
+            {
+              "surface": "局員"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "秤"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "上",
+              "reading": "うえ",
+              "meaning": "on top of",
+              "baseForm": "上",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "小包"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "載"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "計量"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "航空",
+              "reading": "こうくう",
+              "meaning": "aviation; flying",
+              "baseForm": "航空",
+              "level": "N3"
+            },
+            {
+              "surface": "便"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "船便"
+            },
+            {
+              "surface": "など",
+              "meaning": "et cetera",
+              "baseForm": "など",
+              "level": "N5"
+            },
+            {
+              "surface": "いくつか"
+            },
+            {
+              "surface": "方法",
+              "reading": "ほうほう",
+              "meaning": "method; manner; way",
+              "baseForm": "方法",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "ご"
+            },
+            {
+              "surface": "ざ"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "丁寧",
+              "reading": "ていねい",
+              "meaning": "polite",
+              "baseForm": "丁寧",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "説明",
+              "reading": "せつめい",
+              "meaning": "explanation",
+              "baseForm": "説明",
+              "level": "N4"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「EMS（国際スピード郵便）をご利用いただければ、三日から四日ほどで追跡番号付きでお届けできます」とのことでした。",
+          "literalEn": "EMS 国際 スピード 郵便 [obj] ご利用 [past] だけ three days [from] 四日 [as much as] [in/by] 追跡 number 付き [in/by] 届け でき [polite] [with/and] ['s / of] thing [in/by] した",
+          "naturalEn": "'If you utilize EMS (Express Mail Service), it will be delivered in roughly three to four days with an online tracking number,' he informed me.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "EMS"
+            },
+            {
+              "surface": "（"
+            },
+            {
+              "surface": "国際"
+            },
+            {
+              "surface": "スピード"
+            },
+            {
+              "surface": "郵便"
+            },
+            {
+              "surface": "）"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "ご利用"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "だけ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ば"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "三日",
+              "reading": "みっか",
+              "meaning": "three days; third day",
+              "baseForm": "三日",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "四日"
+            },
+            {
+              "surface": "ほど",
+              "meaning": "extent",
+              "baseForm": "ほど",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "追跡"
+            },
+            {
+              "surface": "番号",
+              "reading": "ばんごう",
+              "meaning": "number",
+              "baseForm": "番号",
+              "level": "N5"
+            },
+            {
+              "surface": "付き"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "届け"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "友人の誕生日までに確実に届けたかったため、少し料金は高いもののEMSを利用することに決めました。",
+          "literalEn": "友人 ['s / of] 誕生 day [until] [at/to] 確実 [at/to] 届け たか [past] ため few 料金 [topic] 高い ものの EMS [obj] 利用 to do ことに decide した",
+          "naturalEn": "Wanting it to arrive reliably by my friend's birthday, I opted for EMS despite the somewhat higher postal fee.",
+          "tokens": [
+            {
+              "surface": "友人"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "誕生"
+            },
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "まで"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "確実"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "届け"
+            },
+            {
+              "surface": "たか"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "少し",
+              "reading": "すこし",
+              "meaning": "few",
+              "baseForm": "少し",
+              "level": "N5"
+            },
+            {
+              "surface": "料金"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "高い"
+            },
+            {
+              "surface": "ものの"
+            },
+            {
+              "surface": "EMS"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "利用"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "決め",
+              "reading": "ケツめ",
+              "meaning": "decide, agree upon, appoint",
+              "baseForm": "決",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "現在、国際郵便では手書きの送り状ではなく、事前にスマートフォンで入力する税関告知書が必要となっています。局員がタブレット端末の操作方法を優しく教えてくれたおかげで、内容品の品名や個数、価格を英語でスムーズに入力できました。「危険物やスプレー缶、リチウム電池などは一切入っておりませんか」と安全確認のための質問を受けました。お菓子と手紙だけであることを確認し、印刷されたバーコードラベルを箱の天面にしっかりと貼り付けました。",
+      "en": "Presently for international post, rather than handwritten waybills, an advance customs declaration completed via smartphone is required. Thanks to the clerk kindly guiding me through the tablet operations, I smoothly entered the item names, quantities, and values in English. I was asked safety confirmation questions: 'Are there any hazardous materials, aerosol spray cans, or lithium batteries contained within?' Confirming that only confectioneries and a letter were enclosed, I firmly affixed the printed barcode label onto the top of the box.",
+      "tokens": [
+        {
+          "surface": "現在"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "国際"
+        },
+        {
+          "surface": "郵便"
+        },
+        {
+          "surface": "では",
+          "meaning": "with that...",
+          "baseForm": "では",
+          "level": "N5"
+        },
+        {
+          "surface": "手書き"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "送り状"
+        },
+        {
+          "surface": "では",
+          "meaning": "with that...",
+          "baseForm": "では",
+          "level": "N5"
+        },
+        {
+          "surface": "なく"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "事前"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "スマート"
+        },
+        {
+          "surface": "フォン"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "入力"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "税"
+        },
+        {
+          "surface": "関"
+        },
+        {
+          "surface": "告知"
+        },
+        {
+          "surface": "書"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "必要",
+          "reading": "ひつよう",
+          "meaning": "necessary",
+          "baseForm": "必要",
+          "level": "N4"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "局員"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "タブレット"
+        },
+        {
+          "surface": "端末"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "操作"
+        },
+        {
+          "surface": "方法",
+          "reading": "ほうほう",
+          "meaning": "method; manner; way",
+          "baseForm": "方法",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "優",
+          "reading": "やさ",
+          "meaning": "gentle; affectionate",
+          "baseForm": "優",
+          "level": "N1"
+        },
+        {
+          "surface": "しく"
+        },
+        {
+          "surface": "教え",
+          "reading": "おしえ",
+          "meaning": "teachings; precept; lesson",
+          "baseForm": "教え",
+          "level": "N1"
+        },
+        {
+          "surface": "てく"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "おかげ"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "内容"
+        },
+        {
+          "surface": "品"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "品名"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "個数"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "価格"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "英語"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "スムーズ"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "入力"
+        },
+        {
+          "surface": "でき"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "危険"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "meaning": "thing",
+          "baseForm": "物",
+          "level": "N5"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "スプレー"
+        },
+        {
+          "surface": "缶"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "リチウム"
+        },
+        {
+          "surface": "電池"
+        },
+        {
+          "surface": "など",
+          "meaning": "et cetera",
+          "baseForm": "など",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "一切"
+        },
+        {
+          "surface": "入",
+          "reading": "はい",
+          "meaning": "to enter; to contain",
+          "baseForm": "入る",
+          "level": "N5"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "おり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "せん"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "安全"
+        },
+        {
+          "surface": "確認"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "質問",
+          "reading": "しつもん",
+          "meaning": "question",
+          "baseForm": "質問",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "受け"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "お菓子"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "手紙"
+        },
+        {
+          "surface": "だけ"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "確認"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "印刷"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "バーコード"
+        },
+        {
+          "surface": "ラベル"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "箱",
+          "reading": "はこ",
+          "meaning": "box",
+          "baseForm": "箱",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "天",
+          "reading": "あま",
+          "meaning": "heavens, imperial, sky",
+          "baseForm": "天",
+          "level": "N5"
+        },
+        {
+          "surface": "面"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "しっかり"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "貼"
+        },
+        {
+          "surface": "り"
+        },
+        {
+          "surface": "付け"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "現在、国際郵便では手書きの送り状ではなく、事前にスマートフォンで入力する税関告知書が必要となっています。",
+          "literalEn": "現在 国際 郵便 with that... 手書き ['s / of] 送り状 with that... なく 事前 [at/to] スマート フォン [in/by] 入力 to do 告知 [subj] necessary [with/and] って [polite]",
+          "naturalEn": "Presently for international post, rather than handwritten waybills, an advance customs declaration completed via smartphone is required.",
+          "tokens": [
+            {
+              "surface": "現在"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "国際"
+            },
+            {
+              "surface": "郵便"
+            },
+            {
+              "surface": "では",
+              "meaning": "with that...",
+              "baseForm": "では",
+              "level": "N5"
+            },
+            {
+              "surface": "手書き"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "送り状"
+            },
+            {
+              "surface": "では",
+              "meaning": "with that...",
+              "baseForm": "では",
+              "level": "N5"
+            },
+            {
+              "surface": "なく"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "事前"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "スマート"
+            },
+            {
+              "surface": "フォン"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "入力"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "税"
+            },
+            {
+              "surface": "関"
+            },
+            {
+              "surface": "告知"
+            },
+            {
+              "surface": "書"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "必要",
+              "reading": "ひつよう",
+              "meaning": "necessary",
+              "baseForm": "必要",
+              "level": "N4"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "局員がタブレット端末の操作方法を優しく教えてくれたおかげで、内容品の品名や個数、価格を英語でスムーズに入力できました。",
+          "literalEn": "局員 [subj] タブレット 端末 ['s / of] 操作 method [obj] gentle しく teachings てく [past] おかげ [in/by] 内容 ['s / of] 品名 個数 価格 [obj] 英語 [in/by] スムーズ [at/to] 入力 でき した",
+          "naturalEn": "Thanks to the clerk kindly guiding me through the tablet operations, I smoothly entered the item names, quantities, and values in English.",
+          "tokens": [
+            {
+              "surface": "局員"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "タブレット"
+            },
+            {
+              "surface": "端末"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "操作"
+            },
+            {
+              "surface": "方法",
+              "reading": "ほうほう",
+              "meaning": "method; manner; way",
+              "baseForm": "方法",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "優",
+              "reading": "やさ",
+              "meaning": "gentle; affectionate",
+              "baseForm": "優",
+              "level": "N1"
+            },
+            {
+              "surface": "しく"
+            },
+            {
+              "surface": "教え",
+              "reading": "おしえ",
+              "meaning": "teachings; precept; lesson",
+              "baseForm": "教え",
+              "level": "N1"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "おかげ"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "内容"
+            },
+            {
+              "surface": "品"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "品名"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "個数"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "価格"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "英語"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "スムーズ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入力"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「危険物やスプレー缶、リチウム電池などは一切入っておりませんか」と安全確認のための質問を受けました。",
+          "literalEn": "危険 thing スプレー リチウム 電池 et cetera [topic] 一切 to enter って おり せん [?] [with/and] 安全 確認 ['s / of] ため ['s / of] question [obj] 受け した",
+          "naturalEn": "I was asked safety confirmation questions: 'Are there any hazardous materials, aerosol spray cans, or lithium batteries contained within?'",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "危険"
+            },
+            {
+              "surface": "物",
+              "reading": "もの",
+              "meaning": "thing",
+              "baseForm": "物",
+              "level": "N5"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "スプレー"
+            },
+            {
+              "surface": "缶"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "リチウム"
+            },
+            {
+              "surface": "電池"
+            },
+            {
+              "surface": "など",
+              "meaning": "et cetera",
+              "baseForm": "など",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "一切"
+            },
+            {
+              "surface": "入",
+              "reading": "はい",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "おり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "安全"
+            },
+            {
+              "surface": "確認"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "質問",
+              "reading": "しつもん",
+              "meaning": "question",
+              "baseForm": "質問",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "受け"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "お菓子と手紙だけであることを確認し、印刷されたバーコードラベルを箱の天面にしっかりと貼り付けました。",
+          "literalEn": "お菓子 [with/and] 手紙 だけ [in/by] to be thing [obj] 確認 印刷 [past] バーコード ラベル [obj] box ['s / of] heavens [at/to] しっかり [with/and] 付け した",
+          "naturalEn": "Confirming that only confectioneries and a letter were enclosed, I firmly affixed the printed barcode label onto the top of the box.",
+          "tokens": [
+            {
+              "surface": "お菓子"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "手紙"
+            },
+            {
+              "surface": "だけ"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "確認"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "印刷"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "バーコード"
+            },
+            {
+              "surface": "ラベル"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "箱",
+              "reading": "はこ",
+              "meaning": "box",
+              "baseForm": "箱",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "天",
+              "reading": "あま",
+              "meaning": "heavens, imperial, sky",
+              "baseForm": "天",
+              "level": "N5"
+            },
+            {
+              "surface": "面"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "しっかり"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "貼"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "付け"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "窓口での手続きを終えるついでに、記念切手のコレクションシートも何枚か購入することにしました。「追跡番号はこちらのお控えに記載されておりますので、配達状況をご確認いただけます」と領収書を手渡されました。無事に手続きが完了した安堵感に包まれながら、私は郵便局の自動ドアを出て家路につきました。四日後、友人から「サプライズの荷物が無事に届いたよ、ありがとう！」と嬉しそうなメッセージが届いたのです。",
+      "en": "While wrapping up the counter procedures, I also decided to purchase a few commemorative stamp collector sheets. 'The tracking number is printed on this receipt slip, so you may monitor the transit status online,' he said, handing me the receipt. Enveloped in a deep sense of relief that the procedures concluded smoothly, I exited through the automatic doors and headed home. Four days later, a joyful message arrived from my friend: 'The surprise package arrived safely, thank you so much!'",
+      "tokens": [
+        {
+          "surface": "窓口",
+          "reading": "まどぐち",
+          "meaning": "ticket window",
+          "baseForm": "窓口",
+          "level": "N2"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "手続き",
+          "reading": "てつづき",
+          "meaning": "procedure; (legal) process; formalities",
+          "baseForm": "手続き",
+          "level": "N2"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "終える"
+        },
+        {
+          "surface": "ついでに"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "記念"
+        },
+        {
+          "surface": "切手"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "コレクション"
+        },
+        {
+          "surface": "シート"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "何",
+          "reading": "なん",
+          "meaning": "what",
+          "baseForm": "何",
+          "level": "N5"
+        },
+        {
+          "surface": "枚"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "購入"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "ことに"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "追跡"
+        },
+        {
+          "surface": "番号",
+          "reading": "ばんごう",
+          "meaning": "number",
+          "baseForm": "番号",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "こちら"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "お"
+        },
+        {
+          "surface": "控え"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "記載"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "おり"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "ので"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "配達"
+        },
+        {
+          "surface": "状況"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "ご"
+        },
+        {
+          "surface": "確認"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "だけ"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "領収"
+        },
+        {
+          "surface": "書"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "手渡"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "無事",
+          "reading": "ぶじ",
+          "meaning": "safety; peace; quietness",
+          "baseForm": "無事",
+          "level": "N3"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "手続き",
+          "reading": "てつづき",
+          "meaning": "procedure; (legal) process; formalities",
+          "baseForm": "手続き",
+          "level": "N2"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "完了"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "安堵"
+        },
+        {
+          "surface": "感"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "包",
+          "reading": "つつ",
+          "meaning": "to wrap",
+          "baseForm": "包む",
+          "level": "N4"
+        },
+        {
+          "surface": "まれ"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "私",
+          "reading": "わたくし",
+          "meaning": "(humble) I; myself",
+          "baseForm": "私",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "郵便局"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "自動"
+        },
+        {
+          "surface": "ドア",
+          "meaning": "Western style door",
+          "baseForm": "ドア",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "出",
+          "reading": "だ",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "家路"
+        },
+        {
+          "surface": "につき"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "四",
+          "reading": "し",
+          "meaning": "four",
+          "baseForm": "四",
+          "level": "N5"
+        },
+        {
+          "surface": "日後",
+          "reading": "にちご",
+          "meaning": "days later",
+          "baseForm": "日後",
+          "level": "N4"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "友人"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "サプライズ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "荷物",
+          "reading": "にもつ",
+          "meaning": "luggage",
+          "baseForm": "荷物",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "無事",
+          "reading": "ぶじ",
+          "meaning": "safety; peace; quietness",
+          "baseForm": "無事",
+          "level": "N3"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "届"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "たよ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "ありがとう",
+          "meaning": "Thank you",
+          "baseForm": "ありがとう",
+          "level": "N5"
+        },
+        {
+          "surface": "！"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "嬉",
+          "reading": "うれ",
+          "meaning": "glad, pleased, rejoice",
+          "baseForm": "嬉",
+          "level": "N1"
+        },
+        {
+          "surface": "しそう"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "メッセージ"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "届"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "窓口での手続きを終えるついでに、記念切手のコレクションシートも何枚か購入することにしました。",
+          "literalEn": "ticket window [in/by] ['s / of] procedure [obj] 終える ついでに 記念 切手 ['s / of] コレクション シート [also] what [?] 購入 to do ことに しま した",
+          "naturalEn": "While wrapping up the counter procedures, I also decided to purchase a few commemorative stamp collector sheets.",
+          "tokens": [
+            {
+              "surface": "窓口",
+              "reading": "まどぐち",
+              "meaning": "ticket window",
+              "baseForm": "窓口",
+              "level": "N2"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "手続き",
+              "reading": "てつづき",
+              "meaning": "procedure; (legal) process; formalities",
+              "baseForm": "手続き",
+              "level": "N2"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "終える"
+            },
+            {
+              "surface": "ついでに"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "記念"
+            },
+            {
+              "surface": "切手"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "コレクション"
+            },
+            {
+              "surface": "シート"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "何",
+              "reading": "なん",
+              "meaning": "what",
+              "baseForm": "何",
+              "level": "N5"
+            },
+            {
+              "surface": "枚"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "購入"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「追跡番号はこちらのお控えに記載されておりますので、配達状況をご確認いただけます」と領収書を手渡されました。",
+          "literalEn": "追跡 number [topic] こちら ['s / of] 控え [at/to] 記載 [and] おり [polite] ので 配達 状況 [obj] 確認 [past] だけ [polite] [with/and] 領収 [obj] 手渡 した",
+          "naturalEn": "'The tracking number is printed on this receipt slip, so you may monitor the transit status online,' he said, handing me the receipt.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "追跡"
+            },
+            {
+              "surface": "番号",
+              "reading": "ばんごう",
+              "meaning": "number",
+              "baseForm": "番号",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "こちら"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "控え"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "記載"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "おり"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "ので"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "配達"
+            },
+            {
+              "surface": "状況"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "ご"
+            },
+            {
+              "surface": "確認"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "だけ"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "領収"
+            },
+            {
+              "surface": "書"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "手渡"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "無事に手続きが完了した安堵感に包まれながら、私は郵便局の自動ドアを出て家路につきました。",
+          "literalEn": "safety [at/to] procedure [subj] 完了 した 安堵 [at/to] to wrap まれ ながら  I [topic] 郵便局 ['s / of] 自動 Western style door [obj] to put out [and] 家路 につき した",
+          "naturalEn": "Enveloped in a deep sense of relief that the procedures concluded smoothly, I exited through the automatic doors and headed home.",
+          "tokens": [
+            {
+              "surface": "無事",
+              "reading": "ぶじ",
+              "meaning": "safety; peace; quietness",
+              "baseForm": "無事",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "手続き",
+              "reading": "てつづき",
+              "meaning": "procedure; (legal) process; formalities",
+              "baseForm": "手続き",
+              "level": "N2"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "完了"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "安堵"
+            },
+            {
+              "surface": "感"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "包",
+              "reading": "つつ",
+              "meaning": "to wrap",
+              "baseForm": "包む",
+              "level": "N4"
+            },
+            {
+              "surface": "まれ"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "郵便局"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "自動"
+            },
+            {
+              "surface": "ドア",
+              "meaning": "Western style door",
+              "baseForm": "ドア",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "出",
+              "reading": "だ",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "家路"
+            },
+            {
+              "surface": "につき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "四日後、友人から「サプライズの荷物が無事に届いたよ、ありがとう！」と嬉しそうなメッセージが届いたのです。",
+          "literalEn": "four days later 友人 [from] サプライズ ['s / of] luggage [subj] safety [at/to] たよ Thank you [with/and] glad しそう メッセージ [subj] [past] ['s / of] [is]",
+          "naturalEn": "Four days later, a joyful message arrived from my friend: 'The surprise package arrived safely, thank you so much!'",
+          "tokens": [
+            {
+              "surface": "四",
+              "reading": "し",
+              "meaning": "four",
+              "baseForm": "四",
+              "level": "N5"
+            },
+            {
+              "surface": "日後",
+              "reading": "にちご",
+              "meaning": "days later",
+              "baseForm": "日後",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "友人"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "サプライズ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "荷物",
+              "reading": "にもつ",
+              "meaning": "luggage",
+              "baseForm": "荷物",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "無事",
+              "reading": "ぶじ",
+              "meaning": "safety; peace; quietness",
+              "baseForm": "無事",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "届"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "たよ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ありがとう",
+              "meaning": "Thank you",
+              "baseForm": "ありがとう",
+              "level": "N5"
+            },
+            {
+              "surface": "！"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "嬉",
+              "reading": "うれ",
+              "meaning": "glad, pleased, rejoice",
+              "baseForm": "嬉",
+              "level": "N1"
+            },
+            {
+              "surface": "しそう"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "メッセージ"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "届"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "言葉や距離の壁を越えて大切な人に気持ちを届ける喜びを、郵便という仕組みを通じて心から実感することができました。遠く離れて暮らしていても、手紙や贈り物を交わすことで友情の絆をいつでも温め直すことができるのです。",
+      "en": "Through the mechanism of the postal network, I was able to truly appreciate the profound joy of delivering heartfelt warmth to a loved one across barriers of language and distance. Even while living far apart, exchanging letters and gifts allows us to rekindle the bonds of friendship anytime.",
+      "tokens": [
+        {
+          "surface": "言葉",
+          "reading": "ことば",
+          "meaning": "word; language",
+          "baseForm": "言葉",
+          "level": "N5"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "距離"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "壁"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "越",
+          "reading": "こ",
+          "meaning": "to go over (e.g. with audience)",
+          "baseForm": "越す",
+          "level": "N3"
+        },
+        {
+          "surface": "えて"
+        },
+        {
+          "surface": "大切",
+          "reading": "たいせつ",
+          "meaning": "important",
+          "baseForm": "大切",
+          "level": "N5"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "meaning": "person",
+          "baseForm": "人",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "気持ち",
+          "reading": "きもち",
+          "meaning": "feeling; mood",
+          "baseForm": "気持ち",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "届ける"
+        },
+        {
+          "surface": "喜び",
+          "reading": "よろこび",
+          "meaning": "(a) joy; (a) delight; rapture",
+          "baseForm": "喜び",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "郵便"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "仕組み"
+        },
+        {
+          "surface": "を通じて"
+        },
+        {
+          "surface": "心から"
+        },
+        {
+          "surface": "実感"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "でき"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "遠く",
+          "reading": "とおく",
+          "meaning": "distant",
+          "baseForm": "遠く",
+          "level": "N4"
+        },
+        {
+          "surface": "離れ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "暮らし",
+          "reading": "くらし",
+          "meaning": "living; livelihood; subsistence",
+          "baseForm": "暮らし",
+          "level": "N3"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "手紙"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "贈り物"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "交わす"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "友情"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "絆"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "いつ",
+          "meaning": "when",
+          "baseForm": "いつ",
+          "level": "N5"
+        },
+        {
+          "surface": "でも",
+          "meaning": "but",
+          "baseForm": "でも",
+          "level": "N5"
+        },
+        {
+          "surface": "温"
+        },
+        {
+          "surface": "め"
+        },
+        {
+          "surface": "直す"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "できる",
+          "meaning": "to be able to",
+          "baseForm": "できる",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "言葉や距離の壁を越えて大切な人に気持ちを届ける喜びを、郵便という仕組みを通じて心から実感することができました。",
+          "literalEn": "word 距離 ['s / of] [obj] to go over えて important person [at/to] feeling [obj] 届ける  joy [obj] 郵便 という 仕組み を通じて 心から 実感 to do thing [subj] でき した",
+          "naturalEn": "Through the mechanism of the postal network, I was able to truly appreciate the profound joy of delivering heartfelt warmth to a loved one across barriers of language and distance.",
+          "tokens": [
+            {
+              "surface": "言葉",
+              "reading": "ことば",
+              "meaning": "word; language",
+              "baseForm": "言葉",
+              "level": "N5"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "距離"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "壁"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "越",
+              "reading": "こ",
+              "meaning": "to go over (e.g. with audience)",
+              "baseForm": "越す",
+              "level": "N3"
+            },
+            {
+              "surface": "えて"
+            },
+            {
+              "surface": "大切",
+              "reading": "たいせつ",
+              "meaning": "important",
+              "baseForm": "大切",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "気持ち",
+              "reading": "きもち",
+              "meaning": "feeling; mood",
+              "baseForm": "気持ち",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "届ける"
+            },
+            {
+              "surface": "喜び",
+              "reading": "よろこび",
+              "meaning": "(a) joy; (a) delight; rapture",
+              "baseForm": "喜び",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "郵便"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "仕組み"
+            },
+            {
+              "surface": "を通じて"
+            },
+            {
+              "surface": "心から"
+            },
+            {
+              "surface": "実感"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "遠く離れて暮らしていても、手紙や贈り物を交わすことで友情の絆をいつでも温め直すことができるのです。",
+          "literalEn": "distant 離れ [and] living てい [and] [also] 手紙 贈り物 [obj] 交わす thing [in/by] 友情 ['s / of] [obj] when but 直す thing [subj] to be able to ['s / of] [is]",
+          "naturalEn": "Even while living far apart, exchanging letters and gifts allows us to rekindle the bonds of friendship anytime.",
+          "tokens": [
+            {
+              "surface": "遠く",
+              "reading": "とおく",
+              "meaning": "distant",
+              "baseForm": "遠く",
+              "level": "N4"
+            },
+            {
+              "surface": "離れ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "暮らし",
+              "reading": "くらし",
+              "meaning": "living; livelihood; subsistence",
+              "baseForm": "暮らし",
+              "level": "N3"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "手紙"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "贈り物"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "交わす"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "友情"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "絆"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "いつ",
+              "meaning": "when",
+              "baseForm": "いつ",
+              "level": "N5"
+            },
+            {
+              "surface": "でも",
+              "meaning": "but",
+              "baseForm": "でも",
+              "level": "N5"
+            },
+            {
+              "surface": "温"
+            },
+            {
+              "surface": "め"
+            },
+            {
+              "surface": "直す"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "できる",
+              "meaning": "to be able to",
+              "baseForm": "できる",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "語り手がオーストラリアへの発送方法としてEMS（国際スピード郵便）を選んだ理由は何ですか。",
+      "questionEn": "Why did the narrator choose EMS (Express Mail Service) for shipping to Australia?",
+      "options": [
+        "友人の誕生日までに3〜4日で確実に届き、追跡番号も付いていたから",
+        "船便よりも料金が一番安かったから",
+        "局員に無理やり契約させられたから",
+        "他の発送手段がすべて利用停止になっていたから"
+      ],
+      "optionsEn": [
+        "It would arrive reliably within 3-4 days by the friend's birthday and included tracking",
+        "It was the cheapest of all methods, even less than surface sea mail",
+        "The postal clerk forcibly pressured them into the contract",
+        "All other shipping alternatives had been completely suspended"
+      ],
+      "answerIndex": 0,
+      "explanation": "期日までに確実に送り届けたいという目的があり、迅速さと荷物追跡ができるEMSが最適でした。"
+    },
+    {
+      "question": "国際郵便を送る際、現在必須となっている手続きはどれですか。",
+      "questionEn": "Which procedure is currently mandatory when dispatching international post?",
+      "options": [
+        "内容品の品名や価格を事前に電子的に入力する税関告知書の手続き",
+        "荷物の中に必ず現金1万円を入れておくこと",
+        "郵便局長と記念写真を撮影すること",
+        "荷物をすべて透明なビニール袋に入れ直すこと"
+      ],
+      "optionsEn": [
+        "The customs declaration procedure of entering item names and values electronically in advance",
+        "Ensuring a 10,000 yen cash bill is enclosed inside the package",
+        "Taking a commemorative photograph alongside the postmaster",
+        "Repacking all contents into a transparent plastic bag"
+      ],
+      "answerIndex": 0,
+      "explanation": "国際郵便では安全基準と税関管理のため、スマートフォン等による電子的な税関告知データの事前登録が義務化されています。"
+    },
+    {
+      "question": "小包を発送するついでに、語り手が窓口で購入したものは何ですか。",
+      "questionEn": "What did the narrator purchase at the postal counter while finishing the parcel dispatch?",
+      "options": [
+        "記念切手のコレクションシート",
+        "新しい段ボール箱とガムテープ",
+        "郵便局限定のレトルトカレー",
+        "年賀状の印刷カタログ"
+      ],
+      "optionsEn": [
+        "Commemorative stamp collector sheets",
+        "Brand-new cardboard cartons and packing tape",
+        "Post-office-exclusive instant curry pouches",
+        "New Year's greeting card printing catalogs"
+      ],
+      "answerIndex": 0,
+      "explanation": "「窓口での手続きを終えるついでに、記念切手のコレクションシートも何枚か購入することにしました」と述べられています。"
+    }
+  ]
+}

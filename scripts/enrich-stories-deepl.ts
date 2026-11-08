@@ -237,8 +237,10 @@ async function main(): Promise<void> {
   console.log(`Saved output to public/data/v1/stories/ and updated src/data/content/stories/`);
 }
 
-void main().catch((err: unknown) => {
-  console.error("Story enrichment failed:", err);
-  process.exitCode = 1;
-});
+if (process.argv[1] && resolve(process.argv[1]) === resolve(__filename)) {
+  void main().catch((err: unknown) => {
+    console.error("Story enrichment failed:", err);
+    process.exitCode = 1;
+  });
+}
 

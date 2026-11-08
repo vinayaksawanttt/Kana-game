@@ -10,9 +10,9 @@ import {
 } from "./stories";
 
 describe("Stories data pipeline & loader", () => {
-  it("loads all 42 graded stories with normalized categories, cover images, and pre-parsed furigana tokens", () => {
+  it("loads all 62 graded stories with normalized categories, cover images, and pre-parsed furigana tokens", () => {
     const stories = getAllStories();
-    expect(stories.length).toBe(42);
+    expect(stories.length).toBe(62);
 
     const placeholderDiskPath = path.join(process.cwd(), "public", PLACEHOLDER_STORY_IMAGE);
     expect(fs.existsSync(placeholderDiskPath)).toBe(true);
@@ -28,7 +28,7 @@ describe("Stories data pipeline & loader", () => {
       const assetDiskPath = path.join(process.cwd(), "public", story.coverImage);
       expect(fs.existsSync(assetDiskPath)).toBe(true);
       expect(["N5", "N4", "N3", "N2", "N1"]).toContain(story.level);
-      expect(["Everyday Life", "Fairy Tales", "News"]).toContain(story.category);
+      expect(["Everyday Life", "Fairy Tales", "News", "Anime & Pop Culture"]).toContain(story.category);
       expect(story.paragraphs.length).toBeGreaterThan(0);
       expect(story.quiz.length).toBeGreaterThanOrEqual(2);
       expect(estimateReadingTimeMinutes(story)).toBeGreaterThanOrEqual(1);
@@ -49,10 +49,13 @@ describe("Stories data pipeline & loader", () => {
   it("filters stories by JLPT level", () => {
     const n5Stories = getStoriesByLevel("N5");
     const n4Stories = getStoriesByLevel("N4");
+    const n3Stories = getStoriesByLevel("N3");
     expect(n5Stories.length).toBe(20);
     expect(n4Stories.length).toBe(22);
+    expect(n3Stories.length).toBe(20);
     expect(n5Stories.every((s) => s.level === "N5")).toBe(true);
     expect(n4Stories.every((s) => s.level === "N4")).toBe(true);
+    expect(n3Stories.every((s) => s.level === "N3")).toBe(true);
   });
 
   it("retrieves stories by level and slug (2-arg and 3-arg forms)", () => {

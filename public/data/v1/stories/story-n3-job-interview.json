@@ -1,0 +1,4663 @@
+{
+  "id": "story-n3-job-interview",
+  "title": "初めての就職面接：緊張と自己PR",
+  "titleRomaji": "Hajimete no Shuushoku Mensetsu: Kinchou to Jiko Pii Aaru",
+  "titleEn": "First Job Interview: Nervousness and Self-Promotion",
+  "level": "N3",
+  "category": "Everyday Life",
+  "tags": [
+    "Everyday Life",
+    "N3",
+    "Business",
+    "Interview",
+    "Keigo"
+  ],
+  "paragraphs": [
+    {
+      "ja": "大学卒業後の進路として強く志望していた貿易会社の採用面接を受ける当日が、ついにやってきました。身だしなみを整えるため、皺一つない紺色のリクルートスーツに身を包み、鏡の前でネクタイの結び目を何度も直しました。日本の就職活動では約束の十分前に到着することが鉄則とされているため、余裕をもってオフィスビルに到着しました。受付で「本日十時より面接のお約束をいただいております高橋と申します」と丁寧な敬語で挨拶を行いました。",
+      "en": "The day finally arrived to undergo a hiring interview at a trading firm I strongly aspired to join after university graduation. To ensure my grooming was immaculate, I dressed in a wrinkle-free navy recruitment suit and readjusted the knot of my necktie repeatedly before the mirror. Because arriving ten minutes before the scheduled appointment is considered an ironclad rule in Japanese job hunting, I arrived at the office tower with plenty of time to spare. At the front desk, I greeted in polite keigo: 'I am Takahashi, scheduled for an interview starting at 10:00 today.'",
+      "tokens": [
+        {
+          "surface": "大学",
+          "reading": "だいがく",
+          "meaning": "university",
+          "baseForm": "大学",
+          "level": "N5"
+        },
+        {
+          "surface": "卒業"
+        },
+        {
+          "surface": "後",
+          "reading": "あと",
+          "meaning": "afterwards",
+          "baseForm": "後",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "進路"
+        },
+        {
+          "surface": "として"
+        },
+        {
+          "surface": "強",
+          "reading": "つよ",
+          "meaning": "powerful",
+          "baseForm": "強い",
+          "level": "N5"
+        },
+        {
+          "surface": "く"
+        },
+        {
+          "surface": "志望"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "貿易"
+        },
+        {
+          "surface": "会社",
+          "reading": "かいしゃ",
+          "meaning": "company",
+          "baseForm": "会社",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "採用"
+        },
+        {
+          "surface": "面接"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "受ける"
+        },
+        {
+          "surface": "当日"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "ついに"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "き"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "身だしなみ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "整える"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "皺"
+        },
+        {
+          "surface": "一つ",
+          "reading": "ひとつ",
+          "meaning": "one thing",
+          "baseForm": "一つ",
+          "level": "N5"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "紺色"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "リクルートスーツ"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "身"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "包み"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "鏡",
+          "reading": "かがみ",
+          "meaning": "mirror",
+          "baseForm": "鏡",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "前",
+          "reading": "まえ",
+          "meaning": "before",
+          "baseForm": "前",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "ネクタイ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "結び目"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "何",
+          "reading": "なん",
+          "meaning": "what",
+          "baseForm": "何",
+          "level": "N5"
+        },
+        {
+          "surface": "度",
+          "reading": "たび",
+          "meaning": "time (three times, each time, etc.); times",
+          "baseForm": "度",
+          "level": "N3"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "直"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "日本",
+          "reading": "にっぽん",
+          "meaning": "Japan",
+          "baseForm": "日本",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "就職"
+        },
+        {
+          "surface": "活動"
+        },
+        {
+          "surface": "では",
+          "meaning": "with that...",
+          "baseForm": "では",
+          "level": "N5"
+        },
+        {
+          "surface": "約束",
+          "reading": "やくそく",
+          "meaning": "promise",
+          "baseForm": "約束",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "十分",
+          "reading": "じゅうぶん",
+          "meaning": "enough",
+          "baseForm": "十分",
+          "level": "N4"
+        },
+        {
+          "surface": "前",
+          "reading": "まえ",
+          "meaning": "before",
+          "baseForm": "前",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "到着",
+          "reading": "とうちゃく",
+          "meaning": "arrival",
+          "baseForm": "到着",
+          "level": "N3"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "鉄則"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "いる",
+          "meaning": "to be; to have (used for people and animals)",
+          "baseForm": "いる",
+          "level": "N5"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "余裕"
+        },
+        {
+          "surface": "をもって"
+        },
+        {
+          "surface": "オフィス"
+        },
+        {
+          "surface": "ビル"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "到着",
+          "reading": "とうちゃく",
+          "meaning": "arrival",
+          "baseForm": "到着",
+          "level": "N3"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "受付"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "本日"
+        },
+        {
+          "surface": "十時"
+        },
+        {
+          "surface": "より",
+          "meaning": "than; (used for comparison)",
+          "baseForm": "より",
+          "level": "N5"
+        },
+        {
+          "surface": "面接"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "お"
+        },
+        {
+          "surface": "約束",
+          "reading": "やくそく",
+          "meaning": "promise",
+          "baseForm": "約束",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "ただ",
+          "meaning": "free of charge; mere; sole",
+          "baseForm": "ただ",
+          "level": "N3"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "おり"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "高橋"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "申"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "丁寧",
+          "reading": "ていねい",
+          "meaning": "polite",
+          "baseForm": "丁寧",
+          "level": "N4"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "敬語"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "挨拶"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "行",
+          "reading": "ぎょう",
+          "meaning": "line; row; verse",
+          "baseForm": "行",
+          "level": "N1"
+        },
+        {
+          "surface": "いま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "大学卒業後の進路として強く志望していた貿易会社の採用面接を受ける当日が、ついにやってきました。",
+          "literalEn": "university 卒業 afterwards ['s / of] 進路 として powerful 志望 てい [past] 貿易 company ['s / of] 採用 面接 [obj] 受ける 当日 [subj] ついに って した",
+          "naturalEn": "The day finally arrived to undergo a hiring interview at a trading firm I strongly aspired to join after university graduation.",
+          "tokens": [
+            {
+              "surface": "大学",
+              "reading": "だいがく",
+              "meaning": "university",
+              "baseForm": "大学",
+              "level": "N5"
+            },
+            {
+              "surface": "卒業"
+            },
+            {
+              "surface": "後",
+              "reading": "あと",
+              "meaning": "afterwards",
+              "baseForm": "後",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "進路"
+            },
+            {
+              "surface": "として"
+            },
+            {
+              "surface": "強",
+              "reading": "つよ",
+              "meaning": "powerful",
+              "baseForm": "強い",
+              "level": "N5"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "志望"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "貿易"
+            },
+            {
+              "surface": "会社",
+              "reading": "かいしゃ",
+              "meaning": "company",
+              "baseForm": "会社",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "採用"
+            },
+            {
+              "surface": "面接"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "受ける"
+            },
+            {
+              "surface": "当日"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ついに"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "身だしなみを整えるため、皺一つない紺色のリクルートスーツに身を包み、鏡の前でネクタイの結び目を何度も直しました。",
+          "literalEn": "身だしなみ [obj] 整える ため one thing [not] 紺色 ['s / of] リクルートスーツ [at/to] [obj] 包み mirror ['s / of] before [in/by] ネクタイ ['s / of] 結び目 [obj] what time (three times [also] しま した",
+          "naturalEn": "To ensure my grooming was immaculate, I dressed in a wrinkle-free navy recruitment suit and readjusted the knot of my necktie repeatedly before the mirror.",
+          "tokens": [
+            {
+              "surface": "身だしなみ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "整える"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "皺"
+            },
+            {
+              "surface": "一つ",
+              "reading": "ひとつ",
+              "meaning": "one thing",
+              "baseForm": "一つ",
+              "level": "N5"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "紺色"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "リクルートスーツ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "身"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "包み"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "鏡",
+              "reading": "かがみ",
+              "meaning": "mirror",
+              "baseForm": "鏡",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "前",
+              "reading": "まえ",
+              "meaning": "before",
+              "baseForm": "前",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "ネクタイ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "結び目"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "何",
+              "reading": "なん",
+              "meaning": "what",
+              "baseForm": "何",
+              "level": "N5"
+            },
+            {
+              "surface": "度",
+              "reading": "たび",
+              "meaning": "time (three times, each time, etc.); times",
+              "baseForm": "度",
+              "level": "N3"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "直"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "日本の就職活動では約束の十分前に到着することが鉄則とされているため、余裕をもってオフィスビルに到着しました。",
+          "literalEn": "Japan ['s / of] 就職 活動 with that... promise ['s / of] enough before [at/to] arrival to do thing [subj] 鉄則 [with/and] [and] to be ため 余裕 をもって オフィス ビル [at/to] arrival しま した",
+          "naturalEn": "Because arriving ten minutes before the scheduled appointment is considered an ironclad rule in Japanese job hunting, I arrived at the office tower with plenty of time to spare.",
+          "tokens": [
+            {
+              "surface": "日本",
+              "reading": "にっぽん",
+              "meaning": "Japan",
+              "baseForm": "日本",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "就職"
+            },
+            {
+              "surface": "活動"
+            },
+            {
+              "surface": "では",
+              "meaning": "with that...",
+              "baseForm": "では",
+              "level": "N5"
+            },
+            {
+              "surface": "約束",
+              "reading": "やくそく",
+              "meaning": "promise",
+              "baseForm": "約束",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "十分",
+              "reading": "じゅうぶん",
+              "meaning": "enough",
+              "baseForm": "十分",
+              "level": "N4"
+            },
+            {
+              "surface": "前",
+              "reading": "まえ",
+              "meaning": "before",
+              "baseForm": "前",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "到着",
+              "reading": "とうちゃく",
+              "meaning": "arrival",
+              "baseForm": "到着",
+              "level": "N3"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "鉄則"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "余裕"
+            },
+            {
+              "surface": "をもって"
+            },
+            {
+              "surface": "オフィス"
+            },
+            {
+              "surface": "ビル"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "到着",
+              "reading": "とうちゃく",
+              "meaning": "arrival",
+              "baseForm": "到着",
+              "level": "N3"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "受付で「本日十時より面接のお約束をいただいております高橋と申します」と丁寧な敬語で挨拶を行いました。",
+          "literalEn": "受付 [in/by] 本日 十時 [than] 面接 ['s / of] promise [obj] free of charge [and] おり [polite] 高橋 [with/and] [polite] [with/and] polite 敬語 [in/by] 挨拶 [obj] line いま した",
+          "naturalEn": "At the front desk, I greeted in polite keigo: 'I am Takahashi, scheduled for an interview starting at 10:00 today.'",
+          "tokens": [
+            {
+              "surface": "受付"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "本日"
+            },
+            {
+              "surface": "十時"
+            },
+            {
+              "surface": "より",
+              "meaning": "than; (used for comparison)",
+              "baseForm": "より",
+              "level": "N5"
+            },
+            {
+              "surface": "面接"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "約束",
+              "reading": "やくそく",
+              "meaning": "promise",
+              "baseForm": "約束",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "ただ",
+              "meaning": "free of charge; mere; sole",
+              "baseForm": "ただ",
+              "level": "N3"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "おり"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "高橋"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "申"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "丁寧",
+              "reading": "ていねい",
+              "meaning": "polite",
+              "baseForm": "丁寧",
+              "level": "N4"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "敬語"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "挨拶"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "行",
+              "reading": "ぎょう",
+              "meaning": "line; row; verse",
+              "baseForm": "行",
+              "level": "N1"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "控室で順番を待つ間、心臓が早鐘のように高鳴り、手のひらにじっとりと汗が滲んできました。「高橋様、第二面接室へどうぞ」と担当者に案内され、私は深呼吸をして立ち上がりました。面接室の扉の前に立ち、礼儀作法に従って「コン、コン、コン」と落ち着いて三回ノックをしました。室内から「どうぞ」という声が聞こえたのを確認し、「失礼いたします」と発声しながら扉を静かに開けました。",
+      "en": "While awaiting my turn in the anteroom, my heart pounded like a ringing bell, and nervous sweat seeped into my palms. 'Mr. Takahashi, please proceed to Interview Room 2,' the coordinator guided, and I stood up after taking a deep breath. Standing before the door of the interview room, I calmly knocked three times in accordance with proper business etiquette: 'knock, knock, knock.' Confirming the response of 'Please come in' from within, I said 'Excuse me' as I quietly turned the door handle.",
+      "tokens": [
+        {
+          "surface": "控室"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "順番",
+          "reading": "じゅんばん",
+          "meaning": "turn (in line); order of things",
+          "baseForm": "順番",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "待つ"
+        },
+        {
+          "surface": "間",
+          "reading": "あいだ",
+          "meaning": "a space",
+          "baseForm": "間",
+          "level": "N4"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "心臓"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "早鐘"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "よう"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "高",
+          "reading": "たか",
+          "meaning": "quantity; amount; volume",
+          "baseForm": "高",
+          "level": "N1"
+        },
+        {
+          "surface": "鳴り"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "手のひら"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "じっとり"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "汗"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "滲"
+        },
+        {
+          "surface": "ん"
+        },
+        {
+          "surface": "でき"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "高橋"
+        },
+        {
+          "surface": "様"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "第二"
+        },
+        {
+          "surface": "面接"
+        },
+        {
+          "surface": "室"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "どうぞ",
+          "meaning": "please",
+          "baseForm": "どうぞ",
+          "level": "N5"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "担当"
+        },
+        {
+          "surface": "者"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "案内",
+          "reading": "あんない",
+          "meaning": "to guide",
+          "baseForm": "案内",
+          "level": "N4"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "私",
+          "reading": "わたくし",
+          "meaning": "(humble) I; myself",
+          "baseForm": "私",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "深呼吸"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "立ち上がり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "面接"
+        },
+        {
+          "surface": "室"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "扉"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "前",
+          "reading": "まえ",
+          "meaning": "before",
+          "baseForm": "前",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "立ち",
+          "reading": "たち",
+          "meaning": "to stand",
+          "baseForm": "立つ",
+          "level": "N5"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "礼儀"
+        },
+        {
+          "surface": "作法"
+        },
+        {
+          "surface": "に従って"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "コン"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "コン"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "コン"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "落ち",
+          "reading": "おとち",
+          "meaning": "to drop",
+          "baseForm": "落す",
+          "level": "N4"
+        },
+        {
+          "surface": "着い",
+          "reading": "ちゃくい",
+          "meaning": "counter for suits of clothing; arriving at ..",
+          "baseForm": "着",
+          "level": "N1"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "三",
+          "reading": "さん",
+          "meaning": "three",
+          "baseForm": "三",
+          "level": "N5"
+        },
+        {
+          "surface": "回"
+        },
+        {
+          "surface": "ノック"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "室内"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "どうぞ",
+          "meaning": "please",
+          "baseForm": "どうぞ",
+          "level": "N5"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "声",
+          "reading": "こえ",
+          "meaning": "voice",
+          "baseForm": "声",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "聞",
+          "reading": "き",
+          "meaning": "to hear; to listen to; to ask",
+          "baseForm": "聞く",
+          "level": "N5"
+        },
+        {
+          "surface": "こ"
+        },
+        {
+          "surface": "え"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "確認"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "失礼"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "発声"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "扉"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "meaning": "quiet",
+          "baseForm": "静か",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "開",
+          "reading": "あ",
+          "meaning": "to open; to become open",
+          "baseForm": "開く",
+          "level": "N5"
+        },
+        {
+          "surface": "け"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "控室で順番を待つ間、心臓が早鐘のように高鳴り、手のひらにじっとりと汗が滲んできました。",
+          "literalEn": "控室 [in/by] turn [obj] 待つ a space 心臓 [subj] 早鐘 ['s / of] よう [at/to] quantity 鳴り 手のひら [at/to] じっとり [with/and] [subj] でき した",
+          "naturalEn": "While awaiting my turn in the anteroom, my heart pounded like a ringing bell, and nervous sweat seeped into my palms.",
+          "tokens": [
+            {
+              "surface": "控室"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "順番",
+              "reading": "じゅんばん",
+              "meaning": "turn (in line); order of things",
+              "baseForm": "順番",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "待つ"
+            },
+            {
+              "surface": "間",
+              "reading": "あいだ",
+              "meaning": "a space",
+              "baseForm": "間",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "心臓"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "早鐘"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "高",
+              "reading": "たか",
+              "meaning": "quantity; amount; volume",
+              "baseForm": "高",
+              "level": "N1"
+            },
+            {
+              "surface": "鳴り"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "手のひら"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "じっとり"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "汗"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "滲"
+            },
+            {
+              "surface": "ん"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「高橋様、第二面接室へどうぞ」と担当者に案内され、私は深呼吸をして立ち上がりました。",
+          "literalEn": "高橋 第二 面接 [toward] please [with/and] 担当 [at/to] to guide  I [topic] 深呼吸 [obj] [and] 立ち上がり した",
+          "naturalEn": "'Mr. Takahashi, please proceed to Interview Room 2,' the coordinator guided, and I stood up after taking a deep breath.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "高橋"
+            },
+            {
+              "surface": "様"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "第二"
+            },
+            {
+              "surface": "面接"
+            },
+            {
+              "surface": "室"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "どうぞ",
+              "meaning": "please",
+              "baseForm": "どうぞ",
+              "level": "N5"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "担当"
+            },
+            {
+              "surface": "者"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "案内",
+              "reading": "あんない",
+              "meaning": "to guide",
+              "baseForm": "案内",
+              "level": "N4"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "深呼吸"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "立ち上がり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "面接室の扉の前に立ち、礼儀作法に従って「コン、コン、コン」と落ち着いて三回ノックをしました。",
+          "literalEn": "面接 ['s / of] ['s / of] before [at/to] to stand 礼儀 作法 に従って コン コン コン [with/and] to drop counter for suits of clothing [and] three ノック [obj] しま した",
+          "naturalEn": "Standing before the door of the interview room, I calmly knocked three times in accordance with proper business etiquette: 'knock, knock, knock.'",
+          "tokens": [
+            {
+              "surface": "面接"
+            },
+            {
+              "surface": "室"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "扉"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "前",
+              "reading": "まえ",
+              "meaning": "before",
+              "baseForm": "前",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "立ち",
+              "reading": "たち",
+              "meaning": "to stand",
+              "baseForm": "立つ",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "礼儀"
+            },
+            {
+              "surface": "作法"
+            },
+            {
+              "surface": "に従って"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "コン"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "コン"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "コン"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "落ち",
+              "reading": "おとち",
+              "meaning": "to drop",
+              "baseForm": "落す",
+              "level": "N4"
+            },
+            {
+              "surface": "着い",
+              "reading": "ちゃくい",
+              "meaning": "counter for suits of clothing; arriving at ..",
+              "baseForm": "着",
+              "level": "N1"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "三",
+              "reading": "さん",
+              "meaning": "three",
+              "baseForm": "三",
+              "level": "N5"
+            },
+            {
+              "surface": "回"
+            },
+            {
+              "surface": "ノック"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "室内から「どうぞ」という声が聞こえたのを確認し、「失礼いたします」と発声しながら扉を静かに開けました。",
+          "literalEn": "室内 [from] please という voice [subj] to hear [past] ['s / of] [obj] 確認 失礼 [past] [polite] [with/and] 発声 ながら [obj] quiet [at/to] to open した",
+          "naturalEn": "Confirming the response of 'Please come in' from within, I said 'Excuse me' as I quietly turned the door handle.",
+          "tokens": [
+            {
+              "surface": "室内"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "どうぞ",
+              "meaning": "please",
+              "baseForm": "どうぞ",
+              "level": "N5"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "声",
+              "reading": "こえ",
+              "meaning": "voice",
+              "baseForm": "声",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "聞",
+              "reading": "き",
+              "meaning": "to hear; to listen to; to ask",
+              "baseForm": "聞く",
+              "level": "N5"
+            },
+            {
+              "surface": "こ"
+            },
+            {
+              "surface": "え"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "確認"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "失礼"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "発声"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "扉"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "静か",
+              "reading": "しずか",
+              "meaning": "quiet",
+              "baseForm": "静か",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "開",
+              "reading": "あ",
+              "meaning": "to open; to become open",
+              "baseForm": "開く",
+              "level": "N5"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "椅子の左横に姿勢を正して立ち、面接官三名に向かって三十度の角度で深々と一礼をしました。「お掛けください」と促されるのを待ってから「失礼いたします」と述べて着席しました。中央に座る人事部長から「まず初めに、三分程度で自己PRと志望動機をお願いします」と質問が投げかけられました。私は大学時代に力を注いだ異文化交流イベントの運営経験を挙げ、困難を乗り越えた調整力を熱意を込めて伝えました。",
+      "en": "Standing upright to the left of the chair, I bowed deeply at a thirty-degree angle toward the three interviewing executives. Waiting until prompted with 'Please be seated,' I replied 'Excuse me' before taking my seat. The HR director seated in the center posed the opening question: 'First of all, please present your self-promotion and motivation for applying in about three minutes.' Citing my experience managing intercultural exchange events during university, I passionately conveyed my coordination skills in overcoming obstacles.",
+      "tokens": [
+        {
+          "surface": "椅子",
+          "reading": "いす",
+          "meaning": "chair; seat",
+          "baseForm": "椅子",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "左",
+          "reading": "ひだり",
+          "meaning": "left hand side",
+          "baseForm": "左",
+          "level": "N5"
+        },
+        {
+          "surface": "横"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "姿勢"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "正"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "立ち",
+          "reading": "たち",
+          "meaning": "to stand",
+          "baseForm": "立つ",
+          "level": "N5"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "面接"
+        },
+        {
+          "surface": "官"
+        },
+        {
+          "surface": "三名"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "向",
+          "reading": "む",
+          "meaning": "to face",
+          "baseForm": "向く",
+          "level": "N3"
+        },
+        {
+          "surface": "かって"
+        },
+        {
+          "surface": "三十"
+        },
+        {
+          "surface": "度",
+          "reading": "たび",
+          "meaning": "time (three times, each time, etc.); times",
+          "baseForm": "度",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "角度"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "深々と"
+        },
+        {
+          "surface": "一礼"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "お"
+        },
+        {
+          "surface": "掛け"
+        },
+        {
+          "surface": "くだ"
+        },
+        {
+          "surface": "さい"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "促"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れる"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "待",
+          "reading": "ま",
+          "meaning": "to wait",
+          "baseForm": "待つ",
+          "level": "N5"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "失礼"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "述"
+        },
+        {
+          "surface": "べ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "着席"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "中央"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "座る"
+        },
+        {
+          "surface": "人事"
+        },
+        {
+          "surface": "部長"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "まず",
+          "meaning": "first of all",
+          "baseForm": "まず",
+          "level": "N4"
+        },
+        {
+          "surface": "初め"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "三分"
+        },
+        {
+          "surface": "程度"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "自己"
+        },
+        {
+          "surface": "PR"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "志望"
+        },
+        {
+          "surface": "動機"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "お願い",
+          "reading": "おねがい",
+          "meaning": "request; wish; please",
+          "baseForm": "お願い",
+          "level": "N5"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "質問",
+          "reading": "しつもん",
+          "meaning": "question",
+          "baseForm": "質問",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "投",
+          "reading": "トウ",
+          "meaning": "throw, abandon, discard",
+          "baseForm": "投",
+          "level": "N3"
+        },
+        {
+          "surface": "げ"
+        },
+        {
+          "surface": "かけ"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "私",
+          "reading": "わたくし",
+          "meaning": "(humble) I; myself",
+          "baseForm": "私",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "大学",
+          "reading": "だいがく",
+          "meaning": "university",
+          "baseForm": "大学",
+          "level": "N5"
+        },
+        {
+          "surface": "時代"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "力",
+          "reading": "ちから",
+          "meaning": "strength; power",
+          "baseForm": "力",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "注"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "だ"
+        },
+        {
+          "surface": "異"
+        },
+        {
+          "surface": "文化",
+          "reading": "ぶんか",
+          "meaning": "culture",
+          "baseForm": "文化",
+          "level": "N4"
+        },
+        {
+          "surface": "交流"
+        },
+        {
+          "surface": "イベント"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "運営"
+        },
+        {
+          "surface": "経験"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "挙"
+        },
+        {
+          "surface": "げ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "困難",
+          "reading": "こんなん",
+          "meaning": "difficulty; distress",
+          "baseForm": "困難",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "乗り",
+          "reading": "のり",
+          "meaning": "to get on; to ride",
+          "baseForm": "乗る",
+          "level": "N5"
+        },
+        {
+          "surface": "越",
+          "reading": "こ",
+          "meaning": "to go over (e.g. with audience)",
+          "baseForm": "越す",
+          "level": "N3"
+        },
+        {
+          "surface": "え"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "調整"
+        },
+        {
+          "surface": "力",
+          "reading": "ちから",
+          "meaning": "strength; power",
+          "baseForm": "力",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "熱意"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "込"
+        },
+        {
+          "surface": "め"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "伝え"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "椅子の左横に姿勢を正して立ち、面接官三名に向かって三十度の角度で深々と一礼をしました。",
+          "literalEn": "chair ['s / of] left hand side [at/to] 姿勢 [obj] [and] to stand 面接 三名 [at/to] to face かって 三十 time (three times ['s / of] 角度 [in/by] 深々と 一礼 [obj] しま した",
+          "naturalEn": "Standing upright to the left of the chair, I bowed deeply at a thirty-degree angle toward the three interviewing executives.",
+          "tokens": [
+            {
+              "surface": "椅子",
+              "reading": "いす",
+              "meaning": "chair; seat",
+              "baseForm": "椅子",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "左",
+              "reading": "ひだり",
+              "meaning": "left hand side",
+              "baseForm": "左",
+              "level": "N5"
+            },
+            {
+              "surface": "横"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "姿勢"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "正"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "立ち",
+              "reading": "たち",
+              "meaning": "to stand",
+              "baseForm": "立つ",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "面接"
+            },
+            {
+              "surface": "官"
+            },
+            {
+              "surface": "三名"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "向",
+              "reading": "む",
+              "meaning": "to face",
+              "baseForm": "向く",
+              "level": "N3"
+            },
+            {
+              "surface": "かって"
+            },
+            {
+              "surface": "三十"
+            },
+            {
+              "surface": "度",
+              "reading": "たび",
+              "meaning": "time (three times, each time, etc.); times",
+              "baseForm": "度",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "角度"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "深々と"
+            },
+            {
+              "surface": "一礼"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「お掛けください」と促されるのを待ってから「失礼いたします」と述べて着席しました。",
+          "literalEn": "掛け くだ さい [with/and] れる ['s / of] [obj] to wait って [from] 失礼 [past] [polite] [with/and] [and] 着席 しま した",
+          "naturalEn": "Waiting until prompted with 'Please be seated,' I replied 'Excuse me' before taking my seat.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "掛け"
+            },
+            {
+              "surface": "くだ"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "促"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れる"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "待",
+              "reading": "ま",
+              "meaning": "to wait",
+              "baseForm": "待つ",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "失礼"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "述"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "着席"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "中央に座る人事部長から「まず初めに、三分程度で自己PRと志望動機をお願いします」と質問が投げかけられました。",
+          "literalEn": "中央 [at/to] 座る 人事 部長 [from] first of all 初め [at/to] 三分 程度 [in/by] 自己 PR [with/and] 志望 動機 [obj] request [polite] [with/and] question [subj] throw かけ した",
+          "naturalEn": "The HR director seated in the center posed the opening question: 'First of all, please present your self-promotion and motivation for applying in about three minutes.'",
+          "tokens": [
+            {
+              "surface": "中央"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "座る"
+            },
+            {
+              "surface": "人事"
+            },
+            {
+              "surface": "部長"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "まず",
+              "meaning": "first of all",
+              "baseForm": "まず",
+              "level": "N4"
+            },
+            {
+              "surface": "初め"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "三分"
+            },
+            {
+              "surface": "程度"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "自己"
+            },
+            {
+              "surface": "PR"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "志望"
+            },
+            {
+              "surface": "動機"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "お願い",
+              "reading": "おねがい",
+              "meaning": "request; wish; please",
+              "baseForm": "お願い",
+              "level": "N5"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "質問",
+              "reading": "しつもん",
+              "meaning": "question",
+              "baseForm": "質問",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "投",
+              "reading": "トウ",
+              "meaning": "throw, abandon, discard",
+              "baseForm": "投",
+              "level": "N3"
+            },
+            {
+              "surface": "げ"
+            },
+            {
+              "surface": "かけ"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "私は大学時代に力を注いだ異文化交流イベントの運営経験を挙げ、困難を乗り越えた調整力を熱意を込めて伝えました。",
+          "literalEn": "I [topic] university 時代 [at/to] strength [obj] [is] culture 交流 イベント ['s / of] 運営 経験 [obj] difficulty [obj] to get on to go over [past] 調整 strength [obj] 熱意 [obj] [and] 伝え した",
+          "naturalEn": "Citing my experience managing intercultural exchange events during university, I passionately conveyed my coordination skills in overcoming obstacles.",
+          "tokens": [
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "大学",
+              "reading": "だいがく",
+              "meaning": "university",
+              "baseForm": "大学",
+              "level": "N5"
+            },
+            {
+              "surface": "時代"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "力",
+              "reading": "ちから",
+              "meaning": "strength; power",
+              "baseForm": "力",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "注"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "異"
+            },
+            {
+              "surface": "文化",
+              "reading": "ぶんか",
+              "meaning": "culture",
+              "baseForm": "文化",
+              "level": "N4"
+            },
+            {
+              "surface": "交流"
+            },
+            {
+              "surface": "イベント"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "運営"
+            },
+            {
+              "surface": "経験"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "挙"
+            },
+            {
+              "surface": "げ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "困難",
+              "reading": "こんなん",
+              "meaning": "difficulty; distress",
+              "baseForm": "困難",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "乗り",
+              "reading": "のり",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "越",
+              "reading": "こ",
+              "meaning": "to go over (e.g. with audience)",
+              "baseForm": "越す",
+              "level": "N3"
+            },
+            {
+              "surface": "え"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "調整"
+            },
+            {
+              "surface": "力",
+              "reading": "ちから",
+              "meaning": "strength; power",
+              "baseForm": "力",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "熱意"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "込"
+            },
+            {
+              "surface": "め"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "伝え"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "「もし海外支社への転勤を命じられた場合、どのように受け止めますか」という突っ込んだ質問も投げかけられました。「新しい環境に恐れず挑戦することこそ私の長所ですので、喜んで責任を果たしたいと存じます」と前向きに即答しました。面接の最後に「何か質問はありますか」と逆質問を促された際、事前に調べておいた新規事業展開について意欲的な質問を投げかけました。面接官たちが満足そうに頷く姿を見て、手応えを感じながら「本日は貴重なお時間をいただき、誠にありがとうございました」と退室しました。",
+      "en": "A probing follow-up was also asked: 'If you were ordered to relocate to an overseas branch, how would you respond?' I answered immediately in a positive tone: 'Embracing new challenges fearlessly is my greatest strength, so I would gladly fulfill that responsibility.' At the close of the interview when invited for reverse questions with 'Do you have any questions?', I posed an enthusiastic inquiry regarding their new business ventures researched in advance. Seeing the interviewers nod with satisfaction and feeling a palpable sense of accomplishment, I bowed and exited: 'Thank you very much for your precious time today.'",
+      "tokens": [
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "もし",
+          "meaning": "if",
+          "baseForm": "もし",
+          "level": "N4"
+        },
+        {
+          "surface": "海外"
+        },
+        {
+          "surface": "支社"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "転勤"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "命",
+          "reading": "いのち",
+          "meaning": "command; decree; life",
+          "baseForm": "命",
+          "level": "N3"
+        },
+        {
+          "surface": "じ"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "場合"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "どの"
+        },
+        {
+          "surface": "よう"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "受け"
+        },
+        {
+          "surface": "止め"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "突っ"
+        },
+        {
+          "surface": "込"
+        },
+        {
+          "surface": "ん"
+        },
+        {
+          "surface": "だ"
+        },
+        {
+          "surface": "質問",
+          "reading": "しつもん",
+          "meaning": "question",
+          "baseForm": "質問",
+          "level": "N5"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "投",
+          "reading": "トウ",
+          "meaning": "throw, abandon, discard",
+          "baseForm": "投",
+          "level": "N3"
+        },
+        {
+          "surface": "げ"
+        },
+        {
+          "surface": "かけ"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "新しい",
+          "reading": "あたらしい",
+          "meaning": "new",
+          "baseForm": "新しい",
+          "level": "N5"
+        },
+        {
+          "surface": "環境"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "恐れ"
+        },
+        {
+          "surface": "ず"
+        },
+        {
+          "surface": "挑戦"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "こそ"
+        },
+        {
+          "surface": "私",
+          "reading": "わたくし",
+          "meaning": "(humble) I; myself",
+          "baseForm": "私",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "長所"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "ので"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "喜",
+          "reading": "よろこ",
+          "meaning": "to be delighted",
+          "baseForm": "喜ぶ",
+          "level": "N4"
+        },
+        {
+          "surface": "んで"
+        },
+        {
+          "surface": "責任"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "果"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "いと"
+        },
+        {
+          "surface": "存じ"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "前向き"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "即答"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "面接"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "最後",
+          "reading": "さいご",
+          "meaning": "last; end",
+          "baseForm": "最後",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "何",
+          "reading": "なん",
+          "meaning": "what",
+          "baseForm": "何",
+          "level": "N5"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "質問",
+          "reading": "しつもん",
+          "meaning": "question",
+          "baseForm": "質問",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "ありま"
+        },
+        {
+          "surface": "すか"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "逆"
+        },
+        {
+          "surface": "質問",
+          "reading": "しつもん",
+          "meaning": "question",
+          "baseForm": "質問",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "促"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "際"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "事前"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "調べ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "おい"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "新規"
+        },
+        {
+          "surface": "事業"
+        },
+        {
+          "surface": "展開"
+        },
+        {
+          "surface": "について"
+        },
+        {
+          "surface": "意欲"
+        },
+        {
+          "surface": "的"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "質問",
+          "reading": "しつもん",
+          "meaning": "question",
+          "baseForm": "質問",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "投",
+          "reading": "トウ",
+          "meaning": "throw, abandon, discard",
+          "baseForm": "投",
+          "level": "N3"
+        },
+        {
+          "surface": "げ"
+        },
+        {
+          "surface": "かけ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "面接"
+        },
+        {
+          "surface": "官"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "満足"
+        },
+        {
+          "surface": "そう",
+          "meaning": "really",
+          "baseForm": "そう",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "頷く"
+        },
+        {
+          "surface": "姿",
+          "reading": "すがた",
+          "meaning": "figure; shape; appearance",
+          "baseForm": "姿",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "見",
+          "reading": "み",
+          "meaning": "to see; to watch",
+          "baseForm": "見る",
+          "level": "N5"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "手応え"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "感じ"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "本日"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "貴重"
+        },
+        {
+          "surface": "なお",
+          "meaning": "still; yet",
+          "baseForm": "なお",
+          "level": "N3"
+        },
+        {
+          "surface": "時間",
+          "reading": "じかん",
+          "meaning": "time",
+          "baseForm": "時間",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "いただき"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "誠に"
+        },
+        {
+          "surface": "ありがとう",
+          "meaning": "Thank you",
+          "baseForm": "ありがとう",
+          "level": "N5"
+        },
+        {
+          "surface": "ご"
+        },
+        {
+          "surface": "ざ"
+        },
+        {
+          "surface": "いま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "退室"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "「もし海外支社への転勤を命じられた場合、どのように受け止めますか」という突っ込んだ質問も投げかけられました。",
+          "literalEn": "if 海外 支社 [toward] ['s / of] 転勤 [obj] command [past] 場合 どの よう [at/to] 受け 止め [polite] [?] という 突っ [is] question [also] throw かけ した",
+          "naturalEn": "A probing follow-up was also asked: 'If you were ordered to relocate to an overseas branch, how would you respond?'",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "もし",
+              "meaning": "if",
+              "baseForm": "もし",
+              "level": "N4"
+            },
+            {
+              "surface": "海外"
+            },
+            {
+              "surface": "支社"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "転勤"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "命",
+              "reading": "いのち",
+              "meaning": "command; decree; life",
+              "baseForm": "命",
+              "level": "N3"
+            },
+            {
+              "surface": "じ"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "場合"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "どの"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "受け"
+            },
+            {
+              "surface": "止め"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "突っ"
+            },
+            {
+              "surface": "込"
+            },
+            {
+              "surface": "ん"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "質問",
+              "reading": "しつもん",
+              "meaning": "question",
+              "baseForm": "質問",
+              "level": "N5"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "投",
+              "reading": "トウ",
+              "meaning": "throw, abandon, discard",
+              "baseForm": "投",
+              "level": "N3"
+            },
+            {
+              "surface": "げ"
+            },
+            {
+              "surface": "かけ"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「新しい環境に恐れず挑戦することこそ私の長所ですので、喜んで責任を果たしたいと存じます」と前向きに即答しました。",
+          "literalEn": "new 環境 [at/to] 恐れ 挑戦 to do thing こそ  I ['s / of] 長所 [is] ので to be delighted んで 責任 [obj] [past] した いと 存じ [polite] [with/and] 前向き [at/to] 即答 しま した",
+          "naturalEn": "I answered immediately in a positive tone: 'Embracing new challenges fearlessly is my greatest strength, so I would gladly fulfill that responsibility.'",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "新しい",
+              "reading": "あたらしい",
+              "meaning": "new",
+              "baseForm": "新しい",
+              "level": "N5"
+            },
+            {
+              "surface": "環境"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "恐れ"
+            },
+            {
+              "surface": "ず"
+            },
+            {
+              "surface": "挑戦"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "こそ"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "長所"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "ので"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "喜",
+              "reading": "よろこ",
+              "meaning": "to be delighted",
+              "baseForm": "喜ぶ",
+              "level": "N4"
+            },
+            {
+              "surface": "んで"
+            },
+            {
+              "surface": "責任"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "果"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "いと"
+            },
+            {
+              "surface": "存じ"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "前向き"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "即答"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "面接の最後に「何か質問はありますか」と逆質問を促された際、事前に調べておいた新規事業展開について意欲的な質問を投げかけました。",
+          "literalEn": "面接 ['s / of] last [at/to] what [?] question [topic] ありま すか [with/and] question [obj] [past] 事前 [at/to] 調べ [and] おい [past] 新規 事業 展開 について 意欲 question [obj] throw かけ した",
+          "naturalEn": "At the close of the interview when invited for reverse questions with 'Do you have any questions?', I posed an enthusiastic inquiry regarding their new business ventures researched in advance.",
+          "tokens": [
+            {
+              "surface": "面接"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "最後",
+              "reading": "さいご",
+              "meaning": "last; end",
+              "baseForm": "最後",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "何",
+              "reading": "なん",
+              "meaning": "what",
+              "baseForm": "何",
+              "level": "N5"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "質問",
+              "reading": "しつもん",
+              "meaning": "question",
+              "baseForm": "質問",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "すか"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "逆"
+            },
+            {
+              "surface": "質問",
+              "reading": "しつもん",
+              "meaning": "question",
+              "baseForm": "質問",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "促"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "際"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "事前"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "調べ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "おい"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "新規"
+            },
+            {
+              "surface": "事業"
+            },
+            {
+              "surface": "展開"
+            },
+            {
+              "surface": "について"
+            },
+            {
+              "surface": "意欲"
+            },
+            {
+              "surface": "的"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "質問",
+              "reading": "しつもん",
+              "meaning": "question",
+              "baseForm": "質問",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "投",
+              "reading": "トウ",
+              "meaning": "throw, abandon, discard",
+              "baseForm": "投",
+              "level": "N3"
+            },
+            {
+              "surface": "げ"
+            },
+            {
+              "surface": "かけ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "面接官たちが満足そうに頷く姿を見て、手応えを感じながら「本日は貴重なお時間をいただき、誠にありがとうございました」と退室しました。",
+          "literalEn": "面接 たち [subj] 満足 really [at/to] 頷く figure [obj] to see [and] 手応え [obj] 感じ ながら 本日 [topic] 貴重 still time [obj] いただき 誠に Thank you いま した [with/and] 退室 しま した",
+          "naturalEn": "Seeing the interviewers nod with satisfaction and feeling a palpable sense of accomplishment, I bowed and exited: 'Thank you very much for your precious time today.'",
+          "tokens": [
+            {
+              "surface": "面接"
+            },
+            {
+              "surface": "官"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "満足"
+            },
+            {
+              "surface": "そう",
+              "meaning": "really",
+              "baseForm": "そう",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "頷く"
+            },
+            {
+              "surface": "姿",
+              "reading": "すがた",
+              "meaning": "figure; shape; appearance",
+              "baseForm": "姿",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "手応え"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "感じ"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "本日"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "貴重"
+            },
+            {
+              "surface": "なお",
+              "meaning": "still; yet",
+              "baseForm": "なお",
+              "level": "N3"
+            },
+            {
+              "surface": "時間",
+              "reading": "じかん",
+              "meaning": "time",
+              "baseForm": "時間",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "いただき"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "誠に"
+            },
+            {
+              "surface": "ありがとう",
+              "meaning": "Thank you",
+              "baseForm": "ありがとう",
+              "level": "N5"
+            },
+            {
+              "surface": "ご"
+            },
+            {
+              "surface": "ざ"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "退室"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "一週間後、ポストに届いた採用内定の通知書を手にした瞬間、努力が報われた喜びに胸が熱くなりました。面接を通じて得た自信を胸に、春から始まる社会人生活への第一歩を堂々と踏み出したいと誓いました。",
+      "en": "A week later, the instant I held the job offer notification letter delivered to my mailbox, my chest warmed with the profound joy of hard work rewarded. Bearing the confidence gained through the interview, I vowed to stride proudly into the first steps of professional life commencing in spring.",
+      "tokens": [
+        {
+          "surface": "一",
+          "reading": "いち",
+          "meaning": "one",
+          "baseForm": "一",
+          "level": "N5"
+        },
+        {
+          "surface": "週間",
+          "reading": "しゅうかん",
+          "meaning": "week; weekly",
+          "baseForm": "週間",
+          "level": "N3"
+        },
+        {
+          "surface": "後",
+          "reading": "あと",
+          "meaning": "afterwards",
+          "baseForm": "後",
+          "level": "N5"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "ポスト"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "届"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "採用"
+        },
+        {
+          "surface": "内定"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "通知"
+        },
+        {
+          "surface": "書"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "手",
+          "reading": "て",
+          "meaning": "hand",
+          "baseForm": "手",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "瞬間",
+          "reading": "しゅんかん",
+          "meaning": "moment; second; instant",
+          "baseForm": "瞬間",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "努力"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "報"
+        },
+        {
+          "surface": "われ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "喜び",
+          "reading": "よろこび",
+          "meaning": "(a) joy; (a) delight; rapture",
+          "baseForm": "喜び",
+          "level": "N3"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "胸"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "熱",
+          "reading": "ねつ",
+          "meaning": "fever",
+          "baseForm": "熱",
+          "level": "N4"
+        },
+        {
+          "surface": "く"
+        },
+        {
+          "surface": "なり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "面接"
+        },
+        {
+          "surface": "を通じて"
+        },
+        {
+          "surface": "得"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "自信"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "胸"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "春"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "始まる",
+          "reading": "はじまる",
+          "meaning": "to begin",
+          "baseForm": "始まる",
+          "level": "N5"
+        },
+        {
+          "surface": "社会"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "meaning": "person",
+          "baseForm": "人",
+          "level": "N5"
+        },
+        {
+          "surface": "生活",
+          "reading": "せいかつ",
+          "meaning": "to live",
+          "baseForm": "生活",
+          "level": "N4"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "第一歩"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "堂々"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "踏",
+          "reading": "ふ",
+          "meaning": "to step on",
+          "baseForm": "踏む",
+          "level": "N4"
+        },
+        {
+          "surface": "み"
+        },
+        {
+          "surface": "出し",
+          "reading": "だし",
+          "meaning": "to put out",
+          "baseForm": "出す",
+          "level": "N5"
+        },
+        {
+          "surface": "たい"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "誓"
+        },
+        {
+          "surface": "いま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "一週間後、ポストに届いた採用内定の通知書を手にした瞬間、努力が報われた喜びに胸が熱くなりました。",
+          "literalEn": "one week afterwards ポスト [at/to] [past] 採用 内定 ['s / of] 通知 [obj] hand [at/to] した moment 努力 [subj] われ [past]  joy [at/to] [subj] fever なり した",
+          "naturalEn": "A week later, the instant I held the job offer notification letter delivered to my mailbox, my chest warmed with the profound joy of hard work rewarded.",
+          "tokens": [
+            {
+              "surface": "一",
+              "reading": "いち",
+              "meaning": "one",
+              "baseForm": "一",
+              "level": "N5"
+            },
+            {
+              "surface": "週間",
+              "reading": "しゅうかん",
+              "meaning": "week; weekly",
+              "baseForm": "週間",
+              "level": "N3"
+            },
+            {
+              "surface": "後",
+              "reading": "あと",
+              "meaning": "afterwards",
+              "baseForm": "後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ポスト"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "届"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "採用"
+            },
+            {
+              "surface": "内定"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "通知"
+            },
+            {
+              "surface": "書"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "手",
+              "reading": "て",
+              "meaning": "hand",
+              "baseForm": "手",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "瞬間",
+              "reading": "しゅんかん",
+              "meaning": "moment; second; instant",
+              "baseForm": "瞬間",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "努力"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "報"
+            },
+            {
+              "surface": "われ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "喜び",
+              "reading": "よろこび",
+              "meaning": "(a) joy; (a) delight; rapture",
+              "baseForm": "喜び",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "胸"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "熱",
+              "reading": "ねつ",
+              "meaning": "fever",
+              "baseForm": "熱",
+              "level": "N4"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "面接を通じて得た自信を胸に、春から始まる社会人生活への第一歩を堂々と踏み出したいと誓いました。",
+          "literalEn": "面接 を通じて [past] 自信 [obj] [at/to] [from] to begin 社会 person to live [toward] ['s / of] 第一歩 [obj] 堂々 [with/and] to step on to put out [want to] [with/and] いま した",
+          "naturalEn": "Bearing the confidence gained through the interview, I vowed to stride proudly into the first steps of professional life commencing in spring.",
+          "tokens": [
+            {
+              "surface": "面接"
+            },
+            {
+              "surface": "を通じて"
+            },
+            {
+              "surface": "得"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "自信"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "胸"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "春"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "始まる",
+              "reading": "はじまる",
+              "meaning": "to begin",
+              "baseForm": "始まる",
+              "level": "N5"
+            },
+            {
+              "surface": "社会"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "生活",
+              "reading": "せいかつ",
+              "meaning": "to live",
+              "baseForm": "生活",
+              "level": "N4"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "第一歩"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "堂々"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "踏",
+              "reading": "ふ",
+              "meaning": "to step on",
+              "baseForm": "踏む",
+              "level": "N4"
+            },
+            {
+              "surface": "み"
+            },
+            {
+              "surface": "出し",
+              "reading": "だし",
+              "meaning": "to put out",
+              "baseForm": "出す",
+              "level": "N5"
+            },
+            {
+              "surface": "たい"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "誓"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "日本の就職面接において、部屋に入る際の正しいノックの回数は何回とされていますか。",
+      "questionEn": "In Japanese job interviews, how many knocks on the door are considered standard business etiquette?",
+      "options": [
+        "3回（トイレ等の空室確認が2回、面接等の入室は3回）",
+        "1回だけ力強く叩く",
+        "ノックは一切せずにいきなりドアを開ける",
+        "10回以上リズミカルに叩き続ける"
+      ],
+      "optionsEn": [
+        "3 times (2 knocks is for checking restroom occupancy, 3 knocks is for formal room entry)",
+        "Knocking once with great force",
+        "Opening the door immediately without any knocking",
+        "Tapping rhythmically over 10 times consecutively"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本の面接マナーでは、空室確認の2回と区別し、礼儀正しい入室合図として「3回ノック」が基本とされています。"
+    },
+    {
+      "question": "面接の最後に行われる「逆質問」の時間において、語り手はどのような質問をしましたか。",
+      "questionEn": "During the 'reverse question' time at the end of the interview, what inquiry did the narrator make?",
+      "options": [
+        "事前に下調べしておいた会社の新規事業展開に関する意欲的な質問",
+        "有給休暇が年間何日取れるかという質問",
+        "社員食堂のランチが無料かどうかという質問",
+        "特に何もないので何も質問しなかった"
+      ],
+      "optionsEn": [
+        "An ambitious question regarding the company's new business ventures researched in advance",
+        "An inquiry about how many paid annual leave days are provided",
+        "A question about whether the company cafeteria lunch is free of charge",
+        "Asking nothing because there were no particular inquiries"
+      ],
+      "answerIndex": 0,
+      "explanation": "事前に企業研究を行った上で、新規事業の将来展開について質問することで強い入社意欲をアピールしました。"
+    },
+    {
+      "question": "面接官から海外支社への転勤可能性を問われた際、語り手はどのように回答しましたか。",
+      "questionEn": "How did the narrator respond when asked about the possibility of an overseas branch transfer?",
+      "options": [
+        "挑戦こそ自分の長所であり、喜んで責任を果たしたいと前向きに答えた",
+        "海外は治安が悪くて怖いので絶対に断ると答えた",
+        "給料が三倍になるなら考えても良いと答えた",
+        "飛行機が苦手なので日本国内だけで働きたいと答えた"
+      ],
+      "optionsEn": [
+        "Answered proactively that challenges are their strength and they would gladly take on the duty",
+        "Answered that they would refuse unconditionally because foreign countries are dangerous",
+        "Answered that they might consider it if their salary was tripled",
+        "Answered that they dislike airplanes and only want to work domestically in Japan"
+      ],
+      "answerIndex": 0,
+      "explanation": "「新しい環境に恐れず挑戦することこそ私の長所」と前向きな姿勢を明確にアピールしました。"
+    }
+  ]
+}

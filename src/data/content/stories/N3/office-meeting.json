@@ -1,0 +1,4291 @@
+{
+  "id": "story-n3-office-meeting",
+  "title": "企画会議での発表：新プロジェクトの提案",
+  "titleRomaji": "Kikaku Kaigi de no Happyou: Shin Purojekuto no Teian",
+  "titleEn": "Office Project Proposal Meeting: Presenting a New Venture",
+  "level": "N3",
+  "category": "Everyday Life",
+  "tags": [
+    "Everyday Life",
+    "N3",
+    "Business",
+    "Presentation",
+    "Meeting"
+  ],
+  "paragraphs": [
+    {
+      "ja": "入社三年目を迎えた私は、若者向けの新しいオンライン学習サービスの企画リーダーに抜擢されました。本日の午後二時から、事業部長や各部署の責任者が集まる重要な企画審議会議でプレゼンテーションを行うことになっています。会議室の大型モニターの接続テストを入念に行い、出席者全員分の配布資料をテーブルの上に整然と並べました。何週間も夜遅くまで市場調査と収支計画のシミュレーションを重ねてきただけに、緊張で喉がカラカラに渇いていました。",
+      "en": "Reaching my third year at the company, I was selected to lead the planning of a brand-new online learning service targeted at young learners. Starting at 2:00 PM today, I am scheduled to deliver a presentation at a crucial planning review board where department heads gather. I thoroughly performed connection tests on the conference room's large display monitor, neatly arranging handouts on the table for all attendees. Having spent weeks working late into the night compiling market research and profit simulations, my throat was parched dry with nerves.",
+      "tokens": [
+        {
+          "surface": "入社"
+        },
+        {
+          "surface": "三年",
+          "reading": "さんねん",
+          "meaning": "three years",
+          "baseForm": "三年",
+          "level": "N5"
+        },
+        {
+          "surface": "目",
+          "reading": "め",
+          "meaning": "eye",
+          "baseForm": "目",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "迎え"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "私",
+          "reading": "わたくし",
+          "meaning": "(humble) I; myself",
+          "baseForm": "私",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "若者"
+        },
+        {
+          "surface": "向け"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "新しい",
+          "reading": "あたらしい",
+          "meaning": "new",
+          "baseForm": "新しい",
+          "level": "N5"
+        },
+        {
+          "surface": "オンライン"
+        },
+        {
+          "surface": "学習"
+        },
+        {
+          "surface": "サービス"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "企画"
+        },
+        {
+          "surface": "リーダー"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "抜擢"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "本日"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "午後",
+          "reading": "ごご",
+          "meaning": "afternoon",
+          "baseForm": "午後",
+          "level": "N5"
+        },
+        {
+          "surface": "二時",
+          "reading": "にじ",
+          "meaning": "two o'clock",
+          "baseForm": "二時",
+          "level": "N5"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "事業"
+        },
+        {
+          "surface": "部長"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "各"
+        },
+        {
+          "surface": "部署"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "責任"
+        },
+        {
+          "surface": "者"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "集まる"
+        },
+        {
+          "surface": "重要"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "企画"
+        },
+        {
+          "surface": "審議"
+        },
+        {
+          "surface": "会議"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "プレゼンテーション"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "行う"
+        },
+        {
+          "surface": "ことに"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "会議"
+        },
+        {
+          "surface": "室"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "大型"
+        },
+        {
+          "surface": "モニター"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "接続"
+        },
+        {
+          "surface": "テスト",
+          "meaning": "test",
+          "baseForm": "テスト",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "入念"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "行い"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "出席"
+        },
+        {
+          "surface": "者"
+        },
+        {
+          "surface": "全員"
+        },
+        {
+          "surface": "分",
+          "reading": "ぶん",
+          "meaning": "dividing; part",
+          "baseForm": "分",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "配布"
+        },
+        {
+          "surface": "資料"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "テーブル"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "上",
+          "reading": "うえ",
+          "meaning": "on top of",
+          "baseForm": "上",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "整然と"
+        },
+        {
+          "surface": "並",
+          "reading": "なら",
+          "meaning": "to line up; to stand in a line",
+          "baseForm": "並ぶ",
+          "level": "N5"
+        },
+        {
+          "surface": "べ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "何",
+          "reading": "なん",
+          "meaning": "what",
+          "baseForm": "何",
+          "level": "N5"
+        },
+        {
+          "surface": "週間",
+          "reading": "しゅうかん",
+          "meaning": "week; weekly",
+          "baseForm": "週間",
+          "level": "N3"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "夜",
+          "reading": "よる",
+          "meaning": "evening; night",
+          "baseForm": "夜",
+          "level": "N5"
+        },
+        {
+          "surface": "遅"
+        },
+        {
+          "surface": "く"
+        },
+        {
+          "surface": "まで"
+        },
+        {
+          "surface": "市場",
+          "reading": "いちば",
+          "meaning": "(the) market (as a concept)",
+          "baseForm": "市場",
+          "level": "N3"
+        },
+        {
+          "surface": "調査"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "収支"
+        },
+        {
+          "surface": "計画"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "シミュレーション"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "重ねて"
+        },
+        {
+          "surface": "きた"
+        },
+        {
+          "surface": "だけ"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "緊張",
+          "reading": "きんちょう",
+          "meaning": "tension; mental strain; nervousness",
+          "baseForm": "緊張",
+          "level": "N3"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "喉",
+          "reading": "のど",
+          "meaning": "throat",
+          "baseForm": "喉",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "カラカラ"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "渇"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "入社三年目を迎えた私は、若者向けの新しいオンライン学習サービスの企画リーダーに抜擢されました。",
+          "literalEn": "入社 three years eye [obj] 迎え [past]  I [topic] 若者 向け ['s / of] new オンライン 学習 サービス ['s / of] 企画 リーダー [at/to] 抜擢 した",
+          "naturalEn": "Reaching my third year at the company, I was selected to lead the planning of a brand-new online learning service targeted at young learners.",
+          "tokens": [
+            {
+              "surface": "入社"
+            },
+            {
+              "surface": "三年",
+              "reading": "さんねん",
+              "meaning": "three years",
+              "baseForm": "三年",
+              "level": "N5"
+            },
+            {
+              "surface": "目",
+              "reading": "め",
+              "meaning": "eye",
+              "baseForm": "目",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "迎え"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "若者"
+            },
+            {
+              "surface": "向け"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "新しい",
+              "reading": "あたらしい",
+              "meaning": "new",
+              "baseForm": "新しい",
+              "level": "N5"
+            },
+            {
+              "surface": "オンライン"
+            },
+            {
+              "surface": "学習"
+            },
+            {
+              "surface": "サービス"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "企画"
+            },
+            {
+              "surface": "リーダー"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "抜擢"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "本日の午後二時から、事業部長や各部署の責任者が集まる重要な企画審議会議でプレゼンテーションを行うことになっています。",
+          "literalEn": "本日 ['s / of] afternoon two o'clock [from] 事業 部長 部署 ['s / of] 責任 [subj] 集まる 重要 企画 審議 会議 [in/by] プレゼンテーション [obj] 行う ことに って [polite]",
+          "naturalEn": "Starting at 2:00 PM today, I am scheduled to deliver a presentation at a crucial planning review board where department heads gather.",
+          "tokens": [
+            {
+              "surface": "本日"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "午後",
+              "reading": "ごご",
+              "meaning": "afternoon",
+              "baseForm": "午後",
+              "level": "N5"
+            },
+            {
+              "surface": "二時",
+              "reading": "にじ",
+              "meaning": "two o'clock",
+              "baseForm": "二時",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "事業"
+            },
+            {
+              "surface": "部長"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "各"
+            },
+            {
+              "surface": "部署"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "責任"
+            },
+            {
+              "surface": "者"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "集まる"
+            },
+            {
+              "surface": "重要"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "企画"
+            },
+            {
+              "surface": "審議"
+            },
+            {
+              "surface": "会議"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "プレゼンテーション"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "行う"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "会議室の大型モニターの接続テストを入念に行い、出席者全員分の配布資料をテーブルの上に整然と並べました。",
+          "literalEn": "会議 ['s / of] 大型 モニター ['s / of] 接続 test [obj] 入念 [at/to] 行い 出席 全員 dividing ['s / of] 配布 資料 [obj] テーブル ['s / of] on top of [at/to] 整然と to line up した",
+          "naturalEn": "I thoroughly performed connection tests on the conference room's large display monitor, neatly arranging handouts on the table for all attendees.",
+          "tokens": [
+            {
+              "surface": "会議"
+            },
+            {
+              "surface": "室"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "大型"
+            },
+            {
+              "surface": "モニター"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "接続"
+            },
+            {
+              "surface": "テスト",
+              "meaning": "test",
+              "baseForm": "テスト",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "入念"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "行い"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "出席"
+            },
+            {
+              "surface": "者"
+            },
+            {
+              "surface": "全員"
+            },
+            {
+              "surface": "分",
+              "reading": "ぶん",
+              "meaning": "dividing; part",
+              "baseForm": "分",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "配布"
+            },
+            {
+              "surface": "資料"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "テーブル"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "上",
+              "reading": "うえ",
+              "meaning": "on top of",
+              "baseForm": "上",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "整然と"
+            },
+            {
+              "surface": "並",
+              "reading": "なら",
+              "meaning": "to line up; to stand in a line",
+              "baseForm": "並ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "べ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "何週間も夜遅くまで市場調査と収支計画のシミュレーションを重ねてきただけに、緊張で喉がカラカラに渇いていました。",
+          "literalEn": "what week [also] evening [until]  market 調査 [with/and] 収支 計画 ['s / of] シミュレーション [obj] 重ねて きた だけ [at/to] tension [in/by] throat [subj] カラカラ [at/to] てい した",
+          "naturalEn": "Having spent weeks working late into the night compiling market research and profit simulations, my throat was parched dry with nerves.",
+          "tokens": [
+            {
+              "surface": "何",
+              "reading": "なん",
+              "meaning": "what",
+              "baseForm": "何",
+              "level": "N5"
+            },
+            {
+              "surface": "週間",
+              "reading": "しゅうかん",
+              "meaning": "week; weekly",
+              "baseForm": "週間",
+              "level": "N3"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "夜",
+              "reading": "よる",
+              "meaning": "evening; night",
+              "baseForm": "夜",
+              "level": "N5"
+            },
+            {
+              "surface": "遅"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "まで"
+            },
+            {
+              "surface": "市場",
+              "reading": "いちば",
+              "meaning": "(the) market (as a concept)",
+              "baseForm": "市場",
+              "level": "N3"
+            },
+            {
+              "surface": "調査"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "収支"
+            },
+            {
+              "surface": "計画"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "シミュレーション"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "重ねて"
+            },
+            {
+              "surface": "きた"
+            },
+            {
+              "surface": "だけ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "緊張",
+              "reading": "きんちょう",
+              "meaning": "tension; mental strain; nervousness",
+              "baseForm": "緊張",
+              "level": "N3"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "喉",
+              "reading": "のど",
+              "meaning": "throat",
+              "baseForm": "喉",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "カラカラ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "渇"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "定刻になり、「それでは定刻となりましたので、新規事業企画会議を開始いたします」と司会が口火を切りました。私は立ち上がり、「企画部の高橋です。本日は『次世代型インタラクティブ学習プラットフォーム』についてご説明いたします」と一礼しました。スライドをめくりながら、現在の語学学習市場が抱える課題や、競合他社にはない自社独自の強みを論理的に説明していきました。聞き取りやすい発声を心がけ、聞き手の目を見回しながら、単なる機能説明にとどまらず利用者の声や具体的な収益予測を提示しました。",
+      "en": "As the clock struck, the facilitator opened the proceedings: 'Since the appointed time has arrived, we will begin the new business planning meeting.' I stood up and bowed: 'I am Takahashi from the Planning Department. Today, I will present on our next-generation interactive learning platform.' Advancing the slides, I logically laid out the challenges facing the current language-learning market and our proprietary strengths unmatched by rivals. Conscious of maintaining clear pronunciation and making eye contact, I presented user testimonials and concrete revenue forecasts beyond mere features.",
+      "tokens": [
+        {
+          "surface": "定刻"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "なり"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "それでは"
+        },
+        {
+          "surface": "定刻"
+        },
+        {
+          "surface": "となり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "ので"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "新規"
+        },
+        {
+          "surface": "事業"
+        },
+        {
+          "surface": "企画"
+        },
+        {
+          "surface": "会議"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "開始"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "司会"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "口火"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "切り",
+          "reading": "きり",
+          "meaning": "limits; end; bounds",
+          "baseForm": "切り",
+          "level": "N1"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "私",
+          "reading": "わたくし",
+          "meaning": "(humble) I; myself",
+          "baseForm": "私",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "立ち上がり"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "企画"
+        },
+        {
+          "surface": "部"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "高橋"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "本日"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "『"
+        },
+        {
+          "surface": "次世代"
+        },
+        {
+          "surface": "型"
+        },
+        {
+          "surface": "インタラクティブ"
+        },
+        {
+          "surface": "学習"
+        },
+        {
+          "surface": "プラットフォーム"
+        },
+        {
+          "surface": "』"
+        },
+        {
+          "surface": "について"
+        },
+        {
+          "surface": "ご"
+        },
+        {
+          "surface": "説明",
+          "reading": "せつめい",
+          "meaning": "explanation",
+          "baseForm": "説明",
+          "level": "N4"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "一礼"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "スライド"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "め"
+        },
+        {
+          "surface": "くり"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "現在"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "語学"
+        },
+        {
+          "surface": "学習"
+        },
+        {
+          "surface": "市場",
+          "reading": "いちば",
+          "meaning": "(the) market (as a concept)",
+          "baseForm": "市場",
+          "level": "N3"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "抱える"
+        },
+        {
+          "surface": "課題"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "競合"
+        },
+        {
+          "surface": "他社"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "自社"
+        },
+        {
+          "surface": "独自"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "強み"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "論理"
+        },
+        {
+          "surface": "的"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "説明",
+          "reading": "せつめい",
+          "meaning": "explanation",
+          "baseForm": "説明",
+          "level": "N4"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "き"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "聞",
+          "reading": "き",
+          "meaning": "to hear; to listen to; to ask",
+          "baseForm": "聞く",
+          "level": "N5"
+        },
+        {
+          "surface": "き"
+        },
+        {
+          "surface": "取り",
+          "reading": "とり",
+          "meaning": "to take something",
+          "baseForm": "取る",
+          "level": "N5"
+        },
+        {
+          "surface": "やすい"
+        },
+        {
+          "surface": "発声"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "心がけ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "聞き手"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "目",
+          "reading": "め",
+          "meaning": "eye",
+          "baseForm": "目",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "見",
+          "reading": "み",
+          "meaning": "to see; to watch",
+          "baseForm": "見る",
+          "level": "N5"
+        },
+        {
+          "surface": "回し"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "単なる"
+        },
+        {
+          "surface": "機能"
+        },
+        {
+          "surface": "説明",
+          "reading": "せつめい",
+          "meaning": "explanation",
+          "baseForm": "説明",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "とど"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "ず"
+        },
+        {
+          "surface": "利用"
+        },
+        {
+          "surface": "者"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "声",
+          "reading": "こえ",
+          "meaning": "voice",
+          "baseForm": "声",
+          "level": "N5"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "具体"
+        },
+        {
+          "surface": "的"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "収益"
+        },
+        {
+          "surface": "予測"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "提示"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "定刻になり、「それでは定刻となりましたので、新規事業企画会議を開始いたします」と司会が口火を切りました。",
+          "literalEn": "定刻 [at/to] なり それでは 定刻 となり した ので 新規 事業 企画 会議 [obj] 開始 [past] [polite] [with/and] 司会 [subj] 口火 [obj] limits した",
+          "naturalEn": "As the clock struck, the facilitator opened the proceedings: 'Since the appointed time has arrived, we will begin the new business planning meeting.'",
+          "tokens": [
+            {
+              "surface": "定刻"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "それでは"
+            },
+            {
+              "surface": "定刻"
+            },
+            {
+              "surface": "となり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "ので"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "新規"
+            },
+            {
+              "surface": "事業"
+            },
+            {
+              "surface": "企画"
+            },
+            {
+              "surface": "会議"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "開始"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "司会"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "口火"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "切り",
+              "reading": "きり",
+              "meaning": "limits; end; bounds",
+              "baseForm": "切り",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "私は立ち上がり、「企画部の高橋です。本日は『次世代型インタラクティブ学習プラットフォーム』についてご説明いたします」と一礼しました。",
+          "literalEn": "I [topic] 立ち上がり 企画 ['s / of] 高橋 [is] 本日 [topic] 次世代 インタラクティブ 学習 プラットフォーム について explanation [past] [polite] [with/and] 一礼 しま した",
+          "naturalEn": "I stood up and bowed: 'I am Takahashi from the Planning Department. Today, I will present on our next-generation interactive learning platform.'",
+          "tokens": [
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "立ち上がり"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "企画"
+            },
+            {
+              "surface": "部"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "高橋"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            },
+            {
+              "surface": "本日"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "『"
+            },
+            {
+              "surface": "次世代"
+            },
+            {
+              "surface": "型"
+            },
+            {
+              "surface": "インタラクティブ"
+            },
+            {
+              "surface": "学習"
+            },
+            {
+              "surface": "プラットフォーム"
+            },
+            {
+              "surface": "』"
+            },
+            {
+              "surface": "について"
+            },
+            {
+              "surface": "ご"
+            },
+            {
+              "surface": "説明",
+              "reading": "せつめい",
+              "meaning": "explanation",
+              "baseForm": "説明",
+              "level": "N4"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "一礼"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "スライドをめくりながら、現在の語学学習市場が抱える課題や、競合他社にはない自社独自の強みを論理的に説明していきました。",
+          "literalEn": "スライド [obj] くり ながら 現在 ['s / of] 語学 学習  market [subj] 抱える 課題 競合 他社 [at/to] [topic] [not] 自社 独自 ['s / of] 強み [obj] 論理 [at/to] explanation てい した",
+          "naturalEn": "Advancing the slides, I logically laid out the challenges facing the current language-learning market and our proprietary strengths unmatched by rivals.",
+          "tokens": [
+            {
+              "surface": "スライド"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "め"
+            },
+            {
+              "surface": "くり"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "現在"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "語学"
+            },
+            {
+              "surface": "学習"
+            },
+            {
+              "surface": "市場",
+              "reading": "いちば",
+              "meaning": "(the) market (as a concept)",
+              "baseForm": "市場",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "抱える"
+            },
+            {
+              "surface": "課題"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "競合"
+            },
+            {
+              "surface": "他社"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "自社"
+            },
+            {
+              "surface": "独自"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "強み"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "論理"
+            },
+            {
+              "surface": "的"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "説明",
+              "reading": "せつめい",
+              "meaning": "explanation",
+              "baseForm": "説明",
+              "level": "N4"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "聞き取りやすい発声を心がけ、聞き手の目を見回しながら、単なる機能説明にとどまらず利用者の声や具体的な収益予測を提示しました。",
+          "literalEn": "to hear to take something やすい 発声 [obj] 心がけ 聞き手 ['s / of] eye [obj] to see 回し ながら 単なる 機能 explanation [at/to] とど 利用 ['s / of] voice 具体 収益 予測 [obj] 提示 しま した",
+          "naturalEn": "Conscious of maintaining clear pronunciation and making eye contact, I presented user testimonials and concrete revenue forecasts beyond mere features.",
+          "tokens": [
+            {
+              "surface": "聞",
+              "reading": "き",
+              "meaning": "to hear; to listen to; to ask",
+              "baseForm": "聞く",
+              "level": "N5"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "取り",
+              "reading": "とり",
+              "meaning": "to take something",
+              "baseForm": "取る",
+              "level": "N5"
+            },
+            {
+              "surface": "やすい"
+            },
+            {
+              "surface": "発声"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "心がけ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "聞き手"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "目",
+              "reading": "め",
+              "meaning": "eye",
+              "baseForm": "目",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "回し"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "単なる"
+            },
+            {
+              "surface": "機能"
+            },
+            {
+              "surface": "説明",
+              "reading": "せつめい",
+              "meaning": "explanation",
+              "baseForm": "説明",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "とど"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "ず"
+            },
+            {
+              "surface": "利用"
+            },
+            {
+              "surface": "者"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "声",
+              "reading": "こえ",
+              "meaning": "voice",
+              "baseForm": "声",
+              "level": "N5"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "具体"
+            },
+            {
+              "surface": "的"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "収益"
+            },
+            {
+              "surface": "予測"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "提示"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "発表を終えて質疑応答に移ると、財務担当の部長から厳しい指摘が飛んできました。「企画の独自性は評価できるが、初年度の開発費用に対する投資回収期間が長すぎるのではないか」と問われたのです。私はたじろぐことなく、事前に用意していた補足スライドのデータ画面を素早く画面に投影しました。「ご指摘の通り初期投資はかかりますが、クラウドインフラを段階的に導入することで、半年で黒字化が可能です」と根拠を示して回答しました。",
+      "en": "When the presentation ended and transitioned to Q&A, a sharp critique was fired from the finance department director. He questioned: 'While I praise the originality of the concept, is not the return-on-investment period too protracted against first-year development costs?' Without flinching, I quickly projected the supplementary data slide prepared in advance onto the screen. 'As you rightly point out, initial capital is required; however, by adopting cloud infrastructure in phases, turning profitable within six months is achievable,' I answered with evidence.",
+      "tokens": [
+        {
+          "surface": "発表"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "終",
+          "reading": "おわ",
+          "meaning": "to finish",
+          "baseForm": "終る",
+          "level": "N5"
+        },
+        {
+          "surface": "えて"
+        },
+        {
+          "surface": "質疑"
+        },
+        {
+          "surface": "応答"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "移る"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "財務"
+        },
+        {
+          "surface": "担当"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "部長"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "厳しい"
+        },
+        {
+          "surface": "指摘"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "飛",
+          "reading": "と",
+          "meaning": "to fly; to hop",
+          "baseForm": "飛ぶ",
+          "level": "N5"
+        },
+        {
+          "surface": "ん"
+        },
+        {
+          "surface": "でき"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "企画"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "独自"
+        },
+        {
+          "surface": "性"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "評価"
+        },
+        {
+          "surface": "できる",
+          "meaning": "to be able to",
+          "baseForm": "できる",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "初年度"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "開発"
+        },
+        {
+          "surface": "費用"
+        },
+        {
+          "surface": "に対する"
+        },
+        {
+          "surface": "投資"
+        },
+        {
+          "surface": "回収"
+        },
+        {
+          "surface": "期間"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "長",
+          "reading": "おさ",
+          "meaning": "chief; head",
+          "baseForm": "長",
+          "level": "N1"
+        },
+        {
+          "surface": "すぎる"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "では",
+          "meaning": "with that...",
+          "baseForm": "では",
+          "level": "N5"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "問"
+        },
+        {
+          "surface": "われ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "私",
+          "reading": "わたくし",
+          "meaning": "(humble) I; myself",
+          "baseForm": "私",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "たじろぐ"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "なく"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "事前"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "用意"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "補足"
+        },
+        {
+          "surface": "スライド"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "データ"
+        },
+        {
+          "surface": "画面"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "素"
+        },
+        {
+          "surface": "早く",
+          "reading": "はやく",
+          "meaning": "early",
+          "baseForm": "早い",
+          "level": "N5"
+        },
+        {
+          "surface": "画面"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "投影"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "ご"
+        },
+        {
+          "surface": "指摘"
+        },
+        {
+          "surface": "の通り",
+          "reading": "のとおり",
+          "meaning": "just as; in accordance with",
+          "baseForm": "の通り",
+          "level": "N4"
+        },
+        {
+          "surface": "初期"
+        },
+        {
+          "surface": "投資"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "かかり"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "クラ"
+        },
+        {
+          "surface": "ウド"
+        },
+        {
+          "surface": "インフラ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "段階"
+        },
+        {
+          "surface": "的"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "導入"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "半年"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "黒字"
+        },
+        {
+          "surface": "化"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "可能"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "根拠"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "示し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "回答"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "発表を終えて質疑応答に移ると、財務担当の部長から厳しい指摘が飛んできました。",
+          "literalEn": "発表 [obj] to finish えて 質疑 応答 [at/to] 移る [with/and] 財務 担当 ['s / of] 部長 [from] 厳しい 指摘 [subj] to fly でき した",
+          "naturalEn": "When the presentation ended and transitioned to Q&A, a sharp critique was fired from the finance department director.",
+          "tokens": [
+            {
+              "surface": "発表"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "終",
+              "reading": "おわ",
+              "meaning": "to finish",
+              "baseForm": "終る",
+              "level": "N5"
+            },
+            {
+              "surface": "えて"
+            },
+            {
+              "surface": "質疑"
+            },
+            {
+              "surface": "応答"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "移る"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "財務"
+            },
+            {
+              "surface": "担当"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "部長"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "厳しい"
+            },
+            {
+              "surface": "指摘"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "飛",
+              "reading": "と",
+              "meaning": "to fly; to hop",
+              "baseForm": "飛ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "ん"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「企画の独自性は評価できるが、初年度の開発費用に対する投資回収期間が長すぎるのではないか」と問われたのです。",
+          "literalEn": "企画 ['s / of] 独自 [topic] 評価 to be able to [subj] 初年度 ['s / of] 開発 費用 に対する 投資 回収 期間 [subj] chief すぎる ['s / of] with that... [not] [?] [with/and] われ [past] ['s / of] [is]",
+          "naturalEn": "He questioned: 'While I praise the originality of the concept, is not the return-on-investment period too protracted against first-year development costs?'",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "企画"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "独自"
+            },
+            {
+              "surface": "性"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "評価"
+            },
+            {
+              "surface": "できる",
+              "meaning": "to be able to",
+              "baseForm": "できる",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "初年度"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "開発"
+            },
+            {
+              "surface": "費用"
+            },
+            {
+              "surface": "に対する"
+            },
+            {
+              "surface": "投資"
+            },
+            {
+              "surface": "回収"
+            },
+            {
+              "surface": "期間"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "長",
+              "reading": "おさ",
+              "meaning": "chief; head",
+              "baseForm": "長",
+              "level": "N1"
+            },
+            {
+              "surface": "すぎる"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "では",
+              "meaning": "with that...",
+              "baseForm": "では",
+              "level": "N5"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "問"
+            },
+            {
+              "surface": "われ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "私はたじろぐことなく、事前に用意していた補足スライドのデータ画面を素早く画面に投影しました。",
+          "literalEn": "I [topic] たじろぐ thing なく 事前 [at/to] 用意 てい [past] 補足 スライド ['s / of] データ 画面 [obj] early 画面 [at/to] 投影 しま した",
+          "naturalEn": "Without flinching, I quickly projected the supplementary data slide prepared in advance onto the screen.",
+          "tokens": [
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "たじろぐ"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "なく"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "事前"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "用意"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "補足"
+            },
+            {
+              "surface": "スライド"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "データ"
+            },
+            {
+              "surface": "画面"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "素"
+            },
+            {
+              "surface": "早く",
+              "reading": "はやく",
+              "meaning": "early",
+              "baseForm": "早い",
+              "level": "N5"
+            },
+            {
+              "surface": "画面"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "投影"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「ご指摘の通り初期投資はかかりますが、クラウドインフラを段階的に導入することで、半年で黒字化が可能です」と根拠を示して回答しました。",
+          "literalEn": "指摘 just as 初期 投資 [topic] かかり [polite] [subj] クラ ウド インフラ [obj] 段階 [at/to] 導入 to do thing [in/by] 半年 [in/by] 黒字 [subj] 可能 [is] [with/and] 根拠 [obj] 示し [and] 回答 しま した",
+          "naturalEn": "'As you rightly point out, initial capital is required; however, by adopting cloud infrastructure in phases, turning profitable within six months is achievable,' I answered with evidence.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "ご"
+            },
+            {
+              "surface": "指摘"
+            },
+            {
+              "surface": "の通り",
+              "reading": "のとおり",
+              "meaning": "just as; in accordance with",
+              "baseForm": "の通り",
+              "level": "N4"
+            },
+            {
+              "surface": "初期"
+            },
+            {
+              "surface": "投資"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "かかり"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "クラ"
+            },
+            {
+              "surface": "ウド"
+            },
+            {
+              "surface": "インフラ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "段階"
+            },
+            {
+              "surface": "的"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "導入"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "半年"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "黒字"
+            },
+            {
+              "surface": "化"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "可能"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "根拠"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "示し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "回答"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "最後に事業部長から「非常によく練られた素晴らしい提案だ。予算を承認するので、来月からの開発を進めてほしい」と承認の言葉をいただきました。張り詰めていた会議室の空気が一気に和らぎ、同僚たちと目を合わせて小さくガッツポーズを交わしました。会議終了後、私は決定事項や今後のスケジュールをまとめた「議事録」を作成し、その日のうちに関係者全員へメールで共有しました。念入りな準備と確固たるデータに基づいた説明があればこそ、人を納得させることができるのだと深く実感しました。",
+      "en": "Finally, the general manager bestowed approval: 'It is an exceptionally well-thought-out, splendid proposal. We approve the budget, so proceed with development starting next month.' The tense atmosphere of the boardroom softened at once, and exchanging subtle fist pumps with colleagues, relief washed over us. Following the meeting, I drafted the 'meeting minutes' summarizing decisions and future schedules, sharing them by email to all stakeholders that same day. I acutely realized that it is precisely thorough preparation and evidence-based explanations that possess the true power to convince others.",
+      "tokens": [
+        {
+          "surface": "最後",
+          "reading": "さいご",
+          "meaning": "last; end",
+          "baseForm": "最後",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "事業"
+        },
+        {
+          "surface": "部長"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "非常"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "よく",
+          "meaning": "often; well",
+          "baseForm": "よく",
+          "level": "N5"
+        },
+        {
+          "surface": "練"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "素晴らしい",
+          "reading": "すばらしい",
+          "meaning": "wonderful; splendid; magnificent",
+          "baseForm": "素晴らしい",
+          "level": "N4"
+        },
+        {
+          "surface": "提案"
+        },
+        {
+          "surface": "だ"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "予算"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "承認"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "ので"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "来月"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "開発"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "進",
+          "reading": "すす",
+          "meaning": "to make progress",
+          "baseForm": "進む",
+          "level": "N4"
+        },
+        {
+          "surface": "め"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "ほしい"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "承認"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "言葉",
+          "reading": "ことば",
+          "meaning": "word; language",
+          "baseForm": "言葉",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "いただき"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "張り"
+        },
+        {
+          "surface": "詰め"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "会議"
+        },
+        {
+          "surface": "室"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "空気"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "一気に"
+        },
+        {
+          "surface": "和"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "ぎ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "同僚",
+          "reading": "どうりょう",
+          "meaning": "coworker; colleague; associate",
+          "baseForm": "同僚",
+          "level": "N3"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "目",
+          "reading": "め",
+          "meaning": "eye",
+          "baseForm": "目",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "合わせ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "小"
+        },
+        {
+          "surface": "さく"
+        },
+        {
+          "surface": "ガッツポーズ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "交"
+        },
+        {
+          "surface": "わ"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "会議"
+        },
+        {
+          "surface": "終了"
+        },
+        {
+          "surface": "後",
+          "reading": "あと",
+          "meaning": "afterwards",
+          "baseForm": "後",
+          "level": "N5"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "私",
+          "reading": "わたくし",
+          "meaning": "(humble) I; myself",
+          "baseForm": "私",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "決定"
+        },
+        {
+          "surface": "事項"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "今後"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "スケジュール"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "まとめ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "議事"
+        },
+        {
+          "surface": "録"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "作成"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "その日"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "うち",
+          "meaning": "within",
+          "baseForm": "うち",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "関係"
+        },
+        {
+          "surface": "者"
+        },
+        {
+          "surface": "全員"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "メール"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "共有"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "念入り"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "準備"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "確固たる"
+        },
+        {
+          "surface": "データ"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "基"
+        },
+        {
+          "surface": "づ"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "説明",
+          "reading": "せつめい",
+          "meaning": "explanation",
+          "baseForm": "説明",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "あれ"
+        },
+        {
+          "surface": "ば"
+        },
+        {
+          "surface": "こそ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "meaning": "person",
+          "baseForm": "人",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "納得"
+        },
+        {
+          "surface": "させる"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "できる",
+          "meaning": "to be able to",
+          "baseForm": "できる",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "だ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "深",
+          "reading": "ふか",
+          "meaning": "deep",
+          "baseForm": "深い",
+          "level": "N4"
+        },
+        {
+          "surface": "く"
+        },
+        {
+          "surface": "実感"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "最後に事業部長から「非常によく練られた素晴らしい提案だ。予算を承認するので、来月からの開発を進めてほしい」と承認の言葉をいただきました。",
+          "literalEn": "last [at/to] 事業 部長 [from] 非常 [at/to] often [past] wonderful 提案 [is] 予算 [obj] 承認 to do ので 来月 [from] ['s / of] 開発 [obj] to make progress [and] ほしい [with/and] 承認 ['s / of] word [obj] いただき した",
+          "naturalEn": "Finally, the general manager bestowed approval: 'It is an exceptionally well-thought-out, splendid proposal. We approve the budget, so proceed with development starting next month.'",
+          "tokens": [
+            {
+              "surface": "最後",
+              "reading": "さいご",
+              "meaning": "last; end",
+              "baseForm": "最後",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "事業"
+            },
+            {
+              "surface": "部長"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "非常"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "よく",
+              "meaning": "often; well",
+              "baseForm": "よく",
+              "level": "N5"
+            },
+            {
+              "surface": "練"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "素晴らしい",
+              "reading": "すばらしい",
+              "meaning": "wonderful; splendid; magnificent",
+              "baseForm": "素晴らしい",
+              "level": "N4"
+            },
+            {
+              "surface": "提案"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "。"
+            },
+            {
+              "surface": "予算"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "承認"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "ので"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "来月"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "開発"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "進",
+              "reading": "すす",
+              "meaning": "to make progress",
+              "baseForm": "進む",
+              "level": "N4"
+            },
+            {
+              "surface": "め"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "ほしい"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "承認"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "言葉",
+              "reading": "ことば",
+              "meaning": "word; language",
+              "baseForm": "言葉",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "いただき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "張り詰めていた会議室の空気が一気に和らぎ、同僚たちと目を合わせて小さくガッツポーズを交わしました。",
+          "literalEn": "張り 詰め てい [past] 会議 ['s / of] 空気 [subj] 一気に coworker たち [with/and] eye [obj] 合わせ [and] さく ガッツポーズ [obj] しま した",
+          "naturalEn": "The tense atmosphere of the boardroom softened at once, and exchanging subtle fist pumps with colleagues, relief washed over us.",
+          "tokens": [
+            {
+              "surface": "張り"
+            },
+            {
+              "surface": "詰め"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "会議"
+            },
+            {
+              "surface": "室"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "空気"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "一気に"
+            },
+            {
+              "surface": "和"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "ぎ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "同僚",
+              "reading": "どうりょう",
+              "meaning": "coworker; colleague; associate",
+              "baseForm": "同僚",
+              "level": "N3"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "目",
+              "reading": "め",
+              "meaning": "eye",
+              "baseForm": "目",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "合わせ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "小"
+            },
+            {
+              "surface": "さく"
+            },
+            {
+              "surface": "ガッツポーズ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "交"
+            },
+            {
+              "surface": "わ"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "会議終了後、私は決定事項や今後のスケジュールをまとめた「議事録」を作成し、その日のうちに関係者全員へメールで共有しました。",
+          "literalEn": "会議 終了 afterwards  I [topic] 決定 事項 今後 ['s / of] スケジュール [obj] まとめ [past] 議事 [obj] 作成 その日 ['s / of] within [at/to] 関係 全員 [toward] メール [in/by] 共有 しま した",
+          "naturalEn": "Following the meeting, I drafted the 'meeting minutes' summarizing decisions and future schedules, sharing them by email to all stakeholders that same day.",
+          "tokens": [
+            {
+              "surface": "会議"
+            },
+            {
+              "surface": "終了"
+            },
+            {
+              "surface": "後",
+              "reading": "あと",
+              "meaning": "afterwards",
+              "baseForm": "後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "決定"
+            },
+            {
+              "surface": "事項"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "今後"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "スケジュール"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "まとめ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "議事"
+            },
+            {
+              "surface": "録"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "作成"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "その日"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "うち",
+              "meaning": "within",
+              "baseForm": "うち",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "関係"
+            },
+            {
+              "surface": "者"
+            },
+            {
+              "surface": "全員"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "メール"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "共有"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "念入りな準備と確固たるデータに基づいた説明があればこそ、人を納得させることができるのだと深く実感しました。",
+          "literalEn": "念入り 準備 [with/and] 確固たる データ [at/to] [past] explanation [subj] あれ こそ person [obj] 納得 させる thing [subj] to be able to ['s / of] [is] [with/and] deep 実感 しま した",
+          "naturalEn": "I acutely realized that it is precisely thorough preparation and evidence-based explanations that possess the true power to convince others.",
+          "tokens": [
+            {
+              "surface": "念入り"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "準備"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "確固たる"
+            },
+            {
+              "surface": "データ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "基"
+            },
+            {
+              "surface": "づ"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "説明",
+              "reading": "せつめい",
+              "meaning": "explanation",
+              "baseForm": "説明",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "あれ"
+            },
+            {
+              "surface": "ば"
+            },
+            {
+              "surface": "こそ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "納得"
+            },
+            {
+              "surface": "させる"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "できる",
+              "meaning": "to be able to",
+              "baseForm": "できる",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "深",
+              "reading": "ふか",
+              "meaning": "deep",
+              "baseForm": "深い",
+              "level": "N4"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "実感"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "責任あるプロジェクトを成功させるため、チーム一丸となって新たな挑戦へ力強く踏み出す決意を固めました。自らの提案が会社を動かす原動力となる手応えを感じ、ビジネスパーソンとしての大きな成長を実感しています。",
+      "en": "To make this responsible project a resounding triumph, I solidified my determination to step vigorously into new challenges united as a team. Feeling the tangible reward of my own proposal becoming a driving engine that moves the company, I acutely appreciate my immense growth as a business professional.",
+      "tokens": [
+        {
+          "surface": "責任"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "プロジェクト"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "成功",
+          "reading": "せいこう",
+          "meaning": "success; hit",
+          "baseForm": "成功",
+          "level": "N3"
+        },
+        {
+          "surface": "させる"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "チーム",
+          "meaning": "team",
+          "baseForm": "チーム",
+          "level": "N3"
+        },
+        {
+          "surface": "一丸"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "新た"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "挑戦"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "力",
+          "reading": "ちから",
+          "meaning": "strength; power",
+          "baseForm": "力",
+          "level": "N4"
+        },
+        {
+          "surface": "強",
+          "reading": "つよ",
+          "meaning": "powerful",
+          "baseForm": "強い",
+          "level": "N5"
+        },
+        {
+          "surface": "く"
+        },
+        {
+          "surface": "踏み出す"
+        },
+        {
+          "surface": "決意",
+          "reading": "けつい",
+          "meaning": "decision; determination",
+          "baseForm": "決意",
+          "level": "N1"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "固め"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "自ら"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "提案"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "会社",
+          "reading": "かいしゃ",
+          "meaning": "company",
+          "baseForm": "会社",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "動かす"
+        },
+        {
+          "surface": "原動力"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "なる",
+          "meaning": "to become",
+          "baseForm": "なる",
+          "level": "N5"
+        },
+        {
+          "surface": "手応え"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "感じ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "ビジネス"
+        },
+        {
+          "surface": "パー"
+        },
+        {
+          "surface": "ソン"
+        },
+        {
+          "surface": "として"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "大きな",
+          "reading": "おおきな",
+          "meaning": "big",
+          "baseForm": "大きな",
+          "level": "N5"
+        },
+        {
+          "surface": "成長"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "実感"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "責任あるプロジェクトを成功させるため、チーム一丸となって新たな挑戦へ力強く踏み出す決意を固めました。",
+          "literalEn": "責任 to be プロジェクト [obj] success させる ため team 一丸 [with/and] って 新た 挑戦 [toward] strength powerful 踏み出す decision [obj] 固め した",
+          "naturalEn": "To make this responsible project a resounding triumph, I solidified my determination to step vigorously into new challenges united as a team.",
+          "tokens": [
+            {
+              "surface": "責任"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "プロジェクト"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "成功",
+              "reading": "せいこう",
+              "meaning": "success; hit",
+              "baseForm": "成功",
+              "level": "N3"
+            },
+            {
+              "surface": "させる"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "チーム",
+              "meaning": "team",
+              "baseForm": "チーム",
+              "level": "N3"
+            },
+            {
+              "surface": "一丸"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "新た"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "挑戦"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "力",
+              "reading": "ちから",
+              "meaning": "strength; power",
+              "baseForm": "力",
+              "level": "N4"
+            },
+            {
+              "surface": "強",
+              "reading": "つよ",
+              "meaning": "powerful",
+              "baseForm": "強い",
+              "level": "N5"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "踏み出す"
+            },
+            {
+              "surface": "決意",
+              "reading": "けつい",
+              "meaning": "decision; determination",
+              "baseForm": "決意",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "固め"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "自らの提案が会社を動かす原動力となる手応えを感じ、ビジネスパーソンとしての大きな成長を実感しています。",
+          "literalEn": "自ら ['s / of] 提案 [subj] company [obj] 動かす 原動力 [with/and] to become 手応え [obj] 感じ ビジネス パー ソン として ['s / of] big 成長 [obj] 実感 てい [polite]",
+          "naturalEn": "Feeling the tangible reward of my own proposal becoming a driving engine that moves the company, I acutely appreciate my immense growth as a business professional.",
+          "tokens": [
+            {
+              "surface": "自ら"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "提案"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "会社",
+              "reading": "かいしゃ",
+              "meaning": "company",
+              "baseForm": "会社",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "動かす"
+            },
+            {
+              "surface": "原動力"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "なる",
+              "meaning": "to become",
+              "baseForm": "なる",
+              "level": "N5"
+            },
+            {
+              "surface": "手応え"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "感じ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ビジネス"
+            },
+            {
+              "surface": "パー"
+            },
+            {
+              "surface": "ソン"
+            },
+            {
+              "surface": "として"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "大きな",
+              "reading": "おおきな",
+              "meaning": "big",
+              "baseForm": "大きな",
+              "level": "N5"
+            },
+            {
+              "surface": "成長"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "実感"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "質疑応答において財務部長から開発コストの回収期間について厳しい指摘を受けた際、発表者はどのように対応しましたか。",
+      "questionEn": "How did the presenter handle the sharp critique from the finance director regarding the ROI payback period?",
+      "options": [
+        "事前に用意していた補足データを示し、クラウドの段階導入で半年で黒字化できる根拠を説明した",
+        "答えに詰まってしまい、その場で泣き出してしまった",
+        "指摘を無視して次の質問者に話を振った",
+        "開発費を半分に減らすとその場で勝手に約束した"
+      ],
+      "optionsEn": [
+        "Projected supplementary data prepared in advance, demonstrating profitability in six months via phased cloud deployment",
+        "Became tongue-tied and broke down into tears on the spot",
+        "Ignored the critique and pivoted to the next questioner",
+        "Arbitrarily promised on the spot to slash development costs in half"
+      ],
+      "answerIndex": 0,
+      "explanation": "想定問答として補足資料を準備していたため、根拠のある数値を示して冷静に納得させることができました。"
+    },
+    {
+      "question": "会議終了後、発表者がその日のうちに速やかに行った業務は何ですか。",
+      "questionEn": "What task did the presenter swiftly execute that very day following the conclusion of the meeting?",
+      "options": [
+        "決定事項や今後のスケジュールをまとめた議事録を作成し、関係者全員へメールで共有した",
+        "打ち上げのために同僚を連れて飲み会に行った",
+        "プレゼン資料をすべてゴミ箱に破棄した",
+        "疲れたので上司に言わずにそのまま帰宅した"
+      ],
+      "optionsEn": [
+        "Drafted meeting minutes summarizing decisions and schedules, sharing them via email to all stakeholders",
+        "Took colleagues out for an evening drinking party celebration",
+        "Discarded all presentation slides into the trash bin",
+        "Went straight home without informing the supervisor because of exhaustion"
+      ],
+      "answerIndex": 0,
+      "explanation": "ビジネスの基本として、会議での合意事項を忘れないうちに「議事録」として速やかにまとめて共有しました。"
+    },
+    {
+      "question": "このプレゼンテーションの成功を通じて語り手が実感した教訓は何ですか。",
+      "questionEn": "What key lesson did the narrator appreciate through the success of this presentation?",
+      "options": [
+        "念入りな事前準備と確固たるデータに基づいた説明こそが人を納得させるということ",
+        "声の大きさが一番重要であり、データは適当で良いということ",
+        "上司にゴマをすっていればどんな企画でも通るということ",
+        "プレゼンテーションはできるだけ短くして喋らない方が良いということ"
+      ],
+      "optionsEn": [
+        "That thorough advance preparation and evidence-based explanations possess the power to convince people",
+        "That volume of voice is most important and data can be careless",
+        "That flattering the boss guarantees any proposal will pass",
+        "That presentations should be kept as short as possible with minimal speaking"
+      ],
+      "answerIndex": 0,
+      "explanation": "十分な市場調査と想定質問へのデータ準備こそが、ビジネスにおける提案を成功に導く最大の要因です。"
+    }
+  ]
+}

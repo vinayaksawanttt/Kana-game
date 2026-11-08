@@ -21,6 +21,7 @@ export interface InstantReplyOptionData {
 export interface InstantReplyItem {
   id: string;
   jlpt: 5 | 4 | 3 | 2 | 1;
+  category: "quick-response" | "situational-utterance";
   situationContext: string;
   speakerRole: string;
   promptJa: string;
@@ -151,6 +152,7 @@ async function main() {
     return {
       id: raw.id,
       jlpt: raw.jlpt,
+      category: raw.category ?? "quick-response",
       situationContext: raw.situationContext,
       speakerRole: raw.speakerRole,
       promptJa,
@@ -203,6 +205,7 @@ export interface InstantReplyOptionData {
 export interface InstantReplyItem {
   id: string;
   jlpt: 5 | 4 | 3 | 2 | 1;
+  category: "quick-response" | "situational-utterance";
   situationContext: string;
   speakerRole: string;
   promptJa: string;

@@ -1,0 +1,4616 @@
+{
+  "id": "story-n3-bleach",
+  "title": "ブリーチ：死神代行と魂の導き",
+  "titleRomaji": "Buriichi: Shinigami Daikou to Tamashii no Michibiki",
+  "titleEn": "Bleach: Substitute Soul Reaper and Guidance of Souls",
+  "level": "N3",
+  "category": "Anime & Pop Culture",
+  "tags": [
+    "Anime",
+    "N3",
+    "Supernatural",
+    "Swords",
+    "Soul Reaper"
+  ],
+  "paragraphs": [
+    {
+      "ja": "高校生の一護は、幼い頃から人には見えない幽霊が自然と見えてしまう特異な体質の持ち主でした。彼は普段通り不良のように見られがちでしたが、困っている霊を見ると放っておけない優しい性格でした。ある平穏な夜、彼の部屋の窓から黒い着物を着た謎めいた少女が静かに忍び込んできました。彼女の名はルキアといい、迷える魂を整えてあの世へ送る役目を担う死神だと名乗りました。",
+      "en": "High schooler Ichigo possessed an unusual constitution that allowed him to see wandering ghosts unseen by ordinary people. Though often misperceived as a delinquent on the surface, he was fundamentally kind-hearted and unable to ignore troubled spirits. One calm night, an enigmatic young girl clad in black robes quietly stepped through the window of his bedroom. She introduced herself as Rukia, a Soul Reaper whose sacred duty was to guide lost souls safely to the afterlife.",
+      "tokens": [
+        {
+          "surface": "高校生"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "一",
+          "reading": "いち",
+          "meaning": "one",
+          "baseForm": "一",
+          "level": "N5"
+        },
+        {
+          "surface": "護"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "幼い"
+        },
+        {
+          "surface": "頃"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "meaning": "person",
+          "baseForm": "人",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "見え",
+          "reading": "みえ",
+          "meaning": "to see; to watch",
+          "baseForm": "見る",
+          "level": "N5"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "幽霊"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "自然"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "見え",
+          "reading": "みえ",
+          "meaning": "to see; to watch",
+          "baseForm": "見る",
+          "level": "N5"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "しまう"
+        },
+        {
+          "surface": "特異"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "体質"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "持ち主"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "普段"
+        },
+        {
+          "surface": "通り",
+          "reading": "とおり",
+          "meaning": "in accordance with ~; following ~; ~ Street",
+          "baseForm": "通り",
+          "level": "N3"
+        },
+        {
+          "surface": "不良"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "よう"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "見",
+          "reading": "み",
+          "meaning": "to see; to watch",
+          "baseForm": "見る",
+          "level": "N5"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "がち"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "困",
+          "reading": "こま",
+          "meaning": "to be worried",
+          "baseForm": "困る",
+          "level": "N5"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "いる",
+          "meaning": "to be; to have (used for people and animals)",
+          "baseForm": "いる",
+          "level": "N5"
+        },
+        {
+          "surface": "霊"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "見る",
+          "reading": "みる",
+          "meaning": "to see; to watch",
+          "baseForm": "見る",
+          "level": "N5"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "放",
+          "reading": "はな",
+          "meaning": "to separate; to set free",
+          "baseForm": "放す",
+          "level": "N3"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "お"
+        },
+        {
+          "surface": "け"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "優しい",
+          "reading": "やさしい",
+          "meaning": "kind",
+          "baseForm": "優しい",
+          "level": "N4"
+        },
+        {
+          "surface": "性格",
+          "reading": "せいかく",
+          "meaning": "character; personality",
+          "baseForm": "性格",
+          "level": "N3"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "平穏"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "夜",
+          "reading": "よる",
+          "meaning": "evening; night",
+          "baseForm": "夜",
+          "level": "N5"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "meaning": "room",
+          "baseForm": "部屋",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "窓",
+          "reading": "まど",
+          "meaning": "window",
+          "baseForm": "窓",
+          "level": "N5"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "黒い"
+        },
+        {
+          "surface": "着物"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "着",
+          "reading": "ちゃく",
+          "meaning": "counter for suits of clothing; arriving at ..",
+          "baseForm": "着",
+          "level": "N1"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "謎"
+        },
+        {
+          "surface": "めい"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "少女"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "meaning": "quiet",
+          "baseForm": "静か",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "忍び"
+        },
+        {
+          "surface": "込"
+        },
+        {
+          "surface": "ん"
+        },
+        {
+          "surface": "でき"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "彼女",
+          "reading": "かのじょ",
+          "meaning": "she; girlfriend",
+          "baseForm": "彼女",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "名"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "ルキア"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "いい",
+          "meaning": "good",
+          "baseForm": "いい",
+          "level": "N5"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "迷",
+          "reading": "まよ",
+          "meaning": "astray, be perplexed, err",
+          "baseForm": "迷",
+          "level": "N3"
+        },
+        {
+          "surface": "える"
+        },
+        {
+          "surface": "魂"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "整"
+        },
+        {
+          "surface": "えて"
+        },
+        {
+          "surface": "あの世"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "送る"
+        },
+        {
+          "surface": "役目"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "担う"
+        },
+        {
+          "surface": "死神"
+        },
+        {
+          "surface": "だ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "名乗り"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "高校生の一護は、幼い頃から人には見えない幽霊が自然と見えてしまう特異な体質の持ち主でした。",
+          "literalEn": "高校生 ['s / of] one [topic] 幼い [from] person [at/to] [topic] to see [not] 幽霊 [subj] 自然 [with/and] to see [and] しまう 特異 体質 ['s / of] 持ち主 [in/by] した",
+          "naturalEn": "High schooler Ichigo possessed an unusual constitution that allowed him to see wandering ghosts unseen by ordinary people.",
+          "tokens": [
+            {
+              "surface": "高校生"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "一",
+              "reading": "いち",
+              "meaning": "one",
+              "baseForm": "一",
+              "level": "N5"
+            },
+            {
+              "surface": "護"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "幼い"
+            },
+            {
+              "surface": "頃"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "見え",
+              "reading": "みえ",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "幽霊"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "自然"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "見え",
+              "reading": "みえ",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "しまう"
+            },
+            {
+              "surface": "特異"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "体質"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "持ち主"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼は普段通り不良のように見られがちでしたが、困っている霊を見ると放っておけない優しい性格でした。",
+          "literalEn": "he [topic] 普段 in accordance with ~ 不良 ['s / of] よう [at/to] to see がち [in/by] した [subj] to be worried って to be [obj] to see [with/and] to separate って [not] kind character [in/by] した",
+          "naturalEn": "Though often misperceived as a delinquent on the surface, he was fundamentally kind-hearted and unable to ignore troubled spirits.",
+          "tokens": [
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "普段"
+            },
+            {
+              "surface": "通り",
+              "reading": "とおり",
+              "meaning": "in accordance with ~; following ~; ~ Street",
+              "baseForm": "通り",
+              "level": "N3"
+            },
+            {
+              "surface": "不良"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "がち"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "困",
+              "reading": "こま",
+              "meaning": "to be worried",
+              "baseForm": "困る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "霊"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見る",
+              "reading": "みる",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "放",
+              "reading": "はな",
+              "meaning": "to separate; to set free",
+              "baseForm": "放す",
+              "level": "N3"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "優しい",
+              "reading": "やさしい",
+              "meaning": "kind",
+              "baseForm": "優しい",
+              "level": "N4"
+            },
+            {
+              "surface": "性格",
+              "reading": "せいかく",
+              "meaning": "character; personality",
+              "baseForm": "性格",
+              "level": "N3"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ある平穏な夜、彼の部屋の窓から黒い着物を着た謎めいた少女が静かに忍び込んできました。",
+          "literalEn": "to be 平穏 evening he ['s / of] room ['s / of] window [from] 黒い 着物 [obj] counter for suits of clothing [past] めい [past] 少女 [subj] quiet [at/to] 忍び でき した",
+          "naturalEn": "One calm night, an enigmatic young girl clad in black robes quietly stepped through the window of his bedroom.",
+          "tokens": [
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "平穏"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "夜",
+              "reading": "よる",
+              "meaning": "evening; night",
+              "baseForm": "夜",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "部屋",
+              "reading": "へや",
+              "meaning": "room",
+              "baseForm": "部屋",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "窓",
+              "reading": "まど",
+              "meaning": "window",
+              "baseForm": "窓",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "黒い"
+            },
+            {
+              "surface": "着物"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "着",
+              "reading": "ちゃく",
+              "meaning": "counter for suits of clothing; arriving at ..",
+              "baseForm": "着",
+              "level": "N1"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "謎"
+            },
+            {
+              "surface": "めい"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "少女"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "静か",
+              "reading": "しずか",
+              "meaning": "quiet",
+              "baseForm": "静か",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "忍び"
+            },
+            {
+              "surface": "込"
+            },
+            {
+              "surface": "ん"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼女の名はルキアといい、迷える魂を整えてあの世へ送る役目を担う死神だと名乗りました。",
+          "literalEn": "she ['s / of] [topic] ルキア [with/and] good astray える [obj] えて あの世 [toward] 送る 役目 [obj] 担う 死神 [is] [with/and] 名乗り した",
+          "naturalEn": "She introduced herself as Rukia, a Soul Reaper whose sacred duty was to guide lost souls safely to the afterlife.",
+          "tokens": [
+            {
+              "surface": "彼女",
+              "reading": "かのじょ",
+              "meaning": "she; girlfriend",
+              "baseForm": "彼女",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "名"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "ルキア"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "いい",
+              "meaning": "good",
+              "baseForm": "いい",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "迷",
+              "reading": "まよ",
+              "meaning": "astray, be perplexed, err",
+              "baseForm": "迷",
+              "level": "N3"
+            },
+            {
+              "surface": "える"
+            },
+            {
+              "surface": "魂"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "整"
+            },
+            {
+              "surface": "えて"
+            },
+            {
+              "surface": "あの世"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "送る"
+            },
+            {
+              "surface": "役目"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "担う"
+            },
+            {
+              "surface": "死神"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "名乗り"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "その時、人間の魂を貪り食う恐ろしい悪霊である虚が、一護の家族を標的にして襲来しました。家族を守ろうとしたルキアは重傷を負ってしまい、もはや刀を握って戦う力を失いかけていました。家族を救うためには、一護が死神の力をルキアから受け取るしか選択肢が残されていませんでした。覚悟を決めて刀の切っ先を胸に突き刺した瞬間、彼は並外れた霊力を持つ死神代行へと姿を変えました。",
+      "en": "Just then, a monstrous evil spirit called a Hollow that devours human souls descended, targeting Ichigo's household. Shielding his family, Rukia sustained grave injuries and was rapidly losing the physical strength to wield her blade. In order to save his beloved family, no choice remained other than for Ichigo to absorb Rukia's Soul Reaper powers. The moment he steeled his resolve and accepted the blade's tip into his chest, he transformed into a Substitute Soul Reaper of immense spiritual pressure.",
+      "tokens": [
+        {
+          "surface": "その時",
+          "reading": "そのとき",
+          "meaning": "at that time",
+          "baseForm": "その時",
+          "level": "N5"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "人間"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "魂"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "貪"
+        },
+        {
+          "surface": "り"
+        },
+        {
+          "surface": "食う"
+        },
+        {
+          "surface": "恐ろしい",
+          "reading": "おそろしい",
+          "meaning": "terrible; dreadful",
+          "baseForm": "恐ろしい",
+          "level": "N3"
+        },
+        {
+          "surface": "悪霊"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "虚"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "一",
+          "reading": "いち",
+          "meaning": "one",
+          "baseForm": "一",
+          "level": "N5"
+        },
+        {
+          "surface": "護"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "meaning": "family",
+          "baseForm": "家族",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "標的"
+        },
+        {
+          "surface": "にし"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "襲来"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "meaning": "family",
+          "baseForm": "家族",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "守"
+        },
+        {
+          "surface": "ろうと"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "ルキア"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "重傷"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "負"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "もはや"
+        },
+        {
+          "surface": "刀",
+          "reading": "かたな",
+          "meaning": "sword; saber; knife",
+          "baseForm": "刀",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "握"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "戦う",
+          "reading": "たたかう",
+          "meaning": "to fight; to battle; to combat",
+          "baseForm": "戦う",
+          "level": "N3"
+        },
+        {
+          "surface": "力",
+          "reading": "ちから",
+          "meaning": "strength; power",
+          "baseForm": "力",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "失"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "かけ"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "meaning": "family",
+          "baseForm": "家族",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "救う"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "一",
+          "reading": "いち",
+          "meaning": "one",
+          "baseForm": "一",
+          "level": "N5"
+        },
+        {
+          "surface": "護"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "死神"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "力",
+          "reading": "ちから",
+          "meaning": "strength; power",
+          "baseForm": "力",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "ルキア"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "受け取る",
+          "reading": "うけとる",
+          "meaning": "to receive; to get; to accept",
+          "baseForm": "受け取る",
+          "level": "N3"
+        },
+        {
+          "surface": "しか"
+        },
+        {
+          "surface": "選択肢"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "残"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "せん"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "覚悟"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "決め",
+          "reading": "ケツめ",
+          "meaning": "decide, agree upon, appoint",
+          "baseForm": "決",
+          "level": "N3"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "刀",
+          "reading": "かたな",
+          "meaning": "sword; saber; knife",
+          "baseForm": "刀",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "切っ先"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "胸"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "突き"
+        },
+        {
+          "surface": "刺",
+          "reading": "とげ",
+          "meaning": "thorn; splinter; spine",
+          "baseForm": "刺",
+          "level": "N1"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "瞬間",
+          "reading": "しゅんかん",
+          "meaning": "moment; second; instant",
+          "baseForm": "瞬間",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "並",
+          "reading": "なら",
+          "meaning": "to line up; to stand in a line",
+          "baseForm": "並ぶ",
+          "level": "N5"
+        },
+        {
+          "surface": "外れ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "霊力"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "持つ"
+        },
+        {
+          "surface": "死神"
+        },
+        {
+          "surface": "代行"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "姿",
+          "reading": "すがた",
+          "meaning": "figure; shape; appearance",
+          "baseForm": "姿",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "変",
+          "reading": "へん",
+          "meaning": "strange",
+          "baseForm": "変",
+          "level": "N4"
+        },
+        {
+          "surface": "え"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "その時、人間の魂を貪り食う恐ろしい悪霊である虚が、一護の家族を標的にして襲来しました。",
+          "literalEn": "at that time 人間 ['s / of] [obj] 食う terrible 悪霊 [in/by] to be [subj] one ['s / of] family [obj] 標的 にし [and] 襲来 しま した",
+          "naturalEn": "Just then, a monstrous evil spirit called a Hollow that devours human souls descended, targeting Ichigo's household.",
+          "tokens": [
+            {
+              "surface": "その時",
+              "reading": "そのとき",
+              "meaning": "at that time",
+              "baseForm": "その時",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "人間"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "魂"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "貪"
+            },
+            {
+              "surface": "り"
+            },
+            {
+              "surface": "食う"
+            },
+            {
+              "surface": "恐ろしい",
+              "reading": "おそろしい",
+              "meaning": "terrible; dreadful",
+              "baseForm": "恐ろしい",
+              "level": "N3"
+            },
+            {
+              "surface": "悪霊"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "虚"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "一",
+              "reading": "いち",
+              "meaning": "one",
+              "baseForm": "一",
+              "level": "N5"
+            },
+            {
+              "surface": "護"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "家族",
+              "reading": "かぞく",
+              "meaning": "family",
+              "baseForm": "家族",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "標的"
+            },
+            {
+              "surface": "にし"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "襲来"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "家族を守ろうとしたルキアは重傷を負ってしまい、もはや刀を握って戦う力を失いかけていました。",
+          "literalEn": "family [obj] ろうと した ルキア [topic] 重傷 [obj] って しま もはや sword [obj] って to fight strength [obj] かけ てい した",
+          "naturalEn": "Shielding his family, Rukia sustained grave injuries and was rapidly losing the physical strength to wield her blade.",
+          "tokens": [
+            {
+              "surface": "家族",
+              "reading": "かぞく",
+              "meaning": "family",
+              "baseForm": "家族",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "守"
+            },
+            {
+              "surface": "ろうと"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "ルキア"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "重傷"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "負"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "もはや"
+            },
+            {
+              "surface": "刀",
+              "reading": "かたな",
+              "meaning": "sword; saber; knife",
+              "baseForm": "刀",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "握"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "戦う",
+              "reading": "たたかう",
+              "meaning": "to fight; to battle; to combat",
+              "baseForm": "戦う",
+              "level": "N3"
+            },
+            {
+              "surface": "力",
+              "reading": "ちから",
+              "meaning": "strength; power",
+              "baseForm": "力",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "失"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "かけ"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "家族を救うためには、一護が死神の力をルキアから受け取るしか選択肢が残されていませんでした。",
+          "literalEn": "family [obj] 救う ため [at/to] [topic] one [subj] 死神 ['s / of] strength [obj] ルキア [from] to receive しか 選択肢 [subj] てい せん [in/by] した",
+          "naturalEn": "In order to save his beloved family, no choice remained other than for Ichigo to absorb Rukia's Soul Reaper powers.",
+          "tokens": [
+            {
+              "surface": "家族",
+              "reading": "かぞく",
+              "meaning": "family",
+              "baseForm": "家族",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "救う"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "一",
+              "reading": "いち",
+              "meaning": "one",
+              "baseForm": "一",
+              "level": "N5"
+            },
+            {
+              "surface": "護"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "死神"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "力",
+              "reading": "ちから",
+              "meaning": "strength; power",
+              "baseForm": "力",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "ルキア"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "受け取る",
+              "reading": "うけとる",
+              "meaning": "to receive; to get; to accept",
+              "baseForm": "受け取る",
+              "level": "N3"
+            },
+            {
+              "surface": "しか"
+            },
+            {
+              "surface": "選択肢"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "残"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "覚悟を決めて刀の切っ先を胸に突き刺した瞬間、彼は並外れた霊力を持つ死神代行へと姿を変えました。",
+          "literalEn": "覚悟 [obj] decide [and] sword ['s / of] 切っ先 [obj] [at/to] 突き thorn した moment he [topic] to line up 外れ [past] 霊力 [obj] 持つ 死神 代行 [toward] [with/and] figure [obj] strange した",
+          "naturalEn": "The moment he steeled his resolve and accepted the blade's tip into his chest, he transformed into a Substitute Soul Reaper of immense spiritual pressure.",
+          "tokens": [
+            {
+              "surface": "覚悟"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "決め",
+              "reading": "ケツめ",
+              "meaning": "decide, agree upon, appoint",
+              "baseForm": "決",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "刀",
+              "reading": "かたな",
+              "meaning": "sword; saber; knife",
+              "baseForm": "刀",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "切っ先"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "胸"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "突き"
+            },
+            {
+              "surface": "刺",
+              "reading": "とげ",
+              "meaning": "thorn; splinter; spine",
+              "baseForm": "刺",
+              "level": "N1"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "瞬間",
+              "reading": "しゅんかん",
+              "meaning": "moment; second; instant",
+              "baseForm": "瞬間",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "並",
+              "reading": "なら",
+              "meaning": "to line up; to stand in a line",
+              "baseForm": "並ぶ",
+              "level": "N5"
+            },
+            {
+              "surface": "外れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "霊力"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "持つ"
+            },
+            {
+              "surface": "死神"
+            },
+            {
+              "surface": "代行"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "姿",
+              "reading": "すがた",
+              "meaning": "figure; shape; appearance",
+              "baseForm": "姿",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "変",
+              "reading": "へん",
+              "meaning": "strange",
+              "baseForm": "変",
+              "level": "N4"
+            },
+            {
+              "surface": "え"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "手にした巨大な斬魄刀を一振りするだけで、一護は見事に恐ろしい虚を両断して家族を守り抜きました。しかし力を失ってしまったルキアを助けるため、彼は現世で死神代行としての務めを果たすことになりました。日中は普通の学生生活を送りつつ、放課後になると街に現れる凶悪な霊と戦う二重生活が始まりました。戦いを重ねるうちに、井上織姫や茶渡といったクラスメイトたちも自らの不思議な能力に目覚めていきました。",
+      "en": "With a solitary swing of the colossal Zanpakutō blade in his grip, Ichigo cleanly severed the terrifying Hollow, protecting his family. However, to assist the temporarily weakened Rukia, he was obliged to take up the mantle of a Substitute Soul Reaper in the living world. While attending ordinary high school during daytime hours, a double life commenced as he battled malicious spirits haunting the town after school. Through continuous combat, classmates like Orihime Inoue and Chad likewise awakened to their own extraordinary abilities.",
+      "tokens": [
+        {
+          "surface": "手",
+          "reading": "て",
+          "meaning": "hand",
+          "baseForm": "手",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "巨大",
+          "reading": "きょだい",
+          "meaning": "huge; gigantic; enormous",
+          "baseForm": "巨大",
+          "level": "N3"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "斬",
+          "reading": "き",
+          "meaning": "to behead; to murder",
+          "baseForm": "斬る",
+          "level": "N2"
+        },
+        {
+          "surface": "魄"
+        },
+        {
+          "surface": "刀",
+          "reading": "かたな",
+          "meaning": "sword; saber; knife",
+          "baseForm": "刀",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "一",
+          "reading": "いち",
+          "meaning": "one",
+          "baseForm": "一",
+          "level": "N5"
+        },
+        {
+          "surface": "振り",
+          "reading": "ふり",
+          "meaning": "pretence; show; appearance",
+          "baseForm": "振り",
+          "level": "N1"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "だけ"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "一",
+          "reading": "いち",
+          "meaning": "one",
+          "baseForm": "一",
+          "level": "N5"
+        },
+        {
+          "surface": "護"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "見事",
+          "reading": "みごと",
+          "meaning": "splendid; magnificent; beautiful",
+          "baseForm": "見事",
+          "level": "N3"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "恐ろしい",
+          "reading": "おそろしい",
+          "meaning": "terrible; dreadful",
+          "baseForm": "恐ろしい",
+          "level": "N3"
+        },
+        {
+          "surface": "虚"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "両断"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "meaning": "family",
+          "baseForm": "家族",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "守り"
+        },
+        {
+          "surface": "抜き"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "しかし",
+          "meaning": "however",
+          "baseForm": "しかし",
+          "level": "N5"
+        },
+        {
+          "surface": "力",
+          "reading": "ちから",
+          "meaning": "strength; power",
+          "baseForm": "力",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "失"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "まっ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "ルキア"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "助ける",
+          "reading": "たすける",
+          "meaning": "to help; to save; to rescue",
+          "baseForm": "助ける",
+          "level": "N3"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "現世"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "死神"
+        },
+        {
+          "surface": "代行"
+        },
+        {
+          "surface": "として"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "務め"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "果たす"
+        },
+        {
+          "surface": "ことに"
+        },
+        {
+          "surface": "なり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "日",
+          "reading": "ひ",
+          "meaning": "day; sun",
+          "baseForm": "日",
+          "level": "N4"
+        },
+        {
+          "surface": "中",
+          "reading": "なか",
+          "meaning": "middle",
+          "baseForm": "中",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "普通"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "meaning": "student",
+          "baseForm": "学生",
+          "level": "N5"
+        },
+        {
+          "surface": "生活",
+          "reading": "せいかつ",
+          "meaning": "to live",
+          "baseForm": "生活",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "送り",
+          "reading": "おくり",
+          "meaning": "to send",
+          "baseForm": "送る",
+          "level": "N4"
+        },
+        {
+          "surface": "つつ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "放課後"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "なる",
+          "meaning": "to become",
+          "baseForm": "なる",
+          "level": "N5"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "街"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "現れる"
+        },
+        {
+          "surface": "凶悪"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "霊"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "戦う",
+          "reading": "たたかう",
+          "meaning": "to fight; to battle; to combat",
+          "baseForm": "戦う",
+          "level": "N3"
+        },
+        {
+          "surface": "二重"
+        },
+        {
+          "surface": "生活",
+          "reading": "せいかつ",
+          "meaning": "to live",
+          "baseForm": "生活",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "始まり",
+          "reading": "はじまり",
+          "meaning": "origin; beginning",
+          "baseForm": "始まり",
+          "level": "N3"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "戦い",
+          "reading": "たたかい",
+          "meaning": "battle; fight; struggle",
+          "baseForm": "戦い",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "重ねる"
+        },
+        {
+          "surface": "うち",
+          "meaning": "within",
+          "baseForm": "うち",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "井上"
+        },
+        {
+          "surface": "織姫"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "茶"
+        },
+        {
+          "surface": "渡",
+          "reading": "わた",
+          "meaning": "to hand over",
+          "baseForm": "渡す",
+          "level": "N5"
+        },
+        {
+          "surface": "といった"
+        },
+        {
+          "surface": "クラスメイト"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "自ら"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "不思議",
+          "reading": "ふしぎ",
+          "meaning": "mystery; curiosity",
+          "baseForm": "不思議",
+          "level": "N3"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "能力"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "目覚め"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "き"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "手にした巨大な斬魄刀を一振りするだけで、一護は見事に恐ろしい虚を両断して家族を守り抜きました。",
+          "literalEn": "hand [at/to] した huge to behead sword [obj] one pretence to do だけ [in/by] one [topic] splendid [at/to] terrible [obj] 両断 [and] family [obj] 守り 抜き した",
+          "naturalEn": "With a solitary swing of the colossal Zanpakutō blade in his grip, Ichigo cleanly severed the terrifying Hollow, protecting his family.",
+          "tokens": [
+            {
+              "surface": "手",
+              "reading": "て",
+              "meaning": "hand",
+              "baseForm": "手",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "巨大",
+              "reading": "きょだい",
+              "meaning": "huge; gigantic; enormous",
+              "baseForm": "巨大",
+              "level": "N3"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "斬",
+              "reading": "き",
+              "meaning": "to behead; to murder",
+              "baseForm": "斬る",
+              "level": "N2"
+            },
+            {
+              "surface": "魄"
+            },
+            {
+              "surface": "刀",
+              "reading": "かたな",
+              "meaning": "sword; saber; knife",
+              "baseForm": "刀",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "一",
+              "reading": "いち",
+              "meaning": "one",
+              "baseForm": "一",
+              "level": "N5"
+            },
+            {
+              "surface": "振り",
+              "reading": "ふり",
+              "meaning": "pretence; show; appearance",
+              "baseForm": "振り",
+              "level": "N1"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "だけ"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "一",
+              "reading": "いち",
+              "meaning": "one",
+              "baseForm": "一",
+              "level": "N5"
+            },
+            {
+              "surface": "護"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "見事",
+              "reading": "みごと",
+              "meaning": "splendid; magnificent; beautiful",
+              "baseForm": "見事",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "恐ろしい",
+              "reading": "おそろしい",
+              "meaning": "terrible; dreadful",
+              "baseForm": "恐ろしい",
+              "level": "N3"
+            },
+            {
+              "surface": "虚"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "両断"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "家族",
+              "reading": "かぞく",
+              "meaning": "family",
+              "baseForm": "家族",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "守り"
+            },
+            {
+              "surface": "抜き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "しかし力を失ってしまったルキアを助けるため、彼は現世で死神代行としての務めを果たすことになりました。",
+          "literalEn": "however strength [obj] って まっ [past] ルキア [obj] to help ため he [topic] 現世 [in/by] 死神 代行 として ['s / of] 務め [obj] 果たす ことに なり した",
+          "naturalEn": "However, to assist the temporarily weakened Rukia, he was obliged to take up the mantle of a Substitute Soul Reaper in the living world.",
+          "tokens": [
+            {
+              "surface": "しかし",
+              "meaning": "however",
+              "baseForm": "しかし",
+              "level": "N5"
+            },
+            {
+              "surface": "力",
+              "reading": "ちから",
+              "meaning": "strength; power",
+              "baseForm": "力",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "失"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "まっ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "ルキア"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "助ける",
+              "reading": "たすける",
+              "meaning": "to help; to save; to rescue",
+              "baseForm": "助ける",
+              "level": "N3"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "現世"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "死神"
+            },
+            {
+              "surface": "代行"
+            },
+            {
+              "surface": "として"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "務め"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "果たす"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "日中は普通の学生生活を送りつつ、放課後になると街に現れる凶悪な霊と戦う二重生活が始まりました。",
+          "literalEn": "day middle [topic] 普通 ['s / of] student to live [obj] to send つつ 放課後 [at/to] to become [with/and] [at/to] 現れる 凶悪 [with/and] to fight 二重 to live [subj] origin した",
+          "naturalEn": "While attending ordinary high school during daytime hours, a double life commenced as he battled malicious spirits haunting the town after school.",
+          "tokens": [
+            {
+              "surface": "日",
+              "reading": "ひ",
+              "meaning": "day; sun",
+              "baseForm": "日",
+              "level": "N4"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "普通"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "学生",
+              "reading": "がくせい",
+              "meaning": "student",
+              "baseForm": "学生",
+              "level": "N5"
+            },
+            {
+              "surface": "生活",
+              "reading": "せいかつ",
+              "meaning": "to live",
+              "baseForm": "生活",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "送り",
+              "reading": "おくり",
+              "meaning": "to send",
+              "baseForm": "送る",
+              "level": "N4"
+            },
+            {
+              "surface": "つつ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "放課後"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なる",
+              "meaning": "to become",
+              "baseForm": "なる",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "街"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "現れる"
+            },
+            {
+              "surface": "凶悪"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "霊"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "戦う",
+              "reading": "たたかう",
+              "meaning": "to fight; to battle; to combat",
+              "baseForm": "戦う",
+              "level": "N3"
+            },
+            {
+              "surface": "二重"
+            },
+            {
+              "surface": "生活",
+              "reading": "せいかつ",
+              "meaning": "to live",
+              "baseForm": "生活",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "始まり",
+              "reading": "はじまり",
+              "meaning": "origin; beginning",
+              "baseForm": "始まり",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "戦いを重ねるうちに、井上織姫や茶渡といったクラスメイトたちも自らの不思議な能力に目覚めていきました。",
+          "literalEn": "battle [obj] 重ねる within [at/to] 井上 織姫 to hand over といった クラスメイト たち [also] 自ら ['s / of] mystery 能力 [at/to] 目覚め てい した",
+          "naturalEn": "Through continuous combat, classmates like Orihime Inoue and Chad likewise awakened to their own extraordinary abilities.",
+          "tokens": [
+            {
+              "surface": "戦い",
+              "reading": "たたかい",
+              "meaning": "battle; fight; struggle",
+              "baseForm": "戦い",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "重ねる"
+            },
+            {
+              "surface": "うち",
+              "meaning": "within",
+              "baseForm": "うち",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "井上"
+            },
+            {
+              "surface": "織姫"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "茶"
+            },
+            {
+              "surface": "渡",
+              "reading": "わた",
+              "meaning": "to hand over",
+              "baseForm": "渡す",
+              "level": "N5"
+            },
+            {
+              "surface": "といった"
+            },
+            {
+              "surface": "クラスメイト"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "自ら"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "不思議",
+              "reading": "ふしぎ",
+              "meaning": "mystery; curiosity",
+              "baseForm": "不思議",
+              "level": "N3"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "能力"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "目覚め"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "ところが、人間に死神の力を譲渡した罪に問われ、ルキアは尸魂界の掟に従って連行されてしまいました。処刑を免れない彼女を救い出すため、一護たちは厳しい特訓を積んだ上で霊界へ乗り込む決意を固めました。強力な隊長格の死神たちと刃を交える中で、一護の刀は自らの魂の叫びとともに真の力を解き放ちました。仲間を想う強い信念があればこそ、どんなに高い壁であっても打ち破ることができると彼は証明したのです。",
+      "en": "However, accused of the capital crime of transferring Soul Reaper powers to a mortal, Rukia was apprehended under the laws of the Soul Society. Determined to rescue her from imminent execution, Ichigo and his allies completed grueling training before plunging into the spirit realm. Crossing blades with formidable Soul Reaper Captains, Ichigo's Zanpakuto unlocked its true power in harmony with the cry of his soul. He proved that so long as one possesses steadfast faith in one's friends, any wall, no matter how towering, can be shattered.",
+      "tokens": [
+        {
+          "surface": "ところが"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "人間"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "死神"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "力",
+          "reading": "ちから",
+          "meaning": "strength; power",
+          "baseForm": "力",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "譲渡"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "罪"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "問"
+        },
+        {
+          "surface": "われ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "ルキア"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "尸"
+        },
+        {
+          "surface": "魂"
+        },
+        {
+          "surface": "界"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "掟"
+        },
+        {
+          "surface": "に従って"
+        },
+        {
+          "surface": "連行"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "いま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "処刑"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "免"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "彼女",
+          "reading": "かのじょ",
+          "meaning": "she; girlfriend",
+          "baseForm": "彼女",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "救い出す"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "一",
+          "reading": "いち",
+          "meaning": "one",
+          "baseForm": "一",
+          "level": "N5"
+        },
+        {
+          "surface": "護"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "厳しい"
+        },
+        {
+          "surface": "特訓"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "積",
+          "reading": "つ",
+          "meaning": "to pile up; to stack",
+          "baseForm": "積む",
+          "level": "N2"
+        },
+        {
+          "surface": "ん"
+        },
+        {
+          "surface": "だ"
+        },
+        {
+          "surface": "上",
+          "reading": "うえ",
+          "meaning": "on top of",
+          "baseForm": "上",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "霊界"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "乗り込む"
+        },
+        {
+          "surface": "決意",
+          "reading": "けつい",
+          "meaning": "decision; determination",
+          "baseForm": "決意",
+          "level": "N1"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "固め"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "強力"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "隊長"
+        },
+        {
+          "surface": "格"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "死神"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "刃"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "交える"
+        },
+        {
+          "surface": "中",
+          "reading": "なか",
+          "meaning": "middle",
+          "baseForm": "中",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "一",
+          "reading": "いち",
+          "meaning": "one",
+          "baseForm": "一",
+          "level": "N5"
+        },
+        {
+          "surface": "護"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "刀",
+          "reading": "かたな",
+          "meaning": "sword; saber; knife",
+          "baseForm": "刀",
+          "level": "N3"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "自ら"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "魂"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "叫び",
+          "reading": "さけび",
+          "meaning": "shout; scream; outcry",
+          "baseForm": "叫び",
+          "level": "N1"
+        },
+        {
+          "surface": "とともに"
+        },
+        {
+          "surface": "真"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "力",
+          "reading": "ちから",
+          "meaning": "strength; power",
+          "baseForm": "力",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "解",
+          "reading": "と",
+          "meaning": "to unfasten",
+          "baseForm": "解く",
+          "level": "N3"
+        },
+        {
+          "surface": "き"
+        },
+        {
+          "surface": "放",
+          "reading": "はな",
+          "meaning": "to separate; to set free",
+          "baseForm": "放す",
+          "level": "N3"
+        },
+        {
+          "surface": "ち"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "仲間"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "想う"
+        },
+        {
+          "surface": "強い",
+          "reading": "つよい",
+          "meaning": "powerful",
+          "baseForm": "強い",
+          "level": "N5"
+        },
+        {
+          "surface": "信念"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "あれ"
+        },
+        {
+          "surface": "ば"
+        },
+        {
+          "surface": "こそ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "どんなに"
+        },
+        {
+          "surface": "高い"
+        },
+        {
+          "surface": "壁"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "あっ",
+          "meaning": "Ah!; Oh!",
+          "baseForm": "あっ",
+          "level": "N3"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "打ち破る"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "できる",
+          "meaning": "to be able to",
+          "baseForm": "できる",
+          "level": "N5"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "証明"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "ところが、人間に死神の力を譲渡した罪に問われ、ルキアは尸魂界の掟に従って連行されてしまいました。",
+          "literalEn": "ところが 人間 [at/to] 死神 ['s / of] strength [obj] 譲渡 した [at/to] われ ルキア [topic] ['s / of] に従って 連行 [and] しま いま した",
+          "naturalEn": "However, accused of the capital crime of transferring Soul Reaper powers to a mortal, Rukia was apprehended under the laws of the Soul Society.",
+          "tokens": [
+            {
+              "surface": "ところが"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "人間"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "死神"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "力",
+              "reading": "ちから",
+              "meaning": "strength; power",
+              "baseForm": "力",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "譲渡"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "罪"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "問"
+            },
+            {
+              "surface": "われ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ルキア"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "尸"
+            },
+            {
+              "surface": "魂"
+            },
+            {
+              "surface": "界"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "掟"
+            },
+            {
+              "surface": "に従って"
+            },
+            {
+              "surface": "連行"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "処刑を免れない彼女を救い出すため、一護たちは厳しい特訓を積んだ上で霊界へ乗り込む決意を固めました。",
+          "literalEn": "処刑 [obj] [not] she [obj] 救い出す ため one たち [topic] 厳しい 特訓 [obj] to pile up [is] on top of [in/by] 霊界 [toward] 乗り込む decision [obj] 固め した",
+          "naturalEn": "Determined to rescue her from imminent execution, Ichigo and his allies completed grueling training before plunging into the spirit realm.",
+          "tokens": [
+            {
+              "surface": "処刑"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "免"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "彼女",
+              "reading": "かのじょ",
+              "meaning": "she; girlfriend",
+              "baseForm": "彼女",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "救い出す"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "一",
+              "reading": "いち",
+              "meaning": "one",
+              "baseForm": "一",
+              "level": "N5"
+            },
+            {
+              "surface": "護"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "厳しい"
+            },
+            {
+              "surface": "特訓"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "積",
+              "reading": "つ",
+              "meaning": "to pile up; to stack",
+              "baseForm": "積む",
+              "level": "N2"
+            },
+            {
+              "surface": "ん"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "上",
+              "reading": "うえ",
+              "meaning": "on top of",
+              "baseForm": "上",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "霊界"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "乗り込む"
+            },
+            {
+              "surface": "決意",
+              "reading": "けつい",
+              "meaning": "decision; determination",
+              "baseForm": "決意",
+              "level": "N1"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "固め"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "強力な隊長格の死神たちと刃を交える中で、一護の刀は自らの魂の叫びとともに真の力を解き放ちました。",
+          "literalEn": "強力 隊長 ['s / of] 死神 たち [with/and] [obj] 交える middle [in/by] one ['s / of] sword [topic] 自ら ['s / of] ['s / of] shout とともに ['s / of] strength [obj] to unfasten to separate した",
+          "naturalEn": "Crossing blades with formidable Soul Reaper Captains, Ichigo's Zanpakuto unlocked its true power in harmony with the cry of his soul.",
+          "tokens": [
+            {
+              "surface": "強力"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "隊長"
+            },
+            {
+              "surface": "格"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "死神"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "刃"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "交える"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "一",
+              "reading": "いち",
+              "meaning": "one",
+              "baseForm": "一",
+              "level": "N5"
+            },
+            {
+              "surface": "護"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "刀",
+              "reading": "かたな",
+              "meaning": "sword; saber; knife",
+              "baseForm": "刀",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "自ら"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "魂"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "叫び",
+              "reading": "さけび",
+              "meaning": "shout; scream; outcry",
+              "baseForm": "叫び",
+              "level": "N1"
+            },
+            {
+              "surface": "とともに"
+            },
+            {
+              "surface": "真"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "力",
+              "reading": "ちから",
+              "meaning": "strength; power",
+              "baseForm": "力",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "解",
+              "reading": "と",
+              "meaning": "to unfasten",
+              "baseForm": "解く",
+              "level": "N3"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "放",
+              "reading": "はな",
+              "meaning": "to separate; to set free",
+              "baseForm": "放す",
+              "level": "N3"
+            },
+            {
+              "surface": "ち"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "仲間を想う強い信念があればこそ、どんなに高い壁であっても打ち破ることができると彼は証明したのです。",
+          "literalEn": "仲間 [obj] 想う powerful 信念 [subj] あれ こそ どんなに 高い [in/by] Ah! [and] [also] 打ち破る thing [subj] to be able to [with/and] he [topic] 証明 した ['s / of] [is]",
+          "naturalEn": "He proved that so long as one possesses steadfast faith in one's friends, any wall, no matter how towering, can be shattered.",
+          "tokens": [
+            {
+              "surface": "仲間"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "想う"
+            },
+            {
+              "surface": "強い",
+              "reading": "つよい",
+              "meaning": "powerful",
+              "baseForm": "強い",
+              "level": "N5"
+            },
+            {
+              "surface": "信念"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "あれ"
+            },
+            {
+              "surface": "ば"
+            },
+            {
+              "surface": "こそ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "どんなに"
+            },
+            {
+              "surface": "高い"
+            },
+            {
+              "surface": "壁"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "あっ",
+              "meaning": "Ah!; Oh!",
+              "baseForm": "あっ",
+              "level": "N3"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "打ち破る"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "できる",
+              "meaning": "to be able to",
+              "baseForm": "できる",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "証明"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "激戦の末にルキアを救出した一護は、死神たちからも一人の頼もしい戦士として認められるようになりました。彼は大それた正義を振りかざすのではなく、ただ手の届く大切な人々を護るために刀を握り続けます。現世と霊界の調和を保つための戦いは、これからも彼の背中を押す仲間たちと共に続いていくのでした。",
+      "en": "Having successfully rescued Rukia at the culmination of fierce battles, Ichigo earned recognition from the Soul Reapers as an indispensable warrior. Rather than preaching grand declarations of justice, he continues to wield his sword simply to safeguard the precious people within reach. The battle to maintain harmony between the living world and the spirit realm continues, propelled forward by the comrades at his side.",
+      "tokens": [
+        {
+          "surface": "激戦"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "末"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "ルキア"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "救出"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "一",
+          "reading": "いち",
+          "meaning": "one",
+          "baseForm": "一",
+          "level": "N5"
+        },
+        {
+          "surface": "護"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "死神"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "一人",
+          "reading": "ひとり",
+          "meaning": "one person; alone",
+          "baseForm": "一人",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "頼もしい"
+        },
+        {
+          "surface": "戦士"
+        },
+        {
+          "surface": "として"
+        },
+        {
+          "surface": "認め"
+        },
+        {
+          "surface": "られる"
+        },
+        {
+          "surface": "よう"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "なり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "大",
+          "reading": "だい",
+          "meaning": "large; big; great",
+          "baseForm": "大",
+          "level": "N3"
+        },
+        {
+          "surface": "それ",
+          "meaning": "that",
+          "baseForm": "それ",
+          "level": "N5"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "正義"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "振りかざす"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "では",
+          "meaning": "with that...",
+          "baseForm": "では",
+          "level": "N5"
+        },
+        {
+          "surface": "なく"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "ただ",
+          "meaning": "free of charge; mere; sole",
+          "baseForm": "ただ",
+          "level": "N3"
+        },
+        {
+          "surface": "手",
+          "reading": "て",
+          "meaning": "hand",
+          "baseForm": "手",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "届く"
+        },
+        {
+          "surface": "大切",
+          "reading": "たいせつ",
+          "meaning": "important",
+          "baseForm": "大切",
+          "level": "N5"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "人々",
+          "reading": "ひと々",
+          "meaning": "person",
+          "baseForm": "人",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "護る"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "刀",
+          "reading": "かたな",
+          "meaning": "sword; saber; knife",
+          "baseForm": "刀",
+          "level": "N3"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "握り"
+        },
+        {
+          "surface": "続"
+        },
+        {
+          "surface": "け"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "現世"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "霊界"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "調和"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "保つ"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "戦い",
+          "reading": "たたかい",
+          "meaning": "battle; fight; struggle",
+          "baseForm": "戦い",
+          "level": "N3"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "これから"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "meaning": "he; boyfriend",
+          "baseForm": "彼",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "背中",
+          "reading": "せなか",
+          "meaning": "back of the body",
+          "baseForm": "背中",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "押す"
+        },
+        {
+          "surface": "仲間"
+        },
+        {
+          "surface": "たち"
+        },
+        {
+          "surface": "と共に",
+          "reading": "とともに",
+          "meaning": "together with; along with",
+          "baseForm": "と共に",
+          "level": "N3"
+        },
+        {
+          "surface": "続"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "く"
+        },
+        {
+          "surface": "ので"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "激戦の末にルキアを救出した一護は、死神たちからも一人の頼もしい戦士として認められるようになりました。",
+          "literalEn": "激戦 ['s / of] [at/to] ルキア [obj] 救出 した one [topic] 死神 たち [from] [also] one person ['s / of] 頼もしい 戦士 として 認め られる よう [at/to] なり した",
+          "naturalEn": "Having successfully rescued Rukia at the culmination of fierce battles, Ichigo earned recognition from the Soul Reapers as an indispensable warrior.",
+          "tokens": [
+            {
+              "surface": "激戦"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "末"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "ルキア"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "救出"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "一",
+              "reading": "いち",
+              "meaning": "one",
+              "baseForm": "一",
+              "level": "N5"
+            },
+            {
+              "surface": "護"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "死神"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "一人",
+              "reading": "ひとり",
+              "meaning": "one person; alone",
+              "baseForm": "一人",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "頼もしい"
+            },
+            {
+              "surface": "戦士"
+            },
+            {
+              "surface": "として"
+            },
+            {
+              "surface": "認め"
+            },
+            {
+              "surface": "られる"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "彼は大それた正義を振りかざすのではなく、ただ手の届く大切な人々を護るために刀を握り続けます。",
+          "literalEn": "he [topic] large that [past] 正義 [obj] 振りかざす ['s / of] with that... なく free of charge hand ['s / of] 届く important person [obj] 護る ため [at/to] sword [obj] 握り [polite]",
+          "naturalEn": "Rather than preaching grand declarations of justice, he continues to wield his sword simply to safeguard the precious people within reach.",
+          "tokens": [
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "大",
+              "reading": "だい",
+              "meaning": "large; big; great",
+              "baseForm": "大",
+              "level": "N3"
+            },
+            {
+              "surface": "それ",
+              "meaning": "that",
+              "baseForm": "それ",
+              "level": "N5"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "正義"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "振りかざす"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "では",
+              "meaning": "with that...",
+              "baseForm": "では",
+              "level": "N5"
+            },
+            {
+              "surface": "なく"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ただ",
+              "meaning": "free of charge; mere; sole",
+              "baseForm": "ただ",
+              "level": "N3"
+            },
+            {
+              "surface": "手",
+              "reading": "て",
+              "meaning": "hand",
+              "baseForm": "手",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "届く"
+            },
+            {
+              "surface": "大切",
+              "reading": "たいせつ",
+              "meaning": "important",
+              "baseForm": "大切",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "人々",
+              "reading": "ひと々",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "護る"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "刀",
+              "reading": "かたな",
+              "meaning": "sword; saber; knife",
+              "baseForm": "刀",
+              "level": "N3"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "握り"
+            },
+            {
+              "surface": "続"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "現世と霊界の調和を保つための戦いは、これからも彼の背中を押す仲間たちと共に続いていくのでした。",
+          "literalEn": "現世 [with/and] 霊界 ['s / of] 調和 [obj] 保つ ため ['s / of] battle [topic] これから [also] he ['s / of] back of the body [obj] 押す 仲間 たち together with てい ので した",
+          "naturalEn": "The battle to maintain harmony between the living world and the spirit realm continues, propelled forward by the comrades at his side.",
+          "tokens": [
+            {
+              "surface": "現世"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "霊界"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "調和"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "保つ"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "戦い",
+              "reading": "たたかい",
+              "meaning": "battle; fight; struggle",
+              "baseForm": "戦い",
+              "level": "N3"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "これから"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "he; boyfriend",
+              "baseForm": "彼",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "背中",
+              "reading": "せなか",
+              "meaning": "back of the body",
+              "baseForm": "背中",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "押す"
+            },
+            {
+              "surface": "仲間"
+            },
+            {
+              "surface": "たち"
+            },
+            {
+              "surface": "と共に",
+              "reading": "とともに",
+              "meaning": "together with; along with",
+              "baseForm": "と共に",
+              "level": "N3"
+            },
+            {
+              "surface": "続"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "ので"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "一護が死神代行になった直接のきっかけは何ですか。",
+      "questionEn": "What was the immediate catalyst for Ichigo becoming a Substitute Soul Reaper?",
+      "options": [
+        "家族を虚から救うため、負傷したルキアから死神の力を受け取ったこと",
+        "学校の成績優秀者として死神の世界にスカウトされたこと",
+        "道端に落ちていた黒い刀を拾って自分のものにしたこと",
+        "父親から代々伝わる死神の免許を受け継いだこと"
+      ],
+      "optionsEn": [
+        "Receiving Soul Reaper power from the injured Rukia to protect his family from a Hollow",
+        "Being scouted by the spirit realm for outstanding academic achievements",
+        "Picking up a black sword dropped on the roadside and claiming it",
+        "Inheriting a hereditary Soul Reaper license passed down from his father"
+      ],
+      "answerIndex": 0,
+      "explanation": "襲撃してきた虚から家族を救うため、重傷を負ったルキアの刀を受け入れて死神の力を譲り受けました。"
+    },
+    {
+      "question": "ルキアが尸魂界へ連行された理由は何ですか。",
+      "questionEn": "Why was Rukia apprehended and taken back to the Soul Society?",
+      "options": [
+        "人間に死神の力を譲渡したことが重大な掟違反だったから",
+        "現世で高校の授業をサボって怒られたから",
+        "一護の斬魄刀を盗んだと疑われたから",
+        "虚を退治する任務を完全に放棄したから"
+      ],
+      "optionsEn": [
+        "Transferring Soul Reaper power to a human was a grave violation of law",
+        "She skipped high school classes in the human world",
+        "She was suspected of stealing Ichigo's Zanpakutō",
+        "She completely abandoned her duty to eliminate Hollows"
+      ],
+      "answerIndex": 0,
+      "explanation": "人間に死神の力を譲る行為は尸魂界の厳格な掟に反しており、その重罪のために捕縛されました。"
+    },
+    {
+      "question": "一護が戦う原動力として描かれている姿勢はどれですか。",
+      "questionEn": "Which stance best captures Ichigo's driving motivation for fighting?",
+      "options": [
+        "大それた理想よりも、自分の手が届く大切な仲間や家族を守ること",
+        "死神の世界で一番偉い総隊長になって名誉を得ること",
+        "世界中のすべての悪霊を一人で支配すること",
+        "現世を捨てて霊界の貴族として優雅に暮らすこと"
+      ],
+      "optionsEn": [
+        "Protecting precious friends and family within arm's reach rather than boasting grand ideals",
+        "Becoming the supreme Head Captain in the Soul Society to win fame",
+        "Ruling over all evil spirits in the entire universe single-handedly",
+        "Abandoning the human world to live luxuriously as a noble in the spirit realm"
+      ],
+      "answerIndex": 0,
+      "explanation": "一護は大層な正義を語るのではなく、身近にいる大切な人々を護るために命がけで戦い続けます。"
+    }
+  ]
+}

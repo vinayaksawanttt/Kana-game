@@ -32,6 +32,35 @@ describe("jlptPhoneticTraps pure engine", () => {
     ).toBe(true);
   });
 
+  it("generates counter rendaku traps for ろっぽん (e.g. ろくぼん, ろくぽん, ろっほん)", () => {
+    const traps = generatePhoneticReadingTraps("ろっぽん");
+    expect(traps).toHaveLength(3);
+    const trapStrings = traps.map((t) => t.trap);
+    expect(new Set(trapStrings).size).toBe(3);
+    expect(trapStrings).not.toContain("ろっぽん");
+    expect(
+      trapStrings.some((t) => t === "ろくぼん" || t === "ろくぽん" || t === "ろっほん" || t === "ろくほん"),
+    ).toBe(true);
+    expect(traps.some((t) => t.rule === "Counter Rendaku Trap")).toBe(true);
+  });
+
+  it("generates Katakana loanword traps for シャワー (e.g. シャウー, ツャワー) and エレベーター", () => {
+    const shawaTraps = generateOrthographyTraps("シャワー");
+    expect(shawaTraps).toHaveLength(3);
+    const shawaStrings = shawaTraps.map((t) => t.trap);
+    expect(new Set(shawaStrings).size).toBe(3);
+    expect(shawaStrings).not.toContain("シャワー");
+    expect(
+      shawaStrings.some((t) => t === "シャウー" || t === "ツャワー" || t === "ツャウー" || t === "シャワ"),
+    ).toBe(true);
+    expect(shawaTraps.every((t) => t.rule === "Katakana Loanword Trap")).toBe(true);
+
+    const ereTraps = generateOrthographyTraps("エレベーター");
+    expect(ereTraps).toHaveLength(3);
+    const ereStrings = ereTraps.map((t) => t.trap);
+    expect(ereStrings).toContain("エレベター");
+  });
+
   it("generates geminate っ trap きて for きって", () => {
     const traps = generatePhoneticReadingTraps("きって");
     expect(traps).toHaveLength(3);
@@ -55,7 +84,7 @@ describe("jlptPhoneticTraps pure engine", () => {
         expect(trap[0]).not.toBe("ん");
         expect(trap.endsWith("っ")).toBe(false);
         expect(trap.includes("っっ")).toBe(false);
-        expect(/^[\u3041-\u3096]+$/.test(trap)).toBe(true);
+        expect(/^[\u3041-\u3096\u30FC]+$/.test(trap)).toBe(true);
       }
     }
   });

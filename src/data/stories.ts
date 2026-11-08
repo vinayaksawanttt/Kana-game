@@ -50,6 +50,30 @@ import n4WhiteHareAndCroc from "./content/stories/N4/fairy-tales/white-hare-and-
 import n4WitheredTrees from "./content/stories/N4/fairy-tales/withered-trees.json";
 import n4YamatoTake from "./content/stories/N4/fairy-tales/yamato-take.json";
 
+// N3 Anime Legends
+import n3AttackOnTitan from "./content/stories/N3/anime/attack-on-titan.json";
+import n3Bleach from "./content/stories/N3/anime/bleach.json";
+import n3OnePiece from "./content/stories/N3/anime/one-piece.json";
+import n3Naruto from "./content/stories/N3/anime/naruto.json";
+import n3DemonSlayer from "./content/stories/N3/anime/demon-slayer.json";
+import n3DeathNote from "./content/stories/N3/anime/death-note.json";
+import n3DragonBall from "./content/stories/N3/anime/dragon-ball.json";
+import n3FullmetalAlchemist from "./content/stories/N3/anime/fullmetal-alchemist.json";
+import n3MyHeroAcademia from "./content/stories/N3/anime/my-hero-academia.json";
+import n3JujutsuKaisen from "./content/stories/N3/anime/jujutsu-kaisen.json";
+
+// N3 Everyday Life
+import n3Hospital from "./content/stories/N3/hospital.json";
+import n3PostOffice from "./content/stories/N3/post-office.json";
+import n3HotelCheckIn from "./content/stories/N3/hotel-check-in.json";
+import n3JobInterview from "./content/stories/N3/job-interview.json";
+import n3ConvenienceStore from "./content/stories/N3/convenience-store-part-time.json";
+import n3LostProperty from "./content/stories/N3/lost-property.json";
+import n3ApartmentHunting from "./content/stories/N3/apartment-hunting.json";
+import n3TrainDelay from "./content/stories/N3/train-delay.json";
+import n3BirthdayParty from "./content/stories/N3/birthday-party.json";
+import n3OfficeMeeting from "./content/stories/N3/office-meeting.json";
+
 export interface StoryToken {
   surface: string;
   reading?: string;
@@ -88,7 +112,7 @@ export interface StoryQuiz {
 }
 
 export type StoryLevel = "N5" | "N4" | "N3" | "N2" | "N1";
-export type StoryCategory = "Everyday Life" | "Fairy Tales" | "News";
+export type StoryCategory = "Everyday Life" | "Fairy Tales" | "News" | "Anime & Pop Culture";
 
 export interface StoryRecord {
   id: string;
@@ -186,9 +210,17 @@ export function lookupWordMetadata(surface: string): LexiconEntry | undefined {
   return lexicon[surface];
 }
 
-function normalizeCategory(rawCategory: string, isFairyTaleDir: boolean): StoryCategory {
+function normalizeCategory(
+  rawCategory: string,
+  isFairyTaleDir: boolean,
+  isAnimeDir?: boolean
+): StoryCategory {
+  if (isAnimeDir) return "Anime & Pop Culture";
   if (isFairyTaleDir) return "Fairy Tales";
   const lower = rawCategory.trim().toLowerCase();
+  if (lower === "anime" || lower.includes("anime") || lower.includes("pop culture")) {
+    return "Anime & Pop Culture";
+  }
   if (lower === "fairy tale" || lower === "fairy tales" || lower === "legend") {
     return "Fairy Tales";
   }
@@ -231,6 +263,7 @@ interface RawStoryJson {
 interface RawManifestItem {
   slug: string;
   isFairyTale?: boolean;
+  isAnime?: boolean;
   raw: RawStoryJson;
 }
 
@@ -284,6 +317,30 @@ const rawManifest: RawManifestItem[] = [
   { slug: "empress-jokwa", isFairyTale: true, raw: n4EmpressJokwa },
   { slug: "fish-and-monkey", isFairyTale: true, raw: n4FishAndMonkey },
   { slug: "monkey-boar", isFairyTale: true, raw: n4MonkeyBoar },
+
+  // N3 Anime Legends
+  { slug: "attack-on-titan", isAnime: true, raw: n3AttackOnTitan },
+  { slug: "bleach", isAnime: true, raw: n3Bleach },
+  { slug: "one-piece", isAnime: true, raw: n3OnePiece },
+  { slug: "naruto", isAnime: true, raw: n3Naruto },
+  { slug: "demon-slayer", isAnime: true, raw: n3DemonSlayer },
+  { slug: "death-note", isAnime: true, raw: n3DeathNote },
+  { slug: "dragon-ball", isAnime: true, raw: n3DragonBall },
+  { slug: "fullmetal-alchemist", isAnime: true, raw: n3FullmetalAlchemist },
+  { slug: "my-hero-academia", isAnime: true, raw: n3MyHeroAcademia },
+  { slug: "jujutsu-kaisen", isAnime: true, raw: n3JujutsuKaisen },
+
+  // N3 Everyday Life
+  { slug: "hospital", raw: n3Hospital },
+  { slug: "post-office", raw: n3PostOffice },
+  { slug: "hotel-check-in", raw: n3HotelCheckIn },
+  { slug: "job-interview", raw: n3JobInterview },
+  { slug: "convenience-store-part-time", raw: n3ConvenienceStore },
+  { slug: "lost-property", raw: n3LostProperty },
+  { slug: "apartment-hunting", raw: n3ApartmentHunting },
+  { slug: "train-delay", raw: n3TrainDelay },
+  { slug: "birthday-party", raw: n3BirthdayParty },
+  { slug: "office-meeting", raw: n3OfficeMeeting },
 ];
 
 let cachedStories: StoryRecord[] | null = null;
@@ -291,8 +348,8 @@ let cachedStories: StoryRecord[] | null = null;
 function buildAllStories(): StoryRecord[] {
   if (cachedStories) return cachedStories;
 
-  cachedStories = rawManifest.map(({ slug, isFairyTale = false, raw }) => {
-    const category = normalizeCategory(raw.category, isFairyTale);
+  cachedStories = rawManifest.map(({ slug, isFairyTale = false, isAnime = false, raw }) => {
+    const category = normalizeCategory(raw.category, isFairyTale, isAnime);
     const level = normalizeLevel(raw.level);
     const paragraphs: StoryParagraph[] = raw.paragraphs.map((p) => {
       const cleanJa = stripCitations(p.ja);

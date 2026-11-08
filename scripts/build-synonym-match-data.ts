@@ -1178,6 +1178,831 @@ const CURATED_SEEDS: CuratedSynonymSeed[] = [
     ],
     sharedNuanceNote: "Both「償う（つぐなう）」and「埋め合わせる」mean 'to make amends / compensate for a fault'.",
   },
+{
+  "id": "syn-n5-omoshirokunakatta",
+  "jlpt": 5,
+  "sentenceJa": "その映画はおもしろくなかったです。",
+  "targetSurface": "おもしろくなかったです",
+  "sentenceEn": "That movie was not interesting.",
+  "targetWord": "おもしろくない",
+  "targetReading": "おもしろくない",
+  "targetMeaningEn": "not interesting, not fun",
+  "correctSynonym": {
+    "word": "つまらなかったです",
+    "reading": "つまらなかったです",
+    "meaningEn": "was boring"
+  },
+  "distractors": [
+    {
+      "word": "短かったです",
+      "reading": "みじかかったです",
+      "meaningEn": "was short"
+    },
+    {
+      "word": "長かったです",
+      "reading": "ながかったです",
+      "meaningEn": "was long"
+    },
+    {
+      "word": "楽しかったです",
+      "reading": "たのしかったです",
+      "meaningEn": "was fun"
+    }
+  ],
+  "sharedNuanceNote": "Negative of「おもしろい」is equivalent to「つまらない」(boring / uninteresting)."
+},
+{
+  "id": "syn-n5-kurai",
+  "jlpt": 5,
+  "sentenceJa": "この部屋は暗いです。",
+  "targetSurface": "暗いです",
+  "sentenceEn": "This room is dark.",
+  "targetWord": "暗い",
+  "targetReading": "くらい",
+  "targetMeaningEn": "dark",
+  "correctSynonym": {
+    "word": "明るくありません",
+    "reading": "あかるくありません",
+    "meaningEn": "is not bright"
+  },
+  "distractors": [
+    {
+      "word": "広くありません",
+      "reading": "ひろくありません",
+      "meaningEn": "is not spacious"
+    },
+    {
+      "word": "静かではありません",
+      "reading": "しずかではありません",
+      "meaningEn": "is not quiet"
+    },
+    {
+      "word": "狭くありません",
+      "reading": "せまくありません",
+      "meaningEn": "is not narrow"
+    }
+  ],
+  "sharedNuanceNote": "Antonym negative flip:「暗い」(dark) =「明るくありません」(not bright)."
+},
+{
+  "id": "syn-n5-maiban",
+  "jlpt": 5,
+  "sentenceJa": "まいばん国のかぞくに電話します。",
+  "targetSurface": "まいばん",
+  "sentenceEn": "Every night I call my family in my home country.",
+  "targetWord": "毎晩",
+  "targetReading": "まいばん",
+  "targetMeaningEn": "every night",
+  "correctSynonym": {
+    "word": "夜はいつも",
+    "reading": "よるはいつも",
+    "meaningEn": "always at night"
+  },
+  "distractors": [
+    {
+      "word": "朝はいつも",
+      "reading": "あさはいつも",
+      "meaningEn": "always in the morning"
+    },
+    {
+      "word": "昼はいつも",
+      "reading": "ひるはいつも",
+      "meaningEn": "always in the afternoon"
+    },
+    {
+      "word": "時々夜に",
+      "reading": "ときどきよるに",
+      "meaningEn": "sometimes at night"
+    }
+  ],
+  "sharedNuanceNote": "Time expression equivalence:「まいばん」(every night) =「夜はいつも」(always at night)."
+},
+{
+  "id": "syn-n5-ninen-mae",
+  "jlpt": 5,
+  "sentenceJa": "二年前に京都へ行きました。",
+  "targetSurface": "二年前に",
+  "sentenceEn": "Two years ago, I went to Kyoto.",
+  "targetWord": "二年前に",
+  "targetReading": "にねんまえに",
+  "targetMeaningEn": "two years ago",
+  "correctSynonym": {
+    "word": "おととし",
+    "reading": "おととし",
+    "meaningEn": "the year before last"
+  },
+  "distractors": [
+    {
+      "word": "きょねん",
+      "reading": "きょねん",
+      "meaningEn": "last year"
+    },
+    {
+      "word": "さらいねん",
+      "reading": "さらいねん",
+      "meaningEn": "the year after next"
+    },
+    {
+      "word": "らいねん",
+      "reading": "らいねん",
+      "meaningEn": "next year"
+    }
+  ],
+  "sharedNuanceNote": "Calendar conversion:「二年前」(two years ago) =「おととし」(the year before last)."
+},
+{
+  "id": "syn-n5-tanjoubi",
+  "jlpt": 5,
+  "sentenceJa": "たんじょうびは6月15日です。",
+  "targetSurface": "たんじょうびは6月15日です",
+  "sentenceEn": "My birthday is June 15th.",
+  "targetWord": "誕生日",
+  "targetReading": "たんじょうび",
+  "targetMeaningEn": "birthday",
+  "correctSynonym": {
+    "word": "6月15日にうまれました",
+    "reading": "ろくがつじゅうごにちにうまれました",
+    "meaningEn": "was born on June 15th"
+  },
+  "distractors": [
+    {
+      "word": "6月15日にけっこんしました",
+      "reading": "ろくがつじゅうごにちにけっこんしました",
+      "meaningEn": "got married on June 15th"
+    },
+    {
+      "word": "6月15日に日本へ来ました",
+      "reading": "ろくがつじゅうごにちににほんへきました",
+      "meaningEn": "came to Japan on June 15th"
+    },
+    {
+      "word": "6月15日に学校をおわりました",
+      "reading": "ろくがつじゅうごにちにとがっこうをおわりました",
+      "meaningEn": "graduated school on June 15th"
+    }
+  ],
+  "sharedNuanceNote": "Life event equivalence:「たんじょうびはX日です」=「X日にうまれました」(was born on X date)."
+},
+{
+  "id": "syn-n5-yasui",
+  "jlpt": 5,
+  "sentenceJa": "この靴は安いです。",
+  "targetSurface": "安いです",
+  "sentenceEn": "These shoes are cheap.",
+  "targetWord": "安い",
+  "targetReading": "やすい",
+  "targetMeaningEn": "cheap, inexpensive",
+  "correctSynonym": {
+    "word": "高くありません",
+    "reading": "たかくありません",
+    "meaningEn": "are not expensive"
+  },
+  "distractors": [
+    {
+      "word": "古くありません",
+      "reading": "ふるくありません",
+      "meaningEn": "are not old"
+    },
+    {
+      "word": "重くありません",
+      "reading": "おもくありません",
+      "meaningEn": "are not heavy"
+    },
+    {
+      "word": "新しくありません",
+      "reading": "あたらしくありません",
+      "meaningEn": "are not new"
+    }
+  ],
+  "sharedNuanceNote": "Antonym negative flip:「安い」(cheap) =「高くありません」(not expensive)."
+},
+{
+  "id": "syn-n5-hima",
+  "jlpt": 5,
+  "sentenceJa": "昨日はひまでした。",
+  "targetSurface": "ひまでした",
+  "sentenceEn": "Yesterday I was free.",
+  "targetWord": "暇",
+  "targetReading": "ひま",
+  "targetMeaningEn": "free, unoccupied",
+  "correctSynonym": {
+    "word": "いそがしくありませんでした",
+    "reading": "いそがしくありませんでした",
+    "meaningEn": "was not busy"
+  },
+  "distractors": [
+    {
+      "word": "元気がありませんでした",
+      "reading": "げんきがありませんでした",
+      "meaningEn": "had no energy"
+    },
+    {
+      "word": "楽しくありませんでした",
+      "reading": "たのしくありませんでした",
+      "meaningEn": "was not enjoyable"
+    },
+    {
+      "word": "静かではありませんでした",
+      "reading": "しずかではありませんでした",
+      "meaningEn": "was not quiet"
+    }
+  ],
+  "sharedNuanceNote": "State negative flip:「ひまでした」(was free) =「いそがしくありませんでした」(was not busy)."
+},
+{
+  "id": "syn-n5-ototoi",
+  "jlpt": 5,
+  "sentenceJa": "一昨日は雨が降っていました。",
+  "targetSurface": "一昨日は",
+  "sentenceEn": "The day before yesterday it was raining.",
+  "targetWord": "一昨日",
+  "targetReading": "おととい",
+  "targetMeaningEn": "day before yesterday",
+  "correctSynonym": {
+    "word": "二日前に",
+    "reading": "ふつかまえに",
+    "meaningEn": "two days ago"
+  },
+  "distractors": [
+    {
+      "word": "昨日",
+      "reading": "きのう",
+      "meaningEn": "yesterday"
+    },
+    {
+      "word": "先週",
+      "reading": "せんしゅう",
+      "meaningEn": "last week"
+    },
+    {
+      "word": "あさって",
+      "reading": "あさって",
+      "meaningEn": "day after tomorrow"
+    }
+  ],
+  "sharedNuanceNote": "Time expression equivalence:「一昨日 (おととい)」=「二日前」(two days ago)."
+},
+{
+  "id": "syn-n5-asatte",
+  "jlpt": 5,
+  "sentenceJa": "あさって日本語のテストがあります。",
+  "targetSurface": "あさって",
+  "sentenceEn": "The day after tomorrow there is a Japanese test.",
+  "targetWord": "明後日",
+  "targetReading": "あさって",
+  "targetMeaningEn": "day after tomorrow",
+  "correctSynonym": {
+    "word": "二日後に",
+    "reading": "ふつかごに",
+    "meaningEn": "two days later"
+  },
+  "distractors": [
+    {
+      "word": "明日",
+      "reading": "あした",
+      "meaningEn": "tomorrow"
+    },
+    {
+      "word": "来週",
+      "reading": "らいしゅう",
+      "meaningEn": "next week"
+    },
+    {
+      "word": "昨日",
+      "reading": "きのう",
+      "meaningEn": "yesterday"
+    }
+  ],
+  "sharedNuanceNote": "Time expression equivalence:「あさって」(day after tomorrow) =「二日後」(two days later)."
+},
+{
+  "id": "syn-n5-sakki",
+  "jlpt": 5,
+  "sentenceJa": "さっき山田さんが来ましたよ。",
+  "targetSurface": "さっき",
+  "sentenceEn": "Mr. Yamada came a short while ago.",
+  "targetWord": "さっき",
+  "targetReading": "さっき",
+  "targetMeaningEn": "a short while ago, just now",
+  "correctSynonym": {
+    "word": "少し前に",
+    "reading": "すこしまえに",
+    "meaningEn": "a little while ago"
+  },
+  "distractors": [
+    {
+      "word": "今から",
+      "reading": "いまから",
+      "meaningEn": "from now on"
+    },
+    {
+      "word": "ずっと前に",
+      "reading": "ずっとまえに",
+      "meaningEn": "a long time ago"
+    },
+    {
+      "word": "あとで",
+      "reading": "あとで",
+      "meaningEn": "later"
+    }
+  ],
+  "sharedNuanceNote": "Temporal equivalence:「さっき」=「少し前に」(a short while ago)."
+},
+{
+  "id": "syn-n5-kyou-wa-yasumi",
+  "jlpt": 5,
+  "sentenceJa": "今日は会社が休みです。",
+  "targetSurface": "休みです",
+  "sentenceEn": "Today work is off.",
+  "targetWord": "休み",
+  "targetReading": "やすみ",
+  "targetMeaningEn": "day off, absence",
+  "correctSynonym": {
+    "word": "仕事がありません",
+    "reading": "しごとがありません",
+    "meaningEn": "have no work"
+  },
+  "distractors": [
+    {
+      "word": "仕事がたくさんあります",
+      "reading": "しごとがたくさんあります",
+      "meaningEn": "have a lot of work"
+    },
+    {
+      "word": "仕事が遅くなります",
+      "reading": "しごとがおそくなります",
+      "meaningEn": "work will be late"
+    },
+    {
+      "word": "仕事が好きです",
+      "reading": "しごとがすきです",
+      "meaningEn": "like work"
+    }
+  ],
+  "sharedNuanceNote": "Condition equivalence:「会社が休みです」=「仕事がありません」(have no work today)."
+},
+{
+  "id": "syn-n5-fukai",
+  "jlpt": 5,
+  "sentenceJa": "この川は深いですから、気をつけてください。",
+  "targetSurface": "深いです",
+  "sentenceEn": "This river is deep, so please be careful.",
+  "targetWord": "深い",
+  "targetReading": "ふかい",
+  "targetMeaningEn": "deep",
+  "correctSynonym": {
+    "word": "浅くありません",
+    "reading": "あさくありません",
+    "meaningEn": "is not shallow"
+  },
+  "distractors": [
+    {
+      "word": "広くありません",
+      "reading": "ひろくありません",
+      "meaningEn": "is not wide"
+    },
+    {
+      "word": "狭くありません",
+      "reading": "せまくありません",
+      "meaningEn": "is not narrow"
+    },
+    {
+      "word": "冷たくありません",
+      "reading": "つめたくありません",
+      "meaningEn": "is not cold"
+    }
+  ],
+  "sharedNuanceNote": "Antonym negative flip:「深い」(deep) =「浅くありません」(not shallow)."
+},
+{
+  "id": "syn-n5-shinsetsu",
+  "jlpt": 5,
+  "sentenceJa": "あの先生はとても親切です。",
+  "targetSurface": "親切です",
+  "sentenceEn": "That teacher is very kind.",
+  "targetWord": "親切",
+  "targetReading": "しんせつ",
+  "targetMeaningEn": "kind, helpful",
+  "correctSynonym": {
+    "word": "やさしいです",
+    "reading": "やさしいです",
+    "meaningEn": "is gentle and kind"
+  },
+  "distractors": [
+    {
+      "word": "厳しいです",
+      "reading": "きびしいです",
+      "meaningEn": "is strict"
+    },
+    {
+      "word": "忙しいです",
+      "reading": "いそがしいです",
+      "meaningEn": "is busy"
+    },
+    {
+      "word": "若いです",
+      "reading": "わかいです",
+      "meaningEn": "is young"
+    }
+  ],
+  "sharedNuanceNote": "Attribute equivalence:「親切です」(kind) =「やさしいです」(gentle/kind)."
+},
+{
+  "id": "syn-n5-isogu-hashiru",
+  "jlpt": 5,
+  "sentenceJa": "遅刻しそうだったので、急いで学校へ行きました。",
+  "targetSurface": "急いで",
+  "sentenceEn": "I was about to be late, so I hurried to school.",
+  "targetWord": "急ぐ",
+  "targetReading": "いそぐ",
+  "targetMeaningEn": "to hurry",
+  "correctSynonym": {
+    "word": "走って",
+    "reading": "はしって",
+    "meaningEn": "running"
+  },
+  "distractors": [
+    {
+      "word": "歩いて",
+      "reading": "あるいて",
+      "meaningEn": "walking"
+    },
+    {
+      "word": "休んで",
+      "reading": "やすんで",
+      "meaningEn": "resting"
+    },
+    {
+      "word": "止まって",
+      "reading": "とまって",
+      "meaningEn": "stopping"
+    }
+  ],
+  "sharedNuanceNote": "Manner paraphrase:「急いで学校へ行く」in context equates to「走って行く」(go running)."
+},
+{
+  "id": "syn-n5-katazukeru",
+  "jlpt": 5,
+  "sentenceJa": "日曜日、部屋をきれいに片づけました。",
+  "targetSurface": "片づけました",
+  "sentenceEn": "On Sunday, I tidied up my room nicely.",
+  "targetWord": "片づける",
+  "targetReading": "かたづける",
+  "targetMeaningEn": "to tidy up, to clean up",
+  "correctSynonym": {
+    "word": "掃除しました",
+    "reading": "そうじしました",
+    "meaningEn": "cleaned"
+  },
+  "distractors": [
+    {
+      "word": "汚しました",
+      "reading": "よごしました",
+      "meaningEn": "dirtied"
+    },
+    {
+      "word": "壊しました",
+      "reading": "こわしました",
+      "meaningEn": "broke"
+    },
+    {
+      "word": "借りました",
+      "reading": "かりました",
+      "meaningEn": "borrowed"
+    }
+  ],
+  "sharedNuanceNote": "Action equivalence:「部屋を片づける」(tidy up room) =「掃除する」(clean)."
+},
+{
+  "id": "syn-n4-oishii-umai",
+  "jlpt": 4,
+  "sentenceJa": "母が作ったカレーはとてもうまいです。",
+  "targetSurface": "うまいです",
+  "sentenceEn": "The curry my mother made is very tasty.",
+  "targetWord": "うまい",
+  "targetReading": "うまい",
+  "targetMeaningEn": "delicious, tasty",
+  "correctSynonym": {
+    "word": "おいしいです",
+    "reading": "おいしいです",
+    "meaningEn": "is delicious"
+  },
+  "distractors": [
+    {
+      "word": "まずいです",
+      "reading": "まずいです",
+      "meaningEn": "tastes bad"
+    },
+    {
+      "word": "辛いです",
+      "reading": "からいです",
+      "meaningEn": "is spicy"
+    },
+    {
+      "word": "苦いです",
+      "reading": "にがいです",
+      "meaningEn": "is bitter"
+    }
+  ],
+  "sharedNuanceNote": "Food praise equivalence:「うまい」=「おいしい」(delicious)."
+},
+{
+  "id": "syn-n4-otona-kodomo-ja-nai",
+  "jlpt": 4,
+  "sentenceJa": "弟はもう大人です。",
+  "targetSurface": "大人です",
+  "sentenceEn": "My younger brother is already an adult.",
+  "targetWord": "大人",
+  "targetReading": "おとな",
+  "targetMeaningEn": "adult",
+  "correctSynonym": {
+    "word": "子どもではありません",
+    "reading": "こどもではありません",
+    "meaningEn": "is not a child"
+  },
+  "distractors": [
+    {
+      "word": "学生ではありません",
+      "reading": "がくせいではありません",
+      "meaningEn": "is not a student"
+    },
+    {
+      "word": "元気ではありません",
+      "reading": "げんきではありません",
+      "meaningEn": "is not energetic"
+    },
+    {
+      "word": "先生ではありません",
+      "reading": "せんせいではありません",
+      "meaningEn": "is not a teacher"
+    }
+  ],
+  "sharedNuanceNote": "Age negative flip:「大人です」(is an adult) =「子どもではありません」(is not a child)."
+},
+{
+  "id": "syn-n4-kega-shita",
+  "jlpt": 4,
+  "sentenceJa": "サッカーをしていて、足にけがをしました。",
+  "targetSurface": "けがをしました",
+  "sentenceEn": "While playing soccer, I injured my leg.",
+  "targetWord": "けが",
+  "targetReading": "けが",
+  "targetMeaningEn": "injury, hurt",
+  "correctSynonym": {
+    "word": "痛めました",
+    "reading": "いためました",
+    "meaningEn": "hurt / injured"
+  },
+  "distractors": [
+    {
+      "word": "洗いました",
+      "reading": "あらいました",
+      "meaningEn": "washed"
+    },
+    {
+      "word": "冷やしました",
+      "reading": "ひやしました",
+      "meaningEn": "chilled"
+    },
+    {
+      "word": "温めました",
+      "reading": "あたためました",
+      "meaningEn": "warmed"
+    }
+  ],
+  "sharedNuanceNote": "Injury expression:「けがをする」(get injured) =「痛める」(hurt/injure)."
+},
+{
+  "id": "syn-n4-shoujiki",
+  "jlpt": 4,
+  "sentenceJa": "彼はうそをつかない人です。",
+  "targetSurface": "うそをつかない人です",
+  "sentenceEn": "He is a person who does not tell lies.",
+  "targetWord": "正直",
+  "targetReading": "しょうじき",
+  "targetMeaningEn": "honest",
+  "correctSynonym": {
+    "word": "正直な人です",
+    "reading": "しょうじきなひとです",
+    "meaningEn": "is an honest person"
+  },
+  "distractors": [
+    {
+      "word": "親切な人です",
+      "reading": "しんせつなひとです",
+      "meaningEn": "is a kind person"
+    },
+    {
+      "word": "静かな人です",
+      "reading": "しずかなひとです",
+      "meaningEn": "is a quiet person"
+    },
+    {
+      "word": "厳しい人です",
+      "reading": "きびしいひとです",
+      "meaningEn": "is a strict person"
+    }
+  ],
+  "sharedNuanceNote": "Character description:「うそをつかない」(does not lie) =「正直な人」(honest person)."
+},
+{
+  "id": "syn-n4-shitsurei",
+  "jlpt": 4,
+  "sentenceJa": "先輩に対して失礼なことを言ってしまいました。",
+  "targetSurface": "失礼な",
+  "sentenceEn": "I accidentally said something rude to my senior.",
+  "targetWord": "失礼",
+  "targetReading": "しつれい",
+  "targetMeaningEn": "rude, impolite",
+  "correctSynonym": {
+    "word": "礼儀のない",
+    "reading": "れいぎのない",
+    "meaningEn": "without manners, impolite"
+  },
+  "distractors": [
+    {
+      "word": "親切な",
+      "reading": "しんせつな",
+      "meaningEn": "kind"
+    },
+    {
+      "word": "丁寧な",
+      "reading": "ていねいな",
+      "meaningEn": "polite"
+    },
+    {
+      "word": "面白い",
+      "reading": "おもしろい",
+      "meaningEn": "interesting"
+    }
+  ],
+  "sharedNuanceNote": "Negative etiquette:「失礼な」(rude) =「礼儀のない」(mannerless)."
+},
+{
+  "id": "syn-n4-totsuzen",
+  "jlpt": 4,
+  "sentenceJa": "雨がとつぜん降り出しました。",
+  "targetSurface": "とつぜん",
+  "sentenceEn": "Rain suddenly started falling.",
+  "targetWord": "突然",
+  "targetReading": "とつぜん",
+  "targetMeaningEn": "suddenly",
+  "correctSynonym": {
+    "word": "急に",
+    "reading": "きゅうに",
+    "meaningEn": "suddenly"
+  },
+  "distractors": [
+    {
+      "word": "ゆっくり",
+      "reading": "ゆっくり",
+      "meaningEn": "slowly"
+    },
+    {
+      "word": "だんだん",
+      "reading": "だんだん",
+      "meaningEn": "gradually"
+    },
+    {
+      "word": "静かに",
+      "reading": "しずかに",
+      "meaningEn": "quietly"
+    }
+  ],
+  "sharedNuanceNote": "Adverbial equivalence:「とつぜん」(suddenly) =「急に」(abruptly/suddenly)."
+},
+{
+  "id": "syn-n4-shousai",
+  "jlpt": 4,
+  "sentenceJa": "旅行の予定をくわしく教えてください。",
+  "targetSurface": "くわしく",
+  "sentenceEn": "Please tell me the travel plans in detail.",
+  "targetWord": "詳しい",
+  "targetReading": "くわしい",
+  "targetMeaningEn": "detailed",
+  "correctSynonym": {
+    "word": "細かく",
+    "reading": "こまかく",
+    "meaningEn": "finely / in detail"
+  },
+  "distractors": [
+    {
+      "word": "簡単に",
+      "reading": "かんたんに",
+      "meaningEn": "simply"
+    },
+    {
+      "word": "短く",
+      "reading": "みじかく",
+      "meaningEn": "shortly"
+    },
+    {
+      "word": "大まかに",
+      "reading": "おおまかに",
+      "meaningEn": "roughly"
+    }
+  ],
+  "sharedNuanceNote": "Degree of detail:「くわしく」(in detail) =「細かく」(specifically / in detail)."
+},
+{
+  "id": "syn-n4-tabun",
+  "jlpt": 4,
+  "sentenceJa": "明日はたぶん雨が降るでしょう。",
+  "targetSurface": "たぶん",
+  "sentenceEn": "Tomorrow it will probably rain.",
+  "targetWord": "多分",
+  "targetReading": "たぶん",
+  "targetMeaningEn": "probably, perhaps",
+  "correctSynonym": {
+    "word": "おそらく",
+    "reading": "おそらく",
+    "meaningEn": "perhaps, probably"
+  },
+  "distractors": [
+    {
+      "word": "きっと",
+      "reading": "きっと",
+      "meaningEn": "surely"
+    },
+    {
+      "word": "かならず",
+      "reading": "かならず",
+      "meaningEn": "without fail"
+    },
+    {
+      "word": "ぜったいに",
+      "reading": "ぜったいに",
+      "meaningEn": "definitely"
+    }
+  ],
+  "sharedNuanceNote": "Probability conjecture:「たぶん」=「おそらく」(probably / likely)."
+},
+{
+  "id": "syn-n4-shibaraku",
+  "jlpt": 4,
+  "sentenceJa": "ここでしばらくお待ちください。",
+  "targetSurface": "しばらく",
+  "sentenceEn": "Please wait here for a little while.",
+  "targetWord": "暫く",
+  "targetReading": "しばらく",
+  "targetMeaningEn": "for a while, a moment",
+  "correctSynonym": {
+    "word": "少しの間",
+    "reading": "すこしのあいだ",
+    "meaningEn": "for a short period"
+  },
+  "distractors": [
+    {
+      "word": "一日中",
+      "reading": "いちにちじゅう",
+      "meaningEn": "all day long"
+    },
+    {
+      "word": "長い時間",
+      "reading": "ながいじかん",
+      "meaningEn": "for a long time"
+    },
+    {
+      "word": "今すぐ",
+      "reading": "いますぐ",
+      "meaningEn": "right now"
+    }
+  ],
+  "sharedNuanceNote": "Duration expression:「しばらく」=「少しの間」(for a short while)."
+},
+{
+  "id": "syn-n4-konna-ni",
+  "jlpt": 4,
+  "sentenceJa": "こんなにたくさんの人がいるとは思いませんでした。",
+  "targetSurface": "こんなに",
+  "sentenceEn": "I did not think there would be this many people.",
+  "targetWord": "こんなに",
+  "targetReading": "こんなに",
+  "targetMeaningEn": "this much, so",
+  "correctSynonym": {
+    "word": "これほど",
+    "reading": "これほど",
+    "meaningEn": "to this extent"
+  },
+  "distractors": [
+    {
+      "word": "あんなに",
+      "reading": "あんなに",
+      "meaningEn": "that much"
+    },
+    {
+      "word": "少しだけ",
+      "reading": "すこしだけ",
+      "meaningEn": "only a little"
+    },
+    {
+      "word": "たまに",
+      "reading": "たまに",
+      "meaningEn": "occasionally"
+    }
+  ],
+  "sharedNuanceNote": "Degree expression:「こんなに」(this much) =「これほど」(to this degree)."
+},
 ];
 
 // ============================================================================

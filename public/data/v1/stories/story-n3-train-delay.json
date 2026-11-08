@@ -1,0 +1,4365 @@
+{
+  "id": "story-n3-train-delay",
+  "title": "朝の電車遅延：通勤ラッシュのアクシデント",
+  "titleRomaji": "Asa no Densha Chien: Tsuukin Rasshu no Akushidento",
+  "titleEn": "Morning Train Delay: Rush Hour Transit Accident",
+  "level": "N3",
+  "category": "Everyday Life",
+  "tags": [
+    "Everyday Life",
+    "N3",
+    "Commute",
+    "Train",
+    "Workplace Manners"
+  ],
+  "paragraphs": [
+    {
+      "ja": "朝の通勤ラッシュに揺られながら、私はいつも通り会社の始業時刻の三十分前に着く電車に乗っていました。ところが駅と駅の間のトンネルの中で、突然激しいブレーキ音とともに電車が急停車してしまったのです。「ただいま前方の中野駅において信号確認を行っているため、運転を見合わせております」と車内アナウンスが流れました。満員電車の車内には重苦しい空気が漂い、時計を見つめながらため息をつく乗客の姿が目立ち始めました。",
+      "en": "Swaying in the morning commuter rush, I was riding the train scheduled to arrive thirty minutes prior to my company's workday start as usual. However, inside the tunnel between stations, the train made a sudden emergency stop accompanied by the screeching of sharp brakes. 'Currently, due to a signal inspection taking place ahead at Nakano Station, operations are temporarily suspended,' an onboard announcement broadcast. A heavy, suffocating atmosphere drifted through the packed train carriage, and passengers sighing while checking their watches became conspicuous.",
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "meaning": "morning",
+          "baseForm": "朝",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "通勤"
+        },
+        {
+          "surface": "ラッシュ"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "揺"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "私",
+          "reading": "わたくし",
+          "meaning": "(humble) I; myself",
+          "baseForm": "私",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "いつも",
+          "meaning": "always",
+          "baseForm": "いつも",
+          "level": "N5"
+        },
+        {
+          "surface": "通り",
+          "reading": "とおり",
+          "meaning": "in accordance with ~; following ~; ~ Street",
+          "baseForm": "通り",
+          "level": "N3"
+        },
+        {
+          "surface": "会社",
+          "reading": "かいしゃ",
+          "meaning": "company",
+          "baseForm": "会社",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "始業"
+        },
+        {
+          "surface": "時刻"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "三",
+          "reading": "さん",
+          "meaning": "three",
+          "baseForm": "三",
+          "level": "N5"
+        },
+        {
+          "surface": "十分",
+          "reading": "じゅうぶん",
+          "meaning": "enough",
+          "baseForm": "十分",
+          "level": "N4"
+        },
+        {
+          "surface": "前",
+          "reading": "まえ",
+          "meaning": "before",
+          "baseForm": "前",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "着く",
+          "reading": "つく",
+          "meaning": "to arrive at",
+          "baseForm": "着く",
+          "level": "N5"
+        },
+        {
+          "surface": "電車",
+          "reading": "でんしゃ",
+          "meaning": "electric train",
+          "baseForm": "電車",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "乗",
+          "reading": "の",
+          "meaning": "to get on; to ride",
+          "baseForm": "乗る",
+          "level": "N5"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "いま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "ところが"
+        },
+        {
+          "surface": "駅",
+          "reading": "えき",
+          "meaning": "station",
+          "baseForm": "駅",
+          "level": "N5"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "駅",
+          "reading": "えき",
+          "meaning": "station",
+          "baseForm": "駅",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "間",
+          "reading": "あいだ",
+          "meaning": "a space",
+          "baseForm": "間",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "トンネル"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "中",
+          "reading": "なか",
+          "meaning": "middle",
+          "baseForm": "中",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "突然",
+          "reading": "とつぜん",
+          "meaning": "abruptly; suddenly; unexpectedly",
+          "baseForm": "突然",
+          "level": "N3"
+        },
+        {
+          "surface": "激しい",
+          "reading": "はげしい",
+          "meaning": "violent; vehement; intense",
+          "baseForm": "激しい",
+          "level": "N3"
+        },
+        {
+          "surface": "ブレーキ"
+        },
+        {
+          "surface": "音",
+          "reading": "おと",
+          "meaning": "sound; note",
+          "baseForm": "音",
+          "level": "N4"
+        },
+        {
+          "surface": "とともに"
+        },
+        {
+          "surface": "電車",
+          "reading": "でんしゃ",
+          "meaning": "electric train",
+          "baseForm": "電車",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "急停車"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "まっ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "ただいま"
+        },
+        {
+          "surface": "前方"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "中野"
+        },
+        {
+          "surface": "駅",
+          "reading": "えき",
+          "meaning": "station",
+          "baseForm": "駅",
+          "level": "N5"
+        },
+        {
+          "surface": "において"
+        },
+        {
+          "surface": "信号"
+        },
+        {
+          "surface": "確認"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "行",
+          "reading": "ぎょう",
+          "meaning": "line; row; verse",
+          "baseForm": "行",
+          "level": "N1"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "いる",
+          "meaning": "to be; to have (used for people and animals)",
+          "baseForm": "いる",
+          "level": "N5"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "運転"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "見合わせ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "おり"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "車内"
+        },
+        {
+          "surface": "アナウンス"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "流れ",
+          "reading": "ながれ",
+          "meaning": "stream; current",
+          "baseForm": "流れ",
+          "level": "N3"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "満員"
+        },
+        {
+          "surface": "電車",
+          "reading": "でんしゃ",
+          "meaning": "electric train",
+          "baseForm": "電車",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "車内"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "重苦しい"
+        },
+        {
+          "surface": "空気"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "漂"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "時計",
+          "reading": "とけい",
+          "meaning": "watch; clock",
+          "baseForm": "時計",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "見",
+          "reading": "み",
+          "meaning": "to see; to watch",
+          "baseForm": "見る",
+          "level": "N5"
+        },
+        {
+          "surface": "つめ"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "ため息"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "つく"
+        },
+        {
+          "surface": "乗客"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "姿",
+          "reading": "すがた",
+          "meaning": "figure; shape; appearance",
+          "baseForm": "姿",
+          "level": "N3"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "目",
+          "reading": "め",
+          "meaning": "eye",
+          "baseForm": "目",
+          "level": "N5"
+        },
+        {
+          "surface": "立ち",
+          "reading": "たち",
+          "meaning": "to stand",
+          "baseForm": "立つ",
+          "level": "N5"
+        },
+        {
+          "surface": "始め",
+          "reading": "はじめ",
+          "meaning": "beginning; start; origin",
+          "baseForm": "始め",
+          "level": "N1"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "朝の通勤ラッシュに揺られながら、私はいつも通り会社の始業時刻の三十分前に着く電車に乗っていました。",
+          "literalEn": "morning ['s / of] 通勤 ラッシュ [at/to] ながら  I [topic] always in accordance with ~ company ['s / of] 始業 時刻 ['s / of] three enough before [at/to] to arrive at electric train [at/to] to get on って いま した",
+          "naturalEn": "Swaying in the morning commuter rush, I was riding the train scheduled to arrive thirty minutes prior to my company's workday start as usual.",
+          "tokens": [
+            {
+              "surface": "朝",
+              "reading": "あさ",
+              "meaning": "morning",
+              "baseForm": "朝",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "通勤"
+            },
+            {
+              "surface": "ラッシュ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "揺"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "いつも",
+              "meaning": "always",
+              "baseForm": "いつも",
+              "level": "N5"
+            },
+            {
+              "surface": "通り",
+              "reading": "とおり",
+              "meaning": "in accordance with ~; following ~; ~ Street",
+              "baseForm": "通り",
+              "level": "N3"
+            },
+            {
+              "surface": "会社",
+              "reading": "かいしゃ",
+              "meaning": "company",
+              "baseForm": "会社",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "始業"
+            },
+            {
+              "surface": "時刻"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "三",
+              "reading": "さん",
+              "meaning": "three",
+              "baseForm": "三",
+              "level": "N5"
+            },
+            {
+              "surface": "十分",
+              "reading": "じゅうぶん",
+              "meaning": "enough",
+              "baseForm": "十分",
+              "level": "N4"
+            },
+            {
+              "surface": "前",
+              "reading": "まえ",
+              "meaning": "before",
+              "baseForm": "前",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "着く",
+              "reading": "つく",
+              "meaning": "to arrive at",
+              "baseForm": "着く",
+              "level": "N5"
+            },
+            {
+              "surface": "電車",
+              "reading": "でんしゃ",
+              "meaning": "electric train",
+              "baseForm": "電車",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "乗",
+              "reading": "の",
+              "meaning": "to get on; to ride",
+              "baseForm": "乗る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "ところが駅と駅の間のトンネルの中で、突然激しいブレーキ音とともに電車が急停車してしまったのです。",
+          "literalEn": "ところが station [with/and] station ['s / of] a space ['s / of] トンネル ['s / of] middle [in/by] abruptly violent ブレーキ sound とともに electric train [subj] 急停車 [and] まっ [past] ['s / of] [is]",
+          "naturalEn": "However, inside the tunnel between stations, the train made a sudden emergency stop accompanied by the screeching of sharp brakes.",
+          "tokens": [
+            {
+              "surface": "ところが"
+            },
+            {
+              "surface": "駅",
+              "reading": "えき",
+              "meaning": "station",
+              "baseForm": "駅",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "駅",
+              "reading": "えき",
+              "meaning": "station",
+              "baseForm": "駅",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "間",
+              "reading": "あいだ",
+              "meaning": "a space",
+              "baseForm": "間",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "トンネル"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "突然",
+              "reading": "とつぜん",
+              "meaning": "abruptly; suddenly; unexpectedly",
+              "baseForm": "突然",
+              "level": "N3"
+            },
+            {
+              "surface": "激しい",
+              "reading": "はげしい",
+              "meaning": "violent; vehement; intense",
+              "baseForm": "激しい",
+              "level": "N3"
+            },
+            {
+              "surface": "ブレーキ"
+            },
+            {
+              "surface": "音",
+              "reading": "おと",
+              "meaning": "sound; note",
+              "baseForm": "音",
+              "level": "N4"
+            },
+            {
+              "surface": "とともに"
+            },
+            {
+              "surface": "電車",
+              "reading": "でんしゃ",
+              "meaning": "electric train",
+              "baseForm": "電車",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "急停車"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "まっ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「ただいま前方の中野駅において信号確認を行っているため、運転を見合わせております」と車内アナウンスが流れました。",
+          "literalEn": "ただいま 前方 ['s / of] 中野 station において 信号 確認 [obj] line って to be ため 運転 [obj] 見合わせ [and] おり [polite] [with/and] 車内 アナウンス [subj] stream した",
+          "naturalEn": "'Currently, due to a signal inspection taking place ahead at Nakano Station, operations are temporarily suspended,' an onboard announcement broadcast.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "ただいま"
+            },
+            {
+              "surface": "前方"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "中野"
+            },
+            {
+              "surface": "駅",
+              "reading": "えき",
+              "meaning": "station",
+              "baseForm": "駅",
+              "level": "N5"
+            },
+            {
+              "surface": "において"
+            },
+            {
+              "surface": "信号"
+            },
+            {
+              "surface": "確認"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "行",
+              "reading": "ぎょう",
+              "meaning": "line; row; verse",
+              "baseForm": "行",
+              "level": "N1"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いる",
+              "meaning": "to be; to have (used for people and animals)",
+              "baseForm": "いる",
+              "level": "N5"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "運転"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見合わせ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "おり"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "車内"
+            },
+            {
+              "surface": "アナウンス"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "流れ",
+              "reading": "ながれ",
+              "meaning": "stream; current",
+              "baseForm": "流れ",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "満員電車の車内には重苦しい空気が漂い、時計を見つめながらため息をつく乗客の姿が目立ち始めました。",
+          "literalEn": "満員 electric train ['s / of] 車内 [at/to] [topic] 重苦しい 空気 [subj] watch [obj] to see つめ ながら ため息 [obj] つく 乗客 ['s / of] figure [subj] eye to stand beginning した",
+          "naturalEn": "A heavy, suffocating atmosphere drifted through the packed train carriage, and passengers sighing while checking their watches became conspicuous.",
+          "tokens": [
+            {
+              "surface": "満員"
+            },
+            {
+              "surface": "電車",
+              "reading": "でんしゃ",
+              "meaning": "electric train",
+              "baseForm": "電車",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "車内"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "重苦しい"
+            },
+            {
+              "surface": "空気"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "漂"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "時計",
+              "reading": "とけい",
+              "meaning": "watch; clock",
+              "baseForm": "時計",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "見",
+              "reading": "み",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "つめ"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "ため息"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "つく"
+            },
+            {
+              "surface": "乗客"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "姿",
+              "reading": "すがた",
+              "meaning": "figure; shape; appearance",
+              "baseForm": "姿",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "目",
+              "reading": "め",
+              "meaning": "eye",
+              "baseForm": "目",
+              "level": "N5"
+            },
+            {
+              "surface": "立ち",
+              "reading": "たち",
+              "meaning": "to stand",
+              "baseForm": "立つ",
+              "level": "N5"
+            },
+            {
+              "surface": "始め",
+              "reading": "はじめ",
+              "meaning": "beginning; start; origin",
+              "baseForm": "始め",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "十分が経過しても電車が動く気配はなく、九時からの重要な朝会に間に合わない可能性が高まってきました。社会人として無断遅刻は絶対に許されないため、スマートフォンを取り出して会社の上司に連絡を入れることにしました。車内での通話はマナー違反となるため、社内チャットツールを使って迅速に状況を報告しました。「現在、信号トラブルにより電車が停車中で、運転再開の見込みが立っていません。到着が遅れます」とメッセージを送信しました。",
+      "en": "Even after ten minutes passed, there was no sign of the train moving, and the probability of missing our crucial 9:00 AM morning meeting soared. Because unnotified tardiness is strictly impermissible for a working professional, I retrieved my smartphone to contact my supervisor. Since speaking on the phone onboard is a breach of etiquette, I swiftly reported the situation using our company chat application. 'Currently, the train is halted due to signal trouble with no estimated resumption time. My arrival will be delayed,' I transmitted.",
+      "tokens": [
+        {
+          "surface": "十分",
+          "reading": "じゅうぶん",
+          "meaning": "enough",
+          "baseForm": "十分",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "経過"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "電車",
+          "reading": "でんしゃ",
+          "meaning": "electric train",
+          "baseForm": "電車",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "動く"
+        },
+        {
+          "surface": "気配"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "なく"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "九時",
+          "reading": "くじ",
+          "meaning": "nine o'clock",
+          "baseForm": "九時",
+          "level": "N5"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "重要"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "朝会"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "間",
+          "reading": "あいだ",
+          "meaning": "a space",
+          "baseForm": "間",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "合"
+        },
+        {
+          "surface": "わ"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "可能性"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "高",
+          "reading": "たか",
+          "meaning": "quantity; amount; volume",
+          "baseForm": "高",
+          "level": "N1"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "き"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "社会"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "meaning": "person",
+          "baseForm": "人",
+          "level": "N5"
+        },
+        {
+          "surface": "として"
+        },
+        {
+          "surface": "無断"
+        },
+        {
+          "surface": "遅刻"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "絶対に",
+          "reading": "ぜったいに",
+          "meaning": "absolute; unconditional; absoluteness",
+          "baseForm": "絶対",
+          "level": "N3"
+        },
+        {
+          "surface": "許",
+          "reading": "ゆる",
+          "meaning": "to permit; to allow; to approve",
+          "baseForm": "許す",
+          "level": "N3"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ない"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "スマート"
+        },
+        {
+          "surface": "フォン"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "取り出し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "会社",
+          "reading": "かいしゃ",
+          "meaning": "company",
+          "baseForm": "会社",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "上司"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "連絡"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "入れる"
+        },
+        {
+          "surface": "ことに"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "車内"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "通話"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "マナー"
+        },
+        {
+          "surface": "違反"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "なる",
+          "meaning": "to become",
+          "baseForm": "なる",
+          "level": "N5"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "社内"
+        },
+        {
+          "surface": "チャット"
+        },
+        {
+          "surface": "ツール"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "使",
+          "reading": "つか",
+          "meaning": "to use",
+          "baseForm": "使う",
+          "level": "N5"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "迅速"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "状況"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "報告"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "現在"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "信号"
+        },
+        {
+          "surface": "トラブル"
+        },
+        {
+          "surface": "により"
+        },
+        {
+          "surface": "電車",
+          "reading": "でんしゃ",
+          "meaning": "electric train",
+          "baseForm": "電車",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "停車"
+        },
+        {
+          "surface": "中",
+          "reading": "なか",
+          "meaning": "middle",
+          "baseForm": "中",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "運転"
+        },
+        {
+          "surface": "再開"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "見込み"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "立",
+          "reading": "た",
+          "meaning": "to stand",
+          "baseForm": "立つ",
+          "level": "N5"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "いま"
+        },
+        {
+          "surface": "せん"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "到着",
+          "reading": "とうちゃく",
+          "meaning": "arrival",
+          "baseForm": "到着",
+          "level": "N3"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "遅れ"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "メッセージ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "送信"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "十分が経過しても電車が動く気配はなく、九時からの重要な朝会に間に合わない可能性が高まってきました。",
+          "literalEn": "enough [subj] 経過 [and] [also] electric train [subj] 動く 気配 [topic] なく nine o'clock [from] ['s / of] 重要 朝会 [at/to] a space [at/to] [not] 可能性 [subj] quantity って した",
+          "naturalEn": "Even after ten minutes passed, there was no sign of the train moving, and the probability of missing our crucial 9:00 AM morning meeting soared.",
+          "tokens": [
+            {
+              "surface": "十分",
+              "reading": "じゅうぶん",
+              "meaning": "enough",
+              "baseForm": "十分",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "経過"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "電車",
+              "reading": "でんしゃ",
+              "meaning": "electric train",
+              "baseForm": "電車",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "動く"
+            },
+            {
+              "surface": "気配"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "なく"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "九時",
+              "reading": "くじ",
+              "meaning": "nine o'clock",
+              "baseForm": "九時",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "重要"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "朝会"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "間",
+              "reading": "あいだ",
+              "meaning": "a space",
+              "baseForm": "間",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "合"
+            },
+            {
+              "surface": "わ"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "可能性"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "高",
+              "reading": "たか",
+              "meaning": "quantity; amount; volume",
+              "baseForm": "高",
+              "level": "N1"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "社会人として無断遅刻は絶対に許されないため、スマートフォンを取り出して会社の上司に連絡を入れることにしました。",
+          "literalEn": "社会 person として 無断 遅刻 [topic] absolute to permit [not] ため スマート フォン [obj] 取り出し [and] company ['s / of] 上司 [at/to] 連絡 [obj] 入れる ことに しま した",
+          "naturalEn": "Because unnotified tardiness is strictly impermissible for a working professional, I retrieved my smartphone to contact my supervisor.",
+          "tokens": [
+            {
+              "surface": "社会"
+            },
+            {
+              "surface": "人",
+              "reading": "ひと",
+              "meaning": "person",
+              "baseForm": "人",
+              "level": "N5"
+            },
+            {
+              "surface": "として"
+            },
+            {
+              "surface": "無断"
+            },
+            {
+              "surface": "遅刻"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "絶対に",
+              "reading": "ぜったいに",
+              "meaning": "absolute; unconditional; absoluteness",
+              "baseForm": "絶対",
+              "level": "N3"
+            },
+            {
+              "surface": "許",
+              "reading": "ゆる",
+              "meaning": "to permit; to allow; to approve",
+              "baseForm": "許す",
+              "level": "N3"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ない"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "スマート"
+            },
+            {
+              "surface": "フォン"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "取り出し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "会社",
+              "reading": "かいしゃ",
+              "meaning": "company",
+              "baseForm": "会社",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "上司"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "連絡"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "入れる"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "車内での通話はマナー違反となるため、社内チャットツールを使って迅速に状況を報告しました。",
+          "literalEn": "車内 [in/by] ['s / of] 通話 [topic] マナー 違反 [with/and] to become ため 社内 チャット ツール [obj] to use って 迅速 [at/to] 状況 [obj] 報告 しま した",
+          "naturalEn": "Since speaking on the phone onboard is a breach of etiquette, I swiftly reported the situation using our company chat application.",
+          "tokens": [
+            {
+              "surface": "車内"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "通話"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "マナー"
+            },
+            {
+              "surface": "違反"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "なる",
+              "meaning": "to become",
+              "baseForm": "なる",
+              "level": "N5"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "社内"
+            },
+            {
+              "surface": "チャット"
+            },
+            {
+              "surface": "ツール"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "使",
+              "reading": "つか",
+              "meaning": "to use",
+              "baseForm": "使う",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "迅速"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "状況"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "報告"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「現在、信号トラブルにより電車が停車中で、運転再開の見込みが立っていません。到着が遅れます」とメッセージを送信しました。",
+          "literalEn": "現在 信号 トラブル により electric train [subj] 停車 middle [in/by] 運転 再開 ['s / of] 見込み [subj] to stand って いま せん arrival [subj] 遅れ [polite] [with/and] メッセージ [obj] 送信 しま した",
+          "naturalEn": "'Currently, the train is halted due to signal trouble with no estimated resumption time. My arrival will be delayed,' I transmitted.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "現在"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "信号"
+            },
+            {
+              "surface": "トラブル"
+            },
+            {
+              "surface": "により"
+            },
+            {
+              "surface": "電車",
+              "reading": "でんしゃ",
+              "meaning": "electric train",
+              "baseForm": "電車",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "停車"
+            },
+            {
+              "surface": "中",
+              "reading": "なか",
+              "meaning": "middle",
+              "baseForm": "中",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "運転"
+            },
+            {
+              "surface": "再開"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "見込み"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "立",
+              "reading": "た",
+              "meaning": "to stand",
+              "baseForm": "立つ",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "。"
+            },
+            {
+              "surface": "到着",
+              "reading": "とうちゃく",
+              "meaning": "arrival",
+              "baseForm": "到着",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "遅れ"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "メッセージ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "送信"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "上司からすぐに「了解しました。安全第一で無理をせず向かってください」と温かい返信が届き、焦る気持ちが落ち着きました。停車から約二十五分後、ようやく信号が復旧し、電車は徐行運転で次の主要ターミナル駅へと滑り込みました。駅構内では「他社線への振替輸送を実施しております」と駅員が拡声器で案内を行っていました。私は改札口の窓口へ向かい、電車が遅れたことを証明するための「遅延証明書」を駅員から受け取りました。",
+      "en": "A reassuring reply arrived promptly from my supervisor: 'Understood. Put safety first and proceed without rushing,' calming my agitated nerves. Roughly twenty-five minutes after stopping, the signal was finally restored, and the train glided into the next major terminal station at slow speed. Inside the station concourse, attendants were directing crowds via megaphones: 'Alternative transfer transportation is in effect on other rail lines.' I headed to the ticket barrier counter and received a 'Delay Certificate' from the station attendant proving the train's delay.",
+      "tokens": [
+        {
+          "surface": "上司"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "すぐ",
+          "meaning": "immediately; soon; easily",
+          "baseForm": "すぐ",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "了解"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "安全"
+        },
+        {
+          "surface": "第一"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "無理"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "せ"
+        },
+        {
+          "surface": "ず"
+        },
+        {
+          "surface": "向",
+          "reading": "む",
+          "meaning": "to face",
+          "baseForm": "向く",
+          "level": "N3"
+        },
+        {
+          "surface": "かって"
+        },
+        {
+          "surface": "くだ"
+        },
+        {
+          "surface": "さい"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "温かい",
+          "reading": "ぬるかい",
+          "meaning": "luke warm",
+          "baseForm": "温い",
+          "level": "N5"
+        },
+        {
+          "surface": "返信"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "届"
+        },
+        {
+          "surface": "き"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "焦る"
+        },
+        {
+          "surface": "気持ち",
+          "reading": "きもち",
+          "meaning": "feeling; mood",
+          "baseForm": "気持ち",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "落ち着き"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "停車"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "約"
+        },
+        {
+          "surface": "二十"
+        },
+        {
+          "surface": "五分"
+        },
+        {
+          "surface": "後",
+          "reading": "あと",
+          "meaning": "afterwards",
+          "baseForm": "後",
+          "level": "N5"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "ようやく"
+        },
+        {
+          "surface": "信号"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "復旧"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "電車",
+          "reading": "でんしゃ",
+          "meaning": "electric train",
+          "baseForm": "電車",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "徐行"
+        },
+        {
+          "surface": "運転"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "次",
+          "reading": "つぎ",
+          "meaning": "next",
+          "baseForm": "次",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "主要"
+        },
+        {
+          "surface": "ターミナル"
+        },
+        {
+          "surface": "駅",
+          "reading": "えき",
+          "meaning": "station",
+          "baseForm": "駅",
+          "level": "N5"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "滑り"
+        },
+        {
+          "surface": "込み"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "駅",
+          "reading": "えき",
+          "meaning": "station",
+          "baseForm": "駅",
+          "level": "N5"
+        },
+        {
+          "surface": "構内"
+        },
+        {
+          "surface": "では",
+          "meaning": "with that...",
+          "baseForm": "では",
+          "level": "N5"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "他社"
+        },
+        {
+          "surface": "線"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "振替"
+        },
+        {
+          "surface": "輸送"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "実施"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "おり"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "駅員",
+          "reading": "えきいん",
+          "meaning": "station attendant",
+          "baseForm": "駅員",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "拡声"
+        },
+        {
+          "surface": "器"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "案内",
+          "reading": "あんない",
+          "meaning": "to guide",
+          "baseForm": "案内",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "行",
+          "reading": "ぎょう",
+          "meaning": "line; row; verse",
+          "baseForm": "行",
+          "level": "N1"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "いま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "私",
+          "reading": "わたくし",
+          "meaning": "(humble) I; myself",
+          "baseForm": "私",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "改札",
+          "reading": "かいさつ",
+          "meaning": "examination of tickets",
+          "baseForm": "改札",
+          "level": "N2"
+        },
+        {
+          "surface": "口",
+          "reading": "くち",
+          "meaning": "mouth; opening",
+          "baseForm": "口",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "窓口",
+          "reading": "まどぐち",
+          "meaning": "ticket window",
+          "baseForm": "窓口",
+          "level": "N2"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "向かい",
+          "reading": "むかい",
+          "meaning": "facing; opposite; across the street",
+          "baseForm": "向かい",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "電車",
+          "reading": "でんしゃ",
+          "meaning": "electric train",
+          "baseForm": "電車",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "遅れ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "証明"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "遅延"
+        },
+        {
+          "surface": "証明書"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "駅員",
+          "reading": "えきいん",
+          "meaning": "station attendant",
+          "baseForm": "駅員",
+          "level": "N4"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "受け取り"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "上司からすぐに「了解しました。安全第一で無理をせず向かってください」と温かい返信が届き、焦る気持ちが落ち着きました。",
+          "literalEn": "上司 [from] immediately [at/to] 了解 しま した 安全 第一 [in/by] 無理 [obj] to face かって くだ さい [with/and] luke warm 返信 [subj] 焦る feeling [subj] 落ち着き した",
+          "naturalEn": "A reassuring reply arrived promptly from my supervisor: 'Understood. Put safety first and proceed without rushing,' calming my agitated nerves.",
+          "tokens": [
+            {
+              "surface": "上司"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "すぐ",
+              "meaning": "immediately; soon; easily",
+              "baseForm": "すぐ",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "了解"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            },
+            {
+              "surface": "安全"
+            },
+            {
+              "surface": "第一"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "無理"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "ず"
+            },
+            {
+              "surface": "向",
+              "reading": "む",
+              "meaning": "to face",
+              "baseForm": "向く",
+              "level": "N3"
+            },
+            {
+              "surface": "かって"
+            },
+            {
+              "surface": "くだ"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "温かい",
+              "reading": "ぬるかい",
+              "meaning": "luke warm",
+              "baseForm": "温い",
+              "level": "N5"
+            },
+            {
+              "surface": "返信"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "届"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "焦る"
+            },
+            {
+              "surface": "気持ち",
+              "reading": "きもち",
+              "meaning": "feeling; mood",
+              "baseForm": "気持ち",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "落ち着き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "停車から約二十五分後、ようやく信号が復旧し、電車は徐行運転で次の主要ターミナル駅へと滑り込みました。",
+          "literalEn": "停車 [from] 二十 五分 afterwards ようやく 信号 [subj] 復旧 electric train [topic] 徐行 運転 [in/by] next ['s / of] 主要 ターミナル station [toward] [with/and] 滑り 込み した",
+          "naturalEn": "Roughly twenty-five minutes after stopping, the signal was finally restored, and the train glided into the next major terminal station at slow speed.",
+          "tokens": [
+            {
+              "surface": "停車"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "約"
+            },
+            {
+              "surface": "二十"
+            },
+            {
+              "surface": "五分"
+            },
+            {
+              "surface": "後",
+              "reading": "あと",
+              "meaning": "afterwards",
+              "baseForm": "後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ようやく"
+            },
+            {
+              "surface": "信号"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "復旧"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "電車",
+              "reading": "でんしゃ",
+              "meaning": "electric train",
+              "baseForm": "電車",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "徐行"
+            },
+            {
+              "surface": "運転"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "次",
+              "reading": "つぎ",
+              "meaning": "next",
+              "baseForm": "次",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "主要"
+            },
+            {
+              "surface": "ターミナル"
+            },
+            {
+              "surface": "駅",
+              "reading": "えき",
+              "meaning": "station",
+              "baseForm": "駅",
+              "level": "N5"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "滑り"
+            },
+            {
+              "surface": "込み"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "駅構内では「他社線への振替輸送を実施しております」と駅員が拡声器で案内を行っていました。",
+          "literalEn": "station 構内 with that... 他社 [toward] ['s / of] 振替 輸送 [obj] 実施 [and] おり [polite] [with/and] station attendant [subj] 拡声 [in/by] to guide [obj] line って いま した",
+          "naturalEn": "Inside the station concourse, attendants were directing crowds via megaphones: 'Alternative transfer transportation is in effect on other rail lines.'",
+          "tokens": [
+            {
+              "surface": "駅",
+              "reading": "えき",
+              "meaning": "station",
+              "baseForm": "駅",
+              "level": "N5"
+            },
+            {
+              "surface": "構内"
+            },
+            {
+              "surface": "では",
+              "meaning": "with that...",
+              "baseForm": "では",
+              "level": "N5"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "他社"
+            },
+            {
+              "surface": "線"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "振替"
+            },
+            {
+              "surface": "輸送"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "実施"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "おり"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "駅員",
+              "reading": "えきいん",
+              "meaning": "station attendant",
+              "baseForm": "駅員",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "拡声"
+            },
+            {
+              "surface": "器"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "案内",
+              "reading": "あんない",
+              "meaning": "to guide",
+              "baseForm": "案内",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "行",
+              "reading": "ぎょう",
+              "meaning": "line; row; verse",
+              "baseForm": "行",
+              "level": "N1"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "私は改札口の窓口へ向かい、電車が遅れたことを証明するための「遅延証明書」を駅員から受け取りました。",
+          "literalEn": "I [topic] examination of tickets mouth ['s / of] ticket window [toward] facing electric train [subj] 遅れ [past] thing [obj] 証明 to do ため ['s / of] 遅延 証明書 [obj] station attendant [from] 受け取り した",
+          "naturalEn": "I headed to the ticket barrier counter and received a 'Delay Certificate' from the station attendant proving the train's delay.",
+          "tokens": [
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "改札",
+              "reading": "かいさつ",
+              "meaning": "examination of tickets",
+              "baseForm": "改札",
+              "level": "N2"
+            },
+            {
+              "surface": "口",
+              "reading": "くち",
+              "meaning": "mouth; opening",
+              "baseForm": "口",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "窓口",
+              "reading": "まどぐち",
+              "meaning": "ticket window",
+              "baseForm": "窓口",
+              "level": "N2"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "向かい",
+              "reading": "むかい",
+              "meaning": "facing; opposite; across the street",
+              "baseForm": "向かい",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "電車",
+              "reading": "でんしゃ",
+              "meaning": "electric train",
+              "baseForm": "電車",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "遅れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "証明"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "遅延"
+            },
+            {
+              "surface": "証明書"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "駅員",
+              "reading": "えきいん",
+              "meaning": "station attendant",
+              "baseForm": "駅員",
+              "level": "N4"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "受け取り"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "最近では紙の証明書だけでなく、鉄道会社の公式ウェブサイトから電子版の証明書をダウンロードすることも可能になっています。地下鉄の振替ルートを利用して迂回した結果、始業時刻から約十五分遅れてオフィスに到着しました。受付を通って部署に入ると、上司や同僚に向かって「電車遅延のため遅れてしまい、大変申し訳ありませんでした」と一礼しました。人事部に遅延証明書を提出したことで、電車の遅れによる正当な遅刻として処理され、ペナルティを受けることはありませんでした。",
+      "en": "Nowadays, alongside paper slips, it has also become possible to download an electronic certificate directly from the railway company's website. Bypassing the disruption using the subway's alternative transit route, I arrived at the office roughly fifteen minutes past the official start time. Passing reception and entering the department, I bowed to my supervisor and colleagues: 'I apologize profusely for my delay due to train disruptions.' By submitting the delay certificate to HR, it was officially processed as a justified transit delay without incurring any disciplinary penalty.",
+      "tokens": [
+        {
+          "surface": "最近"
+        },
+        {
+          "surface": "では",
+          "meaning": "with that...",
+          "baseForm": "では",
+          "level": "N5"
+        },
+        {
+          "surface": "紙",
+          "reading": "かみ",
+          "meaning": "paper",
+          "baseForm": "紙",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "証明書"
+        },
+        {
+          "surface": "だけ"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "なく"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "鉄道"
+        },
+        {
+          "surface": "会社",
+          "reading": "かいしゃ",
+          "meaning": "company",
+          "baseForm": "会社",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "公式"
+        },
+        {
+          "surface": "ウェブサイト"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "電子"
+        },
+        {
+          "surface": "版"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "証明書"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "ダウンロード"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "可能"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "地下鉄"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "振替"
+        },
+        {
+          "surface": "ルート"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "利用"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "迂回"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "結果"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "始業"
+        },
+        {
+          "surface": "時刻"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "約"
+        },
+        {
+          "surface": "十五",
+          "reading": "じゅうご",
+          "meaning": "fifteen (15)",
+          "baseForm": "十五",
+          "level": "N5"
+        },
+        {
+          "surface": "分",
+          "reading": "ぶん",
+          "meaning": "dividing; part",
+          "baseForm": "分",
+          "level": "N3"
+        },
+        {
+          "surface": "遅れ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "オフィス"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "到着",
+          "reading": "とうちゃく",
+          "meaning": "arrival",
+          "baseForm": "到着",
+          "level": "N3"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "受付"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "通",
+          "reading": "つう",
+          "meaning": "connoisseur; counter for letters",
+          "baseForm": "通",
+          "level": "N1"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "部署"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "入る",
+          "reading": "はいる",
+          "meaning": "to enter; to contain",
+          "baseForm": "入る",
+          "level": "N5"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "上司"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "同僚",
+          "reading": "どうりょう",
+          "meaning": "coworker; colleague; associate",
+          "baseForm": "同僚",
+          "level": "N3"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "向",
+          "reading": "む",
+          "meaning": "to face",
+          "baseForm": "向く",
+          "level": "N3"
+        },
+        {
+          "surface": "かって"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "電車",
+          "reading": "でんしゃ",
+          "meaning": "electric train",
+          "baseForm": "電車",
+          "level": "N5"
+        },
+        {
+          "surface": "遅延"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ため"
+        },
+        {
+          "surface": "遅れ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "大変",
+          "reading": "たいへん",
+          "meaning": "very; terrible; difficult",
+          "baseForm": "大変",
+          "level": "N5"
+        },
+        {
+          "surface": "申し訳"
+        },
+        {
+          "surface": "ありま"
+        },
+        {
+          "surface": "せん"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "一礼"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "人事部"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "遅延"
+        },
+        {
+          "surface": "証明書"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "提出"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "電車",
+          "reading": "でんしゃ",
+          "meaning": "electric train",
+          "baseForm": "電車",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "遅れ"
+        },
+        {
+          "surface": "による"
+        },
+        {
+          "surface": "正当"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "遅刻"
+        },
+        {
+          "surface": "として"
+        },
+        {
+          "surface": "処理"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "ペナルティ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "受ける"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "ありま"
+        },
+        {
+          "surface": "せん"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "最近では紙の証明書だけでなく、鉄道会社の公式ウェブサイトから電子版の証明書をダウンロードすることも可能になっています。",
+          "literalEn": "最近 with that... paper ['s / of] 証明書 だけ [in/by] なく 鉄道 company ['s / of] 公式 ウェブサイト [from] 電子 ['s / of] 証明書 [obj] ダウンロード to do thing [also] 可能 [at/to] って [polite]",
+          "naturalEn": "Nowadays, alongside paper slips, it has also become possible to download an electronic certificate directly from the railway company's website.",
+          "tokens": [
+            {
+              "surface": "最近"
+            },
+            {
+              "surface": "では",
+              "meaning": "with that...",
+              "baseForm": "では",
+              "level": "N5"
+            },
+            {
+              "surface": "紙",
+              "reading": "かみ",
+              "meaning": "paper",
+              "baseForm": "紙",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "証明書"
+            },
+            {
+              "surface": "だけ"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "なく"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "鉄道"
+            },
+            {
+              "surface": "会社",
+              "reading": "かいしゃ",
+              "meaning": "company",
+              "baseForm": "会社",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "公式"
+            },
+            {
+              "surface": "ウェブサイト"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "電子"
+            },
+            {
+              "surface": "版"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "証明書"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "ダウンロード"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "可能"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "地下鉄の振替ルートを利用して迂回した結果、始業時刻から約十五分遅れてオフィスに到着しました。",
+          "literalEn": "地下鉄 ['s / of] 振替 ルート [obj] 利用 [and] 迂回 した 結果 始業 時刻 [from] fifteen dividing 遅れ [and] オフィス [at/to] arrival しま した",
+          "naturalEn": "Bypassing the disruption using the subway's alternative transit route, I arrived at the office roughly fifteen minutes past the official start time.",
+          "tokens": [
+            {
+              "surface": "地下鉄"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "振替"
+            },
+            {
+              "surface": "ルート"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "利用"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "迂回"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "結果"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "始業"
+            },
+            {
+              "surface": "時刻"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "約"
+            },
+            {
+              "surface": "十五",
+              "reading": "じゅうご",
+              "meaning": "fifteen (15)",
+              "baseForm": "十五",
+              "level": "N5"
+            },
+            {
+              "surface": "分",
+              "reading": "ぶん",
+              "meaning": "dividing; part",
+              "baseForm": "分",
+              "level": "N3"
+            },
+            {
+              "surface": "遅れ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "オフィス"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "到着",
+              "reading": "とうちゃく",
+              "meaning": "arrival",
+              "baseForm": "到着",
+              "level": "N3"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "受付を通って部署に入ると、上司や同僚に向かって「電車遅延のため遅れてしまい、大変申し訳ありませんでした」と一礼しました。",
+          "literalEn": "受付 [obj] connoisseur って 部署 [at/to] to enter [with/and] 上司 coworker [at/to] to face かって electric train 遅延 ['s / of] ため 遅れ [and] しま very 申し訳 ありま せん [in/by] した [with/and] 一礼 しま した",
+          "naturalEn": "Passing reception and entering the department, I bowed to my supervisor and colleagues: 'I apologize profusely for my delay due to train disruptions.'",
+          "tokens": [
+            {
+              "surface": "受付"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "通",
+              "reading": "つう",
+              "meaning": "connoisseur; counter for letters",
+              "baseForm": "通",
+              "level": "N1"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "部署"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入る",
+              "reading": "はいる",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "上司"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "同僚",
+              "reading": "どうりょう",
+              "meaning": "coworker; colleague; associate",
+              "baseForm": "同僚",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "向",
+              "reading": "む",
+              "meaning": "to face",
+              "baseForm": "向く",
+              "level": "N3"
+            },
+            {
+              "surface": "かって"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "電車",
+              "reading": "でんしゃ",
+              "meaning": "electric train",
+              "baseForm": "電車",
+              "level": "N5"
+            },
+            {
+              "surface": "遅延"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ため"
+            },
+            {
+              "surface": "遅れ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "大変",
+              "reading": "たいへん",
+              "meaning": "very; terrible; difficult",
+              "baseForm": "大変",
+              "level": "N5"
+            },
+            {
+              "surface": "申し訳"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "一礼"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "人事部に遅延証明書を提出したことで、電車の遅れによる正当な遅刻として処理され、ペナルティを受けることはありませんでした。",
+          "literalEn": "人事部 [at/to] 遅延 証明書 [obj] 提出 した thing [in/by] electric train ['s / of] 遅れ による 正当 遅刻 として 処理 ペナルティ [obj] 受ける thing [topic] ありま せん [in/by] した",
+          "naturalEn": "By submitting the delay certificate to HR, it was officially processed as a justified transit delay without incurring any disciplinary penalty.",
+          "tokens": [
+            {
+              "surface": "人事部"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "遅延"
+            },
+            {
+              "surface": "証明書"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "提出"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "電車",
+              "reading": "でんしゃ",
+              "meaning": "electric train",
+              "baseForm": "電車",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "遅れ"
+            },
+            {
+              "surface": "による"
+            },
+            {
+              "surface": "正当"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "遅刻"
+            },
+            {
+              "surface": "として"
+            },
+            {
+              "surface": "処理"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "ペナルティ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "受ける"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "ありま"
+            },
+            {
+              "surface": "せん"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "突発的なトラブルに見舞われても、事前の連絡と確実な証明書類の提出を行うことの大切さを学んだ一日となりました。どのような予期せぬ状況に遭遇しても、冷静沈着に対処できる責任感をこれからも培っていきたいです。",
+      "en": "It proved a day where I learned the paramount importance of prompt advance communication and submitting proper documentation whenever struck by sudden mishaps. Whatever unexpected situations I encounter, I wish to continue cultivating the sense of responsibility to cope with cool-headed composure.",
+      "tokens": [
+        {
+          "surface": "突発"
+        },
+        {
+          "surface": "的"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "トラブル"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "見舞"
+        },
+        {
+          "surface": "われ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "事前"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "連絡"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "確実"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "証明書"
+        },
+        {
+          "surface": "類"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "提出"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "行う"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "大切",
+          "reading": "たいせつ",
+          "meaning": "important",
+          "baseForm": "大切",
+          "level": "N5"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "学"
+        },
+        {
+          "surface": "ん"
+        },
+        {
+          "surface": "だ"
+        },
+        {
+          "surface": "一日",
+          "reading": "いちにち",
+          "meaning": "one day; all day",
+          "baseForm": "一日",
+          "level": "N5"
+        },
+        {
+          "surface": "となり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "どの"
+        },
+        {
+          "surface": "よう"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "予期"
+        },
+        {
+          "surface": "せ"
+        },
+        {
+          "surface": "ぬ"
+        },
+        {
+          "surface": "状況"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "遭遇"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "冷静"
+        },
+        {
+          "surface": "沈着"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "対処"
+        },
+        {
+          "surface": "できる",
+          "meaning": "to be able to",
+          "baseForm": "できる",
+          "level": "N5"
+        },
+        {
+          "surface": "責任感"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "これから"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "培"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "いき"
+        },
+        {
+          "surface": "たい"
+        },
+        {
+          "surface": "です"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "突発的なトラブルに見舞われても、事前の連絡と確実な証明書類の提出を行うことの大切さを学んだ一日となりました。",
+          "literalEn": "突発 トラブル [at/to] 見舞 われ [and] [also] 事前 ['s / of] 連絡 [with/and] 確実 証明書 ['s / of] 提出 [obj] 行う thing ['s / of] important [obj] [is] one day となり した",
+          "naturalEn": "It proved a day where I learned the paramount importance of prompt advance communication and submitting proper documentation whenever struck by sudden mishaps.",
+          "tokens": [
+            {
+              "surface": "突発"
+            },
+            {
+              "surface": "的"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "トラブル"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "見舞"
+            },
+            {
+              "surface": "われ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "事前"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "連絡"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "確実"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "証明書"
+            },
+            {
+              "surface": "類"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "提出"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "行う"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "大切",
+              "reading": "たいせつ",
+              "meaning": "important",
+              "baseForm": "大切",
+              "level": "N5"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "学"
+            },
+            {
+              "surface": "ん"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "一日",
+              "reading": "いちにち",
+              "meaning": "one day; all day",
+              "baseForm": "一日",
+              "level": "N5"
+            },
+            {
+              "surface": "となり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "どのような予期せぬ状況に遭遇しても、冷静沈着に対処できる責任感をこれからも培っていきたいです。",
+          "literalEn": "どの よう 予期 状況 [at/to] 遭遇 [and] [also] 冷静 沈着 [at/to] 対処 to be able to 責任感 [obj] これから [also] って いき [want to] [is]",
+          "naturalEn": "Whatever unexpected situations I encounter, I wish to continue cultivating the sense of responsibility to cope with cool-headed composure.",
+          "tokens": [
+            {
+              "surface": "どの"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "予期"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "ぬ"
+            },
+            {
+              "surface": "状況"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "遭遇"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "冷静"
+            },
+            {
+              "surface": "沈着"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "対処"
+            },
+            {
+              "surface": "できる",
+              "meaning": "to be able to",
+              "baseForm": "できる",
+              "level": "N5"
+            },
+            {
+              "surface": "責任感"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "これから"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "培"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いき"
+            },
+            {
+              "surface": "たい"
+            },
+            {
+              "surface": "です"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "満員電車の中で急停車した際、語り手が上司への連絡手段として電話ではなくチャットを選んだ理由は何ですか。",
+      "questionEn": "Why did the narrator choose chat over a phone call when contacting their supervisor inside the halted train?",
+      "options": [
+        "日本の電車内での携帯電話による通話はマナー違反とされているから",
+        "スマートフォンの通話機能が故障していたから",
+        "上司が耳が遠くて電話の声が聞こえないから",
+        "チャットの方が文字数が多く打てるから"
+      ],
+      "optionsEn": [
+        "Speaking on mobile phones inside Japanese train carriages is considered bad etiquette",
+        "The smartphone's telephone calling hardware was broken",
+        "The supervisor was hard of hearing and could not hear over the phone",
+        "Chat allows typing a greater volume of text characters"
+      ],
+      "answerIndex": 0,
+      "explanation": "日本の公共交通機関では、車内通話は周囲への迷惑マナー違反となるため、メールやチャットで連絡するのが常識です。"
+    },
+    {
+      "question": "電車遅延が原因で会社に遅刻した際、正当な理由であることを会社に証明するために提出する書類は何ですか。",
+      "questionEn": "What document is submitted to the company to prove that tardiness was due to legitimate train delays?",
+      "options": [
+        "鉄道会社が発行する遅延証明書",
+        "電車の切符の半券",
+        "駅の看板を撮影した写真",
+        "車掌の直筆サイン"
+      ],
+      "optionsEn": [
+        "A Delay Certificate (Chien Shoumeisho) issued by the railway company",
+        "A train ticket receipt stub",
+        "A photograph taken of the station signboard",
+        "A handwritten autograph from the train conductor"
+      ],
+      "answerIndex": 0,
+      "explanation": "鉄道会社が発行する公式な「遅延証明書」（紙またはWEB取得）を提出することで、無断遅刻ではなく免責扱いとなります。"
+    },
+    {
+      "question": "電車の運転見合わせ時に、他社線を利用して迂回できる仕組みを何と呼びますか。",
+      "questionEn": "What is the system called that allows passengers to detour using another railway company's line during service halts?",
+      "options": [
+        "振替輸送（ふりかえゆそう）",
+        "特急乗り継ぎ",
+        "無料タクシー券",
+        "特別快速運転"
+      ],
+      "optionsEn": [
+        "Alternative Transfer Transportation (Furikae Yusou)",
+        "Express train transit interchange",
+        "Complimentary taxi vouchers",
+        "Special rapid service dispatch"
+      ],
+      "answerIndex": 0,
+      "explanation": "運転見合わせ区間の定期券や乗車券を持つ乗客が、指定の迂回ルート（他社線や地下鉄）を追加料金なしで利用できる制度です。"
+    }
+  ]
+}

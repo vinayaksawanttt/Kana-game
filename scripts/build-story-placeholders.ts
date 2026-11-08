@@ -80,6 +80,30 @@ const themes: Record<string, Theme> = {
   "empress-jokwa": { kanji: "天", accent: "#0d9488", bg1: "#f0fdfa", bg2: "#99f6e4", motif: "default" },
   "fish-and-monkey": { kanji: "海", accent: "#0284c7", bg1: "#f0f9ff", bg2: "#bae6fd", motif: "waves" },
   "monkey-boar": { kanji: "山", accent: "#b45309", bg1: "#fffbeb", bg2: "#fde68a", motif: "mountain" },
+
+  // N3 Anime Legends
+  "attack-on-titan": { kanji: "巨", accent: "#b91c1c", bg1: "#fef2f2", bg2: "#fecaca", motif: "mountain" },
+  bleach: { kanji: "斬", accent: "#0f172a", bg1: "#f8fafc", bg2: "#cbd5e1", motif: "moon" },
+  "one-piece": { kanji: "航", accent: "#0284c7", bg1: "#f0f9ff", bg2: "#bae6fd", motif: "waves" },
+  naruto: { kanji: "忍", accent: "#ea580c", bg1: "#fff7ed", bg2: "#fed7aa", motif: "default" },
+  "demon-slayer": { kanji: "刃", accent: "#0d9488", bg1: "#f0fdfa", bg2: "#99f6e4", motif: "waves" },
+  "death-note": { kanji: "裁", accent: "#475569", bg1: "#f8fafc", bg2: "#cbd5e1", motif: "moon" },
+  "dragon-ball": { kanji: "龍", accent: "#eab308", bg1: "#fefce8", bg2: "#fef08a", motif: "mountain" },
+  "fullmetal-alchemist": { kanji: "鋼", accent: "#dc2626", bg1: "#fef2f2", bg2: "#fecaca", motif: "default" },
+  "my-hero-academia": { kanji: "救", accent: "#16a34a", bg1: "#f0fdf4", bg2: "#bbf7d0", motif: "default" },
+  "jujutsu-kaisen": { kanji: "祓", accent: "#7c3aed", bg1: "#f5f3ff", bg2: "#ddd6fe", motif: "moon" },
+
+  // N3 Everyday Life
+  hospital: { kanji: "医", accent: "#0284c7", bg1: "#f0f9ff", bg2: "#bae6fd", motif: "default" },
+  "post-office": { kanji: "郵", accent: "#dc2626", bg1: "#fef2f2", bg2: "#fecaca", motif: "default" },
+  "hotel-check-in": { kanji: "宿", accent: "#0d9488", bg1: "#f0fdfa", bg2: "#99f6e4", motif: "mountain" },
+  "job-interview": { kanji: "面", accent: "#2563eb", bg1: "#eff6ff", bg2: "#bfdbfe", motif: "default" },
+  "convenience-store-part-time": { kanji: "店", accent: "#ea580c", bg1: "#fff7ed", bg2: "#fed7aa", motif: "default" },
+  "lost-property": { kanji: "探", accent: "#4f46e5", bg1: "#eef2ff", bg2: "#c7d2fe", motif: "default" },
+  "apartment-hunting": { kanji: "住", accent: "#16a34a", bg1: "#f0fdf4", bg2: "#bbf7d0", motif: "default" },
+  "train-delay": { kanji: "電", accent: "#d97706", bg1: "#fffbeb", bg2: "#fde68a", motif: "default" },
+  "birthday-party": { kanji: "祝", accent: "#db2777", bg1: "#fdf2f8", bg2: "#fbcfe8", motif: "fireworks" },
+  "office-meeting": { kanji: "議", accent: "#0891b2", bg1: "#ecfeff", bg2: "#a5f3fc", motif: "default" },
 };
 
 const defaultTheme: Theme = {

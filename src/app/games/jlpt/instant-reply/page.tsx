@@ -1,7 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { useRouter } from "next/navigation";
+import { Suspense, useMemo, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import {
   ArrowRight,
   Clock,
@@ -46,9 +46,34 @@ const TIMER_PRESETS: ReadonlyArray<{
   },
 ];
 
-export default function InstantReplySetupPage() {
+function InstantReplySetupContent() {
   const router = useRouter();
-  const [selectedLevels, setSelectedLevels] = useState<JlptNumericLevel[]>([5]);
+  const searchParams = useSearchParams();
+  const levelParam = searchParams.get("level")?.toUpperCase();
+  const modeParam = searchParams.get("mode")?.toLowerCase();
+
+  const initialLevels = useMemo<JlptNumericLevel[]>(() => {
+    if (!levelParam) return [5];
+    if (levelParam === "ALL") return [5, 4, 3, 2, 1];
+    const num = parseInt(levelParam.replace("N", ""), 10);
+    if (LEVEL_OPTIONS.includes(num as JlptNumericLevel)) {
+      return [num as JlptNumericLevel];
+    }
+    return [5];
+  }, [levelParam]);
+
+  const initialCategory = useMemo<"all" | "situational-utterance" | "quick-response">(() => {
+    if (modeParam === "situational" || modeParam === "situational-utterance" || modeParam === "mondai3") {
+      return "situational-utterance";
+    }
+    if (modeParam === "quick" || modeParam === "quick-response" || modeParam === "mondai4") {
+      return "quick-response";
+    }
+    return "all";
+  }, [modeParam]);
+
+  const [selectedLevels, setSelectedLevels] = useState<JlptNumericLevel[]>(initialLevels);
+  const [categoryMode, setCategoryMode] = useState<"all" | "situational-utterance" | "quick-response">(initialCategory);
   const [timerSeconds, setTimerSeconds] = useState<TimerPreset>(8);
   const [autoSequenceAudio, setAutoSequenceAudio] = useState<boolean>(true);
   const [showSituationHint, setShowSituationHint] = useState<boolean>(true);
@@ -61,8 +86,12 @@ export default function InstantReplySetupPage() {
 
   const availablePoolCount = useMemo(() => {
     const levelSet = new Set(selectedLevels);
-    return INSTANT_REPLY_ITEMS.filter((item) => levelSet.has(item.jlpt)).length;
-  }, [selectedLevels]);
+    return INSTANT_REPLY_ITEMS.filter((item) => {
+      if (!levelSet.has(item.jlpt)) return false;
+      if (categoryMode !== "all" && (item.category ?? "quick-response") !== categoryMode) return false;
+      return true;
+    }).length;
+  }, [categoryMode, selectedLevels]);
 
   function toggleLevel(level: JlptNumericLevel) {
     setSelectedLevels((prev) => {
@@ -81,6 +110,7 @@ export default function InstantReplySetupPage() {
       timerSeconds,
       autoSequenceAudio,
       showSituationHint,
+      category: categoryMode,
     });
     saveGameSession("jlpt-reply", session.sessionId, session);
     router.push(`/games/jlpt/instant-reply/play/${session.sessionId}`);
@@ -162,11 +192,72 @@ export default function InstantReplySetupPage() {
             </div>
           </div>
 
-          {/* 2. Reflex Timer Preset */}
+          {/* 2. Mondai Question Format (発話表現 vs 即時応答) */}
+          <div className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6">
+            <div className="flex items-center gap-2">
+              <Headphones size={18} className="text-[var(--primary-fg)]" aria-hidden="true" />
+              <h2 className="text-base font-bold">2. Exam Mondai Archetype</h2>
+            </div>
+            <p className="mt-1 text-xs text-[var(--muted)]">
+              Choose between Situational Utterances (Mondai 3) or Blind Quick Responses (Mondai 4/5).
+            </p>
+
+            <div className="mt-4 grid gap-3 sm:grid-cols-3">
+              <button
+                type="button"
+                aria-pressed={categoryMode === "all"}
+                onClick={() => setCategoryMode("all")}
+                className={`flex flex-col items-start rounded-xl border p-4 text-left transition ${
+                  categoryMode === "all"
+                    ? "border-[var(--primary)] bg-[var(--sakura-light)] text-[var(--primary-fg)] shadow-sm"
+                    : "border-[var(--line)] bg-[var(--bg)] text-[var(--ink)] hover:border-[var(--sakura)]"
+                }`}
+              >
+                <span className="font-extrabold text-sm">All Archetypes</span>
+                <span className="mt-1 text-xs text-[var(--muted)]">
+                  Combined mix of Mondai 3 &amp; Mondai 4/5 questions
+                </span>
+              </button>
+
+              <button
+                type="button"
+                aria-pressed={categoryMode === "situational-utterance"}
+                onClick={() => setCategoryMode("situational-utterance")}
+                className={`flex flex-col items-start rounded-xl border p-4 text-left transition ${
+                  categoryMode === "situational-utterance"
+                    ? "border-[var(--primary)] bg-[var(--sakura-light)] text-[var(--primary-fg)] shadow-sm"
+                    : "border-[var(--line)] bg-[var(--bg)] text-[var(--ink)] hover:border-[var(--sakura)]"
+                }`}
+              >
+                <span className="font-extrabold text-sm">Mondai 3: ⬇ Situational Utterance</span>
+                <span className="mt-1 text-xs text-[var(--muted)]">
+                  発話表現 · Read the scene &amp; pick what ⬇ You says
+                </span>
+              </button>
+
+              <button
+                type="button"
+                aria-pressed={categoryMode === "quick-response"}
+                onClick={() => setCategoryMode("quick-response")}
+                className={`flex flex-col items-start rounded-xl border p-4 text-left transition ${
+                  categoryMode === "quick-response"
+                    ? "border-[var(--primary)] bg-[var(--sakura-light)] text-[var(--primary-fg)] shadow-sm"
+                    : "border-[var(--line)] bg-[var(--bg)] text-[var(--ink)] hover:border-[var(--sakura)]"
+                }`}
+              >
+                <span className="font-extrabold text-sm">Mondai 4/5: ⚡ Quick Response</span>
+                <span className="mt-1 text-xs text-[var(--muted)]">
+                  即時応答 · Blind audio dialogue reflex challenge
+                </span>
+              </button>
+            </div>
+          </div>
+
+          {/* 3. Reflex Timer Preset */}
           <div className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6">
             <div className="flex items-center gap-2">
               <Clock size={18} className="text-[var(--primary-fg)]" aria-hidden="true" />
-              <h2 className="text-base font-bold">2. Reflex Timer Preset</h2>
+              <h2 className="text-base font-bold">3. Reflex Timer Preset</h2>
             </div>
             <p className="mt-1 text-xs text-[var(--muted)]">
               Once the 3 spoken replies finish playing, the reflex countdown begins.
@@ -197,13 +288,13 @@ export default function InstantReplySetupPage() {
             </div>
           </div>
 
-          {/* 3. Audio Sequence Mode & Situation Hint */}
+          {/* 4. Audio Sequence Mode & Situation Hint */}
           <div className="grid gap-6 sm:grid-cols-2">
             {/* Audio Sequence Mode */}
             <div className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6">
               <div className="flex items-center gap-2">
                 <Volume2 size={18} className="text-[var(--primary-fg)]" aria-hidden="true" />
-                <h2 className="text-base font-bold">3. Audio Sequence Mode</h2>
+                <h2 className="text-base font-bold">4. Audio Sequence Mode</h2>
               </div>
               <p className="mt-1 text-xs text-[var(--muted)]">
                 Choose whether each round speaks all 4 lines automatically.
@@ -341,5 +432,13 @@ export default function InstantReplySetupPage() {
         </div>
       </section>
     </GameLayout>
+  );
+}
+
+export default function InstantReplySetupPage() {
+  return (
+    <Suspense fallback={null}>
+      <InstantReplySetupContent />
+    </Suspense>
   );
 }

@@ -26,7 +26,9 @@ export type TrapRuleLabel =
   | "Dakuten / Rendaku Trap"
   | "Small っ / Yōon Trap"
   | "Nasal ん / Mora Trap"
-  | "Look-Alike Kanji Trap";
+  | "Look-Alike Kanji Trap"
+  | "Counter Rendaku Trap"
+  | "Katakana Loanword Trap";
 
 export interface PhoneticReadingTrapCandidate {
   trap: string;
@@ -304,7 +306,7 @@ const YOON_BASE_KANA = new Set([
 export function isValidHiraganaTrap(candidate: string, correctReading: string): boolean {
   if (!candidate || candidate === correctReading) return false;
   if (candidate.length < 2) return false;
-  if (!/^[\u3041-\u3096]+$/.test(candidate)) return false;
+  if (!/^[\u3041-\u3096\u30FC]+$/.test(candidate)) return false;
   if (INVALID_START_KANA.has(candidate[0])) return false;
   if (candidate.endsWith("っ")) return false;
   if (
@@ -352,6 +354,7 @@ export function generatePhoneticReadingTraps(
   const rule2Candidates: PhoneticReadingTrapCandidate[] = [];
   const rule3Candidates: PhoneticReadingTrapCandidate[] = [];
   const rule4Candidates: PhoneticReadingTrapCandidate[] = [];
+  const ruleCounterCandidates: PhoneticReadingTrapCandidate[] = [];
 
   const pushCandidate = (
     bucket: PhoneticReadingTrapCandidate[],
@@ -364,6 +367,41 @@ export function generatePhoneticReadingTraps(
     seen.add(trap);
     bucket.push({ trap, rule, detail });
   };
+
+  // --- Rule Counter: Counter Sound-Change / Rendaku Traps (本, 匹, 杯, 階, 分, etc.) ---
+  const counterSuffixPatterns: ReadonlyArray<{
+    pattern: string;
+    replacements: readonly string[];
+  }> = [
+    { pattern: "っぽん", replacements: ["くぼん", "くぽん", "っほん", "くほん"] },
+    { pattern: "ぼん", replacements: ["ぽん", "ほん"] },
+    { pattern: "ほん", replacements: ["ぼん", "ぽん"] },
+    { pattern: "っぴき", replacements: ["くひき", "くびき", "くぴき", "っひき"] },
+    { pattern: "びき", replacements: ["ひき", "ぴき"] },
+    { pattern: "ひき", replacements: ["びき", "ぴき"] },
+    { pattern: "っぱい", replacements: ["ちはい", "ちばい", "ちぱい", "くはい", "くばい"] },
+    { pattern: "ばい", replacements: ["はい", "ぱい"] },
+    { pattern: "はい", replacements: ["ばい", "ぱい"] },
+    { pattern: "がい", replacements: ["かい"] },
+    { pattern: "っぷん", replacements: ["くふん", "くぷん", "ちふん", "ちぷん", "っふん"] },
+    { pattern: "ぷん", replacements: ["ふん", "ぶん"] },
+    { pattern: "ふん", replacements: ["ぷん", "ぶん"] },
+  ];
+
+  for (const { pattern, replacements } of counterSuffixPatterns) {
+    if (clean.endsWith(pattern)) {
+      const base = clean.slice(0, clean.length - pattern.length);
+      for (const rep of replacements) {
+        pushCandidate(
+          ruleCounterCandidates,
+          base + rep,
+          "Counter Rendaku Trap",
+          `Counter sound-change mutation (${pattern} ↔ ${rep})`,
+        );
+      }
+      break;
+    }
+  }
 
   // --- Rule 1: Long-Vowel (長音) Flip ---
   for (let i = 0; i < clean.length; i++) {
@@ -550,9 +588,10 @@ export function generatePhoneticReadingTraps(
     );
   }
 
-  // Pick a balanced mix across Rules 1, 2, 3, and 4 so signature traps from each rule are represented
+  // Pick a balanced mix across active rule buckets so signature traps from each rule are represented
   const selected: PhoneticReadingTrapCandidate[] = [];
   const buckets = [
+    ...(ruleCounterCandidates.length > 0 ? [ruleCounterCandidates] : []),
     rule1Candidates,
     rule2Candidates,
     rule3Candidates,
@@ -574,7 +613,9 @@ export function generatePhoneticReadingTraps(
   // Guarantee 3 items even on edge inputs
   const fallbackSyllables = ["かい", "こう", "せい", "たい", "しん"];
   let fbIdx = 0;
-  while (selected.length < 3) {
+  let attempts = 0;
+  while (selected.length < 3 && attempts < 30) {
+    attempts++;
     const candidate = clean + fallbackSyllables[fbIdx % fallbackSyllables.length];
     fbIdx++;
     if (!seen.has(candidate) && isValidHiraganaTrap(candidate, clean)) {
@@ -665,10 +706,153 @@ export const VISUAL_CONFUSABLE_KANJI: Readonly<Record<string, readonly string[]>
 };
 
 const KANJI_CHAR_RE = /[\u4E00-\u9FAF]/;
+const KATAKANA_CHAR_RE = /[\u30A1-\u30FA]/;
+
+/**
+ * Generates official JLPT Katakana loanword traps for Mondai 2 (表記).
+ * Tests シ ↔ ツ, ソ ↔ ン, ワ ↔ ウ, long vowel ー addition/omission, and voicing mutations.
+ */
+export function generateKatakanaOrthographyTraps(
+  targetWord: string,
+  rng: () => number = Math.random,
+): OrthographyTrapCandidate[] {
+  const clean = targetWord.trim();
+  const seen = new Set<string>([clean]);
+  const candidates: OrthographyTrapCandidate[] = [];
+
+  const addTrap = (trap: string, reason: string) => {
+    if (!trap || seen.has(trap) || trap === clean) return;
+    if (!/^[\u30A1-\u30FAー]+$/.test(trap)) return;
+    seen.add(trap);
+    candidates.push({
+      trap,
+      rule: "Katakana Loanword Trap",
+      reason,
+    });
+  };
+
+  // 1. Specific iconic official JLPT traps
+  if (clean === "シャワー") {
+    addTrap("シャウー", "ワ ↔ ウ + long vowel trap (シャウー)");
+    addTrap("ツャワー", "シ ↔ ツ confusable trap (ツャワー)");
+    addTrap("ツャウー", "ツャ ＋ ウー double confusable trap (ツャウー)");
+    addTrap("シャワ", "Omitted long vowel trap (シャワ)");
+  } else if (clean === "エレベーター") {
+    addTrap("エレベター", "Omitted long vowel trap (エレベター)");
+    addTrap("エレペーター", "Voicing mutation trap (ベ ↔ ペ)");
+    addTrap("エレベウター", "Long vowel ー ↔ ウ mutation trap");
+    addTrap("エレビーター", "Vowel mutation trap (ベ ↔ ビ)");
+  } else if (clean === "カレンダー") {
+    addTrap("カレンダ", "Omitted trailing long vowel trap (カレンダ)");
+    addTrap("カーレンダー", "Extra internal long vowel trap (カーレンダー)");
+    addTrap("カレソダー", "ン ↔ ソ confusable trap (カレソダー)");
+  } else if (clean === "テーブル") {
+    addTrap("テーブール", "Extra internal long vowel trap (テーブール)");
+    addTrap("テブル", "Omitted initial long vowel trap (テブル)");
+    addTrap("テープル", "Voicing mutation trap (ブ ↔ プ)");
+  } else if (clean === "スプーン") {
+    addTrap("スプン", "Omitted long vowel trap (スプン)");
+    addTrap("スプーソ", "ン ↔ ソ confusable trap (スプーソ)");
+    addTrap("スープン", "Misplaced long vowel trap (スープン)");
+  } else if (clean === "タクシー") {
+    addTrap("タクツー", "シ ↔ ツ confusable trap (タクツー)");
+    addTrap("タクシ", "Omitted long vowel trap (タクシ)");
+    addTrap("タクシィ", "Small ィ mutation trap (タクシィ)");
+  } else if (clean === "シャツ") {
+    addTrap("シャシ", "ツ ↔ シ confusable trap (シャシ)");
+    addTrap("ツャツ", "シ ↔ ツ confusable trap (ツャツ)");
+    addTrap("シヤツ", "Small ャ ↔ Large ヤ trap (シヤツ)");
+  } else if (clean === "マンション") {
+    addTrap("マンショソ", "ン ↔ ソ confusable trap (マンショソ)");
+    addTrap("マソション", "ン ↔ ソ confusable trap (マソション)");
+    addTrap("マンツョン", "シ ↔ ツ confusable trap (マンツョン)");
+  }
+
+  // 2. Algorithmic シ ↔ ツ confusions
+  if (clean.includes("シ")) {
+    addTrap(clean.replace(/シ/g, "ツ"), "シ ↔ ツ look-alike trap");
+  }
+  if (clean.includes("ツ")) {
+    addTrap(clean.replace(/ツ/g, "シ"), "ツ ↔ シ look-alike trap");
+  }
+  if (clean.includes("シャ")) {
+    addTrap(clean.replace(/シャ/g, "ツャ"), "シャ ↔ ツャ confusable trap");
+    addTrap(clean.replace(/シャ/g, "シヤ"), "Small ャ ↔ Large ヤ trap");
+  }
+  if (clean.includes("シュ")) {
+    addTrap(clean.replace(/シュ/g, "ツュ"), "シュ ↔ ツュ confusable trap");
+  }
+  if (clean.includes("ショ")) {
+    addTrap(clean.replace(/ショ/g, "ツョ"), "ショ ↔ ツョ confusable trap");
+  }
+
+  // 3. Algorithmic ソ ↔ ン confusions
+  if (clean.includes("ソ")) {
+    addTrap(clean.replace(/ソ/g, "ン"), "ソ ↔ ン look-alike trap");
+  }
+  if (clean.includes("ン")) {
+    addTrap(clean.replace(/ン/g, "ソ"), "ン ↔ ソ look-alike trap");
+  }
+
+  // 4. Algorithmic ワ ↔ ウ confusions
+  if (clean.includes("ワ")) {
+    addTrap(clean.replace(/ワ/g, "ウ"), "ワ ↔ ウ look-alike trap");
+  }
+  if (clean.includes("ウ")) {
+    addTrap(clean.replace(/ウ/g, "ワ"), "ウ ↔ ワ look-alike trap");
+  }
+
+  // 5. Long vowel ー (chōonpu) manipulations
+  if (clean.includes("ー")) {
+    const firstDash = clean.indexOf("ー");
+    const droppedFirst = clean.slice(0, firstDash) + clean.slice(firstDash + 1);
+    addTrap(droppedFirst, "Omitted long vowel (ー) trap");
+
+    const lastDash = clean.lastIndexOf("ー");
+    const droppedLast = clean.slice(0, lastDash) + clean.slice(lastDash + 1);
+    addTrap(droppedLast, "Omitted trailing long vowel (ー) trap");
+  } else if (clean.length >= 2) {
+    addTrap(clean.slice(0, 1) + "ー" + clean.slice(1), "Extra long vowel (ー) trap");
+    addTrap(clean + "ー", "Extra trailing long vowel (ー) trap");
+  }
+
+  // 6. Voicing mutation: バ ↔ パ, etc.
+  const voicingMap: Record<string, string> = {
+    バ: "パ", パ: "バ",
+    ビ: "ピ", ピ: "ビ",
+    ブ: "プ", プ: "ブ",
+    ベ: "ペ", ペ: "ベ",
+    ボ: "ポ", ポ: "ボ",
+    ダ: "タ", タ: "ダ",
+    ガ: "カ", カ: "ガ",
+  };
+  for (let i = 0; i < clean.length; i++) {
+    const swap = voicingMap[clean[i]];
+    if (swap) {
+      addTrap(
+        clean.slice(0, i) + swap + clean.slice(i + 1),
+        `Voicing trap (${clean[i]} ↔ ${swap})`,
+      );
+    }
+  }
+
+  if (candidates.length > 3) {
+    return candidates.slice(0, 3);
+  }
+
+  // Fallbacks if fewer than 3
+  if (clean.endsWith("ー")) {
+    addTrap(clean.slice(0, -1), "Omitted trailing long vowel");
+  } else {
+    addTrap(clean + "ー", "Extra trailing long vowel");
+  }
+
+  return candidates.slice(0, 3);
+}
 
 /**
  * B. Algorithmic Visual Kanji Confusable Generator (Mondai 2: Hiragana -> Kanji)
- * Given a target Kanji word (e.g. "会議", "旅行", "集める"), returns 3 distinct confusable Kanji compounds.
+ * Given a target Kanji word (e.g. "会議", "旅行", "集める") or Katakana loanword, returns 3 distinct confusable compounds.
  */
 export function generateOrthographyTraps(
   targetWord: string,
@@ -676,6 +860,9 @@ export function generateOrthographyTraps(
   _radicalMap?: Readonly<Record<string, readonly string[]>>,
   rng: () => number = Math.random,
 ): OrthographyTrapCandidate[] {
+  if (KATAKANA_CHAR_RE.test(targetWord)) {
+    return generateKatakanaOrthographyTraps(targetWord, rng);
+  }
   const chars = [...targetWord];
   const kanjiPositions: number[] = [];
   for (let i = 0; i < chars.length; i++) {
@@ -1192,6 +1379,8 @@ export function summarizePhoneticTrapSession(
     "Small っ / Yōon Trap": 0,
     "Nasal ん / Mora Trap": 0,
     "Look-Alike Kanji Trap": 0,
+    "Counter Rendaku Trap": 0,
+    "Katakana Loanword Trap": 0,
   };
 
   for (const ans of session.answers) {

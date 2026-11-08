@@ -1,0 +1,4507 @@
+{
+  "id": "story-n3-hotel-check-in",
+  "title": "旅館のチェックイン：伝統のおもてなしと温泉",
+  "titleRomaji": "Ryokan no Chekkuin: Dentou no Omotenashi to Onsen",
+  "titleEn": "Ryokan Check-in: Traditional Hospitality and Hot Springs",
+  "level": "N3",
+  "category": "Everyday Life",
+  "tags": [
+    "Everyday Life",
+    "N3",
+    "Travel",
+    "Hot Springs",
+    "Hospitality"
+  ],
+  "paragraphs": [
+    {
+      "ja": "週末の休暇を利用して、古い歴史を持つ山あいの温泉街にある老舗旅館を訪れることにしました。温泉街の細い坂道を登っていくと、立派な瓦屋根と木造の門構えが美しい旅館の玄関が見えてきました。引き戸を開けて暖簾をくぐると、「いらっしゃいませ、遠路はるばるようこそお越しくださいました」と仲居さんが笑顔で出迎えてくれました。玄関で靴を脱いで用意された畳のスリッパに履き替え、帳場と呼ばれるフロントカウンターへ案内されました。",
+      "en": "Taking advantage of the weekend holidays, I decided to visit a venerable historic ryokan located in a mountain hot-spring town. Climbing the narrow slope of the onsen town, the entrance of the inn, adorned with fine tiled roofs and timber gates, came into view. When I opened the sliding door and passed beneath the noren curtain, a smiling nakai hostess welcomed me: 'Welcome! Thank you for traveling such a long way to visit us.' Shedding my shoes in the entryway and slipping into prepared tatami slippers, I was escorted to the front counter known as the chouba.",
+      "tokens": [
+        {
+          "surface": "週末",
+          "reading": "しゅうまつ",
+          "meaning": "weekend",
+          "baseForm": "週末",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "休暇"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "利用"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "古い",
+          "reading": "ふるい",
+          "meaning": "old (not used for people)",
+          "baseForm": "古い",
+          "level": "N5"
+        },
+        {
+          "surface": "歴史",
+          "reading": "れきし",
+          "meaning": "history",
+          "baseForm": "歴史",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "持つ"
+        },
+        {
+          "surface": "山あい"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "温泉"
+        },
+        {
+          "surface": "街"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "老舗"
+        },
+        {
+          "surface": "旅館"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "訪れる"
+        },
+        {
+          "surface": "ことに"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "温泉"
+        },
+        {
+          "surface": "街"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "細い"
+        },
+        {
+          "surface": "坂道"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "登",
+          "reading": "のぼ",
+          "meaning": "to climb",
+          "baseForm": "登る",
+          "level": "N5"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "いく"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "立派"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "瓦"
+        },
+        {
+          "surface": "屋根"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "木造"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "門構え"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "美しい",
+          "reading": "うつくしい",
+          "meaning": "beautiful",
+          "baseForm": "美しい",
+          "level": "N4"
+        },
+        {
+          "surface": "旅館"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "玄関",
+          "reading": "げんかん",
+          "meaning": "entry hall",
+          "baseForm": "玄関",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "見え",
+          "reading": "みえ",
+          "meaning": "to see; to watch",
+          "baseForm": "見る",
+          "level": "N5"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "き"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "引き戸"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "開",
+          "reading": "あ",
+          "meaning": "to open; to become open",
+          "baseForm": "開く",
+          "level": "N5"
+        },
+        {
+          "surface": "け"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "暖簾"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "くぐる"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "いらっしゃい"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "せ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "遠路"
+        },
+        {
+          "surface": "はるばる"
+        },
+        {
+          "surface": "ようこそ"
+        },
+        {
+          "surface": "お越し"
+        },
+        {
+          "surface": "くだ"
+        },
+        {
+          "surface": "さい"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "仲居"
+        },
+        {
+          "surface": "さん",
+          "meaning": "Mr or Mrs",
+          "baseForm": "さん",
+          "level": "N1"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "笑顔",
+          "reading": "えがお",
+          "meaning": "smiling face",
+          "baseForm": "笑顔",
+          "level": "N3"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "出迎え"
+        },
+        {
+          "surface": "てく"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "玄関",
+          "reading": "げんかん",
+          "meaning": "entry hall",
+          "baseForm": "玄関",
+          "level": "N5"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "靴"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "脱"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "用意"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "畳"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "スリッパ"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "履"
+        },
+        {
+          "surface": "き"
+        },
+        {
+          "surface": "替え"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "帳場"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "呼ばれる"
+        },
+        {
+          "surface": "フロント"
+        },
+        {
+          "surface": "カウンター"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "案内",
+          "reading": "あんない",
+          "meaning": "to guide",
+          "baseForm": "案内",
+          "level": "N4"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "週末の休暇を利用して、古い歴史を持つ山あいの温泉街にある老舗旅館を訪れることにしました。",
+          "literalEn": "weekend ['s / of] 休暇 [obj] 利用 [and] old history [obj] 持つ 山あい ['s / of] 温泉 [at/to] to be 老舗 旅館 [obj] 訪れる ことに しま した",
+          "naturalEn": "Taking advantage of the weekend holidays, I decided to visit a venerable historic ryokan located in a mountain hot-spring town.",
+          "tokens": [
+            {
+              "surface": "週末",
+              "reading": "しゅうまつ",
+              "meaning": "weekend",
+              "baseForm": "週末",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "休暇"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "利用"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "古い",
+              "reading": "ふるい",
+              "meaning": "old (not used for people)",
+              "baseForm": "古い",
+              "level": "N5"
+            },
+            {
+              "surface": "歴史",
+              "reading": "れきし",
+              "meaning": "history",
+              "baseForm": "歴史",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "持つ"
+            },
+            {
+              "surface": "山あい"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "温泉"
+            },
+            {
+              "surface": "街"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "老舗"
+            },
+            {
+              "surface": "旅館"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "訪れる"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "温泉街の細い坂道を登っていくと、立派な瓦屋根と木造の門構えが美しい旅館の玄関が見えてきました。",
+          "literalEn": "温泉 ['s / of] 細い 坂道 [obj] to climb って いく [with/and] 立派 屋根 [with/and] 木造 ['s / of] 門構え [subj] beautiful 旅館 ['s / of] entry hall [subj] to see [and] した",
+          "naturalEn": "Climbing the narrow slope of the onsen town, the entrance of the inn, adorned with fine tiled roofs and timber gates, came into view.",
+          "tokens": [
+            {
+              "surface": "温泉"
+            },
+            {
+              "surface": "街"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "細い"
+            },
+            {
+              "surface": "坂道"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "登",
+              "reading": "のぼ",
+              "meaning": "to climb",
+              "baseForm": "登る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "いく"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "立派"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "瓦"
+            },
+            {
+              "surface": "屋根"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "木造"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "門構え"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "美しい",
+              "reading": "うつくしい",
+              "meaning": "beautiful",
+              "baseForm": "美しい",
+              "level": "N4"
+            },
+            {
+              "surface": "旅館"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "玄関",
+              "reading": "げんかん",
+              "meaning": "entry hall",
+              "baseForm": "玄関",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "見え",
+              "reading": "みえ",
+              "meaning": "to see; to watch",
+              "baseForm": "見る",
+              "level": "N5"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "引き戸を開けて暖簾をくぐると、「いらっしゃいませ、遠路はるばるようこそお越しくださいました」と仲居さんが笑顔で出迎えてくれました。",
+          "literalEn": "引き戸 [obj] to open [and] 暖簾 [obj] くぐる [with/and] いらっしゃい 遠路 はるばる ようこそ お越し くだ さい した [with/and] 仲居 [Mr/Ms] [subj] smiling face [in/by] 出迎え てく した",
+          "naturalEn": "When I opened the sliding door and passed beneath the noren curtain, a smiling nakai hostess welcomed me: 'Welcome! Thank you for traveling such a long way to visit us.'",
+          "tokens": [
+            {
+              "surface": "引き戸"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "開",
+              "reading": "あ",
+              "meaning": "to open; to become open",
+              "baseForm": "開く",
+              "level": "N5"
+            },
+            {
+              "surface": "け"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "暖簾"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "くぐる"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "いらっしゃい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "せ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "遠路"
+            },
+            {
+              "surface": "はるばる"
+            },
+            {
+              "surface": "ようこそ"
+            },
+            {
+              "surface": "お越し"
+            },
+            {
+              "surface": "くだ"
+            },
+            {
+              "surface": "さい"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "仲居"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "笑顔",
+              "reading": "えがお",
+              "meaning": "smiling face",
+              "baseForm": "笑顔",
+              "level": "N3"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "出迎え"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "玄関で靴を脱いで用意された畳のスリッパに履き替え、帳場と呼ばれるフロントカウンターへ案内されました。",
+          "literalEn": "entry hall [in/by] [obj] [in/by] 用意 [past] ['s / of] スリッパ [at/to] 替え 帳場 [with/and] 呼ばれる フロント カウンター [toward] to guide した",
+          "naturalEn": "Shedding my shoes in the entryway and slipping into prepared tatami slippers, I was escorted to the front counter known as the chouba.",
+          "tokens": [
+            {
+              "surface": "玄関",
+              "reading": "げんかん",
+              "meaning": "entry hall",
+              "baseForm": "玄関",
+              "level": "N5"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "靴"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "脱"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "用意"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "畳"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "スリッパ"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "履"
+            },
+            {
+              "surface": "き"
+            },
+            {
+              "surface": "替え"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "帳場"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "呼ばれる"
+            },
+            {
+              "surface": "フロント"
+            },
+            {
+              "surface": "カウンター"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "案内",
+              "reading": "あんない",
+              "meaning": "to guide",
+              "baseForm": "案内",
+              "level": "N4"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "宿泊カードに氏名、住所、連絡先を記入すると、フロントの係員が宿泊プランの内容を丁寧に確認してくれました。「ご夕食は季節の会席料理をご用意しております。六時半または七時からお選びいただけますが、どちらがよろしいでしょうか」と尋ねられました。温泉にゆっくり入ってから食事を楽しみたかったので、七時からの時間帯をお願いすることにしました。続いて明日の朝食に関しても、和食御膳と洋食プレートのどちらを希望するか好みを伝えることになりました。",
+      "en": "As I inscribed my name, address, and contact number onto the registration card, the front desk clerk meticulously verified my accommodation booking. 'For dinner, we prepare seasonal kaiseki banquet cuisine. You may select between 6:30 or 7:00; which would you prefer?' I was asked. Wanting to luxuriate in the hot springs before savoring dinner, I requested the 7:00 PM sitting. Next regarding tomorrow's breakfast, I also conveyed my preference between a traditional Japanese set meal and a Western breakfast plate.",
+      "tokens": [
+        {
+          "surface": "宿泊"
+        },
+        {
+          "surface": "カード",
+          "meaning": "card; curd",
+          "baseForm": "カード",
+          "level": "N3"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "氏名"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "住所",
+          "reading": "じゅうしょ",
+          "meaning": "an address; a residence",
+          "baseForm": "住所",
+          "level": "N4"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "連絡先"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "記入"
+        },
+        {
+          "surface": "すると",
+          "meaning": "then",
+          "baseForm": "すると",
+          "level": "N4"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "フロント"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "係員"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "宿泊"
+        },
+        {
+          "surface": "プラン"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "内容"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "丁寧",
+          "reading": "ていねい",
+          "meaning": "polite",
+          "baseForm": "丁寧",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "確認"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "てく"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "ご"
+        },
+        {
+          "surface": "夕食"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "季節"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "会席"
+        },
+        {
+          "surface": "料理",
+          "reading": "りょうり",
+          "meaning": "cuisine",
+          "baseForm": "料理",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "ご"
+        },
+        {
+          "surface": "用意"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "おり"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "六",
+          "reading": "ろく",
+          "meaning": "six",
+          "baseForm": "六",
+          "level": "N5"
+        },
+        {
+          "surface": "時半",
+          "reading": "じはん",
+          "meaning": "half past the hour",
+          "baseForm": "時半",
+          "level": "N5"
+        },
+        {
+          "surface": "または"
+        },
+        {
+          "surface": "七時"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "お"
+        },
+        {
+          "surface": "選び"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "だけ"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "どちら",
+          "meaning": "which of two",
+          "baseForm": "どちら",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "よろしい"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "しょう"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "尋",
+          "reading": "たず",
+          "meaning": "inquire, fathom, look for",
+          "baseForm": "尋",
+          "level": "N1"
+        },
+        {
+          "surface": "ね",
+          "meaning": "value; price; cost",
+          "baseForm": "ね",
+          "level": "N3"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "温泉"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "ゆっくり",
+          "meaning": "slowly; at ease",
+          "baseForm": "ゆっくり",
+          "level": "N3"
+        },
+        {
+          "surface": "入",
+          "reading": "はい",
+          "meaning": "to enter; to contain",
+          "baseForm": "入る",
+          "level": "N5"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "食事",
+          "reading": "しょくじ",
+          "meaning": "to have a meal",
+          "baseForm": "食事",
+          "level": "N4"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "楽しみ",
+          "reading": "たのしみ",
+          "meaning": "joy",
+          "baseForm": "楽しみ",
+          "level": "N4"
+        },
+        {
+          "surface": "たか"
+        },
+        {
+          "surface": "っ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "ので"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "七時"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "時間",
+          "reading": "じかん",
+          "meaning": "time",
+          "baseForm": "時間",
+          "level": "N5"
+        },
+        {
+          "surface": "帯"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "お願い",
+          "reading": "おねがい",
+          "meaning": "request; wish; please",
+          "baseForm": "お願い",
+          "level": "N5"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "ことに"
+        },
+        {
+          "surface": "しま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "続"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "meaning": "tomorrow",
+          "baseForm": "明日",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "朝食"
+        },
+        {
+          "surface": "に関して"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "和食"
+        },
+        {
+          "surface": "御膳"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "洋食"
+        },
+        {
+          "surface": "プレート"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "どちら",
+          "meaning": "which of two",
+          "baseForm": "どちら",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "希望"
+        },
+        {
+          "surface": "する",
+          "meaning": "to do",
+          "baseForm": "する",
+          "level": "N5"
+        },
+        {
+          "surface": "か"
+        },
+        {
+          "surface": "好み"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "伝える"
+        },
+        {
+          "surface": "ことに"
+        },
+        {
+          "surface": "なり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "宿泊カードに氏名、住所、連絡先を記入すると、フロントの係員が宿泊プランの内容を丁寧に確認してくれました。",
+          "literalEn": "宿泊 card [at/to] 氏名 an address 連絡先 [obj] 記入 then フロント ['s / of] 係員 [subj] 宿泊 プラン ['s / of] 内容 [obj] polite [at/to] 確認 てく した",
+          "naturalEn": "As I inscribed my name, address, and contact number onto the registration card, the front desk clerk meticulously verified my accommodation booking.",
+          "tokens": [
+            {
+              "surface": "宿泊"
+            },
+            {
+              "surface": "カード",
+              "meaning": "card; curd",
+              "baseForm": "カード",
+              "level": "N3"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "氏名"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "住所",
+              "reading": "じゅうしょ",
+              "meaning": "an address; a residence",
+              "baseForm": "住所",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "連絡先"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "記入"
+            },
+            {
+              "surface": "すると",
+              "meaning": "then",
+              "baseForm": "すると",
+              "level": "N4"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "フロント"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "係員"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "宿泊"
+            },
+            {
+              "surface": "プラン"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "内容"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "丁寧",
+              "reading": "ていねい",
+              "meaning": "polite",
+              "baseForm": "丁寧",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "確認"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「ご夕食は季節の会席料理をご用意しております。六時半または七時からお選びいただけますが、どちらがよろしいでしょうか」と尋ねられました。",
+          "literalEn": "夕食 [topic] 季節 ['s / of] 会席 cuisine [obj] 用意 [and] おり [polite] six half past the hour または 七時 [from] 選び [past] だけ [polite] [subj] which of two [subj] よろしい [in/by] しょう [?] [with/and] inquire [right?] した",
+          "naturalEn": "'For dinner, we prepare seasonal kaiseki banquet cuisine. You may select between 6:30 or 7:00; which would you prefer?' I was asked.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "ご"
+            },
+            {
+              "surface": "夕食"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "季節"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "会席"
+            },
+            {
+              "surface": "料理",
+              "reading": "りょうり",
+              "meaning": "cuisine",
+              "baseForm": "料理",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "ご"
+            },
+            {
+              "surface": "用意"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "おり"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "。"
+            },
+            {
+              "surface": "六",
+              "reading": "ろく",
+              "meaning": "six",
+              "baseForm": "六",
+              "level": "N5"
+            },
+            {
+              "surface": "時半",
+              "reading": "じはん",
+              "meaning": "half past the hour",
+              "baseForm": "時半",
+              "level": "N5"
+            },
+            {
+              "surface": "または"
+            },
+            {
+              "surface": "七時"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "お"
+            },
+            {
+              "surface": "選び"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "だけ"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "どちら",
+              "meaning": "which of two",
+              "baseForm": "どちら",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "よろしい"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "しょう"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "尋",
+              "reading": "たず",
+              "meaning": "inquire, fathom, look for",
+              "baseForm": "尋",
+              "level": "N1"
+            },
+            {
+              "surface": "ね",
+              "meaning": "value; price; cost",
+              "baseForm": "ね",
+              "level": "N3"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "温泉にゆっくり入ってから食事を楽しみたかったので、七時からの時間帯をお願いすることにしました。",
+          "literalEn": "温泉 [at/to] slowly to enter って [from] to have a meal [obj] joy たか [past] ので 七時 [from] ['s / of] time [obj] request to do ことに しま した",
+          "naturalEn": "Wanting to luxuriate in the hot springs before savoring dinner, I requested the 7:00 PM sitting.",
+          "tokens": [
+            {
+              "surface": "温泉"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "ゆっくり",
+              "meaning": "slowly; at ease",
+              "baseForm": "ゆっくり",
+              "level": "N3"
+            },
+            {
+              "surface": "入",
+              "reading": "はい",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "食事",
+              "reading": "しょくじ",
+              "meaning": "to have a meal",
+              "baseForm": "食事",
+              "level": "N4"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "楽しみ",
+              "reading": "たのしみ",
+              "meaning": "joy",
+              "baseForm": "楽しみ",
+              "level": "N4"
+            },
+            {
+              "surface": "たか"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "ので"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "七時"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "時間",
+              "reading": "じかん",
+              "meaning": "time",
+              "baseForm": "時間",
+              "level": "N5"
+            },
+            {
+              "surface": "帯"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "お願い",
+              "reading": "おねがい",
+              "meaning": "request; wish; please",
+              "baseForm": "お願い",
+              "level": "N5"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "しま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "続いて明日の朝食に関しても、和食御膳と洋食プレートのどちらを希望するか好みを伝えることになりました。",
+          "literalEn": "[and] tomorrow ['s / of] 朝食 に関して [also] 和食 御膳 [with/and] 洋食 プレート ['s / of] which of two [obj] 希望 to do [?] 好み [obj] 伝える ことに なり した",
+          "naturalEn": "Next regarding tomorrow's breakfast, I also conveyed my preference between a traditional Japanese set meal and a Western breakfast plate.",
+          "tokens": [
+            {
+              "surface": "続"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "明日",
+              "reading": "あした",
+              "meaning": "tomorrow",
+              "baseForm": "明日",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "朝食"
+            },
+            {
+              "surface": "に関して"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "和食"
+            },
+            {
+              "surface": "御膳"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "洋食"
+            },
+            {
+              "surface": "プレート"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "どちら",
+              "meaning": "which of two",
+              "baseForm": "どちら",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "希望"
+            },
+            {
+              "surface": "する",
+              "meaning": "to do",
+              "baseForm": "する",
+              "level": "N5"
+            },
+            {
+              "surface": "か"
+            },
+            {
+              "surface": "好み"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "伝える"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "なり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "手続きが済むと、仲居さんが荷物を持って二階の客室「桜の間」まで案内してくれました。い草の清々しい香りが漂う和室に入ると、床の間には季節の花が生けられ、窓からは静かな日本庭園が一望できました。仲居さんは急須でお茶を淹れて銘菓の温泉まんじゅうを振る舞いながら、大浴場の利用規則を説明してくれました。「大浴場と露天風呂は夜通しご利用いただけますが、午前二時に男女の暖簾が入れ替わることになっております」とのことでした。",
+      "en": "Once procedures concluded, the nakai carried my luggage and guided me to the second-floor guest quarters, the 'Sakura Room.' Stepping into the Japanese-style room scented with fresh rush grass, seasonal blooms decorated the alcove, and a tranquil Japanese garden stretched before the window. Brewing a pot of green tea and serving a renowned onsen steamed bun, she explained the operating guidelines of the grand communal baths. 'The grand bath and open-air hot springs remain accessible throughout the night, but the men's and women's baths swap curtains at 2:00 AM,' she noted.",
+      "tokens": [
+        {
+          "surface": "手続き",
+          "reading": "てつづき",
+          "meaning": "procedure; (legal) process; formalities",
+          "baseForm": "手続き",
+          "level": "N2"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "済む"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "仲居"
+        },
+        {
+          "surface": "さん",
+          "meaning": "Mr or Mrs",
+          "baseForm": "さん",
+          "level": "N1"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "荷物",
+          "reading": "にもつ",
+          "meaning": "luggage",
+          "baseForm": "荷物",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "持",
+          "reading": "も",
+          "meaning": "to hold",
+          "baseForm": "持つ",
+          "level": "N5"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "二階"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "客室"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "桜の",
+          "reading": "さくらの",
+          "meaning": "cherry blossom; cherry tree",
+          "baseForm": "桜",
+          "level": "N3"
+        },
+        {
+          "surface": "間",
+          "reading": "あいだ",
+          "meaning": "a space",
+          "baseForm": "間",
+          "level": "N4"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "まで"
+        },
+        {
+          "surface": "案内",
+          "reading": "あんない",
+          "meaning": "to guide",
+          "baseForm": "案内",
+          "level": "N4"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "てく"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "い草"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "清々しい"
+        },
+        {
+          "surface": "香り"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "漂う",
+          "reading": "ただよう",
+          "meaning": "to drift about; to float; to hang in air",
+          "baseForm": "漂う",
+          "level": "N1"
+        },
+        {
+          "surface": "和室"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "入る",
+          "reading": "はいる",
+          "meaning": "to enter; to contain",
+          "baseForm": "入る",
+          "level": "N5"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "床の間"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "季節"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "花",
+          "reading": "はな",
+          "meaning": "flower",
+          "baseForm": "花",
+          "level": "N5"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "生",
+          "reading": "なま",
+          "meaning": "draft (beer); raw; unprocessed",
+          "baseForm": "生",
+          "level": "N3"
+        },
+        {
+          "surface": "けら"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "窓",
+          "reading": "まど",
+          "meaning": "window",
+          "baseForm": "窓",
+          "level": "N5"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "meaning": "quiet",
+          "baseForm": "静か",
+          "level": "N5"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "日本",
+          "reading": "にっぽん",
+          "meaning": "Japan",
+          "baseForm": "日本",
+          "level": "N3"
+        },
+        {
+          "surface": "庭園"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "一望"
+        },
+        {
+          "surface": "でき"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "仲居"
+        },
+        {
+          "surface": "さん",
+          "meaning": "Mr or Mrs",
+          "baseForm": "さん",
+          "level": "N1"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "急須"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "お茶",
+          "reading": "おちゃ",
+          "meaning": "tea (green tea)",
+          "baseForm": "お茶",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "淹"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "銘菓"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "温泉"
+        },
+        {
+          "surface": "まんじゅう"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "振る舞い"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "大",
+          "reading": "だい",
+          "meaning": "large; big; great",
+          "baseForm": "大",
+          "level": "N3"
+        },
+        {
+          "surface": "浴場"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "利用"
+        },
+        {
+          "surface": "規則"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "説明",
+          "reading": "せつめい",
+          "meaning": "explanation",
+          "baseForm": "説明",
+          "level": "N4"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "てく"
+        },
+        {
+          "surface": "れ"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "「"
+        },
+        {
+          "surface": "大",
+          "reading": "だい",
+          "meaning": "large; big; great",
+          "baseForm": "大",
+          "level": "N3"
+        },
+        {
+          "surface": "浴場"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "露天風呂"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "夜通し"
+        },
+        {
+          "surface": "ご利用"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "だけ"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "午前",
+          "reading": "ごぜん",
+          "meaning": "morning",
+          "baseForm": "午前",
+          "level": "N5"
+        },
+        {
+          "surface": "二",
+          "reading": "に",
+          "meaning": "two",
+          "baseForm": "二",
+          "level": "N5"
+        },
+        {
+          "surface": "時に",
+          "reading": "ときに",
+          "meaning": "time; hour; occasion",
+          "baseForm": "時",
+          "level": "N3"
+        },
+        {
+          "surface": "男女"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "暖簾"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "入れ替わる"
+        },
+        {
+          "surface": "ことに"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "って"
+        },
+        {
+          "surface": "おり"
+        },
+        {
+          "surface": "ます"
+        },
+        {
+          "surface": "」"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "手続きが済むと、仲居さんが荷物を持って二階の客室「桜の間」まで案内してくれました。",
+          "literalEn": "procedure [subj] 済む [with/and] 仲居 [Mr/Ms] [subj] luggage [obj] to hold って 二階 ['s / of] 客室 cherry blossom a space [until] to guide てく した",
+          "naturalEn": "Once procedures concluded, the nakai carried my luggage and guided me to the second-floor guest quarters, the 'Sakura Room.'",
+          "tokens": [
+            {
+              "surface": "手続き",
+              "reading": "てつづき",
+              "meaning": "procedure; (legal) process; formalities",
+              "baseForm": "手続き",
+              "level": "N2"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "済む"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "仲居"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "荷物",
+              "reading": "にもつ",
+              "meaning": "luggage",
+              "baseForm": "荷物",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "持",
+              "reading": "も",
+              "meaning": "to hold",
+              "baseForm": "持つ",
+              "level": "N5"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "二階"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "客室"
+            },
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "桜の",
+              "reading": "さくらの",
+              "meaning": "cherry blossom; cherry tree",
+              "baseForm": "桜",
+              "level": "N3"
+            },
+            {
+              "surface": "間",
+              "reading": "あいだ",
+              "meaning": "a space",
+              "baseForm": "間",
+              "level": "N4"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "まで"
+            },
+            {
+              "surface": "案内",
+              "reading": "あんない",
+              "meaning": "to guide",
+              "baseForm": "案内",
+              "level": "N4"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "い草の清々しい香りが漂う和室に入ると、床の間には季節の花が生けられ、窓からは静かな日本庭園が一望できました。",
+          "literalEn": "い草 ['s / of] 清々しい 香り [subj] to drift about 和室 [at/to] to enter [with/and] 床の間 [at/to] [topic] 季節 ['s / of] flower [subj] draft けら window [from] [topic] quiet Japan 庭園 [subj] 一望 でき した",
+          "naturalEn": "Stepping into the Japanese-style room scented with fresh rush grass, seasonal blooms decorated the alcove, and a tranquil Japanese garden stretched before the window.",
+          "tokens": [
+            {
+              "surface": "い草"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "清々しい"
+            },
+            {
+              "surface": "香り"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "漂う",
+              "reading": "ただよう",
+              "meaning": "to drift about; to float; to hang in air",
+              "baseForm": "漂う",
+              "level": "N1"
+            },
+            {
+              "surface": "和室"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入る",
+              "reading": "はいる",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "床の間"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "季節"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "花",
+              "reading": "はな",
+              "meaning": "flower",
+              "baseForm": "花",
+              "level": "N5"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "生",
+              "reading": "なま",
+              "meaning": "draft (beer); raw; unprocessed",
+              "baseForm": "生",
+              "level": "N3"
+            },
+            {
+              "surface": "けら"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "窓",
+              "reading": "まど",
+              "meaning": "window",
+              "baseForm": "窓",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "静か",
+              "reading": "しずか",
+              "meaning": "quiet",
+              "baseForm": "静か",
+              "level": "N5"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "日本",
+              "reading": "にっぽん",
+              "meaning": "Japan",
+              "baseForm": "日本",
+              "level": "N3"
+            },
+            {
+              "surface": "庭園"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "一望"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "仲居さんは急須でお茶を淹れて銘菓の温泉まんじゅうを振る舞いながら、大浴場の利用規則を説明してくれました。",
+          "literalEn": "仲居 [Mr/Ms] [topic] 急須 [in/by] tea [obj] [and] 銘菓 ['s / of] 温泉 まんじゅう [obj] 振る舞い ながら large 浴場 ['s / of] 利用 規則 [obj] explanation てく した",
+          "naturalEn": "Brewing a pot of green tea and serving a renowned onsen steamed bun, she explained the operating guidelines of the grand communal baths.",
+          "tokens": [
+            {
+              "surface": "仲居"
+            },
+            {
+              "surface": "さん",
+              "meaning": "Mr or Mrs",
+              "baseForm": "さん",
+              "level": "N1"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "急須"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "お茶",
+              "reading": "おちゃ",
+              "meaning": "tea (green tea)",
+              "baseForm": "お茶",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "淹"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "銘菓"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "温泉"
+            },
+            {
+              "surface": "まんじゅう"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "振る舞い"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "大",
+              "reading": "だい",
+              "meaning": "large; big; great",
+              "baseForm": "大",
+              "level": "N3"
+            },
+            {
+              "surface": "浴場"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "利用"
+            },
+            {
+              "surface": "規則"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "説明",
+              "reading": "せつめい",
+              "meaning": "explanation",
+              "baseForm": "説明",
+              "level": "N4"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "てく"
+            },
+            {
+              "surface": "れ"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "「大浴場と露天風呂は夜通しご利用いただけますが、午前二時に男女の暖簾が入れ替わることになっております」とのことでした。",
+          "literalEn": "large 浴場 [with/and] 露天風呂 [topic] 夜通し ご利用 [past] だけ [polite] [subj] morning two time 男女 ['s / of] 暖簾 [subj] 入れ替わる ことに って おり [polite] [with/and] ['s / of] thing [in/by] した",
+          "naturalEn": "'The grand bath and open-air hot springs remain accessible throughout the night, but the men's and women's baths swap curtains at 2:00 AM,' she noted.",
+          "tokens": [
+            {
+              "surface": "「"
+            },
+            {
+              "surface": "大",
+              "reading": "だい",
+              "meaning": "large; big; great",
+              "baseForm": "大",
+              "level": "N3"
+            },
+            {
+              "surface": "浴場"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "露天風呂"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "夜通し"
+            },
+            {
+              "surface": "ご利用"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "だけ"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "午前",
+              "reading": "ごぜん",
+              "meaning": "morning",
+              "baseForm": "午前",
+              "level": "N5"
+            },
+            {
+              "surface": "二",
+              "reading": "に",
+              "meaning": "two",
+              "baseForm": "二",
+              "level": "N5"
+            },
+            {
+              "surface": "時に",
+              "reading": "ときに",
+              "meaning": "time; hour; occasion",
+              "baseForm": "時",
+              "level": "N3"
+            },
+            {
+              "surface": "男女"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "暖簾"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "入れ替わる"
+            },
+            {
+              "surface": "ことに"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "って"
+            },
+            {
+              "surface": "おり"
+            },
+            {
+              "surface": "ます"
+            },
+            {
+              "surface": "」"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "浴衣のサイズを合わせてもらった後、私は早速浴衣と羽織を身にまとい、タオルを片手に露天風呂へと向かいました。湯船に入る前にかけ湯をして身体を洗い流すという日本の入浴マナーを守り、岩造りの湯舟に静かに身を沈めました。澄んだ山の空気を胸いっぱいに吸い込みながら温かい湯に浸かるうちに、日頃の仕事の疲れが綺麗に溶けていくようでした。夜には旬の山菜や地元の川魚を使った贅沢な会席料理を堪能し、至福のひとときを過ごすことができました。",
+      "en": "After having my yukata size fitted, I immediately donned the robe and haori jacket, heading toward the open-air bath with a towel in hand. Adhering to Japanese bathing etiquette of rinsing thoroughly before entering the tub, I quietly submerged my body into the rock pool. Soaking in the steaming spring waters while inhaling the crisp alpine air, the fatigue accumulated from daily work seemed to dissolve away completely. At night, I savored a lavish kaiseki banquet featuring seasonal wild mountain herbs and local river fish, basking in pure bliss.",
+      "tokens": [
+        {
+          "surface": "浴衣",
+          "reading": "ゆかた",
+          "meaning": "bathrobe; informal summer kimono; yukata",
+          "baseForm": "浴衣",
+          "level": "N2"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "サイズ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "合わせ"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "も"
+        },
+        {
+          "surface": "ら"
+        },
+        {
+          "surface": "っ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "後",
+          "reading": "あと",
+          "meaning": "afterwards",
+          "baseForm": "後",
+          "level": "N5"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "私",
+          "reading": "わたくし",
+          "meaning": "(humble) I; myself",
+          "baseForm": "私",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "早速"
+        },
+        {
+          "surface": "浴衣",
+          "reading": "ゆかた",
+          "meaning": "bathrobe; informal summer kimono; yukata",
+          "baseForm": "浴衣",
+          "level": "N2"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "羽織"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "身"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "とい"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "タオル"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "片手"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "露天風呂"
+        },
+        {
+          "surface": "へ"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "向かい",
+          "reading": "むかい",
+          "meaning": "facing; opposite; across the street",
+          "baseForm": "向かい",
+          "level": "N3"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "湯船"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "入る",
+          "reading": "はいる",
+          "meaning": "to enter; to contain",
+          "baseForm": "入る",
+          "level": "N5"
+        },
+        {
+          "surface": "前",
+          "reading": "まえ",
+          "meaning": "before",
+          "baseForm": "前",
+          "level": "N5"
+        },
+        {
+          "surface": "にかけ"
+        },
+        {
+          "surface": "湯"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "身体"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "洗い流す"
+        },
+        {
+          "surface": "という"
+        },
+        {
+          "surface": "日本",
+          "reading": "にっぽん",
+          "meaning": "Japan",
+          "baseForm": "日本",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "入浴"
+        },
+        {
+          "surface": "マナー"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "守り"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "岩"
+        },
+        {
+          "surface": "造り"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "湯舟"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "meaning": "quiet",
+          "baseForm": "静か",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "身"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "沈"
+        },
+        {
+          "surface": "め"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "澄"
+        },
+        {
+          "surface": "ん"
+        },
+        {
+          "surface": "だ"
+        },
+        {
+          "surface": "山",
+          "reading": "やま",
+          "meaning": "mountain",
+          "baseForm": "山",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "空気"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "胸"
+        },
+        {
+          "surface": "いっぱい"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "吸"
+        },
+        {
+          "surface": "い"
+        },
+        {
+          "surface": "込み"
+        },
+        {
+          "surface": "ながら"
+        },
+        {
+          "surface": "温かい",
+          "reading": "ぬるかい",
+          "meaning": "luke warm",
+          "baseForm": "温い",
+          "level": "N5"
+        },
+        {
+          "surface": "湯"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "浸かる"
+        },
+        {
+          "surface": "うち",
+          "meaning": "within",
+          "baseForm": "うち",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "日頃"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "仕事",
+          "reading": "しごと",
+          "meaning": "job",
+          "baseForm": "仕事",
+          "level": "N5"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "疲れ",
+          "reading": "つかれ",
+          "meaning": "tiredness; fatigue",
+          "baseForm": "疲れ",
+          "level": "N3"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "綺麗",
+          "reading": "きれい",
+          "meaning": "pretty; clean; beautiful",
+          "baseForm": "綺麗",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "溶け",
+          "reading": "とけ",
+          "meaning": "to dissolve (paint)",
+          "baseForm": "溶く",
+          "level": "N2"
+        },
+        {
+          "surface": "てい"
+        },
+        {
+          "surface": "く"
+        },
+        {
+          "surface": "よう"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "夜",
+          "reading": "よる",
+          "meaning": "evening; night",
+          "baseForm": "夜",
+          "level": "N5"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "旬"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "山菜"
+        },
+        {
+          "surface": "や"
+        },
+        {
+          "surface": "地元"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "川",
+          "reading": "かわ",
+          "meaning": "river",
+          "baseForm": "川",
+          "level": "N5"
+        },
+        {
+          "surface": "魚",
+          "reading": "さかな",
+          "meaning": "fish",
+          "baseForm": "魚",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "使",
+          "reading": "つか",
+          "meaning": "to use",
+          "baseForm": "使う",
+          "level": "N5"
+        },
+        {
+          "surface": "っ"
+        },
+        {
+          "surface": "た"
+        },
+        {
+          "surface": "贅沢"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "会席"
+        },
+        {
+          "surface": "料理",
+          "reading": "りょうり",
+          "meaning": "cuisine",
+          "baseForm": "料理",
+          "level": "N5"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "堪能"
+        },
+        {
+          "surface": "し"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "至福"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "ひととき"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "過ごす"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "でき"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "浴衣のサイズを合わせてもらった後、私は早速浴衣と羽織を身にまとい、タオルを片手に露天風呂へと向かいました。",
+          "literalEn": "bathrobe ['s / of] サイズ [obj] 合わせ [and] [also] [past] afterwards  I [topic] 早速 bathrobe [with/and] 羽織 [obj] [at/to] とい タオル [obj] 片手 [at/to] 露天風呂 [toward] [with/and] facing した",
+          "naturalEn": "After having my yukata size fitted, I immediately donned the robe and haori jacket, heading toward the open-air bath with a towel in hand.",
+          "tokens": [
+            {
+              "surface": "浴衣",
+              "reading": "ゆかた",
+              "meaning": "bathrobe; informal summer kimono; yukata",
+              "baseForm": "浴衣",
+              "level": "N2"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "サイズ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "合わせ"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "も"
+            },
+            {
+              "surface": "ら"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "後",
+              "reading": "あと",
+              "meaning": "afterwards",
+              "baseForm": "後",
+              "level": "N5"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "早速"
+            },
+            {
+              "surface": "浴衣",
+              "reading": "ゆかた",
+              "meaning": "bathrobe; informal summer kimono; yukata",
+              "baseForm": "浴衣",
+              "level": "N2"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "羽織"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "身"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "とい"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "タオル"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "片手"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "露天風呂"
+            },
+            {
+              "surface": "へ"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "向かい",
+              "reading": "むかい",
+              "meaning": "facing; opposite; across the street",
+              "baseForm": "向かい",
+              "level": "N3"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "湯船に入る前にかけ湯をして身体を洗い流すという日本の入浴マナーを守り、岩造りの湯舟に静かに身を沈めました。",
+          "literalEn": "湯船 [at/to] to enter before にかけ [obj] [and] 身体 [obj] 洗い流す という Japan ['s / of] 入浴 マナー [obj] 守り 造り ['s / of] 湯舟 [at/to] quiet [at/to] [obj] した",
+          "naturalEn": "Adhering to Japanese bathing etiquette of rinsing thoroughly before entering the tub, I quietly submerged my body into the rock pool.",
+          "tokens": [
+            {
+              "surface": "湯船"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "入る",
+              "reading": "はいる",
+              "meaning": "to enter; to contain",
+              "baseForm": "入る",
+              "level": "N5"
+            },
+            {
+              "surface": "前",
+              "reading": "まえ",
+              "meaning": "before",
+              "baseForm": "前",
+              "level": "N5"
+            },
+            {
+              "surface": "にかけ"
+            },
+            {
+              "surface": "湯"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "身体"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "洗い流す"
+            },
+            {
+              "surface": "という"
+            },
+            {
+              "surface": "日本",
+              "reading": "にっぽん",
+              "meaning": "Japan",
+              "baseForm": "日本",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "入浴"
+            },
+            {
+              "surface": "マナー"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "守り"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "岩"
+            },
+            {
+              "surface": "造り"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "湯舟"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "静か",
+              "reading": "しずか",
+              "meaning": "quiet",
+              "baseForm": "静か",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "身"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "沈"
+            },
+            {
+              "surface": "め"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "澄んだ山の空気を胸いっぱいに吸い込みながら温かい湯に浸かるうちに、日頃の仕事の疲れが綺麗に溶けていくようでした。",
+          "literalEn": "[is] mountain ['s / of] 空気 [obj] いっぱい [at/to] 込み ながら luke warm [at/to] 浸かる within [at/to] 日頃 ['s / of] job ['s / of] tiredness [subj] pretty [at/to] to dissolve てい よう [in/by] した",
+          "naturalEn": "Soaking in the steaming spring waters while inhaling the crisp alpine air, the fatigue accumulated from daily work seemed to dissolve away completely.",
+          "tokens": [
+            {
+              "surface": "澄"
+            },
+            {
+              "surface": "ん"
+            },
+            {
+              "surface": "だ"
+            },
+            {
+              "surface": "山",
+              "reading": "やま",
+              "meaning": "mountain",
+              "baseForm": "山",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "空気"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "胸"
+            },
+            {
+              "surface": "いっぱい"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "吸"
+            },
+            {
+              "surface": "い"
+            },
+            {
+              "surface": "込み"
+            },
+            {
+              "surface": "ながら"
+            },
+            {
+              "surface": "温かい",
+              "reading": "ぬるかい",
+              "meaning": "luke warm",
+              "baseForm": "温い",
+              "level": "N5"
+            },
+            {
+              "surface": "湯"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "浸かる"
+            },
+            {
+              "surface": "うち",
+              "meaning": "within",
+              "baseForm": "うち",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "日頃"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "仕事",
+              "reading": "しごと",
+              "meaning": "job",
+              "baseForm": "仕事",
+              "level": "N5"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "疲れ",
+              "reading": "つかれ",
+              "meaning": "tiredness; fatigue",
+              "baseForm": "疲れ",
+              "level": "N3"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "綺麗",
+              "reading": "きれい",
+              "meaning": "pretty; clean; beautiful",
+              "baseForm": "綺麗",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "溶け",
+              "reading": "とけ",
+              "meaning": "to dissolve (paint)",
+              "baseForm": "溶く",
+              "level": "N2"
+            },
+            {
+              "surface": "てい"
+            },
+            {
+              "surface": "く"
+            },
+            {
+              "surface": "よう"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "夜には旬の山菜や地元の川魚を使った贅沢な会席料理を堪能し、至福のひとときを過ごすことができました。",
+          "literalEn": "evening [at/to] [topic] ['s / of] 山菜 地元 ['s / of] river fish [obj] to use [past] 贅沢 会席 cuisine [obj] 堪能 至福 ['s / of] ひととき [obj] 過ごす thing [subj] でき した",
+          "naturalEn": "At night, I savored a lavish kaiseki banquet featuring seasonal wild mountain herbs and local river fish, basking in pure bliss.",
+          "tokens": [
+            {
+              "surface": "夜",
+              "reading": "よる",
+              "meaning": "evening; night",
+              "baseForm": "夜",
+              "level": "N5"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "旬"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "山菜"
+            },
+            {
+              "surface": "や"
+            },
+            {
+              "surface": "地元"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "川",
+              "reading": "かわ",
+              "meaning": "river",
+              "baseForm": "川",
+              "level": "N5"
+            },
+            {
+              "surface": "魚",
+              "reading": "さかな",
+              "meaning": "fish",
+              "baseForm": "魚",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "使",
+              "reading": "つか",
+              "meaning": "to use",
+              "baseForm": "使う",
+              "level": "N5"
+            },
+            {
+              "surface": "っ"
+            },
+            {
+              "surface": "た"
+            },
+            {
+              "surface": "贅沢"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "会席"
+            },
+            {
+              "surface": "料理",
+              "reading": "りょうり",
+              "meaning": "cuisine",
+              "baseForm": "料理",
+              "level": "N5"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "堪能"
+            },
+            {
+              "surface": "し"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "至福"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "ひととき"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "過ごす"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ja": "細やかな気配りと歴史あるもてなしの心に触れ、日本の伝統文化の奥深さを五感で味わう貴重な一日となりました。心身ともにリフレッシュした私は、明日からの新しい挑戦に向けて前向きな活力を満たすことができました。",
+      "en": "Touching upon meticulous attentiveness and centuries-old hospitality, it proved a treasured day to experience the profound depth of Japanese culture with all five senses. Refreshed in both mind and body, I was able to replenish positive vitality toward new endeavors starting tomorrow.",
+      "tokens": [
+        {
+          "surface": "細やか"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "気配り"
+        },
+        {
+          "surface": "と",
+          "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+          "baseForm": "と",
+          "level": "N1"
+        },
+        {
+          "surface": "歴史",
+          "reading": "れきし",
+          "meaning": "history",
+          "baseForm": "歴史",
+          "level": "N4"
+        },
+        {
+          "surface": "ある",
+          "meaning": "to be; to have (used for inanimate objects)",
+          "baseForm": "ある",
+          "level": "N5"
+        },
+        {
+          "surface": "もてなし"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "心",
+          "reading": "こころ",
+          "meaning": "core; heart",
+          "baseForm": "心",
+          "level": "N4"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "触れ"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "日本",
+          "reading": "にっぽん",
+          "meaning": "Japan",
+          "baseForm": "日本",
+          "level": "N3"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "伝統"
+        },
+        {
+          "surface": "文化",
+          "reading": "ぶんか",
+          "meaning": "culture",
+          "baseForm": "文化",
+          "level": "N4"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "奥",
+          "reading": "おく",
+          "meaning": "interior; inner part",
+          "baseForm": "奥",
+          "level": "N3"
+        },
+        {
+          "surface": "深",
+          "reading": "ふか",
+          "meaning": "deep",
+          "baseForm": "深い",
+          "level": "N4"
+        },
+        {
+          "surface": "さ"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "五感"
+        },
+        {
+          "surface": "で",
+          "meaning": "outflow; coming (going) out; graduate (of)",
+          "baseForm": "で",
+          "level": "N3"
+        },
+        {
+          "surface": "味わう"
+        },
+        {
+          "surface": "貴重"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "一日",
+          "reading": "いちにち",
+          "meaning": "one day; all day",
+          "baseForm": "一日",
+          "level": "N5"
+        },
+        {
+          "surface": "となり"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        },
+        {
+          "surface": "心身"
+        },
+        {
+          "surface": "ともに"
+        },
+        {
+          "surface": "リフレッシュ"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "私",
+          "reading": "わたくし",
+          "meaning": "(humble) I; myself",
+          "baseForm": "私",
+          "level": "N5"
+        },
+        {
+          "surface": "は"
+        },
+        {
+          "surface": "、"
+        },
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "meaning": "tomorrow",
+          "baseForm": "明日",
+          "level": "N5"
+        },
+        {
+          "surface": "から"
+        },
+        {
+          "surface": "の"
+        },
+        {
+          "surface": "新しい",
+          "reading": "あたらしい",
+          "meaning": "new",
+          "baseForm": "新しい",
+          "level": "N5"
+        },
+        {
+          "surface": "挑戦"
+        },
+        {
+          "surface": "に"
+        },
+        {
+          "surface": "向け"
+        },
+        {
+          "surface": "て"
+        },
+        {
+          "surface": "前向き"
+        },
+        {
+          "surface": "な"
+        },
+        {
+          "surface": "活力"
+        },
+        {
+          "surface": "を"
+        },
+        {
+          "surface": "満たす"
+        },
+        {
+          "surface": "こと",
+          "meaning": "thing; matter",
+          "baseForm": "こと",
+          "level": "N4"
+        },
+        {
+          "surface": "が"
+        },
+        {
+          "surface": "でき"
+        },
+        {
+          "surface": "ま"
+        },
+        {
+          "surface": "した"
+        },
+        {
+          "surface": "。"
+        }
+      ],
+      "sentences": [
+        {
+          "ja": "細やかな気配りと歴史あるもてなしの心に触れ、日本の伝統文化の奥深さを五感で味わう貴重な一日となりました。",
+          "literalEn": "細やか 気配り [with/and] history to be もてなし ['s / of] core [at/to] 触れ Japan ['s / of] 伝統 culture ['s / of] interior deep [obj] 五感 [in/by] 味わう 貴重 one day となり した",
+          "naturalEn": "Touching upon meticulous attentiveness and centuries-old hospitality, it proved a treasured day to experience the profound depth of Japanese culture with all five senses.",
+          "tokens": [
+            {
+              "surface": "細やか"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "気配り"
+            },
+            {
+              "surface": "と",
+              "meaning": "if (conjunction); promoted pawn (shogi) (abbreviation)",
+              "baseForm": "と",
+              "level": "N1"
+            },
+            {
+              "surface": "歴史",
+              "reading": "れきし",
+              "meaning": "history",
+              "baseForm": "歴史",
+              "level": "N4"
+            },
+            {
+              "surface": "ある",
+              "meaning": "to be; to have (used for inanimate objects)",
+              "baseForm": "ある",
+              "level": "N5"
+            },
+            {
+              "surface": "もてなし"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "心",
+              "reading": "こころ",
+              "meaning": "core; heart",
+              "baseForm": "心",
+              "level": "N4"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "触れ"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "日本",
+              "reading": "にっぽん",
+              "meaning": "Japan",
+              "baseForm": "日本",
+              "level": "N3"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "伝統"
+            },
+            {
+              "surface": "文化",
+              "reading": "ぶんか",
+              "meaning": "culture",
+              "baseForm": "文化",
+              "level": "N4"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "奥",
+              "reading": "おく",
+              "meaning": "interior; inner part",
+              "baseForm": "奥",
+              "level": "N3"
+            },
+            {
+              "surface": "深",
+              "reading": "ふか",
+              "meaning": "deep",
+              "baseForm": "深い",
+              "level": "N4"
+            },
+            {
+              "surface": "さ"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "五感"
+            },
+            {
+              "surface": "で",
+              "meaning": "outflow; coming (going) out; graduate (of)",
+              "baseForm": "で",
+              "level": "N3"
+            },
+            {
+              "surface": "味わう"
+            },
+            {
+              "surface": "貴重"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "一日",
+              "reading": "いちにち",
+              "meaning": "one day; all day",
+              "baseForm": "一日",
+              "level": "N5"
+            },
+            {
+              "surface": "となり"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        },
+        {
+          "ja": "心身ともにリフレッシュした私は、明日からの新しい挑戦に向けて前向きな活力を満たすことができました。",
+          "literalEn": "心身 ともに リフレッシュ した  I [topic] tomorrow [from] ['s / of] new 挑戦 [at/to] 向け [and] 前向き 活力 [obj] 満たす thing [subj] でき した",
+          "naturalEn": "Refreshed in both mind and body, I was able to replenish positive vitality toward new endeavors starting tomorrow.",
+          "tokens": [
+            {
+              "surface": "心身"
+            },
+            {
+              "surface": "ともに"
+            },
+            {
+              "surface": "リフレッシュ"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "私",
+              "reading": "わたくし",
+              "meaning": "(humble) I; myself",
+              "baseForm": "私",
+              "level": "N5"
+            },
+            {
+              "surface": "は"
+            },
+            {
+              "surface": "、"
+            },
+            {
+              "surface": "明日",
+              "reading": "あした",
+              "meaning": "tomorrow",
+              "baseForm": "明日",
+              "level": "N5"
+            },
+            {
+              "surface": "から"
+            },
+            {
+              "surface": "の"
+            },
+            {
+              "surface": "新しい",
+              "reading": "あたらしい",
+              "meaning": "new",
+              "baseForm": "新しい",
+              "level": "N5"
+            },
+            {
+              "surface": "挑戦"
+            },
+            {
+              "surface": "に"
+            },
+            {
+              "surface": "向け"
+            },
+            {
+              "surface": "て"
+            },
+            {
+              "surface": "前向き"
+            },
+            {
+              "surface": "な"
+            },
+            {
+              "surface": "活力"
+            },
+            {
+              "surface": "を"
+            },
+            {
+              "surface": "満たす"
+            },
+            {
+              "surface": "こと",
+              "meaning": "thing; matter",
+              "baseForm": "こと",
+              "level": "N4"
+            },
+            {
+              "surface": "が"
+            },
+            {
+              "surface": "でき"
+            },
+            {
+              "surface": "ま"
+            },
+            {
+              "surface": "した"
+            },
+            {
+              "surface": "。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "チェックイン時に語り手が夕食の開始時間を午後七時に指定した理由は何ですか。",
+      "questionEn": "Why did the narrator choose 7:00 PM as the dinner start time during check-in?",
+      "options": [
+        "食事の前に温泉へゆっくり浸かってリフレッシュしたかったから",
+        "仕事の電話会議が午後6時半まで予定されていたから",
+        "午後6時半の回が満席で予約できなかったから",
+        "お腹が全く空いていなかったから"
+      ],
+      "optionsEn": [
+        "Because they wanted to leisurely soak in the hot springs and refresh before dining",
+        "Because a business teleconference was scheduled until 6:30 PM",
+        "Because the 6:30 PM slot was fully booked and unavailable",
+        "Because they were not hungry at all"
+      ],
+      "answerIndex": 0,
+      "explanation": "「温泉にゆっくり入ってから食事を楽しみたかったので、七時からの時間帯をお願いすることにしました」と書かれています。"
+    },
+    {
+      "question": "旅館の温泉大浴場に関する利用規則について、正しい説明はどれですか。",
+      "questionEn": "Which statement is correct regarding the operating rules of the ryokan's hot spring baths?",
+      "options": [
+        "夜通し利用できるが、午前二時に男女の浴室が入れ替わる規則になっている",
+        "夜9時以降は完全消灯となり入浴できない",
+        "水着を着用しなければ湯船に入ってはいけない",
+        "露天風呂は有料の貸切予約しか受け付けていない"
+      ],
+      "optionsEn": [
+        "Baths are open throughout the night, but swap male and female sections at 2:00 AM",
+        "Lights out completely at 9:00 PM and entry is barred thereafter",
+        "One must wear swimwear to enter the bath waters",
+        "The open-air bath only accepts paid private reservations"
+      ],
+      "answerIndex": 0,
+      "explanation": "仲居さんから「夜通し使えるが、午前二時に男女の暖簾が入れ替わることになっている」と案内されました。"
+    },
+    {
+      "question": "日本の温泉において、湯船に入る前に守るべき最も基本的なマナーは何ですか。",
+      "questionEn": "What is the most fundamental etiquette to observe before stepping into a Japanese hot spring tub?",
+      "options": [
+        "かけ湯をして身体を綺麗に洗い流してから湯船に入ること",
+        "タオルを湯船の中に浸けて頭の上に載せること",
+        "大きな声で挨拶してから飛び込むこと",
+        "冷たい水を湯船に足して温度を下げること"
+      ],
+      "optionsEn": [
+        "Rinsing off the body thoroughly with warm water before entering the bath tub",
+        "Soaking the towel directly inside the bath water and placing it on one's head",
+        "Diving in after shouting a loud greeting to fellow bathers",
+        "Adding cold tap water into the tub to cool the overall temperature"
+      ],
+      "answerIndex": 0,
+      "explanation": "共同の湯を清潔に保つため、湯船に入る前に必ず洗い場で身体を流すのが日本の伝統的な入浴マナーです。"
+    }
+  ]
+}

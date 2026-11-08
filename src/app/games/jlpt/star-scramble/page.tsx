@@ -1,7 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { useRouter } from "next/navigation";
+import { Suspense, useMemo, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowRight, Eye, EyeOff, Sparkles } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
 import { saveGameSession } from "@/lib/game-core/storage";
@@ -24,9 +24,21 @@ const LEVEL_DESCRIPTIONS: Record<StarScrambleLevel, string> = {
   N1: "Classical/literary structures & high-level idiomatic inversion",
 };
 
-export default function StarScrambleSetupPage() {
+function StarScrambleSetupContent() {
   const router = useRouter();
-  const [selectedLevels, setSelectedLevels] = useState<StarScrambleLevel[]>(["N5"]);
+  const searchParams = useSearchParams();
+  const levelParam = searchParams.get("level")?.toUpperCase();
+
+  const initialLevels = useMemo<StarScrambleLevel[]>(() => {
+    if (!levelParam) return ["N5"];
+    if (levelParam === "ALL") return [...STAR_SCRAMBLE_LEVELS];
+    if (STAR_SCRAMBLE_LEVELS.includes(levelParam as StarScrambleLevel)) {
+      return [levelParam as StarScrambleLevel];
+    }
+    return ["N5"];
+  }, [levelParam]);
+
+  const [selectedLevels, setSelectedLevels] = useState<StarScrambleLevel[]>(initialLevels);
   const [size, setSize] = useState<StarScrambleSessionSize>(10);
   const [showEnglishHint, setShowEnglishHint] = useState<boolean>(true);
   const [showFurigana, setShowFurigana] = useState<boolean>(false);
@@ -324,5 +336,13 @@ export default function StarScrambleSetupPage() {
         </div>
       </section>
     </GameLayout>
+  );
+}
+
+export default function StarScrambleSetupPage() {
+  return (
+    <Suspense fallback={null}>
+      <StarScrambleSetupContent />
+    </Suspense>
   );
 }
