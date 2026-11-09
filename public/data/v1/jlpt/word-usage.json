@@ -1,0 +1,4724 @@
+[
+  {
+    "id": "usage-n4-annai",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "案内",
+    "reading": "あんない",
+    "romaji": "annai",
+    "meanings": [
+      "guidance",
+      "showing around"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "友人が東京に遊びに来たので、有名な観光地を案内しました。",
+        "sentenceEn": "A friend came to Tokyo to visit, so I showed them around famous sightseeing spots.",
+        "isCorrect": true,
+        "explanation": "「案内する」is naturally used for guiding people around a city, building, or tourist destination (街や観光地を案内する)."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "来週のパーティーで、新しいクラスメートに私を案内してください。",
+        "sentenceEn": "At next week's party, please introduce me to the new classmates.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「紹介する」(introduce) when introducing a person to someone else, not「案内する」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "この文法書は日本語の助詞の使い方をとても案内しています。",
+        "sentenceEn": "This grammar book explains the use of Japanese particles very well.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「説明している」(explaining) or「解説している」, not「案内している」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "道が分からないので、交番の警察官に駅までの案内を尋ねました。",
+        "sentenceEn": "Since I didn't know the way, I asked the police officer at the police box for directions to the station.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「道を尋ねる」(ask the way) or「行き方を聞く」, not「案内を尋ねる」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-sewa",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "世話",
+    "reading": "せわ",
+    "romaji": "sewa",
+    "meanings": [
+      "care",
+      "looking after"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "仕事が忙しすぎて、自分の趣味の時間が全然世話できません。",
+        "sentenceEn": "I am too busy with work and cannot make any time for my hobbies.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「作れません」(cannot make time) or「取れません」, not「世話できません」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "両親が旅行に出かけている間、一人で妹の世話をしました。",
+        "sentenceEn": "While my parents were away on a trip, I looked after my younger sister by myself.",
+        "isCorrect": true,
+        "explanation": "「世話をする」is the natural collocation for taking care of people or pets (子供/妹/ペットの世話をする)."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "先生に難しい漢字の正しい書き順を世話してもらいました。",
+        "sentenceEn": "I had the teacher teach me the correct stroke order for difficult kanji.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「教えてもらいました」(had them teach me), not「世話してもらいました」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "明日の重要な社内会議の世話は私が担当することになっています。",
+        "sentenceEn": "I am scheduled to be in charge of the preparations for tomorrow's important company meeting.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「準備」(preparation) or「進行」(facilitation/moderating), not「世話」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-enryo",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "遠慮",
+    "reading": "えんりょ",
+    "romaji": "enryo",
+    "meanings": [
+      "reserve",
+      "holding back",
+      "hesitation"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "彼はいつも時間に遠慮するので、集合場所に遅れて来ます。",
+        "sentenceEn": "He is always sloppy with time, so he arrives late to the meeting point.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「時間にルーズ」(careless with time) or「時間を守らない」, not「遠慮する」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "突然雨が降ってきたので、傘を遠慮して小走りで駅へ向かいました。",
+        "sentenceEn": "Since it suddenly began raining, I gave up on an umbrella and trotted to the station.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「あきらめて」(gave up) or「持たずに」(without carrying), not「遠慮して」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "料理はたくさん用意してありますから、どうぞ遠慮しないで召し上がってください。",
+        "sentenceEn": "There is plenty of food prepared, so please eat as much as you like without holding back.",
+        "isCorrect": true,
+        "explanation": "「遠慮しないで〜する」is the natural phrase for politely inviting someone to help themselves without hesitating."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "この図書館の自習室はとても遠慮で、静かに集中できます。",
+        "sentenceEn": "The study room in this library is very quiet, so you can concentrate peacefully.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「静か」(quiet) or「落ち着いている」.「遠慮」cannot describe the atmosphere of a room."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-renraku",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "連絡",
+    "reading": "れんらく",
+    "romaji": "renraku",
+    "meanings": [
+      "contact",
+      "getting in touch"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "私たちの大学から隣の駅までは直通バスで連絡しています。",
+        "sentenceEn": "Our university is connected to the neighboring station by a direct bus service.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「つながっています」(connected) or「結ばれています」, not「連絡しています」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "先生が出した難しいクイズに誰も正しく連絡できませんでした。",
+        "sentenceEn": "Nobody was able to answer correctly the difficult quiz that the teacher gave.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「答えられませんでした」(could not answer), not「連絡できませんでした」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "このスイッチを押すと、玄関の明かりが自動で連絡します。",
+        "sentenceEn": "When you press this switch, the entrance light turns on automatically.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「つきます」(turns on), not「連絡します」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "電車の遅延で遅れそうだったので、すぐに上司に電話で連絡しました。",
+        "sentenceEn": "Because I seemed likely to be late due to a train delay, I immediately contacted my supervisor by phone.",
+        "isCorrect": true,
+        "explanation": "「連絡する」collocates with getting in touch by phone or email (電話/メールで連絡する)."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-soudan",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "相談",
+    "reading": "そうだん",
+    "romaji": "soudan",
+    "meanings": [
+      "consultation",
+      "discussion"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "将来の大学進学について、担任の先生に相談に乗ってもらいました。",
+        "sentenceEn": "I had my homeroom teacher consult with me regarding my future university entrance.",
+        "isCorrect": true,
+        "explanation": "「相談に乗る / 相談する」is the natural idiom for seeking advice or consulting on important personal matters."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "図書館の閲覧席で、一人で静かに歴史の小説を相談しています。",
+        "sentenceEn": "In the reading seat of the library, I am quietly reading a history novel alone.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「読んでいます」(reading), not「相談しています」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "昨日の夕方に友達と相談をかけて、一緒に晩ご飯を食べました。",
+        "sentenceEn": "Yesterday evening I invited my friend and had dinner together.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「声をかけて」(reached out/invited) or「約束をして」, not「相談をかけて」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "明日の天気予報をインターネットで相談したら、晴れだそうです。",
+        "sentenceEn": "When I checked tomorrow's weather forecast on the internet, it said it will be sunny.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「調べたら」(looked up/checked), not「相談したら」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-koshou",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "故障",
+    "reading": "こしょう",
+    "romaji": "koshou",
+    "meanings": [
+      "breakdown",
+      "mechanical malfunction"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "階段から滑り落ちて右足を故障してしまいました。",
+        "sentenceEn": "I slipped down the stairs and injured my right leg.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Human body parts do not「故障する」; use「怪我をして」(injured) or「痛めて」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "急に冷蔵庫が故障して冷えなくなったので、修理業者を呼びました。",
+        "sentenceEn": "The refrigerator suddenly broke down and stopped cooling, so I called a repair technician.",
+        "isCorrect": true,
+        "explanation": "「故障する」applies strictly to machines, appliances, or vehicles breaking down (機械や車が故障する)."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "些細な喧嘩が原因で、長年の親友との友情が故障してしまった。",
+        "sentenceEn": "Due to a trivial fight, my long-standing friendship with my best friend broke apart.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「壊れてしまった」(broke down) or「ひびが入ってしまった」for human relationships, not「故障」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "明日のレポート提出の締め切りに故障しないよう、夜遅くまで書いた。",
+        "sentenceEn": "To not miss tomorrow's report submission deadline, I wrote until late at night.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「遅れないよう」(not be late) or「間に合うよう」, not「故障しないよう」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-yakusoku",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "約束",
+    "reading": "やくそく",
+    "romaji": "yakusoku",
+    "meanings": [
+      "promise",
+      "appointment"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "毎朝早く起きて三十分走る約束を五年間続けています。",
+        "sentenceEn": "I have continued the habit of waking up early every morning to run for thirty minutes for five years.",
+        "isCorrect": false,
+        "explanation": "Unnatural. For personal routines, use「習慣」(habit) or「日課」(daily routine), not「約束」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "この電車の定期券の約束期限は来月の末日までです。",
+        "sentenceEn": "The validity period of this train commuter pass lasts until the end of next month.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「有効期限」(expiration/validity date), not「約束期限」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "今日の午後、駅前の喫茶店で友達と会う約束があります。",
+        "sentenceEn": "This afternoon, I have an appointment to meet a friend at the cafe in front of the station.",
+        "isCorrect": true,
+        "explanation": "「会う約束がある / 約束を守る」is the natural phrasing for having an agreement or appointment with someone."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "先生が試験の模範解答を黒板に約束してくれました。",
+        "sentenceEn": "The teacher wrote out the model answers for the exam on the blackboard.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「書いてくれました」(wrote for us) or「示してくれました」, not「約束してくれました」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-yotei",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "予定",
+    "reading": "よてい",
+    "romaji": "yotei",
+    "meanings": [
+      "plan",
+      "schedule"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "天気予報の予定によると、明日の夕方から雨が降るそうです。",
+        "sentenceEn": "According to the weather forecast's prediction, it will rain from tomorrow evening.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Weather forecasts use「予報」(forecast) or「発表」, not「予定」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "頭痛薬を飲んだら、十五分ほどで痛みが予定しました。",
+        "sentenceEn": "After taking the headache medicine, the pain subsided in about fifteen minutes.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「治まりました」(subsided) or「消えました」, not「予定しました」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "電車の中に財布を忘れて、予定して駅員室へ駆け込みました。",
+        "sentenceEn": "I left my wallet in the train and rushed into the station master's office in a panic.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「慌てて」(in a panic/fluster) or「急いで」, not「予定して」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "来月の大型連休には、家族みんなで北海道へ旅行する予定です。",
+        "sentenceEn": "During the long holiday next month, I plan to travel to Hokkaido with my entire family.",
+        "isCorrect": true,
+        "explanation": "「〜する予定だ / 予定がある」expresses one's scheduled intentions or itinerary."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-shuukan",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "習慣",
+    "reading": "しゅうかん",
+    "romaji": "shuukan",
+    "meanings": [
+      "custom",
+      "habit"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "毎朝起きたらコップ一杯の白湯を飲むことを習慣にしています。",
+        "sentenceEn": "I make it a habit to drink a glass of warm water when I wake up every morning.",
+        "isCorrect": true,
+        "explanation": "「〜を習慣にしている / 国の習慣」is the natural expression for personal habits or cultural customs."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "昨日の数学の期末テストはとても習慣で、時間が足りませんでした。",
+        "sentenceEn": "Yesterday's math final exam was very difficult, and I ran out of time.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「難しくて」(difficult) or「大変で」, not「習慣で」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "知らない英語の言葉があったので、電子辞書の習慣を引きました。",
+        "sentenceEn": "Because there was an English word I didn't know, I consulted the electronic dictionary.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「辞書を引く」(look up in dictionary).「習慣」cannot replace a dictionary entry."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "彼はとても習慣が良くて、いつもみんなに親切に接しています。",
+        "sentenceEn": "He has a very good personality and always treats everyone kindly.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「性格」(personality) or「人柄」(character), not「習慣」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-keiken",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "経験",
+    "reading": "けいけん",
+    "romaji": "keiken",
+    "meanings": [
+      "experience"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "昨日の夜、本屋で買ったとてもおもしろい経験を読みました。",
+        "sentenceEn": "Last night, I read a very interesting novel that I bought at the bookstore.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「小説」(novel) or「本」(book), not「経験」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "学生時代に一人で海外をバックパッカーとして旅した経験は貴重です。",
+        "sentenceEn": "The experience of traveling abroad alone as a backpacker during my student days is precious.",
+        "isCorrect": true,
+        "explanation": "「〜した経験がある / 貴重な経験」expresses firsthand life experiences."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "明日の期末試験に備えて、テキストの経験を五十問解きました。",
+        "sentenceEn": "In preparation for tomorrow's final exam, I solved fifty problems from the textbook.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「問題」(problems/questions), not「経験」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "台風の大雨で川の経験が急激に上がり、避難勧告が出ました。",
+        "sentenceEn": "Due to heavy rain from the typhoon, the river's water level rose rapidly.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「水位」(water level), not「経験」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-iken",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "意見",
+    "reading": "いけん",
+    "romaji": "iken",
+    "meanings": [
+      "opinion",
+      "view"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "高熱が続いて苦しかったので、医者にもらった意見を飲みました。",
+        "sentenceEn": "Because my high fever continued and was painful, I took the medicine prescribed by the doctor.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「薬」(medicine), not「意見」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "日本語の意見をきれいに発音できるよう、毎日シャドーイングしています。",
+        "sentenceEn": "To pronounce Japanese sounds beautifully, I shadow every day.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「発音」(pronunciation) or「アクセント」, not「意見」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "新しい企画について、会議の場で出席者全員に自分の意見を述べました。",
+        "sentenceEn": "I stated my own opinion regarding the new proposal to all attendees at the meeting.",
+        "isCorrect": true,
+        "explanation": "「意見を述べる / 言う / 聞く」is the natural collocation for expressing or hearing opinions."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "このアパートは南向きで窓が大きいので、部屋の意見がとても良いです。",
+        "sentenceEn": "Because this apartment faces south with large windows, the room's daylight is very good.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「日当たり」(sunlight) or「居心地」(comfort), not「意見」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-tsugou",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "都合",
+    "reading": "つごう",
+    "romaji": "tsugou",
+    "meanings": [
+      "convenience",
+      "circumstances"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "彼は足の都合がとても速く、短距離走でいつも学年一位になります。",
+        "sentenceEn": "His feet are very fast, and he always takes first place in sprints in his grade.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「足が速い」(fast runner), not「都合」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "この味噌汁はだしの都合がちょうどよくて、とてもおいしいです。",
+        "sentenceEn": "This miso soup's broth seasoning is just right and very delicious.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「加減」(balance/seasoning level), not「都合」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "買ったばかりの革靴の都合がきつくて、歩くと痛いです。",
+        "sentenceEn": "The size of the leather shoes I just bought is too tight, and it hurts when I walk.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「サイズ」(size) or「幅」(width), not「都合」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "明日の午後二時は急な用事で都合が悪いので、三時にずらしていただけますか。",
+        "sentenceEn": "Tomorrow at 2:00 PM is inconvenient due to sudden business, so could we push it to 3:00 PM?",
+        "isCorrect": true,
+        "explanation": "「都合がいい / 悪い / をつける」is the standard expression for scheduling convenience."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-mukaeru",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "迎える",
+    "reading": "むかえる",
+    "romaji": "mukaeru",
+    "meanings": [
+      "to welcome",
+      "to meet",
+      "to greet"
+    ],
+    "pos": [
+      "v1",
+      "vt"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "海外の姉妹校からやって来た留学生たちを、空港のロビーで笑顔で迎えました。",
+        "sentenceEn": "We welcomed with smiles the international exchange students arriving from our sister school overseas at the airport lobby.",
+        "isCorrect": true,
+        "explanation": "「客 / 人 / 新年を迎える」is the natural usage for meeting or welcoming arriving people or milestones."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "毎朝六時半に目覚まし時計を迎えて、すぐにベッドから起きます。",
+        "sentenceEn": "Every morning at 6:30 I stop the alarm clock and get out of bed immediately.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「止めて」(turn off/stop), not「迎えて」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "来週の発表に必要な専門書を図書館のカウンターで迎えました。",
+        "sentenceEn": "I borrowed the specialized book needed for next week's presentation at the library counter.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「借りました」(borrowed), not「迎えました」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "暗い廊下のスイッチを押すと、天井の照明を迎えました。",
+        "sentenceEn": "When I pressed the switch in the dark hallway, the ceiling light turned on.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「つきました」(turned on), not「迎えました」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-todokeru",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "届ける",
+    "reading": "とどける",
+    "romaji": "todokeru",
+    "meanings": [
+      "to deliver",
+      "to turn in",
+      "to report"
+    ],
+    "pos": [
+      "v1",
+      "vt"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "田舎の祖母に出す手紙を、駅前の赤いポストに届けました。",
+        "sentenceEn": "I dropped the letter to my grandmother in the countryside into the red postbox in front of the station.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「入れました」(dropped in/posted) or「投函しました」, not「届けました」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "道で拾った落とし物の鍵を、すぐに最寄りの交番へ届けました。",
+        "sentenceEn": "I immediately turned in the lost keys I found on the street to the nearest police box.",
+        "isCorrect": true,
+        "explanation": "「落とし物を届ける / 荷物を届ける」is the natural collocation for turning in lost property or delivering packages."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "電車の切符を駅の自動券売機で二枚届けました。",
+        "sentenceEn": "I purchased two train tickets at the station's automatic ticket machine.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「買いました」(bought) or「購入しました」, not「届けました」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "先生が話した大事な連絡事項を忘れないように手帳に届けました。",
+        "sentenceEn": "I wrote down the important notices the teacher spoke about in my notebook so as not to forget.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「メモしました」(noted down) or「書き留めました」, not「届けました」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-tsutaeru",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "伝える",
+    "reading": "つたえる",
+    "romaji": "tsutaeru",
+    "meanings": [
+      "to convey",
+      "to pass on a message"
+    ],
+    "pos": [
+      "v1",
+      "vt"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "一階のロビーから重い段ボール箱を階段で三階まで伝えました。",
+        "sentenceEn": "I carried the heavy cardboard box from the first floor lobby up the stairs to the third floor.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「運びました」(carried/transported), not「伝えました」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "夜遅くに部屋に入って、壁のスイッチを押して電気を伝えました。",
+        "sentenceEn": "I entered the room late at night, pressed the wall switch, and turned on the light.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「つけました」(turned on), not「伝えました」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "課長がお戻りになったら、明日の会議の時間変更をお伝えいただけますか。",
+        "sentenceEn": "When the section chief returns, could you please convey to him the schedule change for tomorrow's meeting?",
+        "isCorrect": true,
+        "explanation": "「言葉 / 気持ち / 伝言を伝える」collocates with passing on a message or communicating intent."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "動かなくなった古い腕時計を時計屋さんに持っていって伝えました。",
+        "sentenceEn": "I took the stopped old wristwatch to the watchmaker and had it repaired.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「直してもらいました」(had it repaired), not「伝えました」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-oru",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "折る",
+    "reading": "おる",
+    "romaji": "oru",
+    "meanings": [
+      "to break",
+      "to snap",
+      "to fold"
+    ],
+    "pos": [
+      "v5r",
+      "vt"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "鍵を忘れて家に入れないので、玄関のドアを折って開けました。",
+        "sentenceEn": "Because I forgot my key and couldn't enter the house, I unlocked the front door.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「開けました」(opened) or「壊して」(forced open), not「折って」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "風邪を引いたので、食後に水で粉薬を折って飲みました。",
+        "sentenceEn": "Because I caught a cold, I swallowed the powdered medicine with water after the meal.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「飲んだ」(took medicine), not「折って」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "鉛筆の先が丸くなったので、ナイフで上手に折りました。",
+        "sentenceEn": "Since the tip of the pencil became blunt, I skillfully sharpened it with a knife.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「削りました」(sharpened), not「折りました」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "手紙を丁寧に三つに折ってから、封筒の中に入れました。",
+        "sentenceEn": "I neatly folded the letter into three parts and then put it inside the envelope.",
+        "isCorrect": true,
+        "explanation": "「紙を折る / 枝を折る」naturally means folding paper or snapping a rigid object like a twig."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-taoreru",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "倒れる",
+    "reading": "たおれる",
+    "romaji": "taoreru",
+    "meanings": [
+      "to fall over",
+      "to collapse"
+    ],
+    "pos": [
+      "v1",
+      "vi"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "昨夜の猛烈な台風の風によって、庭の古い大木が道路側に倒れました。",
+        "sentenceEn": "Due to the fierce typhoon winds last night, the old large tree in the garden fell over onto the road side.",
+        "isCorrect": true,
+        "explanation": "「木 / ビル / 人が倒れる」is the natural intransitive verb for standing objects falling over."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "濡れた階段で足を滑らせて、下まで一気に倒れてしまいました。",
+        "sentenceEn": "I slipped on the wet stairs and fell all the way to the bottom.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「転げ落ちて」(tumbled down) or「落ちて」, not「倒れて」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "夕方になると、西の山の向こうに太陽がゆっくりと倒れました。",
+        "sentenceEn": "In the evening, the sun slowly sank behind the mountains in the west.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「沈みました」(sank/set), not「倒れました」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "お湯が沸いたので、やかんに急須のお茶を倒しました。",
+        "sentenceEn": "Because the water boiled, I poured tea into the teapot.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「注ぎました」(poured), not「倒しました」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-ochiru",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "落ちる",
+    "reading": "おちる",
+    "romaji": "ochiru",
+    "meanings": [
+      "to fall",
+      "to drop"
+    ],
+    "pos": [
+      "v1",
+      "vi"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "お湯を沸かしたら、十五分でお風呂がちょうどよく落ちました。",
+        "sentenceEn": "After boiling the water, the bath became just right in fifteen minutes.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「沸きました」(boiled/ready), not「落ちました」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "上着のポケットに穴が開いていたせいで、鍵が道に落ちてしまいました。",
+        "sentenceEn": "Because there was a hole in my jacket pocket, the keys fell onto the road.",
+        "isCorrect": true,
+        "explanation": "「物が落ちる / 試験に落ちる」naturally describes objects falling downward or failing an exam."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "学校から帰ってすぐに、宿題を全部落ちてから遊びに行きました。",
+        "sentenceEn": "As soon as I came home from school, I finished all my homework and went to play.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「終わらせて」(finished) or「済ませて」, not「落ちて」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "電車が終点に着くと、すべてのドアが一斉に落ちました。",
+        "sentenceEn": "When the train arrived at the final stop, all doors opened at once.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「開きました」(opened), not「落ちました」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-hirou",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "拾う",
+    "reading": "ひろう",
+    "romaji": "hirou",
+    "meanings": [
+      "to pick up",
+      "to find"
+    ],
+    "pos": [
+      "v5u",
+      "vt"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "メニューを見て、レストランで一番人気のランチ定食を拾いました。",
+        "sentenceEn": "Looking at the menu, I chose the most popular lunch set at the restaurant.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「選びました」(chose) or「注文しました」(ordered), not「拾いました」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "図書館で借りた本を汚さないように、丁寧に両手で拾いました。",
+        "sentenceEn": "So as not to dirty the book borrowed from the library, I held it carefully with both hands.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「持ちました」(held) or「扱いました」(handled), not「拾いました」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "駅のホームを歩いていたら、足元に千円札が落ちていたので拾いました。",
+        "sentenceEn": "While walking on the station platform, a 1,000-yen bill had dropped at my feet, so I picked it up.",
+        "isCorrect": true,
+        "explanation": "「落ちている物を拾う / タクシーを拾う」is the standard verb for picking up something off the ground."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "部屋の空気が少しこもっていたので、窓を大きく拾いました。",
+        "sentenceEn": "Because the room air was a little stuffy, I opened the window wide.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「開けました」(opened), not「拾いました」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-kazaru",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "飾る",
+    "reading": "かざる",
+    "romaji": "kazaru",
+    "meanings": [
+      "to decorate",
+      "to display"
+    ],
+    "pos": [
+      "v5r",
+      "vt"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "外で泥んこになって遊んだので、汚れた服を洗濯機で飾りました。",
+        "sentenceEn": "Because I played outside and got muddy, I washed the dirty clothes in the washing machine.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「洗いました」(washed), not「飾りました」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "冬の朝はとても冷え込むので、厚手のセーターを飾って学校へ行きます。",
+        "sentenceEn": "Because winter mornings are very cold, I wear a thick sweater to go to school.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「着て」(wear), not「飾って」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "朝食を食べそびれたので、途中のコンビニでパンを二つ飾りました。",
+        "sentenceEn": "Since I missed breakfast, I bought two buns at a convenience store along the way.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「買いました」(bought) or「食べました」, not「飾りました」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "来週のお客さんの訪問に合わせて、玄関に季節の花を生けて飾りました。",
+        "sentenceEn": "In preparation for the guests' visit next week, I arranged and displayed seasonal flowers at the entrance.",
+        "isCorrect": true,
+        "explanation": "「花 / 絵 / 部屋を飾る」is the natural collocation for adorning or displaying decoratives."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-nakunaru",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "亡くなる",
+    "reading": "なくなる",
+    "romaji": "nakunaru",
+    "meanings": [
+      "to pass away",
+      "to die (honorific/polite)"
+    ],
+    "pos": [
+      "v5r",
+      "vi"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "大好きな祖母は、家族に見守られながら九十五歳で安らかに亡くなりました。",
+        "sentenceEn": "My beloved grandmother passed away peacefully at age ninety-five while watched over by family.",
+        "isCorrect": true,
+        "explanation": "「亡くなる」is the polite and respectful verb strictly for human passing (people dying)."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "買い物をしすぎて、財布の中にあったお小遣いがすべて亡くなりました。",
+        "sentenceEn": "Because I shopped too much, all the pocket money in my wallet ran out.",
+        "isCorrect": false,
+        "explanation": "Unnatural. For things running out, write「無くなりました」(ran out), never「亡くなりました」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "机の上に置いておいたはずの自転車の鍵がどこかへ亡くなりました。",
+        "sentenceEn": "The bicycle key that should have been on the desk disappeared somewhere.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「消えた」(disappeared) or「無くなった」(lost/vanished), not「亡くなった」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "宿題のプリントが風で飛んで亡くなったので、先生にもう一度もらいました。",
+        "sentenceEn": "Because the homework sheet blew away in the wind and was lost, I got another from the teacher.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「無くなった」(was lost), not the kanji「亡くなった」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-sodateru",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "育てる",
+    "reading": "そだてる",
+    "romaji": "sodateru",
+    "meanings": [
+      "to raise",
+      "to bring up",
+      "to grow"
+    ],
+    "pos": [
+      "v1",
+      "vt"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "毎朝、家の近くの公園まで飼い犬を育てて散歩しています。",
+        "sentenceEn": "Every morning, I take my pet dog to the nearby park for a walk.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「連れて」(take along), not「育てて」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "祖父母は田舎の広い畑で、有機野菜や果物を大切に育てています。",
+        "sentenceEn": "My grandparents are carefully raising organic vegetables and fruits in a spacious field in the countryside.",
+        "isCorrect": true,
+        "explanation": "「子供 / 野菜 / ペットを育てる」is the natural transitive verb for nurturing children or cultivating plants."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "脚がぐらついていた古い木の椅子を自分で育てて使えるようにしました。",
+        "sentenceEn": "I repaired the wobbly old wooden chair myself so that it could be used.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「修理して」(repaired) or「直して」, not「育てて」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "先生に出された難しい算数の計算の答えを頭の中で育てました。",
+        "sentenceEn": "I calculated the answer to the difficult arithmetic problem given by the teacher in my head.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「計算しました」(calculated) or「考えました」, not「育てました」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-nareru",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "慣れる",
+    "reading": "なれる",
+    "romaji": "nareru",
+    "meanings": [
+      "to get used to",
+      "to grow accustomed"
+    ],
+    "pos": [
+      "v1",
+      "vi"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "子どもの頃からの夢だった電車の運転士についに慣れました。",
+        "sentenceEn": "I finally became a train driver, which had been my dream since childhood.",
+        "isCorrect": false,
+        "explanation": "Unnatural. For becoming an occupation, write「なれました」(成れた - became), not「慣れました」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "スーパーで買った荷物が重すぎて、片手で慣れることができません。",
+        "sentenceEn": "The groceries bought at the supermarket were too heavy to carry with one hand.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「持つ」(hold/carry), not「慣れる」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "日本で一人暮らしを始めて三か月が経ち、自炊の生活にもだいぶ慣れました。",
+        "sentenceEn": "Three months have passed since I started living alone in Japan, and I have grown quite accustomed to cooking for myself.",
+        "isCorrect": true,
+        "explanation": "「環境 / 生活 / 仕事に慣れる」is the standard verb for becoming accustomed to situations or habits."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "掛け時計の電池が切れてしまったので、秒針が慣れなくなりました。",
+        "sentenceEn": "Because the wall clock's battery ran out, the second hand stopped moving.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「動かなくなりました」(stopped moving), not「慣れなくなりました」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-maniau",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "間に合う",
+    "reading": "まにあう",
+    "romaji": "maniau",
+    "meanings": [
+      "to be in time for",
+      "to suffice"
+    ],
+    "pos": [
+      "v5u",
+      "vi"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "彼女の着ている青いワンピースは、彼女の雰囲気にとても間に合っています。",
+        "sentenceEn": "The blue dress she is wearing suits her atmosphere very well.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「似合っています」(suits/matches), not「間に合っています」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "みんなでいろいろなアイデアを出し合って、旅行の行き先が間に合いました。",
+        "sentenceEn": "Everyone shared various ideas together, and the travel destination was decided.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「決まりました」(was decided), not「間に合いました」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "この辞書は例文が豊富に掲載されていて、とても説明が間に合っています。",
+        "sentenceEn": "This dictionary is packed with abundant examples, and its explanations are very clear.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「わかりやすい」(easy to understand) or「詳しい」(detailed), not「間に合っている」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "朝の渋滞で焦りましたが、全力で走って飛行機の出発時刻に間に合いました。",
+        "sentenceEn": "I was panicked by the morning traffic jam, but I ran at full speed and made it in time for the flight's departure time.",
+        "isCorrect": true,
+        "explanation": "「時間 / 電車に間に合う」is the natural expression for arriving before a scheduled deadline."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-tazuneru",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "訪ねる",
+    "reading": "たずねる",
+    "romaji": "tazuneru",
+    "meanings": [
+      "to visit",
+      "to call on"
+    ],
+    "pos": [
+      "v1",
+      "vt"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "連休を利用して京都を訪れ、昔お世話になった恩師の家を訪ねました。",
+        "sentenceEn": "Taking advantage of the consecutive holidays, I visited Kyoto and called on my former mentor's home.",
+        "isCorrect": true,
+        "explanation": "「人の家 / 史跡を訪ねる」means visiting a person's home or a place."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "道に迷ってしまったので、近くの交番で駅までの近道を訪ねました。",
+        "sentenceEn": "Because I lost my way, I asked for the shortcut to the station at the nearby police box.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「尋ねました」(asked - 尋ねる), not the kanji「訪ねる」(visit)."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "映画が始まる直前に、売店で温かいミルクティーを訪ねました。",
+        "sentenceEn": "Just before the movie started, I bought a hot milk tea at the concession stand.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「買いました」(bought) or「注文しました」, not「訪ねました」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "毎晩寝る前に、ベッドの上で短編小説を三十ページほど訪ねます。",
+        "sentenceEn": "Every night before sleeping, I read about thirty pages of short stories on the bed.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「読みます」(read), not「訪ねます」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-suberu",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "滑る",
+    "reading": "すべる",
+    "romaji": "suberu",
+    "meanings": [
+      "to slip",
+      "to slide"
+    ],
+    "pos": [
+      "v5r",
+      "vi"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "小鳥たちが気持ちよさそうに春の青空を滑っています。",
+        "sentenceEn": "The small birds are flying pleasantly through the blue spring sky.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「飛んでいます」(flying), not「滑っています」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "雨上がりの階段が濡れていて、足が滑って危うく転びそうになりました。",
+        "sentenceEn": "The stairs after the rain were wet, and my foot slipped so that I almost fell over.",
+        "isCorrect": true,
+        "explanation": "「足 / 道が滑る」is the natural expression for slipping on ice, water, or oil."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "夏休みの暑い午後に、冷蔵庫で冷やした麦茶をゴクゴク滑りました。",
+        "sentenceEn": "On a hot summer afternoon, I gulped down barley tea cooled in the refrigerator.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「飲みました」(drank), not「滑りました」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "先生が黒板に白いチョークを滑って今日の宿題を書きました。",
+        "sentenceEn": "The teacher wrote today's homework on the blackboard using white chalk.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「チョークを使って」(using chalk) or「走らせて」, not「滑って」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-harau",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "払う",
+    "reading": "はらう",
+    "romaji": "harau",
+    "meanings": [
+      "to pay",
+      "to brush off"
+    ],
+    "pos": [
+      "v5u",
+      "vt"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "換気のために窓を開けて、外の新鮮な空気を部屋に払いました。",
+        "sentenceEn": "I opened the window for ventilation and brought fresh outdoor air into the room.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「入れました」(let in), not「払いました」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "誕生日のお祝いとして、妹に可愛いぬいぐるみを払いました。",
+        "sentenceEn": "As a birthday celebration, I gave my younger sister a cute stuffed animal.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「あげました」(gave) or「プレゼントしました」, not「払いました」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "スーパーのレジで、買った日用品の代金を電子マネーで払いました。",
+        "sentenceEn": "At the supermarket cash register, I paid for the daily goods I bought using electronic money.",
+        "isCorrect": true,
+        "explanation": "「代金 / お金 / 税金を払う」is the standard verb for paying money for goods or services."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "駅の自動券売機で、成田空港までの特急券を二枚払いました。",
+        "sentenceEn": "I bought two limited express tickets to Narita Airport at the station automatic ticket machine.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「買いました」(bought) or「購入しました」, not「払いました」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-kowareru",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "壊れる",
+    "reading": "こわれる",
+    "romaji": "kowareru",
+    "meanings": [
+      "to break",
+      "to be broken"
+    ],
+    "pos": [
+      "v1",
+      "vi"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "真冬の強い寒波によって、庭の池の水が一晩で壊れました。",
+        "sentenceEn": "Due to the strong cold wave in midwinter, the water in the garden pond froze overnight.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「凍りました」(froze), not「壊れました」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "近所のパン屋で買った焼きたてのフランスパンが壊れておいしいです。",
+        "sentenceEn": "The freshly baked French bread bought at the neighborhood bakery is crispy and delicious.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「香ばしくて」(fragrant/crisp) or「サクサクして」, not「壊れて」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "全力で階段を駆け上がったので、心臓が壊れて息ができません。",
+        "sentenceEn": "Because I dashed up the stairs at full speed, I was out of breath.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「息が切れて」(out of breath) or「苦しくて」, not「壊れて」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "長年愛用していたパソコンが突然壊れて、電源が入らなくなりました。",
+        "sentenceEn": "The personal computer I had used fondly for years suddenly broke, and the power wouldn't turn on.",
+        "isCorrect": true,
+        "explanation": "「機械 / 時計 / 椅子が壊れる」is the natural intransitive verb for devices or physical objects breaking."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-wareru",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "割れる",
+    "reading": "われる",
+    "romaji": "wareru",
+    "meanings": [
+      "to break",
+      "to shatter",
+      "to crack"
+    ],
+    "pos": [
+      "v1",
+      "vi"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "テーブルの上から滑り落ちたガラスの花瓶が、床で粉々に割れました。",
+        "sentenceEn": "The glass vase that slipped off the table shattered into pieces on the floor.",
+        "isCorrect": true,
+        "explanation": "「皿 / ガラス / 窓が割れる」naturally describes brittle objects like glass or ceramics shattering."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "工作の授業で、色画用紙をハサミで四角くきれいに割りました。",
+        "sentenceEn": "In arts and crafts class, I cut the colored construction paper neatly into squares with scissors.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「切りました」(cut), not「割りました」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "教科書の大事なページに折り目を割って、印をつけました。",
+        "sentenceEn": "I folded a crease on an important page of the textbook to mark it.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「つけて」(put a crease) or「折って」, not「割って」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "自転車の空気入れを使って、タイヤに空気をしっかりと割りました。",
+        "sentenceEn": "Using the bicycle air pump, I pumped air firmly into the tire.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「入れました」(pumped/put in), not「割りました」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-yogoreru",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "汚れる",
+    "reading": "よごれる",
+    "romaji": "yogoreru",
+    "meanings": [
+      "to get dirty"
+    ],
+    "pos": [
+      "v1",
+      "vi"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "引っ越しの重い荷物を運びすぎて、腰と背中の筋肉が汚れました。",
+        "sentenceEn": "Because I carried too many heavy moving boxes, my lower back and back muscles got sore.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「痛みました」(hurt) or「疲れました」(got tired), not「汚れました」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "雨上がりのグラウンドでサッカーをしたので、ユニフォームが泥でひどく汚れました。",
+        "sentenceEn": "Because we played soccer on the field after the rain, the uniform got terribly dirty with mud.",
+        "isCorrect": true,
+        "explanation": "「服 / 手 / 部屋が汚れる」is the standard verb for surfaces or garments getting dirty."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "街灯の少ない暗い夜道を歩くときは、周りが汚れて見えにくいです。",
+        "sentenceEn": "When walking on dark night streets with few streetlights, the surroundings are dark and hard to see.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「暗くて」(dark), not「汚れて」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "毎朝欠かさずストレッチ体操をして、体の柔軟性を汚れています。",
+        "sentenceEn": "I do stretching exercises without fail every morning to maintain my body's flexibility.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「高めています」(increasing) or「保っています」, not「汚れています」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-yorokobu",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "喜ぶ",
+    "reading": "よろこぶ",
+    "romaji": "yorokobu",
+    "meanings": [
+      "to be glad",
+      "to rejoice"
+    ],
+    "pos": [
+      "v5b",
+      "vi",
+      "vt"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "昨日の午後から雨が強く喜んで、近くの小川が増水しました。",
+        "sentenceEn": "Since yesterday afternoon, rain fell heavily and the nearby stream flooded.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「降って」(fell/rained heavily), not「喜んで」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "パソコンのバッテリーが切れて、突然画面が真っ暗に喜んでしまいました。",
+        "sentenceEn": "The laptop battery died and the screen suddenly went completely dark.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「消えて」(went off/disappeared), not「喜んで」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "欲しがっていたおもちゃをプレゼントすると、甥っ子は飛び跳ねて喜びました。",
+        "sentenceEn": "When I gave him the toy he had been wanting as a present, my nephew jumped up and was delighted.",
+        "isCorrect": true,
+        "explanation": "「人が喜ぶ / 成功を喜ぶ」naturally expresses feeling or showing happiness and joy."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "授業のチャイムが鳴ったので、生徒たちが教室へ喜んで走りました。",
+        "sentenceEn": "Because the class chime rang, the students ran in a hurry to the classroom.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「急いで」(in a hurry), not「喜んで」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-okoru",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "怒る",
+    "reading": "おこる",
+    "romaji": "okoru",
+    "meanings": [
+      "to get angry",
+      "to scold"
+    ],
+    "pos": [
+      "v5r",
+      "vi"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "毎朝六時に怒って、愛犬と一緒に近所を三十分散歩します。",
+        "sentenceEn": "Every morning I wake up at six and take a thirty-minute walk in the neighborhood with my dog.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「起きて」(wake up), not「怒って」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "お腹がペコペコだったので、台所で急いで焼きそばを怒りました。",
+        "sentenceEn": "Because I was starving, I hurriedly made fried noodles in the kitchen.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「作りました」(made/cooked), not「怒りました」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "このパズルはとても簡単ですから、小さな子どもでもすぐに怒れます。",
+        "sentenceEn": "Because this puzzle is very easy, even small children can solve it right away.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「解けます」(can solve), not「怒れます」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "約束の時間を一時間も無断で遅刻してしまい、待っていた友達にひどく怒られました。",
+        "sentenceEn": "I was an hour late for our appointment without notice, and my waiting friend got terribly angry at me.",
+        "isCorrect": true,
+        "explanation": "「人に怒る / 怒られる」is the standard verb for getting angry or being scolded."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-ayamaru",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "謝る",
+    "reading": "あやまる",
+    "romaji": "ayamaru",
+    "meanings": [
+      "to apologize"
+    ],
+    "pos": [
+      "v5r",
+      "vi",
+      "vt"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "不注意で隣の人の足を踏んでしまったので、頭を下げてすぐに謝りました。",
+        "sentenceEn": "Because I carelessly stepped on the neighbor's foot, I bowed my head and apologized immediately.",
+        "isCorrect": true,
+        "explanation": "「人に謝る / 迷惑を謝る」collocates with apologizing for an offense or mistake."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "仕事中に友人から電話がかかってきましたが、忙しくて謝れませんでした。",
+        "sentenceEn": "A phone call came from a friend during work, but I was busy and couldn't answer.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「出られませんでした」(could not answer), not「謝れませんでした」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "日本語の作文の文法の間違いを、放課後に先生に謝ってもらいました。",
+        "sentenceEn": "I had the teacher correct the grammatical mistakes in my Japanese essay after school.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「直してもらいました」(had them correct), not「謝ってもらいました」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "この駅の改札機にICカードをタッチすると、自動で扉が謝ります。",
+        "sentenceEn": "When you touch your IC card to the ticket gate at this station, the gate doors open automatically.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「開きます」(opens), not「謝ります」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-sawagu",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "騒ぐ",
+    "reading": "さわぐ",
+    "romaji": "sawagu",
+    "meanings": [
+      "to make noise",
+      "to cause a commotion"
+    ],
+    "pos": [
+      "v5g",
+      "vi"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "風邪をこじらせてしまい、喉が激しく騒いで水も飲み込めません。",
+        "sentenceEn": "I worsened my cold, and my throat hurts so severely that I can't even swallow water.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「痛くて」(hurts), not「騒いで」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "病院の待合室では他の患者さんの迷惑になりますから、大声で騒いではいけません。",
+        "sentenceEn": "In the hospital waiting room, it bothers other patients, so you must not make noise in a loud voice.",
+        "isCorrect": true,
+        "explanation": "「大声で騒ぐ / 酒を飲んで騒ぐ」is the standard verb for causing a clamor or making unruly noise."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "昨夜はベッドでぐっすり騒いだので、今朝は気分爽快に起きられました。",
+        "sentenceEn": "I slept soundly in bed last night, so I was able to wake up feeling refreshed this morning.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「眠ったので」(slept), not「騒いだので」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "週末に部屋の隅々までほうきで騒いで、ピカピカにしました。",
+        "sentenceEn": "On the weekend, I swept every corner of the room with a broom and made it sparkling clean.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「掃除して」(cleaned) or「掃いて」(swept), not「騒いで」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-odoroku",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "驚く",
+    "reading": "おどろく",
+    "romaji": "odoroku",
+    "meanings": [
+      "to be surprised",
+      "to be astonished"
+    ],
+    "pos": [
+      "v5k",
+      "vi"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "頭痛がひどいので、近くのドラッグストアでよく効く痛み止めを驚きました。",
+        "sentenceEn": "Because my headache was terrible, I bought an effective painkiller at the nearby drugstore.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「買いました」(bought), not「驚きました」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "明日の朝一番のフライトに乗り遅れないよう、目覚ましを五時に驚きました。",
+        "sentenceEn": "So as not to miss the first flight tomorrow morning, I set the alarm clock for five o'clock.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「セットしました」(set) or「かけました」, not「驚きました」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "静かな夜道で背後から突然大きなクラクションが鳴り、心臓が止まるほど驚きました。",
+        "sentenceEn": "A sudden loud horn sounded from behind on a quiet night street, and I was so surprised my heart almost stopped.",
+        "isCorrect": true,
+        "explanation": "「ニュース / 音 / 事実に驚く」is the natural intransitive verb for being surprised or astonished."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "部屋の温度が高くなってきたので、エアコンのリモコンで冷房を驚きました。",
+        "sentenceEn": "Because the room temperature became high, I turned on the cooling with the air conditioner remote.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「つけました」(turned on), not「驚きました」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-hidoi",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "ひどい",
+    "reading": "ひどい",
+    "romaji": "hidoi",
+    "meanings": [
+      "terrible",
+      "severe",
+      "harsh"
+    ],
+    "pos": [
+      "adj-i"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "母が焼いてくれたチョコレートケーキは甘くてとてもひどい味でした。",
+        "sentenceEn": "The chocolate cake that my mother baked for me was sweet and tasted very delicious.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「おいしい」(delicious), not「ひどい」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "先生はいつでもひどい笑顔で生徒たちの質問に親身に答えてくれます。",
+        "sentenceEn": "The teacher always answers students' questions warmly with a wonderful smile.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「優しい」(kind/gentle) or「素敵な」(wonderful), not「ひどい」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "今日は雲一つない快晴で、空が澄み渡っていてひどい景色です。",
+        "sentenceEn": "Today is clear without a single cloud, the sky is clear, and it's a beautiful scenery.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「素晴らしい」(splendid) or「きれいな」(beautiful), not「ひどい」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "昨晩はひどい雨と雷のせいで、町全体の電車が完全に運転を見合わせました。",
+        "sentenceEn": "Due to terrible rain and thunder last night, trains across the whole town completely suspended operations.",
+        "isCorrect": true,
+        "explanation": "「ひどい雨 / 風 / 扱い / 渋滞」collocates with extreme, harsh, or terrible conditions."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-nigai",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "苦い",
+    "reading": "にがい",
+    "romaji": "nigai",
+    "meanings": [
+      "bitter"
+    ],
+    "pos": [
+      "adj-i"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "病院で処方された粉薬はとても苦いので、いつも水と一緒に一気に飲みます。",
+        "sentenceEn": "The powdered medicine prescribed by the hospital is very bitter, so I always drink it in one gulp with water.",
+        "isCorrect": true,
+        "explanation": "「薬 / コーヒー / 野菜が苦い」describes the bitter taste quality, or figuratively a bitter experience (苦い経験)."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "真冬の北風が吹く夜は、肌に突き刺さるように苦いです。",
+        "sentenceEn": "On nights when the midwinter north wind blows, it feels piercingly cold on the skin.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「冷たい」(cold) or「厳しい」(severe), not「苦い」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "このスーツケースは本がぎっしり詰まっていて、一人で運ぶのは苦いです。",
+        "sentenceEn": "This suitcase is packed full of books, and it is impossible to carry alone.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「無理です」(impossible) or「重いです」(heavy), not「苦いです」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "彼女は足が苦いので、百メートル走でいつも学年トップになります。",
+        "sentenceEn": "She is fast on her feet, so she always takes top in her grade in the 100-meter dash.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「足が速い」(fast), not「苦い」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-asai",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "浅い",
+    "reading": "あさい",
+    "romaji": "asai",
+    "meanings": [
+      "shallow"
+    ],
+    "pos": [
+      "adj-i"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "彼は日本語を習い始めたばかりで、まだ知っている単語が浅いです。",
+        "sentenceEn": "He has just started learning Japanese, so the words he knows are still few.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「少ない」(few), not「浅い」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "この小川は水深が浅いので、小さな子どもたちが安心して水遊びをしています。",
+        "sentenceEn": "Because this brook is shallow, small children are playing safely in the water.",
+        "isCorrect": true,
+        "explanation": "「川 / 皿 / 眠り / 経験が浅い」collocates with shallow water depth, light sleep, or brief experience."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "この半袖シャツは生地の色が浅くて、どんなズボンにも合わせやすいです。",
+        "sentenceEn": "This short-sleeved shirt's fabric color is light and easy to match with any trousers.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「薄い」(light/pale color), not「浅い」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "早朝に目覚ましが鳴って起きたとき、頭がとても浅くてすっきりしていました。",
+        "sentenceEn": "When I woke up to the alarm in the early morning, my head was very clear and refreshed.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「冴えていて」(clear-headed), not「浅くて」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-yawarakai",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "柔らかい",
+    "reading": "やわらかい",
+    "romaji": "yawarakai",
+    "meanings": [
+      "soft",
+      "tender"
+    ],
+    "pos": [
+      "adj-i"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "先生の歴史の講義は解説が柔らかくて、初心者でもすぐに頭に入ります。",
+        "sentenceEn": "The teacher's history lecture explanation is easy to understand, so even beginners grasp it immediately.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「わかりやすい」(easy to understand) or「明快で」, not「柔らかくて」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "昨日の英語の単語テストは思ったより柔らかくて、簡単に満点が取れました。",
+        "sentenceEn": "Yesterday's English vocabulary test was easier than expected, and I easily got a perfect score.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「簡単で」(easy) or「やさしくて」, not「柔らかくて」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "焼きたての食パンはふっくらとしていて、手でちぎるととても柔らかいです。",
+        "sentenceEn": "Freshly baked bread is fluffy, and when torn by hand, it is very soft.",
+        "isCorrect": true,
+        "explanation": "「パン / 肉 / 布団が柔らかい」naturally describes soft textures or tender foods."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "このノートパソコンは本体がとても柔らかいので、片手で楽に持ち運べます。",
+        "sentenceEn": "Because this laptop body is very light, you can easily carry it with one hand.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「軽くて」(lightweight) or「薄くて」, not「柔らかい」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-komakai",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "細かい",
+    "reading": "こまかい",
+    "romaji": "komakai",
+    "meanings": [
+      "small",
+      "fine",
+      "detailed"
+    ],
+    "pos": [
+      "adj-i"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "真冬のグラウンドは風が細かくて、手足の指先がかじかんでしまいます。",
+        "sentenceEn": "The wind on the midwinter field is strong and piercing, freezing the fingertips and toes.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「強くて」(strong) or「冷たくて」, not「細かくて」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "彼の弟はクラスで一番背が細かくて、いつも前列の席に座っています。",
+        "sentenceEn": "His younger brother is the shortest in the class and always sits in the front row seats.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「背が低い」(short in height), not「背が細かい」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "このトマトスープは塩加減が細かくて、後味がとてもさっぱりしています。",
+        "sentenceEn": "This tomato soup's seasoning is delicate, and its aftertaste is very refreshing.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「絶妙で」(exquisite) or「上品で」(delicate), not「細かくて」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "自動販売機で飲み物を買いたいので、千円札を細かいお金にくずしてもらえませんか。",
+        "sentenceEn": "I want to buy a drink at the vending machine, so could you break this 1,000-yen bill into small change for me?",
+        "isCorrect": true,
+        "explanation": "「細かいお金 / 細かい字 / 細かいルール」is the natural expression for small coins/change or fine details."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-sakan",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "盛ん",
+    "reading": "さかん",
+    "romaji": "sakan",
+    "meanings": [
+      "thriving",
+      "popular",
+      "actively conducted"
+    ],
+    "pos": [
+      "adj-na"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "この地域では温暖な気候を利用して、昔から温室での果物栽培が盛んです。",
+        "sentenceEn": "In this region, fruit cultivation in greenhouses has been actively flourishing since old times taking advantage of the mild climate.",
+        "isCorrect": true,
+        "explanation": "「スポーツ / 産業 / 交流が盛んだ」naturally expresses activities, trades, or movements flourishing actively."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "外は大雨が盛んに降っていて、傘をさして歩いても靴まで濡れてしまいます。",
+        "sentenceEn": "Outside, heavy rain is falling fiercely, and even walking with an umbrella gets down to your shoes wet.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Rain intensity uses「激しく」(fiercely) or「ひどく」, never「盛んに」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "駅員さんがとても盛んな声で乗客に注意を呼びかけていました。",
+        "sentenceEn": "The station attendant was calling out warnings to passengers in a very loud voice.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Voices use「大きな声」(loud voice) or「元気な声」, not「盛んな声」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "真冬の教室はエアコンの暖房が盛んに効いていて、とても暖かいです。",
+        "sentenceEn": "In the midwinter classroom, the heating is working well, and it is very warm.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Effectiveness uses「よく効いている」(working well), not「盛んに」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-fukuzatsu",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "複雑",
+    "reading": "ふくざつ",
+    "romaji": "fukuzatsu",
+    "meanings": [
+      "complex",
+      "complicated"
+    ],
+    "pos": [
+      "adj-na"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "果樹園でもぎたてのリンゴはとても複雑で、甘い果汁が溢れてきます。",
+        "sentenceEn": "Freshly picked apples from the orchard are very fresh, overflowing with sweet fruit juice.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Fresh fruits use「新鮮」(fresh) or「みずみずしい」, not「複雑」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "新宿駅の地下街は構造がとても複雑で、初めて訪れた人はすぐに迷ってしまいます。",
+        "sentenceEn": "The structure of the Shinjuku Station underground mall is very complicated, and first-time visitors easily get lost.",
+        "isCorrect": true,
+        "explanation": "「構造 / 手続き / 事情が複雑だ」expresses intricate structures, procedures, or complex emotions."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "彼女はとても複雑な人柄で、誰にでも明るく親切に挨拶をします。",
+        "sentenceEn": "She has a cheerful personality and greets anyone brightly and kindly.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Use「明るい」(cheerful) or「親しみやすい」.「複雑」implies troublesome or difficult to understand."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "風で電車が複雑に揺れたので、つり革を両手でしっかり掴まりました。",
+        "sentenceEn": "The train swayed violently due to the wind, so I held tightly to the strap with both hands.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Violent swaying uses「激しく」(fiercely) or「大きく」, not「複雑に」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-teinei",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "丁寧",
+    "reading": "ていねい",
+    "romaji": "teinei",
+    "meanings": [
+      "polite",
+      "courteous",
+      "careful"
+    ],
+    "pos": [
+      "adj-na"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "彼は陸上部のエースで、走るスピードが誰よりも丁寧で速いです。",
+        "sentenceEn": "He is the ace of the track club, and his running speed is faster than anyone else's.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Running speed uses「速い」(fast), not「丁寧」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "洋食屋のコーンスープはとても丁寧で、パンにつけて食べると最高です。",
+        "sentenceEn": "The corn soup at the Western restaurant is very delicious, and it's best eaten by dipping bread in it.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Food taste uses「おいしい」(delicious) or「濃厚」(rich), not「丁寧」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "ホテルのフロント係が、周辺の観光マップを広げて丁寧に道順を教えてくれました。",
+        "sentenceEn": "The hotel front-desk clerk spread out the neighborhood tourist map and politely and thoroughly gave me directions.",
+        "isCorrect": true,
+        "explanation": "「丁寧な言葉遣い / 丁寧に教える / 丁寧な仕事」expresses polite manners, scrupulous care, or thorough attention."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "春の高原は風が丁寧で、散歩しているととても心地よいです。",
+        "sentenceEn": "The wind on the spring plateau is gentle and feels very pleasant when walking.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Breezes use「穏やか」(calm) or「心地よい」, not「丁寧」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-sukkari",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "すっかり",
+    "reading": "すっかり",
+    "romaji": "sukkari",
+    "meanings": [
+      "completely",
+      "totally"
+    ],
+    "pos": [
+      "adv"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "昨夜はベッドに入ってから朝まで一度も起きず、すっかり眠りました。",
+        "sentenceEn": "Last night I didn't wake up once from entering bed until morning, and slept soundly.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Sleeping soundly uses「ぐっすり眠る」(soundly asleep), not「すっかり」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "店で試着したジーンズのウエストが、私の体型にすっかり合いました。",
+        "sentenceEn": "The waist of the jeans I tried on at the store fit my body type perfectly.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Fitting a size perfectly uses「ぴったり」(perfect fit), not「すっかり」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "急ぎの用事があったので、駅までの下り坂をすっかり歩いていきました。",
+        "sentenceEn": "Because I had urgent business, I walked fast down the slope to the station.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Walking briskly uses「早足で」(at a fast pace) or「急いで」, not「すっかり」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "日々の忙しい仕事に追われていて、友人の結婚式の記念日をすっかり忘れていました。",
+        "sentenceEn": "Caught up in busy daily work, I had completely forgotten my friend's wedding anniversary.",
+        "isCorrect": true,
+        "explanation": "「すっかり忘れる / すっかり良くなる」is the natural adverb for total change or complete lapse of memory."
+      }
+    ]
+  },
+  {
+    "id": "usage-n4-hakkiri",
+    "level": "N4",
+    "jlpt": 4,
+    "word": "はっきり",
+    "reading": "はっきり",
+    "romaji": "hakkiri",
+    "meanings": [
+      "clearly",
+      "distinctly"
+    ],
+    "pos": [
+      "adv",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "眼鏡を新しく買い替えたら、遠くの黒板の細かい文字まではっきり見えるようになりました。",
+        "sentenceEn": "After replacing my glasses with new ones, I became able to clearly see even fine characters on the distant blackboard.",
+        "isCorrect": true,
+        "explanation": "「はっきり見える / はっきり言う / はっきり覚えている」collocates with seeing, stating, or remembering clearly."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "一日中重い荷物を運ぶ力仕事をしたので、身体中がはっきり疲れました。",
+        "sentenceEn": "Because I did physical labor carrying heavy goods all day, my whole body was terribly tired.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Weariness intensity uses「ひどく」(terribly) or「とても」(very), not「はっきり」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "週末にクラスメートと待ち合わせをして、はっきりと映画館へ行きました。",
+        "sentenceEn": "On the weekend I met up with my classmates and went to the movie theater together.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Doing an action in company uses「一緒に」(together), not「はっきりと」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "もぎたての完熟イチゴを食べたら、果汁がはっきり甘くて驚きました。",
+        "sentenceEn": "When I ate the freshly picked ripe strawberry, the juice was very sweet and surprised me.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Taste sweetness uses「とても甘い」(very sweet) or「すごく」, not「はっきり」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n3-yobou",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "予防",
+    "reading": "よぼう",
+    "romaji": "yobou",
+    "meanings": [
+      "prevention",
+      "precaution"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "インフルエンザの感染を予防するために、外出後は手洗いとうがいを徹底しています。",
+        "sentenceEn": "To prevent influenza infection, I thoroughly wash my hands and gargle after going out.",
+        "isCorrect": true,
+        "explanation": "「病気 / 感染 / 事故を予防する」is the natural collocation for taking precautions before adverse events occur."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "今年の夏休みは予防をしっかりと立てて、家族みんなで沖縄へ旅行する予定です。",
+        "sentenceEn": "For this summer vacation, I plan to make precautions firmly and travel to Okinawa with my family.",
+        "isCorrect": false,
+        "explanation": "Unnatural. For travel or schedule itineraries, use「計画」(plan) or「予定」(schedule), not「予防」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "会議で新しい企画について、出席者全員の前で自分の予防をはっきりと述べました。",
+        "sentenceEn": "At the meeting regarding the new proposal, I stated my precaution clearly in front of all attendees.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Stating personal views uses「意見」(opinion) or「考え」, not「予防」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "雨が激しく降ってきたので、持っていた大きな傘で荷物を濡れないよう予防しました。",
+        "sentenceEn": "Because it began raining heavily, I used my big umbrella to prevent the luggage from getting wet.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Protecting objects from rain uses「防いだ」(shielded/protected) or「守った」, not「予防した」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n3-inyou",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "引用",
+    "reading": "いんよう",
+    "romaji": "inyou",
+    "meanings": [
+      "quotation",
+      "citation"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "友人から届いた結婚披露宴の引用の手紙を、とても喜んで受け取りました。",
+        "sentenceEn": "I was very pleased to receive the quotation letter for the wedding reception that arrived from my friend.",
+        "isCorrect": false,
+        "explanation": "Unnatural. An event invitation uses「招待状」(invitation letter), not「引用」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "レポートを作成するにあたって、有名な学術論文から重要な一節を引用しました。",
+        "sentenceEn": "When preparing the report, I cited an important passage from a famous academic paper.",
+        "isCorrect": true,
+        "explanation": "「論文 / 文献 / 記事から引用する」is the standard verb for quoting or citing text from external sources."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "毎朝目覚めたらすぐに、台所で冷たいコップ一杯の新鮮な水を引用しています。",
+        "sentenceEn": "Every morning right after waking up, I cite a glass of cold fresh water in the kitchen.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Drinking water uses「飲んでいます」(drinking), not「引用しています」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "彼は英語の長編小説をとても自然で流暢な日本語に引用して出版しました。",
+        "sentenceEn": "He quoted the long English novel into very natural and fluent Japanese and published it.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Translating between languages uses「翻訳して」(translated), not「引用して」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n3-kakaeru",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "抱える",
+    "reading": "かかえる",
+    "romaji": "kakaeru",
+    "meanings": [
+      "to hold in one's arms",
+      "to carry a burden or problem"
+    ],
+    "pos": [
+      "v1",
+      "vt"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "期末試験が始まる前までに、この分厚い歴史の教科書をすべて抱えなければなりません。",
+        "sentenceEn": "Before the final exam begins, I must hold in my arms all of this thick history textbook.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Reading through books uses「読まなければ」(must read) or「頭に入れなければ」, not「抱える」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "駅から自宅までの上り坂の道を、自転車を押しながら十五分ほど抱えました。",
+        "sentenceEn": "I held the uphill road from the station to home for about fifteen minutes pushing the bicycle.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Time spent walking or traveling uses「歩きました」(walked) or「かかりました」(took), not「抱えました」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "彼女はスーパーで買い込んだたくさんの食料品の袋を、両手いっぱいに抱えて歩いていました。",
+        "sentenceEn": "She was walking while carrying in both arms full bags of groceries bought at the supermarket.",
+        "isCorrect": true,
+        "explanation": "「荷物を抱える」(hold in arms) or figuratively「問題 / 借金を抱える」(bear a burden/problem) is the natural usage."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "風邪を引いて高熱が出ていたので、氷嚢で額をしっかりと抱えて休んでいました。",
+        "sentenceEn": "Because I had caught a cold and had a high fever, I held my forehead firmly with an ice pack and rested.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Cooling body parts uses「冷やして」(cooled), not「抱えて」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n3-sakarao",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "逆らう",
+    "reading": "さからう",
+    "romaji": "sakarau",
+    "meanings": [
+      "to go against",
+      "to oppose",
+      "to defy"
+    ],
+    "pos": [
+      "v5u",
+      "vi"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "毎朝七時にアラームが鳴ると、布団の中で二度寝することにすぐに逆らいます。",
+        "sentenceEn": "Every morning when the alarm sounds at 7:00, I immediately oppose falling back to sleep in the futon.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Resisting temptation uses「こらえます」(endure/resist) or「我慢します」, not「逆らいます」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "友達から借りていた貴重な資料を、約束していた期日通りにきちんと逆らいました。",
+        "sentenceEn": "I properly opposed the precious reference materials borrowed from my friend by the promised deadline.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Returning borrowed items uses「返却しました」(returned) or「返しました」, not「逆らいました」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "お腹がすいたので、駅前のパン屋で焼きたてのクロワッサンを二つ逆らいました。",
+        "sentenceEn": "Because I was hungry, I opposed two freshly baked croissants at the station bakery.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Purchasing food uses「買いました」(bought), not「逆らいました」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "川をボートで漕ぎ上がるとき、強い水の流れに逆らいながら力いっぱい進みました。",
+        "sentenceEn": "When rowing up the river by boat, we advanced with all our strength while going against the strong water current.",
+        "isCorrect": true,
+        "explanation": "「流れ / 風 / 命令 / 親の言いつけに逆らう」naturally expresses moving against a current/wind or defying authority."
+      }
+    ]
+  },
+  {
+    "id": "usage-n3-habuku",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "省く",
+    "reading": "はぶく",
+    "romaji": "habuku",
+    "meanings": [
+      "to omit",
+      "to leave out",
+      "to curtail"
+    ],
+    "pos": [
+      "v5k",
+      "vt"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "会議の時間が迫っていたため、前置きの挨拶を省いてすぐに本題の議論に入りました。",
+        "sentenceEn": "Because time for the meeting was pressing, we omitted introductory greetings and immediately entered into the main discussion.",
+        "isCorrect": true,
+        "explanation": "「説明 / 手間 / 前置きを省く」collocates with omitting or cutting out unneeded procedures or words."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "泥遊びをして汚れてしまった子供の靴を、水道水とブラシで綺麗に省きました。",
+        "sentenceEn": "I omitted the child's muddy shoes cleanly with tap water and a brush.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Cleaning dirt off objects uses「洗いました」(washed) or「落としました」, not「省きました」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "新しいスーツに着替えてから、会社に出勤するための準備を急いで省きました。",
+        "sentenceEn": "After changing into a new suit, I hurriedly omitted the preparations for going to work.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Completing preparations uses「整えました」(completed) or「済ませました」, not「省きました」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "彼は陸上競技の選手の中で走るスピードが飛び抜けて省いていて、常に優勝します。",
+        "sentenceEn": "Among the track athletes, his running speed is exceptionally omitted, and he always wins.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Being superior or outstanding uses「優れていて」(superior) or「速くて」, not「省いていて」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n3-fusegu",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "防ぐ",
+    "reading": "ふせぐ",
+    "romaji": "fusegu",
+    "meanings": [
+      "to prevent",
+      "to defend against",
+      "to ward off"
+    ],
+    "pos": [
+      "v5g",
+      "vt"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "先生が黒板に丁寧に書いた英語の文法規則を、ノートに鉛筆で防ぎました。",
+        "sentenceEn": "I defended the English grammar rules that the teacher wrote neatly on the blackboard into my notebook with a pencil.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Taking notes uses「ノートに取りました」(took notes) or「書き留めました」, not「防ぎました」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "冬場の乾燥した季節には、火災の発生を未然に防ぐために徹底的な点検が行われます。",
+        "sentenceEn": "In the dry winter season, thorough inspections are conducted to prevent the outbreak of fires beforehand.",
+        "isCorrect": true,
+        "explanation": "「火災 / 事故 / 犯罪 / 寒さを防ぐ」is the standard verb for warding off harm, cold, or accidents."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "夏祭りの屋台で、冷たく冷えたラムネと甘いかき氷を一つずつ防ぎました。",
+        "sentenceEn": "At the summer festival stall, I defended a cold ramune and sweet shaved ice one by one.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Buying or eating festival treats uses「買いました」(bought) or「食べました」, not「防ぎました」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "今度の土曜日に高校の同窓会を開く約束を、クラスの幹事と防ぎました。",
+        "sentenceEn": "I defended the promise to hold a high school reunion this Saturday with the class organizer.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Making a promise or arrangement uses「交わしました」(exchanged) or「しました」, not「防ぎました」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n3-maneku",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "招く",
+    "reading": "まねく",
+    "romaji": "maneku",
+    "meanings": [
+      "to invite",
+      "to incur",
+      "to bring about"
+    ],
+    "pos": [
+      "v5k",
+      "vt"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "デパートのレジで買い物をした際、持っていたクレジットカードで代金を招きました。",
+        "sentenceEn": "When shopping at the department store cash register, I invited the price with the credit card I had.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Paying money uses「支払いました」(paid) or「払いました」, not「招きました」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "壊れてパンクした自転車を、駅前のサイクルショップに持っていって招いてもらいました。",
+        "sentenceEn": "I took the punctured bicycle to the cycle shop in front of the station and had it invited.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Repairing machines uses「修理してもらいました」(had repaired), not「招いてもらいました」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "不注意な発言が思わぬ誤解を招いてしまい、相手を不快にさせてしまいました。",
+        "sentenceEn": "A careless remark brought about unexpected misunderstandings and made the other party uncomfortable.",
+        "isCorrect": true,
+        "explanation": "「誤解 / 危険 / 事故を招く」(incur/lead to) or「客 / 友人を招く」(invite guests) is the authentic collocation."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "毎朝早起きをして、健康のために近所の緑豊かな遊歩道を三十分ほど招いています。",
+        "sentenceEn": "Waking up early every morning, I invite the neighborhood's leafy promenade for about thirty minutes for health.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Walking or jogging uses「ウォーキングしています」(walking) or「走っています」, not「招いています」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n3-kentou",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "見当",
+    "reading": "けんとう",
+    "romaji": "kentou",
+    "meanings": [
+      "guess",
+      "estimate",
+      "bearings",
+      "clue"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "天気の良い晴れた日には、私のマンションのベランダから遠くの山々が見当できます。",
+        "sentenceEn": "On clear sunny days, distant mountains can be guessed from my apartment balcony.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Seeing visual vistas uses「見えます」(can be seen) or「眺められます」, not「見当できます」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "映画館の自動発券機で、本日公開の新作アクション映画のチケットを見当しました。",
+        "sentenceEn": "I guessed the ticket for the new action movie released today at the cinema automatic ticketing machine.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Purchasing tickets uses「購入しました」(purchased) or「買いました」, not「見当しました」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "彼女はとても見当な性格で、誰に対しても分け隔てなく明るい笑顔で接しています。",
+        "sentenceEn": "She has a very guess personality and treats anyone with a bright smile without discrimination.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Personality traits use「温和な」(gentle) or「明るい」(cheerful).「見当」is a noun, not an adjective."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "大切な家の鍵をどこで落としたのか、いくら記憶をたどっても全く見当がつきません。",
+        "sentenceEn": "No matter how much I trace my memory of where I dropped the important house key, I have no clue at all.",
+        "isCorrect": true,
+        "explanation": "「見当がつく / つかない」(have a clue/guess) and「見当違い」(off the mark) are established idiomatic collocations."
+      }
+    ]
+  },
+  {
+    "id": "usage-n3-reisei",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "冷静",
+    "reading": "れいせい",
+    "romaji": "reisei",
+    "meanings": [
+      "calm",
+      "composed",
+      "cool-headed"
+    ],
+    "pos": [
+      "adj-na",
+      "noun"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "非常ベルが突然鳴り響いてもパニックに陥ることなく、冷静に行動して安全に避難しました。",
+        "sentenceEn": "Even when the emergency bell rang out suddenly, without falling into a panic, I acted calmly and evacuated safely.",
+        "isCorrect": true,
+        "explanation": "「冷静沈着」「冷静な判断 / 態度」「冷静に対処する」naturally describes maintaining emotional composure."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "真冬の早朝は外の気温が氷点下まで下がり、頬に触れる風がとても冷静です。",
+        "sentenceEn": "In the early morning of midwinter, outdoor temperature drops below freezing, and the wind touching the cheeks is very calm.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Cold thermal air uses「冷たい」(cold/chilly), not「冷静」.「冷静」applies to mental composure."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "熱々の焼きたてステーキに、冷蔵庫で冷やした冷静なソースをたっぷりかけました。",
+        "sentenceEn": "Over the piping hot freshly grilled steak, I poured plenty of calm sauce chilled in the refrigerator.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Chilled food uses「冷たい」(cold) or「冷製の」(served cold, e.g. 冷製パスタ), not the word「冷静」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "彼は足の運びがとても冷静で、百メートル走のタイムが学年で一番速いです。",
+        "sentenceEn": "His foot movement is very calm, and his 100-meter sprint time is the fastest in his grade.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Fast running movements use「素早くて」(swift) or「速くて」, not「冷静」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n3-kaiteki",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "快適",
+    "reading": "かいてき",
+    "romaji": "kaiteki",
+    "meanings": [
+      "comfortable",
+      "pleasant",
+      "agreeable"
+    ],
+    "pos": [
+      "adj-na",
+      "noun"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "今日の日本語能力試験の語彙問題はとても快適で、開始十分で全て解き終わりました。",
+        "sentenceEn": "Today's JLPT vocabulary problems were very comfortable, and I finished solving all of them in ten minutes.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Easy exam questions use「簡単で」(easy) or「やさしくて」, not「快適」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "新しく改装されたホテルの部屋は静かでベッドの寝心地もよく、非常に快適に過ごせました。",
+        "sentenceEn": "The newly renovated hotel room was quiet and the bed was comfortable to sleep on, so I spent my stay extremely pleasantly.",
+        "isCorrect": true,
+        "explanation": "「快適な生活 / 快適なホテル / 快適に過ごす」collocates with physically pleasant, comfortable living environments."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "新幹線の走行スピードは非常に快適で、東京から大阪まであっという間でした。",
+        "sentenceEn": "The Shinkansen running speed was extremely comfortable, and it took no time from Tokyo to Osaka.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Physical speed uses「速くて」(fast), not「快適」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "このラーメンはスープの出汁と醤油のバランスが快適で、スープを飲み干しました。",
+        "sentenceEn": "This ramen's broth balance with soy sauce was comfortable, and I drank all the soup.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Delicious flavor balance uses「絶妙で」(exquisite) or「ちょうどよくて」, not「快適」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n3-shinsen",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "新鮮",
+    "reading": "しんせん",
+    "romaji": "shinsen",
+    "meanings": [
+      "fresh"
+    ],
+    "pos": [
+      "adj-na",
+      "noun"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "先生による物理の解説はとても新鮮で、難しい数式の意味がすんなり理解できました。",
+        "sentenceEn": "The teacher's explanation of physics was very fresh, and the meaning of difficult formulas was understood smoothly.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Clear explanations use「わかりやすくて」(easy to understand) or「明快で」, not「新鮮」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "昨日の数学の宿題プリントはとても新鮮で、解き終わるまでに四時間もかかりました。",
+        "sentenceEn": "Yesterday's math homework sheet was very fresh, and it took four hours until I finished solving it.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Tough, demanding homework uses「難しくて」(difficult) or「大変で」, not「新鮮」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "海沿いの市場には、今朝漁港で水揚げされたばかりの新鮮な魚介類が所狭しと並んでいます。",
+        "sentenceEn": "At the seaside market, fresh seafood just landed at the fishing port this morning is lined up tightly.",
+        "isCorrect": true,
+        "explanation": "「新鮮な魚 / 野菜 / 新鮮な空気 / 新鮮なアイデア」describes newly harvested foods or refreshing, novel impressions."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "この新型スマートフォンは重量がとても新鮮なので、ポケットに入れても邪魔になりません。",
+        "sentenceEn": "Because this new smartphone weight is very fresh, it doesn't get in the way even in a pocket.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Light weight uses「軽くて」(light), not「新鮮」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n3-guuzen",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "偶然",
+    "reading": "ぐうぜん",
+    "romaji": "guuzen",
+    "meanings": [
+      "coincidence",
+      "by chance"
+    ],
+    "pos": [
+      "adj-na",
+      "adv",
+      "noun"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "毎朝同じ時刻の通勤電車に乗ることを、私の生活の偶然として長年続けています。",
+        "sentenceEn": "I have continued riding the commuter train at the same time every morning as my life's coincidence for years.",
+        "isCorrect": false,
+        "explanation": "Unnatural. A deliberate routine uses「日課」(daily routine) or「習慣」(habit), not「偶然」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "彼はとても記憶力が抜群で、教科書の英単語を何百個も偶然に暗記しています。",
+        "sentenceEn": "He has exceptional memory and coincidently memorized hundreds of English words from the textbook.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Intentional memorization uses「完璧に」(perfectly) or「しっかり」, not「偶然に」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "気象庁の週間予報によると、明日の夕方から夜にかけて偶然に大雨になる見込みです。",
+        "sentenceEn": "According to the meteorological agency's weekly forecast, it is expected to rain heavily by coincidence from tomorrow evening.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Weather forecasts use「おそらく」(likely) or「確実に」(surely), not「偶然に」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "休日に街の大型書店で本を探していたら、偶然小学校時代の同級生に出会いました。",
+        "sentenceEn": "While looking for a book at a large bookstore in town on my day off, I ran into an elementary school classmate by chance.",
+        "isCorrect": true,
+        "explanation": "「偶然出会う / 偶然の一致」is the standard adverb or noun for unexpected happenstance."
+      }
+    ]
+  },
+  {
+    "id": "usage-n3-jojoni",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "徐々に",
+    "reading": "じょじょに",
+    "romaji": "jojoni",
+    "meanings": [
+      "gradually",
+      "slowly",
+      "step by step"
+    ],
+    "pos": [
+      "adv"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "退院後は毎日少しずつ散歩を続け、落ちていた体力を徐々に回復させていきました。",
+        "sentenceEn": "After leaving the hospital, I continued taking short walks every day and gradually recovered my weakened physical strength.",
+        "isCorrect": true,
+        "explanation": "「徐々に回復する / 増える / 慣れる」describes a steady, gradual process over time."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "静まり返った部屋の中で背後から急に大きな物音がして、徐々にびっくりしました。",
+        "sentenceEn": "In the completely quiet room, a sudden loud sound came from behind and I was gradually startled.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Sudden shock uses「思わず」(involuntarily) or「とても」(very), not「徐々に」(which requires duration)."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "開演時間に遅刻しそうだったので、駅の改札口から劇場まで徐々に走りました。",
+        "sentenceEn": "Because I was about to be late for the showtime, I gradually ran from the ticket gate to the theater.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Rushing under time pressure uses「急いで」(hurriedly) or「全力で」, not「徐々に」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "この便利な最新掃除機は、ボタンを一度押すだけで徐々に部屋がピカピカになります。",
+        "sentenceEn": "With this convenient latest vacuum cleaner, just by pressing one button the room gradually becomes sparkling.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Quick automated results use「あっという間に」(in a flash) or「すぐに」, not「徐々に」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n3-tsuneni",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "常に",
+    "reading": "つねに",
+    "romaji": "tsuneni",
+    "meanings": [
+      "always",
+      "constantly"
+    ],
+    "pos": [
+      "adv"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "昨夜は残業続きで極度に疲れていたため、ベッドに横になると常に熟睡しました。",
+        "sentenceEn": "Because I was extremely fatigued from continuous overtime last night, when I lay on bed I constantly fell asleep soundly.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Immediate transition uses「すぐに」(immediately) or「あっという間に」, not「常に」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "医療に従事する看護師として、患者さんの安全と安心を常に最優先に考えています。",
+        "sentenceEn": "As a nurse engaged in healthcare, I am constantly considering the safety and peace of mind of patients as top priority.",
+        "isCorrect": true,
+        "explanation": "「常に意識する / 常に考える / 常に心がける」is the natural formal adverb for constant, continuous mindfulness."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "彼の履いている靴は特注品で、足のサイズがとても常にで普通の店では買えません。",
+        "sentenceEn": "The shoes he wears are custom-made, and his foot size is very constantly, so he cannot buy in normal shops.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Size dimensions use「大きくて」(large).「常に」is an adverb and cannot describe size."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "パン屋のオーブンから出たばかりのクロワッサンは、生地が常にサクサクして美味しいです。",
+        "sentenceEn": "The croissants just out of the bakery oven have constantly crispy pastry and are delicious.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Degree of crispiness uses「とても」(very) or「非常に」, not「常に」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n3-omowazu",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "思わず",
+    "reading": "おもわず",
+    "romaji": "omowazu",
+    "meanings": [
+      "spontaneously",
+      "unintentionally",
+      "involuntarily"
+    ],
+    "pos": [
+      "adv"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "明日の朝一番の重要な面接試験に備えて、目覚まし時計を思わず六時に設定しました。",
+        "sentenceEn": "In preparation for tomorrow's first important interview test in the morning, I involuntarily set the alarm clock to 6:00.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Purposeful planning uses「しっかり」(firmly) or「前もって」(in advance), not「思わず」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "彼女はとても思わず性格で、初対面の人に対しても礼儀正しく丁寧に自己紹介をします。",
+        "sentenceEn": "She has a very involuntary personality and introduces herself politely and courteously even to strangers.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Personality uses「礼儀正しい」(polite) or「真面目な」.「思わず」cannot modify personality as an adjective."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "友人のあまりにおかしな冗談を聞いて、静かな図書館の中だったのに思わず笑ってしまいました。",
+        "sentenceEn": "Hearing my friend's terribly funny joke, even though we were inside a quiet library, I burst out laughing involuntarily.",
+        "isCorrect": true,
+        "explanation": "「思わず笑ってしまう / 思わず手が出る」is the authentic adverb for spontaneous, instinctive reactions without forethought."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "夏休みの宿題の読書感想文を思わず書き終えて、担任の先生に提出しました。",
+        "sentenceEn": "I involuntarily finished writing the book review for summer homework and submitted it to my teacher.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Purposeful completion uses「無事に」(successfully) or「予定通り」, not「思わず」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n3-kaifuku",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "回復",
+    "reading": "かいふく",
+    "romaji": "kaifuku",
+    "meanings": [
+      "recovery",
+      "restoration",
+      "improvement"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "引っ越し作業を手伝ってくれた親友へのお礼に、デパートで高級なお菓子を回復しました。",
+        "sentenceEn": "As thanks to my best friend who helped with moving work, I recovered high-class sweets at the department store.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Giving presents uses「贈りました」(presented) or「買いました」(bought), not「回復しました」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "大学の図書館のカウンターで、期末レポートに必要な参考書籍を三冊回復しました。",
+        "sentenceEn": "At the university library counter, I recovered three reference books needed for the final report.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Borrowing books uses「借りました」(borrowed), not「回復しました」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "雨で泥だらけになったスニーカーをブラシで磨いて、新品のように回復しました。",
+        "sentenceEn": "I polished the mud-covered sneakers with a brush and recovered them like new.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Cleaning items uses「綺麗にしました」(made clean) or「落としました」, not「回復しました」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "数日間の入院治療と十分な休養のおかげで、病気で衰えていた体力がすっかり回復しました。",
+        "sentenceEn": "Thanks to several days of inpatient treatment and sufficient rest, my physical strength weakened by illness recovered completely.",
+        "isCorrect": true,
+        "explanation": "「体力が回復する / 景気が回復する / 天候が回復する」is the natural usage for health, economy, or weather restoring to a good state."
+      }
+    ]
+  },
+  {
+    "id": "usage-n3-kaiketsu",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "解決",
+    "reading": "かいけつ",
+    "romaji": "kaiketsu",
+    "meanings": [
+      "resolution",
+      "settlement"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "近隣住民との間で長年続いていた土地の境界を巡るトラブルが、話し合いによって無事に解決しました。",
+        "sentenceEn": "The trouble concerning land boundaries that had continued for years with neighbors was safely resolved through talks.",
+        "isCorrect": true,
+        "explanation": "「問題を解決する / トラブルが解決する / 紛争を解決する」is the natural collocation for resolving disputes, problems, or issues."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "先生が黒板に書いた試験に出る重要な公式を、急いで手帳に鉛筆で解決しました。",
+        "sentenceEn": "I hurriedly resolved the important formulas appearing on the exam written on the board into my notebook with a pencil.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Writing down board notes uses「ノートに書き写しました」(copied down), not「解決しました」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "劇場の開演時間が近づいてきたので、チケット販売機の列に並んで入場券を解決しました。",
+        "sentenceEn": "Because the theater showtime approached, I lined up in the ticketing machine queue and resolved admission tickets.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Buying tickets uses「購入しました」(purchased) or「買いました」, not「解決しました」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "真冬の凍えるような寒い朝には、温かいココアを一杯飲んで冷えた体を解決します。",
+        "sentenceEn": "On freezing cold mornings in midwinter, I resolve my chilled body by drinking a cup of warm cocoa.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Warming the body uses「温めます」(warm up), not「解決します」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n3-gokai",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "誤解",
+    "reading": "ごかい",
+    "romaji": "gokai",
+    "meanings": [
+      "misunderstanding"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "日本語の検定試験で高得点を取るため、単語帳に載っている漢字の誤解をすべて覚えました。",
+        "sentenceEn": "To get a high score on the Japanese proficiency test, I memorized all the kanji misunderstandings listed in the vocabulary book.",
+        "isCorrect": false,
+        "explanation": "Unnatural. The explanation of word semantics is「意味」(meaning) or「語義」, not「誤解」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "私の曖昧な返事のせいで相手に大きな誤解を与えてしまったので、急いで事情を説明して誤解を解きました。",
+        "sentenceEn": "Because my ambiguous reply gave a big misunderstanding to the other party, I hurriedly explained the circumstances and cleared the misunderstanding.",
+        "isCorrect": true,
+        "explanation": "「誤解を与える / 誤解を招く / 誤解を解く」(clear a misunderstanding) is the classic natural idiom."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "明日の理科の実験に必要な実験器具の名前を、黒板のメモから手帳に誤解して写しました。",
+        "sentenceEn": "I copied the names of the laboratory equipment needed for tomorrow's science experiment from the board memo into my notebook by misunderstanding.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Copying notes accurately uses「書き写しました」(copied down), not「誤解して写した」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "彼は足の回転がとても誤解で、サッカーの試合で相手ディフェンダーを次々と抜き去りました。",
+        "sentenceEn": "His foot turnover is very misunderstanding, and he bypassed opponent defenders one after another in the soccer match.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Fast footwork uses「素早くて」(swift) or「速くて」, not「誤解」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n3-shoutotsu",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "衝突",
+    "reading": "しょうとつ",
+    "romaji": "shoutotsu",
+    "meanings": [
+      "collision",
+      "clash",
+      "conflict"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "夏休みに祖母の田舎の古い日本家屋を久しぶりに衝突して、親戚みんなで集まりました。",
+        "sentenceEn": "During summer vacation, I collided with my grandmother's old Japanese house in the countryside for the first time in a while and gathered with relatives.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Visiting homes uses「訪ねて」(visited) or「行って」, not「衝突して」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "部活動で喉がカラカラに渇いたので、学校の自動販売機で冷たいスポーツドリンクを衝突しました。",
+        "sentenceEn": "Because my throat was parched in club activities, I collided with a cold sports drink at the school vending machine.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Purchasing beverages uses「買いました」(bought), not「衝突しました」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "見通しの悪い交差点で、無理に右折しようとした乗用車と直進してきたバイクが激しく衝突しました。",
+        "sentenceEn": "At the intersection with poor visibility, a car attempting to turn right recklessly and a motorcycle going straight collided violently.",
+        "isCorrect": true,
+        "explanation": "「車が衝突する」(vehicles collide) or figuratively「意見 / 利害が衝突する」(opinions/interests clash) is the authentic usage."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "明日の遠足の準備のために、お弁当や水筒を忘れないようリュックサックに衝突しました。",
+        "sentenceEn": "In preparation for tomorrow's excursion, I collided lunch boxes and water bottles into my backpack so as not to forget.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Packing goods into bags uses「詰めました」(packed) or「入れました」, not「衝突しました」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n3-sonchou",
+    "level": "N3",
+    "jlpt": 3,
+    "word": "尊重",
+    "reading": "そんちょう",
+    "romaji": "sonchou",
+    "meanings": [
+      "respect",
+      "esteem",
+      "valuing"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "泥だらけになった作業着を洗濯機に入れて、強力な洗剤でしっかりと尊重して洗いました。",
+        "sentenceEn": "I put the mud-stained work clothes into the washing machine and washed them firmly with strong detergent respecting.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Washing clothes thoroughly uses「綺麗に」(cleanly) or「念入りに」, not「尊重して」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "彼はとても尊重な足取りで階段を駆け上がり、あっという間に三階の教室に着きました。",
+        "sentenceEn": "He ran up the stairs with very respecting steps and reached the third-floor classroom in no time.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Light or swift footwork uses「軽快な」(light-footed/brisk) or「素早い」, not「尊重」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "図書館で借りてきた大好きな推理小説を、週末の休日に熱中して一気に尊重しました。",
+        "sentenceEn": "I was absorbed in the favorite mystery novel borrowed from the library and respected it in one go on the weekend holiday.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Reading a book through uses「読み終えました」(finished reading) or「読破しました」, not「尊重しました」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "多国籍のメンバーが働くチームでは、文化や価値観の違いをお互いに尊重し合う姿勢が欠かせません。",
+        "sentenceEn": "In a team where multinational members work, the attitude of mutually respecting differences in cultures and values is indispensable.",
+        "isCorrect": true,
+        "explanation": "「意見 / 人権 / 個性 / 価値観を尊重する」is the standard verb for respecting opinions, human rights, or diverse values."
+      }
+    ]
+  },
+  {
+    "id": "usage-n2-aimai",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "あいまい",
+    "reading": "あいまい",
+    "romaji": "aimai",
+    "meanings": [
+      "vague",
+      "ambiguous"
+    ],
+    "pos": [
+      "na-adj",
+      "noun"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "彼の発言はあいまいな点が多いため、賛成なのか反対なのか判断がつかない。",
+        "sentenceEn": "Because there are many vague points in his statement, it is impossible to judge whether he agrees or disagrees.",
+        "isCorrect": true,
+        "explanation": "「あいまいな返事 / 態度 / 表現」is the standard usage for matters that lack clarity or distinct intention."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "昨夜はぐっすり眠ったので、今朝はとてもあいまいに目覚めることができた。",
+        "sentenceEn": "Because I slept soundly last night, I was able to wake up very ambiguously this morning.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Waking up refreshed uses「すっきり」(refreshed) or「爽快に」(soukai ni), not「あいまい」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "このカメラはとてもあいまいな画質で、遠くの文字までくっきりと写る。",
+        "sentenceEn": "This camera has very ambiguous image quality, capturing even distant text clearly.",
+        "isCorrect": false,
+        "explanation": "Unnatural. High or clear image definition uses「鮮明な」(clear) or「高精細な」, not「あいまい」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "スープの味が少しあいまいで物足りないので、塩と胡椒を少し足してみた。",
+        "sentenceEn": "The soup's taste was a bit ambiguous and unsatisfactory, so I added some salt and pepper.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Bland or thin flavor uses「薄い」(light/bland) or「ぼんやりした」, not「あいまい」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n2-oginau",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "補う",
+    "reading": "おぎなう",
+    "romaji": "oginau",
+    "meanings": [
+      "to compensate for",
+      "to supplement"
+    ],
+    "pos": [
+      "verb",
+      "godan"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "パソコンのデータが消えてしまわないように、毎日外付けハードディスクに補っています。",
+        "sentenceEn": "To prevent computer data from being lost, I supplement it to an external hard drive every day.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Backing up data uses「保存する」(save) or「バックアップを取る」(back up), not「補う」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "退職による人手不足を補うため、来月から新しいアルバイトを３名採用することにした。",
+        "sentenceEn": "To make up for the labor shortage caused by retirements, we decided to hire three new part-time workers from next month.",
+        "isCorrect": true,
+        "explanation": "「不足 / 赤字 / 欠点を補う」is the authentic collocation for covering a deficit or shortage."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "電車が事故で遅れたため、駅員に遅延証明書を補ってもらいました。",
+        "sentenceEn": "Because the train was delayed due to an accident, I had the station staff supplement a delay certificate.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Having a formal certificate issued uses「発行してもらう」(issue) or「出してもらう」, not「補う」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "部屋が乾燥していると感じたので、加湿器をつけて部屋の湿度を補いました。",
+        "sentenceEn": "Feeling that the room was dry, I turned on the humidifier to supplement the humidity.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Increasing room humidity uses「上げた」(raised) or「保った」(maintained), not「補う」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n2-atsukamashii",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "厚かましい",
+    "reading": "あつかましい",
+    "romaji": "atsukamashii",
+    "meanings": [
+      "impudent",
+      "shameless",
+      "brazen"
+    ],
+    "pos": [
+      "i-adj"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "冬の寒さに耐えるために、とても厚かましいウールのコートを着て出かけました。",
+        "sentenceEn": "To endure the winter cold, I went out wearing a very impudent wool coat.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Heavy, thick fabric uses「厚手の」(thick) or「分厚い」(bulky), not「厚かましい」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "友人の結婚式に招待されたので、厚かましいお祝いの言葉を心を込めて贈りました。",
+        "sentenceEn": "Invited to my friend's wedding, I wholeheartedly sent impudent congratulatory remarks.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Warm and cordial greetings use「温かい」(warm) or「心のこもった」(heartfelt), not「厚かましい」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "初対面の人に対して個人的な給料の金額を聞くなんて、ずいぶん厚かましい態度だ。",
+        "sentenceEn": "Asking a stranger for their personal salary amount on the very first meeting is quite an impudent attitude.",
+        "isCorrect": true,
+        "explanation": "「厚かましい態度 / お願い」describes brazen, shameless behavior that disregards social boundaries."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "新しいビルの壁は厚かましいコンクリートで作られており、地震にも強い構造です。",
+        "sentenceEn": "The walls of the new building are made of impudent concrete, giving it a structure resistant to earthquakes.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Thick and solid concrete uses「分厚い」(thick) or「頑丈な」(sturdy), not「厚かましい」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n2-atehamaru",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "あてはまる",
+    "reading": "あてはまる",
+    "romaji": "atehamaru",
+    "meanings": [
+      "to be applicable",
+      "to fulfill"
+    ],
+    "pos": [
+      "verb",
+      "godan"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "パズルの最後のピースが枠の隙間にぴったりとあてはまって、ようやく完成した。",
+        "sentenceEn": "The last piece of the puzzle applied neatly into the opening of the frame, finally completing it.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Physical objects fitting into spaces uses「はまった」(fit into) or「収まった」, not「あてはまった」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "急な雨が降ってきたので、近くのカフェの軒下にあてはまって雨宿りをした。",
+        "sentenceEn": "Sudden rain started falling, so I applied under the eaves of a nearby cafe to take shelter.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Ducking under shelter uses「駆け込んだ」(ran into) or「入った」, not「あてはまった」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "壁にポスターを貼るために、両面テープを四隅にていねいにあてはめました。",
+        "sentenceEn": "To hang the poster on the wall, I applied double-sided tape carefully to all four corners.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Affixing tape uses「貼った」(pasted) or「つけた」(attached), not「あてはめた」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "アンケートの質問を読んで、自分自身の性格や状況にあてはまる項目にチェックを入れてください。",
+        "sentenceEn": "Please read the questionnaire items and check the options that apply to your own personality or situation.",
+        "isCorrect": true,
+        "explanation": "「条件 / 規則 / 状況にあてはまる」expresses matching or fitting formal criteria or categories."
+      }
+    ]
+  },
+  {
+    "id": "usage-n2-afureru",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "あふれる",
+    "reading": "あふれる",
+    "romaji": "afureru",
+    "meanings": [
+      "to flood",
+      "to overflow",
+      "to brim over"
+    ],
+    "pos": [
+      "verb",
+      "ichidan"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "風邪をひいて喉が痛いので、病院で処方された薬を水であふれるように飲み込みました。",
+        "sentenceEn": "Having caught a cold and with a sore throat, I swallowed the prescribed medicine as if overflowing with water.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Taking medicine with plenty of water uses「多めの水で」(with plenty of water), not「あふれる」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "セール初日のデパートの前には、開店の１時間前から長い行列があふれて並んでいました。",
+        "sentenceEn": "In front of the department store on the first day of the sale, a long queue was overflowing and lining up from an hour before opening.",
+        "isCorrect": false,
+        "explanation": "Unnatural. A queue forming uses「できていた」(had formed) or「続いていた」(continued), not「あふれて」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "今年の夏休みは家族旅行の計画があふれていて、今からどこへ行こうか迷っています。",
+        "sentenceEn": "For this summer vacation, family travel plans are overflowing, and I am wondering where to go.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Having numerous plans uses「たくさんあって」(many) or「目白押しで」(packed full), not「あふれて」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "彼女の歌声は会場中の観客を魅了し、演奏が終わると客席は熱気と感動にあふれていた。",
+        "sentenceEn": "Her singing voice captivated the audience throughout the hall, and when the performance ended, the seating was brimming with enthusiasm and emotion.",
+        "isCorrect": true,
+        "explanation": "「自信 / 活気 / 感動にあふれる」is used when spaces or people are filled to the point of overflowing with feelings or energy."
+      }
+    ]
+  },
+  {
+    "id": "usage-n2-aratameru",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "改める",
+    "reading": "あらためる",
+    "romaji": "aratameru",
+    "meanings": [
+      "to change",
+      "to alter",
+      "to reform",
+      "to revise"
+    ],
+    "pos": [
+      "verb",
+      "ichidan"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "今回の大きな失敗を機に、仕事に対する普段の姿勢や生活習慣を根本から改めるべきだ。",
+        "sentenceEn": "Taking this major failure as an opportunity, you should fundamentally alter your daily attitude toward work and your lifestyle habits.",
+        "isCorrect": true,
+        "explanation": "「態度 / 習慣 / 規則を改める」means correcting, reforming, or altering something for the better."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "引っ越しをすることになったので、来週新しいアパートの部屋をきれいに改めます。",
+        "sentenceEn": "Since I will be moving, next week I will alter my new apartment room cleanly.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Cleaning up a room uses「掃除する」(clean) or「片付ける」(tidy up), not「改める」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "図書館で借りた本の返却期限が過ぎてしまったので、窓口に行って本を改めました。",
+        "sentenceEn": "Because the return deadline for the library book had passed, I went to the counter and altered the book.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Returning borrowed books uses「返却した」(returned) or「返した」, not「改めた」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "スマートフォンの充電が切れてしまったので、カフェで急速充電器を改めました。",
+        "sentenceEn": "Because my smartphone ran out of charge, I altered a fast charger at a cafe.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Borrowing or using a charger uses「借りた」(borrowed) or「使った」(used), not「改めた」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n2-an-i",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "安易",
+    "reading": "あんい",
+    "romaji": "an-i",
+    "meanings": [
+      "easy-going",
+      "careless",
+      "simplistic"
+    ],
+    "pos": [
+      "na-adj",
+      "noun"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "この日本語の試験問題はとても安易だったので、受験者全員が満点を取ることができました。",
+        "sentenceEn": "These Japanese exam questions were very easy-going, so every test-taker was able to get a perfect score.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Exam difficulty being low uses「平易な」(simple) or「易しい / 簡単な」(easy), not「安易」(careless)."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "インターネット上の不確かな情報を安易に信じ込んで他人に拡散するのは非常に危険だ。",
+        "sentenceEn": "Simplistically believing unverified information on the internet and spreading it to others is extremely dangerous.",
+        "isCorrect": true,
+        "explanation": "「安易な考え / 安易に引き受ける」connotes thoughtless, superficial, or irresponsible carelessness."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "毎日の散歩は体への負担が少なく、誰でも安易に始められる健康的な運動です。",
+        "sentenceEn": "Daily walking places little burden on the body and is healthy exercise anyone can start thoughtlessly.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Readily or casually starting exercise uses「手軽に」(readily) or「気軽に」(casually), not「安易に」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "このスマートフォンの操作画面は直感的で、高齢者でも安易に使いこなせます。",
+        "sentenceEn": "This smartphone's user interface is intuitive, so even seniors can easily master it without thinking.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Operating a device with ease uses「容易に」(easily) or「簡単に」, not「安易に」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n2-angai",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "案外",
+    "reading": "あんがい",
+    "romaji": "angai",
+    "meanings": [
+      "unexpectedly"
+    ],
+    "pos": [
+      "adverb",
+      "na-adj"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "事故の原因について詳しく調べた結果、警察から案外な報告書が提出されました。",
+        "sentenceEn": "As a result of thoroughly investigating the cause of the accident, an unexpected report was submitted by the police.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Official investigative reports use「詳細な」(detailed) or「公式な」(official), not「案外な」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "彼はとても真面目で責任感が強く、会社で誰からも案外に信頼されている社員です。",
+        "sentenceEn": "He is very diligent with a strong sense of responsibility, an employee unexpectedly trusted by everyone.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Being deeply trusted uses「厚く」(deeply) or「非常に」(extremely), not「案外に」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "難しいと聞いていた資格試験だったが、過去問題をしっかり解いていたので案外すんなり合格できた。",
+        "sentenceEn": "Although I had heard the certification exam was difficult, because I had thoroughly solved past problems, I passed unexpectedly smoothly.",
+        "isCorrect": true,
+        "explanation": "「案外＋動詞 / 形容詞」is used when the actual result turns out different from initial expectations or predictions."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "明日の天気予報によると、午後から案外な大雨が降る恐れがあるそうです。",
+        "sentenceEn": "According to tomorrow's weather forecast, there is a risk of unexpected heavy rain falling in the afternoon.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Severe, intense rainfall uses「激しい」(violent/intense) or「猛烈な」, not「案外な」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n2-saisoku",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "催促",
+    "reading": "さいそく",
+    "romaji": "saisoku",
+    "meanings": [
+      "request",
+      "demand",
+      "urge (action)",
+      "press for"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "毎朝ジョギングを始める前に、怪我を防止するために準備運動を催促しています。",
+        "sentenceEn": "Every morning before starting jogging, I urge warm-up exercises to prevent injury.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Performing warm-ups uses「行う」(perform) or「している」(do), not「催促している」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "駅前の新しいレストランの料理はとても美味しく、友達にも行くよう催促しました。",
+        "sentenceEn": "The food at the new restaurant in front of the station was delicious, so I urged my friends to go.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Recommending a restaurant uses「勧めた」(recommended), not「催促した」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "彼は来週のプレゼンテーションに向けて、資料の準備を催促に進めています。",
+        "sentenceEn": "Heading toward next week's presentation, he is advancing the preparation of materials urgingly.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Advancing tasks steadily or swiftly uses「着実に」(steadily) or「急いで」(hurriedly), not「催促に」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "締め切りを過ぎても原稿が届かないため、作家の担当編集者は電話で提出を催促した。",
+        "sentenceEn": "Since the manuscript had not arrived even past the deadline, the editor in charge phoned to urge its submission.",
+        "isCorrect": true,
+        "explanation": "「提出 / 返済 / 返事を催促する」means pressing someone to promptly execute an overdue action or payment."
+      }
+    ]
+  },
+  {
+    "id": "usage-n2-shukushou",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "縮小",
+    "reading": "しゅくしょう",
+    "romaji": "shukushou",
+    "meanings": [
+      "reduction",
+      "curtailment"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "毎日の勉強時間を30分から2時間に縮小して、JLPTの合格を目指して努力しています。",
+        "sentenceEn": "I reduced daily study time from 30 minutes to 2 hours, making efforts aiming to pass the JLPT.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Increasing time uses「増やして」(increased) or「延長して」, not「縮小して」(which means decrease, not increase)."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "洗濯物を強い直射日光の下に干したため、お気に入りのセーターの色が縮小してしまった。",
+        "sentenceEn": "Because I hung the laundry in strong direct sunlight, the color of my favorite sweater reduced.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Fabric colors fading uses「色あせて」(faded) or「薄くなって」, not「縮小して」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "長引く不況の影響を受けて、会社は新規事業の規模を縮小し、固定費を抑える方針を決めた。",
+        "sentenceEn": "Affected by the prolonged recession, the company decided on a policy of scaling down the new business and curbing fixed costs.",
+        "isCorrect": true,
+        "explanation": "「事業 / 規模 / 予算を縮小する」is the natural antonym of「拡大」(expansion), denoting reducing scale or dimensions."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "駅から自宅までの距離を縮小するために、来月新しい自転車を購入するつもりです。",
+        "sentenceEn": "To reduce the distance from the station to my home, I intend to purchase a new bicycle next month.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Shortening commuting duration uses「通勤時間を短縮する」(shorten time). Physical distance cannot be「縮小」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n2-fukyuu",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "普及",
+    "reading": "ふきゅう",
+    "romaji": "fukyuu",
+    "meanings": [
+      "diffusion",
+      "spread",
+      "popularization"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "スマートフォンや高速通信網の普及によって、どこにいても世界中のニュースを即座に確認できるようになった。",
+        "sentenceEn": "With the spread and diffusion of smartphones and high-speed communication networks, it has become possible to check world news instantly from anywhere.",
+        "isCorrect": true,
+        "explanation": "「製品 / 技術 / 制度が普及する」refers to technologies, appliances, or customs becoming widely adopted throughout society."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "昨夜からの大雨で川の水位が普及し、避難警報が市役所から発令された。",
+        "sentenceEn": "Due to heavy rain since last night, river water levels diffused, and an evacuation warning was issued.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Water level rising uses「上昇し」(rose) or「増水し」(swelled), not「普及し」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "彼女はピアノの演奏技術が普及しており、国際コンクールで何度も優勝している。",
+        "sentenceEn": "Her piano performance technique has diffused, and she has won international competitions many times.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Superb mastery of musical technique uses「優れており」(superior) or「卓越しており」, not「普及しており」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "長い登山道を歩き続けて足の筋肉が普及したため、山小屋で一晩休むことにした。",
+        "sentenceEn": "Continuing to walk along the long mountain trail, my leg muscles diffused, so I rested at the lodge.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Muscle fatigue or soreness uses「疲労した」(fatigued) or「張った」(tightened), not「普及した」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n2-nibui",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "鈍い",
+    "reading": "にぶい",
+    "romaji": "nibui",
+    "meanings": [
+      "dull",
+      "slow",
+      "sluggish"
+    ],
+    "pos": [
+      "i-adj"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "毎朝の散歩のおかげで、祖父の足腰は年齢のわりにとても鈍くて元気です。",
+        "sentenceEn": "Thanks to daily walks, my grandfather's legs and lower back are very dull for his age and healthy.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Being robust and strong uses「丈夫で」(sturdy) or「達者で」(in good health), not「鈍くて」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "徹夜続きで寝不足のせいか、今朝は頭の回転や身体の反応がいつもより鈍い。",
+        "sentenceEn": "Perhaps because of lack of sleep from staying up all night, my mental sharpness and physical reflexes are duller than usual this morning.",
+        "isCorrect": true,
+        "explanation": "「反応 / 痛み / 動きが鈍い」expresses dulled sensitivity, sluggish reflexes, or lack of sharpness."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "この最新型のノートパソコンは処理速度が非常に鈍く、重い動画編集も快適に行えます。",
+        "sentenceEn": "This latest laptop's processing speed is extremely dull, allowing heavy video editing comfortably.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Fast processing speeds use「速く」(fast) or「俊敏で」, not「鈍く」(which means slow)."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "彼女は色彩感覚がとても鈍いので、描いた絵はいつも鮮やかで人々の目を引きます。",
+        "sentenceEn": "Because her sense of color is very dull, the paintings she creates are always vivid and catch people's eyes.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Keen aesthetic sensitivity uses「鋭い」(keen/sharp), not「鈍い」(blunt/dull)."
+      }
+    ]
+  },
+  {
+    "id": "usage-n2-hikiukeru",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "引き受ける",
+    "reading": "ひきうける",
+    "romaji": "hikiukeru",
+    "meanings": [
+      "to undertake",
+      "to take on",
+      "to accept"
+    ],
+    "pos": [
+      "verb",
+      "ichidan"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "会議の開始時間になってもクライアントが現れなかったので、受付まで車で引き受けに行きました。",
+        "sentenceEn": "Because the client didn't show up even at meeting time, I drove to reception to undertake them.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Going to greet or pick up someone uses「出迎えに」(go to greet/meet), not「引き受けに」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "先輩が急な病気で入院してしまったため、彼が担当していた大型プロジェクトの責任者を私が引き受けることになった。",
+        "sentenceEn": "Because my senior was suddenly hospitalized due to illness, I took on the role of leader for the large-scale project he had been handling.",
+        "isCorrect": true,
+        "explanation": "「仕事 / 役目 / 責任を引き受ける」means consenting to undertake duties, projects, or responsibilities."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "郵便局の窓口へ行って、海外に住んでいる友人からの小包を笑顔で引き受けました。",
+        "sentenceEn": "I went to the post office counter and smilingly undertook a parcel from a friend living abroad.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Receiving physical packages uses「受け取りました」(received), not「引き受けました」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "街で偶然高校時代の担任の先生を見かけたので、大きな声で引き受けて挨拶を交わしました。",
+        "sentenceEn": "I spotted my high school homeroom teacher in town by chance, so I undertook loudly and greeted him.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Calling out to someone uses「呼び止めて」(called out to) or「声をかけて」, not「引き受けて」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n2-gouin",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "強引",
+    "reading": "ごういん",
+    "romaji": "gouin",
+    "meanings": [
+      "overbearing",
+      "coercive",
+      "pushy",
+      "high-handed"
+    ],
+    "pos": [
+      "na-adj",
+      "noun"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "このビルは強引な鉄筋コンクリートで建てられているため、震度7の地震でもびくともしません。",
+        "sentenceEn": "Because this building was constructed with overbearing reinforced concrete, it won't budge even in an intensity-7 quake.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Physically sturdy building material uses「頑丈な」(sturdy) or「強固な」(solid), not「強引な」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "彼の英語力は非常に強引で、ネイティブスピーカーとも対等にディスカッションができます。",
+        "sentenceEn": "His English ability is extremely overbearing, allowing him to discuss as equals with native speakers.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Fluent and high language proficiency uses「流暢で」(fluent) or「高くて」, not「強引で」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "周囲の反対意見に全く耳を貸さず、自分の企画を強引に進めようとするやり方は反発を招くだけだ。",
+        "sentenceEn": "Refusing to listen to dissenting opinions around you and trying to push your plan forward in a high-handed manner will only invite backlash.",
+        "isCorrect": true,
+        "explanation": "「強引なやり方 / 強引に進める」connotes forcefully imposing one's will despite opposition or lack of consensus."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "赤ちゃんが夜中に強引に泣き叫んだので、お母さんは抱っこしてあやしました。",
+        "sentenceEn": "The baby cried out overbearingly in the middle of the night, so the mother picked him up and soothed him.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Crying loudly or violently uses「激しく」(intensely) or「大声で」(loudly), not「強引に」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n2-jimi",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "地味",
+    "reading": "じみ",
+    "romaji": "jimi",
+    "meanings": [
+      "plain",
+      "simple",
+      "subdued",
+      "modest"
+    ],
+    "pos": [
+      "na-adj",
+      "noun"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "昨夜のパーティーは世界的スターが多数参加し、とても地味で華やかな雰囲気でした。",
+        "sentenceEn": "Last night's party had many international stars participating and had a very plain and glamorous atmosphere.",
+        "isCorrect": false,
+        "explanation": "Unnatural. A glamorous, lavish gala atmosphere uses「豪華で」(luxurious) or「華やかな」, the opposite of「地味」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "彼は最新のスマートフォンを誰よりも早く地味に購入して、毎日自慢しています。",
+        "sentenceEn": "He plainly purchased the latest smartphone faster than anyone else and boasts about it daily.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Buying something ahead of others uses「いち早く」(promptly) or「真っ先に」, not「地味に」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "富士山の山頂から眺めたご来光は、息をのむほど地味で素晴らしい光景でした。",
+        "sentenceEn": "The sunrise viewed from the summit of Mount Fuji was a breathtakingly plain and magnificent scene.",
+        "isCorrect": false,
+        "explanation": "Unnatural. A majestic, breathtaking vista uses「壮大で」(grand) or「雄大な」(magnificent), not「地味で」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "就職活動の面接では、派手な服装を避けて、黒や紺を基調とした地味なスーツを選ぶのが一般的だ。",
+        "sentenceEn": "In job hunting interviews, it is standard to avoid flashy clothing and choose a plain suit based on black or navy.",
+        "isCorrect": true,
+        "explanation": "「地味な服装 / 色 / 暮らし」denotes understated, quiet, unobtrusive simplicity, opposed to「派手」(flashy)."
+      }
+    ]
+  },
+  {
+    "id": "usage-n2-omogakenai",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "思いがけない",
+    "reading": "おもいがけない",
+    "romaji": "omoigakenai",
+    "meanings": [
+      "unexpected",
+      "unforeseen"
+    ],
+    "pos": [
+      "i-adj"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "旅行先の小さなカフェで、偶然にも中学時代の親友にバッタリ再会するという思いがけない出来事があった。",
+        "sentenceEn": "At a small café during my travels, there was an unexpected occurrence where I bumped into my best friend from middle school by coincidence.",
+        "isCorrect": true,
+        "explanation": "「思いがけない出来事 / 知らせ / 出会い」expresses occurrences that were completely unpredicted or fortuitous."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "明日のプレゼンのために、思いがけない資料を徹夜で隅々まで完璧に作成しました。",
+        "sentenceEn": "For tomorrow's presentation, I stayed up all night and perfectly prepared unexpected materials to the corners.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Thoroughly prepared documents use「綿密な」(meticulous) or「十分な」(thorough), not「思いがけない」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "この問題は公式さえ覚えていれば思いがけなく解けるので、焦らずに計算してください。",
+        "sentenceEn": "As long as you remember the formula, this problem can be solved unexpectedly, so calculate calmly.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Solving problems easily uses「簡単に」(easily) or「難なく」(without trouble), not「思いがけなく」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "彼女は思いがけない笑顔を浮かべながら、毎朝明るい声でクラスメートに挨拶します。",
+        "sentenceEn": "Floating an unexpected smile, she greets classmates with a bright voice every morning.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Beaming cheerful smile uses「爽やかな」(refreshing) or「満面の」(beaming), not「思いがけない」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n2-kehai",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "気配",
+    "reading": "けはい",
+    "romaji": "kehai",
+    "meanings": [
+      "indication",
+      "sign",
+      "presence"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "来週から始まる海外旅行のために、スーツケースに荷物を詰める気配を整えています。",
+        "sentenceEn": "For the overseas trip starting next week, I am putting together the presence of packing luggage into the suitcase.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Making travel arrangements uses「準備」(preparations) or「支度」(readiness), not「気配」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "夜遅く古い洋館の前を通りかかったが、明かりもついておらず、人のいる気配は全く感じられなかった。",
+        "sentenceEn": "I passed in front of the old Western-style mansion late at night, but no lights were on, and not the slightest sign of human presence could be felt.",
+        "isCorrect": true,
+        "explanation": "「人の気配 / 秋の気配 / 気配を感じる」refers to subtle sensory traces or perceived atmospheric presence."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "先生が黒板に書いた数学の公式の気配をノートに丁寧に書き写しました。",
+        "sentenceEn": "I carefully transcribed the presence of the mathematical formula written on the blackboard into my notebook.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Transcribing written text uses「内容」(contents) or「数式」(formulas), not「気配」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "毎日の筋力トレーニングのおかげで、重い荷物も楽に持ち上げられる気配がつきました。",
+        "sentenceEn": "Thanks to daily weight training, the presence of easily lifting heavy luggage attached.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Developing physical strength uses「筋力」(muscle strength) or「体力」(stamina), not「気配」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n2-taisaku",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "対策",
+    "reading": "たいさく",
+    "romaji": "taisaku",
+    "meanings": [
+      "countermeasure",
+      "counter-plan"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "来週の友達の誕生日パーティーのために、みんなでサプライズの対策を秘密で計画しています。",
+        "sentenceEn": "For my friend's birthday party next week, everyone is secretly planning surprise countermeasures.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Planning a celebratory surprise event uses「企画」(planning) or「演出」(staging), not「対策」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "映画館の大画面で鑑賞したハリウッドのアクション対策は、迫力満点で感動した。",
+        "sentenceEn": "The Hollywood action countermeasure viewed on the cinema's large screen was full of impact and moving.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Blockbuster action movies use「大作」(blockbuster/masterpiece), not「対策」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "台風の上陸に備えて、自治体は河川の氾濫を防ぐための水害対策を迅速に講じた。",
+        "sentenceEn": "In preparation for the typhoon's landfall, the municipality swiftly implemented flood countermeasures to prevent rivers from overflowing.",
+        "isCorrect": true,
+        "explanation": "「事故 / 感染 / 不況の対策を立てる・講じる」is the formal standard collocation for measures against risks and crises."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "新しい料理のレシピを覚えるために、有名シェフの料理対策に毎日通っています。",
+        "sentenceEn": "To learn new cooking recipes, I attend a famous chef's cooking countermeasure every day.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Cooking classes use「料理教室」(cooking classes) or「講習」(course), not「対策」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n2-han-ei",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "反映",
+    "reading": "はんえい",
+    "romaji": "han-ei",
+    "meanings": [
+      "reflection",
+      "influence"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "鏡の前に立って、自分の着ている新しい洋服のサイズが反映しているか確認しました。",
+        "sentenceEn": "Standing in front of the mirror, I checked whether the size of the new clothes I was wearing was reflecting.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Checking if clothes fit uses「合っているか」(suits/fits), not「反映しているか」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "昨日の夜はぐっすり眠ったので、今朝の体調はとても元気に反映しています。",
+        "sentenceEn": "Because I slept soundly last night, my physical condition this morning is reflecting very healthily.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Excellent health condition uses「快調です」(in great shape) or「良好です」, not「反映している」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "毎朝庭の草花にたっぷり水を反映させると、きれいな花を咲かせてくれます。",
+        "sentenceEn": "Reflecting plenty of water onto garden plants each morning makes them bloom beautiful flowers.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Watering flowers uses「与えると」(give) or「まくと」(sprinkle), not「反映させる」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "市民アンケートで集まった多数の貴重な意見は、来年度の都市再開発計画にしっかりと反映される予定だ。",
+        "sentenceEn": "The numerous valuable opinions collected in the citizen survey are scheduled to be firmly reflected in next year's urban redevelopment plan.",
+        "isCorrect": true,
+        "explanation": "「意見 / 世論 / 景気を反映する」means causing influences, attitudes, or data to be visibly incorporated into plans or realities."
+      }
+    ]
+  },
+  {
+    "id": "usage-n2-arasuji",
+    "level": "N2",
+    "jlpt": 2,
+    "word": "あらすじ",
+    "reading": "あらすじ",
+    "romaji": "arasuji",
+    "meanings": [
+      "outline",
+      "summary",
+      "synopsis"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "本屋で小説を選ぶときは、まず裏表紙に書いてあるあらすじを読んでから買うかどうか決めることにしている。",
+        "sentenceEn": "When choosing a novel at a bookstore, I make it a rule to first read the synopsis written on the back cover before deciding whether to buy it.",
+        "isCorrect": true,
+        "explanation": "「小説 / 映画 / 劇のあらすじ」specifically refers to the summary plot outline of a narrative work."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "新しい料理を作るために、レシピ本に書かれた食材のあらすじを順番に計量しました。",
+        "sentenceEn": "To cook a new dish, I weighed the synopses of ingredients written in the recipe book in sequence.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Ingredient portions use「分量」(portions/quantities) or「分量表」, not「あらすじ」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "駅前の交番へ行って、落としてしまった財布のあらすじを警察官に詳しく説明しました。",
+        "sentenceEn": "I went to the police box in front of the station and explained the synopsis of my lost wallet in detail.",
+        "isCorrect": false,
+        "explanation": "Unnatural. External physical description of lost items uses「特徴」(features) or「形状」(shape), not「あらすじ」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "毎月の電気代や水道代のあらすじを家計簿に記入して、無駄な支出を削っています。",
+        "sentenceEn": "I enter the synopses of monthly electricity and water bills into the household ledger, cutting wasteful expenses.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Itemized financial billing statements use「明細」(breakdown) or「金額」(amounts), not「あらすじ」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n1-aiso",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "愛想",
+    "reading": "あいそ",
+    "romaji": "aiso",
+    "meanings": [
+      "civility",
+      "courtesy",
+      "sociability",
+      "graces"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "彼はいつも笑顔で誰に対しても愛想がよく、職場の同僚やお客さんからとても好かれている。",
+        "sentenceEn": "He is always smiling and pleasant to everyone, and is well-liked by colleagues and customers.",
+        "isCorrect": true,
+        "explanation": "「愛想がいい / 愛想を尽かす」is the established idiom for friendly, pleasant interpersonal demeanor or sociability."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "毎日の生活習慣を愛想して、夜更かしをやめて早起きを心がけるようにした。",
+        "sentenceEn": "I civilitied my daily lifestyle habits, quitting staying up late and making an effort to wake up early.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Reforming personal lifestyle habits uses「改善して」(improve) or「改めて」(reform), not「愛想して」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "新しく買ったスマートフォンの愛想がとても綺麗で、写真を撮るのが楽しくなった。",
+        "sentenceEn": "The courtesy of my newly purchased smartphone is very beautiful, making taking photos fun.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Display screen or image clarity uses「画面」(screen) or「画質」(image quality), not「愛想」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "会議で出された提案に対して、全員が大きな愛想で拍手をして歓迎した。",
+        "sentenceEn": "Toward the proposal made in the meeting, everyone welcomed it with applause and large courtesy.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Welcoming with high spirits uses「歓声」(cheers) or「熱意」(enthusiasm), not「愛想」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n1-aima",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "合間",
+    "reading": "あいま",
+    "romaji": "aima",
+    "meanings": [
+      "interval",
+      "spare time"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "電車のドアの合間に荷物が挟まってしまい、発車が数分遅れてしまった。",
+        "sentenceEn": "Luggage got caught in the interval of the train door, delaying departure by several minutes.",
+        "isCorrect": false,
+        "explanation": "Unnatural. A physical gap between physical objects uses「隙間」(sukima - physical opening), not temporal「合間」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "彼は多忙な仕事の合間を縫って、語学の勉強や資格試験の準備を熱心に続けている。",
+        "sentenceEn": "Squeezing time between intervals of his busy job, he diligently continues studying languages and preparing for certification exams.",
+        "isCorrect": true,
+        "explanation": "「仕事 / 家事の合間を縫う」is the classic idiomatic collocation for finding spare intervals between continuous activities."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "昨日の夜からの合間で、庭の植木鉢にきれいな花がたくさん咲いた。",
+        "sentenceEn": "In the interval since last night, many pretty flowers bloomed in the garden flowerpot.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Overnight duration uses「一晩のうちに」(over the course of a night) or「短期間で」, not「合間」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "スープの合間に少し塩を足すと、味が引き締まってとても美味しくなった。",
+        "sentenceEn": "Adding a little salt to the interval of the soup tightened the flavor and made it delicious.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Adding seasonings uses「隠し味に」(as secret accent) or「仕上げに」(as finishing touch), not「合間に」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n1-aete",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "敢えて",
+    "reading": "あえて",
+    "romaji": "aete",
+    "meanings": [
+      "dare (to do)",
+      "venture (to do)",
+      "purposely take the risk"
+    ],
+    "pos": [
+      "adverb"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "昨夜は疲れていたので、夕食を食べたあと敢えて朝までぐっすり眠った。",
+        "sentenceEn": "Because I was tired last night, after eating dinner I dared to sleep soundly until morning.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Sleeping soundly uses「ぐっすり」(soundly) or「そのまま」(straight away).「敢えて」requires daring risk or difficulty."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "毎日の散歩を欠かさず続けているので、彼の足腰は敢えて丈夫で元気だ。",
+        "sentenceEn": "Continuing daily walks without fail, his legs and lower back are daringly sturdy and healthy.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Being genuinely robust uses「実に」(truly) or「非常に」(very), not「敢えて」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "反対意見が多いことは重々承知しているが、現状を打開するために私は敢えてこの厳しい提案をする。",
+        "sentenceEn": "While fully aware there is much opposition, to break through the current impasse I dare to put forward this harsh proposal.",
+        "isCorrect": true,
+        "explanation": "「敢えて＋動詞」expresses deliberately undertaking an action despite obvious friction, difficulty, or danger."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "駅前のベーカリーで焼きたてのパンを敢えて買って、家族みんなで美味しく食べた。",
+        "sentenceEn": "I dared to buy freshly baked bread at the bakery in front of the station and enjoyed it with my family.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Going out of one's way for good bread uses「わざわざ」(went out of way to) or「立ち寄って」, not「敢えて」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n1-aogu",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "仰ぐ",
+    "reading": "あおぐ",
+    "romaji": "aogu",
+    "meanings": [
+      "to look up (to)",
+      "to respect",
+      "to seek",
+      "to ask for"
+    ],
+    "pos": [
+      "verb",
+      "godan"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "喉が渇いたので、冷たい麦茶を一気にコップ一杯仰ぎました。",
+        "sentenceEn": "Being thirsty, I looked up a cup of cold barley tea all in one gulp.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Gulping down a beverage uses「飲み干した」(drank dry) or「あおった」(from 煽る - gulp), not「仰いだ」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "部屋に煙が充満していたので、窓を大きく開けて外の新鮮な空気を仰ぎました。",
+        "sentenceEn": "Because the room was filled with smoke, I opened windows wide and looked up the fresh outside air.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Ventilating fresh air uses「取り入れた」(let in) or「吸い込んだ」(inhaled), not「仰いだ」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "パソコンの画面を長時間仰いでいたため、目が疲れて肩も凝ってしまった。",
+        "sentenceEn": "Because I looked up at the computer screen for a long time, my eyes grew fatigued and shoulders stiffened.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Gazing at monitors uses「見つめていた」(stared at) or「眺めていた」, not「仰いでいた」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "不測の事態に直面した現場のリーダーは、独断での判断を避け、本部の指示を仰ぐことにした。",
+        "sentenceEn": "Confronted with an unforeseen situation, the on-site leader avoided making arbitrary decisions and decided to seek instructions from headquarters.",
+        "isCorrect": true,
+        "explanation": "「指示 / 指導 / 助力を仰ぐ」is the formal respectful collocation for seeking guidance or decisions from a superior authority."
+      }
+    ]
+  },
+  {
+    "id": "usage-n1-akkenai",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "呆気ない",
+    "reading": "あっけない",
+    "romaji": "akkenai",
+    "meanings": [
+      "too quick",
+      "disappointingly short",
+      "anti-climactic"
+    ],
+    "pos": [
+      "i-adj"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "決勝戦は白熱した大熱戦になると誰もが期待していたが、わずか５分で決着がつき、呆気ない幕切れだった。",
+        "sentenceEn": "Everyone expected the final match would be a fiercely heated battle, but it was settled in just 5 minutes, making it an anti-climactic conclusion.",
+        "isCorrect": true,
+        "explanation": "「呆気ない結末 / 幕切れ」expresses a disappointing, anti-climactic ending that falls short of expectations due to brevity."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "この小説の結末は呆気ないほど感動的で、読者の多くが涙を流した。",
+        "sentenceEn": "The conclusion of this novel was anti-climactically touching, bringing many readers to tears.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Heartfelt or tear-evoking endings use「胸を打つほど」(heart-stirring) or「涙を誘うほど」, not「呆気ない」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "彼女は誰に対しても呆気ない態度で接するので、周囲の人々から信頼されている。",
+        "sentenceEn": "Because she treats everyone with an anti-climactic attitude, she is trusted by people around her.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Trustworthy frank demeanor uses「裏表のない」(unpretentious) or「誠実な」(sincere), not「呆気ない」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "徹夜で勉強したおかげで、今朝の試験は呆気ない高得点を取ることができた。",
+        "sentenceEn": "Thanks to studying all night, I was able to score an anti-climactic high score on this morning's exam.",
+        "isCorrect": false,
+        "explanation": "Unnatural. High test scores use「素晴らしい」(wonderful) or「見事な」(splendid), not「呆気ない」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n1-ichigaini",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "一概に",
+    "reading": "いちがいに",
+    "romaji": "ichigaini",
+    "meanings": [
+      "unconditionally",
+      "as a rule",
+      "sweepingly"
+    ],
+    "pos": [
+      "adverb"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "彼はクラスで一概に成績が優秀で、どの教科でも学年トップの点数を取っている。",
+        "sentenceEn": "His academic performance is sweepingly outstanding in class, ranking top in every subject.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Peerless academic excellence uses「圧倒的に」(overwhelmingly) or「ずば抜けて」(by far), not「一概に」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "都会での暮らしが便利だからといって、地方より必ずしも幸福であるとは一概には言えない。",
+        "sentenceEn": "Just because living in the city is convenient, one cannot sweepingly assert that it is necessarily happier than living in the countryside.",
+        "isCorrect": true,
+        "explanation": "「一概に〜とは言えない / 決めつけられない」is the established construction indicating that generalizations cannot be sweepingly made."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "雨が激しく降り始めたので、グラウンドで練習していた選手たちは一概に部室へ戻った。",
+        "sentenceEn": "Because rain began falling heavily, players practicing on the field sweepingly returned to the club room.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Doing an action all together at once uses「一斉に」(all at once) or「全員で」, not「一概に」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "毎朝ジョギングを一概に続けることで、体力がついて風邪をひきにくくなった。",
+        "sentenceEn": "By sweepingly continuing jogging every morning, I built stamina and became less prone to colds.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Continuing habits faithfully uses「地道に」(steadily) or「欠かさず」(without fail), not「一概に」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n1-ikkyoni",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "一挙に",
+    "reading": "いっきょに",
+    "romaji": "ikkyoni",
+    "meanings": [
+      "at a stroke",
+      "in a single swoop",
+      "all at once"
+    ],
+    "pos": [
+      "adverb"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "階段を一挙に一段ずつ注意深く降りながら、転ばないように手すりを掴んだ。",
+        "sentenceEn": "While descending stairs at a single stroke step-by-step carefully, I gripped the handrail to avoid falling.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Step-by-step careful descent uses「一段ずつていねいに」(carefully one step at a time), not「一挙に」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "毎日の読書を一挙に積み重ねることで、豊かな語彙力と思考力を養うことができる。",
+        "sentenceEn": "By piling up daily reading at a single stroke, one can cultivate rich vocabulary and thinking ability.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Gradual daily accumulation uses「コツコツと」(steadily) or「地道に」(tirelessly), opposite of「一挙に」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "話題のドラマが世界中で大ヒットしたことで、無名だった主演俳優は一挙にスターダムへと駆け上がった。",
+        "sentenceEn": "Because the talked-about drama became a massive global hit, the previously unknown lead actor rose to stardom at a single stroke.",
+        "isCorrect": true,
+        "explanation": "「一挙に解決する / 知名度が一挙に上がる」denotes achieving drastic change or progress all at once in one major bound."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "彼はとても真面目で、約束の時間を一挙に守って待合場所に到着した。",
+        "sentenceEn": "He is very conscientious, keeping appointment times at a single stroke and arriving at the rendezvous.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Punctually keeping appointments uses「正確に」(punctually) or「きちんと」(properly), not「一挙に」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n1-hitosuji",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "一筋",
+    "reading": "ひとすじ",
+    "romaji": "hitosuji",
+    "meanings": [
+      "devoted to one thing",
+      "earnestly",
+      "straightforwardly",
+      "a ray of"
+    ],
+    "pos": [
+      "noun",
+      "na-adj"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "会議が長引いて意見がまとまらないので、まずは一筋の休憩を取ることにした。",
+        "sentenceEn": "Because the meeting was dragging on without consensus, we decided to take a single-minded break first.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Taking a short breather uses「一息」(a breather) or「少しの」(short), not「一筋」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "旅行の荷物を軽くするために、着替えの服を一筋に圧縮してバッグに詰めた。",
+        "sentenceEn": "To lighten travel luggage, I compressed change of clothes single-mindedly and packed them into the bag.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Compacting luggage uses「コンパクトに」(compactly) or「小さく」(small), not「一筋に」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "彼はとてもおしゃべりで、一度話し始めると一筋に話題が次々と飛んでいく。",
+        "sentenceEn": "He is very talkative, and once he starts talking, topics fly one after another single-mindedly.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Jumping haphazardly between topics uses「次々と」(one after another) or「脈絡なく」, not「一筋に」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "祖父は若い頃から六十年間、伝統工芸の陶芸一筋に情熱を注ぎ続けてきた名職人だ。",
+        "sentenceEn": "My grandfather is a master craftsman who has poured his passion single-mindedly into traditional ceramic pottery for sixty years since his youth.",
+        "isCorrect": true,
+        "explanation": "「研究 / 芸道一筋」is the classic expression for devoting one's entire heart and soul single-mindedly to one single endeavor."
+      }
+    ]
+  },
+  {
+    "id": "usage-n1-kamitsu",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "過密",
+    "reading": "かみつ",
+    "romaji": "kamitsu",
+    "meanings": [
+      "crowded",
+      "tightly packed (schedule/traffic)"
+    ],
+    "pos": [
+      "na-adj",
+      "noun"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "選挙期間中の候補者は、分刻みで全国各地を飛び回る過密なスケジュールをこなしている。",
+        "sentenceEn": "During the election campaign period, candidates carry out tightly packed, overcrowded schedules flying across the country minute by minute.",
+        "isCorrect": true,
+        "explanation": "「過密なスケジュール / 過密ダイヤ」is the standard collocation for schedules or timetables packed with excessive density."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "昨夜の雨で森の空気がとても過密になっており、深呼吸すると心地よかった。",
+        "sentenceEn": "Due to last night's rain, the forest air became very tightly packed, feeling pleasant when breathing deeply.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Pure, refreshing air uses「澄んで」(clear) or「爽やかで」(refreshing), not「過密になって」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "彼女が作ったケーキは生クリームが過密で、甘さ控えめでとても美味しかった。",
+        "sentenceEn": "The cake she baked had tightly packed fresh cream, moderately sweet and very delicious.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Rich and abundant cream uses「たっぷり使われていて」(plentiful) or「濃厚で」(rich), not「過密で」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "彼は英語の語彙が過密なので、どんな難しいニュースでもスラスラと読める。",
+        "sentenceEn": "Because his English vocabulary is tightly packed, he can read any difficult news smoothly.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Having an extensive vocabulary uses「豊富なので」(abundant) or「多彩なので」, not「過密なので」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n1-kankoku",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "勧告",
+    "reading": "かんこく",
+    "romaji": "kankoku",
+    "meanings": [
+      "counsel",
+      "recommendation",
+      "official advice"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "友人が風邪をひいて寝込んでいたので、栄養のある温かいおかゆを勧告してあげた。",
+        "sentenceEn": "Since my friend was in bed sick with a cold, I recommended nutritious warm rice porridge for them.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Preparing meals for someone uses「作ってあげた」(cooked for) or「振る舞った」(served), not「勧告した」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "労働基準監督署は、長時間の違法残業が常態化していたその企業に対して是正勧告を行った。",
+        "sentenceEn": "The Labor Standards Inspection Office issued a formal corrective recommendation to that enterprise where illegal long overtime had become routine.",
+        "isCorrect": true,
+        "explanation": "「是正 / 避難 / 辞職を勧告する」is the formal administrative or institutional term for official recommendations or counsel."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "駅前の新しいカフェのコーヒーが絶品だったので、同僚にぜひ行くよう勧告しました。",
+        "sentenceEn": "Because the coffee at the new station cafe was superb, I recommended to colleagues that they visit.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Recommending a cafe casually uses「勧めた」(recommended), not institutional「勧告した」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "明日の朝早くから新幹線に乗るので、今夜は早く寝るよう自分自身に勧告しました。",
+        "sentenceEn": "Since I ride the bullet train early tomorrow morning, I recommended to myself to sleep early tonight.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Reminding or admonishing oneself uses「言い聞かせた」(told oneself) or「決めた」, not「勧告した」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n1-kanwa",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "緩和",
+    "reading": "かんわ",
+    "romaji": "kanwa",
+    "meanings": [
+      "relief",
+      "mitigation",
+      "relaxation (regulations/tension)"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "台風が近づいてきたため、港の漁師たちは船が流されないようにロープを強く緩和した。",
+        "sentenceEn": "Because a typhoon approached, harbor fishermen strongly relaxed ropes so boats would not drift away.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Securing ropes tightly uses「締め直した」(re-tightened) or「固定した」(fastened), opposite of「緩和した」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "彼女は毎日ジョギングを続けて、体全体の筋力を大幅に緩和することに成功した。",
+        "sentenceEn": "Continuing jogging daily, she succeeded in substantially relaxing the muscle strength of her entire body.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Strengthening musculature uses「強化する」(strengthen) or「鍛える」(train), not「緩和する」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "景気回復を後押しするため、政府と中央銀行は金融引き締め政策を見直し、規制の緩和に踏み切った。",
+        "sentenceEn": "To bolster economic recovery, the government and central bank reviewed monetary tightening and stepped into the relaxation of regulations.",
+        "isCorrect": true,
+        "explanation": "「規制 / 緊張 / 痛みを緩和する」means softening, relieving, or easing strict regulations, intense pain, or strained tensions."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "新しいビルの工事現場では、安全基準を緩和するために作業員全員がヘルメットを着用している。",
+        "sentenceEn": "At the construction site of the new building, every worker wears a helmet to relax safety standards.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Upholding safety standards uses「守るため」(to observe) or「遵守するため」, not「緩和するため」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n1-kyouju",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "享受",
+    "reading": "きょうじゅ",
+    "romaji": "kyouju",
+    "meanings": [
+      "reception",
+      "acceptance",
+      "enjoyment",
+      "being given"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 3,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "料理長が丹精込めて作ったフランス料理のフルコースを、お腹いっぱい享受しました。",
+        "sentenceEn": "I enjoyed the full-course French cuisine prepared wholeheartedly by the head chef to my heart's content.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Savoring gourmet food uses「堪能しました」(relished) or「味わいました」(tasted), not「享受しました」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "祖父は毎朝庭に出て、丹精込めて育てている盆栽の手入れを丹念に享受しています。",
+        "sentenceEn": "Every morning my grandfather steps out into the garden and painstakingly enjoys caring for his bonsai.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Tending to plants uses「行っています」(carries out) or「楽しんでいます」(enjoys doing), not「享受しています」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "友人の悩み相談に乗って、的確なアドバイスを心から享受してあげました。",
+        "sentenceEn": "Listening to my friend's worries, I whole-heartedly enjoyed giving them precise advice.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Giving advice uses「与えてあげた」(provided) or「送った」(sent), not「享受してあげた」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "私たちは先人たちのたゆまぬ努力のおかげで、平和で豊かな社会の恩恵を十分に享受している。",
+        "sentenceEn": "Thanks to the tireless efforts of our predecessors, we fully enjoy and receive the blessings of a peaceful and prosperous society.",
+        "isCorrect": true,
+        "explanation": "「恩恵 / 自由 / 権利を享受する」means receiving and savoring the benefits, rights, or privileges granted by society or nature."
+      }
+    ]
+  },
+  {
+    "id": "usage-n1-kyoumei",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "共鳴",
+    "reading": "きょうめい",
+    "romaji": "kyoumei",
+    "meanings": [
+      "resonance",
+      "sympathy"
+    ],
+    "pos": [
+      "noun",
+      "suru-verb"
+    ],
+    "correctOptionIndex": 0,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "その環境保護活動家の崇高な理念に深く共鳴した多くの若者たちが、各地でボランティアとして立ち上がった。",
+        "sentenceEn": "Deeply resonating with the environmental activist's noble ideals, many young people stood up as volunteers across various regions.",
+        "isCorrect": true,
+        "explanation": "「思想 / 理念 / 主張に共鳴する」means having one's thoughts and heart resonate in deep sympathetic agreement with another's ideals."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "スマホの充電ケーブルの接触が悪くなったので、新しいケーブルに共鳴しました。",
+        "sentenceEn": "The contact of the smartphone charging cable worsened, so I resonated into a new cable.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Replacing cables uses「買い替えた」(purchased replacement) or「交換した」(exchanged), not「共鳴した」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "今朝は目覚まし時計の音がとても共鳴で、家族全員が一斉に飛び起きた。",
+        "sentenceEn": "This morning the sound of the alarm clock was very resonant, so the entire family leaped awake at once.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Piercing or loud alarm sound uses「大きくて」(loud) or「けたたましくて」(shrill), not「共鳴で」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "彼女のピアノの音色はとても共鳴で、聴いているだけで心が落ち着いてくる。",
+        "sentenceEn": "Her piano timbre was very resonant, calming the heart just by listening to it.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Soothing or beautiful musical tone uses「澄んでいて」(pure) or「心地よくて」(pleasant), not「共鳴で」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n1-koumyou",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "巧妙",
+    "reading": "こうみょう",
+    "romaji": "koumyou",
+    "meanings": [
+      "ingenious",
+      "skillful",
+      "clever",
+      "deft"
+    ],
+    "pos": [
+      "na-adj",
+      "noun"
+    ],
+    "correctOptionIndex": 1,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "今年の夏休みは巧妙な計画を立てて、家族みんなで北海道の大自然を満喫した。",
+        "sentenceEn": "For this summer vacation, I made an ingenious plan and enjoyed Hokkaido's great nature with my family.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Making thoughtful vacation plans uses「綿密な」(meticulous) or「充実した」(fulfilling), not「巧妙な」(crafty)."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "犯行グループは警察の目を欺くため、非常に巧妙な手口を使って不正な資金洗浄を繰り返していた。",
+        "sentenceEn": "To deceive the eyes of the police, the crime group repeatedly laundered illegal funds using extremely ingenious techniques.",
+        "isCorrect": true,
+        "explanation": "「巧妙な手口 / 罠 / 仕掛け」is the classic collocation for artfully clever, crafty tricks or techniques designed to elude detection."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "彼はとても誠実な人柄で、誰に対しても巧妙に接するので周囲から慕われている。",
+        "sentenceEn": "He has a very sincere personality and treats everyone ingeniously, so he is adored by those around him.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Treating people sincerely uses「誠実に」(sincerely) or「温かく」(warmly), not「巧妙に」."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "山頂からの景色は巧妙に美しく、見渡す限りの雲海が太陽の光に輝いていた。",
+        "sentenceEn": "The view from the summit was ingeniously beautiful, with a sea of clouds as far as the eye could see.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Stunning natural scenery uses「息をのむほど」(breathtakingly) or「神々しいほど」, not「巧妙に」."
+      }
+    ]
+  },
+  {
+    "id": "usage-n1-konkyo",
+    "level": "N1",
+    "jlpt": 1,
+    "word": "根拠",
+    "reading": "こんきょ",
+    "romaji": "konkyo",
+    "meanings": [
+      "basis",
+      "foundation",
+      "grounds"
+    ],
+    "pos": [
+      "noun"
+    ],
+    "correctOptionIndex": 2,
+    "options": [
+      {
+        "id": "opt-1",
+        "sentenceJa": "新しいアパートの家賃を支払うために、駅前の銀行で根拠を下ろしてきました。",
+        "sentenceEn": "To pay the rent for the new apartment, I withdrew basis at the bank in front of the station.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Withdrawing funds uses「お金」(money) or「預金」(savings), not「根拠」."
+      },
+      {
+        "id": "opt-2",
+        "sentenceJa": "彼女は毎朝庭の花壇に根拠をたっぷり与えて、大切に育てている。",
+        "sentenceEn": "Every morning she gives plenty of basis to the flowerbed in the garden and cares for them.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Giving water or plant nourishment uses「水」(water) or「肥料」(fertilizer), not「根拠」."
+      },
+      {
+        "id": "opt-3",
+        "sentenceJa": "科学的な根拠に基づかない曖昧な噂話を、あたかも事実であるかのように信じ込むのは極めて危険だ。",
+        "sentenceEn": "Simplistically believing ambiguous rumors that are not based on scientific basis as if they were fact is extremely dangerous.",
+        "isCorrect": true,
+        "explanation": "「確かな根拠 / 根拠を示す / 根拠に基づく」refers to the factual premise, rationale, or proof supporting an assertion or theory."
+      },
+      {
+        "id": "opt-4",
+        "sentenceJa": "彼はとても足が速く、100メートル走で学年トップの根拠を叩き出した。",
+        "sentenceEn": "He is very fast on his feet, producing the grade-top basis in the 100-meter dash.",
+        "isCorrect": false,
+        "explanation": "Unnatural. Setting a sports race time uses「記録」(record) or「タイム」(time), not「根拠」."
+      }
+    ]
+  }
+]

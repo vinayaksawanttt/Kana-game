@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-11-08T17:38:08.061Z",
-  "bundleHash": "fff548530e12",
+  "generatedAt": "2026-11-09T08:21:25.806Z",
+  "bundleHash": "44688ff63da1",
   "assets": {
     "dictionary-index.json": {
       "hash": "3d98ac74562d",
@@ -54,6 +54,10 @@
     "jlpt/synonym-match.json": {
       "hash": "9a5319763d96",
       "bytes": 342364
+    },
+    "jlpt/word-usage.json": {
+      "hash": "b1c24351e908",
+      "bytes": 213883
     },
     "kanji-vocab/N1.json": {
       "hash": "43a93ee8180b",

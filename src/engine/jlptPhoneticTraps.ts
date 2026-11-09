@@ -980,7 +980,11 @@ export function normalizePhoneticLevel(input: JlptLevelInput): PhoneticTrapLevel
   if (typeof input === "number") {
     return `N${input}` as PhoneticTrapLevel;
   }
-  return input;
+  const str = String(input).toUpperCase();
+  if (str.startsWith("N")) {
+    return str as PhoneticTrapLevel;
+  }
+  return `N${str}` as PhoneticTrapLevel;
 }
 
 export function getPhoneticTrapCountsByLevel(
@@ -1045,7 +1049,14 @@ export function buildPhoneticTrapQuestion(
   const sentenceFurigana =
     item.sentenceFurigana ?? prefixFurigana + targetFurigana + suffixFurigana;
 
-  if (mode === "reading") {
+  // Guard: katakana loanword orthography traps are generated only for N5.
+  // Non-N5 katakana loanwords fall back to reading mode to preserve pure Kanji/conjugated verb orthography.
+  const effectiveMode: PhoneticTrapQuestionMode =
+    mode === "orthography" && item.level !== "N5" && KATAKANA_CHAR_RE.test(item.word)
+      ? "reading"
+      : mode;
+
+  if (effectiveMode === "reading") {
     const traps = generatePhoneticReadingTraps(item.reading, rng);
     const rawOptions: Array<{
       text: string;
@@ -1191,6 +1202,7 @@ export function createPhoneticTrapSession(
       ? [...new Set(settings.levels.map(normalizePhoneticLevel))]
       : ["N5"];
   const levelSet = new Set<PhoneticTrapLevel>(normalizedLevels);
+  const includesN5 = levelSet.has("N5");
 
   let candidates = pool.filter((item) => levelSet.has(item.level));
   if (settings.questionIds && settings.questionIds.length > 0) {
@@ -1205,6 +1217,15 @@ export function createPhoneticTrapSession(
     candidates = [...pool];
   }
 
+  // Katakana loanword orthography traps are generated only when N5 is included in the selected levels.
+  // N4–N1 pools retain their Kanji and conjugated verb/adjective traps.
+  if (!includesN5) {
+    const nonKatakana = candidates.filter((item) => !KATAKANA_CHAR_RE.test(item.word));
+    if (nonKatakana.length > 0) {
+      candidates = nonKatakana;
+    }
+  }
+
   const shuffledPool = shuffleWithRng(candidates, rng);
   const selectedItems = shuffledPool.slice(
     0,
@@ -1216,7 +1237,7 @@ export function createPhoneticTrapSession(
     `jlpt-traps-${startedAt.toString(36)}-${Math.floor(rng() * 1e6).toString(36)}`;
 
   const questions: PhoneticTrapQuestion[] = selectedItems.map((item, idx) => {
-    const qMode: PhoneticTrapQuestionMode =
+    let qMode: PhoneticTrapQuestionMode =
       settings.subMode === "reading"
         ? "reading"
         : settings.subMode === "orthography"
@@ -1224,6 +1245,11 @@ export function createPhoneticTrapSession(
           : idx % 2 === 0
             ? "reading"
             : "orthography";
+
+    // Guard: ensure katakana loanword orthography traps are never generated unless N5 is included
+    if (!includesN5 && KATAKANA_CHAR_RE.test(item.word) && qMode === "orthography") {
+      qMode = "reading";
+    }
 
     return buildPhoneticTrapQuestion(
       item,

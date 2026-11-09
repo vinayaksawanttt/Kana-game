@@ -179,4 +179,159 @@ describe("jlptPhoneticTraps pure engine", () => {
     expect(summary.skippedCount).toBe(1);
     expect(summary.missedItemIds.length).toBeGreaterThanOrEqual(2);
   });
+
+  describe("Katakana Restriction by Level (N5 vs N4–N1 vs mixed)", () => {
+    it("generates Katakana loanword orthography traps when N5 is selected", () => {
+      // Find known N5 katakana items (シャワー, エレベーター, etc.)
+      const n5KatakanaItems = PHONETIC_TRAP_ITEMS.filter(
+        (it) => it.level === "N5" && /[\u30A1-\u30FA]/.test(it.word),
+      );
+      expect(n5KatakanaItems.length).toBeGreaterThan(0);
+
+      // Session with N5 in orthography mode
+      const session = createPhoneticTrapSession(
+        PHONETIC_TRAP_ITEMS,
+        {
+          subMode: "orthography",
+          levels: ["N5"],
+          size: 30,
+          showEnglishHint: true,
+          questionIds: n5KatakanaItems.map((k) => k.id),
+        },
+        () => 0.5,
+      );
+
+      // Should have Katakana loanword orthography traps
+      const katakanaQuestions = session.questions.filter((q) =>
+        /[\u30A1-\u30FA]/.test(q.word),
+      );
+      expect(katakanaQuestions.length).toBeGreaterThan(0);
+
+      const hasKatakanaTraps = katakanaQuestions.some((q) =>
+        q.options.some((opt) => opt.trapRule === "Katakana Loanword Trap"),
+      );
+      expect(hasKatakanaTraps).toBe(true);
+
+      // Every katakana orthography question has options with Katakana Loanword Trap
+      for (const q of katakanaQuestions) {
+        expect(q.mode).toBe("orthography");
+        const wrongOpts = q.options.filter((o) => !o.isCorrect);
+        expect(
+          wrongOpts.some((o) => o.trapRule === "Katakana Loanword Trap"),
+        ).toBe(true);
+      }
+    });
+
+    it("restricts Katakana orthography traps and retains Kanji & conjugated verb/adjective traps for N4–N1 pools", () => {
+      const nonN5Tiers: Array<"N4" | "N3" | "N2" | "N1"> = ["N4", "N3", "N2", "N1"];
+
+      // 1. Check each non-N5 tier individually in orthography mode
+      for (const level of nonN5Tiers) {
+        const session = createPhoneticTrapSession(
+          PHONETIC_TRAP_ITEMS,
+          {
+            subMode: "orthography",
+            levels: [level],
+            size: 30,
+            showEnglishHint: true,
+          },
+          () => 0.35,
+        );
+
+        expect(session.questions.length).toBeGreaterThanOrEqual(10);
+
+        // ZERO questions should contain Katakana Loanword Trap
+        for (const q of session.questions) {
+          expect(q.mode).toBe("orthography");
+          for (const opt of q.options) {
+            expect(opt.trapRule).not.toBe("Katakana Loanword Trap");
+          }
+          // Wrong options should be Look-Alike Kanji Traps
+          const wrongOpts = q.options.filter((o) => !o.isCorrect);
+          expect(
+            wrongOpts.every((o) => o.trapRule === "Look-Alike Kanji Trap"),
+          ).toBe(true);
+        }
+      }
+
+      // 2. Check full N4–N1 pool combined in orthography mode
+      const combinedSession = createPhoneticTrapSession(
+        PHONETIC_TRAP_ITEMS,
+        {
+          subMode: "orthography",
+          levels: ["N4", "N3", "N2", "N1"],
+          size: 30,
+          showEnglishHint: true,
+        },
+        () => 0.42,
+      );
+
+      expect(combinedSession.questions.length).toBe(30);
+
+      // No Katakana loanword traps across any question
+      const allOptions = combinedSession.questions.flatMap((q) => q.options);
+      expect(
+        allOptions.some((o) => o.trapRule === "Katakana Loanword Trap"),
+      ).toBe(false);
+
+      // Retains conjugated verb/adjective traps (e.g. okurigana preserved)
+      const conjugatedQuestions = combinedSession.questions.filter((q) =>
+        /[ぁ-ん]/.test(q.word),
+      );
+      expect(conjugatedQuestions.length).toBeGreaterThan(0);
+      for (const cq of conjugatedQuestions) {
+        // Okurigana ending (e.g. める in 集める, しい in 厳しい/忙しい) should be present
+        const okuriganaMatch = cq.word.match(/[ぁ-ん]+$/);
+        if (okuriganaMatch) {
+          const ending = okuriganaMatch[0];
+          for (const opt of cq.options) {
+            expect(opt.text.endsWith(ending)).toBe(true);
+          }
+        }
+      }
+
+      // 3. Check N4–N1 combined in mixed mode
+      const mixedSession = createPhoneticTrapSession(
+        PHONETIC_TRAP_ITEMS,
+        {
+          subMode: "mixed",
+          levels: ["N4", "N3", "N2", "N1"],
+          size: 20,
+          showEnglishHint: true,
+        },
+        () => 0.12,
+      );
+
+      const mixedOptions = mixedSession.questions.flatMap((q) => q.options);
+      expect(
+        mixedOptions.some((o) => o.trapRule === "Katakana Loanword Trap"),
+      ).toBe(false);
+    });
+
+    it("allows Katakana loanword orthography traps in mixed-level selection when N5 is included", () => {
+      // Mixed session including N5 and N4
+      const mixedN5N4 = createPhoneticTrapSession(
+        PHONETIC_TRAP_ITEMS,
+        {
+          subMode: "orthography",
+          levels: ["N5", "N4"],
+          size: 30,
+          showEnglishHint: true,
+        },
+        () => 0.25,
+      );
+
+      // N5 katakana items can be drawn and generate Katakana Loanword Traps
+      const hasKatakanaTraps = mixedN5N4.questions.some((q) =>
+        q.options.some((o) => o.trapRule === "Katakana Loanword Trap"),
+      );
+      expect(hasKatakanaTraps).toBe(true);
+
+      // And N4 kanji/conjugated verb items also generate Look-Alike Kanji Traps
+      const hasKanjiTraps = mixedN5N4.questions.some((q) =>
+        q.options.some((o) => o.trapRule === "Look-Alike Kanji Trap"),
+      );
+      expect(hasKanjiTraps).toBe(true);
+    });
+  });
 });

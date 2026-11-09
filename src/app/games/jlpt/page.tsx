@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, BookOpen, CheckCircle2, Headphones, Sparkles } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, CheckCircle2, Clock, Headphones, Sparkles } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
 import { JlptPaperIllustration } from "@/components/icons/JlptPaperIllustration";
 import {
@@ -19,6 +19,11 @@ import {
   SYNONYM_MATCH_ITEMS,
   getSynonymMatchCountsByLevel,
 } from "@/engine/jlptSynonymMatch";
+import {
+  WORD_USAGE_ITEMS,
+  getWordUsageCountsByLevel,
+  type WordUsageLevel,
+} from "@/data/jlpt/wordUsageData";
 import {
   INSTANT_REPLY_ITEMS,
   getInstantReplyCountsByLevel,
@@ -45,11 +50,11 @@ const LEVEL_STAMPS: readonly ActiveLevelSelection[] = [
 
 export default function JlptArenaHubPage() {
   const [selectedLevel, setSelectedLevel] = useState<ActiveLevelSelection>("N5");
-  const [bookletPage, setBookletPage] = useState<1 | 2>(1);
+  const [bookletPage, setBookletPage] = useState<1 | 2 | 3>(1);
   const [pageTurnAnim, setPageTurnAnim] = useState<"next" | "prev" | "none">("none");
   const [animKey, setAnimKey] = useState<number>(0);
 
-  function handleTurnPage(target: 1 | 2) {
+  function handleTurnPage(target: 1 | 2 | 3) {
     if (target === bookletPage) return;
     setPageTurnAnim(target > bookletPage ? "next" : "prev");
     setBookletPage(target);
@@ -65,6 +70,7 @@ export default function JlptArenaHubPage() {
   const starCounts = useMemo(() => getStarScrambleCountsByLevel(STAR_SCRAMBLE_ITEMS), []);
   const phoneticCounts = useMemo(() => getPhoneticTrapCountsByLevel(PHONETIC_TRAP_ITEMS), []);
   const synonymCounts = useMemo(() => getSynonymMatchCountsByLevel(SYNONYM_MATCH_ITEMS), []);
+  const usageCounts = useMemo(() => getWordUsageCountsByLevel(WORD_USAGE_ITEMS), []);
   const replyCounts = useMemo(() => getInstantReplyCountsByLevel(INSTANT_REPLY_ITEMS), []);
   const clozeCounts = useMemo(() => getParagraphClozeCountsByLevel(PARAGRAPH_CLOZE_PASSAGES), []);
   const scannerCounts = useMemo(() => getInfoScannerCountsByLevel(INFO_SCANNER_DOCUMENTS), []);
@@ -72,6 +78,7 @@ export default function JlptArenaHubPage() {
   const totalStar = STAR_SCRAMBLE_ITEMS.length;
   const totalPhonetic = PHONETIC_TRAP_ITEMS.length;
   const totalSynonym = SYNONYM_MATCH_ITEMS.length;
+  const totalUsage = WORD_USAGE_ITEMS.length;
   const totalReply = INSTANT_REPLY_ITEMS.length;
   const totalCloze = PARAGRAPH_CLOZE_PASSAGES.length;
   const totalClozeBlanks = PARAGRAPH_CLOZE_PASSAGES.reduce((acc, p) => acc + p.blanks.length, 0);
@@ -85,6 +92,10 @@ export default function JlptArenaHubPage() {
     selectedLevel === "all" ? totalPhonetic : phoneticCounts[selectedLevel as PhoneticTrapLevel] ?? 0;
   const activeSynonymCount =
     selectedLevel === "all" ? totalSynonym : synonymCounts[selectedLevel.toUpperCase() as "N5"] ?? 0;
+  const activeUsageCount =
+    selectedLevel === "all"
+      ? totalUsage
+      : usageCounts[selectedLevel.toUpperCase() as WordUsageLevel] ?? 0;
   const activeReplyCount =
     selectedLevel === "all" ? totalReply : replyCounts[selectedLevel.toUpperCase() as "N5"] ?? 0;
   const activeClozeCount =
@@ -254,7 +265,7 @@ export default function JlptArenaHubPage() {
                       第1部：文字・語彙 (25分)
                     </div>
                     <div className="mt-0.5 text-[11px] text-[var(--muted)]">
-                      Mondai 1 (漢字読み), Mondai 2 (表記), Mondai 4/5 (言い換え類義)
+                      Mondai 1・2 (漢字読み・表記), Mondai 3 (文脈規定), Mondai 4 (言い換え類義), Mondai 5 (用法)
                     </div>
                   </div>
                   <div className="border-l-2 border-[var(--primary)] pl-2.5">
@@ -270,7 +281,7 @@ export default function JlptArenaHubPage() {
                       第3部：聴解 (30分)
                     </div>
                     <div className="mt-0.5 text-[11px] text-[var(--muted)]">
-                      Mondai 1–2 (課題・ポイント), Mondai 3 (⬇ 発話表現), Mondai 4/5 (即時応答)
+                      Mondai 1・2 (課題・ポイント理解), Mondai 3・4 (発話表現・即時応答)
                     </div>
                   </div>
                 </div>
@@ -343,7 +354,7 @@ export default function JlptArenaHubPage() {
                           : "text-[var(--muted)] hover:text-[var(--ink)]"
                       }`}
                     >
-                      <span>第 1 ページ：言語知識・文法</span>
+                      <span>第 1 ページ：第1部 文字・語彙</span>
                       <span className="rounded-full bg-[var(--sakura-light)] px-1.5 py-0.5 text-[10px] font-black text-[var(--primary-fg)]">
                         4問
                       </span>
@@ -362,7 +373,26 @@ export default function JlptArenaHubPage() {
                           : "text-[var(--muted)] hover:text-[var(--ink)]"
                       }`}
                     >
-                      <span>第 2 ページ：読解・聴解</span>
+                      <span>第 2 ページ：第2部 文法・読解</span>
+                      <span className="rounded-full bg-[var(--sakura-light)] px-1.5 py-0.5 text-[10px] font-black text-[var(--primary-fg)]">
+                        4問
+                      </span>
+                    </button>
+
+                    <button
+                      type="button"
+                      role="tab"
+                      id="booklet-tab-3"
+                      aria-selected={bookletPage === 3}
+                      aria-controls="booklet-page-3-panel"
+                      onClick={() => handleTurnPage(3)}
+                      className={`flex items-center gap-2 rounded-sm px-3.5 py-1.5 font-japanese text-xs font-bold transition-all duration-200 ${
+                        bookletPage === 3
+                          ? "border border-[var(--primary)] bg-[var(--surface)] text-[var(--primary-fg)] shadow-sm"
+                          : "text-[var(--muted)] hover:text-[var(--ink)]"
+                      }`}
+                    >
+                      <span>第 3 ページ：第3部 聴解</span>
                       <span className="rounded-full bg-[var(--sakura-light)] px-1.5 py-0.5 text-[10px] font-black text-[var(--primary-fg)]">
                         2問
                       </span>
@@ -376,13 +406,13 @@ export default function JlptArenaHubPage() {
                     Booklet Page
                   </span>
                   <span className="rounded border border-[var(--ink)]/30 bg-[var(--surface)] px-2.5 py-0.5 font-mono text-xs font-black tracking-wider text-[var(--ink)] shadow-xs">
-                    - {bookletPage} / 2 -
+                    - {bookletPage} / 3 -
                   </span>
                 </div>
               </div>
 
               {/* =====================================================================
-                  PAGE 1: 第1部・第2部前半（言語知識・文法 4種目）
+                  PAGE 1: 第1部：文字・語彙 (4種目)
                   ===================================================================== */}
               {bookletPage === 1 && (
                 <div
@@ -405,7 +435,7 @@ export default function JlptArenaHubPage() {
                     aria-labelledby="drill-phonetic-heading"
                     className="group relative flex flex-col rounded-sm border border-[var(--ink)]/25 bg-[var(--bg)]/20 p-5 transition hover:border-[var(--primary)] sm:p-6"
                   >
-                    {/* Left Margin Section Tab (PDF Style) */}
+                    {/* Left Margin Section Tab */}
                     <div className="mb-3 flex flex-wrap items-center justify-between gap-2 border-b border-[var(--ink)]/15 pb-2.5">
                       <div className="flex items-center gap-2">
                         <span className="rounded-sm bg-[var(--ink)] px-2 py-0.5 font-japanese text-[11px] font-black text-[var(--surface)]">
@@ -464,25 +494,109 @@ export default function JlptArenaHubPage() {
                     </div>
 
                     {/* Action Row */}
-                    <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-[var(--ink)]/10 pt-3">
+                    <div className="mt-4 flex flex-col gap-3 border-t border-[var(--ink)]/10 pt-3 sm:flex-row sm:items-center sm:justify-between">
                       <div className="flex flex-wrap gap-1.5 text-[11px] font-semibold text-[var(--muted)]">
                         <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Counter Rendaku (六本)</span>
                         <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Katakana Traps (シャワー)</span>
                         <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Look-Alike Radicals</span>
                       </div>
 
-                      <Link
-                        href={`/games/jlpt/phonetic-traps?level=${targetLevelQuery}`}
-                        className="ml-auto inline-flex items-center gap-2 rounded-sm bg-[var(--primary)] px-5 py-2 text-xs font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:opacity-95 shrink-0"
-                      >
-                        <span>演習をはじめる / Start Drill</span>
-                        <ArrowRight size={14} aria-hidden="true" />
-                      </Link>
+                      <div className="flex sm:ml-auto justify-end shrink-0">
+                        <Link
+                          href={`/games/jlpt/phonetic-traps?level=${targetLevelQuery}`}
+                          className="inline-flex items-center gap-2 rounded-sm bg-[var(--primary)] px-5 py-2 text-xs font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:opacity-95 shrink-0"
+                        >
+                          <span>演習をはじめる / Start Drill</span>
+                          <ArrowRight size={14} aria-hidden="true" />
+                        </Link>
+                      </div>
                     </div>
                   </section>
 
                   {/* -----------------------------------------------------------------
-                      MONDAI 4 & 5: Synonym Paraphrase Match (言い換え類義)
+                      MONDAI 3: Collocation & Spatial Counter Snap (文脈規定・語形成)
+                      ----------------------------------------------------------------- */}
+                  <section
+                    aria-labelledby="drill-collocation-heading"
+                    className="group relative flex flex-col rounded-sm border border-[var(--ink)]/25 bg-[var(--bg)]/20 p-5 transition hover:border-[var(--primary)] sm:p-6"
+                  >
+                    {/* Left Margin Section Tab */}
+                    <div className="mb-3 flex flex-wrap items-center justify-between gap-2 border-b border-[var(--ink)]/15 pb-2.5">
+                      <div className="flex items-center gap-2">
+                        <span className="rounded-sm bg-[var(--ink)] px-2 py-0.5 font-japanese text-[11px] font-black text-[var(--surface)]">
+                          文字・語彙
+                        </span>
+                        <span className="font-japanese text-xs font-bold text-[var(--muted)]">
+                          もんだい 3
+                        </span>
+                      </div>
+                      <span className="rounded-full bg-[var(--line)] px-2.5 py-0.5 text-[11px] font-bold text-[var(--muted)]">
+                        Exam Archetype Preview
+                      </span>
+                    </div>
+
+                    {/* Official Exam Instruction Header */}
+                    <p className="font-japanese text-xs font-bold leading-relaxed text-[var(--ink)] sm:text-sm">
+                      （　）に入れるのに最もよいものを、1・2・3・4から一つえらんでください。
+                    </p>
+
+                    {/* Drill Title & Description */}
+                    <div className="mt-2.5 flex flex-wrap items-baseline gap-2">
+                      <h2 id="drill-collocation-heading" className="text-base font-bold text-[var(--ink)] sm:text-lg">
+                        Collocation &amp; Spatial Counter Snap (文脈規定・語形成)
+                      </h2>
+                      <span className="text-xs text-[var(--muted)]">
+                        — Context-determined expressions, essential Japanese counters &amp; derivational prefixes
+                      </span>
+                    </div>
+
+                    {/* Live Sample Question Preview (れい Box) */}
+                    <div className="mt-4 rounded-sm border border-dashed border-[var(--ink)]/25 bg-[var(--surface)] p-3.5 sm:p-4">
+                      <div className="text-[11px] font-bold text-[var(--primary-fg)]">
+                        (れい) 例題 · Collocation &amp; Spatial Counters (文脈規定):
+                      </div>
+                      <div className="mt-1 font-japanese text-sm font-semibold text-[var(--ink)]">
+                        新しい会社への【 就職 】が決まり、来月から東京で一人暮らしを始めます。
+                      </div>
+                      <div className="mt-2.5 flex flex-wrap items-center gap-3 font-japanese text-xs text-[var(--muted)]">
+                        <span className="inline-flex items-center gap-1 font-bold text-[var(--primary-fg)]">
+                          <span className="grid size-4 place-items-center rounded-full border border-[var(--primary)] text-[10px]">●</span>
+                          1 就職 (就職が決まる)
+                        </span>
+                        <span className="inline-flex items-center gap-1">
+                          <span className="grid size-4 place-items-center rounded-full border border-[var(--ink)]/30 text-[10px]">2</span>
+                          勤務
+                        </span>
+                        <span className="inline-flex items-center gap-1">
+                          <span className="grid size-4 place-items-center rounded-full border border-[var(--ink)]/30 text-[10px]">3</span>
+                          労働
+                        </span>
+                        <span className="inline-flex items-center gap-1">
+                          <span className="grid size-4 place-items-center rounded-full border border-[var(--ink)]/30 text-[10px]">4</span>
+                          職歴
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Action Row */}
+                    <div className="mt-4 flex flex-col gap-3 border-t border-[var(--ink)]/10 pt-3 sm:flex-row sm:items-center sm:justify-between">
+                      <div className="flex flex-wrap gap-1.5 text-[11px] font-semibold text-[var(--muted)]">
+                        <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Verb-Particle Collocations</span>
+                        <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Essential Counters (冊/台/杯)</span>
+                        <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Compound Prefixes (無/不/非)</span>
+                      </div>
+
+                      <div className="flex sm:ml-auto justify-end shrink-0">
+                        <span className="inline-flex items-center gap-1.5 rounded-sm border border-[var(--ink)]/20 bg-[var(--surface)] px-4 py-2 text-xs font-bold text-[var(--muted)] shadow-2xs">
+                          <Clock size={13} aria-hidden="true" />
+                          <span>次回公開予定 · In Preparation</span>
+                        </span>
+                      </div>
+                    </div>
+                  </section>
+
+                  {/* -----------------------------------------------------------------
+                      MONDAI 4: Synonym Paraphrase Match (言い換え類義)
                       ----------------------------------------------------------------- */}
                   <section
                     aria-labelledby="drill-synonym-heading"
@@ -495,7 +609,7 @@ export default function JlptArenaHubPage() {
                           語彙
                         </span>
                         <span className="font-japanese text-xs font-bold text-[var(--muted)]">
-                          もんだい 4 · 5
+                          もんだい 4
                         </span>
                       </div>
                       <span className="rounded-full bg-[var(--sakura-light)] px-2.5 py-0.5 text-[11px] font-bold text-[var(--primary-fg)]">
@@ -547,20 +661,229 @@ export default function JlptArenaHubPage() {
                     </div>
 
                     {/* Action Row */}
-                    <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-[var(--ink)]/10 pt-3">
+                    <div className="mt-4 flex flex-col gap-3 border-t border-[var(--ink)]/10 pt-3 sm:flex-row sm:items-center sm:justify-between">
                       <div className="flex flex-wrap gap-1.5 text-[11px] font-semibold text-[var(--muted)]">
                         <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Antonym Negative Flips</span>
                         <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Time Expressions</span>
                         <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Japanese-to-Japanese</span>
                       </div>
 
-                      <Link
-                        href={`/games/jlpt/synonym-match?level=${targetLevelQuery}`}
-                        className="ml-auto inline-flex items-center gap-2 rounded-sm bg-[var(--primary)] px-5 py-2 text-xs font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:opacity-95 shrink-0"
-                      >
-                        <span>演習をはじめる / Start Drill</span>
-                        <ArrowRight size={14} aria-hidden="true" />
-                      </Link>
+                      <div className="flex sm:ml-auto justify-end shrink-0">
+                        <Link
+                          href={`/games/jlpt/synonym-match?level=${targetLevelQuery}`}
+                          className="inline-flex items-center gap-2 rounded-sm bg-[var(--primary)] px-5 py-2 text-xs font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:opacity-95 shrink-0"
+                        >
+                          <span>演習をはじめる / Start Drill</span>
+                          <ArrowRight size={14} aria-hidden="true" />
+                        </Link>
+                      </div>
+                    </div>
+                  </section>
+
+                  {/* -----------------------------------------------------------------
+                      MONDAI 5: Word Usage Judge (語彙・用法)
+                      ----------------------------------------------------------------- */}
+                  <section
+                    aria-labelledby="drill-usage-heading"
+                    className="group relative flex flex-col rounded-sm border border-[var(--ink)]/25 bg-[var(--bg)]/20 p-5 transition hover:border-[var(--primary)] sm:p-6"
+                  >
+                    {/* Left Margin Section Tab */}
+                    <div className="mb-3 flex flex-wrap items-center justify-between gap-2 border-b border-[var(--ink)]/15 pb-2.5">
+                      <div className="flex items-center gap-2">
+                        <span className="rounded-sm bg-[var(--ink)] px-2 py-0.5 font-japanese text-[11px] font-black text-[var(--surface)]">
+                          語彙
+                        </span>
+                        <span className="font-japanese text-xs font-bold text-[var(--muted)]">
+                          もんだい 5
+                        </span>
+                      </div>
+                      <span className="rounded-full bg-[var(--sakura-light)] px-2.5 py-0.5 text-[11px] font-bold text-[var(--primary-fg)]">
+                        {activeUsageCount} items in active pool
+                      </span>
+                    </div>
+
+                    {/* Official Exam Instruction Header */}
+                    <p className="font-japanese text-xs font-bold leading-relaxed text-[var(--ink)] sm:text-sm">
+                      ＿＿のことばの使い方として最もよいものを、1・2・3・4から一つえらんでください。
+                    </p>
+
+                    {/* Drill Title & Description */}
+                    <div className="mt-2.5 flex flex-wrap items-baseline gap-2">
+                      <h2 id="drill-usage-heading" className="text-base font-bold text-[var(--ink)] sm:text-lg">
+                        Word Usage Judge (語彙・用法)
+                      </h2>
+                      <span className="text-xs text-[var(--muted)]">
+                        — Authentic lexical context, grammatical collocation &amp; semantic nuance judgement
+                      </span>
+                    </div>
+
+                    {/* Live Sample Question Preview (れい Box) */}
+                    <div className="mt-4 rounded-sm border border-dashed border-[var(--ink)]/25 bg-[var(--surface)] p-3.5 sm:p-4">
+                      <div className="text-[11px] font-bold text-[var(--primary-fg)]">
+                        (れい) 例題 · Word Usage Distinction (用法):
+                      </div>
+                      <div className="mt-1 font-japanese text-sm font-semibold text-[var(--ink)]">
+                        【予防】 インフルエンザの感染を【予防】するために、外出後は手洗いとうがいを徹底しています。
+                      </div>
+                      <div className="mt-2.5 flex flex-wrap items-center gap-3 font-japanese text-xs text-[var(--muted)]">
+                        <span className="inline-flex items-center gap-1 font-bold text-[var(--primary-fg)]">
+                          <span className="grid size-4 place-items-center rounded-full border border-[var(--primary)] text-[10px]">●</span>
+                          1 感染を予防する
+                        </span>
+                        <span className="inline-flex items-center gap-1">
+                          <span className="grid size-4 place-items-center rounded-full border border-[var(--ink)]/30 text-[10px]">2</span>
+                          旅行の予防 (×計画)
+                        </span>
+                        <span className="inline-flex items-center gap-1">
+                          <span className="grid size-4 place-items-center rounded-full border border-[var(--ink)]/30 text-[10px]">3</span>
+                          自分の予防 (×意見)
+                        </span>
+                        <span className="inline-flex items-center gap-1">
+                          <span className="grid size-4 place-items-center rounded-full border border-[var(--ink)]/30 text-[10px]">4</span>
+                          雨を予防した (×防いだ)
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Action Row */}
+                    <div className="mt-4 flex flex-col gap-3 border-t border-[var(--ink)]/10 pt-3 sm:flex-row sm:items-center sm:justify-between">
+                      <div className="flex flex-wrap gap-1.5 text-[11px] font-semibold text-[var(--muted)]">
+                        <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Collocation Constraints</span>
+                        <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Semantic Nuances</span>
+                        <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">100 Curated N4–N1 Items</span>
+                      </div>
+
+                      <div className="flex sm:ml-auto justify-end shrink-0">
+                        <Link
+                          href={`/games/jlpt/word-usage?level=${targetLevelQuery}`}
+                          className="inline-flex items-center gap-2 rounded-sm bg-[var(--primary)] px-5 py-2 text-xs font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:opacity-95 shrink-0"
+                        >
+                          <span>演習をはじめる / Start Drill</span>
+                          <ArrowRight size={14} aria-hidden="true" />
+                        </Link>
+                      </div>
+                    </div>
+                  </section>
+
+                  {/* Page 1 Bottom Navigation Bar */}
+                  <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t-2 border-[var(--ink)]/20 pt-6 sm:flex-row">
+                    <div className="flex items-center gap-2">
+                      <span className="font-mono text-base font-black tracking-widest text-[var(--ink)]">
+                        — 1 —
+                      </span>
+                      <span className="font-japanese text-xs font-medium text-[var(--muted)]">
+                        （第 1 ページ：第1部 文字・語彙 終了）
+                      </span>
+                    </div>
+
+                    <button
+                      type="button"
+                      onClick={() => handleTurnPage(2)}
+                      className="group ml-auto inline-flex items-center gap-2.5 rounded-sm border-2 border-[var(--primary)] bg-[var(--surface)] px-5 py-2.5 font-japanese text-xs font-bold text-[var(--primary-fg)] shadow-[0_3px_12px_rgba(208,16,76,0.16)] transition-all hover:bg-[var(--sakura-light)] hover:-translate-y-0.5 active:translate-y-0"
+                    >
+                      <span>次ページにつづく · Turn to Page 2 (文法・読解)</span>
+                      <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              {/* =====================================================================
+                  PAGE 2: 第2部：文法・読解 (4種目)
+                  ===================================================================== */}
+              {bookletPage === 2 && (
+                <div
+                  key={`booklet-page-2-${animKey}`}
+                  id="booklet-page-2-panel"
+                  role="tabpanel"
+                  aria-labelledby="booklet-tab-2"
+                  className={`space-y-8 ${
+                    pageTurnAnim === "prev"
+                      ? "animate-exam-sheet-prev"
+                      : pageTurnAnim === "next"
+                      ? "animate-exam-sheet-next"
+                      : ""
+                  }`}
+                >
+                  {/* -----------------------------------------------------------------
+                      MONDAI 1: Sentence Grammar Cloze (文の文法１ 文法形式判断)
+                      ----------------------------------------------------------------- */}
+                  <section
+                    aria-labelledby="drill-form-cloze-heading"
+                    className="group relative flex flex-col rounded-sm border border-[var(--ink)]/25 bg-[var(--bg)]/20 p-5 transition hover:border-[var(--primary)] sm:p-6"
+                  >
+                    {/* Left Margin Section Tab */}
+                    <div className="mb-3 flex flex-wrap items-center justify-between gap-2 border-b border-[var(--ink)]/15 pb-2.5">
+                      <div className="flex items-center gap-2">
+                        <span className="rounded-sm bg-[var(--ink)] px-2 py-0.5 font-japanese text-[11px] font-black text-[var(--surface)]">
+                          文法
+                        </span>
+                        <span className="font-japanese text-xs font-bold text-[var(--muted)]">
+                          もんだい 1
+                        </span>
+                      </div>
+                      <span className="rounded-full bg-[var(--line)] px-2.5 py-0.5 text-[11px] font-bold text-[var(--muted)]">
+                        Exam Archetype Preview
+                      </span>
+                    </div>
+
+                    {/* Official Exam Instruction Header */}
+                    <p className="font-japanese text-xs font-bold leading-relaxed text-[var(--ink)] sm:text-sm">
+                      次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらんでください。
+                    </p>
+
+                    {/* Drill Title & Description */}
+                    <div className="mt-2.5 flex flex-wrap items-baseline gap-2">
+                      <h2 id="drill-form-cloze-heading" className="text-base font-bold text-[var(--ink)] sm:text-lg">
+                        Sentence Grammar Cloze (文の文法１ 文法形式判断)
+                      </h2>
+                      <span className="text-xs text-[var(--muted)]">
+                        — Functional grammar forms, particle nuances, conjunctive clauses &amp; polite keigo
+                      </span>
+                    </div>
+
+                    {/* Live Sample Question Preview (れい Box) */}
+                    <div className="mt-4 rounded-sm border border-dashed border-[var(--ink)]/25 bg-[var(--surface)] p-3.5 sm:p-4">
+                      <div className="text-[11px] font-bold text-[var(--primary-fg)]">
+                        (れい) 例題 · Functional Grammar Form (文法形式):
+                      </div>
+                      <div className="mt-1 font-japanese text-sm font-semibold text-[var(--ink)]">
+                        この道は車が多くて危険だから、子どもを一人で歩かせる（ わけにはいかない ）。
+                      </div>
+                      <div className="mt-2.5 flex flex-wrap items-center gap-3 font-japanese text-xs text-[var(--muted)]">
+                        <span className="inline-flex items-center gap-1 font-bold text-[var(--primary-fg)]">
+                          <span className="grid size-4 place-items-center rounded-full border border-[var(--primary)] text-[10px]">●</span>
+                          1 わけにはいかない
+                        </span>
+                        <span className="inline-flex items-center gap-1">
+                          <span className="grid size-4 place-items-center rounded-full border border-[var(--ink)]/30 text-[10px]">2</span>
+                          はずがない
+                        </span>
+                        <span className="inline-flex items-center gap-1">
+                          <span className="grid size-4 place-items-center rounded-full border border-[var(--ink)]/30 text-[10px]">3</span>
+                          ほかない
+                        </span>
+                        <span className="inline-flex items-center gap-1">
+                          <span className="grid size-4 place-items-center rounded-full border border-[var(--ink)]/30 text-[10px]">4</span>
+                          にすぎない
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Action Row */}
+                    <div className="mt-4 flex flex-col gap-3 border-t border-[var(--ink)]/10 pt-3 sm:flex-row sm:items-center sm:justify-between">
+                      <div className="flex flex-wrap gap-1.5 text-[11px] font-semibold text-[var(--muted)]">
+                        <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Conjunctive Structures (〜て以来)</span>
+                        <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Modality Patterns (〜はずだ)</span>
+                        <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Keigo Honorific Levels</span>
+                      </div>
+
+                      <div className="flex sm:ml-auto justify-end shrink-0">
+                        <span className="inline-flex items-center gap-1.5 rounded-sm border border-[var(--ink)]/20 bg-[var(--surface)] px-4 py-2 text-xs font-bold text-[var(--muted)] shadow-2xs">
+                          <Clock size={13} aria-hidden="true" />
+                          <span>次回公開予定 · In Preparation</span>
+                        </span>
+                      </div>
                     </div>
                   </section>
 
@@ -625,20 +948,22 @@ export default function JlptArenaHubPage() {
                     </div>
 
                     {/* Action Row */}
-                    <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-[var(--ink)]/10 pt-3">
+                    <div className="mt-4 flex flex-col gap-3 border-t border-[var(--ink)]/10 pt-3 sm:flex-row sm:items-center sm:justify-between">
                       <div className="flex flex-wrap gap-1.5 text-[11px] font-semibold text-[var(--muted)]">
                         <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Dual Star &amp; Full-Order Scoring</span>
                         <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Particle Syntax</span>
                         <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Exam Mode (No Hints)</span>
                       </div>
 
-                      <Link
-                        href={`/games/jlpt/star-scramble?level=${targetLevelQuery}`}
-                        className="ml-auto inline-flex items-center gap-2 rounded-sm bg-[var(--primary)] px-5 py-2 text-xs font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:opacity-95 shrink-0"
-                      >
-                        <span>演習をはじめる / Start Drill</span>
-                        <ArrowRight size={14} aria-hidden="true" />
-                      </Link>
+                      <div className="flex sm:ml-auto justify-end shrink-0">
+                        <Link
+                          href={`/games/jlpt/star-scramble?level=${targetLevelQuery}`}
+                          className="inline-flex items-center gap-2 rounded-sm bg-[var(--primary)] px-5 py-2 text-xs font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:opacity-95 shrink-0"
+                        >
+                          <span>演習をはじめる / Start Drill</span>
+                          <ArrowRight size={14} aria-hidden="true" />
+                        </Link>
+                      </div>
                     </div>
                   </section>
 
@@ -708,7 +1033,7 @@ export default function JlptArenaHubPage() {
                     </div>
 
                     {/* Action Row */}
-                    <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-[var(--ink)]/10 pt-3">
+                    <div className="mt-4 flex flex-col gap-3 border-t border-[var(--ink)]/10 pt-3 sm:flex-row sm:items-center sm:justify-between">
                       <div className="flex flex-wrap gap-1.5 text-[11px] font-semibold text-[var(--muted)]">
                         <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Conjunctions (だから/しかし)</span>
                         <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Deixis (来てから)</span>
@@ -717,56 +1042,18 @@ export default function JlptArenaHubPage() {
                         <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Narrator Bar</span>
                       </div>
 
-                      <Link
-                        href={`/games/jlpt/paragraph-cloze?level=${targetLevelQuery}`}
-                        className="ml-auto inline-flex items-center gap-2 rounded-sm bg-[var(--primary)] px-5 py-2 text-xs font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:opacity-95 shrink-0"
-                      >
-                        <span>演習をはじめる / Start Drill</span>
-                        <ArrowRight size={14} aria-hidden="true" />
-                      </Link>
+                      <div className="flex sm:ml-auto justify-end shrink-0">
+                        <Link
+                          href={`/games/jlpt/paragraph-cloze?level=${targetLevelQuery}`}
+                          className="inline-flex items-center gap-2 rounded-sm bg-[var(--primary)] px-5 py-2 text-xs font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:opacity-95 shrink-0"
+                        >
+                          <span>演習をはじめる / Start Drill</span>
+                          <ArrowRight size={14} aria-hidden="true" />
+                        </Link>
+                      </div>
                     </div>
                   </section>
 
-                  {/* Page 1 Bottom Navigation Bar */}
-                  <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t-2 border-[var(--ink)]/20 pt-6 sm:flex-row">
-                    <div className="flex items-center gap-2">
-                      <span className="font-mono text-base font-black tracking-widest text-[var(--ink)]">
-                        — 1 —
-                      </span>
-                      <span className="font-japanese text-xs font-medium text-[var(--muted)]">
-                        （第 1 ページ：言語知識・文法 終了）
-                      </span>
-                    </div>
-
-                    <button
-                      type="button"
-                      onClick={() => handleTurnPage(2)}
-                      className="group ml-auto inline-flex items-center gap-2.5 rounded-sm border-2 border-[var(--primary)] bg-[var(--surface)] px-5 py-2.5 font-japanese text-xs font-bold text-[var(--primary-fg)] shadow-[0_3px_12px_rgba(208,16,76,0.16)] transition-all hover:bg-[var(--sakura-light)] hover:-translate-y-0.5 active:translate-y-0"
-                    >
-                      <span>次ページにつづく · Turn to Page 2 (読解・聴解)</span>
-                      <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" aria-hidden="true" />
-                    </button>
-                  </div>
-                </div>
-              )}
-
-              {/* =====================================================================
-                  PAGE 2: 第2部後半・第3部（読解・聴解 2種目）
-                  ===================================================================== */}
-              {bookletPage === 2 && (
-                <div
-                  key={`booklet-page-2-${animKey}`}
-                  id="booklet-page-2-panel"
-                  role="tabpanel"
-                  aria-labelledby="booklet-tab-2"
-                  className={`space-y-8 ${
-                    pageTurnAnim === "prev"
-                      ? "animate-exam-sheet-prev"
-                      : pageTurnAnim === "next"
-                      ? "animate-exam-sheet-next"
-                      : ""
-                  }`}
-                >
                   {/* -----------------------------------------------------------------
                       MONDAI 4–6: Real-World Info Scanner (情報検索 スピード検索)
                       ----------------------------------------------------------------- */}
@@ -836,7 +1123,7 @@ export default function JlptArenaHubPage() {
                     </div>
 
                     {/* Action Row */}
-                    <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-[var(--ink)]/10 pt-3">
+                    <div className="mt-4 flex flex-col gap-3 border-t border-[var(--ink)]/10 pt-3 sm:flex-row sm:items-center sm:justify-between">
                       <div className="flex flex-wrap gap-1.5 text-[11px] font-semibold text-[var(--muted)]">
                         <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Store Flyers (チラシ)</span>
                         <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Desk Memos (伝言メモ)</span>
@@ -845,13 +1132,146 @@ export default function JlptArenaHubPage() {
                         <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Matcha Evidence Glow</span>
                       </div>
 
-                      <Link
-                        href={`/games/jlpt/info-scanner?level=${targetLevelQuery}`}
-                        className="ml-auto inline-flex items-center gap-2 rounded-sm bg-[var(--primary)] px-5 py-2 text-xs font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:opacity-95 shrink-0"
-                      >
-                        <span>演習をはじめる / Start Drill</span>
-                        <ArrowRight size={14} aria-hidden="true" />
-                      </Link>
+                      <div className="flex sm:ml-auto justify-end shrink-0">
+                        <Link
+                          href={`/games/jlpt/info-scanner?level=${targetLevelQuery}`}
+                          className="inline-flex items-center gap-2 rounded-sm bg-[var(--primary)] px-5 py-2 text-xs font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:opacity-95 shrink-0"
+                        >
+                          <span>演習をはじめる / Start Drill</span>
+                          <ArrowRight size={14} aria-hidden="true" />
+                        </Link>
+                      </div>
+                    </div>
+                  </section>
+
+                  {/* Page 2 Bottom Navigation Bar */}
+                  <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t-2 border-[var(--ink)]/20 pt-6 sm:flex-row">
+                    <button
+                      type="button"
+                      onClick={() => handleTurnPage(1)}
+                      className="group inline-flex items-center gap-2.5 rounded-sm border-2 border-[var(--ink)]/30 bg-[var(--surface)] px-5 py-2.5 font-japanese text-xs font-bold text-[var(--ink)] shadow-xs transition-all hover:border-[var(--ink)] hover:-translate-y-0.5 active:translate-y-0"
+                    >
+                      <ArrowLeft size={15} className="transition-transform group-hover:-translate-x-1" aria-hidden="true" />
+                      <span>前のページへ戻る · Return to Page 1 (文字・語彙)</span>
+                    </button>
+
+                    <div className="flex items-center gap-2">
+                      <span className="font-mono text-base font-black tracking-widest text-[var(--ink)]">
+                        — 2 —
+                      </span>
+                      <span className="font-japanese text-xs font-medium text-[var(--muted)]">
+                        （第 2 ページ：第2部 文法・読解 終了）
+                      </span>
+                    </div>
+
+                    <button
+                      type="button"
+                      onClick={() => handleTurnPage(3)}
+                      className="group inline-flex items-center gap-2.5 rounded-sm border-2 border-[var(--primary)] bg-[var(--surface)] px-5 py-2.5 font-japanese text-xs font-bold text-[var(--primary-fg)] shadow-[0_3px_12px_rgba(208,16,76,0.16)] transition-all hover:bg-[var(--sakura-light)] hover:-translate-y-0.5 active:translate-y-0"
+                    >
+                      <span>次ページにつづく · Turn to Page 3 (聴解)</span>
+                      <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              {/* =====================================================================
+                  PAGE 3: 第3部：聴解 (2種目)
+                  ===================================================================== */}
+              {bookletPage === 3 && (
+                <div
+                  key={`booklet-page-3-${animKey}`}
+                  id="booklet-page-3-panel"
+                  role="tabpanel"
+                  aria-labelledby="booklet-tab-3"
+                  className={`space-y-8 ${
+                    pageTurnAnim === "prev"
+                      ? "animate-exam-sheet-prev"
+                      : pageTurnAnim === "next"
+                      ? "animate-exam-sheet-next"
+                      : ""
+                  }`}
+                >
+                  {/* -----------------------------------------------------------------
+                      MONDAI 1 & 2: Audio Detail / Preview Sniper (課題理解・ポイント理解)
+                      ----------------------------------------------------------------- */}
+                  <section
+                    aria-labelledby="drill-audio-detail-heading"
+                    className="group relative flex flex-col rounded-sm border border-[var(--ink)]/25 bg-[var(--bg)]/20 p-5 transition hover:border-[var(--primary)] sm:p-6"
+                  >
+                    {/* Left Margin Section Tab */}
+                    <div className="mb-3 flex flex-wrap items-center justify-between gap-2 border-b border-[var(--ink)]/15 pb-2.5">
+                      <div className="flex items-center gap-2">
+                        <span className="rounded-sm bg-[var(--ink)] px-2 py-0.5 font-japanese text-[11px] font-black text-[var(--surface)]">
+                          聴解
+                        </span>
+                        <span className="font-japanese text-xs font-bold text-[var(--muted)]">
+                          もんだい 1 · 2
+                        </span>
+                      </div>
+                      <span className="rounded-full bg-[var(--line)] px-2.5 py-0.5 text-[11px] font-bold text-[var(--muted)]">
+                        Exam Archetype Preview
+                      </span>
+                    </div>
+
+                    {/* Official Exam Instruction Header */}
+                    <p className="font-japanese text-xs font-bold leading-relaxed text-[var(--ink)] sm:text-sm">
+                      はじめに質問を聞いてください。それから話を聞いて、問題用紙の1から4の中からいちばんいいものを一つ選んでください。
+                    </p>
+
+                    {/* Drill Title & Description */}
+                    <div className="mt-2.5 flex flex-wrap items-baseline gap-2">
+                      <h2 id="drill-audio-detail-heading" className="text-base font-bold text-[var(--ink)] sm:text-lg">
+                        Audio Detail / Preview Sniper (課題理解・ポイント理解)
+                      </h2>
+                      <span className="text-xs text-[var(--muted)]">
+                        — Task-based goal identification, visual flyer cues &amp; first-action distractor filters
+                      </span>
+                    </div>
+
+                    {/* Live Sample Question Preview (れい Box) */}
+                    <div className="mt-4 rounded-sm border border-dashed border-[var(--ink)]/25 bg-[var(--surface)] p-3.5 sm:p-4">
+                      <div className="text-[11px] font-bold text-[var(--primary-fg)]">
+                        (れい) 例題 · Task-Based Listening Comprehension (課題理解):
+                      </div>
+                      <div className="mt-1 font-japanese text-sm font-semibold text-[var(--ink)]">
+                        質問：男の人はこのあと、まず何をしなければなりませんか。
+                      </div>
+                      <div className="mt-2.5 flex flex-wrap items-center gap-3 font-japanese text-xs text-[var(--muted)]">
+                        <span className="inline-flex items-center gap-1 font-bold text-[var(--primary-fg)]">
+                          <span className="grid size-4 place-items-center rounded-full border border-[var(--primary)] text-[10px]">●</span>
+                          1 会議室の鍵を開ける
+                        </span>
+                        <span className="inline-flex items-center gap-1">
+                          <span className="grid size-4 place-items-center rounded-full border border-[var(--ink)]/30 text-[10px]">2</span>
+                          資料をコピーする
+                        </span>
+                        <span className="inline-flex items-center gap-1">
+                          <span className="grid size-4 place-items-center rounded-full border border-[var(--ink)]/30 text-[10px]">3</span>
+                          お客さんに電話する
+                        </span>
+                        <span className="inline-flex items-center gap-1">
+                          <span className="grid size-4 place-items-center rounded-full border border-[var(--ink)]/30 text-[10px]">4</span>
+                          プロジェクターを運ぶ
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Action Row */}
+                    <div className="mt-4 flex flex-col gap-3 border-t border-[var(--ink)]/10 pt-3 sm:flex-row sm:items-center sm:justify-between">
+                      <div className="flex flex-wrap gap-1.5 text-[11px] font-semibold text-[var(--muted)]">
+                        <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Pre-Listening Cue Scan</span>
+                        <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">First-Action Filters (まず)</span>
+                        <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Temporal Sequence Traps</span>
+                      </div>
+
+                      <div className="flex sm:ml-auto justify-end shrink-0">
+                        <span className="inline-flex items-center gap-1.5 rounded-sm border border-[var(--ink)]/20 bg-[var(--surface)] px-4 py-2 text-xs font-bold text-[var(--muted)] shadow-2xs">
+                          <Clock size={13} aria-hidden="true" />
+                          <span>次回公開予定 · In Preparation</span>
+                        </span>
+                      </div>
                     </div>
                   </section>
 
@@ -869,7 +1289,7 @@ export default function JlptArenaHubPage() {
                           聴解
                         </span>
                         <span className="font-japanese text-xs font-bold text-[var(--muted)]">
-                          もんだい 3 · 4/5
+                          もんだい 3 · 4
                         </span>
                       </div>
                       <span className="rounded-full bg-[var(--sakura-light)] px-2.5 py-0.5 text-[11px] font-bold text-[var(--primary-fg)]">
@@ -917,45 +1337,47 @@ export default function JlptArenaHubPage() {
                     </div>
 
                     {/* Action Row */}
-                    <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-[var(--ink)]/10 pt-3">
+                    <div className="mt-4 flex flex-col gap-3 border-t border-[var(--ink)]/10 pt-3 sm:flex-row sm:items-center sm:justify-between">
                       <div className="flex flex-wrap gap-1.5 text-[11px] font-semibold text-[var(--muted)]">
                         <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Mondai 3 ⬇ You (発話表現)</span>
                         <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">8s Exam Reflex Timer</span>
                         <span className="rounded bg-[var(--surface)] px-2 py-0.5 border border-[var(--line)]">Keigo Diagnostics</span>
                       </div>
 
-                      <Link
-                        href={`/games/jlpt/instant-reply?level=${targetLevelQuery}`}
-                        className="ml-auto inline-flex items-center gap-2 rounded-sm bg-[var(--primary)] px-5 py-2 text-xs font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:opacity-95 shrink-0"
-                      >
-                        <span>演習をはじめる / Start Drill</span>
-                        <ArrowRight size={14} aria-hidden="true" />
-                      </Link>
+                      <div className="flex sm:ml-auto justify-end shrink-0">
+                        <Link
+                          href={`/games/jlpt/instant-reply?level=${targetLevelQuery}`}
+                          className="inline-flex items-center gap-2 rounded-sm bg-[var(--primary)] px-5 py-2 text-xs font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:opacity-95 shrink-0"
+                        >
+                          <span>演習をはじめる / Start Drill</span>
+                          <ArrowRight size={14} aria-hidden="true" />
+                        </Link>
+                      </div>
                     </div>
                   </section>
 
-                  {/* Page 2 Bottom Navigation Bar */}
+                  {/* Page 3 Bottom Navigation Bar */}
                   <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t-2 border-[var(--ink)]/20 pt-6 sm:flex-row">
                     <button
                       type="button"
-                      onClick={() => handleTurnPage(1)}
+                      onClick={() => handleTurnPage(2)}
                       className="group inline-flex items-center gap-2.5 rounded-sm border-2 border-[var(--ink)]/30 bg-[var(--surface)] px-5 py-2.5 font-japanese text-xs font-bold text-[var(--ink)] shadow-xs transition-all hover:border-[var(--ink)] hover:-translate-y-0.5 active:translate-y-0"
                     >
                       <ArrowLeft size={15} className="transition-transform group-hover:-translate-x-1" aria-hidden="true" />
-                      <span>前のページへ戻る · Return to Page 1 (言語知識・文法)</span>
+                      <span>前のページへ戻る · Return to Page 2 (文法・読解)</span>
                     </button>
 
                     <div className="flex flex-col items-center gap-1 sm:items-end">
                       <div className="flex items-center gap-2">
                         <span className="font-mono text-base font-black tracking-widest text-[var(--ink)]">
-                          — 2 —
+                          — 3 —
                         </span>
                         <span className="font-japanese text-xs font-extrabold text-[var(--primary-fg)]">
                           【 問題は これで 全部 終わりです 】
                         </span>
                       </div>
                       <span className="text-[11px] text-[var(--muted)]">
-                        Official Examination Archetypes Complete · All 6 Mondai Drills Ready
+                        Official Examination Archetypes Complete · All 3 Sections Ready
                       </span>
                     </div>
                   </div>
