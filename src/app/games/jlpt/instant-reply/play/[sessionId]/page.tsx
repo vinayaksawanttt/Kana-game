@@ -240,6 +240,7 @@ export default function InstantReplyPlayPage() {
       "prompt",
       0.75,
       timerActive ? "timer-running" : "idle",
+      `${currentQuestion.id}:prompt`,
     );
   }, [currentQuestion, playSingleLine, timerActive]);
 
@@ -406,6 +407,8 @@ export default function InstantReplyPlayPage() {
                       currentQuestion.promptReading,
                       "prompt",
                       0.96,
+                      timerActive ? "timer-running" : "idle",
+                      `${currentQuestion.id}:prompt`,
                     )
                   }
                   aria-label="Play Speaker A prompt"
@@ -532,6 +535,7 @@ export default function InstantReplyPlayPage() {
                           stageKey,
                           1.0,
                           timerActive ? "timer-running" : "idle",
+                          `${currentQuestion.id}:${opt.id || `opt-${opt.optionNumber}`}`,
                         );
                       }}
                       className="inline-flex items-center gap-1 rounded-full border border-[var(--line)] bg-[var(--bg)] px-2.5 py-1 text-[11px] font-bold text-[var(--muted)] transition hover:border-[var(--primary)] hover:text-[var(--primary-fg)]"

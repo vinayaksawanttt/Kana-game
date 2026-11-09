@@ -66,6 +66,7 @@ export function useInstantReplyAudio() {
       reading: string,
       rate: number,
       expectedRunId: number,
+      audioId?: string,
     ): Promise<boolean> => {
       return new Promise((resolve) => {
         if (runIdRef.current !== expectedRunId) {
@@ -74,7 +75,7 @@ export function useInstantReplyAudio() {
         }
 
         // Trigger the core offline-first Japanese audio hook (handles static clips, mora stitching, or TTS)
-        playSentence(text, undefined, { reading, rate });
+        playSentence(text, audioId, { reading, rate });
 
         const duration = estimateSpeechDurationMs(reading || text, rate);
         const timer = setTimeout(() => {
@@ -99,6 +100,7 @@ export function useInstantReplyAudio() {
         question.promptReading,
         0.96,
         currentRunId,
+        `${question.id}:prompt`,
       );
       if (!okPrompt || runIdRef.current !== currentRunId) return;
 
@@ -114,6 +116,7 @@ export function useInstantReplyAudio() {
         opt0.reading,
         1.0,
         currentRunId,
+        `${question.id}:${opt0.id || "opt-1"}`,
       );
       if (!okOpt0 || runIdRef.current !== currentRunId) return;
 
@@ -129,6 +132,7 @@ export function useInstantReplyAudio() {
         opt1.reading,
         1.0,
         currentRunId,
+        `${question.id}:${opt1.id || "opt-2"}`,
       );
       if (!okOpt1 || runIdRef.current !== currentRunId) return;
 
@@ -144,6 +148,7 @@ export function useInstantReplyAudio() {
         opt2.reading,
         1.0,
         currentRunId,
+        `${question.id}:${opt2.id || "opt-3"}`,
       );
       if (!okOpt2 || runIdRef.current !== currentRunId) return;
 
@@ -162,13 +167,14 @@ export function useInstantReplyAudio() {
       stage: InstantReplyAudioStage,
       rate = 0.96,
       restoreStage: InstantReplyAudioStage = "timer-running",
+      audioId?: string,
     ) => {
       cancelSequence(stage);
       const currentRunId = runIdRef.current;
       setIsPlaying(true);
       setActiveStage(stage);
 
-      const ok = await speakSegmentAsync(text, reading, rate, currentRunId);
+      const ok = await speakSegmentAsync(text, reading, rate, currentRunId, audioId);
       if (!ok || runIdRef.current !== currentRunId) return;
 
       setIsPlaying(false);

@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
+import { resolveSentenceAudio } from "@/engine/audio";
 import {
   INSTANT_REPLY_ITEMS,
   createInstantReplySession,
@@ -65,6 +66,42 @@ describe("JLPT Game 3: Instant Reply Blitz (即時応答) Engine & Dataset", () 
           }
         }
       }
+    });
+
+    it("ensures all 170 prompts and 510 options resolve static audio files that exist on disk", () => {
+      let totalPromptsResolved = 0;
+      let totalOptionsResolved = 0;
+
+      for (const item of INSTANT_REPLY_ITEMS) {
+        // 1. Prompt audio resolution
+        const promptPayload = resolveSentenceAudio(item.promptJa, `${item.id}:prompt`);
+        expect(promptPayload.staticSrc).toBeTruthy();
+        const promptFilePath = path.resolve(
+          process.cwd(),
+          "public",
+          (promptPayload.staticSrc ?? "").replace(/^\//, "")
+        );
+        expect(fs.existsSync(promptFilePath), `Missing prompt audio: ${promptFilePath}`).toBe(true);
+        expect(fs.statSync(promptFilePath).size).toBeGreaterThan(100);
+        totalPromptsResolved++;
+
+        // 2. Options audio resolution
+        for (const opt of item.options) {
+          const optPayload = resolveSentenceAudio(opt.ja, `${item.id}:${opt.id}`);
+          expect(optPayload.staticSrc).toBeTruthy();
+          const optFilePath = path.resolve(
+            process.cwd(),
+            "public",
+            (optPayload.staticSrc ?? "").replace(/^\//, "")
+          );
+          expect(fs.existsSync(optFilePath), `Missing option audio: ${optFilePath}`).toBe(true);
+          expect(fs.statSync(optFilePath).size).toBeGreaterThan(100);
+          totalOptionsResolved++;
+        }
+      }
+
+      expect(totalPromptsResolved).toBe(170);
+      expect(totalOptionsResolved).toBe(510);
     });
   });
 

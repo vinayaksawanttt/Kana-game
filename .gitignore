@@ -40,6 +40,12 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
 # personal-use demo font files
 **/HelveticaNow*.ttf
 **/HelveticaNow*.otf

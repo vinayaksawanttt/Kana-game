@@ -31,6 +31,7 @@
         "build:audio:kanji": "tsx scripts/build-kanji-audio.ts",
         "build:audio:vocab": "tsx scripts/build-vocab-audio.ts",
         "build:audio:stories": "tsx scripts/build-story-audio.ts",
+        "build:audio:instant-reply": "tsx scripts/build-instant-reply-audio.ts",
         "build:reverse-prompts": "tsx scripts/build-reverse-srs-prompts.ts",
         "build:manifest": "tsx scripts/build-data-manifest.ts",
         "build:sw": "tsx scripts/build-sw.ts",
