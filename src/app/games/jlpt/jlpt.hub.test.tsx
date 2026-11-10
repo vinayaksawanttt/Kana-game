@@ -132,10 +132,11 @@ describe("JLPT Question Booklet Hub (/games/jlpt)", () => {
       screen.getByText(/ぶんをきいて、1から3のなかから いちばんいいものを一つえらんでください。/i),
     ).toBeTruthy();
 
-    // Page 3 live drill link: Instant Reply
+    // Page 3 live drill links: Listening Scenes & Instant Reply
     const p3Links = screen.getAllByRole("link", { name: /演習をはじめる \/ Start Drill/i });
-    expect(p3Links).toHaveLength(1);
-    expect(p3Links[0].getAttribute("href")).toContain("/games/jlpt/instant-reply?level=n5");
+    expect(p3Links).toHaveLength(2);
+    expect(p3Links[0].getAttribute("href")).toContain("/games/jlpt/listening-scenes?level=n5");
+    expect(p3Links[1].getAttribute("href")).toContain("/games/jlpt/instant-reply?level=n5");
 
     // Turn back to Page 2 using "前のページへ戻る" button
     const turnToP2BackBtn = screen.getByRole("button", { name: /前のページへ戻る · Return to Page 2/i });
@@ -187,7 +188,8 @@ describe("JLPT Question Booklet Hub (/games/jlpt)", () => {
 
     // Page 3 drill links reflect n3
     const p3Links = screen.getAllByRole("link", { name: /演習をはじめる \/ Start Drill/i });
-    expect(p3Links).toHaveLength(1);
-    expect(p3Links[0].getAttribute("href")).toContain("/games/jlpt/instant-reply?level=n3");
+    expect(p3Links).toHaveLength(2);
+    expect(p3Links[0].getAttribute("href")).toContain("/games/jlpt/listening-scenes?level=n3");
+    expect(p3Links[1].getAttribute("href")).toContain("/games/jlpt/instant-reply?level=n3");
   });
 });

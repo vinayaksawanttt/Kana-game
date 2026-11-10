@@ -2,7 +2,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import ListeningSetupPage from "./page";
 import ListeningPlayPage from "./play/[sessionId]/page";
-import ListeningResultPage, { ListeningResultContent } from "./result/[sessionId]/page";
+import ListeningResultPage from "./result/[sessionId]/page";
 import { createListeningSession, summarizeListeningSession } from "@/engine/listening";
 import { saveGameResult, saveGameSession } from "@/lib/game-core/storage";
 

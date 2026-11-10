@@ -1,0 +1,820 @@
+[
+  {
+    "id": "n3-scene-errands-before-movie",
+    "jlpt": 3,
+    "mondaiType": "mondai-1-task",
+    "titleJa": "出かける前の用事（映画と郵便局）",
+    "titleEn": "Errands Before Going Out",
+    "imagePromptDescription": "A simple neighborhood map from a home entrance showing four distinct destinations with clear Japanese labels and numbered markers: 1 郵便局 (post office), 2 本屋 (bookstore), 3 映画館 (movie theater), and 4 レストラン (restaurant). Show a train station near the post office and a route to the movie theater. Keep all four destinations easy to distinguish and do not add other numbered destinations.",
+    "recommendedAssetPath": "/images/jlpt-scenes/n3/Neighbourhood Errand Map Adventure.png",
+    "visualObjects": [
+      {
+        "id": "opt-1",
+        "optionNumber": 1,
+        "labelJa": "1番（郵便局）",
+        "labelEn": "1 (post office)",
+        "attributes": {
+          "targetAction": "drop off a parcel",
+          "location": "post office"
+        },
+        "coordinates": {
+          "xPercent": 20,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-2",
+        "optionNumber": 2,
+        "labelJa": "2番（本屋）",
+        "labelEn": "2 (bookstore)",
+        "attributes": {
+          "targetAction": "visit the bookstore",
+          "location": "bookstore"
+        },
+        "coordinates": {
+          "xPercent": 40,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-3",
+        "optionNumber": 3,
+        "labelJa": "3番（映画館）",
+        "labelEn": "3 (movie theater)",
+        "attributes": {
+          "targetAction": "watch a movie",
+          "location": "movie theater"
+        },
+        "coordinates": {
+          "xPercent": 60,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-4",
+        "optionNumber": 4,
+        "labelJa": "4番（レストラン）",
+        "labelEn": "4 (restaurant)",
+        "attributes": {
+          "targetAction": "eat a meal",
+          "location": "restaurant"
+        },
+        "coordinates": {
+          "xPercent": 80,
+          "yPercent": 50
+        }
+      }
+    ],
+    "audioSequence": [
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "家の玄関で母親と息子が話しています。",
+        "readingHiragana": "いえのげんかんでははおやとむすこがはなしています。",
+        "textEn": "A mother and her son are talking at the entrance of their home.",
+        "pauseAfterMs": 600
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "息子はこのあと、まず何をしますか。",
+        "readingHiragana": "むすこはこのあと、まずなにをしますか。",
+        "textEn": "What will the son do first after this?",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "息子",
+        "speakerLabelEn": "Son",
+        "voiceGender": "male",
+        "textJa": "これから友達と映画を見に行くんだ。",
+        "readingHiragana": "これからともだちとえいがをみにいくんだ。",
+        "textEn": "I'm going to see a movie with a friend now.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "母親",
+        "speakerLabelEn": "Mother",
+        "voiceGender": "female",
+        "textJa": "そうなの。駅前の郵便局に寄って、この荷物を出していってくれない？",
+        "readingHiragana": "そうなの。えきまえのゆうびんきょくによって、このにもつをだしていってくれない？",
+        "textEn": "I see. Could you stop by the post office in front of the station and mail this parcel?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "息子",
+        "speakerLabelEn": "Son",
+        "voiceGender": "male",
+        "textJa": "本屋にも行きたかったんだけど、今日はやめておくよ。郵便局は映画のあとにするか。",
+        "readingHiragana": "ほんやにもいきたかったんだけど、きょうはやめておくよ。ゆうびんきょくはえいがのあとにするか。",
+        "textEn": "I wanted to go to the bookstore too, but I'll skip it today. Maybe I'll go to the post office after the movie.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "母親",
+        "speakerLabelEn": "Mother",
+        "voiceGender": "female",
+        "textJa": "その荷物、急ぎだから、映画の前に行ってね。",
+        "readingHiragana": "そのにもつ、いそぎだから、えいがのまえにいってね。",
+        "textEn": "That parcel is urgent, so go before the movie.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "息子",
+        "speakerLabelEn": "Son",
+        "voiceGender": "male",
+        "textJa": "わかった。映画の前に郵便局に寄るよ。",
+        "readingHiragana": "わかった。えいがのまえにゆうびんきょくによるよ。",
+        "textEn": "Got it. I'll stop by the post office before the movie.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "母親",
+        "speakerLabelEn": "Mother",
+        "voiceGender": "female",
+        "textJa": "はい、お金。残った分はご飯代に使っていいわよ。",
+        "readingHiragana": "はい、おかね。のこったぶんはごはんだいにつかっていいわよ。",
+        "textEn": "Here is some money. You can use what's left for food.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "息子はこのあと、まず何をしますか。",
+        "readingHiragana": "むすこはこのあと、まずなにをしますか。",
+        "textEn": "What will the son do first after this?",
+        "pauseAfterMs": 0
+      }
+    ],
+    "questions": [
+      {
+        "id": "errands-primary",
+        "isPrimaryMondai": true,
+        "questionJa": "息子はこのあと、まず何をしますか。",
+        "questionReading": "むすこはこのあと、まずなにをしますか。",
+        "questionEn": "What will the son do first after this?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "郵便局に行く",
+            "reading": "ゆうびんきょくにいく",
+            "labelEn": "Go to the post office"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "本屋に行く",
+            "reading": "ほんやにいく",
+            "labelEn": "Go to the bookstore"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "映画館に行く",
+            "reading": "えいがかんにいく",
+            "labelEn": "Go to the movie theater"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "レストランに行く",
+            "reading": "れすとらんにいく",
+            "labelEn": "Go to the restaurant"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "The son first plans to see a movie and considers going to the post office afterward, but his mother says the parcel is urgent and asks him to go before the movie. He postpones the bookstore, and the restaurant is not a stop he plans to make first. Therefore, he will go to the post office first."
+      },
+      {
+        "id": "errands-parcel-reason",
+        "isPrimaryMondai": false,
+        "questionJa": "どうして息子は、映画の前に郵便局へ行きますか。",
+        "questionReading": "どうしてむすこは、えいがのまえにゆうびんきょくへいきますか。",
+        "questionEn": "Why will the son go to the post office before the movie?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "荷物が急ぎだから",
+            "reading": "にもつがいそぎだから",
+            "labelEn": "Because the parcel is urgent"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "本屋が閉まるから",
+            "reading": "ほんやがしまるから",
+            "labelEn": "Because the bookstore is closing"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "友達が郵便局にいるから",
+            "reading": "ともだちがゆうびんきょくにいるから",
+            "labelEn": "Because his friend is at the post office"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "映画が終わったから",
+            "reading": "えいががおわったから",
+            "labelEn": "Because the movie has ended"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "His mother says the parcel is urgent, so he must go before the movie. The bookstore's hours, his friend's location, and the movie being over are not reasons given."
+      },
+      {
+        "id": "errands-extra-money",
+        "isPrimaryMondai": false,
+        "questionJa": "残ったお金を何に使ってもいいですか。",
+        "questionReading": "のこったおかねをなににつかってもいいですか。",
+        "questionEn": "What may the son use the leftover money for?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "ご飯代",
+            "reading": "ごはんだい",
+            "labelEn": "Food"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "本代",
+            "reading": "ほんだい",
+            "labelEn": "Books"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "映画代",
+            "reading": "えいがだい",
+            "labelEn": "The movie"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "電車代",
+            "reading": "でんしゃだい",
+            "labelEn": "Train fare"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "His mother says he can use the remaining money for food. She does not say to use it for books, the movie, or train fare."
+      }
+    ]
+  },
+  {
+    "id": "n3-scene-welcome-trip-planning",
+    "jlpt": 3,
+    "mondaiType": "mondai-1-task",
+    "titleJa": "新入社員歓迎会の準備",
+    "titleEn": "Planning the New Employee Welcome Trip",
+    "imagePromptDescription": "A four-panel office planning illustration showing distinct tasks for a new employee welcome day trip: 1 a staff member handing out a survey, 2 a person searching for trip locations on a computer, 3 coworkers choosing a restaurant from menus, and 4 coworkers discussing activities around a table. Add a subtle office background and leave space around each task for a number marker. Do not add any other numbered tasks.",
+    "recommendedAssetPath": "/images/jlpt-scenes/n3/Planning the New Employee Welcome Trip.png",
+    "visualObjects": [
+      {
+        "id": "opt-1",
+        "optionNumber": 1,
+        "labelJa": "1番（アンケートをとる）",
+        "labelEn": "1 (take a survey)",
+        "attributes": {
+          "targetAction": "take a survey",
+          "location": "office"
+        },
+        "coordinates": {
+          "xPercent": 20,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-2",
+        "optionNumber": 2,
+        "labelJa": "2番（インターネットで場所を探す）",
+        "labelEn": "2 (search for places online)",
+        "attributes": {
+          "targetAction": "search for trip locations online",
+          "location": "office computer"
+        },
+        "coordinates": {
+          "xPercent": 40,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-3",
+        "optionNumber": 3,
+        "labelJa": "3番（食事する店を決める）",
+        "labelEn": "3 (choose a restaurant)",
+        "attributes": {
+          "targetAction": "choose a restaurant",
+          "location": "office"
+        },
+        "coordinates": {
+          "xPercent": 60,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-4",
+        "optionNumber": 4,
+        "labelJa": "4番（何をするか考える）",
+        "labelEn": "4 (think about activities)",
+        "attributes": {
+          "targetAction": "plan activities",
+          "location": "office"
+        },
+        "coordinates": {
+          "xPercent": 80,
+          "yPercent": 50
+        }
+      }
+    ],
+    "audioSequence": [
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "会社で男の人と女の人が話しています。",
+        "readingHiragana": "かいしゃでおとこのひととおんなのひとがはなしています。",
+        "textEn": "A man and a woman are talking at a company.",
+        "pauseAfterMs": 600
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "女の人はこれから、まず何をしますか。",
+        "readingHiragana": "おんなのひとはこれから、まずなにをしますか。",
+        "textEn": "What will the woman do first?",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "男の人",
+        "speakerLabelEn": "Man",
+        "voiceGender": "male",
+        "textJa": "部長から、新入社員歓迎の日帰り旅行の準備を頼まれまして。まず、みんなが行きたい場所を調べてもらえますか。",
+        "readingHiragana": "ぶちょうから、しんにゅうしゃいんかんげいのひがえりりょこうのじゅんびをたのまれまして。まず、みんながいきたいばしょをしらべてもらえますか。",
+        "textEn": "The department manager asked me to prepare a day trip to welcome the new employees. Could you first find out where everyone wants to go?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "アンケートでも取るんじゃない？",
+        "readingHiragana": "あんけーとでもとるんじゃない？",
+        "textEn": "Shouldn't we take a survey or something?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "男の人",
+        "speakerLabelEn": "Man",
+        "voiceGender": "male",
+        "textJa": "それもいいけど、今は時間がないから、インターネットでよさそうな場所を探してくれる？",
+        "readingHiragana": "それもいいけど、いまはじかんがないから、いんたーねっとでよさそうなばしょをさがしてくれる？",
+        "textEn": "That could work, but we don't have time now. Could you look online for a good place?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "わかりました。私に探させてください。場所を決めたあとで、食事する店も考えますか。",
+        "readingHiragana": "わかりました。わたしにさがさせてください。ばしょをきめたあとで、しょくじするみせもかんがえますか。",
+        "textEn": "Understood. Please let me look. After we choose the destination, should I also look for a place to eat?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "男の人",
+        "speakerLabelEn": "Man",
+        "voiceGender": "male",
+        "textJa": "食事だけじゃなくて、何をするかも考えないとね。場所が決まってから、みんなで考えよう。",
+        "readingHiragana": "しょくじだけじゃなくて、なにをするかもかんがえないとね。ばしょがきまってから、みんなでかんがえよう。",
+        "textEn": "We need to think about more than just the meal; we also need to decide what to do. Let's all think about that after we decide on the destination.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "はい。では、まずインターネットで場所を探します。",
+        "readingHiragana": "はい。では、まずいんたーねっとでばしょをさがします。",
+        "textEn": "All right. First, I'll look for a place online.",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "女の人はこれから、まず何をしますか。",
+        "readingHiragana": "おんなのひとはこれから、まずなにをしますか。",
+        "textEn": "What will the woman do first?",
+        "pauseAfterMs": 0
+      }
+    ],
+    "questions": [
+      {
+        "id": "welcome-trip-primary",
+        "isPrimaryMondai": true,
+        "questionJa": "女の人はこれから、まず何をしますか。",
+        "questionReading": "おんなのひとはこれから、まずなにをしますか。",
+        "questionEn": "What will the woman do first?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "アンケートをとる",
+            "reading": "あんけーとをとる",
+            "labelEn": "Take a survey"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "インターネットで場所を探す",
+            "reading": "いんたーねっとでばしょをさがす",
+            "labelEn": "Search for a place online"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "食事する店を決める",
+            "reading": "しょくじするみせをきめる",
+            "labelEn": "Choose a restaurant"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "何をするか考える",
+            "reading": "なにをするかかんがえる",
+            "labelEn": "Think about what activities to do"
+          }
+        ],
+        "correctIndex": 1,
+        "eliminationExplanationEn": "The woman suggests taking a survey, but the man says there is not enough time. He asks her to search online for a suitable place, and she confirms that this is what she will do first. They will think about activities only after the destination has been chosen."
+      },
+      {
+        "id": "welcome-trip-survey-reason",
+        "isPrimaryMondai": false,
+        "questionJa": "どうして男の人は、アンケートを取らないことにしましたか。",
+        "questionReading": "どうしておとこのひとは、あんけーとをとらないことにしましたか。",
+        "questionEn": "Why did the man decide not to take a survey?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "時間がないから",
+            "reading": "じかんがないから",
+            "labelEn": "Because there is not enough time"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "行く場所が決まったから",
+            "reading": "いくばしょがきまったから",
+            "labelEn": "Because the destination has been decided"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "食事する店がないから",
+            "reading": "しょくじするみせがないから",
+            "labelEn": "Because there is no place to eat"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "みんなが旅行に行かないから",
+            "reading": "みんながりょこうにいかないから",
+            "labelEn": "Because nobody is going on the trip"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "He says they do not have time, so he asks her to search online instead. The destination is not decided yet, and no one says there is no restaurant or that people will not go."
+      },
+      {
+        "id": "welcome-trip-activities-when",
+        "isPrimaryMondai": false,
+        "questionJa": "何をするか、いつ考えますか。",
+        "questionReading": "なにをするか、いつかんがえますか。",
+        "questionEn": "When will they decide what activities to do?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "場所が決まってから",
+            "reading": "ばしょがきまってから",
+            "labelEn": "After the destination is decided"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "アンケートを取る前",
+            "reading": "あんけーとをとるまえ",
+            "labelEn": "Before taking a survey"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "今日の朝",
+            "reading": "きょうのあさ",
+            "labelEn": "This morning"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "食事のあと",
+            "reading": "しょくじのあと",
+            "labelEn": "After the meal"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "The man says they will decide what to do together after the destination is chosen. He does not say they will do it before a survey, this morning, or after a meal."
+      }
+    ]
+  },
+  {
+    "id": "n3-scene-house-check-before-leaving",
+    "jlpt": 3,
+    "mondaiType": "mondai-1-task",
+    "titleJa": "外出前の家の戸締まりと電気",
+    "titleEn": "House Check Before Leaving",
+    "imagePromptDescription": "A four-panel home illustration showing four distinct actions to check before leaving: 1 a person taking an umbrella by the entrance, 2 turning off the living-room air conditioner, 3 turning off the kitchen light, and 4 closing the small kitchen window. Include an entrance, living room, and kitchen that are easy to tell apart. Leave space around each action for a number marker and do not add other numbered actions.",
+    "recommendedAssetPath": "/images/jlpt-scenes/n3/Japanese Home Safety Checklist Panels.png",
+    "visualObjects": [
+      {
+        "id": "opt-1",
+        "optionNumber": 1,
+        "labelJa": "1番（かさを持っていく）",
+        "labelEn": "1 (take an umbrella)",
+        "attributes": {
+          "targetAction": "take an umbrella",
+          "location": "entrance"
+        },
+        "coordinates": {
+          "xPercent": 20,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-2",
+        "optionNumber": 2,
+        "labelJa": "2番（リビングのエアコンを消す）",
+        "labelEn": "2 (turn off the living-room air conditioner)",
+        "attributes": {
+          "targetAction": "turn off the air conditioner",
+          "location": "living room"
+        },
+        "coordinates": {
+          "xPercent": 40,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-3",
+        "optionNumber": 3,
+        "labelJa": "3番（台所の電気を消す）",
+        "labelEn": "3 (turn off the kitchen light)",
+        "attributes": {
+          "targetAction": "turn off the light",
+          "location": "kitchen"
+        },
+        "coordinates": {
+          "xPercent": 60,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-4",
+        "optionNumber": 4,
+        "labelJa": "4番（台所の窓を閉める）",
+        "labelEn": "4 (close the kitchen window)",
+        "attributes": {
+          "targetAction": "close the window",
+          "location": "kitchen"
+        },
+        "coordinates": {
+          "xPercent": 80,
+          "yPercent": 50
+        }
+      }
+    ],
+    "audioSequence": [
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "家の玄関で男の留学生とホストファミリーのお母さんが話しています。",
+        "readingHiragana": "いえのげんかんでおとこのりゅうがくせいとほすとふぁみりーのおかあさんがはなしています。",
+        "textEn": "A male international student and his host mother are talking at the entrance of their home.",
+        "pauseAfterMs": 600
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "留学生はこれから何をしますか。",
+        "readingHiragana": "りゅうがくせいはこれからなにをしますか。",
+        "textEn": "What will the student do now?",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "留学生",
+        "speakerLabelEn": "International Student",
+        "voiceGender": "male",
+        "textJa": "出かけるけど、かさを持っていったほうがいいかな。",
+        "readingHiragana": "でかけるけど、かさをもっていったほうがいいかな。",
+        "textEn": "I'm heading out. Do you think I should take an umbrella?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "ホストファミリーのお母さん",
+        "speakerLabelEn": "Host Mother",
+        "voiceGender": "female",
+        "textJa": "天気予報では午後から晴れるそうだから、かさはいらないわよ。",
+        "readingHiragana": "てんきよほうではごごからはれるそうだから、かさはいらないわよ。",
+        "textEn": "The weather report says it will clear up this afternoon, so you don't need an umbrella.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "ホストファミリーのお母さん",
+        "speakerLabelEn": "Host Mother",
+        "voiceGender": "female",
+        "textJa": "リビングのエアコンは消したよね。",
+        "readingHiragana": "りびんぐのえあこんはけしたよね。",
+        "textEn": "You turned off the living-room air conditioner, right?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "留学生",
+        "speakerLabelEn": "International Student",
+        "voiceGender": "male",
+        "textJa": "うん、もう消してあるよ。",
+        "readingHiragana": "うん、もうけしてあるよ。",
+        "textEn": "Yes, it's already off.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "ホストファミリーのお母さん",
+        "speakerLabelEn": "Host Mother",
+        "voiceGender": "female",
+        "textJa": "あ、台所の電気をつけたままだった。ちょっと消してきてくれる？",
+        "readingHiragana": "あ、だいどころのでんきをつけたままだった。ちょっとけしてきてくれる？",
+        "textEn": "Oh, I left the kitchen light on. Could you go turn it off?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "留学生",
+        "speakerLabelEn": "International Student",
+        "voiceGender": "male",
+        "textJa": "わかった。台所の窓も閉めてくるね。",
+        "readingHiragana": "わかった。だいどころのまどもしめてくるね。",
+        "textEn": "Okay. I'll close the kitchen window too.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "ホストファミリーのお母さん",
+        "speakerLabelEn": "Host Mother",
+        "voiceGender": "female",
+        "textJa": "窓は開いたままだけど、閉めなくていいわよ。",
+        "readingHiragana": "まどはあいたままだけど、しめなくていいわよ。",
+        "textEn": "The window is still open, but you don't need to close it.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "留学生",
+        "speakerLabelEn": "International Student",
+        "voiceGender": "male",
+        "textJa": "そうなんだ。じゃあ、電気だけ消してくるよ。",
+        "readingHiragana": "そうなんだ。じゃあ、でんきだけけしてくるよ。",
+        "textEn": "I see. Then I'll just turn off the light.",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "留学生はこれから何をしますか。",
+        "readingHiragana": "りゅうがくせいはこれからなにをしますか。",
+        "textEn": "What will the student do now?",
+        "pauseAfterMs": 0
+      }
+    ],
+    "questions": [
+      {
+        "id": "house-check-primary",
+        "isPrimaryMondai": true,
+        "questionJa": "留学生はこれから何をしますか。",
+        "questionReading": "りゅうがくせいはこれからなにをしますか。",
+        "questionEn": "What will the student do now?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "かさを持っていく",
+            "reading": "かさをもっていく",
+            "labelEn": "Take an umbrella"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "リビングのエアコンを消す",
+            "reading": "りびんぐのえあこんをけす",
+            "labelEn": "Turn off the living-room air conditioner"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "台所の電気を消す",
+            "reading": "だいどころのでんきをけす",
+            "labelEn": "Turn off the kitchen light"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "台所の窓を閉める",
+            "reading": "だいどころのまどをしめる",
+            "labelEn": "Close the kitchen window"
+          }
+        ],
+        "correctIndex": 2,
+        "eliminationExplanationEn": "The student does not need an umbrella because the weather will clear up. The living-room air conditioner is already off. The host mother asks him to turn off the kitchen light, and then clarifies that he does not need to close the open window. He will turn off the kitchen light."
+      },
+      {
+        "id": "house-check-umbrella-reason",
+        "isPrimaryMondai": false,
+        "questionJa": "どうして留学生は、かさを持っていかなくてもいいですか。",
+        "questionReading": "どうしてりゅうがくせいは、かさをもっていかなくてもいいですか。",
+        "questionEn": "Why doesn't the student need to take an umbrella?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "午後から晴れるそうだから",
+            "reading": "ごごからはれるそうだから",
+            "labelEn": "Because it is expected to clear up this afternoon"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "雨がもう降っているから",
+            "reading": "あめがもうふっているから",
+            "labelEn": "Because it is already raining"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "かさが家にないから",
+            "reading": "かさがいえにないから",
+            "labelEn": "Because there is no umbrella at home"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "すぐに帰るから",
+            "reading": "すぐにかえるから",
+            "labelEn": "Because he will come right back"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "The host mother says the weather report predicts clear skies from the afternoon, so he does not need an umbrella. She does not say it is raining, that there is no umbrella, or that he will return soon."
+      },
+      {
+        "id": "house-check-window-state",
+        "isPrimaryMondai": false,
+        "questionJa": "台所の窓は、今どうなっていますか。",
+        "questionReading": "だいどころのまどは、いまどうなっていますか。",
+        "questionEn": "What is the current state of the kitchen window?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "開いたままになっている",
+            "reading": "あいたままになっている",
+            "labelEn": "It has been left open"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "閉まっている",
+            "reading": "しまっている",
+            "labelEn": "It is closed"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "壊れている",
+            "reading": "こわれている",
+            "labelEn": "It is broken"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "なくなっている",
+            "reading": "なくなっている",
+            "labelEn": "It is missing"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "The host mother says the kitchen window is still open, using the expression 'left open.' She says it does not need to be closed. Nothing indicates it is shut, broken, or missing."
+      }
+    ]
+  }
+]

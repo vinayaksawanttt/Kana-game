@@ -32,7 +32,7 @@ export default function ListeningResultPage() {
   );
 }
 
-export function ListeningResultContent() {
+function ListeningResultContent() {
   const router = useRouter();
   const { sessionId } = useParams<{ sessionId: string }>();
   const [result, setResult] = useState<ListeningResultSummary | null>(null);

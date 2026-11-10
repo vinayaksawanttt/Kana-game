@@ -1,0 +1,802 @@
+[
+  {
+    "id": "n4-scene-hospital-gift",
+    "jlpt": 4,
+    "mondaiType": "mondai-1-task",
+    "titleJa": "お見舞いに持っていく物",
+    "titleEn": "Choosing a Hospital Get-Well Gift",
+    "imagePromptDescription": "A clear, friendly illustration showing four possible gifts for a hospital visit, with one large, distinct item in each numbered position: 1 a bouquet of flowers, 2 a basket of fruit, 3 a stack of books, and 4 music CDs. Use a simple hospital waiting-room background, keep all four gifts easy to recognize, and leave space around each one for a number marker. Do not add any other numbered objects.",
+    "recommendedAssetPath": "/images/jlpt-scenes/n4/hospital_visit_gift_choices.png",
+    "visualObjects": [
+      {
+        "id": "opt-1",
+        "optionNumber": 1,
+        "labelJa": "1番（花）",
+        "labelEn": "1 (flowers)",
+        "attributes": {
+          "targetObject": "bouquet of flowers"
+        },
+        "coordinates": {
+          "xPercent": 20,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-2",
+        "optionNumber": 2,
+        "labelJa": "2番（果物）",
+        "labelEn": "2 (fruit)",
+        "attributes": {
+          "targetObject": "basket of fruit"
+        },
+        "coordinates": {
+          "xPercent": 40,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-3",
+        "optionNumber": 3,
+        "labelJa": "3番（本）",
+        "labelEn": "3 (books)",
+        "attributes": {
+          "targetObject": "books"
+        },
+        "coordinates": {
+          "xPercent": 60,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-4",
+        "optionNumber": 4,
+        "labelJa": "4番（音楽のCD）",
+        "labelEn": "4 (music CDs)",
+        "attributes": {
+          "targetObject": "music CDs"
+        },
+        "coordinates": {
+          "xPercent": 80,
+          "yPercent": 50
+        }
+      }
+    ],
+    "audioSequence": [
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "男の留学生と女の人が話しています。",
+        "readingHiragana": "おとこのりゅうがくせいとおんなのひとがはなしています。",
+        "textEn": "A male international student and a woman are talking.",
+        "pauseAfterMs": 600
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "男の留学生は、何を持っていきますか。",
+        "readingHiragana": "おとこのりゅうがくせいは、なにをもっていきますか。",
+        "textEn": "What will the male international student bring?",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "男の留学生",
+        "speakerLabelEn": "Male International Student",
+        "voiceGender": "male",
+        "textJa": "友達がけがをして、入院しているんです。お見舞いに行きたいんですが、日本では何を持っていきますか。",
+        "readingHiragana": "ともだちがけがをして、にゅういんしているんです。おみまいにいきたいんですが、にほんではなにをもっていきますか。",
+        "textEn": "My friend has been injured and is in the hospital. I want to visit. What do people bring in Japan?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "花や果物はどうですか。でも、病院では時間がたくさんあるから、本もいいと思いますよ。",
+        "readingHiragana": "はなやくだものはどうですか。でも、びょういんではじかんがたくさんあるから、ほんもいいとおもいますよ。",
+        "textEn": "How about flowers or fruit? But there is lots of free time in the hospital, so I think books are good too.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "男の留学生",
+        "speakerLabelEn": "Male International Student",
+        "voiceGender": "male",
+        "textJa": "そうですね。友達は本を読むのが好きだから、本を持っていきます。",
+        "readingHiragana": "そうですね。ともだちはほんをよむのがすきだから、ほんをもっていきます。",
+        "textEn": "That's true. My friend likes reading, so I'll bring books.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "若い人ですから、音楽のCDもいいかもしれませんね。",
+        "readingHiragana": "わかいひとですから、おんがくのしーでぃーもいいかもしれませんね。",
+        "textEn": "Since your friend is young, music CDs might be good too.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "男の留学生",
+        "speakerLabelEn": "Male International Student",
+        "voiceGender": "male",
+        "textJa": "うーん、でも、友達は音楽をあまり聴きませんから。やっぱり本にします。",
+        "readingHiragana": "うーん、でも、ともだちはおんがくをあまりききませんから。やっぱりほんにします。",
+        "textEn": "Hmm, but my friend doesn't listen to music much. I'll bring books after all.",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "男の留学生は、何を持っていきますか。",
+        "readingHiragana": "おとこのりゅうがくせいは、なにをもっていきますか。",
+        "textEn": "What will the male international student bring?",
+        "pauseAfterMs": 0
+      }
+    ],
+    "questions": [
+      {
+        "id": "hospital-gift-primary",
+        "isPrimaryMondai": true,
+        "questionJa": "男の留学生は、何を持っていきますか。",
+        "questionReading": "おとこのりゅうがくせいは、なにをもっていきますか。",
+        "questionEn": "What will the male international student bring?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "花",
+            "reading": "はな",
+            "labelEn": "Flowers"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "果物",
+            "reading": "くだもの",
+            "labelEn": "Fruit"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "本",
+            "reading": "ほん",
+            "labelEn": "Books"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "音楽のCD",
+            "reading": "おんがくのしーでぃー",
+            "labelEn": "Music CDs"
+          }
+        ],
+        "correctIndex": 2,
+        "eliminationExplanationEn": "Flowers and fruit are suggested, but the woman also says books are good because there is lots of free time in the hospital. The man says his friend likes reading, so he will bring books. A music CD is suggested later, but the man says his friend does not listen to music much and chooses books after all."
+      },
+      {
+        "id": "hospital-gift-book-reason",
+        "isPrimaryMondai": false,
+        "questionJa": "どうして女の人は、本もいいと言いましたか。",
+        "questionReading": "どうしておんなのひとは、ほんもいいといいましたか。",
+        "questionEn": "Why did the woman say that a book would be good?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "病院では時間がたくさんあるから",
+            "reading": "びょういんではじかんがたくさんあるから",
+            "labelEn": "Because there is lots of free time in the hospital"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "友達は音楽が好きだから",
+            "reading": "ともだちはおんがくがすきだから",
+            "labelEn": "Because the friend likes music"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "花を持っていけないから",
+            "reading": "はなをもっていけないから",
+            "labelEn": "Because he cannot bring flowers"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "果物が好きではないから",
+            "reading": "くだものがすきではないから",
+            "labelEn": "Because the friend does not like fruit"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "The woman says there is a lot of time in the hospital, so a book would be good. The conversation does not say the friend likes music, that flowers are not allowed, or that the friend dislikes fruit."
+      },
+      {
+        "id": "hospital-gift-cd-reason",
+        "isPrimaryMondai": false,
+        "questionJa": "どうして男の留学生は、CDを持っていきませんか。",
+        "questionReading": "どうしておとこのりゅうがくせいは、しーでぃーをもっていきませんか。",
+        "questionEn": "Why won't the male international student bring a CD?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "友達は音楽をあまり聴かないから",
+            "reading": "ともだちはおんがくをあまりきかないから",
+            "labelEn": "Because his friend does not listen to music much"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "友達は本を読まないから",
+            "reading": "ともだちはほんをよまないから",
+            "labelEn": "Because his friend does not read books"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "病院に時間がないから",
+            "reading": "びょういんにじかんがないから",
+            "labelEn": "Because there is no time at the hospital"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "CDがありませんから",
+            "reading": "しーでぃーがありませんから",
+            "labelEn": "Because there are no CDs"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "The man says his friend does not listen to music much, so he decides not to bring a CD. The friend likes reading, the hospital has lots of free time, and no one says CDs are unavailable."
+      }
+    ]
+  },
+  {
+    "id": "n4-scene-library-copier",
+    "jlpt": 4,
+    "mondaiType": "mondai-1-task",
+    "titleJa": "図書館のコピー機の使い方",
+    "titleEn": "Using the Library Copy Machine",
+    "imagePromptDescription": "A front-facing illustration of a library copy machine control panel with four clearly separated numbered choices. Choice 1 shows a red button together with a yellow button. Choice 2 shows a red button together with a white button. Choice 3 shows a blue button together with a yellow button. Choice 4 shows a blue button together with a white button. Make all button colors vivid and easy to tell apart, with a small copy of printed text on the machine display. Leave space by each pair for a number marker, and do not add any other numbered buttons.",
+    "recommendedAssetPath": "/images/jlpt-scenes/n4/Library_Copier_Instructions_Panel.png",
+    "visualObjects": [
+      {
+        "id": "opt-1",
+        "optionNumber": 1,
+        "labelJa": "1番（赤と黄色）",
+        "labelEn": "1 (red and yellow)",
+        "attributes": {
+          "targetAction": "enlarge and darken text",
+          "targetObject": "copy-machine buttons",
+          "colors": [
+            "red",
+            "yellow"
+          ]
+        },
+        "coordinates": {
+          "xPercent": 20,
+          "yPercent": 48
+        }
+      },
+      {
+        "id": "opt-2",
+        "optionNumber": 2,
+        "labelJa": "2番（赤と白）",
+        "labelEn": "2 (red and white)",
+        "attributes": {
+          "targetAction": "enlarge and lighten text",
+          "targetObject": "copy-machine buttons",
+          "colors": [
+            "red",
+            "white"
+          ]
+        },
+        "coordinates": {
+          "xPercent": 40,
+          "yPercent": 48
+        }
+      },
+      {
+        "id": "opt-3",
+        "optionNumber": 3,
+        "labelJa": "3番（青と黄色）",
+        "labelEn": "3 (blue and yellow)",
+        "attributes": {
+          "targetAction": "shrink and darken text",
+          "targetObject": "copy-machine buttons",
+          "colors": [
+            "blue",
+            "yellow"
+          ]
+        },
+        "coordinates": {
+          "xPercent": 60,
+          "yPercent": 48
+        }
+      },
+      {
+        "id": "opt-4",
+        "optionNumber": 4,
+        "labelJa": "4番（青と白）",
+        "labelEn": "4 (blue and white)",
+        "attributes": {
+          "targetAction": "shrink and lighten text",
+          "targetObject": "copy-machine buttons",
+          "colors": [
+            "blue",
+            "white"
+          ]
+        },
+        "coordinates": {
+          "xPercent": 80,
+          "yPercent": 48
+        }
+      }
+    ],
+    "audioSequence": [
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "図書館で男の人と係りの人が話しています。",
+        "readingHiragana": "としょかんでおとこのひととかかりのひとがはなしています。",
+        "textEn": "A man and a library staff member are talking in a library.",
+        "pauseAfterMs": 600
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "男の人はこのあとどのボタンを押しますか。",
+        "readingHiragana": "おとこのひとはこのあとどのぼたんをおしますか。",
+        "textEn": "Which buttons will the man press next?",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "男の人",
+        "speakerLabelEn": "Man",
+        "voiceGender": "male",
+        "textJa": "すみません、コピー機の使い方を教えてください。青いボタンを押したんですが、字が小さくなってしまったんです。",
+        "readingHiragana": "すみません、こぴーきのつかいかたをおしえてください。あおいぼたんをおしたんですが、じがちいさくなってしまったんです。",
+        "textEn": "Excuse me, could you tell me how to use the copier? I pressed the blue button, but the text became too small.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "係りの人（女性）",
+        "speakerLabelEn": "Library Staff Member (Female)",
+        "voiceGender": "female",
+        "textJa": "字を大きくするなら、赤いボタンを押してください。",
+        "readingHiragana": "じをおおきくするなら、あかいぼたんをおしてください。",
+        "textEn": "If you want to make the text bigger, press the red button.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "男の人",
+        "speakerLabelEn": "Man",
+        "voiceGender": "male",
+        "textJa": "それから、もう少し濃くしたいんです。",
+        "readingHiragana": "それから、もうすこしこくしたいんです。",
+        "textEn": "Also, I want to make it a little darker.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "係りの人（女性）",
+        "speakerLabelEn": "Library Staff Member (Female)",
+        "voiceGender": "female",
+        "textJa": "じゃあ、黄色いボタンを押してください。薄くするときは、白いボタンです。",
+        "readingHiragana": "じゃあ、きいろいぼたんをおしてください。うすくするときは、しろいぼたんです。",
+        "textEn": "Then press the yellow button. Use the white button when you want to make it lighter.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "男の人",
+        "speakerLabelEn": "Man",
+        "voiceGender": "male",
+        "textJa": "では、赤と黄色のボタンを押せばいいんですね。",
+        "readingHiragana": "では、あかときいろのぼたんをおせばいいんですね。",
+        "textEn": "So I should press the red and yellow buttons, right?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "係りの人（女性）",
+        "speakerLabelEn": "Library Staff Member (Female)",
+        "voiceGender": "female",
+        "textJa": "はい、そうです。",
+        "readingHiragana": "はい、そうです。",
+        "textEn": "Yes, that's right.",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "男の人はこのあとどのボタンを押しますか。",
+        "readingHiragana": "おとこのひとはこのあとどのぼたんをおしますか。",
+        "textEn": "Which buttons will the man press next?",
+        "pauseAfterMs": 0
+      }
+    ],
+    "questions": [
+      {
+        "id": "library-copier-primary",
+        "isPrimaryMondai": true,
+        "questionJa": "男の人はこのあとどのボタンを押しますか。",
+        "questionReading": "おとこのひとはこのあとどのぼたんをおしますか。",
+        "questionEn": "Which buttons will the man press next?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "赤と黄色",
+            "reading": "あかときいろ",
+            "labelEn": "Red and yellow"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "赤と白",
+            "reading": "あかとしろ",
+            "labelEn": "Red and white"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "青と黄色",
+            "reading": "あおときいろ",
+            "labelEn": "Blue and yellow"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "青と白",
+            "reading": "あおとしろ",
+            "labelEn": "Blue and white"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "The blue button made the text too small, so he needs the red button to make it bigger. He also wants darker text, so he needs the yellow button. The white button makes the text lighter, and blue is not the button he needs. The correct pair is red and yellow."
+      },
+      {
+        "id": "library-copier-white-button",
+        "isPrimaryMondai": false,
+        "questionJa": "白いボタンを押すと、どうなりますか。",
+        "questionReading": "しろいぼたんをおすと、どうなりますか。",
+        "questionEn": "What happens when the white button is pressed?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "字が薄くなります",
+            "reading": "じがうすくなります",
+            "labelEn": "The text gets lighter"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "字が濃くなります",
+            "reading": "じがこくなります",
+            "labelEn": "The text gets darker"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "字が大きくなります",
+            "reading": "じがおおきくなります",
+            "labelEn": "The text gets bigger"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "字が小さくなります",
+            "reading": "じがちいさくなります",
+            "labelEn": "The text gets smaller"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "The staff member says to use the white button when making the text lighter. The red button makes it bigger, and the blue button made it smaller; neither makes the text darker."
+      },
+      {
+        "id": "library-copier-problem",
+        "isPrimaryMondai": false,
+        "questionJa": "どうして男の人は、係りの人に聞きましたか。",
+        "questionReading": "どうしておとこのひとは、かかりのひとにききましたか。",
+        "questionEn": "Why did the man ask the staff member for help?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "字が小さくなってしまったから",
+            "reading": "じがちいさくなってしまったから",
+            "labelEn": "Because the text became too small"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "コピー機がありませんから",
+            "reading": "こぴーきがありませんから",
+            "labelEn": "Because there is no copy machine"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "字が大きすぎたから",
+            "reading": "じがおおきすぎたから",
+            "labelEn": "Because the text was too big"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "図書館が閉まっていたから",
+            "reading": "としょかんがしまっていたから",
+            "labelEn": "Because the library was closed"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "He explains that he pressed the blue button and the text became too small, so he asks how to use the copier. The machine is there, and he does not say the text was too big or the library was closed."
+      }
+    ]
+  },
+  {
+    "id": "n4-scene-meeting-room",
+    "jlpt": 4,
+    "mondaiType": "mondai-1-task",
+    "titleJa": "会議室の準備と資料コピー",
+    "titleEn": "Meeting Room Setup and Copying Handouts",
+    "imagePromptDescription": "A four-panel office illustration showing four clearly different actions: 1 a woman making a phone call, 2 a worker using a copy machine to copy meeting handouts, 3 coworkers having a meeting around a table, and 4 a woman arranging chairs in a meeting room. Include a subtle office background and leave space around each action for a number marker. Do not add any other numbered actions.",
+    "recommendedAssetPath": "/images/jlpt-scenes/n4/meeting_room_handouts.png",
+    "visualObjects": [
+      {
+        "id": "opt-1",
+        "optionNumber": 1,
+        "labelJa": "1番（電話をかける）",
+        "labelEn": "1 (make a phone call)",
+        "attributes": {
+          "targetAction": "make a phone call",
+          "targetObject": "telephone"
+        },
+        "coordinates": {
+          "xPercent": 20,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-2",
+        "optionNumber": 2,
+        "labelJa": "2番（資料をコピーする）",
+        "labelEn": "2 (copy the handouts)",
+        "attributes": {
+          "targetAction": "copy handouts",
+          "targetObject": "copy machine and handouts"
+        },
+        "coordinates": {
+          "xPercent": 40,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-3",
+        "optionNumber": 3,
+        "labelJa": "3番（会議をする）",
+        "labelEn": "3 (have a meeting)",
+        "attributes": {
+          "targetAction": "have a meeting",
+          "targetObject": "meeting table"
+        },
+        "coordinates": {
+          "xPercent": 60,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-4",
+        "optionNumber": 4,
+        "labelJa": "4番（いすを並べる）",
+        "labelEn": "4 (arrange the chairs)",
+        "attributes": {
+          "targetAction": "arrange chairs",
+          "targetObject": "meeting-room chairs"
+        },
+        "coordinates": {
+          "xPercent": 80,
+          "yPercent": 50
+        }
+      }
+    ],
+    "audioSequence": [
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "会社で男の人と女の人が話しています。",
+        "readingHiragana": "かいしゃでおとこのひととおんなのひとがはなしています。",
+        "textEn": "A man and a woman are talking at a company.",
+        "pauseAfterMs": 600
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "女の人は今日、このあと何をしますか。",
+        "readingHiragana": "おんなのひとはきょう、このあとなにをしますか。",
+        "textEn": "What will the woman do next today?",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "男の人",
+        "speakerLabelEn": "Man",
+        "voiceGender": "male",
+        "textJa": "部長から電話があって、明日の会議の資料のコピーを頼まれたんだ。お願いしてもいい？",
+        "readingHiragana": "ぶちょうからでんわがあって、あしたのかいぎのしりょうのこぴーをたのまれたんだ。おねがいしてもいい？",
+        "textEn": "The manager called and asked me to copy the handouts for tomorrow's meeting. Could I ask you to do it?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "はい。資料をコピーしておきます。",
+        "readingHiragana": "はい。しりょうをこぴーしておきます。",
+        "textEn": "Sure. I'll copy the handouts in advance.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "男の人",
+        "speakerLabelEn": "Man",
+        "voiceGender": "male",
+        "textJa": "それから、会議室の準備だけど、いすを並べておいてくれる？",
+        "readingHiragana": "それから、かいぎしつのじゅんびだけど、いすをならべておいてくれる？",
+        "textEn": "Also, for the meeting room, could you arrange the chairs ahead of time?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "はい。でも、会議室は今、ほかの人が使っています。今は準備できないかもしれません。",
+        "readingHiragana": "はい。でも、かいぎしつはいま、ほかのひとがつかっています。いまはじゅんびできないかもしれません。",
+        "textEn": "Sure. But other people are using the meeting room now. We may not be able to prepare it right now.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "男の人",
+        "speakerLabelEn": "Man",
+        "voiceGender": "male",
+        "textJa": "そうか。じゃあ、いすは明日並べよう。今日は先に資料をコピーしておいてください。",
+        "readingHiragana": "そうか。じゃあ、いすはあしたならべよう。きょうはさきにしりょうをこぴーしておいてください。",
+        "textEn": "I see. Then let's arrange the chairs tomorrow. Please copy the handouts first today.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "わかりました。今日は資料をコピーします。",
+        "readingHiragana": "わかりました。きょうはしりょうをこぴーします。",
+        "textEn": "Understood. I'll copy the handouts today.",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "女の人は今日、このあと何をしますか。",
+        "readingHiragana": "おんなのひとはきょう、このあとなにをしますか。",
+        "textEn": "What will the woman do next today?",
+        "pauseAfterMs": 0
+      }
+    ],
+    "questions": [
+      {
+        "id": "meeting-room-primary",
+        "isPrimaryMondai": true,
+        "questionJa": "女の人は今日、このあと何をしますか。",
+        "questionReading": "おんなのひとはきょう、このあとなにをしますか。",
+        "questionEn": "What will the woman do next today?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "電話をかける",
+            "reading": "でんわをかける",
+            "labelEn": "Make a phone call"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "資料をコピーする",
+            "reading": "しりょうをこぴーする",
+            "labelEn": "Copy the handouts"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "会議をする",
+            "reading": "かいぎをする",
+            "labelEn": "Have a meeting"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "いすを並べる",
+            "reading": "いすをならべる",
+            "labelEn": "Arrange the chairs"
+          }
+        ],
+        "correctIndex": 1,
+        "eliminationExplanationEn": "The woman agrees to copy the handouts today, and the man asks her to do that first. The chairs cannot be arranged now because others are using the meeting room, so they will be arranged tomorrow. Making a phone call and holding the meeting are not her tasks now."
+      },
+      {
+        "id": "meeting-room-chairs-when",
+        "isPrimaryMondai": false,
+        "questionJa": "女の人は、いついすを並べますか。",
+        "questionReading": "おんなのひとは、いついすをならべますか。",
+        "questionEn": "When will the woman arrange the chairs?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "今日",
+            "reading": "きょう",
+            "labelEn": "Today"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "明日",
+            "reading": "あした",
+            "labelEn": "Tomorrow"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "今",
+            "reading": "いま",
+            "labelEn": "Right now"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "来週",
+            "reading": "らいしゅう",
+            "labelEn": "Next week"
+          }
+        ],
+        "correctIndex": 1,
+        "eliminationExplanationEn": "The man says they will arrange the chairs tomorrow because the room is in use now. Today and right now are too soon, and next week is not mentioned."
+      },
+      {
+        "id": "meeting-room-chairs-why",
+        "isPrimaryMondai": false,
+        "questionJa": "どうして女の人は、今、会議室の準備ができませんか。",
+        "questionReading": "どうしておんなのひとは、いま、かいぎしつのじゅんびができませんか。",
+        "questionEn": "Why can't the woman prepare the meeting room now?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "今、ほかの人が使っているから",
+            "reading": "いま、ほかのひとがつかっているから",
+            "labelEn": "Because other people are using it now"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "資料がないから",
+            "reading": "しりょうがないから",
+            "labelEn": "Because there are no handouts"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "電話をしているから",
+            "reading": "でんわをしているから",
+            "labelEn": "Because she is making a phone call"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "会議が終わったから",
+            "reading": "かいぎがおわったから",
+            "labelEn": "Because the meeting has ended"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "The woman says other people are using the meeting room now, so she cannot prepare it yet. The handouts are available to copy, and neither a phone call nor a finished meeting is given as the reason."
+      }
+    ]
+  }
+]

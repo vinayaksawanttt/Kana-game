@@ -8,6 +8,7 @@ import InstantReplySetupPage from "../instant-reply/page";
 import InfoScannerSetupPage from "../info-scanner/page";
 import ParagraphClozeSetupPage from "../paragraph-cloze/page";
 import WordUsageSetupPage from "../word-usage/page";
+import ListeningScenesSetupPage from "../listening-scenes/page";
 
 const mockPush = vi.fn();
 const mockReplace = vi.fn();
@@ -548,6 +549,79 @@ describe("Migrated JLPT Booklet Setup Routes (Phases 2 & 3)", () => {
       // Verify modes: Authentic Exam vs Study Mode
       expect(screen.getByText(/Exam Authentic \(本番モード\)/i)).toBeTruthy();
       expect(screen.getByText(/Study Mode \(学習モード\)/i)).toBeTruthy();
+    });
+  });
+
+  describe("Listening Scene Setup Page (Phase 3)", () => {
+    it("renders in JlptBookletSetupShell with listening scene boxes and starts session", () => {
+      render(<ListeningScenesSetupPage />);
+
+      // Return link
+      expect(
+        screen.getByRole("link", {
+          name: /問題用紙一覧へもどる \(Return to Booklet Hub\)/i,
+        })
+      ).toBeTruthy();
+
+      // Shell Header
+      expect(screen.getByText("第3部：聴解 · Mondai 1・2")).toBeTruthy();
+      expect(screen.getAllByText(/AUDIO LISTENING SCENE · 問題 1・2/i).length).toBeGreaterThan(0);
+
+      // Numbered Question Boxes
+      expect(screen.getByText(/問 1 · Target Level Selection/i)).toBeTruthy();
+      expect(screen.getByText(/問 2 · Drill Length/i)).toBeTruthy();
+      expect(screen.getByText(/問 3 · Examination Mode/i)).toBeTruthy();
+
+      // Pool counter
+      expect(screen.getAllByText(/scenes in active pool/i).length).toBeGreaterThan(0);
+
+      // Start Drill Button
+      const startButton = screen.getByRole("button", {
+        name: /演習をはじめる \/ Start Listening Scene Drill →/i,
+      });
+      expect(startButton).toBeTruthy();
+      fireEvent.click(startButton);
+
+      expect(mockPush).toHaveBeenCalledWith(
+        expect.stringMatching(/^\/games\/jlpt\/listening-scenes\/play\/scene-session-/)
+      );
+
+      // Verify session stored in sessionStorage
+      const sessionKeys = Object.keys(sessionStorage).filter((k) =>
+        k.startsWith("jlpt-scene-session:")
+      );
+      expect(sessionKeys.length).toBe(1);
+      const stored = JSON.parse(sessionStorage.getItem(sessionKeys[0])!);
+      expect(stored.scenes.length).toBe(3);
+      expect(stored.phase).toBe("intro");
+    });
+
+    it("updates active question pool count on level toggle and retains supported modes and lengths", () => {
+      render(<ListeningScenesSetupPage />);
+
+      const initialCountText = screen.getAllByText(/\d+ scenes in active pool/)[0].textContent;
+      expect(initialCountText).toBeTruthy();
+
+      // All 5 levels should be present
+      ["N5", "N4", "N3", "N2", "N1"].forEach((lvl) => {
+        expect(screen.getByRole("button", { name: new RegExp(`^${lvl}`, "i") })).toBeTruthy();
+      });
+
+      // Toggle N4 level on (so N5 + N4 are selected)
+      const n4Btn = screen.getByRole("button", { name: /^N4/i });
+      fireEvent.click(n4Btn);
+
+      const multiCountText = screen.getAllByText(/\d+ scenes in active pool/)[0].textContent;
+      expect(multiCountText).not.toBe(initialCountText);
+
+      // Verify drill length buttons (3, 5, 10)
+      [3, 5, 10].forEach((cnt) => {
+        expect(screen.getByRole("button", { name: new RegExp(`^${cnt}`, "i") })).toBeTruthy();
+      });
+
+      // Verify modes: Official JLPT Exam Mode & Guided Study Mode
+      expect(screen.getByText(/Official JLPT Exam Mode/i)).toBeTruthy();
+      expect(screen.getByText(/Guided Study Mode/i)).toBeTruthy();
     });
   });
 });

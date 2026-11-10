@@ -1,0 +1,836 @@
+[
+  {
+    "id": "n2-scene-cinema-family-tickets",
+    "jlpt": 2,
+    "mondaiType": "mondai-1-task",
+    "titleJa": "映画館の窓口（家族チケット料金計算）",
+    "titleEn": "Cinema Ticket Counter (Family Fare Calculation)",
+    "imagePromptDescription": "A cinema ticket counter display with four clearly separated numbered total prices: 1 is 2,500円, 2 is 3,000円, 3 is 3,500円, and 4 is 4,000円. Use a simple ticket-counter background and do not show other numbered prices.",
+    "recommendedAssetPath": "/images/jlpt-scenes/n2/Art Museum Tickets and Special Exhibition Fees.png",
+    "visualObjects": [
+      {
+        "id": "opt-1",
+        "optionNumber": 1,
+        "labelJa": "1番（2,500円）",
+        "labelEn": "1 (¥2,500)",
+        "attributes": {
+          "amount": "¥2,500"
+        },
+        "coordinates": {
+          "xPercent": 20,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-2",
+        "optionNumber": 2,
+        "labelJa": "2番（3,000円）",
+        "labelEn": "2 (¥3,000)",
+        "attributes": {
+          "amount": "¥3,000"
+        },
+        "coordinates": {
+          "xPercent": 40,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-3",
+        "optionNumber": 3,
+        "labelJa": "3番（3,500円）",
+        "labelEn": "3 (¥3,500)",
+        "attributes": {
+          "amount": "¥3,500"
+        },
+        "coordinates": {
+          "xPercent": 60,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-4",
+        "optionNumber": 4,
+        "labelJa": "4番（4,000円）",
+        "labelEn": "4 (¥4,000)",
+        "attributes": {
+          "amount": "¥4,000"
+        },
+        "coordinates": {
+          "xPercent": 80,
+          "yPercent": 50
+        }
+      }
+    ],
+    "audioSequence": [
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "映画館の窓口で女の人が料金について聞いています。",
+        "readingHiragana": "えいがかんのまどぐちでおんなのひとがりょうきんについてきいています。",
+        "textEn": "A woman is asking about prices at a cinema ticket counter.",
+        "pauseAfterMs": 600
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "女の人は全部でいくら支払いますか。",
+        "readingHiragana": "おんなのひとはぜんぶでいくらしはらいますか。",
+        "textEn": "How much will the woman pay in total?",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "大人二人と子ども二人で見たいのですが、料金はいくらになりますか。",
+        "readingHiragana": "おとなふたりとこどもふたりでみたいのですが、りょうきんはいくらになりますか。",
+        "textEn": "We'd like to see the movie as two adults and two children. How much will it cost?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "窓口の係員（男性）",
+        "speakerLabelEn": "Ticket Clerk (Male)",
+        "voiceGender": "male",
+        "textJa": "大人はお一人千円です。四歳から十五歳までのお子様は半額の五百円で、四歳未満のお子様は、保護者の膝の上でご覧になる場合に限り無料です。",
+        "readingHiragana": "おとなはおひとりせんえんです。よんさいからじゅうごさいまでのおこさまははんがくのごひゃくえんで、よんさいみまんのおこさまは、ほごしゃのひざのうえでごらんになるばあいにかぎりむりょうです。",
+        "textEn": "Adult tickets are ¥1,000 each. Children aged four to fifteen pay half price, ¥500. Children under four are free only when seated on a guardian's lap.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "上の子は六歳で、下の子は三歳です。下の子も座席を使う場合は、料金がかかりますか。",
+        "readingHiragana": "うえのこはろくさいで、したのこはさんさいです。したのこもざせきをつかうばあいは、りょうきんがかかりますか。",
+        "textEn": "My older child is six, and the younger one is three. If the younger child uses a seat too, is there a charge?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "窓口の係員（男性）",
+        "speakerLabelEn": "Ticket Clerk (Male)",
+        "voiceGender": "male",
+        "textJa": "はい。座席をご利用になる場合は、四歳未満のお子様も子ども料金の五百円をいただいております。",
+        "readingHiragana": "はい。ざせきをごりようになるばあいは、よんさいみまんのおこさまもこどもりょうきんのごひゃくえんをいただいております。",
+        "textEn": "Yes. If a child under four uses a seat, we charge the child fare of ¥500.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "映画の間ずっと膝の上に座らせるのは大変ですから、下の子の分も座席を取ります。",
+        "readingHiragana": "えいがのあいだずっとひざのうえにすわらせるのはたいへんですから、したのこのぶんもざせきをとります。",
+        "textEn": "It would be difficult to keep the younger child on my lap for the whole movie, so I'll get a seat for them too.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "窓口の係員（男性）",
+        "speakerLabelEn": "Ticket Clerk (Male)",
+        "voiceGender": "male",
+        "textJa": "かしこまりました。大人二名で二千円、お子様二名で千円ですので、合計三千円でございます。",
+        "readingHiragana": "かしこまりました。おとなにめいでにせんえん、おこさまにめいでせんえんですので、ごうけいさんぜんえんでございます。",
+        "textEn": "Certainly. Two adults are ¥2,000, and two children are ¥1,000, for a total of ¥3,000.",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "女の人は全部でいくら支払いますか。",
+        "readingHiragana": "おんなのひとはぜんぶでいくらしはらいますか。",
+        "textEn": "How much will the woman pay in total?",
+        "pauseAfterMs": 0
+      }
+    ],
+    "questions": [
+      {
+        "id": "cinema-fare-primary",
+        "isPrimaryMondai": true,
+        "questionJa": "女の人は全部でいくら支払いますか。",
+        "questionReading": "おんなのひとはぜんぶでいくらしはらいますか。",
+        "questionEn": "How much will the woman pay in total?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "2,500円",
+            "reading": "にせんごひゃくえん",
+            "labelEn": "¥2,500"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "3,000円",
+            "reading": "さんぜんえん",
+            "labelEn": "¥3,000"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "3,500円",
+            "reading": "さんぜんごひゃくえん",
+            "labelEn": "¥3,500"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "4,000円",
+            "reading": "よんせんえん",
+            "labelEn": "¥4,000"
+          }
+        ],
+        "correctIndex": 1,
+        "eliminationExplanationEn": "Two adults cost ¥2,000 total. The six-year-old pays ¥500. A child under four is free only when sitting on a guardian's lap; the woman chooses a separate seat, so the three-year-old also costs ¥500. The total is ¥3,000."
+      },
+      {
+        "id": "cinema-younger-child-seat",
+        "isPrimaryMondai": false,
+        "questionJa": "三歳の子どもは、どうしてチケットが必要になりましたか。",
+        "questionReading": "さんさいのこどもは、どうしてちけっとがひつようになりましたか。",
+        "questionEn": "Why did the three-year-old need a ticket?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "座席を使うことにしたから",
+            "reading": "ざせきをつかうことにしたから",
+            "labelEn": "Because they decided to use a seat"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "四歳になったから",
+            "reading": "よんさいになったから",
+            "labelEn": "Because the child turned four"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "大人の膝に座れないから",
+            "reading": "おとなのひざにすわれないから",
+            "labelEn": "Because the child cannot sit on an adult's lap"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "子ども料金が無料だから",
+            "reading": "こどもりょうきんがむりょうだから",
+            "labelEn": "Because the child fare is free"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "Children under four are free only when seated on a guardian's lap. The woman decides to buy a separate seat for the three-year-old, so the child needs a ticket."
+      },
+      {
+        "id": "cinema-child-fare-age",
+        "isPrimaryMondai": false,
+        "questionJa": "映画館では、何歳から子ども料金がかかりますか。",
+        "questionReading": "えいがかんでは、なんさいからこどもりょうきんがかかりますか。",
+        "questionEn": "From what age does the cinema charge the child fare?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "三歳から",
+            "reading": "さんさいから",
+            "labelEn": "From age three"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "四歳から",
+            "reading": "よんさいから",
+            "labelEn": "From age four"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "六歳から",
+            "reading": "ろくさいから",
+            "labelEn": "From age six"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "十五歳から",
+            "reading": "じゅうごさいから",
+            "labelEn": "From age fifteen"
+          }
+        ],
+        "correctIndex": 1,
+        "eliminationExplanationEn": "The clerk says children aged four through fifteen pay the child fare. Children under four are free only if they sit on a guardian's lap."
+      }
+    ]
+  },
+  {
+    "id": "n2-scene-summer-seminar-planning",
+    "jlpt": 2,
+    "mondaiType": "mondai-1-task",
+    "titleJa": "夏休みのゼミ勉強会の準備",
+    "titleEn": "Summer Seminar Study Group Coordination",
+    "imagePromptDescription": "A university seminar-room whiteboard with four distinct numbered planning tasks: 1 ask the professor about availability, 2 copy academic papers, 3 decide and coordinate the study-group date, and 4 reserve a classroom. Use simple Japanese labels and keep all four choices visually separate.",
+    "recommendedAssetPath": "/images/jlpt-scenes/n2/Four-Step University Seminar Planning Guide.png",
+    "visualObjects": [
+      {
+        "id": "opt-1",
+        "optionNumber": 1,
+        "labelJa": "1番（先生の都合を聞く）",
+        "labelEn": "1 (ask the professor's availability)",
+        "attributes": {
+          "targetAction": "ask about availability",
+          "item": "professor's schedule"
+        },
+        "coordinates": {
+          "xPercent": 20,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-2",
+        "optionNumber": 2,
+        "labelJa": "2番（論文をコピーする）",
+        "labelEn": "2 (copy the academic papers)",
+        "attributes": {
+          "targetAction": "copy papers",
+          "item": "academic papers"
+        },
+        "coordinates": {
+          "xPercent": 40,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-3",
+        "optionNumber": 3,
+        "labelJa": "3番（勉強会の日を決める）",
+        "labelEn": "3 (decide the study-group date)",
+        "attributes": {
+          "targetAction": "coordinate the date",
+          "item": "study-group schedule"
+        },
+        "coordinates": {
+          "xPercent": 60,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-4",
+        "optionNumber": 4,
+        "labelJa": "4番（教室を予約する）",
+        "labelEn": "4 (reserve a classroom)",
+        "attributes": {
+          "targetAction": "reserve a classroom",
+          "item": "seminar room"
+        },
+        "coordinates": {
+          "xPercent": 80,
+          "yPercent": 50
+        }
+      }
+    ],
+    "audioSequence": [
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "大学で女の学生と男の学生が話しています。",
+        "readingHiragana": "だいがくでおんなのがくせいとおとこのがくせいがはなしています。",
+        "textEn": "A female student and a male student are talking at a university.",
+        "pauseAfterMs": 600
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "男の学生は最初に何をしなければなりませんか。",
+        "readingHiragana": "おとこのがくせいはさいしょになにをしなければなりませんか。",
+        "textEn": "What must the male student do first?",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の学生",
+        "speakerLabelEn": "Female Student",
+        "voiceGender": "female",
+        "textJa": "夏休みにゼミの勉強会を開きませんか。先生は夏の間、出張でいらっしゃらないそうなので、学生だけで進めることになりそうです。",
+        "readingHiragana": "なつやすみにぜみのべんきょうかいをひらきませんか。せんせいはなつのあいだ、しゅっちょうでいらっしゃらないそうなので、がくせいだけですすめることになりそうです。",
+        "textEn": "How about holding a seminar study group during summer break? It seems the professor will be away on business, so the students will likely organize it ourselves.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "男の学生",
+        "speakerLabelEn": "Male Student",
+        "voiceGender": "male",
+        "textJa": "いいですね。読む論文は、もうそろっているんですか。",
+        "readingHiragana": "いいですね。よむろんぶんは、もうそろっているんですか。",
+        "textEn": "That sounds good. Do we already have the papers we need to read?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の学生",
+        "speakerLabelEn": "Female Student",
+        "voiceGender": "female",
+        "textJa": "必要な論文は私が持っています。人数分コピーしておきましょうか。",
+        "readingHiragana": "ひつようなろんぶんはわたしがもっています。にんずうぶんこぴーしておきましょうか。",
+        "textEn": "I have the papers we need. Shall we make copies for everyone?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "男の学生",
+        "speakerLabelEn": "Male Student",
+        "voiceGender": "male",
+        "textJa": "それは参加する人数が決まってからで構いません。先に、僕が全員にメールをして日程を調整します。",
+        "readingHiragana": "それはさんかするにんずうがきまってからでかまいません。さきに、ぼくがぜんいんにめーるをしてにっていをちょうせいします。",
+        "textEn": "We can do that after we know how many people will attend. First, I'll email everyone and coordinate the schedule.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の学生",
+        "speakerLabelEn": "Female Student",
+        "voiceGender": "female",
+        "textJa": "わかりました。日程が固まり次第、教室も予約しておけばいいですか。",
+        "readingHiragana": "わかりました。にっていがかたまりしだい、きょうしつもよやくしておけばいいですか。",
+        "textEn": "Understood. Once the schedule is finalized, should I reserve a classroom as well?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "男の学生",
+        "speakerLabelEn": "Male Student",
+        "voiceGender": "male",
+        "textJa": "お願いします。先生のご都合を確認する必要はありません。今回は学生だけで行いましょう。",
+        "readingHiragana": "おねがいします。せんせいのごつごうをかくにんするひつようはありません。こんかいはがくせいだけでおこないましょう。",
+        "textEn": "Please do. There's no need to check the professor's availability. Let's hold it with just the students this time.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "男の学生",
+        "speakerLabelEn": "Male Student",
+        "voiceGender": "male",
+        "textJa": "では、まず参加者に連絡して、日程を調整します。",
+        "readingHiragana": "では、まずさんかしゃにれんらくして、にっていをちょうせいします。",
+        "textEn": "Then first I'll contact the participants and coordinate the schedule.",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "男の学生は最初に何をしなければなりませんか。",
+        "readingHiragana": "おとこのがくせいはさいしょになにをしなければなりませんか。",
+        "textEn": "What must the male student do first?",
+        "pauseAfterMs": 0
+      }
+    ],
+    "questions": [
+      {
+        "id": "seminar-planning-primary",
+        "isPrimaryMondai": true,
+        "questionJa": "男の学生は最初に何をしなければなりませんか。",
+        "questionReading": "おとこのがくせいはさいしょになにをしなければなりませんか。",
+        "questionEn": "What must the male student do first?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "先生の都合を聞く",
+            "reading": "せんせいのつごうをきく",
+            "labelEn": "Ask the professor's availability"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "論文をコピーする",
+            "reading": "ろんぶんをこぴーする",
+            "labelEn": "Copy the academic papers"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "勉強会の日を決める",
+            "reading": "べんきょうかいのひをきめる",
+            "labelEn": "Coordinate the study-group date"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "教室を予約する",
+            "reading": "きょうしつをよやくする",
+            "labelEn": "Reserve a classroom"
+          }
+        ],
+        "correctIndex": 2,
+        "eliminationExplanationEn": "The professor will be away, and the students plan to hold the study group without him. Copies can wait until the number of participants is known. The woman is asked to contact everyone and coordinate a date first; the classroom is reserved once the schedule is finalized."
+      },
+      {
+        "id": "seminar-professor-attendance",
+        "isPrimaryMondai": false,
+        "questionJa": "先生は勉強会に参加しますか。",
+        "questionReading": "せんせいはべんきょうかいにさんかしますか。",
+        "questionEn": "Will the professor participate in the study group?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "出張なので参加しません",
+            "reading": "しゅっちょうなのでさんかしません",
+            "labelEn": "No, because he is away on business"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "必ず参加します",
+            "reading": "かならずさんかします",
+            "labelEn": "Yes, he will definitely participate"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "日程が決まってから参加します",
+            "reading": "にっていがきまってからさんかします",
+            "labelEn": "He will join after the date is set"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "論文を読むために参加します",
+            "reading": "ろんぶんをよむためにさんかします",
+            "labelEn": "He will join to read the papers"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "The professor will be away on a business trip, and they agree to hold the study group with students only."
+      },
+      {
+        "id": "seminar-paper-copy-timing",
+        "isPrimaryMondai": false,
+        "questionJa": "論文のコピーは、いつしますか。",
+        "questionReading": "ろんぶんのこぴーは、いつしますか。",
+        "questionEn": "When will they copy the papers?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "参加する人数が決まってから",
+            "reading": "さんかするにんずうがきまってから",
+            "labelEn": "After the number of participants is decided"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "日程を調整する前",
+            "reading": "にっていをちょうせいするまえ",
+            "labelEn": "Before coordinating the schedule"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "先生が戻ってから",
+            "reading": "せんせいがもどってから",
+            "labelEn": "After the professor returns"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "教室を予約する前",
+            "reading": "きょうしつをよやくするまえ",
+            "labelEn": "Before reserving a classroom"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "The man says copying can wait until the number of participants is known. The schedule, professor's return, and classroom reservation are not stated as conditions for copying."
+      }
+    ]
+  },
+  {
+    "id": "n2-scene-overseas-business-trip-packing",
+    "jlpt": 2,
+    "mondaiType": "mondai-1-task",
+    "titleJa": "海外出張の持ち物チェック",
+    "titleEn": "Overseas Business Trip Packing Check",
+    "imagePromptDescription": "A business travel packing checklist on a desk with four separated numbered items: 1 meeting materials, 2 company pamphlets, 3 business cards, and 4 an electronic dictionary. Include a suitcase in the background and Japanese item labels. Do not add any other numbered items.",
+    "recommendedAssetPath": "/images/jlpt-scenes/n2/Overseas Business Trip Packing Check.png",
+    "visualObjects": [
+      {
+        "id": "opt-1",
+        "optionNumber": 1,
+        "labelJa": "1番（会議の資料）",
+        "labelEn": "1 (meeting materials)",
+        "attributes": {
+          "item": "meeting materials",
+          "targetAction": "pack"
+        },
+        "coordinates": {
+          "xPercent": 20,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-2",
+        "optionNumber": 2,
+        "labelJa": "2番（会社のパンフレット）",
+        "labelEn": "2 (company pamphlets)",
+        "attributes": {
+          "item": "company pamphlets",
+          "targetAction": "pack"
+        },
+        "coordinates": {
+          "xPercent": 40,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-3",
+        "optionNumber": 3,
+        "labelJa": "3番（名刺）",
+        "labelEn": "3 (business cards)",
+        "attributes": {
+          "item": "business cards",
+          "targetAction": "pack extra"
+        },
+        "coordinates": {
+          "xPercent": 60,
+          "yPercent": 50
+        }
+      },
+      {
+        "id": "opt-4",
+        "optionNumber": 4,
+        "labelJa": "4番（電子辞書）",
+        "labelEn": "4 (electronic dictionary)",
+        "attributes": {
+          "item": "electronic dictionary",
+          "targetAction": "pack"
+        },
+        "coordinates": {
+          "xPercent": 80,
+          "yPercent": 50
+        }
+      }
+    ],
+    "audioSequence": [
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "会社で女の人と男の人が話しています。",
+        "readingHiragana": "かいしゃでおんなのひととおとこのひとがはなしています。",
+        "textEn": "A woman and a man are talking at a company.",
+        "pauseAfterMs": 600
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "女の人はこれから何をしますか。",
+        "readingHiragana": "おんなのひとはこれからなにをしますか。",
+        "textEn": "What will the woman do now?",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "来週の海外出張に先立って、特別に準備しておくものがあれば教えていただけますか。",
+        "readingHiragana": "らいしゅうのかいがいしゅっちょうにさきだって、とくべつにじゅんびしておくものがあればおしえていただけますか。",
+        "textEn": "Before next week's overseas business trip, could you let me know if there is anything special I should prepare?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "先輩",
+        "speakerLabelEn": "Senior Colleague",
+        "voiceGender": "male",
+        "textJa": "会議の資料はそろっていますか。",
+        "readingHiragana": "かいぎのしりょうはそろっていますか。",
+        "textEn": "Do you have all the meeting materials?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "はい、資料は一式そろえてあります。",
+        "readingHiragana": "はい、しりょうはいっしきそろえてあります。",
+        "textEn": "Yes, I have the complete set of materials.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "先輩",
+        "speakerLabelEn": "Senior Colleague",
+        "voiceGender": "male",
+        "textJa": "会社のパンフレットは荷物に入れましたか。現地で会社を紹介する際に必要です。",
+        "readingHiragana": "かいしゃのぱんふれっとはにもつにいれましたか。げんちでかいしゃをしょうかいするさいにひつようです。",
+        "textEn": "Have you packed the company pamphlets? You'll need them when introducing the company there.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "あ、うっかりしていました。まだ入れていません。これから用意します。",
+        "readingHiragana": "あ、うっかりしていました。まだいれていません。これからよういします。",
+        "textEn": "Oh, I completely forgot. I haven't packed them yet. I'll get them ready now.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "先輩",
+        "speakerLabelEn": "Senior Colleague",
+        "voiceGender": "male",
+        "textJa": "名刺は多めに持っていったほうがいいですよ。以前、私も足りなくなって困ったことがありましたから。",
+        "readingHiragana": "めいしはおおめにもっていったほうがいいですよ。いぜん、わたしもたりなくなってこまったことがありましたから。",
+        "textEn": "You should take extra business cards. I once ran short and found myself in a difficult situation.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "その点は大丈夫です。以前、私も名刺が足りず困ったことがあるので、今回は多めに用意しました。",
+        "readingHiragana": "そのてんはだいじょうぶです。いぜん、わたしもめいしがたりずこまったことがあるので、こんかいはおおめによういしました。",
+        "textEn": "That's taken care of. I once ran out of business cards too, so I prepared extra this time.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "先輩",
+        "speakerLabelEn": "Senior Colleague",
+        "voiceGender": "male",
+        "textJa": "電子辞書も忘れないでくださいね。",
+        "readingHiragana": "でんしじしょもわすれないでくださいね。",
+        "textEn": "Please don't forget your electronic dictionary either.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "はい、そちらもすでに荷物に入れてあります。パンフレットを取りに行ってから、出発の準備を整えます。",
+        "readingHiragana": "はい、そちらもすでににもつにいれてあります。ぱんふれっとをとりにいってから、しゅっぱつのじゅんびをととのえます。",
+        "textEn": "Yes, that's already in my luggage too. I'll go get the pamphlets and then finish preparing for departure.",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "女の人はこれから何をしますか。",
+        "readingHiragana": "おんなのひとはこれからなにをしますか。",
+        "textEn": "What will the woman do now?",
+        "pauseAfterMs": 0
+      }
+    ],
+    "questions": [
+      {
+        "id": "business-trip-packing-primary",
+        "isPrimaryMondai": true,
+        "questionJa": "女の人はこれから何をしますか。",
+        "questionReading": "おんなのひとはこれからなにをしますか。",
+        "questionEn": "What will the woman do now?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "会議の資料を準備する",
+            "reading": "かいぎのしりょうをじゅんびする",
+            "labelEn": "Prepare the meeting materials"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "会社のパンフレットを用意する",
+            "reading": "かいしゃのぱんふれっとをよういする",
+            "labelEn": "Get the company pamphlets ready"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "名刺を多めに用意する",
+            "reading": "めいしをおおめによういする",
+            "labelEn": "Prepare extra business cards"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "電子辞書を買いに行く",
+            "reading": "でんしじしょをかいにいく",
+            "labelEn": "Go buy an electronic dictionary"
+          }
+        ],
+        "correctIndex": 1,
+        "eliminationExplanationEn": "The meeting materials are already complete, she has prepared extra business cards, and the electronic dictionary is already packed. She admits she forgot the company pamphlets and says she will go get them now."
+      },
+      {
+        "id": "business-trip-cards-senior-reason",
+        "isPrimaryMondai": false,
+        "questionJa": "先輩は、どうして名刺を多めに持っていったほうがいいと言いましたか。",
+        "questionReading": "せんぱいは、どうしてめいしをおおめにもっていったほうがいいといいましたか。",
+        "questionEn": "Why did the senior colleague say she should take extra business cards?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "以前、足りなくなって困ったことがあるから",
+            "reading": "いぜん、たりなくなってこまったことがあるから",
+            "labelEn": "Because he once ran short and had trouble"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "会社の決まりだから",
+            "reading": "かいしゃのきまりだから",
+            "labelEn": "Because it is company policy"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "現地で配る予定だから",
+            "reading": "げんちでくばるよていだから",
+            "labelEn": "Because they plan to hand them out there"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "パンフレットがないから",
+            "reading": "ぱんふれっとがないから",
+            "labelEn": "Because there are no pamphlets"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "The senior says he previously ran out of business cards and was troubled, so he recommends carrying extra. Company policy, handing them out at the destination, and the pamphlets are not his reason."
+      },
+      {
+        "id": "business-trip-cards-woman-reason",
+        "isPrimaryMondai": false,
+        "questionJa": "女の人は、なぜ名刺を多めに用意していましたか。",
+        "questionReading": "おんなのひとは、なぜめいしをおおめによういしていましたか。",
+        "questionEn": "Why had the woman prepared extra business cards?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "以前、自分も足りずに困ったことがあるから",
+            "reading": "いぜん、じぶんもたりずにこまったことがあるから",
+            "labelEn": "Because she had also run short and had trouble before"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "先輩に頼まれたから",
+            "reading": "せんぱいにたのまれたから",
+            "labelEn": "Because her senior asked her to"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "名刺を現地で作るから",
+            "reading": "めいしをげんちでつくるから",
+            "labelEn": "Because she will make business cards there"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "電子辞書を持っていかないから",
+            "reading": "でんしじしょをもっていかないから",
+            "labelEn": "Because she is not taking an electronic dictionary"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "The woman says she also ran out of business cards in the past and had trouble, so she prepared extra this time. Her senior did not ask her to prepare them, and making cards there or leaving behind her dictionary is not mentioned."
+      }
+    ]
+  }
+]

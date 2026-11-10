@@ -1,0 +1,868 @@
+[
+  {
+    "id": "n1-scene-restaurant-incident",
+    "jlpt": 1,
+    "mondaiType": "mondai-1-task",
+    "titleJa": "レストランでのトラブル対応（コートの汚れ）",
+    "titleEn": "Restaurant Customer Incident (Coat Stain)",
+    "imagePromptDescription": "A professional Japanese restaurant manager's desk with an incident log clipboard, showing a checklist with 4 clearly numbered response action choices in Japanese: 1 客のコートをふく (Wipe customer's coat), 2 客のコートを預かる (Keep customer's coat), 3 客の連絡先をたずねる (Ask for customer's contact info), and 4 客にクリーニング代を払う (Pay customer for dry cleaning). A warm, elegant dining room is visible in the soft background. Keep all four numbered actions distinct and leave space for markers.",
+    "recommendedAssetPath": "/images/jlpt-scenes/n1/Four-Step Restaurant Coat Care Guide.png",
+    "visualObjects": [
+      {
+        "id": "opt-1",
+        "optionNumber": 1,
+        "labelJa": "1番（客のコートをふく）",
+        "labelEn": "1 (Wipe customer's coat)",
+        "attributes": {
+          "targetAction": "wipe customer's coat"
+        },
+        "coordinates": {
+          "xPercent": 25,
+          "yPercent": 40
+        }
+      },
+      {
+        "id": "opt-2",
+        "optionNumber": 2,
+        "labelJa": "2番（客のコートを預かる）",
+        "labelEn": "2 (Keep customer's coat)",
+        "attributes": {
+          "targetAction": "keep customer's coat"
+        },
+        "coordinates": {
+          "xPercent": 75,
+          "yPercent": 40
+        }
+      },
+      {
+        "id": "opt-3",
+        "optionNumber": 3,
+        "labelJa": "3番（客の連絡先をたずねる）",
+        "labelEn": "3 (Ask for customer's contact info)",
+        "attributes": {
+          "targetAction": "ask for customer's contact information"
+        },
+        "coordinates": {
+          "xPercent": 25,
+          "yPercent": 75
+        }
+      },
+      {
+        "id": "opt-4",
+        "optionNumber": 4,
+        "labelJa": "4番（客にクリーニング代を払う）",
+        "labelEn": "4 (Pay customer for dry cleaning)",
+        "attributes": {
+          "targetAction": "pay customer for dry cleaning"
+        },
+        "coordinates": {
+          "xPercent": 75,
+          "yPercent": 75
+        }
+      }
+    ],
+    "audioSequence": [
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "レストランで店員と店長が話しています。",
+        "readingHiragana": "れすとらんでてんいんとてんちょうがはなしています。",
+        "textEn": "A clerk and a manager are talking at a restaurant.",
+        "pauseAfterMs": 600
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "店員はこのあとすぐ何をしなければなりませんか。",
+        "readingHiragana": "てんいんはこのあとすぐなにをしなければなりませんか。",
+        "textEn": "What must the clerk do immediately after this?",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "店員",
+        "speakerLabelEn": "Clerk",
+        "voiceGender": "male",
+        "textJa": "店長、大変申し訳ございません。先ほど、お客様のコートに誤ってコーヒーをこぼしてしまいまして…。",
+        "readingHiragana": "てんちょう、たいへんもうしわけございません。さきほど、おきゃくさまのこーとにあやまってこーひーをこぼしてしまいまして…。",
+        "textEn": "Manager, I am terribly sorry. Just now, I accidentally spilled coffee on a customer's coat...",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "店長",
+        "speakerLabelEn": "Manager",
+        "voiceGender": "female",
+        "textJa": "えっ、それは大変ね。お客様にお怪我はなかった？とりあえず、すぐにコートをお拭きした？",
+        "readingHiragana": "えっ、それはたいへんね。おきゃくさまにおけがはなかった？とりあえず、すぐにこーとをおふきした？",
+        "textEn": "Oh no, that's terrible. Was the customer uninjured? For now, did you wipe the coat right away?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "店員",
+        "speakerLabelEn": "Clerk",
+        "voiceGender": "male",
+        "textJa": "はい、濡れたおしぼりですぐに拭き取らせていただきました。ただ、薄い色のウール素材でしたので、染みになってしまう恐れがございます。",
+        "readingHiragana": "はい、ぬれたおしぼりですぐにふきとらせていただきました。ただ、うすいいろのうーるそざいでしたので、しみになってしまうおそれがございます。",
+        "textEn": "Yes, I wiped it off right away with a wet towel. However, because it's a light-colored wool fabric, there is a risk it may leave a stain.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "店長",
+        "speakerLabelEn": "Manager",
+        "voiceGender": "female",
+        "textJa": "そう。本来ならこちらでコートをお預かりして、至急クリーニングを手配したいところだけれど、今日はずいぶん冷え込んでいるから、今コートをお預かりするわけにはいかないわね。",
+        "readingHiragana": "そう。ほんらいならこちらでこーとをおあずかりして、しきゅうくりーにんぐをてはいしたいところだけれど、きょうはずいぶんひえこんでいるから、いまこーとをおあずかりするわけにはいかないわね。",
+        "textEn": "I see. Normally we would hold on to the coat and arrange for urgent dry cleaning, but it's freezing today, so we can't very well take the coat from them right now.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "店員",
+        "speakerLabelEn": "Clerk",
+        "voiceGender": "male",
+        "textJa": "おっしゃる通りですね。",
+        "readingHiragana": "おっしゃるとおりですね。",
+        "textEn": "That is quite true.",
+        "pauseAfterMs": 400
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "店長",
+        "speakerLabelEn": "Manager",
+        "voiceGender": "female",
+        "textJa": "お客様にはご自身でクリーニングに出していただいて、後日領収書をお持ちいただくようお願いしましょう。それから、お帰りの前にお客様のご連絡先を伺うのを絶対に忘れないでちょうだい。",
+        "readingHiragana": "おきゃくさまにはごじしんでくりーにんぐにだしていただいて、ごじつりょうしゅうしょをおもちいただくようおねがいしましょう。それから、おかえりのまえにおきゃくさまのごれんらくさきをうかがうのをぜったいにわすれないでちょうだい。",
+        "textEn": "Let's ask the customer to take it for dry cleaning themselves and bring us the receipt at a later date. And make sure you definitely ask for their contact information before they leave.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "店員",
+        "speakerLabelEn": "Clerk",
+        "voiceGender": "male",
+        "textJa": "承知いたしました。私の不手際ですので、クリーニング代は私が弁償させていただきます。",
+        "readingHiragana": "しょうちいたしました。わたしのふてぎわですので、くりーにんぐだいはわたしがべんしょうさせていただきます。",
+        "textEn": "Understood. Since it was my clumsy mistake, I will compensate for the dry cleaning bill myself.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "店長",
+        "speakerLabelEn": "Manager",
+        "voiceGender": "female",
+        "textJa": "それはいいのよ。お店の責任として店舗費用で処理するから。それより、お客様が退店される前に急いで！",
+        "readingHiragana": "それはいいのよ。おみせのせきにんとしててんぽひようでしょりするから。それより、おきゃくさまがたいてんされるまえにいそいで！",
+        "textEn": "That won't be necessary. As the store's responsibility, we will handle it as a store expense. More importantly, hurry before the customer leaves!",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "店員",
+        "speakerLabelEn": "Clerk",
+        "voiceGender": "male",
+        "textJa": "かしこまりました。ただちに伺ってまいります。",
+        "readingHiragana": "かしこまりました。ただちにうかがってまいります。",
+        "textEn": "Certainly. I will go ask right away.",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "店員はこのあとすぐ何をしなければなりませんか。",
+        "readingHiragana": "てんいんはこのあとすぐなにをしなければなりませんか。",
+        "textEn": "What must the clerk do immediately after this?",
+        "pauseAfterMs": 0
+      }
+    ],
+    "questions": [
+      {
+        "id": "restaurant-incident-primary",
+        "isPrimaryMondai": true,
+        "questionJa": "店員はこのあとすぐ何をしなければなりませんか。",
+        "questionReading": "てんいんはこのあとすぐなにをしなければなりませんか。",
+        "questionEn": "What must the clerk do immediately after this?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "客のコートをふく",
+            "reading": "きゃくのこーとをふく",
+            "labelEn": "Wipe the customer's coat"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "客のコートを預かる",
+            "reading": "きゃくのこーとをあずかる",
+            "labelEn": "Keep the customer's coat"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "客の連絡先をたずねる",
+            "reading": "きゃくのれんらくさきをたずねる",
+            "labelEn": "Ask for the customer's contact information"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "客にクリーニング代を払う",
+            "reading": "きゃくにくりーにんぐだいをはらう",
+            "labelEn": "Pay the customer for dry cleaning"
+          }
+        ],
+        "correctIndex": 2,
+        "eliminationExplanationEn": "The clerk has already wiped the coat with a wet towel (eliminating option 1). The manager states they cannot hold onto the coat today because it is very cold (eliminating option 2). The manager clarifies that dry cleaning will be reimbursed later upon presenting a receipt and covered by the store, not paid directly right now on the spot (eliminating option 4). The immediate requirement before the customer leaves is to ask for their contact details (locking in option 3)."
+      },
+      {
+        "id": "restaurant-incident-coat-reason",
+        "isPrimaryMondai": false,
+        "questionJa": "店長はなぜ客のコートを預からないことにしましたか。",
+        "questionReading": "てんちょうはなぜきゃくのこーとをあずからないことにしましたか。",
+        "questionEn": "Why did the manager decide not to hold on to the customer's coat?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "今日はとても寒いから",
+            "reading": "きょうはとてもさむいから",
+            "labelEn": "Because it is very cold today"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "染みになっていないから",
+            "reading": "しみになっていないから",
+            "labelEn": "Because it did not stain"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "お店に置き場所がないから",
+            "reading": "おみせにおきばしょがないから",
+            "labelEn": "Because there is no storage space in the restaurant"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "客が断ったから",
+            "reading": "きゃくがことわったから",
+            "labelEn": "Because the customer refused"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "The manager explicitly states that although they would normally keep the coat for urgent cleaning, they cannot take it today because the weather is freezing ('今日はずいぶん冷え込んでいるから')."
+      },
+      {
+        "id": "restaurant-incident-payment-payer",
+        "isPrimaryMondai": false,
+        "questionJa": "クリーニング代は誰が支払うことになりましたか。",
+        "questionReading": "くりーにんぐだいはだれがしはらうことになりましたか。",
+        "questionEn": "Who was decided to pay for the dry cleaning bill?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "お店",
+            "reading": "おみせ",
+            "labelEn": "The restaurant"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "店員個人",
+            "reading": "てんいんこじん",
+            "labelEn": "The clerk personally"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "客自身",
+            "reading": "きゃくじしん",
+            "labelEn": "The customer themselves"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "保険会社",
+            "reading": "ほけんがいしゃ",
+            "labelEn": "The insurance company"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "Although the clerk offers to pay for it himself out of responsibility, the manager rejects this and instructs that the restaurant will cover it as a company/store expense ('お店の責任として店舗費用で処理する')."
+      }
+    ]
+  },
+  {
+    "id": "n1-scene-internship-selection",
+    "jlpt": 1,
+    "mondaiType": "mondai-1-task",
+    "titleJa": "就職課でのインターンシップ選び",
+    "titleEn": "University Career Office Internship Selection",
+    "imagePromptDescription": "A university career support office brochure displaying a comparison matrix of 4 internship categories: 1 実践タイプ (Practical Type: real projects, remuneration, specialized skills required), 2 セミナータイプ (Seminar Type: 1–2 days, industry overview, multi-company exposure), 3 体験タイプ (Experience Type: 1–2 weeks, single field/job shadowing), and 4 地元タイプ (Hometown Type: 1 month, local enterprise immersion). Clean tabular brochure layout with Japanese headers and numbered callouts 1–4.",
+    "recommendedAssetPath": "/images/jlpt-scenes/n1/Internship Guide at the Career Centre.png",
+    "visualObjects": [
+      {
+        "id": "opt-1",
+        "optionNumber": 1,
+        "labelJa": "1番（実践タイプ）",
+        "labelEn": "1 (Practical Type)",
+        "attributes": {
+          "targetAction": "apply for practical type internship"
+        },
+        "coordinates": {
+          "xPercent": 25,
+          "yPercent": 40
+        }
+      },
+      {
+        "id": "opt-2",
+        "optionNumber": 2,
+        "labelJa": "2番（セミナータイプ）",
+        "labelEn": "2 (Seminar Type)",
+        "attributes": {
+          "targetAction": "apply for seminar type internship"
+        },
+        "coordinates": {
+          "xPercent": 75,
+          "yPercent": 40
+        }
+      },
+      {
+        "id": "opt-3",
+        "optionNumber": 3,
+        "labelJa": "3番（体験タイプ）",
+        "labelEn": "3 (Experience Type)",
+        "attributes": {
+          "targetAction": "apply for experience type internship"
+        },
+        "coordinates": {
+          "xPercent": 25,
+          "yPercent": 75
+        }
+      },
+      {
+        "id": "opt-4",
+        "optionNumber": 4,
+        "labelJa": "4番（地元タイプ）",
+        "labelEn": "4 (Hometown Type)",
+        "attributes": {
+          "targetAction": "apply for hometown type internship"
+        },
+        "coordinates": {
+          "xPercent": 75,
+          "yPercent": 75
+        }
+      }
+    ],
+    "audioSequence": [
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "大学の就職課で女の学生と係りの人が話しています。",
+        "readingHiragana": "だいがくのしゅうしょくかでのおんなのがくせいとかかりのひとがはなしています。",
+        "textEn": "A female student and a staff member are talking at the university career office.",
+        "pauseAfterMs": 600
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "女の学生はどのタイプのインターンシップに応募しますか。",
+        "readingHiragana": "おんなのがくせいはどのたいぷのいんたーんしっぷにおうぼしますか。",
+        "textEn": "Which type of internship will the female student apply for?",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の学生",
+        "speakerLabelEn": "Female Student",
+        "voiceGender": "female",
+        "textJa": "すみません、インターンシップへの参加を検討しているのですが、まだ志望業界が絞り込めておらず、できるだけ幅広い業種に触れてみたいと考えております。こちらのパンフレットのどれが適しているでしょうか。",
+        "readingHiragana": "すみません、いんたーんしっぷへのさんかをけんとうしているのですが、まだしぼうぎょうかいがしぼりこめておらず、できるだけはばひろいぎょうしゅにふれてみたいとかんがえております。こちらのぱんふれっとのどれがてきしているでしょうか。",
+        "textEn": "Excuse me, I'm considering participating in an internship, but I haven't narrowed down my target industries yet and would like to be exposed to as wide a variety of sectors as possible. Which one from this brochure would be suitable?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "係の人",
+        "speakerLabelEn": "Staff Member",
+        "voiceGender": "male",
+        "textJa": "なるほど。まず1番の『実践タイプ』ですが、これは実際のプロジェクトに加わり報酬も発生しますが、プログラミングや専門知識など高度なスキルが要件となっています。",
+        "readingHiragana": "なるほど。まずいちばんのじっせんたいぷですが、これはじっさいのぷろじぇくとにくわわりほうしゅうもはっせいしますが、ぷろぐらみんぐやせんもんちしきなどこうどなすきるがようけんとなっています。",
+        "textEn": "I see. First, number 1, the 'Practical Type,' involves joining actual projects and offers remuneration, but requires advanced specialized skills like programming.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の学生",
+        "speakerLabelEn": "Female Student",
+        "voiceGender": "female",
+        "textJa": "高度なスキルですか…それは今の私にはハードルが高すぎますね。",
+        "readingHiragana": "こうどなすきるですか…それはいまのわたしにははーどるがたかすぎますね。",
+        "textEn": "Advanced skills... that is a bit too high of a hurdle for me right now.",
+        "pauseAfterMs": 400
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "係の人",
+        "speakerLabelEn": "Staff Member",
+        "voiceGender": "male",
+        "textJa": "そうですね。多種多様な業界を俯瞰したいのであれば、2番の『セミナータイプ』がお勧めです。1〜2日の短期集中型で、複数の企業や業界の動向を一度に把握することができますよ。",
+        "readingHiragana": "そうですね。たしゅたようなぎょうかいをふかんしたいのであれば、にばんのせみなーたいぷがおすすめです。いちににちのたんきしゅうちゅうがたで、ふくすうのきぎょうやぎょうかいのどうこうをいちどにはあくすることができますよ。",
+        "textEn": "Indeed. If you wish to survey a diverse range of industries from a bird's-eye view, number 2, the 'Seminar Type,' is recommended. It's a short 1- to 2-day format where you can grasp trends across multiple corporations and sectors at once.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の学生",
+        "speakerLabelEn": "Female Student",
+        "voiceGender": "female",
+        "textJa": "3番の『体験タイプ』はいかがでしょうか。",
+        "readingHiragana": "さんばんのたいけんたいぷはいかがでしょうか。",
+        "textEn": "How about number 3, the 'Experience Type'?",
+        "pauseAfterMs": 400
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "係の人",
+        "speakerLabelEn": "Staff Member",
+        "voiceGender": "male",
+        "textJa": "3番は1〜2週間の就業体験ですが、特定の1社に腰を据えて業務を深く理解するプログラムですので、すでに進路の方向性が定まっている方向けですね。",
+        "readingHiragana": "さんばんは、いちにしゅうかんのしゅうぎょうたいけんですが、とくていのいっしゃにこしをすえてぎょうむをふかくりかいするぷろぐらむですので、すでにしんろのほうこうせいがさだまっているかたむけですね。",
+        "textEn": "Number 3 is a 1- to 2-week job experience, but because it involves settling into one specific company to understand operations deeply, it is aimed at those whose career path is already decided.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "係の人",
+        "speakerLabelEn": "Staff Member",
+        "voiceGender": "male",
+        "textJa": "それと、4番の『地元タイプ』は、1ヶ月間地元に帰省して地域企業と密接に関わるものですが、長期にわたり単一の企業に拘束されます。",
+        "readingHiragana": "それと、よんばんのじもとたいぷは、いっかげつかんじもとにきせいしてちいききぎょうとみっせつにかかわるものですが、ちょうきにわたりたんいつのきぎょうにこうそくされます。",
+        "textEn": "In addition, number 4, the 'Hometown Type,' involves returning to your hometown for one month to work closely with local enterprises, but ties you down to a single firm over an extended period.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の学生",
+        "speakerLabelEn": "Female Student",
+        "voiceGender": "female",
+        "textJa": "なるほど。特定の1社に長期拘束されるのは今は避けたいです。まずは視野を広げて多くの企業を知りたいので、こちらのタイプに応募することにします。",
+        "readingHiragana": "なるほど。とくていのいっしゃにちょうきこうそくされるのはいまはさけたいです。まずはしやをひろげておおくのきぎょうをしりたいので、こちらのたいぷにおうぼすることにします。",
+        "textEn": "I see. I want to avoid being tied down to one company for a long time right now. First I want to broaden my perspective and learn about many companies, so I will apply for this type.",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "女の学生はどのタイプのインターンシップに応募しますか。",
+        "readingHiragana": "おんなのがくせいはどのたいぷのいんたーんしっぷにおうぼしますか。",
+        "textEn": "Which type of internship will the female student apply for?",
+        "pauseAfterMs": 0
+      }
+    ],
+    "questions": [
+      {
+        "id": "internship-selection-primary",
+        "isPrimaryMondai": true,
+        "questionJa": "女の学生はどのタイプのインターンシップに応募しますか。",
+        "questionReading": "おんなのがくせいはどのたいぷのいんたーんしっぷにおうぼしますか。",
+        "questionEn": "Which type of internship will the female student apply for?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "実践タイプ",
+            "reading": "じっせんたいぷ",
+            "labelEn": "Practical Type"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "セミナータイプ",
+            "reading": "せみなーたいぷ",
+            "labelEn": "Seminar Type"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "体験タイプ",
+            "reading": "たいけんたいぷ",
+            "labelEn": "Experience Type"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "地元タイプ",
+            "reading": "じもとたいぷ",
+            "labelEn": "Hometown Type"
+          }
+        ],
+        "correctIndex": 1,
+        "eliminationExplanationEn": "Option 1 (Practical Type) requires advanced specialized skills that the student considers too high a hurdle. Option 3 (Experience Type) and Option 4 (Hometown Type) require focusing deeply on a single enterprise for weeks or a month, which she rejects because she has not decided on an industry and wants to survey many fields. Option 2 (Seminar Type) allows learning about multiple industries in 1–2 days, matching her exact goal."
+      },
+      {
+        "id": "internship-selection-experience-reason",
+        "isPrimaryMondai": false,
+        "questionJa": "女の学生が「体験タイプ」を選ばなかったのはなぜですか。",
+        "questionReading": "おんなのがくせいがたいけんたいぷをえらばなかったのはなぜですか。",
+        "questionEn": "Why did the female student not choose the 'Experience Type'?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "まだやりたい仕事が決まっていないから",
+            "reading": "まだやりたいしごとがきまっていないから",
+            "labelEn": "Because she hasn't decided what job she wants to do yet"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "報酬が出ないから",
+            "reading": "ほうしゅうがでないから",
+            "labelEn": "Because it offers no compensation"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "開催期間が長すぎるから",
+            "reading": "かいさいきかんがながすぎるから",
+            "labelEn": "Because the period is too long"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "応募の締め切りが過ぎていたから",
+            "reading": "おうぼのしめきりがすぎていたから",
+            "labelEn": "Because the application deadline had passed"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "The advisor notes that the Experience Type is for students whose career direction is already determined, whereas she has not yet decided on or narrowed down her target industry."
+      },
+      {
+        "id": "internship-selection-practical-feature",
+        "isPrimaryMondai": false,
+        "questionJa": "「実践タイプ」のインターンシップの特徴は何ですか。",
+        "questionReading": "じっせんたいぷのいんたーんしっぷのとくちょうはなんですか。",
+        "questionEn": "What is a feature of the 'Practical Type' internship?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "高度な専門スキルが必要で報酬が出る",
+            "reading": "こうどなせんもんすきるがひつようでほうしゅうがでる",
+            "labelEn": "It requires advanced specialized skills and provides remuneration"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "1〜2日で多くの企業を比較できる",
+            "reading": "いちににちでおおくのきぎょうをひかくできる",
+            "labelEn": "Many companies can be compared in 1–2 days"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "地元の企業で1ヶ月間就業する",
+            "reading": "じもとのきぎょうでいっかげつかんしゅうぎょうする",
+            "labelEn": "Working at a local enterprise for one month"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "志望業界が決まっていない人向けである",
+            "reading": "しぼうぎょうかいがきまっていないひとむけである",
+            "labelEn": "It is suited for people who haven't decided their industry"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "The advisor specifies that the Practical Type involves joining real projects and receiving compensation, but requires high-level skills like programming."
+      }
+    ]
+  },
+  {
+    "id": "n1-scene-printer-repair-documents",
+    "jlpt": 1,
+    "mondaiType": "mondai-1-task",
+    "titleJa": "プリンター修理の同梱書類",
+    "titleEn": "Printer Repair Center Accompanying Documents",
+    "imagePromptDescription": "A customer shipping checklist document for a printer repair center with checkboxes beside 4 document options: 1 保証書 (Warranty Card), 2 修理依頼書 (Repair Request Form), 3 保証書 と 修理依頼書 (Warranty Card & Repair Request Form), and 4 修理依頼書 と 修理記録 (Repair Request Form & Repair Record). A cardboard box and printer with cable are sketched on the desk beside the document. Keep the 4 options clear and distinct.",
+    "recommendedAssetPath": "/images/jlpt-scenes/n1/Printer Repair Document Checklist.png",
+    "visualObjects": [
+      {
+        "id": "opt-1",
+        "optionNumber": 1,
+        "labelJa": "1番（保証書）",
+        "labelEn": "1 (Warranty Card)",
+        "attributes": {
+          "documents": [
+            "保証書"
+          ]
+        },
+        "coordinates": {
+          "xPercent": 25,
+          "yPercent": 40
+        }
+      },
+      {
+        "id": "opt-2",
+        "optionNumber": 2,
+        "labelJa": "2番（修理依頼書）",
+        "labelEn": "2 (Repair Request Form)",
+        "attributes": {
+          "documents": [
+            "修理依頼書"
+          ]
+        },
+        "coordinates": {
+          "xPercent": 75,
+          "yPercent": 40
+        }
+      },
+      {
+        "id": "opt-3",
+        "optionNumber": 3,
+        "labelJa": "3番（保証書 と 修理依頼書）",
+        "labelEn": "3 (Warranty Card & Repair Request Form)",
+        "attributes": {
+          "documents": [
+            "保証書",
+            "修理依頼書"
+          ]
+        },
+        "coordinates": {
+          "xPercent": 25,
+          "yPercent": 75
+        }
+      },
+      {
+        "id": "opt-4",
+        "optionNumber": 4,
+        "labelJa": "4番（修理依頼書 と 修理記録）",
+        "labelEn": "4 (Repair Request Form & Repair Record)",
+        "attributes": {
+          "documents": [
+            "修理依頼書",
+            "修理記録"
+          ]
+        },
+        "coordinates": {
+          "xPercent": 75,
+          "yPercent": 75
+        }
+      }
+    ],
+    "audioSequence": [
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "男の人がプリンターの修理センターに電話しています。",
+        "readingHiragana": "おとこのひとがぷりんたーのしゅうりせんたーにでんわしています。",
+        "textEn": "A man is calling a printer repair center.",
+        "pauseAfterMs": 600
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "男の人はプリンターと一緒に何を送らなければなりませんか。",
+        "readingHiragana": "おとこのひとはぷりんたーといっしょになにをおくらなければなりませんか。",
+        "textEn": "What must the man send together with the printer?",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "男の人",
+        "speakerLabelEn": "Man",
+        "voiceGender": "male",
+        "textJa": "お忙しいところ恐れ入ります。先日貴社のプリンターが突然給紙されなくなりまして、修理をお願いしたいのですが。",
+        "readingHiragana": "おいそがしいところおそれいります。せんじつきしゃのぷりんたーがとつぜんきゅうしされなくなりまして、しゅうりをおねがいしたいのですが。",
+        "textEn": "Pardon me while you are busy. The other day, your company's printer suddenly stopped feeding paper, and I would like to request a repair.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "係の人",
+        "speakerLabelEn": "Staff Member",
+        "voiceGender": "female",
+        "textJa": "ご不便をおかけして誠に申し訳ございません。ご購入から1年以内の保証期間内でしたら無償での対応となりますが、同梱していただく『保証書』の原本はお手元にございますでしょうか。",
+        "readingHiragana": "ごふべんをおかけしてまことにもうしわけございません。ごこうにゅうからいちねんいないのほしょうきかんないでしたらむしょうでのたいおうとなりますが、どうこんしていただくほしょうしょのげんぽんはおてもとにございますでしょうか。",
+        "textEn": "We are terribly sorry for the inconvenience. If it is within the 1-year warranty period from purchase, it will be handled free of charge, but do you have the original 'Warranty Card' on hand to enclose?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "男の人",
+        "speakerLabelEn": "Man",
+        "voiceGender": "male",
+        "textJa": "実は購入から1年をひと月ほど過ぎてしまっているんです。ただ、半年前にも全く同じ紙詰まりの症状で修理していただいた経緯がありまして、その時の『修理記録』は保管してあるのですが。",
+        "readingHiragana": "じつはこうにゅうからいちねんをひとつきほどすぎてしまっているんです。ただ、はんとしまえにもまったくおなじかみづまりのしょうじょうでしゅうりしていただいたけいいがありまして、そのときのしゅうりきろくはほかんしてあるのですが。",
+        "textEn": "Actually, it has been a little over a month past one year since purchase. However, six months ago I had it repaired for the exact same paper jam symptom, and I have kept the 'Repair Record' from that time.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "係の人",
+        "speakerLabelEn": "Staff Member",
+        "voiceGender": "female",
+        "textJa": "さようでございましたか。同一箇所における半年以内の再発でございましたら、保証期間経過後であっても無償再修理の対象とさせていただきます。ご購入日確認のため、期限切れの『保証書』も念のため必ず本体に同梱してお送りいただけますでしょうか。",
+        "readingHiragana": "さようでございましたか。どういつかしょにおけるはんとしいないのさいはつでございましたら、ほしょうきかんけいかごであってもむしょうさいしゅうりのたいしょうとさせていただきます。ごこうにゅうびかくにんのため、きげんぎれのほしょうしょもねんのためかならずほんたいにどうこんしておおくりいただけますでしょうか。",
+        "textEn": "Is that so? If it is a recurrence in the identical spot within six months, we will treat it as eligible for free re-repair even after the warranty has expired. To verify the date of purchase, could you please be sure to enclose the expired 'Warranty Card' together with the unit just in case?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "男の人",
+        "speakerLabelEn": "Man",
+        "voiceGender": "male",
+        "textJa": "承知いたしました。前回の『修理記録』も同封したほうがよろしいですか。",
+        "readingHiragana": "しょうちいたしました。ぜんかいのしゅうりきろくもどうふうしたほうがよろしいですか。",
+        "textEn": "Understood. Should I also enclose the previous 'Repair Record'?",
+        "pauseAfterMs": 400
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "係の人",
+        "speakerLabelEn": "Staff Member",
+        "voiceGender": "female",
+        "textJa": "いえ、修理記録につきましては、こちらのデータベースにお客様の受付番号が記録されておりますので、お客様からお送りいただく必要はございません。代わりに、不具合の症状を記載した『修理依頼書』を弊社のウェブサイトから印刷して添えていただけますか。",
+        "readingHiragana": "いえ、しゅうりきろくにつきましては、こちらのでーたべーすにおきゃくさまのうけつけばんごうがきろくされておりますので、おきゃくさまからおおくりいただくひつようはございません。かわりに、ふぐあいのしょうじょうをきさいしたしゅうりいらいしょをへいしゃのうぇぶさいとからいんさつしてそえていただけますか。",
+        "textEn": "No, as for the repair record, your receipt number is recorded in our database here, so there is no need for you to send it. Instead, could you print the 'Repair Request Form' describing the defect symptoms from our website and attach it?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "男の人",
+        "speakerLabelEn": "Man",
+        "voiceGender": "male",
+        "textJa": "わかりました。では、本体と一緒にその2点を梱包して発送いたします。",
+        "readingHiragana": "わかりました。では、ほんたいといっしょにそのにてんをこんぽうしてはっそういたします。",
+        "textEn": "I understand. Then, I will pack and ship those two items together with the main unit.",
+        "pauseAfterMs": 400
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "係の人",
+        "speakerLabelEn": "Staff Member",
+        "voiceGender": "female",
+        "textJa": "恐れ入ります。どうぞよろしくお願いいたします。",
+        "readingHiragana": "おそれいります。どうぞよろしくおねがいいたします。",
+        "textEn": "Thank you very much. We look forward to receiving it.",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "男の人はプリンターと一緒に何を送らなければなりませんか。",
+        "readingHiragana": "おとこのひとはぷりんたーといっしょになにをおくらなければなりませんか。",
+        "textEn": "What must the man send together with the printer?",
+        "pauseAfterMs": 0
+      }
+    ],
+    "questions": [
+      {
+        "id": "printer-repair-documents-primary",
+        "isPrimaryMondai": true,
+        "questionJa": "男の人はプリンターと一緒に何を送らなければなりませんか。",
+        "questionReading": "おとこのひとはぷりんたーといっしょになにをおくらなければなりませんか。",
+        "questionEn": "What must the man send together with the printer?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "保証書",
+            "reading": "ほしょうしょ",
+            "labelEn": "Warranty Card"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "修理依頼書",
+            "reading": "しゅうりいらいしょ",
+            "labelEn": "Repair Request Form"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "保証書 と 修理依頼書",
+            "reading": "ほしょうしょ と しゅうりいらいしょ",
+            "labelEn": "Warranty Card & Repair Request Form"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "修理依頼書 と 修理記録",
+            "reading": "しゅうりいらいしょ と しゅうりきろく",
+            "labelEn": "Repair Request Form & Repair Record"
+          }
+        ],
+        "correctIndex": 2,
+        "eliminationExplanationEn": "The operator asks the man to enclose the expired Warranty Card (保証書) to confirm purchase date, and to print and include the Repair Request Form (修理依頼書). She specifically tells him that sending the Repair Record (修理記録) is unnecessary because the center already has it stored in their database. Thus, he must send both the Warranty Card and the Repair Request Form (Option 3)."
+      },
+      {
+        "id": "printer-repair-documents-purchase-duration",
+        "isPrimaryMondai": false,
+        "questionJa": "男の人のプリンターは、買ってからどのくらい経っていますか。",
+        "questionReading": "おとこのひとのぷりんたーは、かってからどのくらいあっていますか。",
+        "questionEn": "How long has it been since the man bought the printer?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "1年ちょっと",
+            "reading": "いちねんちょっと",
+            "labelEn": "A little over a year"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "半年",
+            "reading": "はんとし",
+            "labelEn": "Half a year"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "1年以内",
+            "reading": "いちねんいない",
+            "labelEn": "Within 1 year"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "2年以上",
+            "reading": "にねんいじょう",
+            "labelEn": "Over 2 years"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "The man explicitly mentions that it has been a little over a month past the one-year mark since he bought it ('購入から1年をひと月ほど過ぎてしまっている')."
+      },
+      {
+        "id": "printer-repair-documents-record-reason",
+        "isPrimaryMondai": false,
+        "questionJa": "係りの人はなぜ「修理記録」は送らなくてもいいと言いましたか。",
+        "questionReading": "かかりのひとはなぜしゅうりきろくはおくらなくてもいいといいましたか。",
+        "questionEn": "Why did the clerk say he didn't need to send the repair record?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "センターのデータベースに記録が残っているから",
+            "reading": "せんたーのでーたべーすにきろくがのこっているから",
+            "labelEn": "Because the record remains in the center's database"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "修理依頼書があれば十分だから",
+            "reading": "しゅうりいらいしょがあればじゅうぶんだから",
+            "labelEn": "Because the repair request form is sufficient"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "保証期間が切れているから",
+            "reading": "ほしょうきかんがきれているから",
+            "labelEn": "Because the warranty period has expired"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "前回の修理担当者が覚えているから",
+            "reading": "ぜんかいのしゅうりたんとうしゃがおぼえているから",
+            "labelEn": "Because the previous technician remembers it"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "The operator explains that his receipt number and repair record are already saved in the center's database ('データベースにお客様の受付番号が記録されておりますので')."
+      }
+    ]
+  }
+]

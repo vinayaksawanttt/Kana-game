@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, BookOpen, CheckCircle2, Clock, Headphones, Sparkles } from "lucide-react";
+import { ArrowLeft, ArrowRight, Clock } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
 import { JlptPaperIllustration } from "@/components/icons/JlptPaperIllustration";
 import {
@@ -36,6 +36,11 @@ import {
   INFO_SCANNER_DOCUMENTS,
   getInfoScannerCountsByLevel,
 } from "@/engine/jlptInfoScanner";
+import {
+  getListeningSceneCountsByLevel,
+  type ListeningSceneLevel,
+} from "@/engine/jlptListeningScene";
+import { ALL_LISTENING_SCENES } from "@/data/jlpt/listeningScenesData";
 
 type ActiveLevelSelection = "N5" | "N4" | "N3" | "N2" | "N1" | "all";
 
@@ -74,12 +79,14 @@ export default function JlptArenaHubPage() {
   const replyCounts = useMemo(() => getInstantReplyCountsByLevel(INSTANT_REPLY_ITEMS), []);
   const clozeCounts = useMemo(() => getParagraphClozeCountsByLevel(PARAGRAPH_CLOZE_PASSAGES), []);
   const scannerCounts = useMemo(() => getInfoScannerCountsByLevel(INFO_SCANNER_DOCUMENTS), []);
+  const sceneCounts = useMemo(() => getListeningSceneCountsByLevel(ALL_LISTENING_SCENES), []);
 
   const totalStar = STAR_SCRAMBLE_ITEMS.length;
   const totalPhonetic = PHONETIC_TRAP_ITEMS.length;
   const totalSynonym = SYNONYM_MATCH_ITEMS.length;
   const totalUsage = WORD_USAGE_ITEMS.length;
   const totalReply = INSTANT_REPLY_ITEMS.length;
+  const totalScenes = ALL_LISTENING_SCENES.length;
   const totalCloze = PARAGRAPH_CLOZE_PASSAGES.length;
   const totalClozeBlanks = PARAGRAPH_CLOZE_PASSAGES.reduce((acc, p) => acc + p.blanks.length, 0);
   const totalScanner = INFO_SCANNER_DOCUMENTS.length;
@@ -98,6 +105,10 @@ export default function JlptArenaHubPage() {
       : usageCounts[selectedLevel.toUpperCase() as WordUsageLevel] ?? 0;
   const activeReplyCount =
     selectedLevel === "all" ? totalReply : replyCounts[selectedLevel.toUpperCase() as "N5"] ?? 0;
+  const activeSceneCount =
+    selectedLevel === "all"
+      ? totalScenes
+      : sceneCounts[selectedLevel.toUpperCase() as ListeningSceneLevel] ?? 0;
   const activeClozeCount =
     selectedLevel === "all"
       ? totalCloze
@@ -1210,8 +1221,8 @@ export default function JlptArenaHubPage() {
                           もんだい 1 · 2
                         </span>
                       </div>
-                      <span className="rounded-full bg-[var(--line)] px-2.5 py-0.5 text-[11px] font-bold text-[var(--muted)]">
-                        Exam Archetype Preview
+                      <span className="rounded-full bg-[var(--sakura-light)] px-2.5 py-0.5 text-[11px] font-bold text-[var(--primary-fg)]">
+                        {activeSceneCount} scenes in active pool
                       </span>
                     </div>
 
@@ -1267,10 +1278,13 @@ export default function JlptArenaHubPage() {
                       </div>
 
                       <div className="flex sm:ml-auto justify-end shrink-0">
-                        <span className="inline-flex items-center gap-1.5 rounded-sm border border-[var(--ink)]/20 bg-[var(--surface)] px-4 py-2 text-xs font-bold text-[var(--muted)] shadow-2xs">
-                          <Clock size={13} aria-hidden="true" />
-                          <span>次回公開予定 · In Preparation</span>
-                        </span>
+                        <Link
+                          href={`/games/jlpt/listening-scenes?level=${targetLevelQuery}`}
+                          className="inline-flex items-center gap-2 rounded-sm bg-[var(--primary)] px-5 py-2 text-xs font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:opacity-95 shrink-0"
+                        >
+                          <span>演習をはじめる / Start Drill</span>
+                          <ArrowRight size={14} aria-hidden="true" />
+                        </Link>
                       </div>
                     </div>
                   </section>

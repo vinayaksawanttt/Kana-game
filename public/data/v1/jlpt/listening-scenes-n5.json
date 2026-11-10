@@ -1,0 +1,770 @@
+[
+  {
+    "id": "n5-scene-bag-shelf",
+    "jlpt": 5,
+    "mondaiType": "mondai-1-task",
+    "titleJa": "デパートのかばん売り場",
+    "titleEn": "Department Store Bag Shelf",
+    "imagePromptDescription": "A clear, front-facing illustration of a department-store bag display with two shelves labeled 上の段 (top shelf) and 下の段 (bottom shelf). Show eight bags total, four on each shelf. Put the four numbered candidate bags 1–4 on the top shelf, in order from left to right: 1 is a small white bag, 2 is a large white tote bag, 3 is a large black tote bag, and 4 is a small black handbag. Keep the four bags on the bottom shelf unnumbered. Use distinct silhouettes and colors, a simple department-store background, and leave enough space around each numbered bag for a marker. Do not add any other numbered objects.",
+    "recommendedAssetPath": "/images/jlpt-scenes/n5/store_bag_shelf.png",
+    "visualObjects": [
+      {
+        "id": "opt-1",
+        "optionNumber": 1,
+        "labelJa": "1番（上・小さい・白）",
+        "labelEn": "1 (top shelf, small, white)",
+        "attributes": {
+          "position": "top-shelf",
+          "size": "small",
+          "colorOrPattern": "white"
+        },
+        "coordinates": {
+          "xPercent": 20,
+          "yPercent": 32
+        }
+      },
+      {
+        "id": "opt-2",
+        "optionNumber": 2,
+        "labelJa": "2番（上・大きい・白）",
+        "labelEn": "2 (top shelf, large, white)",
+        "attributes": {
+          "position": "top-shelf",
+          "size": "large",
+          "colorOrPattern": "white"
+        },
+        "coordinates": {
+          "xPercent": 40,
+          "yPercent": 32
+        }
+      },
+      {
+        "id": "opt-3",
+        "optionNumber": 3,
+        "labelJa": "3番（上・大きい・黒）",
+        "labelEn": "3 (top shelf, large, black)",
+        "attributes": {
+          "position": "top-shelf",
+          "size": "large",
+          "colorOrPattern": "black"
+        },
+        "coordinates": {
+          "xPercent": 60,
+          "yPercent": 32
+        }
+      },
+      {
+        "id": "opt-4",
+        "optionNumber": 4,
+        "labelJa": "4番（上・小さい・黒）",
+        "labelEn": "4 (top shelf, small, black)",
+        "attributes": {
+          "position": "top-shelf",
+          "size": "small",
+          "colorOrPattern": "black"
+        },
+        "coordinates": {
+          "xPercent": 80,
+          "yPercent": 32
+        }
+      }
+    ],
+    "audioSequence": [
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "デパートで、女の人と店の人が話しています。",
+        "readingHiragana": "でぱーとで、おんなのひととみせのひとがはなしています。",
+        "textEn": "A woman and a store clerk are talking in a department store.",
+        "pauseAfterMs": 600
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "店の人は、どのかばんを取りますか。",
+        "readingHiragana": "みせのひとは、どのかばんをとりますか。",
+        "textEn": "Which bag will the clerk get?",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "すみません、その上の黒いかばんを取ってください。",
+        "readingHiragana": "すみません、そのうえのくろいかばんをとってください。",
+        "textEn": "Excuse me, please get that black bag on the top shelf.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "店の人（男性）",
+        "speakerLabelEn": "Shop Clerk (Male)",
+        "voiceGender": "male",
+        "textJa": "どちらですか。この小さいのですか。",
+        "readingHiragana": "どちらですか。このちいさいのですか。",
+        "textEn": "Which one? This small one?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "いいえ、大きいのです。",
+        "readingHiragana": "いいえ、おおきいのです。",
+        "textEn": "No, the large one.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "店の人（男性）",
+        "speakerLabelEn": "Shop Clerk (Male)",
+        "voiceGender": "male",
+        "textJa": "はい、わかりました。",
+        "readingHiragana": "はい、わかりました。",
+        "textEn": "All right, understood.",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "店の人は、どのかばんを取りますか。",
+        "readingHiragana": "みせのひとは、どのかばんをとりますか。",
+        "textEn": "Which bag will the clerk get?",
+        "pauseAfterMs": 0
+      }
+    ],
+    "questions": [
+      {
+        "id": "bag-primary",
+        "isPrimaryMondai": true,
+        "questionJa": "店の人は、どのかばんを取りますか。",
+        "questionReading": "みせのひとは、どのかばんをとりますか。",
+        "questionEn": "Which bag will the clerk get?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "1番",
+            "reading": "いちばん",
+            "labelEn": "Bag 1"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "2番",
+            "reading": "にばん",
+            "labelEn": "Bag 2"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "3番",
+            "reading": "さんばん",
+            "labelEn": "Bag 3"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "4番",
+            "reading": "よんばん",
+            "labelEn": "Bag 4"
+          }
+        ],
+        "correctIndex": 2,
+        "eliminationExplanationEn": "The top-shelf request narrows the choices to the four numbered bags. Her request for a black bag eliminates 1 and 2, which are white. The clerk asks if she means the small black bag, number 4, but she says no and specifies the large one. The large black bag is number 3."
+      },
+      {
+        "id": "bag-location",
+        "isPrimaryMondai": false,
+        "questionJa": "女の人がほしいかばんは、どこにありますか。",
+        "questionReading": "おんなのひとがほしいかばんは、どこにありますか。",
+        "questionEn": "Where is the bag the woman wants?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "上の段",
+            "reading": "うえのだん",
+            "labelEn": "On the top shelf"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "下の段",
+            "reading": "したのだん",
+            "labelEn": "On the bottom shelf"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "いすの上",
+            "reading": "いすのうえ",
+            "labelEn": "On a chair"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "つくえの下",
+            "reading": "つくえのした",
+            "labelEn": "Under a desk"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "She explicitly asks for the black bag on the top shelf. The bottom shelf, a chair, and under a desk are not mentioned."
+      },
+      {
+        "id": "bag-color-size",
+        "isPrimaryMondai": false,
+        "questionJa": "女の人が買うかばんは、何色で、どんな大きさですか。",
+        "questionReading": "おんなのひとがかうかばんは、なにいろで、どんなおおきさですか。",
+        "questionEn": "What color and size is the bag the woman is buying?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "大きくて白いかばん",
+            "reading": "おおきくてしろいかばん",
+            "labelEn": "A large white bag"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "小さくて黒いかばん",
+            "reading": "ちいさくてくろいかばん",
+            "labelEn": "A small black bag"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "大きくて黒いかばん",
+            "reading": "おおきくてくろいかばん",
+            "labelEn": "A large black bag"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "小さくて白いかばん",
+            "reading": "ちいさくてしろいかばん",
+            "labelEn": "A small white bag"
+          }
+        ],
+        "correctIndex": 2,
+        "eliminationExplanationEn": "She first asks for a black bag, ruling out the two white bags. When the clerk suggests the small black bag, she says no and asks for the large one. The remaining choice is the large black bag."
+      }
+    ]
+  },
+  {
+    "id": "n5-scene-sock-shop",
+    "jlpt": 5,
+    "mondaiType": "mondai-1-task",
+    "titleJa": "靴下の店（デザインと長さ）",
+    "titleEn": "Sock Shop (Length and Pattern)",
+    "imagePromptDescription": "A simple children's sock-shop display with four clearly separated numbered pairs of socks, arranged left to right. 1: long socks with red apple and purple grape pictures. 2: long socks with dog and cat pictures. 3: short socks with red apple and purple grape pictures. 4: short socks with dog and cat pictures. Make the sock length and pictures unmistakable, use a plain bright shop background, and leave space around each pair for a number marker. Do not add other numbered products.",
+    "recommendedAssetPath": "/images/jlpt-scenes/n5/sock_shop.png",
+    "visualObjects": [
+      {
+        "id": "opt-1",
+        "optionNumber": 1,
+        "labelJa": "1番（長い・果物の絵）",
+        "labelEn": "1 (long, fruit pattern)",
+        "attributes": {
+          "size": "long",
+          "colorOrPattern": "apples and grapes"
+        },
+        "coordinates": {
+          "xPercent": 20,
+          "yPercent": 52
+        }
+      },
+      {
+        "id": "opt-2",
+        "optionNumber": 2,
+        "labelJa": "2番（長い・動物の絵）",
+        "labelEn": "2 (long, animal pattern)",
+        "attributes": {
+          "size": "long",
+          "colorOrPattern": "dogs and cats"
+        },
+        "coordinates": {
+          "xPercent": 40,
+          "yPercent": 52
+        }
+      },
+      {
+        "id": "opt-3",
+        "optionNumber": 3,
+        "labelJa": "3番（短い・果物の絵）",
+        "labelEn": "3 (short, fruit pattern)",
+        "attributes": {
+          "size": "short",
+          "colorOrPattern": "apples and grapes"
+        },
+        "coordinates": {
+          "xPercent": 60,
+          "yPercent": 52
+        }
+      },
+      {
+        "id": "opt-4",
+        "optionNumber": 4,
+        "labelJa": "4番（短い・動物の絵）",
+        "labelEn": "4 (short, animal pattern)",
+        "attributes": {
+          "size": "short",
+          "colorOrPattern": "dogs and cats"
+        },
+        "coordinates": {
+          "xPercent": 80,
+          "yPercent": 52
+        }
+      }
+    ],
+    "audioSequence": [
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "靴下の店で、女の人と店の人が話しています。",
+        "readingHiragana": "くつしたのみせで、おんなのひととみせのひとがはなしています。",
+        "textEn": "A woman and a store clerk are talking in a sock shop.",
+        "pauseAfterMs": 600
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "女の人は、どの靴下を買いますか。",
+        "readingHiragana": "おんなのひとは、どのくつしたをかいますか。",
+        "textEn": "Which socks will the woman buy?",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "子供の靴下、ありますか。",
+        "readingHiragana": "こどものくつした、ありますか。",
+        "textEn": "Do you have children's socks?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "店の人（男性）",
+        "speakerLabelEn": "Shop Clerk (Male)",
+        "voiceGender": "male",
+        "textJa": "はい。長いのですか、短いのですか。",
+        "readingHiragana": "はい。ながいのですか、みじかいのですか。",
+        "textEn": "Yes. Would you like long ones or short ones?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "長いのです。",
+        "readingHiragana": "ながいのです。",
+        "textEn": "Long ones, please.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "店の人（男性）",
+        "speakerLabelEn": "Shop Clerk (Male)",
+        "voiceGender": "male",
+        "textJa": "果物の絵と動物の絵があります。どちらがいいですか。",
+        "readingHiragana": "くだもののえとどうぶつのえがあります。どちらがいいですか。",
+        "textEn": "We have fruit pictures and animal pictures. Which would you like?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "そうですね。動物の絵のをください。",
+        "readingHiragana": "そうですね。どうぶつのえのをください。",
+        "textEn": "Let me see. The ones with animal pictures, please.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "店の人（男性）",
+        "speakerLabelEn": "Shop Clerk (Male)",
+        "voiceGender": "male",
+        "textJa": "はい、わかりました。",
+        "readingHiragana": "はい、わかりました。",
+        "textEn": "All right, understood.",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "女の人は、どの靴下を買いますか。",
+        "readingHiragana": "おんなのひとは、どのくつしたをかいますか。",
+        "textEn": "Which socks will the woman buy?",
+        "pauseAfterMs": 0
+      }
+    ],
+    "questions": [
+      {
+        "id": "socks-primary",
+        "isPrimaryMondai": true,
+        "questionJa": "女の人は、どの靴下を買いますか。",
+        "questionReading": "おんなのひとは、どのくつしたをかいますか。",
+        "questionEn": "Which socks will the woman buy?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "1番",
+            "reading": "いちばん",
+            "labelEn": "Socks 1"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "2番",
+            "reading": "にばん",
+            "labelEn": "Socks 2"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "3番",
+            "reading": "さんばん",
+            "labelEn": "Socks 3"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "4番",
+            "reading": "よんばん",
+            "labelEn": "Socks 4"
+          }
+        ],
+        "correctIndex": 1,
+        "eliminationExplanationEn": "She asks for children's socks and says she wants long ones, eliminating short pairs 3 and 4. The clerk offers fruit or animal pictures; she chooses the animal pictures, eliminating pair 1. The long socks with animal pictures are number 2."
+      },
+      {
+        "id": "socks-for-whom",
+        "isPrimaryMondai": false,
+        "questionJa": "この靴下は、だれの靴下ですか。",
+        "questionReading": "このくつしたは、だれのくつしたですか。",
+        "questionEn": "Who are these socks for?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "子供",
+            "reading": "こども",
+            "labelEn": "Children"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "お母さん",
+            "reading": "おかあさん",
+            "labelEn": "Her mother"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "お父さん",
+            "reading": "おとうさん",
+            "labelEn": "Her father"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "先生",
+            "reading": "せんせい",
+            "labelEn": "A teacher"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "The woman asks whether the shop has children's socks, so the socks are for a child. Her mother, father, and a teacher are not mentioned."
+      },
+      {
+        "id": "socks-pattern-not-chosen",
+        "isPrimaryMondai": false,
+        "questionJa": "女の人は、どの絵の靴下を買いませんか。",
+        "questionReading": "おんなのひとは、どのえのくつしたをかいませんか。",
+        "questionEn": "Which pattern did the woman not choose?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "果物の絵",
+            "reading": "くだもののえ",
+            "labelEn": "Fruit pictures"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "動物の絵",
+            "reading": "どうぶつのえ",
+            "labelEn": "Animal pictures"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "花の絵",
+            "reading": "はなのえ",
+            "labelEn": "Flower pictures"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "車の絵",
+            "reading": "くるまのえ",
+            "labelEn": "Car pictures"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "The clerk offers fruit pictures and animal pictures. The woman chooses the animal pictures, so she does not choose the fruit pictures. Flower and car pictures are not part of the clerk's offer."
+      }
+    ]
+  },
+  {
+    "id": "n5-scene-bus-stop",
+    "jlpt": 5,
+    "mondaiType": "mondai-1-task",
+    "titleJa": "バス停の時刻表と乗り場",
+    "titleEn": "Bus Stop Timetable and Platform",
+    "imagePromptDescription": "A clear bus-terminal information sign with four separate numbered route panels: 1番, 3番, 5番, and 7番. Include a large clock showing 13:30 (午後1時30分) and a calendar badge clearly labeled 日曜日. The panels should be easy to distinguish and leave space around each route number for a marker. Use a simple bus-stop background and do not add any other numbered routes.",
+    "recommendedAssetPath": "/images/jlpt-scenes/n5/bus_stop_time_table.png",
+    "visualObjects": [
+      {
+        "id": "opt-1",
+        "optionNumber": 1,
+        "labelJa": "1番のバス",
+        "labelEn": "Bus 1",
+        "attributes": {
+          "colorOrPattern": "route-1"
+        },
+        "coordinates": {
+          "xPercent": 20,
+          "yPercent": 38
+        }
+      },
+      {
+        "id": "opt-2",
+        "optionNumber": 2,
+        "labelJa": "3番のバス",
+        "labelEn": "Bus 3",
+        "attributes": {
+          "colorOrPattern": "route-3"
+        },
+        "coordinates": {
+          "xPercent": 40,
+          "yPercent": 38
+        }
+      },
+      {
+        "id": "opt-3",
+        "optionNumber": 3,
+        "labelJa": "5番のバス",
+        "labelEn": "Bus 5",
+        "attributes": {
+          "colorOrPattern": "route-5"
+        },
+        "coordinates": {
+          "xPercent": 60,
+          "yPercent": 38
+        }
+      },
+      {
+        "id": "opt-4",
+        "optionNumber": 4,
+        "labelJa": "7番のバス",
+        "labelEn": "Bus 7",
+        "attributes": {
+          "colorOrPattern": "route-7"
+        },
+        "coordinates": {
+          "xPercent": 80,
+          "yPercent": 38
+        }
+      }
+    ],
+    "audioSequence": [
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "バス停で、女の人とバス会社の人が話しています。",
+        "readingHiragana": "ばすていで、おんなのひととばすがいしゃのひとがはなしています。",
+        "textEn": "A woman and a bus company employee are talking at a bus stop.",
+        "pauseAfterMs": 600
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "女の人は、何番のバスに乗りますか。",
+        "readingHiragana": "おんなのひとは、なんばんのばすにのりますか。",
+        "textEn": "Which bus number will the woman take?",
+        "pauseAfterMs": 500
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "すみません、1番のバスはみどり駅に行きますか。",
+        "readingHiragana": "すみません、いちばんのばすはみどりえきにいきますか。",
+        "textEn": "Excuse me, does bus number 1 go to Midori Station?",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "バス会社の人（男性）",
+        "speakerLabelEn": "Bus Company Employee (Male)",
+        "voiceGender": "male",
+        "textJa": "いいえ、みどり駅に行くバスは3番と5番と7番ですよ。",
+        "readingHiragana": "いいえ、みどりえきにいくばすはさんばんとごばんとななばんですよ。",
+        "textEn": "No. Buses 3, 5, and 7 go to Midori Station.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "バス会社の人（男性）",
+        "speakerLabelEn": "Bus Company Employee (Male)",
+        "voiceGender": "male",
+        "textJa": "あ、でも、今日は日曜日ですから、5番のバスはありません。",
+        "readingHiragana": "あ、でも、きょうはにちようびですから、ごばんのばすはありません。",
+        "textEn": "Ah, but today is Sunday, so there is no number 5 bus.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "M",
+        "speakerLabelJa": "バス会社の人（男性）",
+        "speakerLabelEn": "Bus Company Employee (Male)",
+        "voiceGender": "male",
+        "textJa": "それから、3番は朝と夕方のバスですから、今の時間は7番ですね。",
+        "readingHiragana": "それから、さんばんはあさとゆうがたのばすですから、いまのじかんはななばんですね。",
+        "textEn": "Also, number 3 runs in the morning and evening, so at this time it is number 7.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "F",
+        "speakerLabelJa": "女の人",
+        "speakerLabelEn": "Woman",
+        "voiceGender": "female",
+        "textJa": "そうですか。ありがとうございます。",
+        "readingHiragana": "そうですか。ありがとうございます。",
+        "textEn": "I see. Thank you very much.",
+        "pauseAfterMs": 450
+      },
+      {
+        "speaker": "Narrator",
+        "speakerLabelJa": "ナレーター",
+        "speakerLabelEn": "Narrator",
+        "voiceGender": "narrator",
+        "textJa": "女の人は、何番のバスに乗りますか。",
+        "readingHiragana": "おんなのひとは、なんばんのばすにのりますか。",
+        "textEn": "Which bus number will the woman take?",
+        "pauseAfterMs": 0
+      }
+    ],
+    "questions": [
+      {
+        "id": "bus-primary",
+        "isPrimaryMondai": true,
+        "questionJa": "女の人は、何番のバスに乗りますか。",
+        "questionReading": "おんなのひとは、なんばんのばすにのりますか。",
+        "questionEn": "Which bus number will the woman take?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "1番",
+            "reading": "いちばん",
+            "labelEn": "Bus 1"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "3番",
+            "reading": "さんばん",
+            "labelEn": "Bus 3"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "5番",
+            "reading": "ごばん",
+            "labelEn": "Bus 5"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "7番",
+            "reading": "ななばん",
+            "labelEn": "Bus 7"
+          }
+        ],
+        "correctIndex": 3,
+        "eliminationExplanationEn": "Bus 1 does not go to Midori Station. Bus 5 does go there, but it does not run today because it is Sunday. Bus 3 only runs in the morning and evening, not at the displayed time of 13:30. The employee says bus 7 is the right bus now."
+      },
+      {
+        "id": "bus-destination",
+        "isPrimaryMondai": false,
+        "questionJa": "女の人は、どこへ行きたいですか。",
+        "questionReading": "おんなのひとは、どこへいきたいですか。",
+        "questionEn": "Where does the woman want to go?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "みどり駅",
+            "reading": "みどりえき",
+            "labelEn": "Midori Station"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "学校",
+            "reading": "がっこう",
+            "labelEn": "School"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "デパート",
+            "reading": "でぱーと",
+            "labelEn": "A department store"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "駅の前",
+            "reading": "えきのまえ",
+            "labelEn": "In front of the station"
+          }
+        ],
+        "correctIndex": 0,
+        "eliminationExplanationEn": "She asks whether bus 1 goes to Midori Station, making that her destination. School, a department store, and in front of a station are not mentioned."
+      },
+      {
+        "id": "bus-sunday",
+        "isPrimaryMondai": false,
+        "questionJa": "今日は、どうして5番のバスがありませんか。",
+        "questionReading": "きょうは、どうしてごばんのばすがありませんか。",
+        "questionEn": "Why can't she take bus number 5 today?",
+        "options": [
+          {
+            "id": "opt-1",
+            "labelJa": "今日は土曜日だから",
+            "reading": "きょうはどようびだから",
+            "labelEn": "Because today is Saturday"
+          },
+          {
+            "id": "opt-2",
+            "labelJa": "朝の時間だから",
+            "reading": "あさのじかんだから",
+            "labelEn": "Because it is morning"
+          },
+          {
+            "id": "opt-3",
+            "labelJa": "今日は日曜日だから",
+            "reading": "きょうはにちようびだから",
+            "labelEn": "Because today is Sunday"
+          },
+          {
+            "id": "opt-4",
+            "labelJa": "駅に行かないから",
+            "reading": "えきにいかないから",
+            "labelEn": "Because it does not go to the station"
+          }
+        ],
+        "correctIndex": 2,
+        "eliminationExplanationEn": "The employee says there is no number 5 bus today because it is Sunday. Saturday and morning are not given as the reason, and bus 5 is one of the buses that goes to Midori Station."
+      }
+    ]
+  }
+]

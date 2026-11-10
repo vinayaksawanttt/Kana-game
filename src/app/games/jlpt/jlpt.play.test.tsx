@@ -7,6 +7,7 @@ import SynonymMatchPlayPage from "./synonym-match/play/[sessionId]/page";
 import InstantReplyPlayPage from "./instant-reply/play/[sessionId]/page";
 import ParagraphClozePlayPage from "./paragraph-cloze/play/[sessionId]/page";
 import InfoScannerPlayPage from "./info-scanner/play/[sessionId]/page";
+import ListeningScenesPlayPage from "./listening-scenes/play/[sessionId]/page";
 import {
   STAR_SCRAMBLE_ITEMS,
   createStarScrambleSession,
@@ -31,6 +32,12 @@ import {
   INFO_SCANNER_DOCUMENTS,
   createInfoScannerSession,
 } from "@/engine/jlptInfoScanner";
+import {
+  createListeningSceneSession,
+} from "@/engine/jlptListeningScene";
+import {
+  ALL_LISTENING_SCENES,
+} from "@/data/jlpt/listeningScenesData";
 
 const mockPush = vi.fn();
 const mockReplace = vi.fn();
@@ -297,6 +304,41 @@ describe("JLPT Games Quit Warning Guard", () => {
       fireEvent.click(screen.getByRole("button", { name: "Quit game" }));
       expect(sessionStorage.getItem(`jlpt-scanner-session:${sessionId}`)).toBeNull();
       expect(mockReplace).toHaveBeenCalledWith("/games/jlpt/info-scanner");
+    });
+  });
+
+  describe("Real-World Listening Scene (/games/jlpt/listening-scenes/play/[sessionId])", () => {
+    beforeEach(() => {
+      const session = createListeningSceneSession(
+        ALL_LISTENING_SCENES,
+        {
+          levels: ["N5"],
+          sceneCount: 3,
+          mode: "exam",
+        },
+        () => 0.2
+      );
+      session.sessionId = sessionId;
+      sessionStorage.setItem(`jlpt-scene-session:${sessionId}`, JSON.stringify(session));
+    });
+
+    it("prompts quit dialog on clicking home link, closes on Stay, and cleans up on Quit game", async () => {
+      render(<ListeningScenesPlayPage />);
+
+      const homeLink = screen.getByRole("link", { name: /audio listening scene · もんだい 1・2 home/i });
+      fireEvent.click(homeLink);
+
+      expect(screen.getByRole("dialog", { name: /quit this game/i })).toBeTruthy();
+
+      fireEvent.click(screen.getByRole("button", { name: "Stay" }));
+      expect(screen.queryByRole("dialog")).toBeNull();
+
+      fireEvent.click(homeLink);
+      expect(screen.getByRole("dialog", { name: /quit this game/i })).toBeTruthy();
+
+      fireEvent.click(screen.getByRole("button", { name: "Quit game" }));
+      expect(sessionStorage.getItem(`jlpt-scene-session:${sessionId}`)).toBeNull();
+      expect(mockReplace).toHaveBeenCalledWith("/games/jlpt/listening-scenes");
     });
   });
 });
