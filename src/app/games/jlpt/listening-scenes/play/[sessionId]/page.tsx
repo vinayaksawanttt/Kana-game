@@ -253,14 +253,14 @@ export default function ListeningScenesPlayPage() {
             />
           </div>
 
-          {/* Visual Scene Illustration with Numbered Coordinate Badges */}
+          {/* Visual Scene Illustration */}
           <div className="mt-6">
             <div className="mb-2 flex items-center justify-between">
               <span className="font-mono text-xs font-bold text-[var(--primary-fg)]">
                 【 イラスト / 書類 · Scene Visual Cue 】
               </span>
               <span className="text-[11px] text-[var(--muted)]">
-                Badges indicate question options 1–4
+                Options 1–4 are shown in the illustration
               </span>
             </div>
 
@@ -273,44 +273,18 @@ export default function ListeningScenesPlayPage() {
                 alt={currentScene.titleJa}
                 className="w-full h-auto object-contain block select-none"
               />
-              {currentScene.visualObjects.map((obj) => {
-                const optNum = obj.optionNumber;
-                const optIdx = (optNum - 1) as 0 | 1 | 2 | 3;
-                const isCorrect = primaryQuestion?.correctIndex === optIdx;
-                const isChosen =
-                  session.currentPrimaryAnswer?.chosenIndex === optIdx;
 
-                let badgeColor = "bg-[var(--ink)]/90 text-white border-white";
-                if (isPrimaryAnswered) {
-                  if (isCorrect) {
-                    badgeColor =
-                      "bg-emerald-600 text-white border-white ring-2 ring-emerald-400";
-                  } else if (isChosen && !isCorrect) {
-                    badgeColor =
-                      "bg-rose-600 text-white border-white ring-2 ring-rose-400";
-                  }
-                }
-
-                return (
-                  <div
+              {/* Accessible markers for screen readers */}
+              <div className="sr-only">
+                {currentScene.visualObjects.map((obj) => (
+                  <span
                     key={obj.id}
-                    data-testid={`scene-target-badge-${optNum}`}
-                    style={{
-                      position: "absolute",
-                      left: `${obj.coordinates.xPercent}%`,
-                      top: `${obj.coordinates.yPercent}%`,
-                      transform: "translate(-50%, -50%)",
-                    }}
-                    className="pointer-events-none transition-transform"
+                    data-testid={`scene-target-badge-${obj.optionNumber}`}
                   >
-                    <span
-                      className={`flex size-7 sm:size-8 items-center justify-center rounded-full border-2 font-mono text-xs sm:text-sm font-black shadow-md ${badgeColor}`}
-                    >
-                      {optNum}
-                    </span>
-                  </div>
-                );
-              })}
+                    {obj.optionNumber}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
 
