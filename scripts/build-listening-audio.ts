@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import crypto from "node:crypto";
 import { execFileSync } from "node:child_process";
 import dotenv from "dotenv";
 import ffmpeg from "fluent-ffmpeg";
@@ -14,19 +15,36 @@ dotenv.config({ path: path.resolve(process.cwd(), ".env") });
 const DATA_DIR = path.resolve(process.cwd(), "public/data/v1/jlpt");
 const OUTPUT_DIR = path.resolve(process.cwd(), "public/audio/listening-scenes");
 const SCRATCH_ROOT = path.resolve(process.cwd(), "node_modules/.cache/listening-audio-scratch");
+const GEMINI_CACHE_DIR = path.resolve(process.cwd(), "node_modules/.cache/gemini-tts-cache");
 
-// TTS Configuration
+// TTS Configuration - OpenAI
 export const TTS_MODEL = "tts-1-hd";
 export const TTS_SPEED = 0.92;
 export const VOICE_NARRATOR = process.env.TTS_VOICE_NARRATOR || "alloy";
 export const VOICE_FEMALE = process.env.TTS_VOICE_FEMALE || "nova";
 export const VOICE_MALE = process.env.TTS_VOICE_MALE || "onyx";
 
-// Edge TTS Configuration (Free high-quality fallback)
+// Edge TTS Configuration
 export const EDGE_VOICE_NARRATOR = "ja-JP-NanamiNeural";
 export const EDGE_VOICE_FEMALE = "ja-JP-NanamiNeural";
 export const EDGE_VOICE_MALE = "ja-JP-KeitaNeural";
 export const EDGE_RATE = "-8%";
+
+// Gemini TTS Configuration
+export const GEMINI_MODELS = [
+  "gemini-3.8-flash-tts",
+  "gemini-3.8-flash-lite-tts",
+  "gemini-2.5-flash-preview-tts",
+];
+export const GEMINI_VOICE_NARRATOR = "Aoede";
+export const GEMINI_VOICE_FEMALE = "Kore";
+export const GEMINI_VOICE_MALE = "Charon";
+
+export type AudioProvider = "openai" | "edge" | "gemini";
+
+// Round-robin state trackers
+let currentModelIndex = 0;
+let currentKeyIndex = 0;
 
 export interface DialogueLine {
   speaker: string;
@@ -182,10 +200,17 @@ export function validateListeningScene(raw: unknown, fileSource: string): Valida
  */
 export function getVoiceForLine(
   line: DialogueLine,
-  provider: "openai" | "edge" = "openai"
+  provider: AudioProvider = "openai"
 ): string {
   const gender = (line.voiceGender || "").toLowerCase();
   const speaker = (line.speaker || "").toUpperCase();
+
+  if (provider === "gemini") {
+    if (gender === "male" || speaker === "M") {
+      return GEMINI_VOICE_MALE;
+    }
+    return GEMINI_VOICE_FEMALE;
+  }
 
   if (provider === "edge") {
     if (gender === "male" || speaker === "M") {
@@ -240,7 +265,134 @@ export async function synthesizeEdgeTtsClip(
 }
 
 /**
- * Synthesizes a TTS clip using OpenAI tts-1-hd, Edge TTS, or dry-run generator.
+ * Synthesizes a TTS clip using Gemini API with persistent caching and round-robin multi-model/multi-key failover.
+ */
+export async function synthesizeGeminiTtsClip(
+  text: string,
+  voice: string,
+  outPath: string,
+  apiKeys: string[]
+): Promise<void> {
+  fs.mkdirSync(path.dirname(outPath), { recursive: true });
+  fs.mkdirSync(GEMINI_CACHE_DIR, { recursive: true });
+
+  // Check persistent disk cache first
+  const cacheHash = crypto.createHash("md5").update(`${voice}:${text}`).digest("hex");
+  const cachePath = path.join(GEMINI_CACHE_DIR, `${cacheHash}.mp3`);
+
+  if (fs.existsSync(cachePath) && fs.statSync(cachePath).size > 500) {
+    fs.copyFileSync(cachePath, outPath);
+    return;
+  }
+
+  if (apiKeys.length === 0) {
+    throw new Error("No Gemini API keys provided for synthesis.");
+  }
+
+  const maxTotalAttempts = GEMINI_MODELS.length * apiKeys.length * 2;
+  let lastError: Error | null = null;
+
+  for (let attempt = 0; attempt < maxTotalAttempts; attempt++) {
+    const model = GEMINI_MODELS[currentModelIndex % GEMINI_MODELS.length];
+    const apiKey = apiKeys[currentKeyIndex % apiKeys.length];
+
+    try {
+      const body = {
+        contents: [{ parts: [{ text }] }],
+        generationConfig: {
+          responseModalities: ["AUDIO"],
+          speechConfig: {
+            voiceConfig: {
+              prebuiltVoiceConfig: { voiceName: voice },
+            },
+          },
+        },
+      };
+
+      const res = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        }
+      );
+
+      const data = await res.json();
+      if (data.error) {
+        const errorMsg = data.error.message || "Gemini TTS error";
+        const isQuota = data.error.code === 429 || errorMsg.includes("Quota exceeded") || errorMsg.includes("rate-limit");
+
+        if (isQuota) {
+          // Switch model and/or key
+          currentModelIndex++;
+          if (currentModelIndex % GEMINI_MODELS.length === 0) {
+            currentKeyIndex++;
+          }
+          const nextModel = GEMINI_MODELS[currentModelIndex % GEMINI_MODELS.length];
+          console.warn(`[WARN] Quota limit on ${model}. Rotating to model ${nextModel}...`);
+          await new Promise((resolve) => setTimeout(resolve, 1500));
+          continue;
+        }
+
+        throw new Error(errorMsg);
+      }
+
+      const candidate = data.candidates?.[0];
+      const inlineData = candidate?.content?.parts?.[0]?.inlineData;
+      if (!inlineData?.data) {
+        throw new Error(`No audio data returned by model ${model}`);
+      }
+
+      const audioBuffer = Buffer.from(inlineData.data, "base64");
+      const mimeType = inlineData.mimeType || "";
+
+      if (mimeType.includes("wav")) {
+        const tempWav = `${outPath}.wav`;
+        fs.writeFileSync(tempWav, audioBuffer);
+        execFileSync(
+          "ffmpeg",
+          ["-y", "-i", tempWav, "-c:a", "libmp3lame", "-b:a", "192k", outPath],
+          { stdio: ["ignore", "pipe", "pipe"] }
+        );
+        if (fs.existsSync(tempWav)) fs.unlinkSync(tempWav);
+      } else {
+        // Raw linear PCM (audio/L16 24kHz)
+        const tempPcm = `${outPath}.pcm`;
+        fs.writeFileSync(tempPcm, audioBuffer);
+        execFileSync(
+          "ffmpeg",
+          ["-y", "-f", "s16le", "-ar", "24000", "-ac", "1", "-i", tempPcm, "-c:a", "libmp3lame", "-b:a", "192k", outPath],
+          { stdio: ["ignore", "pipe", "pipe"] }
+        );
+        if (fs.existsSync(tempPcm)) fs.unlinkSync(tempPcm);
+      }
+
+      if (fs.existsSync(outPath) && fs.statSync(outPath).size > 0) {
+        // Cache to permanent disk cache
+        fs.copyFileSync(outPath, cachePath);
+        // Advance round-robin index smoothly for load balancing
+        currentModelIndex++;
+        return;
+      }
+
+      throw new Error(`Generated empty audio file from ${model}`);
+    } catch (err: unknown) {
+      lastError = err instanceof Error ? err : new Error(String(err));
+      // Rotate model on any error
+      currentModelIndex++;
+      if (currentModelIndex % GEMINI_MODELS.length === 0) {
+        currentKeyIndex++;
+      }
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+    }
+  }
+
+  throw new Error(`All Gemini round-robin attempts failed: ${lastError?.message || "Unknown error"}`);
+}
+
+/**
+ * Synthesizes a TTS clip using Gemini, Edge TTS, or OpenAI tts-1-hd.
  */
 export async function synthesizeTtsClip(
   openai: OpenAI | null,
@@ -248,11 +400,16 @@ export async function synthesizeTtsClip(
   voice: string,
   outPath: string,
   dryRun: boolean,
-  provider: "openai" | "edge" = "openai"
+  provider: AudioProvider = "openai",
+  geminiApiKeys: string[] = []
 ): Promise<void> {
   if (dryRun) {
-    // Generate synthetic silence chunk for dry-run verification
     createSilenceChunk(0.8, outPath);
+    return;
+  }
+
+  if (provider === "gemini") {
+    await synthesizeGeminiTtsClip(text, voice, outPath, geminiApiKeys);
     return;
   }
 
@@ -359,17 +516,6 @@ export function loadAllListeningScenes(): ValidatedScene[] {
 
 /**
  * Builds the complete audio for a single scene according to the required 11-step stitching specification:
- *  1. first_chime.mp3
- *  2. 500 ms silence
- *  3. Narrator reads introJa followed by questionJa
- *  4. 1000 ms silence
- *  5. second_chime.mp3
- *  6. 600 ms silence
- *  7. Dialogue lines in audioSequence order, using matching M/F voice, with 400 ms silence between turns
- *  8. 1200 ms silence
- *  9. first_chime.mp3
- * 10. 500 ms silence
- * 11. Narrator repeats questionJa
  */
 export async function buildSceneAudio(
   scene: ValidatedScene,
@@ -381,7 +527,8 @@ export async function buildSceneAudio(
     secondChimePath: string;
     dryRun: boolean;
     force: boolean;
-    provider?: "openai" | "edge";
+    provider?: AudioProvider;
+    geminiApiKeys?: string[];
     mergeFn?: (inputFiles: string[], outputFile: string, scratchDir: string) => Promise<void>;
   }
 ): Promise<string> {
@@ -391,8 +538,15 @@ export async function buildSceneAudio(
     return targetMp3;
   }
 
-  const provider = options.provider || "openai";
-  const narratorVoice = provider === "edge" ? EDGE_VOICE_NARRATOR : VOICE_NARRATOR;
+  const provider = options.provider || "gemini";
+  let narratorVoice: string;
+  if (provider === "gemini") {
+    narratorVoice = GEMINI_VOICE_NARRATOR;
+  } else if (provider === "edge") {
+    narratorVoice = EDGE_VOICE_NARRATOR;
+  } else {
+    narratorVoice = VOICE_NARRATOR;
+  }
 
   const sceneScratchDir = path.join(options.scratchRoot, scene.id);
   fs.mkdirSync(sceneScratchDir, { recursive: true });
@@ -413,7 +567,7 @@ export async function buildSceneAudio(
   // Step 3: Narrator reads introJa followed by questionJa
   const chunk03Path = path.join(sceneScratchDir, "chunk_03_narrator_intro_question.mp3");
   const introQuestionText = `${scene.introJa} ${scene.questionJa}`;
-  await synthesizeTtsClip(options.openai, introQuestionText, narratorVoice, chunk03Path, options.dryRun, provider);
+  await synthesizeTtsClip(options.openai, introQuestionText, narratorVoice, chunk03Path, options.dryRun, provider, options.geminiApiKeys);
 
   // Step 7: Dialogue lines in audioSequence order using matching M/F voice
   const dialogueChunkPaths: string[] = [];
@@ -421,13 +575,13 @@ export async function buildSceneAudio(
     const line = scene.dialogueLines[i];
     const voice = getVoiceForLine(line, provider);
     const lineChunkPath = path.join(sceneScratchDir, `chunk_07_dialogue_${i}.mp3`);
-    await synthesizeTtsClip(options.openai, line.textJa, voice, lineChunkPath, options.dryRun, provider);
+    await synthesizeTtsClip(options.openai, line.textJa, voice, lineChunkPath, options.dryRun, provider, options.geminiApiKeys);
     dialogueChunkPaths.push(lineChunkPath);
   }
 
   // Step 11: Narrator repeats questionJa
   const chunk11Path = path.join(sceneScratchDir, "chunk_11_narrator_repeat_question.mp3");
-  await synthesizeTtsClip(options.openai, scene.questionJa, narratorVoice, chunk11Path, options.dryRun, provider);
+  await synthesizeTtsClip(options.openai, scene.questionJa, narratorVoice, chunk11Path, options.dryRun, provider, options.geminiApiKeys);
 
   // Construct ordered list of chunks
   const orderedChunks: string[] = [
@@ -483,7 +637,8 @@ export interface ProcessScenesOptions {
   secondChimePath: string;
   dryRun: boolean;
   force: boolean;
-  provider?: "openai" | "edge";
+  provider?: AudioProvider;
+  geminiApiKeys?: string[];
   mergeFn?: (inputFiles: string[], outputFile: string, scratchDir: string) => Promise<void>;
   buildSceneFn?: typeof buildSceneAudio;
 }
@@ -519,6 +674,7 @@ export async function processListeningScenes(
         dryRun: options.dryRun,
         force: options.force,
         provider: options.provider,
+        geminiApiKeys: options.geminiApiKeys,
         mergeFn: options.mergeFn,
       });
       succeededScenes.push(scene.id);
@@ -556,21 +712,49 @@ export async function processListeningScenes(
 export async function main(): Promise<void> {
   const isDryRun = process.argv.includes("--dry-run");
   const force = process.argv.includes("--force");
+  const useGeminiExplicit = process.argv.includes("--gemini");
   const useOpenAiExplicit = process.argv.includes("--openai");
-  const apiKey = (process.env.OPENAI_API_KEY || "").trim();
-  const hasRealOpenAiKey = !!(apiKey && !apiKey.includes("your_openai_api_key_here"));
+  const useEdgeExplicit = process.argv.includes("--edge");
 
-  // Default to Edge TTS unless --openai is explicitly passed with a valid key
-  const provider: "openai" | "edge" = useOpenAiExplicit || (hasRealOpenAiKey && !process.argv.includes("--edge"))
-    ? "openai"
-    : "edge";
+  const geminiApiKeys: string[] = [];
+  if (process.env.GEMINI_API_KEY) {
+    geminiApiKeys.push(
+      ...process.env.GEMINI_API_KEY.split(",").map((k) => k.trim()).filter(Boolean)
+    );
+  }
+  for (let i = 1; i <= 20; i++) {
+    const val = process.env[`GEMINI_API_KEY${i}`] || process.env[`GEMINI_API_KEY_${i}`];
+    if (val && typeof val === "string" && val.trim()) {
+      geminiApiKeys.push(val.trim());
+    }
+  }
+
+  const openAiApiKey = (process.env.OPENAI_API_KEY || "").trim();
+
+  // Provider resolution:
+  let provider: AudioProvider = "edge";
+  if (useGeminiExplicit || (geminiApiKeys.length > 0 && !useEdgeExplicit && !useOpenAiExplicit)) {
+    provider = "gemini";
+  } else if (useOpenAiExplicit) {
+    provider = "openai";
+  } else {
+    provider = "edge";
+  }
 
   console.log("=== JLPT Listening Scene Audio Builder ===");
   console.log(`Data Directory:    ${DATA_DIR}`);
   console.log(`Output Directory:  ${OUTPUT_DIR}`);
   console.log(`Scratch Root:      ${SCRATCH_ROOT}`);
-  console.log(`TTS Provider:      ${provider.toUpperCase()} (${provider === "edge" ? "Microsoft Edge Neural TTS — Free" : "OpenAI tts-1-hd"})`);
-  if (provider === "openai") {
+  console.log(`TTS Provider:      ${provider.toUpperCase()}`);
+
+  if (provider === "gemini") {
+    console.log(`Model Pool:        ${GEMINI_MODELS.join(", ")}`);
+    console.log(`Active API Keys:   ${geminiApiKeys.length}`);
+    console.log(`Voice (Narrator):  ${GEMINI_VOICE_NARRATOR} (Aoede)`);
+    console.log(`Voice (Female):    ${GEMINI_VOICE_FEMALE} (Kore)`);
+    console.log(`Voice (Male):      ${GEMINI_VOICE_MALE} (Charon)`);
+    console.log(`Disk Chunk Cache:  ${GEMINI_CACHE_DIR}`);
+  } else if (provider === "openai") {
     console.log(`TTS Model:         ${TTS_MODEL}`);
     console.log(`Speech Speed:      ${TTS_SPEED}`);
     console.log(`Voice (Narrator):  ${VOICE_NARRATOR}`);
@@ -586,12 +770,21 @@ export async function main(): Promise<void> {
     console.log(`Mode:              DRY RUN (synthetic validation audio)`);
   }
 
-  if (provider === "openai" && !isDryRun && !apiKey) {
+  if (provider === "gemini" && !isDryRun && geminiApiKeys.length === 0) {
+    console.error("================================================================================");
+    console.error("ERROR: GEMINI_API_KEY environment variable is missing or empty.");
+    console.error("Please configure your Gemini API key in .env.local or .env:");
+    console.error("  GEMINI_API_KEY=your_gemini_api_key_here");
+    console.error("To use free Edge TTS instead without any API key, run with '--edge'.");
+    console.error("================================================================================");
+    process.exit(1);
+  }
+
+  if (provider === "openai" && !isDryRun && !openAiApiKey) {
     console.error("================================================================================");
     console.error("ERROR: OPENAI_API_KEY environment variable is missing or empty.");
     console.error("Please configure your OpenAI API key in .env.local or .env:");
     console.error("  OPENAI_API_KEY=your_openai_api_key_here");
-    console.error("To use free Edge TTS instead without any API key, run with '--edge'.");
     console.error("================================================================================");
     process.exit(1);
   }
@@ -610,7 +803,7 @@ export async function main(): Promise<void> {
   }
 
   // Initialize OpenAI client if using OpenAI provider
-  const openai = provider === "openai" && !isDryRun && apiKey ? new OpenAI({ apiKey }) : null;
+  const openai = provider === "openai" && !isDryRun && openAiApiKey ? new OpenAI({ apiKey: openAiApiKey }) : null;
 
   // Load all scenes
   let allScenes: ValidatedScene[];
@@ -633,6 +826,7 @@ export async function main(): Promise<void> {
     dryRun: isDryRun,
     force,
     provider,
+    geminiApiKeys,
   });
 
   // Report status and cleanup
