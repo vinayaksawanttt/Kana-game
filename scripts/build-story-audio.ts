@@ -3,6 +3,7 @@ import path from "node:path";
 import { MsEdgeTTS, OUTPUT_FORMAT } from "msedge-tts";
 import { buildStoryAudioQueue } from "../src/engine/audio";
 import { getAllStories } from "../src/data/stories";
+import { synthesizeGeminiTtsClip } from "./build-listening-audio";
 
 const DATA_DIR = path.resolve(process.cwd(), "public/data/v1/stories");
 const OUTPUT_DIR = path.resolve(process.cwd(), "public/audio/stories");
@@ -37,6 +38,7 @@ function buildTasks(args: string[]): AudioTask[] {
 
   const requestedSlug = args.find((arg) => arg.startsWith("--story="))?.split("=")[1];
   const limit = parseLimit(args);
+  const force = args.includes("--force");
   const storiesById = new Map(getAllStories().map((story) => [story.id, story]));
   const files = fs.readdirSync(DATA_DIR).filter((file) => file.endsWith(".json")).sort();
   const tasks: AudioTask[] = [];
@@ -49,7 +51,7 @@ function buildTasks(args: string[]): AudioTask[] {
 
     for (const segment of buildStoryAudioQueue({ slug: story.slug, paragraphs: data.paragraphs })) {
       const targetFile = path.join(OUTPUT_DIR, story.slug, `${segment.index}.mp3`);
-      if (!fs.existsSync(targetFile) || fs.statSync(targetFile).size === 0) {
+      if (force || !fs.existsSync(targetFile) || fs.statSync(targetFile).size === 0) {
         tasks.push({ slug: story.slug, index: segment.index, text: segment.ttsText, targetFile });
       }
     }
@@ -106,7 +108,22 @@ async function synthesizeFile(
 export async function buildStoryAudio(args = process.argv.slice(2)): Promise<void> {
   const tasks = buildTasks(args);
   const dryRun = args.includes("--dry-run");
-  console.log(`[Story Audio] ${tasks.length} missing sentence clips${dryRun ? " (dry run)" : ""}.`);
+  const useGemini = args.includes("--gemini");
+
+  const geminiApiKeys: string[] = [];
+  if (process.env.GEMINI_API_KEY) {
+    geminiApiKeys.push(
+      ...process.env.GEMINI_API_KEY.split(",").map((k) => k.trim()).filter(Boolean)
+    );
+  }
+  for (let i = 1; i <= 20; i++) {
+    const val = process.env[`GEMINI_API_KEY${i}`] || process.env[`GEMINI_API_KEY_${i}`];
+    if (val && typeof val === "string" && val.trim()) {
+      geminiApiKeys.push(val.trim());
+    }
+  }
+
+  console.log(`[Story Audio] ${tasks.length} clips to synthesize${dryRun ? " (dry run)" : ""}. Provider: ${useGemini ? "GEMINI (Aoede)" : "EDGE (Nanami)"}`);
   if (dryRun || tasks.length === 0) return;
 
   let currentStory = "";
@@ -117,7 +134,11 @@ export async function buildStoryAudio(args = process.argv.slice(2)): Promise<voi
       console.log(`\n=== Story: ${currentStory} ===`);
     }
     process.stdout.write(`[${index + 1}/${tasks.length}] sentence ${task.index + 1}... `);
-    await synthesizeFile(task.text, task.targetFile);
+    if (useGemini && geminiApiKeys.length > 0) {
+      await synthesizeGeminiTtsClip(task.text, "Aoede", task.targetFile, geminiApiKeys);
+    } else {
+      await synthesizeFile(task.text, task.targetFile);
+    }
     process.stdout.write(`Done (${fs.statSync(task.targetFile).size} bytes)\n`);
     await new Promise((resolve) => setTimeout(resolve, 40));
   }
