@@ -111,12 +111,17 @@ export async function buildStoryAudio(args = process.argv.slice(2)): Promise<voi
   const useGemini = args.includes("--gemini");
 
   const geminiApiKeys: string[] = [];
+  // If GEMINI_API_KEY3 is set, prioritize it first since it has fresh quota
+  if (process.env.GEMINI_API_KEY3) {
+    geminiApiKeys.push(process.env.GEMINI_API_KEY3.trim());
+  }
   if (process.env.GEMINI_API_KEY) {
     geminiApiKeys.push(
       ...process.env.GEMINI_API_KEY.split(",").map((k) => k.trim()).filter(Boolean)
     );
   }
   for (let i = 1; i <= 20; i++) {
+    if (i === 3) continue;
     const val = process.env[`GEMINI_API_KEY${i}`] || process.env[`GEMINI_API_KEY_${i}`];
     if (val && typeof val === "string" && val.trim()) {
       geminiApiKeys.push(val.trim());

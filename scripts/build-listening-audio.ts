@@ -324,14 +324,12 @@ export async function synthesizeGeminiTtsClip(
         const isQuota = data.error.code === 429 || errorMsg.includes("Quota exceeded") || errorMsg.includes("rate-limit");
 
         if (isQuota) {
-          // Switch model and/or key
+          // Switch model and key to try a different project bucket immediately
           currentModelIndex++;
-          if (currentModelIndex % GEMINI_MODELS.length === 0) {
-            currentKeyIndex++;
-          }
+          currentKeyIndex++;
           const nextModel = GEMINI_MODELS[currentModelIndex % GEMINI_MODELS.length];
-          console.warn(`[WARN] Quota limit on ${model}. Rotating to model ${nextModel}...`);
-          await new Promise((resolve) => setTimeout(resolve, 1500));
+          console.warn(`[WARN] Quota limit on ${model}. Rotating to key ${(currentKeyIndex % apiKeys.length) + 1} / model ${nextModel}...`);
+          await new Promise((resolve) => setTimeout(resolve, 1000));
           continue;
         }
 
