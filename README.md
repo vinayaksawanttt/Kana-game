@@ -112,6 +112,22 @@ Visit [http://localhost:3000](http://localhost:3000) to view the Games Hub.
 | `npm run build:kanji-data` | Processes raw KANJIDIC data into public static JSON files (`public/data/v1/kanji/`). |
 | `npm run build:radicals` | Builds the JLPT-filtered radical chart, inverse index, and compact kanji example sentences; also runs automatically before `npm run build`. |
 | `npm run build:grammar-data` | Combines grammar rules and matching local examples into public static grammar JSON. |
+| `npm run build:listening-audio` | Builds offline audio clips for the JLPT Listening Scene game. |
+
+### Environment Variables
+
+To synthesize audio using the listening audio build script (`npm run build:listening-audio`), configure your local environment:
+
+```bash
+cp .env.example .env.local
+```
+
+Set your OpenAI API key in `.env.local`:
+```env
+OPENAI_API_KEY=your_openai_api_key_here
+```
+
+> **Security Note:** `.env` and `.env.local` are explicitly ignored in `.gitignore` to ensure real credentials are never committed to version control. Do not commit actual secrets or API keys.
 
 ---
 

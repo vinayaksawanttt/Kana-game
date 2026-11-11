@@ -1,270 +1,660 @@
 import fs from "node:fs";
 import path from "node:path";
+import { execFileSync } from "node:child_process";
+import dotenv from "dotenv";
+import ffmpeg from "fluent-ffmpeg";
+import OpenAI from "openai";
 import { MsEdgeTTS, OUTPUT_FORMAT } from "msedge-tts";
-import { cleanSentenceForAudio } from "../src/engine/audio";
 
-const VOCAB_DATA_DIR = path.resolve(process.cwd(), "public/data/v1/vocabulary");
-const LISTENING_AUDIO_DIR = path.resolve(process.cwd(), "public/audio/listening");
-const MANIFEST_FILE = path.resolve(process.cwd(), "src/data/audio-manifest.generated.ts");
+// Load environment variables from .env.local and .env
+dotenv.config({ path: path.resolve(process.cwd(), ".env.local") });
+dotenv.config({ path: path.resolve(process.cwd(), ".env") });
 
-const VOICE = "ja-JP-NanamiNeural";
-const SPEECH_RATE = "-5%";
-const CONCURRENCY = 8;
+// Paths
+const DATA_DIR = path.resolve(process.cwd(), "public/data/v1/jlpt");
+const OUTPUT_DIR = path.resolve(process.cwd(), "public/audio/listening-scenes");
+const SCRATCH_ROOT = path.resolve(process.cwd(), "node_modules/.cache/listening-audio-scratch");
 
-const TARGET_PER_LEVEL: Record<string, number> = {
-  N5: 60,
-  N4: 60,
-  N3: 80,
-  N2: 80,
-  N1: 80,
-};
+// TTS Configuration
+export const TTS_MODEL = "tts-1-hd";
+export const TTS_SPEED = 0.92;
+export const VOICE_NARRATOR = process.env.TTS_VOICE_NARRATOR || "alloy";
+export const VOICE_FEMALE = process.env.TTS_VOICE_FEMALE || "nova";
+export const VOICE_MALE = process.env.TTS_VOICE_MALE || "onyx";
 
-interface VocabExample {
-  ja?: string;
-  furigana?: string;
-  en?: string;
+// Edge TTS Configuration (Free high-quality fallback)
+export const EDGE_VOICE_NARRATOR = "ja-JP-NanamiNeural";
+export const EDGE_VOICE_FEMALE = "ja-JP-NanamiNeural";
+export const EDGE_VOICE_MALE = "ja-JP-KeitaNeural";
+export const EDGE_RATE = "-8%";
+
+export interface DialogueLine {
+  speaker: string;
+  speakerLabelJa?: string;
+  speakerLabelEn?: string;
+  voiceGender?: "male" | "female" | "narrator" | string;
+  textJa: string;
+  readingHiragana?: string;
+  textEn?: string;
+  pauseAfterMs?: number;
 }
 
-interface VocabEntry {
+export interface ValidatedScene {
   id: string;
-  word: string;
-  reading: string;
-  level: string;
-  examples?: VocabExample[];
+  jlpt: number;
+  titleJa?: string;
+  introJa: string;
+  questionJa: string;
+  dialogueLines: DialogueLine[];
 }
 
-interface CuratedListeningPrompt {
-  sentId: string;
-  recordId: string;
-  exampleIdx: number;
-  level: string;
-  cleanJa: string;
-  en: string;
-  relPath: string;
-  targetFile: string;
-}
+/**
+ * Resolves chime files from standard directories.
+ */
+export function resolveChimeFile(filename: string): string {
+  const candidates = [
+    path.resolve(process.cwd(), "src/data/temp sound", filename),
+    path.resolve(process.cwd(), "src/data/temp_sound", filename),
+    path.resolve(process.cwd(), "public/audio/chimes", filename),
+    path.resolve(process.cwd(), "public/audio", filename),
+    path.resolve(process.cwd(), filename),
+  ];
 
-async function sleep(ms: number): Promise<void> {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
-async function synthesizeFile(
-  tts: MsEdgeTTS,
-  text: string,
-  targetFile: string
-): Promise<void> {
-  const maxRetries = 3;
-  for (let attempt = 1; attempt <= maxRetries; attempt++) {
-    try {
-      await new Promise<void>((resolve, reject) => {
-        const { audioStream } = tts.toStream(text, { rate: SPEECH_RATE });
-        const out = fs.createWriteStream(targetFile);
-
-        audioStream.pipe(out);
-        out.on("finish", () => resolve());
-        out.on("error", (err) => {
-          fs.rmSync(targetFile, { force: true });
-          reject(err);
-        });
-        audioStream.on("error", (err) => {
-          fs.rmSync(targetFile, { force: true });
-          reject(err);
-        });
-      });
-
-      const stat = fs.statSync(targetFile);
-      if (stat.size > 0) {
-        return;
-      }
-      throw new Error(`Generated listening audio file was empty: ${targetFile}`);
-    } catch (err) {
-      fs.rmSync(targetFile, { force: true });
-      if (attempt === maxRetries) {
-        throw err;
-      }
-      await sleep(300 * attempt);
-    }
-  }
-}
-
-export function selectCuratedListeningPrompts(): CuratedListeningPrompt[] {
-  const levels = ["N5", "N4", "N3", "N2", "N1"];
-  const selected: CuratedListeningPrompt[] = [];
-  const seenJa = new Set<string>();
-  const seenEn = new Set<string>();
-
-  for (const level of levels) {
-    const filePath = path.join(VOCAB_DATA_DIR, `${level}.json`);
-    if (!fs.existsSync(filePath)) {
-      throw new Error(`Vocabulary file missing: ${filePath}`);
-    }
-
-    const raw = JSON.parse(fs.readFileSync(filePath, "utf8"));
-    const records: VocabEntry[] = Array.isArray(raw) ? raw : raw.records || [];
-
-    const candidates: CuratedListeningPrompt[] = [];
-    for (const record of records) {
-      if (!Array.isArray(record.examples)) continue;
-      for (let idx = 0; idx < record.examples.length; idx++) {
-        const ex = record.examples[idx];
-        const cleanJa = cleanSentenceForAudio(ex.ja || "");
-        const en = (ex.en || "").trim();
-
-        if (!cleanJa || !en) continue;
-        if (cleanJa.length < 7 || cleanJa.length > 35) continue;
-        if (en.length < 10 || en.length > 90) continue;
-
-        const enKey = en.toLowerCase();
-        if (seenJa.has(cleanJa) || seenEn.has(enKey)) continue;
-
-        const sentId = `vocab-sent:${record.id}:${idx}`;
-        const fileName = `${record.id}_${idx}.mp3`;
-        const relPath = `/audio/listening/${level}/${fileName}`;
-        const targetFile = path.join(LISTENING_AUDIO_DIR, level, fileName);
-
-        candidates.push({
-          sentId,
-          recordId: record.id,
-          exampleIdx: idx,
-          level,
-          cleanJa,
-          en,
-          relPath,
-          targetFile,
-        });
-        break; // At most 1 sentence per vocab word for maximum topic diversity
-      }
-    }
-
-    const targetCount = TARGET_PER_LEVEL[level] ?? 60;
-    const step = Math.max(1, Math.floor(candidates.length / targetCount));
-    let pickedForLevel = 0;
-
-    for (let i = 0; i < candidates.length && pickedForLevel < targetCount; i += step) {
-      const c = candidates[i];
-      const enKey = c.en.toLowerCase();
-      if (seenJa.has(c.cleanJa) || seenEn.has(enKey)) continue;
-      seenJa.add(c.cleanJa);
-      seenEn.add(enKey);
-      selected.push(c);
-      pickedForLevel++;
-    }
-
-    // Top up if step skipped slightly below targetCount
-    for (const c of candidates) {
-      if (pickedForLevel >= targetCount) break;
-      const enKey = c.en.toLowerCase();
-      if (seenJa.has(c.cleanJa) || seenEn.has(enKey)) continue;
-      seenJa.add(c.cleanJa);
-      seenEn.add(enKey);
-      selected.push(c);
-      pickedForLevel++;
+  for (const candidate of candidates) {
+    if (fs.existsSync(candidate) && fs.statSync(candidate).size > 0) {
+      return candidate;
     }
   }
 
-  return selected;
+  throw new Error(`Required chime file "${filename}" could not be found in any candidate directory.`);
 }
 
-export function updateListeningAudioManifest(prompts: CuratedListeningPrompt[]): void {
-  if (!fs.existsSync(MANIFEST_FILE)) {
-    throw new Error(`Audio manifest not found at ${MANIFEST_FILE}`);
+/**
+ * Generates an MP3 silence file of exact duration using FFmpeg anullsrc.
+ */
+export function createSilenceChunk(durationSec: number, outPath: string): void {
+  if (fs.existsSync(outPath) && fs.statSync(outPath).size > 0) {
+    return;
   }
 
-  const existingContent = fs.readFileSync(MANIFEST_FILE, "utf8");
-  const listeningMap: Record<string, string> = {};
-
-  for (const p of prompts) {
-    if (fs.existsSync(p.targetFile) && fs.statSync(p.targetFile).size > 0) {
-      listeningMap[p.sentId] = p.relPath;
-      listeningMap[p.cleanJa] = p.relPath;
-    }
-  }
-
-  const exportBlock = `export const STATIC_LISTENING_SENTENCE_AUDIO_MAP: Record<string, string> = ${JSON.stringify(
-    listeningMap,
-    null,
-    2
-  )};`;
-
-  let updatedContent: string;
-  if (/export const STATIC_LISTENING_SENTENCE_AUDIO_MAP: Record<string, string> = [\s\S]*?;/.test(existingContent)) {
-    updatedContent = existingContent.replace(
-      /export const STATIC_LISTENING_SENTENCE_AUDIO_MAP: Record<string, string> = [\s\S]*?;/,
-      exportBlock
-    );
-  } else {
-    updatedContent = `${existingContent.trimEnd()}\n\n${exportBlock}\n`;
-  }
-
-  fs.writeFileSync(MANIFEST_FILE, updatedContent, "utf8");
-  console.log(
-    `[Audio Manifest] Updated STATIC_LISTENING_SENTENCE_AUDIO_MAP with ${Object.keys(listeningMap).length} lookup keys.`
+  execFileSync(
+    "ffmpeg",
+    [
+      "-y",
+      "-f",
+      "lavfi",
+      "-i",
+      "anullsrc=r=44100:cl=stereo",
+      "-t",
+      durationSec.toString(),
+      "-acodec",
+      "libmp3lame",
+      "-b:a",
+      "128k",
+      outPath,
+    ],
+    { stdio: ["ignore", "pipe", "pipe"] }
   );
 }
 
-export async function buildListeningAudio(): Promise<void> {
-  const levels = ["N5", "N4", "N3", "N2", "N1"];
-  for (const level of levels) {
-    const dir = path.join(LISTENING_AUDIO_DIR, level);
-    if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true });
+/**
+ * Validates raw JSON object and extracts structured scene fields.
+ */
+export function validateListeningScene(raw: unknown, fileSource: string): ValidatedScene {
+  if (!raw || typeof raw !== "object") {
+    throw new Error(`Invalid scene record in ${fileSource}: record is not an object.`);
+  }
+
+  const s = raw as Record<string, unknown>;
+
+  if (typeof s.id !== "string" || !s.id.trim()) {
+    throw new Error(`Scene in ${fileSource} is missing required string 'id'.`);
+  }
+
+  if (typeof s.jlpt !== "number" || s.jlpt < 1 || s.jlpt > 5) {
+    throw new Error(`Scene "${s.id}" has invalid 'jlpt' level: ${s.jlpt}`);
+  }
+
+  if (!Array.isArray(s.audioSequence) || s.audioSequence.length < 3) {
+    throw new Error(`Scene "${s.id}" has invalid or insufficient 'audioSequence' items.`);
+  }
+
+  // Extract introJa
+  const rawAudioSeq = s.audioSequence as DialogueLine[];
+  const explicitIntro = typeof s.introJa === "string" && s.introJa.trim() ? s.introJa.trim() : "";
+  const firstSeqIntro = rawAudioSeq[0]?.textJa ? rawAudioSeq[0].textJa.trim() : "";
+  const introJa = explicitIntro || firstSeqIntro;
+
+  if (!introJa) {
+    throw new Error(`Scene "${s.id}" has missing or empty 'introJa'.`);
+  }
+
+  // Extract questionJa
+  const explicitQuestion = typeof s.questionJa === "string" && s.questionJa.trim() ? s.questionJa.trim() : "";
+  const rawQuestions = Array.isArray(s.questions) ? (s.questions as Array<Record<string, unknown>>) : [];
+  const primaryQ = rawQuestions.find((q) => q.isPrimaryMondai) || rawQuestions[0];
+  const primaryQText = typeof primaryQ?.questionJa === "string" ? primaryQ.questionJa.trim() : "";
+  const secondSeqQuestion = rawAudioSeq[1]?.textJa ? rawAudioSeq[1].textJa.trim() : "";
+  const questionJa = explicitQuestion || primaryQText || secondSeqQuestion;
+
+  if (!questionJa) {
+    throw new Error(`Scene "${s.id}" has missing or empty 'questionJa'.`);
+  }
+
+  // Extract dialogue lines (conversational turns between characters)
+  let dialogueLines: DialogueLine[];
+  if (
+    rawAudioSeq.length >= 4 &&
+    rawAudioSeq[0].speaker === "Narrator" &&
+    rawAudioSeq[1].speaker === "Narrator" &&
+    rawAudioSeq[rawAudioSeq.length - 1].speaker === "Narrator"
+  ) {
+    dialogueLines = rawAudioSeq.slice(2, -1);
+  } else {
+    dialogueLines = rawAudioSeq.filter(
+      (line, idx) => line.speaker !== "Narrator" && idx > 0
+    );
+  }
+
+  if (dialogueLines.length === 0) {
+    throw new Error(`Scene "${s.id}" has no dialogue lines.`);
+  }
+
+  for (let i = 0; i < dialogueLines.length; i++) {
+    const line = dialogueLines[i];
+    if (!line.textJa || typeof line.textJa !== "string" || !line.textJa.trim()) {
+      throw new Error(`Scene "${s.id}" dialogue line index ${i} is missing 'textJa'.`);
     }
   }
 
-  const prompts = selectCuratedListeningPrompts();
-  console.log(`[Listening Audio] Curated ${prompts.length} vocabulary sentences across N5–N1.`);
-
-  const tasks: CuratedListeningPrompt[] = [];
-  let existingCount = 0;
-
-  for (const p of prompts) {
-    if (fs.existsSync(p.targetFile) && fs.statSync(p.targetFile).size > 0) {
-      existingCount++;
-    } else {
-      tasks.push(p);
-    }
-  }
-
-  console.log(`[Listening Audio] ${existingCount} already generated, ${tasks.length} to synthesize.`);
-
-  if (tasks.length > 0) {
-    const tts = new MsEdgeTTS();
-    await tts.setMetadata(VOICE, OUTPUT_FORMAT.AUDIO_24KHZ_48KBITRATE_MONO_MP3);
-
-    const totalToSynthesize = tasks.length;
-    let completed = 0;
-    const startTime = Date.now();
-
-    async function worker() {
-      while (tasks.length > 0) {
-        const item = tasks.shift();
-        if (!item) break;
-
-        await synthesizeFile(tts, item.cleanJa, item.targetFile);
-        completed++;
-
-        if (completed % 25 === 0 || completed === totalToSynthesize) {
-          const elapsedSec = ((Date.now() - startTime) / 1000).toFixed(1);
-          console.log(
-            `[Listening Audio] Progress: ${completed}/${totalToSynthesize} clips (${elapsedSec}s elapsed)...`
-          );
-        }
-      }
-    }
-
-    const workers = Array.from({ length: CONCURRENCY }, () => worker());
-    await Promise.all(workers);
-
-    const totalSec = ((Date.now() - startTime) / 1000).toFixed(1);
-    console.log(`[Listening Audio] Completed synthesizing ${completed} clips in ${totalSec}s.`);
-  }
-
-  updateListeningAudioManifest(prompts);
+  return {
+    id: s.id,
+    jlpt: s.jlpt,
+    titleJa: typeof s.titleJa === "string" ? s.titleJa : undefined,
+    introJa,
+    questionJa,
+    dialogueLines,
+  };
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(__filename)) {
-  buildListeningAudio().catch((err) => {
-    console.error("[Listening Audio Error]", err);
+/**
+ * Determines voice selection based on voiceGender or speaker tag.
+ */
+export function getVoiceForLine(
+  line: DialogueLine,
+  provider: "openai" | "edge" = "openai"
+): string {
+  const gender = (line.voiceGender || "").toLowerCase();
+  const speaker = (line.speaker || "").toUpperCase();
+
+  if (provider === "edge") {
+    if (gender === "male" || speaker === "M") {
+      return EDGE_VOICE_MALE;
+    }
+    return EDGE_VOICE_FEMALE;
+  }
+
+  if (gender === "female" || speaker === "F") {
+    return VOICE_FEMALE;
+  }
+  if (gender === "male" || speaker === "M") {
+    return VOICE_MALE;
+  }
+  return VOICE_NARRATOR;
+}
+
+/**
+ * Synthesizes a TTS clip using Edge TTS.
+ */
+export async function synthesizeEdgeTtsClip(
+  text: string,
+  voice: string,
+  outPath: string
+): Promise<void> {
+  fs.mkdirSync(path.dirname(outPath), { recursive: true });
+  const maxRetries = 3;
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const tts = new MsEdgeTTS();
+      await tts.setMetadata(voice, OUTPUT_FORMAT.AUDIO_24KHZ_48KBITRATE_MONO_MP3);
+      await new Promise<void>((resolve, reject) => {
+        const { audioStream } = tts.toStream(text, { rate: EDGE_RATE });
+        const output = fs.createWriteStream(outPath);
+        audioStream.pipe(output);
+        output.on("finish", () => resolve());
+        output.on("error", (err) => reject(err));
+        audioStream.on("error", (err) => reject(err));
+      });
+
+      if (fs.existsSync(outPath) && fs.statSync(outPath).size > 0) {
+        return;
+      }
+      throw new Error(`Generated empty audio file: ${outPath}`);
+    } catch (err: unknown) {
+      if (attempt === maxRetries) {
+        throw err;
+      }
+      await new Promise((resolve) => setTimeout(resolve, 300 * attempt));
+    }
+  }
+}
+
+/**
+ * Synthesizes a TTS clip using OpenAI tts-1-hd, Edge TTS, or dry-run generator.
+ */
+export async function synthesizeTtsClip(
+  openai: OpenAI | null,
+  text: string,
+  voice: string,
+  outPath: string,
+  dryRun: boolean,
+  provider: "openai" | "edge" = "openai"
+): Promise<void> {
+  if (dryRun) {
+    // Generate synthetic silence chunk for dry-run verification
+    createSilenceChunk(0.8, outPath);
+    return;
+  }
+
+  if (provider === "edge" || !openai) {
+    await synthesizeEdgeTtsClip(text, voice, outPath);
+    return;
+  }
+
+  const maxRetries = 3;
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const response = await openai.audio.speech.create({
+        model: TTS_MODEL,
+        voice: voice as "alloy" | "echo" | "fable" | "onyx" | "nova" | "shimmer",
+        input: text,
+        speed: TTS_SPEED,
+        response_format: "mp3",
+      });
+
+      const buffer = Buffer.from(await response.arrayBuffer());
+      if (buffer.length === 0) {
+        throw new Error("Received empty audio response from OpenAI TTS API.");
+      }
+      fs.writeFileSync(outPath, buffer);
+      return;
+    } catch (err: unknown) {
+      const errMsg = err instanceof Error ? err.message : String(err);
+      if (attempt === maxRetries) {
+        throw new Error(`TTS synthesis failed after ${maxRetries} attempts: ${errMsg}`);
+      }
+      const backoffMs = 1000 * Math.pow(2, attempt - 1);
+      console.warn(`[WARN] TTS attempt ${attempt} failed: ${errMsg}. Retrying in ${backoffMs}ms...`);
+      await new Promise((resolve) => setTimeout(resolve, backoffMs));
+    }
+  }
+}
+
+/**
+ * Merges a list of audio files into a single MP3 using fluent-ffmpeg.
+ */
+export async function mergeAudioChunks(
+  inputFiles: string[],
+  outputFile: string,
+  scratchDir: string
+): Promise<void> {
+  for (const input of inputFiles) {
+    if (!fs.existsSync(input) || fs.statSync(input).size === 0) {
+      throw new Error(`Cannot merge audio: input chunk is missing or empty: ${input}`);
+    }
+  }
+
+  return new Promise((resolve, reject) => {
+    const cmd = ffmpeg();
+    for (const file of inputFiles) {
+      cmd.input(file);
+    }
+
+    cmd
+      .on("error", (err) => {
+        reject(err);
+      })
+      .on("end", () => {
+        resolve();
+      })
+      .mergeToFile(outputFile, scratchDir);
+  });
+}
+
+/**
+ * Loads all scenes from public/data/v1/jlpt/listening-scenes-n[1-5].json
+ */
+export function loadAllListeningScenes(): ValidatedScene[] {
+  const levels = [5, 4, 3, 2, 1];
+  const allScenes: ValidatedScene[] = [];
+
+  for (const level of levels) {
+    const fileName = `listening-scenes-n${level}.json`;
+    const filePath = path.join(DATA_DIR, fileName);
+
+    if (!fs.existsSync(filePath)) {
+      throw new Error(`Dataset file not found: ${filePath}`);
+    }
+
+    const rawContent = fs.readFileSync(filePath, "utf-8");
+    let parsed: unknown;
+    try {
+      parsed = JSON.parse(rawContent);
+    } catch (parseErr: unknown) {
+      throw new Error(`Failed to parse JSON in ${filePath}: ${parseErr instanceof Error ? parseErr.message : String(parseErr)}`);
+    }
+
+    if (!Array.isArray(parsed)) {
+      throw new Error(`Expected an array of scenes in ${filePath}, got ${typeof parsed}`);
+    }
+
+    for (let i = 0; i < parsed.length; i++) {
+      const validated = validateListeningScene(parsed[i], `${fileName} [index ${i}]`);
+      allScenes.push(validated);
+    }
+  }
+
+  return allScenes;
+}
+
+/**
+ * Builds the complete audio for a single scene according to the required 11-step stitching specification:
+ *  1. first_chime.mp3
+ *  2. 500 ms silence
+ *  3. Narrator reads introJa followed by questionJa
+ *  4. 1000 ms silence
+ *  5. second_chime.mp3
+ *  6. 600 ms silence
+ *  7. Dialogue lines in audioSequence order, using matching M/F voice, with 400 ms silence between turns
+ *  8. 1200 ms silence
+ *  9. first_chime.mp3
+ * 10. 500 ms silence
+ * 11. Narrator repeats questionJa
+ */
+export async function buildSceneAudio(
+  scene: ValidatedScene,
+  options: {
+    openai: OpenAI | null;
+    outputDir: string;
+    scratchRoot: string;
+    firstChimePath: string;
+    secondChimePath: string;
+    dryRun: boolean;
+    force: boolean;
+    provider?: "openai" | "edge";
+    mergeFn?: (inputFiles: string[], outputFile: string, scratchDir: string) => Promise<void>;
+  }
+): Promise<string> {
+  const targetMp3 = path.join(options.outputDir, `${scene.id}.mp3`);
+  if (!options.force && fs.existsSync(targetMp3) && fs.statSync(targetMp3).size > 1000) {
+    console.log(`[SKIP] Scene "${scene.id}" already generated: ${targetMp3}`);
+    return targetMp3;
+  }
+
+  const provider = options.provider || "openai";
+  const narratorVoice = provider === "edge" ? EDGE_VOICE_NARRATOR : VOICE_NARRATOR;
+
+  const sceneScratchDir = path.join(options.scratchRoot, scene.id);
+  fs.mkdirSync(sceneScratchDir, { recursive: true });
+
+  // Pre-generate required silence chunks in scratch root for efficiency
+  const silence500 = path.join(options.scratchRoot, "silence_500ms.mp3");
+  const silence1000 = path.join(options.scratchRoot, "silence_1000ms.mp3");
+  const silence600 = path.join(options.scratchRoot, "silence_600ms.mp3");
+  const silence400 = path.join(options.scratchRoot, "silence_400ms.mp3");
+  const silence1200 = path.join(options.scratchRoot, "silence_1200ms.mp3");
+
+  createSilenceChunk(0.5, silence500);
+  createSilenceChunk(1.0, silence1000);
+  createSilenceChunk(0.6, silence600);
+  createSilenceChunk(0.4, silence400);
+  createSilenceChunk(1.2, silence1200);
+
+  // Step 3: Narrator reads introJa followed by questionJa
+  const chunk03Path = path.join(sceneScratchDir, "chunk_03_narrator_intro_question.mp3");
+  const introQuestionText = `${scene.introJa} ${scene.questionJa}`;
+  await synthesizeTtsClip(options.openai, introQuestionText, narratorVoice, chunk03Path, options.dryRun, provider);
+
+  // Step 7: Dialogue lines in audioSequence order using matching M/F voice
+  const dialogueChunkPaths: string[] = [];
+  for (let i = 0; i < scene.dialogueLines.length; i++) {
+    const line = scene.dialogueLines[i];
+    const voice = getVoiceForLine(line, provider);
+    const lineChunkPath = path.join(sceneScratchDir, `chunk_07_dialogue_${i}.mp3`);
+    await synthesizeTtsClip(options.openai, line.textJa, voice, lineChunkPath, options.dryRun, provider);
+    dialogueChunkPaths.push(lineChunkPath);
+  }
+
+  // Step 11: Narrator repeats questionJa
+  const chunk11Path = path.join(sceneScratchDir, "chunk_11_narrator_repeat_question.mp3");
+  await synthesizeTtsClip(options.openai, scene.questionJa, narratorVoice, chunk11Path, options.dryRun, provider);
+
+  // Construct ordered list of chunks
+  const orderedChunks: string[] = [
+    options.firstChimePath,   // 1. first_chime.mp3
+    silence500,               // 2. 500 ms silence
+    chunk03Path,              // 3. Narrator reads introJa followed by questionJa
+    silence1000,              // 4. 1000 ms silence
+    options.secondChimePath,  // 5. second_chime.mp3
+    silence600,               // 6. 600 ms silence
+  ];
+
+  // 7. Dialogue lines with 400 ms silence between turns
+  for (let i = 0; i < dialogueChunkPaths.length; i++) {
+    orderedChunks.push(dialogueChunkPaths[i]);
+    if (i < dialogueChunkPaths.length - 1) {
+      orderedChunks.push(silence400);
+    }
+  }
+
+  // 8. 1200 ms silence
+  orderedChunks.push(silence1200);
+
+  // 9. first_chime.mp3
+  orderedChunks.push(options.firstChimePath);
+
+  // 10. 500 ms silence
+  orderedChunks.push(silence500);
+
+  // 11. Narrator repeats questionJa
+  orderedChunks.push(chunk11Path);
+
+  // Merge chunks into destination file
+  const tempOutputFile = path.join(sceneScratchDir, `${scene.id}_assembled.mp3`);
+  const merge = options.mergeFn || mergeAudioChunks;
+  await merge(orderedChunks, tempOutputFile, sceneScratchDir);
+
+  if (!fs.existsSync(tempOutputFile) || fs.statSync(tempOutputFile).size === 0) {
+    throw new Error(`Assembled MP3 was not produced or is empty: ${tempOutputFile}`);
+  }
+
+  // Move final file to destination
+  fs.copyFileSync(tempOutputFile, targetMp3);
+  console.log(`[DONE] Scene "${scene.id}" (${(fs.statSync(targetMp3).size / 1024).toFixed(1)} KB) -> ${targetMp3}`);
+  return targetMp3;
+}
+
+export interface ProcessScenesOptions {
+  scenes: ValidatedScene[];
+  openai: OpenAI | null;
+  outputDir: string;
+  scratchRoot: string;
+  firstChimePath: string;
+  secondChimePath: string;
+  dryRun: boolean;
+  force: boolean;
+  provider?: "openai" | "edge";
+  mergeFn?: (inputFiles: string[], outputFile: string, scratchDir: string) => Promise<void>;
+  buildSceneFn?: typeof buildSceneAudio;
+}
+
+export interface ProcessScenesResult {
+  success: boolean;
+  succeededScenes: string[];
+  failedScenes: Array<{ id: string; error: string; scratchDir: string }>;
+}
+
+/**
+ * Iterates through scenes, catching failures per scene and preserving diagnostic scratch data.
+ */
+export async function processListeningScenes(
+  options: ProcessScenesOptions
+): Promise<ProcessScenesResult> {
+  const failedScenes: Array<{ id: string; error: string; scratchDir: string }> = [];
+  const succeededScenes: string[] = [];
+  const builder = options.buildSceneFn || buildSceneAudio;
+
+  fs.mkdirSync(options.outputDir, { recursive: true });
+  fs.mkdirSync(options.scratchRoot, { recursive: true });
+
+  for (const scene of options.scenes) {
+    const sceneScratchDir = path.join(options.scratchRoot, scene.id);
+    try {
+      await builder(scene, {
+        openai: options.openai,
+        outputDir: options.outputDir,
+        scratchRoot: options.scratchRoot,
+        firstChimePath: options.firstChimePath,
+        secondChimePath: options.secondChimePath,
+        dryRun: options.dryRun,
+        force: options.force,
+        provider: options.provider,
+        mergeFn: options.mergeFn,
+      });
+      succeededScenes.push(scene.id);
+    } catch (sceneErr: unknown) {
+      const errorMsg = sceneErr instanceof Error ? sceneErr.message : String(sceneErr);
+      console.error(`[ERROR] Scene "${scene.id}" failed: ${errorMsg}`);
+      failedScenes.push({
+        id: scene.id,
+        error: errorMsg,
+        scratchDir: sceneScratchDir,
+      });
+    }
+  }
+
+  const success = failedScenes.length === 0;
+  if (success) {
+    try {
+      fs.rmSync(options.scratchRoot, { recursive: true, force: true });
+      console.log(`Cleaned temporary scratch data at: ${options.scratchRoot}`);
+    } catch (cleanErr: unknown) {
+      console.warn(`[WARN] Failed to clean scratch directory: ${cleanErr instanceof Error ? cleanErr.message : String(cleanErr)}`);
+    }
+  }
+
+  return {
+    success,
+    succeededScenes,
+    failedScenes,
+  };
+}
+
+/**
+ * Main execution entry point.
+ */
+export async function main(): Promise<void> {
+  const isDryRun = process.argv.includes("--dry-run");
+  const force = process.argv.includes("--force");
+  const useOpenAiExplicit = process.argv.includes("--openai");
+  const apiKey = (process.env.OPENAI_API_KEY || "").trim();
+  const hasRealOpenAiKey = !!(apiKey && !apiKey.includes("your_openai_api_key_here"));
+
+  // Default to Edge TTS unless --openai is explicitly passed with a valid key
+  const provider: "openai" | "edge" = useOpenAiExplicit || (hasRealOpenAiKey && !process.argv.includes("--edge"))
+    ? "openai"
+    : "edge";
+
+  console.log("=== JLPT Listening Scene Audio Builder ===");
+  console.log(`Data Directory:    ${DATA_DIR}`);
+  console.log(`Output Directory:  ${OUTPUT_DIR}`);
+  console.log(`Scratch Root:      ${SCRATCH_ROOT}`);
+  console.log(`TTS Provider:      ${provider.toUpperCase()} (${provider === "edge" ? "Microsoft Edge Neural TTS — Free" : "OpenAI tts-1-hd"})`);
+  if (provider === "openai") {
+    console.log(`TTS Model:         ${TTS_MODEL}`);
+    console.log(`Speech Speed:      ${TTS_SPEED}`);
+    console.log(`Voice (Narrator):  ${VOICE_NARRATOR}`);
+    console.log(`Voice (Female):    ${VOICE_FEMALE}`);
+    console.log(`Voice (Male):      ${VOICE_MALE}`);
+  } else {
+    console.log(`Speech Rate:       ${EDGE_RATE}`);
+    console.log(`Voice (Narrator):  ${EDGE_VOICE_NARRATOR}`);
+    console.log(`Voice (Female):    ${EDGE_VOICE_FEMALE}`);
+    console.log(`Voice (Male):      ${EDGE_VOICE_MALE}`);
+  }
+  if (isDryRun) {
+    console.log(`Mode:              DRY RUN (synthetic validation audio)`);
+  }
+
+  if (provider === "openai" && !isDryRun && !apiKey) {
+    console.error("================================================================================");
+    console.error("ERROR: OPENAI_API_KEY environment variable is missing or empty.");
+    console.error("Please configure your OpenAI API key in .env.local or .env:");
+    console.error("  OPENAI_API_KEY=your_openai_api_key_here");
+    console.error("To use free Edge TTS instead without any API key, run with '--edge'.");
+    console.error("================================================================================");
+    process.exit(1);
+  }
+
+  // Resolve chime files
+  let firstChimePath: string;
+  let secondChimePath: string;
+  try {
+    firstChimePath = resolveChimeFile("first_chime.mp3");
+    secondChimePath = resolveChimeFile("second_chime.mp3");
+    console.log(`Chime 1:           ${firstChimePath}`);
+    console.log(`Chime 2:           ${secondChimePath}`);
+  } catch (chimeErr: unknown) {
+    console.error(`[FATAL] Chime resolution error: ${chimeErr instanceof Error ? chimeErr.message : String(chimeErr)}`);
+    process.exit(1);
+  }
+
+  // Initialize OpenAI client if using OpenAI provider
+  const openai = provider === "openai" && !isDryRun && apiKey ? new OpenAI({ apiKey }) : null;
+
+  // Load all scenes
+  let allScenes: ValidatedScene[];
+  try {
+    allScenes = loadAllListeningScenes();
+    console.log(`Loaded ${allScenes.length} scenes across JLPT N5-N1.`);
+  } catch (loadErr: unknown) {
+    console.error(`[FATAL] Dataset load error: ${loadErr instanceof Error ? loadErr.message : String(loadErr)}`);
+    process.exit(1);
+  }
+
+  // Process all scenes
+  const result = await processListeningScenes({
+    scenes: allScenes,
+    openai,
+    outputDir: OUTPUT_DIR,
+    scratchRoot: SCRATCH_ROOT,
+    firstChimePath,
+    secondChimePath,
+    dryRun: isDryRun,
+    force,
+    provider,
+  });
+
+  // Report status and cleanup
+  console.log("--------------------------------------------------------------------------------");
+  if (result.success) {
+    console.log(`[SUCCESS] All ${result.succeededScenes.length} scenes built successfully.`);
+    process.exit(0);
+  } else {
+    console.error(`[FAILURE] ${result.failedScenes.length} of ${allScenes.length} scene(s) failed:`);
+    for (const failed of result.failedScenes) {
+      console.error(`  - Scene: ${failed.id}`);
+      console.error(`    Error: ${failed.error}`);
+      console.error(`    Diagnostic scratch location: ${failed.scratchDir}`);
+    }
+    process.exit(1);
+  }
+}
+
+// Run main if invoked directly as CLI script
+if (require.main === module || process.argv[1]?.endsWith("build-listening-audio.ts")) {
+  main().catch((err) => {
+    console.error("[FATAL] Unhandled error during build-listening-audio:", err);
     process.exit(1);
   });
 }
