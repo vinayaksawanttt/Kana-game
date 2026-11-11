@@ -38,6 +38,7 @@ export function AudioDialogueSequence({
   const runIdRef = useRef<number>(0);
   const timersRef = useRef<Array<ReturnType<typeof setTimeout>>>([]);
   const hasAutoStartedRef = useRef<string>("");
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const clearTimers = useCallback(() => {
     for (const t of timersRef.current) {
@@ -49,6 +50,15 @@ export function AudioDialogueSequence({
   const cancelSequence = useCallback(() => {
     runIdRef.current += 1;
     clearTimers();
+    if (audioRef.current) {
+      try {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+      } catch {
+        // Ignore audio pause errors
+      }
+      audioRef.current = null;
+    }
     stopAudio();
     setIsPlaying(false);
     setActiveLineIndex(-1);
@@ -63,7 +73,41 @@ export function AudioDialogueSequence({
     });
   }, []);
 
-  const playFullSequence = useCallback(async () => {
+  const playLineByLineFallback = useCallback(
+    async (currentRunId: number) => {
+      setActiveLineIndex(0);
+
+      for (let i = 0; i < dialogueLines.length; i++) {
+        if (runIdRef.current !== currentRunId) return;
+
+        const line = dialogueLines[i];
+        setActiveLineIndex(i);
+
+        playSentence(line.textJa, `${sceneId}:dialogue-${i}`, {
+          reading: line.readingHiragana,
+        });
+
+        const speechMs = estimateSpeechDurationMs(line.readingHiragana || line.textJa, 1.0);
+        const okSpeech = await waitMs(speechMs, currentRunId);
+        if (!okSpeech || runIdRef.current !== currentRunId) return;
+
+        if (line.pauseAfterMs > 0) {
+          const okPause = await waitMs(line.pauseAfterMs, currentRunId);
+          if (!okPause || runIdRef.current !== currentRunId) return;
+        }
+      }
+
+      if (runIdRef.current === currentRunId) {
+        setIsPlaying(false);
+        setActiveLineIndex(-1);
+        setHasPlayed(true);
+        onAudioEnded();
+      }
+    },
+    [dialogueLines, onAudioEnded, playSentence, sceneId, waitMs]
+  );
+
+  const playFullSequence = useCallback(() => {
     if (isPlaying) return;
     if (phase === "answered" && mode === "exam") return;
 
@@ -72,45 +116,74 @@ export function AudioDialogueSequence({
 
     onStartAudio?.();
     setIsPlaying(true);
-    setActiveLineIndex(0);
+    setActiveLineIndex(-1);
 
-    for (let i = 0; i < dialogueLines.length; i++) {
-      if (runIdRef.current !== currentRunId) return;
+    // Try playing the authentic pre-generated full scene MP3
+    const audioUrl = `/audio/listening-scenes/${encodeURIComponent(sceneId)}.mp3`;
 
-      const line = dialogueLines[i];
-      setActiveLineIndex(i);
+    const canPlayMp3 =
+      typeof window !== "undefined" &&
+      typeof Audio !== "undefined" &&
+      Boolean(new Audio().canPlayType?.("audio/mpeg"));
 
-      playSentence(line.textJa, `${sceneId}:dialogue-${i}`, {
-        reading: line.readingHiragana,
-      });
+    if (canPlayMp3) {
+      try {
+        const audio = new Audio(audioUrl);
+        audio.preload = "auto";
+        audioRef.current = audio;
 
-      const speechMs = estimateSpeechDurationMs(line.readingHiragana || line.textJa, 1.0);
-      const okSpeech = await waitMs(speechMs, currentRunId);
-      if (!okSpeech || runIdRef.current !== currentRunId) return;
+        let fallbackTriggered = false;
+        const triggerFallback = () => {
+          if (fallbackTriggered || runIdRef.current !== currentRunId) return;
+          fallbackTriggered = true;
+          if (audioRef.current === audio) {
+            audioRef.current = null;
+          }
+          void playLineByLineFallback(currentRunId);
+        };
 
-      if (line.pauseAfterMs > 0) {
-        const okPause = await waitMs(line.pauseAfterMs, currentRunId);
-        if (!okPause || runIdRef.current !== currentRunId) return;
+        audio.onended = () => {
+          if (runIdRef.current !== currentRunId) return;
+          setIsPlaying(false);
+          setActiveLineIndex(-1);
+          setHasPlayed(true);
+          audioRef.current = null;
+          onAudioEnded();
+        };
+
+        audio.onerror = () => {
+          triggerFallback();
+        };
+
+        const playPromise = audio.play();
+        if (playPromise && typeof playPromise.then === "function") {
+          playPromise.catch((err: unknown) => {
+            if (runIdRef.current !== currentRunId) return;
+            // Browser autoplay restrictions require a user click/gesture
+            if (err instanceof Error && err.name === "NotAllowedError") {
+              setIsPlaying(false);
+              audioRef.current = null;
+              return;
+            }
+            triggerFallback();
+          });
+        }
+        return;
+      } catch {
+        // Fall through to fallback
       }
     }
 
-    if (runIdRef.current === currentRunId) {
-      setIsPlaying(false);
-      setActiveLineIndex(-1);
-      setHasPlayed(true);
-      onAudioEnded();
-    }
+    void playLineByLineFallback(currentRunId);
   }, [
     cancelSequence,
-    dialogueLines,
     isPlaying,
     mode,
     onAudioEnded,
     onStartAudio,
     phase,
-    playSentence,
+    playLineByLineFallback,
     sceneId,
-    waitMs,
   ]);
 
   // Autoplay trigger on scene load
@@ -123,7 +196,7 @@ export function AudioDialogueSequence({
 
     if (autoPlay && phase === "intro") {
       const timer = setTimeout(() => {
-        void playFullSequence();
+        playFullSequence();
       }, 0);
       return () => {
         clearTimeout(timer);
@@ -177,9 +250,13 @@ export function AudioDialogueSequence({
                 <span className="inline-block size-1.5 animate-pulse rounded-full bg-[var(--primary)] delay-200" />
               </div>
               <span>再生中 · Audio Playing</span>
-              <span className="opacity-75">
-                ({activeLineIndex + 1}/{dialogueLines.length})
-              </span>
+              {activeLineIndex >= 0 ? (
+                <span className="opacity-75">
+                  ({activeLineIndex + 1}/{dialogueLines.length})
+                </span>
+              ) : (
+                <span className="opacity-75">(MP3 Stream)</span>
+              )}
             </div>
           ) : hasPlayed || phase === "answering" || phase === "answered" ? (
             <div className="flex items-center gap-2">
@@ -238,6 +315,20 @@ export function AudioDialogueSequence({
               </p>
               <p className="font-japanese text-[11px] text-[var(--muted)]">
                 {currentLine.readingHiragana}
+              </p>
+            </div>
+          </div>
+        ) : isPlaying ? (
+          <div className="flex items-start gap-3">
+            <span className="shrink-0 rounded bg-[var(--primary)] px-2 py-0.5 font-japanese text-[11px] font-bold text-white shadow-2xs">
+              公式問題音声
+            </span>
+            <div className="flex-1 space-y-0.5">
+              <p className="font-japanese text-sm font-semibold text-[var(--ink)] leading-snug">
+                問題音声（チャイム・質問・会話）を再生中…
+              </p>
+              <p className="font-japanese text-[11px] text-[var(--muted)]">
+                Authentic examination audio stream with chimes, narrator prompts, and dialogue
               </p>
             </div>
           </div>
