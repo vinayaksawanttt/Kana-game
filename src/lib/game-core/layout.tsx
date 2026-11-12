@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { PointerEventHandler, ReactNode } from "react";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { SfxToggle } from "@/components/sfx-toggle";
 
 export function GameHeader({
   label,
@@ -37,6 +38,7 @@ export function GameHeader({
       </Link>
       <div className="flex items-center gap-2.5">
         {rightSlot}
+        <SfxToggle />
         <ThemeToggle />
       </div>
     </nav>

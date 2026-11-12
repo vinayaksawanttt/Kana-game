@@ -4,6 +4,7 @@ import { Suspense, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowRight, Eye, EyeOff, Sparkles } from "lucide-react";
 import { saveGameSession } from "@/lib/game-core/storage";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   STAR_SCRAMBLE_ITEMS,
   STAR_SCRAMBLE_LEVELS,
@@ -83,6 +84,7 @@ function StarScrambleSetupContent() {
       showFurigana,
     });
     saveGameSession("jlpt-star", session.sessionId, session);
+    playGameSfx("temple-bell-gong");
     router.push(`/games/jlpt/star-scramble/play/${session.sessionId}`);
   }
 

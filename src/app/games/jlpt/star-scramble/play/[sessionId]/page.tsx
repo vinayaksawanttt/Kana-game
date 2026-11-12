@@ -16,6 +16,7 @@ import {
   XCircle,
 } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
   getGameSession,
@@ -108,12 +109,18 @@ export default function StarScramblePlayPage() {
 
   const handleSubmit = useCallback(() => {
     if (session.revealed || !allSlotsFilled) return;
+    if (currentQuestion) {
+      const starTileId = session.placedTileIds[currentQuestion.starSlotIndex];
+      const isCorrect = starTileId === currentQuestion.correctStarTileId;
+      playGameSfx(isCorrect ? "correct-chime" : "incorrect-chime");
+    }
     const elapsed = Math.max(100, Date.now() - questionStartRef.current);
     dispatch({ type: "SUBMIT", timeMs: elapsed });
-  }, [allSlotsFilled, session.revealed]);
+  }, [allSlotsFilled, currentQuestion, session.placedTileIds, session.revealed]);
 
   const handleNext = useCallback(() => {
     if (!session.revealed) return;
+    playGameSfx("card-flip");
     dispatch({ type: "NEXT", forIndex: session.currentIndex });
   }, [session.currentIndex, session.revealed]);
 

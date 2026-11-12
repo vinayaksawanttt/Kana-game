@@ -24,6 +24,7 @@ import {
   XCircle,
 } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
   getGameSession,
@@ -149,9 +150,14 @@ export default function InfoScannerPlayPage() {
 
   const handleSubmit = useCallback(() => {
     if (session.selectedOptionByQuestion[0] === null || isRevealed) return;
+    if (currentQ) {
+      const isCorrectAns =
+        session.selectedOptionByQuestion[0] === currentQ.correctIndex;
+      playGameSfx(isCorrectAns ? "correct-chime" : "incorrect-chime");
+    }
     const elapsed = Date.now() - startTimeRef.current;
     dispatch({ type: "SUBMIT_ANSWER", timeMs: elapsed });
-  }, [session.selectedOptionByQuestion, isRevealed]);
+  }, [currentQ, session.selectedOptionByQuestion, isRevealed]);
 
   const handleSkip = useCallback(() => {
     if (isRevealed) return;
@@ -161,6 +167,7 @@ export default function InfoScannerPlayPage() {
 
   const handleNext = useCallback(() => {
     if (!isRevealed) return;
+    playGameSfx("card-flip");
     dispatch({
       type: "NEXT_DOCUMENT",
       forDocumentIndex: session.currentDocumentIndex,

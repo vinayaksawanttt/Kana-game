@@ -6,6 +6,7 @@ import { useParams, useRouter } from "next/navigation";
 import { loadVocabularyData, vocabularyLevels, type VocabularyLevel } from "@/data/vocabulary";
 import { checkVocabularyAnswer } from "@/engine/vocabularyMatcher";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import { getGameResult, getGameSession, saveGameResult } from "@/lib/game-core/storage";
 import {
   BASE_QUESTION_SCORE,
@@ -196,6 +197,13 @@ function VocabularyGame({
       return;
     }
     setAnswerError("");
+    const match = checkVocabularyAnswer(
+      answer,
+      question.meanings,
+      question.synonyms,
+      question.modernMeaning
+    );
+    playGameSfx(match.isMatch ? "correct-chime" : "incorrect-chime");
     dispatch({ type: "SUBMIT", answer, index: state.index });
   }
 
@@ -209,6 +217,7 @@ function VocabularyGame({
     const advanced = vocabularyReducer(state, { type: "NEXT", index: state.index });
     if (advanced.index >= advanced.questions.length) finish(advanced);
     else {
+      playGameSfx("card-flip");
       dispatch({ type: "NEXT", index: state.index });
       clearAnswer();
     }

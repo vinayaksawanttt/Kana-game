@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { ArrowRight, Check, RotateCcw, X } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import { formatTime } from "@/lib/game-core/time";
 import { getGameResult, saveGameSession } from "@/lib/game-core/storage";
 import {
@@ -46,6 +47,7 @@ function GrammarResultContent() {
     }
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setResult(saved);
+    playGameSfx("victory-fanfare");
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sessionId]);
 

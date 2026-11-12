@@ -19,9 +19,12 @@ describe("GamesHub (/)", () => {
     expect(screen.getByText(/JLPT Exam Pattern Practice/i)).toBeTruthy();
     expect(screen.getByRole("heading", { name: "Learn & Reference" })).toBeTruthy();
     expect(linkFor("/grammar")).toBeTruthy();
+    expect(linkFor("/games/grammar")).toBeTruthy();
     expect(linkFor("/learn")).toBeTruthy();
     expect(screen.getByText(/cheat sheets & study guides/i)).toBeTruthy();
     expect(linkFor("/learn")?.textContent).toMatch(/\d+/);
+    expect(linkFor("/stories")).toBeTruthy();
+    expect(screen.getByText(/stories & graded reading/i)).toBeTruthy();
     expect(screen.getByRole("heading", { name: "Tools" })).toBeTruthy();
     expect(linkFor("/dictionary")).toBeTruthy();
     expect(screen.getByText(/FSRS Review Hub/i)).toBeTruthy();

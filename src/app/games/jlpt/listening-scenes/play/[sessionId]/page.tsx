@@ -13,6 +13,7 @@ import {
   XCircle,
 } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameSession,
   saveGameResult,
@@ -111,24 +112,36 @@ export default function ListeningScenesPlayPage() {
       if (typeof document !== "undefined" && document.activeElement instanceof HTMLElement) {
         document.activeElement.blur();
       }
+      if (primaryQuestion) {
+        playGameSfx(
+          optionIndex === primaryQuestion.correctIndex ? "correct-chime" : "incorrect-chime"
+        );
+      }
       const elapsed = Math.max(100, Date.now() - questionStartRef.current);
       dispatch({ type: "ANSWER_PRIMARY", optionIndex, timeMs: elapsed });
     },
-    [session.phase]
+    [primaryQuestion, session.phase]
   );
 
   const handleSelectBonusOption = useCallback(
     (questionId: string, optionIndex: 0 | 1 | 2 | 3) => {
       if (session.phase === "intro" || session.phase === "audio-playing") return;
+      const bonusQ = bonusQuestions.find((q) => q.id === questionId);
+      if (bonusQ) {
+        playGameSfx(
+          optionIndex === bonusQ.correctIndex ? "correct-chime" : "incorrect-chime"
+        );
+      }
       const elapsed = Math.max(100, Date.now() - questionStartRef.current);
       dispatch({ type: "ANSWER_BONUS", questionId, optionIndex, timeMs: elapsed });
     },
-    [session.phase]
+    [bonusQuestions, session.phase]
   );
 
   const handleNextScene = useCallback(() => {
     if (session.phase !== "answered") return;
     stopAudio();
+    playGameSfx("card-flip");
     dispatch({ type: "NEXT_SCENE", forIndex: session.currentSceneIndex });
   }, [session.currentSceneIndex, session.phase, stopAudio]);
 

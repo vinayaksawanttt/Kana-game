@@ -12,6 +12,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { saveGameSession } from "@/lib/game-core/storage";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   PARAGRAPH_CLOZE_PASSAGES,
   createParagraphClozeSession,
@@ -99,6 +100,7 @@ function ParagraphClozeSetupContent() {
       showEnglishSentenceHints,
     });
     saveGameSession("jlpt-cloze", session.sessionId, session);
+    playGameSfx("temple-bell-gong");
     router.push(`/games/jlpt/paragraph-cloze/play/${session.sessionId}`);
   }
 

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { BookOpen, Check, RotateCcw, X } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import { getGameResult, getGameSession, saveGameResult } from "@/lib/game-core/storage";
 import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
 import {
@@ -154,6 +155,8 @@ function GrammarGame({
 
   function answerCloze(optionIndex: number) {
     if (!question || question.type !== "cloze" || answered) return;
+    const isCorrect = question.options[optionIndex] === question.correctAnswer;
+    playGameSfx(isCorrect ? "correct-chime" : "incorrect-chime");
     dispatch({
       type: "ANSWER_CLOZE",
       optionIndex,
@@ -166,6 +169,8 @@ function GrammarGame({
   function submitScramble() {
     if (!question || question.type !== "scramble" || answered) return;
     const chosenChunks = selectedPoolIndices.map((poolIdx) => question.scrambledChunks[poolIdx]!);
+    const isCorrect = chosenChunks.join("") === question.correctChunks.join("");
+    playGameSfx(isCorrect ? "correct-chime" : "incorrect-chime");
     dispatch({
       type: "ANSWER_SCRAMBLE",
       chunks: chosenChunks,
@@ -180,6 +185,7 @@ function GrammarGame({
     if (advanced.index >= advanced.questions.length) {
       finish(advanced);
     } else {
+      playGameSfx("card-flip");
       dispatch({ type: "NEXT", index: state.index });
     }
   }

@@ -45,6 +45,7 @@ export type AudioProvider = "openai" | "edge" | "gemini";
 // Round-robin state trackers
 let currentModelIndex = 0;
 let currentKeyIndex = 0;
+const exhaustedModelKeyCombos = new Set<string>();
 
 export interface DialogueLine {
   speaker: string;
@@ -289,12 +290,24 @@ export async function synthesizeGeminiTtsClip(
     throw new Error("No Gemini API keys provided for synthesis.");
   }
 
-  const maxTotalAttempts = GEMINI_MODELS.length * apiKeys.length * 2;
+  const totalPossibleCombos = GEMINI_MODELS.length * apiKeys.length;
+  if (exhaustedModelKeyCombos.size >= totalPossibleCombos) {
+    throw new Error("All Gemini API keys and models have exhausted their daily quotas for today.");
+  }
+
+  const maxTotalAttempts = totalPossibleCombos * 2;
   let lastError: Error | null = null;
 
   for (let attempt = 0; attempt < maxTotalAttempts; attempt++) {
     const model = GEMINI_MODELS[currentModelIndex % GEMINI_MODELS.length];
     const apiKey = apiKeys[currentKeyIndex % apiKeys.length];
+    const comboKey = `${apiKey}:${model}`;
+
+    if (exhaustedModelKeyCombos.has(comboKey)) {
+      currentModelIndex++;
+      currentKeyIndex++;
+      continue;
+    }
 
     try {
       const body = {
@@ -321,15 +334,21 @@ export async function synthesizeGeminiTtsClip(
       const data = await res.json();
       if (data.error) {
         const errorMsg = data.error.message || "Gemini TTS error";
-        const isQuota = data.error.code === 429 || errorMsg.includes("Quota exceeded") || errorMsg.includes("rate-limit");
+        const isQuota = data.error.code === 429 || errorMsg.includes("Quota exceeded") || errorMsg.includes("rate-limit") || errorMsg.includes("exceeded your current quota");
 
         if (isQuota) {
+          if (errorMsg.includes("exceeded your current quota") || errorMsg.includes("Quota exceeded")) {
+            exhaustedModelKeyCombos.add(comboKey);
+            if (exhaustedModelKeyCombos.size >= totalPossibleCombos) {
+              throw new Error("All Gemini daily quotas exhausted for today.");
+            }
+          }
           // Switch model and key to try a different project bucket immediately
           currentModelIndex++;
           currentKeyIndex++;
           const nextModel = GEMINI_MODELS[currentModelIndex % GEMINI_MODELS.length];
           console.warn(`[WARN] Quota limit on ${model}. Rotating to key ${(currentKeyIndex % apiKeys.length) + 1} / model ${nextModel}...`);
-          await new Promise((resolve) => setTimeout(resolve, 1000));
+          await new Promise((resolve) => setTimeout(resolve, 300));
           continue;
         }
 

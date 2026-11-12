@@ -28,6 +28,7 @@ import {
   XCircle,
 } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
   getGameSession,
@@ -209,6 +210,12 @@ export default function ParagraphClozePlayPage() {
 
   function handleSubmitPassage() {
     narrator.stop();
+    if (currentPassage) {
+      const allCorrect = currentPassage.blanks.every(
+        (b, idx) => session.selectedOptionByBlank[idx] === b.correctIndex
+      );
+      playGameSfx(allCorrect ? "correct-chime" : "incorrect-chime");
+    }
     const elapsed = Date.now() - passageStartRef.current;
     dispatch({ type: "SUBMIT_PASSAGE", timeMs: elapsed });
   }
@@ -221,6 +228,7 @@ export default function ParagraphClozePlayPage() {
 
   function handleNextPassage() {
     narrator.stop();
+    playGameSfx("card-flip");
     dispatch({
       type: "NEXT_PASSAGE",
       forPassageIndex: session.currentPassageIndex,

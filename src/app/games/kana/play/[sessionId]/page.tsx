@@ -13,6 +13,7 @@ import {
 } from "@/lib/game/session";
 import { localStorageAdapter } from "@/lib/storage/kana";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import { getGameSession } from "@/lib/game-core/storage";
 import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
 import { ingestKanaSession } from "@/lib/srs/service";
@@ -130,6 +131,7 @@ function KanaGame({
   }
 
   function advance(targetIndex: number) {
+    playGameSfx("card-flip");
     dispatch({ type: "ADVANCE", index: targetIndex });
     setAnswer("");
     focusInput();
@@ -145,11 +147,13 @@ function KanaGame({
     dispatch({ type: "SUBMIT", answer, index: currentIndex });
 
     if (!isCorrect) {
+      playGameSfx("incorrect-chime");
       inputRef.current?.select();
       focusInput();
       return;
     }
 
+    playGameSfx("correct-chime");
     if (autoPlayEnabled) {
       playKana(card.char, card.romaji[0]);
     }

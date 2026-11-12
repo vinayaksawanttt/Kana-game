@@ -26,6 +26,7 @@ import {
 } from "@/data/shiritori";
 import { addVocabularyToSrs } from "@/lib/srs/service";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
 import { AudioButton } from "@/components/ui/AudioButton";
@@ -197,11 +198,13 @@ function ShiritoriPlayContent() {
     const finalAnswer = convertRomajiBufferToHiragana(answer, true);
     const result = validateTurn(finalAnswer, state, game.dictionary);
     if (!result.valid) {
+      playGameSfx("incorrect-chime");
       setAnswerError(result.error);
       if (result.loseByN) setState(result.state);
       return;
     }
 
+    playGameSfx("correct-chime");
     setAnswer("");
     setAnswerError("");
     setHintWord(null);
@@ -212,6 +215,7 @@ function ShiritoriPlayContent() {
     const recentBotIds = new Set(getRecentBotWords());
     const botWord = chooseBotWord(result.state, game.dictionary, recentBotIds);
     if (!botWord) {
+      playGameSfx("victory-fanfare");
       setState({ ...result.state, status: "won", message: "The dictionary has no unused word for that kana." });
       return;
     }
@@ -223,6 +227,7 @@ function ShiritoriPlayContent() {
       nextKana: getEffectiveEndKana(botWord.kana),
     };
     if (botWord.endKana === "ん") {
+      playGameSfx("victory-fanfare");
       setState({ ...botState, status: "won", message: "The dictionary ended on ん. You win!" });
     } else {
       setState(botState);

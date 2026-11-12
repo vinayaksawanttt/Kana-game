@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ArrowRight, Headphones, RotateCcw } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import { saveGameSession } from "@/lib/game-core/storage";
 import { kanaCharacters, type KanaGroup, type ScriptSelection } from "@/data/kana";
 import { loadListeningPool } from "@/data/listening";
@@ -214,6 +215,7 @@ export default function ListeningSetupPage() {
       saveGameSession("listening", session.sessionId, session);
       localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
       setStarting(false);
+      playGameSfx("temple-bell-gong");
       router.push(`/games/listening/play/${session.sessionId}`);
     } catch (err) {
       console.error("Failed to start listening session:", err);

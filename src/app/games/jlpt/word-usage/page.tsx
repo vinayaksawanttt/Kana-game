@@ -4,6 +4,7 @@ import { Suspense, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowRight, BookOpen, Check, Eye, EyeOff, Sparkles } from "lucide-react";
 import { saveGameSession } from "@/lib/game-core/storage";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   WORD_USAGE_ITEMS,
   createWordUsageSession,
@@ -71,6 +72,7 @@ function WordUsageSetupContent() {
       showEnglishTranslations: studyMode === "study",
     });
     saveGameSession("jlpt-usage", session.sessionId, session);
+    playGameSfx("temple-bell-gong");
     router.push(`/games/jlpt/word-usage/play/${session.sessionId}`);
   }
 

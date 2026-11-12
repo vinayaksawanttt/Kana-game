@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { RotateCcw, Settings2, Volume2 } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import { getGameResult, saveGameSession } from "@/lib/game-core/storage";
 import { loadListeningPool } from "@/data/listening";
 import {
@@ -50,6 +51,7 @@ function ListeningResultContent() {
     }
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setResult(stored);
+    playGameSfx("victory-fanfare");
   }, [sessionId, result, router]);
 
   const missedQuestions = useMemo(

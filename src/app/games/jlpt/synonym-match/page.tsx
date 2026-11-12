@@ -4,6 +4,7 @@ import { Suspense, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowRight, BookOpen, Eye, EyeOff, Languages, Sparkles } from "lucide-react";
 import { saveGameSession } from "@/lib/game-core/storage";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   SYNONYM_MATCH_ITEMS,
   createSynonymMatchSession,
@@ -77,6 +78,7 @@ function SynonymMatchSetupContent() {
       showSentenceTranslationHint,
     });
     saveGameSession("jlpt-synonym", session.sessionId, session);
+    playGameSfx("temple-bell-gong");
     router.push(`/games/jlpt/synonym-match/play/${session.sessionId}`);
   }
 

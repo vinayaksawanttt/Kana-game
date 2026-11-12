@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import {
@@ -15,6 +15,7 @@ import {
   XCircle,
 } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
   getGameSession,
@@ -57,6 +58,12 @@ export default function PhoneticTrapResultPage() {
   const summary = useMemo(() => loadSummary(sessionId), [sessionId]);
   const [filterTab, setFilterTab] = useState<FilterTab>("all");
   const [savedWords, setSavedWords] = useState<Record<string, boolean>>({});
+
+  useEffect(() => {
+    if (summary) {
+      playGameSfx("victory-fanfare");
+    }
+  }, [summary]);
 
   function handlePlayAgain() {
     const baseSettings = summary?.settings ?? {

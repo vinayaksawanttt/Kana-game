@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import {
@@ -13,6 +13,7 @@ import {
   XCircle,
 } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
   getGameSession,
@@ -53,6 +54,12 @@ export default function InstantReplyResultPage() {
     loadResultSummary(sessionId),
   );
   const [filter, setFilter] = useState<ReviewFilter>("all");
+
+  useEffect(() => {
+    if (result) {
+      playGameSfx("victory-fanfare");
+    }
+  }, [result]);
 
   const filteredQuestions = useMemo(() => {
     if (!result) return [];

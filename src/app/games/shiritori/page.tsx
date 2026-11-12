@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { ArrowRight, BookOpen } from "lucide-react";
 import { useState } from "react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import type { ShiritoriDifficulty, ShiritoriMode, ShiritoriSettings } from "@/engine/shiritori";
 
 const modes: Array<{ id: ShiritoriMode; title: string; detail: string; mark: string }> = [
@@ -40,6 +41,7 @@ export default function ShiritoriSetupPage() {
       allowUnverified: false,
     };
     sessionStorage.setItem(`shiritori-session:${sessionId}`, JSON.stringify({ sessionId, settings }));
+    playGameSfx("temple-bell-gong");
     router.push(`/games/shiritori/play/${sessionId}`);
   }
 

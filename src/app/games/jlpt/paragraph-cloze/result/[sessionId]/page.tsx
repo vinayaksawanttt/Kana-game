@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import {
@@ -18,6 +18,7 @@ import {
   XCircle,
 } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
   getGameSession,
@@ -65,6 +66,12 @@ export default function ParagraphClozeResultPage() {
     loadResultSummary(sessionId)
   );
   const { playSentence } = useJapaneseAudio();
+
+  useEffect(() => {
+    if (result) {
+      playGameSfx("victory-fanfare");
+    }
+  }, [result]);
 
   const [activeTab, setActiveTab] = useState<"review" | "categories">("review");
 

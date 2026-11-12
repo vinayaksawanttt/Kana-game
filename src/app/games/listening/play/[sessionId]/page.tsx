@@ -4,6 +4,7 @@ import { Suspense, useCallback, useEffect, useRef, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { ArrowRight, Bookmark, Check, SkipForward, Volume2 } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import { getGameSession, saveGameResult, saveGameSession } from "@/lib/game-core/storage";
 import {
   listeningReducer,
@@ -163,9 +164,14 @@ function ListeningPlayContent() {
       if (typeof document !== "undefined" && document.activeElement instanceof HTMLElement) {
         document.activeElement.blur();
       }
-      updateSession((prev) =>
-        listeningReducer(prev, { type: "SUBMIT_CHOICE", optionId, timeMs: elapsed })
-      );
+      const nextSession = listeningReducer(session, {
+        type: "SUBMIT_CHOICE",
+        optionId,
+        timeMs: elapsed,
+      });
+      const updatedQ = nextSession.questions[nextSession.index];
+      playGameSfx(updatedQ?.status === "correct" ? "correct-chime" : "incorrect-chime");
+      updateSession(() => nextSession);
     },
     [session, currentQuestion, updateSession]
   );
@@ -174,13 +180,14 @@ function ListeningPlayContent() {
     if (!session || !currentQuestion || currentQuestion.status !== "pending") return;
     if (!typedAnswer.trim()) return;
     const elapsed = Math.max(100, Date.now() - questionStartRef.current);
-    updateSession((prev) =>
-      listeningReducer(prev, {
-        type: "SUBMIT_TYPED",
-        input: typedAnswer,
-        timeMs: elapsed,
-      })
-    );
+    const nextSession = listeningReducer(session, {
+      type: "SUBMIT_TYPED",
+      input: typedAnswer,
+      timeMs: elapsed,
+    });
+    const updatedQ = nextSession.questions[nextSession.index];
+    playGameSfx(updatedQ?.status === "correct" ? "correct-chime" : "incorrect-chime");
+    updateSession(() => nextSession);
   }, [session, currentQuestion, typedAnswer, updateSession]);
 
   const handleSkip = useCallback(() => {
@@ -195,6 +202,7 @@ function ListeningPlayContent() {
       finalizeAndNavigate(session);
       return;
     }
+    playGameSfx("card-flip");
     setTypedAnswer("");
     const currentIdx = session.index;
     // Explicitly blur any currently focused element so the newly rendered Skip button doesn't inherit focus!

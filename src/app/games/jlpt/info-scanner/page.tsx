@@ -18,6 +18,7 @@ import {
   StickyNote,
 } from "lucide-react";
 import { saveGameSession } from "@/lib/game-core/storage";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   INFO_SCANNER_CATEGORIES,
   INFO_SCANNER_DOCUMENTS,
@@ -106,6 +107,7 @@ function InfoScannerSetupContent() {
       showScenarioEnglish,
     });
     saveGameSession("jlpt-scanner", session.sessionId, session);
+    playGameSfx("temple-bell-gong");
     router.push(`/games/jlpt/info-scanner/play/${session.sessionId}`);
   }
 

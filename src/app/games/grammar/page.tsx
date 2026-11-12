@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ArrowRight, BookOpen } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import { saveGameSession } from "@/lib/game-core/storage";
 import { createGrammarSession } from "@/engine/grammarSession";
 import { grammarLevels, loadGrammarData, type GrammarLevel } from "@/data/grammar";
@@ -111,6 +112,7 @@ export default function GrammarSetupPage() {
       saveGameSession("grammar", session.sessionId, session);
       localStorage.setItem("grammar-last-setup", JSON.stringify({ levels, size, clozeRatio }));
       setStarting(false);
+      playGameSfx("temple-bell-gong");
       router.push(`/games/grammar/play/${session.sessionId}`);
     } catch (startError) {
       console.error("Could not start grammar session.", startError);

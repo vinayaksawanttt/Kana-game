@@ -4,6 +4,7 @@ import { Suspense, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowRight, Eye, EyeOff, Sparkles } from "lucide-react";
 import { saveGameSession } from "@/lib/game-core/storage";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   PHONETIC_TRAP_ITEMS,
   PHONETIC_TRAP_LEVELS,
@@ -119,6 +120,7 @@ function PhoneticTrapSetupContent() {
       showFurigana,
     });
     saveGameSession("jlpt-traps", session.sessionId, session);
+    playGameSfx("temple-bell-gong");
     router.push(`/games/jlpt/phonetic-traps/play/${session.sessionId}`);
   }
 

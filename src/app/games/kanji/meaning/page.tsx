@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import { createKanjiMeaningSession } from "@/lib/game/kanji-meaning";
 import { saveGameSession } from "@/lib/game-core/storage";
 import { countsByLevel, countsByLevelGrade } from "@/data/kanji";
@@ -141,6 +142,7 @@ export default function KanjiMeaningSetupPage() {
       saveGameSession("kanji", session.sessionId, session);
       localStorage.setItem("kanji-meaning-last-setup", JSON.stringify({ levels, grades, size }));
       setStarting(false);
+      playGameSfx("temple-bell-gong");
       router.push(`/games/kanji/meaning/play/${session.sessionId}`);
     } catch (startError) {
       console.error("Could not start kanji meaning practice.", startError);

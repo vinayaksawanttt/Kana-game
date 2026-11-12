@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowLeft, ArrowRight, BookOpen, Check, RotateCcw } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import { saveGameSession } from "@/lib/game-core/storage";
 import { createKanaSession } from "@/lib/game/session";
 import {
@@ -65,6 +66,7 @@ export default function Home() {
 
   function startPractice() {
     if (characterCount === 0) return;
+    playGameSfx("temple-bell-gong");
     const session = createKanaSession({
       script,
       rowKeys: selectedRows.filter((key) => script === "hiragana" ? !key.startsWith("extended:") : true),

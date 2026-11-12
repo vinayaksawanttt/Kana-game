@@ -8,6 +8,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { saveGameSession } from "@/lib/game-core/storage";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   createListeningSceneSession,
   getListeningSceneCountsByLevel,
@@ -134,6 +135,7 @@ function ListeningScenesSetupContent() {
     });
 
     saveGameSession("jlpt-scene", session.sessionId, session);
+    playGameSfx("temple-bell-gong");
     router.push(`/games/jlpt/listening-scenes/play/${session.sessionId}`);
   }
 

@@ -4,6 +4,7 @@ import { Suspense, useEffect, useMemo, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { ArrowRight, Check, RotateCcw, X } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import { createKanjiMeaningSession, type KanjiMeaningResult, type KanjiMeaningStatus } from "@/lib/game/kanji-meaning";
 import { formatTime } from "@/lib/game-core/time";
 import { getGameResult, getGameSession, saveGameSession } from "@/lib/game-core/storage";
@@ -45,6 +46,7 @@ function KanjiMeaningResultContent() {
       }
       setResult(saved);
       setSession(getGameSession<StoredKanjiMeaningSession>("kanji", sessionId));
+      playGameSfx("victory-fanfare");
     }).catch((loadError: unknown) => {
       console.error("Could not read the kanji meaning result.", loadError);
       setError("This result could not be loaded.");

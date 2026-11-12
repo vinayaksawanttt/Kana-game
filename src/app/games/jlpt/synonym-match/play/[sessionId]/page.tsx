@@ -11,6 +11,7 @@ import {
   XCircle,
 } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
   getGameSession,
@@ -110,10 +111,17 @@ export default function SynonymMatchPlayPage() {
       if (typeof document !== "undefined" && document.activeElement instanceof HTMLElement) {
         document.activeElement.blur();
       }
+      if (currentQuestion) {
+        playGameSfx(
+          optionIndex === currentQuestion.correctOptionIndex
+            ? "correct-chime"
+            : "incorrect-chime"
+        );
+      }
       const elapsed = Math.max(100, Date.now() - questionStartRef.current);
       dispatch({ type: "ANSWER", optionIndex, timeMs: elapsed });
     },
-    [session.revealed],
+    [currentQuestion, session.revealed],
   );
 
   const handleSkip = useCallback(() => {
@@ -125,6 +133,7 @@ export default function SynonymMatchPlayPage() {
   const handleNext = useCallback(() => {
     if (!session.revealed) return;
     stopAudio();
+    playGameSfx("card-flip");
     dispatch({ type: "NEXT", forIndex: session.currentIndex });
   }, [session.currentIndex, session.revealed, stopAudio]);
 

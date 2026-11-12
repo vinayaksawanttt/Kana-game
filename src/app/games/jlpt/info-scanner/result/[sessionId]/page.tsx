@@ -19,6 +19,7 @@ import {
   Zap,
 } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
   getGameSession,
@@ -60,6 +61,7 @@ export default function InfoScannerResultPage() {
     if (summary) {
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setResult(summary);
+      playGameSfx("victory-fanfare");
     }
   }, [sessionId]);
 

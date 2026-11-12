@@ -4,6 +4,7 @@ import { Suspense, useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { ArrowRight, RotateCcw, Trophy } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import { formatTime } from "@/lib/game-core/time";
 import { getGameSession, saveGameSession } from "@/lib/game-core/storage";
 import type { KanaSessionResult } from "@/lib/game/kana";
@@ -42,6 +43,7 @@ function KanaResultContent() {
       }
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setResult(saved as KanaSessionResult);
+      playGameSfx("victory-fanfare");
     } catch {
       router.replace("/games/kana");
     }

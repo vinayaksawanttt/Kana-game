@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import {
@@ -10,6 +10,7 @@ import {
   XCircle,
 } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
   getGameSession,
@@ -54,6 +55,12 @@ export default function ListeningScenesResultPage() {
     loadResultSummary(sessionId)
   );
   const [filter, setFilter] = useState<SceneFilter>("all");
+
+  useEffect(() => {
+    if (result) {
+      playGameSfx("victory-fanfare");
+    }
+  }, [result]);
 
   const sceneMap = useMemo(() => {
     const map = new Map<string, (typeof ALL_LISTENING_SCENES)[number]>();

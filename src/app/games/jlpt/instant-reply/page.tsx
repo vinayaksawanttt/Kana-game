@@ -11,6 +11,7 @@ import {
   Volume2,
 } from "lucide-react";
 import { saveGameSession } from "@/lib/game-core/storage";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   INSTANT_REPLY_ITEMS,
   createInstantReplySession,
@@ -124,6 +125,7 @@ function InstantReplySetupContent() {
       category: categoryMode,
     });
     saveGameSession("jlpt-reply", session.sessionId, session);
+    playGameSfx("temple-bell-gong");
     router.push(`/games/jlpt/instant-reply/play/${session.sessionId}`);
   }
 

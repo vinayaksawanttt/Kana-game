@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState, type ChangeEvent } from "reac
 import Link from "next/link";
 import { ArrowRight, BookOpen, CheckCircle2, Download, RotateCcw, Upload, Volume2, VolumeX } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import { grammarGuideHref } from "@/data/grammar";
 import {
   exportBackup,
@@ -127,6 +128,7 @@ export default function ReviewHubPage() {
 
   function startReview() {
     if (filteredDue.length === 0) return;
+    playGameSfx("temple-bell-gong");
     setQueue([...filteredDue]);
     setCurrentIndex(0);
     setRevealed(false);
@@ -139,11 +141,17 @@ export default function ReviewHubPage() {
     async (rating: Rating.Again | Rating.Hard | Rating.Good | Rating.Easy) => {
       const current = queue[currentIndex];
       if (!current) return;
+      if (rating === Rating.Again) {
+        playGameSfx("incorrect-chime");
+      } else {
+        playGameSfx("correct-chime");
+      }
       await recordReview(current.id, rating);
       setReviewedCount((count) => count + 1);
 
       if (currentIndex + 1 >= queue.length) {
         await refreshQueue();
+        playGameSfx("victory-fanfare");
         setMode("complete");
       } else {
         setRevealed(false);
@@ -159,6 +167,7 @@ export default function ReviewHubPage() {
       if (event.altKey || event.ctrlKey || event.metaKey) return;
       if (!revealed && (event.key === " " || event.key === "Enter")) {
         event.preventDefault();
+        playGameSfx("card-flip");
         setRevealed(true);
         return;
       }
@@ -565,7 +574,10 @@ export default function ReviewHubPage() {
                       </p>
                       <button
                         type="button"
-                        onClick={() => setRevealed(true)}
+                        onClick={() => {
+                          playGameSfx("card-flip");
+                          setRevealed(true);
+                        }}
                         className="primary-button flex h-12 w-full items-center justify-center gap-2 rounded-md text-sm font-bold"
                       >
                         Show Answer
@@ -740,7 +752,10 @@ export default function ReviewHubPage() {
                     </p>
                     <button
                       type="button"
-                      onClick={() => setRevealed(true)}
+                      onClick={() => {
+                        playGameSfx("card-flip");
+                        setRevealed(true);
+                      }}
                       className="primary-button flex h-12 w-full max-w-md items-center justify-center gap-2 rounded-md text-sm font-bold"
                     >
                       Show Answer

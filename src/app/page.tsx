@@ -4,6 +4,7 @@ import { GameLayout } from "@/lib/game-core/layout";
 import { DueReviewCount } from "@/components/due-review-count";
 import { getAllLearnDocs } from "@/lib/content/learn";
 import { JlptPaperIllustration } from "@/components/icons/JlptPaperIllustration";
+import { StoriesBookIllustration } from "@/components/icons/StoriesBookIllustration";
 
 function getSections(learnGuideCount: number) {
   return [
@@ -66,12 +67,6 @@ function getSections(learnGuideCount: number) {
         description: "Put grammar to work with cloze and sentence-scramble games.",
         badge: "学",
         href: "/games/grammar",
-      },
-      {
-        title: "Stories & Reading",
-        description: "Read JLPT N5–N4 graded stories and classic fairy tales with furigana and vocabulary notes.",
-        badge: "話",
-        href: "/stories",
       },
       {
         title: "Cheat Sheets & Study Guides",
@@ -307,6 +302,69 @@ export default function GamesHub() {
 
                   <div className="flex items-center justify-center lg:pl-4">
                     <JlptPaperIllustration className="h-52 w-40 shrink-0 transition-transform duration-300 group-hover:rotate-1 group-hover:scale-[1.03] sm:h-56 sm:w-44" />
+                  </div>
+                </Link>
+              )}
+              {section.title === "Learn & Reference" && (
+                <Link
+                  href="/stories"
+                  className="group col-span-1 grid gap-6 rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[0_14px_38px_rgba(188,0,45,0.06)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sakura)] hover:shadow-[0_22px_44px_rgba(208,16,76,0.14)] sm:col-span-2 lg:col-span-3 lg:grid-cols-[1fr_auto] lg:items-center lg:p-8"
+                >
+                  <div className="flex flex-col">
+                    <div className="mb-4 flex flex-wrap items-center gap-3">
+                      <span className="grid size-12 shrink-0 place-items-center rounded-full bg-[var(--primary)] font-japanese text-2xl font-bold text-white shadow-sm">
+                        話
+                      </span>
+                      <span className="text-xs font-extrabold uppercase tracking-[0.16em] text-[var(--primary-fg)]">
+                        JAPANESE GRADED READER · 多読・読み物
+                      </span>
+                      <span className="rounded-full bg-[var(--correct)]/15 px-3 py-1 text-[11px] font-bold text-[var(--correct)]">
+                        Live · N5–N4 · 62 Stories
+                      </span>
+                    </div>
+
+                    <h3 className="text-xl font-bold sm:text-2xl">
+                      Stories &amp; Graded Reading (
+                      <span className="font-japanese">日本語多読・名作昔話・日常会話</span>)
+                    </h3>
+
+                    <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--muted)]">
+                      Immerse in authentic Japanese graded stories, everyday conversational scenes, and timeless folklore with interactive furigana, tap-to-inspect word breakdowns, bilingual sentence translation, and native audio speech narration.
+                    </p>
+
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
+                        <span className="font-japanese">昔話</span> Classic Fairy Tales (<span className="font-japanese">桃太郎・花咲か爺さん</span> · 12 Stories)
+                      </span>
+                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
+                        <span className="font-japanese">日常</span> Everyday Life Scenes (<span className="font-japanese">大学・新幹線・空港</span> · 20 Stories)
+                      </span>
+                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
+                        <span className="font-japanese">音声</span> Full Audio Narration (<span className="font-japanese">自然な東京音声</span> · Live)
+                      </span>
+                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
+                        <span className="font-japanese">振仮名</span> Interactive Furigana &amp; Hover Vocabulary
+                      </span>
+                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
+                        <span className="font-japanese">対訳</span> Bilingual Sentence Breakdown (<span className="font-japanese">英語対訳</span>)
+                      </span>
+                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
+                        <span className="font-japanese">読解</span> Comprehension Quizzes (<span className="font-japanese">読解演習</span> · Live)
+                      </span>
+                    </div>
+
+                    <div className="mt-6 flex items-center gap-2 text-sm font-bold text-[var(--primary-fg)]">
+                      <span>Read Stories &amp; Folk Tales →</span>
+                      <ArrowRight
+                        size={16}
+                        className="transition-transform group-hover:translate-x-1"
+                        aria-hidden="true"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-center lg:pl-4">
+                    <StoriesBookIllustration className="h-52 w-40 shrink-0 transition-transform duration-300 group-hover:rotate-1 group-hover:scale-[1.03] sm:h-56 sm:w-44" />
                   </div>
                 </Link>
               )}

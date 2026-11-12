@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowRight, RotateCcw } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import { saveGameSession } from "@/lib/game-core/storage";
 import {
   availableVocabularyGrades,
@@ -162,6 +163,7 @@ export default function VocabularySetupPage() {
       saveGameSession("vocabulary", session.sessionId, session);
       localStorage.setItem("vocabulary-last-setup", JSON.stringify({ levels, grades, size }));
       setStarting(false);
+      playGameSfx("temple-bell-gong");
       router.push(`/games/vocabulary/play/${session.sessionId}`);
     } catch (startError) {
       console.error("Could not start vocabulary practice.", startError);

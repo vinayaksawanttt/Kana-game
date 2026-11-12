@@ -5,6 +5,7 @@ import { Check, Volume2, X } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 import { loadKanjiData, type KanjiRecord } from "@/data/kanji";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   buildKanjiMeaningResult,
   createKanjiMeaningState,
@@ -176,6 +177,8 @@ function KanjiMeaningGame({
       }
       event.preventDefault();
       const optionIndex = Number(event.key) - 1;
+      const isCorrect = question.optionKanji[optionIndex] === question.kanji;
+      playGameSfx(isCorrect ? "correct-chime" : "incorrect-chime");
       dispatch({
         type: "ANSWER",
         optionIndex,
@@ -202,6 +205,8 @@ function KanjiMeaningGame({
 
   function answer(optionIndex: number) {
     if (answered || leaving || !question) return;
+    const isCorrect = question.optionKanji[optionIndex] === question.kanji;
+    playGameSfx(isCorrect ? "correct-chime" : "incorrect-chime");
     dispatch({
       type: "ANSWER",
       optionIndex,
@@ -232,6 +237,7 @@ function KanjiMeaningGame({
         const advanced = kanjiMeaningReducer(latest, { type: "NEXT", index: targetIndex });
         if (advanced.index >= advanced.questions.length) finish(advanced);
         else {
+          playGameSfx("card-flip");
           setLeaving(false);
           dispatch({ type: "NEXT", index: targetIndex });
         }

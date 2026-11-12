@@ -5,6 +5,7 @@ import { useParams, useRouter } from "next/navigation";
 import { ArrowRight, Check, RotateCcw, X } from "lucide-react";
 import { loadVocabularyData, vocabularyLevels, type VocabularyLevel } from "@/data/vocabulary";
 import { GameLayout } from "@/lib/game-core/layout";
+import { playGameSfx } from "@/lib/game-core/sfx";
 import { formatTime } from "@/lib/game-core/time";
 import { getGameResult, saveGameSession } from "@/lib/game-core/storage";
 import {
@@ -87,6 +88,7 @@ function VocabularyResultContent() {
       if (active) {
         setResult(saved);
         setReviewQuestions(questions);
+        playGameSfx("victory-fanfare");
       }
     }).catch((loadError: unknown) => {
       if (!active) return;
