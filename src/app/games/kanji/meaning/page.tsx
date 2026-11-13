@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Check, RotateCcw } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import { createKanjiMeaningSession } from "@/lib/game/kanji-meaning";
@@ -161,45 +161,93 @@ export default function KanjiMeaningSetupPage() {
 
   return (
     <GameLayout label="KANJI" glyph="漢">
-      <section className="mx-auto flex w-full max-w-6xl flex-1 items-center justify-center px-5 py-6 sm:px-8">
-        <div className="grid w-full gap-5 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start">
-          <div className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-7">
-            <p className="mb-1 text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
-              Meaning mode
-            </p>
-            <h1 className="mb-7 text-2xl font-bold sm:text-3xl">Practice setup</h1>
-            <div className="space-y-7">
+      <section className="mx-auto flex w-full max-w-6xl flex-1 items-center justify-center px-4 py-6 sm:px-8 sm:py-8">
+        <div className="grid w-full gap-6 lg:grid-cols-[minmax(0,1fr)_340px] lg:items-start">
+          <div className="rounded-3xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-8">
+            <div className="mb-8 flex items-end justify-between gap-4 border-b border-[var(--line)]/70 pb-5">
+              <div>
+                <div className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)]/30 bg-[var(--sakura-light)] px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--primary-fg)]">
+                  <span>漢字の意味練習</span>
+                  <span>·</span>
+                  <span>Meaning Mode</span>
+                </div>
+                <h1 className="mt-1 text-2xl font-bold tracking-tight text-[var(--ink)] sm:text-3xl">
+                  Practice setup
+                </h1>
+              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  setLevels([5]);
+                  setGrades(gradeOptions.map((item) => item.value).filter((grade) => (counts[grade] ?? 0) > 0));
+                  setSize(10);
+                }}
+                className="flex min-h-10 cursor-pointer items-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--bg)] px-3 py-1.5 text-xs font-bold text-[var(--muted)] transition-all hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary-fg)] shadow-2xs"
+              >
+                <RotateCcw size={14} />
+                <span>Reset</span>
+              </button>
+            </div>
+
+            <div className="space-y-8">
+              {/* 1. JLPT Level Selection */}
               <fieldset>
-                <legend className="mb-3 text-sm font-bold">Level</legend>
-                <div className="flex flex-wrap gap-2">
-                  {levelOptions.map((level) => (
-                    <button
-                      key={level.value}
-                      type="button"
-                      aria-pressed={levels.includes(level.value)}
-                      onClick={() => toggleValue(level.value, levels, setLevels)}
-                      className={`min-h-11 rounded-full border px-4 py-2 text-sm font-bold transition-colors ${
-                        levels.includes(level.value)
-                          ? "border-[var(--primary)] bg-[var(--primary)] text-white"
-                          : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)]"
-                      }`}
-                    >
-                      {level.label}{" "}
-                      <span className="ml-1 text-xs opacity-80">
-                        ({levelCounts[level.value] ?? 0})
-                      </span>
-                    </button>
-                  ))}
+                <div className="mb-3 flex items-center justify-between">
+                  <legend className="text-xs font-extrabold uppercase tracking-wider text-[var(--muted)]">
+                    1. JLPT Level · 難易度
+                  </legend>
+                  <span className="text-[11px] text-[var(--muted)]">
+                    {levels.length} level{levels.length === 1 ? "" : "s"} selected
+                  </span>
+                </div>
+                <div className="grid grid-cols-2 gap-2 sm:grid-cols-5">
+                  {levelOptions.map((level) => {
+                    const selected = levels.includes(level.value);
+                    const count = levelCounts[level.value] ?? 0;
+                    return (
+                      <button
+                        key={level.value}
+                        type="button"
+                        aria-pressed={selected}
+                        onClick={() => toggleValue(level.value, levels, setLevels)}
+                        className={`relative flex min-h-12 cursor-pointer items-center justify-between rounded-xl border px-3.5 py-2 text-left transition-all duration-150 select-none ${
+                          selected
+                            ? "border-[var(--primary)] bg-[var(--primary)] text-white shadow-xs"
+                            : "border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--primary)]/60 hover:bg-[var(--sakura-light)]/40 hover:shadow-2xs"
+                        }`}
+                      >
+                        <div className="flex flex-col">
+                          <span className="text-sm font-black tracking-wide">{level.label}</span>
+                          <span className={`text-[10px] font-semibold ${selected ? "text-white/80" : "text-[var(--muted)]"}`}>
+                            {count} kanji
+                          </span>
+                        </div>
+                        {selected && (
+                          <span className="grid size-5 place-items-center rounded-full bg-white/20 text-white">
+                            <Check size={12} className="stroke-[3]" />
+                          </span>
+                        )}
+                      </button>
+                    );
+                  })}
                 </div>
                 <p className="mt-2 text-xs text-[var(--muted)]">
-                  Counts update with your selected grades.
+                  Counts update dynamically with your chosen school grades.
                 </p>
               </fieldset>
 
+              {/* 2. School Grade Selection */}
               <fieldset>
                 <div className="mb-3 flex items-center justify-between gap-3">
-                  <legend className="text-sm font-bold">Grade</legend>
-                  <div className="flex gap-2 text-xs font-bold">
+                  <div>
+                    <legend className="text-xs font-extrabold uppercase tracking-wider text-[var(--muted)]">
+                      2. School Grade · 配当漢字
+                    </legend>
+                    <span className="text-[11px] text-[var(--muted)]">
+                      Japanese elementary (1–6) & secondary joyo kanji
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-1.5 text-xs font-bold">
                     <button
                       type="button"
                       onClick={() =>
@@ -209,92 +257,164 @@ export default function KanjiMeaningSetupPage() {
                             .map((item) => item.value)
                         )
                       }
-                      className="rounded px-2 py-1 text-[var(--primary-fg)]"
+                      className="cursor-pointer rounded-lg px-2.5 py-1 text-xs text-[var(--primary-fg)] transition-colors hover:bg-[var(--sakura-light)]"
                     >
                       Select all
                     </button>
+                    <span className="text-[var(--line)]">·</span>
                     <button
                       type="button"
                       onClick={() => setGrades([])}
-                      className="rounded px-2 py-1 text-[var(--muted)]"
+                      className="cursor-pointer rounded-lg px-2.5 py-1 text-xs text-[var(--muted)] transition-colors hover:bg-[var(--sakura-light)] hover:text-[var(--ink)]"
                     >
                       Clear
                     </button>
                   </div>
                 </div>
-                <div className="flex flex-wrap gap-2">
+                <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4">
                   {gradeOptions.map((grade) => {
                     const count = counts[grade.value] ?? 0;
                     const selected = grades.includes(grade.value);
+                    const disabled = !count;
                     return (
                       <button
                         key={grade.value}
                         type="button"
-                        disabled={!count}
+                        disabled={disabled}
                         aria-pressed={selected}
                         onClick={() => toggleValue(grade.value, grades, setGrades)}
-                        className={`min-h-11 rounded-full border px-4 py-2 text-sm font-bold transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
-                          selected
-                            ? "border-[var(--primary)] bg-[var(--primary)] text-white"
-                            : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)]"
+                        className={`relative flex min-h-12 cursor-pointer items-center justify-between rounded-xl border px-3.5 py-2 text-left transition-all duration-150 select-none ${
+                          disabled
+                            ? "cursor-not-allowed border-dashed border-[var(--line)] bg-[var(--bg)]/50 text-[var(--muted)] opacity-40"
+                            : selected
+                            ? "border-[var(--primary)] bg-[var(--primary)] text-white shadow-xs"
+                            : "border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--primary)]/60 hover:bg-[var(--sakura-light)]/40 hover:shadow-2xs"
                         }`}
                       >
-                        {grade.label} <span className="ml-1 text-xs opacity-80">({count})</span>
+                        <div className="flex flex-col truncate">
+                          <span className="text-xs font-extrabold tracking-wide truncate">{grade.label}</span>
+                          <span className={`text-[10px] font-semibold ${selected ? "text-white/80" : "text-[var(--muted)]"}`}>
+                            {disabled ? "0 kanji" : `${count} kanji`}
+                          </span>
+                        </div>
+                        {selected && !disabled && (
+                          <span className="grid size-5 shrink-0 place-items-center rounded-full bg-white/20 text-white">
+                            <Check size={12} className="stroke-[3]" />
+                          </span>
+                        )}
                       </button>
                     );
                   })}
                 </div>
               </fieldset>
 
+              {/* 3. Question Count / Set Size */}
               <fieldset>
-                <legend className="mb-3 text-sm font-bold">Set size</legend>
-                <div className="grid grid-cols-3 gap-2">
-                  {(poolSize < 10 ? ([10] as const) : ([10, 20, 30] as const)).map((option) => (
-                    <button
-                      key={option}
-                      type="button"
-                      disabled={poolSize === 0 || option > poolSize}
-                      aria-pressed={size === option}
-                      onClick={() => setSize(option)}
-                      className={`min-h-11 rounded-full border px-5 py-2 text-sm font-bold transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
-                        size === option
-                          ? "border-[var(--primary)] bg-[var(--primary)] text-white"
-                            : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)]"
-                      }`}
-                    >
-                      {poolSize < 10 ? `All ${poolSize}` : option}
-                    </button>
-                  ))}
+                <div className="mb-3 flex items-center justify-between">
+                  <legend className="text-xs font-extrabold uppercase tracking-wider text-[var(--muted)]">
+                    3. Set size · 出題数
+                  </legend>
+                  <span className="text-[11px] text-[var(--muted)]">
+                    {poolSize < 10 ? `All ${poolSize} available` : `${size} questions`}
+                  </span>
+                </div>
+                <div className="grid grid-cols-3 gap-3">
+                  {(poolSize < 10 ? ([10] as const) : ([10, 20, 30] as const)).map((option) => {
+                    const active = size === option;
+                    const disabled = poolSize === 0 || (poolSize >= 10 && option > poolSize);
+                    return (
+                      <button
+                        key={option}
+                        type="button"
+                        disabled={disabled}
+                        aria-pressed={active}
+                        onClick={() => setSize(option)}
+                        className={`flex min-h-12 cursor-pointer items-center justify-center gap-1.5 rounded-xl border px-4 py-2 text-sm font-bold transition-all duration-150 select-none ${
+                          disabled
+                            ? "cursor-not-allowed border-dashed border-[var(--line)] bg-[var(--bg)]/50 text-[var(--muted)] opacity-40"
+                            : active
+                            ? "border-[var(--primary)] bg-[var(--primary)] text-white shadow-xs"
+                            : "border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--primary)]/60 hover:bg-[var(--sakura-light)]/40 hover:shadow-2xs"
+                        }`}
+                      >
+                        {poolSize < 10 ? `All ${poolSize}` : option}
+                      </button>
+                    );
+                  })}
                 </div>
               </fieldset>
             </div>
           </div>
 
-          <aside className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-7 lg:sticky lg:top-6 lg:self-start">
-            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
-              Your selection
-            </p>
-            <div className="my-5 flex items-end justify-between border-b border-[var(--line)] pb-5">
-              <span className="font-japanese text-5xl leading-none text-[var(--primary-fg)]">{poolSize}</span>
-              <span className="pb-1 text-sm text-[var(--muted)]">kanji available</span>
+          {/* Right Sticky Sidebar */}
+          <aside className="rounded-3xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[0_18px_50px_rgba(188,0,45,0.06)] lg:sticky lg:top-6 lg:self-start">
+            <div className="flex items-center justify-between border-b border-[var(--line)]/70 pb-3">
+              <p className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
+                Your selection
+              </p>
+              <span className="rounded-full border border-[var(--line)] bg-[var(--bg)] px-2.5 py-0.5 text-[11px] font-bold text-[var(--primary-fg)]">
+                Meaning
+              </span>
             </div>
-            <p className="mb-5 flex items-center justify-between text-sm text-[var(--muted)]">
-              <span>Questions</span>
-              <strong className="text-[var(--ink)]">{Math.min(size, poolSize)}</strong>
-            </p>
+
+            <div className="my-5 flex items-baseline justify-between border-b border-[var(--line)]/70 pb-5">
+              <div>
+                <span className="font-japanese text-5xl font-black leading-none text-[var(--primary-fg)]">
+                  {poolSize}
+                </span>
+                <span className="ml-2 text-sm font-bold text-[var(--muted)]">kanji available</span>
+              </div>
+              <div className="text-right">
+                <span className="block text-xs text-[var(--muted)]">Estimated time</span>
+                <span className="text-sm font-bold text-[var(--ink)]">
+                  ~{Math.max(1, Math.round(Math.min(size, poolSize) * 8 / 60))} min
+                </span>
+              </div>
+            </div>
+
+            <div className="space-y-2.5 text-xs text-[var(--muted)] pb-5 border-b border-[var(--line)]/70">
+              <div className="flex items-center justify-between">
+                <span>Questions in session:</span>
+                <strong className="text-[var(--ink)] tabular-nums text-sm">
+                  {Math.min(size, poolSize)}
+                </strong>
+              </div>
+              <div className="flex items-center justify-between">
+                <span>Active levels:</span>
+                <span className="font-bold text-[var(--ink)]">
+                  {levels.length ? levels.map((l) => `N${l}`).join(", ") : "None"}
+                </span>
+              </div>
+              <div className="flex items-center justify-between">
+                <span>Active grades:</span>
+                <span className="font-bold text-[var(--ink)] tabular-nums">
+                  {grades.length} selected
+                </span>
+              </div>
+            </div>
+
             {error && (
-              <p role="alert" className="mb-3 text-sm font-semibold">
+              <p role="alert" className="mt-3 text-xs font-semibold text-[var(--wrong)]">
                 {error}
               </p>
             )}
-            <button
-              type="button"
-              disabled={!poolSize || starting}
-              onClick={start}
-              className="flex h-14 w-full items-center justify-center gap-2 rounded-xl bg-[var(--primary)] text-lg font-bold text-white transition hover:bg-[var(--primary-hover)] disabled:cursor-not-allowed disabled:opacity-45"
-            >
-              {starting ? "Starting…" : "Start Practice"} <ArrowRight size={19} />
-            </button>
+
+            <div className="mt-5">
+              <button
+                type="button"
+                disabled={!poolSize || starting}
+                onClick={start}
+                className="flex h-14 w-full cursor-pointer items-center justify-center gap-2 rounded-2xl bg-[var(--primary)] text-base font-extrabold text-white shadow-sm transition hover:bg-[var(--primary-hover)] hover:shadow-md disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                <span>{starting ? "Starting…" : "Start Practice"}</span>
+                <ArrowRight size={18} />
+              </button>
+              {!poolSize && (
+                <p className="mt-2 text-center text-xs text-[var(--wrong)]">
+                  Please select at least one grade with available kanji.
+                </p>
+              )}
+            </div>
           </aside>
         </div>
       </section>

@@ -349,15 +349,17 @@ function KanjiPlaygroundContent() {
                       {bundle?.radicals && bundle.radicals.length > 0 ? (
                         <div className="mt-1.5 flex flex-wrap gap-1.5">
                           {bundle.radicals.map((rad) => (
-                            <span
+                            <Link
                               key={rad.character}
-                              className="inline-flex items-center gap-1 rounded-md border border-[var(--line)] bg-[var(--surface)] px-2 py-0.5 text-xs"
+                              href="/games/kanji/reading?view=radicals"
+                              title={`Explore radical ${rad.character} (${rad.meaning})`}
+                              className="inline-flex items-center gap-1 rounded-md border border-[var(--line)] bg-[var(--surface)] px-2 py-0.5 text-xs transition-colors hover:border-[var(--primary)] hover:bg-[var(--sakura-light)]"
                             >
                               <span lang="ja" className="font-japanese font-bold text-[var(--primary-fg)]">
                                 {rad.character}
                               </span>
                               <span className="text-[var(--muted)]">{rad.meaning}</span>
-                            </span>
+                            </Link>
                           ))}
                         </div>
                       ) : (
@@ -430,17 +432,22 @@ function KanjiPlaygroundContent() {
 
                   {/* Composite Vocabulary Words */}
                   <div className="mt-5 border-t border-[var(--line)] pt-4">
-                    <h2 className="text-xs font-bold tracking-[0.14em] text-[var(--muted)] uppercase">
-                      Composite Vocabulary Words
-                    </h2>
+                    <div className="flex items-center justify-between">
+                      <h2 className="text-xs font-bold tracking-[0.14em] text-[var(--muted)] uppercase">
+                        Composite Vocabulary Words
+                      </h2>
+                      <span className="text-[11px] font-semibold text-[var(--muted)]">
+                        {bundle?.composites?.length ?? 0} compounds
+                      </span>
+                    </div>
                     {bundle?.composites && bundle.composites.length > 0 ? (
                       <div className="mt-2.5 grid gap-2.5 sm:grid-cols-2 lg:grid-cols-3">
                         {bundle.composites.map((comp) => (
                           <div
                             key={`${comp.word}-${comp.reading}`}
-                            className="flex items-center justify-between gap-2 rounded-xl border border-[var(--line)] bg-[var(--bg)] px-3.5 py-2.5"
+                            className="flex items-center justify-between gap-2 rounded-xl border border-[var(--line)] bg-[var(--bg)] p-3 shadow-2xs transition-colors hover:border-[var(--sakura)]"
                           >
-                            <div>
+                            <div className="min-w-0 flex-1">
                               <div className="flex items-baseline gap-1.5">
                                 <span
                                   lang="ja"
@@ -450,18 +457,27 @@ function KanjiPlaygroundContent() {
                                 </span>
                                 <span
                                   lang="ja"
-                                  className="font-japanese text-xs text-[var(--primary-fg)]"
+                                  className="font-japanese text-xs text-[var(--primary-fg)] font-medium"
                                 >
                                   {comp.reading}
                                 </span>
                               </div>
-                              <p className="mt-0.5 text-xs text-[var(--muted)]">
+                              <p className="truncate text-xs text-[var(--muted)]">
                                 {comp.meaning}
                               </p>
                             </div>
-                            <span className="shrink-0 rounded-full bg-[var(--primary)] px-2 py-0.5 text-[10px] font-bold text-white">
-                              N{comp.jlpt}
-                            </span>
+                            <div className="flex items-center gap-1.5">
+                              <span className="shrink-0 rounded-full bg-[var(--primary)] px-2 py-0.5 text-[10px] font-bold text-white">
+                                N{comp.jlpt}
+                              </span>
+                              <AudioButton
+                                text={comp.word}
+                                reading={comp.reading}
+                                mode="vocab"
+                                size="sm"
+                                label={`Listen to ${comp.word}`}
+                              />
+                            </div>
                           </div>
                         ))}
                       </div>

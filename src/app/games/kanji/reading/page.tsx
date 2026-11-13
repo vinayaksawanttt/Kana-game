@@ -216,11 +216,43 @@ function KanjiReadingContent() {
                   type="search"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder={`Filter ${selectedLevel} kanji, reading, meaning...`}
+                  placeholder={`Search ${selectedLevel} kanji, reading, meaning...`}
                   aria-label="Filter kanji"
-                  className="h-11 w-full rounded-xl border border-[var(--line)] bg-[var(--surface)] pr-3.5 pl-10 text-sm text-[var(--ink)] placeholder:text-[var(--muted)] focus:border-[var(--primary)] focus:outline-none"
+                  className="h-11 w-full rounded-xl border border-[var(--line)] bg-[var(--surface)] pr-9 pl-10 text-sm text-[var(--ink)] placeholder:text-[var(--muted)] focus:border-[var(--primary)] focus:outline-none"
                 />
+                {searchQuery && (
+                  <button
+                    type="button"
+                    onClick={() => setSearchQuery("")}
+                    aria-label="Clear search"
+                    className="absolute top-1/2 right-2.5 -translate-y-1/2 rounded-full p-1 text-[var(--muted)] hover:text-[var(--ink)]"
+                  >
+                    ×
+                  </button>
+                )}
               </div>
+            </div>
+          )}
+
+          {/* Grade Quick Jump Bar in Sheet Mode */}
+          {viewMode === "sheet" && groupedByGrade.length > 1 && (
+            <div className="mt-3 flex items-center gap-1.5 overflow-x-auto pb-1 text-xs scrollbar-none">
+              <span className="shrink-0 font-bold uppercase tracking-wider text-[var(--muted)] text-[10px] mr-1">
+                Jump to:
+              </span>
+              {groupedByGrade.map(([grade, items]) => (
+                <button
+                  key={grade}
+                  type="button"
+                  onClick={() => {
+                    const el = document.getElementById(`grade-section-${grade}`);
+                    el?.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }}
+                  className="shrink-0 rounded-lg border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 font-semibold text-[var(--ink)] transition-colors hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary)] cursor-pointer"
+                >
+                  {formatGradeTitle(grade)} ({items.length})
+                </button>
+              ))}
             </div>
           )}
         </header>
@@ -256,16 +288,27 @@ function KanjiReadingContent() {
                 {groupedByGrade.map(([grade, items]) => (
                   <section
                     key={grade}
+                    id={`grade-section-${grade}`}
                     aria-label={formatGradeTitle(grade)}
-                    className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-sm sm:p-6"
+                    className="scroll-mt-6 rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-sm sm:p-6"
                   >
-                    <div className="mb-4 flex items-center justify-between border-b border-[var(--line)] pb-3">
-                      <h2 className="text-sm font-extrabold tracking-[0.12em] text-[var(--ink)] uppercase">
-                        {formatGradeTitle(grade)}
-                      </h2>
-                      <span className="rounded-full border border-[var(--line)] bg-[var(--bg)] px-2.5 py-0.5 text-xs font-bold text-[var(--muted)] tabular-nums">
-                        {items.length} kanji
-                      </span>
+                    <div className="mb-4 flex flex-wrap items-center justify-between gap-2 border-b border-[var(--line)] pb-3">
+                      <div>
+                        <h2 className="text-sm font-extrabold tracking-[0.12em] text-[var(--ink)] uppercase">
+                          {formatGradeTitle(grade)}
+                        </h2>
+                        <p className="mt-0.5 text-xs text-[var(--muted)]">
+                          {grade <= 6 ? "Elementary Jouyou Kanji" : "Junior High & Secondary Kanji"}
+                        </p>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="rounded-full bg-[var(--sakura-light)] px-2.5 py-0.5 text-xs font-bold text-[var(--primary)]">
+                          JLPT {selectedLevel}
+                        </span>
+                        <span className="rounded-full border border-[var(--line)] bg-[var(--bg)] px-2.5 py-0.5 text-xs font-bold text-[var(--muted)] tabular-nums">
+                          {items.length} kanji
+                        </span>
+                      </div>
                     </div>
 
                     <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
@@ -275,7 +318,7 @@ function KanjiReadingContent() {
                           type="button"
                           onClick={() => setActiveKanji(kanji)}
                           aria-label={`${kanji.c}, ${getPrimaryReading(kanji)}, ${kanji.label}`}
-                          className="group flex aspect-square flex-col items-center justify-between rounded-xl border border-[var(--line)] bg-[var(--bg)] p-3 text-center transition duration-150 hover:-translate-y-0.5 hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)]/50 hover:shadow-md cursor-pointer"
+                          className="group relative flex aspect-square flex-col items-center justify-between rounded-xl border border-[var(--line)] bg-[var(--bg)] p-3 text-center transition-all duration-150 hover:-translate-y-1 hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)]/40 hover:shadow-md cursor-pointer"
                         >
                           <span
                             lang="ja"
@@ -286,12 +329,12 @@ function KanjiReadingContent() {
 
                           <span
                             lang="ja"
-                            className="font-kanji text-4xl leading-none text-[var(--ink)] transition-transform group-hover:scale-105"
+                            className="font-kanji text-4xl sm:text-5xl leading-none text-[var(--ink)] transition-transform group-hover:scale-105"
                           >
                             {kanji.c}
                           </span>
 
-                          <span className="w-full truncate text-[11px] font-medium text-[var(--muted)]">
+                          <span className="w-full truncate text-[11px] font-medium text-[var(--muted)] group-hover:text-[var(--ink)]">
                             {kanji.meanings[0] ?? kanji.label}
                           </span>
                         </button>

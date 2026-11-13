@@ -15,6 +15,8 @@ describe("GamesHub (/)", () => {
     expect(linkFor("/games/kanji/reading")).toBeTruthy();
     expect(screen.getByText(/kanji reading & radicals/i)).toBeTruthy();
     expect(linkFor("/games/vocabulary")).toBeTruthy();
+    expect(linkFor("/games/dialogue")).toBeTruthy();
+    expect(screen.getByText(/Dialogue Quest: Real-World Japanese Roleplay/i)).toBeTruthy();
     expect(linkFor("/games/jlpt")).toBeTruthy();
     expect(screen.getByText(/JLPT Exam Pattern Practice/i)).toBeTruthy();
     expect(screen.getByRole("heading", { name: "Learn & Reference" })).toBeTruthy();

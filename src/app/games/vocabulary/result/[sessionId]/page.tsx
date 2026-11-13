@@ -2,7 +2,18 @@
 
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
-import { ArrowRight, Check, RotateCcw, X } from "lucide-react";
+import {
+  ArrowRight,
+  Check,
+  ChevronDown,
+  ChevronUp,
+  Clock,
+  RotateCcw,
+  Sparkles,
+  Target,
+  Trophy,
+  X,
+} from "lucide-react";
 import { loadVocabularyData, vocabularyLevels, type VocabularyLevel } from "@/data/vocabulary";
 import { GameLayout } from "@/lib/game-core/layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
@@ -12,6 +23,7 @@ import {
   buildVocabularyReviewQuestions,
   calculateVocabularyReport,
   createVocabularySession,
+  parseExampleFurigana,
   type VocabularyReviewQuestion,
   type VocabularyResult,
 } from "@/lib/game/vocabulary";
@@ -67,13 +79,62 @@ function isVocabularyResult(value: unknown, sessionId: string): value is Vocabul
   typeof result.endedEarly === "boolean";
 }
 
+function CircularAccuracy({ accuracy }: { accuracy: number }) {
+  const radius = 38;
+  const circumference = 2 * Math.PI * radius;
+  const offset = circumference - (accuracy / 100) * circumference;
+  const strokeColor =
+    accuracy >= 80 ? "var(--correct)" : accuracy >= 60 ? "var(--primary)" : "var(--wrong)";
+
+  return (
+    <div className="relative grid size-28 shrink-0 place-items-center">
+      <svg className="size-full -rotate-90 transform" viewBox="0 0 96 96">
+        <circle
+          cx="48"
+          cy="48"
+          r={radius}
+          className="stroke-[var(--line)]"
+          strokeWidth="7"
+          fill="transparent"
+        />
+        <circle
+          cx="48"
+          cy="48"
+          r={radius}
+          stroke={strokeColor}
+          strokeWidth="7"
+          strokeDasharray={circumference}
+          strokeDashoffset={offset}
+          strokeLinecap="round"
+          fill="transparent"
+          className="transition-all duration-700 ease-out"
+        />
+      </svg>
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+        <span className="text-2xl font-black text-[var(--ink)] tabular-nums">{accuracy}%</span>
+        <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--muted)]">Accuracy</span>
+      </div>
+    </div>
+  );
+}
+
 function VocabularyResultContent() {
   const router = useRouter();
   const { sessionId } = useParams<{ sessionId: string }>();
   const [result, setResult] = useState<VocabularyResult | null>(null);
   const [reviewQuestions, setReviewQuestions] = useState<VocabularyReviewQuestion[]>([]);
+  const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
   const [working, setWorking] = useState(false);
   const [error, setError] = useState("");
+
+  function toggleRow(id: string) {
+    setExpandedIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  }
 
   useEffect(() => {
     let active = true;
@@ -149,102 +210,264 @@ function VocabularyResultContent() {
     question.kanji.map((kanji) => kanji.grade).filter((grade): grade is number => grade !== null)
   ))].sort((a, b) => a - b);
 
+  const firstTryCount = report.firstTryCorrect;
+  const retryCount = report.correctAfterRetries;
+  const skippedCount = report.skipped;
+  const unansweredCount = report.unanswered;
+  const total = report.total;
+
   return (
     <GameLayout label="VOCABULARY" glyph="語">
-      <section className="mx-auto w-full max-w-6xl flex-1 px-5 pb-8 sm:px-8">
-        <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-8">
-          <div className="flex flex-col justify-between gap-5 border-b border-[var(--line)] pb-6 sm:flex-row sm:items-center">
-            <div>
-              <p className="mb-1 text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">Session {result.endedEarly ? "ended" : "complete"}</p>
-              <h1 className="text-2xl font-bold sm:text-3xl">Vocabulary results</h1>
+      <section className="mx-auto w-full max-w-6xl flex-1 px-4 pb-12 sm:px-6">
+        <div className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-sm sm:p-8">
+          {/* Top Performance Dashboard Card */}
+          <div className="flex flex-col items-center justify-between gap-6 border-b border-[var(--line)] pb-6 sm:flex-row">
+            <div className="flex flex-col items-center gap-5 sm:flex-row sm:items-center">
+              <CircularAccuracy accuracy={report.accuracy} />
+              <div className="text-center sm:text-left">
+                <div className="flex flex-wrap items-center justify-center gap-2 sm:justify-start">
+                  <span className="rounded-full bg-[var(--sakura-light)] px-2.5 py-0.5 text-xs font-bold text-[var(--primary)] uppercase tracking-wider">
+                    Session {result.endedEarly ? "ended early" : "complete"}
+                  </span>
+                  <span className="inline-flex items-center gap-1 rounded-full border border-[var(--line)] bg-[var(--bg)] px-2.5 py-0.5 text-xs font-medium text-[var(--muted)]">
+                    <Clock size={12} /> {formatTime(report.completionTime)}
+                  </span>
+                </div>
+                <h1 className="mt-2 text-2xl font-bold sm:text-3xl text-[var(--ink)]">
+                  Vocabulary Results
+                </h1>
+                <p className="mt-1 text-xs text-[var(--muted)]">
+                  {report.score} / {report.maximumScore} points earned across {report.total} words.
+                </p>
+              </div>
             </div>
-            <div className="rounded-md bg-[var(--sakura-light)] px-5 py-3">
-              <p className="text-2xl font-bold">{report.score} / {report.maximumScore} points</p>
-              <p className="text-sm text-[var(--muted)]">{report.accuracy}% accuracy · {formatTime(report.completionTime)}</p>
-            </div>
-          </div>
 
-          <div className="my-5 flex flex-wrap gap-2">
-            <SummaryChip label="Questions attempted" value={`${report.attempted} / ${report.total}`} />
-            <SummaryChip label="First-try correct" value={report.firstTryCorrect} />
-            <SummaryChip label="Correct after retries" value={report.correctAfterRetries} />
-            <SummaryChip label="Questions with incorrect attempts" value={report.incorrect} />
-            <SummaryChip label="Incorrect attempts" value={report.incorrectAttempts} />
-            <SummaryChip label="Skipped" value={report.skipped} />
-            {report.unanswered > 0 && <SummaryChip label="Unanswered" value={report.unanswered} />}
-            <SummaryChip label="Hints used" value={report.hintsUsed} />
-            <SummaryChip label="Potential points deducted" value={report.pointsDeducted} />
-          </div>
-          <p className="mb-4 text-xs text-[var(--muted)]">
-            Accuracy is correct questions divided by questions with at least one answer attempt.
-            Skipped or unanswered questions may also include incorrect attempts.
-          </p>
-
-          <section className="mb-5">
-            <h2 className="mb-2 text-sm font-bold">Selected levels and grades</h2>
-            <div className="flex flex-wrap gap-2">
-              {result.settings.levels.map((level) => <span key={level} className="rounded-full border border-[var(--line)] px-3 py-1.5 text-xs font-semibold">{level}</span>)}
+            {/* Selected Levels & Grades Pill Cluster */}
+            <div className="flex flex-wrap items-center justify-center gap-1.5 sm:justify-end">
+              {result.settings.levels.map((level) => (
+                <span key={level} className="rounded-xl border border-[var(--primary)]/40 bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary)]">
+                  {level}
+                </span>
+              ))}
               {maxGradeList.map((grade) => (
-                <span key={grade} className="rounded-full border border-[var(--line)] px-3 py-1.5 text-xs font-semibold">
+                <span key={grade} className="rounded-xl border border-[var(--line)] bg-[var(--bg)] px-2.5 py-1 text-xs font-semibold text-[var(--muted)]">
                   {grade === 8 ? "Secondary (8)" : grade === 9 ? "Names (9)" : `Grade ${grade}`}
                 </span>
               ))}
             </div>
-          </section>
+          </div>
 
-          <div className="overflow-x-auto rounded-md border border-[var(--line)]">
-            <table className="w-full min-w-[980px] border-collapse text-left text-sm">
-              <thead className="sticky top-0 bg-[var(--surface)] text-xs uppercase tracking-wide text-[var(--muted)]">
+          {/* 4 Performance Metric Cards */}
+          <div className="my-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+            <div className="rounded-xl border border-[var(--line)] bg-[var(--bg)] p-4 text-center sm:text-left">
+              <div className="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-[var(--muted)]">
+                <span>Score</span>
+                <Trophy size={14} className="text-[var(--primary)]" />
+              </div>
+              <p className="mt-2 text-2xl font-black text-[var(--ink)] tabular-nums">
+                {report.score} <span className="text-xs font-bold text-[var(--muted)]">/ {report.maximumScore}</span>
+              </p>
+              <p className="mt-0.5 text-[11px] text-[var(--muted)]">
+                {Math.round((report.score / Math.max(1, report.maximumScore)) * 100)}% of max potential
+              </p>
+            </div>
+
+            <div className="rounded-xl border border-[var(--line)] bg-[var(--bg)] p-4 text-center sm:text-left">
+              <div className="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-[var(--muted)]">
+                <span>First-Try</span>
+                <Target size={14} className="text-[var(--correct)]" />
+              </div>
+              <p className="mt-2 text-2xl font-black text-[var(--correct)] tabular-nums">
+                {firstTryCount} <span className="text-xs font-bold text-[var(--muted)]">/ {total}</span>
+              </p>
+              <p className="mt-0.5 text-[11px] text-[var(--muted)]">
+                {Math.round((firstTryCount / Math.max(1, total)) * 100)}% on first attempt
+              </p>
+            </div>
+
+            <div className="rounded-xl border border-[var(--line)] bg-[var(--bg)] p-4 text-center sm:text-left">
+              <div className="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-[var(--muted)]">
+                <span>Attempted</span>
+                <Sparkles size={14} className="text-[var(--primary)]" />
+              </div>
+              <p className="mt-2 text-2xl font-black text-[var(--ink)] tabular-nums">
+                {report.attempted} <span className="text-xs font-bold text-[var(--muted)]">/ {total}</span>
+              </p>
+              <p className="mt-0.5 text-[11px] text-[var(--muted)]">
+                {retryCount} correct after retries
+              </p>
+            </div>
+
+            <div className="rounded-xl border border-[var(--line)] bg-[var(--bg)] p-4 text-center sm:text-left">
+              <div className="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-[var(--muted)]">
+                <span>Needs Review</span>
+                <RotateCcw size={14} className="text-[var(--wrong)]" />
+              </div>
+              <p className="mt-2 text-2xl font-black text-[var(--wrong)] tabular-nums">
+                {missedCount}
+              </p>
+              <p className="mt-0.5 text-[11px] text-[var(--muted)]">
+                {skippedCount} skipped · {unansweredCount} unanswered
+              </p>
+            </div>
+          </div>
+
+          {/* Breakdown Multi-segment Progress Bar */}
+          <div className="mb-6 rounded-xl border border-[var(--line)] bg-[var(--bg)] p-4">
+            <div className="flex items-center justify-between text-xs font-bold text-[var(--muted)] uppercase tracking-wider">
+              <span>Performance Breakdown</span>
+              <span className="text-[var(--ink)] tabular-nums">{total} questions</span>
+            </div>
+            <div className="mt-2.5 flex h-2.5 w-full overflow-hidden rounded-full bg-[var(--line)]/50">
+              {firstTryCount > 0 && (
+                <div
+                  style={{ width: `${(firstTryCount / total) * 100}%` }}
+                  className="bg-[var(--correct)] transition-all"
+                  title={`First try: ${firstTryCount}`}
+                />
+              )}
+              {retryCount > 0 && (
+                <div
+                  style={{ width: `${(retryCount / total) * 100}%` }}
+                  className="bg-amber-500 transition-all"
+                  title={`Correct after retries: ${retryCount}`}
+                />
+              )}
+              {skippedCount > 0 && (
+                <div
+                  style={{ width: `${(skippedCount / total) * 100}%` }}
+                  className="bg-[var(--wrong)] transition-all"
+                  title={`Skipped: ${skippedCount}`}
+                />
+              )}
+              {unansweredCount > 0 && (
+                <div
+                  style={{ width: `${(unansweredCount / total) * 100}%` }}
+                  className="bg-[var(--line)] transition-all"
+                  title={`Unanswered: ${unansweredCount}`}
+                />
+              )}
+            </div>
+
+            {/* Legend */}
+            <div className="mt-3 flex flex-wrap items-center gap-4 text-xs">
+              <div className="flex items-center gap-1.5 font-medium text-[var(--ink)]">
+                <span className="size-2 rounded-full bg-[var(--correct)]" />
+                <span>First Try ({firstTryCount})</span>
+              </div>
+              <div className="flex items-center gap-1.5 font-medium text-[var(--ink)]">
+                <span className="size-2 rounded-full bg-amber-500" />
+                <span>Retry Success ({retryCount})</span>
+              </div>
+              {skippedCount > 0 && (
+                <div className="flex items-center gap-1.5 font-medium text-[var(--ink)]">
+                  <span className="size-2 rounded-full bg-[var(--wrong)]" />
+                  <span>Skipped ({skippedCount})</span>
+                </div>
+              )}
+              {unansweredCount > 0 && (
+                <div className="flex items-center gap-1.5 font-medium text-[var(--muted)]">
+                  <span className="size-2 rounded-full bg-[var(--line)]" />
+                  <span>Unanswered ({unansweredCount})</span>
+                </div>
+              )}
+              {report.hintsUsed > 0 && (
+                <div className="ml-auto text-[11px] text-[var(--muted)]">
+                  Hints used: {report.hintsUsed} (−{report.pointsDeducted} pts)
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Interactive Results Table */}
+          <div className="overflow-x-auto rounded-xl border border-[var(--line)]">
+            <table className="w-full min-w-[880px] border-collapse text-left text-sm">
+              <thead className="sticky top-0 bg-[var(--surface)] text-xs uppercase tracking-wide text-[var(--muted)] border-b border-[var(--line)]">
                 <tr>
-                  <th className="p-3">Word</th>
-                  <th className="p-3">Reading</th>
-                  <th className="p-3">Expected meaning</th>
-                  <th className="p-3">Submitted answer</th>
-                  <th className="p-3">Hints used</th>
-                  <th className="p-3">Result</th>
-                  <th className="p-3">Points</th>
+                  <th className="p-3.5 pl-4">Word</th>
+                  <th className="p-3.5">Reading</th>
+                  <th className="p-3.5">Expected Meaning</th>
+                  <th className="p-3.5">Submitted Answer</th>
+                  <th className="p-3.5">Hints</th>
+                  <th className="p-3.5">Result</th>
+                  <th className="p-3.5 text-right pr-4">Points</th>
+                  <th className="p-3.5 w-10 text-center" aria-label="Expand row" />
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="divide-y divide-[var(--line)]">
                 {reviewQuestions.map((question) => {
                   const hints = [
                     ...(question.furiganaHintUsed ? ["Furigana"] : []),
                     ...question.kanjiHints.map((character) => `Kanji ${character}`),
                   ];
                   const answer = question.attempts.at(-1);
+                  const isExpanded = expandedIds.has(question.id);
+
                   return (
-                    <tr key={question.id} className="border-t border-[var(--line)] align-top">
-                      <td className="p-3">
+                    <tr
+                      key={question.id}
+                      onClick={() => toggleRow(question.id)}
+                      className="group cursor-pointer transition-colors hover:bg-[var(--sakura-light)]/30"
+                    >
+                      <td className="p-3.5 pl-4 align-top">
                         <div className="flex items-center gap-2">
-                          <div>
-                            <span className="block font-japanese text-2xl">{question.word}</span>
-                            <span className="text-xs text-[var(--muted)]">{question.level}</span>
+                          <span className="font-japanese text-xl font-bold text-[var(--ink)]">
+                            {question.word}
+                          </span>
+                          <span className="rounded bg-[var(--sakura-light)] px-1.5 py-0.5 text-[10px] font-bold text-[var(--primary)]">
+                            {question.level}
+                          </span>
+                          <div onClick={(e) => e.stopPropagation()}>
+                            <AudioButton
+                              mode="vocab"
+                              text={question.word}
+                              reading={question.reading}
+                              size="sm"
+                              label={`Listen to ${question.word}`}
+                            />
                           </div>
-                          <AudioButton
-                            mode="vocab"
-                            text={question.word}
-                            reading={question.reading}
-                            size="sm"
-                            label={`Listen to ${question.word}`}
-                          />
                         </div>
                       </td>
-                      <td className="p-3 font-japanese">{question.reading}</td>
-                      <td className="p-3 font-semibold">{question.meanings.join("; ")}</td>
-                      <td className="p-3">
-                        {answer || "—"}
+
+                      <td className="p-3.5 align-top font-japanese text-sm text-[var(--primary-fg)] font-medium">
+                        {question.reading}
+                      </td>
+
+                      <td className="p-3.5 align-top font-semibold text-[var(--ink)]">
+                        {question.meanings.join("; ")}
+                      </td>
+
+                      <td className="p-3.5 align-top text-xs">
+                        <span className={question.status === "correct" ? "text-[var(--ink)]" : "text-[var(--wrong)]"}>
+                          {answer || "—"}
+                        </span>
                         {(question.status === "correct" ? question.attempts.length - 1 : question.attempts.length) > 0 && (
-                          <span className="mt-1 block text-xs text-[var(--muted)]">
+                          <span className="mt-0.5 block text-[11px] text-[var(--muted)]">
                             {question.status === "correct" ? question.attempts.length - 1 : question.attempts.length} incorrect {((question.status === "correct" ? question.attempts.length - 1 : question.attempts.length) === 1) ? "attempt" : "attempts"}
                           </span>
                         )}
                       </td>
-                      <td className="p-3">
+
+                      <td className="p-3.5 align-top text-xs">
                         {hints.length ? hints.join(", ") : "—"}
-                        {hints.length > 0 && <span className="mt-1 block text-xs text-[var(--muted)]">−{question.pointsDeducted} potential pts</span>}
+                        {hints.length > 0 && (
+                          <span className="mt-0.5 block text-[10px] text-[var(--muted)]">
+                            −{question.pointsDeducted} pts
+                          </span>
+                        )}
                       </td>
-                      <td className="p-3"><ResultBadge question={question} /></td>
-                      <td className="p-3 font-bold">{question.pointsEarned}</td>
+
+                      <td className="p-3.5 align-top">
+                        <ResultBadge question={question} />
+                      </td>
+
+                      <td className="p-3.5 pr-4 align-top text-right font-bold tabular-nums text-[var(--ink)]">
+                        {question.pointsEarned}
+                      </td>
+
+                      <td className="p-3.5 align-top text-center text-[var(--muted)]">
+                        {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                      </td>
                     </tr>
                   );
                 })}
@@ -252,28 +475,166 @@ function VocabularyResultContent() {
             </table>
           </div>
 
-          {error && <p role="alert" className="mt-3 text-sm font-semibold text-[var(--wrong)]">{error}</p>}
-          <div className="mt-5 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
-            <button
-              type="button"
-              disabled={!missedCount || working}
-              onClick={() => startPractice(true)}
-              className="secondary-button flex h-12 flex-1 items-center justify-center gap-2 rounded-md border text-sm font-bold disabled:cursor-not-allowed disabled:opacity-40"
-            >
-              <RotateCcw size={17} /> Retry missed words ({missedCount})
-            </button>
+          {/* Expanded Drawer Details (if any rows expanded) */}
+          {reviewQuestions.some((q) => expandedIds.has(q.id)) && (
+            <div className="mt-4 space-y-3">
+              {reviewQuestions
+                .filter((q) => expandedIds.has(q.id))
+                .map((question) => (
+                  <div
+                    key={`expanded-${question.id}`}
+                    className="rounded-xl border border-[var(--line)] bg-[var(--bg)] p-4 text-xs"
+                  >
+                    <div className="flex items-center justify-between border-b border-[var(--line)] pb-2.5">
+                      <div className="flex items-center gap-2">
+                        <span className="font-japanese text-lg font-bold text-[var(--ink)]">
+                          {question.word}
+                        </span>
+                        <span className="font-japanese text-sm text-[var(--primary-fg)]">
+                          ({question.reading})
+                        </span>
+                        <span className="text-xs text-[var(--muted)]">
+                          — {question.meanings.join(", ")}
+                        </span>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => toggleRow(question.id)}
+                        className="text-xs font-semibold text-[var(--muted)] hover:text-[var(--ink)] cursor-pointer"
+                      >
+                        Close
+                      </button>
+                    </div>
+
+                    {/* Example Sentence */}
+                    {question.examples?.[0] && (
+                      <div className="mt-3">
+                        <span className="font-bold uppercase tracking-wider text-[var(--muted)] text-[10px]">
+                          Example Sentence
+                        </span>
+                        <div className="mt-1 flex items-start justify-between gap-2 rounded-lg bg-[var(--surface)] p-2.5">
+                          <div>
+                            <p className="font-japanese text-base leading-relaxed text-[var(--ink)]">
+                              {parseExampleFurigana(
+                                question.examples[0].furigana ?? question.examples[0].ja
+                              ).map((part, index) =>
+                                part.reading ? (
+                                  <ruby key={`${index}-${part.text}`}>
+                                    {part.text}
+                                    <rp>(</rp>
+                                    <rt className="text-[10px] text-[var(--primary-fg)]">{part.reading}</rt>
+                                    <rp>)</rp>
+                                  </ruby>
+                                ) : (
+                                  <span key={`${index}-${part.text}`}>{part.text}</span>
+                                )
+                              )}
+                            </p>
+                            <p className="mt-1 text-xs text-[var(--muted)]">
+                              {question.examples[0].en}
+                            </p>
+                          </div>
+                          <AudioButton
+                            mode="sentence"
+                            text={question.examples[0].ja}
+                            size="sm"
+                            label="Listen to example sentence"
+                          />
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Kanji Breakdown */}
+                    {question.kanji?.length > 0 && (
+                      <div className="mt-3">
+                        <span className="font-bold uppercase tracking-wider text-[var(--muted)] text-[10px]">
+                          Kanji Breakdown
+                        </span>
+                        <div className="mt-1 flex flex-wrap gap-2">
+                          {question.kanji.map((k) => (
+                            <span
+                              key={k.character}
+                              className="inline-flex items-center gap-1.5 rounded-lg border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1"
+                            >
+                              <span className="font-japanese font-bold text-sm text-[var(--primary)]">
+                                {k.character}
+                              </span>
+                              <span className="text-[var(--muted)]">
+                                {k.meanings.join(", ")}
+                              </span>
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Attempt History */}
+                    {question.attempts?.length > 0 && (
+                      <div className="mt-3">
+                        <span className="font-bold uppercase tracking-wider text-[var(--muted)] text-[10px]">
+                          Your Attempts ({question.attempts.length})
+                        </span>
+                        <p className="mt-0.5 text-xs text-[var(--muted)]">
+                          {question.attempts.map((att, i) => (
+                            <span key={i} className="mr-2 inline-block rounded bg-[var(--surface)] px-1.5 py-0.5">
+                              #{i + 1}: &ldquo;{att}&rdquo;
+                            </span>
+                          ))}
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                ))}
+            </div>
+          )}
+
+          {error && (
+            <p role="alert" className="mt-4 text-sm font-semibold text-[var(--wrong)]">
+              {error}
+            </p>
+          )}
+
+          {/* Action Buttons */}
+          <div className="mt-6 flex flex-col gap-2.5 sm:flex-row sm:flex-wrap">
+            {missedCount > 0 && (
+              <button
+                type="button"
+                disabled={working}
+                onClick={() => startPractice(true)}
+                className="flex min-h-12 flex-1 items-center justify-center gap-2 rounded-xl bg-[var(--primary)] px-5 text-sm font-bold text-white shadow-sm transition-all hover:bg-[var(--primary-hover)] disabled:cursor-not-allowed disabled:opacity-40 cursor-pointer"
+              >
+                <RotateCcw size={16} />
+                <span>Retry missed words ({missedCount})</span>
+              </button>
+            )}
+
             <button
               type="button"
               disabled={working}
               onClick={() => startPractice(false)}
-              className="primary-button flex h-12 flex-1 items-center justify-center gap-2 rounded-md text-sm font-bold disabled:opacity-50"
+              className={`flex min-h-12 flex-1 items-center justify-center gap-2 rounded-xl text-sm font-bold shadow-sm transition-all cursor-pointer ${
+                missedCount === 0
+                  ? "bg-[var(--primary)] text-white hover:bg-[var(--primary-hover)]"
+                  : "border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)]"
+              }`}
             >
-              Play again <ArrowRight size={17} />
+              <span>Play again</span>
+              <ArrowRight size={16} />
             </button>
-            <button type="button" onClick={() => router.push("/games/vocabulary")} className="secondary-button h-12 flex-1 rounded-md border text-sm font-bold">
+
+            <button
+              type="button"
+              onClick={() => router.push("/games/vocabulary")}
+              className="flex min-h-12 flex-1 items-center justify-center rounded-xl border border-[var(--line)] bg-[var(--surface)] px-4 text-sm font-bold text-[var(--ink)] transition-colors hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary)] cursor-pointer"
+            >
               Change settings
             </button>
-            <button type="button" onClick={() => router.push("/")} className="secondary-button h-12 flex-1 rounded-md border text-sm font-bold">
+
+            <button
+              type="button"
+              onClick={() => router.push("/")}
+              className="flex min-h-12 flex-1 items-center justify-center rounded-xl border border-[var(--line)] bg-[var(--surface)] px-4 text-sm font-bold text-[var(--muted)] transition-colors hover:border-[var(--line)] hover:text-[var(--ink)] cursor-pointer"
+            >
               Return to games
             </button>
           </div>

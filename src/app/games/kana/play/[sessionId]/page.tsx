@@ -267,23 +267,25 @@ function KanaGame({
           if (tag !== "BUTTON" && tag !== "A" && tag !== "INPUT") focusInput();
         }}
       >
-        <section className="mx-auto flex w-full max-w-6xl flex-1 flex-col px-3 pb-6 sm:px-8 sm:pb-8">
-          <div className="grid grid-cols-[1fr_auto] items-center gap-4 border-b border-[var(--line)] pb-4">
+        <section className="mx-auto flex w-full max-w-6xl flex-1 flex-col px-4 pb-6 sm:px-8 sm:pb-8">
+          <div className="grid grid-cols-[1fr_auto] items-center gap-5 border-b border-[var(--line)]/70 pb-4">
             <div>
               <div className="mb-2 flex items-center justify-between text-xs font-bold">
                 <span>
                   {state.index + 1} / {state.cards.length}
                 </span>
-                <span className="text-[var(--muted)]">{done} done</span>
+                <span className="rounded-full bg-[var(--sakura-light)] px-2 py-0.5 text-[11px] font-bold text-[var(--primary-fg)]">
+                  {done} done
+                </span>
               </div>
-              <div className="h-1.5 overflow-hidden rounded-full bg-[var(--line)]">
+              <div className="h-2 overflow-hidden rounded-full bg-[var(--line)]/60">
                 <div
-                  className="h-full rounded-full bg-[var(--primary)] transition-[width] duration-400"
+                  className="h-full rounded-full bg-[var(--primary)] transition-[width] duration-400 ease-out"
                   style={{ width: `${progress}%` }}
                 />
               </div>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2.5">
               <button
                 type="button"
                 onMouseDown={(e) => e.preventDefault()}
@@ -291,7 +293,7 @@ function KanaGame({
                 aria-pressed={autoPlayEnabled}
                 aria-label={autoPlayEnabled ? "Disable auto-play on reveal" : "Enable auto-play on reveal"}
                 title={autoPlayEnabled ? "Auto-play audio on reveal (Enabled)" : "Auto-play audio on reveal (Disabled)"}
-                className={`inline-flex min-h-11 items-center gap-2 rounded-md border px-3 text-xs font-bold transition-colors cursor-pointer select-none ${
+                className={`inline-flex min-h-11 items-center gap-2 rounded-xl border px-3 text-xs font-bold transition-all cursor-pointer select-none ${
                   autoPlayEnabled
                     ? "border-[var(--primary)] bg-[var(--sakura-light)] text-[var(--primary)] dark:text-[var(--primary-fg)] shadow-xs"
                     : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)] hover:border-[var(--sakura)] hover:text-[var(--ink)]"
@@ -302,14 +304,14 @@ function KanaGame({
               <button
                 type="button"
                 onClick={() => finish(true)}
-                className="secondary-button min-h-11 rounded-md border px-4 py-2 text-sm font-bold"
+                className="secondary-button min-h-11 cursor-pointer rounded-xl border px-4 py-2 text-sm font-bold shadow-2xs hover:shadow-xs transition-all"
               >
                 End session
               </button>
             </div>
           </div>
 
-          <div className="relative flex flex-1 flex-col items-center justify-center py-4 sm:py-6">
+          <div className="relative flex flex-1 flex-col items-center justify-center py-6 sm:py-8">
             <div className="relative mx-auto flex w-full max-w-[520px] min-w-0 flex-col items-center">
               <div
                 className="kana-card-shell"
@@ -324,10 +326,10 @@ function KanaGame({
                 </div>
                 <div
                   key={character.id}
-                  className={`kana-card ${state.phase === "wrong" ? "kana-wrong" : ""} ${state.phase === "correct" ? "kana-correct" : ""} ${state.phase === "skipped" ? "kana-skipped" : ""} ${state.phase === "leaving" ? "kana-leave" : ""}`}
+                  className={`kana-card ${state.phase === "wrong" ? "kana-wrong" : ""} ${state.phase === "correct" ? "kana-correct" : ""} ${state.phase === "skipped" ? "kana-skipped" : ""} ${state.phase === "leaving" ? "kana-leave" : "kana-enter"}`}
                 >
                   <span className="row-label font-japanese">{rowLabel}</span>
-                  <span className="kana-card-glyph font-japanese text-[clamp(4.5rem,9vw,8rem)]">
+                  <span className="kana-card-glyph font-japanese text-[clamp(4.5rem,9vw,8rem)] select-none">
                     {character.char}
                   </span>
                   {state.phase !== "idle" && (
@@ -345,22 +347,26 @@ function KanaGame({
                 </div>
               </div>
 
-              <div className="flex min-h-[48px] w-full items-center justify-center">
+              {/* Stabilized Feedback Container */}
+              <div className="flex min-h-[52px] w-full items-center justify-center py-1">
                 {state.phase === "wrong" && (
                   <div
-                    className="flex items-center gap-2 text-center text-sm font-bold text-[var(--wrong)]"
+                    className="inline-flex items-center gap-2 rounded-full border border-[var(--wrong)]/25 bg-[var(--wrong)]/10 px-4 py-1.5 text-center text-sm font-bold text-[var(--wrong)] shadow-2xs"
                     aria-live="polite"
                   >
-                    <X size={16} />
+                    <X size={15} className="stroke-[3]" />
                     <span>Not quite, try again</span>
+                    {wrongCount >= 2 && (
+                      <span className="text-xs opacity-75">· Hint: starts with &ldquo;{character.romaji[0][0]}&rdquo;</span>
+                    )}
                   </div>
                 )}
                 {state.phase === "skipped" && (
                   <div
-                    className="flex items-center gap-2 text-center text-sm font-bold text-[var(--muted)]"
+                    className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--surface)] px-4 py-1.5 text-center text-sm font-bold text-[var(--ink)] shadow-2xs"
                     aria-live="polite"
                   >
-                    <span>Answer: {character.romaji[0]}</span>
+                    <span>Answer: <strong className="font-mono text-[var(--primary-fg)] font-black">{character.romaji[0]}</strong></span>
                     <AudioButton
                       text={character.char}
                       romaji={character.romaji[0]}
@@ -370,7 +376,7 @@ function KanaGame({
                   </div>
                 )}
                 {state.phase === "correct" && (
-                  <div className="flex items-center gap-2 text-center text-sm font-bold text-[var(--correct)]">
+                  <div className="inline-flex items-center gap-2 rounded-full border border-[var(--correct)]/25 bg-[var(--correct)]/10 px-4 py-1.5 text-center text-sm font-bold text-[var(--correct)] shadow-2xs">
                     <span>✓ Correct</span>
                     <AudioButton
                       text={character.char}
@@ -382,6 +388,7 @@ function KanaGame({
                 )}
               </div>
 
+              {/* Refined Pill Input Container */}
               <form
                 onSubmit={(event) => {
                   event.preventDefault();
@@ -390,7 +397,7 @@ function KanaGame({
                 }}
                 className={`answer-field answer-${state.phase} relative w-full max-w-[440px]`}
               >
-                  <input
+                <input
                   ref={inputRef}
                   value={answer}
                   onChange={(event) => {
@@ -416,21 +423,37 @@ function KanaGame({
                   disabled={state.phase !== "idle"}
                   aria-label="Skip character"
                   className="answer-submit"
+                  title="Skip to next card (Shift+Enter)"
                 >
-                  <ArrowRight size={16} />
+                  <ArrowRight size={17} />
                 </button>
               </form>
 
-              <div className="mt-2 flex min-h-[28px] items-center justify-center gap-2 text-xs text-[var(--muted)]">
-                <span>Enter to check · Shift+Enter to skip</span>
+              {/* Discoverable Keyboard Shortcuts Legend */}
+              <div className="mt-4 flex flex-wrap items-center justify-center gap-3 text-xs text-[var(--muted)]">
+                <span className="sr-only">Enter to check · Shift+Enter to skip</span>
+                <span className="inline-flex items-center gap-1.5">
+                  <kbd className="rounded-md border border-[var(--line)] bg-[var(--surface)] px-1.5 py-0.5 font-mono text-[10px] font-bold text-[var(--ink)] shadow-2xs">↵ Enter</kbd>
+                  <span>Check</span>
+                </span>
+                <span className="text-[var(--line)]">·</span>
+                <span className="inline-flex items-center gap-1.5">
+                  <kbd className="rounded-md border border-[var(--line)] bg-[var(--surface)] px-1.5 py-0.5 font-mono text-[10px] font-bold text-[var(--ink)] shadow-2xs">⇧ Shift + ↵</kbd>
+                  <span>Skip</span>
+                </span>
+                <span className="text-[var(--line)]">·</span>
+                <span className="inline-flex items-center gap-1.5">
+                  <kbd className="rounded-md border border-[var(--line)] bg-[var(--surface)] px-1.5 py-0.5 font-mono text-[10px] font-bold text-[var(--ink)] shadow-2xs">Alt + S</kbd>
+                  <span>Audio</span>
+                </span>
                 {wrongCount >= 3 && (
                   <button
                     type="button"
                     onClick={skip}
                     disabled={state.phase !== "idle"}
-                    className="font-bold text-[var(--primary-fg)]"
+                    className="ml-1 cursor-pointer font-bold text-[var(--primary-fg)] hover:underline"
                   >
-                    Skip
+                    Reveal answer
                   </button>
                 )}
               </div>

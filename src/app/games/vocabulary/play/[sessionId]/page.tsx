@@ -309,17 +309,20 @@ function VocabularyGame({
           }
         }}
       >
-        <section className="mx-auto flex w-full max-w-6xl flex-1 flex-col px-5 pb-7 sm:px-8">
-          <div className="grid grid-cols-[1fr_auto] items-center gap-4 border-b border-[var(--line)] pb-4">
+        <section className="mx-auto flex w-full max-w-6xl flex-1 flex-col px-4 pb-7 sm:px-6">
+          {/* Header Bar: Progress, Score & Controls */}
+          <div className="grid grid-cols-[1fr_auto] items-center gap-4 border-b border-[var(--line)] pb-4 pt-2">
             <div>
               <div className="mb-2 flex items-center justify-between gap-3 text-xs font-bold">
-                <span>
-                  Question {state.index + 1} / {state.questions.length}
+                <span className="text-[var(--ink)]">
+                  Question <span className="text-[var(--primary)]">{state.index + 1}</span> / {state.questions.length}
                 </span>
-                <span className="text-[var(--muted)]">Score {accumulatedScore} pts</span>
+                <span className="rounded-full bg-[var(--sakura-light)] px-2.5 py-0.5 text-xs font-bold text-[var(--primary)] tabular-nums">
+                  Score {accumulatedScore} pts
+                </span>
               </div>
               <div
-                className="h-1.5 overflow-hidden rounded-full bg-[var(--line)]"
+                className="h-2 overflow-hidden rounded-full bg-[var(--line)]/60"
                 role="progressbar"
                 aria-label="Question progress"
                 aria-valuenow={completed}
@@ -331,8 +334,11 @@ function VocabularyGame({
                   style={{ width: `${progress}%` }}
                 />
               </div>
-              <p className="mt-1 text-right text-xs text-[var(--muted)]">{completed} completed</p>
+              <p className="mt-1 text-right text-[11px] font-medium text-[var(--muted)]">
+                {completed} of {state.questions.length} completed
+              </p>
             </div>
+
             <div className="flex items-center gap-2">
               <button
                 type="button"
@@ -341,20 +347,20 @@ function VocabularyGame({
                 aria-pressed={autoPlayEnabled}
                 aria-label={autoPlayEnabled ? "Disable auto-play on reveal" : "Enable auto-play on reveal"}
                 title={autoPlayEnabled ? "Auto-play audio on reveal (Enabled)" : "Auto-play audio on reveal (Disabled)"}
-                className={`inline-flex min-h-11 items-center gap-2 rounded-md border px-3 text-xs font-bold transition-colors cursor-pointer select-none ${
+                className={`inline-flex min-h-10 items-center gap-1.5 rounded-xl border px-3 text-xs font-bold transition-all cursor-pointer select-none ${
                   autoPlayEnabled
-                    ? "border-[var(--primary)] bg-[var(--sakura-light)] text-[var(--primary)] dark:text-[var(--primary-fg)] shadow-xs"
+                    ? "border-[var(--primary)] bg-[var(--sakura-light)] text-[var(--primary)] dark:text-[var(--primary-fg)] shadow-2xs"
                     : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)] hover:border-[var(--sakura)] hover:text-[var(--ink)]"
                 }`}
               >
                 {autoPlayEnabled ? (
                   <>
-                    <Volume2 className="size-4 shrink-0 text-[var(--primary)] dark:text-[var(--primary-fg)]" aria-hidden="true" />
+                    <Volume2 className="size-3.5 shrink-0 text-[var(--primary)] dark:text-[var(--primary-fg)]" aria-hidden="true" />
                     <span>Auto-play on</span>
                   </>
                 ) : (
                   <>
-                    <VolumeX className="size-4 shrink-0 text-[var(--muted)]" aria-hidden="true" />
+                    <VolumeX className="size-3.5 shrink-0 text-[var(--muted)]" aria-hidden="true" />
                     <span>Auto-play off</span>
                   </>
                 )}
@@ -362,7 +368,7 @@ function VocabularyGame({
               <button
                 type="button"
                 onClick={() => finish(state, true)}
-                className="secondary-button min-h-11 rounded-md border px-4 py-2 text-sm font-bold"
+                className="inline-flex min-h-10 items-center justify-center rounded-xl border border-[var(--line)] bg-[var(--surface)] px-3.5 py-1.5 text-xs font-bold text-[var(--muted)] transition-colors hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary)] cursor-pointer"
               >
                 End session
               </button>
@@ -371,6 +377,7 @@ function VocabularyGame({
 
           <div className="flex flex-1 flex-col items-center justify-center py-6">
             <div className="grid w-full items-center gap-8 lg:grid-cols-2">
+              {/* Left Column: Stacked Flashcard */}
               <section
                 aria-label="Vocabulary flashcard"
                 className="flex flex-col items-center justify-center"
@@ -385,24 +392,25 @@ function VocabularyGame({
                   </div>
                   <div
                     key={question.id}
-                    className={`kana-card kanji-card ${
+                    className={`kana-card kanji-card relative transition-all duration-200 ${
                       result.status === "correct"
-                        ? "kana-correct"
+                        ? "kana-correct border-2 border-[var(--correct)]"
                         : result.status === "skipped"
-                          ? "kana-skipped"
+                          ? "kana-skipped border-2 border-[var(--muted)]"
                           : result.attempts.length
-                            ? "kana-wrong"
+                            ? "kana-wrong border-2 border-[var(--wrong)]"
                             : ""
                     }`}
                   >
-                    <div className="absolute left-0 right-0 top-[10%] z-[1] flex flex-wrap justify-center gap-2 px-4">
-                      <span className="rounded-full bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold">
+                    {/* Top Tags */}
+                    <div className="absolute left-0 right-0 top-[8%] z-[1] flex flex-wrap justify-center gap-2 px-4">
+                      <span className="rounded-full bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary)] shadow-2xs">
                         {question.level}
                       </span>
                       {questionGrades.map((grade) => (
                         <span
                           key={grade}
-                          className="rounded-full bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold"
+                          className="rounded-full border border-[var(--line)] bg-[var(--bg)] px-3 py-1 text-xs font-semibold text-[var(--muted)]"
                         >
                           {grade === 8
                             ? "Secondary (8)"
@@ -412,8 +420,10 @@ function VocabularyGame({
                         </span>
                       ))}
                     </div>
+
+                    {/* Central Word Glyph */}
                     <span
-                      className="kana-card-glyph font-japanese break-keep px-5 text-center text-[clamp(4.5rem,9vw,8rem)] leading-tight"
+                      className="kana-card-glyph font-japanese break-keep px-5 text-center text-[clamp(4.5rem,9vw,8rem)] leading-tight text-[var(--ink)]"
                       style={
                         question.word.length >= 4
                           ? { fontSize: "clamp(2.75rem, 5.5vw, 4.5rem)" }
@@ -425,6 +435,8 @@ function VocabularyGame({
                     >
                       {question.word}
                     </span>
+
+                    {/* Audio Playback Pill when Furigana or Answer is revealed */}
                     {(result.furiganaHintUsed || resolved) && (
                       <div className="absolute bottom-4 left-4 z-20 flex items-center gap-1.5">
                         <AudioButton
@@ -440,22 +452,27 @@ function VocabularyGame({
                 </div>
               </section>
 
+              {/* Right Column: Answer Panel */}
               <section
                 aria-label="Answer and hints"
-                className="mx-auto w-full max-w-xl rounded-lg border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-7"
+                className="mx-auto w-full max-w-xl rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-sm sm:p-7"
               >
+                {/* 1. Hints Bar */}
                 <div className="mb-4 flex flex-wrap items-center gap-2">
                   <button
                     type="button"
                     disabled={resolved || result.furiganaHintUsed}
                     onClick={() => dispatch({ type: "HINT_FURIGANA", index: state.index })}
-                    className="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--bg)] px-3.5 py-1.5 text-xs font-bold text-[var(--muted)] transition-colors hover:border-[var(--sakura)] hover:text-[var(--ink)] disabled:cursor-not-allowed disabled:opacity-50"
+                    className="inline-flex min-h-9 items-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--bg)] px-3.5 py-1.5 text-xs font-bold text-[var(--muted)] transition-all hover:border-[var(--sakura)] hover:text-[var(--ink)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer"
                   >
-                    <Sparkles size={13} />
-                    {result.furiganaHintUsed
-                      ? `Reading: ${question.reading}`
-                      : "Reveal Furigana (-20 pts)"}
+                    <Sparkles size={13} className="text-[var(--primary)]" />
+                    <span>
+                      {result.furiganaHintUsed
+                        ? `Reading: ${question.reading}`
+                        : "Reveal Furigana (-20 pts)"}
+                    </span>
                   </button>
+
                   <button
                     type="button"
                     disabled={resolved || !nextKanjiHint}
@@ -467,36 +484,38 @@ function VocabularyGame({
                         index: state.index,
                       })
                     }
-                    className="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--bg)] px-3.5 py-1.5 text-xs font-bold text-[var(--muted)] transition-colors hover:border-[var(--sakura)] hover:text-[var(--ink)] disabled:cursor-not-allowed disabled:opacity-50"
+                    className="inline-flex min-h-9 items-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--bg)] px-3.5 py-1.5 text-xs font-bold text-[var(--muted)] transition-all hover:border-[var(--sakura)] hover:text-[var(--ink)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer"
                   >
-                    <Sparkles size={13} />
-                    Reveal Kanji (-15 pts)
+                    <Sparkles size={13} className="text-[var(--primary)]" />
+                    <span>Reveal Kanji (-15 pts)</span>
                   </button>
                 </div>
 
+                {/* Hints Expanded Box */}
                 {(result.furiganaHintUsed || result.kanjiHints.length > 0) && (
-                  <div className="mb-4 space-y-2 rounded-md border border-[var(--line)] bg-[var(--bg)]/60 p-3 text-xs">
+                  <div className="mb-4 space-y-2 rounded-xl border border-[var(--line)] bg-[var(--bg)] p-3.5 text-xs">
                     {result.furiganaHintUsed && (
                       <p>
                         <strong className="text-[var(--ink)]">Reading:</strong>{" "}
-                        <span className="font-japanese text-sm">{question.reading}</span>
+                        <span className="font-japanese text-sm font-bold text-[var(--primary-fg)]">
+                          {question.reading}
+                        </span>
                       </p>
                     )}
                     {result.kanjiHints.length > 0 && (
                       <div>
                         <p className="font-bold text-[var(--ink)]">Kanji breakdown:</p>
-                        <ul className="mt-1 space-y-1">
+                        <ul className="mt-1.5 space-y-1">
                           {result.kanjiHints.map((character) => {
                             const kanji = question.kanji.find(
                               (item) => item.character === character
                             );
                             return kanji ? (
-                              <li key={character}>
-                                <span className="font-japanese text-sm font-bold">
+                              <li key={character} className="flex items-center gap-2">
+                                <span className="font-japanese text-base font-bold text-[var(--primary)]">
                                   {character}
                                 </span>
                                 <span className="text-[var(--muted)]">
-                                  {" "}
                                   — {kanji.meanings.join(", ")}
                                 </span>
                               </li>
@@ -508,6 +527,7 @@ function VocabularyGame({
                   </div>
                 )}
 
+                {/* 2. Answer Form */}
                 <form
                   onSubmit={(event: FormEvent<HTMLFormElement>) => {
                     event.preventDefault();
@@ -515,34 +535,38 @@ function VocabularyGame({
                     else if (result.attempts.length > 0) skipAndAdvance();
                     else submitAnswer();
                   }}
-                  className="space-y-3"
+                  className="space-y-3.5"
                 >
                   <label className="sr-only" htmlFor="vocabulary-answer">
                     English meaning
                   </label>
-                  <input
-                    ref={answerInput}
-                    id="vocabulary-answer"
-                    type="text"
-                    value={answer}
-                    onChange={(event) => setAnswer(event.target.value)}
-                    onKeyDown={handleAnswerKeyDown}
-                    placeholder="Type the English meaning"
-                    enterKeyHint="go"
-                    inputMode="text"
-                    autoComplete="off"
-                    autoCapitalize="none"
-                    autoCorrect="off"
-                    spellCheck={false}
-                    readOnly={resolved}
-                    className="h-14 w-full rounded-full border border-[var(--line)] bg-[var(--bg)] px-5 text-center text-lg font-semibold text-[var(--ink)] outline-none transition-all focus:border-[var(--primary)] focus:shadow-[0_0_0_3px_color-mix(in_srgb,var(--primary)_20%,transparent)] read-only:opacity-65"
-                  />
+                  <div className="relative">
+                    <input
+                      ref={answerInput}
+                      id="vocabulary-answer"
+                      type="text"
+                      value={answer}
+                      onChange={(event) => setAnswer(event.target.value)}
+                      onKeyDown={handleAnswerKeyDown}
+                      placeholder="Type the English meaning"
+                      enterKeyHint="go"
+                      inputMode="text"
+                      autoComplete="off"
+                      autoCapitalize="none"
+                      autoCorrect="off"
+                      spellCheck={false}
+                      readOnly={resolved}
+                      className="h-14 w-full rounded-2xl border-2 border-[var(--line)] bg-[var(--bg)] px-5 text-center text-lg font-semibold text-[var(--ink)] outline-none transition-all placeholder:text-[var(--muted)] focus:border-[var(--primary)] focus:shadow-[0_0_0_4px_color-mix(in_srgb,var(--primary)_15%,transparent)] read-only:opacity-65"
+                    />
+                  </div>
+
                   {answerError && (
-                    <p role="alert" className="text-center text-sm font-semibold text-[var(--wrong)]">
+                    <p role="alert" className="text-center text-xs font-semibold text-[var(--wrong)]">
                       {answerError}
                     </p>
                   )}
 
+                  {/* Buttons */}
                   <div className="flex gap-2.5">
                     {!resolved ? (
                       <>
@@ -550,40 +574,41 @@ function VocabularyGame({
                           type={result.attempts.length > 0 ? "button" : "submit"}
                           onClick={result.attempts.length > 0 ? submitAnswer : undefined}
                           disabled={resolved}
-                          className="primary-button flex h-12 flex-1 items-center justify-center gap-2 rounded-md px-4 text-sm font-bold disabled:cursor-not-allowed disabled:opacity-45"
+                          className="flex h-12 flex-1 items-center justify-center gap-2 rounded-xl bg-[var(--primary)] px-4 text-sm font-bold text-white shadow-sm transition-all hover:bg-[var(--primary-hover)] disabled:cursor-not-allowed disabled:opacity-45 cursor-pointer"
                         >
-                          <Check size={17} />{" "}
-                          {result.attempts.length > 0 ? "Check again" : "Check Meaning"}
+                          <Check size={16} strokeWidth={2.5} />
+                          <span>{result.attempts.length > 0 ? "Check again" : "Check Meaning"}</span>
                         </button>
                         <button
                           type="button"
                           onClick={skip}
-                          className="secondary-button flex h-12 items-center justify-center gap-2 rounded-md border px-5 text-sm font-bold"
+                          className="flex h-12 items-center justify-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--surface)] px-5 text-sm font-bold text-[var(--muted)] transition-colors hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary)] cursor-pointer"
                         >
-                          <X size={17} /> Skip
+                          <X size={16} />
+                          <span>Skip</span>
                         </button>
                       </>
                     ) : (
                       <button
                         type="button"
                         onClick={next}
-                        className="primary-button flex h-12 w-full items-center justify-center gap-2 rounded-md text-sm font-bold"
+                        className="flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-[var(--primary)] px-4 text-sm font-bold text-white shadow-sm transition-all hover:bg-[var(--primary-hover)] cursor-pointer"
                       >
-                        {state.index + 1 === state.questions.length ? "Finish" : "Next"}{" "}
+                        <span>{state.index + 1 === state.questions.length ? "Finish" : "Next"}</span>
                         <span aria-hidden="true">→</span>
                       </button>
                     )}
                   </div>
                 </form>
 
-                <p className="mt-2.5 text-center text-xs text-[var(--muted)]">
-                  Press Enter to submit · Shift+Enter to skip
+                <p className="mt-2.5 text-center text-[11px] text-[var(--muted)]">
+                  Press <kbd className="rounded bg-[var(--line)]/50 px-1.5 py-0.5 font-mono text-[10px]">Enter</kbd> to submit · <kbd className="rounded bg-[var(--line)]/50 px-1.5 py-0.5 font-mono text-[10px]">Shift+Enter</kbd> to skip
                 </p>
 
-                <div className="mt-4 flex items-center justify-between rounded-full border border-[var(--line)] bg-[var(--sakura-light)]/60 px-4 py-2 text-xs">
+                {/* Score & Potential Points Badge */}
+                <div className="mt-4 flex items-center justify-between rounded-xl border border-[var(--line)] bg-[var(--bg)] px-4 py-2 text-xs">
                   <span className="text-[var(--muted)]">
-                    Available points: <strong className="text-[var(--ink)]">{availablePoints}</strong>{" "}
-                    / {BASE_QUESTION_SCORE}
+                    Available points: <strong className="text-[var(--ink)]">{availablePoints}</strong> / {BASE_QUESTION_SCORE}
                   </span>
                   {resolved && (
                     <span className="font-bold text-[var(--correct)]">
@@ -592,19 +617,23 @@ function VocabularyGame({
                   )}
                 </div>
 
-                <div className="mt-3 flex min-h-[48px] flex-col items-center justify-center">
+                {/* Status Message */}
+                <div className="mt-3 flex min-h-[44px] flex-col items-center justify-center rounded-xl p-2">
                   <p className={`text-center text-sm font-bold ${answerStatusClass}`} aria-live="polite">
                     {resultMessage}
                   </p>
                 </div>
 
+                {/* 3. Learn this Word Section (Visible Once Resolved) */}
                 {resolved && (
-                  <section className="mt-3 rounded-md border border-[var(--line)] bg-[var(--bg)]/60 p-4">
-                    <h2 className="text-sm font-bold">Learn this word</h2>
+                  <section className="mt-4 rounded-xl border border-[var(--line)] bg-[var(--bg)] p-4 shadow-2xs">
+                    <h2 className="text-xs font-bold uppercase tracking-wider text-[var(--primary-fg)]">
+                      Learn this word
+                    </h2>
                     <div className="mt-2 flex items-center gap-2 text-sm">
                       <p>
-                        <strong>Reading:</strong>{" "}
-                        <span className="font-japanese">{question.reading}</span>
+                        <strong className="text-[var(--ink)]">Reading:</strong>{" "}
+                        <span className="font-japanese font-bold text-[var(--primary)]">{question.reading}</span>
                       </p>
                       <AudioButton
                         mode="vocab"
@@ -614,13 +643,14 @@ function VocabularyGame({
                         label={`Listen to pronunciation of ${question.word}`}
                       />
                     </div>
-                    <p className="mt-1 text-sm">
-                      <strong>English meaning:</strong> {expectedMeanings}
+                    <p className="mt-1 text-sm text-[var(--ink)]">
+                      <strong className="text-[var(--muted)]">English meaning:</strong> {expectedMeanings}
                     </p>
+
                     {question.examples[0] && (
                       <div className="mt-3 border-t border-[var(--line)] pt-3">
                         <div className="flex items-start justify-between gap-2">
-                          <p className="font-japanese text-lg leading-relaxed">
+                          <p className="font-japanese text-base leading-relaxed text-[var(--ink)]">
                             {parseExampleFurigana(
                               question.examples[0].furigana ?? question.examples[0].ja
                             ).map((part, index) =>
@@ -628,7 +658,7 @@ function VocabularyGame({
                                 <ruby key={`${index}-${part.text}`}>
                                   {part.text}
                                   <rp>(</rp>
-                                  <rt>{part.reading}</rt>
+                                  <rt className="text-[10px] text-[var(--primary-fg)]">{part.reading}</rt>
                                   <rp>)</rp>
                                 </ruby>
                               ) : (
@@ -643,7 +673,7 @@ function VocabularyGame({
                             label="Listen to example sentence"
                           />
                         </div>
-                        <p className="mt-1 text-sm text-[var(--muted)]">
+                        <p className="mt-1 text-xs text-[var(--muted)]">
                           {question.examples[0].en}
                         </p>
                       </div>

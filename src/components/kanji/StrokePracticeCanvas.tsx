@@ -216,51 +216,55 @@ export function StrokePracticeCanvas({
           </h2>
         </div>
 
-        {/* Mode Selector: Trace / Recall / Free */}
-        <div
-          role="group"
-          aria-label="Stroke practice mode"
-          className="inline-flex rounded-xl border border-[var(--line)] bg-[var(--bg)] p-1 shadow-xs"
-        >
-          {MODES.map((m) => {
-            const active = mode === m.id && !isDemoActive;
-            return (
-              <button
-                key={m.id}
-                type="button"
-                aria-pressed={active}
-                onClick={() => handleModeChange(m.id)}
-                className={`min-h-9 rounded-lg px-3.5 py-1.5 text-xs font-bold transition-colors cursor-pointer ${
-                  active
-                    ? "bg-[var(--primary)] text-white shadow-xs"
-                    : "bg-transparent text-[var(--ink)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary)]"
-                }`}
-              >
-                {m.label}
-              </button>
-            );
-          })}
-        </div>
-      </div>
-
-      <div className="mt-5 grid gap-6 lg:grid-cols-[minmax(0,320px)_1fr] lg:items-center">
-        {/* Layered SVG Guide + HTML5 Pointer Canvas */}
-        <div className="relative mx-auto aspect-square w-full max-w-[300px] overflow-hidden rounded-2xl border-2 border-[var(--line)] bg-[var(--bg)] shadow-inner select-none">
-          <svg
-            viewBox="0 0 109 109"
-            className="pointer-events-none absolute inset-0 h-full w-full"
-            aria-hidden="true"
-          >
-            {/* 4-Quadrant Dashed Guide Grid */}
-            <g
-              stroke="var(--line)"
-              className="stroke-[var(--line)]"
-              strokeWidth="0.8"
-              strokeDasharray="3.5 3.5"
+            {/* Mode Selector: Trace / Recall / Free */}
+            <div
+              role="group"
+              aria-label="Stroke practice mode"
+              className="inline-flex rounded-xl border border-[var(--line)] bg-[var(--bg)] p-1 shadow-xs"
             >
-              <line x1="54.5" y1="0" x2="54.5" y2="109" />
-              <line x1="0" y1="54.5" x2="109" y2="54.5" />
-            </g>
+              {MODES.map((m) => {
+                const active = mode === m.id && !isDemoActive;
+                return (
+                  <button
+                    key={m.id}
+                    type="button"
+                    aria-pressed={active}
+                    onClick={() => handleModeChange(m.id)}
+                    title={m.hint}
+                    className={`min-h-9 rounded-lg px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer ${
+                      active
+                        ? "bg-[var(--primary)] text-white shadow-xs"
+                        : "bg-transparent text-[var(--ink)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary)]"
+                    }`}
+                  >
+                    {m.label}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className="mt-5 grid gap-6 lg:grid-cols-[minmax(0,340px)_1fr] lg:items-center">
+            {/* Layered SVG Guide + HTML5 Pointer Canvas */}
+            <div className="relative mx-auto aspect-square w-full max-w-[320px] overflow-hidden rounded-2xl border-2 border-[var(--sakura)]/50 bg-[var(--bg)] shadow-md select-none">
+              <svg
+                viewBox="0 0 109 109"
+                className="pointer-events-none absolute inset-0 h-full w-full"
+                aria-hidden="true"
+              >
+                {/* 4-Quadrant Dashed Guide Grid */}
+                <g
+                  stroke="var(--line)"
+                  className="stroke-[var(--line)]"
+                  strokeWidth="0.8"
+                  strokeDasharray="3.5 3.5"
+                >
+                  <line x1="54.5" y1="0" x2="54.5" y2="109" />
+                  <line x1="0" y1="54.5" x2="109" y2="54.5" />
+                  {/* Subtle diagonal guides */}
+                  <line x1="0" y1="0" x2="109" y2="109" strokeDasharray="2 4" strokeWidth="0.4" opacity="0.5" />
+                  <line x1="109" y1="0" x2="0" y2="109" strokeDasharray="2 4" strokeWidth="0.4" opacity="0.5" />
+                </g>
 
             {/* PRACTICE LAYERS (Trace, Recall, Free) */}
             <g
@@ -498,6 +502,26 @@ export function StrokePracticeCanvas({
                     : `${Math.min(currentStrokeIndex, paths.length)} / ${paths.length} strokes`}
               </span>
             </div>
+
+            {/* Visual Stroke Progress Track */}
+            {paths.length > 0 && (
+              <div className="mt-2.5 h-1.5 w-full overflow-hidden rounded-full bg-[var(--line)]/60">
+                <div
+                  className="h-full rounded-full bg-[var(--primary)] transition-all duration-300"
+                  style={{
+                    width: `${
+                      isDemoActive
+                        ? isDemoComplete
+                          ? 100
+                          : (Math.min(demoStrokeIndex + 1, paths.length) / paths.length) * 100
+                        : mode === "free"
+                          ? Math.min((completedStrokes.length / paths.length) * 100, 100)
+                          : (Math.min(currentStrokeIndex, paths.length) / paths.length) * 100
+                    }%`,
+                  }}
+                />
+              </div>
+            )}
 
             <p
               role="status"

@@ -293,4 +293,173 @@ describe("Listening Quiz UI (Setup, Play & Result)", () => {
       expect(screen.getByText("2 / 4")).toBeTruthy();
     });
   });
+
+  it("dynamically updates session summary and estimated duration across modes on Setup screen", () => {
+    render(<ListeningSetupPage />);
+
+    // Default Kana mode shows Script, Character sets, and Est. duration
+    expect(screen.getByText("Script")).toBeTruthy();
+    expect(screen.getAllByText("Character sets").length).toBeGreaterThanOrEqual(2);
+    expect(screen.getByText(/Est\. duration/i)).toBeTruthy();
+    expect(screen.getByText(/~\d+ min/i)).toBeTruthy();
+
+    // Switch to Vocabulary Listening -> shows JLPT levels in summary
+    fireEvent.click(screen.getByRole("button", { name: /vocabulary listening/i }));
+    expect(screen.getByText("JLPT levels")).toBeTruthy();
+    expect(screen.queryByText("Character sets")).toBeNull();
+
+    // Select N4 in addition to N5 and choose 30 questions
+    fireEvent.click(screen.getByRole("button", { name: /N4/i }));
+    fireEvent.click(screen.getByRole("button", { name: /30 questions/i }));
+    expect(screen.getByText("N5, N4")).toBeTruthy();
+    expect(screen.getAllByText("30 questions").length).toBeGreaterThanOrEqual(2);
+  });
+
+  it("displays separate User Answer and Correct Answer on incorrect submission and supports keyboard replay/choice", async () => {
+    const session = createListeningSession(
+      {
+        vocabulary: [
+          {
+            id: "v-1",
+            word: "学校",
+            reading: "がっこう",
+            romaji: "gakkou",
+            meanings: ["school"],
+            modernMeaning: "school",
+            level: "N5",
+            pos: ["noun"],
+            examples: [],
+          },
+          {
+            id: "v-2",
+            word: "先生",
+            reading: "せんせい",
+            romaji: "sensei",
+            meanings: ["teacher"],
+            modernMeaning: "teacher",
+            level: "N5",
+            pos: ["noun"],
+            examples: [],
+          },
+          {
+            id: "v-3",
+            word: "水",
+            reading: "みず",
+            romaji: "mizu",
+            meanings: ["water"],
+            modernMeaning: "water",
+            level: "N5",
+            pos: ["noun"],
+            examples: [],
+          },
+          {
+            id: "v-4",
+            word: "電車",
+            reading: "でんしゃ",
+            romaji: "densha",
+            meanings: ["train"],
+            modernMeaning: "train",
+            level: "N5",
+            pos: ["noun"],
+            examples: [],
+          },
+        ],
+      },
+      {
+        subMode: "vocabulary",
+        answerFormat: "multiple-choice",
+        levels: [5],
+        size: 10,
+      },
+      () => 0.1,
+      "listening-feedback-session"
+    );
+
+    mockParams = { sessionId: "listening-feedback-session" };
+    saveGameSession("listening", "listening-feedback-session", session);
+    render(<ListeningPlayPage />);
+
+    const currentQ = session.questions[0];
+    const wrongOpt = currentQ.options.find((o) => o.id !== currentQ.id)!;
+    const wrongIdx = currentQ.options.findIndex((o) => o.id === wrongOpt.id);
+
+    await waitFor(() => {
+      expect(screen.getByRole("button", { name: /replay audio/i })).toBeTruthy();
+    });
+
+    // Space replays audio via keyboard shortcut
+    mockPlayVocab.mockClear();
+    fireEvent.keyDown(window, { code: "Space", key: " " });
+    expect(mockPlayVocab).toHaveBeenCalledTimes(1);
+
+    // Choose wrong option using numeric key (1-4)
+    fireEvent.keyDown(window, { key: String(wrongIdx + 1) });
+
+    await waitFor(() => {
+      expect(screen.getByText("Incorrect")).toBeTruthy();
+      expect(screen.getByText("Your Answer")).toBeTruthy();
+      expect(screen.getByText("Correct Answer")).toBeTruthy();
+    });
+
+    expect(screen.getAllByText(wrongOpt.label).length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText(currentQ.correctMeaning).length).toBeGreaterThanOrEqual(1);
+  });
+
+  it("filters Audio Review by All, Incorrect, Skipped, and Correct and supports category breakdown and audio replay", async () => {
+    const session = createListeningSession(
+      {},
+      {
+        subMode: "kana",
+        answerFormat: "multiple-choice",
+        levels: [5],
+        kanaScript: "hiragana",
+        kanaGroups: ["basic"],
+        size: 10,
+      },
+      () => 0.2,
+      "listening-filter-session"
+    );
+
+    session.questions[0].status = "correct";
+    session.questions[1].status = "wrong";
+    session.questions[1].userAnswer = "wrong-choice";
+    for (let i = 2; i < session.questions.length; i++) {
+      session.questions[i].status = "skipped";
+    }
+
+    mockParams = { sessionId: "listening-filter-session" };
+    const summary = summarizeListeningSession(session);
+    saveGameResult("listening", summary);
+
+    render(<ListeningResultPage />);
+
+    await waitFor(() => {
+      expect(screen.getByText("Category Breakdown")).toBeTruthy();
+    });
+
+    expect(screen.getByText("Basic Kana")).toBeTruthy();
+    expect(
+      screen.getByRole("button", { name: /practice missed items: practice incorrect & skipped/i })
+    ).toBeTruthy();
+
+    // Filter to Incorrect (1)
+    fireEvent.click(screen.getByRole("button", { name: /Incorrect \(1\)/i }));
+    expect(screen.getByText("wrong-choice")).toBeTruthy();
+    expect(screen.queryByText(session.questions[0].hiddenPromptJa)).toBeNull();
+
+    // Replay audio from filtered row
+    mockPlayKana.mockClear();
+    fireEvent.click(
+      screen.getByRole("button", { name: `Pronounce ${session.questions[1].hiddenPromptJa}` })
+    );
+    expect(mockPlayKana).toHaveBeenCalledTimes(1);
+
+    // Filter to Skipped (8)
+    fireEvent.click(screen.getByRole("button", { name: /Skipped \(8\)/i }));
+    expect(screen.queryByText("wrong-choice")).toBeNull();
+
+    // Filter to Correct (1)
+    fireEvent.click(screen.getByRole("button", { name: /^Correct \(1\)$/i }));
+    expect(screen.getByText(session.questions[0].hiddenPromptJa)).toBeTruthy();
+  });
 });

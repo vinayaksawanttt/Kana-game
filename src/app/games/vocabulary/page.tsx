@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import { ArrowRight, RotateCcw } from "lucide-react";
+import { ArrowRight, Check, Clock, RotateCcw, Sparkles } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import { saveGameSession } from "@/lib/game-core/storage";
@@ -180,17 +180,22 @@ export default function VocabularySetupPage() {
     );
   }
 
+  const estimatedMinutes = Math.max(1, Math.round((questionCount * 12) / 60));
+
   return (
     <GameLayout label="VOCABULARY" glyph="語">
-      <section className="mx-auto flex w-full max-w-6xl flex-1 items-center justify-center px-5 py-6 sm:px-8">
-        <div className="grid w-full gap-5 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start">
-          <div className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-7">
-            <div className="mb-7 flex items-end justify-between gap-4">
+      <section className="mx-auto flex w-full max-w-6xl flex-1 items-center justify-center px-4 py-6 sm:px-6">
+        <div className="grid w-full gap-6 lg:grid-cols-[minmax(0,1fr)_340px] lg:items-start">
+          <div className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-sm sm:p-7">
+            <div className="mb-6 flex items-end justify-between gap-4 border-b border-[var(--line)] pb-5">
               <div>
-                <p className="mb-1 text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
+                <p className="mb-1 text-xs font-bold uppercase tracking-[0.16em] text-[var(--primary-fg)]">
                   Meaning mode
                 </p>
-                <h1 className="text-2xl font-bold sm:text-3xl">Vocabulary setup</h1>
+                <h1 className="text-2xl font-bold sm:text-3xl text-[var(--ink)]">Vocabulary Setup</h1>
+                <p className="mt-1 text-xs text-[var(--muted)]">
+                  Configure your target JLPT levels, kanji school grades, and practice session length.
+                </p>
               </div>
               <button
                 type="button"
@@ -199,50 +204,64 @@ export default function VocabularySetupPage() {
                   setGrades([]);
                   setSize(10);
                 }}
-                className="flex min-h-11 items-center gap-2 rounded-md px-3 py-2 text-sm font-semibold text-[var(--muted)] transition-colors hover:bg-[var(--sakura-light)] hover:text-[var(--primary-fg)]"
+                className="inline-flex min-h-10 items-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--bg)] px-3 py-1.5 text-xs font-bold text-[var(--muted)] transition-colors hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary)] cursor-pointer"
               >
-                <RotateCcw size={15} /> Reset
+                <RotateCcw size={14} /> Reset
               </button>
             </div>
 
-            <div className="space-y-7">
+            <div className="space-y-6">
+              {/* 1. JLPT Level Selector */}
               <fieldset>
-                <legend className="mb-3 text-sm font-bold">JLPT levels</legend>
+                <div className="mb-2.5 flex items-center justify-between">
+                  <legend className="text-sm font-bold text-[var(--ink)]">JLPT Levels</legend>
+                  <span className="text-xs text-[var(--muted)]">Select one or more</span>
+                </div>
                 <div className="flex flex-wrap gap-2">
-                  {vocabularyLevels.map((level) => (
-                    <button
-                      key={level}
-                      type="button"
-                      aria-pressed={levels.includes(level)}
-                      onClick={() => toggleLevel(level)}
-                      className={`min-h-11 rounded-full border px-4 py-2 text-sm font-bold transition-colors ${
-                        levels.includes(level)
-                          ? "border-[var(--primary)] bg-[var(--primary)] text-white"
-                          : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)]"
-                      }`}
-                    >
-                      {level}
-                    </button>
-                  ))}
+                  {vocabularyLevels.map((level) => {
+                    const selected = levels.includes(level);
+                    return (
+                      <button
+                        key={level}
+                        type="button"
+                        aria-pressed={selected}
+                        onClick={() => toggleLevel(level)}
+                        className={`inline-flex min-h-11 items-center gap-1.5 rounded-xl border px-4 py-2 text-sm font-bold transition-all cursor-pointer ${
+                          selected
+                            ? "border-[var(--primary)] bg-[var(--primary)] text-white shadow-xs"
+                            : "border-[var(--line)] bg-[var(--bg)] text-[var(--ink)] hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)]/50"
+                        }`}
+                      >
+                        {selected && <Check size={14} strokeWidth={3} className="shrink-0" />}
+                        <span>{level}</span>
+                      </button>
+                    );
+                  })}
                 </div>
               </fieldset>
 
+              {/* 2. Kanji School Grades Filter */}
               {gradeOptions.length > 0 && (
-                <fieldset>
-                  <div className="mb-3 flex items-center justify-between gap-3">
-                    <legend className="text-sm font-bold">Kanji school grades</legend>
-                    <div className="flex gap-2 text-xs font-bold">
+                <fieldset className="rounded-xl border border-[var(--line)] bg-[var(--bg)]/40 p-4">
+                  <div className="mb-2.5 flex items-center justify-between gap-3">
+                    <div>
+                      <legend className="text-sm font-bold text-[var(--ink)]">Kanji School Grades</legend>
+                      <p className="mt-0.5 text-xs text-[var(--muted)]">
+                        Optional filter — matches words containing kanji from these grades.
+                      </p>
+                    </div>
+                    <div className="flex gap-1.5 text-xs font-bold">
                       <button
                         type="button"
                         onClick={() => setGrades(gradeOptions)}
-                        className="rounded px-2 py-1 text-[var(--primary-fg)]"
+                        className="rounded-lg px-2.5 py-1 text-[var(--primary-fg)] hover:bg-[var(--sakura-light)] transition-colors cursor-pointer"
                       >
                         Select all
                       </button>
                       <button
                         type="button"
                         onClick={() => setGrades([])}
-                        className="rounded px-2 py-1 text-[var(--muted)]"
+                        className="rounded-lg px-2.5 py-1 text-[var(--muted)] hover:bg-[var(--line)]/50 transition-colors cursor-pointer"
                       >
                         Clear
                       </button>
@@ -259,44 +278,50 @@ export default function VocabularySetupPage() {
                           disabled={!count}
                           aria-pressed={selected}
                           onClick={() => toggleGrade(grade)}
-                          className={`min-h-11 rounded-full border px-4 py-2 text-sm font-bold transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
+                          className={`inline-flex min-h-10 items-center gap-1.5 rounded-xl border px-3 py-1.5 text-xs font-bold transition-all cursor-pointer disabled:cursor-not-allowed disabled:opacity-40 ${
                             selected
-                              ? "border-[var(--primary)] bg-[var(--primary)] text-white"
-                              : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)]"
+                              ? "border-[var(--primary)] bg-[var(--primary)] text-white shadow-xs"
+                              : "border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)]/50"
                           }`}
                         >
-                          {gradeNames[grade] ?? `Grade ${grade}`}{" "}
-                          <span className="ml-1 text-xs opacity-80">({count})</span>
+                          {selected && <Check size={12} strokeWidth={3} className="shrink-0" />}
+                          <span>{gradeNames[grade] ?? `Grade ${grade}`}</span>
+                          <span className={`text-[11px] ${selected ? "text-white/80" : "text-[var(--muted)]"}`}>
+                            ({count})
+                          </span>
                         </button>
                       );
                     })}
                   </div>
-                  <p className="mt-2 text-xs text-[var(--muted)]">
-                    A word matches when at least one kanji in it belongs to a selected grade.
-                  </p>
                 </fieldset>
               )}
 
+              {/* 3. Session Length Selector */}
               <fieldset>
-                <legend className="mb-3 text-sm font-bold">Session length</legend>
-                <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+                <div className="mb-2.5 flex items-center justify-between">
+                  <legend className="text-sm font-bold text-[var(--ink)]">Session Length</legend>
+                  <span className="text-xs text-[var(--muted)]">Number of target questions</span>
+                </div>
+                <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4">
                   {([10, 20, 30, "all"] as const).map((option) => {
                     const disabled =
                       option === "all" ? eligible.length === 0 : eligible.length < option;
+                    const selected = size === option;
                     return (
                       <button
                         key={option}
                         type="button"
                         disabled={disabled}
-                        aria-pressed={size === option}
+                        aria-pressed={selected}
                         onClick={() => setSize(option)}
-                        className={`min-h-11 rounded-full border px-4 py-2 text-sm font-bold transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
-                          size === option
-                            ? "border-[var(--primary)] bg-[var(--primary)] text-white"
-                            : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)]"
+                        className={`inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl border px-3 py-2 text-sm font-bold transition-all cursor-pointer disabled:cursor-not-allowed disabled:opacity-40 ${
+                          selected
+                            ? "border-[var(--primary)] bg-[var(--primary)] text-white shadow-xs"
+                            : "border-[var(--line)] bg-[var(--bg)] text-[var(--ink)] hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)]/50"
                         }`}
                       >
-                        {option === "all" ? "All available" : option}
+                        {selected && <Check size={14} strokeWidth={3} className="shrink-0" />}
+                        <span>{option === "all" ? "All available" : `${option} Words`}</span>
                       </button>
                     );
                   })}
@@ -305,52 +330,105 @@ export default function VocabularySetupPage() {
             </div>
           </div>
 
-          <aside className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-7 lg:sticky lg:top-6 lg:self-start">
-            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
-              Your selection
-            </p>
-            <div className="my-5 flex items-end justify-between border-b border-[var(--line)] pb-5">
-              <span className="font-japanese text-5xl leading-none">
+          {/* Right Sidebar: Selection Summary Card */}
+          <aside className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-sm sm:p-6 lg:sticky lg:top-6 lg:self-start">
+            <div className="flex items-center justify-between border-b border-[var(--line)] pb-4">
+              <p className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--primary-fg)]">
+                Selection Summary
+              </p>
+              <Sparkles size={16} className="text-[var(--primary)]" />
+            </div>
+
+            {/* Big Eligible Pool Stat */}
+            <div className="my-5 rounded-xl border border-[var(--line)] bg-[var(--bg)] p-4 text-center">
+              <span className="font-japanese block text-5xl font-bold leading-tight text-[var(--ink)]">
                 {loading ? "…" : eligible.length}
               </span>
-              <span className="pb-1 text-sm text-[var(--muted)]">eligible words</span>
+              <span className="mt-1 block text-xs font-semibold text-[var(--muted)]">
+                eligible words
+              </span>
             </div>
-            <p className="mb-5 flex items-center justify-between text-sm text-[var(--muted)]">
-              <span>Questions</span>
-              <strong className="text-[var(--ink)]">{loading ? "…" : questionCount}</strong>
-            </p>
-            {!levels.length && <p className="mb-3 text-sm">Select at least one JLPT level.</p>}
-            {levels.length > 0 && !loading && eligible.length < questionCount && (
-              <p className="mb-3 text-sm">
-                Choose a smaller session length or widen your selection.
-              </p>
-            )}
-            {loading && (
-              <p role="status" className="mb-3 text-sm">
-                Loading vocabulary…
-              </p>
-            )}
-            {error && (
-              <p role="alert" className="mb-3 text-sm font-semibold">
-                {error}
-              </p>
-            )}
-            {error.includes("Vocabulary data could not be loaded") && (
-              <button
-                type="button"
-                onClick={() => setReloadKey((value) => value + 1)}
-                className="mb-3 text-sm font-bold underline"
-              >
-                Retry loading
-              </button>
-            )}
+
+            {/* Stat Rows */}
+            <div className="space-y-2.5 border-b border-[var(--line)] pb-4 text-xs">
+              <div className="flex items-center justify-between text-[var(--muted)]">
+                <span>Target questions</span>
+                <strong className="text-sm font-bold text-[var(--ink)]">
+                  {loading ? "…" : questionCount}
+                </strong>
+              </div>
+              <div className="flex items-center justify-between text-[var(--muted)]">
+                <span>Estimated duration</span>
+                <span className="inline-flex items-center gap-1 font-semibold text-[var(--ink)]">
+                  <Clock size={12} className="text-[var(--muted)]" /> ~{estimatedMinutes} min
+                </span>
+              </div>
+              <div className="flex items-center justify-between text-[var(--muted)]">
+                <span>Target levels</span>
+                <div className="flex flex-wrap justify-end gap-1">
+                  {levels.length > 0 ? (
+                    levels.map((lvl) => (
+                      <span key={lvl} className="rounded bg-[var(--sakura-light)] px-1.5 py-0.5 text-[10px] font-bold text-[var(--primary)]">
+                        {lvl}
+                      </span>
+                    ))
+                  ) : (
+                    <span className="text-[var(--wrong)]">None</span>
+                  )}
+                </div>
+              </div>
+              {grades.length > 0 && (
+                <div className="flex items-center justify-between text-[var(--muted)]">
+                  <span>Target grades</span>
+                  <span className="font-semibold text-[var(--ink)]">
+                    {grades.length} {grades.length === 1 ? "grade" : "grades"}
+                  </span>
+                </div>
+              )}
+            </div>
+
+            {/* Error & Warning Messages */}
+            <div className="my-3 min-h-[24px]">
+              {!levels.length && (
+                <p className="text-xs font-semibold text-[var(--wrong)]">
+                  Select at least one JLPT level.
+                </p>
+              )}
+              {levels.length > 0 && !loading && eligible.length < questionCount && (
+                <p className="text-xs font-semibold text-[var(--wrong)]">
+                  Choose a smaller session length or widen your selection.
+                </p>
+              )}
+              {loading && (
+                <p role="status" className="text-xs font-semibold text-[var(--muted)]">
+                  Loading vocabulary…
+                </p>
+              )}
+              {error && (
+                <p role="alert" className="text-xs font-semibold text-[var(--wrong)]">
+                  {error}
+                </p>
+              )}
+              {error.includes("Vocabulary data could not be loaded") && (
+                <button
+                  type="button"
+                  onClick={() => setReloadKey((value) => value + 1)}
+                  className="mt-1 text-xs font-bold text-[var(--primary)] underline cursor-pointer"
+                >
+                  Retry loading
+                </button>
+              )}
+            </div>
+
+            {/* Start Button */}
             <button
               type="button"
               disabled={!canStart}
               onClick={start}
-              className="flex h-14 w-full items-center justify-center gap-2 rounded-xl bg-[var(--primary)] text-lg font-bold text-white transition hover:bg-[var(--primary-hover)] disabled:cursor-not-allowed disabled:opacity-45"
+              className="flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[var(--primary)] px-4 py-3 text-base font-bold text-white shadow-sm transition-all hover:bg-[var(--primary-hover)] hover:shadow-md disabled:cursor-not-allowed disabled:opacity-45 cursor-pointer"
             >
-              {starting ? "Starting…" : "Start Practice"} <ArrowRight size={19} />
+              <span>{starting ? "Starting…" : "Start Practice"}</span>
+              <ArrowRight size={18} />
             </button>
           </aside>
         </div>

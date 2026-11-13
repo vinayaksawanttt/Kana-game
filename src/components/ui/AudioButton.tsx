@@ -103,7 +103,7 @@ export const AudioButton: React.FC<AudioButtonProps> = ({
     if (mode === "vocab") {
       playVocab({ word: text, reading });
     } else if (mode === "sentence") {
-      playSentence(text, id);
+      playSentence(text, id, { reading, romaji });
     } else if (mode === "grammar") {
       playGrammarTitle(text, id || reading);
     } else if (mode === "reading") {

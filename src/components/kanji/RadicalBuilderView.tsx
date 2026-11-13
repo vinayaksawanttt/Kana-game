@@ -159,12 +159,12 @@ export function RadicalBuilderView({ onSelectKanji }: RadicalBuilderViewProps) {
         </div>
 
         {selectedRadicalRecords.length === 0 ? (
-          <div className="mt-3.5 flex items-center gap-2 text-xs font-medium text-[var(--muted)]">
-            <Info size={15} className="shrink-0 text-[var(--primary)]" />
+          <div className="mt-3.5 flex items-center gap-2.5 rounded-xl border border-[var(--line)] bg-[var(--bg)] p-3 text-xs font-medium text-[var(--muted)]">
+            <Info size={16} className="shrink-0 text-[var(--primary)]" />
             <span>
               Click 1 or more radicals from the chart below to combine them and reveal matching kanji
               compounds (e.g. <strong>囗</strong> enclosure + <strong>大</strong> big ={" "}
-              <strong>因</strong>).
+              <strong className="text-[var(--primary)]">因</strong>).
             </span>
           </div>
         ) : (
@@ -172,9 +172,9 @@ export function RadicalBuilderView({ onSelectKanji }: RadicalBuilderViewProps) {
             {selectedRadicalRecords.map((rad, idx) => (
               <div key={rad.character} className="flex items-center gap-2">
                 {idx > 0 && (
-                  <span className="text-base font-extrabold text-[var(--muted)]">+</span>
+                  <span className="text-lg font-black text-[var(--muted)] select-none">+</span>
                 )}
-                <span className="inline-flex items-center gap-2 rounded-xl border border-[var(--primary)]/40 bg-[var(--sakura-light)]/70 py-1.5 pr-2 pl-3 shadow-2xs">
+                <span className="inline-flex items-center gap-2 rounded-xl border border-[var(--primary)]/50 bg-[var(--sakura-light)]/80 py-1.5 pr-2.5 pl-3 shadow-xs">
                   <span lang="ja" className="font-japanese text-xl font-bold text-[var(--primary)]">
                     {rad.character}
                   </span>
@@ -193,38 +193,41 @@ export function RadicalBuilderView({ onSelectKanji }: RadicalBuilderViewProps) {
               </div>
             ))}
 
-            <span className="text-base font-extrabold text-[var(--muted)]">=</span>
+            <span className="text-lg font-black text-[var(--muted)] select-none">=</span>
 
-            <span className="rounded-xl border border-[var(--line)] bg-[var(--bg)] px-3 py-1.5 text-xs font-extrabold text-[var(--ink)]">
-              {filteredKanji.length} {filteredKanji.length === 1 ? "matching kanji" : "matching kanji"}
+            <span className="rounded-xl border border-[var(--line)] bg-[var(--bg)] px-3 py-1.5 text-xs font-extrabold text-[var(--ink)] shadow-2xs">
+              {filteredKanji.length} matching kanji
             </span>
           </div>
         )}
 
         {/* Direct Compound Highlight Banner */}
         {directCompound && selectedRadicals.length >= 2 && (
-          <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-[var(--correct)]/40 bg-[var(--correct)]/10 p-3.5">
-            <div className="flex items-center gap-3">
+          <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-xl border-2 border-[var(--primary)]/40 bg-[var(--sakura-light)]/40 p-4 shadow-sm">
+            <div className="flex items-center gap-3.5">
               <span
                 lang="ja"
-                className="font-kanji grid size-12 place-items-center rounded-lg border border-[var(--correct)]/40 bg-[var(--surface)] text-3xl font-bold text-[var(--ink)] shadow-2xs"
+                className="font-kanji grid size-14 place-items-center rounded-xl border-2 border-[var(--primary)]/40 bg-[var(--surface)] text-3xl font-bold text-[var(--ink)] shadow-xs"
               >
                 {directCompound.c}
               </span>
               <div>
                 <div className="flex items-center gap-2">
-                  <span className="text-xs font-bold text-[var(--correct)] uppercase tracking-wider">
+                  <span className="rounded-full bg-[var(--primary)] px-2 py-0.5 text-[10px] font-bold text-white uppercase tracking-wider">
                     Direct Compound Match
                   </span>
-                  <span className="rounded-full bg-[var(--primary)] px-2 py-0.2 text-[10px] font-bold text-white">
+                  <span className="rounded-full border border-[var(--line)] bg-[var(--bg)] px-2 py-0.5 text-[10px] font-bold text-[var(--muted)]">
                     JLPT N{directCompound.jlpt}
                   </span>
                 </div>
-                <p className="mt-0.5 text-sm font-bold text-[var(--ink)]">
+                <p className="mt-1 text-sm font-bold text-[var(--ink)]">
                   {directCompound.meanings.join(", ")}
                 </p>
                 <p lang="ja" className="font-japanese text-xs text-[var(--muted)]">
-                  Reading: {getPrimaryReading(directCompound)}
+                  Reading: <span className="font-bold text-[var(--primary-fg)]">{getPrimaryReading(directCompound)}</span>
+                  <span className="ml-2 text-[10px] text-[var(--muted)]">
+                    (Formed by combining {selectedRadicals.join(" + ")})
+                  </span>
                 </p>
               </div>
             </div>
@@ -232,7 +235,7 @@ export function RadicalBuilderView({ onSelectKanji }: RadicalBuilderViewProps) {
             <button
               type="button"
               onClick={() => onSelectKanji(directCompound)}
-              className="min-h-9 rounded-lg bg-[var(--primary)] px-4 text-xs font-bold text-white shadow-2xs transition-colors hover:bg-[var(--primary-hover)] cursor-pointer"
+              className="min-h-10 rounded-xl bg-[var(--primary)] px-4 text-xs font-bold text-white shadow-xs transition-colors hover:bg-[var(--primary-hover)] cursor-pointer"
             >
               Inspect Details
             </button>
@@ -346,14 +349,17 @@ export function RadicalBuilderView({ onSelectKanji }: RadicalBuilderViewProps) {
 
           {/* Kanji Cards Grid */}
           {filteredKanji.length > 0 ? (
-            <div className="grid max-h-[62dvh] grid-cols-[repeat(auto-fill,minmax(76px,1fr))] gap-2.5 overflow-y-auto pr-1">
+            <div className="grid max-h-[62dvh] grid-cols-[repeat(auto-fill,minmax(78px,1fr))] gap-2.5 overflow-y-auto pr-1">
               {filteredKanji.map((kanji) => (
                 <button
                   key={kanji.c}
                   type="button"
                   onClick={() => onSelectKanji(kanji)}
                   aria-label={`${kanji.c}, ${getPrimaryReading(kanji)}, ${kanji.label}`}
-                  className="group flex aspect-square flex-col items-center justify-between rounded-xl border border-[var(--line)] bg-[var(--bg)] p-2 text-center transition-all hover:-translate-y-0.5 hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)]/50 hover:shadow-xs cursor-pointer"
+                  title={`${kanji.c} (${getPrimaryReading(kanji)}) — ${kanji.label}${
+                    selectedRadicals.length > 0 ? ` · Contains: ${selectedRadicals.join(" + ")}` : ""
+                  }. Click to inspect stroke order & radicals.`}
+                  className="group relative flex aspect-square flex-col items-center justify-between rounded-xl border border-[var(--line)] bg-[var(--bg)] p-2 text-center transition-all duration-150 hover:-translate-y-1 hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)]/40 hover:shadow-sm cursor-pointer"
                 >
                   <span
                     lang="ja"
@@ -370,7 +376,7 @@ export function RadicalBuilderView({ onSelectKanji }: RadicalBuilderViewProps) {
                   </span>
 
                   <div className="flex w-full items-center justify-between gap-1">
-                    <span className="truncate text-[9px] font-medium text-[var(--muted)]">
+                    <span className="truncate text-[9px] font-medium text-[var(--muted)] group-hover:text-[var(--ink)]">
                       {kanji.meanings[0] ?? kanji.label}
                     </span>
                     <span className="shrink-0 rounded bg-[var(--line)]/60 px-1 text-[8px] font-extrabold text-[var(--muted)]">

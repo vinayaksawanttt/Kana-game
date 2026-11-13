@@ -226,6 +226,7 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
   const [activeSection, setActiveSection] = useState<"basic" | "dakuten" | "yoon" | "extended">("basic");
   const [activeSequence, setActiveSequence] = useState<ActiveSequence | null>(null);
   const [activeTileId, setActiveTileId] = useState<string | null>(null);
+  const [hoveredCoord, setHoveredCoord] = useState<{ section: "basic" | "dakuten" | "yoon"; rowKey: string; colIndex: number } | null>(null);
 
   const sequenceRef = useRef<{
     aborted: boolean;
@@ -627,10 +628,10 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
           </div>
         </div>
 
-        {/* Quick Jump Anchor Tabs */}
+        {/* Quick Jump Anchor Tabs (Sticky for seamless navigation) */}
         <nav
           aria-label="Kana sections"
-          className="mt-6 flex flex-wrap items-center gap-2 border-b border-[var(--line)] pb-4 text-xs font-bold text-[var(--muted)]"
+          className="sticky top-0 z-30 -mx-3 mt-6 flex flex-wrap items-center gap-2 border-b border-[var(--line)] bg-[var(--bg)]/95 px-3 py-3 backdrop-blur-md text-xs font-bold text-[var(--muted)] shadow-2xs sm:-mx-6 sm:px-6"
         >
           <button
             type="button"
@@ -785,19 +786,26 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
                 { latin: "U", kana: script === "hiragana" ? "う" : "ウ", dan: "う段" },
                 { latin: "E", kana: script === "hiragana" ? "え" : "エ", dan: "え段" },
                 { latin: "O", kana: script === "hiragana" ? "お" : "オ", dan: "お段" },
-              ].map((vowel) => (
-                <div
-                  key={vowel.latin}
-                  className="flex flex-col items-center justify-center rounded-2xl border border-[var(--line)]/70 bg-[var(--bg)] py-2 sm:py-2.5 shadow-2xs"
-                >
-                  <span className="text-xs sm:text-sm font-black tracking-widest text-[var(--primary-fg)]">
-                    {vowel.latin}
-                  </span>
-                  <span className="font-japanese text-[11px] font-semibold text-[var(--muted)] sm:text-xs">
-                    {vowel.kana}
-                  </span>
-                </div>
-              ))}
+              ].map((vowel, colIndex) => {
+                const isColHighlighted = hoveredCoord?.section === "basic" && hoveredCoord.colIndex === colIndex;
+                return (
+                  <div
+                    key={vowel.latin}
+                    className={`flex flex-col items-center justify-center rounded-2xl border py-2 sm:py-2.5 transition-all duration-150 shadow-2xs ${
+                      isColHighlighted
+                        ? "border-[var(--primary)] bg-[var(--sakura-light)] ring-1 ring-[var(--primary)]/40 scale-[1.03] shadow-xs"
+                        : "border-[var(--line)]/70 bg-[var(--bg)]"
+                    }`}
+                  >
+                    <span className={`text-xs sm:text-sm font-black tracking-widest ${isColHighlighted ? "text-[var(--primary)]" : "text-[var(--primary-fg)]"}`}>
+                      {vowel.latin}
+                    </span>
+                    <span className="font-japanese text-[11px] font-semibold text-[var(--muted)] sm:text-xs">
+                      {vowel.kana}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
           </div>
 
@@ -805,14 +813,19 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
           <div className="space-y-2 sm:space-y-3">
             {basicRows.map((row) => {
               const isThisRowSequence = activeSequence?.targetKey === row.key;
+              const isRowHighlighted = hoveredCoord?.section === "basic" && hoveredCoord.rowKey === row.key;
               return (
                 <div
                   key={row.key}
-                  className="grid grid-cols-[38px_1fr] items-center gap-2 sm:grid-cols-[64px_1fr] sm:gap-3.5"
+                  className={`grid grid-cols-[38px_1fr] items-center gap-2 sm:grid-cols-[64px_1fr] sm:gap-3.5 rounded-2xl p-1 transition-colors ${
+                    isRowHighlighted ? "bg-[var(--sakura-light)]/20" : ""
+                  }`}
                 >
                   {/* Row Header & Audio Trigger */}
                   <div className="flex flex-col items-center justify-center gap-1">
-                    <span className="text-[11px] sm:text-xs font-black tracking-wider text-[var(--ink)]">
+                    <span className={`text-[11px] sm:text-xs font-black tracking-wider transition-colors ${
+                      isRowHighlighted ? "text-[var(--primary-fg)] scale-105" : "text-[var(--ink)]"
+                    }`}>
                       {row.romajiLabel}
                     </span>
                     <button
@@ -862,7 +875,7 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
 
                   {/* 5 Cards Row */}
                   <div className="grid grid-cols-5 gap-2 sm:gap-3.5">
-                    {row.slots.map((slot) => {
+                    {row.slots.map((slot, colIndex) => {
                       if (slot.type === "empty") {
                         return <EmptyTile key={slot.id} />;
                       }
@@ -881,14 +894,20 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
                       const isPaused = isSequenceCurrent && activeSequence.status === "paused";
 
                       return (
-                        <KanaTile
+                        <div
                           key={slot.character.id}
-                          character={slot.character}
-                          showRomaji={showRomaji}
-                          isActive={isActive}
-                          isPaused={isPaused}
-                          onPlay={() => handleTilePlay(slot.character)}
-                        />
+                          onMouseEnter={() => setHoveredCoord({ section: "basic", rowKey: row.key, colIndex })}
+                          onMouseLeave={() => setHoveredCoord(null)}
+                          className="w-full"
+                        >
+                          <KanaTile
+                            character={slot.character}
+                            showRomaji={showRomaji}
+                            isActive={isActive}
+                            isPaused={isPaused}
+                            onPlay={() => handleTilePlay(slot.character)}
+                          />
+                        </div>
                       );
                     })}
                   </div>
@@ -987,19 +1006,26 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
                 { latin: "U", kana: script === "hiragana" ? "う" : "ウ" },
                 { latin: "E", kana: script === "hiragana" ? "え" : "エ" },
                 { latin: "O", kana: script === "hiragana" ? "お" : "オ" },
-              ].map((vowel) => (
-                <div
-                  key={vowel.latin}
-                  className="flex flex-col items-center justify-center rounded-2xl border border-[var(--line)]/70 bg-[var(--bg)] py-2 sm:py-2.5 shadow-2xs"
-                >
-                  <span className="text-xs sm:text-sm font-black tracking-widest text-[var(--primary-fg)]">
-                    {vowel.latin}
-                  </span>
-                  <span className="font-japanese text-[11px] font-semibold text-[var(--muted)] sm:text-xs">
-                    {vowel.kana}
-                  </span>
-                </div>
-              ))}
+              ].map((vowel, colIndex) => {
+                const isColHighlighted = hoveredCoord?.section === "dakuten" && hoveredCoord.colIndex === colIndex;
+                return (
+                  <div
+                    key={vowel.latin}
+                    className={`flex flex-col items-center justify-center rounded-2xl border py-2 sm:py-2.5 transition-all duration-150 shadow-2xs ${
+                      isColHighlighted
+                        ? "border-[var(--primary)] bg-[var(--sakura-light)] ring-1 ring-[var(--primary)]/40 scale-[1.03] shadow-xs"
+                        : "border-[var(--line)]/70 bg-[var(--bg)]"
+                    }`}
+                  >
+                    <span className={`text-xs sm:text-sm font-black tracking-widest ${isColHighlighted ? "text-[var(--primary)]" : "text-[var(--primary-fg)]"}`}>
+                      {vowel.latin}
+                    </span>
+                    <span className="font-japanese text-[11px] font-semibold text-[var(--muted)] sm:text-xs">
+                      {vowel.kana}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
           </div>
 
@@ -1007,13 +1033,18 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
           <div className="space-y-2 sm:space-y-3">
             {dakutenRows.map((row) => {
               const isThisRowSequence = activeSequence?.targetKey === row.key;
+              const isRowHighlighted = hoveredCoord?.section === "dakuten" && hoveredCoord.rowKey === row.key;
               return (
                 <div
                   key={row.key}
-                  className="grid grid-cols-[38px_1fr] items-center gap-2 sm:grid-cols-[64px_1fr] sm:gap-3.5"
+                  className={`grid grid-cols-[38px_1fr] items-center gap-2 sm:grid-cols-[64px_1fr] sm:gap-3.5 rounded-2xl p-1 transition-colors ${
+                    isRowHighlighted ? "bg-[var(--sakura-light)]/20" : ""
+                  }`}
                 >
                   <div className="flex flex-col items-center justify-center gap-1">
-                    <span className="text-[11px] sm:text-xs font-black tracking-wider text-[var(--ink)]">
+                    <span className={`text-[11px] sm:text-xs font-black tracking-wider transition-colors ${
+                      isRowHighlighted ? "text-[var(--primary-fg)] scale-105" : "text-[var(--ink)]"
+                    }`}>
                       {row.romajiLabel}
                     </span>
                     <button
@@ -1062,7 +1093,7 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
                   </div>
 
                   <div className="grid grid-cols-5 gap-2 sm:gap-3.5">
-                    {row.slots.map((slot) => {
+                    {row.slots.map((slot, colIndex) => {
                       if (slot.type === "empty") {
                         return <EmptyTile key={slot.id} />;
                       }
@@ -1081,14 +1112,20 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
                       const isPaused = isSequenceCurrent && activeSequence.status === "paused";
 
                       return (
-                        <KanaTile
+                        <div
                           key={slot.character.id}
-                          character={slot.character}
-                          showRomaji={showRomaji}
-                          isActive={isActive}
-                          isPaused={isPaused}
-                          onPlay={() => handleTilePlay(slot.character)}
-                        />
+                          onMouseEnter={() => setHoveredCoord({ section: "dakuten", rowKey: row.key, colIndex })}
+                          onMouseLeave={() => setHoveredCoord(null)}
+                          className="w-full"
+                        >
+                          <KanaTile
+                            character={slot.character}
+                            showRomaji={showRomaji}
+                            isActive={isActive}
+                            isPaused={isPaused}
+                            onPlay={() => handleTilePlay(slot.character)}
+                          />
+                        </div>
                       );
                     })}
                   </div>
@@ -1185,19 +1222,26 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
                 { latin: "YA", kana: script === "hiragana" ? "ゃ" : "ャ" },
                 { latin: "YU", kana: script === "hiragana" ? "ゅ" : "ュ" },
                 { latin: "YO", kana: script === "hiragana" ? "ょ" : "ョ" },
-              ].map((vowel) => (
-                <div
-                  key={vowel.latin}
-                  className="flex flex-col items-center justify-center rounded-2xl border border-[var(--line)]/70 bg-[var(--bg)] py-2 sm:py-2.5 shadow-2xs"
-                >
-                  <span className="text-xs sm:text-sm font-black tracking-widest text-[var(--primary-fg)]">
-                    +{vowel.latin}
-                  </span>
-                  <span className="font-japanese text-[11px] font-semibold text-[var(--muted)] sm:text-xs">
-                    +{vowel.kana}
-                  </span>
-                </div>
-              ))}
+              ].map((vowel, colIndex) => {
+                const isColHighlighted = hoveredCoord?.section === "yoon" && hoveredCoord.colIndex === colIndex;
+                return (
+                  <div
+                    key={vowel.latin}
+                    className={`flex flex-col items-center justify-center rounded-2xl border py-2 sm:py-2.5 transition-all duration-150 shadow-2xs ${
+                      isColHighlighted
+                        ? "border-[var(--primary)] bg-[var(--sakura-light)] ring-1 ring-[var(--primary)]/40 scale-[1.03] shadow-xs"
+                        : "border-[var(--line)]/70 bg-[var(--bg)]"
+                    }`}
+                  >
+                    <span className={`text-xs sm:text-sm font-black tracking-widest ${isColHighlighted ? "text-[var(--primary)]" : "text-[var(--primary-fg)]"}`}>
+                      +{vowel.latin}
+                    </span>
+                    <span className="font-japanese text-[11px] font-semibold text-[var(--muted)] sm:text-xs">
+                      +{vowel.kana}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
           </div>
 
@@ -1205,13 +1249,18 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
           <div className="space-y-2 sm:space-y-3">
             {yoonRows.map((row) => {
               const isThisRowSequence = activeSequence?.targetKey === row.key;
+              const isRowHighlighted = hoveredCoord?.section === "yoon" && hoveredCoord.rowKey === row.key;
               return (
                 <div
                   key={row.key}
-                  className="grid grid-cols-[38px_1fr] items-center gap-2 sm:grid-cols-[64px_1fr] sm:gap-3.5"
+                  className={`grid grid-cols-[38px_1fr] items-center gap-2 sm:grid-cols-[64px_1fr] sm:gap-3.5 rounded-2xl p-1 transition-colors ${
+                    isRowHighlighted ? "bg-[var(--sakura-light)]/20" : ""
+                  }`}
                 >
                   <div className="flex flex-col items-center justify-center gap-1">
-                    <span className="text-[11px] sm:text-xs font-black tracking-wider text-[var(--ink)]">
+                    <span className={`text-[11px] sm:text-xs font-black tracking-wider transition-colors ${
+                      isRowHighlighted ? "text-[var(--primary-fg)] scale-105" : "text-[var(--ink)]"
+                    }`}>
                       {row.romajiLabel}
                     </span>
                     <button
@@ -1260,7 +1309,7 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
                   </div>
 
                   <div className="grid grid-cols-3 gap-2 sm:gap-3.5">
-                    {row.characters.map((character) => {
+                    {row.characters.map((character, colIndex) => {
                       const isSequenceCurrent =
                         activeSequence !== null &&
                         activeSequence.characters[activeSequence.currentIndex]?.id === character.id;
@@ -1276,14 +1325,20 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
                       const isPaused = isSequenceCurrent && activeSequence.status === "paused";
 
                       return (
-                        <KanaTile
+                        <div
                           key={character.id}
-                          character={character}
-                          showRomaji={showRomaji}
-                          isActive={isActive}
-                          isPaused={isPaused}
-                          onPlay={() => handleTilePlay(character)}
-                        />
+                          onMouseEnter={() => setHoveredCoord({ section: "yoon", rowKey: row.key, colIndex })}
+                          onMouseLeave={() => setHoveredCoord(null)}
+                          className="w-full"
+                        >
+                          <KanaTile
+                            character={character}
+                            showRomaji={showRomaji}
+                            isActive={isActive}
+                            isPaused={isPaused}
+                            onPlay={() => handleTilePlay(character)}
+                          />
+                        </div>
                       );
                     })}
                   </div>
@@ -1385,7 +1440,7 @@ function KanaTile({
       type="button"
       onClick={onPlay}
       aria-label={`Play pronunciation for ${character.char}`}
-      className={`group relative flex aspect-square w-full cursor-pointer flex-col items-center justify-center rounded-2xl border p-1 text-center transition-all duration-150 select-none ${
+      className={`group relative flex aspect-square w-full cursor-pointer flex-col items-center justify-center rounded-2xl border p-1 text-center transition-all duration-150 select-none active:scale-90 ${
         isActive
           ? isPaused
             ? "border-[var(--primary)]/70 bg-[var(--sakura-light)]/60 ring-2 ring-[var(--primary)]/50 shadow-xs"
@@ -1395,7 +1450,7 @@ function KanaTile({
     >
       {/* Corner Audio / Status Indicator */}
       <div
-        className={`absolute top-1.5 right-1.5 transition-opacity ${
+        className={`absolute top-1.5 right-1.5 transition-all ${
           isActive
             ? "opacity-100 text-[var(--primary-fg)]"
             : "opacity-0 group-hover:opacity-100 text-[var(--muted)]/70 group-hover:text-[var(--primary-fg)]"
@@ -1404,7 +1459,16 @@ function KanaTile({
         {isPaused ? (
           <Pause size={10} className="fill-current text-[var(--primary-fg)]" />
         ) : (
-          <Volume2 size={11} className={isActive ? "animate-pulse" : ""} />
+          <div className="flex items-center gap-0.5">
+            <Volume2 size={11} className={isActive ? "animate-pulse" : ""} />
+            {isActive && (
+              <span className="flex items-end gap-0.5 h-2">
+                <span className="w-0.5 h-1 bg-[var(--primary-fg)] animate-pulse rounded-full" />
+                <span className="w-0.5 h-2 bg-[var(--primary-fg)] animate-pulse delay-75 rounded-full" />
+                <span className="w-0.5 h-1.5 bg-[var(--primary-fg)] animate-pulse delay-150 rounded-full" />
+              </span>
+            )}
+          </div>
         )}
       </div>
 
@@ -1422,7 +1486,7 @@ function KanaTile({
       {/* Romaji Badge (height preserved to prevent layout shifts) */}
       <div className="mt-1.5 flex h-4 items-center justify-center">
         {showRomaji && (
-          <span className="rounded-full bg-[var(--surface)] px-1.5 py-0.2 text-[10px] font-bold tracking-wide uppercase text-[var(--muted)] border border-[var(--line)]/60 group-hover:border-[var(--primary)]/40 group-hover:text-[var(--primary-fg)] transition-colors sm:text-[11px]">
+          <span className="rounded-full bg-[var(--surface)] px-2 py-0.2 text-[10px] font-bold tracking-wide uppercase text-[var(--muted)] border border-[var(--line)]/60 group-hover:border-[var(--primary)]/40 group-hover:text-[var(--primary-fg)] transition-colors sm:text-[11px] shadow-2xs">
             {character.romaji[0]}
           </span>
         )}

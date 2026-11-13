@@ -11,11 +11,35 @@ import {
   resolveGrammarTitleAudio,
   cleanGrammarTitleForAudio,
   decomposeKanaToMoraSteps,
+  katakanaToHiragana,
   type MoraAudioStep,
 } from "@/engine/audio";
+import { romajiToHiragana } from "@/engine/shiritori";
 
 const STORAGE_KEY = "kana-autoplay-audio";
 const SPEED_KEY = "kana-playback-speed";
+
+// In-memory cache for live VOICEVOX synthesized sentence blobs
+const voicevoxBlobCache = new Map<string, string>();
+let isVoicevoxAvailable: boolean | null = null;
+
+async function checkVoicevoxLive(): Promise<boolean> {
+  if (typeof window === "undefined") return false;
+  if (isVoicevoxAvailable !== null) return isVoicevoxAvailable;
+  try {
+    const res = await fetch("/api/tts/voicevox", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text: "テスト" }),
+      signal: AbortSignal.timeout(1500),
+    });
+    isVoicevoxAvailable = res.ok;
+    return isVoicevoxAvailable;
+  } catch {
+    isVoicevoxAvailable = false;
+    return false;
+  }
+}
 
 interface AudioState {
   isPlaying: boolean;
@@ -664,7 +688,7 @@ export function useJapaneseAudio() {
     (
       sentenceJa: string,
       id?: string,
-      options?: { audioSrc?: string; reading?: string; rate?: number }
+      options?: { audioSrc?: string; reading?: string; romaji?: string; rate?: number; speaker?: number }
     ) => {
       if (typeof window === "undefined" || !sentenceJa) return;
 
@@ -672,6 +696,7 @@ export function useJapaneseAudio() {
 
       const payload = resolveSentenceAudio(sentenceJa, id);
       const staticSrc = options?.audioSrc || payload.staticSrc;
+      // 1. Try static neural MP3 file if pre-generated
       if (staticSrc) {
         void playAudioItemAsync(
           staticSrc,
@@ -683,22 +708,114 @@ export function useJapaneseAudio() {
         return;
       }
 
-      // If speechSynthesis has no Japanese voices (e.g. Brave on Linux) and reading/kana exists, stitch morae
-      const hasJaVoice =
-        typeof window.speechSynthesis !== "undefined" &&
-        typeof window.speechSynthesis.getVoices === "function" &&
-        window.speechSynthesis
-          .getVoices()
-          .some((v) => v.lang === "ja-JP" || v.lang.startsWith("ja"));
+      // 2. Priority Live Fallback: Stream directly from local VOICEVOX if running!
+      void (async () => {
+        try {
+          const speakerId = options?.speaker ?? 14; // Default: Meimei Himari (calm female narrator)
+          const cacheKey = `${payload.key}:${speakerId}:${options?.rate ?? 1}`;
+          let blobUrl = voicevoxBlobCache.get(cacheKey);
 
-      const steps = decomposeKanaToMoraSteps(options?.reading || sentenceJa);
-      if (!hasJaVoice && steps.length > 0 && typeof window.AudioContext !== "undefined") {
-        void playMoraStepsAsync(steps, payload.key, payload.ttsText, options?.rate);
-        return;
-      }
+          if (!blobUrl && isVoicevoxAvailable !== false) {
+            updateState({ isPlaying: true, activeKey: payload.key, activeChar: null });
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 6000);
+            try {
+              const res = await fetch("/api/tts/voicevox", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                  text: payload.ttsText,
+                  speaker: speakerId,
+                  speedScale: options?.rate ?? 0.95,
+                }),
+                signal: controller.signal,
+              });
 
-      const effectiveRate = options?.rate ? payload.rate * options.rate : payload.rate;
-      void fallbackToSpeechAsync(payload.ttsText, payload.key, effectiveRate);
+              if (res.ok) {
+                const blob = await res.blob();
+                blobUrl = URL.createObjectURL(blob);
+                voicevoxBlobCache.set(cacheKey, blobUrl);
+                isVoicevoxAvailable = true;
+              } else {
+                console.warn("[VOICEVOX] API returned non-200 status:", res.status);
+              }
+            } finally {
+              clearTimeout(timeoutId);
+            }
+          }
+
+          if (blobUrl) {
+            await playAudioItemAsync(
+              blobUrl,
+              payload.ttsText,
+              payload.key,
+              undefined,
+              options?.rate
+            );
+            return;
+          }
+        } catch (err) {
+          console.warn("[VOICEVOX] request failed, falling back to mora stitching:", err);
+        }
+
+        // 3. Fallback: Check if browser has a native Japanese speech voice (Chrome/Edge/Safari)
+        const hasJaVoice =
+          typeof window.speechSynthesis !== "undefined" &&
+          typeof window.speechSynthesis.getVoices === "function" &&
+          window.speechSynthesis
+            .getVoices()
+            .some((v) => v.lang === "ja-JP" || v.lang.startsWith("ja"));
+
+        // Derive phonetic kana representation so Kanji characters are never skipped
+        let kanaString = options?.reading || "";
+        if (!kanaString && options?.romaji) {
+          kanaString = romajiToHiragana(options.romaji, true);
+        }
+        if (!kanaString && !/[\u4e00-\u9faf\u3400-\u4dbf]/.test(sentenceJa)) {
+          kanaString = sentenceJa;
+        }
+
+        // If we already have a phonetic kana string or no ja-voice, check mora stitching
+        const steps = kanaString ? decomposeKanaToMoraSteps(kanaString) : [];
+
+        if (!hasJaVoice && steps.length > 0 && typeof window.AudioContext !== "undefined") {
+          await playMoraStepsAsync(steps, payload.key, payload.ttsText, options?.rate);
+          return;
+        }
+
+        // 4. Fallback for browsers without ja-JP voices (e.g. Brave on Linux):
+        // Dynamically tokenize Kanji via Kuromoji into full Hiragana so no characters are dropped
+        if (!hasJaVoice && steps.length === 0 && typeof window.AudioContext !== "undefined") {
+          try {
+            const { KuromojiService } = await import("@/engine/analyzer");
+            const tokenizer = await KuromojiService.getTokenizer();
+            const tokens = tokenizer.tokenize(sentenceJa);
+            let phonetic = "";
+            for (const t of tokens) {
+              if (t.pos === "助詞" && t.surface_form === "は") {
+                phonetic += "わ";
+              } else if (t.pos === "助詞" && t.surface_form === "へ") {
+                phonetic += "え";
+              } else if (t.reading) {
+                phonetic += katakanaToHiragana(t.reading);
+              } else {
+                phonetic += t.surface_form;
+              }
+            }
+            const asyncSteps = decomposeKanaToMoraSteps(phonetic);
+            if (asyncSteps.length > 0) {
+              await playMoraStepsAsync(asyncSteps, payload.key, payload.ttsText, options?.rate);
+              return;
+            }
+          } catch {
+            // Fall back to speechSynthesis below if Kuromoji initialization fails
+          }
+        }
+
+        // 5. Final fallback to browser speech synthesis
+        const effectiveRate = options?.rate ? payload.rate * options.rate : payload.rate;
+        await fallbackToSpeechAsync(payload.ttsText, payload.key, effectiveRate);
+      })();
     },
     []
   );

@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { ArrowRight, Headphones, RotateCcw } from "lucide-react";
+import { ArrowRight, Check, Clock, Headphones, RotateCcw, Sparkles } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import { saveGameSession } from "@/lib/game-core/storage";
@@ -22,24 +22,32 @@ import { SakuraLoader } from "@/components/ui/SakuraLoader";
 const SUB_MODES: Array<{
   id: ListeningSubMode;
   mark: string;
+  subtitleJa: string;
+  badge: string;
   title: string;
   description: string;
 }> = [
   {
     id: "kana",
     mark: "音",
+    subtitleJa: "かな聴解",
+    badge: "Romaji & Script",
     title: "Kana Ear Training",
     description: "Identify Hiragana, Katakana, Dakuten & Yōon sounds by ear.",
   },
   {
     id: "vocabulary",
     mark: "語",
+    subtitleJa: "語彙聴解",
+    badge: "JLPT Vocab",
     title: "Vocabulary Listening",
     description: "Hear spoken JLPT words and identify their meaning.",
   },
   {
     id: "sentences",
     mark: "文",
+    subtitleJa: "文章聴解",
+    badge: "Context & Stories",
     title: "Sentence Comprehension",
     description: "Listen to natural Japanese sentences in context.",
   },
@@ -158,6 +166,35 @@ export default function ListeningSetupPage() {
     );
   }, [subMode, kanaScript, kanaGroups, levels]);
 
+  const estimatedMinutes = useMemo(() => {
+    const secPerQuestion =
+      subMode === "kana"
+        ? effectiveAnswerFormat === "typing"
+          ? 10
+          : 7
+        : subMode === "vocabulary"
+          ? effectiveAnswerFormat === "typing"
+            ? 13
+            : 9
+          : 15;
+    const effectiveQuestions = Math.min(size, Math.max(1, availablePoolCount));
+    return Math.max(1, Math.round((effectiveQuestions * secPerQuestion) / 60));
+  }, [subMode, effectiveAnswerFormat, size, availablePoolCount]);
+
+  const selectedGroupsLabel = useMemo(() => {
+    const active = KANA_GROUPS.filter(
+      (g) => !(g.id === "extended" && kanaScript === "hiragana") && kanaGroups.includes(g.id)
+    ).map((g) => g.label);
+    return active.length > 0 ? active.join(", ") : "Basic";
+  }, [kanaGroups, kanaScript]);
+
+  const selectedLevelsLabel = useMemo(() => {
+    return [...levels]
+      .sort((a, b) => b - a)
+      .map((l) => `N${l}`)
+      .join(", ");
+  }, [levels]);
+
   function toggleKanaGroup(group: KanaGroup) {
     setError("");
     setStarting(false);
@@ -235,7 +272,7 @@ export default function ListeningSetupPage() {
   return (
     <GameLayout label="LISTENING" glyph="聴" homeHref="/">
       <section className="mx-auto flex w-full max-w-6xl flex-1 items-center justify-center px-5 py-6 sm:px-8 sm:py-8">
-        <div className="grid w-full gap-5 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start">
+        <div className="grid w-full gap-5 lg:grid-cols-[minmax(0,1fr)_330px] lg:items-start">
           {/* Left Configuration Card */}
           <div className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-7">
             <div className="mb-6 flex items-end justify-between gap-4">
@@ -258,7 +295,7 @@ export default function ListeningSetupPage() {
               {/* 1. Listening Mode Selector */}
               <fieldset>
                 <legend className="mb-2.5 text-sm font-bold">1. Listening mode</legend>
-                <div className="grid gap-2.5 sm:grid-cols-3">
+                <div className="grid gap-3 sm:grid-cols-3">
                   {SUB_MODES.map((item) => {
                     const selected = subMode === item.id;
                     return (
@@ -271,25 +308,43 @@ export default function ListeningSetupPage() {
                           setError("");
                           setStarting(false);
                         }}
-                        className={`group flex flex-col justify-between rounded-xl border p-3.5 text-left transition-all cursor-pointer ${
+                        className={`group flex flex-col justify-between rounded-xl border p-4 text-left transition-all cursor-pointer ${
                           selected
-                            ? "border-[var(--primary)] bg-[var(--sakura-light)]/50 ring-1 ring-[var(--primary)]/30"
-                            : "border-[var(--line)] bg-[var(--surface)] hover:border-[var(--sakura)]"
+                            ? "border-[var(--primary)] bg-[var(--sakura-light)]/55 ring-2 ring-[var(--primary)]/20 shadow-xs"
+                            : "border-[var(--line)] bg-[var(--surface)] hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)]/15"
                         }`}
                       >
-                        <div className="mb-2 flex items-center justify-between">
+                        <div className="mb-3 flex items-start justify-between gap-2">
                           <span
-                            className={`grid size-9 place-items-center rounded-lg font-japanese text-lg font-bold transition-colors ${
+                            className={`grid size-10 place-items-center rounded-xl font-japanese text-lg font-bold transition-colors ${
                               selected
-                                ? "bg-[var(--primary)] text-white"
-                                : "bg-[var(--sakura-light)] text-[var(--primary)]"
+                                ? "bg-[var(--primary)] text-white shadow-xs"
+                                : "bg-[var(--sakura-light)] text-[var(--primary)] group-hover:bg-[var(--sakura)]/25"
                             }`}
                           >
                             {item.mark}
                           </span>
+                          <span
+                            aria-hidden="true"
+                            className={`grid size-6 shrink-0 place-items-center rounded-full border transition-colors ${
+                              selected
+                                ? "border-[var(--primary)] bg-[var(--primary)] text-white"
+                                : "border-[var(--line)] bg-[var(--bg)] text-transparent"
+                            }`}
+                          >
+                            <Check size={13} strokeWidth={3} />
+                          </span>
                         </div>
                         <div>
-                          <span className="block text-sm font-bold text-[var(--ink)]">
+                          <div className="flex flex-wrap items-center gap-1.5">
+                            <span className="font-japanese text-[11px] font-bold text-[var(--primary)]">
+                              {item.subtitleJa}
+                            </span>
+                            <span className="text-[10px] font-semibold text-[var(--muted)]">
+                              • {item.badge}
+                            </span>
+                          </div>
+                          <span className="mt-0.5 block text-sm font-bold text-[var(--ink)]">
                             {item.title}
                           </span>
                           <span className="mt-1 block text-xs leading-relaxed text-[var(--muted)]">
@@ -303,22 +358,28 @@ export default function ListeningSetupPage() {
 
                 <Link
                   href="/games/jlpt/instant-reply"
-                  className="mt-3 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-[var(--sakura)] bg-[var(--sakura-light)]/50 p-3.5 transition hover:border-[var(--primary)] hover:bg-[var(--sakura-light)]"
+                  className="group mt-3.5 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-[var(--sakura)] bg-[var(--sakura-light)]/45 p-3.5 transition-all hover:border-[var(--primary)] hover:bg-[var(--sakura-light)]/80"
                 >
-                  <div className="flex items-center gap-3">
-                    <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-[var(--primary)] font-japanese text-lg font-bold text-white">
+                  <div className="flex items-start gap-3 sm:items-center">
+                    <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-[var(--primary)] font-japanese text-lg font-bold text-white shadow-xs">
                       応
                     </span>
                     <div>
-                      <span className="block text-sm font-bold text-[var(--ink)]">
-                        JLPT Instant Reply Blitz (<span className="font-japanese">聴解・即時応答</span>)
-                      </span>
-                      <span className="mt-0.5 block text-xs text-[var(--muted)]">
-                        Official JLPT Mondai 4/5 blind audio reflex drill — hear a spoken line and pick the best reply out of 3 in 8 seconds.
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="text-sm font-bold text-[var(--ink)]">
+                          JLPT Instant Reply Blitz (<span className="font-japanese">聴解・即時応答</span>)
+                        </span>
+                        <span className="inline-flex items-center gap-1 rounded-full bg-[var(--surface)] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[var(--primary)] border border-[var(--sakura)]">
+                          <Sparkles size={10} aria-hidden="true" />
+                          JLPT Mondai 4/5 • 8s Reflex
+                        </span>
+                      </div>
+                      <span className="mt-1 block text-xs leading-relaxed text-[var(--muted)]">
+                        Blind audio reflex drill — hear a spoken line and pick the best reply out of 3 in 8 seconds.
                       </span>
                     </div>
                   </div>
-                  <span className="inline-flex items-center gap-1 rounded-full bg-[var(--primary)] px-3.5 py-1.5 text-xs font-bold text-white">
+                  <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-[var(--primary)] px-4 py-2 text-xs font-bold text-white shadow-xs transition-transform group-hover:translate-x-0.5">
                     <span>Launch Blitz</span>
                     <ArrowRight size={13} aria-hidden="true" />
                   </span>
@@ -345,7 +406,7 @@ export default function ListeningSetupPage() {
                           onClick={() => setKanaScript(val)}
                           className={`min-h-10 rounded-full px-4 text-sm font-bold transition-colors cursor-pointer ${
                             kanaScript === val
-                              ? "bg-[var(--primary)] text-white"
+                              ? "bg-[var(--primary)] text-white shadow-xs"
                               : "text-[var(--muted)] hover:text-[var(--ink)]"
                           }`}
                         >
@@ -368,13 +429,17 @@ export default function ListeningSetupPage() {
                             disabled={disabled}
                             aria-pressed={active}
                             onClick={() => toggleKanaGroup(g.id)}
-                            className={`min-h-10 rounded-full border px-4 py-1.5 text-sm font-bold transition-colors cursor-pointer disabled:cursor-not-allowed disabled:opacity-40 ${
+                            className={`inline-flex min-h-10 items-center gap-1.5 rounded-full border px-4 py-1.5 text-sm font-bold transition-colors cursor-pointer disabled:cursor-not-allowed disabled:opacity-45 ${
                               active
-                                ? "border-[var(--primary)] bg-[var(--primary)] text-white"
-                                : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)]"
+                                ? "border-[var(--primary)] bg-[var(--primary)] text-white shadow-xs"
+                                : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)] hover:text-[var(--ink)]"
                             }`}
                           >
-                            {g.label} <span className="ml-1 text-xs opacity-80">({g.count})</span>
+                            {active && <Check size={13} strokeWidth={3} aria-hidden="true" />}
+                            <span>{g.label}</span>
+                            <span className="text-xs opacity-80">
+                              {disabled ? "(Katakana)" : `(${g.count})`}
+                            </span>
                           </button>
                         );
                       })}
@@ -395,13 +460,15 @@ export default function ListeningSetupPage() {
                           type="button"
                           aria-pressed={active}
                           onClick={() => toggleLevel(item.level)}
-                          className={`min-h-10 rounded-full border px-4 py-1.5 text-sm font-bold transition-colors cursor-pointer ${
+                          className={`inline-flex min-h-10 items-center gap-1.5 rounded-full border px-4 py-1.5 text-sm font-bold transition-colors cursor-pointer ${
                             active
-                              ? "border-[var(--primary)] bg-[var(--primary)] text-white"
-                              : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)]"
+                              ? "border-[var(--primary)] bg-[var(--primary)] text-white shadow-xs"
+                              : "border-transparent bg-[var(--sakura-light)] text-[var(--muted)] hover:border-[var(--sakura)] hover:text-[var(--ink)]"
                           }`}
                         >
-                          {item.label} <span className="ml-1 text-xs opacity-80">({count})</span>
+                          {active && <Check size={13} strokeWidth={3} aria-hidden="true" />}
+                          <span>{item.label}</span>
+                          <span className="text-xs opacity-80">({count})</span>
                         </button>
                       );
                     })}
@@ -422,7 +489,7 @@ export default function ListeningSetupPage() {
                       onClick={() => setSentenceLanguage("en")}
                       className={`min-h-10 rounded-full px-4 text-sm font-bold transition-colors cursor-pointer ${
                         sentenceLanguage === "en"
-                          ? "bg-[var(--primary)] text-white"
+                          ? "bg-[var(--primary)] text-white shadow-xs"
                           : "text-[var(--muted)] hover:text-[var(--ink)]"
                       }`}
                     >
@@ -434,7 +501,7 @@ export default function ListeningSetupPage() {
                       onClick={() => setSentenceLanguage("ja")}
                       className={`min-h-10 rounded-full px-4 text-sm font-bold transition-colors cursor-pointer ${
                         sentenceLanguage === "ja"
-                          ? "bg-[var(--primary)] text-white"
+                          ? "bg-[var(--primary)] text-white shadow-xs"
                           : "text-[var(--muted)] hover:text-[var(--ink)]"
                       }`}
                     >
@@ -449,7 +516,7 @@ export default function ListeningSetupPage() {
                       onClick={() => setAnswerFormat("multiple-choice")}
                       className={`min-h-10 rounded-full px-4 text-sm font-bold transition-colors cursor-pointer ${
                         effectiveAnswerFormat === "multiple-choice"
-                          ? "bg-[var(--primary)] text-white"
+                          ? "bg-[var(--primary)] text-white shadow-xs"
                           : "text-[var(--muted)] hover:text-[var(--ink)]"
                       }`}
                     >
@@ -461,7 +528,7 @@ export default function ListeningSetupPage() {
                       onClick={() => setAnswerFormat("typing")}
                       className={`min-h-10 rounded-full px-4 text-sm font-bold transition-colors cursor-pointer ${
                         effectiveAnswerFormat === "typing"
-                          ? "bg-[var(--primary)] text-white"
+                          ? "bg-[var(--primary)] text-white shadow-xs"
                           : "text-[var(--muted)] hover:text-[var(--ink)]"
                       }`}
                     >
@@ -474,7 +541,7 @@ export default function ListeningSetupPage() {
               {/* 4. Session Length */}
               <fieldset className="border-t border-[var(--line)]/60 pt-5">
                 <legend className="mb-2.5 text-sm font-bold">4. Session length</legend>
-                <div className="inline-flex rounded-full bg-[var(--sakura-light)] p-1">
+                <div className="inline-flex flex-wrap rounded-full bg-[var(--sakura-light)] p-1">
                   {([10, 20, 30] as const).map((count) => (
                     <button
                       key={count}
@@ -483,7 +550,7 @@ export default function ListeningSetupPage() {
                       onClick={() => setSize(count)}
                       className={`min-h-10 rounded-full px-5 text-sm font-bold transition-colors cursor-pointer ${
                         size === count
-                          ? "bg-[var(--primary)] text-white"
+                          ? "bg-[var(--primary)] text-white shadow-xs"
                           : "text-[var(--muted)] hover:text-[var(--ink)]"
                       }`}
                     >
@@ -496,7 +563,7 @@ export default function ListeningSetupPage() {
           </div>
 
           {/* Right Summary Sidebar Card */}
-          <aside className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-6">
+          <aside className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-6 lg:sticky lg:top-20">
             <div className="mb-4 flex items-center gap-3">
               <span className="grid size-11 place-items-center rounded-full bg-[var(--sakura-light)] text-[var(--primary)]">
                 <Headphones size={22} />
@@ -505,24 +572,53 @@ export default function ListeningSetupPage() {
                 <p className="text-xs font-bold uppercase tracking-wider text-[var(--muted)]">
                   Audio Prompt Pool
                 </p>
-                <p className="text-2xl font-extrabold text-[var(--ink)]">
+                <p className="text-2xl font-extrabold text-[var(--ink)] tabular-nums">
                   {availablePoolCount.toLocaleString()} items
                 </p>
               </div>
             </div>
 
             <dl className="space-y-2.5 border-y border-[var(--line)]/70 py-4 text-xs">
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between gap-3">
                 <dt className="text-[var(--muted)]">Mode</dt>
-                <dd className="font-bold text-[var(--ink)]">
+                <dd className="text-right font-bold text-[var(--ink)]">
                   {SUB_MODES.find((m) => m.id === subMode)?.title}
                 </dd>
               </div>
-              <div className="flex items-center justify-between">
+
+              {subMode === "kana" ? (
+                <>
+                  <div className="flex items-center justify-between gap-3">
+                    <dt className="text-[var(--muted)]">Script</dt>
+                    <dd className="text-right font-bold text-[var(--ink)]">
+                      {kanaScript === "both"
+                        ? "Both Scripts"
+                        : kanaScript === "katakana"
+                          ? "Katakana"
+                          : "Hiragana"}
+                    </dd>
+                  </div>
+                  <div className="flex items-center justify-between gap-3">
+                    <dt className="text-[var(--muted)]">Character sets</dt>
+                    <dd className="text-right font-bold text-[var(--ink)]">
+                      {selectedGroupsLabel}
+                    </dd>
+                  </div>
+                </>
+              ) : (
+                <div className="flex items-center justify-between gap-3">
+                  <dt className="text-[var(--muted)]">JLPT levels</dt>
+                  <dd className="text-right font-bold text-[var(--ink)]">
+                    {selectedLevelsLabel}
+                  </dd>
+                </div>
+              )}
+
+              <div className="flex items-center justify-between gap-3">
                 <dt className="text-[var(--muted)]">
                   {subMode === "sentences" ? "Option language" : "Answer format"}
                 </dt>
-                <dd className="font-bold text-[var(--ink)]">
+                <dd className="text-right font-bold text-[var(--ink)]">
                   {subMode === "sentences"
                     ? sentenceLanguage === "ja"
                       ? "Japanese (日本語)"
@@ -532,9 +628,18 @@ export default function ListeningSetupPage() {
                       : "Multiple Choice (4)"}
                 </dd>
               </div>
-              <div className="flex items-center justify-between">
+
+              <div className="flex items-center justify-between gap-3">
                 <dt className="text-[var(--muted)]">Session length</dt>
-                <dd className="font-bold text-[var(--ink)]">{size} questions</dd>
+                <dd className="text-right font-bold text-[var(--ink)]">{size} questions</dd>
+              </div>
+
+              <div className="flex items-center justify-between gap-3">
+                <dt className="text-[var(--muted)]">Est. duration</dt>
+                <dd className="inline-flex items-center gap-1 font-bold text-[var(--ink)]">
+                  <Clock size={13} className="text-[var(--primary)]" aria-hidden="true" />
+                  <span>~{estimatedMinutes} min</span>
+                </dd>
               </div>
             </dl>
 
