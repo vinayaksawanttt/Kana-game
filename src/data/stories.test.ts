@@ -22,7 +22,7 @@ describe("Stories data pipeline & loader", () => {
       expect(story.slug).toBeTruthy();
       expect(story.title).toBeTruthy();
       expect(story.titleEn).toBeTruthy();
-      expect(story.coverImage).toBe(`/images/stories/${story.slug}.png`);
+      expect(story.coverImage).toBe(`/images/stories/${story.slug}.webp`);
       expect(story.coverPlaceholder).toBe(`/images/stories/placeholders/${story.slug}.svg`);
       expect(fs.existsSync(path.join(process.cwd(), "public", story.coverPlaceholder))).toBe(true);
       const assetDiskPath = path.join(process.cwd(), "public", story.coverImage);

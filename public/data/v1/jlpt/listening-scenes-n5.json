@@ -6,7 +6,7 @@
     "titleJa": "デパートのかばん売り場",
     "titleEn": "Department Store Bag Shelf",
     "imagePromptDescription": "A clear, front-facing illustration of a department-store bag display with two shelves labeled 上の段 (top shelf) and 下の段 (bottom shelf). Show eight bags total, four on each shelf. Put the four numbered candidate bags 1–4 on the top shelf, in order from left to right: 1 is a small white bag, 2 is a large white tote bag, 3 is a large black tote bag, and 4 is a small black handbag. Keep the four bags on the bottom shelf unnumbered. Use distinct silhouettes and colors, a simple department-store background, and leave enough space around each numbered bag for a marker. Do not add any other numbered objects.",
-    "recommendedAssetPath": "/images/jlpt-scenes/n5/store_bag_shelf.png",
+    "recommendedAssetPath": "/images/jlpt-scenes/n5/store_bag_shelf.webp",
     "visualObjects": [
       {
         "id": "opt-1",
@@ -256,7 +256,7 @@
     "titleJa": "靴下の店（デザインと長さ）",
     "titleEn": "Sock Shop (Length and Pattern)",
     "imagePromptDescription": "A simple children's sock-shop display with four clearly separated numbered pairs of socks, arranged left to right. 1: long socks with red apple and purple grape pictures. 2: long socks with dog and cat pictures. 3: short socks with red apple and purple grape pictures. 4: short socks with dog and cat pictures. Make the sock length and pictures unmistakable, use a plain bright shop background, and leave space around each pair for a number marker. Do not add other numbered products.",
-    "recommendedAssetPath": "/images/jlpt-scenes/n5/sock_shop.png",
+    "recommendedAssetPath": "/images/jlpt-scenes/n5/sock_shop.webp",
     "visualObjects": [
       {
         "id": "opt-1",
@@ -522,7 +522,7 @@
     "titleJa": "バス停の時刻表と乗り場",
     "titleEn": "Bus Stop Timetable and Platform",
     "imagePromptDescription": "A clear bus-terminal information sign with four separate numbered route panels: 1番, 3番, 5番, and 7番. Include a large clock showing 13:30 (午後1時30分) and a calendar badge clearly labeled 日曜日. The panels should be easy to distinguish and leave space around each route number for a marker. Use a simple bus-stop background and do not add any other numbered routes.",
-    "recommendedAssetPath": "/images/jlpt-scenes/n5/bus_stop_time_table.png",
+    "recommendedAssetPath": "/images/jlpt-scenes/n5/bus_stop_time_table.webp",
     "visualObjects": [
       {
         "id": "opt-1",

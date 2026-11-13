@@ -6,7 +6,7 @@
     "titleJa": "レストランでのトラブル対応（コートの汚れ）",
     "titleEn": "Restaurant Customer Incident (Coat Stain)",
     "imagePromptDescription": "A professional Japanese restaurant manager's desk with an incident log clipboard, showing a checklist with 4 clearly numbered response action choices in Japanese: 1 客のコートをふく (Wipe customer's coat), 2 客のコートを預かる (Keep customer's coat), 3 客の連絡先をたずねる (Ask for customer's contact info), and 4 客にクリーニング代を払う (Pay customer for dry cleaning). A warm, elegant dining room is visible in the soft background. Keep all four numbered actions distinct and leave space for markers.",
-    "recommendedAssetPath": "/images/jlpt-scenes/n1/Four-Step Restaurant Coat Care Guide.png",
+    "recommendedAssetPath": "/images/jlpt-scenes/n1/Four-Step Restaurant Coat Care Guide.webp",
     "visualObjects": [
       {
         "id": "opt-1",
@@ -298,7 +298,7 @@
     "titleJa": "就職課でのインターンシップ選び",
     "titleEn": "University Career Office Internship Selection",
     "imagePromptDescription": "A university career support office brochure displaying a comparison matrix of 4 internship categories: 1 実践タイプ (Practical Type: real projects, remuneration, specialized skills required), 2 セミナータイプ (Seminar Type: 1–2 days, industry overview, multi-company exposure), 3 体験タイプ (Experience Type: 1–2 weeks, single field/job shadowing), and 4 地元タイプ (Hometown Type: 1 month, local enterprise immersion). Clean tabular brochure layout with Japanese headers and numbered callouts 1–4.",
-    "recommendedAssetPath": "/images/jlpt-scenes/n1/Internship Guide at the Career Centre.png",
+    "recommendedAssetPath": "/images/jlpt-scenes/n1/Internship Guide at the Career Centre.webp",
     "visualObjects": [
       {
         "id": "opt-1",
@@ -580,7 +580,7 @@
     "titleJa": "プリンター修理の同梱書類",
     "titleEn": "Printer Repair Center Accompanying Documents",
     "imagePromptDescription": "A customer shipping checklist document for a printer repair center with checkboxes beside 4 document options: 1 保証書 (Warranty Card), 2 修理依頼書 (Repair Request Form), 3 保証書 と 修理依頼書 (Warranty Card & Repair Request Form), and 4 修理依頼書 と 修理記録 (Repair Request Form & Repair Record). A cardboard box and printer with cable are sketched on the desk beside the document. Keep the 4 options clear and distinct.",
-    "recommendedAssetPath": "/images/jlpt-scenes/n1/Printer Repair Document Checklist.png",
+    "recommendedAssetPath": "/images/jlpt-scenes/n1/Printer Repair Document Checklist.webp",
     "visualObjects": [
       {
         "id": "opt-1",

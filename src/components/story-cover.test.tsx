@@ -8,7 +8,7 @@ afterEach(() => cleanup());
 function renderCover() {
   render(
     <StoryCover
-      src="/images/stories/school.png"
+      src="/images/stories/school.webp"
       placeholder="/images/stories/placeholders/school.svg"
       alt="School"
     />

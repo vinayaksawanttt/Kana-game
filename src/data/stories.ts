@@ -132,10 +132,10 @@ export interface StoryRecord {
 export const PLACEHOLDER_STORY_IMAGE = "/images/stories/placeholders/default.svg";
 
 /**
- * Every story ships a PNG illustration at `public/images/stories/<slug>.png`.
+ * Every story ships a WebP illustration at `public/images/stories/<slug>.webp`.
  */
 export function resolveStoryCoverImage(slug: string): string {
-  return `/images/stories/${slug}.png`;
+  return `/images/stories/${slug}.webp`;
 }
 
 /**

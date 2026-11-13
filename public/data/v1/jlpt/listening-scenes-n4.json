@@ -6,7 +6,7 @@
     "titleJa": "お見舞いに持っていく物",
     "titleEn": "Choosing a Hospital Get-Well Gift",
     "imagePromptDescription": "A clear, friendly illustration showing four possible gifts for a hospital visit, with one large, distinct item in each numbered position: 1 a bouquet of flowers, 2 a basket of fruit, 3 a stack of books, and 4 music CDs. Use a simple hospital waiting-room background, keep all four gifts easy to recognize, and leave space around each one for a number marker. Do not add any other numbered objects.",
-    "recommendedAssetPath": "/images/jlpt-scenes/n4/hospital_visit_gift_choices.png",
+    "recommendedAssetPath": "/images/jlpt-scenes/n4/hospital_visit_gift_choices.webp",
     "visualObjects": [
       {
         "id": "opt-1",
@@ -258,7 +258,7 @@
     "titleJa": "図書館のコピー機の使い方",
     "titleEn": "Using the Library Copy Machine",
     "imagePromptDescription": "A front-facing illustration of a library copy machine control panel with four clearly separated numbered choices. Choice 1 shows a red button together with a yellow button. Choice 2 shows a red button together with a white button. Choice 3 shows a blue button together with a yellow button. Choice 4 shows a blue button together with a white button. Make all button colors vivid and easy to tell apart, with a small copy of printed text on the machine display. Leave space by each pair for a number marker, and do not add any other numbered buttons.",
-    "recommendedAssetPath": "/images/jlpt-scenes/n4/Library_Copier_Instructions_Panel.png",
+    "recommendedAssetPath": "/images/jlpt-scenes/n4/Library_Copier_Instructions_Panel.webp",
     "visualObjects": [
       {
         "id": "opt-1",
@@ -540,7 +540,7 @@
     "titleJa": "会議室の準備と資料コピー",
     "titleEn": "Meeting Room Setup and Copying Handouts",
     "imagePromptDescription": "A four-panel office illustration showing four clearly different actions: 1 a woman making a phone call, 2 a worker using a copy machine to copy meeting handouts, 3 coworkers having a meeting around a table, and 4 a woman arranging chairs in a meeting room. Include a subtle office background and leave space around each action for a number marker. Do not add any other numbered actions.",
-    "recommendedAssetPath": "/images/jlpt-scenes/n4/meeting_room_handouts.png",
+    "recommendedAssetPath": "/images/jlpt-scenes/n4/meeting_room_handouts.webp",
     "visualObjects": [
       {
         "id": "opt-1",

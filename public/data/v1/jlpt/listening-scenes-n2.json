@@ -6,7 +6,7 @@
     "titleJa": "映画館の窓口（家族チケット料金計算）",
     "titleEn": "Cinema Ticket Counter (Family Fare Calculation)",
     "imagePromptDescription": "A cinema ticket counter display with four clearly separated numbered total prices: 1 is 2,500円, 2 is 3,000円, 3 is 3,500円, and 4 is 4,000円. Use a simple ticket-counter background and do not show other numbered prices.",
-    "recommendedAssetPath": "/images/jlpt-scenes/n2/Art Museum Tickets and Special Exhibition Fees.png",
+    "recommendedAssetPath": "/images/jlpt-scenes/n2/Art Museum Tickets and Special Exhibition Fees.webp",
     "visualObjects": [
       {
         "id": "opt-1",
@@ -268,7 +268,7 @@
     "titleJa": "夏休みのゼミ勉強会の準備",
     "titleEn": "Summer Seminar Study Group Coordination",
     "imagePromptDescription": "A university seminar-room whiteboard with four distinct numbered planning tasks: 1 ask the professor about availability, 2 copy academic papers, 3 decide and coordinate the study-group date, and 4 reserve a classroom. Use simple Japanese labels and keep all four choices visually separate.",
-    "recommendedAssetPath": "/images/jlpt-scenes/n2/Four-Step University Seminar Planning Guide.png",
+    "recommendedAssetPath": "/images/jlpt-scenes/n2/Four-Step University Seminar Planning Guide.webp",
     "visualObjects": [
       {
         "id": "opt-1",
@@ -544,7 +544,7 @@
     "titleJa": "海外出張の持ち物チェック",
     "titleEn": "Overseas Business Trip Packing Check",
     "imagePromptDescription": "A business travel packing checklist on a desk with four separated numbered items: 1 meeting materials, 2 company pamphlets, 3 business cards, and 4 an electronic dictionary. Include a suitcase in the background and Japanese item labels. Do not add any other numbered items.",
-    "recommendedAssetPath": "/images/jlpt-scenes/n2/Overseas Business Trip Packing Check.png",
+    "recommendedAssetPath": "/images/jlpt-scenes/n2/Overseas Business Trip Packing Check.webp",
     "visualObjects": [
       {
         "id": "opt-1",

@@ -10,7 +10,7 @@ const guides: LearnFrontmatter[] = [
     category: "Verbs",
     jlpt: "N5–N3",
     levels: ["N5", "N4", "N3"],
-    imageUrl: "/images/learn/verbs.png",
+    imageUrl: "/images/learn/verbs.webp",
     fallbackSvgUrl: "/images/learn/fallbacks/verbs.svg",
     summary: "Conjugate everyday verbs.",
     keywords: ["conjugation"],
@@ -21,7 +21,7 @@ const guides: LearnFrontmatter[] = [
     category: "Kanji",
     jlpt: "N2",
     levels: ["N2"],
-    imageUrl: "/images/learn/kanji.png",
+    imageUrl: "/images/learn/kanji.webp",
     fallbackSvgUrl: "/images/learn/fallbacks/kanji.svg",
   },
 ];
@@ -101,7 +101,7 @@ describe("LearnHubClient", () => {
     const fallback = categoryCard.querySelector('[data-testid="learn-guide-fallback"]')!;
     const guideCard = screen.getByText("Verb forms reference").closest("a")!;
 
-    expect(image.getAttribute("src")).toBe("/images/learn/verbs.png");
+    expect(image.getAttribute("src")).toBe("/images/learn/verbs.webp");
     expect(fallback.getAttribute("src")).toBe("/images/learn/fallbacks/verbs.svg");
     expect(guideCard.querySelector('[data-testid="learn-guide-image"]')).toBeNull();
     expect(guideCard.textContent).toContain("Read guide");

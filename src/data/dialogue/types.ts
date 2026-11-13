@@ -30,6 +30,16 @@ export interface DialogueNode {
   choices: DialogueChoice[];
   isEnding?: boolean;
   endingType?: "perfect" | "success" | "awkward" | "failure";
+  expression?: string; // e.g. "neutral", "pointing", "happy", "thinking", "surprised", "confused", "embarrased", "sad", "goodbye", "backstare"
+  backgroundKey?: string; // e.g. "shibuya-square", "station-entrance", "mcdonalds-store"
+}
+
+export interface ScenarioVocabItem {
+  ja: string;
+  kana: string;
+  romaji: string;
+  en: string;
+  partOfSpeech?: string;
 }
 
 export interface ScenarioMeta {
@@ -49,6 +59,9 @@ export interface ScenarioMeta {
   descriptionJa: string;
   descriptionEn: string;
   backgroundTheme: "street" | "station" | "office" | "store" | "apartment" | "countryside";
+  defaultBackgroundKey?: string;
+  defaultExpression?: string;
+  vocabList?: ScenarioVocabItem[];
 }
 
 export interface DialogueTurnHistory {

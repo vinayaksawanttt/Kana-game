@@ -63,6 +63,56 @@ describe("Dialogue Engine", () => {
     expect(session.totalScore).toBe(-50);
   });
 
+  it("handles confused branch with recovery leading back to directions", () => {
+    let session = createDialogueSession(DIRECTIONS_SCENARIO_META);
+
+    // Turn 1: Ask confusing question ("yellow M house")
+    const confusedChoice = DIRECTIONS_NODES["node-1-initiation"].choices.find(
+      (c: { id: string }) => c.id === "c1-confusing"
+    )!;
+    session = executeDialogueTurn(session, DIRECTIONS_NODES, confusedChoice);
+
+    expect(session.currentNodeId).toBe("node-2-npc-reply-confused");
+    expect(DIRECTIONS_NODES[session.currentNodeId].expression).toBe("confused");
+
+    // Turn 2: Recover politely
+    const recoverChoice = DIRECTIONS_NODES["node-2-npc-reply-confused"].choices.find(
+      (c: { id: string }) => c.id === "c2-confused-recover"
+    )!;
+    session = executeDialogueTurn(session, DIRECTIONS_NODES, recoverChoice);
+
+    expect(session.currentNodeId).toBe("node-3-npc-directions");
+    expect(DIRECTIONS_NODES[session.currentNodeId].expression).toBe("pointing");
+  });
+
+  it("handles walking time inquiry branch with thinking expression", () => {
+    let session = createDialogueSession(DIRECTIONS_SCENARIO_META);
+
+    const c1 = DIRECTIONS_NODES["node-1-initiation"].choices.find((c) => c.id === "c1-polite")!;
+    session = executeDialogueTurn(session, DIRECTIONS_NODES, c1);
+
+    const c2 = DIRECTIONS_NODES["node-2-npc-reply-polite"].choices.find((c) => c.id === "c2-landmark")!;
+    session = executeDialogueTurn(session, DIRECTIONS_NODES, c2);
+
+    // Ask about walking time
+    const c3Time = DIRECTIONS_NODES["node-3-npc-directions"].choices.find(
+      (c) => c.id === "c3-ask-walking-time"
+    )!;
+    session = executeDialogueTurn(session, DIRECTIONS_NODES, c3Time);
+
+    expect(session.currentNodeId).toBe("node-3-npc-walking-time");
+    expect(DIRECTIONS_NODES[session.currentNodeId].expression).toBe("thinking");
+
+    // Complete with landmark gratitude
+    const c4 = DIRECTIONS_NODES["node-3-npc-walking-time"].choices.find(
+      (c) => c.id === "c3-time-thank-respectful"
+    )!;
+    session = executeDialogueTurn(session, DIRECTIONS_NODES, c4);
+
+    expect(session.isFinished).toBe(true);
+    expect(session.finalEndingType).toBe("perfect");
+  });
+
   it("validates all 6 roleplay scenarios have connected dialogue graphs", () => {
     expect(DIALOGUE_SCENARIOS).toHaveLength(6);
     for (const scenario of DIALOGUE_SCENARIOS) {

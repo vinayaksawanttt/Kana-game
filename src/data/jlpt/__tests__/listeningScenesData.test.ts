@@ -83,7 +83,7 @@ describe("JLPT Listening Scenes Data Loader & Asset Integrity", () => {
 
       for (const scene of ALL_LISTENING_SCENES) {
         expect(scene.recommendedAssetPath).toMatch(
-          /^\/images\/jlpt-scenes\/n[1-5]\/.+\.png$/
+          /^\/images\/jlpt-scenes\/n[1-5]\/.+\.webp$/
         );
 
         const relPath = scene.recommendedAssetPath.replace(/^\//, "");

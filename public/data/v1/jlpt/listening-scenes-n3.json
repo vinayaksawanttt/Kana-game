@@ -6,7 +6,7 @@
     "titleJa": "出かける前の用事（映画と郵便局）",
     "titleEn": "Errands Before Going Out",
     "imagePromptDescription": "A simple neighborhood map from a home entrance showing four distinct destinations with clear Japanese labels and numbered markers: 1 郵便局 (post office), 2 本屋 (bookstore), 3 映画館 (movie theater), and 4 レストラン (restaurant). Show a train station near the post office and a route to the movie theater. Keep all four destinations easy to distinguish and do not add other numbered destinations.",
-    "recommendedAssetPath": "/images/jlpt-scenes/n3/Neighbourhood Errand Map Adventure.png",
+    "recommendedAssetPath": "/images/jlpt-scenes/n3/Neighbourhood Errand Map Adventure.webp",
     "visualObjects": [
       {
         "id": "opt-1",
@@ -272,7 +272,7 @@
     "titleJa": "新入社員歓迎会の準備",
     "titleEn": "Planning the New Employee Welcome Trip",
     "imagePromptDescription": "A four-panel office planning illustration showing distinct tasks for a new employee welcome day trip: 1 a staff member handing out a survey, 2 a person searching for trip locations on a computer, 3 coworkers choosing a restaurant from menus, and 4 coworkers discussing activities around a table. Add a subtle office background and leave space around each task for a number marker. Do not add any other numbered tasks.",
-    "recommendedAssetPath": "/images/jlpt-scenes/n3/Planning the New Employee Welcome Trip.png",
+    "recommendedAssetPath": "/images/jlpt-scenes/n3/Planning the New Employee Welcome Trip.webp",
     "visualObjects": [
       {
         "id": "opt-1",
@@ -538,7 +538,7 @@
     "titleJa": "外出前の家の戸締まりと電気",
     "titleEn": "House Check Before Leaving",
     "imagePromptDescription": "A four-panel home illustration showing four distinct actions to check before leaving: 1 a person taking an umbrella by the entrance, 2 turning off the living-room air conditioner, 3 turning off the kitchen light, and 4 closing the small kitchen window. Include an entrance, living room, and kitchen that are easy to tell apart. Leave space around each action for a number marker and do not add other numbered actions.",
-    "recommendedAssetPath": "/images/jlpt-scenes/n3/Japanese Home Safety Checklist Panels.png",
+    "recommendedAssetPath": "/images/jlpt-scenes/n3/Japanese Home Safety Checklist Panels.webp",
     "visualObjects": [
       {
         "id": "opt-1",

@@ -17,7 +17,7 @@ const learnImageDirectory = path.resolve(process.cwd(), "public/images/learn");
 const learnImagesByName = new Map(
   fs
     .readdirSync(learnImageDirectory)
-    .filter((name) => name.toLowerCase().endsWith(".png"))
+    .filter((name) => name.toLowerCase().endsWith(".webp") || name.toLowerCase().endsWith(".png"))
     .map((name) => [normalizeAssetName(path.basename(name, path.extname(name))), name])
 );
 const legacyCategories: Record<string, LearnCategory> = {
@@ -47,7 +47,7 @@ function resolveLearnImage(slug: string, title: string, category: LearnCategory)
     .map((name) => learnImagesByName.get(name))
     .find((name): name is string => Boolean(name));
   const categoryImage = learnImagesByName.get(normalizeAssetName(category));
-  const filename = imageName ?? categoryImage ?? `${categoryAssetSlug(category)}.png`;
+  const filename = imageName ?? categoryImage ?? `${categoryAssetSlug(category)}.webp`;
   return `/images/learn/${filename}`;
 }
 
