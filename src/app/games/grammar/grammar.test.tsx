@@ -254,6 +254,13 @@ describe("Grammar Reference Detail & Play UI", () => {
     expect(q.type).toBe("cloze");
     if (q.type !== "cloze") return;
 
+    // Pattern hint is blurred by default and reveals on click
+    const hintButton = screen.getByRole("button", { name: /Reveal pattern hint/i });
+    expect(hintButton).toBeTruthy();
+    expect(screen.getByText("Hint")).toBeTruthy();
+    fireEvent.click(hintButton);
+    expect(screen.getByTitle(/Click to hide pattern/i)).toBeTruthy();
+
     // Flag for review persists to localStorage
     const flagBtn = screen.getByRole("button", { name: "Flag for review" });
     fireEvent.click(flagBtn);

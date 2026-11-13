@@ -4,6 +4,7 @@ import {
   buildGrammarResult,
   createGrammarSession,
   createGrammarState,
+  generateDeceptiveGrammarFoils,
   grammarReducer,
 } from "./grammarSession";
 import { getGrammarDoc, getGrammarListByLevel } from "@/lib/content/grammar";
@@ -66,6 +67,25 @@ describe("Grammar Engine & MDX Content Reader", () => {
 
     const result = buildGrammarResult(state, 9000);
     expect(result.questions.every((r) => r.status === "correct")).toBe(true);
+  });
+
+  it("generates deceptive grammar foils with tense and pronunciation traps", () => {
+    const rng = createSeededRng("foil-test");
+    const toOmoimasuFoils = generateDeceptiveGrammarFoils("と思います", rng);
+    expect(toOmoimasuFoils).toContain("と思いました");
+    expect(toOmoimasuFoils).toContain("と思ました");
+
+    const tildeFoils = generateDeceptiveGrammarFoils("〜と思います", rng);
+    expect(tildeFoils).toContain("〜と思いました");
+    expect(tildeFoils).toContain("〜と思ました");
+
+    const dokohemoFoils = generateDeceptiveGrammarFoils("どこへも", rng);
+    expect(dokohemoFoils.some((f) => f === "どこにも" || f === "どこでも")).toBe(true);
+
+    const tenseFoils = generateDeceptiveGrammarFoils("食べました", rng);
+    expect(tenseFoils.some((f) => f === "食べます" || f === "食ました" || f === "食べませんでした")).toBe(
+      true
+    );
   });
 });
 

@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
-import { execFileSync } from "node:child_process";
+import { execFileSync, spawnSync } from "node:child_process";
 import dotenv from "dotenv";
 import ffmpeg from "fluent-ffmpeg";
 import OpenAI from "openai";
@@ -40,7 +40,48 @@ export const GEMINI_VOICE_NARRATOR = "Aoede";
 export const GEMINI_VOICE_FEMALE = "Kore";
 export const GEMINI_VOICE_MALE = "Charon";
 
-export type AudioProvider = "openai" | "edge" | "gemini";
+// VOICEVOX Configuration
+export const VOICEVOX_BASE_URL = (process.env.VOICEVOX_ENGINE_URL || "http://127.0.0.1:50021").trim();
+export const VOICEVOX_SPEAKER_NARRATOR = 30; // No.7 (アナウンス / Announcement)
+export const VOICEVOX_SPEAKER_FEMALE_DEFAULT = 2; // 四国めたん
+export const VOICEVOX_SPEAKER_MALE_DEFAULT = 11; // 玄野武宏
+
+// Multiple VOICEVOX speaker casting tailored to each exam scenario
+export const SCENE_VOICEVOX_SPEAKERS: Record<
+  string,
+  {
+    narrator?: number;
+    female?: number;
+    male?: number;
+  }
+> = {
+  // N5 Scenes
+  "n5-scene-bag-shelf": { narrator: 30, female: 2, male: 21 }, // 四国めたん & 剣崎雌雄
+  "n5-scene-sock-shop": { narrator: 30, female: 8, male: 11 }, // 春日部つむぎ & 玄野武宏
+  "n5-scene-bus-stop": { narrator: 30, female: 10, male: 13 }, // 雨晴はう & 青山龍星
+
+  // N4 Scenes
+  "n4-scene-hospital-gift": { narrator: 30, female: 2, male: 12 }, // 四国めたん & 白上虎太郎
+  "n4-scene-library-copier": { narrator: 30, female: 20, male: 21 }, // もち子さん & 剣崎雌雄
+  "n4-scene-meeting-room": { narrator: 30, female: 8, male: 11 }, // 春日部つむぎ & 玄野武宏
+
+  // N3 Scenes
+  "n3-scene-errands-before-movie": { narrator: 30, female: 20, male: 12 }, // もち子さん & 白上虎太郎
+  "n3-scene-welcome-trip-planning": { narrator: 30, female: 10, male: 21 }, // 雨晴はう & 剣崎雌雄
+  "n3-scene-house-check-before-leaving": { narrator: 30, female: 23, male: 13 }, // WhiteCUL & 青山龍星
+
+  // N2 Scenes
+  "n2-scene-cinema-family-tickets": { narrator: 30, female: 2, male: 11 }, // 四国めたん & 玄野武宏
+  "n2-scene-summer-seminar-planning": { narrator: 30, female: 14, male: 99 }, // 冥鳴ひまり & 離途
+  "n2-scene-overseas-business-trip-packing": { narrator: 30, female: 8, male: 13 }, // 春日部つむぎ & 青山龍星
+
+  // N1 Scenes
+  "n1-scene-restaurant-incident": { narrator: 30, female: 20, male: 11 }, // もち子さん & 玄野武宏
+  "n1-scene-internship-selection": { narrator: 30, female: 10, male: 99 }, // 雨晴はう & 離途
+  "n1-scene-printer-repair-documents": { narrator: 30, female: 23, male: 21 }, // WhiteCUL & 剣崎雌雄
+};
+
+export type AudioProvider = "openai" | "edge" | "gemini" | "voicevox";
 
 // Round-robin state trackers
 let currentModelIndex = 0;
@@ -72,9 +113,7 @@ export interface ValidatedScene {
  */
 export function resolveChimeFile(filename: string): string {
   const candidates = [
-    path.resolve(process.cwd(), "src/data/temp sound", filename),
-    path.resolve(process.cwd(), "src/data/temp_sound", filename),
-    path.resolve(process.cwd(), "public/audio/chimes", filename),
+    path.resolve(process.cwd(), "public/audio/sfx", filename),
     path.resolve(process.cwd(), "public/audio", filename),
     path.resolve(process.cwd(), filename),
   ];
@@ -206,6 +245,16 @@ export function getVoiceForLine(
   const gender = (line.voiceGender || "").toLowerCase();
   const speaker = (line.speaker || "").toUpperCase();
 
+  if (provider === "voicevox") {
+    if (gender === "male" || speaker === "M") {
+      return String(VOICEVOX_SPEAKER_MALE_DEFAULT);
+    }
+    if (gender === "female" || speaker === "F") {
+      return String(VOICEVOX_SPEAKER_FEMALE_DEFAULT);
+    }
+    return String(VOICEVOX_SPEAKER_NARRATOR);
+  }
+
   if (provider === "gemini") {
     if (gender === "male" || speaker === "M") {
       return GEMINI_VOICE_MALE;
@@ -227,6 +276,103 @@ export function getVoiceForLine(
     return VOICE_MALE;
   }
   return VOICE_NARRATOR;
+}
+
+/**
+ * Returns tailored VOICEVOX speaker ID for a scene dialogue line.
+ */
+export function getVoicevoxSpeakerForLine(sceneId: string, line: DialogueLine): number {
+  const sceneConfig = SCENE_VOICEVOX_SPEAKERS[sceneId] || {};
+  const gender = (line.voiceGender || "").toLowerCase();
+  const speaker = (line.speaker || "").toUpperCase();
+
+  if (gender === "narrator" || speaker === "NARRATOR" || speaker === "ANNOUNCER") {
+    return sceneConfig.narrator ?? VOICEVOX_SPEAKER_NARRATOR;
+  }
+  if (gender === "female" || speaker === "F" || speaker === "WOMAN") {
+    return sceneConfig.female ?? VOICEVOX_SPEAKER_FEMALE_DEFAULT;
+  }
+  if (gender === "male" || speaker === "M" || speaker === "MAN") {
+    return sceneConfig.male ?? VOICEVOX_SPEAKER_MALE_DEFAULT;
+  }
+  return sceneConfig.narrator ?? VOICEVOX_SPEAKER_NARRATOR;
+}
+
+/**
+ * Synthesizes a TTS clip using local VOICEVOX engine and encodes to MP3 via ffmpeg.
+ */
+export async function synthesizeVoicevoxClip(
+  text: string,
+  speakerId: number,
+  outPath: string,
+  baseUrl = VOICEVOX_BASE_URL,
+  speedScale = 0.96
+): Promise<void> {
+  fs.mkdirSync(path.dirname(outPath), { recursive: true });
+  const maxRetries = 3;
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const qRes = await fetch(
+        `${baseUrl}/audio_query?text=${encodeURIComponent(text)}&speaker=${speakerId}`,
+        { method: "POST" }
+      );
+      if (!qRes.ok) {
+        const errText = await qRes.text();
+        throw new Error(`VOICEVOX audio_query error ${qRes.status}: ${errText}`);
+      }
+      const query = (await qRes.json()) as Record<string, unknown>;
+      if (speedScale !== 1.0 && Number.isFinite(speedScale)) {
+        query.speedScale = speedScale;
+      }
+
+      const sRes = await fetch(`${baseUrl}/synthesis?speaker=${speakerId}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(query),
+      });
+      if (!sRes.ok) {
+        const errText = await sRes.text();
+        throw new Error(`VOICEVOX synthesis error ${sRes.status}: ${errText}`);
+      }
+      const wavBuffer = Buffer.from(await sRes.arrayBuffer());
+      if (wavBuffer.length === 0) {
+        throw new Error(`VOICEVOX returned empty audio for "${text}"`);
+      }
+
+      const ff = spawnSync(
+        "ffmpeg",
+        [
+          "-y",
+          "-f",
+          "wav",
+          "-i",
+          "pipe:0",
+          "-codec:a",
+          "libmp3lame",
+          "-b:a",
+          "128k",
+          "-ar",
+          "44100",
+          "-ac",
+          "2",
+          outPath,
+        ],
+        { input: wavBuffer }
+      );
+      if (ff.status !== 0) {
+        throw new Error(`ffmpeg transcode failed: ${ff.stderr?.toString() ?? "unknown error"}`);
+      }
+      if (!fs.existsSync(outPath) || fs.statSync(outPath).size === 0) {
+        throw new Error(`Generated empty MP3 file: ${outPath}`);
+      }
+      return;
+    } catch (err: unknown) {
+      if (attempt === maxRetries) {
+        throw err;
+      }
+      await new Promise((resolve) => setTimeout(resolve, 500 * attempt));
+    }
+  }
 }
 
 /**
@@ -425,6 +571,12 @@ export async function synthesizeTtsClip(
     return;
   }
 
+  if (provider === "voicevox") {
+    const speakerId = Number.parseInt(voice, 10) || VOICEVOX_SPEAKER_NARRATOR;
+    await synthesizeVoicevoxClip(text, speakerId, outPath);
+    return;
+  }
+
   if (provider === "gemini") {
     await synthesizeGeminiTtsClip(text, voice, outPath, geminiApiKeys);
     return;
@@ -555,9 +707,11 @@ export async function buildSceneAudio(
     return targetMp3;
   }
 
-  const provider = options.provider || "gemini";
+  const provider = options.provider || "voicevox";
   let narratorVoice: string;
-  if (provider === "gemini") {
+  if (provider === "voicevox") {
+    narratorVoice = String(SCENE_VOICEVOX_SPEAKERS[scene.id]?.narrator ?? VOICEVOX_SPEAKER_NARRATOR);
+  } else if (provider === "gemini") {
     narratorVoice = GEMINI_VOICE_NARRATOR;
   } else if (provider === "edge") {
     narratorVoice = EDGE_VOICE_NARRATOR;
@@ -590,7 +744,10 @@ export async function buildSceneAudio(
   const dialogueChunkPaths: string[] = [];
   for (let i = 0; i < scene.dialogueLines.length; i++) {
     const line = scene.dialogueLines[i];
-    const voice = getVoiceForLine(line, provider);
+    const voice =
+      provider === "voicevox"
+        ? String(getVoicevoxSpeakerForLine(scene.id, line))
+        : getVoiceForLine(line, provider);
     const lineChunkPath = path.join(sceneScratchDir, `chunk_07_dialogue_${i}.mp3`);
     await synthesizeTtsClip(options.openai, line.textJa, voice, lineChunkPath, options.dryRun, provider, options.geminiApiKeys);
     dialogueChunkPaths.push(lineChunkPath);
@@ -642,6 +799,7 @@ export async function buildSceneAudio(
   // Move final file to destination
   fs.copyFileSync(tempOutputFile, targetMp3);
   console.log(`[DONE] Scene "${scene.id}" (${(fs.statSync(targetMp3).size / 1024).toFixed(1)} KB) -> ${targetMp3}`);
+
   return targetMp3;
 }
 
@@ -729,6 +887,7 @@ export async function processListeningScenes(
 export async function main(): Promise<void> {
   const isDryRun = process.argv.includes("--dry-run");
   const force = process.argv.includes("--force");
+  const useVoicevoxExplicit = process.argv.includes("--voicevox");
   const useGeminiExplicit = process.argv.includes("--gemini");
   const useOpenAiExplicit = process.argv.includes("--openai");
   const useEdgeExplicit = process.argv.includes("--edge");
@@ -748,14 +907,19 @@ export async function main(): Promise<void> {
 
   const openAiApiKey = (process.env.OPENAI_API_KEY || "").trim();
 
-  // Provider resolution:
-  let provider: AudioProvider = "edge";
-  if (useGeminiExplicit || (geminiApiKeys.length > 0 && !useEdgeExplicit && !useOpenAiExplicit)) {
+  // Provider resolution: default to voicevox if explicitly requested or default
+  let provider: AudioProvider = "voicevox";
+  if (useVoicevoxExplicit) {
+    provider = "voicevox";
+  } else if (useGeminiExplicit) {
     provider = "gemini";
   } else if (useOpenAiExplicit) {
     provider = "openai";
-  } else {
+  } else if (useEdgeExplicit) {
     provider = "edge";
+  } else {
+    // Default to VOICEVOX if engine available, or fallback to gemini/edge
+    provider = "voicevox";
   }
 
   console.log("=== JLPT Listening Scene Audio Builder ===");
@@ -764,7 +928,11 @@ export async function main(): Promise<void> {
   console.log(`Scratch Root:      ${SCRATCH_ROOT}`);
   console.log(`TTS Provider:      ${provider.toUpperCase()}`);
 
-  if (provider === "gemini") {
+  if (provider === "voicevox") {
+    console.log(`Engine URL:        ${VOICEVOX_BASE_URL}`);
+    console.log(`Narrator Speaker:  No.7 アナウンス (ID: ${VOICEVOX_SPEAKER_NARRATOR})`);
+    console.log(`Multi-Speaker:     Scene-tailored casting (四国めたん, 春日部つむぎ, 雨晴はう, もち子さん, WhiteCUL, 冥鳴ひまり, 玄野武宏, 剣崎雌雄, 青山龍星, 白上虎太郎, 離途)`);
+  } else if (provider === "gemini") {
     console.log(`Model Pool:        ${GEMINI_MODELS.join(", ")}`);
     console.log(`Active API Keys:   ${geminiApiKeys.length}`);
     console.log(`Voice (Narrator):  ${GEMINI_VOICE_NARRATOR} (Aoede)`);
@@ -785,6 +953,23 @@ export async function main(): Promise<void> {
   }
   if (isDryRun) {
     console.log(`Mode:              DRY RUN (synthetic validation audio)`);
+  }
+
+  if (provider === "voicevox" && !isDryRun) {
+    try {
+      const ping = await fetch(`${VOICEVOX_BASE_URL}/version`);
+      if (!ping.ok) {
+        throw new Error(`HTTP ${ping.status}`);
+      }
+      const version = await ping.json();
+      console.log(`VOICEVOX Engine:   v${version} (Connected)`);
+    } catch (vvErr: unknown) {
+      console.error("================================================================================");
+      console.error(`ERROR: Cannot connect to VOICEVOX engine at ${VOICEVOX_BASE_URL}`);
+      console.error("Please ensure the VOICEVOX engine is running on port 50021.");
+      console.error("================================================================================");
+      process.exit(1);
+    }
   }
 
   if (provider === "gemini" && !isDryRun && geminiApiKeys.length === 0) {

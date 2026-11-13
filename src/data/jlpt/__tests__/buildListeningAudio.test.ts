@@ -17,8 +17,8 @@ import {
 } from "../../../../scripts/build-listening-audio";
 
 describe("JLPT Listening Audio Builder Verification", () => {
-  const dummyFirstChime = path.resolve(process.cwd(), "src/data/temp sound/first_chime.mp3");
-  const dummySecondChime = path.resolve(process.cwd(), "src/data/temp sound/second_chime.mp3");
+  const dummyFirstChime = path.resolve(process.cwd(), "public/audio/sfx/first_chime.mp3");
+  const dummySecondChime = path.resolve(process.cwd(), "public/audio/sfx/second_chime.mp3");
 
   describe("Dataset Validation & Schema Integrity", () => {
     it("loads and validates all 15 listening scenes across JLPT N5–N1", () => {

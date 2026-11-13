@@ -3,7 +3,7 @@
 import { Suspense, useCallback, useEffect, useReducer, useRef, useState } from "react";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
-import { BookOpen, Check, Flag, Layers, PenLine, RotateCcw, Sparkles, X } from "lucide-react";
+import { BookOpen, Check, Flag, Layers, Lightbulb, PenLine, RotateCcw, Sparkles, X } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import { getGameResult, getGameSession, saveGameResult } from "@/lib/game-core/storage";
@@ -127,6 +127,7 @@ function GrammarGame({
   // Scramble state: array of pool indices currently placed in the dropzone
   const [selectedPoolIndices, setSelectedPoolIndices] = useState<number[]>([]);
   const [showLiteralHint, setShowLiteralHint] = useState(false);
+  const [patternRevealed, setPatternRevealed] = useState(false);
   const [autoPlayExamples, setAutoPlayExamples] = useState(false);
   const [flaggedIds, setFlaggedIds] = useState<Set<string>>(() => new Set());
   const { playSentence } = useJapaneseAudio();
@@ -150,6 +151,7 @@ function GrammarGame({
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setSelectedPoolIndices([]);
     setShowLiteralHint(false);
+    setPatternRevealed(false);
     setDrawerOpen(false);
     setGuideDoc(null);
   }, [state.index]);
@@ -398,9 +400,38 @@ function GrammarGame({
                     )}
                     {question.type === "cloze" ? "Sentence Cloze" : "Syntax Scramble"}
                   </span>
-                  <span className="rounded-full border border-[var(--line)] bg-[var(--paper-tint)] px-3 py-0.5 text-xs font-semibold text-[var(--ink)]">
-                    Pattern: <strong className="font-japanese text-[var(--primary)]">{question.grammarPattern}</strong>
-                  </span>
+                  {answered || patternRevealed ? (
+                    <button
+                      type="button"
+                      onClick={() => !answered && setPatternRevealed(false)}
+                      title={answered ? "Target grammar pattern" : "Click to hide pattern"}
+                      className={`inline-flex items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--paper-tint)] px-3 py-0.5 text-xs font-semibold text-[var(--ink)] ${
+                        answered ? "cursor-default" : "cursor-pointer hover:border-[var(--primary)]/60"
+                      }`}
+                    >
+                      <span className="text-[var(--muted)]">Pattern:</span>
+                      <strong className="font-japanese text-[var(--primary)]">
+                        {question.grammarPattern}
+                      </strong>
+                    </button>
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={() => setPatternRevealed(true)}
+                      title="Pattern hidden to avoid giving away the answer. Click to reveal hint."
+                      aria-label="Reveal pattern hint"
+                      className="group inline-flex items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--paper-tint)] px-3 py-0.5 text-xs font-semibold text-[var(--ink)] transition-colors hover:border-[var(--primary)] cursor-pointer"
+                    >
+                      <span className="text-[var(--muted)]">Pattern:</span>
+                      <span className="font-japanese text-[var(--primary)] select-none blur-[4.5px] transition-all group-hover:blur-[2.5px]">
+                        {question.grammarPattern}
+                      </span>
+                      <span className="inline-flex items-center gap-1 rounded-full bg-[var(--primary)]/10 px-1.5 py-0.2 text-[10px] font-bold text-[var(--primary)] group-hover:bg-[var(--primary)] group-hover:text-white transition-colors">
+                        <Lightbulb className="size-3" aria-hidden="true" />
+                        Hint
+                      </span>
+                    </button>
+                  )}
                 </div>
 
                 <button
