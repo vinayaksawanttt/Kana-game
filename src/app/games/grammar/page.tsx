@@ -180,8 +180,8 @@ export default function GrammarSetupPage() {
         </Link>
       }
     >
-      <section className="mx-auto flex w-full max-w-6xl flex-1 items-center justify-center px-4 py-6 sm:px-8 sm:py-8">
-        <div className="grid w-full gap-5 lg:grid-cols-[minmax(0,1fr)_340px] lg:items-start">
+      <section className="mx-auto flex w-full max-w-5xl flex-1 items-center justify-center px-4 py-6 sm:px-6 sm:py-8">
+        <div className="my-auto grid w-full gap-5 lg:grid-cols-[minmax(0,1fr)_340px] lg:items-start">
           <div className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-6">
             <div className="mb-5 flex flex-wrap items-start justify-between gap-3 border-b border-[var(--line)] pb-4">
               <div>

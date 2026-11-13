@@ -53,7 +53,7 @@ export function LearnGuideCover({
           }}
           onLoad={() => setStatus("loaded")}
           onError={() => setStatus("error")}
-          className={`relative z-10 h-full w-auto max-w-full object-contain p-4 transition-opacity duration-500 motion-reduce:transition-none ${className} ${
+          className={`relative z-10 h-full max-h-full w-auto max-w-full object-contain transition-opacity duration-500 motion-reduce:transition-none ${className} ${
             status === "loaded" ? "opacity-100" : "opacity-0"
           }`}
         />

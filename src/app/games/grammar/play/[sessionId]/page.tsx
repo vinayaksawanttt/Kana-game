@@ -420,13 +420,13 @@ function GrammarGame({
                       onClick={() => setPatternRevealed(true)}
                       title="Pattern hidden to avoid giving away the answer. Click to reveal hint."
                       aria-label="Reveal pattern hint"
-                      className="group inline-flex items-center gap-1.5 rounded-full border border-[var(--line)] bg-[var(--paper-tint)] px-3 py-0.5 text-xs font-semibold text-[var(--ink)] transition-colors hover:border-[var(--primary)] cursor-pointer"
+                      className="group inline-flex items-center gap-1.5 rounded-full border border-dashed border-[var(--primary)]/40 bg-[var(--sakura-light)]/40 px-3 py-0.5 text-xs font-semibold text-[var(--ink)] transition-colors hover:border-[var(--primary)] hover:bg-[var(--sakura-light)] cursor-pointer"
                     >
                       <span className="text-[var(--muted)]">Pattern:</span>
-                      <span className="font-japanese text-[var(--primary)] select-none blur-[4.5px] transition-all group-hover:blur-[2.5px]">
+                      <span className="font-japanese text-[var(--primary)] select-none blur-[6px] filter transition-all">
                         {question.grammarPattern}
                       </span>
-                      <span className="inline-flex items-center gap-1 rounded-full bg-[var(--primary)]/10 px-1.5 py-0.2 text-[10px] font-bold text-[var(--primary)] group-hover:bg-[var(--primary)] group-hover:text-white transition-colors">
+                      <span className="inline-flex items-center gap-1 rounded-full bg-[var(--primary)] px-2 py-0.5 text-[10px] font-bold text-white shadow-2xs">
                         <Lightbulb className="size-3" aria-hidden="true" />
                         Hint
                       </span>

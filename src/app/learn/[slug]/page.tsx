@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ArrowLeft, Clock, BookOpen } from "lucide-react";
 import { LearnHeader } from "@/components/learn/LearnHeader";
 import { MdxComponents } from "@/components/learn/MdxComponents";
 import { PrintButton } from "@/components/learn/PrintButton";
@@ -107,6 +108,8 @@ async function LearnDocumentContent({
           ? "/games/vocabulary"
           : null;
   const { intro, sections } = splitLearnContent(doc.content);
+  const wordCount = doc.content.split(/\s+/).length;
+  const readTimeMinutes = Math.max(2, Math.round(wordCount / 180));
 
   return (
     <>
@@ -118,14 +121,19 @@ async function LearnDocumentContent({
         <div className="flex flex-wrap items-center gap-2 text-sm">
           <Link
             href="/learn"
-            className="font-semibold text-[var(--primary-fg)] hover:underline"
+            className="inline-flex items-center gap-1.5 font-bold text-[var(--primary)] hover:underline"
           >
-            ← Back to Learning Hub
+            <ArrowLeft className="size-4" aria-hidden="true" />
+            <span>Back to Learning Hub</span>
           </Link>
           <span className="text-[var(--muted)]">/</span>
-          <span className="text-[var(--muted)]">{doc.frontmatter.category}</span>
+          <span className="font-medium text-[var(--muted)]">{doc.frontmatter.category}</span>
         </div>
         <div className="flex items-center gap-3">
+          <span className="inline-flex items-center gap-1 text-xs font-semibold text-[var(--muted)]">
+            <Clock className="size-3.5" aria-hidden="true" />
+            ~{readTimeMinutes} min read
+          </span>
           <span className="inline-flex shrink-0 items-center justify-center rounded-full bg-[var(--primary)] px-2.5 py-0.5 text-[11px] font-bold tracking-wide text-white shadow-xs whitespace-nowrap">
             {doc.frontmatter.jlpt}
           </span>
@@ -134,28 +142,46 @@ async function LearnDocumentContent({
       </div>
 
       <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,1fr)_280px]">
-        <article id="learn-reading-content" className="min-w-0 space-y-6">
-          <header className="relative overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-sm sm:p-8">
+        <article id="learn-reading-content" className="min-w-0 space-y-7">
+          <header className="relative overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-xs sm:p-8">
             <span className="absolute inset-x-0 top-0 h-1 bg-[var(--sakura)]" aria-hidden="true" />
             <div className="flex flex-wrap items-center gap-2">
-              <span className="rounded-full bg-[var(--sakura-light)] px-3 py-1 text-[10px] font-extrabold uppercase tracking-wide text-[var(--primary-fg)]">
+              <span className="rounded-full bg-[var(--sakura-light)] px-3 py-1 text-[10px] font-extrabold uppercase tracking-wide text-[var(--primary)]">
                 {doc.frontmatter.category}
               </span>
               <span className="inline-flex shrink-0 items-center justify-center rounded-full bg-[var(--primary)] px-2.5 py-0.5 text-[10px] font-bold tracking-wide text-white shadow-xs whitespace-nowrap">
                 {doc.frontmatter.jlpt}
               </span>
+              <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-[var(--muted)] ml-auto">
+                <BookOpen className="size-3" aria-hidden="true" />
+                Study Cheatsheet
+              </span>
             </div>
-            <h1 className="mt-4 text-2xl font-extrabold leading-tight sm:text-3xl">{doc.frontmatter.title}</h1>
+            <h1 className="mt-4 text-2xl font-extrabold leading-tight text-[var(--ink)] sm:text-3xl">
+              {doc.frontmatter.title}
+            </h1>
             {doc.frontmatter.summary && (
-              <p className="mb-0 mt-3 text-sm leading-relaxed text-[var(--muted)]">{doc.frontmatter.summary}</p>
+              <p className="mb-0 mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
+                {doc.frontmatter.summary}
+              </p>
             )}
-            {intro && <div className="mt-3 border-t border-[var(--line)] pt-2"><MdxComponents source={intro} /></div>}
+            {intro && (
+              <div className="mt-4 border-t border-[var(--line)] pt-3">
+                <MdxComponents source={intro} />
+              </div>
+            )}
           </header>
           {sections.map((section, index) => (
-            <section key={`${doc.headings.filter((heading) => heading.level === 2)[index]?.id ?? index}`} className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-sm sm:p-8">
+            <section
+              key={`${doc.headings.filter((heading) => heading.level === 2)[index]?.id ?? index}`}
+              className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-xs transition-colors sm:p-8"
+            >
               <MdxComponents source={section.lead} />
               {section.subsections.map((subsection, subsectionIndex) => (
-                <div key={subsectionIndex} className="my-4 rounded-xl border border-[var(--line)] bg-[var(--bg)]/60 p-4 sm:p-5">
+                <div
+                  key={subsectionIndex}
+                  className="my-5 rounded-xl border border-[var(--line)] bg-[var(--paper-tint)]/60 p-4 sm:p-6"
+                >
                   <MdxComponents source={subsection} />
                 </div>
               ))}

@@ -134,24 +134,24 @@ export const mdxComponents = {
   blockquote: (props: ComponentPropsWithoutRef<"blockquote">) => (
     <blockquote
       {...props}
-      className="my-5 rounded-r-xl border-l-4 border-[var(--primary)] bg-[var(--sakura-light)] px-4 py-2 text-[var(--ink)]"
+      className="my-5 rounded-r-2xl border-l-4 border-[var(--primary)] bg-[var(--sakura-light)]/60 px-5 py-3.5 text-sm leading-relaxed text-[var(--ink)] shadow-xs"
     />
   ),
   table: ({ children, ...props }: ComponentPropsWithoutRef<"table">) => (
-    <div className="my-5 overflow-x-auto rounded-xl border border-[var(--line)] bg-[var(--surface)]">
+    <div className="my-6 w-full overflow-x-auto rounded-2xl border border-[var(--line)] bg-[var(--surface)] shadow-[0_4px_20px_rgba(0,0,0,0.02)]">
       <table {...props} className="w-full min-w-[560px] border-collapse text-left text-sm">
         {children}
       </table>
     </div>
   ),
   thead: (props: ComponentPropsWithoutRef<"thead">) => (
-    <thead {...props} className="bg-[var(--sakura-light)] text-[var(--ink)]" />
+    <thead {...props} className="border-b border-[var(--line)] bg-[var(--sakura-light)]/80 text-[var(--ink)]" />
   ),
   th: (props: ComponentPropsWithoutRef<"th">) => (
-    <th {...props} className="border-b border-[var(--line)] px-3 py-2.5 font-bold" />
+    <th {...props} className="px-4 py-3 text-xs font-bold uppercase tracking-wider text-[var(--ink)]" />
   ),
   td: ({ children, ...props }: ComponentPropsWithoutRef<"td">) => (
-    <td {...props} className="border-t border-[var(--line)] px-3 py-2.5 align-top">
+    <td {...props} className="border-t border-[var(--line)] px-4 py-3 align-top leading-relaxed">
       {children}
       {!containsComponent(children, AudioParagraph) && (
         <JapaneseExampleAudio>{children}</JapaneseExampleAudio>
@@ -159,7 +159,7 @@ export const mdxComponents = {
     </td>
   ),
   tr: (props: ComponentPropsWithoutRef<"tr">) => (
-    <tr {...props} className="odd:bg-[var(--surface)] even:bg-[var(--bg)]" />
+    <tr {...props} className="odd:bg-[var(--surface)] even:bg-[var(--bg)]/40 hover:bg-[var(--sakura-light)]/20 transition-colors" />
   ),
   code: ({ className, ...props }: ComponentPropsWithoutRef<"code">) => (
     <code
@@ -201,11 +201,47 @@ export const mdxComponents = {
   KanjiReadingPill: (props: React.ComponentProps<typeof KanjiReadingPill>) => <KanjiReadingPill {...props} />,
 };
 
+export function cleanMarkdownSource(text: string): string {
+  return text
+    .replace(/\$\$\s*\\frac\{([^}]+)\}\{([^}]+)\}\s*\\implies\s*\\?\[?([^\]]+)\\?\]?\s*\\text\{\s*分の\s*\}\s*\\?\[?([^\]]+)\\?\]?\s*\$\$/g, "**[$2] 分の [$1]**")
+    .replace(/\\frac\{([^}]+)\}\{([^}]+)\}/g, "$1/$2")
+    .replace(/\$\$\s*1,000\s*\\quad\s*1,000,000\s*\\quad\s*1,000,000,000\s*\$\$/g, "**1,000** (千) · **1,000,000** (百万) · **1,000,000,000** (十億)")
+    .replace(/\$\$10\^4\s*=\s*\\text\{万\}\s*\(man\)\s*\\qquad\s*10\^8\s*=\s*\\text\{億\}\s*\(oku\)\s*\\qquad\s*10\^\{12\}\s*=\s*\\text\{兆\}\s*\(chō\)\$\$/g, "**10⁴ = 万 (man)** | **10⁸ = 億 (oku)** | **10¹² = 兆 (chō)**")
+    .replace(/\$\$\s*\\text\{K\}\s*\\rightarrow\s*\\mathbf\{G\}\s*\\qquad\s*\\text\{S\}\s*\\rightarrow\s*\\mathbf\{Z\s*\/\s*J\}\s*\\qquad\s*\\text\{T\}\s*\\rightarrow\s*\\mathbf\{D\s*\/\s*J\s*\/\s*Z\}\s*\\qquad\s*\\text\{H\}\s*\\rightarrow\s*\\mathbf\{B\}\s*\$\$/g, "**K → G** · **S → Z / J** · **T → D / J / Z** · **H → B**")
+    .replace(/\$\$\s*\\text\{H\}\s*\\rightarrow\s*\\mathbf\{P\}\s*\$\$/g, "**H → P**")
+    .replace(/\$\s*\\text\{Reiwa Year\}\s*=\s*\\text\{Western Year\}\s*-\s*2018\s*\$/g, "Reiwa Year = Western Year - 2018")
+    .replace(/\$\s*2026\s*-\s*2018\s*=\s*\\text\{([^}]+)\}\s*\$/g, "2026 - 2018 = $1")
+    .replace(/\$\s*2\s*\\times\s*2\s*\$/g, "2 × 2")
+    .replace(/\$\s*10\^3\s*=\s*1,000\s*\$/g, "10³ = 1,000")
+    .replace(/\$\s*10\^4\s*=\s*10,000\s*\$/g, "10⁴ = 10,000")
+    .replace(/\$\s*10\^8\s*\$/g, "10⁸")
+    .replace(/\$\s*10\^\{12\}\s*\$/g, "10¹²")
+    .replace(/\$\s*1\/10\s*\$/g, "1/10")
+    .replace(/\$\s*1\/100\s*\$/g, "1/100")
+    .replace(/\$\s*1\/1000\s*\$/g, "1/1000")
+    .replace(/\$\s*\\longleftrightarrow\s*\$/g, "↔")
+    .replace(/\$\s*\\leftrightarrow\s*\$/g, "↔")
+    .replace(/\$\s*\\rightarrow\s*\$/g, "→")
+    .replace(/\$\s*\\implies\s*\$/g, "⇒")
+    .replace(/\$\s*\\ge\s*\$/g, "≥")
+    .replace(/\$\s*\\le\s*\$/g, "≤")
+    .replace(/\$\s*\\times\s*\$/g, "×")
+    .replace(/\$\s*\\approx\s*\$/g, "≈")
+    .replace(/\$\s*a,\s*i,\s*u,\s*e,\s*o\s*\$/g, "a, i, u, e, o")
+    .replace(/\$\s*g,\s*z,\s*d,\s*b\s*\$/g, "g, z, d, b")
+    .replace(/\$\s*k\s*\\rightarrow\s*g\s*\\qquad\s*s\s*\\rightarrow\s*z\s*\\qquad\s*t\s*\\rightarrow\s*d\s*\\qquad\s*h\s*\\rightarrow\s*b\s*\$/g, "k → g · s → z · t → d · h → b")
+    .replace(/\\text\{([^}]+)\}/g, "$1")
+    .replace(/\\mathbf\{([^}]+)\}/g, "$1")
+    .replace(/\\qquad/g, "   ")
+    .replace(/\\quad/g, " ");
+}
+
 export function MdxComponents({ source }: { source: string }) {
+  const cleaned = cleanMarkdownSource(source);
   return (
     <div className="learn-mdx">
       <MDXRemote
-        source={source}
+        source={cleaned}
         options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
         components={mdxComponents}
       />
