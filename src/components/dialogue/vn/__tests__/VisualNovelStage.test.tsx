@@ -215,6 +215,58 @@ describe("Visual Novel Architecture & Components", () => {
     ).toBeUndefined();
   });
 
+  it("resolves background ambient soundscape Opus and MP3 fallback sources", async () => {
+    const { getScenarioAmbientAudioSources, getScenarioAmbientAudioUrl } = await import(
+      "@/data/dialogue/assets"
+    );
+    expect(getScenarioAmbientAudioUrl("directions-mcdonalds")).toBe(
+      "/assets/dialogue-quest/directions-mcdonalds/sfx/ambience.opus"
+    );
+    expect(getScenarioAmbientAudioSources("directions-mcdonalds")).toEqual({
+      opus: "/assets/dialogue-quest/directions-mcdonalds/sfx/ambience.opus",
+      mp3: "/assets/dialogue-quest/directions-mcdonalds/sfx/ambience.mp3",
+    });
+    expect(getScenarioAmbientAudioSources("client-apology-delay")).toEqual({
+      opus: "/assets/dialogue-quest/client-apology-delay/sfx/ambience.opus",
+      mp3: "/assets/dialogue-quest/client-apology-delay/sfx/ambience.mp3",
+    });
+  });
+
+  it("resolves client-apology-delay multi-character sprites, backgrounds, SFX, and dialogue audio", async () => {
+    const {
+      getScenarioBackgroundUrl,
+      getScenarioCharacterSpriteUrl,
+      getScenarioSfxUrl,
+      getScenarioDialogueAudioUrl,
+      getScenarioChoiceAudioUrl,
+    } = await import("@/data/dialogue/assets");
+
+    expect(getScenarioBackgroundUrl("client-apology-delay", "client-lobby-rain")).toBe(
+      "/assets/dialogue-quest/client-apology-delay/backgrounds/client-lobby-rain.webp"
+    );
+    expect(getScenarioBackgroundUrl("client-apology-delay", "executive-meeting-room")).toBe(
+      "/assets/dialogue-quest/client-apology-delay/backgrounds/executive-meeting-room.webp"
+    );
+    expect(getScenarioCharacterSpriteUrl("client-apology-delay", "neutral", "yoshimura")).toBe(
+      "/assets/dialogue-quest/client-apology-delay/characters/yoshimura/neutral.webp"
+    );
+    expect(getScenarioCharacterSpriteUrl("client-apology-delay", "worried", "saito")).toBe(
+      "/assets/dialogue-quest/client-apology-delay/characters/saito/worried.webp"
+    );
+    expect(getScenarioCharacterSpriteUrl("client-apology-delay", "stern", "hasegawa")).toBe(
+      "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/stern.webp"
+    );
+    expect(getScenarioSfxUrl("client-apology-delay", "stern", "hasegawa")).toBe(
+      "/assets/dialogue-quest/client-apology-delay/sfx/hasegawa-stern.opus"
+    );
+    expect(getScenarioDialogueAudioUrl("client-apology-delay", "client-node-1-lobby")).toBe(
+      "/assets/dialogue-quest/client-apology-delay/dialogue/client-node-1-lobby.opus"
+    );
+    expect(getScenarioChoiceAudioUrl("client-apology-delay", "ca1-respectful-greeting")).toBe(
+      "/assets/dialogue-quest/client-apology-delay/choices/ca1-respectful-greeting.opus"
+    );
+  });
+
   it("opens and closes the dialogue backlog drawer from the HUD button", () => {
     const node = DIRECTIONS_NODES["node-1-initiation"]!;
 

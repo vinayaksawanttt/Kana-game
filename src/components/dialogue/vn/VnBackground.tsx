@@ -17,6 +17,8 @@ const THEME_GRADIENTS: Record<string, string> = {
   store: "from-orange-900/25 via-slate-900/35 to-slate-950/70",
   apartment: "from-rose-900/20 via-slate-900/35 to-slate-950/70",
   countryside: "from-lime-900/25 via-emerald-950/40 to-slate-950/70",
+  cafe: "from-amber-950/35 via-stone-900/40 to-slate-950/75",
+  civic: "from-sky-900/25 via-slate-900/35 to-slate-950/75",
 };
 
 export const VnBackground: React.FC<VnBackgroundProps> = ({

@@ -7,6 +7,7 @@ import { getScenarioCharacterSpriteUrl } from "@/data/dialogue/assets";
 interface VnCharacterSpriteProps {
   scenarioId: string;
   characterName: string;
+  characterKey?: string;
   expression?: string;
   isSpeaking?: boolean;
   fallbackAvatar?: string;
@@ -15,12 +16,13 @@ interface VnCharacterSpriteProps {
 export const VnCharacterSprite: React.FC<VnCharacterSpriteProps> = ({
   scenarioId,
   characterName,
+  characterKey,
   expression = "neutral",
   isSpeaking = false,
   fallbackAvatar = "👤",
 }) => {
   const normExpr = expression.toLowerCase();
-  const spriteUrl = getScenarioCharacterSpriteUrl(scenarioId, normExpr);
+  const spriteUrl = getScenarioCharacterSpriteUrl(scenarioId, normExpr, characterKey);
 
   // Detect negative / startled expressions that trigger emotional effects
   const isShakeEmotion = useMemo(() => {

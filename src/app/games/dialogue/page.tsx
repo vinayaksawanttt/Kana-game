@@ -30,12 +30,16 @@ const FALLBACK_STAGE_GRADIENTS: Record<string, string> = {
   store: "from-orange-900/60 via-slate-900 to-slate-950",
   apartment: "from-rose-900/60 via-slate-900 to-slate-950",
   countryside: "from-emerald-900/60 via-slate-900 to-slate-950",
+  cafe: "from-amber-950/60 via-stone-900 to-slate-950",
+  civic: "from-cyan-900/60 via-slate-900 to-slate-950",
 };
 
 const LEVEL_BADGE_STYLES: Record<string, string> = {
   N5: "border-emerald-400/50 bg-emerald-500/20 text-emerald-200",
   N4: "border-sky-400/50 bg-sky-500/20 text-sky-200",
   N3: "border-amber-400/50 bg-amber-500/20 text-amber-200",
+  N2: "border-violet-400/50 bg-violet-500/20 text-violet-200",
+  N1: "border-rose-400/50 bg-rose-500/20 text-rose-200",
 };
 
 function getHoverExpression(scenarioId: string): string {
@@ -362,7 +366,7 @@ function VnVerticalStoryCard({ scenario, episodeNumber }: VnStoryCardProps) {
 }
 
 export default function DialogueHubPage() {
-  const [selectedLevel, setSelectedLevel] = useState<"ALL" | "N5" | "N4" | "N3">("ALL");
+  const [selectedLevel, setSelectedLevel] = useState<"ALL" | "N5" | "N4" | "N3" | "N2" | "N1">("ALL");
   const { stopAudio } = useJapaneseAudio();
 
   useEffect(() => {
@@ -395,7 +399,7 @@ export default function DialogueHubPage() {
                   Visual Novel Roleplay · 会話シミュレーション
                 </span>
                 <span className="rounded-full bg-[var(--correct)]/15 px-3 py-1 text-[11px] font-bold text-[var(--correct)]">
-                  {DIALOGUE_SCENARIOS.length} Episodes · JLPT N5–N3
+                  {DIALOGUE_SCENARIOS.length} Episodes · JLPT N5–N1
                 </span>
               </div>
               <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
@@ -412,7 +416,7 @@ export default function DialogueHubPage() {
               role="group"
               aria-label="Filter scenarios by JLPT level"
             >
-              {(["ALL", "N5", "N4", "N3"] as const).map((lvl) => {
+              {(["ALL", "N5", "N4", "N3", "N2", "N1"] as const).map((lvl) => {
                 const active = selectedLevel === lvl;
                 return (
                   <button

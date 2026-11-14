@@ -12,6 +12,7 @@ import { VnBacklogDrawer, DialogueLogEntry } from "./VnBacklogDrawer";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
 import { useGameSfx } from "@/hooks/useGameSfx";
 import {
+  getScenarioAmbientAudioSources,
   getScenarioAmbientAudioUrl,
   getScenarioChoiceAudioUrl,
   getScenarioDialogueAudioUrl,
@@ -141,28 +142,71 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
       return;
     }
 
-    const ambientUrl = getScenarioAmbientAudioUrl(scenario.id);
-    const audio = new Audio(ambientUrl);
+    const sources = getScenarioAmbientAudioSources(scenario.id);
+    const canPlayOpus = Boolean(
+      probe.canPlayType &&
+      (probe.canPlayType('audio/ogg; codecs="opus"') ||
+        probe.canPlayType("audio/ogg") ||
+        probe.canPlayType("audio/webm"))
+    );
+    const primarySrc = canPlayOpus ? sources.opus : sources.mp3;
+    const fallbackSrc = sources.mp3;
+
+    const audio = new Audio(primarySrc);
     audio.loop = true;
-    audio.volume = 0.15;
+    audio.volume = isPlaying ? 0.18 : 0.35;
     ambientAudioRef.current = audio;
+
+    // Safari / WebKit codec fallback on error: automatically switch to MP3
+    const handleAudioError = () => {
+      if (audio.src && !audio.src.endsWith(".mp3")) {
+        audio.src = fallbackSrc;
+        audio.load();
+        audio.play().catch(() => {});
+      }
+    };
+    audio.addEventListener("error", handleAudioError);
+
+    let interactionListenersAttached = false;
+    const removeInteractionListeners = () => {
+      if (!interactionListenersAttached) return;
+      interactionListenersAttached = false;
+      window.removeEventListener("pointerdown", tryStartAmbient);
+      window.removeEventListener("touchstart", tryStartAmbient);
+      window.removeEventListener("click", tryStartAmbient);
+      window.removeEventListener("keydown", tryStartAmbient);
+    };
+
+    const attachInteractionListeners = () => {
+      if (interactionListenersAttached) return;
+      interactionListenersAttached = true;
+      window.addEventListener("pointerdown", tryStartAmbient, { passive: true });
+      window.addEventListener("touchstart", tryStartAmbient, { passive: true });
+      window.addEventListener("click", tryStartAmbient, { passive: true });
+      window.addEventListener("keydown", tryStartAmbient, { passive: true });
+    };
 
     const tryStartAmbient = () => {
       if (ambientAudioRef.current && ambientAudioRef.current.paused && sfxEnabled && !isFinished) {
         const p = ambientAudioRef.current.play();
-        if (p && typeof p.catch === "function") {
-          p.catch(() => {});
+        if (p && typeof p.then === "function") {
+          p.then(() => {
+            removeInteractionListeners();
+          }).catch(() => {
+            attachInteractionListeners();
+          });
         }
       }
     };
 
+    audio.addEventListener("playing", removeInteractionListeners);
     tryStartAmbient();
-    window.addEventListener("pointerdown", tryStartAmbient, { once: true });
-    window.addEventListener("keydown", tryStartAmbient, { once: true });
+    attachInteractionListeners();
 
     return () => {
-      window.removeEventListener("pointerdown", tryStartAmbient);
-      window.removeEventListener("keydown", tryStartAmbient);
+      removeInteractionListeners();
+      audio.removeEventListener("playing", removeInteractionListeners);
+      audio.removeEventListener("error", handleAudioError);
       audio.pause();
       audio.src = "";
       if (ambientAudioRef.current === audio) {
@@ -171,23 +215,18 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
     };
   }, [scenario.id, sfxEnabled, isFinished]);
 
-  // Stop all dialogue/SFX/ambient audio immediately when leaving the scene
+  // Stop dialogue/SFX audio immediately when leaving the scene
   useEffect(() => {
     return () => {
       stopAudio?.();
       stopScenarioSfx();
-      if (ambientAudioRef.current) {
-        ambientAudioRef.current.pause();
-        ambientAudioRef.current.src = "";
-        ambientAudioRef.current = null;
-      }
     };
   }, [stopAudio]);
 
   // Duck background ambient volume while dialogue voice is speaking so voice is never overpowered
   useEffect(() => {
     if (!ambientAudioRef.current) return;
-    ambientAudioRef.current.volume = isPlaying ? 0.06 : 0.15;
+    ambientAudioRef.current.volume = isPlaying ? 0.18 : 0.35;
   }, [isPlaying]);
 
   // Auto-play dialogue voice when entering new dialogue node (including final farewell / awkward / failure nodes!)
@@ -227,16 +266,26 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
     }
 
     const timer = setTimeout(() => {
-      playScenarioSfx(scenario.id, currentNode.expression!, 0.75);
+      playScenarioSfx(scenario.id, currentNode.expression!, 0.75, currentNode.characterKey);
     }, 150);
 
     return () => clearTimeout(timer);
-  }, [currentNode.id, currentNode.expression, autoPlayAudio, scenario.id, scenario.initialNodeId]);
+  }, [
+    currentNode.id,
+    currentNode.expression,
+    currentNode.characterKey,
+    autoPlayAudio,
+    scenario.id,
+    scenario.initialNodeId,
+  ]);
 
   const handleSelectChoiceInternal = useCallback(
     (choice: DialogueChoice) => {
       stopAudio?.();
       stopScenarioSfx();
+      if (ambientAudioRef.current?.paused && sfxEnabled && !isFinished) {
+        ambientAudioRef.current.play().catch(() => {});
+      }
 
       // Record player choice in backlog
       setBacklogHistory((prev) => [
@@ -256,20 +305,26 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
       playScenarioSfx(scenario.id, "atmosphere-bonus", 0.35);
       onSelectChoice(choice);
     },
-    [onSelectChoice, scenario.id, stopAudio]
+    [onSelectChoice, scenario.id, sfxEnabled, isFinished, stopAudio]
   );
 
   const handleReplayDialogueAudio = useCallback(() => {
+    if (ambientAudioRef.current?.paused && sfxEnabled && !isFinished) {
+      ambientAudioRef.current.play().catch(() => {});
+    }
     playSentence(currentNode.npcTextJa, currentNode.id, {
       audioSrc: getScenarioDialogueAudioUrl(scenario.id, currentNode.id),
       reading: currentNode.npcReadingHiragana,
       romaji: currentNode.npcRomaji,
       speaker: currentNode.speakerVoiceId,
     });
-  }, [scenario.id, currentNode, playSentence]);
+  }, [scenario.id, currentNode, sfxEnabled, isFinished, playSentence]);
 
   const handlePreviewChoiceAudio = useCallback(
     (textJa: string, id: string, reading?: string, romaji?: string) => {
+      if (ambientAudioRef.current?.paused && sfxEnabled && !isFinished) {
+        ambientAudioRef.current.play().catch(() => {});
+      }
       playSentence(textJa, id, {
         audioSrc: getScenarioChoiceAudioUrl(scenario.id, id),
         reading,
@@ -277,7 +332,7 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
         speaker: 11,
       });
     },
-    [playSentence, scenario.id]
+    [playSentence, scenario.id, sfxEnabled, isFinished]
   );
 
   const handleToggleFullscreen = useCallback(() => {
@@ -359,6 +414,7 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
           <VnCharacterSprite
             scenarioId={scenario.id}
             characterName={currentNode.speakerNameJa}
+            characterKey={currentNode.characterKey}
             expression={currentNode.expression || scenario.defaultExpression || "neutral"}
             isSpeaking={isCurrentSpeaking}
             fallbackAvatar={currentNode.speakerAvatar || scenario.characterAvatar}
@@ -433,7 +489,7 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
             <VnDialogueBox
               speakerNameJa={currentNode.speakerNameJa}
               speakerNameEn={currentNode.speakerNameEn}
-              speakerRoleEn={scenario.characterRoleEn}
+              speakerRoleEn={currentNode.speakerRoleEn || scenario.characterRoleEn}
               textJa={currentNode.npcTextJa}
               readingHiragana={currentNode.npcReadingHiragana}
               textEn={currentNode.npcTextEn}

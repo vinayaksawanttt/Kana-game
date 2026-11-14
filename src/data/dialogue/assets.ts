@@ -375,6 +375,434 @@ export const DIALOGUE_ASSET_MANIFESTS: Record<string, ScenarioAssetManifest> = {
                 "/assets/dialogue-quest/employer-shift-request/dialogue/emp-fail-unprofessional.opus",
         },
     },
+    "client-apology-delay": {
+        backgrounds: {
+            "client-lobby-rain":
+                "/assets/dialogue-quest/client-apology-delay/backgrounds/client-lobby-rain.webp",
+            "client-hallway-walk":
+                "/assets/dialogue-quest/client-apology-delay/backgrounds/client-hallway-walk.webp",
+            "executive-meeting-room":
+                "/assets/dialogue-quest/client-apology-delay/backgrounds/executive-meeting-room.webp",
+            "client-elevator-farewell":
+                "/assets/dialogue-quest/client-apology-delay/backgrounds/client-elevator-farewell.webp",
+            default:
+                "/assets/dialogue-quest/client-apology-delay/backgrounds/client-lobby-rain.webp",
+        },
+        characterSprites: {
+            neutral:
+                "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/neutral.webp",
+            stern:
+                "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/stern.webp",
+            annoyed:
+                "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/annoyed.webp",
+            scolding:
+                "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/scolding.webp",
+            proud:
+                "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/proud.webp",
+            disappointed:
+                "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/disappointed.webp",
+            "yoshimura-neutral":
+                "/assets/dialogue-quest/client-apology-delay/characters/yoshimura/neutral.webp",
+            "yoshimura-troubled":
+                "/assets/dialogue-quest/client-apology-delay/characters/yoshimura/troubled.webp",
+            "saito-neutral":
+                "/assets/dialogue-quest/client-apology-delay/characters/saito/neutral.webp",
+            "saito-worried":
+                "/assets/dialogue-quest/client-apology-delay/characters/saito/worried.webp",
+            "saito-stern":
+                "/assets/dialogue-quest/client-apology-delay/characters/saito/stern.webp",
+            "saito-thinking":
+                "/assets/dialogue-quest/client-apology-delay/characters/saito/thinking.webp",
+            "saito-troubled":
+                "/assets/dialogue-quest/client-apology-delay/characters/saito/troubled.webp",
+            "saito-relieved":
+                "/assets/dialogue-quest/client-apology-delay/characters/saito/relieved.webp",
+            "hasegawa-neutral":
+                "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/neutral.webp",
+            "hasegawa-stern":
+                "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/stern.webp",
+            "hasegawa-annoyed":
+                "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/annoyed.webp",
+            "hasegawa-scolding":
+                "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/scolding.webp",
+            "hasegawa-proud":
+                "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/proud.webp",
+            "hasegawa-disappointed":
+                "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/disappointed.webp",
+        },
+        sfx: {
+            // Character-prefixed expressive sounds
+            "hasegawa-neutral":
+                "/assets/dialogue-quest/client-apology-delay/sfx/hasegawa-neutral.opus",
+            "hasegawa-stern":
+                "/assets/dialogue-quest/client-apology-delay/sfx/hasegawa-stern.opus",
+            "hasegawa-annoyed":
+                "/assets/dialogue-quest/client-apology-delay/sfx/hasegawa-annoyed.opus",
+            "hasegawa-scolding":
+                "/assets/dialogue-quest/client-apology-delay/sfx/hasegawa-scolding.opus",
+            "hasegawa-proud":
+                "/assets/dialogue-quest/client-apology-delay/sfx/hasegawa-proud.opus",
+            "hasegawa-disappointed":
+                "/assets/dialogue-quest/client-apology-delay/sfx/hasegawa-disappointed.opus",
+            "saito-neutral":
+                "/assets/dialogue-quest/client-apology-delay/sfx/saito-neutral.opus",
+            "saito-worried":
+                "/assets/dialogue-quest/client-apology-delay/sfx/saito-worried.opus",
+            "saito-stern":
+                "/assets/dialogue-quest/client-apology-delay/sfx/saito-stern.opus",
+            "saito-thinking":
+                "/assets/dialogue-quest/client-apology-delay/sfx/saito-thinking.opus",
+            "saito-troubled":
+                "/assets/dialogue-quest/client-apology-delay/sfx/saito-troubled.opus",
+            "saito-relieved":
+                "/assets/dialogue-quest/client-apology-delay/sfx/saito-relieved.opus",
+            "yoshimura-neutral":
+                "/assets/dialogue-quest/client-apology-delay/sfx/yoshimura-neutral.opus",
+            "yoshimura-troubled":
+                "/assets/dialogue-quest/client-apology-delay/sfx/yoshimura-troubled.opus",
+            // Direct expression fallbacks
+            neutral:
+                "/assets/dialogue-quest/client-apology-delay/sfx/neutral.opus",
+            stern:
+                "/assets/dialogue-quest/client-apology-delay/sfx/stern.opus",
+            annoyed:
+                "/assets/dialogue-quest/client-apology-delay/sfx/annoyed.opus",
+            scolding:
+                "/assets/dialogue-quest/client-apology-delay/sfx/scolding.opus",
+            proud:
+                "/assets/dialogue-quest/client-apology-delay/sfx/proud.opus",
+            disappointed:
+                "/assets/dialogue-quest/client-apology-delay/sfx/disappointed.opus",
+            worried:
+                "/assets/dialogue-quest/client-apology-delay/sfx/worried.opus",
+            thinking:
+                "/assets/dialogue-quest/client-apology-delay/sfx/thinking.opus",
+            troubled:
+                "/assets/dialogue-quest/client-apology-delay/sfx/troubled.opus",
+            relieved:
+                "/assets/dialogue-quest/client-apology-delay/sfx/relieved.opus",
+            // Scene SFX
+            "elevator-chime":
+                "/assets/dialogue-quest/client-apology-delay/sfx/elevator-chime.opus",
+            "door-knock":
+                "/assets/dialogue-quest/client-apology-delay/sfx/door-knock.opus",
+            "rain-on-window":
+                "/assets/dialogue-quest/client-apology-delay/sfx/rain-on-window.opus",
+            "briefcase-latch":
+                "/assets/dialogue-quest/client-apology-delay/sfx/briefcase-latch.opus",
+            ambience:
+                "/assets/dialogue-quest/client-apology-delay/sfx/ambience.opus",
+        },
+        dialogueAudio: {
+            "client-node-1-lobby":
+                "/assets/dialogue-quest/client-apology-delay/dialogue/client-node-1-lobby.opus",
+            "client-node-2a-hallway-probe":
+                "/assets/dialogue-quest/client-apology-delay/dialogue/client-node-2a-hallway-probe.opus",
+            "client-node-2b-lobby-caution":
+                "/assets/dialogue-quest/client-apology-delay/dialogue/client-node-2b-lobby-caution.opus",
+            "client-node-2c-lobby-freeze":
+                "/assets/dialogue-quest/client-apology-delay/dialogue/client-node-2c-lobby-freeze.opus",
+            "client-node-3a-boardroom-fair":
+                "/assets/dialogue-quest/client-apology-delay/dialogue/client-node-3a-boardroom-fair.opus",
+            "client-node-3b-boardroom-tense":
+                "/assets/dialogue-quest/client-apology-delay/dialogue/client-node-3b-boardroom-tense.opus",
+            "client-node-4a-mitigation-talk":
+                "/assets/dialogue-quest/client-apology-delay/dialogue/client-node-4a-mitigation-talk.opus",
+            "client-node-4b-deadline-squeeze":
+                "/assets/dialogue-quest/client-apology-delay/dialogue/client-node-4b-deadline-squeeze.opus",
+            "client-node-4c-crisis-ultimatum":
+                "/assets/dialogue-quest/client-apology-delay/dialogue/client-node-4c-crisis-ultimatum.opus",
+            "client-node-5a-elevator-final":
+                "/assets/dialogue-quest/client-apology-delay/dialogue/client-node-5a-elevator-final.opus",
+            "client-node-5b-skeptical-terms":
+                "/assets/dialogue-quest/client-apology-delay/dialogue/client-node-5b-skeptical-terms.opus",
+            "client-node-end-perfect":
+                "/assets/dialogue-quest/client-apology-delay/dialogue/client-node-end-perfect.opus",
+            "client-node-end-success":
+                "/assets/dialogue-quest/client-apology-delay/dialogue/client-node-end-success.opus",
+            "client-node-end-awkward":
+                "/assets/dialogue-quest/client-apology-delay/dialogue/client-node-end-awkward.opus",
+            "client-node-end-failure":
+                "/assets/dialogue-quest/client-apology-delay/dialogue/client-node-end-failure.opus",
+        },
+    },
+    "job-interview-pr": {
+        backgrounds: {},
+        characterSprites: {},
+        sfx: {
+            // Character-prefixed expressive sounds
+            "matsumoto-neutral":
+                "/assets/dialogue-quest/job-interview-pr/sfx/matsumoto-neutral.opus",
+            "matsumoto-thinking":
+                "/assets/dialogue-quest/job-interview-pr/sfx/matsumoto-thinking.opus",
+            "matsumoto-stern":
+                "/assets/dialogue-quest/job-interview-pr/sfx/matsumoto-stern.opus",
+            "matsumoto-happy":
+                "/assets/dialogue-quest/job-interview-pr/sfx/matsumoto-happy.opus",
+            "matsumoto-proud":
+                "/assets/dialogue-quest/job-interview-pr/sfx/matsumoto-proud.opus",
+            "matsumoto-disappointed":
+                "/assets/dialogue-quest/job-interview-pr/sfx/matsumoto-disappointed.opus",
+            "kawaguchi-neutral":
+                "/assets/dialogue-quest/job-interview-pr/sfx/kawaguchi-neutral.opus",
+            "kawaguchi-confused":
+                "/assets/dialogue-quest/job-interview-pr/sfx/kawaguchi-confused.opus",
+            "kawaguchi-thinking":
+                "/assets/dialogue-quest/job-interview-pr/sfx/kawaguchi-thinking.opus",
+            "kawaguchi-troubled":
+                "/assets/dialogue-quest/job-interview-pr/sfx/kawaguchi-troubled.opus",
+            "sato-neutral":
+                "/assets/dialogue-quest/job-interview-pr/sfx/sato-neutral.opus",
+            "sato-troubled":
+                "/assets/dialogue-quest/job-interview-pr/sfx/sato-troubled.opus",
+            "sato-happy":
+                "/assets/dialogue-quest/job-interview-pr/sfx/sato-happy.opus",
+            // Direct expression fallbacks
+            neutral:
+                "/assets/dialogue-quest/job-interview-pr/sfx/neutral.opus",
+            thinking:
+                "/assets/dialogue-quest/job-interview-pr/sfx/thinking.opus",
+            stern:
+                "/assets/dialogue-quest/job-interview-pr/sfx/stern.opus",
+            happy:
+                "/assets/dialogue-quest/job-interview-pr/sfx/happy.opus",
+            proud:
+                "/assets/dialogue-quest/job-interview-pr/sfx/proud.opus",
+            disappointed:
+                "/assets/dialogue-quest/job-interview-pr/sfx/disappointed.opus",
+            confused:
+                "/assets/dialogue-quest/job-interview-pr/sfx/confused.opus",
+            troubled:
+                "/assets/dialogue-quest/job-interview-pr/sfx/troubled.opus",
+            // Scene SFX
+            "door-knock":
+                "/assets/dialogue-quest/job-interview-pr/sfx/door-knock.opus",
+            "chair-sit":
+                "/assets/dialogue-quest/job-interview-pr/sfx/chair-sit.opus",
+            "notepad-pen":
+                "/assets/dialogue-quest/job-interview-pr/sfx/notepad-pen.opus",
+            "terrace-breeze":
+                "/assets/dialogue-quest/job-interview-pr/sfx/terrace-breeze.opus",
+            ambience:
+                "/assets/dialogue-quest/job-interview-pr/sfx/ambience.opus",
+        },
+        dialogueAudio: {
+            "interview-node-1-lounge":
+                "/assets/dialogue-quest/job-interview-pr/dialogue/interview-node-1-lounge.opus",
+            "interview-node-2a-door-entry":
+                "/assets/dialogue-quest/job-interview-pr/dialogue/interview-node-2a-door-entry.opus",
+            "interview-node-2b-lounge-caution":
+                "/assets/dialogue-quest/job-interview-pr/dialogue/interview-node-2b-lounge-caution.opus",
+            "interview-node-3a-reason-deep":
+                "/assets/dialogue-quest/job-interview-pr/dialogue/interview-node-3a-reason-deep.opus",
+            "interview-node-3b-reason-probe":
+                "/assets/dialogue-quest/job-interview-pr/dialogue/interview-node-3b-reason-probe.opus",
+            "interview-node-3c-cold-skeptic":
+                "/assets/dialogue-quest/job-interview-pr/dialogue/interview-node-3c-cold-skeptic.opus",
+            "interview-node-4a-conflict-nemawashi":
+                "/assets/dialogue-quest/job-interview-pr/dialogue/interview-node-4a-conflict-nemawashi.opus",
+            "interview-node-4b-attitude-check":
+                "/assets/dialogue-quest/job-interview-pr/dialogue/interview-node-4b-attitude-check.opus",
+            "interview-node-5a-reverse-question":
+                "/assets/dialogue-quest/job-interview-pr/dialogue/interview-node-5a-reverse-question.opus",
+            "interview-node-5b-last-chance":
+                "/assets/dialogue-quest/job-interview-pr/dialogue/interview-node-5b-last-chance.opus",
+            "interview-node-end-perfect":
+                "/assets/dialogue-quest/job-interview-pr/dialogue/interview-node-end-perfect.opus",
+            "interview-node-end-success":
+                "/assets/dialogue-quest/job-interview-pr/dialogue/interview-node-end-success.opus",
+            "interview-node-end-awkward":
+                "/assets/dialogue-quest/job-interview-pr/dialogue/interview-node-end-awkward.opus",
+            "interview-node-end-failure":
+                "/assets/dialogue-quest/job-interview-pr/dialogue/interview-node-end-failure.opus",
+        },
+    },
+    "ward-office-tax": {
+        backgrounds: {},
+        characterSprites: {},
+        sfx: {
+            // Character-prefixed expressive sounds
+            "takahashi-neutral":
+                "/assets/dialogue-quest/ward-office-tax/sfx/takahashi-neutral.opus",
+            "takahashi-troubled":
+                "/assets/dialogue-quest/ward-office-tax/sfx/takahashi-troubled.opus",
+            "takahashi-happy":
+                "/assets/dialogue-quest/ward-office-tax/sfx/takahashi-happy.opus",
+            "takahashi-relieved":
+                "/assets/dialogue-quest/ward-office-tax/sfx/takahashi-relieved.opus",
+            "koga-neutral":
+                "/assets/dialogue-quest/ward-office-tax/sfx/koga-neutral.opus",
+            "koga-thinking":
+                "/assets/dialogue-quest/ward-office-tax/sfx/koga-thinking.opus",
+            "koga-worried":
+                "/assets/dialogue-quest/ward-office-tax/sfx/koga-worried.opus",
+            "koga-troubled":
+                "/assets/dialogue-quest/ward-office-tax/sfx/koga-troubled.opus",
+            "obata-neutral":
+                "/assets/dialogue-quest/ward-office-tax/sfx/obata-neutral.opus",
+            "obata-thinking":
+                "/assets/dialogue-quest/ward-office-tax/sfx/obata-thinking.opus",
+            "obata-stern":
+                "/assets/dialogue-quest/ward-office-tax/sfx/obata-stern.opus",
+            "obata-proud":
+                "/assets/dialogue-quest/ward-office-tax/sfx/obata-proud.opus",
+            "obata-disappointed":
+                "/assets/dialogue-quest/ward-office-tax/sfx/obata-disappointed.opus",
+            // Direct expression fallbacks
+            neutral:
+                "/assets/dialogue-quest/ward-office-tax/sfx/neutral.opus",
+            troubled:
+                "/assets/dialogue-quest/ward-office-tax/sfx/troubled.opus",
+            happy:
+                "/assets/dialogue-quest/ward-office-tax/sfx/happy.opus",
+            relieved:
+                "/assets/dialogue-quest/ward-office-tax/sfx/relieved.opus",
+            thinking:
+                "/assets/dialogue-quest/ward-office-tax/sfx/thinking.opus",
+            worried:
+                "/assets/dialogue-quest/ward-office-tax/sfx/worried.opus",
+            stern:
+                "/assets/dialogue-quest/ward-office-tax/sfx/stern.opus",
+            proud:
+                "/assets/dialogue-quest/ward-office-tax/sfx/proud.opus",
+            disappointed:
+                "/assets/dialogue-quest/ward-office-tax/sfx/disappointed.opus",
+            // Scene SFX
+            "ticket-beep":
+                "/assets/dialogue-quest/ward-office-tax/sfx/ticket-beep.opus",
+            "paper-stamp":
+                "/assets/dialogue-quest/ward-office-tax/sfx/paper-stamp.opus",
+            "counter-bell":
+                "/assets/dialogue-quest/ward-office-tax/sfx/counter-bell.opus",
+            "booth-door":
+                "/assets/dialogue-quest/ward-office-tax/sfx/booth-door.opus",
+            ambience:
+                "/assets/dialogue-quest/ward-office-tax/sfx/ambience.opus",
+        },
+        dialogueAudio: {
+            "tax-node-1-kiosk":
+                "/assets/dialogue-quest/ward-office-tax/dialogue/tax-node-1-kiosk.opus",
+            "tax-node-2a-counter-docs":
+                "/assets/dialogue-quest/ward-office-tax/dialogue/tax-node-2a-counter-docs.opus",
+            "tax-node-2b-kiosk-calm":
+                "/assets/dialogue-quest/ward-office-tax/dialogue/tax-node-2b-kiosk-calm.opus",
+            "tax-node-3a-booth-obata":
+                "/assets/dialogue-quest/ward-office-tax/dialogue/tax-node-3a-booth-obata.opus",
+            "tax-node-3b-counter-stall":
+                "/assets/dialogue-quest/ward-office-tax/dialogue/tax-node-3b-counter-stall.opus",
+            "tax-node-4a-installment-plan":
+                "/assets/dialogue-quest/ward-office-tax/dialogue/tax-node-4a-installment-plan.opus",
+            "tax-node-4b-obata-lecture":
+                "/assets/dialogue-quest/ward-office-tax/dialogue/tax-node-4b-obata-lecture.opus",
+            "tax-node-5a-pension-handoff":
+                "/assets/dialogue-quest/ward-office-tax/dialogue/tax-node-5a-pension-handoff.opus",
+            "tax-node-5b-debit-warning":
+                "/assets/dialogue-quest/ward-office-tax/dialogue/tax-node-5b-debit-warning.opus",
+            "tax-node-end-perfect":
+                "/assets/dialogue-quest/ward-office-tax/dialogue/tax-node-end-perfect.opus",
+            "tax-node-end-success":
+                "/assets/dialogue-quest/ward-office-tax/dialogue/tax-node-end-success.opus",
+            "tax-node-end-awkward":
+                "/assets/dialogue-quest/ward-office-tax/dialogue/tax-node-end-awkward.opus",
+            "tax-node-end-failure":
+                "/assets/dialogue-quest/ward-office-tax/dialogue/tax-node-end-failure.opus",
+        },
+    },
+    "first-date-sakura": {
+        backgrounds: {},
+        characterSprites: {},
+        sfx: {
+            // Character-prefixed expressive sounds
+            "misaki-happy":
+                "/assets/dialogue-quest/first-date-sakura/sfx/misaki-happy.opus",
+            "misaki-thinking":
+                "/assets/dialogue-quest/first-date-sakura/sfx/misaki-thinking.opus",
+            "misaki-embarrassed":
+                "/assets/dialogue-quest/first-date-sakura/sfx/misaki-embarrassed.opus",
+            "misaki-confused":
+                "/assets/dialogue-quest/first-date-sakura/sfx/misaki-confused.opus",
+            "misaki-worried":
+                "/assets/dialogue-quest/first-date-sakura/sfx/misaki-worried.opus",
+            "misaki-proud":
+                "/assets/dialogue-quest/first-date-sakura/sfx/misaki-proud.opus",
+            "misaki-relieved":
+                "/assets/dialogue-quest/first-date-sakura/sfx/misaki-relieved.opus",
+            "misaki-troubled":
+                "/assets/dialogue-quest/first-date-sakura/sfx/misaki-troubled.opus",
+            "misaki-disappointed":
+                "/assets/dialogue-quest/first-date-sakura/sfx/misaki-disappointed.opus",
+            "master-neutral":
+                "/assets/dialogue-quest/first-date-sakura/sfx/master-neutral.opus",
+            "master-thinking":
+                "/assets/dialogue-quest/first-date-sakura/sfx/master-thinking.opus",
+            "master-happy":
+                "/assets/dialogue-quest/first-date-sakura/sfx/master-happy.opus",
+            // Direct expression fallbacks
+            happy:
+                "/assets/dialogue-quest/first-date-sakura/sfx/happy.opus",
+            thinking:
+                "/assets/dialogue-quest/first-date-sakura/sfx/thinking.opus",
+            embarrassed:
+                "/assets/dialogue-quest/first-date-sakura/sfx/embarrassed.opus",
+            confused:
+                "/assets/dialogue-quest/first-date-sakura/sfx/confused.opus",
+            worried:
+                "/assets/dialogue-quest/first-date-sakura/sfx/worried.opus",
+            proud:
+                "/assets/dialogue-quest/first-date-sakura/sfx/proud.opus",
+            relieved:
+                "/assets/dialogue-quest/first-date-sakura/sfx/relieved.opus",
+            troubled:
+                "/assets/dialogue-quest/first-date-sakura/sfx/troubled.opus",
+            disappointed:
+                "/assets/dialogue-quest/first-date-sakura/sfx/disappointed.opus",
+            neutral:
+                "/assets/dialogue-quest/first-date-sakura/sfx/neutral.opus",
+            // Scene SFX
+            "station-chime":
+                "/assets/dialogue-quest/first-date-sakura/sfx/station-chime.opus",
+            "cafe-bell":
+                "/assets/dialogue-quest/first-date-sakura/sfx/cafe-bell.opus",
+            "coffee-pour":
+                "/assets/dialogue-quest/first-date-sakura/sfx/coffee-pour.opus",
+            "canal-breeze":
+                "/assets/dialogue-quest/first-date-sakura/sfx/canal-breeze.opus",
+            ambience:
+                "/assets/dialogue-quest/first-date-sakura/sfx/ambience.opus",
+        },
+        dialogueAudio: {
+            "date-node-1-meetup":
+                "/assets/dialogue-quest/first-date-sakura/dialogue/date-node-1-meetup.opus",
+            "date-node-2a-gallery-warm":
+                "/assets/dialogue-quest/first-date-sakura/dialogue/date-node-2a-gallery-warm.opus",
+            "date-node-2b-gallery-stiff":
+                "/assets/dialogue-quest/first-date-sakura/dialogue/date-node-2b-gallery-stiff.opus",
+            "date-node-2c-gallery-guarded":
+                "/assets/dialogue-quest/first-date-sakura/dialogue/date-node-2c-gallery-guarded.opus",
+            "date-node-3a-cafe-entrance":
+                "/assets/dialogue-quest/first-date-sakura/dialogue/date-node-3a-cafe-entrance.opus",
+            "date-node-3b-cafe-cool":
+                "/assets/dialogue-quest/first-date-sakura/dialogue/date-node-3b-cafe-cool.opus",
+            "date-node-4a-cafe-deep":
+                "/assets/dialogue-quest/first-date-sakura/dialogue/date-node-4a-cafe-deep.opus",
+            "date-node-4b-cafe-chilly":
+                "/assets/dialogue-quest/first-date-sakura/dialogue/date-node-4b-cafe-chilly.opus",
+            "date-node-5a-checkout-grace":
+                "/assets/dialogue-quest/first-date-sakura/dialogue/date-node-5a-checkout-grace.opus",
+            "date-node-6a-canal-evening":
+                "/assets/dialogue-quest/first-date-sakura/dialogue/date-node-6a-canal-evening.opus",
+            "date-node-5b-canal-recover":
+                "/assets/dialogue-quest/first-date-sakura/dialogue/date-node-5b-canal-recover.opus",
+            "date-node-end-perfect":
+                "/assets/dialogue-quest/first-date-sakura/dialogue/date-node-end-perfect.opus",
+            "date-node-end-success":
+                "/assets/dialogue-quest/first-date-sakura/dialogue/date-node-end-success.opus",
+            "date-node-end-awkward":
+                "/assets/dialogue-quest/first-date-sakura/dialogue/date-node-end-awkward.opus",
+            "date-node-end-failure":
+                "/assets/dialogue-quest/first-date-sakura/dialogue/date-node-end-failure.opus",
+        },
+    },
 };
 
 /**
@@ -401,12 +829,21 @@ export function getScenarioBackgroundUrl(
  */
 export function getScenarioCharacterSpriteUrl(
     scenarioId: string,
-    expression?: string
+    expression?: string,
+    characterKey?: string
 ): string | undefined {
     const manifest = DIALOGUE_ASSET_MANIFESTS[scenarioId];
     if (!manifest) return undefined;
 
     const key = expression?.toLowerCase() || "neutral";
+    if (characterKey) {
+        const charKey = characterKey.toLowerCase();
+        const multiSprite =
+            manifest.characterSprites[`${charKey}-${key}`] ||
+            manifest.characterSprites[`${charKey}-neutral`];
+        if (multiSprite) return multiSprite;
+    }
+
     return manifest.characterSprites[key] || manifest.characterSprites.neutral;
 }
 
@@ -415,12 +852,17 @@ export function getScenarioCharacterSpriteUrl(
  */
 export function getScenarioSfxUrl(
     scenarioId: string,
-    key: string
+    key: string,
+    characterKey?: string
 ): string | undefined {
     const manifest = DIALOGUE_ASSET_MANIFESTS[scenarioId];
     if (!manifest || !manifest.sfx) return undefined;
 
     const lookupKey = key.toLowerCase();
+    if (characterKey) {
+        const charKey = `${characterKey.toLowerCase()}-${lookupKey}`;
+        if (manifest.sfx[charKey]) return manifest.sfx[charKey];
+    }
     return manifest.sfx[lookupKey];
 }
 
@@ -445,11 +887,31 @@ export function getScenarioChoiceAudioUrl(
 }
 
 /**
- * Returns the lofi background ambient audio loop MP3 path for a given scenario.
+ * Ambient audio sources for cross-browser compatibility
+ */
+export interface ScenarioAmbientAudioSources {
+    opus: string;
+    mp3: string;
+}
+
+/**
+ * Returns both Opus and MP3 audio paths for scenario background ambience.
+ * Used for cross-browser fallback (e.g. Safari / WebKit lacking Ogg Opus support).
+ */
+export function getScenarioAmbientAudioSources(scenarioId: string): ScenarioAmbientAudioSources {
+    return {
+        opus: `/assets/dialogue-quest/${scenarioId}/sfx/ambience.opus`,
+        mp3: `/assets/dialogue-quest/${scenarioId}/sfx/ambience.mp3`,
+    };
+}
+
+/**
+ * Returns the lofi background ambient audio loop Opus path for a given scenario.
  */
 export function getScenarioAmbientAudioUrl(scenarioId: string): string {
     return `/assets/dialogue-quest/${scenarioId}/sfx/ambience.opus`;
 }
+
 
 let activeCharacterSfx: HTMLAudioElement | null = null;
 
@@ -476,11 +938,12 @@ export function stopScenarioSfx(): void {
 export function playScenarioSfx(
     scenarioId: string,
     key: string,
-    volume = 0.75
+    volume = 0.75,
+    characterKey?: string
 ): void {
     if (!isSfxEnabled()) return;
     if (typeof window === "undefined" || typeof Audio === "undefined") return;
-    const url = getScenarioSfxUrl(scenarioId, key);
+    const url = getScenarioSfxUrl(scenarioId, key, characterKey);
     if (!url) return;
 
     try {

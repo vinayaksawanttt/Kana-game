@@ -113,15 +113,62 @@ describe("Dialogue Engine", () => {
     expect(session.finalEndingType).toBe("perfect");
   });
 
-  it("validates all 6 roleplay scenarios have connected dialogue graphs", () => {
-    expect(DIALOGUE_SCENARIOS).toHaveLength(6);
+  it("validates all 10 roleplay scenarios have connected dialogue graphs", () => {
+    expect(DIALOGUE_SCENARIOS).toHaveLength(10);
     for (const scenario of DIALOGUE_SCENARIOS) {
       const nodes = getScenarioNodes(scenario.id);
       expect(nodes).toBeDefined();
       expect(nodes![scenario.initialNodeId]).toBeDefined();
       for (const node of Object.values(nodes!)) {
+        if (node.isEnding) {
+          expect(node.choices).toHaveLength(0);
+          expect(node.endingType).toBeDefined();
+        } else {
+          expect(node.choices.length).toBeGreaterThanOrEqual(1);
+        }
         for (const choice of node.choices) {
           expect(nodes![choice.nextNodeId]).toBeDefined();
+        }
+      }
+    }
+  });
+
+  it("ensures N2 & N1 stories (7-10) feature rich multi-scene, multi-character branching", () => {
+    const advancedIds = [
+      "client-apology-delay",
+      "job-interview-pr",
+      "ward-office-tax",
+      "first-date-sakura",
+    ];
+    for (const id of advancedIds) {
+      const scenario = DIALOGUE_SCENARIOS.find((s) => s.id === id);
+      const nodes = getScenarioNodes(id);
+      expect(scenario).toBeDefined();
+      expect(["N2", "N1"]).toContain(scenario!.level);
+      expect(nodes).toBeDefined();
+
+      const characters = new Set(
+        Object.values(nodes!)
+          .map((n) => n.characterKey)
+          .filter(Boolean)
+      );
+      const backgrounds = new Set(
+        Object.values(nodes!)
+          .map((n) => n.backgroundKey)
+          .filter(Boolean)
+      );
+      const endings = new Set(
+        Object.values(nodes!)
+          .filter((n) => n.isEnding)
+          .map((n) => n.endingType)
+      );
+
+      expect(characters.size).toBeGreaterThanOrEqual(2);
+      expect(backgrounds.size).toBeGreaterThanOrEqual(4);
+      expect(endings.size).toBe(4);
+      for (const node of Object.values(nodes!)) {
+        if (!node.isEnding) {
+          expect(node.choices.length).toBeGreaterThanOrEqual(2);
         }
       }
     }

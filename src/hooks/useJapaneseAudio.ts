@@ -752,10 +752,46 @@ export function useJapaneseAudio() {
   const playSentence = useCallback(
     (
       sentenceJa: string,
-      id?: string,
-      options?: { audioSrc?: string; reading?: string; romaji?: string; rate?: number; speaker?: number }
+      idOrOptions?:
+        | string
+        | {
+            audioSrc?: string;
+            reading?: string;
+            romaji?: string;
+            rate?: number;
+            speaker?: number;
+            speakerVoiceId?: number;
+          },
+      rawOptions?: {
+        audioSrc?: string;
+        reading?: string;
+        romaji?: string;
+        rate?: number;
+        speaker?: number;
+        speakerVoiceId?: number;
+      }
     ) => {
       if (typeof window === "undefined" || !sentenceJa) return;
+
+      let id: string | undefined;
+      let options:
+        | {
+            audioSrc?: string;
+            reading?: string;
+            romaji?: string;
+            rate?: number;
+            speaker?: number;
+            speakerVoiceId?: number;
+          }
+        | undefined;
+
+      if (typeof idOrOptions === "object" && idOrOptions !== null) {
+        id = undefined;
+        options = idOrOptions;
+      } else {
+        id = idOrOptions;
+        options = rawOptions;
+      }
 
       stopCurrentPlayback();
       const playbackId = currentPlaybackId;
@@ -779,7 +815,7 @@ export function useJapaneseAudio() {
         try {
           if (playbackId !== currentPlaybackId) return;
 
-          const speakerId = options?.speaker ?? 14; // Default: Meimei Himari (calm female narrator)
+          const speakerId = options?.speaker ?? options?.speakerVoiceId ?? 14; // Default: Meimei Himari (calm female narrator)
           const cacheKey = `${payload.key}:${speakerId}:${options?.rate ?? 1}`;
           let blobUrl = voicevoxBlobCache.get(cacheKey);
 

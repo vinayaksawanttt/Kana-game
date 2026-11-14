@@ -21,7 +21,9 @@ export interface DialogueNode {
   id: string;
   speakerNameJa: string;
   speakerNameEn: string;
+  speakerRoleEn?: string;
   speakerAvatar: string;
+  characterKey?: string; // e.g. "hasegawa", "saito", "misaki" for multi-character scenes
   npcTextJa: string;
   npcReadingHiragana: string;
   npcRomaji: string;
@@ -46,8 +48,19 @@ export interface ScenarioMeta {
   id: string;
   titleJa: string;
   titleEn: string;
-  level: "N5" | "N4" | "N3";
-  category: "directions" | "koban" | "konbini" | "school" | "landlord" | "employer" | "market";
+  level: "N5" | "N4" | "N3" | "N2" | "N1";
+  category:
+    | "directions"
+    | "koban"
+    | "konbini"
+    | "school"
+    | "landlord"
+    | "employer"
+    | "market"
+    | "client"
+    | "interview"
+    | "wardoffice"
+    | "date";
   locationJa: string;
   locationEn: string;
   characterNameJa: string;
@@ -58,7 +71,15 @@ export interface ScenarioMeta {
   initialNodeId: string;
   descriptionJa: string;
   descriptionEn: string;
-  backgroundTheme: "street" | "station" | "office" | "store" | "apartment" | "countryside";
+  backgroundTheme:
+    | "street"
+    | "station"
+    | "office"
+    | "store"
+    | "apartment"
+    | "countryside"
+    | "cafe"
+    | "civic";
   defaultBackgroundKey?: string;
   defaultExpression?: string;
   vocabList?: ScenarioVocabItem[];
