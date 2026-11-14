@@ -196,4 +196,48 @@ describe("Visual Novel Architecture & Components", () => {
       "/assets/dialogue-quest/directions-mcdonalds/sfx/atmosphere-bonus.mp3"
     );
   });
+
+  it("resolves Sato-san pre-generated dialogue audio paths from the asset registry", async () => {
+    const { getScenarioDialogueAudioUrl } = await import("@/data/dialogue/assets");
+    expect(
+      getScenarioDialogueAudioUrl("directions-mcdonalds", "node-2-npc-reply-polite")
+    ).toBe(
+      "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-2-npc-reply-polite.mp3"
+    );
+    expect(
+      getScenarioDialogueAudioUrl("directions-mcdonalds", "node-end-perfect")
+    ).toBe(
+      "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-end-perfect.mp3"
+    );
+    expect(
+      getScenarioDialogueAudioUrl("directions-mcdonalds", "node-1-initiation")
+    ).toBeUndefined();
+  });
+
+  it("opens and closes the dialogue backlog drawer from the HUD button", () => {
+    const node = DIRECTIONS_NODES["node-1-initiation"]!;
+
+    render(
+      <VisualNovelStage
+        scenario={DIRECTIONS_SCENARIO_META}
+        currentNode={node}
+        turnNumber={1}
+        totalScore={0}
+        atmosphereValue={65}
+        onSelectChoice={vi.fn()}
+        onRestart={vi.fn()}
+      />
+    );
+
+    const backlogBtn = screen.getByLabelText("Backlog History");
+    expect(backlogBtn).toBeTruthy();
+
+    fireEvent.click(backlogBtn);
+    expect(screen.getByText(/Dialogue Backlog/i)).toBeTruthy();
+
+    const closeBtn = screen.getByLabelText("Close backlog");
+    expect(closeBtn).toBeTruthy();
+    fireEvent.click(closeBtn);
+    expect(screen.queryByText(/Dialogue Backlog/i)).toBeNull();
+  });
 });

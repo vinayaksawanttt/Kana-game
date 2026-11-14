@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useMemo } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { getScenarioCharacterSpriteUrl } from "@/data/dialogue/assets";
 
 interface VnCharacterSpriteProps {
@@ -18,55 +19,104 @@ export const VnCharacterSprite: React.FC<VnCharacterSpriteProps> = ({
   isSpeaking = false,
   fallbackAvatar = "👤",
 }) => {
-  const spriteUrl = getScenarioCharacterSpriteUrl(scenarioId, expression);
-  const [currentUrl, setCurrentUrl] = useState<string | undefined>(spriteUrl);
-  const [switching, setSwitching] = useState(false);
+  const normExpr = expression.toLowerCase();
+  const spriteUrl = getScenarioCharacterSpriteUrl(scenarioId, normExpr);
 
-  useEffect(() => {
-    let active = true;
-    if (spriteUrl && spriteUrl !== currentUrl) {
-      setSwitching(true);
-      const timer = setTimeout(() => {
-        if (active) {
-          setCurrentUrl(spriteUrl);
-          setSwitching(false);
-        }
-      }, 150);
-      return () => {
-        active = false;
-        clearTimeout(timer);
-      };
-    } else if (spriteUrl && !currentUrl) {
-      setCurrentUrl(spriteUrl);
-    }
-  }, [spriteUrl, currentUrl]);
+  // Detect negative / startled expressions that trigger emotional effects
+  const isShakeEmotion = useMemo(() => {
+    return (
+      normExpr.includes("annoy") ||
+      normExpr.includes("confuse") ||
+      normExpr.includes("disappoint") ||
+      normExpr.includes("backstare") ||
+      normExpr.includes("embarras") ||
+      normExpr.includes("sad")
+    );
+  }, [normExpr]);
+
+  const emoteIcon = useMemo(() => {
+    if (normExpr.includes("confuse")) return "❓";
+    if (normExpr.includes("embarras") || normExpr.includes("disappoint") || normExpr.includes("sad")) return "💧";
+    if (normExpr.includes("annoy") || normExpr.includes("backstare")) return "💢";
+    if (normExpr.includes("surpris")) return "❗";
+    if (normExpr.includes("happy") || normExpr.includes("proud")) return "✨";
+    return null;
+  }, [normExpr]);
 
   return (
-    <div className="pointer-events-none relative flex h-full w-full items-end justify-center select-none">
-      {currentUrl ? (
+    <div className="pointer-events-none relative flex h-full w-full items-end justify-center select-none overflow-visible">
+      {/* Anime Emote Pop (Sweat drop, question mark, anger mark, surprise) */}
+      <AnimatePresence>
+        {emoteIcon && (
+          <motion.div
+            key={`emote-${normExpr}`}
+            initial={{ opacity: 0, scale: 0.3, y: -20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.7, y: -10 }}
+            transition={{ type: "spring", stiffness: 450, damping: 18 }}
+            className="absolute top-8 sm:top-10 z-30 flex size-12 sm:size-14 items-center justify-center rounded-2xl border border-white/20 bg-slate-950/75 text-2xl sm:text-3xl shadow-[0_8px_25px_rgba(0,0,0,0.6)] backdrop-blur-md"
+          >
+            <span className="drop-shadow-md select-none">{emoteIcon}</span>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {spriteUrl ? (
         <div className="relative flex h-[86%] sm:h-[94%] w-auto items-end justify-center">
           {/* Subtle speaker aura when speaking */}
           {isSpeaking && (
             <div className="absolute inset-x-8 bottom-12 top-10 -z-10 animate-pulse rounded-full bg-[var(--primary)]/20 blur-2xl" />
           )}
 
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={currentUrl}
-            alt={`${characterName} - ${expression}`}
-            className={`h-full w-auto max-w-[90vw] sm:max-w-lg object-contain drop-shadow-[0_16px_35px_rgba(0,0,0,0.7)] transition-opacity duration-300 ease-out ${
-              switching ? "opacity-75" : "opacity-100"
-            }`}
-            style={{
-              filter: isSpeaking
-                ? "drop-shadow(0 0 16px rgba(244,114,182,0.35)) drop-shadow(0 16px 30px rgba(0,0,0,0.7))"
-                : undefined,
-            }}
-          />
+          {/* Sprite Cross-Fade with Screen Shake on negative emotions */}
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={`${characterName}-${normExpr}-${spriteUrl}`}
+              initial={{ opacity: 0, scale: 0.985 }}
+              animate={
+                isShakeEmotion
+                  ? {
+                      opacity: 1,
+                      scale: 1,
+                      x: [0, -7, 6, -5, 4, -2, 0],
+                      transition: {
+                        opacity: { duration: 0.25, ease: "easeOut" },
+                        scale: { duration: 0.25, ease: "easeOut" },
+                        x: { duration: 0.42, ease: "easeInOut", delay: 0.05 },
+                      },
+                    }
+                  : {
+                      opacity: 1,
+                      scale: 1,
+                      x: 0,
+                      transition: { duration: 0.28, ease: "easeOut" },
+                    }
+              }
+              exit={{ opacity: 0, scale: 0.99, transition: { duration: 0.2, ease: "easeIn" } }}
+              className="relative flex h-full w-auto items-end justify-center"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={spriteUrl}
+                alt={`${characterName} - ${expression}`}
+                className="h-full w-auto max-w-[90vw] sm:max-w-lg object-contain drop-shadow-[0_16px_35px_rgba(0,0,0,0.7)]"
+                style={{
+                  filter: isSpeaking
+                    ? "drop-shadow(0 0 16px rgba(244,114,182,0.35)) drop-shadow(0 16px 30px rgba(0,0,0,0.7))"
+                    : undefined,
+                }}
+              />
+            </motion.div>
+          </AnimatePresence>
         </div>
       ) : (
         /* Stylized Avatar Silhouette Fallback for scenarios before sprites are supplied */
-        <div className="mb-28 flex flex-col items-center">
+        <motion.div
+          key={characterName}
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="mb-28 flex flex-col items-center"
+        >
           <div
             className={`relative flex size-32 items-center justify-center rounded-3xl border-2 border-[var(--sakura)]/70 bg-[var(--surface)]/90 text-6xl shadow-2xl backdrop-blur-md transition-all ${
               isSpeaking ? "scale-105 border-[var(--primary)] ring-4 ring-[var(--primary)]/30" : ""
@@ -85,7 +135,7 @@ export const VnCharacterSprite: React.FC<VnCharacterSpriteProps> = ({
           <div className="mt-2.5 rounded-full border border-white/10 bg-black/60 px-4 py-1 text-xs font-bold text-white shadow-lg backdrop-blur-md">
             {characterName}
           </div>
-        </div>
+        </motion.div>
       )}
     </div>
   );

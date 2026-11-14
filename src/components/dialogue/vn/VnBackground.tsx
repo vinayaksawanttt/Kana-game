@@ -26,22 +26,27 @@ export const VnBackground: React.FC<VnBackgroundProps> = ({
 }) => {
   const bgUrl = getScenarioBackgroundUrl(scenarioId, backgroundKey);
   const [currentUrl, setCurrentUrl] = useState<string | undefined>(bgUrl);
-  const [fade, setFade] = useState(false);
+  const [fadeOpacity, setFadeOpacity] = useState(1);
 
+  // Smooth cross-fade transition without locking to black
   useEffect(() => {
     let active = true;
-    if (bgUrl !== currentUrl) {
-      setFade(true);
+    if (bgUrl && bgUrl !== currentUrl) {
+      setFadeOpacity(0.4);
       const timer = setTimeout(() => {
         if (active) {
           setCurrentUrl(bgUrl);
-          setFade(false);
+          setFadeOpacity(1);
         }
-      }, 250);
+      }, 150);
+
       return () => {
         active = false;
         clearTimeout(timer);
       };
+    } else if (bgUrl && !currentUrl) {
+      setCurrentUrl(bgUrl);
+      setFadeOpacity(1);
     }
   }, [bgUrl, currentUrl]);
 
@@ -52,9 +57,8 @@ export const VnBackground: React.FC<VnBackgroundProps> = ({
         <img
           src={currentUrl}
           alt="Visual novel scene background"
-          className={`h-full w-full object-cover object-center transition-all duration-700 ease-out ${
-            fade ? "opacity-40 scale-102 blur-[1px]" : "opacity-100 scale-100 blur-0"
-          }`}
+          className="h-full w-full object-cover object-center transition-opacity duration-300 ease-out"
+          style={{ opacity: fadeOpacity }}
         />
       ) : (
         /* Procedural Fallback when custom artwork is not yet supplied */

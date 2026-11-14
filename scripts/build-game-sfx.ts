@@ -30,33 +30,38 @@ interface SfxDefinition {
 const SFX_LIST: SfxDefinition[] = [
   {
     slug: "temple-bell-gong",
-    prompt: "Traditional Japanese temple bell gong (Hyōshigi / Kane)",
+    prompt:
+      "Minimalist quiet zen meditation singing bowl bell gong, soft ambient resonant strike, calm Japanese aesthetic, quiet gentle decay, no harsh transients",
     durationSeconds: 2.5,
-    promptInfluence: 0.4,
+    promptInfluence: 0.45,
   },
   {
     slug: "victory-fanfare",
-    prompt: "Retro 8-bit game victory fanfare",
-    durationSeconds: 3.0,
-    promptInfluence: 0.4,
+    prompt:
+      "Subtle minimalist lofi warm marimba melodic chime jingle, gentle calm success sound, cozy understated finish, soft acoustic tones, quiet",
+    durationSeconds: 2.2,
+    promptInfluence: 0.45,
   },
   {
     slug: "correct-chime",
-    prompt: "Satisfying correct answer chime",
-    durationSeconds: 1.5,
-    promptInfluence: 0.4,
+    prompt:
+      "Minimalist soft marimba wooden chime tap, pleasant quiet warm ding, soothing gentle micro feedback, not harsh, clean quiet audio",
+    durationSeconds: 1.0,
+    promptInfluence: 0.45,
   },
   {
     slug: "incorrect-chime",
-    prompt: "incorrect answer chime",
-    durationSeconds: 1.5,
-    promptInfluence: 0.4,
+    prompt:
+      "Gentle soft muted wooden tap block, warm low key muffled thud, subtle discreet error sound, not jarring, non-punishing quiet tap",
+    durationSeconds: 0.8,
+    promptInfluence: 0.45,
   },
   {
     slug: "card-flip",
-    prompt: "Card flip / paper sliding sound",
-    durationSeconds: 1.0,
-    promptInfluence: 0.4,
+    prompt:
+      "Soft subtle paper card sliding whisper swish, quiet minimalist UI tactile click, warm and muted",
+    durationSeconds: 0.6,
+    promptInfluence: 0.45,
   },
 ];
 

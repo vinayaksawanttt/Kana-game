@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, RotateCcw, Settings, Maximize2, Minimize2 } from "lucide-react";
+import { ArrowLeft, RotateCcw, Settings, Maximize2, Minimize2, History } from "lucide-react";
 import { ScenarioMeta } from "@/data/dialogue/types";
 
 interface VnHudProps {
@@ -18,6 +18,7 @@ interface VnHudProps {
   onToggleEnglish: () => void;
   onToggleAutoPlay: () => void;
   onToggleFullscreen: () => void;
+  onOpenBacklog?: () => void;
   onRestart: () => void;
 }
 
@@ -34,6 +35,7 @@ export const VnHud: React.FC<VnHudProps> = ({
   onToggleEnglish,
   onToggleAutoPlay,
   onToggleFullscreen,
+  onOpenBacklog,
   onRestart,
 }) => {
   const [settingsOpen, setSettingsOpen] = useState(false);
@@ -99,6 +101,19 @@ export const VnHud: React.FC<VnHudProps> = ({
         >
           {isFullscreen ? <Minimize2 className="size-3.5 sm:size-4" /> : <Maximize2 className="size-3.5 sm:size-4" />}
         </button>
+
+        {/* Backlog / Dialogue History Button */}
+        {onOpenBacklog && (
+          <button
+            type="button"
+            onClick={onOpenBacklog}
+            className="flex size-8 sm:size-9 items-center justify-center rounded-xl border border-white/20 bg-slate-950/70 text-white/80 shadow-md backdrop-blur-md transition-all hover:border-[var(--sakura)] hover:bg-slate-900/90 hover:text-white cursor-pointer"
+            title="Open Dialogue History (Backlog)"
+            aria-label="Backlog History"
+          >
+            <History className="size-3.5 sm:size-4" />
+          </button>
+        )}
 
         {/* Settings Toggle Menu */}
         <div className="relative">

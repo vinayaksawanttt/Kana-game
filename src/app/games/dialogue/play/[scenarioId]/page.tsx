@@ -54,14 +54,6 @@ export default function DialoguePlayPage() {
   const currentNode = nodes[session.currentNodeId];
 
   const handleSelectChoice = (choice: DialogueChoice) => {
-    if (choice.tier === "respectful" || choice.tier === "polite") {
-      playSfx("correct-chime");
-    } else if (choice.tier === "rude" || choice.tier === "awkward") {
-      playSfx("incorrect-chime");
-    } else {
-      playSfx("card-flip");
-    }
-
     const nextSession = executeDialogueTurn(session, nodes, choice);
     setSession(nextSession);
     setLastTurnFeedback({
@@ -72,7 +64,7 @@ export default function DialoguePlayPage() {
 
     if (nextSession.isFinished) {
       if (nextSession.finalEndingType === "perfect" || nextSession.finalEndingType === "success") {
-        setTimeout(() => playSfx("victory-fanfare"), 650);
+        setTimeout(() => playSfx("victory-fanfare"), 1000);
       }
     }
   };

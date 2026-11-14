@@ -8,8 +8,12 @@ import { VnDialogueBox } from "./VnDialogueBox";
 import { VnChoiceOverlay } from "./VnChoiceOverlay";
 import { VnHud } from "./VnHud";
 import { VnEndAssessmentOverlay } from "./VnEndAssessmentOverlay";
+import { VnBacklogDrawer, DialogueLogEntry } from "./VnBacklogDrawer";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
-import { playScenarioSfx } from "@/data/dialogue/assets";
+import {
+  getScenarioDialogueAudioUrl,
+  playScenarioSfx,
+} from "@/data/dialogue/assets";
 import { Smartphone, RotateCw } from "lucide-react";
 
 interface VisualNovelStageProps {
@@ -43,10 +47,36 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
   // User reading & audio preferences
   const [showFurigana, setShowFurigana] = useState(true);
   const [showEnglish, setShowEnglish] = useState(true);
-  const [autoPlayAudio, setAutoPlayAudio] = useState(true);
+  const [autoPlayAudio, setAutoPlayAudio] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [forceLandscape, setForceLandscape] = useState(false);
   const [isMobilePortrait, setIsMobilePortrait] = useState(false);
+  const [isBacklogOpen, setIsBacklogOpen] = useState(false);
+  const [backlogHistory, setBacklogHistory] = useState<DialogueLogEntry[]>([]);
+
+  // Accumulate dialogue into backlog history
+  useEffect(() => {
+    if (!currentNode || !currentNode.npcTextJa) return;
+
+    setBacklogHistory((prev) => {
+      // Prevent duplicate consecutive entries
+      const last = prev[prev.length - 1];
+      if (last && last.id === currentNode.id && last.speaker === "npc") {
+        return prev;
+      }
+      return [
+        ...prev,
+        {
+          id: currentNode.id,
+          speaker: "npc",
+          speakerName: currentNode.speakerNameJa,
+          textJa: currentNode.npcTextJa,
+          readingHiragana: currentNode.npcReadingHiragana,
+          textEn: currentNode.npcTextEn,
+        },
+      ];
+    });
+  }, [currentNode]);
 
   const isCurrentSpeaking = isPlaying && activeKey === currentNode.id;
 
@@ -75,12 +105,14 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
       !currentNode.npcTextJa.startsWith("（")
     ) {
       playSentence(currentNode.npcTextJa, currentNode.id, {
+        audioSrc: getScenarioDialogueAudioUrl(scenario.id, currentNode.id),
         reading: currentNode.npcReadingHiragana,
         romaji: currentNode.npcRomaji,
         speaker: currentNode.speakerVoiceId,
       });
     }
   }, [
+    scenario.id,
     currentNode.id,
     currentNode.npcTextJa,
     currentNode.npcReadingHiragana,
@@ -91,18 +123,41 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
     playSentence,
   ]);
 
-  // Play Sato-san anime expressive reaction sound on node/expression transition
+  // Play Sato-san anime expressive reaction sound on node/expression transition (including endings)
   useEffect(() => {
-    if (!isFinished && currentNode.expression) {
-      playScenarioSfx(scenario.id, currentNode.expression, 0.4);
+    if (
+      currentNode.id === scenario.initialNodeId ||
+      autoPlayAudio ||
+      !currentNode.expression
+    ) {
+      return;
     }
-  }, [currentNode.id, currentNode.expression, isFinished, scenario.id]);
+
+    const timer = setTimeout(() => {
+      playScenarioSfx(scenario.id, currentNode.expression!, 0.75);
+    }, 150);
+
+    return () => clearTimeout(timer);
+  }, [currentNode.id, currentNode.expression, autoPlayAudio, scenario.id, scenario.initialNodeId]);
 
   const handleSelectChoiceInternal = useCallback(
     (choice: DialogueChoice) => {
-      if (choice.points >= 90) {
-        playScenarioSfx(scenario.id, "atmosphere-bonus", 0.45);
-      }
+      // Record player choice in backlog
+      setBacklogHistory((prev) => [
+        ...prev,
+        {
+          id: choice.id,
+          speaker: "player",
+          speakerName: "あなた (Player)",
+          textJa: choice.textJa,
+          readingHiragana: choice.readingHiragana,
+          textEn: choice.textEn,
+          tier: choice.tier,
+          points: choice.points,
+        },
+      ]);
+
+      playScenarioSfx(scenario.id, "atmosphere-bonus", 0.35);
       onSelectChoice(choice);
     },
     [onSelectChoice, scenario.id]
@@ -110,11 +165,12 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
 
   const handleReplayDialogueAudio = useCallback(() => {
     playSentence(currentNode.npcTextJa, currentNode.id, {
+      audioSrc: getScenarioDialogueAudioUrl(scenario.id, currentNode.id),
       reading: currentNode.npcReadingHiragana,
       romaji: currentNode.npcRomaji,
       speaker: currentNode.speakerVoiceId,
     });
-  }, [currentNode, playSentence]);
+  }, [scenario.id, currentNode, playSentence]);
 
   const handlePreviewChoiceAudio = useCallback(
     (textJa: string, id: string, reading?: string, romaji?: string) => {
@@ -220,7 +276,16 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
           onToggleEnglish={() => setShowEnglish(!showEnglish)}
           onToggleAutoPlay={() => setAutoPlayAudio(!autoPlayAudio)}
           onToggleFullscreen={handleToggleFullscreen}
+          onOpenBacklog={() => setIsBacklogOpen(true)}
           onRestart={onRestart}
+        />
+
+        {/* Backlog Drawer Overlay */}
+        <VnBacklogDrawer
+          isOpen={isBacklogOpen}
+          onClose={() => setIsBacklogOpen(false)}
+          logs={backlogHistory}
+          onPlayAudio={(textJa, id, reading) => playSentence(textJa, id, { reading })}
         />
 
         {/* Layer 4: Interactive Zone (Choices + Dialogue Box OR In-Scene End Assessment) */}
