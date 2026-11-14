@@ -30,39 +30,26 @@ export const VnCharacterSprite: React.FC<VnCharacterSpriteProps> = ({
       normExpr.includes("disappoint") ||
       normExpr.includes("backstare") ||
       normExpr.includes("embarras") ||
-      normExpr.includes("sad")
+      normExpr.includes("sad") ||
+      normExpr.includes("scold") ||
+      normExpr.includes("stern") ||
+      normExpr.includes("troubl")
     );
   }, [normExpr]);
 
   const emoteIcon = useMemo(() => {
     if (normExpr.includes("confuse")) return "❓";
-    if (normExpr.includes("embarras") || normExpr.includes("disappoint") || normExpr.includes("sad")) return "💧";
-    if (normExpr.includes("annoy") || normExpr.includes("backstare")) return "💢";
+    if (normExpr.includes("embarras") || normExpr.includes("disappoint") || normExpr.includes("sad") || normExpr.includes("worr") || normExpr.includes("troubl")) return "💧";
+    if (normExpr.includes("annoy") || normExpr.includes("backstare") || normExpr.includes("scold") || normExpr.includes("stern")) return "💢";
     if (normExpr.includes("surpris")) return "❗";
-    if (normExpr.includes("happy") || normExpr.includes("proud")) return "✨";
+    if (normExpr.includes("happy") || normExpr.includes("proud") || normExpr.includes("reliev") || normExpr.includes("reliv")) return "✨";
     return null;
   }, [normExpr]);
 
   return (
     <div className="pointer-events-none relative flex h-full w-full items-end justify-center select-none overflow-visible">
-      {/* Anime Emote Pop (Sweat drop, question mark, anger mark, surprise) */}
-      <AnimatePresence>
-        {emoteIcon && (
-          <motion.div
-            key={`emote-${normExpr}`}
-            initial={{ opacity: 0, scale: 0.3, y: -20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.7, y: -10 }}
-            transition={{ type: "spring", stiffness: 450, damping: 18 }}
-            className="absolute top-8 sm:top-10 z-30 flex size-12 sm:size-14 items-center justify-center rounded-2xl border border-white/20 bg-slate-950/75 text-2xl sm:text-3xl shadow-[0_8px_25px_rgba(0,0,0,0.6)] backdrop-blur-md"
-          >
-            <span className="drop-shadow-md select-none">{emoteIcon}</span>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
       {spriteUrl ? (
-        <div className="relative flex h-[86%] sm:h-[94%] w-auto items-end justify-center">
+        <div className="relative flex h-[86%] sm:h-[92%] w-auto items-end justify-center">
           {/* Subtle speaker aura when speaking */}
           {isSpeaking && (
             <div className="absolute inset-x-8 bottom-12 top-10 -z-10 animate-pulse rounded-full bg-[var(--primary)]/20 blur-2xl" />
@@ -93,13 +80,29 @@ export const VnCharacterSprite: React.FC<VnCharacterSpriteProps> = ({
                     }
               }
               exit={{ opacity: 0, scale: 0.99, transition: { duration: 0.2, ease: "easeIn" } }}
-              className="relative flex h-full w-auto items-end justify-center"
+              className="relative aspect-[2/3] h-full w-auto flex items-end justify-center"
             >
+              {/* Anime Emote Pop anchored to upper-right beside the character's head (never covering the face) */}
+              <AnimatePresence>
+                {emoteIcon && (
+                  <motion.div
+                    key={`emote-${normExpr}`}
+                    initial={{ opacity: 0, scale: 0.3, y: 8 }}
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    exit={{ opacity: 0, scale: 0.7, y: 4 }}
+                    transition={{ type: "spring", stiffness: 450, damping: 18 }}
+                    className="absolute top-[3%] left-[63%] z-30 flex size-10 sm:size-12 items-center justify-center rounded-2xl border border-white/25 bg-slate-950/80 text-xl sm:text-2xl shadow-[0_8px_25px_rgba(0,0,0,0.65)] backdrop-blur-md"
+                  >
+                    <span className="drop-shadow-md select-none">{emoteIcon}</span>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={spriteUrl}
                 alt={`${characterName} - ${expression}`}
-                className="h-full w-auto max-w-[90vw] sm:max-w-lg object-contain drop-shadow-[0_16px_35px_rgba(0,0,0,0.7)]"
+                className="h-full w-full object-contain drop-shadow-[0_16px_35px_rgba(0,0,0,0.7)]"
                 style={{
                   filter: isSpeaking
                     ? "drop-shadow(0 0 16px rgba(244,114,182,0.35)) drop-shadow(0 16px 30px rgba(0,0,0,0.7))"
@@ -122,6 +125,11 @@ export const VnCharacterSprite: React.FC<VnCharacterSpriteProps> = ({
               isSpeaking ? "scale-105 border-[var(--primary)] ring-4 ring-[var(--primary)]/30" : ""
             }`}
           >
+            {emoteIcon && (
+              <span className="absolute -top-3 -right-3 z-30 flex size-10 items-center justify-center rounded-xl border border-white/25 bg-slate-950/85 text-xl shadow-lg">
+                {emoteIcon}
+              </span>
+            )}
             {fallbackAvatar}
             {isSpeaking && (
               <span className="absolute -top-1 -right-1 flex size-5">

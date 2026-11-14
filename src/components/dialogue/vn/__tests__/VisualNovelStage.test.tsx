@@ -10,6 +10,7 @@ import { DialogueSession } from "@/data/dialogue/types";
 vi.mock("@/hooks/useJapaneseAudio", () => ({
   useJapaneseAudio: () => ({
     playSentence: vi.fn(),
+    stopAudio: vi.fn(),
     isPlaying: false,
     activeKey: null,
   }),
@@ -184,16 +185,16 @@ describe("Visual Novel Architecture & Components", () => {
   it("resolves Sato-san anime expressive SFX paths from the asset registry", async () => {
     const { getScenarioSfxUrl } = await import("@/data/dialogue/assets");
     expect(getScenarioSfxUrl("directions-mcdonalds", "happy")).toBe(
-      "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-happy.mp3"
+      "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-happy.opus"
     );
     expect(getScenarioSfxUrl("directions-mcdonalds", "confused")).toBe(
-      "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-confused.mp3"
+      "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-confused.opus"
     );
     expect(getScenarioSfxUrl("directions-mcdonalds", "surprised")).toBe(
-      "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-surprised.mp3"
+      "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-surprised.opus"
     );
     expect(getScenarioSfxUrl("directions-mcdonalds", "atmosphere-bonus")).toBe(
-      "/assets/dialogue-quest/directions-mcdonalds/sfx/atmosphere-bonus.mp3"
+      "/assets/dialogue-quest/directions-mcdonalds/sfx/atmosphere-bonus.opus"
     );
   });
 
@@ -202,12 +203,12 @@ describe("Visual Novel Architecture & Components", () => {
     expect(
       getScenarioDialogueAudioUrl("directions-mcdonalds", "node-2-npc-reply-polite")
     ).toBe(
-      "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-2-npc-reply-polite.mp3"
+      "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-2-npc-reply-polite.opus"
     );
     expect(
       getScenarioDialogueAudioUrl("directions-mcdonalds", "node-end-perfect")
     ).toBe(
-      "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-end-perfect.mp3"
+      "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-end-perfect.opus"
     );
     expect(
       getScenarioDialogueAudioUrl("directions-mcdonalds", "node-1-initiation")

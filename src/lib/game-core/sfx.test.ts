@@ -14,12 +14,12 @@ describe("Game SFX Engine (sfx.ts)", () => {
     vi.restoreAllMocks();
   });
 
-  it("maps all 5 custom ElevenLabs sound effects to /audio/sfx/*.mp3", () => {
-    expect(SFX_PATHS["temple-bell-gong"]).toBe("/audio/sfx/temple-bell-gong.mp3");
-    expect(SFX_PATHS["victory-fanfare"]).toBe("/audio/sfx/victory-fanfare.mp3");
-    expect(SFX_PATHS["correct-chime"]).toBe("/audio/sfx/correct-chime.mp3");
-    expect(SFX_PATHS["incorrect-chime"]).toBe("/audio/sfx/incorrect-chime.mp3");
-    expect(SFX_PATHS["card-flip"]).toBe("/audio/sfx/card-flip.mp3");
+  it("maps all 5 custom ElevenLabs sound effects to /audio/sfx/*.opus", () => {
+    expect(SFX_PATHS["temple-bell-gong"]).toBe("/audio/sfx/temple-bell-gong.opus");
+    expect(SFX_PATHS["victory-fanfare"]).toBe("/audio/sfx/victory-fanfare.opus");
+    expect(SFX_PATHS["correct-chime"]).toBe("/audio/sfx/correct-chime.opus");
+    expect(SFX_PATHS["incorrect-chime"]).toBe("/audio/sfx/incorrect-chime.opus");
+    expect(SFX_PATHS["card-flip"]).toBe("/audio/sfx/card-flip.opus");
   });
 
   it("persists SFX mute toggle to localStorage and notifies subscribers", () => {
@@ -53,7 +53,7 @@ describe("Game SFX Engine (sfx.ts)", () => {
         if (src) createdSrcs.push(src);
       }
       canPlayType(type: string) {
-        return type === "audio/mpeg" ? "probably" : "";
+        return type.includes("audio/ogg") || type.includes("audio/mpeg") || type.includes("audio/webm") ? "probably" : "";
       }
       play() {
         return playMock();
@@ -63,7 +63,7 @@ describe("Game SFX Engine (sfx.ts)", () => {
     vi.stubGlobal("Audio", MockAudio);
 
     playGameSfx("correct-chime");
-    expect(createdSrcs).toContain("/audio/sfx/correct-chime.mp3");
+    expect(createdSrcs).toContain("/audio/sfx/correct-chime.opus");
     expect(playMock).toHaveBeenCalledTimes(1);
 
     // Mute SFX

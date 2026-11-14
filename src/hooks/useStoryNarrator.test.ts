@@ -11,7 +11,7 @@ const mockQueue: StoryAudioSegment[] = [
     id: "story:0:0",
     rawJa: "今日は天気がいいです。",
     ttsText: "今日は天気がいいです。",
-    src: "/audio/stories/story/0.mp3",
+    src: "/audio/stories/story/0.opus",
   },
   {
     index: 1,
@@ -20,7 +20,7 @@ const mockQueue: StoryAudioSegment[] = [
     id: "story:0:1",
     rawJa: "公園へ散歩に行きましょう。",
     ttsText: "公園へ散歩に行きましょう。",
-    src: "/audio/stories/story/1.mp3",
+    src: "/audio/stories/story/1.opus",
   },
   {
     index: 2,
@@ -29,7 +29,7 @@ const mockQueue: StoryAudioSegment[] = [
     id: "story:1:0",
     rawJa: "桜の花が咲いています。",
     ttsText: "桜の花が咲いています。",
-    src: "/audio/stories/story/2.mp3",
+    src: "/audio/stories/story/2.opus",
   },
 ];
 
@@ -133,7 +133,7 @@ describe("useStoryNarrator Hook", () => {
     expect(result.current.isPlaying).toBe(true);
     expect(result.current.activeSegmentIndex).toBe(0);
     expect(MockAudio.instances.length).toBe(1);
-    expect(MockAudio.instances[0]!.src).toBe("/audio/stories/story/0.mp3");
+    expect(MockAudio.instances[0]!.src).toBe("/audio/stories/story/0.opus");
     expect(MockAudio.instances[0]!.play).toHaveBeenCalled();
   });
 
@@ -161,7 +161,7 @@ describe("useStoryNarrator Hook", () => {
 
     expect(result.current.activeSegmentIndex).toBe(1);
     expect(MockAudio.instances.length).toBe(2);
-    expect(MockAudio.instances[1]!.src).toBe("/audio/stories/story/1.mp3");
+    expect(MockAudio.instances[1]!.src).toBe("/audio/stories/story/1.opus");
   });
 
   it("stops playback when the last sentence in the passage finishes", () => {
@@ -223,7 +223,7 @@ describe("useStoryNarrator Hook", () => {
     });
 
     expect(result.current.activeSegmentIndex).toBe(1);
-    expect(MockAudio.instances[0]!.src).toBe("/audio/stories/story/1.mp3");
+    expect(MockAudio.instances[0]!.src).toBe("/audio/stories/story/1.opus");
 
     act(() => {
       MockAudio.instances[0]!.onended?.();
@@ -264,7 +264,7 @@ describe("useStoryNarrator Hook", () => {
     });
 
     expect(MockAudio.instances.length).toBe(2);
-    expect(MockAudio.instances[1]!.src).toBe("/audio/stories/story/0.mp3");
+    expect(MockAudio.instances[1]!.src).toBe("/audio/stories/story/0.opus");
     expect(result.current.activeSegmentIndex).toBe(0);
   });
 

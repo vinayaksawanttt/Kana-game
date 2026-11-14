@@ -34,33 +34,33 @@ export const DIALOGUE_ASSET_MANIFESTS: Record<string, ScenarioAssetManifest> = {
             backstare: "/assets/dialogue-quest/directions-mcdonalds/characters/sato-san/backstare.webp",
         },
         sfx: {
-            neutral: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-neutral.mp3",
-            happy: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-happy.mp3",
-            pointing: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-pointing.mp3",
-            thinking: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-thinking.mp3",
-            surprised: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-surprised.mp3",
-            confused: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-confused.mp3",
-            embarrased: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-embarrased.mp3",
-            embarrassed: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-embarrased.mp3",
-            sad: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-sad.mp3",
-            goodbye: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-goodbye.mp3",
-            backstare: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-backstare.mp3",
-            "shibuya-crossing": "/assets/dialogue-quest/directions-mcdonalds/sfx/shibuya-crossing-chime.mp3",
-            "atmosphere-bonus": "/assets/dialogue-quest/directions-mcdonalds/sfx/atmosphere-bonus.mp3",
+            neutral: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-neutral.opus",
+            happy: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-happy.opus",
+            pointing: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-pointing.opus",
+            thinking: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-thinking.opus",
+            surprised: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-surprised.opus",
+            confused: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-confused.opus",
+            embarrased: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-embarrased.opus",
+            embarrassed: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-embarrased.opus",
+            sad: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-sad.opus",
+            goodbye: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-goodbye.opus",
+            backstare: "/assets/dialogue-quest/directions-mcdonalds/sfx/sato-backstare.opus",
+            "shibuya-crossing": "/assets/dialogue-quest/directions-mcdonalds/sfx/shibuya-crossing-chime.opus",
+            "atmosphere-bonus": "/assets/dialogue-quest/directions-mcdonalds/sfx/atmosphere-bonus.opus",
         },
         dialogueAudio: {
-            "node-2-npc-reply-polite": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-2-npc-reply-polite.mp3",
-            "node-2-npc-reply-confused": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-2-npc-reply-confused.mp3",
-            "node-2-npc-reply-station": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-2-npc-reply-station.mp3",
-            "node-2-npc-reply-casual": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-2-npc-reply-casual.mp3",
-            "node-2-npc-reply-english": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-2-npc-reply-english.mp3",
-            "node-3-npc-directions": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-3-npc-directions.mp3",
-            "node-3-npc-walking-time": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-3-npc-walking-time.mp3",
-            "node-3-npc-directions-vague": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-3-npc-directions-vague.mp3",
-            "node-end-perfect": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-end-perfect.mp3",
-            "node-end-success": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-end-success.mp3",
-            "node-end-awkward": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-end-awkward.mp3",
-            "node-fail-rude": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-fail-rude.mp3",
+            "node-2-npc-reply-polite": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-2-npc-reply-polite.opus",
+            "node-2-npc-reply-confused": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-2-npc-reply-confused.opus",
+            "node-2-npc-reply-station": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-2-npc-reply-station.opus",
+            "node-2-npc-reply-casual": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-2-npc-reply-casual.opus",
+            "node-2-npc-reply-english": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-2-npc-reply-english.opus",
+            "node-3-npc-directions": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-3-npc-directions.opus",
+            "node-3-npc-walking-time": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-3-npc-walking-time.opus",
+            "node-3-npc-directions-vague": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-3-npc-directions-vague.opus",
+            "node-end-perfect": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-end-perfect.opus",
+            "node-end-success": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-end-success.opus",
+            "node-end-awkward": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-end-awkward.opus",
+            "node-fail-rude": "/assets/dialogue-quest/directions-mcdonalds/dialogue/node-fail-rude.opus",
         },
     },
     "farmer-morning-market": {
@@ -90,43 +90,43 @@ export const DIALOGUE_ASSET_MANIFESTS: Record<string, ScenarioAssetManifest> = {
         },
         sfx: {
             neutral:
-                "/assets/dialogue-quest/farmer-morning-market/sfx/yamada-neutral.mp3",
+                "/assets/dialogue-quest/farmer-morning-market/sfx/yamada-neutral.opus",
             happy:
-                "/assets/dialogue-quest/farmer-morning-market/sfx/yamada-happy.mp3",
+                "/assets/dialogue-quest/farmer-morning-market/sfx/yamada-happy.opus",
             proud:
-                "/assets/dialogue-quest/farmer-morning-market/sfx/yamada-proud.mp3",
+                "/assets/dialogue-quest/farmer-morning-market/sfx/yamada-proud.opus",
             surprised:
-                "/assets/dialogue-quest/farmer-morning-market/sfx/yamada-surprised.mp3",
+                "/assets/dialogue-quest/farmer-morning-market/sfx/yamada-surprised.opus",
             disappointed:
-                "/assets/dialogue-quest/farmer-morning-market/sfx/yamada-disappointed.mp3",
+                "/assets/dialogue-quest/farmer-morning-market/sfx/yamada-disappointed.opus",
             goodbye:
-                "/assets/dialogue-quest/farmer-morning-market/sfx/yamada-goodbye.mp3",
+                "/assets/dialogue-quest/farmer-morning-market/sfx/yamada-goodbye.opus",
             backstare:
-                "/assets/dialogue-quest/farmer-morning-market/sfx/yamada-backstare.mp3",
+                "/assets/dialogue-quest/farmer-morning-market/sfx/yamada-backstare.opus",
         },
         dialogueAudio: {
             "farmer-node-2-reply-warm":
-                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-node-2-reply-warm.mp3",
+                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-node-2-reply-warm.opus",
             "farmer-node-2-reply-recommend":
-                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-node-2-reply-recommend.mp3",
+                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-node-2-reply-recommend.opus",
             "farmer-node-2-reply-discount":
-                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-node-2-reply-discount.mp3",
+                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-node-2-reply-discount.opus",
             "farmer-node-2-reply-annoyed":
-                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-node-2-reply-annoyed.mp3",
+                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-node-2-reply-annoyed.opus",
             "farmer-node-3-eating-advice":
-                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-node-3-eating-advice.mp3",
+                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-node-3-eating-advice.opus",
             "farmer-node-3-apple-deal":
-                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-node-3-apple-deal.mp3",
+                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-node-3-apple-deal.opus",
             "farmer-node-3-single-portion":
-                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-node-3-single-portion.mp3",
+                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-node-3-single-portion.opus",
             "farmer-end-perfect":
-                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-end-perfect.mp3",
+                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-end-perfect.opus",
             "farmer-end-success":
-                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-end-success.mp3",
+                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-end-success.opus",
             "farmer-end-awkward":
-                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-end-awkward.mp3",
+                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-end-awkward.opus",
             "farmer-fail-rude":
-                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-fail-rude.mp3",
+                "/assets/dialogue-quest/farmer-morning-market/dialogue/farmer-fail-rude.opus",
         },
     },
     "koban-lost-wallet": {
@@ -154,35 +154,35 @@ export const DIALOGUE_ASSET_MANIFESTS: Record<string, ScenarioAssetManifest> = {
         },
         sfx: {
             neutral:
-                "/assets/dialogue-quest/koban-lost-wallet/sfx/tanaka-neutral.mp3",
+                "/assets/dialogue-quest/koban-lost-wallet/sfx/tanaka-neutral.opus",
             relieved:
-                "/assets/dialogue-quest/koban-lost-wallet/sfx/tanaka-relieved.mp3",
+                "/assets/dialogue-quest/koban-lost-wallet/sfx/tanaka-relieved.opus",
             stern:
-                "/assets/dialogue-quest/koban-lost-wallet/sfx/tanaka-stern.mp3",
+                "/assets/dialogue-quest/koban-lost-wallet/sfx/tanaka-stern.opus",
             thinking:
-                "/assets/dialogue-quest/koban-lost-wallet/sfx/tanaka-thinking.mp3",
+                "/assets/dialogue-quest/koban-lost-wallet/sfx/tanaka-thinking.opus",
             goodbye:
-                "/assets/dialogue-quest/koban-lost-wallet/sfx/tanaka-goodbye.mp3",
+                "/assets/dialogue-quest/koban-lost-wallet/sfx/tanaka-goodbye.opus",
         },
         dialogueAudio: {
             "koban-node-2-polite-inquiry":
-                "/assets/dialogue-quest/koban-lost-wallet/dialogue/koban-node-2-polite-inquiry.mp3",
+                "/assets/dialogue-quest/koban-lost-wallet/dialogue/koban-node-2-polite-inquiry.opus",
             "koban-node-2-urgent-calm":
-                "/assets/dialogue-quest/koban-lost-wallet/dialogue/koban-node-2-urgent-calm.mp3",
+                "/assets/dialogue-quest/koban-lost-wallet/dialogue/koban-node-2-urgent-calm.opus",
             "koban-node-2-theft-investigate":
-                "/assets/dialogue-quest/koban-lost-wallet/dialogue/koban-node-2-theft-investigate.mp3",
+                "/assets/dialogue-quest/koban-lost-wallet/dialogue/koban-node-2-theft-investigate.opus",
             "koban-node-2-stern-reprimand":
-                "/assets/dialogue-quest/koban-lost-wallet/dialogue/koban-node-2-stern-reprimand.mp3",
+                "/assets/dialogue-quest/koban-lost-wallet/dialogue/koban-node-2-stern-reprimand.opus",
             "koban-node-3-database-found":
-                "/assets/dialogue-quest/koban-lost-wallet/dialogue/koban-node-3-database-found.mp3",
+                "/assets/dialogue-quest/koban-lost-wallet/dialogue/koban-node-3-database-found.opus",
             "koban-node-3-further-questions":
-                "/assets/dialogue-quest/koban-lost-wallet/dialogue/koban-node-3-further-questions.mp3",
+                "/assets/dialogue-quest/koban-lost-wallet/dialogue/koban-node-3-further-questions.opus",
             "koban-end-perfect":
-                "/assets/dialogue-quest/koban-lost-wallet/dialogue/koban-end-perfect.mp3",
+                "/assets/dialogue-quest/koban-lost-wallet/dialogue/koban-end-perfect.opus",
             "koban-end-report-filed":
-                "/assets/dialogue-quest/koban-lost-wallet/dialogue/koban-end-report-filed.mp3",
+                "/assets/dialogue-quest/koban-lost-wallet/dialogue/koban-end-report-filed.opus",
             "koban-end-investigating":
-                "/assets/dialogue-quest/koban-lost-wallet/dialogue/koban-end-investigating.mp3",
+                "/assets/dialogue-quest/koban-lost-wallet/dialogue/koban-end-investigating.opus",
         },
     },
     "teacher-extension": {
@@ -214,41 +214,165 @@ export const DIALOGUE_ASSET_MANIFESTS: Record<string, ScenarioAssetManifest> = {
         },
         sfx: {
             neutral:
-                "/assets/dialogue-quest/teacher-extension/sfx/takahashi-neutral.mp3",
+                "/assets/dialogue-quest/teacher-extension/sfx/takahashi-neutral.opus",
             worried:
-                "/assets/dialogue-quest/teacher-extension/sfx/takahashi-worried.mp3",
+                "/assets/dialogue-quest/teacher-extension/sfx/takahashi-worried.opus",
             sad:
-                "/assets/dialogue-quest/teacher-extension/sfx/takahashi-worried.mp3",
+                "/assets/dialogue-quest/teacher-extension/sfx/takahashi-worried.opus",
             happy:
-                "/assets/dialogue-quest/teacher-extension/sfx/takahashi-happy.mp3",
+                "/assets/dialogue-quest/teacher-extension/sfx/takahashi-happy.opus",
             thinking:
-                "/assets/dialogue-quest/teacher-extension/sfx/takahashi-thinking.mp3",
+                "/assets/dialogue-quest/teacher-extension/sfx/takahashi-thinking.opus",
             scolding:
-                "/assets/dialogue-quest/teacher-extension/sfx/takahashi-scolding.mp3",
+                "/assets/dialogue-quest/teacher-extension/sfx/takahashi-scolding.opus",
             goodbye:
-                "/assets/dialogue-quest/teacher-extension/sfx/takahashi-goodbye.mp3",
+                "/assets/dialogue-quest/teacher-extension/sfx/takahashi-goodbye.opus",
         },
         dialogueAudio: {
             "teacher-node-1-knock":
-                "/assets/dialogue-quest/teacher-extension/dialogue/teacher-node-1-knock.mp3",
+                "/assets/dialogue-quest/teacher-extension/dialogue/teacher-node-1-knock.opus",
             "teacher-node-2-listen-warm":
-                "/assets/dialogue-quest/teacher-extension/dialogue/teacher-node-2-listen-warm.mp3",
+                "/assets/dialogue-quest/teacher-extension/dialogue/teacher-node-2-listen-warm.opus",
             "teacher-node-2-listen-direct":
-                "/assets/dialogue-quest/teacher-extension/dialogue/teacher-node-2-listen-direct.mp3",
+                "/assets/dialogue-quest/teacher-extension/dialogue/teacher-node-2-listen-direct.opus",
             "teacher-node-2-scold-slang":
-                "/assets/dialogue-quest/teacher-extension/dialogue/teacher-node-2-scold-slang.mp3",
+                "/assets/dialogue-quest/teacher-extension/dialogue/teacher-node-2-scold-slang.opus",
             "teacher-node-fail-rude":
-                "/assets/dialogue-quest/teacher-extension/dialogue/teacher-node-fail-rude.mp3",
+                "/assets/dialogue-quest/teacher-extension/dialogue/teacher-node-fail-rude.opus",
             "teacher-node-3-grant-extension":
-                "/assets/dialogue-quest/teacher-extension/dialogue/teacher-node-3-grant-extension.mp3",
+                "/assets/dialogue-quest/teacher-extension/dialogue/teacher-node-3-grant-extension.opus",
             "teacher-node-3-study-advice":
-                "/assets/dialogue-quest/teacher-extension/dialogue/teacher-node-3-study-advice.mp3",
+                "/assets/dialogue-quest/teacher-extension/dialogue/teacher-node-3-study-advice.opus",
             "teacher-node-3-clarify-deadline":
-                "/assets/dialogue-quest/teacher-extension/dialogue/teacher-node-3-clarify-deadline.mp3",
+                "/assets/dialogue-quest/teacher-extension/dialogue/teacher-node-3-clarify-deadline.opus",
             "teacher-end-perfect":
-                "/assets/dialogue-quest/teacher-extension/dialogue/teacher-end-perfect.mp3",
+                "/assets/dialogue-quest/teacher-extension/dialogue/teacher-end-perfect.opus",
             "teacher-end-awkward":
-                "/assets/dialogue-quest/teacher-extension/dialogue/teacher-end-awkward.mp3",
+                "/assets/dialogue-quest/teacher-extension/dialogue/teacher-end-awkward.opus",
+        },
+    },
+    "landlord-ac-repair": {
+        backgrounds: {
+            "landlord-courtyard":
+                "/assets/dialogue-quest/landlord-ac-repair/backgrounds/landlord-courtyard.webp",
+            "landlord-office":
+                "/assets/dialogue-quest/landlord-ac-repair/backgrounds/landlord-office.webp",
+            default:
+                "/assets/dialogue-quest/landlord-ac-repair/backgrounds/landlord-courtyard.webp",
+        },
+        characterSprites: {
+            neutral:
+                "/assets/dialogue-quest/landlord-ac-repair/characters/suzuki-san/neutral.webp",
+            worried:
+                "/assets/dialogue-quest/landlord-ac-repair/characters/suzuki-san/worried.webp",
+            thinking:
+                "/assets/dialogue-quest/landlord-ac-repair/characters/suzuki-san/thinking.webp",
+            happy:
+                "/assets/dialogue-quest/landlord-ac-repair/characters/suzuki-san/happy.webp",
+            annoyed:
+                "/assets/dialogue-quest/landlord-ac-repair/characters/suzuki-san/annoyed.webp",
+            goodbye:
+                "/assets/dialogue-quest/landlord-ac-repair/characters/suzuki-san/goodbye.webp",
+        },
+        sfx: {
+            neutral:
+                "/assets/dialogue-quest/landlord-ac-repair/sfx/suzuki-neutral.opus",
+            worried:
+                "/assets/dialogue-quest/landlord-ac-repair/sfx/suzuki-worried.opus",
+            thinking:
+                "/assets/dialogue-quest/landlord-ac-repair/sfx/suzuki-thinking.opus",
+            happy:
+                "/assets/dialogue-quest/landlord-ac-repair/sfx/suzuki-happy.opus",
+            annoyed:
+                "/assets/dialogue-quest/landlord-ac-repair/sfx/suzuki-annoyed.opus",
+            goodbye:
+                "/assets/dialogue-quest/landlord-ac-repair/sfx/suzuki-goodbye.opus",
+        },
+        dialogueAudio: {
+            "landlord-node-1-greet":
+                "/assets/dialogue-quest/landlord-ac-repair/dialogue/landlord-node-1-greet.opus",
+            "landlord-node-2-worried-inquiry":
+                "/assets/dialogue-quest/landlord-ac-repair/dialogue/landlord-node-2-worried-inquiry.opus",
+            "landlord-node-2-ask-room-details":
+                "/assets/dialogue-quest/landlord-ac-repair/dialogue/landlord-node-2-ask-room-details.opus",
+            "landlord-node-2-annoyed-warning":
+                "/assets/dialogue-quest/landlord-ac-repair/dialogue/landlord-node-2-annoyed-warning.opus",
+            "landlord-node-3-schedule-confirm":
+                "/assets/dialogue-quest/landlord-ac-repair/dialogue/landlord-node-3-schedule-confirm.opus",
+            "landlord-node-3-troubleshoot-first":
+                "/assets/dialogue-quest/landlord-ac-repair/dialogue/landlord-node-3-troubleshoot-first.opus",
+            "landlord-end-perfect":
+                "/assets/dialogue-quest/landlord-ac-repair/dialogue/landlord-end-perfect.opus",
+            "landlord-end-rescheduled":
+                "/assets/dialogue-quest/landlord-ac-repair/dialogue/landlord-end-rescheduled.opus",
+            "landlord-end-awkward":
+                "/assets/dialogue-quest/landlord-ac-repair/dialogue/landlord-end-awkward.opus",
+            "landlord-fail-rude":
+                "/assets/dialogue-quest/landlord-ac-repair/dialogue/landlord-fail-rude.opus",
+        },
+    },
+    "employer-shift-request": {
+        backgrounds: {
+            "cafe-counter-afterhours":
+                "/assets/dialogue-quest/employer-shift-request/backgrounds/cafe-counter-afterhours.webp",
+            "staff-breakroom":
+                "/assets/dialogue-quest/employer-shift-request/backgrounds/staff-breakroom.webp",
+            default:
+                "/assets/dialogue-quest/employer-shift-request/backgrounds/cafe-counter-afterhours.webp",
+        },
+        characterSprites: {
+            neutral:
+                "/assets/dialogue-quest/employer-shift-request/characters/nakamura-san/neutral.webp",
+            happy:
+                "/assets/dialogue-quest/employer-shift-request/characters/nakamura-san/happy.webp",
+            thinking:
+                "/assets/dialogue-quest/employer-shift-request/characters/nakamura-san/thinking.webp",
+            troubled:
+                "/assets/dialogue-quest/employer-shift-request/characters/nakamura-san/troubled.webp",
+            stern:
+                "/assets/dialogue-quest/employer-shift-request/characters/nakamura-san/stern.webp",
+            goodbye:
+                "/assets/dialogue-quest/employer-shift-request/characters/nakamura-san/goodbye.webp",
+        },
+        sfx: {
+            neutral:
+                "/assets/dialogue-quest/employer-shift-request/sfx/nakamura-neutral.opus",
+            happy:
+                "/assets/dialogue-quest/employer-shift-request/sfx/nakamura-happy.opus",
+            thinking:
+                "/assets/dialogue-quest/employer-shift-request/sfx/nakamura-thinking.opus",
+            troubled:
+                "/assets/dialogue-quest/employer-shift-request/sfx/nakamura-troubled.opus",
+            stern:
+                "/assets/dialogue-quest/employer-shift-request/sfx/nakamura-stern.opus",
+            goodbye:
+                "/assets/dialogue-quest/employer-shift-request/sfx/nakamura-goodbye.opus",
+        },
+        dialogueAudio: {
+            "emp-node-1-greet":
+                "/assets/dialogue-quest/employer-shift-request/dialogue/emp-node-1-greet.opus",
+            "emp-node-2-listen-warm":
+                "/assets/dialogue-quest/employer-shift-request/dialogue/emp-node-2-listen-warm.opus",
+            "emp-node-2-check-schedule":
+                "/assets/dialogue-quest/employer-shift-request/dialogue/emp-node-2-check-schedule.opus",
+            "emp-node-2-remind-etiquette":
+                "/assets/dialogue-quest/employer-shift-request/dialogue/emp-node-2-remind-etiquette.opus",
+            "emp-node-2-stern-warning":
+                "/assets/dialogue-quest/employer-shift-request/dialogue/emp-node-2-stern-warning.opus",
+            "emp-node-3-approve-praise":
+                "/assets/dialogue-quest/employer-shift-request/dialogue/emp-node-3-approve-praise.opus",
+            "emp-node-3-check-friday":
+                "/assets/dialogue-quest/employer-shift-request/dialogue/emp-node-3-check-friday.opus",
+            "emp-node-3-short-staffed":
+                "/assets/dialogue-quest/employer-shift-request/dialogue/emp-node-3-short-staffed.opus",
+            "emp-end-perfect":
+                "/assets/dialogue-quest/employer-shift-request/dialogue/emp-end-perfect.opus",
+            "emp-end-approved":
+                "/assets/dialogue-quest/employer-shift-request/dialogue/emp-end-approved.opus",
+            "emp-end-awkward":
+                "/assets/dialogue-quest/employer-shift-request/dialogue/emp-end-awkward.opus",
+            "emp-fail-unprofessional":
+                "/assets/dialogue-quest/employer-shift-request/dialogue/emp-fail-unprofessional.opus",
         },
     },
 };
@@ -310,7 +434,40 @@ export function getScenarioDialogueAudioUrl(
     return manifest.dialogueAudio[nodeId];
 }
 
+/**
+ * Returns the pre-generated VOICEVOX MP3 path for a player response option (choiceId).
+ */
+export function getScenarioChoiceAudioUrl(
+    scenarioId: string,
+    choiceId: string
+): string {
+    return `/assets/dialogue-quest/${scenarioId}/choices/${choiceId}.opus`;
+}
+
+/**
+ * Returns the lofi background ambient audio loop MP3 path for a given scenario.
+ */
+export function getScenarioAmbientAudioUrl(scenarioId: string): string {
+    return `/assets/dialogue-quest/${scenarioId}/sfx/ambience.opus`;
+}
+
 let activeCharacterSfx: HTMLAudioElement | null = null;
+
+/**
+ * Stops any currently playing scenario expressive SFX.
+ */
+export function stopScenarioSfx(): void {
+    if (!activeCharacterSfx) return;
+    try {
+        activeCharacterSfx.pause();
+        activeCharacterSfx.currentTime = 0;
+        activeCharacterSfx.src = "";
+    } catch {
+        // Ignore audio cleanup errors
+    } finally {
+        activeCharacterSfx = null;
+    }
+}
 
 /**
  * Non-blocking play of a scenario expressive SFX.
@@ -328,7 +485,13 @@ export function playScenarioSfx(
 
     try {
         const probe = new Audio();
-        if (!probe.canPlayType || !probe.canPlayType("audio/mpeg")) {
+        if (
+            !probe.canPlayType ||
+            (!probe.canPlayType('audio/ogg; codecs="opus"') &&
+             !probe.canPlayType("audio/ogg") &&
+             !probe.canPlayType("audio/webm") &&
+             !probe.canPlayType("audio/mpeg"))
+        ) {
             return;
         }
         if (key !== "atmosphere-bonus" && activeCharacterSfx) {

@@ -10,11 +10,11 @@ export type GameSfxName =
 const SFX_STORAGE_KEY = "kana-sfx-enabled";
 
 export const SFX_PATHS: Record<GameSfxName, string> = {
-  "temple-bell-gong": "/audio/sfx/temple-bell-gong.mp3",
-  "victory-fanfare": "/audio/sfx/victory-fanfare.mp3",
-  "correct-chime": "/audio/sfx/correct-chime.mp3",
-  "incorrect-chime": "/audio/sfx/incorrect-chime.mp3",
-  "card-flip": "/audio/sfx/card-flip.mp3",
+  "temple-bell-gong": "/audio/sfx/temple-bell-gong.opus",
+  "victory-fanfare": "/audio/sfx/victory-fanfare.opus",
+  "correct-chime": "/audio/sfx/correct-chime.opus",
+  "incorrect-chime": "/audio/sfx/incorrect-chime.opus",
+  "card-flip": "/audio/sfx/card-flip.opus",
 };
 
 const SFX_VOLUMES: Record<GameSfxName, number> = {
@@ -82,7 +82,13 @@ export function playGameSfx(
 
   try {
     const probe = new Audio();
-    if (!probe.canPlayType || !probe.canPlayType("audio/mpeg")) {
+    if (
+      !probe.canPlayType ||
+      (!probe.canPlayType('audio/ogg; codecs="opus"') &&
+        !probe.canPlayType("audio/ogg") &&
+        !probe.canPlayType("audio/webm") &&
+        !probe.canPlayType("audio/mpeg"))
+    ) {
       return;
     }
 

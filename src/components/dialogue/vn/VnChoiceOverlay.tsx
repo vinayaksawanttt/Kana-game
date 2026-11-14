@@ -37,7 +37,7 @@ export const VnChoiceOverlay: React.FC<VnChoiceOverlayProps> = ({
   }, [choices, disabled, onSelectChoice]);
 
   return (
-    <div className="relative z-30 mb-1.5 w-full max-w-2xl mx-auto space-y-1">
+    <div className="relative z-30 w-full max-w-2xl mx-auto space-y-1">
       <div className="flex items-center justify-between px-1 text-[10px] font-bold uppercase tracking-wider text-white/70">
         <span className="flex items-center gap-1.5 drop-shadow-xs">
           <span>Choose Response</span>

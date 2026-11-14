@@ -118,15 +118,20 @@ export function AudioDialogueSequence({
     setIsPlaying(true);
     setActiveLineIndex(-1);
 
-    // Try playing the authentic pre-generated full scene MP3
-    const audioUrl = `/audio/listening-scenes/${encodeURIComponent(sceneId)}.mp3`;
+    // Try playing the authentic pre-generated full scene Opus audio
+    const audioUrl = `/audio/listening-scenes/${encodeURIComponent(sceneId)}.opus`;
 
-    const canPlayMp3 =
+    const canPlayAudio =
       typeof window !== "undefined" &&
       typeof Audio !== "undefined" &&
-      Boolean(new Audio().canPlayType?.("audio/mpeg"));
+      Boolean(
+        new Audio().canPlayType?.('audio/ogg; codecs="opus"') ||
+        new Audio().canPlayType?.("audio/ogg") ||
+        new Audio().canPlayType?.("audio/webm") ||
+        new Audio().canPlayType?.("audio/mpeg")
+      );
 
-    if (canPlayMp3) {
+    if (canPlayAudio) {
       try {
         const audio = new Audio(audioUrl);
         audio.preload = "auto";

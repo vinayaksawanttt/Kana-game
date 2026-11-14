@@ -342,7 +342,7 @@ describe("Listening Quiz Engine", () => {
     const extracted = extractListeningSentences(mixedVocab);
     expect(extracted).toHaveLength(1);
     expect(extracted[0].id).toBe("vocab-sent:ada066edfd:0");
-    expect(extracted[0].audioSrc).toBe("/audio/listening/N5/ada066edfd_0.mp3");
+    expect(extracted[0].audioSrc).toBe("/audio/listening/N5/ada066edfd_0.opus");
     expect(extracted[0].reading).toBe("もうスミスさんにあわれましたね。");
   });
 

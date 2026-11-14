@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { DialogueSession, ScenarioMeta } from "@/data/dialogue/types";
+import { DialogueNode, DialogueSession, ScenarioMeta } from "@/data/dialogue/types";
 import { RotateCcw, ArrowRight, BookmarkPlus, Check, Volume2, Sparkles, MessageCircle, Eye, EyeOff } from "lucide-react";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
 import { addVocabularyToSrs } from "@/lib/srs/service";
@@ -10,12 +10,16 @@ import { addVocabularyToSrs } from "@/lib/srs/service";
 interface VnEndAssessmentOverlayProps {
   session: DialogueSession;
   scenario: ScenarioMeta;
+  finalNode?: DialogueNode;
+  onReplayFinalAudio?: () => void;
   onRestart: () => void;
 }
 
 export const VnEndAssessmentOverlay: React.FC<VnEndAssessmentOverlayProps> = ({
   session,
   scenario,
+  finalNode,
+  onReplayFinalAudio,
   onRestart,
 }) => {
   const { playSentence } = useJapaneseAudio();
@@ -187,6 +191,36 @@ export const VnEndAssessmentOverlay: React.FC<VnEndAssessmentOverlayProps> = ({
                   </span>
                 </div>
               </div>
+
+              {/* Character's Final Farewell / Reaction Line */}
+              {finalNode && finalNode.npcTextJa && (
+                <div className="flex items-start justify-between gap-2 rounded-xl border border-[var(--sakura)]/40 bg-white/5 p-2 text-[11px] text-white/95 leading-snug">
+                  <div className="min-w-0 flex-1">
+                    <p className="text-[10px] font-bold text-[var(--sakura-light)] mb-0.5">
+                      {finalNode.speakerNameJa} · {finalNode.speakerNameEn}
+                    </p>
+                    <p className="font-japanese font-bold text-white">
+                      「{finalNode.npcTextJa}」
+                    </p>
+                    {finalNode.npcTextEn && (
+                      <p className="mt-0.5 text-[10px] text-slate-300">
+                        {finalNode.npcTextEn}
+                      </p>
+                    )}
+                  </div>
+                  {onReplayFinalAudio && (
+                    <button
+                      type="button"
+                      onClick={onReplayFinalAudio}
+                      className="flex size-7 shrink-0 items-center justify-center rounded-lg border border-white/15 bg-white/10 text-white/85 hover:border-[var(--sakura)] hover:bg-white/20 hover:text-white transition-colors cursor-pointer"
+                      title="Replay character's final response"
+                      aria-label="Replay character's final response"
+                    >
+                      <Volume2 className="size-3.5" />
+                    </button>
+                  )}
+                </div>
+              )}
 
               {/* Evaluation summary */}
               <div className="rounded-xl border border-white/10 bg-white/5 p-2 text-[11px] text-white/90 leading-snug">

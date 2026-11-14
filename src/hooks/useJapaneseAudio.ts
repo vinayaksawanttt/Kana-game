@@ -111,6 +111,7 @@ function getServerSnapshot(): AudioState {
 }
 
 let globalAudio: HTMLAudioElement | null = null;
+let currentPlaybackId = 0;
 let sequenceAbortController: { aborted: boolean } | null = null;
 let currentAudioResolver: (() => void) | null = null;
 
@@ -127,6 +128,8 @@ let activeStitchTimer: ReturnType<typeof setTimeout> | null = null;
 
 function stopCurrentPlayback() {
   if (typeof window === "undefined") return;
+
+  currentPlaybackId += 1;
 
   if (sequenceAbortController) {
     sequenceAbortController.aborted = true;
@@ -151,11 +154,14 @@ function stopCurrentPlayback() {
   }
 
   if (globalAudio) {
+    const audioToStop = globalAudio;
+    globalAudio = null;
     try {
-      globalAudio.pause();
-      globalAudio.currentTime = 0;
-      globalAudio.onended = null;
-      globalAudio.onerror = null;
+      audioToStop.pause();
+      audioToStop.currentTime = 0;
+      audioToStop.onended = null;
+      audioToStop.onerror = null;
+      audioToStop.src = "";
     } catch {
       // Ignore
     }
@@ -259,7 +265,8 @@ async function playMoraStepsAsync(
   ttsText: string,
   rateOverride?: number
 ): Promise<void> {
-  if (typeof window === "undefined") return;
+  const playbackId = currentPlaybackId;
+  if (typeof window === "undefined" || playbackId !== currentPlaybackId) return;
   if (!moraSteps || moraSteps.length === 0) {
     await fallbackToSpeechAsync(ttsText, slug, rateOverride ?? 0.92);
     return;
@@ -285,6 +292,8 @@ async function playMoraStepsAsync(
       await ctx.resume();
     }
 
+    if (controller.aborted || playbackId !== currentPlaybackId) return;
+
     const uniqueSrcs = Array.from(
       new Set(moraSteps.filter((s) => s.type === "mora" && s.src).map((s) => s.src))
     );
@@ -292,7 +301,7 @@ async function playMoraStepsAsync(
       uniqueSrcs.map(async (src) => [src, await loadTrimmedKanaBuffer(ctx, src)] as const)
     );
 
-    if (controller.aborted) return;
+    if (controller.aborted || playbackId !== currentPlaybackId) return;
 
     const bufferMap = new Map<string, TrimmedKanaBuffer>();
     for (const [src, entry] of loadedEntries) {
@@ -387,12 +396,16 @@ async function playMoraStepsAsync(
         if (currentAudioResolver === resolve) {
           currentAudioResolver = null;
         }
-        updateState({ isPlaying: false, activeKey: null, activeChar: null });
+        if (playbackId === currentPlaybackId) {
+          updateState({ isPlaying: false, activeKey: null, activeChar: null });
+        }
         resolve();
       }, totalWaitMs);
     });
   } catch {
-    updateState({ isPlaying: false, activeKey: null, activeChar: null });
+    if (playbackId === currentPlaybackId) {
+      updateState({ isPlaying: false, activeKey: null, activeChar: null });
+    }
   } finally {
     if (sequenceAbortController === controller) {
       sequenceAbortController = null;
@@ -407,14 +420,22 @@ function fallbackToSpeechAsync(
   activeChar?: string
 ): Promise<void> {
   return new Promise((resolve) => {
+    const playbackId = currentPlaybackId;
     if (typeof window === "undefined" || !("speechSynthesis" in window)) {
-      updateState({ isPlaying: false, activeKey: null, activeChar: null });
+      if (playbackId === currentPlaybackId) {
+        updateState({ isPlaying: false, activeKey: null, activeChar: null });
+      }
       resolve();
       return;
     }
 
     try {
       window.speechSynthesis.cancel();
+      if (playbackId !== currentPlaybackId) {
+        resolve();
+        return;
+      }
+
       const utterance = new SpeechSynthesisUtterance(ttsText);
       utterance.lang = "ja-JP";
       utterance.rate = baseRate * state.playbackSpeed;
@@ -426,19 +447,25 @@ function fallbackToSpeechAsync(
       }
 
       utterance.onend = () => {
-        updateState({ isPlaying: false, activeKey: null, activeChar: null });
+        if (playbackId === currentPlaybackId) {
+          updateState({ isPlaying: false, activeKey: null, activeChar: null });
+        }
         resolve();
       };
 
       utterance.onerror = () => {
-        updateState({ isPlaying: false, activeKey: null, activeChar: null });
+        if (playbackId === currentPlaybackId) {
+          updateState({ isPlaying: false, activeKey: null, activeChar: null });
+        }
         resolve();
       };
 
       updateState({ isPlaying: true, activeKey: slug, activeChar: activeChar ?? null });
       window.speechSynthesis.speak(utterance);
     } catch {
-      updateState({ isPlaying: false, activeKey: null, activeChar: null });
+      if (playbackId === currentPlaybackId) {
+        updateState({ isPlaying: false, activeKey: null, activeChar: null });
+      }
       resolve();
     }
   });
@@ -452,24 +479,41 @@ function playAudioItemAsync(
   rateOverride?: number
 ): Promise<void> {
   return new Promise((resolve) => {
-    if (typeof window === "undefined") {
+    const playbackId = currentPlaybackId;
+
+    if (typeof window === "undefined" || playbackId !== currentPlaybackId) {
       resolve();
       return;
     }
 
     const effectiveRate = rateOverride ?? state.playbackSpeed;
 
-    if (!globalAudio) {
+    if (globalAudio) {
+      const prev = globalAudio;
+      globalAudio = null;
       try {
-        globalAudio = new Audio();
+        prev.pause();
+        prev.currentTime = 0;
+        prev.onended = null;
+        prev.onerror = null;
+        prev.src = "";
       } catch {
-        fallbackToSpeechAsync(ttsText, slug, 0.92 * effectiveRate, activeChar).then(resolve);
-        return;
+        // Ignore
       }
     }
 
-    const audio = globalAudio;
-    audio.src = src;
+    let audio: HTMLAudioElement;
+    try {
+      audio = new Audio(src);
+      globalAudio = audio;
+    } catch {
+      if (playbackId === currentPlaybackId) {
+        fallbackToSpeechAsync(ttsText, slug, 0.92 * effectiveRate, activeChar).then(resolve);
+      } else {
+        resolve();
+      }
+      return;
+    }
 
     try {
       audio.playbackRate = effectiveRate;
@@ -483,22 +527,41 @@ function playAudioItemAsync(
     const finish = () => {
       if (hasEndedOrErrored) return;
       hasEndedOrErrored = true;
-      currentAudioResolver = null;
+      if (currentAudioResolver === finish) {
+        currentAudioResolver = null;
+      }
+      if (globalAudio === audio) {
+        globalAudio = null;
+      }
       audio.onended = null;
       audio.onerror = null;
-      updateState({ isPlaying: false, activeKey: null, activeChar: null });
+      if (playbackId === currentPlaybackId) {
+        updateState({ isPlaying: false, activeKey: null, activeChar: null });
+      }
       resolve();
+    };
+
+    const handleFailure = () => {
+      if (hasEndedOrErrored) return;
+      if (playbackId !== currentPlaybackId) {
+        finish();
+        return;
+      }
+      hasEndedOrErrored = true;
+      if (currentAudioResolver === finish) {
+        currentAudioResolver = null;
+      }
+      if (globalAudio === audio) {
+        globalAudio = null;
+      }
+      audio.onended = null;
+      audio.onerror = null;
+      fallbackToSpeechAsync(ttsText, slug, 0.92 * effectiveRate, activeChar).then(resolve);
     };
 
     currentAudioResolver = finish;
     audio.onended = finish;
-
-    audio.onerror = () => {
-      if (hasEndedOrErrored) return;
-      hasEndedOrErrored = true;
-      currentAudioResolver = null;
-      fallbackToSpeechAsync(ttsText, slug, 0.92 * effectiveRate, activeChar).then(finish);
-    };
+    audio.onerror = handleFailure;
 
     updateState({ isPlaying: true, activeKey: slug, activeChar: activeChar ?? null });
 
@@ -507,25 +570,27 @@ function playAudioItemAsync(
       if (playPromise && typeof playPromise.catch === "function") {
         playPromise.catch((err: unknown) => {
           if (hasEndedOrErrored) return;
-          // AbortError is normal when switching between audio clips or stopping
-          if (err instanceof Error && err.name === "AbortError") {
+          // AbortError or superseded playback must never start a late fallback
+          if (
+            playbackId !== currentPlaybackId ||
+            (err instanceof Error && err.name === "AbortError")
+          ) {
             finish();
             return;
           }
-          hasEndedOrErrored = true;
-          currentAudioResolver = null;
-          fallbackToSpeechAsync(ttsText, slug, 0.92 * effectiveRate, activeChar).then(finish);
+          handleFailure();
         });
       }
     } catch (err: unknown) {
       if (hasEndedOrErrored) return;
-      if (err instanceof Error && err.name === "AbortError") {
+      if (
+        playbackId !== currentPlaybackId ||
+        (err instanceof Error && err.name === "AbortError")
+      ) {
         finish();
         return;
       }
-      hasEndedOrErrored = true;
-      currentAudioResolver = null;
-      fallbackToSpeechAsync(ttsText, slug, 0.92 * effectiveRate, activeChar).then(finish);
+      handleFailure();
     }
   });
 }
@@ -693,6 +758,7 @@ export function useJapaneseAudio() {
       if (typeof window === "undefined" || !sentenceJa) return;
 
       stopCurrentPlayback();
+      const playbackId = currentPlaybackId;
 
       const payload = resolveSentenceAudio(sentenceJa, id);
       const staticSrc = options?.audioSrc || payload.staticSrc;
@@ -711,6 +777,8 @@ export function useJapaneseAudio() {
       // 2. Priority Live Fallback: Stream directly from local VOICEVOX if running!
       void (async () => {
         try {
+          if (playbackId !== currentPlaybackId) return;
+
           const speakerId = options?.speaker ?? 14; // Default: Meimei Himari (calm female narrator)
           const cacheKey = `${payload.key}:${speakerId}:${options?.rate ?? 1}`;
           let blobUrl = voicevoxBlobCache.get(cacheKey);
@@ -731,8 +799,11 @@ export function useJapaneseAudio() {
                 signal: controller.signal,
               });
 
+              if (playbackId !== currentPlaybackId) return;
+
               if (res.ok) {
                 const blob = await res.blob();
+                if (playbackId !== currentPlaybackId) return;
                 blobUrl = URL.createObjectURL(blob);
                 voicevoxBlobCache.set(cacheKey, blobUrl);
                 isVoicevoxAvailable = true;
@@ -743,6 +814,8 @@ export function useJapaneseAudio() {
               clearTimeout(timeoutId);
             }
           }
+
+          if (playbackId !== currentPlaybackId) return;
 
           if (blobUrl) {
             await playAudioItemAsync(
@@ -755,8 +828,11 @@ export function useJapaneseAudio() {
             return;
           }
         } catch (err) {
+          if (playbackId !== currentPlaybackId) return;
           console.warn("[VOICEVOX] request failed, falling back to mora stitching:", err);
         }
+
+        if (playbackId !== currentPlaybackId) return;
 
         // 3. Fallback: Check if browser has a native Japanese speech voice (Chrome/Edge/Safari)
         const hasJaVoice =
@@ -779,6 +855,7 @@ export function useJapaneseAudio() {
         const steps = kanaString ? decomposeKanaToMoraSteps(kanaString) : [];
 
         if (!hasJaVoice && steps.length > 0 && typeof window.AudioContext !== "undefined") {
+          if (playbackId !== currentPlaybackId) return;
           await playMoraStepsAsync(steps, payload.key, payload.ttsText, options?.rate);
           return;
         }
@@ -788,7 +865,9 @@ export function useJapaneseAudio() {
         if (!hasJaVoice && steps.length === 0 && typeof window.AudioContext !== "undefined") {
           try {
             const { KuromojiService } = await import("@/engine/analyzer");
+            if (playbackId !== currentPlaybackId) return;
             const tokenizer = await KuromojiService.getTokenizer();
+            if (playbackId !== currentPlaybackId) return;
             const tokens = tokenizer.tokenize(sentenceJa);
             let phonetic = "";
             for (const t of tokens) {
@@ -804,13 +883,17 @@ export function useJapaneseAudio() {
             }
             const asyncSteps = decomposeKanaToMoraSteps(phonetic);
             if (asyncSteps.length > 0) {
+              if (playbackId !== currentPlaybackId) return;
               await playMoraStepsAsync(asyncSteps, payload.key, payload.ttsText, options?.rate);
               return;
             }
           } catch {
+            if (playbackId !== currentPlaybackId) return;
             // Fall back to speechSynthesis below if Kuromoji initialization fails
           }
         }
+
+        if (playbackId !== currentPlaybackId) return;
 
         // 5. Final fallback to browser speech synthesis
         const effectiveRate = options?.rate ? payload.rate * options.rate : payload.rate;

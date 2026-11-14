@@ -115,7 +115,7 @@ export function resolveKanaAudio(item: { char: string; romaji?: string[] }): Kan
   const slug = toKanaAudioKey(item.char, item.romaji?.[0]);
   return {
     slug,
-    src: `/audio/kana/${slug}.mp3`,
+    src: `/audio/kana/${slug}.opus`,
     ttsText: toTtsText(item.char),
     lang: "ja-JP",
   };
@@ -177,9 +177,9 @@ export function normalizeKanjiReading(rawReading: string): string {
 
 /**
  * Resolves full audio payload for a Kanji reading.
- * If the reading is a single kana mora already in /audio/kana/${slug}.mp3,
+ * If the reading is a single kana mora already in /audio/kana/${slug}.opus,
  * it reuses that asset directly.
- * Otherwise, it maps to /audio/readings/${encodeURIComponent(hira)}.mp3.
+ * Otherwise, it maps to /audio/readings/${encodeURIComponent(hira)}.opus.
  */
 export function resolveKanjiReadingAudio(rawReading: string): KanjiReadingAudioPayload {
   const hira = normalizeKanjiReading(rawReading);
@@ -188,7 +188,7 @@ export function resolveKanjiReadingAudio(rawReading: string): KanjiReadingAudioP
   if (kanaSlug) {
     return {
       slug: kanaSlug,
-      src: `/audio/kana/${kanaSlug}.mp3`,
+      src: `/audio/kana/${kanaSlug}.opus`,
       ttsText: hira,
       lang: "ja-JP",
       isKanaReuse: true,
@@ -198,7 +198,7 @@ export function resolveKanjiReadingAudio(rawReading: string): KanjiReadingAudioP
   const safeSlug = encodeURIComponent(hira);
   return {
     slug: hira,
-    src: `/audio/readings/${safeSlug}.mp3`,
+    src: `/audio/readings/${safeSlug}.opus`,
     ttsText: hira,
     lang: "ja-JP",
     isKanaReuse: false,
@@ -264,7 +264,7 @@ for (const [char, slug] of CHAR_TO_SLUG_MAP.entries()) {
 
 /**
  * Decomposes any Japanese reading into a sequence of Kana-Mora audio steps
- * referencing existing /audio/kana/{slug}.mp3 files, plus sokuon (っ) and choonpu (ー).
+ * referencing existing /audio/kana/{slug}.opus files, plus sokuon (っ) and choonpu (ー).
  */
 export function decomposeKanaToMoraSteps(reading: string): MoraAudioStep[] {
   const stripped = (reading || "").trim().replace(/[\[\]\(\)（）\s・、。！？]/g, "");
@@ -282,7 +282,7 @@ export function decomposeKanaToMoraSteps(reading: string): MoraAudioStep[] {
           mora: two,
           type: "mora",
           slug: twoSlug,
-          src: `/audio/kana/${twoSlug}.mp3`,
+          src: `/audio/kana/${twoSlug}.opus`,
         });
         i += 2;
         continue;
@@ -319,7 +319,7 @@ export function decomposeKanaToMoraSteps(reading: string): MoraAudioStep[] {
         mora: ch,
         type: "mora",
         slug: oneSlug,
-        src: `/audio/kana/${oneSlug}.mp3`,
+        src: `/audio/kana/${oneSlug}.opus`,
       });
     }
     i += 1;
@@ -354,9 +354,9 @@ export interface VocabAudioPayload {
 
 /**
  * Resolves audio payload for a vocabulary word using the Hybrid Engine:
- * 1. Single-mora / known kana -> /audio/kana/{slug}.mp3 (hasStaticClip: true)
- * 2. Core signature vocab clip -> /audio/vocab/{slug}.mp3 (hasStaticClip: true)
- * 3. Pre-generated kanji reading clip -> /audio/readings/{slug}.mp3 (hasStaticClip: true)
+ * 1. Single-mora / known kana -> /audio/kana/{slug}.opus (hasStaticClip: true)
+ * 2. Core signature vocab clip -> /audio/vocab/{slug}.opus (hasStaticClip: true)
+ * 3. Pre-generated kanji reading clip -> /audio/readings/{slug}.opus (hasStaticClip: true)
  * 4. Any other word -> Kana-Mora Stitching via moraSteps (hasStaticClip: false)
  */
 export function resolveVocabAudio(item: {
@@ -374,7 +374,7 @@ export function resolveVocabAudio(item: {
   // 1. Single-mora kana clip reuse
   const kanaSlug = CHAR_TO_SLUG_MAP.get(normalizedKana);
   if (kanaSlug) {
-    const kanaSrc = `/audio/kana/${kanaSlug}.mp3`;
+    const kanaSrc = `/audio/kana/${kanaSlug}.opus`;
     return {
       key: normalizedKana,
       src: kanaSrc,
@@ -387,7 +387,7 @@ export function resolveVocabAudio(item: {
   }
 
   const safeSlug = encodeURIComponent(normalizedKana);
-  const vocabSrc = `/audio/vocab/${safeSlug}.mp3`;
+  const vocabSrc = `/audio/vocab/${safeSlug}.opus`;
 
   // 2. Signature vocab neural clip
   if (STATIC_VOCAB_AUDIO.has(normalizedKana)) {
@@ -410,7 +410,7 @@ export function resolveVocabAudio(item: {
       ttsText: normalizedKana,
       lang: "ja-JP",
       hasStaticClip: true,
-      staticSrc: `/audio/readings/${safeSlug}.mp3`,
+      staticSrc: `/audio/readings/${safeSlug}.opus`,
       moraSteps,
     };
   }
@@ -641,7 +641,7 @@ export function buildStoryAudioQueue(story: {
         id: `${story.slug}:${paragraphIndex}:${sentenceIndex}`,
         rawJa,
         ttsText,
-        src: `/audio/stories/${encodeURIComponent(story.slug)}/${index}.mp3`,
+        src: `/audio/stories/${encodeURIComponent(story.slug)}/${index}.opus`,
       });
     });
   });

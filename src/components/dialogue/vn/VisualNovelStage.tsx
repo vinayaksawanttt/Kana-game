@@ -10,9 +10,13 @@ import { VnHud } from "./VnHud";
 import { VnEndAssessmentOverlay } from "./VnEndAssessmentOverlay";
 import { VnBacklogDrawer, DialogueLogEntry } from "./VnBacklogDrawer";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
+import { useGameSfx } from "@/hooks/useGameSfx";
 import {
+  getScenarioAmbientAudioUrl,
+  getScenarioChoiceAudioUrl,
   getScenarioDialogueAudioUrl,
   playScenarioSfx,
+  stopScenarioSfx,
 } from "@/data/dialogue/assets";
 import { Smartphone, RotateCw } from "lucide-react";
 
@@ -41,13 +45,33 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
   onSelectChoice,
   onRestart,
 }) => {
-  const { playSentence, isPlaying, activeKey } = useJapaneseAudio();
+  const {
+    playSentence,
+    stopAudio,
+    isPlaying,
+    activeKey,
+    autoPlayEnabled,
+    setAutoPlayEnabled,
+  } = useJapaneseAudio();
+  const { sfxEnabled } = useGameSfx();
   const containerRef = useRef<HTMLDivElement>(null);
+  const ambientAudioRef = useRef<HTMLAudioElement | null>(null);
 
-  // User reading & audio preferences
+  // User reading & audio preferences (Autoplay defaults to true and persists across scenes via useJapaneseAudio)
   const [showFurigana, setShowFurigana] = useState(true);
   const [showEnglish, setShowEnglish] = useState(true);
-  const [autoPlayAudio, setAutoPlayAudio] = useState(false);
+  const [fallbackAutoPlay, setFallbackAutoPlay] = useState(true);
+  const autoPlayAudio = autoPlayEnabled ?? fallbackAutoPlay;
+
+  const handleToggleAutoPlay = useCallback(() => {
+    const next = !autoPlayAudio;
+    if (setAutoPlayEnabled) {
+      setAutoPlayEnabled(next);
+    } else {
+      setFallbackAutoPlay(next);
+    }
+  }, [autoPlayAudio, setAutoPlayEnabled]);
+
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [forceLandscape, setForceLandscape] = useState(false);
   const [isMobilePortrait, setIsMobilePortrait] = useState(false);
@@ -96,14 +120,84 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
     };
   }, []);
 
-  // Auto-play dialogue voice when entering new dialogue node
+  // Soft Lofi Background Ambient Loop (ElevenLabs soundscape playing until the scene ends, with automatic voice ducking)
+  useEffect(() => {
+    if (typeof window === "undefined" || typeof Audio === "undefined") return;
+    if (!sfxEnabled || isFinished) {
+      if (ambientAudioRef.current) {
+        ambientAudioRef.current.pause();
+      }
+      return;
+    }
+
+    const probe = new Audio();
+    if (
+      !probe.canPlayType ||
+      (!probe.canPlayType('audio/ogg; codecs="opus"') &&
+        !probe.canPlayType("audio/ogg") &&
+        !probe.canPlayType("audio/webm") &&
+        !probe.canPlayType("audio/mpeg"))
+    ) {
+      return;
+    }
+
+    const ambientUrl = getScenarioAmbientAudioUrl(scenario.id);
+    const audio = new Audio(ambientUrl);
+    audio.loop = true;
+    audio.volume = 0.15;
+    ambientAudioRef.current = audio;
+
+    const tryStartAmbient = () => {
+      if (ambientAudioRef.current && ambientAudioRef.current.paused && sfxEnabled && !isFinished) {
+        const p = ambientAudioRef.current.play();
+        if (p && typeof p.catch === "function") {
+          p.catch(() => {});
+        }
+      }
+    };
+
+    tryStartAmbient();
+    window.addEventListener("pointerdown", tryStartAmbient, { once: true });
+    window.addEventListener("keydown", tryStartAmbient, { once: true });
+
+    return () => {
+      window.removeEventListener("pointerdown", tryStartAmbient);
+      window.removeEventListener("keydown", tryStartAmbient);
+      audio.pause();
+      audio.src = "";
+      if (ambientAudioRef.current === audio) {
+        ambientAudioRef.current = null;
+      }
+    };
+  }, [scenario.id, sfxEnabled, isFinished]);
+
+  // Stop all dialogue/SFX/ambient audio immediately when leaving the scene
+  useEffect(() => {
+    return () => {
+      stopAudio?.();
+      stopScenarioSfx();
+      if (ambientAudioRef.current) {
+        ambientAudioRef.current.pause();
+        ambientAudioRef.current.src = "";
+        ambientAudioRef.current = null;
+      }
+    };
+  }, [stopAudio]);
+
+  // Duck background ambient volume while dialogue voice is speaking so voice is never overpowered
+  useEffect(() => {
+    if (!ambientAudioRef.current) return;
+    ambientAudioRef.current.volume = isPlaying ? 0.06 : 0.15;
+  }, [isPlaying]);
+
+  // Auto-play dialogue voice when entering new dialogue node (including final farewell / awkward / failure nodes!)
   useEffect(() => {
     if (
-      !isFinished &&
       autoPlayAudio &&
       currentNode.npcTextJa &&
       !currentNode.npcTextJa.startsWith("（")
     ) {
+      stopScenarioSfx();
       playSentence(currentNode.npcTextJa, currentNode.id, {
         audioSrc: getScenarioDialogueAudioUrl(scenario.id, currentNode.id),
         reading: currentNode.npcReadingHiragana,
@@ -119,11 +213,10 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
     currentNode.npcRomaji,
     currentNode.speakerVoiceId,
     autoPlayAudio,
-    isFinished,
     playSentence,
   ]);
 
-  // Play Sato-san anime expressive reaction sound on node/expression transition (including endings)
+  // Play character expressive reaction sound on node/expression transition when full voice autoplay is off
   useEffect(() => {
     if (
       currentNode.id === scenario.initialNodeId ||
@@ -142,6 +235,9 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
 
   const handleSelectChoiceInternal = useCallback(
     (choice: DialogueChoice) => {
+      stopAudio?.();
+      stopScenarioSfx();
+
       // Record player choice in backlog
       setBacklogHistory((prev) => [
         ...prev,
@@ -160,7 +256,7 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
       playScenarioSfx(scenario.id, "atmosphere-bonus", 0.35);
       onSelectChoice(choice);
     },
-    [onSelectChoice, scenario.id]
+    [onSelectChoice, scenario.id, stopAudio]
   );
 
   const handleReplayDialogueAudio = useCallback(() => {
@@ -174,9 +270,14 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
 
   const handlePreviewChoiceAudio = useCallback(
     (textJa: string, id: string, reading?: string, romaji?: string) => {
-      playSentence(textJa, id, { reading, romaji });
+      playSentence(textJa, id, {
+        audioSrc: getScenarioChoiceAudioUrl(scenario.id, id),
+        reading,
+        romaji,
+        speaker: 11,
+      });
     },
-    [playSentence]
+    [playSentence, scenario.id]
   );
 
   const handleToggleFullscreen = useCallback(() => {
@@ -209,9 +310,11 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
   }, []);
 
   return (
-    <div className={`relative mx-auto flex w-full flex-col items-center select-none ${
-      isFullscreen ? "fixed inset-0 z-50 bg-black p-0" : "max-w-6xl"
-    }`}>
+    <div
+      className={`relative mx-auto flex w-full flex-col items-center select-none ${
+        isFullscreen ? "fixed inset-0 z-50 bg-black p-0" : "max-w-6xl"
+      }`}
+    >
       {/* Mobile Portrait Orientation Prompt */}
       {isMobilePortrait && !forceLandscape && (
         <div className="mb-2 flex w-full items-center justify-between gap-2 rounded-xl border border-[var(--sakura)]/60 bg-slate-950/90 px-3 py-1.5 text-xs text-white shadow-md backdrop-blur-md">
@@ -274,7 +377,7 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
           isFullscreen={isFullscreen}
           onToggleFurigana={() => setShowFurigana(!showFurigana)}
           onToggleEnglish={() => setShowEnglish(!showEnglish)}
-          onToggleAutoPlay={() => setAutoPlayAudio(!autoPlayAudio)}
+          onToggleAutoPlay={handleToggleAutoPlay}
           onToggleFullscreen={handleToggleFullscreen}
           onOpenBacklog={() => setIsBacklogOpen(true)}
           onRestart={onRestart}
@@ -285,35 +388,45 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
           isOpen={isBacklogOpen}
           onClose={() => setIsBacklogOpen(false)}
           logs={backlogHistory}
-          onPlayAudio={(textJa, id, reading) => playSentence(textJa, id, { reading })}
+          onPlayAudio={(textJa, id, reading) => {
+            const dialogueAudio = getScenarioDialogueAudioUrl(scenario.id, id);
+            const choiceAudio = dialogueAudio ? undefined : getScenarioChoiceAudioUrl(scenario.id, id);
+            playSentence(textJa, id, {
+              audioSrc: dialogueAudio || choiceAudio,
+              reading,
+            });
+          }}
         />
 
-        {/* Layer 4: Interactive Zone (Choices + Dialogue Box OR In-Scene End Assessment) */}
+        {/* Layer 4: Interactive Zone (Choices + Feedback below Choices + Dialogue Box OR In-Scene End Assessment) */}
         {!isFinished ? (
           <div className="relative z-30 flex w-full flex-col justify-end p-3 sm:p-5 sm:pb-5">
-            {/* Etiquette Feedback Toast from Previous Turn (Ultra-compact) */}
-            {lastTurnFeedback && (
-              <div className="mb-1.5 max-w-2xl mx-auto flex w-full items-center gap-2 rounded-lg border border-[var(--sakura)]/60 bg-slate-950/85 px-3 py-1 shadow-md backdrop-blur-md text-xs animate-in fade-in slide-in-from-bottom-2 duration-300">
-                <span className="text-xs shrink-0">💡</span>
-                <div className="min-w-0 flex-1 flex items-baseline gap-2 truncate">
-                  <span className="font-japanese font-bold text-[var(--sakura-light)] text-xs truncate shrink-0">
-                    {lastTurnFeedback.ja}
-                  </span>
-                  <span className="text-[10px] text-white/70 truncate hidden sm:inline">
-                    {lastTurnFeedback.en}
-                  </span>
-                </div>
-              </div>
-            )}
+            {/* Upper Stack: Response Options on top, Progress/Etiquette Feedback below them, with mb-5 gap before Dialogue Box nameplate */}
+            {((currentNode.choices && currentNode.choices.length > 0) || lastTurnFeedback) && (
+              <div className="mb-5 flex w-full flex-col gap-2">
+                {currentNode.choices && currentNode.choices.length > 0 && (
+                  <VnChoiceOverlay
+                    choices={currentNode.choices}
+                    onSelectChoice={handleSelectChoiceInternal}
+                    onPreviewAudio={handlePreviewChoiceAudio}
+                    showEnglish={showEnglish}
+                  />
+                )}
 
-            {/* Response Choices Floating Overlay (Sleek, Unobtrusive) */}
-            {currentNode.choices && currentNode.choices.length > 0 && (
-              <VnChoiceOverlay
-                choices={currentNode.choices}
-                onSelectChoice={handleSelectChoiceInternal}
-                onPreviewAudio={handlePreviewChoiceAudio}
-                showEnglish={showEnglish}
-              />
+                {lastTurnFeedback && (
+                  <div className="max-w-2xl mx-auto flex w-full items-center gap-2 rounded-xl border border-[var(--sakura)]/60 bg-slate-950/90 px-3 py-1.5 shadow-md backdrop-blur-md text-xs animate-in fade-in slide-in-from-bottom-2 duration-300">
+                    <span className="text-xs shrink-0">💡</span>
+                    <div className="min-w-0 flex-1 flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+                      <span className="font-japanese font-bold text-[var(--sakura-light)] text-xs">
+                        {lastTurnFeedback.ja}
+                      </span>
+                      <span className="text-[10px] text-white/75">
+                        {lastTurnFeedback.en}
+                      </span>
+                    </div>
+                  </div>
+                )}
+              </div>
             )}
 
             {/* Bottom Dialogue Box */}
@@ -338,6 +451,8 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
             <VnEndAssessmentOverlay
               session={session}
               scenario={scenario}
+              finalNode={currentNode}
+              onReplayFinalAudio={handleReplayDialogueAudio}
               onRestart={onRestart}
             />
           )

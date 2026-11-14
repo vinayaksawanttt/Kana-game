@@ -112,10 +112,17 @@ export interface ValidatedScene {
  * Resolves chime files from standard directories.
  */
 export function resolveChimeFile(filename: string): string {
+  const base = filename.replace(/\.(mp3|opus)$/i, "");
   const candidates = [
     path.resolve(process.cwd(), "public/audio/sfx", filename),
+    path.resolve(process.cwd(), "public/audio/sfx", `${base}.opus`),
+    path.resolve(process.cwd(), "public/audio/sfx", `${base}.mp3`),
     path.resolve(process.cwd(), "public/audio", filename),
+    path.resolve(process.cwd(), "public/audio", `${base}.opus`),
+    path.resolve(process.cwd(), "public/audio", `${base}.mp3`),
     path.resolve(process.cwd(), filename),
+    path.resolve(process.cwd(), `${base}.opus`),
+    path.resolve(process.cwd(), `${base}.mp3`),
   ];
 
   for (const candidate of candidates) {

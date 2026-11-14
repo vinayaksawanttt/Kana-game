@@ -79,13 +79,13 @@ describe("audio engine", () => {
       // Basic vowels
       expect(resolveKanaAudio({ char: "あ" })).toEqual({
         slug: "a",
-        src: "/audio/kana/a.mp3",
+        src: "/audio/kana/a.opus",
         ttsText: "あ",
         lang: "ja-JP",
       });
       expect(resolveKanaAudio({ char: "ア" })).toEqual({
         slug: "a",
-        src: "/audio/kana/a.mp3",
+        src: "/audio/kana/a.opus",
         ttsText: "あ",
         lang: "ja-JP",
       });
@@ -93,54 +93,54 @@ describe("audio engine", () => {
       // Yōon combination
       expect(resolveKanaAudio({ char: "しゃ" })).toEqual({
         slug: "sha",
-        src: "/audio/kana/sha.mp3",
+        src: "/audio/kana/sha.opus",
         ttsText: "しゃ",
         lang: "ja-JP",
       });
       expect(resolveKanaAudio({ char: "シャ" })).toEqual({
         slug: "sha",
-        src: "/audio/kana/sha.mp3",
+        src: "/audio/kana/sha.opus",
         ttsText: "しゃ",
         lang: "ja-JP",
       });
 
       // Dakuten with phonetic mergers (Yotsugana)
-      expect(resolveKanaAudio({ char: "じ" }).src).toBe("/audio/kana/ji.mp3");
-      expect(resolveKanaAudio({ char: "ジ" }).src).toBe("/audio/kana/ji.mp3");
-      expect(resolveKanaAudio({ char: "ぢ" }).src).toBe("/audio/kana/ji.mp3");
-      expect(resolveKanaAudio({ char: "ヂ" }).src).toBe("/audio/kana/ji.mp3");
+      expect(resolveKanaAudio({ char: "じ" }).src).toBe("/audio/kana/ji.opus");
+      expect(resolveKanaAudio({ char: "ジ" }).src).toBe("/audio/kana/ji.opus");
+      expect(resolveKanaAudio({ char: "ぢ" }).src).toBe("/audio/kana/ji.opus");
+      expect(resolveKanaAudio({ char: "ヂ" }).src).toBe("/audio/kana/ji.opus");
 
-      expect(resolveKanaAudio({ char: "ず" }).src).toBe("/audio/kana/zu.mp3");
-      expect(resolveKanaAudio({ char: "ズ" }).src).toBe("/audio/kana/zu.mp3");
-      expect(resolveKanaAudio({ char: "づ" }).src).toBe("/audio/kana/zu.mp3");
-      expect(resolveKanaAudio({ char: "ヅ" }).src).toBe("/audio/kana/zu.mp3");
+      expect(resolveKanaAudio({ char: "ず" }).src).toBe("/audio/kana/zu.opus");
+      expect(resolveKanaAudio({ char: "ズ" }).src).toBe("/audio/kana/zu.opus");
+      expect(resolveKanaAudio({ char: "づ" }).src).toBe("/audio/kana/zu.opus");
+      expect(resolveKanaAudio({ char: "ヅ" }).src).toBe("/audio/kana/zu.opus");
     });
 
     it("resolves extended katakana to clean slugs without collisions", () => {
       expect(resolveKanaAudio({ char: "ファ" })).toEqual({
         slug: "fa",
-        src: "/audio/kana/fa.mp3",
+        src: "/audio/kana/fa.opus",
         ttsText: "ファ",
         lang: "ja-JP",
       });
 
       expect(resolveKanaAudio({ char: "ティ" })).toEqual({
         slug: "ti",
-        src: "/audio/kana/ti.mp3",
+        src: "/audio/kana/ti.opus",
         ttsText: "ティ",
         lang: "ja-JP",
       });
 
       expect(resolveKanaAudio({ char: "ヴ" })).toEqual({
         slug: "vu",
-        src: "/audio/kana/vu.mp3",
+        src: "/audio/kana/vu.opus",
         ttsText: "ヴ",
         lang: "ja-JP",
       });
 
       expect(resolveKanaAudio({ char: "シェ" })).toEqual({
         slug: "she",
-        src: "/audio/kana/she.mp3",
+        src: "/audio/kana/she.opus",
         ttsText: "シェ",
         lang: "ja-JP",
       });
@@ -195,22 +195,22 @@ describe("audio engine", () => {
       const resolved = resolveKanjiReadingAudio("カ");
       expect(resolved).toEqual({
         slug: "ka",
-        src: "/audio/kana/ka.mp3",
+        src: "/audio/kana/ka.opus",
         ttsText: "か",
         lang: "ja-JP",
         isKanaReuse: true,
       });
 
       const singleHira = resolveKanjiReadingAudio("お-");
-      expect(singleHira.src).toBe("/audio/kana/o.mp3");
+      expect(singleHira.src).toBe("/audio/kana/o.opus");
       expect(singleHira.isKanaReuse).toBe(true);
     });
 
-    it("resolves multi-mora readings to /audio/readings/${encoded}.mp3", () => {
+    it("resolves multi-mora readings to /audio/readings/${encoded}.opus", () => {
       const resolved = resolveKanjiReadingAudio("コウ");
       expect(resolved).toEqual({
         slug: "こう",
-        src: `/audio/readings/${encodeURIComponent("こう")}.mp3`,
+        src: `/audio/readings/${encodeURIComponent("こう")}.opus`,
         ttsText: "こう",
         lang: "ja-JP",
         isKanaReuse: false,
@@ -219,7 +219,7 @@ describe("audio engine", () => {
       const kunMulti = resolveKanjiReadingAudio("まか.せる");
       expect(kunMulti).toEqual({
         slug: "まかせる",
-        src: `/audio/readings/${encodeURIComponent("まかせる")}.mp3`,
+        src: `/audio/readings/${encodeURIComponent("まかせる")}.opus`,
         ttsText: "まかせる",
         lang: "ja-JP",
         isKanaReuse: false,
@@ -262,47 +262,47 @@ describe("audio engine", () => {
       const vocab = resolveVocabAudio({ word: "大勢", reading: "おおぜい" });
       expect(vocab.ttsText).toBe("おおぜい");
       expect(vocab.lang).toBe("ja-JP");
-      expect(vocab.src).toBe(`/audio/vocab/${encodeURIComponent("おおぜい")}.mp3`);
+      expect(vocab.src).toBe(`/audio/vocab/${encodeURIComponent("おおぜい")}.opus`);
       expect(vocab.key).toBe("おおぜい");
     });
 
     it("reuses single-mora kana static audio if available", () => {
       const vocab = resolveVocabAudio({ word: "絵", reading: "え" });
       expect(vocab.ttsText).toBe("え");
-      expect(vocab.src).toBe("/audio/kana/e.mp3");
+      expect(vocab.src).toBe("/audio/kana/e.opus");
     });
 
     it("normalizes Katakana reading to Hiragana", () => {
       const vocab = resolveVocabAudio({ word: "水", reading: "ミズ" });
       expect(vocab.ttsText).toBe("みず");
-      expect(vocab.src).toBe(`/audio/vocab/${encodeURIComponent("みず")}.mp3`);
+      expect(vocab.src).toBe(`/audio/vocab/${encodeURIComponent("みず")}.opus`);
     });
 
     it("falls back to word when reading/kana are omitted", () => {
       const vocab = resolveVocabAudio({ word: "ありがとう" });
       expect(vocab.ttsText).toBe("ありがとう");
-      expect(vocab.src).toBe(`/audio/vocab/${encodeURIComponent("ありがとう")}.mp3`);
+      expect(vocab.src).toBe(`/audio/vocab/${encodeURIComponent("ありがとう")}.opus`);
     });
 
     it("resolves signature vocab and reading clips via Hybrid Engine and decomposes rare words into moraSteps", () => {
       // Signature Shiritori word -> static clip in /audio/vocab/
       const shiritori = resolveVocabAudio({ word: "しりとり", reading: "しりとり" });
       expect(shiritori.hasStaticClip).toBe(true);
-      expect(shiritori.staticSrc).toBe(`/audio/vocab/${encodeURIComponent("しりとり")}.mp3`);
+      expect(shiritori.staticSrc).toBe(`/audio/vocab/${encodeURIComponent("しりとり")}.opus`);
       expect(hasStaticVocabAudio("しりとり")).toBe(true);
 
       // Existing kanji reading clip -> static clip in /audio/readings/
       const mizu = resolveVocabAudio({ word: "水", reading: "みず" });
       expect(mizu.hasStaticClip).toBe(true);
-      expect(mizu.staticSrc).toBe(`/audio/readings/${encodeURIComponent("みず")}.mp3`);
+      expect(mizu.staticSrc).toBe(`/audio/readings/${encodeURIComponent("みず")}.opus`);
 
       // Custom/rare word -> Kana-Mora Stitching fallback (hasStaticClip: false)
       const rare = resolveVocabAudio({ word: "らっぱぶき", reading: "らっぱぶき" });
       expect(rare.hasStaticClip).toBe(false);
       expect(rare.moraSteps.map((s) => s.mora)).toEqual(["ら", "っ", "ぱ", "ぶ", "き"]);
-      expect(rare.moraSteps[0].src).toBe("/audio/kana/ra.mp3");
+      expect(rare.moraSteps[0].src).toBe("/audio/kana/ra.opus");
       expect(rare.moraSteps[1].type).toBe("sokuon");
-      expect(rare.moraSteps[2].src).toBe("/audio/kana/pa.mp3");
+      expect(rare.moraSteps[2].src).toBe("/audio/kana/pa.opus");
     });
 
     it("decomposes yōon digraphs, sokuon, and choonpu accurately in decomposeKanaToMoraSteps", () => {
@@ -361,7 +361,7 @@ describe("audio engine", () => {
         lang: "ja-JP",
         rate: 0.92,
         hasStaticClip: true,
-        staticSrc: "/audio/grammar/N5/a-ga-ichiban.mp3",
+        staticSrc: "/audio/grammar/N5/a-ga-ichiban.opus",
       });
     });
   });
@@ -389,7 +389,7 @@ describe("audio engine", () => {
           id: "test story:0:0",
           rawJa: "<ruby>学校<rt>がっこう</rt></ruby>へ行く。",
           ttsText: "学校へ行く。",
-          src: "/audio/stories/test%20story/0.mp3",
+          src: "/audio/stories/test%20story/0.opus",
         },
         {
           index: 1,
@@ -398,7 +398,7 @@ describe("audio engine", () => {
           id: "test story:0:1",
           rawJa: "友達[ともだち]と会う。",
           ttsText: "友達と会う。",
-          src: "/audio/stories/test%20story/1.mp3",
+          src: "/audio/stories/test%20story/1.opus",
         },
         expect.objectContaining({
           index: 2,
