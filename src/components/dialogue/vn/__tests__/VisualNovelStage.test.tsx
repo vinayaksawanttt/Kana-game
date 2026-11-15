@@ -417,13 +417,15 @@ describe("Visual Novel Architecture & Components", () => {
 
     // VnEndAssessmentOverlay in normal mode vs fullscreen
     const mockSession: DialogueSession = {
-      scenarioId: "directions-mcdonalds",
+      sessionId: "test-session",
+      scenario: DIRECTIONS_SCENARIO_META,
       currentNodeId: "node-end-directions-success",
       turns: [],
       atmosphereMeter: 80,
       totalScore: 120,
       isFinished: true,
       finalEndingType: "success",
+      startedAt: Date.now(),
     };
 
     const { container: normalAssessment, unmount: unmountAssessment1 } = render(
@@ -450,5 +452,39 @@ describe("Visual Novel Architecture & Components", () => {
     const fullscreenModal = fullscreenAssessment.querySelector(".pointer-events-auto");
     expect(fullscreenModal?.className).toContain("max-w-5xl");
     unmountAssessment2();
+  });
+
+  it("keeps dialogue UI and end screen compact on mobile horizontal view even when fullscreen is enabled", () => {
+    // Simulate mobile horizontal viewport (e.g. 844x390)
+    window.innerWidth = 844;
+    window.innerHeight = 390;
+
+    const node = DIRECTIONS_NODES["node-1-initiation"]!;
+    const { container } = render(
+      <VisualNovelStage
+        scenario={DIRECTIONS_SCENARIO_META}
+        currentNode={node}
+        turnNumber={1}
+        totalScore={0}
+        atmosphereValue={65}
+        onSelectChoice={vi.fn()}
+        onRestart={vi.fn()}
+      />
+    );
+
+    // Click fullscreen button in HUD
+    const fsBtn = screen.getByLabelText(/fullscreen/i);
+    fireEvent.click(fsBtn);
+
+    // In mobile landscape (height <= 550), the dialogue box MUST remain compact (max-w-4xl, NOT max-w-5xl)
+    const dialogueText = screen.getByText("（歩きながらスマートフォンを見ています。声をかけられそうです。）");
+    const dialogueBox = dialogueText.closest(".relative.w-full.mx-auto");
+    expect(dialogueBox).toBeTruthy();
+    expect(dialogueBox?.className).toContain("max-w-4xl");
+    expect(dialogueBox?.className).not.toContain("max-w-5xl");
+
+    // Reset window size
+    window.innerWidth = 1024;
+    window.innerHeight = 768;
   });
 });

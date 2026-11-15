@@ -76,6 +76,8 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [forceLandscape, setForceLandscape] = useState(false);
   const [isMobilePortrait, setIsMobilePortrait] = useState(false);
+  const [isMobileLandscape, setIsMobileLandscape] = useState(false);
+  const [isDesktopFullscreen, setIsDesktopFullscreen] = useState(false);
   const [isBacklogOpen, setIsBacklogOpen] = useState(false);
   const [backlogHistory, setBacklogHistory] = useState<DialogueLogEntry[]>([]);
 
@@ -129,11 +131,24 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
 
   const isCurrentSpeaking = isPlaying && activeKey === currentNode.id;
 
-  // Detect mobile portrait orientation
+  // Detect mobile portrait / landscape orientation and desktop fullscreen state
   useEffect(() => {
     const checkOrientation = () => {
-      const isPortrait = window.innerWidth < 768 && window.innerHeight > window.innerWidth;
+      if (typeof window === "undefined") return;
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+      const isPortrait = w < 768 && h > w;
+      // Mobile horizontal: compact height (<= 550px) typical of phones in landscape, or mobile touch screen under 1024px width
+      const isMobLandscape =
+        forceLandscape ||
+        (h <= 550 && w > h) ||
+        (w < 1024 && h < 600 && ("ontouchstart" in window || navigator.maxTouchPoints > 0));
+
       setIsMobilePortrait(isPortrait);
+      setIsMobileLandscape(isMobLandscape);
+
+      const isFs = Boolean(document.fullscreenElement) || isFullscreen;
+      setIsDesktopFullscreen(isFs && !isMobLandscape && w >= 1024 && h >= 560);
     };
 
     checkOrientation();
@@ -143,7 +158,7 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
       window.removeEventListener("resize", checkOrientation);
       window.removeEventListener("orientationchange", checkOrientation);
     };
-  }, []);
+  }, [isFullscreen, forceLandscape]);
 
   // Soft Lofi Background Ambient Loop (ElevenLabs soundscape playing until the scene ends, with automatic voice ducking)
   useEffect(() => {
@@ -616,7 +631,7 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
           <div
             onClick={handleSkipChoiceTransition}
             className={`relative z-30 flex w-full flex-col justify-end transition-all duration-300 ${
-              isFullscreen
+              isDesktopFullscreen
                 ? "p-4 sm:p-8 xl:p-12 pb-6 sm:pb-8 xl:pb-10"
                 : "p-3 sm:p-5 sm:pb-5"
             }`}
@@ -627,7 +642,7 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
               showChoiceTransitionFeedback) && (
               <div
                 className={`flex w-full flex-col ${
-                  isFullscreen ? "mb-6 sm:mb-8 gap-3" : "mb-5 gap-2"
+                  isDesktopFullscreen ? "mb-6 sm:mb-8 gap-3" : "mb-5 gap-2"
                 }`}
               >
                 {currentNode.choices && currentNode.choices.length > 0 && (
@@ -638,7 +653,7 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
                     onSelectChoice={handleSelectChoiceInternal}
                     onPreviewAudio={handlePreviewChoiceAudio}
                     showEnglish={showEnglish}
-                    isFullscreen={isFullscreen}
+                    isFullscreen={isDesktopFullscreen}
                   />
                 )}
 
@@ -646,7 +661,7 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
                 {showChoiceTransitionFeedback && transitioningChoice && (
                   <div
                     className={`mx-auto flex w-full items-center justify-between shadow-[0_8px_24px_rgba(0,0,0,0.6)] backdrop-blur-xl animate-in fade-in slide-in-from-bottom-2 duration-300 ${
-                      isFullscreen
+                      isDesktopFullscreen
                         ? "max-w-4xl xl:max-w-5xl 2xl:max-w-6xl rounded-2xl sm:rounded-3xl border-2 border-[var(--sakura)]/80 bg-slate-950/95 px-5 py-3.5 sm:px-6 sm:py-4 gap-4"
                         : "max-w-2xl rounded-2xl border border-[var(--sakura)]/80 bg-slate-950/95 px-4 py-2.5 gap-3 text-xs"
                     }`}
@@ -654,7 +669,7 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
                     <div className="flex items-center gap-2.5 min-w-0">
                       <span
                         className={`shrink-0 ${
-                          isFullscreen ? "text-xl sm:text-2xl" : "text-base"
+                          isDesktopFullscreen ? "text-xl sm:text-2xl" : "text-base"
                         }`}
                       >
                         💡
@@ -662,7 +677,7 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
                       <div className="min-w-0">
                         <p
                           className={`font-japanese font-bold text-pink-200 ${
-                            isFullscreen
+                            isDesktopFullscreen
                               ? "text-sm sm:text-base xl:text-lg"
                               : "text-xs sm:text-sm"
                           }`}
@@ -671,7 +686,7 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
                         </p>
                         <p
                           className={`text-white/80 line-clamp-1 ${
-                            isFullscreen
+                            isDesktopFullscreen
                               ? "text-xs sm:text-sm xl:text-base mt-0.5"
                               : "text-[11px]"
                           }`}
@@ -682,7 +697,7 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
                     </div>
                     <span
                       className={`shrink-0 font-bold uppercase tracking-wider ${
-                        isFullscreen
+                        isDesktopFullscreen
                           ? "rounded-xl px-3.5 py-1 text-xs sm:text-sm"
                           : "rounded-lg px-2.5 py-0.5 text-[10px]"
                       } ${
@@ -709,14 +724,14 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
                 {!transitioningChoice && lastTurnFeedback && (
                   <div
                     className={`mx-auto flex w-full items-center shadow-md backdrop-blur-md animate-in fade-in slide-in-from-bottom-2 duration-300 ${
-                      isFullscreen
+                      isDesktopFullscreen
                         ? "max-w-4xl xl:max-w-5xl 2xl:max-w-6xl rounded-2xl border-2 border-[var(--sakura)]/60 bg-slate-950/90 px-4 py-2.5 sm:px-5 sm:py-3 gap-3"
                         : "max-w-2xl rounded-xl border border-[var(--sakura)]/60 bg-slate-950/90 px-3 py-1.5 gap-2 text-xs"
                     }`}
                   >
                     <span
                       className={`shrink-0 ${
-                        isFullscreen ? "text-base sm:text-lg" : "text-xs"
+                        isDesktopFullscreen ? "text-base sm:text-lg" : "text-xs"
                       }`}
                     >
                       💡
@@ -724,7 +739,7 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
                     <div className="min-w-0 flex-1 flex flex-wrap items-baseline gap-x-2.5 gap-y-1">
                       <span
                         className={`font-japanese font-bold text-pink-200 ${
-                          isFullscreen
+                          isDesktopFullscreen
                             ? "text-sm sm:text-base xl:text-lg"
                             : "text-xs"
                         }`}
@@ -733,7 +748,7 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
                       </span>
                       <span
                         className={`text-white/75 ${
-                          isFullscreen
+                          isDesktopFullscreen
                             ? "text-xs sm:text-sm xl:text-base"
                             : "text-[10px]"
                         }`}
@@ -758,7 +773,7 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
               showFurigana={showFurigana}
               showEnglish={showEnglish}
               autoPlayAudio={autoPlayAudio}
-              isFullscreen={isFullscreen}
+              isFullscreen={isDesktopFullscreen}
               onReplayAudio={handleReplayDialogueAudio}
               onToggleFurigana={() => setShowFurigana(!showFurigana)}
               onToggleEnglish={() => setShowEnglish(!showEnglish)}
@@ -771,7 +786,7 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
               session={session}
               scenario={scenario}
               finalNode={currentNode}
-              isFullscreen={isFullscreen}
+              isFullscreen={isDesktopFullscreen}
               onReplayFinalAudio={handleReplayDialogueAudio}
               onRestart={onRestart}
             />
