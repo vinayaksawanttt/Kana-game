@@ -82,6 +82,7 @@ export interface ScenarioMeta {
     | "civic";
   defaultBackgroundKey?: string;
   defaultExpression?: string;
+  hoverExpression?: string;
   vocabList?: ScenarioVocabItem[];
 }
 

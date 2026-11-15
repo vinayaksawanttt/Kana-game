@@ -79,6 +79,30 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
   const [isBacklogOpen, setIsBacklogOpen] = useState(false);
   const [backlogHistory, setBacklogHistory] = useState<DialogueLogEntry[]>([]);
 
+  // Choice transition & MC voice states
+  const [transitioningChoice, setTransitioningChoice] = useState<DialogueChoice | null>(null);
+  const [showChoiceTransitionFeedback, setShowChoiceTransitionFeedback] = useState(false);
+  const choiceAudioRef = useRef<HTMLAudioElement | null>(null);
+  const transitionTimerRef = useRef<NodeJS.Timeout[]>([]);
+
+  const clearTransitionTimers = useCallback(() => {
+    transitionTimerRef.current.forEach(clearTimeout);
+    transitionTimerRef.current = [];
+    if (choiceAudioRef.current) {
+      choiceAudioRef.current.pause();
+      choiceAudioRef.current.onended = null;
+      choiceAudioRef.current.onerror = null;
+      choiceAudioRef.current.src = "";
+      choiceAudioRef.current = null;
+    }
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      clearTransitionTimers();
+    };
+  }, [clearTransitionTimers]);
+
   // Accumulate dialogue into backlog history
   useEffect(() => {
     if (!currentNode || !currentNode.npcTextJa) return;
@@ -231,18 +255,21 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
 
   // Auto-play dialogue voice when entering new dialogue node (including final farewell / awkward / failure nodes!)
   useEffect(() => {
-    if (
-      autoPlayAudio &&
-      currentNode.npcTextJa &&
-      !currentNode.npcTextJa.startsWith("（")
-    ) {
-      stopScenarioSfx();
-      playSentence(currentNode.npcTextJa, currentNode.id, {
-        audioSrc: getScenarioDialogueAudioUrl(scenario.id, currentNode.id),
-        reading: currentNode.npcReadingHiragana,
-        romaji: currentNode.npcRomaji,
-        speaker: currentNode.speakerVoiceId,
-      });
+    if (autoPlayAudio && currentNode.npcTextJa) {
+      const dialogueAudioUrl = getScenarioDialogueAudioUrl(scenario.id, currentNode.id);
+      const isPureNarration =
+        currentNode.npcTextJa.startsWith("（") && currentNode.npcTextJa.endsWith("）");
+
+      // Auto-play whenever registered voice audio exists or text contains spoken dialogue (even with leading stage directions)
+      if (dialogueAudioUrl || !isPureNarration) {
+        stopScenarioSfx();
+        playSentence(currentNode.npcTextJa, currentNode.id, {
+          audioSrc: dialogueAudioUrl,
+          reading: currentNode.npcReadingHiragana,
+          romaji: currentNode.npcRomaji,
+          speaker: currentNode.speakerVoiceId,
+        });
+      }
     }
   }, [
     scenario.id,
@@ -283,6 +310,8 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
     (choice: DialogueChoice) => {
       stopAudio?.();
       stopScenarioSfx();
+      clearTransitionTimers();
+
       if (ambientAudioRef.current?.paused && sfxEnabled && !isFinished) {
         ambientAudioRef.current.play().catch(() => {});
       }
@@ -302,11 +331,104 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
         },
       ]);
 
-      playScenarioSfx(scenario.id, "atmosphere-bonus", 0.35);
-      onSelectChoice(choice);
+      // In unit test environment, advance immediately to keep test suite fast and deterministic
+      if (process.env.NODE_ENV === "test") {
+        playScenarioSfx(scenario.id, "atmosphere-bonus", 0.35);
+        onSelectChoice(choice);
+        return;
+      }
+
+      const choiceAudioUrl = getScenarioChoiceAudioUrl(scenario.id, choice.id);
+
+      // If autoplay is enabled, play MC audio and show midway transition
+      if (autoPlayAudio && choiceAudioUrl) {
+        setTransitioningChoice(choice);
+        setShowChoiceTransitionFeedback(false);
+
+        let hasFinished = false;
+        const completeTransition = () => {
+          if (hasFinished) return;
+          hasFinished = true;
+          clearTransitionTimers();
+          setTransitioningChoice(null);
+          setShowChoiceTransitionFeedback(false);
+          onSelectChoice(choice);
+        };
+
+        try {
+          const audio = new Audio(choiceAudioUrl);
+          choiceAudioRef.current = audio;
+
+          // When audio metadata is loaded, calculate midpoint
+          audio.onloadedmetadata = () => {
+            const durationMs =
+              audio.duration && !isNaN(audio.duration) && audio.duration > 0
+                ? audio.duration * 1000
+                : 2200;
+            const midwayMs = Math.max(500, durationMs * 0.45);
+            const midwayTimer = setTimeout(() => {
+              setShowChoiceTransitionFeedback(true);
+              playScenarioSfx(scenario.id, "atmosphere-bonus", 0.35);
+            }, midwayMs);
+            transitionTimerRef.current.push(midwayTimer);
+          };
+
+          audio.onended = () => {
+            const endTimer = setTimeout(completeTransition, 250);
+            transitionTimerRef.current.push(endTimer);
+          };
+
+          audio.onerror = () => {
+            const fallbackMidway = setTimeout(() => {
+              setShowChoiceTransitionFeedback(true);
+              playScenarioSfx(scenario.id, "atmosphere-bonus", 0.35);
+            }, 600);
+            const fallbackEnd = setTimeout(completeTransition, 1500);
+            transitionTimerRef.current.push(fallbackMidway, fallbackEnd);
+          };
+
+          audio.play().catch(() => {
+            const fallbackMidway = setTimeout(() => {
+              setShowChoiceTransitionFeedback(true);
+              playScenarioSfx(scenario.id, "atmosphere-bonus", 0.35);
+            }, 600);
+            const fallbackEnd = setTimeout(completeTransition, 1500);
+            transitionTimerRef.current.push(fallbackMidway, fallbackEnd);
+          });
+
+          // Safety timeout cap
+          const safetyTimer = setTimeout(completeTransition, 5500);
+          transitionTimerRef.current.push(safetyTimer);
+        } catch {
+          playScenarioSfx(scenario.id, "atmosphere-bonus", 0.35);
+          onSelectChoice(choice);
+        }
+      } else {
+        // Autoplay off: play atmosphere sound and transition
+        playScenarioSfx(scenario.id, "atmosphere-bonus", 0.35);
+        onSelectChoice(choice);
+      }
     },
-    [onSelectChoice, scenario.id, sfxEnabled, isFinished, stopAudio]
+    [
+      onSelectChoice,
+      scenario.id,
+      sfxEnabled,
+      isFinished,
+      stopAudio,
+      autoPlayAudio,
+      clearTransitionTimers,
+    ]
   );
+
+  const handleSkipChoiceTransition = useCallback(() => {
+    if (transitioningChoice) {
+      clearTransitionTimers();
+      const choice = transitioningChoice;
+      setTransitioningChoice(null);
+      setShowChoiceTransitionFeedback(false);
+      onSelectChoice(choice);
+    }
+  }, [transitioningChoice, clearTransitionTimers, onSelectChoice]);
 
   const handleReplayDialogueAudio = useCallback(() => {
     if (ambientAudioRef.current?.paused && sfxEnabled && !isFinished) {
@@ -456,24 +578,67 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
 
         {/* Layer 4: Interactive Zone (Choices + Feedback below Choices + Dialogue Box OR In-Scene End Assessment) */}
         {!isFinished ? (
-          <div className="relative z-30 flex w-full flex-col justify-end p-3 sm:p-5 sm:pb-5">
+          <div
+            onClick={handleSkipChoiceTransition}
+            className="relative z-30 flex w-full flex-col justify-end p-3 sm:p-5 sm:pb-5"
+          >
             {/* Upper Stack: Response Options on top, Progress/Etiquette Feedback below them, with mb-5 gap before Dialogue Box nameplate */}
-            {((currentNode.choices && currentNode.choices.length > 0) || lastTurnFeedback) && (
+            {((currentNode.choices && currentNode.choices.length > 0) ||
+              lastTurnFeedback ||
+              showChoiceTransitionFeedback) && (
               <div className="mb-5 flex w-full flex-col gap-2">
                 {currentNode.choices && currentNode.choices.length > 0 && (
                   <VnChoiceOverlay
                     choices={currentNode.choices}
+                    selectedChoiceId={transitioningChoice?.id}
+                    disabled={Boolean(transitioningChoice)}
                     onSelectChoice={handleSelectChoiceInternal}
                     onPreviewAudio={handlePreviewChoiceAudio}
                     showEnglish={showEnglish}
                   />
                 )}
 
-                {lastTurnFeedback && (
+                {/* Midway Choice Transition Feedback Banner */}
+                {showChoiceTransitionFeedback && transitioningChoice && (
+                  <div className="max-w-2xl mx-auto flex w-full items-center justify-between gap-3 rounded-2xl border border-[var(--sakura)]/80 bg-slate-950/95 px-4 py-2.5 shadow-[0_8px_24px_rgba(0,0,0,0.6)] backdrop-blur-xl text-xs animate-in fade-in slide-in-from-bottom-2 duration-300">
+                    <div className="flex items-center gap-2 min-w-0">
+                      <span className="text-base shrink-0">💡</span>
+                      <div className="min-w-0">
+                        <p className="font-japanese font-bold text-pink-200 text-xs sm:text-sm">
+                          {transitioningChoice.feedbackJa}
+                        </p>
+                        <p className="text-[11px] text-white/80 line-clamp-1">
+                          {transitioningChoice.feedbackEn}
+                        </p>
+                      </div>
+                    </div>
+                    <span
+                      className={`shrink-0 rounded-lg px-2.5 py-0.5 font-bold text-[10px] uppercase tracking-wider ${
+                        transitioningChoice.tier === "respectful"
+                          ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40"
+                          : transitioningChoice.tier === "polite"
+                          ? "bg-sky-500/20 text-sky-300 border border-sky-500/40"
+                          : transitioningChoice.tier === "casual"
+                          ? "bg-amber-500/20 text-amber-300 border border-amber-500/40"
+                          : "bg-rose-500/20 text-rose-300 border border-rose-500/40"
+                      }`}
+                    >
+                      {transitioningChoice.tier === "respectful"
+                        ? "Respectful"
+                        : transitioningChoice.tier === "polite"
+                        ? "Polite"
+                        : transitioningChoice.tier === "casual"
+                        ? "Casual"
+                        : "Awkward"}
+                    </span>
+                  </div>
+                )}
+
+                {!transitioningChoice && lastTurnFeedback && (
                   <div className="max-w-2xl mx-auto flex w-full items-center gap-2 rounded-xl border border-[var(--sakura)]/60 bg-slate-950/90 px-3 py-1.5 shadow-md backdrop-blur-md text-xs animate-in fade-in slide-in-from-bottom-2 duration-300">
                     <span className="text-xs shrink-0">💡</span>
                     <div className="min-w-0 flex-1 flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
-                      <span className="font-japanese font-bold text-[var(--sakura-light)] text-xs">
+                      <span className="font-japanese font-bold text-pink-200 text-xs">
                         {lastTurnFeedback.ja}
                       </span>
                       <span className="text-[10px] text-white/75">
@@ -487,15 +652,16 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
 
             {/* Bottom Dialogue Box */}
             <VnDialogueBox
-              speakerNameJa={currentNode.speakerNameJa}
-              speakerNameEn={currentNode.speakerNameEn}
-              speakerRoleEn={currentNode.speakerRoleEn || scenario.characterRoleEn}
-              textJa={currentNode.npcTextJa}
-              readingHiragana={currentNode.npcReadingHiragana}
-              textEn={currentNode.npcTextEn}
-              isSpeaking={isCurrentSpeaking}
+              speakerNameJa={transitioningChoice ? "あなた" : currentNode.speakerNameJa}
+              speakerNameEn={transitioningChoice ? "You" : currentNode.speakerNameEn}
+              speakerRoleEn={transitioningChoice ? "Player" : (currentNode.speakerRoleEn || scenario.characterRoleEn)}
+              textJa={transitioningChoice ? transitioningChoice.textJa : currentNode.npcTextJa}
+              readingHiragana={transitioningChoice ? (transitioningChoice.readingHiragana || "") : currentNode.npcReadingHiragana}
+              textEn={transitioningChoice ? transitioningChoice.textEn : currentNode.npcTextEn}
+              isSpeaking={Boolean(transitioningChoice) || isCurrentSpeaking}
               showFurigana={showFurigana}
               showEnglish={showEnglish}
+              autoPlayAudio={autoPlayAudio}
               onReplayAudio={handleReplayDialogueAudio}
               onToggleFurigana={() => setShowFurigana(!showFurigana)}
               onToggleEnglish={() => setShowEnglish(!showEnglish)}

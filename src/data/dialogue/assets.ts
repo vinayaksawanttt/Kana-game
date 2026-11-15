@@ -527,8 +527,62 @@ export const DIALOGUE_ASSET_MANIFESTS: Record<string, ScenarioAssetManifest> = {
         },
     },
     "job-interview-pr": {
-        backgrounds: {},
-        characterSprites: {},
+        backgrounds: {
+            "corp-waiting-lounge":
+                "/assets/dialogue-quest/job-interview-pr/backgrounds/corp-waiting-lounge.webp",
+            "interview-room-door":
+                "/assets/dialogue-quest/job-interview-pr/backgrounds/interview-room-door.webp",
+            "executive-interview-room":
+                "/assets/dialogue-quest/job-interview-pr/backgrounds/executive-interview-room.webp",
+            "office-terrace-exit":
+                "/assets/dialogue-quest/job-interview-pr/backgrounds/office-terrace-exit.webp",
+            default:
+                "/assets/dialogue-quest/job-interview-pr/backgrounds/corp-waiting-lounge.webp",
+        },
+        characterSprites: {
+            // Default card cover & lead sprite (Director Matsumoto)
+            neutral:
+                "/assets/dialogue-quest/job-interview-pr/characters/matsumoto/neutral.webp",
+            happy:
+                "/assets/dialogue-quest/job-interview-pr/characters/matsumoto/happy.webp",
+            proud:
+                "/assets/dialogue-quest/job-interview-pr/characters/matsumoto/proud.webp",
+            stern:
+                "/assets/dialogue-quest/job-interview-pr/characters/matsumoto/stern.webp",
+            thinking:
+                "/assets/dialogue-quest/job-interview-pr/characters/matsumoto/thinking.webp",
+            disappointed:
+                "/assets/dialogue-quest/job-interview-pr/characters/matsumoto/disappointed.webp",
+            // Matsumoto multi-character prefixed keys
+            "matsumoto-neutral":
+                "/assets/dialogue-quest/job-interview-pr/characters/matsumoto/neutral.webp",
+            "matsumoto-happy":
+                "/assets/dialogue-quest/job-interview-pr/characters/matsumoto/happy.webp",
+            "matsumoto-proud":
+                "/assets/dialogue-quest/job-interview-pr/characters/matsumoto/proud.webp",
+            "matsumoto-stern":
+                "/assets/dialogue-quest/job-interview-pr/characters/matsumoto/stern.webp",
+            "matsumoto-thinking":
+                "/assets/dialogue-quest/job-interview-pr/characters/matsumoto/thinking.webp",
+            "matsumoto-disappointed":
+                "/assets/dialogue-quest/job-interview-pr/characters/matsumoto/disappointed.webp",
+            // Kawaguchi
+            "kawaguchi-neutral":
+                "/assets/dialogue-quest/job-interview-pr/characters/kawaguchi/neutral.webp",
+            "kawaguchi-confused":
+                "/assets/dialogue-quest/job-interview-pr/characters/kawaguchi/confused.webp",
+            "kawaguchi-thinking":
+                "/assets/dialogue-quest/job-interview-pr/characters/kawaguchi/thinking.webp",
+            "kawaguchi-troubled":
+                "/assets/dialogue-quest/job-interview-pr/characters/kawaguchi/troubled.webp",
+            // Sato
+            "sato-neutral":
+                "/assets/dialogue-quest/job-interview-pr/characters/sato/neutral.webp",
+            "sato-happy":
+                "/assets/dialogue-quest/job-interview-pr/characters/sato/happy.webp",
+            "sato-troubled":
+                "/assets/dialogue-quest/job-interview-pr/characters/sato/troubled.webp",
+        },
         sfx: {
             // Character-prefixed expressive sounds
             "matsumoto-neutral":
@@ -618,8 +672,60 @@ export const DIALOGUE_ASSET_MANIFESTS: Record<string, ScenarioAssetManifest> = {
         },
     },
     "ward-office-tax": {
-        backgrounds: {},
-        characterSprites: {},
+        backgrounds: {
+            "ward-entrance-kiosk":
+                "/assets/dialogue-quest/ward-office-tax/backgrounds/ward-entrance-kiosk.webp",
+            "tax-counter-window":
+                "/assets/dialogue-quest/ward-office-tax/backgrounds/tax-counter-window.webp",
+            "private-consultation-booth":
+                "/assets/dialogue-quest/ward-office-tax/backgrounds/private-consultation-booth.webp",
+            "pension-desk-exit":
+                "/assets/dialogue-quest/ward-office-tax/backgrounds/pension-desk-exit.webp",
+            default:
+                "/assets/dialogue-quest/ward-office-tax/backgrounds/ward-entrance-kiosk.webp",
+        },
+        characterSprites: {
+            // Default card cover & lead sprite (Section Chief Obata)
+            neutral:
+                "/assets/dialogue-quest/ward-office-tax/characters/obata/neutral.webp",
+            thinking:
+                "/assets/dialogue-quest/ward-office-tax/characters/obata/thinking.webp",
+            stern:
+                "/assets/dialogue-quest/ward-office-tax/characters/obata/stern.webp",
+            proud:
+                "/assets/dialogue-quest/ward-office-tax/characters/obata/proud.webp",
+            disappointed:
+                "/assets/dialogue-quest/ward-office-tax/characters/obata/disappointed.webp",
+            // Obata multi-character prefixed keys
+            "obata-neutral":
+                "/assets/dialogue-quest/ward-office-tax/characters/obata/neutral.webp",
+            "obata-thinking":
+                "/assets/dialogue-quest/ward-office-tax/characters/obata/thinking.webp",
+            "obata-stern":
+                "/assets/dialogue-quest/ward-office-tax/characters/obata/stern.webp",
+            "obata-proud":
+                "/assets/dialogue-quest/ward-office-tax/characters/obata/proud.webp",
+            "obata-disappointed":
+                "/assets/dialogue-quest/ward-office-tax/characters/obata/disappointed.webp",
+            // Takahashi
+            "takahashi-neutral":
+                "/assets/dialogue-quest/ward-office-tax/characters/takahashi/neutral.webp",
+            "takahashi-happy":
+                "/assets/dialogue-quest/ward-office-tax/characters/takahashi/happy.webp",
+            "takahashi-relieved":
+                "/assets/dialogue-quest/ward-office-tax/characters/takahashi/relieved.webp",
+            "takahashi-troubled":
+                "/assets/dialogue-quest/ward-office-tax/characters/takahashi/troubled.webp",
+            // Koga
+            "koga-neutral":
+                "/assets/dialogue-quest/ward-office-tax/characters/koga/neutral.webp",
+            "koga-thinking":
+                "/assets/dialogue-quest/ward-office-tax/characters/koga/thinking.webp",
+            "koga-troubled":
+                "/assets/dialogue-quest/ward-office-tax/characters/koga/troubled.webp",
+            "koga-worried":
+                "/assets/dialogue-quest/ward-office-tax/characters/koga/worried.webp",
+        },
         sfx: {
             // Character-prefixed expressive sounds
             "takahashi-neutral":
@@ -709,8 +815,77 @@ export const DIALOGUE_ASSET_MANIFESTS: Record<string, ScenarioAssetManifest> = {
         },
     },
     "first-date-sakura": {
-        backgrounds: {},
-        characterSprites: {},
+        backgrounds: {
+            "daikanyama-station":
+                "/assets/dialogue-quest/first-date-sakura/backgrounds/daikanyama-station.webp",
+            "daikanyama-station-exit":
+                "/assets/dialogue-quest/first-date-sakura/backgrounds/daikanyama-station-exit.webp",
+            "indie-art-gallery":
+                "/assets/dialogue-quest/first-date-sakura/backgrounds/indie-art-gallery.webp",
+            "kominka-cafe-interior":
+                "/assets/dialogue-quest/first-date-sakura/backgrounds/kominka-cafe-interior.webp",
+            "nakameguro-evening-canal":
+                "/assets/dialogue-quest/first-date-sakura/backgrounds/nakameguro-evening-canal.webp",
+            "nakameguro-station-lights":
+                "/assets/dialogue-quest/first-date-sakura/backgrounds/nakameguro-station-lights.webp",
+            default:
+                "/assets/dialogue-quest/first-date-sakura/backgrounds/daikanyama-station-exit.webp",
+        },
+        characterSprites: {
+            // Default card cover & lead sprite (Misaki)
+            neutral:
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/neutral.webp",
+            happy:
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/happy.webp",
+            thinking:
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/thinking.webp",
+            embarrassed:
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/embarrassed.webp",
+            embarrased:
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/embarrassed.webp",
+            confused:
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/confused.webp",
+            worried:
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/worried.webp",
+            proud:
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/proud.webp",
+            relieved:
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/relieved.webp",
+            troubled:
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/troubled.webp",
+            disappointed:
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/disappointed.webp",
+            // Misaki multi-character prefixed keys
+            "misaki-neutral":
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/neutral.webp",
+            "misaki-happy":
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/happy.webp",
+            "misaki-thinking":
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/thinking.webp",
+            "misaki-embarrassed":
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/embarrassed.webp",
+            "misaki-embarrased":
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/embarrassed.webp",
+            "misaki-confused":
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/confused.webp",
+            "misaki-worried":
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/worried.webp",
+            "misaki-proud":
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/proud.webp",
+            "misaki-relieved":
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/relieved.webp",
+            "misaki-troubled":
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/troubled.webp",
+            "misaki-disappointed":
+                "/assets/dialogue-quest/first-date-sakura/characters/misaki/disappointed.webp",
+            // Kominka Kissaten Master
+            "master-neutral":
+                "/assets/dialogue-quest/first-date-sakura/characters/master/neutral.webp",
+            "master-thinking":
+                "/assets/dialogue-quest/first-date-sakura/characters/master/thinking.webp",
+            "master-happy":
+                "/assets/dialogue-quest/first-date-sakura/characters/master/happy.webp",
+        },
         sfx: {
             // Character-prefixed expressive sounds
             "misaki-happy":

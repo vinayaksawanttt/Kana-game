@@ -13,6 +13,7 @@ interface VnDialogueBoxProps {
   isSpeaking: boolean;
   showFurigana: boolean;
   showEnglish: boolean;
+  autoPlayAudio?: boolean;
   onReplayAudio: () => void;
   onToggleFurigana: () => void;
   onToggleEnglish: () => void;
@@ -27,6 +28,7 @@ export const VnDialogueBox: React.FC<VnDialogueBoxProps> = ({
   isSpeaking,
   showFurigana,
   showEnglish,
+  autoPlayAudio = false,
   onReplayAudio,
 }) => {
   const isNarration = textJa.startsWith("（") && textJa.endsWith("）");
@@ -119,7 +121,7 @@ export const VnDialogueBox: React.FC<VnDialogueBoxProps> = ({
             {showFurigana && readingHiragana && readingHiragana !== textJa && !isTyping && (
               <p
                 lang="ja"
-                className="font-japanese text-[11px] sm:text-xs text-[var(--sakura-light)]/90 leading-tight drop-shadow-xs animate-in fade-in duration-200"
+                className="font-japanese text-[11px] sm:text-xs text-pink-200/90 leading-tight drop-shadow-xs animate-in fade-in duration-200"
               >
                 {readingHiragana}
               </p>
@@ -133,7 +135,7 @@ export const VnDialogueBox: React.FC<VnDialogueBoxProps> = ({
             )}
           </div>
 
-          {/* Action Buttons: Fast Forward / Replay Audio */}
+          {/* Action Buttons: Fast Forward / Replay Audio (hidden when autoplay voice is ON) */}
           <div className="flex items-center gap-1.5 shrink-0" onClick={(e) => e.stopPropagation()}>
             {isTyping && (
               <button
@@ -147,7 +149,7 @@ export const VnDialogueBox: React.FC<VnDialogueBoxProps> = ({
               </button>
             )}
 
-            {!isNarration && (
+            {!autoPlayAudio && !isNarration && (
               <button
                 type="button"
                 onClick={onReplayAudio}

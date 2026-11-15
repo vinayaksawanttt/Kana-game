@@ -4,6 +4,9 @@ import { render, screen, fireEvent, cleanup, act } from "@testing-library/react"
 import { VisualNovelStage } from "../VisualNovelStage";
 import { VnScenarioReview } from "../VnScenarioReview";
 import { DIRECTIONS_SCENARIO_META, DIRECTIONS_NODES } from "@/data/dialogue/scenarios/directions-mcdonalds";
+import { FIRST_DATE_SAKURA_SCENARIO_META } from "@/data/dialogue/scenarios/first-date-sakura";
+import { VnDialogueBox } from "../VnDialogueBox";
+import { getScenarioCharacterSpriteUrl } from "@/data/dialogue/assets";
 import { DialogueSession } from "@/data/dialogue/types";
 
 // Mock audio hook
@@ -292,5 +295,54 @@ describe("Visual Novel Architecture & Components", () => {
     expect(closeBtn).toBeTruthy();
     fireEvent.click(closeBtn);
     expect(screen.queryByText(/Dialogue Backlog/i)).toBeNull();
+  });
+
+  it("hides dialogue replay speaker button when autoPlayAudio is on, and shows it when off", () => {
+    // Case 1: autoPlayAudio = true -> speaker button removed
+    const { unmount } = render(
+      <VnDialogueBox
+        speakerNameJa="佐藤さん"
+        speakerNameEn="Sato-san"
+        textJa="こんにちは"
+        readingHiragana="こんにちは"
+        textEn="Hello"
+        isSpeaking={false}
+        showFurigana={true}
+        showEnglish={true}
+        autoPlayAudio={true}
+        onReplayAudio={vi.fn()}
+        onToggleFurigana={vi.fn()}
+        onToggleEnglish={vi.fn()}
+      />
+    );
+
+    expect(screen.queryByLabelText("Replay audio")).toBeNull();
+    unmount();
+
+    // Case 2: autoPlayAudio = false -> speaker button rendered
+    render(
+      <VnDialogueBox
+        speakerNameJa="佐藤さん"
+        speakerNameEn="Sato-san"
+        textJa="こんにちは"
+        readingHiragana="こんにちは"
+        textEn="Hello"
+        isSpeaking={false}
+        showFurigana={true}
+        showEnglish={true}
+        autoPlayAudio={false}
+        onReplayAudio={vi.fn()}
+        onToggleFurigana={vi.fn()}
+        onToggleEnglish={vi.fn()}
+      />
+    );
+
+    expect(screen.getByLabelText("Replay audio")).toBeTruthy();
+  });
+
+  it("verifies Episode 10 Misaki-san has hoverExpression set to embarrased", () => {
+    expect(FIRST_DATE_SAKURA_SCENARIO_META.hoverExpression).toBe("embarrased");
+    const hoverSprite = getScenarioCharacterSpriteUrl("first-date-sakura", FIRST_DATE_SAKURA_SCENARIO_META.hoverExpression);
+    expect(hoverSprite).toContain("embarrassed.webp");
   });
 });

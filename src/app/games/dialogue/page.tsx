@@ -14,7 +14,11 @@ import { GameLayout } from "@/lib/game-core/layout";
 import {
   ArrowLeft,
   ArrowRight,
+  Award,
   BookOpen,
+  Compass,
+  Filter,
+  Headphones,
   MapPin,
   MessageSquare,
   Play,
@@ -42,12 +46,14 @@ const LEVEL_BADGE_STYLES: Record<string, string> = {
   N1: "border-rose-400/50 bg-rose-500/20 text-rose-200",
 };
 
-function getHoverExpression(scenarioId: string): string {
-  const manifest = DIALOGUE_ASSET_MANIFESTS[scenarioId];
+function getHoverExpression(scenario: ScenarioMeta): string {
+  if (scenario.hoverExpression) return scenario.hoverExpression;
+  if (scenario.id === "first-date-sakura") return "embarrased";
+  const manifest = DIALOGUE_ASSET_MANIFESTS[scenario.id];
   if (!manifest) return "neutral";
-  if (manifest.characterSprites.happy) return "happy";
-  if (manifest.characterSprites.relieved) return "relieved";
-  if (manifest.characterSprites.proud) return "proud";
+  if (manifest.characterSprites.proud && scenario.defaultExpression !== "proud") return "proud";
+  if (manifest.characterSprites.happy && scenario.defaultExpression !== "happy") return "happy";
+  if (manifest.characterSprites.relieved && scenario.defaultExpression !== "relieved") return "relieved";
   return "neutral";
 }
 
@@ -67,7 +73,7 @@ function VnVerticalStoryCard({ scenario, episodeNumber }: VnStoryCardProps) {
   );
   const hoverSpriteUrl = getScenarioCharacterSpriteUrl(
     scenario.id,
-    getHoverExpression(scenario.id)
+    getHoverExpression(scenario)
   );
   const activeSpriteUrl = isHovered && hoverSpriteUrl ? hoverSpriteUrl : defaultSpriteUrl;
 
@@ -83,7 +89,7 @@ function VnVerticalStoryCard({ scenario, episodeNumber }: VnStoryCardProps) {
     <article
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="group relative flex h-[590px] flex-col justify-between overflow-hidden rounded-[26px] border-2 border-slate-800/80 bg-slate-950 text-white shadow-[0_18px_44px_rgba(15,23,42,0.28)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[var(--sakura)] hover:shadow-[0_24px_56px_rgba(208,16,76,0.24)] select-none"
+      className="group relative flex h-[600px] flex-col justify-between overflow-hidden rounded-[26px] border-2 border-slate-800/80 bg-slate-950 text-white shadow-[0_18px_44px_rgba(15,23,42,0.28)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[var(--sakura)] hover:shadow-[0_24px_56px_rgba(208,16,76,0.24)] select-none"
     >
       {/* =========================================================
           1. BACKGROUND ARTWORK LAYER
@@ -154,16 +160,16 @@ function VnVerticalStoryCard({ scenario, episodeNumber }: VnStoryCardProps) {
           >
             {scenario.level}
           </span>
-          <span className="rounded-md border border-white/15 bg-slate-950/70 px-2 py-0.5 text-[10px] font-semibold text-white/85 backdrop-blur-md truncate max-w-[115px]">
+          <span className="rounded-md border border-white/15 bg-slate-950/70 px-2 py-0.5 text-[10px] font-semibold text-white/85 backdrop-blur-md truncate max-w-[140px] sm:max-w-[180px]">
             {scenario.characterRoleEn}
           </span>
         </div>
 
-        <div className="flex items-center gap-1 rounded-full border border-[var(--sakura)]/50 bg-slate-950/75 px-2 py-0.5 text-[10px] font-bold text-[var(--sakura-light)] backdrop-blur-md shrink-0">
+        <div className="flex items-center gap-1 rounded-full border border-pink-400/50 bg-slate-950/80 px-2.5 py-0.5 text-[10px] font-bold text-pink-200 backdrop-blur-md shrink-0 shadow-xs">
           {hasCustomAssets ? (
             <>
-              <Volume2 className="size-3 text-[var(--sakura)]" />
-              <span>Voiced VN</span>
+              <Volume2 className="size-3 text-pink-400" />
+              <span className="text-pink-200">Voiced VN</span>
             </>
           ) : (
             <>
@@ -263,7 +269,7 @@ function VnVerticalStoryCard({ scenario, episodeNumber }: VnStoryCardProps) {
           {activeTab === "story" && (
             <div className="min-h-[100px] flex flex-col justify-between">
               <div>
-                <p className="font-japanese text-[11px] font-bold text-[var(--sakura-light)] truncate">
+                <p className="font-japanese text-[11px] font-bold text-pink-200 truncate">
                   {scenario.titleJa}
                 </p>
                 <h2 className="mt-0.5 text-[15px] font-extrabold leading-snug text-white line-clamp-1">
@@ -280,7 +286,7 @@ function VnVerticalStoryCard({ scenario, episodeNumber }: VnStoryCardProps) {
                 </span>
                 <Link
                   href={`/games/dialogue/play/${scenario.id}`}
-                  className="inline-flex items-center gap-1 font-bold text-[var(--sakura-light)] hover:underline shrink-0"
+                  className="inline-flex items-center gap-1 font-bold text-pink-200 hover:text-pink-100 hover:underline shrink-0"
                 >
                   <span>Play</span>
                   <ArrowRight className="size-3" />
@@ -292,7 +298,7 @@ function VnVerticalStoryCard({ scenario, episodeNumber }: VnStoryCardProps) {
           {activeTab === "options" && (
             <div className="min-h-[100px] flex flex-col justify-between">
               <div className="flex items-center justify-between">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--sakura-light)]">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-pink-200">
                   Opening Dialogue Options Preview
                 </span>
                 <button
@@ -330,7 +336,7 @@ function VnVerticalStoryCard({ scenario, episodeNumber }: VnStoryCardProps) {
           {activeTab === "vocab" && (
             <div className="min-h-[100px] flex flex-col justify-between">
               <div className="flex items-center justify-between">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--sakura-light)]">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-pink-200">
                   Key Episode Vocabulary ({vocabList.length})
                 </span>
                 <button
@@ -379,57 +385,147 @@ export default function DialogueHubPage() {
       ? DIALOGUE_SCENARIOS
       : DIALOGUE_SCENARIOS.filter((s) => s.level === selectedLevel);
 
+  const levelCounts: Record<"ALL" | "N5" | "N4" | "N3" | "N2" | "N1", number> = {
+    ALL: DIALOGUE_SCENARIOS.length,
+    N5: DIALOGUE_SCENARIOS.filter((s) => s.level === "N5").length,
+    N4: DIALOGUE_SCENARIOS.filter((s) => s.level === "N4").length,
+    N3: DIALOGUE_SCENARIOS.filter((s) => s.level === "N3").length,
+    N2: DIALOGUE_SCENARIOS.filter((s) => s.level === "N2").length,
+    N1: DIALOGUE_SCENARIOS.filter((s) => s.level === "N1").length,
+  };
+
   return (
     <GameLayout label="DIALOGUE QUEST" glyph="話">
-      <section className="mx-auto w-full max-w-6xl flex-1 px-5 pb-16 sm:px-8">
-        {/* Back link & Hero */}
-        <div className="py-6 sm:py-8">
+      <section className="mx-auto w-full max-w-6xl flex-1 px-4 pb-16 sm:px-6 lg:px-8">
+        {/* Navigation & Enhanced Hero Header */}
+        <div className="pt-6 pb-6 sm:pt-8 sm:pb-8">
           <Link
             href="/"
-            className="mb-4 inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.14em] text-[var(--muted)] transition-colors hover:text-[var(--primary-fg)]"
+            className="group mb-5 inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--surface)] px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.14em] text-[var(--muted)] shadow-xs transition-all hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary)]"
           >
-            <ArrowLeft className="size-3.5" />
+            <ArrowLeft className="size-3.5 transition-transform group-hover:-translate-x-1" />
             <span>Back to Games Hub</span>
           </Link>
 
-          <div className="flex flex-col justify-between gap-4 border-b border-[var(--line)] pb-6 lg:flex-row lg:items-end">
-            <div>
-              <div className="mb-2 flex flex-wrap items-center gap-2">
-                <span className="rounded-full bg-[var(--sakura-light)] px-3 py-1 text-[11px] font-extrabold uppercase tracking-[0.14em] text-[var(--primary-fg)]">
-                  Visual Novel Roleplay · 会話シミュレーション
+          {/* Hero Banner Card */}
+          <div className="relative overflow-hidden rounded-3xl border border-[var(--line)] bg-gradient-to-br from-[var(--surface)] via-[var(--surface)] to-[var(--sakura-light)]/40 p-6 sm:p-8 shadow-[var(--card-shadow)]">
+            {/* Subtle decorative background glows */}
+            <div className="pointer-events-none absolute -right-16 -top-16 size-64 rounded-full bg-[var(--sakura)]/15 blur-3xl" />
+            <div className="pointer-events-none absolute -left-12 -bottom-12 size-48 rounded-full bg-[var(--primary)]/10 blur-2xl" />
+
+            <div className="relative z-10 flex flex-col gap-6">
+              {/* Header Badges */}
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--primary)]/25 bg-[var(--sakura-light)] px-3 py-1 text-[11px] font-extrabold uppercase tracking-[0.14em] text-[var(--primary)] shadow-xs">
+                  <Sparkles className="size-3 text-[var(--primary)]" />
+                  Visual Novel Roleplay · 実践・会話シミュレーション
                 </span>
-                <span className="rounded-full bg-[var(--correct)]/15 px-3 py-1 text-[11px] font-bold text-[var(--correct)]">
-                  {DIALOGUE_SCENARIOS.length} Episodes · JLPT N5–N1
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--correct)]/30 bg-[var(--correct-soft)] px-3 py-1 text-[11px] font-bold text-[var(--correct)] shadow-xs">
+                  <Volume2 className="size-3" />
+                  10 Voiced Episodes · JLPT N5–N1
+                </span>
+                <span className="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-violet-500/25 bg-violet-500/10 px-3 py-1 text-[11px] font-bold text-violet-600 dark:text-violet-300 shadow-xs">
+                  <Headphones className="size-3" />
+                  Dual VOICEVOX & Kenpath Audio
                 </span>
               </div>
-              <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                Dialogue Quest (<span className="font-japanese">実践・会話ロールプレイ</span>)
-              </h1>
-              <p className="mt-2.5 max-w-2xl text-sm leading-relaxed text-[var(--muted)]">
-                Choose an episode screen below to step into a voiced Japanese visual novel encounter. Read the social atmosphere (<span className="font-japanese">空気</span>), preview opening choices or vocabulary on each vertical screen card, and start your conversation.
-              </p>
+
+              {/* Main Titles */}
+              <div className="max-w-3xl">
+                <h1 className="text-3xl font-black tracking-tight sm:text-4xl text-[var(--ink)]">
+                  Dialogue Quest{" "}
+                  <span className="block sm:inline font-japanese text-2xl sm:text-3xl font-extrabold text-[var(--primary)] mt-1 sm:mt-0">
+                    （実践・会話ロールプレイ）
+                  </span>
+                </h1>
+                <p className="mt-3 text-sm sm:text-base leading-relaxed text-[var(--muted)]">
+                  Step into 10 authentic Japanese visual novel encounters across daily life, campus, corporate business, municipal affairs, and romance. Read the social atmosphere (<span className="font-japanese font-semibold text-[var(--ink)]">空気</span>), master polite Keigo vs casual distancing, and navigate branching storylines with full Japanese voice acting, expressive anime sounds, and ambient loops.
+                </p>
+              </div>
+
+              {/* Feature Highlights Grid */}
+              <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4 border-t border-[var(--line)] pt-5 text-xs">
+                <div className="flex items-center gap-2.5 rounded-xl bg-[var(--paper)]/80 p-2.5 border border-[var(--line)]/70 shadow-xs">
+                  <div className="grid size-7 shrink-0 place-items-center rounded-lg bg-[var(--primary)]/10 text-[var(--primary)]">
+                    <Volume2 className="size-3.5" />
+                  </div>
+                  <div className="min-w-0">
+                    <p className="font-bold text-[var(--ink)] leading-tight truncate">Native Voice Acting</p>
+                    <p className="text-[10px] text-[var(--muted)] truncate">Voiced NPCs & Player Choices</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2.5 rounded-xl bg-[var(--paper)]/80 p-2.5 border border-[var(--line)]/70 shadow-xs">
+                  <div className="grid size-7 shrink-0 place-items-center rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
+                    <Compass className="size-3.5" />
+                  </div>
+                  <div className="min-w-0">
+                    <p className="font-bold text-[var(--ink)] leading-tight truncate">Read The Air (空気)</p>
+                    <p className="text-[10px] text-[var(--muted)] truncate">Honne, Tatemae & Etiquette</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2.5 rounded-xl bg-[var(--paper)]/80 p-2.5 border border-[var(--line)]/70 shadow-xs">
+                  <div className="grid size-7 shrink-0 place-items-center rounded-lg bg-violet-500/10 text-violet-600 dark:text-violet-400">
+                    <BookOpen className="size-3.5" />
+                  </div>
+                  <div className="min-w-0">
+                    <p className="font-bold text-[var(--ink)] leading-tight truncate">Keigo Nuance Rules</p>
+                    <p className="text-[10px] text-[var(--muted)] truncate">Sonkeigo, Kenjougo, Teineigo</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2.5 rounded-xl bg-[var(--paper)]/80 p-2.5 border border-[var(--line)]/70 shadow-xs">
+                  <div className="grid size-7 shrink-0 place-items-center rounded-lg bg-amber-500/10 text-amber-600 dark:text-amber-400">
+                    <Award className="size-3.5" />
+                  </div>
+                  <div className="min-w-0">
+                    <p className="font-bold text-[var(--ink)] leading-tight truncate">Branching Endings</p>
+                    <p className="text-[10px] text-[var(--muted)] truncate">Perfect, Pass & Blunder Paths</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Level Filter Control Bar */}
+          <div className="mt-6 flex flex-col gap-3 rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-3 sm:flex-row sm:items-center sm:justify-between shadow-xs">
+            <div className="flex items-center gap-2 text-xs font-bold text-[var(--ink)] px-1">
+              <span className="flex size-6 items-center justify-center rounded-lg bg-[var(--primary)]/10 text-[var(--primary)]">
+                <Filter className="size-3" />
+              </span>
+              <span>Filter by JLPT Level:</span>
             </div>
 
-            {/* Level Filter Pills */}
             <div
-              className="flex flex-wrap items-center gap-2"
+              className="flex flex-wrap items-center gap-1.5"
               role="group"
               aria-label="Filter scenarios by JLPT level"
             >
               {(["ALL", "N5", "N4", "N3", "N2", "N1"] as const).map((lvl) => {
                 const active = selectedLevel === lvl;
+                const count = levelCounts[lvl];
                 return (
                   <button
                     key={lvl}
                     type="button"
                     onClick={() => setSelectedLevel(lvl)}
-                    className={`rounded-full border px-4 py-1.5 text-xs font-bold transition-all cursor-pointer ${
+                    className={`inline-flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer ${
                       active
                         ? "border-[var(--primary)] bg-[var(--primary)] text-white shadow-sm"
-                        : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)] hover:border-[var(--sakura)] hover:text-[var(--ink)]"
+                        : "border-[var(--line)] bg-[var(--paper)] text-[var(--muted)] hover:border-[var(--sakura)] hover:text-[var(--ink)]"
                     }`}
                   >
-                    {lvl === "ALL" ? "All Episodes" : `JLPT ${lvl}`}
+                    <span>{lvl === "ALL" ? "All Episodes" : `JLPT ${lvl}`}</span>
+                    <span
+                      className={`rounded-full px-1.5 py-0.2 text-[10px] font-extrabold ${
+                        active
+                          ? "bg-white/25 text-white"
+                          : "bg-black/5 dark:bg-white/10 text-[var(--muted)]"
+                      }`}
+                    >
+                      {count}
+                    </span>
                   </button>
                 );
               })}
@@ -437,15 +533,19 @@ export default function DialogueHubPage() {
           </div>
         </div>
 
-        {/* Visual Novel Vertical Screen Cards Grid */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {filteredScenarios.map((scenario, idx) => (
-            <VnVerticalStoryCard
-              key={scenario.id}
-              scenario={scenario}
-              episodeNumber={idx + 1}
-            />
-          ))}
+        {/* Visual Novel Vertical Screen Cards Grid (2 stories per row: 2*5) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          {filteredScenarios.map((scenario, idx) => {
+            const globalIndex = DIALOGUE_SCENARIOS.findIndex((s) => s.id === scenario.id);
+            const episodeNumber = globalIndex !== -1 ? globalIndex + 1 : idx + 1;
+            return (
+              <VnVerticalStoryCard
+                key={scenario.id}
+                scenario={scenario}
+                episodeNumber={episodeNumber}
+              />
+            );
+          })}
         </div>
       </section>
     </GameLayout>

@@ -21,6 +21,7 @@ export const FIRST_DATE_SAKURA_SCENARIO_META: ScenarioMeta = {
   backgroundTheme: "cafe",
   defaultBackgroundKey: "daikanyama-station-exit",
   defaultExpression: "happy",
+  hoverExpression: "embarrased",
   vocabList: [
     { ja: "縁", kana: "えん", romaji: "en", en: "serendipitous bond / fate", partOfSpeech: "noun" },
     { ja: "余白", kana: "よはく", romaji: "yohaku", en: "breathing room / quiet negative space", partOfSpeech: "noun" },
