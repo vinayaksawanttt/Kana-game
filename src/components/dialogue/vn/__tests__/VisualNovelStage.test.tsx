@@ -7,6 +7,7 @@ import { DIRECTIONS_SCENARIO_META, DIRECTIONS_NODES } from "@/data/dialogue/scen
 import { FIRST_DATE_SAKURA_SCENARIO_META } from "@/data/dialogue/scenarios/first-date-sakura";
 import { VnDialogueBox } from "../VnDialogueBox";
 import { VnChoiceOverlay } from "../VnChoiceOverlay";
+import { VnEndAssessmentOverlay } from "../VnEndAssessmentOverlay";
 import { getScenarioCharacterSpriteUrl } from "@/data/dialogue/assets";
 import { DialogueSession } from "@/data/dialogue/types";
 
@@ -413,5 +414,41 @@ describe("Visual Novel Architecture & Components", () => {
     );
     expect((fullscreenChoices.firstChild as HTMLElement).className).toContain("max-w-4xl");
     unmountChoices2();
+
+    // VnEndAssessmentOverlay in normal mode vs fullscreen
+    const mockSession: DialogueSession = {
+      scenarioId: "directions-mcdonalds",
+      currentNodeId: "node-end-directions-success",
+      turns: [],
+      atmosphereMeter: 80,
+      totalScore: 120,
+      isFinished: true,
+      finalEndingType: "success",
+    };
+
+    const { container: normalAssessment, unmount: unmountAssessment1 } = render(
+      <VnEndAssessmentOverlay
+        session={mockSession}
+        scenario={DIRECTIONS_SCENARIO_META}
+        isFullscreen={false}
+        onRestart={vi.fn()}
+      />
+    );
+    // Modal card is the inner container inside pointer-events-none wrapper
+    const normalModal = normalAssessment.querySelector(".pointer-events-auto");
+    expect(normalModal?.className).toContain("max-w-xl");
+    unmountAssessment1();
+
+    const { container: fullscreenAssessment, unmount: unmountAssessment2 } = render(
+      <VnEndAssessmentOverlay
+        session={mockSession}
+        scenario={DIRECTIONS_SCENARIO_META}
+        isFullscreen={true}
+        onRestart={vi.fn()}
+      />
+    );
+    const fullscreenModal = fullscreenAssessment.querySelector(".pointer-events-auto");
+    expect(fullscreenModal?.className).toContain("max-w-5xl");
+    unmountAssessment2();
   });
 });

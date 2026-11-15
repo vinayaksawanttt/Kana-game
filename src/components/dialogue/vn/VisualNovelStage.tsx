@@ -771,6 +771,7 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
               session={session}
               scenario={scenario}
               finalNode={currentNode}
+              isFullscreen={isFullscreen}
               onReplayFinalAudio={handleReplayDialogueAudio}
               onRestart={onRestart}
             />
