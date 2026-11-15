@@ -59,7 +59,11 @@
         "tatoeba_id": 221092
       }
     ],
-    "reversePrompt": "greeting"
+    "reversePrompt": "greeting",
+    "synonyms": [
+      "welcome",
+      "regards"
+    ]
   },
   {
     "id": "0cb7e80d4c",
@@ -123,7 +127,11 @@
         "tatoeba_id": 105995
       }
     ],
-    "reversePrompt": "sign (transitive; signal)"
+    "reversePrompt": "sign (transitive; signal)",
+    "synonyms": [
+      "cue",
+      "gesture"
+    ]
   },
   {
     "id": "9452242b03",
@@ -179,9 +187,6 @@
         "en": "She has a love of learning.",
         "tatoeba_id": 90684
       }
-    ],
-    "synonyms": [
-      "love"
     ],
     "reversePrompt": "to love (transitive)"
   },
@@ -277,9 +282,6 @@
         "tatoeba_id": 161866
       }
     ],
-    "synonyms": [
-      "iron"
-    ],
     "reversePrompt": "(electric) iron (noun)"
   },
   {
@@ -338,9 +340,6 @@
         "en": "You'll strain your eyes trying to read in this light.",
         "tatoeba_id": 219463
       }
-    ],
-    "synonyms": [
-      "light"
     ],
     "reversePrompt": "lamplight"
   },
@@ -409,7 +408,12 @@
         "tatoeba_id": 120860
       }
     ],
-    "reversePrompt": "obvious (な-adjective; evident)"
+    "reversePrompt": "obvious (な-adjective; evident)",
+    "synonyms": [
+      "plain",
+      "apparent",
+      "distinct"
+    ]
   },
   {
     "id": "8ff67241d3",
@@ -441,8 +445,10 @@
       }
     ],
     "synonyms": [
-      "give up",
-      "abandon"
+      "quit",
+      "surrender",
+      "relinquish",
+      "drop"
     ],
     "reversePrompt": "to give up (transitive; to abandon)"
   },
@@ -478,9 +484,8 @@
       }
     ],
     "synonyms": [
-      "get tired of",
-      "lose interest in",
-      "have enough"
+      "get bored of",
+      "tire of"
     ],
     "reversePrompt": "to get tired of"
   },
@@ -573,10 +578,6 @@
         "tatoeba_id": 79771
       }
     ],
-    "synonyms": [
-      "dawn",
-      "become daylight"
-    ],
     "reversePrompt": "to dawn (intransitive; to become daylight)"
   },
   {
@@ -608,11 +609,6 @@
         "en": "Deposit your money in the bank.",
         "tatoeba_id": 233610
       }
-    ],
-    "synonyms": [
-      "give into custody",
-      "entrust",
-      "deposit"
     ],
     "reversePrompt": "to give into custody"
   },
@@ -677,11 +673,8 @@
       }
     ],
     "synonyms": [
-      "give",
-      "present",
       "hand over",
-      "provide",
-      "award"
+      "provide"
     ],
     "reversePrompt": "to give (transitive; to present)"
   },
@@ -748,9 +741,9 @@
       }
     ],
     "synonyms": [
-      "be hit",
-      "be successful",
-      "be equivalent to"
+      "hit",
+      "successful",
+      "equivalent to"
     ],
     "reversePrompt": "to be hit"
   },
@@ -841,11 +834,6 @@
         "tatoeba_id": 219378
       }
     ],
-    "synonyms": [
-      "handle",
-      "deal with",
-      "treat"
-    ],
     "reversePrompt": "to handle (transitive; to deal with)"
   },
   {
@@ -907,10 +895,6 @@
         "en": "Don't expose this chemical to direct sunlight.",
         "tatoeba_id": 219236
       }
-    ],
-    "synonyms": [
-      "hit",
-      "apply a patch"
     ],
     "reversePrompt": "to hit (transitive; to apply a patch)"
   },
@@ -1196,11 +1180,6 @@
         "tatoeba_id": 75956
       }
     ],
-    "synonyms": [
-      "show",
-      "indicate",
-      "display"
-    ],
     "reversePrompt": "to show (transitive; to indicate)"
   },
   {
@@ -1232,11 +1211,6 @@
         "en": "What does this sign signify?",
         "tatoeba_id": 223677
       }
-    ],
-    "synonyms": [
-      "express",
-      "show",
-      "reveal"
     ],
     "reversePrompt": "to express (transitive; to show)"
   },
@@ -1305,12 +1279,6 @@
         "tatoeba_id": 190471
       }
     ],
-    "synonyms": [
-      "appear",
-      "come in sight",
-      "become visible",
-      "express oneself"
-    ],
     "reversePrompt": "to appear (intransitive; to come in sight)"
   },
   {
@@ -1343,9 +1311,6 @@
         "en": "One evening a man came to my house.",
         "tatoeba_id": 229774
       }
-    ],
-    "synonyms": [
-      "certain..."
     ],
     "reversePrompt": "a certain..."
   },
@@ -1474,10 +1439,7 @@
       }
     ],
     "synonyms": [
-      "join together",
-      "be opposite",
-      "face",
-      "unite"
+      "opposite"
     ],
     "reversePrompt": "to join together (transitive; to be opposite)"
   },
@@ -1635,10 +1597,6 @@
         "tatoeba_id": 2280872
       }
     ],
-    "synonyms": [
-      "that extent",
-      "that degree"
-    ],
     "reversePrompt": "to that extent (to that degree)"
   },
   {
@@ -1752,7 +1710,14 @@
         "en": "In today’s class, I learned how to use the expression “ie.”"
       }
     ],
-    "reversePrompt": "no"
+    "reversePrompt": "no",
+    "synonyms": [
+      "house",
+      "home",
+      "residence",
+      "dwelling",
+      "abode"
+    ]
   },
   {
     "id": "a812d7a958",
@@ -1811,7 +1776,14 @@
         "tatoeba_id": 146908
       }
     ],
-    "reversePrompt": "going"
+    "reversePrompt": "going",
+    "synonyms": [
+      "go",
+      "travel",
+      "proceed",
+      "head to",
+      "depart"
+    ]
   },
   {
     "id": "5fef88ef1f",
@@ -2282,7 +2254,10 @@
         "tatoeba_id": 83126
       }
     ],
-    "reversePrompt": "greatness"
+    "reversePrompt": "greatness",
+    "synonyms": [
+      "great"
+    ]
   },
   {
     "id": "97600f5aa8",
@@ -2309,10 +2284,7 @@
       }
     ],
     "synonyms": [
-      "to embrace",
-      "hug",
-      "harbour",
-      "entertain"
+      "embrace"
     ],
     "reversePrompt": "(slang) to embrace"
   },
@@ -2416,8 +2388,6 @@
       }
     ],
     "synonyms": [
-      "come",
-      "arrive",
       "approach"
     ],
     "reversePrompt": "to come (intransitive; to arrive)"
@@ -2583,9 +2553,6 @@
         "tatoeba_id": 207820
       }
     ],
-    "synonyms": [
-      "market"
-    ],
     "reversePrompt": "(the) market (as a concept) (noun)"
   },
   {
@@ -2619,13 +2586,9 @@
       }
     ],
     "synonyms": [
-      "house",
-      "home",
       "residence",
       "dwelling",
-      "abode",
-      "household",
-      "family"
+      "abode"
     ],
     "reversePrompt": "a house (noun; a home)"
   },
@@ -2692,11 +2655,6 @@
         "tatoeba_id": 218472
       }
     ],
-    "synonyms": [
-      "species",
-      "kind",
-      "variety"
-    ],
     "reversePrompt": "a species (noun; a kind)"
   },
   {
@@ -2727,10 +2685,6 @@
         "en": "It's amazing, just like that.",
         "tatoeba_id": 214725
       }
-    ],
-    "synonyms": [
-      "moment",
-      "instant"
     ],
     "reversePrompt": "a moment (noun; an instant)"
   },
@@ -2764,9 +2718,6 @@
         "en": "He devoted his life to the study of science.",
         "tatoeba_id": 236791
       }
-    ],
-    "synonyms": [
-      "lifetime"
     ],
     "reversePrompt": "whole life"
   },
@@ -2898,10 +2849,6 @@
         "en": "You will be welcome at any time.",
         "tatoeba_id": 232830
       }
-    ],
-    "synonyms": [
-      "any time",
-      "never"
     ],
     "reversePrompt": "(at) any time"
   },
@@ -3066,9 +3013,6 @@
         "tatoeba_id": 215290
       }
     ],
-    "synonyms": [
-      "cousin"
-    ],
     "reversePrompt": "cousin (male) (noun)"
   },
   {
@@ -3098,7 +3042,10 @@
         "tatoeba_id": 77666
       }
     ],
-    "reversePrompt": "rice-plant"
+    "reversePrompt": "rice-plant",
+    "synonyms": [
+      "rice"
+    ]
   },
   {
     "id": "19f535bb08",
@@ -3196,9 +3143,6 @@
         "tatoeba_id": 183109
       }
     ],
-    "synonyms": [
-      "violation"
-    ],
     "reversePrompt": "violation (of law)"
   },
   {
@@ -3228,7 +3172,10 @@
         "tatoeba_id": 83024
       }
     ],
-    "reversePrompt": "clothes (noun)"
+    "reversePrompt": "clothes (noun)",
+    "synonyms": [
+      "clothing"
+    ]
   },
   {
     "id": "da1e1e97a8",
@@ -3256,9 +3203,6 @@
         "en": "She is neither in the kitchen nor in the living room.",
         "tatoeba_id": 88048
       }
-    ],
-    "synonyms": [
-      "living room"
     ],
     "reversePrompt": "living room (western style) (noun)"
   },
@@ -3348,9 +3292,6 @@
         "en": "No, I don't have it with me.",
         "tatoeba_id": 228504
       }
-    ],
-    "synonyms": [
-      "noes"
     ],
     "reversePrompt": "no"
   },
@@ -3602,10 +3543,6 @@
         "tatoeba_id": 97690
       }
     ],
-    "synonyms": [
-      "congratulate",
-      "celebrate"
-    ],
     "reversePrompt": "to congratulate"
   },
   {
@@ -3667,9 +3604,6 @@
         "tatoeba_id": 114378
       }
     ],
-    "synonyms": [
-      "so-called"
-    ],
     "reversePrompt": "the so-called"
   },
   {
@@ -3730,7 +3664,10 @@
         "tatoeba_id": 190002
       }
     ],
-    "reversePrompt": "printing (transitive)"
+    "reversePrompt": "printing (transitive)",
+    "synonyms": [
+      "print"
+    ]
   },
   {
     "id": "ddedf2e7ba",
@@ -3790,7 +3727,10 @@
         "tatoeba_id": 158408
       }
     ],
-    "reversePrompt": "retire (intransitive)"
+    "reversePrompt": "retire (intransitive)",
+    "synonyms": [
+      "retirement"
+    ]
   },
   {
     "id": "1c2d4445fd",
@@ -3851,7 +3791,10 @@
         "tatoeba_id": 114348
       }
     ],
-    "reversePrompt": "whisky"
+    "reversePrompt": "whisky",
+    "synonyms": [
+      "whiskey"
+    ]
   },
   {
     "id": "b73c4e0e07",
@@ -3917,10 +3860,6 @@
       }
     ],
     "synonyms": [
-      "receive",
-      "get",
-      "accept",
-      "take",
       "grab",
       "hold",
       "pick up"
@@ -3955,10 +3894,6 @@
         "en": "Please move this stone from here to there.",
         "tatoeba_id": 224801
       }
-    ],
-    "synonyms": [
-      "move",
-      "shift"
     ],
     "reversePrompt": "to move (transitive; to shift)"
   },
@@ -4051,10 +3986,6 @@
         "tatoeba_id": 103945
       }
     ],
-    "synonyms": [
-      "lose",
-      "part with"
-    ],
     "reversePrompt": "to lose (transitive; to part with)"
   },
   {
@@ -4089,10 +4020,7 @@
       }
     ],
     "synonyms": [
-      "doubt",
-      "distrust",
-      "be suspicious of",
-      "suspect"
+      "suspicious of"
     ],
     "reversePrompt": "to doubt (transitive; to distrust)"
   },
@@ -4150,11 +4078,6 @@
         "en": "He is good at shooting distant targets."
       }
     ],
-    "synonyms": [
-      "attack",
-      "defeat",
-      "destroy"
-    ],
     "reversePrompt": "to attack (transitive; to defeat)"
   },
   {
@@ -4187,11 +4110,6 @@
         "tatoeba_id": 74880
       }
     ],
-    "synonyms": [
-      "remove",
-      "transfer",
-      "infect"
-    ],
     "reversePrompt": "to remove (transitive; to transfer)"
   },
   {
@@ -4223,12 +4141,6 @@
         "en": "She gave me an appealing look.",
         "tatoeba_id": 88197
       }
-    ],
-    "synonyms": [
-      "sue (a person)",
-      "sue",
-      "resort to",
-      "appeal to"
     ],
     "reversePrompt": "to sue (a person)"
   },
@@ -4264,10 +4176,6 @@
         "tatoeba_id": 213368
       }
     ],
-    "synonyms": [
-      "groan",
-      "moan"
-    ],
     "reversePrompt": "to groan (intransitive; to moan)"
   },
   {
@@ -4299,7 +4207,7 @@
       }
     ],
     "synonyms": [
-      "snatch away"
+      "奪う"
     ],
     "reversePrompt": "to snatch away"
   },
@@ -4330,9 +4238,6 @@
         "en": "Don't look a gift horse in the mouth.",
         "tatoeba_id": 193163
       }
-    ],
-    "synonyms": [
-      "promoted bishop"
     ],
     "reversePrompt": "horse"
   },
@@ -4394,9 +4299,6 @@
         "tatoeba_id": 121521
       }
     ],
-    "synonyms": [
-      "lowest"
-    ],
     "reversePrompt": "plum"
   },
   {
@@ -4429,11 +4331,6 @@
         "tatoeba_id": 192440
       }
     ],
-    "synonyms": [
-      "betray",
-      "turn traitor to",
-      "double-cross"
-    ],
     "reversePrompt": "to betray"
   },
   {
@@ -4465,7 +4362,7 @@
       }
     ],
     "synonyms": [
-      "be sold"
+      "sold"
     ],
     "reversePrompt": "to be sold"
   },
@@ -4794,7 +4691,10 @@
         "tatoeba_id": 198994
       }
     ],
-    "reversePrompt": "smiling face"
+    "reversePrompt": "smiling face",
+    "synonyms": [
+      "smile"
+    ]
   },
   {
     "id": "a359eccfaf",
@@ -4827,13 +4727,6 @@
         "en": "I want a room to paint a picture in.",
         "tatoeba_id": 157926
       }
-    ],
-    "synonyms": [
-      "draw",
-      "paint",
-      "sketch",
-      "depict",
-      "describe"
     ],
     "reversePrompt": "to draw (transitive; to paint)"
   },
@@ -4894,9 +4787,6 @@
         "tatoeba_id": 82121
       }
     ],
-    "synonyms": [
-      "energy"
-    ],
     "reversePrompt": "energy (de: Energie) (noun)"
   },
   {
@@ -4927,11 +4817,6 @@
         "en": "Some people relax by reading.",
         "tatoeba_id": 123404
       }
-    ],
-    "synonyms": [
-      "get",
-      "gain",
-      "win"
     ],
     "reversePrompt": "to get (transitive; to gain)"
   },
@@ -5157,7 +5042,10 @@
         "tatoeba_id": 223303
       }
     ],
-    "reversePrompt": "musical performance"
+    "reversePrompt": "musical performance",
+    "synonyms": [
+      "performance"
+    ]
   },
   {
     "id": "9c851c43f7",
@@ -5211,8 +5099,6 @@
       }
     ],
     "synonyms": [
-      "old",
-      "aged",
       "ancient",
       "antique",
       "former"
@@ -5247,11 +5133,6 @@
         "en": "He accelerated his car and overtook me.",
         "tatoeba_id": 104638
       }
-    ],
-    "synonyms": [
-      "overtake",
-      "catch up (with)",
-      "catch up"
     ],
     "reversePrompt": "to overtake"
   },
@@ -5315,10 +5196,6 @@
         "en": "The policeman was after the thief.",
         "tatoeba_id": 211194
       }
-    ],
-    "synonyms": [
-      "chase",
-      "run after"
     ],
     "reversePrompt": "to chase"
   },
@@ -5412,13 +5289,6 @@
         "tatoeba_id": 161637
       }
     ],
-    "synonyms": [
-      "respond",
-      "satisfy",
-      "accept",
-      "comply with",
-      "apply for"
-    ],
     "reversePrompt": "to respond (intransitive; to satisfy)"
   },
   {
@@ -5449,7 +5319,10 @@
         "tatoeba_id": 123501
       }
     ],
-    "reversePrompt": "crossing"
+    "reversePrompt": "crossing",
+    "synonyms": [
+      "cross-sectional"
+    ]
   },
   {
     "id": "4f56ad3962",
@@ -5480,7 +5353,6 @@
       }
     ],
     "synonyms": [
-      "finish",
       "end",
       "complete",
       "conclude",
@@ -5550,13 +5422,6 @@
         "en": "The mountain peak was covered with snow.",
         "tatoeba_id": 210453
       }
-    ],
-    "synonyms": [
-      "cover",
-      "hide",
-      "conceal",
-      "wrap",
-      "disguise"
     ],
     "reversePrompt": "to cover (transitive; to hide)"
   },
@@ -5672,7 +5537,10 @@
         "tatoeba_id": 127289
       }
     ],
-    "reversePrompt": "open sea"
+    "reversePrompt": "open sea",
+    "synonyms": [
+      "oki"
+    ]
   },
   {
     "id": "5d1c14bede",
@@ -5735,12 +5603,6 @@
         "tatoeba_id": 168322
       }
     ],
-    "synonyms": [
-      "send",
-      "give to",
-      "award to",
-      "confer on"
-    ],
     "reversePrompt": "to send (transitive; to give to)"
   },
   {
@@ -5771,10 +5633,6 @@
         "en": "He was afraid about what was going to happen.",
         "tatoeba_id": 109455
       }
-    ],
-    "synonyms": [
-      "occur",
-      "happen"
     ],
     "reversePrompt": "to occur"
   },
@@ -5839,13 +5697,6 @@
         "tatoeba_id": 112431
       }
     ],
-    "synonyms": [
-      "obtain",
-      "reap",
-      "pay",
-      "supply",
-      "accept"
-    ],
     "reversePrompt": "to obtain (transitive; to reap)"
   },
   {
@@ -5882,7 +5733,12 @@
         "tatoeba_id": 86369
       }
     ],
-    "reversePrompt": "chattering"
+    "reversePrompt": "chattering",
+    "synonyms": [
+      "speak",
+      "chat",
+      "converse"
+    ]
   },
   {
     "id": "bd7e02e772",
@@ -5947,7 +5803,10 @@
         "tatoeba_id": 79123
       }
     ],
-    "reversePrompt": "perhaps"
+    "reversePrompt": "perhaps",
+    "synonyms": [
+      "probably"
+    ]
   },
   {
     "id": "7a8059af14",
@@ -5979,8 +5838,7 @@
       }
     ],
     "synonyms": [
-      "fear",
-      "be afraid of"
+      "afraid of"
     ],
     "reversePrompt": "to fear (transitive; to be afraid of)"
   },
@@ -6137,8 +5995,7 @@
       }
     ],
     "synonyms": [
-      "fall behind",
-      "be inferior to"
+      "inferior to"
     ],
     "reversePrompt": "to fall behind"
   },
@@ -6172,9 +6029,8 @@
       }
     ],
     "synonyms": [
-      "Ogre:",
-      "it",
-      "it (i.e.",
+      "ogre:",
+      "it (i.e",
       "in a game of tag)"
     ],
     "modernMeaning": "Ogre:",
@@ -6206,7 +6062,6 @@
       }
     ],
     "synonyms": [
-      "band",
       "band (e.g. conduction",
       "valence)"
     ],
@@ -6299,8 +6154,7 @@
       }
     ],
     "synonyms": [
-      "be drowned",
-      "indulge in"
+      "drowned"
     ],
     "reversePrompt": "to be drowned"
   },
@@ -6332,10 +6186,6 @@
         "tatoeba_id": 172190
       }
     ],
-    "synonyms": [
-      "you",
-      "presence"
-    ],
     "reversePrompt": "(familiar) you (sing) (presence)"
   },
   {
@@ -6363,9 +6213,6 @@
         "en": "Happy New Year!",
         "tatoeba_id": 347403
       }
-    ],
-    "synonyms": [
-      "auspicious occasion!"
     ],
     "reversePrompt": "Congratulations!"
   },
@@ -6397,9 +6244,10 @@
       }
     ],
     "synonyms": [
-      "to meet someone more important",
-      "meet (someone of higher status)",
-      "meet"
+      "meet someone more important",
+      "encounter",
+      "see",
+      "greet"
     ],
     "modernMeaning": "to meet someone more important",
     "reversePrompt": "to meet someone more important"
@@ -6589,11 +6437,6 @@
         "tatoeba_id": 125891
       }
     ],
-    "synonyms": [
-      "exert",
-      "cause",
-      "exercise"
-    ],
     "reversePrompt": "to exert"
   },
   {
@@ -6626,11 +6469,6 @@
         "tatoeba_id": 157713
       }
     ],
-    "synonyms": [
-      "be (animate)",
-      "be",
-      "exist"
-    ],
     "reversePrompt": "to be (animate)"
   },
   {
@@ -6662,11 +6500,6 @@
         "en": "Please let me off here.",
         "tatoeba_id": 224036
       }
-    ],
-    "synonyms": [
-      "take down",
-      "launch",
-      "drop"
     ],
     "reversePrompt": "to take down"
   },
@@ -6758,7 +6591,10 @@
         "tatoeba_id": 123985
       }
     ],
-    "reversePrompt": "warmth"
+    "reversePrompt": "warmth",
+    "synonyms": [
+      "warm"
+    ]
   },
   {
     "id": "3767dad3d1",
@@ -6817,7 +6653,10 @@
         "tatoeba_id": 143557
       }
     ],
-    "reversePrompt": "passable"
+    "reversePrompt": "passable",
+    "synonyms": [
+      "yes"
+    ]
   },
   {
     "id": "dd3e8e77f0",
@@ -6846,8 +6685,7 @@
       }
     ],
     "synonyms": [
-      "this is a counter for chapters of a book",
-      "counter for chapters"
+      "this is a counter for chapters of a book"
     ],
     "modernMeaning": "this is a counter for chapters of a book",
     "reversePrompt": "this is a counter for chapters of a book"
@@ -7033,9 +6871,6 @@
         "tatoeba_id": 223845
       }
     ],
-    "synonyms": [
-      "membership"
-    ],
     "reversePrompt": "member (noun; the membership)"
   },
   {
@@ -7065,7 +6900,10 @@
         "tatoeba_id": 203801
       }
     ],
-    "reversePrompt": "picture (noun)"
+    "reversePrompt": "picture (noun)",
+    "synonyms": [
+      "painting"
+    ]
   },
   {
     "id": "5d54acd27e",
@@ -7256,7 +7094,13 @@
         "tatoeba_id": 198470
       }
     ],
-    "reversePrompt": "start (transitive; commencement)"
+    "reversePrompt": "start (transitive; commencement)",
+    "synonyms": [
+      "begin",
+      "commence",
+      "initiate",
+      "set off"
+    ]
   },
   {
     "id": "bb3089103b",
@@ -7420,9 +7264,6 @@
         "tatoeba_id": 92711
       }
     ],
-    "synonyms": [
-      "recovery"
-    ],
     "reversePrompt": "recovery (from illness) (transitive; improvement)"
   },
   {
@@ -7455,11 +7296,6 @@
         "tatoeba_id": 88700
       }
     ],
-    "synonyms": [
-      "keep",
-      "raise",
-      "feed"
-    ],
     "reversePrompt": "to keep (transitive; to raise)"
   },
   {
@@ -7490,12 +7326,6 @@
         "en": "Can you cash these for me?",
         "tatoeba_id": 217653
       }
-    ],
-    "synonyms": [
-      "exchange",
-      "interchange",
-      "substitute",
-      "replace"
     ],
     "reversePrompt": "to exchange (transitive; to interchange)"
   },
@@ -7529,12 +7359,6 @@
         "en": "Do you mind if I change the channel?",
         "tatoeba_id": 202956
       }
-    ],
-    "synonyms": [
-      "exchange",
-      "interchange",
-      "substitute",
-      "replace"
     ],
     "reversePrompt": "to exchange (transitive; to interchange)"
   },
@@ -7628,8 +7452,7 @@
       }
     ],
     "synonyms": [
-      "this means to hold or carry something with your arms",
-      "hold or carry under or in the arms"
+      "this means to hold or carry something with your arms"
     ],
     "modernMeaning": "this means to hold or carry something with your arms",
     "reversePrompt": "this means to hold or carry something with your arms"
@@ -7724,11 +7547,6 @@
         "tatoeba_id": 138077
       }
     ],
-    "synonyms": [
-      "shine",
-      "glitter",
-      "sparkle"
-    ],
     "reversePrompt": "to shine (intransitive; to glitter)"
   },
   {
@@ -7792,7 +7610,7 @@
       }
     ],
     "synonyms": [
-      "suffer from"
+      "罹る"
     ],
     "reversePrompt": "to suffer from"
   },
@@ -7825,11 +7643,6 @@
         "en": "There is nothing like cold beer on a hot day.",
         "tatoeba_id": 147466
       }
-    ],
-    "synonyms": [
-      "restrict",
-      "limit",
-      "confine"
     ],
     "reversePrompt": "to restrict"
   },
@@ -7920,9 +7733,6 @@
         "en": "This frame shows the painting to good advantage.",
         "tatoeba_id": 222593
       }
-    ],
-    "synonyms": [
-      "frame"
     ],
     "reversePrompt": "(picture) frame (noun; framed picture)"
   },
@@ -8049,7 +7859,12 @@
         "tatoeba_id": 184331
       }
     ],
-    "reversePrompt": "study (transitive; learning)"
+    "reversePrompt": "study (transitive; learning)",
+    "synonyms": [
+      "learn",
+      "examine",
+      "cram"
+    ]
   },
   {
     "id": "cb73559c84",
@@ -8079,10 +7894,6 @@
         "en": "The old man tried to hide his money under the ground.",
         "tatoeba_id": 77289
       }
-    ],
-    "synonyms": [
-      "hide",
-      "conceal"
     ],
     "reversePrompt": "to hide (transitive; to conceal)"
   },
@@ -8181,7 +7992,12 @@
         "tatoeba_id": 146844
       }
     ],
-    "reversePrompt": "scholarship (intransitive; study)"
+    "reversePrompt": "scholarship (intransitive; study)",
+    "synonyms": [
+      "learn",
+      "examine",
+      "cram"
+    ]
   },
   {
     "id": "2a8f495a2f",
@@ -8214,10 +8030,7 @@
       }
     ],
     "synonyms": [
-      "hide",
-      "be hidden",
-      "conceal oneself",
-      "disappear"
+      "hidden"
     ],
     "reversePrompt": "to hide (intransitive; to be hidden)"
   },
@@ -8310,7 +8123,7 @@
       }
     ],
     "synonyms": [
-      "be lacking"
+      "lacking"
     ],
     "reversePrompt": "to be lacking"
   },
@@ -8377,10 +8190,6 @@
         "tatoeba_id": 165109
       }
     ],
-    "synonyms": [
-      "past",
-      "previous"
-    ],
     "reversePrompt": "the past (noun; bygone days)"
   },
   {
@@ -8441,10 +8250,6 @@
         "tatoeba_id": 106562
       }
     ],
-    "synonyms": [
-      "surround",
-      "encircle"
-    ],
     "reversePrompt": "to surround (transitive; to encircle)"
   },
   {
@@ -8503,7 +8308,10 @@
         "tatoeba_id": 210134
       }
     ],
-    "reversePrompt": "pastry"
+    "reversePrompt": "pastry",
+    "synonyms": [
+      "confectionery"
+    ]
   },
   {
     "id": "a88999f659",
@@ -8684,10 +8492,6 @@
         "tatoeba_id": 156228
       }
     ],
-    "synonyms": [
-      "earn income",
-      "labor"
-    ],
     "reversePrompt": "to earn income"
   },
   {
@@ -8717,9 +8521,6 @@
         "en": "Close your eyes, and count to ten.",
         "tatoeba_id": 79932
       }
-    ],
-    "synonyms": [
-      "count"
     ],
     "reversePrompt": "to count"
   },
@@ -8816,7 +8617,6 @@
       }
     ],
     "synonyms": [
-      "hard",
       "hard (esp. metal",
       "stone)"
     ],
@@ -8915,12 +8715,9 @@
       }
     ],
     "synonyms": [
-      "talk",
       "speak",
       "chat",
-      "converse",
-      "tell",
-      "recite"
+      "converse"
     ],
     "reversePrompt": "to talk (transitive; to tell)"
   },
@@ -9075,7 +8872,7 @@
       }
     ],
     "synonyms": [
-      "term"
+      "semester"
     ],
     "reversePrompt": "term (school) (noun)"
   },
@@ -9174,9 +8971,7 @@
       }
     ],
     "synonyms": [
-      "be sad",
-      "mourn for",
-      "regret"
+      "sad"
     ],
     "reversePrompt": "to be sad"
   },
@@ -9209,12 +9004,6 @@
         "en": "A man is not always what he seems.",
         "tatoeba_id": 144443
       }
-    ],
-    "synonyms": [
-      "always",
-      "necessarily",
-      "all",
-      "entirely"
     ],
     "reversePrompt": "(not) always (necessarily)"
   },
@@ -9313,7 +9102,10 @@
         "tatoeba_id": 90396
       }
     ],
-    "reversePrompt": "rich man (noun)"
+    "reversePrompt": "rich man (noun)",
+    "synonyms": [
+      "rich"
+    ]
   },
   {
     "id": "6bf6a2e393",
@@ -9376,9 +9168,6 @@
         "tatoeba_id": 184225
       }
     ],
-    "synonyms": [
-      "stump"
-    ],
     "reversePrompt": "share"
   },
   {
@@ -9411,14 +9200,6 @@
         "en": "Your hat should not be worn in the classroom.",
         "tatoeba_id": 180184
       }
-    ],
-    "synonyms": [
-      "put on (one's head)",
-      "put on",
-      "wear",
-      "have on",
-      "pull over (one's head)",
-      "pull over"
     ],
     "reversePrompt": "to wear (on the head / hat)"
   },
@@ -9541,9 +9322,6 @@
         "tatoeba_id": 121293
       }
     ],
-    "synonyms": [
-      "hair"
-    ],
     "reversePrompt": "hair (head) (noun)"
   },
   {
@@ -9573,9 +9351,6 @@
         "en": "What subjects do you study at school?",
         "tatoeba_id": 184483
       }
-    ],
-    "synonyms": [
-      "subject"
     ],
     "reversePrompt": "(school) subject (noun; curriculum)"
   },
@@ -9641,9 +9416,6 @@
         "tatoeba_id": 75673
       }
     ],
-    "synonyms": [
-      "tuesday"
-    ],
     "reversePrompt": "(abbreviation) Tuesday (noun)"
   },
   {
@@ -9706,13 +9478,6 @@
         "en": "I had my hair cut at the barber's.",
         "tatoeba_id": 156648
       }
-    ],
-    "synonyms": [
-      "cut (hair)",
-      "cut",
-      "mow (grass)",
-      "mow",
-      "harvest"
     ],
     "reversePrompt": "to cut (hair) (transitive; to mow)"
   },
@@ -9892,9 +9657,6 @@
         "tatoeba_id": 208817
       }
     ],
-    "synonyms": [
-      "sixth sense"
-    ],
     "reversePrompt": "perception"
   },
   {
@@ -10018,9 +9780,6 @@
         "tatoeba_id": 183814
       }
     ],
-    "synonyms": [
-      "spectator"
-    ],
     "reversePrompt": "audience (noun; spectator)"
   },
   {
@@ -10114,7 +9873,10 @@
         "tatoeba_id": 226294
       }
     ],
-    "reversePrompt": "sightseeing (transitive)"
+    "reversePrompt": "sightseeing (transitive)",
+    "synonyms": [
+      "tourism"
+    ]
   },
   {
     "id": "888b58c5e4",
@@ -10239,9 +10001,6 @@
         "tatoeba_id": 183928
       }
     ],
-    "synonyms": [
-      "patient"
-    ],
     "reversePrompt": "a patient"
   },
   {
@@ -10307,10 +10066,6 @@
         "tatoeba_id": 103567
       }
     ],
-    "synonyms": [
-      "emotion",
-      "feeling"
-    ],
     "reversePrompt": "emotion(s) (noun; feeling)"
   },
   {
@@ -10343,11 +10098,6 @@
         "en": "She was feeling kind of tired.",
         "tatoeba_id": 93344
       }
-    ],
-    "synonyms": [
-      "feel",
-      "sense",
-      "experience"
     ],
     "reversePrompt": "to feel (transitive; to sense)"
   },
@@ -10441,8 +10191,7 @@
       }
     ],
     "synonyms": [
-      "concern",
-      "be related"
+      "related"
     ],
     "reversePrompt": "to concern (to be related)"
   },
@@ -10608,9 +10357,6 @@
         "en": "The park is governed by the city.",
         "tatoeba_id": 210750
       }
-    ],
-    "synonyms": [
-      "management"
     ],
     "reversePrompt": "control (transitive; management)"
   },
@@ -10951,7 +10697,7 @@
       }
     ],
     "synonyms": [
-      "be effective"
+      "effective"
     ],
     "reversePrompt": "to be effective"
   },
@@ -11261,7 +11007,10 @@
         "tatoeba_id": 84585
       }
     ],
-    "reversePrompt": "returning home"
+    "reversePrompt": "returning home",
+    "synonyms": [
+      "going home"
+    ]
   },
   {
     "id": "7660474b4f",
@@ -11320,7 +11069,10 @@
         "tatoeba_id": 165253
       }
     ],
-    "reversePrompt": "chairman"
+    "reversePrompt": "chairman",
+    "synonyms": [
+      "chairperson"
+    ]
   },
   {
     "id": "a4e6e6b186",
@@ -11411,11 +11163,6 @@
         "tatoeba_id": 164413
       }
     ],
-    "synonyms": [
-      "notice",
-      "recognize",
-      "become aware of"
-    ],
     "reversePrompt": "to notice (intransitive; to recognize)"
   },
   {
@@ -11448,8 +11195,7 @@
       }
     ],
     "synonyms": [
-      "be pleased with",
-      "suit"
+      "pleased with"
     ],
     "reversePrompt": "to be pleased with"
   },
@@ -11575,9 +11321,6 @@
         "en": "I cannot but feel sorry for him.",
         "tatoeba_id": 86122
       }
-    ],
-    "synonyms": [
-      "pity"
     ],
     "reversePrompt": "pitiful (な-adjective; a pity)"
   },
@@ -12000,7 +11743,14 @@
         "tatoeba_id": 183956
       }
     ],
-    "reversePrompt": "ex-"
+    "reversePrompt": "ex-",
+    "synonyms": [
+      "old",
+      "aged",
+      "ancient",
+      "antique",
+      "former"
+    ]
   },
   {
     "id": "f2c4210f2b",
@@ -12189,9 +11939,6 @@
         "tatoeba_id": 90520
       }
     ],
-    "synonyms": [
-      "rapid"
-    ],
     "reversePrompt": "rapid (e.g. progress) (な-adjective)"
   },
   {
@@ -12314,7 +12061,10 @@
         "tatoeba_id": 180314
       }
     ],
-    "reversePrompt": "text book (noun)"
+    "reversePrompt": "text book (noun)",
+    "synonyms": [
+      "textbook"
+    ]
   },
   {
     "id": "b98c5c8b36",
@@ -12437,7 +12187,6 @@
       }
     ],
     "synonyms": [
-      "teacher",
       "instructor",
       "educator",
       "tutor",
@@ -12803,11 +12552,6 @@
         "tatoeba_id": 92648
       }
     ],
-    "synonyms": [
-      "hate",
-      "dislike",
-      "loathe"
-    ],
     "reversePrompt": "to hate (transitive; to dislike)"
   },
   {
@@ -12902,10 +12646,7 @@
       }
     ],
     "synonyms": [
-      "cut well",
-      "be sharp",
-      "break (off)",
-      "break"
+      "sharp"
     ],
     "reversePrompt": "to cut well"
   },
@@ -13033,7 +12774,10 @@
         "tatoeba_id": 120463
       }
     ],
-    "reversePrompt": "No Smoking!"
+    "reversePrompt": "No Smoking!",
+    "synonyms": [
+      "no Smoking"
+    ]
   },
   {
     "id": "1cbf803ac6",
@@ -13062,7 +12806,10 @@
         "tatoeba_id": 178986
       }
     ],
-    "reversePrompt": "amount of money (noun)"
+    "reversePrompt": "amount of money (noun)",
+    "synonyms": [
+      "amount"
+    ]
   },
   {
     "id": "71229cb421",
@@ -13218,7 +12965,10 @@
         "tatoeba_id": 179799
       }
     ],
-    "reversePrompt": "present day"
+    "reversePrompt": "present day",
+    "synonyms": [
+      "modern"
+    ]
   },
   {
     "id": "9236d54fda",
@@ -13340,9 +13090,6 @@
         "tatoeba_id": 157319
       }
     ],
-    "synonyms": [
-      "friday"
-    ],
     "reversePrompt": "(abbreviation) Friday (noun)"
   },
   {
@@ -13372,7 +13119,10 @@
         "tatoeba_id": 149671
       }
     ],
-    "reversePrompt": "sentence (noun)"
+    "reversePrompt": "sentence (noun)",
+    "synonyms": [
+      "phrase"
+    ]
   },
   {
     "id": "291125be1d",
@@ -13403,7 +13153,6 @@
       }
     ],
     "synonyms": [
-      "to eat",
       "eat",
       "consume",
       "have a meal",
@@ -13439,9 +13188,6 @@
         "en": "I just came up with the word.",
         "tatoeba_id": 179276
       }
-    ],
-    "synonyms": [
-      "chance"
     ],
     "reversePrompt": "(by) chance (unexpectedly)"
   },
@@ -13535,10 +13281,6 @@
         "tatoeba_id": 114196
       }
     ],
-    "synonyms": [
-      "rot",
-      "go bad"
-    ],
     "reversePrompt": "to rot (intransitive; to go bad)"
   },
   {
@@ -13570,9 +13312,7 @@
       }
     ],
     "synonyms": [
-      "It's a habit, and often a bad one",
-      "habit (often a bad habit)",
-      "habit"
+      "it's a habit, and often a bad one"
     ],
     "modernMeaning": "It's a habit, and often a bad one",
     "reversePrompt": "It's a habit, and often a bad one"
@@ -13653,10 +13393,6 @@
         "tatoeba_id": 96359
       }
     ],
-    "synonyms": [
-      "lower",
-      "let go down"
-    ],
     "reversePrompt": "to lower (transitive; to let go down)"
   },
   {
@@ -13681,7 +13417,7 @@
       }
     ],
     "synonyms": [
-      "down-train"
+      "downhill"
     ],
     "reversePrompt": "down-train (going away from Tokyo)"
   },
@@ -13873,7 +13609,7 @@
       }
     ],
     "synonyms": [
-      "put together"
+      "組む"
     ],
     "reversePrompt": "to put together (transitive)"
   },
@@ -13966,9 +13702,6 @@
         "tatoeba_id": 161119
       }
     ],
-    "synonyms": [
-      "classic"
-    ],
     "reversePrompt": "classic(s) (な-adjective)"
   },
   {
@@ -13999,10 +13732,6 @@
         "en": "He lived abroad for much of his life.",
         "tatoeba_id": 103534
       }
-    ],
-    "synonyms": [
-      "live",
-      "get along"
     ],
     "reversePrompt": "to live (intransitive; to get along)"
   },
@@ -14056,9 +13785,6 @@
         "en": "When is the grand opening?",
         "tatoeba_id": 12072710
       }
-    ],
-    "synonyms": [
-      "ground"
     ],
     "reversePrompt": "gland"
   },
@@ -14120,10 +13846,6 @@
         "tatoeba_id": 141601
       }
     ],
-    "synonyms": [
-      "repeat",
-      "do something over again"
-    ],
     "reversePrompt": "to repeat (transitive)"
   },
   {
@@ -14183,10 +13905,6 @@
         "en": "He is mad about tennis.",
         "tatoeba_id": 111815
       }
-    ],
-    "synonyms": [
-      "go mad",
-      "get out of order"
     ],
     "reversePrompt": "to go mad"
   },
@@ -14285,9 +14003,7 @@
       }
     ],
     "synonyms": [
-      "suffer",
-      "groan",
-      "be worried"
+      "worried"
     ],
     "reversePrompt": "to suffer"
   },
@@ -14324,7 +14040,12 @@
         "tatoeba_id": 101503
       }
     ],
-    "reversePrompt": "year end"
+    "reversePrompt": "year end",
+    "synonyms": [
+      "finish",
+      "conclude",
+      "terminate"
+    ]
   },
   {
     "id": "08ca0a613f",
@@ -14388,12 +14109,6 @@
         "en": "How about adding a touch of pepper?",
         "tatoeba_id": 146865
       }
-    ],
-    "synonyms": [
-      "append",
-      "sum up",
-      "add (up)",
-      "add"
     ],
     "reversePrompt": "to append (transitive; to sum up)"
   },
@@ -14460,13 +14175,6 @@
         "tatoeba_id": 89756
       }
     ],
-    "synonyms": [
-      "join in",
-      "accede to",
-      "increase",
-      "gain in (influence)",
-      "gain in"
-    ],
     "reversePrompt": "to join in"
   },
   {
@@ -14491,7 +14199,7 @@
     ],
     "modernMeaning": "this is a Japanese reading of a Chinese character",
     "synonyms": [
-      "this is a Japanese reading of a Chinese character"
+      "this is a japanese reading of a chinese character"
     ],
     "reversePrompt": "this is a Japanese reading of a Chinese character"
   },
@@ -14615,7 +14323,10 @@
         "tatoeba_id": 391892
       }
     ],
-    "reversePrompt": "plan (noun)"
+    "reversePrompt": "plan (noun)",
+    "synonyms": [
+      "total"
+    ]
   },
   {
     "id": "ecf1cc2a23",
@@ -14707,9 +14418,6 @@
         "en": "Business is so slow these days.",
         "tatoeba_id": 179834
       }
-    ],
-    "synonyms": [
-      "business"
     ],
     "reversePrompt": "condition (noun; state)"
   },
@@ -14834,9 +14542,6 @@
         "tatoeba_id": 123113
       }
     ],
-    "synonyms": [
-      "detective"
-    ],
     "reversePrompt": "criminal case"
   },
   {
@@ -14898,10 +14603,6 @@
         "en": "He is not interested in art at all.",
         "tatoeba_id": 107925
       }
-    ],
-    "synonyms": [
-      "art",
-      "arts"
     ],
     "reversePrompt": "(fine) art (noun; the arts)"
   },
@@ -15017,7 +14718,10 @@
         "tatoeba_id": 164815
       }
     ],
-    "reversePrompt": "game (noun)"
+    "reversePrompt": "game (noun)",
+    "synonyms": [
+      "games"
+    ]
   },
   {
     "id": "1f3f0c4bb0",
@@ -15048,9 +14752,6 @@
         "en": "\"Ow-ow-ouch.\" \"Are you alright?\"",
         "tatoeba_id": 75029
       }
-    ],
-    "synonyms": [
-      "injury"
     ],
     "reversePrompt": "injury (to animate object) (transitive; hurt)"
   },
@@ -15145,7 +14846,7 @@
       }
     ],
     "synonyms": [
-      "make-up"
+      "cosmetics"
     ],
     "reversePrompt": "make-up (cosmetic) (transitive)"
   },
@@ -15577,9 +15278,6 @@
         "tatoeba_id": 96708
       }
     ],
-    "synonyms": [
-      "brawl"
-    ],
     "reversePrompt": "quarrel (intransitive; brawl)"
   },
   {
@@ -15765,7 +15463,6 @@
       }
     ],
     "synonyms": [
-      "inspection",
       "inspection (e.g. customs",
       "factory)"
     ],
@@ -16024,7 +15721,12 @@
         "tatoeba_id": 172419
       }
     ],
-    "reversePrompt": "consideration (transitive; examination)"
+    "reversePrompt": "consideration (transitive; examination)",
+    "synonyms": [
+      "learn",
+      "examine",
+      "cram"
+    ]
   },
   {
     "id": "a99283c8e3",
@@ -16209,7 +15911,6 @@
       }
     ],
     "synonyms": [
-      "thick",
       "thick (as of color",
       "liquid)",
       "powerful",
@@ -16404,7 +16105,10 @@
         "tatoeba_id": 173513
       }
     ],
-    "reversePrompt": "coin (noun)"
+    "reversePrompt": "coin (noun)",
+    "synonyms": [
+      "coins"
+    ]
   },
   {
     "id": "8fa27fc74c",
@@ -16433,7 +16137,14 @@
         "tatoeba_id": 205204
       }
     ],
-    "reversePrompt": "high price"
+    "reversePrompt": "high price",
+    "synonyms": [
+      "expensive",
+      "costly",
+      "pricey",
+      "dear",
+      "high-priced"
+    ]
   },
   {
     "id": "83efbaf7bc",
@@ -16497,9 +16208,6 @@
         "en": "The new car underwent its tests successfully.",
         "tatoeba_id": 145268
       }
-    ],
-    "synonyms": [
-      "passing"
     ],
     "reversePrompt": "success (intransitive; passing)"
   },
@@ -16787,9 +16495,6 @@
         "tatoeba_id": 140943
       }
     ],
-    "synonyms": [
-      "latter"
-    ],
     "reversePrompt": "the latter"
   },
   {
@@ -17037,7 +16742,10 @@
         "tatoeba_id": 174527
       }
     ],
-    "reversePrompt": "candidacy"
+    "reversePrompt": "candidacy",
+    "synonyms": [
+      "candidates"
+    ]
   },
   {
     "id": "63a1944ca4",
@@ -17099,11 +16807,6 @@
         "en": "There is only one pass over the mountain.",
         "tatoeba_id": 210438
       }
-    ],
-    "synonyms": [
-      "exceed",
-      "cross over",
-      "cross"
     ],
     "reversePrompt": "to exceed (transitive; to cross over)"
   },
@@ -17222,9 +16925,7 @@
       }
     ],
     "synonyms": [
-      "freeze",
-      "be frozen over",
-      "congeal"
+      "frozen over"
     ],
     "reversePrompt": "to freeze (intransitive; to be frozen over)"
   },
@@ -17310,7 +17011,10 @@
         "tatoeba_id": 194634
       }
     ],
-    "reversePrompt": "language study"
+    "reversePrompt": "language study",
+    "synonyms": [
+      "language"
+    ]
   },
   {
     "id": "f9c7285539",
@@ -17433,7 +17137,10 @@
         "tatoeba_id": 194767
       }
     ],
-    "reversePrompt": "national language"
+    "reversePrompt": "national language",
+    "synonyms": [
+      "japanese language"
+    ]
   },
   {
     "id": "d2f232cacf",
@@ -17585,7 +17292,10 @@
         "en": "He leads a painful life every day due to his lower back pain."
       }
     ],
-    "reversePrompt": "hip"
+    "reversePrompt": "hip",
+    "synonyms": [
+      "waist"
+    ]
   },
   {
     "id": "908ad483d6",
@@ -17647,9 +17357,7 @@
       }
     ],
     "synonyms": [
-      "to review (for example, with the audience):",
-      "go over (e.g. with audience)",
-      "go over"
+      "review:"
     ],
     "modernMeaning": "to review (for example, with the audience):",
     "reversePrompt": "to review (for example, with the audience):"
@@ -17741,7 +17449,10 @@
         "tatoeba_id": 97150
       }
     ],
-    "reversePrompt": "national or state border"
+    "reversePrompt": "national or state border",
+    "synonyms": [
+      "border"
+    ]
   },
   {
     "id": "b3edaebb52",
@@ -17772,7 +17483,10 @@
         "tatoeba_id": 76666
       }
     ],
-    "reversePrompt": "bone fracture"
+    "reversePrompt": "bone fracture",
+    "synonyms": [
+      "fracture"
+    ]
   },
   {
     "id": "3c2e8a5848",
@@ -17832,11 +17546,6 @@
         "en": "Our characters are completely different.",
         "tatoeba_id": 166918
       }
-    ],
-    "synonyms": [
-      "differ",
-      "vary",
-      "disagree"
     ],
     "reversePrompt": "to differ (intransitive; to vary)"
   },
@@ -17898,11 +17607,6 @@
         "en": "He entered my room without permission.",
         "tatoeba_id": 102265
       }
-    ],
-    "synonyms": [
-      "refuse",
-      "decline",
-      "dismiss"
     ],
     "reversePrompt": "to refuse (transitive; to decline)"
   },
@@ -17998,10 +17702,6 @@
         "tatoeba_id": 206117
       }
     ],
-    "synonyms": [
-      "like",
-      "prefer"
-    ],
     "reversePrompt": "to like (transitive; to prefer)"
   },
   {
@@ -18030,10 +17730,6 @@
         "en": "Can you copy this for me?",
         "tatoeba_id": 217685
       }
-    ],
-    "synonyms": [
-      "(photo)copy",
-      "copy"
     ],
     "reversePrompt": "a (photo)copy (noun)"
   },
@@ -18095,9 +17791,6 @@
         "en": "There used to be a hut about here.",
         "tatoeba_id": 191184
       }
-    ],
-    "synonyms": [
-      "pen"
     ],
     "reversePrompt": "hut"
   },
@@ -18170,8 +17863,7 @@
       "hour",
       "moment",
       "period",
-      "occasion",
-      "approximately"
+      "occasion"
     ],
     "reversePrompt": "time (noun; about)"
   },
@@ -18203,9 +17895,6 @@
         "tatoeba_id": 114226
       }
     ],
-    "synonyms": [
-      "kill"
-    ],
     "reversePrompt": "to kill (transitive)"
   },
   {
@@ -18236,10 +17925,6 @@
         "en": "Take care not to fall.",
         "tatoeba_id": 124965
       }
-    ],
-    "synonyms": [
-      "fall down",
-      "fall over"
     ],
     "reversePrompt": "to fall down"
   },
@@ -18644,9 +18329,6 @@
         "tatoeba_id": 218227
       }
     ],
-    "synonyms": [
-      "most"
-    ],
     "reversePrompt": "highest (な-adjective; supreme)"
   },
   {
@@ -18739,7 +18421,10 @@
         "tatoeba_id": 92972
       }
     ],
-    "reversePrompt": "in the middle of"
+    "reversePrompt": "in the middle of",
+    "synonyms": [
+      "monaka"
+    ]
   },
   {
     "id": "fe278816d4",
@@ -18986,12 +18671,6 @@
         "tatoeba_id": 119331
       }
     ],
-    "synonyms": [
-      "go against",
-      "oppose",
-      "disobey",
-      "defy"
-    ],
     "reversePrompt": "to go against (intransitive; to oppose)"
   },
   {
@@ -19025,10 +18704,7 @@
       }
     ],
     "synonyms": [
-      "height of the summer season, for example",
-      "height",
-      "peak",
-      "season"
+      "height of the summer season, for example"
     ],
     "modernMeaning": "height of the summer season, for example",
     "reversePrompt": "height of the summer season, for example"
@@ -19095,9 +18771,6 @@
         "tatoeba_id": 156830
       }
     ],
-    "synonyms": [
-      "last"
-    ],
     "reversePrompt": "last (year) (yesterday)"
   },
   {
@@ -19158,9 +18831,6 @@
         "en": "He grew a variety of crops.",
         "tatoeba_id": 114397
       }
-    ],
-    "synonyms": [
-      "produce"
     ],
     "reversePrompt": "produce (e.g. agricultural) (noun; crops)"
   },
@@ -19253,10 +18923,6 @@
         "tatoeba_id": 99356
       }
     ],
-    "synonyms": [
-      "shout",
-      "cry"
-    ],
     "reversePrompt": "to shout (intransitive; to cry)"
   },
   {
@@ -19286,12 +18952,6 @@
         "en": "He avoided meeting her on the way.",
         "tatoeba_id": 101862
       }
-    ],
-    "synonyms": [
-      "avoid (physical contact )",
-      "avoid",
-      "ward off",
-      "avert"
     ],
     "reversePrompt": "to avoid (physical contact ) (transitive; to ward off)"
   },
@@ -19326,9 +18986,8 @@
       }
     ],
     "synonyms": [
-      "be blocked",
-      "choke",
-      "be obstructed"
+      "blocked",
+      "obstructed"
     ],
     "reversePrompt": "to be blocked (transitive; to choke)"
   },
@@ -19361,11 +19020,6 @@
         "en": "I don't know which doctor she meant.",
         "tatoeba_id": 91979
       }
-    ],
-    "synonyms": [
-      "point",
-      "put up umbrella",
-      "play"
     ],
     "reversePrompt": "to point (transitive; to put up umbrella)"
   },
@@ -19429,13 +19083,6 @@
         "en": "She was asked to go out with him.",
         "tatoeba_id": 92092
       }
-    ],
-    "synonyms": [
-      "invite",
-      "ask",
-      "tempt",
-      "lure",
-      "induce"
     ],
     "reversePrompt": "to invite (transitive; to ask)"
   },
@@ -19531,9 +19178,6 @@
         "en": "I wrote the song for her.",
         "tatoeba_id": 167461
       }
-    ],
-    "synonyms": [
-      "setting"
     ],
     "reversePrompt": "composition (transitive; setting)"
   },
@@ -19777,7 +19421,9 @@
       }
     ],
     "synonyms": [
-      "awaken"
+      "wake up",
+      "get up",
+      "rise"
     ],
     "reversePrompt": "to awaken"
   },
@@ -19811,8 +19457,6 @@
       }
     ],
     "synonyms": [
-      "wake",
-      "wake up",
       "awaken",
       "get up",
       "rise"
@@ -19975,10 +19619,6 @@
         "tatoeba_id": 235915
       }
     ],
-    "synonyms": [
-      "leave",
-      "go away"
-    ],
     "reversePrompt": "to leave (intransitive; to go away)"
   },
   {
@@ -20041,7 +19681,10 @@
         "tatoeba_id": 87076
       }
     ],
-    "reversePrompt": "participation (intransitive)"
+    "reversePrompt": "participation (intransitive)",
+    "synonyms": [
+      "participate"
+    ]
   },
   {
     "id": "731e27d6bb",
@@ -20285,7 +19928,10 @@
         "tatoeba_id": 2660390
       }
     ],
-    "reversePrompt": "jet aeroplane"
+    "reversePrompt": "jet aeroplane",
+    "synonyms": [
+      "jet aircraft"
+    ]
   },
   {
     "id": "8b180f444a",
@@ -20379,9 +20025,6 @@
         "en": "Were you scolded by your teacher?",
         "tatoeba_id": 231788
       }
-    ],
-    "synonyms": [
-      "scold"
     ],
     "reversePrompt": "to scold (transitive)"
   },
@@ -20885,10 +20528,6 @@
         "tatoeba_id": 138160
       }
     ],
-    "synonyms": [
-      "sink",
-      "feel depressed"
-    ],
     "reversePrompt": "to sink (intransitive; to feel depressed)"
   },
   {
@@ -21010,9 +20649,6 @@
         "tatoeba_id": 225047
       }
     ],
-    "synonyms": [
-      "immediate"
-    ],
     "reversePrompt": "order (noun; precedence)"
   },
   {
@@ -21075,13 +20711,6 @@
         "en": "You have to obey your parents.",
         "tatoeba_id": 176820
       }
-    ],
-    "synonyms": [
-      "abide (by the rules)",
-      "abide",
-      "obey",
-      "follow",
-      "accompany"
     ],
     "reversePrompt": "to abide (by the rules) (intransitive; to obey)"
   },
@@ -21146,9 +20775,6 @@
         "tatoeba_id": 215287
       }
     ],
-    "synonyms": [
-      "close"
-    ],
     "reversePrompt": "intimate (い-adjective; close)"
   },
   {
@@ -21178,9 +20804,6 @@
         "en": "This one is of much higher quality than that one.",
         "tatoeba_id": 149543
       }
-    ],
-    "synonyms": [
-      "nature"
     ],
     "reversePrompt": "quality (noun; nature)"
   },
@@ -21308,9 +20931,6 @@
         "en": "To know is one thing, to practice another.",
         "tatoeba_id": 127112
       }
-    ],
-    "synonyms": [
-      "execution"
     ],
     "reversePrompt": "practice (transitive; performance)"
   },
@@ -21528,7 +21148,7 @@
       }
     ],
     "synonyms": [
-      "branch store"
+      "branch"
     ],
     "reversePrompt": "branch store (office)"
   },
@@ -21808,9 +21428,6 @@
         "tatoeba_id": 91507
       }
     ],
-    "synonyms": [
-      "pay"
-    ],
     "reversePrompt": "to pay (transitive)"
   },
   {
@@ -21902,7 +21519,10 @@
         "tatoeba_id": 168884
       }
     ],
-    "reversePrompt": "sisters"
+    "reversePrompt": "sisters",
+    "synonyms": [
+      "shimai"
+    ]
   },
   {
     "id": "e0d7c68759",
@@ -21937,13 +21557,10 @@
       }
     ],
     "synonyms": [
-      "finish",
       "end",
       "complete",
       "conclude",
-      "wrap up",
-      "close",
-      "do something completely"
+      "wrap up"
     ],
     "reversePrompt": "to finish (to close)"
   },
@@ -21968,7 +21585,10 @@
         "tatoeba_id": 216081
       }
     ],
-    "reversePrompt": "Damn it!"
+    "reversePrompt": "Damn it!",
+    "synonyms": [
+      "oh no"
+    ]
   },
   {
     "id": "7ef7ecde78",
@@ -22064,12 +21684,6 @@
         "tatoeba_id": 103453
       }
     ],
-    "synonyms": [
-      "denote",
-      "show",
-      "point out",
-      "indicate"
-    ],
     "reversePrompt": "to denote"
   },
   {
@@ -22103,14 +21717,6 @@
         "en": "Advertising makes up about 7% of this company's expenses.",
         "tatoeba_id": 173622
       }
-    ],
-    "synonyms": [
-      "comprise",
-      "account for",
-      "make up (of)",
-      "make up",
-      "hold",
-      "occupy"
     ],
     "reversePrompt": "to comprise"
   },
@@ -22241,11 +21847,8 @@
       }
     ],
     "synonyms": [
-      "talk",
       "speak",
-      "chat",
-      "converse",
-      "chatter"
+      "converse"
     ],
     "reversePrompt": "to talk (transitive; to chat)"
   },
@@ -22281,16 +21884,12 @@
       }
     ],
     "synonyms": [
-      "state of the US, Australia, India, Germany, etc",
-      "state",
+      "state of the us, australia, india, germany, etc",
       "state (of the us",
       "australia",
       "india",
       "germany",
-      "etc.)",
-      "province",
-      "county",
-      "region"
+      "etc.)"
     ],
     "modernMeaning": "state of the US, Australia, India, Germany, etc",
     "reversePrompt": "state of the US, Australia, India, Germany, etc"
@@ -22638,9 +22237,6 @@
         "tatoeba_id": 173191
       }
     ],
-    "synonyms": [
-      "congestion"
-    ],
     "reversePrompt": "congestion (e.g. traffic) (intransitive; delay)"
   },
   {
@@ -22952,7 +22548,10 @@
         "tatoeba_id": 110940
       }
     ],
-    "reversePrompt": "lodging (intransitive)"
+    "reversePrompt": "lodging (intransitive)",
+    "synonyms": [
+      "accommodation"
+    ]
   },
   {
     "id": "2272beabcd",
@@ -22983,7 +22582,10 @@
         "tatoeba_id": 84449
       }
     ],
-    "reversePrompt": "surgical operation"
+    "reversePrompt": "surgical operation",
+    "synonyms": [
+      "surgery"
+    ]
   },
   {
     "id": "4886c70b26",
@@ -23164,7 +22766,10 @@
         "tatoeba_id": 196699
       }
     ],
-    "reversePrompt": "capital city"
+    "reversePrompt": "capital city",
+    "synonyms": [
+      "capital"
+    ]
   },
   {
     "id": "d312849382",
@@ -23409,9 +23014,6 @@
         "tatoeba_id": 234018
       }
     ],
-    "synonyms": [
-      "turn"
-    ],
     "reversePrompt": "turn (in line) (noun; order of things)"
   },
   {
@@ -23532,7 +23134,12 @@
         "tatoeba_id": 144260
       }
     ],
-    "reversePrompt": "use (transitive; application)"
+    "reversePrompt": "use (transitive; application)",
+    "synonyms": [
+      "utilize",
+      "apply",
+      "employ"
+    ]
   },
   {
     "id": "2897f44098",
@@ -23564,9 +23171,6 @@
         "en": "He is confronted by many difficulties.",
         "tatoeba_id": 102584
       }
-    ],
-    "synonyms": [
-      "impediment"
     ],
     "reversePrompt": "obstacle"
   },
@@ -23657,7 +23261,7 @@
       }
     ],
     "synonyms": [
-      "proceeding to the capital"
+      "moving to tokyo"
     ],
     "reversePrompt": "proceeding to the capital (Tokyo)"
   },
@@ -23939,11 +23543,7 @@
       }
     ],
     "synonyms": [
-      "produce",
-      "yield",
-      "result from",
-      "arise",
-      "be generated"
+      "generated"
     ],
     "reversePrompt": "to produce (intransitive; to yield)"
   },
@@ -24352,9 +23952,6 @@
         "tatoeba_id": 172389
       }
     ],
-    "synonyms": [
-      "intelligence"
-    ],
     "reversePrompt": "information (noun; intelligence)"
   },
   {
@@ -24445,7 +24042,10 @@
         "tatoeba_id": 103945
       }
     ],
-    "reversePrompt": "employment (noun)"
+    "reversePrompt": "employment (noun)",
+    "synonyms": [
+      "job"
+    ]
   },
   {
     "id": "8d570a517c",
@@ -24630,9 +24230,6 @@
         "tatoeba_id": 109785
       }
     ],
-    "synonyms": [
-      "appetite"
-    ],
     "reversePrompt": "appetite (for food) (noun)"
   },
   {
@@ -24728,7 +24325,12 @@
         "tatoeba_id": 170376
       }
     ],
-    "reversePrompt": "study (noun)"
+    "reversePrompt": "study (noun)",
+    "synonyms": [
+      "learn",
+      "examine",
+      "cram"
+    ]
   },
   {
     "id": "0596cdc023",
@@ -25125,7 +24727,10 @@
         "tatoeba_id": 235250
       }
     ],
-    "reversePrompt": "going on to university"
+    "reversePrompt": "going on to university",
+    "synonyms": [
+      "further education"
+    ]
   },
   {
     "id": "6366942bd5",
@@ -25218,9 +24823,6 @@
         "tatoeba_id": 96813
       }
     ],
-    "synonyms": [
-      "faith"
-    ],
     "reversePrompt": "(religious) faith (transitive; belief)"
   },
   {
@@ -25252,7 +24854,12 @@
         "tatoeba_id": 145719
       }
     ],
-    "reversePrompt": "traffic lights"
+    "reversePrompt": "traffic lights",
+    "synonyms": [
+      "sign",
+      "cue",
+      "gesture"
+    ]
   },
   {
     "id": "ca92616db2",
@@ -25374,9 +24981,6 @@
         "tatoeba_id": 96769
       }
     ],
-    "synonyms": [
-      "race"
-    ],
     "reversePrompt": "race (of people) (noun)"
   },
   {
@@ -25408,10 +25012,6 @@
         "tatoeba_id": 96574
       }
     ],
-    "synonyms": [
-      "believe",
-      "place trust in"
-    ],
     "reversePrompt": "to believe (transitive; to place trust in)"
   },
   {
@@ -25442,8 +25042,7 @@
       }
     ],
     "synonyms": [
-      "this is the period of a person's life from the moment they are conceived to the moment they die",
-      "life"
+      "this is the period of a person's life from the moment they are conceived to the moment they die"
     ],
     "modernMeaning": "this is the period of a person's life from the moment they are conceived to the moment they die",
     "reversePrompt": "this is the period of a person's life from the moment they are conceived to the moment they die"
@@ -25475,7 +25074,10 @@
         "tatoeba_id": 225802
       }
     ],
-    "reversePrompt": "relative"
+    "reversePrompt": "relative",
+    "synonyms": [
+      "relatives"
+    ]
   },
   {
     "id": "20f712fd71",
@@ -25559,9 +25161,6 @@
         "tatoeba_id": 184044
       }
     ],
-    "synonyms": [
-      "body"
-    ],
     "reversePrompt": "the body (noun)"
   },
   {
@@ -25622,9 +25221,6 @@
         "en": "He is now almost as tall as his father.",
         "tatoeba_id": 110569
       }
-    ],
-    "synonyms": [
-      "height"
     ],
     "reversePrompt": "height (of body) (noun; stature)"
   },
@@ -25856,7 +25452,10 @@
         "tatoeba_id": 164673
       }
     ],
-    "reversePrompt": "mentality (noun)"
+    "reversePrompt": "mentality (noun)",
+    "synonyms": [
+      "psychology"
+    ]
   },
   {
     "id": "9b428ad249",
@@ -25952,9 +25551,6 @@
         "tatoeba_id": 208732
       }
     ],
-    "synonyms": [
-      "figure"
-    ],
     "reversePrompt": "figure (e.g. Fig 1) (noun; drawing)"
   },
   {
@@ -26016,7 +25612,10 @@
         "tatoeba_id": 225332
       }
     ],
-    "reversePrompt": "recommendation (transitive)"
+    "reversePrompt": "recommendation (transitive)",
+    "synonyms": [
+      "recommendations"
+    ]
   },
   {
     "id": "9a2b28ced4",
@@ -26075,7 +25674,13 @@
         "tatoeba_id": 168147
       }
     ],
-    "reversePrompt": "sleep (noun)"
+    "reversePrompt": "sleep (noun)",
+    "synonyms": [
+      "rest",
+      "slumber",
+      "nap",
+      "fall asleep"
+    ]
   },
   {
     "id": "55c4301a2c",
@@ -26134,9 +25739,6 @@
         "tatoeba_id": 113489
       }
     ],
-    "synonyms": [
-      "soup"
-    ],
     "reversePrompt": "(Western) soup (noun)"
   },
   {
@@ -26165,9 +25767,6 @@
         "en": "He will have lived here for ten years by the end of next month.",
         "tatoeba_id": 99128
       }
-    ],
-    "synonyms": [
-      "end of"
     ],
     "reversePrompt": "the end of"
   },
@@ -26258,10 +25857,6 @@
         "tatoeba_id": 144936
       }
     ],
-    "synonyms": [
-      "rescue from",
-      "help out of"
-    ],
     "reversePrompt": "to rescue from"
   },
   {
@@ -26293,11 +25888,6 @@
         "tatoeba_id": 102579
       }
     ],
-    "synonyms": [
-      "surpass",
-      "outstrip",
-      "excel"
-    ],
     "reversePrompt": "to surpass (intransitive; to outstrip)"
   },
   {
@@ -26327,9 +25917,6 @@
         "en": "We had a lot of fun skating.",
         "tatoeba_id": 214743
       }
-    ],
-    "synonyms": [
-      "skate"
     ],
     "reversePrompt": "skate(s)"
   },
@@ -26392,12 +25979,6 @@
         "en": "I hope this letter finds you well.",
         "tatoeba_id": 227186
       }
-    ],
-    "synonyms": [
-      "pass",
-      "spend",
-      "go through",
-      "tide over"
     ],
     "reversePrompt": "to pass (transitive; to spend)"
   },
@@ -26462,13 +26043,6 @@
         "tatoeba_id": 102867
       }
     ],
-    "synonyms": [
-      "recommend",
-      "advise",
-      "encourage",
-      "offer (wine)",
-      "offer"
-    ],
     "reversePrompt": "to recommend"
   },
   {
@@ -26500,11 +26074,6 @@
         "en": "Go ahead with this work.",
         "tatoeba_id": 221779
       }
-    ],
-    "synonyms": [
-      "advance",
-      "promote",
-      "hasten"
     ],
     "reversePrompt": "to advance (transitive; to promote)"
   },
@@ -26591,7 +26160,11 @@
         "tatoeba_id": 155225
       }
     ],
-    "reversePrompt": "stand (noun)"
+    "reversePrompt": "stand (noun)",
+    "synonyms": [
+      "rise",
+      "stand up"
+    ]
   },
   {
     "id": "e28c9da90d",
@@ -26649,9 +26222,6 @@
         "en": "She kept on asking me questions the whole time.",
         "tatoeba_id": 92705
       }
-    ],
-    "synonyms": [
-      "lot"
     ],
     "reversePrompt": "consecutively"
   },
@@ -26751,9 +26321,6 @@
         "tatoeba_id": 100707
       }
     ],
-    "synonyms": [
-      "namely"
-    ],
     "reversePrompt": "that is"
   },
   {
@@ -26816,9 +26383,6 @@
         "tatoeba_id": 78807
       }
     ],
-    "synonyms": [
-      "whole"
-    ],
     "reversePrompt": "all (the whole)"
   },
   {
@@ -26850,7 +26414,7 @@
       }
     ],
     "synonyms": [
-      "be finished"
+      "finished"
     ],
     "reversePrompt": "to be finished (transitive)"
   },
@@ -26973,9 +26537,6 @@
         "en": "Correct me if I am wrong.",
         "tatoeba_id": 193740
       }
-    ],
-    "synonyms": [
-      "true"
     ],
     "reversePrompt": "(logical) true (noun; regular)"
   },
@@ -27408,8 +26969,7 @@
       }
     ],
     "synonyms": [
-      "the utmost",
-      "as much as possible"
+      "utmost"
     ],
     "reversePrompt": "at the most"
   },
@@ -27931,7 +27491,10 @@
         "tatoeba_id": 234158
       }
     ],
-    "reversePrompt": "theory (noun)"
+    "reversePrompt": "theory (noun)",
+    "synonyms": [
+      "explanation"
+    ]
   },
   {
     "id": "f755485505",
@@ -28182,11 +27745,6 @@
         "tatoeba_id": 106370
       }
     ],
-    "synonyms": [
-      "condemn",
-      "blame",
-      "criticize"
-    ],
     "reversePrompt": "to condemn"
   },
   {
@@ -28291,10 +27849,6 @@
         "tatoeba_id": 225557
       }
     ],
-    "synonyms": [
-      "all members",
-      "whole crew"
-    ],
     "reversePrompt": "all members (unanimity)"
   },
   {
@@ -28390,10 +27944,6 @@
         "tatoeba_id": 88232
       }
     ],
-    "synonyms": [
-      "other day",
-      "few days ago"
-    ],
     "reversePrompt": "the other day (noun; a few days ago)"
   },
   {
@@ -28423,9 +27973,6 @@
         "tatoeba_id": 140945
       }
     ],
-    "synonyms": [
-      "former"
-    ],
     "reversePrompt": "the former (noun)"
   },
   {
@@ -28454,9 +28001,6 @@
         "en": "He is noted as a soccer player.",
         "tatoeba_id": 113650
       }
-    ],
-    "synonyms": [
-      "player"
     ],
     "reversePrompt": "player (in game) (noun; team)"
   },
@@ -28520,9 +28064,6 @@
         "tatoeba_id": 211424
       }
     ],
-    "synonyms": [
-      "center"
-    ],
     "reversePrompt": "a center (noun)"
   },
   {
@@ -28555,9 +28096,6 @@
         "en": "The building looks down on the whole town.",
         "tatoeba_id": 211050
       }
-    ],
-    "synonyms": [
-      "whatever"
     ],
     "reversePrompt": "whole (noun; entirety)"
   },
@@ -28939,9 +28477,6 @@
         "tatoeba_id": 213552
       }
     ],
-    "synonyms": [
-      "so"
-    ],
     "reversePrompt": "so (conj)"
   },
   {
@@ -29037,15 +28572,6 @@
         "tatoeba_id": 206987
       }
     ],
-    "synonyms": [
-      "pour (into)",
-      "pour",
-      "irrigate",
-      "pay",
-      "fill",
-      "feed (e.g. a fire)",
-      "feed"
-    ],
     "reversePrompt": "to pour (into) (transitive; to irrigate)"
   },
   {
@@ -29079,11 +28605,7 @@
       }
     ],
     "synonyms": [
-      "raise (child)",
-      "raise",
-      "be brought up",
-      "grow (up)",
-      "grow"
+      "brought up"
     ],
     "reversePrompt": "to raise (child) (intransitive; to be brought up)"
   },
@@ -29117,9 +28639,6 @@
         "en": "The plan was approved in its entirety.",
         "tatoeba_id": 176435
       }
-    ],
-    "synonyms": [
-      "splitting image of"
     ],
     "reversePrompt": "all (altogether)"
   },
@@ -29218,12 +28737,6 @@
         "tatoeba_id": 86878
       }
     ],
-    "synonyms": [
-      "furnish",
-      "provide for",
-      "equip",
-      "install"
-    ],
     "reversePrompt": "to furnish (transitive; to provide for)"
   },
   {
@@ -29292,9 +28805,6 @@
         "en": "Leave the room as it is.",
         "tatoeba_id": 84128
       }
-    ],
-    "synonyms": [
-      "as it is"
     ],
     "reversePrompt": "without change"
   },
@@ -29427,9 +28937,6 @@
         "en": "Even so, you are a human.",
         "tatoeba_id": 425538
       }
-    ],
-    "synonyms": [
-      "but"
     ],
     "reversePrompt": "but (still) (and yet)"
   },
@@ -29674,9 +29181,6 @@
         "tatoeba_id": 87193
       }
     ],
-    "synonyms": [
-      "other"
-    ],
     "reversePrompt": "other (esp. places and things) (noun)"
   },
   {
@@ -29771,7 +29275,11 @@
         "tatoeba_id": 148984
       }
     ],
-    "reversePrompt": "stand (noun; rack)"
+    "reversePrompt": "stand (noun; rack)",
+    "synonyms": [
+      "rise",
+      "stand up"
+    ]
   },
   {
     "id": "4bf6db45d0",
@@ -29902,7 +29410,7 @@
       }
     ],
     "synonyms": [
-      "temperature"
+      "body temperature"
     ],
     "reversePrompt": "temperature (body) (noun)"
   },
@@ -30121,9 +29629,6 @@
         "tatoeba_id": 126721
       }
     ],
-    "synonyms": [
-      "big deal"
-    ],
     "reversePrompt": "considerable (great)"
   },
   {
@@ -30157,12 +29662,13 @@
       }
     ],
     "synonyms": [
-      "object",
       "object (of worship",
       "study",
       "etc)",
-      "subject",
-      "subject (of taxation"
+      "subject (of taxation",
+      "learn",
+      "examine",
+      "cram"
     ],
     "reversePrompt": "target (noun; object)"
   },
@@ -30193,7 +29699,10 @@
         "tatoeba_id": 102399
       }
     ],
-    "reversePrompt": "cabinet minister"
+    "reversePrompt": "cabinet minister",
+    "synonyms": [
+      "minister"
+    ]
   },
   {
     "id": "486445bd56",
@@ -30216,11 +29725,6 @@
         "en": "We are making all efforts possible to deal with the nuclear crisis.",
         "tatoeba_id": 170390
       }
-    ],
-    "synonyms": [
-      "face",
-      "confront",
-      "oppose"
     ],
     "reversePrompt": "to face (to confront)"
   },
@@ -30497,9 +30001,6 @@
         "tatoeba_id": 218085
       }
     ],
-    "synonyms": [
-      "schedule"
-    ],
     "reversePrompt": "dyer"
   },
   {
@@ -30661,12 +30162,6 @@
         "tatoeba_id": 170837
       }
     ],
-    "synonyms": [
-      "throw down",
-      "beat",
-      "bring down",
-      "blow down"
-    ],
     "reversePrompt": "to throw down (transitive; to beat)"
   },
   {
@@ -30695,9 +30190,6 @@
         "en": "Shake off the towels.",
         "tatoeba_id": 203851
       }
-    ],
-    "synonyms": [
-      "towel"
     ],
     "reversePrompt": "(hand) towel (noun)"
   },
@@ -30730,9 +30222,6 @@
         "en": "He made a careless mistake, as is often the case with him.",
         "tatoeba_id": 118932
       }
-    ],
-    "synonyms": [
-      "yet"
     ],
     "reversePrompt": "but (however)"
   },
@@ -30858,7 +30347,10 @@
         "tatoeba_id": 169269
       }
     ],
-    "reversePrompt": "however"
+    "reversePrompt": "however",
+    "synonyms": [
+      "but"
+    ]
   },
   {
     "id": "cb944daeac",
@@ -30889,7 +30381,7 @@
       }
     ],
     "synonyms": [
-      "ascertain"
+      "confirm"
     ],
     "reversePrompt": "to ascertain"
   },
@@ -30923,7 +30415,6 @@
       }
     ],
     "synonyms": [
-      "little",
       "small",
       "tiny",
       "slight"
@@ -30961,12 +30452,9 @@
       }
     ],
     "synonyms": [
-      "help",
       "assist",
       "aid",
-      "support",
-      "save",
-      "rescue"
+      "support"
     ],
     "reversePrompt": "to help (transitive; to save)"
   },
@@ -31070,11 +30558,6 @@
         "tatoeba_id": 96659
       }
     ],
-    "synonyms": [
-      "fight",
-      "battle",
-      "combat"
-    ],
     "reversePrompt": "to fight (intransitive; to battle)"
   },
   {
@@ -31107,12 +30590,6 @@
         "en": "He banged on the table with his fist.",
         "tatoeba_id": 115677
       }
-    ],
-    "synonyms": [
-      "strike",
-      "clap",
-      "dust",
-      "beat"
     ],
     "reversePrompt": "to strike (transitive; to clap)"
   },
@@ -31176,9 +30653,6 @@
         "tatoeba_id": 201403
       }
     ],
-    "synonyms": [
-      "stand up"
-    ],
     "reversePrompt": "to stand up"
   },
   {
@@ -31239,10 +30713,6 @@
         "tatoeba_id": 150691
       }
     ],
-    "synonyms": [
-      "pass",
-      "lapse"
-    ],
     "reversePrompt": "to pass (intransitive; to lapse)"
   },
   {
@@ -31272,10 +30742,6 @@
         "en": "The water came up to his waist.",
         "tatoeba_id": 143733
       }
-    ],
-    "synonyms": [
-      "reach",
-      "get to"
     ],
     "reversePrompt": "to reach (transitive; to get to)"
   },
@@ -31531,7 +30997,6 @@
     ],
     "synonyms": [
       "degree",
-      "time",
       "hour",
       "moment",
       "period",
@@ -31792,7 +31257,7 @@
       }
     ],
     "synonyms": [
-      "be silent"
+      "silent"
     ],
     "reversePrompt": "to be silent"
   },
@@ -31853,10 +31318,6 @@
         "en": "It's good. You should try it.",
         "tatoeba_id": 227838
       }
-    ],
-    "synonyms": [
-      "attempt",
-      "test"
     ],
     "reversePrompt": "to attempt (transitive; to test)"
   },
@@ -31926,11 +31387,6 @@
         "en": "He depends on his parents for his university fees.",
         "tatoeba_id": 102448
       }
-    ],
-    "synonyms": [
-      "rely on",
-      "have recourse to",
-      "depend on"
     ],
     "reversePrompt": "to rely on (transitive; to have recourse to)"
   },
@@ -32024,9 +31480,6 @@
         "tatoeba_id": 224606
       }
     ],
-    "synonyms": [
-      "credit"
-    ],
     "reversePrompt": "unit"
   },
   {
@@ -32057,9 +31510,6 @@
         "en": "Look up words you don't know in your dictionary.",
         "tatoeba_id": 127080
       }
-    ],
-    "synonyms": [
-      "single-character word"
     ],
     "reversePrompt": "word (noun; vocabulary)"
   },
@@ -32120,7 +31570,10 @@
         "tatoeba_id": 204557
       }
     ],
-    "reversePrompt": "simplicity (な-adjective)"
+    "reversePrompt": "simplicity (な-adjective)",
+    "synonyms": [
+      "simple"
+    ]
   },
   {
     "id": "d09ecbe5b0",
@@ -32243,7 +31696,7 @@
       }
     ],
     "synonyms": [
-      "charge"
+      "responsibilities"
     ],
     "reversePrompt": "(in) charge (transitive)"
   },
@@ -32367,9 +31820,6 @@
         "en": "He had access to the papers.",
         "tatoeba_id": 112674
       }
-    ],
-    "synonyms": [
-      "position"
     ],
     "reversePrompt": "(social) position (noun; status)"
   },
@@ -32585,9 +32035,6 @@
         "tatoeba_id": 92241
       }
     ],
-    "synonyms": [
-      "sure"
-    ],
     "reversePrompt": "(phrase) sure"
   },
   {
@@ -32648,9 +32095,6 @@
         "en": "Is there life on other worlds?",
         "tatoeba_id": 126939
       }
-    ],
-    "synonyms": [
-      "earth"
     ],
     "reversePrompt": "the earth (noun)"
   },
@@ -32744,7 +32188,10 @@
         "tatoeba_id": 127056
       }
     ],
-    "reversePrompt": "prefectural governor"
+    "reversePrompt": "prefectural governor",
+    "synonyms": [
+      "governor"
+    ]
   },
   {
     "id": "ae8e7129b1",
@@ -32892,9 +32339,6 @@
         "en": "It is reported in the local news.",
         "tatoeba_id": 204987
       }
-    ],
-    "synonyms": [
-      "coast"
     ],
     "reversePrompt": "area (noun; locality)"
   },
@@ -33212,9 +32656,6 @@
         "tatoeba_id": 125638
       }
     ],
-    "synonyms": [
-      "parking"
-    ],
     "reversePrompt": "parking (e.g. car)"
   },
   {
@@ -33373,7 +32814,10 @@
         "tatoeba_id": 125882
       }
     ],
-    "reversePrompt": "long time period"
+    "reversePrompt": "long time period",
+    "synonyms": [
+      "long-term"
+    ]
   },
   {
     "id": "4dc252fa39",
@@ -33501,8 +32945,7 @@
       }
     ],
     "synonyms": [
-      "please do this for me (with the preposition \"for\")",
-      "please do for me"
+      "please do this for me"
     ],
     "modernMeaning": "please do this for me (with the preposition \"for\")",
     "reversePrompt": "please do this for me (with the preposition \"for\")"
@@ -33535,9 +32978,6 @@
         "en": "He puts ten dollars aside every week.",
         "tatoeba_id": 99839
       }
-    ],
-    "synonyms": [
-      "savings"
     ],
     "reversePrompt": "(bank) savings (transitive)"
   },
@@ -33789,10 +33229,6 @@
       }
     ],
     "synonyms": [
-      "run to",
-      "lead to",
-      "communicate",
-      "understand",
       "comprehend",
       "grasp",
       "realize",
@@ -33833,7 +33269,12 @@
         "tatoeba_id": 137801
       }
     ],
-    "reversePrompt": "correspondence (transitive; communication)"
+    "reversePrompt": "correspondence (transitive; communication)",
+    "synonyms": [
+      "sign",
+      "cue",
+      "gesture"
+    ]
   },
   {
     "id": "2ddd05a675",
@@ -33865,8 +33306,8 @@
       }
     ],
     "synonyms": [
-      "be caught",
-      "be arrested"
+      "caught",
+      "arrested"
     ],
     "reversePrompt": "to be caught"
   },
@@ -33899,11 +33340,6 @@
         "en": "He caught hold of a rope and saved himself.",
         "tatoeba_id": 109858
       }
-    ],
-    "synonyms": [
-      "seize",
-      "catch",
-      "grasp"
     ],
     "reversePrompt": "to seize (transitive; to catch)"
   },
@@ -34030,14 +33466,14 @@
       }
     ],
     "synonyms": [
-      "settle in (place)",
-      "settle in",
-      "take (seat, position)",
-      "take",
       "take (seat",
       "position)",
-      "study (under teacher)",
-      "study"
+      "grab",
+      "hold",
+      "pick up",
+      "learn",
+      "examine",
+      "cram"
     ],
     "reversePrompt": "to settle in (place)"
   },
@@ -34071,12 +33507,6 @@
         "en": "You are asking too much for this car.",
         "tatoeba_id": 178838
       }
-    ],
-    "synonyms": [
-      "attach",
-      "join",
-      "add",
-      "append"
     ],
     "reversePrompt": "to attach (transitive; to join)"
   },
@@ -34267,13 +33697,6 @@
         "tatoeba_id": 157281
       }
     ],
-    "synonyms": [
-      "tie",
-      "fasten",
-      "connect",
-      "transfer (phone call)",
-      "transfer"
-    ],
     "reversePrompt": "to tie (transitive; to fasten)"
   },
   {
@@ -34333,7 +33756,10 @@
         "tatoeba_id": 143675
       }
     ],
-    "reversePrompt": "horn"
+    "reversePrompt": "horn",
+    "synonyms": [
+      "corner"
+    ]
   },
   {
     "id": "526a0047ad",
@@ -34362,7 +33788,10 @@
         "tatoeba_id": 150668
       }
     ],
-    "reversePrompt": "wings"
+    "reversePrompt": "wings",
+    "synonyms": [
+      "wing"
+    ]
   },
   {
     "id": "9a7106c569",
@@ -34459,12 +33888,6 @@
         "tatoeba_id": 204694
       }
     ],
-    "synonyms": [
-      "pack",
-      "shorten",
-      "work out (details)",
-      "work out"
-    ],
     "reversePrompt": "to pack"
   },
   {
@@ -34496,7 +33919,7 @@
       }
     ],
     "synonyms": [
-      "pile up"
+      "accumulate"
     ],
     "reversePrompt": "to pile up (intransitive)"
   },
@@ -34648,10 +34071,6 @@
         "tatoeba_id": 233461
       }
     ],
-    "synonyms": [
-      "coming out",
-      "graduate"
-    ],
     "reversePrompt": "outflow"
   },
   {
@@ -34715,11 +34134,6 @@
         "tatoeba_id": 154817
       }
     ],
-    "synonyms": [
-      "meet by chance",
-      "come across",
-      "happen to encounter"
-    ],
     "reversePrompt": "to meet by chance (intransitive; to come across)"
   },
   {
@@ -34780,7 +34194,10 @@
         "tatoeba_id": 183139
       }
     ],
-    "reversePrompt": "fixed term"
+    "reversePrompt": "fixed term",
+    "synonyms": [
+      "subscription"
+    ]
   },
   {
     "id": "964f36527f",
@@ -34881,9 +34298,6 @@
         "tatoeba_id": 200270
       }
     ],
-    "synonyms": [
-      "of the order of"
-    ],
     "reversePrompt": "degree"
   },
   {
@@ -34913,7 +34327,10 @@
         "tatoeba_id": 179881
       }
     ],
-    "reversePrompt": "bus or tram stop"
+    "reversePrompt": "bus or tram stop",
+    "synonyms": [
+      "bus stop"
+    ]
   },
   {
     "id": "9a64047c66",
@@ -35035,10 +34452,6 @@
         "tatoeba_id": 200056
       }
     ],
-    "synonyms": [
-      "fit",
-      "suit"
-    ],
     "reversePrompt": "to fit (intransitive; to suit)"
   },
   {
@@ -35132,7 +34545,10 @@
         "tatoeba_id": 211516
       }
     ],
-    "reversePrompt": "applying"
+    "reversePrompt": "applying",
+    "synonyms": [
+      "application"
+    ]
   },
   {
     "id": "df68a4c0c8",
@@ -35310,7 +34726,12 @@
         "tatoeba_id": 88473
       }
     ],
-    "reversePrompt": "help (noun; helper)"
+    "reversePrompt": "help (noun; helper)",
+    "synonyms": [
+      "assist",
+      "aid",
+      "support"
+    ]
   },
   {
     "id": "9ed2c14da0",
@@ -35372,7 +34793,10 @@
         "tatoeba_id": 137425
       }
     ],
-    "reversePrompt": "railroad"
+    "reversePrompt": "railroad",
+    "synonyms": [
+      "railway"
+    ]
   },
   {
     "id": "70e6480c13",
@@ -35472,9 +34896,6 @@
         "tatoeba_id": 112445
       }
     ],
-    "synonyms": [
-      "demo"
-    ],
     "reversePrompt": "(abbreviation) demo"
   },
   {
@@ -35563,7 +34984,10 @@
         "tatoeba_id": 179787
       }
     ],
-    "reversePrompt": "electron"
+    "reversePrompt": "electron",
+    "synonyms": [
+      "electronic"
+    ]
   },
   {
     "id": "8f4da6b41b",
@@ -35711,9 +35135,6 @@
         "tatoeba_id": 101790
       }
     ],
-    "synonyms": [
-      "party"
-    ],
     "reversePrompt": "party (political) (noun)"
   },
   {
@@ -35835,7 +35256,10 @@
         "tatoeba_id": 201632
       }
     ],
-    "reversePrompt": "copper coin"
+    "reversePrompt": "copper coin",
+    "synonyms": [
+      "please"
+    ]
   },
   {
     "id": "0197af118e",
@@ -35894,7 +35318,10 @@
         "tatoeba_id": 83694
       }
     ],
-    "reversePrompt": "verb"
+    "reversePrompt": "verb",
+    "synonyms": [
+      "verbs"
+    ]
   },
   {
     "id": "4e4e228253",
@@ -35924,9 +35351,6 @@
         "en": "Two jet planes took off at the same time.",
         "tatoeba_id": 123149
       }
-    ],
-    "synonyms": [
-      "simultaneous"
     ],
     "reversePrompt": "simultaneous(ly) (concurrent)"
   },
@@ -36023,7 +35447,10 @@
         "tatoeba_id": 204964
       }
     ],
-    "reversePrompt": "morals"
+    "reversePrompt": "morals",
+    "synonyms": [
+      "morality"
+    ]
   },
   {
     "id": "17dc7366d9",
@@ -36088,9 +35515,6 @@
         "en": "There is no more difficult task than that.",
         "tatoeba_id": 229747
       }
-    ],
-    "synonyms": [
-      "same"
     ],
     "reversePrompt": "identical"
   },
@@ -36184,11 +35608,6 @@
         "tatoeba_id": 110500
       }
     ],
-    "synonyms": [
-      "let pass",
-      "overlook",
-      "continue"
-    ],
     "reversePrompt": "to let pass (transitive; to overlook)"
   },
   {
@@ -36252,10 +35671,6 @@
         "tatoeba_id": 77573
       }
     ],
-    "synonyms": [
-      "pass",
-      "pass through"
-    ],
     "reversePrompt": "to pass (intransitive; to pass through)"
   },
   {
@@ -36286,7 +35701,10 @@
         "tatoeba_id": 101861
       }
     ],
-    "reversePrompt": "city (noun)"
+    "reversePrompt": "city (noun)",
+    "synonyms": [
+      "metropolis"
+    ]
   },
   {
     "id": "ff30b33097",
@@ -36351,7 +35769,7 @@
       }
     ],
     "synonyms": [
-      "unfasten"
+      "solve"
     ],
     "reversePrompt": "to unfasten (transitive)"
   },
@@ -36574,9 +35992,6 @@
         "tatoeba_id": 228371
       }
     ],
-    "synonyms": [
-      "independence"
-    ],
     "reversePrompt": "independence (e.g. Ind. Day) (intransitive; self-support)"
   },
   {
@@ -36607,10 +36022,6 @@
         "en": "We think it is possible for him to solve the problem.",
         "tatoeba_id": 112339
       }
-    ],
-    "synonyms": [
-      "come untied",
-      "come apart"
     ],
     "reversePrompt": "to come untied"
   },
@@ -36743,7 +36154,10 @@
         "tatoeba_id": 190626
       }
     ],
-    "reversePrompt": "mountain-climbing"
+    "reversePrompt": "mountain-climbing",
+    "synonyms": [
+      "mountain climbing"
+    ]
   },
   {
     "id": "142b45f619",
@@ -36803,7 +36217,10 @@
         "tatoeba_id": 236018
       }
     ],
-    "reversePrompt": "months and years"
+    "reversePrompt": "months and years",
+    "synonyms": [
+      "year and month"
+    ]
   },
   {
     "id": "c660f5b541",
@@ -36857,9 +36274,6 @@
         "tatoeba_id": 77304
       }
     ],
-    "synonyms": [
-      "aged"
-    ],
     "reversePrompt": "old people"
   },
   {
@@ -36893,11 +36307,8 @@
       }
     ],
     "synonyms": [
-      "close (e.g. book, eyes)",
-      "close",
       "close (e.g. book",
-      "eyes)",
-      "shut"
+      "eyes)"
     ],
     "reversePrompt": "to close (e.g. book, eyes) (transitive; to shut)"
   },
@@ -36931,7 +36342,6 @@
     ],
     "synonyms": [
       "at this very moment",
-      "just",
       "just (now",
       "at the moment",
       "etc.)"
@@ -37061,9 +36471,6 @@
         "tatoeba_id": 224786
       }
     ],
-    "synonyms": [
-      "reach"
-    ],
     "reversePrompt": "to reach (intransitive)"
   },
   {
@@ -37131,10 +36538,6 @@
         "tatoeba_id": 236826
       }
     ],
-    "synonyms": [
-      "skip over",
-      "omit"
-    ],
     "reversePrompt": "to skip over"
   },
   {
@@ -37167,11 +36570,6 @@
         "tatoeba_id": 125641
       }
     ],
-    "synonyms": [
-      "jump out",
-      "rush out",
-      "fly out"
-    ],
     "reversePrompt": "to jump out"
   },
   {
@@ -37201,11 +36599,6 @@
         "en": "This document is for your eyes only.",
         "tatoeba_id": 219902
       }
-    ],
-    "synonyms": [
-      "fasten",
-      "turn off",
-      "detain"
     ],
     "reversePrompt": "to fasten (transitive; to turn off)"
   },
@@ -37383,9 +36776,6 @@
         "en": "In today’s class, I learned how to use the expression “truck.”"
       }
     ],
-    "synonyms": [
-      "track"
-    ],
     "reversePrompt": "truck"
   },
   {
@@ -37444,7 +36834,7 @@
       }
     ],
     "synonyms": [
-      "playing cards"
+      "trump"
     ],
     "reversePrompt": "playing cards (lit: trump) (noun)"
   },
@@ -37478,13 +36868,6 @@
         "en": "All the papers featured the case.",
         "tatoeba_id": 140800
       }
-    ],
-    "synonyms": [
-      "take up",
-      "pick up",
-      "disqualify",
-      "confiscate",
-      "deprive"
     ],
     "reversePrompt": "to take up (transitive; to pick up)"
   },
@@ -37582,9 +36965,8 @@
       }
     ],
     "synonyms": [
-      "come off",
-      "be taken off",
-      "be removed"
+      "taken off",
+      "removed"
     ],
     "reversePrompt": "to come off (intransitive; to be taken off)"
   },
@@ -37918,14 +37300,8 @@
       }
     ],
     "synonyms": [
-      "drain",
-      "float",
-      "shed (blood, tears)",
-      "shed",
       "shed (blood",
-      "tears)",
-      "cruise (e.g. taxi)",
-      "cruise"
+      "tears)"
     ],
     "reversePrompt": "to drain (transitive; to float)"
   },
@@ -38055,10 +37431,6 @@
         "tatoeba_id": 97860
       }
     ],
-    "synonyms": [
-      "view",
-      "gaze at"
-    ],
     "reversePrompt": "to view (transitive; to gaze at)"
   },
   {
@@ -38123,11 +37495,10 @@
       }
     ],
     "synonyms": [
-      "stream",
-      "flow",
-      "run (ink)",
-      "run",
-      "be washed away"
+      "washed away",
+      "jog",
+      "sprint",
+      "dash"
     ],
     "reversePrompt": "to stream (intransitive; to flow)"
   },
@@ -38159,7 +37530,10 @@
         "tatoeba_id": 80927
       }
     ],
-    "reversePrompt": "without"
+    "reversePrompt": "without",
+    "synonyms": [
+      "none"
+    ]
   },
   {
     "id": "de314c95de",
@@ -38404,9 +37778,6 @@
         "tatoeba_id": 225838
       }
     ],
-    "synonyms": [
-      "draft"
-    ],
     "reversePrompt": "draft (beer) (noun; raw)"
   },
   {
@@ -38439,8 +37810,7 @@
       }
     ],
     "synonyms": [
-      "be idle",
-      "neglect"
+      "idle"
     ],
     "reversePrompt": "to be idle (intransitive; to neglect)"
   },
@@ -38499,7 +37869,10 @@
         "tatoeba_id": 209393
       }
     ],
-    "reversePrompt": "tear (noun)"
+    "reversePrompt": "tear (noun)",
+    "synonyms": [
+      "tears"
+    ]
   },
   {
     "id": "7f56822dfc",
@@ -38531,8 +37904,8 @@
       }
     ],
     "synonyms": [
-      "be worried",
-      "be troubled"
+      "worried",
+      "troubled"
     ],
     "reversePrompt": "to be worried (intransitive; to be troubled)"
   },
@@ -38689,10 +38062,7 @@
       }
     ],
     "synonyms": [
-      "suit",
-      "match",
-      "become",
-      "be like"
+      "like"
     ],
     "reversePrompt": "to suit (intransitive; to match)"
   },
@@ -38727,13 +38097,10 @@
       }
     ],
     "synonyms": [
-      "poor",
-      "weak",
       "frail",
       "feeble",
       "delicate",
-      "faint",
-      "dislike"
+      "faint"
     ],
     "reversePrompt": "poor (at) (な-adjective; weak)"
   },
@@ -38767,11 +38134,6 @@
         "tatoeba_id": 91280
       }
     ],
-    "synonyms": [
-      "grasp",
-      "seize",
-      "mould sushi"
-    ],
     "reversePrompt": "to grasp (transitive; to seize)"
   },
   {
@@ -38800,10 +38162,6 @@
         "en": "It was not until a few days later that the news arrived.",
         "tatoeba_id": 207988
       }
-    ],
-    "synonyms": [
-      "day",
-      "sunday"
     ],
     "reversePrompt": "day (of the month)"
   },
@@ -38895,7 +38253,10 @@
         "tatoeba_id": 97911
       }
     ],
-    "reversePrompt": "sunlight (noun)"
+    "reversePrompt": "sunlight (noun)",
+    "synonyms": [
+      "nikko"
+    ]
   },
   {
     "id": "fca12641c2",
@@ -39120,13 +38481,6 @@
         "tatoeba_id": 203278
       }
     ],
-    "synonyms": [
-      "extract",
-      "omit",
-      "surpass",
-      "draw out",
-      "unplug"
-    ],
     "reversePrompt": "to extract"
   },
   {
@@ -39159,9 +38513,7 @@
       }
     ],
     "synonyms": [
-      "come out",
-      "fall out",
-      "be omitted"
+      "omitted"
     ],
     "reversePrompt": "to come out (intransitive; to fall out)"
   },
@@ -39317,11 +38669,6 @@
         "tatoeba_id": 105874
       }
     ],
-    "synonyms": [
-      "desire",
-      "wish",
-      "request"
-    ],
     "reversePrompt": "to desire (transitive; to wish)"
   },
   {
@@ -39381,7 +38728,10 @@
         "tatoeba_id": 221278
       }
     ],
-    "reversePrompt": "tropics"
+    "reversePrompt": "tropics",
+    "synonyms": [
+      "tropical"
+    ]
   },
   {
     "id": "c03a75fe96",
@@ -39444,7 +38794,10 @@
         "tatoeba_id": 75787
       }
     ],
-    "reversePrompt": "year (noun)"
+    "reversePrompt": "year (noun)",
+    "synonyms": [
+      "annual"
+    ]
   },
   {
     "id": "182db962d0",
@@ -39797,13 +39150,8 @@
       }
     ],
     "synonyms": [
-      "leave (behind, over)",
-      "leave",
       "leave (behind",
-      "over)",
-      "bequeath",
-      "save",
-      "reserve"
+      "over)"
     ],
     "reversePrompt": "to leave (behind, over) (transitive; to bequeath)"
   },
@@ -39869,12 +39217,6 @@
         "tatoeba_id": 108594
       }
     ],
-    "synonyms": [
-      "place on (something)",
-      "place on",
-      "take on board",
-      "give a ride"
-    ],
     "reversePrompt": "to place on (something) (transitive; to take on board)"
   },
   {
@@ -39906,11 +39248,6 @@
         "tatoeba_id": 121323
       }
     ],
-    "synonyms": [
-      "remove",
-      "exclude",
-      "except"
-    ],
     "reversePrompt": "to remove (transitive; to exclude)"
   },
   {
@@ -39941,9 +39278,6 @@
         "en": "That team has little, if any, chance of winning.",
         "tatoeba_id": 231309
       }
-    ],
-    "synonyms": [
-      "hope"
     ],
     "reversePrompt": "wish (noun; desire)"
   },
@@ -39979,15 +39313,10 @@
       }
     ],
     "synonyms": [
-      "desire",
-      "wish for",
-      "see",
       "look",
       "watch",
       "view",
-      "observe",
-      "command (a view of)",
-      "command"
+      "observe"
     ],
     "reversePrompt": "to desire (transitive; to wish for)"
   },
@@ -40053,9 +39382,6 @@
         "tatoeba_id": 137114
       }
     ],
-    "synonyms": [
-      "fungo"
-    ],
     "reversePrompt": "knock (transitive; fungo)"
   },
   {
@@ -40088,13 +39414,6 @@
         "en": "Dad extended his legs on the sofa.",
         "tatoeba_id": 84709
       }
-    ],
-    "synonyms": [
-      "lengthen",
-      "stretch",
-      "reach out",
-      "grow (beard)",
-      "grow"
     ],
     "reversePrompt": "to lengthen (transitive; to stretch)"
   },
@@ -40130,11 +39449,6 @@
       }
     ],
     "synonyms": [
-      "stretch",
-      "extend",
-      "make progress",
-      "grow (beard, body height)",
-      "grow",
       "grow (beard",
       "body height)"
     ],
@@ -40170,11 +39484,6 @@
         "tatoeba_id": 88230
       }
     ],
-    "synonyms": [
-      "state",
-      "express",
-      "mention"
-    ],
     "reversePrompt": "to state (transitive; to express)"
   },
   {
@@ -40205,11 +39514,6 @@
         "en": "Cats can climb trees, but dogs can't.",
         "tatoeba_id": 121929
       }
-    ],
-    "synonyms": [
-      "arise",
-      "ascend",
-      "go up"
     ],
     "reversePrompt": "to rise (the sun, sky, rank)"
   },
@@ -40271,9 +39575,6 @@
         "en": "The party grew chilly.",
         "tatoeba_id": 146091
       }
-    ],
-    "synonyms": [
-      "field"
     ],
     "reversePrompt": "place (noun; field)"
   },
@@ -40664,11 +39965,6 @@
         "tatoeba_id": 137988
       }
     ],
-    "synonyms": [
-      "measure",
-      "weigh",
-      "survey"
-    ],
     "reversePrompt": "to measure (transitive; to weigh)"
   },
   {
@@ -40694,13 +39990,6 @@
         "furigana": "酔っ払って急に吐いてしまった。",
         "en": "I got drunk and suddenly threw up."
       }
-    ],
-    "synonyms": [
-      "breathe",
-      "tell (lies)",
-      "tell",
-      "vomit",
-      "disgorge"
     ],
     "reversePrompt": "to breathe"
   },
@@ -40918,9 +40207,6 @@
         "tatoeba_id": 119566
       }
     ],
-    "synonyms": [
-      "bankruptcy"
-    ],
     "reversePrompt": "(personal) bankruptcy (intransitive)"
   },
   {
@@ -40955,7 +40241,9 @@
       }
     ],
     "synonyms": [
-      "end"
+      "finish",
+      "conclude",
+      "terminate"
     ],
     "reversePrompt": "end (e.g. of street) (noun; edge)"
   },
@@ -41010,9 +40298,6 @@
         "en": "When boiling pasta, adding salt makes it taste better."
       }
     ],
-    "synonyms": [
-      "pass"
-    ],
     "reversePrompt": "path"
   },
   {
@@ -41043,10 +40328,6 @@
         "en": "Leave it off the list.",
         "tatoeba_id": 204628
       }
-    ],
-    "synonyms": [
-      "unfasten",
-      "remove"
     ],
     "reversePrompt": "to unfasten (transitive; to remove)"
   },
@@ -41315,7 +40596,7 @@
       }
     ],
     "synonyms": [
-      "issue"
+      "publication"
     ],
     "reversePrompt": "issue (publications) (transitive)"
   },
@@ -41348,7 +40629,10 @@
         "tatoeba_id": 188914
       }
     ],
-    "reversePrompt": "departure of a vehicle"
+    "reversePrompt": "departure of a vehicle",
+    "synonyms": [
+      "departure"
+    ]
   },
   {
     "id": "b57a219b43",
@@ -41377,10 +40661,6 @@
         "en": "I became hardened to punishing pupils.",
         "tatoeba_id": 142717
       }
-    ],
-    "synonyms": [
-      "punish",
-      "penalize"
     ],
     "reversePrompt": "to punish"
   },
@@ -41446,9 +40726,6 @@
         "en": "He came across her at the station.",
         "tatoeba_id": 109607
       }
-    ],
-    "synonyms": [
-      "with a clash"
     ],
     "reversePrompt": "with a clash (thud)"
   },
@@ -41575,10 +40852,6 @@
         "tatoeba_id": 84827
       }
     ],
-    "synonyms": [
-      "discuss",
-      "talk together"
-    ],
     "reversePrompt": "to discuss (transitive; to talk together)"
   },
   {
@@ -41609,10 +40882,6 @@
         "en": "Please be careful not to let the dog loose.",
         "tatoeba_id": 9045415
       }
-    ],
-    "synonyms": [
-      "separate",
-      "set free"
     ],
     "reversePrompt": "to separate (transitive; to set free)"
   },
@@ -41645,9 +40914,6 @@
         "en": "Will you take your hand off me?",
         "tatoeba_id": 167911
       }
-    ],
-    "synonyms": [
-      "part"
     ],
     "reversePrompt": "to part (transitive; divide)"
   },
@@ -41684,10 +40950,7 @@
     ],
     "synonyms": [
       "separated from",
-      "be separated from",
-      "leave",
-      "go away",
-      "be a long way off"
+      "a long way off"
     ],
     "modernMeaning": "separated from",
     "reversePrompt": "separated from"
@@ -41815,12 +41078,6 @@
         "tatoeba_id": 218760
       }
     ],
-    "synonyms": [
-      "omit",
-      "eliminate",
-      "curtail",
-      "economize"
-    ],
     "reversePrompt": "to omit (transitive; to eliminate)"
   },
   {
@@ -41850,9 +41107,6 @@
         "en": "They showed the scene in slow motion.",
         "tatoeba_id": 214090
       }
-    ],
-    "synonyms": [
-      "setting"
     ],
     "reversePrompt": "scene (noun; setting)"
   },
@@ -41941,9 +41195,6 @@
         "tatoeba_id": 83383
       }
     ],
-    "synonyms": [
-      "hand"
-    ],
     "reversePrompt": "needle"
   },
   {
@@ -41975,10 +41226,6 @@
         "tatoeba_id": 80709
       }
     ],
-    "synonyms": [
-      "stick",
-      "paste"
-    ],
     "reversePrompt": "to stick (transitive; to paste)"
   },
   {
@@ -42002,9 +41249,6 @@
         "furigana": "ソフトバンクは、大手携帯通信会社です。",
         "en": "Softbank is a major mobile communication company."
       }
-    ],
-    "synonyms": [
-      "van"
     ],
     "reversePrompt": "bun"
   },
@@ -42037,7 +41281,7 @@
       }
     ],
     "synonyms": [
-      "number"
+      "no"
     ],
     "reversePrompt": "number (in a series) (noun)"
   },
@@ -42399,10 +41643,7 @@
       }
     ],
     "synonyms": [
-      "to run someone over with a car",
-      "run somebody over (with vehicle)",
-      "run somebody over",
-      "knock someone down"
+      "run someone over with a car"
     ],
     "modernMeaning": "to run someone over with a car",
     "reversePrompt": "to run someone over with a car"
@@ -42492,7 +41733,10 @@
         "tatoeba_id": 192423
       }
     ],
-    "reversePrompt": "aviation (intransitive)"
+    "reversePrompt": "aviation (intransitive)",
+    "synonyms": [
+      "flight"
+    ]
   },
   {
     "id": "908a7a4f49",
@@ -42581,7 +41825,7 @@
       }
     ],
     "synonyms": [
-      "beautiful person"
+      "beauty"
     ],
     "reversePrompt": "beautiful person (woman)"
   },
@@ -42749,14 +41993,6 @@
         "tatoeba_id": 82777
       }
     ],
-    "synonyms": [
-      "pull",
-      "draw",
-      "stretch",
-      "drag",
-      "pull the ball (baseball)",
-      "pull the ball"
-    ],
     "reversePrompt": "to pull (transitive; to draw)"
   },
   {
@@ -42851,7 +42087,10 @@
         "tatoeba_id": 106152
       }
     ],
-    "reversePrompt": "single word"
+    "reversePrompt": "single word",
+    "synonyms": [
+      "One-word entry"
+    ]
   },
   {
     "id": "5ac7d3cf22",
@@ -42880,7 +42119,10 @@
         "tatoeba_id": 103559
       }
     ],
-    "reversePrompt": "crowd of people"
+    "reversePrompt": "crowd of people",
+    "synonyms": [
+      "crowd"
+    ]
   },
   {
     "id": "71f52e4f3e",
@@ -43162,9 +42404,6 @@
         "tatoeba_id": 220393
       }
     ],
-    "synonyms": [
-      "table"
-    ],
     "reversePrompt": "table (e.g. Tab 1) (noun; chart)"
   },
   {
@@ -43224,7 +42463,7 @@
       }
     ],
     "synonyms": [
-      "second"
+      "seconds"
     ],
     "reversePrompt": "second (60th min) (noun)"
   },
@@ -43293,9 +42532,6 @@
         "tatoeba_id": 144950
       }
     ],
-    "synonyms": [
-      "representation"
-    ],
     "reversePrompt": "expression (transitive; presentation)"
   },
   {
@@ -43356,9 +42592,6 @@
         "en": "In the sight of God, all men are equal.",
         "tatoeba_id": 237406
       }
-    ],
-    "synonyms": [
-      "equality"
     ],
     "reversePrompt": "equality (a) (な-adjective; impartiality)"
   },
@@ -43460,14 +42693,6 @@
         "tatoeba_id": 189649
       }
     ],
-    "synonyms": [
-      "spread (out)",
-      "spread",
-      "extend",
-      "stretch",
-      "reach to",
-      "get around"
-    ],
     "reversePrompt": "to spread (out) (intransitive; to extend)"
   },
   {
@@ -43529,11 +42754,6 @@
         "en": "Can I book two seats on that flight?",
         "tatoeba_id": 206821
       }
-    ],
-    "synonyms": [
-      "flight",
-      "trip",
-      "sailing"
     ],
     "reversePrompt": "flight (e.g. airline flight) (noun; trip)"
   },
@@ -43644,7 +42864,10 @@
         "tatoeba_id": 213607
       }
     ],
-    "reversePrompt": "scenery (noun)"
+    "reversePrompt": "scenery (noun)",
+    "synonyms": [
+      "landscape"
+    ]
   },
   {
     "id": "3146d2f2ac",
@@ -43800,7 +43023,10 @@
         "tatoeba_id": 90074
       }
     ],
-    "reversePrompt": "garments (noun)"
+    "reversePrompt": "garments (noun)",
+    "synonyms": [
+      "clothing"
+    ]
   },
   {
     "id": "3dd04815d8",
@@ -43830,10 +43056,6 @@
         "en": "The breakfast is included in the charge.",
         "tatoeba_id": 85808
       }
-    ],
-    "synonyms": [
-      "hold in the mouth",
-      "bear in mind"
     ],
     "reversePrompt": "to hold in the mouth"
   },
@@ -44146,12 +43368,6 @@
         "tatoeba_id": 166380
       }
     ],
-    "synonyms": [
-      "defend (against)",
-      "defend",
-      "protect",
-      "prevent"
-    ],
     "reversePrompt": "to defend (against)"
   },
   {
@@ -44216,9 +43432,6 @@
         "tatoeba_id": 206904
       }
     ],
-    "synonyms": [
-      "stage"
-    ],
     "reversePrompt": "stage (theatre) (noun)"
   },
   {
@@ -44248,9 +43461,6 @@
         "en": "He took me for my twin brother.",
         "tatoeba_id": 105819
       }
-    ],
-    "synonyms": [
-      "twin"
     ],
     "reversePrompt": "twins"
   },
@@ -44282,9 +43492,6 @@
         "en": "He was never to see his mother again.",
         "tatoeba_id": 106981
       }
-    ],
-    "synonyms": [
-      "second time"
     ],
     "reversePrompt": "again (once more)"
   },
@@ -44381,10 +43588,6 @@
         "tatoeba_id": 210431
       }
     ],
-    "synonyms": [
-      "hit",
-      "strike"
-    ],
     "reversePrompt": "to hit (transitive; to strike)"
   },
   {
@@ -44414,9 +43617,6 @@
         "en": "Prices have been rising steadily.",
         "tatoeba_id": 83795
       }
-    ],
-    "synonyms": [
-      "prices"
     ],
     "reversePrompt": "prices of commodities"
   },
@@ -44505,7 +43705,10 @@
         "tatoeba_id": 207084
       }
     ],
-    "reversePrompt": "writing brush"
+    "reversePrompt": "writing brush",
+    "synonyms": [
+      "pen"
+    ]
   },
   {
     "id": "347f2ce155",
@@ -44801,16 +44004,6 @@
         "tatoeba_id": 192766
       }
     ],
-    "synonyms": [
-      "wave",
-      "shake",
-      "swing",
-      "sprinkle",
-      "cast (actor)",
-      "cast",
-      "allocate (work)",
-      "allocate"
-    ],
     "reversePrompt": "to wave (transitive; to shake)"
   },
   {
@@ -44843,11 +44036,6 @@
         "tatoeba_id": 208184
       }
     ],
-    "synonyms": [
-      "shiver",
-      "shake",
-      "quake"
-    ],
     "reversePrompt": "to shiver"
   },
   {
@@ -44876,9 +44064,6 @@
         "en": "The function of the brake is to stop the car.",
         "tatoeba_id": 196926
       }
-    ],
-    "synonyms": [
-      "brake"
     ],
     "reversePrompt": "a brake"
   },
@@ -44915,16 +44100,10 @@
       }
     ],
     "synonyms": [
-      "touch",
-      "be touched",
-      "touch on a subject",
-      "feel",
-      "violate (law, copyright, etc.)",
-      "violate",
+      "touched",
       "violate (law",
       "copyright",
-      "etc.)",
-      "perceive"
+      "etc.)"
     ],
     "reversePrompt": "to touch (intransitive; to be touched)"
   },
@@ -44956,7 +44135,10 @@
         "tatoeba_id": 123725
       }
     ],
-    "reversePrompt": "professional (noun)"
+    "reversePrompt": "professional (noun)",
+    "synonyms": [
+      "pro"
+    ]
   },
   {
     "id": "3c5ff54bea",
@@ -45045,9 +44227,6 @@
         "en": "Children reflect the family atmosphere.",
         "tatoeba_id": 168549
       }
-    ],
-    "synonyms": [
-      "atmosphere"
     ],
     "reversePrompt": "atmosphere (e.g. musical) (noun; mood)"
   },
@@ -45268,9 +44447,6 @@
         "tatoeba_id": 218096
       }
     ],
-    "synonyms": [
-      "particularly"
-    ],
     "reversePrompt": "(not) particularly (nothing)"
   },
   {
@@ -45303,12 +44479,6 @@
         "en": "I think you'd better go on a diet.",
         "tatoeba_id": 236875
       }
-    ],
-    "synonyms": [
-      "abate",
-      "decrease",
-      "diminish",
-      "shorten"
     ],
     "reversePrompt": "to abate (transitive; to decrease)"
   },
@@ -45345,11 +44515,7 @@
       }
     ],
     "synonyms": [
-      "to make it smaller or less of",
-      "decrease (in size or number)",
-      "decrease",
-      "diminish",
-      "abate"
+      "make it smaller or less of"
     ],
     "modernMeaning": "to make it smaller or less of",
     "reversePrompt": "to make it smaller or less of"
@@ -45381,7 +44547,10 @@
         "tatoeba_id": 82580
       }
     ],
-    "reversePrompt": "Belt for western clothes"
+    "reversePrompt": "Belt for western clothes",
+    "synonyms": [
+      "belt"
+    ]
   },
   {
     "id": "eac8dadcd3",
@@ -45442,9 +44611,6 @@
         "en": "The boy has a paint spot on his shirt.",
         "tatoeba_id": 146603
       }
-    ],
-    "synonyms": [
-      "paint"
     ],
     "reversePrompt": "paint (nl: pek) (noun)"
   },
@@ -45535,7 +44701,10 @@
         "tatoeba_id": 83253
       }
     ],
-    "reversePrompt": "box lunch"
+    "reversePrompt": "box lunch",
+    "synonyms": [
+      "bento"
+    ]
   },
   {
     "id": "9dda296d47",
@@ -45595,7 +44764,7 @@
       }
     ],
     "synonyms": [
-      "act"
+      "law"
     ],
     "reversePrompt": "Act (law: the X Act) (noun)"
   },
@@ -45886,14 +45055,6 @@
         "tatoeba_id": 175338
       }
     ],
-    "synonyms": [
-      "bark",
-      "bay",
-      "howl",
-      "bellow",
-      "roar",
-      "cry"
-    ],
     "reversePrompt": "to bark (intransitive; to bay)"
   },
   {
@@ -45951,7 +45112,10 @@
         "tatoeba_id": 110986
       }
     ],
-    "reversePrompt": "rowing boat"
+    "reversePrompt": "rowing boat",
+    "synonyms": [
+      "boat"
+    ]
   },
   {
     "id": "e11ef6d7e3",
@@ -46192,9 +45356,6 @@
         "tatoeba_id": 83841
       }
     ],
-    "synonyms": [
-      "dead"
-    ],
     "reversePrompt": "Buddha"
   },
   {
@@ -46275,9 +45436,6 @@
         "tatoeba_id": 77736
       }
     ],
-    "synonyms": [
-      "cheek"
-    ],
     "reversePrompt": "cheek (of face) (noun)"
   },
   {
@@ -46332,9 +45490,6 @@
         "tatoeba_id": 87104
       }
     ],
-    "synonyms": [
-      "smile"
-    ],
     "reversePrompt": "to smile (intransitive)"
   },
   {
@@ -46387,7 +45542,7 @@
       }
     ],
     "synonyms": [
-      "person himself"
+      "person in question"
     ],
     "reversePrompt": "the person himself"
   },
@@ -46419,7 +45574,10 @@
         "tatoeba_id": 172598
       }
     ],
-    "reversePrompt": "genuine article"
+    "reversePrompt": "genuine article",
+    "synonyms": [
+      "authentic"
+    ]
   },
   {
     "id": "20410e72ff",
@@ -46518,7 +45676,7 @@
       }
     ],
     "synonyms": [
-      "you might say"
+      "well"
     ],
     "reversePrompt": "(female) you might say"
   },
@@ -46607,7 +45765,7 @@
       }
     ],
     "synonyms": [
-      "lost child"
+      "lost"
     ],
     "reversePrompt": "lost (stray) child"
   },
@@ -46638,10 +45796,6 @@
         "en": "We left the final decision to him.",
         "tatoeba_id": 170519
       }
-    ],
-    "synonyms": [
-      "entrust to another",
-      "leave to"
     ],
     "reversePrompt": "to entrust to another"
   },
@@ -46674,9 +45828,6 @@
         "tatoeba_id": 212886
       }
     ],
-    "synonyms": [
-      "act"
-    ],
     "reversePrompt": "curtain (noun; bunting)"
   },
   {
@@ -46707,9 +45858,6 @@
         "en": "He didn't acknowledge defeat.",
         "tatoeba_id": 100326
       }
-    ],
-    "synonyms": [
-      "losing"
     ],
     "reversePrompt": "defeat (noun; loss)"
   },
@@ -46769,7 +45917,10 @@
         "tatoeba_id": 195674
       }
     ],
-    "reversePrompt": "by no means"
+    "reversePrompt": "by no means",
+    "synonyms": [
+      "no way"
+    ]
   },
   {
     "id": "379f6158b5",
@@ -46834,10 +45985,6 @@
         "tatoeba_id": 212146
       }
     ],
-    "synonyms": [
-      "increase",
-      "grow"
-    ],
     "reversePrompt": "to increase (transitive; to grow)"
   },
   {
@@ -46901,7 +46048,6 @@
       }
     ],
     "synonyms": [
-      "master",
       "master (e.g. arts",
       "science)"
     ],
@@ -47028,8 +46174,7 @@
       }
     ],
     "synonyms": [
-      "this is a pine tree",
-      "highest"
+      "this is a pine tree"
     ],
     "modernMeaning": "this is a pine tree",
     "reversePrompt": "this is a pine tree"
@@ -47060,9 +46205,6 @@
         "en": "The deep red of the setting sun portended fine weather.",
         "tatoeba_id": 145006
       }
-    ],
-    "synonyms": [
-      "flushed"
     ],
     "reversePrompt": "deep red"
   },
@@ -47158,12 +46300,10 @@
       }
     ],
     "synonyms": [
-      "study (in depth)",
-      "study",
-      "learn",
       "acquire knowledge",
       "master",
-      "take lessons in"
+      "examine",
+      "cram"
     ],
     "reversePrompt": "to study (in depth) (transitive; to learn)"
   },
@@ -47229,9 +46369,6 @@
         "tatoeba_id": 163667
       }
     ],
-    "synonyms": [
-      "invite"
-    ],
     "reversePrompt": "to invite (transitive)"
   },
   {
@@ -47261,7 +46398,10 @@
         "tatoeba_id": 195320
       }
     ],
-    "reversePrompt": "Mama"
+    "reversePrompt": "Mama",
+    "synonyms": [
+      "mom"
+    ]
   },
   {
     "id": "4f949d1f9d",
@@ -47324,13 +46464,6 @@
         "tatoeba_id": 209446
       }
     ],
-    "synonyms": [
-      "protect",
-      "obey",
-      "guard",
-      "abide (by the rules)",
-      "abide"
-    ],
     "reversePrompt": "to protect (transitive; to obey)"
   },
   {
@@ -47362,9 +46495,6 @@
         "en": "For a full day from today please.",
         "tatoeba_id": 172033
       }
-    ],
-    "synonyms": [
-      "full"
     ],
     "reversePrompt": "circle (full)"
   },
@@ -47430,10 +46560,6 @@
         "en": "I'll put you through to the president.",
         "tatoeba_id": 149189
       }
-    ],
-    "synonyms": [
-      "turn",
-      "revolve"
     ],
     "reversePrompt": "to turn (transitive; to revolve)"
   },
@@ -47762,11 +46888,7 @@
       }
     ],
     "synonyms": [
-      "be full",
-      "rise (tide)",
-      "rise",
-      "mature",
-      "expire"
+      "full"
     ],
     "reversePrompt": "to be full"
   },
@@ -47825,13 +46947,6 @@
         "en": "He will on no account accept defeat.",
         "tatoeba_id": 107845
       }
-    ],
-    "synonyms": [
-      "recognize",
-      "appreciate",
-      "approve",
-      "admit",
-      "notice"
     ],
     "reversePrompt": "to recognize (transitive; to appreciate)"
   },
@@ -47925,7 +47040,10 @@
         "tatoeba_id": 148096
       }
     ],
-    "reversePrompt": "capital (noun)"
+    "reversePrompt": "capital (noun)",
+    "synonyms": [
+      "metropolis"
+    ]
   },
   {
     "id": "3b5d6e485c",
@@ -48015,7 +47133,6 @@
       }
     ],
     "synonyms": [
-      "future",
       "future (life",
       "tense)"
     ],
@@ -48208,7 +47325,7 @@
       }
     ],
     "synonyms": [
-      "face"
+      "向く"
     ],
     "reversePrompt": "to face (transitive)"
   },
@@ -48240,10 +47357,6 @@
         "en": "The robber aimed his gun at the clerk.",
         "tatoeba_id": 180473
       }
-    ],
-    "synonyms": [
-      "turn towards",
-      "point"
     ],
     "reversePrompt": "to turn towards"
   },
@@ -48371,11 +47484,6 @@
         "tatoeba_id": 223400
       }
     ],
-    "synonyms": [
-      "tie",
-      "bind",
-      "link"
-    ],
     "reversePrompt": "to tie (transitive; to bind)"
   },
   {
@@ -48439,9 +47547,6 @@
         "en": "She indulges in tennis all the day.",
         "tatoeba_id": 91119
       }
-    ],
-    "synonyms": [
-      "trance"
     ],
     "reversePrompt": "daze"
   },
@@ -48594,11 +47699,6 @@
         "tatoeba_id": 176315
       }
     ],
-    "synonyms": [
-      "order",
-      "command",
-      "appoint"
-    ],
     "reversePrompt": "to order (transitive; to command)"
   },
   {
@@ -48663,9 +47763,6 @@
         "tatoeba_id": 161232
       }
     ],
-    "synonyms": [
-      "instruction"
-    ],
     "reversePrompt": "order (transitive; command)"
   },
   {
@@ -48729,7 +47826,6 @@
       }
     ],
     "synonyms": [
-      "meals",
       "meal",
       "fare",
       "cuisine",
@@ -48766,9 +47862,6 @@
         "tatoeba_id": 123999
       }
     ],
-    "synonyms": [
-      "rarely"
-    ],
     "reversePrompt": "rarely (with neg. verb)"
   },
   {
@@ -48799,7 +47892,10 @@
         "tatoeba_id": 114596
       }
     ],
-    "reversePrompt": "memorandum"
+    "reversePrompt": "memorandum",
+    "synonyms": [
+      "note"
+    ]
   },
   {
     "id": "9fbf209387",
@@ -48962,7 +48058,10 @@
         "tatoeba_id": 176845
       }
     ],
-    "reversePrompt": "member (noun)"
+    "reversePrompt": "member (noun)",
+    "synonyms": [
+      "members"
+    ]
   },
   {
     "id": "7b4c98a742",
@@ -48992,10 +48091,6 @@
         "en": "He applied for a position in the office.",
         "tatoeba_id": 113053
       }
-    ],
-    "synonyms": [
-      "apply for",
-      "make an application"
     ],
     "reversePrompt": "to apply for (transitive)"
   },
@@ -49086,9 +48181,6 @@
         "en": "I felt as if my face were on fire.",
         "tatoeba_id": 157782
       }
-    ],
-    "synonyms": [
-      "burn"
     ],
     "reversePrompt": "to burn (intransitive)"
   },
@@ -49212,9 +48304,6 @@
         "tatoeba_id": 237581
       }
     ],
-    "synonyms": [
-      "letter"
-    ],
     "reversePrompt": "letter (of alphabet) (noun; character)"
   },
   {
@@ -49247,7 +48336,10 @@
         "tatoeba_id": 193781
       }
     ],
-    "reversePrompt": "if"
+    "reversePrompt": "if",
+    "synonyms": [
+      "what if"
+    ]
   },
   {
     "id": "1210c0bf0b",
@@ -49278,11 +48370,6 @@
         "en": "I felt myself lifted up.",
         "tatoeba_id": 138018
       }
-    ],
-    "synonyms": [
-      "raise",
-      "lift up",
-      "flatter"
     ],
     "reversePrompt": "to raise (transitive; to lift up)"
   },
@@ -49316,11 +48403,9 @@
       }
     ],
     "synonyms": [
-      "use",
       "utilize",
       "apply",
-      "employ",
-      "make use of"
+      "employ"
     ],
     "reversePrompt": "to use (transitive; to make use of)"
   },
@@ -49476,9 +48561,6 @@
       }
     ],
     "synonyms": [
-      "restore",
-      "put back",
-      "return",
       "go back",
       "come back",
       "head home"
@@ -49516,10 +48598,9 @@
       }
     ],
     "synonyms": [
-      "be grounded on",
-      "be based on",
-      "be due to",
-      "originate from"
+      "grounded on",
+      "based on",
+      "due to"
     ],
     "reversePrompt": "to be grounded on"
   },
@@ -49557,18 +48638,6 @@
         "en": "He asked me for help.",
         "tatoeba_id": 106041
       }
-    ],
-    "synonyms": [
-      "seek",
-      "request",
-      "demand",
-      "want",
-      "wish for",
-      "search for",
-      "pursue (pleasure)",
-      "pursue",
-      "hunt (a job)",
-      "hunt"
     ],
     "reversePrompt": "to seek (transitive; to request)"
   },
@@ -49634,7 +48703,10 @@
         "tatoeba_id": 206910
       }
     ],
-    "reversePrompt": "sounds"
+    "reversePrompt": "sounds",
+    "synonyms": [
+      "noise"
+    ]
   },
   {
     "id": "6b8002d0f8",
@@ -49819,7 +48891,12 @@
         "tatoeba_id": 116129
       }
     ],
-    "reversePrompt": "use (noun; service)"
+    "reversePrompt": "use (noun; service)",
+    "synonyms": [
+      "utilize",
+      "apply",
+      "employ"
+    ]
   },
   {
     "id": "abfa120074",
@@ -49880,9 +48957,6 @@
         "en": "What is the role of the University in the modern society?",
         "tatoeba_id": 174832
       }
-    ],
-    "synonyms": [
-      "assigning parts"
     ],
     "reversePrompt": "part (noun; assigning parts)"
   },
@@ -50006,10 +49080,6 @@
         "tatoeba_id": 110855
       }
     ],
-    "synonyms": [
-      "employ",
-      "hire"
-    ],
     "reversePrompt": "to employ"
   },
   {
@@ -50073,13 +49143,6 @@
         "tatoeba_id": 203217
       }
     ],
-    "synonyms": [
-      "tear",
-      "violate",
-      "defeat",
-      "smash",
-      "destroy"
-    ],
     "reversePrompt": "to tear (transitive; to violate)"
   },
   {
@@ -50111,7 +49174,7 @@
       }
     ],
     "synonyms": [
-      "retire"
+      "quit"
     ],
     "reversePrompt": "to retire (transitive)"
   },
@@ -50151,12 +49214,9 @@
       }
     ],
     "synonyms": [
-      "little",
       "small",
       "tiny",
-      "slight",
-      "short time",
-      "while"
+      "slight"
     ],
     "reversePrompt": "a little (partially)"
   },
@@ -50216,9 +49276,6 @@
         "en": "John said, \"Hey guys, let's take a break.\"",
         "tatoeba_id": 236431
       }
-    ],
-    "synonyms": [
-      "say"
     ],
     "reversePrompt": "to say (transitive)"
   },
@@ -50498,7 +49555,10 @@
         "en": "In today’s class, I learned how to use the expression “last night.”"
       }
     ],
-    "reversePrompt": "evening (noun)"
+    "reversePrompt": "evening (noun)",
+    "synonyms": [
+      "last night"
+    ]
   },
   {
     "id": "271078ced6",
@@ -50658,11 +49718,6 @@
         "tatoeba_id": 98868
       }
     ],
-    "synonyms": [
-      "turn over",
-      "assign",
-      "hand over"
-    ],
     "reversePrompt": "to turn over (transitive; to assign)"
   },
   {
@@ -50757,11 +49812,6 @@
         "en": "Pardon me for coming late.",
         "tatoeba_id": 126716
       }
-    ],
-    "synonyms": [
-      "permit",
-      "allow",
-      "approve"
     ],
     "reversePrompt": "to permit (transitive; to allow)"
   },
@@ -50864,10 +49914,6 @@
         "en": "He is too drunk to drive home.",
         "tatoeba_id": 103482
       }
-    ],
-    "synonyms": [
-      "get drunk",
-      "become intoxicated"
     ],
     "reversePrompt": "to get drunk"
   },
@@ -51099,9 +50145,6 @@
         "tatoeba_id": 78817
       }
     ],
-    "synonyms": [
-      "point is .."
-    ],
     "reversePrompt": "in a word"
   },
   {
@@ -51130,7 +50173,10 @@
         "tatoeba_id": 226466
       }
     ],
-    "reversePrompt": "element"
+    "reversePrompt": "element",
+    "synonyms": [
+      "elements"
+    ]
   },
   {
     "id": "654dd204be",
@@ -51182,7 +50228,10 @@
         "tatoeba_id": 10123559
       }
     ],
-    "reversePrompt": "day of the week"
+    "reversePrompt": "day of the week",
+    "synonyms": [
+      "days of the week"
+    ]
   },
   {
     "id": "bb4b5f7ee0",
@@ -51275,11 +50324,6 @@
         "tatoeba_id": 107101
       }
     ],
-    "synonyms": [
-      "cross (e.g. arms)",
-      "cross",
-      "traverse"
-    ],
     "reversePrompt": "to cross (e.g. arms) (transitive; to traverse)"
   },
   {
@@ -51345,10 +50389,10 @@
       }
     ],
     "synonyms": [
-      "cease",
-      "abolish",
-      "resign",
-      "give up"
+      "abandon",
+      "quit",
+      "surrender",
+      "relinquish"
     ],
     "reversePrompt": "to cease (transitive; to abolish)"
   },
@@ -51470,10 +50514,6 @@
         "en": "There is much that is good in the world.",
         "tatoeba_id": 143481
       }
-    ],
-    "synonyms": [
-      "world",
-      "times"
     ],
     "reversePrompt": "society (noun; the world)"
   },
@@ -51742,10 +50782,6 @@
         "tatoeba_id": 169386
       }
     ],
-    "synonyms": [
-      "joy",
-      "delight"
-    ],
     "reversePrompt": "(a) joy (noun; delight)"
   },
   {
@@ -51812,10 +50848,6 @@
         "en": "She was sad for the first time in months.",
         "tatoeba_id": 88428
       }
-    ],
-    "synonyms": [
-      "for",
-      "next"
     ],
     "reversePrompt": "for (10 days) (next)"
   },
@@ -51932,7 +50964,6 @@
       }
     ],
     "synonyms": [
-      "interest",
       "(political",
       "economic) interest"
     ],
@@ -51997,7 +51028,7 @@
       }
     ],
     "synonyms": [
-      "six"
+      "land"
     ],
     "reversePrompt": "six (used in legal documents) (noun)"
   },
@@ -52157,7 +51188,10 @@
         "tatoeba_id": 152328
       }
     ],
-    "reversePrompt": "studying abroad"
+    "reversePrompt": "studying abroad",
+    "synonyms": [
+      "study abroad"
+    ]
   },
   {
     "id": "52a1844352",
@@ -52224,9 +51258,6 @@
         "en": "Quantity rather than quality is important.",
         "tatoeba_id": 149540
       }
-    ],
-    "synonyms": [
-      "portion"
     ],
     "reversePrompt": "quantity (noun; amount)"
   },
@@ -52348,7 +51379,10 @@
         "tatoeba_id": 154581
       }
     ],
-    "reversePrompt": "expression of gratitude (noun)"
+    "reversePrompt": "expression of gratitude (noun)",
+    "synonyms": [
+      "courtesy"
+    ]
   },
   {
     "id": "4caf52bf1b",
@@ -52470,9 +51504,6 @@
         "tatoeba_id": 77503
       }
     ],
-    "synonyms": [
-      "train"
-    ],
     "reversePrompt": "train (ordinary) (noun)"
   },
   {
@@ -52504,9 +51535,6 @@
         "en": "What do you associate with summer?",
         "tatoeba_id": 187255
       }
-    ],
-    "synonyms": [
-      "association"
     ],
     "reversePrompt": "association (of ideas) (transitive; suggestion)"
   },
@@ -52572,9 +51600,6 @@
         "en": "The old man told the children an amusing story.",
         "tatoeba_id": 77273
       }
-    ],
-    "synonyms": [
-      "aged"
     ],
     "reversePrompt": "the aged (noun; old person)"
   },
@@ -52663,11 +51688,6 @@
         "en": "I refuse to discuss the question.",
         "tatoeba_id": 159831
       }
-    ],
-    "synonyms": [
-      "argue",
-      "discuss",
-      "debate"
     ],
     "reversePrompt": "to argue (transitive; to discuss)"
   },
@@ -52890,7 +51910,10 @@
         "tatoeba_id": 87543
       }
     ],
-    "reversePrompt": "side (noun)"
+    "reversePrompt": "side (noun)",
+    "synonyms": [
+      "waki"
+    ]
   },
   {
     "id": "1b8be0151e",
@@ -52920,10 +51943,6 @@
         "en": "The mother divided the money among her children.",
         "tatoeba_id": 82995
       }
-    ],
-    "synonyms": [
-      "divide",
-      "separate"
     ],
     "reversePrompt": "to divide (transitive; to separate)"
   },
@@ -52991,7 +52010,6 @@
       }
     ],
     "synonyms": [
-      "little",
       "small",
       "tiny",
       "slight"
@@ -53089,12 +52107,6 @@
         "en": "Show me the stone that broke the window.",
         "tatoeba_id": 140413
       }
-    ],
-    "synonyms": [
-      "divide",
-      "cut",
-      "break",
-      "halve"
     ],
     "reversePrompt": "to divide (transitive; to cut)"
   },

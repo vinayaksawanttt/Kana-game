@@ -473,7 +473,7 @@ function GrammarGame({
                     </span>
                     <span>{question.after}</span>
                   </p>
-                  <p className="mt-3 text-sm text-[var(--muted)]">{question.en}</p>
+                  <p className="mt-3 text-sm text-[var(--muted)]">{question.promptEn || question.en}</p>
                 </div>
               ) : (
                 <div className="mt-6">
@@ -481,7 +481,7 @@ function GrammarGame({
                     Build the Japanese sentence for:
                   </p>
                   <p className="mt-1.5 text-lg font-semibold text-[var(--ink)] sm:text-xl">
-                    {question.naturalEn || question.en}
+                    {question.promptEn || question.naturalEn || question.en}
                   </p>
                   <div className="mt-1.5 flex flex-wrap items-center gap-2 text-xs text-[var(--muted)]">
                     <span>

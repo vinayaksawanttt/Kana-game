@@ -77,7 +77,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "要件を的確な行政用語で整理して伝えたため、納税課十四番窓口へスムーズに案内されました。",
         feedbackEn:
-          "Crisp N1 administrative phrasing lets Takahashi route you directly to the right specialist queue.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. Because I organized and conveyed the requirements using precise administrative terminology, I was smoothly directed to Counter No. 14 in the Tax Payment Division.",
         nextNodeId: "tax-node-2a-counter-docs",
       },
       {
@@ -95,7 +95,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "丁寧で分かりやすい質問です。まずは納税課へ案内してもらえました。",
         feedbackEn:
-          "Polite and clear. You receive a numbered ticket for Tax Counter 14.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. The questions were polite and easy to understand. First, I was directed to the Tax Division.",
         nextNodeId: "tax-node-2a-counter-docs",
       },
       {
@@ -113,7 +113,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "総合案内係は制度を決める立場ではありません。初手から怒鳴り立てると警戒されてしまいます。",
         feedbackEn:
-          "Lashing out at the lobby guide over statutory prior-year tax laws makes staff defensive immediately.",
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. The general information desk is not in a position to make policy decisions. If you start yelling right off the bat, people will become wary of you.",
         nextNodeId: "tax-node-2b-kiosk-calm",
       },
     ],
@@ -154,7 +154,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "「疎明資料（そめいしりょう）」「仮受付」という的確な行政概念を使い、若手のマニュアル対応を超えて個室相談へ繋げました！",
         feedbackEn:
-          "Brilliant N1 strategy: citing alternative prima facie proof ('somei shiryou') moves your case past a rigid script straight to Section Chief Obata.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. By using precise administrative terms such as “supporting documents” and “provisional acceptance,” I was able to move beyond the standard, by-the-book responses of junior staff and guide the client to a private consultation room!",
         nextNodeId: "tax-node-3a-booth-obata",
       },
       {
@@ -172,7 +172,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "冷静に上席への取り次ぎをお願いできたため、小幡係長が奥の相談ブースに招いてくれました。",
         feedbackEn:
-          "Polite escalation works: clerk Koga brings Section Chief Obata in for a private consultation.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. Because I was able to calmly ask to be connected to a senior manager, Section Chief Obata invited me into the consultation booth in the back.",
         nextNodeId: "tax-node-3a-booth-obata",
       },
       {
@@ -190,7 +190,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "窓口で相談を諦めてしまうと口座引き落とし日までに間に合わなくなります。古賀さんが引き止めてくれます。",
         feedbackEn:
-          "Giving up passively right before an upcoming auto-debit nearly locks in delinquency penalties.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. If you give up on consulting at the service counter, you won’t make it in time for the direct debit date. Ms. Koga will try to talk you out of it.",
         nextNodeId: "tax-node-3b-counter-stall",
       },
     ],
@@ -231,7 +231,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "即座に非を認めて「逼迫している事情」を落ち着いて説明できたため、そのまま個室相談へ通されました。",
         feedbackEn:
-          "Composing yourself immediately opens the path directly into Section Chief Obata's private booth.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. Because I immediately admitted my mistake and calmly explained my “urgent circumstances,” I was escorted directly to a private consultation room.",
         nextNodeId: "tax-node-3a-booth-obata",
       },
       {
@@ -249,7 +249,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "対話に応じず制度批判を続けたため、これ以上の個別相談が困難と判断されました。",
         feedbackEn:
-          "Continuing to demand impossible cancellations stalls consultation completely.",
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. Because you continued to criticize the system without engaging in dialogue, it was determined that further individual consultations would be difficult.",
         nextNodeId: "tax-node-end-failure",
       },
     ],
@@ -290,7 +290,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "見事なN1法制度理解！「減免」と「徴収猶予」を明確に区別し、家計収支表まで用意した姿勢に小幡係長が感心しています。",
         feedbackEn:
-          "Deep N1 civic fluency: distinguishing statutory 'genmen' (reduction) from hardship 'choushuu yuuyo' (deferral) while supplying a budget sheet deeply impresses Obata.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. An excellent understanding of the N1 legal system! Section Chief Obata is impressed by the student’s ability to clearly distinguish between “reductions/exemptions” and “payment deferrals,” as well as their thorough preparation, which even included a household budget sheet.",
         nextNodeId: "tax-node-4a-installment-plan",
       },
       {
@@ -308,7 +308,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "行政担当者に法令外の「例外適用」を迫るのは逆効果です。公平性の原則について厳しく諭されます。",
         feedbackEn:
-          "Demanding illegal ad-hoc exemptions ignores civic fairness rules and prompts a stern lecture from Obata.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. Pressuring government officials to grant “exceptions” outside the scope of the law is counterproductive. You will be sternly admonished regarding the principle of fairness.",
         nextNodeId: "tax-node-4b-obata-lecture",
       },
       {
@@ -326,7 +326,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "「お目こぼし」は公的手続きでは絶対に使えない不適切な表現です。",
         feedbackEn:
-          "Asking a municipal officer for a personal 'pass' ('omekoboshi') violates administrative neutrality.",
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. “Omekoshi” is an inappropriate expression that must never be used in official procedures.",
         nextNodeId: "tax-node-4b-obata-lecture",
       },
     ],
@@ -367,7 +367,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "助言をすぐ受け入れて最悪の事態を回避し、小幡係長との分割協議へ進むことができました。",
         feedbackEn:
-          "Smart pivot: thanking Koga prevents an imminent failed debit and opens Obata's installment review.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. By immediately accepting the advice, we were able to avoid the worst-case scenario and proceed to the settlement negotiations with Section Chief Obata.",
         nextNodeId: "tax-node-4a-installment-plan",
       },
       {
@@ -385,7 +385,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "手続きを先延ばしにしたまま帰宅してしまい、滞納扱いとなる非常にまずい結果になりました。",
         feedbackEn:
-          "Walking away despite a clear warning guarantees a bounced debit and formal overdue notices.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. I went home without completing the necessary procedures, which resulted in my payment being marked as overdue—a very unfortunate outcome.",
         nextNodeId: "tax-node-end-awkward",
       },
     ],
@@ -426,7 +426,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "完璧な実務対応です！住民税と年金の管轄の違いと長期的な追納メリットまで見通した回答に、係長自ら年金課への連絡票を書いてくれました。",
         feedbackEn:
-          "Outstanding N1 command of Japanese social insurance: Obata drafts an internal inter-department handoff memo directly for the Pension desk!",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. This was a perfect professional response! The answer took into account the differences in jurisdiction between resident tax and pension, as well as the long-term benefits of making back payments—so much so that the section chief personally filled out a referral form to the Pension Division.",
         nextNodeId: "tax-node-5a-pension-handoff",
       },
       {
@@ -444,7 +444,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "現実的で丁寧な回答です。月額の確認も含め、年金窓口へ引き継がれました。",
         feedbackEn:
-          "Practical and polite. Both the debit stop and monthly amount are processed cleanly.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. This is a realistic and polite response. The matter, including confirmation of the monthly amount, has been referred to the pension office.",
         nextNodeId: "tax-node-5a-pension-handoff",
       },
       {
@@ -462,7 +462,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "残高不足による引き落とし不能は「滞納事故」として記録され、自動督促の原因になります。",
         feedbackEn:
-          "Letting an auto-debit bounce for insufficient funds triggers overdue penalties rather than stopping cleanly.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. A failed debit due to insufficient funds is recorded as a “delinquency incident” and triggers an automatic collection notice.",
         nextNodeId: "tax-node-5b-debit-warning",
       },
     ],
@@ -503,7 +503,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "法令の原則を正面から受け入れ、現実的な分納計画へ切り替えたことで係長も審査に応じてくれました。",
         feedbackEn:
-          "Gracious pivot: respecting statutory fairness while putting realistic monthly figures on the table restarts constructive help.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. By fully accepting the principles of the law and switching to a realistic installment payment plan, the section chief agreed to review our request.",
         nextNodeId: "tax-node-5a-pension-handoff",
       },
       {
@@ -521,7 +521,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "相談を決裂させて席を立ってしまい、住民税の猶予も年金の免除も未処理のままとなってしまいました。",
         feedbackEn:
-          "Storming out leaves both your tax deferral and pension exemption unprocessed.",
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. I walked out of the meeting in a huff, leaving both the deferral of my resident tax and the exemption from my pension payments unresolved.",
         nextNodeId: "tax-node-end-failure",
       },
     ],
@@ -562,7 +562,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "仮受付、補完提出期限の確約、年金追納への見通しまで隙のない締めくくりです！",
         feedbackEn:
-          "Flawless administrative closure: locked in provisional filing, committed to the document deadline, and thanked both desks gracefully.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. From provisional acceptance to a firm deadline for submitting supplementary materials and a clear outlook on retroactive pension payments—it’s a flawless conclusion!",
         nextNodeId: "tax-node-end-perfect",
       },
       {
@@ -580,7 +580,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "全ての要点を押さえて無事に両窓口の手続きを完了できました。",
         feedbackEn:
-          "Polite and clear wrap-up completing both municipal filings.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. I was able to successfully complete the procedures at both counters, covering all the key points.",
         nextNodeId: "tax-node-end-success",
       },
       {
@@ -598,7 +598,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "せっかく庁内連携までしてもらったのに年金免除を先送りすると、未納期間が発生しかねません。",
         feedbackEn:
-          "Putting off pension exemption despite a direct handoff risks unintended unpaid pension months.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. Even though we’ve gone to the trouble of coordinating with other departments, postponing the pension exemption could result in a period of non-payment.",
         nextNodeId: "tax-node-end-awkward",
       },
     ],
@@ -639,7 +639,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "ぎりぎりでアドバイスを受け止め、無用な督促状発行を防げました！",
         feedbackEn:
-          "Saved at the buzzer: taking Koga's warning stops an automated delinquency notice.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. I managed to take the advice just in the nick of time and prevented an unnecessary reminder notice from being issued!",
         nextNodeId: "tax-node-end-success",
       },
       {
@@ -657,7 +657,7 @@ export const WARD_OFFICE_TAX_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "担当者の親切な警告すら聞き入れず帰宅し、後日督促状が届く結果となりました。",
         feedbackEn:
-          "Ignoring the clerk's final warning guarantees an overdue notice in the mail four days later.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. Ignoring even the staff member’s kind warning, I went home, and as a result, a reminder notice arrived a few days later.",
         nextNodeId: "tax-node-end-awkward",
       },
     ],

@@ -29,6 +29,7 @@ export interface GrammarClozeQuestion {
   sentenceJp: string;
   romaji: string;
   en: string;
+  promptEn?: string;
   before: string;
   after: string;
   correctAnswer: string;
@@ -49,6 +50,7 @@ export interface GrammarScrambleQuestion {
   en: string;
   naturalEn?: string;
   literalEn?: string;
+  promptEn?: string;
   correctChunks: string[];
   scrambledChunks: string[];
 }
@@ -488,6 +490,7 @@ function buildClozeQuestion(
     sentenceJp: example.jp,
     romaji: example.romaji,
     en: example.en,
+    promptEn: example.promptEn,
     before,
     after,
     correctAnswer: answer,
@@ -522,6 +525,7 @@ function buildScrambleQuestion(
     en: naturalEn || example.en,
     naturalEn,
     literalEn,
+    promptEn: example.promptEn,
     correctChunks,
     scrambledChunks,
   };

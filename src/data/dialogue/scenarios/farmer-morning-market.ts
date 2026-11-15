@@ -59,7 +59,8 @@ export const FARMER_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "元気な挨拶と「美味しそうですね！」という素直な褒め言葉で、山田さんも満面の笑みに！",
-        feedbackEn: "A bright morning greeting paired with sincere praise for the farmer's hard work creates instant rapport.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. With a cheerful greeting and a sincere compliment like “That looks delicious!”, Ms. Yamada broke into a beaming smile!",
         nextNodeId: "farmer-node-2-reply-warm",
       },
       {
@@ -71,7 +72,8 @@ export const FARMER_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 85,
         feedbackJa: "「おすすめはどれですか？」は市場やお店で最も便利で自然な質問です！",
-        feedbackEn: "Clear, polite inquiry asking for the vendor's expert daily recommendation.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. Which one do you recommend?\" is the most useful and natural question to ask at a market or in a store!",
         nextNodeId: "farmer-node-2-reply-recommend",
       },
       {
@@ -83,7 +85,8 @@ export const FARMER_NODES: Record<string, DialogueNode> = {
         tier: "awkward",
         points: 30,
         feedbackJa: "挨拶もせずにいきなり値切りを迫ると、市場のおじさんも少し困惑してしまいます。",
-        feedbackEn: "Demanding a bulk discount before even greeting or selecting an item comes across as abrupt.",
+        feedbackEn:
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. If you start haggling right away without even saying hello, the vendor at the market will be a little taken aback.",
         nextNodeId: "farmer-node-2-reply-discount",
       },
       {
@@ -95,7 +98,8 @@ export const FARMER_NODES: Record<string, DialogueNode> = {
         tier: "rude",
         points: -40,
         feedbackJa: "丹精込めて早朝から泥付き野菜を運んできた農家さんに失礼になってしまいます！",
-        feedbackEn: "Criticizing fresh local produce by unfavorably comparing it to industrial supermarket stock is very offensive.",
+        feedbackEn:
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. It would be rude to the farmer who took such great care to bring these muddy vegetables all the way here from early this morning!",
         nextNodeId: "farmer-node-2-reply-annoyed",
       },
     ],
@@ -124,7 +128,8 @@ export const FARMER_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "「生（なま）で食べられますか？」と食べ方を聞くことで、朝市の醍醐味を引き出せます！",
-        feedbackEn: "Asking how best to enjoy the produce immediately demonstrates genuine interest in fresh local food.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. Asking, “Can I eat this raw?” to find out how to eat it is a great way to experience the true charm of the morning market!",
         nextNodeId: "farmer-node-3-eating-advice",
       },
       {
@@ -136,7 +141,8 @@ export const FARMER_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 85,
         feedbackJa: "「〜を食べてみたいです」という好意的な表現がとても好印象です！",
-        feedbackEn: "Expressing a wish to taste the apples followed by a simple price check.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. The positive expression “I’d like to try ~” makes a very good impression!",
         nextNodeId: "farmer-node-3-apple-deal",
       },
       {
@@ -148,7 +154,8 @@ export const FARMER_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 60,
         feedbackJa: "旅行者の事情を率直に伝えました。1個単位で買えるか相談してみましょう。",
-        feedbackEn: "Explaining travel constraints naturally prompts the vendor to offer smaller quantities.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. I frankly explained the traveler’s situation. Let’s ask if they can buy them individually.",
         nextNodeId: "farmer-node-3-single-portion",
       },
     ],
@@ -176,7 +183,8 @@ export const FARMER_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "数え方「3つ（みっつ）」と割引への感謝が伝わる完璧な注文です！",
-        feedbackEn: "Smooth acceptance of the set discount using the correct item counter 'mittsu'.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. This is the perfect order—it conveys both the counting phrase “3 (mitsu)” and gratitude for the discount!",
         nextNodeId: "farmer-end-perfect",
       },
       {
@@ -188,7 +196,8 @@ export const FARMER_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 85,
         feedbackJa: "「1つ（ひとつ）だけください」と理由を添えてスマートに購入できました。",
-        feedbackEn: "Polite purchase of a single item with a relatable reason.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. I was able to make the purchase smoothly by saying, “Please give me just one,” and explaining why.",
         nextNodeId: "farmer-end-success",
       },
       {
@@ -200,7 +209,8 @@ export const FARMER_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 80,
         feedbackJa: "別の商品に自然に興味を移す上手な会話運びです。",
-        feedbackEn: "Smooth transition showing interest in other seasonal items.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. This is a skillful way to steer the conversation so that interest naturally shifts to another product.",
         nextNodeId: "farmer-node-3-eating-advice",
       },
     ],
@@ -228,7 +238,8 @@ export const FARMER_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 85,
         feedbackJa: "無茶な要求を反省し、素直に切り替えたことで好感度が回復しました！",
-        feedbackEn: "Quick, polite apology followed by taking the vendor's generous deal restores the mood.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. By reflecting on my unreasonable request and humbly changing my approach, I was able to regain their favor!",
         nextNodeId: "farmer-end-success",
       },
       {
@@ -240,7 +251,8 @@ export const FARMER_NODES: Record<string, DialogueNode> = {
         tier: "rude",
         points: -25,
         feedbackJa: "市場の温かいやり取りを無視して過度な値切りを続けると嫌がられてしまいます。",
-        feedbackEn: "Persistently pushing for unreasonable discounts ruins the warm atmosphere of local markets.",
+        feedbackEn:
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. If you ignore the friendly banter at the market and keep haggling excessively, people will take offense.",
         nextNodeId: "farmer-end-awkward",
       },
     ],
@@ -268,7 +280,8 @@ export const FARMER_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 70,
         feedbackJa: "真摯な謝罪と農家さんの苦労への敬意を示したことで、なんとか思いが通じました。",
-        feedbackEn: "A heartfelt apology acknowledging the farmer's dawn harvest redeems the situation.",
+        feedbackEn:
+          "[Social Distance: Overly Formal] Excessive formal keigo creates an artificial emotional barrier; natural polite speech maintains warm, accessible rapport. By offering a sincere apology and showing respect for the farmers’ hardships, I was finally able to get my point across.",
         nextNodeId: "farmer-end-success",
       },
       {
@@ -280,7 +293,8 @@ export const FARMER_NODES: Record<string, DialogueNode> = {
         tier: "rude",
         points: -50,
         feedbackJa: "怒らせたまま立ち去ってしまい、朝市の楽しい雰囲気が台無しになってしまいました。",
-        feedbackEn: "Walking away curtly ends the conversation in mutual frustration.",
+        feedbackEn:
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. He walked away while still angry, ruining the cheerful atmosphere of the morning market.",
         nextNodeId: "farmer-fail-rude",
       },
     ],
@@ -309,7 +323,8 @@ export const FARMER_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "袋の助数詞「1袋（ひとふくろ）」と「1つ（ひとつ）」を完璧に使い分けています！",
-        feedbackEn: "Flawless pairing of counters: 'hito-fukuro' (one bag) and 'hitotsu' (one apple) with delighted enthusiasm.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. They perfectly distinguish between the counters for bags, “1 bag (hitofukuro)” and “1 item (hitotsu)”!",
         nextNodeId: "farmer-end-perfect",
       },
       {
@@ -321,7 +336,8 @@ export const FARMER_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 85,
         feedbackJa: "朝市での食べ歩きを伝える自然な買い方です！",
-        feedbackEn: "Pleasant purchase explaining you'll snack on them while strolling the market.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. This is a natural way to describe how to shop while sampling food at a morning market!",
         nextNodeId: "farmer-end-success",
       },
     ],
@@ -349,7 +365,8 @@ export const FARMER_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "「いただきます」という謙譲表現で買い物への感謝を品よく表現できました！",
-        feedbackEn: "Using 'itadakimasu' gracefully expresses humble gratitude for the vendor's hospitality.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. I was able to elegantly express my gratitude for the shopping using the humble expression “Itadakimasu”!",
         nextNodeId: "farmer-end-perfect",
       },
       {
@@ -361,7 +378,8 @@ export const FARMER_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 85,
         feedbackJa: "勧めを角を立てずに断りつつ、礼儀正しく1個買えました！",
-        feedbackEn: "Politely declining the larger bundle without awkwardness while purchasing a single unit.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. I managed to politely decline the offer without causing any hard feelings and bought one item!",
         nextNodeId: "farmer-end-success",
       },
     ],
@@ -389,7 +407,8 @@ export const FARMER_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "旅先での親切に心から感謝を伝える最高に温かい返答です！",
-        feedbackEn: "Expressing heartfelt gratitude for the local farmer's considerate customization for travelers.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. This is the warmest possible response to express your heartfelt gratitude for the kindness you receive while traveling!",
         nextNodeId: "farmer-end-perfect",
       },
       {
@@ -401,7 +420,8 @@ export const FARMER_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 85,
         feedbackJa: "「助かります」で感謝を添えつつスムーズに会計できました。",
-        feedbackEn: "Smooth exchange using 'Tasukarimasu' (That helps a lot).",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. I was able to pay the bill smoothly while expressing my gratitude with “That’s a big help.”",
         nextNodeId: "farmer-end-success",
       },
     ],

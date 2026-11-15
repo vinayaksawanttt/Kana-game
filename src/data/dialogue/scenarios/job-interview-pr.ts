@@ -77,7 +77,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "面接は受付からすでに始まっています。落ち着いた丁寧な姿勢が人事担当にも好印象です。",
         feedbackEn:
-          "Poised and attentive—in Japan, interview assessment starts the moment you greet HR in the lounge.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. The interview begins the moment you arrive at the reception desk. A calm and polite demeanor makes a good impression on the HR representative.",
         nextNodeId: "interview-node-2a-door-entry",
       },
       {
@@ -95,7 +95,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "素直で礼儀正しい受け答えです。緊張しつつも誠実さが伝わります。",
         feedbackEn:
-          "Sincere and polite. Expressing mild nerves while staying courteous makes a pleasant impression.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. This is a sincere and polite response. Although the speaker seems nervous, their sincerity comes across clearly.",
         nextNodeId: "interview-node-2a-door-entry",
       },
       {
@@ -113,7 +113,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "IT企業であっても「雰囲気がゆるそう」と初対面の人事に軽く言うのは、プロ意識に欠けると見なされます。",
         feedbackEn:
-          "Calling a prospective employer 'super chill' ('yurusou') in front of HR looks overly casual, even at a tech firm.",
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. Even at an IT company, casually telling a human resources representative you’re meeting for the first time that “the atmosphere seems laid-back” is considered a lack of professionalism.",
         nextNodeId: "interview-node-2b-lounge-caution",
       },
     ],
@@ -154,7 +154,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "完璧な構成です！結論→数字を伴う実績→「御社」への貢献が簡潔に伝わり、川口マネージャーも興味深そうにメモを取っています。",
         feedbackEn:
-          "Crisp N2 Self-PR structure: role, quantified 30% impact, spoken 'onsha', and clear value proposition for the hiring team.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. The structure is perfect! The conclusion → achievements backed by numbers → contributions to “your company” are conveyed concisely, and Manager Kawaguchi is taking notes with obvious interest.",
         nextNodeId: "interview-node-3a-reason-deep",
       },
       {
@@ -172,7 +172,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "口頭面接では「貴社」ではなく「御社」を使います。また、具体実績が抜けて抽象的な自己アピールになってしまいました。",
         feedbackEn:
-          "Note the classic Japanese interview rule: use 'onsha' when speaking ('kisha' is for writing!), and anchor your pitch with concrete outcomes.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. In oral interviews, use “御社” instead of “貴社.” Also, you omitted specific achievements, resulting in a self-promotion that came across as too abstract.",
         nextNodeId: "interview-node-3b-reason-probe",
       },
       {
@@ -190,7 +190,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "日本の採用面接の冒頭で自己PRを拒み条件面を突きつける態度は、協調性を欠くとみなされ厳しく見られます。",
         feedbackEn:
-          "Refusing the opening Self-PR to lead with salary demands alienates the panel immediately.",
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. In Japan, refusing to give a self-introduction at the beginning of a job interview and instead immediately bringing up salary and other conditions is viewed as a lack of cooperation and is looked upon very negatively.",
         nextNodeId: "interview-node-3c-cold-skeptic",
       },
     ],
@@ -231,7 +231,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "人事の助言をすぐ活かし、入室時に背筋を伸ばした美しい挨拶で印象を立て直しました。",
         feedbackEn:
-          "Quick adaptation: heeding HR's advice resets the room as you step in cleanly.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. I immediately put the HR advice into practice and made a fresh impression by standing up straight and offering a polite greeting as I entered the room.",
         nextNodeId: "interview-node-3a-reason-deep",
       },
       {
@@ -249,7 +249,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "切り替えが不十分なまま入室してしまい、役員陣からやや硬い質問が飛ぶことになります。",
         feedbackEn:
-          "Only half-recovered, leading to tighter scrutiny once seated in the boardroom.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. If you enter the room without having adjusted your behavior properly, you’ll be met with somewhat stern questions from the executives.",
         nextNodeId: "interview-node-3b-reason-probe",
       },
     ],
@@ -290,7 +290,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "前職への感謝を伝えつつ、前向きなキャリア軸と「腰を据えて働く」定着力までアピールできた模範解答です。",
         feedbackEn:
-          "Textbook mid-career answer: honors your previous company, avoids negativity, and shows long-term commitment ('koshi o suete').",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. This is a model answer that expresses gratitude for the previous employer while also highlighting a positive career direction and a commitment to “settling in and working steadily.”",
         nextNodeId: "interview-node-4a-conflict-nemawashi",
       },
       {
@@ -308,7 +308,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "自然な答えですが、「また別の環境が見つかったら辞めるのでは」という懸念を少し残す表現です。",
         feedbackEn:
-          "Honest and polite, though focusing on 'market value' can make directors wonder if you'll leave again soon.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. Although this is a natural response, it leaves a slight sense of concern that the person might quit if they find another opportunity.",
         nextNodeId: "interview-node-4a-conflict-nemawashi",
       },
       {
@@ -326,7 +326,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "前職や上司への不満をそのまま口にすると、「入社後も他責にするのではないか」と警戒されてしまいます。",
         feedbackEn:
-          "Badmouthing a former manager triggers a classic red flag: interviewers wonder if you will complain about them next.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. If you voice your dissatisfaction with your previous job or boss directly, people will be wary, thinking, “Will they continue to blame others even after joining the company?”",
         nextNodeId: "interview-node-4b-attitude-check",
       },
     ],
@@ -367,7 +367,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "企業研究に基づく具体的な事例（自治体DX）を挙げ、見事に挽回しました！川口さんも納得の表情です。",
         feedbackEn:
-          "Excellent recovery: citing a specific company case study proves genuine research and commitment.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. By citing specific examples based on corporate research (local government digital transformation), they made a brilliant comeback! Mr. Kawaguchi looks thoroughly convinced.",
         nextNodeId: "interview-node-4a-conflict-nemawashi",
       },
       {
@@ -385,7 +385,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "条件面だけを挙げると「入社後にどう貢献したいか」が見えず、役員面接では物足りなく映ります。",
         feedbackEn:
-          "Focusing only on perks makes the panel doubt your contribution mindset.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. If you focus solely on the conditions, it’s unclear how you plan to contribute after joining the company, which will come across as insufficient during an executive interview.",
         nextNodeId: "interview-node-4b-attitude-check",
       },
       {
@@ -403,7 +403,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "他社と比較していることを率直に言いすぎると、最終面接の場では志望度が低いと判断されます。",
         feedbackEn:
-          "Saying you'll just go wherever pays highest signals zero genuine interest during a final interview.",
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. If you are too blunt about comparing the company to others, you will be perceived as having a low level of interest in the position during the final interview.",
         nextNodeId: "interview-node-end-failure",
       },
     ],
@@ -444,7 +444,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "「不躾（ぶしつけ）」というN1/N2語彙で自分の非を的確に認め、なんとか軌道修正できました。",
         feedbackEn:
-          "Admitting your 'bushitsuke' (impertinent) start gracefully gives you a narrow chance to recover.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. Using the N1/N2 vocabulary term “bushitsuke” (rudeness), I was able to accurately acknowledge my mistake and somehow get back on track.",
         nextNodeId: "interview-node-4b-attitude-check",
       },
       {
@@ -462,7 +462,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "役員の助言に真っ向から反論し、日本企業での協調性が期待できないとして面接終了となりました。",
         feedbackEn:
-          "Clashing head-on with an executive over interview etiquette ends your candidacy immediately.",
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. I directly contradicted the executive’s advice, and the interview was terminated on the grounds that I was unlikely to demonstrate the level of cooperation expected in a Japanese company.",
         nextNodeId: "interview-node-end-failure",
       },
     ],
@@ -503,7 +503,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "日本の現場で理想とされる「敬意＋事前の対話（根回し）＋データによる妥協点探し」が見事に両立しています！",
         feedbackEn:
-          "Ideal cultural mastery: respecting institutional knowledge, holding 1-on-1 alignment ('nemawashi'), and bridging with pilot metrics.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. It perfectly balances the ideal approach in Japanese workplaces: “respect + preliminary dialogue (laying the groundwork) + finding a compromise based on data”!",
         nextNodeId: "interview-node-5a-reverse-question",
       },
       {
@@ -521,7 +521,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "穏当ですが、まずは当事者間で歩み寄る主体性をもう少し見せると、中堅採用としてさらに魅力的になります。",
         feedbackEn:
-          "Safe and polite, though mid-career hires are usually expected to try aligning peers directly before escalating.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. While this is a reasonable approach, demonstrating a bit more initiative in finding common ground between the parties involved would make this position even more attractive as a mid-career hire.",
         nextNodeId: "interview-node-5a-reverse-question",
       },
       {
@@ -539,7 +539,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "全体会議の場で先輩の顔を潰すやり方は、日本の組織文化では激しい摩擦を招くと警戒されます。",
         feedbackEn:
-          "Challenging a veteran publicly in a group meeting ('saving face' violation) raises red flags over teamwork.",
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. In a general meeting, making a senior colleague lose face is considered a practice that can cause severe friction in Japanese organizational culture, so caution is advised.",
         nextNodeId: "interview-node-4b-attitude-check",
       },
     ],
@@ -580,7 +580,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "実務に根ざした誠実な回答で、松本取締役の警戒心を大きく和らげることができました。",
         feedbackEn:
-          "Grounded, humble, and actionable—reassures Director Matsumoto about your collaborative spirit.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. With sincere, practical answers, we were able to significantly ease Director Matsumoto’s wariness.",
         nextNodeId: "interview-node-5b-last-chance",
       },
       {
@@ -598,7 +598,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "ただ黙って従うだけでは、自律的な問題提起ができる即戦力として不安視されます。",
         feedbackEn:
-          "Pure passive obedience doesn't show the proactive ownership expected of a mid-career hire.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. If you simply obey without speaking up, you’ll be viewed with skepticism as someone who can’t independently raise issues and is ready for immediate deployment.",
         nextNodeId: "interview-node-5b-last-chance",
       },
       {
@@ -616,7 +616,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "組織の一体感より個人成果だけを優先する姿勢は、この企業の社風と噛み合わないと判断されました。",
         feedbackEn:
-          "Rejecting team cohesion in favor of lone-wolf output conflicts directly with the company's stated values.",
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. It was determined that an attitude that prioritizes individual results over organizational cohesion is incompatible with this company’s corporate culture.",
         nextNodeId: "interview-node-end-failure",
       },
     ],
@@ -657,7 +657,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "最高の逆質問です！入社後の活躍を見据えた主体的な問いかけに、役員も身を乗り出して答えてくれました。",
         feedbackEn:
-          "Gold-standard reverse question: forward-looking, humble ('moshi goen o itadaki'), and focused on early contribution.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. That was the best follow-up question! The executive leaned in eagerly to answer this proactive question, which demonstrated a vision for my future contributions to the company.",
         nextNodeId: "interview-node-end-perfect",
       },
       {
@@ -675,7 +675,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "学習意欲とチーム協調性を示す好印象な質問です。",
         feedbackEn:
-          "Friendly, positive question highlighting teamwork and continuous learning.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. This is a positive question that demonstrates a willingness to learn and teamwork.",
         nextNodeId: "interview-node-end-success",
       },
       {
@@ -693,7 +693,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "最後の最後に「質問なし＋残業時間だけ確認」で終わると、せっかくの熱意が少し薄れてしまいます。",
         feedbackEn:
-          "Saying 'no questions' before dropping a blunt overtime query dampens the strong momentum you built.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. If the meeting ends at the very last moment with “no questions—just a quick check on overtime hours,” it tends to dampen the enthusiasm that was built up.",
         nextNodeId: "interview-node-end-awkward",
       },
     ],
@@ -734,7 +734,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "佐藤さんの好感を勝ち取り、前向きな推薦コメントを面接官へ繋いでもらえました！",
         feedbackEn:
-          "Clever, humble follow-up: HR writes a glowing post-interview note on your behalf.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. I managed to win Ms. Sato’s favor and had her pass on a positive recommendation to the interviewer!",
         nextNodeId: "interview-node-end-success",
       },
       {
@@ -752,7 +752,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "礼儀正しく終えられましたが、途中の小さなつまずきを完全に挽回する一言が惜しくも足りませんでした。",
         feedbackEn:
-          "Polite exit, though a bit too subdued to completely erase earlier stumbles.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. Although the conversation ended politely, I unfortunately fell just short of finding the one phrase that would have fully made up for the minor stumble that occurred midway through.",
         nextNodeId: "interview-node-end-awkward",
       },
       {
@@ -770,7 +770,7 @@ export const JOB_INTERVIEW_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "エレベーター前でも人事に本音で愚痴をこぼすのは厳禁です。最後まで見られています。",
         feedbackEn:
-          "Complaining to HR in the hallway ('tsukaremashita') proves fatal—every interaction counts until you exit the building.",
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. It is strictly forbidden to vent your true feelings to HR staff even in front of the elevator. You are being watched until the very end.",
         nextNodeId: "interview-node-end-failure",
       },
     ],

@@ -850,6 +850,12 @@ function GrammarDetailContent() {
                                       {example.literalEn}
                                     </p>
                                   )}
+                                  {example.promptEn && (
+                                    <p className="mt-1 text-[var(--muted)]">
+                                      <strong className="text-[var(--ink)]">Active Prompt:</strong>{" "}
+                                      {example.promptEn}
+                                    </p>
+                                  )}
                                 </div>
                               )}
                             </div>

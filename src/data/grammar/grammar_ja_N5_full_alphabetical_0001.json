@@ -8,22 +8,26 @@
       {
         "jp": "この中で、寿司が一番好きです。",
         "romaji": "Kono naka de, sushi ga ichiban suki desu.",
-        "en": "Of all these, I like sushi the most."
+        "en": "Of all these, I like sushi the most.",
+        "promptEn": "State that among all options, you like sushi the best using superlative 〜が一番"
       },
       {
         "jp": "彼女はクラスで一番速く泳げます。",
         "romaji": "Kanojo wa kurasu de ichiban hayaku oyogemasu.",
-        "en": "She can swim the fastest in the class."
+        "en": "She can swim the fastest in the class.",
+        "promptEn": "State that she is the fastest swimmer in the class using superlative 〜が一番"
       },
       {
         "jp": "この町では、この公園が一番きれいです。",
         "romaji": "Kono machi de wa, kono kouen ga ichiban kirei desu.",
-        "en": "In this town, this park is the most beautiful."
+        "en": "In this town, this park is the most beautiful.",
+        "promptEn": "State that this park is the most beautiful in this town using superlative 〜が一番"
       },
       {
         "jp": "飲み物の中では、紅茶が一番好きです。",
         "romaji": "Nomimono no naka de wa, koucha ga ichiban suki desu.",
-        "en": "Among all drinks, I like tea the most."
+        "en": "Among all drinks, I like tea the most.",
+        "promptEn": "State that of all the drinks, you like black tea the best using superlative 〜が一番"
       }
     ]
   },
@@ -36,22 +40,26 @@
       {
         "jp": "今日は晴れている。けれども、寒いです。",
         "romaji": "Kyou wa harete iru. Keredo mo, samui desu.",
-        "en": "It is sunny today. However, it is cold."
+        "en": "It is sunny today. However, it is cold.",
+        "promptEn": "State that it's sunny today, but it's cold using contrast 〜けれども"
       },
       {
         "jp": "彼女はうるさい。けれども、面白いです。",
         "romaji": "Kanojo wa urusai. Keredo mo, omoshiroi desu.",
-        "en": "She is noisy. But, she is interesting."
+        "en": "She is noisy. But, she is interesting.",
+        "promptEn": "State that she's loud, but she's fun using contrast 〜けれども"
       },
       {
         "jp": "その映画は長かった。けれども、退屈じゃなかった。",
         "romaji": "Sono eiga wa nagakatta. Keredo mo, taikutsu janakatta.",
-        "en": "The movie was long. But, it wasn't boring."
+        "en": "The movie was long. But, it wasn't boring.",
+        "promptEn": "State that that movie was long, but it wasn't boring using contrast 〜けれども"
       },
       {
         "jp": "彼は運動が得意だ。けれども、勉強は苦手だ。",
         "romaji": "Kare wa undou ga tokui da. Keredo mo, benkyou wa nigate da.",
-        "en": "He is good at sports. However, he is not good at studying."
+        "en": "He is good at sports. However, he is not good at studying.",
+        "promptEn": "State that he is good at sports, but he is not good at studying using contrast 〜けれども"
       }
     ]
   },
@@ -64,22 +72,26 @@
       {
         "jp": "今日は忙しい。しかし、時間があるなら、コーヒーを飲もう。",
         "romaji": "Kyou wa isogashii. Shikashi, jikan ga aru nara, koohii o nomou.",
-        "en": "I'm busy today. However, if I have time, let's have coffee."
+        "en": "I'm busy today. However, if I have time, let's have coffee.",
+        "promptEn": "State that you are busy today, but if you have time, let's have some coffee using contrast 〜しかし"
       },
       {
         "jp": "その映画は面白かった。しかし、長すぎました。",
         "romaji": "Sono eiga wa omoshirokatta. Shikashi, nagasugimashita.",
-        "en": "The movie was interesting. But, it was too long."
+        "en": "The movie was interesting. But, it was too long.",
+        "promptEn": "State that that movie was interesting, but it was too long using contrast 〜しかし"
       },
       {
         "jp": "彼は疲れていた。しかし、宿題を終わらせた。",
         "romaji": "Kare wa tsukareteita. Shikashi, shukudai o owaraseta.",
-        "en": "He was tired. However, he finished his homework."
+        "en": "He was tired. However, he finished his homework.",
+        "promptEn": "State that he was tired, but he finished his homework using contrast 〜しかし"
       },
       {
         "jp": "部屋は狭いです。しかし、便利な場所にあります。",
         "romaji": "Heya wa semai desu. Shikashi, benri na basho ni arimasu.",
-        "en": "The room is small. But, it is in a convenient location."
+        "en": "The room is small. But, it is in a convenient location.",
+        "promptEn": "State that the room is small, but it's in a convenient location using contrast 〜しかし"
       }
     ]
   },
@@ -92,22 +104,26 @@
       {
         "jp": "映画は時間がない。じゃ、また今度行こう。",
         "romaji": "Eiga wa jikan ga nai. Ja, mata kondo ikou.",
-        "en": "There's no time for a movie. Well then, let's go another time."
+        "en": "There's no time for a movie. Well then, let's go another time.",
+        "promptEn": "Suggest that you you don't have time for a movie. Well, let's go another time using suggestion 〜じゃ"
       },
       {
         "jp": "お腹がすいた。じゃ、レストランに行こう。",
         "romaji": "Onaka ga suita. Ja, resutoran ni ikou.",
-        "en": "I'm hungry. In that case, let's go to a restaurant."
+        "en": "I'm hungry. In that case, let's go to a restaurant.",
+        "promptEn": "Suggest that you you are hungry. Well, let's go to a restaurant using suggestion 〜じゃ"
       },
       {
         "jp": "電車が遅れた。じゃ、バスで行こう。",
         "romaji": "Densha ga okureta. Ja, basu de ikou.",
-        "en": "The train is late. So, let's go by bus."
+        "en": "The train is late. So, let's go by bus.",
+        "promptEn": "Suggest that you the train was delayed. Well, let's take the bus then using suggestion 〜じゃ"
       },
       {
         "jp": "このシャツは高い。じゃ、別のを買おう。",
         "romaji": "Kono shatsu wa takai. Ja, betsu no o kau.",
-        "en": "This shirt is expensive. Well then, let's buy a different one."
+        "en": "This shirt is expensive. Well then, let's buy a different one.",
+        "promptEn": "Suggest that you this shirt is expensive. Well, let's buy a different one using suggestion 〜じゃ"
       }
     ]
   },
@@ -120,22 +136,26 @@
       {
         "jp": "今日は休みです。それじゃ、映画を観に行きましょう。",
         "romaji": "Kyou wa yasumi desu. Soreja, eiga wo mi ni ikimashou.",
-        "en": "Today is a day off. In that case, let's go watch a movie."
+        "en": "Today is a day off. In that case, let's go watch a movie.",
+        "promptEn": "Suggest that you you have the day off today. Well then, let's go see a movie using 〜それじゃ"
       },
       {
         "jp": "電気が切れた。それじゃ、ろうそくを使いましょう。",
         "romaji": "Denki ga kireta. Soreja, rousoku wo tsukaimashou.",
-        "en": "The electricity went out. In that case, let's use candles."
+        "en": "The electricity went out. In that case, let's use candles.",
+        "promptEn": "Suggest that you the power went out. Well then, let's use a candle using 〜それじゃ"
       },
       {
         "jp": "レストランが混んでいます。それじゃ、別の場所で食べましょう。",
         "romaji": "Resutoran ga kondeimasu. Soreja, betsu no basho de tabemashou.",
-        "en": "The restaurant is crowded. In that case, let's eat somewhere else."
+        "en": "The restaurant is crowded. In that case, let's eat somewhere else.",
+        "promptEn": "Suggest that you the restaurant is crowded. Well then, let's eat somewhere else using 〜それじゃ"
       },
       {
         "jp": "明日は雨が降るらしい。それじゃ、ピクニックは中止しましょう。",
         "romaji": "Ashita wa ame ga furu rashii. Soreja, pikunikku wa chuushi shimashou.",
-        "en": "It seems it will rain tomorrow. In that case, let's cancel the picnic."
+        "en": "It seems it will rain tomorrow. In that case, let's cancel the picnic.",
+        "promptEn": "Suggest that you it looks like it's going to rain tomorrow. In that case, let's cancel the picnic using 〜それじゃ"
       }
     ]
   },
@@ -148,22 +168,26 @@
       {
         "jp": "今日は休みだ。それでは、映画を見に行こう。",
         "romaji": "Kyou wa yasumi da. Sore dewa, eiga wo mi ni ikou.",
-        "en": "Today is a day off. In that case, let's go see a movie."
+        "en": "Today is a day off. In that case, let's go see a movie.",
+        "promptEn": "State that today is a day off. Well then, let's go see a movie using change of state 〜それでは"
       },
       {
         "jp": "このパンはもう古いです。それでは、捨てましょう。",
         "romaji": "Kono pan wa mou furui desu. Sore dewa, sutemashou.",
-        "en": "This bread is already old. Then, let's throw it away."
+        "en": "This bread is already old. Then, let's throw it away.",
+        "promptEn": "Suggest that you this bread is already stale. Well then, let's throw it away using change of state 〜それでは"
       },
       {
         "jp": "雨が降ってきた。それでは、室内で遊ぼう。",
         "romaji": "Ame ga futtekita. Sore dewa, shitsunai de asobou.",
-        "en": "It started raining. In that case, let's play indoors."
+        "en": "It started raining. In that case, let's play indoors.",
+        "promptEn": "State that it started to rain. Well then, let's play indoors using change of state 〜それでは"
       },
       {
         "jp": "お腹が空いた。それでは、何か食べに行きましょう。",
         "romaji": "Onaka ga suita. Sore dewa, nani ka tabe ni ikimashou.",
-        "en": "I'm hungry. So, let's go eat something."
+        "en": "I'm hungry. So, let's go eat something.",
+        "promptEn": "Suggest that you you are hungry. Well then, let's go get something to eat using change of state 〜それでは"
       }
     ]
   },
@@ -176,22 +200,26 @@
       {
         "jp": "果物では、リンゴが一番好きです。",
         "romaji": "Kudamono dewa, ringo ga ichiban suki desu.",
-        "en": "As for fruits, apples are my favorite."
+        "en": "As for fruits, apples are my favorite.",
+        "promptEn": "Ask whether when it comes to fruit, you like apples the best using comparative 〜では"
       },
       {
         "jp": "スポーツでは、サッカーが一番人気です。",
         "romaji": "Supōtsu dewa, sakkā ga ichiban ninki desu.",
-        "en": "As for sports, soccer is the most popular."
+        "en": "As for sports, soccer is the most popular.",
+        "promptEn": "State that soccer is the most popular sport using comparative 〜では"
       },
       {
         "jp": "今日の天気では、雨が降りそうです。",
         "romaji": "Kyou no tenki dewa, ame ga furisou desu.",
-        "en": "As for today's weather, it looks like it will rain."
+        "en": "As for today's weather, it looks like it will rain.",
+        "promptEn": "State that given today's weather, it looks like it's going to rain using comparative 〜では"
       },
       {
         "jp": "料理では、和食が一番得意です。",
         "romaji": "Ryouri dewa, washoku ga ichiban tokui desu.",
-        "en": "As for cooking, I am best at Japanese cuisine."
+        "en": "As for cooking, I am best at Japanese cuisine.",
+        "promptEn": "Ask whether when it comes to cooking, you are best at Japanese cuisine using comparative 〜では"
       }
     ]
   },
@@ -204,22 +232,26 @@
       {
         "jp": "昨日は寒かった。でも、今日は暖かいです。",
         "romaji": "Kinou wa samukatta. Demo, kyou wa atatakai desu.",
-        "en": "Yesterday was cold. But today it's warm."
+        "en": "Yesterday was cold. But today it's warm.",
+        "promptEn": "State that it was cold yesterday, but today is warm using contrast 〜でも"
       },
       {
         "jp": "彼は忙しい。でも、友達と遊ぶ時間がある。",
         "romaji": "Kare wa isogashii. Demo, tomodachi to asobu jikan ga aru.",
-        "en": "He is busy. However, he still has time to hang out with friends."
+        "en": "He is busy. However, he still has time to hang out with friends.",
+        "promptEn": "State that he is busy, but he has time to hang out with his friends using contrast 〜でも"
       },
       {
         "jp": "試験に合格した。でも、まだ勉強を続けています。",
         "romaji": "Shiken ni goukaku shita. Demo, mada benkyou wo tsuzuketeimasu.",
-        "en": "I passed the exam. But I'm still continuing to study."
+        "en": "I passed the exam. But I'm still continuing to study.",
+        "promptEn": "State that you passed the exam, but you are still continuing to study using contrast 〜でも"
       },
       {
         "jp": "彼女は有名だ。でも、とても謙虚です。",
         "romaji": "Kanojo wa yuumei da. Demo, totemo kenkyo desu.",
-        "en": "She is famous. However, she's very humble."
+        "en": "She is famous. However, she's very humble.",
+        "promptEn": "State that she is famous, but she is very humble using contrast 〜でも"
       }
     ]
   },
@@ -232,22 +264,26 @@
       {
         "jp": "りんごとみかんとどちらが好きですか。",
         "romaji": "Ringo to mikan to dochira ga suki desu ka?",
-        "en": "Which do you like, apples or oranges?"
+        "en": "Which do you like, apples or oranges?",
+        "promptEn": "Ask whether which do you like better, apples or tangerines using comparative 〜と〜とどちら"
       },
       {
         "jp": "電車とバスとどちらで行くべきですか。",
         "romaji": "Densha to basu to dochira de iku beki desu ka?",
-        "en": "Should I go by train or bus?"
+        "en": "Should I go by train or bus?",
+        "promptEn": "Ask whether should you take the train or the bus using comparative 〜と〜とどちら"
       },
       {
         "jp": "赤いワンピースと青いワンピースとどちらが似合うと思いますか。",
         "romaji": "Akai wanpiisu to aoi wanpiisu to dochira ga niau to omoimasu ka?",
-        "en": "Which do you think suits me better, the red dress or the blue dress?"
+        "en": "Which do you think suits me better, the red dress or the blue dress?",
+        "promptEn": "Ask whether which do you think looks better on you—the red dress or the blue dress using comparative 〜と〜とどちら"
       },
       {
         "jp": "このカメラとあのカメラとどちらのほうが使いやすいですか。",
         "romaji": "Kono kamera to ano kamera to dochira no hou ga tsukaiyasui desu ka?",
-        "en": "Which one is easier to use, this camera or that camera?"
+        "en": "Which one is easier to use, this camera or that camera?",
+        "promptEn": "Ask whether which camera is easier to use—this one or that one using comparative 〜と〜とどちら"
       }
     ]
   },
@@ -260,22 +296,26 @@
       {
         "jp": "コーヒーと紅茶とどっちが好き？",
         "romaji": "Koohii to koucha to docchi ga suki?",
-        "en": "Which do you like, coffee or tea?"
+        "en": "Which do you like, coffee or tea?",
+        "promptEn": "Ask whether which do you like better, coffee or tea using 〜と〜とどっち〜"
       },
       {
         "jp": "映画と音楽とどっちを楽しむ？",
         "romaji": "Eiga to ongaku to docchi o tanoshimu?",
-        "en": "Which do you enjoy, movies or music?"
+        "en": "Which do you enjoy, movies or music?",
+        "promptEn": "Ask whether which do you enjoy more, movies or music using 〜と〜とどっち〜"
       },
       {
         "jp": "赤いシャツと青いシャツとどっちを買う？",
         "romaji": "Akai shatsu to aoi shatsu to docchi o kau?",
-        "en": "Which one will you buy, the red shirt or the blue shirt?"
+        "en": "Which one will you buy, the red shirt or the blue shirt?",
+        "promptEn": "Ask whether which one should you buy, the red shirt or the blue shirt using 〜と〜とどっち〜"
       },
       {
         "jp": "日本語と韓国語とどっちを勉強したい？",
         "romaji": "Nihongo to kankokugo to docchi o benkyou shitai?",
-        "en": "Which do you want to study, Japanese or Korean?"
+        "en": "Which do you want to study, Japanese or Korean?",
+        "promptEn": "Ask whether which would you rather study, Japanese or Korean using 〜と〜とどっち〜"
       }
     ]
   },
@@ -288,22 +328,26 @@
       {
         "jp": "彼女は髪が長いです。",
         "romaji": "Kanojo wa kami ga nagai desu.",
-        "en": "What's special about her is that she has long hair."
+        "en": "What's special about her is that she has long hair.",
+        "promptEn": "State that she has long hair using 〜は〜が〜"
       },
       {
         "jp": "このレストランは雰囲気が良いです。",
         "romaji": "Kono resutoran wa fun'iki ga ii desu.",
-        "en": "What's great about this restaurant is the atmosphere."
+        "en": "What's great about this restaurant is the atmosphere.",
+        "promptEn": "State that this restaurant has a nice atmosphere using 〜は〜が〜"
       },
       {
         "jp": "私は朝ごはんが一番好きです。",
         "romaji": "Watashi wa asagohan ga ichiban suki desu.",
-        "en": "What I like the most is breakfast."
+        "en": "What I like the most is breakfast.",
+        "promptEn": "State that you like breakfast the best using 〜は〜が〜"
       },
       {
         "jp": "彼は英語が得意です。",
         "romaji": "Kare wa eigo ga tokui desu.",
-        "en": "He is particularly good at English."
+        "en": "He is particularly good at English.",
+        "promptEn": "State that he is good at English using 〜は〜が〜"
       }
     ]
   },
@@ -316,22 +360,26 @@
       {
         "jp": "このジュースはあのジュースより甘いです。",
         "romaji": "Kono juusu wa ano juusu yori amai desu.",
-        "en": "This juice is sweeter than that juice."
+        "en": "This juice is sweeter than that juice.",
+        "promptEn": "State that this juice is sweeter than that juice using comparative 〜は〜より"
       },
       {
         "jp": "夏は冬より暑いです。",
         "romaji": "Natsu wa fuyu yori atsui desu.",
-        "en": "Summer is hotter than winter."
+        "en": "Summer is hotter than winter.",
+        "promptEn": "State that summer is hotter than winter using comparative 〜は〜より"
       },
       {
         "jp": "彼女は私より速く走ります。",
         "romaji": "Kanojo wa watashi yori hayaku hashirimasu.",
-        "en": "She runs faster than me."
+        "en": "She runs faster than me.",
+        "promptEn": "State that she runs faster than you do using comparative 〜は〜より"
       },
       {
         "jp": "スーパーはコンビニより安いです。",
         "romaji": "Suupaa wa konbini yori yasui desu.",
-        "en": "The supermarket is cheaper than the convenience store."
+        "en": "The supermarket is cheaper than the convenience store.",
+        "promptEn": "State that supermarkets are cheaper than convenience stores using comparative 〜は〜より"
       }
     ]
   },
@@ -344,22 +392,26 @@
       {
         "jp": "ピザよりハンバーガーのほうが美味しい。",
         "romaji": "Piza yori hanbaagaa no hou ga oishii.",
-        "en": "Hamburgers are more delicious than pizza."
+        "en": "Hamburgers are more delicious than pizza.",
+        "promptEn": "State that hamburgers are tastier than pizza using comparative 〜より〜のほうが"
       },
       {
         "jp": "夏より冬のほうが寒い。",
         "romaji": "Natsu yori fuyu no hou ga samui.",
-        "en": "Winter is colder than summer."
+        "en": "Winter is colder than summer.",
+        "promptEn": "State that winter is colder than summer using comparative 〜より〜のほうが"
       },
       {
         "jp": "ここよりそこのほうが静かです。",
         "romaji": "Koko yori soko no hou ga shizuka desu.",
-        "en": "There is quieter than here."
+        "en": "There is quieter than here.",
+        "promptEn": "State that it's quieter over there than here using comparative 〜より〜のほうが"
       },
       {
         "jp": "車より電車のほうが速い。",
         "romaji": "Kuruma yori densha no hou ga hayai.",
-        "en": "Trains are faster than cars."
+        "en": "Trains are faster than cars.",
+        "promptEn": "State that trains are faster than cars using comparative 〜より〜のほうが"
       }
     ]
   },
@@ -372,22 +424,26 @@
       {
         "jp": "彼は速く走りました。",
         "romaji": "Kare wa hayaku hashirimashita.",
-        "en": "He ran quickly."
+        "en": "He ran quickly.",
+        "promptEn": "State that he ran fast using 〜く+Verb"
       },
       {
         "jp": "この料理は美味しく食べました。",
         "romaji": "Kono ryouri wa oishiku tabemashita.",
-        "en": "I enjoyed eating this dish."
+        "en": "I enjoyed eating this dish.",
+        "promptEn": "State that you really enjoyed eating this dish using 〜く+Verb"
       },
       {
         "jp": "彼女は優しく話します。",
         "romaji": "Kanojo wa yasashiku hanashimasu.",
-        "en": "She speaks kindly."
+        "en": "She speaks kindly.",
+        "promptEn": "State that she speaks gently using 〜く+Verb"
       },
       {
         "jp": "母は忙しく仕事をしています。",
         "romaji": "Haha wa isogashiku shigoto o shite imasu.",
-        "en": "My mother is working busily."
+        "en": "My mother is working busily.",
+        "promptEn": "State that my mother is busy working using 〜く+Verb"
       }
     ]
   },
@@ -400,22 +456,26 @@
       {
         "jp": "部屋を明るくします。",
         "romaji": "Heya o akaruku shimasu.",
-        "en": "I will make the room brighter."
+        "en": "I will make the room brighter.",
+        "promptEn": "State that you will turn on the lights in the room using change of state 〜くします"
       },
       {
         "jp": "友達の気分を楽しくします。",
         "romaji": "Tomodachi no kibun o tanoshiku shimasu.",
-        "en": "I will make my friend’s mood more pleasant."
+        "en": "I will make my friend’s mood more pleasant.",
+        "promptEn": "State that it will cheer up your friend using change of state 〜くします"
       },
       {
         "jp": "仕事が簡単になるように、やり方を早くします。",
         "romaji": "Shigoto ga kantan ni naru you ni, yarikata o hayaku shimasu.",
-        "en": "I will make the way of doing things faster so that the work becomes easier."
+        "en": "I will make the way of doing things faster so that the work becomes easier.",
+        "promptEn": "State that you will speed up the process to make the work easier using change of state 〜くします"
       },
       {
         "jp": "食べ物を美味しくします。",
         "romaji": "Tabemono o oishiku shimasu.",
-        "en": "I will make the food delicious."
+        "en": "I will make the food delicious.",
+        "promptEn": "State that it makes food taste better using change of state 〜くします"
       }
     ]
   },
@@ -428,22 +488,26 @@
       {
         "jp": "このピザは美味しくないです。",
         "romaji": "Kono piza wa oishiku nai desu.",
-        "en": "This pizza is not delicious."
+        "en": "This pizza is not delicious.",
+        "promptEn": "State that this pizza isn't very good using change of state 〜:NegativePoliteForm"
       },
       {
         "jp": "この部屋は広くないです。",
         "romaji": "Kono heya wa hiroku nai desu.",
-        "en": "This room is not spacious."
+        "en": "This room is not spacious.",
+        "promptEn": "State that this room isn't very big using change of state 〜:NegativePoliteForm"
       },
       {
         "jp": "彼の意見は面白くないです。",
         "romaji": "Kare no iken wa omoshiroku nai desu.",
-        "en": "His opinion is not interesting."
+        "en": "His opinion is not interesting.",
+        "promptEn": "State that his opinion isn't interesting using change of state 〜:NegativePoliteForm"
       },
       {
         "jp": "その映画は楽しくありません。",
         "romaji": "Sono eiga wa tanoshiku arimasen.",
-        "en": "That movie is not enjoyable."
+        "en": "That movie is not enjoyable.",
+        "promptEn": "State that that movie isn't fun using change of state 〜:NegativePoliteForm"
       }
     ]
   },
@@ -456,22 +520,26 @@
       {
         "jp": "このリンゴは甘くて美味しいです。",
         "romaji": "Kono ringo wa amakute oishii desu.",
-        "en": "This apple is sweet and delicious."
+        "en": "This apple is sweet and delicious.",
+        "promptEn": "State that this apple is sweet and delicious using 〜て"
       },
       {
         "jp": "彼女は優しくてかわいいです。",
         "romaji": "Kanojo wa yasashikute kawaii desu.",
-        "en": "She is kind and cute."
+        "en": "She is kind and cute.",
+        "promptEn": "State that she is kind and cute using 〜て"
       },
       {
         "jp": "映画は面白くて感動的でした。",
         "romaji": "Eiga wa omoshirokute kandouteki deshita.",
-        "en": "The movie was interesting and moving."
+        "en": "The movie was interesting and moving.",
+        "promptEn": "State that the movie was interesting and moving using 〜て"
       },
       {
         "jp": "この部屋は広くて明るいです。",
         "romaji": "Kono heya wa hirokute akarui desu.",
-        "en": "This room is spacious and bright."
+        "en": "This room is spacious and bright.",
+        "promptEn": "State that this room is spacious and bright using 〜て"
       }
     ]
   },
@@ -484,22 +552,26 @@
       {
         "jp": "彼は静かに話す。",
         "romaji": "Kare wa shizuka ni hanasu.",
-        "en": "He speaks quietly."
+        "en": "He speaks quietly.",
+        "promptEn": "State that he speaks quietly using 〜に+Verb"
       },
       {
         "jp": "部屋をきれいに掃除した。",
         "romaji": "Heya o kirei ni souji shita.",
-        "en": "I cleaned the room neatly."
+        "en": "I cleaned the room neatly.",
+        "promptEn": "State that you cleaned the room thoroughly using 〜に+Verb"
       },
       {
         "jp": "彼女は元気に働いています。",
         "romaji": "Kanojo wa genki ni hataraite imasu.",
-        "en": "She works energetically."
+        "en": "She works energetically.",
+        "promptEn": "State that she is working energetically using 〜に+Verb"
       },
       {
         "jp": "先生は親切に説明してくれる。",
         "romaji": "Sensei wa shinsetsu ni setsumei shite kureru.",
-        "en": "The teacher explains kindly."
+        "en": "The teacher explains kindly.",
+        "promptEn": "Politely ask someone to the teacher explains it kindly using 〜に+Verb"
       }
     ]
   },
@@ -512,22 +584,26 @@
       {
         "jp": "彼は綺麗で優しい女性が好きです。",
         "romaji": "Kare wa kirei de yasashii josei ga suki desu.",
-        "en": "He likes women who are beautiful and kind."
+        "en": "He likes women who are beautiful and kind.",
+        "promptEn": "State that he likes beautiful, kind women using 〜で"
       },
       {
         "jp": "この料理は健康的で、元気な気分になります。",
         "romaji": "Kono ryouri wa kenkouteki de, genki na kibun ni narimasu.",
-        "en": "This dish is healthy and makes you feel energetic."
+        "en": "This dish is healthy and makes you feel energetic.",
+        "promptEn": "State that this dish is healthy and makes you feel energetic using 〜で"
       },
       {
         "jp": "彼は静かで落ち着いた環境で仕事をしたい。",
         "romaji": "Kare wa shizuka de ochitsuita kankyou de shigoto o shitai.",
-        "en": "He wants to work in a quiet and calm environment."
+        "en": "He wants to work in a quiet and calm environment.",
+        "promptEn": "State that he wants to work in a quiet and calm environment using 〜で"
       },
       {
         "jp": "この部屋は清潔で気持ちがいいです。",
         "romaji": "Kono heya wa seiketsu de kimochi ga ii desu.",
-        "en": "This room is clean and feels good."
+        "en": "This room is clean and feels good.",
+        "promptEn": "State that this room is clean and pleasant using 〜で"
       }
     ]
   },
@@ -540,22 +616,26 @@
       {
         "jp": "静かにします。",
         "romaji": "Shizuka ni shimasu.",
-        "en": "I will be quiet."
+        "en": "I will be quiet.",
+        "promptEn": "State that you will be quiet using 〜にします"
       },
       {
         "jp": "部屋をきれいにします。",
         "romaji": "Heya o kirei ni shimasu.",
-        "en": "I will make the room clean."
+        "en": "I will make the room clean.",
+        "promptEn": "State that you will clean the room using 〜にします"
       },
       {
         "jp": "明日の会議は簡単にします。",
         "romaji": "Ashita no kaigi wa kantan ni shimasu.",
-        "en": "I will make tomorrow’s meeting simple."
+        "en": "I will make tomorrow’s meeting simple.",
+        "promptEn": "State that you will keep tomorrow's meeting brief using 〜にします"
       },
       {
         "jp": "健康的な食事にします。",
         "romaji": "Kenkou-teki na shokuji ni shimasu.",
-        "en": "I will choose a healthy meal."
+        "en": "I will choose a healthy meal.",
+        "promptEn": "State that you will eat a healthy meal using 〜にします"
       }
     ]
   },
@@ -568,22 +648,26 @@
       {
         "jp": "この部屋は静かになります。",
         "romaji": "Kono heya wa shizuka ni narimasu.",
-        "en": "This room becomes quiet."
+        "en": "This room becomes quiet.",
+        "promptEn": "State that this room will be quiet using change of state 〜になります"
       },
       {
         "jp": "彼女はきれいになります。",
         "romaji": "Kanojo wa kirei ni narimasu.",
-        "en": "She becomes beautiful."
+        "en": "She becomes beautiful.",
+        "promptEn": "State that she will become beautiful using change of state 〜になります"
       },
       {
         "jp": "彼は元気になります。",
         "romaji": "Kare wa genki ni narimasu.",
-        "en": "He becomes energetic."
+        "en": "He becomes energetic.",
+        "promptEn": "State that he'll get better using change of state 〜になります"
       },
       {
         "jp": "町はにぎやかになります。",
         "romaji": "Machi wa nigiyaka ni narimasu.",
-        "en": "The town becomes lively."
+        "en": "The town becomes lively.",
+        "promptEn": "State that the town will become lively using change of state 〜になります"
       }
     ]
   },
@@ -596,22 +680,26 @@
       {
         "jp": "今日、映画を見るか、散歩するかどちらにしますか？",
         "romaji": "Kyou, eiga wo miru ka, sanpo suru ka dochira ni shimasu ka?",
-        "en": "Will we watch a movie or go for a walk today?"
+        "en": "Will we watch a movie or go for a walk today?",
+        "promptEn": "Ask whether shall you watch a movie or go for a walk today using 〜かNounか"
       },
       {
         "jp": "コーヒーか紅茶か、一つだけ選んでください。",
         "romaji": "Koohii ka koucha ka, hitotsu dake erande kudasai.",
-        "en": "Please choose only one, either coffee or tea."
+        "en": "Please choose only one, either coffee or tea.",
+        "promptEn": "Politely ask someone to choose only one: coffee or tea using 〜かNounか"
       },
       {
         "jp": "電車かバスを使って、学校に行くつもりです。",
         "romaji": "Densha ka basu o tsukatte, gakkou ni iku tsumori desu.",
-        "en": "I plan to go to school using either the train or the bus."
+        "en": "I plan to go to school using either the train or the bus.",
+        "promptEn": "State that you plan to take the train or bus to school using 〜かNounか"
       },
       {
         "jp": "週末は山に登るか海に行くか、まだ決めていません。",
         "romaji": "Shuumatsu wa yama ni noboru ka umi ni iku ka, mada kimete imasen.",
-        "en": "I haven't decided whether to climb the mountain or go to the beach this weekend."
+        "en": "I haven't decided whether to climb the mountain or go to the beach this weekend.",
+        "promptEn": "State that you haven't decided yet whether to go hiking or to the beach this weekend using 〜かNounか"
       }
     ]
   },
@@ -624,22 +712,26 @@
       {
         "jp": "英語ができます。",
         "romaji": "Eigo ga dekimasu.",
-        "en": "I can speak English."
+        "en": "I can speak English.",
+        "promptEn": "State that you can speak English using 〜ができます"
       },
       {
         "jp": "料理ができます。",
         "romaji": "Ryouri ga dekimasu.",
-        "en": "I can cook."
+        "en": "I can cook.",
+        "promptEn": "State that you can cook using 〜ができます"
       },
       {
         "jp": "彼は泳ぎができます。",
         "romaji": "Kare wa oyogi ga dekimasu.",
-        "en": "He can swim."
+        "en": "He can swim.",
+        "promptEn": "State that he can swim using 〜ができます"
       },
       {
         "jp": "彼女はピアノができます。",
         "romaji": "Kanojo wa piano ga dekimasu.",
-        "en": "She can play the piano."
+        "en": "She can play the piano.",
+        "promptEn": "State that she can play the piano using 〜ができます"
       }
     ]
   },
@@ -652,22 +744,26 @@
       {
         "jp": "新しい車がほしいです。",
         "romaji": "Atarashii kuruma ga hoshii desu.",
-        "en": "I want a new car."
+        "en": "I want a new car.",
+        "promptEn": "State that you want a new car using desire 〜がほしいです"
       },
       {
         "jp": "コーヒーがほしいです。",
         "romaji": "Koohii ga hoshii desu.",
-        "en": "I would like some coffee."
+        "en": "I would like some coffee.",
+        "promptEn": "State that you want some coffee using desire 〜がほしいです"
       },
       {
         "jp": "彼女は花がほしいです。",
         "romaji": "Kanojo wa hana ga hoshii desu.",
-        "en": "She wants flowers."
+        "en": "She wants flowers.",
+        "promptEn": "State that she wants flowers using desire 〜がほしいです"
       },
       {
         "jp": "友達がほしいです。",
         "romaji": "Tomodachi ga hoshii desu.",
-        "en": "I want a friend."
+        "en": "I want a friend.",
+        "promptEn": "State that you want to make friends using desire 〜がほしいです"
       }
     ]
   },
@@ -680,22 +776,26 @@
       {
         "jp": "朝9時から午後5時まで働きます。",
         "romaji": "Asa ku-ji kara gogo go-ji made hatarakimasu.",
-        "en": "I work from 9 AM to 5 PM."
+        "en": "I work from 9 AM to 5 PM.",
+        "promptEn": "State that you work from 9:00 a.m. to 5:00 p.m using reason 〜からNounまで"
       },
       {
         "jp": "東京から大阪まで電車で行く。",
         "romaji": "Toukyou kara Osaka made densha de iku.",
-        "en": "I will go by train from Tokyo to Osaka."
+        "en": "I will go by train from Tokyo to Osaka.",
+        "promptEn": "State that you are taking the train from Tokyo to Osaka using reason 〜からNounまで"
       },
       {
         "jp": "地下鉄は午前6時から深夜まで運行しています。",
         "romaji": "Chikatetsu wa gozen roku-ji kara shin'ya made unkou shite imasu.",
-        "en": "The subway runs from 6 AM until midnight."
+        "en": "The subway runs from 6 AM until midnight.",
+        "promptEn": "State that the subway runs from 6:00 a.m. until late at night using reason 〜からNounまで"
       },
       {
         "jp": "月曜日から金曜日まで学校に通います。",
         "romaji": "Getsuyoubi kara Kinyoubi made gakkou ni kayoimasu.",
-        "en": "I attend school from Monday to Friday."
+        "en": "I attend school from Monday to Friday.",
+        "promptEn": "State that you go to school from Monday through Friday using reason 〜からNounまで"
       }
     ]
   },
@@ -708,22 +808,26 @@
       {
         "jp": "この本は三百ページくらいあります。",
         "romaji": "Kono hon wa sanbyaku peeji kurai arimasu.",
-        "en": "This book has about 300 pages."
+        "en": "This book has about 300 pages.",
+        "promptEn": "State that this book is about 300 pages long using 〜くらい"
       },
       {
         "jp": "彼の家まで歩いて20分くらいかかります。",
         "romaji": "Kare no ie made aruite nijuppun kurai kakarimasu.",
-        "en": "It takes about 20 minutes to walk to his house."
+        "en": "It takes about 20 minutes to walk to his house.",
+        "promptEn": "State that it takes about 20 minutes to walk to his house using 〜くらい"
       },
       {
         "jp": "明日は暑くて、30度くらいになるでしょう。",
         "romaji": "Ashita wa atsukute, sanjuu-do kurai ni naru deshou.",
-        "en": "Tomorrow will be hot, about 30 degrees."
+        "en": "Tomorrow will be hot, about 30 degrees.",
+        "promptEn": "State that it will be hot tomorrow, reaching around 30 degrees using 〜くらい"
       },
       {
         "jp": "この料理を作るのに、材料は500円くらい必要です。",
         "romaji": "Kono ryouri o tsukuru no ni, zairyou wa gohyaku-en kurai hitsuyou desu.",
-        "en": "You need about 500 yen worth of ingredients to make this dish."
+        "en": "You need about 500 yen worth of ingredients to make this dish.",
+        "promptEn": "State that you'll need about 500 yen worth of ingredients to make this dish using 〜くらい"
       }
     ]
   },
@@ -736,22 +840,26 @@
       {
         "jp": "一日中勉強したので、１０時間ぐらい勉強しました。",
         "romaji": "Ichinichijuu benkyou shita node, juu-jikan gurai benkyou shimashita.",
-        "en": "I studied all day, so I studied for about 10 hours."
+        "en": "I studied all day, so I studied for about 10 hours.",
+        "promptEn": "State that you studied all day, so you studied for about 10 hours using 〜ぐらい"
       },
       {
         "jp": "この本は１００ページぐらいある。",
         "romaji": "Kono hon wa hyaku peeji gurai aru.",
-        "en": "This book has about 100 pages."
+        "en": "This book has about 100 pages.",
+        "promptEn": "State that this book is about 100 pages long using 〜ぐらい"
       },
       {
         "jp": "彼は果物を５個ぐらい食べました。",
         "romaji": "Kare wa kudamono o go-ko gurai tabemashita.",
-        "en": "He ate about 5 pieces of fruit."
+        "en": "He ate about 5 pieces of fruit.",
+        "promptEn": "State that he ate about five pieces of fruit using 〜ぐらい"
       },
       {
         "jp": "駅から家まで歩いて２０分ぐらいかかります。",
         "romaji": "Eki kara ie made aruite nijuppun gurai kakarimasu.",
-        "en": "It takes about 20 minutes to walk from the station to my house."
+        "en": "It takes about 20 minutes to walk from the station to my house.",
+        "promptEn": "State that it takes about 20 minutes to walk from the station to your house using 〜ぐらい"
       }
     ]
   },
@@ -764,22 +872,26 @@
       {
         "jp": "昼ごろに電話してください。",
         "romaji": "Hiru goro ni denwa shite kudasai.",
-        "en": "Please call me around noon."
+        "en": "Please call me around noon.",
+        "promptEn": "Politely ask someone to call you around noon using desire 〜ごろ"
       },
       {
         "jp": "彼は10歳ごろに日本に来ました。",
         "romaji": "Kare wa juu-sai goro ni Nihon ni kimashita.",
-        "en": "He came to Japan around the age of 10."
+        "en": "He came to Japan around the age of 10.",
+        "promptEn": "State that he came to Japan when he was about 10 years old using desire 〜ごろ"
       },
       {
         "jp": "午後３時ごろに会いましょう。",
         "romaji": "Gogo san-ji goro ni aimashou.",
-        "en": "Let's meet around 3 PM."
+        "en": "Let's meet around 3 PM.",
+        "promptEn": "Suggest that you meet around 3:00 p.m using desire 〜ごろ"
       },
       {
         "jp": "昨日の夜8時ごろに帰りました。",
         "romaji": "Kinou no yoru hachi-ji goro ni kaerimashita.",
-        "en": "I returned home last night around 8 o'clock."
+        "en": "I returned home last night around 8 o'clock.",
+        "promptEn": "State that you got home around 8:00 p.m. last night using desire 〜ごろ"
       }
     ]
   },
@@ -792,22 +904,26 @@
       {
         "jp": "コーヒーだけ飲んで、帰りました。",
         "romaji": "Koohii dake nonde, kaerimashita.",
-        "en": "I only drank coffee and went home."
+        "en": "I only drank coffee and went home.",
+        "promptEn": "State that you just had some coffee and went home using limitation 〜だけ〜"
       },
       {
         "jp": "この本は二十ページだけ読んだ。",
         "romaji": "Kono hon wa nijuu peeji dake yonda.",
-        "en": "I only read twenty pages of this book."
+        "en": "I only read twenty pages of this book.",
+        "promptEn": "State that you have only read twenty pages of this book using limitation 〜だけ〜"
       },
       {
         "jp": "彼女はとても速いですが、走るだけでなく、考えるのも速いです。",
         "romaji": "Kanojo wa totemo hayai desu ga, hashiru dake denaku, kangaeru no mo hayai desu.",
-        "en": "She is very fast, not only at running but also at thinking."
+        "en": "She is very fast, not only at running but also at thinking.",
+        "promptEn": "State that she is very fast—not only when she runs, but also when she thinks using limitation 〜だけ〜"
       },
       {
         "jp": "この部屋は寝るだけの場所です。",
         "romaji": "Kono heya wa neru dake no basho desu.",
-        "en": "This room is a place only for sleeping."
+        "en": "This room is a place only for sleeping.",
+        "promptEn": "State that this room is just for sleeping using limitation 〜だけ〜"
       }
     ]
   },
@@ -820,22 +936,26 @@
       {
         "jp": "図書館で勉強します。",
         "romaji": "Toshokan de benkyou shimasu.",
-        "en": "I study at the library."
+        "en": "I study at the library.",
+        "promptEn": "State that you are studying at the library using 〜で"
       },
       {
         "jp": "バスで学校に行きます。",
         "romaji": "Basu de gakkou ni ikimasu.",
-        "en": "I go to school by bus."
+        "en": "I go to school by bus.",
+        "promptEn": "State that you take the bus to school using 〜で"
       },
       {
         "jp": "鉛筆で書きました。",
         "romaji": "Enpitsu de kakimashita.",
-        "en": "I wrote it using a pencil."
+        "en": "I wrote it using a pencil.",
+        "promptEn": "State that you wrote this with a pencil using 〜で"
       },
       {
         "jp": "英語で話しましょう。",
         "romaji": "Eigo de hanashimashou.",
-        "en": "Let's talk in English."
+        "en": "Let's talk in English.",
+        "promptEn": "Suggest that you speak in English using 〜で"
       }
     ]
   },
@@ -848,22 +968,26 @@
       {
         "jp": "リンゴとバナナを買いました。",
         "romaji": "Ringo to banana wo kaimashita.",
-        "en": "I bought apples and bananas."
+        "en": "I bought apples and bananas.",
+        "promptEn": "State that you bought apples and bananas using 〜と"
       },
       {
         "jp": "友達と映画を見に行きます。",
         "romaji": "Tomodachi to eiga wo mi ni ikimasu.",
-        "en": "I will go to watch a movie with my friend."
+        "en": "I will go to watch a movie with my friend.",
+        "promptEn": "State that you are going to see a movie with your friends using 〜と"
       },
       {
         "jp": "父と母と一緒に旅行しました。",
         "romaji": "Chichi to haha to issho ni ryokou shimashita.",
-        "en": "I traveled together with my father and mother."
+        "en": "I traveled together with my father and mother.",
+        "promptEn": "State that you went on a trip with your father and mother using 〜と"
       },
       {
         "jp": "彼と彼女は結婚しました。",
         "romaji": "Kare to kanojo wa kekkon shimashita.",
-        "en": "He and she got married."
+        "en": "He and she got married.",
+        "promptEn": "State that he and she got married using 〜と"
       }
     ]
   },
@@ -876,22 +1000,26 @@
       {
         "jp": "彼女にプレゼントをあげました。",
         "romaji": "Kanojo ni purezento wo agemashita.",
-        "en": "I gave a present to her."
+        "en": "I gave a present to her.",
+        "promptEn": "State that you gave her a present using purpose 〜に"
       },
       {
         "jp": "日本に行きます。",
         "romaji": "Nihon ni ikimasu.",
-        "en": "I am going to Japan."
+        "en": "I am going to Japan.",
+        "promptEn": "State that you are going to Japan using purpose 〜に"
       },
       {
         "jp": "6時に集合しましょう。",
         "romaji": "Roku-ji ni shuugou shimashou.",
-        "en": "Let's meet at 6 o'clock."
+        "en": "Let's meet at 6 o'clock.",
+        "promptEn": "Suggest that you meet at 6 o'clock using purpose 〜に"
       },
       {
         "jp": "友達に手紙を書きます。",
         "romaji": "Tomodachi ni tegami wo kakimasu.",
-        "en": "I will write a letter to my friend."
+        "en": "I will write a letter to my friend.",
+        "promptEn": "State that you are writing a letter to a friend using purpose 〜に"
       }
     ]
   },
@@ -904,22 +1032,26 @@
       {
         "jp": "夏休みが終わったら、学校に帰ります。",
         "romaji": "Natsuyasumi ga owattara, gakkou ni kaerimasu.",
-        "en": "When summer vacation ends, I'll go back to school."
+        "en": "When summer vacation ends, I'll go back to school.",
+        "promptEn": "Ask whether when summer vacation is over, you will go back to school using 〜に帰ります"
       },
       {
         "jp": "買い物を終えたら、家に帰ります。",
         "romaji": "Kaimono o oetara, ie ni kaerimasu.",
-        "en": "After finishing shopping, I will go back home."
+        "en": "After finishing shopping, I will go back home.",
+        "promptEn": "Ask whether when you are done shopping, you will go home using 〜に帰ります"
       },
       {
         "jp": "今週末、実家に帰ります。",
         "romaji": "Konshuumatsu, jikka ni kaerimasu.",
-        "en": "I'm going back to my parents' home this weekend."
+        "en": "I'm going back to my parents' home this weekend.",
+        "promptEn": "State that you are going back to your parents' house this weekend using 〜に帰ります"
       },
       {
         "jp": "友達と旅行に行ったあと、東京に帰ります。",
         "romaji": "Tomodachi to ryokou ni itta ato, Toukyou ni kaerimasu.",
-        "en": "After traveling with my friend, I'll return to Tokyo."
+        "en": "After traveling with my friend, I'll return to Tokyo.",
+        "promptEn": "State that after traveling with your friends, you will return to Tokyo using 〜に帰ります"
       }
     ]
   },
@@ -932,22 +1064,26 @@
       {
         "jp": "今日の昼ご飯は寿司にします。",
         "romaji": "Kyou no hirugohan wa sushi ni shimasu.",
-        "en": "I'll choose sushi for today's lunch."
+        "en": "I'll choose sushi for today's lunch.",
+        "promptEn": "State that you are going to have sushi for lunch today using 〜にします"
       },
       {
         "jp": "この靴を買うか迷っていますが、赤い色の方にします。",
         "romaji": "Kono kutsu wo kau ka mayotteimasu ga, akai iro no hou ni shimasu.",
-        "en": "I was hesitating about which shoes to buy, but I'll go with the red ones."
+        "en": "I was hesitating about which shoes to buy, but I'll go with the red ones.",
+        "promptEn": "State that you are debating whether to buy these shoes, but you will go with the red ones using 〜にします"
       },
       {
         "jp": "休みの日に何をするか決めた。映画館に行くことにします。",
         "romaji": "Yasumi no hi ni nani wo suru ka kimeta. Eigakan ni iku koto ni shimasu.",
-        "en": "I've decided what to do on my day off. I'll go to the movie theater."
+        "en": "I've decided what to do on my day off. I'll go to the movie theater.",
+        "promptEn": "State that you have decided what to do on your day off. you are going to the movie theater using 〜にします"
       },
       {
         "jp": "フランス語とスペイン語のどちらを勉強するか悩んだが、フランス語にします。",
         "romaji": "Furansugo to Supeingo no dochira wo benkyou suru ka nayanda ga, Furansugo ni shimasu.",
-        "en": "I was torn between studying French and Spanish, but I decided on French."
+        "en": "I was torn between studying French and Spanish, but I decided on French.",
+        "promptEn": "State that you was torn between studying French and Spanish, but you have decided on French using 〜にします"
       }
     ]
   },
@@ -960,22 +1096,26 @@
       {
         "jp": "彼は医者になります。",
         "romaji": "Kare wa isha ni narimasu.",
-        "en": "He will become a doctor."
+        "en": "He will become a doctor.",
+        "promptEn": "State that he is going to become a doctor using change of state 〜になります"
       },
       {
         "jp": "この茶色の葉が赤になります。",
         "romaji": "Kono chairo no ha ga aka ni narimasu.",
-        "en": "These brown leaves will turn red."
+        "en": "These brown leaves will turn red.",
+        "promptEn": "State that this brown leaf will turn red using change of state 〜になります"
       },
       {
         "jp": "料理が冷めたら、美味しくなくなります。",
         "romaji": "Ryouri ga sametara, oishikunaku narimasu.",
-        "en": "When the dish cools down, it becomes less delicious."
+        "en": "When the dish cools down, it becomes less delicious.",
+        "promptEn": "State that if the food gets cold, it won't taste as good using change of state 〜になります"
       },
       {
         "jp": "来年、東京オリンピックになります。",
         "romaji": "Rainen, Toukyou Orinpikku ni narimasu.",
-        "en": "Next year, it will be the Tokyo Olympics."
+        "en": "Next year, it will be the Tokyo Olympics.",
+        "promptEn": "State that the Tokyo Olympics will be held next year using change of state 〜になります"
       }
     ]
   },
@@ -988,22 +1128,26 @@
       {
         "jp": "友達が私の家に来ます。",
         "romaji": "Tomodachi ga watashi no ie ni kimasu.",
-        "en": "My friend will come to my house."
+        "en": "My friend will come to my house.",
+        "promptEn": "State that my friend is coming over to your house using 〜に来ます"
       },
       {
         "jp": "今晩、父が駅に迎えに来ます。",
         "romaji": "Konban, chichi ga eki ni mukae ni kimasu.",
-        "en": "Tonight, my father will come to pick me up at the station."
+        "en": "Tonight, my father will come to pick me up at the station.",
+        "promptEn": "State that my father is coming to pick you up at the station tonight using 〜に来ます"
       },
       {
         "jp": "明日、先生が学校に来ます。",
         "romaji": "Ashita, sensei ga gakkou ni kimasu.",
-        "en": "Tomorrow, the teacher will come to school."
+        "en": "Tomorrow, the teacher will come to school.",
+        "promptEn": "State that the teacher is coming to school tomorrow using 〜に来ます"
       },
       {
         "jp": "有名な歌手がこの街に来ます。",
         "romaji": "Yuumei na kashu ga kono machi ni kimasu.",
-        "en": "A famous singer will come to this town."
+        "en": "A famous singer will come to this town.",
+        "promptEn": "State that a famous singer is coming to this city using 〜に来ます"
       }
     ]
   },
@@ -1016,22 +1160,26 @@
       {
         "jp": "学校に行きます。",
         "romaji": "Gakkou ni ikimasu.",
-        "en": "I will go to school."
+        "en": "I will go to school.",
+        "promptEn": "State that you are going to school using 〜に行きます"
       },
       {
         "jp": "明日、スーパーに行きます。",
         "romaji": "Ashita, suupaa ni ikimasu.",
-        "en": "I will go to the supermarket tomorrow."
+        "en": "I will go to the supermarket tomorrow.",
+        "promptEn": "State that you are going to the supermarket tomorrow using 〜に行きます"
       },
       {
         "jp": "週末に映画館に行きます。",
         "romaji": "Shuumatsu ni eigakan ni ikimasu.",
-        "en": "I will go to the movie theater on the weekend."
+        "en": "I will go to the movie theater on the weekend.",
+        "promptEn": "State that you are going to the movies this weekend using 〜に行きます"
       },
       {
         "jp": "夏休みに海に行きます。",
         "romaji": "Natsu yasumi ni umi ni ikimasu.",
-        "en": "I will go to the sea during the summer vacation."
+        "en": "I will go to the sea during the summer vacation.",
+        "promptEn": "State that you are going to the beach during summer vacation using 〜に行きます"
       }
     ]
   },
@@ -1044,22 +1192,26 @@
       {
         "jp": "朝ご飯のあとで、歯を磨きます。",
         "romaji": "Asagohan no atode, ha wo migakimasu.",
-        "en": "After breakfast, I brush my teeth."
+        "en": "After breakfast, I brush my teeth.",
+        "promptEn": "State that after breakfast, you brush your teeth using 〜のあとで"
       },
       {
         "jp": "映画のあとで、レストランで夕食を食べました。",
         "romaji": "Eiga no atode, resutoran de yuushoku o tabemashita.",
-        "en": "After the movie, we ate dinner at a restaurant."
+        "en": "After the movie, we ate dinner at a restaurant.",
+        "promptEn": "State that after the movie, you had dinner at a restaurant using 〜のあとで"
       },
       {
         "jp": "会議のあとで、上司と話し合います。",
         "romaji": "Kaigi no atode, joushi to hanashiaimasu.",
-        "en": "I will discuss with my boss after the meeting."
+        "en": "I will discuss with my boss after the meeting.",
+        "promptEn": "State that you will talk with your boss after the meeting using 〜のあとで"
       },
       {
         "jp": "晩ご飯のあとで、散歩に行きました。",
         "romaji": "Bangohan no atode, sanpo ni ikimashita.",
-        "en": "After dinner, I went for a walk."
+        "en": "After dinner, I went for a walk.",
+        "promptEn": "State that after dinner, you went for a walk using 〜のあとで"
       }
     ]
   },
@@ -1072,22 +1224,26 @@
       {
         "jp": "駅の前にコンビニがあります。",
         "romaji": "Eki no mae ni konbini ga arimasu.",
-        "en": "There is a convenience store in front of the station."
+        "en": "There is a convenience store in front of the station.",
+        "promptEn": "State that there is a convenience store in front of the station using 〜の前に"
       },
       {
         "jp": "家の前に車を止めてください。",
         "romaji": "Ie no mae ni kuruma wo tomete kudasai.",
-        "en": "Please park the car in front of the house."
+        "en": "Please park the car in front of the house.",
+        "promptEn": "Politely ask someone to park your car in front of the house using 〜の前に"
       },
       {
         "jp": "私の前に彼が立っていました。",
         "romaji": "Watashi no mae ni kare ga tatte imashita.",
-        "en": "He was standing in front of me."
+        "en": "He was standing in front of me.",
+        "promptEn": "State that he was standing in front of you using 〜の前に"
       },
       {
         "jp": "ホテルの前にタクシーが来た。",
         "romaji": "Hoteru no mae ni takushii ga kita.",
-        "en": "A taxi came in front of the hotel."
+        "en": "A taxi came in front of the hotel.",
+        "promptEn": "State that a taxi pulled up in front of the hotel using 〜の前に"
       }
     ]
   },
@@ -1100,22 +1256,26 @@
       {
         "jp": "私は日本の料理が好きです。",
         "romaji": "Watashi wa Nihon no ryouri ga suki desu.",
-        "en": "As for me, I like Japanese cuisine."
+        "en": "As for me, I like Japanese cuisine.",
+        "promptEn": "State that you like Japanese food using 〜は"
       },
       {
         "jp": "彼は英語が上手です。",
         "romaji": "Kare wa eigo ga jouzu desu.",
-        "en": "As for him, he is good at English."
+        "en": "As for him, he is good at English.",
+        "promptEn": "State that he is good at English using 〜は"
       },
       {
         "jp": "この本は面白いです。",
         "romaji": "Kono hon wa omoshiroi desu.",
-        "en": "As for this book, it's interesting."
+        "en": "As for this book, it's interesting.",
+        "promptEn": "State that this book is interesting using 〜は"
       },
       {
         "jp": "今日は暑いですね。",
         "romaji": "Kyou wa atsui desu ne.",
-        "en": "Speaking of today, it's hot, isn't it?"
+        "en": "Speaking of today, it's hot, isn't it?",
+        "promptEn": "Ask whether it's hot today, isn't it using 〜は"
       }
     ]
   },
@@ -1128,22 +1288,26 @@
       {
         "jp": "私も日本語を勉強しています。",
         "romaji": "Watashi mo nihongo wo benkyou shiteimasu.",
-        "en": "I am also studying Japanese."
+        "en": "I am also studying Japanese.",
+        "promptEn": "State that you are studying Japanese, too using 〜も〜"
       },
       {
         "jp": "彼もケーキが好きです。",
         "romaji": "Kare mo keeki ga suki desu.",
-        "en": "He also likes cake."
+        "en": "He also likes cake.",
+        "promptEn": "State that he likes cake, too using 〜も〜"
       },
       {
         "jp": "東京も大阪も観光スポットがたくさんあります。",
         "romaji": "Toukyou mo Oosaka mo kankou supotto ga takusan arimasu.",
-        "en": "There are many tourist spots in both Tokyo and Osaka."
+        "en": "There are many tourist spots in both Tokyo and Osaka.",
+        "promptEn": "State that both Tokyo and Osaka have many tourist attractions using 〜も〜"
       },
       {
         "jp": "この映画もあの映画も面白かった。",
         "romaji": "Kono eiga mo ano eiga mo omoshirokatta.",
-        "en": "Both this movie and that movie were interesting."
+        "en": "Both this movie and that movie were interesting.",
+        "promptEn": "State that both this movie and that movie were interesting using 〜も〜"
       }
     ]
   },
@@ -1156,22 +1320,26 @@
       {
         "jp": "彼は野菜や果物などを食べるのが好きです。",
         "romaji": "Kare wa yasai ya kudamono nado o taberu no ga suki desu.",
-        "en": "He likes to eat things like vegetables and fruits."
+        "en": "He likes to eat things like vegetables and fruits.",
+        "promptEn": "State that he likes to eat vegetables, fruits, and other foods using contrast 〜やNounなど"
       },
       {
         "jp": "日本の都市や東京、大阪などに行きたいです。",
         "romaji": "Nihon no toshi ya Toukyou, Oosaka nado ni ikitai desu.",
-        "en": "I want to go to Japanese cities such as Tokyo, Osaka, and so on."
+        "en": "I want to go to Japanese cities such as Tokyo, Osaka, and so on.",
+        "promptEn": "State that you want to visit cities in Japan, such as Tokyo and Osaka using contrast 〜やNounなど"
       },
       {
         "jp": "彼女は猫や犬など動物が好きです。",
         "romaji": "Kanojo wa neko ya inu nado doubutsu ga suki desu.",
-        "en": "She likes animals like cats, dogs, and so on."
+        "en": "She likes animals like cats, dogs, and so on.",
+        "promptEn": "State that she likes animals such as cats and dogs using contrast 〜やNounなど"
       },
       {
         "jp": "この本屋では漫画や小説などたくさんの本が売られています。",
         "romaji": "Kono honya de wa manga ya shousetsu nado takusan no hon ga urarete imasu.",
-        "en": "In this bookstore, many books such as manga and novels are sold."
+        "en": "In this bookstore, many books such as manga and novels are sold.",
+        "promptEn": "State that this bookstore sells a wide variety of books, including manga and novels using contrast 〜やNounなど"
       }
     ]
   },
@@ -1184,22 +1352,26 @@
       {
         "jp": "私は本を読みます。",
         "romaji": "Watashi wa hon wo yomimasu.",
-        "en": "I read a book."
+        "en": "I read a book.",
+        "promptEn": "State that you read books using 〜を〜"
       },
       {
         "jp": "彼はケーキを食べました。",
         "romaji": "Kare wa keeki wo tabemashita.",
-        "en": "He ate a cake."
+        "en": "He ate a cake.",
+        "promptEn": "State that he ate the cake using 〜を〜"
       },
       {
         "jp": "母はコーヒーを飲むのが好きです。",
         "romaji": "Haha wa koohii wo nomu no ga suki desu.",
-        "en": "My mother likes to drink coffee."
+        "en": "My mother likes to drink coffee.",
+        "promptEn": "State that my mother likes to drink coffee using 〜を〜"
       },
       {
         "jp": "友達が私のペンを使いました。",
         "romaji": "Tomodachi ga watashi no pen wo tsukaimashita.",
-        "en": "My friend used my pen."
+        "en": "My friend used my pen.",
+        "promptEn": "State that my friend used your pen using 〜を〜"
       }
     ]
   },
@@ -1212,22 +1384,26 @@
       {
         "jp": "宿題をしたあとで、テレビを見ました。",
         "romaji": "Shukudai wo shita ato de, terebi wo mimashita.",
-        "en": "After doing my homework, I watched TV."
+        "en": "After doing my homework, I watched TV.",
+        "promptEn": "State that after you finished your homework, you watched TV using 〜たあとで"
       },
       {
         "jp": "朝ごはんを食べたあとで、歯を磨きます。",
         "romaji": "Asagohan wo tabeta ato de, ha wo migakimasu.",
-        "en": "After eating breakfast, I brush my teeth."
+        "en": "After eating breakfast, I brush my teeth.",
+        "promptEn": "State that after eating breakfast, you brush your teeth using 〜たあとで"
       },
       {
         "jp": "仕事が終わったあとで、ジムに行く予定です。",
         "romaji": "Shigoto ga owatta ato de, jimu ni iku yotei desu.",
-        "en": "After finishing work, I plan to go to the gym."
+        "en": "After finishing work, I plan to go to the gym.",
+        "promptEn": "State that you plan to go to the gym after work using 〜たあとで"
       },
       {
         "jp": "映画を見たあとで、カフェでコーヒーを飲みました。",
         "romaji": "Eiga wo mita ato de, kafe de koohii wo nomimashita.",
-        "en": "After watching the movie, I drank coffee at a cafe."
+        "en": "After watching the movie, I drank coffee at a cafe.",
+        "promptEn": "State that after watching the movie, you had coffee at a café using 〜たあとで"
       }
     ]
   },
@@ -1240,22 +1416,26 @@
       {
         "jp": "私は寿司を食べたいです。",
         "romaji": "Watashi wa sushi wo tabetai desu.",
-        "en": "I want to eat sushi."
+        "en": "I want to eat sushi.",
+        "promptEn": "State that you want to eat sushi using desire 〜たいです"
       },
       {
         "jp": "彼は日本に行きたいです。",
         "romaji": "Kare wa Nihon ni ikitai desu.",
-        "en": "He wants to go to Japan."
+        "en": "He wants to go to Japan.",
+        "promptEn": "State that he wants to go to Japan using desire 〜たいです"
       },
       {
         "jp": "彼女は英語を勉強したいです。",
         "romaji": "Kanojo wa eigo wo benkyou shitai desu.",
-        "en": "She wants to study English."
+        "en": "She wants to study English.",
+        "promptEn": "State that she wants to study English using desire 〜たいです"
       },
       {
         "jp": "子供たちは遊びたいです。",
         "romaji": "Kodomo-tachi wa asobitai desu.",
-        "en": "The children want to play."
+        "en": "The children want to play.",
+        "promptEn": "State that the children want to play using desire 〜たいです"
       }
     ]
   },
@@ -1268,22 +1448,26 @@
       {
         "jp": "コーヒーを飲んで、出かけます。",
         "romaji": "Koohii o nonde, dekakemasu.",
-        "en": "After drinking coffee, I will go out."
+        "en": "After drinking coffee, I will go out.",
+        "promptEn": "State that you will have some coffee and then head out using 〜て"
       },
       {
         "jp": "買い物をして、家に帰りましょう。",
         "romaji": "Kaimono o shite, ie ni kaerimashou.",
-        "en": "Let's go shopping and then go home."
+        "en": "Let's go shopping and then go home.",
+        "promptEn": "Suggest that you go shopping and then head home using 〜て"
       },
       {
         "jp": "宿題をして、寝ます。",
         "romaji": "Shukudai o shite, nemasu.",
-        "en": "After doing my homework, I will sleep."
+        "en": "After doing my homework, I will sleep.",
+        "promptEn": "State that you will do your homework and then go to bed using 〜て"
       },
       {
         "jp": "友達を待って、一緒に映画を見に行きます。",
         "romaji": "Tomodachi o matte, issho ni eiga o mini ikimasu.",
-        "en": "I will wait for my friend and go watch a movie together."
+        "en": "I will wait for my friend and go watch a movie together.",
+        "promptEn": "State that you are waiting for your friend so you can go see a movie together using 〜て"
       }
     ]
   },
@@ -1296,22 +1480,26 @@
       {
         "jp": "彼女は今ピアノを弾いています。",
         "romaji": "Kanojo wa ima piano wo hiite imasu.",
-        "en": "She is playing the piano now."
+        "en": "She is playing the piano now.",
+        "promptEn": "State that she is playing the piano right now using 〜ています"
       },
       {
         "jp": "私たちは日本語を勉強しています。",
         "romaji": "Watashitachi wa nihongo wo benkyou shiteimasu.",
-        "en": "We are studying Japanese."
+        "en": "We are studying Japanese.",
+        "promptEn": "State that we are studying Japanese using 〜ています"
       },
       {
         "jp": "彼は映画を見ています。",
         "romaji": "Kare wa eiga wo miteimasu.",
-        "en": "He is watching a movie."
+        "en": "He is watching a movie.",
+        "promptEn": "State that he is watching a movie using 〜ています"
       },
       {
         "jp": "入っていますので、お待ちください。",
         "romaji": "Haitteimasu node, omachi kudasai.",
-        "en": "I am in, so please wait."
+        "en": "I am in, so please wait.",
+        "promptEn": "State that it's loading, so please wait using 〜ています"
       }
     ]
   },
@@ -1324,22 +1512,26 @@
       {
         "jp": "宿題をしてから、テレビを見ました。",
         "romaji": "Shukudai wo shite kara, terebi wo mimashita.",
-        "en": "I watched TV after doing my homework."
+        "en": "I watched TV after doing my homework.",
+        "promptEn": "State that you did your homework and then watched TV using reason 〜てから"
       },
       {
         "jp": "食べてから、歯を磨きましょう。",
         "romaji": "Tabete kara, ha wo migakimashou.",
-        "en": "Let's brush our teeth after eating."
+        "en": "Let's brush our teeth after eating.",
+        "promptEn": "Suggest that you brush your teeth after eating using reason 〜てから"
       },
       {
         "jp": "仕事が終わってから、友達と飲みに行きます。",
         "romaji": "Shigoto ga owatte kara, tomodachi to nomi ni ikimasu.",
-        "en": "I will go drinking with my friends after work is done."
+        "en": "I will go drinking with my friends after work is done.",
+        "promptEn": "State that after work, you are going out for drinks with your friends using reason 〜てから"
       },
       {
         "jp": "学校が終わってから、図書館で勉強します。",
         "romaji": "Gakkou ga owatte kara, toshokan de benkyou shimasu.",
-        "en": "I will study in the library after school is over."
+        "en": "I will study in the library after school is over.",
+        "promptEn": "State that after school, you study at the library using reason 〜てから"
       }
     ]
   },
@@ -1352,22 +1544,26 @@
       {
         "jp": "ドアを開けてください。",
         "romaji": "Doa wo akete kudasai.",
-        "en": "Please open the door."
+        "en": "Please open the door.",
+        "promptEn": "Politely ask someone to open the door using polite request 〜てください"
       },
       {
         "jp": "電話番号を教えてください。",
         "romaji": "Denwa bangou wo oshiete kudasai.",
-        "en": "Please tell me your phone number."
+        "en": "Please tell me your phone number.",
+        "promptEn": "Politely ask someone to tell you your phone number using polite request 〜てください"
       },
       {
         "jp": "ゆっくり話してください。",
         "romaji": "Yukkuri hanashite kudasai.",
-        "en": "Please speak slowly."
+        "en": "Please speak slowly.",
+        "promptEn": "Politely ask someone to speak slowly using polite request 〜てください"
       },
       {
         "jp": "コーヒーを一つ持ってきてください。",
         "romaji": "Koohii wo hitotsu motte kite kudasai.",
-        "en": "Please bring me a coffee."
+        "en": "Please bring me a coffee.",
+        "promptEn": "Politely ask someone to bring you a cup of coffee using polite request 〜てください"
       }
     ]
   },
@@ -1380,22 +1576,26 @@
       {
         "jp": "タバコを吸わないでください。",
         "romaji": "Tabako wo suwanaide kudasai.",
-        "en": "Please don't smoke."
+        "en": "Please don't smoke.",
+        "promptEn": "Politely ask someone to do not smoke using polite request 〜ないでください"
       },
       {
         "jp": "ここで走らないでください。",
         "romaji": "Koko de hashiranaide kudasai.",
-        "en": "Please don't run here."
+        "en": "Please don't run here.",
+        "promptEn": "Politely ask someone to do not run here using polite request 〜ないでください"
       },
       {
         "jp": "大きな声で話さないでください。",
         "romaji": "Ookina koe de hanasanaide kudasai.",
-        "en": "Please don't speak loudly."
+        "en": "Please don't speak loudly.",
+        "promptEn": "Politely ask someone to do not speak loudly using polite request 〜ないでください"
       },
       {
         "jp": "写真を撮らないでください。",
         "romaji": "Shashin wo toranaide kudasai.",
-        "en": "Please don't take photos."
+        "en": "Please don't take photos.",
+        "promptEn": "Politely ask someone to do not take photos using polite request 〜ないでください"
       }
     ]
   },
@@ -1408,22 +1608,26 @@
       {
         "jp": "冷蔵庫に入れると、溶けたアイスクリームは固体に戻ります。",
         "romaji": "Reizouko ni ireru to, toketa aisukuriimu wa kotai ni modorimasu.",
-        "en": "When put in the refrigerator, the melted ice cream returns to its solid state."
+        "en": "When put in the refrigerator, the melted ice cream returns to its solid state.",
+        "promptEn": "Ask whether when placed in the refrigerator, melted ice cream turns back into a solid using conditional 〜に戻ります"
       },
       {
         "jp": "休暇が終わったら、仕事に戻ります。",
         "romaji": "Kyuuka ga owattara, shigoto ni modorimasu.",
-        "en": "When the vacation ends, I will return to work."
+        "en": "When the vacation ends, I will return to work.",
+        "promptEn": "State that once your vacation is over, you will go back to work using conditional 〜に戻ります"
       },
       {
         "jp": "リモートワークが終わった後、元のオフィスに戻ります。",
         "romaji": "Rimooto waaku ga owatta ato, moto no ofisu ni modorimasu.",
-        "en": "After remote work is over, we will return to our original office."
+        "en": "After remote work is over, we will return to our original office.",
+        "promptEn": "State that after your remote work is over, you will return to your original office using conditional 〜に戻ります"
       },
       {
         "jp": "外国で勉強した後、日本に帰ります。",
         "romaji": "Gaikoku de benkyou shita ato, Nihon ni kaerimasu.",
-        "en": "After studying abroad, I will return to Japan."
+        "en": "After studying abroad, I will return to Japan.",
+        "promptEn": "State that after studying abroad, you will return to Japan using conditional 〜に戻ります"
       }
     ]
   },
@@ -1436,22 +1640,26 @@
       {
         "jp": "友達に会いに来ました。",
         "romaji": "Tomodachi ni ai ni kimashita.",
-        "en": "I came to meet my friend."
+        "en": "I came to meet my friend.",
+        "promptEn": "State that you came to see your friend using purpose 〜に来ます"
       },
       {
         "jp": "映画を見に来ました。",
         "romaji": "Eiga wo mi ni kimashita.",
-        "en": "I came to watch a movie."
+        "en": "I came to watch a movie.",
+        "promptEn": "State that you came to see a movie using purpose 〜に来ます"
       },
       {
         "jp": "先生に質問しに来ました。",
         "romaji": "Sensei ni shitsumon shi ni kimashita.",
-        "en": "I came to ask the teacher a question."
+        "en": "I came to ask the teacher a question.",
+        "promptEn": "State that you came to ask the teacher a question using purpose 〜に来ます"
       },
       {
         "jp": "買い物をしに来ました。",
         "romaji": "Kaimono wo shi ni kimashita.",
-        "en": "I came to go shopping."
+        "en": "I came to go shopping.",
+        "promptEn": "State that you came here to go shopping using purpose 〜に来ます"
       }
     ]
   },
@@ -1464,22 +1672,26 @@
       {
         "jp": "公園に遊びに行きます。",
         "romaji": "Kouen ni asobi ni ikimasu.",
-        "en": "I will go to the park to play."
+        "en": "I will go to the park to play.",
+        "promptEn": "State that you are going to the park to play using purpose 〜に行きます"
       },
       {
         "jp": "図書館に勉強しに行きます。",
         "romaji": "Toshokan ni benkyou shi ni ikimasu.",
-        "en": "I will go to the library to study."
+        "en": "I will go to the library to study.",
+        "promptEn": "State that you are going to the library to study using purpose 〜に行きます"
       },
       {
         "jp": "スーパーに買い物に行きます。",
         "romaji": "Suupaa ni kaimono ni ikimasu.",
-        "en": "I will go to the supermarket to do some shopping."
+        "en": "I will go to the supermarket to do some shopping.",
+        "promptEn": "State that you are going to the supermarket to shop using purpose 〜に行きます"
       },
       {
         "jp": "映画館に映画を見に行きます。",
         "romaji": "Eigakan ni eiga wo mi ni ikimasu.",
-        "en": "I will go to the movie theater to watch a movie."
+        "en": "I will go to the movie theater to watch a movie.",
+        "promptEn": "State that you are going to the movie theater to watch a movie using purpose 〜に行きます"
       }
     ]
   },
@@ -1492,22 +1704,26 @@
       {
         "jp": "一緒に映画を見ましょう。",
         "romaji": "Issho ni eiga wo mimashou.",
-        "en": "Let's watch a movie together."
+        "en": "Let's watch a movie together.",
+        "promptEn": "Suggest that you watch a movie together using suggestion 〜ましょう"
       },
       {
         "jp": "散歩しましょう。",
         "romaji": "Sanpo shimashou.",
-        "en": "Let's take a walk."
+        "en": "Let's take a walk.",
+        "promptEn": "Suggest that you go for a walk using suggestion 〜ましょう"
       },
       {
         "jp": "今晩、食事に行きましょう。",
         "romaji": "Konban, shokuji ni ikimashou.",
-        "en": "Let's go out for dinner tonight."
+        "en": "Let's go out for dinner tonight.",
+        "promptEn": "Suggest that you go out for dinner tonight using suggestion 〜ましょう"
       },
       {
         "jp": "明日勉強しましょう。",
         "romaji": "Ashita benkyou shimashou.",
-        "en": "Let's study tomorrow."
+        "en": "Let's study tomorrow.",
+        "promptEn": "Suggest that you study tomorrow using suggestion 〜ましょう"
       }
     ]
   },
@@ -1520,22 +1736,26 @@
       {
         "jp": "一緒に映画を見に行きましょうか。",
         "romaji": "Issho ni eiga wo mi ni ikimashou ka.",
-        "en": "Shall we go see a movie together?"
+        "en": "Shall we go see a movie together?",
+        "promptEn": "Suggest that you shall you go see a movie together? using suggestion 〜ましょうか"
       },
       {
         "jp": "コーヒーをもう一杯飲みましょうか。",
         "romaji": "Koohii wo mou ippai nomimashou ka.",
-        "en": "Should we have another cup of coffee?"
+        "en": "Should we have another cup of coffee?",
+        "promptEn": "Suggest that you shall you have another cup of coffee? using suggestion 〜ましょうか"
       },
       {
         "jp": "あなたの荷物を持ちましょうか。",
         "romaji": "Anata no nimotsu wo mochimashou ka.",
-        "en": "Do you want me to carry your luggage?"
+        "en": "Do you want me to carry your luggage?",
+        "promptEn": "Suggest that you would you like you to carry your luggage? using suggestion 〜ましょうか"
       },
       {
         "jp": "窓を開けましょうか。",
         "romaji": "Mado wo akemashou ka.",
-        "en": "Shall I open the window?"
+        "en": "Shall I open the window?",
+        "promptEn": "Suggest that you shall you open the window? using suggestion 〜ましょうか"
       }
     ]
   },
@@ -1548,22 +1768,26 @@
       {
         "jp": "一緒に映画を見ませんか。",
         "romaji": "Issho ni eiga wo mimasenka.",
-        "en": "Won't you watch a movie together with me?"
+        "en": "Won't you watch a movie together with me?",
+        "promptEn": "Suggest that you would you like to watch a movie with you? using suggestion 〜ませんか"
       },
       {
         "jp": "明日のパーティーに参加しませんか。",
         "romaji": "Ashita no paatii ni sanka shimasenka.",
-        "en": "Why don't you join tomorrow's party?"
+        "en": "Why don't you join tomorrow's party?",
+        "promptEn": "Suggest that you would you like to come to the party tomorrow? using suggestion 〜ませんか"
       },
       {
         "jp": "週末にピクニックに行きませんか。",
         "romaji": "Shuumatsu ni pikunikku ni ikimasenka.",
-        "en": "Shall we go for a picnic on the weekend?"
+        "en": "Shall we go for a picnic on the weekend?",
+        "promptEn": "Suggest that you how about going on a picnic this weekend? using suggestion 〜ませんか"
       },
       {
         "jp": "一緒に勉強しませんか。",
         "romaji": "Issho ni benkyou shimasenka.",
-        "en": "How about studying together?"
+        "en": "How about studying together?",
+        "promptEn": "Suggest that you why don't you study together? using suggestion 〜ませんか"
       }
     ]
   },
@@ -1576,22 +1800,26 @@
       {
         "jp": "泳ぐことが大好きです。",
         "romaji": "Oyogu koto ga daisuki desu.",
-        "en": "I love swimming."
+        "en": "I love swimming.",
+        "promptEn": "State that you love swimming using 〜ること"
       },
       {
         "jp": "日本語を勉強することは楽しいです。",
         "romaji": "Nihongo wo benkyou suru koto wa tanoshii desu.",
-        "en": "Studying Japanese is fun."
+        "en": "Studying Japanese is fun.",
+        "promptEn": "State that studying Japanese is fun using 〜ること"
       },
       {
         "jp": "友達と話すことがストレスを軽減します。",
         "romaji": "Tomodachi to hanasu koto ga sutoresu wo keigen shimasu.",
-        "en": "Talking with friends reduces stress."
+        "en": "Talking with friends reduces stress.",
+        "promptEn": "State that talking with friends helps reduce stress using 〜ること"
       },
       {
         "jp": "彼は歌うことが得意です。",
         "romaji": "Kare wa utau koto ga tokui desu.",
-        "en": "He is good at singing."
+        "en": "He is good at singing.",
+        "promptEn": "State that he is good at singing using 〜ること"
       }
     ]
   },
@@ -1604,22 +1832,26 @@
       {
         "jp": "この問題を解くことができます。",
         "romaji": "Kono mondai o toku koto ga dekimasu.",
-        "en": "I can solve this problem."
+        "en": "I can solve this problem.",
+        "promptEn": "State that you can solve this problem using potential 〜ることができます"
       },
       {
         "jp": "彼は英語を話すことができます。",
         "romaji": "Kare wa eigo o hanasu koto ga dekimasu.",
-        "en": "He can speak English."
+        "en": "He can speak English.",
+        "promptEn": "State that he can speak English using potential 〜ることができます"
       },
       {
         "jp": "私は高い所に登ることができません。",
         "romaji": "Watashi wa takai tokoro ni noboru koto ga dekimasen.",
-        "en": "I can't climb to high places."
+        "en": "I can't climb to high places.",
+        "promptEn": "State that you can't climb to high places using potential 〜ることができます"
       },
       {
         "jp": "彼女はピアノを弾くことができます。",
         "romaji": "Kanojo wa piano o hiku koto ga dekimasu.",
-        "en": "She can play the piano."
+        "en": "She can play the piano.",
+        "promptEn": "State that she can play the piano using potential 〜ることができます"
       }
     ]
   },
@@ -1632,22 +1864,26 @@
       {
         "jp": "この問題を解くことができる？",
         "romaji": "Kono mondai o toku koto ga dekiru?",
-        "en": "Can you solve this problem?"
+        "en": "Can you solve this problem?",
+        "promptEn": "Ask whether can you solve this problem using potential 〜ることができる"
       },
       {
         "jp": "彼は泳ぐことができます。",
         "romaji": "Kare wa oyogu koto ga dekimasu.",
-        "en": "He can swim."
+        "en": "He can swim.",
+        "promptEn": "State that he can swim using potential 〜ることができる"
       },
       {
         "jp": "日本に行くことができて、とても嬉しいです。",
         "romaji": "Nihon ni iku koto ga dekite, totemo ureshii desu.",
-        "en": "I'm very happy that I can go to Japan."
+        "en": "I'm very happy that I can go to Japan.",
+        "promptEn": "State that you are so happy to be able to go to Japan using potential 〜ることができる"
       },
       {
         "jp": "彼女はピアノを弾くことができます。",
         "romaji": "Kanojo wa piano o hiku koto ga dekimasu.",
-        "en": "She can play the piano."
+        "en": "She can play the piano.",
+        "promptEn": "State that she can play the piano using potential 〜ることができる"
       }
     ]
   },
@@ -1660,22 +1896,26 @@
       {
         "jp": "買い物をするために、銀行でお金をおろすの。",
         "romaji": "Kaimono o suru tame ni, ginkou de okane o orosu no.",
-        "en": "I'm withdrawing money at the bank so I can go shopping."
+        "en": "I'm withdrawing money at the bank so I can go shopping.",
+        "promptEn": "State that you are going to the bank to withdraw money so you can go shopping using reason 〜るの"
       },
       {
         "jp": "友達にプレゼントをあげるので、ケーキを焼くの。",
         "romaji": "Tomodachi ni purezento o ageru node, keeki o yaku no.",
-        "en": "I'm baking a cake because I'm giving my friend a present."
+        "en": "I'm baking a cake because I'm giving my friend a present.",
+        "promptEn": "State that you are baking a cake because you are giving it to a friend as a present using reason 〜るの"
       },
       {
         "jp": "ダイエットを始めるので、ジムに入会するの。",
         "romaji": "Daietto o hajimeru node, jimu ni nyuukai suru no.",
-        "en": "I’m joining a gym since I'm starting a diet."
+        "en": "I’m joining a gym since I'm starting a diet.",
+        "promptEn": "State that you are starting a diet, so you are joining a gym using reason 〜るの"
       },
       {
         "jp": "軽い食事がいいので、サラダを作るの。",
         "romaji": "Karui shokuji ga ii node, sarada o tsukuru no.",
-        "en": "I'm making a salad because I want a light meal."
+        "en": "I'm making a salad because I want a light meal.",
+        "promptEn": "State that you want something light to eat, so you are making a salad using reason 〜るの"
       }
     ]
   },
@@ -1688,22 +1928,26 @@
       {
         "jp": "出かける前に、部屋を掃除してください。",
         "romaji": "Dekakeru mae ni, heya o souji shite kudasai.",
-        "en": "Please clean the room before leaving."
+        "en": "Please clean the room before leaving.",
+        "promptEn": "Politely ask someone to clean your room before you go out using 〜る前に"
       },
       {
         "jp": "寝る前に、歯を磨きます。",
         "romaji": "Neru mae ni, ha o migakimasu.",
-        "en": "I brush my teeth before going to bed."
+        "en": "I brush my teeth before going to bed.",
+        "promptEn": "State that you brush your teeth before going to bed using 〜る前に"
       },
       {
         "jp": "雨が降る前に、洗濯物を取り込むこと。",
         "romaji": "Ame ga furu mae ni, sentakumono o torikomu koto.",
-        "en": "Take in the laundry before it rains."
+        "en": "Take in the laundry before it rains.",
+        "promptEn": "State that bring the laundry in before it rains using 〜る前に"
       },
       {
         "jp": "会議が始まる前に、資料を準備しましょう。",
         "romaji": "Kaigi ga hajimaru mae ni, shiryou o junbi shimashou.",
-        "en": "Let's prepare the documents before the meeting starts."
+        "en": "Let's prepare the documents before the meeting starts.",
+        "promptEn": "Suggest that you prepare the materials before the meeting begins using 〜る前に"
       }
     ]
   },
@@ -1716,22 +1960,26 @@
       {
         "jp": "彼はあまり疲れていません。",
         "romaji": "Kare wa amari tsukareteimasen.",
-        "en": "He is not really tired."
+        "en": "He is not really tired.",
+        "promptEn": "State that he isn't very tired using 〜あまり～ありません"
       },
       {
         "jp": "彼女はあまり早くないですよ。",
         "romaji": "Kanojo wa amari hayakunai desu yo.",
-        "en": "She is not very fast."
+        "en": "She is not very fast.",
+        "promptEn": "State that she isn't that fast using 〜あまり～ありません"
       },
       {
         "jp": "私はあまり勉強しないです。",
         "romaji": "Watashi wa amari benkyou shinai desu.",
-        "en": "I don't study very much."
+        "en": "I don't study very much.",
+        "promptEn": "State that you don't study much using 〜あまり～ありません"
       },
       {
         "jp": "あまりお金がありません。",
         "romaji": "Amari okane ga arimasen.",
-        "en": "I don't have much money."
+        "en": "I don't have much money.",
+        "promptEn": "State that you don't have much money using 〜あまり～ありません"
       }
     ]
   },
@@ -1744,22 +1992,26 @@
       {
         "jp": "あまり食べないです。",
         "romaji": "Amari tabenai desu.",
-        "en": "I don't really eat much."
+        "en": "I don't really eat much.",
+        "promptEn": "State that you don't eat much using 〜あまり～ないです"
       },
       {
         "jp": "この映画はあまり面白くないです。",
         "romaji": "Kono eiga wa amari omoshirokunai desu.",
-        "en": "This movie is not really interesting."
+        "en": "This movie is not really interesting.",
+        "promptEn": "State that this movie isn't very interesting using 〜あまり～ないです"
       },
       {
         "jp": "彼はあまり親切じゃないです。",
         "romaji": "Kare wa amari shinsetsu ja nai desu.",
-        "en": "He is not very kind."
+        "en": "He is not very kind.",
+        "promptEn": "State that he isn't very kind using 〜あまり～ないです"
       },
       {
         "jp": "私はあまり日本語が上手じゃないです。",
         "romaji": "Watashi wa amari nihongo ga jouzu ja nai desu.",
-        "en": "I am not very good at Japanese."
+        "en": "I am not very good at Japanese.",
+        "promptEn": "State that you are not very good at Japanese using 〜あまり～ないです"
       }
     ]
   },
@@ -1772,22 +2024,26 @@
       {
         "jp": "教室に机があります。",
         "romaji": "Kyoushitsu ni tsukue ga arimasu.",
-        "en": "There is a desk in the classroom."
+        "en": "There is a desk in the classroom.",
+        "promptEn": "State that there are desks in the classroom using 〜あります"
       },
       {
         "jp": "この公園にたくさんの花があります。",
         "romaji": "Kono kouen ni takusan no hana ga arimasu.",
-        "en": "There are many flowers in this park."
+        "en": "There are many flowers in this park.",
+        "promptEn": "State that there are many flowers in this park using 〜あります"
       },
       {
         "jp": "駅の近くにコンビニがあります。",
         "romaji": "Eki no chikaku ni konbini ga arimasu.",
-        "en": "There is a convenience store near the station."
+        "en": "There is a convenience store near the station.",
+        "promptEn": "State that there is a convenience store near the station using 〜あります"
       },
       {
         "jp": "家の中に古いテレビがあります。",
         "romaji": "Ie no naka ni furui terebi ga arimasu.",
-        "en": "There is an old TV inside the house."
+        "en": "There is an old TV inside the house.",
+        "promptEn": "State that there is an old TV in the house using 〜あります"
       }
     ]
   },
@@ -1800,22 +2056,26 @@
       {
         "jp": "お茶はいかがですか？",
         "romaji": "Ocha wa ikaga desu ka?",
-        "en": "How about some tea?"
+        "en": "How about some tea?",
+        "promptEn": "Ask whether would you like some tea using 〜いかがですか"
       },
       {
         "jp": "このドレスはいかがですか？",
         "romaji": "Kono doresu wa ikaga desu ka?",
-        "en": "How about this dress?"
+        "en": "How about this dress?",
+        "promptEn": "Ask whether how about this dress using 〜いかがですか"
       },
       {
         "jp": "ケーキを食べてはいかがですか？",
         "romaji": "Keeki wo tabete wa ikaga desu ka?",
-        "en": "How about eating some cake?"
+        "en": "How about eating some cake?",
+        "promptEn": "Ask whether why don't you try some cake using 〜いかがですか"
       },
       {
         "jp": "映画を見てはいかがですか？",
         "romaji": "Eiga wo mite wa ikaga desu ka?",
-        "en": "How about watching a movie?"
+        "en": "How about watching a movie?",
+        "promptEn": "Ask whether how about watching a movie using 〜いかがですか"
       }
     ]
   },
@@ -1828,22 +2088,26 @@
       {
         "jp": "リンゴはいくつありますか？",
         "romaji": "Ringo wa ikutsu arimasu ka?",
-        "en": "How many apples are there?"
+        "en": "How many apples are there?",
+        "promptEn": "Ask whether how many apples are there using 〜いくつ"
       },
       {
         "jp": "いくつかの問題を解決しなければなりません。",
         "romaji": "Ikutsu ka no mondai o kaiketsu shinakereba narimasen.",
-        "en": "I have to solve several problems."
+        "en": "I have to solve several problems.",
+        "promptEn": "State that there are several problems that need to be solved using 〜いくつ"
       },
       {
         "jp": "あなたはいくつの言語を話せますか？",
         "romaji": "Anata wa ikutsu no gengo o hanasemasu ka?",
-        "en": "How many languages can you speak?"
+        "en": "How many languages can you speak?",
+        "promptEn": "Ask whether how many languages do you speak using 〜いくつ"
       },
       {
         "jp": "パーティーにはいくつかの飲み物があります。",
         "romaji": "Paatii ni wa ikutsu ka no nomimono ga arimasu.",
-        "en": "There are several drinks at the party."
+        "en": "There are several drinks at the party.",
+        "promptEn": "State that there are several drinks at the party using 〜いくつ"
       }
     ]
   },
@@ -1856,22 +2120,26 @@
       {
         "jp": "いつか日本に行きたいです。",
         "romaji": "Itsuka Nihon ni ikitai desu.",
-        "en": "I want to go to Japan someday."
+        "en": "I want to go to Japan someday.",
+        "promptEn": "State that you want to visit Japan someday using 〜いつか"
       },
       {
         "jp": "彼はいつか有名な作家になるでしょう。",
         "romaji": "Kare wa itsuka yuumei na sakka ni naru deshou.",
-        "en": "He will become a famous writer someday."
+        "en": "He will become a famous writer someday.",
+        "promptEn": "State that he will become a famous writer someday using 〜いつか"
       },
       {
         "jp": "いつかあの山を登りたいと思っています。",
         "romaji": "Itsuka ano yama wo noboritai to omotte imasu.",
-        "en": "I think I want to climb that mountain someday."
+        "en": "I think I want to climb that mountain someday.",
+        "promptEn": "State that you hope to climb that mountain someday using 〜いつか"
       },
       {
         "jp": "彼女はいつか夢を叶えることができると信じています。",
         "romaji": "Kanojo wa itsuka yume wo kanaeru koto ga dekiru to shinjiteimasu.",
-        "en": "I believe she can achieve her dream someday."
+        "en": "I believe she can achieve her dream someday.",
+        "promptEn": "State that she believes that one day she will be able to make her dream come true using 〜いつか"
       }
     ]
   },
@@ -1884,22 +2152,26 @@
       {
         "jp": "いつでも遊びに来てください。",
         "romaji": "Itsudemo asobi ni kite kudasai.",
-        "en": "Please come to play anytime."
+        "en": "Please come to play anytime.",
+        "promptEn": "Politely ask someone to feel free to come visit anytime using contrast 〜いつでも"
       },
       {
         "jp": "彼女はいつでも笑顔です。",
         "romaji": "Kanojo wa itsudemo egao desu.",
-        "en": "She is always smiling."
+        "en": "She is always smiling.",
+        "promptEn": "State that she is always smiling using contrast 〜いつでも"
       },
       {
         "jp": "いつでも電話で連絡できます。",
         "romaji": "Itsudemo denwa de renraku dekimasu.",
-        "en": "You can contact me by phone anytime."
+        "en": "You can contact me by phone anytime.",
+        "promptEn": "State that you can contact you by phone anytime using contrast 〜いつでも"
       },
       {
         "jp": "この店はいつでも混んでいます。",
         "romaji": "Kono mise wa itsudemo konde imasu.",
-        "en": "This store is always crowded."
+        "en": "This store is always crowded.",
+        "promptEn": "State that this restaurant is always crowded using contrast 〜いつでも"
       }
     ]
   },
@@ -1912,22 +2184,26 @@
       {
         "jp": "彼はいつも遅刻します。",
         "romaji": "Kare wa itsumo chikoku shimasu.",
-        "en": "He is always late."
+        "en": "He is always late.",
+        "promptEn": "State that he is always late using 〜いつも"
       },
       {
         "jp": "私はいつも優しい犬が好きです。",
         "romaji": "Watashi wa itsumo yasashii inu ga suki desu.",
-        "en": "I always like gentle dogs."
+        "en": "I always like gentle dogs.",
+        "promptEn": "State that you always like gentle dogs using 〜いつも"
       },
       {
         "jp": "彼女はいつも静かな場所で勉強します。",
         "romaji": "Kanojo wa itsumo shizuka na basho de benkyou shimasu.",
-        "en": "She always studies in a quiet place."
+        "en": "She always studies in a quiet place.",
+        "promptEn": "State that she always studies in a quiet place using 〜いつも"
       },
       {
         "jp": "いつも朝ご飯を食べます。",
         "romaji": "Itsumo asagohan wo tabemasu.",
-        "en": "I always eat breakfast."
+        "en": "I always eat breakfast.",
+        "promptEn": "State that you always eat breakfast using 〜いつも"
       }
     ]
   },
@@ -1940,22 +2216,26 @@
       {
         "jp": "今、音楽を聞いています。",
         "romaji": "Ima, ongaku wo kiite imasu.",
-        "en": "I am listening to music right now."
+        "en": "I am listening to music right now.",
+        "promptEn": "State that you are listening to music right now using 〜ています"
       },
       {
         "jp": "父は新聞を読んでいます。",
         "romaji": "Chichi wa shinbun wo yonde imasu.",
-        "en": "My father is reading a newspaper."
+        "en": "My father is reading a newspaper.",
+        "promptEn": "State that my father is reading the newspaper using 〜ています"
       },
       {
         "jp": "彼女は英語を勉強しています。",
         "romaji": "Kanojo wa eigo wo benkyou shite imasu.",
-        "en": "She is studying English."
+        "en": "She is studying English.",
+        "promptEn": "State that she is studying English using 〜ています"
       },
       {
         "jp": "子供たちは公園で遊んでいます。",
         "romaji": "Kodomotachi wa kouen de asonde imasu.",
-        "en": "The children are playing in the park."
+        "en": "The children are playing in the park.",
+        "promptEn": "State that the children are playing in the park using 〜ています"
       }
     ]
   },
@@ -1968,22 +2248,26 @@
       {
         "jp": "私が学生です。",
         "romaji": "Watashi ga gakusei desu.",
-        "en": "I am a student."
+        "en": "I am a student.",
+        "promptEn": "State that you are a student using contrast 〜が"
       },
       {
         "jp": "このりんごが美味しい。",
         "romaji": "Kono ringo ga oishii.",
-        "en": "This apple is delicious."
+        "en": "This apple is delicious.",
+        "promptEn": "State that this apple is delicious using contrast 〜が"
       },
       {
         "jp": "彼は頭がいいが、性格が悪い。",
         "romaji": "Kare wa atama ga ii ga, seikaku ga warui.",
-        "en": "He is smart but has a bad personality."
+        "en": "He is smart but has a bad personality.",
+        "promptEn": "State that he's smart, but he has a bad personality using contrast 〜が"
       },
       {
         "jp": "走りたいが、足が痛い。",
         "romaji": "Hashiritai ga, ashi ga itai.",
-        "en": "I want to run, but my leg hurts."
+        "en": "I want to run, but my leg hurts.",
+        "promptEn": "State that you want to run, but your leg hurts using contrast 〜が"
       }
     ]
   },
@@ -1996,22 +2280,26 @@
       {
         "jp": "デザートは美味しいが、カロリーが高い。",
         "romaji": "Dezaato wa oishii ga, karorii ga takai.",
-        "en": "The dessert is delicious, but it is high in calories."
+        "en": "The dessert is delicious, but it is high in calories.",
+        "promptEn": "State that dessert is delicious, but it's high in calories using contrast 〜が"
       },
       {
         "jp": "彼は頭がいいが、少し怠け者だ。",
         "romaji": "Kare wa atama ga ii ga, sukoshi namakemono da.",
-        "en": "He is smart, but a bit lazy."
+        "en": "He is smart, but a bit lazy.",
+        "promptEn": "State that he is smart, but a bit lazy using contrast 〜が"
       },
       {
         "jp": "会社は利益を上げたが、従業員の給与は上がらなかった。",
         "romaji": "Kaisha wa rieki wo ageta ga, juugyouin no kyuuyo wa agaranakatta.",
-        "en": "The company made a profit, however, the employees' salaries did not increase."
+        "en": "The company made a profit, however, the employees' salaries did not increase.",
+        "promptEn": "State that the company made a profit, but employees' salaries did not increase using contrast 〜が"
       },
       {
         "jp": "外国語を勉強することが楽しいが、時々難しい。",
         "romaji": "Gaikokugo wo benkyou suru koto ga tanoshii ga, tokidoki muzukashii.",
-        "en": "Studying foreign languages is fun, but sometimes difficult."
+        "en": "Studying foreign languages is fun, but sometimes difficult.",
+        "promptEn": "State that studying a foreign language is fun, but sometimes it's difficult using contrast 〜が"
       }
     ]
   },
@@ -2024,22 +2312,26 @@
       {
         "jp": "明日は試験があるから、今晩勉強しなければなりません。",
         "romaji": "Ashita wa shiken ga aru kara, konban benkyou shinakereba narimasen.",
-        "en": "Because I have an exam tomorrow, I must study tonight."
+        "en": "Because I have an exam tomorrow, I must study tonight.",
+        "promptEn": "State that you have a test tomorrow, so you have to study tonight using reason 〜から"
       },
       {
         "jp": "この部屋は狭いから、もっと大きい部屋を探しています。",
         "romaji": "Kono heya wa semai kara, motto ookii heya wo sagashiteimasu.",
-        "en": "Since this room is small, I am looking for a bigger one."
+        "en": "Since this room is small, I am looking for a bigger one.",
+        "promptEn": "State that this room is small, so you are looking for a bigger one using reason 〜から"
       },
       {
         "jp": "彼は友達だから、手伝ってくれるでしょう。",
         "romaji": "Kare wa tomodachi dakara, tetsudatte kureru deshou.",
-        "en": "Since he is my friend, he will probably help me."
+        "en": "Since he is my friend, he will probably help me.",
+        "promptEn": "Politely ask someone to since he's your friend, he'll help you, won't he? using reason 〜から"
       },
       {
         "jp": "雨が降ったから、外に出られません。",
         "romaji": "Ame ga futta kara, soto ni deraremasen.",
-        "en": "Because it rained, I can't go outside."
+        "en": "Because it rained, I can't go outside.",
+        "promptEn": "State that it rained, so you can't go outside using reason 〜から"
       }
     ]
   },
@@ -2052,22 +2344,26 @@
       {
         "jp": "寒いからです。コートを着ています。",
         "romaji": "Samui kara desu. Kooto wo kiteimasu.",
-        "en": "It’s because it’s cold. That’s why I’m wearing a coat."
+        "en": "It’s because it’s cold. That’s why I’m wearing a coat.",
+        "promptEn": "State that it's cold, so you are wearing a coat using reason 〜からです"
       },
       {
         "jp": "この店は安いからです。よく来ます。",
         "romaji": "Kono mise wa yasui kara desu. Yoku kimasu.",
-        "en": "It’s because this store is cheap. That’s why I come often."
+        "en": "It’s because this store is cheap. That’s why I come often.",
+        "promptEn": "State that it's because this restaurant is cheap. you come here often using reason 〜からです"
       },
       {
         "jp": "彼は親切だからです。みんなに好かれています。",
         "romaji": "Kare wa shinsetsu dakara desu. Minna ni suka-rete imasu.",
-        "en": "It’s because he’s kind. Everyone likes him."
+        "en": "It’s because he’s kind. Everyone likes him.",
+        "promptEn": "State that it's because he's kind. Everyone likes him using reason 〜からです"
       },
       {
         "jp": "彼女は学生だからです。図書館で勉強しています。",
         "romaji": "Kanojo wa gakusei dakara desu. Toshokan de benkyou shiteimasu.",
-        "en": "It’s because she’s a student. She studies at the library."
+        "en": "It’s because she’s a student. She studies at the library.",
+        "promptEn": "State that it's because she's a student. She's studying at the library using reason 〜からです"
       }
     ]
   },
@@ -2080,22 +2376,26 @@
       {
         "jp": "友達からプレゼントをもらいました。",
         "romaji": "Tomodachi kara purezento wo moraimashita.",
-        "en": "I received a present from my friend."
+        "en": "I received a present from my friend.",
+        "promptEn": "State that you received a gift from a friend using reason 〜からもらいます"
       },
       {
         "jp": "先生に宿題を渡してもらいました。",
         "romaji": "Sensei ni shukudai wo watashite moraimashita.",
-        "en": "I had the teacher hand me the homework."
+        "en": "I had the teacher hand me the homework.",
+        "promptEn": "State that the teacher gave you your homework using reason 〜からもらいます"
       },
       {
         "jp": "お母さんに料理を作ってもらいました。",
         "romaji": "Okaasan ni ryouri wo tsukutte moraimashita.",
-        "en": "I got my mom to cook for me."
+        "en": "I got my mom to cook for me.",
+        "promptEn": "State that my mom made you a meal using reason 〜からもらいます"
       },
       {
         "jp": "兄に車を貸してもらいました。",
         "romaji": "Ani ni kuruma wo kashite moraimashita.",
-        "en": "I got my older brother to lend me his car."
+        "en": "I got my older brother to lend me his car.",
+        "promptEn": "State that my older brother lent you his car using reason 〜からもらいます"
       }
     ]
   },
@@ -2108,22 +2408,26 @@
       {
         "jp": "彼がプレゼントを私にくれました。",
         "romaji": "Kare ga purezento wo watashi ni kuremashita.",
-        "en": "He gave me a present."
+        "en": "He gave me a present.",
+        "promptEn": "State that he gave you a present using 〜が私にくれます"
       },
       {
         "jp": "友達が宿題を手伝って私にくれました。",
         "romaji": "Tomodachi ga shukudai wo tetsudatte watashi ni kuremashita.",
-        "en": "My friend helped me with my homework."
+        "en": "My friend helped me with my homework.",
+        "promptEn": "State that my friend helped you with your homework and gave it to you using 〜が私にくれます"
       },
       {
         "jp": "お母さんがお弁当を作って私にくれました。",
         "romaji": "Okaasan ga obentou wo tsukutte watashi ni kuremashita.",
-        "en": "My mom made me a lunch box."
+        "en": "My mom made me a lunch box.",
+        "promptEn": "State that my mom made a bento and gave it to you using 〜が私にくれます"
       },
       {
         "jp": "先生がアドバイスを私にくれました。",
         "romaji": "Sensei ga adobaisu wo watashi ni kuremashita.",
-        "en": "The teacher gave me advice."
+        "en": "The teacher gave me advice.",
+        "promptEn": "State that my teacher gave you some advice using 〜が私にくれます"
       }
     ]
   },
@@ -2136,22 +2440,26 @@
       {
         "jp": "授業に出たけど、まだ宿題をしないといけない。",
         "romaji": "Jugyou ni deta kedo, mada shukudai wo shinai to ikenai.",
-        "en": "I attended the class, but I still have to do my homework."
+        "en": "I attended the class, but I still have to do my homework.",
+        "promptEn": "State that you went to class, but you still have to do your homework using contrast 〜けど"
       },
       {
         "jp": "昨日寒かったけど、今日は暖かいです。",
         "romaji": "Kinou samukatta kedo, kyou wa atatakai desu.",
-        "en": "Yesterday was cold, but today is warm."
+        "en": "Yesterday was cold, but today is warm.",
+        "promptEn": "State that it was cold yesterday, but it's warm today using contrast 〜けど"
       },
       {
         "jp": "彼は親切だけど、ちょっと怖い。",
         "romaji": "Kare wa shinsetsu da kedo, chotto kowai.",
-        "en": "He is kind, but a little scary."
+        "en": "He is kind, but a little scary.",
+        "promptEn": "State that he's kind, but a little scary using contrast 〜けど"
       },
       {
         "jp": "これはおいしそうだけど、高すぎる。",
         "romaji": "Kore wa oishisou da kedo, takasugiru.",
-        "en": "This looks delicious, but it is too expensive."
+        "en": "This looks delicious, but it is too expensive.",
+        "promptEn": "State that this looks delicious, but it's too expensive using contrast 〜けど"
       }
     ]
   },
@@ -2164,22 +2472,26 @@
       {
         "jp": "今日は寒いけれど、散歩に行きます。",
         "romaji": "Kyou wa samui keredo, sanpo ni ikimasu.",
-        "en": "Even though it's cold today, I'll go for a walk."
+        "en": "Even though it's cold today, I'll go for a walk.",
+        "promptEn": "State that it's cold today, but you are going for a walk using contrast 〜けれど"
       },
       {
         "jp": "彼は親切けれど、少し怖いです。",
         "romaji": "Kare wa shinsetsu keredo, sukoshi kowai desu.",
-        "en": "He is kind, but a little scary."
+        "en": "He is kind, but a little scary.",
+        "promptEn": "State that he's kind, but a little scary using contrast 〜けれど"
       },
       {
         "jp": "この部屋は狭いけれど、明るいです。",
         "romaji": "Kono heya wa semai keredo, akarui desu.",
-        "en": "This room is small, but it's bright."
+        "en": "This room is small, but it's bright.",
+        "promptEn": "State that this room is small, but it's bright using contrast 〜けれど"
       },
       {
         "jp": "彼女は病気だけれど、毎日働いています。",
         "romaji": "Kanojo wa byouki dakeredo, mainichi hataraite imasu.",
-        "en": "She is sick, but she works every day."
+        "en": "She is sick, but she works every day.",
+        "promptEn": "State that she is sick, but she works every day using contrast 〜けれど"
       }
     ]
   },
@@ -2192,22 +2504,26 @@
       {
         "jp": "こちらは田中さんです。",
         "romaji": "Kochira wa Tanaka-san desu.",
-        "en": "This is Mr./Ms. Tanaka."
+        "en": "This is Mr./Ms. Tanaka.",
+        "promptEn": "State that this is Mr. Tanaka using 〜こちら"
       },
       {
         "jp": "こちらのレストランは美味しいです。",
         "romaji": "Kochira no resutoran wa oishii desu.",
-        "en": "This restaurant is delicious."
+        "en": "This restaurant is delicious.",
+        "promptEn": "State that this restaurant serves delicious food using 〜こちら"
       },
       {
         "jp": "こちらへどうぞ。",
         "romaji": "Kochira e douzo.",
-        "en": "Please come this way."
+        "en": "Please come this way.",
+        "promptEn": "Politely ask someone to click here using 〜こちら"
       },
       {
         "jp": "こちらの方がいいですか、それともあちらの方がいいですか？",
         "romaji": "Kochira no hou ga ii desu ka, sore to mo achira no hou ga ii desu ka?",
-        "en": "Is this one better, or is that one better?"
+        "en": "Is this one better, or is that one better?",
+        "promptEn": "Ask whether is this one better, or is that one better using 〜こちら"
       }
     ]
   },
@@ -2220,22 +2536,26 @@
       {
         "jp": "さっき電話がありました。",
         "romaji": "Sakki denwa ga arimashita.",
-        "en": "There was a phone call just now."
+        "en": "There was a phone call just now.",
+        "promptEn": "State that you just got a phone call using limitation 〜さっき"
       },
       {
         "jp": "さっき部屋を掃除しました。",
         "romaji": "Sakki heya wo souji shimashita.",
-        "en": "I cleaned the room a short while ago."
+        "en": "I cleaned the room a short while ago.",
+        "promptEn": "State that you cleaned your room a little while ago using limitation 〜さっき"
       },
       {
         "jp": "さっき彼に会いました。",
         "romaji": "Sakki kare ni aimashita.",
-        "en": "I met him just now."
+        "en": "I met him just now.",
+        "promptEn": "State that you just saw him using limitation 〜さっき"
       },
       {
         "jp": "さっきのニュースを見ましたか？",
         "romaji": "Sakki no nyuusu wo mimashita ka?",
-        "en": "Did you watch the news a short time ago?"
+        "en": "Did you watch the news a short time ago?",
+        "promptEn": "Ask whether did you see that news story just now using limitation 〜さっき"
       }
     ]
   },
@@ -2248,22 +2568,26 @@
       {
         "jp": "友達が来たら、すぐに電話をかけてください。",
         "romaji": "Tomodachi ga kitara, sugu ni denwa wo kakete kudasai.",
-        "en": "When my friend arrives, please call me right away."
+        "en": "When my friend arrives, please call me right away.",
+        "promptEn": "Politely ask someone to if a friend comes over, please call you right away using 〜すぐに"
       },
       {
         "jp": "そのニュースを聞いたら、すぐに会社に行きました。",
         "romaji": "Sono nyuusu wo kiitara, sugu ni kaisha ni ikimashita.",
-        "en": "Upon hearing that news, I went to the company immediately."
+        "en": "Upon hearing that news, I went to the company immediately.",
+        "promptEn": "State that as soon as you heard the news, you went straight to the office using 〜すぐに"
       },
       {
         "jp": "彼女はすぐに泣き出した。",
         "romaji": "Kanojo wa sugu ni nakidashita.",
-        "en": "She started crying right away."
+        "en": "She started crying right away.",
+        "promptEn": "State that she immediately started crying using 〜すぐに"
       },
       {
         "jp": "教室に入ると、先生はすぐに授業を始めた。",
         "romaji": "Kyoushitsu ni hairu to, sensei wa sugu ni jugyou wo hajimeta.",
-        "en": "As soon as I entered the classroom, the teacher started the lesson immediately."
+        "en": "As soon as I entered the classroom, the teacher started the lesson immediately.",
+        "promptEn": "State that as soon as you entered the classroom, the teacher began the lesson using 〜すぐに"
       }
     ]
   },
@@ -2276,22 +2600,26 @@
       {
         "jp": "彼はぜんぜん話さない。",
         "romaji": "Kare wa zenzen hanasanai.",
-        "en": "He doesn't talk at all."
+        "en": "He doesn't talk at all.",
+        "promptEn": "State that he doesn't talk at all using 〜ぜんぜん"
       },
       {
         "jp": "この部屋はぜんぜん暗くない。",
         "romaji": "Kono heya wa zenzen kurakunai.",
-        "en": "This room is not dark at all."
+        "en": "This room is not dark at all.",
+        "promptEn": "State that this room isn't dark at all using 〜ぜんぜん"
       },
       {
         "jp": "彼女はぜんぜん疲れていない。",
         "romaji": "Kanojo wa zenzen tsukarete inai.",
-        "en": "She is not tired at all."
+        "en": "She is not tired at all.",
+        "promptEn": "State that she isn't tired at all using 〜ぜんぜん"
       },
       {
         "jp": "その映画はぜんぜん面白くなかった。",
         "romaji": "Sono eiga wa zenzen omoshirokunakatta.",
-        "en": "That movie was not interesting at all."
+        "en": "That movie was not interesting at all.",
+        "promptEn": "State that that movie wasn't interesting at all using 〜ぜんぜん"
       }
     ]
   },
@@ -2304,22 +2632,26 @@
       {
         "jp": "朝起きて、そして宿題をしました。",
         "romaji": "Asa okite, soshite shukudai wo shimashita.",
-        "en": "I woke up in the morning and then did my homework."
+        "en": "I woke up in the morning and then did my homework.",
+        "promptEn": "State that you woke up in the morning and did your homework using 〜そして"
       },
       {
         "jp": "コーヒーを飲んで、そして新聞を読みました。",
         "romaji": "Koohii wo nonde, soshite shinbun wo yomimashita.",
-        "en": "I drank coffee and then read the newspaper."
+        "en": "I drank coffee and then read the newspaper.",
+        "promptEn": "State that you drank some coffee and then read the newspaper using 〜そして"
       },
       {
         "jp": "家を出発しました。そして、駅へ行きました。",
         "romaji": "Ie wo shuppatsu shimashita. Soshite, eki e ikimashita.",
-        "en": "I left my house and then went to the station."
+        "en": "I left my house and then went to the station.",
+        "promptEn": "State that you left home. Then, you went to the station using 〜そして"
       },
       {
         "jp": "彼はゲームをした。そして、テレビを見ました。",
         "romaji": "Kare wa geemu wo shita. Soshite, terebi wo mimashita.",
-        "en": "He played games and then watched TV."
+        "en": "He played games and then watched TV.",
+        "promptEn": "State that he played a game. Then, he watched TV using 〜そして"
       }
     ]
   },
@@ -2332,22 +2664,26 @@
       {
         "jp": "そちらのレストランはどうですか？",
         "romaji": "Sochira no resutoran wa dou desu ka?",
-        "en": "How is that restaurant over there?"
+        "en": "How is that restaurant over there?",
+        "promptEn": "Ask whether how about that restaurant using 〜そちら"
       },
       {
         "jp": "そちらの方、お名前を教えていただけますか？",
         "romaji": "Sochira no kata, onamae o oshiete itadakemasu ka?",
-        "en": "Could you tell me the name of that person over there?"
+        "en": "Could you tell me the name of that person over there?",
+        "promptEn": "Ask whether could you tell you your name, please using 〜そちら"
       },
       {
         "jp": "そちらに行く途中で駅があります。",
         "romaji": "Sochira ni iku tochuu de eki ga arimasu.",
-        "en": "There is a station on the way to that direction."
+        "en": "There is a station on the way to that direction.",
+        "promptEn": "State that there is a station on the way there using 〜そちら"
       },
       {
         "jp": "そちらのかばん、私のと似ていますね。",
         "romaji": "Sochira no kaban, watashi no to niteimasu ne.",
-        "en": "That bag over there looks similar to mine."
+        "en": "That bag over there looks similar to mine.",
+        "promptEn": "State that that bag of yours looks a lot like yours using 〜そちら"
       }
     ]
   },
@@ -2360,22 +2696,26 @@
       {
         "jp": "コーヒーを飲んで、それから家を出ました。",
         "romaji": "Koohii o nonde, sorekara ie o demashita.",
-        "en": "I drank coffee, and then I left the house."
+        "en": "I drank coffee, and then I left the house.",
+        "promptEn": "State that you drank some coffee, and then you left the house using reason 〜それから"
       },
       {
         "jp": "買い物をして、それから映画を見に行きました。",
         "romaji": "Kaimono o shite, sorekara eiga o mini ikimashita.",
-        "en": "I went shopping, and then I went to watch a movie."
+        "en": "I went shopping, and then I went to watch a movie.",
+        "promptEn": "State that you went shopping, and then you went to see a movie using reason 〜それから"
       },
       {
         "jp": "彼女は勉強をして、それから寝ました。",
         "romaji": "Kanojo wa benkyou o shite, sorekara nemashita.",
-        "en": "She studied, and then she went to sleep."
+        "en": "She studied, and then she went to sleep.",
+        "promptEn": "State that she studied, and then went to sleep using reason 〜それから"
       },
       {
         "jp": "パーティーに行って、それから友達と話しました。",
         "romaji": "Paatii ni itte, sorekara tomodachi to hanashimashita.",
-        "en": "I went to the party, and then I talked with my friends."
+        "en": "I went to the party, and then I talked with my friends.",
+        "promptEn": "State that you went to a party, and then you talked with your friends using reason 〜それから"
       }
     ]
   },
@@ -2388,22 +2728,26 @@
       {
         "jp": "だいたい１００人がパーティーに参加しました。",
         "romaji": "Daitai hyaku-nin ga paatii ni sanka shimashita.",
-        "en": "Approximately 100 people attended the party."
+        "en": "Approximately 100 people attended the party.",
+        "promptEn": "State that about 100 people attended the party using desire 〜だいたい〜"
       },
       {
         "jp": "彼女はだいたい２時間でその仕事を終えます。",
         "romaji": "Kanojo wa daitai ni-jikan de sono shigoto o oemasu.",
-        "en": "She finishes that work in roughly two hours."
+        "en": "She finishes that work in roughly two hours.",
+        "promptEn": "State that she usually finishes that job in about two hours using desire 〜だいたい〜"
       },
       {
         "jp": "だいたい８０％の生徒が試験に合格しました。",
         "romaji": "Daitai hachijuu-paasento no seito ga shiken ni goukaku shimashita.",
-        "en": "About 80% of the students passed the exam."
+        "en": "About 80% of the students passed the exam.",
+        "promptEn": "State that about 80% of the students passed the exam using desire 〜だいたい〜"
       },
       {
         "jp": "今日はだいたい３０度の暑さです。",
         "romaji": "Kyou wa daitai sanjuu-do no atsusa desu.",
-        "en": "Today is almost 30 degrees hot."
+        "en": "Today is almost 30 degrees hot.",
+        "promptEn": "State that it's about 30 degrees today using desire 〜だいたい〜"
       }
     ]
   },
@@ -2416,22 +2760,26 @@
       {
         "jp": "たいてい朝８時に起きます。",
         "romaji": "Taitei asa hachi-ji ni okimasu.",
-        "en": "I usually wake up at 8 o'clock in the morning."
+        "en": "I usually wake up at 8 o'clock in the morning.",
+        "promptEn": "State that you usually wake up at 8:00 a.m using desire 〜たいてい"
       },
       {
         "jp": "彼はたいてい遅刻します。",
         "romaji": "Kare wa taitei chikoku shimasu.",
-        "en": "He is usually late."
+        "en": "He is usually late.",
+        "promptEn": "State that he is usually late using desire 〜たいてい"
       },
       {
         "jp": "この店の商品はたいてい安いです。",
         "romaji": "Kono mise no shouhin wa taitei yasui desu.",
-        "en": "The items at this store are usually cheap."
+        "en": "The items at this store are usually cheap.",
+        "promptEn": "State that the items at this store are usually inexpensive using desire 〜たいてい"
       },
       {
         "jp": "たいていの人はその映画が好きです。",
         "romaji": "Taitei no hito wa sono eiga ga suki desu.",
-        "en": "Most people like that movie."
+        "en": "Most people like that movie.",
+        "promptEn": "State that most people like that movie using desire 〜たいてい"
       }
     ]
   },
@@ -2444,22 +2792,26 @@
       {
         "jp": "雨だから、傘を持って行きましょう。",
         "romaji": "Ame dakara, kasa wo motte ikimashou.",
-        "en": "Because it's raining, let's bring an umbrella."
+        "en": "Because it's raining, let's bring an umbrella.",
+        "promptEn": "Suggest that you it's raining, so let's take an umbrella using reason 〜だから"
       },
       {
         "jp": "このケーキは有名だから、みんなが食べたいです。",
         "romaji": "Kono keeki wa yuumei dakara, minna ga tabetai desu.",
-        "en": "Because this cake is famous, everyone wants to eat it."
+        "en": "Because this cake is famous, everyone wants to eat it.",
+        "promptEn": "State that this cake is famous, so everyone wants to eat it using reason 〜だから"
       },
       {
         "jp": "彼は病気だから、学校に行けません。",
         "romaji": "Kare wa byouki dakara, gakkou ni ikemasen.",
-        "en": "Because he is sick, he cannot go to school."
+        "en": "Because he is sick, he cannot go to school.",
+        "promptEn": "State that he can't go to school because he's sick using reason 〜だから"
       },
       {
         "jp": "彼女は学生だから、このレストランで割引があります。",
         "romaji": "Kanojo wa gakusei dakara, kono resutoran de waribiki ga arimasu.",
-        "en": "Because she is a student, there is a discount at this restaurant."
+        "en": "Because she is a student, there is a discount at this restaurant.",
+        "promptEn": "State that since she is a student, she gets a discount at this restaurant using reason 〜だから"
       }
     ]
   },
@@ -2472,22 +2824,26 @@
       {
         "jp": "休日には、映画を見たり、友達と遊んだりします。",
         "romaji": "Kyuujitsu ni wa, eiga wo mitari, tomodachi to asondari shimasu.",
-        "en": "On holidays, I do things like watch movies and hang out with friends."
+        "en": "On holidays, I do things like watch movies and hang out with friends.",
+        "promptEn": "State that on your days off, you watch movies and hang out with friends using listing 〜たり～たりします"
       },
       {
         "jp": "彼は歌ったり、踊ったり、ピアノを弾いたりします。",
         "romaji": "Kare wa utattari, odottari, piano wo hikitari shimasu.",
-        "en": "He sings, dances, plays the piano, among other things."
+        "en": "He sings, dances, plays the piano, among other things.",
+        "promptEn": "State that he sings, dances, and plays the piano using listing 〜たり～たりします"
       },
       {
         "jp": "このレストランでは、寿司を食べたり、刺身を食べたりします。",
         "romaji": "Kono resutoran de wa, sushi wo tabetari, sashimi wo tabetari shimasu.",
-        "en": "At this restaurant, you can eat sushi, sashimi, and so on."
+        "en": "At this restaurant, you can eat sushi, sashimi, and so on.",
+        "promptEn": "State that at this restaurant, you can eat sushi or sashimi using listing 〜たり～たりします"
       },
       {
         "jp": "彼女は毎朝、ジョギングしたり、ヨガをしたりします。",
         "romaji": "Kanojo wa maiasa, joggingu shitari, yoga wo shitari shimasu.",
-        "en": "Every morning, she does things like jogging and yoga."
+        "en": "Every morning, she does things like jogging and yoga.",
+        "promptEn": "State that she goes jogging or does yoga every morning using listing 〜たり～たりします"
       }
     ]
   },
@@ -2500,22 +2856,26 @@
       {
         "jp": "だれがその本を買いましたか。",
         "romaji": "Dare ga sono hon o kaimashita ka.",
-        "en": "Who bought that book?"
+        "en": "Who bought that book?",
+        "promptEn": "Ask whether who bought that book using 〜だれ"
       },
       {
         "jp": "だれを待っていますか。",
         "romaji": "Dare o matteimasu ka.",
-        "en": "Whom are you waiting for?"
+        "en": "Whom are you waiting for?",
+        "promptEn": "Ask whether who are you waiting for using 〜だれ"
       },
       {
         "jp": "だれがそのリンゴを食べましたか。",
         "romaji": "Dare ga sono ringo o tabemashita ka.",
-        "en": "Who ate that apple?"
+        "en": "Who ate that apple?",
+        "promptEn": "Ask whether who ate that apple using 〜だれ"
       },
       {
         "jp": "だれが鍵を持っていますか。",
         "romaji": "Dare ga kagi o motteimasu ka.",
-        "en": "Who has the key?"
+        "en": "Who has the key?",
+        "promptEn": "Ask whether who has the key using 〜だれ"
       }
     ]
   },
@@ -2528,22 +2888,26 @@
       {
         "jp": "だれかがドアをノックしました。",
         "romaji": "Dareka ga doa wo nokku shimashita.",
-        "en": "Someone knocked on the door."
+        "en": "Someone knocked on the door.",
+        "promptEn": "State that someone knocked on the door using 〜だれか〜"
       },
       {
         "jp": "だれかが私の傘を盗みました。",
         "romaji": "Dareka ga watashi no kasa wo nusumimashita.",
-        "en": "Someone stole my umbrella."
+        "en": "Someone stole my umbrella.",
+        "promptEn": "State that someone stole your umbrella using 〜だれか〜"
       },
       {
         "jp": "だれか助けてください。",
         "romaji": "Dareka tasukete kudasai.",
-        "en": "Someone, please help."
+        "en": "Someone, please help.",
+        "promptEn": "Politely ask someone to help you using 〜だれか〜"
       },
       {
         "jp": "だれかのせいで、電気がきれました。",
         "romaji": "Dareka no sei de, denki ga kiremashita.",
-        "en": "Because of someone, the electricity went out."
+        "en": "Because of someone, the electricity went out.",
+        "promptEn": "State that someone caused the power to go out using 〜だれか〜"
       }
     ]
   },
@@ -2556,22 +2920,26 @@
       {
         "jp": "だれでもこのゲームができます。",
         "romaji": "Dare demo kono geemu ga dekimasu.",
-        "en": "Anyone can play this game."
+        "en": "Anyone can play this game.",
+        "promptEn": "State that anyone can play this game using contrast 〜だれでも"
       },
       {
         "jp": "だれでも疲れることがあります。",
         "romaji": "Dare demo tsukareru koto ga arimasu.",
-        "en": "Everyone gets tired sometimes."
+        "en": "Everyone gets tired sometimes.",
+        "promptEn": "State that everyone gets tired sometimes using contrast 〜だれでも"
       },
       {
         "jp": "だれでも無料でこのイベントに参加できます。",
         "romaji": "Dare demo muryou de kono ibento ni sanka dekimasu.",
-        "en": "Anyone can participate in this event for free."
+        "en": "Anyone can participate in this event for free.",
+        "promptEn": "State that anyone can participate in this event for free using contrast 〜だれでも"
       },
       {
         "jp": "だれでもこの町の観光スポットを楽しむことができます。",
         "romaji": "Dare demo kono machi no kankou supotto wo tanoshimu koto ga dekimasu.",
-        "en": "No matter who you are, you can enjoy the sightseeing spots in this town."
+        "en": "No matter who you are, you can enjoy the sightseeing spots in this town.",
+        "promptEn": "State that anyone can enjoy the tourist attractions in this town using contrast 〜だれでも"
       }
     ]
   },
@@ -2584,22 +2952,26 @@
       {
         "jp": "だれも知らないです。",
         "romaji": "Daremo shiranai desu.",
-        "en": "Nobody knows."
+        "en": "Nobody knows.",
+        "promptEn": "State that no one knows using 〜だれも～ないです"
       },
       {
         "jp": "だれも来ないです。",
         "romaji": "Daremo konai desu.",
-        "en": "Nobody is coming."
+        "en": "Nobody is coming.",
+        "promptEn": "State that no one is coming using 〜だれも～ないです"
       },
       {
         "jp": "彼女はだれも好きじゃないです。",
         "romaji": "Kanojo wa daremo suki ja nai desu.",
-        "en": "She doesn't like anyone."
+        "en": "She doesn't like anyone.",
+        "promptEn": "State that she doesn't like anyone using 〜だれも～ないです"
       },
       {
         "jp": "ここにはだれもいないです。",
         "romaji": "Koko ni wa daremo inai desu.",
-        "en": "There is nobody here."
+        "en": "There is nobody here.",
+        "promptEn": "State that there's no one here using 〜だれも～ないです"
       }
     ]
   },
@@ -2612,22 +2984,26 @@
       {
         "jp": "だれも秘密を知りません。",
         "romaji": "Daremo himitsu wo shirimasen.",
-        "en": "No one knows the secret."
+        "en": "No one knows the secret.",
+        "promptEn": "State that no one knows the secret using 〜だれも～ません"
       },
       {
         "jp": "だれもその質問に答えませんでした。",
         "romaji": "Daremo sono shitsumon ni kotaemasen deshita.",
-        "en": "Nobody answered that question."
+        "en": "Nobody answered that question.",
+        "promptEn": "State that no one answered that question using 〜だれも～ません"
       },
       {
         "jp": "だれも彼を助けてあげません。",
         "romaji": "Daremo kare wo tasukete agemasen.",
-        "en": "Nobody will help him."
+        "en": "Nobody will help him.",
+        "promptEn": "State that no one helps him using 〜だれも～ません"
       },
       {
         "jp": "だれもその映画を見たがりません。",
         "romaji": "Daremo sono eiga wo mitagarimasen.",
-        "en": "No one wants to watch that movie."
+        "en": "No one wants to watch that movie.",
+        "promptEn": "State that no one wants to watch that movie using 〜だれも～ません"
       }
     ]
   },
@@ -2640,22 +3016,26 @@
       {
         "jp": "雨が降っているので、どうしますか？",
         "romaji": "Ame ga futte iru node, dou shimasu ka?",
-        "en": "It's raining, so what will you do?"
+        "en": "It's raining, so what will you do?",
+        "promptEn": "Ask whether it's raining. What should you do using 〜どうしますか"
       },
       {
         "jp": "この問題について、どうしますか？",
         "romaji": "Kono mondai ni tsuite, dou shimasu ka?",
-        "en": "What are you going to do about this issue?"
+        "en": "What are you going to do about this issue?",
+        "promptEn": "Ask whether how would you approach this problem using 〜どうしますか"
       },
       {
         "jp": "彼が来なかったら、どうしますか？",
         "romaji": "Kare ga konakattara, dou shimasu ka?",
-        "en": "If he doesn't come, what will you do?"
+        "en": "If he doesn't come, what will you do?",
+        "promptEn": "Ask whether what will you do if he doesn't come using 〜どうしますか"
       },
       {
         "jp": "進路を決める時、どうしますか？",
         "romaji": "Shinro wo kimeru toki, dou shimasu ka?",
-        "en": "What will you do when choosing your career path?"
+        "en": "What will you do when choosing your career path?",
+        "promptEn": "Ask whether what do you do when deciding on a career path using 〜どうしますか"
       }
     ]
   },
@@ -2668,22 +3048,26 @@
       {
         "jp": "この映画はどうですか？",
         "romaji": "Kono eiga wa dou desu ka?",
-        "en": "How about this movie? / What do you think of this movie?"
+        "en": "How about this movie? / What do you think of this movie?",
+        "promptEn": "Suggest that you what do you think of this movie? using suggestion 〜どうですか"
       },
       {
         "jp": "晩ご飯に寿司を食べるのはどうですか？",
         "romaji": "Bangohan ni sushi wo taberu no wa dou desu ka?",
-        "en": "How about eating sushi for dinner?"
+        "en": "How about eating sushi for dinner?",
+        "promptEn": "Suggest that you how about having sushi for dinner? using suggestion 〜どうですか"
       },
       {
         "jp": "この部屋は広いと思いますが、どうですか？",
         "romaji": "Kono heya wa hiroi to omoimasu ga, dou desu ka?",
-        "en": "I think this room is spacious, what do you think?"
+        "en": "I think this room is spacious, what do you think?",
+        "promptEn": "Suggest that you you think this room is spacious—what do you think? using suggestion 〜どうですか"
       },
       {
         "jp": "新しい会社の要件が厳しいですね。鈴木さん、転職するならどうですか？",
         "romaji": "Atarashii kaisha no youken ga kibishii desu ne. Suzuki-san, tenshoku suru nara dou desu ka?",
-        "en": "The new company's requirements are strict, aren't they? Suzuki-san, how about changing jobs if that's the case?"
+        "en": "The new company's requirements are strict, aren't they? Suzuki-san, how about changing jobs if that's the case?",
+        "promptEn": "Suggest that you the new company's requirements are pretty strict, aren't they? Mr. Suzuki, how about changing jobs? using suggestion 〜どうですか"
       }
     ]
   },
@@ -2696,22 +3080,26 @@
       {
         "jp": "どうやってお寿司を作りますか？",
         "romaji": "Douyatte o-sushi wo tsukurimasu ka?",
-        "en": "How do you make sushi?"
+        "en": "How do you make sushi?",
+        "promptEn": "Ask whether how do you make sushi using 〜どうやって"
       },
       {
         "jp": "どうやって日本語を勉強しましたか？",
         "romaji": "Douyatte nihongo wo benkyou shimashita ka?",
-        "en": "How did you study Japanese?"
+        "en": "How did you study Japanese?",
+        "promptEn": "Ask whether how did you study Japanese using 〜どうやって"
       },
       {
         "jp": "どうやってこの問題を解決しますか？",
         "romaji": "Douyatte kono mondai wo kaiketsu shimasu ka?",
-        "en": "How do you solve this problem?"
+        "en": "How do you solve this problem?",
+        "promptEn": "Ask whether how would you solve this problem using 〜どうやって"
       },
       {
         "jp": "どうやって駅に行きますか？",
         "romaji": "Douyatte eki ni ikimasu ka?",
-        "en": "How do you go to the station?"
+        "en": "How do you go to the station?",
+        "promptEn": "Ask whether how do you get to the station using 〜どうやって"
       }
     ]
   },
@@ -2724,22 +3112,26 @@
       {
         "jp": "「ありがとう」は英語でどう言いますか。",
         "romaji": "「Arigatou」wa eigo de dou iimasu ka.",
-        "en": "How do you say 'thank you' in English?"
+        "en": "How do you say 'thank you' in English?",
+        "promptEn": "Ask whether how do you say \"Thank you\" in English using 〜どう言いますか"
       },
       {
         "jp": "この言葉を日本語でどう言いますか。",
         "romaji": "Kono kotoba wo nihongo de dou iimasu ka.",
-        "en": "How do you say this word in Japanese?"
+        "en": "How do you say this word in Japanese?",
+        "promptEn": "Ask whether how do you say this in Japanese using 〜どう言いますか"
       },
       {
         "jp": "「すみません」はフランス語でどう言いますか。",
         "romaji": "「Sumimasen」wa furansugo de dou iimasu ka.",
-        "en": "How do you say 'excuse me' in French?"
+        "en": "How do you say 'excuse me' in French?",
+        "promptEn": "Ask whether how do you say \"Excuse you\" in French using 〜どう言いますか"
       },
       {
         "jp": "その表現をスペイン語でどう言いますか。",
         "romaji": "Sono hyougen wo supeingo de dou iimasu ka.",
-        "en": "How do you say that expression in Spanish?"
+        "en": "How do you say that expression in Spanish?",
+        "promptEn": "Ask whether how would you say that in Spanish using 〜どう言いますか"
       }
     ]
   },
@@ -2752,22 +3144,26 @@
       {
         "jp": "公園で遊ぶとき、帽子をかぶりましょう。",
         "romaji": "Kouen de asobu toki, boushi wo kaburimashou.",
-        "en": "When playing in the park, let's wear a hat."
+        "en": "When playing in the park, let's wear a hat.",
+        "promptEn": "Suggest that you wear hats when you play in the park using 〜とき"
       },
       {
         "jp": "このりんごが赤いとき、食べごろです。",
         "romaji": "Kono ringo ga akai toki, tabegoro desu.",
-        "en": "This apple is ready to eat when it is red."
+        "en": "This apple is ready to eat when it is red.",
+        "promptEn": "Ask whether when this apple is red, it's ready to eat using 〜とき"
       },
       {
         "jp": "私が勉強するとき、家族は静かにしてくれます。",
         "romaji": "Watashi ga benkyou suru toki, kazoku wa shizuka ni shite kuremasu.",
-        "en": "When I am studying, my family keeps quiet for me."
+        "en": "When I am studying, my family keeps quiet for me.",
+        "promptEn": "Politely ask someone to when you study, your family keeps it quiet using 〜とき"
       },
       {
         "jp": "子供のとき、よくおばあちゃんの家に遊びに行きました。",
         "romaji": "Kodomo no toki, yoku obaachan no ie ni asobi ni ikimashita.",
-        "en": "When I was a child, I often went to play at my grandmother's house."
+        "en": "When I was a child, I often went to play at my grandmother's house.",
+        "promptEn": "Ask whether when you was a child, you often went to your grandmother's house to play using 〜とき"
       }
     ]
   },
@@ -2780,22 +3176,26 @@
       {
         "jp": "彼はときどきケーキを作ります。",
         "romaji": "Kare wa tokidoki keeki o tsukurimasu.",
-        "en": "He sometimes makes cakes."
+        "en": "He sometimes makes cakes.",
+        "promptEn": "State that he bakes cakes from time to time using 〜ときどき"
       },
       {
         "jp": "ときどき雨が降るので、傘を持って行ったほうがいいです。",
         "romaji": "Tokidoki ame ga furu node, kasa o motte itta hou ga ii desu.",
-        "en": "It occasionally rains, so it's better to bring an umbrella."
+        "en": "It occasionally rains, so it's better to bring an umbrella.",
+        "promptEn": "State that it rains from time to time, so you should bring an umbrella using 〜ときどき"
       },
       {
         "jp": "私はときどきこの店で買い物をします。",
         "romaji": "Watashi wa tokidoki kono mise de kaimono o shimasu.",
-        "en": "I shop at this store now and then."
+        "en": "I shop at this store now and then.",
+        "promptEn": "State that you shop at this store from time to time using 〜ときどき"
       },
       {
         "jp": "彼女はときどき遅刻します。",
         "romaji": "Kanojo wa tokidoki chikoku shimasu.",
-        "en": "She is sometimes late."
+        "en": "She is sometimes late.",
+        "promptEn": "State that she is sometimes late using 〜ときどき"
       }
     ]
   },
@@ -2808,22 +3208,26 @@
       {
         "jp": "駅はどこですか？",
         "romaji": "Eki wa doko desu ka?",
-        "en": "Where is the station?"
+        "en": "Where is the station?",
+        "promptEn": "Ask whether where is the station using 〜どこ"
       },
       {
         "jp": "どこで映画を見ましたか？",
         "romaji": "Doko de eiga wo mimashita ka?",
-        "en": "Where did you watch the movie?"
+        "en": "Where did you watch the movie?",
+        "promptEn": "Ask whether where did you watch the movie using 〜どこ"
       },
       {
         "jp": "どこに住んでいますか？",
         "romaji": "Doko ni sunde imasu ka?",
-        "en": "Where do you live?"
+        "en": "Where do you live?",
+        "promptEn": "Ask whether where do you live using 〜どこ"
       },
       {
         "jp": "どこへ行きたいですか？",
         "romaji": "Doko e ikitai desu ka?",
-        "en": "Where do you want to go?"
+        "en": "Where do you want to go?",
+        "promptEn": "Ask whether where would you like to go using 〜どこ"
       }
     ]
   },
@@ -2836,22 +3240,26 @@
       {
         "jp": "どこかで財布をなくしました。",
         "romaji": "Dokoka de saifu wo nakushimashita.",
-        "en": "I lost my wallet somewhere."
+        "en": "I lost my wallet somewhere.",
+        "promptEn": "State that you lost your wallet somewhere using desire 〜どこか"
       },
       {
         "jp": "今日はどこかに行きたいです。",
         "romaji": "Kyou wa dokoka ni ikitai desu.",
-        "en": "I want to go somewhere today."
+        "en": "I want to go somewhere today.",
+        "promptEn": "State that you want to go somewhere today using desire 〜どこか"
       },
       {
         "jp": "どこか安いレストランがありますか？",
         "romaji": "Dokoka yasui resutoran ga arimasu ka?",
-        "en": "Is there a cheap restaurant somewhere?"
+        "en": "Is there a cheap restaurant somewhere?",
+        "promptEn": "Ask whether is there a cheap restaurant around here using desire 〜どこか"
       },
       {
         "jp": "どこか静かな場所で勉強したい。",
         "romaji": "Dokoka shizuka na basho de benkyou shitai.",
-        "en": "I want to study in a quiet place somewhere."
+        "en": "I want to study in a quiet place somewhere.",
+        "promptEn": "State that you want to study somewhere quiet using desire 〜どこか"
       }
     ]
   },
@@ -2864,22 +3272,26 @@
       {
         "jp": "どこでも好きな場所で勉強できます。",
         "romaji": "Dokodemo sukina basho de benkyou dekimasu.",
-        "en": "You can study anywhere you like."
+        "en": "You can study anywhere you like.",
+        "promptEn": "State that you can study anywhere you like using contrast 〜どこでも"
       },
       {
         "jp": "このノートパソコンは便利なので、どこでもインターネットが使えます。",
         "romaji": "Kono nootopasokon wa benri nano de, dokodemo intaanetto ga tsukaemasu.",
-        "en": "This laptop is convenient, so you can use the internet anywhere."
+        "en": "This laptop is convenient, so you can use the internet anywhere.",
+        "promptEn": "State that this laptop is convenient because you can use the Internet anywhere using contrast 〜どこでも"
       },
       {
         "jp": "彼はどこでも寝ることができます。",
         "romaji": "Kare wa dokodemo neru koto ga dekimasu.",
-        "en": "He can sleep anywhere."
+        "en": "He can sleep anywhere.",
+        "promptEn": "State that he can sleep anywhere using contrast 〜どこでも"
       },
       {
         "jp": "彼女はどこでも歌うのが大好きです。",
         "romaji": "Kanojo wa dokodemo utau no ga daisuki desu.",
-        "en": "She loves singing anywhere."
+        "en": "She loves singing anywhere.",
+        "promptEn": "State that she loves to sing anywhere using contrast 〜どこでも"
       }
     ]
   },
@@ -2892,22 +3304,26 @@
       {
         "jp": "どこにも傘が売ってないです。",
         "romaji": "Doko ni mo kasa ga uttenai desu.",
-        "en": "Umbrellas are not sold anywhere."
+        "en": "Umbrellas are not sold anywhere.",
+        "promptEn": "State that there aren't any umbrellas for sale anywhere using 〜どこにも+Verb+ないです"
       },
       {
         "jp": "彼はどこにも見つけられないです。",
         "romaji": "Kare wa doko ni mo mitsukerarenai desu.",
-        "en": "He cannot be found anywhere."
+        "en": "He cannot be found anywhere.",
+        "promptEn": "State that you can't find him anywhere using 〜どこにも+Verb+ないです"
       },
       {
         "jp": "どこにも勉強できる場所がないです。",
         "romaji": "Doko ni mo benkyou dekiru basho ga nai desu.",
-        "en": "There is no place to study anywhere."
+        "en": "There is no place to study anywhere.",
+        "promptEn": "State that there's nowhere to study using 〜どこにも+Verb+ないです"
       },
       {
         "jp": "どこにも美味しいビーガン料理がないです。",
         "romaji": "Doko ni mo oishii bi-gan ryouri ga nai desu.",
-        "en": "There are no delicious vegan dishes anywhere."
+        "en": "There are no delicious vegan dishes anywhere.",
+        "promptEn": "State that there's no delicious vegan food anywhere using 〜どこにも+Verb+ないです"
       }
     ]
   },
@@ -2920,22 +3336,26 @@
       {
         "jp": "どこにもあの猫がいません。",
         "romaji": "Doko ni mo ano neko ga imasen.",
-        "en": "The cat is not anywhere."
+        "en": "The cat is not anywhere.",
+        "promptEn": "State that that cat isn't anywhere to be found using 〜どこにも+Verb+ません"
       },
       {
         "jp": "どこにもお金を置いていません。",
         "romaji": "Doko ni mo okane wo oiteimasen.",
-        "en": "I didn't put the money anywhere."
+        "en": "I didn't put the money anywhere.",
+        "promptEn": "State that you haven't left any money anywhere using 〜どこにも+Verb+ません"
       },
       {
         "jp": "この町にはどこにも美味しいラーメン屋がありません。",
         "romaji": "Kono machi ni wa doko ni mo oishii raamenya ga arimasen.",
-        "en": "There are no delicious ramen shops anywhere in this town."
+        "en": "There are no delicious ramen shops anywhere in this town.",
+        "promptEn": "State that there isn't a single good ramen shop anywhere in this town using 〜どこにも+Verb+ません"
       },
       {
         "jp": "どこにも彼女の名前が書いていません。",
         "romaji": "Doko ni mo kanojo no namae ga kaiteimasen.",
-        "en": "Her name is not written anywhere."
+        "en": "Her name is not written anywhere.",
+        "promptEn": "State that her name isn't written anywhere using 〜どこにも+Verb+ません"
       }
     ]
   },
@@ -2948,22 +3368,26 @@
       {
         "jp": "今週末どこへも行かないです。",
         "romaji": "Konshuumatsu doko e mo ikanai desu.",
-        "en": "I'm not going anywhere this weekend."
+        "en": "I'm not going anywhere this weekend.",
+        "promptEn": "State that you are not going anywhere this weekend using 〜どこへもVerbないです"
       },
       {
         "jp": "彼女はどこへも買い物に行きませんでした。",
         "romaji": "Kanojo wa doko e mo kaimono ni ikimasen deshita.",
-        "en": "She didn't go shopping anywhere."
+        "en": "She didn't go shopping anywhere.",
+        "promptEn": "State that she didn't go shopping anywhere using 〜どこへもVerbないです"
       },
       {
         "jp": "スーパーはどこへも売らないです。",
         "romaji": "Suupaa wa doko e mo uranai desu.",
-        "en": "It's not sold at any supermarket."
+        "en": "It's not sold at any supermarket.",
+        "promptEn": "State that supermarkets don't sell it anywhere using 〜どこへもVerbないです"
       },
       {
         "jp": "私はどこへも行く予定がないです。",
         "romaji": "Watashi wa doko e mo iku yotei ga nai desu.",
-        "en": "I have no plans to go anywhere."
+        "en": "I have no plans to go anywhere.",
+        "promptEn": "State that you don't plan on going anywhere using 〜どこへもVerbないです"
       }
     ]
   },
@@ -2976,22 +3400,26 @@
       {
         "jp": "今日はどこへも行きません。",
         "romaji": "Kyou wa doko e mo ikimasen.",
-        "en": "I won't go anywhere today."
+        "en": "I won't go anywhere today.",
+        "promptEn": "State that you are not going anywhere today using 〜どこへもVerbません"
       },
       {
         "jp": "彼はどこへも走りませんでした。",
         "romaji": "Kare wa doko e mo hashirimasen deshita.",
-        "en": "He didn't run anywhere."
+        "en": "He didn't run anywhere.",
+        "promptEn": "State that he didn't run anywhere using 〜どこへもVerbません"
       },
       {
         "jp": "どこへも買い物に行きませんでした。",
         "romaji": "Doko e mo kaimono ni ikimasen deshita.",
-        "en": "I didn't go shopping anywhere."
+        "en": "I didn't go shopping anywhere.",
+        "promptEn": "State that you didn't go shopping anywhere using 〜どこへもVerbません"
       },
       {
         "jp": "彼女はどこへも連れて行かせません。",
         "romaji": "Kanojo wa doko e mo tsurete ikasemasen.",
-        "en": "She won't take me anywhere."
+        "en": "She won't take me anywhere.",
+        "promptEn": "State that she won't let anyone take her anywhere using 〜どこへもVerbません"
       }
     ]
   },
@@ -3004,22 +3432,26 @@
       {
         "jp": "どこもうちわがないです。",
         "romaji": "Doko mo uchiwa ga nai desu.",
-        "en": "I can't find fans anywhere."
+        "en": "I can't find fans anywhere.",
+        "promptEn": "State that there are no fans anywhere using 〜どこもVerbないです"
       },
       {
         "jp": "この町ではどこも美味しいラーメンがないです。",
         "romaji": "Kono machi de wa doko mo oishii raamen ga nai desu.",
-        "en": "There are no delicious ramen shops anywhere in this town."
+        "en": "There are no delicious ramen shops anywhere in this town.",
+        "promptEn": "State that there isn't any good ramen anywhere in this town using 〜どこもVerbないです"
       },
       {
         "jp": "どこも駐車場がないです。",
         "romaji": "Doko mo chuushajou ga nai desu.",
-        "en": "There is no parking anywhere."
+        "en": "There is no parking anywhere.",
+        "promptEn": "State that there's no parking anywhere using 〜どこもVerbないです"
       },
       {
         "jp": "どこも席がないです。",
         "romaji": "Doko mo seki ga nai desu.",
-        "en": "There are no seats available anywhere."
+        "en": "There are no seats available anywhere.",
+        "promptEn": "State that there are no seats anywhere using 〜どこもVerbないです"
       }
     ]
   },
@@ -3032,22 +3464,26 @@
       {
         "jp": "どこも静かじゃありません。",
         "romaji": "Doko mo shizuka ja arimasen.",
-        "en": "Nowhere is quiet."
+        "en": "Nowhere is quiet.",
+        "promptEn": "State that it's not quiet anywhere using 〜どこもVerbません"
       },
       {
         "jp": "どこもその本を売っていません。",
         "romaji": "Doko mo sono hon wo utte imasen.",
-        "en": "Nowhere sells that book."
+        "en": "Nowhere sells that book.",
+        "promptEn": "State that that book isn't sold anywhere using 〜どこもVerbません"
       },
       {
         "jp": "この地域では、どこもインターネットに接続できません。",
         "romaji": "Kono chiiki de wa, doko mo intaanetto ni setsuzoku dekimasen.",
-        "en": "In this area, nowhere can connect to the internet."
+        "en": "In this area, nowhere can connect to the internet.",
+        "promptEn": "State that in this area, there is no internet connection anywhere using 〜どこもVerbません"
       },
       {
         "jp": "どこも彼を知りません。",
         "romaji": "Doko mo kare wo shirimasen.",
-        "en": "No place knows him."
+        "en": "No place knows him.",
+        "promptEn": "State that no one knows him using 〜どこもVerbません"
       }
     ]
   },
@@ -3060,22 +3496,26 @@
       {
         "jp": "この二つのリンゴ、どちらが美味しいですか？",
         "romaji": "Kono futatsu no ringo, dochira ga oishii desu ka?",
-        "en": "Which of these two apples is delicious?"
+        "en": "Which of these two apples is delicious?",
+        "promptEn": "Ask whether which of these two apples tastes better using 〜どちら"
       },
       {
         "jp": "どちらのドレスを着たいですか？",
         "romaji": "Dochira no doresu wo kitai desu ka?",
-        "en": "Which dress would you like to wear?"
+        "en": "Which dress would you like to wear?",
+        "promptEn": "Ask whether which dress would you like to wear using 〜どちら"
       },
       {
         "jp": "この二つの町、どちらに行きたいですか？",
         "romaji": "Kono futatsu no machi, dochira ni ikitai desu ka?",
-        "en": "Which of these two towns do you want to go to?"
+        "en": "Which of these two towns do you want to go to?",
+        "promptEn": "Ask whether which of these two towns would you like to visit using 〜どちら"
       },
       {
         "jp": "どちらの映画が面白いと思いますか？",
         "romaji": "Dochira no eiga ga omoshiroi to omoimasu ka?",
-        "en": "Which movie do you think is interesting?"
+        "en": "Which movie do you think is interesting?",
+        "promptEn": "Ask whether which movie do you think is more interesting using 〜どちら"
       }
     ]
   },
@@ -3088,22 +3528,26 @@
       {
         "jp": "すみません、どなたが山田さんですか？",
         "romaji": "Sumimasen, donata ga Yamada-san desu ka?",
-        "en": "Excuse me, who is Mr. Yamada?"
+        "en": "Excuse me, who is Mr. Yamada?",
+        "promptEn": "Ask whether excuse you, which one of you is Mr. Yamada using 〜どなた"
       },
       {
         "jp": "どなたも知っている有名な俳優です。",
         "romaji": "Donata mo shitte iru yuumei na haiyuu desu.",
-        "en": "He is a famous actor whom everyone knows."
+        "en": "He is a famous actor whom everyone knows.",
+        "promptEn": "State that he is a famous actor whom everyone knows using 〜どなた"
       },
       {
         "jp": "明日のパーティーにはどなたが来ますか？",
         "romaji": "Ashita no paatii ni wa donata ga kimasu ka?",
-        "en": "Who is coming to the party tomorrow?"
+        "en": "Who is coming to the party tomorrow?",
+        "promptEn": "Ask whether who is coming to tomorrow's party using 〜どなた"
       },
       {
         "jp": "どなたか手伝っていただけますか？",
         "romaji": "Donata ka tetsudatte itadakemasu ka?",
-        "en": "Could someone please help me?"
+        "en": "Could someone please help me?",
+        "promptEn": "Ask whether could someone please help you with this using 〜どなた"
       }
     ]
   },
@@ -3116,22 +3560,26 @@
       {
         "jp": "どの本が一番面白いですか。",
         "romaji": "Dono hon ga ichiban omoshiroi desu ka?",
-        "en": "Which book is the most interesting?"
+        "en": "Which book is the most interesting?",
+        "promptEn": "Ask whether which book is the most interesting using 〜どのNoun"
       },
       {
         "jp": "どの服を着たいですか。",
         "romaji": "Dono fuku wo kitai desu ka?",
-        "en": "Which clothes do you want to wear?"
+        "en": "Which clothes do you want to wear?",
+        "promptEn": "Ask whether which outfit would you like to wear using 〜どのNoun"
       },
       {
         "jp": "どの色が好きですか。",
         "romaji": "Dono iro ga suki desu ka?",
-        "en": "Which color do you like?"
+        "en": "Which color do you like?",
+        "promptEn": "Ask whether which color do you like using 〜どのNoun"
       },
       {
         "jp": "どのレストランに行きたいですか。",
         "romaji": "Dono resutoran ni ikitai desu ka?",
-        "en": "Which restaurant do you want to go to?"
+        "en": "Which restaurant do you want to go to?",
+        "promptEn": "Ask whether which restaurant would you like to go to using 〜どのNoun"
       }
     ]
   },
@@ -3144,22 +3592,26 @@
       {
         "jp": "どれでもいいですか？",
         "romaji": "Dore demo ii desu ka?",
-        "en": "Is any choice okay?"
+        "en": "Is any choice okay?",
+        "promptEn": "Ask whether is any of these okay using contrast 〜どれでも"
       },
       {
         "jp": "どれでも選んでください。",
         "romaji": "Dore demo erande kudasai.",
-        "en": "Please choose whichever you like."
+        "en": "Please choose whichever you like.",
+        "promptEn": "Politely ask someone to choose any one using contrast 〜どれでも"
       },
       {
         "jp": "どれでもおいしいです。",
         "romaji": "Dore demo oishii desu.",
-        "en": "All of them are delicious."
+        "en": "All of them are delicious.",
+        "promptEn": "State that they're all delicious using contrast 〜どれでも"
       },
       {
         "jp": "この中でどれでも好きなものを持って行ってください。",
         "romaji": "Kono naka de dore demo suki na mono wo motte itte kudasai.",
-        "en": "Please take whichever you like from these."
+        "en": "Please take whichever you like from these.",
+        "promptEn": "Politely ask someone to take whichever one you like from these using contrast 〜どれでも"
       }
     ]
   },
@@ -3172,22 +3624,26 @@
       {
         "jp": "どんな音楽が好きですか？",
         "romaji": "Donna ongaku ga suki desu ka?",
-        "en": "What kind of music do you like?"
+        "en": "What kind of music do you like?",
+        "promptEn": "Ask whether what kind of music do you like using 〜どんなNoun"
       },
       {
         "jp": "彼女はどんな映画が好きだと思う？",
         "romaji": "Kanojo wa donna eiga ga suki da to omou?",
-        "en": "What kind of movies do you think she likes?"
+        "en": "What kind of movies do you think she likes?",
+        "promptEn": "Ask whether what kind of movies do you think she likes using 〜どんなNoun"
       },
       {
         "jp": "どんな本が一番面白いですか？",
         "romaji": "Donna hon ga ichiban omoshiroi desu ka?",
-        "en": "What kind of books are the most interesting?"
+        "en": "What kind of books are the most interesting?",
+        "promptEn": "Ask whether which book is the most interesting using 〜どんなNoun"
       },
       {
         "jp": "どんな料理が得意ですか？",
         "romaji": "Donna ryouri ga tokui desu ka?",
-        "en": "What kind of dishes are you good at making?"
+        "en": "What kind of dishes are you good at making?",
+        "promptEn": "Ask whether what kind of cooking are you good at using 〜どんなNoun"
       }
     ]
   },
@@ -3200,22 +3656,26 @@
       {
         "jp": "これはなにですか。",
         "romaji": "Kore wa nani desu ka?",
-        "en": "What is this?"
+        "en": "What is this?",
+        "promptEn": "Ask whether what is this using 〜なに"
       },
       {
         "jp": "あの人はなにをしているのですか？",
         "romaji": "Ano hito wa nani wo shite iru no desu ka?",
-        "en": "What is that person doing?"
+        "en": "What is that person doing?",
+        "promptEn": "Ask whether what is that person doing using 〜なに"
       },
       {
         "jp": "なにが好きですか？",
         "romaji": "Nani ga suki desu ka?",
-        "en": "What do you like?"
+        "en": "What do you like?",
+        "promptEn": "Ask whether what do you like using 〜なに"
       },
       {
         "jp": "今日の天気はなにですか？",
         "romaji": "Kyou no tenki wa nani desu ka?",
-        "en": "What is today's weather?"
+        "en": "What is today's weather?",
+        "promptEn": "Ask whether what's the weather like today using 〜なに"
       }
     ]
   },
@@ -3228,22 +3688,26 @@
       {
         "jp": "なにか飲み物を持ってきてください。",
         "romaji": "Nanika nomimono wo motte kite kudasai.",
-        "en": "Please bring some kind of drink."
+        "en": "Please bring some kind of drink.",
+        "promptEn": "Politely ask someone to bring you a drink using 〜なにか"
       },
       {
         "jp": "なにか質問があれば、遠慮なく聞いてください。",
         "romaji": "Nanika shitsumon ga areba, enryo naku kiite kudasai.",
-        "en": "If you have any questions, please feel free to ask."
+        "en": "If you have any questions, please feel free to ask.",
+        "promptEn": "Politely ask someone to if you have any questions, please feel free to ask using 〜なにか"
       },
       {
         "jp": "彼女はなにかプレゼントを持っている。",
         "romaji": "Kanojo wa nanika purezento wo motte iru.",
-        "en": "She has some kind of present."
+        "en": "She has some kind of present.",
+        "promptEn": "State that she has a present using 〜なにか"
       },
       {
         "jp": "なにか助けが必要なら、言ってください。",
         "romaji": "Nanika tasuke ga hitsuyou nara, itte kudasai.",
-        "en": "If you need any help, please let me know."
+        "en": "If you need any help, please let me know.",
+        "promptEn": "Politely ask someone to if you need any help, please let you know using 〜なにか"
       }
     ]
   },
@@ -3256,22 +3720,26 @@
       {
         "jp": "彼はなにも言わなかったです。",
         "romaji": "Kare wa nani mo iwanakatta desu.",
-        "en": "He didn't say anything."
+        "en": "He didn't say anything.",
+        "promptEn": "State that he didn't say anything using 〜なにも～ないです"
       },
       {
         "jp": "私はなにも食べないです。",
         "romaji": "Watashi wa nani mo tabenai desu.",
-        "en": "I don't eat anything."
+        "en": "I don't eat anything.",
+        "promptEn": "State that you don't eat anything using 〜なにも～ないです"
       },
       {
         "jp": "彼女はなにも持っていないです。",
         "romaji": "Kanojo wa nani mo motte inai desu.",
-        "en": "She doesn't have anything."
+        "en": "She doesn't have anything.",
+        "promptEn": "State that she doesn't have anything using 〜なにも～ないです"
       },
       {
         "jp": "この箱にはなにも入っていないです。",
         "romaji": "Kono hako ni wa nani mo haitte inai desu.",
-        "en": "There is nothing in this box."
+        "en": "There is nothing in this box.",
+        "promptEn": "State that there is nothing in this box using 〜なにも～ないです"
       }
     ]
   },
@@ -3284,22 +3752,26 @@
       {
         "jp": "昨日はなにも食べませんでした。",
         "romaji": "Kinou wa nanimo tabemasen deshita.",
-        "en": "I didn't eat anything yesterday."
+        "en": "I didn't eat anything yesterday.",
+        "promptEn": "State that you didn't eat anything yesterday using 〜なにも～ません"
       },
       {
         "jp": "彼はなにも話しません。",
         "romaji": "Kare wa nanimo hanashimasen.",
-        "en": "He doesn't say anything."
+        "en": "He doesn't say anything.",
+        "promptEn": "State that he doesn't say anything using 〜なにも～ません"
       },
       {
         "jp": "この部屋ではなにも見えません。",
         "romaji": "Kono heya de wa nanimo miemasen.",
-        "en": "I cannot see anything in this room."
+        "en": "I cannot see anything in this room.",
+        "promptEn": "State that you can't see anything in this room using 〜なにも～ません"
       },
       {
         "jp": "彼女はなにも買いませんでした。",
         "romaji": "Kanojo wa nanimo kaimasen deshita.",
-        "en": "She didn't buy anything."
+        "en": "She didn't buy anything.",
+        "promptEn": "State that she didn't buy anything using 〜なにも～ません"
       }
     ]
   },
@@ -3312,22 +3784,26 @@
       {
         "jp": "あなたはなん歳ですか？",
         "romaji": "Anata wa nan-sai desu ka?",
-        "en": "How old are you?"
+        "en": "How old are you?",
+        "promptEn": "Ask whether how old are you using 〜なん"
       },
       {
         "jp": "これはなんですか？",
         "romaji": "Kore wa nan desu ka?",
-        "en": "What is this?"
+        "en": "What is this?",
+        "promptEn": "Ask whether what is this using 〜なん"
       },
       {
         "jp": "彼はなんで来ましたか？",
         "romaji": "Kare wa nan de kimashita ka?",
-        "en": "Why did he come?"
+        "en": "Why did he come?",
+        "promptEn": "Ask whether why did he come using 〜なん"
       },
       {
         "jp": "あのレストランはなんと言う名前ですか？",
         "romaji": "Ano resutoran wa nan to iu namae desu ka?",
-        "en": "What is the name of that restaurant?"
+        "en": "What is the name of that restaurant?",
+        "promptEn": "Ask whether what is the name of that restaurant using 〜なん"
       }
     ]
   },
@@ -3340,22 +3816,26 @@
       {
         "jp": "なんで遅れたの？",
         "romaji": "Nande okureta no?",
-        "en": "Why were you late?"
+        "en": "Why were you late?",
+        "promptEn": "Ask whether why were you late using reason 〜なんで"
       },
       {
         "jp": "なんでこの部屋はこんなに汚いの？",
         "romaji": "Nande kono heya wa konna ni kitanai no?",
-        "en": "Why is this room so dirty?"
+        "en": "Why is this room so dirty?",
+        "promptEn": "Ask whether why is this room so messy using reason 〜なんで"
       },
       {
         "jp": "なんで彼女は怒っているの？",
         "romaji": "Nande kanojo wa okotte iru no?",
-        "en": "Why is she angry?"
+        "en": "Why is she angry?",
+        "promptEn": "Ask whether why is she angry using reason 〜なんで"
       },
       {
         "jp": "なんで今日は休みなの？",
         "romaji": "Nande kyou wa yasumi na no?",
-        "en": "Why is today a holiday?"
+        "en": "Why is today a holiday?",
+        "promptEn": "Ask whether why do you have the day off today using reason 〜なんで"
       }
     ]
   },
@@ -3368,22 +3848,26 @@
       {
         "jp": "なんでも食べられるから、何を頼んでも大丈夫です。",
         "romaji": "Nandemo taberareru kara, nani wo tanondemo daijoubu desu.",
-        "en": "I can eat anything, so it's okay to order whatever you want."
+        "en": "I can eat anything, so it's okay to order whatever you want.",
+        "promptEn": "State that you can eat anything, so it's fine to order whatever you like using contrast 〜なんでも"
       },
       {
         "jp": "なんでもよければ、この本をおすすめします。",
         "romaji": "Nandemo yokereba, kono hon wo osusume shimasu.",
-        "en": "If you're okay with anything, I recommend this book."
+        "en": "If you're okay with anything, I recommend this book.",
+        "promptEn": "State that if you're looking for a book, you recommend this one using contrast 〜なんでも"
       },
       {
         "jp": "なんでもできるスタッフを探しています。",
         "romaji": "Nandemo dekiru sutaffu wo sagashiteimasu.",
-        "en": "We are looking for a staff member who can do anything."
+        "en": "We are looking for a staff member who can do anything.",
+        "promptEn": "State that we are looking for staff who can do anything using contrast 〜なんでも"
       },
       {
         "jp": "この食堂では、なんでも美味しくて安い料理が出されます。",
         "romaji": "Kono shokudou de wa, nandemo oishikute yasui ryouri ga dasaremasu.",
-        "en": "In this cafeteria, any dish served is delicious and inexpensive."
+        "en": "In this cafeteria, any dish served is delicious and inexpensive.",
+        "promptEn": "State that this cafeteria serves delicious and inexpensive food using contrast 〜なんでも"
       }
     ]
   },
@@ -3396,22 +3880,26 @@
       {
         "jp": "この花はなんと言いますか。",
         "romaji": "Kono hana wa nan to iimasu ka.",
-        "en": "How do you say this flower?"
+        "en": "How do you say this flower?",
+        "promptEn": "Ask whether what is this flower called using 〜なんと言いますか"
       },
       {
         "jp": "この料理はなんと言いますか。",
         "romaji": "Kono ryouri wa nan to iimasu ka.",
-        "en": "What do you call this dish?"
+        "en": "What do you call this dish?",
+        "promptEn": "Ask whether what is this dish called using 〜なんと言いますか"
       },
       {
         "jp": "日本でこれはなんと言いますか。",
         "romaji": "Nihon de kore wa nan to iimasu ka.",
-        "en": "How do you say this in Japanese?"
+        "en": "How do you say this in Japanese?",
+        "promptEn": "Ask whether how do you say this in Japanese using 〜なんと言いますか"
       },
       {
         "jp": "その映画の名前はなんと言いますか。",
         "romaji": "Sono eiga no namae wa nan to iimasu ka.",
-        "en": "What is the name of that movie?"
+        "en": "What is the name of that movie?",
+        "promptEn": "Ask whether what is the name of that movie using 〜なんと言いますか"
       }
     ]
   },
@@ -3424,22 +3912,26 @@
       {
         "jp": "私は友達に本をあげました。",
         "romaji": "Watashi wa tomodachi ni hon wo agemashita.",
-        "en": "I gave a book to my friend."
+        "en": "I gave a book to my friend.",
+        "promptEn": "State that you gave a book to your friend using giving and receiving 〜にあげます"
       },
       {
         "jp": "彼にプレゼントをあげましょう。",
         "romaji": "Kare ni purezento wo agemashou.",
-        "en": "Let's give him a present."
+        "en": "Let's give him a present.",
+        "promptEn": "Suggest that you give him a present using giving and receiving 〜にあげます"
       },
       {
         "jp": "先生に花をあげます。",
         "romaji": "Sensei ni hana wo agemasu.",
-        "en": "I will give flowers to the teacher."
+        "en": "I will give flowers to the teacher.",
+        "promptEn": "State that you are going to give the teacher some flowers using giving and receiving 〜にあげます"
       },
       {
         "jp": "お母さんにチョコレートをあげたいです。",
         "romaji": "Okaasan ni chokoreeto wo agetai desu.",
-        "en": "I want to give chocolate to my mom."
+        "en": "I want to give chocolate to my mom.",
+        "promptEn": "State that you want to give your mom some chocolate using giving and receiving 〜にあげます"
       }
     ]
   },
@@ -3452,22 +3944,26 @@
       {
         "jp": "友達にプレゼントをもらいました。",
         "romaji": "Tomodachi ni purezento wo moraimashita.",
-        "en": "I received a gift from my friend."
+        "en": "I received a gift from my friend.",
+        "promptEn": "State that you received a gift from a friend using 〜にもらいます"
       },
       {
         "jp": "先生にアドバイスをもらいました。",
         "romaji": "Sensei ni adobaisu wo moraimashita.",
-        "en": "I got advice from my teacher."
+        "en": "I got advice from my teacher.",
+        "promptEn": "State that you received some advice from your teacher using 〜にもらいます"
       },
       {
         "jp": "おばあさんに手紙を書いてもらいました。",
         "romaji": "Obaasan ni tegami wo kaite moraimashita.",
-        "en": "I had my grandmother write a letter for me."
+        "en": "I had my grandmother write a letter for me.",
+        "promptEn": "State that my grandmother wrote a letter for you using 〜にもらいます"
       },
       {
         "jp": "弟に宿題を手伝ってもらいました。",
         "romaji": "Otouto ni shukudai wo tetsudatte moraimashita.",
-        "en": "I got help from my younger brother with my homework."
+        "en": "I got help from my younger brother with my homework.",
+        "promptEn": "State that my younger brother helped you with your homework using 〜にもらいます"
       }
     ]
   },
@@ -3480,22 +3976,26 @@
       {
         "jp": "これは私の鞄です。",
         "romaji": "Kore wa watashi no kaban desu.",
-        "en": "This is my bag."
+        "en": "This is my bag.",
+        "promptEn": "State that this is your bag using 〜の"
       },
       {
         "jp": "彼女は赤いバッグを持っています。",
         "romaji": "Kanojo wa akai baggu o motte imasu.",
-        "en": "She has a red bag."
+        "en": "She has a red bag.",
+        "promptEn": "State that she has a red bag using 〜の"
       },
       {
         "jp": "彼はきれいな部屋があります。",
         "romaji": "Kare wa kirei na heya ga arimasu.",
-        "en": "He has a clean room."
+        "en": "He has a clean room.",
+        "promptEn": "State that he has a clean room using 〜の"
       },
       {
         "jp": "東京の天気は暑いです。",
         "romaji": "Toukyou no tenki wa atsui desu.",
-        "en": "The weather in Tokyo is hot."
+        "en": "The weather in Tokyo is hot.",
+        "promptEn": "State that it's hot in Tokyo using 〜の"
       }
     ]
   },
@@ -3508,22 +4008,26 @@
       {
         "jp": "漢字を覚えるのはたいへんです。",
         "romaji": "Kanji o oboeru no wa taihen desu.",
-        "en": "It is difficult to remember kanji."
+        "en": "It is difficult to remember kanji.",
+        "promptEn": "State that learning kanji is hard using desire 〜はたいへんです"
       },
       {
         "jp": "この仕事はたいへんです。",
         "romaji": "Kono shigoto wa taihen desu.",
-        "en": "This job is tough."
+        "en": "This job is tough.",
+        "promptEn": "State that this job is tough using desire 〜はたいへんです"
       },
       {
         "jp": "日本の駅のことを理解するのはたいへんです。",
         "romaji": "Nihon no eki no koto o rikai suru no wa taihen desu.",
-        "en": "Understanding Japanese train stations is difficult."
+        "en": "Understanding Japanese train stations is difficult.",
+        "promptEn": "State that it's hard to understand Japanese train stations using desire 〜はたいへんです"
       },
       {
         "jp": "彼女は病気の時、生活はたいへんです。",
         "romaji": "Kanojo wa byouki no toki, seikatsu wa taihen desu.",
-        "en": "When she is sick, life is tough."
+        "en": "When she is sick, life is tough.",
+        "promptEn": "Ask whether when she is sick, life is difficult using desire 〜はたいへんです"
       }
     ]
   },
@@ -3536,22 +4040,26 @@
       {
         "jp": "彼女はほとんど英語を話せません。",
         "romaji": "Kanojo wa hotondo eigo o hanasemasen.",
-        "en": "She can hardly speak English."
+        "en": "She can hardly speak English.",
+        "promptEn": "State that she can hardly speak any English using 〜ほとんど〜"
       },
       {
         "jp": "ほとんどの人がパーティーに出席しました。",
         "romaji": "Hotondo no hito ga paatii ni shusseki shimashita.",
-        "en": "Most people attended the party."
+        "en": "Most people attended the party.",
+        "promptEn": "State that most people attended the party using 〜ほとんど〜"
       },
       {
         "jp": "私たちはほとんど勉強しないでテストに合格しました。",
         "romaji": "Watashitachi wa hotondo benkyou shinaide tesuto ni goukaku shimashita.",
-        "en": "We passed the test with hardly any studying."
+        "en": "We passed the test with hardly any studying.",
+        "promptEn": "State that we passed the test without studying much using 〜ほとんど〜"
       },
       {
         "jp": "この本はほとんど読み終わりました。",
         "romaji": "Kono hon wa hotondo yomiowarimashita.",
-        "en": "I have almost finished reading this book."
+        "en": "I have almost finished reading this book.",
+        "promptEn": "State that you have almost finished reading this book using 〜ほとんど〜"
       }
     ]
   },
@@ -3564,22 +4072,26 @@
       {
         "jp": "彼の料理の腕前はまあまあです。",
         "romaji": "Kare no ryouri no udemae wa maa maa desu.",
-        "en": "His cooking skills are so-so."
+        "en": "His cooking skills are so-so.",
+        "promptEn": "State that his cooking skills are so-so using 〜まあまあ"
       },
       {
         "jp": "今日の天気はまあまあですね。",
         "romaji": "Kyou no tenki wa maa maa desu ne.",
-        "en": "The weather today is not bad, huh?"
+        "en": "The weather today is not bad, huh?",
+        "promptEn": "State that the weather today is so-so using 〜まあまあ"
       },
       {
         "jp": "あの映画はまあまあ面白かったです。",
         "romaji": "Ano eiga wa maa maa omoshirokatta desu.",
-        "en": "That movie was somewhat interesting."
+        "en": "That movie was somewhat interesting.",
+        "promptEn": "State that that movie was pretty interesting using 〜まあまあ"
       },
       {
         "jp": "彼女の歌はまあまあ上手だと思います。",
         "romaji": "Kanojo no uta wa maa maa jouzu da to omoimasu.",
-        "en": "I think her singing is not bad."
+        "en": "I think her singing is not bad.",
+        "promptEn": "State that you think she sings pretty well using 〜まあまあ"
       }
     ]
   },
@@ -3592,22 +4104,26 @@
       {
         "jp": "昼ご飯はまだ食べていません。",
         "romaji": "Hirugohan wa mada tabete imasen.",
-        "en": "I haven't eaten lunch yet."
+        "en": "I haven't eaten lunch yet.",
+        "promptEn": "State that you haven't had lunch yet using 〜まだ〜"
       },
       {
         "jp": "山田さんはまだ来ていません。",
         "romaji": "Yamada-san wa mada kite imasen.",
-        "en": "Yamada-san has not arrived yet."
+        "en": "Yamada-san has not arrived yet.",
+        "promptEn": "State that mr. Yamada hasn't arrived yet using 〜まだ〜"
       },
       {
         "jp": "この部屋はまだ暑いです。",
         "romaji": "Kono heya wa mada atsui desu.",
-        "en": "This room is still hot."
+        "en": "This room is still hot.",
+        "promptEn": "State that this room is still hot using 〜まだ〜"
       },
       {
         "jp": "彼はまだ学生じゃないです。",
         "romaji": "Kare wa mada gakusei ja nai desu.",
-        "en": "He is not a student yet."
+        "en": "He is not a student yet.",
+        "promptEn": "State that he is no longer a student using 〜まだ〜"
       }
     ]
   },
@@ -3620,22 +4136,26 @@
       {
         "jp": "まだ宿題をしていないです。",
         "romaji": "Mada shukudai o shite inai desu.",
-        "en": "I haven't done my homework yet."
+        "en": "I haven't done my homework yet.",
+        "promptEn": "State that you haven't done your homework yet using 〜まだ〜ないです"
       },
       {
         "jp": "彼はまだ来ないです。",
         "romaji": "Kare wa mada konai desu.",
-        "en": "He hasn't come yet."
+        "en": "He hasn't come yet.",
+        "promptEn": "State that he hasn't come yet using 〜まだ〜ないです"
       },
       {
         "jp": "映画はまだ始まっていないです。",
         "romaji": "Eiga wa mada hajimatte inai desu.",
-        "en": "The movie hasn't started yet."
+        "en": "The movie hasn't started yet.",
+        "promptEn": "State that the movie hasn't started yet using 〜まだ〜ないです"
       },
       {
         "jp": "私たちはまだ夕食を食べていないです。",
         "romaji": "Watashitachi wa mada yuushoku o tabete inai desu.",
-        "en": "We haven't eaten dinner yet."
+        "en": "We haven't eaten dinner yet.",
+        "promptEn": "State that we haven't had dinner yet using 〜まだ〜ないです"
       }
     ]
   },
@@ -3648,22 +4168,26 @@
       {
         "jp": "昼ご飯をまだ食べていません。",
         "romaji": "Hirugohan o mada tabete imasen.",
-        "en": "I have not eaten lunch yet."
+        "en": "I have not eaten lunch yet.",
+        "promptEn": "State that you haven't had lunch yet using 〜まだ～ません"
       },
       {
         "jp": "宿題がまだ終わっていません。",
         "romaji": "Shukudai ga mada owatte imasen.",
-        "en": "I have not finished my homework yet."
+        "en": "I have not finished my homework yet.",
+        "promptEn": "State that you haven't finished your homework yet using 〜まだ～ません"
       },
       {
         "jp": "東京にはまだ行ったことがありません。",
         "romaji": "Toukyou ni wa mada itta koto ga arimasen.",
-        "en": "I have not been to Tokyo yet."
+        "en": "I have not been to Tokyo yet.",
+        "promptEn": "State that you haven't been to Tokyo yet using 〜まだ～ません"
       },
       {
         "jp": "彼はまだ来ていません。",
         "romaji": "Kare wa mada kite imasen.",
-        "en": "He hasn't come yet."
+        "en": "He hasn't come yet.",
+        "promptEn": "State that he hasn't arrived yet using 〜まだ～ません"
       }
     ]
   },
@@ -3676,22 +4200,26 @@
       {
         "jp": "もう昼ごはんを食べました。",
         "romaji": "Mou hirugohan o tabemashita.",
-        "en": "I already ate lunch."
+        "en": "I already ate lunch.",
+        "promptEn": "State that you have already had lunch using 〜もう"
       },
       {
         "jp": "もうここでは働かない。",
         "romaji": "Mou koko de wa hatarakanai.",
-        "en": "I won't work here anymore."
+        "en": "I won't work here anymore.",
+        "promptEn": "State that you are not working here anymore using 〜もう"
       },
       {
         "jp": "もうすぐ夏休みですね。",
         "romaji": "Mou sugu natsuyasumi desu ne.",
-        "en": "Summer vacation is coming soon, isn't it?"
+        "en": "Summer vacation is coming soon, isn't it?",
+        "promptEn": "Ask whether summer vacation is coming up soon, isn't it using 〜もう"
       },
       {
         "jp": "もう十分です。",
         "romaji": "Mou juubun desu.",
-        "en": "It's already enough."
+        "en": "It's already enough.",
+        "promptEn": "State that that's enough using 〜もう"
       }
     ]
   },
@@ -3704,22 +4232,26 @@
       {
         "jp": "もうすぐ春が来ます。",
         "romaji": "Mou sugu haru ga kimasu.",
-        "en": "Spring is coming soon."
+        "en": "Spring is coming soon.",
+        "promptEn": "State that spring is coming soon using simultaneous action 〜もうすぐ〜"
       },
       {
         "jp": "もうすぐ彼女の誕生日です。",
         "romaji": "Mou sugu kanojo no tanjoubi desu.",
-        "en": "Her birthday is coming up soon."
+        "en": "Her birthday is coming up soon.",
+        "promptEn": "State that her birthday is coming up soon using simultaneous action 〜もうすぐ〜"
       },
       {
         "jp": "もうすぐ試験が終わる。",
         "romaji": "Mou sugu shiken ga owaru.",
-        "en": "The exam will be over soon."
+        "en": "The exam will be over soon.",
+        "promptEn": "State that the exam is almost over using simultaneous action 〜もうすぐ〜"
       },
       {
         "jp": "もうすぐ雨が止むでしょう。",
         "romaji": "Mou sugu ame ga yamu deshou.",
-        "en": "The rain will likely stop soon."
+        "en": "The rain will likely stop soon.",
+        "promptEn": "State that the rain will probably stop soon using simultaneous action 〜もうすぐ〜"
       }
     ]
   },
@@ -3732,22 +4264,26 @@
       {
         "jp": "もっと勉強しなければなりません。",
         "romaji": "Motto benkyou shinakereba narimasen.",
-        "en": "I have to study more."
+        "en": "I have to study more.",
+        "promptEn": "State that you need to study more using 〜もっと〜"
       },
       {
         "jp": "このかばんをもっと大きいサイズに変えたいです。",
         "romaji": "Kono kaban o motto ookii saizu ni kaetai desu.",
-        "en": "I want to change this bag to a larger size."
+        "en": "I want to change this bag to a larger size.",
+        "promptEn": "State that you want to switch to a larger size for this bag using 〜もっと〜"
       },
       {
         "jp": "もっと静かな場所で働きたいです。",
         "romaji": "Motto shizuka na basho de hatarakitai desu.",
-        "en": "I want to work in a quieter place."
+        "en": "I want to work in a quieter place.",
+        "promptEn": "State that you want to work in a quieter place using 〜もっと〜"
       },
       {
         "jp": "彼女はもっと上手になりたいと思っています。",
         "romaji": "Kanojo wa motto jouzu ni naritai to omotte imasu.",
-        "en": "She wants to become even better."
+        "en": "She wants to become even better.",
+        "promptEn": "State that she wants to get better at it using 〜もっと〜"
       }
     ]
   },
@@ -3760,22 +4296,26 @@
       {
         "jp": "彼はよく勉強します。",
         "romaji": "Kare wa yoku benkyou shimasu.",
-        "en": "He studies often."
+        "en": "He studies often.",
+        "promptEn": "State that he studies hard using 〜よく"
       },
       {
         "jp": "彼女はよく料理を作ります。",
         "romaji": "Kanojo wa yoku ryouri o tsukurimasu.",
-        "en": "She often cooks."
+        "en": "She often cooks.",
+        "promptEn": "State that she often cooks using 〜よく"
       },
       {
         "jp": "昔の友達とよく遊んでいました。",
         "romaji": "Mukashi no tomodachi to yoku asonde imashita.",
-        "en": "I used to play a lot with my old friends."
+        "en": "I used to play a lot with my old friends.",
+        "promptEn": "State that you used to hang out with your old friends a lot using 〜よく"
       },
       {
         "jp": "よくできました！",
         "romaji": "Yoku dekimashita!",
-        "en": "Well done!"
+        "en": "Well done!",
+        "promptEn": "State that great job using 〜よく"
       }
     ]
   },
@@ -3788,22 +4328,26 @@
       {
         "jp": "図書館にたくさんの本があります。",
         "romaji": "Toshokan ni takusan no hon ga arimasu.",
-        "en": "There are many books in the library."
+        "en": "There are many books in the library.",
+        "promptEn": "State that there are many books in the library using 〜（場所）に～があります"
       },
       {
         "jp": "公園に池があります。",
         "romaji": "Kouen ni ike ga arimasu.",
-        "en": "There is a pond in the park."
+        "en": "There is a pond in the park.",
+        "promptEn": "State that there is a pond in the park using 〜（場所）に～があります"
       },
       {
         "jp": "駅の前にコンビニがあります。",
         "romaji": "Eki no mae ni konbini ga arimasu.",
-        "en": "There is a convenience store in front of the station."
+        "en": "There is a convenience store in front of the station.",
+        "promptEn": "State that there is a convenience store in front of the station using 〜（場所）に～があります"
       },
       {
         "jp": "山の上に神社があります。",
         "romaji": "Yama no ue ni jinja ga arimasu.",
-        "en": "There is a shrine on top of the mountain."
+        "en": "There is a shrine on top of the mountain.",
+        "promptEn": "State that there is a shrine on top of the mountain using 〜（場所）に～があります"
       }
     ]
   }

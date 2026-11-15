@@ -59,7 +59,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "職場の基本挨拶「お疲れ様です！」から始まり、相手の都合を伺うクッション言葉まで完璧です！",
-        feedbackEn: "Opening with 'Otsukaresama desu!' and checking the manager's availability is the gold standard of Japanese workplace manners.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. From the basic workplace greeting “Otsukaresama desu!” to the polite phrases used to check on the other person’s availability, it’s perfect!",
         nextNodeId: "emp-node-2-listen-warm",
       },
       {
@@ -71,7 +72,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 80,
         feedbackJa: "「お疲れ様です」と丁寧語がしっかり使えており、自然に本題へ入れてます！",
-        feedbackEn: "Good workplace greeting and polite Desu/Masu introduction.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. You’ve used the polite form “Otsukaresama desu” correctly and transitioned naturally into the main topic!",
         nextNodeId: "emp-node-2-check-schedule",
       },
       {
@@ -83,7 +85,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 35,
         feedbackJa: "普段優しい店長でも、職場で「どうも」「〜してもいい？」とタメ口を使うのはマナー違反です。",
-        feedbackEn: "Even with a friendly boss, dropping 'Otsukaresama desu' and using casual speech for shift changes sounds immature.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. Even if your store manager is usually kind, using informal speech like “Hey” or “Is it okay if I…?” at work is a breach of etiquette.",
         nextNodeId: "emp-node-2-remind-etiquette",
       },
       {
@@ -95,7 +98,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "rude",
         points: -40,
         feedbackJa: "確定したシフトを一方的に「来れません」「消しといて」と通告するのは社会人・バイトとして最もNGです！",
-        feedbackEn: "Unilaterally announcing you won't show up for a scheduled shift and ordering the manager to erase it is unacceptable.",
+        feedbackEn:
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. Unilaterally notifying someone that you “can’t make it” or asking them to “cancel my shift” for a confirmed shift is absolutely unacceptable for both full-time employees and part-time workers!",
         nextNodeId: "emp-node-2-stern-warning",
       },
     ],
@@ -124,7 +128,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "やむを得ない理由の説明に加え、代わりのスタッフ（山本さん）まで事前に手配して相談する神対応です！",
-        feedbackEn: "Explaining the academic reason AND already securing a coworker to cover your slot is the ultimate Japanese part-time job etiquette.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. Not only did they explain the unavoidable circumstances, but they also went above and beyond by arranging for a replacement staff member (Ms. Yamamoto) in advance and consulting with her—truly exceptional service!",
         nextNodeId: "emp-node-3-approve-praise",
       },
       {
@@ -136,7 +141,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 85,
         feedbackJa: "ただ休むだけでなく「代わりに金曜日に出勤します」と埋め合わせを提案する誠実な姿勢が好印象です！",
-        feedbackEn: "Proactively offering a make-up shift on Friday shows responsibility and teamwork.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. It makes a good impression to show sincerity by not just taking the day off, but offering to make it up by saying, “I’ll come in on Friday instead!”",
         nextNodeId: "emp-node-3-check-friday",
       },
       {
@@ -148,7 +154,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 50,
         feedbackJa: "丁寧ですが、確定後のシフト変更では「代わりの日」や「交代要員」も一緒に提案できるとさらに良いです。",
-        feedbackEn: "Polite enough, though asking to drop an already-scheduled shift without offering a make-up day puts pressure on the roster.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. While this is polite, it would be even better if, when changing a shift after it has been confirmed, you could also suggest an “alternate date” or a “replacement staff member.”",
         nextNodeId: "emp-node-3-short-staffed",
       },
     ],
@@ -177,7 +184,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 95,
         feedbackJa: "お店の忙しさを理解した上で「〜てあります（準備済み）」と伝える頼もしい受け答えです！",
-        feedbackEn: "Acknowledging the busy launch day and using '~te arimasu' to show you already arranged coverage is super reliable.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. This is a reliable response that shows an understanding of how busy the store is while conveying that “it’s ready!”",
         nextNodeId: "emp-node-3-approve-praise",
       },
       {
@@ -189,7 +197,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 80,
         feedbackJa: "謝罪の言葉と代替シフト（金曜日の午後）の提案がセットになっていて非常に丁寧です！",
-        feedbackEn: "Combining a polite apology with a concrete Friday swap proposal works smoothly.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. It’s very polite to include both an apology and a suggestion for an alternative time slot (Friday afternoon) as a set!",
         nextNodeId: "emp-node-3-check-friday",
       },
       {
@@ -201,7 +210,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 30,
         feedbackJa: "確定済みのシフトを私用の遊びで変更するのは、代わりの人を見つけない限りかなり厳しいです。",
-        feedbackEn: "Asking to drop a finalized shift on a busy launch day just to hang out with friends creates a staffing bind.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. It’s quite difficult to change a confirmed shift for personal reasons unless you can find someone to cover for you.",
         nextNodeId: "emp-node-3-short-staffed",
       },
     ],
@@ -230,7 +240,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 80,
         feedbackJa: "注意を素直に受け止めて「失礼いたしました！お疲れ様です」と言い直す素晴らしいリカバリーです！",
-        feedbackEn: "Great recovery—immediately correcting your workplace greeting and politely proposing a Friday swap.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. This is a wonderful way to recover from the situation—simply acknowledging the feedback and rephrasing it to say, “I’m sorry! Thank you for your hard work!”",
         nextNodeId: "emp-node-3-check-friday",
       },
       {
@@ -242,7 +253,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "rude",
         points: -25,
         feedbackJa: "店長のせっかくのアドバイスを茶化すと、職場の信頼を一気に失います。",
-        feedbackEn: "Brushing off a manager's gentle etiquette reminder damages trust at work.",
+        feedbackEn:
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. If you make light of the store manager’s well-intentioned advice, you’ll instantly lose the trust of your coworkers.",
         nextNodeId: "emp-fail-unprofessional",
       },
     ],
@@ -271,7 +283,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 75,
         feedbackJa: "自分の非を認めて謝罪し、代わりの対応策を申し出ることで店長の怒りを鎮められました！",
-        feedbackEn: "Sincere apology acknowledging the mistake and offering to cover another slot salvages the conversation.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. By admitting my mistake, apologizing, and offering an alternative solution, I was able to calm the store manager’s anger!",
         nextNodeId: "emp-node-3-short-staffed",
       },
       {
@@ -283,7 +296,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "rude",
         points: -50,
         feedbackJa: "「たかがバイト」と開き直るのは最悪の対応です。",
-        feedbackEn: "Belittling the job and throwing a tantrum leads to an immediate breakdown.",
+        feedbackEn:
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. Brushing it off by saying, “It’s just a part-time job,” is the worst possible response.",
         nextNodeId: "emp-fail-unprofessional",
       },
     ],
@@ -312,7 +326,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "店長への感謝、同僚への配慮、次回シフトへの意欲、そして退勤の挨拶「お疲れ様でした！」まで完璧です！",
-        feedbackEn: "Thanking the manager, acknowledging your coworker, showing enthusiasm for Friday, and closing with 'Otsukaresama deshita!' is 10/10.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. It’s perfect—from expressing gratitude to the store manager and consideration for coworkers, to showing enthusiasm for the next shift, right down to the closing greeting, “Thank you for your hard work today!”",
         nextNodeId: "emp-end-perfect",
       },
       {
@@ -324,7 +339,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 85,
         feedbackJa: "退勤時の定番表現「本日はこれで失礼いたします。お疲れ様でした！」が自然に使えています！",
-        feedbackEn: "Clean, natural Japanese clocking-out phrase ('Honjitsu wa kore de shitsurei itashimasu. Otsukaresama deshita!').",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. You’re using the standard closing phrase “That’s all for today. Thank you for your hard work!” naturally!",
         nextNodeId: "emp-end-approved",
       },
       {
@@ -336,7 +352,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 35,
         feedbackJa: "せっかく途中まで丁寧だったのに、最後の退勤挨拶が軽すぎると締まりが悪くなります。",
-        feedbackEn: "Ending a professional shift request with slang ('Sankyuu / Otsukaree') spoils your strong impression at the finish line.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. Even if you’ve been polite up to that point, if your final farewell when leaving work is too casual, it leaves a poor impression.",
         nextNodeId: "emp-end-awkward",
       },
     ],
@@ -365,7 +382,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 95,
         feedbackJa: "時間の復唱と「承知いたしました」「柔軟に対応していただき〜」の感謝表現がとてもスマートです！",
-        feedbackEn: "Repeating the exact shift hours and thanking the manager for his flexibility is textbook workplace communication.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. The repetition of the time and the expressions of gratitude—such as “I understand” and “Thank you for your flexibility”—are very clever!",
         nextNodeId: "emp-end-approved",
       },
       {
@@ -377,7 +395,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 45,
         feedbackJa: "こちらから変更をお願いしている立場で「長いけど…」と渋るのは印象が悪くなります。",
-        feedbackEn: "Grumbling about the hours when the manager is doing you a favor leaves an awkward impression.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. If you’re the one requesting the change but hesitate by saying, “It’s long, but…,” it will leave a bad impression.",
         nextNodeId: "emp-end-awkward",
       },
     ],
@@ -406,7 +425,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 80,
         feedbackJa: "店長の提案を前向きに引き受けたことで、誠意がしっかり伝わりました！",
-        feedbackEn: "Gladly taking on Saturday closing and offering to check the group chat shows strong accountability.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. By accepting the store manager’s suggestion with a positive attitude, you clearly conveyed your sincerity!",
         nextNodeId: "emp-end-approved",
       },
       {
@@ -418,7 +438,8 @@ export const EMPLOYER_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 25,
         feedbackJa: "直前のシフト変更ではスタッフ同士でも協力し合うのが職場のマナーです。突き放す言い方は気まずくなります。",
-        feedbackEn: "Pushing back when requesting a late schedule change makes the workplace atmosphere tense.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. In the workplace, it’s considered good etiquette for staff members to cooperate with one another when there’s a last-minute shift change. A dismissive tone can make the situation awkward.",
         nextNodeId: "emp-end-awkward",
       },
     ],

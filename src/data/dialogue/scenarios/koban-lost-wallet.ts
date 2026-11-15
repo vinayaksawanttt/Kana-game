@@ -59,7 +59,8 @@ export const KOBAN_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "「〜の相談をしたいのですが、よろしいでしょうか？」は公的機関で最も模範的で礼儀正しい切り出し方です！",
-        feedbackEn: "Exemplary formal opening. Asking permission politely with 「よろしいでしょうか」 immediately earns respect.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. I’d like to discuss [...]. Would that be all right?\" is the most exemplary and polite way to begin a conversation at a government agency!",
         nextNodeId: "koban-node-2-polite-inquiry",
       },
       {
@@ -71,7 +72,8 @@ export const KOBAN_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 85,
         feedbackJa: "後悔・困惑を表す「〜てしまいました」を使って、緊急の状況を素直かつ丁寧に伝えられました！",
-        feedbackEn: "Natural use of the regretful ~te shimaimashita form clearly communicating urgency with respect.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. By using “〜てしまいました,” which expresses regret and confusion, I was able to convey the urgent situation honestly and politely!",
         nextNodeId: "koban-node-2-urgent-calm",
       },
       {
@@ -83,7 +85,8 @@ export const KOBAN_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 50,
         feedbackJa: "確証がない段階で断定して取り乱すと、事件捜査か紛失か確認が必要になり時間がかかります。",
-        feedbackEn: "Asserting theft without clear evidence causes procedural confusion before checking lost items.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. If you jump to conclusions and panic before you have confirmation, it will take time to determine whether it’s a criminal investigation or a lost item.",
         nextNodeId: "koban-node-2-theft-investigate",
       },
       {
@@ -95,7 +98,8 @@ export const KOBAN_NODES: Record<string, DialogueNode> = {
         tier: "rude",
         points: -35,
         feedbackJa: "警察官に対していきなり命令口調（探して）を使うのは非常に不作法です！",
-        feedbackEn: "Demanding immediate searches with blunt imperative phrasing dampens the officer's willingness to assist smoothly.",
+        feedbackEn:
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. It is extremely rude to suddenly use a commanding tone (like “Look for it”) when speaking to a police officer!",
         nextNodeId: "koban-node-2-stern-reprimand",
       },
     ],
@@ -124,7 +128,8 @@ export const KOBAN_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "色（黒）・素材（革）・形状（長財布）・重要書類（在留カード）を網羅した完璧な説明です！",
-        feedbackEn: "Flawless Japanese description covering color, material, shape, and unique identifying documents.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. This is a perfect explanation covering color (black), material (leather), shape (long wallet), and important documents (Residence Card)!",
         nextNodeId: "koban-node-3-database-found",
       },
       {
@@ -136,7 +141,8 @@ export const KOBAN_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 75,
         feedbackJa: "形は分かりますが、身元を特定できるカードや金額などの詳細があると特定が早くなります。",
-        feedbackEn: "Good start, but mentioning personal cards or unique items helps police match database records faster.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. I understand the general idea, but having details such as cards that can identify a person or specific amounts would make identification faster.",
         nextNodeId: "koban-node-3-further-questions",
       },
     ],
@@ -164,7 +170,8 @@ export const KOBAN_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "時間（20分前）・路線（山手線）・駅名・中身の身分証が的確に整理されています！",
-        feedbackEn: "Clear timeline, specific train line, and mention of government-issued ID enable immediate database lookup.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. The time (20 minutes ago), train line (Yamanote Line), station name, and the details on the ID card are all accurately organized!",
         nextNodeId: "koban-node-3-database-found",
       },
       {
@@ -176,7 +183,8 @@ export const KOBAN_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 60,
         feedbackJa: "動揺しているのは分かりますが、「さっき」だけだと駅窓口への問い合わせ範囲が広くなってしまいます。",
-        feedbackEn: "Vague time references make it harder for police to contact the appropriate station lost & found.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. I understand you’re feeling flustered, but if you just say “a little while ago,” it leaves too much room for interpretation when asking at the station ticket window.",
         nextNodeId: "koban-node-3-further-questions",
       },
     ],
@@ -204,7 +212,8 @@ export const KOBAN_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 85,
         feedbackJa: "冷静に記憶を整理し直したことで、落とし物の照会手続きへスムーズに戻せました！",
-        feedbackEn: "Calmly recalling the last known point of contact refocuses the inquiry toward lost property search.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. By calmly reorganizing my thoughts, I was able to smoothly return to the lost-and-found inquiry process!",
         nextNodeId: "koban-node-3-database-found",
       },
       {
@@ -216,7 +225,8 @@ export const KOBAN_NODES: Record<string, DialogueNode> = {
         tier: "rude",
         points: -30,
         feedbackJa: "確実な証拠や場所の特定がないまま防犯カメラの開示を強要することはできません。",
-        feedbackEn: "Demanding immediate surveillance review without evidence strains police procedure and stalls help.",
+        feedbackEn:
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. You cannot compel the disclosure of security camera footage without concrete evidence or a specific location.",
         nextNodeId: "koban-end-investigating",
       },
     ],
@@ -244,7 +254,8 @@ export const KOBAN_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 85,
         feedbackJa: "自らの非を認めて真摯に謝罪したことで、警察官の表情も和らぎました！",
-        feedbackEn: "Humble apology explaining panic restores professional rapport and goodwill.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. By admitting my mistake and offering a sincere apology, the police officer’s expression softened!",
         nextNodeId: "koban-node-3-further-questions",
       },
       {
@@ -256,7 +267,8 @@ export const KOBAN_NODES: Record<string, DialogueNode> = {
         tier: "rude",
         points: -50,
         feedbackJa: "交番を飛び出してしまい、警察ネットワークでの照会機会を失ってしまいました。",
-        feedbackEn: "Storming out aborts the police report entirely, making recovery much harder.",
+        feedbackEn:
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. I ran out of the police box and lost the opportunity to check with the police network.",
         nextNodeId: "koban-fail-aborted",
       },
     ],
@@ -285,7 +297,8 @@ export const KOBAN_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "安堵の気持ちと丁寧な感謝が伝わり、お巡りさんも満面の笑みに！",
-        feedbackEn: "Warm, respectful gratitude completing the police interaction on the highest possible note.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. A sense of relief and sincere gratitude came through, and the police officer broke into a beaming smile!",
         nextNodeId: "koban-end-perfect",
       },
       {
@@ -297,7 +310,8 @@ export const KOBAN_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 90,
         feedbackJa: "受け取りに必要な身分証や手続きを事前に確認する、とても賢い質問です！",
-        feedbackEn: "Smart follow-up confirming the required identification to claim the property without hassle.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. That’s a very smart question—checking in advance what ID and procedures are required to receive it!",
         nextNodeId: "koban-end-perfect",
       },
     ],
@@ -325,7 +339,8 @@ export const KOBAN_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 90,
         feedbackJa: "遺失物届の記入に素直に協力し、連絡先を渡すことで、後日見つかる確率が高まります！",
-        feedbackEn: "Proper cooperation with filing lost property paperwork ensures police will notify you when it turns up.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. If you willingly cooperate by filling out the lost property report and providing your contact information, it will increase the chances of your item being found later!",
         nextNodeId: "koban-end-report-filed",
       },
       {
@@ -337,7 +352,8 @@ export const KOBAN_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 40,
         feedbackJa: "数時間後に届くことも多いため、連絡先を残さないのはとてももったいないです！",
-        feedbackEn: "Wallets in Japan are frequently turned in hours later; leaving without filing a report forfeit's recovery.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. Since replies often arrive within a few hours, it would be a real shame not to leave your contact information!",
         nextNodeId: "koban-end-investigating",
       },
     ],

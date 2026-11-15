@@ -1037,6 +1037,68 @@ export function buildKanjiCompoundFurigana(
     .join("");
 }
 
+export function formatPhoneticReadingTrapExplanation(
+  rule: TrapRuleLabel,
+  detail: string
+): string {
+  switch (rule) {
+    case "Long Vowel Trap":
+      if (detail.includes("dropped (-う)") || detail.includes("Vowel dropped")) {
+        return `[Long Vowel Trap] ${detail}. In JLPT listening, tests frequently drop internal prolonged vowels (長音) to catch candidates who rely on English rhythm.`;
+      }
+      if (detail.includes("Extra long vowel") || detail.includes("Extra vowel lengthening")) {
+        return `[Long Vowel Trap] ${detail}. Mistakenly lengthens the vowel where the authentic reading uses a single short mora.`;
+      }
+      if (detail.includes("spelling trap")) {
+        return `[Long Vowel Trap] ${detail}. Tests historical kana orthography distinctions (such as おう vs おお).`;
+      }
+      return `[Long Vowel Trap] ${detail}. Confuses single syllables with extended vowels.`;
+
+    case "Dakuten / Rendaku Trap":
+      return `[Dakuten / Rendaku Trap] ${detail}. In Japanese compound words, sequential voicing (連濁) is strictly governed by phonetic rules.`;
+
+    case "Small っ / Yōon Trap":
+      if (detail.includes("geminate っ")) {
+        return `[Geminate Stop Trap] ${detail}. Tests whether you distinguish double consonants and geminate stops from plain morae.`;
+      }
+      if (detail.includes("yōon")) {
+        return `[Contracted Sound Trap] ${detail}. Tests contracted palatal mora (拗音) discrimination.`;
+      }
+      return `[Small っ / Yōon Trap] ${detail}. Tests mora count and rhythmic timing.`;
+
+    case "Nasal ん / Mora Trap":
+      return `[Nasal Mora Trap] ${detail}. Intrusive or dropped nasal coda alters the mora timing of the word.`;
+
+    case "Counter Rendaku Trap":
+      return `[Counter Sound-Change Trap] ${detail}. Numerical counters undergo strict euphonic sound mutations depending on the prefix number.`;
+
+    case "Katakana Loanword Trap":
+      return `[Katakana Loanword Trap] ${detail}. Tests strict Katakana loanword orthography and length conventions.`;
+
+    case "Look-Alike Kanji Trap":
+      return `[Look-Alike Kanji Trap] ${detail}. Tests visual stroke accuracy and radical discrimination under test pressure.`;
+
+    default:
+      return `${rule}: ${detail}`;
+  }
+}
+
+export function formatOrthographyTrapExplanation(
+  rule: TrapRuleLabel,
+  reason: string
+): string {
+  switch (rule) {
+    case "Look-Alike Kanji Trap":
+      return `[Look-Alike Kanji Trap] ${reason}. Examiners substitute visually similar kanji sharing radicals or stroke counts to test visual discrimination.`;
+
+    case "Katakana Loanword Trap":
+      return `[Katakana Loanword Trap] ${reason}. Confuses similar katakana or incorrect vowel extension marks.`;
+
+    default:
+      return `${rule}: ${reason}`;
+  }
+}
+
 export function buildPhoneticTrapQuestion(
   item: PhoneticTrapVocabItem,
   mode: PhoneticTrapQuestionMode,
@@ -1071,7 +1133,7 @@ export function buildPhoneticTrapQuestion(
         furiganaText: t.trap,
         isCorrect: false,
         trapRule: t.rule,
-        trapExplanation: `${t.rule}: ${t.detail}`,
+        trapExplanation: formatPhoneticReadingTrapExplanation(t.rule, t.detail),
       })),
     ];
 
@@ -1141,7 +1203,7 @@ export function buildPhoneticTrapQuestion(
       furiganaText: buildKanjiCompoundFurigana(t.trap),
       isCorrect: false,
       trapRule: t.rule,
-      trapExplanation: t.reason,
+      trapExplanation: formatOrthographyTrapExplanation(t.rule, t.reason),
     })),
   ];
 

@@ -59,7 +59,8 @@ export const LANDLORD_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "最初に部屋番号を名乗り、「ご相談がありまして…」と切り出す完璧な入居者マナーです！",
-        feedbackEn: "Stating your room number first and softening the topic with 'gosoudan ga arimashite...' is exemplary Japanese tenant etiquette.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. This is the perfect example of tenant etiquette: first state your room number, then begin by saying, “I have something I’d like to discuss…”!",
         nextNodeId: "landlord-node-2-worried-inquiry",
       },
       {
@@ -71,7 +72,8 @@ export const LANDLORD_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 80,
         feedbackJa: "「〜てしまったみたいなんです」で困っている状況が丁寧に伝わります。最初に部屋番号も添えるとさらにスムーズです。",
-        feedbackEn: "Polite and clear explanation using '~mitai na n desu', though mentioning your room number right away helps the landlord.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. Using “〜てしまったみたいなんです” politely conveys that you’re in a difficult situation. It goes even more smoothly if you include the room number at the beginning.",
         nextNodeId: "landlord-node-2-ask-room-details",
       },
       {
@@ -83,7 +85,8 @@ export const LANDLORD_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 45,
         feedbackJa: "親しみはありますが、大家さんに対してタメ口（〜なんだけど）は少し馴れ馴れしすぎます。",
-        feedbackEn: "Understandable in the heat, but casual phrasing ('~na n da kedo') sounds overly familiar with a landlord.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. It’s friendly, but using casual speech (like “~ but…”) with your landlord is a bit too familiar.",
         nextNodeId: "landlord-node-2-ask-room-details",
       },
       {
@@ -95,7 +98,8 @@ export const LANDLORD_NODES: Record<string, DialogueNode> = {
         tier: "rude",
         points: -40,
         feedbackJa: "大家さんを一方的に責めて新品を要求するのは非常に不作法で、信頼関係を損ねます！",
-        feedbackEn: "Blaming the landlord and demanding an immediate replacement sounds hostile and counterproductive.",
+        feedbackEn:
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. It is extremely rude to blame the landlord unilaterally and demand a brand-new item—it damages the relationship of trust!",
         nextNodeId: "landlord-node-2-annoyed-warning",
       },
     ],
@@ -124,7 +128,8 @@ export const LANDLORD_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "症状（ぬるい風・ランプの点滅）を具体的に説明し、「見ていただけないでしょうか」と依頼する完璧な流れです！",
-        feedbackEn: "Describing the exact symptoms and asking politely with 'mite itadakenai deshou ka' makes scheduling repairs effortless.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. This is the perfect sequence: specifically describe the symptoms (a lukewarm breeze, a flickering lamp), and then ask, “Could you please take a look?”",
         nextNodeId: "landlord-node-3-schedule-confirm",
       },
       {
@@ -136,7 +141,8 @@ export const LANDLORD_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 85,
         feedbackJa: "自分で試したこと（〜てみたのですが）を伝えることで、業者手配の判断がとても早くなります！",
-        feedbackEn: "Mentioning what you already tried ('~te mita no desu ga') helps the landlord immediately rule out a clogged filter.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. By sharing what you’ve tried yourself (e.g., “I tried…”), it helps us make decisions about vendor arrangements much faster!",
         nextNodeId: "landlord-node-3-schedule-confirm",
       },
       {
@@ -148,7 +154,8 @@ export const LANDLORD_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 55,
         feedbackJa: "最低限の状況は伝わりますが、ランプの点滅や室外機の様子も伝えるとより親切です。",
-        feedbackEn: "Gets the basic point across, though giving a bit more detail helps the technician prepare.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. While the basic situation comes across, it would be even more helpful to also mention the flashing light and the condition of the outdoor unit.",
         nextNodeId: "landlord-node-3-troubleshoot-first",
       },
     ],
@@ -177,7 +184,8 @@ export const LANDLORD_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 95,
         feedbackJa: "「名乗らずに失礼しました」と添えて部屋番号と症状を的確に伝える素晴らしいリカバリーです！",
-        feedbackEn: "Great recovery—apologizing briefly for omitting your room number and giving crisp symptom details.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. I apologize for not introducing myself first\"—what a wonderful way to recover by accurately conveying the room number and symptoms!",
         nextNodeId: "landlord-node-3-schedule-confirm",
       },
       {
@@ -189,7 +197,8 @@ export const LANDLORD_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 75,
         feedbackJa: "部屋番号と具体的な症状がしっかり伝わりました！",
-        feedbackEn: "Clear and polite response providing your room number and temperature test.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. The room number and specific symptoms were clearly conveyed!",
         nextNodeId: "landlord-node-3-troubleshoot-first",
       },
       {
@@ -201,7 +210,8 @@ export const LANDLORD_NODES: Record<string, DialogueNode> = {
         tier: "rude",
         points: -30,
         feedbackJa: "協力しようとしている大家さんに横柄な態度を取ると、対応を断られてしまいます。",
-        feedbackEn: "Snapping at a helpful landlord who needs basic diagnostic info derails the conversation.",
+        feedbackEn:
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. If you act arrogantly toward a landlord who is trying to cooperate with you, they will refuse to help you.",
         nextNodeId: "landlord-fail-rude",
       },
     ],
@@ -230,7 +240,8 @@ export const LANDLORD_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 75,
         feedbackJa: "素直に非を認めて謝罪し、部屋番号と症状を丁寧に伝え直したことで空気が和らぎました！",
-        feedbackEn: "Owning up to your frustration and apologizing politely restores goodwill and gets the repair moving.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. By honestly admitting my mistake, apologizing, and politely repeating my room number and symptoms, the tension eased!",
         nextNodeId: "landlord-node-3-troubleshoot-first",
       },
       {
@@ -242,7 +253,8 @@ export const LANDLORD_NODES: Record<string, DialogueNode> = {
         tier: "rude",
         points: -50,
         feedbackJa: "家賃の不払いを盾に脅すのは最もNGな対応です！",
-        feedbackEn: "Threatening to withhold rent over a standard repair schedule completely breaks down communication.",
+        feedbackEn:
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. Using non-payment of rent as a threat is absolutely the worst thing you can do!",
         nextNodeId: "landlord-fail-rude",
       },
     ],
@@ -271,7 +283,8 @@ export const LANDLORD_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "日時の復唱、「待機しております」の謙譲語、そして迅速な手配への感謝まで完璧なN3会話です！",
-        feedbackEn: "Repeating the appointment time, using humble 'taiki shite orimasu', and thanking her for the quick arrangement is flawless.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. From repeating the date and time, to the humble form of “I’ll be waiting,” and even expressing gratitude for the prompt arrangements—this is a perfect N3 conversation!",
         nextNodeId: "landlord-end-perfect",
       },
       {
@@ -283,7 +296,8 @@ export const LANDLORD_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 90,
         feedbackJa: "都合が悪い理由を添えて代替案（17時以降）を丁寧に提案する、実用的な日程調整の表現です！",
-        feedbackEn: "Politely stating a conflict and proposing a concrete alternative window ('17-ji ikou') is very natural.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. This is a practical expression for scheduling adjustments, where you politely suggest an alternative (after 5:00 PM) while explaining why the original time doesn’t work!",
         nextNodeId: "landlord-end-rescheduled",
       },
       {
@@ -295,7 +309,8 @@ export const LANDLORD_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 40,
         feedbackJa: "日本の賃貸では防犯・トラブル防止のため、原則として入居者の立ち会いなしでの入室はできません。",
-        feedbackEn: "In Japan, landlords and technicians generally cannot enter a tenant's room unattended due to liability rules.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. In Japan, as a general rule, landlords cannot enter a tenant’s rental unit without the tenant being present, in order to ensure security and prevent disputes.",
         nextNodeId: "landlord-end-awkward",
       },
     ],
@@ -324,7 +339,8 @@ export const LANDLORD_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 85,
         feedbackJa: "「承知しました」「立ち会い可能です」と日本の賃貸ルールに沿ってしっかり返答できました！",
-        feedbackEn: "Clean, polite confirmation respecting the tenant attendance requirement.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. I was able to respond appropriately in accordance with Japanese rental rules, saying, “Understood” and “I can be present for the inspection”!",
         nextNodeId: "landlord-end-rescheduled",
       },
       {
@@ -336,7 +352,8 @@ export const LANDLORD_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 35,
         feedbackJa: "真夏はエアコン修理が混み合うため、翌日手配でもかなり早い対応です。不満を言うと空気が気まずくなります。",
-        feedbackEn: "Next-day AC repair during midsummer is already fast; complaining makes the interaction awkward.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. Since air conditioner repair requests are very busy in the height of summer, getting a response the very next day is actually quite fast. If you complain, it will make the atmosphere awkward.",
         nextNodeId: "landlord-end-awkward",
       },
     ],

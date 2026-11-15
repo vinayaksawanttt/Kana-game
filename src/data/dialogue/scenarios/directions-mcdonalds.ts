@@ -57,7 +57,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 100,
         feedbackJa: "とても自然で丁寧な声のかけ方です！",
-        feedbackEn: "Perfect, natural way to politely approach a stranger on the street.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. That’s a very natural and polite way to address someone!",
         nextNodeId: "node-2-npc-reply-polite",
       },
       {
@@ -69,7 +70,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 40,
         feedbackJa: "通じますが、知らない人には少しカジュアルすぎます。",
-        feedbackEn: "Understandable, but too casual for a stranger on the street.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. It gets the point across, but it’s a little too casual for people who aren’t familiar with it.",
         nextNodeId: "node-2-npc-reply-casual",
       },
       {
@@ -81,7 +83,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "awkward",
         points: 45,
         feedbackJa: "「家」ではなく「お店」や「マクドナルド」と言いましょう。佐藤さんが少し戸惑っています。",
-        feedbackEn: "Saying 'house of M' instead of 'McDonald's' or 'shop' leaves her puzzled.",
+        feedbackEn:
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. Let’s say “store” or “McDonald’s” instead of “home.” Mr. Sato seems a little confused.",
         nextNodeId: "node-2-npc-reply-confused",
       },
       {
@@ -93,7 +96,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "rude",
         points: -50,
         feedbackJa: "非常に失礼な言い方です。相手が怖がってしまいます。",
-        feedbackEn: "Extremely rude imperative. Strangers will avoid you or walk away.",
+        feedbackEn:
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. That’s a very rude way to put it. It will scare the other person.",
         nextNodeId: "node-fail-rude",
       },
     ],
@@ -121,7 +125,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 100,
         feedbackJa: "目的の場所をスマートに尋ねる定番表現です！",
-        feedbackEn: "Textbook Japanese for asking if a place exists in the vicinity.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. This is a classic phrase for asking for directions to a specific location in a smart way!",
         nextNodeId: "node-3-npc-directions",
       },
       {
@@ -133,7 +138,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 90,
         feedbackJa: "改札内か外かを確認する、日本の大型駅ならではの実践的質問です！",
-        feedbackEn: "Very smart question for large Japanese transit hubs like Shibuya.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. This is a practical question unique to large Japanese train stations—checking whether you’re inside or outside the ticket gates!",
         nextNodeId: "node-2-npc-reply-station",
       },
       {
@@ -145,7 +151,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 90,
         feedbackJa: "地図を見せながら尋ねる、とても実践的な方法です。",
-        feedbackEn: "Very practical real-world technique when traveling in Japan.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. This is a very practical method that involves asking questions while showing a map.",
         nextNodeId: "node-3-npc-directions",
       },
       {
@@ -157,7 +164,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "awkward",
         points: 40,
         feedbackJa: "「家」という言い方に佐藤さんが首をかしげています。",
-        feedbackEn: "The unusual phrase 'house of M' piques her curiosity and baffles her.",
+        feedbackEn:
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. Mr. Sato is tilting his head at the way the word “house” is used.",
         nextNodeId: "node-2-npc-reply-confused",
       },
     ],
@@ -185,7 +193,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 90,
         feedbackJa: "間違いに気づいて素直に明るく訂正できました。とても親しみやすいです！",
-        feedbackEn: "Polite and cheerful recovery acknowledging the vocabulary mix-up.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. I was able to notice my mistake and correct it honestly and cheerfully. It’s very approachable!",
         nextNodeId: "node-3-npc-directions",
       },
       {
@@ -197,7 +206,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 85,
         feedbackJa: "看板の特徴を的確に伝えて、意図をしっかり共有できました！",
-        feedbackEn: "Well described! Describing visual landmarks bridges vocabulary gaps.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. We were able to accurately convey the sign’s features and clearly share our intentions!",
         nextNodeId: "node-3-npc-directions",
       },
       {
@@ -209,7 +219,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 60,
         feedbackJa: "恥ずかしがる必要はありません！日本語で伝えようとする努力が素敵です。",
-        feedbackEn: "Don't be shy! Trying your best in Japanese is always appreciated.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. There’s no need to be shy! It’s wonderful that you’re making an effort to communicate in Japanese.",
         nextNodeId: "node-3-npc-directions-vague",
       },
       {
@@ -221,7 +232,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "rude",
         points: -20,
         feedbackJa: "助けようとしてくれている人にタメ口で急かすのは非常に失礼です。",
-        feedbackEn: "Demanding and impatient tone with a stranger trying to help you.",
+        feedbackEn:
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. It is extremely rude to speak informally and rush someone who is trying to help you.",
         nextNodeId: "node-end-awkward",
       },
     ],
@@ -249,7 +261,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 95,
         feedbackJa: "要点を理解し、次の道順をスムーズに質問できています！",
-        feedbackEn: "Smooth transition to asking for specific route instructions.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. They understand the key points and are able to smoothly ask for directions!",
         nextNodeId: "node-3-npc-directions",
       },
       {
@@ -261,7 +274,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 90,
         feedbackJa: "簡潔で礼儀正しい感謝の言葉です！",
-        feedbackEn: "Crisp and polite acknowledgment.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. A concise and polite way to express gratitude!",
         nextNodeId: "node-end-success",
       },
       {
@@ -273,7 +287,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 20,
         feedbackJa: "教えてくれた人に不満を漏らすのはマナー違反です。",
-        feedbackEn: "Complaining about walking to the person assisting you is bad etiquette.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. It is considered bad manners to voice dissatisfaction to the person who helped you.",
         nextNodeId: "node-3-npc-directions-vague",
       },
     ],
@@ -301,7 +316,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 80,
         feedbackJa: "すぐに丁寧なトーンに切り替えられて素晴らしいです！",
-        feedbackEn: "Good recovery switching back to polite Japanese.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. It’s great that you were able to switch to a polite tone right away!",
         nextNodeId: "node-3-npc-directions",
       },
       {
@@ -313,7 +329,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 30,
         feedbackJa: "初対面の人にはフランクすぎます。",
-        feedbackEn: "Still overly informal with a complete stranger.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. You’re being too informal with someone you’ve just met.",
         nextNodeId: "node-3-npc-directions-vague",
       },
     ],
@@ -341,7 +358,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "日本語に自分から戻す前向きな素晴らしい姿勢です！",
-        feedbackEn: "Courteous and eager Japanese language immersion mindset.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. It’s a wonderful, proactive attitude to take the initiative to translate back into Japanese!",
         nextNodeId: "node-3-npc-directions",
       },
       {
@@ -353,7 +371,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 50,
         feedbackJa: "英語でも通じますが、日本語にチャレンジしてみましょう！",
-        feedbackEn: "Understood, but misses the opportunity to speak Japanese.",
+        feedbackEn:
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. It works in English too, but let’s give Japanese a try!",
         nextNodeId: "node-3-npc-directions",
       },
     ],
@@ -381,7 +400,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "内容を復唱して確認し、感謝を伝える完璧な対応です！",
-        feedbackEn: "Perfect conversational Japanese: repeats to confirm, acknowledges, and thanks warmly.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. This is the perfect response: repeat what was said to confirm, and then express your gratitude!",
         nextNodeId: "node-end-perfect",
       },
       {
@@ -393,7 +413,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 90,
         feedbackJa: "「歩いて何分」は日常会話でも旅行でも非常に役立つ頻出表現です！",
-        feedbackEn: "Asking walking time ('aruite nanpun') is extremely natural and practical.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. How many minutes on foot?\" is a very useful and common expression in both everyday conversation and when traveling!",
         nextNodeId: "node-3-npc-walking-time",
       },
       {
@@ -405,7 +426,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 90,
         feedbackJa: "明るく気持ちの良いお礼の言葉です！",
-        feedbackEn: "Cheery and polite expression of gratitude.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. It’s a cheerful and pleasant way to say thank you!",
         nextNodeId: "node-end-success",
       },
       {
@@ -417,7 +439,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 40,
         feedbackJa: "友達同士なら良いですが、通りすがりの大人には「ありがとうございます」を使いましょう。",
-        feedbackEn: "Save 'Jaa ne' for classmates or buddies.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. It’s fine among friends, but use “Arigatō gozaimasu” when speaking to adults you meet on the street.",
         nextNodeId: "node-end-awkward",
       },
     ],
@@ -445,7 +468,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "目印（ランドマーク）を確認し、最高に丁寧な感謝を伝えられました！",
-        feedbackEn: "Using landmarks ('mejirushi') and expressing polite gratitude is top-tier Japanese.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. I checked the landmarks and was able to express my gratitude in the most polite way possible!",
         nextNodeId: "node-end-perfect",
       },
       {
@@ -457,7 +481,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 90,
         feedbackJa: "「助かりました」を使ったとても自然なお礼です！",
-        feedbackEn: "Natural Japanese using 'tasukarimashita' to acknowledge helpful assistance.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. This is a very natural way to express gratitude using “It was a big help”!",
         nextNodeId: "node-end-success",
       },
       {
@@ -469,7 +494,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "rude",
         points: -10,
         feedbackJa: "親切に教えてくれた相手に不満を言うのは失礼です。",
-        feedbackEn: "Grumbling about walking distance after someone took time to help is rude.",
+        feedbackEn:
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. It is rude to express dissatisfaction toward someone who has kindly taught you something.",
         nextNodeId: "node-end-awkward",
       },
     ],
@@ -497,7 +523,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "「助かりました」と深い感謝を添えていてとても好印象です！",
-        feedbackEn: "Polite and heartfelt conclusion.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. It makes a very good impression to add “That was a big help” along with a deep expression of gratitude!",
         nextNodeId: "node-end-success",
       },
       {
@@ -509,7 +536,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 85,
         feedbackJa: "不安な点を丁寧に追加質問して確認できました。",
-        feedbackEn: "Politely clarifying uncertain details to avoid getting lost.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. I was able to clarify my concerns by politely asking follow-up questions.",
         nextNodeId: "node-3-npc-directions",
       },
       {
@@ -521,7 +549,8 @@ export const DIRECTIONS_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 50,
         feedbackJa: "少しぶっきらぼうに聞こえることがあります。",
-        feedbackEn: "Can sound slightly curt with someone who just helped you.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. It may sound a little brusque at times.",
         nextNodeId: "node-end-awkward",
       },
     ],

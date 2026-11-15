@@ -55,7 +55,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ええ、どうぞ。{空い|あい}ていますよ。",
         "en": "Sure, go ahead. It's open.",
         "isCorrect": true,
-        "explanation": "Natural polite permission stating the seat is open."
+        "explanation": "[Natural Response] A natural, polite way to ask if the seat is open."
       },
       {
         "id": "opt-2",
@@ -65,7 +65,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I won't sit down.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Answers about yourself sitting, but the other person asked if the seat was unoccupied."
+        "explanation": "[Pragmatic Intent Trap] You answered that you were sitting, but the other person asked if the seat was unoccupied."
       },
       {
         "id": "opt-3",
@@ -75,7 +75,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "You're welcome.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Means 'You are welcome', which makes no sense before a favor or thanks."
+        "explanation": "[Register Mismatch Trap] It means \"you are welcome,\" which makes no sense before asking for a favor or thanking someone."
       }
     ]
   },
@@ -97,7 +97,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "いってらっしゃい、{気|き}をつけてね。",
         "en": "Have a good trip, and be careful.",
         "isCorrect": true,
-        "explanation": "Standard set response to someone leaving home."
+        "explanation": "[Natural Response] This is the standard response when someone leaves home."
       },
       {
         "id": "opt-2",
@@ -107,7 +107,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Welcome back.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Said to someone returning home, not leaving."
+        "explanation": "[Pragmatic Intent Trap] It's said to someone who is returning home, not leaving."
       },
       {
         "id": "opt-3",
@@ -117,7 +117,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Thank you for the meal.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Said after finishing a meal, not when someone leaves."
+        "explanation": "[Register Mismatch Trap] It's said after finishing a meal, not when someone leaves."
       }
     ]
   },
@@ -139,7 +139,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "おかえりなさい、{お疲れ様|おつかれさま}。",
         "en": "Welcome back. You must be tired.",
         "isCorrect": true,
-        "explanation": "Standard set response welcoming someone home."
+        "explanation": "[Natural Response] This is the standard response to welcome someone home."
       },
       {
         "id": "opt-2",
@@ -149,7 +149,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Have a good trip.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Said when someone leaves the house, not when returning."
+        "explanation": "[Pragmatic Intent Trap] It's said when someone leaves the house, not when they return."
       },
       {
         "id": "opt-3",
@@ -159,7 +159,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Let’s eat.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Said before eating a meal."
+        "explanation": "[Register Mismatch Trap] This is said before eating a meal."
       }
     ]
   },
@@ -181,7 +181,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "うん、どうぞ{使っ|つかっ}て。",
         "en": "Sure, go ahead and use it.",
         "isCorrect": true,
-        "explanation": "Casual polite consent giving permission to use the pen."
+        "explanation": "[Natural Response] A casual, polite way of giving permission to use the pen."
       },
       {
         "id": "opt-2",
@@ -191,7 +191,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I borrowed it.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense 'I borrowed it', but the speaker is asking for permission now."
+        "explanation": "[Grammar & Tense Trap] The speaker used the past tense, \"I borrowed it,\" but is now asking for permission."
       },
       {
         "id": "opt-3",
@@ -201,7 +201,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, please lend it to me.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Asks them to lend to you instead of granting permission."
+        "explanation": "[Pragmatic Intent Trap] Instead of granting permission, ask them to lend it to you."
       }
     ]
   },
@@ -223,7 +223,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "お{大事|だいじ}に。{無理|むり}しないでね。",
         "en": "Take care. Don't push yourself too hard.",
         "isCorrect": true,
-        "explanation": "The standard phrase of caring said to someone sick or unwell."
+        "explanation": "[Natural Response] It is the standard phrase said to someone who is sick or unwell."
       },
       {
         "id": "opt-2",
@@ -233,7 +233,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Thank you for the meal.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Set meal greeting, completely out of context."
+        "explanation": "[Pragmatic Intent Trap] A set meal greeting that is completely out of context."
       },
       {
         "id": "opt-3",
@@ -243,7 +243,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Nice to meet you.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "First-meeting introduction greeting."
+        "explanation": "[Register Mismatch Trap] A greeting for the first meeting."
       }
     ]
   },
@@ -265,7 +265,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "はい、とてもおいしかったです。ごちそうさまでした。",
         "en": "Yes, it was very delicious. Thank you for the meal.",
         "isCorrect": true,
-        "explanation": "Polite gratitude after eating."
+        "explanation": "[Natural Response] Show polite gratitude after eating."
       },
       {
         "id": "opt-2",
@@ -275,7 +275,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, thank you.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "'Itadakimasu' is only said before eating, not after finishing."
+        "explanation": "[Grammar & Tense Trap] \"Itadakimasu\" is said only before eating, not after."
       },
       {
         "id": "opt-3",
@@ -285,7 +285,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Congratulations.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Congratulations greeting, inappropriate for finishing a meal."
+        "explanation": "[Pragmatic Intent Trap] A congratulations greeting is inappropriate for the end of a meal."
       }
     ]
   },
@@ -307,7 +307,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{お疲れ様|おつかれさま}でした。{気|き}をつけて。",
         "en": "Thanks for your hard work today. Be careful on your way home.",
         "isCorrect": true,
-        "explanation": "Standard workplace reply to someone leaving work before you."
+        "explanation": "[Natural Response] A standard workplace response to someone leaving work before you."
       },
       {
         "id": "opt-2",
@@ -317,7 +317,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I'm sorry, my apologies.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Apology for a mistake, not a response to a coworker leaving."
+        "explanation": "[Pragmatic Intent Trap] It's an apology for a mistake, not a response to a coworker leaving."
       },
       {
         "id": "opt-3",
@@ -327,7 +327,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I'm off.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Said by the person leaving home/office for an errand."
+        "explanation": "[Register Mismatch Trap] This is said by the person who is leaving their home or office to run an errand."
       }
     ]
   },
@@ -349,7 +349,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ありがとうございます。いただきます。",
         "en": "Thank you. I’ll dig in.",
         "isCorrect": true,
-        "explanation": "Polite acceptance of a second cup of coffee."
+        "explanation": "[Natural Response] Accepting a second cup of coffee politely."
       },
       {
         "id": "opt-2",
@@ -359,7 +359,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, here's your coffee.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Simply defines what it is rather than accepting or declining."
+        "explanation": "[Pragmatic Intent Trap] It simply defines what it is, rather than accepting or declining."
       },
       {
         "id": "opt-3",
@@ -369,7 +369,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I did.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Unnatural refusal sounding like 'No, I already drank'."
+        "explanation": "[Grammar & Tense Trap] It sounds unnatural, like \"No, I already drank.\""
       }
     ]
   },
@@ -391,7 +391,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ええ、この{道|みち}をまっすぐ{行く|いく}とありますよ。",
         "en": "Yes, it’s right down this street.",
         "isCorrect": true,
-        "explanation": "Clear, helpful directions given in response."
+        "explanation": "[Natural Response] Clear and helpful directions were provided in response."
       },
       {
         "id": "opt-2",
@@ -401,7 +401,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I didn't tell him.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense 'No, I didn't teach you', rude and ungrammatical."
+        "explanation": "[Grammar & Tense Trap] In the past tense, \"No, I didn't teach you\" is rude and ungrammatical."
       },
       {
         "id": "opt-3",
@@ -411,7 +411,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I'll be on my way.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Humble phrase for leaving on an errand yourself."
+        "explanation": "[Pragmatic Intent Trap] A humble phrase for setting out on an errand yourself."
       }
     ]
   },
@@ -433,7 +433,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "すみません、まだ{出し|だし}ていません。",
         "en": "I'm sorry, I haven't posted it yet.",
         "isCorrect": true,
-        "explanation": "Natural polite admission that homework is not yet submitted."
+        "explanation": "[Natural Response] A natural, polite way to admit that homework has not yet been submitted."
       },
       {
         "id": "opt-2",
@@ -443,7 +443,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’ll assign some homework.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Non-past tense 'I will submit', doesn't answer whether it was submitted already."
+        "explanation": "[Grammar & Tense Trap] The non-past tense \"I will submit\" does not answer the question of whether it has already been submitted."
       },
       {
         "id": "opt-3",
@@ -453,7 +453,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I already sent it.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Contradicts itself by saying 'No, I submitted it'."
+        "explanation": "[Pragmatic Intent Trap] It contradicts itself by saying, \"No, I submitted it.\""
       }
     ]
   },
@@ -475,7 +475,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "そうですね、{混ん|こん}でいないといいですね。",
         "en": "Yeah, I hope it isn't too crowded.",
         "isCorrect": true,
-        "explanation": "Agrees with the statement and adds a natural thought."
+        "explanation": "[Natural Response] He agrees with the statement and adds a related idea."
       },
       {
         "id": "opt-2",
@@ -485,7 +485,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, he didn't come.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense 'didn't come', but the train is arriving now."
+        "explanation": "[Grammar & Tense Trap] The train didn't come in the past tense, but it is arriving now."
       },
       {
         "id": "opt-3",
@@ -495,7 +495,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Excuse me.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Greeting when visiting someone's house, not waiting for a train."
+        "explanation": "[Register Mismatch Trap] A greeting when visiting someone's house, not when waiting for a train."
       }
     ]
   },
@@ -517,7 +517,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "あ、{見|み}ているだけです。ありがとう。",
         "en": "Oh, I'm just watching. Thank you.",
         "isCorrect": true,
-        "explanation": "Standard polite response 'Just looking, thank you'."
+        "explanation": "[Natural Response] The standard polite response is, \"Just looking. Thank you.\""
       },
       {
         "id": "opt-2",
@@ -527,7 +527,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I won't look for it.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Blunt refusal 'Yes, I do not search'."
+        "explanation": "[Pragmatic Intent Trap] A blunt refusal: \"Yes, I don't search.\""
       },
       {
         "id": "opt-3",
@@ -537,7 +537,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "You're welcome. Here you go.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Said in response to thanks, out of place here."
+        "explanation": "[Register Mismatch Trap] It was said in response to the thanks and is out of place here."
       }
     ]
   },
@@ -559,7 +559,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{分かり|わかり}ました。ありがとうございます。",
         "en": "I understand. Thank you.",
         "isCorrect": true,
-        "explanation": "Polite acknowledgement of the borrowing rules."
+        "explanation": "[Natural Response] A polite acknowledgment of the borrowing rules."
       },
       {
         "id": "opt-2",
@@ -569,7 +569,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, please lend it to me.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Asks them to lend it when they just explained the loan period."
+        "explanation": "[Pragmatic Intent Trap] They just explained the loan period, and now they're asking them to lend it."
       },
       {
         "id": "opt-3",
@@ -579,7 +579,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Excuse me for barging in.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Phrase for entering someone's home, not borrowing a book."
+        "explanation": "[Register Mismatch Trap] This phrase is used when entering someone's home, not when borrowing a book."
       }
     ]
   },
@@ -601,7 +601,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "はい、{折りたたみ|おりたたみ}{傘|かさ}があります。",
         "en": "Yes, I have a folding umbrella.",
         "isCorrect": true,
-        "explanation": "Direct, helpful confirmation of having an umbrella."
+        "explanation": "[Natural Response] It's a direct, helpful confirmation that you have an umbrella."
       },
       {
         "id": "opt-2",
@@ -611,7 +611,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, it rained.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "States that it rained rather than answering about having an umbrella."
+        "explanation": "[Pragmatic Intent Trap] It states that it rained rather than answering the question of whether or not they had an umbrella."
       },
       {
         "id": "opt-3",
@@ -621,7 +621,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I didn't use an umbrella.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense 'I didn't open an umbrella', doesn't answer if you have one."
+        "explanation": "[Grammar & Tense Trap] The past tense \"I didn't open an umbrella\" doesn't answer the question of whether or not you have one."
       }
     ]
   },
@@ -643,7 +643,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{助かり|たすかり}ます、ありがとうございます！",
         "en": "That's a big help—thank you!",
         "isCorrect": true,
-        "explanation": "Standard warm acceptance of an offer to help."
+        "explanation": "[Natural Response] This is the standard warm acceptance of an offer to help."
       },
       {
         "id": "opt-2",
@@ -653,7 +653,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I'll help you.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Confuses the speaker roles, answering 'Yes, I will help'."
+        "explanation": "[Pragmatic Intent Trap] It confuses the speaker roles by answering \"Yes, I will help.\""
       },
       {
         "id": "opt-3",
@@ -663,7 +663,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, it wasn't heavy.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense 'it was not heavy', but you are carrying it right now."
+        "explanation": "[Grammar & Tense Trap] It was not heavy in the past tense, but you are carrying it right now."
       }
     ]
   },
@@ -685,7 +685,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "５{階|かい}を{お願い|おねがい}します。",
         "en": "Please take me to the 5th floor.",
         "isCorrect": true,
-        "explanation": "Standard polite request for an elevator floor."
+        "explanation": "[Natural Response] A standard, polite request for an elevator floor."
       },
       {
         "id": "opt-2",
@@ -695,7 +695,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I went to the fifth floor.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense 'I went to the 5th floor'."
+        "explanation": "[Grammar & Tense Trap] In the past tense, it would be \"I went to the fifth floor.\""
       },
       {
         "id": "opt-3",
@@ -705,7 +705,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I'll take the stairs.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Unnatural inside an elevator you just stepped into."
+        "explanation": "[Pragmatic Intent Trap] It feels unnatural inside the elevator you just stepped into."
       }
     ]
   },
@@ -727,7 +727,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "はい、{分かり|わかり}ました。",
         "en": "Yes, I understand.",
         "isCorrect": true,
-        "explanation": "Standard polite consent to wait a moment."
+        "explanation": "[Natural Response] A standard, polite way to ask someone to wait a moment."
       },
       {
         "id": "opt-2",
@@ -737,7 +737,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I won't wait.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Rude refusal to wait."
+        "explanation": "[Pragmatic Intent Trap] A rude refusal to wait."
       },
       {
         "id": "opt-3",
@@ -747,7 +747,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "You're welcome.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Phrased as 'You're welcome', inappropriate here."
+        "explanation": "[Register Mismatch Trap] \"You're welcome\" is phrased incorrectly here."
       }
     ]
   },
@@ -769,7 +769,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "いえ、もう{十分|じゅうぶん}いただきました。",
         "en": "No, I’ve had enough already.",
         "isCorrect": true,
-        "explanation": "Polite refusal saying you've had enough."
+        "explanation": "[Natural Response] A polite way to refuse, saying you've had enough."
       },
       {
         "id": "opt-2",
@@ -779,7 +779,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I had another drink.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense 'Yes, I drank another cup'."
+        "explanation": "[Grammar & Tense Trap] In the past tense, it would be \"Yes, I drank another cup.\""
       },
       {
         "id": "opt-3",
@@ -789,7 +789,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I’ll say “Thank you for the meal.”",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Unnatural descriptive phrasing rather than responding."
+        "explanation": "[Pragmatic Intent Trap] It's unnatural descriptive phrasing rather than a response."
       }
     ]
   },
@@ -811,7 +811,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "うん、{特に|とくに}{漢字|かんじ}が{難しかっ|むずかしかっ}たよ。",
         "en": "Yeah, the kanji were especially hard.",
         "isCorrect": true,
-        "explanation": "Agrees naturally and specifies what was difficult."
+        "explanation": "[Natural Response] It naturally agrees and specifies what was difficult."
       },
       {
         "id": "opt-2",
@@ -821,7 +821,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, it gets harder.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Future tense 'it will become difficult', but the test was yesterday."
+        "explanation": "[Grammar & Tense Trap] The future tense is \"it will become difficult,\" but the test was yesterday."
       },
       {
         "id": "opt-3",
@@ -831,7 +831,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I didn't take the test.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Claims you didn't take it when the friend assumes you did."
+        "explanation": "[Pragmatic Intent Trap] Claiming that you didn't take it when your friend assumes that you did."
       }
     ]
   },
@@ -853,7 +853,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "わあ、{嬉しい|うれしい}！ありがとうございます。",
         "en": "Wow, I'm so happy! Thank you very much.",
         "isCorrect": true,
-        "explanation": "Enthusiastic and polite acceptance of a souvenir."
+        "explanation": "[Natural Response] He accepted the souvenir enthusiastically and politely."
       },
       {
         "id": "opt-2",
@@ -863,7 +863,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I'll give you a souvenir.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Confuses giver and receiver: 'I will give a souvenir'."
+        "explanation": "[Pragmatic Intent Trap] It confuses the giver and the receiver: \"I will give a souvenir.\""
       },
       {
         "id": "opt-3",
@@ -873,7 +873,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I didn't need it.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense refusal, extremely blunt and awkward."
+        "explanation": "[Grammar & Tense Trap] It was a past-tense refusal that was extremely blunt and awkward."
       }
     ]
   },
@@ -895,7 +895,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "いいね、ぜひ{行こ|いこ}う！",
         "en": "Sounds good, let's definitely go!",
         "isCorrect": true,
-        "explanation": "Natural enthusiastic acceptance of a casual invitation."
+        "explanation": "[Natural Response] A natural, enthusiastic acceptance of a casual invitation."
       },
       {
         "id": "opt-2",
@@ -905,7 +905,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I ate ramen.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense 'I ate ramen', doesn't answer about tonight."
+        "explanation": "[Grammar & Tense Trap] The past tense, \"I ate ramen,\" doesn't address what I'm eating tonight."
       },
       {
         "id": "opt-3",
@@ -915,7 +915,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I'm not going out to eat.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Unnaturally sharp and aggressive refusal for a friendly invite."
+        "explanation": "[Register Mismatch Trap] It was an unnaturally sharp and aggressive refusal of a friendly invitation."
       }
     ]
   },
@@ -937,7 +937,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "カードで{お願い|おねがい}します。",
         "en": "I'd like to pay by card.",
         "isCorrect": true,
-        "explanation": "Direct selection of payment method."
+        "explanation": "[Natural Response] Select a payment method directly."
       },
       {
         "id": "opt-2",
@@ -947,7 +947,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I paid.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense 'I paid', but you are at the register now."
+        "explanation": "[Grammar & Tense Trap] You used the past tense, \"I paid,\" but now you are at the register."
       },
       {
         "id": "opt-3",
@@ -957,7 +957,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I don't have any money.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Claims to have zero money, inappropriate at checkout."
+        "explanation": "[Pragmatic Intent Trap] Claims to have no money at checkout, which is inappropriate."
       }
     ]
   },
@@ -979,7 +979,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{佐藤|さとう}です。こちらこそよろしく{お願い|おねがい}します。",
         "en": "This is Sato. It’s my pleasure to work with you.",
         "isCorrect": true,
-        "explanation": "Standard reciprocated first-meeting introduction."
+        "explanation": "[Natural Response] A standard, first-meeting introduction."
       },
       {
         "id": "opt-2",
@@ -989,7 +989,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Excuse me for barging in.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Phrase for visiting someone's house."
+        "explanation": "[Register Mismatch Trap] A phrase for when you visit someone's house."
       },
       {
         "id": "opt-3",
@@ -999,7 +999,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "You're welcome.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Means 'You are welcome', inappropriate when introduced."
+        "explanation": "[Pragmatic Intent Trap] It means \"you are welcome,\" but it is inappropriate when introduced."
       }
     ]
   },
@@ -1021,7 +1021,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "はい、{少々|しょうしょう}{お待ち|おまち}ください。",
         "en": "Yes, please wait a moment.",
         "isCorrect": true,
-        "explanation": "Polite acknowledgement and holding for the teacher."
+        "explanation": "[Natural Response] Give the teacher a polite acknowledgment and hold."
       },
       {
         "id": "opt-2",
@@ -1031,7 +1031,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, they weren't here.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense 'they were not here', instead of current absence."
+        "explanation": "[Grammar & Tense Trap] They used the past tense, \"they were not here,\" instead of the present tense to describe their current absence."
       },
       {
         "id": "opt-3",
@@ -1041,7 +1041,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, Mr. Tanaka has arrived.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Lacks appropriate phone etiquette."
+        "explanation": "[Register Mismatch Trap] Lacks proper phone etiquette."
       }
     ]
   },
@@ -1063,7 +1063,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "おはようございます。{暖かく|あたたかく}て{気持ちいい|きもちいい}ですね。",
         "en": "Good morning. It’s warm and feels nice, doesn’t it?",
         "isCorrect": true,
-        "explanation": "Returns the morning greeting and agrees about the weather."
+        "explanation": "[Natural Response] He returns the morning greeting and agrees about the weather."
       },
       {
         "id": "opt-2",
@@ -1073,7 +1073,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Good night.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Said before sleeping at night, not in the morning."
+        "explanation": "[Pragmatic Intent Trap] It's said before going to sleep at night, not in the morning."
       },
       {
         "id": "opt-3",
@@ -1083,7 +1083,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Goodbye, see you tomorrow.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Parting farewell, awkward as an immediate reply to a greeting."
+        "explanation": "[Register Mismatch Trap] A parting farewell is as awkward as an immediate reply to a greeting."
       }
     ]
   },
@@ -1105,7 +1105,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "はい、{分かり|わかり}ました。{気|き}をつけます。",
         "en": "Yes, I understand. I’ll be careful.",
         "isCorrect": true,
-        "explanation": "Polite consent and reassurance to follow medical instructions."
+        "explanation": "[Natural Response] Give polite consent and reassurance that you will follow medical instructions."
       },
       {
         "id": "opt-2",
@@ -1115,7 +1115,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I didn't drink it.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense 'I didn't drink', misses the future instruction."
+        "explanation": "[Grammar & Tense Trap] The past tense, \"I didn't drink,\" misses the future instruction."
       },
       {
         "id": "opt-3",
@@ -1125,7 +1125,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Take care.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Said to the patient, not by the patient to the doctor."
+        "explanation": "[Pragmatic Intent Trap] It was said to the patient, not by the patient to the doctor."
       }
     ]
   },
@@ -1147,7 +1147,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ええ、{少し|すこし}{疲れ|つかれ}ましたが、{大丈夫|だいじょうぶ}です。",
         "en": "Yeah, I'm a little tired, but I'm fine.",
         "isCorrect": true,
-        "explanation": "Natural polite reply validating the concern."
+        "explanation": "[Natural Response] A natural, polite reply that validates the concern."
       },
       {
         "id": "opt-2",
@@ -1157,7 +1157,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Okay, let's get tired.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Volitional 'Let us be tired', completely nonsensical."
+        "explanation": "[Grammar & Tense Trap] The volitional \"Let us be tired\" is completely nonsensical."
       },
       {
         "id": "opt-3",
@@ -1167,7 +1167,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I took a plane.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Simply repeats taking the plane rather than fatigue state."
+        "explanation": "[Pragmatic Intent Trap] It simply repeats the process of taking the plane rather than the fatigue state."
       }
     ]
   },
@@ -1189,7 +1189,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "はい、{行き|いき}ますよ。{次|つぎ}が{市役所|しやくしょ}です。",
         "en": "Okay, let's go. The next stop is City Hall.",
         "isCorrect": true,
-        "explanation": "Helpful, clear confirmation of the bus route."
+        "explanation": "[Natural Response] It was helpful and clear confirmation of the bus route."
       },
       {
         "id": "opt-2",
@@ -1199,7 +1199,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I went.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense 'it went', ambiguous and unhelpful."
+        "explanation": "[Grammar & Tense Trap] The past tense \"it went\" is ambiguous and unhelpful."
       },
       {
         "id": "opt-3",
@@ -1209,7 +1209,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "You're welcome.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Said in response to thank-you, not a question."
+        "explanation": "[Register Mismatch Trap] It was said in response to a thank you, not as a question."
       }
     ]
   },
@@ -1231,7 +1231,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "はい、{先生|せんせい}、この{言葉|ことば}の{意味|いみ}を{教え|おしえ}てください。",
         "en": "Yes, teacher, please tell me what this word means.",
         "isCorrect": true,
-        "explanation": "Raises hand and asks a specific, polite question."
+        "explanation": "[Natural Response] He raises his hand and asks a specific, polite question."
       },
       {
         "id": "opt-2",
@@ -1241,7 +1241,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, there were no questions.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense 'there was no question', unnatural phrasing."
+        "explanation": "[Grammar & Tense Trap] The past tense \"there was no question\" is unnatural phrasing."
       },
       {
         "id": "opt-3",
@@ -1251,7 +1251,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I raised my hand.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Narration of your action rather than asking the question."
+        "explanation": "[Pragmatic Intent Trap] Describe your actions rather than asking the question."
       }
     ]
   },
@@ -1273,7 +1273,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ありがとう、お{邪魔|じゃま}します。",
         "en": "Thank you. I’ll be right in.",
         "isCorrect": true,
-        "explanation": "Standard gratitude and set phrase for entering a home."
+        "explanation": "[Natural Response] It's a standard phrase of gratitude for entering a home."
       },
       {
         "id": "opt-2",
@@ -1283,7 +1283,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, it was cold.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense 'it was cold', ignores the invitation inside."
+        "explanation": "[Grammar & Tense Trap] The past tense, \"It was cold,\" ignores the invitation inside."
       },
       {
         "id": "opt-3",
@@ -1293,7 +1293,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, it didn't get warm.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Contradictory and blunt refusal."
+        "explanation": "[Pragmatic Intent Trap] A contradictory and blunt refusal."
       }
     ]
   },
@@ -1315,7 +1315,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "はい、{お願い|おねがい}します。",
         "en": "Yes, please.",
         "isCorrect": true,
-        "explanation": "Standard polite acceptance of a receipt."
+        "explanation": "[Natural Response] This is a standard, polite way to accept a receipt."
       },
       {
         "id": "opt-2",
@@ -1325,7 +1325,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, it was a receipt.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Nonsensical 'It was a receipt'."
+        "explanation": "[Grammar & Tense Trap] Nonsensical: \"It was a receipt.\""
       },
       {
         "id": "opt-3",
@@ -1335,7 +1335,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "You're welcome.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "You are welcome phrase, out of place."
+        "explanation": "[Register Mismatch Trap] The phrase \"you are welcome\" is out of place."
       }
     ]
   },
@@ -1357,7 +1357,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "すみません、すぐにお{持ち|もち}します！",
         "en": "Sorry, I'll bring it right away!",
         "isCorrect": true,
-        "explanation": "Prompt, responsible response to prepare materials immediately."
+        "explanation": "[Natural Response] Respond promptly and responsibly by preparing the materials immediately."
       },
       {
         "id": "opt-2",
@@ -1367,7 +1367,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, that was the handout.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense 'it was materials', makes no sense."
+        "explanation": "[Grammar & Tense Trap] The past tense \"it was materials\" makes no sense."
       },
       {
         "id": "opt-3",
@@ -1377,7 +1377,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, there is no meeting.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Contradicts the boss about the existence of the meeting."
+        "explanation": "[Pragmatic Intent Trap] Contradicts the boss regarding the existence of the meeting."
       }
     ]
   },
@@ -1399,7 +1399,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{賛成|さんせい}！{冷たい|つめたい}{お茶|おちゃ}でも{飲も|のも}う。",
         "en": "I agree! Let's have some iced tea.",
         "isCorrect": true,
-        "explanation": "Enthusiastic agreement with a suggested rest break."
+        "explanation": "[Natural Response] I enthusiastically agree with the suggestion of a rest break."
       },
       {
         "id": "opt-2",
@@ -1409,7 +1409,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I took the day off.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense 'we rested', contradicts the current tiredness."
+        "explanation": "[Grammar & Tense Trap] The past tense \"we rested\" contradicts our current tiredness."
       },
       {
         "id": "opt-3",
@@ -1419,7 +1419,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Thank you for the meal.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Post-meal phrase, completely unrelated."
+        "explanation": "[Register Mismatch Trap] A post-meal phrase that is completely unrelated."
       }
     ]
   },
@@ -1441,7 +1441,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "すみません、{もう少し|もうすこし}{時間|じかん}をください。",
         "en": "Excuse me, could you give me a little more time?",
         "isCorrect": true,
-        "explanation": "Polite request for a few more minutes to decide."
+        "explanation": "[Natural Response] A polite request for a few more minutes to make a decision."
       },
       {
         "id": "opt-2",
@@ -1451,7 +1451,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I had already decided.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical double past tense."
+        "explanation": "[Grammar & Tense Trap] Double past tense is ungrammatical."
       },
       {
         "id": "opt-3",
@@ -1461,7 +1461,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Please bring the check.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Asks for the bill before ordering."
+        "explanation": "[Pragmatic Intent Trap] Ask for the bill before ordering."
       }
     ]
   },
@@ -1483,7 +1483,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "どうも、ありがとうございました。",
         "en": "Thank you very much.",
         "isCorrect": true,
-        "explanation": "Natural polite parting gratitude from a customer."
+        "explanation": "[Natural Response] It's a natural, polite way for a customer to express gratitude."
       },
       {
         "id": "opt-2",
@@ -1493,7 +1493,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Have a good trip.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Shopkeeper says this to people leaving home, not customer to shopkeeper."
+        "explanation": "[Pragmatic Intent Trap] The shopkeeper says this to people who are leaving their homes, not customers to the shopkeeper."
       },
       {
         "id": "opt-3",
@@ -1503,7 +1503,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Let’s eat.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Meal start greeting, irrelevant here."
+        "explanation": "[Register Mismatch Trap] The meal starts with a greeting, which is irrelevant here."
       }
     ]
   },
@@ -1525,7 +1525,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "かしこまりました。すぐにコピーしてまいります。",
         "en": "Understood. I’ll go make a copy right away.",
         "isCorrect": true,
-        "explanation": "Polite, prompt acceptance of a task using business register."
+        "explanation": "[Natural Response] Use the business register to politely and promptly accept a task."
       },
       {
         "id": "opt-2",
@@ -1535,7 +1535,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I was asked to do that.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Passive past tense 'I was requested', lacks willingness to act."
+        "explanation": "[Grammar & Tense Trap] The passive past tense, \"I was requested,\" lacks a willingness to act."
       },
       {
         "id": "opt-3",
@@ -1545,7 +1545,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, please ask for a copy.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Tells the supervisor to ask someone else."
+        "explanation": "[Pragmatic Intent Trap] Tell the supervisor to ask someone else."
       }
     ]
   },
@@ -1567,7 +1567,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "わあ、ありがとう！{後で|あとで}いただくね。",
         "en": "Wow, thank you! I’ll have some later.",
         "isCorrect": true,
-        "explanation": "Warm gratitude using humble verb itadaku."
+        "explanation": "[Natural Response] Expression of warm gratitude using the humble verb itadaku."
       },
       {
         "id": "opt-2",
@@ -1577,7 +1577,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I put it in for you.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Claims you did them a favor of putting it in."
+        "explanation": "[Pragmatic Intent Trap] They claim that you did them a favor by putting it in."
       },
       {
         "id": "opt-3",
@@ -1587,7 +1587,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I'll feed you.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Causative-giving 'I will let you eat it', condescending."
+        "explanation": "[Keigo Mismatch Trap] The causative \"I will let you eat it\" sounds condescending."
       }
     ]
   },
@@ -1609,7 +1609,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "はい、２{時|じ}{以降|いこう}でしたらいつでも{大丈夫|だいじょうぶ}です。",
         "en": "Yes, anytime after 2:00 is fine.",
         "isCorrect": true,
-        "explanation": "Direct, helpful confirmation of your availability."
+        "explanation": "[Natural Response] Get direct, helpful confirmation of your availability."
       },
       {
         "id": "opt-2",
@@ -1619,7 +1619,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I won’t give you any time.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Insulting 'I will not give you my time' using ageru."
+        "explanation": "[Keigo Mismatch Trap] Using ageru, he said, \"I will not give you my time.\""
       },
       {
         "id": "opt-3",
@@ -1629,7 +1629,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "It’s afternoon now.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "States that it became afternoon, ignoring the scheduling request."
+        "explanation": "[Grammar & Tense Trap] It states that it became afternoon, ignoring the scheduling request."
       }
     ]
   },
@@ -1651,7 +1651,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ええ、どうぞ。ちょっと{暑い|あつい}と{思っ|おもっ}ていました。",
         "en": "Yes, go ahead. I was thinking it was a little hot.",
         "isCorrect": true,
-        "explanation": "Agrees with the temperature adjustment politely."
+        "explanation": "[Natural Response] He politely agrees with the temperature adjustment."
       },
       {
         "id": "opt-2",
@@ -1661,7 +1661,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, you didn't turn it down.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past negative honorific, completely contradicts the context."
+        "explanation": "[Grammar & Tense Trap] The past negative honorific completely contradicts the context."
       },
       {
         "id": "opt-3",
@@ -1671,7 +1671,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, let's lower it.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Says 'No, let us lower it', logically inconsistent."
+        "explanation": "[Pragmatic Intent Trap] \"No, let us lower it\" is logically inconsistent."
       }
     ]
   },
@@ -1693,7 +1693,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "いいですよ、この{青い|あおい}ペンを{使っ|つかっ}てください。",
         "en": "Sure, go ahead and use this blue pen.",
         "isCorrect": true,
-        "explanation": "Willingly lends a pen."
+        "explanation": "[Natural Response] He willingly lends a pen."
       },
       {
         "id": "opt-2",
@@ -1703,7 +1703,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I let them borrow it.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Confuses giving/receiving direction with past tense."
+        "explanation": "[Grammar & Tense Trap] He confuses giving and receiving directions with the past tense."
       },
       {
         "id": "opt-3",
@@ -1713,7 +1713,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "You're welcome. I'll lend it to you.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Says 'You are welcome' before the favor has occurred."
+        "explanation": "[Register Mismatch Trap] They say \"you are welcome\" before the favor has even occurred."
       }
     ]
   },
@@ -1735,7 +1735,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{本当|ほんとう}ですか？そう{言っ|いっ}ていただけて{安心|あんしん}しました。",
         "en": "Is that true? I’m relieved to hear you say that.",
         "isCorrect": true,
-        "explanation": "Humble gratitude and relief in response to praise."
+        "explanation": "[Natural Response] Responding to praise with humble gratitude and relief."
       },
       {
         "id": "opt-2",
@@ -1745,7 +1745,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, that was easy to understand.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Overly boastful and self-congratulatory in Japanese."
+        "explanation": "[Register Mismatch Trap] It is overly boastful and self-congratulatory in Japanese."
       },
       {
         "id": "opt-3",
@@ -1755,7 +1755,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I didn't give a presentation.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Claims you didn't present when you just did."
+        "explanation": "[Pragmatic Intent Trap] You made claims that you didn't present."
       }
     ]
   },
@@ -1777,7 +1777,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{落ち着い|おちつい}てポケットやカバンを{探し|さがし}てみて。",
         "en": "Take a moment to calmly check your pockets and bag.",
         "isCorrect": true,
-        "explanation": "Sympathetic and constructive advice to calm down and look."
+        "explanation": "[Natural Response] Sympathetic and constructive advice to help you calm down and take a look."
       },
       {
         "id": "opt-2",
@@ -1787,7 +1787,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I understand.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Answers as if you were the one who lost the ticket."
+        "explanation": "[Pragmatic Intent Trap] Answer as if you were the one who lost the ticket."
       },
       {
         "id": "opt-3",
@@ -1797,7 +1797,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "He bought me a ticket.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Says someone bought you a ticket, irrelevant."
+        "explanation": "[Keigo Mismatch Trap] It's irrelevant that someone bought you a ticket."
       }
     ]
   },
@@ -1819,7 +1819,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ええ、いいですよ。まずここにログインしてください。",
         "en": "Sure, that's fine. First, please log in here.",
         "isCorrect": true,
-        "explanation": "Agrees to help and provides the first instruction."
+        "explanation": "[Natural Response] He agrees to help and provides the first instruction."
       },
       {
         "id": "opt-2",
@@ -1829,7 +1829,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I was able to tell them.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Awkward potential past tense with ageru."
+        "explanation": "[Grammar & Tense Trap] There's an awkward potential past tense with ageru."
       },
       {
         "id": "opt-3",
@@ -1839,7 +1839,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, please let me use it.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Asks them to let you use it instead."
+        "explanation": "[Pragmatic Intent Trap] Ask them if you can use it instead."
       }
     ]
   },
@@ -1861,7 +1861,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ぜひ{行き|いき}たい！{誘っ|さそっ}てくれてありがとう。",
         "en": "I’d love to go! Thanks for asking me.",
         "isCorrect": true,
-        "explanation": "Warm acceptance and thanks for the invitation."
+        "explanation": "[Natural Response] Thank you for the warm invitation."
       },
       {
         "id": "opt-2",
@@ -1871,7 +1871,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, it was Saturday.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense 'it was Saturday', misses the invite."
+        "explanation": "[Grammar & Tense Trap] The past tense, \"It was Saturday,\" misses the invitation."
       },
       {
         "id": "opt-3",
@@ -1881,7 +1881,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I gave you a ticket.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Claims you gave them the tickets."
+        "explanation": "[Pragmatic Intent Trap] They claim you gave them the tickets."
       }
     ]
   },
@@ -1903,7 +1903,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ちょうど{飲み|のみ}たかったんです。いただきます！",
         "en": "I was just about to have a drink. Here I go!",
         "isCorrect": true,
-        "explanation": "Expresses perfect timing and humble acceptance."
+        "explanation": "[Natural Response] It expresses perfect timing and humble acceptance."
       },
       {
         "id": "opt-2",
@@ -1913,7 +1913,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I made a fresh cup.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Claims you made the coffee instead."
+        "explanation": "[Pragmatic Intent Trap] Claim that you made the coffee."
       },
       {
         "id": "opt-3",
@@ -1923,7 +1923,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, let's make some coffee.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Offers to brew coffee when fresh coffee is already available."
+        "explanation": "[Register Mismatch Trap] He offers to brew coffee even though there is already fresh coffee available."
       }
     ]
   },
@@ -1945,7 +1945,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "あそこの{角|かく}を{右|みぎ}に{曲がる|まがる}と、すぐ{見え|みえ}ますよ。",
         "en": "If you turn right at that corner, you'll see it right away.",
         "isCorrect": true,
-        "explanation": "Clear directions given with conditional/locational markers."
+        "explanation": "[Natural Response] Clear directions are given using conditional and locational markers."
       },
       {
         "id": "opt-2",
@@ -1955,7 +1955,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I went to the museum.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense 'I went', doesn't give directions."
+        "explanation": "[Grammar & Tense Trap] The past tense \"I went\" doesn't provide directions."
       },
       {
         "id": "opt-3",
@@ -1965,7 +1965,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "You shouldn't go.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Abrupt discouragement without context."
+        "explanation": "[Pragmatic Intent Trap] Abrupt discouragement without context."
       }
     ]
   },
@@ -1987,7 +1987,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ええ、{構い|かまい}ませんよ。{鍵|かぎ}は{玄関|げんかん}にあります。",
         "en": "Sure, that's fine. The key is by the front door.",
         "isCorrect": true,
-        "explanation": "Grants permission courteously."
+        "explanation": "[Natural Response] Courteously grants permission."
       },
       {
         "id": "opt-2",
@@ -1997,7 +1997,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’ll let you use it.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Unnatural and arrogant phrasing towards a neighbor."
+        "explanation": "[Keigo Mismatch Trap] It's unnatural and arrogant to speak to a neighbor like that."
       },
       {
         "id": "opt-3",
@@ -2007,7 +2007,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I already got on.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Irrelevant statement that you rode it."
+        "explanation": "[Pragmatic Intent Trap] It's irrelevant that you rode it."
       }
     ]
   },
@@ -2029,7 +2029,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{大丈夫|だいじょうぶ}だよ、{私|わたし}もさっき{着い|つい}たばかりだから。",
         "en": "It's okay—I just got here a moment ago, too.",
         "isCorrect": true,
-        "explanation": "Comforting reassuring reply to a friend's apology."
+        "explanation": "[Natural Response] A comforting, reassuring reply to a friend's apology."
       },
       {
         "id": "opt-2",
@@ -2039,7 +2039,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yeah, I'm running late.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Cold and blunt confirmation rather than smoothing things over."
+        "explanation": "[Register Mismatch Trap] It was a cold and blunt confirmation, rather than smoothing things over."
       },
       {
         "id": "opt-3",
@@ -2049,7 +2049,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "You're welcome. Hurry up.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Says you are welcome followed by an order to hurry."
+        "explanation": "[Pragmatic Intent Trap] It says you are welcome, followed by an order to hurry."
       }
     ]
   },
@@ -2071,7 +2071,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "そうですね、でもいい{汗|あせ}をかきましたね。",
         "en": "Yeah, that’s true—but I really worked up a sweat.",
         "isCorrect": true,
-        "explanation": "Empathetic agreement with positive spin."
+        "explanation": "[Natural Response] Empathetic agreement with a positive spin."
       },
       {
         "id": "opt-2",
@@ -2081,7 +2081,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, it wasn't too hard.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Direct contradiction using awkward past negative."
+        "explanation": "[Grammar & Tense Trap] It's a direct contradiction, using an awkward past negative."
       },
       {
         "id": "opt-3",
@@ -2091,7 +2091,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I said, “Thank you for your hard work.”",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Descriptive narration instead of engaging."
+        "explanation": "[Pragmatic Intent Trap] It's descriptive narration instead of engaging."
       }
     ]
   },
@@ -2113,7 +2113,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "すみません、{助かり|たすかり}ます。よろしく{お願い|おねがい}します。",
         "en": "Excuse me, that would be a big help. Thank you in advance.",
         "isCorrect": true,
-        "explanation": "Polite gratitude and acceptance of a senior's help."
+        "explanation": "[Natural Response] Show polite gratitude and acceptance when receiving help from a senior."
       },
       {
         "id": "opt-2",
@@ -2123,7 +2123,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, please carry it for me.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Using 'te agete kudasai' to a senior is extremely disrespectful."
+        "explanation": "[Keigo Mismatch Trap] It is extremely disrespectful to use \"te agete kudasai\" with a senior."
       },
       {
         "id": "opt-3",
@@ -2133,7 +2133,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I'm done carrying it.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Claims the task is done when you are still holding the box."
+        "explanation": "[Grammar & Tense Trap] They claim the task is complete even when you're still holding the box."
       }
     ]
   },
@@ -2155,7 +2155,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "はい、{分かり|わかり}ました。",
         "en": "Yes, I understand.",
         "isCorrect": true,
-        "explanation": "Simple, compliant confirmation to a medical request."
+        "explanation": "[Natural Response] It's a simple, compliant response to a medical request."
       },
       {
         "id": "opt-2",
@@ -2165,7 +2165,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, please let me measure it.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Asks permission to measure the nurse's temperature."
+        "explanation": "[Keigo Mismatch Trap] Ask permission to take the nurse's temperature."
       },
       {
         "id": "opt-3",
@@ -2175,7 +2175,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I had a fever.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical past construction."
+        "explanation": "[Grammar & Tense Trap] This is an ungrammatical past construction."
       }
     ]
   },
@@ -2197,7 +2197,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{先生|せんせい}、こちらの{列|れつ}に３{枚|まい}{足り|たり}ません。",
         "en": "Teacher, we're three sheets short in this row.",
         "isCorrect": true,
-        "explanation": "Clear notification of the shortage."
+        "explanation": "[Natural Response] Provide clear notification of the shortage."
       },
       {
         "id": "opt-2",
@@ -2207,7 +2207,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, that was enough.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Says there was enough when the prompt asked who is short."
+        "explanation": "[Pragmatic Intent Trap] It says there was enough when the prompt asked who was short."
       },
       {
         "id": "opt-3",
@@ -2217,7 +2217,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I handed out the handouts.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Claims you gave out prints."
+        "explanation": "[Grammar & Tense Trap] You claimed that you gave out prints."
       }
     ]
   },
@@ -2239,7 +2239,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "かしこまりました。レシートをお{持ち|もち}でしょうか？",
         "en": "Understood. Do you have your receipt?",
         "isCorrect": true,
-        "explanation": "Professional retail clerk response requesting the receipt."
+        "explanation": "[Natural Response] The professional retail clerk responded by requesting the receipt."
       },
       {
         "id": "opt-2",
@@ -2249,7 +2249,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I won't exchange it for you.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Rude refusal with 'te ageru'."
+        "explanation": "[Keigo Mismatch Trap] A rude refusal with \"te ageru.\""
       },
       {
         "id": "opt-3",
@@ -2259,7 +2259,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, the size fits.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Directly contradicts the customer's issue."
+        "explanation": "[Pragmatic Intent Trap] This directly contradicts the customer's issue."
       }
     ]
   },
@@ -2281,7 +2281,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "うん、{分かっ|わかっ}た。{持っ|もっ}ていくね。",
         "en": "Yeah, got it. I'll bring it.",
         "isCorrect": true,
-        "explanation": "Casual obedient response to family advice."
+        "explanation": "[Natural Response] A casual, obedient response to family advice."
       },
       {
         "id": "opt-2",
@@ -2291,7 +2291,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, it rained.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Causative 'I made it rain', nonsensical."
+        "explanation": "[Grammar & Tense Trap] The causative \"I made it rain\" is nonsensical."
       },
       {
         "id": "opt-3",
@@ -2301,7 +2301,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, it was an umbrella.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Irrelevant copula statement."
+        "explanation": "[Pragmatic Intent Trap] An irrelevant copula statement."
       }
     ]
   },
@@ -2323,7 +2323,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{確か|たしか}、{午後|ごご}３{時|じ}から{大|だい}{会議|かいぎ}{室|しつ}だったと{思う|おもう}よ。",
         "en": "I'm pretty sure it was in the large conference room starting at 3:00 p.m.",
         "isCorrect": true,
-        "explanation": "Helpful recall of the meeting time and room."
+        "explanation": "[Natural Response] This is a helpful reminder of the meeting time and room."
       },
       {
         "id": "opt-2",
@@ -2333,7 +2333,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, it was a meeting.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense doesn't answer the time."
+        "explanation": "[Grammar & Tense Trap] The past tense doesn't indicate time."
       },
       {
         "id": "opt-3",
@@ -2343,7 +2343,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, it's not the time.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Nonsensical answer to a 'nanji' question."
+        "explanation": "[Pragmatic Intent Trap] It's a nonsensical answer to a \"nanji\" question."
       }
     ]
   },
@@ -2365,7 +2365,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{指定|してい}{席|せき}を{一|いち}{枚|まい}{お願い|おねがい}します。",
         "en": "I’d like one reserved seat, please.",
         "isCorrect": true,
-        "explanation": "Direct selection of the reserved seat option."
+        "explanation": "[Natural Response] Select the reserved seat option directly."
       },
       {
         "id": "opt-2",
@@ -2375,7 +2375,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’m seated now.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Nonsensical 'it became a seat'."
+        "explanation": "[Grammar & Tense Trap] The nonsensical \"it became a seat.\""
       },
       {
         "id": "opt-3",
@@ -2385,7 +2385,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Neither of them is here.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Uses 'imasen' (animate) instead of selecting ticket type."
+        "explanation": "[Pragmatic Intent Trap] It uses \"imasen\" (animate) instead of selecting the ticket type."
       }
     ]
   },
@@ -2407,7 +2407,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{承知|しょうち}いたしました。{本日|ほんじつ}{中|ちゅう}に{確認|かくにん}いたします。",
         "en": "Understood. I’ll check on it today.",
         "isCorrect": true,
-        "explanation": "Proper business acknowledgement with kenjougo."
+        "explanation": "[Natural Response] Proper business acknowledgment with Kenjougo."
       },
       {
         "id": "opt-2",
@@ -2417,7 +2417,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’ll take a look at it for you.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Disrespectful 'te ageru' used towards one's superior."
+        "explanation": "[Keigo Mismatch Trap] \"Te ageru\" is a disrespectful term used towards one's superior."
       },
       {
         "id": "opt-3",
@@ -2427,7 +2427,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, it was a report.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Irrelevant statement."
+        "explanation": "[Grammar & Tense Trap] This is an irrelevant statement."
       }
     ]
   },
@@ -2449,7 +2449,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "おいしそう！{遠慮なく|えんりょなく}いただきます。",
         "en": "That looks delicious! I’ll help myself without hesitation.",
         "isCorrect": true,
-        "explanation": "Standard polite appreciation before trying someone's food."
+        "explanation": "[Natural Response] It's standard to show polite appreciation before trying someone's food."
       },
       {
         "id": "opt-2",
@@ -2459,7 +2459,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, it didn't suit my taste.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Insulting past tense statement before even tasting it."
+        "explanation": "[Grammar & Tense Trap] It's an insulting statement in the past tense before you've even tasted it."
       },
       {
         "id": "opt-3",
@@ -2469,7 +2469,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I won't let him eat it.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Nonsensical refusal."
+        "explanation": "[Pragmatic Intent Trap] A nonsensical refusal."
       }
     ]
   },
@@ -2491,7 +2491,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{同感|どうかん}だよ。{次|つぎ}のテストに{向け|むけ}て{頑張ろ|がんばろ}う。",
         "en": "I agree. Let's do our best for the next test.",
         "isCorrect": true,
-        "explanation": "Sympathizes with the regret and encourages for the future."
+        "explanation": "[Natural Response] They sympathize with the regret and encourage you for the future."
       },
       {
         "id": "opt-2",
@@ -2501,7 +2501,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, you studied hard.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Contradicts their stated regret of not studying enough."
+        "explanation": "[Pragmatic Intent Trap] This contradicts their stated regret of not studying enough."
       },
       {
         "id": "opt-3",
@@ -2511,7 +2511,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I was made to study it.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Unsolicited passive complaint."
+        "explanation": "[Keigo Mismatch Trap] Passive complaint received unsolicitedly."
       }
     ]
   },
@@ -2533,7 +2533,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ううん、{気|き}にしないで。{席|せき}{取っ|とっ}ておいたよ。",
         "en": "Nah, don't worry about it. I saved you a seat.",
         "isCorrect": true,
-        "explanation": "Warm reassurance and thoughtful preparation."
+        "explanation": "[Natural Response] Warm reassurance and thoughtful preparation."
       },
       {
         "id": "opt-2",
@@ -2543,7 +2543,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I kept you waiting.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Nonsensical arrogant phrasing 'I allowed you to make me wait'."
+        "explanation": "[Keigo Mismatch Trap] The phrasing \"I allowed you to make me wait\" is nonsensical and arrogant."
       },
       {
         "id": "opt-3",
@@ -2553,7 +2553,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "The traffic was heavy.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical double past."
+        "explanation": "[Grammar & Tense Trap] Double past tense is ungrammatical."
       }
     ]
   },
@@ -2575,7 +2575,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ありがとうございます、{お願い|おねがい}できますか。",
         "en": "Thank you. Could you do that for me?",
         "isCorrect": true,
-        "explanation": "Polite gratitude accepting the colleague's offer to pass a message."
+        "explanation": "[Natural Response] Expressed polite gratitude for the colleague's offer to deliver a message."
       },
       {
         "id": "opt-2",
@@ -2585,7 +2585,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’ll let them know.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Confuses who is delivering the message."
+        "explanation": "[Pragmatic Intent Trap] It confuses who is delivering the message."
       },
       {
         "id": "opt-3",
@@ -2595,7 +2595,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, the phone rang.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Irrelevant statement."
+        "explanation": "[Grammar & Tense Trap] This is an irrelevant statement."
       }
     ]
   },
@@ -2617,7 +2617,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{僕|ぼく}がネットで{予約|よやく}しておくよ。",
         "en": "I'll make the reservation online.",
         "isCorrect": true,
-        "explanation": "Proactively volunteers to handle the booking."
+        "explanation": "[Natural Response] Volunteered proactively to handle the booking."
       },
       {
         "id": "opt-2",
@@ -2627,7 +2627,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I went to a hot spring.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense doesn't resolve next month's reservation."
+        "explanation": "[Grammar & Tense Trap] Using the past tense won't resolve next month's reservation."
       },
       {
         "id": "opt-3",
@@ -2637,7 +2637,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Please let me stay at your inn.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Grammatically distorted causative phrasing."
+        "explanation": "[Pragmatic Intent Trap] Grammatically distorted causative phrasing."
       }
     ]
   },
@@ -2659,7 +2659,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{気に入っ|きにいっ}てくれて{嬉しい|うれしい}よ。いつでもまた{貸す|かす}ね。",
         "en": "I'm glad you liked it. I'll lend it to you again anytime.",
         "isCorrect": true,
-        "explanation": "Pleasure in response to someone enjoying a book you lent."
+        "explanation": "[Natural Response] The pleasure of seeing someone enjoy a book you lent them."
       },
       {
         "id": "opt-2",
@@ -2669,7 +2669,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I borrowed it.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Confuses lender and borrower."
+        "explanation": "[Grammar & Tense Trap] It confuses the lender and the borrower."
       },
       {
         "id": "opt-3",
@@ -2679,7 +2679,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I let him read the book.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Arrogant causative-giving construction."
+        "explanation": "[Keigo Mismatch Trap] An arrogant causative construction."
       }
     ]
   },
@@ -2701,7 +2701,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "あ、{持っ|もっ}ていません。{大丈夫|だいじょうぶ}です。",
         "en": "Oh, I don't have it. It's okay.",
         "isCorrect": true,
-        "explanation": "Standard polite answer when you don't have a reward card."
+        "explanation": "[Natural Response] It's the standard polite answer when you don't have a rewards card."
       },
       {
         "id": "opt-2",
@@ -2711,7 +2711,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I have it.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense 'I held it', instead of state 'motte imasu'."
+        "explanation": "[Grammar & Tense Trap] The past tense \"I held it\" is used instead of the state \"motte imasu.\""
       },
       {
         "id": "opt-3",
@@ -2721,7 +2721,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "You're welcome.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Irrelevant reply to a question."
+        "explanation": "[Register Mismatch Trap] This is an irrelevant reply to a question."
       }
     ]
   },
@@ -2743,7 +2743,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "はい、{午前|ごぜん}{中|ちゅう}なら{在宅|ざいたく}しておりますので{大丈夫|だいじょうぶ}です。",
         "en": "Yes, I’ll be home this morning, so that’s fine.",
         "isCorrect": true,
-        "explanation": "Confirms availability politely with kenjougo 'zaitaku shite orimasu'."
+        "explanation": "[Natural Response] He politely confirms his availability with Kenjougo, saying, \"Zaitaku shite orimasu.\""
       },
       {
         "id": "opt-2",
@@ -2753,7 +2753,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, please come by for the inspection.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Contradictory negative with honorific."
+        "explanation": "[Pragmatic Intent Trap] A contradictory negative with an honorific."
       },
       {
         "id": "opt-3",
@@ -2763,7 +2763,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "There was a water faucet.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Irrelevant statement."
+        "explanation": "[Grammar & Tense Trap] This is an irrelevant statement."
       }
     ]
   },
@@ -2785,7 +2785,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "あ、それです！{見つかっ|みつかっ}てよかったです。",
         "en": "Oh, that's it! I'm glad I found it.",
         "isCorrect": true,
-        "explanation": "Relieved confirmation that it is indeed your umbrella."
+        "explanation": "[Natural Response] I am relieved to confirm that it is indeed your umbrella."
       },
       {
         "id": "opt-2",
@@ -2795,7 +2795,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I got that wrong.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Means 'Yes, I made a mistake', admitting fault instead of confirming."
+        "explanation": "[Pragmatic Intent Trap] It means \"Yes, I made a mistake,\" which is admitting fault instead of confirming it."
       },
       {
         "id": "opt-3",
@@ -2805,7 +2805,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, it was an umbrella.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Unnatural past copula."
+        "explanation": "[Grammar & Tense Trap] Unnatural past copula."
       }
     ]
   },
@@ -2827,7 +2827,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "いいね、{気|き}になっていたんだ。{行こ|いこ}う！",
         "en": "Cool, I’ve been wondering about that. Let’s go!",
         "isCorrect": true,
-        "explanation": "Enthusiastic agreement with interest in the new spot."
+        "explanation": "[Natural Response] I enthusiastically agree and am interested in the new spot."
       },
       {
         "id": "opt-2",
@@ -2837,7 +2837,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I fed him pasta.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Causative 'I made someone eat pasta'."
+        "explanation": "[Keigo Mismatch Trap] Causative: \"I made someone eat pasta.\""
       },
       {
         "id": "opt-3",
@@ -2847,7 +2847,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "The pasta was ready.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical double past."
+        "explanation": "[Grammar & Tense Trap] Double past tense is ungrammatical."
       }
     ]
   },
@@ -2869,7 +2869,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ええ、{薬|くすり}のおかげですっかり{良く|よく}なりました。",
         "en": "Yes, thanks to the medicine, I’ve completely recovered.",
         "isCorrect": true,
-        "explanation": "Appreciative confirmation of recovery."
+        "explanation": "[Natural Response] Appreciative confirmation of recovery."
       },
       {
         "id": "opt-2",
@@ -2879,7 +2879,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, it didn't get better.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Contradicts 'yes' with 'it didn't get better'."
+        "explanation": "[Grammar & Tense Trap] It contradicts \"yes\" with \"it didn't get better.\""
       },
       {
         "id": "opt-3",
@@ -2889,7 +2889,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Take care.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Phrased as a wish to the other person."
+        "explanation": "[Pragmatic Intent Trap] It is phrased as a wish to the other person."
       }
     ]
   },
@@ -2911,7 +2911,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{助かり|たすかり}ます、スーツケースを{お願い|おねがい}します。",
         "en": "That would be great. Could you please bring me my suitcase?",
         "isCorrect": true,
-        "explanation": "Grateful acceptance of hotel luggage holding."
+        "explanation": "[Natural Response] We gratefully accept hotel luggage storage."
       },
       {
         "id": "opt-2",
@@ -2921,7 +2921,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, please hold onto it for me.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Inappropriate 'te ageru' used towards staff."
+        "explanation": "[Keigo Mismatch Trap] Inappropriate \"te ageru\" was used toward staff."
       },
       {
         "id": "opt-3",
@@ -2931,7 +2931,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I’ve got it.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Claims the luggage was already deposited."
+        "explanation": "[Grammar & Tense Trap] They claim the luggage was already deposited."
       }
     ]
   },
@@ -2953,7 +2953,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "こちらこそ、{有意義|ゆういぎ}なお{時間|じかん}をありがとうございました。",
         "en": "Thank you as well for the productive time we spent together.",
         "isCorrect": true,
-        "explanation": "Proper polite business reciprocation."
+        "explanation": "[Natural Response] Proper, polite business reciprocity."
       },
       {
         "id": "opt-2",
@@ -2963,7 +2963,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I wasn't busy.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Too casual and discounts the client's polite formula."
+        "explanation": "[Register Mismatch Trap] It's too casual and discounts the client's polite formula."
       },
       {
         "id": "opt-3",
@@ -2973,7 +2973,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "You're welcome. Please come again.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Overly informal and patronizing to a client."
+        "explanation": "[Pragmatic Intent Trap] It was overly informal and patronizing to the client."
       }
     ]
   },
@@ -2995,7 +2995,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "なんとか{金曜|きんよう}の{夕方|ゆうがた}までには{仕上げ|しあげ}ます。",
         "en": "I’ll try to finish it by Friday evening.",
         "isCorrect": true,
-        "explanation": "Professional commitment to meet the revised Friday deadline."
+        "explanation": "[Natural Response] I am committed to meeting the revised Friday deadline."
       },
       {
         "id": "opt-2",
@@ -3005,7 +3005,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, it has been postponed to Friday.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Passive past tense states it as a past fact rather than an active commitment."
+        "explanation": "[Grammar & Tense Trap] The passive past tense states a past fact rather than an active commitment."
       },
       {
         "id": "opt-3",
@@ -3015,7 +3015,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I won't give you an extension.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Rude and arrogant 'te ageru' to a supervisor."
+        "explanation": "[Keigo Mismatch Trap] Being rude and arrogant to a supervisor is unacceptable."
       }
     ]
   },
@@ -3037,7 +3037,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "あいにく{鈴木|すずき}は{席|せき}を{外し|はずし}ております。",
         "en": "Unfortunately, Suzuki is away from his desk.",
         "isCorrect": true,
-        "explanation": "Correct humble kenjougo omitting title for one's own manager."
+        "explanation": "[Natural Response] Correct. It is humble of Kenjugo to omit the title when referring to his own manager."
       },
       {
         "id": "opt-2",
@@ -3047,7 +3047,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Manager Suzuki was not there.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Using honorifics like 'buchou' and 'irassharu' for your in-group manager to an outside client is a classic JLPT trap."
+        "explanation": "[Keigo Mismatch Trap] Using honorifics such as \"buchou\" and \"irassharu\" when referring to your in-group manager in front of an outside client is a classic JLPT trap."
       },
       {
         "id": "opt-3",
@@ -3057,7 +3057,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, this is Suzuki speaking.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "States that Suzuki arrived, rather than whether he is currently present."
+        "explanation": "[Pragmatic Intent Trap] It states that Suzuki arrived rather than whether he is currently present."
       }
     ]
   },
@@ -3079,7 +3079,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{了解|りょうかい}、{何|なん}{部|ぶ}{刷っ|すっ}ておけばいい？",
         "en": "Got it. How many copies should I print?",
         "isCorrect": true,
-        "explanation": "Natural casual agreement asking for page count."
+        "explanation": "[Natural Response] It's a natural, casual way to ask for the page count."
       },
       {
         "id": "opt-2",
@@ -3089,7 +3089,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yeah, I was able to make a copy for you.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Potential past tense boasting before doing the action."
+        "explanation": "[Grammar & Tense Trap] It's potential past tense boasting before the action is done."
       },
       {
         "id": "opt-3",
@@ -3099,7 +3099,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, please let me print it.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Asks permission to print instead."
+        "explanation": "[Pragmatic Intent Trap] Ask for permission to print."
       }
     ]
   },
@@ -3121,7 +3121,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{今|いま}のところ{参加|さんか}できる{予定|よてい}ですよ！",
         "en": "As of now, I plan to participate!",
         "isCorrect": true,
-        "explanation": "Confirms planned attendance cheerfully."
+        "explanation": "[Natural Response] He cheerfully confirms his planned attendance."
       },
       {
         "id": "opt-2",
@@ -3131,7 +3131,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’ll have them come.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Arrogant causative-giving 'I will allow myself to come'."
+        "explanation": "[Keigo Mismatch Trap] Arrogant causative giving: \"I will allow myself to come.\""
       },
       {
         "id": "opt-3",
@@ -3141,7 +3141,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I came to the drinking party.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense doesn't answer about this week's event."
+        "explanation": "[Grammar & Tense Trap] The past tense doesn't address this week's event."
       }
     ]
   },
@@ -3163,7 +3163,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ええ、{急ぎ|いそぎ}ませんので{来週|らいしゅう}でも{構い|かまい}ませんよ。",
         "en": "Yeah, there's no rush, so next week is fine.",
         "isCorrect": true,
-        "explanation": "Generous reassurance about the return timeline."
+        "explanation": "[Natural Response] They provided generous reassurance about the return timeline."
       },
       {
         "id": "opt-2",
@@ -3173,7 +3173,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I gave it back to him.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Confuses who lent and who borrowed."
+        "explanation": "[Grammar & Tense Trap] It confuses who lent and who borrowed."
       },
       {
         "id": "opt-3",
@@ -3183,7 +3183,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I’ll have them return it.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Causative 'I will make you return it', unnaturally hostile."
+        "explanation": "[Keigo Mismatch Trap] The causative \"I will make you return it\" sounds unnaturally hostile."
       }
     ]
   },
@@ -3205,7 +3205,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "なるほど、{具体|ぐたい}{例|れい}を{追加|ついか}して{修正|しゅうせい}してみます。",
         "en": "I see. I’ll revise it by adding some specific examples.",
         "isCorrect": true,
-        "explanation": "Receptive agreement and action plan based on feedback."
+        "explanation": "[Natural Response] Based on feedback, we have developed a receptive agreement and action plan."
       },
       {
         "id": "opt-2",
@@ -3215,7 +3215,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, it didn’t come across clearly when I explained it.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Illogical contradiction."
+        "explanation": "[Pragmatic Intent Trap] An illogical contradiction."
       },
       {
         "id": "opt-3",
@@ -3225,7 +3225,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I was made to explain it in detail.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Complaining passive 'I was forced to explain'."
+        "explanation": "[Grammar & Tense Trap] Passive complaining: \"I was forced to explain.\""
       }
     ]
   },
@@ -3247,7 +3247,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{自動|じどう}{保存|ほぞん}されてるかもしれないから、{一度|いちど}{再|さい}{起動|きどう}してみたら？",
         "en": "It might be auto-saved, so why don't you try restarting it?",
         "isCorrect": true,
-        "explanation": "Calm, practical advice proposing an autosave check."
+        "explanation": "[Natural Response] It offers calm, practical advice and proposes an autosave check."
       },
       {
         "id": "opt-2",
@@ -3257,7 +3257,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, it disappeared, didn't it?",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Cold and unhelpful confirmation."
+        "explanation": "[Register Mismatch Trap] It was a cold and unhelpful confirmation."
       },
       {
         "id": "opt-3",
@@ -3267,7 +3267,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I deleted the data for you.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Means you deleted their data as a favor!"
+        "explanation": "[Keigo Mismatch Trap] It means you deleted their data as a favor!"
       }
     ]
   },
@@ -3289,7 +3289,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "えっ、{本当|ほんとう}ですか？ごちそうになります！",
         "en": "Huh, really? I’d love to!",
         "isCorrect": true,
-        "explanation": "Standard polite acceptance of a treat from a senior."
+        "explanation": "[Natural Response] This is the standard polite way to accept a treat from someone who is older than you."
       },
       {
         "id": "opt-2",
@@ -3299,7 +3299,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, please treat them to a meal.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Using 'te agete' to a senior offering a treat is rude."
+        "explanation": "[Keigo Mismatch Trap] It is rude to use \"te agete\" when offering a treat to a senior."
       },
       {
         "id": "opt-3",
@@ -3309,7 +3309,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, thank you for the meal.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Said after eating, not when the bill is presented."
+        "explanation": "[Grammar & Tense Trap] This is said after eating, not when the bill is presented."
       }
     ]
   },
@@ -3331,7 +3331,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "いえいえ、{全然|ぜんぜん}{気|き}になりませんでしたから{大丈夫|だいじょうぶ}ですよ。",
         "en": "No, no, it didn't bother me at all, so it's fine.",
         "isCorrect": true,
-        "explanation": "Warm neighborly courtesy downplaying the disturbance."
+        "explanation": "[Natural Response] Show warm, neighborly courtesy by downplaying the disturbance."
       },
       {
         "id": "opt-2",
@@ -3341,7 +3341,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I made it resonate.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Bizarre causative-giving statement."
+        "explanation": "[Keigo Mismatch Trap] It's a bizarre causative-giving statement."
       },
       {
         "id": "opt-3",
@@ -3351,7 +3351,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I didn't hear any noise.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical double past."
+        "explanation": "[Grammar & Tense Trap] Double past tense is ungrammatical."
       }
     ]
   },
@@ -3373,7 +3373,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ありがとう、{落ち着い|おちつい}て{全力|ぜんりょく}を{尽くし|つくし}てくるよ。",
         "en": "Thanks. I’ll stay calm and do my best.",
         "isCorrect": true,
-        "explanation": "Encouraged, confident response."
+        "explanation": "[Natural Response] A confident, encouraging response."
       },
       {
         "id": "opt-2",
@@ -3383,7 +3383,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yeah, I made you nervous.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Causative 'I made them nervous'."
+        "explanation": "[Pragmatic Intent Trap] Causative: \"I made them nervous.\""
       },
       {
         "id": "opt-3",
@@ -3393,7 +3393,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I didn't have an interview.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense doesn't match tomorrow's interview."
+        "explanation": "[Grammar & Tense Trap] The past tense doesn't match the interview tomorrow."
       }
     ]
   },
@@ -3415,7 +3415,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{分かり|わかり}ました。すぐにこちらからかけ{直し|なおし}ます。",
         "en": "Got it. I’ll call you right back.",
         "isCorrect": true,
-        "explanation": "Standard professional callback promise."
+        "explanation": "[Natural Response] A standard professional callback promise."
       },
       {
         "id": "opt-2",
@@ -3425,7 +3425,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’ll have them call you back.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Arrogant 'te ageru' used in business context."
+        "explanation": "[Keigo Mismatch Trap] The arrogant \"te-ageru\" is used in a business context."
       },
       {
         "id": "opt-3",
@@ -3435,7 +3435,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I got a phone call.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Irrelevant statement."
+        "explanation": "[Pragmatic Intent Trap] This is an irrelevant statement."
       }
     ]
   },
@@ -3457,7 +3457,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ありがとう、お{言葉|ことば}に{甘え|あまえ}て{少し|すこし}{休ま|やすま}せてもらうね。",
         "en": "Thanks. I’ll take you up on your offer and take a little break.",
         "isCorrect": true,
-        "explanation": "Humble idiom 'okotoba ni amaete' accepting kindness."
+        "explanation": "[Natural Response] The humble idiom \"okotoba ni amaete\" means \"accepting kindness.\""
       },
       {
         "id": "opt-2",
@@ -3467,7 +3467,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’ll let you lie down.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Arrogant phrasing."
+        "explanation": "[Keigo Mismatch Trap] Arrogant phrasing."
       },
       {
         "id": "opt-3",
@@ -3477,7 +3477,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, it was his complexion.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Nonsensical response."
+        "explanation": "[Grammar & Tense Trap] This is a nonsensical response."
       }
     ]
   },
@@ -3499,7 +3499,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "はい、その{時間|じかん}でしたら{問題|もんだい}ございません。",
         "en": "Yes, that time works fine for me.",
         "isCorrect": true,
-        "explanation": "Accommodates the client's schedule change smoothly."
+        "explanation": "[Natural Response] It accommodates changes to the client's schedule smoothly."
       },
       {
         "id": "opt-2",
@@ -3509,7 +3509,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I can't make it any sooner.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Blunt refusal using 'te ageru'."
+        "explanation": "[Keigo Mismatch Trap] A blunt refusal using \"te ageru.\""
       },
       {
         "id": "opt-3",
@@ -3519,7 +3519,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "The meeting is over.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense 'the meeting ended'."
+        "explanation": "[Grammar & Tense Trap] The past tense is \"the meeting ended.\""
       }
     ]
   },
@@ -3541,7 +3541,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{助かる|たすかる}！{駅|えき}まで{一緒|いっしょ}に{入れ|いれ}てもらっていい？",
         "en": "That'd be great! Can you give me a ride to the station?",
         "isCorrect": true,
-        "explanation": "Gratefully shares the umbrella."
+        "explanation": "[Natural Response] He gratefully shares the umbrella."
       },
       {
         "id": "opt-2",
@@ -3551,7 +3551,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, let me put it in your umbrella.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Confuses who owns the umbrella."
+        "explanation": "[Pragmatic Intent Trap] It confuses who owns the umbrella."
       },
       {
         "id": "opt-3",
@@ -3561,7 +3561,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I didn't get wet.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense doesn't answer the offer."
+        "explanation": "[Grammar & Tense Trap] The past tense doesn't respond to the offer."
       }
     ]
   },
@@ -3583,7 +3583,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{店内|てんない}で{お願い|おねがい}します。",
         "en": "Please do that inside the store.",
         "isCorrect": true,
-        "explanation": "Standard choice for dine-in."
+        "explanation": "[Natural Response] The standard choice for dining in."
       },
       {
         "id": "opt-2",
@@ -3593,7 +3593,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’ll have some.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Using honorific meshiaagaru for oneself is an official JLPT trap."
+        "explanation": "[Keigo Mismatch Trap] Using the honorific \"meshiaagaru\" for oneself is an official JLPT trap."
       },
       {
         "id": "opt-3",
@@ -3603,7 +3603,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "You took it home.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Awkward passive past."
+        "explanation": "[Grammar & Tense Trap] Awkward passive past tense."
       }
     ]
   },
@@ -3625,7 +3625,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{確か|たしか}に、{知っ|しっ}ている{内容|ないよう}が{多かっ|おおかっ}たね。",
         "en": "It’s true—there was a lot of material I was familiar with.",
         "isCorrect": true,
-        "explanation": "Agrees thoughtfully with specific reason."
+        "explanation": "[Natural Response] He thoughtfully agrees, giving a specific reason."
       },
       {
         "id": "opt-2",
@@ -3635,7 +3635,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, that’s exactly what I was expecting.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical double past."
+        "explanation": "[Grammar & Tense Trap] Double past tense is ungrammatical."
       },
       {
         "id": "opt-3",
@@ -3645,7 +3645,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, there was no seminar.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Contradicts reality."
+        "explanation": "[Pragmatic Intent Trap] It contradicts reality."
       }
     ]
   },
@@ -3667,7 +3667,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{分かっ|わかっ}た、{後で|あとで}じっくり{見せ|みせ}てもらうよ。",
         "en": "Okay, I'll take a closer look at it later.",
         "isCorrect": true,
-        "explanation": "Manager's natural response agreeing to look it over."
+        "explanation": "[Natural Response] The manager naturally agreed to look it over."
       },
       {
         "id": "opt-2",
@@ -3677,7 +3677,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, you have confirmed it.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Confuses honorific directions."
+        "explanation": "[Keigo Mismatch Trap] He confuses honorific directions."
       },
       {
         "id": "opt-3",
@@ -3687,7 +3687,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I didn't show them the documents.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense statement."
+        "explanation": "[Grammar & Tense Trap] Past tense statement."
       }
     ]
   },
@@ -3709,7 +3709,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "とんでもございません。こちらこそお{招き|まねき}いただき{感謝|かんしゃ}{申し上げ|もうしあげ}ます。",
         "en": "Not at all. I’m the one who should be thanking you for inviting me.",
         "isCorrect": true,
-        "explanation": "Elegant business humility brushing off trouble."
+        "explanation": "[Natural Response] Elegant business humility in the face of trouble."
       },
       {
         "id": "opt-2",
@@ -3719,7 +3719,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’m here.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Applying sonkeigo 'o-koshi' to one's own arrival."
+        "explanation": "[Keigo Mismatch Trap] Using sonkeigo \"o-koshi\" for one's own arrival."
       },
       {
         "id": "opt-3",
@@ -3729,7 +3729,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "You're welcome. It was a long way.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Bluntly complaining about the distance."
+        "explanation": "[Register Mismatch Trap] Complaining bluntly about the distance."
       }
     ]
   },
@@ -3751,7 +3751,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{甲殻|こうかく}{類|るい}のアレルギーがあるから、エビやカニはダメなんだ。",
         "en": "I'm allergic to shellfish, so I can't eat shrimp or crab.",
         "isCorrect": true,
-        "explanation": "Clear dietary restriction explanation."
+        "explanation": "[Natural Response] Clear explanation of dietary restrictions."
       },
       {
         "id": "opt-2",
@@ -3761,7 +3761,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I didn't have any trouble with it.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Awkward past negative."
+        "explanation": "[Grammar & Tense Trap] Awkward past negative."
       },
       {
         "id": "opt-3",
@@ -3771,7 +3771,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I’ll eat it all for you.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Arrogant tone."
+        "explanation": "[Keigo Mismatch Trap] Arrogant tone."
       }
     ]
   },
@@ -3793,7 +3793,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{お気|おき}{遣い|づかい}いただき、{恐れ入り|おそれいり}ます。ありがたく{頂戴|ちょうだい}します。",
         "en": "Thank you very much for your thoughtfulness. I’ll gladly accept it.",
         "isCorrect": true,
-        "explanation": "Formal appreciative receipt of a present."
+        "explanation": "[Natural Response] A formal receipt acknowledging the receipt of a gift."
       },
       {
         "id": "opt-2",
@@ -3803,7 +3803,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "It really is boring, isn't it?",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Takes the humble set phrase literally and insults the giver."
+        "explanation": "[Register Mismatch Trap] He takes the humble set phrase literally and insults the person who gave it to him."
       },
       {
         "id": "opt-3",
@@ -3813,7 +3813,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I let him pay it.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Disrespectful causative."
+        "explanation": "[Keigo Mismatch Trap] Disrespectful causation."
       }
     ]
   },
@@ -3835,7 +3835,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "うん、{大した|たいした}{用事|ようじ}じゃないから{後で|あとで}LINEするね。",
         "en": "Yeah, it's nothing important, so I'll message you on LINE later.",
         "isCorrect": true,
-        "explanation": "Relaxed friendly reply reassuring no emergency."
+        "explanation": "[Natural Response] A relaxed, friendly reply reassures me that it is not an emergency."
       },
       {
         "id": "opt-2",
@@ -3845,7 +3845,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I let him go.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Arrogant construction."
+        "explanation": "[Keigo Mismatch Trap] Arrogant construction."
       },
       {
         "id": "opt-3",
@@ -3855,7 +3855,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "The phone didn't ring.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Contradicts fact."
+        "explanation": "[Grammar & Tense Trap] It contradicts the facts."
       }
     ]
   },
@@ -3877,7 +3877,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{分かっ|わかっ}た。いい{案|あん}が{浮かん|うかん}だらすぐに{共有|きょうゆう}するよ。",
         "en": "Got it. I'll let you know right away if I come up with a good idea.",
         "isCorrect": true,
-        "explanation": "Cooperative promise to share ideas."
+        "explanation": "[Natural Response] The cooperative promises to share ideas."
       },
       {
         "id": "opt-2",
@@ -3887,7 +3887,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, that gave me an idea.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Causative past error."
+        "explanation": "[Grammar & Tense Trap] Causative past error."
       },
       {
         "id": "opt-3",
@@ -3897,7 +3897,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I'm not going to tell you.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Hostile refusal."
+        "explanation": "[Register Mismatch Trap] Hostile refusal."
       }
     ]
   },
@@ -3919,7 +3919,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "そうでしたか、ではまたの{機会|きかい}にぜひ{お願い|おねがい}します。",
         "en": "I see. Well then, I’d love to have you join us again sometime.",
         "isCorrect": true,
-        "explanation": "Graceful response to an indirect polite refusal."
+        "explanation": "[Natural Response] A graceful response to an indirect, polite refusal."
       },
       {
         "id": "opt-2",
@@ -3929,7 +3929,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Please cancel your prior appointment.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Rude demand to cancel prior commitments."
+        "explanation": "[Pragmatic Intent Trap] A rude demand to cancel prior commitments."
       },
       {
         "id": "opt-3",
@@ -3939,7 +3939,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I already had plans.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Meaningless copula."
+        "explanation": "[Grammar & Tense Trap] Meaningless copula."
       }
     ]
   },
@@ -3961,7 +3961,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ご{満足|まんぞく}いただけて{光栄|こうえい}です。またの{お越し|おこし}を{お待ち|おまち}しております。",
         "en": "We are honored that you were satisfied. We look forward to seeing you again.",
         "isCorrect": true,
-        "explanation": "Proper hotel hospitality reply."
+        "explanation": "[Natural Response] A proper reply from a hotel."
       },
       {
         "id": "opt-2",
@@ -3971,7 +3971,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "You're welcome; I took care of it.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Unprofessional and blunt."
+        "explanation": "[Register Mismatch Trap] Unprofessional and blunt."
       },
       {
         "id": "opt-3",
@@ -3981,7 +3981,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, it wasn't comfortable.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Contradicts the guest's compliment."
+        "explanation": "[Pragmatic Intent Trap] It contradicts the guest's compliment."
       }
     ]
   },
@@ -4003,7 +4003,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "チャージの{残高|ざんだか}が{不足|ふそく}しているかもしれません。{精算|せいさん}{機|き}でご{確認|かくにん}ください。",
         "en": "Your balance may be low. Please check at the payment machine.",
         "isCorrect": true,
-        "explanation": "Clear station staff explanation of balance shortage."
+        "explanation": "[Natural Response] The station staff clearly explained the balance shortage."
       },
       {
         "id": "opt-2",
@@ -4013,7 +4013,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yeah, it didn't open, did it?",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical phrasing."
+        "explanation": "[Grammar & Tense Trap] The phrasing is ungrammatical."
       },
       {
         "id": "opt-3",
@@ -4023,7 +4023,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I let him touch it.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Inappropriate."
+        "explanation": "[Keigo Mismatch Trap] Inappropriate."
       }
     ]
   },
@@ -4045,7 +4045,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{本当|ほんとう}？すごく{助かる|たすかる}、お{言葉|ことば}に{甘え|あまえ}ちゃうね。",
         "en": "Really? That’s a huge help—I’ll take you up on that.",
         "isCorrect": true,
-        "explanation": "Warm casual gratitude accepting a ride."
+        "explanation": "[Natural Response] Warm, casual gratitude for accepting a ride."
       },
       {
         "id": "opt-2",
@@ -4055,7 +4055,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, please send it to them.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Demanding 'te ageru'."
+        "explanation": "[Keigo Mismatch Trap] Demanding \"te ageru.\""
       },
       {
         "id": "opt-3",
@@ -4065,7 +4065,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I had him drive the car.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Causative past error."
+        "explanation": "[Grammar & Tense Trap] Causative past error."
       }
     ]
   },
@@ -4087,7 +4087,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "はい、２{杯|はい}{目|め}までは{無料|むりょう}でご{利用|りよう}いただけます。",
         "en": "Yes, you can have up to two cups for free.",
         "isCorrect": true,
-        "explanation": "Clear store policy explanation."
+        "explanation": "[Natural Response] A clear explanation of the store policy."
       },
       {
         "id": "opt-2",
@@ -4097,7 +4097,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, it wasn't free.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense doesn't answer current policy."
+        "explanation": "[Grammar & Tense Trap] The past tense does not address current policy."
       },
       {
         "id": "opt-3",
@@ -4107,7 +4107,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I’ll get you a refill.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Arrogant tone."
+        "explanation": "[Keigo Mismatch Trap] Arrogant tone."
       }
     ]
   },
@@ -4129,7 +4129,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ありがとう、{気|き}にかけてくれて{心|こころ}が{救わ|すくわ}れるよ。",
         "en": "Thank you—it really means a lot that you care.",
         "isCorrect": true,
-        "explanation": "Appreciative response to sympathy."
+        "explanation": "[Natural Response] An appreciative response to sympathy."
       },
       {
         "id": "opt-2",
@@ -4139,7 +4139,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Congratulations.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Horrible error congratulating a loss."
+        "explanation": "[Pragmatic Intent Trap] It's a horrible error to congratulate a loss."
       },
       {
         "id": "opt-3",
@@ -4149,7 +4149,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "My dog passed away.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical."
+        "explanation": "[Grammar & Tense Trap] Ungrammatical."
       }
     ]
   },
@@ -4171,7 +4171,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{合否|ごうひ}にかかわらず、{一|いち}{週間|しゅうかん}{以内|いない}にメールにてご{連絡|れんらく}いたします。",
         "en": "Regardless of the result, we will contact you by email within one week.",
         "isCorrect": true,
-        "explanation": "Standard HR timeline reply."
+        "explanation": "[Natural Response] It's a standard HR timeline reply."
       },
       {
         "id": "opt-2",
@@ -4181,7 +4181,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I'll let you know.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Disrespectful 'te ageru'."
+        "explanation": "[Keigo Mismatch Trap] Disrespectful \"te ageru.\""
       },
       {
         "id": "opt-3",
@@ -4191,7 +4191,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "We have notified you of the results.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense doesn't fit."
+        "explanation": "[Grammar & Tense Trap] The past tense doesn't fit."
       }
     ]
   },
@@ -4213,7 +4213,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "えっ、{締め切り|しめきり}に{影響|えいきょう}が{出|で}ないかスケジュールを{確認|かくにん}しましょう。",
         "en": "Wait, let’s check the schedule to make sure this won’t affect the deadline.",
         "isCorrect": true,
-        "explanation": "Responsible project management response."
+        "explanation": "[Natural Response] Responsible Project Management Response"
       },
       {
         "id": "opt-2",
@@ -4223,7 +4223,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I helped them change the specifications.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Arrogant."
+        "explanation": "[Keigo Mismatch Trap] Arrogant."
       },
       {
         "id": "opt-3",
@@ -4233,7 +4233,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, that was a change.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Incomplete."
+        "explanation": "[Grammar & Tense Trap] Incomplete."
       }
     ]
   },
@@ -4255,7 +4255,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "グラフの{数字|すうじ}を{もう少し|もうすこし}{大きく|おおきく}したほうが{見|み}やすいと{思う|おもう}よ。",
         "en": "I think the numbers on the graph would be easier to read if they were a little bigger.",
         "isCorrect": true,
-        "explanation": "Constructive design suggestion."
+        "explanation": "[Natural Response] A constructive design suggestion."
       },
       {
         "id": "opt-2",
@@ -4265,7 +4265,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I fixed it.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical."
+        "explanation": "[Grammar & Tense Trap] Ungrammatical."
       },
       {
         "id": "opt-3",
@@ -4275,7 +4275,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I won’t let you do that.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Hostile."
+        "explanation": "[Keigo Mismatch Trap] hostile"
       }
     ]
   },
@@ -4297,7 +4297,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ありがとうございます。ぜひ{伺わ|うかがわ}せていただきます。",
         "en": "Thank you very much. I’d love to come by.",
         "isCorrect": true,
-        "explanation": "Humble promise to visit."
+        "explanation": "[Natural Response] A humble promise to visit."
       },
       {
         "id": "opt-2",
@@ -4307,7 +4307,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, please feel free to stop by.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Directs client to visit instead."
+        "explanation": "[Keigo Mismatch Trap] Instead, direct the client to visit."
       },
       {
         "id": "opt-3",
@@ -4317,7 +4317,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I stopped by.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense."
+        "explanation": "[Grammar & Tense Trap] Past tense."
       }
     ]
   },
@@ -4339,7 +4339,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{今後|こんご}は{再発|さいはつ}{防止|ぼうし}のためにチェックリストを{徹底|てってい}してくださいね。",
         "en": "Please make sure to follow the checklist thoroughly to prevent this from happening again.",
         "isCorrect": true,
-        "explanation": "Firm but constructive managerial coaching."
+        "explanation": "[Natural Response] Firm but constructive managerial coaching."
       },
       {
         "id": "opt-2",
@@ -4349,7 +4349,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, it was a nuisance.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Blunt emotional complaint."
+        "explanation": "[Register Mismatch Trap] Blunt emotional complaint."
       },
       {
         "id": "opt-3",
@@ -4359,7 +4359,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I was made to check it.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Passive error."
+        "explanation": "[Grammar & Tense Trap] Passive error."
       }
     ]
   },
@@ -4381,7 +4381,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "どうぞ、{使い|つかい}{終わっ|おわっ}たら{元|もと}の{場所|ばしょ}に{戻し|もどし}ておいてくださいね。",
         "en": "Please be sure to return it to its original place when you're done using it.",
         "isCorrect": true,
-        "explanation": "Friendly consent with return condition."
+        "explanation": "[Natural Response] Consent with the condition of return."
       },
       {
         "id": "opt-2",
@@ -4391,7 +4391,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, please go ahead and use it.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Uses kenjougo haishaku on the other party."
+        "explanation": "[Keigo Mismatch Trap] Use kenjougo haishaku on the other party."
       },
       {
         "id": "opt-3",
@@ -4401,7 +4401,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "There were a pair of scissors.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Doesn't grant permission."
+        "explanation": "[Pragmatic Intent Trap] It doesn't grant permission."
       }
     ]
   },
@@ -4423,7 +4423,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "チーム{全員|ぜんいん}で{頑張っ|がんばっ}た{甲斐|かい}がありましたね！",
         "en": "All the hard work by the whole team really paid off, didn't it!",
         "isCorrect": true,
-        "explanation": "Heartfelt celebration of teamwork using '~kai ga atta'."
+        "explanation": "[Natural Response] A heartfelt celebration of teamwork using \"kai ga atta.\""
       },
       {
         "id": "opt-2",
@@ -4433,7 +4433,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I went ahead and released it.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Arrogant."
+        "explanation": "[Keigo Mismatch Trap] Arrogant."
       },
       {
         "id": "opt-3",
@@ -4443,7 +4443,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "It has been released.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Grammar mistake."
+        "explanation": "[Grammar & Tense Trap] Grammar mistake."
       }
     ]
   },
@@ -4465,7 +4465,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "かしこまりました。{企画|きかく}{部|ぶ}の{佐藤|さとう}におつなぎいたします。",
         "en": "Understood. I’ll transfer you to Mr. Sato in the Planning Department.",
         "isCorrect": true,
-        "explanation": "Correct humble business phone etiquette, dropping title for internal staff."
+        "explanation": "[Natural Response] Correct: Use humble business phone etiquette and drop the title when speaking to internal staff."
       },
       {
         "id": "opt-2",
@@ -4475,7 +4475,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, Manager Sato is here.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Dual honorific error using 'buchou-sama' and 'irassharu' for an internal coworker to a client."
+        "explanation": "[Keigo Mismatch Trap] It is a dual honorific error to use \"buchou-sama\" and \"irassharu\" when referring to an internal coworker in front of a client."
       },
       {
         "id": "opt-3",
@@ -4485,7 +4485,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I’ll transfer you to Sato.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Confuses sonkeigo with action you perform."
+        "explanation": "[Pragmatic Intent Trap] He confuses sonkeigo with the action you perform."
       }
     ]
   },
@@ -4507,7 +4507,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{承知|しょうち}いたしました。{社内|しゃない}で{慎重|しんちょう}に{検討|けんとう}のうえ、{週|しゅう}{明け|あけ}にご{回答|かいとう}{申し上げ|もうしあげ}ます。",
         "en": "Understood. We will carefully review this internally and provide a response early next week.",
         "isCorrect": true,
-        "explanation": "Polite formal agreement with timeline commitment."
+        "explanation": "[Natural Response] A polite, formal agreement with a timeline commitment."
       },
       {
         "id": "opt-2",
@@ -4517,7 +4517,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, please consider it.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Tells the client to consider it rather than yourself."
+        "explanation": "[Keigo Mismatch Trap] Tell the client to consider it rather than you."
       },
       {
         "id": "opt-3",
@@ -4527,7 +4527,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I took it home for him.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Rude 'te ageru' in executive business dialogue."
+        "explanation": "[Register Mismatch Trap] It is rude to say \"te ageru\" in an executive business dialogue."
       }
     ]
   },
@@ -4549,7 +4549,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "まずは{若年|じゃくねん}{層|そう}へのSNSプロモーションを{軸|じく}に{展開|てんかい}すべきかと{存じ|ぞんじ}ます。",
         "en": "I believe we should start by focusing our efforts on social media promotion targeting younger audiences.",
         "isCorrect": true,
-        "explanation": "Formal business proposal using kenjougo '~to zonjimasu'."
+        "explanation": "[Natural Response] A formal business proposal using the kenjougo \"to zonjimasu.\""
       },
       {
         "id": "opt-2",
@@ -4559,7 +4559,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, let's move on.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Disrespectful offer to director."
+        "explanation": "[Keigo Mismatch Trap] It was a disrespectful offer to the director."
       },
       {
         "id": "opt-3",
@@ -4569,7 +4569,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "My strategy didn't work out.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Doesn't answer the forward-looking strategic question."
+        "explanation": "[Grammar & Tense Trap] It doesn't answer the forward-looking strategic question."
       }
     ]
   },
@@ -4591,7 +4591,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{培っ|つちかっ}た{顧客|こきゃく}{折衝|せっしょう}{力|りょく}を{活かし|いかし}、{新規|しんき}{開拓|かいたく}に{貢献|こうけん}できると{自負|じふ}しております。",
         "en": "I am confident that I can contribute to new business development by leveraging the customer negotiation skills I have cultivated.",
         "isCorrect": true,
-        "explanation": "Strong, professional interview articulation using 'jifu shite orimasu'."
+        "explanation": "[Natural Response] Use \"jifu shite orimasu\" for strong, professional interview articulation."
       },
       {
         "id": "opt-2",
@@ -4601,7 +4601,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I’d like to help them make the most of it.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Arrogant tone in job interview."
+        "explanation": "[Keigo Mismatch Trap] Arrogant tone during a job interview."
       },
       {
         "id": "opt-3",
@@ -4611,7 +4611,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I was able to put my work experience to good use.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical."
+        "explanation": "[Grammar & Tense Trap] Ungrammatical."
       }
     ]
   },
@@ -4633,7 +4633,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{滅相|めっそう}もございません。{貴重|きちょう}なお{時間|じかん}を{割い|さい}ていただき、こちらこそ{御礼|おれい}{申し上げ|もうしあげ}ます。",
         "en": "Not at all. Thank you very much for taking the time to speak with me.",
         "isCorrect": true,
-        "explanation": "Flawless business humility brushing aside praise or gratitude."
+        "explanation": "[Natural Response] He has flawless business humility, brushing aside praise and gratitude."
       },
       {
         "id": "opt-2",
@@ -4643,7 +4643,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’m here.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Applying sonkeigo 'o-koshi' to oneself."
+        "explanation": "[Keigo Mismatch Trap] Using sonkeigo \"o-koshi\" on oneself."
       },
       {
         "id": "opt-3",
@@ -4653,7 +4653,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "You're welcome. That was tough.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Complaining about travel effort to a host."
+        "explanation": "[Register Mismatch Trap] Complaining to a host about the effort of traveling."
       }
     ]
   },
@@ -4675,7 +4675,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{厳しい|きびしい}{条件|じょうけん}ではございますが、{数量|すうりょう}{次第|しだい}で{前向き|まえむき}に{調整|ちょうせい}させていただきます。",
         "en": "Although the conditions are strict, we will be open to making adjustments depending on the quantity.",
         "isCorrect": true,
-        "explanation": "Diplomatic commercial response balancing constraint and conditional compromise."
+        "explanation": "[Natural Response] A diplomatic commercial response balances constraints and conditional compromises."
       },
       {
         "id": "opt-2",
@@ -4685,7 +4685,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No, I can't give you a discount.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Rude refusal with 'te ageru'."
+        "explanation": "[Keigo Mismatch Trap] A rude refusal with \"te ageru.\""
       },
       {
         "id": "opt-3",
@@ -4695,7 +4695,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "We’ve reduced the budget.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Grammatically confused."
+        "explanation": "[Pragmatic Intent Trap] Grammatically confused."
       }
     ]
   },
@@ -4717,7 +4717,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{喜ん|よろこん}で{拝読|はいどく}いたします。{明日|あした}の{午前|ごぜん}{中|ちゅう}までにお{戻し|もどし}しますね。",
         "en": "I’d be happy to read it. I’ll get it back to you by tomorrow morning.",
         "isCorrect": true,
-        "explanation": "Humble acceptance 'haidoku itashimasu' with turnaround time."
+        "explanation": "[Natural Response] We humbly accept the turnaround time of \"haidoku itashimasu.\""
       },
       {
         "id": "opt-2",
@@ -4727,7 +4727,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, please take a look.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Tells the requester to look at it."
+        "explanation": "[Keigo Mismatch Trap] It tells the requester to look at it."
       },
       {
         "id": "opt-3",
@@ -4737,7 +4737,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I’ll let you take a look.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Confused honorific."
+        "explanation": "[Register Mismatch Trap] Confused honorifics."
       }
     ]
   },
@@ -4759,7 +4759,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "それは{困り|こまり}ましたね。{至急|しきゅう}、{代替|だいたい}{案|あん}をご{提示|ていじ}いただけますか？",
         "en": "That’s a problem. Could you please suggest an alternative as soon as possible?",
         "isCorrect": true,
-        "explanation": "Firm professional requirement for contingency options."
+        "explanation": "[Natural Response] There is a firm professional requirement for contingency options."
       },
       {
         "id": "opt-2",
@@ -4769,7 +4769,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I made it in time.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Contradicts the notification of delay."
+        "explanation": "[Grammar & Tense Trap] This contradicts the delay notification."
       },
       {
         "id": "opt-3",
@@ -4779,7 +4779,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Let's give them an extension on the deadline.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Condescending."
+        "explanation": "[Keigo Mismatch Trap] Condescending."
       }
     ]
   },
@@ -4801,7 +4801,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{お待ち|おまち}しておりました。{松本|まつもと}に{申し伝え|もうしつたえ}ますので、こちらでお{掛け|かけ}になって{お待ち|おまち}ください。",
         "en": "We’ve been expecting you. I’ll let Matsumoto know you’re here, so please have a seat and wait here.",
         "isCorrect": true,
-        "explanation": "Humble internal reporting 'moushitsutaemasu' and polite customer seating."
+        "explanation": "[Natural Response] Humble internal reporting and polite customer seating."
       },
       {
         "id": "opt-2",
@@ -4811,7 +4811,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’ll go get Mr. Matsumoto.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Adding 'sama' to an internal coworker when speaking to a visitor."
+        "explanation": "[Keigo Mismatch Trap] Add \"sama\" when speaking to a visitor about an internal coworker."
       },
       {
         "id": "opt-3",
@@ -4821,7 +4821,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Matsumoto made a promise.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Awkward honorific formulation."
+        "explanation": "[Pragmatic Intent Trap] It's an awkward honorific formulation."
       }
     ]
   },
@@ -4843,7 +4843,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "リスクも{伴い|ともない}ますが、{現状|げんじょう}の{停滞|ていたい}を{打開|だかい}するには{検討|けんとう}に{値し|あたいし}ますね。",
         "en": "Although there are risks involved, it’s worth considering as a way to break out of the current stagnation.",
         "isCorrect": true,
-        "explanation": "Sophisticated analytical agreement."
+        "explanation": "[Natural Response] A sophisticated analytical agreement."
       },
       {
         "id": "opt-2",
@@ -4853,7 +4853,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I was forced to switch.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Complaining passive."
+        "explanation": "[Grammar & Tense Trap] Passive complaining."
       },
       {
         "id": "opt-3",
@@ -4863,7 +4863,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Let’s change our approach.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Inappropriate."
+        "explanation": "[Keigo Mismatch Trap] Inappropriate."
       }
     ]
   },
@@ -4885,7 +4885,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{温かい|あたたかい}お{心遣い|こころづかい}をいただき{恐縮|きょうしゅく}です。{皆|みな}でありがたく{頂戴|ちょうだい}いたします。",
         "en": "We are truly grateful for your kind consideration. We will all gratefully accept it.",
         "isCorrect": true,
-        "explanation": "Flawless corporate gratitude and humble acceptance."
+        "explanation": "[Natural Response] Flawless corporate gratitude and humble acceptance."
       },
       {
         "id": "opt-2",
@@ -4895,7 +4895,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’ll have some.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Using sonkeigo for oneself."
+        "explanation": "[Keigo Mismatch Trap] Using sonkeigo for oneself."
       },
       {
         "id": "opt-3",
@@ -4905,7 +4905,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "That was pretty modest, wasn't it?",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Insulting literal interpretation."
+        "explanation": "[Register Mismatch Trap] An insulting literal interpretation."
       }
     ]
   },
@@ -4927,7 +4927,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ただちに{緊急|きんきゅう}メンテナンスを{告知|こくち}し、トラフィック{制限|せいげん}をかけましょう。",
         "en": "Announce emergency maintenance immediately and implement traffic restrictions.",
         "isCorrect": true,
-        "explanation": "Decisive operational reaction to risk '~kane nai'."
+        "explanation": "[Natural Response] A decisive operational reaction to the risk of \"kane nai.\""
       },
       {
         "id": "opt-2",
@@ -4937,7 +4937,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, it didn't crash.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense."
+        "explanation": "[Grammar & Tense Trap] Past tense."
       },
       {
         "id": "opt-3",
@@ -4947,7 +4947,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I'll take the server down for you.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Sabotage-sounding misinterpretation."
+        "explanation": "[Keigo Mismatch Trap] A sabotage-sounding misinterpretation."
       }
     ]
   },
@@ -4969,7 +4969,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "かしこまりました。{本日|ほんじつ}{中|ちゅう}にPDF{資料|しりょう}をメールにて{お送り|おおくり}いたします。",
         "en": "Understood. I will email you the PDF materials today.",
         "isCorrect": true,
-        "explanation": "Prompt, courteous confirmation of dispatch."
+        "explanation": "[Natural Response] Prompt and courteous confirmation of dispatch."
       },
       {
         "id": "opt-2",
@@ -4979,7 +4979,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’ll send it to you.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Disrespectful."
+        "explanation": "[Keigo Mismatch Trap] Disrespectful."
       },
       {
         "id": "opt-3",
@@ -4989,7 +4989,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "The materials have been sent.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Doesn't promise action."
+        "explanation": "[Grammar & Tense Trap] It doesn't promise action."
       }
     ]
   },
@@ -5011,7 +5011,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{胸|むね}に{刺さり|ささり}ます。{一|いち}{歩|ほ}{踏み出す|ふみだす}{勇気|ゆうき}を{持っ|もっ}て{挑戦|ちょうせん}してみます。",
         "en": "That really hits home. I’ll muster the courage to take that first step and give it a try.",
         "isCorrect": true,
-        "explanation": "Deeply appreciative reflection on wisdom."
+        "explanation": "[Natural Response] A deeply appreciative reflection on wisdom."
       },
       {
         "id": "opt-2",
@@ -5021,7 +5021,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, it resulted in a loss.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical."
+        "explanation": "[Grammar & Tense Trap] Ungrammatical."
       },
       {
         "id": "opt-3",
@@ -5031,7 +5031,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I'll let you fail.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Nonsensical."
+        "explanation": "[Keigo Mismatch Trap] Nonsensical."
       }
     ]
   },
@@ -5053,7 +5053,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{異議|いぎ}ございません。{双方|そうほう}{合意|ごうい}のもとで{契約|けいやく}{書面|しょめん}を{作成|さくせい}いたしましょう。",
         "en": "I have no objections. Let’s draft the contract based on the mutual agreement between both parties.",
         "isCorrect": true,
-        "explanation": "Formal legal and commercial assent."
+        "explanation": "[Natural Response] Formal legal and commercial consent."
       },
       {
         "id": "opt-2",
@@ -5063,7 +5063,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I agreed to it.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Condescending."
+        "explanation": "[Keigo Mismatch Trap] Condescending."
       },
       {
         "id": "opt-3",
@@ -5073,7 +5073,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "No agreement was reached.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Contradictory."
+        "explanation": "[Pragmatic Intent Trap] Contradictory."
       }
     ]
   },
@@ -5095,7 +5095,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "はい、{役員|やくいん}{各位|かくい}への{事前|じぜん}{配布|はいふ}を{含め|ふくめ}、{万全|ばんぜん}を{期し|きし}ております。",
         "en": "Yes, we have taken every precaution, including distributing copies to all board members in advance.",
         "isCorrect": true,
-        "explanation": "Reassuring, sophisticated executive reporting."
+        "explanation": "[Natural Response] Reassuring and sophisticated executive reporting."
       },
       {
         "id": "opt-2",
@@ -5105,7 +5105,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I helped them get ready.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Arrogant."
+        "explanation": "[Keigo Mismatch Trap] Arrogant."
       },
       {
         "id": "opt-3",
@@ -5115,7 +5115,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I was delayed.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical."
+        "explanation": "[Grammar & Tense Trap] Ungrammatical."
       }
     ]
   },
@@ -5137,7 +5137,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{結果|けっか}オーライですし、{今後|こんご}は{事前|じぜん}にチームへ{共有|きょうゆう}してくれれば{大丈夫|だいじょうぶ}だよ。",
         "en": "It all worked out in the end, so as long as you share it with the team in advance from now on, it’ll be fine.",
         "isCorrect": true,
-        "explanation": "Fair, balanced leadership coaching."
+        "explanation": "[Natural Response] Fair and balanced leadership coaching."
       },
       {
         "id": "opt-2",
@@ -5147,7 +5147,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, that was a nuisance.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Harsh."
+        "explanation": "[Register Mismatch Trap] Harsh."
       },
       {
         "id": "opt-3",
@@ -5157,7 +5157,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I let them decide on their own.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Confused."
+        "explanation": "[Grammar & Tense Trap] Confused."
       }
     ]
   },
@@ -5179,7 +5179,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "まあ、わざわざお{立ち寄り|たちより}くださり{恐縮|きょうしゅく}です！どうぞ{中|なか}へお{入り|はいり}ください。",
         "en": "Well, I’m truly honored that you took the time to stop by! Please come on in.",
         "isCorrect": true,
-        "explanation": "Welcoming hospitality appreciating an unscheduled visit."
+        "explanation": "[Natural Response] They welcomed the unscheduled visit with appreciative hospitality."
       },
       {
         "id": "opt-2",
@@ -5189,7 +5189,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, you’ve arrived.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Using humble mairu for guest."
+        "explanation": "[Keigo Mismatch Trap] I'm using the humble MaiRu for guests."
       },
       {
         "id": "opt-3",
@@ -5199,7 +5199,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I’ll say hello to you.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Rude."
+        "explanation": "[Register Mismatch Trap] Rude."
       }
     ]
   },
@@ -5221,7 +5221,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ご{指摘|してき}ありがとうございます。{損害|そんがい}{賠償|ばいしょう}の{上限|じょうげん}を{明記|めいき}する{形|かたち}で{修正|しゅうせい}{案|あん}を{作成|さくせい}します。",
         "en": "Thank you for pointing that out. I will draft a revision that explicitly states the maximum amount of damages.",
         "isCorrect": true,
-        "explanation": "Constructive legal response incorporating feedback."
+        "explanation": "[Natural Response] A constructive legal response that incorporates feedback."
       },
       {
         "id": "opt-2",
@@ -5231,7 +5231,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I helped him avoid it.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Disrespectful."
+        "explanation": "[Keigo Mismatch Trap] Disrespectful."
       },
       {
         "id": "opt-3",
@@ -5241,7 +5241,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "There was no risk.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Ignores the legal warning."
+        "explanation": "[Pragmatic Intent Trap] It ignores the legal warning."
       }
     ]
   },
@@ -5263,7 +5263,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{承知|しょうち}いたしました。{道中|どうちゅう}{お気|おき}をつけて{行っ|いっ}てらっしゃいませ。",
         "en": "Understood. Please be careful on your way there.",
         "isCorrect": true,
-        "explanation": "Respectful send-off."
+        "explanation": "[Natural Response] A respectful send-off."
       },
       {
         "id": "opt-2",
@@ -5273,7 +5273,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, please see me off.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Ungrammatical passive."
+        "explanation": "[Keigo Mismatch Trap] Ungrammatical passive voice."
       },
       {
         "id": "opt-3",
@@ -5283,7 +5283,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I saw the executives off.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Arrogant."
+        "explanation": "[Register Mismatch Trap] Arrogant."
       }
     ]
   },
@@ -5305,7 +5305,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{真摯|しんし}に{受け止め|うけとめ}、{早急|そうきゅう}に{挽回|ばんかい}{策|さく}を{取りまとめ|とりまとめ}てご{報告|ほうこく}いたします。",
         "en": "We take this matter very seriously and will promptly develop and report on corrective measures.",
         "isCorrect": true,
-        "explanation": "Responsible accountability under scrutiny."
+        "explanation": "[Natural Response] Responsible accountability is under scrutiny."
       },
       {
         "id": "opt-2",
@@ -5315,7 +5315,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’d have to say it’s difficult.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Bizarre causative."
+        "explanation": "[Keigo Mismatch Trap] Bizarre causative."
       },
       {
         "id": "opt-3",
@@ -5325,7 +5325,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I achieved my goal.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical."
+        "explanation": "[Grammar & Tense Trap] Ungrammatical."
       }
     ]
   },
@@ -5347,7 +5347,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{身|み}に{余る|あまる}{高い|たかい}ご{評価|ひょうか}をいただき{光栄|こうえい}に{存じ|ぞんじ}ます。{前向き|まえむき}に{検討|けんとう}させていただきます。",
         "en": "We are deeply honored to receive such high praise, which we feel is beyond what we deserve. We will give this matter serious consideration.",
         "isCorrect": true,
-        "explanation": "Modest, appreciative response to an executive offer."
+        "explanation": "[Natural Response] A modest, appreciative response to an executive offer."
       },
       {
         "id": "opt-2",
@@ -5357,7 +5357,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’ll welcome you.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Arrogant."
+        "explanation": "[Keigo Mismatch Trap] Arrogant."
       },
       {
         "id": "opt-3",
@@ -5367,7 +5367,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I became a member.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Grammar error."
+        "explanation": "[Grammar & Tense Trap] Grammar error."
       }
     ]
   },
@@ -5389,7 +5389,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{品質|ひんしつ}{第|だい}{一|いち}ですので{同感|どうかん}です。{原因|げんいん}{究明|きゅうめい}と{改修|かいしゅう}を{最|さい}{優先|ゆうせん}で{進め|すすめ}ましょう。",
         "en": "Quality comes first, so I agree. Let’s make identifying the cause and implementing fixes our top priority.",
         "isCorrect": true,
-        "explanation": "Total agreement with quality standards."
+        "explanation": "[Natural Response] I totally agree with the quality standards."
       },
       {
         "id": "opt-2",
@@ -5399,7 +5399,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’ve shipped it for you.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Disrespectful."
+        "explanation": "[Keigo Mismatch Trap] Disrespectful."
       },
       {
         "id": "opt-3",
@@ -5409,7 +5409,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "A bug was shipped.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Passive confusion."
+        "explanation": "[Grammar & Tense Trap] Passive confusion."
       }
     ]
   },
@@ -5431,7 +5431,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "もったいないお{言葉|ことば}です。{今後|こんご}ともご{期待|きたい}に{沿え|そえ}るよう{尽力|じんりょく}いたします。",
         "en": "That’s too kind of you to say. We will continue to do our best to meet your expectations.",
         "isCorrect": true,
-        "explanation": "Deep business humility and ongoing commitment."
+        "explanation": "[Natural Response] Deep business humility and an ongoing commitment."
       },
       {
         "id": "opt-2",
@@ -5441,7 +5441,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I was polite to them.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Arrogant 'te ageru'."
+        "explanation": "[Keigo Mismatch Trap] Arrogant \"te ageru.\""
       },
       {
         "id": "opt-3",
@@ -5451,7 +5451,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "You're welcome. That was tough.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Blunt."
+        "explanation": "[Register Mismatch Trap] Blunt."
       }
     ]
   },
@@ -5473,7 +5473,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{温かい|あたたかい}お{言葉|ことば}をありがとうございます。{来期|らいき}も{一丸|いちがん}となって{邁進|まいしん}いたします。",
         "en": "Thank you for your kind words. We will continue to work together as one team and strive forward in the coming term.",
         "isCorrect": true,
-        "explanation": "Inspiring collective response to leadership praise."
+        "explanation": "[Natural Response] Inspiring a collective response to leadership praise."
       },
       {
         "id": "opt-2",
@@ -5483,7 +5483,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I’ll make sure to show my respect.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Inappropriate."
+        "explanation": "[Keigo Mismatch Trap] Inappropriate."
       },
       {
         "id": "opt-3",
@@ -5493,7 +5493,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I really gave it my all.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical."
+        "explanation": "[Grammar & Tense Trap] Ungrammatical."
       }
     ]
   },
@@ -5515,7 +5515,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{表向き|おもてむき}の{条件|じょうけん}のみならず、{背後|はいご}にある{資本|しほん}{関係|かんけい}まで{精査|せいさ}したうえで{判断|はんだん}すべきかと{存じ|ぞんじ}ます。",
         "en": "I believe we should make our judgment only after carefully examining not only the surface-level conditions but also the underlying capital relationships.",
         "isCorrect": true,
-        "explanation": "Astute strategic analysis fitting high-level executive counsel."
+        "explanation": "[Natural Response] Provides astute, strategic analysis and high-level executive counsel."
       },
       {
         "id": "opt-2",
@@ -5525,7 +5525,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I tried to figure out what they really meant.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Disrespectful 'te ageru' in boardroom register."
+        "explanation": "[Keigo Mismatch Trap] It's disrespectful to use \"te ageru\" in a boardroom."
       },
       {
         "id": "opt-3",
@@ -5535,7 +5535,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "A partnership was established.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Ungrammatical and logically incoherent."
+        "explanation": "[Pragmatic Intent Trap] It is both ungrammatical and logically incoherent."
       }
     ]
   },
@@ -5557,7 +5557,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "おっしゃる{通り|とおり}、{情報|じょうほう}の{透明|とうめい}{性|せい}と{誠意|せいい}ある{謝罪|しゃざい}{姿勢|しせい}を{一貫|いっかん}させることが{肝要|かんよう}かと{存じ|ぞんじ}ます。",
         "en": "As you say, I believe it is essential to maintain consistency in transparency and a sincere attitude toward apologizing.",
         "isCorrect": true,
-        "explanation": "Formal crisis management synthesis using 'kanyou'."
+        "explanation": "[Natural Response] Formal crisis management synthesis using \"Kanyou.\""
       },
       {
         "id": "opt-2",
@@ -5567,7 +5567,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, let's provoke some backlash.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Nonsensical."
+        "explanation": "[Keigo Mismatch Trap] Nonsensical."
       },
       {
         "id": "opt-3",
@@ -5577,7 +5577,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Public opinion had reacted negatively.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical double past."
+        "explanation": "[Grammar & Tense Trap] Double past tense is ungrammatical."
       }
     ]
   },
@@ -5599,7 +5599,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ご{多忙|たぼう}の{折|おり}、ご{臨席|りんせき}を{賜り|たまわり}ましたこと、{主催|しゅさい}{者|しゃ}{一|いち}{同心|どうしん}より{御礼|おんれい}{申し上げ|もうしあげ}ます。",
         "en": "On behalf of all the organizers, we would like to express our heartfelt gratitude for taking the time to join us despite your busy schedule.",
         "isCorrect": true,
-        "explanation": "Top-tier ceremonial Japanese matching 'o-maneki ni azukari' with 'go-rinseki o tamawari'."
+        "explanation": "[Natural Response] A top-tier, ceremonial Japanese \"o-maneki ni azukari\" with a \"go-rinseki o tamawari.\""
       },
       {
         "id": "opt-2",
@@ -5609,7 +5609,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I was invited, wasn't I?",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Confuses who invited whom."
+        "explanation": "[Keigo Mismatch Trap] It confuses who invited whom."
       },
       {
         "id": "opt-3",
@@ -5619,7 +5619,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "You're welcome. It was a grand event.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Crude and bragging."
+        "explanation": "[Register Mismatch Trap] Crude and boastful."
       }
     ]
   },
@@ -5641,7 +5641,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ご{指摘|してき}を{真摯|しんし}に{受け止め|うけとめ}、{追試|ついし}による{統計|とうけい}{的|てき}{有意|ゆうい}{性|せい}の{検証|けんしょう}に{全力|ぜんりょく}を{注ぐ|そそぐ}{所存|しょぞん}です。",
         "en": "We take your comments seriously and are committed to doing our utmost to verify statistical significance through a follow-up study.",
         "isCorrect": true,
-        "explanation": "Academic humility and rigorous scientific commitment."
+        "explanation": "[Natural Response] Academic humility and a rigorous commitment to science."
       },
       {
         "id": "opt-2",
@@ -5651,7 +5651,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I managed to convince him.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Arrogant."
+        "explanation": "[Keigo Mismatch Trap] Arrogant."
       },
       {
         "id": "opt-3",
@@ -5661,7 +5661,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "The data confirmed this.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical."
+        "explanation": "[Grammar & Tense Trap] Ungrammatical."
       }
     ]
   },
@@ -5683,7 +5683,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{同感|どうかん}です。{潜在|せんざい}{的|てき}{偶発|ぐうはつ}{債務|さいむ}のリスクを{徹底的|てっていてき}に{洗い出し|あらいだし}、{毅然|きぜん}とした{姿勢|しせい}で{交渉|こうしょう}に{臨み|のぞみ}ます。",
         "en": "I agree. We will thoroughly identify the risks associated with contingent liabilities and approach negotiations with a firm stance.",
         "isCorrect": true,
-        "explanation": "M&A acumen aligning with the partner's firm negotiation stance."
+        "explanation": "[Natural Response] M&A expertise that aligns with the firm's negotiation stance."
       },
       {
         "id": "opt-2",
@@ -5693,7 +5693,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Okay, let's drop the renegotiation.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Misunderstands 'jisanai' (will not hesitate) as declining."
+        "explanation": "[Pragmatic Intent Trap] He misunderstands \"jisanai\" (will not hesitate) as a decline."
       },
       {
         "id": "opt-3",
@@ -5703,7 +5703,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "The acquisition price was renegotiated.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Past tense."
+        "explanation": "[Grammar & Tense Trap] Past tense."
       }
     ]
   },
@@ -5725,7 +5725,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{銘記|めいき}いたします。{組織|そしき}の{長期|ちょうき}{的|てき}{存立|そんりつ}{基盤|きばん}を{見据え|みすえ}、{信念|しんねん}を{持っ|もっ}て{決断|けつだん}してまいります。",
         "en": "I will keep this in mind. With an eye toward the long-term foundation of the organization’s survival, I will make decisions with conviction.",
         "isCorrect": true,
-        "explanation": "Profound acknowledgement 'meiki itashimasu' embracing broad perspective."
+        "explanation": "[Natural Response] A profound acknowledgment of \"meiki itashimasu,\" embracing a broad perspective."
       },
       {
         "id": "opt-2",
@@ -5735,7 +5735,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I let them make the decision.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Inappropriate."
+        "explanation": "[Keigo Mismatch Trap] Inappropriate."
       },
       {
         "id": "opt-3",
@@ -5745,7 +5745,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "It turned out to be a big deal.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Nonsensical."
+        "explanation": "[Grammar & Tense Trap] Nonsensical."
       }
     ]
   },
@@ -5767,7 +5767,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{承知|しょうち}いたしました。{曖昧|あいまい}さを{一切|いっさい}{排除|はいじょ}した{条文|じょうぶん}に{練り直し|ねりなおし}て{再|さい}{提出|ていしゅつ}いたします。",
         "en": "Understood. I will revise the text to eliminate all ambiguity and resubmit it.",
         "isCorrect": true,
-        "explanation": "Rigorous legal compliance response."
+        "explanation": "[Natural Response] A rigorous legal compliance response."
       },
       {
         "id": "opt-2",
@@ -5777,7 +5777,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Let's just let it slide.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Suggests overlooking the ambiguity, which is the exact opposite."
+        "explanation": "[Pragmatic Intent Trap] It suggests overlooking the ambiguity, which is the exact opposite."
       },
       {
         "id": "opt-3",
@@ -5787,7 +5787,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "The wording has been revised.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical."
+        "explanation": "[Grammar & Tense Trap] Ungrammatical."
       }
     ]
   },
@@ -5809,7 +5809,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{心して|こころして}{音|おと}と{向き合い|むきあい}、{作品|さくひん}に{込め|こめ}られた{作曲|さっきょく}{者|しゃ}の{魂|たましい}を{表現|ひょうげん}できるよう{精進|しょうじん}いたします。",
         "en": "I will approach the music with the utmost care and strive to express the composer’s spirit as embodied in the piece.",
         "isCorrect": true,
-        "explanation": "Artistic commitment responding to musical depth."
+        "explanation": "[Natural Response] An artistic commitment that responds to musical depth."
       },
       {
         "id": "opt-2",
@@ -5819,7 +5819,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’ve woven those emotions into the story for you.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Rude."
+        "explanation": "[Keigo Mismatch Trap] Rude."
       },
       {
         "id": "opt-3",
@@ -5829,7 +5829,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "It went exactly as written.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ignores the artistic instruction."
+        "explanation": "[Grammar & Tense Trap] Ignores artistic instructions."
       }
     ]
   },
@@ -5851,7 +5851,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{覚悟|かくご}の{上|うえ}で{改革|かいかく}に{身|み}を{投じる|とうじる}{所存|しょぞん}です。{全社|ぜんしゃ}{的|てき}な{合意|ごうい}{形成|けいせい}にも{尽力|じんりょく}いたします。",
         "en": "I am determined to throw myself into this reform with full awareness of what lies ahead. I will also do my utmost to build consensus throughout the company.",
         "isCorrect": true,
-        "explanation": "Unyielding resolve aligning with painful reform."
+        "explanation": "[Natural Response] Unyielding resolve aligns with painful reform."
       },
       {
         "id": "opt-2",
@@ -5861,7 +5861,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’ll play it for you.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Arrogant."
+        "explanation": "[Keigo Mismatch Trap] Arrogant."
       },
       {
         "id": "opt-3",
@@ -5871,7 +5871,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Structural reform was painful.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Nonsensical."
+        "explanation": "[Grammar & Tense Trap] Nonsensical."
       }
     ]
   },
@@ -5893,7 +5893,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{先生|せんせい}の{温かい|あたたかい}ご{薫陶|くんとう}があったからこそ{今日|きょう}の{私|わたし}どもがございます。{心|こころ}より{御礼|おんれい}{申し上げ|もうしあげ}ます。",
         "en": "It is thanks to your warm guidance that we are who we are today. We would like to express our heartfelt gratitude.",
         "isCorrect": true,
-        "explanation": "Top-tier classical gratitude honoring a mentor's guidance ('kunpou')."
+        "explanation": "[Natural Response] Top-tier classical gratitude in honor of a mentor's guidance (\"kunpou\")."
       },
       {
         "id": "opt-2",
@@ -5903,7 +5903,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I supported him.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Disrespectful."
+        "explanation": "[Keigo Mismatch Trap] Disrespectful."
       },
       {
         "id": "opt-3",
@@ -5913,7 +5913,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I was given the opportunity to express my gratitude.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Passive error."
+        "explanation": "[Grammar & Tense Trap] Passive error."
       }
     ]
   },
@@ -5935,7 +5935,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{市場|しじょう}の{変動|へんどう}シナリオを{重層|じゅうそう}{的|てき}に{策定|さくてい}し、{万全|ばんぜん}のリスクヘッジを{講じる|こうじる}{必要|ひつよう}がありますね。",
         "en": "We need to develop multi-layered scenarios for market fluctuations and implement thorough risk hedging measures, don’t we?",
         "isCorrect": true,
-        "explanation": "Financial literacy acknowledging systemic risk."
+        "explanation": "[Natural Response] Financial literacy acknowledges systemic risk."
       },
       {
         "id": "opt-2",
@@ -5945,7 +5945,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, let’s try to stay optimistic.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Opposite."
+        "explanation": "[Pragmatic Intent Trap] Opposite."
       },
       {
         "id": "opt-3",
@@ -5955,7 +5955,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Currency exchange was strictly prohibited.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Meaningless."
+        "explanation": "[Grammar & Tense Trap] Meaningless."
       }
     ]
   },
@@ -5977,7 +5977,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{本訴|ほんそ}の{準備|じゅんび}と{並行|へいこう}して、{早期|そうき}{和解|わかい}の{道筋|みちすじ}も{探る|さぐる}{二|に}{重|じゅう}の{構え|かまえ}で{臨み|のぞみ}ましょう。",
         "en": "Let’s adopt a two-pronged approach: while preparing for the lawsuit, we’ll also explore avenues for an early settlement.",
         "isCorrect": true,
-        "explanation": "Pragmatic dual litigation strategy."
+        "explanation": "[Natural Response] A pragmatic dual litigation strategy."
       },
       {
         "id": "opt-2",
@@ -5987,7 +5987,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Sure, I’ll pick a fight with you.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Bizarre."
+        "explanation": "[Keigo Mismatch Trap] Bizarre."
       },
       {
         "id": "opt-3",
@@ -5997,7 +5997,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "A judicial ruling was sought.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical."
+        "explanation": "[Grammar & Tense Trap] Ungrammatical."
       }
     ]
   },
@@ -6019,7 +6019,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{承知|しょうち}いたしました。{事実|じじつ}{関係|かんけい}の{淡々|たんたん}とした{説明|せつめい}に{終始|しゅうし}し、{失言|しつげん}を{排し|はいし}ます。",
         "en": "Understood. I will stick strictly to a matter-of-fact explanation of the facts and avoid any slip-ups.",
         "isCorrect": true,
-        "explanation": "Flawless crisis PR composure."
+        "explanation": "[Natural Response] Flawless composure in a crisis PR situation."
       },
       {
         "id": "opt-2",
@@ -6029,7 +6029,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I argued back.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Opposite of instructions."
+        "explanation": "[Keigo Mismatch Trap] The opposite of instructions."
       },
       {
         "id": "opt-3",
@@ -6039,7 +6039,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "It has become a golden rule.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Grammar mistake."
+        "explanation": "[Grammar & Tense Trap] Grammar mistake."
       }
     ]
   },
@@ -6061,7 +6061,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ご{尤も|もっとも}なご{指摘|してき}です。{関連|かんれん}{文献|ぶんけん}を{網羅|もうら}{的|てき}に{再|さい}{検討|けんとう}し、{論拠|ろんきょ}を{補強|ほきょう}いたします。",
         "en": "That is a very valid point. We will comprehensively review the relevant literature and strengthen our arguments.",
         "isCorrect": true,
-        "explanation": "Academic peer review responsiveness."
+        "explanation": "[Natural Response] Responsiveness to academic peer review."
       },
       {
         "id": "opt-2",
@@ -6071,7 +6071,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, that was incorrect.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Self-contradicting."
+        "explanation": "[Pragmatic Intent Trap] Self-contradictory."
       },
       {
         "id": "opt-3",
@@ -6081,7 +6081,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I let them get the short end of the stick.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Nonsensical."
+        "explanation": "[Keigo Mismatch Trap] Nonsensical."
       }
     ]
   },
@@ -6103,7 +6103,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ご{下問|かもん}を{重く|おもく}{受け止め|うけとめ}、{設備|せつび}の{刷新|さっしん}を{含め|ふくめ}た{中長期|ちゅうちょうき}ロードマップを{早急|そうきゅう}に{策定|さくてい}します。",
         "en": "We take your inquiry very seriously and will promptly formulate a medium- to long-term roadmap that includes the modernization of our facilities.",
         "isCorrect": true,
-        "explanation": "Corporate compliance dedication."
+        "explanation": "[Natural Response] Dedication to corporate compliance."
       },
       {
         "id": "opt-2",
@@ -6113,7 +6113,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I drove below it for you.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Rude."
+        "explanation": "[Keigo Mismatch Trap] Rude."
       },
       {
         "id": "opt-3",
@@ -6123,7 +6123,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "It was the benchmark score.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical."
+        "explanation": "[Grammar & Tense Trap] Ungrammatical."
       }
     ]
   },
@@ -6145,7 +6145,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{身|み}に{余る|あまる}{栄誉|えいよ}を{賜り|たまわり}、{畏友|いゆう}{諸賢|しょけん}ならびにご{支援|しえん}くださった{皆様|みなさま}に{厚く|あつく}{御礼|おれい}{申し上げ|もうしあげ}ます。",
         "en": "I am deeply honored to have received this distinction, and I would like to express my sincere gratitude to my esteemed colleagues and friends, as well as to everyone who has supported me.",
         "isCorrect": true,
-        "explanation": "Formal laureate gratitude."
+        "explanation": "[Natural Response] Formal gratitude of a laureate."
       },
       {
         "id": "opt-2",
@@ -6155,7 +6155,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’ll make sure to praise his achievements.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Confuses roles."
+        "explanation": "[Keigo Mismatch Trap] Confuses roles."
       },
       {
         "id": "opt-3",
@@ -6165,7 +6165,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "It was an honor.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Insulting."
+        "explanation": "[Register Mismatch Trap] Insulting."
       }
     ]
   },
@@ -6187,7 +6187,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{法|ほう}{改正|かいせい}の{猶予|ゆうよ}{期間|きかん}を{設け|もうけ}た{段階|だんかい}{的|てき}{移行|いこう}{措置|そち}を{導入|どうにゅう}することで、{法|ほう}{秩序|ちつじょ}との{調和|ちょうわ}は{可能|かのう}と{考え|かんがえ}ます。",
         "en": "I believe it is possible to ensure harmony with the legal system by introducing phased transition measures that include a grace period for the amendment of the law.",
         "isCorrect": true,
-        "explanation": "High-level constitutional and legislative policy reasoning."
+        "explanation": "[Natural Response] High-level reasoning about constitutional and legislative policies."
       },
       {
         "id": "opt-2",
@@ -6197,7 +6197,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’ll make sure everything is consistent.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Arrogant."
+        "explanation": "[Keigo Mismatch Trap] Arrogant."
       },
       {
         "id": "opt-3",
@@ -6207,7 +6207,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "My opinion was listened to.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical."
+        "explanation": "[Grammar & Tense Trap] Ungrammatical."
       }
     ]
   },
@@ -6229,7 +6229,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{胸|むね}に{刻み|きざみ}ます。{光|ひかり}と{陰影|いんえい}の{移ろい|うつろい}が{生み出す|うみだす}{情緒|じょうちょ}{的|てき}な{陰影|いんえい}{美|び}を{今|いま}{一|いち}{度|ど}{追求|ついきゅう}してみます。",
         "en": "I’ll keep this in mind. I’ll try once again to explore the emotional beauty of light and shadow created by their ever-changing interplay.",
         "isCorrect": true,
-        "explanation": "Deep aesthetic and structural synthesis."
+        "explanation": "[Natural Response] A deep synthesis of aesthetics and structure."
       },
       {
         "id": "opt-2",
@@ -6239,7 +6239,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yeah, that really put the cart before the horse, didn't it?",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Superficial."
+        "explanation": "[Register Mismatch Trap] superficial"
       },
       {
         "id": "opt-3",
@@ -6249,7 +6249,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I encouraged them to pursue rationality.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Inappropriate."
+        "explanation": "[Keigo Mismatch Trap] Inappropriate."
       }
     ]
   },
@@ -6271,7 +6271,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{国際|こくさい}{協調|きょうちょう}の{理念|りねん}に{則り|のっとり}、{架け橋|かけはし}としての{役割|やくわり}を{全う|まっとう}すべく{微力|びりょく}を{尽くす|つくす}{所存|しょぞん}でございます。",
         "en": "In accordance with the principles of international cooperation, I am committed to doing my best to fulfill my role as a bridge between nations.",
         "isCorrect": true,
-        "explanation": "Diplomatic commitment using 'biryoku o tsukusu'."
+        "explanation": "[Natural Response] Diplomatic commitment using \"biryoku o tsukusu.\""
       },
       {
         "id": "opt-2",
@@ -6281,7 +6281,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I’ll do my best to help.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Crude."
+        "explanation": "[Keigo Mismatch Trap] crude"
       },
       {
         "id": "opt-3",
@@ -6291,7 +6291,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "The conversation had come to a standstill.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Ungrammatical."
+        "explanation": "[Grammar & Tense Trap] Ungrammatical."
       }
     ]
   },
@@ -6313,7 +6313,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{温かい|あたたかい}ご{激励|げきれい}を{胸|むね}に{刻み|きざみ}、{次|つぎ}なる{挑戦|ちょうせん}に{向け|むけ}て{一層|いっそう}の{精進|しょうじん}を{重ね|かさね}てまいります。",
         "en": "We will keep your warm words of encouragement close to our hearts and continue to work even harder as we prepare for our next challenge.",
         "isCorrect": true,
-        "explanation": "Inspirational commitment to ongoing excellence."
+        "explanation": "[Natural Response] An inspirational commitment to ongoing excellence."
       },
       {
         "id": "opt-2",
@@ -6323,7 +6323,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I helped him stay true to his original intentions.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Arrogant."
+        "explanation": "[Keigo Mismatch Trap] Arrogant."
       },
       {
         "id": "opt-3",
@@ -6333,7 +6333,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "It was a tough time.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Inappropriate."
+        "explanation": "[Register Mismatch Trap] Inappropriate."
       }
     ]
   },
@@ -6355,7 +6355,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "どうぞ、ここに{座っ|すわっ}てください。",
         "en": "Please have a seat here.",
         "isCorrect": true,
-        "explanation": "Natural polite offer inviting someone to take your seat."
+        "explanation": "[Natural Response] It's a natural, polite way to invite someone to take your seat."
       },
       {
         "id": "opt-2",
@@ -6365,7 +6365,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I'm really sorry.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Apologizing instead of offering your seat."
+        "explanation": "[Pragmatic Intent Trap] Apologizing instead of offering your seat."
       },
       {
         "id": "opt-3",
@@ -6375,7 +6375,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "My apologies.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Standard apology phrase, not an invitation to sit."
+        "explanation": "[Register Mismatch Trap] It's a standard apology phrase, not an invitation to sit down."
       }
     ]
   },
@@ -6397,7 +6397,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{お先に|おさきに}{失礼|しつれい}します。",
         "en": "I’ll go ahead and excuse myself.",
         "isCorrect": true,
-        "explanation": "Standard phrase spoken when leaving the workplace before colleagues."
+        "explanation": "[Natural Response] This is a standard phrase used when leaving the workplace before one's colleagues."
       },
       {
         "id": "opt-2",
@@ -6407,7 +6407,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Thanks for your hard work today. See you tomorrow.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Said to others who are leaving or general goodbye."
+        "explanation": "[Pragmatic Intent Trap] Say goodbye to others who are leaving."
       },
       {
         "id": "opt-3",
@@ -6417,7 +6417,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I'll be on my way.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Said when stepping out on business with intention to return."
+        "explanation": "[Register Mismatch Trap] He said this when he stepped out on business with the intention of returning."
       }
     ]
   },
@@ -6439,7 +6439,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "この{傘|かさ}、ちょっと{貸し|かし}てくれる？",
         "en": "Can I borrow this umbrella for a bit?",
         "isCorrect": true,
-        "explanation": "Natural casual request asking a friend to lend an umbrella."
+        "explanation": "[Natural Response] A natural, casual request to borrow an umbrella from a friend."
       },
       {
         "id": "opt-2",
@@ -6449,7 +6449,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Can I borrow this umbrella for a bit?",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Confuses 貸す (lend) and 借りる (borrow)."
+        "explanation": "[Grammar & Tense Trap] They confuse 貸す (lend) and 借りる (borrow)."
       },
       {
         "id": "opt-3",
@@ -6459,7 +6459,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "You can use this umbrella if you want.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Offers your umbrella instead of asking to borrow theirs."
+        "explanation": "[Pragmatic Intent Trap] Offer to lend them your umbrella instead of asking to borrow theirs."
       }
     ]
   },
@@ -6481,7 +6481,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{失礼|しつれい}します。",
         "en": "Excuse me.",
         "isCorrect": true,
-        "explanation": "Set formal greeting when entering a professor or superior's room."
+        "explanation": "[Natural Response] Use a formal greeting when entering a professor's or superior's room."
       },
       {
         "id": "opt-2",
@@ -6491,7 +6491,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Excuse me.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Said when visiting someone's home entrance, not an office."
+        "explanation": "[Register Mismatch Trap] This is said when visiting someone's home, not an office."
       },
       {
         "id": "opt-3",
@@ -6501,7 +6501,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I hope I’m not intruding.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Negative greeting makes no sense upon entering."
+        "explanation": "[Grammar & Tense Trap] A negative greeting does not make sense when entering."
       }
     ]
   },
@@ -6523,7 +6523,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ごちそうさまでした。とてもおいしかったです。",
         "en": "Thank you for the meal. It was very delicious.",
         "isCorrect": true,
-        "explanation": "Standard gratitude expressed after finishing a meal."
+        "explanation": "[Natural Response] This is the standard expression of gratitude after finishing a meal."
       },
       {
         "id": "opt-2",
@@ -6533,7 +6533,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Let’s eat.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Spoken before starting to eat, not after."
+        "explanation": "[Pragmatic Intent Trap] It is said before eating, not after."
       },
       {
         "id": "opt-3",
@@ -6543,7 +6543,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Thank you for waiting.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Said when keeping someone waiting."
+        "explanation": "[Register Mismatch Trap] Used when someone is kept waiting."
       }
     ]
   },
@@ -6565,7 +6565,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "すみません、{もう一度|もういちど}{言っ|いっ}てください。",
         "en": "Excuse me, could you repeat that?",
         "isCorrect": true,
-        "explanation": "Polite request to repeat what was just said."
+        "explanation": "[Natural Response] A polite request to repeat what was just said."
       },
       {
         "id": "opt-2",
@@ -6575,7 +6575,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Yes, I understand.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Claims understanding when you actually could not hear."
+        "explanation": "[Pragmatic Intent Trap] Claiming to understand when you actually could not hear."
       },
       {
         "id": "opt-3",
@@ -6585,7 +6585,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Please do not speak loudly.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Rude request telling the other person not to speak loudly."
+        "explanation": "[Register Mismatch Trap] It's rude to tell someone not to speak loudly."
       }
     ]
   },
@@ -6607,7 +6607,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "これを{履い|はい}てみてもいいですか。",
         "en": "May I try these on?",
         "isCorrect": true,
-        "explanation": "Polite permission request using 〜てみてもいいですか."
+        "explanation": "[Natural Response] Use the phrase \"〜てみてもいいですか\" to politely request permission."
       },
       {
         "id": "opt-2",
@@ -6617,7 +6617,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Would you like me to put these on for you?",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Offers to put shoes on the clerk (〜てあげる)."
+        "explanation": "[Grammar & Tense Trap] He offers to put the clerk's shoes on (〜てあげる)."
       },
       {
         "id": "opt-3",
@@ -6627,7 +6627,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Do I have to wear these?",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Asks if trying them on is a mandatory obligation."
+        "explanation": "[Pragmatic Intent Trap] He asks if trying them on is mandatory."
       }
     ]
   },
@@ -6649,7 +6649,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "すみません、{今|いま}{何|なん}{時|じ}ですか。",
         "en": "Excuse me, what time is it?",
         "isCorrect": true,
-        "explanation": "Standard polite inquiry asking for the current time."
+        "explanation": "[Natural Response] This is a standard, polite inquiry asking for the time."
       },
       {
         "id": "opt-2",
@@ -6659,7 +6659,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Excuse me, do you have a moment?",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Asks if the passerby has spare time, not the clock time."
+        "explanation": "[Pragmatic Intent Trap] He asks if the passerby has \"spare time,\" not \"clock time.\""
       },
       {
         "id": "opt-3",
@@ -6669,7 +6669,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I'll tell you the time.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Says you will tell them the time instead of asking."
+        "explanation": "[Grammar & Tense Trap] It says that you should tell them the time instead of asking."
       }
     ]
   },
@@ -6691,7 +6691,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{申し訳|もうしわけ}ありません、{十分|じゅうぶん}ほど{遅れ|おくれ}そうです。",
         "en": "I'm sorry, but I look like I'll be about ten minutes late.",
         "isCorrect": true,
-        "explanation": "Courteous apology with estimated delay notice using 〜そうです."
+        "explanation": "[Natural Response] Use the phrase \"〜そうです\" to make a courteous apology with an estimated delay notice."
       },
       {
         "id": "opt-2",
@@ -6701,7 +6701,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Could you please wait a moment?",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Orders the counterpart to wait without offering an apology."
+        "explanation": "[Pragmatic Intent Trap] He orders the counterpart to wait without offering an apology."
       },
       {
         "id": "opt-3",
@@ -6711,7 +6711,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Please come quickly.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Commands the other person to arrive early."
+        "explanation": "[Register Mismatch Trap] Command the other person to arrive early."
       }
     ]
   },
@@ -6733,7 +6733,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "お{持ち|もち}しましょうか。",
         "en": "Would you like me to bring it for you?",
         "isCorrect": true,
-        "explanation": "Polite humble offer of assistance using お〜しましょうか."
+        "explanation": "[Natural Response] Make a polite, humble offer of assistance using the phrase \"o~shimashka.\""
       },
       {
         "id": "opt-2",
@@ -6743,7 +6743,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Please take this.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Asks them to carry instead of offering help."
+        "explanation": "[Grammar & Tense Trap] He asks them to carry things instead of offering to help."
       },
       {
         "id": "opt-3",
@@ -6753,7 +6753,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Please carry it for me.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Tells someone else to carry the luggage."
+        "explanation": "[Pragmatic Intent Trap] Have someone else carry the luggage."
       }
     ]
   },
@@ -6775,7 +6775,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "すみません、シャッターを{押し|おし}ていただけませんか。",
         "en": "Excuse me, could you please press the shutter button?",
         "isCorrect": true,
-        "explanation": "Courteous request using 〜ていただけませんか."
+        "explanation": "[Natural Response] Make a courteous request using \"〜ていただけませんか.\""
       },
       {
         "id": "opt-2",
@@ -6785,7 +6785,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Would you like me to take the picture for you?",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Offers to take their photo instead of asking."
+        "explanation": "[Grammar & Tense Trap] He offers to take their photo instead of asking."
       },
       {
         "id": "opt-3",
@@ -6795,7 +6795,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Is it okay if I take a picture?",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Asks permission for you to take a photo of the area."
+        "explanation": "[Pragmatic Intent Trap] Ask for permission to take a photo of the area."
       }
     ]
   },
@@ -6817,7 +6817,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "すみません、ペンを{少し|すこし}お{借り|かり}してもよろしいですか。",
         "en": "Excuse me, could I borrow a pen for a moment?",
         "isCorrect": true,
-        "explanation": "Respectful borrowing permission using お借りしてもよろしいですか."
+        "explanation": "[Natural Response] Ask for permission to borrow something using the phrase \"お借りしてもよろしいですか.\""
       },
       {
         "id": "opt-2",
@@ -6827,7 +6827,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Would it be okay if I borrowed your pen for a moment?",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Confuses お借りする (I borrow) and お貸しする (I lend)."
+        "explanation": "[Grammar & Tense Trap] They confuse \"お借りする\" (I borrow) and \"お貸しする\" (I lend)."
       },
       {
         "id": "opt-3",
@@ -6837,7 +6837,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Please let me use a pen.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "Tells them to use your pen."
+        "explanation": "[Pragmatic Intent Trap] Tell them to use your pen."
       }
     ]
   },
@@ -6859,7 +6859,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{課長|かちょう}、この{書類|しょるい}を{見|み}ていただけないでしょうか。",
         "en": "Manager, could you please take a look at this document?",
         "isCorrect": true,
-        "explanation": "Respectful business request to a superior using 〜ていただけないでしょうか."
+        "explanation": "[Natural Response] This is a respectful business request to a superior, using the phrase \"〜ていただけないでしょうか.\""
       },
       {
         "id": "opt-2",
@@ -6869,7 +6869,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Section Chief, would you like to take a look at this document?",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Corrupt keigo mixing honorific and self-offer."
+        "explanation": "[Keigo Mismatch Trap] Corrupt keigo involves mixing honorifics and self-deprecation."
       },
       {
         "id": "opt-3",
@@ -6879,7 +6879,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Section Chief, let me show you this document.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Patronizing tone saying you will show it to them."
+        "explanation": "[Register Mismatch Trap] It's patronizing to say you'll show them."
       }
     ]
   },
@@ -6901,7 +6901,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{失礼|しつれい}いたします。",
         "en": "Excuse me.",
         "isCorrect": true,
-        "explanation": "Standard polite entrance greeting when entering doctor's exam room."
+        "explanation": "[Natural Response] This is the standard polite greeting when entering a doctor's exam room."
       },
       {
         "id": "opt-2",
@@ -6911,7 +6911,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Thank you for waiting.",
         "isCorrect": false,
         "trapType": "wrong-intent",
-        "explanation": "The doctor or host says this, not the entering patient."
+        "explanation": "[Pragmatic Intent Trap] It is the doctor or host who says this, not the patient who is entering."
       },
       {
         "id": "opt-3",
@@ -6921,7 +6921,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Thank you for your hard work.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Patronizing phrase spoken only by superiors to subordinates."
+        "explanation": "[Keigo Mismatch Trap] A patronizing phrase used only by superiors when speaking to subordinates."
       }
     ]
   },
@@ -6943,7 +6943,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{恐れ入り|おそれいり}ますが、{一言|ひとこと}よろしいでしょうか。",
         "en": "Excuse me, but may I say a few words?",
         "isCorrect": true,
-        "explanation": "Proper business cushion phrase requesting permission to speak."
+        "explanation": "[Natural Response] Proper business phrase for requesting permission to speak."
       },
       {
         "id": "opt-2",
@@ -6953,7 +6953,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Please listen to what I have to say.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Far too blunt and assertive for a formal meeting."
+        "explanation": "[Register Mismatch Trap] It's far too blunt and assertive for a formal meeting."
       },
       {
         "id": "opt-3",
@@ -6963,7 +6963,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I would like to speak with you.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Unnatural phrasing before starting an opinion."
+        "explanation": "[Keigo Mismatch Trap] The phrasing before starting an opinion is unnatural."
       }
     ]
   },
@@ -6985,7 +6985,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "ABC{商事|しょうじ}の{田中|たなか}{様|さま}から{一番|いちばん}にお{電話|でんわ}が{入っ|はいっ}ております。",
         "en": "We have received a call from Mr. Tanaka at ABC Trading.",
         "isCorrect": true,
-        "explanation": "Standard business protocol for announcing an incoming client call."
+        "explanation": "[Natural Response] This is the standard business protocol for announcing an incoming client call."
       },
       {
         "id": "opt-2",
@@ -6995,7 +6995,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Mr. Tanaka says he wants to make a phone call.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Lacks professional business honorific register."
+        "explanation": "[Register Mismatch Trap] It lacks a professional business register of honorifics."
       },
       {
         "id": "opt-3",
@@ -7005,7 +7005,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "We have called Mr. Tanaka to the phone.",
         "isCorrect": false,
         "trapType": "grammar-tense-trap",
-        "explanation": "Reverses the direction of who placed the call."
+        "explanation": "[Grammar & Tense Trap] It reverses the direction of who placed the call."
       }
     ]
   },
@@ -7027,7 +7027,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{申し訳|もうしわけ}ありません、{熱|ねつ}があるので{本日|ほんじつ}は{お先に|おさきに}{失礼|しつれい}してもよろしいでしょうか。",
         "en": "I’m sorry, but I have a fever. Would it be okay if I left a little early today?",
         "isCorrect": true,
-        "explanation": "Polite request for early departure citing condition and asking permission."
+        "explanation": "[Natural Response] Make a polite request for an early departure, citing your condition, and ask for permission."
       },
       {
         "id": "opt-2",
@@ -7037,7 +7037,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I'm not feeling well, so could you please let me go home?",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Overly demanding causal imperative towards a superior."
+        "explanation": "[Register Mismatch Trap] An overly demanding casual imperative toward a superior."
       },
       {
         "id": "opt-3",
@@ -7047,7 +7047,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Do you have time today?",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Ungrammatical misuse of honorific forms."
+        "explanation": "[Keigo Mismatch Trap] Misuse of honorific forms is ungrammatical."
       }
     ]
   },
@@ -7069,7 +7069,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "どうぞ、お{熱い|あつい}うちに{召し上がっ|めしあがっ}てください。",
         "en": "Please enjoy it while it's still hot.",
         "isCorrect": true,
-        "explanation": "Respectful encouragement to enjoy tea using sonkeigo 召し上がる."
+        "explanation": "[Natural Response] Use the respectful term sonkeigo 召し上がる to encourage someone to enjoy tea."
       },
       {
         "id": "opt-2",
@@ -7079,7 +7079,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Please enjoy it while it’s still hot.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "いただく is humble (kenjōgo) and cannot be applied to a client."
+        "explanation": "[Keigo Mismatch Trap] \"いただく\" is a humble expression (kenjōgo) that cannot be used when referring to a client."
       },
       {
         "id": "opt-3",
@@ -7089,7 +7089,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Please drink it quickly so it doesn't get cold.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Rude imperative directing a guest."
+        "explanation": "[Register Mismatch Trap] It's rude to give guests direct orders."
       }
     ]
   },
@@ -7111,7 +7111,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{大変|たいへん}{恐縮|きょうしゅく}ですが、ただいま{別|べつ}の{急ぎ|いそぎ}の{案件|あんけん}を{抱え|かかえ}ておりまして、{お引き受け|おひきうけ}いたしかねます。",
         "en": "I’m very sorry, but I’m currently working on another urgent project, so I’m afraid I cannot accept this request.",
         "isCorrect": true,
-        "explanation": "Quintessential business refusal using cushion and 〜いたしかねます."
+        "explanation": "[Natural Response] This is a quintessential business refusal, using the cushion phrase \"〜いたしかねます.\""
       },
       {
         "id": "opt-2",
@@ -7121,7 +7121,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I'm too busy to do that right now.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Blunt informal refusal unsuitable for a superior."
+        "explanation": "[Register Mismatch Trap] A blunt, informal refusal is unsuitable for a superior."
       },
       {
         "id": "opt-3",
@@ -7131,7 +7131,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "I must decline that job offer.",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "Grammatically corrupt double-honorific passive blend."
+        "explanation": "[Keigo Mismatch Trap] A grammatically corrupt, double-honorific, passive blend."
       }
     ]
   },
@@ -7153,7 +7153,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "furigana": "{本日|ほんじつ}は{誠に|まことに}おめでとうございます。{心|こころ}よりお{慶び|よろこび}{申し上げ|もうしあげ}ます。",
         "en": "Congratulations on this special day. I offer my heartfelt congratulations.",
         "isCorrect": true,
-        "explanation": "Highest formal ceremonial congratulatory greeting."
+        "explanation": "[Natural Response] The highest formal, ceremonial, congratulatory greeting."
       },
       {
         "id": "opt-2",
@@ -7163,7 +7163,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Thank you for your hard work. That really went well, didn't it?",
         "isCorrect": false,
         "trapType": "keigo-mismatch",
-        "explanation": "ご苦労様 is patronizing and forbidden to hosts."
+        "explanation": "[Keigo Mismatch Trap] \"Gokurousama\" is patronizing and forbidden for hosts."
       },
       {
         "id": "opt-3",
@@ -7173,7 +7173,7 @@ export const INSTANT_REPLY_ITEMS: readonly InstantReplyItem[] = [
         "en": "Thank you for everything. I wish you all the best.",
         "isCorrect": false,
         "trapType": "register-mismatch",
-        "explanation": "Inappropriate conversational blend for a wedding."
+        "explanation": "[Register Mismatch Trap] This is an inappropriate conversational topic for a wedding."
       }
     ]
   }

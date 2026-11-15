@@ -77,7 +77,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "非常に模範的な挨拶です。謙譲語「伺う」「申す」とクッション言葉「恐縮です」を自然に使えています。",
         feedbackEn:
-          "Exemplary corporate reception etiquette. Using 'kyoushuku desu' and humble verbs sets a composed, accountable tone immediately.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. This is a very exemplary greeting. It makes natural use of the humble forms “o-kikau” and “o-musubu,” as well as the cushion phrase “oshibe desu.”",
         nextNodeId: "client-node-2a-hallway-probe",
       },
       {
@@ -95,7 +95,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "丁寧で問題ありません。「お取り次ぎ」も適切ですが、急な謝罪訪問なのでもう少し恐縮の意を添えると完璧でした。",
         feedbackEn:
-          "Polite and proper. Calling for 'otoritsugi' works cleanly, though adding a note of urgency/regret would suit an apology visit even better.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. It’s polite and perfectly fine. “I’ll put you through” is also appropriate, but since this is a sudden apology visit, adding a bit more humility would have made it perfect.",
         nextNodeId: "client-node-2a-hallway-probe",
       },
       {
@@ -113,7 +113,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "他社の来客もいる受付ロビーでトラブルの詳細や取引先の機嫌を口にするのはNGです。",
         feedbackEn:
-          "Mentioning a delivery failure and asking about an executive's mood out loud in a public lobby is a serious confidentiality and etiquette slip.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. It is not acceptable to discuss the details of a problem or the mood of a business partner in the reception lobby, where visitors from other companies are also present.",
         nextNodeId: "client-node-2b-lobby-caution",
       },
       {
@@ -131,7 +131,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "受付から下請けへの責任転嫁と高圧的な態度は致命的です。第一印象で信頼を大きく損ねました。",
         feedbackEn:
-          "Blaming subcontractors at the reception desk while sounding impatient to 'get it over with' immediately damages credibility.",
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. Shifting responsibility to subcontractors and adopting a high-handed attitude are fatal mistakes. This has severely damaged trust right from the first impression.",
         nextNodeId: "client-node-2c-lobby-freeze",
       },
     ],
@@ -172,7 +172,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "見事な対応です。非公式な場での責任転嫁を避け、組織としての管理責任と説明の一貫性を守りました。",
         feedbackEn:
-          "Masterful N2 business judgment. You resisted the corridor gossip trap, owned organizational accountability, and kept your formal explanation consistent.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. That was a masterful response. They avoided shifting blame in an informal setting and upheld the organization’s managerial responsibility and consistency in its explanations.",
         nextNodeId: "client-node-3a-boardroom-fair",
       },
       {
@@ -190,7 +190,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "取引先の前で部下や若手を責める発言は、逆に「管理できていない会社」という不信感を与えてしまいます。",
         feedbackEn:
-          "Throwing a junior colleague under the bus to a client signals poor management rather than professionalism.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. Making remarks that criticize subordinates or junior staff in front of business partners will, in fact, create a sense of distrust, giving the impression that the company is “unmanaged.”",
         nextNodeId: "client-node-3b-boardroom-tense",
       },
       {
@@ -208,7 +208,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "相手が深刻視している場面で「大したことない」と軽く扱うのは、状況認識の甘さとして警戒されます。",
         feedbackEn:
-          "Minimizing a critical delivery delay as 'no big deal' while the client leadership is angry destroys trust.",
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. If you downplay a situation by saying “It’s no big deal” when the other person is taking it seriously, it will be viewed as a lack of situational awareness and cause them to be wary of you.",
         nextNodeId: "client-node-3b-boardroom-tense",
       },
     ],
@@ -249,7 +249,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "指摘を素直に受け入れてすぐ姿勢を正せました。受付の吉村さんの表情も和らぎました。",
         feedbackEn:
-          "Graceful recovery. Owning the misstep immediately earns quiet respect from the reception team.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. I readily accepted the feedback and corrected my behavior right away. Ms. Yoshimura at the front desk’s expression softened as well.",
         nextNodeId: "client-node-3a-boardroom-fair",
       },
       {
@@ -267,7 +267,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "悪気はないものの、落ち着きを欠いた印象のまま会議室に入ることになります。",
         feedbackEn:
-          "Well-meaning, yet you enter the boardroom still projecting nervousness rather than composure.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. Although you mean no harm, you’ll end up entering the conference room still giving the impression of being flustered.",
         nextNodeId: "client-node-3b-boardroom-tense",
       },
     ],
@@ -308,7 +308,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "「言語道断」まで踏み込んで明確に発言を撤回したことで、なんとか会議室への面談を繋ぎ止めました。",
         feedbackEn:
-          "Your decisive retraction ('keisotsu', 'gongodoudan') barely rescues the meeting and secures entry into the boardroom.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. By going so far as to explicitly retract my statement—describing it as “utterly outrageous”—I managed to keep the meeting in the conference room from falling through.",
         nextNodeId: "client-node-3b-boardroom-tense",
       },
       {
@@ -326,7 +326,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "取引先の前で反省の色を全く見せず、その場で面談打ち切りとなりました。",
         feedbackEn:
-          "Refusing accountability altogether forces Saito to cancel the meeting on the spot.",
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. He showed absolutely no sign of remorse in front of the client, and the meeting was cut short on the spot.",
         nextNodeId: "client-node-end-failure",
       },
     ],
@@ -367,7 +367,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "完璧なN2謝罪フレーズです。言い訳せず非を認めた上で、原因と暫定対応へ簡潔に切り替えた点が評価されます。",
         feedbackEn:
-          "Textbook Japanese executive apology: full ownership without excuses ('benkai no yochi mo gozaimasen'), followed by a poised transition into root cause and mitigation.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. This is a perfect N2-level apology phrase. It is highly regarded for acknowledging the mistake without making excuses and then concisely moving on to the cause and a provisional solution.",
         nextNodeId: "client-node-4a-mitigation-talk",
       },
       {
@@ -385,7 +385,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "誠意は伝わりますが、「何とか」「つもり」では顧客側の検証計画が立たず、斉藤リーダーからツッコミが入ります。",
         feedbackEn:
-          "Sincere, but vague phrases like 'somehow' ('nantoka') fail to reassure a client who needs exact QA milestones.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. Although your sincerity comes across, using phrases like “something like” and “I intend to” makes it impossible for the client to formulate a verification plan, prompting Leader Saito to call you out on it.",
         nextNodeId: "client-node-4b-deadline-squeeze",
       },
       {
@@ -403,7 +403,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "謝罪より先に「想定外の仕様変更」を持ち出すと、客側に責任を擦り付けているように響きます。",
         feedbackEn:
-          "Bringing up 'unexpected spec changes' before a sincere apology sounds like subtly blaming the client.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. If you bring up “unexpected specification changes” before apologizing, it sounds like you’re shifting the blame onto the customer.",
         nextNodeId: "client-node-4b-deadline-squeeze",
       },
     ],
@@ -444,7 +444,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "全面的に非を認めたうえで「自分が直接統括する」と具体策を示し、部長を議論のテーブルに引き戻せました。",
         feedbackEn:
-          "Strong executive recovery: owning the structural flaw while committing personally to dual-verification brings Hasegawa back into problem-solving mode.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. After fully admitting fault, I proposed a concrete solution—stating that “I will oversee this directly”—and was able to bring the department head back to the negotiating table.",
         nextNodeId: "client-node-4a-mitigation-talk",
       },
       {
@@ -462,7 +462,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "具体策のない土下座的な謝罪は、ビジネス交渉では「責任放棄」と受け取られかねません。",
         feedbackEn:
-          "Begging forgiveness without concrete technical controls triggers an ultimatum in a Japanese B2B review.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. An apology that amounts to a deep bow without offering concrete solutions may be interpreted as “shirking responsibility” in business negotiations.",
         nextNodeId: "client-node-4c-crisis-ultimatum",
       },
       {
@@ -480,7 +480,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "謝罪の席で取引先に反論してしまい、長谷川部長の怒りが決定的なものになりました。",
         feedbackEn:
-          "Arguing back during a crisis apology pushes Hasegawa past the breaking point.",
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. I ended up arguing with a business partner during the apology meeting, which made Department Manager Hasegawa’s anger irreparable.",
         nextNodeId: "client-node-end-failure",
       },
     ],
@@ -521,7 +521,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "切り戻し計画と定時報告の確約により、技術的・業務的リスクの両方をしっかり抑えられました。",
         feedbackEn:
-          "Rock-solid N2 risk management: prepared rollback strategy plus fixed-hour daily reports earns real confidence.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. By implementing a rollback plan and ensuring regular reporting, we were able to effectively mitigate both technical and operational risks.",
         nextNodeId: "client-node-5a-elevator-final",
       },
       {
@@ -539,7 +539,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "意気込みは買われますが、精神論や徹夜頼みはプロとしてやや不安を残します。",
         feedbackEn:
-          "Shows hustle, yet promising 'all-nighters' without a fallback mechanism still leaves Saito a bit skeptical.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. While I appreciate the enthusiasm, relying on motivational talk and all-nighters leaves me with some reservations as a professional.",
         nextNodeId: "client-node-5b-skeptical-terms",
       },
       {
@@ -557,7 +557,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "「たぶん大丈夫」は危機対応の場で最も避けたい表現です。顧客の警戒感が再び強まりました。",
         feedbackEn:
-          "Saying 'probably okay' ('tabun daijoubu') during a crisis review undermines reliability.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. “It’ll probably be okay” is the phrase you most want to avoid in crisis situations. The customer’s wariness has intensified once again.",
         nextNodeId: "client-node-5b-skeptical-terms",
       },
     ],
@@ -598,7 +598,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "具体的な時刻と分割納品を即座に約束できたことで、長谷川部長の厳しい表情もわずかに緩みました。",
         feedbackEn:
-          "Pivot recovered cleanly: giving hard timestamps and staged delivery puts the meeting back on solid footing.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. Because we were able to immediately commit to a specific deadline and phased delivery, Director Hasegawa’s stern expression softened slightly.",
         nextNodeId: "client-node-5a-elevator-final",
       },
       {
@@ -616,7 +616,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "現実的な交渉ではありますが、広報予定のある顧客に対していきなり延期を頼むのはかなり苦しい立場になります。",
         feedbackEn:
-          "Polite request, yet asking the client to delay their own launch puts them on the defensive.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. Although this is a realistic negotiation scenario, asking a client who has already scheduled a press event to postpone it out of the blue puts you in a rather difficult position.",
         nextNodeId: "client-node-5b-skeptical-terms",
       },
       {
@@ -634,7 +634,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "「気合い」などの根性論は、危機にある取引先をさらに怒らせる結果になります。",
         feedbackEn:
-          "Using bravado ('kiai') when asked for milestones pushes Hasegawa into delivering an ultimatum.",
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. A \"grit\" mentality—such as emphasizing \"ki-ai\"—will only further anger a business partner who is already in a crisis.",
         nextNodeId: "client-node-4c-crisis-ultimatum",
       },
     ],
@@ -675,7 +675,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "最後の一線で文書提出と現実的な挽回姿勢を示し、即座の契約破棄だけは免れました。",
         feedbackEn:
-          "Committing to formal written accountability stops immediate contract termination, giving you one fragile follow-up window.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. At the very last moment, we submitted the documents and demonstrated a genuine willingness to make amends, thereby narrowly avoiding immediate termination of the contract.",
         nextNodeId: "client-node-5b-skeptical-terms",
       },
       {
@@ -693,7 +693,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "お詫び訪問の場で自ら席を立ってしまい、取引関係は完全に破綻しました。",
         feedbackEn:
-          "Walking away defensively during an apology visit terminates the business relationship outright.",
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. I stood up on my own during an apology visit, and as a result, our business relationship broke down completely.",
         nextNodeId: "client-node-end-failure",
       },
     ],
@@ -734,7 +734,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "最後まで緊張感を保った完璧な締めくくりです。エレベーターの扉が閉まるまで深いお辞儀を崩しませんでした。",
         feedbackEn:
-          "Impeccable closing grace. You maintain composure and hold a deep bow until the elevator doors shut completely.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. It was a perfect conclusion that maintained the tension right until the very end. He didn’t break his deep bow until the elevator doors closed.",
         nextNodeId: "client-node-end-perfect",
       },
       {
@@ -752,7 +752,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "礼儀正しく終えられました。「承知いたしました」を使えればさらに引き締まった印象になったはずです。",
         feedbackEn:
-          "Polite and safe departure, though 'shouchi itashimashita' and reiterating 19:00 would feel even more executive-ready.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. You concluded the conversation politely. If you had used “I understand,” it would have made an even more polished impression.",
         nextNodeId: "client-node-end-success",
       },
       {
@@ -770,7 +770,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "見送りの場で「ホッとした」と気を緩めた態度を見せると、相手の警戒心がぶり返してしまいます。",
         feedbackEn:
-          "Sighing in relief ('hotto shita') right in front of the client at the elevator makes the apology seem shallow.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. If you show a relaxed attitude—such as saying “I’m relieved”—while seeing someone off, it will cause the other person’s guard to go back up.",
         nextNodeId: "client-node-end-awkward",
       },
     ],
@@ -811,7 +811,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "斉藤リーダーの助言を活かし、具体的な時刻と提出物を明言して信頼を繋ぎ止めました。",
         feedbackEn:
-          "Smart recovery: turning Saito's warning into concrete deliverables before 17:00 stabilizes the relationship.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. By following Leader Saito’s advice, I explicitly stated specific deadlines and required submissions, thereby maintaining trust.",
         nextNodeId: "client-node-end-success",
       },
       {
@@ -829,7 +829,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "メールを出す姿勢は良いですが、時刻と形式が曖昧なため、不安が完全には拭えません。",
         feedbackEn:
-          "Polite intent, yet missing an exact deadline leaves lingering unease.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. While your willingness to send an email is commendable, the time and format are unclear, so I can’t completely shake my concerns.",
         nextNodeId: "client-node-end-awkward",
       },
       {
@@ -847,7 +847,7 @@ export const CLIENT_APOLOGY_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "自分の責任を先方の担当者に丸投げするような頼み方は、斉藤リーダーの信頼まで完全に失います。",
         feedbackEn:
-          "Asking the client's project lead to smooth over your mistake internally crosses a serious boundary.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. Making a request in a way that shifts all responsibility onto the other party’s representative will completely erode even Team Leader Saito’s trust.",
         nextNodeId: "client-node-end-failure",
       },
     ],

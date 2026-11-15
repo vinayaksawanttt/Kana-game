@@ -78,7 +78,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "初デートに最適な自然体の丁寧さと、押し付けがましくないさりげない褒め言葉で、美咲さんの緊張が一気にほぐれました。",
         feedbackEn:
-          "Spot-on warmth: understated courtesy paired with an unobtrusive compliment puts Misaki immediately at ease.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. With a natural level of politeness perfect for a first date and subtle, unobtrusive compliments, Misaki’s nervousness melted away instantly.",
         nextNodeId: "date-node-2a-gallery-warm",
       },
       {
@@ -96,7 +96,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "丁寧ではありますが、少しビジネス商談のような硬さがあり、美咲さんが思わず吹き出してしまいます。",
         feedbackEn:
-          "Very polite, yet almost like greeting a corporate client—Misaki chuckles softly at the formality.",
+          "[Social Distance: Overly Formal] Excessive formal keigo creates an artificial emotional barrier; natural polite speech maintains warm, accessible rapport. Although it’s polite, there’s a slight stiffness to it—almost like a business negotiation—which makes Misaki burst out laughing.",
         nextNodeId: "date-node-2b-gallery-stiff",
       },
       {
@@ -114,7 +114,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "三日前に一度会ったばかりの間柄でいきなり雑なタメ口と「適当な店」は、美咲さんを強く警戒させてしまいます。",
         feedbackEn:
-          "Dropping into rough slang ('ossu', 'tekitou') on your very first meeting outside a bookstore makes Misaki pull back right away.",
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. Since they had only met once three days ago, suddenly using casual, informal speech and suggesting a “random restaurant” makes Misaki very wary.",
         nextNodeId: "date-node-2c-gallery-guarded",
       },
     ],
@@ -155,7 +155,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "感性の共鳴が深まりました！彼女の作品への何気ない観察を自然に織り込んだことで、美咲さんの瞳がパッと輝きます。",
         feedbackEn:
-          "Deep emotional resonance: connecting the gallery's 'yohaku' back to noticing her own sketchbook artistry lights up her expression.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. Our emotional connection deepened! By naturally weaving in my casual observations of her work, Misaki’s eyes lit up instantly.",
         nextNodeId: "date-node-3a-cafe-entrance",
       },
       {
@@ -173,7 +173,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "美咲さんが大切にしている芸術観を無自覚に茶化すような言い方になり、会話が少し冷えてしまいました。",
         feedbackEn:
-          "Brushing off a piece she loves as 'snap-on-a-phone' creates a subtle chill between you.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. My choice of words unintentionally made light of Misaki’s cherished view of art, and the conversation grew a little awkward.",
         nextNodeId: "date-node-3b-cafe-cool",
       },
       {
@@ -191,7 +191,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "感情を分かち合いたい場面で一方的に「解説」を始めるのは典型的な空回りです。",
         feedbackEn:
-          "Delivering an unsolicited technical lecture instead of sharing the mood kills the romantic quiet.",
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. Starting a one-sided “explanation” in a situation where you want to share feelings is a classic example of missing the mark.",
         nextNodeId: "date-node-3b-cafe-cool",
       },
     ],
@@ -232,7 +232,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "素直な照れと誠実な理由を飾らずに伝えたことで、美咲さんの頬がほんのり赤らみました。",
         feedbackEn:
-          "Genuine honesty melts the stiffness right away—Misaki smiles warmly at how thoughtfully you noticed her.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. By conveying her genuine shyness and sincere reasons without embellishment, Misaki’s cheeks turned a faint shade of red.",
         nextNodeId: "date-node-3a-cafe-entrance",
       },
       {
@@ -250,7 +250,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "照れ隠しのつもりが、美咲さんには「恋愛や好意ではない社交辞令」と誤解されてしまいました。",
         feedbackEn:
-          "Playing it too safe makes it sound like a dry networking coffee rather than genuine interest.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. Although I meant it as a way to hide my shyness, Misaki misunderstood it as “social niceties that have nothing to do with romance or romantic interest.”",
         nextNodeId: "date-node-3b-cafe-cool",
       },
     ],
@@ -291,7 +291,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "すぐ自分の失礼に気づいて相手の希望を尊重できたため、ぎりぎり空気を持ち直しました。",
         feedbackEn:
-          "Quick course-correction respects her plans and stabilizes the afternoon.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. I realized my rudeness right away and was able to respect the other person’s wishes, so I managed to salvage the situation at the last minute.",
         nextNodeId: "date-node-3b-cafe-cool",
       },
       {
@@ -309,7 +309,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "イラストレーターである彼女の好きな空間を「退屈」と切り捨てた瞬間、デートはそこで終了となりました。",
         feedbackEn:
-          "Calling an artist's favorite gallery 'dull' ends the date on the spot.",
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. The moment he dismissed her favorite place—as an illustrator—as “boring,” the date came to an end right there.",
         nextNodeId: "date-node-end-failure",
       },
     ],
@@ -350,7 +350,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "店員への敬意と、美咲さんの建前「どちらでも」の奥にある本音（寒さへの気遣い）を完璧に読み取りました！マスターまでニヤリと頷きます。",
         feedbackEn:
-          "Masterful N1 social radar: honoring the artisan Master while reading Misaki's unspoken chill beneath 'whichever you prefer.'",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. You perfectly picked up on the respect shown to the clerk and the true feelings behind Misaki’s polite response of “Either is fine”—her concern for the cold! Even the Master gave a knowing nod and a smirk.",
         nextNodeId: "date-node-4a-cafe-deep",
       },
       {
@@ -368,7 +368,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "夕暮れの冷える縁側を選んでしまい、美咲さんはコートを羽織ったまま少し寒そうに過ごす羽目になりました。",
         feedbackEn:
-          "Missing her shiver, you seat her out in the evening draft just for aesthetics.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. Misaki ended up choosing the veranda, which was getting chilly as dusk fell, and found herself looking a bit cold while still wearing her coat.",
         nextNodeId: "date-node-4b-cafe-chilly",
       },
       {
@@ -386,7 +386,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "お店のスタッフに高圧的な態度を取る姿を見て、美咲さんの心は完全に冷めてしまいました。",
         feedbackEn:
-          "Snapping at service staff in front of your date instantly destroys any trust.",
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. Seeing him act in a high-handed manner toward the store staff, Misaki’s enthusiasm completely faded.",
         nextNodeId: "date-node-end-failure",
       },
     ],
@@ -427,7 +427,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "「空回り」を照れ笑いしながら認めた素直さに、美咲さんも思わずクスッと笑って表情が和らぎました！",
         feedbackEn:
-          "Laughing gently at yourself ('senobi shite karamawari') disarms Misaki completely and warms up the whole table.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. Misaki couldn’t help but chuckle at his honest admission—made with a shy smile—that he’d been “spinning his wheels,” and her expression softened!",
         nextNodeId: "date-node-4a-cafe-deep",
       },
       {
@@ -445,7 +445,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "マスターの粋なアシストを突っぱねてしまい、微妙な沈黙が続いてしまいました。",
         feedbackEn:
-          "Brushing off the Master's warm icebreaker leaves the conversation cold and stiff.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. I ended up brushing off my master’s thoughtful offer, and an awkward silence ensued.",
         nextNodeId: "date-node-4b-cafe-chilly",
       },
     ],
@@ -486,7 +486,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "相手の歩み寄りに完璧な温度感で応えました！「です・ます」を自然に崩した優しい響きに、二人の距離がぐっと縮みます。",
         feedbackEn:
-          "Warm, reciprocated timing: stepping down cleanly into soft natural Japanese draws the two of you noticeably closer.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. You responded to your partner’s gesture of goodwill with just the right touch! The gentle tone, which naturally softens the “desu/masu” form, brings the two of you much closer together.",
         nextNodeId: "date-node-5a-checkout-grace",
       },
       {
@@ -504,7 +504,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "優しく好意的ですが、少しだけ相手任せに残った「です・ます」が初々しい距離感を作っています。",
         feedbackEn:
-          "Sweet and polite, though letting her make the first register shift keeps a slightly cautious pace.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. Although the tone is gentle and friendly, the use of “desu” and “masu”—which leaves a little room for the other person to take the lead—creates a sense of innocent distance.",
         nextNodeId: "date-node-5a-checkout-grace",
       },
       {
@@ -522,7 +522,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "せっかく美咲さんが勇気を出して提案してくれた歩み寄りを正面から断ってしまい、場に気まずい壁ができてしまいました。",
         feedbackEn:
-          "Flatly refusing her warm offer to relax speech builds an awkward wall right back between you.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. I flatly rejected the compromise that Misaki had bravely proposed, which created an awkward tension in the room.",
         nextNodeId: "date-node-4b-cafe-chilly",
       },
     ],
@@ -563,7 +563,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "誠実に自分の空回りを認め、見返りを求めない優しさで帰りの川沿い散歩を提案できました。",
         feedbackEn:
-          "Heartfelt accountability without clinginess wins one quiet chance to walk along the canal together.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. I was able to sincerely admit my missteps and, with a kindness that sought nothing in return, suggest a walk along the river on the way home.",
         nextNodeId: "date-node-5b-canal-recover",
       },
       {
@@ -581,7 +581,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "相手を問い詰めるような聞き方をしてしまい、美咲さんが困ったように目を伏せました。",
         feedbackEn:
-          "Putting her on the spot defensively makes the walk back tense and apologetic.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. I ended up asking her in a way that sounded like I was grilling her, and Misaki looked down, looking flustered.",
         nextNodeId: "date-node-5b-canal-recover",
       },
       {
@@ -599,7 +599,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "雰囲気が微妙になった途端に一円単位の割り勘請求をする態度は、恋愛感情の余地を完全に断ち切ります。",
         feedbackEn:
-          "Itemizing down to the exact yen the instant the mood cools turns an awkward date into a definitive goodbye.",
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. The attitude of demanding an exact split down to the last yen the moment the atmosphere becomes awkward completely cuts off any possibility of romantic feelings.",
         nextNodeId: "date-node-end-failure",
       },
     ],
@@ -640,7 +640,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "完璧な「粋（いき）」な配慮！相手に借りを感じさせず、しかも自然な形で次のデートへの布石を置きました！マスターも満足げに頷きます。",
         feedbackEn:
-          "Peak N1 tact ('iki'): spares her feeling indebted while effortlessly planting the seed for a second date.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. What a perfectly “iki” touch! You laid the groundwork for the next date in a natural way without making the other person feel indebted! Even the master nods in satisfaction.",
         nextNodeId: "date-node-6a-canal-evening",
       },
       {
@@ -658,7 +658,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "気兼ねさせないスマートな妥協案で、美咲さんも嬉しそうに財布をしまいました。",
         feedbackEn:
-          "Thoughtful compromise that keeps things breezy and easygoing.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. With a tactful compromise that put her at ease, Misaki happily put her wallet away.",
         nextNodeId: "date-node-6a-canal-evening",
       },
       {
@@ -676,7 +676,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "奢ること自体は悪くなくても、「男が払うもん」という上から目線の言い方が美咲さんを少し萎縮させました。",
         feedbackEn:
-          "Even when treating someone, phrasing it as rigid gender pride ('otoko ga harau mon') makes her feel uncomfortable rather than cared for.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. Even though treating someone to a meal isn’t necessarily a bad thing, the condescending tone of “It’s the man’s job to pay” made Misaki feel a little uncomfortable.",
         nextNodeId: "date-node-5b-canal-recover",
       },
     ],
@@ -717,7 +717,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "見事！日本人が奥ゆかしく投げる「もし嫌じゃなかったら…」のサインを真っ直ぐ温かく受け止め、最高の形で次の約束を結びました！",
         feedbackEn:
-          "Pure N1 emotional fluency: catching her shy, understated hint gracefully and affirming both her company and Saturday's plan!",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. Brilliant! You took the subtle hint that Japanese people often drop—“If you don’t mind…”—and responded to it directly and warmly, securing the next meeting in the best possible way!",
         nextNodeId: "date-node-end-perfect",
       },
       {
@@ -735,7 +735,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "素直で明るく承諾できました。改札前で次の再会が決まり、とても爽やかな締めくくりです。",
         feedbackEn:
-          "Bright, clear acceptance—locking in another weekend outing as you reach the station.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. She agreed readily and cheerfully. We arranged to meet again right in front of the ticket gate—a very refreshing way to wrap things up.",
         nextNodeId: "date-node-end-success",
       },
       {
@@ -753,7 +753,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "せっかくの繊細なデートの誘いに全く気づかず「一人で行く」と返してしまい、美咲さんが寂しそうに微笑みました……。",
         feedbackEn:
-          "Painful swing-and-a-miss: failing to read her indirect hint and saying you'll go 'alone' visibly disappoints Misaki.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. Completely oblivious to the thoughtful and delicate invitation to go on a date, I replied, “I’ll go by myself,” and Misaki smiled sadly…",
         nextNodeId: "date-node-end-awkward",
       },
     ],
@@ -794,7 +794,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "見事な大人の挽回！見返りや無理な挽回を迫らず、誠実さと余裕を示したことで、彼女の心が最後にふっと温まりました。",
         feedbackEn:
-          "Mature emotional grace: releasing all pressure while ending on sincere warmth turns a bumpy date back into a fond memory.",
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. What a brilliant comeback from an adult! By not demanding anything in return or pushing for a forced reconciliation, and instead demonstrating sincerity and composure, he finally managed to warm her heart.",
         nextNodeId: "date-node-end-success",
       },
       {
@@ -812,7 +812,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "礼儀正しく穏やかに締められましたが、「また機会があれば」は少し儀礼的で余韻を残しました。",
         feedbackEn:
-          "Polite and respectful, though 'mata kikai ga areba' leaves things slightly ambiguous.",
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. Although the conversation ended politely and amicably, the phrase “if there’s another opportunity” felt a bit formal and left a lingering impression.",
         nextNodeId: "date-node-end-awkward",
       },
       {
@@ -830,7 +830,7 @@ export const FIRST_DATE_SAKURA_NODES: Record<string, DialogueNode> = {
         feedbackJa:
           "相手の「帰りたい」サインを無視して引き止める押し付けがましい態度は、完全に逆効果でした。",
         feedbackEn:
-          "Pushing for a second venue ('bar') when she clearly wants to head home breaks the final bit of comfort.",
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. My pushy attitude—ignoring the other person’s signals that they wanted to go home and trying to keep them there—was completely counterproductive.",
         nextNodeId: "date-node-end-failure",
       },
     ],

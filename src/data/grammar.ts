@@ -14,6 +14,7 @@ export interface GrammarExample {
   en: string;
   naturalEn?: string;
   literalEn?: string;
+  promptEn?: string;
   furigana?: string;
   /** Scramble pills in correct order; empty when the sentence is unsuitable. */
   chunks: string[];

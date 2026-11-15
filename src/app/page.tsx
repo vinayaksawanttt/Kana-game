@@ -1,36 +1,58 @@
 import Link from "next/link";
-import { ArrowRight, BookOpen, Compass, Flame, Layers, MessageSquare, Sparkles } from "lucide-react";
+import { ArrowRight, BookOpen, Compass, Flame, Sparkles } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
 import { DueReviewCount } from "@/components/due-review-count";
 import { getAllLearnDocs } from "@/lib/content/learn";
+import { DIALOGUE_SCENARIOS } from "@/data/dialogue";
 import { JlptPaperIllustration } from "@/components/icons/JlptPaperIllustration";
 import { StoriesBookIllustration } from "@/components/icons/StoriesBookIllustration";
 import { DialogueSceneIllustration } from "@/components/icons/DialogueSceneIllustration";
+import { GamesHubCatalog, type HubSectionConfig } from "@/components/hub/GamesHubCatalog";
 
-interface ModuleCardConfig {
-  title: string;
-  subtitleJa: string;
-  description: string;
-  badge: string;
-  href: string;
-  soon?: boolean;
-  statusLabel?: string;
-  tags?: string[];
-}
-
-function getSections(learnGuideCount: number): Array<{
-  id: string;
-  title: string;
-  titleJa: string;
-  description: string;
-  cards: ModuleCardConfig[];
-}> {
+function getSections(learnGuideCount: number, dialogueEpisodeCount: number): HubSectionConfig[] {
   return [
     {
-      id: "core-practice",
-      title: "Core Practice",
-      titleJa: "基礎・実践トレーニング",
-      description: "Build fluency with focused daily drills across characters, words, listening, and real-world conversation.",
+      id: "daily-review",
+      filterLabel: "Daily Review",
+      title: "Daily Review & Weak Spots",
+      titleJa: "毎日の復習・弱点克服",
+      description: "Reinforce memory with adaptive FSRS spaced repetition and target past mistakes.",
+      cards: [
+        {
+          title: "FSRS Review Hub",
+          subtitleJa: "間隔反復・記憶定着",
+          description: "Keep kana, kanji, vocabulary, and grammar fresh with adaptive reviews scheduled for your memory.",
+          badge: "復",
+          href: "/review",
+          statusLabel: "Local-First",
+          tags: ["Adaptive FSRS", "Kana & Kanji", "Vocab & Grammar"],
+        },
+        {
+          title: "Mistake Bank",
+          subtitleJa: "弱点ノート・間違い復習",
+          description: "Review grammar, vocabulary, and JLPT questions you missed during practice sessions.",
+          badge: "省",
+          href: "/learn/mistake-bank",
+          statusLabel: "Remediation",
+          tags: ["Error Log", "Targeted Drills", "Self-Correction"],
+        },
+        {
+          title: "Missed Kanji",
+          subtitleJa: "苦手漢字リスト",
+          description: "Focus specifically on kanji characters that tripped you up in meaning or reading drills.",
+          badge: "苦",
+          href: "/learn/missed-kanji",
+          statusLabel: "Targeted",
+          tags: ["Kanji Weak Spots", "Quick Retest", "Stroke & Meaning"],
+        },
+      ],
+    },
+    {
+      id: "building-blocks",
+      filterLabel: "Building Blocks",
+      title: "Script & Building Blocks",
+      titleJa: "文字・語彙の基礎固め",
+      description: "Master Japanese scripts, kanji meanings and readings, radical composition, and core JLPT vocabulary.",
       cards: [
         {
           title: "Kana",
@@ -51,13 +73,13 @@ function getSections(learnGuideCount: number): Array<{
           tags: ["JLPT N5–N1", "Grades 1–8", "Heisig Keywords"],
         },
         {
-          title: "Grammar Practice",
-          subtitleJa: "文法問題・並べ替え",
-          description: "Put grammar to work with interactive particle cloze and sentence-scramble games.",
-          badge: "学",
-          href: "/games/grammar",
+          title: "Kanji Reading & Radicals Hub",
+          subtitleJa: "部首パズル・筆順・読み",
+          description: "Browse kanji by grade or combine constituent radicals, inspect readings, and trace strokes in the playground.",
+          badge: "読",
+          href: "/games/kanji/reading",
           statusLabel: "Ready",
-          tags: ["Cloze Fill", "Sentence Order", "Instant Explanations"],
+          tags: ["Radical Forge", "Stroke Order", "On & Kun Readings"],
         },
         {
           title: "Vocabulary",
@@ -68,14 +90,32 @@ function getSections(learnGuideCount: number): Array<{
           statusLabel: "Ready",
           tags: ["N5–N1 Decks", "Audio Clips", "Context Clues"],
         },
+      ],
+    },
+    {
+      id: "immersion",
+      filterLabel: "Immersion",
+      title: "Immersion & Real-World Play",
+      titleJa: "実践会話・多読・聴解ゲーム",
+      description: "Step into voiced visual-novel roleplay, graded stories, ear training, and word-chain games.",
+      cards: [
         {
-          title: "Shiritori Word Chain",
-          subtitleJa: "しりとり言葉連鎖",
-          description: "Chain Japanese words by their final kana in survival, blitz, or local friend mode.",
-          badge: "鎖",
-          href: "/games/shiritori",
-          statusLabel: "Live",
-          tags: ["Survival", "Timed Blitz", "2P Friend Mode"],
+          title: "Dialogue Quest: Real-World Japanese Roleplay",
+          subtitleJa: "実践・会話ロールプレイング",
+          description: "Navigate branching visual-novel conversations in authentic Japanese scenarios while reading the social atmosphere (空気).",
+          badge: "対",
+          href: "/games/dialogue",
+          statusLabel: `${dialogueEpisodeCount} Episodes`,
+          tags: [`${dialogueEpisodeCount} Episodes`, "N5–N1", "Voiced VN"],
+        },
+        {
+          title: "Stories & Graded Reading",
+          subtitleJa: "日本語多読・名作昔話・日常会話",
+          description: "Immerse in voiced Japanese folk tales and everyday stories with interactive furigana and tap-to-inspect vocabulary.",
+          badge: "話",
+          href: "/stories",
+          statusLabel: "62 Stories",
+          tags: ["62 Stories", "N5–N3", "Voiced Audio"],
         },
         {
           title: "Listening Practice",
@@ -86,13 +126,50 @@ function getSections(learnGuideCount: number): Array<{
           statusLabel: "Live",
           tags: ["Kana Dictation", "Spoken Vocab", "Sentence Ear"],
         },
+        {
+          title: "Shiritori Word Chain",
+          subtitleJa: "しりとり言葉連鎖",
+          description: "Chain Japanese words by their final kana in survival, blitz, or local friend mode.",
+          badge: "鎖",
+          href: "/games/shiritori",
+          statusLabel: "Live",
+          tags: ["Survival", "Timed Blitz", "2P Friend Mode"],
+        },
       ],
     },
     {
-      id: "learn-reference",
-      title: "Learn & Reference",
-      titleJa: "文法・参考書・多読",
-      description: "Study patterns, examples, practical grammar guides, and voiced graded stories.",
+      id: "jlpt-prep",
+      filterLabel: "JLPT Prep",
+      title: "Grammar & JLPT Exam Prep",
+      titleJa: "文法演習・日本語能力試験対策",
+      description: "Sharpen sentence construction and train with interactive drills modeled on official JLPT question archetypes.",
+      cards: [
+        {
+          title: "JLPT Exam Pattern Practice",
+          subtitleJa: "日本語能力試験・問題演習",
+          description: "Train across 8 official JLPT & NAT-TEST question archetypes (Star Scramble, Phonetic Traps, Instant Reply, Cloze, and more).",
+          badge: "試",
+          href: "/games/jlpt",
+          statusLabel: "8 Exam Modes",
+          tags: ["8 Exam Modes", "N5–N1", "Mondai Drills"],
+        },
+        {
+          title: "Grammar Practice",
+          subtitleJa: "文法問題・並べ替え",
+          description: "Put grammar to work with interactive particle cloze and sentence-scramble games.",
+          badge: "学",
+          href: "/games/grammar",
+          statusLabel: "Ready",
+          tags: ["Cloze Fill", "Sentence Order", "Instant Explanations"],
+        },
+      ],
+    },
+    {
+      id: "reference-tools",
+      filterLabel: "Reference & Tools",
+      title: "Reference & Tools",
+      titleJa: "文法辞典・学習ガイド・形態素解析",
+      description: "Look up grammar nuances, study topic cheat sheets, or break down any Japanese sentence into tokens.",
       cards: [
         {
           title: "Grammar Library",
@@ -104,15 +181,6 @@ function getSections(learnGuideCount: number): Array<{
           tags: ["N5–N1 Index", "Formations", "Voiced Examples"],
         },
         {
-          title: "Kanji Reading & Radicals Hub",
-          subtitleJa: "部首パズル・筆順・読み",
-          description: "Browse kanji by grade or combine constituent radicals, inspect readings, and trace strokes in the playground.",
-          badge: "読",
-          href: "/games/kanji/reading",
-          statusLabel: "Ready",
-          tags: ["Radical Forge", "Stroke Order", "On & Kun Readings"],
-        },
-        {
           title: "Cheat Sheets & Study Guides",
           subtitleJa: "要点まとめ・学習ガイド",
           description: "Browse Japanese reference sheets grouped by topic and JLPT level.",
@@ -121,14 +189,6 @@ function getSections(learnGuideCount: number): Array<{
           statusLabel: "Live",
           tags: ["Keigo & Counters", "Conjugation Tables", "Print Ready"],
         },
-      ],
-    },
-    {
-      id: "tools",
-      title: "Tools",
-      titleJa: "辞書・形態素解析ツール",
-      description: "Look up words and explore how Japanese sentences fit together.",
-      cards: [
         {
           title: "Dictionary & Sentence Analyzer",
           subtitleJa: "辞書・文章構造分解",
@@ -143,96 +203,10 @@ function getSections(learnGuideCount: number): Array<{
   ];
 }
 
-function ModuleCard({
-  title,
-  subtitleJa,
-  description,
-  badge,
-  href,
-  soon,
-  statusLabel,
-  tags = [],
-}: ModuleCardConfig) {
-  const contents = (
-    <>
-      {/* Subtle decorative corner watermark glyph */}
-      <span
-        aria-hidden="true"
-        className="pointer-events-none absolute -right-3 -top-4 select-none font-japanese text-8xl font-bold text-[var(--primary-fg)] opacity-[0.045] transition-all duration-300 group-hover:scale-110 group-hover:opacity-[0.09]"
-      >
-        {badge}
-      </span>
-
-      <div className="relative z-10 mb-4 flex items-center justify-between gap-3">
-        <div className="flex items-center gap-3">
-          <span className="grid size-12 shrink-0 place-items-center rounded-2xl border border-[var(--sakura)]/60 bg-[var(--sakura-light)] font-japanese text-2xl font-bold text-[var(--primary-fg)] shadow-xs transition-transform duration-200 group-hover:scale-105">
-            {badge}
-          </span>
-          <span className="font-japanese text-xs font-bold tracking-wider text-[var(--muted)]">
-            {subtitleJa}
-          </span>
-        </div>
-        <span
-          className={`shrink-0 rounded-full px-3 py-1 text-[11px] font-bold ${
-            soon
-              ? "bg-[var(--sakura-light)] text-[var(--muted)]"
-              : "bg-[var(--correct)]/15 text-[var(--correct)]"
-          }`}
-        >
-          {soon ? "Coming soon" : statusLabel ?? "Ready"}
-        </span>
-      </div>
-
-      <h3 className="relative z-10 text-lg font-bold tracking-tight text-[var(--ink)] group-hover:text-[var(--primary-fg)] transition-colors">
-        {title}
-      </h3>
-      <p className="relative z-10 mt-2 flex-1 text-sm leading-relaxed text-[var(--muted)]">
-        {description}
-      </p>
-
-      {tags.length > 0 && (
-        <div className="relative z-10 mt-4 flex flex-wrap gap-1.5">
-          {tags.map((tag) => (
-            <span
-              key={tag}
-              className="rounded-md border border-[var(--line)] bg-[var(--paper-tint)] px-2 py-0.5 text-[11px] font-semibold text-[var(--muted)]"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-      )}
-
-      <span className="relative z-10 mt-5 flex items-center justify-between border-t border-[var(--line)]/70 pt-3.5 text-xs font-bold text-[var(--primary-fg)]">
-        <span>{soon ? "In development" : "Explore Module"}</span>
-        {!soon && (
-          <ArrowRight
-            size={16}
-            className="transition-transform group-hover:translate-x-1"
-            aria-hidden="true"
-          />
-        )}
-      </span>
-    </>
-  );
-
-  const className =
-    "group relative flex min-h-56 flex-col overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_12px_34px_rgba(188,0,45,0.045)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sakura)] hover:shadow-[0_20px_40px_rgba(208,16,76,0.12)] sm:p-6";
-
-  return soon ? (
-    <div aria-disabled="true" className={`${className} opacity-75`}>
-      {contents}
-    </div>
-  ) : (
-    <Link href={href} className={className}>
-      {contents}
-    </Link>
-  );
-}
-
 export default function GamesHub() {
   const learnGuideCount = getAllLearnDocs().length;
-  const sections = getSections(learnGuideCount);
+  const dialogueEpisodeCount = DIALOGUE_SCENARIOS.length;
+  const sections = getSections(learnGuideCount, dialogueEpisodeCount);
 
   return (
     <GameLayout
@@ -259,7 +233,7 @@ export default function GamesHub() {
       }
     >
       <section className="mx-auto w-full max-w-6xl flex-1 px-5 pb-14 sm:px-8">
-        {/* Redesigned Architectural Washi Hero Deck */}
+        {/* Compact Hero Command Center */}
         <header className="relative my-6 overflow-hidden rounded-3xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[0_18px_48px_rgba(188,0,45,0.065)] sm:my-8 sm:p-9">
           {/* Decorative Background Kanji Watermark */}
           <div
@@ -289,36 +263,65 @@ export default function GamesHub() {
                 Choose a focused practice mode, step into voiced real-world roleplay dialogues, review what you know with FSRS spaced repetition, or explore the language.
               </p>
 
-              {/* Quick-Jump Pill Bar */}
-              <div className="mt-6 flex flex-wrap items-center gap-2">
-                <a
-                  href="#Core-Practice-heading"
-                  className="inline-flex items-center gap-1.5 rounded-xl bg-[var(--primary)] px-4 py-2 text-xs font-bold text-white shadow-xs transition-opacity hover:opacity-90"
-                >
-                  <Flame className="size-3.5" />
-                  Core Drills
-                </a>
+              {/* Integrated Hero Command Bar: FSRS Review CTA + DueReviewCount */}
+              <div className="mt-6 flex flex-col gap-3">
                 <Link
-                  href="/games/dialogue"
-                  className="inline-flex items-center gap-1.5 rounded-xl border border-[var(--sakura)] bg-[var(--sakura-light)] px-3.5 py-2 text-xs font-bold text-[var(--primary-fg)] transition-colors hover:border-[var(--primary)]"
+                  href="/review"
+                  className="group flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-[var(--sakura)]/80 bg-[var(--paper-tint)]/90 p-3.5 shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-[var(--primary)] hover:shadow-[0_14px_30px_rgba(208,16,76,0.12)] sm:p-4"
                 >
-                  <MessageSquare className="size-3.5" />
-                  Dialogue Quest (New)
+                  <div className="flex items-center gap-3.5">
+                    <span className="grid size-12 shrink-0 place-items-center rounded-xl bg-[var(--primary)] font-japanese text-2xl font-bold text-white shadow-xs">
+                      復
+                    </span>
+                    <div>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="text-[11px] font-extrabold uppercase tracking-[0.14em] text-[var(--primary-fg)]">
+                          FSRS Review Hub
+                        </span>
+                        <span className="rounded-full bg-[var(--sakura-light)] px-2 py-0.5 text-[10px] font-bold text-[var(--primary-fg)]">
+                          Adaptive Spaced Repetition
+                        </span>
+                      </div>
+                      <p className="mt-0.5 text-sm font-extrabold text-[var(--ink)] transition-colors group-hover:text-[var(--primary-fg)]">
+                        Start FSRS Review →
+                      </p>
+                      <p className="text-xs text-[var(--muted)]">
+                        Kana, kanji, vocabulary &amp; grammar due today
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <DueReviewCount />
+                    <span className="grid size-9 place-items-center rounded-full border border-[var(--line)] bg-[var(--surface)] text-[var(--primary-fg)] transition-transform group-hover:translate-x-1 group-hover:border-[var(--sakura)]">
+                      <ArrowRight size={16} aria-hidden="true" />
+                    </span>
+                  </div>
                 </Link>
-                <Link
-                  href="/games/jlpt"
-                  className="inline-flex items-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--paper-tint)] px-3.5 py-2 text-xs font-bold text-[var(--ink)] transition-colors hover:border-[var(--sakura)]"
-                >
-                  <Compass className="size-3.5 text-[var(--primary-fg)]" />
-                  JLPT Arena
-                </Link>
-                <Link
-                  href="/stories"
-                  className="inline-flex items-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--paper-tint)] px-3.5 py-2 text-xs font-bold text-[var(--ink)] transition-colors hover:border-[var(--sakura)]"
-                >
-                  <BookOpen className="size-3.5 text-[var(--primary-fg)]" />
-                  62 Stories
-                </Link>
+
+                {/* Quick-Jump Pill Bar */}
+                <div className="flex flex-wrap items-center gap-2">
+                  <a
+                    href="#category-catalog"
+                    className="inline-flex items-center gap-1.5 rounded-xl bg-[var(--primary)] px-3.5 py-2 text-xs font-bold text-white shadow-xs transition-opacity hover:opacity-90"
+                  >
+                    <Flame className="size-3.5" />
+                    Browse All Modules
+                  </a>
+                  <Link
+                    href="/learn/mistake-bank"
+                    className="inline-flex items-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--paper-tint)] px-3.5 py-2 text-xs font-bold text-[var(--ink)] transition-colors hover:border-[var(--sakura)]"
+                  >
+                    <Compass className="size-3.5 text-[var(--primary-fg)]" />
+                    Mistake Bank
+                  </Link>
+                  <Link
+                    href="/dictionary"
+                    className="inline-flex items-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--paper-tint)] px-3.5 py-2 text-xs font-bold text-[var(--ink)] transition-colors hover:border-[var(--sakura)]"
+                  >
+                    <BookOpen className="size-3.5 text-[var(--primary-fg)]" />
+                    Sentence Analyzer
+                  </Link>
+                </div>
               </div>
             </div>
 
@@ -347,347 +350,189 @@ export default function GamesHub() {
               </div>
               <div className="rounded-2xl border border-[var(--line)] bg-[var(--paper-tint)] p-4">
                 <span className="font-japanese text-2xl font-extrabold text-[var(--primary-fg)]">
-                  6 Scenes
+                  {dialogueEpisodeCount} Episodes
                 </span>
                 <p className="mt-1 text-xs font-bold text-[var(--ink)]">Dialogue Roleplay</p>
-                <p className="text-[11px] text-[var(--muted)]">Directions, Kōban, Sensei &amp; more</p>
+                <p className="text-[11px] text-[var(--muted)]">JLPT N5–N1 voiced visual novel</p>
               </div>
             </div>
           </div>
         </header>
 
-        {/* Daily Review Command Bar */}
-        <section aria-labelledby="daily-review-heading" className="mb-12">
-          <div className="mb-3 flex items-center justify-between">
-            <h2
-              id="daily-review-heading"
-              className="text-sm font-extrabold uppercase tracking-[0.14em]"
-            >
-              Daily Review
-            </h2>
-            <span className="font-japanese text-xs font-bold text-[var(--muted)]">
-              記憶の定着 · FSRS Spaced Repetition
+        {/* Featured Experiences Bento Row (3-Column) */}
+        <section aria-labelledby="featured-experiences-heading" className="mb-10">
+          <div className="mb-4 flex items-center justify-between border-b border-[var(--line)] pb-3">
+            <div className="flex items-center gap-2.5">
+              <h2
+                id="featured-experiences-heading"
+                className="text-sm font-extrabold uppercase tracking-[0.14em] text-[var(--ink)]"
+              >
+                Featured Experiences
+              </h2>
+              <span className="font-japanese text-xs font-bold text-[var(--primary-fg)]">
+                · 注目コンテンツ
+              </span>
+            </div>
+            <span className="hidden text-xs font-semibold text-[var(--muted)] sm:inline">
+              Immersive roleplay, official exam drills &amp; graded reading
             </span>
           </div>
-          <Link
-            href="/review"
-            className="group relative grid gap-5 overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[0_14px_38px_rgba(188,0,45,0.06)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sakura)] hover:shadow-[0_22px_44px_rgba(208,16,76,0.14)] sm:grid-cols-[1fr_auto] sm:items-center sm:p-7"
-          >
-            <div className="flex items-start gap-4 sm:items-center">
-              <span className="grid size-14 shrink-0 place-items-center rounded-2xl border border-[var(--sakura)]/60 bg-[var(--sakura-light)] font-japanese text-3xl font-bold text-[var(--primary-fg)] shadow-xs">
-                復
-              </span>
+
+          <div className="grid gap-4 lg:grid-cols-3">
+            {/* Featured 1: Dialogue Quest */}
+            <Link
+              href="/games/dialogue"
+              className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_14px_38px_rgba(188,0,45,0.06)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sakura)] hover:shadow-[0_22px_44px_rgba(208,16,76,0.14)] sm:p-6"
+            >
               <div>
-                <div className="flex flex-wrap items-center gap-2">
-                  <p className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--primary-fg)]">
-                    Spaced repetition · Local-first
-                  </p>
-                  <span className="rounded-full bg-[var(--paper-tint)] px-2.5 py-0.5 text-[10px] font-bold text-[var(--muted)]">
-                    Kana · Kanji · Vocab · Grammar
-                  </span>
+                <div className="mb-4 flex items-start justify-between gap-3">
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-[var(--primary)] font-japanese text-xl font-bold text-white shadow-xs">
+                        対
+                      </span>
+                      <span className="text-[11px] font-extrabold uppercase tracking-[0.14em] text-[var(--primary-fg)]">
+                        Roleplay VN · 会話クエスト
+                      </span>
+                    </div>
+                    <h3 className="mt-3 text-lg font-bold tracking-tight text-[var(--ink)] transition-colors group-hover:text-[var(--primary-fg)]">
+                      Dialogue Quest: Real-World Japanese Roleplay
+                    </h3>
+                  </div>
+                  <DialogueSceneIllustration className="h-24 w-20 shrink-0 transition-transform duration-300 group-hover:-rotate-2 group-hover:scale-105" />
                 </div>
-                <h3 id="daily-review-title" className="mt-1 text-xl font-bold sm:text-2xl">
-                  FSRS Review Hub
-                </h3>
-                <p className="mt-1.5 max-w-xl text-sm leading-relaxed text-[var(--muted)]">
-                  Keep kana, kanji, vocabulary, and grammar fresh with adaptive reviews scheduled for your memory.
+
+                <p className="text-sm leading-relaxed text-[var(--muted)]">
+                  Step into voiced visual-novel conversations across daily life, campus, business, and romance while reading the social atmosphere (<span className="font-japanese">空気</span>).
                 </p>
               </div>
-            </div>
-            <div className="flex items-center justify-between gap-5 sm:justify-end">
-              <DueReviewCount />
-              <span className="grid size-10 place-items-center rounded-full border border-[var(--line)] bg-[var(--paper-tint)] text-[var(--primary-fg)] transition-transform group-hover:translate-x-1 group-hover:border-[var(--sakura)]">
-                <ArrowRight size={18} aria-hidden="true" />
-              </span>
-            </div>
-          </Link>
-        </section>
 
-        {/* Main Sections */}
-        {sections.map((section) => (
-          <section
-            key={section.title}
-            aria-labelledby={`${section.title.replaceAll(" ", "-")}-heading`}
-            className="mb-12"
-          >
-            <div className="mb-5 flex flex-col justify-between gap-1 border-b border-[var(--line)] pb-3 sm:flex-row sm:items-end">
-              <div>
-                <div className="flex items-center gap-2.5">
-                  <h2
-                    id={`${section.title.replaceAll(" ", "-")}-heading`}
-                    className="text-base font-extrabold uppercase tracking-[0.14em] text-[var(--ink)]"
-                  >
-                    {section.title}
-                  </h2>
-                  <span className="font-japanese text-xs font-bold text-[var(--primary-fg)]">
-                    · {section.titleJa}
-                  </span>
+              <div className="mt-5">
+                <div className="flex flex-wrap gap-1.5">
+                  {[`${dialogueEpisodeCount} Episodes`, "N5–N1", "Voiced VN"].map((chip) => (
+                    <span
+                      key={chip}
+                      className="rounded-full border border-[var(--sakura)]/70 bg-[var(--sakura-light)] px-2.5 py-0.5 text-[11px] font-bold text-[var(--primary-fg)]"
+                    >
+                      {chip}
+                    </span>
+                  ))}
                 </div>
-                <p className="mt-1 text-sm text-[var(--muted)]">{section.description}</p>
+                <div className="mt-4 flex items-center justify-between border-t border-[var(--line)]/70 pt-3 text-xs font-bold text-[var(--primary-fg)]">
+                  <span>Start Roleplay Dialogue</span>
+                  <ArrowRight
+                    size={16}
+                    className="transition-transform group-hover:translate-x-1"
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-            </div>
+            </Link>
 
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {section.cards.map((card) => (
-                <ModuleCard key={card.title} {...card} />
-              ))}
-
-              {/* Core Practice Featured Banners: 1. Dialogue Quest & 2. JLPT Exam Pattern Practice */}
-              {section.title === "Core Practice" && (
-                <>
-                  {/* Featured Banner 1: Interactive Dialogue Quest */}
-                  <Link
-                    href="/games/dialogue"
-                    className="group col-span-1 grid gap-6 rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[0_14px_38px_rgba(188,0,45,0.06)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sakura)] hover:shadow-[0_22px_44px_rgba(208,16,76,0.14)] sm:col-span-2 lg:col-span-3 lg:grid-cols-[1fr_auto] lg:items-center lg:p-8"
-                  >
-                    <div className="flex flex-col">
-                      <div className="mb-4 flex flex-wrap items-center gap-3">
-                        <span className="grid size-12 shrink-0 place-items-center rounded-full bg-[var(--primary)] font-japanese text-2xl font-bold text-white shadow-sm">
-                          対
-                        </span>
-                        <span className="text-xs font-extrabold uppercase tracking-[0.16em] text-[var(--primary-fg)]">
-                          SITUATIONAL ROLEPLAY SIMULATOR · 会話クエスト
-                        </span>
-                        <span className="rounded-full bg-[var(--correct)]/15 px-3 py-1 text-[11px] font-bold text-[var(--correct)]">
-                          New · 6 Scenarios · N5–N3
-                        </span>
-                      </div>
-
-                      <h3 className="text-xl font-bold sm:text-2xl">
-                        Dialogue Quest: Real-World Japanese Roleplay (
-                        <span className="font-japanese">実践・会話ロールプレイング</span>)
-                      </h3>
-
-                      <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--muted)]">
-                        Practice branching multi-turn conversations in real Japanese situations — ask a passerby for directions to McDonald&apos;s, report a lost wallet to a police officer, request an extension from your teacher, call your house owner, or chat with a farmer while managing the social atmosphere (<span className="font-japanese">空気ゲージ</span>).
-                      </p>
-
-                      <div className="mt-4 flex flex-wrap gap-2">
-                        <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
-                          👩‍💼 Asking Directions (<span className="font-japanese">マクドナルドへの道案内</span> · N5)
-                        </span>
-                        <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
-                          👮‍♂️ Police Officer (<span className="font-japanese">交番で財布の遺失届</span> · N4)
-                        </span>
-                        <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
-                          👩‍🏫 Teacher Consultation (<span className="font-japanese">先生に宿題の相談</span> · N4)
-                        </span>
-                        <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
-                          🏠 House Owner (<span className="font-japanese">大家さんにエアコン修理依頼</span> · N3)
-                        </span>
-                        <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
-                          👔 Employer / Manager (<span className="font-japanese">店長にシフト変更相談</span> · N3)
-                        </span>
-                        <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
-                          🌾 Local Farmer (<span className="font-japanese">朝市で野菜と果物を買う</span> · N5)
-                        </span>
-                      </div>
-
-                      <div className="mt-6 flex items-center gap-2 text-sm font-bold text-[var(--primary-fg)]">
-                        <span>Start Roleplay Dialogue →</span>
-                        <ArrowRight
-                          size={16}
-                          className="transition-transform group-hover:translate-x-1"
-                          aria-hidden="true"
-                        />
-                      </div>
+            {/* Featured 2: JLPT Exam Pattern Practice */}
+            <Link
+              href="/games/jlpt"
+              className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_14px_38px_rgba(188,0,45,0.06)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sakura)] hover:shadow-[0_22px_44px_rgba(208,16,76,0.14)] sm:p-6"
+            >
+              <div>
+                <div className="mb-4 flex items-start justify-between gap-3">
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-[var(--primary)] font-japanese text-xl font-bold text-white shadow-xs">
+                        試
+                      </span>
+                      <span className="text-[11px] font-extrabold uppercase tracking-[0.14em] text-[var(--primary-fg)]">
+                        JLPT Arena · 問題演習
+                      </span>
                     </div>
+                    <h3 className="mt-3 text-lg font-bold tracking-tight text-[var(--ink)] transition-colors group-hover:text-[var(--primary-fg)]">
+                      JLPT Exam Pattern Practice
+                    </h3>
+                  </div>
+                  <JlptPaperIllustration className="h-24 w-20 shrink-0 transition-transform duration-300 group-hover:rotate-2 group-hover:scale-105" />
+                </div>
 
-                    <div className="flex items-center justify-center lg:pl-4">
-                      <DialogueSceneIllustration className="h-52 w-40 shrink-0 transition-transform duration-300 group-hover:-rotate-1 group-hover:scale-[1.03] sm:h-56 sm:w-44" />
-                    </div>
-                  </Link>
+                <p className="text-sm leading-relaxed text-[var(--muted)]">
+                  Train with interactive drills modeled on official JLPT and NAT-TEST question archetypes — Star Scramble, Phonetic Traps, Instant Reply, and Cloze.
+                </p>
+              </div>
 
-                  {/* Featured Banner 2: JLPT Exam Pattern Practice */}
-                  <Link
-                    href="/games/jlpt"
-                    className="group col-span-1 grid gap-6 rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[0_14px_38px_rgba(188,0,45,0.06)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sakura)] hover:shadow-[0_22px_44px_rgba(208,16,76,0.14)] sm:col-span-2 lg:col-span-3 lg:grid-cols-[1fr_auto] lg:items-center lg:p-8"
-                  >
-                    <div className="flex flex-col">
-                      <div className="mb-4 flex flex-wrap items-center gap-3">
-                        <span className="grid size-12 shrink-0 place-items-center rounded-full bg-[var(--primary)] font-japanese text-2xl font-bold text-white shadow-sm">
-                          試
-                        </span>
-                        <span className="text-xs font-extrabold uppercase tracking-[0.16em] text-[var(--primary-fg)]">
-                          JLPT &amp; NAT-TEST ARENA
-                        </span>
-                        <span className="rounded-full bg-[var(--correct)]/15 px-3 py-1 text-[11px] font-bold text-[var(--correct)]">
-                          Live · N5–N1
-                        </span>
-                      </div>
+              <div className="mt-5">
+                <div className="flex flex-wrap gap-1.5">
+                  {["8 Exam Modes", "N5–N1", "Mondai Drills"].map((chip) => (
+                    <span
+                      key={chip}
+                      className="rounded-full border border-[var(--sakura)]/70 bg-[var(--sakura-light)] px-2.5 py-0.5 text-[11px] font-bold text-[var(--primary-fg)]"
+                    >
+                      {chip}
+                    </span>
+                  ))}
+                </div>
+                <div className="mt-4 flex items-center justify-between border-t border-[var(--line)]/70 pt-3 text-xs font-bold text-[var(--primary-fg)]">
+                  <span>Enter Exam Arena</span>
+                  <ArrowRight
+                    size={16}
+                    className="transition-transform group-hover:translate-x-1"
+                    aria-hidden="true"
+                  />
+                </div>
+              </div>
+            </Link>
 
-                      <h3 className="text-xl font-bold sm:text-2xl">
-                        JLPT Exam Pattern Practice (
-                        <span className="font-japanese">日本語能力試験・問題演習</span>)
-                      </h3>
-
-                      <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--muted)]">
-                        Train with interactive drills modeled directly on official JLPT and NAT-TEST question archetypes (Mondai) across N5 to N1 — building speed, syntactic accuracy, and trap recognition without static PDF mock papers.
-                      </p>
-
-                      <div className="mt-4 flex flex-wrap gap-2">
-                        <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
-                          ★ Star Sentence Scramble (<span className="font-japanese">星問題</span> · Live)
-                        </span>
-                        <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
-                          <span className="font-japanese">漢字</span> Phonetic Trap Sniper (<span className="font-japanese">漢字読み・表記</span> · Live)
-                        </span>
-                        <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
-                          <span className="font-japanese">類義</span> Synonym Paraphrase (<span className="font-japanese">言い換え類義</span> · Live)
-                        </span>
-                        <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
-                          <span className="font-japanese">聴解</span> Quick Response Blitz (<span className="font-japanese">即時応答</span> · Live)
-                        </span>
-                        <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
-                          <span className="font-japanese">文章</span> Paragraph Cloze (<span className="font-japanese">文章の文法</span> · Live)
-                        </span>
-                        <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
-                          <span className="font-japanese">情報</span> Info Scanner (<span className="font-japanese">情報検索</span> · Live)
-                        </span>
-                      </div>
-
-                      <div className="mt-6 flex items-center gap-2 text-sm font-bold text-[var(--primary-fg)]">
-                        <span>Enter Exam Arena →</span>
-                        <ArrowRight
-                          size={16}
-                          className="transition-transform group-hover:translate-x-1"
-                          aria-hidden="true"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="flex items-center justify-center lg:pl-4">
-                      <JlptPaperIllustration className="h-52 w-40 shrink-0 transition-transform duration-300 group-hover:rotate-1 group-hover:scale-[1.03] sm:h-56 sm:w-44" />
-                    </div>
-                  </Link>
-                </>
-              )}
-
-              {/* Learn & Reference 4th Item: Inflated Stories & Graded Reading Banner */}
-              {section.title === "Learn & Reference" && (
-                <Link
-                  href="/stories"
-                  className="group col-span-1 grid gap-6 rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[0_14px_38px_rgba(188,0,45,0.06)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sakura)] hover:shadow-[0_22px_44px_rgba(208,16,76,0.14)] sm:col-span-2 lg:col-span-3 lg:grid-cols-[1fr_auto] lg:items-center lg:p-8"
-                >
-                  <div className="flex flex-col">
-                    <div className="mb-4 flex flex-wrap items-center gap-3">
-                      <span className="grid size-12 shrink-0 place-items-center rounded-full bg-[var(--primary)] font-japanese text-2xl font-bold text-white shadow-sm">
+            {/* Featured 3: Stories & Graded Reading */}
+            <Link
+              href="/stories"
+              className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_14px_38px_rgba(188,0,45,0.06)] transition duration-200 hover:-translate-y-1 hover:border-[var(--sakura)] hover:shadow-[0_22px_44px_rgba(208,16,76,0.14)] sm:p-6"
+            >
+              <div>
+                <div className="mb-4 flex items-start justify-between gap-3">
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-[var(--primary)] font-japanese text-xl font-bold text-white shadow-xs">
                         話
                       </span>
-                      <span className="text-xs font-extrabold uppercase tracking-[0.16em] text-[var(--primary-fg)]">
-                        JAPANESE GRADED READER · 多読・読み物
-                      </span>
-                      <span className="rounded-full bg-[var(--correct)]/15 px-3 py-1 text-[11px] font-bold text-[var(--correct)]">
-                        Live · N5–N3 · 62 Stories
+                      <span className="text-[11px] font-extrabold uppercase tracking-[0.14em] text-[var(--primary-fg)]">
+                        Graded Reader · 多読
                       </span>
                     </div>
-
-                    <h3 className="text-xl font-bold sm:text-2xl">
-                      Stories &amp; Graded Reading (
-                      <span className="font-japanese">日本語多読・名作昔話・日常会話</span>)
+                    <h3 className="mt-3 text-lg font-bold tracking-tight text-[var(--ink)] transition-colors group-hover:text-[var(--primary-fg)]">
+                      Stories &amp; Graded Reading
                     </h3>
-
-                    <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--muted)]">
-                      Immerse in authentic Japanese graded stories, everyday conversational scenes, anime pop-culture tales, and timeless folklore with interactive furigana, tap-to-inspect word breakdowns, bilingual sentence translation, and native audio speech narration.
-                    </p>
-
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
-                        <span className="font-japanese">昔話</span> Classic Fairy Tales (<span className="font-japanese">桃太郎・花咲か爺さん</span> · 12 Stories)
-                      </span>
-                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
-                        <span className="font-japanese">日常</span> Everyday Life Scenes (<span className="font-japanese">大学・新幹線・空港</span> · 30 Stories)
-                      </span>
-                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
-                        <span className="font-japanese">音声</span> Full Audio Narration (<span className="font-japanese">自然な音声読み上げ</span> · Live)
-                      </span>
-                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
-                        <span className="font-japanese">振仮名</span> Interactive Furigana &amp; Hover Vocabulary
-                      </span>
-                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
-                        <span className="font-japanese">対訳</span> Bilingual Sentence Breakdown (<span className="font-japanese">英語対訳</span>)
-                      </span>
-                      <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
-                        <span className="font-japanese">読解</span> Comprehension Quizzes (<span className="font-japanese">読解演習</span> · Live)
-                      </span>
-                    </div>
-
-                    <div className="mt-6 flex items-center gap-2 text-sm font-bold text-[var(--primary-fg)]">
-                      <span>Read Stories &amp; Folk Tales →</span>
-                      <ArrowRight
-                        size={16}
-                        className="transition-transform group-hover:translate-x-1"
-                        aria-hidden="true"
-                      />
-                    </div>
                   </div>
-
-                  <div className="flex items-center justify-center lg:pl-4">
-                    <StoriesBookIllustration className="h-52 w-40 shrink-0 transition-transform duration-300 group-hover:rotate-1 group-hover:scale-[1.03] sm:h-56 sm:w-44" />
-                  </div>
-                </Link>
-              )}
-
-              {/* Tools Section Companion Panel: Interactive Morphological Breakdown Preview */}
-              {section.title === "Tools" && (
-                <div className="col-span-1 flex flex-col justify-between rounded-2xl border border-[var(--line)] bg-[var(--paper-tint)] p-6 sm:col-span-1 lg:col-span-2">
-                  <div>
-                    <div className="flex items-center justify-between gap-2">
-                      <span className="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-[0.14em] text-[var(--primary-fg)]">
-                        <Layers className="size-3.5" />
-                        Live Morphological Engine Preview
-                      </span>
-                      <span className="font-japanese text-xs font-bold text-[var(--muted)]">
-                        形態素解析・Kuromoji
-                      </span>
-                    </div>
-                    <p className="mt-2 text-sm text-[var(--muted)]">
-                      Paste any Japanese sentence into the analyzer to inspect parts of speech, dictionary base forms, pitch readings, and constituent kanji cards:
-                    </p>
-
-                    <div className="mt-4 flex flex-wrap items-center gap-2 rounded-xl border border-[var(--line)] bg-[var(--surface)] p-3.5">
-                      {[
-                        { surface: "彼", reading: "かれ", pos: "Noun" },
-                        { surface: "は", reading: "わ", pos: "Particle" },
-                        { surface: "疲れて", reading: "つかれて", pos: "Verb (連用)" },
-                        { surface: "いた", reading: "いた", pos: "Aux Verb" },
-                        { surface: "。しかし、", reading: "しかし", pos: "Conjunction" },
-                        { surface: "宿題", reading: "しゅくだい", pos: "Noun" },
-                        { surface: "を", reading: "お", pos: "Particle" },
-                        { surface: "終わらせた", reading: "おわらせた", pos: "Verb (Causative)" },
-                      ].map((token, idx) => (
-                        <div
-                          key={idx}
-                          className="flex flex-col items-center rounded-lg border border-[var(--sakura)]/50 bg-[var(--sakura-light)]/50 px-2.5 py-1.5 text-center"
-                        >
-                          <span className="text-[10px] font-semibold text-[var(--muted)]">
-                            {token.reading}
-                          </span>
-                          <span className="font-japanese text-sm font-bold text-[var(--ink)]">
-                            {token.surface}
-                          </span>
-                          <span className="mt-0.5 text-[9px] font-bold uppercase text-[var(--primary-fg)]">
-                            {token.pos}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="mt-4 flex items-center justify-between border-t border-[var(--line)]/70 pt-3 text-xs text-[var(--muted)]">
-                    <span>Supports reverse English lookup, JLPT tagging &amp; instant VOICEVOX speech</span>
-                    <Link
-                      href="/dictionary"
-                      className="font-bold text-[var(--primary-fg)] hover:underline"
-                    >
-                      Open Analyzer →
-                    </Link>
-                  </div>
+                  <StoriesBookIllustration className="h-24 w-20 shrink-0 transition-transform duration-300 group-hover:rotate-2 group-hover:scale-105" />
                 </div>
-              )}
-            </div>
-          </section>
-        ))}
+
+                <p className="text-sm leading-relaxed text-[var(--muted)]">
+                  Immerse in voiced Japanese folk tales and everyday stories with interactive furigana, tap-to-inspect vocabulary, and comprehension quizzes.
+                </p>
+              </div>
+
+              <div className="mt-5">
+                <div className="flex flex-wrap gap-1.5">
+                  {["62 Stories", "N5–N3", "Voiced Audio"].map((chip) => (
+                    <span
+                      key={chip}
+                      className="rounded-full border border-[var(--sakura)]/70 bg-[var(--sakura-light)] px-2.5 py-0.5 text-[11px] font-bold text-[var(--primary-fg)]"
+                    >
+                      {chip}
+                    </span>
+                  ))}
+                </div>
+                <div className="mt-4 flex items-center justify-between border-t border-[var(--line)]/70 pt-3 text-xs font-bold text-[var(--primary-fg)]">
+                  <span>Read Stories &amp; Folk Tales</span>
+                  <ArrowRight
+                    size={16}
+                    className="transition-transform group-hover:translate-x-1"
+                    aria-hidden="true"
+                  />
+                </div>
+              </div>
+            </Link>
+          </div>
+        </section>
+
+        {/* Interactive Category Filter & Module Grid */}
+        <GamesHubCatalog sections={sections} />
 
         <footer className="border-t border-[var(--line)] pt-6 text-xs text-[var(--muted)]">
           <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-center">

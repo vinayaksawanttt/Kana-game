@@ -59,7 +59,8 @@ export const TEACHER_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "教員室への入室マナー「失礼いたします」と、相手の都合を配慮する「お時間よろしいでしょうか」が完璧です！",
-        feedbackEn: "Exemplary academic etiquette: polite entry greeting paired with checking teacher availability.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. The etiquette for entering a teacher’s office—“Excuse me”—and showing consideration for the other person’s schedule with “Would now be a good time?” are spot on!",
         nextNodeId: "teacher-node-2-listen-warm",
       },
       {
@@ -71,7 +72,8 @@ export const TEACHER_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 80,
         feedbackJa: "用件ははっきり伝わります。入室時の「失礼します」を添えるとより自然な日本語になります。",
-        feedbackEn: "Clear topic statement, though prefacing with 'Shitsurei shimasu' is standard when entering a teacher's room.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. The message comes across clearly. Adding “Excuse me” when entering the room makes the Japanese sound more natural.",
         nextNodeId: "teacher-node-2-listen-direct",
       },
       {
@@ -83,7 +85,8 @@ export const TEACHER_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 40,
         feedbackJa: "焦りは伝わりますが、教員室で先生に「ヤバい」などの俗語を使うのは不適切です。",
-        feedbackEn: "Using slang like 'yabai' when approaching a teacher in the faculty room sounds immature.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. I can sense your anxiety, but it is inappropriate to use slang terms like “Yaba” when speaking to a teacher in the teachers’ lounge.",
         nextNodeId: "teacher-node-2-scold-slang",
       },
       {
@@ -95,7 +98,8 @@ export const TEACHER_NODES: Record<string, DialogueNode> = {
         tier: "rude",
         points: -40,
         feedbackJa: "理由を述べずに課題の量に不満を言って一方的に要求するのは大変失礼です！",
-        feedbackEn: "Bluntly complaining about workload and demanding extensions without a personal valid reason is confrontational.",
+        feedbackEn:
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. It is extremely rude to complain about the amount of homework and make one-sided demands without giving a reason!",
         nextNodeId: "teacher-node-fail-rude",
       },
     ],
@@ -124,7 +128,8 @@ export const TEACHER_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "状況説明＋進捗報告（半分書けている）＋具体的期日＋依頼敬語（〜ていただけないでしょうか）が満点です！",
-        feedbackEn: "10/10 response: states legitimate health reason, shows effort (half done), proposes concrete date, uses humble request form.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. A perfect score is achieved with situational explanations + progress reports (half-written) + specific deadlines + polite request language (〜ていただけないでしょうか)!",
         nextNodeId: "teacher-node-3-grant-extension",
       },
       {
@@ -136,7 +141,8 @@ export const TEACHER_NODES: Record<string, DialogueNode> = {
         tier: "polite",
         points: 80,
         feedbackJa: "「〜ので」で理由を述べて許可を求められました。来週の何曜日か指定するとさらに良いです。",
-        feedbackEn: "Solid polite request with ~node, though specifying an exact day (like Monday) makes it more actionable.",
+        feedbackEn:
+          "[Social Distance: Natural Rapport] Maintains ideal social distance with friendly politeness, putting the other person at ease. They asked for permission by stating a reason using “〜ので.” It would be even better if you specified which day of the week next week.",
         nextNodeId: "teacher-node-3-clarify-deadline",
       },
       {
@@ -148,7 +154,8 @@ export const TEACHER_NODES: Record<string, DialogueNode> = {
         tier: "awkward",
         points: 30,
         feedbackJa: "学業よりアルバイトを優先して宿題ができないのは、学校では認められにくい理由です。",
-        feedbackEn: "Prioritizing part-time work over school coursework is not considered an acceptable excuse by teachers.",
+        feedbackEn:
+          "[Social Distance: Pragmatic Mismatch] The phrasing or timing breaches expected conversational etiquette; adjusting your register keeps the interaction smooth. Prioritizing part-time work over schoolwork to the point of being unable to complete homework is a reason that is rarely accepted by the school.",
         nextNodeId: "teacher-node-2-scold-slang",
       },
     ],
@@ -176,7 +183,8 @@ export const TEACHER_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "クラス全体のルールへの理解を示しつつ、誠心誠意お願いできました！",
-        feedbackEn: "Acknowledging class fairness while asking for medical leeway is mature and persuasive.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. I was able to make my request sincerely while demonstrating my understanding of the class rules!",
         nextNodeId: "teacher-node-3-grant-extension",
       },
       {
@@ -188,7 +196,8 @@ export const TEACHER_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 50,
         feedbackJa: "「時間が欲しいです」ではなく、「相談に乗っていただけませんか」とアドバイスを仰ぐのがベターです。",
-        feedbackEn: "Rather than simply demanding more time for difficult topics, asking for guidance on the essay is better.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. Instead of saying, “I need some time,” it’s better to ask for advice by saying, “Could you please give me some advice?”",
         nextNodeId: "teacher-node-3-study-advice",
       },
     ],
@@ -216,7 +225,8 @@ export const TEACHER_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 90,
         feedbackJa: "すぐに言葉遣いを改めて謝罪し、敬語で事情を伝え直せたことで先生の信頼を取り戻せました！",
-        feedbackEn: "Swiftly correcting vocabulary with a sincere apology restores the teacher's patience.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. I was able to regain the teacher’s trust by immediately correcting my choice of words, apologizing, and explaining the situation again using honorific language!",
         nextNodeId: "teacher-node-3-grant-extension",
       },
       {
@@ -228,7 +238,8 @@ export const TEACHER_NODES: Record<string, DialogueNode> = {
         tier: "rude",
         points: -35,
         feedbackJa: "投げやりな態度は指導の対象になってしまいます！",
-        feedbackEn: "Defiant refusal to explain leaves the teacher no choice but to mark it incomplete.",
+        feedbackEn:
+          "[Social Distance: Blunt Imperative] Using blunt commands or aggressive phrasing severely breaches social boundaries and alarms your listener; courteous inquiries are essential. A careless attitude will be addressed in your instruction!",
         nextNodeId: "teacher-node-fail-rude",
       },
     ],
@@ -257,7 +268,8 @@ export const TEACHER_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 100,
         feedbackJa: "感謝＋約束の再確認＋退室時の「失礼いたします」まで、日本の学校マナーとして最高得点です！",
-        feedbackEn: "Flawless Japanese student manners: gratitude for accommodation, strict pledge, and formal departure phrase.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. From expressing gratitude to reaffirming promises to saying “Excuse me” when leaving—you’ve earned top marks for Japanese school etiquette!",
         nextNodeId: "teacher-end-perfect",
       },
       {
@@ -269,7 +281,8 @@ export const TEACHER_NODES: Record<string, DialogueNode> = {
         tier: "casual",
         points: 35,
         feedbackJa: "先生に対して「神」や「バイバイ」は軽すぎます！退室時は「失礼します」を使いましょう。",
-        feedbackEn: "Using teenage slang like 'kami' and saying 'baibai' to a teacher ruins the formal rapport.",
+        feedbackEn:
+          "[Social Distance: Casual Slang] Using informal speech or casual slang breaches interpersonal distance and creates awkwardness; polite forms (desu/masu) maintain comfortable initial boundaries. Calling your teacher “God” or saying “Bye-bye” is too casual! When leaving the room, use “Excuse me.”",
         nextNodeId: "teacher-end-awkward",
       },
     ],
@@ -297,7 +310,8 @@ export const TEACHER_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 90,
         feedbackJa: "指定された時間をしっかり復唱し、礼儀正しく約束できました！",
-        feedbackEn: "Accurately repeating the agreed time commitment confirms reliable responsibility.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. I repeated the specified time accurately and politely confirmed the arrangement!",
         nextNodeId: "teacher-end-perfect",
       },
     ],
@@ -325,7 +339,8 @@ export const TEACHER_NODES: Record<string, DialogueNode> = {
         tier: "respectful",
         points: 95,
         feedbackJa: "先生からの学習サポートの提案に前向きに感謝して約束できました！",
-        feedbackEn: "Eagerly accepting the teacher's offer of extra coaching turns a missed deadline into a learning win.",
+        feedbackEn:
+          "[Social Distance: Exemplary Keigo] Flawless formal etiquette honoring social hierarchy and professional boundaries. I was able to accept the teacher’s suggestion for learning support with a positive attitude and expressed my gratitude!",
         nextNodeId: "teacher-end-perfect",
       },
     ],
