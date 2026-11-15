@@ -6,6 +6,7 @@ import { VnScenarioReview } from "../VnScenarioReview";
 import { DIRECTIONS_SCENARIO_META, DIRECTIONS_NODES } from "@/data/dialogue/scenarios/directions-mcdonalds";
 import { FIRST_DATE_SAKURA_SCENARIO_META } from "@/data/dialogue/scenarios/first-date-sakura";
 import { VnDialogueBox } from "../VnDialogueBox";
+import { VnChoiceOverlay } from "../VnChoiceOverlay";
 import { getScenarioCharacterSpriteUrl } from "@/data/dialogue/assets";
 import { DialogueSession } from "@/data/dialogue/types";
 
@@ -344,5 +345,73 @@ describe("Visual Novel Architecture & Components", () => {
     expect(FIRST_DATE_SAKURA_SCENARIO_META.hoverExpression).toBe("embarrased");
     const hoverSprite = getScenarioCharacterSpriteUrl("first-date-sakura", FIRST_DATE_SAKURA_SCENARIO_META.hoverExpression);
     expect(hoverSprite).toContain("embarrassed.webp");
+  });
+
+  it("scales VnDialogueBox and VnChoiceOverlay appropriately when isFullscreen is true", () => {
+    // VnDialogueBox in normal mode
+    const { container: normalBox, unmount: unmountBox1 } = render(
+      <VnDialogueBox
+        speakerNameJa="佐藤さん"
+        speakerNameEn="Sato-san"
+        textJa="こんにちは"
+        readingHiragana="こんにちは"
+        textEn="Hello"
+        isSpeaking={false}
+        showFurigana={true}
+        showEnglish={true}
+        isFullscreen={false}
+        onReplayAudio={vi.fn()}
+        onToggleFurigana={vi.fn()}
+        onToggleEnglish={vi.fn()}
+      />
+    );
+    expect((normalBox.firstChild as HTMLElement).className).toContain("max-w-4xl");
+    unmountBox1();
+
+    // VnDialogueBox in fullscreen mode
+    const { container: fullscreenBox, unmount: unmountBox2 } = render(
+      <VnDialogueBox
+        speakerNameJa="佐藤さん"
+        speakerNameEn="Sato-san"
+        textJa="こんにちは"
+        readingHiragana="こんにちは"
+        textEn="Hello"
+        isSpeaking={false}
+        showFurigana={true}
+        showEnglish={true}
+        isFullscreen={true}
+        onReplayAudio={vi.fn()}
+        onToggleFurigana={vi.fn()}
+        onToggleEnglish={vi.fn()}
+      />
+    );
+    expect((fullscreenBox.firstChild as HTMLElement).className).toContain("max-w-5xl");
+    unmountBox2();
+
+    // VnChoiceOverlay in normal mode vs fullscreen
+    const mockChoices = DIRECTIONS_NODES["node-1-initiation"]!.choices;
+    const { container: normalChoices, unmount: unmountChoices1 } = render(
+      <VnChoiceOverlay
+        choices={mockChoices}
+        onSelectChoice={vi.fn()}
+        onPreviewAudio={vi.fn()}
+        showEnglish={true}
+        isFullscreen={false}
+      />
+    );
+    expect((normalChoices.firstChild as HTMLElement).className).toContain("max-w-2xl");
+    unmountChoices1();
+
+    const { container: fullscreenChoices, unmount: unmountChoices2 } = render(
+      <VnChoiceOverlay
+        choices={mockChoices}
+        onSelectChoice={vi.fn()}
+        onPreviewAudio={vi.fn()}
+        showEnglish={true}
+        isFullscreen={true}
+      />
+    );
+    expect((fullscreenChoices.firstChild as HTMLElement).className).toContain("max-w-4xl");
+    unmountChoices2();
   });
 });

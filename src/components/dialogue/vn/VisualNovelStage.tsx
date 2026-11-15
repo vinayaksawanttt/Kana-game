@@ -247,11 +247,12 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
     };
   }, [stopAudio]);
 
-  // Duck background ambient volume while dialogue voice is speaking so voice is never overpowered
+  // Duck background ambient volume while dialogue or player choice voice is speaking so voice is never overpowered
   useEffect(() => {
     if (!ambientAudioRef.current) return;
-    ambientAudioRef.current.volume = isPlaying ? 0.18 : 0.35;
-  }, [isPlaying]);
+    const isVoiceSpeaking = isPlaying || Boolean(transitioningChoice);
+    ambientAudioRef.current.volume = isVoiceSpeaking ? 0.18 : 0.35;
+  }, [isPlaying, transitioningChoice]);
 
   // Auto-play dialogue voice when entering new dialogue node (including final farewell / awkward / failure nodes!)
   useEffect(() => {
@@ -346,6 +347,15 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
         setShowChoiceTransitionFeedback(false);
 
         let hasFinished = false;
+        let showedFeedback = false;
+
+        const triggerMidwayFeedback = () => {
+          if (showedFeedback || hasFinished) return;
+          showedFeedback = true;
+          setShowChoiceTransitionFeedback(true);
+          playScenarioSfx(scenario.id, "atmosphere-bonus", 0.35);
+        };
+
         const completeTransition = () => {
           if (hasFinished) return;
           hasFinished = true;
@@ -359,46 +369,71 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
           const audio = new Audio(choiceAudioUrl);
           choiceAudioRef.current = audio;
 
-          // When audio metadata is loaded, calculate midpoint
-          audio.onloadedmetadata = () => {
-            const durationMs =
-              audio.duration && !isNaN(audio.duration) && audio.duration > 0
-                ? audio.duration * 1000
-                : 2200;
-            const midwayMs = Math.max(500, durationMs * 0.45);
-            const midwayTimer = setTimeout(() => {
-              setShowChoiceTransitionFeedback(true);
-              playScenarioSfx(scenario.id, "atmosphere-bonus", 0.35);
-            }, midwayMs);
+          // When audio metadata is loaded or known, adjust midpoint timer and watchdog
+          const setupTimersForDuration = (durationSec: number) => {
+            if (!isFinite(durationSec) || durationSec <= 0) return;
+            const midwayMs = Math.max(600, durationSec * 1000 * 0.45);
+            const midwayTimer = setTimeout(triggerMidwayFeedback, midwayMs);
             transitionTimerRef.current.push(midwayTimer);
+
+            // Watchdog timer: only triggers if audio has stalled or unexpectedly failed to emit 'ended'
+            const watchdogTimer = setTimeout(() => {
+              if (audio && !audio.paused && !audio.ended && audio.currentTime < durationSec - 0.2) {
+                return;
+              }
+              completeTransition();
+            }, durationSec * 1000 + 4000);
+            transitionTimerRef.current.push(watchdogTimer);
           };
 
+          audio.onloadedmetadata = () => {
+            if (isFinite(audio.duration) && audio.duration > 0) {
+              setupTimersForDuration(audio.duration);
+            }
+          };
+
+          // Timeupdate: smoothly reveal midway feedback midway through actual speech
+          audio.ontimeupdate = () => {
+            if (!showedFeedback) {
+              const dur = audio.duration;
+              const target = isFinite(dur) && dur > 0 ? Math.max(0.6, dur * 0.45) : 1.2;
+              if (audio.currentTime >= target) {
+                triggerMidwayFeedback();
+              }
+            }
+          };
+
+          // CRITICAL: Play the full dialogue completely through to 'ended' before transitioning to NPC
           audio.onended = () => {
-            const endTimer = setTimeout(completeTransition, 250);
+            triggerMidwayFeedback();
+            // Pleasant 300ms natural breathing room after sentence before NPC responds
+            const endTimer = setTimeout(completeTransition, 300);
             transitionTimerRef.current.push(endTimer);
           };
 
           audio.onerror = () => {
-            const fallbackMidway = setTimeout(() => {
-              setShowChoiceTransitionFeedback(true);
-              playScenarioSfx(scenario.id, "atmosphere-bonus", 0.35);
-            }, 600);
-            const fallbackEnd = setTimeout(completeTransition, 1500);
-            transitionTimerRef.current.push(fallbackMidway, fallbackEnd);
+            triggerMidwayFeedback();
+            const fallbackEnd = setTimeout(completeTransition, 1600);
+            transitionTimerRef.current.push(fallbackEnd);
           };
 
-          audio.play().catch(() => {
-            const fallbackMidway = setTimeout(() => {
-              setShowChoiceTransitionFeedback(true);
-              playScenarioSfx(scenario.id, "atmosphere-bonus", 0.35);
-            }, 600);
-            const fallbackEnd = setTimeout(completeTransition, 1500);
-            transitionTimerRef.current.push(fallbackMidway, fallbackEnd);
-          });
+          const playPromise = audio.play();
+          if (playPromise !== undefined) {
+            playPromise.catch(() => {
+              if (hasFinished) return;
+              if (audio && !audio.paused && !audio.ended) return;
+              triggerMidwayFeedback();
+              const fallbackEnd = setTimeout(completeTransition, 1600);
+              transitionTimerRef.current.push(fallbackEnd);
+            });
+          }
 
-          // Safety timeout cap
-          const safetyTimer = setTimeout(completeTransition, 5500);
-          transitionTimerRef.current.push(safetyTimer);
+          // Initial fallback watchdog (20 seconds), in case metadata or ended never fire
+          const initialWatchdog = setTimeout(() => {
+            if (audio && !audio.paused && !audio.ended) return;
+            completeTransition();
+          }, 20000);
+          transitionTimerRef.current.push(initialWatchdog);
         } catch {
           playScenarioSfx(scenario.id, "atmosphere-bonus", 0.35);
           onSelectChoice(choice);
@@ -580,13 +615,21 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
         {!isFinished ? (
           <div
             onClick={handleSkipChoiceTransition}
-            className="relative z-30 flex w-full flex-col justify-end p-3 sm:p-5 sm:pb-5"
+            className={`relative z-30 flex w-full flex-col justify-end transition-all duration-300 ${
+              isFullscreen
+                ? "p-4 sm:p-8 xl:p-12 pb-6 sm:pb-8 xl:pb-10"
+                : "p-3 sm:p-5 sm:pb-5"
+            }`}
           >
-            {/* Upper Stack: Response Options on top, Progress/Etiquette Feedback below them, with mb-5 gap before Dialogue Box nameplate */}
+            {/* Upper Stack: Response Options on top, Progress/Etiquette Feedback below them, with gap before Dialogue Box nameplate */}
             {((currentNode.choices && currentNode.choices.length > 0) ||
               lastTurnFeedback ||
               showChoiceTransitionFeedback) && (
-              <div className="mb-5 flex w-full flex-col gap-2">
+              <div
+                className={`flex w-full flex-col ${
+                  isFullscreen ? "mb-6 sm:mb-8 gap-3" : "mb-5 gap-2"
+                }`}
+              >
                 {currentNode.choices && currentNode.choices.length > 0 && (
                   <VnChoiceOverlay
                     choices={currentNode.choices}
@@ -595,25 +638,54 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
                     onSelectChoice={handleSelectChoiceInternal}
                     onPreviewAudio={handlePreviewChoiceAudio}
                     showEnglish={showEnglish}
+                    isFullscreen={isFullscreen}
                   />
                 )}
 
                 {/* Midway Choice Transition Feedback Banner */}
                 {showChoiceTransitionFeedback && transitioningChoice && (
-                  <div className="max-w-2xl mx-auto flex w-full items-center justify-between gap-3 rounded-2xl border border-[var(--sakura)]/80 bg-slate-950/95 px-4 py-2.5 shadow-[0_8px_24px_rgba(0,0,0,0.6)] backdrop-blur-xl text-xs animate-in fade-in slide-in-from-bottom-2 duration-300">
-                    <div className="flex items-center gap-2 min-w-0">
-                      <span className="text-base shrink-0">💡</span>
+                  <div
+                    className={`mx-auto flex w-full items-center justify-between shadow-[0_8px_24px_rgba(0,0,0,0.6)] backdrop-blur-xl animate-in fade-in slide-in-from-bottom-2 duration-300 ${
+                      isFullscreen
+                        ? "max-w-4xl xl:max-w-5xl 2xl:max-w-6xl rounded-2xl sm:rounded-3xl border-2 border-[var(--sakura)]/80 bg-slate-950/95 px-5 py-3.5 sm:px-6 sm:py-4 gap-4"
+                        : "max-w-2xl rounded-2xl border border-[var(--sakura)]/80 bg-slate-950/95 px-4 py-2.5 gap-3 text-xs"
+                    }`}
+                  >
+                    <div className="flex items-center gap-2.5 min-w-0">
+                      <span
+                        className={`shrink-0 ${
+                          isFullscreen ? "text-xl sm:text-2xl" : "text-base"
+                        }`}
+                      >
+                        💡
+                      </span>
                       <div className="min-w-0">
-                        <p className="font-japanese font-bold text-pink-200 text-xs sm:text-sm">
+                        <p
+                          className={`font-japanese font-bold text-pink-200 ${
+                            isFullscreen
+                              ? "text-sm sm:text-base xl:text-lg"
+                              : "text-xs sm:text-sm"
+                          }`}
+                        >
                           {transitioningChoice.feedbackJa}
                         </p>
-                        <p className="text-[11px] text-white/80 line-clamp-1">
+                        <p
+                          className={`text-white/80 line-clamp-1 ${
+                            isFullscreen
+                              ? "text-xs sm:text-sm xl:text-base mt-0.5"
+                              : "text-[11px]"
+                          }`}
+                        >
                           {transitioningChoice.feedbackEn}
                         </p>
                       </div>
                     </div>
                     <span
-                      className={`shrink-0 rounded-lg px-2.5 py-0.5 font-bold text-[10px] uppercase tracking-wider ${
+                      className={`shrink-0 font-bold uppercase tracking-wider ${
+                        isFullscreen
+                          ? "rounded-xl px-3.5 py-1 text-xs sm:text-sm"
+                          : "rounded-lg px-2.5 py-0.5 text-[10px]"
+                      } ${
                         transitioningChoice.tier === "respectful"
                           ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40"
                           : transitioningChoice.tier === "polite"
@@ -635,13 +707,37 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
                 )}
 
                 {!transitioningChoice && lastTurnFeedback && (
-                  <div className="max-w-2xl mx-auto flex w-full items-center gap-2 rounded-xl border border-[var(--sakura)]/60 bg-slate-950/90 px-3 py-1.5 shadow-md backdrop-blur-md text-xs animate-in fade-in slide-in-from-bottom-2 duration-300">
-                    <span className="text-xs shrink-0">💡</span>
-                    <div className="min-w-0 flex-1 flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
-                      <span className="font-japanese font-bold text-pink-200 text-xs">
+                  <div
+                    className={`mx-auto flex w-full items-center shadow-md backdrop-blur-md animate-in fade-in slide-in-from-bottom-2 duration-300 ${
+                      isFullscreen
+                        ? "max-w-4xl xl:max-w-5xl 2xl:max-w-6xl rounded-2xl border-2 border-[var(--sakura)]/60 bg-slate-950/90 px-4 py-2.5 sm:px-5 sm:py-3 gap-3"
+                        : "max-w-2xl rounded-xl border border-[var(--sakura)]/60 bg-slate-950/90 px-3 py-1.5 gap-2 text-xs"
+                    }`}
+                  >
+                    <span
+                      className={`shrink-0 ${
+                        isFullscreen ? "text-base sm:text-lg" : "text-xs"
+                      }`}
+                    >
+                      💡
+                    </span>
+                    <div className="min-w-0 flex-1 flex flex-wrap items-baseline gap-x-2.5 gap-y-1">
+                      <span
+                        className={`font-japanese font-bold text-pink-200 ${
+                          isFullscreen
+                            ? "text-sm sm:text-base xl:text-lg"
+                            : "text-xs"
+                        }`}
+                      >
                         {lastTurnFeedback.ja}
                       </span>
-                      <span className="text-[10px] text-white/75">
+                      <span
+                        className={`text-white/75 ${
+                          isFullscreen
+                            ? "text-xs sm:text-sm xl:text-base"
+                            : "text-[10px]"
+                        }`}
+                      >
                         {lastTurnFeedback.en}
                       </span>
                     </div>
@@ -662,6 +758,7 @@ export const VisualNovelStage: React.FC<VisualNovelStageProps> = ({
               showFurigana={showFurigana}
               showEnglish={showEnglish}
               autoPlayAudio={autoPlayAudio}
+              isFullscreen={isFullscreen}
               onReplayAudio={handleReplayDialogueAudio}
               onToggleFurigana={() => setShowFurigana(!showFurigana)}
               onToggleEnglish={() => setShowEnglish(!showEnglish)}

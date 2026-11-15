@@ -11,6 +11,7 @@ interface VnChoiceOverlayProps {
   onPreviewAudio: (textJa: string, id: string, reading?: string, romaji?: string) => void;
   showEnglish: boolean;
   disabled?: boolean;
+  isFullscreen?: boolean;
 }
 
 export const VnChoiceOverlay: React.FC<VnChoiceOverlayProps> = ({
@@ -20,6 +21,7 @@ export const VnChoiceOverlay: React.FC<VnChoiceOverlayProps> = ({
   onPreviewAudio,
   showEnglish,
   disabled = false,
+  isFullscreen = false,
 }) => {
   // Support keyboard selection (1 - 4)
   useEffect(() => {
@@ -39,22 +41,43 @@ export const VnChoiceOverlay: React.FC<VnChoiceOverlayProps> = ({
   }, [choices, disabled, onSelectChoice]);
 
   return (
-    <div className="relative z-30 w-full max-w-2xl mx-auto space-y-1">
-      <div className="flex items-center justify-between px-1 text-[10px] font-bold uppercase tracking-wider text-white/70">
+    <div
+      className={`relative z-30 w-full mx-auto transition-all duration-300 ${
+        isFullscreen
+          ? "max-w-4xl xl:max-w-5xl 2xl:max-w-6xl space-y-2 sm:space-y-2.5"
+          : "max-w-2xl space-y-1"
+      }`}
+    >
+      <div
+        className={`flex items-center justify-between px-1 font-bold uppercase tracking-wider text-white/70 ${
+          isFullscreen ? "text-xs sm:text-sm xl:text-base mb-1" : "text-[10px]"
+        }`}
+      >
         <span className="flex items-center gap-1.5 drop-shadow-xs">
           <span>Choose Response</span>
           <span className="font-normal text-white/50">(Keys: 1–{choices.length})</span>
         </span>
       </div>
 
-      <div className="grid grid-cols-2 gap-1.5 sm:gap-2">
+      <div
+        className={`grid grid-cols-2 ${
+          isFullscreen ? "gap-2.5 sm:gap-3.5 xl:gap-4" : "gap-1.5 sm:gap-2"
+        }`}
+      >
         {choices.map((choice, index) => {
           const isSelected = selectedChoiceId === choice.id;
           return (
             <div
               key={choice.id}
-              onClick={() => !disabled && onSelectChoice(choice)}
-              className={`group relative flex items-center justify-between gap-2 rounded-xl border px-2.5 py-1.5 sm:px-3 sm:py-2 text-left shadow-md backdrop-blur-md transition-all cursor-pointer ${
+              onClick={(e) => {
+                e.stopPropagation();
+                if (!disabled) onSelectChoice(choice);
+              }}
+              className={`group relative flex items-center justify-between border text-left shadow-md backdrop-blur-md transition-all cursor-pointer ${
+                isFullscreen
+                  ? "gap-3 rounded-xl sm:rounded-2xl px-3.5 py-2.5 sm:px-5 sm:py-3.5 xl:px-6 xl:py-4"
+                  : "gap-2 rounded-xl px-2.5 py-1.5 sm:px-3 sm:py-2"
+              } ${
                 isSelected
                   ? "border-[var(--sakura)] bg-gradient-to-r from-[var(--primary)]/35 to-slate-900/90 shadow-[0_0_24px_rgba(244,114,182,0.45)] ring-2 ring-[var(--sakura)]/80 scale-[1.01]"
                   : disabled
@@ -63,16 +86,28 @@ export const VnChoiceOverlay: React.FC<VnChoiceOverlayProps> = ({
               }`}
             >
               <div className="flex items-center gap-2 min-w-0 flex-1">
-                <span className={`flex size-4 sm:size-5 shrink-0 items-center justify-center rounded-md text-[10px] font-extrabold text-white transition-colors ${
-                  isSelected ? "bg-[var(--primary)] text-white shadow-xs" : "bg-white/15 group-hover:bg-[var(--primary)] group-hover:text-white"
-                }`}>
+                <span
+                  className={`flex shrink-0 items-center justify-center font-extrabold text-white transition-colors ${
+                    isFullscreen
+                      ? "size-6 sm:size-7 xl:size-8 rounded-lg sm:rounded-xl text-xs sm:text-sm xl:text-base"
+                      : "size-4 sm:size-5 rounded-md text-[10px]"
+                  } ${
+                    isSelected
+                      ? "bg-[var(--primary)] text-white shadow-xs"
+                      : "bg-white/15 group-hover:bg-[var(--primary)] group-hover:text-white"
+                  }`}
+                >
                   {index + 1}
                 </span>
 
                 <div className="min-w-0 flex-1">
                   <p
                     lang="ja"
-                    className={`font-japanese text-xs sm:text-[13px] font-bold text-white leading-tight drop-shadow-xs transition-colors truncate ${
+                    className={`font-japanese font-bold text-white leading-tight drop-shadow-xs transition-colors truncate ${
+                      isFullscreen
+                        ? "text-sm sm:text-base md:text-lg xl:text-xl"
+                        : "text-xs sm:text-[13px]"
+                    } ${
                       isSelected ? "text-pink-100" : "group-hover:text-pink-200"
                     }`}
                   >
@@ -80,7 +115,13 @@ export const VnChoiceOverlay: React.FC<VnChoiceOverlayProps> = ({
                   </p>
 
                   {showEnglish && choice.textEn && (
-                    <p className="text-[10px] text-slate-300/80 leading-tight truncate mt-0.5">
+                    <p
+                      className={`text-slate-300/80 leading-tight truncate ${
+                        isFullscreen
+                          ? "text-xs sm:text-sm xl:text-base mt-1"
+                          : "text-[10px] mt-0.5"
+                      }`}
+                    >
                       {choice.textEn}
                     </p>
                   )}
@@ -95,18 +136,36 @@ export const VnChoiceOverlay: React.FC<VnChoiceOverlayProps> = ({
                       e.stopPropagation();
                       onPreviewAudio(choice.textJa, choice.id, choice.readingHiragana, choice.romaji);
                     }}
-                    className="flex size-5 sm:size-6 items-center justify-center rounded-md border border-white/10 bg-white/10 text-white/70 transition-colors hover:border-[var(--sakura)] hover:bg-white/25 hover:text-white cursor-pointer"
+                    className={`flex items-center justify-center border border-white/10 bg-white/10 text-white/70 transition-colors hover:border-[var(--sakura)] hover:bg-white/25 hover:text-white cursor-pointer ${
+                      isFullscreen
+                        ? "size-7 sm:size-8 xl:size-9 rounded-lg sm:rounded-xl"
+                        : "size-5 sm:size-6 rounded-md"
+                    }`}
                     title="Pronounce response"
                     aria-label={`Pronounce option ${index + 1}`}
                   >
-                    <Volume2 className="size-2.5 sm:size-3" />
+                    <Volume2
+                      className={
+                        isFullscreen
+                          ? "size-3.5 sm:size-4 xl:size-4.5"
+                          : "size-2.5 sm:size-3"
+                      }
+                    />
                   </button>
                 )}
 
                 {isSelected ? (
-                  <Volume2 className="size-3.5 text-pink-300 animate-pulse shrink-0" />
+                  <Volume2
+                    className={`${
+                      isFullscreen ? "size-4 sm:size-5" : "size-3.5"
+                    } text-pink-300 animate-pulse shrink-0`}
+                  />
                 ) : (
-                  <ArrowRight className="size-3 text-white/40 group-hover:text-pink-200 group-hover:translate-x-0.5 transition-all" />
+                  <ArrowRight
+                    className={`${
+                      isFullscreen ? "size-4 sm:size-5" : "size-3"
+                    } text-white/40 group-hover:text-pink-200 group-hover:translate-x-0.5 transition-all`}
+                  />
                 )}
               </div>
             </div>
