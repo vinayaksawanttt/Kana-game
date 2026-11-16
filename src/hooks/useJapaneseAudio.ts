@@ -749,8 +749,8 @@ export function useJapaneseAudio() {
     []
   );
 
-  const playSentence = useCallback(
-    (
+  const playSentenceAsync = useCallback(
+    async (
       sentenceJa: string,
       idOrOptions?:
         | string
@@ -800,7 +800,7 @@ export function useJapaneseAudio() {
       const staticSrc = options?.audioSrc || payload.staticSrc;
       // 1. Try static neural MP3 file if pre-generated
       if (staticSrc) {
-        void playAudioItemAsync(
+        await playAudioItemAsync(
           staticSrc,
           payload.ttsText,
           payload.key,
@@ -811,8 +811,7 @@ export function useJapaneseAudio() {
       }
 
       // 2. Priority Live Fallback: Stream directly from local VOICEVOX if running!
-      void (async () => {
-        try {
+      try {
           if (playbackId !== currentPlaybackId) return;
 
           const speakerId = options?.speaker ?? options?.speakerVoiceId ?? 14; // Default: Meimei Himari (calm female narrator)
@@ -934,9 +933,35 @@ export function useJapaneseAudio() {
         // 5. Final fallback to browser speech synthesis
         const effectiveRate = options?.rate ? payload.rate * options.rate : payload.rate;
         await fallbackToSpeechAsync(payload.ttsText, payload.key, effectiveRate);
-      })();
     },
     []
+  );
+
+  const playSentence = useCallback(
+    (
+      sentenceJa: string,
+      idOrOptions?:
+        | string
+        | {
+            audioSrc?: string;
+            reading?: string;
+            romaji?: string;
+            rate?: number;
+            speaker?: number;
+            speakerVoiceId?: number;
+          },
+      rawOptions?: {
+        audioSrc?: string;
+        reading?: string;
+        romaji?: string;
+        rate?: number;
+        speaker?: number;
+        speakerVoiceId?: number;
+      }
+    ) => {
+      void playSentenceAsync(sentenceJa, idOrOptions, rawOptions);
+    },
+    [playSentenceAsync]
   );
 
   const playGrammarTitle = useCallback(
@@ -1020,6 +1045,7 @@ export function useJapaneseAudio() {
     playReadingSequence,
     playVocab,
     playSentence,
+    playSentenceAsync,
     playGrammarTitle,
     stopAudio,
     toKanaAudioKey,

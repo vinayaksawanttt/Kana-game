@@ -154,7 +154,7 @@ export async function importBackup(jsonString: string): Promise<{ count: number 
   return { count: validItems.length };
 }
 
-async function upsertPracticeItems(
+export async function upsertPracticeItems(
   incoming: Array<{
     id: string;
     type: SrsItemType;
@@ -353,4 +353,70 @@ export async function ingestGrammarSession(
       missed: q.status !== "correct",
     }))
   );
+}
+
+export async function enqueueLessonToSrs(input: {
+  vocab?: Array<{ word: string; reading?: string; meaning: string }>;
+  kanji?: Array<{ kanji: string; meaning: string; reading?: string }>;
+  grammar?: Array<{ id: string; pattern: string; meaning: string }>;
+  level?: string;
+}): Promise<{ vocabCount: number; kanjiCount: number; grammarCount: number; total: number }> {
+  const items: Array<{
+    id: string;
+    type: SrsItemType;
+    level?: string;
+    prompt: string;
+    answer: string;
+    reading?: string;
+    missed: boolean;
+  }> = [];
+
+  let vocabCount = 0;
+  let kanjiCount = 0;
+  let grammarCount = 0;
+
+  for (const v of input.vocab || []) {
+    const cleanWord = v.word.trim();
+    items.push({
+      id: `vocab:${cleanWord}`,
+      type: "vocab",
+      level: input.level,
+      prompt: cleanWord,
+      answer: v.meaning.trim(),
+      reading: v.reading?.trim(),
+      missed: true,
+    });
+    vocabCount++;
+  }
+
+  for (const k of input.kanji || []) {
+    const cleanKanji = k.kanji.trim();
+    const codePoint = cleanKanji.codePointAt(0)?.toString(16).toUpperCase() ?? cleanKanji;
+    items.push({
+      id: `kanji:${codePoint}`,
+      type: "kanji",
+      level: input.level,
+      prompt: cleanKanji,
+      answer: k.meaning.trim(),
+      reading: k.reading?.trim(),
+      missed: true,
+    });
+    kanjiCount++;
+  }
+
+  for (const g of input.grammar || []) {
+    const srsId = `grammar:${g.id.trim()}`;
+    items.push({
+      id: srsId,
+      type: "grammar",
+      level: input.level,
+      prompt: g.pattern.trim(),
+      answer: g.meaning.trim(),
+      missed: true,
+    });
+    grammarCount++;
+  }
+
+  await upsertPracticeItems(items);
+  return { vocabCount, kanjiCount, grammarCount, total: items.length };
 }

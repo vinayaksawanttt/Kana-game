@@ -113,8 +113,8 @@ describe("Dialogue Engine", () => {
     expect(session.finalEndingType).toBe("perfect");
   });
 
-  it("validates all 10 roleplay scenarios have connected dialogue graphs", () => {
-    expect(DIALOGUE_SCENARIOS).toHaveLength(10);
+  it("validates all 12 roleplay scenarios have connected dialogue graphs", () => {
+    expect(DIALOGUE_SCENARIOS).toHaveLength(12);
     for (const scenario of DIALOGUE_SCENARIOS) {
       const nodes = getScenarioNodes(scenario.id);
       expect(nodes).toBeDefined();

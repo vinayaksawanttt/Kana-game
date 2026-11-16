@@ -1,0 +1,62 @@
+[
+  {
+    "id": "genki-1",
+    "title": "Genki I: An Integrated Course in Elementary Japanese",
+    "japaneseTitle": "初級日本語 げんき I",
+    "level": "N5",
+    "series": "Genki",
+    "description": "Comprehensive foundational textbook covering JLPT N5 vocabulary, essential grammar structures, and 145 kanji across Lessons 1–12.",
+    "coverImage": "/images/books/genki-1.webp",
+    "totalLessons": 12,
+    "lessonRange": [
+      1,
+      12
+    ],
+    "stats": {
+      "vocabularyCount": 664,
+      "kanjiCount": 145,
+      "grammarCount": 78,
+      "practiceCount": 459
+    }
+  },
+  {
+    "id": "genki-2",
+    "title": "Genki II: An Integrated Course in Intermediate Japanese",
+    "japaneseTitle": "初級日本語 げんき II",
+    "level": "N4",
+    "series": "Genki",
+    "description": "Upper-elementary Japanese textbook covering JLPT N4 vocabulary, complex grammar constructs (honorifics, passives, causatives), and 172 kanji across Lessons 13–23.",
+    "coverImage": "/images/books/genki-2.webp",
+    "totalLessons": 11,
+    "lessonRange": [
+      13,
+      23
+    ],
+    "stats": {
+      "vocabularyCount": 599,
+      "kanjiCount": 172,
+      "grammarCount": 61,
+      "practiceCount": 586
+    }
+  },
+  {
+    "id": "mnn-1",
+    "title": "Minna no Nihongo I: Translation & Grammar Notes",
+    "japaneseTitle": "みんなの日本語 初級 I",
+    "level": "N5",
+    "series": "Minna no Nihongo",
+    "description": "Classic communicative Japanese textbook covering JLPT N5 vocabulary, 138 structured grammar notes, and essential reference charts across Lessons 1–25.",
+    "coverImage": "/images/books/mnn-1.webp",
+    "totalLessons": 25,
+    "lessonRange": [
+      1,
+      25
+    ],
+    "stats": {
+      "vocabularyCount": 1037,
+      "kanjiCount": 0,
+      "grammarCount": 138,
+      "practiceCount": 30
+    }
+  }
+]

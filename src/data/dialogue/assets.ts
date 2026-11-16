@@ -978,6 +978,52 @@ export const DIALOGUE_ASSET_MANIFESTS: Record<string, ScenarioAssetManifest> = {
                 "/assets/dialogue-quest/first-date-sakura/dialogue/date-node-end-failure.opus",
         },
     },
+    "genki-little-asia": {
+        backgrounds: {
+            "cafe-counter-afterhours":
+                "/assets/dialogue-quest/employer-shift-request/backgrounds/cafe-counter-afterhours.webp",
+            "staff-breakroom":
+                "/assets/dialogue-quest/employer-shift-request/backgrounds/staff-breakroom.webp",
+            default:
+                "/assets/dialogue-quest/employer-shift-request/backgrounds/cafe-counter-afterhours.webp",
+        },
+        characterSprites: {
+            neutral:
+                "/assets/dialogue-quest/employer-shift-request/characters/nakamura-san/neutral.webp",
+            happy:
+                "/assets/dialogue-quest/employer-shift-request/characters/nakamura-san/happy.webp",
+            thinking:
+                "/assets/dialogue-quest/employer-shift-request/characters/nakamura-san/thinking.webp",
+            troubled:
+                "/assets/dialogue-quest/employer-shift-request/characters/nakamura-san/troubled.webp",
+            stern:
+                "/assets/dialogue-quest/employer-shift-request/characters/nakamura-san/stern.webp",
+            goodbye:
+                "/assets/dialogue-quest/employer-shift-request/characters/nakamura-san/goodbye.webp",
+        },
+    },
+    "genki-department-manager": {
+        backgrounds: {
+            "executive-meeting-room":
+                "/assets/dialogue-quest/client-apology-delay/backgrounds/executive-meeting-room.webp",
+            default:
+                "/assets/dialogue-quest/client-apology-delay/backgrounds/executive-meeting-room.webp",
+        },
+        characterSprites: {
+            neutral:
+                "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/neutral.webp",
+            stern:
+                "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/stern.webp",
+            annoyed:
+                "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/annoyed.webp",
+            scolding:
+                "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/scolding.webp",
+            proud:
+                "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/proud.webp",
+            disappointed:
+                "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/disappointed.webp",
+        },
+    },
 };
 
 /**

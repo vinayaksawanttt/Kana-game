@@ -172,6 +172,15 @@ function getSections(learnGuideCount: number, dialogueEpisodeCount: number): Hub
       description: "Look up grammar nuances, study topic cheat sheets, or break down any Japanese sentence into tokens.",
       cards: [
         {
+          title: "Textbook Companion (Genki I & II)",
+          subtitleJa: "教科書マスター・げんき",
+          description: "Follow textbook-curated lessons for Genki I & II with synchronized vocabulary audio, kanji stroke diagrams, and grammar drills.",
+          badge: "本",
+          href: "/books",
+          statusLabel: "23 Lessons",
+          tags: ["Genki I (N5)", "Genki II (N4)", "Vocab / Kanji / Grammar"],
+        },
+        {
           title: "Grammar Library",
           subtitleJa: "日本語文法辞典",
           description: "Browse 828 JLPT N5–N1 grammar points, formation rules, nuances, and voiced example sentences.",

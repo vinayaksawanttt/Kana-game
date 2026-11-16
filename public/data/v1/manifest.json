@@ -1,8 +1,24 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-11-14T07:21:33.666Z",
-  "bundleHash": "c692481dc69f",
+  "generatedAt": "2026-11-16T18:09:34.750Z",
+  "bundleHash": "dc35f25f87c7",
   "assets": {
+    "books/genki-1.json": {
+      "hash": "5e673b859547",
+      "bytes": 688173
+    },
+    "books/genki-2.json": {
+      "hash": "58e9d2205e2b",
+      "bytes": 665560
+    },
+    "books/index.json": {
+      "hash": "2b430eacd00f",
+      "bytes": 1705
+    },
+    "books/mnn-1.json": {
+      "hash": "b2c3332b83f3",
+      "bytes": 662586
+    },
     "dictionary-index.json": {
       "hash": "3d98ac74562d",
       "bytes": 3265237
@@ -20,12 +36,12 @@
       "bytes": 842474
     },
     "grammar/N4.json": {
-      "hash": "e9f13297c0fc",
-      "bytes": 797949
+      "hash": "822b8fae78df",
+      "bytes": 878777
     },
     "grammar/N5.json": {
-      "hash": "2807ca81ecee",
-      "bytes": 806951
+      "hash": "f4937d30fdd4",
+      "bytes": 885018
     },
     "grammar/index.json": {
       "hash": "05a835a617d4",
@@ -416,16 +432,16 @@
       "bytes": 52262
     },
     "vocabulary/N1.json": {
-      "hash": "6cf78f88ea30",
-      "bytes": 2517375
+      "hash": "b1f37fadc38d",
+      "bytes": 2490742
     },
     "vocabulary/N2.json": {
-      "hash": "622bc044423c",
-      "bytes": 1475592
+      "hash": "cf3668e6cdce",
+      "bytes": 1456342
     },
     "vocabulary/N3.json": {
-      "hash": "9824543c2257",
-      "bytes": 1425831
+      "hash": "b3afc3ec5e3d",
+      "bytes": 1410129
     },
     "vocabulary/N4.json": {
       "hash": "07b7c61d08e8",

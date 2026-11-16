@@ -5,6 +5,9 @@ import {
   STATIC_GRAMMAR_AUDIO_MAP,
   STATIC_LISTENING_SENTENCE_AUDIO_MAP,
 } from "@/data/audio-manifest.generated";
+import { STATIC_BOOK_DIALOGUE_AUDIO_MAP } from "@/data/book-dialogues-audio.generated";
+import { STATIC_BOOK_VOCAB_AUDIO_MAP } from "@/data/book-vocab-audio.generated";
+import { STATIC_BOOK_GRAMMAR_PRACTICE_AUDIO_MAP } from "@/data/book-grammar-practice-audio.generated";
 
 export interface KanaAudioPayload {
   slug: string;
@@ -402,7 +405,25 @@ export function resolveVocabAudio(item: {
     };
   }
 
-  // 3. Kanji reading neural clip reuse
+  // 3. Textbook companion vocabulary static clip
+  const bookVocabSrc =
+    STATIC_BOOK_VOCAB_AUDIO_MAP[normalizedKana] ||
+    STATIC_BOOK_VOCAB_AUDIO_MAP[stripped] ||
+    (item.word && STATIC_BOOK_VOCAB_AUDIO_MAP[item.word]);
+
+  if (bookVocabSrc) {
+    return {
+      key: normalizedKana,
+      src: bookVocabSrc,
+      ttsText: normalizedKana,
+      lang: "ja-JP",
+      hasStaticClip: true,
+      staticSrc: bookVocabSrc,
+      moraSteps,
+    };
+  }
+
+  // 4. Kanji reading neural clip reuse
   if (STATIC_READING_AUDIO.has(normalizedKana)) {
     return {
       key: normalizedKana,
@@ -595,7 +616,12 @@ export function resolveSentenceAudio(
 ): SentenceAudioPayload {
   const cleaned = cleanSentenceForAudio(sentenceJa);
   const staticSrc =
+    (id?.startsWith("/") ? id : undefined) ||
+    (id && STATIC_BOOK_DIALOGUE_AUDIO_MAP[id]) ||
+    (id && STATIC_BOOK_GRAMMAR_PRACTICE_AUDIO_MAP[id]) ||
     (id && STATIC_LISTENING_SENTENCE_AUDIO_MAP[id]) ||
+    STATIC_BOOK_DIALOGUE_AUDIO_MAP[cleaned] ||
+    STATIC_BOOK_GRAMMAR_PRACTICE_AUDIO_MAP[cleaned] ||
     STATIC_LISTENING_SENTENCE_AUDIO_MAP[cleaned] ||
     "";
 

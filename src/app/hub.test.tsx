@@ -48,6 +48,8 @@ describe("GamesHub (/)", () => {
     expect(linkFor("/games/grammar")).toBeTruthy();
 
     // Reference & Tools
+    expect(linkFor("/books")).toBeTruthy();
+    expect(screen.getAllByText(/Textbook Companion/i).length).toBeGreaterThan(0);
     expect(linkFor("/grammar")).toBeTruthy();
     expect(linkFor("/learn")).toBeTruthy();
     expect(screen.getByText(/cheat sheets & study guides/i)).toBeTruthy();

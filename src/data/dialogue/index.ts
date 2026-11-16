@@ -9,6 +9,8 @@ import { CLIENT_APOLOGY_SCENARIO_META, CLIENT_APOLOGY_NODES } from "./scenarios/
 import { JOB_INTERVIEW_SCENARIO_META, JOB_INTERVIEW_NODES } from "./scenarios/job-interview-pr";
 import { WARD_OFFICE_TAX_SCENARIO_META, WARD_OFFICE_TAX_NODES } from "./scenarios/ward-office-tax";
 import { FIRST_DATE_SAKURA_SCENARIO_META, FIRST_DATE_SAKURA_NODES } from "./scenarios/first-date-sakura";
+import { GENKI_LITTLE_ASIA_META, GENKI_LITTLE_ASIA_NODES } from "./scenarios/genki-little-asia";
+import { GENKI_DEPARTMENT_MANAGER_META, GENKI_DEPARTMENT_MANAGER_NODES } from "./scenarios/genki-department-manager";
 
 export * from "./types";
 
@@ -23,6 +25,8 @@ export const DIALOGUE_SCENARIOS: ScenarioMeta[] = [
   JOB_INTERVIEW_SCENARIO_META,
   WARD_OFFICE_TAX_SCENARIO_META,
   FIRST_DATE_SAKURA_SCENARIO_META,
+  GENKI_LITTLE_ASIA_META,
+  GENKI_DEPARTMENT_MANAGER_META,
 ];
 
 export const SCENARIO_NODES_MAP: Record<string, Record<string, DialogueNode>> = {
@@ -36,6 +40,8 @@ export const SCENARIO_NODES_MAP: Record<string, Record<string, DialogueNode>> = 
   [JOB_INTERVIEW_SCENARIO_META.id]: JOB_INTERVIEW_NODES,
   [WARD_OFFICE_TAX_SCENARIO_META.id]: WARD_OFFICE_TAX_NODES,
   [FIRST_DATE_SAKURA_SCENARIO_META.id]: FIRST_DATE_SAKURA_NODES,
+  [GENKI_LITTLE_ASIA_META.id]: GENKI_LITTLE_ASIA_NODES,
+  [GENKI_DEPARTMENT_MANAGER_META.id]: GENKI_DEPARTMENT_MANAGER_NODES,
 };
 
 export function getScenarioById(id: string): ScenarioMeta | undefined {
