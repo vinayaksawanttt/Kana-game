@@ -1,153 +1,140 @@
 # Kana-Play · 日本語練習
 
-> A fast, tactile, local-first Japanese writing and vocabulary practice platform. Practice Kana (Hiragana & Katakana), Kanji meanings, and JLPT vocabulary with paper-card animations, Day/Night themes, and responsive mobile-first ergonomics.
+A fast, tactile, local-first Japanese learning platform and interactive game workspace featuring Kana, Kanji, Vocabulary, Grammar, JLPT exam prep, Textbook Companion (Genki I, Genki II, Minna no Nihongo I), Dialogue Quest, Graded Stories, and FSRS spaced repetition.
 
 ---
 
-## Features & Game Modes
+## Live Demo
 
-### 1. Kana Practice (`/games/kana`)
-* **Comprehensive Scripts**: Hiragana, Katakana, or simultaneous practice.
-* **Granular Row Selection**: Basic gojūon, Dakuten / Handakuten, Yōon digraphs, and modern Katakana extended combinations.
-* **Deterministic Single-Deck Engine**: Question order and shuffles are generated once per session with an injectable seeded RNG.
-* **Immediate Feedback & Statistics**: Tracks first-try accuracy, retries, and mistakes with detailed post-session breakdowns.
-
-### 2. Kanji: Guess the Meaning (`/games/kanji/meaning`)
-* **JLPT & School-Grade Coverage**: 2,208 curated kanji spanning JLPT N5 through N1 and elementary grades 1–6, Secondary (8), and Names (9).
-* **Smart Distractor Disambiguation**: Algorithmic synonym and stem filtering ensures multiple-choice options never present ambiguous or conflicting definitions.
-* **Static Partitioned Data Pipeline**: Kanji records are pre-cleaned and partitioned into cached per-level JSON payloads (`/public/data/v1/kanji/N[1-5].json`), keeping bundle sizes ultralight.
-* **Radical Builder** (`/games/kanji/radicals`): Browse Japanese radicals, filter JLPT kanji by component, inspect readings and meanings, and save kanji to FSRS.
-
-### 3. Vocabulary Meaning (`/games/vocabulary`)
-* **Rich JLPT Lexicon**: Over 7,800 vocabulary words with English meanings and example sentences.
-* **Interactive Hint System**: Reveal furigana readings or individual kanji character meanings at the cost of score penalties.
-* **Ruby Text Furigana**: Native Japanese sentence examples rendered with `<ruby>` annotations.
-
-### 4. Grammar Practice & Reference (`/games/grammar`, `/grammar`)
-* **JLPT N5–N1 Coverage**: Practice cloze and sentence-scramble questions or browse grammar guides.
-* **Enriched Examples**: `npm run build:grammar-data` combines local grammar rules and matching examples from `data-raw/grammar/sentences_output_*.json` into static data under `public/data/v1/grammar/`.
-
-### 5. Spaced Repetition & Reading
-* **Kanji Reading** *(Coming Soon)*: Practice on'yomi and kun'yomi readings with kana typing inputs.
-* **FSRS Review Hub**: Available now; adaptive spaced-repetition reviews are scheduled against individual forgetting curves.
-* **Dictionary & Sentence Analyzer**: Search English or Japanese text and inspect local word readings, meanings, and kanji.
+- **Production URL**: _Coming soon (Vercel deployment placeholder)_
 
 ---
 
-## Architectural Design
+## Features
 
-The codebase enforces a strict four-tier architectural pattern: `data → engine → hooks → components`.
-
-```
-src/
-├── engine/        # Pure, framework-agnostic TypeScript logic (zero React/DOM imports)
-│   ├── kana.ts              # Check answers, normalize input, deck generation
-│   ├── kana-session.ts      # Pure session state reducer, transitions, finalizer
-│   ├── kanji-meaning.ts     # Distractor generation, disambiguation, scoring
-│   └── random.ts            # Seeded PRNG and Fisher-Yates shuffle
-├── data/          # Data access abstractions and typed fetch loaders
-│   ├── kanji.ts             # On-demand, cached per-level kanji data fetcher
-│   ├── kana.ts              # Character registry, rows, and sample pairs
-│   └── vocabulary.ts        # OpenJLPT dataset loaders and normalizers
-├── hooks/         # Reusable client hooks (session guards, keyboard handlers)
-├── components/    # Reusable atomic UI components (theme toggle, layout shells)
-└── app/           # Next.js App Router pages and route handlers
-```
-
-### Mobile-First & Ergonomic Highlights
-* **Dynamic Viewport (`min-h-dvh`)**: Eliminates address-bar resizing jumpiness on iOS Safari and mobile Chrome.
-* **Safe-Area Insets**: Uses `pt-safe` and `pb-safe` utilities with `env(safe-area-inset-*)` to prevent UI overlaps with mobile gesture bars.
-* **Touch Targets & Focus**: Minimum 44×44px interactive touch targets across chips, buttons, and switches, with global tap-to-focus fallback and mobile virtual keyboard helpers (`enterKeyHint="go"`, `inputMode="text"`).
-* **Hardware-Accelerated Transitions**: Pure CSS transforms (`translate3d`, `opacity`) with `will-change: transform` and full `@media (prefers-reduced-motion: reduce)` accessibility support.
+- **Kana Practice (`/games/kana`)**: Hiragana, Katakana, or mixed practice across basic gojūon, dakuten/handakuten, yōon digraphs, and extended katakana with deterministic seeded decks.
+- **Kanji Studio (`/games/kanji`)**: Meaning drills (2,208 JLPT N5–N1 kanji), stroke-order animation & canvas writing practice, and Radical Builder (`/games/kanji/radicals`).
+- **Textbook Companion (`/books`)**: Interactive workspace for **Genki I**, **Genki II**, and **Minna no Nihongo I** with vocabulary flashcards, grammar notes, kanji writing practice, roleplay/shadowing dialogues, and workbook drills.
+- **JLPT Exam Prep (`/games/jlpt`)**: Info Scanner, Instant Reply, Listening Scenes, Paragraph Cloze, Phonetic Traps, Star Scramble, Synonym Match, and Word Usage.
+- **Vocabulary, Grammar, Listening & Shiritori**: Dedicated game modes (`/games/vocabulary`, `/games/grammar`, `/games/listening`, `/games/shiritori`) plus Grammar Guides (`/grammar`) and Learning Guides (`/learn`).
+- **Immersion & Tools**: Dialogue Quest (`/games/dialogue`), Graded Stories (`/stories`), Local Dictionary & Sentence Analyzer (`/dictionary`), and FSRS Review Hub (`/review`).
+- **Day/Night Sakura Themes & Offline PWA**: Responsive mobile-first design (`min-h-dvh`), light/dark themes, and local IndexedDB/Dexie persistence.
 
 ---
 
 ## Tech Stack
 
-| Layer | Technologies |
-| :--- | :--- |
-| **Framework** | [Next.js](https://nextjs.org/) 16 (App Router, Turbopack) |
-| **Library** | [React](https://react.dev/) 19 (Server & Client Components) |
-| **Language** | [TypeScript](https://www.typescriptlang.org/) (Strict Mode) |
-| **Styling** | [Tailwind CSS](https://tailwindcss.com/) 4 |
-| **Typography** | `next/font` (Inter, Noto Sans JP, Noto Serif JP, Yuji Syuku) |
-| **Testing** | [Vitest](https://vitest.dev/) & [Testing Library](https://testing-library.com/) |
-| **Icons** | [Lucide React](https://lucide.dev/) |
+*(Versions from [`package.json`](./package.json))*
+
+| Layer | Technology | Version |
+| :--- | :--- | :--- |
+| **Framework** | Next.js (App Router, Turbopack) | `^16.4.6` |
+| **UI Library** | React & React DOM | `19.3.0` |
+| **Language** | TypeScript | `^5` |
+| **Styling** | Tailwind CSS & `@tailwindcss/turbopack` | `^4` |
+| **Storage & SRS** | Dexie (IndexedDB) & `ts-fsrs` | `^4.4.7` / `^5.4.2` |
+| **NLP & MDX** | Kuromoji, `next-mdx-remote`, `gray-matter`, `remark-gfm` | `^0.1.2` / `^6.0.0` |
+| **Animation & Icons** | Framer Motion & Lucide React | `^14.14.0` / `^1.61.0` |
+| **Testing** | Vitest, Testing Library, `jsdom`, `fake-indexeddb` | `^3.2.7` |
 
 ---
 
-## Getting Started
+## Quick Start
 
 ### Prerequisites
-* Node.js `22.x` (or newer)
-* npm `10.x` (or newer)
+- Node.js `22.x` (see `engines.node` in [`package.json`](./package.json))
+- npm `10.x` or newer
 
 ### Installation & Development
 
 ```bash
-# 1. Clone the repository
 git clone https://github.com/VinayakSawant859/Kana-game.git
 cd Kana-game
-
-# 2. Install dependencies
 npm ci
-
-# 3. (Optional) Rebuild static kanji data partitions
-npm run build:kanji-data
-
-# 4. Start local development server
 npm run dev
 ```
 
-Visit [http://localhost:3000](http://localhost:3000) to view the Games Hub.
+Open [http://localhost:3000](http://localhost:3000) to launch the Hub.
 
-### Available Scripts
+### Scripts
 
 | Command | Purpose |
 | :--- | :--- |
-| `npm run dev` | Starts the Next.js development server with Turbopack. |
-| `npm test` | Runs all 20 test suites (81 unit & integration tests) via Vitest. |
-| `npm run lint` | Runs ESLint checks across TypeScript and React code. |
-| `npm run build` | Builds an optimized production bundle with static prerendering. |
-| `npm run build:kanji-data` | Processes raw KANJIDIC data into public static JSON files (`public/data/v1/kanji/`). |
-| `npm run build:radicals` | Builds the JLPT-filtered radical chart, inverse index, and compact kanji example sentences; also runs automatically before `npm run build`. |
-| `npm run build:grammar-data` | Combines grammar rules and matching local examples into public static grammar JSON. |
-| `npm run build:listening-audio` | Builds offline audio clips for the JLPT Listening Scene game. |
+| `npm run dev` | Start the Next.js development server with Turbopack. |
+| `npm run build` | Run `prebuild` asset generators and build the production Next.js app. |
+| `npm start` | Serve the production build locally. |
+| `npm run lint` | Run ESLint across `src/` and `scripts/` (including layering rules). |
+| `npm run typecheck` | Run TypeScript type checking (`tsc --noEmit`). |
+| `npm test` | Run the Vitest test suite (`src/**/*.test.{ts,tsx}`). |
+| `npm run check` | Run `lint`, `typecheck`, and `test` in sequence. |
+| `npm run build:kanji-data` | Build partitioned JLPT kanji JSON files into `public/data/v1/kanji/`. |
+| `npm run build:radicals` | Build radical charts and kanji memberships into `public/data/v1/radicals/`. |
+| `npm run build:grammar-data` | Build JLPT grammar rules and example sentences into `public/data/v1/grammar/`. |
+| `npm run build:books` | Build textbook lesson manifests from `src/data/books/*.mdx`. |
+| `npm run build:data` | Rebuild all static datasets from `data-raw/` and `src/data/`. |
 
-### Environment Variables
+---
 
-To synthesize audio using the listening audio build script (`npm run build:listening-audio`), configure your local environment:
+## Project Structure
 
-```bash
-cp .env.example .env.local
+```text
+.
+├── data-raw/           # Raw build-time source datasets (never imported by runtime src/)
+├── docs/               # Architecture, deployment, asset licenses, and refactor logs
+├── public/             # Static assets, audio (.opus/.mp3), Kuromoji dict, built JSON partitions
+├── scripts/            # Data-build, audio-synthesis, and DeepL enrichment scripts
+└── src/
+    ├── app/            # Thin Next.js App Router pages and API routes
+    ├── components/     # Shared UI only (ui/, layout/, hub/, icons/)
+    ├── data/           # Runtime data loaders, curated MDX/JSON content, *.generated.ts
+    ├── engine/         # Shared pure TypeScript utilities (audio, analyzer, homophones, random)
+    ├── features/       # Domain feature modules (books, dialogue, grammar, jlpt, kana, kanji, learn, listening, shiritori, stories, vocabulary)
+    ├── games/          # Game registry metadata
+    ├── hooks/          # Shared React hooks
+    └── lib/            # Cross-cutting utilities (game-core, srs, storage, content, fonts)
 ```
 
-Set your OpenAI API key in `.env.local`:
-```env
-OPENAI_API_KEY=your_openai_api_key_here
+---
+
+## Architecture & Layering Rules
+
+Dependencies flow strictly in one direction:
+
+```text
+src/data/  ──▶  engine/ (pure TS)  ──▶  hooks/  ──▶  components/  ──▶  src/app/
 ```
 
-> **Security Note:** `.env` and `.env.local` are explicitly ignored in `.gitignore` to ensure real credentials are never committed to version control. Do not commit actual secrets or API keys.
+- Pure TypeScript modules under `src/**/engine/**`, `src/lib/game-core/**`, and `src/data/**` **never** import `react`, `next/*`, `@/components/*`, or `@/hooks/*` (enforced via ESLint `no-restricted-imports` in [`eslint.config.mjs`](./eslint.config.mjs)).
+- Full details and data-flow diagrams are in [`docs/architecture.md`](./docs/architecture.md).
 
 ---
 
-## Deployment
+## Data, Provenance & Licenses
 
-The application is optimized for deployment on Vercel's Hobby tier with zero configuration.
-
-See [DEPLOY.md](./docs/DEPLOY.md) for full deployment instructions and configuration details.
+- **Where data lives**:
+  - [`data-raw/`](./data-raw/README.md): Raw build-time corpora (`kanji_jlpt_only.json`, `openjlpt/`, `grammar/`, `kanji/`).
+  - `public/data/v1/`: Pre-built static JSON partitions fetched lazily by the browser.
+  - [`src/data/`](./src/data/README.md): Typed runtime loaders, curated content, and generated manifests (`*.generated.ts`).
+- **Regenerating data**: Run `npm run build:data` (or domain-specific `npm run build:*` scripts).
+- **Credits & Notices**:
+  - **KANJIDIC & EDRDG**: Kanji entries and readings are derived from KANJIDIC (© EDRDG, [CC BY-SA 3.0 / 4.0](https://creativecommons.org/licenses/by-sa/4.0/)).
+  - **JLPT Lists**: JLPT N5–N1 level groupings are unofficial community approximations; the JLPT does not publish official vocabulary or kanji lists.
+  - **OpenJLPT**: Vocabulary and sentence data derived from [OpenJLPT](https://github.com/evanclan/OpenJLPT) (CC BY-SA 4.0); see [`data-raw/openjlpt/NOTICE.md`](./data-raw/openjlpt/NOTICE.md).
+  - **Fonts**: Inter, Noto Sans JP, Noto Serif JP, and Yuji Syuku are self-hosted via `next/font` under the [SIL Open Font License (OFL)](https://openfontlicense.org/).
+  - Full asset attribution is in [`docs/ASSETS.md`](./docs/ASSETS.md).
 
 ---
 
-## Data Attribution & Acknowledgments
+## Testing, Deployment & Contributing
 
-* **KANJIDIC & EDRDG**: Kanji dictionary entries and readings are derived from the KANJIDIC project by the Electronic Dictionary Research and Development Group (EDRDG), licensed under [CC BY-SA 3.0 / 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
-* **OpenJLPT**: Vocabulary definitions and sentence examples are sourced from [OpenJLPT](https://github.com/evanclan/OpenJLPT) (derived from JMdict, KANJIDIC2, and Tatoeba, CC BY-SA 4.0).
-* **Fonts**: Google Fonts (Inter, Noto Sans JP, Noto Serif JP, Yuji Syuku) are self-hosted via `next/font` under the [SIL Open Font License (OFL)](https://openfontlicense.org/).
-* Full attribution details are documented in [ASSETS.md](./docs/ASSETS.md) and [NOTICE.md](./data-raw/openjlpt/NOTICE.md).
+- **Testing**: Run `npm test` (Vitest + Testing Library + `fake-indexeddb`). Colocate tests as `*.test.ts(x)` next to the module under test.
+- **Deployment**: Configured for zero-config Vercel deployment (`Node 22.x`). See [`docs/DEPLOY.md`](./docs/DEPLOY.md).
+- **Adding a Game Mode**: Follow the step-by-step checklist in [`docs/adding-a-game.md`](./docs/adding-a-game.md) and conventions in [`AGENTS.md`](./AGENTS.md).
 
 ---
 
-## License
+## Roadmap
 
-This project is open-source under the MIT License. Data assets retain their respective Creative Commons licenses.
+- Complete **Kanji Reading** interactive mode (`/games/kanji/reading`) with on'yomi/kun'yomi kana typing drills.
+- Expand **Textbook Companion** audio coverage and cross-lesson cumulative review decks.
+- Add richer **FSRS** analytics and exportable study progress backups.

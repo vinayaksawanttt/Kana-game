@@ -92,6 +92,10 @@ Recorded on 2026-11-17 before any refactor changes.
 
 ## Moves, Deletions & Decisions
 
+### Phase 6: README
+- Rewrote `README.md` with project overview, feature list, live demo placeholder, tech stack table (synced to `package.json`), quick start & scripts table, refactored project structure tree, architecture/layering summary, data provenance/licenses, testing/deployment/contributing links, and roadmap.
+- Verified all relative file paths and documentation links exist.
+
 ### Phase 5: Scripts, Config, and Tooling
 - **Added `package.json` scripts**: `typecheck` (`tsc --noEmit`) and `check` (`npm run lint && npm run typecheck && npm run test`).
 - **Config & Tooling**:
