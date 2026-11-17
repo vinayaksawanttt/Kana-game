@@ -92,6 +92,16 @@ Recorded on 2026-11-17 before any refactor changes.
 
 ## Moves, Deletions & Decisions
 
+### Phase 5: Scripts, Config, and Tooling
+- **Added `package.json` scripts**: `typecheck` (`tsc --noEmit`) and `check` (`npm run lint && npm run typecheck && npm run test`).
+- **Config & Tooling**:
+  - Added `.editorconfig` (UTF-8, LF, 2-space indentation, trailing whitespace rules).
+  - Updated `vitest.config.ts` with explicit `include: ["src/**/*.test.{ts,tsx}"]`.
+- **Documentation**:
+  - Created `docs/architecture.md` (layering rules, folder map, data-flow diagram).
+  - Created `docs/adding-a-game.md` (step-by-step guide for adding a new game mode).
+  - Updated `AGENTS.md` with project folder map, layering rules, refactor invariants, and verification commands (preserving Next.js agent rules block).
+
 ### Phase 4: Clean and Structure `src/data/`
 - **Moved Raw Datasets Out of `src/data/` (`git mv`)**:
   - `src/data/openjlpt/` → `data-raw/openjlpt/` (~7.2 MB)
