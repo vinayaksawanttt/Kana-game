@@ -43,7 +43,7 @@ async function main(): Promise<void> {
     throw new Error(`Missing required source dataset at ${rawPath}`);
   }
 
-  const overridePath = resolve(root, "src/data/kanji/meaning-overrides.json");
+  const overridePath = resolve(root, "data-raw/kanji/meaning-overrides.json");
   const outputDirectory = resolve(root, "src/data/kanji");
   const publicKanjiDirectory = resolve(root, "public/data/v1/kanji");
   const reportPath = resolve(root, "docs/kanji-data-report.md");

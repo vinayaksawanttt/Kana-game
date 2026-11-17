@@ -80,5 +80,26 @@ describe("kanji per-level data loader", () => {
     const levelCounts = await countsByLevel([1, 2]);
     expect(levelCounts[5]).toBe(79);
   });
+
+  it("validates kanji record schema on loaded N5 records", async () => {
+    const n5 = await getKanjiByLevel("N5");
+    expect(n5.length).toBeGreaterThan(0);
+    const seenChars = new Set<string>();
+    for (const record of n5) {
+      expect(typeof record.c).toBe("string");
+      expect(record.c.length).toBe(1);
+      expect(seenChars.has(record.c)).toBe(false);
+      seenChars.add(record.c);
+      expect(record.jlpt).toBe(5);
+      expect(typeof record.grade).toBe("number");
+      expect(Array.isArray(record.meanings)).toBe(true);
+      expect(record.meanings.length).toBeGreaterThan(0);
+      expect(typeof record.label).toBe("string");
+      expect(Array.isArray(record.on)).toBe(true);
+      expect(Array.isArray(record.kun)).toBe(true);
+      expect(typeof record.strokes).toBe("number");
+      expect(record.strokes).toBeGreaterThan(0);
+    }
+  });
 });
 

@@ -112,11 +112,11 @@ function buildJapaneseSentenceForWord(entry: VocabEntry): { ja: string; furigana
 
 async function loadLocalSentenceCorpus(root: string): Promise<CorpusSentence[]> {
   const files = [
-    "src/data/grammar/sentences_output_N3_tango_p210-213_i-adjectives_1.json",
-    "src/data/grammar/sentences_output_N3_tango_p214-223_na-adjectives_1.json",
-    "src/data/grammar/sentences_output_N3_tango_verbs_TOTAL.json",
-    "src/data/grammar/sentences_output_essential_600_suru_verbs_book.json",
-    "src/data/grammar/sentences_output_essential_600_verbs_book.json",
+    "data-raw/grammar/sentences_output_N3_tango_p210-213_i-adjectives_1.json",
+    "data-raw/grammar/sentences_output_N3_tango_p214-223_na-adjectives_1.json",
+    "data-raw/grammar/sentences_output_N3_tango_verbs_TOTAL.json",
+    "data-raw/grammar/sentences_output_essential_600_suru_verbs_book.json",
+    "data-raw/grammar/sentences_output_essential_600_verbs_book.json",
   ];
   const all: CorpusSentence[] = [];
   for (const rel of files) {

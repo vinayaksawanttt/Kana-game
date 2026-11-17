@@ -311,8 +311,8 @@ async function main(): Promise<void> {
     // Write back to public/data/v1/grammar/${lvl}.json
     writeFileSync(filePath, `${JSON.stringify(rawData, null, 2)}\n`, "utf8");
 
-    // Also update src/data/grammar/grammar_ja_${lvl}_full_alphabetical_0001.json if it exists
-    const srcPath = resolve(ROOT, `src/data/grammar/grammar_ja_${lvl}_full_alphabetical_0001.json`);
+    // Also update data-raw/grammar/grammar_ja_${lvl}_full_alphabetical_0001.json if it exists
+    const srcPath = resolve(ROOT, `data-raw/grammar/grammar_ja_${lvl}_full_alphabetical_0001.json`);
     if (existsSync(srcPath)) {
       try {
         const srcRaw = JSON.parse(readFileSync(srcPath, "utf8"));

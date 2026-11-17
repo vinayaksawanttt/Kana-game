@@ -2,8 +2,8 @@
  * Builds the static grammar dataset served from /public/data/v1/grammar/.
  *
  * Inputs:
- *   - src/data/grammar/grammar_ja_N{1..5}_full_alphabetical_0001.json (grammar rules)
- *   - src/data/grammar/sentences_output_*.json (local example sentences)
+ *   - data-raw/grammar/grammar_ja_N{1..5}_full_alphabetical_0001.json (grammar rules)
+ *   - data-raw/grammar/sentences_output_*.json (local example sentences)
  * Output: public/data/v1/grammar/N5.json … N1.json + index.json
  *
  * Each example sentence is pre-processed for the games:
@@ -75,7 +75,7 @@ function buildExample(raw: { jp?: string; romaji?: string; en?: string }, fragme
 
 async function main(): Promise<void> {
   const root = process.cwd();
-  const sourceDir = resolve(root, "src/data/grammar");
+  const sourceDir = resolve(root, "data-raw/grammar");
   const outDir = resolve(root, "public/data/v1/grammar");
   await mkdir(outDir, { recursive: true });
 

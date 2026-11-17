@@ -2,9 +2,9 @@
  * Builds the static Dictionary & Sentence Analyzer index and copies Kuromoji dictionary files.
  *
  * Inputs:
- *   - data-raw/kanji_jlpt_only.json (+ src/data/kanji/meaning-overrides.json)
- *   - src/data/grammar/sentences_output_*.json
- *   - src/data/openjlpt/vocab/n5.json … n1.json
+ *   - data-raw/kanji_jlpt_only.json (+ data-raw/kanji/meaning-overrides.json)
+ *   - data-raw/grammar/sentences_output_*.json
+ *   - data-raw/openjlpt/vocab/n5.json … n1.json
  *   - node_modules/kuromoji/dict/*.dat.gz
  *
  * Outputs:
@@ -172,7 +172,7 @@ async function main(): Promise<void> {
 
   // 1. Load Kanji
   const rawKanjiPath = resolve(root, "data-raw/kanji_jlpt_only.json");
-  const overridePath = resolve(root, "src/data/kanji/meaning-overrides.json");
+  const overridePath = resolve(root, "data-raw/kanji/meaning-overrides.json");
   const rawKanjiMap = JSON.parse(await readFile(rawKanjiPath, "utf8")) as Record<string, RawKanji>;
   let overrides: Record<string, string[]> = {};
   try {
@@ -227,7 +227,7 @@ async function main(): Promise<void> {
   const seenVocabKeys = new Set<string>();
 
   for (const lvl of vocabLevels) {
-    const vocabPath = resolve(root, `src/data/openjlpt/vocab/${lvl}.json`);
+    const vocabPath = resolve(root, `data-raw/openjlpt/vocab/${lvl}.json`);
     const rows = JSON.parse(await readFile(vocabPath, "utf8")) as RawVocabEntry[];
     for (const row of rows) {
       const word = row.word?.trim() ?? "";
@@ -264,7 +264,7 @@ async function main(): Promise<void> {
   }
 
   // 3. Load Sentences from sentences_output_*.json
-  const grammarDir = resolve(root, "src/data/grammar");
+  const grammarDir = resolve(root, "data-raw/grammar");
   const grammarFiles = (await readdir(grammarDir))
     .filter((name) => name.startsWith("sentences_output_") && name.endsWith(".json"))
     .sort();

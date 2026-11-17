@@ -25,7 +25,7 @@
 
 ### 4. Grammar Practice & Reference (`/games/grammar`, `/grammar`)
 * **JLPT N5–N1 Coverage**: Practice cloze and sentence-scramble questions or browse grammar guides.
-* **Enriched Examples**: `npm run build:grammar-data` combines local grammar rules and matching examples from `src/data/grammar/sentences_output_*.json` into static data under `public/data/v1/grammar/`.
+* **Enriched Examples**: `npm run build:grammar-data` combines local grammar rules and matching examples from `data-raw/grammar/sentences_output_*.json` into static data under `public/data/v1/grammar/`.
 
 ### 5. Spaced Repetition & Reading
 * **Kanji Reading** *(Coming Soon)*: Practice on'yomi and kun'yomi readings with kana typing inputs.
@@ -144,7 +144,7 @@ See [DEPLOY.md](./docs/DEPLOY.md) for full deployment instructions and configura
 * **KANJIDIC & EDRDG**: Kanji dictionary entries and readings are derived from the KANJIDIC project by the Electronic Dictionary Research and Development Group (EDRDG), licensed under [CC BY-SA 3.0 / 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 * **OpenJLPT**: Vocabulary definitions and sentence examples are sourced from [OpenJLPT](https://github.com/evanclan/OpenJLPT) (derived from JMdict, KANJIDIC2, and Tatoeba, CC BY-SA 4.0).
 * **Fonts**: Google Fonts (Inter, Noto Sans JP, Noto Serif JP, Yuji Syuku) are self-hosted via `next/font` under the [SIL Open Font License (OFL)](https://openfontlicense.org/).
-* Full attribution details are documented in [ASSETS.md](./docs/ASSETS.md) and [NOTICE.md](./src/data/openjlpt/NOTICE.md).
+* Full attribution details are documented in [ASSETS.md](./docs/ASSETS.md) and [NOTICE.md](./data-raw/openjlpt/NOTICE.md).
 
 ---
 

@@ -92,6 +92,22 @@ Recorded on 2026-11-17 before any refactor changes.
 
 ## Moves, Deletions & Decisions
 
+### Phase 4: Clean and Structure `src/data/`
+- **Moved Raw Datasets Out of `src/data/` (`git mv`)**:
+  - `src/data/openjlpt/` → `data-raw/openjlpt/` (~7.2 MB)
+  - `src/data/grammar/*.json` → `data-raw/grammar/` (~2.8 MB)
+  - `src/data/kanji/radicals/` → `data-raw/kanji/radicals/` (~516 KB)
+  - `src/data/kanji/meaning-overrides.json` → `data-raw/kanji/meaning-overrides.json` (~4 KB)
+  - Updated all script paths in `scripts/` and doc links in `README.md` / `docs/ASSETS.md`.
+- **Documentation & Generated File Hygiene**:
+  - Created `data-raw/README.md` documenting source, license, and dates of raw datasets.
+  - Created `src/data/README.md` documenting runtime loaders, curated content, and generated manifests.
+  - Created `.gitattributes` marking `*.generated.ts`, `*.generated.json`, `public/data/**`, and `public/sw.js` as `linguist-generated`.
+  - Excluded `src/data/**/*.generated.ts` and `src/data/**/generated/**` from ESLint in `eslint.config.mjs`.
+- **Data Integrity Tests**:
+  - Added `src/data/kana.test.ts` (unique ids, non-empty romaji, unique row metadata keys, filter/count consistency).
+  - Enhanced `src/data/kanji.test.ts` with schema & uniqueness validation for N5 kanji records.
+
 ### Phase 3: Restructure `src/`
 - **Layering Enforcement**: Added ESLint `no-restricted-imports` rule in `eslint.config.mjs` blocking `react`, `react-*`, `next`, `next/*`, `@/components/*`, and `@/hooks/*` inside `src/**/engine/**`, `src/lib/game-core/**`, and `src/data/**`.
 - **Moved Shared Layout Chrome (`git mv`)**:

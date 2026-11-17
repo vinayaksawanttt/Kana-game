@@ -222,7 +222,7 @@ async function main(): Promise<void> {
   // Save updated vocabulary files
   for (const lvl of levels) {
     const publicPath = resolve(root, `public/data/v1/vocabulary/${lvl}.json`);
-    const openJlptPath = resolve(root, `src/data/openjlpt/vocab/${lvl.toLowerCase()}.json`);
+    const openJlptPath = resolve(root, `data-raw/openjlpt/vocab/${lvl.toLowerCase()}.json`);
     const entries = allEntriesByLevel[lvl]!;
     await writeFile(publicPath, `${JSON.stringify(entries, null, 2)}\n`, "utf8");
     await writeFile(openJlptPath, `${JSON.stringify(entries, null, 2)}\n`, "utf8");

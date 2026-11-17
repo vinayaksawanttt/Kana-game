@@ -1,0 +1,5 @@
+*.generated.ts linguist-generated
+*.generated.json linguist-generated
+src/data/**/generated/** linguist-generated
+public/data/** linguist-generated
+public/sw.js linguist-generated

@@ -3,8 +3,8 @@ import { resolve } from "node:path";
 
 async function main(): Promise<void> {
   const root = process.cwd();
-  const srcVocab = resolve(root, "src/data/openjlpt/vocab");
-  const srcKanji = resolve(root, "src/data/openjlpt/kanji");
+  const srcVocab = resolve(root, "data-raw/openjlpt/vocab");
+  const srcKanji = resolve(root, "data-raw/openjlpt/kanji");
   const destVocab = resolve(root, "public/data/v1/vocabulary");
   const destKanji = resolve(root, "public/data/v1/vocabulary/kanji");
 

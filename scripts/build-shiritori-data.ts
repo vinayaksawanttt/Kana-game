@@ -250,7 +250,7 @@ async function main(): Promise<void> {
 
   for (const { source } of levels) {
     const files = [
-      resolve(root, `src/data/openjlpt/vocab/${source}.json`),
+      resolve(root, `data-raw/openjlpt/vocab/${source}.json`),
       resolve(root, `public/data/v1/vocabulary/${source.toUpperCase()}.json`),
     ];
     for (const file of files) {
@@ -375,7 +375,7 @@ async function main(): Promise<void> {
 
   // 2. Add OpenJLPT vocabulary
   for (const { source, level } of levels) {
-    const file = resolve(root, `src/data/openjlpt/vocab/${source}.json`);
+    const file = resolve(root, `data-raw/openjlpt/vocab/${source}.json`);
     if (!existsSync(file)) continue;
     const rows = JSON.parse(await readFile(file, "utf8")) as RawVocabularyRow[];
     for (const row of rows) {

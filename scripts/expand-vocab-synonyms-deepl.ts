@@ -264,7 +264,7 @@ async function main() {
 
   for (const lvl of levels) {
     const filePath = resolve(process.cwd(), `public/data/v1/vocabulary/${lvl}.json`);
-    const openJlptPath = resolve(process.cwd(), `src/data/openjlpt/vocab/${lvl.toLowerCase()}.json`);
+    const openJlptPath = resolve(process.cwd(), `data-raw/openjlpt/vocab/${lvl.toLowerCase()}.json`);
 
     const raw = readFileSync(filePath, "utf8");
     const entries: VocabEntry[] = JSON.parse(raw);

@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    "src/data/**/*.generated.ts",
+    "src/data/**/generated/**",
   ]),
   {
     files: ["src/**/engine/**/*.{ts,tsx}", "src/lib/game-core/**/*.{ts,tsx}", "src/data/**/*.{ts,tsx}"],

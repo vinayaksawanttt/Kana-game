@@ -2,10 +2,10 @@
  * Builds a compact JLPT radical explorer dataset.
  *
  * Inputs:
- *   - src/data/kanji/radicals/radical-decode(d).json
- *   - src/data/kanji/radicals/radical-wiki.json
+ *   - data-raw/kanji/radicals/radical-decode(d).json
+ *   - data-raw/kanji/radicals/radical-wiki.json
  *   - data-raw/kanji_jlpt_only.json
- *   - src/data/grammar/sentences_output_*.json
+ *   - data-raw/grammar/sentences_output_*.json
  *
  * Outputs:
  *   - public/data/v1/radicals/list.json
@@ -46,7 +46,7 @@ async function requiredPath(...paths: string[]): Promise<string> {
 
 async function main(): Promise<void> {
   const root = process.cwd();
-  const radicalDir = resolve(root, "src/data/kanji/radicals");
+  const radicalDir = resolve(root, "data-raw/kanji/radicals");
   const decodedPath = await requiredPath(
     resolve(radicalDir, "radical-decoded.json"),
     resolve(radicalDir, "radical-decode.json")
@@ -99,7 +99,7 @@ async function main(): Promise<void> {
     };
   });
 
-  const grammarDir = resolve(root, "src/data/grammar");
+  const grammarDir = resolve(root, "data-raw/grammar");
   const sentenceFiles = (await readdir(grammarDir))
     .filter((name) => name.startsWith("sentences_output_") && name.endsWith(".json"))
     .sort();
