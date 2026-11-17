@@ -91,5 +91,15 @@ Recorded on 2026-11-17 before any refactor changes.
 ---
 
 ## Moves, Deletions & Decisions
-- **Deleted (SAFE)**: `.tmp/test-kana-a.mp3` (temporary scratch audio file in gitignored `.tmp/`).
-- **Pending Decisions (`ASK`)**: See `docs/REFACTOR_PLAN.md` Section 6 ("NEEDS MY DECISION").
+
+### Phase 2: Cleanup
+- **Deleted (SAFE)**:
+  - `.tmp/test-kana-a.mp3` (temporary scratch audio file)
+  - `.github/instructions/postman-*.instructions.md` (6 stray gitignored Postman extension files)
+  - `public/audio/grammar-examples/N2/noun-wo-hajime-to-shite_3.opus.tmp.wav` (tracked leftover temporary `.wav` alongside `.opus`)
+- **Moved (Root Tidiness via `git mv`)**:
+  - `ASSETS.md` → `docs/ASSETS.md` (updated link in `README.md`)
+  - `DEPLOY.md` → `docs/DEPLOY.md` (updated link in `README.md`)
+  - `kanji-data-report.md` → `docs/kanji-data-report.md` (updated output path in `scripts/build-kanji-data.ts`)
+- **`.gitignore` Updated**: Added `*.tmp.wav`, `/playwright-report/`, `/test-results/`.
+- **Pending Decisions (`ASK`)**: See `docs/REFACTOR_PLAN.md` Section 6 ("NEEDS MY DECISION") for legacy dialogue components, `convert-png-to-webp.js`, unused barrels, and moving raw datasets out of `src/data/`.

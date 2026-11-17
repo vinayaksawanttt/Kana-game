@@ -46,7 +46,7 @@ async function main(): Promise<void> {
   const overridePath = resolve(root, "src/data/kanji/meaning-overrides.json");
   const outputDirectory = resolve(root, "src/data/kanji");
   const publicKanjiDirectory = resolve(root, "public/data/v1/kanji");
-  const reportPath = resolve(root, "kanji-data-report.md");
+  const reportPath = resolve(root, "docs/kanji-data-report.md");
 
   const raw = JSON.parse(await readFile(rawPath, "utf8")) as Record<string, RawKanji>;
   let overrides: Record<string, string[]> = {};
