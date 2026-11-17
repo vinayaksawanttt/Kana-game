@@ -1001,6 +1001,24 @@ export const DIALOGUE_ASSET_MANIFESTS: Record<string, ScenarioAssetManifest> = {
             goodbye:
                 "/assets/dialogue-quest/employer-shift-request/characters/nakamura-san/goodbye.webp",
         },
+        dialogueAudio: {
+            "la-node-1-enter":
+                "/assets/dialogue-quest/genki-little-asia/dialogue/la-node-1-enter.opus",
+            "la-node-2-order":
+                "/assets/dialogue-quest/genki-little-asia/dialogue/la-node-2-order.opus",
+            "la-node-2-order-casual":
+                "/assets/dialogue-quest/genki-little-asia/dialogue/la-node-2-order-casual.opus",
+            "la-node-3-parttime":
+                "/assets/dialogue-quest/genki-little-asia/dialogue/la-node-3-parttime.opus",
+            "la-end-perfect":
+                "/assets/dialogue-quest/genki-little-asia/dialogue/la-end-perfect.opus",
+            "la-end-success":
+                "/assets/dialogue-quest/genki-little-asia/dialogue/la-end-success.opus",
+            "la-end-awkward":
+                "/assets/dialogue-quest/genki-little-asia/dialogue/la-end-awkward.opus",
+            "la-end-failure":
+                "/assets/dialogue-quest/genki-little-asia/dialogue/la-end-failure.opus",
+        },
     },
     "genki-department-manager": {
         backgrounds: {
@@ -1022,6 +1040,24 @@ export const DIALOGUE_ASSET_MANIFESTS: Record<string, ScenarioAssetManifest> = {
                 "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/proud.webp",
             disappointed:
                 "/assets/dialogue-quest/client-apology-delay/characters/hasegawa/disappointed.webp",
+        },
+        dialogueAudio: {
+            "dm-node-1-greet":
+                "/assets/dialogue-quest/genki-department-manager/dialogue/dm-node-1-greet.opus",
+            "dm-node-2-tea":
+                "/assets/dialogue-quest/genki-department-manager/dialogue/dm-node-2-tea.opus",
+            "dm-node-2-scold":
+                "/assets/dialogue-quest/genki-department-manager/dialogue/dm-node-2-scold.opus",
+            "dm-node-3-airport":
+                "/assets/dialogue-quest/genki-department-manager/dialogue/dm-node-3-airport.opus",
+            "dm-end-perfect":
+                "/assets/dialogue-quest/genki-department-manager/dialogue/dm-end-perfect.opus",
+            "dm-end-success":
+                "/assets/dialogue-quest/genki-department-manager/dialogue/dm-end-success.opus",
+            "dm-end-awkward":
+                "/assets/dialogue-quest/genki-department-manager/dialogue/dm-end-awkward.opus",
+            "dm-end-failure":
+                "/assets/dialogue-quest/genki-department-manager/dialogue/dm-end-failure.opus",
         },
     },
 };
