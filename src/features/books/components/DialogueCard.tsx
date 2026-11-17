@@ -539,7 +539,7 @@ export function DialogueCard({
       {/* ------------------------------------------------------------------ */}
       <div
         ref={containerRef}
-        className="relative h-[460px] sm:h-[520px] overflow-y-auto p-4 sm:p-6 md:p-8 space-y-6 sm:space-y-7 bg-[var(--tb-bg)]/40 scroll-smooth"
+        className="relative h-[460px] sm:h-[520px] overflow-y-auto no-scrollbar overscroll-contain p-4 sm:p-6 md:p-8 space-y-6 sm:space-y-7 bg-[var(--tb-bg)]/40 scroll-smooth"
       >
         {displayedLines.map((line, idx) => {
           const speakerIndex = uniqueSpeakers.indexOf(line.speakerJa);
