@@ -1,17 +1,18 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { execFileSync } from "node:child_process";
-import { KOBAN_NODES } from "../src/data/dialogue/scenarios/koban-lost-wallet";
+import { TEACHER_NODES } from "../../src/data/dialogue/scenarios/teacher-extension";
 
 const VOICEVOX_HOST = "http://127.0.0.1:50021";
 
-// SFX Expressive barks for Officer Tanaka
-const TANAKA_SFX_LIST = [
-  { key: "neutral", speaker: 13, phrase: "はい、どうしましたか？", speedScale: 1.05, pitchScale: 0.0 },
-  { key: "relieved", speaker: 83, phrase: "おお！よかったですね！", speedScale: 1.1, pitchScale: 0.02 },
-  { key: "stern", speaker: 82, phrase: "落ち着きなさい。", speedScale: 0.95, pitchScale: -0.05 },
-  { key: "thinking", speaker: 13, phrase: "うーむ…確認してみましょう。", speedScale: 1.0, pitchScale: 0.0 },
-  { key: "goodbye", speaker: 13, phrase: "気をつけて行ってらっしゃい！", speedScale: 1.05, pitchScale: 0.02 },
+// SFX Expressive barks for Takahashi-sensei (Mochiko-san)
+const TEACHER_SFX_LIST = [
+  { key: "neutral", speaker: 20, phrase: "はい、どうぞ！", speedScale: 1.05, pitchScale: 0.0 },
+  { key: "worried", speaker: 20, phrase: "あら、大丈夫ですか？", speedScale: 1.0, pitchScale: 0.02 },
+  { key: "happy", speaker: 79, phrase: "ふふっ、よく頑張りましたね！", speedScale: 1.1, pitchScale: 0.03 },
+  { key: "thinking", speaker: 80, phrase: "うーん、そうですねぇ…", speedScale: 1.0, pitchScale: -0.02 },
+  { key: "scolding", speaker: 78, phrase: "これこれ！落ち着きなさい！", speedScale: 1.1, pitchScale: 0.05 },
+  { key: "goodbye", speaker: 20, phrase: "はい、お大事にね！", speedScale: 1.05, pitchScale: 0.02 },
 ];
 
 async function generateSpeech(
@@ -72,14 +73,14 @@ async function generateSpeech(
 }
 
 async function main() {
-  console.log(`Connecting to VOICEVOX at ${VOICEVOX_HOST} for Officer Tanaka (Aoyama Ryusei)...\n`);
+  console.log(`Connecting to VOICEVOX at ${VOICEVOX_HOST} for Takahashi-sensei (Mochiko-san)...\n`);
 
   const dialogueOutDir = path.join(
     process.cwd(),
     "public",
     "assets",
     "dialogue-quest",
-    "koban-lost-wallet",
+    "teacher-extension",
     "dialogue"
   );
   const sfxOutDir = path.join(
@@ -87,15 +88,15 @@ async function main() {
     "public",
     "assets",
     "dialogue-quest",
-    "koban-lost-wallet",
+    "teacher-extension",
     "sfx"
   );
 
   fs.mkdirSync(dialogueOutDir, { recursive: true });
   fs.mkdirSync(sfxOutDir, { recursive: true });
 
-  console.log("=== Generating Officer Tanaka Spoken Dialogue Audio ===");
-  for (const [nodeId, node] of Object.entries(KOBAN_NODES)) {
+  console.log("=== Generating Takahashi-sensei Spoken Dialogue Audio ===");
+  for (const [nodeId, node] of Object.entries(TEACHER_NODES)) {
     if (node.npcTextJa.startsWith("（") && node.npcTextJa.endsWith("）")) {
       console.log(`  -> [SKIP] ${nodeId} (narration only)`);
       continue;
@@ -114,14 +115,14 @@ async function main() {
     const outFile = path.join(dialogueOutDir, `${nodeId}.mp3`);
     process.stdout.write(`  -> [${nodeId}.mp3] (Speaker ${node.speakerVoiceId}) "${cleanText.slice(0, 30)}..." `);
 
-    const bytes = await generateSpeech(node.speakerVoiceId, cleanText, outFile, { speedScale: 1.02 });
+    const bytes = await generateSpeech(node.speakerVoiceId, cleanText, outFile, { speedScale: 1.05 });
     console.log(`OK (${(bytes / 1024).toFixed(1)} KB)`);
   }
 
-  console.log("\n=== Generating Officer Tanaka Emotional SFX ===");
-  for (const sfx of TANAKA_SFX_LIST) {
-    const outFile = path.join(sfxOutDir, `tanaka-${sfx.key}.mp3`);
-    process.stdout.write(`  -> [tanaka-${sfx.key}.mp3] (${sfx.key}) "${sfx.phrase}" `);
+  console.log("\n=== Generating Takahashi-sensei Emotional SFX ===");
+  for (const sfx of TEACHER_SFX_LIST) {
+    const outFile = path.join(sfxOutDir, `takahashi-${sfx.key}.mp3`);
+    process.stdout.write(`  -> [takahashi-${sfx.key}.mp3] (${sfx.key}) "${sfx.phrase}" `);
 
     const bytes = await generateSpeech(sfx.speaker, sfx.phrase, outFile, {
       speedScale: sfx.speedScale,
@@ -130,7 +131,7 @@ async function main() {
     console.log(`OK (${(bytes / 1024).toFixed(1)} KB)`);
   }
 
-  console.log("\nAll dialogue and SFX generated successfully for koban-lost-wallet!");
+  console.log("\nAll dialogue and SFX generated successfully for teacher-extension!");
 }
 
 main().catch((err) => {

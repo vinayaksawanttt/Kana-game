@@ -1,7 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { execFileSync } from "node:child_process";
-import { FIRST_DATE_SAKURA_NODES } from "../src/data/dialogue/scenarios/first-date-sakura";
+import { FIRST_DATE_SAKURA_NODES } from "../../src/data/dialogue/scenarios/first-date-sakura";
 
 function loadEnvLocal() {
   const envPath = path.join(process.cwd(), ".env.local");

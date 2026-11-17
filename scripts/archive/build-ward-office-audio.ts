@@ -1,7 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { execFileSync } from "node:child_process";
-import { WARD_OFFICE_TAX_NODES } from "../src/data/dialogue/scenarios/ward-office-tax";
+import { WARD_OFFICE_TAX_NODES } from "../../src/data/dialogue/scenarios/ward-office-tax";
 
 const VOICEVOX_BASE_URL = (process.env.VOICEVOX_ENGINE_URL || "http://127.0.0.1:50021").trim();
 

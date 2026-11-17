@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
-import { cleanSentenceForAudio } from "../src/engine/audio";
+import { cleanSentenceForAudio } from "../../src/engine/audio";
 
 const VOICEVOX_BASE_URL = (process.env.VOICEVOX_ENGINE_URL || "http://127.0.0.1:50021").trim();
 const OUTPUT_BASE = path.resolve(process.cwd(), "public/audio/grammar-examples");

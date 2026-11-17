@@ -1,7 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { execFileSync } from "node:child_process";
-import { CLIENT_APOLOGY_NODES } from "../src/data/dialogue/scenarios/client-apology-delay";
+import { CLIENT_APOLOGY_NODES } from "../../src/data/dialogue/scenarios/client-apology-delay";
 
 const VOICEVOX_BASE_URL = (process.env.VOICEVOX_ENGINE_URL || "http://127.0.0.1:50021").trim();
 

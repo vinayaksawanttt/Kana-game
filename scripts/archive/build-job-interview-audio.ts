@@ -1,7 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { execFileSync } from "node:child_process";
-import { JOB_INTERVIEW_NODES } from "../src/data/dialogue/scenarios/job-interview-pr";
+import { JOB_INTERVIEW_NODES } from "../../src/data/dialogue/scenarios/job-interview-pr";
 
 const VOICEVOX_BASE_URL = (process.env.VOICEVOX_ENGINE_URL || "http://127.0.0.1:50021").trim();
 

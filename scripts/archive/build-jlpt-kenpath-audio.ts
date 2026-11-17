@@ -2,23 +2,23 @@ import fs from "node:fs";
 import path from "node:path";
 import dotenv from "dotenv";
 import { execFileSync } from "node:child_process";
-import { cleanSentenceForAudio } from "../src/engine/audio";
+import { cleanSentenceForAudio } from "../../src/engine/audio";
 import {
   INSTANT_REPLY_ITEMS,
   type InstantReplyItem,
-} from "../src/data/jlpt/instantReplyData";
+} from "../../src/data/jlpt/instantReplyData";
 import {
   STAR_SCRAMBLE_ITEMS,
   type StarScrambleItem,
-} from "../src/data/jlpt/starScrambleData";
+} from "../../src/data/jlpt/starScrambleData";
 import {
   SYNONYM_MATCH_ITEMS,
   type SynonymMatchItem,
-} from "../src/data/jlpt/synonymMatchData";
+} from "../../src/data/jlpt/synonymMatchData";
 import {
   PHONETIC_TRAP_ITEMS,
   type PhoneticTrapVocabItem,
-} from "../src/data/jlpt/phoneticTrapData";
+} from "../../src/data/jlpt/phoneticTrapData";
 
 // Load environment variables
 const envPath = path.resolve(process.cwd(), ".env.local");

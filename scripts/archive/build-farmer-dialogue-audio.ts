@@ -1,7 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { execFileSync } from "node:child_process";
-import { FARMER_NODES } from "../src/data/dialogue/scenarios/farmer-morning-market";
+import { FARMER_NODES } from "../../src/data/dialogue/scenarios/farmer-morning-market";
 
 const VOICEVOX_HOST = "http://127.0.0.1:50021";
 const SPEAKER_ID = 42; // Chibi Shikijii (ちび式じい)

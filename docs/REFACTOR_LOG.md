@@ -92,6 +92,13 @@ Recorded on 2026-11-17 before any refactor changes.
 
 ## Moves, Deletions & Decisions
 
+### Approved `ASK` Cleanup (Post-Phase 7)
+- **Deleted (Approved)**:
+  - `src/features/dialogue/components/AtmosphereMeter.tsx`, `DialogueChoicePanel.tsx`, `DialogueStage.tsx`
+  - `scripts/convert-png-to-webp.js` (duplicate JS script)
+  - `src/data/kanji/index.ts`, `src/engine/index.ts` (unused barrels)
+- **Archived (`git mv` → `scripts/archive/`)**: 22 one-off scenario/SFX/TTS audio build scripts (`build-choice-voicevox-audio.ts`, `build-client-apology-*`, `build-dialogue-*`, `build-employer-*`, `build-farmer-*`, `build-first-date-*`, `build-game-sfx.ts`, `build-grammar-voicevox-audio.ts`, `build-jlpt-kenpath-audio.ts`, `build-job-interview-*`, `build-koban-*`, `build-landlord-*`, `build-saito-*`, `build-sato-*`, `build-teacher-*`, `build-ward-office-audio.ts`).
+
 ### Phase 7: Final Verification
 - **Stale Path Audit**: `grep -rn` across `src/`, `scripts/`, `README.md`, `AGENTS.md`, `eslint.config.mjs`, `tsconfig.json`, and `vitest.config.ts` found **0 stale paths**.
 - **Production Smoke Check**: `npx next start -p 3099` returned `HTTP 200` on `/`, `/games/kana`, `/games/kanji/meaning`, `/books`, and `/books/genki-1/1`.
