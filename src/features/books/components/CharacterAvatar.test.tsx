@@ -33,11 +33,11 @@ describe("CharacterAvatar component", () => {
   });
 
   it("gracefully falls back to initials badge for unknown characters", () => {
-    const { container } = render(<CharacterAvatar speaker="Doctor" speakerJa="医者" />);
+    const { container } = render(<CharacterAvatar speaker="Alien" speakerJa="宇宙人" />);
 
-    const fallback = screen.getByRole("img", { name: /医者 \(Doctor\)/i });
+    const fallback = screen.getByRole("img", { name: /宇宙人 \(Alien\)/i });
     expect(fallback).not.toBeNull();
-    expect(fallback.textContent?.trim()).toBe("医");
+    expect(fallback.textContent?.trim()).toBe("宇");
     expect(container.querySelectorAll("img").length).toBe(0);
   });
 

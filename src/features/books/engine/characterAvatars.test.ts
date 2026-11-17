@@ -6,9 +6,9 @@ import {
 } from "./characterAvatars";
 
 describe("characterAvatars registry", () => {
-  it("registers all 15 Genki characters with both neutral and talking asset paths", () => {
+  it("registers all 29 Genki characters with both neutral and talking asset paths", () => {
     const all = getAllCharacterAvatars();
-    expect(all).toHaveLength(15);
+    expect(all).toHaveLength(29);
 
     const expectedIds = [
       "mary-hart",
@@ -26,6 +26,20 @@ describe("characterAvatars registry", () => {
       "naomi",
       "wudi",
       "yasmin",
+      "department-manager",
+      "doctor",
+      "hotel-front-desk-clerk",
+      "landlady",
+      "old-man",
+      "old-woman",
+      "passing-stranger",
+      "police-officer",
+      "restaurant-manager",
+      "restaurant-waitress",
+      "store-attendant",
+      "tanaka",
+      "tourist-information-agent",
+      "train-station-attendant",
     ];
 
     for (const id of expectedIds) {
@@ -61,6 +75,23 @@ describe("characterAvatars registry", () => {
     expect(getCharacterAvatar("Naomi")?.id).toBe("naomi");
     expect(getCharacterAvatar("Wudi")?.id).toBe("wudi");
     expect(getCharacterAvatar("Yasmin")?.id).toBe("yasmin");
+    expect(getCharacterAvatar("Department manager")?.id).toBe("department-manager");
+    expect(getCharacterAvatar("Doctor")?.id).toBe("doctor");
+    expect(getCharacterAvatar("Hotel front desk")?.id).toBe("hotel-front-desk-clerk");
+    expect(getCharacterAvatar("Landlady")?.id).toBe("landlady");
+    expect(getCharacterAvatar("Old man")?.id).toBe("old-man");
+    expect(getCharacterAvatar("Old woman")?.id).toBe("old-woman");
+    expect(getCharacterAvatar("Stranger")?.id).toBe("passing-stranger");
+    expect(getCharacterAvatar("Police")?.id).toBe("police-officer");
+    expect(getCharacterAvatar("Manager")?.id).toBe("restaurant-manager");
+    expect(getCharacterAvatar("Waitress")?.id).toBe("restaurant-waitress");
+    expect(getCharacterAvatar("Restaurant attendant")?.id).toBe("restaurant-waitress");
+    expect(getCharacterAvatar("Store attendant")?.id).toBe("store-attendant");
+    expect(getCharacterAvatar("Vendor")?.id).toBe("store-attendant");
+    expect(getCharacterAvatar("Shop assistant")?.id).toBe("store-attendant");
+    expect(getCharacterAvatar("Tanaka")?.id).toBe("tanaka");
+    expect(getCharacterAvatar("Information agent")?.id).toBe("tourist-information-agent");
+    expect(getCharacterAvatar("Station attendant")?.id).toBe("train-station-attendant");
   });
 
   it("resolves characters by Japanese name variations", () => {
@@ -82,6 +113,22 @@ describe("characterAvatars registry", () => {
     expect(getCharacterAvatar(undefined, "なおみ")?.id).toBe("naomi");
     expect(getCharacterAvatar(undefined, "ウディ")?.id).toBe("wudi");
     expect(getCharacterAvatar(undefined, "ヤスミン")?.id).toBe("yasmin");
+    expect(getCharacterAvatar(undefined, "部長")?.id).toBe("department-manager");
+    expect(getCharacterAvatar(undefined, "医者")?.id).toBe("doctor");
+    expect(getCharacterAvatar(undefined, "ホテルの人")?.id).toBe("hotel-front-desk-clerk");
+    expect(getCharacterAvatar(undefined, "大家")?.id).toBe("landlady");
+    expect(getCharacterAvatar(undefined, "おじいさん")?.id).toBe("old-man");
+    expect(getCharacterAvatar(undefined, "おばあさん")?.id).toBe("old-woman");
+    expect(getCharacterAvatar(undefined, "知らない人")?.id).toBe("passing-stranger");
+    expect(getCharacterAvatar(undefined, "しらないひと")?.id).toBe("passing-stranger");
+    expect(getCharacterAvatar(undefined, "警察")?.id).toBe("police-officer");
+    expect(getCharacterAvatar(undefined, "店長")?.id).toBe("restaurant-manager");
+    expect(getCharacterAvatar(undefined, "店員")?.id).toBe("store-attendant");
+    expect(getCharacterAvatar(undefined, "みせのひと")?.id).toBe("store-attendant");
+    expect(getCharacterAvatar(undefined, "店の人")?.id).toBe("store-attendant");
+    expect(getCharacterAvatar(undefined, "田中")?.id).toBe("tanaka");
+    expect(getCharacterAvatar(undefined, "案内所の人")?.id).toBe("tourist-information-agent");
+    expect(getCharacterAvatar(undefined, "駅員")?.id).toBe("train-station-attendant");
   });
 
   it("resolves when speaker and speakerJa are provided together", () => {
@@ -89,17 +136,18 @@ describe("characterAvatars registry", () => {
     expect(getCharacterAvatar("Takeshi", "たけし")?.id).toBe("takeshi-kimura");
     expect(getCharacterAvatar("Prof. Yamashita", "山下先生")?.id).toBe("prof-yamashita");
     expect(getCharacterAvatar("Host father", "お父さん")?.id).toBe("host-father");
+    expect(getCharacterAvatar("Doctor", "医者")?.id).toBe("doctor");
+    expect(getCharacterAvatar("Manager", "店長")?.id).toBe("restaurant-manager");
+    expect(getCharacterAvatar("Waitress", "店員")?.id).toBe("restaurant-waitress");
+    expect(getCharacterAvatar("Vendor", "みせのひと")?.id).toBe("store-attendant");
+    expect(getCharacterAvatar("Information agent", "案内所の人")?.id).toBe("tourist-information-agent");
+    expect(getCharacterAvatar("Station attendant", "駅員")?.id).toBe("train-station-attendant");
   });
 
-  it("returns null for unknown / side characters", () => {
-    expect(getCharacterAvatar("Doctor", "医者")).toBeNull();
+  it("returns null for unknown / unmapped characters", () => {
     expect(getCharacterAvatar("Everyone", "みんな")).toBeNull();
-    expect(getCharacterAvatar("Hotel front desk", "ホテルの人")).toBeNull();
-    expect(getCharacterAvatar("Manager", "店長")).toBeNull();
-    expect(getCharacterAvatar("Department manager", "部長")).toBeNull();
-    expect(getCharacterAvatar("Old woman", "おばあさん")).toBeNull();
-    expect(getCharacterAvatar("Vendor", "みせのひと")).toBeNull();
-    expect(getCharacterAvatar("Stranger", "しらないひと")).toBeNull();
+    expect(getCharacterAvatar("Narrator", "ナレーション")).toBeNull();
+    expect(getCharacterAvatar("Cat", "ねこ")).toBeNull();
     expect(getCharacterAvatar(null, null)).toBeNull();
     expect(getCharacterAvatar("", "")).toBeNull();
   });

@@ -120,6 +120,104 @@ export const GENKI_CHARACTER_AVATARS: Record<string, CharacterAvatar> = {
     neutral: "/images/characters/yasmin/neutral.webp",
     talking: "/images/characters/yasmin/talking.webp",
   },
+  "department-manager": {
+    id: "department-manager",
+    name: "Department Manager",
+    nameJa: "部長",
+    neutral: "/images/characters/department-manager/neutral.webp",
+    talking: "/images/characters/department-manager/talking.webp",
+  },
+  "doctor": {
+    id: "doctor",
+    name: "Doctor",
+    nameJa: "医者",
+    neutral: "/images/characters/doctor/neutral.webp",
+    talking: "/images/characters/doctor/talking.webp",
+  },
+  "hotel-front-desk-clerk": {
+    id: "hotel-front-desk-clerk",
+    name: "Hotel Front Desk Clerk",
+    nameJa: "ホテルの人",
+    neutral: "/images/characters/hotel-front-desk-clerk/neutral.webp",
+    talking: "/images/characters/hotel-front-desk-clerk/talking.webp",
+  },
+  "landlady": {
+    id: "landlady",
+    name: "Landlady",
+    nameJa: "大家",
+    neutral: "/images/characters/landlady/neutral.webp",
+    talking: "/images/characters/landlady/talking.webp",
+  },
+  "old-man": {
+    id: "old-man",
+    name: "Old Man",
+    nameJa: "おじいさん",
+    neutral: "/images/characters/old-man/neutral.webp",
+    talking: "/images/characters/old-man/talking.webp",
+  },
+  "old-woman": {
+    id: "old-woman",
+    name: "Old Woman",
+    nameJa: "おばあさん",
+    neutral: "/images/characters/old-woman/neutral.webp",
+    talking: "/images/characters/old-woman/talking.webp",
+  },
+  "passing-stranger": {
+    id: "passing-stranger",
+    name: "Passing Stranger",
+    nameJa: "知らない人",
+    neutral: "/images/characters/passing-stranger/neutral.webp",
+    talking: "/images/characters/passing-stranger/talking.webp",
+  },
+  "police-officer": {
+    id: "police-officer",
+    name: "Police Officer",
+    nameJa: "警察",
+    neutral: "/images/characters/police-officer/neutral.webp",
+    talking: "/images/characters/police-officer/talking.webp",
+  },
+  "restaurant-manager": {
+    id: "restaurant-manager",
+    name: "Restaurant Manager",
+    nameJa: "店長",
+    neutral: "/images/characters/restaurant-manager/neutral.webp",
+    talking: "/images/characters/restaurant-manager/talking.webp",
+  },
+  "restaurant-waitress": {
+    id: "restaurant-waitress",
+    name: "Restaurant Waitress",
+    nameJa: "店員",
+    neutral: "/images/characters/restaurant-waitress/neutral.webp",
+    talking: "/images/characters/restaurant-waitress/talking.webp",
+  },
+  "store-attendant": {
+    id: "store-attendant",
+    name: "Store Attendant",
+    nameJa: "店の人",
+    neutral: "/images/characters/store-attendant/neutral.webp",
+    talking: "/images/characters/store-attendant/talking.webp",
+  },
+  "tanaka": {
+    id: "tanaka",
+    name: "Tanaka",
+    nameJa: "田中",
+    neutral: "/images/characters/tanaka/neutral.webp",
+    talking: "/images/characters/tanaka/talking.webp",
+  },
+  "tourist-information-agent": {
+    id: "tourist-information-agent",
+    name: "Tourist Information Agent",
+    nameJa: "案内所の人",
+    neutral: "/images/characters/tourist-information-agent/neutral.webp",
+    talking: "/images/characters/tourist-information-agent/talking.webp",
+  },
+  "train-station-attendant": {
+    id: "train-station-attendant",
+    name: "Train Station Attendant",
+    nameJa: "駅員",
+    neutral: "/images/characters/train-station-attendant/neutral.webp",
+    talking: "/images/characters/train-station-attendant/talking.webp",
+  },
 };
 
 /**
@@ -289,6 +387,151 @@ export function getCharacterAvatar(
     normEn.includes("yasmin")
   ) {
     return GENKI_CHARACTER_AVATARS["yasmin"];
+  }
+
+  // 16. Department Manager (check before restaurant manager)
+  if (
+    normJa.includes("部長") ||
+    normJa.includes("ぶちょう") ||
+    normEn.includes("department manager") ||
+    (normEn.includes("manager") && normEn.includes("department")) ||
+    normEn === "boss"
+  ) {
+    return GENKI_CHARACTER_AVATARS["department-manager"];
+  }
+
+  // 17. Restaurant Manager
+  if (
+    normJa.includes("店長") ||
+    normJa.includes("てんちょう") ||
+    normEn.includes("restaurant manager") ||
+    (normEn.includes("manager") && !normEn.includes("department"))
+  ) {
+    return GENKI_CHARACTER_AVATARS["restaurant-manager"];
+  }
+
+  // 18. Doctor
+  if (
+    normJa.includes("医者") ||
+    normJa.includes("いしゃ") ||
+    normJa.includes("医師") ||
+    normEn.includes("doctor") ||
+    normEn.includes("physician")
+  ) {
+    return GENKI_CHARACTER_AVATARS["doctor"];
+  }
+
+  // 19. Hotel Front Desk Clerk
+  if (
+    normJa.includes("ホテル") ||
+    normEn.includes("hotel")
+  ) {
+    return GENKI_CHARACTER_AVATARS["hotel-front-desk-clerk"];
+  }
+
+  // 20. Landlady
+  if (
+    normJa.includes("大家") ||
+    normJa.includes("おおや") ||
+    normEn.includes("landlady") ||
+    normEn.includes("landlord")
+  ) {
+    return GENKI_CHARACTER_AVATARS["landlady"];
+  }
+
+  // 21. Old Man
+  if (
+    normJa.includes("おじいさん") ||
+    normJa.includes("おじいちゃん") ||
+    normEn.includes("old man") ||
+    normEn.includes("elderly man")
+  ) {
+    return GENKI_CHARACTER_AVATARS["old-man"];
+  }
+
+  // 22. Old Woman
+  if (
+    normJa.includes("おばあさん") ||
+    normJa.includes("おばあちゃん") ||
+    normEn.includes("old woman") ||
+    normEn.includes("elderly woman")
+  ) {
+    return GENKI_CHARACTER_AVATARS["old-woman"];
+  }
+
+  // 23. Passing Stranger
+  if (
+    normJa.includes("知らない人") ||
+    normJa.includes("しらないひと") ||
+    normEn.includes("stranger")
+  ) {
+    return GENKI_CHARACTER_AVATARS["passing-stranger"];
+  }
+
+  // 24. Police Officer
+  if (
+    normJa.includes("警察") ||
+    normJa.includes("けいさつ") ||
+    normJa.includes("お巡り") ||
+    normJa.includes("おまわり") ||
+    normEn.includes("police")
+  ) {
+    return GENKI_CHARACTER_AVATARS["police-officer"];
+  }
+
+  // 25. Restaurant Waitress (check waitress / restaurant attendant before general store attendant)
+  if (
+    normJa.includes("ウェイトレス") ||
+    normJa.includes("ウェイター") ||
+    normEn.includes("waitress") ||
+    normEn.includes("waiter") ||
+    (normEn.includes("restaurant") && (normEn.includes("attendant") || normEn.includes("staff")))
+  ) {
+    return GENKI_CHARACTER_AVATARS["restaurant-waitress"];
+  }
+
+  // 26. Store Attendant / Vendor / Shop Assistant
+  if (
+    normJa.includes("店の人") ||
+    normJa.includes("みせのひと") ||
+    normJa.includes("店員") ||
+    normEn.includes("store attendant") ||
+    normEn.includes("shop assistant") ||
+    normEn.includes("vendor") ||
+    normEn.includes("clerk") ||
+    normEn.includes("salesperson")
+  ) {
+    return GENKI_CHARACTER_AVATARS["store-attendant"];
+  }
+
+  // 27. Tanaka
+  if (
+    normJa.includes("田中") ||
+    normJa.includes("たなか") ||
+    normEn.includes("tanaka")
+  ) {
+    return GENKI_CHARACTER_AVATARS["tanaka"];
+  }
+
+  // 28. Tourist Information Agent
+  if (
+    normJa.includes("案内所") ||
+    normJa.includes("あんないじょ") ||
+    normEn.includes("information agent") ||
+    normEn.includes("tourist information") ||
+    normEn.includes("travel information")
+  ) {
+    return GENKI_CHARACTER_AVATARS["tourist-information-agent"];
+  }
+
+  // 29. Train Station Attendant
+  if (
+    normJa.includes("駅員") ||
+    normJa.includes("えきいん") ||
+    normEn.includes("station attendant") ||
+    normEn.includes("train station")
+  ) {
+    return GENKI_CHARACTER_AVATARS["train-station-attendant"];
   }
 
   return null;
