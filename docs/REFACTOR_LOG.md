@@ -92,6 +92,18 @@ Recorded on 2026-11-17 before any refactor changes.
 
 ## Moves, Deletions & Decisions
 
+### Phase 7: Final Verification
+- **Stale Path Audit**: `grep -rn` across `src/`, `scripts/`, `README.md`, `AGENTS.md`, `eslint.config.mjs`, `tsconfig.json`, and `vitest.config.ts` found **0 stale paths**.
+- **Production Smoke Check**: `npx next start -p 3099` returned `HTTP 200` on `/`, `/games/kana`, `/games/kanji/meaning`, `/books`, and `/books/genki-1/1`.
+
+#### Before vs. After Numbers
+| Metric | Phase 0 (Before) | Phase 7 (After) |
+| :--- | :--- | :--- |
+| TypeScript (`npm run typecheck`) | 0 errors | 0 errors |
+| ESLint (`npm run lint`) | 134 problems (30 errors, 104 warnings) | 134 problems (30 errors, 104 warnings), 0 layering violations |
+| Vitest (`npm test`) | 81/84 files, 537/542 tests passed | 83/85 files, 543/547 tests passed (+4 new data tests) |
+| Production Build (`npm run build`) | 163/163 pages, `.next/static/chunks` = 12M | 163/163 pages, `.next/static/chunks` = 12M |
+
 ### Phase 6: README
 - Rewrote `README.md` with project overview, feature list, live demo placeholder, tech stack table (synced to `package.json`), quick start & scripts table, refactored project structure tree, architecture/layering summary, data provenance/licenses, testing/deployment/contributing links, and roadmap.
 - Verified all relative file paths and documentation links exist.
