@@ -19,6 +19,7 @@ import {
 import { type BookDialogueScene } from "@/data/books";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
 import { playGameSfx } from "@/lib/game-core/sfx";
+import { CharacterAvatar } from "./CharacterAvatar";
 
 interface DialogueRoleplayPlayerProps {
   scene: BookDialogueScene;
@@ -420,13 +421,19 @@ export function DialogueRoleplayPlayer({
                     handleRestart();
                     setSelectedRole(sp.speakerJa);
                   }}
-                  className={`rounded-lg px-2.5 py-1 text-xs font-bold transition-colors font-japanese ${
+                  className={`inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1 text-xs font-bold transition-colors font-japanese ${
                     selectedRole === sp.speakerJa
                       ? "bg-[var(--sakura-light)] text-[var(--primary-fg)] ring-1 ring-[var(--primary)]/40"
                       : "bg-[var(--surface)] border border-[var(--line)] text-[var(--muted)] hover:text-[var(--ink)]"
                   }`}
                 >
-                  {sp.speakerJa}
+                  <CharacterAvatar
+                    speaker={sp.speaker}
+                    speakerJa={sp.speakerJa}
+                    size="xs"
+                    className="rounded-full size-4 text-[8px]"
+                  />
+                  <span>{sp.speakerJa}</span>
                 </button>
               ))}
             </div>
@@ -549,26 +556,36 @@ export function DialogueRoleplayPlayer({
                 : "border-[var(--line)] bg-[var(--surface-overlay)]/30"
             }`}
           >
-            <div className="flex flex-wrap items-center justify-between gap-2">
-              <div className="flex items-center gap-2">
-                <span
-                  className={`rounded-lg px-2.5 py-1 text-xs font-black font-japanese ${
-                    userTurnActive
-                      ? "bg-[var(--primary)] text-white"
-                      : "bg-[var(--line)] text-[var(--ink)]"
-                  }`}
-                >
-                  {currentLine.speakerJa} ({currentLine.speaker})
-                </span>
-                {userTurnActive ? (
-                  <span className="rounded-full bg-[var(--primary)]/15 px-2.5 py-0.5 text-[11px] font-bold text-[var(--primary-fg)]">
-                    {mode === "shadowing" ? "Shadow Along" : "Your Turn to Speak"}
-                  </span>
-                ) : (
-                  <span className="text-[11px] font-semibold text-[var(--muted)]">
-                    {isPlaying ? "Speaking partner line..." : "Partner line"}
-                  </span>
-                )}
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <CharacterAvatar
+                  speaker={currentLine.speaker}
+                  speakerJa={currentLine.speakerJa}
+                  isSpeaking={isPlaying}
+                  size="md"
+                />
+                <div className="flex flex-col">
+                  <div className="flex items-center gap-2">
+                    <span
+                      className={`rounded-lg px-2.5 py-0.5 text-xs font-black font-japanese ${
+                        userTurnActive
+                          ? "bg-[var(--primary)] text-white"
+                          : "bg-[var(--line)] text-[var(--ink)]"
+                      }`}
+                    >
+                      {currentLine.speakerJa} ({currentLine.speaker})
+                    </span>
+                    {userTurnActive ? (
+                      <span className="rounded-full bg-[var(--primary)]/15 px-2.5 py-0.5 text-[11px] font-bold text-[var(--primary-fg)]">
+                        {mode === "shadowing" ? "Shadow Along" : "Your Turn to Speak"}
+                      </span>
+                    ) : (
+                      <span className="text-[11px] font-semibold text-[var(--muted)]">
+                        {isPlaying ? "Speaking partner line..." : "Partner line"}
+                      </span>
+                    )}
+                  </div>
+                </div>
               </div>
 
               <button
@@ -710,9 +727,16 @@ export function DialogueRoleplayPlayer({
                       : "hover:bg-[var(--surface-overlay)]/40"
                   }`}
                 >
-                  <div className="flex items-center gap-3 min-w-0">
+                  <div className="flex items-center gap-2.5 min-w-0">
+                    <CharacterAvatar
+                      speaker={line.speaker}
+                      speakerJa={line.speakerJa}
+                      size="xs"
+                      isSpeaking={isCurrent && isPlaying}
+                      className="rounded-md size-5 text-[9px]"
+                    />
                     <span
-                      className={`shrink-0 w-16 truncate rounded-md px-2 py-0.5 text-[11px] font-bold font-japanese text-center ${
+                      className={`shrink-0 w-16 truncate rounded-md px-1.5 py-0.5 text-[11px] font-bold font-japanese text-center ${
                         isUser
                           ? "bg-[var(--primary)]/15 text-[var(--primary-fg)]"
                           : "bg-[var(--surface-overlay)] text-[var(--muted)]"

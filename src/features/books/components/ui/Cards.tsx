@@ -42,6 +42,9 @@ import { AudioButton } from "@/components/ui/AudioButton";
 import { KanjiReadingPill } from "@/components/ui/KanjiReadingPill";
 import { StoryReaderLine } from "@/features/books/components/StoryReaderLine";
 import { CharacterDiffView } from "@/features/books/components/CharacterDiffView";
+import { CharacterAvatar } from "@/features/books/components/CharacterAvatar";
+import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
+import { resolveSentenceAudio } from "@/engine/audio";
 import { type DictionaryDataMaps } from "@/data/dictionary";
 import { romajiToHiragana } from "@/features/shiritori/engine/shiritori";
 import {
@@ -2098,6 +2101,7 @@ export function DialogueCard({
 
   const [revealedEnglishLines, setRevealedEnglishLines] = useState<Record<number, boolean>>({});
   const [selectedRole, setSelectedRole] = useState<string>(uniqueSpeakers[0] || "");
+  const { isPlaying: isAudioPlaying, activeKey } = useJapaneseAudio();
 
   // Detect lesson vocabulary words that appear in this dialogue scene
   const matchingVocabItems = useMemo(() => {
@@ -2135,22 +2139,22 @@ export function DialogueCard({
             <div className="hidden sm:flex items-center gap-1.5 ml-1">
               {uniqueSpeakers.map((spk) => {
                 const theme = getSpeakerTheme(spk);
+                const matchingLine = scene.lines.find((l) => l.speakerJa === spk);
                 return (
                   <span
                     key={spk}
                     className={cn(
-                      "inline-flex items-center gap-1 rounded-lg border px-2 py-0.5 text-[11px] font-bold font-japanese",
+                      "inline-flex items-center gap-1.5 rounded-lg border px-2 py-0.5 text-[11px] font-bold font-japanese",
                       theme.tag
                     )}
                   >
-                    <span
-                      className={cn(
-                        "grid size-4 place-items-center rounded-full text-[9px] font-black",
-                        theme.gradient
-                      )}
-                    >
-                      {theme.initial}
-                    </span>
+                    <CharacterAvatar
+                      speaker={matchingLine?.speaker}
+                      speakerJa={spk}
+                      size="xs"
+                      fallbackTheme={theme}
+                      className="rounded-full size-4 text-[8px]"
+                    />
                     <span>{spk}</span>
                   </span>
                 );
@@ -2319,6 +2323,9 @@ export function DialogueCard({
           const speakerIndex = uniqueSpeakers.indexOf(line.speakerJa);
           const isRightAligned = speakerIndex % 2 === 1;
           const isCurrentlyPlaying = isPlayingScene && playingLineIndex === idx;
+          const isSingleLinePlaying =
+            isAudioPlaying && activeKey === resolveSentenceAudio(line.ja, line.audioSrc).key;
+          const isLineSpeaking = isCurrentlyPlaying || isSingleLinePlaying;
           const theme = getSpeakerTheme(line.speakerJa);
           const isUserRole = learningMode === "roleplay" && selectedRole === line.speakerJa;
           const isLineEnglishVisible =
@@ -2336,16 +2343,14 @@ export function DialogueCard({
             >
               {/* Speaker Avatar */}
               <div className="shrink-0 flex flex-col items-center gap-1">
-                <div
-                  className={cn(
-                    "grid size-11 place-items-center rounded-2xl font-japanese text-base font-black shadow-xs transition-transform",
-                    theme.gradient,
-                    isCurrentlyPlaying && "scale-110 ring-2 ring-[var(--tb-primary)]"
-                  )}
+                <CharacterAvatar
+                  speaker={line.speaker}
+                  speakerJa={line.speakerJa}
+                  isSpeaking={isLineSpeaking}
+                  size="md"
+                  fallbackTheme={theme}
                   title={`${line.speakerJa} (${line.speaker})`}
-                >
-                  {theme.initial}
-                </div>
+                />
                 <span className="text-[10px] font-bold text-[var(--tb-text-secondary)] max-w-[64px] truncate text-center font-japanese">
                   {line.speakerJa}
                 </span>
