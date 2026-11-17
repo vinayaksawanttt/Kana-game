@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useMemo, useState } from "react";
-import { BookOpen, Check, Layers, Plus, Sparkles, Volume2, X } from "lucide-react";
+import { Check, Plus, X } from "lucide-react";
 import { type BookKanjiItem, type BookVocabItem } from "@/data/books";
 import {
   type DictionaryDataMaps,

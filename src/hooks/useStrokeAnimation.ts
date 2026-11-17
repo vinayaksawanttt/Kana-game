@@ -9,7 +9,7 @@ import {
   useState,
 } from "react";
 
-export type PlaybackSpeed = 1 | 2;
+export type PlaybackSpeed = 0.5 | 1 | 2;
 
 export interface StrokeTiming {
   index: number;
@@ -30,6 +30,8 @@ export interface UseStrokeAnimationResult {
   play: () => void;
   pause: () => void;
   reset: () => void;
+  stepForward: () => void;
+  stepBackward: () => void;
   setSpeed: (multiplier: PlaybackSpeed) => void;
 }
 
@@ -267,6 +269,33 @@ export function useStrokeAnimation(
     [currentStrokeIndex, isPlaying]
   );
 
+  const stepForward = useCallback(() => {
+    if (strokeCount === 0) return;
+    clearTimers();
+    setIsPlaying(false);
+    const next = Math.min(strokeCount, (isComplete ? strokeCount : currentStrokeIndex) + 1);
+    if (next >= strokeCount) {
+      setIsComplete(true);
+      setCurrentStrokeIndex(strokeCount);
+      setResumeBaseIndex(0);
+    } else {
+      setIsComplete(false);
+      setCurrentStrokeIndex(next);
+      setResumeBaseIndex(next);
+    }
+  }, [clearTimers, currentStrokeIndex, isComplete, strokeCount]);
+
+  const stepBackward = useCallback(() => {
+    if (strokeCount === 0) return;
+    clearTimers();
+    setIsPlaying(false);
+    const base = isComplete ? strokeCount : currentStrokeIndex;
+    const prev = Math.max(0, base - 1);
+    setIsComplete(false);
+    setCurrentStrokeIndex(prev);
+    setResumeBaseIndex(prev);
+  }, [clearTimers, currentStrokeIndex, isComplete, strokeCount]);
+
   return {
     isPlaying,
     isComplete,
@@ -277,6 +306,8 @@ export function useStrokeAnimation(
     play,
     pause,
     reset,
+    stepForward,
+    stepBackward,
     setSpeed,
   };
 }

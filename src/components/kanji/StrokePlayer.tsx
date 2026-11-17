@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { X } from "lucide-react";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import type { KanjiLevel } from "@/data/kanji";
 import { getKanjiStrokeData, type KanjiStrokeData } from "@/data/strokes";
 import { type PlaybackSpeed, useStrokeAnimation } from "@/hooks/useStrokeAnimation";
@@ -81,6 +81,8 @@ export function StrokePlayer({
     play,
     pause,
     reset,
+    stepForward,
+    stepBackward,
     setSpeed,
   } = useStrokeAnimation(fallbackLengths, foregroundPathRefs);
 
@@ -117,7 +119,11 @@ export function StrokePlayer({
           <span className="rounded border border-[var(--line)] bg-[var(--bg)] px-2 py-0.5 text-[11px] font-semibold text-[var(--muted)] tabular-nums">
             {isPlaying
               ? `Stroke ${Math.min(currentStrokeIndex + 1, paths.length)} / ${paths.length}`
-              : `${paths.length} ${paths.length === 1 ? "stroke" : "strokes"}`}
+              : isComplete
+                ? `Complete (${paths.length} / ${paths.length})`
+                : currentStrokeIndex > 0
+                  ? `Stroke ${currentStrokeIndex} / ${paths.length}`
+                  : `${paths.length} ${paths.length === 1 ? "stroke" : "strokes"}`}
           </span>
         </div>
 
@@ -277,23 +283,85 @@ export function StrokePlayer({
         </svg>
       </div>
 
+      {/* Stroke Progress Track */}
+      {paths.length > 0 && (
+        <div
+          aria-hidden="true"
+          className="mt-2.5 h-1.5 w-full overflow-hidden rounded-full bg-[var(--line)]/50"
+        >
+          <div
+            className="h-full rounded-full bg-[var(--primary)] transition-all duration-200"
+            style={{
+              width: `${
+                isComplete
+                  ? 100
+                  : isPlaying
+                    ? (Math.min(currentStrokeIndex + 1, paths.length) / paths.length) * 100
+                    : (Math.min(currentStrokeIndex, paths.length) / paths.length) * 100
+              }%`,
+            }}
+          />
+        </div>
+      )}
+
       {/* Controls Toolbar */}
-      <div className="mt-3 flex items-center gap-2">
+      <div className="mt-3 flex flex-wrap items-center gap-1.5 sm:gap-2">
         <button
           type="button"
           onClick={isPlaying ? pause : play}
-          aria-label={isPlaying ? "Pause stroke animation" : "Play stroke animation"}
+          aria-label={
+            isPlaying
+              ? "Pause stroke animation"
+              : isComplete
+                ? "Replay stroke animation"
+                : currentStrokeIndex > 0
+                  ? "Resume stroke animation"
+                  : "Play stroke animation"
+          }
           aria-pressed={isPlaying}
-          className="inline-flex min-h-11 flex-1 items-center justify-center gap-1.5 rounded-md border border-[var(--primary)] bg-[var(--primary)] px-3 py-2 text-xs font-bold text-white shadow-sm transition-colors hover:bg-[var(--primary-hover)]"
+          className="inline-flex min-h-11 flex-1 min-w-[110px] items-center justify-center gap-1.5 rounded-md border border-[var(--primary)] bg-[var(--primary)] px-3 py-2 text-xs font-bold text-white shadow-sm transition-colors hover:bg-[var(--primary-hover)] cursor-pointer"
         >
-          {isPlaying ? "⏸ Pause" : "▶ Play"}
+          {isPlaying
+            ? "⏸ Pause"
+            : isComplete
+              ? "↻ Replay"
+              : currentStrokeIndex > 0
+                ? "▶ Resume"
+                : "▶ Play"}
         </button>
+
+        <div
+          className="inline-flex min-h-11 items-center gap-0.5 rounded-md border border-[var(--line)] bg-[var(--surface)] p-0.5 shadow-sm"
+          role="group"
+          aria-label="Step stroke by stroke"
+        >
+          <button
+            type="button"
+            onClick={stepBackward}
+            disabled={!isComplete && currentStrokeIndex === 0}
+            aria-label="Previous stroke"
+            title="Previous stroke"
+            className="inline-flex min-h-9 min-w-8 items-center justify-center rounded text-[var(--ink)] transition-colors hover:bg-[var(--sakura-light)] hover:text-[var(--primary)] disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
+          >
+            <ChevronLeft className="size-4" />
+          </button>
+          <button
+            type="button"
+            onClick={stepForward}
+            disabled={isComplete}
+            aria-label="Next stroke"
+            title="Next stroke"
+            className="inline-flex min-h-9 min-w-8 items-center justify-center rounded text-[var(--ink)] transition-colors hover:bg-[var(--sakura-light)] hover:text-[var(--primary)] disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
+          >
+            <ChevronRight className="size-4" />
+          </button>
+        </div>
 
         <button
           type="button"
           onClick={reset}
           aria-label="Reset stroke animation"
-          className="inline-flex min-h-11 items-center justify-center gap-1 rounded-md border border-[var(--line)] bg-[var(--surface)] px-3 py-2 text-xs font-bold text-[var(--ink)] shadow-sm transition-colors hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary)]"
+          className="inline-flex min-h-11 items-center justify-center gap-1 rounded-md border border-[var(--line)] bg-[var(--surface)] px-3 py-2 text-xs font-bold text-[var(--ink)] shadow-sm transition-colors hover:border-[var(--sakura)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary)] cursor-pointer"
         >
           ↺ Reset
         </button>
@@ -303,7 +371,7 @@ export function StrokePlayer({
           role="group"
           aria-label="Playback speed"
         >
-          {([1, 2] as const satisfies readonly PlaybackSpeed[]).map((speed) => {
+          {([0.5, 1, 2] as const satisfies readonly PlaybackSpeed[]).map((speed) => {
             const active = playbackSpeed === speed;
             return (
               <button
@@ -311,7 +379,7 @@ export function StrokePlayer({
                 type="button"
                 onClick={() => setSpeed(speed)}
                 aria-pressed={active}
-                className={`min-h-9 min-w-9 rounded px-2 text-xs font-bold transition-colors ${
+                className={`min-h-9 min-w-9 rounded px-2 text-xs font-bold transition-colors cursor-pointer ${
                   active
                     ? "bg-[var(--primary)] text-white shadow-xs"
                     : "bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--sakura-light)] hover:text-[var(--primary)]"

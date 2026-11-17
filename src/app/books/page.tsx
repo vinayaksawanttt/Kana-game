@@ -3,15 +3,19 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import {
+  AlertCircle,
+  AlertTriangle,
   ArrowRight,
   Book,
   BookOpen,
-  Check,
   CheckCircle2,
+  ChevronDown,
+  ChevronUp,
   Clock,
-  ExternalLink,
   Filter,
+  Flame,
   GraduationCap,
+  History,
   Layers,
   Play,
   RotateCcw,
@@ -19,9 +23,7 @@ import {
   Sparkles,
   TrendingUp,
   X,
-  Zap,
 } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
 import {
   type BookCatalogEntry,
   type BookDetail,
@@ -29,51 +31,131 @@ import {
   getBookById,
   getBooksCatalog,
 } from "@/data/books";
-import { SakuraLoader } from "@/components/ui/SakuraLoader";
 import { srsDb, type SrsItem } from "@/lib/srs/db";
+import {
+  buildSrsLookup,
+  clearLastStudiedLesson,
+  computeBookProgress,
+  computeDashboardOverview,
+  computeLessonProgress,
+  computeProgressThreeDimensions,
+  computeWeakAreas,
+  formatSectionLabel,
+  loadAllLessonWorkspaceStates,
+  loadLastStudiedLesson,
+  loadRecentStudiedLessons,
+  searchAllTextbookContent,
+  type LastStudiedLesson,
+  type LessonProgressMetrics,
+  type LessonState,
+  type LessonWorkspacePersistedState,
+  type TextbookContentType,
+  type WeakAreaItem,
+} from "@/lib/books/progress";
+import {
+  CircularProgress,
+  ContentCard,
+  ContentContainer,
+  EmptyState,
+  FilterDropdown,
+  LevelBadge,
+  LoadingSkeleton,
+  ProgressBar,
+  ResponsiveGrid,
+  SearchInput,
+  SectionHeader,
+  StatusBadge,
+  TextbookPageContainer,
+  cn,
+} from "@/components/books/ui";
 
-interface LastStudiedLesson {
-  bookId: string;
-  lessonNumber: number;
-  bookTitle: string;
-  lessonTitle: string;
-  japaneseTitle?: string;
-  coverImage?: string;
-  updatedAt: number;
-}
+type ContentTypeFilter = "all" | "vocab" | "grammar" | "kanji" | "dialogues" | "practice";
+type StateFilter = "all" | LessonState;
 
-interface GlobalSearchMatch {
+interface FilteredLessonMatch {
   bookId: string;
   bookTitle: string;
-  bookSeries: string;
   bookLevel: string;
   lesson: BookLesson;
+  progress: LessonProgressMetrics;
   matchSnippet?: string;
+}
+
+function getLessonCardChrome(state: LessonState): string {
+  switch (state) {
+    case "review-needed":
+      return "border-amber-500/55 bg-gradient-to-br from-[var(--tb-surface)] to-amber-500/[0.05] hover:border-amber-500";
+    case "completed":
+      return "border-emerald-500/45 bg-gradient-to-br from-[var(--tb-surface)] to-emerald-500/[0.04] hover:border-emerald-500";
+    case "in-progress":
+      return "border-[var(--tb-accent)]/75 bg-gradient-to-br from-[var(--tb-surface)] to-[var(--tb-accent-soft)]/30 hover:border-[var(--tb-primary)]";
+    default:
+      return "border-[var(--tb-border)] bg-[var(--tb-surface)] hover:border-[var(--tb-primary)]/50";
+  }
+}
+
+function renderLessonStateBadge(progress: LessonProgressMetrics) {
+  switch (progress.state) {
+    case "review-needed":
+      return (
+        <StatusBadge variant="due" icon={<AlertCircle className="size-3" />}>
+          Review Needed ({progress.dueCount} due)
+        </StatusBadge>
+      );
+    case "completed":
+      return (
+        <StatusBadge variant="mastered" icon={<CheckCircle2 className="size-3" />}>
+          Completed
+        </StatusBadge>
+      );
+    case "in-progress":
+      return (
+        <StatusBadge variant="in-progress" icon={<Clock className="size-3" />}>
+          In Progress
+        </StatusBadge>
+      );
+    default:
+      return <StatusBadge variant="new">Not Started</StatusBadge>;
+  }
 }
 
 export default function BooksShelfPage() {
   const [catalog, setCatalog] = useState<BookCatalogEntry[]>([]);
   const [activeBookId, setActiveBookId] = useState<string>("genki-1");
-  const [bookDetail, setBookDetail] = useState<BookDetail | null>(null);
   const [allBooksMap, setAllBooksMap] = useState<Record<string, BookDetail>>({});
-  const [loading, setLoading] = useState(true);
+  const [failedBookIds, setFailedBookIds] = useState<Record<string, boolean>>({});
+
+  // Dashboard filters & search
   const [searchQuery, setSearchQuery] = useState("");
   const [searchBookFilter, setSearchBookFilter] = useState<string>("all");
-  const [lastStudied, setLastStudied] = useState<LastStudiedLesson | null>(null);
-  const [srsItems, setSrsItems] = useState<SrsItem[]>([]);
+  const [levelFilter, setLevelFilter] = useState<string>("all");
+  const [contentTypeFilter, setContentTypeFilter] = useState<ContentTypeFilter>("all");
+  const [lessonFilter, setLessonFilter] = useState<string>("all");
+  const [stateFilter, setStateFilter] = useState<StateFilter>("all");
 
-  // 1. Load Catalog & Prefetch all books for global search on mount
+  // User persistence & FSRS state
+  const [lastStudied, setLastStudied] = useState<LastStudiedLesson | null>(null);
+  const [recentHistory, setRecentHistory] = useState<LastStudiedLesson[]>([]);
+  const [srsItems, setSrsItems] = useState<SrsItem[]>([]);
+  const [allWorkspaceStates, setAllWorkspaceStates] = useState<Record<string, LessonWorkspacePersistedState>>({});
+  const [activeWeakAreaFilter, setActiveWeakAreaFilter] = useState<"all" | "vocab" | "kanji" | "grammar" | "practice">("all");
+  const [showDetailedThreeDimensions, setShowDetailedThreeDimensions] = useState(false);
+  const [searchContentTab, setSearchContentTab] = useState<"lessons" | TextbookContentType>("lessons");
+
+  const bookDetail = allBooksMap[activeBookId] ?? null;
+  const loading = !bookDetail && !failedBookIds[activeBookId];
+
+  // 1. Load Catalog & Prefetch all books
   useEffect(() => {
     let mounted = true;
     getBooksCatalog()
       .then(async (data) => {
         if (!mounted) return;
         setCatalog(data);
-        if (data.length > 0 && !data.some((b) => b.id === activeBookId)) {
-          setActiveBookId(data[0].id);
-        }
+        setActiveBookId((prev) =>
+          data.length > 0 && !data.some((b) => b.id === prev) ? data[0].id : prev
+        );
 
-        // Prefetch details for all books in catalog to power instant global search
         try {
           const details = await Promise.all(data.map((b) => getBookById(b.id)));
           if (!mounted) return;
@@ -95,54 +177,49 @@ export default function BooksShelfPage() {
     };
   }, []);
 
-  // 2. Load Book Detail when activeBookId changes
+  // 2. Load selected book if not cached yet
   useEffect(() => {
     let mounted = true;
-    // Check if already in memory
-    if (allBooksMap[activeBookId]) {
-      setBookDetail(allBooksMap[activeBookId]);
-      setLoading(false);
+    if (allBooksMap[activeBookId] || failedBookIds[activeBookId]) {
       return;
     }
 
-    setLoading(true);
     getBookById(activeBookId)
       .then((data) => {
         if (!mounted) return;
-        setBookDetail(data);
         if (data) {
           setAllBooksMap((prev) => ({ ...prev, [data.id]: data }));
+        } else {
+          setFailedBookIds((prev) => ({ ...prev, [activeBookId]: true }));
         }
-        setLoading(false);
       })
       .catch((err) => {
         console.error(`Failed loading book ${activeBookId}:`, err);
-        if (mounted) setLoading(false);
+        if (mounted) {
+          setFailedBookIds((prev) => ({ ...prev, [activeBookId]: true }));
+        }
       });
 
     return () => {
       mounted = false;
     };
-  }, [activeBookId, allBooksMap]);
+  }, [activeBookId, allBooksMap, failedBookIds]);
 
-  // 3. Load Resume State from LocalStorage
+  // 3. Load Resume & Recently Studied history asynchronously
   useEffect(() => {
-    try {
-      if (typeof window !== "undefined") {
-        const raw = window.localStorage.getItem("kanagame_last_studied_book");
-        if (raw) {
-          const parsed = JSON.parse(raw);
-          if (parsed?.bookId && parsed?.lessonNumber) {
-            setLastStudied(parsed);
-          }
-        }
-      }
-    } catch {
-      // LocalStorage access errors ignored gracefully
-    }
+    let mounted = true;
+    Promise.resolve().then(() => {
+      if (!mounted) return;
+      setLastStudied(loadLastStudiedLesson());
+      setRecentHistory(loadRecentStudiedLessons());
+      setAllWorkspaceStates(loadAllLessonWorkspaceStates());
+    });
+    return () => {
+      mounted = false;
+    };
   }, []);
 
-  // 4. Load FSRS Spaced Repetition items for Live Mastery Progress calculation
+  // 4. Load FSRS Spaced Repetition items
   useEffect(() => {
     let mounted = true;
     async function loadSrs() {
@@ -152,7 +229,7 @@ export default function BooksShelfPage() {
           if (mounted) setSrsItems(items);
         }
       } catch {
-        // Dexie or IndexedDB uninitialized in SSR / mock environments
+        // Dexie/IndexedDB unavailable in mock environments
       }
     }
     loadSrs();
@@ -161,713 +238,1406 @@ export default function BooksShelfPage() {
     };
   }, []);
 
-  // Create fast indexed lookup for FSRS items
-  const srsLookup = useMemo(() => {
-    const map = new Map<string, SrsItem>();
-    for (const item of srsItems) {
-      map.set(item.id, item);
-      if (item.prompt) {
-        map.set(`${item.type}:${item.prompt.trim()}`, item);
-      }
+  // Derived FSRS lookup & analytics
+  const srsLookup = useMemo(() => buildSrsLookup(srsItems), [srsItems]);
+
+  const visitedKeys = useMemo(() => {
+    const keys = new Set<string>();
+    if (lastStudied) keys.add(`${lastStudied.bookId}:${lastStudied.lessonNumber}`);
+    for (const entry of recentHistory) {
+      keys.add(`${entry.bookId}:${entry.lessonNumber}`);
     }
-    return map;
-  }, [srsItems]);
+    return keys;
+  }, [lastStudied, recentHistory]);
 
-  // Compute lesson FSRS mastery progress
-  const getLessonSrsProgress = useMemo(() => {
-    return (lesson: BookLesson) => {
-      const totalCount =
-        (lesson.stats?.vocabularyCount ?? lesson.vocabulary.length) +
-        (lesson.stats?.kanjiCount ?? lesson.kanji.length) +
-        (lesson.stats?.grammarCount ?? lesson.grammar.length);
+  const overview = useMemo(
+    () =>
+      computeDashboardOverview(
+        allBooksMap,
+        srsItems,
+        srsLookup,
+        visitedKeys,
+        recentHistory
+      ),
+    [allBooksMap, srsItems, srsLookup, visitedKeys, recentHistory]
+  );
 
-      if (totalCount === 0 || srsItems.length === 0) {
-        return { inSrs: 0, mastered: 0, total: totalCount, percent: 0 };
-      }
+  // Resume card real lesson progress
+  const resumeLessonProgress = useMemo(() => {
+    if (!lastStudied) return null;
+    const book = allBooksMap[lastStudied.bookId];
+    const lesson = book?.lessons.find((l) => l.lessonNumber === lastStudied.lessonNumber);
+    if (!lesson) return null;
+    return computeLessonProgress(lesson, srsLookup, true);
+  }, [lastStudied, allBooksMap, srsLookup]);
 
-      let inSrs = 0;
-      let mastered = 0;
+  // Phase 9: Three Dimensions of Learning Progress
+  const threeDimensions = useMemo(
+    () => computeProgressThreeDimensions(overview, srsItems, allWorkspaceStates),
+    [overview, srsItems, allWorkspaceStates]
+  );
 
-      for (const v of lesson.vocabulary) {
-        const item = srsLookup.get(`vocab:${v.word.trim()}`);
-        if (item) {
-          inSrs++;
-          if (
-            item.card &&
-            (item.card.state === 2 ||
-              (item.card.reps && item.card.reps >= 2) ||
-              (item.card.stability && item.card.stability >= 1))
-          ) {
-            mastered++;
-          }
-        }
-      }
+  // Phase 9: Pedagogical Weak-Area Identification (threshold >= 2 attempts)
+  const weakAreas = useMemo(
+    () => computeWeakAreas(srsItems, allBooksMap, allWorkspaceStates),
+    [srsItems, allBooksMap, allWorkspaceStates]
+  );
 
-      for (const k of lesson.kanji) {
-        const codePoint = k.kanji.codePointAt(0)?.toString(16).toUpperCase() ?? k.kanji;
-        const item =
-          srsLookup.get(`kanji:${codePoint}`) || srsLookup.get(`kanji:${k.kanji.trim()}`);
-        if (item) {
-          inSrs++;
-          if (
-            item.card &&
-            (item.card.state === 2 ||
-              (item.card.reps && item.card.reps >= 2) ||
-              (item.card.stability && item.card.stability >= 1))
-          ) {
-            mastered++;
-          }
-        }
-      }
+  const filteredWeakAreaItems = useMemo<WeakAreaItem[]>(() => {
+    if (activeWeakAreaFilter === "all") {
+      return [
+        ...weakAreas.vocab,
+        ...weakAreas.kanji,
+        ...weakAreas.grammar,
+        ...weakAreas.practice,
+      ];
+    }
+    return weakAreas[activeWeakAreaFilter] || [];
+  }, [weakAreas, activeWeakAreaFilter]);
 
-      for (const g of lesson.grammar) {
-        const item =
-          srsLookup.get(`grammar:${g.linkedGrammarId || g.id}`) ||
-          srsLookup.get(`grammar:${g.id}`) ||
-          srsLookup.get(`grammar:${g.pattern.trim()}`);
-        if (item) {
-          inSrs++;
-          if (
-            item.card &&
-            (item.card.state === 2 ||
-              (item.card.reps && item.card.reps >= 2) ||
-              (item.card.stability && item.card.stability >= 1))
-          ) {
-            mastered++;
-          }
-        }
-      }
+  // Phase 9: Full Cross-Textbook Global Search
+  const globalSearchSummary = useMemo(
+    () =>
+      searchAllTextbookContent(
+        allBooksMap,
+        searchQuery,
+        searchBookFilter,
+        contentTypeFilter === "dialogues" ? "dialogue" : contentTypeFilter
+      ),
+    [allBooksMap, searchQuery, searchBookFilter, contentTypeFilter]
+  );
 
-      const percent = Math.min(100, Math.round((inSrs / totalCount) * 100));
-      return { inSrs, mastered, total: totalCount, percent };
-    };
-  }, [srsItems, srsLookup]);
+  const activeCatalogEntry = catalog.find((b) => b.id === activeBookId);
 
-  // 5. Global Search across all textbooks or single book filter
-  const isGlobalSearchActive = searchQuery.trim().length > 0;
+  // Determine whether cross-book Search / Faceted Discovery mode is active
+  const hasActiveSearchOrFacet =
+    searchQuery.trim().length > 0 ||
+    searchBookFilter !== "all" ||
+    levelFilter !== "all" ||
+    contentTypeFilter !== "all" ||
+    lessonFilter !== "all";
 
-  const globalSearchResults = useMemo<GlobalSearchMatch[]>(() => {
-    if (!isGlobalSearchActive) return [];
+  // Global & Faceted Search Results
+  const searchResults = useMemo<FilteredLessonMatch[]>(() => {
+    if (!hasActiveSearchOrFacet) return [];
     const q = searchQuery.trim().toLowerCase();
-    const results: GlobalSearchMatch[] = [];
+    const results: FilteredLessonMatch[] = [];
 
-    // Search across all books in map
     const booksToSearch =
       searchBookFilter === "all"
         ? Object.values(allBooksMap)
         : [allBooksMap[searchBookFilter]].filter(Boolean);
 
     for (const book of booksToSearch) {
+      if (levelFilter !== "all" && book.level !== levelFilter) {
+        continue;
+      }
+
       for (const lesson of book.lessons) {
-        const matchNum =
-          `lesson ${lesson.lessonNumber}`.includes(q) ||
-          `l${lesson.lessonNumber}` === q ||
-          `${lesson.lessonNumber}` === q;
-        const matchTitle = lesson.title.toLowerCase().includes(q);
-        const matchJa = (lesson.japaneseTitle || "").toLowerCase().includes(q);
-        const matchSubtitle = (lesson.subtitle || "").toLowerCase().includes(q);
+        if (lessonFilter !== "all" && String(lesson.lessonNumber) !== lessonFilter) {
+          continue;
+        }
+
+        // Content type availability filter
+        if (contentTypeFilter === "vocab" && lesson.vocabulary.length === 0) continue;
+        if (contentTypeFilter === "grammar" && lesson.grammar.length === 0) continue;
+        if (contentTypeFilter === "kanji" && lesson.kanji.length === 0) continue;
+        if (
+          contentTypeFilter === "dialogues" &&
+          (!lesson.dialogues || lesson.dialogues.length === 0)
+        ) {
+          continue;
+        }
+        if (
+          contentTypeFilter === "practice" &&
+          (!lesson.practice || lesson.practice.length === 0)
+        ) {
+          continue;
+        }
 
         let matchSnippet: string | undefined;
+        let queryMatches = q.length === 0;
 
-        // Check vocabulary
-        const matchedVocab = lesson.vocabulary.find(
-          (v) =>
-            v.word.toLowerCase().includes(q) ||
-            v.meaning.toLowerCase().includes(q) ||
-            v.reading.toLowerCase().includes(q)
-        );
-        if (matchedVocab) {
-          matchSnippet = `Vocab: ${matchedVocab.word} (${matchedVocab.reading}) — ${matchedVocab.meaning}`;
-        }
+        if (q.length > 0) {
+          const matchNum =
+            `lesson ${lesson.lessonNumber}`.includes(q) ||
+            `l${lesson.lessonNumber}` === q ||
+            `${lesson.lessonNumber}` === q;
+          const matchTitle = lesson.title.toLowerCase().includes(q);
+          const matchJa = (lesson.japaneseTitle || "").toLowerCase().includes(q);
+          const matchSubtitle = (lesson.subtitle || "").toLowerCase().includes(q);
 
-        // Check grammar
-        if (!matchSnippet) {
-          const matchedGrammar = lesson.grammar.find(
-            (g) =>
-              g.title.toLowerCase().includes(q) ||
-              g.pattern.toLowerCase().includes(q) ||
-              g.explanation.toLowerCase().includes(q)
-          );
-          if (matchedGrammar) {
-            matchSnippet = `Grammar: ${matchedGrammar.pattern} — ${matchedGrammar.title}`;
+          if (contentTypeFilter === "all" || contentTypeFilter === "vocab") {
+            const matchedVocab = lesson.vocabulary.find(
+              (v) =>
+                v.word.toLowerCase().includes(q) ||
+                v.meaning.toLowerCase().includes(q) ||
+                v.reading.toLowerCase().includes(q)
+            );
+            if (matchedVocab) {
+              matchSnippet = `Vocab: ${matchedVocab.word} (${matchedVocab.reading}) — ${matchedVocab.meaning}`;
+            }
           }
-        }
 
-        // Check kanji
-        if (!matchSnippet) {
-          const matchedKanji = lesson.kanji.find(
-            (k) =>
-              k.kanji.includes(q) ||
-              k.meaning.toLowerCase().includes(q) ||
-              k.onyomi.some((o) => o.toLowerCase().includes(q)) ||
-              k.kunyomi.some((ku) => ku.toLowerCase().includes(q))
-          );
-          if (matchedKanji) {
-            matchSnippet = `Kanji: ${matchedKanji.kanji} — ${matchedKanji.meaning}`;
+          if (!matchSnippet && (contentTypeFilter === "all" || contentTypeFilter === "grammar")) {
+            const matchedGrammar = lesson.grammar.find(
+              (g) =>
+                g.title.toLowerCase().includes(q) ||
+                g.pattern.toLowerCase().includes(q) ||
+                g.explanation.toLowerCase().includes(q)
+            );
+            if (matchedGrammar) {
+              matchSnippet = `Grammar: ${matchedGrammar.pattern} — ${matchedGrammar.title}`;
+            }
           }
+
+          if (!matchSnippet && (contentTypeFilter === "all" || contentTypeFilter === "kanji")) {
+            const matchedKanji = lesson.kanji.find(
+              (k) =>
+                k.kanji.includes(q) ||
+                k.meaning.toLowerCase().includes(q) ||
+                k.onyomi.some((o) => o.toLowerCase().includes(q)) ||
+                k.kunyomi.some((ku) => ku.toLowerCase().includes(q))
+            );
+            if (matchedKanji) {
+              matchSnippet = `Kanji: ${matchedKanji.kanji} — ${matchedKanji.meaning}`;
+            }
+          }
+
+          if (!matchSnippet && contentTypeFilter === "dialogues" && lesson.dialogues) {
+            const matchedLine = lesson.dialogues
+              .flatMap((d) => d.lines)
+              .find(
+                (l) => l.ja.toLowerCase().includes(q) || l.en.toLowerCase().includes(q)
+              );
+            if (matchedLine) {
+              matchSnippet = `Dialogue: ${matchedLine.ja}`;
+            }
+          }
+
+          queryMatches = Boolean(matchNum || matchTitle || matchJa || matchSubtitle || matchSnippet);
         }
 
-        if (matchNum || matchTitle || matchJa || matchSubtitle || matchSnippet) {
-          results.push({
-            bookId: book.id,
-            bookTitle: book.title.split(":")[0],
-            bookSeries: book.series,
-            bookLevel: book.level,
+        if (queryMatches) {
+          const progress = computeLessonProgress(
             lesson,
-            matchSnippet,
-          });
+            srsLookup,
+            visitedKeys.has(`${book.id}:${lesson.lessonNumber}`)
+          );
+          if (stateFilter === "all" || progress.state === stateFilter) {
+            results.push({
+              bookId: book.id,
+              bookTitle: book.title.split(":")[0],
+              bookLevel: book.level,
+              lesson,
+              progress,
+              matchSnippet,
+            });
+          }
         }
       }
     }
 
     return results;
-  }, [allBooksMap, isGlobalSearchActive, searchQuery, searchBookFilter]);
+  }, [
+    allBooksMap,
+    contentTypeFilter,
+    hasActiveSearchOrFacet,
+    lessonFilter,
+    levelFilter,
+    searchBookFilter,
+    searchQuery,
+    srsLookup,
+    stateFilter,
+    visitedKeys,
+  ]);
 
-  const activeCatalogEntry = catalog.find((b) => b.id === activeBookId);
+  // Selected Book Lessons with computed states
+  const activeBookLessonsWithState = useMemo(() => {
+    if (!bookDetail) return [];
+    return bookDetail.lessons.map((lesson) => ({
+      lesson,
+      progress: computeLessonProgress(
+        lesson,
+        srsLookup,
+        visitedKeys.has(`${bookDetail.id}:${lesson.lessonNumber}`)
+      ),
+    }));
+  }, [bookDetail, srsLookup, visitedKeys]);
 
-  const clearLastStudied = () => {
-    try {
-      window.localStorage.removeItem("kanagame_last_studied_book");
-    } catch {
-      // ignore
+  const filteredActiveLessons = useMemo(() => {
+    if (stateFilter === "all") return activeBookLessonsWithState;
+    return activeBookLessonsWithState.filter((item) => item.progress.state === stateFilter);
+  }, [activeBookLessonsWithState, stateFilter]);
+
+  const lessonDropdownOptions = useMemo(() => {
+    const base = [{ key: "all", label: "All Lessons" }];
+    const sourceBook =
+      searchBookFilter !== "all" ? allBooksMap[searchBookFilter] : bookDetail;
+    const nums = new Set<number>();
+    if (sourceBook) {
+      sourceBook.lessons.forEach((l) => nums.add(l.lessonNumber));
+    } else {
+      Object.values(allBooksMap).forEach((b) =>
+        b.lessons.forEach((l) => nums.add(l.lessonNumber))
+      );
     }
+    Array.from(nums)
+      .sort((a, b) => a - b)
+      .forEach((n) => base.push({ key: String(n), label: `Lesson ${n}` }));
+    return base;
+  }, [allBooksMap, bookDetail, searchBookFilter]);
+
+  const resetAllFilters = () => {
+    setSearchQuery("");
+    setSearchBookFilter("all");
+    setLevelFilter("all");
+    setContentTypeFilter("all");
+    setLessonFilter("all");
+    setStateFilter("all");
+    setSearchContentTab("lessons");
+  };
+
+  const handleDismissResume = () => {
+    clearLastStudiedLesson();
     setLastStudied(null);
   };
 
   return (
-    <GameLayout
-      label="TEXTBOOK COMPANION"
-      glyph="本"
-      className="bg-[var(--bg)]"
-      homeHref="/"
-    >
-      <div className="mx-auto w-full max-w-6xl px-4 py-6 sm:px-8 sm:py-8 space-y-8">
-        {/* Hero Section */}
-        <header className="relative overflow-hidden rounded-3xl border border-[var(--sakura)]/50 bg-gradient-to-br from-[var(--surface)] via-[var(--surface)] to-[var(--sakura-light)]/40 p-6 shadow-sm sm:p-10">
-          <div className="relative z-10 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-            <div className="max-w-2xl space-y-3">
-              <div className="inline-flex items-center gap-2 rounded-full border border-[var(--sakura)] bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold text-[var(--primary-fg)]">
-                <Sparkles className="size-3.5" />
-                <span>Textbook Structured Curriculum</span>
-                <span className="opacity-60">· 教科書マスター</span>
-              </div>
-              <h1 className="text-2xl font-black tracking-tight sm:text-4xl text-[var(--ink)]">
-                Japanese Textbook Library
-              </h1>
-              <p className="text-sm text-[var(--muted)] sm:text-base leading-relaxed">
-                Master Japanese lesson-by-lesson through the world-standard Genki and Minna no
-                Nihongo curriculums. Featuring authentic dialogues, stroke-order kanji,
-                contextual grammar cloze tests, interactive workbook drills, and live FSRS spaced
-                repetition tracking.
-              </p>
-            </div>
-
-            {/* Quick Stats Pill */}
-            {activeCatalogEntry && (
-              <div className="flex shrink-0 flex-row gap-3 sm:flex-col sm:items-end">
-                <div className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-4 text-center shadow-xs sm:min-w-[180px]">
-                  <div className="text-xs font-bold text-[var(--muted)] uppercase tracking-wider">
-                    {activeCatalogEntry.level} Core
-                  </div>
-                  <div className="text-2xl font-black text-[var(--primary-fg)] mt-0.5">
-                    {activeCatalogEntry.totalLessons} Lessons
-                  </div>
-                  <div className="mt-1.5 flex items-center justify-center gap-2 text-[11px] font-semibold text-[var(--muted)]">
-                    <span>{activeCatalogEntry.stats.vocabularyCount} Vocab</span>
-                    <span>·</span>
-                    <span>{activeCatalogEntry.stats.grammarCount} Grammar</span>
-                  </div>
-                </div>
-              </div>
+    <TextbookPageContainer label="TEXTBOOK COMPANION" glyph="本" homeHref="/">
+      {/* A. COMPACT WELCOME SECTION */}
+      <ContentContainer
+        as="section"
+        aria-label="Dashboard welcome"
+        padding="md"
+        className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between rounded-3xl"
+      >
+        <div className="min-w-0 space-y-1.5">
+          <div className="flex flex-wrap items-center gap-2">
+            <StatusBadge variant="in-progress" icon={<Sparkles className="size-3" />}>
+              Personal Learning Dashboard · 教科書ワークスペース
+            </StatusBadge>
+            {overview.streakDays > 0 && (
+              <StatusBadge variant="warning" icon={<Flame className="size-3" />}>
+                {overview.streakDays} day streak
+              </StatusBadge>
             )}
           </div>
-        </header>
+          <h1 className="text-xl font-black tracking-tight text-[var(--tb-text-primary)] sm:text-2xl">
+            Japanese Textbook Library
+          </h1>
+          <p className="text-xs sm:text-sm text-[var(--tb-text-secondary)] max-w-2xl">
+            Track real FSRS spaced repetition mastery across Genki I, Genki II, and Minna no Nihongo I,
+            resume your current lesson, or clear due reviews.
+          </p>
+        </div>
 
-        {/* Continue Where You Left Off Card */}
+        <div className="flex shrink-0 items-center gap-4">
+          {activeCatalogEntry && (
+            <div className="rounded-2xl border border-[var(--tb-border)] bg-[var(--tb-bg)]/70 px-3.5 py-2 text-right">
+              <div className="text-[10px] font-bold uppercase tracking-wider text-[var(--tb-text-secondary)]">
+                {activeCatalogEntry.level} Selected
+              </div>
+              <div className="text-sm font-black text-[var(--primary-fg)]">
+                {activeCatalogEntry.totalLessons} Lessons
+              </div>
+            </div>
+          )}
+          <CircularProgress
+            value={overview.overallPercent}
+            size={54}
+            strokeWidth={5}
+            label="Curriculum"
+            sublabel={`${overview.lessonsCompleted}/${overview.totalLessons || 0} done`}
+          />
+        </div>
+      </ContentContainer>
+
+      {/* B. CONTINUE STUDYING & D. DUE FOR REVIEW (PRIMARY ACTION ROW) */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-stretch">
         {lastStudied && (
           <section
             aria-label="Continue where you left off"
-            className="relative overflow-hidden rounded-2xl border-2 border-[var(--primary)]/30 bg-gradient-to-r from-[var(--surface)] via-[var(--surface)] to-[var(--sakura-light)]/60 p-4 sm:p-5 shadow-xs transition-all hover:border-[var(--primary)]/60"
+            className="lg:col-span-7 flex"
           >
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-              <div className="flex items-center gap-4">
-                {/* Book Thumbnail or Icon */}
-                <div className="relative size-14 shrink-0 overflow-hidden rounded-xl border border-[var(--line)] bg-[var(--surface)] shadow-xs">
-                  {lastStudied.coverImage ? (
-                    <img
-                      src={lastStudied.coverImage}
-                      alt={lastStudied.bookTitle}
-                      className="size-full object-cover"
-                    />
-                  ) : (
-                    <div className="flex size-full items-center justify-center bg-[var(--sakura-light)] text-[var(--primary)]">
-                      <BookOpen className="size-6" />
-                    </div>
-                  )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
-                </div>
-
-                <div className="space-y-0.5">
-                  <div className="flex items-center gap-2">
-                    <span className="inline-flex items-center gap-1 rounded-full bg-[var(--primary)] px-2 py-0.5 text-[10px] font-black uppercase tracking-wider text-white">
-                      <Play className="size-2.5 fill-current" />
-                      Continue Studying
-                    </span>
-                    <span className="text-xs font-bold text-[var(--muted)]">
-                      {lastStudied.bookTitle} · Lesson {lastStudied.lessonNumber}
-                    </span>
+            <ContentCard
+              selected
+              padding="md"
+              className="flex flex-1 flex-col justify-between bg-gradient-to-br from-[var(--tb-surface)] via-[var(--tb-surface)] to-[var(--tb-accent-soft)]/50"
+            >
+              <div className="flex items-start justify-between gap-3">
+                <div className="flex items-start gap-3.5 min-w-0">
+                  <div className="relative w-14 shrink-0 aspect-[3/4] overflow-hidden rounded-xl border border-[var(--tb-border)] bg-[var(--tb-bg)] shadow-xs">
+                    {lastStudied.coverImage ? (
+                      <img
+                        src={lastStudied.coverImage}
+                        alt={lastStudied.bookTitle}
+                        className="size-full object-cover"
+                      />
+                    ) : (
+                      <div className="flex size-full items-center justify-center bg-[var(--tb-accent-soft)] text-[var(--primary-fg)]">
+                        <BookOpen className="size-5" />
+                      </div>
+                    )}
                   </div>
-                  <h3 className="text-base font-extrabold text-[var(--ink)]">
-                    {lastStudied.lessonTitle}
-                  </h3>
-                  {lastStudied.japaneseTitle && (
-                    <p className="font-japanese text-xs font-semibold text-[var(--muted)]">
-                      {lastStudied.japaneseTitle}
-                    </p>
-                  )}
-                </div>
-              </div>
 
-              <div className="flex items-center gap-2.5 self-end sm:self-center">
-                <Link
-                  href={`/books/${lastStudied.bookId}/${lastStudied.lessonNumber}`}
-                  className="inline-flex items-center gap-2 rounded-xl bg-[var(--primary)] px-4 py-2 text-xs font-black text-white shadow-xs transition-all hover:bg-[var(--primary-hover)] hover:scale-102"
-                >
-                  <span>Resume Lesson</span>
-                  <ArrowRight className="size-3.5" />
-                </Link>
+                  <div className="min-w-0 space-y-1">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="inline-flex items-center gap-1 rounded-full bg-[var(--tb-primary)] px-2 py-0.5 text-[10px] font-black uppercase tracking-wider text-white">
+                        <Play className="size-2.5 fill-current" />
+                        Continue Studying
+                      </span>
+                      <span className="text-xs font-bold text-[var(--tb-text-secondary)]">
+                        {lastStudied.bookTitle} · Lesson {lastStudied.lessonNumber}
+                      </span>
+                    </div>
+                    <h2 className="text-base sm:text-lg font-extrabold text-[var(--tb-text-primary)] truncate">
+                      {lastStudied.lessonTitle}
+                    </h2>
+                    <div className="flex flex-wrap items-center gap-2 text-xs text-[var(--tb-text-secondary)]">
+                      {lastStudied.japaneseTitle && (
+                        <span className="font-japanese font-semibold truncate">
+                          {lastStudied.japaneseTitle}
+                        </span>
+                      )}
+                      <StatusBadge variant="neutral">
+                        Section: {formatSectionLabel(lastStudied.lastTab)}
+                      </StatusBadge>
+                    </div>
+                  </div>
+                </div>
+
                 <button
-                  onClick={clearLastStudied}
-                  className="rounded-xl border border-[var(--line)] bg-[var(--surface)] p-2 text-[var(--muted)] hover:text-[var(--ink)] hover:bg-[var(--sakura-light)]/40 transition-colors cursor-pointer"
+                  type="button"
+                  onClick={handleDismissResume}
+                  className="tb-focus-ring shrink-0 rounded-xl border border-[var(--tb-border)] bg-[var(--tb-surface)] p-1.5 text-[var(--tb-text-secondary)] hover:text-[var(--tb-text-primary)] hover:bg-[var(--tb-accent-soft)]/40 transition-colors cursor-pointer"
                   title="Dismiss resume card"
                   aria-label="Dismiss resume card"
                 >
                   <X className="size-4" />
                 </button>
               </div>
-            </div>
+
+              <div className="mt-4 pt-3.5 border-t border-[var(--tb-border)] flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div className="flex-1 min-w-[160px]">
+                  {resumeLessonProgress ? (
+                    <ProgressBar
+                      value={resumeLessonProgress.percent}
+                      masteryValue={resumeLessonProgress.masteryPercent}
+                      label="Lesson Progress"
+                      statusText={`${resumeLessonProgress.inSrs}/${resumeLessonProgress.total} items in FSRS (${resumeLessonProgress.percent}%)`}
+                    />
+                  ) : (
+                    <p className="text-xs font-medium text-[var(--tb-text-secondary)]">
+                      Pick up right where you left off in Lesson {lastStudied.lessonNumber}.
+                    </p>
+                  )}
+                </div>
+
+                <Link
+                  href={`/books/${lastStudied.bookId}/${lastStudied.lessonNumber}${
+                    lastStudied.lastTab ? `?tab=${lastStudied.lastTab}` : ""
+                  }`}
+                  className="tb-focus-ring shrink-0 inline-flex items-center justify-center gap-2 rounded-xl bg-[var(--tb-primary)] px-4 py-2 text-xs font-black text-white shadow-xs hover:bg-[var(--tb-primary-hover)] transition-colors"
+                >
+                  <span>Resume Lesson</span>
+                  <ArrowRight className="size-3.5" />
+                </Link>
+              </div>
+            </ContentCard>
           </section>
         )}
 
-        {/* Visual Textbook Bookshelf Cards */}
-        <section aria-label="Book selection" className="space-y-4">
-          <div className="flex items-center justify-between">
-            <h2 className="text-sm font-black uppercase tracking-wider text-[var(--muted)] flex items-center gap-2">
-              <Layers className="size-4 text-[var(--primary)]" />
-              <span>Select Textbook Curriculum</span>
-            </h2>
-            <span className="text-xs font-semibold text-[var(--muted)]">
-              {catalog.length} textbooks available
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {catalog.map((book) => {
-              const isActive = book.id === activeBookId;
-              const shortName = book.title.split(":")[0];
-              const coverSrc = book.coverImage || `/images/books/${book.id}.webp`;
-
-              return (
-                <button
-                  key={book.id}
-                  onClick={() => {
-                    setActiveBookId(book.id);
-                    if (isGlobalSearchActive) {
-                      setSearchBookFilter(book.id);
-                    }
-                  }}
-                  role="button"
-                  aria-label={shortName}
-                  aria-pressed={isActive}
-                  className={`group relative flex items-start gap-4 rounded-2xl border p-4 text-left transition-all duration-200 cursor-pointer ${
-                    isActive
-                      ? "border-[var(--primary)] bg-gradient-to-br from-[var(--surface)] via-[var(--surface)] to-[var(--sakura-light)]/40 shadow-md ring-2 ring-[var(--primary)]/40"
-                      : "border-[var(--line)] bg-[var(--surface)] hover:border-[var(--sakura)] hover:shadow-xs hover:bg-[var(--paper-tint)]"
-                  }`}
-                >
-                  {/* Book Spine / Cover Preview */}
-                  <div className="relative w-20 shrink-0 aspect-[3/4] overflow-hidden rounded-xl border border-[var(--line)] shadow-sm bg-[var(--bg)] transition-transform duration-200 group-hover:scale-102">
-                    <img
-                      src={coverSrc}
-                      alt={book.title}
-                      className="size-full object-cover"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/15 via-transparent to-black/10 pointer-events-none" />
-                    {/* Spine highlight line */}
-                    <div className="absolute left-1 top-0 bottom-0 w-0.5 bg-white/40 pointer-events-none" />
+        {/* D. DUE FOR REVIEW PANEL - Unified Review Center */}
+        <section
+          aria-label="Due for review"
+          className={cn(
+            "flex",
+            lastStudied ? "lg:col-span-5" : "lg:col-span-12"
+          )}
+        >
+          <ContentCard
+            padding="md"
+            className="flex flex-1 flex-col justify-between"
+          >
+            <div>
+              <div className="flex items-start justify-between gap-3">
+                <div className="space-y-0.5">
+                  <div className="flex items-center gap-2">
+                    <RotateCcw className="size-4 text-[var(--primary-fg)]" />
+                    <h2 className="text-sm font-black uppercase tracking-wider text-[var(--tb-text-primary)]">
+                      Due for Review
+                    </h2>
                   </div>
+                  <p className="text-xs text-[var(--tb-text-secondary)]">
+                    Unified FSRS spaced repetition queue
+                  </p>
+                </div>
 
-                  {/* Book Metadata */}
-                  <div className="flex-1 min-w-0 space-y-1.5">
-                    <div className="flex items-center justify-between gap-1">
-                      <span className="inline-block font-mono text-[10px] font-black uppercase tracking-wider text-[var(--muted)]">
-                        {book.series}
-                      </span>
-                      <span
-                        className={`rounded-md px-1.5 py-0.5 text-[10px] font-black uppercase ${
-                          book.level === "N5"
-                            ? "bg-emerald-500/15 text-emerald-600 dark:text-emerald-400"
-                            : "bg-indigo-500/15 text-indigo-600 dark:text-indigo-400"
-                        }`}
-                      >
-                        {book.level}
-                      </span>
+                <StatusBadge variant={overview.due.total > 0 ? "due" : "mastered"}>
+                  {overview.due.total} {overview.due.total === 1 ? "card due" : "cards due"}
+                </StatusBadge>
+              </div>
+
+              {/* 3 Dedicated Category Review Queues */}
+              <div className="mt-4 grid grid-cols-3 gap-2">
+                <div className="rounded-xl border border-[var(--tb-border)] bg-[var(--tb-bg)]/70 p-2 sm:p-2.5 flex flex-col justify-between text-center space-y-2 min-w-0">
+                  <div>
+                    <div className="text-lg font-black text-[var(--tb-text-primary)]">
+                      {overview.due.vocab}
                     </div>
-
-                    <h3 className="text-base font-extrabold text-[var(--ink)] leading-snug truncate group-hover:text-[var(--primary-fg)] transition-colors">
-                      {shortName}
-                    </h3>
-
-                    <p className="font-japanese text-xs font-semibold text-[var(--muted)] truncate">
-                      {book.japaneseTitle}
-                    </p>
-
-                    <div className="pt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] font-medium text-[var(--muted)]">
-                      <span className="font-bold text-[var(--ink)]">{book.totalLessons} Units</span>
-                      <span>·</span>
-                      <span>{book.stats.vocabularyCount} Vocab</span>
-                      <span>·</span>
-                      <span>{book.stats.grammarCount} Grammar</span>
-                    </div>
-
-                    {/* Active Indicator Status */}
-                    <div className="pt-2">
-                      {isActive ? (
-                        <span className="inline-flex items-center gap-1.5 text-xs font-black text-[var(--primary-fg)]">
-                          <CheckCircle2 className="size-3.5 fill-[var(--primary)] text-white" />
-                          <span>Currently Selected</span>
-                        </span>
-                      ) : (
-                        <span className="inline-flex items-center gap-1 text-xs font-semibold text-[var(--muted)] group-hover:text-[var(--ink)] transition-colors">
-                          <span>View lessons</span>
-                          <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
-                        </span>
-                      )}
+                    <div className="text-[10px] font-bold uppercase tracking-wide text-[var(--tb-text-secondary)] truncate">
+                      Vocab Due
                     </div>
                   </div>
-                </button>
-              );
-            })}
-          </div>
-        </section>
+                  <Link
+                    href="/review?type=vocab"
+                    className="tb-focus-ring inline-flex items-center justify-center rounded-lg border border-[var(--tb-border)] bg-[var(--tb-surface)] px-1 sm:px-1.5 py-1 text-[10px] font-bold text-[var(--tb-text-primary)] hover:border-[var(--tb-primary)] hover:text-[var(--primary-fg)] transition-colors truncate"
+                  >
+                    Review Vocab
+                  </Link>
+                </div>
 
-        {/* Global Search Bar & Filters */}
-        <section aria-label="Textbook curriculum search" className="space-y-3">
-          <div className="flex flex-col sm:flex-row gap-3">
-            {/* Search Input Box */}
-            <div className="relative flex-1">
-              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 size-4 text-[var(--muted)]" />
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search across all textbooks or filter by lesson title, topic, vocab, or grammar..."
-                className="w-full rounded-2xl border border-[var(--line)] bg-[var(--surface)] py-3 pl-10 pr-10 text-sm text-[var(--ink)] placeholder-[var(--muted)] shadow-xs transition-colors focus:border-[var(--primary)] focus:outline-hidden"
-              />
-              {searchQuery && (
-                <button
-                  onClick={() => setSearchQuery("")}
-                  className="absolute right-3.5 top-1/2 -translate-y-1/2 text-[var(--muted)] hover:text-[var(--ink)] transition-colors cursor-pointer"
-                  aria-label="Clear search"
-                >
-                  <X className="size-4" />
-                </button>
-              )}
+                <div className="rounded-xl border border-[var(--tb-border)] bg-[var(--tb-bg)]/70 p-2 sm:p-2.5 flex flex-col justify-between text-center space-y-2 min-w-0">
+                  <div>
+                    <div className="text-lg font-black text-[var(--tb-text-primary)]">
+                      {overview.due.kanji}
+                    </div>
+                    <div className="text-[10px] font-bold uppercase tracking-wide text-[var(--tb-text-secondary)] truncate">
+                      Kanji Due
+                    </div>
+                  </div>
+                  <Link
+                    href="/review?type=kanji"
+                    className="tb-focus-ring inline-flex items-center justify-center rounded-lg border border-[var(--tb-border)] bg-[var(--tb-surface)] px-1 sm:px-1.5 py-1 text-[10px] font-bold text-[var(--tb-text-primary)] hover:border-[var(--tb-primary)] hover:text-[var(--primary-fg)] transition-colors truncate"
+                  >
+                    Review Kanji
+                  </Link>
+                </div>
+
+                <div className="rounded-xl border border-[var(--tb-border)] bg-[var(--tb-bg)]/70 p-2 sm:p-2.5 flex flex-col justify-between text-center space-y-2 min-w-0">
+                  <div>
+                    <div className="text-lg font-black text-[var(--tb-text-primary)]">
+                      {overview.due.grammar}
+                    </div>
+                    <div className="text-[10px] font-bold uppercase tracking-wide text-[var(--tb-text-secondary)] truncate">
+                      Grammar Due
+                    </div>
+                  </div>
+                  <Link
+                    href="/review?type=grammar"
+                    className="tb-focus-ring inline-flex items-center justify-center rounded-lg border border-[var(--tb-border)] bg-[var(--tb-surface)] px-1 sm:px-1.5 py-1 text-[10px] font-bold text-[var(--tb-text-primary)] hover:border-[var(--tb-primary)] hover:text-[var(--primary-fg)] transition-colors truncate"
+                  >
+                    Review Grammar
+                  </Link>
+                </div>
+              </div>
             </div>
 
-            {/* In Global Search Mode: Filter by Textbook Pill */}
-            {isGlobalSearchActive && (
-              <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0">
-                <button
-                  onClick={() => setSearchBookFilter("all")}
-                  className={`rounded-xl px-3 py-2 text-xs font-black transition-all cursor-pointer ${
-                    searchBookFilter === "all"
-                      ? "bg-[var(--primary)] text-white shadow-xs"
-                      : "border border-[var(--line)] bg-[var(--surface)] text-[var(--muted)] hover:text-[var(--ink)]"
-                  }`}
-                >
-                  All Books ({globalSearchResults.length})
-                </button>
-                {catalog.map((b) => {
-                  const matchCount = globalSearchResults.filter((r) => r.bookId === b.id).length;
-                  const isFiltered = searchBookFilter === b.id;
+            <div className="mt-4 pt-3 border-t border-[var(--tb-border)] flex items-center justify-between gap-3">
+              <span className="text-xs font-semibold text-[var(--tb-text-secondary)]">
+                Total queue:{" "}
+                <strong className="text-[var(--tb-text-primary)]">{overview.due.total}</strong> due
+              </span>
+              <Link
+                href="/review"
+                className={cn(
+                  "tb-focus-ring inline-flex items-center gap-1.5 rounded-xl px-4 py-2 text-xs font-black transition-all",
+                  overview.due.total > 0
+                    ? "bg-[var(--tb-primary)] text-white shadow-xs hover:bg-[var(--tb-primary-hover)]"
+                    : "border border-[var(--tb-border)] bg-[var(--tb-surface)] text-[var(--tb-text-primary)] hover:border-[var(--tb-primary)] hover:text-[var(--primary-fg)]"
+                )}
+              >
+                <span>Start Review</span>
+                <ArrowRight className="size-3.5" />
+              </Link>
+            </div>
+          </ContentCard>
+        </section>
+      </div>
+
+      {/* C. TODAY'S LEARNING OVERVIEW & THREE-DIMENSION PROGRESS */}
+      <section aria-label="Today's learning overview" className="space-y-3">
+        <SectionHeader
+          title="Today's Learning Overview"
+          icon={<GraduationCap className="size-4" />}
+          actions={
+            <button
+              type="button"
+              onClick={() => setShowDetailedThreeDimensions((prev) => !prev)}
+              className="tb-focus-ring inline-flex items-center gap-1 text-xs font-bold text-[var(--primary-fg)] hover:underline cursor-pointer"
+            >
+              <span>{showDetailedThreeDimensions ? "Hide Dimension Breakdown" : "3-Dimension Progress Deep-Dive"}</span>
+              {showDetailedThreeDimensions ? <ChevronUp size={13} /> : <ChevronDown size={13} />}
+            </button>
+          }
+        />
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+          <ContentCard padding="sm" className="space-y-1">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-[var(--tb-text-secondary)]">
+              Lessons Completed
+            </span>
+            <div className="text-2xl font-black text-[var(--tb-text-primary)]">
+              {overview.lessonsCompleted}
+            </div>
+            <p className="text-[11px] text-[var(--tb-text-secondary)]">
+              {overview.lessonsInProgress} in progress · {overview.totalLessons} total
+            </p>
+          </ContentCard>
+
+          <ContentCard padding="sm" className="space-y-1">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-[var(--tb-text-secondary)]">
+              Vocabulary Mastered
+            </span>
+            <div className="text-2xl font-black text-[var(--tb-text-primary)]">
+              {overview.vocabMastered}
+            </div>
+            <p className="text-[11px] text-[var(--tb-text-secondary)]">
+              {overview.vocabStudied} studied in FSRS
+            </p>
+          </ContentCard>
+
+          <ContentCard padding="sm" className="space-y-1">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-[var(--tb-text-secondary)]">
+              Kanji Studied
+            </span>
+            <div className="text-2xl font-black text-[var(--tb-text-primary)]">
+              {overview.kanjiStudied}
+            </div>
+            <p className="text-[11px] text-[var(--tb-text-secondary)]">
+              {overview.kanjiMastered} mastered
+            </p>
+          </ContentCard>
+
+          <ContentCard padding="sm" className="space-y-1">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-[var(--tb-text-secondary)]">
+              Grammar Studied
+            </span>
+            <div className="text-2xl font-black text-[var(--tb-text-primary)]">
+              {overview.grammarStudied}
+            </div>
+            <p className="text-[11px] text-[var(--tb-text-secondary)]">
+              {overview.grammarMastered} mastered
+            </p>
+          </ContentCard>
+
+          <ContentCard padding="sm" className="space-y-1 col-span-2 sm:col-span-1">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-[var(--tb-text-secondary)]">
+              FSRS Reviews Due
+            </span>
+            <div className="text-2xl font-black text-[var(--primary-fg)]">
+              {overview.due.total}
+            </div>
+            <p className="text-[11px] text-[var(--tb-text-secondary)]">
+              Across all active decks
+            </p>
+          </ContentCard>
+        </div>
+
+        {/* 3-Dimension Progress Deep-Dive (Content Completion, Knowledge Mastery, Review Status) */}
+        {showDetailedThreeDimensions && (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
+            {/* Dimension 1: Content Completion */}
+            <ContentCard padding="sm" className="space-y-2 border-indigo-500/30 bg-indigo-500/[0.03]">
+              <div className="flex items-center justify-between">
+                <span className="text-[11px] font-black uppercase tracking-wider text-indigo-700 dark:text-indigo-300">
+                  1. Content Completion
+                </span>
+                <span className="text-xs font-bold text-[var(--tb-text-primary)]">
+                  {threeDimensions.completion.overallPercent}%
+                </span>
+              </div>
+              <p className="text-xs text-[var(--tb-text-secondary)]">
+                Curriculum material accessed and completed
+              </p>
+              <div className="space-y-1 text-xs pt-1 border-t border-[var(--tb-border)]">
+                <div className="flex justify-between">
+                  <span>Lessons Completed:</span>
+                  <strong>{threeDimensions.completion.lessonsCompleted} / {threeDimensions.completion.totalLessons}</strong>
+                </div>
+                <div className="flex justify-between">
+                  <span>Lessons In Progress:</span>
+                  <strong>{threeDimensions.completion.lessonsInProgress}</strong>
+                </div>
+                <div className="flex justify-between">
+                  <span>Dialogues Completed:</span>
+                  <strong>{threeDimensions.completion.dialoguesCompleted} scenes</strong>
+                </div>
+                <div className="flex justify-between">
+                  <span>Drills Attempted:</span>
+                  <strong>{threeDimensions.completion.practiceAttemptedCount} items</strong>
+                </div>
+              </div>
+            </ContentCard>
+
+            {/* Dimension 2: Knowledge Mastery */}
+            <ContentCard padding="sm" className="space-y-2 border-emerald-500/30 bg-emerald-500/[0.03]">
+              <div className="flex items-center justify-between">
+                <span className="text-[11px] font-black uppercase tracking-wider text-emerald-700 dark:text-emerald-300">
+                  2. Knowledge Mastery
+                </span>
+                <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">
+                  {threeDimensions.mastery.overallMasteryRate}% Mastery
+                </span>
+              </div>
+              <p className="text-xs text-[var(--tb-text-secondary)]">
+                Confirmed recall stability and practice accuracy
+              </p>
+              <div className="space-y-1 text-xs pt-1 border-t border-[var(--tb-border)]">
+                <div className="flex justify-between">
+                  <span>Practice Accuracy:</span>
+                  <strong>{threeDimensions.mastery.practiceAccuracyPercent}% ({threeDimensions.mastery.practiceCorrectCount} correct)</strong>
+                </div>
+                <div className="flex justify-between">
+                  <span>Vocab Mastered:</span>
+                  <strong>{threeDimensions.mastery.vocabMastered} / {threeDimensions.mastery.vocabStudied}</strong>
+                </div>
+                <div className="flex justify-between">
+                  <span>Kanji Mastered:</span>
+                  <strong>{threeDimensions.mastery.kanjiMastered} / {threeDimensions.mastery.kanjiStudied}</strong>
+                </div>
+                <div className="flex justify-between">
+                  <span>Grammar Mastered:</span>
+                  <strong>{threeDimensions.mastery.grammarMastered} / {threeDimensions.mastery.grammarStudied}</strong>
+                </div>
+              </div>
+            </ContentCard>
+
+            {/* Dimension 3: Review Status */}
+            <ContentCard padding="sm" className="space-y-2 border-amber-500/30 bg-amber-500/[0.03]">
+              <div className="flex items-center justify-between">
+                <span className="text-[11px] font-black uppercase tracking-wider text-amber-700 dark:text-amber-300">
+                  3. Review Schedule
+                </span>
+                <span className="text-xs font-bold text-amber-600 dark:text-amber-400">
+                  {threeDimensions.reviewStatus.dueToday} Due Today
+                </span>
+              </div>
+              <p className="text-xs text-[var(--tb-text-secondary)]">
+                FSRS spaced repetition schedule & workload
+              </p>
+              <div className="space-y-1 text-xs pt-1 border-t border-[var(--tb-border)]">
+                <div className="flex justify-between">
+                  <span>Due Today:</span>
+                  <strong>{threeDimensions.reviewStatus.dueToday} cards</strong>
+                </div>
+                <div className="flex justify-between">
+                  <span>Due Tomorrow:</span>
+                  <strong>{threeDimensions.reviewStatus.dueTomorrow} cards</strong>
+                </div>
+                <div className="flex justify-between">
+                  <span>Due This Week:</span>
+                  <strong>{threeDimensions.reviewStatus.dueThisWeek} cards</strong>
+                </div>
+                <div className="flex justify-between">
+                  <span>Total Reviews Logged:</span>
+                  <strong>{threeDimensions.reviewStatus.totalReviewsCompleted} reps</strong>
+                </div>
+              </div>
+            </ContentCard>
+          </div>
+        )}
+      </section>
+
+      {/* WEAK-AREA IDENTIFICATION */}
+      {weakAreas.totalWeakItems > 0 && (
+        <section aria-label="Weak-area identification" className="space-y-3">
+          <SectionHeader
+            title="Areas Needing Attention"
+            subtitle="Identified from repeated mistakes and review lapses (threshold ≥ 2 attempts)"
+            icon={<AlertTriangle className="size-4 text-amber-500" />}
+            actions={
+              <div className="flex flex-wrap items-center gap-1">
+                {(["all", "vocab", "kanji", "grammar", "practice"] as const).map((filterKey) => {
+                  const count =
+                    filterKey === "all"
+                      ? weakAreas.totalWeakItems
+                      : weakAreas[filterKey].length;
+                  if (count === 0 && filterKey !== "all") return null;
+                  const label =
+                    filterKey === "all"
+                      ? "All Weak Areas"
+                      : filterKey === "vocab"
+                      ? "Vocabulary"
+                      : filterKey === "kanji"
+                      ? "Kanji"
+                      : filterKey === "grammar"
+                      ? "Grammar"
+                      : "Practice";
                   return (
                     <button
-                      key={b.id}
-                      onClick={() => setSearchBookFilter(b.id)}
-                      className={`rounded-xl px-3 py-2 text-xs font-bold transition-all whitespace-nowrap cursor-pointer ${
-                        isFiltered
-                          ? "bg-[var(--primary)] text-white shadow-xs"
-                          : "border border-[var(--line)] bg-[var(--surface)] text-[var(--muted)] hover:text-[var(--ink)]"
-                      }`}
+                      key={filterKey}
+                      type="button"
+                      onClick={() => setActiveWeakAreaFilter(filterKey)}
+                      className={cn(
+                        "tb-focus-ring rounded-lg px-2.5 py-1 text-xs font-bold transition-all cursor-pointer",
+                        activeWeakAreaFilter === filterKey
+                          ? "bg-[var(--tb-primary)] text-white shadow-2xs"
+                          : "border border-[var(--tb-border)] bg-[var(--tb-surface)] text-[var(--tb-text-secondary)] hover:text-[var(--tb-text-primary)]"
+                      )}
                     >
-                      {b.title.split(":")[0]} ({matchCount})
+                      <span>{label}</span>
+                      <span className="ml-1 opacity-70">({count})</span>
                     </button>
                   );
                 })}
               </div>
-            )}
-          </div>
-        </section>
+            }
+          />
 
-        {/* Global Search Results Mode */}
-        {isGlobalSearchActive ? (
-          <section aria-label="Search results" className="space-y-4">
-            <div className="flex items-center justify-between">
-              <h2 className="text-sm font-black uppercase tracking-wider text-[var(--muted)] flex items-center gap-2">
-                <Search className="size-4 text-[var(--primary)]" />
-                <span>
-                  Found {globalSearchResults.length} matching {globalSearchResults.length === 1 ? "lesson" : "lessons"} across textbooks
-                </span>
-              </h2>
+          <ResponsiveGrid columns={3} gap="sm">
+            {filteredWeakAreaItems.map((item) => (
+              <ContentCard key={item.id} padding="sm" className="flex flex-col justify-between space-y-2">
+                <div className="space-y-1">
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="rounded-md border border-rose-500/30 bg-rose-500/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-rose-700 dark:text-rose-300">
+                      {item.type} · {item.mistakeCount} mistakes
+                    </span>
+                    <span className="text-[11px] font-semibold text-[var(--tb-text-secondary)]">
+                      {item.bookTitle} · L{item.lessonNumber}
+                    </span>
+                  </div>
+                  <h4 className="font-japanese text-base font-bold text-[var(--tb-text-primary)]">
+                    {item.title}
+                  </h4>
+                  {item.subtitle && (
+                    <p className="text-xs font-medium text-[var(--tb-text-secondary)]">
+                      {item.subtitle}
+                    </p>
+                  )}
+                  <p className="text-[11px] text-amber-700 dark:text-amber-300 font-medium">
+                    {item.reason}
+                  </p>
+                </div>
+                <div className="pt-2 border-t border-[var(--tb-border)] flex items-center justify-between gap-2">
+                  <span className="text-[11px] text-[var(--tb-text-secondary)] truncate">
+                    {item.lessonTitle}
+                  </span>
+                  <Link
+                    href={item.href}
+                    className="tb-focus-ring inline-flex items-center gap-1 rounded-lg bg-[var(--tb-primary)] px-2.5 py-1 text-[11px] font-bold text-white shadow-2xs hover:bg-[var(--tb-primary-hover)] transition-colors shrink-0"
+                  >
+                    <span>Practice</span>
+                    <ArrowRight className="size-3" />
+                  </Link>
+                </div>
+              </ContentCard>
+            ))}
+          </ResponsiveGrid>
+        </section>
+      )}
+
+      {/* E. TEXTBOOK SELECTION */}
+      <section aria-label="Book selection" className="space-y-4">
+        <SectionHeader
+          title="Select Textbook Curriculum"
+          icon={<Layers className="size-4" />}
+          actions={
+            <span className="text-xs font-semibold text-[var(--tb-text-secondary)]">
+              {catalog.length} textbooks available
+            </span>
+          }
+        />
+
+        <ResponsiveGrid columns={3} gap="md">
+          {catalog.map((book) => {
+            const isActive = book.id === activeBookId;
+            const shortName = book.title.split(":")[0];
+            const coverSrc = book.coverImage || `/images/books/${book.id}.webp`;
+            const bookSummary = computeBookProgress(allBooksMap[book.id], srsLookup, visitedKeys);
+
+            return (
               <button
-                onClick={() => setSearchQuery("")}
+                key={book.id}
+                type="button"
+                onClick={() => {
+                  setActiveBookId(book.id);
+                  setStateFilter("all");
+                  if (hasActiveSearchOrFacet && searchBookFilter !== "all") {
+                    setSearchBookFilter(book.id);
+                  }
+                }}
+                role="button"
+                aria-label={shortName}
+                aria-pressed={isActive}
+                className={cn(
+                  "tb-focus-ring group relative flex items-start gap-4 rounded-2xl border p-4 text-left transition-all duration-200 cursor-pointer",
+                  isActive
+                    ? "border-[var(--tb-primary)] bg-gradient-to-br from-[var(--tb-surface)] via-[var(--tb-surface)] to-[var(--tb-accent-soft)]/45 shadow-sm ring-2 ring-[var(--tb-primary)]/35"
+                    : "border-[var(--tb-border)] bg-[var(--tb-surface)] hover:border-[var(--tb-accent)] hover:shadow-xs"
+                )}
+              >
+                <div className="relative w-20 shrink-0 aspect-[3/4] overflow-hidden rounded-xl border border-[var(--tb-border)] shadow-xs bg-[var(--tb-bg)] transition-transform duration-200 group-hover:scale-102">
+                  <img
+                    src={coverSrc}
+                    alt={book.title}
+                    className="size-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/15 via-transparent to-black/10 pointer-events-none" />
+                  <div className="absolute left-1 top-0 bottom-0 w-0.5 bg-white/40 pointer-events-none" />
+                </div>
+
+                <div className="flex-1 min-w-0 space-y-1.5">
+                  <div className="flex items-center justify-between gap-1">
+                    <span className="inline-block font-mono text-[10px] font-black uppercase tracking-wider text-[var(--tb-text-secondary)] truncate">
+                      {book.series}
+                    </span>
+                    <LevelBadge level={book.level} />
+                  </div>
+
+                  <h3 className="text-base font-extrabold text-[var(--tb-text-primary)] leading-snug truncate group-hover:text-[var(--primary-fg)] transition-colors">
+                    {shortName}
+                  </h3>
+
+                  <p className="font-japanese text-xs font-semibold text-[var(--tb-text-secondary)] truncate">
+                    {book.japaneseTitle}
+                  </p>
+
+                  <div className="pt-0.5 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-[11px] font-medium text-[var(--tb-text-secondary)]">
+                    <span className="font-bold text-[var(--tb-text-primary)]">
+                      {book.totalLessons} Units
+                    </span>
+                    <span>·</span>
+                    <span>{book.stats.vocabularyCount} Vocab</span>
+                    <span>·</span>
+                    <span>{book.stats.kanjiCount} Kanji</span>
+                    <span>·</span>
+                    <span>{book.stats.grammarCount} Grammar</span>
+                  </div>
+
+                  <div className="pt-1">
+                    <ProgressBar
+                      value={bookSummary.overallPercent}
+                      masteryValue={bookSummary.masteryPercent}
+                      statusText={`${bookSummary.completedLessons}/${book.totalLessons} completed`}
+                    />
+                  </div>
+
+                  <div className="pt-1">
+                    {isActive ? (
+                      <span className="inline-flex items-center gap-1.5 text-xs font-black text-[var(--primary-fg)]">
+                        <CheckCircle2 className="size-3.5 fill-[var(--tb-primary)] text-white" />
+                        <span>Currently Selected</span>
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-center gap-1 text-xs font-semibold text-[var(--tb-text-secondary)] group-hover:text-[var(--tb-text-primary)] transition-colors">
+                        <span>View lessons</span>
+                        <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
+                      </span>
+                    )}
+                  </div>
+                </div>
+              </button>
+            );
+          })}
+        </ResponsiveGrid>
+      </section>
+
+      {/* SEARCH & MULTI-FACET FILTERING */}
+      <section aria-label="Textbook curriculum search" className="space-y-3">
+        <div className="flex flex-col lg:flex-row gap-3 items-stretch lg:items-center">
+          <SearchInput
+            value={searchQuery}
+            onChange={setSearchQuery}
+            placeholder="Search across all textbooks or filter by lesson title, topic, vocab, or grammar..."
+            className="flex-1"
+          />
+
+          <div className="flex flex-wrap items-center gap-2">
+            <FilterDropdown
+              mode="select"
+              label="Filter by textbook"
+              value={searchBookFilter}
+              onChange={setSearchBookFilter}
+              options={[
+                { key: "all", label: "All Books" },
+                ...catalog.map((b) => ({
+                  key: b.id,
+                  label: b.title.split(":")[0],
+                })),
+              ]}
+            />
+            <FilterDropdown
+              mode="select"
+              label="Filter by JLPT level"
+              value={levelFilter}
+              onChange={setLevelFilter}
+              options={[
+                { key: "all", label: "All Levels" },
+                { key: "N5", label: "JLPT N5" },
+                { key: "N4", label: "JLPT N4" },
+              ]}
+            />
+            <FilterDropdown
+              mode="select"
+              label="Filter by content type"
+              value={contentTypeFilter}
+              onChange={(v) => setContentTypeFilter(v as ContentTypeFilter)}
+              options={[
+                { key: "all", label: "All Content" },
+                { key: "vocab", label: "Vocabulary" },
+                { key: "grammar", label: "Grammar" },
+                { key: "kanji", label: "Kanji" },
+                { key: "dialogues", label: "Dialogues" },
+                { key: "practice", label: "Practice" },
+              ]}
+            />
+            <FilterDropdown
+              mode="select"
+              label="Filter by lesson"
+              value={lessonFilter}
+              onChange={setLessonFilter}
+              options={lessonDropdownOptions}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* F. LESSON BROWSER OR GLOBAL SEARCH RESULTS */}
+      {hasActiveSearchOrFacet ? (
+        <section aria-label="Search results" className="space-y-4">
+          <SectionHeader
+            title={`Found ${searchResults.length} matching ${
+              searchResults.length === 1 ? "lesson" : "lessons"
+            } across textbooks`}
+            icon={<Search className="size-4" />}
+            actions={
+              <button
+                type="button"
+                onClick={resetAllFilters}
                 className="text-xs font-bold text-[var(--primary-fg)] hover:underline cursor-pointer"
               >
                 Clear Search
               </button>
-            </div>
+            }
+          />
 
-            {globalSearchResults.length === 0 ? (
-              <div className="flex min-h-[240px] flex-col items-center justify-center rounded-3xl border border-dashed border-[var(--line)] p-8 text-center bg-[var(--surface)]">
-                <Filter className="size-8 text-[var(--muted)] opacity-50 mb-2" />
-                <h3 className="text-base font-bold text-[var(--ink)]">
-                  No lessons match &ldquo;{searchQuery}&rdquo;
-                </h3>
-                <p className="mt-1 text-sm text-[var(--muted)]">
-                  Try searching for a vocabulary term, kanji character, grammar structure, or topic.
-                </p>
+          {/* Unified Content Category Tabs for Search */}
+          {searchQuery.trim().length > 0 && (
+            <div className="flex flex-wrap items-center gap-1.5 pt-1">
+              <span className="text-xs font-semibold text-[var(--tb-text-secondary)] mr-1">
+                Content Matches:
+              </span>
+              <button
+                type="button"
+                onClick={() => setSearchContentTab("lessons")}
+                className={cn(
+                  "tb-focus-ring rounded-lg px-2.5 py-1 text-xs font-bold transition-all cursor-pointer",
+                  searchContentTab === "lessons"
+                    ? "bg-[var(--tb-primary)] text-white shadow-2xs"
+                    : "border border-[var(--tb-border)] bg-[var(--tb-surface)] text-[var(--tb-text-secondary)] hover:text-[var(--tb-text-primary)]"
+                )}
+              >
+                Lessons ({searchResults.length})
+              </button>
+              {(["vocab", "grammar", "kanji", "dialogue", "practice"] as const).map((cat) => {
+                const count = globalSearchSummary.counts[cat];
+                if (count === 0) return null;
+                const label =
+                  cat === "vocab"
+                    ? "Vocabulary"
+                    : cat === "grammar"
+                    ? "Grammar"
+                    : cat === "kanji"
+                    ? "Kanji"
+                    : cat === "dialogue"
+                    ? "Dialogues"
+                    : "Practice";
+                return (
+                  <button
+                    key={cat}
+                    type="button"
+                    onClick={() => setSearchContentTab(cat)}
+                    className={cn(
+                      "tb-focus-ring inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1 text-xs font-bold transition-all cursor-pointer",
+                      searchContentTab === cat
+                        ? "bg-[var(--tb-primary)] text-white shadow-2xs"
+                        : "border border-[var(--tb-border)] bg-[var(--tb-surface)] text-[var(--tb-text-secondary)] hover:text-[var(--tb-text-primary)]"
+                    )}
+                  >
+                    <span>{label}</span>
+                    <span
+                      className={cn(
+                        "rounded-full px-1.5 py-0.2 text-[10px]",
+                        searchContentTab === cat
+                          ? "bg-white/20 text-white"
+                          : "bg-[var(--tb-border)]/60 text-[var(--tb-text-secondary)]"
+                      )}
+                    >
+                      {count}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          )}
+
+          {searchContentTab !== "lessons" && globalSearchSummary.byType[searchContentTab].length > 0 ? (
+            <ResponsiveGrid columns={3} gap="md">
+              {globalSearchSummary.byType[searchContentTab].map((item) => (
+                <ContentCard key={item.id} padding="md" className="flex flex-col justify-between space-y-3">
+                  <div className="space-y-1.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="rounded-md border border-[var(--tb-border)] bg-[var(--tb-bg)] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[var(--primary-fg)]">
+                        {item.typeLabel}
+                      </span>
+                      <span className="text-xs font-semibold text-[var(--tb-text-secondary)]">
+                        {item.bookTitle} · L{item.lessonNumber}
+                      </span>
+                    </div>
+
+                    <div>
+                      <h4 className="font-japanese text-lg font-bold text-[var(--tb-text-primary)]">
+                        {item.title}
+                      </h4>
+                      {item.reading && (
+                        <p className="font-japanese text-xs text-[var(--tb-text-secondary)]">
+                          {item.reading}
+                        </p>
+                      )}
+                      {item.meaning && (
+                        <p className="text-sm font-medium text-[var(--tb-text-primary)] mt-1">
+                          {item.meaning}
+                        </p>
+                      )}
+                    </div>
+
+                    {item.snippet && (
+                      <div className="rounded-xl border border-[var(--tb-border)] bg-[var(--tb-bg)]/60 p-2.5 text-xs text-[var(--tb-text-secondary)]">
+                        {item.snippet}
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="pt-2 border-t border-[var(--tb-border)] flex items-center justify-between gap-2">
+                    <span className="text-xs font-medium text-[var(--tb-text-secondary)] truncate">
+                      {item.lessonTitle}
+                    </span>
+                    <Link
+                      href={item.href}
+                      className="tb-focus-ring inline-flex items-center gap-1 rounded-xl bg-[var(--tb-primary)] px-3 py-1.5 text-xs font-bold text-white shadow-2xs hover:bg-[var(--tb-primary-hover)] transition-colors shrink-0"
+                    >
+                      <span>Open in Lesson</span>
+                      <ArrowRight className="size-3" />
+                    </Link>
+                  </div>
+                </ContentCard>
+              ))}
+            </ResponsiveGrid>
+          ) : searchResults.length === 0 ? (
+            <EmptyState
+              icon={<Filter className="size-8" />}
+              title={
+                searchQuery
+                  ? `No lessons match "${searchQuery}"`
+                  : "No lessons match selected filters"
+              }
+              description="Try searching for a vocabulary term, kanji character, grammar structure, or resetting filters."
+              action={
                 <button
-                  onClick={() => setSearchQuery("")}
-                  className="mt-4 rounded-xl border border-[var(--sakura)] bg-[var(--sakura-light)] px-4 py-2 text-xs font-bold text-[var(--primary-fg)] hover:bg-[var(--sakura)]/30 transition-colors cursor-pointer"
+                  type="button"
+                  onClick={resetAllFilters}
+                  className="rounded-xl border border-[var(--tb-border-strong)] bg-[var(--tb-accent-soft)] px-4 py-2 text-xs font-bold text-[var(--primary-fg)] hover:opacity-90 transition-opacity cursor-pointer"
                 >
                   Reset Search
                 </button>
-              </div>
-            ) : (
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {globalSearchResults.map(({ bookId, bookTitle, bookLevel, lesson, matchSnippet }) => {
-                  const srsProgress = getLessonSrsProgress(lesson);
-                  const href = `/books/${bookId}/${lesson.lessonNumber}`;
+              }
+            />
+          ) : (
+            <ResponsiveGrid columns={3} gap="md">
+              {searchResults.map(({ bookId, bookTitle, bookLevel, lesson, progress, matchSnippet }) => {
+                const href = `/books/${bookId}/${lesson.lessonNumber}`;
 
-                  return (
-                    <Link
-                      key={`${bookId}-${lesson.lessonNumber}`}
-                      href={href}
-                      className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-[var(--primary)]/60 hover:shadow-md"
-                    >
-                      <div className="space-y-2.5">
-                        {/* Book Badge & Lesson Tag */}
-                        <div className="flex items-center justify-between gap-2">
-                          <span className="inline-flex items-center gap-1.5 rounded-lg bg-[var(--primary)]/10 px-2.5 py-1 text-xs font-black text-[var(--primary-fg)]">
-                            <span>{bookTitle}</span>
-                            <span className="opacity-50">·</span>
-                            <span>L{lesson.lessonNumber}</span>
-                          </span>
-                          <span
-                            className={`rounded-md px-1.5 py-0.5 text-[10px] font-black uppercase ${
-                              bookLevel === "N5"
-                                ? "bg-emerald-500/15 text-emerald-600 dark:text-emerald-400"
-                                : "bg-indigo-500/15 text-indigo-600 dark:text-indigo-400"
-                            }`}
-                          >
-                            {bookLevel}
-                          </span>
-                        </div>
-
-                        {/* Title & Japanese */}
-                        <div>
-                          <h3 className="text-base font-extrabold text-[var(--ink)] group-hover:text-[var(--primary-fg)] transition-colors line-clamp-1">
-                            {lesson.title}
-                          </h3>
-                          {lesson.japaneseTitle && (
-                            <p className="font-japanese text-xs font-semibold text-[var(--muted)] truncate mt-0.5">
-                              {lesson.japaneseTitle}
-                            </p>
-                          )}
-                        </div>
-
-                        {/* Match Snippet Highlight */}
-                        {matchSnippet ? (
-                          <div className="rounded-xl bg-[var(--sakura-light)]/50 border border-[var(--sakura)]/40 p-2 text-xs font-semibold text-[var(--primary-fg)] line-clamp-2">
-                            {matchSnippet}
-                          </div>
-                        ) : lesson.subtitle ? (
-                          <p className="text-xs text-[var(--muted)] line-clamp-2 leading-relaxed">
-                            {lesson.subtitle}
-                          </p>
-                        ) : null}
-                      </div>
-
-                      {/* Footer SRS Progress & Arrow */}
-                      <div className="mt-4 pt-3.5 border-t border-[var(--line)] space-y-2">
-                        {/* FSRS Mastery Progress Bar */}
-                        <div className="space-y-1">
-                          <div className="flex items-center justify-between text-[11px] font-semibold text-[var(--muted)]">
-                            <span className="flex items-center gap-1">
-                              <TrendingUp className="size-3 text-[var(--primary)]" />
-                              <span>FSRS Mastery</span>
-                            </span>
-                            <span>
-                              {srsProgress.inSrs} / {srsProgress.total} in SRS ({srsProgress.percent}%)
-                            </span>
-                          </div>
-                          <div className="h-1.5 w-full rounded-full bg-[var(--line)] overflow-hidden">
-                            <div
-                              className="h-full rounded-full bg-gradient-to-r from-[var(--sakura)] to-[var(--primary)] transition-all duration-300"
-                              style={{ width: `${srsProgress.percent}%` }}
-                            />
-                          </div>
-                        </div>
-
-                        <div className="flex items-center justify-between text-xs font-medium text-[var(--muted)] pt-1">
-                          <div className="flex items-center gap-1.5">
-                            <span className="font-bold text-[var(--ink)]">
-                              {lesson.stats?.vocabularyCount ?? lesson.vocabulary.length}
-                            </span>
-                            <span>vocab</span>
-                            <span>·</span>
-                            <span className="font-bold text-[var(--ink)]">
-                              {lesson.stats?.grammarCount ?? lesson.grammar.length}
-                            </span>
-                            <span>grammar</span>
-                          </div>
-                          <span className="grid size-7 place-items-center rounded-full bg-[var(--sakura-light)] text-[var(--primary-fg)] transition-all group-hover:translate-x-0.5 group-hover:bg-[var(--primary)] group-hover:text-white">
-                            <ArrowRight size={13} />
-                          </span>
+                return (
+                  <Link
+                    key={`${bookId}-${lesson.lessonNumber}`}
+                    href={href}
+                    className={cn(
+                      "tb-focus-ring group relative flex flex-col justify-between overflow-hidden rounded-2xl border p-5 shadow-2xs transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md",
+                      getLessonCardChrome(progress.state)
+                    )}
+                  >
+                    <div className="space-y-2.5">
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="inline-flex items-center gap-1.5 rounded-lg bg-[var(--tb-accent-soft)] px-2.5 py-1 text-xs font-black text-[var(--primary-fg)]">
+                          <span>{bookTitle}</span>
+                          <span className="opacity-50">·</span>
+                          <span>L{lesson.lessonNumber}</span>
+                        </span>
+                        <div className="flex items-center gap-1.5">
+                          {renderLessonStateBadge(progress)}
+                          <LevelBadge level={bookLevel} />
                         </div>
                       </div>
-                    </Link>
-                  );
-                })}
-              </div>
-            )}
-          </section>
-        ) : (
-          /* Normal Book Lessons Shelf Grid */
-          <section aria-label="Book curriculum lessons" className="space-y-4">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="text-lg font-black text-[var(--ink)] flex items-center gap-2">
-                  <BookOpen className="size-5 text-[var(--primary)]" />
-                  <span>{bookDetail?.title.split(":")[0] || "Lessons"} Curriculum</span>
-                </h2>
-                <p className="text-xs text-[var(--muted)] mt-0.5">
-                  {bookDetail?.description}
-                </p>
-              </div>
-            </div>
 
-            {loading ? (
-              <div className="flex min-h-[300px] flex-col items-center justify-center py-16">
-                <SakuraLoader label="Loading textbook curriculum..." />
-              </div>
-            ) : !bookDetail || bookDetail.lessons.length === 0 ? (
-              <div className="flex min-h-[260px] flex-col items-center justify-center rounded-3xl border border-dashed border-[var(--line)] p-8 text-center bg-[var(--surface)]">
-                <Book className="size-8 text-[var(--muted)] opacity-50 mb-2" />
-                <h3 className="text-base font-bold text-[var(--ink)]">No lessons available</h3>
-                <p className="mt-1 text-sm text-[var(--muted)]">
-                  Please select another textbook curriculum above.
-                </p>
-              </div>
-            ) : (
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {bookDetail.lessons.map((lesson) => {
-                  const srsProgress = getLessonSrsProgress(lesson);
-                  const href = `/books/${activeBookId}/${lesson.lessonNumber}`;
-
-                  return (
-                    <Link
-                      key={lesson.lessonNumber}
-                      href={href}
-                      className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-[var(--primary)]/60 hover:shadow-md"
-                    >
                       <div>
-                        {/* Top row: Lesson badge & Japanese title */}
-                        <div className="flex items-center justify-between gap-2 mb-3">
-                          <span className="flex items-center justify-center rounded-lg bg-[var(--primary)] px-2.5 py-1 text-xs font-black text-white">
-                            L{lesson.lessonNumber}
-                          </span>
-                          {lesson.japaneseTitle && (
-                            <span className="font-japanese text-xs font-bold text-[var(--muted)] group-hover:text-[var(--primary-fg)] transition-colors truncate">
-                              {lesson.japaneseTitle}
-                            </span>
-                          )}
-                        </div>
-
-                        {/* Lesson Title */}
-                        <h3 className="text-base font-bold text-[var(--ink)] group-hover:text-[var(--primary-fg)] transition-colors line-clamp-1">
+                        <h3 className="text-base font-extrabold text-[var(--tb-text-primary)] group-hover:text-[var(--primary-fg)] transition-colors line-clamp-1">
                           {lesson.title}
                         </h3>
-
-                        {/* Subtitle / Topic details */}
-                        {lesson.subtitle && (
-                          <p className="mt-1.5 text-xs text-[var(--muted)] line-clamp-2 leading-relaxed">
-                            {lesson.subtitle}
+                        {lesson.japaneseTitle && (
+                          <p className="font-japanese text-xs font-semibold text-[var(--tb-text-secondary)] truncate mt-0.5">
+                            {lesson.japaneseTitle}
                           </p>
                         )}
                       </div>
 
-                      {/* Bottom Section: FSRS Progress & Item Stats */}
-                      <div className="mt-5 pt-3.5 border-t border-[var(--line)] space-y-2.5">
-                        {/* Per-Lesson FSRS Mastery Progress Bar */}
-                        <div className="space-y-1">
-                          <div className="flex items-center justify-between text-[11px] font-semibold text-[var(--muted)]">
-                            <span className="flex items-center gap-1">
-                              <TrendingUp className="size-3 text-[var(--primary)]" />
-                              <span>FSRS Spaced Repetition</span>
-                            </span>
-                            <span>
-                              {srsProgress.inSrs > 0 ? (
-                                <>
-                                  <strong className="text-[var(--ink)]">{srsProgress.inSrs}</strong> / {srsProgress.total} in SRS ({srsProgress.percent}%)
-                                </>
-                              ) : (
-                                "Not started"
-                              )}
-                            </span>
-                          </div>
-                          <div className="h-1.5 w-full rounded-full bg-[var(--line)] overflow-hidden">
-                            <div
-                              className="h-full rounded-full bg-gradient-to-r from-[var(--sakura)] to-[var(--primary)] transition-all duration-300"
-                              style={{ width: `${srsProgress.percent}%` }}
-                            />
-                          </div>
+                      {matchSnippet ? (
+                        <div className="rounded-xl bg-[var(--tb-accent-soft)]/50 border border-[var(--tb-border-strong)] p-2 text-xs font-semibold text-[var(--primary-fg)] line-clamp-2">
+                          {matchSnippet}
                         </div>
+                      ) : lesson.subtitle ? (
+                        <p className="text-xs text-[var(--tb-text-secondary)] line-clamp-2 leading-relaxed">
+                          {lesson.subtitle}
+                        </p>
+                      ) : null}
+                    </div>
 
-                        {/* Stats Counts & Action arrow */}
-                        <div className="flex items-center justify-between text-xs font-medium text-[var(--muted)]">
-                          <div className="flex items-center gap-2">
-                            <span className="font-semibold text-[var(--ink)]">
-                              {lesson.stats.vocabularyCount}
-                            </span>
-                            <span>vocab</span>
-                            <span>·</span>
-                            <span className="font-semibold text-[var(--ink)]">
-                              {lesson.stats.kanjiCount}
-                            </span>
-                            <span>kanji</span>
-                            <span>·</span>
-                            <span className="font-semibold text-[var(--ink)]">
-                              {lesson.stats.grammarCount}
-                            </span>
-                            <span>grammar</span>
-                          </div>
-
-                          <span className="grid size-7 place-items-center rounded-full bg-[var(--sakura-light)] text-[var(--primary-fg)] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:bg-[var(--primary)] group-hover:text-white">
-                            <ArrowRight size={13} />
+                    <div className="mt-4 pt-3.5 border-t border-[var(--tb-border)] space-y-2.5">
+                      <ProgressBar
+                        value={progress.percent}
+                        masteryValue={progress.masteryPercent}
+                        label={
+                          <span className="flex items-center gap-1">
+                            <TrendingUp className="size-3 text-[var(--primary-fg)]" />
+                            <span>FSRS Mastery</span>
                           </span>
+                        }
+                        statusText={`${progress.inSrs} / ${progress.total} in SRS (${progress.percent}%)`}
+                      />
+
+                      <div className="flex items-center justify-between text-xs font-medium text-[var(--tb-text-secondary)] pt-0.5">
+                        <div className="flex items-center gap-1.5">
+                          <span className="font-bold text-[var(--tb-text-primary)]">
+                            {lesson.stats?.vocabularyCount ?? lesson.vocabulary.length}
+                          </span>
+                          <span>vocab</span>
+                          <span>·</span>
+                          <span className="font-bold text-[var(--tb-text-primary)]">
+                            {lesson.stats?.kanjiCount ?? lesson.kanji.length}
+                          </span>
+                          <span>kanji</span>
+                          <span>·</span>
+                          <span className="font-bold text-[var(--tb-text-primary)]">
+                            {lesson.stats?.grammarCount ?? lesson.grammar.length}
+                          </span>
+                          <span>grammar</span>
                         </div>
+                        <span className="grid size-7 place-items-center rounded-full bg-[var(--tb-accent-soft)] text-[var(--primary-fg)] transition-all group-hover:translate-x-0.5 group-hover:bg-[var(--tb-primary)] group-hover:text-white">
+                          <ArrowRight size={13} />
+                        </span>
                       </div>
-                    </Link>
-                  );
-                })}
-              </div>
-            )}
-          </section>
-        )}
-      </div>
-    </GameLayout>
+                    </div>
+                  </Link>
+                );
+              })}
+            </ResponsiveGrid>
+          )}
+        </section>
+      ) : (
+        <section aria-label="Book curriculum lessons" className="space-y-4">
+          <SectionHeader
+            title={`${bookDetail?.title.split(":")[0] || "Lessons"} Curriculum`}
+            subtitle={bookDetail?.description}
+            icon={<BookOpen className="size-5" />}
+            actions={
+              <FilterDropdown
+                label="Filter lessons by completion status"
+                value={stateFilter}
+                onChange={(v) => setStateFilter(v as StateFilter)}
+                options={[
+                  { key: "all", label: "All", count: activeBookLessonsWithState.length },
+                  {
+                    key: "in-progress",
+                    label: "In Progress",
+                    count: activeBookLessonsWithState.filter(
+                      (l) => l.progress.state === "in-progress"
+                    ).length,
+                  },
+                  {
+                    key: "review-needed",
+                    label: "Review Needed",
+                    count: activeBookLessonsWithState.filter(
+                      (l) => l.progress.state === "review-needed"
+                    ).length,
+                  },
+                  {
+                    key: "completed",
+                    label: "Completed",
+                    count: activeBookLessonsWithState.filter(
+                      (l) => l.progress.state === "completed"
+                    ).length,
+                  },
+                  {
+                    key: "not-started",
+                    label: "Not Started",
+                    count: activeBookLessonsWithState.filter(
+                      (l) => l.progress.state === "not-started"
+                    ).length,
+                  },
+                ]}
+              />
+            }
+          />
+
+          {loading ? (
+            <LoadingSkeleton variant="card" count={6} />
+          ) : !bookDetail || activeBookLessonsWithState.length === 0 ? (
+            <EmptyState
+              icon={<Book className="size-8" />}
+              title="No lessons available"
+              description="Please select another textbook curriculum above."
+            />
+          ) : filteredActiveLessons.length === 0 ? (
+            <EmptyState
+              icon={<Filter className="size-8" />}
+              title="No lessons match this status filter"
+              description="Try switching back to All lessons."
+              action={
+                <button
+                  type="button"
+                  onClick={() => setStateFilter("all")}
+                  className="rounded-xl border border-[var(--tb-border-strong)] bg-[var(--tb-accent-soft)] px-4 py-2 text-xs font-bold text-[var(--primary-fg)] cursor-pointer"
+                >
+                  Show All Lessons
+                </button>
+              }
+            />
+          ) : (
+            <ResponsiveGrid columns={3} gap="md">
+              {filteredActiveLessons.map(({ lesson, progress }) => {
+                const href = `/books/${activeBookId}/${lesson.lessonNumber}`;
+
+                return (
+                  <Link
+                    key={lesson.lessonNumber}
+                    href={href}
+                    className={cn(
+                      "tb-focus-ring group relative flex flex-col justify-between overflow-hidden rounded-2xl border p-5 shadow-2xs transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md",
+                      getLessonCardChrome(progress.state)
+                    )}
+                  >
+                    <div>
+                      <div className="flex items-center justify-between gap-2 mb-3">
+                        <div className="flex items-center gap-2">
+                          <span className="flex items-center justify-center rounded-lg bg-[var(--tb-primary)] px-2.5 py-1 text-xs font-black text-white">
+                            L{lesson.lessonNumber}
+                          </span>
+                          {renderLessonStateBadge(progress)}
+                        </div>
+                        {lesson.japaneseTitle && (
+                          <span className="font-japanese text-xs font-bold text-[var(--tb-text-secondary)] group-hover:text-[var(--primary-fg)] transition-colors truncate">
+                            {lesson.japaneseTitle}
+                          </span>
+                        )}
+                      </div>
+
+                      <h3 className="text-base font-bold text-[var(--tb-text-primary)] group-hover:text-[var(--primary-fg)] transition-colors line-clamp-1">
+                        {lesson.title}
+                      </h3>
+
+                      {lesson.subtitle && (
+                        <p className="mt-1.5 text-xs text-[var(--tb-text-secondary)] line-clamp-2 leading-relaxed">
+                          {lesson.subtitle}
+                        </p>
+                      )}
+                    </div>
+
+                    <div className="mt-5 pt-3.5 border-t border-[var(--tb-border)] space-y-2.5">
+                      <ProgressBar
+                        value={progress.percent}
+                        masteryValue={progress.masteryPercent}
+                        label={
+                          <span className="flex items-center gap-1">
+                            <TrendingUp className="size-3 text-[var(--primary-fg)]" />
+                            <span>FSRS Spaced Repetition</span>
+                          </span>
+                        }
+                        statusText={
+                          progress.inSrs > 0 ? (
+                            <>
+                              <strong className="text-[var(--tb-text-primary)]">
+                                {progress.inSrs}
+                              </strong>{" "}
+                              / {progress.total} in SRS ({progress.percent}%)
+                            </>
+                          ) : (
+                            "Not started"
+                          )
+                        }
+                      />
+
+                      <div className="flex items-center justify-between text-xs font-medium text-[var(--tb-text-secondary)]">
+                        <div className="flex items-center gap-2">
+                          <span className="font-semibold text-[var(--tb-text-primary)]">
+                            {lesson.stats.vocabularyCount}
+                          </span>
+                          <span>vocab</span>
+                          <span>·</span>
+                          <span className="font-semibold text-[var(--tb-text-primary)]">
+                            {lesson.stats.kanjiCount}
+                          </span>
+                          <span>kanji</span>
+                          <span>·</span>
+                          <span className="font-semibold text-[var(--tb-text-primary)]">
+                            {lesson.stats.grammarCount}
+                          </span>
+                          <span>grammar</span>
+                        </div>
+
+                        <span className="grid size-7 place-items-center rounded-full bg-[var(--tb-accent-soft)] text-[var(--primary-fg)] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:bg-[var(--tb-primary)] group-hover:text-white">
+                          <ArrowRight size={13} />
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
+                );
+              })}
+            </ResponsiveGrid>
+          )}
+        </section>
+      )}
+
+      {/* G. RECENTLY STUDIED */}
+      {recentHistory.length > 0 && (
+        <section aria-label="Recently studied lessons" className="space-y-3">
+          <SectionHeader
+            title="Recently Studied"
+            subtitle="Jump back into lessons and sections you recently visited"
+            icon={<History className="size-4" />}
+          />
+
+          <ResponsiveGrid columns={3} gap="sm">
+            {recentHistory.slice(0, 3).map((entry) => (
+              <Link
+                key={`${entry.bookId}-${entry.lessonNumber}`}
+                href={`/books/${entry.bookId}/${entry.lessonNumber}${
+                  entry.lastTab ? `?tab=${entry.lastTab}` : ""
+                }`}
+                className="tb-focus-ring group flex items-center justify-between gap-3 rounded-2xl border border-[var(--tb-border)] bg-[var(--tb-surface)] px-4 py-3 shadow-2xs hover:border-[var(--tb-primary)]/50 transition-all"
+              >
+                <div className="min-w-0 space-y-0.5">
+                  <div className="flex items-center gap-2 text-[11px] font-bold text-[var(--tb-text-secondary)]">
+                    <span>{entry.bookTitle}</span>
+                    <span>·</span>
+                    <span>L{entry.lessonNumber}</span>
+                    {entry.lastTab && (
+                      <span className="rounded bg-[var(--tb-accent-soft)] px-1.5 py-0.2 text-[10px] font-bold text-[var(--primary-fg)]">
+                        {formatSectionLabel(entry.lastTab)}
+                      </span>
+                    )}
+                  </div>
+                  <div className="text-xs sm:text-sm font-bold text-[var(--tb-text-primary)] truncate group-hover:text-[var(--primary-fg)]">
+                    {entry.lessonTitle}
+                  </div>
+                </div>
+                <ArrowRight className="size-4 shrink-0 text-[var(--tb-text-secondary)] group-hover:text-[var(--primary-fg)] group-hover:translate-x-0.5 transition-all" />
+              </Link>
+            ))}
+          </ResponsiveGrid>
+        </section>
+      )}
+    </TextbookPageContainer>
   );
 }

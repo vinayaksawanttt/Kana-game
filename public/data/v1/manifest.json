@@ -1,23 +1,23 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-11-16T18:09:34.750Z",
-  "bundleHash": "dc35f25f87c7",
+  "generatedAt": "2026-11-17T14:48:46.032Z",
+  "bundleHash": "b87f6fc18977",
   "assets": {
     "books/genki-1.json": {
-      "hash": "5e673b859547",
-      "bytes": 688173
+      "hash": "2a6257351d32",
+      "bytes": 851216
     },
     "books/genki-2.json": {
-      "hash": "58e9d2205e2b",
-      "bytes": 665560
+      "hash": "5c4c5f06c477",
+      "bytes": 827428
     },
     "books/index.json": {
-      "hash": "2b430eacd00f",
-      "bytes": 1705
+      "hash": "e91dcb610871",
+      "bytes": 1847
     },
     "books/mnn-1.json": {
-      "hash": "b2c3332b83f3",
-      "bytes": 662586
+      "hash": "af0d60da7552",
+      "bytes": 783262
     },
     "dictionary-index.json": {
       "hash": "3d98ac74562d",

@@ -92,6 +92,7 @@ export function DialogueRoleplayPlayer({
   // Cleanup audio & recordings on unmount
   useEffect(() => {
     return () => {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       runIdRef.current++;
       stopAudio();
       if (timerRef.current) clearInterval(timerRef.current);
@@ -100,13 +101,18 @@ export function DialogueRoleplayPlayer({
       }
       if (userAudioRef.current) {
         userAudioRef.current.pause();
+        userAudioRef.current.currentTime = 0;
+        userAudioRef.current = null;
       }
+      setPlayingUserAudioIdx(null);
     };
   }, [stopAudio]);
 
   // Revoke object URLs when recordings are cleared or unmounted
   const recordingsRef = useRef(recordings);
-  recordingsRef.current = recordings;
+  useEffect(() => {
+    recordingsRef.current = recordings;
+  }, [recordings]);
   useEffect(() => {
     return () => {
       Object.values(recordingsRef.current).forEach((url) => {
@@ -118,6 +124,8 @@ export function DialogueRoleplayPlayer({
       });
     };
   }, []);
+
+  const processStepRef = useRef<(index: number, currentRunId: number) => Promise<void>>(() => Promise.resolve());
 
   // Core step runner
   const processStep = useCallback(
@@ -144,7 +152,7 @@ export function DialogueRoleplayPlayer({
         if (currentRunId !== runIdRef.current) return;
         await new Promise((r) => setTimeout(r, 550));
         if (currentRunId !== runIdRef.current) return;
-        void processStep(index + 1, currentRunId);
+        void processStepRef.current(index + 1, currentRunId);
       } else if (mode === "shadowing") {
         // Shadowing: speak native line, then pause for user to shadow/record
         setIsWaitingForUser(false);
@@ -159,6 +167,10 @@ export function DialogueRoleplayPlayer({
     [mode, playbackRate, playSentenceAsync, scene.lines, selectedRole]
   );
 
+  useEffect(() => {
+    processStepRef.current = processStep;
+  }, [processStep]);
+
   const handleStartOrResume = () => {
     runIdRef.current++;
     const myRunId = runIdRef.current;
@@ -168,21 +180,44 @@ export function DialogueRoleplayPlayer({
     void processStep(startIdx, myRunId);
   };
 
-  const handlePause = () => {
+  const handlePause = useCallback(() => {
     runIdRef.current++;
     stopAudio();
+    if (userAudioRef.current) {
+      userAudioRef.current.pause();
+      userAudioRef.current.currentTime = 0;
+      userAudioRef.current = null;
+    }
+    setPlayingUserAudioIdx(null);
     setIsRunning(false);
-  };
+  }, [stopAudio]);
 
   const handleRestart = () => {
     runIdRef.current++;
     stopAudio();
+    if (userAudioRef.current) {
+      userAudioRef.current.pause();
+      userAudioRef.current.currentTime = 0;
+      userAudioRef.current = null;
+    }
+    setPlayingUserAudioIdx(null);
     setIsRunning(false);
     setIsWaitingForUser(false);
     setIsCompleted(false);
     setCurrentIndex(0);
     setRevealedLines({});
   };
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        handlePause();
+        onClose();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [handlePause, onClose]);
 
   const handleNextLine = () => {
     if (isRecording) {
@@ -306,7 +341,11 @@ export function DialogueRoleplayPlayer({
   const recordedCount = Object.keys(recordings).length;
 
   return (
-    <div className="rounded-3xl border-2 border-[var(--primary)]/30 bg-[var(--surface)] shadow-md overflow-hidden animate-in fade-in duration-200">
+    <div
+      role="region"
+      aria-label="Interactive Dialogue Roleplay and Shadowing Studio"
+      className="rounded-3xl border-2 border-[var(--primary)]/30 bg-[var(--surface)] shadow-md overflow-hidden animate-in fade-in duration-200"
+    >
       {/* Top Studio Header */}
       <div className="border-b border-[var(--line)] bg-[var(--sakura-light)]/25 px-5 py-4 flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-2.5">

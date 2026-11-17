@@ -76,7 +76,18 @@ export default function ReviewHubPage() {
     try {
       const saved = localStorage.getItem("nihongo-review-direction");
       if (saved === "recognition" || saved === "recall") {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setDirection(saved);
+      }
+      if (typeof window !== "undefined") {
+        const urlParams = new URLSearchParams(window.location.search);
+        const filterParam = urlParams.get("type");
+        if (
+          filterParam &&
+          ["all", "kana", "kanji", "vocab", "grammar"].includes(filterParam)
+        ) {
+          setSelectedFilter(filterParam as "all" | SrsItemType);
+        }
       }
     } catch {
       // Ignore localStorage errors

@@ -71,5 +71,21 @@ describe("Kanji Stroke Order Pipeline & Player", () => {
     const resetButton = screen.getByRole("button", { name: /Reset stroke animation/i });
     fireEvent.click(resetButton);
     expect(firstFgPath.style.strokeDashoffset).not.toBe("0");
+
+    // Step forward and backward stroke-by-stroke
+    const nextStrokeBtn = screen.getByRole("button", { name: /Next stroke/i });
+    const prevStrokeBtn = screen.getByRole("button", { name: /Previous stroke/i });
+    fireEvent.click(nextStrokeBtn);
+    expect(screen.getByText(/Stroke 1 \/ 4/i)).toBeTruthy();
+    expect(firstFgPath.style.strokeDashoffset).toBe("0");
+    expect(secondFgPath.style.strokeDashoffset).not.toBe("0");
+
+    fireEvent.click(prevStrokeBtn);
+    expect(firstFgPath.style.strokeDashoffset).not.toBe("0");
+
+    // Verify 0.5x slow playback speed button
+    const speedHalfBtn = screen.getByRole("button", { name: "0.5x" });
+    fireEvent.click(speedHalfBtn);
+    expect(speedHalfBtn.getAttribute("aria-pressed")).toBe("true");
   });
 });

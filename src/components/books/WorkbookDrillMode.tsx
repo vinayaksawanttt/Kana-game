@@ -9,8 +9,10 @@ import {
   EyeOff,
   Filter,
   Keyboard,
+  Lightbulb,
   RotateCcw,
   Table2,
+  Trophy,
   X,
   XCircle,
   Zap,
@@ -20,6 +22,10 @@ import { AudioButton } from "@/components/ui/AudioButton";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import { romajiToHiragana } from "@/engine/shiritori";
 import { CharacterDiffView } from "@/components/books/CharacterDiffView";
+import {
+  formatPracticeTypeLabel,
+  validatePracticeAnswer,
+} from "@/lib/books/progress";
 
 interface FlattenedWorkbookItem {
   item: BookPracticeItem;
@@ -56,6 +62,7 @@ export function WorkbookDrillMode({
   const [results, setResults] = useState<Record<string, "correct" | "incorrect">>({});
   const [queuedFSRS, setQueuedFSRS] = useState<Record<string, boolean>>({});
   const [showAnswer, setShowAnswer] = useState(false);
+  const [showHint, setShowHint] = useState(false);
   const [showRefTable, setShowRefTable] = useState(false);
   const [isDone, setIsDone] = useState(false);
 
@@ -84,18 +91,29 @@ export function WorkbookDrillMode({
     }
     if (!effectiveVal.trim()) return;
 
-    const normalize = (s: string) =>
-      s
-        .replace(/[。、\s\t\n・！？!?()（）~〜]/g, "")
-        .toLowerCase()
-        .trim();
+    const isMatch = validatePracticeAnswer(effectiveVal, current.item.answer);
 
-    const isMatch =
-      normalize(effectiveVal) === normalize(current.item.answer) ||
-      current.item.answer
-        .split(/[／/]/)
-        .some((alt) => normalize(effectiveVal) === normalize(alt));
+    setResults((prev) => ({
+      ...prev,
+      [current.item.id]: isMatch ? "correct" : "incorrect",
+    }));
 
+    if (isMatch) {
+      playGameSfx("correct-chime");
+    } else {
+      playGameSfx("incorrect-chime");
+      setShowAnswer(true);
+      if (autoEnqueueMissed && !queuedFSRS[current.item.id]) {
+        await onMissedItem(current.item, current.section);
+        setQueuedFSRS((prev) => ({ ...prev, [current.item.id]: true }));
+      }
+    }
+  };
+
+  const handleOptionSelect = async (opt: string) => {
+    if (!current) return;
+    setInputVal(opt);
+    const isMatch = validatePracticeAnswer(opt, current.item.answer);
     setResults((prev) => ({
       ...prev,
       [current.item.id]: isMatch ? "correct" : "incorrect",
@@ -122,6 +140,7 @@ export function WorkbookDrillMode({
     setCurrentIdx((i) => i + 1);
     setInputVal("");
     setShowAnswer(false);
+    setShowHint(false);
   };
 
   const handlePrev = () => {
@@ -129,6 +148,7 @@ export function WorkbookDrillMode({
     setCurrentIdx((i) => i - 1);
     setInputVal("");
     setShowAnswer(false);
+    setShowHint(false);
   };
 
   const handleRestart = () => {
@@ -136,6 +156,7 @@ export function WorkbookDrillMode({
     setInputVal("");
     setResults({});
     setShowAnswer(false);
+    setShowHint(false);
     setIsDone(false);
     setRetryMissedOnly(false);
     setMissedItemIds(new Set());
@@ -144,7 +165,7 @@ export function WorkbookDrillMode({
   const handleRetryMissedOnly = () => {
     const missedIds = new Set(
       Object.entries(results)
-        .filter(([_, status]) => status === "incorrect")
+        .filter(([, status]) => status === "incorrect")
         .map(([id]) => id)
     );
     if (missedIds.size === 0) return;
@@ -192,7 +213,11 @@ export function WorkbookDrillMode({
   }
 
   return (
-    <div className="rounded-3xl border-2 border-[var(--primary)]/30 bg-[var(--surface)] shadow-md overflow-hidden animate-in fade-in duration-200">
+    <div
+      role="region"
+      aria-label="Interactive Workbook Drill Engine"
+      className="rounded-3xl border-2 border-[var(--primary)]/30 bg-[var(--surface)] shadow-md overflow-hidden animate-in fade-in duration-200"
+    >
       {/* Header */}
       <div className="border-b border-[var(--line)] bg-[var(--sakura-light)]/25 px-5 py-4 flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-2.5">
@@ -277,22 +302,52 @@ export function WorkbookDrillMode({
 
       <div className="p-5 sm:p-6 space-y-5">
         {isDone ? (
-          <div className="rounded-2xl border border-emerald-500/30 bg-emerald-500/5 p-6 text-center space-y-3">
-            <CheckCircle2 size={34} className="mx-auto text-emerald-600" />
-            <h5 className="text-base font-black text-[var(--ink)]">
-              Workbook Drill Complete!
-            </h5>
-            <p className="text-xs text-[var(--muted)]">
-              Scored <strong>{correctCount}</strong> correct and{" "}
-              <strong>{incorrectCount}</strong> missed
-              {queuedCount > 0
-                ? ` (${queuedCount} missed item${queuedCount > 1 ? "s" : ""} queued in FSRS for spaced review).`
-                : "."}
-            </p>
+          <div className="rounded-2xl border border-emerald-500/30 bg-emerald-500/5 p-6 sm:p-8 text-center space-y-4">
+            <div className="grid size-14 place-items-center rounded-2xl bg-emerald-500/15 text-emerald-600 mx-auto">
+              <Trophy size={28} />
+            </div>
+            <div className="space-y-1">
+              <h5 className="text-lg font-black text-[var(--ink)]">
+                Workbook Drill Complete!
+              </h5>
+              <p className="text-xs text-[var(--muted)]">
+                You attempted all {activeItems.length} practice exercises in this session.
+              </p>
+            </div>
+
+            {/* Metrics Breakdown Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-xl mx-auto py-2">
+              <div className="rounded-xl border border-[var(--line)] bg-[var(--surface)] p-3">
+                <span className="text-[10px] font-bold text-[var(--muted)] uppercase">Attempted</span>
+                <p className="text-base font-black text-[var(--ink)]">{activeItems.length}</p>
+              </div>
+              <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/10 p-3">
+                <span className="text-[10px] font-bold text-emerald-700 dark:text-emerald-300 uppercase">Correct</span>
+                <p className="text-base font-black text-emerald-600">{correctCount}</p>
+              </div>
+              <div className="rounded-xl border border-rose-500/30 bg-rose-500/10 p-3">
+                <span className="text-[10px] font-bold text-rose-700 dark:text-rose-300 uppercase">Missed</span>
+                <p className="text-base font-black text-rose-600">{incorrectCount}</p>
+              </div>
+              <div className="rounded-xl border border-[var(--line)] bg-[var(--surface)] p-3">
+                <span className="text-[10px] font-bold text-[var(--muted)] uppercase">Accuracy</span>
+                <p className="text-base font-black text-[var(--primary)]">
+                  {activeItems.length > 0 ? Math.round((correctCount / activeItems.length) * 100) : 0}%
+                </p>
+              </div>
+            </div>
+
+            {queuedCount > 0 && (
+              <p className="text-xs font-medium text-amber-700 dark:text-amber-300 flex items-center justify-center gap-1.5">
+                <Zap size={13} />
+                <span>{queuedCount} missed item{queuedCount > 1 ? "s" : ""} queued in FSRS spaced review.</span>
+              </p>
+            )}
+
             <div className="flex flex-wrap items-center justify-center gap-2 pt-2">
               <button
                 onClick={handleRestart}
-                className="inline-flex items-center gap-1.5 rounded-xl bg-[var(--primary)] px-4 py-2 text-xs font-bold text-white hover:opacity-90"
+                className="inline-flex items-center gap-1.5 rounded-xl bg-[var(--primary)] px-4 py-2 text-xs font-bold text-white hover:opacity-90 shadow-2xs"
               >
                 <RotateCcw size={14} />
                 <span>Restart Full Drill</span>
@@ -306,6 +361,12 @@ export function WorkbookDrillMode({
                   <span>Retry Missed Items Only ({incorrectCount})</span>
                 </button>
               )}
+              <button
+                onClick={onClose}
+                className="inline-flex items-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--surface)] px-4 py-2 text-xs font-bold text-[var(--ink)] hover:bg-[var(--surface-overlay)]"
+              >
+                <span>Back to Worksheet</span>
+              </button>
             </div>
           </div>
         ) : current ? (
@@ -325,12 +386,15 @@ export function WorkbookDrillMode({
                     Grammar {current.section.grammarIndex}
                   </span>
                 )}
+                <span className="rounded-md bg-[var(--surface-overlay)] border border-[var(--line)] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[var(--muted)]">
+                  {formatPracticeTypeLabel(current.section.type)}
+                </span>
               </div>
 
               {current.section.referenceTable && (
                 <button
                   onClick={() => setShowRefTable((p) => !p)}
-                  className="inline-flex items-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--surface-overlay)] px-3 py-1 text-xs font-bold text-[var(--ink)]"
+                  className="inline-flex items-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--surface-overlay)] px-3 py-1 text-xs font-bold text-[var(--ink)] cursor-pointer"
                 >
                   <Table2 size={13} />
                   <span>{showRefTable ? "Hide Chart" : "View Reference Chart"}</span>
@@ -375,6 +439,9 @@ export function WorkbookDrillMode({
             <div className="rounded-2xl border border-[var(--line)] bg-[var(--surface-overlay)]/30 p-5 space-y-4">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <div className="flex flex-wrap items-center gap-2">
+                  <span className="flex size-6 items-center justify-center rounded-full bg-[var(--primary)] text-white text-xs font-bold">
+                    {currentIdx + 1}
+                  </span>
                   <span className="font-japanese text-lg font-black text-[var(--ink)]">
                     {current.item.prompt}
                   </span>
@@ -385,64 +452,128 @@ export function WorkbookDrillMode({
                   )}
                 </div>
 
-                <button
-                  onClick={() => setShowAnswer((p) => !p)}
-                  className="inline-flex items-center gap-1 text-xs font-bold text-[var(--primary-fg)] hover:underline"
-                >
-                  {showAnswer ? <EyeOff size={13} /> : <Eye size={13} />}
-                  <span>{showAnswer ? "Hide Answer" : "Show Answer"}</span>
-                </button>
+                <div className="flex items-center gap-2">
+                  {current.item.hint && (
+                    <button
+                      type="button"
+                      onClick={() => setShowHint((p) => !p)}
+                      className="inline-flex items-center gap-1 text-xs font-bold text-amber-600 dark:text-amber-400 hover:underline cursor-pointer"
+                    >
+                      <Lightbulb size={13} />
+                      <span>{showHint ? "Hide Hint" : "Hint"}</span>
+                    </button>
+                  )}
+
+                  <button
+                    onClick={() => setShowAnswer((p) => !p)}
+                    className="inline-flex items-center gap-1 text-xs font-bold text-[var(--primary-fg)] hover:underline cursor-pointer"
+                  >
+                    {showAnswer ? <EyeOff size={13} /> : <Eye size={13} />}
+                    <span>{showAnswer ? "Hide Answer" : "Show Answer"}</span>
+                  </button>
+                </div>
               </div>
 
-              {/* Input & Check */}
-              <div className="flex flex-wrap items-center gap-2">
-                <div className="relative flex-1 min-w-[220px]">
-                  <input
-                    type="text"
-                    placeholder={
-                      romajiIme
-                        ? "Type Japanese response & press Enter (or romaji)..."
-                        : "Type Japanese response & press Enter..."
-                    }
-                    value={inputVal}
-                    onChange={(e) => handleInputChange(e.target.value)}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter") {
+              {showHint && current.item.hint && (
+                <div className="rounded-xl border border-amber-500/30 bg-amber-500/10 px-3.5 py-2 text-xs text-amber-800 dark:text-amber-200 flex items-center gap-2">
+                  <Lightbulb size={14} className="shrink-0 text-amber-600" />
+                  <span><strong>Hint:</strong> {current.item.hint}</span>
+                </div>
+              )}
+
+              {/* Multiple Choice Options if present */}
+              {current.item.options && current.item.options.length > 0 && (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+                  {current.item.options.map((opt) => {
+                    const isSelected = inputVal === opt;
+                    const feedback = results[current.item.id];
+                    return (
+                      <button
+                        key={opt}
+                        type="button"
+                        onClick={() => void handleOptionSelect(opt)}
+                        className={`rounded-xl border px-4 py-2.5 text-sm font-japanese font-bold text-left transition-all cursor-pointer ${
+                          isSelected
+                            ? feedback === "correct"
+                              ? "border-emerald-500 bg-emerald-500/15 text-emerald-700 dark:text-emerald-300"
+                              : feedback === "incorrect"
+                              ? "border-rose-500 bg-rose-500/15 text-rose-700 dark:text-rose-300"
+                              : "border-[var(--primary)] bg-[var(--sakura-light)]/40 text-[var(--ink)]"
+                            : "border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--primary)]"
+                        }`}
+                      >
+                        {opt}
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+
+              {/* Input & Check for text questions */}
+              {(!current.item.options || current.item.options.length === 0) && (
+                <div className="flex flex-wrap items-center gap-2">
+                  <div className="relative flex-1 min-w-[220px]">
+                    <input
+                      type="text"
+                      placeholder={
+                        romajiIme
+                          ? "Type Japanese response & press Enter (or romaji)..."
+                          : "Type Japanese response & press Enter..."
+                      }
+                      value={inputVal}
+                      onChange={(e) => handleInputChange(e.target.value)}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter") {
+                          if (results[current.item.id]) {
+                            handleNext();
+                          } else {
+                            void handleCheck();
+                          }
+                        } else if (e.key === "ArrowRight" && results[current.item.id]) {
+                          handleNext();
+                        } else if (e.key === "ArrowLeft" && currentIdx > 0) {
+                          handlePrev();
+                        }
+                      }}
+                      className={`w-full rounded-xl border px-3.5 py-2 text-sm font-japanese text-[var(--ink)] focus:outline-hidden ${
+                        results[current.item.id] === "correct"
+                          ? "border-emerald-500 bg-emerald-500/5 ring-1 ring-emerald-500/30"
+                          : results[current.item.id] === "incorrect"
+                          ? "border-rose-500 bg-rose-500/5 ring-1 ring-rose-500/30"
+                          : "border-[var(--line)] bg-[var(--surface)] focus:border-[var(--primary)]"
+                      }`}
+                    />
+                    {romajiIme && !results[current.item.id] && (
+                      <span className="absolute right-3 top-1/2 -translate-y-1/2 rounded bg-[var(--surface-overlay)] border border-[var(--line)] px-1.5 py-0.5 text-[10px] font-bold text-[var(--muted)]">
+                        かな
+                      </span>
+                    )}
+                    {results[current.item.id] && (
+                      <div className="absolute right-3 top-1/2 -translate-y-1/2">
+                        {results[current.item.id] === "correct" ? (
+                          <CheckCircle2 size={16} className="text-emerald-600" />
+                        ) : (
+                          <XCircle size={16} className="text-rose-500" />
+                        )}
+                      </div>
+                    )}
+                  </div>
+
+                  <button
+                    onClick={() => {
+                      if (results[current.item.id]) {
+                        handleNext();
+                      } else {
                         void handleCheck();
                       }
                     }}
-                    className={`w-full rounded-xl border px-3.5 py-2 text-sm font-japanese text-[var(--ink)] focus:outline-hidden ${
-                      results[current.item.id] === "correct"
-                        ? "border-emerald-500 bg-emerald-500/5"
-                        : results[current.item.id] === "incorrect"
-                        ? "border-rose-500 bg-rose-500/5"
-                        : "border-[var(--line)] bg-[var(--surface)] focus:border-[var(--primary)]"
-                    }`}
-                  />
-                  {romajiIme && !results[current.item.id] && (
-                    <span className="absolute right-3 top-1/2 -translate-y-1/2 rounded bg-[var(--surface-overlay)] border border-[var(--line)] px-1.5 py-0.5 text-[10px] font-bold text-[var(--muted)]">
-                      かな
-                    </span>
-                  )}
-                  {results[current.item.id] && (
-                    <div className="absolute right-3 top-1/2 -translate-y-1/2">
-                      {results[current.item.id] === "correct" ? (
-                        <CheckCircle2 size={16} className="text-emerald-600" />
-                      ) : (
-                        <XCircle size={16} className="text-rose-500" />
-                      )}
-                    </div>
-                  )}
+                    disabled={!inputVal.trim() && !results[current.item.id]}
+                    className="rounded-xl bg-[var(--primary)] px-4 py-2 text-xs font-bold text-white hover:opacity-90 disabled:opacity-40 cursor-pointer shadow-2xs"
+                  >
+                    {results[current.item.id] ? "Next" : "Check"}
+                  </button>
                 </div>
-
-                <button
-                  onClick={() => void handleCheck()}
-                  disabled={!inputVal.trim()}
-                  className="rounded-xl bg-[var(--primary)] px-4 py-2 text-xs font-bold text-white hover:opacity-90 disabled:opacity-40"
-                >
-                  Check
-                </button>
-              </div>
+              )}
 
               {/* FSRS Missed Notice */}
               {queuedFSRS[current.item.id] && (
@@ -487,7 +618,7 @@ export function WorkbookDrillMode({
               <button
                 onClick={handlePrev}
                 disabled={currentIdx === 0}
-                className="inline-flex items-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--surface)] px-3.5 py-2 text-xs font-bold text-[var(--ink)] disabled:opacity-40"
+                className="inline-flex items-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--surface)] px-3.5 py-2 text-xs font-bold text-[var(--ink)] disabled:opacity-40 cursor-pointer"
               >
                 <ArrowLeft size={14} />
                 <span>Previous</span>
@@ -495,9 +626,9 @@ export function WorkbookDrillMode({
 
               <button
                 onClick={handleNext}
-                className="inline-flex items-center gap-1.5 rounded-xl bg-[var(--ink)] px-4 py-2 text-xs font-bold text-[var(--surface)]"
+                className="inline-flex items-center gap-1.5 rounded-xl bg-[var(--ink)] px-4 py-2 text-xs font-bold text-[var(--surface)] cursor-pointer"
               >
-                <span>{currentIdx + 1 >= activeItems.length ? "Finish Drill" : "Next Item"}</span>
+                <span>{currentIdx + 1 >= activeItems.length ? "Finish Drill" : "Next Question"}</span>
                 <ArrowRight size={14} />
               </button>
             </div>
