@@ -6,9 +6,9 @@ import {
 } from "./characterAvatars";
 
 describe("characterAvatars registry", () => {
-  it("registers all 10 Genki characters with both neutral and talking asset paths", () => {
+  it("registers all 15 Genki characters with both neutral and talking asset paths", () => {
     const all = getAllCharacterAvatars();
-    expect(all).toHaveLength(10);
+    expect(all).toHaveLength(15);
 
     const expectedIds = [
       "mary-hart",
@@ -21,6 +21,11 @@ describe("characterAvatars registry", () => {
       "yui-yamakawa",
       "host-father",
       "host-mother",
+      "mana",
+      "carlos",
+      "naomi",
+      "wudi",
+      "yasmin",
     ];
 
     for (const id of expectedIds) {
@@ -51,6 +56,11 @@ describe("characterAvatars registry", () => {
     expect(getCharacterAvatar("Yui Yamakawa")?.id).toBe("yui-yamakawa");
     expect(getCharacterAvatar("Host father")?.id).toBe("host-father");
     expect(getCharacterAvatar("Host mother")?.id).toBe("host-mother");
+    expect(getCharacterAvatar("Mana")?.id).toBe("mana");
+    expect(getCharacterAvatar("Carlos")?.id).toBe("carlos");
+    expect(getCharacterAvatar("Naomi")?.id).toBe("naomi");
+    expect(getCharacterAvatar("Wudi")?.id).toBe("wudi");
+    expect(getCharacterAvatar("Yasmin")?.id).toBe("yasmin");
   });
 
   it("resolves characters by Japanese name variations", () => {
@@ -67,6 +77,11 @@ describe("characterAvatars registry", () => {
     expect(getCharacterAvatar(undefined, "ゆい")?.id).toBe("yui-yamakawa");
     expect(getCharacterAvatar(undefined, "お父さん")?.id).toBe("host-father");
     expect(getCharacterAvatar(undefined, "お母さん")?.id).toBe("host-mother");
+    expect(getCharacterAvatar(undefined, "まな")?.id).toBe("mana");
+    expect(getCharacterAvatar(undefined, "カルロス")?.id).toBe("carlos");
+    expect(getCharacterAvatar(undefined, "なおみ")?.id).toBe("naomi");
+    expect(getCharacterAvatar(undefined, "ウディ")?.id).toBe("wudi");
+    expect(getCharacterAvatar(undefined, "ヤスミン")?.id).toBe("yasmin");
   });
 
   it("resolves when speaker and speakerJa are provided together", () => {
@@ -80,6 +95,8 @@ describe("characterAvatars registry", () => {
     expect(getCharacterAvatar("Doctor", "医者")).toBeNull();
     expect(getCharacterAvatar("Everyone", "みんな")).toBeNull();
     expect(getCharacterAvatar("Hotel front desk", "ホテルの人")).toBeNull();
+    expect(getCharacterAvatar("Manager", "店長")).toBeNull();
+    expect(getCharacterAvatar("Department manager", "部長")).toBeNull();
     expect(getCharacterAvatar("Old woman", "おばあさん")).toBeNull();
     expect(getCharacterAvatar("Vendor", "みせのひと")).toBeNull();
     expect(getCharacterAvatar("Stranger", "しらないひと")).toBeNull();

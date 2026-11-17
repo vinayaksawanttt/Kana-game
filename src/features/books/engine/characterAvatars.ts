@@ -85,6 +85,41 @@ export const GENKI_CHARACTER_AVATARS: Record<string, CharacterAvatar> = {
     neutral: "/images/characters/host-mother/neutral.webp",
     talking: "/images/characters/host-mother/talking.webp",
   },
+  "mana": {
+    id: "mana",
+    name: "Mana",
+    nameJa: "まな",
+    neutral: "/images/characters/mana/neutral.webp",
+    talking: "/images/characters/mana/talking.webp",
+  },
+  "carlos": {
+    id: "carlos",
+    name: "Carlos",
+    nameJa: "カルロス",
+    neutral: "/images/characters/carlos/neutral.webp",
+    talking: "/images/characters/carlos/talking.webp",
+  },
+  "naomi": {
+    id: "naomi",
+    name: "Naomi",
+    nameJa: "なおみ",
+    neutral: "/images/characters/naomi/neutral.webp",
+    talking: "/images/characters/naomi/talking.webp",
+  },
+  "wudi": {
+    id: "wudi",
+    name: "Wudi",
+    nameJa: "ウディ",
+    neutral: "/images/characters/wudi/neutral.webp",
+    talking: "/images/characters/wudi/talking.webp",
+  },
+  "yasmin": {
+    id: "yasmin",
+    name: "Yasmin",
+    nameJa: "ヤスミン",
+    neutral: "/images/characters/yasmin/neutral.webp",
+    talking: "/images/characters/yasmin/talking.webp",
+  },
 };
 
 /**
@@ -210,6 +245,50 @@ export function getCharacterAvatar(
     normEn.includes("mom")
   ) {
     return GENKI_CHARACTER_AVATARS["host-mother"];
+  }
+
+  // 11. Mana (Mary's host sister)
+  if (
+    normJa.includes("まな") ||
+    normJa.includes("マナ") ||
+    (normEn.includes("mana") && !normEn.includes("manager"))
+  ) {
+    return GENKI_CHARACTER_AVATARS["mana"];
+  }
+
+  // 12. Carlos
+  if (
+    normJa.includes("カルロス") ||
+    normEn.includes("carlos")
+  ) {
+    return GENKI_CHARACTER_AVATARS["carlos"];
+  }
+
+  // 13. Naomi
+  if (
+    normJa.includes("なおみ") ||
+    normJa.includes("ナオミ") ||
+    normEn.includes("naomi")
+  ) {
+    return GENKI_CHARACTER_AVATARS["naomi"];
+  }
+
+  // 14. Wudi
+  if (
+    normJa.includes("ウディ") ||
+    normJa.includes("うでぃ") ||
+    normEn.includes("wudi")
+  ) {
+    return GENKI_CHARACTER_AVATARS["wudi"];
+  }
+
+  // 15. Yasmin
+  if (
+    normJa.includes("ヤスミン") ||
+    normJa.includes("やすみん") ||
+    normEn.includes("yasmin")
+  ) {
+    return GENKI_CHARACTER_AVATARS["yasmin"];
   }
 
   return null;
