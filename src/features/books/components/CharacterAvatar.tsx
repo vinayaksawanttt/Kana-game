@@ -17,6 +17,8 @@ export interface CharacterAvatarProps {
   isSpeaking?: boolean;
   /** Size preset */
   size?: "xs" | "sm" | "md" | "lg" | "xl";
+  /** Shape style: circular or rounded-square */
+  shape?: "circle" | "rounded";
   /** Optional container class name */
   className?: string;
   /** Custom accessible tooltip title */
@@ -29,11 +31,28 @@ export interface CharacterAvatarProps {
 }
 
 const SIZE_CLASSES = {
-  xs: "size-5 text-[9px] rounded-md",
-  sm: "size-8 text-xs rounded-xl",
-  md: "size-11 text-base rounded-2xl",
-  lg: "size-16 text-xl rounded-2xl",
-  xl: "size-20 text-2xl rounded-3xl",
+  xs: "size-5 text-[9px]",
+  sm: "size-8 text-xs",
+  md: "size-11 text-base",
+  lg: "size-12 sm:size-14 text-lg",
+  xl: "size-16 sm:size-20 text-xl",
+};
+
+const ROUNDED_CLASSES = {
+  rounded: {
+    xs: "rounded-md",
+    sm: "rounded-xl",
+    md: "rounded-2xl",
+    lg: "rounded-2xl sm:rounded-3xl",
+    xl: "rounded-3xl",
+  },
+  circle: {
+    xs: "rounded-full",
+    sm: "rounded-full",
+    md: "rounded-full",
+    lg: "rounded-full",
+    xl: "rounded-full",
+  },
 };
 
 export function CharacterAvatar({
@@ -41,6 +60,7 @@ export function CharacterAvatar({
   speakerJa,
   isSpeaking = false,
   size = "md",
+  shape = "rounded",
   className,
   title,
   fallbackTheme,
@@ -81,6 +101,7 @@ export function CharacterAvatar({
         className={cn(
           "grid place-items-center font-japanese font-black shadow-xs transition-transform select-none shrink-0",
           SIZE_CLASSES[size],
+          ROUNDED_CLASSES[shape][size],
           fallbackTheme?.gradient || "from-sky-500 to-blue-600 text-white bg-gradient-to-br",
           isSpeaking && "scale-105 ring-2 ring-[var(--tb-primary)]",
           className
@@ -100,6 +121,7 @@ export function CharacterAvatar({
         "relative overflow-hidden shrink-0 border transition-all duration-200 select-none",
         "bg-gradient-to-b from-sky-50/40 to-slate-100/80 dark:from-slate-900/60 dark:to-slate-800/80",
         SIZE_CLASSES[size],
+        ROUNDED_CLASSES[shape][size],
         isSpeaking
           ? "border-[var(--tb-primary)] ring-2 ring-[var(--tb-primary)] shadow-md scale-105"
           : "border-[var(--tb-border)] shadow-2xs hover:border-[var(--tb-primary)]/40",
