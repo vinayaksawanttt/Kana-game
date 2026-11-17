@@ -76,7 +76,7 @@ describe("DialogueCard component", () => {
 
   afterEach(cleanup);
 
-  it("renders Transcript Mode (Mode A) by default with all lines visible", () => {
+  it("renders dialogue card with all lines visible by default in stable container", () => {
     render(
       <DialogueCard
         scene={mockScene}
@@ -95,11 +95,7 @@ describe("DialogueCard component", () => {
     expect(screen.getByText(/3 lines/i)).not.toBeNull();
     expect(screen.getByText(/At the university campus/i)).not.toBeNull();
 
-    // Mode Switcher
-    expect(screen.getByRole("button", { name: /Switch to Transcript Mode/i })).not.toBeNull();
-    expect(screen.getByRole("button", { name: /Switch to Animated Playback Mode/i })).not.toBeNull();
-
-    // All 3 sentences should be visible in Transcript Mode
+    // All 3 sentences should be visible in default view
     expect(screen.getByText("おはようございます。")).not.toBeNull();
     expect(screen.getByText("おはよう、メアリーさん。")).not.toBeNull();
     expect(screen.getByText("きょうはいい天気ですね。")).not.toBeNull();
@@ -113,7 +109,8 @@ describe("DialogueCard component", () => {
     expect(screen.getByRole("button", { name: /Play full scene audio/i })).not.toBeNull();
   });
 
-  it("switches to Full Scene Playback Mode (Mode B) and reveals messages progressively", async () => {
+  it("delegates playback to onTogglePlayScene when Play Full Scene is clicked without starting conflicting local audio", async () => {
+    const onTogglePlayScene = vi.fn();
     render(
       <DialogueCard
         scene={mockScene}
@@ -121,36 +118,92 @@ describe("DialogueCard component", () => {
         level="N5"
         showEnglish={true}
         tapLookupEnabled={false}
+        isPlayingScene={false}
+        playingLineIndex={-1}
         dictMaps={null}
         kuromojiLineMap={{}}
+        onTogglePlayScene={onTogglePlayScene}
         onStartRoleplay={vi.fn()}
       />
     );
 
-    // Click Play Full Scene
     const playBtn = screen.getByRole("button", { name: /Play full scene audio/i });
     await act(async () => {
       fireEvent.click(playBtn);
     });
 
-    // Button should now allow stopping the scene
-    expect(screen.getByRole("button", { name: /Stop full scene audio/i })).not.toBeNull();
-
-    // Sticky playback control bar should be in the DOM
-    expect(screen.getByLabelText(/Pause playback/i)).not.toBeNull();
-    expect(screen.getByLabelText(/Previous sentence/i)).not.toBeNull();
-    expect(screen.getByLabelText(/Next sentence/i)).not.toBeNull();
-    expect(screen.getByLabelText(/Replay current sentence/i)).not.toBeNull();
-    expect(screen.getByText(/Sentence 1 of 3/i)).not.toBeNull();
-
-    // The first line should be playing
-    expect(mockPlaySentenceAsync).toHaveBeenCalledWith(
-      "おはようございます。",
-      expect.objectContaining({ audioSrc: "/audio/l1_d1_1.opus" })
-    );
+    // Parent toggle was called
+    expect(onTogglePlayScene).toHaveBeenCalledTimes(1);
+    // Local loop did NOT start concurrently
+    expect(mockPlaySentenceAsync).not.toHaveBeenCalled();
   });
 
-  it("supports pausing and resuming in Playback Mode", async () => {
+  it("reveals messages progressively one by one as playingLineIndex advances from parent", () => {
+    const { rerender } = render(
+      <DialogueCard
+        scene={mockScene}
+        lesson={mockLesson}
+        level="N5"
+        showEnglish={true}
+        tapLookupEnabled={false}
+        isPlayingScene={true}
+        playingLineIndex={0}
+        dictMaps={null}
+        kuromojiLineMap={{}}
+        onStartRoleplay={vi.fn()}
+      />
+    );
+
+    // Line 0 is visible
+    expect(screen.getByText("おはようございます。")).not.toBeNull();
+    // Subsequent lines not revealed yet
+    expect(screen.queryByText("おはよう、メアリーさん。")).toBeNull();
+    expect(screen.queryByText("きょうはいい天気ですね。")).toBeNull();
+
+    // Advance to line 1
+    rerender(
+      <DialogueCard
+        scene={mockScene}
+        lesson={mockLesson}
+        level="N5"
+        showEnglish={true}
+        tapLookupEnabled={false}
+        isPlayingScene={true}
+        playingLineIndex={1}
+        dictMaps={null}
+        kuromojiLineMap={{}}
+        onStartRoleplay={vi.fn()}
+      />
+    );
+
+    // Both line 0 and line 1 are now revealed
+    expect(screen.getByText("おはようございます。")).not.toBeNull();
+    expect(screen.getByText("おはよう、メアリーさん。")).not.toBeNull();
+    expect(screen.queryByText("きょうはいい天気ですね。")).toBeNull();
+
+    // Advance to line 2 (last line of scene)
+    rerender(
+      <DialogueCard
+        scene={mockScene}
+        lesson={mockLesson}
+        level="N5"
+        showEnglish={true}
+        tapLookupEnabled={false}
+        isPlayingScene={true}
+        playingLineIndex={2}
+        dictMaps={null}
+        kuromojiLineMap={{}}
+        onStartRoleplay={vi.fn()}
+      />
+    );
+
+    // All lines now visible
+    expect(screen.getByText("おはようございます。")).not.toBeNull();
+    expect(screen.getByText("おはよう、メアリーさん。")).not.toBeNull();
+    expect(screen.getByText("きょうはいい天気ですね。")).not.toBeNull();
+  });
+
+  it("animates active speaker avatar with talking state during playback", () => {
     render(
       <DialogueCard
         scene={mockScene}
@@ -158,114 +211,46 @@ describe("DialogueCard component", () => {
         level="N5"
         showEnglish={true}
         tapLookupEnabled={false}
+        isPlayingScene={true}
+        playingLineIndex={0}
         dictMaps={null}
         kuromojiLineMap={{}}
         onStartRoleplay={vi.fn()}
       />
     );
 
-    // Start playback
-    const playBtn = screen.getByRole("button", { name: /Play full scene audio/i });
-    await act(async () => {
-      fireEvent.click(playBtn);
-    });
-
-    // Pause playback
-    const pauseBtn = screen.getByLabelText(/Pause playback/i);
-    await act(async () => {
-      fireEvent.click(pauseBtn);
-    });
-
-    expect(mockStopAudio).toHaveBeenCalled();
-    // Resume button should now appear
-    const resumeBtn = screen.getByLabelText(/Resume playback/i);
-    expect(resumeBtn).not.toBeNull();
-
-    // Resume playback
-    await act(async () => {
-      fireEvent.click(resumeBtn);
-    });
-
-    expect(screen.getByLabelText(/Pause playback/i)).not.toBeNull();
+    // Mary is the speaker of line 0
+    const maryAvatars = screen.getAllByRole("img", { name: /Mary Hart/i });
+    expect(maryAvatars.length).toBeGreaterThan(0);
+    // Line avatar should show speaking state
+    const lineAvatar = maryAvatars.find((el) => el.getAttribute("data-speaking") === "true");
+    expect(lineAvatar).not.toBeUndefined();
   });
 
-  it("supports stepping to next and previous sentences in Playback Mode", async () => {
+  it("supports revealing English translations line by line in Listening Mode", () => {
     render(
       <DialogueCard
         scene={mockScene}
         lesson={mockLesson}
         level="N5"
-        showEnglish={true}
+        showEnglish={false}
         tapLookupEnabled={false}
         dictMaps={null}
         kuromojiLineMap={{}}
+        learningMode="listening"
         onStartRoleplay={vi.fn()}
       />
     );
 
-    // Switch to playback
-    const playbackModeTab = screen.getByRole("button", { name: /Switch to Animated Playback Mode/i });
-    await act(async () => {
-      fireEvent.click(playbackModeTab);
-    });
+    // In listening mode without showEnglish, translations are concealed
+    expect(screen.queryByText("Good morning.")).toBeNull();
 
-    // Step to Next sentence
-    const nextBtn = screen.getByLabelText(/Next sentence/i);
-    await act(async () => {
-      fireEvent.click(nextBtn);
-    });
+    // Reveal English button is present
+    const revealBtns = screen.getAllByRole("button", { name: /Reveal English/i });
+    expect(revealBtns.length).toBe(3);
 
-    expect(mockPlaySentenceAsync).toHaveBeenCalledWith(
-      "おはよう、メアリーさん。",
-      expect.objectContaining({ audioSrc: "/audio/l1_d1_2.opus" })
-    );
-    expect(screen.getByText(/Sentence 2 of 3/i)).not.toBeNull();
-
-    // Step back to Previous sentence
-    const prevBtn = screen.getByLabelText(/Previous sentence/i);
-    await act(async () => {
-      fireEvent.click(prevBtn);
-    });
-
-    expect(mockPlaySentenceAsync).toHaveBeenCalledWith(
-      "おはようございます。",
-      expect.objectContaining({ audioSrc: "/audio/l1_d1_1.opus" })
-    );
-    expect(screen.getByText(/Sentence 1 of 3/i)).not.toBeNull();
-  });
-
-  it("returns cleanly to Transcript Mode when clicking the Transcript button", async () => {
-    render(
-      <DialogueCard
-        scene={mockScene}
-        lesson={mockLesson}
-        level="N5"
-        showEnglish={true}
-        tapLookupEnabled={false}
-        dictMaps={null}
-        kuromojiLineMap={{}}
-        onStartRoleplay={vi.fn()}
-      />
-    );
-
-    // Start playback
-    const playBtn = screen.getByRole("button", { name: /Play full scene audio/i });
-    await act(async () => {
-      fireEvent.click(playBtn);
-    });
-
-    expect(screen.getByText(/Sentence 1 of 3/i)).not.toBeNull();
-
-    // Click Return to Transcript
-    const transcriptBtn = screen.getByLabelText(/View full transcript/i);
-    await act(async () => {
-      fireEvent.click(transcriptBtn);
-    });
-
-    expect(mockStopAudio).toHaveBeenCalled();
-    // Play Full Scene button is back
-    expect(screen.getByRole("button", { name: /Play full scene audio/i })).not.toBeNull();
-    // Sticky bar should be unmounted
-    expect(screen.queryByLabelText(/Previous sentence/i)).toBeNull();
+    // Click reveal on first line
+    fireEvent.click(revealBtns[0]);
+    expect(screen.getByText("Good morning.")).not.toBeNull();
   });
 });

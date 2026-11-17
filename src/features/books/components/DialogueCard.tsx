@@ -9,20 +9,13 @@ import React, {
 } from "react";
 import {
   Play,
-  Pause,
   Square,
-  RotateCcw,
-  SkipBack,
-  SkipForward,
   Volume2,
-  Languages,
   CheckCircle2,
   Mic,
   BookOpen,
   Headphones,
   Users,
-  ArrowDownCircle,
-  FileText,
   Sparkles,
   Eye,
   EyeOff,
@@ -36,7 +29,6 @@ import { StoryReaderLine } from "@/features/books/components/StoryReaderLine";
 import { CharacterAvatar } from "@/features/books/components/CharacterAvatar";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
 import { resolveSentenceAudio } from "@/engine/audio";
-import { playGameSfx } from "@/lib/game-core/sfx";
 import { cn } from "./ui/tokens";
 
 export function getSpeakerTheme(speakerJa: string) {
@@ -186,18 +178,9 @@ export function DialogueCard({
     [scene.lines]
   );
 
-  // Presentation Mode: Transcript (Mode A) vs Full Scene Playback (Mode B)
-  const [presentationMode, setPresentationMode] =
-    useState<DialoguePresentationMode>("transcript");
-
-  // Playback engine state
-  const [playbackStatus, setPlaybackStatus] = useState<PlaybackStatus>("idle");
-  const [activeSentenceIndex, setActiveSentenceIndex] = useState<number>(-1);
-  const [revealedCount, setRevealedCount] = useState<number>(1);
-  const [playbackSpeed, setPlaybackSpeed] = useState<number>(1.0);
-  const [autoScroll, setAutoScroll] = useState<boolean>(true);
-  const [showPlaybackTranslation, setShowPlaybackTranslation] =
-    useState<boolean>(showEnglish);
+  // Standalone playback fallback state (used only when onTogglePlayScene is omitted)
+  const [localPlayingIndex, setLocalPlayingIndex] = useState<number>(-1);
+  const [localIsPlaying, setLocalIsPlaying] = useState<boolean>(false);
 
   // Transcript state
   const [revealedEnglishLines, setRevealedEnglishLines] = useState<
@@ -215,24 +198,117 @@ export function DialogueCard({
     activeKey,
   } = useJapaneseAudio();
 
-  // Playback execution cancellation tokens
   const playbackRunIdRef = useRef<number>(0);
-  const playLineStepRef = useRef<(index: number, speed: number, currentRunId: number) => Promise<void>>(async () => {});
-  const lineElementRefs = useRef<Array<HTMLDivElement | null>>([]);
+  const playLineStepRef = useRef<(index: number, currentRunId: number) => Promise<void>>(async () => {});
   const containerRef = useRef<HTMLDivElement | null>(null);
 
-  // Derived playback modes and indices (supports both internal and parent-controlled playback)
-  const isPlaybackMode = presentationMode === "playback" || Boolean(isPlayingScene);
-  const isActuallyPlaying =
-    Boolean(isPlayingScene) || (presentationMode === "playback" && playbackStatus === "playing");
-  const effectiveActiveSentenceIndex =
+  // Unified playback state
+  const isPlaying = Boolean(isPlayingScene) || localIsPlaying;
+  const activeSentenceIndex =
     isPlayingScene && playingLineIndex !== undefined && playingLineIndex >= 0
       ? playingLineIndex
-      : activeSentenceIndex;
-  const effectiveRevealedCount =
-    isPlayingScene && playingLineIndex !== undefined && playingLineIndex >= 0
-      ? Math.max(revealedCount, playingLineIndex + 1)
-      : revealedCount;
+      : localPlayingIndex;
+
+  // Standalone playback progression function (fallback when onTogglePlayScene is omitted)
+  const playLineStep = useCallback(
+    async (index: number, currentRunId: number) => {
+      if (currentRunId !== playbackRunIdRef.current) return;
+      if (index >= scene.lines.length) {
+        setLocalIsPlaying(false);
+        setLocalPlayingIndex(-1);
+        if (!isCompleted && onToggleComplete) {
+          onToggleComplete();
+        }
+        return;
+      }
+
+      setLocalPlayingIndex(index);
+      setLocalIsPlaying(true);
+
+      const line = scene.lines[index];
+      try {
+        await playSentenceAsync(line.ja, {
+          audioSrc: line.audioSrc,
+          rate: 1.0,
+        });
+      } catch {
+        if (currentRunId !== playbackRunIdRef.current) return;
+        const textDuration = Math.max(1600, line.ja.length * 120);
+        await new Promise((r) => setTimeout(r, textDuration));
+      }
+
+      if (currentRunId !== playbackRunIdRef.current) return;
+
+      // Natural pause between dialogue turns
+      await new Promise((r) => setTimeout(r, 450));
+
+      if (currentRunId !== playbackRunIdRef.current) return;
+
+      void playLineStepRef.current(index + 1, currentRunId);
+    },
+    [isCompleted, onToggleComplete, playSentenceAsync, scene.lines]
+  );
+
+  useEffect(() => {
+    playLineStepRef.current = playLineStep;
+  }, [playLineStep]);
+
+  // Play / Stop Full Scene Action
+  const handlePlayToggle = useCallback(() => {
+    if (onTogglePlayScene) {
+      // Parent manages sequential playback through togglePlayFullScene
+      onTogglePlayScene();
+      return;
+    }
+
+    // Local standalone playback
+    if (localIsPlaying) {
+      playbackRunIdRef.current += 1;
+      stopAudio();
+      setLocalIsPlaying(false);
+      setLocalPlayingIndex(-1);
+    } else {
+      playbackRunIdRef.current += 1;
+      const currentRun = playbackRunIdRef.current;
+      stopAudio();
+      setLocalPlayingIndex(0);
+      setLocalIsPlaying(true);
+      void playLineStep(0, currentRun);
+    }
+  }, [localIsPlaying, onTogglePlayScene, playLineStep, stopAudio]);
+
+  // Displayed lines:
+  // When dialogue is spoken/playing, one after one dialogue is added into the dialogue screen until the last dialogue.
+  // When not playing, all dialogues are displayed within the dialogue box.
+  const displayedLines = useMemo(() => {
+    if (isPlaying) {
+      const count = Math.max(1, activeSentenceIndex + 1);
+      return scene.lines.slice(0, count);
+    }
+    return scene.lines;
+  }, [isPlaying, activeSentenceIndex, scene.lines]);
+
+  // Auto-scroll chat box smoothly down as new lines are added during playback
+  useEffect(() => {
+    if (isPlaying && containerRef.current) {
+      if (typeof containerRef.current.scrollTo === "function") {
+        containerRef.current.scrollTo({
+          top: containerRef.current.scrollHeight,
+          behavior: "smooth",
+        });
+      } else {
+        containerRef.current.scrollTop = containerRef.current.scrollHeight;
+      }
+    }
+  }, [isPlaying, displayedLines.length, activeSentenceIndex]);
+
+  // Cleanup on unmount or scene change
+  useEffect(() => {
+    return () => {
+      playbackRunIdRef.current += 1;
+      stopAudio();
+    };
+  }, [scene.id, stopAudio]);
 
   // Detect lesson vocabulary words that appear in this dialogue scene
   const matchingVocabItems = useMemo(() => {
@@ -248,196 +324,16 @@ export function DialogueCard({
     setRevealedEnglishLines((prev) => ({ ...prev, [idx]: !prev[idx] }));
   };
 
-  // Scroll active sentence smoothly into view
-  const scrollToLine = useCallback(
-    (index: number) => {
-      if (!autoScroll) return;
-      const el = lineElementRefs.current[index];
-      if (el && typeof el.scrollIntoView === "function") {
-        el.scrollIntoView({ behavior: "smooth", block: "nearest" });
-      }
-    },
-    [autoScroll]
-  );
-
-  // Core Playback Progression Function
-  const playLineStep = useCallback(
-    async (index: number, speed: number, currentRunId: number) => {
-      if (currentRunId !== playbackRunIdRef.current) return;
-      if (index >= scene.lines.length) {
-        setPlaybackStatus("completed");
-        setActiveSentenceIndex(-1);
-        playGameSfx("victory-fanfare");
-        if (!isCompleted && onToggleComplete) {
-          onToggleComplete();
-        }
-        return;
-      }
-
-      setActiveSentenceIndex(index);
-      setRevealedCount((prev) => Math.max(prev, index + 1));
-      setPlaybackStatus("playing");
-      scrollToLine(index);
-
-      const line = scene.lines[index];
-      try {
-        await playSentenceAsync(line.ja, {
-          audioSrc: line.audioSrc,
-          rate: speed,
-        });
-      } catch {
-        // Fallback to text reading pacing if audio asset fails or is missing
-        if (currentRunId !== playbackRunIdRef.current) return;
-        const textDuration = Math.max(1800, line.ja.length * 130);
-        await new Promise((r) => setTimeout(r, textDuration));
-      }
-
-      if (currentRunId !== playbackRunIdRef.current) return;
-
-      // Natural pause between turns
-      const pauseDuration = speed < 1 ? 550 : 380;
-      await new Promise((r) => setTimeout(r, pauseDuration));
-
-      if (currentRunId !== playbackRunIdRef.current) return;
-
-      // Auto-advance to next line
-      void playLineStepRef.current(index + 1, speed, currentRunId);
-    },
-    [
-      scene.lines,
-      isCompleted,
-      onToggleComplete,
-      playSentenceAsync,
-      scrollToLine,
-    ]
-  );
-
-  useEffect(() => {
-    playLineStepRef.current = playLineStep;
-  }, [playLineStep]);
-
-  // User Actions: Play / Start Full Scene
-  const handleStartFullPlayback = useCallback(() => {
-    stopAudio();
-    playbackRunIdRef.current += 1;
-    const currentRun = playbackRunIdRef.current;
-    setPresentationMode("playback");
-    setRevealedCount(1);
-    setActiveSentenceIndex(0);
-    setPlaybackStatus("playing");
-    void playLineStep(0, playbackSpeed, currentRun);
-  }, [playbackSpeed, playLineStep, stopAudio]);
-
-  // Pause Playback
-  const handlePause = useCallback(() => {
-    playbackRunIdRef.current += 1;
-    stopAudio();
-    setPlaybackStatus("paused");
-  }, [stopAudio]);
-
-  // Resume Playback
-  const handleResume = useCallback(() => {
-    playbackRunIdRef.current += 1;
-    const currentRun = playbackRunIdRef.current;
-    const startIndex =
-      activeSentenceIndex >= 0 && activeSentenceIndex < scene.lines.length
-        ? activeSentenceIndex
-        : 0;
-    setPlaybackStatus("playing");
-    void playLineStep(startIndex, playbackSpeed, currentRun);
-  }, [activeSentenceIndex, playbackSpeed, playLineStep, scene.lines.length]);
-
-  // Jump to specific line (Previous, Next, or Replay)
-  const handleJumpToLine = useCallback(
-    (index: number) => {
-      if (index < 0 || index >= scene.lines.length) return;
-      playbackRunIdRef.current += 1;
-      const currentRun = playbackRunIdRef.current;
-      stopAudio();
-      setActiveSentenceIndex(index);
-      setRevealedCount((prev) => Math.max(prev, index + 1));
-      setPlaybackStatus("playing");
-      void playLineStep(index, playbackSpeed, currentRun);
-    },
-    [playbackSpeed, playLineStep, scene.lines.length, stopAudio]
-  );
-
-  // Restart Scene
-  const handleRestart = useCallback(() => {
-    playbackRunIdRef.current += 1;
-    const currentRun = playbackRunIdRef.current;
-    stopAudio();
-    setRevealedCount(1);
-    setActiveSentenceIndex(0);
-    setPlaybackStatus("playing");
-    void playLineStep(0, playbackSpeed, currentRun);
-  }, [playbackSpeed, playLineStep, stopAudio]);
-
-  // Exit Full Playback -> Return to Transcript
-  const handleExitPlayback = useCallback(() => {
-    playbackRunIdRef.current += 1;
-    stopAudio();
-    setPlaybackStatus("idle");
-    setActiveSentenceIndex(-1);
-    setPresentationMode("transcript");
-    if (isPlayingScene && onTogglePlayScene) {
-      onTogglePlayScene();
-    }
-  }, [isPlayingScene, onTogglePlayScene, stopAudio]);
-
-  // Header "Play Full Scene" button toggle
-  const handleHeaderPlayToggle = useCallback(() => {
-    if (isPlayingScene) {
-      if (onTogglePlayScene) {
-        onTogglePlayScene();
-      }
-      handlePause();
-    } else if (presentationMode === "playback" && playbackStatus === "playing") {
-      handlePause();
-    } else if (presentationMode === "playback" && playbackStatus === "paused") {
-      handleResume();
-    } else {
-      if (onTogglePlayScene && !isPlayingScene) {
-        onTogglePlayScene();
-      }
-      handleStartFullPlayback();
-    }
-  }, [
-    handlePause,
-    handleResume,
-    handleStartFullPlayback,
-    isPlayingScene,
-    onTogglePlayScene,
-    playbackStatus,
-    presentationMode,
-  ]);
-
-  // Cleanup on unmount or scene change
-  useEffect(() => {
-    return () => {
-      playbackRunIdRef.current += 1;
-      stopAudio();
-    };
-  }, [scene.id, stopAudio]);
-
-  // Lines to display based on presentation mode
-  const displayedLines = useMemo(() => {
-    if (!isPlaybackMode) {
-      return scene.lines;
-    }
-    return scene.lines.slice(0, effectiveRevealedCount);
-  }, [isPlaybackMode, effectiveRevealedCount, scene.lines]);
-
   return (
     <div
       className={cn(
         "overflow-hidden border border-[var(--tb-border)] rounded-3xl bg-[var(--tb-surface)] shadow-xs transition-all",
-        isPlaybackMode && "ring-1 ring-[var(--tb-primary)]/30",
+        isPlaying && "ring-1 ring-[var(--tb-primary)]/30",
         className
       )}
     >
       {/* ------------------------------------------------------------------ */}
-      {/* Redesigned Dialogue Header                                          */}
+      {/* Dialogue Header                                                    */}
       {/* ------------------------------------------------------------------ */}
       <div className="border-b border-[var(--tb-border)] bg-[var(--surface-overlay)]/70 px-5 sm:px-6 py-4">
         <div className="flex flex-wrap items-center justify-between gap-3.5">
@@ -483,48 +379,8 @@ export function DialogueCard({
             </div>
           </div>
 
-          {/* Action & Mode Controls */}
+          {/* Action Controls */}
           <div className="flex flex-wrap items-center gap-2">
-            {/* Mode Switcher Pill */}
-            <div className="inline-flex items-center rounded-xl border border-[var(--tb-border)] bg-[var(--tb-surface)] p-0.5 text-xs font-bold shadow-2xs">
-              <button
-                type="button"
-                onClick={() => {
-                  if (isPlaybackMode) {
-                    handleExitPlayback();
-                  }
-                }}
-                className={cn(
-                  "tb-focus-ring inline-flex items-center gap-1 rounded-lg px-2.5 py-1 transition-all cursor-pointer",
-                  !isPlaybackMode
-                    ? "bg-[var(--tb-primary)] text-white shadow-2xs"
-                    : "text-[var(--tb-text-secondary)] hover:text-[var(--tb-text-primary)]"
-                )}
-                aria-label="Switch to Transcript Mode"
-              >
-                <FileText size={12} />
-                <span>Transcript</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => {
-                  if (!isPlaybackMode) {
-                    handleStartFullPlayback();
-                  }
-                }}
-                className={cn(
-                  "tb-focus-ring inline-flex items-center gap-1 rounded-lg px-2.5 py-1 transition-all cursor-pointer",
-                  isPlaybackMode
-                    ? "bg-[var(--tb-primary)] text-white shadow-2xs"
-                    : "text-[var(--tb-text-secondary)] hover:text-[var(--tb-text-primary)]"
-                )}
-                aria-label="Switch to Animated Playback Mode"
-              >
-                <Play size={12} fill="currentColor" />
-                <span>Playback</span>
-              </button>
-            </div>
-
             {/* Mark Done Checkbox Button */}
             {onToggleComplete && (
               <button
@@ -551,24 +407,24 @@ export function DialogueCard({
             {/* Play / Stop Full Scene Action */}
             <button
               type="button"
-              onClick={handleHeaderPlayToggle}
+              onClick={handlePlayToggle}
               className={cn(
                 "tb-focus-ring inline-flex items-center gap-1.5 rounded-xl px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer shadow-2xs",
-                isActuallyPlaying
+                isPlaying
                   ? "bg-rose-500 text-white shadow-rose-500/25 animate-pulse"
                   : "border border-[var(--tb-primary)]/40 bg-[var(--tb-accent-soft)] text-[var(--primary-fg)] hover:bg-[var(--tb-primary)] hover:text-white"
               )}
               aria-label={
-                isActuallyPlaying
+                isPlaying
                   ? "Stop full scene audio"
                   : "Play full scene audio"
               }
             >
-              {isActuallyPlaying ? (
+              {isPlaying ? (
                 <>
                   <Square size={13} fill="currentColor" />
                   <span>
-                    Stop ({effectiveActiveSentenceIndex >= 0 ? effectiveActiveSentenceIndex + 1 : 1}/{scene.lines.length})
+                    Stop ({activeSentenceIndex >= 0 ? activeSentenceIndex + 1 : 1}/{scene.lines.length})
                   </span>
                 </>
               ) : (
@@ -586,97 +442,86 @@ export function DialogueCard({
               className="tb-focus-ring inline-flex items-center gap-1.5 rounded-xl bg-[var(--tb-primary)] px-3.5 py-1.5 text-xs font-bold text-white shadow-2xs hover:bg-[var(--tb-primary-hover)] active:scale-95 transition-all cursor-pointer"
             >
               <Mic size={13} />
-              <span className="hidden sm:inline">Roleplay & Shadow</span>
+              <span>Roleplay & Shadow</span>
             </button>
           </div>
         </div>
 
-        {/* Setting Description */}
+        {/* Setting */}
         {scene.setting && (
-          <p className="mt-2.5 text-xs italic text-[var(--tb-text-secondary)] flex items-center gap-1.5">
-            <span className="font-semibold not-italic text-[var(--tb-text-primary)]">Setting:</span>
+          <p className="mt-2 text-xs italic text-[var(--tb-text-secondary)] flex items-center gap-1.5">
+            <span className="font-semibold not-italic text-[var(--tb-text-primary)]">
+              Setting:
+            </span>
             <span>{scene.setting}</span>
           </p>
         )}
       </div>
 
-      {/* ------------------------------------------------------------------ */}
-      {/* Learning Mode Banners                                              */}
-      {/* ------------------------------------------------------------------ */}
+      {/* Mode Special Banners */}
       {learningMode === "listening" && (
-        <div className="flex items-center gap-2 border-b border-[var(--tb-border)] bg-amber-500/10 px-5 py-2 text-xs font-medium text-amber-800 dark:text-amber-200">
-          <Headphones size={14} className="shrink-0 text-amber-600 dark:text-amber-400" />
+        <div className="flex items-center gap-2 border-b border-[var(--tb-border)] bg-amber-500/10 px-5 py-2.5 text-xs font-medium text-amber-800 dark:text-amber-200">
+          <Headphones size={15} className="shrink-0 text-amber-600 dark:text-amber-400" />
           <span>
-            <strong>Listening Mode:</strong> English translations are hidden by default to test ear
-            comprehension. Tap <em>Reveal translation</em> on any line to check your understanding.
+            <strong>Listening Mode:</strong> English translations are hidden by default to test ear comprehension. Tap <em>Reveal English</em> on any sentence to verify your understanding.
           </span>
         </div>
       )}
 
       {learningMode === "shadowing" && (
-        <div className="flex items-center gap-2 border-b border-[var(--tb-border)] bg-indigo-500/10 px-5 py-2 text-xs font-medium text-indigo-800 dark:text-indigo-200">
-          <Volume2 size={14} className="shrink-0 text-indigo-600 dark:text-indigo-400" />
+        <div className="flex items-center gap-2 border-b border-[var(--tb-border)] bg-indigo-500/10 px-5 py-2.5 text-xs font-medium text-indigo-800 dark:text-indigo-200">
+          <Volume2 size={15} className="shrink-0 text-indigo-600 dark:text-indigo-400" />
           <span>
-            <strong>Shadowing Mode:</strong> Listen to the natural cadence and repeat each sentence
-            immediately after the speaker. Use <em>Roleplay & Shadow</em> to record and compare.
+            <strong>Shadowing Mode:</strong> Listen to the native rhythm and shadow each sentence. Use <em>Roleplay & Shadow</em> to practice recording your own lines.
           </span>
         </div>
       )}
 
       {learningMode === "roleplay" && (
-        <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--tb-border)] bg-emerald-500/10 px-5 py-2 text-xs">
-          <div className="flex items-center gap-2">
-            <Users size={14} className="shrink-0 text-emerald-600 dark:text-emerald-400" />
-            <span className="font-bold text-emerald-800 dark:text-emerald-200">
+        <div className="border-b border-[var(--tb-border)] bg-emerald-500/10 px-5 py-2.5 text-xs space-y-2">
+          <div className="flex items-center gap-2 font-medium text-emerald-800 dark:text-emerald-200">
+            <Users size={15} className="shrink-0 text-emerald-600 dark:text-emerald-400" />
+            <span>
+              <strong>Roleplay Practice:</strong> Choose a character role below. Your lines will be highlighted with special borders.
+            </span>
+          </div>
+          <div className="flex flex-wrap items-center gap-2 pt-0.5">
+            <span className="text-[11px] font-bold text-emerald-900 dark:text-emerald-100">
               Practice Role:
             </span>
-            <div className="flex items-center gap-1">
-              {uniqueSpeakers.map((spk) => (
-                <button
-                  key={spk}
-                  type="button"
-                  onClick={() => setSelectedRole(spk)}
-                  className={cn(
-                    "tb-focus-ring rounded-lg px-2.5 py-1 text-xs font-bold transition-all cursor-pointer font-japanese",
-                    (selectedRole || uniqueSpeakers[0]) === spk
-                      ? "bg-emerald-600 text-white shadow-2xs"
-                      : "bg-[var(--tb-surface)] text-[var(--tb-text-secondary)] border border-[var(--tb-border)] hover:border-emerald-500/50"
-                  )}
-                >
-                  {spk}
-                </button>
-              ))}
-            </div>
+            {uniqueSpeakers.map((spk) => (
+              <button
+                key={spk}
+                type="button"
+                onClick={() => setSelectedRole(spk)}
+                className={cn(
+                  "tb-focus-ring rounded-lg border px-2.5 py-1 text-xs font-bold font-japanese transition-all cursor-pointer",
+                  selectedRole === spk
+                    ? "border-emerald-500 bg-emerald-600 text-white shadow-2xs"
+                    : "border-emerald-500/30 bg-[var(--tb-surface)] text-[var(--tb-text-primary)] hover:border-emerald-500/60"
+                )}
+              >
+                {spk}
+              </button>
+            ))}
           </div>
-          <button
-            type="button"
-            onClick={onStartRoleplay}
-            className="inline-flex items-center gap-1 font-bold text-emerald-700 dark:text-emerald-300 hover:underline cursor-pointer"
-          >
-            <Mic size={13} />
-            <span>Launch Recording Studio &rarr;</span>
-          </button>
         </div>
       )}
 
-      {learningMode === "vocab" && matchingVocabItems.length > 0 && (
-        <div className="border-b border-[var(--tb-border)] bg-[var(--tb-accent-soft)]/30 px-5 py-2.5 text-xs">
-          <div className="flex flex-wrap items-center justify-between gap-2 mb-1.5">
-            <span className="font-bold text-[var(--primary-fg)] flex items-center gap-1.5">
-              <BookOpen size={13} />
-              <span>{matchingVocabItems.length} Lesson Vocabulary Words in this Scene</span>
-            </span>
-            <span className="text-[11px] text-[var(--tb-text-secondary)]">
-              Tap any word in the bubbles below for instant definitions & pitch accent
-            </span>
-          </div>
-          <div className="flex flex-wrap gap-1.5">
+      {/* Vocabulary Mentions in this Dialogue */}
+      {matchingVocabItems.length > 0 && (
+        <div className="flex flex-wrap items-center gap-2 border-b border-[var(--tb-border)] bg-[var(--surface-overlay)]/30 px-5 py-2 text-xs">
+          <span className="flex items-center gap-1 font-bold text-[var(--tb-text-secondary)]">
+            <BookOpen size={13} />
+            <span>Lesson Words in Scene:</span>
+          </span>
+          <div className="flex flex-wrap items-center gap-1.5">
             {matchingVocabItems.map((v) => (
               <button
-                key={v.word}
+                key={v.id}
                 type="button"
-                onClick={() => onSelectVocab?.(v)}
-                className="tb-focus-ring inline-flex items-center gap-1 rounded-md border border-[var(--tb-primary)]/25 bg-[var(--tb-surface)] px-2 py-0.5 font-japanese text-xs font-bold text-[var(--tb-text-primary)] hover:border-[var(--tb-primary)] hover:text-[var(--primary-fg)] transition-all cursor-pointer"
+                onClick={() => onSelectVocab && onSelectVocab(v)}
+                className="tb-focus-ring inline-flex items-center gap-1 rounded-md border border-[var(--tb-border)] bg-[var(--tb-surface)] px-2 py-0.5 text-xs font-japanese font-medium text-[var(--tb-text-primary)] hover:border-[var(--tb-primary)] hover:text-[var(--primary-fg)] transition-colors cursor-pointer"
                 title={`${v.word} (${v.reading}) - ${v.meaning}`}
               >
                 <span>{v.word}</span>
@@ -690,14 +535,11 @@ export function DialogueCard({
       )}
 
       {/* ------------------------------------------------------------------ */}
-      {/* Dialogue Conversation Area (Transcript vs Progressive Playback)    */}
+      {/* Dialogue Conversation Area: Maintains stable height                */}
       {/* ------------------------------------------------------------------ */}
       <div
         ref={containerRef}
-        className={cn(
-          "relative p-4 sm:p-6 md:p-8 space-y-6 sm:space-y-7 bg-[var(--tb-bg)]/40 min-h-[300px]",
-          presentationMode === "playback" && "pb-32 sm:pb-36"
-        )}
+        className="relative h-[460px] sm:h-[520px] overflow-y-auto p-4 sm:p-6 md:p-8 space-y-6 sm:space-y-7 bg-[var(--tb-bg)]/40 scroll-smooth"
       >
         {displayedLines.map((line, idx) => {
           const speakerIndex = uniqueSpeakers.indexOf(line.speakerJa);
@@ -706,46 +548,24 @@ export function DialogueCard({
           const isUserRole =
             learningMode === "roleplay" && selectedRole === line.speakerJa;
 
-          // Check if this line is actively speaking audio
-          const isPlayingThisSentenceInPlayback =
-            isPlaybackMode &&
-            effectiveActiveSentenceIndex === idx &&
-            playbackStatus === "playing";
-
-          const isPlayingThisSentenceInAudioSingleton =
-            isAudioPlaying &&
-            activeKey === resolveSentenceAudio(line.ja, line.audioSrc).key;
-
+          // Character speaks when audio is actively playing for this line
           const isLineActiveSpeaking =
-            isPlayingThisSentenceInPlayback ||
-            isPlayingThisSentenceInAudioSingleton ||
-            (isPlayingScene && playingLineIndex === idx);
+            (isPlaying && activeSentenceIndex === idx) ||
+            (isAudioPlaying &&
+              activeKey === resolveSentenceAudio(line.ja, line.audioSrc).key);
 
           const isLineEnglishVisible =
-            isPlaybackMode
-              ? showPlaybackTranslation
-              : learningMode === "listening"
+            learningMode === "listening"
               ? showEnglish || !!revealedEnglishLines[idx]
               : showEnglish;
-
-          // Dim inactive messages slightly during progressive playback to emphasize current turn
-          const isDimmedInPlayback =
-            isPlaybackMode &&
-            effectiveActiveSentenceIndex >= 0 &&
-            effectiveActiveSentenceIndex !== idx;
 
           return (
             <div
               key={idx}
-              ref={(el) => {
-                lineElementRefs.current[idx] = el;
-              }}
               className={cn(
                 "flex items-start gap-3 sm:gap-4 transition-all duration-300",
                 isRightAligned ? "flex-row-reverse" : "flex-row",
-                isPlaybackMode &&
-                  "animate-in fade-in slide-in-from-bottom-2 duration-300",
-                isDimmedInPlayback && "opacity-75 hover:opacity-100"
+                isPlaying && "animate-in fade-in slide-in-from-bottom-2 duration-300"
               )}
             >
               {/* Circular Character Avatar (52-60px on desktop, ~44px mobile) */}
@@ -757,7 +577,6 @@ export function DialogueCard({
                   size="lg"
                   shape="circle"
                   fallbackTheme={theme}
-                  title={`${line.speakerJa} (${line.speaker})`}
                   className={cn(
                     "ring-offset-2 ring-offset-[var(--tb-bg)] transition-transform duration-200",
                     isLineActiveSpeaking && "scale-105"
@@ -768,7 +587,7 @@ export function DialogueCard({
                 </span>
               </div>
 
-              {/* Chat Message Bubble (Responsive 68-72% max-width on desktop) */}
+              {/* Chat Message Bubble */}
               <div
                 className={cn(
                   "relative max-w-[88%] sm:max-w-[75%] md:max-w-[70%] rounded-3xl p-4 sm:p-5 shadow-xs transition-all duration-300 text-left border",
@@ -867,246 +686,7 @@ export function DialogueCard({
             </div>
           );
         })}
-
-        {/* ------------------------------------------------------------------ */}
-        {/* Completion Card in Playback Mode                                    */}
-        {/* ------------------------------------------------------------------ */}
-        {isPlaybackMode &&
-          playbackStatus === "completed" && (
-            <div className="mt-8 rounded-3xl border border-emerald-500/30 bg-emerald-500/10 p-6 text-center space-y-3.5 animate-in fade-in slide-in-from-bottom-3 duration-300 shadow-sm">
-              <div className="inline-flex size-12 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 ring-4 ring-emerald-500/10">
-                <CheckCircle2 size={24} />
-              </div>
-              <div className="space-y-1">
-                <h4 className="text-base font-bold text-emerald-950 dark:text-emerald-100">
-                  Dialogue Complete!
-                </h4>
-                <p className="text-xs text-emerald-800/80 dark:text-emerald-200/80">
-                  You listened to all {scene.lines.length} conversational sentences.
-                </p>
-              </div>
-
-              <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
-                <button
-                  type="button"
-                  onClick={handleRestart}
-                  className="tb-focus-ring inline-flex items-center gap-1.5 rounded-xl bg-emerald-600 px-3.5 py-1.5 text-xs font-bold text-white shadow-2xs hover:bg-emerald-700 transition-colors cursor-pointer"
-                >
-                  <RotateCcw size={13} />
-                  <span>Replay Scene</span>
-                </button>
-
-                <button
-                  type="button"
-                  onClick={handleExitPlayback}
-                  className="tb-focus-ring inline-flex items-center gap-1.5 rounded-xl border border-[var(--tb-border)] bg-[var(--tb-surface)] px-3.5 py-1.5 text-xs font-bold text-[var(--tb-text-primary)] hover:border-emerald-500/40 transition-colors cursor-pointer"
-                >
-                  <FileText size={13} />
-                  <span>Return to Transcript</span>
-                </button>
-
-                <button
-                  type="button"
-                  onClick={onStartRoleplay}
-                  className="tb-focus-ring inline-flex items-center gap-1.5 rounded-xl bg-[var(--tb-primary)] px-3.5 py-1.5 text-xs font-bold text-white shadow-2xs hover:bg-[var(--tb-primary-hover)] transition-colors cursor-pointer"
-                >
-                  <Mic size={13} />
-                  <span>Roleplay & Shadow</span>
-                </button>
-              </div>
-            </div>
-          )}
       </div>
-
-      {/* ------------------------------------------------------------------ */}
-      {/* Sticky Playback Control Bar (Full Scene Playback Mode Only)         */}
-      {/* ------------------------------------------------------------------ */}
-      {isPlaybackMode && (
-        <div className="sticky bottom-3 z-30 mx-auto max-w-2xl px-3 sm:px-4">
-          <div className="rounded-2xl border border-[var(--tb-border)] bg-[var(--tb-surface)]/95 backdrop-blur-md p-3 sm:p-3.5 shadow-xl space-y-2.5">
-            {/* Progress Track & Sentence Counter */}
-            <div className="flex items-center justify-between gap-3 text-[11px] font-bold text-[var(--tb-text-secondary)]">
-              <span
-                data-testid="sentence-counter"
-                aria-label={`Sentence ${effectiveActiveSentenceIndex >= 0 ? effectiveActiveSentenceIndex + 1 : 1} of ${scene.lines.length}`}
-              >
-                Sentence {effectiveActiveSentenceIndex >= 0 ? effectiveActiveSentenceIndex + 1 : 1} of {scene.lines.length}
-              </span>
-              <span>
-                {Math.round(
-                  (((effectiveActiveSentenceIndex >= 0 ? effectiveActiveSentenceIndex + 1 : 0)) /
-                    scene.lines.length) *
-                    100
-                )}
-                %
-              </span>
-            </div>
-
-            {/* Visual Progress Bar */}
-            <div className="h-1.5 w-full rounded-full bg-[var(--tb-border)]/60 overflow-hidden">
-              <div
-                className="h-full bg-gradient-to-r from-[var(--tb-primary)] to-blue-500 transition-all duration-300 rounded-full"
-                style={{
-                  width: `${
-                    (((effectiveActiveSentenceIndex >= 0 ? effectiveActiveSentenceIndex + 1 : 0)) /
-                      scene.lines.length) *
-                    100
-                  }%`,
-                }}
-              />
-            </div>
-
-            {/* Playback Controls Row */}
-            <div className="flex flex-wrap items-center justify-between gap-2 pt-0.5">
-              {/* Left Group: Nav & Audio Stepping */}
-              <div className="flex items-center gap-1 sm:gap-1.5">
-                {/* Previous Sentence */}
-                <button
-                  type="button"
-                  onClick={() => handleJumpToLine(effectiveActiveSentenceIndex - 1)}
-                  disabled={effectiveActiveSentenceIndex <= 0}
-                  className="tb-focus-ring grid size-8 place-items-center rounded-xl border border-[var(--tb-border)] bg-[var(--tb-surface)] text-[var(--tb-text-primary)] hover:border-[var(--tb-primary)] disabled:opacity-30 disabled:pointer-events-none transition-colors cursor-pointer"
-                  aria-label="Previous sentence"
-                  title="Previous sentence"
-                >
-                  <SkipBack size={15} />
-                </button>
-
-                {/* Primary Play / Pause */}
-                {isActuallyPlaying ? (
-                  <button
-                    type="button"
-                    onClick={handlePause}
-                    className="tb-focus-ring grid size-9 sm:size-10 place-items-center rounded-2xl bg-amber-500 text-white shadow-md hover:bg-amber-600 active:scale-95 transition-all cursor-pointer"
-                    aria-label="Pause playback"
-                    title="Pause playback"
-                  >
-                    <Pause size={18} fill="currentColor" />
-                  </button>
-                ) : (
-                  <button
-                    type="button"
-                    onClick={
-                      playbackStatus === "completed"
-                        ? handleRestart
-                        : handleResume
-                    }
-                    className="tb-focus-ring grid size-9 sm:size-10 place-items-center rounded-2xl bg-[var(--tb-primary)] text-white shadow-md hover:bg-[var(--tb-primary-hover)] active:scale-95 transition-all cursor-pointer"
-                    aria-label="Resume playback"
-                    title="Resume playback"
-                  >
-                    <Play size={18} fill="currentColor" />
-                  </button>
-                )}
-
-                {/* Next Sentence */}
-                <button
-                  type="button"
-                  onClick={() => handleJumpToLine(effectiveActiveSentenceIndex + 1)}
-                  disabled={effectiveActiveSentenceIndex >= scene.lines.length - 1}
-                  className="tb-focus-ring grid size-8 place-items-center rounded-xl border border-[var(--tb-border)] bg-[var(--tb-surface)] text-[var(--tb-text-primary)] hover:border-[var(--tb-primary)] disabled:opacity-30 disabled:pointer-events-none transition-colors cursor-pointer"
-                  aria-label="Next sentence"
-                  title="Next sentence"
-                >
-                  <SkipForward size={15} />
-                </button>
-
-                {/* Replay Active Sentence */}
-                <button
-                  type="button"
-                  onClick={() =>
-                    handleJumpToLine(
-                      effectiveActiveSentenceIndex >= 0 ? effectiveActiveSentenceIndex : 0
-                    )
-                  }
-                  className="tb-focus-ring grid size-8 place-items-center rounded-xl border border-[var(--tb-border)] bg-[var(--tb-surface)] text-[var(--tb-text-secondary)] hover:text-[var(--tb-text-primary)] hover:border-[var(--tb-primary)] transition-colors cursor-pointer"
-                  aria-label="Replay current sentence"
-                  title="Replay current sentence"
-                >
-                  <RotateCcw size={14} />
-                </button>
-              </div>
-
-              {/* Right Group: Settings & Options */}
-              <div className="flex items-center gap-1.5 sm:gap-2">
-                {/* Speed Pills */}
-                <div className="hidden xs:inline-flex items-center rounded-xl border border-[var(--tb-border)] bg-[var(--tb-surface)] p-0.5 text-[11px] font-bold">
-                  {[0.75, 1.0, 1.25].map((rate) => (
-                    <button
-                      key={rate}
-                      type="button"
-                      onClick={() => setPlaybackSpeed(rate)}
-                      className={cn(
-                        "rounded-lg px-2 py-0.5 transition-colors cursor-pointer",
-                        playbackSpeed === rate
-                          ? "bg-[var(--tb-primary)] text-white shadow-2xs"
-                          : "text-[var(--tb-text-secondary)] hover:text-[var(--tb-text-primary)]"
-                      )}
-                    >
-                      {rate}x
-                    </button>
-                  ))}
-                </div>
-
-                {/* Translation Visibility Toggle */}
-                <button
-                  type="button"
-                  onClick={() => setShowPlaybackTranslation((prev) => !prev)}
-                  className={cn(
-                    "tb-focus-ring inline-flex items-center gap-1 rounded-xl border px-2.5 py-1.5 text-xs font-bold transition-colors cursor-pointer",
-                    showPlaybackTranslation
-                      ? "border-[var(--tb-primary)]/40 bg-[var(--tb-accent-soft)] text-[var(--primary-fg)]"
-                      : "border-[var(--tb-border)] bg-[var(--tb-surface)] text-[var(--tb-text-secondary)] hover:text-[var(--tb-text-primary)]"
-                  )}
-                  aria-label={
-                    showPlaybackTranslation
-                      ? "Hide English translations"
-                      : "Show English translations"
-                  }
-                  title="Toggle translations"
-                >
-                  <Languages size={14} />
-                  <span className="hidden sm:inline">English</span>
-                </button>
-
-                {/* Auto-scroll Toggle */}
-                <button
-                  type="button"
-                  onClick={() => setAutoScroll((prev) => !prev)}
-                  className={cn(
-                    "tb-focus-ring grid size-8 place-items-center rounded-xl border transition-colors cursor-pointer",
-                    autoScroll
-                      ? "border-sky-500/40 bg-sky-500/10 text-sky-600 dark:text-sky-300"
-                      : "border-[var(--tb-border)] bg-[var(--tb-surface)] text-[var(--tb-text-secondary)] hover:text-[var(--tb-text-primary)]"
-                  )}
-                  aria-label={
-                    autoScroll ? "Disable auto-scroll" : "Enable auto-scroll"
-                  }
-                  title={
-                    autoScroll
-                      ? "Auto-scroll: Enabled"
-                      : "Auto-scroll: Disabled"
-                  }
-                >
-                  <ArrowDownCircle size={15} />
-                </button>
-
-                {/* Return to Transcript Mode */}
-                <button
-                  type="button"
-                  onClick={handleExitPlayback}
-                  className="tb-focus-ring inline-flex items-center gap-1 rounded-xl border border-[var(--tb-border)] bg-[var(--tb-surface)] px-2.5 py-1.5 text-xs font-bold text-[var(--tb-text-primary)] hover:border-[var(--tb-primary)] transition-colors cursor-pointer"
-                  aria-label="View full transcript"
-                  title="Return to Transcript"
-                >
-                  <FileText size={14} />
-                  <span className="hidden sm:inline">Transcript</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
