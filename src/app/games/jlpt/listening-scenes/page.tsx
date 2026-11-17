@@ -13,12 +13,12 @@ import {
   createListeningSceneSession,
   getListeningSceneCountsByLevel,
   type ListeningSceneLevel,
-} from "@/engine/jlptListeningScene";
+} from "@/features/jlpt/engine/jlptListeningScene";
 import {
   ALL_LISTENING_SCENES,
   loadListeningScenesForLevels,
 } from "@/data/jlpt/listeningScenesData";
-import { JlptBookletSetupShell } from "@/components/jlpt/JlptBookletSetupShell";
+import { JlptBookletSetupShell } from "@/features/jlpt/components/JlptBookletSetupShell";
 
 const LEVEL_OPTIONS: readonly ListeningSceneLevel[] = ["N5", "N4", "N3", "N2", "N1"];
 const SCENE_COUNTS: readonly (3 | 5 | 10)[] = [3, 5, 10];

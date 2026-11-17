@@ -4,8 +4,8 @@ import { Suspense, useEffect, useReducer, useRef, useState, type FormEvent } fro
 import { Check, Sparkles, Volume2, VolumeX, X } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 import { loadVocabularyData, vocabularyLevels, type VocabularyLevel } from "@/data/vocabulary";
-import { checkVocabularyAnswer } from "@/engine/vocabularyMatcher";
-import { GameLayout } from "@/lib/game-core/layout";
+import { checkVocabularyAnswer } from "@/features/vocabulary/engine/vocabulary-matcher";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import { getGameResult, getGameSession, saveGameResult } from "@/lib/game-core/storage";
 import {
@@ -17,8 +17,8 @@ import {
   vocabularyReducer,
   type StoredVocabularySession,
   type VocabularyState,
-} from "@/lib/game/vocabulary";
-import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
+} from "@/features/vocabulary/engine/vocabulary";
+import { QuitSessionDialog, useQuitSessionGuard } from "@/components/layout/quit-session";
 import { ingestVocabularySession } from "@/lib/srs/service";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";

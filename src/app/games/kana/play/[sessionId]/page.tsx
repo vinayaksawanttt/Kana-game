@@ -12,10 +12,10 @@ import {
   type StoredKanaSession,
 } from "@/lib/game/session";
 import { localStorageAdapter } from "@/lib/storage/kana";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import { getGameSession } from "@/lib/game-core/storage";
-import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
+import { QuitSessionDialog, useQuitSessionGuard } from "@/components/layout/quit-session";
 import { ingestKanaSession } from "@/lib/srs/service";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";

@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowLeft, ArrowRight, BookOpen, Check, RotateCcw } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import { saveGameSession } from "@/lib/game-core/storage";
 import { createKanaSession } from "@/lib/game/session";

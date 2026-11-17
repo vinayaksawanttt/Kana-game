@@ -18,7 +18,7 @@ import {
   XCircle,
   Zap,
 } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
@@ -32,7 +32,7 @@ import {
   createInfoScannerSession,
   type InfoScannerResultSummary,
   type InfoScannerSession,
-} from "@/engine/jlptInfoScanner";
+} from "@/features/jlpt/engine/jlptInfoScanner";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
 
 export default function InfoScannerResultPage() {

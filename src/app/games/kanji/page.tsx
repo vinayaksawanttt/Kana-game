@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 
 const modes = [
   { title: "Meaning", description: "Choose the English meaning for each kanji.", href: "/games/kanji/meaning", live: true },

@@ -13,6 +13,20 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
   ]),
+  {
+    files: ["src/**/engine/**/*.{ts,tsx}", "src/lib/game-core/**/*.{ts,tsx}", "src/data/**/*.{ts,tsx}"],
+    rules: {
+      "no-restricted-imports": [
+        "error",
+        {
+          patterns: [
+            { group: ["react", "react-*", "next", "next/*"], message: "Engine, game-core, and data modules must not import React or Next.js." },
+            { group: ["@/components/*", "@/hooks/*"], message: "Engine, game-core, and data modules must not import UI components or hooks." },
+          ],
+        },
+      ],
+    },
+  },
 ]);
 
 export default eslintConfig;

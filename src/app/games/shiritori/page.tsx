@@ -3,9 +3,9 @@
 import { useRouter } from "next/navigation";
 import { ArrowRight, BookOpen, Check, Shield, Sparkles, Users, Zap } from "lucide-react";
 import { useState } from "react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
-import type { ShiritoriDifficulty, ShiritoriMode, ShiritoriSettings } from "@/engine/shiritori";
+import type { ShiritoriDifficulty, ShiritoriMode, ShiritoriSettings } from "@/features/shiritori/engine/shiritori";
 
 const modes: Array<{
   id: ShiritoriMode;

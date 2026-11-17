@@ -11,7 +11,7 @@ import {
   Sparkles,
   XCircle,
 } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
@@ -25,7 +25,7 @@ import {
   summarizeSynonymMatchSession,
   type SynonymMatchResultSummary,
   type SynonymMatchSession,
-} from "@/engine/jlptSynonymMatch";
+} from "@/features/jlpt/engine/jlptSynonymMatch";
 import { AudioButton } from "@/components/ui/AudioButton";
 
 type ReviewFilter = "all" | "missed" | "correct";

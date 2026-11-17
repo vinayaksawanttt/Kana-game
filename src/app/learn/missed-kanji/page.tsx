@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PersonalSheetClient } from "@/components/learn/PersonalSheetClient";
+import { PersonalSheetClient } from "@/features/learn/components/PersonalSheetClient";
 
 export const metadata: Metadata = {
   title: "Kanji You Keep Missing | Learning Hub",

@@ -13,7 +13,7 @@ import {
   Volume2,
   XCircle,
 } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
@@ -27,7 +27,7 @@ import {
   summarizeStarScrambleSession,
   type StarScrambleResultSummary,
   type StarScrambleSession,
-} from "@/engine/jlptStarScramble";
+} from "@/features/jlpt/engine/jlptStarScramble";
 import { JlptPaperIllustration } from "@/components/icons/JlptPaperIllustration";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
 import { addGrammarToSrs } from "@/lib/srs/service";

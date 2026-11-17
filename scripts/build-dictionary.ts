@@ -15,7 +15,7 @@
  */
 import { copyFile, mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import { cleanMeanings } from "../src/lib/kanji-data/clean-meanings";
+import { cleanMeanings } from "../src/features/kanji/engine/clean-meanings";
 
 interface RawKanji {
   kanji: string;

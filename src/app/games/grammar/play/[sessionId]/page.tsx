@@ -4,19 +4,19 @@ import { Suspense, useCallback, useEffect, useReducer, useRef, useState } from "
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { BookOpen, Check, Flag, Layers, Lightbulb, PenLine, RotateCcw, Sparkles, X } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import { getGameResult, getGameSession, saveGameResult } from "@/lib/game-core/storage";
-import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
+import { QuitSessionDialog, useQuitSessionGuard } from "@/components/layout/quit-session";
 import {
   buildGrammarResult,
   createGrammarState,
   grammarReducer,
   type GrammarSessionState,
   type StoredGrammarSession,
-} from "@/engine/grammarSession";
+} from "@/features/grammar/engine/grammar-session";
 import { getGrammarDoc, type GrammarDoc } from "@/lib/content/grammar";
-import { GrammarGuideView } from "@/components/grammar-guide-view";
+import { GrammarGuideView } from "@/features/grammar/components/grammar-guide-view";
 import { ingestGrammarSession } from "@/lib/srs/service";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
 import { AudioButton } from "@/components/ui/AudioButton";

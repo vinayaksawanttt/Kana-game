@@ -12,7 +12,7 @@ import {
   Volume2,
   XCircle,
 } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
@@ -27,11 +27,11 @@ import {
   summarizePhoneticTrapSession,
   type PhoneticTrapResultSummary,
   type PhoneticTrapSession,
-} from "@/engine/jlptPhoneticTraps";
+} from "@/features/jlpt/engine/jlptPhoneticTraps";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
 import { addVocabularyToSrs } from "@/lib/srs/service";
 import { FuriganaText } from "@/components/ui/FuriganaText";
-import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
+import { QuitSessionDialog, useQuitSessionGuard } from "@/components/layout/quit-session";
 
 function loadInitialSession(sessionId: string): PhoneticTrapSession {
   const existing = getGameSession<PhoneticTrapSession>("jlpt-traps", sessionId);

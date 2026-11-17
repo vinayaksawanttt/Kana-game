@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Sparkles, BookOpen, Layers, CheckCircle2 } from "lucide-react";
-import { LearnHeader } from "@/components/learn/LearnHeader";
-import { LearnHubClient } from "@/components/learn/LearnHubClient";
+import { LearnHeader } from "@/features/learn/components/LearnHeader";
+import { LearnHubClient } from "@/features/learn/components/LearnHubClient";
 import { getAllLearnDocs } from "@/lib/content/learn";
 
 export const metadata: Metadata = {

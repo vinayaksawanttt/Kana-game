@@ -10,7 +10,7 @@ import {
   SkipForward,
   XCircle,
 } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
@@ -25,12 +25,12 @@ import {
   synonymMatchReducer,
   type SynonymMatchResultSummary,
   type SynonymMatchSession,
-} from "@/engine/jlptSynonymMatch";
+} from "@/features/jlpt/engine/jlptSynonymMatch";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
 import { addVocabularyToSrs } from "@/lib/srs/service";
 import { AudioButton } from "@/components/ui/AudioButton";
 import { FuriganaText } from "@/components/ui/FuriganaText";
-import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
+import { QuitSessionDialog, useQuitSessionGuard } from "@/components/layout/quit-session";
 
 function loadInitialSession(sessionId: string): SynonymMatchSession {
   const existing = getGameSession<SynonymMatchSession>("jlpt-synonym", sessionId);

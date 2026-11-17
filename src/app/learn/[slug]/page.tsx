@@ -2,10 +2,10 @@ import { Suspense } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Clock, BookOpen } from "lucide-react";
-import { LearnHeader } from "@/components/learn/LearnHeader";
-import { MdxComponents } from "@/components/learn/MdxComponents";
-import { PrintButton } from "@/components/learn/PrintButton";
-import { TableOfContents } from "@/components/learn/TableOfContents";
+import { LearnHeader } from "@/features/learn/components/LearnHeader";
+import { MdxComponents } from "@/features/learn/components/MdxComponents";
+import { PrintButton } from "@/features/learn/components/PrintButton";
+import { TableOfContents } from "@/features/learn/components/TableOfContents";
 import { getAllLearnDocs, getLearnDocBySlug } from "@/lib/content/learn";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
 

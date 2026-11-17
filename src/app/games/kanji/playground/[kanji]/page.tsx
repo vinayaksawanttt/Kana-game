@@ -10,7 +10,7 @@ import {
   Search,
   Volume2,
 } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import {
   getKanjiByLevel,
   type KanjiLevel,
@@ -23,7 +23,7 @@ import { getKanjiComposites, type KanjiCompositeItem } from "@/data/kanjiVocab";
 import { getRadicalsForKanji, type RadicalRecord } from "@/data/radicals";
 import { getKanjiStrokeData, type KanjiStrokeData } from "@/data/strokes";
 import { addKanjiToSrs } from "@/lib/srs/service";
-import { StrokePracticeCanvas } from "@/components/kanji/StrokePracticeCanvas";
+import { StrokePracticeCanvas } from "@/features/kanji/components/StrokePracticeCanvas";
 import { getHomophoneGroupForKanji } from "@/engine/homophones";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
 import { buildKanjiReadAllQueue } from "@/engine/audio";

@@ -14,7 +14,7 @@ import {
   katakanaToHiragana,
   type MoraAudioStep,
 } from "@/engine/audio";
-import { romajiToHiragana } from "@/engine/shiritori";
+import { romajiToHiragana } from "@/features/shiritori/engine/shiritori";
 
 const STORAGE_KEY = "kana-autoplay-audio";
 const SPEED_KEY = "kana-playback-speed";

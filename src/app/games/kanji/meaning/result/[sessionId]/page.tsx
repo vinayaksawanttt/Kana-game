@@ -3,7 +3,7 @@
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { ArrowRight, Check, RotateCcw, Trophy, X } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import { createKanjiMeaningSession, type KanjiMeaningResult, type KanjiMeaningStatus } from "@/lib/game/kanji-meaning";
 import { formatTime } from "@/lib/game-core/time";

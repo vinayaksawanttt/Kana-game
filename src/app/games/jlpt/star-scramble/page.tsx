@@ -12,8 +12,8 @@ import {
   getStarScrambleCountsByLevel,
   type StarScrambleLevel,
   type StarScrambleSessionSize,
-} from "@/engine/jlptStarScramble";
-import { JlptBookletSetupShell } from "@/components/jlpt/JlptBookletSetupShell";
+} from "@/features/jlpt/engine/jlptStarScramble";
+import { JlptBookletSetupShell } from "@/features/jlpt/components/JlptBookletSetupShell";
 
 const SESSION_SIZES: readonly StarScrambleSessionSize[] = [10, 15, 20];
 

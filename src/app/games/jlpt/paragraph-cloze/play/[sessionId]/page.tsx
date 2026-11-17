@@ -27,7 +27,7 @@ import {
   Volume2,
   XCircle,
 } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
@@ -45,14 +45,14 @@ import {
   type ClozeBlankItem,
   type ParagraphClozeResultSummary,
   type ParagraphClozeSession,
-} from "@/engine/jlptParagraphCloze";
+} from "@/features/jlpt/engine/jlptParagraphCloze";
 import { buildStoryAudioQueue, type PlaybackSpeed } from "@/engine/audio";
-import { useStoryNarrator } from "@/hooks/useStoryNarrator";
+import { useStoryNarrator } from "@/features/stories/hooks/use-story-narrator";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
 import {
   QuitSessionDialog,
   useQuitSessionGuard,
-} from "@/lib/game-core/quit-session";
+} from "@/components/layout/quit-session";
 
 function loadInitialSession(sessionId: string): ParagraphClozeSession {
   const existing = getGameSession<ParagraphClozeSession>("jlpt-cloze", sessionId);

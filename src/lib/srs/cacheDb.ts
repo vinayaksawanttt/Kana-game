@@ -1,5 +1,5 @@
 import Dexie, { type Table } from "dexie";
-import type { ShiritoriWord } from "@/engine/shiritori";
+import type { ShiritoriWord } from "@/features/shiritori/engine/shiritori";
 
 export interface CacheMetaRecord {
   key: string;       // e.g. "shiritori/words.json" or "dictionary-index.json"

@@ -6,7 +6,7 @@ import {
   type JlptLevel,
   type ListeningPoolData,
   type ListeningSettings,
-} from "@/engine/listening";
+} from "@/features/listening/engine/listening";
 
 export async function loadListeningPool(
   settings: Pick<ListeningSettings, "subMode" | "levels">

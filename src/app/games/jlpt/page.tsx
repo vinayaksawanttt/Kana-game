@@ -3,22 +3,22 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Clock } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { JlptPaperIllustration } from "@/components/icons/JlptPaperIllustration";
 import {
   STAR_SCRAMBLE_ITEMS,
   getStarScrambleCountsByLevel,
   type StarScrambleLevel,
-} from "@/engine/jlptStarScramble";
+} from "@/features/jlpt/engine/jlptStarScramble";
 import {
   PHONETIC_TRAP_ITEMS,
   getPhoneticTrapCountsByLevel,
   type PhoneticTrapLevel,
-} from "@/engine/jlptPhoneticTraps";
+} from "@/features/jlpt/engine/jlptPhoneticTraps";
 import {
   SYNONYM_MATCH_ITEMS,
   getSynonymMatchCountsByLevel,
-} from "@/engine/jlptSynonymMatch";
+} from "@/features/jlpt/engine/jlptSynonymMatch";
 import {
   WORD_USAGE_ITEMS,
   getWordUsageCountsByLevel,
@@ -27,19 +27,19 @@ import {
 import {
   INSTANT_REPLY_ITEMS,
   getInstantReplyCountsByLevel,
-} from "@/engine/jlptInstantReply";
+} from "@/features/jlpt/engine/jlptInstantReply";
 import {
   PARAGRAPH_CLOZE_PASSAGES,
   getParagraphClozeCountsByLevel,
-} from "@/engine/jlptParagraphCloze";
+} from "@/features/jlpt/engine/jlptParagraphCloze";
 import {
   INFO_SCANNER_DOCUMENTS,
   getInfoScannerCountsByLevel,
-} from "@/engine/jlptInfoScanner";
+} from "@/features/jlpt/engine/jlptInfoScanner";
 import {
   getListeningSceneCountsByLevel,
   type ListeningSceneLevel,
-} from "@/engine/jlptListeningScene";
+} from "@/features/jlpt/engine/jlptListeningScene";
 import { ALL_LISTENING_SCENES } from "@/data/jlpt/listeningScenesData";
 
 type ActiveLevelSelection = "N5" | "N4" | "N3" | "N2" | "N1" | "all";

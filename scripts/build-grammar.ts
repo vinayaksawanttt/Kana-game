@@ -31,7 +31,7 @@ import {
   parseTitle,
   shortHash,
   slugify,
-} from "../src/lib/grammar-data/process";
+} from "../src/features/grammar/lib/process";
 
 interface RawGrammarEntry {
   title: string;

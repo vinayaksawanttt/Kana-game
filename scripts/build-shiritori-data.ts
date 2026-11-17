@@ -10,7 +10,7 @@ import {
   katakanaToHiragana,
   type ShiritoriLevel,
   type ShiritoriWord,
-} from "../src/engine/shiritori";
+} from "../src/features/shiritori/engine/shiritori";
 import { DeepLClient, getDeepLConfig } from "./lib/deepl-client";
 
 interface RawVocabularyRow {

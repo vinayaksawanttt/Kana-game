@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState, type ChangeEvent } from "react";
 import Link from "next/link";
 import { ArrowRight, BookOpen, CheckCircle2, Download, RotateCcw, Upload, Volume2, VolumeX } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import { grammarGuideHref } from "@/data/grammar";
 import {

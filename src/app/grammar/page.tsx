@@ -15,12 +15,12 @@ import {
   Search,
   X,
 } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { grammarLevels, isGrammarLevel, type GrammarCatalogEntry, type GrammarLevel } from "@/data/grammar";
 import { getGrammarCatalogByLevel } from "@/lib/content/grammar";
 import { addGrammarToSrs, getAllSrsItems } from "@/lib/srs/service";
 import { AudioButton } from "@/components/ui/AudioButton";
-import { romajiToHiragana } from "@/engine/shiritori";
+import { romajiToHiragana } from "@/features/shiritori/engine/shiritori";
 
 const levelTabs: Array<{ key: "All" | GrammarLevel; label: string }> = [
   { key: "All", label: "All levels" },

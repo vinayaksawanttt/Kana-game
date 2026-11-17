@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ArrowRight, Check, Clock, Headphones, RotateCcw, Sparkles } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import { saveGameSession } from "@/lib/game-core/storage";
 import { kanaCharacters, type KanaGroup, type ScriptSelection } from "@/data/kana";
@@ -16,7 +16,7 @@ import {
   type ListeningSettings,
   type ListeningSubMode,
   type SentenceOptionLanguage,
-} from "@/engine/listening";
+} from "@/features/listening/engine/listening";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
 
 const SUB_MODES: Array<{

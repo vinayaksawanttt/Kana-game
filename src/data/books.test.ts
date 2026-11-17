@@ -1,7 +1,7 @@
 import "fake-indexeddb/auto";
 import { beforeEach, describe, expect, it } from "vitest";
 import { enqueueLessonInSrs, getBookById, getBookLesson, getBooksCatalog } from "./books";
-import { generateDialogueClozeQuestions } from "@/lib/books/dialogueCloze";
+import { generateDialogueClozeQuestions } from "@/features/books/engine/dialogueCloze";
 import { srsDb } from "@/lib/srs/db";
 import { getAllSrsItems } from "@/lib/srs/service";
 

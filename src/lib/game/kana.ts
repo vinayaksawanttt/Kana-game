@@ -1,1 +1,1 @@
-export * from "@/engine/kana";
+export * from "@/features/kana/engine/kana";

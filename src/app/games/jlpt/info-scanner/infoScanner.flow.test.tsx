@@ -9,7 +9,7 @@ import {
   calculateInfoScannerResult,
   createInfoScannerSession,
   prepareSessionDocument,
-} from "@/engine/jlptInfoScanner";
+} from "@/features/jlpt/engine/jlptInfoScanner";
 import { saveGameResult, saveGameSession } from "@/lib/game-core/storage";
 
 const mockPush = vi.fn();

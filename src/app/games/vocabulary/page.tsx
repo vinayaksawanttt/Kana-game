@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowRight, Check, Clock, RotateCcw, Sparkles } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import { saveGameSession } from "@/lib/game-core/storage";
 import {
@@ -14,7 +14,7 @@ import {
   type VocabularyLevel,
   vocabularyLevels,
 } from "@/data/vocabulary";
-import { createVocabularySession, type VocabularySessionSize } from "@/lib/game/vocabulary";
+import { createVocabularySession, type VocabularySessionSize } from "@/features/vocabulary/engine/vocabulary";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
 
 const gradeNames: Record<number, string> = {

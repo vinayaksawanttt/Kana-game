@@ -16,7 +16,7 @@ import {
   ListTree,
   Sparkles,
 } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import {
   grammarLevels,
   isGrammarLevel,

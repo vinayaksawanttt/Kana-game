@@ -23,7 +23,7 @@ import {
   Volume2,
   XCircle,
 } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
@@ -40,13 +40,13 @@ import {
   type InfoScannerResultSummary,
   type InfoScannerSession,
   type SessionDocumentItem,
-} from "@/engine/jlptInfoScanner";
-import { InfoScannerDocumentViewer } from "@/components/jlpt/InfoScannerDocumentViewer";
+} from "@/features/jlpt/engine/jlptInfoScanner";
+import { InfoScannerDocumentViewer } from "@/features/jlpt/components/InfoScannerDocumentViewer";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
 import {
   QuitSessionDialog,
   useQuitSessionGuard,
-} from "@/lib/game-core/quit-session";
+} from "@/components/layout/quit-session";
 
 function loadInitialSession(sessionId: string): InfoScannerSession {
   const existing = getGameSession<InfoScannerSession>("jlpt-scanner", sessionId);

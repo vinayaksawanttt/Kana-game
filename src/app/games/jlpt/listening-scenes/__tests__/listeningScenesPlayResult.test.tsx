@@ -6,7 +6,7 @@ import ListeningScenesResultPage from "../result/[sessionId]/page";
 import {
   createListeningSceneSession,
   summarizeListeningSceneSession,
-} from "@/engine/jlptListeningScene";
+} from "@/features/jlpt/engine/jlptListeningScene";
 import { ALL_LISTENING_SCENES } from "@/data/jlpt/listeningScenesData";
 import { saveGameResult, saveGameSession } from "@/lib/game-core/storage";
 

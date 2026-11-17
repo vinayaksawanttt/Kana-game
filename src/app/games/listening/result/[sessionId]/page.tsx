@@ -4,7 +4,7 @@ import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { Check, Clock, Ear, RotateCcw, Settings2, Volume2, X } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import { getGameResult, saveGameSession } from "@/lib/game-core/storage";
 import { kanaCharacters, type KanaGroup } from "@/data/kana";
@@ -14,7 +14,7 @@ import {
   type ListeningQuestion,
   type ListeningResultSummary,
   type ListeningSettings,
-} from "@/engine/listening";
+} from "@/features/listening/engine/listening";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
 

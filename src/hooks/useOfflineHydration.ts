@@ -7,7 +7,7 @@ import {
   saveDictionaryIndexToCache,
   saveShiritoriWordsToCache,
 } from "@/lib/srs/cacheDb";
-import type { ShiritoriWord } from "@/engine/shiritori";
+import type { ShiritoriWord } from "@/features/shiritori/engine/shiritori";
 
 export interface OfflineHydrationStatus {
   isReady: boolean;

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, BookOpen, Compass, Flame, Sparkles } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
-import { DueReviewCount } from "@/components/due-review-count";
+import { GameLayout } from "@/components/layout/game-layout";
+import { DueReviewCount } from "@/components/layout/due-review-count";
 import { getAllLearnDocs } from "@/lib/content/learn";
 import { DIALOGUE_SCENARIOS } from "@/data/dialogue";
 import { JlptPaperIllustration } from "@/components/icons/JlptPaperIllustration";

@@ -10,9 +10,9 @@ import {
   createWordUsageSession,
   formatJlptLevel,
   type JlptNumericLevel,
-} from "@/engine/jlptWordUsage";
+} from "@/features/jlpt/engine/jlptWordUsage";
 import { getWordUsageCountsByLevel, type WordUsageLevel } from "@/data/jlpt/wordUsageData";
-import { JlptBookletSetupShell } from "@/components/jlpt/JlptBookletSetupShell";
+import { JlptBookletSetupShell } from "@/features/jlpt/components/JlptBookletSetupShell";
 
 const LEVEL_OPTIONS: readonly JlptNumericLevel[] = [4, 3, 2, 1];
 const SESSION_SIZES = [10, 15, 20] as const;

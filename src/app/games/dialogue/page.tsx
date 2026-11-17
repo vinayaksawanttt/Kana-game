@@ -10,7 +10,7 @@ import {
   stopScenarioSfx,
 } from "@/data/dialogue/assets";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import {
   ArrowLeft,
   ArrowRight,

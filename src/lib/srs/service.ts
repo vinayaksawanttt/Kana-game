@@ -1,6 +1,6 @@
 import { createEmptyCard, fsrs, Rating, type Card, type Grade } from "ts-fsrs";
-import type { CardRecord } from "@/engine/kana-session";
-import type { KanjiMeaningQuestionResult } from "@/engine/kanji-meaning";
+import type { CardRecord } from "@/features/kana/engine/kana-session";
+import type { KanjiMeaningQuestionResult } from "@/features/kanji/engine/kanji-meaning";
 import { srsDb, type SrsItem, type SrsItemType } from "./db";
 
 export { Rating };

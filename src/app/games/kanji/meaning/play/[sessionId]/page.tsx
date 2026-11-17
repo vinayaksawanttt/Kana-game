@@ -4,7 +4,7 @@ import { Suspense, useCallback, useEffect, useReducer, useRef, useState } from "
 import { Check, Volume2, X } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 import { loadKanjiData, type KanjiRecord } from "@/data/kanji";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   buildKanjiMeaningResult,
@@ -14,7 +14,7 @@ import {
   type StoredKanjiMeaningSession,
 } from "@/lib/game/kanji-meaning";
 import { getGameResult, getGameSession, saveGameResult } from "@/lib/game-core/storage";
-import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
+import { QuitSessionDialog, useQuitSessionGuard } from "@/components/layout/quit-session";
 import { ingestKanjiMeaningSession } from "@/lib/srs/service";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";

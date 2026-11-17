@@ -13,8 +13,8 @@ import {
   type DisplayScriptMode,
   type JlptNumericLevel,
   type SynonymMatchSessionSize,
-} from "@/engine/jlptSynonymMatch";
-import { JlptBookletSetupShell } from "@/components/jlpt/JlptBookletSetupShell";
+} from "@/features/jlpt/engine/jlptSynonymMatch";
+import { JlptBookletSetupShell } from "@/features/jlpt/components/JlptBookletSetupShell";
 
 const LEVEL_OPTIONS: readonly JlptNumericLevel[] = [5, 4, 3, 2, 1];
 const SESSION_SIZES: readonly SynonymMatchSessionSize[] = [10, 15, 20];

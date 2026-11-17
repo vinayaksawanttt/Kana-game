@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, BookOpen, CheckCircle2, Clock } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import {
   COMPLETED_STORIES_STORAGE_KEY,
   estimateReadingTimeMinutes,
@@ -12,7 +12,7 @@ import {
   type StoryCategory,
   type StoryRecord,
 } from "@/data/stories";
-import { StoryCover } from "@/components/story-cover";
+import { StoryCover } from "@/features/stories/components/story-cover";
 
 void COMPLETED_STORIES_STORAGE_KEY;
 

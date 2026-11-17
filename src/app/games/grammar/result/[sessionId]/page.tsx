@@ -4,7 +4,7 @@ import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { AlertTriangle, ArrowRight, BookOpen, Check, Clock, RotateCcw, Sparkles, X } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import { formatTime } from "@/lib/game-core/time";
 import { getGameResult, saveGameSession } from "@/lib/game-core/storage";
@@ -13,7 +13,7 @@ import {
   type GrammarQuestionResult,
   type GrammarQuestionStatus,
   type GrammarSessionResult,
-} from "@/engine/grammarSession";
+} from "@/features/grammar/engine/grammar-session";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
 import { AudioButton } from "@/components/ui/AudioButton";
 

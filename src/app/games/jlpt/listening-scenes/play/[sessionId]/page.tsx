@@ -12,22 +12,22 @@ import {
   Volume2,
   XCircle,
 } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameSession,
   saveGameResult,
   saveGameSession,
 } from "@/lib/game-core/storage";
-import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
+import { QuitSessionDialog, useQuitSessionGuard } from "@/components/layout/quit-session";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
-import { AudioDialogueSequence } from "@/components/jlpt/AudioDialogueSequence";
+import { AudioDialogueSequence } from "@/features/jlpt/components/AudioDialogueSequence";
 import {
   createListeningSceneSession,
   listeningSceneReducer,
   summarizeListeningSceneSession,
   type ListeningSceneSession,
-} from "@/engine/jlptListeningScene";
+} from "@/features/jlpt/engine/jlptListeningScene";
 import { ALL_LISTENING_SCENES } from "@/data/jlpt/listeningScenesData";
 
 function loadInitialSession(sessionId: string): ListeningSceneSession {

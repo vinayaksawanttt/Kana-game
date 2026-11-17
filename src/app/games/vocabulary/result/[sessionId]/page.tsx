@@ -15,7 +15,7 @@ import {
   X,
 } from "lucide-react";
 import { loadVocabularyData, vocabularyLevels, type VocabularyLevel } from "@/data/vocabulary";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import { formatTime } from "@/lib/game-core/time";
 import { getGameResult, saveGameSession } from "@/lib/game-core/storage";
@@ -26,7 +26,7 @@ import {
   parseExampleFurigana,
   type VocabularyReviewQuestion,
   type VocabularyResult,
-} from "@/lib/game/vocabulary";
+} from "@/features/vocabulary/engine/vocabulary";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
 import { AudioButton } from "@/components/ui/AudioButton";
 

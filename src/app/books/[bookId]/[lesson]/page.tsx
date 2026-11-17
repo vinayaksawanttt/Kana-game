@@ -40,15 +40,15 @@ import {
   getBookById,
   getBookLesson,
 } from "@/data/books";
-import { DialogueRoleplayPlayer } from "@/components/books/DialogueRoleplayPlayer";
-import { DialogueClozeTest } from "@/components/books/DialogueClozeTest";
-import { WorkbookDrillMode } from "@/components/books/WorkbookDrillMode";
-import { KanjiDetailModal } from "@/components/books/KanjiDetailModal";
+import { DialogueRoleplayPlayer } from "@/features/books/components/DialogueRoleplayPlayer";
+import { DialogueClozeTest } from "@/features/books/components/DialogueClozeTest";
+import { WorkbookDrillMode } from "@/features/books/components/WorkbookDrillMode";
+import { KanjiDetailModal } from "@/features/books/components/KanjiDetailModal";
 import {
   VocabularyDetailDrawer,
   VocabularyFlashcardDeck,
-} from "@/components/books/VocabularyDetailDrawer";
-import { romajiToHiragana } from "@/engine/shiritori";
+} from "@/features/books/components/VocabularyDetailDrawer";
+import { romajiToHiragana } from "@/features/shiritori/engine/shiritori";
 import { loadDictionaryDataMaps, type DictionaryDataMaps } from "@/data/dictionary";
 import { addGrammarToSrs, upsertPracticeItems } from "@/lib/srs/service";
 import { srsDb, type SrsItem } from "@/lib/srs/db";
@@ -56,9 +56,9 @@ import { SakuraLoader } from "@/components/ui/SakuraLoader";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import { saveGameSession } from "@/lib/game-core/storage";
 import { loadVocabularyData, type VocabularyRecord } from "@/data/vocabulary";
-import { createVocabularySession } from "@/lib/game/vocabulary";
-import { createKanjiMeaningSession } from "@/engine/kanji-meaning";
-import { createGrammarSession } from "@/engine/grammarSession";
+import { createVocabularySession } from "@/features/vocabulary/engine/vocabulary";
+import { createKanjiMeaningSession } from "@/features/kanji/engine/kanji-meaning";
+import { createGrammarSession } from "@/features/grammar/engine/grammar-session";
 import { loadGrammarData, type GrammarPoint } from "@/data/grammar";
 import {
   buildSrsLookup,
@@ -79,7 +79,7 @@ import {
   type GrammarSrsInfo,
   type GrammarStudyStatus,
   type VocabSrsState,
-} from "@/lib/books/progress";
+} from "@/features/books/engine/progress";
 import {
   ContentContainer,
   DialogueCard,
@@ -101,7 +101,7 @@ import {
   VocabularyListTable,
   type TabItem,
   type VocabLearningMode,
-} from "@/components/books/ui";
+} from "@/features/books/components/ui";
 
 type ActiveTab = BookTabKey;
 

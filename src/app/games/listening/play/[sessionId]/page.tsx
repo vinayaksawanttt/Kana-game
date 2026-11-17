@@ -3,7 +3,7 @@
 import { Suspense, useCallback, useEffect, useRef, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { ArrowRight, Bookmark, Check, Pause, RotateCcw, SkipForward, Volume2, X } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import { getGameSession, saveGameResult, saveGameSession } from "@/lib/game-core/storage";
 import {
@@ -11,9 +11,9 @@ import {
   summarizeListeningSession,
   type ListeningQuestion,
   type ListeningSession,
-} from "@/engine/listening";
+} from "@/features/listening/engine/listening";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
-import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
+import { QuitSessionDialog, useQuitSessionGuard } from "@/components/layout/quit-session";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
 import { addVocabularyToSrs } from "@/lib/srs/service";
 

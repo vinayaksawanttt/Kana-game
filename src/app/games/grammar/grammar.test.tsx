@@ -6,7 +6,7 @@ import GrammarDetailPage from "@/app/grammar/[level]/[slug]/page";
 import GrammarSetupPage from "./page";
 import GrammarPlayPage from "./play/[sessionId]/page";
 import GrammarResultPage from "./result/[sessionId]/page";
-import { createGrammarSession, type GrammarSessionResult } from "@/engine/grammarSession";
+import { createGrammarSession, type GrammarSessionResult } from "@/features/grammar/engine/grammar-session";
 import { createSeededRng } from "@/engine/random";
 import { saveGameResult, saveGameSession } from "@/lib/game-core/storage";
 import { srsDb } from "@/lib/srs/db";

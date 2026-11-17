@@ -15,7 +15,7 @@ import {
   Volume2,
   XCircle,
 } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
@@ -30,12 +30,12 @@ import {
   summarizeStarScrambleSession,
   type StarScrambleResultSummary,
   type StarScrambleSession,
-} from "@/engine/jlptStarScramble";
+} from "@/features/jlpt/engine/jlptStarScramble";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
 import { addGrammarToSrs } from "@/lib/srs/service";
 import { grammarGuideHref } from "@/data/grammar";
 import { FuriganaText } from "@/components/ui/FuriganaText";
-import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
+import { QuitSessionDialog, useQuitSessionGuard } from "@/components/layout/quit-session";
 
 function loadInitialSession(sessionId: string): StarScrambleSession {
   const existing = getGameSession<StarScrambleSession>("jlpt-star", sessionId);

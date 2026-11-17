@@ -29,7 +29,7 @@ import {
   type ShiritoriSettings,
   type ShiritoriState,
   type ShiritoriWord,
-} from "@/engine/shiritori";
+} from "@/features/shiritori/engine/shiritori";
 import {
   addRecentBotWord,
   addRecentHint,
@@ -38,9 +38,9 @@ import {
   loadShiritoriData,
 } from "@/data/shiritori";
 import { addVocabularyToSrs } from "@/lib/srs/service";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
-import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
+import { QuitSessionDialog, useQuitSessionGuard } from "@/components/layout/quit-session";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
 import { AudioButton } from "@/components/ui/AudioButton";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";

@@ -3,7 +3,7 @@ import { cleanup, fireEvent, render, screen, waitFor } from "@testing-library/re
 import ListeningSetupPage from "./page";
 import ListeningPlayPage from "./play/[sessionId]/page";
 import ListeningResultPage from "./result/[sessionId]/page";
-import { createListeningSession, summarizeListeningSession } from "@/engine/listening";
+import { createListeningSession, summarizeListeningSession } from "@/features/listening/engine/listening";
 import { saveGameResult, saveGameSession } from "@/lib/game-core/storage";
 
 let mockParams: Record<string, string> = { sessionId: "listening-test-session" };

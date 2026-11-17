@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { appFontVariables } from "@/lib/fonts";
-import { PwaRegister } from "@/components/pwa-register";
+import { PwaRegister } from "@/components/layout/pwa-register";
 import "./globals.css";
 
 export const metadata: Metadata = {

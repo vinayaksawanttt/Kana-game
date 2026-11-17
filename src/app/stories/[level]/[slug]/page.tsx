@@ -27,8 +27,8 @@ import {
   X,
   XCircle,
 } from "lucide-react";
-import { GameHeader } from "@/lib/game-core/layout";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { GameHeader } from "@/components/layout/game-layout";
+import { ThemeToggle } from "@/components/layout/theme-toggle";
 import {
   COMPLETED_STORIES_STORAGE_KEY,
   estimateReadingTimeMinutes,
@@ -40,15 +40,15 @@ import {
   type StoryToken,
 } from "@/data/stories";
 import { buildStoryAudioQueue, type PlaybackSpeed } from "@/engine/audio";
-import { useStoryNarrator } from "@/hooks/useStoryNarrator";
-import { StoryCover } from "@/components/story-cover";
+import { useStoryNarrator } from "@/features/stories/hooks/use-story-narrator";
+import { StoryCover } from "@/features/stories/components/story-cover";
 import { addVocabularyToSrs } from "@/lib/srs/service";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
 import { saveGameSession } from "@/lib/game-core/storage";
 import {
   PARAGRAPH_CLOZE_PASSAGES,
   createParagraphClozeSession,
-} from "@/engine/jlptParagraphCloze";
+} from "@/features/jlpt/engine/jlptParagraphCloze";
 
 export default function StoryReadingRoomPage() {
   return (

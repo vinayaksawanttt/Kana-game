@@ -1,1 +1,1 @@
-export * from "@/engine/kanji-meaning";
+export * from "@/features/kanji/engine/kanji-meaning";

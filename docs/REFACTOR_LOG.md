@@ -92,6 +92,27 @@ Recorded on 2026-11-17 before any refactor changes.
 
 ## Moves, Deletions & Decisions
 
+### Phase 3: Restructure `src/`
+- **Layering Enforcement**: Added ESLint `no-restricted-imports` rule in `eslint.config.mjs` blocking `react`, `react-*`, `next`, `next/*`, `@/components/*`, and `@/hooks/*` inside `src/**/engine/**`, `src/lib/game-core/**`, and `src/data/**`.
+- **Moved Shared Layout Chrome (`git mv`)**:
+  - `src/lib/game-core/layout.tsx` → `src/components/layout/game-layout.tsx`
+  - `src/lib/game-core/quit-session.tsx` → `src/components/layout/quit-session.tsx`
+  - `src/components/{due-review-count,pwa-register,sfx-toggle,theme-toggle}.tsx` → `src/components/layout/`
+- **Moved Feature Modules (`git mv`)**:
+  - `src/features/kana/engine/` (`kana.ts`, `kana-session.ts`)
+  - `src/features/kanji/{engine,hooks,components}/` (`kanji-meaning.ts`, `radical-search.ts`, `stroke-practice.ts`, `clean-meanings.ts`, `use-*.ts`, `StrokePlayer`, `StrokePracticeCanvas`, `KanjiBreakdownModal`, `RadicalBuilderView`)
+  - `src/features/books/{engine,components}/` (`progress.ts`, `characterDiff.ts`, `dialogueCloze.ts`, `ui/*`, modals/drawers/drills)
+  - `src/features/dialogue/{engine,components}/` (`dialogueEngine.ts`, `vn/*`, legacy components)
+  - `src/features/jlpt/{engine,hooks,components}/` (`jlpt*.ts`, `use-instant-reply-audio.ts`, `AudioDialogueSequence`, `InfoScannerDocumentViewer`, `JlptBookletSetupShell`)
+  - `src/features/grammar/{engine,lib,components}/` (`grammar-session.ts`, `process.ts`, `grammar-guide-view.tsx`)
+  - `src/features/listening/engine/` (`listening.ts` + tests)
+  - `src/features/shiritori/engine/` (`shiritori.ts` + tests)
+  - `src/features/vocabulary/engine/` (`vocabulary.ts`, `vocabulary-matcher.ts` + tests)
+  - `src/features/learn/components/` (`LearnHubClient`, `MdxComponents`, `PersonalSheetClient`, etc.)
+  - `src/features/stories/{hooks,components}/` (`use-story-narrator.ts`, `story-cover.tsx` + tests)
+- **Removed Empty Directories**: `src/components/kana`, `src/lib/kana`, `src/lib/kanji-data`, `src/lib/books`, `src/lib/grammar-data`, `src/components/books`, `src/components/dialogue`, `src/components/jlpt`, `src/components/kanji`, `src/components/learn`, `src/engine/dialogue`.
+- **Verification**: `npx tsc --noEmit` (0 errors), `npx eslint "src/**/engine/**" src/lib/game-core/ src/data/` (0 errors), `npx vitest run src/features/ src/lib/game-core/` (33/33 files, 222/222 tests passed).
+
 ### Phase 2: Cleanup
 - **Deleted (SAFE)**:
   - `.tmp/test-kana-a.mp3` (temporary scratch audio file)

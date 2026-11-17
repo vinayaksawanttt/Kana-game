@@ -1,7 +1,7 @@
 import { describe, expect, it, vi, beforeEach, afterEach } from "vitest";
 import { render, screen, cleanup, waitFor } from "@testing-library/react";
 import GrammarLibraryPage from "./page";
-import { GrammarGuideView } from "@/components/grammar-guide-view";
+import { GrammarGuideView } from "@/features/grammar/components/grammar-guide-view";
 import { serialize } from "next-mdx-remote/serialize";
 
 // Mock next/navigation

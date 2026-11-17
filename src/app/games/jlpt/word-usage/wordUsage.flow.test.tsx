@@ -8,7 +8,7 @@ import {
   WORD_USAGE_ITEMS,
   createWordUsageSession,
   summarizeWordUsageSession,
-} from "@/engine/jlptWordUsage";
+} from "@/features/jlpt/engine/jlptWordUsage";
 import { saveGameResult, saveGameSession } from "@/lib/game-core/storage";
 
 const mockPush = vi.fn();

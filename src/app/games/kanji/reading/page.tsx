@@ -3,15 +3,15 @@
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { Search } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import {
   getKanjiByLevel,
   type KanjiLevel,
   kanjiLevels,
   type KanjiRecord,
 } from "@/data/kanji";
-import { KanjiBreakdownModal } from "@/components/kanji/KanjiBreakdownModal";
-import { RadicalBuilderView } from "@/components/kanji/RadicalBuilderView";
+import { KanjiBreakdownModal } from "@/features/kanji/components/KanjiBreakdownModal";
+import { RadicalBuilderView } from "@/features/kanji/components/RadicalBuilderView";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
 
 function getPrimaryReading(kanji: KanjiRecord): string {

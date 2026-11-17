@@ -20,8 +20,8 @@ import {
   getParagraphClozeCountsByLevel,
   type ClozeSourceFilter,
   type JlptNumericLevel,
-} from "@/engine/jlptParagraphCloze";
-import { JlptBookletSetupShell } from "@/components/jlpt/JlptBookletSetupShell";
+} from "@/features/jlpt/engine/jlptParagraphCloze";
+import { JlptBookletSetupShell } from "@/features/jlpt/components/JlptBookletSetupShell";
 
 const LEVEL_OPTIONS: readonly JlptNumericLevel[] = [5, 4, 3, 2, 1];
 const PASSAGE_COUNTS: readonly (2 | 3 | 5)[] = [2, 3, 5];

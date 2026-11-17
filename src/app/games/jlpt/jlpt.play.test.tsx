@@ -11,30 +11,30 @@ import ListeningScenesPlayPage from "./listening-scenes/play/[sessionId]/page";
 import {
   STAR_SCRAMBLE_ITEMS,
   createStarScrambleSession,
-} from "@/engine/jlptStarScramble";
+} from "@/features/jlpt/engine/jlptStarScramble";
 import {
   PHONETIC_TRAP_ITEMS,
   createPhoneticTrapSession,
-} from "@/engine/jlptPhoneticTraps";
+} from "@/features/jlpt/engine/jlptPhoneticTraps";
 import {
   SYNONYM_MATCH_ITEMS,
   createSynonymMatchSession,
-} from "@/engine/jlptSynonymMatch";
+} from "@/features/jlpt/engine/jlptSynonymMatch";
 import {
   INSTANT_REPLY_ITEMS,
   createInstantReplySession,
-} from "@/engine/jlptInstantReply";
+} from "@/features/jlpt/engine/jlptInstantReply";
 import {
   PARAGRAPH_CLOZE_PASSAGES,
   createParagraphClozeSession,
-} from "@/engine/jlptParagraphCloze";
+} from "@/features/jlpt/engine/jlptParagraphCloze";
 import {
   INFO_SCANNER_DOCUMENTS,
   createInfoScannerSession,
-} from "@/engine/jlptInfoScanner";
+} from "@/features/jlpt/engine/jlptInfoScanner";
 import {
   createListeningSceneSession,
-} from "@/engine/jlptListeningScene";
+} from "@/features/jlpt/engine/jlptListeningScene";
 import {
   ALL_LISTENING_SCENES,
 } from "@/data/jlpt/listeningScenesData";

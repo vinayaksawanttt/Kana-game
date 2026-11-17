@@ -14,7 +14,7 @@ import {
   Volume2,
   XCircle,
 } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
@@ -28,7 +28,7 @@ import {
   summarizePhoneticTrapSession,
   type PhoneticTrapResultSummary,
   type PhoneticTrapSession,
-} from "@/engine/jlptPhoneticTraps";
+} from "@/features/jlpt/engine/jlptPhoneticTraps";
 import { JlptPaperIllustration } from "@/components/icons/JlptPaperIllustration";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
 import { addVocabularyToSrs } from "@/lib/srs/service";

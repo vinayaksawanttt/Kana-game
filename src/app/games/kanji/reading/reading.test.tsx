@@ -1,7 +1,7 @@
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
 import { clearKanjiVocabCache, getKanjiComposites } from "@/data/kanjiVocab";
-import { getStrokeGeometry, validateDrawnStroke } from "@/engine/strokePractice";
+import { getStrokeGeometry, validateDrawnStroke } from "@/features/kanji/engine/stroke-practice";
 import KanjiReadingHubPage from "./page";
 
 describe("Kanji Reading Hub, Composite Data & Stroke Practice Engine", () => {

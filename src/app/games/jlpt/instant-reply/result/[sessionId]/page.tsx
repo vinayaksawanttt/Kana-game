@@ -12,7 +12,7 @@ import {
   Sparkles,
   XCircle,
 } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
@@ -27,7 +27,7 @@ import {
   summarizeInstantReplySession,
   type InstantReplySession,
   type InstantReplySessionResult,
-} from "@/engine/jlptInstantReply";
+} from "@/features/jlpt/engine/jlptInstantReply";
 import { AudioButton } from "@/components/ui/AudioButton";
 
 type ReviewFilter = "all" | "missed" | "correct";

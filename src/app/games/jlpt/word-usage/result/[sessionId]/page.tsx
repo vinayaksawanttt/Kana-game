@@ -12,7 +12,7 @@ import {
   Volume2,
   XCircle,
 } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
@@ -26,7 +26,7 @@ import {
   summarizeWordUsageSession,
   type WordUsageResultSummary,
   type WordUsageSession,
-} from "@/engine/jlptWordUsage";
+} from "@/features/jlpt/engine/jlptWordUsage";
 import { AudioButton } from "@/components/ui/AudioButton";
 
 type ReviewFilter = "all" | "missed" | "correct";

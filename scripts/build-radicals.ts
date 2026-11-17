@@ -15,7 +15,7 @@
 import { access, mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import type { RadicalExampleRecord, RadicalIndex, RadicalRecord } from "../src/data/radicals";
-import { parseRadicalWikiEntry } from "../src/engine/radicalSearch";
+import { parseRadicalWikiEntry } from "../src/features/kanji/engine/radical-search";
 
 interface RawKanji {
   kanji: string;

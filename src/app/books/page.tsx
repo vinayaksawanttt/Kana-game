@@ -51,7 +51,7 @@ import {
   type LessonWorkspacePersistedState,
   type TextbookContentType,
   type WeakAreaItem,
-} from "@/lib/books/progress";
+} from "@/features/books/engine/progress";
 import {
   CircularProgress,
   ContentCard,
@@ -67,7 +67,7 @@ import {
   StatusBadge,
   TextbookPageContainer,
   cn,
-} from "@/components/books/ui";
+} from "@/features/books/components/ui";
 
 type ContentTypeFilter = "all" | "vocab" | "grammar" | "kanji" | "dialogues" | "practice";
 type StateFilter = "all" | LessonState;

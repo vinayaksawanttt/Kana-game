@@ -1,4 +1,4 @@
-import { buildShiritoriDictionary, type ShiritoriDictionary, type ShiritoriLevel, type ShiritoriWord } from "@/engine/shiritori";
+import { buildShiritoriDictionary, type ShiritoriDictionary, type ShiritoriLevel, type ShiritoriWord } from "@/features/shiritori/engine/shiritori";
 import { getShiritoriWordsFromCache } from "@/lib/srs/cacheDb";
 
 export type { ShiritoriLevel, ShiritoriWord };

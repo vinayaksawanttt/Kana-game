@@ -9,7 +9,7 @@ import {
   RotateCcw,
   XCircle,
 } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import {
   getGameResult,
@@ -22,7 +22,7 @@ import {
   summarizeListeningSceneSession,
   type ListeningSceneSession,
   type ListeningSceneSessionResult,
-} from "@/engine/jlptListeningScene";
+} from "@/features/jlpt/engine/jlptListeningScene";
 import { ALL_LISTENING_SCENES } from "@/data/jlpt/listeningScenesData";
 
 type SceneFilter = "all" | "missed" | "correct";

@@ -29,8 +29,8 @@ import {
   type InfoScannerCategory,
   type InfoScannerCategoryFilter,
   type InfoScannerLevel,
-} from "@/engine/jlptInfoScanner";
-import { JlptBookletSetupShell } from "@/components/jlpt/JlptBookletSetupShell";
+} from "@/features/jlpt/engine/jlptInfoScanner";
+import { JlptBookletSetupShell } from "@/features/jlpt/components/JlptBookletSetupShell";
 
 const DOCUMENT_COUNTS = [3, 5, 10] as const;
 

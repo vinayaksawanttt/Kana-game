@@ -7,10 +7,10 @@ import { getScenarioById, getScenarioNodes } from "@/data/dialogue";
 import {
   createDialogueSession,
   executeDialogueTurn,
-} from "@/engine/dialogue/dialogueEngine";
+} from "@/features/dialogue/engine/dialogueEngine";
 import { DialogueSession, DialogueChoice } from "@/data/dialogue/types";
-import { VisualNovelStage } from "@/components/dialogue/vn/VisualNovelStage";
-import { GameLayout } from "@/lib/game-core/layout";
+import { VisualNovelStage } from "@/features/dialogue/components/vn/VisualNovelStage";
+import { GameLayout } from "@/components/layout/game-layout";
 import { useGameSfx } from "@/hooks/useGameSfx";
 
 export default function DialoguePlayPage() {

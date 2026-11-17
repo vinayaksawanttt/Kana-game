@@ -4,10 +4,10 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ArrowRight, BookOpen, Check, Clock, Layers, RotateCcw, Shuffle, Sparkles } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
+import { GameLayout } from "@/components/layout/game-layout";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import { saveGameSession } from "@/lib/game-core/storage";
-import { createGrammarSession } from "@/engine/grammarSession";
+import { createGrammarSession } from "@/features/grammar/engine/grammar-session";
 import { grammarLevels, loadGrammarData, type GrammarLevel } from "@/data/grammar";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
 

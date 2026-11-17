@@ -12,8 +12,8 @@ import {
   Sparkles,
   X,
 } from "lucide-react";
-import { GameLayout } from "@/lib/game-core/layout";
-import { StrokePlayer } from "@/components/kanji/StrokePlayer";
+import { GameLayout } from "@/components/layout/game-layout";
+import { StrokePlayer } from "@/features/kanji/components/StrokePlayer";
 import { useDictionary } from "@/hooks/useDictionary";
 import { addKanjiToSrs, addVocabularyToSrs } from "@/lib/srs/service";
 import { getHomophoneGroupForKanji } from "@/engine/homophones";

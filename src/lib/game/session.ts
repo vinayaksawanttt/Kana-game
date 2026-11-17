@@ -1,1 +1,1 @@
-export * from "@/engine/kana-session";
+export * from "@/features/kana/engine/kana-session";

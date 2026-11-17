@@ -1,7 +1,7 @@
 import { existsSync } from "node:fs";
 import { readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import { hasEnglishGloss, type ShiritoriWord } from "../src/engine/shiritori";
+import { hasEnglishGloss, type ShiritoriWord } from "../src/features/shiritori/engine/shiritori";
 import { DeepLClient, getDeepLConfig } from "./lib/deepl-client";
 
 interface VocabExample {

@@ -13,8 +13,8 @@ import {
   type PhoneticTrapLevel,
   type PhoneticTrapSessionSize,
   type PhoneticTrapSubMode,
-} from "@/engine/jlptPhoneticTraps";
-import { JlptBookletSetupShell } from "@/components/jlpt/JlptBookletSetupShell";
+} from "@/features/jlpt/engine/jlptPhoneticTraps";
+import { JlptBookletSetupShell } from "@/features/jlpt/components/JlptBookletSetupShell";
 
 const SUB_MODE_CARDS: ReadonlyArray<{
   id: PhoneticTrapSubMode;
