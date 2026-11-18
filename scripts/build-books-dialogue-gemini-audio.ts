@@ -185,10 +185,17 @@ async function synthesizeGeminiAudio(
           );
 
           const data = await res.json();
-          if (data.error) {
-            const msg = data.error.message || "Unknown error";
-            if (msg.includes("Quota exceeded") || data.error.code === 429) {
-              // Rate limited on this key+model bucket, try next bucket
+          if (data.error || !res.ok) {
+            const msg = data?.error?.message || `HTTP error ${res.status}`;
+            if (
+              res.status === 429 ||
+              res.status >= 500 ||
+              data?.error?.code === 429 ||
+              data?.error?.status === "RESOURCE_EXHAUSTED" ||
+              msg.includes("Quota exceeded") ||
+              msg.includes("Resource has been exhausted")
+            ) {
+              // Rate limited on this key+model bucket or transient server error, try next bucket
               continue;
             }
             throw new Error(msg);
@@ -253,8 +260,8 @@ async function synthesizeGeminiAudio(
           keyIndex = (keyIndex + k + 1) % geminiApiKeys.length;
           modelIndex = (modelIndex + m + 1) % MODELS.length;
           return fs.statSync(outOpusPath).size;
-        } catch (err: any) {
-          lastError = err;
+        } catch (err: unknown) {
+          lastError = err instanceof Error ? err : new Error(String(err));
         }
       }
     }
@@ -283,12 +290,21 @@ interface DialogueTask {
 }
 
 const PROGRESS_FILE = path.join(process.cwd(), "node_modules/.cache/gemini-dialogues-progress.json");
+const DOCS_PROGRESS_FILE = path.join(process.cwd(), "docs/gemini-dialogues-progress.json");
 
 function loadProgress(): Set<string> {
   if (fs.existsSync(PROGRESS_FILE)) {
     try {
       const data = JSON.parse(fs.readFileSync(PROGRESS_FILE, "utf-8"));
-      return new Set(data);
+      return new Set(Array.isArray(data) ? data : data.completedKeys || []);
+    } catch {
+      // Fall through to docs progress file
+    }
+  }
+  if (fs.existsSync(DOCS_PROGRESS_FILE)) {
+    try {
+      const data = JSON.parse(fs.readFileSync(DOCS_PROGRESS_FILE, "utf-8"));
+      return new Set(Array.isArray(data) ? data : data.completedKeys || []);
     } catch {
       return new Set();
     }
@@ -298,7 +314,17 @@ function loadProgress(): Set<string> {
 
 function saveProgress(completedKeys: Set<string>) {
   fs.mkdirSync(path.dirname(PROGRESS_FILE), { recursive: true });
-  fs.writeFileSync(PROGRESS_FILE, JSON.stringify(Array.from(completedKeys), null, 2), "utf-8");
+  const arr = Array.from(completedKeys);
+  fs.writeFileSync(PROGRESS_FILE, JSON.stringify(arr, null, 2), "utf-8");
+  try {
+    fs.mkdirSync(path.dirname(DOCS_PROGRESS_FILE), { recursive: true });
+    fs.writeFileSync(DOCS_PROGRESS_FILE, JSON.stringify({
+      completedCount: completedKeys.size,
+      completedKeys: arr,
+    }, null, 2), "utf-8");
+  } catch {
+    // Non-fatal if docs write fails
+  }
 }
 
 async function main() {
@@ -308,7 +334,7 @@ async function main() {
   ];
 
   const tasks: DialogueTask[] = [];
-  const bookDataMap = new Map<string, any>();
+  const bookDataMap = new Map<string, { lessons: Array<{ lessonNumber: number; dialogues?: Array<{ id: string; sceneNumber?: string; lines: Array<{ speaker?: string; speakerJa?: string; ja: string; en?: string; audioSrc?: string; hasAudio?: boolean }> }> }> }>();
 
   for (const b of books) {
     const filePath = path.join(process.cwd(), "public/data/v1/books", b.file);
