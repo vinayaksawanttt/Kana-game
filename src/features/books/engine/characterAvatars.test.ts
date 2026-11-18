@@ -6,9 +6,9 @@ import {
 } from "./characterAvatars";
 
 describe("characterAvatars registry", () => {
-  it("registers all 29 Genki characters with both neutral and talking asset paths", () => {
+  it("registers all 31 Genki characters with both neutral and talking asset paths", () => {
     const all = getAllCharacterAvatars();
-    expect(all).toHaveLength(29);
+    expect(all).toHaveLength(31);
 
     const expectedIds = [
       "mary-hart",
@@ -40,6 +40,8 @@ describe("characterAvatars registry", () => {
       "tanaka",
       "tourist-information-agent",
       "train-station-attendant",
+      "everyone",
+      "customer",
     ];
 
     for (const id of expectedIds) {
@@ -92,6 +94,8 @@ describe("characterAvatars registry", () => {
     expect(getCharacterAvatar("Tanaka")?.id).toBe("tanaka");
     expect(getCharacterAvatar("Information agent")?.id).toBe("tourist-information-agent");
     expect(getCharacterAvatar("Station attendant")?.id).toBe("train-station-attendant");
+    expect(getCharacterAvatar("Everyone")?.id).toBe("everyone");
+    expect(getCharacterAvatar("Customer")?.id).toBe("customer");
   });
 
   it("resolves characters by Japanese name variations", () => {
@@ -129,6 +133,8 @@ describe("characterAvatars registry", () => {
     expect(getCharacterAvatar(undefined, "田中")?.id).toBe("tanaka");
     expect(getCharacterAvatar(undefined, "案内所の人")?.id).toBe("tourist-information-agent");
     expect(getCharacterAvatar(undefined, "駅員")?.id).toBe("train-station-attendant");
+    expect(getCharacterAvatar(undefined, "みんな")?.id).toBe("everyone");
+    expect(getCharacterAvatar(undefined, "客")?.id).toBe("customer");
   });
 
   it("resolves when speaker and speakerJa are provided together", () => {
@@ -142,11 +148,13 @@ describe("characterAvatars registry", () => {
     expect(getCharacterAvatar("Vendor", "みせのひと")?.id).toBe("store-attendant");
     expect(getCharacterAvatar("Information agent", "案内所の人")?.id).toBe("tourist-information-agent");
     expect(getCharacterAvatar("Station attendant", "駅員")?.id).toBe("train-station-attendant");
+    expect(getCharacterAvatar("Everyone", "みんな")?.id).toBe("everyone");
+    expect(getCharacterAvatar("Customer", "客")?.id).toBe("customer");
   });
 
   it("returns null for unknown / unmapped characters", () => {
-    expect(getCharacterAvatar("Everyone", "みんな")).toBeNull();
     expect(getCharacterAvatar("Narrator", "ナレーション")).toBeNull();
+    expect(getCharacterAvatar("Alien", "宇宙人")).toBeNull();
     expect(getCharacterAvatar("Cat", "ねこ")).toBeNull();
     expect(getCharacterAvatar(null, null)).toBeNull();
     expect(getCharacterAvatar("", "")).toBeNull();

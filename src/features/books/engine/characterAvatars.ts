@@ -218,6 +218,20 @@ export const GENKI_CHARACTER_AVATARS: Record<string, CharacterAvatar> = {
     neutral: "/images/characters/train-station-attendant/neutral.webp",
     talking: "/images/characters/train-station-attendant/talking.webp",
   },
+  "everyone": {
+    id: "everyone",
+    name: "Everyone",
+    nameJa: "みんな",
+    neutral: "/images/characters/everyone/neutral.webp",
+    talking: "/images/characters/everyone/talking.webp",
+  },
+  "customer": {
+    id: "customer",
+    name: "Customer",
+    nameJa: "客",
+    neutral: "/images/characters/customer/neutral.webp",
+    talking: "/images/characters/customer/talking.webp",
+  },
 };
 
 /**
@@ -532,6 +546,30 @@ export function getCharacterAvatar(
     normEn.includes("train station")
   ) {
     return GENKI_CHARACTER_AVATARS["train-station-attendant"];
+  }
+
+  // 30. Everyone / All / Group (e.g. Genki friends barbecue)
+  if (
+    normJa.includes("みんな") ||
+    normJa.includes("全員") ||
+    normJa.includes("ぜんいん") ||
+    normEn.includes("everyone") ||
+    normEn.includes("everybody") ||
+    normEn.includes("all")
+  ) {
+    return GENKI_CHARACTER_AVATARS["everyone"];
+  }
+
+  // 31. Customer (Restaurant patron / Diner)
+  if (
+    normJa.includes("客") ||
+    normJa.includes("きゃく") ||
+    normEn.includes("customer") ||
+    normEn.includes("diner") ||
+    normEn.includes("patron") ||
+    normEn.includes("guest")
+  ) {
+    return GENKI_CHARACTER_AVATARS["customer"];
   }
 
   return null;
