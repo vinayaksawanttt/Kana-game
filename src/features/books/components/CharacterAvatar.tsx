@@ -34,8 +34,8 @@ const SIZE_CLASSES = {
   xs: "size-5 text-[9px]",
   sm: "size-8 text-xs",
   md: "size-11 text-base",
-  lg: "size-12 sm:size-14 text-lg",
-  xl: "size-16 sm:size-20 text-xl",
+  lg: "size-12 sm:size-16 lg:size-[72px] text-lg",
+  xl: "size-16 sm:size-20 lg:size-24 text-xl",
 };
 
 const ROUNDED_CLASSES = {
@@ -118,13 +118,9 @@ export function CharacterAvatar({
   return (
     <div
       className={cn(
-        "relative overflow-hidden shrink-0 border transition-all duration-200 select-none",
-        "bg-gradient-to-b from-sky-50/40 to-slate-100/80 dark:from-slate-900/60 dark:to-slate-800/80",
+        "relative overflow-visible shrink-0 transition-transform duration-300 ease-out select-none",
         SIZE_CLASSES[size],
-        ROUNDED_CLASSES[shape][size],
-        isSpeaking
-          ? "border-[var(--tb-primary)] ring-2 ring-[var(--tb-primary)] shadow-md scale-105"
-          : "border-[var(--tb-border)] shadow-2xs hover:border-[var(--tb-primary)]/40",
+        isSpeaking && "animate-avatar-talk z-10",
         className
       )}
       title={displayTitle}
@@ -133,31 +129,53 @@ export function CharacterAvatar({
       data-character-id={avatar.id}
       data-speaking={isSpeaking ? "true" : "false"}
     >
-      {/* Neutral Expression */}
-      <img
-        src={avatar.neutral}
-        alt={`${avatar.name} (neutral)`}
-        onError={() => setHasImageError(true)}
-        className={cn(
-          "absolute inset-0 size-full object-cover object-top transition-opacity duration-200 ease-in-out pointer-events-none",
-          isSpeaking ? "opacity-0" : "opacity-100"
-        )}
-        loading="eager"
-        decoding="async"
-      />
+      {/* Pulsing voice aura ring when actively speaking */}
+      {isSpeaking && (
+        <span
+          aria-hidden="true"
+          className={cn(
+            "pointer-events-none absolute -inset-1 border-2 border-[var(--tb-primary)]/60 opacity-75 animate-ping",
+            ROUNDED_CLASSES[shape][size]
+          )}
+        />
+      )}
 
-      {/* Talking Expression */}
-      <img
-        src={avatar.talking}
-        alt={`${avatar.name} (talking)`}
-        onError={() => setHasImageError(true)}
+      <div
         className={cn(
-          "absolute inset-0 size-full object-cover object-top transition-opacity duration-200 ease-in-out pointer-events-none",
-          isSpeaking ? "opacity-100" : "opacity-0"
+          "relative size-full overflow-hidden border transition-all duration-200",
+          "bg-gradient-to-b from-sky-50/40 to-slate-100/80 dark:from-slate-900/60 dark:to-slate-800/80",
+          ROUNDED_CLASSES[shape][size],
+          isSpeaking
+            ? "border-[var(--tb-primary)] ring-2 ring-[var(--tb-primary)] shadow-lg shadow-[var(--tb-primary)]/25"
+            : "border-[var(--tb-border)] shadow-2xs hover:border-[var(--tb-primary)]/40"
         )}
-        loading="eager"
-        decoding="async"
-      />
+      >
+        {/* Neutral Expression */}
+        <img
+          src={avatar.neutral}
+          alt={`${avatar.name} (neutral)`}
+          onError={() => setHasImageError(true)}
+          className={cn(
+            "absolute inset-0 size-full object-cover object-top transition-all duration-150 ease-out pointer-events-none",
+            isSpeaking ? "opacity-0 scale-100" : "opacity-100 scale-100"
+          )}
+          loading="eager"
+          decoding="async"
+        />
+
+        {/* Talking Expression */}
+        <img
+          src={avatar.talking}
+          alt={`${avatar.name} (talking)`}
+          onError={() => setHasImageError(true)}
+          className={cn(
+            "absolute inset-0 size-full object-cover object-top transition-all duration-150 ease-out pointer-events-none",
+            isSpeaking ? "opacity-100 scale-[1.04]" : "opacity-0 scale-95"
+          )}
+          loading="eager"
+          decoding="async"
+        />
+      </div>
     </div>
   );
 }

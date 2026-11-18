@@ -27,6 +27,7 @@ import { LevelBadge } from "./ui/Elements";
 import { AudioButton } from "@/components/ui/AudioButton";
 import { StoryReaderLine } from "@/features/books/components/StoryReaderLine";
 import { CharacterAvatar } from "@/features/books/components/CharacterAvatar";
+import { getDialogueBackground } from "@/features/books/engine/dialogueBackgrounds";
 import { useJapaneseAudio } from "@/hooks/useJapaneseAudio";
 import { resolveSentenceAudio } from "@/engine/audio";
 import { cn } from "./ui/tokens";
@@ -201,6 +202,7 @@ export function DialogueCard({
   const playbackRunIdRef = useRef<number>(0);
   const playLineStepRef = useRef<(index: number, currentRunId: number) => Promise<void>>(async () => {});
   const containerRef = useRef<HTMLDivElement | null>(null);
+  const sceneBackgroundUrl = getDialogueBackground(scene.id);
 
   // Unified playback state
   const isPlaying = Boolean(isPlayingScene) || localIsPlaying;
@@ -535,12 +537,30 @@ export function DialogueCard({
       )}
 
       {/* ------------------------------------------------------------------ */}
-      {/* Dialogue Conversation Area: Maintains stable height                */}
+      {/* Dialogue Conversation Area: Maintains stable height & background   */}
       {/* ------------------------------------------------------------------ */}
-      <div
-        ref={containerRef}
-        className="relative h-[460px] sm:h-[520px] overflow-y-auto no-scrollbar overscroll-contain p-4 sm:p-6 md:p-8 space-y-6 sm:space-y-7 bg-[var(--tb-bg)]/40 scroll-smooth"
-      >
+      <div className="relative h-[460px] sm:h-[520px] overflow-hidden bg-[var(--tb-bg)]/40">
+        {sceneBackgroundUrl && (
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 select-none"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={sceneBackgroundUrl}
+              alt=""
+              className="size-full object-cover object-center"
+              loading="lazy"
+              decoding="async"
+            />
+            <div className="absolute inset-0 bg-[var(--tb-bg)]/58 dark:bg-slate-950/65 backdrop-blur-[1px]" />
+          </div>
+        )}
+
+        <div
+          ref={containerRef}
+          className="relative z-10 h-full overflow-y-auto no-scrollbar overscroll-contain p-4 sm:p-6 md:p-8 space-y-6 sm:space-y-7 scroll-smooth"
+        >
         {displayedLines.map((line, idx) => {
           const speakerIndex = uniqueSpeakers.indexOf(line.speakerJa);
           const isRightAligned = speakerIndex % 2 === 1;
@@ -568,7 +588,7 @@ export function DialogueCard({
                 isPlaying && "animate-in fade-in slide-in-from-bottom-2 duration-300"
               )}
             >
-              {/* Circular Character Avatar (52-60px on desktop, ~44px mobile) */}
+              {/* Circular Character Avatar (72px on laptop/desktop, 64px tablet, 48px mobile) */}
               <div className="shrink-0 flex flex-col items-center gap-1.5 pt-0.5">
                 <CharacterAvatar
                   speaker={line.speaker}
@@ -577,12 +597,14 @@ export function DialogueCard({
                   size="lg"
                   shape="circle"
                   fallbackTheme={theme}
-                  className={cn(
-                    "ring-offset-2 ring-offset-[var(--tb-bg)] transition-transform duration-200",
-                    isLineActiveSpeaking && "scale-105"
-                  )}
                 />
-                <span className="text-[11px] font-bold text-[var(--tb-text-secondary)] max-w-[70px] truncate text-center font-japanese">
+                <span
+                  className={cn(
+                    "text-[11px] font-bold text-[var(--tb-text-secondary)] max-w-[78px] truncate text-center font-japanese",
+                    sceneBackgroundUrl &&
+                      "rounded-full bg-[var(--tb-surface)]/85 px-2 py-0.5 text-[var(--tb-text-primary)] backdrop-blur-xs shadow-2xs"
+                  )}
+                >
                   {line.speakerJa}
                 </span>
               </div>
@@ -590,15 +612,15 @@ export function DialogueCard({
               {/* Chat Message Bubble */}
               <div
                 className={cn(
-                  "relative max-w-[88%] sm:max-w-[75%] md:max-w-[70%] rounded-3xl p-4 sm:p-5 shadow-xs transition-all duration-300 text-left border",
+                  "relative max-w-[88%] sm:max-w-[75%] md:max-w-[70%] rounded-3xl p-4 sm:p-5 shadow-xs transition-all duration-300 text-left border backdrop-blur-xs",
                   isRightAligned
-                    ? "rounded-tr-xs bg-[var(--tb-surface)]"
-                    : "rounded-tl-xs bg-[var(--tb-surface)]",
+                    ? "rounded-tr-xs bg-[var(--tb-surface)]/92"
+                    : "rounded-tl-xs bg-[var(--tb-surface)]/92",
                   theme.bubbleBorder,
                   isUserRole &&
-                    "border-emerald-500/50 bg-emerald-50/20 dark:bg-emerald-950/20 ring-1 ring-emerald-500/30",
+                    "border-emerald-500/50 bg-emerald-50/85 dark:bg-emerald-950/75 ring-1 ring-emerald-500/30",
                   isLineActiveSpeaking &&
-                    "ring-2 ring-[var(--tb-primary)] shadow-md bg-[var(--tb-accent-soft)]/70 scale-[1.01]"
+                    "ring-2 ring-[var(--tb-primary)] shadow-md bg-[var(--tb-accent-soft)]/90 scale-[1.01]"
                 )}
               >
                 {/* Bubble Top Bar */}
@@ -686,6 +708,7 @@ export function DialogueCard({
             </div>
           );
         })}
+        </div>
       </div>
     </div>
   );

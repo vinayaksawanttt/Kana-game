@@ -447,3 +447,17 @@ html[data-theme="dark"] .kana-card {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+@keyframes tb-avatar-talk {
+  0%,
+  100% {
+    transform: translateY(0) scale(1.08);
+  }
+  50% {
+    transform: translateY(-2px) scale(1.12);
+  }
+}
+
+.animate-avatar-talk {
+  animation: tb-avatar-talk 0.9s ease-in-out infinite;
+}
