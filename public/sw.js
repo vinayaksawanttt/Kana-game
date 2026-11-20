@@ -1,6 +1,6 @@
 // Auto-generated Service Worker by scripts/build-sw.ts
 // Cache Name with bundle hash
-const CACHE_NAME = "nihongo-v1-" + "b87f6fc18977";
+const CACHE_NAME = "nihongo-v1-" + "20e0b277f01d";
 
 const CORE_PRECACHE = [
   "/",

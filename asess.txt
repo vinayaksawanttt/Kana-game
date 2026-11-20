@@ -1,0 +1,16 @@
+Genki 1: Lesson: 2 Dialogue: 1
+issues: voice is of male and みせのひと (Vendor) avatar charcter is young female.
+
+Genki 1: Lesson: 2 Dialogue: 2
+issues: 1. voice is of male and みせのひと (Restaurant attendant) avatar charcter is young female maid.
+        2. last dialogue of メアリー: (Thank you very much.) is voiced by a male charcter
+
+Genki 1: Lesson: 3 Dialogue: 1
+issues: last dialogue of メアリー: (いいですね。) is voiced by a male charcter
+Genki 1: Lesson: 3 Dialogue: 2
+issues: second last dialogue of メアリー: I will not eat.) is voiced by a different charcter.
+
+Genki 1: Lesson: 4 Dialogue: 1
+issues: last dialogue of メアリー: (Thank you very much.) is voiced by a male charcter
+Genki 1: Lesson: 4 Dialogue: 2
+issues: last dialogue of お父さん(Host father): (I see.) is voiced by a female charcter

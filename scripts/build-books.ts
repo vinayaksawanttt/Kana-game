@@ -21,6 +21,25 @@ const VOCAB_DIR = path.join(ROOT_DIR, "public/data/v1/vocabulary");
 const GRAMMAR_DIR = path.join(ROOT_DIR, "public/data/v1/grammar");
 const DICT_INDEX_PATH = path.join(ROOT_DIR, "public/data/v1/dictionary-index.json");
 const AUDIO_MANIFEST_PATH = path.join(ROOT_DIR, "src/data/audio-manifest.generated.ts");
+const DEEPL_CACHE_PATH = path.join(ROOT_DIR, "data-raw/deepl-cache.json");
+
+let deeplCache: Record<string, string> = {};
+if (fs.existsSync(DEEPL_CACHE_PATH)) {
+  try {
+    deeplCache = JSON.parse(fs.readFileSync(DEEPL_CACHE_PATH, "utf8"));
+  } catch {
+    deeplCache = {};
+  }
+}
+
+function lookupDeepLTranslation(text: string): string | undefined {
+  const trimmed = text.trim();
+  return (
+    deeplCache[`ja->en:sentence:${trimmed}`] ||
+    deeplCache[`ja->en:story-sentence:${trimmed}`] ||
+    deeplCache[`ja->en:gloss:${trimmed}`]
+  );
+}
 
 // --- Hepburn Romaji to Kana Converter ---
 const ROMAJI_TO_HIRA: Record<string, string> = {
@@ -523,7 +542,12 @@ async function main() {
   const audioManifestSet = loadAudioManifestSet();
   console.log(`Loaded ${audioManifestSet.size} audio manifest clips.`);
 
-  const dictIndex = loadJsonSafe<{ kanji?: Record<string, any> }>(DICT_INDEX_PATH, {});
+  interface DictKanjiEntry {
+    strokes?: number;
+    jlpt?: number;
+    label?: string;
+  }
+  const dictIndex = loadJsonSafe<{ kanji?: Record<string, DictKanjiEntry> }>(DICT_INDEX_PATH, {});
   const dictKanji = dictIndex.kanji || {};
 
   // Load all JLPT vocabulary for resolution
@@ -818,7 +842,7 @@ async function main() {
           const exMatch = bpText.match(/^\*\*Ex:\*\*\s*`([^`]+)`(?:\s*[—–-]\s*(.+))?$/);
           if (exMatch) {
             const ja = exMatch[1].trim();
-            const en = exMatch[2]?.trim();
+            const en = exMatch[2]?.trim() || lookupDeepLTranslation(ja);
             const existing = currentPoint.examples!.find((e) => e.ja === ja);
             if (existing) {
               if (!existing.en && en) existing.en = en;
@@ -837,7 +861,11 @@ async function main() {
             const codeContent = m[1];
             if (/[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/.test(codeContent) && codeContent.length >= 2) {
               if (!currentPoint.examples!.some((e) => e.ja === codeContent)) {
-                currentPoint.examples!.push({ ja: codeContent, audioKey: codeContent });
+                currentPoint.examples!.push({
+                  ja: codeContent,
+                  en: lookupDeepLTranslation(codeContent),
+                  audioKey: codeContent,
+                });
               }
             }
           }
@@ -855,7 +883,10 @@ async function main() {
             const codeContent = m[1];
             if (/[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/.test(codeContent) && codeContent.length >= 2) {
               if (!currentPoint.examples!.some((e) => e.ja === codeContent)) {
-                currentPoint.examples!.push({ ja: codeContent });
+                currentPoint.examples!.push({
+                  ja: codeContent,
+                  en: lookupDeepLTranslation(codeContent),
+                });
               }
             }
           }
@@ -1017,6 +1048,7 @@ async function main() {
               prompt,
               cue,
               answer: rawAnswer,
+              hint: lookupDeepLTranslation(rawAnswer),
               audioTrack,
             });
           }
