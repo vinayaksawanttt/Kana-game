@@ -1,15 +1,15 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-11-20T17:45:43.632Z",
-  "bundleHash": "20e0b277f01d",
+  "generatedAt": "2026-11-22T15:05:51.571Z",
+  "bundleHash": "5a0884c51391",
   "assets": {
     "books/genki-1.json": {
-      "hash": "159ce184390b",
-      "bytes": 730992
+      "hash": "865eeac6e82b",
+      "bytes": 752189
     },
     "books/genki-2.json": {
-      "hash": "f35779ff00c9",
-      "bytes": 723146
+      "hash": "5e587aeaa97f",
+      "bytes": 743630
     },
     "books/index.json": {
       "hash": "e91dcb610871",

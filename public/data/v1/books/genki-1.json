@@ -1118,31 +1118,41 @@
               "speakerJa": "たけし",
               "ja": "こんにちは。木村たけしです。",
               "speaker": "Takeshi",
-              "en": "Hello. I am Takeshi Kimura."
+              "en": "Hello. I am Takeshi Kimura.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l1-scene-i-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "メアリー・ハートです。あのう、りゅうがくせいですか。",
               "speaker": "Mary",
-              "en": "I am Mary Hart. Um ... are you an international student?"
+              "en": "I am Mary Hart. Um ... are you an international student?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l1-scene-i-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "いいえ、にほんじんです。",
               "speaker": "Takeshi",
-              "en": "No, I am Japanese."
+              "en": "No, I am Japanese.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l1-scene-i-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "そうですか。なんねんせいですか。",
               "speaker": "Mary",
-              "en": "I see. What year are you in college?"
+              "en": "I see. What year are you in college?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l1-scene-i-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "よねんせいです。",
               "speaker": "Takeshi",
-              "en": "I am a fourth-year student."
+              "en": "I am a fourth-year student.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l1-scene-i-4.opus",
+              "hasAudio": true
             }
           ]
         },
@@ -1155,25 +1165,33 @@
               "speakerJa": "メアリー",
               "ja": "はじめまして。メアリー・ハートです。",
               "speaker": "Mary",
-              "en": "How do you do? I am Mary Hart."
+              "en": "How do you do? I am Mary Hart.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l1-scene-ii-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "アリゾナだいがくのがくせいです。にねんせいです。",
               "speaker": "Mary",
-              "en": "I am a student at the University of Arizona. I am a second-year student."
+              "en": "I am a student at the University of Arizona. I am a second-year student.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l1-scene-ii-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "せんこうはにほんごです。じゅうきゅうさいです。",
               "speaker": "Mary",
-              "en": "My major is Japanese. I am 19 years old."
+              "en": "My major is Japanese. I am 19 years old.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l1-scene-ii-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "よろしくおねがいします。",
               "speaker": "Mary",
-              "en": "Nice to meet you."
+              "en": "Nice to meet you.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l1-scene-ii-3.opus",
+              "hasAudio": true
             }
           ]
         }
@@ -3036,55 +3054,73 @@
               "speakerJa": "メアリー",
               "ja": "すみません。これはいくらですか。",
               "speaker": "Mary",
-              "en": "Excuse me. How much is this?"
+              "en": "Excuse me. How much is this?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l2-scene-i-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "みせのひと",
               "ja": "それはさんぜんえんです。",
               "speaker": "Vendor",
-              "en": "It is 3,000 yen."
+              "en": "It is 3,000 yen.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l2-scene-i-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "たかいですね。じゃあ、あのとけいはいくらですか。",
               "speaker": "Mary",
-              "en": "It's expensive. Well then, how much is that watch?"
+              "en": "It's expensive. Well then, how much is that watch?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l2-scene-i-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "みせのひと",
               "ja": "あれはさんぜんごひゃくえんです。",
               "speaker": "Vendor",
-              "en": "That is 3,500 yen."
+              "en": "That is 3,500 yen.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l2-scene-i-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "そうですか。あれもたかいですね。",
               "speaker": "Mary",
-              "en": "I see. That is expensive, too."
+              "en": "I see. That is expensive, too.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l2-scene-i-4.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "みせのひと",
               "ja": "これはせんはっぴゃくえんですよ。",
               "speaker": "Vendor",
-              "en": "This is 1,800 yen."
+              "en": "This is 1,800 yen.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l2-scene-i-5.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "じゃあ、そのとけいをください。",
               "speaker": "Mary",
-              "en": "Then, I'll take that watch."
+              "en": "Then, I'll take that watch.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l2-scene-i-6.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "しらないひと",
               "ja": "これはだれのさいふですか。",
               "speaker": "Stranger",
-              "en": "Whose wallet is this?"
+              "en": "Whose wallet is this?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l2-scene-i-7.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "わたしのさいふです。ありがとうございます。",
               "speaker": "Mary",
-              "en": "It's my wallet. Thank you very much."
+              "en": "It's my wallet. Thank you very much.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l2-scene-i-8.opus",
+              "hasAudio": true
             }
           ]
         },
@@ -3097,55 +3133,73 @@
               "speakerJa": "みせのひと",
               "ja": "いらっしゃいませ。メニューをどうぞ。",
               "speaker": "Restaurant attendant",
-              "en": "Welcome. Here's the menu."
+              "en": "Welcome. Here's the menu.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l2-scene-ii-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "どうも。これはなんですか。",
               "speaker": "Mary",
-              "en": "Thank you. What is this?"
+              "en": "Thank you. What is this?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l2-scene-ii-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "みせのひと",
               "ja": "どれですか。ああ、とんかつです。",
               "speaker": "Restaurant attendant",
-              "en": "Which one? Oh, it is tonkatsu [pork cutlet]."
+              "en": "Which one? Oh, it is tonkatsu [pork cutlet].",
+              "audioSrc": "/audio/books/dialogues/genki-1/l2-scene-ii-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "とんかつ？さかなですか。",
               "speaker": "Mary",
-              "en": "Tonkatsu? Is it fish?"
+              "en": "Tonkatsu? Is it fish?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l2-scene-ii-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "みせのひと",
               "ja": "いいえ、さかなじゃないです。にくです。おいしいですよ。",
               "speaker": "Restaurant attendant",
-              "en": "No, it is not fish. It is meat. It is delicious."
+              "en": "No, it is not fish. It is meat. It is delicious.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l2-scene-ii-4.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "じゃあ、これをおねがいします。",
               "speaker": "Mary",
-              "en": "Then, I'll have this."
+              "en": "Then, I'll have this.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l2-scene-ii-5.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "すみません。トイレはどこですか。",
               "speaker": "Mary",
-              "en": "Excuse me. Where is the restroom?"
+              "en": "Excuse me. Where is the restroom?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l2-scene-ii-6.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "みせのひと",
               "ja": "あそこです。",
               "speaker": "Restaurant attendant",
-              "en": "It is over there."
+              "en": "It is over there.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l2-scene-ii-7.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "ありがとうございます。",
               "speaker": "Mary",
-              "en": "Thank you very much."
+              "en": "Thank you very much.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l2-scene-ii-8.opus",
+              "hasAudio": true
             }
           ]
         }
@@ -5199,37 +5253,49 @@
               "speakerJa": "たけし",
               "ja": "メアリーさん、週末はたいてい何をしますか。",
               "speaker": "Takeshi",
-              "en": "Mary, what do you usually do on the weekend?"
+              "en": "Mary, what do you usually do on the weekend?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l3-scene-i-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "そうですね。たいていうちで勉強します。でも、ときどき映画を見ます。",
               "speaker": "Mary",
-              "en": "Let's see. I usually study at home. But I sometimes see movies."
+              "en": "Let's see. I usually study at home. But I sometimes see movies.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l3-scene-i-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "そうですか……。じゃあ、土曜日に映画を見ませんか。",
               "speaker": "Takeshi",
-              "en": "I see. ... Then, would you like to see a movie on Saturday?"
+              "en": "I see. ... Then, would you like to see a movie on Saturday?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l3-scene-i-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "土曜日はちょっと……。",
               "speaker": "Mary",
-              "en": "Saturday is not a good day. [lit., Saturday is a little bit inconvenient ...]"
+              "en": "Saturday is not a good day. [lit., Saturday is a little bit inconvenient ...]",
+              "audioSrc": "/audio/books/dialogues/genki-1/l3-scene-i-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "じゃあ、日曜日はどうですか。",
               "speaker": "Takeshi",
-              "en": "Then, how about Sunday?"
+              "en": "Then, how about Sunday?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l3-scene-i-4.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "いいですね。",
               "speaker": "Mary",
-              "en": "That's fine."
+              "en": "That's fine.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l3-scene-i-5.opus",
+              "hasAudio": true
             }
           ]
         },
@@ -5242,55 +5308,73 @@
               "speakerJa": "メアリー",
               "ja": "おはようございます。",
               "speaker": "Mary",
-              "en": "Good morning."
+              "en": "Good morning.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l3-scene-ii-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "お母さん",
               "ja": "おはよう。早いですね。",
               "speaker": "Host mother",
-              "en": "Good morning. You are early, aren't you?"
+              "en": "Good morning. You are early, aren't you?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l3-scene-ii-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "ええ、今日は京都に行きます。京都で映画を見ます。",
               "speaker": "Mary",
-              "en": "Yes, I'm going to Kyoto today. I will see a movie in Kyoto."
+              "en": "Yes, I'm going to Kyoto today. I will see a movie in Kyoto.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l3-scene-ii-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "お母さん",
               "ja": "いいですね。何時ごろ帰りますか。",
               "speaker": "Host mother",
-              "en": "Good. Around what time will you come back?"
+              "en": "Good. Around what time will you come back?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l3-scene-ii-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "九時ごろです。",
               "speaker": "Mary",
-              "en": "Around nine."
+              "en": "Around nine.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l3-scene-ii-4.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "お母さん",
               "ja": "晩ご飯は？",
               "speaker": "Host mother",
-              "en": "How about dinner?"
+              "en": "How about dinner?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l3-scene-ii-5.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "食べません。",
               "speaker": "Mary",
-              "en": "I will not eat."
+              "en": "I will not eat.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l3-scene-ii-6.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "お母さん",
               "ja": "そうですか。じゃあ、いってらっしゃい。",
               "speaker": "Host mother",
-              "en": "I see. Well, have a nice day."
+              "en": "I see. Well, have a nice day.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l3-scene-ii-7.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "いってきます。",
               "speaker": "Mary",
-              "en": "Good-bye."
+              "en": "Good-bye.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l3-scene-ii-8.opus",
+              "hasAudio": true
             }
           ]
         }
@@ -7051,19 +7135,25 @@
               "speakerJa": "メアリー",
               "ja": "すみません。マクドナルドはどこですか。",
               "speaker": "Mary",
-              "en": "Excuse me. Where is McDonald's?"
+              "en": "Excuse me. Where is McDonald's?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l4-scene-i-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "知らない人",
               "ja": "あそこにホテルがありますね。マクドナルドはあのホテルの前ですよ。",
               "speaker": "Stranger",
-              "en": "There is a hotel over there. McDonald's is in front of the hotel."
+              "en": "There is a hotel over there. McDonald's is in front of the hotel.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l4-scene-i-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "ありがとうございます。",
               "speaker": "Mary",
-              "en": "Thank you very much."
+              "en": "Thank you very much.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l4-scene-i-2.opus",
+              "hasAudio": true
             }
           ]
         },
@@ -7076,49 +7166,65 @@
               "speakerJa": "メアリー",
               "ja": "ただいま。",
               "speaker": "Mary",
-              "en": "I'm home."
+              "en": "I'm home.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l4-scene-ii-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "お父さん",
               "ja": "おかえりなさい。映画はどうでしたか。",
               "speaker": "Host father",
-              "en": "Welcome home. How was the movie?"
+              "en": "Welcome home. How was the movie?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l4-scene-ii-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "見ませんでした。たけしさんは来ませんでした。",
               "speaker": "Mary",
-              "en": "I didn't see it. Takeshi didn't come."
+              "en": "I didn't see it. Takeshi didn't come.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l4-scene-ii-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "お父さん",
               "ja": "えっ、どうしてですか。",
               "speaker": "Host father",
-              "en": "Oh, why?"
+              "en": "Oh, why?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l4-scene-ii-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "わかりません。だから、一人で本屋とお寺に行きました。",
               "speaker": "Mary",
-              "en": "I don't know. So, I went to a bookstore and a temple alone."
+              "en": "I don't know. So, I went to a bookstore and a temple alone.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l4-scene-ii-4.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "お父さん",
               "ja": "人がたくさんいましたか。",
               "speaker": "Host father",
-              "en": "Were there a lot of people?"
+              "en": "Were there a lot of people?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l4-scene-ii-5.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "はい。お寺で写真をたくさん撮りました。公園にも行きました。",
               "speaker": "Mary",
-              "en": "Yes. I took many pictures at the temple. I also went to a park."
+              "en": "Yes. I took many pictures at the temple. I also went to a park.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l4-scene-ii-6.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "お父さん",
               "ja": "そうですか。",
               "speaker": "Host father",
-              "en": "I see."
+              "en": "I see.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l4-scene-ii-7.opus",
+              "hasAudio": true
             }
           ]
         },
@@ -7131,31 +7237,41 @@
               "speakerJa": "たけし",
               "ja": "もしもし、メアリーさん。",
               "speaker": "Takeshi",
-              "en": "Hello, Mary."
+              "en": "Hello, Mary.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l4-scene-iii-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "あっ、たけしさん。今日来ませんでしたね。",
               "speaker": "Mary",
-              "en": "Oh, Takeshi. You didn't come today, did you?"
+              "en": "Oh, Takeshi. You didn't come today, did you?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l4-scene-iii-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "行きましたよ。モスバーガーの前で一時間待ちました。",
               "speaker": "Takeshi",
-              "en": "I went there. I waited for one hour in front of the Mos Burger place."
+              "en": "I went there. I waited for one hour in front of the Mos Burger place.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l4-scene-iii-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "モスバーガーじゃないですよ。マクドナルドですよ。",
               "speaker": "Mary",
-              "en": "Not Mos Burger. McDonald's!"
+              "en": "Not Mos Burger. McDonald's!",
+              "audioSrc": "/audio/books/dialogues/genki-1/l4-scene-iii-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "マクドナルド……ごめんなさい！",
               "speaker": "Takeshi",
-              "en": "McDonald's ... I'm sorry!"
+              "en": "McDonald's ... I'm sorry!",
+              "audioSrc": "/audio/books/dialogues/genki-1/l4-scene-iii-4.opus",
+              "hasAudio": true
             }
           ]
         }
@@ -8853,49 +8969,65 @@
               "speakerJa": "ロバート",
               "ja": "いい天気ですね。",
               "speaker": "Robert",
-              "en": "Nice weather."
+              "en": "Nice weather.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l5-scene-i-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "けん",
               "ja": "そうですね。でも、ちょっと暑いですね。",
               "speaker": "Ken",
-              "en": "Yes. But it is a little hot."
+              "en": "Yes. But it is a little hot.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l5-scene-i-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "ええ。わあ、きれいな海！",
               "speaker": "Robert",
-              "en": "Yes. Wow, beautiful sea!"
+              "en": "Yes. Wow, beautiful sea!",
+              "audioSrc": "/audio/books/dialogues/genki-1/l5-scene-i-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "けん",
               "ja": "泳ぎましょう。",
               "speaker": "Ken",
-              "en": "Let's swim."
+              "en": "Let's swim.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l5-scene-i-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "けん",
               "ja": "ロバートさんはどんなスポーツが好きですか。",
               "speaker": "Ken",
-              "en": "What kind of sports do you like, Robert?"
+              "en": "What kind of sports do you like, Robert?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l5-scene-i-4.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "サーフィンが好きです。あした一緒にやりましょうか。",
               "speaker": "Robert",
-              "en": "I like surfing. Shall we do it together tomorrow?"
+              "en": "I like surfing. Shall we do it together tomorrow?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l5-scene-i-5.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "けん",
               "ja": "でも、難しくないですか。",
               "speaker": "Ken",
-              "en": "But isn't it difficult?"
+              "en": "But isn't it difficult?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l5-scene-i-6.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "大丈夫ですよ。",
               "speaker": "Robert",
-              "en": "No, it's fine."
+              "en": "No, it's fine.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l5-scene-i-7.opus",
+              "hasAudio": true
             }
           ]
         },
@@ -8908,31 +9040,41 @@
               "speakerJa": "ロバート",
               "ja": "すみません、このTシャツは、いくらですか。",
               "speaker": "Robert",
-              "en": "Excuse me. How much is this T-shirt?"
+              "en": "Excuse me. How much is this T-shirt?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l5-scene-ii-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "店の人",
               "ja": "千八百円です。",
               "speaker": "Store attendant",
-              "en": "It is 1,800 yen."
+              "en": "It is 1,800 yen.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l5-scene-ii-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "あのう、Lサイズがありますか。",
               "speaker": "Robert",
-              "en": "Um ... Do you have a large size?"
+              "en": "Um ... Do you have a large size?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l5-scene-ii-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "店の人",
               "ja": "はい、ありますよ。",
               "speaker": "Store attendant",
-              "en": "Yes, we do."
+              "en": "Yes, we do.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l5-scene-ii-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "じゃ、Lサイズを二枚ください。",
               "speaker": "Robert",
-              "en": "Then, two large ones, please."
+              "en": "Then, two large ones, please.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l5-scene-ii-4.opus",
+              "hasAudio": true
             }
           ]
         },
@@ -8945,43 +9087,57 @@
               "speakerJa": "たけし",
               "ja": "ロバートさん、旅行は楽しかったですか。",
               "speaker": "Takeshi",
-              "en": "Robert, did you enjoy the trip?"
+              "en": "Robert, did you enjoy the trip?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l5-scene-iii-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "ええ。沖縄の海はすごくきれいでしたよ。",
               "speaker": "Robert",
-              "en": "Yes. The sea was very beautiful in Okinawa."
+              "en": "Yes. The sea was very beautiful in Okinawa.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l5-scene-iii-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "よかったですね。ぼくも海が大好きです。ホテルは高かったですか。",
               "speaker": "Takeshi",
-              "en": "Good. I like the sea very much, too. Was the hotel expensive?"
+              "en": "Good. I like the sea very much, too. Was the hotel expensive?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l5-scene-iii-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "いいえ、あまり高くなかったです。これ、おみやげです。",
               "speaker": "Robert",
-              "en": "No, it wasn't so expensive. Here is a souvenir for you."
+              "en": "No, it wasn't so expensive. Here is a souvenir for you.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l5-scene-iii-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "ありがとう。",
               "speaker": "Takeshi",
-              "en": "Thank you."
+              "en": "Thank you.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l5-scene-iii-4.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "たけしさんのデートはどうでしたか。",
               "speaker": "Robert",
-              "en": "How was your date, Takeshi?"
+              "en": "How was your date, Takeshi?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l5-scene-iii-5.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "……。",
               "speaker": "Takeshi",
-              "en": "..."
+              "en": "...",
+              "audioSrc": "/audio/books/dialogues/genki-1/l5-scene-iii-6.opus",
+              "hasAudio": true
             }
           ]
         }
@@ -10744,37 +10900,49 @@
               "speakerJa": "山下先生",
               "ja": "ロバートさん、次のページを読んでください。",
               "speaker": "Prof. Yamashita",
-              "en": "Robert, please read the next page."
+              "en": "Robert, please read the next page.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l6-scene-i-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "……。",
               "speaker": "Robert",
-              "en": "..."
+              "en": "...",
+              "audioSrc": "/audio/books/dialogues/genki-1/l6-scene-i-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "山下先生",
               "ja": "ロバートさん、起きてください。クラスで寝てはいけませんよ。",
               "speaker": "Prof. Yamashita",
-              "en": "Robert, please wake up. You cannot sleep in the class."
+              "en": "Robert, please wake up. You cannot sleep in the class.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l6-scene-i-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "先生、教科書を忘れました。",
               "speaker": "Robert",
-              "en": "Mr. Yamashita, I forgot to bring the textbook."
+              "en": "Mr. Yamashita, I forgot to bring the textbook.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l6-scene-i-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "山下先生",
               "ja": "教科書を持ってきてくださいね。毎日使いますから。",
               "speaker": "Prof. Yamashita",
-              "en": "Please bring your textbook with you. We use it every day."
+              "en": "Please bring your textbook with you. We use it every day.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l6-scene-i-4.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "はい、すみません。",
               "speaker": "Robert",
-              "en": "I understand. I'm sorry."
+              "en": "I understand. I'm sorry.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l6-scene-i-5.opus",
+              "hasAudio": true
             }
           ]
         },
@@ -10787,49 +10955,65 @@
               "speakerJa": "ソラ",
               "ja": "ロバートさん、今日は大変でしたね。",
               "speaker": "Sora",
-              "en": "Robert, you had a hard time today."
+              "en": "Robert, you had a hard time today.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l6-scene-ii-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "ええ。後でソラさんのノートを借りてもいいですか。",
               "speaker": "Robert",
-              "en": "Yes. May I borrow your notebook later, Sora?"
+              "en": "Yes. May I borrow your notebook later, Sora?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l6-scene-ii-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ソラ",
               "ja": "いいですよ。",
               "speaker": "Sora",
-              "en": "Yes."
+              "en": "Yes.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l6-scene-ii-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "ありがとう。すぐ返します。",
               "speaker": "Robert",
-              "en": "Thank you. I'll return it soon."
+              "en": "Thank you. I'll return it soon.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l6-scene-ii-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ソラ",
               "ja": "ロバートさん、あしたテストがありますよ。",
               "speaker": "Sora",
-              "en": "Robert, we will have a test tomorrow."
+              "en": "Robert, we will have a test tomorrow.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l6-scene-ii-4.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "えっ。本当ですか。",
               "speaker": "Robert",
-              "en": "Really?"
+              "en": "Really?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l6-scene-ii-5.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ソラ",
               "ja": "ええ。ロバートさん、金曜日に休みましたからね。",
               "speaker": "Sora",
-              "en": "Yes. You were absent from the class last Friday. That's why you didn't know about it."
+              "en": "Yes. You were absent from the class last Friday. That's why you didn't know about it.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l6-scene-ii-6.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "じゃあ、今日は家に帰って、勉強します。",
               "speaker": "Robert",
-              "en": "Well then, I'll go home and study today."
+              "en": "Well then, I'll go home and study today.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l6-scene-ii-7.opus",
+              "hasAudio": true
             }
           ]
         },
@@ -10842,31 +11026,41 @@
               "speakerJa": "おばあさん",
               "ja": "あの、すみません。このバスはさくら病院へ行きますか。",
               "speaker": "Old woman",
-              "en": "Excuse me. Does this bus go to Sakura Hospital?"
+              "en": "Excuse me. Does this bus go to Sakura Hospital?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l6-scene-iii-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "ええ、行きますよ。……あの、どうぞ座ってください。",
               "speaker": "Robert",
-              "en": "Yes, it does. ... Well, take this seat, please."
+              "en": "Yes, it does. ... Well, take this seat, please.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l6-scene-iii-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "おばあさん",
               "ja": "いいえ、けっこうです。すぐ降りますから。",
               "speaker": "Old woman",
-              "en": "No, thank you. I'll get off soon."
+              "en": "No, thank you. I'll get off soon.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l6-scene-iii-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "そうですか。じゃあ、荷物を持ちましょうか。",
               "speaker": "Robert",
-              "en": "Is that so? Then, shall I hold your bag for you?"
+              "en": "Is that so? Then, shall I hold your bag for you?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l6-scene-iii-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "おばあさん",
               "ja": "あ、どうもすみません。",
               "speaker": "Old woman",
-              "en": "Thank you."
+              "en": "Thank you.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l6-scene-iii-4.opus",
+              "hasAudio": true
             }
           ]
         }
@@ -12567,61 +12761,81 @@
               "speakerJa": "ゆい",
               "ja": "これはソラさんの家族の写真ですか。",
               "speaker": "Yui",
-              "en": "Is this your family picture, Sora?"
+              "en": "Is this your family picture, Sora?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l7-scene-i-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ソラ",
               "ja": "ええ。",
               "speaker": "Sora",
-              "en": "Yes."
+              "en": "Yes.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l7-scene-i-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "ソラさんはどれですか。",
               "speaker": "Yui",
-              "en": "Which is you?"
+              "en": "Which is you?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l7-scene-i-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ソラ",
               "ja": "これです。高校の時はめがねをかけていました。",
               "speaker": "Sora",
-              "en": "This. I was wearing glasses when I was in high school."
+              "en": "This. I was wearing glasses when I was in high school.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l7-scene-i-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "かわいいですね。",
               "speaker": "Yui",
-              "en": "You are cute."
+              "en": "You are cute.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l7-scene-i-4.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ソラ",
               "ja": "これは父です。ニューヨークの会社で働いています。",
               "speaker": "Sora",
-              "en": "This is my father. He works at a company in New York."
+              "en": "This is my father. He works at a company in New York.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l7-scene-i-5.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "背が高くて、かっこいいですね。これはお姉さんですか。",
               "speaker": "Yui",
-              "en": "He is tall and good-looking. Is this your older sister?"
+              "en": "He is tall and good-looking. Is this your older sister?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l7-scene-i-6.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ソラ",
               "ja": "ええ。姉は結婚しています。今ソウルに住んでいます。子供が一人います。三歳です。",
               "speaker": "Sora",
-              "en": "Yes. My sister is married. She lives in Seoul now. She has one child. He is three years old."
+              "en": "Yes. My sister is married. She lives in Seoul now. She has one child. He is three years old.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l7-scene-i-7.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "そうですか。あっ、猫がいますね。ちょっと太っていますね。",
               "speaker": "Yui",
-              "en": "I see. Oh, there is a cat. He is a little fat."
+              "en": "I see. Oh, there is a cat. He is a little fat.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l7-scene-i-8.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ソラ",
               "ja": "ええ、よく食べますから。",
               "speaker": "Sora",
-              "en": "Yes, because he eats a lot."
+              "en": "Yes, because he eats a lot.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l7-scene-i-9.opus",
+              "hasAudio": true
             }
           ]
         },
@@ -12634,37 +12848,49 @@
               "speakerJa": "ロバート",
               "ja": "もしもし、ゆいさん、今何をしていますか。",
               "speaker": "Robert",
-              "en": "Hello, Yui, what are you doing now?"
+              "en": "Hello, Yui, what are you doing now?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l7-scene-ii-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "別に何もしていません。今、ソラさんの写真を見ています。",
               "speaker": "Yui",
-              "en": "I'm not doing anything especially. I am looking at Sora's pictures."
+              "en": "I'm not doing anything especially. I am looking at Sora's pictures.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l7-scene-ii-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "そうですか。きのうおいしいコーヒーを買いました。よかったら飲みに来ませんか。",
               "speaker": "Robert",
-              "en": "I see. I bought some delicious coffee yesterday. Won't you come to drink it, if you like?"
+              "en": "I see. I bought some delicious coffee yesterday. Won't you come to drink it, if you like?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l7-scene-ii-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "いいですね。ソラさんも一緒に行ってもいいですか。",
               "speaker": "Yui",
-              "en": "That sounds good. Is it all right if Sora comes with me?"
+              "en": "That sounds good. Is it all right if Sora comes with me?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l7-scene-ii-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "もちろん。",
               "speaker": "Robert",
-              "en": "Of course."
+              "en": "Of course.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l7-scene-ii-4.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "じゃあ、すぐ行きます。",
               "speaker": "Yui",
-              "en": "We'll come right now."
+              "en": "We'll come right now.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l7-scene-ii-5.opus",
+              "hasAudio": true
             }
           ]
         }
@@ -14295,43 +14521,57 @@
               "speakerJa": "ゆい",
               "ja": "たけしさん、あしたみんなでバーベキューをしませんか。",
               "speaker": "Yui",
-              "en": "Takeshi, would you like to have a barbecue party tomorrow?"
+              "en": "Takeshi, would you like to have a barbecue party tomorrow?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l8-scene-i-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "いいですね。だれが来ますか。",
               "speaker": "Takeshi",
-              "en": "That's nice. Who will come?"
+              "en": "That's nice. Who will come?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l8-scene-i-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "ソラさんとロバートさんが来ます。メアリーさんも来ると思います。",
               "speaker": "Yui",
-              "en": "Sora and Robert will come. I think Mary will come, too."
+              "en": "Sora and Robert will come. I think Mary will come, too.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l8-scene-i-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "けんさんは？",
               "speaker": "Takeshi",
-              "en": "How about Ken?"
+              "en": "How about Ken?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l8-scene-i-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "けんさんはアルバイトがあると言っていました。",
               "speaker": "Yui",
-              "en": "Ken said he had a part-time job."
+              "en": "Ken said he had a part-time job.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l8-scene-i-4.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "残念ですね。何か持っていきましょうか。",
               "speaker": "Takeshi",
-              "en": "Too bad. Shall I bring something?"
+              "en": "Too bad. Shall I bring something?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l8-scene-i-5.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "何もいらないと思います。",
               "speaker": "Yui",
-              "en": "I think nothing is needed."
+              "en": "I think nothing is needed.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l8-scene-i-6.opus",
+              "hasAudio": true
             }
           ]
         },
@@ -14344,49 +14584,65 @@
               "speakerJa": "ゆい",
               "ja": "上手ですね。ロバートさんは料理するのが好きですか。",
               "speaker": "Yui",
-              "en": "You are good at cooking. Do you like cooking, Robert?"
+              "en": "You are good at cooking. Do you like cooking, Robert?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l8-scene-ii-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "ええ、よく家で作ります。",
               "speaker": "Robert",
-              "en": "Yes, I often cook at home."
+              "en": "Yes, I often cook at home.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l8-scene-ii-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "何か手伝いましょうか。",
               "speaker": "Yui",
-              "en": "Shall I help you with something?"
+              "en": "Shall I help you with something?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l8-scene-ii-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "じゃあ、トマトを切ってください。",
               "speaker": "Robert",
-              "en": "Well then, cut the tomatoes, please."
+              "en": "Well then, cut the tomatoes, please.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l8-scene-ii-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ロバート",
               "ja": "始めましょうか。",
               "speaker": "Robert",
-              "en": "Shall we start?"
+              "en": "Shall we start?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l8-scene-ii-4.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "あっ、まだ飲まないでください。メアリーさんも来ると言っていましたから。",
               "speaker": "Yui",
-              "en": "Oh, don't drink yet. Mary said that she would come."
+              "en": "Oh, don't drink yet. Mary said that she would come.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l8-scene-ii-5.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "遅くなってすみません。",
               "speaker": "Mary",
-              "en": "I'm sorry for being late."
+              "en": "I'm sorry for being late.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l8-scene-ii-6.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "みんな",
               "ja": "じゃあ、乾杯！",
               "speaker": "Everyone",
-              "en": "Well then ... Cheers!"
+              "en": "Well then ... Cheers!",
+              "audioSrc": "/audio/books/dialogues/genki-1/l8-scene-ii-7.opus",
+              "hasAudio": true
             }
           ]
         }
@@ -15898,31 +16154,41 @@
               "speakerJa": "たけし",
               "ja": "メアリーさんはかぶきが好きですか。",
               "speaker": "Takeshi",
-              "en": "Mary, do you like Kabuki?"
+              "en": "Mary, do you like Kabuki?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l9-scene-i-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "かぶきですか。あまり知りません。でも、ロバートさんはおもしろかったと言っていました。",
               "speaker": "Mary",
-              "en": "Kabuki? I don't know it well. But Robert said it was interesting."
+              "en": "Kabuki? I don't know it well. But Robert said it was interesting.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l9-scene-i-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "かぶきのチケットを二枚もらったから、見に行きませんか。",
               "speaker": "Takeshi",
-              "en": "I got two tickets for Kabuki, so would you like to go to see it?"
+              "en": "I got two tickets for Kabuki, so would you like to go to see it?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l9-scene-i-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "ええ、ぜひ。いつですか。",
               "speaker": "Mary",
-              "en": "Sure. When is it?"
+              "en": "Sure. When is it?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l9-scene-i-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "来週の木曜日です。十二時から四時までです。",
               "speaker": "Takeshi",
-              "en": "On Thursday next week. From twelve noon to four."
+              "en": "On Thursday next week. From twelve noon to four.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l9-scene-i-4.opus",
+              "hasAudio": true
             }
           ]
         },
@@ -15935,37 +16201,49 @@
               "speakerJa": "メアリー",
               "ja": "きれいでしたね。",
               "speaker": "Mary",
-              "en": "It was beautiful."
+              "en": "It was beautiful.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l9-scene-ii-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "出ている人はみんな男の人ですよ。",
               "speaker": "Takeshi",
-              "en": "The people who appear are all men."
+              "en": "The people who appear are all men.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l9-scene-ii-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "本当ですか。",
               "speaker": "Mary",
-              "en": "Really?"
+              "en": "Really?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l9-scene-ii-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "ええ。ところで、もう昼ご飯を食べましたか。",
               "speaker": "Takeshi",
-              "en": "Yes. By the way, did you already eat lunch?"
+              "en": "Yes. By the way, did you already eat lunch?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l9-scene-ii-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "いいえ、まだ食べていません。",
               "speaker": "Mary",
-              "en": "No, I haven't eaten yet."
+              "en": "No, I haven't eaten yet.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l9-scene-ii-4.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "じゃあ、買いに行きましょう。",
               "speaker": "Takeshi",
-              "en": "Then, shall we go to buy lunch?"
+              "en": "Then, shall we go to buy lunch?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l9-scene-ii-5.opus",
+              "hasAudio": true
             }
           ]
         },
@@ -15978,25 +16256,33 @@
               "speakerJa": "たけし",
               "ja": "すみません。お弁当を二つつくってください。",
               "speaker": "Takeshi",
-              "en": "Excuse me. Two box lunches, please."
+              "en": "Excuse me. Two box lunches, please.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l9-scene-iii-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "店の人",
               "ja": "はい。",
               "speaker": "Vendor",
-              "en": "Here you are."
+              "en": "Here you are.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l9-scene-iii-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "それから、お茶を一つとコーヒーを一つ。",
               "speaker": "Takeshi",
-              "en": "And then, one tea and one coffee."
+              "en": "And then, one tea and one coffee.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l9-scene-iii-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "店の人",
               "ja": "二千八百円です。どうもありがとうございました。",
               "speaker": "Vendor",
-              "en": "That is 2,800 yen. Thank you very much."
+              "en": "That is 2,800 yen. Thank you very much.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l9-scene-iii-3.opus",
+              "hasAudio": true
             }
           ]
         }
@@ -17648,61 +17934,81 @@
               "speakerJa": "メアリー",
               "ja": "寒くなりましたね。",
               "speaker": "Mary",
-              "en": "It is getting cold."
+              "en": "It is getting cold.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l10-scene-i-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "ええ。メアリーさん、冬休みはどうしますか。",
               "speaker": "Takeshi",
-              "en": "Yes. Mary, what will you do at winter break?"
+              "en": "Yes. Mary, what will you do at winter break?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l10-scene-i-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "北海道か九州に行くつもりですが、まだ決めていません。",
               "speaker": "Mary",
-              "en": "I am planning to go to Hokkaido or Kyushu, but I haven't decided yet."
+              "en": "I am planning to go to Hokkaido or Kyushu, but I haven't decided yet.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l10-scene-i-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "いいですね。",
               "speaker": "Takeshi",
-              "en": "That's nice."
+              "en": "That's nice.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l10-scene-i-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "北海道と九州とどっちのほうがいいと思いますか。",
               "speaker": "Mary",
-              "en": "Which do you think is better, Hokkaido or Kyushu?"
+              "en": "Which do you think is better, Hokkaido or Kyushu?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l10-scene-i-4.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "冬は北海道のほうがおもしろいと思います。ぼくの友だちは食べ物もおいしいと言っていましたよ。",
               "speaker": "Takeshi",
-              "en": "I think Hokkaido is more interesting in winter. My friend said that the food was delicious there as well."
+              "en": "I think Hokkaido is more interesting in winter. My friend said that the food was delicious there as well.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l10-scene-i-5.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "そうですか。ところで、たけしさんはどこかに行きますか。",
               "speaker": "Mary",
-              "en": "I see. By the way, are you going somewhere, Takeshi?"
+              "en": "I see. By the way, are you going somewhere, Takeshi?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l10-scene-i-6.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "お金がないから、どこにも行きません。",
               "speaker": "Takeshi",
-              "en": "I don't have money, so I won't go anywhere."
+              "en": "I don't have money, so I won't go anywhere.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l10-scene-i-7.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "そうですか。じゃあ、たけしさんにおみやげを買ってきますよ。",
               "speaker": "Mary",
-              "en": "Is that so? Then I'll buy a souvenir for you."
+              "en": "Is that so? Then I'll buy a souvenir for you.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l10-scene-i-8.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "たけし",
               "ja": "わあ、ありがとう。",
               "speaker": "Takeshi",
-              "en": "Wow, thank you."
+              "en": "Wow, thank you.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l10-scene-i-9.opus",
+              "hasAudio": true
             }
           ]
         },
@@ -17715,43 +18021,57 @@
               "speakerJa": "メアリー",
               "ja": "すみません。ここから旭山動物園までどのぐらいかかりますか。",
               "speaker": "Mary",
-              "en": "Excuse me, how long does it take from here to Asahiyama Zoo?"
+              "en": "Excuse me, how long does it take from here to Asahiyama Zoo?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l10-scene-ii-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ホテルの人",
               "ja": "そうですね。電車とバスで二時間半ぐらいです。",
               "speaker": "Hotel front desk",
-              "en": "Let's see. It will take about two and half hours by train and bus."
+              "en": "Let's see. It will take about two and half hours by train and bus.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l10-scene-ii-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "時間がかかりますね。",
               "speaker": "Mary",
-              "en": "It takes time, doesn't it?"
+              "en": "It takes time, doesn't it?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l10-scene-ii-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ホテルの人",
               "ja": "土曜日と日曜日はバスツアーがありますが……。",
               "speaker": "Hotel front desk",
-              "en": "There are bus tours on Saturday and Sunday, but ..."
+              "en": "There are bus tours on Saturday and Sunday, but ...",
+              "audioSrc": "/audio/books/dialogues/genki-1/l10-scene-ii-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "そうですか。いくらですか。",
               "speaker": "Mary",
-              "en": "Really? How much does it cost?"
+              "en": "Really? How much does it cost?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l10-scene-ii-4.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ホテルの人",
               "ja": "四千八百円です。",
               "speaker": "Hotel front desk",
-              "en": "4,800 yen."
+              "en": "4,800 yen.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l10-scene-ii-5.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "いいですね。じゃあ、ツアーの予約をお願いします。土曜日をお願いします。",
               "speaker": "Mary",
-              "en": "Sounds good. Well, I would like to reserve the tour. The Saturday tour, please."
+              "en": "Sounds good. Well, I would like to reserve the tour. The Saturday tour, please.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l10-scene-ii-6.opus",
+              "hasAudio": true
             }
           ]
         }
@@ -19042,31 +19362,41 @@
               "speakerJa": "ゆい",
               "ja": "メアリーさん、久しぶりですね。休みはどうでしたか。",
               "speaker": "Yui",
-              "en": "Mary, I haven't seen you for a long time. How was your vacation?"
+              "en": "Mary, I haven't seen you for a long time. How was your vacation?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l11-scene-i-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "すごく楽しかったです。北海道で動物園に行ったり、買い物をしたりしました。",
               "speaker": "Mary",
-              "en": "It was really fun. I went to the zoo, did shopping and things like that in Hokkaido."
+              "en": "It was really fun. I went to the zoo, did shopping and things like that in Hokkaido.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l11-scene-i-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "いいですね。私も旅行したいです。",
               "speaker": "Yui",
-              "en": "Sounds good. I want to travel, too."
+              "en": "Sounds good. I want to travel, too.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l11-scene-i-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "ゆいさんの休みは楽しかったですか。",
               "speaker": "Mary",
-              "en": "Did you have a fun vacation, Yui?"
+              "en": "Did you have a fun vacation, Yui?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l11-scene-i-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "まあまあでした。一日だけドライブに行きましたが、毎日アルバイトをしていました。",
               "speaker": "Yui",
-              "en": "It was okay. I went for a drive just for one day, but I was working part-time every day."
+              "en": "It was okay. I went for a drive just for one day, but I was working part-time every day.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l11-scene-i-4.opus",
+              "hasAudio": true
             }
           ]
         },
@@ -19079,19 +19409,25 @@
               "speakerJa": "メアリー",
               "ja": "ゆいさん、友だちを紹介します。こちらはジョンさんです。ジョンさんは先月、日本に来ました。",
               "speaker": "Mary",
-              "en": "Yui, I want to introduce you to a friend of mine. This is John. He came to Japan last month."
+              "en": "Yui, I want to introduce you to a friend of mine. This is John. He came to Japan last month.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l11-scene-ii-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ジョン",
               "ja": "初めまして。",
               "speaker": "John",
-              "en": "How do you do?"
+              "en": "How do you do?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l11-scene-ii-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "初めまして、山川ゆいです。",
               "speaker": "Yui",
-              "en": "How do you do? I am Yui Yamakawa."
+              "en": "How do you do? I am Yui Yamakawa.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l11-scene-ii-2.opus",
+              "hasAudio": true
             }
           ]
         },
@@ -19104,49 +19440,65 @@
               "speakerJa": "ゆい",
               "ja": "ジョンさん、出身はどこですか。",
               "speaker": "Yui",
-              "en": "John, where are you from?"
+              "en": "John, where are you from?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l11-scene-iii-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ジョン",
               "ja": "オーストラリアのケアンズです。",
               "speaker": "John",
-              "en": "I am from Cairns, Australia."
+              "en": "I am from Cairns, Australia.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l11-scene-iii-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "そうですか。",
               "speaker": "Yui",
-              "en": "Is that so?"
+              "en": "Is that so?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l11-scene-iii-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ジョン",
               "ja": "ゆいさんはケアンズに行ったことがありますか。",
               "speaker": "John",
-              "en": "Have you been to Cairns?"
+              "en": "Have you been to Cairns?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l11-scene-iii-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "いいえ、ありません。",
               "speaker": "Yui",
-              "en": "No, I haven't."
+              "en": "No, I haven't.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l11-scene-iii-4.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ジョン",
               "ja": "山や海があって、きれいな所ですよ。グレートバリアリーフで有名です。ゆいさんはどこの出身ですか。",
               "speaker": "John",
-              "en": "It has mountains and the ocean and is a beautiful place. It's famous for the Great Barrier Reef. Where are you from, Yui?"
+              "en": "It has mountains and the ocean and is a beautiful place. It's famous for the Great Barrier Reef. Where are you from, Yui?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l11-scene-iii-5.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "長野です。今度遊びに来てください。食べ物もおいしいですよ。",
               "speaker": "Yui",
-              "en": "I am from Nagano. Please come to visit me sometime. The food is good, too."
+              "en": "I am from Nagano. Please come to visit me sometime. The food is good, too.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l11-scene-iii-6.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ジョン",
               "ja": "ぜひ、行きたいです。",
               "speaker": "John",
-              "en": "By all means, I would love to."
+              "en": "By all means, I would love to.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l11-scene-iii-7.opus",
+              "hasAudio": true
             }
           ]
         }
@@ -20626,43 +20978,57 @@
               "speakerJa": "ゆい",
               "ja": "メアリーさん、元気がありませんね。",
               "speaker": "Yui",
-              "en": "You don't look well, Mary."
+              "en": "You don't look well, Mary.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l12-scene-i-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "うーん。ちょっとおなかが痛いんです。",
               "speaker": "Mary",
-              "en": "Um ... I have a little stomachache."
+              "en": "Um ... I have a little stomachache.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l12-scene-i-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "どうしたんですか。",
               "speaker": "Yui",
-              "en": "What's the matter?"
+              "en": "What's the matter?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l12-scene-i-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "きのう友だちと晩ご飯を食べに行ったんです。たぶん食べすぎたんです。",
               "speaker": "Mary",
-              "en": "I went out to have dinner with my friend yesterday. I probably ate too much."
+              "en": "I went out to have dinner with my friend yesterday. I probably ate too much.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l12-scene-i-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "大丈夫ですか。",
               "speaker": "Yui",
-              "en": "Are you all right?"
+              "en": "Are you all right?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l12-scene-i-4.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "ええ。心配しないでください。……ああ、痛い。",
               "speaker": "Mary",
-              "en": "Yes. Don't worry about it. Oh, it hurts."
+              "en": "Yes. Don't worry about it. Oh, it hurts.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l12-scene-i-5.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "ゆい",
               "ja": "病院に行ったほうがいいですよ。",
               "speaker": "Yui",
-              "en": "You had better go to a hospital."
+              "en": "You had better go to a hospital.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l12-scene-i-6.opus",
+              "hasAudio": true
             }
           ]
         },
@@ -20675,49 +21041,65 @@
               "speakerJa": "メアリー",
               "ja": "先生、おなかが痛くて熱もあるんです。インフルエンザでしょうか。",
               "speaker": "Mary",
-              "en": "Doctor, I have a stomachache and have a fever, too. Have I got the flu?"
+              "en": "Doctor, I have a stomachache and have a fever, too. Have I got the flu?",
+              "audioSrc": "/audio/books/dialogues/genki-1/l12-scene-ii-0.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "医者",
               "ja": "インフルエンザじゃないですね。かぜです。",
               "speaker": "Doctor",
-              "en": "I don't think that you've got the flu. It is just a cold."
+              "en": "I don't think that you've got the flu. It is just a cold.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l12-scene-ii-1.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "よかった。あのう、もうすぐテニスの試合があるので、練習しなきゃいけないんですが……。",
               "speaker": "Mary",
-              "en": "Good. Well, I will have a tennis tournament soon, so I have to practice, though ..."
+              "en": "Good. Well, I will have a tennis tournament soon, so I have to practice, though ...",
+              "audioSrc": "/audio/books/dialogues/genki-1/l12-scene-ii-2.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "医者",
               "ja": "二三日、運動しないほうがいいでしょう。",
               "speaker": "Doctor",
-              "en": "You had better not exercise for a couple of days."
+              "en": "You had better not exercise for a couple of days.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l12-scene-ii-3.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "わかりました。",
               "speaker": "Mary",
-              "en": "I understand."
+              "en": "I understand.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l12-scene-ii-4.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "医者",
               "ja": "今日は薬を飲んで、早く寝てください。",
               "speaker": "Doctor",
-              "en": "Take medicine and go to bed early tonight."
+              "en": "Take medicine and go to bed early tonight.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l12-scene-ii-5.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "メアリー",
               "ja": "はい、ありがとうございました。",
               "speaker": "Mary",
-              "en": "Yes. Thank you so much."
+              "en": "Yes. Thank you so much.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l12-scene-ii-6.opus",
+              "hasAudio": true
             },
             {
               "speakerJa": "医者",
               "ja": "お大事に。",
               "speaker": "Doctor",
-              "en": "Take care."
+              "en": "Take care.",
+              "audioSrc": "/audio/books/dialogues/genki-1/l12-scene-ii-7.opus",
+              "hasAudio": true
             }
           ]
         }

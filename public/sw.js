@@ -1,10 +1,11 @@
 // Auto-generated Service Worker by scripts/build-sw.ts
 // Cache Name with bundle hash
-const CACHE_NAME = "nihongo-v1-" + "20e0b277f01d";
+const CACHE_NAME = "nihongo-v1-" + "5a0884c51391";
 
 const CORE_PRECACHE = [
   "/",
   "/learn",
+  "/books",
   "/dictionary",
   "/grammar",
   "/stories",
@@ -45,13 +46,14 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
 
-  // 1. Cache-First for static assets (/data/v1/, /dict/, /images/learn/, /audio/, /_next/static/)
+  // 1. Cache-First for static assets (/data/v1/, /dict/, /images/, /audio/, /_next/static/, /_next/image)
   const isStaticCacheAsset =
     url.pathname.startsWith("/data/v1/") ||
     url.pathname.startsWith("/dict/") ||
-    url.pathname.startsWith("/images/learn/") ||
+    url.pathname.startsWith("/images/") ||
     url.pathname.startsWith("/audio/") ||
-    url.pathname.startsWith("/_next/static/");
+    url.pathname.startsWith("/_next/static/") ||
+    url.pathname.startsWith("/_next/image");
 
   if (isStaticCacheAsset) {
     event.respondWith(
@@ -69,8 +71,9 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // 2. Navigation requests: Network-First with cache fallback
-  if (request.mode === "navigate") {
+  // 2. Navigation & Next.js RSC requests: Network-First with cache fallback
+  const isRscRequest = request.headers.get("RSC") === "1" || url.searchParams.has("_rsc");
+  if (request.mode === "navigate" || isRscRequest) {
     event.respondWith(
       fetch(request)
         .then((networkResponse) => {
@@ -83,7 +86,13 @@ self.addEventListener("fetch", (event) => {
         .catch(() => {
           return caches.match(request).then((cached) => {
             if (cached) return cached;
-            return caches.match("/");
+            if (request.mode === "navigate") {
+              if (url.pathname.startsWith("/books")) {
+                return caches.match("/books").then((booksCached) => booksCached || caches.match("/"));
+              }
+              return caches.match("/");
+            }
+            return new Response("", { status: 504, statusText: "Offline" });
           });
         })
     );

@@ -31,6 +31,7 @@ import {
   getBookById,
   getBooksCatalog,
 } from "@/data/books";
+import { TextbookOfflineButton } from "@/features/books/components/TextbookOfflineButton";
 import { srsDb, type SrsItem } from "@/lib/srs/db";
 import {
   buildSrsLookup,
@@ -1034,9 +1035,12 @@ export default function BooksShelfPage() {
           title="Select Textbook Curriculum"
           icon={<Layers className="size-4" />}
           actions={
-            <span className="text-xs font-semibold text-[var(--tb-text-secondary)]">
-              {catalog.length} textbooks available
-            </span>
+            <div className="flex flex-wrap items-center gap-3">
+              <TextbookOfflineButton />
+              <span className="text-xs font-semibold text-[var(--tb-text-secondary)]">
+                {catalog.length} textbooks available
+              </span>
+            </div>
           }
         />
 
