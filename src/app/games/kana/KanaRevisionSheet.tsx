@@ -220,8 +220,20 @@ interface ActiveSequence {
   status: "playing" | "paused";
 }
 
-export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
-  const [script, setScript] = useState<KanaScript>("hiragana");
+export interface KanaRevisionSheetProps {
+  onClose?: () => void;
+  initialScript?: KanaScript;
+  fixedScript?: KanaScript;
+  embedded?: boolean;
+}
+
+export function KanaRevisionSheet({
+  onClose,
+  initialScript = "hiragana",
+  fixedScript,
+  embedded = false,
+}: KanaRevisionSheetProps) {
+  const [script, setScript] = useState<KanaScript>(fixedScript ?? initialScript);
   const [showRomaji, setShowRomaji] = useState(false);
   const [activeSection, setActiveSection] = useState<"basic" | "dakuten" | "yoon" | "extended">("basic");
   const [activeSequence, setActiveSequence] = useState<ActiveSequence | null>(null);
@@ -254,7 +266,7 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
 
   useEffect(() => {
     if (!isPlaying) {
-      setActiveTileId(null);
+      void Promise.resolve().then(() => setActiveTileId(null));
     }
   }, [isPlaying]);
 
@@ -511,27 +523,47 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
     };
   }, []);
 
+  const ContainerTag = embedded ? "div" : "main";
+
   return (
-    <main className="mx-auto w-full max-w-5xl flex-1 px-3 pb-16 sm:px-6">
+    <ContainerTag
+      className={
+        embedded
+          ? "w-full pb-8"
+          : "mx-auto w-full max-w-5xl flex-1 px-3 pb-16 sm:px-6"
+      }
+    >
       {/* Top Breadcrumb & Controls */}
-      <header className="py-6 sm:py-8">
-        <button
-          type="button"
-          onClick={onClose}
-          className="group mb-5 inline-flex min-h-10 items-center gap-2 rounded-xl border border-transparent px-3 text-sm font-semibold text-[var(--muted)] transition-colors hover:border-[var(--line)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
-        >
-          <ArrowLeft size={16} className="transition-transform group-hover:-translate-x-0.5" />
-          Back to practice setup
-        </button>
+      <header className={embedded ? "pb-6 pt-2" : "py-6 sm:py-8"}>
+        {onClose && (
+          <button
+            type="button"
+            onClick={onClose}
+            className="group mb-5 inline-flex min-h-10 items-center gap-2 rounded-xl border border-transparent px-3 text-sm font-semibold text-[var(--muted)] transition-colors hover:border-[var(--line)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
+          >
+            <ArrowLeft size={16} className="transition-transform group-hover:-translate-x-0.5" />
+            Back to practice setup
+          </button>
+        )}
 
         <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-[var(--sakura)]/30 bg-[var(--sakura-light)] px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-[var(--primary-fg)]">
               <Sparkles size={13} />
-              <span>Gojūon · 五十音図</span>
+              <span>
+                {fixedScript === "hiragana"
+                  ? "Hiragana · ひらがな五十音図"
+                  : fixedScript === "katakana"
+                  ? "Katakana · カタカナ五十音図"
+                  : "Gojūon · 五十音図"}
+              </span>
             </div>
             <h1 className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">
-              Revise the Kana
+              {fixedScript === "hiragana"
+                ? "Hiragana Revision Sheet"
+                : fixedScript === "katakana"
+                ? "Katakana Revision Sheet"
+                : "Revise the Kana"}
             </h1>
             <p className="mt-1.5 max-w-2xl text-sm text-[var(--muted)] sm:text-base">
               Explore characters organized strictly across the 5 Japanese vowel columns (A, I, U, E, O). Tap any card to hear its native pronunciation.
@@ -539,35 +571,37 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
           </div>
 
           <div className="flex flex-wrap items-center gap-3">
-            {/* Script Tab Switcher */}
-            <div
-              role="tablist"
-              aria-label="Kana script"
-              className="inline-flex rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-1.5 shadow-xs"
-            >
-              {(["hiragana", "katakana"] as KanaScript[]).map((option) => {
-                const active = script === option;
-                return (
-                  <button
-                    key={option}
-                    type="button"
-                    role="tab"
-                    aria-selected={active}
-                    onClick={() => {
-                      setScript(option);
-                      stopSequence();
-                    }}
-                    className={`min-h-10 cursor-pointer rounded-xl px-4 text-sm font-bold capitalize transition-all duration-150 ${
-                      active
-                        ? "bg-[var(--primary)] text-white shadow-sm"
-                        : "text-[var(--muted)] hover:bg-[var(--sakura-light)]/60 hover:text-[var(--ink)]"
-                    }`}
-                  >
-                    {option}
-                  </button>
-                );
-              })}
-            </div>
+            {/* Script Tab Switcher (hidden when fixedScript is specified) */}
+            {!fixedScript && (
+              <div
+                role="tablist"
+                aria-label="Kana script"
+                className="inline-flex rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-1.5 shadow-xs"
+              >
+                {(["hiragana", "katakana"] as KanaScript[]).map((option) => {
+                  const active = script === option;
+                  return (
+                    <button
+                      key={option}
+                      type="button"
+                      role="tab"
+                      aria-selected={active}
+                      onClick={() => {
+                        setScript(option);
+                        stopSequence();
+                      }}
+                      className={`min-h-10 cursor-pointer rounded-xl px-4 text-sm font-bold capitalize transition-all duration-150 ${
+                        active
+                          ? "bg-[var(--primary)] text-white shadow-sm"
+                          : "text-[var(--muted)] hover:bg-[var(--sakura-light)]/60 hover:text-[var(--ink)]"
+                      }`}
+                    >
+                      {option}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
 
             {/* Romaji Switch */}
             <button
@@ -1415,7 +1449,7 @@ export function KanaRevisionSheet({ onClose }: { onClose: () => void }) {
           </section>
         )}
       </div>
-    </main>
+    </ContainerTag>
   );
 }
 

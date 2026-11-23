@@ -24,12 +24,15 @@ console.log(`Loaded ${geminiApiKeys.length} Gemini API keys for synthesis.`);
 
 // Gemini Voices
 export const GEMINI_VOICES = {
-  AOEDE: "Aoede",     // Young expressive female (Mary, Sue, Michiko, Yui, Mana)
-  KORE: "Kore",       // Clear mature female / staff (Host mother, Sora, Waitress, Landlady)
-  LEDA: "Leda",       // Elderly female (Old woman)
-  PUCK: "Puck",       // Crisp young male student (Takeshi, Ken, John, Tanaka)
-  CHARON: "Charon",   // Calm, resonant foreign student (Robert)
-  FENRIR: "Fenrir",   // Authoritative / older male (Prof. Yamashita, Father, Manager, Police, Doctor)
+  AOEDE: "Aoede",               // Young expressive female (Mary, Sue, Michiko, Yui, Mana)
+  ACHERNAR: "Achernar",         // Soft, bright young female staff (Vendor, Store attendant, Hotel desk, Information agent)
+  SULAFAT: "Sulafat",           // Warm, clear young female (Sora, Restaurant attendant / Waitress)
+  KORE: "Kore",                 // Mature female (Host mother, Landlady)
+  VINDEMIATRIX: "Vindemiatrix", // Gentle elderly female base (Old woman / おばあさん)
+  LEDA: "Leda",                 // Fallback female
+  PUCK: "Puck",                 // Crisp young male student (Takeshi, Ken, John, Tanaka)
+  CHARON: "Charon",             // Calm, resonant foreign student (Robert)
+  FENRIR: "Fenrir",             // Authoritative / older male (Prof. Yamashita, Father, Manager, Police, Doctor, Station attendant)
 };
 
 export function getVoiceForSpeaker(speaker: string, speakerJa: string): string {
@@ -41,29 +44,53 @@ export function getVoiceForSpeaker(speaker: string, speakerJa: string): string {
     return GEMINI_VOICES.CHARON;
   }
 
-  // 2. Elderly female
+  // 2. Elderly female (Old woman / おばあさん)
   if (norm.includes("old woman") || normJa.includes("おばあさん")) {
-    return GEMINI_VOICES.LEDA;
+    return GEMINI_VOICES.VINDEMIATRIX;
   }
 
-  // 3. Older / Professional / Authority male (checked BEFORE female to prevent "manager" matching "mana")
+  // 3. Sora & Restaurant Attendant / Waitress (young female maid/waitress avatar)
+  if (
+    norm.includes("sora") ||
+    normJa.includes("ソラ") ||
+    norm.includes("waitress") ||
+    (norm.includes("restaurant") && norm.includes("attendant"))
+  ) {
+    return GEMINI_VOICES.SULAFAT;
+  }
+
+  // 4. Young female service staff (Vendor, Store attendant, Shop assistant, Hotel front desk, Information agent)
+  if (
+    norm.includes("vendor") ||
+    norm.includes("store attendant") ||
+    norm.includes("shop assistant") ||
+    norm.includes("hotel") ||
+    norm.includes("desk") ||
+    norm.includes("information agent") ||
+    norm.includes("agent") ||
+    norm.includes("assistant") ||
+    normJa.includes("みせのひと") ||
+    normJa.includes("店の人") ||
+    normJa.includes("店員") ||
+    normJa.includes("ホテルの人") ||
+    normJa.includes("案内所の人")
+  ) {
+    return GEMINI_VOICES.ACHERNAR;
+  }
+
+  // 5. Older / Professional / Authority male (Prof. Yamashita, Father, Manager, Doctor, Station attendant, Police, Old man)
   if (
     norm.includes("prof") ||
     norm.includes("yamashita") ||
     norm.includes("father") ||
-    norm.includes("vendor") ||
+    norm.includes("station attendant") ||
     norm.includes("attendant") ||
-    norm.includes("desk") ||
     norm.includes("doctor") ||
     norm.includes("manager") ||
-    norm.includes("agent") ||
-    norm.includes("assistant") ||
     norm.includes("old man") ||
     norm.includes("police") ||
     normJa.includes("先生") ||
     normJa.includes("父") ||
-    normJa.includes("店員") ||
-    normJa.includes("店の人") ||
     normJa.includes("店長") ||
     normJa.includes("医者") ||
     normJa.includes("駅員") ||
@@ -74,7 +101,7 @@ export function getVoiceForSpeaker(speaker: string, speakerJa: string): string {
     return GEMINI_VOICES.FENRIR;
   }
 
-  // 4. Female characters
+  // 6. Young female students / friends
   if (
     norm.includes("mary") ||
     norm.includes("sue") ||
@@ -91,21 +118,19 @@ export function getVoiceForSpeaker(speaker: string, speakerJa: string): string {
     return GEMINI_VOICES.AOEDE;
   }
 
+  // 7. Mature female (Host mother, Landlady)
   if (
     norm.includes("mother") ||
-    norm.includes("sora") ||
-    norm.includes("waitress") ||
     norm.includes("landlady") ||
     norm.includes("woman") ||
     normJa.includes("母") ||
-    normJa.includes("ソラ") ||
     normJa.includes("大家") ||
     normJa.includes("女性")
   ) {
     return GEMINI_VOICES.KORE;
   }
 
-  // 5. Young male student (Takeshi, Ken, John, Tanaka, etc.)
+  // 8. Young male student (Takeshi, Ken, John, Tanaka, etc.)
   return GEMINI_VOICES.PUCK;
 }
 
@@ -216,6 +241,11 @@ async function synthesizeGeminiAudio(
           fs.writeFileSync(tmpFile, audioBuf);
 
           try {
+            const isElderlyVoice = voice === GEMINI_VOICES.VINDEMIATRIX;
+            const filterArgs = isElderlyVoice
+              ? ["-af", "asetrate=24000*0.86,aresample=24000,atempo=0.98,vibrato=f=5.5:d=0.06"]
+              : [];
+
             if (mime.includes("wav")) {
               execFileSync(
                 "ffmpeg",
@@ -223,6 +253,7 @@ async function synthesizeGeminiAudio(
                   "-y",
                   "-loglevel", "error",
                   "-i", tmpFile,
+                  ...filterArgs,
                   "-ac", "1",
                   "-ar", "24000",
                   "-c:a", "libopus",
@@ -242,6 +273,7 @@ async function synthesizeGeminiAudio(
                   "-ar", "24000",
                   "-ac", "1",
                   "-i", tmpFile,
+                  ...filterArgs,
                   "-c:a", "libopus",
                   "-b:a", "32k",
                   "-vbr", "on",
@@ -294,43 +326,46 @@ interface DialogueTask {
 const PROGRESS_FILE = path.join(process.cwd(), "node_modules/.cache/gemini-dialogues-progress.json");
 const DOCS_PROGRESS_FILE = path.join(process.cwd(), "docs/gemini-dialogues-progress.json");
 
-// Keys that were generated by AivisSpeech in commit 6e1e8881 or had manager voice miscast
+// Keys targeted for Gemini TTS re-synthesis (female service staff, elderly woman, and Sora lines)
 const FORCE_GEMINI_REGEN_KEYS = new Set([
-  // Genki 1 silence lines to re-synthesize with Gemini TTS natural hesitation
-  "genki-1:5:l5-scene-iii:6",
-  "genki-1:6:l6-scene-i:1",
-  // Genki 2 Manager lines (L13, L18, L19 Scene I, L19 Scene III line 0) to ensure authoritative Fenrir voice
-  "genki-2:13:l13-scene-i:0",
-  "genki-2:13:l13-scene-i:2",
-  "genki-2:13:l13-scene-i:4",
-  "genki-2:13:l13-scene-ii:0",
-  "genki-2:13:l13-scene-ii:2",
-  "genki-2:13:l13-scene-ii:4",
-  "genki-2:13:l13-scene-ii:6",
-  "genki-2:18:l18-scene-i:0",
-  "genki-2:18:l18-scene-i:2",
-  "genki-2:18:l18-scene-i:4",
-  "genki-2:18:l18-scene-iii:0",
-  "genki-2:18:l18-scene-iii:2",
-  "genki-2:18:l18-scene-iii:4",
-  "genki-2:18:l18-scene-iii:6",
-  "genki-2:19:l19-scene-i:1",
-  "genki-2:19:l19-scene-i:3",
-  "genki-2:19:l19-scene-i:5",
-  "genki-2:19:l19-scene-iii:0",
+  // Genki 1 L2 D1: Vendor (みせのひと) -> young female
+  "genki-1:2:l2-scene-i:1",
+  "genki-1:2:l2-scene-i:3",
+  "genki-1:2:l2-scene-i:5",
+  // Genki 1 L2 D2: Restaurant attendant (みせのひと) -> young female maid
+  "genki-1:2:l2-scene-ii:0",
+  "genki-1:2:l2-scene-ii:2",
+  "genki-1:2:l2-scene-ii:4",
+  "genki-1:2:l2-scene-ii:7",
+  // Genki 1 L5 D2: Store attendant (店の人) -> young female
+  "genki-1:5:l5-scene-ii:1",
+  "genki-1:5:l5-scene-ii:3",
+  // Genki 1 L6 D3: Old woman (おばあさん) -> elderly grandmother voice
+  "genki-1:6:l6-scene-iii:0",
+  "genki-1:6:l6-scene-iii:2",
+  "genki-1:6:l6-scene-iii:4",
+  // Genki 1 L7 D1 (and L6 D2): Sora (ソラ) lines that had low/male register
+  "genki-1:6:l6-scene-ii:4",
+  "genki-1:6:l6-scene-ii:6",
+  "genki-1:7:l7-scene-i:1",
+  "genki-1:7:l7-scene-i:9",
+  // Genki 1 L9 D3: Vendor (店の人) -> young female
+  "genki-1:9:l9-scene-iii:1",
+  "genki-1:9:l9-scene-iii:3",
+  // Genki 1 L10 D2: Hotel front desk (ホテルの人) -> young female
+  "genki-1:10:l10-scene-ii:1",
+  "genki-1:10:l10-scene-ii:3",
+  "genki-1:10:l10-scene-ii:5",
+  // Genki 2 L15 D3: Information agent (案内所の人) -> young female
+  "genki-2:15:l15-scene-iii:1",
+  "genki-2:15:l15-scene-iii:3",
+  "genki-2:15:l15-scene-iii:5",
+  // Genki 2 L19 D2 & L20 D1: Waitress & Shop assistant (店員) -> young female
+  "genki-2:19:l19-scene-ii:0",
+  "genki-2:19:l19-scene-ii:2",
+  "genki-2:19:l19-scene-ii:3",
+  "genki-2:20:l20-scene-i:1",
 ]);
-
-// Any key in Genki 2 at or after L19 Scene III Line 1 was generated by AivisSpeech in commit 6e1e8881
-function isAivisRemainingKey(key: string): boolean {
-  const match = key.match(/^genki-2:(\d+):l\d+-scene-([a-z]+):(\d+)$/);
-  if (!match) return false;
-  const lesson = parseInt(match[1], 10);
-  const scene = match[2];
-  const lineIdx = parseInt(match[3], 10);
-  if (lesson > 19) return true;
-  if (lesson === 19 && scene === "iii" && lineIdx >= 1) return true;
-  return false;
-}
 
 function loadProgress(): Set<string> {
   const forceAll = process.argv.includes("--all");
@@ -354,10 +389,10 @@ function loadProgress(): Set<string> {
     }
   }
 
-  // Filter out any AivisSpeech-generated keys and force-regen keys
+  // Filter out any keys targeted for regeneration
   const filtered = new Set<string>();
   for (const k of keys) {
-    if (!FORCE_GEMINI_REGEN_KEYS.has(k) && !isAivisRemainingKey(k)) {
+    if (!FORCE_GEMINI_REGEN_KEYS.has(k)) {
       filtered.add(k);
     }
   }

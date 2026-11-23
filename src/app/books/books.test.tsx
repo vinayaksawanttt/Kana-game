@@ -361,19 +361,30 @@ describe("Textbooks UI Routes (/books & /books/[bookId]/[lesson])", () => {
       expect(screen.getAllByText(/Stroke Order/i).length).toBeGreaterThan(0);
     });
 
-    it("displays Hiragana & Katakana message on Lessons 1 and 2 kanji tab", async () => {
+    it("displays Hiragana revision sheet on Lesson 1 and Katakana revision sheet on Lesson 2 kanji tab", async () => {
       mockParams = { bookId: "genki-1", lesson: "1" };
-      render(<BookLessonPage />);
+      const { unmount } = render(<BookLessonPage />);
 
       expect(await screen.findByText("Greetings & Introductions")).toBeTruthy();
 
-      // Click Kanji tab
+      // Click Kanji tab on Lesson 1 -> Hiragana Revision Sheet
       const kanjiTab = screen.getByRole("button", { name: /漢字 Kanji/i });
       fireEvent.click(kanjiTab);
 
-      // Verify kana foundation notice
       expect(await screen.findByText(/Hiragana & Katakana Foundation/i)).toBeTruthy();
+      expect(screen.getByText(/Hiragana Revision Sheet/i)).toBeTruthy();
       expect(screen.getByText(/Practice Kana Drills/i)).toBeTruthy();
+      expect(screen.getByRole("button", { name: "Play pronunciation for あ" })).toBeTruthy();
+      unmount();
+
+      // Lesson 2 -> Katakana Revision Sheet
+      mockParams = { bookId: "genki-1", lesson: "2" };
+      render(<BookLessonPage />);
+      expect(await screen.findByText("Things, Places & Shopping")).toBeTruthy();
+      fireEvent.click(screen.getByRole("button", { name: /漢字 Kanji/i }));
+
+      expect(await screen.findByText(/Katakana Revision Sheet/i)).toBeTruthy();
+      expect(screen.getByRole("button", { name: "Play pronunciation for ア" })).toBeTruthy();
     });
 
     it("filters vocabulary by parts of speech and search query", async () => {

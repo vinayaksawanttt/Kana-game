@@ -53,6 +53,7 @@ import { loadDictionaryDataMaps, type DictionaryDataMaps } from "@/data/dictiona
 import { addGrammarToSrs, upsertPracticeItems } from "@/lib/srs/service";
 import { srsDb, type SrsItem } from "@/lib/srs/db";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
+import { KanaRevisionSheet } from "@/app/games/kana/KanaRevisionSheet";
 import { playGameSfx } from "@/lib/game-core/sfx";
 import { saveGameSession } from "@/lib/game-core/storage";
 import { loadVocabularyData, type VocabularyRecord } from "@/data/vocabulary";
@@ -2144,28 +2145,49 @@ export default function BookLessonPage() {
       {activeTab === "kanji" && (
         <section aria-label="Kanji characters section" className="space-y-6">
           {lesson.kanji.length === 0 ? (
-            <EmptyState
-              glyph="あ"
-              title="Hiragana & Katakana Foundation"
-              description="In Genki, Lessons 1 and 2 focus on mastering the 46 Hiragana and 46 Katakana syllabaries. Kanji instruction begins in Lesson 3."
-              action={
-                <>
+            <div className="space-y-6">
+              <ContentContainer padding="sm" className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="inline-flex size-7 items-center justify-center rounded-lg bg-[var(--tb-primary-soft)] font-japanese text-sm font-black text-[var(--primary-fg)]">
+                      {lesson.lessonNumber === 2 ? "ア" : "あ"}
+                    </span>
+                    <h2 className="text-base sm:text-lg font-extrabold text-[var(--tb-text-primary)]">
+                      Hiragana &amp; Katakana Foundation
+                    </h2>
+                    <StatusBadge variant="info">
+                      {lesson.lessonNumber === 2 ? "Lesson 2 · Katakana" : "Lesson 1 · Hiragana"}
+                    </StatusBadge>
+                  </div>
+                  <p className="text-xs text-[var(--tb-text-secondary)]">
+                    {lesson.lessonNumber === 2
+                      ? "Lesson 2 focuses on mastering the Katakana syllabary (Basic, Dakuten, Yōon, and Extended Katakana). Kanji instruction begins in Lesson 3."
+                      : "Lesson 1 focuses on mastering the Hiragana syllabary (Basic, Dakuten, and Yōon). Kanji instruction begins in Lesson 3."}
+                  </p>
+                </div>
+                <div className="flex flex-wrap items-center gap-2 shrink-0">
                   <Link
                     href="/games/kana"
-                    className="tb-focus-ring inline-flex items-center gap-2 rounded-xl bg-[var(--tb-primary)] px-4 py-2.5 text-xs font-bold text-white shadow-xs hover:bg-[var(--tb-primary-hover)] transition-colors"
+                    className="tb-focus-ring inline-flex items-center gap-2 rounded-xl bg-[var(--tb-primary)] px-4 py-2 text-xs font-bold text-white shadow-xs hover:bg-[var(--tb-primary-hover)] transition-colors"
                   >
                     <span>Practice Kana Drills</span>
                     <ArrowRight size={14} />
                   </Link>
                   <Link
                     href={`/books/${bookId}/3`}
-                    className="tb-focus-ring inline-flex items-center gap-2 rounded-xl border border-[var(--tb-border)] bg-[var(--tb-surface)] px-4 py-2.5 text-xs font-bold text-[var(--tb-text-primary)] hover:border-[var(--tb-primary)] transition-colors"
+                    className="tb-focus-ring inline-flex items-center gap-2 rounded-xl border border-[var(--tb-border)] bg-[var(--tb-surface)] px-4 py-2 text-xs font-bold text-[var(--tb-text-primary)] hover:border-[var(--tb-primary)] transition-colors"
                   >
                     <span>Jump to Lesson 3 Kanji</span>
                   </Link>
-                </>
-              }
-            />
+                </div>
+              </ContentContainer>
+
+              <KanaRevisionSheet
+                key={`lesson-kana-sheet-${lesson.lessonNumber}`}
+                fixedScript={lesson.lessonNumber === 2 ? "katakana" : "hiragana"}
+                embedded
+              />
+            </div>
           ) : (
             <>
               {/* Kanji Overview & Actions */}
