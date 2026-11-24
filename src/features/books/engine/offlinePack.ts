@@ -1,5 +1,5 @@
 import { STATIC_BOOK_DIALOGUE_AUDIO_MAP } from "@/data/book-dialogues-audio.generated";
-import { GENKI_CHARACTER_AVATARS } from "./characterAvatars";
+import { getAllCharacterAvatars } from "./characterAvatars";
 import {
   GENKI_DIALOGUE_BACKGROUND_IDS,
   getDialogueBackground,
@@ -32,7 +32,7 @@ export function collectTextbookOfflineAssetUrls(): string[] {
     if (bgUrl) urls.add(bgUrl);
   }
 
-  for (const avatar of Object.values(GENKI_CHARACTER_AVATARS)) {
+  for (const avatar of getAllCharacterAvatars()) {
     urls.add(avatar.neutral);
     urls.add(avatar.talking);
   }

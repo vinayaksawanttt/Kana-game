@@ -41,11 +41,11 @@
   },
   {
     "id": "mnn-1",
-    "title": "Minna no Nihongo I: Translation & Grammar Notes",
+    "title": "Minna no Nihongo I: Main Textbook & Grammar Companion",
     "japaneseTitle": "みんなの日本語 初級 I",
     "level": "N5",
     "series": "Minna no Nihongo",
-    "description": "Classic communicative Japanese textbook covering JLPT N5 vocabulary, 138 structured grammar notes, and essential reference charts across Lessons 1–25.",
+    "description": "Authentic communicative Japanese textbook covering JLPT N5 vocabulary, sentence patterns (文型・例文), 18-character dialogues (会話・練習C), interactive drills (練習A/B・問題), and kanji across Lessons 1–25.",
     "coverImage": "/images/books/mnn-1.webp",
     "totalLessons": 25,
     "lessonRange": [
@@ -54,9 +54,9 @@
     ],
     "stats": {
       "vocabularyCount": 1037,
-      "kanjiCount": 0,
-      "grammarCount": 138,
-      "practiceCount": 30
+      "kanjiCount": 267,
+      "grammarCount": 163,
+      "practiceCount": 1677
     }
   }
 ]

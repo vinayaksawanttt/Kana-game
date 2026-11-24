@@ -367,8 +367,8 @@ describe("Textbooks UI Routes (/books & /books/[bookId]/[lesson])", () => {
 
       expect(await screen.findByText("Greetings & Introductions")).toBeTruthy();
 
-      // Click Kanji tab on Lesson 1 -> Hiragana Revision Sheet
-      const kanjiTab = screen.getByRole("button", { name: /漢字 Kanji/i });
+      // Click Kanji/Kana tab on Lesson 1 -> Hiragana Revision Sheet
+      const kanjiTab = screen.getByRole("button", { name: /平仮名 Hiragana/i });
       fireEvent.click(kanjiTab);
 
       expect(await screen.findByText(/Hiragana & Katakana Foundation/i)).toBeTruthy();
@@ -381,7 +381,7 @@ describe("Textbooks UI Routes (/books & /books/[bookId]/[lesson])", () => {
       mockParams = { bookId: "genki-1", lesson: "2" };
       render(<BookLessonPage />);
       expect(await screen.findByText("Things, Places & Shopping")).toBeTruthy();
-      fireEvent.click(screen.getByRole("button", { name: /漢字 Kanji/i }));
+      fireEvent.click(screen.getByRole("button", { name: /片仮名 Katakana/i }));
 
       expect(await screen.findByText(/Katakana Revision Sheet/i)).toBeTruthy();
       expect(screen.getByRole("button", { name: "Play pronunciation for ア" })).toBeTruthy();

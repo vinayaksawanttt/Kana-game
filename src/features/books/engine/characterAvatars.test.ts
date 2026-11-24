@@ -1,16 +1,20 @@
 import { describe, it, expect } from "vitest";
 import {
   GENKI_CHARACTER_AVATARS,
+  MNN_CHARACTER_CAST,
+  MNN_SERVICE_ROLES,
   getAllCharacterAvatars,
+  getAllMnnCharacterProfiles,
   getCharacterAvatar,
+  getMnnCharacterProfile,
 } from "./characterAvatars";
 
 describe("characterAvatars registry", () => {
-  it("registers all 31 Genki characters with both neutral and talking asset paths", () => {
+  it("registers all 53 character avatars across Genki and Minna no Nihongo", () => {
     const all = getAllCharacterAvatars();
-    expect(all).toHaveLength(31);
+    expect(all).toHaveLength(53);
 
-    const expectedIds = [
+    const expectedGenkiIds = [
       "mary-hart",
       "takeshi-kimura",
       "sora-kim",
@@ -44,8 +48,22 @@ describe("characterAvatars registry", () => {
       "customer",
     ];
 
-    for (const id of expectedIds) {
+    for (const id of expectedGenkiIds) {
       const char = GENKI_CHARACTER_AVATARS[id];
+      expect(char).toBeDefined();
+      expect(char.neutral).toBe(`/images/characters/${id}/neutral.webp`);
+      expect(char.talking).toBe(`/images/characters/${id}/talking.webp`);
+    }
+
+    const expectedServiceRoles = [
+      "bank-clerk",
+      "post-office-clerk",
+      "real-estate-agent",
+      "taxi-driver",
+    ];
+
+    for (const id of expectedServiceRoles) {
+      const char = MNN_SERVICE_ROLES[id];
       expect(char).toBeDefined();
       expect(char.neutral).toBe(`/images/characters/${id}/neutral.webp`);
       expect(char.talking).toBe(`/images/characters/${id}/talking.webp`);
@@ -158,5 +176,61 @@ describe("characterAvatars registry", () => {
     expect(getCharacterAvatar("Cat", "ねこ")).toBeNull();
     expect(getCharacterAvatar(null, null)).toBeNull();
     expect(getCharacterAvatar("", "")).toBeNull();
+  });
+
+  it("registers all 18 Minna no Nihongo I characters with offline AivisSpeech speakers and avatar paths", () => {
+    const mnnAll = getAllMnnCharacterProfiles();
+    expect(mnnAll).toHaveLength(18);
+
+    for (const profile of mnnAll) {
+      expect(MNN_CHARACTER_CAST[profile.id]).toBeDefined();
+      expect(profile.aivisSpeaker.length).toBeGreaterThan(0);
+      expect(profile.aivisStyleId).toBeGreaterThan(0);
+      expect(profile.neutral).toMatch(/^\/images\/characters\/[^/]+\/neutral\.webp$/);
+      expect(profile.talking).toMatch(/^\/images\/characters\/[^/]+\/talking\.webp$/);
+    }
+
+    expect(getMnnCharacterProfile("Miller", "ミラー")?.id).toBe("mike-miller");
+    expect(getMnnCharacterProfile("Sato", "佐藤")?.id).toBe("keiko-sato");
+    expect(getMnnCharacterProfile("Yamada", "山田")?.id).toBe("ichiro-yamada");
+    expect(getMnnCharacterProfile("Tomoko", "山田友子")?.id).toBe("tomoko-yamada");
+    expect(getMnnCharacterProfile("Santos", "サントス")?.id).toBe("jose-santos");
+    expect(getMnnCharacterProfile("Maria", "マリア")?.id).toBe("maria-santos");
+    expect(getMnnCharacterProfile("Karina", "カリナ")?.id).toBe("karina");
+    expect(getMnnCharacterProfile("Wang Xue", "ワン")?.id).toBe("wang-xue");
+    expect(getMnnCharacterProfile("Matsumoto", "松本")?.id).toBe("tadashi-matsumoto");
+    expect(getMnnCharacterProfile("Yoshiko", "松本良子")?.id).toBe("yoshiko-matsumoto");
+    expect(getMnnCharacterProfile("Izumi Kimura", "木村いずみ")?.id).toBe("izumi-kimura");
+    expect(getMnnCharacterProfile("Watt", "ワット")?.id).toBe("john-watt");
+    expect(getMnnCharacterProfile("Schmidt", "シュミット")?.id).toBe("karl-schmidt");
+    expect(getMnnCharacterProfile("Lee", "イー")?.id).toBe("lee-jinju");
+    expect(getMnnCharacterProfile("Teresa", "テレーザ")?.id).toBe("teresa-santos");
+    expect(getMnnCharacterProfile("Taro", "山田太郎")?.id).toBe("taro-yamada");
+    expect(getMnnCharacterProfile("Gupta", "グプタ")?.id).toBe("gupta");
+    expect(getMnnCharacterProfile("Thawaphon", "タワポン")?.id).toBe("thawaphon");
+  });
+
+  it("resolves Minna no Nihongo characters and service roles through getCharacterAvatar", () => {
+    // 18 MNN cast
+    expect(getCharacterAvatar("Miller", "ミラー")?.id).toBe("mike-miller");
+    expect(getCharacterAvatar("Karina", "カリナ")?.id).toBe("karina");
+    expect(getCharacterAvatar("Santos", "サントス")?.id).toBe("jose-santos");
+    expect(getCharacterAvatar("Maria", "マリア")?.id).toBe("maria-santos");
+    expect(getCharacterAvatar("Teresa", "テレーザ")?.id).toBe("teresa-santos");
+    expect(getCharacterAvatar("Schmidt", "シュミット")?.id).toBe("karl-schmidt");
+    expect(getCharacterAvatar("Watt", "ワット")?.id).toBe("john-watt");
+    expect(getCharacterAvatar("Lee", "イー")?.id).toBe("lee-jinju");
+    expect(getCharacterAvatar("Gupta", "グプタ")?.id).toBe("gupta");
+    expect(getCharacterAvatar("Thawaphon", "タワポン")?.id).toBe("thawaphon");
+
+    // 4 MNN service roles
+    expect(getCharacterAvatar("Bank Clerk", "銀行員")?.id).toBe("bank-clerk");
+    expect(getCharacterAvatar(undefined, "銀行員")?.id).toBe("bank-clerk");
+    expect(getCharacterAvatar("Post Office Clerk", "郵便局員")?.id).toBe("post-office-clerk");
+    expect(getCharacterAvatar(undefined, "郵便局の人")?.id).toBe("post-office-clerk");
+    expect(getCharacterAvatar("Real Estate Agent", "不動産屋")?.id).toBe("real-estate-agent");
+    expect(getCharacterAvatar(undefined, "不動産")?.id).toBe("real-estate-agent");
+    expect(getCharacterAvatar("Taxi Driver", "運転手")?.id).toBe("taxi-driver");
+    expect(getCharacterAvatar(undefined, "タクシーの運転手")?.id).toBe("taxi-driver");
   });
 });

@@ -1022,6 +1022,14 @@ async function main() {
             exerciseType = "chart";
           } else if (lowerTitle.includes("read")) {
             exerciseType = "reading";
+          } else if (
+            lowerTitle.includes("cloze") ||
+            lowerTitle.includes("fill") ||
+            lowerTitle.includes("particle") ||
+            lowerTitle.includes("問題") ||
+            lowerTitle.includes("復習")
+          ) {
+            exerciseType = "cloze";
           }
 
           // Parse items: lines starting with - \d+\. ... => ...
@@ -1079,34 +1087,131 @@ async function main() {
   // Minna no Nihongo I (Lessons 1–25)
   const mnn1Vocab = parseVocabFile(path.join(BOOKS_MDX_DIR, "mnn1-vocabulary.mdx"));
   const mnn1Grammar = parseGrammarFile(path.join(BOOKS_MDX_DIR, "mnn1-grammar.mdx"));
+  const mnn1Dialogues = parseDialoguesFile(path.join(BOOKS_MDX_DIR, "mnn1-dialogues.mdx"));
   const mnn1Practice = parsePracticeFile(path.join(BOOKS_MDX_DIR, "mnn1-charts-practice.mdx"));
 
+  // Parse authentic 文型・例文 file and prepend as Core Patterns & Examples card per lesson
+  const bunkeiPath = path.join(BOOKS_MDX_DIR, "mnn1-bunkei-reibun.mdx");
+  if (fs.existsSync(bunkeiPath)) {
+    const bunkeiRaw = fs.readFileSync(bunkeiPath, "utf8");
+    const lessonBlocks = bunkeiRaw.split(/^## Lesson\s+(\d+)/m);
+    for (let i = 1; i < lessonBlocks.length; i += 2) {
+      const lessonNum = parseInt(lessonBlocks[i], 10);
+      const block = lessonBlocks[i + 1] || "";
+      const bulletPoints: string[] = [];
+      const examples: { ja: string; en?: string; audioKey?: string }[] = [];
+      let currentSection = "";
+      for (const rawLine of block.split("\n")) {
+        const t = rawLine.trim();
+        if (t.startsWith("### 文型")) {
+          currentSection = "文型";
+          continue;
+        }
+        if (t.startsWith("### 例文")) {
+          currentSection = "例文";
+          continue;
+        }
+        const m = t.match(/^-\s*(\d+)\.\s*`([^`]+)`(?:\s*[—–-]\s*(.+))?$/);
+        if (m) {
+          const num = m[1];
+          const ja = m[2].trim();
+          const en = m[3]?.trim();
+          if (currentSection === "文型") {
+            bulletPoints.push(`**文型 ${num}:** \`${ja}\`${en ? ` — ${en}` : ""}`);
+          } else {
+            bulletPoints.push(`**例文 ${num}:** \`${ja}\`${en ? ` — ${en}` : ""}`);
+          }
+          examples.push({ ja, en, audioKey: ja });
+        }
+      }
+      if (examples.length > 0) {
+        const existingList = mnn1Grammar.get(lessonNum) || [];
+        const coreCard: BookGrammarItem = {
+          id: `g-mnn1-l${lessonNum}-bunkei`,
+          lessonNumber: lessonNum,
+          index: 0,
+          title: "文型・例文 (Core Sentence Patterns & Example Q&As)",
+          pattern: examples[0].ja,
+          explanation:
+            "Authentic core sentence patterns (文型) and contextual question-and-answer examples (例文) from the Minna no Nihongo I main textbook.",
+          bulletPoints,
+          examples,
+        };
+        mnn1Grammar.set(lessonNum, [coreCard, ...existingList]);
+      }
+    }
+  }
+
+  // Build lookup of known kanji items from Genki + dictionary-index for MNN Lessons 3–25
+  const knownKanjiByChar = new Map<string, BookKanjiItem>();
+  for (const list of allKanjiByLesson.values()) {
+    for (const k of list) {
+      if (!knownKanjiByChar.has(k.kanji)) {
+        knownKanjiByChar.set(k.kanji, k);
+      }
+    }
+  }
+  const mnn1KanjiMap = new Map<number, BookKanjiItem[]>();
+  const seenMnnKanji = new Set<string>();
+  let mnnKanjiCounter = 1;
+  for (let l = 3; l <= 25; l++) {
+    const lessonVocab = mnn1Vocab.get(l) || [];
+    const lessonKanji: BookKanjiItem[] = [];
+    for (const v of lessonVocab) {
+      const chars = v.word.match(/[\u4E00-\u9FAF]/g) || [];
+      for (const ch of chars) {
+        if (seenMnnKanji.has(ch)) continue;
+        const baseK = knownKanjiByChar.get(ch);
+        const dictEntry = dictKanji[ch];
+        if (!baseK && !dictEntry) continue;
+        seenMnnKanji.add(ch);
+        lessonKanji.push({
+          id: `k-mnn-${String(mnnKanjiCounter).padStart(3, "0")}`,
+          number: mnnKanjiCounter++,
+          kanji: ch,
+          onyomi: baseK?.onyomi || [],
+          kunyomi: baseK?.kunyomi || [],
+          meaning: baseK?.meaning || dictEntry?.label || v.meaning,
+          strokes: baseK?.strokes || dictEntry?.strokes,
+          jlpt: baseK?.jlpt || dictEntry?.jlpt || 5,
+          label: baseK?.label || dictEntry?.label || v.meaning,
+          linkedKanjiId: ch,
+        });
+        if (lessonKanji.length >= 12) break;
+      }
+      if (lessonKanji.length >= 12) break;
+    }
+    if (lessonKanji.length > 0) {
+      mnn1KanjiMap.set(l, lessonKanji);
+    }
+  }
+
   const MNN_LESSON_METAS: Record<number, { title: string; japaneseTitle: string; subtitle: string }> = {
-    1: { title: "Self-Introductions & Nationalities", japaneseTitle: "第1課 はじめまして", subtitle: "N1 は N2 です · Questions & Affiliation" },
-    2: { title: "Demonstratives & Ownership", japaneseTitle: "第2課 これ・それ・あれ", subtitle: "これ / それ / あれ · この / その / あの · の" },
-    3: { title: "Places, Floors & Prices", japaneseTitle: "第3課 ここ・そこ・あそこ", subtitle: "ここ / そこ / あそこ · どこ / どちら · いくら" },
-    4: { title: "Time, Days & Daily Routine", japaneseTitle: "第4課 今何時ですか", subtitle: "〜時〜分 · 〜ます / 〜ません / 〜ました" },
-    5: { title: "Movement, Dates & Transport", japaneseTitle: "第5課 行きます・来ます", subtitle: "へ行きます · で (means) · と (person) · Dates" },
-    6: { title: "Direct Objects & Invitations", japaneseTitle: "第6課 食べます・飲みます", subtitle: "を · で (place of action) · 〜ませんか / 〜ましょう" },
-    7: { title: "Tools, Giving & Receiving", japaneseTitle: "第7課 あげます・もらいます", subtitle: "で (tool/language) · あげる / もらう · もう" },
-    8: { title: "Adjectives & Descriptions", japaneseTitle: "第8課 形容詞", subtitle: "い-adjectives & な-adjectives · どう / どんな" },
-    9: { title: "Preferences, Ability & Reasons", japaneseTitle: "第9課 好き・上手", subtitle: "〜が好きです · わかります · 〜から (reason)" },
-    10: { title: "Existence & Locations", japaneseTitle: "第10課 います・あります", subtitle: "います / あります · Position Words" },
-    11: { title: "Counters, Quantities & Duration", japaneseTitle: "第11課 いくつありますか", subtitle: "Counters · どのくらい · 〜だけ" },
-    12: { title: "Past Tense & Comparisons", japaneseTitle: "第12課 比較と過去", subtitle: "Past Adjectives/Nouns · より / のほうが / 一番" },
-    13: { title: "Desires & Purpose of Movement", japaneseTitle: "第13課 ほしい・〜たい", subtitle: "〜がほしい · 〜たいです · 〜に行きます" },
-    14: { title: "Verb Groups & Te-form Requests", japaneseTitle: "第14課 て形", subtitle: "〜てください · 〜ています (ongoing) · 〜ましょうか" },
-    15: { title: "Permission, Prohibition & States", japaneseTitle: "第15課 〜てもいいです", subtitle: "〜てもいいです · 〜てはいけません · 〜ています (state)" },
-    16: { title: "Sequential Actions & Attributes", japaneseTitle: "第16課 〜て、〜てから", subtitle: "Joining Verbs/Adjectives · 〜てから" },
-    17: { title: "Nai-form, Prohibitions & Obligations", japaneseTitle: "第17課 ない形", subtitle: "〜ないでください · 〜なければなりません · 〜なくてもいい" },
-    18: { title: "Dictionary Form & Potential", japaneseTitle: "第18課 辞書形", subtitle: "〜ことができます · 趣味は〜ことです · 〜前に" },
-    19: { title: "Ta-form, Experiences & Listing", japaneseTitle: "第19課 た形", subtitle: "〜たことがあります · 〜たり〜たりします · 〜くなる" },
-    20: { title: "Plain Style & Casual Speech", japaneseTitle: "第20課 普通形", subtitle: "Polite vs. Plain Style in Conversation" },
-    21: { title: "Opinions, Quotes & Confirmation", japaneseTitle: "第21課 〜と思います", subtitle: "〜と思います · 〜と言いました · 〜でしょう" },
-    22: { title: "Noun Modification Clauses", japaneseTitle: "第22課 名詞修飾", subtitle: "Modifying Nouns with Plain-form Sentences" },
-    23: { title: "When & Whenever Clauses", japaneseTitle: "第23課 〜とき・〜と", subtitle: "〜とき (when) · 〜と (inevitable result)" },
-    24: { title: "Favors: くれる, あげる & もらう", japaneseTitle: "第24課 くれます", subtitle: "〜てくれます · 〜てあげます · 〜てもらいます" },
-    25: { title: "Conditionals: 〜たら & 〜ても", japaneseTitle: "第25課 〜たら・〜ても", subtitle: "〜たら (if/when) · 〜ても (even if)" },
+    1: { title: "Nice to Meet You (Self-Introductions)", japaneseTitle: "第1課 初めまして", subtitle: "N1はN2です · N1はN2じゃありません · N1はN2ですか · N1もN2です" },
+    2: { title: "Thank You in Advance (Things & Ownership)", japaneseTitle: "第2課 これから お世話に なります", subtitle: "これは辞書です · それはわたしの傘です · この本はわたしのです" },
+    3: { title: "I'll Take This (Places & Shopping)", japaneseTitle: "第3課 これを ください", subtitle: "ここは食堂です · エレベーターはあそこです · 復習A" },
+    4: { title: "What Time Are You Open Until? (Time & Verbs)", japaneseTitle: "第4課 そちらは 何時までですか", subtitle: "今4時5分です · 毎朝6時に起きます · きのう勉強しました" },
+    5: { title: "Does This Train Go to Koshien? (Movement)", japaneseTitle: "第5課 この 電車は 甲子園へ 行きますか", subtitle: "京都へ行きます · タクシーでうちへ帰ります · 家族と日本へ来ました" },
+    6: { title: "Won't You Go Together? (Objects & Invitations)", japaneseTitle: "第6課 いっしょに 行きませんか", subtitle: "本を読みます · 駅で新聞を買います · 〜ませんか · 〜ましょう" },
+    7: { title: "Welcome! (Tools, Giving & Receiving)", japaneseTitle: "第7課 いらっしゃい", subtitle: "パソコンで映画を見ます · 花をあげます · もらいました · もう〜ました · 復習B" },
+    8: { title: "It's Almost Time to Leave (Adjectives)", japaneseTitle: "第8課 そろそろ 失礼します", subtitle: "桜はきれいです · 富士山は高いです · きれいな花 · 高い山" },
+    9: { title: "That's Too Bad, But... (Likes, Ability & Reasons)", japaneseTitle: "第9課 残念ですが", subtitle: "イタリア料理が好きです · 日本語が少しわかります · 〜から、早く帰ります" },
+    10: { title: "Do You Have Fish Sauce? (Existence & Locations)", japaneseTitle: "第10課 ナンプラー、ありますか", subtitle: "あそこにコンビニがあります · ロビーに佐藤さんがいます · 〜にあります／います" },
+    11: { title: "This One, Please (Counters & Duration)", japaneseTitle: "第11課 これ、お願いします", subtitle: "会議室にテーブルが7つあります · わたしは日本に1年います" },
+    12: { title: "How Was the Gion Festival? (Past & Comparisons)", japaneseTitle: "第12課 祇園祭は どうでしたか", subtitle: "雨でした · 寒かったです · 〜より大きいです · いちばん好きです · 復習C" },
+    13: { title: "Separate Checks, Please (Desires & Purpose)", japaneseTitle: "第13課 別々に お願いします", subtitle: "車が欲しいです · すしを食べたいです · フランスへ料理を習いに行きます" },
+    14: { title: "To Midori-machi, Please (Te-form Requests)", japaneseTitle: "第14課 みどり町まで お願いします", subtitle: "ちょっと待ってください · 荷物を持ちましょうか · 今電話をかけています" },
+    15: { title: "What About Your Family? (Permission & State)", japaneseTitle: "第15課 ご家族は？", subtitle: "写真を撮ってもいいですか · サントスさんは電子辞書を持っています" },
+    16: { title: "Please Teach Me How to Use It (Joining Clauses)", japaneseTitle: "第16課 使い方を 教えて ください", subtitle: "〜て、〜て、〜ます · 〜てから · 大阪は食べ物がおいしいです · 復習D" },
+    17: { title: "What Seems to Be the Matter? (Nai-form & Rules)", japaneseTitle: "第17課 どう しましたか", subtitle: "写真を撮らないでください · 見せなければなりません · 早く起きなくてもいいです" },
+    18: { title: "What Are Your Hobbies? (Potential & Before)", japaneseTitle: "第18課 趣味は 何ですか", subtitle: "漢字を読むことができます · 趣味は映画を見ることです · 寝るまえに、日記を書きます" },
+    19: { title: "I'll Start My Diet Tomorrow (Ta-form & Experiences)", japaneseTitle: "第19課 ダイエットは あしたから します", subtitle: "相撲を見たことがあります · 〜たり、〜たりします · だんだん暑くなります · 復習E" },
+    20: { title: "Wanna Go Together? (Plain Style & Casual Speech)", japaneseTitle: "第20課 いっしょに 行かない？", subtitle: "パーティーに来なかった · 東京は人が多い · 沖縄の海はきれいだった · 僕の誕生日だ" },
+    21: { title: "I Think So Too (Opinions, Quotes & Confirmation)", japaneseTitle: "第21課 わたしも そう 思います", subtitle: "あした雨が降ると思います · 父に留学したいと言いました · 疲れたでしょう？" },
+    22: { title: "What Kind of Room Are You Looking For? (Clauses)", japaneseTitle: "第22課 どんな 部屋を お探しですか", subtitle: "ミラーさんが作ったケーキ · あそこにいる人はミラーさんです · 復習F" },
+    23: { title: "How Do I Get There? (When & Inevitable Result)", japaneseTitle: "第23課 どうやって 行きますか", subtitle: "図書館で本を借りるとき、カードが要ります · このボタンを押すと、お釣りが出ます" },
+    24: { title: "Shall I Come Help You? (Giving & Receiving Favors)", japaneseTitle: "第24課 手伝いに 行きましょうか", subtitle: "チョコレートをくれました · レポートを直してもらいました · 送ってくれました · 貸してあげました" },
+    25: { title: "Thank You for Everything (Conditionals: 〜たら & 〜ても)", japaneseTitle: "第25課 いろいろ お世話に なりました", subtitle: "雨が降ったら、出かけません · 雨が降っても、出かけます · 復習G · 総復習" },
   };
 
   // 5. Build Lessons & Books
@@ -1144,6 +1249,18 @@ async function main() {
       const grammarList = grammarMap.get(l) || [];
       const dialogueList = dialoguesMap.get(l) || [];
       const practiceList = practiceMap?.get(l) || [];
+
+      // Attach offline dialogue audio path if file exists on disk
+      for (const scene of dialogueList) {
+        scene.lines.forEach((line, idx) => {
+          const relAudio = `/audio/books/dialogues/${id}/${scene.id}-${idx}.opus`;
+          const absAudio = path.join(ROOT_DIR, "public", relAudio);
+          if (fs.existsSync(absAudio)) {
+            line.audioSrc = relAudio;
+            (line as BookDialogueLine & { hasAudio?: boolean }).hasAudio = true;
+          }
+        });
+      }
 
       const practiceItemsCount = practiceList.reduce((acc, sec) => acc + sec.items.length, 0);
 
@@ -1228,19 +1345,19 @@ async function main() {
 
   const mnn1Detail = buildBook(
     "mnn-1",
-    "Minna no Nihongo I: Translation & Grammar Notes",
+    "Minna no Nihongo I: Main Textbook & Grammar Companion",
     "みんなの日本語 初級 I",
     "N5",
     1,
     25,
-    "Classic communicative Japanese textbook covering JLPT N5 vocabulary, 138 structured grammar notes, and essential reference charts across Lessons 1–25.",
+    "Authentic communicative Japanese textbook covering JLPT N5 vocabulary, sentence patterns (文型・例文), 18-character dialogues (会話・練習C), interactive drills (練習A/B・問題), and kanji across Lessons 1–25.",
     mnn1Vocab,
     mnn1Grammar,
-    new Map(),
+    mnn1Dialogues,
     mnn1Practice,
     {
       series: "Minna no Nihongo",
-      kanjiMap: new Map(),
+      kanjiMap: mnn1KanjiMap,
       lessonMetas: MNN_LESSON_METAS,
     }
   );

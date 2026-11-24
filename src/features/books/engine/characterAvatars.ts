@@ -14,6 +14,431 @@ export interface CharacterAvatar {
   talking: string;
 }
 
+export interface MnnCharacterProfile extends CharacterAvatar {
+  country: string;
+  countryJa: string;
+  affiliation: string;
+  affiliationJa: string;
+  age?: number;
+  aivisSpeaker: string;
+  aivisModelUuid: string;
+  aivisSpeakerUuid: string;
+  aivisStyleId: number;
+  aivisStyleName: string;
+  speedScale: number;
+  pitchScale: number;
+}
+
+/**
+ * All 18 official recurring characters from Minna no Nihongo I (登場人物, pp. x–xi),
+ * linked 1-to-1 to our 18 local offline AivisSpeech Engine speakers and avatar assets.
+ */
+export const MNN_CHARACTER_CAST: Record<string, MnnCharacterProfile> = {
+  "mike-miller": {
+    id: "mike-miller",
+    name: "Mike Miller",
+    nameJa: "マイク・ミラー",
+    country: "USA",
+    countryJa: "アメリカ",
+    affiliation: "IMC Employee",
+    affiliationJa: "IMCの社員",
+    age: 28,
+    aivisSpeaker: "fumifumi",
+    aivisModelUuid: "71e72188-2726-4739-9aa9-39567396fb2a",
+    aivisSpeakerUuid: "754d769b-7128-4172-964e-b10945d55e39",
+    aivisStyleId: 606865152,
+    aivisStyleName: "ノーマル",
+    speedScale: 1.0,
+    pitchScale: 0.0,
+    neutral: "/images/characters/mike-miller/neutral.webp",
+    talking: "/images/characters/mike-miller/talking.webp",
+  },
+  "keiko-sato": {
+    id: "keiko-sato",
+    name: "Keiko Sato",
+    nameJa: "佐藤けい子",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "IMC Employee",
+    affiliationJa: "IMCの社員",
+    aivisSpeaker: "金苗(かなえ)",
+    aivisModelUuid: "1a322ad9-6b7e-4a6d-8d0b-c4cd264538dc",
+    aivisSpeakerUuid: "08845b19-25d5-4f7e-b88f-b04acc80320d",
+    aivisStyleId: 1238228481,
+    aivisStyleName: "ノーマル",
+    speedScale: 1.0,
+    pitchScale: 0.0,
+    neutral: "/images/characters/keiko-sato/neutral.webp",
+    talking: "/images/characters/keiko-sato/talking.webp",
+  },
+  "ichiro-yamada": {
+    id: "ichiro-yamada",
+    name: "Ichiro Yamada",
+    nameJa: "山田一郎",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "IMC Employee",
+    affiliationJa: "IMCの社員",
+    age: 38,
+    aivisSpeaker: "銀芽(ぎんが)",
+    aivisModelUuid: "052bb693-112b-45be-b498-8e05aa9d6e5e",
+    aivisSpeakerUuid: "90b0a81e-8da4-4a42-93b7-71f675722be9",
+    aivisStyleId: 38453057,
+    aivisStyleName: "通常",
+    speedScale: 1.0,
+    pitchScale: 0.0,
+    neutral: "/images/characters/ichiro-yamada/neutral.webp",
+    talking: "/images/characters/ichiro-yamada/talking.webp",
+  },
+  "tomoko-yamada": {
+    id: "tomoko-yamada",
+    name: "Tomoko Yamada",
+    nameJa: "山田友子",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "Bank Employee",
+    affiliationJa: "銀行員",
+    aivisSpeaker: "F2",
+    aivisModelUuid: "25b39db7-5757-47ef-9fe4-2b7aff328a18",
+    aivisSpeakerUuid: "a8e3a11e-82ee-4ad9-925d-bdf6c2c2e43c",
+    aivisStyleId: 1670137088,
+    aivisStyleName: "ノーマル",
+    speedScale: 0.98,
+    pitchScale: 0.0,
+    neutral: "/images/characters/tomoko-yamada/neutral.webp",
+    talking: "/images/characters/tomoko-yamada/talking.webp",
+  },
+  "jose-santos": {
+    id: "jose-santos",
+    name: "Jose Santos",
+    nameJa: "ジョゼ・サントス",
+    country: "Brazil",
+    countryJa: "ブラジル",
+    affiliation: "Brazil Air Employee",
+    affiliationJa: "ブラジルエアーの社員",
+    age: 39,
+    aivisSpeaker: "M1",
+    aivisModelUuid: "d7255c2c-ddd0-425a-808c-662cd94c7f41",
+    aivisSpeakerUuid: "e824adad-993c-4d2f-8415-0f551ccbe548",
+    aivisStyleId: 2051283136,
+    aivisStyleName: "ノーマル",
+    speedScale: 1.0,
+    pitchScale: 0.0,
+    neutral: "/images/characters/jose-santos/neutral.webp",
+    talking: "/images/characters/jose-santos/talking.webp",
+  },
+  "maria-santos": {
+    id: "maria-santos",
+    name: "Maria Santos",
+    nameJa: "マリア・サントス",
+    country: "Brazil",
+    countryJa: "ブラジル",
+    affiliation: "Homemaker",
+    affiliationJa: "主婦",
+    aivisSpeaker: "まお",
+    aivisModelUuid: "a59cb814-0083-4369-8542-f51a29e72af7",
+    aivisSpeakerUuid: "e756b8e4-b606-4e15-99b1-3f9c6a1b2317",
+    aivisStyleId: 888753763,
+    aivisStyleName: "おちつき",
+    speedScale: 0.97,
+    pitchScale: 0.0,
+    neutral: "/images/characters/maria-santos/neutral.webp",
+    talking: "/images/characters/maria-santos/talking.webp",
+  },
+  "karina": {
+    id: "karina",
+    name: "Karina",
+    nameJa: "カリナ",
+    country: "Indonesia",
+    countryJa: "インドネシア",
+    affiliation: "Fuji University Student",
+    affiliationJa: "富士大学の学生",
+    age: 24,
+    aivisSpeaker: "まい",
+    aivisModelUuid: "e9339137-2ae3-4d41-9394-fb757a7e61e6",
+    aivisSpeakerUuid: "41b7785f-35cc-4089-a360-dd8a63da5e75",
+    aivisStyleId: 1431611904,
+    aivisStyleName: "ノーマル",
+    speedScale: 1.0,
+    pitchScale: 0.0,
+    neutral: "/images/characters/karina/neutral.webp",
+    talking: "/images/characters/karina/talking.webp",
+  },
+  "wang-xue": {
+    id: "wang-xue",
+    name: "Wang Xue",
+    nameJa: "ワン・シュエ",
+    country: "China",
+    countryJa: "中国",
+    affiliation: "Kobe Hospital Doctor",
+    affiliationJa: "神戸病院の医者",
+    age: 29,
+    aivisSpeaker: "yukyu",
+    aivisModelUuid: "1f04a608-916c-4d9e-bf6e-b9da5c176f85",
+    aivisSpeakerUuid: "0bdd27c6-4b80-4f0f-a8b3-7a603e317f45",
+    aivisStyleId: 1099751712,
+    aivisStyleName: "デフォルト",
+    speedScale: 0.98,
+    pitchScale: 0.0,
+    neutral: "/images/characters/wang-xue/neutral.webp",
+    talking: "/images/characters/wang-xue/talking.webp",
+  },
+  "tadashi-matsumoto": {
+    id: "tadashi-matsumoto",
+    name: "Tadashi Matsumoto",
+    nameJa: "松本正",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "IMC Department Manager",
+    affiliationJa: "IMCの部長",
+    aivisSpeaker: "阿井田 茂",
+    aivisModelUuid: "47e53151-a378-46f3-abee-ce13aa07feb1",
+    aivisSpeakerUuid: "561e4e59-3bc9-4726-9028-44a3c12a6f1d",
+    aivisStyleId: 1310138976,
+    aivisStyleName: "ノーマル",
+    speedScale: 0.96,
+    pitchScale: 0.0,
+    neutral: "/images/characters/tadashi-matsumoto/neutral.webp",
+    talking: "/images/characters/tadashi-matsumoto/talking.webp",
+  },
+  "yoshiko-matsumoto": {
+    id: "yoshiko-matsumoto",
+    name: "Yoshiko Matsumoto",
+    nameJa: "松本良子",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "Homemaker",
+    affiliationJa: "主婦",
+    aivisSpeaker: "まお",
+    aivisModelUuid: "a59cb814-0083-4369-8542-f51a29e72af7",
+    aivisSpeakerUuid: "e756b8e4-b606-4e15-99b1-3f9c6a1b2317",
+    aivisStyleId: 888753763,
+    aivisStyleName: "おちつき",
+    speedScale: 0.94,
+    pitchScale: -0.04,
+    neutral: "/images/characters/yoshiko-matsumoto/neutral.webp",
+    talking: "/images/characters/yoshiko-matsumoto/talking.webp",
+  },
+  "izumi-kimura": {
+    id: "izumi-kimura",
+    name: "Izumi Kimura",
+    nameJa: "木村いずみ",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "Announcer",
+    affiliationJa: "アナウンサー",
+    aivisSpeaker: "F1",
+    aivisModelUuid: "6acf95e8-11a9-414e-aa9c-6dbebf9113ca",
+    aivisSpeakerUuid: "d60b4ea8-dc91-4b9f-99df-2a9fd480db6c",
+    aivisStyleId: 1236214272,
+    aivisStyleName: "ノーマル",
+    speedScale: 1.0,
+    pitchScale: 0.0,
+    neutral: "/images/characters/izumi-kimura/neutral.webp",
+    talking: "/images/characters/izumi-kimura/talking.webp",
+  },
+  "john-watt": {
+    id: "john-watt",
+    name: "John Watt",
+    nameJa: "ジョン・ワット",
+    country: "UK",
+    countryJa: "イギリス",
+    affiliation: "Sakura University Professor",
+    affiliationJa: "さくら大学の先生",
+    age: 45,
+    aivisSpeaker: "Shinjou Tomoharu",
+    aivisModelUuid: "098d4e66-2faf-4a00-889c-a1d2f05bde78",
+    aivisSpeakerUuid: "85b2a5f7-ef71-4c4c-846d-71fe8d7b6fa9",
+    aivisStyleId: 562825248,
+    aivisStyleName: "ノーマル",
+    speedScale: 0.97,
+    pitchScale: 0.0,
+    neutral: "/images/characters/john-watt/neutral.webp",
+    talking: "/images/characters/john-watt/talking.webp",
+  },
+  "karl-schmidt": {
+    id: "karl-schmidt",
+    name: "Karl Schmidt",
+    nameJa: "カール・シュミット",
+    country: "Germany",
+    countryJa: "ドイツ",
+    affiliation: "Power Electric Engineer",
+    affiliationJa: "パワー電気のエンジニア",
+    age: 52,
+    aivisSpeaker: "猩々博士 (雑談ボイス)",
+    aivisModelUuid: "70a875a9-feae-41e6-a586-8cf9e47c6c0b",
+    aivisSpeakerUuid: "6dd8366d-b928-4d60-ac41-b3010c85c08e",
+    aivisStyleId: 5306848,
+    aivisStyleName: "ノーマル",
+    speedScale: 0.97,
+    pitchScale: 0.0,
+    neutral: "/images/characters/karl-schmidt/neutral.webp",
+    talking: "/images/characters/karl-schmidt/talking.webp",
+  },
+  "lee-jinju": {
+    id: "lee-jinju",
+    name: "Lee Jin-ju",
+    nameJa: "イー・ジンジュ",
+    country: "South Korea",
+    countryJa: "韓国",
+    affiliation: "AKC Researcher",
+    affiliationJa: "AKCの研究者",
+    age: 35,
+    aivisSpeaker: "morioki",
+    aivisModelUuid: "baaae3c0-7b22-4605-8ba5-80c959b41a48",
+    aivisSpeakerUuid: "396a746d-742f-4e43-b722-1182a7fab9af",
+    aivisStyleId: 497929760,
+    aivisStyleName: "ノーマル",
+    speedScale: 1.0,
+    pitchScale: 0.0,
+    neutral: "/images/characters/lee-jinju/neutral.webp",
+    talking: "/images/characters/lee-jinju/talking.webp",
+  },
+  "teresa-santos": {
+    id: "teresa-santos",
+    name: "Teresa Santos",
+    nameJa: "テレーザ・サントス",
+    country: "Brazil",
+    countryJa: "ブラジル",
+    affiliation: "Elementary School Student (9 yrs)",
+    affiliationJa: "小学生（9歳）",
+    age: 9,
+    aivisSpeaker: "まお",
+    aivisModelUuid: "a59cb814-0083-4369-8542-f51a29e72af7",
+    aivisSpeakerUuid: "e756b8e4-b606-4e15-99b1-3f9c6a1b2317",
+    aivisStyleId: 888753762,
+    aivisStyleName: "あまあま",
+    speedScale: 1.02,
+    pitchScale: 0.03,
+    neutral: "/images/characters/teresa-santos/neutral.webp",
+    talking: "/images/characters/teresa-santos/talking.webp",
+  },
+  "taro-yamada": {
+    id: "taro-yamada",
+    name: "Taro Yamada",
+    nameJa: "山田太郎",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "Elementary School Student (8 yrs)",
+    affiliationJa: "小学生（8歳）",
+    age: 8,
+    aivisSpeaker: "コハク",
+    aivisModelUuid: "22e8ed77-94fe-4ef2-871f-a86f94e9a579",
+    aivisSpeakerUuid: "5680ac39-43c9-487a-bc3e-018c0d29cc38",
+    aivisStyleId: 1878365376,
+    aivisStyleName: "ノーマル",
+    speedScale: 1.03,
+    pitchScale: 0.04,
+    neutral: "/images/characters/taro-yamada/neutral.webp",
+    talking: "/images/characters/taro-yamada/talking.webp",
+  },
+  "gupta": {
+    id: "gupta",
+    name: "Gupta",
+    nameJa: "グプタ",
+    country: "India",
+    countryJa: "インド",
+    affiliation: "IMC Employee",
+    affiliationJa: "IMCの社員",
+    age: 42,
+    aivisSpeaker: "M2",
+    aivisModelUuid: "d1a7446f-230d-4077-afdf-923eddabe53c",
+    aivisSpeakerUuid: "6c831a4b-a90c-4a88-9083-b473c25f69ec",
+    aivisStyleId: 1368642336,
+    aivisStyleName: "ノーマル",
+    speedScale: 0.99,
+    pitchScale: 0.0,
+    neutral: "/images/characters/gupta/neutral.webp",
+    talking: "/images/characters/gupta/talking.webp",
+  },
+  "thawaphon": {
+    id: "thawaphon",
+    name: "Thawaphon",
+    nameJa: "タワポン",
+    country: "Thailand",
+    countryJa: "タイ",
+    affiliation: "Japanese Language School Student",
+    affiliationJa: "日本語学校の学生",
+    age: 19,
+    aivisSpeaker: "コハク",
+    aivisModelUuid: "22e8ed77-94fe-4ef2-871f-a86f94e9a579",
+    aivisSpeakerUuid: "5680ac39-43c9-487a-bc3e-018c0d29cc38",
+    aivisStyleId: 1878365376,
+    aivisStyleName: "ノーマル",
+    speedScale: 1.0,
+    pitchScale: 0.0,
+    neutral: "/images/characters/thawaphon/neutral.webp",
+    talking: "/images/characters/thawaphon/talking.webp",
+  },
+};
+
+export const MNN_SERVICE_ROLES: Record<string, CharacterAvatar> = {
+  "bank-clerk": {
+    id: "bank-clerk",
+    name: "Bank Clerk",
+    nameJa: "銀行員",
+    neutral: "/images/characters/bank-clerk/neutral.webp",
+    talking: "/images/characters/bank-clerk/talking.webp",
+  },
+  "post-office-clerk": {
+    id: "post-office-clerk",
+    name: "Post Office Clerk",
+    nameJa: "郵便局員",
+    neutral: "/images/characters/post-office-clerk/neutral.webp",
+    talking: "/images/characters/post-office-clerk/talking.webp",
+  },
+  "real-estate-agent": {
+    id: "real-estate-agent",
+    name: "Real Estate Agent",
+    nameJa: "不動産屋",
+    neutral: "/images/characters/real-estate-agent/neutral.webp",
+    talking: "/images/characters/real-estate-agent/talking.webp",
+  },
+  "taxi-driver": {
+    id: "taxi-driver",
+    name: "Taxi Driver",
+    nameJa: "運転手",
+    neutral: "/images/characters/taxi-driver/neutral.webp",
+    talking: "/images/characters/taxi-driver/talking.webp",
+  },
+};
+
+export function getAllMnnCharacterProfiles(): MnnCharacterProfile[] {
+  return Object.values(MNN_CHARACTER_CAST);
+}
+
+export function getMnnCharacterProfile(
+  speaker?: string | null,
+  speakerJa?: string | null
+): MnnCharacterProfile | null {
+  const normEn = (speaker || "").toLowerCase().trim();
+  const normJa = (speakerJa || "").trim();
+
+  if (!normEn && !normJa) return null;
+  if (normEn && MNN_CHARACTER_CAST[normEn]) return MNN_CHARACTER_CAST[normEn];
+
+  if (normJa.includes("ミラー") || normEn.includes("miller")) return MNN_CHARACTER_CAST["mike-miller"];
+  if (normJa.includes("佐藤") || normJa.includes("さとう") || normEn.includes("sato")) return MNN_CHARACTER_CAST["keiko-sato"];
+  if (normJa.includes("友子") || normJa.includes("ともこ") || normEn.includes("tomoko")) return MNN_CHARACTER_CAST["tomoko-yamada"];
+  if (normJa.includes("太郎") || normJa.includes("たろう") || normEn.includes("taro")) return MNN_CHARACTER_CAST["taro-yamada"];
+  if (normJa.includes("山田") || normJa.includes("やまだ") || normEn.includes("yamada")) return MNN_CHARACTER_CAST["ichiro-yamada"];
+  if (normJa.includes("テレーザ") || normEn.includes("teresa")) return MNN_CHARACTER_CAST["teresa-santos"];
+  if (normJa.includes("マリア") || normEn.includes("maria")) return MNN_CHARACTER_CAST["maria-santos"];
+  if (normJa.includes("サントス") || normJa.includes("ジョゼ") || normEn.includes("santos") || normEn.includes("jose")) return MNN_CHARACTER_CAST["jose-santos"];
+  if (normJa.includes("カリナ") || normEn.includes("karina")) return MNN_CHARACTER_CAST["karina"];
+  if (normJa.includes("ワン・シュエ") || (normJa.includes("ワン") && !normJa.includes("ジョン")) || normEn.includes("wang xue")) return MNN_CHARACTER_CAST["wang-xue"];
+  if (normJa.includes("松本良子") || normJa.includes("良子") || normEn.includes("yoshiko")) return MNN_CHARACTER_CAST["yoshiko-matsumoto"];
+  if (normJa.includes("松本") || normJa.includes("まつもと") || normEn.includes("matsumoto")) return MNN_CHARACTER_CAST["tadashi-matsumoto"];
+  if (normJa.includes("木村いずみ") || normJa.includes("いずみ") || normEn.includes("izumi")) return MNN_CHARACTER_CAST["izumi-kimura"];
+  if (normJa.includes("ワット") || normEn.includes("watt")) return MNN_CHARACTER_CAST["john-watt"];
+  if (normJa.includes("シュミット") || normEn.includes("schmidt")) return MNN_CHARACTER_CAST["karl-schmidt"];
+  if (normJa.includes("イー") || normJa.includes("ジンジュ") || normEn.includes("jin-ju") || normEn.includes("jinju") || normEn === "lee" || normEn === "ii") return MNN_CHARACTER_CAST["lee-jinju"];
+  if (normJa.includes("グプタ") || normEn.includes("gupta")) return MNN_CHARACTER_CAST["gupta"];
+  if (normJa.includes("タワポン") || normEn.includes("thawaphon") || normEn.includes("tawapon")) return MNN_CHARACTER_CAST["thawaphon"];
+
+  return null;
+}
+
 export const GENKI_CHARACTER_AVATARS: Record<string, CharacterAvatar> = {
   "mary-hart": {
     id: "mary-hart",
@@ -238,7 +663,11 @@ export const GENKI_CHARACTER_AVATARS: Record<string, CharacterAvatar> = {
  * Returns a list of all registered character avatars.
  */
 export function getAllCharacterAvatars(): CharacterAvatar[] {
-  return Object.values(GENKI_CHARACTER_AVATARS);
+  return [
+    ...Object.values(GENKI_CHARACTER_AVATARS),
+    ...Object.values(MNN_CHARACTER_CAST),
+    ...Object.values(MNN_SERVICE_ROLES),
+  ];
 }
 
 /**
@@ -258,6 +687,58 @@ export function getCharacterAvatar(
   // Direct ID match
   if (normEn && GENKI_CHARACTER_AVATARS[normEn]) {
     return GENKI_CHARACTER_AVATARS[normEn];
+  }
+  if (normEn && MNN_CHARACTER_CAST[normEn]) {
+    return MNN_CHARACTER_CAST[normEn];
+  }
+  if (normEn && MNN_SERVICE_ROLES[normEn]) {
+    return MNN_SERVICE_ROLES[normEn];
+  }
+
+  // Minna no Nihongo I cast match (check specific MNN characters before general Genki surname rules)
+  const mnnProfile = getMnnCharacterProfile(speaker, speakerJa);
+  if (mnnProfile) {
+    return mnnProfile;
+  }
+
+  // Minna no Nihongo I service roles
+  if (
+    normJa.includes("銀行員") ||
+    normJa.includes("ぎんこういん") ||
+    normEn.includes("bank clerk") ||
+    normEn.includes("bank teller")
+  ) {
+    return MNN_SERVICE_ROLES["bank-clerk"];
+  }
+
+  if (
+    normJa.includes("郵便局員") ||
+    normJa.includes("ゆうびんきょくいん") ||
+    normJa.includes("郵便局の人") ||
+    normEn.includes("post office clerk") ||
+    normEn.includes("postal clerk")
+  ) {
+    return MNN_SERVICE_ROLES["post-office-clerk"];
+  }
+
+  if (
+    normJa.includes("不動産屋") ||
+    normJa.includes("ふどうさんや") ||
+    normJa.includes("不動産") ||
+    normEn.includes("real estate")
+  ) {
+    return MNN_SERVICE_ROLES["real-estate-agent"];
+  }
+
+  if (
+    normJa.includes("運転手") ||
+    normJa.includes("うんてんしゅ") ||
+    normJa.includes("タクシー") ||
+    normEn.includes("taxi driver") ||
+    normEn.includes("cab driver") ||
+    normEn === "driver"
+  ) {
+    return MNN_SERVICE_ROLES["taxi-driver"];
   }
 
   // 1. Mary Hart

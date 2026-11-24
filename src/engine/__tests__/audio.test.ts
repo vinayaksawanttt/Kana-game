@@ -275,13 +275,13 @@ describe("audio engine", () => {
     it("normalizes Katakana reading to Hiragana", () => {
       const vocab = resolveVocabAudio({ word: "水", reading: "ミズ" });
       expect(vocab.ttsText).toBe("みず");
-      expect(vocab.src).toBe(`/audio/vocab/${encodeURIComponent("みず")}.opus`);
+      expect(vocab.src).toBe("/audio/books/vocab/みず.opus");
     });
 
     it("falls back to word when reading/kana are omitted", () => {
       const vocab = resolveVocabAudio({ word: "ありがとう" });
       expect(vocab.ttsText).toBe("ありがとう");
-      expect(vocab.src).toBe(`/audio/vocab/${encodeURIComponent("ありがとう")}.opus`);
+      expect(vocab.src).toBe("/audio/books/vocab/ありがとう.opus");
     });
 
     it("resolves signature vocab and reading clips via Hybrid Engine and decomposes rare words into moraSteps", () => {
@@ -291,10 +291,15 @@ describe("audio engine", () => {
       expect(shiritori.staticSrc).toBe(`/audio/vocab/${encodeURIComponent("しりとり")}.opus`);
       expect(hasStaticVocabAudio("しりとり")).toBe(true);
 
-      // Existing kanji reading clip -> static clip in /audio/readings/
+      // Textbook companion vocabulary clip -> static clip in /audio/books/vocab/
       const mizu = resolveVocabAudio({ word: "水", reading: "みず" });
       expect(mizu.hasStaticClip).toBe(true);
-      expect(mizu.staticSrc).toBe(`/audio/readings/${encodeURIComponent("みず")}.opus`);
+      expect(mizu.staticSrc).toBe("/audio/books/vocab/みず.opus");
+
+      // Existing kanji reading clip fallback -> static clip in /audio/readings/
+      const akashi = resolveVocabAudio({ word: "証", reading: "あかし" });
+      expect(akashi.hasStaticClip).toBe(true);
+      expect(akashi.staticSrc).toBe(`/audio/readings/${encodeURIComponent("あかし")}.opus`);
 
       // Custom/rare word -> Kana-Mora Stitching fallback (hasStaticClip: false)
       const rare = resolveVocabAudio({ word: "らっぱぶき", reading: "らっぱぶき" });

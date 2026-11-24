@@ -347,13 +347,24 @@ export function LessonWorkspaceHeader({
     },
     {
       tab: "kanji",
-      label: "Kanji",
-      primaryText: `${overview.kanji.studied}/${overview.kanji.total} studied`,
-      secondaryText: `${overview.kanji.mastered} mastered`,
+      label:
+        overview.kanji.total === 0
+          ? lessonNumber === 2
+            ? "Katakana"
+            : "Hiragana"
+          : "Kanji",
+      primaryText:
+        overview.kanji.total === 0
+          ? "46 characters"
+          : `${overview.kanji.studied}/${overview.kanji.total} studied`,
+      secondaryText:
+        overview.kanji.total === 0
+          ? "Syllabary sheet"
+          : `${overview.kanji.mastered} mastered`,
       percent:
         overview.kanji.total > 0
           ? Math.round((overview.kanji.studied / overview.kanji.total) * 100)
-          : 0,
+          : 100,
     },
     {
       tab: "dialogues",

@@ -36,7 +36,7 @@ describe("GamesHub (/)", () => {
     // Immersion & Real-World Play
     expect(linkFor("/games/dialogue")).toBeTruthy();
     expect(screen.getAllByText(/Dialogue Quest: Real-World Japanese Roleplay/i).length).toBeGreaterThan(0);
-    expect(screen.getAllByText(/10 Episodes/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/12 Episodes/i).length).toBeGreaterThan(0);
     expect(linkFor("/stories")).toBeTruthy();
     expect(screen.getAllByText(/stories & graded reading/i).length).toBeGreaterThan(0);
     expect(linkFor("/games/listening")).toBeTruthy();

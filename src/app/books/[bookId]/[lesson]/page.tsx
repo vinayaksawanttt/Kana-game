@@ -1305,8 +1305,16 @@ export default function BookLessonPage() {
       },
       {
         id: "kanji",
-        label: "漢字 Kanji",
-        count: lesson.stats.kanjiCount,
+        label:
+          lesson.kanji.length === 0
+            ? lesson.lessonNumber === 2
+              ? "片仮名 Katakana"
+              : "平仮名 Hiragana"
+            : "漢字 Kanji",
+        count:
+          lesson.kanji.length === 0
+            ? 46
+            : lesson.stats.kanjiCount,
       },
       {
         id: "dialogues",
