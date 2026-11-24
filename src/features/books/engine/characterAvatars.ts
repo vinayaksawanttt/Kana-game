@@ -401,6 +401,83 @@ export const MNN_SERVICE_ROLES: Record<string, CharacterAvatar> = {
     neutral: "/images/characters/taxi-driver/neutral.webp",
     talking: "/images/characters/taxi-driver/talking.webp",
   },
+  "caretaker": {
+    id: "caretaker",
+    name: "Apartment Caretaker",
+    nameJa: "管理人",
+    neutral: "/images/characters/caretaker/neutral.webp",
+    talking: "/images/characters/caretaker/talking.webp",
+  },
+  "man": {
+    id: "man",
+    name: "Passerby Man",
+    nameJa: "男の人",
+    neutral: "/images/characters/man/neutral.webp",
+    talking: "/images/characters/man/talking.webp",
+  },
+  "woman": {
+    id: "woman",
+    name: "Passerby Woman",
+    nameJa: "女の人",
+    neutral: "/images/characters/woman/neutral.webp",
+    talking: "/images/characters/woman/talking.webp",
+  },
+  "receptionist": {
+    id: "receptionist",
+    name: "Receptionist",
+    nameJa: "受付",
+    neutral: "/images/characters/receptionist/neutral.webp",
+    talking: "/images/characters/receptionist/talking.webp",
+  },
+  "reporter": {
+    id: "reporter",
+    name: "Reporter",
+    nameJa: "レポーター",
+    neutral: "/images/characters/reporter/neutral.webp",
+    talking: "/images/characters/reporter/talking.webp",
+  },
+  "host": {
+    id: "host",
+    name: "Host / MC",
+    nameJa: "司会者",
+    neutral: "/images/characters/host/neutral.webp",
+    talking: "/images/characters/host/talking.webp",
+  },
+  "librarian": {
+    id: "librarian",
+    name: "Librarian",
+    nameJa: "図書館の人",
+    neutral: "/images/characters/librarian/neutral.webp",
+    talking: "/images/characters/librarian/talking.webp",
+  },
+  "nurse": {
+    id: "nurse",
+    name: "Nurse",
+    nameJa: "看護師",
+    neutral: "/images/characters/nurse/neutral.webp",
+    talking: "/images/characters/nurse/talking.webp",
+  },
+  "kobayashi": {
+    id: "kobayashi",
+    name: "Kobayashi",
+    nameJa: "小林",
+    neutral: "/images/characters/kobayashi/neutral.webp",
+    talking: "/images/characters/kobayashi/talking.webp",
+  },
+  "nakamura": {
+    id: "nakamura",
+    name: "Nakamura",
+    nameJa: "中村",
+    neutral: "/images/characters/nakamura/neutral.webp",
+    talking: "/images/characters/nakamura/talking.webp",
+  },
+  "lopez": {
+    id: "lopez",
+    name: "Lopez",
+    nameJa: "ロペス",
+    neutral: "/images/characters/lopez/neutral.webp",
+    talking: "/images/characters/lopez/talking.webp",
+  },
 };
 
 export function getAllMnnCharacterProfiles(): MnnCharacterProfile[] {
@@ -739,6 +816,105 @@ export function getCharacterAvatar(
     normEn === "driver"
   ) {
     return MNN_SERVICE_ROLES["taxi-driver"];
+  }
+
+  // Supporting Roles: Caretaker, Receptionist, Reporter, Host, Librarian, Nurse, etc.
+  if (
+    normJa.includes("管理人") ||
+    normJa.includes("かんりにん") ||
+    normEn.includes("caretaker") ||
+    normEn.includes("superintendent")
+  ) {
+    return MNN_SERVICE_ROLES["caretaker"];
+  }
+
+  if (
+    normJa.includes("受付") ||
+    normJa.includes("うけつけ") ||
+    normEn.includes("receptionist") ||
+    (normEn.includes("front desk") && !normEn.includes("hotel")) ||
+    normEn.includes("clinic reception") ||
+    normEn === "reception"
+  ) {
+    return MNN_SERVICE_ROLES["receptionist"];
+  }
+
+  if (
+    normJa.includes("レポーター") ||
+    normJa.includes("記者") ||
+    normEn.includes("reporter") ||
+    normEn.includes("interviewer")
+  ) {
+    return MNN_SERVICE_ROLES["reporter"];
+  }
+
+  if (
+    normJa.includes("司会") ||
+    normJa.includes("しかい") ||
+    (normEn.includes("host") && !normEn.includes("father") && !normEn.includes("mother")) ||
+    normEn.includes("mc")
+  ) {
+    return MNN_SERVICE_ROLES["host"];
+  }
+
+  if (
+    normJa.includes("図書館") ||
+    normJa.includes("としょかん") ||
+    normEn.includes("librarian")
+  ) {
+    return MNN_SERVICE_ROLES["librarian"];
+  }
+
+  if (
+    normJa.includes("看護師") ||
+    normJa.includes("かんごし") ||
+    normJa.includes("看護婦") ||
+    normEn.includes("nurse")
+  ) {
+    return MNN_SERVICE_ROLES["nurse"];
+  }
+
+  if (
+    normJa.includes("小林") ||
+    normJa.includes("こばやし") ||
+    normEn.includes("kobayashi")
+  ) {
+    return MNN_SERVICE_ROLES["kobayashi"];
+  }
+
+  if (
+    normJa.includes("中村") ||
+    normJa.includes("なかむら") ||
+    normEn.includes("nakamura")
+  ) {
+    return MNN_SERVICE_ROLES["nakamura"];
+  }
+
+  if (
+    normJa.includes("ロペス") ||
+    normEn.includes("lopez")
+  ) {
+    return MNN_SERVICE_ROLES["lopez"];
+  }
+
+  if (
+    normJa.includes("男の人") ||
+    normJa.includes("おとこのひと") ||
+    normEn === "man" ||
+    normEn === "a man" ||
+    normEn.includes("passerby man")
+  ) {
+    return MNN_SERVICE_ROLES["man"];
+  }
+
+  if (
+    normJa.includes("女の人") ||
+    normJa.includes("おんなのひと") ||
+    normEn === "woman" ||
+    normEn === "a woman" ||
+    normEn.includes("passerby woman")
+  ) {
+    return MNN_SERVICE_ROLES["woman"];
   }
 
   // 1. Mary Hart

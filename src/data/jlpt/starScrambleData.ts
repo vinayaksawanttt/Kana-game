@@ -1846,6 +1846,426 @@ export const STAR_SCRAMBLE_ITEMS: readonly StarScrambleItem[] = [
     "suffixFurigana": "{起|お}きます。"
   },
   {
+    "id": "star-n5-textbook-01",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "わたしは",
+    "segments": [
+      "マイク・ミラー",
+      "じゃ",
+      "ありません、",
+      "会社員"
+    ],
+    "suffix": "です。",
+    "fullSentence": "わたしはマイク・ミラーじゃありません、会社員です。",
+    "furigana": "わたしはマイク・ミラーじゃありません、{会社員|かいしゃいん}です。",
+    "romaji": "Watashi wa Maiku Mirā ja arimasen, kaishain desu.",
+    "english": "I am not Mike Miller, I am a company employee.",
+    "grammarId": "N5/ja-arimasen",
+    "grammarPoint": "N1 は N2 じゃありません",
+    "explanation": "Negative polite form of です used for asserting non-identity or negative predicate.",
+    "prefixFurigana": "わたしは",
+    "segmentsFurigana": [
+      "マイク・ミラー",
+      "じゃ",
+      "ありません、",
+      "{会社員|かいしゃいん}"
+    ],
+    "suffixFurigana": "です。"
+  },
+  {
+    "id": "star-n5-textbook-02",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "サントスさんも",
+    "segments": [
+      "ブラジルエアーの",
+      "社員",
+      "です",
+      "か。"
+    ],
+    "suffix": "",
+    "fullSentence": "サントスさんもブラジルエアーの社員ですか。",
+    "furigana": "サントスさんもブラジルエアーの{社員|しゃいん}ですか。",
+    "romaji": "Santosu-san mo Burajiru Eā no shain desu ka.",
+    "english": "Is Mr. Santos also an employee of Brazil Air?",
+    "grammarId": "N5/mo-particle",
+    "grammarPoint": "N も (Also / Too)",
+    "explanation": "The particle も replaces は when a statement applies to another topic.",
+    "prefixFurigana": "サントスさんも",
+    "segmentsFurigana": [
+      "ブラジルエアーの",
+      "{社員|しゃいん}",
+      "です",
+      "か。"
+    ],
+    "suffixFurigana": ""
+  },
+  {
+    "id": "star-n5-textbook-03",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "京都へ",
+    "segments": [
+      "祇園祭を",
+      "見に",
+      "行き",
+      "ました。"
+    ],
+    "suffix": "",
+    "fullSentence": "京都へ祇園祭を見に行きました。",
+    "furigana": "{京都|きょうと}へ{祇園祭|ぎおんまつり}を{見|み}に{行|い}きました。",
+    "romaji": "Kyōto e Gion-matsuri o mi ni ikimashita.",
+    "english": "I went to Kyoto to see the Gion Festival.",
+    "grammarId": "N5/ni-iku",
+    "grammarPoint": "V[stem] に 行く (Purpose of Movement)",
+    "explanation": "Used to state the purpose of moving to a destination using verb stem + に + 行く/来る.",
+    "prefixFurigana": "{京都|きょうと}へ",
+    "segmentsFurigana": [
+      "{祇園祭|ぎおんまつり}を",
+      "{見|み}に",
+      "{行|い}き",
+      "ました。"
+    ],
+    "suffixFurigana": ""
+  },
+  {
+    "id": "star-n5-textbook-04",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "ここで",
+    "segments": [
+      "写真を",
+      "撮っては",
+      "いけません",
+      "よ。"
+    ],
+    "suffix": "",
+    "fullSentence": "ここで写真を撮ってはいけませんよ。",
+    "furigana": "ここで{写真|しゃしん}を{撮|と}ってはいけませんよ。",
+    "romaji": "Koko de shashin o totte wa ikemasen yo.",
+    "english": "You must not take photos here.",
+    "grammarId": "N5/tewa-ikemasen",
+    "grammarPoint": "V[te] は いけません (Prohibition)",
+    "explanation": "Used to state a firm prohibition or rule against doing an action.",
+    "prefixFurigana": "ここで",
+    "segmentsFurigana": [
+      "{写真|しゃしん}を",
+      "{撮|と}っては",
+      "いけません",
+      "よ。"
+    ],
+    "suffixFurigana": ""
+  },
+  {
+    "id": "star-n5-textbook-05",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "富士山に",
+    "segments": [
+      "登った",
+      "こと",
+      "が",
+      "ありますか。"
+    ],
+    "suffix": "",
+    "fullSentence": "富士山に登ったことがありますか。",
+    "furigana": "{富士山|ふじさん}に{登|のぼ}ったことがありますか。",
+    "romaji": "Fujisan ni nobotta koto ga arimasu ka.",
+    "english": "Have you ever climbed Mt. Fuji?",
+    "grammarId": "N5/ta-koto-ga-aru",
+    "grammarPoint": "V[ta] ことがある (Past Experience)",
+    "explanation": "Expresses personal experience of having ever done an action in the past.",
+    "prefixFurigana": "{富士山|ふじさん}に",
+    "segmentsFurigana": [
+      "{登|のぼ}った",
+      "こと",
+      "が",
+      "ありますか。"
+    ],
+    "suffixFurigana": ""
+  },
+  {
+    "id": "star-n5-textbook-06",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "この",
+    "segments": [
+      "カタログを",
+      "もらっても",
+      "いい",
+      "ですか。"
+    ],
+    "suffix": "",
+    "fullSentence": "このカタログをもらってもいいですか。",
+    "furigana": "このカタログをもらってもいいですか。",
+    "romaji": "Kono katarogu o moratte mo ii desu ka.",
+    "english": "May I have this catalog?",
+    "grammarId": "N5/temo-ii",
+    "grammarPoint": "V[te] も いいですか (Asking Permission)",
+    "explanation": "Politely asks permission to perform an action using verb te-form + もいいですか.",
+    "prefixFurigana": "この",
+    "segmentsFurigana": [
+      "カタログを",
+      "もらっても",
+      "いい",
+      "ですか。"
+    ],
+    "suffixFurigana": ""
+  },
+  {
+    "id": "star-n5-textbook-07",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "毎朝",
+    "segments": [
+      "ジョギングをして",
+      "から",
+      "シャワーを",
+      "浴び"
+    ],
+    "suffix": "ます。",
+    "fullSentence": "毎朝ジョギングをしてからシャワーを浴びます。",
+    "furigana": "{毎朝|まいあさ}ジョギングをしてからシャワーを{浴|あ}びます。",
+    "romaji": "Maiasa jogingu o shite kara shawā o abimasu.",
+    "english": "Every morning after jogging I take a shower.",
+    "grammarId": "N5/te-kara",
+    "grammarPoint": "V[te] から (Sequence / After Doing)",
+    "explanation": "Indicates that action 2 begins only after action 1 is completed.",
+    "prefixFurigana": "{毎朝|まいあさ}",
+    "segmentsFurigana": [
+      "ジョギングをして",
+      "から",
+      "シャワーを",
+      "{浴|あ}び"
+    ],
+    "suffixFurigana": "ます。"
+  },
+  {
+    "id": "star-n5-textbook-08",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "ミラーさんは",
+    "segments": [
+      "漢字を",
+      "読む",
+      "こと",
+      "ができます。"
+    ],
+    "suffix": "",
+    "fullSentence": "ミラーさんは漢字を読むことができます。",
+    "furigana": "ミラーさんは{漢字|かんじ}を{読|よ}むことができます。",
+    "romaji": "Mirā-san wa kanji o yomu koto ga dekimasu.",
+    "english": "Mr. Miller can read kanji.",
+    "grammarId": "N5/koto-ga-dekiru",
+    "grammarPoint": "V[dict] ことができる (Ability / Capability)",
+    "explanation": "Nominalizes a dictionary-form verb with こと to express capability or possibility.",
+    "prefixFurigana": "ミラーさんは",
+    "segmentsFurigana": [
+      "{漢字|かんじ}を",
+      "{読|よ}む",
+      "こと",
+      "ができます。"
+    ],
+    "suffixFurigana": ""
+  },
+  {
+    "id": "star-n5-textbook-09",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "時間が",
+    "segments": [
+      "ありません",
+      "から、",
+      "タクシーで",
+      "行き"
+    ],
+    "suffix": "ましょう。",
+    "fullSentence": "時間がありませんから、タクシーで行きましょう。",
+    "furigana": "{時間|じかん}がありませんから、タクシーで{行|い}きましょう。",
+    "romaji": "Jikan ga arimasen kara, takushī de ikimashō.",
+    "english": "Since we don't have time, let's go by taxi.",
+    "grammarId": "N5/kara-reason",
+    "grammarPoint": "～から (Reason / Cause)",
+    "explanation": "States a subjective reason or premise before proposing an action or invitation.",
+    "prefixFurigana": "{時間|じかん}が",
+    "segmentsFurigana": [
+      "ありません",
+      "から、",
+      "タクシーで",
+      "{行|い}き"
+    ],
+    "suffixFurigana": "ましょう。"
+  },
+  {
+    "id": "star-n5-textbook-10",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "山田さんは",
+    "segments": [
+      "音楽を",
+      "聞き",
+      "ながら",
+      "勉強して"
+    ],
+    "suffix": "います。",
+    "fullSentence": "山田さんは音楽を聞きながら勉強しています。",
+    "furigana": "{山田|やまだ}さんは{音楽|おんがく}を{聞|き}きながら{勉強|べんきょう}しています。",
+    "romaji": "Yamada-san wa ongaku o kikinagara benkyō shite imasu.",
+    "english": "Mr. Yamada is studying while listening to music.",
+    "grammarId": "N5/nagara",
+    "grammarPoint": "V[stem] ながら (Simultaneous Actions)",
+    "explanation": "Expresses doing a secondary action while performing a primary action.",
+    "prefixFurigana": "{山田|やまだ}さんは",
+    "segmentsFurigana": [
+      "{音楽|おんがく}を",
+      "{聞|き}き",
+      "ながら",
+      "{勉強|べんきょう}して"
+    ],
+    "suffixFurigana": "います。"
+  },
+  {
+    "id": "star-n5-textbook-11",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "飛行機の",
+      "ほうが",
+      "新幹線より",
+      "速い"
+    ],
+    "suffix": "です。",
+    "fullSentence": "飛行機のほうが新幹線より速いです。",
+    "furigana": "{飛行機|ひこうき}のほうが{新幹線|しんかんせん}より{速|はや}いです。",
+    "romaji": "Hikōki no hō ga shinkansen yori hayai desu.",
+    "english": "Airplanes are faster than bullet trains.",
+    "grammarId": "N5/hou-ga-yori",
+    "grammarPoint": "A の ほうが B より ～ (Comparison)",
+    "explanation": "Compares two entities, asserting that entity A possesses a greater degree than B.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{飛行機|ひこうき}の",
+      "ほうが",
+      "{新幹線|しんかんせん}より",
+      "{速|はや}い"
+    ],
+    "suffixFurigana": "です。"
+  },
+  {
+    "id": "star-n5-textbook-12",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "暑いですから、",
+    "segments": [
+      "冷たい",
+      "水が",
+      "飲み",
+      "たい"
+    ],
+    "suffix": "です。",
+    "fullSentence": "暑いですから、冷たい水が飲みたいです。",
+    "furigana": "{暑|あつ}いですから、{冷|つめ}たい{水|みず}が{飲|の}みたいです。",
+    "romaji": "Atsui desu kara, tsumetai mizu ga nomitai desu.",
+    "english": "Because it is hot, I want to drink cold water.",
+    "grammarId": "N5/tai-desire",
+    "grammarPoint": "V[stem] たい (Desire to do V)",
+    "explanation": "Expresses the speaker's direct desire or wish to perform an action.",
+    "prefixFurigana": "{暑|あつ}いですから、",
+    "segmentsFurigana": [
+      "{冷|つめ}たい",
+      "{水|みず}が",
+      "{飲|の}み",
+      "たい"
+    ],
+    "suffixFurigana": "です。"
+  },
+  {
+    "id": "star-n5-textbook-13",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "寝る",
+      "まえに",
+      "日記を",
+      "書き"
+    ],
+    "suffix": "ます。",
+    "fullSentence": "寝るまえに日記を書きます。",
+    "furigana": "{寝|ね}るまえに{日記|にっき}を{書|か}きます。",
+    "romaji": "Neru mae ni nikki o kakimasu.",
+    "english": "I write in my diary before going to bed.",
+    "grammarId": "N5/mae-ni",
+    "grammarPoint": "V[dict] まえに (Before doing V)",
+    "explanation": "Indicates that the following action occurs prior to the dictionary-form verb.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{寝|ね}る",
+      "まえに",
+      "{日記|にっき}を",
+      "{書|か}き"
+    ],
+    "suffixFurigana": "ます。"
+  },
+  {
+    "id": "star-n5-textbook-14",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "",
+    "segments": [
+      "雨が",
+      "降ったら、",
+      "どこも",
+      "出かけ"
+    ],
+    "suffix": "ません。",
+    "fullSentence": "雨が降ったら、どこも出かけません。",
+    "furigana": "{雨|あめ}が{降|ふ}ったら、どこも{出|で}かけません。",
+    "romaji": "Ame ga futtara, doko mo dekakemasen.",
+    "english": "If it rains, I won't go out anywhere.",
+    "grammarId": "N5/tara-conditional",
+    "grammarPoint": "V[tara] (Conditional If / When)",
+    "explanation": "Forms a conditional sentence indicating a consequence when a condition is met.",
+    "prefixFurigana": "",
+    "segmentsFurigana": [
+      "{雨|あめ}が",
+      "{降|ふ}ったら、",
+      "どこも",
+      "{出|で}かけ"
+    ],
+    "suffixFurigana": "ません。"
+  },
+  {
+    "id": "star-n5-textbook-15",
+    "level": "N5",
+    "jlpt": 5,
+    "prefix": "熱がありますから、",
+    "segments": [
+      "無理を",
+      "しないで",
+      "ください",
+      "ね。"
+    ],
+    "suffix": "",
+    "fullSentence": "熱がありますから、無理をしないでくださいね。",
+    "furigana": "{熱|ねつ}がありますから、{無理|むり}をしないでくださいね。",
+    "romaji": "Netsu ga arimasu kara, muri o shinaide kudasai ne.",
+    "english": "Since you have a fever, please do not push yourself.",
+    "grammarId": "N5/naide-kudasai",
+    "grammarPoint": "V[nai] で ください (Negative Request)",
+    "explanation": "Politely asks someone to refrain from doing something using nai-form + で ください.",
+    "prefixFurigana": "{熱|ねつ}がありますから、",
+    "segmentsFurigana": [
+      "{無理|むり}を",
+      "しないで",
+      "ください",
+      "ね。"
+    ],
+    "suffixFurigana": ""
+  },
+  {
     "id": "star-n4-1",
     "level": "N4",
     "jlpt": 4,

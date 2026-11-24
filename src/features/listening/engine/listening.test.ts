@@ -346,6 +346,32 @@ describe("Listening Quiz Engine", () => {
     expect(extracted[0].reading).toBe("もうスミスさんにあわれましたね。");
   });
 
+  it("extracts and prioritizes textbook dialogue sentences with authentic character audio", () => {
+    const textbookLines = [
+      {
+        id: "tb:genki-1:L1:0:0",
+        ja: "あの、すみません。",
+        reading: "あの、すみません。",
+        en: "Um, excuse me.",
+        jlpt: 5 as const,
+        audioSrc: "/audio/books/dialogues/genki-1/l1-mary-0.opus",
+      },
+      {
+        id: "tb:mnn-1:L1:0:0",
+        ja: "初めまして。マイク・ミラーです。",
+        reading: "初めまして。マイク・ミラーです。",
+        en: "Nice to meet you. I am Mike Miller.",
+        jlpt: 5 as const,
+        audioSrc: "/audio/books/dialogues/mnn-1/l1-miller-0.opus",
+      },
+    ];
+
+    const extracted = extractListeningSentences([], [], textbookLines);
+    expect(extracted).toHaveLength(2);
+    expect(extracted.some((s) => s.id === "tb:genki-1:L1:0:0" && s.audioSrc?.includes("genki-1"))).toBe(true);
+    expect(extracted.some((s) => s.id === "tb:mnn-1:L1:0:0" && s.audioSrc?.includes("mnn-1"))).toBe(true);
+  });
+
   it("prioritizes distractors that share character names and story context", () => {
     const storySentences = [
       {

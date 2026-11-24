@@ -1,168 +1,138 @@
-# Minna no Nihongo I — Dialogue Scene Locations & Background Prompts
+Ran list all speakers in MNN 1 dialogues with frequency
+Ran check which speakers are missing avatars
+Ran run tsx script to find missing avatars
+Analyzed mnn1-character-avatars-prompts.md:L1-100
+Ran inspect dialogue lines for missing avatar characters
+Analyzed mnn1-character-avatars-prompts.md:L140-193
+Edited mnn1-character-avatars-prompts.md
+Analyzed mnn1-character-avatars-prompts.md:L190-204
+Edited mnn1-character-avatars-prompts.md
+Ran check git diff for prompt guide
 
-This guide maps all **25 lessons** (`会話` Main Dialogues + `練習C` Situational Dialogues) of **Minna no Nihongo I** to their visual locations behind the Textbook Companion dialogue player (`public/images/books/backgrounds/`).
-
-To maximize consistency and minimize redundant generation:
-* **11 existing backgrounds** from `01`–`40` (`Genki I & II`) are reused where locations match cleanly (station ticket gate, medical clinic, neighborhood cafe, restaurant, suburban home).
-* **20 new MNN-specific Kansai & Workplace backgrounds (`41`–`60`)** cover the signature *Minna no Nihongo* world (IMC Software Office, Room 407/408 Apartment Genkan, Depachika Wine Counter, Hanshin Koshien Platform, Supermarket Spice Aisle, Post Office, Kyoto Gion Matsuri, Taxi Interior, Bank ATM, and Real Estate Agency).
-
----
-
-## Global Style Guidelines
-
-> **Base Style Suffix (built into every prompt below):**
-> `Japanese anime visual novel background art, clean modern Slice-of-Life aesthetic, Makoto Shinkai / Kyoto Animation inspired lighting, 16:9 wide aspect ratio, no characters, no people, no text, no watermarks, soft atmospheric depth so foreground UI and dialogue bubbles remain easily readable.`
+All missing supporting dialogue characters in **Minna no Nihongo I** have been cataloged, and their prompts have been added to [docs/mnn1-character-avatars-prompts.md](file:///home/vinayak/Work/Kana-game/docs/mnn1-character-avatars-prompts.md).
 
 ---
 
-## Part 1: Lesson-by-Lesson Scene Directory (Lessons 1–25)
-
-| Lesson & Title (`会話`) | Main `会話` (`scene-i`) Location | Background Asset (`public/images/books/backgrounds/`) | `練習C` Mini-Scene Reuse |
-| :--- | :--- | :--- | :--- |
-| **L1 — 初めまして** | IMC Office Floor (Morning Introduction) | **`41-imc-office-day.webp`** *(New)* | `41-imc-office-day` / `01-university-orientation` |
-| **L2 — これからお世話になります** | Apartment 4F Hallway & Genkan (Rooms 407–408) | **`42-apartment-hallway-genkan.webp`** *(New)* | `42-apartment-hallway-genkan` / `41-imc-office-day` |
-| **L3 — これをください** | Department Store Basement Wine Counter (B1F) | **`43-department-store-wine.webp`** *(New)* | `43-department-store-wine` / `12-campus-corridor` |
-| **L4 — そちらは何時までですか** | IMC Desk Phone / Yamato Art Museum | **`44-art-museum-plaza.webp`** *(New)* | `41-imc-office-day` / `44-art-museum-plaza` |
-| **L5 — この電車は甲子園へ行きますか** | Kansai Suburban Train Platform (To Koshien) | **`45-koshien-train-platform.webp`** *(New)* | `30-station-ticket-gate` / `45-koshien-train-platform` |
-| **L6 — いっしょに行きませんか** | Cherry Blossom Park / IMC Office Invitation | **`46-osaka-castle-sakura.webp`** *(New)* | `41-imc-office-day` / `25-neighborhood-cafe` |
-| **L7 — いらっしゃい** | Yamada Family Living & Dining Room (Day) | **`47-yamada-living-room-day.webp`** *(New)* | `41-imc-office-day` / `47-yamada-living-room-day` |
-| **L8 — そろそろ失礼します** | Yamada Family Living Room (Afternoon Tea) | `08-host-family-evening.webp` *(Reuse)* | `25-neighborhood-cafe` / `07-downtown-street` |
-| **L9 — 残念ですが** | IMC Office / Classical Concert Hall Lobby | **`48-concert-hall-lobby.webp`** *(New)* | `41-imc-office-day` / `48-concert-hall-lobby` |
-| **L10 — ナンプラー、ありますか** | Japanese Supermarket Imported Spice Aisle | **`49-supermarket-spice-aisle.webp`** *(New)* | `49-supermarket-spice-aisle` / `05-campus-courtyard` |
-| **L11 — これ、お願いします** | Japan Post Office Counter (Airmail / Sea Mail) | **`50-japan-post-office.webp`** *(New)* | `50-japan-post-office` / `04-tonkatsu-restaurant` |
-| **L12 — 祇園祭はどうでしたか** | Kyoto Gion Festival Street with Lantern Floats | **`51-kyoto-gion-matsuri.webp`** *(New)* | `51-kyoto-gion-matsuri` / `41-imc-office-day` |
-| **L13 — 別々にお願いします** | Daytime Teishoku Lunch Restaurant & Cashier | **`52-teishoku-lunch-cashier.webp`** *(New)* | `04-tonkatsu-restaurant` / `25-neighborhood-cafe` |
-| **L14 — みどり町までお願いします** | Japanese Taxi Interior (Passenger View) | **`53-japanese-taxi-interior.webp`** *(New)* | `53-japanese-taxi-interior` / `41-imc-office-day` |
-| **L15 — ご家族は？** | IMC Office Breakroom / Lounge | **`54-office-breakroom-lounge.webp`** *(New)* | `54-office-breakroom-lounge` / `44-art-museum-plaza` |
-| **L16 — 使い方を教えてください** | Modern Japanese Bank ATM Corner | **`55-japanese-bank-atm.webp`** *(New)* | `55-japanese-bank-atm` / `30-station-ticket-gate` |
-| **L17 — どうしましたか** | Kobe Hospital Examination Room | `21-hospital-clinic-room.webp` *(Reuse)* | `21-hospital-clinic-room` / `41-imc-office-day` |
-| **L18 — 趣味は何ですか** | IMC Office Breakroom / Equestrian Park Talk | `54-office-breakroom-lounge.webp` *(Reuse)* | `54-office-breakroom-lounge` / `20-student-lounge` |
-| **L19 — ダイエットはあしたからします** | Hotel / Company Buffet Party Hall | **`56-company-buffet-party.webp`** *(New)* | `56-company-buffet-party` / `33-upscale-restaurant` |
-| **L20 — いっしょに行かない？** | Summer Fireworks Riverside / Casual Colleagues | **`57-summer-hanabi-riverside.webp`** *(New)* | `54-office-breakroom-lounge` / `57-summer-hanabi-riverside` |
-| **L21 — わたしもそう思います** | Matsumoto Living Room / Evening TV Sports | `34-suburban-house-night.webp` *(Reuse)* | `41-imc-office-day` / `25-neighborhood-cafe` |
-| **L22 — どんな部屋をお探しですか** | Japanese Real Estate Agency (`不動産屋`) | **`58-real-estate-office.webp`** *(New)* | `58-real-estate-office` / `41-imc-office-day` |
-| **L23 — どうやって行きますか** | Municipal Public Library Counter | **`59-public-library-counter.webp`** *(New)* | `59-public-library-counter` / `07-downtown-street` |
-| **L24 — 手伝いに行きましょうか** | Apartment Moving Preparation (Boxes & Room) | **`60-apartment-moving-day.webp`** *(New)* | `60-apartment-moving-day` / `41-imc-office-day` |
-| **L25 — いろいろお世話になりました** | IMC Office / Shinkansen Transfer Farewell | `39-airport-express-dusk.webp` / `41-imc-office-day` | `41-imc-office-day` / `30-station-ticket-gate` |
+### Master Style Prefix (Built into each prompt)
+```text
+Japanese anime visual novel bust-up character avatar, clean modern slice-of-life anime style inspired by Kyoto Animation, crisp dark-brown cel-shaded lineart, soft warm skin shading with subtle cheek blush strokes, expressive eyes, centered front-facing head-and-shoulders portrait, isolated on solid pure #FFFFFF white background, no background, no text, no watermark, 1:1 square aspect ratio.
+```
 
 ---
 
-## Part 2: Master Prompts for the 20 New MNN 1 Backgrounds (`41`–`60`)
+### Character Prompts (11 Supporting & Incident Characters)
 
-### 41. `41-imc-office-day.webp` (Lessons 1, 4, 6, 9, 18, 21, 25 — IMC Software Office)
-> **Prompt:**
-> `Japanese anime visual novel background art of a bright, tidy modern Japanese corporate office floor at a computer software company (IMC) in morning sunlight. Neat rows of light-grey desks with computer monitors, binders on metal filing cabinets along the back wall, large windows with venetian blinds overlooking a sunny Osaka/Kobe city skyline, indoor potted green plants, clean welcoming workplace atmosphere. Makoto Shinkai / Kyoto Animation inspired lighting, wide 16:9 composition, no people, no characters, no text.`
-
----
-
-### 42. `42-apartment-hallway-genkan.webp` (Lesson 2 — `これからお世話になります`)
-> **Prompt:**
-> `Japanese anime visual novel background art of a clean, sunlit 4th-floor exterior/semi-indoor corridor and entrance doorway (genkan) of a modern Japanese residential mansion apartment building. Neat cream concrete walls, dark metal apartment front doors with doorbells and small number plates, warm afternoon light streaming from the open balcony side, tidy welcoming neighborhood atmosphere. Kyoto Animation slice-of-life background style, wide 16:9 composition, no people, no characters, no text.`
+#### 1. `caretaker` — 管理人 (Apartment Caretaker / Superintendent, Lessons 11 & 12)
+- **Role**: Mike Miller’s kindly apartment superintendent who greets him (*"いい天気ですね。お出かけですか"* - L11; *"お帰りなさい"* - L12).
+- **Target Folder**: `public/images/characters/caretaker/`
+- **`neutral.webp` Prompt**:
+  > `Japanese anime visual novel bust-up character avatar, clean modern slice-of-life anime style inspired by Kyoto Animation, centered front-facing head-and-shoulders portrait of an elderly 62-year-old Japanese male apartment building superintendent (管理人), neatly parted salt-and-pepper short grey-black hair, warm crinkly smiling eyes behind delicate thin wire-rimmed reading glasses, gentle closed-mouth neighborly smile with laugh lines, wearing a cozy olive-green fleece zip vest over a beige-and-cream plaid flannel collared shirt. Crisp cel-shaded lineart, isolated on solid pure #FFFFFF white background, no background, no text, 1:1 square.`
+- **`talking.webp` Edit**:
+  > `Keep the exact same character face, hair, glasses, clothing, pose, lineart, and pure white background unchanged; change the expression to a warm welcoming open-mouth neighborly smile greeting a tenant coming home, friendly elderly superintendent tone.`
 
 ---
 
-### 43. `43-department-store-wine.webp` (Lesson 3 — `これをください`)
-> **Prompt:**
-> `Japanese anime visual novel background art of an upscale Japanese department store basement gourmet and wine section (depachika). Warm polished wood shelving and glass display counters neatly lined with imported red and white wine bottles from Japan, France, and Italy, warm recessed spotlighting, clean marble tile floor, elegant information counter visible in soft background depth. Kyoto Animation inspired lighting, wide 16:9 composition, no people, no characters, no text.`
+#### 2. `man` — 男の人 (Helpful Passerby Man / Commuter, Lessons 5 & 10)
+- **Role**: Helpful commuter answering station questions (*"いいえ。次の「普通」ですよ"* - L5) and giving directions (*"あそこに高いビルがありますね"* - L10).
+- **Target Folder**: `public/images/characters/man/`
+- **`neutral.webp` Prompt**:
+  > `Japanese anime visual novel bust-up character avatar, clean modern slice-of-life anime style inspired by Kyoto Animation, centered front-facing head-and-shoulders portrait of an everyday 32-year-old Japanese male commuter and pedestrian (男の人), neat short black hair with a casual side fringe, dependable dark brown eyes, pleasant polite closed-mouth smile, wearing a dark-charcoal smart casual crew-neck sweater over the collar of a light-blue dress shirt. Crisp cel-shaded lineart, isolated on solid pure #FFFFFF white background, no background, no text, 1:1 square.`
+- **`talking.webp` Edit**:
+  > `Keep the exact same character face, hair, clothing, pose, lineart, and pure white background unchanged; change the expression to an attentive open-mouth speaking smile giving helpful street and station directions.`
 
 ---
 
-### 44. `44-art-museum-plaza.webp` (Lesson 4 — `そちらは何時までですか`)
-> **Prompt:**
-> `Japanese anime visual novel background art of a serene modern municipal art museum entrance plaza in Japan during clear morning light. Sleek architectural stone and glass facade, manicured trees, a decorative outdoor sculpture, paved courtyard leading to glass entrance doors, crisp blue sky with light clouds. Makoto Shinkai / Kyoto Animation style, wide 16:9 composition, no people, no characters, no text.`
+#### 3. `woman` — 女の人 (Helpful Passerby Woman / Neighbor, Lessons 5 & 10)
+- **Role**: Female pedestrian answering subway fare questions (*"350円です"* - L5) and pointing out the Asia Store building (*"あそこに白いビルがありますね"* - L10).
+- **Target Folder**: `public/images/characters/woman/`
+- **`neutral.webp` Prompt**:
+  > `Japanese anime visual novel bust-up character avatar, clean modern slice-of-life anime style inspired by Kyoto Animation, centered front-facing head-and-shoulders portrait of a polite 29-year-old Japanese female pedestrian and neighbor (女の人), shoulder-length soft dark-chestnut brown hair with soft side-swept bangs, warm dark eyes, gentle closed-mouth courteous smile with subtle cheek blush, wearing a soft pastel-lavender buttoned cardigan over a cream scoop-neck top. Crisp cel-shaded lineart, isolated on solid pure #FFFFFF white background, no background, no text, 1:1 square.`
+- **`talking.webp` Edit**:
+  > `Keep the exact same character face, hair, clothing, pose, lineart, and pure white background unchanged; change the expression to a kind open-mouth speaking smile answering a polite question on the street.`
 
 ---
 
-### 45. `45-koshien-train-platform.webp` (Lesson 5 — `この電車は甲子園へ行きますか`)
-> **Prompt:**
-> `Japanese anime visual novel background art of a sunny above-ground suburban commuter train station platform in Kansai (Osaka-Kobe line). Clean platform pavement with yellow tactile safety blocks, overhead station canopy casting crisp geometric shadows, electronic departure board without legible text, railway tracks receding into a bright blue daytime sky with distant city buildings. Makoto Shinkai inspired lighting, wide 16:9 composition, no people, no characters, no text.`
+#### 4. `receptionist` — 受付 (Corporate & Clinic Receptionist, Lessons 4, 15, 17)
+- **Role**: Front-desk clerk at the art museum (*"10時から4時までです"* - L4), exhibition counter (*"はい、どうぞ"* - L15), and clinic (*"名前を書いてください"* - L17).
+- **Target Folder**: `public/images/characters/receptionist/`
+- **`neutral.webp` Prompt**:
+  > `Japanese anime visual novel bust-up character avatar, clean modern slice-of-life anime style inspired by Kyoto Animation, centered front-facing head-and-shoulders portrait of a polished 25-year-old Japanese female corporate and clinic receptionist (受付), glossy dark hair gathered into a neat low ponytail with tidy straight bangs, alert dark brown eyes, radiant closed-mouth customer service smile, wearing a tailored navy-blue corporate uniform vest over a crisp short-sleeved white collared blouse, accented with a delicate pastel-pink silk neckerchief scarf. Crisp cel-shaded lineart, isolated on solid pure #FFFFFF white background, no background, no text, 1:1 square.`
+- **`talking.webp` Edit**:
+  > `Keep the exact same character face, hair, clothing, scarf, pose, lineart, and pure white background unchanged; change the expression to a courteous articulate open-mouth speaking smile welcoming visitors at the front desk.`
 
 ---
 
-### 46. `46-osaka-castle-sakura.webp` (Lesson 6 — `いっしょに行きませんか`)
-> **Prompt:**
-> `Japanese anime visual novel background art of a breathtaking spring cherry blossom (hanami) park walkway in Kansai, with traditional stone castle moat walls and lush pink sakura trees in full bloom arching overhead. Gentle pink petals drifting across a sunlit stone path, blue picnic tarps in the distant background under the trees, vibrant blue spring sky. Makoto Shinkai / Kyoto Animation aesthetic, wide 16:9 composition, no people, no characters, no text.`
+#### 5. `reporter` — レポーター (TV Street News Reporter, Lesson 13)
+- **Role**: Morning TV reporter for "Ohayou TV" conducting public interviews on the street (*"すみません。『おはようテレビ』ですが、今何がいちばん欲しいですか"* - L13).
+- **Target Folder**: `public/images/characters/reporter/`
+- **`neutral.webp` Prompt**:
+  > `Japanese anime visual novel bust-up character avatar, clean modern slice-of-life anime style inspired by Kyoto Animation, centered front-facing head-and-shoulders portrait of a spirited 26-year-old Japanese female TV street reporter (レポーター), stylish medium layered chocolate-brown bob hair with slight volume, bright expressive dark eyes, confident closed-mouth smile, subtle lapel clip microphone attached to her collar, wearing a chic tailored camel-beige trench jacket over an ivory knit top. Crisp cel-shaded lineart, isolated on solid pure #FFFFFF white background, no background, no text, 1:1 square.`
+- **`talking.webp` Edit**:
+  > `Keep the exact same character face, hair, clothing, microphone, pose, lineart, and pure white background unchanged; change the expression to an animated enthusiastic open-mouth speaking broadcast smile conducting an upbeat street interview.`
 
 ---
 
-### 47. `47-yamada-living-room-day.webp` (Lesson 7 — `いらっしゃい`)
-> **Prompt:**
-> `Japanese anime visual novel background art of a bright, tidy contemporary Japanese apartment living and dining room welcoming a guest in late morning. Warm light-oak flooring, comfortable sofa with cushions, low wooden coffee table set with Japanese green tea cups and a small plate of sweets, sheer white balcony curtains glowing with soft sunlight, neat bookshelves. Kyoto Animation slice-of-life style, wide 16:9 composition, no people, no characters, no text.`
+#### 6. `host` — 司会者 (TV Show Host / MC, Lesson 15)
+- **Role**: Charismatic presenter of "Minna no Interview" (*"皆さん、こんにちは。『みんなのインタビュー』の時間です"* - L15).
+- **Target Folder**: `public/images/characters/host/`
+- **`neutral.webp` Prompt**:
+  > `Japanese anime visual novel bust-up character avatar, clean modern slice-of-life anime style inspired by Kyoto Animation, centered front-facing head-and-shoulders portrait of a charismatic 34-year-old Japanese male television talk show host and MC (司会者), smartly styled short black hair with volume and parted off-center, sharp engaging dark eyes, confident charming closed-mouth entertainer smile, wearing a sharp tailored royal-navy blazer with satin lapel trim, crisp white dress shirt, and a stylish pocket square. Crisp cel-shaded lineart, isolated on solid pure #FFFFFF white background, no background, no text, 1:1 square.`
+- **`talking.webp` Edit**:
+  > `Keep the exact same character face, hair, suit, pose, lineart, and pure white background unchanged; change the expression to a dynamic theatrical open-mouth broadcast smile speaking directly to a studio audience.`
 
 ---
 
-### 48. `48-concert-hall-lobby.webp` (Lesson 9 — `残念ですが`)
-> **Prompt:**
-> `Japanese anime visual novel background art of an elegant modern Japanese symphony concert hall foyer in warm evening light. High glass atrium windows showing deep twilight blue outside, warm oak acoustic wall paneling, plush red carpet stairs, glowing chandelier pendants, framed abstract music concert posters without text. Kyoto Animation inspired lighting, wide 16:9 composition, no people, no characters, no text.`
+#### 7. `librarian` — 図書館の人 (Public Library Desk Staff, Lesson 23)
+- **Role**: Desk clerk at Midori Public Library who gives directions over the phone (*"はい、みどり図書館です。本田駅から12番のバスに乗って... 白い建物です"* - L23).
+- **Target Folder**: `public/images/characters/librarian/`
+- **`neutral.webp` Prompt**:
+  > `Japanese anime visual novel bust-up character avatar, clean modern slice-of-life anime style inspired by Kyoto Animation, centered front-facing head-and-shoulders portrait of a gentle 28-year-old Japanese female public library desk clerk (図書館の人), soft dark-brown hair held in a neat tortoiseshell clip, thoughtful dark eyes behind delicate round bronze wire-rimmed glasses, calm serene closed-mouth smile, wearing a warm oatmeal-beige knit cardigan over a light-sage-green collared shirt. Crisp cel-shaded lineart, isolated on solid pure #FFFFFF white background, no background, no text, 1:1 square.`
+- **`talking.webp` Edit**:
+  > `Keep the exact same character face, hair, glasses, clothing, pose, lineart, and pure white background unchanged; change the expression to a soft-spoken reassuring open-mouth speaking smile giving courteous directions.`
 
 ---
 
-### 49. `49-supermarket-spice-aisle.webp` (Lesson 10 — `ナンプラー、ありますか`)
-> **Prompt:**
-> `Japanese anime visual novel background art of a clean, brightly lit Japanese neighborhood supermarket interior looking down the condiments, sauces, and imported Asian ingredients aisle. Neat shelves stocked with colorful bottles of soy sauce, cooking oils, spices, curry boxes, and imported sauces, shiny linoleum floor reflecting warm-white store lights, fresh produce corner softly visible at the end of the aisle. Slice-of-life anime style, wide 16:9 composition, no people, no characters, no text.`
+#### 8. `nurse` — 看護師 (Clinic Nurse, Lesson 17)
+- **Role**: Clinic nurse at Kobe Hospital giving checkup instructions (*"上着を脱いでください。下着は脱がなくてもいいです"* - L17).
+- **Target Folder**: `public/images/characters/nurse/`
+- **`neutral.webp` Prompt**:
+  > `Japanese anime visual novel bust-up character avatar, clean modern slice-of-life anime style inspired by Kyoto Animation, centered front-facing head-and-shoulders portrait of a compassionate 27-year-old Japanese clinic nurse (看護師), clean jet-black hair tied back neatly in a tidy ponytail with side bangs, gentle reassuring dark eyes, warm comforting closed-mouth smile, wearing a modern clinical medical scrub top in soft pastel aqua-mint with a neat white V-neck trim, small clinic badge clip on the chest. Crisp cel-shaded lineart, isolated on solid pure #FFFFFF white background, no background, no text, 1:1 square.`
+- **`talking.webp` Edit**:
+  > `Keep the exact same character face, hair, scrub top, pose, lineart, and pure white background unchanged; change the expression to a gentle comforting open-mouth speaking smile giving clear clinical instructions to a patient.`
 
 ---
 
-### 50. `50-japan-post-office.webp` (Lesson 11 — `これ、お願いします`)
-> **Prompt:**
-> `Japanese anime visual novel background art of a friendly neighborhood Japanese post office interior during daytime. Clean service counter with a digital parcel weighing scale, neat racks of envelopes and cardboard shipping boxes, subtle red-and-white postal color accents, potted plant by the glass entrance door letting in warm daylight. Kyoto Animation slice-of-life style, wide 16:9 composition, no people, no characters, no text.`
+#### 9. `kobayashi` — 小林 (Japanese Friend / Classmate, Lessons 20 & 23)
+- **Role**: Casual Japanese university friend who speaks in plain form with Thawaphon (*"夏休みは国へ帰る？富士山に登ったことある？じゃ、いっしょに行かない？"* - L20).
+- **Target Folder**: `public/images/characters/kobayashi/`
+- **`neutral.webp` Prompt**:
+  > `Japanese anime visual novel bust-up character avatar, clean modern slice-of-life anime style inspired by Kyoto Animation, centered front-facing head-and-shoulders portrait of Kobayashi (小林), a relaxed 21-year-old Japanese male university student and classmate, slightly messy textured short dark hair, youthful expressive brown eyes, easygoing friendly closed-mouth smirk/smile, wearing a casual dark-heather-grey zip hoodie over a crisp white crew-neck T-shirt. Crisp cel-shaded lineart, isolated on solid pure #FFFFFF white background, no background, no text, 1:1 square.`
+- **`talking.webp` Edit**:
+  > `Keep the exact same character face, hair, hoodie, pose, lineart, and pure white background unchanged; change the expression to a casual energetic open-mouth speaking grin chatting with a close friend in plain form.`
 
 ---
 
-### 51. `51-kyoto-gion-matsuri.webp` (Lesson 12 — `祇園祭はどうでしたか`)
-> **Prompt:**
-> `Japanese anime visual novel background art of a magical summer evening street in Kyoto during the Gion Matsuri festival. Towering traditional wooden Yamaboko festival floats adorned with glowing rows of warm paper komagata lanterns and rich tapestries, warm golden lantern light reflecting against twilight indigo summer sky, traditional machiya wooden storefronts along the street. Makoto Shinkai / Kyoto Animation lighting, wide 16:9 composition, no people, no characters, no text.`
+#### 10. `nakamura` — 中村 (Office Colleague, Lesson 11)
+- **Role**: Office coworker conversing about driving home to Kagoshima for the holidays (*"8月に1週間ぐらい鹿児島へ帰ります。車で帰ります"* - L11).
+- **Target Folder**: `public/images/characters/nakamura/`
+- **`neutral.webp` Prompt**:
+  > `Japanese anime visual novel bust-up character avatar, clean modern slice-of-life anime style inspired by Kyoto Animation, centered front-facing head-and-shoulders portrait of Nakamura (中村), a friendly 31-year-old Japanese male office coworker, neat side-parted straight dark hair, pleasant dark eyes, approachable closed-mouth grin, wearing a clean business-casual light-blue button-down oxford shirt with open collar (no tie) and medium-grey trousers. Crisp cel-shaded lineart, isolated on solid pure #FFFFFF white background, no background, no text, 1:1 square.`
+- **`talking.webp` Edit**:
+  > `Keep the exact same character face, hair, shirt, pose, lineart, and pure white background unchanged; change the expression to a lively open-mouth speaking smile sharing personal holiday plans with coworkers.`
 
 ---
 
-### 52. `52-teishoku-lunch-cashier.webp` (Lesson 13 — `別々にお願いします`)
-> **Prompt:**
-> `Japanese anime visual novel background art of a cozy Japanese office-district lunch restaurant interior near the wooden cashier counter at midday. Warm cedar wood paneling, neat dining tables in the background, traditional noren curtain, small wooden register counter with a tray for bills and toothpicks, bright inviting daytime light through lattice windows. Slice-of-life anime style, wide 16:9 composition, no people, no characters, no text.`
+#### 11. `lopez` — ロペス (International Colleague from Mexico, Lesson 16)
+- **Role**: International colleague from Veracruz, Mexico describing his hometown (*"メキシコのベラクルスから来ました。海が近くて、きれいな所です"* - L16).
+- **Target Folder**: `public/images/characters/lopez/`
+- **`neutral.webp` Prompt**:
+  > `Japanese anime visual novel bust-up character avatar, clean modern slice-of-life anime style inspired by Kyoto Animation, centered front-facing head-and-shoulders portrait of Lopez (ロペス), an affable 27-year-old Mexican male technical trainee in Japan, thick short wavy dark-brown hair, warm sun-kissed tan skin, expressive dark-hazel eyes, broad sincere closed-mouth smile, wearing a smart casual navy-blue polo shirt with subtle white collar tipping. Crisp cel-shaded lineart, isolated on solid pure #FFFFFF white background, no background, no text, 1:1 square.`
+- **`talking.webp` Edit**:
+  > `Keep the exact same character face, hair, polo shirt, pose, lineart, and pure white background unchanged; change the expression to an enthusiastic proud open-mouth speaking smile describing his beautiful seaside hometown.`
 
 ---
 
-### 53. `53-japanese-taxi-interior.webp` (Lesson 14 — `みどり町までお願いします`)
-> **Prompt:**
-> `Japanese anime visual novel background art seen from the back passenger seat of a classic clean Japanese city taxi looking forward toward a sunlit urban intersection with a traffic light and tree-lined avenue ahead. Neat white lace headrest covers on the front seats, dashboard meter glowing softly, clean windshield framing a bright Japanese neighborhood street corner for turning right. Kyoto Animation style, wide 16:9 composition, no driver, no people, no text.`
-
----
-
-### 54. `54-office-breakroom-lounge.webp` (Lessons 15, 18, 20 — `ご家族は？` / `趣味は何ですか`)
-> **Prompt:**
-> `Japanese anime visual novel background art of a sunny, relaxing corporate office breakroom and coffee lounge. Round cafe-style tables with modern chairs, a counter with an espresso machine and beverage vending machine, large window overlooking green trees and city buildings in warm afternoon sun, relaxed conversational atmosphere. Kyoto Animation slice-of-life style, wide 16:9 composition, no people, no characters, no text.`
-
----
-
-### 55. `55-japanese-bank-atm.webp` (Lesson 16 — `使い方を教えてください`)
-> **Prompt:**
-> `Japanese anime visual novel background art of a clean, modern Japanese bank ATM lobby corner during daytime. Row of sleek blue-and-white touchscreen ATM terminals separated by privacy partitions, small writing stand with envelopes, bright glass entrance doors showing a sunny city sidewalk outside, clean reassuring atmosphere. Modern anime background art, wide 16:9 composition, no people, no characters, no text.`
-
----
-
-### 56. `56-company-buffet-party.webp` (Lesson 19 — `ダイエットはあしたからします`)
-> **Prompt:**
-> `Japanese anime visual novel background art of a cheerful hotel banquet room set up for an international exchange or company buffet party. Long white-clothed buffet tables arranged with platters of sushi, hors d'oeuvres, salads, fruit, and desserts, warm golden chandelier lighting, tall draped windows at evening, festive yet refined atmosphere. Kyoto Animation style, wide 16:9 composition, no people, no characters, no text.`
-
----
-
-### 57. `57-summer-hanabi-riverside.webp` (Lesson 20 — `いっしょに行かない？`)
-> **Prompt:**
-> `Japanese anime visual novel background art of a scenic Japanese riverside embankment at summer dusk during a fireworks festival. Colorful bursts of golden and magenta hanabi fireworks blooming in the deep purple-blue evening sky, shimmering reflections across the wide river water, warm festival paper lanterns glowing along the grassy riverbank path. Makoto Shinkai inspired lighting, wide 16:9 composition, no people, no characters, no text.`
-
----
-
-### 58. `58-real-estate-office.webp` (Lesson 22 — `どんな部屋をお探しですか`)
-> **Prompt:**
-> `Japanese anime visual novel background art of a bright, welcoming Japanese neighborhood real estate agency (fudosanya) interior. Consultation desk with chairs and a neat tablet/catalog binder, glass storefront window lined with colorful apartment floor-plan listing cards (madori diagrams without legible text), small potted plant, sunny residential shopping street visible outside. Slice-of-life anime style, wide 16:9 composition, no people, no characters, no text.`
-
----
-
-### 59. `59-public-library-counter.webp` (Lesson 23 — `どうやって行きますか`)
-> **Prompt:**
-> `Japanese anime visual novel background art of a sunlit modern Japanese municipal public library interior near the main circulation and information counter. Warm natural wood reception desk with a barcode scanner, tall organized wooden bookshelves stretching into the background, sunlit reading tables by large windows overlooking park greenery, quiet peaceful atmosphere. Kyoto Animation style, wide 16:9 composition, no people, no characters, no text.`
-
----
-
-### 60. `60-apartment-moving-day.webp` (Lessons 24 & 25 — `手伝いに行きましょうか` / `いろいろお世話になりました`)
-> **Prompt:**
-> `Japanese anime visual novel background art of a bright Japanese apartment room on moving day. Polished light-wood floor with neatly stacked taped cardboard moving boxes, bubble-wrapped items, a rolled rug leaning near the closet, open balcony window letting in crisp morning sunlight and a gentle breeze, bittersweet hopeful farewell and new-beginning mood. Makoto Shinkai / Kyoto Animation style, wide 16:9 composition, no people, no characters, no text.`
+### Ingestion Workflow Once Generated
+Whenever you generate the PNGs:
+1. Drop them into `src/data/tmp/` as `<id>-neutral.png` and `<id>-talking.png`.
+2. Run `python3 scripts/process-mnn-avatars.py` — it will strip backgrounds with `rembg`, resize them to $512\times512$ WebP, place them into `public/images/characters/<id>/`, and clean up `tmp/`.

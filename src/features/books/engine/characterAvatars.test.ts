@@ -10,9 +10,9 @@ import {
 } from "./characterAvatars";
 
 describe("characterAvatars registry", () => {
-  it("registers all 53 character avatars across Genki and Minna no Nihongo", () => {
+  it("registers all 64 character avatars across Genki and Minna no Nihongo", () => {
     const all = getAllCharacterAvatars();
-    expect(all).toHaveLength(53);
+    expect(all).toHaveLength(64);
 
     const expectedGenkiIds = [
       "mary-hart",
@@ -60,6 +60,17 @@ describe("characterAvatars registry", () => {
       "post-office-clerk",
       "real-estate-agent",
       "taxi-driver",
+      "caretaker",
+      "man",
+      "woman",
+      "receptionist",
+      "reporter",
+      "host",
+      "librarian",
+      "nurse",
+      "kobayashi",
+      "nakamura",
+      "lopez",
     ];
 
     for (const id of expectedServiceRoles) {

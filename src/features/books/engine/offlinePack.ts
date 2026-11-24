@@ -1,9 +1,6 @@
 import { STATIC_BOOK_DIALOGUE_AUDIO_MAP } from "@/data/book-dialogues-audio.generated";
 import { getAllCharacterAvatars } from "./characterAvatars";
-import {
-  GENKI_DIALOGUE_BACKGROUND_IDS,
-  getDialogueBackground,
-} from "./dialogueBackgrounds";
+import { ALL_DIALOGUE_BACKGROUNDS } from "./dialogueBackgrounds";
 
 const TEXTBOOK_DATA_URLS = [
   "/data/v1/books/genki-1.json",
@@ -27,9 +24,8 @@ export function collectTextbookOfflineAssetUrls(): string[] {
     ...TEXTBOOK_COVER_URLS,
   ]);
 
-  for (const sceneId of Object.keys(GENKI_DIALOGUE_BACKGROUND_IDS)) {
-    const bgUrl = getDialogueBackground(sceneId);
-    if (bgUrl) urls.add(bgUrl);
+  for (const bgId of ALL_DIALOGUE_BACKGROUNDS) {
+    urls.add(`/images/books/backgrounds/${bgId}.webp`);
   }
 
   for (const avatar of getAllCharacterAvatars()) {

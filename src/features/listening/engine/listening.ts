@@ -188,12 +188,13 @@ function meaningsOverlap(a: VocabularyRecord, b: VocabularyRecord): boolean {
 }
 
 /**
- * Extracts clean listening sentences from graded stories (with static MP3 paths)
- * and JLPT vocabulary examples.
+ * Extracts clean listening sentences from graded stories (with static MP3 paths),
+ * JLPT vocabulary examples, and authentic textbook dialogue lines.
  */
 export function extractListeningSentences(
   vocabulary: VocabularyRecord[] = [],
-  stories: StoryRecord[] = []
+  stories: StoryRecord[] = [],
+  textbookLines: ListeningSentenceItem[] = []
 ): ListeningSentenceItem[] {
   const items: ListeningSentenceItem[] = [];
   const seenJa = new Set<string>();
@@ -265,6 +266,24 @@ export function extractListeningSentences(
         ...(audioSrc ? { audioSrc } : {}),
       });
     }
+  }
+
+  // 3. Textbook dialogue sentences (have authentic character voice audio)
+  for (const tb of textbookLines) {
+    const cleanJa = cleanSentenceForAudio(tb.ja || "");
+    const en = (tb.en || "").trim();
+    if (!cleanJa || !en || cleanJa.length < 3) continue;
+    if (seenJa.has(cleanJa)) continue;
+    seenJa.add(cleanJa);
+
+    items.push({
+      id: tb.id,
+      ja: cleanJa,
+      reading: tb.reading || cleanJa,
+      en,
+      jlpt: tb.jlpt ?? 5,
+      ...(tb.audioSrc ? { audioSrc: tb.audioSrc } : {}),
+    });
   }
 
   // Strictly filter to sentences with pre-generated neural audio when available
@@ -404,7 +423,11 @@ function extractSentenceKeywords(item: ListeningSentenceItem): {
   enNames: string[];
   jaNames: string[];
 } {
-  const storySlug = item.id.startsWith("story:") ? item.id.split(":")[1] : null;
+  const storySlug = item.id.startsWith("story:")
+    ? item.id.split(":")[1]
+    : item.id.startsWith("tb:")
+      ? item.id.split(":").slice(0, 3).join(":")
+      : null;
   const enNames: string[] = [];
   const jaNames: string[] = [];
 

@@ -71,14 +71,193 @@ export const GENKI_DIALOGUE_BACKGROUND_IDS: Record<string, string> = {
   "l23-scene-iii": "40-airport-departure-gate",
 };
 
+export const MNN_DIALOGUE_BACKGROUND_IDS: Record<string, string> = {
+  // Lesson 1: IMC Office
+  "mnn-l1-scene-i": "imc-office-day",
+  "mnn-l1-scene-ii": "imc-office-day",
+  "mnn-l1-scene-iii": "imc-office-day",
+  "mnn-l1-scene-iv": "imc-office-day",
+
+  // Lesson 2: Apartment moving day
+  "mnn-l2-scene-i": "apartment-moving-day",
+  "mnn-l2-scene-ii": "apartment-hallway-genkan",
+  "mnn-l2-scene-iii": "imc-office-day",
+  "mnn-l2-scene-iv": "imc-office-day",
+
+  // Lesson 3: Department store wine
+  "mnn-l3-scene-i": "department-store-wine",
+  "mnn-l3-scene-ii": "department-store-wine",
+  "mnn-l3-scene-iii": "imc-office-day",
+  "mnn-l3-scene-iv": "department-store-wine",
+
+  // Lesson 4: Office breakroom & Art Museum
+  "mnn-l4-scene-i": "office-breakroom-lounge",
+  "mnn-l4-scene-ii": "art-museum-plaza",
+  "mnn-l4-scene-iii": "office-breakroom-lounge",
+  "mnn-l4-scene-iv": "office-breakroom-lounge",
+
+  // Lesson 5: Train platform to Koshien
+  "mnn-l5-scene-i": "koshien-train-platform",
+  "mnn-l5-scene-ii": "osaka-castle-sakura",
+  "mnn-l5-scene-iii": "office-breakroom-lounge",
+  "mnn-l5-scene-iv": "imc-office-day",
+
+  // Lesson 6: Osaka Castle Cherry Blossoms
+  "mnn-l6-scene-i": "osaka-castle-sakura",
+  "mnn-l6-scene-ii": "osaka-castle-sakura",
+  "mnn-l6-scene-iii": "teishoku-lunch-cashier",
+  "mnn-l6-scene-iv": "osaka-castle-sakura",
+
+  // Lesson 7: Yamada living room
+  "mnn-l7-scene-i": "yamada-living-room-day",
+  "mnn-l7-scene-ii": "yamada-living-room-day",
+  "mnn-l7-scene-iii": "yamada-living-room-day",
+  "mnn-l7-scene-iv": "yamada-living-room-day",
+
+  // Lesson 8: Yamada living room / life in Japan
+  "mnn-l8-scene-i": "yamada-living-room-day",
+  "mnn-l8-scene-ii": "office-breakroom-lounge",
+  "mnn-l8-scene-iii": "department-store-wine",
+  "mnn-l8-scene-iv": "yamada-living-room-day",
+
+  // Lesson 9: Classical concert hall
+  "mnn-l9-scene-i": "concert-hall-lobby",
+  "mnn-l9-scene-ii": "concert-hall-lobby",
+  "mnn-l9-scene-iii": "office-breakroom-lounge",
+  "mnn-l9-scene-iv": "concert-hall-lobby",
+
+  // Lesson 10: Supermarket Asia Store & Reception party
+  "mnn-l10-scene-i": "supermarket-spice-aisle",
+  "mnn-l10-scene-ii": "japanese-bank-atm",
+  "mnn-l10-scene-iii": "supermarket-spice-aisle",
+  "mnn-l10-scene-iv": "company-buffet-party",
+
+  // Lesson 11: Japan post office & apartment caretaker
+  "mnn-l11-scene-i": "japan-post-office",
+  "mnn-l11-scene-ii": "apartment-hallway-genkan",
+  "mnn-l11-scene-iii": "japan-post-office",
+  "mnn-l11-scene-iv": "japan-post-office",
+
+  // Lesson 12: Kyoto Gion matsuri & caretaker
+  "mnn-l12-scene-i": "apartment-hallway-genkan",
+  "mnn-l12-scene-ii": "kyoto-gion-matsuri",
+  "mnn-l12-scene-iii": "kyoto-gion-matsuri",
+  "mnn-l12-scene-iv": "kyoto-gion-matsuri",
+
+  // Lesson 13: TV Street Interview / breakroom
+  "mnn-l13-scene-i": "office-breakroom-lounge",
+  "mnn-l13-scene-ii": "osaka-castle-sakura",
+  "mnn-l13-scene-iii": "teishoku-lunch-cashier",
+  "mnn-l13-scene-iv": "office-breakroom-lounge",
+
+  // Lesson 14: Teishoku lunch cashier
+  "mnn-l14-scene-i": "teishoku-lunch-cashier",
+  "mnn-l14-scene-ii": "teishoku-lunch-cashier",
+  "mnn-l14-scene-iii": "teishoku-lunch-cashier",
+  "mnn-l14-scene-iv": "teishoku-lunch-cashier",
+
+  // Lesson 15: Public library counter
+  "mnn-l15-scene-i": "public-library-counter",
+  "mnn-l15-scene-ii": "public-library-counter",
+  "mnn-l15-scene-iii": "public-library-counter",
+  "mnn-l15-scene-iv": "public-library-counter",
+
+  // Lesson 16: Japanese bank ATM & company buffet party
+  "mnn-l16-scene-i": "japanese-bank-atm",
+  "mnn-l16-scene-ii": "japanese-bank-atm",
+  "mnn-l16-scene-iii": "office-breakroom-lounge",
+  "mnn-l16-scene-iv": "company-buffet-party",
+
+  // Lesson 17: Real estate agency office
+  "mnn-l17-scene-i": "real-estate-office",
+  "mnn-l17-scene-ii": "real-estate-office",
+  "mnn-l17-scene-iii": "real-estate-office",
+  "mnn-l17-scene-iv": "real-estate-office",
+
+  // Lesson 18: Breakroom & hobby talk
+  "mnn-l18-scene-i": "office-breakroom-lounge",
+  "mnn-l18-scene-ii": "office-breakroom-lounge",
+  "mnn-l18-scene-iii": "office-breakroom-lounge",
+  "mnn-l18-scene-iv": "office-breakroom-lounge",
+
+  // Lesson 19: Teishoku lunch & tea ceremony
+  "mnn-l19-scene-i": "teishoku-lunch-cashier",
+  "mnn-l19-scene-ii": "teishoku-lunch-cashier",
+  "mnn-l19-scene-iii": "yamada-living-room-day",
+  "mnn-l19-scene-iv": "teishoku-lunch-cashier",
+
+  // Lesson 20: Breakroom & casual talk
+  "mnn-l20-scene-i": "office-breakroom-lounge",
+  "mnn-l20-scene-ii": "office-breakroom-lounge",
+  "mnn-l20-scene-iii": "office-breakroom-lounge",
+  "mnn-l20-scene-iv": "office-breakroom-lounge",
+
+  // Lesson 21: Summer Hanabi Riverside fireworks
+  "mnn-l21-scene-i": "summer-hanabi-riverside",
+  "mnn-l21-scene-ii": "summer-hanabi-riverside",
+  "mnn-l21-scene-iii": "summer-hanabi-riverside",
+  "mnn-l21-scene-iv": "summer-hanabi-riverside",
+
+  // Lesson 22: Real estate office apartment hunt
+  "mnn-l22-scene-i": "real-estate-office",
+  "mnn-l22-scene-ii": "real-estate-office",
+  "mnn-l22-scene-iii": "apartment-hallway-genkan",
+  "mnn-l22-scene-iv": "real-estate-office",
+
+  // Lesson 23: Public library counter & road directions
+  "mnn-l23-scene-i": "public-library-counter",
+  "mnn-l23-scene-ii": "public-library-counter",
+  "mnn-l23-scene-iii": "office-breakroom-lounge",
+  "mnn-l23-scene-iv": "public-library-counter",
+
+  // Lesson 24 & 25: Japanese taxi ride & farewell
+  "mnn-l24-scene-i": "japanese-taxi-interior",
+  "mnn-l24-scene-ii": "japanese-taxi-interior",
+  "mnn-l24-scene-iii": "imc-office-day",
+  "mnn-l24-scene-iv": "japanese-taxi-interior",
+
+  "mnn-l25-scene-i": "japanese-taxi-interior",
+  "mnn-l25-scene-ii": "company-buffet-party",
+  "mnn-l25-scene-iii": "imc-office-day",
+  "mnn-l25-scene-iv": "company-buffet-party",
+};
+
+export const ALL_DIALOGUE_BACKGROUNDS = Array.from(
+  new Set([
+    ...Object.values(GENKI_DIALOGUE_BACKGROUND_IDS),
+    ...Object.values(MNN_DIALOGUE_BACKGROUND_IDS),
+  ])
+);
+
 /**
- * Resolves a dialogue scene ID (e.g. "l1-scene-i") to its WebP background URL,
- * or null if no custom background is registered for that scene.
+ * Resolves a dialogue scene ID (e.g. "l1-scene-i" or "mnn-l1-scene-i") or background name
+ * to its WebP background URL, or null if no custom background is registered.
  */
-export function getDialogueBackground(sceneId: string): string | null {
+export function getDialogueBackground(sceneId: string, bookId?: string): string | null {
   if (!sceneId) return null;
   const normalized = sceneId.trim().toLowerCase();
-  const bgId = GENKI_DIALOGUE_BACKGROUND_IDS[normalized];
-  if (!bgId) return null;
-  return `${BG_BASE}/${bgId}.webp`;
+
+  // 1. Direct background name match (e.g. "apartment-hallway-genkan")
+  if (ALL_DIALOGUE_BACKGROUNDS.includes(normalized)) {
+    return `${BG_BASE}/${normalized}.webp`;
+  }
+
+  // 2. Explicit MNN lookup if bookId is mnn-1 or id starts with mnn-
+  if (bookId === "mnn-1" || normalized.startsWith("mnn-")) {
+    const mnnKey = normalized.startsWith("mnn-") ? normalized : `mnn-${normalized}`;
+    const mnnBg = MNN_DIALOGUE_BACKGROUND_IDS[mnnKey] || MNN_DIALOGUE_BACKGROUND_IDS[normalized];
+    if (mnnBg) return `${BG_BASE}/${mnnBg}.webp`;
+  }
+
+  // 3. Genki scene mapping
+  const genkiBg = GENKI_DIALOGUE_BACKGROUND_IDS[normalized];
+  if (genkiBg) return `${BG_BASE}/${genkiBg}.webp`;
+
+  // 4. MNN scene mapping fallback
+  const mnnFallback =
+    MNN_DIALOGUE_BACKGROUND_IDS[`mnn-${normalized}`] ||
+    MNN_DIALOGUE_BACKGROUND_IDS[normalized];
+  if (mnnFallback) return `${BG_BASE}/${mnnFallback}.webp`;
+
+  return null;
 }
