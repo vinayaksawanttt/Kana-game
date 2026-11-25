@@ -1,0 +1,65 @@
+{
+  "l15-scene-iv-3": {
+    "style": "normal",
+    "phrasedJa": "会社員です。コンピューターソフトの会社で働いています。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l15-scene-iv-4": {
+    "style": "warm",
+    "phrasedJa": "よろしくお願いします。",
+    "speedScale": 0.94,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.05
+  },
+  "l15-scene-iv-5": {
+    "style": "cheerful",
+    "phrasedJa": "皆さん、こんにちは。みんなのインタビューの時間です。お名前は？",
+    "speedScale": 1.04,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.2
+  },
+  "l15-scene-iv-6": {
+    "style": "normal",
+    "phrasedJa": "ワットです。イギリスから来ました。",
+    "speedScale": 0.98,
+    "intonationScale": 1.08,
+    "tempoDynamicsScale": 1.0
+  },
+  "l15-scene-iv-7": {
+    "style": "cheerful",
+    "phrasedJa": "お仕事は？",
+    "speedScale": 1.0,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.1
+  },
+  "l15-scene-iv-8": {
+    "style": "normal",
+    "phrasedJa": "教師です。大学で英語を教えています。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l15-scene-iv-10": {
+    "style": "cheerful",
+    "phrasedJa": "皆さん、こんにちは。みんなのインタビューの時間です。お名前は？",
+    "speedScale": 1.04,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.2
+  },
+  "l15-scene-iv-12": {
+    "style": "cheerful",
+    "phrasedJa": "お仕事は？",
+    "speedScale": 1.0,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.1
+  },
+  "l15-scene-iv-14": {
+    "style": "warm",
+    "phrasedJa": "よろしくお願いします。",
+    "speedScale": 0.94,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.05
+  }
+}

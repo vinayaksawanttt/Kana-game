@@ -1223,7 +1223,7 @@ def synthesize_with_voicevox(spoken_ja, profile, emotion_meta, out_opus_path):
 # 7. Hybrid Multi-Engine Router
 # ---------------------------------------------------------------------------
 
-def synthesize_hybrid_line(task, profile, emotion_meta, gemini_keys, kenpath_key, kenpath_state, aivis_up, voicevox_up):
+def synthesize_hybrid_line(task, profile, emotion_meta, gemini_keys, aivis_up, voicevox_up):
     raw_cleaned = clean_spoken_text(task["ja"])
     phrased = clean_spoken_text(emotion_meta.get("phrasedJa") or raw_cleaned)
     # Guard against director hallucinating different length text
@@ -1244,21 +1244,15 @@ def synthesize_hybrid_line(task, profile, emotion_meta, gemini_keys, kenpath_key
         )
         return True, "Silence(0.5s)"
 
-    # Engine Priority Order based on Character Profile
+    # Engine Priority Order based on Character Profile (Gemini TTS -> AivisSpeech -> VOICEVOX)
     if profile["primary"] == "aivis":
-        engine_order = ["aivis", "voicevox", "gemini", "kenpath"]
-    elif profile["primary"] == "kenpath":
-        engine_order = ["kenpath", "gemini", "aivis", "voicevox"]
+        engine_order = ["aivis", "gemini", "voicevox"]
     else:
-        engine_order = ["gemini", "kenpath", "aivis", "voicevox"]
+        engine_order = ["gemini", "aivis", "voicevox"]
 
     for eng in engine_order:
         if eng == "gemini":
             ok, label = synthesize_with_gemini(spoken_ja, profile["gemini_voice"], out_abs, gemini_keys)
-            if ok:
-                return True, label
-        elif eng == "kenpath":
-            ok, label = synthesize_with_kenpath(spoken_ja, profile["kenpath_voice"], out_abs, kenpath_key, kenpath_state)
             if ok:
                 return True, label
         elif eng == "aivis" and aivis_up:
@@ -1279,18 +1273,16 @@ def synthesize_hybrid_line(task, profile, emotion_meta, gemini_keys, kenpath_key
 
 def main():
     print("=" * 76)
-    print("  Hybrid 4-Engine Dialogue Audio Generator + Gemini Emotion Director")
+    print("  Hybrid 3-Engine Dialogue Audio Generator (Gemini TTS + AivisSpeech + VOICEVOX)")
     print("=" * 76)
 
-    gemini_keys, kenpath_key = load_env_keys()
-    kenpath_state = check_kenpath_status(kenpath_key)
+    gemini_keys, _ = load_env_keys()
     aivis_up = is_local_engine_running(AIVIS_URL)
     voicevox_up = is_local_engine_running(VOICEVOX_URL)
 
     print(f"  [1] Gemini TTS Pool   : {len(gemini_keys)} API keys x {len(GEMINI_TTS_MODELS)} models = {len(gemini_keys) * len(GEMINI_TTS_MODELS)} buckets")
-    print(f"  [2] Kenpath Labs API  : {'ONLINE' if kenpath_state['available'] else 'OFFLINE'} ({kenpath_state['characters_remaining']:,} chars remaining, 6 JA voices)")
-    print(f"  [3] AivisSpeech Local : {'ONLINE' if aivis_up else 'OFFLINE'} ({AIVIS_URL}, 18 speakers)")
-    print(f"  [4] VOICEVOX Local    : {'ONLINE' if voicevox_up else 'OFFLINE'} ({VOICEVOX_URL}, 44 speakers)")
+    print(f"  [2] AivisSpeech Local : {'ONLINE' if aivis_up else 'OFFLINE'} ({AIVIS_URL}, 18 neural speakers)")
+    print(f"  [3] VOICEVOX Local    : {'ONLINE' if voicevox_up else 'OFFLINE'} ({VOICEVOX_URL}, 44 speakers)")
     print("=" * 76)
 
     only_mnn = "--mnn" in sys.argv
@@ -1392,8 +1384,6 @@ def main():
                 profile,
                 emotion_meta,
                 gemini_keys,
-                kenpath_key,
-                kenpath_state,
                 aivis_up,
                 voicevox_up,
             )
