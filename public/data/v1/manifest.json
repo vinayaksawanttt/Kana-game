@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-11-24T17:57:13.732Z",
-  "bundleHash": "50c0368bd2f9",
+  "generatedAt": "2026-11-25T14:41:41.635Z",
+  "bundleHash": "76845e9229e5",
   "assets": {
     "books/genki-1.json": {
       "hash": "865eeac6e82b",
@@ -16,8 +16,8 @@
       "bytes": 1929
     },
     "books/mnn-1.json": {
-      "hash": "f8d1ebdd0dc7",
-      "bytes": 1906696
+      "hash": "40f6548a7151",
+      "bytes": 1909497
     },
     "dictionary-index.json": {
       "hash": "3d98ac74562d",

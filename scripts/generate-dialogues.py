@@ -530,9 +530,9 @@ def map_character_profile(speaker_en, speaker_ja):
         return {
             "character": "Thawaphon",
             "primary": "gemini",
-            "gemini_voice": "Puck",
+            "gemini_voice": "Algieba",  # Smooth young male voice (replaces feminine Puck)
             "kenpath_voice": KENPATH_VOICES["ren"],
-            "aivis_key": "kohaku",
+            "aivis_key": "m1",          # Young male AivisSpeech model (replaces female child kohaku)
             "aivis_style": "normal",
             "voicevox_id": 12,  # 白上虎太郎
             "base_speed": 1.0,
