@@ -256,18 +256,372 @@ def resolve_aivis_style_id(speaker_key, default_style, director_style):
     return styles.get(default_style, next(iter(styles.values())))
 
 
-def map_character_profile(speaker_en, speaker_ja):
+def map_character_profile(speaker_en, speaker_ja, book_id=""):
     """
-    Maps each character to their 4-Engine Voice Profile:
-      - primary: 'gemini' (or 'aivis' for child voices where Gemini has no child model)
+    Maps each character to their Multi-Engine Voice Profile:
+      - primary: 'gemini' | 'aivis' | 'voicevox' | 'kenpath' | 'edge'
       - gemini_voice: Prebuilt Gemini TTS voice name
       - kenpath_voice: Kenpath Labs native Japanese voice ID
       - aivis_key / aivis_default_style: Local AivisSpeech speaker & style
-      - voicevox_id: Local VOICEVOX speaker style ID
-      - base_speed / base_pitch / base_intonation: Persona baseline tuning
+      - edge_voice: Edge TTS neural voice name
     """
     norm_en = (speaker_en or "").lower().strip()
-    norm_ja = (speaker_ja or "").lower().strip()
+    norm_ja = (speaker_ja or "").strip()
+
+    # -----------------------------------------------------------------------
+    # Minna no Nihongo II (mnn-2) Specific New Cast & Side Roles (User-Locked)
+    # -----------------------------------------------------------------------
+    if book_id == "mnn-2":
+        # 1. Yasuo Suzuki (鈴木 / 鈴木康男) -> Edge TTS (ja-JP-KeitaNeural)
+        if "鈴木" in norm_ja or "suzuki" in norm_en:
+            return {
+                "character": "Yasuo Suzuki",
+                "primary": "edge",
+                "allowed_engines": ["edge"],
+                "edge_voice": "ja-JP-KeitaNeural",
+                "gemini_voice": "Charon",
+                "kenpath_voice": KENPATH_VOICES["ren"],
+                "aivis_key": "sawabaru",
+                "aivis_style": "normal",
+                "voicevox_id": 11,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.05,
+            }
+
+        # 2. Akiko Nakamura (中村課長 / 中村秋子) -> Edge TTS (ja-JP-NanamiNeural)
+        if "中村" in norm_ja or "nakamura" in norm_en:
+            return {
+                "character": "Akiko Nakamura",
+                "primary": "edge",
+                "allowed_engines": ["edge"],
+                "edge_voice": "ja-JP-NanamiNeural",
+                "gemini_voice": "Sulafat",
+                "kenpath_voice": KENPATH_VOICES["emi"],
+                "aivis_key": "f1",
+                "aivis_style": "normal",
+                "voicevox_id": 2,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.05,
+            }
+
+        # 3. Hiroshi Ogawa (小川 / 小川博) -> VOICEVOX (id=13 青山龍星)
+        if ("小川" in norm_ja or "ogawa" in norm_en) and "よね" not in norm_ja and "yone" not in norm_en and "幸子" not in norm_ja and "sachiko" not in norm_en:
+            return {
+                "character": "Hiroshi Ogawa",
+                "primary": "voicevox",
+                "allowed_engines": ["voicevox"],
+                "gemini_voice": "Orus",
+                "kenpath_voice": KENPATH_VOICES["haruto"],
+                "aivis_key": "m1",
+                "aivis_style": "normal",
+                "voicevox_id": 13,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.05,
+            }
+
+        # 4. Yone Ogawa (小川よね) -> Gemini TTS (Gacrux)
+        if "よね" in norm_ja or "yone" in norm_en:
+            return {
+                "character": "Yone Ogawa",
+                "primary": "gemini",
+                "allowed_engines": ["gemini"],
+                "gemini_voice": "Gacrux",
+                "kenpath_voice": KENPATH_VOICES["emi"],
+                "aivis_key": "mao",
+                "aivis_style": "calm",
+                "voicevox_id": 20,
+                "base_speed": 0.96,
+                "base_pitch": 0.0,
+                "base_intonation": 1.04,
+            }
+
+        # 5. Sachiko Ogawa (小川幸子) -> VOICEVOX (id=16 九州そら, faster pace)
+        if "幸子" in norm_ja or "sachiko" in norm_en:
+            return {
+                "character": "Sachiko Ogawa",
+                "primary": "voicevox",
+                "allowed_engines": ["voicevox"],
+                "gemini_voice": "Callirrhoe",
+                "kenpath_voice": KENPATH_VOICES["aoi"],
+                "aivis_key": "f2",
+                "aivis_style": "normal",
+                "voicevox_id": 16,
+                "base_speed": 1.15,  # User note: faster pace
+                "base_pitch": 0.0,
+                "base_intonation": 1.08,
+            }
+
+        # 6. Klara Schmidt (クララ) -> VOICEVOX (id=14 冥鳴ひまり)
+        if "クララ" in norm_ja or "klara" in norm_en or "clara" in norm_en:
+            return {
+                "character": "Klara Schmidt",
+                "primary": "voicevox",
+                "allowed_engines": ["voicevox"],
+                "gemini_voice": "Autonoe",
+                "kenpath_voice": KENPATH_VOICES["aoi"],
+                "aivis_key": "mao",
+                "aivis_style": "calm",
+                "voicevox_id": 14,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.06,
+            }
+
+        # 7. Chiseko Ito (伊藤先生) -> Gemini TTS (Achernar)
+        if "伊藤" in norm_ja or "ito" in norm_en:
+            return {
+                "character": "Chiseko Ito",
+                "primary": "gemini",
+                "allowed_engines": ["gemini"],
+                "gemini_voice": "Achernar",
+                "kenpath_voice": KENPATH_VOICES["aoi"],
+                "aivis_key": "morioki",
+                "aivis_style": "normal",
+                "voicevox_id": 16,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.06,
+            }
+
+        # 8. Akemi Watanabe (渡辺) -> Kenpath Labs (Mio: sv_9j2qx39f)
+        if "渡辺" in norm_ja or "watanabe" in norm_en:
+            return {
+                "character": "Akemi Watanabe",
+                "primary": "kenpath",
+                "allowed_engines": ["kenpath"],
+                "gemini_voice": "Aoede",
+                "kenpath_voice": KENPATH_VOICES["mio"],
+                "aivis_key": "kanae",
+                "aivis_style": "normal",
+                "voicevox_id": 8,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.06,
+            }
+
+        # 9. Toru Takahashi (高橋) -> VOICEVOX (id=12 白上虎太郎)
+        if "高橋" in norm_ja or "takahashi" in norm_en:
+            return {
+                "character": "Toru Takahashi",
+                "primary": "voicevox",
+                "allowed_engines": ["voicevox"],
+                "gemini_voice": "Zubenelgenubi",
+                "kenpath_voice": KENPATH_VOICES["ren"],
+                "aivis_key": "yukyu",
+                "aivis_style": "normal",
+                "voicevox_id": 12,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.05,
+            }
+
+        # 10. Makiko Hayashi (林) -> Gemini TTS (Zephyr)
+        if "林" in norm_ja or "hayashi" in norm_en:
+            return {
+                "character": "Makiko Hayashi",
+                "primary": "gemini",
+                "allowed_engines": ["gemini"],
+                "gemini_voice": "Zephyr",
+                "kenpath_voice": KENPATH_VOICES["mio"],
+                "aivis_key": "mai",
+                "aivis_style": "normal",
+                "voicevox_id": 8,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.08,
+            }
+
+        # 11. Hans Schmidt (ハンス) -> Gemini TTS (Puck)
+        if "ハンス" in norm_ja or "hans" in norm_en:
+            return {
+                "character": "Hans Schmidt",
+                "primary": "gemini",
+                "allowed_engines": ["gemini"],
+                "gemini_voice": "Puck",
+                "kenpath_voice": KENPATH_VOICES["mio"],
+                "aivis_key": "kohaku",
+                "aivis_style": "normal",
+                "voicevox_id": 12,
+                "base_speed": 1.02,
+                "base_pitch": 0.02,
+                "base_intonation": 1.10,
+            }
+
+        # 12. University Staff (大学職員) -> AivisSpeech (aida)
+        if "大学職員" in norm_ja or "university staff" in norm_en:
+            return {
+                "character": "University Staff",
+                "primary": "aivis",
+                "allowed_engines": ["aivis"],
+                "gemini_voice": "Sadaltager",
+                "kenpath_voice": KENPATH_VOICES["kenta"],
+                "aivis_key": "aida",
+                "aivis_style": "normal",
+                "voicevox_id": 53,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.04,
+            }
+
+        # 13. Hairdresser (美容師) -> AivisSpeech (kanae)
+        if "美容師" in norm_ja or "hairdresser" in norm_en:
+            return {
+                "character": "Hairdresser",
+                "primary": "aivis",
+                "allowed_engines": ["aivis"],
+                "gemini_voice": "Laomedeia",
+                "kenpath_voice": KENPATH_VOICES["aoi"],
+                "aivis_key": "kanae",
+                "aivis_style": "normal",
+                "voicevox_id": 2,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.08,
+            }
+
+        # 14. Tour Guide (ガイド) -> AivisSpeech (f1)
+        if "ガイド" in norm_ja or "guide" in norm_en:
+            return {
+                "character": "Tour Guide",
+                "primary": "aivis",
+                "allowed_engines": ["aivis"],
+                "gemini_voice": "Sadachbia",
+                "kenpath_voice": KENPATH_VOICES["mio"],
+                "aivis_key": "f1",
+                "aivis_style": "normal",
+                "voicevox_id": 30,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.08,
+            }
+
+        # 15. University President (学長) -> Kenpath Labs (Kenta: sv_71lsoipx)
+        if "学長" in norm_ja or "university president" in norm_en:
+            return {
+                "character": "University President",
+                "primary": "kenpath",
+                "allowed_engines": ["kenpath"],
+                "gemini_voice": "Rasalgethi",
+                "kenpath_voice": KENPATH_VOICES["kenta"],
+                "aivis_key": "shoujou",
+                "aivis_style": "normal",
+                "voicevox_id": 53,
+                "base_speed": 0.96,
+                "base_pitch": 0.0,
+                "base_intonation": 1.04,
+            }
+
+        # 16. Speaker A / Variation / Substitution 1 -> AivisSpeech (ginga)
+        if norm_en in ("a", "substitution 1", "variation 1") or norm_ja.startswith("a ") or norm_ja in ("a", "バリエーション1"):
+            return {
+                "character": "Speaker A",
+                "primary": "aivis",
+                "allowed_engines": ["aivis"],
+                "gemini_voice": "Fenrir",
+                "kenpath_voice": KENPATH_VOICES["ren"],
+                "aivis_key": "ginga",
+                "aivis_style": "normal",
+                "voicevox_id": 11,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.05,
+            }
+
+        # 17. Speaker B / Variation / Substitution 2 -> VOICEVOX (id=8 春日部つむぎ)
+        if norm_en in ("b", "substitution 2", "variation 2") or norm_ja.startswith("b ") or norm_ja in ("b", "バリエーション2"):
+            return {
+                "character": "Speaker B",
+                "primary": "voicevox",
+                "allowed_engines": ["voicevox"],
+                "gemini_voice": "Leda",
+                "kenpath_voice": KENPATH_VOICES["aoi"],
+                "aivis_key": "mai",
+                "aivis_style": "normal",
+                "voicevox_id": 8,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.08,
+            }
+
+        # 18. Announcer (アナウンサー) -> Izumi Kimura (Gemini Zephyr)
+        if "アナウンサー" in norm_ja or "announcer" in norm_en:
+            return {
+                "character": "Izumi Kimura",
+                "primary": "gemini",
+                "allowed_engines": ["gemini"],
+                "gemini_voice": "Zephyr",
+                "kenpath_voice": KENPATH_VOICES["aoi"],
+                "aivis_key": "f1",
+                "aivis_style": "normal",
+                "voicevox_id": 30,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.12,
+            }
+
+        # 19. Tea Teacher / Teacher / Participants
+        if "先生" in norm_ja or "teacher" in norm_en:
+            return {
+                "character": speaker_en or "Teacher",
+                "primary": "gemini",
+                "allowed_engines": ["gemini"],
+                "gemini_voice": "Gacrux",
+                "kenpath_voice": KENPATH_VOICES["emi"],
+                "aivis_key": "mao",
+                "aivis_style": "calm",
+                "voicevox_id": 20,
+                "base_speed": 0.98,
+                "base_pitch": 0.0,
+                "base_intonation": 1.04,
+            }
+
+        if "参加者1" in norm_ja or "participant 1" in norm_en:
+            return {
+                "character": "Participant 1",
+                "primary": "aivis",
+                "allowed_engines": ["aivis"],
+                "gemini_voice": "Fenrir",
+                "kenpath_voice": KENPATH_VOICES["ren"],
+                "aivis_key": "ginga",
+                "aivis_style": "normal",
+                "voicevox_id": 11,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.05,
+            }
+
+        if "参加者2" in norm_ja or "participant 2" in norm_en:
+            return {
+                "character": "Participant 2",
+                "primary": "voicevox",
+                "allowed_engines": ["voicevox"],
+                "gemini_voice": "Leda",
+                "kenpath_voice": KENPATH_VOICES["aoi"],
+                "aivis_key": "mai",
+                "aivis_style": "normal",
+                "voicevox_id": 8,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.08,
+            }
+
+        if "参加者全員" in norm_ja or "all participants" in norm_en:
+            return {
+                "character": "Everyone",
+                "primary": "gemini",
+                "allowed_engines": ["gemini"],
+                "gemini_voice": "Puck",
+                "kenpath_voice": KENPATH_VOICES["mio"],
+                "aivis_key": "kanae",
+                "aivis_style": "cheerful",
+                "voicevox_id": 2,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.15,
+            }
 
     # 1. Mike Miller (マイク・ミラー) - IMC Employee, USA (28, Male)
     if "ミラー" in norm_ja or "miller" in norm_en:
@@ -1129,14 +1483,9 @@ def synthesize_with_gemini(spoken_ja, voice_name, out_opus_path, gemini_keys):
     return False, "gemini-cooling-down"
 
 
-def synthesize_with_kenpath(spoken_ja, voice_id, out_opus_path, kenpath_key, kenpath_state):
-    with kenpath_lock:
-        if not kenpath_key or not kenpath_state.get("available"):
-            return False, "kenpath-disabled"
-        if kenpath_state.get("characters_remaining", 0) < len(spoken_ja) + 50:
-            kenpath_state["available"] = False
-            return False, "kenpath-no-credits"
-        kenpath_state["characters_remaining"] -= len(spoken_ja)
+def synthesize_with_kenpath(spoken_ja, voice_id, out_opus_path, kenpath_key):
+    if not kenpath_key:
+        return False, "kenpath-disabled"
 
     url = f"{KENPATH_BASE_URL}/v1/audio/speech"
     body = {
@@ -1155,7 +1504,7 @@ def synthesize_with_kenpath(spoken_ja, voice_id, out_opus_path, kenpath_key, ken
         method="POST",
     )
     try:
-        with urllib.request.urlopen(req, timeout=18) as resp:
+        with urllib.request.urlopen(req, timeout=20) as resp:
             raw_bytes = resp.read()
         if not raw_bytes:
             return False, "kenpath-empty"
@@ -1165,6 +1514,30 @@ def synthesize_with_kenpath(spoken_ja, voice_id, out_opus_path, kenpath_key, ken
     except Exception:
         pass
     return False, "kenpath-failed"
+
+
+def synthesize_with_edge(spoken_ja, edge_voice, out_opus_path):
+    with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as tf:
+        tmp_mp3 = tf.name
+    try:
+        subprocess.run(
+            ["node", "scripts/edge-tts-helper.mjs", spoken_ja, edge_voice, tmp_mp3],
+            check=True,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            timeout=25,
+        )
+        with open(tmp_mp3, "rb") as f:
+            mp3_bytes = f.read()
+        ok = transcode_and_normalize_opus(mp3_bytes, "mp3", out_opus_path)
+        if ok:
+            return True, f"EdgeTTS({edge_voice})"
+    except Exception:
+        pass
+    finally:
+        if os.path.exists(tmp_mp3):
+            os.remove(tmp_mp3)
+    return False, "edge-failed"
 
 
 def unload_aivis_models():
@@ -1276,7 +1649,7 @@ def synthesize_with_voicevox(spoken_ja, profile, emotion_meta, out_opus_path):
 # 7. Hybrid Multi-Engine Router
 # ---------------------------------------------------------------------------
 
-def synthesize_hybrid_line(task, profile, emotion_meta, gemini_keys, aivis_up, voicevox_up):
+def synthesize_hybrid_line(task, profile, emotion_meta, gemini_keys, kenpath_key, aivis_up, voicevox_up):
     raw_cleaned = clean_spoken_text(task["ja"])
     phrased = clean_spoken_text(emotion_meta.get("phrasedJa") or raw_cleaned)
     # Guard against director hallucinating different length text
@@ -1325,6 +1698,14 @@ def synthesize_hybrid_line(task, profile, emotion_meta, gemini_keys, aivis_up, v
             ok, label = synthesize_with_voicevox(spoken_ja, profile, emotion_meta, out_abs)
             if ok:
                 return True, label
+        elif eng == "kenpath":
+            ok, label = synthesize_with_kenpath(spoken_ja, profile["kenpath_voice"], out_abs, kenpath_key)
+            if ok:
+                return True, label
+        elif eng == "edge":
+            ok, label = synthesize_with_edge(spoken_ja, profile.get("edge_voice", "ja-JP-NanamiNeural"), out_abs)
+            if ok:
+                return True, label
 
     return False, f"ENGINE_LOCKED_FAILED({','.join(engine_order)})"
 
@@ -1338,7 +1719,7 @@ def main():
     print("  Hybrid 3-Engine Dialogue Audio Generator (Gemini TTS + AivisSpeech + VOICEVOX)")
     print("=" * 76)
 
-    gemini_keys, _ = load_env_keys()
+    gemini_keys, kenpath_key = load_env_keys()
     aivis_up = is_local_engine_running(AIVIS_URL)
     voicevox_up = is_local_engine_running(VOICEVOX_URL)
 
@@ -1348,6 +1729,7 @@ def main():
     print("=" * 76)
 
     only_mnn = "--mnn" in sys.argv
+    only_mnn2 = "--mnn2" in sys.argv
     force = "--force" in sys.argv
     lesson_filter = None
     engine_filter = None
@@ -1359,11 +1741,14 @@ def main():
 
     books = [
         {"id": "mnn-1", "file": "public/data/v1/books/mnn-1.json"},
+        {"id": "mnn-2", "file": "public/data/v1/books/mnn-2.json"},
         {"id": "genki-1", "file": "public/data/v1/books/genki-1.json"},
         {"id": "genki-2", "file": "public/data/v1/books/genki-2.json"},
     ]
     if only_mnn:
         books = [b for b in books if b["id"] == "mnn-1"]
+    elif only_mnn2:
+        books = [b for b in books if b["id"] == "mnn-2"]
 
     tasks_by_lesson = {}
     total_queued = 0
@@ -1387,7 +1772,7 @@ def main():
                     out_abs = os.path.join(os.getcwd(), f"public{out_rel}")
                     if not force and os.path.exists(out_abs) and os.path.getsize(out_abs) > 500:
                         continue
-                    prof = map_character_profile(line.get("speaker", ""), line.get("speakerJa", ""))
+                    prof = map_character_profile(line.get("speaker", ""), line.get("speakerJa", ""), b["id"])
                     if engine_filter and prof.get("primary") not in engine_filter:
                         continue
                     t = {
@@ -1446,12 +1831,13 @@ def main():
                 return task, None, None, False, "INTERRUPTED"
             key_id = f"{task['sceneId']}-{task['lineIndex']}"
             emotion_meta = emotion_cache.get(key_id) or heuristic_emotion_annotation(task["ja"], task["en"])
-            profile = map_character_profile(task["speaker"], task["speakerJa"])
+            profile = map_character_profile(task["speaker"], task["speakerJa"], task["bookId"])
             ok, engine_label = synthesize_hybrid_line(
                 task,
                 profile,
                 emotion_meta,
                 gemini_keys,
+                kenpath_key,
                 aivis_up,
                 voicevox_up,
             )

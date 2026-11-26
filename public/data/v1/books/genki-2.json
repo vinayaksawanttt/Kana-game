@@ -15,7 +15,7 @@
     "vocabularyCount": 599,
     "kanjiCount": 172,
     "grammarCount": 61,
-    "practiceCount": 586
+    "practiceCount": 594
   },
   "lessons": [
     {
@@ -9474,6 +9474,16 @@
               "audioTrack": "K17-12"
             }
           ]
+        },
+        {
+          "id": "l17-pvi-a",
+          "part": "VI",
+          "section": "A",
+          "title": "電話してから、友だちの家に行きます",
+          "subTitle": "",
+          "grammarIndex": 6,
+          "type": "transformation",
+          "items": []
         }
       ],
       "stats": {
@@ -20411,6 +20421,65 @@
           ]
         },
         {
+          "id": "l23-pv-a",
+          "part": "V",
+          "section": "A",
+          "title": "大学を卒業するまで、日本にいるつもりです",
+          "subTitle": "",
+          "grammarIndex": 5,
+          "type": "transformation",
+          "items": [
+            {
+              "id": "l23-pv-a-1",
+              "prompt": "メアリー",
+              "cue": "till this semester ends",
+              "answer": "メアリーさんは今学期が終わるまで、日本にいるつもりです。"
+            },
+            {
+              "id": "l23-pv-a-2",
+              "prompt": "ソラ",
+              "cue": "till she becomes fluent in Japanese",
+              "answer": "ソラさんは日本語がぺらぺらになるまで、日本にいるつもりです。"
+            },
+            {
+              "id": "l23-pv-a-3",
+              "prompt": "ロバート",
+              "cue": "till money runs out",
+              "answer": "ロバートさんはお金がなくなるまで、日本にいるつもりです。"
+            },
+            {
+              "id": "l23-pv-a-4",
+              "prompt": "カルロス",
+              "cue": "till he dies",
+              "answer": "カルロスさんは死ぬまで、日本にいるつもりです。"
+            },
+            {
+              "id": "l23-pv-a-5",
+              "prompt": "ジョン",
+              "cue": "till he finds an ideal partner",
+              "answer": "ジョンさんは理想の人を見つけるまで結婚しません。"
+            },
+            {
+              "id": "l23-pv-a-6",
+              "prompt": "けん",
+              "cue": "till his favorite team wins the championship",
+              "answer": "けんさんは好きなチームが優勝するまで結婚しません。"
+            },
+            {
+              "id": "l23-pv-a-7",
+              "prompt": "ナオミ",
+              "cue": "till she saves one million yen",
+              "answer": "ナオミさんは百万円ためるまで結婚しません。"
+            },
+            {
+              "id": "l23-pv-a-8",
+              "prompt": "ウデイ",
+              "cue": "till he becomes thirty years old",
+              "answer": "ウデイさんは三十歳になるまで結婚しません。"
+            }
+          ]
+        },
+        {
           "id": "l23-pvi-a",
           "part": "VI",
           "section": "A",
@@ -20498,7 +20567,7 @@
         "kanjiCount": 15,
         "grammarCount": 6,
         "dialogueCount": 3,
-        "practiceCount": 60
+        "practiceCount": 68
       }
     }
   ]

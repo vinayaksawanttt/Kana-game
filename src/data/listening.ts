@@ -37,12 +37,12 @@ export async function loadListeningPool(
   const textbookLines: ListeningSentenceItem[] = [];
   try {
     const { getBookById } = await import("@/data/books");
-    const bookTargets: Array<{ id: "genki-1" | "genki-2" | "mnn-1"; jlpt: JlptLevel }> = [];
+    const bookTargets: Array<{ id: "genki-1" | "genki-2" | "mnn-1" | "mnn-2"; jlpt: JlptLevel }> = [];
     if (fetchLevels.includes("N5")) {
       bookTargets.push({ id: "genki-1", jlpt: 5 }, { id: "mnn-1", jlpt: 5 });
     }
     if (fetchLevels.includes("N4")) {
-      bookTargets.push({ id: "genki-2", jlpt: 4 });
+      bookTargets.push({ id: "genki-2", jlpt: 4 }, { id: "mnn-2", jlpt: 4 });
     }
 
     const books = await Promise.all(bookTargets.map((b) => getBookById(b.id)));

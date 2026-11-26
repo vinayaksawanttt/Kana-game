@@ -10,9 +10,9 @@ import {
 } from "./characterAvatars";
 
 describe("characterAvatars registry", () => {
-  it("registers all 64 character avatars across Genki and Minna no Nihongo", () => {
+  it("registers all 79 character avatars across Genki and Minna no Nihongo", () => {
     const all = getAllCharacterAvatars();
-    expect(all).toHaveLength(64);
+    expect(all).toHaveLength(79);
 
     const expectedGenkiIds = [
       "mary-hart",
@@ -137,7 +137,8 @@ describe("characterAvatars registry", () => {
     expect(getCharacterAvatar(undefined, "ジョン")?.id).toBe("john-wang");
     expect(getCharacterAvatar(undefined, "山下先生")?.id).toBe("prof-yamashita");
     expect(getCharacterAvatar(undefined, "けん")?.id).toBe("ken-suzuki");
-    expect(getCharacterAvatar(undefined, "鈴木")?.id).toBe("ken-suzuki");
+    expect(getCharacterAvatar(undefined, "鈴木けん")?.id).toBe("ken-suzuki");
+    expect(getCharacterAvatar(undefined, "鈴木")?.id).toBe("yasuo-suzuki");
     expect(getCharacterAvatar(undefined, "ゆい")?.id).toBe("yui-yamakawa");
     expect(getCharacterAvatar(undefined, "お父さん")?.id).toBe("host-father");
     expect(getCharacterAvatar(undefined, "お母さん")?.id).toBe("host-mother");
@@ -189,9 +190,9 @@ describe("characterAvatars registry", () => {
     expect(getCharacterAvatar("", "")).toBeNull();
   });
 
-  it("registers all 18 Minna no Nihongo I characters with offline AivisSpeech speakers and avatar paths", () => {
+  it("registers all 29 Minna no Nihongo I & II characters with offline speakers and avatar paths", () => {
     const mnnAll = getAllMnnCharacterProfiles();
-    expect(mnnAll).toHaveLength(18);
+    expect(mnnAll).toHaveLength(29);
 
     for (const profile of mnnAll) {
       expect(MNN_CHARACTER_CAST[profile.id]).toBeDefined();

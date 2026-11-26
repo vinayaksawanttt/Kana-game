@@ -220,6 +220,132 @@ export const MNN_DIALOGUE_BACKGROUND_IDS: Record<string, string> = {
   "mnn-l25-scene-ii": "company-buffet-party",
   "mnn-l25-scene-iii": "imc-office-day",
   "mnn-l25-scene-iv": "company-buffet-party",
+
+  // Minna no Nihongo II (Lessons 26–50)
+  "mnn-l26-scene-i": "apartment-hallway-genkan",
+  "mnn-l26-scene-ii": "apartment-hallway-genkan",
+  "mnn-l26-scene-iii": "07-downtown-street",
+  "mnn-l26-scene-iv": "apartment-hallway-genkan",
+
+  "mnn-l27-scene-i": "61-suzuki-woodshop-room",
+  "mnn-l27-scene-ii": "61-suzuki-woodshop-room",
+  "mnn-l27-scene-iii": "office-breakroom-lounge",
+  "mnn-l27-scene-iv": "61-suzuki-woodshop-room",
+
+  "mnn-l28-scene-i": "08-host-family-evening",
+  "mnn-l28-scene-ii": "office-breakroom-lounge",
+  "mnn-l28-scene-iii": "25-neighborhood-cafe",
+  "mnn-l28-scene-iv": "office-breakroom-lounge",
+
+  "mnn-l29-scene-i": "30-station-ticket-gate",
+  "mnn-l29-scene-ii": "30-station-ticket-gate",
+  "mnn-l29-scene-iii": "22-john-apartment-day",
+  "mnn-l29-scene-iv": "30-station-ticket-gate",
+
+  "mnn-l30-scene-i": "61-suzuki-woodshop-room",
+  "mnn-l30-scene-ii": "22-john-apartment-day",
+  "mnn-l30-scene-iii": "imc-office-day",
+  "mnn-l30-scene-iv": "61-suzuki-woodshop-room",
+
+  "mnn-l31-scene-i": "22-john-apartment-day",
+  "mnn-l31-scene-ii": "office-breakroom-lounge",
+  "mnn-l31-scene-iii": "20-student-lounge",
+  "mnn-l31-scene-iv": "office-breakroom-lounge",
+
+  "mnn-l32-scene-i": "office-breakroom-lounge",
+  "mnn-l32-scene-ii": "21-hospital-clinic-room",
+  "mnn-l32-scene-iii": "office-breakroom-lounge",
+  "mnn-l32-scene-iv": "21-hospital-clinic-room",
+
+  "mnn-l33-scene-i": "65-university-admin-office",
+  "mnn-l33-scene-ii": "07-downtown-street",
+  "mnn-l33-scene-iii": "65-university-admin-office",
+  "mnn-l33-scene-iv": "65-university-admin-office",
+
+  "mnn-l34-scene-i": "62-japanese-tea-ceremony-room",
+  "mnn-l34-scene-ii": "62-japanese-tea-ceremony-room",
+  "mnn-l34-scene-iii": "20-student-lounge",
+  "mnn-l34-scene-iv": "62-japanese-tea-ceremony-room",
+
+  "mnn-l35-scene-i": "28-travel-info-office",
+  "mnn-l35-scene-ii": "28-travel-info-office",
+  "mnn-l35-scene-iii": "19-hokkaido-hotel-lobby",
+  "mnn-l35-scene-iv": "28-travel-info-office",
+
+  "mnn-l36-scene-i": "63-tv-studio-interview-set",
+  "mnn-l36-scene-ii": "63-tv-studio-interview-set",
+  "mnn-l36-scene-iii": "office-breakroom-lounge",
+  "mnn-l36-scene-iv": "63-tv-studio-interview-set",
+
+  "mnn-l37-scene-i": "64-kyoto-kinkakuji-golden-pavilion",
+  "mnn-l37-scene-ii": "64-kyoto-kinkakuji-golden-pavilion",
+  "mnn-l37-scene-iii": "art-museum-plaza",
+  "mnn-l37-scene-iv": "64-kyoto-kinkakuji-golden-pavilion",
+
+  "mnn-l38-scene-i": "65-university-admin-office",
+  "mnn-l38-scene-ii": "29-professor-office",
+  "mnn-l38-scene-iii": "office-breakroom-lounge",
+  "mnn-l38-scene-iv": "65-university-admin-office",
+
+  "mnn-l39-scene-i": "imc-office-day",
+  "mnn-l39-scene-ii": "imc-office-day",
+  "mnn-l39-scene-iii": "30-station-ticket-gate",
+  "mnn-l39-scene-iv": "imc-office-day",
+
+  "mnn-l40-scene-i": "66-elementary-school-classroom",
+  "mnn-l40-scene-ii": "66-elementary-school-classroom",
+  "mnn-l40-scene-iii": "02-university-classroom",
+  "mnn-l40-scene-iv": "66-elementary-school-classroom",
+
+  "mnn-l41-scene-i": "67-wedding-reception-banquet",
+  "mnn-l41-scene-ii": "67-wedding-reception-banquet",
+  "mnn-l41-scene-iii": "company-buffet-party",
+  "mnn-l41-scene-iv": "67-wedding-reception-banquet",
+
+  "mnn-l42-scene-i": "68-power-electric-lobby-dusk",
+  "mnn-l42-scene-ii": "68-power-electric-lobby-dusk",
+  "mnn-l42-scene-iii": "office-breakroom-lounge",
+  "mnn-l42-scene-iv": "68-power-electric-lobby-dusk",
+
+  "mnn-l43-scene-i": "68-power-electric-lobby-dusk",
+  "mnn-l43-scene-ii": "office-breakroom-lounge",
+  "mnn-l43-scene-iii": "07-downtown-street",
+  "mnn-l43-scene-iv": "68-power-electric-lobby-dusk",
+
+  "mnn-l44-scene-i": "69-japanese-hair-salon",
+  "mnn-l44-scene-ii": "69-japanese-hair-salon",
+  "mnn-l44-scene-iii": "04-tonkatsu-restaurant",
+  "mnn-l44-scene-iv": "69-japanese-hair-salon",
+
+  "mnn-l45-scene-i": "70-marathon-park-start-line",
+  "mnn-l45-scene-ii": "70-marathon-park-start-line",
+  "mnn-l45-scene-iii": "28-travel-info-office",
+  "mnn-l45-scene-iv": "70-marathon-park-start-line",
+
+  "mnn-l46-scene-i": "22-john-apartment-day",
+  "mnn-l46-scene-ii": "22-john-apartment-day",
+  "mnn-l46-scene-iii": "30-station-ticket-gate",
+  "mnn-l46-scene-iv": "22-john-apartment-day",
+
+  "mnn-l47-scene-i": "68-power-electric-lobby-dusk",
+  "mnn-l47-scene-ii": "office-breakroom-lounge",
+  "mnn-l47-scene-iii": "25-neighborhood-cafe",
+  "mnn-l47-scene-iv": "68-power-electric-lobby-dusk",
+
+  "mnn-l48-scene-i": "imc-office-day",
+  "mnn-l48-scene-ii": "imc-office-day",
+  "mnn-l48-scene-iii": "office-breakroom-lounge",
+  "mnn-l48-scene-iv": "imc-office-day",
+
+  "mnn-l49-scene-i": "66-elementary-school-classroom",
+  "mnn-l49-scene-ii": "imc-office-day",
+  "mnn-l49-scene-iii": "29-professor-office",
+  "mnn-l49-scene-iv": "66-elementary-school-classroom",
+
+  "mnn-l50-scene-i": "71-speech-contest-auditorium",
+  "mnn-l50-scene-ii": "71-speech-contest-auditorium",
+  "mnn-l50-scene-iii": "company-buffet-party",
+  "mnn-l50-scene-iv": "71-speech-contest-auditorium",
 };
 
 export const ALL_DIALOGUE_BACKGROUNDS = Array.from(
@@ -242,8 +368,8 @@ export function getDialogueBackground(sceneId: string, bookId?: string): string 
     return `${BG_BASE}/${normalized}.webp`;
   }
 
-  // 2. Explicit MNN lookup if bookId is mnn-1 or id starts with mnn-
-  if (bookId === "mnn-1" || normalized.startsWith("mnn-")) {
+  // 2. Explicit MNN lookup if bookId is mnn-1 / mnn-2 or id starts with mnn-
+  if (bookId === "mnn-1" || bookId === "mnn-2" || normalized.startsWith("mnn-")) {
     const mnnKey = normalized.startsWith("mnn-") ? normalized : `mnn-${normalized}`;
     const mnnBg = MNN_DIALOGUE_BACKGROUND_IDS[mnnKey] || MNN_DIALOGUE_BACKGROUND_IDS[normalized];
     if (mnnBg) return `${BG_BASE}/${mnnBg}.webp`;

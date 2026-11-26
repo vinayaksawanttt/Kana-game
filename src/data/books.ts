@@ -1,4 +1,4 @@
-export type BookId = "genki-1" | "genki-2" | "mnn-1";
+export type BookId = "genki-1" | "genki-2" | "mnn-1" | "mnn-2";
 
 export interface BookCatalogEntry {
   id: BookId;

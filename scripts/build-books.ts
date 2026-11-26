@@ -992,15 +992,23 @@ async function main() {
           }
         }
 
-        // Split by #### Section ...
-        const sectionBlocks = partBody.split(/^#### Section\s+([A-Z]):/m);
-        for (let s = 1; s < sectionBlocks.length; s += 2) {
-          const sectionLetter = sectionBlocks[s].trim();
-          const sectionContent = sectionBlocks[s + 1] || "";
+        // Split by #### Section ... (fallback to whole partBody as Section A if no #### Section headers exist)
+        const rawSectionBlocks = partBody.split(/^#### Section\s+([A-Za-z0-9-]+):/m);
+        const sectionPairs: Array<[string, string]> = [];
+        if (rawSectionBlocks.length > 1) {
+          for (let s = 1; s < rawSectionBlocks.length; s += 2) {
+            sectionPairs.push([rawSectionBlocks[s].trim(), rawSectionBlocks[s + 1] || ""]);
+          }
+        } else {
+          sectionPairs.push(["A", partBody]);
+        }
 
+        for (const [sectionLetter, sectionContent] of sectionPairs) {
           const secFirstNewline = sectionContent.indexOf("\n");
           const secHeaderLine = secFirstNewline !== -1 ? sectionContent.slice(0, secFirstNewline) : sectionContent;
-          const secBody = secFirstNewline !== -1 ? sectionContent.slice(secFirstNewline + 1) : "";
+          const secBody = rawSectionBlocks.length > 1
+            ? (secFirstNewline !== -1 ? sectionContent.slice(secFirstNewline + 1) : "")
+            : sectionContent;
 
           const trackMatch = secHeaderLine.match(/\[Track:\s*([^\]]+)\]/);
           const audioTrack = trackMatch ? trackMatch[1].trim() : undefined;
@@ -1032,9 +1040,9 @@ async function main() {
             exerciseType = "cloze";
           }
 
-          // Parse items: lines starting with - \d+\. ... => ...
+          // Parse items: lines starting with - \d+\. ... => ... (allowing indented sub-items like "  - 1) ...")
           const items: BookPracticeItem[] = [];
-          const itemRegex = /^-\s*(?:(\d+)\.\s*)?(.+?)\s*=>\s*(.+)$/gm;
+          const itemRegex = /^\s*-\s*(?:(\d+)[.)]\s*)?(.+?)\s*=>\s*(.+)$/gm;
           let m: RegExpExecArray | null;
           let itemIdx = 1;
           while ((m = itemRegex.exec(secBody)) !== null) {
@@ -1090,10 +1098,21 @@ async function main() {
   const mnn1Dialogues = parseDialoguesFile(path.join(BOOKS_MDX_DIR, "mnn1-dialogues.mdx"));
   const mnn1Practice = parsePracticeFile(path.join(BOOKS_MDX_DIR, "mnn1-charts-practice.mdx"));
 
+  // Minna no Nihongo II (Lessons 26–50)
+  const mnn2Vocab = parseVocabFile(path.join(BOOKS_MDX_DIR, "mnn2-vocabulary.mdx"));
+  const mnn2Grammar = parseGrammarFile(path.join(BOOKS_MDX_DIR, "mnn2-grammar.mdx"));
+  const mnn2Dialogues = parseDialoguesFile(path.join(BOOKS_MDX_DIR, "mnn2-dialogues.mdx"));
+  const mnn2Practice = parsePracticeFile(path.join(BOOKS_MDX_DIR, "mnn2-charts-practice.mdx"));
+
   // Parse authentic 文型・例文 file and prepend as Core Patterns & Examples card per lesson
-  const bunkeiPath = path.join(BOOKS_MDX_DIR, "mnn1-bunkei-reibun.mdx");
-  if (fs.existsSync(bunkeiPath)) {
-    const bunkeiRaw = fs.readFileSync(bunkeiPath, "utf8");
+  function attachBunkeiFile(
+    bunkeiFilePath: string,
+    targetGrammarMap: Map<number, BookGrammarItem[]>,
+    idPrefix: string,
+    bookLabel: string
+  ) {
+    if (!fs.existsSync(bunkeiFilePath)) return;
+    const bunkeiRaw = fs.readFileSync(bunkeiFilePath, "utf8");
     const lessonBlocks = bunkeiRaw.split(/^## Lesson\s+(\d+)/m);
     for (let i = 1; i < lessonBlocks.length; i += 2) {
       const lessonNum = parseInt(lessonBlocks[i], 10);
@@ -1125,22 +1144,34 @@ async function main() {
         }
       }
       if (examples.length > 0) {
-        const existingList = mnn1Grammar.get(lessonNum) || [];
+        const existingList = targetGrammarMap.get(lessonNum) || [];
         const coreCard: BookGrammarItem = {
-          id: `g-mnn1-l${lessonNum}-bunkei`,
+          id: `g-${idPrefix}-l${lessonNum}-bunkei`,
           lessonNumber: lessonNum,
           index: 0,
           title: "文型・例文 (Core Sentence Patterns & Example Q&As)",
           pattern: examples[0].ja,
-          explanation:
-            "Authentic core sentence patterns (文型) and contextual question-and-answer examples (例文) from the Minna no Nihongo I main textbook.",
+          explanation: `Authentic core sentence patterns (文型) and contextual question-and-answer examples (例文) from the ${bookLabel} main textbook.`,
           bulletPoints,
           examples,
         };
-        mnn1Grammar.set(lessonNum, [coreCard, ...existingList]);
+        targetGrammarMap.set(lessonNum, [coreCard, ...existingList]);
       }
     }
   }
+
+  attachBunkeiFile(
+    path.join(BOOKS_MDX_DIR, "mnn1-bunkei-reibun.mdx"),
+    mnn1Grammar,
+    "mnn1",
+    "Minna no Nihongo I"
+  );
+  attachBunkeiFile(
+    path.join(BOOKS_MDX_DIR, "mnn2-bunkei-reibun.mdx"),
+    mnn2Grammar,
+    "mnn2",
+    "Minna no Nihongo II"
+  );
 
   // Build lookup of known kanji items from Genki + dictionary-index for MNN Lessons 3–25
   const knownKanjiByChar = new Map<string, BookKanjiItem>();
@@ -1186,6 +1217,39 @@ async function main() {
     }
   }
 
+  const mnn2KanjiMap = new Map<number, BookKanjiItem[]>();
+  for (let l = 26; l <= 50; l++) {
+    const lessonVocab = mnn2Vocab.get(l) || [];
+    const lessonKanji: BookKanjiItem[] = [];
+    for (const v of lessonVocab) {
+      const chars = v.word.match(/[\u4E00-\u9FAF]/g) || [];
+      for (const ch of chars) {
+        if (seenMnnKanji.has(ch)) continue;
+        const baseK = knownKanjiByChar.get(ch);
+        const dictEntry = dictKanji[ch];
+        if (!baseK && !dictEntry) continue;
+        seenMnnKanji.add(ch);
+        lessonKanji.push({
+          id: `k-mnn-${String(mnnKanjiCounter).padStart(3, "0")}`,
+          number: mnnKanjiCounter++,
+          kanji: ch,
+          onyomi: baseK?.onyomi || [],
+          kunyomi: baseK?.kunyomi || [],
+          meaning: baseK?.meaning || dictEntry?.label || v.meaning,
+          strokes: baseK?.strokes || dictEntry?.strokes,
+          jlpt: baseK?.jlpt || dictEntry?.jlpt || 4,
+          label: baseK?.label || dictEntry?.label || v.meaning,
+          linkedKanjiId: ch,
+        });
+        if (lessonKanji.length >= 12) break;
+      }
+      if (lessonKanji.length >= 12) break;
+    }
+    if (lessonKanji.length > 0) {
+      mnn2KanjiMap.set(l, lessonKanji);
+    }
+  }
+
   const MNN_LESSON_METAS: Record<number, { title: string; japaneseTitle: string; subtitle: string }> = {
     1: { title: "Nice to Meet You (Self-Introductions)", japaneseTitle: "第1課 初めまして", subtitle: "N1はN2です · N1はN2じゃありません · N1はN2ですか · N1もN2です" },
     2: { title: "Thank You in Advance (Things & Ownership)", japaneseTitle: "第2課 これから お世話に なります", subtitle: "これは辞書です · それはわたしの傘です · この本はわたしのです" },
@@ -1212,11 +1276,37 @@ async function main() {
     23: { title: "How Do I Get There? (When & Inevitable Result)", japaneseTitle: "第23課 どうやって 行きますか", subtitle: "図書館で本を借りるとき、カードが要ります · このボタンを押すと、お釣りが出ます" },
     24: { title: "Shall I Come Help You? (Giving & Receiving Favors)", japaneseTitle: "第24課 手伝いに 行きましょうか", subtitle: "チョコレートをくれました · レポートを直してもらいました · 送ってくれました · 貸してあげました" },
     25: { title: "Thank You for Everything (Conditionals: 〜たら & 〜ても)", japaneseTitle: "第25課 いろいろ お世話に なりました", subtitle: "雨が降ったら、出かけません · 雨が降っても、出かけます · 復習G · 総復習" },
+    // Minna no Nihongo II (Lessons 26–50)
+    26: { title: "Where Should I Put Out the Trash? (〜んです & Polite Requests)", japaneseTitle: "第26課 ごみは どこに 出したら いいですか", subtitle: "あしたから旅行なんです · いい先生を紹介していただけませんか · 〜たらいいですか" },
+    27: { title: "You Can Make Anything! (Potential Verbs, 見えます/聞こえます & できます)", japaneseTitle: "第27課 何でも 作れるんですね", subtitle: "わたしは日本語が少し話せます · 山がはっきり見えます · 大きいスーパーができました" },
+    28: { title: "Frequent Business Trips and Exams Too... (〜ながら & 〜し、〜し)", japaneseTitle: "第28課 出張も 多いし、試験も あるし……", subtitle: "音楽を聞きながら食事します · 毎朝ジョギングをしています · 速いし、安いし" },
+    29: { title: "I Left Something Behind (Intransitive State 〜ています & 〜てしまいました)", japaneseTitle: "第29課 忘れ物を して しまったんです", subtitle: "窓が閉まっています · 電車に傘を忘れてしまいました" },
+    30: { title: "We Must Prepare an Emergency Bag (〜てあります & 〜ておきます)", japaneseTitle: "第30課 非常袋を 準備して おかないと", subtitle: "交番に町の地図がはってあります · 旅行のまえに、いろいろ調べておきます · 復習H" },
+    31: { title: "I'm Thinking of Learning Cooking (Volitional Form, 〜ようと思っています & 〜つもりです)", japaneseTitle: "第31課 料理を 習おうと 思って います", subtitle: "いっしょに行こう · 将来自分の会社を作ろうと思っています · 来月車を買うつもりです" },
+    32: { title: "You Had Better Not Push Yourself Too Hard (〜ほうがいいです, 〜でしょう & 〜かもしれません)", japaneseTitle: "第32課 無理を しない ほうが いいですよ", subtitle: "毎日運動したほうがいいです · あしたは雪が降るでしょう · 間に合わないかもしれません" },
+    33: { title: "What Does This Mean? (Imperative, Prohibitive, 〜という意味 & 〜と言っていました)", japaneseTitle: "第33課 これは どういう 意味ですか", subtitle: "急げ · 触るな · 立ち入り禁止は入るなという意味です · 来週大阪へ出張すると言っていました" },
+    34: { title: "Please Do It Just as I Did (〜とおりに, 〜あとで & 〜ないで)", japaneseTitle: "第34課 わたしが した とおりに、して ください", subtitle: "先生が言ったとおりに、書きます · ごはんを食べたあとで、歯を磨きます · 砂糖を入れないで飲みます" },
+    35: { title: "Is There Any Good Place Somewhere? (Conditional Form 〜ば & 〜なら)", japaneseTitle: "第35課 どこか いい 所、ありませんか", subtitle: "春になれば、桜が咲きます · 天気がよければ、向こうに島が見えます · 北海道旅行なら、6月がいいです · 復習I" },
+    36: { title: "I Try to Exercise Every Day (〜ように, 〜ようになりました & 〜ようにしています)", japaneseTitle: "第36課 毎日 運動するように して います", subtitle: "速く泳げるように、毎日練習しています · 自転車に乗れるようになりました · 毎日日記を書くようにしています" },
+    37: { title: "Kinkakuji Was Built in the 14th Century (Passive Verbs 受身形)", japaneseTitle: "第37課 金閣寺は 14世紀に 建てられました", subtitle: "子どものとき、よく母にしかられました · ラッシュの電車で足を踏まれました · 法隆寺は607年に建てられました" },
+    38: { title: "I Like Tidying Up (Nominalization with の: 〜のは / 〜のが / 〜のを)", japaneseTitle: "第38課 片づけるのが 好きなんです", subtitle: "絵をかくのは楽しいです · 星を見るのが好きです · 財布を持って来るのを忘れました · 日本へ来たのは去年の3月です" },
+    39: { title: "Sorry I'm Late (Reasons & Causes: 〜て、〜 / 名詞＋で / 〜ので)", japaneseTitle: "第39課 遅れて、すみません", subtitle: "ニュースを聞いて、びっくりしました · 地震でビルが倒れました · 体の調子が悪いので、病院へ行きます" },
+    40: { title: "I'm Worried Whether I Made Friends (Embedded Questions 〜か / 〜かどうか & 〜てみます)", japaneseTitle: "第40課 友達が できたか どうか、心配です", subtitle: "JL107便は何時に到着するか、調べてください · 東京へ来るかどうか、まだわかりません · この服を着てみてもいいですか · 復習J" },
+    41: { title: "Congratulations on Your Marriage (Honorific/Humble Giving & Receiving: いただきます・くださいます・やります)", japaneseTitle: "第41課 ご結婚 おめでとう ございます", subtitle: "ワット先生に本をいただきました · 先生に漢字のまちがいを直していただきました · 部長の奥さんがお茶を教えてくださいました · 息子に紙飛行機を作ってやりました" },
+    42: { title: "What Will You Use Your Bonus For? (Purpose: 〜ために & 〜のに)", japaneseTitle: "第42課 ボーナスは 何に 使いますか", subtitle: "将来自分の店を持つために、貯金しています · この靴は山を歩くのにいいです" },
+    43: { title: "Every Day Looks Fun (Appearance 〜そうです & 〜て来ます)", japaneseTitle: "第43課 毎日 楽しそうです", subtitle: "今にも雨が降りそうです · ちょっと切符を買って来ます" },
+    44: { title: "Please Make It Look Like This Photo (〜すぎます, 〜やすい/にくい & 〜く/にします)", japaneseTitle: "第44課 この 写真みたいに して ください", subtitle: "ゆうべお酒を飲みすぎました · このパソコンは使いやすいです · ズボンを短くしてください" },
+    45: { title: "What Should I Do in Case I Took the Wrong Course? (〜場合は & 〜のに)", japaneseTitle: "第45課 コースを まちがえた 場合は、どう したら いいですか", subtitle: "カードをなくした場合は、すぐカード会社に連絡してください · 約束をしたのに、彼女は来ませんでした · 復習K" },
+    46: { title: "Even Though I Just Had It Fixed Last Week... (〜ところです, 〜たばかりです & 〜はずです)", japaneseTitle: "第46課 先週 直して もらった ばかりなのに、また……", subtitle: "会議は今から始まるところです · 3月に大学を卒業したばかりです · ミラーさんは会議室にいるはずです" },
+    47: { title: "I Hear They Got Engaged (Hearsay 〜そうです & Conjecture 〜ようです)", japaneseTitle: "第47課 婚約したそうです", subtitle: "天気予報によると、あしたは寒くなるそうです · 隣の部屋にだれかいるようです" },
+    48: { title: "Could You Please Let Me Take the Day Off? (Causative Verbs 使役形 & 〜させていただけませんか)", japaneseTitle: "第48課 休ませて いただけませんか", subtitle: "息子をイギリスへ留学させます · 娘にピアノを習わせます" },
+    49: { title: "Please Give My Best Regards (Honorific Expressions 尊敬語)", japaneseTitle: "第49課 よろしく お伝え ください", subtitle: "課長は帰られました · 社長はお帰りになりました · 部長はアメリカへ出張なさいます · しばらくお待ちください" },
+    50: { title: "I Am Truly Grateful from the Bottom of My Heart (Humble Expressions 謙譲語)", japaneseTitle: "第50課 心から 感謝いたします", subtitle: "今月のスケジュールをお送りします · あした3時に伺います · 私はアメリカから参りました · 復習L · 総復習" },
   };
 
   // 5. Build Lessons & Books
   function buildBook(
-    id: "genki-1" | "genki-2" | "mnn-1",
+    id: "genki-1" | "genki-2" | "mnn-1" | "mnn-2",
     title: string,
     japaneseTitle: string,
     level: "N5" | "N4",
@@ -1362,6 +1452,25 @@ async function main() {
     }
   );
 
+  const mnn2Detail = buildBook(
+    "mnn-2",
+    "Minna no Nihongo II: Main Textbook & Grammar Companion",
+    "みんなの日本語 初級 II",
+    "N4",
+    26,
+    50,
+    "Upper-elementary communicative Japanese textbook covering JLPT N4 vocabulary, sentence patterns (文型・例文), 21-character dialogues (会話・練習C), interactive drills (練習A/B・問題), potential/passive/causative/keigo grammar, and kanji across Lessons 26–50.",
+    mnn2Vocab,
+    mnn2Grammar,
+    mnn2Dialogues,
+    mnn2Practice,
+    {
+      series: "Minna no Nihongo",
+      kanjiMap: mnn2KanjiMap,
+      lessonMetas: MNN_LESSON_METAS,
+    }
+  );
+
   const catalog: BookCatalogEntry[] = [
     {
       id: genki1Detail.id,
@@ -1399,6 +1508,18 @@ async function main() {
       lessonRange: mnn1Detail.lessonRange,
       stats: mnn1Detail.stats,
     },
+    {
+      id: mnn2Detail.id,
+      title: mnn2Detail.title,
+      japaneseTitle: mnn2Detail.japaneseTitle,
+      level: mnn2Detail.level,
+      series: mnn2Detail.series,
+      description: mnn2Detail.description,
+      coverImage: mnn2Detail.coverImage,
+      totalLessons: mnn2Detail.totalLessons,
+      lessonRange: mnn2Detail.lessonRange,
+      stats: mnn2Detail.stats,
+    },
   ];
 
   // 6. Write JSON files to public/data/v1/books/
@@ -1426,6 +1547,11 @@ async function main() {
     JSON.stringify(mnn1Detail, null, 2),
     "utf8"
   );
+  fs.writeFileSync(
+    path.join(PUBLIC_BOOKS_DIR, "mnn-2.json"),
+    JSON.stringify(mnn2Detail, null, 2),
+    "utf8"
+  );
 
   console.log("\n Output generated successfully:");
   console.log(`- ${path.join(PUBLIC_BOOKS_DIR, "index.json")} (${catalog.length} books)`);
@@ -1437,6 +1563,9 @@ async function main() {
   );
   console.log(
     `- ${path.join(PUBLIC_BOOKS_DIR, "mnn-1.json")} (${mnn1Detail.totalLessons} lessons, ${mnn1Detail.stats.vocabularyCount} vocab, ${mnn1Detail.stats.grammarCount} grammar, ${mnn1Detail.stats.practiceCount || 0} chart drill items)`
+  );
+  console.log(
+    `- ${path.join(PUBLIC_BOOKS_DIR, "mnn-2.json")} (${mnn2Detail.totalLessons} lessons, ${mnn2Detail.stats.vocabularyCount} vocab, ${mnn2Detail.stats.grammarCount} grammar, ${mnn2Detail.stats.practiceCount || 0} chart drill items)`
   );
 
   // Summary of cross-links

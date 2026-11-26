@@ -357,8 +357,8 @@ export const MNN_CHARACTER_CAST: Record<string, MnnCharacterProfile> = {
     nameJa: "タワポン",
     country: "Thailand",
     countryJa: "タイ",
-    affiliation: "Japanese Language School Student",
-    affiliationJa: "日本語学校の学生",
+    affiliation: "Japanese Language School / Sakura University Student",
+    affiliationJa: "日本語学校／さくら大学の学生",
     age: 19,
     aivisSpeaker: "コハク",
     aivisModelUuid: "22e8ed77-94fe-4ef2-871f-a86f94e9a579",
@@ -369,6 +369,206 @@ export const MNN_CHARACTER_CAST: Record<string, MnnCharacterProfile> = {
     pitchScale: 0.0,
     neutral: "/images/characters/thawaphon/neutral.webp",
     talking: "/images/characters/thawaphon/talking.webp",
+  },
+  // Minna no Nihongo II (初級 II, Lessons 26–50) Official Cast Additions (登場人物 pp. x–xi)
+  "yasuo-suzuki": {
+    id: "yasuo-suzuki",
+    name: "Yasuo Suzuki",
+    nameJa: "鈴木康男",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "IMC Employee",
+    affiliationJa: "IMCの社員",
+    aivisSpeaker: "澤原 玄二郎",
+    aivisModelUuid: "2e1fdde8-d089-42d7-b64f-cf89952b1bdc",
+    aivisSpeakerUuid: "accf08c8-0237-485f-98af-20b71cf2121b",
+    aivisStyleId: 2029042368,
+    aivisStyleName: "ノーマル",
+    speedScale: 1.0,
+    pitchScale: 0.0,
+    neutral: "/images/characters/yasuo-suzuki/neutral.webp",
+    talking: "/images/characters/yasuo-suzuki/talking.webp",
+  },
+  "akiko-nakamura": {
+    id: "akiko-nakamura",
+    name: "Akiko Nakamura",
+    nameJa: "中村秋子",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "IMC Sales Section Chief",
+    affiliationJa: "IMCの営業課長",
+    aivisSpeaker: "F1",
+    aivisModelUuid: "6acf95e8-11a9-414e-aa9c-6dbebf9113ca",
+    aivisSpeakerUuid: "d60b4ea8-dc91-4b9f-99df-2a9fd480db6c",
+    aivisStyleId: 1236214272,
+    aivisStyleName: "ノーマル",
+    speedScale: 0.98,
+    pitchScale: 0.0,
+    neutral: "/images/characters/akiko-nakamura/neutral.webp",
+    talking: "/images/characters/akiko-nakamura/talking.webp",
+  },
+  "hiroshi-ogawa": {
+    id: "hiroshi-ogawa",
+    name: "Hiroshi Ogawa",
+    nameJa: "小川博",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "Mike Miller's Neighbor",
+    affiliationJa: "マイク・ミラーの隣人",
+    aivisSpeaker: "M1",
+    aivisModelUuid: "d7255c2c-ddd0-425a-808c-662cd94c7f41",
+    aivisSpeakerUuid: "e824adad-993c-4d2f-8415-0f551ccbe548",
+    aivisStyleId: 2051283136,
+    aivisStyleName: "ノーマル",
+    speedScale: 0.98,
+    pitchScale: 0.0,
+    neutral: "/images/characters/hiroshi-ogawa/neutral.webp",
+    talking: "/images/characters/hiroshi-ogawa/talking.webp",
+  },
+  "yone-ogawa": {
+    id: "yone-ogawa",
+    name: "Yone Ogawa",
+    nameJa: "小川よね",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "Hiroshi Ogawa's Mother",
+    affiliationJa: "小川博の母",
+    aivisSpeaker: "まお",
+    aivisModelUuid: "a59cb814-0083-4369-8542-f51a29e72af7",
+    aivisSpeakerUuid: "e756b8e4-b606-4e15-99b1-3f9c6a1b2317",
+    aivisStyleId: 888753763,
+    aivisStyleName: "おちつき",
+    speedScale: 0.90,
+    pitchScale: -0.05,
+    neutral: "/images/characters/yone-ogawa/neutral.webp",
+    talking: "/images/characters/yone-ogawa/talking.webp",
+  },
+  "sachiko-ogawa": {
+    id: "sachiko-ogawa",
+    name: "Sachiko Ogawa",
+    nameJa: "小川幸子",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "Company Employee",
+    affiliationJa: "会社員",
+    aivisSpeaker: "F2",
+    aivisModelUuid: "25b39db7-5757-47ef-9fe4-2b7aff328a18",
+    aivisSpeakerUuid: "a8e3a11e-82ee-4ad9-925d-bdf6c2c2e43c",
+    aivisStyleId: 1670137088,
+    aivisStyleName: "ノーマル",
+    speedScale: 0.98,
+    pitchScale: 0.0,
+    neutral: "/images/characters/sachiko-ogawa/neutral.webp",
+    talking: "/images/characters/sachiko-ogawa/talking.webp",
+  },
+  "klara-schmidt": {
+    id: "klara-schmidt",
+    name: "Klara Schmidt",
+    nameJa: "クララ・シュミット",
+    country: "Germany",
+    countryJa: "ドイツ",
+    affiliation: "German Language Teacher",
+    affiliationJa: "ドイツ語の教師",
+    aivisSpeaker: "まお",
+    aivisModelUuid: "a59cb814-0083-4369-8542-f51a29e72af7",
+    aivisSpeakerUuid: "e756b8e4-b606-4e15-99b1-3f9c6a1b2317",
+    aivisStyleId: 888753763,
+    aivisStyleName: "おちつき",
+    speedScale: 0.97,
+    pitchScale: 0.0,
+    neutral: "/images/characters/klara-schmidt/neutral.webp",
+    talking: "/images/characters/klara-schmidt/talking.webp",
+  },
+  "chiseko-ito": {
+    id: "chiseko-ito",
+    name: "Chiseko Ito",
+    nameJa: "伊藤ちせ子",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "Himawari Elementary School Teacher (Hans Schmidt's Homeroom Teacher)",
+    affiliationJa: "ひまわり小学校の教師、ハンス・シュミットの担任",
+    aivisSpeaker: "morioki",
+    aivisModelUuid: "baaae3c0-7b22-4605-8ba5-80c959b41a48",
+    aivisSpeakerUuid: "396a746d-742f-4e43-b722-1182a7fab9af",
+    aivisStyleId: 497929760,
+    aivisStyleName: "ノーマル",
+    speedScale: 0.98,
+    pitchScale: 0.0,
+    neutral: "/images/characters/chiseko-ito/neutral.webp",
+    talking: "/images/characters/chiseko-ito/talking.webp",
+  },
+  "akemi-watanabe": {
+    id: "akemi-watanabe",
+    name: "Akemi Watanabe",
+    nameJa: "渡辺あけみ",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "Power Electric Employee",
+    affiliationJa: "パワー電気の社員",
+    aivisSpeaker: "金苗(かなえ)",
+    aivisModelUuid: "1a322ad9-6b7e-4a6d-8d0b-c4cd264538dc",
+    aivisSpeakerUuid: "08845b19-25d5-4f7e-b88f-b04acc80320d",
+    aivisStyleId: 1238228481,
+    aivisStyleName: "ノーマル",
+    speedScale: 1.0,
+    pitchScale: 0.0,
+    neutral: "/images/characters/akemi-watanabe/neutral.webp",
+    talking: "/images/characters/akemi-watanabe/talking.webp",
+  },
+  "toru-takahashi": {
+    id: "toru-takahashi",
+    name: "Toru Takahashi",
+    nameJa: "高橋透",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "Power Electric Employee",
+    affiliationJa: "パワー電気の社員",
+    aivisSpeaker: "yukyu",
+    aivisModelUuid: "1f04a608-916c-4d9e-bf6e-b9da5c176f85",
+    aivisSpeakerUuid: "0bdd27c6-4b80-4f0f-a8b3-7a603e317f45",
+    aivisStyleId: 1099751712,
+    aivisStyleName: "デフォルト",
+    speedScale: 1.0,
+    pitchScale: 0.0,
+    neutral: "/images/characters/toru-takahashi/neutral.webp",
+    talking: "/images/characters/toru-takahashi/talking.webp",
+  },
+  "makiko-hayashi": {
+    id: "makiko-hayashi",
+    name: "Makiko Hayashi",
+    nameJa: "林真紀子",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "Power Electric Employee",
+    affiliationJa: "パワー電気の社員",
+    aivisSpeaker: "まい",
+    aivisModelUuid: "e9339137-2ae3-4d41-9394-fb757a7e61e6",
+    aivisSpeakerUuid: "41b7785f-35cc-4089-a360-dd8a63da5e75",
+    aivisStyleId: 1431611904,
+    aivisStyleName: "ノーマル",
+    speedScale: 1.0,
+    pitchScale: 0.0,
+    neutral: "/images/characters/makiko-hayashi/neutral.webp",
+    talking: "/images/characters/makiko-hayashi/talking.webp",
+  },
+  "hans-schmidt": {
+    id: "hans-schmidt",
+    name: "Hans Schmidt",
+    nameJa: "ハンス",
+    country: "Germany",
+    countryJa: "ドイツ",
+    affiliation: "Elementary School Student (12 yrs), Son of Karl & Klara Schmidt",
+    affiliationJa: "小学生 12歳、カールとクララ・シュミットの息子",
+    age: 12,
+    aivisSpeaker: "コハク",
+    aivisModelUuid: "22e8ed77-94fe-4ef2-871f-a86f94e9a579",
+    aivisSpeakerUuid: "5680ac39-43c9-487a-bc3e-018c0d29cc38",
+    aivisStyleId: 1878365376,
+    aivisStyleName: "ノーマル",
+    speedScale: 1.02,
+    pitchScale: 0.02,
+    neutral: "/images/characters/hans-schmidt/neutral.webp",
+    talking: "/images/characters/hans-schmidt/talking.webp",
   },
 };
 
@@ -478,6 +678,34 @@ export const MNN_SERVICE_ROLES: Record<string, CharacterAvatar> = {
     neutral: "/images/characters/lopez/neutral.webp",
     talking: "/images/characters/lopez/talking.webp",
   },
+  "university-staff": {
+    id: "university-staff",
+    name: "University Staff",
+    nameJa: "大学職員",
+    neutral: "/images/characters/university-staff/neutral.webp",
+    talking: "/images/characters/university-staff/talking.webp",
+  },
+  "hairdresser": {
+    id: "hairdresser",
+    name: "Hairdresser",
+    nameJa: "美容師",
+    neutral: "/images/characters/hairdresser/neutral.webp",
+    talking: "/images/characters/hairdresser/talking.webp",
+  },
+  "tour-guide": {
+    id: "tour-guide",
+    name: "Tour Guide",
+    nameJa: "ガイド",
+    neutral: "/images/characters/tour-guide/neutral.webp",
+    talking: "/images/characters/tour-guide/talking.webp",
+  },
+  "university-president": {
+    id: "university-president",
+    name: "University President",
+    nameJa: "学長",
+    neutral: "/images/characters/university-president/neutral.webp",
+    talking: "/images/characters/university-president/talking.webp",
+  },
 };
 
 export function getAllMnnCharacterProfiles(): MnnCharacterProfile[] {
@@ -506,12 +734,23 @@ export function getMnnCharacterProfile(
   if (normJa.includes("ワン・シュエ") || (normJa.includes("ワン") && !normJa.includes("ジョン")) || normEn.includes("wang xue")) return MNN_CHARACTER_CAST["wang-xue"];
   if (normJa.includes("松本良子") || normJa.includes("良子") || normEn.includes("yoshiko")) return MNN_CHARACTER_CAST["yoshiko-matsumoto"];
   if (normJa.includes("松本") || normJa.includes("まつもと") || normEn.includes("matsumoto")) return MNN_CHARACTER_CAST["tadashi-matsumoto"];
-  if (normJa.includes("木村いずみ") || normJa.includes("いずみ") || normEn.includes("izumi")) return MNN_CHARACTER_CAST["izumi-kimura"];
+  if (normJa.includes("木村いずみ") || normJa.includes("いずみ") || normJa.includes("アナウンサー") || normEn.includes("izumi") || normEn === "announcer") return MNN_CHARACTER_CAST["izumi-kimura"];
   if (normJa.includes("ワット") || normEn.includes("watt")) return MNN_CHARACTER_CAST["john-watt"];
+  if (normJa.includes("クララ") || normEn.includes("klara") || normEn.includes("clara")) return MNN_CHARACTER_CAST["klara-schmidt"];
+  if (normJa.includes("ハンス") || normEn.includes("hans")) return MNN_CHARACTER_CAST["hans-schmidt"];
   if (normJa.includes("シュミット") || normEn.includes("schmidt")) return MNN_CHARACTER_CAST["karl-schmidt"];
   if (normJa.includes("イー") || normJa.includes("ジンジュ") || normEn.includes("jin-ju") || normEn.includes("jinju") || normEn === "lee" || normEn === "ii") return MNN_CHARACTER_CAST["lee-jinju"];
   if (normJa.includes("グプタ") || normEn.includes("gupta")) return MNN_CHARACTER_CAST["gupta"];
   if (normJa.includes("タワポン") || normEn.includes("thawaphon") || normEn.includes("tawapon")) return MNN_CHARACTER_CAST["thawaphon"];
+  if (normJa.includes("鈴木康男") || normJa.includes("康男") || normEn.includes("yasuo") || normJa === "鈴木" || normEn === "suzuki") return MNN_CHARACTER_CAST["yasuo-suzuki"];
+  if (normJa.includes("中村秋子") || normJa.includes("秋子") || normEn.includes("akiko") || (normJa.includes("課長") && !normJa.includes("部長"))) return MNN_CHARACTER_CAST["akiko-nakamura"];
+  if (normJa.includes("小川よね") || normJa.includes("よね") || normEn.includes("yone")) return MNN_CHARACTER_CAST["yone-ogawa"];
+  if (normJa.includes("小川幸子") || normJa.includes("幸子") || normEn.includes("sachiko")) return MNN_CHARACTER_CAST["sachiko-ogawa"];
+  if (normJa.includes("小川博") || normJa.includes("小川") || normEn.includes("hiroshi") || normEn.includes("ogawa")) return MNN_CHARACTER_CAST["hiroshi-ogawa"];
+  if (normJa.includes("伊藤") || normJa.includes("ちせ子") || normEn.includes("chiseko") || normEn.includes("ito")) return MNN_CHARACTER_CAST["chiseko-ito"];
+  if (normJa.includes("渡辺") || normJa.includes("あけみ") || normEn.includes("akemi") || normEn.includes("watanabe")) return MNN_CHARACTER_CAST["akemi-watanabe"];
+  if (normJa.includes("高橋") || normJa.includes("透") || normEn.includes("toru") || normEn.includes("takahashi")) return MNN_CHARACTER_CAST["toru-takahashi"];
+  if (normJa.includes("林") || normJa.includes("真紀子") || normEn.includes("makiko") || normEn.includes("hayashi")) return MNN_CHARACTER_CAST["makiko-hayashi"];
 
   return null;
 }
@@ -895,6 +1134,42 @@ export function getCharacterAvatar(
     normEn.includes("lopez")
   ) {
     return MNN_SERVICE_ROLES["lopez"];
+  }
+
+  if (
+    normJa.includes("大学職員") ||
+    normEn.includes("university staff")
+  ) {
+    return MNN_SERVICE_ROLES["university-staff"];
+  }
+
+  if (
+    normJa.includes("美容師") ||
+    normEn.includes("hairdresser")
+  ) {
+    return MNN_SERVICE_ROLES["hairdresser"];
+  }
+
+  if (
+    normJa.includes("ガイド") ||
+    normEn === "guide" ||
+    normEn.includes("tour guide")
+  ) {
+    return MNN_SERVICE_ROLES["tour-guide"];
+  }
+
+  if (
+    normJa.includes("学長") ||
+    normEn.includes("university president")
+  ) {
+    return MNN_SERVICE_ROLES["university-president"];
+  }
+
+  if (
+    normJa.includes("係員") ||
+    normEn === "staff"
+  ) {
+    return GENKI_CHARACTER_AVATARS["store-attendant"];
   }
 
   if (

@@ -6,12 +6,14 @@ const TEXTBOOK_DATA_URLS = [
   "/data/v1/books/genki-1.json",
   "/data/v1/books/genki-2.json",
   "/data/v1/books/mnn-1.json",
+  "/data/v1/books/mnn-2.json",
 ] as const;
 
 const TEXTBOOK_COVER_URLS = [
   "/images/books/genki-1.webp",
   "/images/books/genki-2.webp",
   "/images/books/mnn-1.webp",
+  "/images/books/mnn-2.webp",
 ] as const;
 
 /**

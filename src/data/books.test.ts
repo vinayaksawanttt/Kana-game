@@ -12,11 +12,12 @@ describe("Textbooks Data Pipeline (Genki I & II)", () => {
   it("loads the textbook catalog correctly", async () => {
     const catalog = await getBooksCatalog();
     expect(catalog).toBeDefined();
-    expect(catalog.length).toBe(3);
+    expect(catalog.length).toBe(4);
 
     const genki1 = catalog.find((b) => b.id === "genki-1");
     const genki2 = catalog.find((b) => b.id === "genki-2");
     const mnn1 = catalog.find((b) => b.id === "mnn-1");
+    const mnn2 = catalog.find((b) => b.id === "mnn-2");
 
     expect(mnn1).toBeDefined();
     expect(mnn1?.level).toBe("N5");
@@ -24,6 +25,12 @@ describe("Textbooks Data Pipeline (Genki I & II)", () => {
     expect(mnn1?.lessonRange).toEqual([1, 25]);
     expect(mnn1?.stats.vocabularyCount).toBeGreaterThan(900);
     expect(mnn1?.stats.grammarCount).toBeGreaterThan(100);
+
+    expect(mnn2).toBeDefined();
+    expect(mnn2?.level).toBe("N4");
+    expect(mnn2?.totalLessons).toBe(25);
+    expect(mnn2?.lessonRange).toEqual([26, 50]);
+    expect(mnn2?.coverImage).toBe("/images/books/mnn-2.webp");
 
     expect(genki1).toBeDefined();
     expect(genki1?.level).toBe("N5");

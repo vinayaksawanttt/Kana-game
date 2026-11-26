@@ -36,7 +36,7 @@
       "vocabularyCount": 599,
       "kanjiCount": 172,
       "grammarCount": 61,
-      "practiceCount": 586
+      "practiceCount": 594
     }
   },
   {
@@ -57,6 +57,26 @@
       "kanjiCount": 267,
       "grammarCount": 163,
       "practiceCount": 1677
+    }
+  },
+  {
+    "id": "mnn-2",
+    "title": "Minna no Nihongo II: Main Textbook & Grammar Companion",
+    "japaneseTitle": "みんなの日本語 初級 II",
+    "level": "N4",
+    "series": "Minna no Nihongo",
+    "description": "Upper-elementary communicative Japanese textbook covering JLPT N4 vocabulary, sentence patterns (文型・例文), 21-character dialogues (会話・練習C), interactive drills (練習A/B・問題), potential/passive/causative/keigo grammar, and kanji across Lessons 26–50.",
+    "coverImage": "/images/books/mnn-2.webp",
+    "totalLessons": 25,
+    "lessonRange": [
+      26,
+      50
+    ],
+    "stats": {
+      "vocabularyCount": 1250,
+      "kanjiCount": 293,
+      "grammarCount": 134,
+      "practiceCount": 1821
     }
   }
 ]

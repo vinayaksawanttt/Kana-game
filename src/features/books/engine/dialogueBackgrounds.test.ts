@@ -50,7 +50,7 @@ describe("dialogueBackgrounds registry", () => {
   });
 
   it("verifies all unique background assets in ALL_DIALOGUE_BACKGROUNDS exist on disk", () => {
-    expect(ALL_DIALOGUE_BACKGROUNDS.length).toBe(60); // 40 Genki + 20 MNN
+    expect(ALL_DIALOGUE_BACKGROUNDS.length).toBe(71); // 40 Genki + 20 MNN 1 + 11 MNN 2
 
     for (const bgId of ALL_DIALOGUE_BACKGROUNDS) {
       const diskPath = path.join(
