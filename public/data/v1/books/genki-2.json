@@ -20433,49 +20433,57 @@
               "id": "l23-pv-a-1",
               "prompt": "メアリー",
               "cue": "till this semester ends",
-              "answer": "メアリーさんは今学期が終わるまで、日本にいるつもりです。"
+              "answer": "メアリーさんは今学期が終わるまで、日本にいるつもりです。",
+              "hint": "Mary plans to stay in Japan until the end of this semester."
             },
             {
               "id": "l23-pv-a-2",
               "prompt": "ソラ",
               "cue": "till she becomes fluent in Japanese",
-              "answer": "ソラさんは日本語がぺらぺらになるまで、日本にいるつもりです。"
+              "answer": "ソラさんは日本語がぺらぺらになるまで、日本にいるつもりです。",
+              "hint": "Sora plans to stay in Japan until she becomes fluent in Japanese."
             },
             {
               "id": "l23-pv-a-3",
               "prompt": "ロバート",
               "cue": "till money runs out",
-              "answer": "ロバートさんはお金がなくなるまで、日本にいるつもりです。"
+              "answer": "ロバートさんはお金がなくなるまで、日本にいるつもりです。",
+              "hint": "Robert plans to stay in Japan until he runs out of money."
             },
             {
               "id": "l23-pv-a-4",
               "prompt": "カルロス",
               "cue": "till he dies",
-              "answer": "カルロスさんは死ぬまで、日本にいるつもりです。"
+              "answer": "カルロスさんは死ぬまで、日本にいるつもりです。",
+              "hint": "Carlos plans to stay in Japan until he dies."
             },
             {
               "id": "l23-pv-a-5",
               "prompt": "ジョン",
               "cue": "till he finds an ideal partner",
-              "answer": "ジョンさんは理想の人を見つけるまで結婚しません。"
+              "answer": "ジョンさんは理想の人を見つけるまで結婚しません。",
+              "hint": "John won’t get married until he finds his ideal partner."
             },
             {
               "id": "l23-pv-a-6",
               "prompt": "けん",
               "cue": "till his favorite team wins the championship",
-              "answer": "けんさんは好きなチームが優勝するまで結婚しません。"
+              "answer": "けんさんは好きなチームが優勝するまで結婚しません。",
+              "hint": "Ken won’t get married until his favorite team wins the championship."
             },
             {
               "id": "l23-pv-a-7",
               "prompt": "ナオミ",
               "cue": "till she saves one million yen",
-              "answer": "ナオミさんは百万円ためるまで結婚しません。"
+              "answer": "ナオミさんは百万円ためるまで結婚しません。",
+              "hint": "Naomi won’t get married until she has saved one million yen."
             },
             {
               "id": "l23-pv-a-8",
               "prompt": "ウデイ",
               "cue": "till he becomes thirty years old",
-              "answer": "ウデイさんは三十歳になるまで結婚しません。"
+              "answer": "ウデイさんは三十歳になるまで結婚しません。",
+              "hint": "Uday won’t get married until he turns thirty."
             }
           ]
         },

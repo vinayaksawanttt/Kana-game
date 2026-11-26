@@ -47,6 +47,39 @@ interface RawDictionaryIndex {
   >;
 }
 
+interface RawTextbookBook {
+  id: string;
+  lessons?: Array<{
+    vocabulary?: Array<{
+      word?: string;
+      reading?: string;
+      readingKana?: string;
+      meaning?: string;
+      type?: string;
+    }>;
+  }>;
+}
+
+const TEXTBOOK_SOURCES: Array<{ id: string; level: ShiritoriLevel }> = [
+  { id: "genki-1", level: 5 },
+  { id: "mnn-1", level: 5 },
+  { id: "genki-2", level: 4 },
+  { id: "mnn-2", level: 4 },
+];
+
+function cleanTextbookNounField(raw?: string): string {
+  if (!raw) return "";
+  const stripped = raw
+    .normalize("NFKC")
+    .replace(/\([^)]*\)/g, "")
+    .replace(/（[^）]*）/g, "")
+    .replace(/\[[^\]]*\]/g, "")
+    .replace(/［[^］]*］/g, "")
+    .trim();
+  if (!stripped || /[～〜…、。?？!！/・\s]/.test(stripped)) return "";
+  return stripped;
+}
+
 const MEANING_OVERRIDES: Record<string, string> = {
   貘: "tapir",
   バク: "tapir",
@@ -372,6 +405,27 @@ async function main(): Promise<void> {
   for (const item of CURATED_WORDS) {
     addWord(item.word, item.kana, item.meaning, item.jlpt, "curated");
   }
+
+  // 1b. Add Textbook Companion Nouns (Genki I/II & Minna no Nihongo I/II)
+  let textbookAdded = 0;
+  for (const { id: bookId, level } of TEXTBOOK_SOURCES) {
+    const bookFile = resolve(root, `public/data/v1/books/${bookId}.json`);
+    if (!existsSync(bookFile)) continue;
+    const book = JSON.parse(await readFile(bookFile, "utf8")) as RawTextbookBook;
+    for (const lesson of book.lessons ?? []) {
+      for (const v of lesson.vocabulary ?? []) {
+        if (v.type !== "n" && v.type !== "noun") continue;
+        const word = cleanTextbookNounField(v.word);
+        const reading = cleanTextbookNounField(v.reading || v.readingKana);
+        const meaning = (v.meaning ?? "").trim();
+        if (!word || !reading || !meaning || isJapaneseText(meaning)) continue;
+        const sizeBefore = deduped.size;
+        addWord(word, reading, meaning, level, `tb-${bookId}`);
+        if (deduped.size > sizeBefore) textbookAdded++;
+      }
+    }
+  }
+  console.log(`✓ Added ${textbookAdded} Textbook Companion nouns across Genki I/II & MNN I/II`);
 
   // 2. Add OpenJLPT vocabulary
   for (const { source, level } of levels) {

@@ -364,12 +364,21 @@ describe("Listening Quiz Engine", () => {
         jlpt: 5 as const,
         audioSrc: "/audio/books/dialogues/mnn-1/l1-miller-0.opus",
       },
+      {
+        id: "tb:mnn-2:L26:l26-scene-i:0",
+        ja: "あしたから旅行なんです。",
+        reading: "あしたから旅行なんです。",
+        en: "I am going on a trip starting tomorrow.",
+        jlpt: 4 as const,
+        audioSrc: "/audio/books/dialogues/mnn-2/l26-scene-i-0.opus",
+      },
     ];
 
     const extracted = extractListeningSentences([], [], textbookLines);
-    expect(extracted).toHaveLength(2);
+    expect(extracted).toHaveLength(3);
     expect(extracted.some((s) => s.id === "tb:genki-1:L1:0:0" && s.audioSrc?.includes("genki-1"))).toBe(true);
     expect(extracted.some((s) => s.id === "tb:mnn-1:L1:0:0" && s.audioSrc?.includes("mnn-1"))).toBe(true);
+    expect(extracted.some((s) => s.id === "tb:mnn-2:L26:l26-scene-i:0" && s.jlpt === 4 && s.audioSrc?.includes("mnn-2"))).toBe(true);
   });
 
   it("prioritizes distractors that share character names and story context", () => {

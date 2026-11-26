@@ -1,15 +1,15 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-11-26T19:28:41.164Z",
-  "bundleHash": "e025b5a4532e",
+  "generatedAt": "2026-11-26T19:47:30.814Z",
+  "bundleHash": "c138c2d61138",
   "assets": {
     "books/genki-1.json": {
       "hash": "865eeac6e82b",
       "bytes": 752189
     },
     "books/genki-2.json": {
-      "hash": "e5a15d74b774",
-      "bytes": 746265
+      "hash": "be3cc12db630",
+      "bytes": 746935
     },
     "books/index.json": {
       "hash": "402a0f069cd6",
@@ -20,8 +20,8 @@
       "bytes": 1906696
     },
     "books/mnn-2.json": {
-      "hash": "87eae1f5029b",
-      "bytes": 1518808
+      "hash": "3ffb64f07a34",
+      "bytes": 1637905
     },
     "dictionary-index.json": {
       "hash": "3d98ac74562d",
@@ -160,12 +160,12 @@
       "bytes": 27246
     },
     "shiritori/valid-readings.json": {
-      "hash": "6c153125fb00",
-      "bytes": 1979805
+      "hash": "ce1524725c4a",
+      "bytes": 1990800
     },
     "shiritori/words.json": {
-      "hash": "038875745086",
-      "bytes": 2934931
+      "hash": "392f7340572d",
+      "bytes": 2941531
     },
     "stories/n4-airport-departure.json": {
       "hash": "9400559e2ae6",
