@@ -274,6 +274,7 @@ def map_character_profile(speaker_en, speaker_ja):
         return {
             "character": "Mike Miller",
             "primary": "gemini",
+            "allowed_engines": ["gemini"],
             "gemini_voice": "Charon",
             "kenpath_voice": KENPATH_VOICES["ren"],
             "aivis_key": "fumifumi",
@@ -289,6 +290,7 @@ def map_character_profile(speaker_en, speaker_ja):
         return {
             "character": "Keiko Sato",
             "primary": "gemini",
+            "allowed_engines": ["gemini"],
             "gemini_voice": "Sulafat",
             "kenpath_voice": KENPATH_VOICES["mio"],
             "aivis_key": "kanae",
@@ -303,15 +305,16 @@ def map_character_profile(speaker_en, speaker_ja):
     if "友子" in norm_ja or "ともこ" in norm_ja or "tomoko" in norm_en:
         return {
             "character": "Tomoko Yamada",
-            "primary": "gemini",
+            "primary": "voicevox",
+            "allowed_engines": ["voicevox"],
             "gemini_voice": "Despina",
             "kenpath_voice": KENPATH_VOICES["aoi"],
             "aivis_key": "f2",
             "aivis_style": "normal",
             "voicevox_id": 16,  # 九州そら
-            "base_speed": 0.98,
+            "base_speed": 1.15,  # User note: faster speaking pace
             "base_pitch": 0.0,
-            "base_intonation": 1.05,
+            "base_intonation": 1.08,
         }
 
     # 4. Taro Yamada (山田 太郎) - Elementary School Boy (8yo)
@@ -320,6 +323,7 @@ def map_character_profile(speaker_en, speaker_ja):
         return {
             "character": "Taro Yamada (8yo)",
             "primary": "aivis",
+            "allowed_engines": ["aivis"],
             "gemini_voice": "Achird",
             "kenpath_voice": KENPATH_VOICES["ren"],
             "aivis_key": "kohaku",
@@ -334,7 +338,8 @@ def map_character_profile(speaker_en, speaker_ja):
     if "山田" in norm_ja or "やまだ" in norm_ja or "yamada" in norm_en:
         return {
             "character": "Ichiro Yamada",
-            "primary": "gemini",
+            "primary": "aivis",
+            "allowed_engines": ["aivis"],
             "gemini_voice": "Iapetus",
             "kenpath_voice": KENPATH_VOICES["ren"],
             "aivis_key": "ginga",
@@ -350,6 +355,7 @@ def map_character_profile(speaker_en, speaker_ja):
         return {
             "character": "Teresa Santos (9yo)",
             "primary": "gemini",
+            "allowed_engines": ["gemini"],
             "gemini_voice": "Leda",
             "kenpath_voice": KENPATH_VOICES["mio"],
             "aivis_key": "mao",
@@ -365,6 +371,7 @@ def map_character_profile(speaker_en, speaker_ja):
         return {
             "character": "Maria Santos",
             "primary": "gemini",
+            "allowed_engines": ["gemini"],
             "gemini_voice": "Callirrhoe",
             "kenpath_voice": KENPATH_VOICES["emi"],
             "aivis_key": "mao",
@@ -380,6 +387,7 @@ def map_character_profile(speaker_en, speaker_ja):
         return {
             "character": "Jose Santos",
             "primary": "gemini",
+            "allowed_engines": ["gemini"],
             "gemini_voice": "Orus",
             "kenpath_voice": KENPATH_VOICES["haruto"],
             "aivis_key": "m1",
@@ -394,7 +402,8 @@ def map_character_profile(speaker_en, speaker_ja):
     if "カリナ" in norm_ja or "karina" in norm_en:
         return {
             "character": "Karina",
-            "primary": "gemini",
+            "primary": "aivis",
+            "allowed_engines": ["aivis"],
             "gemini_voice": "Aoede",
             "kenpath_voice": KENPATH_VOICES["mio"],
             "aivis_key": "mai",
@@ -410,6 +419,7 @@ def map_character_profile(speaker_en, speaker_ja):
         return {
             "character": "Dr. Wang Xue",
             "primary": "gemini",
+            "allowed_engines": ["gemini"],
             "gemini_voice": "Enceladus",
             "kenpath_voice": KENPATH_VOICES["ren"],
             "aivis_key": "yukyu",
@@ -425,6 +435,7 @@ def map_character_profile(speaker_en, speaker_ja):
         return {
             "character": "Yoshiko Matsumoto",
             "primary": "gemini",
+            "allowed_engines": ["gemini"],
             "gemini_voice": "Gacrux",
             "kenpath_voice": KENPATH_VOICES["emi"],
             "aivis_key": "mao",
@@ -439,7 +450,8 @@ def map_character_profile(speaker_en, speaker_ja):
     if "松本" in norm_ja or "まつもと" in norm_ja or "matsumoto" in norm_en:
         return {
             "character": "Tadashi Matsumoto",
-            "primary": "gemini",
+            "primary": "voicevox",
+            "allowed_engines": ["voicevox"],
             "gemini_voice": "Fenrir",
             "kenpath_voice": KENPATH_VOICES["kenta"],
             "aivis_key": "aida",
@@ -455,6 +467,7 @@ def map_character_profile(speaker_en, speaker_ja):
         return {
             "character": "Izumi Kimura",
             "primary": "gemini",
+            "allowed_engines": ["gemini"],
             "gemini_voice": "Zephyr",
             "kenpath_voice": KENPATH_VOICES["aoi"],
             "aivis_key": "f1",
@@ -470,6 +483,7 @@ def map_character_profile(speaker_en, speaker_ja):
         return {
             "character": "Prof. John Watt",
             "primary": "gemini",
+            "allowed_engines": ["gemini"],
             "gemini_voice": "Rasalgethi",
             "kenpath_voice": KENPATH_VOICES["haruto"],
             "aivis_key": "shinjou",
@@ -484,7 +498,8 @@ def map_character_profile(speaker_en, speaker_ja):
     if "シュミット" in norm_ja or "schmidt" in norm_en:
         return {
             "character": "Karl Schmidt",
-            "primary": "gemini",
+            "primary": "aivis",
+            "allowed_engines": ["aivis"],
             "gemini_voice": "Schedar",
             "kenpath_voice": KENPATH_VOICES["kenta"],
             "aivis_key": "shoujou",
@@ -499,7 +514,8 @@ def map_character_profile(speaker_en, speaker_ja):
     if "イー" in norm_ja or "ジンジュ" in norm_ja or norm_en in ("lee", "ii", "lee jin-ju", "jin-ju"):
         return {
             "character": "Lee Jin-ju",
-            "primary": "gemini",
+            "primary": "voicevox",
+            "allowed_engines": ["voicevox"],
             "gemini_voice": "Erinome",
             "kenpath_voice": KENPATH_VOICES["aoi"],
             "aivis_key": "morioki",
@@ -515,6 +531,7 @@ def map_character_profile(speaker_en, speaker_ja):
         return {
             "character": "Gupta",
             "primary": "gemini",
+            "allowed_engines": ["gemini"],
             "gemini_voice": "Umbriel",
             "kenpath_voice": KENPATH_VOICES["haruto"],
             "aivis_key": "m2",
@@ -529,10 +546,11 @@ def map_character_profile(speaker_en, speaker_ja):
     if "タワポン" in norm_ja or "thawaphon" in norm_en or "tawapon" in norm_en:
         return {
             "character": "Thawaphon",
-            "primary": "gemini",
-            "gemini_voice": "Algieba",  # Smooth young male voice (replaces feminine Puck)
+            "primary": "voicevox",
+            "allowed_engines": ["voicevox"],
+            "gemini_voice": "Algieba",
             "kenpath_voice": KENPATH_VOICES["ren"],
-            "aivis_key": "m1",          # Young male AivisSpeech model (replaces female child kohaku)
+            "aivis_key": "m1",
             "aivis_style": "normal",
             "voicevox_id": 12,  # 白上虎太郎
             "base_speed": 1.0,
@@ -545,6 +563,7 @@ def map_character_profile(speaker_en, speaker_ja):
         return {
             "character": "Tanaka",
             "primary": "gemini",
+            "allowed_engines": ["gemini"],
             "gemini_voice": "Alnilam",
             "kenpath_voice": KENPATH_VOICES["ren"],
             "aivis_key": "tanaka",
@@ -560,6 +579,7 @@ def map_character_profile(speaker_en, speaker_ja):
         return {
             "character": "Kobayashi",
             "primary": "gemini",
+            "allowed_engines": ["gemini"],
             "gemini_voice": "Sadaltager",
             "kenpath_voice": KENPATH_VOICES["haruto"],
             "aivis_key": "shinjou",
@@ -572,9 +592,14 @@ def map_character_profile(speaker_en, speaker_ja):
 
     # 21. Suzuki / Nakamura / Lopez
     if any(w in norm_ja or w in norm_en for w in ["鈴木", "suzuki", "中村", "nakamura", "ロペス", "lopez"]):
+        c_name = speaker_en or "Colleague"
+        is_suzuki = "鈴木" in norm_ja or "suzuki" in norm_en
+        is_lopez = "ロペス" in norm_ja or "lopez" in norm_en
+        eng = "gemini" if is_lopez else "aivis"
         return {
-            "character": speaker_en or "Colleague",
-            "primary": "gemini",
+            "character": c_name,
+            "primary": eng,
+            "allowed_engines": [eng],
             "gemini_voice": "Sadachbia",
             "kenpath_voice": KENPATH_VOICES["ren"],
             "aivis_key": "sawabaru",
@@ -583,13 +608,18 @@ def map_character_profile(speaker_en, speaker_ja):
             "base_speed": 1.0,
             "base_pitch": 0.0,
             "base_intonation": 1.05,
+            "volume_scale": 1.6 if is_suzuki else 1.0,  # User note: Suzuki need more louder
+            "extra_filter": "volume=5dB" if is_suzuki else None,
         }
 
     # 22. TV Host (司会者) / Reporter (レポーター)
     if any(w in norm_ja or w in norm_en for w in ["司会", "host", "レポーター", "reporter"]):
+        is_reporter = "レポーター" in norm_ja or "reporter" in norm_en
+        eng = "voicevox" if is_reporter else "gemini"
         return {
-            "character": speaker_en or "Host/Reporter",
-            "primary": "gemini",
+            "character": speaker_en or ("Reporter" if is_reporter else "Host"),
+            "primary": eng,
+            "allowed_engines": [eng],
             "gemini_voice": "Laomedeia",
             "kenpath_voice": KENPATH_VOICES["mio"],
             "aivis_key": "f1",
@@ -605,6 +635,7 @@ def map_character_profile(speaker_en, speaker_ja):
         return {
             "character": "Elderly Man",
             "primary": "aivis",
+            "allowed_engines": ["aivis"],
             "gemini_voice": "Fenrir",
             "kenpath_voice": KENPATH_VOICES["kenta"],
             "aivis_key": "rotejin",
@@ -620,6 +651,7 @@ def map_character_profile(speaker_en, speaker_ja):
         return {
             "character": speaker_en or "Mature Woman",
             "primary": "gemini",
+            "allowed_engines": ["gemini"],
             "gemini_voice": "Vindemiatrix",
             "kenpath_voice": KENPATH_VOICES["emi"],
             "aivis_key": "mao",
@@ -647,9 +679,13 @@ def map_character_profile(speaker_en, speaker_ja):
             "ホテル",
         ]
     ):
+        is_nurse = "nurse" in norm_en or "看護師" in norm_ja
+        is_woman = "woman" in norm_en or "女の人" in norm_ja
+        eng = "aivis" if is_nurse else ("voicevox" if is_woman else "gemini")
         return {
             "character": speaker_en or "Female Staff",
-            "primary": "gemini",
+            "primary": eng,
+            "allowed_engines": [eng],
             "gemini_voice": "Achernar",
             "kenpath_voice": KENPATH_VOICES["aoi"],
             "aivis_key": "f1",
@@ -677,9 +713,13 @@ def map_character_profile(speaker_en, speaker_ja):
             "staff",
         ]
     ) and "station" not in norm_en and "駅" not in norm_ja:
+        is_store_attendant = "store attendant" in norm_en
+        is_waiter = "waiter" in norm_en or "ウェイター" in norm_ja
+        eng = "voicevox" if is_store_attendant else ("aivis" if is_waiter else "gemini")
         return {
             "character": speaker_en or "Service Clerk",
-            "primary": "gemini",
+            "primary": eng,
+            "allowed_engines": [eng],
             "gemini_voice": "Autonoe",
             "kenpath_voice": KENPATH_VOICES["mio"],
             "aivis_key": "f1",
@@ -712,9 +752,13 @@ def map_character_profile(speaker_en, speaker_ja):
             "男の人",
         ]
     ):
+        is_vv = any(w in norm_en or w in norm_ja for w in ["caretaker", "管理人", "station", "駅員"])
+        is_aivis = any(w in norm_en or w in norm_ja for w in ["driver", "運転手", "real estate", "不動産", "dentist", "歯医者"])
+        eng = "voicevox" if is_vv else ("aivis" if is_aivis else "gemini")
         return {
             "character": speaker_en or "Professional Male",
-            "primary": "gemini",
+            "primary": eng,
+            "allowed_engines": [eng],
             "gemini_voice": "Zubenelgenubi",
             "kenpath_voice": KENPATH_VOICES["kenta"],
             "aivis_key": "aida",
@@ -725,10 +769,11 @@ def map_character_profile(speaker_en, speaker_ja):
             "base_intonation": 1.04,
         }
 
-    # Default fallback
+    # Default fallback (Everyone, Mike Miller, Keiko Sato, etc.)
     return {
         "character": speaker_en or "Speaker",
         "primary": "gemini",
+        "allowed_engines": ["gemini"],
         "gemini_voice": "Puck",
         "kenpath_voice": KENPATH_VOICES["ren"],
         "aivis_key": "fumifumi",
@@ -1165,6 +1210,8 @@ def synthesize_with_aivis(spoken_ja, profile, emotion_meta, out_opus_path):
                 query_data["tempoDynamicsScale"] = round(
                     float(emotion_meta.get("tempoDynamicsScale", 1.05)), 3
                 )
+            if "volume_scale" in profile:
+                query_data["volumeScale"] = float(profile["volume_scale"])
 
             s_url = f"{AIVIS_URL}/synthesis?speaker={style_id}"
             req2 = urllib.request.Request(
@@ -1176,7 +1223,9 @@ def synthesize_with_aivis(spoken_ja, profile, emotion_meta, out_opus_path):
             with urllib.request.urlopen(req2, timeout=45) as resp2:
                 wav_bytes = resp2.read()
 
-            ok = transcode_and_normalize_opus(wav_bytes, "wav", out_opus_path)
+            ok = transcode_and_normalize_opus(
+                wav_bytes, "wav", out_opus_path, extra_filter=profile.get("extra_filter")
+            )
             if ok:
                 sp_name = AIVIS_SPEAKERS[profile["aivis_key"]]["name"]
                 return True, f"Aivis({sp_name}:{style_id})"
@@ -1200,6 +1249,8 @@ def synthesize_with_voicevox(spoken_ja, profile, emotion_meta, out_opus_path):
         query_data["intonationScale"] = round(
             float(emotion_meta.get("intonationScale", profile["base_intonation"])), 3
         )
+        if "volume_scale" in profile:
+            query_data["volumeScale"] = float(profile["volume_scale"])
 
         s_url = f"{VOICEVOX_URL}/synthesis?speaker={style_id}"
         req2 = urllib.request.Request(
@@ -1211,7 +1262,9 @@ def synthesize_with_voicevox(spoken_ja, profile, emotion_meta, out_opus_path):
         with urllib.request.urlopen(req2, timeout=30) as resp2:
             wav_bytes = resp2.read()
 
-        ok = transcode_and_normalize_opus(wav_bytes, "wav", out_opus_path)
+        ok = transcode_and_normalize_opus(
+            wav_bytes, "wav", out_opus_path, extra_filter=profile.get("extra_filter")
+        )
         if ok:
             return True, f"VOICEVOX(id={style_id})"
     except Exception:
@@ -1244,17 +1297,26 @@ def synthesize_hybrid_line(task, profile, emotion_meta, gemini_keys, aivis_up, v
         )
         return True, "Silence(0.5s)"
 
-    # Engine Priority Order based on Character Profile (Gemini TTS -> AivisSpeech -> VOICEVOX)
-    if profile["primary"] == "aivis":
-        engine_order = ["aivis", "gemini", "voicevox"]
-    else:
-        engine_order = ["gemini", "aivis", "voicevox"]
+    # Strictly respect character's locked allowed_engines list
+    engine_order = profile.get("allowed_engines")
+    if not engine_order:
+        if profile["primary"] == "aivis":
+            engine_order = ["aivis", "gemini", "voicevox"]
+        elif profile["primary"] == "voicevox":
+            engine_order = ["voicevox", "aivis", "gemini"]
+        else:
+            engine_order = ["gemini", "aivis", "voicevox"]
 
     for eng in engine_order:
         if eng == "gemini":
-            ok, label = synthesize_with_gemini(spoken_ja, profile["gemini_voice"], out_abs, gemini_keys)
-            if ok:
-                return True, label
+            # If character is strictly locked to Gemini only, retry across cooldown if rate limited
+            max_attempts = 4 if engine_order == ["gemini"] else 1
+            for attempt in range(max_attempts):
+                ok, label = synthesize_with_gemini(spoken_ja, profile["gemini_voice"], out_abs, gemini_keys)
+                if ok:
+                    return True, label
+                if attempt < max_attempts - 1:
+                    time.sleep(15)
         elif eng == "aivis" and aivis_up:
             ok, label = synthesize_with_aivis(spoken_ja, profile, emotion_meta, out_abs)
             if ok:
@@ -1264,7 +1326,7 @@ def synthesize_hybrid_line(task, profile, emotion_meta, gemini_keys, aivis_up, v
             if ok:
                 return True, label
 
-    return False, "ALL_ENGINES_FAILED"
+    return False, f"ENGINE_LOCKED_FAILED({','.join(engine_order)})"
 
 
 # ---------------------------------------------------------------------------
@@ -1288,9 +1350,12 @@ def main():
     only_mnn = "--mnn" in sys.argv
     force = "--force" in sys.argv
     lesson_filter = None
+    engine_filter = None
     for arg in sys.argv[1:]:
         if arg.startswith("--lesson="):
             lesson_filter = int(arg.split("=", 1)[1])
+        elif arg.startswith("--engine="):
+            engine_filter = [e.strip().lower() for e in arg.split("=", 1)[1].split(",") if e.strip()]
 
     books = [
         {"id": "mnn-1", "file": "public/data/v1/books/mnn-1.json"},
@@ -1321,6 +1386,9 @@ def main():
                     out_rel = f"/audio/books/dialogues/{b['id']}/{s_id}-{idx}.opus"
                     out_abs = os.path.join(os.getcwd(), f"public{out_rel}")
                     if not force and os.path.exists(out_abs) and os.path.getsize(out_abs) > 500:
+                        continue
+                    prof = map_character_profile(line.get("speaker", ""), line.get("speakerJa", ""))
+                    if engine_filter and prof.get("primary") not in engine_filter:
                         continue
                     t = {
                         "bookId": b["id"],

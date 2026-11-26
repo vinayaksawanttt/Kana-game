@@ -34,7 +34,15 @@ export function DialogueRoleplayPlayer({
   showEnglish,
   onClose,
 }: DialogueRoleplayPlayerProps) {
-  const { playSentenceAsync, stopAudio, isPlaying } = useJapaneseAudio();
+  const { playSentenceAsync, preloadSentenceAudio, stopAudio, isPlaying } = useJapaneseAudio();
+
+  // Preload opening lines of the scene on mount for instant playback
+  useEffect(() => {
+    if (typeof preloadSentenceAudio !== "function") return;
+    for (const line of scene.lines.slice(0, 3)) {
+      preloadSentenceAudio(line.ja, line.audioSrc);
+    }
+  }, [preloadSentenceAudio, scene.id, scene.lines]);
 
   // Extract unique speakers from the scene
   const speakers = useMemo(() => {
@@ -143,6 +151,10 @@ export function DialogueRoleplayPlayer({
       setCurrentIndex(index);
       setIsCompleted(false);
       const line = scene.lines[index];
+      const nextLine = scene.lines[index + 1];
+      if (nextLine && typeof preloadSentenceAudio === "function") {
+        preloadSentenceAudio(nextLine.ja, nextLine.audioSrc);
+      }
       const userTurn =
         mode === "shadowing" || line.speakerJa === selectedRole;
 
@@ -165,7 +177,7 @@ export function DialogueRoleplayPlayer({
         setIsWaitingForUser(true);
       }
     },
-    [mode, playbackRate, playSentenceAsync, scene.lines, selectedRole]
+    [mode, playbackRate, playSentenceAsync, preloadSentenceAudio, scene.lines, selectedRole]
   );
 
   useEffect(() => {

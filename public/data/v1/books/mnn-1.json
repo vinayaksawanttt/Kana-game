@@ -45257,24 +45257,21 @@
               "ja": "ええ、ぜひ。皆さん、ほんとうにいろいろお世話になりました。",
               "speaker": "Miller",
               "en": "Yes, definitely. Everyone, thank you so very much for everything you've done for me.",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-i-7.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-i-7.opus"
             },
             {
               "speakerJa": "佐藤",
               "ja": "頑張ってください。お体に気をつけて。",
               "speaker": "Sato",
               "en": "Do your best. Take care of your health.",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-i-8.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-i-8.opus"
             },
             {
               "speakerJa": "ミラー",
               "ja": "はい。皆さんもどうぞお元気で。",
               "speaker": "Miller",
               "en": "Yes. Please take care of yourselves too, everyone.",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-i-9.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-i-9.opus"
             }
           ],
           "hasAudio": true
@@ -45289,40 +45286,35 @@
               "ja": "あした暇だったら、ジャズを聞きに行きませんか。",
               "speaker": "Miller",
               "en": "If you are free tomorrow, won't you go listen to jazz with me?",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-ii-0.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-ii-0.opus"
             },
             {
               "speakerJa": "木村",
               "ja": "いいですね。どこへ行きますか。",
               "speaker": "Kimura",
               "en": "Sounds good. Where shall we go?",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-ii-1.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-ii-1.opus"
             },
             {
               "speakerJa": "ミラー",
               "ja": "神戸にいい所がありますよ。",
               "speaker": "Miller",
               "en": "There is a good place in Kobe.",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-ii-2.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-ii-2.opus"
             },
             {
               "speakerJa": "木村",
               "ja": "神戸ですか。いいですね。",
               "speaker": "Kimura",
               "en": "Kobe? Sounds good.",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-ii-3.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-ii-3.opus"
             },
             {
               "speakerJa": "サントス",
               "ja": "あした天気がよかったら、ゴルフをしに行きませんか。",
               "speaker": "Santos",
               "en": "If the weather is good tomorrow, won't you go play golf with me?",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-ii-4.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-ii-4.opus"
             },
             {
               "speakerJa": "山田",
@@ -45337,8 +45329,7 @@
               "ja": "神戸にいい所がありますよ。",
               "speaker": "Santos",
               "en": "There is a good place in Kobe.",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-ii-6.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-ii-6.opus"
             },
             {
               "speakerJa": "山田",
@@ -45353,8 +45344,7 @@
               "ja": "5時に仕事が終わったら、ベトナム料理を食べに行きませんか。",
               "speaker": "Wang",
               "en": "If work finishes at 5 o'clock, won't you go eat Vietnamese food with me?",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-ii-8.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-ii-8.opus"
             },
             {
               "speakerJa": "カリナ",
@@ -45369,8 +45359,7 @@
               "ja": "神戸にいい所がありますよ。",
               "speaker": "Wang",
               "en": "There is a good place in Kobe.",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-ii-10.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-ii-10.opus"
             },
             {
               "speakerJa": "カリナ",
@@ -45393,64 +45382,56 @@
               "ja": "もしもし、佐藤さんですか。",
               "speaker": "Miller",
               "en": "Hello, is this Ms. Sato?",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iii-0.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iii-0.opus"
             },
             {
               "speakerJa": "佐藤",
               "ja": "はい、佐藤です。",
               "speaker": "Sato",
               "en": "Yes, this is Sato.",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iii-1.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iii-1.opus"
             },
             {
               "speakerJa": "ミラー",
               "ja": "ミラーですが、今、会議室にいます。アキックスの牧野さんが来たら、教えてください。",
               "speaker": "Miller",
               "en": "This is Miller. I'm in the meeting room right now. When Mr. Makino from Akix arrives, please let me know.",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iii-2.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iii-2.opus"
             },
             {
               "speakerJa": "佐藤",
               "ja": "はい、わかりました。",
               "speaker": "Sato",
               "en": "Yes, understood.",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iii-3.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iii-3.opus"
             },
             {
               "speakerJa": "グプタ",
               "ja": "もしもし、佐藤さんですか。",
               "speaker": "Gupta",
               "en": "Hello, is this Ms. Sato?",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iii-4.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iii-4.opus"
             },
             {
               "speakerJa": "佐藤",
               "ja": "はい、佐藤です。",
               "speaker": "Sato",
               "en": "Yes, this is Sato.",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iii-5.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iii-5.opus"
             },
             {
               "speakerJa": "グプタ",
               "ja": "グプタですが、今、会議室にいます。資料が届いたら、会議室へ持って来てください。",
               "speaker": "Gupta",
               "en": "This is Gupta. I'm in the meeting room right now. When the documents arrive, please bring them to the meeting room.",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iii-6.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iii-6.opus"
             },
             {
               "speakerJa": "佐藤",
               "ja": "はい、わかりました。",
               "speaker": "Sato",
               "en": "Yes, understood.",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iii-7.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iii-7.opus"
             },
             {
               "speakerJa": "山田",
@@ -45465,8 +45446,7 @@
               "ja": "はい、佐藤です。",
               "speaker": "Sato",
               "en": "Yes, this is Sato.",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iii-9.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iii-9.opus"
             },
             {
               "speakerJa": "山田",
@@ -45481,8 +45461,7 @@
               "ja": "はい、わかりました。",
               "speaker": "Sato",
               "en": "Yes, understood.",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iii-11.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iii-11.opus"
             }
           ],
           "hasAudio": true
@@ -45505,8 +45484,7 @@
               "ja": "いいえ、雨だったら、ありません。",
               "speaker": "Santos",
               "en": "No, if it rains, it won't be held.",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iv-1.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iv-1.opus"
             },
             {
               "speakerJa": "タワポン",
@@ -45529,8 +45507,7 @@
               "ja": "いいえ、天気が悪かったら、ありません。",
               "speaker": "Kimura",
               "en": "No, if the weather is bad, it won't be held.",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iv-4.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iv-4.opus"
             },
             {
               "speakerJa": "イー",
@@ -45545,24 +45522,21 @@
               "ja": "来週のテニス、雨が降っても、ありますか。",
               "speaker": "Watt",
               "en": "Next week's tennis, will it be held even if it rains?",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iv-6.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iv-6.opus"
             },
             {
               "speakerJa": "ミラー",
               "ja": "いいえ、雨が降ったら、ありません。",
               "speaker": "Miller",
               "en": "No, if it rains, it won't be held.",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iv-7.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iv-7.opus"
             },
             {
               "speakerJa": "ワット",
               "ja": "そうですか。",
               "speaker": "Watt",
               "en": "Is that so?",
-              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iv-8.opus",
-              "hasAudio": true
+              "audioSrc": "/audio/books/dialogues/mnn-1/l25-scene-iv-8.opus"
             }
           ],
           "hasAudio": true

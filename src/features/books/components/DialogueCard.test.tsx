@@ -6,6 +6,7 @@ import { type BookDialogueScene, type BookLesson } from "@/data/books";
 
 // Mock audio hook
 const mockPlaySentenceAsync = vi.fn().mockResolvedValue(undefined);
+const mockPreloadSentenceAudio = vi.fn();
 const mockStopAudio = vi.fn();
 let mockIsPlaying = false;
 let mockActiveKey: string | null = null;
@@ -13,6 +14,7 @@ let mockActiveKey: string | null = null;
 vi.mock("@/hooks/useJapaneseAudio", () => ({
   useJapaneseAudio: () => ({
     playSentenceAsync: mockPlaySentenceAsync,
+    preloadSentenceAudio: mockPreloadSentenceAudio,
     stopAudio: mockStopAudio,
     isPlaying: mockIsPlaying,
     activeKey: mockActiveKey,
@@ -107,6 +109,11 @@ describe("DialogueCard component", () => {
 
     // Play Full Scene button is ready
     expect(screen.getByRole("button", { name: /Play full scene audio/i })).not.toBeNull();
+
+    // First 3 dialogue lines are preloaded on mount so the first line never clips on first play
+    expect(mockPreloadSentenceAudio).toHaveBeenCalledWith("おはようございます。", "/audio/l1_d1_1.opus");
+    expect(mockPreloadSentenceAudio).toHaveBeenCalledWith("おはよう、メアリーさん。", "/audio/l1_d1_2.opus");
+    expect(mockPreloadSentenceAudio).toHaveBeenCalledWith("きょうはいい天気ですね。", "/audio/l1_d1_3.opus");
   });
 
   it("delegates playback to onTogglePlayScene when Play Full Scene is clicked without starting conflicting local audio", async () => {

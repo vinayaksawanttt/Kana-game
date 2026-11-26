@@ -194,10 +194,21 @@ export function DialogueCard({
   // Audio system singleton
   const {
     playSentenceAsync,
+    preloadSentenceAudio,
     stopAudio,
     isPlaying: isAudioPlaying,
     activeKey,
   } = useJapaneseAudio();
+
+  // Eagerly preload the opening lines of the scene so clicking "Play Full Scene"
+  // starts speaking immediately from syllable 1 without network/decode clipping
+  useEffect(() => {
+    if (typeof preloadSentenceAudio !== "function") return;
+    const linesToWarm = scene.lines.slice(0, 3);
+    for (const line of linesToWarm) {
+      preloadSentenceAudio(line.ja, line.audioSrc);
+    }
+  }, [preloadSentenceAudio, scene.id, scene.lines]);
 
   const playbackRunIdRef = useRef<number>(0);
   const playLineStepRef = useRef<(index: number, currentRunId: number) => Promise<void>>(async () => {});
@@ -228,6 +239,10 @@ export function DialogueCard({
       setLocalIsPlaying(true);
 
       const line = scene.lines[index];
+      const nextLine = scene.lines[index + 1];
+      if (nextLine && typeof preloadSentenceAudio === "function") {
+        preloadSentenceAudio(nextLine.ja, nextLine.audioSrc);
+      }
       try {
         await playSentenceAsync(line.ja, {
           audioSrc: line.audioSrc,
@@ -248,7 +263,7 @@ export function DialogueCard({
 
       void playLineStepRef.current(index + 1, currentRunId);
     },
-    [isCompleted, onToggleComplete, playSentenceAsync, scene.lines]
+    [isCompleted, onToggleComplete, playSentenceAsync, preloadSentenceAudio, scene.lines]
   );
 
   useEffect(() => {
@@ -410,6 +425,20 @@ export function DialogueCard({
             <button
               type="button"
               onClick={handlePlayToggle}
+              onMouseEnter={() => {
+                if (!isPlaying && typeof preloadSentenceAudio === "function") {
+                  for (const line of scene.lines.slice(0, 3)) {
+                    preloadSentenceAudio(line.ja, line.audioSrc);
+                  }
+                }
+              }}
+              onFocus={() => {
+                if (!isPlaying && typeof preloadSentenceAudio === "function") {
+                  for (const line of scene.lines.slice(0, 3)) {
+                    preloadSentenceAudio(line.ja, line.audioSrc);
+                  }
+                }
+              }}
               className={cn(
                 "tb-focus-ring inline-flex items-center gap-1.5 rounded-xl px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer shadow-2xs",
                 isPlaying

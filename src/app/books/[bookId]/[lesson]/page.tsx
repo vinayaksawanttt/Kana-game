@@ -214,7 +214,7 @@ export default function BookLessonPage() {
   );
 
   // Audio hook for continuous dialogue playback
-  const { playSentenceAsync, stopAudio } = useJapaneseAudio();
+  const { playSentenceAsync, preloadSentenceAudio, stopAudio } = useJapaneseAudio();
 
   // Grammar Self-Check, Study Status & Focused View states
   const [selfCheckOpen, setSelfCheckOpen] = useState<Record<string, boolean>>({});
@@ -316,9 +316,20 @@ export default function BookLessonPage() {
     scenePlaybackAbortRef.current = false;
     setPlayingSceneId(scene.id);
 
+    // Pre-warm opening lines before starting playback loop
+    if (typeof preloadSentenceAudio === "function") {
+      for (const line of scene.lines.slice(0, 3)) {
+        preloadSentenceAudio(line.ja, line.audioSrc);
+      }
+    }
+
     for (let i = 0; i < scene.lines.length; i++) {
       if (scenePlaybackAbortRef.current) break;
       setPlayingLineIndex(i);
+      const nextLine = scene.lines[i + 1];
+      if (nextLine && typeof preloadSentenceAudio === "function") {
+        preloadSentenceAudio(nextLine.ja, nextLine.audioSrc);
+      }
       try {
         await playSentenceAsync(scene.lines[i].ja, {
           audioSrc: scene.lines[i].audioSrc,

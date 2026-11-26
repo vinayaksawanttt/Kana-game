@@ -432,5 +432,3834 @@
     "speedScale": 0.95,
     "intonationScale": 1.15,
     "tempoDynamicsScale": 1.05
+  },
+  "l5-scene-iii-1": {
+    "style": "normal",
+    "phrasedJa": "ありがとうございます。一人で行きましたか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l5-scene-iii-12": {
+    "style": "normal",
+    "phrasedJa": "いいえ、彼女と行きました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l5-scene-iv-10": {
+    "style": "normal",
+    "phrasedJa": "そうですか。いつ日本へ来ましたか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l6-scene-i-0": {
+    "style": "normal",
+    "phrasedJa": "ミラーさん。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l6-scene-i-1": {
+    "style": "normal",
+    "phrasedJa": "何ですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l6-scene-i-3": {
+    "style": "normal",
+    "phrasedJa": "いいですね。どこへ行きますか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l6-scene-i-4": {
+    "style": "normal",
+    "phrasedJa": "大阪城です。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l6-scene-iii-1": {
+    "style": "normal",
+    "phrasedJa": "毎日屋で買います。時々フランス屋へ行きます。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l6-scene-iii-4": {
+    "style": "normal",
+    "phrasedJa": "いつもどこで魚を買いますか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l6-scene-iv-11": {
+    "style": "normal",
+    "phrasedJa": "わかりました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l7-scene-i-5": {
+    "style": "warm",
+    "phrasedJa": "ありがとうございます。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l7-scene-i-7": {
+    "style": "normal",
+    "phrasedJa": "いただきます。このスプーン、すてきですね。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l7-scene-ii-0": {
+    "style": "normal",
+    "phrasedJa": "これは日本語で何ですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l7-scene-ii-1": {
+    "style": "normal",
+    "phrasedJa": "はさみです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l7-scene-ii-3": {
+    "style": "normal",
+    "phrasedJa": "はい、そうです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l7-scene-ii-9": {
+    "style": "normal",
+    "phrasedJa": "セロテープです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l7-scene-ii-11": {
+    "style": "normal",
+    "phrasedJa": "はい、そうです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l7-scene-iii-0": {
+    "style": "normal",
+    "phrasedJa": "その時計、すてきですね。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l7-scene-iii-1": {
+    "style": "warm",
+    "phrasedJa": "ありがとうございます。誕生日に父にもらいました。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l7-scene-iii-2": {
+    "style": "normal",
+    "phrasedJa": "いいですね。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l7-scene-iii-6": {
+    "style": "normal",
+    "phrasedJa": "そのネクタイ、すてきですね。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l7-scene-iii-7": {
+    "style": "warm",
+    "phrasedJa": "ありがとうございます。誕生日に彼女にもらいました。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l7-scene-iii-8": {
+    "style": "normal",
+    "phrasedJa": "いいですね。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l7-scene-iv-1": {
+    "style": "normal",
+    "phrasedJa": "いいえ、まだです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l7-scene-iv-3": {
+    "style": "normal",
+    "phrasedJa": "ええ、いいですね。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l7-scene-iv-5": {
+    "style": "normal",
+    "phrasedJa": "いいえ、まだです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l7-scene-iv-7": {
+    "style": "normal",
+    "phrasedJa": "ええ、いいですね。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l8-scene-i-1": {
+    "style": "normal",
+    "phrasedJa": "毎日とても楽しいです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l8-scene-i-3": {
+    "style": "normal",
+    "phrasedJa": "そうですね。忙しいですが、おもしろいです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l8-scene-i-5": {
+    "style": "normal",
+    "phrasedJa": "いいえ、けっこうです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l8-scene-i-6": {
+    "style": "normal",
+    "phrasedJa": "あ、もう6時ですね。そろそろ失礼します。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l8-scene-i-8": {
+    "style": "warm",
+    "phrasedJa": "きょうはどうもありがとうございました。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l8-scene-ii-1": {
+    "style": "normal",
+    "phrasedJa": "はい、元気です。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l8-scene-ii-3": {
+    "style": "normal",
+    "phrasedJa": "そうですね。忙しいですが、おもしろいです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l8-scene-ii-4": {
+    "style": "normal",
+    "phrasedJa": "お元気ですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l8-scene-ii-6": {
+    "style": "normal",
+    "phrasedJa": "日本語の勉強はどうですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l8-scene-ii-8": {
+    "style": "normal",
+    "phrasedJa": "お元気ですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l8-scene-ii-10": {
+    "style": "normal",
+    "phrasedJa": "大学の寮はどうですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l8-scene-iii-0": {
+    "style": "calm",
+    "phrasedJa": "すみません。そのかばんを見せてください。",
+    "speedScale": 0.94,
+    "intonationScale": 1.02,
+    "tempoDynamicsScale": 0.95
+  },
+  "l8-scene-iii-1": {
+    "style": "normal",
+    "phrasedJa": "これですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l8-scene-iii-2": {
+    "style": "normal",
+    "phrasedJa": "いいえ、その赤いかばんです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l8-scene-iii-3": {
+    "style": "warm",
+    "phrasedJa": "はい、どうぞ。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l8-scene-iii-5": {
+    "style": "normal",
+    "phrasedJa": "これですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l8-scene-iii-7": {
+    "style": "warm",
+    "phrasedJa": "はい、どうぞ。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l8-scene-iii-8": {
+    "style": "calm",
+    "phrasedJa": "すみません。そのシャツを見せてください。",
+    "speedScale": 0.94,
+    "intonationScale": 1.02,
+    "tempoDynamicsScale": 0.95
+  },
+  "l8-scene-iii-9": {
+    "style": "normal",
+    "phrasedJa": "これですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l8-scene-iii-10": {
+    "style": "normal",
+    "phrasedJa": "いいえ、その白いシャツです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l8-scene-iii-11": {
+    "style": "warm",
+    "phrasedJa": "はい、どうぞ。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l8-scene-iv-0": {
+    "style": "normal",
+    "phrasedJa": "先週金閣寺へ行きました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l8-scene-iv-1": {
+    "style": "normal",
+    "phrasedJa": "そうですか。どんな所ですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l8-scene-iv-2": {
+    "style": "cheerful",
+    "phrasedJa": "きれいな所ですよ。写真を見ますか。",
+    "speedScale": 1.03,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.25
+  },
+  "l8-scene-iv-3": {
+    "style": "normal",
+    "phrasedJa": "ええ。見せてください。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l8-scene-iv-8": {
+    "style": "normal",
+    "phrasedJa": "先週奈良公園へ行きました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l8-scene-iv-9": {
+    "style": "normal",
+    "phrasedJa": "そうですか。どんな所ですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l8-scene-iv-10": {
+    "style": "cheerful",
+    "phrasedJa": "静かな所ですよ。写真を見ますか。",
+    "speedScale": 1.03,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.25
+  },
+  "l8-scene-iv-11": {
+    "style": "normal",
+    "phrasedJa": "ええ。見せてください。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l9-scene-i-0": {
+    "style": "normal",
+    "phrasedJa": "はい。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l9-scene-i-1": {
+    "style": "normal",
+    "phrasedJa": "木村さんですか。ミラーです。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l9-scene-i-2": {
+    "style": "normal",
+    "phrasedJa": "ああ、ミラーさん、こんばんは。お元気ですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l9-scene-i-3": {
+    "style": "normal",
+    "phrasedJa": "ええ、元気です。あのう、木村さん、クラシックのコンサート、いっしょにいかがですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l9-scene-i-4": {
+    "style": "normal",
+    "phrasedJa": "いいですね。いつですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l9-scene-i-5": {
+    "style": "normal",
+    "phrasedJa": "来週の金曜日の晩です。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l9-scene-i-6": {
+    "style": "normal",
+    "phrasedJa": "金曜日ですか。金曜日の晩はちょっと……。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l9-scene-i-7": {
+    "style": "normal",
+    "phrasedJa": "だめですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l9-scene-i-8": {
+    "style": "calm",
+    "phrasedJa": "ええ、残念ですが、友達と約束がありますから、……。",
+    "speedScale": 0.94,
+    "intonationScale": 1.02,
+    "tempoDynamicsScale": 0.95
+  },
+  "l9-scene-i-9": {
+    "style": "normal",
+    "phrasedJa": "そうですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l9-scene-i-10": {
+    "style": "normal",
+    "phrasedJa": "ええ。また今度お願いします。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l9-scene-ii-0": {
+    "style": "normal",
+    "phrasedJa": "イタリア料理が好きですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l9-scene-ii-1": {
+    "style": "normal",
+    "phrasedJa": "ええ、好きです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l9-scene-ii-2": {
+    "style": "normal",
+    "phrasedJa": "じゃ、日曜日いっしょに食べませんか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l9-scene-ii-5": {
+    "style": "normal",
+    "phrasedJa": "ええ、好きです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l9-scene-ii-7": {
+    "style": "normal",
+    "phrasedJa": "いいですね。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l9-scene-ii-8": {
+    "style": "normal",
+    "phrasedJa": "絵が好きですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l9-scene-ii-10": {
+    "style": "normal",
+    "phrasedJa": "じゃ、日曜日いっしょに美術館へ行きませんか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l9-scene-iii-4": {
+    "style": "normal",
+    "phrasedJa": "すみません。細かいお金、ありますか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l9-scene-iii-5": {
+    "style": "normal",
+    "phrasedJa": "ええ、ありますよ。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l9-scene-iii-7": {
+    "style": "warm",
+    "phrasedJa": "いいですよ。どうぞ。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l9-scene-iii-9": {
+    "style": "normal",
+    "phrasedJa": "ええ、ありますよ。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l9-scene-iii-11": {
+    "style": "warm",
+    "phrasedJa": "いいですよ。どうぞ。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l9-scene-iv-0": {
+    "style": "normal",
+    "phrasedJa": "コンサートのチケットをもらいました。いっしょに行きませんか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l9-scene-iv-3": {
+    "style": "normal",
+    "phrasedJa": "土曜日ですか。残念ですが、仕事がありますから。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l9-scene-iv-4": {
+    "style": "normal",
+    "phrasedJa": "そうですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l9-scene-iv-6": {
+    "style": "normal",
+    "phrasedJa": "いつですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l12-scene-iii-8": {
+    "style": "normal",
+    "phrasedJa": "紅茶はいかがですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l12-scene-iii-9": {
+    "style": "warm",
+    "phrasedJa": "ありがとうございます。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l12-scene-iii-10": {
+    "style": "normal",
+    "phrasedJa": "レモンとミルクとどちらがいいですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l12-scene-iii-11": {
+    "style": "normal",
+    "phrasedJa": "ミルクをお願いします。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l12-scene-iv-0": {
+    "style": "normal",
+    "phrasedJa": "来年北海道へ行きます。いつがいちばんいいですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l12-scene-iv-2": {
+    "style": "normal",
+    "phrasedJa": "6月ですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l12-scene-iv-5": {
+    "style": "normal",
+    "phrasedJa": "そうですね。8月がいちばんいいですよ。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l12-scene-iv-7": {
+    "style": "normal",
+    "phrasedJa": "ええ。涼しいですから。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l12-scene-iv-8": {
+    "style": "normal",
+    "phrasedJa": "来年北海道へ行きます。いつがいちばんいいですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l12-scene-iv-9": {
+    "style": "normal",
+    "phrasedJa": "そうですね。秋がいちばんいいですよ。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l12-scene-iv-10": {
+    "style": "normal",
+    "phrasedJa": "秋ですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l12-scene-iv-11": {
+    "style": "normal",
+    "phrasedJa": "ええ。紅葉がきれいですから。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l13-scene-i-6": {
+    "style": "normal",
+    "phrasedJa": "わたしはてんぷら定食。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l13-scene-i-8": {
+    "style": "warm",
+    "phrasedJa": "てんぷら定食と牛どんですね。少々お待ちください。",
+    "speedScale": 0.95,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.1
+  },
+  "l13-scene-i-9": {
+    "style": "polite",
+    "phrasedJa": "1,680円でございます。",
+    "speedScale": 0.95,
+    "intonationScale": 1.08,
+    "tempoDynamicsScale": 1.05
+  },
+  "l13-scene-i-10": {
+    "style": "normal",
+    "phrasedJa": "すみません。別々にお願いします。",
+    "speedScale": 0.94,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.02
+  },
+  "l13-scene-i-11": {
+    "style": "warm",
+    "phrasedJa": "はい。てんぷら定食は980円、牛どんは700円です。",
+    "speedScale": 0.96,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.08
+  },
+  "l13-scene-ii-1": {
+    "style": "normal",
+    "phrasedJa": "広いうちが欲しいです。今のうちは狭いですから。",
+    "speedScale": 0.97,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l13-scene-ii-7": {
+    "style": "cheerful",
+    "phrasedJa": "お金が欲しいです。来年結婚しますから。",
+    "speedScale": 1.02,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.12
+  },
+  "l13-scene-iii-0": {
+    "style": "normal",
+    "phrasedJa": "のどがかわきましたね。",
+    "speedScale": 0.96,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.15
+  },
+  "l13-scene-iii-2": {
+    "style": "cheerful",
+    "phrasedJa": "あそこで何か飲みませんか。",
+    "speedScale": 0.98,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.18
+  },
+  "l13-scene-iii-8": {
+    "style": "calm",
+    "phrasedJa": "疲れましたね。",
+    "speedScale": 0.94,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l13-scene-iii-10": {
+    "style": "warm",
+    "phrasedJa": "あそこでちょっと休みませんか。",
+    "speedScale": 0.95,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.15
+  },
+  "l13-scene-iii-11": {
+    "style": "cheerful",
+    "phrasedJa": "ええ、そうしましょう。",
+    "speedScale": 1.0,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.2
+  },
+  "l13-scene-iv-0": {
+    "style": "normal",
+    "phrasedJa": "週末は何をしましたか。",
+    "speedScale": 0.98,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.1
+  },
+  "l13-scene-iv-1": {
+    "style": "cheerful",
+    "phrasedJa": "奈良へ遊びに行きました。",
+    "speedScale": 1.01,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.08
+  },
+  "l13-scene-iv-2": {
+    "style": "normal",
+    "phrasedJa": "どうでしたか。",
+    "speedScale": 0.96,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.12
+  },
+  "l13-scene-iv-3": {
+    "style": "cheerful",
+    "phrasedJa": "とても楽しかったです。",
+    "speedScale": 1.03,
+    "intonationScale": 1.28,
+    "tempoDynamicsScale": 1.22
+  },
+  "l13-scene-iv-4": {
+    "style": "calm",
+    "phrasedJa": "そうですか。",
+    "speedScale": 0.95,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l13-scene-iv-10": {
+    "style": "normal",
+    "phrasedJa": "お正月は何をしましたか。",
+    "speedScale": 0.98,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.1
+  },
+  "l13-scene-iv-11": {
+    "style": "cheerful",
+    "phrasedJa": "北海道へスキーに行きました。",
+    "speedScale": 1.02,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l13-scene-iv-12": {
+    "style": "normal",
+    "phrasedJa": "どうでしたか。",
+    "speedScale": 0.96,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.12
+  },
+  "l13-scene-iv-13": {
+    "style": "cheerful",
+    "phrasedJa": "とても楽しかったです。",
+    "speedScale": 1.03,
+    "intonationScale": 1.28,
+    "tempoDynamicsScale": 1.22
+  },
+  "l13-scene-iv-14": {
+    "style": "calm",
+    "phrasedJa": "そうですか。",
+    "speedScale": 0.95,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l14-scene-ii-0": {
+    "style": "calm",
+    "phrasedJa": "すみません。",
+    "speedScale": 0.94,
+    "intonationScale": 1.02,
+    "tempoDynamicsScale": 0.95
+  },
+  "l14-scene-ii-1": {
+    "style": "normal",
+    "phrasedJa": "はい。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l14-scene-ii-2": {
+    "style": "normal",
+    "phrasedJa": "ちょっとボールペンを貸してください。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l14-scene-ii-3": {
+    "style": "warm",
+    "phrasedJa": "はい、どうぞ。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l14-scene-ii-4": {
+    "style": "calm",
+    "phrasedJa": "すみません。",
+    "speedScale": 0.94,
+    "intonationScale": 1.02,
+    "tempoDynamicsScale": 0.95
+  },
+  "l14-scene-ii-6": {
+    "style": "normal",
+    "phrasedJa": "ちょっと砂糖を取ってください。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l14-scene-iii-0": {
+    "style": "normal",
+    "phrasedJa": "荷物が多いですね。1つ持ちましょうか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l14-scene-iii-1": {
+    "style": "calm",
+    "phrasedJa": "すみません。お願いします。",
+    "speedScale": 0.94,
+    "intonationScale": 1.02,
+    "tempoDynamicsScale": 0.95
+  },
+  "l14-scene-iii-4": {
+    "style": "normal",
+    "phrasedJa": "雨が降っていますね。タクシーを呼びましょうか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l14-scene-iii-5": {
+    "style": "calm",
+    "phrasedJa": "すみません。お願いします。",
+    "speedScale": 0.94,
+    "intonationScale": 1.02,
+    "tempoDynamicsScale": 0.95
+  },
+  "l14-scene-iv-1": {
+    "style": "normal",
+    "phrasedJa": "あちらで写真を撮っています。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l15-scene-i-0": {
+    "style": "normal",
+    "phrasedJa": "いい映画でしたね。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l15-scene-i-1": {
+    "style": "normal",
+    "phrasedJa": "ええ。わたしは家族を思い出しました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l15-scene-i-2": {
+    "style": "normal",
+    "phrasedJa": "そうですか。ミラーさんのご家族は？",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l15-scene-i-3": {
+    "style": "normal",
+    "phrasedJa": "両親と姉が1人います。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l15-scene-i-4": {
+    "style": "normal",
+    "phrasedJa": "どちらにいらっしゃいますか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l15-scene-i-5": {
+    "style": "normal",
+    "phrasedJa": "両親はニューヨークの近くに住んでいます。姉はロンドンで働いています。木村さんのご家族は？",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l15-scene-i-6": {
+    "style": "normal",
+    "phrasedJa": "3人です。父は銀行員です。母は高校で英語を教えています。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l15-scene-ii-0": {
+    "style": "calm",
+    "phrasedJa": "ちょっとすみません。",
+    "speedScale": 0.94,
+    "intonationScale": 1.02,
+    "tempoDynamicsScale": 0.95
+  },
+  "l15-scene-ii-1": {
+    "style": "normal",
+    "phrasedJa": "はい。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l15-scene-ii-2": {
+    "style": "normal",
+    "phrasedJa": "このカタログ、もらってもいいですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l15-scene-ii-3": {
+    "style": "warm",
+    "phrasedJa": "ええ、どうぞ。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l15-scene-ii-4": {
+    "style": "normal",
+    "phrasedJa": "どうも。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l15-scene-ii-6": {
+    "style": "normal",
+    "phrasedJa": "はい。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l15-scene-ii-8": {
+    "style": "warm",
+    "phrasedJa": "ええ、どうぞ。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l15-scene-iii-0": {
+    "style": "normal",
+    "phrasedJa": "あのう、いい歯医者を知っていますか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l15-scene-iii-1": {
+    "style": "normal",
+    "phrasedJa": "ええ。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l15-scene-iii-2": {
+    "style": "calm",
+    "phrasedJa": "すみませんが、教えてください。",
+    "speedScale": 0.94,
+    "intonationScale": 1.02,
+    "tempoDynamicsScale": 0.95
+  },
+  "l15-scene-iii-3": {
+    "style": "normal",
+    "phrasedJa": "いいですよ。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l15-scene-iii-5": {
+    "style": "normal",
+    "phrasedJa": "ええ。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l15-scene-iii-7": {
+    "style": "normal",
+    "phrasedJa": "いいですよ。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l15-scene-iii-8": {
+    "style": "normal",
+    "phrasedJa": "あのう、市役所の電話番号を知っていますか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l15-scene-iii-10": {
+    "style": "calm",
+    "phrasedJa": "すみませんが、教えてください。",
+    "speedScale": 0.94,
+    "intonationScale": 1.02,
+    "tempoDynamicsScale": 0.95
+  },
+  "l15-scene-iv-0": {
+    "style": "normal",
+    "phrasedJa": "皆さん、こんにちは。みんなのインタビューの時間です。お名前は？",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l15-scene-iv-1": {
+    "style": "normal",
+    "phrasedJa": "ミラーです。アメリカから来ました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l15-scene-iv-2": {
+    "style": "normal",
+    "phrasedJa": "お仕事は？",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l15-scene-iv-9": {
+    "style": "warm",
+    "phrasedJa": "よろしくお願いします。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l16-scene-i-0": {
+    "style": "normal",
+    "phrasedJa": "すみませんが、ちょっと使い方を教えてください。",
+    "speedScale": 0.95,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.0
+  },
+  "l16-scene-i-1": {
+    "style": "normal",
+    "phrasedJa": "お引き出しですか。",
+    "speedScale": 0.96,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.0
+  },
+  "l16-scene-i-2": {
+    "style": "normal",
+    "phrasedJa": "そうです。",
+    "speedScale": 0.98,
+    "intonationScale": 1.0,
+    "tempoDynamicsScale": 0.95
+  },
+  "l16-scene-i-3": {
+    "style": "normal",
+    "phrasedJa": "じゃ、まずここを押してください。",
+    "speedScale": 0.95,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.0
+  },
+  "l16-scene-i-4": {
+    "style": "normal",
+    "phrasedJa": "はい。",
+    "speedScale": 0.96,
+    "intonationScale": 1.0,
+    "tempoDynamicsScale": 0.95
+  },
+  "l16-scene-i-5": {
+    "style": "normal",
+    "phrasedJa": "次にキャッシュカードをここに入れて、暗証番号を押してください。",
+    "speedScale": 0.95,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.1
+  },
+  "l16-scene-i-6": {
+    "style": "normal",
+    "phrasedJa": "はい。押しました。",
+    "speedScale": 0.95,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l16-scene-i-7": {
+    "style": "normal",
+    "phrasedJa": "じゃ、金額を押してください。",
+    "speedScale": 0.96,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.0
+  },
+  "l16-scene-i-8": {
+    "style": "normal",
+    "phrasedJa": "5万円ですが、5……。",
+    "speedScale": 0.94,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l16-scene-i-9": {
+    "style": "normal",
+    "phrasedJa": "この万円を押します。それからこの確認ボタンを押してください。",
+    "speedScale": 0.95,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.15
+  },
+  "l16-scene-i-10": {
+    "style": "warm",
+    "phrasedJa": "はい。どうもありがとうございました。",
+    "speedScale": 0.96,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.2
+  },
+  "l16-scene-ii-1": {
+    "style": "normal",
+    "phrasedJa": "ええ、京都へ行きました。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l16-scene-ii-3": {
+    "style": "normal",
+    "phrasedJa": "友達に会って、食事して、それからお寺を見ました。",
+    "speedScale": 0.98,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.1
+  },
+  "l16-scene-ii-4": {
+    "style": "normal",
+    "phrasedJa": "きのうはどこか行きましたか。",
+    "speedScale": 0.98,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.05
+  },
+  "l16-scene-ii-6": {
+    "style": "normal",
+    "phrasedJa": "そうですか。京都で何をしましたか。",
+    "speedScale": 0.98,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.0
+  },
+  "l16-scene-ii-8": {
+    "style": "normal",
+    "phrasedJa": "きのうはどこか行きましたか。",
+    "speedScale": 0.98,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.05
+  },
+  "l16-scene-ii-10": {
+    "style": "normal",
+    "phrasedJa": "そうですか。京都で何をしましたか。",
+    "speedScale": 0.98,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.0
+  },
+  "l16-scene-iii-1": {
+    "style": "normal",
+    "phrasedJa": "1年ぐらいです。日本へ来てから、始めました。",
+    "speedScale": 0.97,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.05
+  },
+  "l16-scene-iii-3": {
+    "style": "sweet",
+    "phrasedJa": "いいえ、まだまだです。",
+    "speedScale": 0.96,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l16-scene-iii-4": {
+    "style": "cheerful",
+    "phrasedJa": "日本語が上手ですね。どのくらい勉強しましたか。",
+    "speedScale": 1.0,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.15
+  },
+  "l16-scene-iii-6": {
+    "style": "cheerful",
+    "phrasedJa": "そうですか。すごいですね。",
+    "speedScale": 1.02,
+    "intonationScale": 1.3,
+    "tempoDynamicsScale": 1.2
+  },
+  "l16-scene-iii-8": {
+    "style": "cheerful",
+    "phrasedJa": "日本語が上手ですね。どのくらい勉強しましたか。",
+    "speedScale": 1.0,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.15
+  },
+  "l16-scene-iii-9": {
+    "style": "normal",
+    "phrasedJa": "6か月ぐらいです。IMCに入ってから、始めました。",
+    "speedScale": 0.97,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.05
+  },
+  "l16-scene-iii-10": {
+    "style": "cheerful",
+    "phrasedJa": "そうですか。すごいですね。",
+    "speedScale": 1.02,
+    "intonationScale": 1.3,
+    "tempoDynamicsScale": 1.2
+  },
+  "l16-scene-iii-11": {
+    "style": "sweet",
+    "phrasedJa": "いいえ、まだまだです。",
+    "speedScale": 0.96,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l16-scene-iv-4": {
+    "style": "normal",
+    "phrasedJa": "メキシコのベラクルスから来ました。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l16-scene-iv-5": {
+    "style": "surprise",
+    "phrasedJa": "ベラクルス？どんな所ですか。",
+    "speedScale": 1.0,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.15
+  },
+  "l16-scene-iv-6": {
+    "style": "warm",
+    "phrasedJa": "そうですね。海が近くて、きれいな所です。",
+    "speedScale": 0.97,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.1
+  },
+  "l16-scene-iv-7": {
+    "style": "normal",
+    "phrasedJa": "そうですか。",
+    "speedScale": 0.98,
+    "intonationScale": 0.98,
+    "tempoDynamicsScale": 0.95
+  },
+  "l16-scene-iv-9": {
+    "style": "surprise",
+    "phrasedJa": "フランケン？どんな所ですか。",
+    "speedScale": 1.0,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.15
+  },
+  "l16-scene-iv-11": {
+    "style": "normal",
+    "phrasedJa": "そうですか。",
+    "speedScale": 0.98,
+    "intonationScale": 0.98,
+    "tempoDynamicsScale": 0.95
+  },
+  "l1-scene-i-1": {
+    "style": "normal",
+    "phrasedJa": "おはようございます。佐藤さん、こちらはマイク・ミラーさんです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l1-scene-ii-4": {
+    "style": "warm",
+    "phrasedJa": "初めまして。カリナです。インドネシアから来ました。どうぞよろしく。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l1-scene-iii-0": {
+    "style": "normal",
+    "phrasedJa": "失礼ですが、お名前は？",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l1-scene-iii-2": {
+    "style": "normal",
+    "phrasedJa": "リーさんですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l1-scene-iii-4": {
+    "style": "normal",
+    "phrasedJa": "失礼ですが、お名前は？",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l1-scene-iii-6": {
+    "style": "normal",
+    "phrasedJa": "タナポンさんですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l1-scene-iv-0": {
+    "style": "normal",
+    "phrasedJa": "田中さん、おはようございます。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l1-scene-iv-2": {
+    "style": "normal",
+    "phrasedJa": "こちらはミラーさんです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l1-scene-iv-5": {
+    "style": "normal",
+    "phrasedJa": "こちらはシュミットさんです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l1-scene-iv-6": {
+    "style": "warm",
+    "phrasedJa": "初めまして。シュミットです。パワー電気のエンジニアです。どうぞよろしくお願いします。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l2-scene-i-0": {
+    "style": "normal",
+    "phrasedJa": "はい。どなたですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l2-scene-i-3": {
+    "style": "warm",
+    "phrasedJa": "こちらこそよろしくお願いします。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l2-scene-i-5": {
+    "style": "warm",
+    "phrasedJa": "どうもありがとうございます。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l2-scene-ii-1": {
+    "style": "normal",
+    "phrasedJa": "えっ、何ですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l2-scene-ii-3": {
+    "style": "warm",
+    "phrasedJa": "どうもありがとうございます。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l2-scene-ii-4": {
+    "style": "normal",
+    "phrasedJa": "あのう、これ、お土産です。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l2-scene-ii-6": {
+    "style": "warm",
+    "phrasedJa": "チョコレートです。どうぞ。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l2-scene-iii-0": {
+    "style": "normal",
+    "phrasedJa": "それは何ですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l2-scene-iii-2": {
+    "style": "normal",
+    "phrasedJa": "そうですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l2-scene-iii-3": {
+    "style": "normal",
+    "phrasedJa": "それは何ですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l2-scene-iii-5": {
+    "style": "normal",
+    "phrasedJa": "そうですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l2-scene-iii-6": {
+    "style": "normal",
+    "phrasedJa": "それは何ですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l2-scene-iii-8": {
+    "style": "normal",
+    "phrasedJa": "そうですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l2-scene-iv-3": {
+    "style": "warm",
+    "phrasedJa": "あ、わたしのです。ありがとうございます。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l2-scene-iv-7": {
+    "style": "warm",
+    "phrasedJa": "あ、わたしのです。ありがとうございます。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l3-scene-ii-6": {
+    "style": "normal",
+    "phrasedJa": "すみません。かばん売り場はどこですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l3-scene-ii-8": {
+    "style": "normal",
+    "phrasedJa": "どうも。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l3-scene-iii-6": {
+    "style": "normal",
+    "phrasedJa": "ドイツです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l3-scene-iii-8": {
+    "style": "normal",
+    "phrasedJa": "ベルリンです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l4-scene-ii-5": {
+    "style": "normal",
+    "phrasedJa": "郵便局は何時から何時までですか。",
+    "speedScale": 0.98,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.1
+  },
+  "l4-scene-ii-7": {
+    "style": "normal",
+    "phrasedJa": "休みは何曜日ですか。",
+    "speedScale": 0.98,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.05
+  },
+  "l4-scene-ii-9": {
+    "style": "cheerful",
+    "phrasedJa": "どうも。",
+    "speedScale": 1.02,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.0
+  },
+  "l4-scene-iii-6": {
+    "style": "normal",
+    "phrasedJa": "1時からです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l4-scene-iii-8": {
+    "style": "normal",
+    "phrasedJa": "2時半に終わります。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l4-scene-iii-10": {
+    "style": "normal",
+    "phrasedJa": "映画は何時からですか。",
+    "speedScale": 0.98,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.1
+  },
+  "l4-scene-iii-12": {
+    "style": "normal",
+    "phrasedJa": "何時に終わりますか。",
+    "speedScale": 0.98,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.1
+  },
+  "l4-scene-iii-14": {
+    "style": "warm",
+    "phrasedJa": "そうですか。どうも。",
+    "speedScale": 0.96,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.05
+  },
+  "l4-scene-iv-0": {
+    "style": "normal",
+    "phrasedJa": "きのう12時まで勉強しました。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l4-scene-iv-2": {
+    "style": "normal",
+    "phrasedJa": "1時に寝ました。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l4-scene-iv-5": {
+    "style": "warm",
+    "phrasedJa": "そうですか。何時に寝ましたか。",
+    "speedScale": 0.96,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.1
+  },
+  "l4-scene-iv-7": {
+    "style": "warm",
+    "phrasedJa": "大変ですね。",
+    "speedScale": 0.95,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.15
+  },
+  "l5-scene-ii-0": {
+    "style": "normal",
+    "phrasedJa": "あしたは日曜日ですね。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l5-scene-ii-2": {
+    "style": "normal",
+    "phrasedJa": "わたしは大阪城へ行きます。タワポンさんは？",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l5-scene-ii-6": {
+    "style": "normal",
+    "phrasedJa": "わたしは美術館へ行きます。ミラーさんは？",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l5-scene-ii-10": {
+    "style": "normal",
+    "phrasedJa": "わたしは京都へ行きます。サントスさんは？",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l5-scene-iii-6": {
+    "style": "normal",
+    "phrasedJa": "ありがとうございます。一人で行きましたか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l5-scene-iii-8": {
+    "style": "normal",
+    "phrasedJa": "何で行きましたか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l5-scene-iv-4": {
+    "style": "normal",
+    "phrasedJa": "お国はどちらですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l5-scene-iv-5": {
+    "style": "normal",
+    "phrasedJa": "インドネシアです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l5-scene-iv-6": {
+    "style": "normal",
+    "phrasedJa": "そうですか。いつ日本へ来ましたか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l5-scene-iv-7": {
+    "style": "normal",
+    "phrasedJa": "先月の10日に来ました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l6-scene-ii-5": {
+    "style": "normal",
+    "phrasedJa": "日本語を勉強しました。それから友達に会いました。田中さんは？",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l6-scene-ii-7": {
+    "style": "normal",
+    "phrasedJa": "京都ですか。いいですね。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l6-scene-iii-9": {
+    "style": "normal",
+    "phrasedJa": "会社の食堂で食べます。時々つるやへ行きます。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l6-scene-iii-11": {
+    "style": "normal",
+    "phrasedJa": "そうですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l6-scene-iv-0": {
+    "style": "normal",
+    "phrasedJa": "あしたいっしょにテニスをしませんか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l6-scene-iv-2": {
+    "style": "normal",
+    "phrasedJa": "じゃ、11時に駅で会いましょう。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l6-scene-iv-5": {
+    "style": "normal",
+    "phrasedJa": "ええ、いいですね。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l6-scene-iv-7": {
+    "style": "normal",
+    "phrasedJa": "わかりました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l7-scene-ii-10": {
+    "style": "normal",
+    "phrasedJa": "セ・ロ・テ・ー・プですか。",
+    "speedScale": 0.98,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.1
+  },
+  "l9-scene-iv-7": {
+    "style": "normal",
+    "phrasedJa": "来週の土曜日です。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l9-scene-iv-9": {
+    "style": "calm",
+    "phrasedJa": "そうですか。",
+    "speedScale": 0.95,
+    "intonationScale": 0.98,
+    "tempoDynamicsScale": 0.9
+  },
+  "l9-scene-iv-10": {
+    "style": "cheerful",
+    "phrasedJa": "映画のチケットをもらいました。いっしょに行きませんか。",
+    "speedScale": 1.04,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.2
+  },
+  "l9-scene-iv-12": {
+    "style": "normal",
+    "phrasedJa": "来週の土曜日です。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l9-scene-iv-14": {
+    "style": "calm",
+    "phrasedJa": "そうですか。",
+    "speedScale": 0.95,
+    "intonationScale": 0.98,
+    "tempoDynamicsScale": 0.9
+  },
+  "l10-scene-ii-3": {
+    "style": "normal",
+    "phrasedJa": "あのう、近くにコンビニがありますか。",
+    "speedScale": 0.95,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.1
+  },
+  "l10-scene-ii-5": {
+    "style": "warm",
+    "phrasedJa": "わかりました。ありがとうございました。",
+    "speedScale": 0.94,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.05
+  },
+  "l10-scene-iv-3": {
+    "style": "normal",
+    "phrasedJa": "すみません。松本さんはいますか。",
+    "speedScale": 0.96,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.05
+  },
+  "l10-scene-iv-4": {
+    "style": "cheerful",
+    "phrasedJa": "ええ、あそこにいますよ。ワットさんの隣です。",
+    "speedScale": 1.02,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.15
+  },
+  "l10-scene-iv-5": {
+    "style": "normal",
+    "phrasedJa": "どうも。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 0.95
+  },
+  "l11-scene-ii-0": {
+    "style": "cheerful",
+    "phrasedJa": "いらっしゃいませ。",
+    "speedScale": 1.03,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.25
+  },
+  "l11-scene-ii-2": {
+    "style": "normal",
+    "phrasedJa": "かしこまりました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l11-scene-ii-3": {
+    "style": "cheerful",
+    "phrasedJa": "いらっしゃいませ。",
+    "speedScale": 1.03,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.25
+  },
+  "l11-scene-ii-4": {
+    "style": "normal",
+    "phrasedJa": "カレーを3つください。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l11-scene-ii-5": {
+    "style": "normal",
+    "phrasedJa": "かしこまりました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l11-scene-ii-6": {
+    "style": "cheerful",
+    "phrasedJa": "いらっしゃいませ。",
+    "speedScale": 1.03,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.25
+  },
+  "l11-scene-ii-8": {
+    "style": "normal",
+    "phrasedJa": "かしこまりました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l11-scene-iii-3": {
+    "style": "normal",
+    "phrasedJa": "家族は何人ですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l11-scene-iii-4": {
+    "style": "normal",
+    "phrasedJa": "5人です。両親と兄が2人います。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l11-scene-iii-5": {
+    "style": "normal",
+    "phrasedJa": "そうですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l11-scene-iv-6": {
+    "style": "normal",
+    "phrasedJa": "8月に1週間ぐらい鹿児島へ帰ります。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l11-scene-iv-8": {
+    "style": "normal",
+    "phrasedJa": "いいえ、船で帰ります。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l11-scene-iv-10": {
+    "style": "normal",
+    "phrasedJa": "16時間ぐらいです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l11-scene-iv-12": {
+    "style": "normal",
+    "phrasedJa": "8月に1週間ぐらい鹿児島へ帰ります。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l11-scene-iv-13": {
+    "style": "normal",
+    "phrasedJa": "鹿児島？飛行機ですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l11-scene-iv-14": {
+    "style": "normal",
+    "phrasedJa": "いいえ、車で帰ります。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l11-scene-iv-15": {
+    "style": "normal",
+    "phrasedJa": "車でどのくらいかかりますか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l11-scene-iv-16": {
+    "style": "normal",
+    "phrasedJa": "10時間ぐらいです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l11-scene-iv-17": {
+    "style": "cheerful",
+    "phrasedJa": "大変ですね。",
+    "speedScale": 1.03,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.25
+  },
+  "l12-scene-ii-4": {
+    "style": "normal",
+    "phrasedJa": "どうでしたか。",
+    "speedScale": 0.96,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.05
+  },
+  "l12-scene-ii-6": {
+    "style": "cheerful",
+    "phrasedJa": "きのう初めて生け花をしました。",
+    "speedScale": 1.02,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.15
+  },
+  "l12-scene-ii-8": {
+    "style": "calm",
+    "phrasedJa": "ちょっと難しかったです。",
+    "speedScale": 0.94,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 0.98
+  },
+  "l13-scene-i-0": {
+    "style": "cheerful",
+    "phrasedJa": "もう12時ですよ。昼ごはんを食べに行きませんか。",
+    "speedScale": 1.04,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.15
+  },
+  "l13-scene-i-2": {
+    "style": "normal",
+    "phrasedJa": "どこへ行きますか。",
+    "speedScale": 1.0,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.0
+  },
+  "l13-scene-iii-7": {
+    "style": "cheerful",
+    "phrasedJa": "ええ、そうしましょう。",
+    "speedScale": 1.02,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.1
+  },
+  "l16-scene-ii-0": {
+    "style": "normal",
+    "phrasedJa": "きのうはどこか行きましたか。",
+    "speedScale": 1.0,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.0
+  },
+  "l16-scene-ii-2": {
+    "style": "normal",
+    "phrasedJa": "そうですか。京都で何をしましたか。",
+    "speedScale": 1.0,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.0
+  },
+  "l16-scene-ii-5": {
+    "style": "cheerful",
+    "phrasedJa": "ええ、京都へ行きました。",
+    "speedScale": 1.02,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.05
+  },
+  "l16-scene-ii-7": {
+    "style": "cheerful",
+    "phrasedJa": "友達に会って、美術館へ行って、それから公園を散歩しました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.15
+  },
+  "l16-scene-iii-0": {
+    "style": "cheerful",
+    "phrasedJa": "日本語が上手ですね。どのくらい勉強しましたか。",
+    "speedScale": 1.02,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.1
+  },
+  "l16-scene-iii-2": {
+    "style": "surprise",
+    "phrasedJa": "そうですか。すごいですね。",
+    "speedScale": 1.04,
+    "intonationScale": 1.3,
+    "tempoDynamicsScale": 1.2
+  },
+  "l16-scene-iii-5": {
+    "style": "normal",
+    "phrasedJa": "2年ぐらいです。高校を出てから、始めました。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l16-scene-iii-7": {
+    "style": "calm",
+    "phrasedJa": "いいえ、まだまだです。",
+    "speedScale": 0.95,
+    "intonationScale": 0.98,
+    "tempoDynamicsScale": 0.9
+  },
+  "l16-scene-iv-1": {
+    "style": "normal",
+    "phrasedJa": "バンドン？どんな所ですか。",
+    "speedScale": 1.0,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.0
+  },
+  "l16-scene-iv-2": {
+    "style": "warm",
+    "phrasedJa": "そうですね。緑が多くて、きれいな所です。",
+    "speedScale": 0.96,
+    "intonationScale": 1.08,
+    "tempoDynamicsScale": 1.05
+  },
+  "l16-scene-iv-3": {
+    "style": "calm",
+    "phrasedJa": "そうですか。",
+    "speedScale": 0.95,
+    "intonationScale": 0.95,
+    "tempoDynamicsScale": 0.88
+  },
+  "l16-scene-iv-8": {
+    "style": "normal",
+    "phrasedJa": "ドイツのフランケンから来ました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l16-scene-iv-10": {
+    "style": "warm",
+    "phrasedJa": "そうですね。ワインが有名で、すてきな所です。",
+    "speedScale": 0.96,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.05
+  },
+  "l17-scene-ii-2": {
+    "style": "normal",
+    "phrasedJa": "はい、終わりましたよ。2、3時間食事しないでくださいね。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l17-scene-ii-3": {
+    "style": "warm",
+    "phrasedJa": "はい、わかりました。ありがとうございました。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l17-scene-iii-0": {
+    "style": "normal",
+    "phrasedJa": "昼ごはんを食べに行きませんか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l17-scene-iii-2": {
+    "style": "normal",
+    "phrasedJa": "そうですか。じゃ、また。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l17-scene-iii-3": {
+    "style": "normal",
+    "phrasedJa": "絵を見に行きませんか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l17-scene-iii-7": {
+    "style": "calm",
+    "phrasedJa": "すみません。これから空港へ友達を迎えに行かなければなりません。",
+    "speedScale": 0.94,
+    "intonationScale": 1.02,
+    "tempoDynamicsScale": 0.95
+  },
+  "l17-scene-iv-2": {
+    "style": "normal",
+    "phrasedJa": "上着を脱いでください。下着は脱がなくてもいいです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l18-scene-i-2": {
+    "style": "normal",
+    "phrasedJa": "どんな写真を撮りますか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l18-scene-i-6": {
+    "style": "normal",
+    "phrasedJa": "北海道に馬がたくさんいますよ。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l18-scene-ii-3": {
+    "style": "normal",
+    "phrasedJa": "あのう、庭で食事することができますか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l18-scene-ii-5": {
+    "style": "normal",
+    "phrasedJa": "わかりました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l18-scene-iii-0": {
+    "style": "normal",
+    "phrasedJa": "趣味は何ですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l18-scene-iii-2": {
+    "style": "normal",
+    "phrasedJa": "どんな映画を見ますか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l18-scene-iii-4": {
+    "style": "normal",
+    "phrasedJa": "そうですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l18-scene-iii-11": {
+    "style": "normal",
+    "phrasedJa": "絵をかくことです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l18-scene-iii-13": {
+    "style": "normal",
+    "phrasedJa": "山の絵です。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l18-scene-iv-3": {
+    "style": "normal",
+    "phrasedJa": "このレポート、IMCに送りましょうか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l18-scene-iv-5": {
+    "style": "normal",
+    "phrasedJa": "はい。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l18-scene-iv-7": {
+    "style": "normal",
+    "phrasedJa": "あ、ちょっと待ってください。捨てるまえに、コピーしてください。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l19-scene-ii-0": {
+    "style": "normal",
+    "phrasedJa": "富士山に登ったことがありますか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l19-scene-ii-2": {
+    "style": "normal",
+    "phrasedJa": "どうでしたか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l19-scene-ii-4": {
+    "style": "normal",
+    "phrasedJa": "そうですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l19-scene-ii-6": {
+    "style": "normal",
+    "phrasedJa": "ええ、先週見ました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l19-scene-ii-8": {
+    "style": "normal",
+    "phrasedJa": "きれいでした。でも、長かったです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l19-scene-iii-0": {
+    "style": "normal",
+    "phrasedJa": "もうすぐ夏休みですね。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l19-scene-iii-2": {
+    "style": "normal",
+    "phrasedJa": "夏休みは何をしますか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l19-scene-iii-4": {
+    "style": "cheerful",
+    "phrasedJa": "いいですね。",
+    "speedScale": 1.03,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.25
+  },
+  "l19-scene-iii-13": {
+    "style": "normal",
+    "phrasedJa": "そうですね。絵をかいたり、音楽を聞いたりしたいです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l19-scene-iv-0": {
+    "style": "normal",
+    "phrasedJa": "涼しくなりましたね。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l19-scene-iv-2": {
+    "style": "normal",
+    "phrasedJa": "ことしはぜひ紅葉を見に行きたいですね。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l20-scene-ii-8": {
+    "style": "normal",
+    "phrasedJa": "どうだった？",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l20-scene-ii-10": {
+    "style": "cheerful",
+    "phrasedJa": "先月初めて沖縄の歌［を］聞いたよ。",
+    "speedScale": 1.03,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.25
+  },
+  "l20-scene-ii-12": {
+    "style": "normal",
+    "phrasedJa": "沖縄のレストランで。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l20-scene-ii-14": {
+    "style": "normal",
+    "phrasedJa": "ことばはわからなかったけど、おもしろかった。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l20-scene-iii-4": {
+    "style": "normal",
+    "phrasedJa": "チョコレート［が］好き？",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l20-scene-iii-5": {
+    "style": "normal",
+    "phrasedJa": "うん。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l20-scene-iv-5": {
+    "style": "normal",
+    "phrasedJa": "うん。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l20-scene-iv-7": {
+    "style": "normal",
+    "phrasedJa": "いいよ。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l20-scene-iv-8": {
+    "style": "normal",
+    "phrasedJa": "この漢字の読み方［を］知って［い］る？",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l20-scene-iv-10": {
+    "style": "normal",
+    "phrasedJa": "じゃ、ちょっと教えて。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l21-scene-ii-0": {
+    "style": "normal",
+    "phrasedJa": "インターネットについてどう思いますか。",
+    "speedScale": 0.98,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.1
+  },
+  "l21-scene-ii-2": {
+    "style": "normal",
+    "phrasedJa": "ワットさんはどう思いますか。",
+    "speedScale": 0.98,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.05
+  },
+  "l21-scene-ii-9": {
+    "style": "calm",
+    "phrasedJa": "そうですね。よく勉強しますが、あまり本を読まないと思います。",
+    "speedScale": 0.95,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.15
+  },
+  "l21-scene-iii-0": {
+    "style": "cheerful",
+    "phrasedJa": "今放送がありましたね。何と言いましたか。",
+    "speedScale": 1.0,
+    "intonationScale": 1.28,
+    "tempoDynamicsScale": 1.2
+  },
+  "l21-scene-iii-2": {
+    "style": "warm",
+    "phrasedJa": "そうですか。ありがとうございます。",
+    "speedScale": 0.95,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.0
+  },
+  "l21-scene-iv-0": {
+    "style": "cheerful",
+    "phrasedJa": "日曜日大阪へ天神祭を見に行きました。",
+    "speedScale": 1.02,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.1
+  },
+  "l21-scene-iv-2": {
+    "style": "cheerful",
+    "phrasedJa": "ええ、ほんとうににぎやかでした。",
+    "speedScale": 1.04,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.15
+  },
+  "l21-scene-iv-4": {
+    "style": "surprise",
+    "phrasedJa": "人が多かったでしょう？",
+    "speedScale": 1.0,
+    "intonationScale": 1.3,
+    "tempoDynamicsScale": 1.25
+  },
+  "l22-scene-i-2": {
+    "style": "cheerful",
+    "phrasedJa": "では、こちらはいかがですか。駅から10分で、家賃は83,000円です。",
+    "speedScale": 0.98,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.1
+  },
+  "l22-scene-i-4": {
+    "style": "normal",
+    "phrasedJa": "押し入れです。布団を入れる所ですよ。",
+    "speedScale": 0.96,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l22-scene-i-6": {
+    "style": "cheerful",
+    "phrasedJa": "ええ。今から行きましょうか。",
+    "speedScale": 1.02,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.15
+  },
+  "l22-scene-ii-1": {
+    "style": "normal",
+    "phrasedJa": "どの人ですか。",
+    "speedScale": 0.98,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.05
+  },
+  "l22-scene-ii-3": {
+    "style": "warm",
+    "phrasedJa": "ああ、佐藤さんです。IMCの人ですよ。",
+    "speedScale": 0.96,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.0
+  },
+  "l22-scene-ii-4": {
+    "style": "normal",
+    "phrasedJa": "あの人はだれですか。",
+    "speedScale": 0.98,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.05
+  },
+  "l22-scene-ii-6": {
+    "style": "normal",
+    "phrasedJa": "眼鏡をかけている人です。",
+    "speedScale": 0.96,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.0
+  },
+  "l22-scene-iii-8": {
+    "style": "normal",
+    "phrasedJa": "あ、そうですか。どうも。",
+    "speedScale": 0.95,
+    "intonationScale": 1.08,
+    "tempoDynamicsScale": 0.95
+  },
+  "l22-scene-iv-0": {
+    "style": "cheerful",
+    "phrasedJa": "おめでとうございます。",
+    "speedScale": 1.04,
+    "intonationScale": 1.3,
+    "tempoDynamicsScale": 1.25
+  },
+  "l22-scene-iv-2": {
+    "style": "normal",
+    "phrasedJa": "どんな仕事をしたいですか。",
+    "speedScale": 0.96,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.1
+  },
+  "l22-scene-iv-5": {
+    "style": "warm",
+    "phrasedJa": "ありがとうございます。",
+    "speedScale": 0.94,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 0.98
+  },
+  "l22-scene-iv-7": {
+    "style": "warm",
+    "phrasedJa": "そうですね。大きくて、あまり残業がない会社に入りたいです。",
+    "speedScale": 0.95,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.05
+  },
+  "l23-scene-i-5": {
+    "style": "normal",
+    "phrasedJa": "わかりました。それから本を借りたいとき、何か要りますか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l23-scene-i-7": {
+    "style": "warm",
+    "phrasedJa": "はい。どうもありがとうございました。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l23-scene-ii-5": {
+    "style": "calm",
+    "phrasedJa": "すみません。",
+    "speedScale": 0.94,
+    "intonationScale": 1.02,
+    "tempoDynamicsScale": 0.95
+  },
+  "l23-scene-ii-7": {
+    "style": "normal",
+    "phrasedJa": "友達が結婚したとき、どんな物をあげますか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l23-scene-ii-11": {
+    "style": "normal",
+    "phrasedJa": "何ですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l23-scene-ii-13": {
+    "style": "normal",
+    "phrasedJa": "そうですね。お金や子どもの服などですね。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l23-scene-iii-1": {
+    "style": "normal",
+    "phrasedJa": "このボタンを押します。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l23-scene-iii-8": {
+    "style": "normal",
+    "phrasedJa": "わかりました。どうも。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l23-scene-iv-6": {
+    "style": "normal",
+    "phrasedJa": "コンビニですか。あそこに橋がありますね。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l23-scene-iv-8": {
+    "style": "normal",
+    "phrasedJa": "あそこを渡って、右へ曲がると、左にありますよ。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l24-scene-i-4": {
+    "style": "normal",
+    "phrasedJa": "車は？",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l24-scene-i-6": {
+    "style": "normal",
+    "phrasedJa": "昼ごはんはどうしますか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l24-scene-i-8": {
+    "style": "normal",
+    "phrasedJa": "わたしが お弁当を持って行きましょうか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l24-scene-i-10": {
+    "style": "normal",
+    "phrasedJa": "じゃ、日曜日に。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l24-scene-ii-1": {
+    "style": "warm",
+    "phrasedJa": "ありがとうございます。大学に入ったとき、姉がくれました。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l24-scene-ii-8": {
+    "style": "normal",
+    "phrasedJa": "いいですね。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l24-scene-iii-0": {
+    "style": "normal",
+    "phrasedJa": "もうパーティーの準備をしましたか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l24-scene-iv-1": {
+    "style": "normal",
+    "phrasedJa": "楽しかったです。お母さんはおすしを作ってくれました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l24-scene-iv-3": {
+    "style": "normal",
+    "phrasedJa": "お父さんは町を案内してくれました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l24-scene-iv-10": {
+    "style": "normal",
+    "phrasedJa": "ホームステイはどうでしたか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l24-scene-iv-12": {
+    "style": "normal",
+    "phrasedJa": "てんぷらですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l25-scene-ii-5": {
+    "style": "cheerful",
+    "phrasedJa": "いいですね。どこへ行きますか。",
+    "speedScale": 1.03,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.1
+  },
+  "l25-scene-ii-7": {
+    "style": "cheerful",
+    "phrasedJa": "神戸ですか。いいですね。",
+    "speedScale": 1.04,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.15
+  },
+  "l25-scene-ii-9": {
+    "style": "cheerful",
+    "phrasedJa": "いいですね。どこへ行きますか。",
+    "speedScale": 1.03,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.1
+  },
+  "l25-scene-ii-11": {
+    "style": "cheerful",
+    "phrasedJa": "神戸ですか。いいですね。",
+    "speedScale": 1.04,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.15
+  },
+  "l25-scene-iii-8": {
+    "style": "normal",
+    "phrasedJa": "もしもし、佐藤さんですか。",
+    "speedScale": 0.96,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.0
+  },
+  "l25-scene-iii-10": {
+    "style": "normal",
+    "phrasedJa": "山田ですが、今、会議室にいます。グプタさんが来たら、教えてください。",
+    "speedScale": 0.98,
+    "intonationScale": 1.08,
+    "tempoDynamicsScale": 1.05
+  },
+  "l19-scene-iv-4": {
+    "style": "warm",
+    "phrasedJa": "寒くなりましたね。",
+    "speedScale": 0.95,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.05
+  },
+  "l19-scene-iv-6": {
+    "style": "cheerful",
+    "phrasedJa": "ことしはぜひスキーに行きたいですね。",
+    "speedScale": 1.03,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.15
+  },
+  "l19-scene-iv-7": {
+    "style": "normal",
+    "phrasedJa": "そうですね。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 0.95
+  },
+  "l19-scene-iv-9": {
+    "style": "warm",
+    "phrasedJa": "ええ。もう春ですね。",
+    "speedScale": 0.96,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.1
+  },
+  "l19-scene-iv-11": {
+    "style": "normal",
+    "phrasedJa": "そうですね。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 0.95
+  },
+  "l20-scene-i-0": {
+    "style": "cheerful",
+    "phrasedJa": "夏休みは国へ帰る？",
+    "speedScale": 0.98,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.1
+  },
+  "l20-scene-i-2": {
+    "style": "normal",
+    "phrasedJa": "そう。タワポン君、富士山に登ったことある？",
+    "speedScale": 0.96,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.05
+  },
+  "l20-scene-i-4": {
+    "style": "cheerful",
+    "phrasedJa": "じゃ、よかったら、いっしょに行かない？",
+    "speedScale": 0.98,
+    "intonationScale": 1.28,
+    "tempoDynamicsScale": 1.15
+  },
+  "l20-scene-i-6": {
+    "style": "cheerful",
+    "phrasedJa": "8月の初めごろはどう？",
+    "speedScale": 0.97,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.1
+  },
+  "l20-scene-i-8": {
+    "style": "warm",
+    "phrasedJa": "じゃ、いろいろ調べて、また電話するよ。",
+    "speedScale": 0.95,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.0
+  },
+  "l20-scene-ii-0": {
+    "style": "cheerful",
+    "phrasedJa": "きのう初めてすき焼き［を］食べたよ。",
+    "speedScale": 1.02,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.15
+  },
+  "l20-scene-ii-1": {
+    "style": "surprise",
+    "phrasedJa": "へえ、どこで？",
+    "speedScale": 0.98,
+    "intonationScale": 1.3,
+    "tempoDynamicsScale": 1.2
+  },
+  "l20-scene-ii-2": {
+    "style": "normal",
+    "phrasedJa": "田中さんのうちで。",
+    "speedScale": 0.96,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 0.95
+  },
+  "l20-scene-ii-3": {
+    "style": "normal",
+    "phrasedJa": "どうだった？",
+    "speedScale": 0.96,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.1
+  },
+  "l20-scene-ii-4": {
+    "style": "warm",
+    "phrasedJa": "甘かったけど、おいしかった。",
+    "speedScale": 0.98,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.05
+  },
+  "l20-scene-ii-5": {
+    "style": "cheerful",
+    "phrasedJa": "きのう初めてお茶［を］飲んだよ。",
+    "speedScale": 1.02,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.15
+  },
+  "l20-scene-ii-7": {
+    "style": "normal",
+    "phrasedJa": "山田さんのうちで。",
+    "speedScale": 0.96,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 0.95
+  },
+  "l20-scene-ii-9": {
+    "style": "warm",
+    "phrasedJa": "苦かったけど、おいしかった。",
+    "speedScale": 0.98,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.05
+  },
+  "l20-scene-ii-11": {
+    "style": "surprise",
+    "phrasedJa": "へえ、どこで？",
+    "speedScale": 0.98,
+    "intonationScale": 1.3,
+    "tempoDynamicsScale": 1.2
+  },
+  "l20-scene-ii-13": {
+    "style": "normal",
+    "phrasedJa": "どうだった？",
+    "speedScale": 0.96,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.1
+  },
+  "l20-scene-iii-0": {
+    "style": "normal",
+    "phrasedJa": "コーヒー［が］好き？",
+    "speedScale": 0.96,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.1
+  },
+  "l20-scene-iii-2": {
+    "style": "cheerful",
+    "phrasedJa": "ブラジルのコーヒー［が］あるけど、飲まない？",
+    "speedScale": 0.98,
+    "intonationScale": 1.28,
+    "tempoDynamicsScale": 1.15
+  },
+  "l20-scene-iii-8": {
+    "style": "normal",
+    "phrasedJa": "ジャズ［が］好き？",
+    "speedScale": 0.96,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.1
+  },
+  "l20-scene-iii-9": {
+    "style": "normal",
+    "phrasedJa": "うん。",
+    "speedScale": 0.95,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 0.95
+  },
+  "l20-scene-iii-10": {
+    "style": "cheerful",
+    "phrasedJa": "ジャズのコンサートのチケット［が］あるけど、行かない？",
+    "speedScale": 0.98,
+    "intonationScale": 1.28,
+    "tempoDynamicsScale": 1.15
+  },
+  "l20-scene-iii-11": {
+    "style": "cheerful",
+    "phrasedJa": "いいね。",
+    "speedScale": 1.02,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.1
+  },
+  "l20-scene-iv-0": {
+    "style": "normal",
+    "phrasedJa": "田中君の住所［を］知って［い］る？",
+    "speedScale": 0.96,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.1
+  },
+  "l20-scene-iv-2": {
+    "style": "warm",
+    "phrasedJa": "じゃ、ちょっと教えて。",
+    "speedScale": 0.95,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.0
+  },
+  "l20-scene-iv-4": {
+    "style": "normal",
+    "phrasedJa": "切符の買い方［を］知って［い］る？",
+    "speedScale": 0.96,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.1
+  },
+  "l20-scene-iv-6": {
+    "style": "warm",
+    "phrasedJa": "じゃ、ちょっと教えて。",
+    "speedScale": 0.95,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.0
+  },
+  "l20-scene-iv-9": {
+    "style": "normal",
+    "phrasedJa": "うん。",
+    "speedScale": 0.95,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 0.95
+  },
+  "l20-scene-iv-11": {
+    "style": "cheerful",
+    "phrasedJa": "いいよ。",
+    "speedScale": 1.0,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.05
+  },
+  "l21-scene-i-1": {
+    "style": "cheerful",
+    "phrasedJa": "あ、松本さん、お元気ですか。",
+    "speedScale": 1.02,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.1
+  },
+  "l21-scene-i-3": {
+    "style": "cheerful",
+    "phrasedJa": "いいですね。",
+    "speedScale": 1.04,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.15
+  },
+  "l21-scene-i-4": {
+    "style": "normal",
+    "phrasedJa": "今晩10時から日本とブラジルのサッカーの試合がありますね。",
+    "speedScale": 1.0,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.05
+  },
+  "l21-scene-i-6": {
+    "style": "cheerful",
+    "phrasedJa": "もちろんブラジルですよ。",
+    "speedScale": 1.05,
+    "intonationScale": 1.3,
+    "tempoDynamicsScale": 1.2
+  },
+  "l21-scene-i-8": {
+    "style": "surprise",
+    "phrasedJa": "ええ、わたしもそう思いますが、……。あ、もう帰らないと……。",
+    "speedScale": 0.95,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.1
+  },
+  "l21-scene-ii-1": {
+    "style": "normal",
+    "phrasedJa": "そうですね。便利ですが、使い方に気をつけなければならないと思います。",
+    "speedScale": 0.96,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 0.95
+  },
+  "l21-scene-ii-3": {
+    "style": "normal",
+    "phrasedJa": "わたしもそう思います。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l21-scene-ii-4": {
+    "style": "normal",
+    "phrasedJa": "新しい空港についてどう思いますか。",
+    "speedScale": 1.0,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.05
+  },
+  "l21-scene-ii-5": {
+    "style": "normal",
+    "phrasedJa": "そうですね。きれいですが、交通が不便だと思います。",
+    "speedScale": 0.98,
+    "intonationScale": 1.08,
+    "tempoDynamicsScale": 0.98
+  },
+  "l21-scene-ii-6": {
+    "style": "normal",
+    "phrasedJa": "ワットさんはどう思いますか。",
+    "speedScale": 1.0,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.05
+  },
+  "l21-scene-ii-7": {
+    "style": "normal",
+    "phrasedJa": "わたしもそう思います。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l21-scene-ii-8": {
+    "style": "normal",
+    "phrasedJa": "最近の子どもについてどう思いますか。",
+    "speedScale": 1.0,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.05
+  },
+  "l21-scene-ii-10": {
+    "style": "normal",
+    "phrasedJa": "ワットさんはどう思いますか。",
+    "speedScale": 1.0,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.05
+  },
+  "l21-scene-ii-11": {
+    "style": "normal",
+    "phrasedJa": "わたしもそう思います。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l21-scene-iii-3": {
+    "style": "normal",
+    "phrasedJa": "今放送がありましたね。何と言いましたか。",
+    "speedScale": 1.0,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.05
+  },
+  "l21-scene-iii-4": {
+    "style": "normal",
+    "phrasedJa": "中で飲み物を売っていると言いました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l21-scene-iii-5": {
+    "style": "warm",
+    "phrasedJa": "そうですか。ありがとうございます。",
+    "speedScale": 1.02,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.08
+  },
+  "l21-scene-iii-7": {
+    "style": "normal",
+    "phrasedJa": "レストランは10時までだと言いました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l21-scene-iv-1": {
+    "style": "cheerful",
+    "phrasedJa": "にぎやかだったでしょう？",
+    "speedScale": 1.03,
+    "intonationScale": 1.28,
+    "tempoDynamicsScale": 1.15
+  },
+  "l21-scene-iv-3": {
+    "style": "normal",
+    "phrasedJa": "日曜日京都へ祇園祭を見に行きました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.0
+  },
+  "l21-scene-iv-5": {
+    "style": "warm",
+    "phrasedJa": "ええ、ほんとうに人が多かったです。",
+    "speedScale": 1.02,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.1
+  },
+  "l21-scene-iv-6": {
+    "style": "normal",
+    "phrasedJa": "日曜日吉野山へ桜を見に行きました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.0
+  },
+  "l21-scene-iv-7": {
+    "style": "cheerful",
+    "phrasedJa": "きれいだったでしょう？",
+    "speedScale": 1.03,
+    "intonationScale": 1.28,
+    "tempoDynamicsScale": 1.15
+  },
+  "l21-scene-iv-8": {
+    "style": "warm",
+    "phrasedJa": "ええ、ほんとうにきれいでした。",
+    "speedScale": 1.02,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.1
+  },
+  "l22-scene-i-1": {
+    "style": "normal",
+    "phrasedJa": "そうですね。家賃は8万円ぐらいで、駅から遠くない所がいいです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l22-scene-i-3": {
+    "style": "normal",
+    "phrasedJa": "ダイニングキッチンと和室ですね。すみません。ここは何ですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l22-scene-i-5": {
+    "style": "normal",
+    "phrasedJa": "そうですか。この部屋、きょう見ることができますか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l22-scene-i-7": {
+    "style": "normal",
+    "phrasedJa": "ええ、お願いします。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l22-scene-ii-0": {
+    "style": "normal",
+    "phrasedJa": "あの人はだれですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l22-scene-ii-2": {
+    "style": "normal",
+    "phrasedJa": "赤いセーターを着ている人です。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l22-scene-ii-5": {
+    "style": "normal",
+    "phrasedJa": "どの人ですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l22-scene-ii-7": {
+    "style": "normal",
+    "phrasedJa": "ああ、ワットさんです。さくら大学の先生ですよ。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l22-scene-ii-8": {
+    "style": "normal",
+    "phrasedJa": "あの人はだれですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l22-scene-ii-9": {
+    "style": "normal",
+    "phrasedJa": "どの人ですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l22-scene-ii-10": {
+    "style": "normal",
+    "phrasedJa": "白いシャツを着ている人です。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l22-scene-ii-11": {
+    "style": "normal",
+    "phrasedJa": "ああ、松本さんです。IMCの部長ですよ。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l22-scene-iii-0": {
+    "style": "normal",
+    "phrasedJa": "田中さんにもらったカタログはどこにありますか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l22-scene-iii-2": {
+    "style": "normal",
+    "phrasedJa": "あ、そうですか。どうも。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l22-scene-iii-3": {
+    "style": "normal",
+    "phrasedJa": "きのうコピーした資料はどこにありますか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l22-scene-iii-4": {
+    "style": "normal",
+    "phrasedJa": "えーと、あの机の上にありますよ。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l22-scene-iii-5": {
+    "style": "normal",
+    "phrasedJa": "あ、そうですか。どうも。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l22-scene-iv-4": {
+    "style": "cheerful",
+    "phrasedJa": "おめでとうございます。",
+    "speedScale": 1.03,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.25
+  },
+  "l22-scene-iv-6": {
+    "style": "normal",
+    "phrasedJa": "どんな会社に入りたいですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l22-scene-iv-8": {
+    "style": "cheerful",
+    "phrasedJa": "おめでとうございます。",
+    "speedScale": 1.03,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.25
+  },
+  "l22-scene-iv-9": {
+    "style": "warm",
+    "phrasedJa": "ありがとうございます。",
+    "speedScale": 0.97,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.1
+  },
+  "l22-scene-iv-10": {
+    "style": "normal",
+    "phrasedJa": "どんな人と結婚したいですか。",
+    "speedScale": 0.99,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l22-scene-iv-11": {
+    "style": "normal",
+    "phrasedJa": "そうですね。友達が多くて、ユーモアがある人と結婚したいです。",
+    "speedScale": 1.0,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.05
+  },
+  "l23-scene-i-0": {
+    "style": "warm",
+    "phrasedJa": "はい、みどり図書館です。",
+    "speedScale": 0.96,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.0
+  },
+  "l23-scene-i-2": {
+    "style": "normal",
+    "phrasedJa": "本田駅から12番のバスに乗って、図書館前で降りてください。3つ目です。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.02
+  },
+  "l23-scene-i-4": {
+    "style": "normal",
+    "phrasedJa": "ええ。降りると、前に公園があります。図書館は公園の中の白い建物です。",
+    "speedScale": 0.97,
+    "intonationScale": 1.03,
+    "tempoDynamicsScale": 0.98
+  },
+  "l23-scene-i-6": {
+    "style": "normal",
+    "phrasedJa": "お名前とご住所がわかる物を持って来てください。",
+    "speedScale": 0.95,
+    "intonationScale": 1.08,
+    "tempoDynamicsScale": 1.05
+  },
+  "l23-scene-ii-0": {
+    "style": "normal",
+    "phrasedJa": "すみません。",
+    "speedScale": 0.94,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.0
+  },
+  "l23-scene-ii-1": {
+    "style": "normal",
+    "phrasedJa": "何ですか。",
+    "speedScale": 0.98,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.01
+  },
+  "l23-scene-ii-2": {
+    "style": "normal",
+    "phrasedJa": "友達が会社に入ったとき、どんな物をあげますか。",
+    "speedScale": 0.96,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.05
+  },
+  "l23-scene-ii-3": {
+    "style": "warm",
+    "phrasedJa": "そうですね。ネクタイやかばんなどですね。",
+    "speedScale": 0.94,
+    "intonationScale": 1.08,
+    "tempoDynamicsScale": 1.1
+  },
+  "l23-scene-ii-4": {
+    "style": "normal",
+    "phrasedJa": "そうですか。",
+    "speedScale": 0.95,
+    "intonationScale": 1.02,
+    "tempoDynamicsScale": 0.96
+  },
+  "l23-scene-ii-6": {
+    "style": "normal",
+    "phrasedJa": "何ですか。",
+    "speedScale": 0.98,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.01
+  },
+  "l23-scene-ii-8": {
+    "style": "warm",
+    "phrasedJa": "そうですね。お金やお皿などですね。",
+    "speedScale": 0.94,
+    "intonationScale": 1.08,
+    "tempoDynamicsScale": 1.1
+  },
+  "l23-scene-ii-10": {
+    "style": "normal",
+    "phrasedJa": "すみません。",
+    "speedScale": 0.94,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.0
+  },
+  "l23-scene-ii-12": {
+    "style": "normal",
+    "phrasedJa": "友達に赤ちゃんが生まれたとき、どんな物をあげますか。",
+    "speedScale": 0.96,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.07
+  },
+  "l23-scene-ii-14": {
+    "style": "normal",
+    "phrasedJa": "そうですか。",
+    "speedScale": 0.95,
+    "intonationScale": 1.02,
+    "tempoDynamicsScale": 0.96
+  },
+  "l23-scene-iii-3": {
+    "style": "normal",
+    "phrasedJa": "すみません。コピーの紙がなくなったとき、どうしますか。",
+    "speedScale": 0.94,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.04
+  },
+  "l23-scene-iii-4": {
+    "style": "normal",
+    "phrasedJa": "あの箱から紙を出して、ここに入れます。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l23-scene-iii-5": {
+    "style": "cheerful",
+    "phrasedJa": "わかりました。どうも。",
+    "speedScale": 1.02,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.08
+  },
+  "l23-scene-iii-7": {
+    "style": "normal",
+    "phrasedJa": "5275番へ電話をかけます。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l23-scene-iv-0": {
+    "style": "normal",
+    "phrasedJa": "ちょっとすみません。近くに銀行がありますか。",
+    "speedScale": 0.94,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.02
+  },
+  "l23-scene-iv-1": {
+    "style": "warm",
+    "phrasedJa": "銀行ですか。あそこに信号がありますね。",
+    "speedScale": 0.96,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.06
+  },
+  "l23-scene-iv-2": {
+    "style": "normal",
+    "phrasedJa": "ええ。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 0.95
+  },
+  "l23-scene-iv-3": {
+    "style": "warm",
+    "phrasedJa": "あそこを渡って、まっすぐ行くと、右にありますよ。",
+    "speedScale": 0.97,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.05
+  },
+  "l23-scene-iv-4": {
+    "style": "cheerful",
+    "phrasedJa": "どうも。",
+    "speedScale": 1.02,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.02
+  },
+  "l23-scene-iv-10": {
+    "style": "normal",
+    "phrasedJa": "ちょっとすみません。近くに郵便局がありますか。",
+    "speedScale": 0.94,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.02
+  },
+  "l23-scene-iv-11": {
+    "style": "warm",
+    "phrasedJa": "郵便局ですか。あそこに交差点がありますね。",
+    "speedScale": 0.96,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.06
+  },
+  "l23-scene-iv-12": {
+    "style": "normal",
+    "phrasedJa": "ええ。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 0.95
+  },
+  "l23-scene-iv-13": {
+    "style": "warm",
+    "phrasedJa": "あそこを左へ曲がって、100メートルぐらい行くと、左にありますよ。",
+    "speedScale": 0.97,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.05
+  },
+  "l23-scene-iv-14": {
+    "style": "cheerful",
+    "phrasedJa": "どうも。",
+    "speedScale": 1.02,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.02
+  },
+  "l24-scene-i-1": {
+    "style": "warm",
+    "phrasedJa": "ありがとうございます。じゃ、すみませんが、9時ごろお願いします。",
+    "speedScale": 0.95,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.05
+  },
+  "l24-scene-i-3": {
+    "style": "normal",
+    "phrasedJa": "山田さんとミラーさんが来てくれます。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l24-scene-i-5": {
+    "style": "normal",
+    "phrasedJa": "山田さんに貸してもらいます。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l24-scene-i-7": {
+    "style": "calm",
+    "phrasedJa": "えーと……。",
+    "speedScale": 0.94,
+    "intonationScale": 0.98,
+    "tempoDynamicsScale": 1.15
+  },
+  "l24-scene-i-9": {
+    "style": "warm",
+    "phrasedJa": "すみません。お願いします。",
+    "speedScale": 0.96,
+    "intonationScale": 1.08,
+    "tempoDynamicsScale": 1.02
+  },
+  "l24-scene-ii-0": {
+    "style": "cheerful",
+    "phrasedJa": "すてきなかばんですね。",
+    "speedScale": 1.02,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.1
+  },
+  "l24-scene-ii-2": {
+    "style": "warm",
+    "phrasedJa": "いいですね。",
+    "speedScale": 0.98,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.02
+  },
+  "l24-scene-ii-3": {
+    "style": "cheerful",
+    "phrasedJa": "いい時計ですね。",
+    "speedScale": 1.02,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.1
+  },
+  "l24-scene-ii-4": {
+    "style": "warm",
+    "phrasedJa": "ありがとうございます。会社に入ったとき、兄がくれました。",
+    "speedScale": 0.98,
+    "intonationScale": 1.08,
+    "tempoDynamicsScale": 1.05
+  },
+  "l24-scene-ii-5": {
+    "style": "warm",
+    "phrasedJa": "いいですね。",
+    "speedScale": 0.98,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.02
+  },
+  "l24-scene-ii-7": {
+    "style": "warm",
+    "phrasedJa": "ありがとうございます。結婚したとき、父がくれました。",
+    "speedScale": 0.98,
+    "intonationScale": 1.08,
+    "tempoDynamicsScale": 1.05
+  },
+  "l24-scene-iii-1": {
+    "style": "normal",
+    "phrasedJa": "はい。",
+    "speedScale": 0.98,
+    "intonationScale": 1.02,
+    "tempoDynamicsScale": 0.95
+  },
+  "l24-scene-iii-3": {
+    "style": "normal",
+    "phrasedJa": "佐藤さんに書いてもらいました。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l24-scene-iii-4": {
+    "style": "cheerful",
+    "phrasedJa": "もうパーティーの準備をしましたか。",
+    "speedScale": 1.0,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.1
+  },
+  "l24-scene-iii-5": {
+    "style": "normal",
+    "phrasedJa": "はい。",
+    "speedScale": 0.98,
+    "intonationScale": 1.02,
+    "tempoDynamicsScale": 0.95
+  },
+  "l24-scene-iii-6": {
+    "style": "cheerful",
+    "phrasedJa": "ケーキは？",
+    "speedScale": 1.0,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.12
+  },
+  "l24-scene-iii-7": {
+    "style": "normal",
+    "phrasedJa": "マリアさんに作ってもらいました。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 1.0
+  },
+  "l24-scene-iii-8": {
+    "style": "cheerful",
+    "phrasedJa": "もうパーティーの準備をしましたか。",
+    "speedScale": 1.0,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.1
+  },
+  "l24-scene-iii-10": {
+    "style": "cheerful",
+    "phrasedJa": "料理は？",
+    "speedScale": 1.0,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.12
+  },
+  "l24-scene-iv-0": {
+    "style": "cheerful",
+    "phrasedJa": "ホームステイはどうでしたか。",
+    "speedScale": 1.0,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.1
+  },
+  "l24-scene-iv-2": {
+    "style": "surprise",
+    "phrasedJa": "おすしですか。",
+    "speedScale": 1.02,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.2
+  },
+  "l24-scene-iv-4": {
+    "style": "warm",
+    "phrasedJa": "そうですか。よかったですね。",
+    "speedScale": 0.98,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.05
+  },
+  "l24-scene-iv-5": {
+    "style": "cheerful",
+    "phrasedJa": "ホームステイはどうでしたか。",
+    "speedScale": 1.0,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.1
+  },
+  "l24-scene-iv-7": {
+    "style": "surprise",
+    "phrasedJa": "すき焼きですか。",
+    "speedScale": 1.02,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.2
+  },
+  "l24-scene-iv-9": {
+    "style": "warm",
+    "phrasedJa": "そうですか。よかったですね。",
+    "speedScale": 0.98,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.05
+  },
+  "l24-scene-iv-11": {
+    "style": "cheerful",
+    "phrasedJa": "楽しかったです。お母さんはてんぷらを作ってくれました。",
+    "speedScale": 1.02,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.12
+  },
+  "l24-scene-iv-13": {
+    "style": "warm",
+    "phrasedJa": "お父さんは古いお寺へ連れて行ってくれました。",
+    "speedScale": 1.0,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.08
+  },
+  "l25-scene-i-0": {
+    "style": "cheerful",
+    "phrasedJa": "転勤、おめでとうございます。",
+    "speedScale": 1.02,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.1
+  },
+  "l25-scene-i-1": {
+    "style": "warm",
+    "phrasedJa": "ありがとうございます。",
+    "speedScale": 0.98,
+    "intonationScale": 1.1,
+    "tempoDynamicsScale": 1.0
+  },
+  "l25-scene-i-2": {
+    "style": "sad",
+    "phrasedJa": "ミラーさんが東京へ行ったら、寂しくなりますね。",
+    "speedScale": 0.95,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.05
+  },
+  "l25-scene-i-3": {
+    "style": "sad",
+    "phrasedJa": "そうですね。",
+    "speedScale": 0.95,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 0.95
+  },
+  "l25-scene-i-4": {
+    "style": "warm",
+    "phrasedJa": "東京へ行っても、大阪のことを忘れないでくださいね。",
+    "speedScale": 0.96,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.05
+  },
+  "l25-scene-i-5": {
+    "style": "cheerful",
+    "phrasedJa": "もちろん。皆さん、暇があったら、ぜひ東京へ遊びに来てください。",
+    "speedScale": 1.04,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.15
+  },
+  "l25-scene-i-6": {
+    "style": "cheerful",
+    "phrasedJa": "ミラーさんも大阪へ来たら、電話をください。いっしょに飲みましょう。",
+    "speedScale": 1.03,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.12
+  },
+  "l25-scene-i-7": {
+    "style": "warm",
+    "phrasedJa": "ええ、ぜひ。皆さん、ほんとうにいろいろお世話になりました。",
+    "speedScale": 0.96,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.08
+  },
+  "l25-scene-i-8": {
+    "style": "warm",
+    "phrasedJa": "頑張ってください。お体に気をつけて。",
+    "speedScale": 0.95,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.02
+  },
+  "l25-scene-i-9": {
+    "style": "warm",
+    "phrasedJa": "はい。皆さんもどうぞお元気で。",
+    "speedScale": 0.96,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.05
+  },
+  "l25-scene-ii-0": {
+    "style": "cheerful",
+    "phrasedJa": "あした暇だったら、ジャズを聞きに行きませんか。",
+    "speedScale": 1.02,
+    "intonationScale": 1.28,
+    "tempoDynamicsScale": 1.15
+  },
+  "l25-scene-ii-1": {
+    "style": "cheerful",
+    "phrasedJa": "いいですね。どこへ行きますか。",
+    "speedScale": 1.0,
+    "intonationScale": 1.18,
+    "tempoDynamicsScale": 1.08
+  },
+  "l25-scene-ii-2": {
+    "style": "normal",
+    "phrasedJa": "神戸にいい所がありますよ。",
+    "speedScale": 0.98,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.02
+  },
+  "l25-scene-ii-3": {
+    "style": "cheerful",
+    "phrasedJa": "神戸ですか。いいですね。",
+    "speedScale": 1.02,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.1
+  },
+  "l25-scene-ii-4": {
+    "style": "cheerful",
+    "phrasedJa": "あした天気がよかったら、ゴルフをしに行きませんか。",
+    "speedScale": 1.03,
+    "intonationScale": 1.26,
+    "tempoDynamicsScale": 1.14
+  },
+  "l25-scene-ii-6": {
+    "style": "normal",
+    "phrasedJa": "神戸にいい所がありますよ。",
+    "speedScale": 0.98,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.02
+  },
+  "l25-scene-ii-8": {
+    "style": "cheerful",
+    "phrasedJa": "5時に仕事が終わったら、ベトナム料理を食べに行きませんか。",
+    "speedScale": 1.02,
+    "intonationScale": 1.25,
+    "tempoDynamicsScale": 1.12
+  },
+  "l25-scene-ii-10": {
+    "style": "normal",
+    "phrasedJa": "神戸にいい所がありますよ。",
+    "speedScale": 0.98,
+    "intonationScale": 1.12,
+    "tempoDynamicsScale": 1.02
+  },
+  "l25-scene-iii-0": {
+    "style": "normal",
+    "phrasedJa": "もしもし、佐藤さんですか。",
+    "speedScale": 0.97,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.05
+  },
+  "l25-scene-iii-1": {
+    "style": "normal",
+    "phrasedJa": "はい、佐藤です。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 0.98
+  },
+  "l25-scene-iii-2": {
+    "style": "normal",
+    "phrasedJa": "ミラーですが、今、会議室にいます。アキックスの牧野さんが来たら、教えてください。",
+    "speedScale": 0.96,
+    "intonationScale": 1.15,
+    "tempoDynamicsScale": 1.04
+  },
+  "l25-scene-iii-3": {
+    "style": "normal",
+    "phrasedJa": "はい、わかりました。",
+    "speedScale": 0.96,
+    "intonationScale": 1.02,
+    "tempoDynamicsScale": 0.95
+  },
+  "l25-scene-iii-4": {
+    "style": "normal",
+    "phrasedJa": "もしもし、佐藤さんですか。",
+    "speedScale": 0.97,
+    "intonationScale": 1.2,
+    "tempoDynamicsScale": 1.05
+  },
+  "l25-scene-iii-5": {
+    "style": "normal",
+    "phrasedJa": "はい、佐藤です。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 0.98
+  },
+  "l25-scene-iii-6": {
+    "style": "normal",
+    "phrasedJa": "グプタですが、今、会議室にいます。資料が届いたら、会議室へ持って来てください。",
+    "speedScale": 0.96,
+    "intonationScale": 1.16,
+    "tempoDynamicsScale": 1.04
+  },
+  "l25-scene-iii-7": {
+    "style": "normal",
+    "phrasedJa": "はい、わかりました。",
+    "speedScale": 0.96,
+    "intonationScale": 1.02,
+    "tempoDynamicsScale": 0.95
+  },
+  "l25-scene-iii-9": {
+    "style": "normal",
+    "phrasedJa": "はい、佐藤です。",
+    "speedScale": 0.98,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 0.98
+  },
+  "l25-scene-iii-11": {
+    "style": "normal",
+    "phrasedJa": "はい、わかりました。",
+    "speedScale": 0.96,
+    "intonationScale": 1.02,
+    "tempoDynamicsScale": 0.95
+  },
+  "l25-scene-iv-1": {
+    "style": "normal",
+    "phrasedJa": "いいえ、雨だったら、ありません。",
+    "speedScale": 0.95,
+    "intonationScale": 1.0,
+    "tempoDynamicsScale": 0.95
+  },
+  "l25-scene-iv-4": {
+    "style": "normal",
+    "phrasedJa": "いいえ、天気が悪かったら、ありません。",
+    "speedScale": 0.95,
+    "intonationScale": 1.0,
+    "tempoDynamicsScale": 0.95
+  },
+  "l25-scene-iv-6": {
+    "style": "normal",
+    "phrasedJa": "来週のテニス、雨が降っても、ありますか。",
+    "speedScale": 0.98,
+    "intonationScale": 1.22,
+    "tempoDynamicsScale": 1.08
+  },
+  "l25-scene-iv-7": {
+    "style": "normal",
+    "phrasedJa": "いいえ、雨が降ったら、ありません。",
+    "speedScale": 0.95,
+    "intonationScale": 1.02,
+    "tempoDynamicsScale": 0.95
+  },
+  "l25-scene-iv-8": {
+    "style": "calm",
+    "phrasedJa": "そうですか。",
+    "speedScale": 0.94,
+    "intonationScale": 1.05,
+    "tempoDynamicsScale": 0.92
   }
 }

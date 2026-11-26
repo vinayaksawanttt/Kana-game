@@ -115,6 +115,43 @@ let currentPlaybackId = 0;
 let sequenceAbortController: { aborted: boolean } | null = null;
 let currentAudioResolver: (() => void) | null = null;
 
+// Preloaded HTMLAudioElement cache for instant, zero-clipping dialogue & sentence playback
+const preloadedAudioPool = new Map<string, HTMLAudioElement>();
+const MAX_PRELOADED_AUDIO = 36;
+
+function preloadStaticAudioUrl(src: string): HTMLAudioElement | null {
+  if (typeof window === "undefined" || typeof Audio === "undefined" || !src) {
+    return null;
+  }
+  const existing = preloadedAudioPool.get(src);
+  if (existing) {
+    return existing;
+  }
+  try {
+    if (preloadedAudioPool.size >= MAX_PRELOADED_AUDIO) {
+      const oldestKey = preloadedAudioPool.keys().next().value;
+      if (oldestKey) {
+        preloadedAudioPool.delete(oldestKey);
+      }
+    }
+    const audio = new Audio();
+    audio.preload = "auto";
+    audio.src = src;
+    const isTestEnv = Boolean(typeof process !== "undefined" && process.env?.VITEST);
+    if (!isTestEnv && typeof audio.load === "function") {
+      try {
+        audio.load();
+      } catch {
+        // Ignore load errors
+      }
+    }
+    preloadedAudioPool.set(src, audio);
+    return audio;
+  } catch {
+    return null;
+  }
+}
+
 interface TrimmedKanaBuffer {
   buffer: AudioBuffer;
   startSec: number;
@@ -161,7 +198,8 @@ function stopCurrentPlayback() {
       audioToStop.currentTime = 0;
       audioToStop.onended = null;
       audioToStop.onerror = null;
-      audioToStop.src = "";
+      audioToStop.oncanplaythrough = null;
+      audioToStop.onloadeddata = null;
     } catch {
       // Ignore
     }
@@ -496,7 +534,8 @@ function playAudioItemAsync(
         prev.currentTime = 0;
         prev.onended = null;
         prev.onerror = null;
-        prev.src = "";
+        prev.oncanplaythrough = null;
+        prev.onloadeddata = null;
       } catch {
         // Ignore
       }
@@ -504,7 +543,14 @@ function playAudioItemAsync(
 
     let audio: HTMLAudioElement;
     try {
-      audio = new Audio(src);
+      const cached = preloadedAudioPool.get(src);
+      if (cached) {
+        preloadedAudioPool.delete(src);
+        audio = cached;
+      } else {
+        audio = new Audio(src);
+        audio.preload = "auto";
+      }
       globalAudio = audio;
     } catch {
       if (playbackId === currentPlaybackId) {
@@ -516,6 +562,7 @@ function playAudioItemAsync(
     }
 
     try {
+      audio.currentTime = 0;
       audio.playbackRate = effectiveRate;
       audio.defaultPlaybackRate = effectiveRate;
     } catch {
@@ -523,10 +570,21 @@ function playAudioItemAsync(
     }
 
     let hasEndedOrErrored = false;
+    let readyTimeoutId: ReturnType<typeof setTimeout> | null = null;
+
+    const clearReadyListeners = () => {
+      if (readyTimeoutId !== null) {
+        clearTimeout(readyTimeoutId);
+        readyTimeoutId = null;
+      }
+      audio.oncanplaythrough = null;
+      audio.onloadeddata = null;
+    };
 
     const finish = () => {
       if (hasEndedOrErrored) return;
       hasEndedOrErrored = true;
+      clearReadyListeners();
       if (currentAudioResolver === finish) {
         currentAudioResolver = null;
       }
@@ -543,6 +601,7 @@ function playAudioItemAsync(
 
     const handleFailure = () => {
       if (hasEndedOrErrored) return;
+      clearReadyListeners();
       if (playbackId !== currentPlaybackId) {
         finish();
         return;
@@ -565,32 +624,68 @@ function playAudioItemAsync(
 
     updateState({ isPlaying: true, activeKey: slug, activeChar: activeChar ?? null });
 
-    try {
-      const playPromise = audio.play();
-      if (playPromise && typeof playPromise.catch === "function") {
-        playPromise.catch((err: unknown) => {
-          if (hasEndedOrErrored) return;
-          // AbortError or superseded playback must never start a late fallback
-          if (
-            playbackId !== currentPlaybackId ||
-            (err instanceof Error && err.name === "AbortError")
-          ) {
-            finish();
-            return;
-          }
-          handleFailure();
-        });
-      }
-    } catch (err: unknown) {
-      if (hasEndedOrErrored) return;
-      if (
-        playbackId !== currentPlaybackId ||
-        (err instanceof Error && err.name === "AbortError")
-      ) {
+    let playStarted = false;
+    const startPlayback = () => {
+      if (playStarted || hasEndedOrErrored) return;
+      playStarted = true;
+      clearReadyListeners();
+      if (playbackId !== currentPlaybackId) {
         finish();
         return;
       }
-      handleFailure();
+      try {
+        audio.currentTime = 0;
+        audio.playbackRate = effectiveRate;
+        audio.defaultPlaybackRate = effectiveRate;
+      } catch {
+        // Ignore
+      }
+      try {
+        const playPromise = audio.play();
+        if (playPromise && typeof playPromise.catch === "function") {
+          playPromise.catch((err: unknown) => {
+            if (hasEndedOrErrored) return;
+            // AbortError or superseded playback must never start a late fallback
+            if (
+              playbackId !== currentPlaybackId ||
+              (err instanceof Error && err.name === "AbortError")
+            ) {
+              finish();
+              return;
+            }
+            handleFailure();
+          });
+        }
+      } catch (err: unknown) {
+        if (hasEndedOrErrored) return;
+        if (
+          playbackId !== currentPlaybackId ||
+          (err instanceof Error && err.name === "AbortError")
+        ) {
+          finish();
+          return;
+        }
+        handleFailure();
+      }
+    };
+
+    // In browser environments where the audio buffer is still loading (readyState < HAVE_FUTURE_DATA),
+    // wait briefly for canplaythrough/loadeddata before invoking play() so the opening syllables
+    // of the first dialogue line are never clipped while the audio hardware initializes.
+    const isTestEnv = Boolean(typeof process !== "undefined" && process.env?.VITEST);
+    if (!isTestEnv && typeof audio.readyState === "number" && audio.readyState < 3) {
+      audio.oncanplaythrough = startPlayback;
+      audio.onloadeddata = startPlayback;
+      readyTimeoutId = setTimeout(startPlayback, 280);
+      if (typeof audio.load === "function" && audio.readyState === 0) {
+        try {
+          audio.load();
+        } catch {
+          // Ignore
+        }
+      }
+    } else {
+      startPlayback();
     }
   });
 }
@@ -1024,6 +1119,18 @@ export function useJapaneseAudio() {
     []
   );
 
+  const preloadSentenceAudio = useCallback(
+    (sentenceJa: string, audioSrc?: string) => {
+      if (typeof window === "undefined" || (!sentenceJa && !audioSrc)) return;
+      const payload = resolveSentenceAudio(sentenceJa, audioSrc);
+      const staticSrc = audioSrc || payload.staticSrc;
+      if (staticSrc) {
+        preloadStaticAudioUrl(staticSrc);
+      }
+    },
+    []
+  );
+
   useEffect(() => {
     return () => {
       // Component unmount does not disrupt audio singleton
@@ -1046,6 +1153,7 @@ export function useJapaneseAudio() {
     playVocab,
     playSentence,
     playSentenceAsync,
+    preloadSentenceAudio,
     playGrammarTitle,
     stopAudio,
     toKanaAudioKey,
