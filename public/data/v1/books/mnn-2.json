@@ -909,7 +909,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l26-scene-i-8.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l26-scene-ii",
@@ -988,7 +989,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l26-scene-ii-8.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l26-scene-iii",
@@ -1043,7 +1045,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l26-scene-iii-5.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l26-scene-iv",
@@ -1106,7 +1109,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l26-scene-iv-6.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -2905,7 +2909,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l27-scene-i-10.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l27-scene-ii",
@@ -2943,7 +2948,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l27-scene-ii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l27-scene-iii",
@@ -2981,7 +2987,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l27-scene-iii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l27-scene-iv",
@@ -3027,7 +3034,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l27-scene-iv-4.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -4542,7 +4550,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l28-scene-i-11.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l28-scene-ii",
@@ -4588,7 +4597,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l28-scene-ii-4.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l28-scene-iii",
@@ -4618,7 +4628,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l28-scene-iii-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l28-scene-iv",
@@ -4656,7 +4667,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l28-scene-iv-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -6195,7 +6207,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l29-scene-i-13.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l29-scene-ii",
@@ -6233,7 +6246,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l29-scene-ii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l29-scene-iii",
@@ -6263,7 +6277,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l29-scene-iii-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l29-scene-iv",
@@ -6301,7 +6316,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l29-scene-iv-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -7584,7 +7600,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l30-scene-i-10.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l30-scene-ii",
@@ -7614,7 +7631,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l30-scene-ii-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l30-scene-iii",
@@ -7644,7 +7662,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l30-scene-iii-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l30-scene-iv",
@@ -7690,7 +7709,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l30-scene-iv-4.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -9488,7 +9508,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l31-scene-i-11.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l31-scene-ii",
@@ -9526,7 +9547,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l31-scene-ii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l31-scene-iii",
@@ -9556,7 +9578,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l31-scene-iii-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l31-scene-iv",
@@ -9594,7 +9617,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l31-scene-iv-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -11267,7 +11291,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l32-scene-i-8.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l32-scene-ii",
@@ -11305,7 +11330,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l32-scene-ii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l32-scene-iii",
@@ -11327,7 +11353,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l32-scene-iii-1.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l32-scene-iv",
@@ -11373,7 +11400,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l32-scene-iv-4.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -12992,7 +13020,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l33-scene-i-7.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l33-scene-ii",
@@ -13030,7 +13059,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l33-scene-ii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l33-scene-iii",
@@ -13068,7 +13098,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l33-scene-iii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l33-scene-iv",
@@ -13106,7 +13137,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l33-scene-iv-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -14509,7 +14541,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l34-scene-i-11.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l34-scene-ii",
@@ -14547,7 +14580,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l34-scene-ii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l34-scene-iii",
@@ -14577,7 +14611,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l34-scene-iii-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l34-scene-iv",
@@ -14615,7 +14650,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l34-scene-iv-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -16174,7 +16210,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l35-scene-i-10.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l35-scene-ii",
@@ -16204,7 +16241,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l35-scene-ii-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l35-scene-iii",
@@ -16234,7 +16272,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l35-scene-iii-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l35-scene-iv",
@@ -16272,7 +16311,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l35-scene-iv-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -18226,7 +18266,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l36-scene-i-10.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l36-scene-ii",
@@ -18256,7 +18297,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l36-scene-ii-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l36-scene-iii",
@@ -18278,7 +18320,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l36-scene-iii-1.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l36-scene-iv",
@@ -18308,7 +18351,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l36-scene-iv-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -19770,7 +19814,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l37-scene-i-6.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l37-scene-ii",
@@ -19800,7 +19845,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l37-scene-ii-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l37-scene-iii",
@@ -19846,7 +19892,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l37-scene-iii-4.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l37-scene-iv",
@@ -19876,7 +19923,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l37-scene-iv-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -21433,7 +21481,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l38-scene-i-10.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l38-scene-ii",
@@ -21463,7 +21512,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l38-scene-ii-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l38-scene-iii",
@@ -21501,7 +21551,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l38-scene-iii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l38-scene-iv",
@@ -21547,7 +21598,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l38-scene-iv-4.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -23182,7 +23234,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l39-scene-i-7.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l39-scene-ii",
@@ -23220,7 +23273,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l39-scene-ii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l39-scene-iii",
@@ -23258,7 +23312,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l39-scene-iii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l39-scene-iv",
@@ -23296,7 +23351,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l39-scene-iv-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -24810,7 +24866,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l40-scene-i-8.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l40-scene-ii",
@@ -24848,7 +24905,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l40-scene-ii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l40-scene-iii",
@@ -24886,7 +24944,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l40-scene-iii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l40-scene-iv",
@@ -24924,7 +24983,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l40-scene-iv-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -26936,7 +26996,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l41-scene-i-5.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l41-scene-ii",
@@ -26998,7 +27059,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l41-scene-ii-6.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l41-scene-iii",
@@ -27044,7 +27106,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l41-scene-iii-4.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l41-scene-iv",
@@ -27098,7 +27161,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l41-scene-iv-5.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -28728,7 +28792,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l42-scene-i-10.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l42-scene-ii",
@@ -28758,7 +28823,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l42-scene-ii-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l42-scene-iii",
@@ -28788,7 +28854,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l42-scene-iii-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l42-scene-iv",
@@ -28834,7 +28901,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l42-scene-iv-4.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -30065,7 +30133,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l43-scene-i-7.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l43-scene-ii",
@@ -30103,7 +30172,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l43-scene-ii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l43-scene-iii",
@@ -30133,7 +30203,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l43-scene-iii-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l43-scene-iv",
@@ -30163,7 +30234,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l43-scene-iv-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -31411,7 +31483,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l44-scene-i-9.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l44-scene-ii",
@@ -31457,7 +31530,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l44-scene-ii-4.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l44-scene-iii",
@@ -31503,7 +31577,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l44-scene-iii-4.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l44-scene-iv",
@@ -31565,7 +31640,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l44-scene-iv-6.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -33173,7 +33249,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l45-scene-i-10.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l45-scene-ii",
@@ -33211,7 +33288,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l45-scene-ii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l45-scene-iii",
@@ -33241,7 +33319,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l45-scene-iii-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l45-scene-iv",
@@ -33271,7 +33350,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l45-scene-iv-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -35116,7 +35196,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l46-scene-i-9.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l46-scene-ii",
@@ -35146,7 +35227,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l46-scene-ii-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l46-scene-iii",
@@ -35184,7 +35266,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l46-scene-iii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l46-scene-iv",
@@ -35214,7 +35297,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l46-scene-iv-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -36859,7 +36943,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l47-scene-i-11.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l47-scene-ii",
@@ -36897,7 +36982,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l47-scene-ii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l47-scene-iii",
@@ -36935,7 +37021,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l47-scene-iii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l47-scene-iv",
@@ -36973,7 +37060,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l47-scene-iv-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -38111,7 +38199,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l48-scene-i-10.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l48-scene-ii",
@@ -38141,7 +38230,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l48-scene-ii-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l48-scene-iii",
@@ -38171,7 +38261,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l48-scene-iii-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l48-scene-iv",
@@ -38209,7 +38300,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l48-scene-iv-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -39568,7 +39660,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l49-scene-i-9.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l49-scene-ii",
@@ -39638,7 +39731,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l49-scene-ii-7.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l49-scene-iii",
@@ -39684,7 +39778,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l49-scene-iii-4.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l49-scene-iv",
@@ -39730,7 +39825,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l49-scene-iv-4.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -41323,7 +41419,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l50-scene-i-11.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l50-scene-ii",
@@ -41345,7 +41442,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l50-scene-ii-1.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l50-scene-iii",
@@ -41375,7 +41473,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l50-scene-iii-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l50-scene-iv",
@@ -41413,7 +41512,8 @@
               "audioSrc": "/audio/books/dialogues/mnn-2/l50-scene-iv-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [

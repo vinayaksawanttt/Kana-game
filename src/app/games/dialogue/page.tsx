@@ -426,7 +426,7 @@ export default function DialogueHubPage() {
                 </span>
                 <span className="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-violet-500/25 bg-violet-500/10 px-3 py-1 text-[11px] font-bold text-violet-600 dark:text-violet-300 shadow-xs">
                   <Headphones className="size-3" />
-                  Dual VOICEVOX & Kenpath Audio
+                  Local VOICEVOX & AivisSpeech Audio
                 </span>
               </div>
 

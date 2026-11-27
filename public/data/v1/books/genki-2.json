@@ -32,7 +32,8 @@
           "meaning": "adult",
           "type": "n",
           "linkedVocabId": "6f5049e2d4",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3e9d8aafc84d.opus"
         },
         {
           "id": "v-genki-l13-2",
@@ -41,7 +42,8 @@
           "readingKana": "べんごし",
           "meaning": "lawyer",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-839e66fbde0b.opus"
         },
         {
           "id": "d5c2e69813",
@@ -52,7 +54,8 @@
           "type": "n",
           "linkedVocabId": "d5c2e69813",
           "hasAudio": true,
-          "audioKey": "わたくし"
+          "audioKey": "わたくし",
+          "audioSrc": "/audio/books/vocab/v-613b845a89b3.opus"
         },
         {
           "id": "9decc44f4e",
@@ -62,7 +65,8 @@
           "meaning": "curry",
           "type": "n",
           "linkedVocabId": "9decc44f4e",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-979d721bde05.opus"
         },
         {
           "id": "1288e600be",
@@ -72,7 +76,8 @@
           "meaning": "black tea",
           "type": "n",
           "linkedVocabId": "1288e600be",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-0f794a40163b.opus"
         },
         {
           "id": "a2a012c05f",
@@ -82,7 +87,8 @@
           "meaning": "kimono; Japanese traditional dress",
           "type": "n",
           "linkedVocabId": "a2a012c05f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-bfd78e13e4f1.opus"
         },
         {
           "id": "4b0b49a42d",
@@ -92,7 +98,8 @@
           "meaning": "sweater",
           "type": "n",
           "linkedVocabId": "4b0b49a42d",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-c0759f1e6952.opus"
         },
         {
           "id": "05e77cc928",
@@ -102,7 +109,8 @@
           "meaning": "musical instrument",
           "type": "n",
           "linkedVocabId": "05e77cc928",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3ff08285c09c.opus"
         },
         {
           "id": "v-genki-l13-9",
@@ -111,7 +119,8 @@
           "readingKana": "からて",
           "meaning": "karate",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-40d3de5abf3d.opus"
         },
         {
           "id": "v-genki-l13-10",
@@ -120,7 +129,8 @@
           "readingKana": "ゴルフ",
           "meaning": "golf",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a382e9ec875b.opus"
         },
         {
           "id": "v-genki-l13-11",
@@ -129,7 +139,8 @@
           "readingKana": "バイク",
           "meaning": "motorcycle",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ea9e0cc6253d.opus"
         },
         {
           "id": "3836c2c8bd",
@@ -140,7 +151,8 @@
           "type": "n",
           "linkedVocabId": "3836c2c8bd",
           "hasAudio": true,
-          "audioKey": "ぞう"
+          "audioKey": "ぞう",
+          "audioSrc": "/audio/books/vocab/v-f5a03926bbe9.opus"
         },
         {
           "id": "a556e5edce",
@@ -151,7 +163,8 @@
           "type": "n",
           "linkedVocabId": "a556e5edce",
           "hasAudio": true,
-          "audioKey": "からだ"
+          "audioKey": "からだ",
+          "audioSrc": "/audio/books/vocab/v-55a5b00745e5.opus"
         },
         {
           "id": "v-genki-l13-14",
@@ -160,7 +173,8 @@
           "readingKana": "がいこくご",
           "meaning": "foreign language",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ceff0f9e87d8.opus"
         },
         {
           "id": "491cfa69be",
@@ -170,7 +184,8 @@
           "meaning": "language",
           "type": "n",
           "linkedVocabId": "491cfa69be",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ed1e4d5231c8.opus"
         },
         {
           "id": "9eaa627a73",
@@ -180,7 +195,8 @@
           "meaning": "grammar",
           "type": "n",
           "linkedVocabId": "9eaa627a73",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-9cfedc22d15d.opus"
         },
         {
           "id": "v-genki-l13-17",
@@ -189,7 +205,8 @@
           "readingKana": "アプリ",
           "meaning": "application",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-8d1fea4126f7.opus"
         },
         {
           "id": "0cf05b3a0d",
@@ -199,7 +216,8 @@
           "meaning": "apartment; smaller apartment building",
           "type": "n",
           "linkedVocabId": "0cf05b3a0d",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-dd9002ddd3f3.opus"
         },
         {
           "id": "0d4a82941e",
@@ -209,7 +227,8 @@
           "meaning": "larger apartment building; condominium",
           "type": "n",
           "linkedVocabId": "0d4a82941e",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-4af81aaa8690.opus"
         },
         {
           "id": "0f74a8f3a4",
@@ -219,7 +238,8 @@
           "meaning": "airport",
           "type": "n",
           "linkedVocabId": "0f74a8f3a4",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-87e538fc30fb.opus"
         },
         {
           "id": "0c8a588e53",
@@ -230,7 +250,8 @@
           "type": "n",
           "linkedVocabId": "0c8a588e53",
           "hasAudio": true,
-          "audioKey": "みせ"
+          "audioKey": "みせ",
+          "audioSrc": "/audio/books/vocab/v-82bae538d2c2.opus"
         },
         {
           "id": "94b721726e",
@@ -241,7 +262,8 @@
           "type": "n",
           "linkedVocabId": "94b721726e",
           "hasAudio": true,
-          "audioKey": "ぶっか"
+          "audioKey": "ぶっか",
+          "audioSrc": "/audio/vocab/ぶっか.opus"
         },
         {
           "id": "a7c4dfbb71",
@@ -251,7 +273,8 @@
           "meaning": "advertisement",
           "type": "n",
           "linkedVocabId": "a7c4dfbb71",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-1b9d7f1d8460.opus"
         },
         {
           "id": "9784d74af5",
@@ -261,7 +284,8 @@
           "meaning": "recruitment",
           "type": "n",
           "linkedVocabId": "9784d74af5",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-654676903020.opus"
         },
         {
           "id": "2ef2e06612",
@@ -271,7 +295,8 @@
           "meaning": "promise; appointment",
           "type": "n",
           "linkedVocabId": "2ef2e06612",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-4074bfe879ea.opus"
         },
         {
           "id": "v-genki-l13-26",
@@ -280,7 +305,8 @@
           "readingKana": "うれしい",
           "meaning": "glad",
           "type": "i-adj",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-9d6036d528b2.opus"
         },
         {
           "id": "3153705f1f",
@@ -290,7 +316,8 @@
           "meaning": "sad",
           "type": "i-adj",
           "linkedVocabId": "3153705f1f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-34f82f0aa07b.opus"
         },
         {
           "id": "d90ee2957c",
@@ -300,7 +327,8 @@
           "meaning": "strict",
           "type": "i-adj",
           "linkedVocabId": "d90ee2957c",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ea9fa0266092.opus"
         },
         {
           "id": "v-genki-l13-29",
@@ -309,7 +337,8 @@
           "readingKana": "きぶんがわるい",
           "meaning": "to feel sick",
           "type": "i-adj",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-9abbc60b380b.opus"
         },
         {
           "id": "d2546ac97b",
@@ -319,7 +348,8 @@
           "meaning": "hot and spicy; salty",
           "type": "i-adj",
           "linkedVocabId": "d2546ac97b",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-53d5c411e613.opus"
         },
         {
           "id": "v-genki-l13-31",
@@ -328,7 +358,8 @@
           "readingKana": "すごい",
           "meaning": "incredible; awesome",
           "type": "i-adj",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-c550c27beb9c.opus"
         },
         {
           "id": "a21ba677f2",
@@ -339,7 +370,8 @@
           "type": "i-adj",
           "linkedVocabId": "a21ba677f2",
           "hasAudio": true,
-          "audioKey": "ちかい"
+          "audioKey": "ちかい",
+          "audioSrc": "/audio/books/vocab/v-650c36466239.opus"
         },
         {
           "id": "f74dd1ee9a",
@@ -349,7 +381,8 @@
           "meaning": "various; different kinds of",
           "type": "na-adj",
           "linkedVocabId": "f74dd1ee9a",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-9e40b1643780.opus"
         },
         {
           "id": "7e7306e3ec",
@@ -359,7 +392,8 @@
           "meaning": "happy (lasting happiness)",
           "type": "na-adj",
           "linkedVocabId": "7e7306e3ec",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-b946b81f3e5c.opus"
         },
         {
           "id": "6cf505ee55",
@@ -369,7 +403,8 @@
           "meaning": "no good",
           "type": "na-adj",
           "linkedVocabId": "6cf505ee55",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-eb35945ad645.opus"
         },
         {
           "id": "fb73ee2899",
@@ -379,7 +414,8 @@
           "meaning": "to knit (～を)",
           "type": "u-v",
           "linkedVocabId": "fb73ee2899",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-fa89f09c5b5d.opus"
         },
         {
           "id": "v-genki-l13-37",
@@ -388,7 +424,8 @@
           "readingKana": "がんばる",
           "meaning": "to do one's best; to try hard",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e1761f760f1c.opus"
         },
         {
           "id": "a777a7ce62",
@@ -398,7 +435,8 @@
           "meaning": "to cry",
           "type": "u-v",
           "linkedVocabId": "a777a7ce62",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-9600c6cb81a9.opus"
         },
         {
           "id": "7309a238e8",
@@ -408,7 +446,8 @@
           "meaning": "to brush (teeth); to polish (～を)",
           "type": "u-v",
           "linkedVocabId": "7309a238e8",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3526d2263fef.opus"
         },
         {
           "id": "v-genki-l13-40",
@@ -417,7 +456,8 @@
           "readingKana": "やくそくおまもる",
           "meaning": "to keep a promise",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ac56f82a83b9.opus"
         },
         {
           "id": "v-genki-l13-41",
@@ -426,7 +466,8 @@
           "readingKana": "かんどうする",
           "meaning": "to be moved/touched (by...) (～に)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-0f9b134d620b.opus"
         },
         {
           "id": "v-genki-l13-42",
@@ -435,7 +476,8 @@
           "readingKana": "...かい",
           "meaning": "...times",
           "type": "ctr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-41dfa06a0c90.opus"
         },
         {
           "id": "v-genki-l13-43",
@@ -444,7 +486,8 @@
           "readingKana": "...きろ",
           "meaning": "...kilometers; ...kilograms",
           "type": "ctr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e2004a932459.opus"
         },
         {
           "id": "acba6e07ba",
@@ -455,7 +498,8 @@
           "type": "adv",
           "linkedVocabId": "acba6e07ba",
           "hasAudio": true,
-          "audioKey": "ぜんぶ"
+          "audioKey": "ぜんぶ",
+          "audioSrc": "/audio/vocab/ぜんぶ.opus"
         },
         {
           "id": "v-genki-l13-45",
@@ -464,7 +508,8 @@
           "readingKana": "...ともうします",
           "meaning": "my name is...",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f98c04cd7ce9.opus"
         },
         {
           "id": "0b2acf3460",
@@ -474,7 +519,8 @@
           "meaning": "especially",
           "type": "adv",
           "linkedVocabId": "0b2acf3460",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ca9213fd24ef.opus"
         },
         {
           "id": "1cfccd0cdd",
@@ -484,7 +530,8 @@
           "meaning": "one day",
           "type": "ctr",
           "linkedVocabId": "1cfccd0cdd",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-be4ceaca2218.opus"
         },
         {
           "id": "750786cc55",
@@ -494,7 +541,8 @@
           "meaning": "two days",
           "type": "ctr",
           "linkedVocabId": "750786cc55",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-fcc186a2f6ae.opus"
         },
         {
           "id": "1713d0bbe8",
@@ -505,7 +553,8 @@
           "type": "ctr",
           "linkedVocabId": "1713d0bbe8",
           "hasAudio": true,
-          "audioKey": "みっか"
+          "audioKey": "みっか",
+          "audioSrc": "/audio/vocab/みっか.opus"
         },
         {
           "id": "222ae96df7",
@@ -516,7 +565,8 @@
           "type": "ctr",
           "linkedVocabId": "222ae96df7",
           "hasAudio": true,
-          "audioKey": "よっか"
+          "audioKey": "よっか",
+          "audioSrc": "/audio/vocab/よっか.opus"
         },
         {
           "id": "2a7c4baf86",
@@ -526,7 +576,8 @@
           "meaning": "five days",
           "type": "ctr",
           "linkedVocabId": "2a7c4baf86",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ee2dec6466f6.opus"
         },
         {
           "id": "bf44ddad08",
@@ -536,7 +587,8 @@
           "meaning": "six days",
           "type": "ctr",
           "linkedVocabId": "bf44ddad08",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-10fce6b6a326.opus"
         },
         {
           "id": "75ed3c3b2b",
@@ -547,7 +599,8 @@
           "type": "ctr",
           "linkedVocabId": "75ed3c3b2b",
           "hasAudio": true,
-          "audioKey": "なのか"
+          "audioKey": "なのか",
+          "audioSrc": "/audio/vocab/なのか.opus"
         },
         {
           "id": "4f8e83945d",
@@ -557,7 +610,8 @@
           "meaning": "eight days",
           "type": "ctr",
           "linkedVocabId": "4f8e83945d",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a9fa14bb08fe.opus"
         },
         {
           "id": "f114f6f499",
@@ -567,7 +621,8 @@
           "meaning": "nine days",
           "type": "ctr",
           "linkedVocabId": "f114f6f499",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a91a7f213f53.opus"
         },
         {
           "id": "e8579084ba",
@@ -578,7 +633,8 @@
           "type": "ctr",
           "linkedVocabId": "e8579084ba",
           "hasAudio": true,
-          "audioKey": "とおか"
+          "audioKey": "とおか",
+          "audioSrc": "/audio/vocab/とおか.opus"
         }
       ],
       "kanji": [
@@ -2279,7 +2335,8 @@
           "meaning": "(your/someone's) wife",
           "type": "n",
           "linkedVocabId": "6c4661d672",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-c1a71623a401.opus"
         },
         {
           "id": "v-genki-l14-2",
@@ -2288,7 +2345,8 @@
           "readingKana": "ごしゅじん",
           "meaning": "(your/someone's) husband",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ed31abc946d9.opus"
         },
         {
           "id": "v-genki-l14-3",
@@ -2297,7 +2355,8 @@
           "readingKana": "パートナー",
           "meaning": "partner",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a4f44df5bc0e.opus"
         },
         {
           "id": "v-genki-l14-4",
@@ -2306,7 +2365,8 @@
           "readingKana": "おじさん",
           "meaning": "uncle; middle-aged man",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-6a38548976e6.opus"
         },
         {
           "id": "v-genki-l14-5",
@@ -2315,7 +2375,8 @@
           "readingKana": "おばさん",
           "meaning": "aunt; middle-aged woman",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-d4b1fb0ff24d.opus"
         },
         {
           "id": "0139a208fe",
@@ -2325,7 +2386,8 @@
           "meaning": "parents",
           "type": "n",
           "linkedVocabId": "0139a208fe",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-642b3825c556.opus"
         },
         {
           "id": "v-genki-l14-7",
@@ -2334,7 +2396,8 @@
           "readingKana": "おうやさん",
           "meaning": "landlord; landlady",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-4952970f3a63.opus"
         },
         {
           "id": "d2b9c47656",
@@ -2344,7 +2407,8 @@
           "meaning": "everyone; all of you",
           "type": "n",
           "linkedVocabId": "d2b9c47656",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3dee9d71632f.opus"
         },
         {
           "id": "v-genki-l14-9",
@@ -2353,7 +2417,8 @@
           "readingKana": "チョコレート",
           "meaning": "chocolate",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-9863f8fb506e.opus"
         },
         {
           "id": "v-genki-l14-10",
@@ -2363,7 +2428,8 @@
           "meaning": "mandarin orange",
           "type": "n",
           "hasAudio": true,
-          "audioKey": "みかん"
+          "audioKey": "みかん",
+          "audioSrc": "/audio/vocab/みかん.opus"
         },
         {
           "id": "v-genki-l14-11",
@@ -2372,7 +2438,8 @@
           "readingKana": "トレーナー",
           "meaning": "sweatshirt",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e121da7da7d1.opus"
         },
         {
           "id": "f71424e3ff",
@@ -2382,7 +2449,8 @@
           "meaning": "shirt",
           "type": "n",
           "linkedVocabId": "f71424e3ff",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-774306306127.opus"
         },
         {
           "id": "18046e46a1",
@@ -2392,7 +2460,8 @@
           "meaning": "necktie",
           "type": "n",
           "linkedVocabId": "18046e46a1",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-156bae824844.opus"
         },
         {
           "id": "f49b31d33f",
@@ -2402,7 +2471,8 @@
           "meaning": "winter scarf",
           "type": "n",
           "linkedVocabId": "f49b31d33f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-6388ec25ef72.opus"
         },
         {
           "id": "688ed7ca0f",
@@ -2412,7 +2482,8 @@
           "meaning": "ring",
           "type": "n",
           "linkedVocabId": "688ed7ca0f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-bf358211dc34.opus"
         },
         {
           "id": "381da4d060",
@@ -2423,7 +2494,8 @@
           "type": "n",
           "linkedVocabId": "381da4d060",
           "hasAudio": true,
-          "audioKey": "えんぴつ"
+          "audioKey": "えんぴつ",
+          "audioSrc": "/audio/vocab/えんぴつ.opus"
         },
         {
           "id": "v-genki-l14-17",
@@ -2432,7 +2504,8 @@
           "readingKana": "ぬいぐるみ",
           "meaning": "stuffed animal (e.g., teddy bear)",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-1820d30de19b.opus"
         },
         {
           "id": "8077c744a0",
@@ -2442,7 +2515,8 @@
           "meaning": "comic book",
           "type": "n",
           "linkedVocabId": "8077c744a0",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-0728628c3446.opus"
         },
         {
           "id": "v-genki-l14-19",
@@ -2451,7 +2525,8 @@
           "readingKana": "けしょうひん",
           "meaning": "cosmetics",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-68f0508ed80e.opus"
         },
         {
           "id": "670f2dd0dc",
@@ -2461,7 +2536,8 @@
           "meaning": "radio",
           "type": "n",
           "linkedVocabId": "670f2dd0dc",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-56f4349ecf99.opus"
         },
         {
           "id": "101d46a061",
@@ -2471,7 +2547,8 @@
           "meaning": "plate; dish",
           "type": "n",
           "linkedVocabId": "101d46a061",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f55a852f0213.opus"
         },
         {
           "id": "v-genki-l14-22",
@@ -2480,7 +2557,8 @@
           "readingKana": "おかえし",
           "meaning": "return (as a token of gratitude)",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ff701a630847.opus"
         },
         {
           "id": "v-genki-l14-23",
@@ -2489,7 +2567,8 @@
           "readingKana": "りれきしょ",
           "meaning": "résumé",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-91e62332c0e2.opus"
         },
         {
           "id": "cd86540645",
@@ -2499,7 +2578,8 @@
           "meaning": "Christmas",
           "type": "n",
           "linkedVocabId": "cd86540645",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e07e6dd2c7f5.opus"
         },
         {
           "id": "v-genki-l14-25",
@@ -2508,7 +2588,8 @@
           "readingKana": "バレンタインデー",
           "meaning": "Valentine's Day",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f3b6d94248bd.opus"
         },
         {
           "id": "v-genki-l14-26",
@@ -2517,7 +2598,8 @@
           "readingKana": "ホワイトデー",
           "meaning": "\"White Day\" (yet another gift-giving day)",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-facefde2ad73.opus"
         },
         {
           "id": "418493d941",
@@ -2527,7 +2609,8 @@
           "meaning": "to want (thing が)",
           "type": "i-adj",
           "linkedVocabId": "418493d941",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-736a73d829ed.opus"
         },
         {
           "id": "2b78635457",
@@ -2537,7 +2620,8 @@
           "meaning": "fashionable; stylish",
           "type": "na-adj",
           "linkedVocabId": "2b78635457",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-99e406553129.opus"
         },
         {
           "id": "3480dbdcdb",
@@ -2548,7 +2632,8 @@
           "type": "na-adj",
           "linkedVocabId": "3480dbdcdb",
           "hasAudio": true,
-          "audioKey": "けち"
+          "audioKey": "けち",
+          "audioSrc": "/audio/books/vocab/v-21552f11e34c.opus"
         },
         {
           "id": "af1dae5588",
@@ -2559,7 +2644,8 @@
           "type": "u-v",
           "linkedVocabId": "af1dae5588",
           "hasAudio": true,
-          "audioKey": "おくる"
+          "audioKey": "おくる",
+          "audioSrc": "/audio/books/vocab/v-3d95b96b7b1e.opus"
         },
         {
           "id": "395b9a867b",
@@ -2569,7 +2655,8 @@
           "meaning": "to look good (on somebody) (thing が)",
           "type": "u-v",
           "linkedVocabId": "395b9a867b",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-5cc60b1be739.opus"
         },
         {
           "id": "8ff67241d3",
@@ -2579,7 +2666,8 @@
           "meaning": "to give up (～を)",
           "type": "ru-v",
           "linkedVocabId": "8ff67241d3",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-152231e9785c.opus"
         },
         {
           "id": "9661cbac61",
@@ -2590,7 +2678,8 @@
           "type": "ru-v",
           "linkedVocabId": "9661cbac61",
           "hasAudio": true,
-          "audioKey": "あげる"
+          "audioKey": "あげる",
+          "audioSrc": "/audio/books/vocab/v-eee8b9c95721.opus"
         },
         {
           "id": "7d2f81c2a3",
@@ -2600,7 +2689,8 @@
           "meaning": "to give (me) (person に thing を)",
           "type": "ru-v",
           "linkedVocabId": "7d2f81c2a3",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-24fa68d81123.opus"
         },
         {
           "id": "69d0d632fa",
@@ -2610,7 +2700,8 @@
           "meaning": "to come into existence; to be made (～が)",
           "type": "ru-v",
           "linkedVocabId": "69d0d632fa",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-1c032dabc658.opus"
         },
         {
           "id": "v-genki-l14-36",
@@ -2619,7 +2710,8 @@
           "readingKana": "そうだんする",
           "meaning": "to consult (person に)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-c55c5c95315a.opus"
         },
         {
           "id": "v-genki-l14-37",
@@ -2628,7 +2720,8 @@
           "readingKana": "ちゅういする",
           "meaning": "to give warning (person に); to watch out (～に)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-0c2df7abe024.opus"
         },
         {
           "id": "v-genki-l14-38",
@@ -2637,7 +2730,8 @@
           "readingKana": "プロポーズする",
           "meaning": "to propose marriage (person に)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-b693186af8e1.opus"
         },
         {
           "id": "v-genki-l14-39",
@@ -2646,7 +2740,8 @@
           "readingKana": "...くん",
           "meaning": "Mr./Ms. ... (casual)",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ace2cd6cc969.opus"
         },
         {
           "id": "v-genki-l14-40",
@@ -2655,7 +2750,8 @@
           "readingKana": "...たち",
           "meaning": "[makes a noun plural]",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-d1a68b3e7083.opus"
         },
         {
           "id": "v-genki-l14-41",
@@ -2664,7 +2760,8 @@
           "readingKana": "わたしたち",
           "meaning": "we",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-883779605276.opus"
         },
         {
           "id": "v-genki-l14-42",
@@ -2673,7 +2770,8 @@
           "readingKana": "こんな...",
           "meaning": "like this; this kind of...",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f3eab5dd02c3.opus"
         },
         {
           "id": "a6aca833ca",
@@ -2683,7 +2781,8 @@
           "meaning": "suddenly",
           "type": "adv",
           "linkedVocabId": "a6aca833ca",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f3330194954e.opus"
         },
         {
           "id": "9b08365493",
@@ -2693,7 +2792,8 @@
           "meaning": "exactly",
           "type": "adv",
           "linkedVocabId": "9b08365493",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-20138dc82060.opus"
         },
         {
           "id": "19db29fbbb",
@@ -2704,7 +2804,8 @@
           "type": "adv",
           "linkedVocabId": "19db29fbbb",
           "hasAudio": true,
-          "audioKey": "よく"
+          "audioKey": "よく",
+          "audioSrc": "/audio/books/vocab/v-d3835cc7f63a.opus"
         },
         {
           "id": "7ba7ba2434",
@@ -2714,7 +2815,8 @@
           "meaning": "I am not sure...",
           "type": "expr",
           "linkedVocabId": "7ba7ba2434",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-0ac4412c2423.opus"
         },
         {
           "id": "v-genki-l14-47",
@@ -2723,7 +2825,8 @@
           "readingKana": "どうしたらいい",
           "meaning": "what should one do",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-583a7b919737.opus"
         },
         {
           "id": "v-genki-l14-48",
@@ -2732,7 +2835,8 @@
           "readingKana": "...こ",
           "meaning": "[generic counter for smaller items]",
           "type": "ctr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-083ed6fbedae.opus"
         },
         {
           "id": "v-genki-l14-49",
@@ -2741,7 +2845,8 @@
           "readingKana": "...さつ",
           "meaning": "[counter for bound volumes]",
           "type": "ctr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f3d4a98e9da9.opus"
         },
         {
           "id": "v-genki-l14-50",
@@ -2750,7 +2855,8 @@
           "readingKana": "...だい",
           "meaning": "[counter for equipment]",
           "type": "ctr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ace1b42bfba2.opus"
         },
         {
           "id": "v-genki-l14-51",
@@ -2759,7 +2865,8 @@
           "readingKana": "...ひき",
           "meaning": "[counter for smaller animals]",
           "type": "ctr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-136e38b8fcc0.opus"
         },
         {
           "id": "v-genki-l14-52",
@@ -2768,7 +2875,8 @@
           "readingKana": "...ほん",
           "meaning": "[counter for long objects]",
           "type": "ctr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-d2815033823e.opus"
         },
         {
           "id": "v-genki-l14-53",
@@ -2777,7 +2885,8 @@
           "readingKana": "...まい",
           "meaning": "[counter for flat objects]",
           "type": "ctr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-cde47d89cb17.opus"
         }
       ],
       "kanji": [
@@ -4103,7 +4212,8 @@
           "meaning": "foreigner",
           "type": "n",
           "linkedVocabId": "70f1678111",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f0134ce505f7.opus"
         },
         {
           "id": "38c854e97f",
@@ -4114,7 +4224,8 @@
           "type": "n",
           "linkedVocabId": "38c854e97f",
           "hasAudio": true,
-          "audioKey": "そば"
+          "audioKey": "そば",
+          "audioSrc": "/audio/vocab/そば.opus"
         },
         {
           "id": "5bb390da0b",
@@ -4124,7 +4235,8 @@
           "meaning": "painting; picture; drawing",
           "type": "n",
           "linkedVocabId": "5bb390da0b",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3b0a65000129.opus"
         },
         {
           "id": "ffa3dda331",
@@ -4135,7 +4247,8 @@
           "type": "n",
           "linkedVocabId": "ffa3dda331",
           "hasAudio": true,
-          "audioKey": "ちず"
+          "audioKey": "ちず",
+          "audioSrc": "/audio/vocab/ちず.opus"
         },
         {
           "id": "8ec35978bd",
@@ -4146,7 +4259,8 @@
           "type": "n",
           "linkedVocabId": "8ec35978bd",
           "hasAudio": true,
-          "audioKey": "じしょ"
+          "audioKey": "じしょ",
+          "audioSrc": "/audio/vocab/じしょ.opus"
         },
         {
           "id": "f06c0b68a6",
@@ -4156,7 +4270,8 @@
           "meaning": "furniture",
           "type": "n",
           "linkedVocabId": "f06c0b68a6",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ca2135642261.opus"
         },
         {
           "id": "8e4ddc0409",
@@ -4166,7 +4281,8 @@
           "meaning": "battery",
           "type": "n",
           "linkedVocabId": "8e4ddc0409",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-c7850b6b67da.opus"
         },
         {
           "id": "v-genki-l15-8",
@@ -4175,7 +4291,8 @@
           "readingKana": "ジャケット",
           "meaning": "jacket",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-9473f8c11a81.opus"
         },
         {
           "id": "db38ebd955",
@@ -4185,7 +4302,8 @@
           "meaning": "pet",
           "type": "n",
           "linkedVocabId": "db38ebd955",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-1558f37d2634.opus"
         },
         {
           "id": "v-genki-l15-10",
@@ -4194,7 +4312,8 @@
           "readingKana": "わりびきけん",
           "meaning": "discount coupon",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-6e670b84029d.opus"
         },
         {
           "id": "v-genki-l15-11",
@@ -4203,7 +4322,8 @@
           "readingKana": "インターネット",
           "meaning": "internet (colloquially ネット)",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-73f5c2ad2c77.opus"
         },
         {
           "id": "ba8831572d",
@@ -4213,7 +4333,8 @@
           "meaning": "earthquake",
           "type": "n",
           "linkedVocabId": "ba8831572d",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a6915e2cea13.opus"
         },
         {
           "id": "2ad8eb39d1",
@@ -4223,7 +4344,8 @@
           "meaning": "insurance",
           "type": "n",
           "linkedVocabId": "2ad8eb39d1",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f73cd09ade44.opus"
         },
         {
           "id": "e9abf9d145",
@@ -4233,7 +4355,8 @@
           "meaning": "tax",
           "type": "n",
           "linkedVocabId": "e9abf9d145",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-05fa0b2ed546.opus"
         },
         {
           "id": "85eb994887",
@@ -4244,7 +4367,8 @@
           "type": "n",
           "linkedVocabId": "85eb994887",
           "hasAudio": true,
-          "audioKey": "きょうしつ"
+          "audioKey": "きょうしつ",
+          "audioSrc": "/audio/vocab/きょうしつ.opus"
         },
         {
           "id": "372b08211e",
@@ -4254,7 +4378,8 @@
           "meaning": "building",
           "type": "n",
           "linkedVocabId": "372b08211e",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-daaad020270d.opus"
         },
         {
           "id": "55c1439239",
@@ -4264,7 +4389,8 @@
           "meaning": "swimming pool",
           "type": "n",
           "linkedVocabId": "55c1439239",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-82a5a24bebe7.opus"
         },
         {
           "id": "8a88cfbcb8",
@@ -4274,7 +4400,8 @@
           "meaning": "movie theater",
           "type": "n",
           "linkedVocabId": "8a88cfbcb8",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f9f8e0f045e5.opus"
         },
         {
           "id": "cd95253850",
@@ -4284,7 +4411,8 @@
           "meaning": "Japanese inn",
           "type": "n",
           "linkedVocabId": "cd95253850",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-509532afe1b9.opus"
         },
         {
           "id": "9ef6c9d703",
@@ -4295,7 +4423,8 @@
           "type": "n",
           "linkedVocabId": "9ef6c9d703",
           "hasAudio": true,
-          "audioKey": "にわ"
+          "audioKey": "にわ",
+          "audioSrc": "/audio/vocab/にわ.opus"
         },
         {
           "id": "v-genki-l15-21",
@@ -4304,7 +4433,8 @@
           "readingKana": "ボランティア",
           "meaning": "volunteer",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-fb703f90d799.opus"
         },
         {
           "id": "791cdda968",
@@ -4314,7 +4444,8 @@
           "meaning": "activity",
           "type": "n",
           "linkedVocabId": "791cdda968",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ab2da1bd840a.opus"
         },
         {
           "id": "9746b57413",
@@ -4324,7 +4455,8 @@
           "meaning": "experience",
           "type": "n",
           "linkedVocabId": "9746b57413",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-2eaabbed2118.opus"
         },
         {
           "id": "eacd8a5221",
@@ -4334,7 +4466,8 @@
           "meaning": "custom",
           "type": "n",
           "linkedVocabId": "eacd8a5221",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-d9e8fe9119da.opus"
         },
         {
           "id": "v-genki-l15-25",
@@ -4343,7 +4476,8 @@
           "readingKana": "しめきり",
           "meaning": "deadline",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-90f3cf176890.opus"
         },
         {
           "id": "a9fe0e98c1",
@@ -4353,7 +4487,8 @@
           "meaning": "schedule; plan",
           "type": "n",
           "linkedVocabId": "a9fe0e98c1",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-efbb67fbd2d4.opus"
         },
         {
           "id": "v-genki-l15-27",
@@ -4362,7 +4497,8 @@
           "readingKana": "そつぎょうしき",
           "meaning": "graduation ceremony",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7fd2577926da.opus"
         },
         {
           "id": "v-genki-l15-28",
@@ -4371,7 +4507,8 @@
           "readingKana": "けっこんしき",
           "meaning": "wedding",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-8dbd98377b70.opus"
         },
         {
           "id": "f7e1da43df",
@@ -4382,7 +4519,8 @@
           "type": "u-v",
           "linkedVocabId": "f7e1da43df",
           "hasAudio": true,
-          "audioKey": "うる"
+          "audioKey": "うる",
+          "audioSrc": "/audio/books/vocab/v-f40590e7fc90.opus"
         },
         {
           "id": "v-genki-l15-30",
@@ -4392,7 +4530,8 @@
           "meaning": "to withdraw (money) (～を)",
           "type": "u-v",
           "hasAudio": true,
-          "audioKey": "おろす"
+          "audioKey": "おろす",
+          "audioSrc": "/audio/books/vocab/v-cf40d0caa4ce.opus"
         },
         {
           "id": "a359eccfaf",
@@ -4403,7 +4542,8 @@
           "type": "u-v",
           "linkedVocabId": "a359eccfaf",
           "hasAudio": true,
-          "audioKey": "えがく"
+          "audioKey": "えがく",
+          "audioSrc": "/audio/books/vocab/v-65380934147f.opus"
         },
         {
           "id": "0f4440571e",
@@ -4413,7 +4553,8 @@
           "meaning": "to look for (～を)",
           "type": "u-v",
           "linkedVocabId": "0f4440571e",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-c9dcb8880dd7.opus"
         },
         {
           "id": "5c39a99fa2",
@@ -4423,7 +4564,8 @@
           "meaning": "to invite (～を)",
           "type": "u-v",
           "linkedVocabId": "5c39a99fa2",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-bbe98723a425.opus"
         },
         {
           "id": "6b76d0e68b",
@@ -4433,7 +4575,8 @@
           "meaning": "to chat",
           "type": "u-v",
           "linkedVocabId": "6b76d0e68b",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-499fb30fde0e.opus"
         },
         {
           "id": "d697f29e0b",
@@ -4443,7 +4586,8 @@
           "meaning": "(1) to date (someone) (person と) (2) to keep company (purpose に)",
           "type": "u-v",
           "linkedVocabId": "d697f29e0b",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-20d961ea8895.opus"
         },
         {
           "id": "9d4a68ce12",
@@ -4454,7 +4598,8 @@
           "type": "u-v",
           "linkedVocabId": "9d4a68ce12",
           "hasAudio": true,
-          "audioKey": "つく"
+          "audioKey": "つく",
+          "audioSrc": "/audio/books/vocab/v-7d196893b1f4.opus"
         },
         {
           "id": "v-genki-l15-37",
@@ -4463,7 +4608,8 @@
           "readingKana": "ほけんにはいる",
           "meaning": "to buy insurance",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-16323607047b.opus"
         },
         {
           "id": "v-genki-l15-38",
@@ -4472,7 +4618,8 @@
           "readingKana": "きおつける",
           "meaning": "to be cautious/careful (～に)",
           "type": "ru-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-141d47b67117.opus"
         },
         {
           "id": "beb32f751c",
@@ -4482,7 +4629,8 @@
           "meaning": "to look into a matter (matter を)",
           "type": "ru-v",
           "linkedVocabId": "beb32f751c",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-17bed5d76c2f.opus"
         },
         {
           "id": "0c27b9183f",
@@ -4493,7 +4641,8 @@
           "type": "ru-v",
           "linkedVocabId": "0c27b9183f",
           "hasAudio": true,
-          "audioKey": "みえる"
+          "audioKey": "みえる",
+          "audioSrc": "/audio/books/vocab/v-66eecba58f15.opus"
         },
         {
           "id": "c4cdc162d7",
@@ -4503,7 +4652,8 @@
           "meaning": "to decide on (an item) (item に)",
           "type": "irr",
           "linkedVocabId": "c4cdc162d7",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-67003f878dd9.opus"
         },
         {
           "id": "v-genki-l15-42",
@@ -4512,7 +4662,8 @@
           "readingKana": "かんこうする",
           "meaning": "to do sightseeing",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a155c5e28de0.opus"
         },
         {
           "id": "v-genki-l15-43",
@@ -4521,7 +4672,8 @@
           "readingKana": "よやくする",
           "meaning": "to reserve (～を)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-0f28efb6eee0.opus"
         },
         {
           "id": "v-genki-l15-44",
@@ -4530,7 +4682,8 @@
           "readingKana": "さんかする",
           "meaning": "to participate (～に)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7e40e4527051.opus"
         },
         {
           "id": "v-genki-l15-45",
@@ -4539,7 +4692,8 @@
           "readingKana": "そつぎょうする",
           "meaning": "to graduate (from...) (school を)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-6979dfd9bf54.opus"
         },
         {
           "id": "v-genki-l15-46",
@@ -4548,7 +4702,8 @@
           "readingKana": "はっぴょうする",
           "meaning": "to make a presentation; to make public",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-93d96e20560f.opus"
         },
         {
           "id": "v-genki-l15-47",
@@ -4557,7 +4712,8 @@
           "readingKana": "...けど",
           "meaning": "..., but; ...; ...so",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-166841271b0f.opus"
         },
         {
           "id": "v-genki-l15-48",
@@ -4566,7 +4722,8 @@
           "readingKana": "...め",
           "meaning": "-th",
           "type": "ctr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-1d37bdf9abb0.opus"
         },
         {
           "id": "v-genki-l15-49",
@@ -4575,7 +4732,8 @@
           "readingKana": "いちにちめ",
           "meaning": "first day",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-777f8cda99c1.opus"
         },
         {
           "id": "v-genki-l15-50",
@@ -4584,7 +4742,8 @@
           "readingKana": "いちにちじゅう",
           "meaning": "all day long",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-8559b0949a49.opus"
         },
         {
           "id": "df21df827a",
@@ -4594,7 +4753,8 @@
           "meaning": "recently",
           "type": "adv",
           "linkedVocabId": "df21df827a",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3c30d5352f01.opus"
         },
         {
           "id": "3ae16ad93a",
@@ -4604,7 +4764,8 @@
           "meaning": "one more time",
           "type": "adv",
           "linkedVocabId": "3ae16ad93a",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a058ebb9403a.opus"
         },
         {
           "id": "v-genki-l15-53",
@@ -4613,7 +4774,8 @@
           "readingKana": "たのしみです",
           "meaning": "cannot wait; to look forward to it",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-68043e601c4d.opus"
         }
       ],
       "kanji": [
@@ -5830,7 +5992,8 @@
           "readingKana": "えきいん(さん)",
           "meaning": "station attendant",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-d3b74757a073.opus"
         },
         {
           "id": "9099d4615b",
@@ -5841,7 +6004,8 @@
           "type": "n",
           "linkedVocabId": "9099d4615b",
           "hasAudio": true,
-          "audioKey": "おや"
+          "audioKey": "おや",
+          "audioSrc": "/audio/books/vocab/v-49f9b60c2639.opus"
         },
         {
           "id": "v-genki-l16-3",
@@ -5850,7 +6014,8 @@
           "readingKana": "しんせき",
           "meaning": "relatives",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-42ed6301aa02.opus"
         },
         {
           "id": "bdab237e0d",
@@ -5861,7 +6026,8 @@
           "type": "n",
           "linkedVocabId": "bdab237e0d",
           "hasAudio": true,
-          "audioKey": "ごみ"
+          "audioKey": "ごみ",
+          "audioSrc": "/audio/vocab/ごみ.opus"
         },
         {
           "id": "8af5030b7a",
@@ -5872,7 +6038,8 @@
           "type": "n",
           "linkedVocabId": "8af5030b7a",
           "hasAudio": true,
-          "audioKey": "さとう"
+          "audioKey": "さとう",
+          "audioSrc": "/audio/vocab/さとう.opus"
         },
         {
           "id": "5b8eefb9aa",
@@ -5882,7 +6049,8 @@
           "meaning": "(file) folder; portfolio; file",
           "type": "n",
           "linkedVocabId": "5b8eefb9aa",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-2b39ec3da17e.opus"
         },
         {
           "id": "v-genki-l16-7",
@@ -5891,7 +6059,8 @@
           "readingKana": "おうきさ",
           "meaning": "size",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-95a12300b221.opus"
         },
         {
           "id": "dc29195f18",
@@ -5902,7 +6071,8 @@
           "type": "n",
           "linkedVocabId": "dc29195f18",
           "hasAudio": true,
-          "audioKey": "みち"
+          "audioKey": "みち",
+          "audioSrc": "/audio/books/vocab/v-e1acc6ebfed9.opus"
         },
         {
           "id": "v-genki-l16-9",
@@ -5911,7 +6081,8 @@
           "readingKana": "きまつしけん",
           "meaning": "final examination",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3be0b2122726.opus"
         },
         {
           "id": "607f3c4430",
@@ -5921,7 +6092,8 @@
           "meaning": "research",
           "type": "n",
           "linkedVocabId": "607f3c4430",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-9590573e3a06.opus"
         },
         {
           "id": "1d147ab185",
@@ -5931,7 +6103,8 @@
           "meaning": "graduate school",
           "type": "n",
           "linkedVocabId": "1d147ab185",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-37c84724d990.opus"
         },
         {
           "id": "d0cc9588b9",
@@ -5941,7 +6114,8 @@
           "meaning": "scholarship",
           "type": "n",
           "linkedVocabId": "d0cc9588b9",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-64a8e73792d1.opus"
         },
         {
           "id": "v-genki-l16-13",
@@ -5950,7 +6124,8 @@
           "readingKana": "すいせんじょう",
           "meaning": "letter of recommendation",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-8d98a82e398e.opus"
         },
         {
           "id": "14d52a91d3",
@@ -5960,7 +6135,8 @@
           "meaning": "typhoon",
           "type": "n",
           "linkedVocabId": "14d52a91d3",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-88daa7ac5f36.opus"
         },
         {
           "id": "2f79469321",
@@ -5970,7 +6146,8 @@
           "meaning": "culture",
           "type": "n",
           "linkedVocabId": "2f79469321",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-271a791320e0.opus"
         },
         {
           "id": "ff9e385277",
@@ -5980,7 +6157,8 @@
           "meaning": "reply",
           "type": "n",
           "linkedVocabId": "ff9e385277",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-777a6d16d3dc.opus"
         },
         {
           "id": "55a030e65f",
@@ -5990,7 +6168,8 @@
           "meaning": "day",
           "type": "n",
           "linkedVocabId": "55a030e65f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ac2c2fe2a77e.opus"
         },
         {
           "id": "7d1cf1538b",
@@ -6000,7 +6179,8 @@
           "meaning": "dirty",
           "type": "i-adj",
           "linkedVocabId": "7d1cf1538b",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-efe32623365e.opus"
         },
         {
           "id": "v-genki-l16-19",
@@ -6010,7 +6190,8 @@
           "meaning": "to wake (someone) up (～を)",
           "type": "u-v",
           "hasAudio": true,
-          "audioKey": "おこす"
+          "audioKey": "おこす",
+          "audioSrc": "/audio/books/vocab/v-13cf848efb13.opus"
         },
         {
           "id": "bc37b59298",
@@ -6020,7 +6201,8 @@
           "meaning": "to treat (someone) to a meal (person に meal を)",
           "type": "u-v",
           "linkedVocabId": "bc37b59298",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f4a232e42f76.opus"
         },
         {
           "id": "327c67b830",
@@ -6030,7 +6212,8 @@
           "meaning": "to laugh",
           "type": "u-v",
           "linkedVocabId": "327c67b830",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-034c78914b48.opus"
         },
         {
           "id": "35038194bb",
@@ -6040,7 +6223,8 @@
           "meaning": "to get depressed",
           "type": "u-v",
           "linkedVocabId": "35038194bb",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f60493400300.opus"
         },
         {
           "id": "61994485cb",
@@ -6050,7 +6234,8 @@
           "meaning": "to have difficulty",
           "type": "u-v",
           "linkedVocabId": "61994485cb",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-34a73a14d4c4.opus"
         },
         {
           "id": "6298cfc5d6",
@@ -6061,7 +6246,8 @@
           "type": "u-v",
           "linkedVocabId": "6298cfc5d6",
           "hasAudio": true,
-          "audioKey": "だす"
+          "audioKey": "だす",
+          "audioSrc": "/audio/books/vocab/v-b5f6a5523562.opus"
         },
         {
           "id": "8b7b602246",
@@ -6071,7 +6257,8 @@
           "meaning": "to correct; to fix (～を)",
           "type": "u-v",
           "linkedVocabId": "8b7b602246",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-b2fe70691a58.opus"
         },
         {
           "id": "a4e2dc046c",
@@ -6081,7 +6268,8 @@
           "meaning": "to be found (～が)",
           "type": "u-v",
           "linkedVocabId": "a4e2dc046c",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-88e266b5ce6d.opus"
         },
         {
           "id": "c34c2c465e",
@@ -6091,7 +6279,8 @@
           "meaning": "to translate (source を target に)",
           "type": "u-v",
           "linkedVocabId": "c34c2c465e",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-bd3d4f21e94d.opus"
         },
         {
           "id": "1122cac409",
@@ -6102,7 +6291,8 @@
           "type": "ru-v",
           "linkedVocabId": "1122cac409",
           "hasAudio": true,
-          "audioKey": "かす"
+          "audioKey": "かす",
+          "audioSrc": "/audio/books/vocab/v-dca68fa81e48.opus"
         },
         {
           "id": "v-genki-l16-29",
@@ -6111,7 +6301,8 @@
           "readingKana": "つれていく",
           "meaning": "to take (someone) to (a place) (person を place に)",
           "type": "ru-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-8008f595fb7a.opus"
         },
         {
           "id": "v-genki-l16-30",
@@ -6120,7 +6311,8 @@
           "readingKana": "みちにまよう",
           "meaning": "to become lost; to lose one's way",
           "type": "ru-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-47784dff3905.opus"
         },
         {
           "id": "v-genki-l16-31",
@@ -6129,7 +6321,8 @@
           "readingKana": "むかえにいく",
           "meaning": "to go to pick up (place まで/に person を)",
           "type": "ru-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-4e6b992e925b.opus"
         },
         {
           "id": "b00801af22",
@@ -6140,7 +6333,8 @@
           "type": "ru-v",
           "linkedVocabId": "b00801af22",
           "hasAudio": true,
-          "audioKey": "あつめる"
+          "audioKey": "あつめる",
+          "audioSrc": "/audio/books/vocab/v-ec82d1f42704.opus"
         },
         {
           "id": "6d824d5110",
@@ -6151,7 +6345,8 @@
           "type": "ru-v",
           "linkedVocabId": "6d824d5110",
           "hasAudio": true,
-          "audioKey": "いれる"
+          "audioKey": "いれる",
+          "audioSrc": "/audio/books/vocab/v-e3d6030f48e7.opus"
         },
         {
           "id": "db35a99e28",
@@ -6162,7 +6357,8 @@
           "type": "ru-v",
           "linkedVocabId": "db35a99e28",
           "hasAudio": true,
-          "audioKey": "みせる"
+          "audioKey": "みせる",
+          "audioSrc": "/audio/books/vocab/v-3184e589aa84.opus"
         },
         {
           "id": "v-genki-l16-35",
@@ -6171,7 +6367,8 @@
           "readingKana": "のりおいくれる",
           "meaning": "to miss (a train, bus, etc.) (～に)",
           "type": "ru-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-b2e46f080175.opus"
         },
         {
           "id": "v-genki-l16-36",
@@ -6180,7 +6377,8 @@
           "readingKana": "アイロンをかける",
           "meaning": "to iron (clothes) (～に)",
           "type": "ru-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-69d6d9ed3718.opus"
         },
         {
           "id": "v-genki-l16-37",
@@ -6189,7 +6387,8 @@
           "readingKana": "あさねぼうする",
           "meaning": "to oversleep",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-b8e9bc9fec56.opus"
         },
         {
           "id": "v-genki-l16-38",
@@ -6198,7 +6397,8 @@
           "readingKana": "あんないする",
           "meaning": "to show (someone) around (place を)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-479fd167a054.opus"
         },
         {
           "id": "v-genki-l16-39",
@@ -6207,7 +6407,8 @@
           "readingKana": "せつめいする",
           "meaning": "to explain",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-d8d5cc8d63f9.opus"
         },
         {
           "id": "v-genki-l16-40",
@@ -6216,7 +6417,8 @@
           "readingKana": "むかえにくる",
           "meaning": "to come to pick up (place まで/に person を)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a51e5ee277fc.opus"
         },
         {
           "id": "v-genki-l16-41",
@@ -6225,7 +6427,8 @@
           "readingKana": "きょうじゅうに",
           "meaning": "by the end of today",
           "type": "adv",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-20ab1ec8b7f3.opus"
         },
         {
           "id": "v-genki-l16-42",
@@ -6234,7 +6437,8 @@
           "readingKana": "じゅぎょうちゅうに",
           "meaning": "in class; during the class",
           "type": "adv",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-0354608b9bf5.opus"
         },
         {
           "id": "v-genki-l16-43",
@@ -6243,7 +6447,8 @@
           "readingKana": "このあいだ",
           "meaning": "the other day",
           "type": "adv",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a2fd9b1ff78a.opus"
         },
         {
           "id": "b71d50ee32",
@@ -6253,7 +6458,8 @@
           "meaning": "from now on",
           "type": "adv",
           "linkedVocabId": "b71d50ee32",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-5cfd0a25156d.opus"
         },
         {
           "id": "v-genki-l16-45",
@@ -6262,7 +6468,8 @@
           "readingKana": "これぐらい",
           "meaning": "about this much",
           "type": "adv",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-57ccf0034710.opus"
         },
         {
           "id": "v-genki-l16-46",
@@ -6271,7 +6478,8 @@
           "readingKana": "じぶんで",
           "meaning": "(do something) by oneself",
           "type": "adv",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ae55d553fd7a.opus"
         },
         {
           "id": "v-genki-l16-47",
@@ -6280,7 +6488,8 @@
           "readingKana": "ほかの",
           "meaning": "other",
           "type": "adv",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a3a5854a48b4.opus"
         },
         {
           "id": "5047599345",
@@ -6290,7 +6499,8 @@
           "meaning": "well...; let me see...",
           "type": "expr",
           "linkedVocabId": "5047599345",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-8ed4a0a5ffe0.opus"
         },
         {
           "id": "fffb310ed7",
@@ -6300,7 +6510,8 @@
           "meaning": "actually; in fact",
           "type": "expr",
           "linkedVocabId": "fffb310ed7",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-6c464145c21c.opus"
         },
         {
           "id": "v-genki-l16-50",
@@ -6309,7 +6520,8 @@
           "readingKana": "...いがい",
           "meaning": "other than...",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-b0a7995ffebe.opus"
         },
         {
           "id": "v-genki-l16-51",
@@ -6318,7 +6530,8 @@
           "readingKana": "ごめん",
           "meaning": "I'm sorry (casual)",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-bb4e9db516ca.opus"
         },
         {
           "id": "v-genki-l16-52",
@@ -6327,7 +6540,8 @@
           "readingKana": "しつれいします",
           "meaning": "Excuse me; sorry to interrupt you",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-276201a42e24.opus"
         }
       ],
       "kanji": [
@@ -7610,7 +7824,8 @@
           "readingKana": "あかちゃん",
           "meaning": "baby",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-b271c0d20728.opus"
         },
         {
           "id": "v-genki-l17-2",
@@ -7619,7 +7834,8 @@
           "readingKana": "おきゃくさん",
           "meaning": "guest; visitor; client; customer",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a9bdf6a42d96.opus"
         },
         {
           "id": "4886c70b26",
@@ -7629,7 +7845,8 @@
           "meaning": "prime minister",
           "type": "n",
           "linkedVocabId": "4886c70b26",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-362f3b22c2ba.opus"
         },
         {
           "id": "f874eff83f",
@@ -7639,7 +7856,8 @@
           "meaning": "salaryman; office worker",
           "type": "n",
           "linkedVocabId": "f874eff83f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-2effa0e9ab96.opus"
         },
         {
           "id": "ec6103d8e8",
@@ -7649,7 +7867,8 @@
           "meaning": "salary",
           "type": "n",
           "linkedVocabId": "ec6103d8e8",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7db10abc66ae.opus"
         },
         {
           "id": "v-genki-l17-6",
@@ -7658,7 +7877,8 @@
           "readingKana": "ざんぎょう",
           "meaning": "overtime work",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-2973e8f1077c.opus"
         },
         {
           "id": "v-genki-l17-7",
@@ -7667,7 +7887,8 @@
           "readingKana": "パンダ",
           "meaning": "panda",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e4eea3aaead9.opus"
         },
         {
           "id": "18beab6691",
@@ -7677,7 +7898,8 @@
           "meaning": "contact lenses",
           "type": "n",
           "linkedVocabId": "18beab6691",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-caf794288ebc.opus"
         },
         {
           "id": "36d0fd2044",
@@ -7687,7 +7909,8 @@
           "meaning": "beard",
           "type": "n",
           "linkedVocabId": "36d0fd2044",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-d3f2cbdbd795.opus"
         },
         {
           "id": "10b8b07120",
@@ -7697,7 +7920,8 @@
           "meaning": "boots",
           "type": "n",
           "linkedVocabId": "10b8b07120",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7606e5c291a1.opus"
         },
         {
           "id": "e2d6576c76",
@@ -7708,7 +7932,8 @@
           "type": "n",
           "linkedVocabId": "e2d6576c76",
           "hasAudio": true,
-          "audioKey": "かぎ"
+          "audioKey": "かぎ",
+          "audioSrc": "/audio/vocab/かぎ.opus"
         },
         {
           "id": "v-genki-l17-12",
@@ -7717,7 +7942,8 @@
           "readingKana": "たからくじ",
           "meaning": "lottery",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-df018d3e4629.opus"
         },
         {
           "id": "cd08f9cdc2",
@@ -7728,7 +7954,8 @@
           "type": "n",
           "linkedVocabId": "cd08f9cdc2",
           "hasAudio": true,
-          "audioKey": "かみ"
+          "audioKey": "かみ",
+          "audioSrc": "/audio/books/vocab/v-e233a42c00f0.opus"
         },
         {
           "id": "938a169f6c",
@@ -7738,7 +7965,8 @@
           "meaning": "spoon",
           "type": "n",
           "linkedVocabId": "938a169f6c",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-0a9445c231cc.opus"
         },
         {
           "id": "v-genki-l17-15",
@@ -7747,7 +7975,8 @@
           "readingKana": "おゆ",
           "meaning": "hot water",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ad0730c6891e.opus"
         },
         {
           "id": "v-genki-l17-16",
@@ -7756,7 +7985,8 @@
           "readingKana": "でんしれんじ",
           "meaning": "microwave oven",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-851615238225.opus"
         },
         {
           "id": "v-genki-l17-17",
@@ -7765,7 +7995,8 @@
           "readingKana": "ヒーター",
           "meaning": "heater",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e506fb154897.opus"
         },
         {
           "id": "b824bec2c5",
@@ -7775,7 +8006,8 @@
           "meaning": "news",
           "type": "n",
           "linkedVocabId": "b824bec2c5",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-71bdfa9821cb.opus"
         },
         {
           "id": "b64af0c4f7",
@@ -7785,7 +8017,8 @@
           "meaning": "fire",
           "type": "n",
           "linkedVocabId": "b64af0c4f7",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-1f025b7ee466.opus"
         },
         {
           "id": "v-genki-l17-20",
@@ -7794,7 +8027,8 @@
           "readingKana": "りょこうがいしゃ",
           "meaning": "travel agency",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f754e157ea23.opus"
         },
         {
           "id": "v-genki-l17-21",
@@ -7803,7 +8037,8 @@
           "readingKana": "ショッピングモール",
           "meaning": "shopping mall",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-8b61cc3b1f77.opus"
         },
         {
           "id": "cbaa0ef1a5",
@@ -7814,7 +8049,8 @@
           "type": "n",
           "linkedVocabId": "cbaa0ef1a5",
           "hasAudio": true,
-          "audioKey": "りょう"
+          "audioKey": "りょう",
+          "audioSrc": "/audio/books/vocab/v-872bbd2a6913.opus"
         },
         {
           "id": "c6bc56d6df",
@@ -7824,7 +8060,8 @@
           "meaning": "difference",
           "type": "n",
           "linkedVocabId": "c6bc56d6df",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-71f9e2674a4b.opus"
         },
         {
           "id": "c3d0c7fa43",
@@ -7834,7 +8071,8 @@
           "meaning": "secret",
           "type": "n",
           "linkedVocabId": "c3d0c7fa43",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e139257598b2.opus"
         },
         {
           "id": "6ce523bcb6",
@@ -7844,7 +8082,8 @@
           "meaning": "preparation",
           "type": "n",
           "linkedVocabId": "6ce523bcb6",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3f0e6995c464.opus"
         },
         {
           "id": "995a632b12",
@@ -7854,7 +8093,8 @@
           "meaning": "oneself",
           "type": "n",
           "linkedVocabId": "995a632b12",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-0b94822be74c.opus"
         },
         {
           "id": "0509cb3b27",
@@ -7864,7 +8104,8 @@
           "meaning": "dangerous",
           "type": "i-adj",
           "linkedVocabId": "0509cb3b27",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-5d41d7cef8aa.opus"
         },
         {
           "id": "d40a8e4a7f",
@@ -7874,7 +8115,8 @@
           "meaning": "envious",
           "type": "i-adj",
           "linkedVocabId": "d40a8e4a7f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-19d9cd39d5fd.opus"
         },
         {
           "id": "0d38b01113",
@@ -7885,7 +8127,8 @@
           "type": "i-adj",
           "linkedVocabId": "0d38b01113",
           "hasAudio": true,
-          "audioKey": "すくない"
+          "audioKey": "すくない",
+          "audioSrc": "/audio/books/vocab/v-4766887d1ae4.opus"
         },
         {
           "id": "v-genki-l17-30",
@@ -7894,7 +8137,8 @@
           "readingKana": "つごうがわるい",
           "meaning": "inconvenient; to have a scheduling conflict",
           "type": "i-adj",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-1492a98afe78.opus"
         },
         {
           "id": "d99745fbb6",
@@ -7905,7 +8149,8 @@
           "type": "i-adj",
           "linkedVocabId": "d99745fbb6",
           "hasAudio": true,
-          "audioKey": "つよい"
+          "audioKey": "つよい",
+          "audioSrc": "/audio/books/vocab/v-19c5c303c096.opus"
         },
         {
           "id": "v-genki-l17-32",
@@ -7914,7 +8159,8 @@
           "readingKana": "さいあく(な)",
           "meaning": "the worst",
           "type": "na-adj",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-9ad9cc6780e6.opus"
         },
         {
           "id": "60c9784974",
@@ -7924,7 +8170,8 @@
           "meaning": "to choose; to select (～を)",
           "type": "u-v",
           "linkedVocabId": "60c9784974",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-1739d8457fa3.opus"
         },
         {
           "id": "v-genki-l17-34",
@@ -7933,7 +8180,8 @@
           "readingKana": "おゆおわかす",
           "meaning": "to boil water",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-bad1003e4bf3.opus"
         },
         {
           "id": "v-genki-l17-35",
@@ -7942,7 +8190,8 @@
           "readingKana": "かみおとかす",
           "meaning": "to comb one's hair",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ea0835db49b4.opus"
         },
         {
           "id": "v-genki-l17-36",
@@ -7951,7 +8200,8 @@
           "readingKana": "ひげおそる",
           "meaning": "to shave one's beard",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e48f21130d74.opus"
         },
         {
           "id": "3af80b5b2a",
@@ -7961,7 +8211,8 @@
           "meaning": "to take off (clothes) (～を)",
           "type": "u-v",
           "linkedVocabId": "3af80b5b2a",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-d2d88c5135f2.opus"
         },
         {
           "id": "fcaabc719d",
@@ -7971,7 +8222,8 @@
           "meaning": "to get crowded (～が)",
           "type": "u-v",
           "linkedVocabId": "fcaabc719d",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7d4bd95c72c6.opus"
         },
         {
           "id": "v-genki-l17-39",
@@ -7980,7 +8232,8 @@
           "readingKana": "たからくじにあたる",
           "meaning": "to win a lottery",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-9ce800ee330e.opus"
         },
         {
           "id": "6d824d5110",
@@ -7991,7 +8244,8 @@
           "type": "ru-v",
           "linkedVocabId": "6d824d5110",
           "hasAudio": true,
-          "audioKey": "いれる"
+          "audioKey": "いれる",
+          "audioSrc": "/audio/books/vocab/v-e3d6030f48e7.opus"
         },
         {
           "id": "63bc7722fa",
@@ -8002,7 +8256,8 @@
           "type": "ru-v",
           "linkedVocabId": "63bc7722fa",
           "hasAudio": true,
-          "audioKey": "うまれる"
+          "audioKey": "うまれる",
+          "audioSrc": "/audio/books/vocab/v-29e008a8eb4b.opus"
         },
         {
           "id": "v-genki-l17-42",
@@ -8011,7 +8266,8 @@
           "readingKana": "かぎおかける",
           "meaning": "to lock (～に)",
           "type": "ru-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-b14225811655.opus"
         },
         {
           "id": "19f08c094e",
@@ -8022,7 +8278,8 @@
           "type": "ru-v",
           "linkedVocabId": "19f08c094e",
           "hasAudio": true,
-          "audioKey": "たりる"
+          "audioKey": "たりる",
+          "audioSrc": "/audio/books/vocab/v-5e105d3a97cb.opus"
         },
         {
           "id": "ce2f134cda",
@@ -8032,7 +8289,8 @@
           "meaning": "to get used to... (～に)",
           "type": "ru-v",
           "linkedVocabId": "ce2f134cda",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-5250a9c1fe62.opus"
         },
         {
           "id": "v-genki-l17-45",
@@ -8041,7 +8299,8 @@
           "readingKana": "おいのりする",
           "meaning": "to pray (～に)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-81ffaa6a62df.opus"
         },
         {
           "id": "v-genki-l17-46",
@@ -8050,7 +8309,8 @@
           "readingKana": "けしょうする",
           "meaning": "to put makeup on",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-9fee8411203f.opus"
         },
         {
           "id": "v-genki-l17-47",
@@ -8059,7 +8319,8 @@
           "readingKana": "しゅうしょくする",
           "meaning": "to get a full-time job (at...) (company に)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3ffeae9655aa.opus"
         },
         {
           "id": "v-genki-l17-48",
@@ -8068,7 +8329,8 @@
           "readingKana": "りこんする",
           "meaning": "to get a divorce (person と)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-20bca79d25f9.opus"
         },
         {
           "id": "c4cdc162d7",
@@ -8078,7 +8340,8 @@
           "meaning": "to wear small items (necktie, watch, etc.) (～を)",
           "type": "irr",
           "linkedVocabId": "c4cdc162d7",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-67003f878dd9.opus"
         },
         {
           "id": "cdddb30c94",
@@ -8088,7 +8351,8 @@
           "meaning": "very",
           "type": "adv",
           "linkedVocabId": "cdddb30c94",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-aa4c958cdbac.opus"
         },
         {
           "id": "1cda12dd3f",
@@ -8098,7 +8362,8 @@
           "meaning": "for example",
           "type": "adv",
           "linkedVocabId": "1cda12dd3f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-1455934d0566.opus"
         },
         {
           "id": "v-genki-l17-52",
@@ -8107,7 +8372,8 @@
           "readingKana": "...にくらべて",
           "meaning": "compared with...",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-8a0cf1ea6c17.opus"
         },
         {
           "id": "v-genki-l17-53",
@@ -8116,7 +8382,8 @@
           "readingKana": "...によると",
           "meaning": "according to...",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-c5b0ac70a9d8.opus"
         },
         {
           "id": "319e218950",
@@ -8127,7 +8394,8 @@
           "type": "expr",
           "linkedVocabId": "319e218950",
           "hasAudio": true,
-          "audioKey": "まえ"
+          "audioKey": "まえ",
+          "audioSrc": "/audio/books/vocab/v-d86aa031b0d9.opus"
         },
         {
           "id": "ead095a7d5",
@@ -8137,7 +8405,8 @@
           "meaning": "after all",
           "type": "adv",
           "linkedVocabId": "ead095a7d5",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-25161e441387.opus"
         },
         {
           "id": "v-genki-l17-56",
@@ -8146,7 +8415,8 @@
           "readingKana": "...かな(ああ)",
           "meaning": "I wonder... (casual)",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-384231ea9ba7.opus"
         },
         {
           "id": "v-genki-l17-57",
@@ -8155,7 +8425,8 @@
           "readingKana": "そうか",
           "meaning": "I see (casual)",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-831adc157c77.opus"
         },
         {
           "id": "v-genki-l17-58",
@@ -8164,7 +8435,8 @@
           "readingKana": "おめでとうございます",
           "meaning": "Congratulations!",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7797da5bc878.opus"
         },
         {
           "id": "v-genki-l17-59",
@@ -8173,7 +8445,8 @@
           "readingKana": "かみがた",
           "meaning": "hairstyle",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-939d30ca196a.opus"
         },
         {
           "id": "cf23f5fba1",
@@ -8184,7 +8457,8 @@
           "type": "u-v",
           "linkedVocabId": "cf23f5fba1",
           "hasAudio": true,
-          "audioKey": "きる"
+          "audioKey": "きる",
+          "audioSrc": "/audio/books/vocab/v-eb89ababd65c.opus"
         },
         {
           "id": "v-genki-l17-61",
@@ -8193,7 +8467,8 @@
           "readingKana": "そる",
           "meaning": "to shave",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ddbfec89ccea.opus"
         },
         {
           "id": "2bbdd79021",
@@ -8203,7 +8478,8 @@
           "meaning": "to crop",
           "type": "u-v",
           "linkedVocabId": "2bbdd79021",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-4733254804f6.opus"
         },
         {
           "id": "v-genki-l17-63",
@@ -8212,7 +8488,8 @@
           "readingKana": "そめる",
           "meaning": "to dye",
           "type": "ru-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7acd02b771bf.opus"
         },
         {
           "id": "v-genki-l17-64",
@@ -8221,7 +8498,8 @@
           "readingKana": "そろえる",
           "meaning": "to make hair even; to trim",
           "type": "ru-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-b63f2f65bcaa.opus"
         },
         {
           "id": "v-genki-l17-65",
@@ -8230,7 +8508,8 @@
           "readingKana": "パーマをかける",
           "meaning": "to have one's hair permed",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-59ffdcb497a2.opus"
         },
         {
           "id": "8065461ace",
@@ -8241,7 +8520,8 @@
           "type": "u-v",
           "linkedVocabId": "8065461ace",
           "hasAudio": true,
-          "audioKey": "すく"
+          "audioKey": "すく",
+          "audioSrc": "/audio/books/vocab/v-1cf2a5ea4efb.opus"
         },
         {
           "id": "v-genki-l17-67",
@@ -8250,7 +8530,8 @@
           "readingKana": "わけめ",
           "meaning": "part (in hair)",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-90fd073bba1b.opus"
         },
         {
           "id": "v-genki-l17-68",
@@ -8259,7 +8540,8 @@
           "readingKana": "まえがみ",
           "meaning": "bangs; fringe",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3597c0a0662a.opus"
         }
       ],
       "kanji": [
@@ -9508,7 +9790,8 @@
           "meaning": "curtain",
           "type": "n",
           "linkedVocabId": "cbbc4c3524",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-47e614710be8.opus"
         },
         {
           "id": "v-genki-l18-2",
@@ -9517,7 +9800,8 @@
           "readingKana": "ソファ",
           "meaning": "sofa",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ccdc33c4fe8b.opus"
         },
         {
           "id": "f7a15687a1",
@@ -9528,7 +9812,8 @@
           "type": "n",
           "linkedVocabId": "f7a15687a1",
           "hasAudio": true,
-          "audioKey": "れいぞうこ"
+          "audioKey": "れいぞうこ",
+          "audioSrc": "/audio/vocab/れいぞうこ.opus"
         },
         {
           "id": "9a2b28ced4",
@@ -9538,7 +9823,8 @@
           "meaning": "switch",
           "type": "n",
           "linkedVocabId": "9a2b28ced4",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7bc16821a9d6.opus"
         },
         {
           "id": "v-genki-l18-5",
@@ -9548,7 +9834,8 @@
           "meaning": "soy sauce",
           "type": "n",
           "hasAudio": true,
-          "audioKey": "しょうゆ"
+          "audioKey": "しょうゆ",
+          "audioSrc": "/audio/vocab/しょうゆ.opus"
         },
         {
           "id": "22544f816e",
@@ -9558,7 +9845,8 @@
           "meaning": "soup",
           "type": "n",
           "linkedVocabId": "22544f816e",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-c3efd63354cb.opus"
         },
         {
           "id": "v-genki-l18-7",
@@ -9567,7 +9855,8 @@
           "readingKana": "バナナ",
           "meaning": "banana",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-787bcc704293.opus"
         },
         {
           "id": "v-genki-l18-8",
@@ -9576,7 +9865,8 @@
           "readingKana": "ポップコーン",
           "meaning": "popcorn",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-aa4b516ee097.opus"
         },
         {
           "id": "v-genki-l18-9",
@@ -9585,7 +9875,8 @@
           "readingKana": "シャンプー",
           "meaning": "shampoo",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-9ec1cde77fd6.opus"
         },
         {
           "id": "v-genki-l18-10",
@@ -9595,7 +9886,8 @@
           "meaning": "candle",
           "type": "n",
           "hasAudio": true,
-          "audioKey": "ろうそく"
+          "audioKey": "ろうそく",
+          "audioSrc": "/audio/vocab/ろうそく.opus"
         },
         {
           "id": "4fbf3d9b7a",
@@ -9605,7 +9897,8 @@
           "meaning": "towel",
           "type": "n",
           "linkedVocabId": "4fbf3d9b7a",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-142901e3a0fd.opus"
         },
         {
           "id": "f0f5f6b29b",
@@ -9615,7 +9908,8 @@
           "meaning": "skirt",
           "type": "n",
           "linkedVocabId": "f0f5f6b29b",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-1d0f55de951b.opus"
         },
         {
           "id": "0ddf8d04c2",
@@ -9626,7 +9920,8 @@
           "type": "n",
           "linkedVocabId": "0ddf8d04c2",
           "hasAudio": true,
-          "audioKey": "にっき"
+          "audioKey": "にっき",
+          "audioSrc": "/audio/vocab/にっき.opus"
         },
         {
           "id": "6bcbf0c06c",
@@ -9636,7 +9931,8 @@
           "meaning": "cell phone",
           "type": "n",
           "linkedVocabId": "6bcbf0c06c",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-c0faae66484b.opus"
         },
         {
           "id": "b66409ed87",
@@ -9647,7 +9943,8 @@
           "type": "n",
           "linkedVocabId": "b66409ed87",
           "hasAudio": true,
-          "audioKey": "さくら"
+          "audioKey": "さくら",
+          "audioSrc": "/audio/vocab/さくら.opus"
         },
         {
           "id": "505c1fd62e",
@@ -9657,7 +9954,8 @@
           "meaning": "insect",
           "type": "n",
           "linkedVocabId": "505c1fd62e",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-d6f985a06c80.opus"
         },
         {
           "id": "0e1d889990",
@@ -9667,7 +9965,8 @@
           "meaning": "rent",
           "type": "n",
           "linkedVocabId": "0e1d889990",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e17e31b07579.opus"
         },
         {
           "id": "68ad5f4363",
@@ -9678,7 +9977,8 @@
           "type": "n",
           "linkedVocabId": "68ad5f4363",
           "hasAudio": true,
-          "audioKey": "そと"
+          "audioKey": "そと",
+          "audioSrc": "/audio/books/vocab/v-ef718bd274f0.opus"
         },
         {
           "id": "4f134c9b38",
@@ -9689,7 +9989,8 @@
           "type": "n",
           "linkedVocabId": "4f134c9b38",
           "hasAudio": true,
-          "audioKey": "あと"
+          "audioKey": "あと",
+          "audioSrc": "/audio/books/vocab/v-e220ac43d34b.opus"
         },
         {
           "id": "285b008622",
@@ -9699,7 +10000,8 @@
           "meaning": "evening",
           "type": "n",
           "linkedVocabId": "285b008622",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-748568311439.opus"
         },
         {
           "id": "91987ae840",
@@ -9710,7 +10012,8 @@
           "type": "i-adj",
           "linkedVocabId": "91987ae840",
           "hasAudio": true,
-          "audioKey": "あかるい"
+          "audioKey": "あかるい",
+          "audioSrc": "/audio/books/vocab/v-27bee3131d9d.opus"
         },
         {
           "id": "01a0587b49",
@@ -9720,7 +10023,8 @@
           "meaning": "dark",
           "type": "i-adj",
           "linkedVocabId": "01a0587b49",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3198400a55d8.opus"
         },
         {
           "id": "847b1b7535",
@@ -9730,7 +10034,8 @@
           "meaning": "embarrassing; to feel embarrassed",
           "type": "i-adj",
           "linkedVocabId": "847b1b7535",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-2c0e8660a2ba.opus"
         },
         {
           "id": "b3a8593e53",
@@ -9740,7 +10045,8 @@
           "meaning": "precious; important",
           "type": "na-adj",
           "linkedVocabId": "b3a8593e53",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-df9b70443b35.opus"
         },
         {
           "id": "b806544195",
@@ -9750,7 +10056,8 @@
           "meaning": "anxious; worried",
           "type": "na-adj",
           "linkedVocabId": "b806544195",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-23ce7d2371bf.opus"
         },
         {
           "id": "3d1727a56f",
@@ -9760,7 +10067,8 @@
           "meaning": "impossible",
           "type": "na-adj",
           "linkedVocabId": "3d1727a56f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7f22d1b889fa.opus"
         },
         {
           "id": "fc3bc1e6f1",
@@ -9771,7 +10079,8 @@
           "type": "u-v",
           "linkedVocabId": "fc3bc1e6f1",
           "hasAudio": true,
-          "audioKey": "あく"
+          "audioKey": "あく",
+          "audioSrc": "/audio/books/vocab/v-3128c4f96e20.opus"
         },
         {
           "id": "01420cdf0f",
@@ -9781,7 +10090,8 @@
           "meaning": "(something) closes (～が)",
           "type": "u-v",
           "linkedVocabId": "01420cdf0f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a2b3307dd3f5.opus"
         },
         {
           "id": "1056f23586",
@@ -9791,7 +10101,8 @@
           "meaning": "to apologize (person に)",
           "type": "u-v",
           "linkedVocabId": "1056f23586",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e5ac61832b99.opus"
         },
         {
           "id": "ce8facdf69",
@@ -9801,7 +10112,8 @@
           "meaning": "to press; to push (～を)",
           "type": "u-v",
           "linkedVocabId": "ce8facdf69",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-28b43ed7e884.opus"
         },
         {
           "id": "v-genki-l18-31",
@@ -9810,7 +10122,8 @@
           "readingKana": "おとす",
           "meaning": "to drop (something) (～を)",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-cba5d43070b6.opus"
         },
         {
           "id": "v-genki-l18-32",
@@ -9819,7 +10132,8 @@
           "readingKana": "おゆがわく",
           "meaning": "water boils",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7335878a190a.opus"
         },
         {
           "id": "9c146d3363",
@@ -9830,7 +10144,8 @@
           "type": "u-v",
           "linkedVocabId": "9c146d3363",
           "hasAudio": true,
-          "audioKey": "ころぶ"
+          "audioKey": "ころぶ",
+          "audioSrc": "/audio/books/vocab/v-e80eff3972c0.opus"
         },
         {
           "id": "0b089107f6",
@@ -9840,7 +10155,8 @@
           "meaning": "to break (something) (～を)",
           "type": "u-v",
           "linkedVocabId": "0b089107f6",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a0ca88771a2c.opus"
         },
         {
           "id": "4c39babf5f",
@@ -9851,7 +10167,8 @@
           "type": "u-v",
           "linkedVocabId": "4c39babf5f",
           "hasAudio": true,
-          "audioKey": "さく"
+          "audioKey": "さく",
+          "audioSrc": "/audio/books/vocab/v-094e9f17ca22.opus"
         },
         {
           "id": "9cae12b7c2",
@@ -9861,7 +10178,8 @@
           "meaning": "to be saved; to be helped",
           "type": "u-v",
           "linkedVocabId": "9cae12b7c2",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-69d60cd87e5b.opus"
         },
         {
           "id": "7e9d38afeb",
@@ -9871,7 +10189,8 @@
           "meaning": "to ask (a favor) (person に～を)",
           "type": "u-v",
           "linkedVocabId": "7e9d38afeb",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-0a187d12a00a.opus"
         },
         {
           "id": "v-genki-l18-38",
@@ -9881,7 +10200,8 @@
           "meaning": "(something) turns on (～が)",
           "type": "u-v",
           "hasAudio": true,
-          "audioKey": "つく"
+          "audioKey": "つく",
+          "audioSrc": "/audio/books/vocab/v-7d196893b1f4.opus"
         },
         {
           "id": "87db0f1329",
@@ -9891,7 +10211,8 @@
           "meaning": "to make dirty (～を)",
           "type": "u-v",
           "linkedVocabId": "87db0f1329",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-258c7b9d20be.opus"
         },
         {
           "id": "981ee66f59",
@@ -9901,7 +10222,8 @@
           "meaning": "(something) drops (～が)",
           "type": "ru-v",
           "linkedVocabId": "981ee66f59",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7019ae631d47.opus"
         },
         {
           "id": "119fdf575e",
@@ -9911,7 +10233,8 @@
           "meaning": "to tidy up (～を)",
           "type": "ru-v",
           "linkedVocabId": "119fdf575e",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-6f8eb116706e.opus"
         },
         {
           "id": "cc34f28850",
@@ -9922,7 +10245,8 @@
           "type": "ru-v",
           "linkedVocabId": "cc34f28850",
           "hasAudio": true,
-          "audioKey": "かんがえる"
+          "audioKey": "かんがえる",
+          "audioSrc": "/audio/books/vocab/v-9e753dca2ad7.opus"
         },
         {
           "id": "6030b50276",
@@ -9932,7 +10256,8 @@
           "meaning": "(something) goes off (～が)",
           "type": "ru-v",
           "linkedVocabId": "6030b50276",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-2e065e24cfc5.opus"
         },
         {
           "id": "63290aef69",
@@ -9942,7 +10267,8 @@
           "meaning": "(something) breaks (～が)",
           "type": "ru-v",
           "linkedVocabId": "63290aef69",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-99be2b8b48c8.opus"
         },
         {
           "id": "cd96cff1ab",
@@ -9952,7 +10278,8 @@
           "meaning": "(something) becomes dirty (～が)",
           "type": "ru-v",
           "linkedVocabId": "cd96cff1ab",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-1153f3971968.opus"
         },
         {
           "id": "v-genki-l18-46",
@@ -9961,7 +10288,8 @@
           "readingKana": "ちゅうもんする",
           "meaning": "to place an order (～を)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ba5cfd929a2e.opus"
         },
         {
           "id": "v-genki-l18-47",
@@ -9970,7 +10298,8 @@
           "readingKana": "いますぐ",
           "meaning": "right away",
           "type": "adv",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-596853d31e34.opus"
         },
         {
           "id": "v-genki-l18-48",
@@ -9979,7 +10308,8 @@
           "readingKana": "...までに",
           "meaning": "by (time/date)",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-eeda3e983e9b.opus"
         },
         {
           "id": "v-genki-l18-49",
@@ -9988,7 +10318,8 @@
           "readingKana": "ほんとうに",
           "meaning": "really",
           "type": "adv",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-806a8d600914.opus"
         },
         {
           "id": "9c0ee7cfcc",
@@ -9999,7 +10330,8 @@
           "type": "adv",
           "linkedVocabId": "9c0ee7cfcc",
           "hasAudio": true,
-          "audioKey": "まず"
+          "audioKey": "まず",
+          "audioSrc": "/audio/books/vocab/v-2cf9e21f8ca6.opus"
         },
         {
           "id": "v-genki-l18-51",
@@ -10008,7 +10340,8 @@
           "readingKana": "おかげで",
           "meaning": "thanks to... (～の)",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-b76cedd2010a.opus"
         },
         {
           "id": "v-genki-l18-52",
@@ -10017,7 +10350,8 @@
           "readingKana": "どうしよう",
           "meaning": "What should I/we do?",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-324a922b6391.opus"
         },
         {
           "id": "v-genki-l18-53",
@@ -10026,7 +10360,8 @@
           "readingKana": "...(ん)だろう",
           "meaning": "short form of ～(ん)でしょう",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-19e88ce594cf.opus"
         },
         {
           "id": "v-genki-l18-54",
@@ -10035,7 +10370,8 @@
           "readingKana": "おさきにしつれいします",
           "meaning": "See you (lit., I'm leaving ahead of you)",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-5bfdee1d8558.opus"
         },
         {
           "id": "v-genki-l18-55",
@@ -10044,7 +10380,8 @@
           "readingKana": "おつかれさま(でした)",
           "meaning": "You must be tired after working so hard (greeting between friends and coworkers)",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-858b216a48ec.opus"
         }
       ],
       "kanji": [
@@ -11405,7 +11742,8 @@
           "readingKana": "おきゃくさま",
           "meaning": "(your/someone's) guest (polite)",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-58c2007c5155.opus"
         },
         {
           "id": "v-genki-l19-2",
@@ -11414,7 +11752,8 @@
           "readingKana": "おこさん",
           "meaning": "(your/someone's) child (polite)",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-441b04e3eb67.opus"
         },
         {
           "id": "v-genki-l19-3",
@@ -11423,7 +11762,8 @@
           "readingKana": "ちゅうがくせい",
           "meaning": "junior high school student",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e8d2be064183.opus"
         },
         {
           "id": "346a5da3c2",
@@ -11433,7 +11773,8 @@
           "meaning": "department manager",
           "type": "n",
           "linkedVocabId": "346a5da3c2",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-6a0f665afbc1.opus"
         },
         {
           "id": "aac5075190",
@@ -11443,7 +11784,8 @@
           "meaning": "business trip",
           "type": "n",
           "linkedVocabId": "aac5075190",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-66440a76d404.opus"
         },
         {
           "id": "5e47be51f8",
@@ -11453,7 +11795,8 @@
           "meaning": "honorific language",
           "type": "n",
           "linkedVocabId": "5e47be51f8",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7d23575939e5.opus"
         },
         {
           "id": "e9e492c68a",
@@ -11463,7 +11806,8 @@
           "meaning": "this way (polite)",
           "type": "n",
           "linkedVocabId": "e9e492c68a",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-1c956b12c2ad.opus"
         },
         {
           "id": "5480c153dc",
@@ -11473,7 +11817,8 @@
           "meaning": "where (polite)",
           "type": "n",
           "linkedVocabId": "5480c153dc",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-6521c442ace1.opus"
         },
         {
           "id": "12db3e5f4e",
@@ -11483,7 +11828,8 @@
           "meaning": "expression of gratitude",
           "type": "n",
           "linkedVocabId": "12db3e5f4e",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-4cfa24bcdb55.opus"
         },
         {
           "id": "04ee2e546f",
@@ -11493,7 +11839,8 @@
           "meaning": "a kind; a sort",
           "type": "n",
           "linkedVocabId": "04ee2e546f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-c51bd520ce30.opus"
         },
         {
           "id": "1ed0362cc3",
@@ -11504,7 +11851,8 @@
           "type": "n",
           "linkedVocabId": "1ed0362cc3",
           "hasAudio": true,
-          "audioKey": "はなし"
+          "audioKey": "はなし",
+          "audioSrc": "/audio/books/vocab/v-1fafb506d129.opus"
         },
         {
           "id": "64d39b7bc3",
@@ -11514,7 +11862,8 @@
           "meaning": "worry",
           "type": "n",
           "linkedVocabId": "64d39b7bc3",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-bcc2e980406d.opus"
         },
         {
           "id": "bcc0ebf62f",
@@ -11524,7 +11873,8 @@
           "meaning": "mistake",
           "type": "n",
           "linkedVocabId": "bcc0ebf62f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-dcecadb19dfb.opus"
         },
         {
           "id": "9544a3940b",
@@ -11534,7 +11884,8 @@
           "meaning": "personality",
           "type": "n",
           "linkedVocabId": "9544a3940b",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-b827a74bb723.opus"
         },
         {
           "id": "v-genki-l19-15",
@@ -11543,7 +11894,8 @@
           "readingKana": "なまけもの",
           "meaning": "lazy person",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-fa285a6d67a6.opus"
         },
         {
           "id": "v-genki-l19-16",
@@ -11552,7 +11904,8 @@
           "readingKana": "はずかしがりや",
           "meaning": "shy person",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-6fcce874306c.opus"
         },
         {
           "id": "v-genki-l19-17",
@@ -11561,7 +11914,8 @@
           "readingKana": "なかがいい",
           "meaning": "to be on good/close terms; to get along well",
           "type": "i-adj",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-5ed76c3452df.opus"
         },
         {
           "id": "v-genki-l19-18",
@@ -11570,7 +11924,8 @@
           "readingKana": "まじめ(な)",
           "meaning": "serious; sober; diligent",
           "type": "na-adj",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-787fb6df6376.opus"
         },
         {
           "id": "bc25dff617",
@@ -11580,7 +11935,8 @@
           "meaning": "honorific expression for いく, くる, and いる",
           "type": "u-v",
           "linkedVocabId": "bc25dff617",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-49a48d65c2c1.opus"
         },
         {
           "id": "d9c64cdfa1",
@@ -11590,7 +11946,8 @@
           "meaning": "honorific expression for たべる and のむ",
           "type": "u-v",
           "linkedVocabId": "d9c64cdfa1",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-1fe6f2c60259.opus"
         },
         {
           "id": "b8da4537a2",
@@ -11601,7 +11958,8 @@
           "type": "u-v",
           "linkedVocabId": "b8da4537a2",
           "hasAudio": true,
-          "audioKey": "くださる"
+          "audioKey": "くださる",
+          "audioSrc": "/audio/books/vocab/v-2137828110f4.opus"
         },
         {
           "id": "74c23dc218",
@@ -11611,7 +11969,8 @@
           "meaning": "honorific expression for する",
           "type": "u-v",
           "linkedVocabId": "74c23dc218",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e4b5c6339c54.opus"
         },
         {
           "id": "v-genki-l19-23",
@@ -11620,7 +11979,8 @@
           "readingKana": "おやすみになる",
           "meaning": "honorific expression for ねる",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-eb1fe56ddaf7.opus"
         },
         {
           "id": "v-genki-l19-24",
@@ -11629,7 +11989,8 @@
           "readingKana": "ごらんになる",
           "meaning": "honorific expression for みる",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-cadbe86d6d82.opus"
         },
         {
           "id": "050024e2d9",
@@ -11639,7 +12000,8 @@
           "meaning": "honorific expression for いう",
           "type": "u-v",
           "linkedVocabId": "050024e2d9",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-1a54e190c11b.opus"
         },
         {
           "id": "v-genki-l19-26",
@@ -11648,7 +12010,8 @@
           "readingKana": "...ていらっしゃる",
           "meaning": "honorific expression for ～ている",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3bf62a592656.opus"
         },
         {
           "id": "af1dae5588",
@@ -11659,7 +12022,8 @@
           "type": "u-v",
           "linkedVocabId": "af1dae5588",
           "hasAudio": true,
-          "audioKey": "おくる"
+          "audioKey": "おくる",
+          "audioSrc": "/audio/books/vocab/v-3d95b96b7b1e.opus"
         },
         {
           "id": "2e0f32c097",
@@ -11670,7 +12034,8 @@
           "type": "u-v",
           "linkedVocabId": "2e0f32c097",
           "hasAudio": true,
-          "audioKey": "おこる"
+          "audioKey": "おこる",
+          "audioSrc": "/audio/books/vocab/v-68f65f226406.opus"
         },
         {
           "id": "e4e7e09df0",
@@ -11680,7 +12045,8 @@
           "meaning": "to be decided (～が)",
           "type": "u-v",
           "linkedVocabId": "e4e7e09df0",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-726ac0ae36cd.opus"
         },
         {
           "id": "v-genki-l19-30",
@@ -11689,7 +12055,8 @@
           "readingKana": "しりあう",
           "meaning": "to get acquainted with (～と)",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f26d1de633bf.opus"
         },
         {
           "id": "76f05a0739",
@@ -11699,7 +12066,8 @@
           "meaning": "to call (one's name) (～を); to invite (person を event に)",
           "type": "u-v",
           "linkedVocabId": "76f05a0739",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-d2cee23f654c.opus"
         },
         {
           "id": "d801b8b37a",
@@ -11709,7 +12077,8 @@
           "meaning": "to move (to another place to live) (～に)",
           "type": "u-v",
           "linkedVocabId": "d801b8b37a",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-811e125acbb1.opus"
         },
         {
           "id": "7ffceb4055",
@@ -11720,7 +12089,8 @@
           "type": "u-v",
           "linkedVocabId": "7ffceb4055",
           "hasAudio": true,
-          "audioKey": "よる"
+          "audioKey": "よる",
+          "audioSrc": "/audio/books/vocab/v-2ace3ae9853b.opus"
         },
         {
           "id": "ae8ce3986c",
@@ -11731,7 +12101,8 @@
           "type": "ru-v",
           "linkedVocabId": "ae8ce3986c",
           "hasAudio": true,
-          "audioKey": "おくれる"
+          "audioKey": "おくれる",
+          "audioSrc": "/audio/books/vocab/v-471fd6ad8c93.opus"
         },
         {
           "id": "v-genki-l19-35",
@@ -11740,7 +12111,8 @@
           "readingKana": "かける",
           "meaning": "to sit down (seat に)",
           "type": "ru-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-fbde11554c95.opus"
         },
         {
           "id": "v-genki-l19-36",
@@ -11750,7 +12122,8 @@
           "meaning": "to be popular (in terms of romantic interest) (people に)",
           "type": "ru-v",
           "hasAudio": true,
-          "audioKey": "もてる"
+          "audioKey": "もてる",
+          "audioSrc": "/audio/books/vocab/v-f0987dd78ed4.opus"
         },
         {
           "id": "3be88666ba",
@@ -11760,7 +12133,8 @@
           "meaning": "to become sunny",
           "type": "ru-v",
           "linkedVocabId": "3be88666ba",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-5c07b1657ba5.opus"
         },
         {
           "id": "v-genki-l19-38",
@@ -11769,7 +12143,8 @@
           "readingKana": "ごちそうする",
           "meaning": "to treat/invite (someone) to a meal (person に meal を)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-8f4260aedc02.opus"
         },
         {
           "id": "v-genki-l19-39",
@@ -11778,7 +12153,8 @@
           "readingKana": "えんりょする",
           "meaning": "to hold back for the time being; to refrain from",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a6ea9f11297e.opus"
         },
         {
           "id": "v-genki-l19-40",
@@ -11787,7 +12163,8 @@
           "readingKana": "しょうたいする",
           "meaning": "to invite someone (to an event/a place) (person を event/place に)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-cf039c6663f2.opus"
         },
         {
           "id": "v-genki-l19-41",
@@ -11796,7 +12173,8 @@
           "readingKana": "はなしおする",
           "meaning": "to have a talk",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-454bd0046ad9.opus"
         },
         {
           "id": "v-genki-l19-42",
@@ -11805,7 +12183,8 @@
           "readingKana": "おととい",
           "meaning": "the day before yesterday",
           "type": "adv",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ad283ae13c4d.opus"
         },
         {
           "id": "a59ba12bc5",
@@ -11816,7 +12195,8 @@
           "type": "adv",
           "linkedVocabId": "a59ba12bc5",
           "hasAudio": true,
-          "audioKey": "まいあさ"
+          "audioKey": "まいあさ",
+          "audioSrc": "/audio/vocab/まいあさ.opus"
         },
         {
           "id": "67c8e8ac31",
@@ -11826,7 +12206,8 @@
           "meaning": "then; therefore",
           "type": "adv",
           "linkedVocabId": "67c8e8ac31",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-60616bfbb133.opus"
         },
         {
           "id": "ef9536b1ee",
@@ -11836,7 +12217,8 @@
           "meaning": "why (= どうして)",
           "type": "adv",
           "linkedVocabId": "ef9536b1ee",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-6d6111fba948.opus"
         },
         {
           "id": "v-genki-l19-46",
@@ -11845,7 +12227,8 @@
           "readingKana": "ほんとうわ",
           "meaning": "in fact; originally",
           "type": "adv",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-984110b25f83.opus"
         },
         {
           "id": "6a7163f5f7",
@@ -11855,7 +12238,8 @@
           "meaning": "still",
           "type": "adv",
           "linkedVocabId": "6a7163f5f7",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-319df777c4a4.opus"
         },
         {
           "id": "86e70a4d27",
@@ -11865,7 +12249,8 @@
           "meaning": "a few seconds",
           "type": "adv",
           "linkedVocabId": "86e70a4d27",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-2202f10fe7af.opus"
         },
         {
           "id": "v-genki-l19-49",
@@ -11874,7 +12259,8 @@
           "readingKana": "...めいさま",
           "meaning": "party of... people",
           "type": "ctr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-4fc47002c136.opus"
         },
         {
           "id": "v-genki-l19-50",
@@ -11883,7 +12269,8 @@
           "readingKana": "ようこそ",
           "meaning": "Welcome",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-d42d197215d5.opus"
         },
         {
           "id": "v-genki-l19-51",
@@ -11892,7 +12279,8 @@
           "readingKana": "よろしくおつたえください",
           "meaning": "Please give my best regards (to...) (～に)",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3aec8085a0f5.opus"
         }
       ],
       "kanji": [
@@ -13032,7 +13420,8 @@
           "readingKana": "アニメ",
           "meaning": "animation",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-77affb05948a.opus"
         },
         {
           "id": "689dc7a66e",
@@ -13042,7 +13431,8 @@
           "meaning": "novel",
           "type": "n",
           "linkedVocabId": "689dc7a66e",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f35a97ef3292.opus"
         },
         {
           "id": "7c6d792073",
@@ -13053,7 +13443,8 @@
           "type": "n",
           "linkedVocabId": "7c6d792073",
           "hasAudio": true,
-          "audioKey": "しゅみ"
+          "audioKey": "しゅみ",
+          "audioSrc": "/audio/vocab/しゅみ.opus"
         },
         {
           "id": "v-genki-l20-4",
@@ -13063,7 +13454,8 @@
           "meaning": "moon",
           "type": "n",
           "hasAudio": true,
-          "audioKey": "つき"
+          "audioKey": "つき",
+          "audioSrc": "/audio/books/vocab/v-a6b62ae03460.opus"
         },
         {
           "id": "v-genki-l20-5",
@@ -13072,7 +13464,8 @@
           "readingKana": "うちゅうじん",
           "meaning": "space alien",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-6b9270ddfc0e.opus"
         },
         {
           "id": "d222155dec",
@@ -13082,7 +13475,8 @@
           "meaning": "(hand) fan",
           "type": "n",
           "linkedVocabId": "d222155dec",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-80d708e3ca18.opus"
         },
         {
           "id": "v-genki-l20-7",
@@ -13091,7 +13485,8 @@
           "readingKana": "スニーカー",
           "meaning": "sneakers",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-4fa57a19fbea.opus"
         },
         {
           "id": "v-genki-l20-8",
@@ -13100,7 +13495,8 @@
           "readingKana": "ヘッドホン",
           "meaning": "headphones",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-0589abce87ad.opus"
         },
         {
           "id": "v-genki-l20-9",
@@ -13109,7 +13505,8 @@
           "readingKana": "おにぎり",
           "meaning": "rice ball",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-62675a6eb99e.opus"
         },
         {
           "id": "03d03cf25d",
@@ -13120,7 +13517,8 @@
           "type": "n",
           "linkedVocabId": "03d03cf25d",
           "hasAudio": true,
-          "audioKey": "どうぶつ"
+          "audioKey": "どうぶつ",
+          "audioSrc": "/audio/vocab/どうぶつ.opus"
         },
         {
           "id": "34e6f7d220",
@@ -13130,7 +13528,8 @@
           "meaning": "that way (polite)",
           "type": "n",
           "linkedVocabId": "34e6f7d220",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f82dbe9c83e7.opus"
         },
         {
           "id": "v-genki-l20-12",
@@ -13139,7 +13538,8 @@
           "readingKana": "かかりのもの",
           "meaning": "our person in charge",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-c4794d919f3d.opus"
         },
         {
           "id": "6693b4e9f7",
@@ -13149,7 +13549,8 @@
           "meaning": "(someone's) home/house",
           "type": "n",
           "linkedVocabId": "6693b4e9f7",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-aa5ba3809fec.opus"
         },
         {
           "id": "v-genki-l20-14",
@@ -13158,7 +13559,8 @@
           "readingKana": "...や",
           "meaning": "...shop",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-6a8f5a639349.opus"
         },
         {
           "id": "1eb7a41a47",
@@ -13168,7 +13570,8 @@
           "meaning": "branch office",
           "type": "n",
           "linkedVocabId": "1eb7a41a47",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-46e03beff41b.opus"
         },
         {
           "id": "v-genki-l20-16",
@@ -13177,7 +13580,8 @@
           "readingKana": "ドイツ",
           "meaning": "Germany",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e8900cb0689e.opus"
         },
         {
           "id": "e9efe8313d",
@@ -13187,7 +13591,8 @@
           "meaning": "traffic light",
           "type": "n",
           "linkedVocabId": "e9efe8313d",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-66b41d2adf53.opus"
         },
         {
           "id": "4092bfd9bb",
@@ -13197,7 +13602,8 @@
           "meaning": "corner",
           "type": "n",
           "linkedVocabId": "4092bfd9bb",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-4f4ee21f86ef.opus"
         },
         {
           "id": "dd89673ae0",
@@ -13207,7 +13613,8 @@
           "meaning": "letter; character",
           "type": "n",
           "linkedVocabId": "dd89673ae0",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-bfb06973c307.opus"
         },
         {
           "id": "c6815e7618",
@@ -13218,7 +13625,8 @@
           "type": "n",
           "linkedVocabId": "c6815e7618",
           "hasAudio": true,
-          "audioKey": "おと"
+          "audioKey": "おと",
+          "audioSrc": "/audio/books/vocab/v-e1e4fdf46c99.opus"
         },
         {
           "id": "cdfb776826",
@@ -13229,7 +13637,8 @@
           "type": "i-adj",
           "linkedVocabId": "cdfb776826",
           "hasAudio": true,
-          "audioKey": "おもい"
+          "audioKey": "おもい",
+          "audioSrc": "/audio/books/vocab/v-52c87a31c107.opus"
         },
         {
           "id": "a8b9eb425d",
@@ -13239,7 +13648,8 @@
           "meaning": "light",
           "type": "i-adj",
           "linkedVocabId": "a8b9eb425d",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-30f2fe7595d0.opus"
         },
         {
           "id": "692f5c5fae",
@@ -13249,7 +13659,8 @@
           "meaning": "mysterious",
           "type": "na-adj",
           "linkedVocabId": "692f5c5fae",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-b2521a591b0f.opus"
         },
         {
           "id": "v-genki-l20-24",
@@ -13258,7 +13669,8 @@
           "readingKana": "おる",
           "meaning": "extra-modest expression for いる",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e4842480847e.opus"
         },
         {
           "id": "v-genki-l20-25",
@@ -13267,7 +13679,8 @@
           "readingKana": "まいる",
           "meaning": "extra-modest expression for いく and くる (参る)",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ae5fdb07c488.opus"
         },
         {
           "id": "v-genki-l20-26",
@@ -13276,7 +13689,8 @@
           "readingKana": "もうす",
           "meaning": "extra-modest expression for いう (申す)",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-53943c79382d.opus"
         },
         {
           "id": "v-genki-l20-27",
@@ -13285,7 +13699,8 @@
           "readingKana": "いたす",
           "meaning": "extra-modest expression for する (致す)",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-207d8433a540.opus"
         },
         {
           "id": "47cc7185d5",
@@ -13295,7 +13710,8 @@
           "meaning": "extra-modest expression for たべる and のむ (頂く); humble expression for もらう",
           "type": "u-v",
           "linkedVocabId": "47cc7185d5",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-92c8a29d9aa4.opus"
         },
         {
           "id": "v-genki-l20-29",
@@ -13304,7 +13720,8 @@
           "readingKana": "ござる",
           "meaning": "extra-modest expression for ある",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-bc2c21ee51fb.opus"
         },
         {
           "id": "v-genki-l20-30",
@@ -13313,7 +13730,8 @@
           "readingKana": "...ておる",
           "meaning": "extra-modest expression for ～ている",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-d652e5c33ed6.opus"
         },
         {
           "id": "v-genki-l20-31",
@@ -13322,7 +13740,8 @@
           "readingKana": "...でござる",
           "meaning": "extra-modest expression for です",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-6075540994df.opus"
         },
         {
           "id": "bf69a1d9f2",
@@ -13332,7 +13751,8 @@
           "meaning": "(1) to humbly visit (place に) (2) to humbly ask (person に) (伺う)",
           "type": "u-v",
           "linkedVocabId": "bf69a1d9f2",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-77871925b41a.opus"
         },
         {
           "id": "v-genki-l20-33",
@@ -13341,7 +13761,8 @@
           "readingKana": "まがる",
           "meaning": "to turn (right/left) (corner を direction に)",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-4fc6b20081a1.opus"
         },
         {
           "id": "c858640672",
@@ -13351,7 +13772,8 @@
           "meaning": "to return; to come back (～に)",
           "type": "u-v",
           "linkedVocabId": "c858640672",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-0f3741363e08.opus"
         },
         {
           "id": "4d497f75cf",
@@ -13361,7 +13783,8 @@
           "meaning": "humble expression for あげる",
           "type": "ru-v",
           "linkedVocabId": "4d497f75cf",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f2dee5db248b.opus"
         },
         {
           "id": "7225b79db5",
@@ -13372,7 +13795,8 @@
           "type": "ru-v",
           "linkedVocabId": "7225b79db5",
           "hasAudio": true,
-          "audioKey": "きこえる"
+          "audioKey": "きこえる",
+          "audioSrc": "/audio/books/vocab/v-fcaa4770889f.opus"
         },
         {
           "id": "bbe4edb30f",
@@ -13382,7 +13806,8 @@
           "meaning": "to convey message (person に)",
           "type": "ru-v",
           "linkedVocabId": "bbe4edb30f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-fa4cc465d29a.opus"
         },
         {
           "id": "v-genki-l20-38",
@@ -13391,7 +13816,8 @@
           "readingKana": "またせろ",
           "meaning": "to keep (someone) waiting (～を)",
           "type": "ru-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-5c7ecbcd2589.opus"
         },
         {
           "id": "d177796b00",
@@ -13401,7 +13827,8 @@
           "meaning": "to continue (～を)",
           "type": "ru-v",
           "linkedVocabId": "d177796b00",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-5e2d26a6ae3d.opus"
         },
         {
           "id": "v-genki-l20-40",
@@ -13410,7 +13837,8 @@
           "readingKana": "こうかんする",
           "meaning": "to exchange (X と Y を)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-013f01e68bdd.opus"
         },
         {
           "id": "v-genki-l20-41",
@@ -13419,7 +13847,8 @@
           "readingKana": "へんぴんする",
           "meaning": "to return (merchandise) (～を)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-73a089fc39c2.opus"
         },
         {
           "id": "v-genki-l20-42",
@@ -13428,7 +13857,8 @@
           "readingKana": "せいかつする",
           "meaning": "to lead a life",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-9cb0c67b04a3.opus"
         },
         {
           "id": "v-genki-l20-43",
@@ -13437,7 +13867,8 @@
           "readingKana": "...かい",
           "meaning": "...th floor",
           "type": "ctr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-41dfa06a0c90.opus"
         },
         {
           "id": "v-genki-l20-44",
@@ -13446,7 +13877,8 @@
           "readingKana": "いっかい",
           "meaning": "first floor",
           "type": "ctr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f3c3622a8910.opus"
         },
         {
           "id": "v-genki-l20-45",
@@ -13455,7 +13887,8 @@
           "readingKana": "...みたいなx",
           "meaning": "X like...",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a0fe446c485c.opus"
         },
         {
           "id": "162e00c6ef",
@@ -13465,7 +13898,8 @@
           "meaning": "again",
           "type": "adv",
           "linkedVocabId": "162e00c6ef",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-35a08bff92ef.opus"
         },
         {
           "id": "d33540fe8e",
@@ -13475,7 +13909,8 @@
           "meaning": "well then (polite)",
           "type": "expr",
           "linkedVocabId": "d33540fe8e",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-39e28859c378.opus"
         },
         {
           "id": "df68a4c0c8",
@@ -13485,7 +13920,8 @@
           "meaning": "if possible",
           "type": "adv",
           "linkedVocabId": "df68a4c0c8",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-903b56fe8eed.opus"
         },
         {
           "id": "v-genki-l20-49",
@@ -13494,7 +13930,8 @@
           "readingKana": "まことに",
           "meaning": "really (very polite)",
           "type": "adv",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-32dc6576c8a9.opus"
         },
         {
           "id": "v-genki-l20-50",
@@ -13503,7 +13940,8 @@
           "readingKana": "よろしかったら",
           "meaning": "if it is okay (polite)",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-b51bbc67e2ca.opus"
         },
         {
           "id": "daad7873f5",
@@ -13513,7 +13951,8 @@
           "meaning": "Certainly",
           "type": "expr",
           "linkedVocabId": "daad7873f5",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-5bbca216463a.opus"
         },
         {
           "id": "v-genki-l20-52",
@@ -13522,7 +13961,8 @@
           "readingKana": "しつれいしました",
           "meaning": "I'm very sorry",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f456de04d69a.opus"
         },
         {
           "id": "v-genki-l20-53",
@@ -13531,7 +13971,8 @@
           "readingKana": "もしわけありません",
           "meaning": "You have my apologies (polite)",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-dd9c99f100ab.opus"
         }
       ],
       "kanji": [
@@ -14842,7 +15283,8 @@
           "readingKana": "ちかん",
           "meaning": "groper; pervert",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7c9c994970ae.opus"
         },
         {
           "id": "76d7890e5d",
@@ -14852,7 +15294,8 @@
           "meaning": "thief; burglar",
           "type": "n",
           "linkedVocabId": "76d7890e5d",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-4657e835917e.opus"
         },
         {
           "id": "bd0d639908",
@@ -14862,7 +15305,8 @@
           "meaning": "criminal",
           "type": "n",
           "linkedVocabId": "bd0d639908",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-07837d364cb2.opus"
         },
         {
           "id": "d2fd46f58a",
@@ -14872,7 +15316,8 @@
           "meaning": "colleague",
           "type": "n",
           "linkedVocabId": "d2fd46f58a",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-df02e931e04e.opus"
         },
         {
           "id": "83af91b7eb",
@@ -14882,7 +15327,8 @@
           "meaning": "business meeting; conference",
           "type": "n",
           "linkedVocabId": "83af91b7eb",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-dbc3ee875242.opus"
         },
         {
           "id": "92387d38a4",
@@ -14892,7 +15338,8 @@
           "meaning": "speech",
           "type": "n",
           "linkedVocabId": "92387d38a4",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3232fbddb9f8.opus"
         },
         {
           "id": "b5cc2a03d3",
@@ -14902,7 +15349,8 @@
           "meaning": "mosquito",
           "type": "n",
           "linkedVocabId": "b5cc2a03d3",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f500b3b07ce5.opus"
         },
         {
           "id": "b3c360789e",
@@ -14912,7 +15360,8 @@
           "meaning": "gasoline",
           "type": "n",
           "linkedVocabId": "b3c360789e",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-26763b352e28.opus"
         },
         {
           "id": "9b7b87e488",
@@ -14922,7 +15371,8 @@
           "meaning": "poster",
           "type": "n",
           "linkedVocabId": "9b7b87e488",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-056c1e5b57b3.opus"
         },
         {
           "id": "0e7597cf73",
@@ -14932,7 +15382,8 @@
           "meaning": "complaint",
           "type": "n",
           "linkedVocabId": "0e7597cf73",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ee9e1a3545dd.opus"
         },
         {
           "id": "0989d94de1",
@@ -14943,7 +15394,8 @@
           "type": "n",
           "linkedVocabId": "0989d94de1",
           "hasAudio": true,
-          "audioKey": "るす"
+          "audioKey": "るす",
+          "audioSrc": "/audio/vocab/るす.opus"
         },
         {
           "id": "25550955b0",
@@ -14953,7 +15405,8 @@
           "meaning": "police; police station",
           "type": "n",
           "linkedVocabId": "25550955b0",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7130c4656dcc.opus"
         },
         {
           "id": "e2a52daf95",
@@ -14963,7 +15416,8 @@
           "meaning": "government",
           "type": "n",
           "linkedVocabId": "e2a52daf95",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e4015328fa9c.opus"
         },
         {
           "id": "v-genki-l21-14",
@@ -14972,7 +15426,8 @@
           "readingKana": "じゅぎょうりょう",
           "meaning": "tuition",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a0d4a9605765.opus"
         },
         {
           "id": "8b7434e649",
@@ -14982,7 +15437,8 @@
           "meaning": "factory",
           "type": "n",
           "linkedVocabId": "8b7434e649",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-6a74efe77ed9.opus"
         },
         {
           "id": "c8ca17553a",
@@ -14992,7 +15448,8 @@
           "meaning": "environment",
           "type": "n",
           "linkedVocabId": "c8ca17553a",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e90da86f6e23.opus"
         },
         {
           "id": "v-genki-l21-17",
@@ -15001,7 +15458,8 @@
           "readingKana": "しゅうでん",
           "meaning": "last train (of the day)",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-72aecc5c63c2.opus"
         },
         {
           "id": "v-genki-l21-18",
@@ -15011,7 +15469,8 @@
           "meaning": "things; matters",
           "type": "n",
           "hasAudio": true,
-          "audioKey": "こと"
+          "audioKey": "こと",
+          "audioSrc": "/audio/books/vocab/v-2ab01f1ec07e.opus"
         },
         {
           "id": "58cd37c48b",
@@ -15021,7 +15480,8 @@
           "meaning": "old days; past",
           "type": "n",
           "linkedVocabId": "58cd37c48b",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-010f6f14b678.opus"
         },
         {
           "id": "f840779b9e",
@@ -15031,7 +15491,8 @@
           "meaning": "far (away)",
           "type": "i-adj",
           "linkedVocabId": "f840779b9e",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7a5736f5bfef.opus"
         },
         {
           "id": "33a024fce6",
@@ -15041,7 +15502,8 @@
           "meaning": "awful",
           "type": "i-adj",
           "linkedVocabId": "33a024fce6",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a5a9460ac5ad.opus"
         },
         {
           "id": "160a8399af",
@@ -15051,7 +15513,8 @@
           "meaning": "safe",
           "type": "na-adj",
           "linkedVocabId": "160a8399af",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-5ad284ba88e5.opus"
         },
         {
           "id": "a3c5f7dcf6",
@@ -15061,7 +15524,8 @@
           "meaning": "messy; disorganized",
           "type": "na-adj",
           "linkedVocabId": "a3c5f7dcf6",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-6b2cfb9ab13c.opus"
         },
         {
           "id": "0f80788417",
@@ -15072,7 +15536,8 @@
           "type": "na-adj",
           "linkedVocabId": "0f80788417",
           "hasAudio": true,
-          "audioKey": "へん"
+          "audioKey": "へん",
+          "audioSrc": "/audio/books/vocab/v-0cfe6e67e2f7.opus"
         },
         {
           "id": "96845304fd",
@@ -15083,7 +15548,8 @@
           "type": "u-v",
           "linkedVocabId": "96845304fd",
           "hasAudio": true,
-          "audioKey": "おく"
+          "audioKey": "おく",
+          "audioSrc": "/audio/books/vocab/v-74f94e7a2081.opus"
         },
         {
           "id": "ce21381e4f",
@@ -15093,7 +15559,8 @@
           "meaning": "to wrap; to cover (～を)",
           "type": "u-v",
           "linkedVocabId": "ce21381e4f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-1c252ec371ef.opus"
         },
         {
           "id": "f47c4aee42",
@@ -15104,7 +15571,8 @@
           "type": "u-v",
           "linkedVocabId": "f47c4aee42",
           "hasAudio": true,
-          "audioKey": "はる"
+          "audioKey": "はる",
+          "audioSrc": "/audio/books/vocab/v-1bf0b1c69223.opus"
         },
         {
           "id": "506aca7161",
@@ -15115,7 +15583,8 @@
           "type": "u-v",
           "linkedVocabId": "506aca7161",
           "hasAudio": true,
-          "audioKey": "やく"
+          "audioKey": "やく",
+          "audioSrc": "/audio/books/vocab/v-d794ffd7ede9.opus"
         },
         {
           "id": "f81d503d6f",
@@ -15125,7 +15594,8 @@
           "meaning": "to give (to pets, plants, younger siblings, etc.) (～を)",
           "type": "u-v",
           "linkedVocabId": "f81d503d6f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-84e399fe3a3f.opus"
         },
         {
           "id": "9623b5f0f5",
@@ -15135,7 +15605,8 @@
           "meaning": "to kick (～を)",
           "type": "u-v",
           "linkedVocabId": "9623b5f0f5",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-dac22ac33653.opus"
         },
         {
           "id": "v-genki-l21-31",
@@ -15144,7 +15615,8 @@
           "readingKana": "なぐる",
           "meaning": "to strike; to hit; to punch (～を)",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-8c693c5dadd2.opus"
         },
         {
           "id": "375c7ef77f",
@@ -15154,7 +15626,8 @@
           "meaning": "to step on (～を)",
           "type": "u-v",
           "linkedVocabId": "375c7ef77f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7568a0f27e6c.opus"
         },
         {
           "id": "4219eb63bc",
@@ -15165,7 +15638,8 @@
           "type": "u-v",
           "linkedVocabId": "4219eb63bc",
           "hasAudio": true,
-          "audioKey": "さす"
+          "audioKey": "さす",
+          "audioSrc": "/audio/books/vocab/v-98ee16a9ba0d.opus"
         },
         {
           "id": "88710a5d10",
@@ -15175,7 +15649,8 @@
           "meaning": "to steal; to rob (～を)",
           "type": "u-v",
           "linkedVocabId": "88710a5d10",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a9ce9d6ad795.opus"
         },
         {
           "id": "6d0bb40a1f",
@@ -15185,7 +15660,8 @@
           "meaning": "to touch (～に/を)",
           "type": "u-v",
           "linkedVocabId": "6d0bb40a1f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-d0044ab6d255.opus"
         },
         {
           "id": "2ddd05a675",
@@ -15195,7 +15671,8 @@
           "meaning": "to be arrested; to be caught (～が)",
           "type": "u-v",
           "linkedVocabId": "2ddd05a675",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-727c38ada291.opus"
         },
         {
           "id": "v-genki-l21-37",
@@ -15204,7 +15681,8 @@
           "readingKana": "きがつく",
           "meaning": "to notice (～に)",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-1533cb37ff8d.opus"
         },
         {
           "id": "f63274b0b2",
@@ -15215,7 +15693,8 @@
           "type": "u-v",
           "linkedVocabId": "f63274b0b2",
           "hasAudio": true,
-          "audioKey": "ふる"
+          "audioKey": "ふる",
+          "audioSrc": "/audio/books/vocab/v-eeff74de1cef.opus"
         },
         {
           "id": "v-genki-l21-39",
@@ -15224,7 +15703,8 @@
           "readingKana": "もんくおいう",
           "meaning": "to complain",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-226ed2edab5d.opus"
         },
         {
           "id": "770aa71095",
@@ -15234,7 +15714,8 @@
           "meaning": "to bully (～を)",
           "type": "ru-v",
           "linkedVocabId": "770aa71095",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ac94ab3be27d.opus"
         },
         {
           "id": "v-genki-l21-41",
@@ -15243,7 +15724,8 @@
           "readingKana": "ほめる",
           "meaning": "to praise; to say nice things (～を)",
           "type": "ru-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-227353fd437d.opus"
         },
         {
           "id": "v-genki-l21-42",
@@ -15252,7 +15734,8 @@
           "readingKana": "きがえる",
           "meaning": "to change clothes (～を)",
           "type": "ru-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-025f77396a05.opus"
         },
         {
           "id": "c53be2d952",
@@ -15262,7 +15745,8 @@
           "meaning": "to believe (～を)",
           "type": "ru-v",
           "linkedVocabId": "c53be2d952",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-b4a07998eb68.opus"
         },
         {
           "id": "v-genki-l21-44",
@@ -15271,7 +15755,8 @@
           "readingKana": "ためる",
           "meaning": "to save money (～を)",
           "type": "ru-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-656fc70da9e2.opus"
         },
         {
           "id": "91094911c0",
@@ -15281,7 +15766,8 @@
           "meaning": "to make a mistake (～を)",
           "type": "ru-v",
           "linkedVocabId": "91094911c0",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ef50781fcc65.opus"
         },
         {
           "id": "64f85b7fdf",
@@ -15291,7 +15777,8 @@
           "meaning": "to find (～を)",
           "type": "ru-v",
           "linkedVocabId": "64f85b7fdf",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-548e61bea015.opus"
         },
         {
           "id": "5bfe1d2c25",
@@ -15301,7 +15788,8 @@
           "meaning": "to compare (X と Y を)",
           "type": "ru-v",
           "linkedVocabId": "5bfe1d2c25",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3cd37693372e.opus"
         },
         {
           "id": "v-genki-l21-48",
@@ -15310,7 +15798,8 @@
           "readingKana": "ばかにする",
           "meaning": "to insult; to make a fool of... (～を)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-fb82a001b7f9.opus"
         },
         {
           "id": "ab4a88a2c0",
@@ -15320,7 +15809,8 @@
           "meaning": "to be surprised (～に)",
           "type": "irr",
           "linkedVocabId": "ab4a88a2c0",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-6f31419aaebc.opus"
         },
         {
           "id": "v-genki-l21-50",
@@ -15329,7 +15819,8 @@
           "readingKana": "ひるねおする",
           "meaning": "to take a nap",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f043afbacb7e.opus"
         },
         {
           "id": "v-genki-l21-51",
@@ -15338,7 +15829,8 @@
           "readingKana": "れんらくする",
           "meaning": "to contact (person に)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-acaa53d79778.opus"
         },
         {
           "id": "v-genki-l21-52",
@@ -15347,7 +15839,8 @@
           "readingKana": "ごぜんちゅう",
           "meaning": "in the morning",
           "type": "adv",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f09214b39ba5.opus"
         },
         {
           "id": "v-genki-l21-53",
@@ -15356,7 +15849,8 @@
           "readingKana": "...ごろ",
           "meaning": "time of...; when...",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-2a8440739942.opus"
         },
         {
           "id": "c373555102",
@@ -15367,7 +15861,8 @@
           "type": "adv",
           "linkedVocabId": "c373555102",
           "hasAudio": true,
-          "audioKey": "すこし"
+          "audioKey": "すこし",
+          "audioSrc": "/audio/books/vocab/v-fb72e58280f2.opus"
         },
         {
           "id": "5f300646e4",
@@ -15377,7 +15872,8 @@
           "meaning": "anyhow; anyway",
           "type": "adv",
           "linkedVocabId": "5f300646e4",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e5df0e0e26b9.opus"
         }
       ],
       "kanji": [
@@ -16729,7 +17225,8 @@
           "type": "n",
           "linkedVocabId": "c1a28465a2",
           "hasAudio": true,
-          "audioKey": "かぜ"
+          "audioKey": "かぜ",
+          "audioSrc": "/audio/books/vocab/v-334bdc29cac1.opus"
         },
         {
           "id": "22836046e2",
@@ -16739,7 +17236,8 @@
           "meaning": "tree",
           "type": "n",
           "linkedVocabId": "22836046e2",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-614459aa7586.opus"
         },
         {
           "id": "38dd5eb4a0",
@@ -16749,7 +17247,8 @@
           "meaning": "ball",
           "type": "n",
           "linkedVocabId": "38dd5eb4a0",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-394a1888a42e.opus"
         },
         {
           "id": "0a2e1c93de",
@@ -16760,7 +17259,8 @@
           "type": "n",
           "linkedVocabId": "0a2e1c93de",
           "hasAudio": true,
-          "audioKey": "さる"
+          "audioKey": "さる",
+          "audioSrc": "/audio/books/vocab/v-c713d4ea1138.opus"
         },
         {
           "id": "6b165e8a57",
@@ -16770,7 +17270,8 @@
           "meaning": "license",
           "type": "n",
           "linkedVocabId": "6b165e8a57",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-b3c1ead72cc5.opus"
         },
         {
           "id": "de815ae4e6",
@@ -16780,7 +17281,8 @@
           "meaning": "preparation of a lesson",
           "type": "n",
           "linkedVocabId": "de815ae4e6",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-9755127291dc.opus"
         },
         {
           "id": "c00788993b",
@@ -16790,7 +17292,8 @@
           "meaning": "review of a lesson",
           "type": "n",
           "linkedVocabId": "c00788993b",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-c58a36785953.opus"
         },
         {
           "id": "cd7c2b10e4",
@@ -16801,7 +17304,8 @@
           "type": "n",
           "linkedVocabId": "cd7c2b10e4",
           "hasAudio": true,
-          "audioKey": "じゅく"
+          "audioKey": "じゅく",
+          "audioSrc": "/audio/books/vocab/v-d0984d45453e.opus"
         },
         {
           "id": "v-genki-l22-9",
@@ -16810,7 +17314,8 @@
           "readingKana": "えいかいわ",
           "meaning": "English conversation",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-9fd859160200.opus"
         },
         {
           "id": "cab1bc201f",
@@ -16820,7 +17325,8 @@
           "meaning": "partner; the other person",
           "type": "n",
           "linkedVocabId": "cab1bc201f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-9533b31c70dd.opus"
         },
         {
           "id": "1f5a7d8e07",
@@ -16830,7 +17336,8 @@
           "meaning": "(someone's) daughter (polite)",
           "type": "n",
           "linkedVocabId": "1f5a7d8e07",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7b5dd19daa8f.opus"
         },
         {
           "id": "272904801e",
@@ -16840,7 +17347,8 @@
           "meaning": "God",
           "type": "n",
           "linkedVocabId": "272904801e",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3b7126b99c04.opus"
         },
         {
           "id": "9b3ce398bd",
@@ -16850,7 +17358,8 @@
           "meaning": "senior member of a group",
           "type": "n",
           "linkedVocabId": "9b3ce398bd",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-1651246a37d1.opus"
         },
         {
           "id": "c6a40ed583",
@@ -16860,7 +17369,8 @@
           "meaning": "junior member of a group",
           "type": "n",
           "linkedVocabId": "c6a40ed583",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-af1985c0984d.opus"
         },
         {
           "id": "fd04af50fd",
@@ -16870,7 +17380,8 @@
           "meaning": "subordinate",
           "type": "n",
           "linkedVocabId": "fd04af50fd",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-8f05d27c5527.opus"
         },
         {
           "id": "4bdd43130b",
@@ -16880,7 +17391,8 @@
           "meaning": "reception desk",
           "type": "n",
           "linkedVocabId": "4bdd43130b",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-89ff6eda0da0.opus"
         },
         {
           "id": "2a534a4917",
@@ -16890,7 +17402,8 @@
           "meaning": "document",
           "type": "n",
           "linkedVocabId": "2a534a4917",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-b658809fd2b8.opus"
         },
         {
           "id": "v-genki-l22-18",
@@ -16899,7 +17412,8 @@
           "readingKana": "プロジェクト",
           "meaning": "project",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-61bc332bf3a6.opus"
         },
         {
           "id": "33875d6135",
@@ -16909,7 +17423,8 @@
           "meaning": "housework",
           "type": "n",
           "linkedVocabId": "33875d6135",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-1f025b7ee466.opus"
         },
         {
           "id": "bb4b5f7ee0",
@@ -16919,7 +17434,8 @@
           "meaning": "Europe",
           "type": "n",
           "linkedVocabId": "bb4b5f7ee0",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-5c8e2239aa2a.opus"
         },
         {
           "id": "v-genki-l22-21",
@@ -16928,7 +17444,8 @@
           "readingKana": "ひとりぐらし",
           "meaning": "living alone",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-724418465c55.opus"
         },
         {
           "id": "d1805965ec",
@@ -16938,7 +17455,8 @@
           "meaning": "freedom",
           "type": "n",
           "linkedVocabId": "d1805965ec",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-6f8f2ee44ff6.opus"
         },
         {
           "id": "88c5764dde",
@@ -16948,7 +17466,8 @@
           "meaning": "waste (money)",
           "type": "n",
           "linkedVocabId": "88c5764dde",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-d38c3de9f41d.opus"
         },
         {
           "id": "v-genki-l22-24",
@@ -16957,7 +17476,8 @@
           "readingKana": "うるさい",
           "meaning": "noisy; annoying",
           "type": "i-adj",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-59f19259a5b9.opus"
         },
         {
           "id": "ff60f2830f",
@@ -16967,7 +17487,8 @@
           "meaning": "worried about (～が)",
           "type": "na-adj",
           "linkedVocabId": "ff60f2830f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-d09cd038c641.opus"
         },
         {
           "id": "4860a4efe0",
@@ -16977,7 +17498,8 @@
           "meaning": "poor",
           "type": "na-adj",
           "linkedVocabId": "4860a4efe0",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-db39c995f2b8.opus"
         },
         {
           "id": "v-genki-l22-27",
@@ -16986,7 +17508,8 @@
           "readingKana": "ぺらぺら",
           "meaning": "fluent (language が)",
           "type": "na-adj",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-8b69564937ae.opus"
         },
         {
           "id": "733b519a1e",
@@ -16997,7 +17520,8 @@
           "type": "na-adj",
           "linkedVocabId": "733b519a1e",
           "hasAudio": true,
-          "audioKey": "らく"
+          "audioKey": "らく",
+          "audioSrc": "/audio/books/vocab/v-f85720f118ea.opus"
         },
         {
           "id": "v-genki-l22-29",
@@ -17006,7 +17530,8 @@
           "readingKana": "かぜがふく",
           "meaning": "the wind blows",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e9598bca6afe.opus"
         },
         {
           "id": "v-genki-l22-30",
@@ -17015,7 +17540,8 @@
           "readingKana": "こぴいおとる",
           "meaning": "to make a photocopy",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-777b1b922b3d.opus"
         },
         {
           "id": "2404bdfdb3",
@@ -17026,7 +17552,8 @@
           "type": "u-v",
           "linkedVocabId": "2404bdfdb3",
           "hasAudio": true,
-          "audioKey": "はこぶ"
+          "audioKey": "はこぶ",
+          "audioSrc": "/audio/books/vocab/v-3e6548c58476.opus"
         },
         {
           "id": "a441432c8a",
@@ -17036,7 +17563,8 @@
           "meaning": "to pick up (something) (～を)",
           "type": "u-v",
           "linkedVocabId": "a441432c8a",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-fcba734efee5.opus"
         },
         {
           "id": "v-genki-l22-33",
@@ -17045,7 +17573,8 @@
           "readingKana": "ほっとく",
           "meaning": "to leave (someone/something) alone; to neglect (～を)",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-afc9776b7c00.opus"
         },
         {
           "id": "675232ef05",
@@ -17055,7 +17584,8 @@
           "meaning": "to be in time (～に)",
           "type": "u-v",
           "linkedVocabId": "675232ef05",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f24ee5e5f15a.opus"
         },
         {
           "id": "021c00423f",
@@ -17066,7 +17596,8 @@
           "type": "u-v",
           "linkedVocabId": "021c00423f",
           "hasAudio": true,
-          "audioKey": "かつ"
+          "audioKey": "かつ",
+          "audioSrc": "/audio/books/vocab/v-884de28537b6.opus"
         },
         {
           "id": "20989c0cb5",
@@ -17076,7 +17607,8 @@
           "meaning": "to take (an examination) (～を)",
           "type": "ru-v",
           "linkedVocabId": "20989c0cb5",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-2be9bb143f3f.opus"
         },
         {
           "id": "v-genki-l22-37",
@@ -17085,7 +17617,8 @@
           "readingKana": "けいかくおたてる",
           "meaning": "to make a plan",
           "type": "ru-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3b95aae66850.opus"
         },
         {
           "id": "ec43853e0f",
@@ -17095,7 +17628,8 @@
           "meaning": "to raise; to bring up (～を)",
           "type": "ru-v",
           "linkedVocabId": "ec43853e0f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-c6067c4ee30e.opus"
         },
         {
           "id": "76cae35411",
@@ -17105,7 +17639,8 @@
           "meaning": "to help; to rescue (～を)",
           "type": "ru-v",
           "linkedVocabId": "76cae35411",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ac6375db8399.opus"
         },
         {
           "id": "cb6d7546fb",
@@ -17115,7 +17650,8 @@
           "meaning": "to lose (a match) (～に)",
           "type": "ru-v",
           "linkedVocabId": "cb6d7546fb",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-2b00776e2ad4.opus"
         },
         {
           "id": "v-genki-l22-41",
@@ -17124,7 +17660,8 @@
           "readingKana": "おねがいする",
           "meaning": "to request help (person に～を)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a27dff5fbb7d.opus"
         },
         {
           "id": "v-genki-l22-42",
@@ -17133,7 +17670,8 @@
           "readingKana": "さんせいする",
           "meaning": "to agree (～に)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e25562455c6e.opus"
         },
         {
           "id": "v-genki-l22-43",
@@ -17142,7 +17680,8 @@
           "readingKana": "はんたいする",
           "meaning": "to oppose; to object to (～に)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-8cd041c34cf9.opus"
         },
         {
           "id": "v-genki-l22-44",
@@ -17151,7 +17690,8 @@
           "readingKana": "しっぱいする",
           "meaning": "to fail; to be unsuccessful",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-bcbc2ca9a7d4.opus"
         },
         {
           "id": "v-genki-l22-45",
@@ -17160,7 +17700,8 @@
           "readingKana": "てつやする",
           "meaning": "to stay up all night",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-6c25170e2582.opus"
         },
         {
           "id": "v-genki-l22-46",
@@ -17169,7 +17710,8 @@
           "readingKana": "ほんやくする",
           "meaning": "to translate (source と target に)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-84ef285e4b98.opus"
         },
         {
           "id": "v-genki-l22-47",
@@ -17178,7 +17720,8 @@
           "readingKana": "こんなふうに",
           "meaning": "like this",
           "type": "adv",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-99b82a4e2f5a.opus"
         },
         {
           "id": "v-genki-l22-48",
@@ -17187,7 +17730,8 @@
           "readingKana": "じゆうに",
           "meaning": "freely",
           "type": "adv",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3f96a915751b.opus"
         },
         {
           "id": "2125719689",
@@ -17197,7 +17741,8 @@
           "meaning": "for a long time; all the time",
           "type": "adv",
           "linkedVocabId": "2125719689",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e27f5c4e9cc5.opus"
         },
         {
           "id": "v-genki-l22-50",
@@ -17206,7 +17751,8 @@
           "readingKana": "ぜったいに",
           "meaning": "definitely",
           "type": "adv",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-76e2d7b08470.opus"
         },
         {
           "id": "v-genki-l22-51",
@@ -17215,7 +17761,8 @@
           "readingKana": "なんども",
           "meaning": "many times",
           "type": "adv",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-652aba764e44.opus"
         },
         {
           "id": "v-genki-l22-52",
@@ -17224,7 +17771,8 @@
           "readingKana": "もうすこし",
           "meaning": "a little more",
           "type": "adv",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-02f913de6419.opus"
         },
         {
           "id": "v-genki-l22-53",
@@ -17233,7 +17781,8 @@
           "readingKana": "...とか",
           "meaning": "...for example",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-caf8c5be96aa.opus"
         },
         {
           "id": "v-genki-l22-54",
@@ -17242,7 +17791,8 @@
           "readingKana": "そんなことない",
           "meaning": "I don't think so",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-d4cd26d1529d.opus"
         },
         {
           "id": "v-genki-l22-55",
@@ -17251,7 +17801,8 @@
           "readingKana": "...ちゃん",
           "meaning": "[suffix for names of children]",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-b81c0b4923ef.opus"
         },
         {
           "id": "v-genki-l22-56",
@@ -17260,7 +17811,8 @@
           "readingKana": "おうくの...",
           "meaning": "many...",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3f3670ff5be7.opus"
         }
       ],
       "kanji": [
@@ -18623,7 +19175,8 @@
           "meaning": "socks",
           "type": "n",
           "linkedVocabId": "20a1278928",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7a83db1d86b6.opus"
         },
         {
           "id": "b0b2986a8e",
@@ -18633,7 +19186,8 @@
           "meaning": "sack; plastic/paper bag",
           "type": "n",
           "linkedVocabId": "b0b2986a8e",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-fd55d629da65.opus"
         },
         {
           "id": "3e80832e23",
@@ -18643,7 +19197,8 @@
           "meaning": "free of charge",
           "type": "n",
           "linkedVocabId": "3e80832e23",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-142b7fdb728f.opus"
         },
         {
           "id": "v-genki-l23-4",
@@ -18652,7 +19207,8 @@
           "readingKana": "ゆうしょく",
           "meaning": "dinner",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-196841e15979.opus"
         },
         {
           "id": "32ca6422d6",
@@ -18662,7 +19218,8 @@
           "meaning": "place",
           "type": "n",
           "linkedVocabId": "32ca6422d6",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-91860f6bc6e2.opus"
         },
         {
           "id": "7cb27c411e",
@@ -18672,7 +19229,8 @@
           "meaning": "stairs",
           "type": "n",
           "linkedVocabId": "7cb27c411e",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e2801e5a7306.opus"
         },
         {
           "id": "b04bf40187",
@@ -18682,7 +19240,8 @@
           "meaning": "elementary school",
           "type": "n",
           "linkedVocabId": "b04bf40187",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-9ecf85271d65.opus"
         },
         {
           "id": "571cef47c2",
@@ -18692,7 +19251,8 @@
           "meaning": "interview",
           "type": "n",
           "linkedVocabId": "571cef47c2",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7edda45ca76f.opus"
         },
         {
           "id": "099583ae2f",
@@ -18702,7 +19262,8 @@
           "meaning": "health",
           "type": "n",
           "linkedVocabId": "099583ae2f",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3a6752e17424.opus"
         },
         {
           "id": "ed6d068863",
@@ -18712,7 +19273,8 @@
           "meaning": "ideal",
           "type": "n",
           "linkedVocabId": "ed6d068863",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-5199b2eddcdb.opus"
         },
         {
           "id": "f7e0cf6ddd",
@@ -18722,7 +19284,8 @@
           "meaning": "looking after a house during someone's absence",
           "type": "n",
           "linkedVocabId": "f7e0cf6ddd",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-10a8aec25983.opus"
         },
         {
           "id": "012f6788c4",
@@ -18732,7 +19295,8 @@
           "meaning": "message; text",
           "type": "n",
           "linkedVocabId": "012f6788c4",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-94d14c42c7f3.opus"
         },
         {
           "id": "c306cf0616",
@@ -18742,7 +19306,8 @@
           "meaning": "class cancellation",
           "type": "n",
           "linkedVocabId": "c306cf0616",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-17a28bfe0172.opus"
         },
         {
           "id": "v-genki-l23-14",
@@ -18751,7 +19316,8 @@
           "readingKana": "かいがいりょこう",
           "meaning": "trip to a foreign country",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-0c891a3cf62e.opus"
         },
         {
           "id": "v-genki-l23-15",
@@ -18760,7 +19326,8 @@
           "readingKana": "ぼんおどり",
           "meaning": "Bon dance (Japanese traditional dance)",
           "type": "n",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ad138a1c2b81.opus"
         },
         {
           "id": "77a024455d",
@@ -18770,7 +19337,8 @@
           "meaning": "memory",
           "type": "n",
           "linkedVocabId": "77a024455d",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3fe7703080f3.opus"
         },
         {
           "id": "a7dc742b01",
@@ -18780,7 +19348,8 @@
           "meaning": "society",
           "type": "n",
           "linkedVocabId": "a7dc742b01",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e5db2aae7f08.opus"
         },
         {
           "id": "e391d26404",
@@ -18790,7 +19359,8 @@
           "meaning": "result",
           "type": "n",
           "linkedVocabId": "e391d26404",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-dbb1e8a21e69.opus"
         },
         {
           "id": "4dc252fa39",
@@ -18800,7 +19370,8 @@
           "meaning": "survey",
           "type": "n",
           "linkedVocabId": "4dc252fa39",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-323f84de78ad.opus"
         },
         {
           "id": "b19034ded1",
@@ -18810,7 +19381,8 @@
           "meaning": "(food is) terrible",
           "type": "i-adj",
           "linkedVocabId": "b19034ded1",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-5dce6d93a8d3.opus"
         },
         {
           "id": "9ace958be5",
@@ -18820,7 +19392,8 @@
           "meaning": "pitiful; feel sorry for; poor thing",
           "type": "na-adj",
           "linkedVocabId": "9ace958be5",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-74b55aac63c6.opus"
         },
         {
           "id": "v-genki-l23-22",
@@ -18829,7 +19402,8 @@
           "readingKana": "あめがやむ",
           "meaning": "the rain stops",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-149fe963b5f9.opus"
         },
         {
           "id": "35e9881c22",
@@ -18839,7 +19413,8 @@
           "meaning": "to be different; to be wrong (～と)",
           "type": "u-v",
           "linkedVocabId": "35e9881c22",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-6d7eb10ef9c4.opus"
         },
         {
           "id": "v-genki-l23-24",
@@ -18848,7 +19423,8 @@
           "readingKana": "なくなる",
           "meaning": "to be lost; to disappear (～が)",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-948ba9c3e35d.opus"
         },
         {
           "id": "v-genki-l23-25",
@@ -18857,7 +19433,8 @@
           "readingKana": "いなくなる",
           "meaning": "(someone) is gone; to disappear (～が)",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-925ad31092d3.opus"
         },
         {
           "id": "v-genki-l23-26",
@@ -18866,7 +19443,8 @@
           "readingKana": "おせわになる",
           "meaning": "to be in someone's care (～に)",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-831f18b85645.opus"
         },
         {
           "id": "v-genki-l23-27",
@@ -18875,7 +19453,8 @@
           "readingKana": "おなかをこわす",
           "meaning": "to have a stomachache",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-b069462cee47.opus"
         },
         {
           "id": "1b3b057ef9",
@@ -18885,7 +19464,8 @@
           "meaning": "to find something agreeable (～が/を)",
           "type": "u-v",
           "linkedVocabId": "1b3b057ef9",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-88f9e9070990.opus"
         },
         {
           "id": "v-genki-l23-29",
@@ -18894,7 +19474,8 @@
           "readingKana": "わるくちおいう",
           "meaning": "to talk behind someone's back",
           "type": "u-v",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-05cc40533ca2.opus"
         },
         {
           "id": "d5d8c608aa",
@@ -18905,7 +19486,8 @@
           "type": "ru-v",
           "linkedVocabId": "d5d8c608aa",
           "hasAudio": true,
-          "audioKey": "こたえる"
+          "audioKey": "こたえる",
+          "audioSrc": "/audio/books/vocab/v-dbe90afffff1.opus"
         },
         {
           "id": "0024055e8e",
@@ -18915,7 +19497,8 @@
           "meaning": "(something/someone) separates; parts from (～と)",
           "type": "ru-v",
           "linkedVocabId": "0024055e8e",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-f3c6f40f7f4c.opus"
         },
         {
           "id": "v-genki-l23-32",
@@ -18924,7 +19507,8 @@
           "readingKana": "がっかりする",
           "meaning": "to be disappointed (～に)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ec1144829bc6.opus"
         },
         {
           "id": "v-genki-l23-33",
@@ -18933,7 +19517,8 @@
           "readingKana": "がまんする",
           "meaning": "to be tolerant/patient (～を)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-c346643fccec.opus"
         },
         {
           "id": "v-genki-l23-34",
@@ -18942,7 +19527,8 @@
           "readingKana": "どうじょうする",
           "meaning": "to sympathize (～に)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3bf9bed18b45.opus"
         },
         {
           "id": "v-genki-l23-35",
@@ -18951,7 +19537,8 @@
           "readingKana": "...かおおする",
           "meaning": "to look... (facial expression)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-5d63a860c980.opus"
         },
         {
           "id": "v-genki-l23-36",
@@ -18960,7 +19547,8 @@
           "readingKana": "カンニングする",
           "meaning": "to cheat in an exam",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-2a7e89f43a6b.opus"
         },
         {
           "id": "83a456da88",
@@ -18970,7 +19558,8 @@
           "meaning": "to check (～を)",
           "type": "irr",
           "linkedVocabId": "83a456da88",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-647f5b3b7e32.opus"
         },
         {
           "id": "v-genki-l23-38",
@@ -18979,7 +19568,8 @@
           "readingKana": "せわおする",
           "meaning": "to take care of... (～の)",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-bf8578a30fe0.opus"
         },
         {
           "id": "v-genki-l23-39",
@@ -18988,7 +19578,8 @@
           "readingKana": "ゆうしょうする",
           "meaning": "to win a championship",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a7d5e77755ac.opus"
         },
         {
           "id": "v-genki-l23-40",
@@ -18997,7 +19588,8 @@
           "readingKana": "もどってくる",
           "meaning": "(something/someone) comes back",
           "type": "irr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-cca8a0c51a4c.opus"
         },
         {
           "id": "v-genki-l23-41",
@@ -19006,7 +19598,8 @@
           "readingKana": "そんな...",
           "meaning": "such...; that kind of...",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-3420e60f7f8e.opus"
         },
         {
           "id": "v-genki-l23-42",
@@ -19015,7 +19608,8 @@
           "readingKana": "...ために",
           "meaning": "for...; for the sake of...",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ca2570db83ef.opus"
         },
         {
           "id": "v-genki-l23-43",
@@ -19024,7 +19618,8 @@
           "readingKana": "ものすごく",
           "meaning": "extremely",
           "type": "adv",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7f9ceb470591.opus"
         },
         {
           "id": "0039e17a55",
@@ -19034,7 +19629,8 @@
           "meaning": "it is about time to...",
           "type": "adv",
           "linkedVocabId": "0039e17a55",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-8503d949ff1e.opus"
         },
         {
           "id": "v-genki-l23-45",
@@ -19043,7 +19639,8 @@
           "readingKana": "さいごに",
           "meaning": "finally",
           "type": "adv",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-c23238942705.opus"
         },
         {
           "id": "v-genki-l23-46",
@@ -19052,7 +19649,8 @@
           "readingKana": "げんきでね",
           "meaning": "Take care of yourself",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-edd4a4d96a30.opus"
         },
         {
           "id": "v-genki-l23-47",
@@ -19061,7 +19659,8 @@
           "readingKana": "そうそう",
           "meaning": "You are right",
           "type": "expr",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-12c868d69bd1.opus"
         }
       ],
       "kanji": [

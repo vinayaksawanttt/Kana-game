@@ -39,7 +39,7 @@
         "build:listening-audio": "tsx scripts/build-listening-audio.ts",
         "build:books-dialogue-audio": "tsx scripts/build-books-dialogue-gemini-audio.ts",
         "build:books-dialogue-kenpath-audio": "tsx scripts/build-books-dialogue-kenpath-audio.ts",
-        "build:books-vocab-audio": "tsx scripts/build-books-vocab-kenpath-audio.ts",
+        "build:books-vocab-audio": "tsx scripts/build-books-vocab-audio.ts",
         "build:books-grammar-audio": "tsx scripts/build-books-grammar-practice-voicevox.ts",
         "build:reverse-prompts": "tsx scripts/build-reverse-srs-prompts.ts",
         "build:manifest": "tsx scripts/build-data-manifest.ts",

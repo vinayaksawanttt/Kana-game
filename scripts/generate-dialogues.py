@@ -386,14 +386,13 @@ def map_character_profile(speaker_en, speaker_ja, book_id=""):
                 "base_intonation": 1.06,
             }
 
-        # 8. Akemi Watanabe (渡辺) -> Kenpath Labs (Mio: sv_9j2qx39f)
+        # 8. Akemi Watanabe (渡辺) -> VOICEVOX (id=8 春日部つむぎ)
         if "渡辺" in norm_ja or "watanabe" in norm_en:
             return {
                 "character": "Akemi Watanabe",
-                "primary": "kenpath",
-                "allowed_engines": ["kenpath"],
+                "primary": "voicevox",
+                "allowed_engines": ["voicevox", "aivis"],
                 "gemini_voice": "Aoede",
-                "kenpath_voice": KENPATH_VOICES["mio"],
                 "aivis_key": "kanae",
                 "aivis_style": "normal",
                 "voicevox_id": 8,
@@ -498,14 +497,13 @@ def map_character_profile(speaker_en, speaker_ja, book_id=""):
                 "base_intonation": 1.08,
             }
 
-        # 15. University President (学長) -> Kenpath Labs (Kenta: sv_71lsoipx)
+        # 15. University President (学長) -> VOICEVOX (id=53 キレネンコ/男性)
         if "学長" in norm_ja or "university president" in norm_en:
             return {
                 "character": "University President",
-                "primary": "kenpath",
-                "allowed_engines": ["kenpath"],
+                "primary": "voicevox",
+                "allowed_engines": ["voicevox", "aivis"],
                 "gemini_voice": "Rasalgethi",
-                "kenpath_voice": KENPATH_VOICES["kenta"],
                 "aivis_key": "shoujou",
                 "aivis_style": "normal",
                 "voicevox_id": 53,
