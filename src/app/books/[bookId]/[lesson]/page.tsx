@@ -50,6 +50,8 @@ import {
 } from "@/features/books/components/VocabularyDetailDrawer";
 import { romajiToHiragana } from "@/features/shiritori/engine/shiritori";
 import { loadDictionaryDataMaps, type DictionaryDataMaps } from "@/data/dictionary";
+import { getKanjiStrokeData } from "@/data/strokes";
+import { getKanjiComposites, type KanjiCompositeItem } from "@/data/kanjiVocab";
 import { addGrammarToSrs, upsertPracticeItems } from "@/lib/srs/service";
 import { srsDb, type SrsItem } from "@/lib/srs/db";
 import { SakuraLoader } from "@/components/ui/SakuraLoader";
@@ -91,6 +93,7 @@ import {
   GrammarStatusBadge,
   KanjiCard,
   KanjiListTable,
+  type KanjiListExampleItem,
   LessonWorkspaceHeader,
   ResponsiveGrid,
   SearchInput,
@@ -199,10 +202,12 @@ export default function BookLessonPage() {
     lessonKey: string;
     item: BookKanjiItem;
   } | null>(null);
-  const [kanjiViewMode, setKanjiViewMode] = useState<"grid" | "list">("grid");
+  const [kanjiViewMode, setKanjiViewMode] = useState<"grid" | "list">("list");
   const [kanjiStatusFilter, setKanjiStatusFilter] = useState<"all" | VocabSrsState>("all");
   const [kanjiStrokeFilter, setKanjiStrokeFilter] = useState<"all" | "1-4" | "5-8" | "9+">("all");
   const [kanjiJlptFilter, setKanjiJlptFilter] = useState<string>("all");
+  const [kanjiStrokePathsMap, setKanjiStrokePathsMap] = useState<Record<string, string[]>>({});
+  const [kanjiCompositesMap, setKanjiCompositesMap] = useState<Record<string, KanjiCompositeItem[]>>({});
 
   const selectedStrokeKanji =
     selectedStrokeState?.lessonKey === targetKey ? selectedStrokeState.item : null;
@@ -413,7 +418,7 @@ export default function BookLessonPage() {
       if (saved.vocabLearningMode) setVocabLearningMode(saved.vocabLearningMode);
       if (saved.grammarStudyStatus) setGrammarStudyStatus(saved.grammarStudyStatus);
       if (saved.grammarStatusFilter) setGrammarStatusFilter(saved.grammarStatusFilter);
-      if (saved.kanjiViewMode) setKanjiViewMode(saved.kanjiViewMode);
+      setKanjiViewMode(saved.kanjiViewMode ?? "list");
       if (saved.kanjiStatusFilter) setKanjiStatusFilter(saved.kanjiStatusFilter);
       if (saved.kanjiStrokeFilter) setKanjiStrokeFilter(saved.kanjiStrokeFilter);
       if (saved.kanjiJlptFilter) setKanjiJlptFilter(saved.kanjiJlptFilter);
@@ -1056,6 +1061,111 @@ export default function BookLessonPage() {
   );
 
   const defaultKanjiJlpt = lesson && lesson.lessonNumber <= 12 ? 5 : 4;
+
+  // Load progressive stroke paths and compound examples for the lesson's Kanji list table
+  useEffect(() => {
+    if (!lesson || !lesson.kanji?.length) return;
+    let mounted = true;
+
+    const loadLessonKanjiEnrichment = async () => {
+      const nextStrokes: Record<string, string[]> = {};
+      const nextComposites: Record<string, KanjiCompositeItem[]> = {};
+
+      await Promise.all(
+        lesson.kanji.map(async (k) => {
+          const char = k.kanji.trim();
+          if (!char) return;
+          const lvl = k.jlpt || defaultKanjiJlpt;
+          const [strokeData, compData] = await Promise.all([
+            getKanjiStrokeData(char, lvl).catch(() => null),
+            getKanjiComposites(char, lvl).catch(() => []),
+          ]);
+          if (strokeData?.paths?.length) {
+            nextStrokes[char] = strokeData.paths;
+          }
+          if (compData?.length) {
+            nextComposites[char] = compData;
+          }
+        })
+      );
+
+      if (mounted) {
+        setKanjiStrokePathsMap((prev) => ({ ...prev, ...nextStrokes }));
+        setKanjiCompositesMap((prev) => ({ ...prev, ...nextComposites }));
+      }
+    };
+
+    void loadLessonKanjiEnrichment();
+    return () => {
+      mounted = false;
+    };
+  }, [defaultKanjiJlpt, lesson]);
+
+  const kanjiExamplesById = useMemo(() => {
+    const map = new Map<string, KanjiListExampleItem[]>();
+    if (!lesson) return map;
+
+    for (const k of lesson.kanji) {
+      const char = k.kanji.trim();
+      if (!char) continue;
+      const list: KanjiListExampleItem[] = [];
+      const seenWords = new Set<string>();
+
+      // 1. Core vocabulary from this lesson (highlighted like Genki book)
+      for (const v of lesson.vocabulary) {
+        if (v.word.includes(char) && !seenWords.has(v.word)) {
+          seenWords.add(v.word);
+          list.push({
+            word: v.word,
+            reading: v.readingKana || v.reading || "",
+            meaning: v.meaning,
+            isCore: true,
+            vocabItem: v,
+          });
+        }
+      }
+
+      // 2. Other lessons in the same textbook
+      if (book && list.length < 5) {
+        for (const otherLesson of book.lessons) {
+          if (otherLesson.lessonNumber === lesson.lessonNumber) continue;
+          for (const v of otherLesson.vocabulary || []) {
+            if (list.length >= 5) break;
+            if (v.word.includes(char) && !seenWords.has(v.word)) {
+              seenWords.add(v.word);
+              list.push({
+                word: v.word,
+                reading: v.readingKana || v.reading || "",
+                meaning: v.meaning,
+                isCore: false,
+                vocabItem: v,
+              });
+            }
+          }
+          if (list.length >= 5) break;
+        }
+      }
+
+      // 3. Supplemental JLPT kanji compounds
+      const composites = kanjiCompositesMap[char] || [];
+      for (const comp of composites) {
+        if (list.length >= 5) break;
+        if (!seenWords.has(comp.word)) {
+          seenWords.add(comp.word);
+          list.push({
+            word: comp.word,
+            reading: comp.reading,
+            meaning: comp.meaning,
+            isCore: list.length === 0,
+          });
+        }
+      }
+
+      map.set(k.id, list.slice(0, 5));
+    }
+
+    return map;
+  }, [book, kanjiCompositesMap, lesson]);
 
   const {
     kanjiSrsStateById,
@@ -2435,8 +2545,11 @@ export default function BookLessonPage() {
                   defaultJlpt={defaultKanjiJlpt}
                   srsStateById={kanjiSrsStateById}
                   vocabCountById={kanjiVocabCountById}
+                  examplesByKanjiId={kanjiExamplesById}
+                  strokePathsByKanji={kanjiStrokePathsMap}
                   selectedId={selectedStrokeKanji?.id ?? null}
                   onOpenStrokeOrder={setSelectedStrokeKanji}
+                  onSelectVocab={setSelectedDetailVocab}
                 />
               ) : (
                 <ResponsiveGrid columns={3} gap="md">

@@ -105,6 +105,7 @@ async function main() {
     { file: "genki-1.json", id: "genki-1" },
     { file: "genki-2.json", id: "genki-2" },
     { file: "mnn-1.json", id: "mnn-1" },
+    { file: "mnn-2.json", id: "mnn-2" },
   ];
 
   const globalVocabDir = path.join(process.cwd(), "public/audio/vocab");
@@ -132,7 +133,10 @@ async function main() {
     for (const lesson of data.lessons || []) {
       for (const rawV of lesson.vocabulary || []) {
         const v = rawV as VocabWithAudio;
-        const spoken = cleanSpokenVocab(v.readingKana || v.word || "");
+        const spoken =
+          cleanSpokenVocab(v.readingKana || "") ||
+          cleanSpokenVocab(v.word || "") ||
+          cleanSpokenVocab((v.word || v.readingKana || "").replace(/[［\[\]］]/g, ""));
         if (!spoken) continue;
 
         const safeName = toSafeFilename(spoken);

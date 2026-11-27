@@ -1816,119 +1816,305 @@ export function KanjiCard({
 /* KanjiListTable                                                             */
 /* -------------------------------------------------------------------------- */
 
+export interface KanjiListExampleItem {
+  word: string;
+  reading: string;
+  meaning: string;
+  isCore?: boolean;
+  vocabItem?: BookVocabItem;
+}
+
 export interface KanjiListTableProps {
   items: BookKanjiItem[];
   defaultJlpt?: number;
   srsStateById: Map<string, VocabSrsState>;
   vocabCountById?: Map<string, number>;
+  examplesByKanjiId?: Map<string, KanjiListExampleItem[]>;
+  strokePathsByKanji?: Record<string, string[]>;
   selectedId?: string | null;
   onOpenStrokeOrder: (kanji: BookKanjiItem) => void;
+  onSelectVocab?: (vocab: BookVocabItem) => void;
 }
 
 export function KanjiListTable({
   items,
-  defaultJlpt = 5,
   srsStateById,
   vocabCountById,
+  examplesByKanjiId,
+  strokePathsByKanji,
   selectedId,
   onOpenStrokeOrder,
+  onSelectVocab,
 }: KanjiListTableProps) {
   return (
-    <div className="overflow-x-auto rounded-2xl border border-[var(--tb-border)] bg-[var(--tb-surface)] shadow-2xs">
+    <div className="overflow-x-auto rounded-xl border-2 border-stone-700/80 dark:border-stone-500/60 bg-[var(--tb-surface)] shadow-xs">
       <table className="w-full text-left border-collapse" aria-label="Kanji list">
-        <thead>
-          <tr className="border-b border-[var(--tb-border)] bg-[var(--tb-bg)]/70 text-[11px] font-bold uppercase tracking-wider text-[var(--tb-text-secondary)]">
-            <th className="py-2.5 px-3.5">Kanji</th>
-            <th className="py-2.5 px-3">Meaning</th>
-            <th className="py-2.5 px-3">On&apos;yomi</th>
-            <th className="py-2.5 px-3">Kun&apos;yomi</th>
-            <th className="py-2.5 px-3 hidden sm:table-cell">Strokes</th>
-            <th className="py-2.5 px-3">Status</th>
-            <th className="py-2.5 px-3 text-right">Practice</th>
+        <thead className="sr-only">
+          <tr>
+            <th>Kanji</th>
+            <th>Readings and Meaning</th>
+            <th>Examples and Stroke Order</th>
           </tr>
         </thead>
-        <tbody className="divide-y divide-[var(--tb-border)]/70 text-sm">
+        <tbody className="divide-y divide-stone-400/80 dark:divide-stone-700 text-sm">
           {items.map((k) => {
             const srsState = srsStateById.get(k.id) ?? "new";
-            const jlptLabel = `N${k.jlpt || defaultJlpt}`;
             const vocabCount = vocabCountById?.get(k.id) ?? 0;
+            const examples = examplesByKanjiId?.get(k.id) ?? [];
+            const strokePaths = strokePathsByKanji?.[k.kanji.trim()];
+            const strokeCount = k.strokes ?? strokePaths?.length;
+
+            // Highlight readings that appear in core lesson vocabulary (or default to first reading)
+            const coreReadings = examples
+              .filter((e) => e.isCore)
+              .map((e) => e.reading.replace(/[\s・]/g, ""));
+
+            const isReadingHighlighted = (r: string, idx: number) => {
+              const clean = r.replace(/[\s・\-－.]/g, "").trim();
+              if (!clean) return false;
+              if (coreReadings.some((cr) => cr.includes(clean))) return true;
+              return idx === 0;
+            };
 
             return (
               <tr
                 key={k.id}
-                onClick={() => onOpenStrokeOrder(k)}
                 className={cn(
-                  "cursor-pointer transition-colors hover:bg-[var(--tb-accent-soft)]/30",
-                  selectedId === k.id && "bg-[var(--tb-accent-soft)]/45"
+                  "transition-colors hover:bg-stone-500/[0.03]",
+                  selectedId === k.id && "bg-[var(--tb-accent-soft)]/35"
                 )}
               >
-                <td className="py-2.5 px-3.5 whitespace-nowrap">
-                  <div className="flex items-center gap-2.5">
-                    <span
-                      lang="ja"
-                      className="grid size-10 place-items-center rounded-xl border border-[var(--tb-border-strong)] bg-[var(--tb-accent-soft)]/60 font-kanji text-xl font-black text-[var(--primary-fg)]"
+                {/* Column 1: Kanji Number + Large Kanji Glyph */}
+                <td className="w-28 sm:w-32 align-middle border-r border-stone-400/80 dark:border-stone-700 p-2.5 sm:p-3 relative select-none">
+                  <div className="flex items-center justify-between gap-1 mb-1">
+                    <span className="text-[11px] font-bold text-[#c25b38] dark:text-amber-400 tabular-nums leading-none">
+                      {k.number}
+                    </span>
+                    <VocabStatusBadge state={srsState} />
+                  </div>
+                  <div className="flex items-center justify-center py-1">
+                    <button
+                      type="button"
+                      onClick={() => onOpenStrokeOrder(k)}
+                      aria-label={`Inspect kanji ${k.kanji}`}
+                      className="tb-focus-ring rounded-lg px-2 py-1 font-kanji text-5xl sm:text-[54px] font-normal leading-none text-[var(--tb-text-primary)] hover:text-[var(--primary-fg)] hover:scale-105 transition-all cursor-pointer"
                     >
                       {k.kanji}
-                    </span>
-                    <span className="text-[11px] font-bold text-[var(--tb-text-secondary)] tabular-nums">
-                      #{String(k.number).padStart(3, "0")}
-                    </span>
+                    </button>
                   </div>
                 </td>
-                <td className="py-2.5 px-3">
-                  <span className="block font-bold text-[var(--tb-text-primary)] capitalize">
-                    {k.meaning}
-                  </span>
-                  {vocabCount > 0 && (
-                    <span className="text-[11px] text-[var(--tb-text-secondary)]">
-                      {vocabCount} lesson {vocabCount === 1 ? "word" : "words"}
-                    </span>
-                  )}
-                </td>
-                <td className="py-2.5 px-3">
-                  <div className="flex flex-wrap gap-1">
-                    {k.onyomi.length > 0 ? (
-                      k.onyomi.slice(0, 3).map((on, i) => (
-                        <KanjiReadingPill key={i} reading={on} type="on" size="sm" />
-                      ))
-                    ) : (
-                      <span className="text-xs text-[var(--tb-text-secondary)]/60">—</span>
-                    )}
-                  </div>
-                </td>
-                <td className="py-2.5 px-3">
-                  <div className="flex flex-wrap gap-1">
-                    {k.kunyomi.length > 0 ? (
-                      k.kunyomi.slice(0, 3).map((kun, i) => (
-                        <KanjiReadingPill key={i} reading={kun} type="kun" size="sm" />
-                      ))
-                    ) : (
-                      <span className="text-xs text-[var(--tb-text-secondary)]/60">—</span>
-                    )}
-                  </div>
-                </td>
-                <td className="py-2.5 px-3 hidden sm:table-cell text-xs font-bold text-[var(--tb-text-secondary)] tabular-nums whitespace-nowrap">
-                  {k.strokes !== undefined ? `${k.strokes} 画` : "—"}
-                </td>
-                <td className="py-2.5 px-3 whitespace-nowrap">
-                  <div className="flex items-center gap-1.5">
-                    <VocabStatusBadge state={srsState} />
-                    <LevelBadge level={jlptLabel} />
-                  </div>
-                </td>
+
+                {/* Column 2: ▶ On-yomi, ▷ Kun-yomi, and (meaning) */}
                 <td
-                  className="py-2.5 px-3 text-right whitespace-nowrap"
-                  onClick={(e) => e.stopPropagation()}
+                  onClick={() => onOpenStrokeOrder(k)}
+                  className="w-40 sm:w-52 align-top border-r border-stone-400/80 dark:border-stone-700 p-3 cursor-pointer"
                 >
-                  <button
-                    type="button"
-                    onClick={() => onOpenStrokeOrder(k)}
-                    aria-label={`Stroke Order for ${k.kanji}`}
-                    className="tb-focus-ring inline-flex items-center gap-1 rounded-xl bg-[var(--tb-accent-soft)] px-2.5 py-1.5 text-xs font-bold text-[var(--primary-fg)] hover:bg-[var(--tb-primary)] hover:text-white transition-colors cursor-pointer"
-                  >
-                    <Pencil size={12} />
-                    <span>Stroke Order</span>
-                  </button>
+                  <div className="flex flex-col justify-between min-h-[104px] gap-2">
+                    <div className="space-y-1.5">
+                      {/* ▶ On-yomi row */}
+                      <div className="flex items-baseline gap-1.5">
+                        <span
+                          aria-hidden="true"
+                          className="text-[10px] text-[var(--tb-text-primary)] shrink-0 select-none"
+                          title="On'yomi (Chinese reading)"
+                        >
+                          ▶
+                        </span>
+                        <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+                          {k.onyomi.length > 0 ? (
+                            k.onyomi.map((on, i) => {
+                              const highlighted = isReadingHighlighted(on, i);
+                              return (
+                                <span
+                                  key={i}
+                                  lang="ja"
+                                  className={cn(
+                                    "font-japanese text-sm font-bold leading-snug text-[var(--tb-text-primary)]",
+                                    highlighted &&
+                                      "bg-[#f6d7bf] dark:bg-amber-500/25 text-stone-900 dark:text-amber-100 px-1.5 py-0.5 rounded-[3px]"
+                                  )}
+                                >
+                                  {on}
+                                </span>
+                              );
+                            })
+                          ) : (
+                            <span className="text-xs text-[var(--tb-text-secondary)]/50">—</span>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* ▷ Kun-yomi row */}
+                      <div className="flex items-baseline gap-1.5">
+                        <span
+                          aria-hidden="true"
+                          className="text-[11px] text-[var(--tb-text-primary)] shrink-0 select-none"
+                          title="Kun'yomi (Japanese reading)"
+                        >
+                          ▷
+                        </span>
+                        <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+                          {k.kunyomi.length > 0 ? (
+                            k.kunyomi.map((kun, i) => {
+                              const highlighted = isReadingHighlighted(kun, i);
+                              return (
+                                <span
+                                  key={i}
+                                  lang="ja"
+                                  className={cn(
+                                    "font-japanese text-sm font-bold leading-snug text-[var(--tb-text-primary)]",
+                                    highlighted &&
+                                      "bg-[#f6d7bf] dark:bg-amber-500/25 text-stone-900 dark:text-amber-100 px-1.5 py-0.5 rounded-[3px]"
+                                  )}
+                                >
+                                  {kun}
+                                </span>
+                              );
+                            })
+                          ) : (
+                            <span className="text-xs text-[var(--tb-text-secondary)]/50">—</span>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Parenthesized Meaning at bottom */}
+                    <div className="pt-1">
+                      <span className="text-xs sm:text-[13px] font-medium text-[var(--tb-text-secondary)]">
+                        ({k.meaning})
+                      </span>
+                    </div>
+                  </div>
+                </td>
+
+                {/* Column 3: Top = Vocabulary Examples, Bottom = (strokes) + Progressive Stroke Order */}
+                <td className="align-top p-0">
+                  <div className="flex flex-col justify-between min-h-[120px]">
+                    {/* Top sub-row: Example Compounds */}
+                    <div className="px-3.5 py-2.5 flex flex-wrap items-baseline gap-x-5 gap-y-1.5 content-start min-h-[76px]">
+                      {examples.length > 0 ? (
+                        examples.map((ex, idx) => {
+                          const content = (
+                            <>
+                              <span
+                                lang="ja"
+                                className="font-japanese text-[15px] font-bold text-[var(--tb-text-primary)]"
+                              >
+                                {ex.word}
+                              </span>
+                              {ex.reading && (
+                                <span
+                                  lang="ja"
+                                  className="font-japanese text-xs font-medium text-[var(--tb-text-primary)]/90"
+                                >
+                                  （{ex.reading}）
+                                </span>
+                              )}
+                              <span className="text-xs sm:text-[13px] text-[var(--tb-text-secondary)] ml-1">
+                                {ex.meaning}
+                              </span>
+                            </>
+                          );
+
+                          if (ex.vocabItem && onSelectVocab) {
+                            return (
+                              <button
+                                key={`${ex.word}-${idx}`}
+                                type="button"
+                                onClick={() => onSelectVocab(ex.vocabItem!)}
+                                className={cn(
+                                  "tb-focus-ring inline-flex items-baseline text-left transition-colors cursor-pointer hover:underline",
+                                  ex.isCore
+                                    ? "bg-[#f6d7bf]/85 dark:bg-amber-500/20 text-stone-900 dark:text-amber-50 px-1.5 py-0.5 rounded-[3px]"
+                                    : "py-0.5"
+                                )}
+                              >
+                                {content}
+                              </button>
+                            );
+                          }
+
+                          return (
+                            <span
+                              key={`${ex.word}-${idx}`}
+                              className={cn(
+                                "inline-flex items-baseline",
+                                ex.isCore
+                                  ? "bg-[#f6d7bf]/85 dark:bg-amber-500/20 text-stone-900 dark:text-amber-50 px-1.5 py-0.5 rounded-[3px]"
+                                  : "py-0.5"
+                              )}
+                            >
+                              {content}
+                            </span>
+                          );
+                        })
+                      ) : (
+                        <span className="text-xs text-[var(--tb-text-secondary)]/70 italic self-center">
+                          {vocabCount > 0
+                            ? `${vocabCount} lesson ${vocabCount === 1 ? "word" : "words"} — click to inspect`
+                            : "Click row to inspect compound words & stroke order"}
+                        </span>
+                      )}
+                    </div>
+
+                    {/* Bottom sub-row: (strokes) + Progressive Cumulative Stroke Order Strip */}
+                    <div className="border-t border-stone-400/80 dark:border-stone-700 px-3.5 py-1.5 bg-[var(--tb-bg)]/30">
+                      <button
+                        type="button"
+                        onClick={() => onOpenStrokeOrder(k)}
+                        aria-label={`Stroke Order for ${k.kanji}`}
+                        className="tb-focus-ring w-full flex items-center justify-between gap-3 text-left group cursor-pointer"
+                      >
+                        <div className="flex items-center flex-wrap gap-1.5 sm:gap-2 min-w-0">
+                          <span className="text-xs sm:text-[13px] font-semibold text-[var(--tb-text-secondary)] tabular-nums shrink-0">
+                            ({strokeCount ?? "—"})
+                          </span>
+                          {strokeCount !== undefined && (
+                            <span className="sr-only">{strokeCount} 画</span>
+                          )}
+                          {strokePaths && strokePaths.length > 0 ? (
+                            <div
+                              className="flex items-center flex-wrap gap-1 sm:gap-1.5"
+                              aria-hidden="true"
+                            >
+                              {strokePaths.map((_, stepIdx) => (
+                                <svg
+                                  key={stepIdx}
+                                  viewBox="0 0 109 109"
+                                  className="size-6 sm:size-[26px] shrink-0 text-[var(--tb-text-primary)]"
+                                >
+                                  {strokePaths.slice(0, stepIdx + 1).map((d, pIdx) => (
+                                    <path
+                                      key={pIdx}
+                                      d={d}
+                                      fill="none"
+                                      stroke="currentColor"
+                                      strokeWidth={pIdx === stepIdx ? 9.5 : 8}
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      className={
+                                        pIdx === stepIdx
+                                          ? "opacity-100"
+                                          : "opacity-75"
+                                      }
+                                    />
+                                  ))}
+                                </svg>
+                              ))}
+                            </div>
+                          ) : (
+                            <span className="font-kanji text-base text-[var(--tb-text-secondary)] tracking-widest">
+                              {k.kanji}
+                            </span>
+                          )}
+                        </div>
+                        <span className="inline-flex items-center gap-1 rounded-lg px-2 py-0.5 text-[11px] font-bold text-[var(--primary-fg)] opacity-75 group-hover:opacity-100 group-hover:bg-[var(--tb-accent-soft)] transition-all shrink-0">
+                          <Pencil size={11} />
+                          <span className="hidden sm:inline">Stroke Order</span>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
                 </td>
               </tr>
             );

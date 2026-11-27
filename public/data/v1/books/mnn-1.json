@@ -12237,7 +12237,8 @@
           "readingKana": "[でした]。",
           "meaning": "That was delicious.(said after eating or drinking)",
           "type": "noun",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-1ee73a40b18d.opus"
         },
         {
           "id": "v-genki-l7-46",
@@ -13926,7 +13927,8 @@
           "readingKana": "[な]",
           "meaning": "beautiful, clean",
           "type": "noun",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-30decdf42745.opus"
         },
         {
           "id": "v-genki-l8-3",
@@ -13935,7 +13937,8 @@
           "readingKana": "[な]",
           "meaning": "quiet",
           "type": "noun",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-ef9afc92783f.opus"
         },
         {
           "id": "v-genki-l8-4",
@@ -18344,7 +18347,8 @@
           "readingKana": "[など]",
           "meaning": "～, ～, and so on",
           "type": "noun",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-c02a6f347e30.opus"
         },
         {
           "id": "v-genki-l10-42",
@@ -19948,7 +19952,8 @@
           "readingKana": "[ライス]",
           "meaning": "curry [with rice]",
           "type": "noun",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-e09b5dc0691a.opus"
         },
         {
           "id": "9452242b03",
@@ -21845,7 +21850,8 @@
           "readingKana": "[な]",
           "meaning": "easy, simple",
           "type": "noun",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-a80b8051b166.opus"
         },
         {
           "id": "a21ba677f2",
@@ -24332,7 +24338,8 @@
           "readingKana": "[な]",
           "meaning": "hard, tough, severe, awful",
           "type": "noun",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-d4baae197330.opus"
         },
         {
           "id": "418493d941",
@@ -32116,7 +32123,8 @@
           "readingKana": "[な]",
           "meaning": "all right",
           "type": "noun",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-569f2d21da61.opus"
         },
         {
           "id": "0509cb3b27",
@@ -32147,7 +32155,8 @@
           "readingKana": "[けんこう]",
           "meaning": "[health] insurance card",
           "type": "noun",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-7819e20801ff.opus"
         },
         {
           "id": "4fbc32438d",
@@ -39014,7 +39023,8 @@
           "readingKana": "[かいしゃを～]",
           "meaning": "give up",
           "type": "noun",
-          "hasAudio": false
+          "hasAudio": true,
+          "audioSrc": "/audio/books/vocab/v-137199542781.opus"
         },
         {
           "id": "v-genki-l21-10",
