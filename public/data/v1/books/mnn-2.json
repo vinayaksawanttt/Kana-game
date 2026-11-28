@@ -742,8 +742,8 @@
             },
             {
               "ja": "〜んですか",
-              "audioKey": "〜んですか",
-              "en": "〜んですか"
+              "en": "〜んですか",
+              "audioKey": "〜んですか"
             },
             {
               "ja": "渡辺さんは 時々 大阪弁を 使いますね。大阪に 住んで いたんですか。",
@@ -757,8 +757,8 @@
             },
             {
               "ja": "どうして 〜んですか",
-              "audioKey": "どうして 〜んですか",
-              "en": "Why is that?"
+              "en": "Why is that?",
+              "audioKey": "どうして 〜んですか"
             },
             {
               "ja": "〜んです",
@@ -777,8 +777,8 @@
             },
             {
               "ja": "どう したんですか",
-              "audioKey": "どう したんですか",
-              "en": "What's the matter?"
+              "en": "What's the matter?",
+              "audioKey": "どう したんですか"
             },
             {
               "ja": "どう したんですか。 ……頭が 痛いんです。",
@@ -2705,8 +2705,8 @@
             },
             {
               "ja": "書けます",
-              "audioKey": "書けます",
-              "en": "I can write"
+              "en": "I can write",
+              "audioKey": "書けます"
             },
             {
               "ja": "話します",
@@ -2715,13 +2715,13 @@
             },
             {
               "ja": "話せます",
-              "audioKey": "話せます",
-              "en": "I can speak"
+              "en": "I can speak",
+              "audioKey": "話せます"
             },
             {
               "ja": "られます",
-              "audioKey": "られます",
-              "en": "- られます"
+              "en": "- られます",
+              "audioKey": "られます"
             },
             {
               "ja": "食べます",
@@ -2730,8 +2730,8 @@
             },
             {
               "ja": "食べられます",
-              "audioKey": "食べられます",
-              "en": "You can eat it"
+              "en": "You can eat it",
+              "audioKey": "食べられます"
             },
             {
               "ja": "寝ます",
@@ -2740,8 +2740,8 @@
             },
             {
               "ja": "寝られます",
-              "audioKey": "寝られます",
-              "en": "I can sleep"
+              "en": "I can sleep",
+              "audioKey": "寝られます"
             },
             {
               "ja": "来ます",
@@ -2750,8 +2750,8 @@
             },
             {
               "ja": "来られます",
-              "audioKey": "来られます",
-              "en": "will be able to come"
+              "en": "will be able to come",
+              "audioKey": "来られます"
             },
             {
               "ja": "します",
@@ -2760,8 +2760,8 @@
             },
             {
               "ja": "できます",
-              "audioKey": "できます",
-              "en": "I can do it"
+              "en": "I can do it",
+              "audioKey": "できます"
             },
             {
               "ja": "わたしは 日本語が 少し 話せます。",
@@ -9447,103 +9447,103 @@
             },
             {
               "ja": "かいます",
-              "audioKey": "かいます",
-              "en": "I will buy it"
+              "en": "I will buy it",
+              "audioKey": "かいます"
             },
             {
               "ja": "かおう",
-              "audioKey": "かおう",
-              "en": "Let's try it"
+              "en": "Let's try it",
+              "audioKey": "かおう"
             },
             {
               "ja": "あるきます",
-              "audioKey": "あるきます",
-              "en": "I walk"
+              "en": "I walk",
+              "audioKey": "あるきます"
             },
             {
               "ja": "あるこう",
-              "audioKey": "あるこう",
-              "en": "Let's go for a walk"
+              "en": "Let's go for a walk",
+              "audioKey": "あるこう"
             },
             {
               "ja": "いそぎます",
-              "audioKey": "いそぎます",
-              "en": "I’ll hurry."
+              "en": "I’ll hurry.",
+              "audioKey": "いそぎます"
             },
             {
               "ja": "いそごう",
-              "audioKey": "いそごう",
-              "en": "Let's get going"
+              "en": "Let's get going",
+              "audioKey": "いそごう"
             },
             {
               "ja": "まちます",
-              "audioKey": "まちます",
-              "en": "I’ll wait"
+              "en": "I’ll wait",
+              "audioKey": "まちます"
             },
             {
               "ja": "まとう",
-              "audioKey": "まとう",
-              "en": "Wrap"
+              "en": "Wrap",
+              "audioKey": "まとう"
             },
             {
               "ja": "やすみます",
-              "audioKey": "やすみます",
-              "en": "I'm taking a break"
+              "en": "I'm taking a break",
+              "audioKey": "やすみます"
             },
             {
               "ja": "やすもう",
-              "audioKey": "やすもう",
-              "en": "Let's take it easy"
+              "en": "Let's take it easy",
+              "audioKey": "やすもう"
             },
             {
               "ja": "のります",
-              "audioKey": "のります",
-              "en": "I'll get on it."
+              "en": "I'll get on it.",
+              "audioKey": "のります"
             },
             {
               "ja": "のろう",
-              "audioKey": "のろう",
-              "en": "Curse"
+              "en": "Curse",
+              "audioKey": "のろう"
             },
             {
               "ja": "よう",
-              "audioKey": "よう",
-              "en": "Well"
+              "en": "Well",
+              "audioKey": "よう"
             },
             {
               "ja": "かえます",
-              "audioKey": "かえます",
-              "en": "I’ll change it."
+              "en": "I’ll change it.",
+              "audioKey": "かえます"
             },
             {
               "ja": "かえよう",
-              "audioKey": "かえよう",
-              "en": "Let's go home."
+              "en": "Let's go home.",
+              "audioKey": "かえよう"
             },
             {
               "ja": "みます",
-              "audioKey": "みます",
-              "en": "I’ll take a look"
+              "en": "I’ll take a look",
+              "audioKey": "みます"
             },
             {
               "ja": "みよう",
-              "audioKey": "みよう",
-              "en": "Let's see"
+              "en": "Let's see",
+              "audioKey": "みよう"
             },
             {
               "ja": "ねます",
-              "audioKey": "ねます",
-              "en": "I’ll go to sleep"
+              "en": "I’ll go to sleep",
+              "audioKey": "ねます"
             },
             {
               "ja": "ねよう",
-              "audioKey": "ねよう",
-              "en": "Let's go to bed."
+              "en": "Let's go to bed.",
+              "audioKey": "ねよう"
             },
             {
               "ja": "きます",
-              "audioKey": "きます",
-              "en": "will come"
+              "en": "will come",
+              "audioKey": "きます"
             },
             {
               "ja": "こよう",
@@ -9562,13 +9562,13 @@
             },
             {
               "ja": "きゅうけいします",
-              "audioKey": "きゅうけいします",
-              "en": "I’ll take a break."
+              "en": "I’ll take a break.",
+              "audioKey": "きゅうけいします"
             },
             {
               "ja": "きゅうけいしよう",
-              "audioKey": "きゅうけいしよう",
-              "en": "Let's take a break"
+              "en": "Let's take a break",
+              "audioKey": "きゅうけいしよう"
             },
             {
               "ja": "いっしょに 行こう。",
@@ -13161,8 +13161,8 @@
             },
             {
               "ja": "いいます",
-              "audioKey": "いいます",
-              "en": "says"
+              "en": "says",
+              "audioKey": "いいます"
             },
             {
               "ja": "いえ",
@@ -13176,13 +13176,13 @@
             },
             {
               "ja": "急げ",
-              "audioKey": "急げ",
-              "en": "Hurry up"
+              "en": "Hurry up",
+              "audioKey": "急げ"
             },
             {
               "ja": "やめます",
-              "audioKey": "やめます",
-              "en": "I'm quitting."
+              "en": "I'm quitting.",
+              "audioKey": "やめます"
             },
             {
               "ja": "やめろ",
@@ -13196,13 +13196,13 @@
             },
             {
               "ja": "止めろ",
-              "audioKey": "止めろ",
-              "en": "Stop it"
+              "en": "Stop it",
+              "audioKey": "止めろ"
             },
             {
               "ja": "きます",
-              "audioKey": "きます",
-              "en": "will come"
+              "en": "will come",
+              "audioKey": "きます"
             },
             {
               "ja": "こい",
@@ -16329,113 +16329,113 @@
             },
             {
               "ja": "あいます",
-              "audioKey": "あいます",
-              "en": "I’ll meet you"
+              "en": "I’ll meet you",
+              "audioKey": "あいます"
             },
             {
               "ja": "あえば",
-              "audioKey": "あえば",
-              "en": "If we meet"
+              "en": "If we meet",
+              "audioKey": "あえば"
             },
             {
               "ja": "ききます",
-              "audioKey": "ききます",
-              "en": "I’ll listen."
+              "en": "I’ll listen.",
+              "audioKey": "ききます"
             },
             {
               "ja": "きけば",
-              "audioKey": "きけば",
-              "en": "If I hear..."
+              "en": "If I hear...",
+              "audioKey": "きけば"
             },
             {
               "ja": "いそぎます",
-              "audioKey": "いそぎます",
-              "en": "I’ll hurry."
+              "en": "I’ll hurry.",
+              "audioKey": "いそぎます"
             },
             {
               "ja": "いそげば",
-              "audioKey": "いそげば",
-              "en": "If you hurry,"
+              "en": "If you hurry,",
+              "audioKey": "いそげば"
             },
             {
               "ja": "だします",
-              "audioKey": "だします",
-              "en": "I will do it"
+              "en": "I will do it",
+              "audioKey": "だします"
             },
             {
               "ja": "だせば",
-              "audioKey": "だせば",
-              "en": "If you submit it"
+              "en": "If you submit it",
+              "audioKey": "だせば"
             },
             {
               "ja": "まちます",
-              "audioKey": "まちます",
-              "en": "I’ll wait"
+              "en": "I’ll wait",
+              "audioKey": "まちます"
             },
             {
               "ja": "まてば",
-              "audioKey": "まてば",
-              "en": "If you wait"
+              "en": "If you wait",
+              "audioKey": "まてば"
             },
             {
               "ja": "よびます",
-              "audioKey": "よびます",
-              "en": "I will call"
+              "en": "I will call",
+              "audioKey": "よびます"
             },
             {
               "ja": "よべば",
-              "audioKey": "よべば",
-              "en": "If you call,"
+              "en": "If you call,",
+              "audioKey": "よべば"
             },
             {
               "ja": "のみます",
-              "audioKey": "のみます",
-              "en": "drink"
+              "en": "drink",
+              "audioKey": "のみます"
             },
             {
               "ja": "のめば",
-              "audioKey": "のめば",
-              "en": "If you drink it"
+              "en": "If you drink it",
+              "audioKey": "のめば"
             },
             {
               "ja": "ふります",
-              "audioKey": "ふります",
-              "en": "It rains"
+              "en": "It rains",
+              "audioKey": "ふります"
             },
             {
               "ja": "ふれば",
-              "audioKey": "ふれば",
-              "en": "If it rains"
+              "en": "If it rains",
+              "audioKey": "ふれば"
             },
             {
               "ja": "れば",
-              "audioKey": "れば",
-              "en": "\"reba\""
+              "en": "\"reba\"",
+              "audioKey": "れば"
             },
             {
               "ja": "はれます",
-              "audioKey": "はれます",
-              "en": "It will clear up"
+              "en": "It will clear up",
+              "audioKey": "はれます"
             },
             {
               "ja": "はれれば",
-              "audioKey": "はれれば",
-              "en": "If it clears up"
+              "en": "If it clears up",
+              "audioKey": "はれれば"
             },
             {
               "ja": "みます",
-              "audioKey": "みます",
-              "en": "I’ll take a look"
+              "en": "I’ll take a look",
+              "audioKey": "みます"
             },
             {
               "ja": "みれば",
-              "audioKey": "みれば",
-              "en": "If you look at it"
+              "en": "If you look at it",
+              "audioKey": "みれば"
             },
             {
               "ja": "きます",
-              "audioKey": "きます",
-              "en": "will come"
+              "en": "will come",
+              "audioKey": "きます"
             },
             {
               "ja": "くれば",
@@ -16464,23 +16464,23 @@
             },
             {
               "ja": "～なければ",
-              "audioKey": "～なければ",
-              "en": "～なければ"
+              "en": "～なければ",
+              "audioKey": "～なければ"
             },
             {
               "ja": "おきない",
-              "audioKey": "おきない",
-              "en": "Doesn't happen"
+              "en": "Doesn't happen",
+              "audioKey": "おきない"
             },
             {
               "ja": "おきなければ",
-              "audioKey": "おきなければ",
-              "en": "If it doesn't happen"
+              "en": "If it doesn't happen",
+              "audioKey": "おきなければ"
             },
             {
               "ja": "なければ",
-              "audioKey": "なければ",
-              "en": "なければ"
+              "en": "なければ",
+              "audioKey": "なければ"
             },
             {
               "ja": "たかい",
@@ -16489,8 +16489,8 @@
             },
             {
               "ja": "たかければ",
-              "audioKey": "たかければ",
-              "en": "If it is high,"
+              "en": "If it is high,",
+              "audioKey": "たかければ"
             },
             {
               "ja": "いい",
@@ -16499,8 +16499,8 @@
             },
             {
               "ja": "よければ",
-              "audioKey": "よければ",
-              "en": "If you’d like"
+              "en": "If you’d like",
+              "audioKey": "よければ"
             },
             {
               "ja": "なら",
@@ -16509,23 +16509,23 @@
             },
             {
               "ja": "きれいなら",
-              "audioKey": "きれいなら",
-              "en": "If it’s pretty,"
+              "en": "If it’s pretty,",
+              "audioKey": "きれいなら"
             },
             {
               "ja": "まじめなら",
-              "audioKey": "まじめなら",
-              "en": "If you’re serious,"
+              "en": "If you’re serious,",
+              "audioKey": "まじめなら"
             },
             {
               "ja": "あめなら",
-              "audioKey": "あめなら",
-              "en": "If it rains"
+              "en": "If it rains",
+              "audioKey": "あめなら"
             },
             {
               "ja": "むりょうなら",
-              "audioKey": "むりょうなら",
-              "en": "If it's free,"
+              "en": "If it's free,",
+              "audioKey": "むりょうなら"
             },
             {
               "ja": "春に なれば、桜が 咲きます。",
@@ -20170,73 +20170,73 @@
             },
             {
               "ja": "れます",
-              "audioKey": "れます",
-              "en": "-れます"
+              "en": "-れます",
+              "audioKey": "れます"
             },
             {
               "ja": "いいます",
-              "audioKey": "いいます",
-              "en": "says"
+              "en": "says",
+              "audioKey": "いいます"
             },
             {
               "ja": "いわれます",
-              "audioKey": "いわれます",
-              "en": "It is said that"
+              "en": "It is said that",
+              "audioKey": "いわれます"
             },
             {
               "ja": "かきます",
-              "audioKey": "かきます",
-              "en": "I will write"
+              "en": "I will write",
+              "audioKey": "かきます"
             },
             {
               "ja": "かかれます",
-              "audioKey": "かかれます",
-              "en": "can be done"
+              "en": "can be done",
+              "audioKey": "かかれます"
             },
             {
               "ja": "ふみます",
-              "audioKey": "ふみます",
-              "en": "Fumisu"
+              "en": "Fumisu",
+              "audioKey": "ふみます"
             },
             {
               "ja": "ふまれます",
-              "audioKey": "ふまれます",
-              "en": "is assumed"
+              "en": "is assumed",
+              "audioKey": "ふまれます"
             },
             {
               "ja": "られます",
-              "audioKey": "られます",
-              "en": "- られます"
+              "en": "- られます",
+              "audioKey": "られます"
             },
             {
               "ja": "ほめます",
-              "audioKey": "ほめます",
-              "en": "I praise"
+              "en": "I praise",
+              "audioKey": "ほめます"
             },
             {
               "ja": "ほめられます",
-              "audioKey": "ほめられます",
-              "en": "I get praised"
+              "en": "I get praised",
+              "audioKey": "ほめられます"
             },
             {
               "ja": "みます",
-              "audioKey": "みます",
-              "en": "I’ll take a look"
+              "en": "I’ll take a look",
+              "audioKey": "みます"
             },
             {
               "ja": "みられます",
-              "audioKey": "みられます",
-              "en": "can be seen"
+              "en": "can be seen",
+              "audioKey": "みられます"
             },
             {
               "ja": "きます",
-              "audioKey": "きます",
-              "en": "will come"
+              "en": "will come",
+              "audioKey": "きます"
             },
             {
               "ja": "こられます",
-              "audioKey": "こられます",
-              "en": "will come"
+              "en": "will come",
+              "audioKey": "こられます"
             },
             {
               "ja": "します",
@@ -20245,8 +20245,8 @@
             },
             {
               "ja": "されます",
-              "audioKey": "されます",
-              "en": "...will be done"
+              "en": "...will be done",
+              "audioKey": "されます"
             },
             {
               "ja": "法隆寺は607年に建てられました。",
@@ -27642,8 +27642,8 @@
             },
             {
               "ja": "もらいます",
-              "audioKey": "もらいます",
-              "en": "I will receive it"
+              "en": "I will receive it",
+              "audioKey": "もらいます"
             },
             {
               "ja": "くださいます",
@@ -27657,13 +27657,13 @@
             },
             {
               "ja": "やります",
-              "audioKey": "やります",
-              "en": "I'll do it."
+              "en": "I'll do it.",
+              "audioKey": "やります"
             },
             {
               "ja": "あげます",
-              "audioKey": "あげます",
-              "en": "I’ll give it to you"
+              "en": "I’ll give it to you",
+              "audioKey": "あげます"
             },
             {
               "ja": "わたしは ワット先生に 本を いただきました。",
@@ -27705,8 +27705,8 @@
             },
             {
               "ja": "やります",
-              "audioKey": "やります",
-              "en": "I'll do it."
+              "en": "I'll do it.",
+              "audioKey": "やります"
             },
             {
               "ja": "わたしは 先生に 漢字の まちがいを 直して いただきました。",
@@ -27738,13 +27738,13 @@
           "examples": [
             {
               "ja": "Vて くださいませんか",
-              "audioKey": "Vて くださいませんか",
-              "en": "Would you please [verb]?"
+              "en": "Would you please [verb]?",
+              "audioKey": "Vて くださいませんか"
             },
             {
               "ja": "Vて ください",
-              "audioKey": "Vて ください",
-              "en": "Please use the \"-te\" form"
+              "en": "Please use the \"-te\" form",
+              "audioKey": "Vて ください"
             },
             {
               "ja": "新しい コピー機の 使い方が よく わからないんですが、ちょっと 教えて くださいませんか。",
@@ -27766,8 +27766,8 @@
           "examples": [
             {
               "ja": "結婚の お祝いに",
-              "audioKey": "結婚の お祝いに",
-              "en": "As a wedding gift"
+              "en": "As a wedding gift",
+              "audioKey": "結婚の お祝いに"
             },
             {
               "ja": "結婚の お祝いに 田中さんが くださいました。",
@@ -37954,33 +37954,33 @@
           "examples": [
             {
               "ja": "〜そう",
-              "audioKey": "〜そう",
-              "en": "〜-sō"
+              "en": "〜-sō",
+              "audioKey": "〜そう"
             },
             {
               "ja": "いい → よさそう",
-              "audioKey": "いい → よさそう",
-              "en": "Good → Sounds good"
+              "en": "Good → Sounds good",
+              "audioKey": "いい → よさそう"
             },
             {
               "ja": "ない → なさそう",
-              "audioKey": "ない → なさそう",
-              "en": "ない → doesn't seem to be"
+              "en": "ない → doesn't seem to be",
+              "audioKey": "ない → なさそう"
             },
             {
               "ja": "いい → いいそう",
-              "audioKey": "いい → いいそう",
-              "en": "ii → ii-sou"
+              "en": "ii → ii-sou",
+              "audioKey": "いい → いいそう"
             },
             {
               "ja": "ない → ないそう",
-              "audioKey": "ない → ないそう",
-              "en": "ない → ないそう"
+              "en": "ない → ないそう",
+              "audioKey": "ない → ないそう"
             },
             {
               "ja": "N/na-adj + だそう",
-              "audioKey": "N/na-adj + だそう",
-              "en": "N/na-adjective + だそう"
+              "en": "N/na-adjective + だそう",
+              "audioKey": "N/na-adj + だそう"
             },
             {
               "ja": "カタログで見ると、新しい掃除機はよさそうですが、使った人の話によると、あまり便利じゃないそうです。",
@@ -39106,53 +39106,53 @@
             },
             {
               "ja": "せます",
-              "audioKey": "せます",
-              "en": "-semasu"
+              "en": "-semasu",
+              "audioKey": "せます"
             },
             {
               "ja": "てつだいます",
-              "audioKey": "てつだいます",
-              "en": "I’ll help you."
+              "en": "I’ll help you.",
+              "audioKey": "てつだいます"
             },
             {
               "ja": "てつだわせます",
-              "audioKey": "てつだわせます",
-              "en": "I’ll help you."
+              "en": "I’ll help you.",
+              "audioKey": "てつだわせます"
             },
             {
               "ja": "かきます",
-              "audioKey": "かきます",
-              "en": "I will write"
+              "en": "I will write",
+              "audioKey": "かきます"
             },
             {
               "ja": "かかせます",
-              "audioKey": "かかせます",
-              "en": "I’ll skip it"
+              "en": "I’ll skip it",
+              "audioKey": "かかせます"
             },
             {
               "ja": "いそぎます",
-              "audioKey": "いそぎます",
-              "en": "I’ll hurry."
+              "en": "I’ll hurry.",
+              "audioKey": "いそぎます"
             },
             {
               "ja": "いそがせます",
-              "audioKey": "いそがせます",
-              "en": "I’ll keep you busy."
+              "en": "I’ll keep you busy.",
+              "audioKey": "いそがせます"
             },
             {
               "ja": "させます",
-              "audioKey": "させます",
-              "en": "I will make them do it"
+              "en": "I will make them do it",
+              "audioKey": "させます"
             },
             {
               "ja": "たべます",
-              "audioKey": "たべます",
-              "en": "I will eat"
+              "en": "I will eat",
+              "audioKey": "たべます"
             },
             {
               "ja": "たべさせます",
-              "audioKey": "たべさせます",
-              "en": "I’ll feed them"
+              "en": "I’ll feed them",
+              "audioKey": "たべさせます"
             },
             {
               "ja": "います",
@@ -39161,18 +39161,18 @@
             },
             {
               "ja": "いさせます",
-              "audioKey": "いさせます",
-              "en": "I will have them do it"
+              "en": "I will have them do it",
+              "audioKey": "いさせます"
             },
             {
               "ja": "きます",
-              "audioKey": "きます",
-              "en": "will come"
+              "en": "will come",
+              "audioKey": "きます"
             },
             {
               "ja": "こさせます",
-              "audioKey": "こさせます",
-              "en": "I’ll make them do it"
+              "en": "I’ll make them do it",
+              "audioKey": "こさせます"
             },
             {
               "ja": "します",
@@ -40669,8 +40669,8 @@
           "examples": [
             {
               "ja": "いきます / きます / います",
-              "audioKey": "いきます / きます / います",
-              "en": "Ikimasu / Kimasu / Imasu"
+              "en": "Ikimasu / Kimasu / Imasu",
+              "audioKey": "いきます / きます / います"
             },
             {
               "ja": "いらっしゃいます",
@@ -40679,18 +40679,18 @@
             },
             {
               "ja": "たべます / のみます",
-              "audioKey": "たべます / のみます",
-              "en": "eat / drink"
+              "en": "eat / drink",
+              "audioKey": "たべます / のみます"
             },
             {
               "ja": "めしあがります",
-              "audioKey": "めしあがります",
-              "en": "I’ll enjoy my meal."
+              "en": "I’ll enjoy my meal.",
+              "audioKey": "めしあがります"
             },
             {
               "ja": "いいます",
-              "audioKey": "いいます",
-              "en": "says"
+              "en": "says",
+              "audioKey": "いいます"
             },
             {
               "ja": "おっしゃいます",
@@ -40699,23 +40699,23 @@
             },
             {
               "ja": "しっています",
-              "audioKey": "しっています",
-              "en": "I know"
+              "en": "I know",
+              "audioKey": "しっています"
             },
             {
               "ja": "ごぞんじです",
-              "audioKey": "ごぞんじです",
-              "en": "As you know"
+              "en": "As you know",
+              "audioKey": "ごぞんじです"
             },
             {
               "ja": "みます",
-              "audioKey": "みます",
-              "en": "I’ll take a look"
+              "en": "I’ll take a look",
+              "audioKey": "みます"
             },
             {
               "ja": "ごらんになります",
-              "audioKey": "ごらんになります",
-              "en": "Please take a look"
+              "en": "Please take a look",
+              "audioKey": "ごらんになります"
             },
             {
               "ja": "します",
@@ -42300,28 +42300,28 @@
           "examples": [
             {
               "ja": "お + Vます-stem + します",
-              "audioKey": "お + Vます-stem + します",
-              "en": "o + V-masu-stem + shimasu"
+              "en": "o + V-masu-stem + shimasu",
+              "audioKey": "お + Vます-stem + します"
             },
             {
               "ja": "Nします",
-              "audioKey": "Nします",
-              "en": "I will do N"
+              "en": "I will do N",
+              "audioKey": "Nします"
             },
             {
               "ja": "ご + N + します",
-              "audioKey": "ご + N + します",
-              "en": "go + N + shimasu"
+              "en": "go + N + shimasu",
+              "audioKey": "ご + N + します"
             },
             {
               "ja": "～ましょうか",
-              "audioKey": "～ましょうか",
-              "en": "Shall we...?"
+              "en": "Shall we...?",
+              "audioKey": "～ましょうか"
             },
             {
               "ja": "お持ちしましょうか",
-              "audioKey": "お持ちしましょうか",
-              "en": "Would you like me to carry it for you?"
+              "en": "Would you like me to carry it for you?",
+              "audioKey": "お持ちしましょうか"
             },
             {
               "ja": "重そうですね。お持ちしましょうか。",
@@ -42365,8 +42365,8 @@
             },
             {
               "ja": "いきます / きます",
-              "audioKey": "いきます / きます",
-              "en": "Ikimasu / Kimasu"
+              "en": "Ikimasu / Kimasu",
+              "audioKey": "いきます / きます"
             },
             {
               "ja": "まいります",
@@ -42385,8 +42385,8 @@
             },
             {
               "ja": "たべます / のみます / もらいます",
-              "audioKey": "たべます / のみます / もらいます",
-              "en": "eat / drink / receive"
+              "en": "eat / drink / receive",
+              "audioKey": "たべます / のみます / もらいます"
             },
             {
               "ja": "いただきます",
@@ -42395,13 +42395,13 @@
             },
             {
               "ja": "いいます",
-              "audioKey": "いいます",
-              "en": "says"
+              "en": "says",
+              "audioKey": "いいます"
             },
             {
               "ja": "もうします",
-              "audioKey": "もうします",
-              "en": "I’ll do it"
+              "en": "I’ll do it",
+              "audioKey": "もうします"
             },
             {
               "ja": "します",
@@ -42415,53 +42415,53 @@
             },
             {
               "ja": "しっています",
-              "audioKey": "しっています",
-              "en": "I know"
+              "en": "I know",
+              "audioKey": "しっています"
             },
             {
               "ja": "ぞんじております",
-              "audioKey": "ぞんじております",
-              "en": "We are maintaining"
+              "en": "We are maintaining",
+              "audioKey": "ぞんじております"
             },
             {
               "ja": "しりません",
-              "audioKey": "しりません",
-              "en": "I don't know."
+              "en": "I don't know.",
+              "audioKey": "しりません"
             },
             {
               "ja": "ぞんじません",
-              "audioKey": "ぞんじません",
-              "en": "I don't know."
+              "en": "I don't know.",
+              "audioKey": "ぞんじません"
             },
             {
               "ja": "みます",
-              "audioKey": "みます",
-              "en": "I’ll take a look"
+              "en": "I’ll take a look",
+              "audioKey": "みます"
             },
             {
               "ja": "はいけんします",
-              "audioKey": "はいけんします",
-              "en": "I’ll take the exam."
+              "en": "I’ll take the exam.",
+              "audioKey": "はいけんします"
             },
             {
               "ja": "ききます / (うちへ) いきます",
-              "audioKey": "ききます / (うちへ) いきます",
-              "en": "I’ll ask / I’m going (home)"
+              "en": "I’ll ask / I’m going (home)",
+              "audioKey": "ききます / (うちへ) いきます"
             },
             {
               "ja": "うかがいます",
-              "audioKey": "うかがいます",
-              "en": "I’ll ask"
+              "en": "I’ll ask",
+              "audioKey": "うかがいます"
             },
             {
               "ja": "あいます",
-              "audioKey": "あいます",
-              "en": "I’ll meet you"
+              "en": "I’ll meet you",
+              "audioKey": "あいます"
             },
             {
               "ja": "おめにかかります",
-              "audioKey": "おめにかかります",
-              "en": "It’s a pleasure to meet you."
+              "en": "It’s a pleasure to meet you.",
+              "audioKey": "おめにかかります"
             },
             {
               "ja": "あした3時に伺います。",
@@ -42499,23 +42499,23 @@
           "examples": [
             {
               "ja": "Vて + おります",
-              "audioKey": "Vて + おります",
-              "en": "V-te + orimasu"
+              "en": "V-te + orimasu",
+              "audioKey": "Vて + おります"
             },
             {
               "ja": "Vて + います",
-              "audioKey": "Vて + います",
-              "en": "V-te + imasu"
+              "en": "V-te + imasu",
+              "audioKey": "Vて + います"
             },
             {
               "ja": "Vて + いただきます",
-              "audioKey": "Vて + いただきます",
-              "en": "V-te + itadakimasu"
+              "en": "V-te + itadakimasu",
+              "audioKey": "Vて + いただきます"
             },
             {
               "ja": "Vて + もらいます",
-              "audioKey": "Vて + もらいます",
-              "en": "V-te + morau"
+              "en": "V-te + morau",
+              "audioKey": "Vて + もらいます"
             },
             {
               "ja": "IMCに勤めております。",
@@ -42542,18 +42542,18 @@
           "examples": [
             {
               "ja": "～いたします",
-              "audioKey": "～いたします",
-              "en": "～いたします"
+              "en": "～いたします",
+              "audioKey": "～いたします"
             },
             {
               "ja": "感謝",
-              "audioKey": "感謝",
-              "en": "Thanks"
+              "en": "Thanks",
+              "audioKey": "感謝"
             },
             {
               "ja": "緊張",
-              "audioKey": "緊張",
-              "en": "Nervousness"
+              "en": "Nervousness",
+              "audioKey": "緊張"
             },
             {
               "ja": "留学",

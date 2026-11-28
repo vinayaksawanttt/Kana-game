@@ -348,10 +348,53 @@ export const MNN_DIALOGUE_BACKGROUND_IDS: Record<string, string> = {
   "mnn-l50-scene-iv": "71-speech-contest-auditorium",
 };
 
+export const MNN3_DIALOGUE_BACKGROUND_IDS: Record<string, string> = {
+  "mnn3-l1-scene-i": "72-civic-hall-lobby",
+  "mnn3-l1-scene-ii": "72-civic-hall-lobby",
+  "mnn3-l1-scene-iii": "25-neighborhood-cafe",
+
+  "mnn3-l2-scene-i": "apartment-hallway-genkan",
+  "mnn3-l2-scene-ii": "apartment-hallway-genkan",
+
+  "mnn3-l3-scene-i": "73-commuter-station-platform",
+  "mnn3-l3-scene-ii": "29-professor-office",
+  "mnn3-l3-scene-iii": "73-commuter-station-platform",
+
+  "mnn3-l4-scene-i": "imc-office-day",
+  "mnn3-l4-scene-ii": "imc-office-day",
+  "mnn3-l4-scene-iii": "imc-office-day",
+
+  "mnn3-l5-scene-i": "74-brazil-air-office",
+  "mnn3-l5-scene-ii": "74-brazil-air-office",
+  "mnn3-l5-scene-iii": "07-downtown-street",
+
+  "mnn3-l6-scene-i": "imc-office-day",
+  "mnn3-l6-scene-ii": "office-breakroom-lounge",
+
+  "mnn3-l7-scene-i": "25-neighborhood-cafe",
+  "mnn3-l7-scene-ii": "25-neighborhood-cafe",
+
+  "mnn3-l8-scene-i": "75-supermarket-service-counter",
+  "mnn3-l8-scene-ii": "75-supermarket-service-counter",
+
+  "mnn3-l9-scene-i": "35-electronics-store",
+  "mnn3-l9-scene-ii": "35-electronics-store",
+
+  "mnn3-l10-scene-i": "76-apartment-stairs-entrance",
+  "mnn3-l10-scene-ii": "office-breakroom-lounge",
+
+  "mnn3-l11-scene-i": "yamada-living-room-day",
+  "mnn3-l11-scene-ii": "yamada-living-room-day",
+
+  "mnn3-l12-scene-i": "77-apartment-corridor-night",
+  "mnn3-l12-scene-ii": "77-apartment-corridor-night",
+};
+
 export const ALL_DIALOGUE_BACKGROUNDS = Array.from(
   new Set([
     ...Object.values(GENKI_DIALOGUE_BACKGROUND_IDS),
     ...Object.values(MNN_DIALOGUE_BACKGROUND_IDS),
+    ...Object.values(MNN3_DIALOGUE_BACKGROUND_IDS),
   ])
 );
 
@@ -368,7 +411,14 @@ export function getDialogueBackground(sceneId: string, bookId?: string): string 
     return `${BG_BASE}/${normalized}.webp`;
   }
 
-  // 2. Explicit MNN lookup if bookId is mnn-1 / mnn-2 or id starts with mnn-
+  // 2. Explicit MNN III lookup
+  if (bookId === "mnn-3" || normalized.startsWith("mnn3-")) {
+    const mnn3Key = normalized.startsWith("mnn3-") ? normalized : `mnn3-${normalized}`;
+    const mnn3Bg = MNN3_DIALOGUE_BACKGROUND_IDS[mnn3Key] || MNN3_DIALOGUE_BACKGROUND_IDS[normalized];
+    if (mnn3Bg) return `${BG_BASE}/${mnn3Bg}.webp`;
+  }
+
+  // 3. Explicit MNN I / II lookup if bookId is mnn-1 / mnn-2 or id starts with mnn-
   if (bookId === "mnn-1" || bookId === "mnn-2" || normalized.startsWith("mnn-")) {
     const mnnKey = normalized.startsWith("mnn-") ? normalized : `mnn-${normalized}`;
     const mnnBg = MNN_DIALOGUE_BACKGROUND_IDS[mnnKey] || MNN_DIALOGUE_BACKGROUND_IDS[normalized];

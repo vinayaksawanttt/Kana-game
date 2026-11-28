@@ -10,6 +10,10 @@ import type {
   BookLesson,
   BookPracticeItem,
   BookPracticeSection,
+  BookReadingParagraph,
+  BookReadingQuestion,
+  BookReadingSection,
+  BookReadingVocabCheckItem,
   BookVocabItem,
 } from "../src/data/books";
 
@@ -1104,6 +1108,100 @@ async function main() {
   const mnn2Dialogues = parseDialoguesFile(path.join(BOOKS_MDX_DIR, "mnn2-dialogues.mdx"));
   const mnn2Practice = parsePracticeFile(path.join(BOOKS_MDX_DIR, "mnn2-charts-practice.mdx"));
 
+  // Minna no Nihongo III (Lessons 1–12)
+  function parseReadingFile(filePath: string): Map<number, BookReadingSection> {
+    const map = new Map<number, BookReadingSection>();
+    if (!fs.existsSync(filePath)) return map;
+    const content = fs.readFileSync(filePath, "utf8");
+    const lessonSections = content.split(/^## Lesson\s+(\d+):\s*([^\n]*)/m);
+
+    for (let i = 1; i < lessonSections.length; i += 3) {
+      const lessonNum = parseInt(lessonSections[i], 10);
+      const rawTitle = (lessonSections[i + 1] || "").trim();
+      const body = lessonSections[i + 2] || "";
+
+      const titleReading = body.match(/^\*TitleReading:\*\s*(.+)$/m)?.[1]?.trim();
+      const sourceCredit = body.match(/^\*Source:\*\s*(.+)$/m)?.[1]?.trim();
+
+      const extractSection = (headingPrefix: string) => {
+        const re = new RegExp(`^### ${headingPrefix}[^\\n]*\\n([\\s\\S]*?)(?=\\n### |\\n## |$(?![\\s\\S]))`, "m");
+        return body.match(re)?.[1] || "";
+      };
+
+      const parseBulletLines = (sec: string) =>
+        sec
+          .split("\n")
+          .map((l) => l.trim())
+          .filter((l) => l.startsWith("- "))
+          .map((l) => l.replace(/^-\s+(?:\d+\.\s*)?/, "").trim());
+
+      const readingPoints = parseBulletLines(extractSection("Reading Points"));
+      const warmupQuestions = parseBulletLines(extractSection("Warmup"));
+      const challengePrompts = parseBulletLines(extractSection("Challenge"));
+
+      const vocabSec = extractSection("Vocabulary Check");
+      const bankRaw = vocabSec.match(/^\*WordBank:\*\s*(.+)$/m)?.[1]?.trim() || "";
+      const vocabWordBank = bankRaw ? bankRaw.split("|").map((s) => s.trim()).filter(Boolean) : [];
+      const vocabChecks: BookReadingVocabCheckItem[] = [];
+      const vocabRegex = /^-\s*(\d+)\.\s*(.+?)\s*=>\s*(.+)$/gm;
+      let vm: RegExpExecArray | null;
+      while ((vm = vocabRegex.exec(vocabSec)) !== null) {
+        vocabChecks.push({
+          id: `mnn3-l${lessonNum}-rvocab-${vm[1]}`,
+          prompt: vm[2].trim(),
+          answer: vm[3].trim(),
+        });
+      }
+
+      const passageSec = extractSection("Reading Passage");
+      const paragraphs: BookReadingParagraph[] = [];
+      const jaMatches = Array.from(passageSec.matchAll(/^-\s*\*\*Para\s+(\d+)\s+JA:\*\*\s*(.+)$/gm));
+      const enMap = new Map<string, string>();
+      for (const em of passageSec.matchAll(/^-\s*\*\*Para\s+(\d+)\s+EN:\*\*\s*(.+)$/gm)) {
+        enMap.set(em[1], em[2].trim());
+      }
+      for (const jm of jaMatches) {
+        paragraphs.push({
+          ja: jm[2].trim(),
+          en: enMap.get(jm[1]),
+        });
+      }
+
+      const compSec = extractSection("Comprehension");
+      const comprehensionQuestions: BookReadingQuestion[] = [];
+      const compRegex = /^-\s*\[(true-false|mcq|open)\]\s*(\d+)\.\s*(.+?)\s*=>\s*(.+)$/gm;
+      let cm: RegExpExecArray | null;
+      while ((cm = compRegex.exec(compSec)) !== null) {
+        comprehensionQuestions.push({
+          id: `mnn3-l${lessonNum}-rq-${cm[2]}`,
+          type: cm[1] as BookReadingQuestion["type"],
+          prompt: cm[3].trim(),
+          answer: cm[4].trim(),
+        });
+      }
+
+      map.set(lessonNum, {
+        title: rawTitle,
+        titleReading,
+        readingPoints,
+        warmupQuestions,
+        vocabWordBank,
+        vocabChecks,
+        paragraphs,
+        sourceCredit,
+        comprehensionQuestions,
+        challengePrompts: challengePrompts.length > 0 ? challengePrompts : undefined,
+      });
+    }
+    return map;
+  }
+
+  const mnn3Vocab = parseVocabFile(path.join(BOOKS_MDX_DIR, "mnn3-vocabulary.mdx"));
+  const mnn3Grammar = parseGrammarFile(path.join(BOOKS_MDX_DIR, "mnn3-grammar.mdx"));
+  const mnn3Dialogues = parseDialoguesFile(path.join(BOOKS_MDX_DIR, "mnn3-dialogues.mdx"));
+  const mnn3Practice = parsePracticeFile(path.join(BOOKS_MDX_DIR, "mnn3-charts-practice.mdx"));
+  const mnn3Reading = parseReadingFile(path.join(BOOKS_MDX_DIR, "mnn3-reading.mdx"));
+
   // Parse authentic 文型・例文 file and prepend as Core Patterns & Examples card per lesson
   function attachBunkeiFile(
     bunkeiFilePath: string,
@@ -1250,6 +1348,40 @@ async function main() {
     }
   }
 
+  const mnn3KanjiMap = new Map<number, BookKanjiItem[]>();
+  const seenMnn3Kanji = new Set<string>();
+  for (let l = 1; l <= 12; l++) {
+    const lessonVocab = mnn3Vocab.get(l) || [];
+    const lessonKanji: BookKanjiItem[] = [];
+    for (const v of lessonVocab) {
+      const chars = v.word.match(/[\u4E00-\u9FAF]/g) || [];
+      for (const ch of chars) {
+        if (seenMnn3Kanji.has(ch)) continue;
+        const baseK = knownKanjiByChar.get(ch);
+        const dictEntry = dictKanji[ch];
+        if (!baseK && !dictEntry) continue;
+        seenMnn3Kanji.add(ch);
+        lessonKanji.push({
+          id: `k-mnn3-${String(mnnKanjiCounter).padStart(3, "0")}`,
+          number: mnnKanjiCounter++,
+          kanji: ch,
+          onyomi: baseK?.onyomi || [],
+          kunyomi: baseK?.kunyomi || [],
+          meaning: baseK?.meaning || dictEntry?.label || v.meaning,
+          strokes: baseK?.strokes || dictEntry?.strokes,
+          jlpt: baseK?.jlpt || dictEntry?.jlpt || 3,
+          label: baseK?.label || dictEntry?.label || v.meaning,
+          linkedKanjiId: ch,
+        });
+        if (lessonKanji.length >= 12) break;
+      }
+      if (lessonKanji.length >= 12) break;
+    }
+    if (lessonKanji.length > 0) {
+      mnn3KanjiMap.set(l, lessonKanji);
+    }
+  }
+
   const MNN_LESSON_METAS: Record<number, { title: string; japaneseTitle: string; subtitle: string }> = {
     1: { title: "Nice to Meet You (Self-Introductions)", japaneseTitle: "第1課 初めまして", subtitle: "N1はN2です · N1はN2じゃありません · N1はN2ですか · N1もN2です" },
     2: { title: "Thank You in Advance (Things & Ownership)", japaneseTitle: "第2課 これから お世話に なります", subtitle: "これは辞書です · それはわたしの傘です · この本はわたしのです" },
@@ -1304,12 +1436,27 @@ async function main() {
     50: { title: "I Am Truly Grateful from the Bottom of My Heart (Humble Expressions 謙譲語)", japaneseTitle: "第50課 心から 感謝いたします", subtitle: "今月のスケジュールをお送りします · あした3時に伺います · 私はアメリカから参りました · 復習L · 総復習" },
   };
 
+  const MNN3_LESSON_METAS: Record<number, { title: string; japaneseTitle: string; subtitle: string }> = {
+    1: { title: "I Have a Favor to Ask (Requests & Impressions)", japaneseTitle: "第1課 お願いがあるんですが", subtitle: "〜てもらえませんか・〜ていただけませんか · 〜のようだ · 〜ことは／が／を · 〜を〜と言う · 〜という〜 · いつ／どこ／何／だれ／どんなに〜ても" },
+    2: { title: "What Does That Mean? (Conditionals, Hearsay & Clarification)", japaneseTitle: "第2課 何のことですか", subtitle: "〜たら、〜た · 〜というのは〜のことだ · …という〜 · …ように言う／注意する／伝える／頼む · 〜みたいだ" },
+    3: { title: "It Looks Like I'll Be Late (Permission, Decisions & Appearances)", japaneseTitle: "第3課 遅れそうなんです", subtitle: "〜（さ）せてもらえませんか · …ことにする／している · …ことになる／なっている · 〜てほしい · 〜そうな／なさそう／そうもない" },
+    4: { title: "Could You Take a Message? (Phone Messages & Causative-Passive)", japaneseTitle: "第4課 伝言、お願いできますか", subtitle: "…ということだ · …の／…の？ · 〜ちゃう・〜とく・〜てる · 〜（さ）せられる・〜される · 〜である · 〜（た）がる" },
+    5: { title: "How Should I Get There? (Directions, Timing & Conjecture)", japaneseTitle: "第5課 どう行ったらいいでしょうか", subtitle: "あ〜・そ〜 · …んじゃない？ · 〜たところに／で · 〜（よ）うとする · …のだろうか · 〜との／での／からの〜 · …だろう" },
+    6: { title: "I'd Like Permission to Go (Negotiation & Tendencies)", japaneseTitle: "第6課 行かせていただきたいんですが", subtitle: "…て…／…って… · 〜つもりはない／つもりだった · 〜てばかりいる · …とか… · 〜てくる · 〜てくる・〜ていく" },
+    7: { title: "I'm Looking Forward to It / I'll Pass (Obligations & Causative)", japaneseTitle: "第7課 楽しみにしてます・遠慮させてください", subtitle: "〜なくてはならない／いけない · 〜なくちゃ／〜なきゃ · …だけだ · …かな · 〜なんか／〜なんて · 〜（さ）せる／〜（さ）せられる · …なら" },
+    8: { title: "I Got Lost! (Time Spans, Causes & Unchanged States)", japaneseTitle: "第8課 迷子になっちゃったんです", subtitle: "〜あいだ／あいだに · 〜まで／までに · 〜た〜 · 〜によって… · 〜まま、… · …からだ" },
+    9: { title: "What's the Difference? (Comparisons, Degree & Purpose)", japaneseTitle: "第9課 どこが違うんですか", subtitle: "お〜ます です · 〜てもかまわない · …ほど〜ない · 〜ほど〜はない · …ため［に］ · 〜たら／〜ば、…た" },
+    10: { title: "That Can't Be True! (Expectation, Results & Compound Verbs)", japaneseTitle: "第10課 そんなはずはありません", subtitle: "…はずだ／はずがない／はずだった · …ことが／もある · 〜た結果 · 〜出す／始める・終わる・続ける／忘れる・合う・換える" },
+    11: { title: "Do You Have Any Recommendations? (Suggestions, Conjecture & Negatives)", japaneseTitle: "第11課 お勧めのところ、ありませんか", subtitle: "〜てくる・〜ていく · 〜たら［どう］？ · …より…ほうが… · 〜らしい · 〜として · 〜ず［に］ · …ている" },
+    12: { title: "Sorry for the Trouble (Apologies, Explanations & Gratitude/Blame)", japaneseTitle: "第12課 ご迷惑をかけてすみませんでした", subtitle: "…もの／もんだから · 〜（ら）れる · 〜たり〜たり · 〜っぱなし · …おかげで／…せいで" },
+  };
+
   // 5. Build Lessons & Books
   function buildBook(
-    id: "genki-1" | "genki-2" | "mnn-1" | "mnn-2",
+    id: "genki-1" | "genki-2" | "mnn-1" | "mnn-2" | "mnn-3",
     title: string,
     japaneseTitle: string,
-    level: "N5" | "N4",
+    level: "N5" | "N4" | "N3",
     lessonStart: number,
     lessonEnd: number,
     description: string,
@@ -1321,6 +1468,7 @@ async function main() {
       series?: string;
       coverImage?: string;
       kanjiMap?: Map<number, BookKanjiItem[]>;
+      readingMap?: Map<number, BookReadingSection>;
       lessonMetas?: Record<number, { title: string; japaneseTitle: string; subtitle: string }>;
     }
   ): BookDetail {
@@ -1330,6 +1478,7 @@ async function main() {
     let totalGrammar = 0;
     let totalPractice = 0;
     const kanjiSource = options?.kanjiMap ?? allKanjiByLesson;
+    const readingSource = options?.readingMap;
     const metasSource = options?.lessonMetas ?? GENKI_LESSON_METAS;
     const coverImage = options?.coverImage || `/images/books/${id}.webp`;
 
@@ -1339,6 +1488,7 @@ async function main() {
       const grammarList = grammarMap.get(l) || [];
       const dialogueList = dialoguesMap.get(l) || [];
       const practiceList = practiceMap?.get(l) || [];
+      const readingItem = readingSource?.get(l);
 
       // Attach offline dialogue audio path if file exists on disk
       for (const scene of dialogueList) {
@@ -1375,6 +1525,7 @@ async function main() {
         grammar: grammarList,
         dialogues: dialogueList.length > 0 ? dialogueList : undefined,
         practice: practiceList.length > 0 ? practiceList : undefined,
+        ...(readingItem ? { reading: readingItem } : {}),
         stats: {
           vocabularyCount: vocabList.length,
           kanjiCount: kanjiList.length,
@@ -1471,6 +1622,26 @@ async function main() {
     }
   );
 
+  const mnn3Detail = buildBook(
+    "mnn-3",
+    "Minna no Nihongo III: Intermediate I Main Textbook",
+    "みんなの日本語 中級 I",
+    "N3",
+    1,
+    12,
+    "Intermediate Japanese textbook (Chūkyū I) covering JLPT N3 grammar, speaking/listening strategies (話す・聞く), authentic reading/writing passages (読む・書く), and review problems across Lessons 1–12.",
+    mnn3Vocab,
+    mnn3Grammar,
+    mnn3Dialogues,
+    mnn3Practice,
+    {
+      series: "Minna no Nihongo",
+      kanjiMap: mnn3KanjiMap,
+      readingMap: mnn3Reading,
+      lessonMetas: MNN3_LESSON_METAS,
+    }
+  );
+
   const catalog: BookCatalogEntry[] = [
     {
       id: genki1Detail.id,
@@ -1520,6 +1691,18 @@ async function main() {
       lessonRange: mnn2Detail.lessonRange,
       stats: mnn2Detail.stats,
     },
+    {
+      id: mnn3Detail.id,
+      title: mnn3Detail.title,
+      japaneseTitle: mnn3Detail.japaneseTitle,
+      level: mnn3Detail.level,
+      series: mnn3Detail.series,
+      description: mnn3Detail.description,
+      coverImage: mnn3Detail.coverImage,
+      totalLessons: mnn3Detail.totalLessons,
+      lessonRange: mnn3Detail.lessonRange,
+      stats: mnn3Detail.stats,
+    },
   ];
 
   // 6. Write JSON files to public/data/v1/books/
@@ -1550,6 +1733,11 @@ async function main() {
   fs.writeFileSync(
     path.join(PUBLIC_BOOKS_DIR, "mnn-2.json"),
     JSON.stringify(mnn2Detail, null, 2),
+    "utf8"
+  );
+  fs.writeFileSync(
+    path.join(PUBLIC_BOOKS_DIR, "mnn-3.json"),
+    JSON.stringify(mnn3Detail, null, 2),
     "utf8"
   );
 

@@ -7,7 +7,7 @@ import type { BookDetail } from "../src/data/books";
 
 const VOICE = "ja-JP-NanamiNeural";
 const SPEECH_RATE = "-5%";
-const CONCURRENCY = 8;
+const CONCURRENCY = 2;
 
 type VocabWithAudio = BookDetail["lessons"][number]["vocabulary"][number] & {
   audioSrc?: string;
@@ -34,21 +34,33 @@ function toSafeFilename(text: string): string {
   return `v-${hash}`;
 }
 
-async function synthesizeEdgeOpus(text: string, outOpusPath: string, voice = VOICE): Promise<number> {
+async function synthesizeEdgeOpus(
+  text: string,
+  outOpusPath: string,
+  voice = VOICE,
+  sharedClient?: { tts: MsEdgeTTS | null }
+): Promise<number> {
   fs.mkdirSync(path.dirname(outOpusPath), { recursive: true });
   const tmpMp3 = `${outOpusPath}.tmp.mp3`;
 
-  for (let attempt = 1; attempt <= 3; attempt++) {
+  for (let attempt = 1; attempt <= 5; attempt++) {
+    let tts = sharedClient?.tts ?? null;
     try {
-      const tts = new MsEdgeTTS();
+      if (!tts) {
+        tts = new MsEdgeTTS();
+        if (sharedClient) sharedClient.tts = tts;
+      }
       await tts.setMetadata(voice, OUTPUT_FORMAT.AUDIO_24KHZ_48KBITRATE_MONO_MP3);
       await new Promise<void>((resolve, reject) => {
-        const { audioStream } = tts.toStream(text, { rate: SPEECH_RATE });
+        const { audioStream } = tts!.toStream(text, { rate: SPEECH_RATE });
         const ws = fs.createWriteStream(tmpMp3);
         audioStream.pipe(ws);
         ws.on("finish", () => resolve());
         ws.on("error", reject);
-        audioStream.on("error", reject);
+        audioStream.on("error", (err) => {
+          ws.destroy();
+          reject(err);
+        });
       });
 
       if (!fs.existsSync(tmpMp3) || fs.statSync(tmpMp3).size < 100) {
@@ -85,8 +97,22 @@ async function synthesizeEdgeOpus(text: string, outOpusPath: string, voice = VOI
       throw new Error(`Invalid output ${outOpusPath}`);
     } catch (err) {
       if (fs.existsSync(tmpMp3)) fs.unlinkSync(tmpMp3);
-      if (attempt === 3) throw err;
-      await new Promise((r) => setTimeout(r, 800 * attempt));
+      if (sharedClient?.tts) {
+        try {
+          sharedClient.tts.close();
+        } catch {
+          // ignore close errors
+        }
+        sharedClient.tts = null;
+      } else if (tts) {
+        try {
+          tts.close();
+        } catch {
+          // ignore close errors
+        }
+      }
+      if (attempt === 5) throw err;
+      await new Promise((r) => setTimeout(r, 1500 * attempt));
     }
   }
 
@@ -106,6 +132,7 @@ async function main() {
     { file: "genki-2.json", id: "genki-2" },
     { file: "mnn-1.json", id: "mnn-1" },
     { file: "mnn-2.json", id: "mnn-2" },
+    { file: "mnn-3.json", id: "mnn-3" },
   ];
 
   const globalVocabDir = path.join(process.cwd(), "public/audio/vocab");
@@ -169,13 +196,18 @@ async function main() {
   let nextIdx = 0;
   let completed = 0;
   async function worker() {
-    while (nextIdx < tasks.length) {
-      const t = tasks[nextIdx++];
-      await synthesizeEdgeOpus(t.spokenText, t.outAbsPath);
-      completed++;
-      const pct = Math.round((completed / tasks.length) * 100);
-      process.stdout.write(`\r[Books Vocab] ${completed}/${tasks.length} (${pct}%) - ${t.spokenText}   `);
-      if (completed === tasks.length) process.stdout.write("\n");
+    const sharedClient: { tts: MsEdgeTTS | null } = { tts: null };
+    try {
+      while (nextIdx < tasks.length) {
+        const t = tasks[nextIdx++];
+        await synthesizeEdgeOpus(t.spokenText, t.outAbsPath, VOICE, sharedClient);
+        completed++;
+        const pct = Math.round((completed / tasks.length) * 100);
+        process.stdout.write(`\r[Books Vocab] ${completed}/${tasks.length} (${pct}%) - ${t.spokenText}   `);
+        if (completed === tasks.length) process.stdout.write("\n");
+      }
+    } finally {
+      sharedClient.tts?.close();
     }
   }
 

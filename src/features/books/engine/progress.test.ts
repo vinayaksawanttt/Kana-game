@@ -224,6 +224,7 @@ describe("Textbook Progress & FSRS Analytics (progress.ts)", () => {
         expect(formatSectionLabel("grammar")).toBe("Grammar");
         expect(formatSectionLabel("kanji")).toBe("Kanji");
         expect(formatSectionLabel("dialogues")).toBe("Dialogues");
+        expect(formatSectionLabel("reading")).toBe("Reading");
         expect(formatSectionLabel("practice")).toBe("Practice Drills");
         expect(formatSectionLabel(undefined)).toBe("Overview");
     });

@@ -43,6 +43,7 @@ import {
 import { DialogueRoleplayPlayer } from "@/features/books/components/DialogueRoleplayPlayer";
 import { DialogueClozeTest } from "@/features/books/components/DialogueClozeTest";
 import { WorkbookDrillMode } from "@/features/books/components/WorkbookDrillMode";
+import { ReadingWorkspace } from "@/features/books/components/ReadingWorkspace";
 import { KanjiDetailModal } from "@/features/books/components/KanjiDetailModal";
 import {
   VocabularyDetailDrawer,
@@ -109,7 +110,7 @@ import {
 
 type ActiveTab = BookTabKey;
 
-const VALID_TABS = new Set<ActiveTab>(["vocab", "grammar", "kanji", "dialogues", "practice"]);
+const VALID_TABS = new Set<ActiveTab>(["vocab", "grammar", "kanji", "dialogues", "reading", "practice"]);
 
 function parseTabFromLocation(): ActiveTab | null {
   if (typeof window === "undefined") return null;
@@ -246,11 +247,11 @@ export default function BookLessonPage() {
   // Continuous Dialogue Scene Audio states
   const [playingSceneId, setPlayingSceneId] = useState<string | null>(null);
   const [playingLineIndex, setPlayingLineIndex] = useState<number>(-1);
-  const scenePlaybackAbortRef = useRef<boolean>(false);
+  const scenePlaybackRunIdRef = useRef<number>(0);
 
   // Stop all continuous dialogue audio playback & active roleplay
   const stopAllDialogueAudio = useCallback(() => {
-    scenePlaybackAbortRef.current = true;
+    scenePlaybackRunIdRef.current += 1;
     stopAudio();
     setPlayingSceneId(null);
     setPlayingLineIndex(-1);
@@ -273,7 +274,7 @@ export default function BookLessonPage() {
 
   // Stop dialogue audio when filtering or switching scenes inside the Dialogues tab
   useEffect(() => {
-    scenePlaybackAbortRef.current = true;
+    scenePlaybackRunIdRef.current += 1;
     stopAudio();
     setPlayingSceneId(null);
     setPlayingLineIndex(-1);
@@ -311,15 +312,17 @@ export default function BookLessonPage() {
 
   const togglePlayFullScene = async (scene: BookDialogueScene) => {
     if (playingSceneId === scene.id) {
-      scenePlaybackAbortRef.current = true;
+      scenePlaybackRunIdRef.current += 1;
       stopAudio();
       setPlayingSceneId(null);
       setPlayingLineIndex(-1);
       return;
     }
 
-    scenePlaybackAbortRef.current = false;
+    const runId = ++scenePlaybackRunIdRef.current;
+    stopAudio();
     setPlayingSceneId(scene.id);
+    setPlayingLineIndex(0);
 
     // Pre-warm opening lines before starting playback loop
     if (typeof preloadSentenceAudio === "function") {
@@ -329,7 +332,7 @@ export default function BookLessonPage() {
     }
 
     for (let i = 0; i < scene.lines.length; i++) {
-      if (scenePlaybackAbortRef.current) break;
+      if (scenePlaybackRunIdRef.current !== runId) return;
       setPlayingLineIndex(i);
       const nextLine = scene.lines[i + 1];
       if (nextLine && typeof preloadSentenceAudio === "function") {
@@ -343,16 +346,16 @@ export default function BookLessonPage() {
       } catch {
         // Continue to next line gracefully
       }
-      if (scenePlaybackAbortRef.current) break;
+      if (scenePlaybackRunIdRef.current !== runId) return;
       await new Promise((r) => setTimeout(r, dialoguePlaybackRate < 1 ? 650 : 450));
-      if (scenePlaybackAbortRef.current) break;
+      if (scenePlaybackRunIdRef.current !== runId) return;
     }
 
-    if (!scenePlaybackAbortRef.current) {
+    if (scenePlaybackRunIdRef.current === runId) {
       markDialogueCompleted(scene.id);
+      setPlayingSceneId(null);
+      setPlayingLineIndex(-1);
     }
-    setPlayingSceneId(null);
-    setPlayingLineIndex(-1);
   };
 
   // Practice drill interaction states
@@ -1424,24 +1427,37 @@ export default function BookLessonPage() {
         label: "文法 Grammar",
         count: lesson.stats.grammarCount,
       },
-      {
-        id: "kanji",
-        label:
-          lesson.kanji.length === 0
-            ? lesson.lessonNumber === 2
-              ? "片仮名 Katakana"
-              : "平仮名 Hiragana"
-            : "漢字 Kanji",
-        count:
-          lesson.kanji.length === 0
-            ? 46
-            : lesson.stats.kanjiCount,
-      },
+      ...(lesson.kanji.length > 0 || (bookId === "genki-1" && (lesson.lessonNumber === 1 || lesson.lessonNumber === 2))
+        ? [
+            {
+              id: "kanji" as const,
+              label:
+                lesson.kanji.length === 0
+                  ? lesson.lessonNumber === 2
+                    ? "片仮名 Katakana"
+                    : "平仮名 Hiragana"
+                  : "漢字 Kanji",
+              count:
+                lesson.kanji.length === 0
+                  ? 46
+                  : lesson.stats.kanjiCount,
+            },
+          ]
+        : []),
       {
         id: "dialogues",
         label: "会話 Dialogues",
         count: lesson.dialogues?.length ?? 0,
       },
+      ...(lesson.reading
+        ? [
+            {
+              id: "reading" as const,
+              label: "読解 Reading",
+              count: lesson.reading.paragraphs.length,
+            },
+          ]
+        : []),
       {
         id: "practice",
         label: "練習 Practice",
@@ -2582,6 +2598,13 @@ export default function BookLessonPage() {
             }}
             onSrsUpdated={refreshSrsItems}
           />
+        </section>
+      )}
+
+      {/* TAB: READING (MNN III 読む・書く) */}
+      {activeTab === "reading" && lesson.reading && (
+        <section aria-label="Reading section">
+          <ReadingWorkspace lessonNumber={lesson.lessonNumber} reading={lesson.reading} />
         </section>
       )}
 

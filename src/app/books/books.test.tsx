@@ -1387,5 +1387,41 @@ describe("Textbooks UI Routes (/books & /books/[bookId]/[lesson])", () => {
       fireEvent.click(screen.getByRole("button", { name: /Exit Drill/i }));
       expect(await screen.findByText(/Worksheet View/i)).toBeTruthy();
     });
+
+    it("renders MNN III Reading tab (読む・書く) with word bank cloze, English toggle, and comprehension check", async () => {
+      mockParams = { bookId: "mnn-3", lesson: "1" };
+      render(<BookLessonPage />);
+
+      // Verify MNN III Lesson 1 has the Reading tab
+      const readingTab = await screen.findByRole("button", { name: /読解 Reading/i });
+      expect(readingTab).toBeTruthy();
+      fireEvent.click(readingTab);
+
+      // Verify Reading Workspace renders Lesson 1 title & Warmup
+      expect(await screen.findByText(/読むときのポイント/i)).toBeTruthy();
+      expect(screen.getByText(/1\. 考えてみましょう/i)).toBeTruthy();
+
+      // Click word bank chip for first blank (重ねて) and check answers
+      const kasaneChip = screen.getByRole("button", { name: /オ\.\s*重ねて/i });
+      fireEvent.click(kasaneChip);
+      fireEvent.click(screen.getByRole("button", { name: /Check Answers/i }));
+      expect(await screen.findByText(/1 \/ 8 Correct/i)).toBeTruthy();
+
+      // Toggle English translations off and back on
+      fireEvent.click(screen.getByRole("button", { name: /Hide English/i }));
+      expect(screen.queryByText(/what foreign travelers/i)).toBeNull();
+      fireEvent.click(screen.getByRole("button", { name: /Show English/i }));
+      expect(screen.getByText(/what foreign travelers/i)).toBeTruthy();
+
+      // Test Comprehension ○/× and Model Answer reveal
+      const circleButtons = screen.getAllByRole("button", { name: "○" });
+      expect(circleButtons.length).toBeGreaterThan(0);
+      fireEvent.click(circleButtons[0]);
+      expect(await screen.findByText(/Correct \(○\)/i)).toBeTruthy();
+
+      const modelAnswerBtns = screen.getAllByRole("button", { name: /Model Answer/i });
+      fireEvent.click(modelAnswerBtns[0]);
+      expect(await screen.findByText(/解答例:/i)).toBeTruthy();
+    });
   });
 });

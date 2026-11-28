@@ -1,10 +1,10 @@
-export type BookId = "genki-1" | "genki-2" | "mnn-1" | "mnn-2";
+export type BookId = "genki-1" | "genki-2" | "mnn-1" | "mnn-2" | "mnn-3";
 
 export interface BookCatalogEntry {
   id: BookId;
   title: string;
   japaneseTitle: string;
-  level: "N5" | "N4";
+  level: "N5" | "N4" | "N3";
   series: string;
   description: string;
   coverImage?: string;
@@ -108,6 +108,41 @@ export interface BookPracticeSection {
   items: BookPracticeItem[];
 }
 
+export interface BookReadingParagraph {
+  ja: string;
+  en?: string;
+  audioSrc?: string;
+}
+
+export interface BookReadingVocabCheckItem {
+  id: string;
+  prompt: string;
+  answer: string;
+  options?: string[];
+  meaning?: string;
+}
+
+export interface BookReadingQuestion {
+  id: string;
+  type: "true-false" | "mcq" | "open";
+  prompt: string;
+  answer: string;
+  options?: string[];
+}
+
+export interface BookReadingSection {
+  title: string;
+  titleReading?: string;
+  readingPoints: string[];
+  warmupQuestions: string[];
+  vocabWordBank: string[];
+  vocabChecks: BookReadingVocabCheckItem[];
+  paragraphs: BookReadingParagraph[];
+  sourceCredit?: string;
+  comprehensionQuestions: BookReadingQuestion[];
+  challengePrompts?: string[];
+}
+
 export interface BookLesson {
   lessonNumber: number;
   title: string;
@@ -118,6 +153,7 @@ export interface BookLesson {
   grammar: BookGrammarItem[];
   dialogues?: BookDialogueScene[];
   practice?: BookPracticeSection[];
+  reading?: BookReadingSection;
   stats: {
     vocabularyCount: number;
     kanjiCount: number;

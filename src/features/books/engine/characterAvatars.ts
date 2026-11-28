@@ -570,9 +570,139 @@ export const MNN_CHARACTER_CAST: Record<string, MnnCharacterProfile> = {
     neutral: "/images/characters/hans-schmidt/neutral.webp",
     talking: "/images/characters/hans-schmidt/talking.webp",
   },
+  "prof-mori": {
+    id: "prof-mori",
+    name: "Prof. Mori",
+    nameJa: "森",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "Professor at Sakura University",
+    affiliationJa: "さくら大学 教授",
+    aivisSpeaker: "猩々博士",
+    aivisModelUuid: "935e3e0b-6a0a-4a57-a52f-8d0a2b367d14",
+    aivisSpeakerUuid: "c3605b4f-35f3-4d9d-8f99-0b822a2a8981",
+    aivisStyleId: 5306848,
+    aivisStyleName: "ノーマル",
+    speedScale: 0.98,
+    pitchScale: 0.0,
+    neutral: "/images/characters/prof-mori/neutral.webp",
+    talking: "/images/characters/prof-mori/talking.webp",
+  },
+  hirota: {
+    id: "hirota",
+    name: "Hirota",
+    nameJa: "広田",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "Student at Sakura University",
+    affiliationJa: "さくら大学の学生",
+    aivisSpeaker: "コハク",
+    aivisModelUuid: "22e8ed77-94fe-4ef2-871f-a86f94e9a579",
+    aivisSpeakerUuid: "5680ac39-43c9-487a-bc3e-018c0d29cc38",
+    aivisStyleId: 1878365376,
+    aivisStyleName: "ノーマル",
+    speedScale: 1.0,
+    pitchScale: 0.0,
+    neutral: "/images/characters/hirota/neutral.webp",
+    talking: "/images/characters/hirota/talking.webp",
+  },
+  sano: {
+    id: "sano",
+    name: "Sano",
+    nameJa: "佐野",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "Homemaker",
+    affiliationJa: "主婦",
+    aivisSpeaker: "まお",
+    aivisModelUuid: "4b669051-199e-4c72-9754-2b7496d78304",
+    aivisSpeakerUuid: "f5129d2c-80e6-4918-b5d4-3708d1f597d4",
+    aivisStyleId: 888753763,
+    aivisStyleName: "おちつき",
+    speedScale: 0.98,
+    pitchScale: 0.0,
+    neutral: "/images/characters/sano/neutral.webp",
+    talking: "/images/characters/sano/talking.webp",
+  },
+  nomura: {
+    id: "nomura",
+    name: "Nomura",
+    nameJa: "野村",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "Homemaker (Miller's Downstairs Neighbor)",
+    affiliationJa: "主婦",
+    aivisSpeaker: "F2",
+    aivisModelUuid: "9088823c-3f20-48aa-95ee-86a0761fc9c1",
+    aivisSpeakerUuid: "7e5499a0-6e89-4ea2-a791-9a1760f8f61d",
+    aivisStyleId: 1670137088,
+    aivisStyleName: "ノーマル",
+    speedScale: 1.0,
+    pitchScale: 0.0,
+    neutral: "/images/characters/nomura/neutral.webp",
+    talking: "/images/characters/nomura/talking.webp",
+  },
+  ikeda: {
+    id: "ikeda",
+    name: "Ikeda",
+    nameJa: "池田",
+    country: "Japan",
+    countryJa: "日本",
+    affiliation: "Brazil Air Employee",
+    affiliationJa: "ブラジルエアーの社員",
+    aivisSpeaker: "澤原 玄二郎",
+    aivisModelUuid: "31d05fa0-a6f6-4120-90b3-5ec71f72b118",
+    aivisSpeakerUuid: "6bb49e93-78c2-46c0-a4c6-2c308be9128d",
+    aivisStyleId: 2029042368,
+    aivisStyleName: "ノーマル",
+    speedScale: 1.0,
+    pitchScale: 0.0,
+    neutral: "/images/characters/ikeda/neutral.webp",
+    talking: "/images/characters/ikeda/talking.webp",
+  },
+  linlin: {
+    id: "linlin",
+    name: "Linlin",
+    nameJa: "リンリン",
+    country: "China",
+    countryJa: "中国",
+    affiliation: "Wang Xue's Niece (6 yrs)",
+    affiliationJa: "ワン・シュエの姪",
+    age: 6,
+    aivisSpeaker: "まい",
+    aivisModelUuid: "e9339137-2ae3-4d41-9394-fb757a7e61e6",
+    aivisSpeakerUuid: "41b7785f-35cc-4089-a360-dd8a63da5e75",
+    aivisStyleId: 1431611904,
+    aivisStyleName: "ノーマル",
+    speedScale: 1.0,
+    pitchScale: 0.02,
+    neutral: "/images/characters/linlin/neutral.webp",
+    talking: "/images/characters/linlin/talking.webp",
+  },
 };
 
 export const MNN_SERVICE_ROLES: Record<string, CharacterAvatar> = {
+  "supermarket-clerk": {
+    id: "supermarket-clerk",
+    name: "Supermarket Clerk",
+    nameJa: "係員",
+    neutral: "/images/characters/supermarket-clerk/neutral.webp",
+    talking: "/images/characters/supermarket-clerk/talking.webp",
+  },
+  "speaker-a": {
+    id: "speaker-a",
+    name: "Speaker A",
+    nameJa: "話者A",
+    neutral: "/images/characters/speaker-a/neutral.webp",
+    talking: "/images/characters/speaker-a/talking.webp",
+  },
+  "speaker-b": {
+    id: "speaker-b",
+    name: "Speaker B",
+    nameJa: "話者B",
+    neutral: "/images/characters/speaker-b/neutral.webp",
+    talking: "/images/characters/speaker-b/talking.webp",
+  },
   "bank-clerk": {
     id: "bank-clerk",
     name: "Bank Clerk",
@@ -751,6 +881,12 @@ export function getMnnCharacterProfile(
   if (normJa.includes("渡辺") || normJa.includes("あけみ") || normEn.includes("akemi") || normEn.includes("watanabe")) return MNN_CHARACTER_CAST["akemi-watanabe"];
   if (normJa.includes("高橋") || normJa.includes("透") || normEn.includes("toru") || normEn.includes("takahashi")) return MNN_CHARACTER_CAST["toru-takahashi"];
   if (normJa.includes("林") || normJa.includes("真紀子") || normEn.includes("makiko") || normEn.includes("hayashi")) return MNN_CHARACTER_CAST["makiko-hayashi"];
+  if (normJa.includes("森") || normEn.includes("mori")) return MNN_CHARACTER_CAST["prof-mori"];
+  if (normJa.includes("広田") || normEn.includes("hirota")) return MNN_CHARACTER_CAST["hirota"];
+  if (normJa.includes("佐野") || normEn.includes("sano")) return MNN_CHARACTER_CAST["sano"];
+  if (normJa.includes("野村") || normEn.includes("nomura")) return MNN_CHARACTER_CAST["nomura"];
+  if (normJa.includes("池田") || normEn.includes("ikeda")) return MNN_CHARACTER_CAST["ikeda"];
+  if (normJa.includes("リンリン") || normEn.includes("linlin")) return MNN_CHARACTER_CAST["linlin"];
 
   return null;
 }
@@ -1167,8 +1303,12 @@ export function getCharacterAvatar(
 
   if (
     normJa.includes("係員") ||
-    normEn === "staff"
+    normEn.includes("supermarket clerk")
   ) {
+    return MNN_SERVICE_ROLES["supermarket-clerk"];
+  }
+
+  if (normEn === "staff") {
     return GENKI_CHARACTER_AVATARS["store-attendant"];
   }
 
@@ -1502,6 +1642,37 @@ export function getCharacterAvatar(
     normEn.includes("guest")
   ) {
     return GENKI_CHARACTER_AVATARS["customer"];
+  }
+
+  // 32. Generic Speaker A / B & Practice Roleplay Defaults
+  if (
+    normEn === "a" ||
+    normEn === "speaker a" ||
+    normJa === "a" ||
+    normJa === "話者a" ||
+    normEn === "junior" ||
+    normEn === "employee" ||
+    normEn === "student" ||
+    normJa === "後輩" ||
+    normJa === "社員" ||
+    normJa === "学生"
+  ) {
+    return MNN_SERVICE_ROLES["speaker-a"];
+  }
+
+  if (
+    normEn === "b" ||
+    normEn === "speaker b" ||
+    normJa === "b" ||
+    normJa === "話者b" ||
+    normEn === "colleague" ||
+    normEn === "friend" ||
+    normEn === "senior" ||
+    normJa === "同僚" ||
+    normJa === "友人" ||
+    normJa === "先輩"
+  ) {
+    return MNN_SERVICE_ROLES["speaker-b"];
   }
 
   return null;

@@ -12,7 +12,7 @@ import type { GrammarPoint } from "@/data/grammar";
 import type { SrsItem } from "@/lib/srs/db";
 
 export type LessonState = "not-started" | "in-progress" | "completed" | "review-needed";
-export type BookTabKey = "vocab" | "grammar" | "kanji" | "dialogues" | "practice";
+export type BookTabKey = "vocab" | "grammar" | "kanji" | "dialogues" | "reading" | "practice";
 
 export interface LastStudiedLesson {
     bookId: string;
@@ -91,6 +91,8 @@ export function formatSectionLabel(tab?: string): string {
             return "Kanji";
         case "dialogues":
             return "Dialogues";
+        case "reading":
+            return "Reading";
         case "practice":
             return "Practice Drills";
         default:

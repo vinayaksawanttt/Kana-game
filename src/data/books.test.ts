@@ -12,12 +12,13 @@ describe("Textbooks Data Pipeline (Genki I & II)", () => {
   it("loads the textbook catalog correctly", async () => {
     const catalog = await getBooksCatalog();
     expect(catalog).toBeDefined();
-    expect(catalog.length).toBe(4);
+    expect(catalog.length).toBe(5);
 
     const genki1 = catalog.find((b) => b.id === "genki-1");
     const genki2 = catalog.find((b) => b.id === "genki-2");
     const mnn1 = catalog.find((b) => b.id === "mnn-1");
     const mnn2 = catalog.find((b) => b.id === "mnn-2");
+    const mnn3 = catalog.find((b) => b.id === "mnn-3");
 
     expect(mnn1).toBeDefined();
     expect(mnn1?.level).toBe("N5");
@@ -31,6 +32,12 @@ describe("Textbooks Data Pipeline (Genki I & II)", () => {
     expect(mnn2?.totalLessons).toBe(25);
     expect(mnn2?.lessonRange).toEqual([26, 50]);
     expect(mnn2?.coverImage).toBe("/images/books/mnn-2.webp");
+
+    expect(mnn3).toBeDefined();
+    expect(mnn3?.level).toBe("N3");
+    expect(mnn3?.totalLessons).toBe(12);
+    expect(mnn3?.lessonRange).toEqual([1, 12]);
+    expect(mnn3?.coverImage).toBe("/images/books/mnn-3.webp");
 
     expect(genki1).toBeDefined();
     expect(genki1?.level).toBe("N5");
@@ -199,5 +206,36 @@ describe("Textbooks Data Pipeline (Genki I & II)", () => {
     const l14 = await getBookLesson("mnn-1", 14);
     expect(l14).toBeDefined();
     expect(l14?.practice?.[0]?.title).toContain("動詞の活用");
+  });
+
+  it("loads Minna no Nihongo III (mnn-3) all 12 lessons with Reading (読む・書く) sections", async () => {
+    const book = await getBookById("mnn-3");
+    expect(book).toBeDefined();
+    expect(book?.lessons.length).toBe(12);
+    expect(book?.stats.vocabularyCount).toBeGreaterThan(300);
+    expect(book?.stats.grammarCount).toBeGreaterThanOrEqual(60);
+
+    for (const lesson of book!.lessons) {
+      expect(lesson.vocabulary.length).toBeGreaterThan(15);
+      expect(lesson.grammar.length).toBeGreaterThanOrEqual(4);
+      expect(lesson.dialogues?.length).toBeGreaterThanOrEqual(2);
+      expect(lesson.practice?.length).toBeGreaterThanOrEqual(2);
+      expect(lesson.reading).toBeDefined();
+      expect(lesson.reading!.paragraphs.length).toBeGreaterThanOrEqual(3);
+      expect(lesson.reading!.vocabChecks.length).toBeGreaterThanOrEqual(5);
+      expect(lesson.reading!.comprehensionQuestions.length).toBeGreaterThanOrEqual(2);
+
+      const bank = lesson.reading!.vocabWordBank.map((w) =>
+        w.replace(/^[ア-ンA-Z]\s*[.．、]\s*/, "").trim()
+      );
+      for (const vc of lesson.reading!.vocabChecks) {
+        expect(bank).toContain(vc.answer.trim());
+      }
+    }
+
+    const l9 = await getBookLesson("mnn-3", 9);
+    expect(l9?.reading?.title).toBe("カラオケ");
+    const l12 = await getBookLesson("mnn-3", 12);
+    expect(l12?.reading?.title).toBe("［座談会］日本で暮らす");
   });
 });

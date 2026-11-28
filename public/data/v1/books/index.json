@@ -78,5 +78,25 @@
       "grammarCount": 134,
       "practiceCount": 1821
     }
+  },
+  {
+    "id": "mnn-3",
+    "title": "Minna no Nihongo III: Intermediate I Main Textbook",
+    "japaneseTitle": "みんなの日本語 中級 I",
+    "level": "N3",
+    "series": "Minna no Nihongo",
+    "description": "Intermediate Japanese textbook (Chūkyū I) covering JLPT N3 grammar, speaking/listening strategies (話す・聞く), authentic reading/writing passages (読む・書く), and review problems across Lessons 1–12.",
+    "coverImage": "/images/books/mnn-3.webp",
+    "totalLessons": 12,
+    "lessonRange": [
+      1,
+      12
+    ],
+    "stats": {
+      "vocabularyCount": 328,
+      "kanjiCount": 144,
+      "grammarCount": 68,
+      "practiceCount": 313
+    }
   }
 ]

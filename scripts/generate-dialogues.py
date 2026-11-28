@@ -269,6 +269,263 @@ def map_character_profile(speaker_en, speaker_ja, book_id=""):
     norm_ja = (speaker_ja or "").strip()
 
     # -----------------------------------------------------------------------
+    # Minna no Nihongo III (mnn-3) Cast & Side Roles (User-Locked)
+    # -----------------------------------------------------------------------
+    if book_id == "mnn-3":
+        # 1. Prof. Mori (森) -> Gemini TTS (Rasalgethi)
+        if "森" in norm_ja or "mori" in norm_en:
+            return {
+                "character": "Prof. Mori",
+                "primary": "gemini",
+                "allowed_engines": ["gemini"],
+                "gemini_voice": "Rasalgethi",
+                "aivis_key": "shoujou",
+                "aivis_style": "normal",
+                "voicevox_id": 53,
+                "base_speed": 0.98,
+                "base_pitch": 0.0,
+                "base_intonation": 1.05,
+            }
+
+        # 2. Hirota (広田) -> Gemini TTS (Puck)
+        if "広田" in norm_ja or "hirota" in norm_en:
+            return {
+                "character": "Hirota",
+                "primary": "gemini",
+                "allowed_engines": ["gemini"],
+                "gemini_voice": "Puck",
+                "aivis_key": "kohaku",
+                "aivis_style": "normal",
+                "voicevox_id": 12,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.06,
+            }
+
+        # 3. Sano (佐野) -> Gemini TTS (Gacrux)
+        if "佐野" in norm_ja or "sano" in norm_en:
+            return {
+                "character": "Sano",
+                "primary": "gemini",
+                "allowed_engines": ["gemini"],
+                "gemini_voice": "Gacrux",
+                "aivis_key": "mao",
+                "aivis_style": "calm",
+                "voicevox_id": 20,
+                "base_speed": 0.98,
+                "base_pitch": 0.0,
+                "base_intonation": 1.05,
+            }
+
+        # 4. Nomura (野村) -> Gemini TTS (Callirrhoe)
+        if "野村" in norm_ja or "nomura" in norm_en:
+            return {
+                "character": "Nomura",
+                "primary": "gemini",
+                "allowed_engines": ["gemini"],
+                "gemini_voice": "Callirrhoe",
+                "aivis_key": "f2",
+                "aivis_style": "normal",
+                "voicevox_id": 16,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.05,
+            }
+
+        # 5. Ikeda (池田) -> VOICEVOX (id=11 玄野武宏)
+        if "池田" in norm_ja or "ikeda" in norm_en:
+            return {
+                "character": "Ikeda",
+                "primary": "voicevox",
+                "allowed_engines": ["voicevox"],
+                "gemini_voice": "Charon",
+                "aivis_key": "sawabaru",
+                "aivis_style": "normal",
+                "voicevox_id": 11,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.05,
+            }
+
+        # 6. Linlin (リンリン) -> Gemini TTS (Leda)
+        if "リンリン" in norm_ja or "linlin" in norm_en:
+            return {
+                "character": "Linlin",
+                "primary": "gemini",
+                "allowed_engines": ["gemini"],
+                "gemini_voice": "Leda",
+                "aivis_key": "mai",
+                "aivis_style": "normal",
+                "voicevox_id": 3,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.08,
+            }
+
+        # 7. Supermarket Clerk (係員) -> VOICEVOX (id=30 No.7)
+        if "係員" in norm_ja or "supermarket" in norm_en:
+            return {
+                "character": "Supermarket Clerk",
+                "primary": "voicevox",
+                "allowed_engines": ["voicevox"],
+                "gemini_voice": "Sulafat",
+                "aivis_key": "f1",
+                "aivis_style": "normal",
+                "voicevox_id": 30,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.06,
+            }
+
+        # 8. Electronics Clerk (店員) -> AivisSpeech (kanae)
+        if "店員" in norm_ja or "clerk" in norm_en:
+            return {
+                "character": "Electronics Clerk",
+                "primary": "aivis",
+                "allowed_engines": ["aivis"],
+                "gemini_voice": "Aoede",
+                "aivis_key": "kanae",
+                "aivis_style": "normal",
+                "voicevox_id": 8,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.06,
+            }
+
+        # 9. Caretaker (管理人) -> AivisSpeech (aida)
+        if "管理人" in norm_ja or "caretaker" in norm_en or "dorm manager" in norm_en:
+            return {
+                "character": "Caretaker",
+                "primary": "aivis",
+                "allowed_engines": ["aivis"],
+                "gemini_voice": "Orus",
+                "aivis_key": "aida",
+                "aivis_style": "normal",
+                "voicevox_id": 13,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.05,
+            }
+
+        # 10. Secretary (秘書) -> Edge TTS (ja-JP-NanamiNeural)
+        if "秘書" in norm_ja or "secretary" in norm_en:
+            return {
+                "character": "Secretary",
+                "primary": "edge",
+                "allowed_engines": ["edge"],
+                "edge_voice": "ja-JP-NanamiNeural",
+                "gemini_voice": "Achernar",
+                "aivis_key": "morioki",
+                "aivis_style": "normal",
+                "voicevox_id": 2,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.05,
+            }
+
+        # 11. Answering Machine (留守番電話) -> VOICEVOX (id=30 No.7)
+        if "留守番電話" in norm_ja or "answering machine" in norm_en:
+            return {
+                "character": "Answering Machine",
+                "primary": "voicevox",
+                "allowed_engines": ["voicevox"],
+                "gemini_voice": "Autonoe",
+                "aivis_key": "f1",
+                "aivis_style": "normal",
+                "voicevox_id": 30,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.04,
+            }
+
+        # 12. Passerby (通行人) -> AivisSpeech (yukyu)
+        if "通行人" in norm_ja or "passerby" in norm_en:
+            return {
+                "character": "Passerby",
+                "primary": "aivis",
+                "allowed_engines": ["aivis"],
+                "gemini_voice": "Zubenelgenubi",
+                "aivis_key": "yukyu",
+                "aivis_style": "normal",
+                "voicevox_id": 11,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.05,
+            }
+
+        # 13. Section Chief (課長) -> Edge TTS (ja-JP-NanamiNeural)
+        if "課長" in norm_ja or "section chief" in norm_en:
+            return {
+                "character": "Section Chief",
+                "primary": "edge",
+                "allowed_engines": ["edge"],
+                "edge_voice": "ja-JP-NanamiNeural",
+                "gemini_voice": "Laomedeia",
+                "aivis_key": "f1",
+                "aivis_style": "normal",
+                "voicevox_id": 2,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.05,
+            }
+
+        # 14. Speaker A (Practice Roleplay Male) -> AivisSpeech (ginga)
+        if norm_en in ("a", "customer", "junior", "employee", "student") or norm_ja in ("a", "客", "後輩", "社員", "学生"):
+            return {
+                "character": "Speaker A",
+                "primary": "aivis",
+                "allowed_engines": ["aivis"],
+                "gemini_voice": "Fenrir",
+                "aivis_key": "ginga",
+                "aivis_style": "normal",
+                "voicevox_id": 11,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.05,
+            }
+
+        # 15. Speaker B (Practice Roleplay Female) -> AivisSpeech (mai)
+        if norm_en in ("b", "colleague", "friend", "senior", "manager") or norm_ja in ("b", "同僚", "友人", "先輩", "店長"):
+            return {
+                "character": "Speaker B",
+                "primary": "aivis",
+                "allowed_engines": ["aivis"],
+                "gemini_voice": "Zephyr",
+                "aivis_key": "mai",
+                "aivis_style": "normal",
+                "voicevox_id": 8,
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.06,
+            }
+
+        # Returning MNN2 characters in MNN3
+        if "渡辺" in norm_ja or "watanabe" in norm_en:
+            return {
+                "character": "Akemi Watanabe",
+                "primary": "voicevox",
+                "allowed_engines": ["voicevox"],
+                "voicevox_id": 8,
+                "aivis_key": "kanae",
+                "aivis_style": "normal",
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.06,
+            }
+        if "クララ" in norm_ja or "klara" in norm_en or "clara" in norm_en:
+            return {
+                "character": "Klara Schmidt",
+                "primary": "voicevox",
+                "allowed_engines": ["voicevox"],
+                "voicevox_id": 14,
+                "aivis_key": "mao",
+                "aivis_style": "calm",
+                "base_speed": 1.0,
+                "base_pitch": 0.0,
+                "base_intonation": 1.05,
+            }
+
+    # -----------------------------------------------------------------------
     # Minna no Nihongo II (mnn-2) Specific New Cast & Side Roles (User-Locked)
     # -----------------------------------------------------------------------
     if book_id == "mnn-2":
@@ -1607,19 +1864,18 @@ def synthesize_with_aivis(spoken_ja, profile, emotion_meta, out_opus_path):
 
 def synthesize_with_voicevox(spoken_ja, profile, emotion_meta, out_opus_path):
     style_id = profile["voicevox_id"]
+    # Strip textbook bunsetsu word-spacing so VOICEVOX doesn't insert a pause after every word
+    vv_text = re.sub(r"(?<![A-Za-z0-9])\s+|\s+(?![A-Za-z0-9])", "", spoken_ja or "").strip()
     try:
-        q_url = f"{VOICEVOX_URL}/audio_query?text={urllib.parse.quote(spoken_ja)}&speaker={style_id}"
+        q_url = f"{VOICEVOX_URL}/audio_query?text={urllib.parse.quote(vv_text)}&speaker={style_id}"
         req1 = urllib.request.Request(q_url, method="POST")
         with urllib.request.urlopen(req1, timeout=15) as resp1:
             query_data = json.loads(resp1.read().decode("utf-8"))
 
-        query_data["speedScale"] = round(
-            profile["base_speed"] * float(emotion_meta.get("speedScale", 1.0)), 3
-        )
-        query_data["pitchScale"] = profile["base_pitch"]
-        query_data["intonationScale"] = round(
-            float(emotion_meta.get("intonationScale", profile["base_intonation"])), 3
-        )
+        # Keep VOICEVOX natural prosody without exaggerated Director intonation/speed overrides
+        query_data["speedScale"] = round(float(profile.get("base_speed", 1.0)), 3)
+        query_data["pitchScale"] = float(profile.get("base_pitch", 0.0))
+        query_data["intonationScale"] = 1.0
         if "volume_scale" in profile:
             query_data["volumeScale"] = float(profile["volume_scale"])
 
@@ -1693,7 +1949,7 @@ def synthesize_hybrid_line(task, profile, emotion_meta, gemini_keys, kenpath_key
             if ok:
                 return True, label
         elif eng == "voicevox" and voicevox_up:
-            ok, label = synthesize_with_voicevox(spoken_ja, profile, emotion_meta, out_abs)
+            ok, label = synthesize_with_voicevox(raw_cleaned, profile, emotion_meta, out_abs)
             if ok:
                 return True, label
         elif eng == "kenpath":
@@ -1728,6 +1984,7 @@ def main():
 
     only_mnn = "--mnn" in sys.argv
     only_mnn2 = "--mnn2" in sys.argv
+    only_mnn3 = "--mnn3" in sys.argv
     force = "--force" in sys.argv
     lesson_filter = None
     engine_filter = None
@@ -1740,6 +1997,7 @@ def main():
     books = [
         {"id": "mnn-1", "file": "public/data/v1/books/mnn-1.json"},
         {"id": "mnn-2", "file": "public/data/v1/books/mnn-2.json"},
+        {"id": "mnn-3", "file": "public/data/v1/books/mnn-3.json"},
         {"id": "genki-1", "file": "public/data/v1/books/genki-1.json"},
         {"id": "genki-2", "file": "public/data/v1/books/genki-2.json"},
     ]
@@ -1747,6 +2005,8 @@ def main():
         books = [b for b in books if b["id"] == "mnn-1"]
     elif only_mnn2:
         books = [b for b in books if b["id"] == "mnn-2"]
+    elif only_mnn3:
+        books = [b for b in books if b["id"] == "mnn-3"]
 
     tasks_by_lesson = {}
     total_queued = 0

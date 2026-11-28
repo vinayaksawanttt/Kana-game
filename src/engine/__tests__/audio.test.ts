@@ -262,7 +262,7 @@ describe("audio engine", () => {
       const vocab = resolveVocabAudio({ word: "大勢", reading: "おおぜい" });
       expect(vocab.ttsText).toBe("おおぜい");
       expect(vocab.lang).toBe("ja-JP");
-      expect(vocab.src).toBe(`/audio/vocab/${encodeURIComponent("おおぜい")}.opus`);
+      expect(vocab.src).toMatch(/^\/audio\/(vocab|books\/vocab)\//);
       expect(vocab.key).toBe("おおぜい");
     });
 
@@ -275,13 +275,13 @@ describe("audio engine", () => {
     it("normalizes Katakana reading to Hiragana", () => {
       const vocab = resolveVocabAudio({ word: "水", reading: "ミズ" });
       expect(vocab.ttsText).toBe("みず");
-      expect(vocab.src).toBe("/audio/books/vocab/みず.opus");
+      expect(vocab.src).toMatch(/^\/audio\/books\/vocab\/v-[a-f0-9]+\.opus$/);
     });
 
     it("falls back to word when reading/kana are omitted", () => {
       const vocab = resolveVocabAudio({ word: "ありがとう" });
       expect(vocab.ttsText).toBe("ありがとう");
-      expect(vocab.src).toBe("/audio/books/vocab/ありがとう.opus");
+      expect(vocab.src).toMatch(/^\/audio\/books\/vocab\/v-[a-f0-9]+\.opus$/);
     });
 
     it("resolves signature vocab and reading clips via Hybrid Engine and decomposes rare words into moraSteps", () => {
@@ -294,7 +294,7 @@ describe("audio engine", () => {
       // Textbook companion vocabulary clip -> static clip in /audio/books/vocab/
       const mizu = resolveVocabAudio({ word: "水", reading: "みず" });
       expect(mizu.hasStaticClip).toBe(true);
-      expect(mizu.staticSrc).toBe("/audio/books/vocab/みず.opus");
+      expect(mizu.staticSrc).toMatch(/^\/audio\/books\/vocab\/v-[a-f0-9]+\.opus$/);
 
       // Existing kanji reading clip fallback -> static clip in /audio/readings/
       const akashi = resolveVocabAudio({ word: "証", reading: "あかし" });

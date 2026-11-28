@@ -345,27 +345,31 @@ export function LessonWorkspaceHeader({
           ? Math.round((overview.grammar.studied / overview.grammar.total) * 100)
           : 0,
     },
-    {
-      tab: "kanji",
-      label:
-        overview.kanji.total === 0
-          ? lessonNumber === 2
-            ? "Katakana"
-            : "Hiragana"
-          : "Kanji",
-      primaryText:
-        overview.kanji.total === 0
-          ? "46 characters"
-          : `${overview.kanji.studied}/${overview.kanji.total} studied`,
-      secondaryText:
-        overview.kanji.total === 0
-          ? "Syllabary sheet"
-          : `${overview.kanji.mastered} mastered`,
-      percent:
-        overview.kanji.total > 0
-          ? Math.round((overview.kanji.studied / overview.kanji.total) * 100)
-          : 100,
-    },
+    ...(overview.kanji.total > 0 || (bookId === "genki-1" && (lessonNumber === 1 || lessonNumber === 2))
+      ? [
+          {
+            tab: "kanji" as const,
+            label:
+              overview.kanji.total === 0
+                ? lessonNumber === 2
+                  ? "Katakana"
+                  : "Hiragana"
+                : "Kanji",
+            primaryText:
+              overview.kanji.total === 0
+                ? "46 characters"
+                : `${overview.kanji.studied}/${overview.kanji.total} studied`,
+            secondaryText:
+              overview.kanji.total === 0
+                ? "Syllabary sheet"
+                : `${overview.kanji.mastered} mastered`,
+            percent:
+              overview.kanji.total > 0
+                ? Math.round((overview.kanji.studied / overview.kanji.total) * 100)
+                : 100,
+          },
+        ]
+      : []),
     {
       tab: "dialogues",
       label: "Dialogues",

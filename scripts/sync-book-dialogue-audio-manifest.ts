@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import type { BookDetail } from "../src/data/books";
 
-const BOOK_IDS = ["genki-1", "genki-2", "mnn-1", "mnn-2"] as const;
+const BOOK_IDS = ["genki-1", "genki-2", "mnn-1", "mnn-2", "mnn-3"] as const;
 
 function cleanSpokenText(raw: string): string {
   return raw

@@ -4,7 +4,7 @@ import { DeepLClient } from "./lib/deepl-client";
 import type { BookDetail } from "../src/data/books";
 
 const BOOKS_DIR = path.resolve(process.cwd(), "public/data/v1/books");
-const TARGET_BOOKS = ["genki-1", "genki-2", "mnn-1", "mnn-2"];
+const TARGET_BOOKS = ["genki-1", "genki-2", "mnn-1", "mnn-2", "mnn-3"];
 
 async function main() {
   console.log("=" .repeat(65));

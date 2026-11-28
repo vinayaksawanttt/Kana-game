@@ -1590,7 +1590,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l13-scene-i-5.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l13-scene-ii",
@@ -1653,7 +1654,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l13-scene-ii-6.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l13-scene-iii",
@@ -1708,7 +1710,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l13-scene-iii-5.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -3634,7 +3637,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l14-scene-i-2.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l14-scene-ii",
@@ -3689,7 +3693,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l14-scene-ii-5.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l14-scene-iii",
@@ -3760,7 +3765,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l14-scene-iii-7.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -5435,7 +5441,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l15-scene-i-6.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l15-scene-ii",
@@ -5482,7 +5489,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l15-scene-ii-4.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l15-scene-iii",
@@ -5537,7 +5545,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l15-scene-iii-5.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -7280,7 +7289,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l16-scene-i-5.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l16-scene-ii",
@@ -7319,7 +7329,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l16-scene-ii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l16-scene-iii",
@@ -7374,7 +7385,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l16-scene-iii-5.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -9262,7 +9274,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l17-scene-i-7.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l17-scene-ii",
@@ -9317,7 +9330,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l17-scene-ii-5.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -11167,7 +11181,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l18-scene-i-5.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l18-scene-ii",
@@ -11206,7 +11221,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l18-scene-ii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l18-scene-iii",
@@ -11269,7 +11285,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l18-scene-iii-6.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -12946,7 +12963,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l19-scene-i-5.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l19-scene-ii",
@@ -12985,7 +13003,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l19-scene-ii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l19-scene-iii",
@@ -13040,7 +13059,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l19-scene-iii-5.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -14761,7 +14781,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l20-scene-i-6.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l20-scene-ii",
@@ -14832,7 +14853,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l20-scene-ii-7.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -16590,7 +16612,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l21-scene-i-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l21-scene-ii",
@@ -16661,7 +16684,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l21-scene-ii-7.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l21-scene-iii",
@@ -16708,7 +16732,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l21-scene-iii-4.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -18564,7 +18589,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l22-scene-i-5.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l22-scene-ii",
@@ -18603,7 +18629,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l22-scene-ii-3.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l22-scene-iii",
@@ -18650,7 +18677,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l22-scene-iii-4.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [
@@ -20487,7 +20515,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l23-scene-i-6.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l23-scene-ii",
@@ -20550,7 +20579,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l23-scene-ii-6.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         },
         {
           "id": "l23-scene-iii",
@@ -20597,7 +20627,8 @@
               "audioSrc": "/audio/books/dialogues/genki-2/l23-scene-iii-4.opus",
               "hasAudio": true
             }
-          ]
+          ],
+          "hasAudio": true
         }
       ],
       "practice": [

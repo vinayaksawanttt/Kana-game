@@ -559,15 +559,15 @@ export default function BooksShelfPage() {
         {lastStudied && (
           <section
             aria-label="Continue where you left off"
-            className="lg:col-span-7 flex"
+            className="lg:col-span-7 flex min-w-0"
           >
             <ContentCard
               selected
               padding="md"
-              className="flex flex-1 flex-col justify-between bg-gradient-to-br from-[var(--tb-surface)] via-[var(--tb-surface)] to-[var(--tb-accent-soft)]/50"
+              className="flex flex-1 min-w-0 overflow-hidden flex-col justify-between bg-gradient-to-br from-[var(--tb-surface)] via-[var(--tb-surface)] to-[var(--tb-accent-soft)]/50"
             >
-              <div className="flex items-start justify-between gap-3">
-                <div className="flex items-start gap-3.5 min-w-0">
+              <div className="flex items-start justify-between gap-3 min-w-0">
+                <div className="flex items-start gap-3.5 min-w-0 flex-1">
                   <div className="relative w-14 shrink-0 aspect-[3/4] overflow-hidden rounded-xl border border-[var(--tb-border)] bg-[var(--tb-bg)] shadow-xs">
                     {lastStudied.coverImage ? (
                       <img
@@ -582,17 +582,17 @@ export default function BooksShelfPage() {
                     )}
                   </div>
 
-                  <div className="min-w-0 space-y-1">
+                  <div className="min-w-0 flex-1 space-y-1">
                     <div className="flex flex-wrap items-center gap-2">
                       <span className="inline-flex items-center gap-1 rounded-full bg-[var(--tb-primary)] px-2 py-0.5 text-[10px] font-black uppercase tracking-wider text-white">
                         <Play className="size-2.5 fill-current" />
                         Continue Studying
                       </span>
-                      <span className="text-xs font-bold text-[var(--tb-text-secondary)]">
+                      <span className="text-xs font-bold text-[var(--tb-text-secondary)] truncate">
                         {lastStudied.bookTitle} · Lesson {lastStudied.lessonNumber}
                       </span>
                     </div>
-                    <h2 className="text-base sm:text-lg font-extrabold text-[var(--tb-text-primary)] truncate">
+                    <h2 className="text-base sm:text-lg font-extrabold text-[var(--tb-text-primary)] line-clamp-2 break-words">
                       {lastStudied.lessonTitle}
                     </h2>
                     <div className="flex flex-wrap items-center gap-2 text-xs text-[var(--tb-text-secondary)]">
@@ -653,13 +653,13 @@ export default function BooksShelfPage() {
         <section
           aria-label="Due for review"
           className={cn(
-            "flex",
+            "flex min-w-0",
             lastStudied ? "lg:col-span-5" : "lg:col-span-12"
           )}
         >
           <ContentCard
             padding="md"
-            className="flex flex-1 flex-col justify-between"
+            className="flex flex-1 min-w-0 flex-col justify-between"
           >
             <div>
               <div className="flex items-start justify-between gap-3">
